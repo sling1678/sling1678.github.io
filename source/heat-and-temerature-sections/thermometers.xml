@@ -1,0 +1,378 @@
+<section xml:id="Thermometers"><title> Thermometers </title>
+
+
+	<subsection><title> Thermometric Property</title>
+		<p>
+			The temperature of a system in a thermodynamic equilibrium can be measured by bringing the given system in equilibrium with a reference system, called the thermometric substance, whose temperature has been calibrated somehow.  The reference system used for measuring a temperature is called a <term>thermometer</term>.  But the question is how to find systems with known temperature readings.  This is akin to the chicken-and-egg problem: you need temperature to establish a state of thermal equilibrium, and a state of thermal equilibrium is necessary to define a temperature.
+		</p>
+		<p>  
+			To break this cycle, we introduce another measurable  property that varies with temperature - a property used for this purpose is called <term> thermometric property </term>. <xref ref="tab-thermometric-property"/> lists some  common thermometric properties used and the materials used in the instruments. Assuming that temperature <m> t</m> varies linearly with property <m> X </m>, we can write  <m>t</m> as a linear function of <m>X</m>.
+			<men xml:id="eq-thermometric-1">
+				t(X) = a\, X,
+			</men>
+			where <m> a </m> is a constant of proportionality to be fixed by choosing a reference condition of matter to which we arbitrarily assign a values of <m> t </m> corresponding to the measured value of the property <m>X</m> in that condition.  This is also called <term> calibrating a thermometer</term>. I will  now describe a method of calibration of thermometers based on the triple point of water that has been agreed upon internationally.
+		</p>
+
+		 <table xml:id="tab-thermometric-property"><title> Thermometers and Thermometric Properties</title>
+
+			<tabular halign ="left" >
+				<row bottom ="minor" >
+					<cell > Thermometer Type </cell >
+					<cell > Thermometric Property </cell >
+					<cell > Example thermometric material </cell >
+				</row >
+				<row >
+					<cell >Gas (Constant Volume) </cell >
+					<cell >Pressure </cell >
+					<cell >Hydrogen gas </cell >
+				</row >
+				<row >
+					<cell >Liquid (Constant Pressure) </cell >
+					<cell >Volume </cell >
+					<cell >Liquid mercury </cell >
+				</row >
+				<row >
+				<cell >Electric Resistor </cell >
+				<cell >Resistance </cell >
+				<cell >Platinum wire </cell >
+				</row >
+				<row >
+				<cell >Thermocouple </cell >
+				<cell >Thermoelectric EMF </cell >
+				<cell >Chromel (Ni-Cr alloy) </cell >
+				</row >	
+				<row >
+				<cell > </cell >
+				<cell > </cell >
+				<cell >Constantan (Cu-Ni alloy) </cell >
+				</row >
+				<row >
+				<cell >Paramagnetic material </cell >
+				<cell >Magnetic susceptibility</cell >
+				<cell >Cerrous magnesium nitrate </cell >
+				</row >
+				<row >
+				<cell >Blackbody radiation </cell >
+				<cell >Intensity </cell >
+				<cell >No thermometric material needed </cell >
+				</row >
+			</tabular >
+		</table>
+	</subsection>
+
+	<subsection> <title> Calibration Using The Triple Point of Water</title>
+
+		<p>
+			Since 1954 the triple point of water, a state in which a mixture of ice, liquid water and vapor coexist in equilibrium, has been chosen as the standard reference which is arbitrarily assigned a value of <m> 273.16\text{K}</m>.  This fixes the value of constant <m> a </m> in Eq. <xref ref="eq-thermometric-1"/> in terms of the assigned value of the temperature of triple point and the value of <m> X</m> at <m> X=X_{\text{TP}}</m> of the thermometric property when the thermometer is in equilibrium at the triple point of water.
+			<men xml:id="eq-thermometric-2">
+				273.16\text{K} = a\, X_{\text{TP}} \label{}
+			</men>
+			Eliminating <m> a </m> from Eqs. <xref ref="eq-thermometric-1"/> and <xref ref="eq-thermometric-2"/>, we are able to immediately determine temperature <m> t </m> when the value of the thermometric property <m> X </m> is known.
+			<men xml:id="eq-thermometric-3">
+				t(X) = \left(\frac{273.16\text{K}}{X_{\text{TP}}} \right)\ X 
+			</men>
+		</p>
+		<p>
+			<alert>A Big Problem: </alert> Suppose you follow this procedure for different thermometer, e.g. a gas thermometer, a resistance thermometer, or a thermocouple, will you get the same readings in them? The answer is a resounding no, if the unknown temperature is not near the triple point of water. The temperature of an unknown will be different even for two gas thermometer that are somehow different, either having different size bulbs or different amount of gas.  
+		</p>
+		<p>
+			When you use formula given in Eq. <xref ref="eq-thermometric-3"/> for different thermometers you get different values for the temperature of the same thermal bath. 
+		</p>
+		<p> <alert>The Solution: </alert>
+			To solve this problem, we <alert> need a standard thermometer to calibrate other thermometers </alert> so that we do not assign multiple values for the temperature of the same system.  The constant volume gas thermometer provides a procedure for obtaining a unique temperature independent of the thermometric material as we will see below, and therefore it is used as a <term>standard thermometer</term>. 
+		</p>
+	</subsection>
+
+	<subsection><title>Constant Volume Gas Thermometer </title>
+
+		<p>
+			A constant volume gas Thermometer is a thermometer that uses a gas as the thermometric medium and its pressure as the property <m> X</m>.  It consists of a bulb B of a gas that connects to a reservoir R of mercury and a manometer M as shown in <xref ref= "fig-const-vol-gas-thermo"/>. 
+		</p>
+
+		<figure xml:id="fig-const-vol-gas-thermo">
+			<caption>
+				Constant volume gas thermometer. The bulb is placed in the bath whose temperature we wish to measure. The gas in the bulb expands. We raise the mercury reservoir until the gas is pressed back to the original volume as indicarted by mercury level at the indical point C. Then, the level of mercury on the right arm is the indicator of temperature of the bath through the measurement of new pressure in the bulb.
+			</caption>
+			<image source="./images/heat-and-temperature/const-vol-gas-thermo.png" width="60%"/>
+		</figure>
+
+		<p>
+			When the gas bulb is immersed in a thermal bath, the pressure in the volume of the gas changes changing the mercury level from the indicial point C in arm M.  By moving the reservoir R up or down the mercury level in arm M can be brought to the reference point C.  Movement of reservoir also changes the level C' in arm M'.  The difference <m> h</m> in the level C' and C is measured when the bulb is immersed in the unknown temperature <m>t</m>. From the difference in heights we can determine the absolute pressure <m>p</m> in the bulb.  
+			<me>
+				p = p_0 + \rho g h
+			</me>
+			where <m>p_0</m> is the atmospheric pressure since the tube on the M' side is open to the atmosphere. The temperature of the unknown is determined from the absolute pressure reading by equating the ratio of the absolute pressures to the ratio of temperatures expressed in kelvin scale.
+			<me>
+				T = \frac{p}{p_{ \text{TP} }} T_{\text{TP}}
+			</me>
+			where <m>p_{\text{TP}}</m> is the absolute pressure when the bulb is immersed in water at triple point <m>(T_{\text{TP}}= 273.16\text{K})</m>.
+		</p>
+		<p>
+
+			Experiments with gas thermometer have shown that there are minor differences in temperature readings for different gases placed in the bulb as shown in <xref ref="fig-const-vol-gas-thermo-2"/>.  Furthermore, even these minor differences can disappear when the pressure in the bulb is reduced by using less gas.
+		</p>
+
+
+		<figure xml:id="fig-const-vol-gas-thermo-2">
+			<caption>
+				Temperature for the same bath for constant gas Thermometer utilizing different gases at different pressures. The differences in the readings decrease as pressure in the bulb is reduced. As amount of gas is reduced in the bulb, giving us a bulb with smaller pressure, we obtain a unique temperature, which is <m>298.45K</m> in the plot here, regardless of the chemical makeup of the gas.
+			</caption>
+			<image source="./images/heat-and-temperature/const-vol-gas-thermo-2.png" width="80%"/>
+		</figure>
+
+		<p>
+			The graphs of different gases show two important results:
+
+			<ol>
+				<li> Real thermometers are inconsistent </li>
+				<li> The extrapolation of gas thermometers to zero pressure give consistent and unique temperature value.</li>
+			</ol>
+
+		</p>
+		<p>
+
+			A disturbing fact is that a unique temperature cannot be assigned to an unknown thermal state for a non-zero pressure since the temperature value assigned depends on the thermometric gas.  
+			For instance,  if you draw a vertical line at <m>p = 100\text{ kPa} </m>  in <xref ref="fig-const-vol-gas-thermo-2"/>, you will find that there are three different values of the temperature for the same sample depending on whether you have <m>\text{He} </m>, <m>\text{Ar} </m>,  or <m>\text{N}_2 </m>  in the bulb as you can see by drawing a vertical line for <m>p = 100\text{ kPa} </m>. 
+		</p>
+		<p>
+			You can also see in <xref ref = "fig-const-vol-gas-thermo-2"/> that the extrapolations of the graphs for different gases meet at one point, giving a unique reading of the temperature independent of the nature of gas in the bulb.  This procedure defines an <term> Absolute scale of temperature</term> also called the <term> kelvin scale</term>.
+		</p>
+	</subsection>
+
+	<subsection><title> Important Fixed Points for Standard Thermal Baths</title>
+		<p>
+			The conditions of the triple point and boiling point of water are not convenient when you need thermometers for other ranges of temperatures. Over the years, other suitable fixed points have been utilized, some of which are shown in <xref ref="fig-temperatures"/>.
+		</p>
+
+
+		<figure xml:id="fig-temperatures">
+			<caption>
+				Important fixed points of ITS-90 temperature scale. Melting and freezing points measured at a pressure of 101,325 Pa.
+			</caption>
+			<image source="./images/heat-and-temperature/temperatures.png" width="70%"/>
+		</figure>
+	</subsection>
+
+	<subsection><title>Calibration With Two Fixed Points</title>
+		<p>		
+			A Thermometer is sometimes calibrated to operate over a small range of temperatures by   picking two reproducible thermal conditions of known temperatures.  Readily available thermal conditions are the conditions that exist in which a material can coexist between two different material phases, such as solid and liquid, or three different phases simultaneously, such as the triple point. These conditions are also called fixed points.  Some of the fixed points of common use are shown in <xref ref="fig-temperatures" />.
+		</p>
+		<p>
+
+			The procedure for extrapolating between two nearby fixed points are based on the assumption of the linear dependence of the change in the Thermometric property <m> \Delta X </m> on the change in temperature <m> \Delta T </m>. Let <m> X_1 </m> and <m> X_2 </m> be the value of the property <m> X </m> at reference reproducible baths with temperature <m> t_1 </m> and <m> t_2 </m>. 
+		</p> 
+
+		<figure xml:id="fig-calibration-therm">
+			<caption>
+				Interpolating temperature between fixed points 1 and 2.
+			</caption>
+			<image source="./images/heat-and-temperature/calibration-therm.png" width="80%"/>
+		</figure>
+
+		<p>
+			If the temperature range between the baths is not too great it is reasonable to assume that the property <m> X </m> will vary linearly with temperature <m> (t) </m> between the two temperatures <m> t_1 </m> and <m> t_2 </m>, and can be extended on either side of <m> t_1 </m> and <m> t_2 </m>.  Then the linear relation shown in <xref ref="fig-calibration-therm" />   will have the following analytic relation.
+			<me>
+				X(t) = X_1 + \left(\frac{X_2-X_1}{t_2-t_1}  \right) \left(t-t_1\right)
+			</me>
+			Unfortunately, most properties do not vary linearly with temperature over a wide range, and therefore, we need many reference baths to recalibrate, and use different thermometers in different ranges.  We make sure that all thermometers give the same readings for the same sample in the range where they overlap.
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Using-Triple-Point-to-Calibrate-ResistanceBased-Thermometer"><title> Using Triple Point to Calibrate Resistance Based Thermometer </title>
+		<statement>
+			<p>
+				The resistance of a thin platinum wire is to be used as an indicator of temperature.  It is found that the wire has a resistance of <m> 1.50\, \Omega</m> at the triple point of water.  What is the temperature of a liquid when the resistance of the same wire is <m>1.55\,\Omega</m> when immersed in the liquid?
+			</p>
+
+		</statement>
+		<hint> <p> Use Temperature Scale using a property at the Triple point.  </p> </hint>
+		<answer> <p>  <m>282.27\text{K} </m>. </p> </answer>
+		<solution> 
+			<p>
+				This is calibration using one fixed point. For this we have
+				<me>
+					T = \dfrac{T_\text{TP}}{X_\text{TP}}\  X.
+				</me>
+				Now, we put in the numerical values.
+				<me>
+					T =  \dfrac{273.16\text{K}}{1.50\ \Omega}  \times 1.55\ \Omega = 282.27\text{K}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Calibrating-a-Mercury-Volume-Thermometer-Using-the-Triple-Point"><title> Calibrating a Mercury Volume Thermometer Using the Triple Point </title>
+		<statement>
+			<p>
+				A mercury Thermometer is to be calibrated using the triple point of water.  The volume of mercury in the bulb is <m>1.0\text{ cm}^3</m> at the triple point of water.  When the bulb containing mercury is dipped inside a warm liquid its volume expands with the following rule.
+				<me>
+					\dfrac{\Delta V}{V} = \left(1.8\times 10^{-4}\ \text{per}\ ^{\circ}\text{C} \right) \left(t-t_\text{tp} \right)
+				</me>
+				As the volume expands, mercury is squeezed into a thin cylindrical pipe of diameter <m>0.2\text{ mm}</m> attached to the bulb.  Find the height in the cylindrical pipe the mercury will rise when the temperature of the fluid is <m>15^{\circ}\text{C}</m>.  (Ignore any change in the volume of the bulb itself.)		
+
+			</p>
+
+		</statement>
+		<hint> <p>  Find change in volume <m>\Delta V</m> and equate that to <m>\pi r^2 h</m>. </p> </hint>
+		<answer> <p>  <m>8.6\text{ cm}</m>. </p> </answer>
+		<solution> 
+			<p>
+				We assume that the <m>V</m> in the formula is the original volume. Then we find that the change in the volume of the mercury as a result of the temperature being above the triple point would be
+				<md>
+					<mrow> \Delta V \amp = \left(1.8\times 10^{-4}\ \text{per}\ ^{\circ}\text{C} \right) \left(t-t_\text{tp} \right)\ V</mrow>
+					<mrow> \amp  = \left(1.8\times 10^{-4}\ \text{per}\ 	^{\circ}\text{C} \right) \left(15-0.01 \right)\times 1.0\ \text{cm}^3</mrow>
+					<mrow> \amp = 27 \times 10^{-4}\ \text{cm}^3. </mrow>
+				</md>
+				Now, we equate this to the volume of the rise in the cylindrical column given by <m>\pi r^2 h</m>, where <m>r</m> is the radius and <m>h</m> the height
+				<me>
+					\pi r^2 h = \Delta V \ \ \Longrightarrow\ \ h = \dfrac{\Delta V}{\pi r^2}.
+				</me>
+				The radius of the column is given to be 0.1 mm or 0.01 cm.  Therefore,
+				<me>
+					h = \dfrac{27 \times 10^{-4}\ \text{cm}^3}{\pi (0.01\ \text{cm})^2} = 8.6\ \text{cm}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-The-Rankine-Scale-Readings-for-Temperature"><title> The Rankine Scale Readings for Temperature </title>
+		<statement>
+			<p>
+				The <term> Rankine scale </term> is similar to the Kelvin scale in the sense that its zero is set at the Absolute zero, but one degree rise in Rankine scale is equal to one degree of Fahrenheit instead of one degree Celsius.  Find the temperature in the Rankine scale corresponding to (a) <m>0^{\circ}\text{F}</m>, (b) <m>0^{\circ}\text{C}</m>, and (c) <m>300\text{K}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Apply your understanding of C and F to R. </p> </hint>
+		<answer> <p> (a) <m>460^\circ\text{R}</m>, (b) <m>492^\circ\text{R}</m>, (c) <m>540^\circ\text{R}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We first find the reading at Absolute Zero in the Fahrenheit scale.  This will give the relation between the Rankine scale and Fahrenheit scales.  We know that by definition that the Absolute Zero is at <m>-273.15^{\circ}\text{C}</m>.  Therefore, this reading in Fahrenheit will be
+				<me>
+					F = \dfrac{9}{5} C + 32 =  \dfrac{9}{5}(-273.15) + 32 = -459.67.
+				</me>
+				Thus, the relation between the Rankine scale reading <m>R</m> and the Fahrenheit scale for the same condition <m>F</m> is
+				<me>
+					R = F + 459.67.
+				</me>
+				We now find the Fahrenheit scale readings for the given temps and convert them into the corresponding <m>R</m> readings.
+			</p>
+			<p>
+				(a) This requires no work. <m> R = 0 + 459.67 = 459.67</m>.
+			</p>
+			<p>
+				(b) This also requires no work. <m>R = 32 + 459.67 = 491.67</m>.
+			</p>
+			<p>
+				(c) First we convert the temperature given in Kelvin to Celsius, which can then be converted into F which will easily be changed to R.
+				<me>
+					C = K -273.15 = 300 - 273.15 = 26.85.
+				</me> 
+				<me>
+					F = \dfrac{9}{5} C + 32 = \dfrac{9}{5} \times 26.85 + 32 = 80.33.
+				</me>
+				<me>
+					R = F + 459.67 = 80.33+ 459.67 = 540.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Inventing-a-New-Temperature-Scale"><title> Inventing a New Temperature Scale </title>
+		<statement>
+			<p>
+				A new temperature scale X is proposed in which the freezing and boiling points of water are <m>10^{\circ}</m>X and <m>510^{\circ}</m>X respectively.  Find the temperature reading in this scale corresponding to <m>60^{\circ}</m>C.
+			</p>
+
+		</statement>
+		<hint> <p>  Think linear dependence and how F and C are related. </p> </hint>
+		<answer> <p>  <m>310^{\circ}\text{X}</m> </p> </answer>
+		<solution> 
+			<p>
+				Using the linearity of the property on the temperature we get the following relation between the Celsius scale reading C and the new scale reading X for the same thermal condition using two standard conditions labeled 0 and 1.
+				<me>
+					\dfrac{X - X_0}{X_1-X_0} =  \dfrac{C - C_0}{C_1-C_0}.
+				</me>
+				Solve this for X to get
+				<me>
+					X = X_0 + \dfrac{X_1-X_0}{C_1-C_0}(C - C_0).
+				</me>
+				Now, we put in the numbers
+				<me>
+					X = 10 +  \dfrac{510-10}{100-0}(C - 0) = 10 + 5 C = 10 + 5\times 60 = 310.
+				</me>
+				The reading in the new scale will be <m>310^{\circ}\text{X}</m> when the reading in the Celsius scale is <m>60^{\circ}\text{C}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Reason-for-Different-Temperature-Readings-for-the-Same-Water-Bath"><title> Reason for Different Temperature Readings for the Same Water Bath </title>
+		<statement>
+			<p> (a) 
+				Why do you think different gases in a constant volume gas thermometer at the same pressure would give different temperature readings for the same water bath?
+			</p>
+			<p> (b) 
+				Why does the difference between gases in a constant gas Thermometer disappear when the bulb has low density of gases, or low pressure in the bulb?
+			</p>
+
+		</statement>
+		<hint> <p>  Think of forces between molecules. </p> </hint>
+		<answer> <p>  See solution </p> </answer>
+		<solution> <title>(a)</title>
+			<p> (a) 
+				The gas molecules have attraction towards each other which reduces the pressure. The attraction between molecules is due to permanent and induced dipoles in the molecules which depend on the make-up of the molecules and the distance between molecules.
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p> (b) 
+				The gas molecules have attraction towards each other which reduces the pressure. The attraction between molecules is due to permanent and induced dipoles in the molecules which depend on the make-up of the molecules and the distance between molecules.  Lowering the density increases the average distance between molecules which decreases the effect of the attraction between molecules.  Beyond some density the effect becomes immeasurably small.  
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Temperature-by-a-Constant-Volume-Gas-Thermometer-Calibrated-at-the-Triple-Point"><title> Temperature by a Constant Volume Gas Thermometer Calibrated at the Triple Point   </title>
+		<statement>
+			<p>
+				A constant volume gas thermometer filled with the Nitrogen gas has a pressure of <m>1500\text{ Pa}</m> at the triple point of water.  What is the temperature when the pressure is <m>1100\text{ Pa}</m>?
+			</p>
+
+		</statement>
+		<hint> <p>  Use triple point formula. </p> </hint>
+		<answer> <p>  <m> 200.32\text{K}</m>. </p> </answer>
+		<solution> 
+			<p>
+				Using the formula for the operation of an ideal constant volume gas thermometer we find the temperature in the Absolute scale to be
+				<md>
+					<mrow> T \amp = \frac{p}{p_\text{TP}} T_\text{TP} </mrow>
+					<mrow> \amp = \frac{1100\text{ Pa}}{1500\text{ Pa}}\times 273.16\text{K} = 200.32\text{K}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Helium-Gas-Thermometer-Calibrated-at-the-Triple-Point-Nitrogen"><title> Temperature by a Helium Gas Thermometer Calibrated at the Triple Point of Nitrogen  </title>
+		<statement>
+			<p>
+				A constant volume gas thermometer filled with the helium gas has a pressure of 2000 Pa at the triple point of Nitrogen.  What is the pressure reading when the bulb is dipped in a vessel at a temperature of <m>30^{\circ}\text{C}</m>?
+			</p>
+			<p>
+				Data: Triple point of <m>\text{N}_2 = -210.1^\circ\text{C}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Use triple point formula. </p> </hint>
+		<answer> <p>  <m> 9616\text{ Pa}</m>. </p> </answer>
+		<solution> 
+			<p>
+
+				We look up a table of data for the triple point of nitrogen gas, which is listed at <m>-210.1^{\circ}\text{C}</m>.  In the kelvin scale the temperature is <m>273.15-210.10 = 63.05\text{K}</m>. Now, using the formula for the operation of an ideal constant volume gas thermometer we find the pressure:
+ 				<md>
+					<mrow> p \amp = \frac{T}{T_\text{TP}} p_\text{TP} </mrow>
+					<mrow> \amp = \frac{(273.15+30)\text{K}}{63.05\text{K}}\times 2000\textrm{ Pa} = 9616\text{ Pa}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+  
+ 
+
+</section>

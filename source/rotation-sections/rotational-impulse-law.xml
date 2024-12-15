@@ -1,0 +1,112 @@
+<section xml:id="Rotational-Impulse-and-Angular-Momentum"><title> Rotational Impulse and Angular Momentum </title>
+<idx><h>Rotational Impuse</h>Change in Angular Momentum<h></h></idx>
+	<introduction>
+		<p>
+			Earlier we derived Newton's second law for rotation of a rigid body about a fixed axis to be
+			<men xml:id="eq-rotational-impulse-law-old-second-law">
+				 \mathcal{T}_{\text{net,ext}} = I\,\alpha,
+			</men>
+			(Calculus step) Now, let us integrate both sides over an interval of time, say from <m>t=t_i</m> to <m>t=t_f</m>. We will get
+			<men xml:id="eq-integrate-torque-and-I-alpha">
+				\int_{t_i}^{t_f} \mathcal{T}_{\text{net,ext}}\, dt = \int_{t_i}^{t_f} I\,\alpha\, dt.
+			</men>
+			We recognize the left side as just the net rotational impulse. Now, on the right side, suppose we replace <m>\alpha</m> on the right side by <m>d\omega/dt</m>, cancel out <m>dt</m>, and then complete the integral. We get
+			<men>
+				 J_{\text{rot,net}} =  I \omega_f - I \omega_i,
+			</men>
+			where <m>\omega_i</m> and <m>\omega_f</m> are angular velocities at the initial and final instants. Since <m>I\omega</m> is angular momentum for rotation about a principal axis, find that net impulse equals change in angular momentum.
+			<men  xml:id="eq-rotational-impulse-law">
+				 J_{\text{rot,net}} =  \Delta L,
+			</men>
+			where
+			<men xml:id="eq-rotational-impulse-law-ang-mom-change">
+				\Delta L = L_f - L_i =  I \omega_f - I \omega_i.
+			</men>			 
+
+		</p>
+		<p>
+			Another way of arriving at result in Eq. <xref ref="eq-rotational-impulse-law"/> is by looking at plots. If we plot both sides of Eq. <xref ref="eq-rotational-impulse-law-old-second-law"/> 
+			versus time and compare the areas under the two curves, the left side gives the change in angular momentum and the right side gives the net rotational impulse by external forces as shown in <xref ref="fig-change-in-ang-mom-equals-rotational-impulse"/>.  
+		</p>
+
+		<figure xml:id="fig-change-in-ang-mom-equals-rotational-impulse">
+			<caption>
+				The area under <m> I\alpha</m> versus <m> t </m> during <m>t_i </m> to <m>t_f </m> gives the change in angular momentum, <m> \Delta L = L_f - L_i</m> and the equal area under torque <m> \mathcal{T}</m> versus <m> t </m> gives the rotational impulse.
+			</caption>
+			<image source="./images/rotation/change-in-ang-mom-equals-rotational-impulse.png" width="80%"/>
+		</figure>
+ 
+		<remark>
+
+			<p>
+				We have derived Eq. <xref ref="eq-rotational-impulse-law" /> from Eq. <xref ref="eq-rotational-impulse-law-old-second-law" />, which is, strictly speaking, only correct if we assume <m> I </m> is constant in time. So, it would appear that we should not use Eq. <xref ref="eq-rotational-impulse-law" /> if <m> I </m> is changing.
+			</p>
+			<p>
+				However, more general considerations in a different derivation shows that if moment of inertia varies during the time interval, say from being <m>I_i</m> at <m>t_i</m> to <m>I_f</m> at <m>t_f</m>, then, you can still use Eq. <xref ref="eq-rotational-impulse-law" />, but now, we will have to use a different formula for <m>\Delta L</m>.
+				<men>
+					\Delta L = I_f\omega_f -  I_i\omega_i
+				</men>
+			</p>
+		</remark>
+	</introduction>
+
+	<example xml:id="ex-Rotational-Impulse-Causing-Change-in-Angular-Momentum"><title> Rotational Impulse Causing Change in Angular Momentum </title>
+		<statement>
+			<p>
+				The plot in <xref ref="fig-ex-rotational-impulse-change-in-momentum"/> shows net torque (with countercloclwise positive) on a disk of moment of inertia <m>5.0\text{ kg.m}^2</m> as a function of time. At <m>t=0</m>, the disk is rotating at angular velocity <m>2.0\text{ rad/s}</m> in the clockwise direction. What is the magnitude and sense of rotation of the angular velocity at <m>t = 5.0\text{ sec}</m>? 
+			</p>
+			<figure xml:id="fig-ex-rotational-impulse-change-in-momentum">
+				<caption>
+					Figure for <xref ref="ex-Rotational-Impulse-Causing-Change-in-Angular-Momentum"/>.
+				</caption>
+				<image source = "./images/rotation/ex-rotational-impulse-change-in-momentum.png" width="70%"/>
+			</figure>
+
+		</statement>
+		<!-- <hint> <p>  Use rotational impulse/change in angular momentum. </p> </hint> -->
+		<answer> <p>  <m> 1.0\text{ rad/s}</m> in the clockwise direction. </p> </answer>
+		<solution> 
+			<p>
+				We will use <m>J_\text{rot}^\text{net} = \Delta L</m> with <m>J_\text{rot}^\text{net} = </m> area under the curve, <m>\Delta = (I\omega)_f - (I\omega)_i </m> to find <m>\omega_f</m>. The area above zero torque give positive impulse and that below give negative impulse.
+				<me>
+					J_\text{rot}^\text{net} = \dfrac{1}{2}\times 10 \times 3 + (-5\times 2) = 15-10 = 5\text{ N.m.s}.
+				</me>
+				Now, note that <m>\omega_i = -2\text{ rad/s}</m> since it is clockwise and we are using counterclockwise sense as positive. Therefore, rotational impulse/change in angular momentum gives
+				<me>
+					5\,\omega_f - 5 \times (-2) - 5.
+				</me>
+				Therefore,
+				<me>
+					\omega_f = -1.0\text{ rad/s}.
+				</me>
+				Therefore, the final angular velocity is <m> 1.0\text{ rad/s}</m> in the clockwise direction.  
+
+			</p>
+		</solution>
+	</example>
+
+
+
+	<subsection> <title> (Calculus) Change in Angular Momentum by a Rotational Impulse</title>
+		<p>
+			From the general second law of motion,
+			<me>
+				\vec F =\dfrac{d\vec p}{dt},
+			</me>
+			we derived before that
+			<me>
+				\dfrac{ d\vec L }{dt} = \vec{\mathcal{T}}.
+			</me>
+			Multiply both sides by <m> dt </m>, we can integrate this from <m> t= t_i </m> to <m> t= t_f </m>.
+			<me>
+				\int_{t_i}^{t_f}\vec{\mathcal{T}}\,dt =  \vec L_f - \vec L_i,
+			</me>
+			which is the statment that net external rotational impulse equals the change in angular momentum.
+			<men xml:id="eq-rotational-impulse-law-calc">
+				\vec{J}_\text{rot} =  \vec L_f - \vec L_i.
+			</men>
+		</p>
+	</subsection>
+
+
+</section>

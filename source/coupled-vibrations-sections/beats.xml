@@ -1,0 +1,178 @@
+<section xml:id="beat-phenomenon"><title>Beats</title>
+	<introduction>
+        <p>
+            If you simultaneously press two piano keys, you will hear loudness of sound varying with some period. This periodic varying sound is called beats. This is illustrated in <xref ref="fig-beats-sound-entering-ear"/>. The phenomenon is not restricted to sound waves, but can be observed when two waves of slightly different frequencies strike a detector. 
+        </p>
+        <figure xml:id="fig-beats-sound-entering-ear">
+            <caption>
+                 We feel beats in the sound when the loudness of the sound varies periodically with time.
+            </caption>
+            <image source="./images/coupled-vibrations/beats-sound-entering-ear.png" width="80%"/>
+        </figure>
+        <p>
+            For simplicity, consider two waves <m>\psi_1</m> and <m>\psi_2</m>  of different angular frequencies <m>\omega_1</m> and <m>\omega_2</m> and  with the same amplitude <m>A</m> meeting at the  origin. Suppose, the waves at the origin are causing by the following vibrations.
+            <md>
+                <mrow>\amp \psi_1(0,t) = A\cos(\omega_1 t),</mrow>
+                <mrow>\amp  \psi_2(0,t) = A\cos(\omega_2 t).</mrow>
+            </md>
+            By the superposition principle, the net wave at the origin will be
+            <me>
+                \psi = \psi_1 + \psi_2 = A\left[ \cos(\omega_1 t) + \cos(\omega_2 t) \right].
+            </me>
+            Now, we can use the trigonometric identity
+            <me>
+                \cos A+ \cos B = 2\cos\left(\frac{A-B}{2}\right)\cos\left(\frac{A+B}{2}\right).
+            </me>
+            to rewrite the net wave at the origin as
+            <me>
+                \psi = \left\{ 2A\cos\left[ \left( \frac{\omega_1-\omega_2}{2}\right) t\right] \right\} \cos\left[\left(\frac{\omega_1+\omega_2}{2}\right) t\right]
+            </me>
+            The result is a net vibration at the average frequency with slowly varying amplitude, the quantity within the curly braces, <m>\{\}</m>. The amplitude of the wave also varies periodically - we say that the two waves are beating on each other.
+        </p>
+        <p>
+            Although, two waves of any frequencis can beat with each other, the pronounced beating phenomenon in sound waves we experience in music, happen when two frequencies are close to each other.
+            Therefore, let us write <m>\omega_1</m> and <m>\omega_2</m> as
+            <md>
+                <mrow>\amp \omega_1 = \omega_0 -\frac{\Delta\omega}{2},</mrow>
+                <mrow>\amp  \omega_2 = \omega_0 +\frac{\Delta\omega}{2}.</mrow>
+            </md>
+            Here, <m>\omega_0</m> is their average frequency and <m>\Delta\omega</m> is the difference between the frequencies. 
+            Let us write this wave function in the terms  of the average frequency <m>\omega_0</m> and the difference <m>\Delta\omega</m> of the frequencies.
+            <me>
+                \psi = \left\{ 2A \cos\left(  \frac{\Delta\omega }{2} t\right) \right\}  \cos\left( \omega_0 t\right) 
+            </me>
+            The net vibration consists of fast oscillations at the average frequency <m>\omega_0</m> modulated by a slowly varying cosine as shown in <xref ref="fig-beat-phenomenon"/>.
+        </p>
+        <figure xml:id="fig-beat-phenomenon">
+            <caption>
+                The beats as a result of superposition of two vibrations. The plot was made with <m>f_1</m> = 261.63 Hz and <m>f_2</m> = 277.18 Hz, corresponding to <m>C_4</m> and <m>C_4^\#/D_4^b</m> musical notes. The upper graph is the signal at frequency <m>f_1</m>, the middle at frequency <m>f_2</m> and the bottom graph is the sum of the two. The peaks and troughs of the beats are separated by one beat period as shown.
+            </caption>
+            <image source="./images/coupled-vibrations/beat-phenomenon.png" width="80%"/>
+        </figure>
+        <p>
+            The amplitude of the fast oscillations is not constant in time but rather varies between <m>-2A</m> and <m>2A</m>. 
+        </p>
+        <p>
+            The largest amplitude oscillations occur at the peak and trough of the slowly varying modulation <m>\cos\left( \frac{\Delta\omega}{2}t\right)</m>. If the working frequencies are in the audible range, then the peaks and troughs of the slowly varying modulation corresponds to the loudest sound while the sound is faintest when the modulation function is smallest.  Thus, sound from two sources of nearby frequencies appear to go loud and soft periodically - the loud sounds are called beats.  
+        </p>
+        <p>
+            Since both the troughs and peaks of <m>\cos\left( \frac{\Delta\omega}{2}t\right)</m> correspond to the loudest sound, there are two beats in one period of this function.  Therefore, the beat period is the half of the period of the modulating function <m>\cos\left( \frac{\Delta\omega}{2}t\right)</m>.
+            <me>
+                T_{beat}= \frac{1}{2}\left(\frac{2\pi}{\Delta\omega/2}\right)=\frac{2\pi}{\Delta\omega}.
+            </me>
+            Therefore, the beat frequency is the difference in frequencies of the  two component vibrations:
+            <m>
+                \omega_{beat}= \Delta\omega=\left| \omega_1-\omega_2\right|.
+            </m>
+            By setting <m>\omega = 2\pi f</m>, we can write this relation for the beat frequency.
+            <me>
+                \text{Beat frequency: }\ \ f_{\text{beat}}= \left| f_1-f_2\right|.
+            </me>
+        </p>
+ 
+    </introduction>
+
+
+    <exercise xml:id="exercise-Using-Beats-to-Tune-a-Piano">
+        <title> Using Beats to Tune a Piano
+        </title>
+        <statement>
+            <p>
+                 The beat phenomenon is very sensitive for detecting the deviation of sound from a pitch.  This helps piano tuners as well as members of orchestra to adjust their musical instruments.  When an instrument key and a standard reference for that key do not produce any beats, then the two are said to be in tune.
+            </p>
+            <p>
+                Suppose that a piano key is supposed to be <m>256\text{ Hz}</m>, but it is out of tune.  When a tuning fork of <m>256\text{ Hz}</m> is sounded at the same time as the key, one hears a beat of <m>2\text{ Hz}</m> at a lower pitch than the pitch of the tuning fork.  
+            </p>
+            <p>
+                (a) (i) By how much is the piano key out of tune? (ii) What is the fundamental frequency of the piano string that the key strikes?
+            </p>
+            <p>
+                (b) Should you tighten or loosen the string to tune in the piano key? Why?
+            </p>
+        </statement>
+        <hint><p> (a) Use the beat frequency formula. (b) What happens to speed of the wave when tension of the string is increased and how does that impact the fundamental frequency? </p></hint>
+        <answer><p> (a) <m>2\text{ Hz}</m>, <m>254\text{ Hz}</m>, (b) Tighten. </p></answer>
+
+        <solution><title>(a)</title>
+            <p>
+                (a) (i) and (ii): Using the beat frequency formula we find that the frequency of the piano key is off by the beat frequency <m>2\text{ Hz}</m>. Since the average frequency heard is lower than <m>256\text{ Hz}</m>, the piano key is actually producing at a lower frequency than <m>256\text{ Hz}</m>. Therefore, the fundamental frequency of the string corresponding to the key is
+                <me>
+                    f = f_\text{tuning fork} - f_\text{beat} = 256-2=254\text{ Hz}.
+                </me> 
+
+            </p>
+        </solution>
+        <solution><title>(b)</title>
+            <p>
+                Speed of wave on a string is <m>v=\sqrt{T/\mu}</m>. Therefore, increasing tension increases speed, and from <m>f = v/\lambda</m>, that would mean will increase frequency. We want to increase frequency of the string vibration from <m>254\text{ Hz}</m> to <m>256\text{ Hz}</m>. Therefore, we should tighten the string to tune the piano.
+
+            </p>
+        </solution>
+    </exercise>
+
+
+    <exercise xml:id="exercise-How-Much-to-Tighten-a-Piano-String-to-Tune-Piano">
+        <title> 
+            How Much to Tighten a Piano String to Tune Piano?
+        </title>
+        <statement>
+            <p>
+                A piano key of <m>512\text{ Hz}</m> is producing 500 Hz sound.       
+            </p>
+  
+            <p>
+                (a) What will be the beat frequency if it is checked against a violin producing <m>520\text{ Hz}</m>?
+            </p>
+            <p>
+                (b) By what percentage should the tension of the wire be adjusted so that the pitch is adjusted to <m>512\text{ Hz}</m>?  Assume insignificant change in mass per unit length while tightening.  
+            </p>
+        </statement>
+        <hint><p> (a) Use the beat frequency formula. (b) Use <m>v=\sqrt{T/\mu}</m> and <m>f\lambda=v</m> with fixed <m>\lambda</m> and <m>
+        \mu</m> and determine <m>\Delta T/T</m> for corresponding <m>\Delta f/f</m>. </p></hint>
+        <answer><p> (a)  <m>20\text{ Hz}</m>, (b) <m>4.8%</m>.  </p></answer>
+
+        <solution><title>(a)</title>
+            <p>
+                Using the beat frequency formula, we immediately get the answer.
+                <me>
+                    f_\text{beat} = 520-500 = 20\text{ Hz}.
+                </me>
+            </p>
+        </solution>
+        <solution><title>(b)</title>
+            <p>
+                 From <m>v=\sqrt{T/\mu}</m> and <m>f\lambda=v</m> we get
+                 <men xml:id="eq-exercise-Using-Beats-to-Tune-a-Piano-tension-frequency">
+                    T = (\mu \lambda^2) f^2.
+                 </men>
+                 Here <m>\mu \lambda^2</m> is fixed. You can use Calculus to get <m>dT/df</m>, but here I will just say that, let tension be <m>T+\Delta T</m> when frequency is <m>f+\Delta f</m>. Writing <m>a</m> for the fixed part.
+                 <me>
+                    T + \Delta T = a (f + \Delta f)^2 = a f^2 + 2 a f \Delta f + a (\Delta f)^2.
+                 </me>
+                 We drop the last term, which will be small compared to the other terms. This gives
+                 <me>
+                    T + \Delta T \approx a f^2 + 2 a f \Delta f .
+                 </me>
+                 Using Eq. <xref ref="eq-exercise-Using-Beats-to-Tune-a-Piano-tension-frequency"/> we get 
+                 <me>
+                     \Delta T = 2 a f \Delta f.
+                 </me>
+                 Divide this by <m>T</m> to get
+                 <me>
+                    \frac{\Delta T}{ T } = 2 \frac{\Delta f}{f}.
+                 </me>
+                 Now, using the numerical values we obtain
+                 <me>
+                    \frac{\Delta T}{ T } = 2\times \frac{12}{500} = 0.048 = 4.8%.
+                 </me>
+
+
+            </p>
+        </solution>
+    </exercise>
+
+
+
+
+
+</section>

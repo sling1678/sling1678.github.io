@@ -1,0 +1,93 @@
+<section xml:id="The-Two-Body-Problem"><title> The Two-Body Problem</title>
+	<introduction>
+		<p>
+			We will consider motion of two bodies interacting with gravitational force only. We have seen before that motion separates into motion of the center of motion and relative position of the two bodies.
+		</p>
+		<p>
+			Let <m>m_1</m> and <m>m_2</m> be the masses and <m>\vec{r}_1</m> and <m>\vec{r}_2</m> their positions. Their separate equations of motions are
+			<mdn>
+				<mrow xml:id="eq-vectorized-law-of-grav-m1">m_1 \vec{a}_1 \amp = G\dfrac{m_1m_2}{|\vec{r}_1 - \vec{r}_2|^2}\, \hat u_{1\rightarrow 2}, </mrow>
+				<mrow xml:id="eq-vectorized-law-of-grav-m2">m_2 \vec{a}_2 \amp = -G\dfrac{m_1m_2}{|\vec{r}_1 - \vec{r}_2|^2}\, \hat u_{1\rightarrow 2}, </mrow>
+			</mdn>
+			where <m> \hat u_{1\rightarrow 2}</m> is a unit vector in the direction of <m>1\rightarrow 2</m>. The unit vector is needed to express the direction of the vector equation analytically. Here, <m> | \vec{r}_1 - \vec{r}_2 |</m> is the distance between the two bodies. 
+		</p>
+		<p>
+			Now, from the sum and difference of Eqs. <xref ref="eq-vectorized-law-of-grav-m1"/> and <xref ref="eq-vectorized-law-of-grav-m2"/> we obtain two useful equations.
+			<mdn>
+				<mrow xml:id="eq-vectorized-law-of-grav-acm"> \amp \vec{A}_\text{cm} = 0, </mrow>
+				<mrow xml:id="eq-vectorized-law-of-grav-relative"> \amp m_1 \vec{a}_1 - m_2 \vec{a}_2 = 2G\dfrac{m_1m_2}{|\vec{r}_1 - \vec{r}_2|^2}\, \hat u_{1\rightarrow 2}, </mrow>
+			</mdn>
+			The first of these equations, says that the CM has no acceleration. Therefore, if we use a coordinate system that moves with the CM, i.e., we let the origin to be at the CM. It turns out that this coordinate system also makes the second equation simpler. We say that we are using <alert> CM Frame</alert>.	The coordinates are shown in <xref ref="fig-cm-frame-coords"/>.		
+		</p>
+		<figure xml:id="fig-cm-frame-coords">
+			<caption>
+				The motion of two particles <m>m_1</m> and <m>m_2</m> interacting with gravitational force only are simpler if described with respect to the center of mass. The position vectors have the following relation: <m> \vec r_1 = \vec r^{\,\prime}_1 + \vec R_\text{cm}</m> and <m> \vec r_2 = \vec r^{\,\prime}_2 + \vec R_\text{cm}</m>.
+			</caption>
+			<image source="./images/gravitation/cm-frame-coords.png" width="60%"/>
+		</figure>		
+		<p>
+			Let <m>\vec r^{\,\prime}_1 </m> <m>\vec r^{\,\prime}_2 </m> be the postions of the two particles with respect to their CM. Then, we have the following relations between the original coordinates and the new ones.
+			<mdn>
+				<mrow xml:id="eq-vectorized-law-of-grav-cm-coords-1">  \vec r^{\,\prime}_1 - \vec r^{\,\prime}_2 = \vec{r}_1 - \vec {r}_2, </mrow>
+				<mrow xml:id="eq-vectorized-law-of-grav-cm-coords-2">  m_1\vec r^{\,\prime}_1 + m_2 \vec r^{\,\prime}_2 = 0. </mrow>
+			</mdn>			
+		</p>
+		<p>
+			For convenience we give the relative position of particle 1 with respect to particle 2 its own symbol.
+			<men>
+				\vec r = \vec r_1 - \vec r_2 = \vec r^{\,\prime}_1 - \vec r^{\,\prime}_2,
+			</men>
+			and acceleration of this coordinate, i.e., the relative acceleration, 
+			<men>
+				\vec a = \text{ acceleration of relative position } \vec r.
+			</men>
+
+			We also inroduce a combination of masses, called the reduced mass, denoted by <m>
+			\mu</m>.
+			<men>
+				\mu = \dfrac{m_1 m_2 }{m_1 + m_2},
+			</men>
+			and total mass by <m>M</m>
+			<men>
+				M = m_1 + m_2.
+			</men>
+			After some algebra, which I differ to the end of this section, we can show that Eq. <xref ref="eq-vectorized-law-of-grav-relative" /> gives the following for the magnitude of the relative acceleration, 
+			<men xml:id="eq-vectorized-law-of-grav-relative-cmframe">
+				\mu\,\vec a = -G_N \dfrac{ M\,\mu}{r^2}\,\hat u,
+			</men>
+			where <m>\hat u</m> is a unit vector pointed towards the origin.
+		</p>
+		<p>
+			That is, the original coupled systems of equation of the two-body system in 
+			<xref ref="eq-vectorized-law-of-grav-m1" /> and <xref ref="eq-vectorized-law-of-grav-m2" />, has been decoupled into two separate one-body problems: (1) Eq. <xref ref="eq-vectorized-law-of-grav-acm" /> of the CM and (2) Eq. <xref ref="eq-vectorized-law-of-grav-relative-cmframe" /> for the relative coordinate in the center of frame. 
+		</p>
+		<p>
+			If you were to look at the original two particles from CM, you would find their relative motion to be described by a single particle of mass <m>\mu</m> moving in the field of a particle of mass <m> (m_1 + m_2)</m> placed at the origin as illustrated in <xref ref="fig-cm-frame-picture-of-two-body"/>. If <m>m_1\lt\lt m_2</m>, then, the CM will be very near <m>m_2</m> and <m>\mu\approx m_1</m>, i.e., in this case, it would appear that <m>m_1</m> is moving in the field of <m>m_2</m> while <m>m_2</m> is fixed, as is the case for Earth-Sun system.
+		</p>
+ 		<figure xml:id="fig-cm-frame-picture-of-two-body">
+			<caption>
+				The problem of two particles <m>m_1</m> and <m>m_2</m> interacting with gravitational force only in CM frame becomes study of motion of one particle of mass <m>\mu</m> moving in the gravitational field by an object of mass <m>M</m> at the origin, which is at the CM. 
+			</caption>
+			<image source="./images/gravitation/cm-frame-picture-of-two-body.png" width="90%"/>
+		</figure>
+		<p><alert>Algebra for Equation <xref ref="eq-vectorized-law-of-grav-relative-cmframe"/></alert></p>
+		<p>
+			<md>
+	 			<mrow> \vec a \amp = \vec a_1 - \vec a_2, </mrow>
+	 			<mrow> \amp = \left( \frac{1}{m_1} + \frac{1}{m_2} \right) G_N \frac{ m_1 m_2 }{r^2} \hat u_{1\rightarrow 2}. </mrow>
+ 			</md>
+ 			Now, we write this in the CM frame (the right side of <xref ref="fig-cm-frame-picture-of-two-body"/>), with <m>\hat u_{1\rightarrow 2}</m> is radial unit vector <m>\hat u_{1\rightarrow 2}= \hat r = (\vec r)/r </m>. 
+ 			<me>
+ 				\vec a = G_N \frac{ m_1 + m_2 }{r^2}\, \left( - \frac{\vec r}{r}\right).
+ 			</me>
+ 			Now, multiplying by <m>\mu</m>, we get
+	 		<me>
+	 			\mu\,\vec a  = G_N \frac{ \mu M }{r^2}\, \hat u,
+	 		</me> 
+	 		where <m>\hat u = \frac{-\vec r}{r}</m> is unit vector pointed towards the origin.
+		</p>
+
+	</introduction>
+ 
+
+</section>

@@ -1,0 +1,171 @@
+<section xml:id="sec-The-Fundamental-Forces"><title>The Fundamental Forces</title>
+	<introduction>
+		<p>
+			In everyday experience, physical objects interact with each other by several different types of forces.  For instance, when  a person pushing on a table we say that the person is applying a push force on the table, when Earth pulls on a skydiver we say that there is a force of gravity on the skydiver, when two friends are pulling on each other by pulling on a rope we say that there is a tension force on the them, and so on.  It turns out that all of these myriads of forces are actually manifestations of only four fundamental forces:
+			<ol>
+				<li> 
+					<term>Gravitational  force.</term> This is a universal interaction between all objects, large or small, and is the weakest of all. There is no limitation to the distance beyond which the gravitational force stops to act.  Gravitational force is a long-range force.
+				</li>
+				<li>
+					<term>Electric  and magnetic forces.</term>  Electric and magnetic forces appear to be two different types of forces, but James Clerk Maxwell showed that these two forces are different manifestations of the same force. The electromagnetic interaction between two objects occurs when they are electrically charged and also between a charged body and electromagnetic radiation or photon. For the same charged particles at the same distance, electromagnetic force is much stronger than the gravitational force. The electromagnetic force is also a long-range interaction. 
+				</li>
+				<li>
+					<term>Weak force.</term> The weak force is a very short-range force, being effective only within a distance less than <m>10^{-3}</m> fm, i.e., within a nucleon. The beta decay of nuclei is due to the weak interaction. In the 1960s and 1970s, a unified theory of electromagnetic and weak interactions was developed which has been verified experimentally. The new interaction is called <term>electroweak interaction</term>. The theory showed that, although electromagnetic and weak forces appear very different at everyday low energies,  they would merge into a single electroweak force above the unification energy, which is on the order of 100 GeV.
+				</li>
+				<li>
+					<term>Strong  force.</term>  Historically, the strong force refers to the force between nucleons, protons and neutrons, in a nucleus that helps explain the binding of nucleons despite very strong repulsive force between protons. In the modern time, the strong force between nucleons is though to arise from even more fundamental force between quarks.  Quarks are constituents of nucleons and other hadrons, which we will study later in this chapter.  The fundamental force between quarks is the <term>color force</term>. We will use the same name - strong force - for both the fundamental strong force and the effective strong force.
+				</li>
+			</ol>
+		</p>
+	</introduction>
+
+	<subsection><title>Force Carriers</title>
+		<p>
+			In the field picture of forces, we envision space to be filled with a force field. We understand the force on a particle by the effect of the force field on the particle.  For instance, a charge <m>q</m> will experience a force <m>\vec F</m> if there is an electric field <m>\vec E</m> at the location of the charge.
+			<me>
+				\vec F = q \vec E.
+			</me>
+			In this view, the force between two charges <m>q_1</m> and <m>q_2</m> is described by electric fields <m>\vec E_1</m> and <m>\vec E_2</m> created by the two charges.  The force on <m>q_1</m> will be
+			<me>
+				\vec F_{\textrm{on 1}} = q_1 \vec E_{\textrm{of 2}},
+			</me>
+			and the force on <m>q_1</m> will be
+			<me>
+				\vec F_{\textrm{on 2}} = q_2 \vec E_{\textrm{of 1}},
+			</me>
+			Treating forces by using force field is quite adequate for classical physics, i.e. non-quantum physics.  The relativistic quantum physics, called quantum field theory (QFT), has introduced a different view of how two particles interact with each other. In QFT, one of the interacting particle emits a force mediator particle, which is then absorbed by the other particle, creating an interaction between the emitting particle and the absorbing particle.
+		</p>
+		<p>
+			For instance, the electric force between two electrons occurs when one electron emits a photon which is subsequently absorbed by the second electron.  A diagram, called the Feynman Diagram, helps visualize the interaction process.  Two Feynman diagrams for electromagnetic interaction (a) between  electron and electron and (b) between electron and proton are illustrated in <xref ref="fig-feynmann-diagrams"/>.  In the quantum picture of interaction, a force between particles occurs through exchanging force particles.
+		</p>
+
+		<figure xml:id="fig-feynmann-diagrams">
+			<caption>
+				Electromagnetic interaction involves exchange of photons between charged particles.  These Feynman diagrams show a photon being exchanged (a) between two electrons and (b) an electron and a proton.
+			</caption>
+			<image source="./images/modern-physics/feynmann-diagrams.png" width="90%"/>
+		</figure>
+ 
+		<p>
+			Every force is therefore mediated by one or more field particle(s) corresponding to the force.  <xref ref="tab-force-carriers"/> displays the force carriers for the four fundamental forces and some important characteristics of each force.   There is one field particle for electromagnetic force, three field particles for the weak force, eight for the strong force, and one proposed for gravity.  These force-mediating particles are often called <term>gauge bosons</term>.
+		</p>
+		<table xml:id="tab-force-carriers"><title>Fundamental Forces</title>
+			<tabular>
+				<col halign="left"></col><col halign="center"></col><col halign="center"></col><col halign="left"></col>
+				<row header="yes" bottom="minor">
+					<cell>Force</cell> <cell>Range of force</cell> <cell>Relative strength</cell> <cell>Force carrier</cell>
+				</row>
+				<row>
+					<cell>Gravitation</cell> <cell>Long</cell> <cell>1</cell> <cell>Graviton (proposed)</cell>
+				</row>
+				<row>
+					<cell>Electromagnetic</cell> <cell>Long</cell> <cell><m>10^{41}</m></cell> <cell>Photon</cell>
+				</row> 
+				<row>
+					<cell>Weak</cell> <cell>Very short, <m>\approx 10^{-3}</m> fm</cell> <cell><m>10^{37}</m></cell> <cell>W<m>^{+}</m>, W<m>^{-}</m>, Z<m>^{0}</m></cell>
+				</row> 
+				<row>
+					<cell>Strong/Color</cell> <cell>Short, <m>\approx 1</m> fm</cell> <cell><m>10^{43}</m></cell> <cell>Gluons  (8 types)</cell>
+				</row> 
+			</tabular>
+		</table>
+
+ 
+		<subsubsection><title>Yukawa Potential</title>
+			<p>
+				We can illustrate characteristics of force mediators by the treatment of effective strong force between nucleons due to Hideki Yukawa of Japan. Yukawa proposed   the following potential <m>U(r)</m>  for the attractive force between nucleons 
+				<me>
+					U(r) = -\frac{k}{r} e^{-  r / r_0},
+				</me>
+				where <m>r_0</m> is a parameter with units of length, and <m>k</m> is a constant signifying the strength of the interaction.  If you plot this potential versus <m>r</m> you will find that the potential decreases to zero more rapidly for smaller <m>r_0</m> and less rapidly with larger <m>r_0</m>.  That is, the parameter <m>r_0</m> is a measure of the range of force. 
+				<me>
+					r_0 = \textrm{Range of force}.
+				</me>
+				Yukawa showed that if the range <m>r_0</m> will be related to the rest mass <m>m</m> of the force carrier.
+				<me>
+					r_0 \sim \frac{1}{m}.
+				</me> 
+				Suppose that <m>r_0</m> was equal to the de Broglie length of the particle if the particle had a speed close to the speed of light.  The, our guess will be
+				<me>
+					r _0 = \frac{h}{p} = \frac{h}{mc}.
+				</me>
+				Let us calculate the mass of the force carrier whose range is 10 fm. This will give
+				<md>
+					<mrow> m \amp = \frac{h}{r_0c} = \frac{6.63\times 10^{-34}\:\textrm{J.s}}{10\times 10^{-15}\:\textrm{m} \times 3\times 10^{8}\:\textrm{m/s}}</mrow>
+					<mrow> \amp = 4.42\times10^{-28}\:\textrm{kg} = 0.133\:\textrm{u} = 124\:\textrm{MeV/c}^2.</mrow>
+				</md>
+				This should be compared to the mass of pions, with <m>\pi^{+}</m> being 140 MeV/c<m>^2</m> and  <m>\pi^{0}</m> being 135 MeV/c<m>^2</m>.  In the picture of Yukawa,  the scattering of a proton and a neutron occurs with an exchange of a pion as illustrated by the Feynman diagram in <xref ref="fig-particle-strong-force-pion-exchange"/>.
+			</p>
+
+		<figure xml:id="fig-particle-strong-force-pion-exchange">
+			<caption>
+				Strong force between a proton and a neutron with an exchange of a pion.
+			</caption>
+			<image source="./images/modern-physics/particle-strong-force-pion-exchange.png" width="50%"/>
+		</figure>
+
+ 
+
+		</subsubsection>
+	</subsection>
+
+
+
+
+TODO:
+
+<p>
+\begin{exercise}
+ (a) Evaluate the electric and gravitational forces between two protons at a distance of 1 fm. (b) How many fold is the the electric force compared to the gravitational force?
+\end{exercise}
+ 
+</p>
+<p>
+
+\begin{exercise}
+Consider a particle of mass $M= m_p/10$ and speed half of the speed of light $\frac{c}{2}$.   What will be the de Broglie wavelength of the particle in fm? 
+\end{exercise}
+ 
+</p>
+<p>
+
+\begin{exercise}
+ Pion was predicted to mediate the force between protons in the nucleus. Show that if we equate the de Broglie wavelength of the pion with speed close to the speed of light with the range of the nucleon-nucleon force we get the mass of the pion to be approximately the mass found experimentally. 
+\end{exercise} 
+ 
+</p>
+<p>
+
+\begin{exercise}
+ The energy-time uncertainty relation is given by
+ \[
+ \Delta E \Delta t \geq \hbar/2.
+ \]
+ Here $\Delta E$ is the energy width of a decay process and $\Delta t$ is the time over which the decay takes place. Compute the minimum energy widths in MeV for the decay involving (a) an electromagnetic interaction, $\Delta t = 10^{-9}\:\textrm{s}$, (b) a weak interaction, $\Delta t = 10^{-20}\:\textrm{s}$, and (c) a strong interaction, $\Delta t = 10^{-23}\:\textrm{s}$.
+\end{exercise} 
+
+ 
+</p>
+<p>
+
+
+\begin{exercise}
+ The energy-time uncertainty relation is given by
+ \[
+ \Delta E \Delta t \geq \hbar/2.
+ \]
+ Here $\Delta E$ is the energy width of a decay process and $\Delta t$ is the time over which the decay takes place.  A hydrogen atom makes a quantum transition from $n=3$ to $n=2$ with in a time $t=10^{-10}\:\textrm{s}$.  (a) What is the energy of the photon that comes out? (b) What is the minimum width of the spectral line plotted versus energy rather than versus wavelength?  (c) What is the the minimum width of the spectral line plotted versus  wavelength?
+\end{exercise} 
+
+ 
+</p>
+ 
+
+
+
+
+
+
+
+
+</section>

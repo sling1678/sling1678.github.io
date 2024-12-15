@@ -1,0 +1,259 @@
+<section xml:id="sec-LorentzTransformations"><title> Lorentz Transformations </title>
+	<introduction>
+
+
+		<p>
+			What are the relations between the coordinates and times assigned to the same event in two inertial frames that are in relative motion with respect to each other? In the section in time dilation we saw that duration of time is different in the two frames. How about position and length? 
+		</p>
+		<p>
+			Let frame <m>S^{\prime}</m> be moving relative to frame <m>S</m> towards positive <m>x</m>-axis direction of the <m>S</m> frame with speed <m>V</m> as shown in <xref ref="fig-lorentz-transformation-frames"/>. At some point in time, origins of the the two frames will be at the same point in space, we will use that instant to set zero of time in both frames.
+ 
+		</p>
+
+
+		<figure xml:id="fig-lorentz-transformation-frames">
+			<caption>
+				Time and position coordinates of an event in two frames in relative motion. We will set <m>t = 0 = t'</m> when origins of the the two frames at same point.
+			</caption>
+			<image source="./images/modern-physics/lorentz-transformation-frames.png" width="90%"/>
+
+		</figure>
+
+		<p>
+			Let <m>(t,x,y,z)</m> be time and coordinates of an arbotrary event E in frame S and <m>(t',x',y',z')</m> in frame S' as shown in <xref ref="fig-lorentz-transformation-frames"/>. Lorentz transformation gives the following relations for the situation in this figure.
+			<mdn>
+				<mrow> \amp t = \dfrac{t' + V x/c^2}{\sqrt{1 - V^2/c^2}} </mrow>
+				<mrow> \amp x = \dfrac{x' + V t}{\sqrt{1 - V^2/c^2}} </mrow>
+				<mrow> \amp y = y',\ \ z = z'.</mrow>
+			</mdn>
+		</p>
+		<p>
+			You can, of course, write the relation other way around as well.
+			<mdn>
+				<mrow> \amp t' = \dfrac{t -  V x/c^2}{\sqrt{1 - V^2/c^2}} </mrow>
+				<mrow> \amp x' = \dfrac{x - V t}{\sqrt{1 - V^2/c^2}} </mrow>
+				<mrow> \amp y' = y,\ \ z' = z.</mrow>
+			</mdn>			
+		</p>
+ 
+	</introduction>
+	<subsection><title>Derivation of Lorentz transformations</title>
+		<p>
+			We want one-to-one relation between events in the two frames. Its important to note that the relation between the two sets of coordinates and times must be linear. If not, then two or more events in one frame may correspond to single event in the other.  
+		</p>
+		<p>
+			Coordinates perpendicular to relative motion of frames: Since relative motion of frames S and S' is along their common <m>x</m>-axis, <m>y</m> and <m>z</m> coordinates in the two systems will be same in the two frames since their origins coincided at <m>t=0=t'</m>.
+			<me>
+				y = y',\ \ z = z'.
+			</me>
+		</p>
+		<p>
+			Now, we need relations for <m>(x,t)</m> and <m>(x',t')</m>.  Since we expect linear relations, we will work out the unknown coefficients, <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m> in the following equations.
+			<mdn>
+				<mrow xml:id="eq-first-Lorentz">\amp t = A\:t' + B\: x'</mrow>
+				<mrow xml:id="eq-second-Lorentz">\amp x = C\:t' + D\: x'</mrow>				
+			</mdn>
+			To find these four coefficients we will apply them to following four events.
+		</p>
+		<p>
+			<alert> Event 1: </alert>  <m>x=0</m> at some time <m>t</m> in S.  This corresponds to <m>x' = -V t'</m> in S'.  Using these values in Eq. <xref ref="eq-second-Lorentz"/>, we get
+			<me>
+				0 = C\:t' - D\: V t'.
+			</me>
+			Therefore,
+			<men xml:id="eq-C-eq-D-V">
+				C = D\: V.
+			</men>
+		</p>
+		<p>
+			<alert>Event 2: </alert> <m>x' = 0 </m> at some <m>t'</m> in S'.  This event corresponds to <m>x = Vt</m> for some time <m>t</m> in S. Therefore, Eqs. <xref ref="eq-first-Lorentz"/> and <xref ref="eq-second-Lorentz"/> give
+			<md>
+				<mrow > \amp t = A\:t'  </mrow>
+				<mrow >\amp Vt = C\:t' </mrow>
+				
+			</md>
+			Dividing these two equations we obtain
+			<men xml:id="eq-C-eq-AV">
+				C =  A\: V.
+			</men>
+			From Eqs. <xref ref="eq-C-eq-D-V"/> and <xref ref="eq-C-eq-AV"/> we find
+			<men xml:id="eq-7-Lorentz">
+				A = D.
+			</men>
+		</p>
+		<p>
+			<alert>Event 3: </alert> Send a light pulse from the origin of the two coordinates when they were at the same location at time <m>t=0=t'</m> towards positive <m>x</m>-axis as shown in <xref ref="fig-LorentzTransformation-event3"/>.
+		</p>
+		<sidebyside widths="45% 5% 50%">
+			<p>
+				The location of the pulse in the two systems will be <m>x = c t</m> and <m>x' = c t'</m> since light has same speed in the two systems and the pulse will be traveling towards positive <m>x</m>-axis in both systems.    
+			</p> 
+			<p></p>
+			<figure xml:id="fig-LorentzTransformation-event3">
+				<caption>
+					
+				</caption>
+				<image source="./images/modern-physics/LorentzTransformation-event3.png" width="90%"/>
+
+			</figure>
+		</sidebyside>
+
+
+		<p>
+			Putting these values for <m>x</m> and <m>x'</m> in Eqs. <xref ref="eq-first-Lorentz"/> and <xref ref="eq-second-Lorentz"/> and using <m>A = D</m> and <m>C = D V = A V</m> we get
+			<md>
+				<mrow > \amp t = A\:t' + B \: c t' </mrow>
+				<mrow > \amp c t = A V\:t' + A\: c t'</mrow>
+			</md>
+			By dividing these equations and rearranging you can show that
+			<men xml:id="eq-B-eq-A-times-V-div-c-2">
+				B = A\:\dfrac{V}{c^2}.
+			</men>
+ 
+			Now, we need to find the expression for <m>A</m> only. The others can be obtained from <m>A</m>.
+		</p>
+		<p>
+			<alert> Event 4: </alert> Send a light pulse at <m>t'=0=t</m> from the origin travels towards positive <m>y'</m> axis in the <m>S'</m> frame as shown in <xref ref="fig-LorentzTransformation-event4"/>. 
+		</p>
+		<sidebyside widths="45% 5% 50%">
+			<p>
+				 The pulse travels a distance <m>ct'</m> towards positive <m>y'</m> axis in S' but travels at a diagonal a distance of <m>ct</m> in frame S.   
+			</p> 
+			<p></p>
+			<figure xml:id="fig-LorentzTransformation-event4">
+				<caption>
+					
+				</caption>
+				<image source="./images/modern-physics/LorentzTransformation-event4.png" width="90%"/>
+
+			</figure>
+		</sidebyside>
+		<p>
+			Since the speed of light is same in the two frames, in frame S the path length of light in time <m>t</m> along the diagonal of the triangle will equal <m>c t</m> and along <m>y</m>-axis by amount <m>ct'</m>. From the right-angled triangle in the figure we get
+			<me>
+				(Vt)^2 + (ct'))^2  = (ct)^2 \ \ \longrightarrow \ \ t'^2 = \left( 1 - \frac{V^2}{c^2} \right)\, t^2.
+			</me>
+			From above we have
+			<me>
+				t = A\:t' + B \: x'=  A\: t'.
+			</me>
+			Therefore, 
+			<me>
+				t'^2 = \left( 1 - \frac{V^2}{c^2} \right)\, A^2 t'^2.
+			</me>
+			Hence,
+			<me>
+				A = \pm \frac{1}{\sqrt{1 - V^2/c^2}} = \pm \gamma.
+			</me>
+			From our thought experiments presented above, both <m>t</m> and <m>t'</m> are positive, we discard the netative solution and write
+			<men>
+				A = \frac{1}{\sqrt{1 - V^2/c^2}} \equiv \gamma.
+			</men>
+			Now, we can write other coefficients also.
+			<men>
+				B = \gamma\: V/c^2,\ \ C = \gamma\: V,\ \ D = \gamma.
+			</men>
+			Using these we have the Lorentz transformation corresponding to the <xref ref="fig-lorentz-transformation-frames"/>.
+			<mdn>
+				<mrow>\amp t = \gamma\, t' + \gamma\: V/c^2\: x'. </mrow>
+				<mrow>\amp x = \gamma\, V t' + \gamma\: x'. </mrow>
+			</mdn>
+ 
+		</p>
+	</subsection>
+
+ 
+
+	<exercise xml:id="ex-Describing-Events-in-a-Frame"><title>Describing Events in a Frame </title>
+
+		<statement>
+			<p>
+				Describe the following physical occurrences as events: (a) A postman rings a doorbell of a house precisely at noon, (b) At the same time as the doorbell is rung  a slice of bread pops out of a toaster which is located 10 m from the door in the East direction from the door, (c) 10 sec later an airplane arrives at the airport, which is 10 km from the door in the East direction and 2 km to the South.
+			</p>
+		</statement>
+		<hint><p>
+			Event is (time, position) or (t, x, y, z) of an occurence.
+		</p></hint>
+		<answer><p>
+			(a) <m>(0, 0, 0, 0)</m>, (b) <m>(0, 10\text{ m}, 0, 0)</m>, (c) <m>(0, 10\text{ km}, -2\text{ m}, 0)</m>.
+		</p></answer>
+		<solution>
+			<p>
+				(a) Let origin be at the bell and time <m>t=0</m> correspond to the noon time. then, we can say that event <m>(t, x, y, z)</m> for this event is <m>(0, 0, 0, 0)</m>.
+			</p>
+			<p>
+				(b) Using <m>x</m> axis from bell to the toaster, we will get  <m>(t, x, y, z)</m> = <m>(0, 10\text{ m}, 0, 0)</m>.
+			</p>
+			<p>
+				(c) Supposing <m>y</m> axis is to the North, we will get  <m>(t, x, y, z)</m> =  <m>(0, 10\text{ km}, -2\text{ m}, 0)</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Coordinates-and-Times-Assigned-to-an-Event-Described-in-another-Frame"><title>Coordinates and Times Assigned to an Event Described in another Frame </title>
+
+		<statement>
+			<p>
+				A train arrives at a location <m>( x = x_0, y = 0, z = 0)</m> at time <m>t=10\text{ sec}</m> in a frame S at rest with respect to the train station.  A spaceship is passing by with velocity <m>(3,000\text{ m/s},0,0)</m> with respect to train station.  What will be the coordinates and time the pilot will assign to the event of the train arrival?
+			</p>
+		</statement>
+		<hint><p>
+			Use Lorentz transformation.
+		</p></hint>
+		<answer><p>
+			<m>\left( 1 + \frac{1}{2}\times 10^{-10} \right) \times 10\text{ sec}</m>, <m>-\left( 1 + \frac{1}{2}\times 10^{-10} \right) \times 3\times 10^{4}\text{ m}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Let us denote Pilot's frame by <m>\text{S}^\prime</m>. Then, this problem corresponds to <xref ref="fig-lorentz-transformation-frames"/>. Suppose frame S and <m>\text{S}^\prime</m> are coincident with zero reading of time in each frame. Denoting event in <m>\text{S}^\prime</m> by <m>(t', x', y', z')</m> for event (0,0,0,0) in frame S, we have
+				<md>
+					<mrow> \amp t'  = \dfrac{t - V x/c^2}{\sqrt{1 - V^2/c^2}} = \dfrac{t}{\sqrt{1 - V^2/c^2}} </mrow>
+					<mrow>  \amp x'  = \dfrac{x - Vt}{\sqrt{1 - V^2/c^2}} =  \dfrac{- Vt}{\sqrt{1 - V^2/c^2}}  </mrow>
+				</md>
+				Since relative motion is only along common <m>x</m>-axis, no change will occur in <m>y</m> and <m>z</m> coordinates. To compute numrical value, we first compute <m>\gamma</m>.
+				<me>
+					\gamma = \dfrac{1}{\sqrt{1 - V^2/c^2}} = \dfrac{1}{\sqrt{1 -10^{-10}}} \approx 1 + \frac{1}{2}\times 10^{-10}.
+				</me>
+				Therefore, 
+				<md>
+					<mrow>\amp t' = \left( 1 + \frac{1}{2}\times 10^{-10} \right) \times 10\text{ sec}. </mrow>
+					<mrow>\amp x' = -\left( 1 + \frac{1}{2}\times 10^{-10} \right) \times 3\times 10^{4}\text{ m}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Same-Events-Described-by-Observers-in-Two-Frames"><title>Same Events Described by Observers in Two Frames </title>
+
+		<statement>
+			<p>
+				In frame S two events are observed: event 1 - a pion is created at rest at the origin  and event 2- the pion disintegrates after time \tau, also at origin. Another observer in another frame S' is moving towards positive <m>x</m>-axis of S frame with a constant speed <m>V</m> wathces the same two events in his frame.  The origin of the two frames coincide at zero time in both frames. (a) Find the positions and timings of these two events in the frame S' and (b) describe how the observer in S' will describe these two events.
+			</p>
+		</statement>
+		<hint><p>
+			Use Lorentz transformation.
+		</p></hint>
+		<answer><p>
+			<m>(0,0)</m> and <m>(\gamma \tau, -\gamma V \tau )</m>
+		</p></answer>
+		<solution>
+			<p>
+				By using formulas of Lorentz transformation, we can immediately write values for the event in S'. For event 1 we get
+				<md>
+					<mrow> \amp t'_1  = \dfrac{t}{\sqrt{1 - V^2/c^2}} = 0</mrow>
+					<mrow>  \amp x'_1  = \dfrac{- Vt}{\sqrt{1 - V^2/c^2}} = 0 </mrow>
+				</md>
+				and for event 2 we get
+				<md>
+					<mrow> \amp t'_2  = \dfrac{\tau}{\sqrt{1 - V^2/c^2}} </mrow>
+					<mrow>  \amp x'_2  = \dfrac{- V\tau}{\sqrt{1 - V^2/c^2}}. </mrow>
+				</md>								
+			</p>
+		</solution>
+	</exercise>
+ 
+ 
+
+</section>

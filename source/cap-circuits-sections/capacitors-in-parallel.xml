@@ -1,0 +1,84 @@
+<section xml:id="Capacitors-in-Parallel"><title> Capacitors in Parallel </title>
+	<introduction>
+		<p>
+			The physical effect of connecting capacitors in parallel is to increase the effective area available for charges to spread over.  Therefore we expect the net capacitance to go up when we connect capacitors in parallel.  In this section we will figure out a formula for the equivalent capacitance.  
+		</p>
+
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				Consider a circuit with two capacitors <m>C_1</m> and <m>C_2</m> in parallel as shown in <xref ref="fig-cap-in-parallel"/>. Since the voltage source maitains a constant voltage, the voltage across the two capacitors will be equal. But, they will be charged to different amounts, say <m>Q_1</m> and <m>Q_2</m>, depending upon thie capacitance according to <m>Q=CV</m> formula. Therefore, we have
+				<me>
+					Q_1 = C_1\, V,\ \ \ Q_2 = C_2\, V
+				</me>			
+			</p> 
+			<p></p>
+			<figure xml:id="fig-cap-in-parallel">
+				<caption>
+					Capacitors in parallel.
+				</caption>
+				<image source="./images/cap-circuits/cap-in-parallel.png" width="50%"/>
+			</figure>
+		</sidebyside>
+
+ 
+		<p>
+			
+			Now, suppose we wanted to replace the two capacitors by one capacitor, what should be the capacitance of this equaivalent capacitor? We definitely want the equivalent capacitor to store same total amount of charge.
+			<me>
+				Q_\text{on equivalent} =  Q_1 + Q_2.
+			</me>
+			Now, it will have the same voltage <m>V</m> across it. This gives the following requirement for the capacitance <m>C_\text{parallel}</m> of the equivalent capacitor.
+			<me>
+				V = \frac{Q_1 + Q_2}{C_\text{parallel}}
+			</me>
+			Replacing <m>Q_1</m> by <m>C_1V</m> and <m>Q_2</m> by <m>C_2V</m>, yields the following for the equivalent capacitance.
+			<men>
+				C_\text{parallel} = C_1 + C_2.
+			</men>
+			This generalizes easily to the case of  <m>N</m> capacitors in parallel.
+			<men>
+				C_\text{parallel} = C_1 + C_2+\cdots + C_N.
+			</men>
+			If you have widely different magnitude capacitances, it will be the capacitor that has the largest capacitance that will dominate the overall capacitance of the group. In some situations, it may be possible to ignore the capacitors with lower capacitances when in parallel to a capacitor with much higher capacitance as we will see in the following example.
+		</p>
+	</introduction>
+
+
+	<exercise xml:id="ex-Numerical-Example-of-Capacitors-in-Parallel"><title> Numerical Example of Capacitors in Parallel </title>
+		<statement>
+			<p>
+				Evaluate the equivalent capacitance of the following capacitors connected in parallel.   (a) <m>C_1 = 1 \ \mu\text{F} </m>, and <m>C_2 = 1\ \mu\text{F}</m>,  (b) <m>C_1 = 1\ \mu\text{F}</m>, and <m>C_2 = 1000\ \mu\text{F}</m>, and (c) <m>C_1 = 1 \ \mu\text{F}</m>, and <m>C_2 = 10^6\ \mu\text{F}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Use formula.  </p> </hint>
+		<answer> <p> (a) <m> 2\ \mu\text{F}</m>, (b) <m>1001\ \mu\text{F} </m>, (c) <m> 10^6\ \mu\text{F}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				<md>
+					<mrow> \text{(a) } C_\text{parallel} \amp =  1\ \mu\text{F} + 1\ \mu\text{F}=2\ \mu\text{F} </mrow>
+					<mrow> \text{(b) } C_\text{parallel} \amp =  1\ \mu\text{F} + 1000\ \mu\text{F}=1001\ \mu\text{F} </mrow>
+					<mrow> \text{(c) } C_\text{parallel} \amp =  1\ \mu\text{F} + 10^6\ \mu\text{F}\approx10^6\ \mu\text{F} </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

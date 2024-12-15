@@ -1,0 +1,115 @@
+<section xml:id="work-by-conservative-forces-potential-energy"><title> Potential Energy</title>
+	<introduction>
+		<p>
+			Recall that work by constant force is indepndent of the path of motion but simply the dot product of the force <m> \vec F </m> and the displacement <m> \Delta \vec r</m>. 
+			<me>
+				W_{if} = \vec F\, \cdot\, \Delta \vec r\ \ \ (\text{case of constant force})
+			</me>
+		</p>
+		<p>
+			Writing  <m> \Delta \vec r</m> as the difference of the positions 
+			<m>
+				\Delta \vec r = \vec r_f - \vec r_i
+			</m>
+			this work can be written as a difference of two quantities, one evaluated at each end of the motion.
+			<me>
+				W_{if} = \vec F\, \cdot\,  \vec r_f - \vec F\, \cdot\,  \vec r_i\ \ \ (\text{case of constant force})
+			</me>
+		</p>
+		<p>
+			This form of work is not restricted to only constant forces. The same happens to several other forces, e.g., Newton's gravitational force, spring force, and electric force, which are not constant, but depend on the position. These forces are called <term> conservative forces </term>.
+		</p>
+		<p>
+			Evaluating the work integrals in the case of weight, spring force, Newton's gravitational force, and Coulomb's electric force give the following results.
+			<mdn>
+				<mrow> \amp W_{if} = mgy_i - mgy_f\ \ \ (\text{Weight})</mrow>
+				<mrow> \amp W_{if} = \dfrac{1}{2}kx_i^2 - \dfrac{1}{2}kx_f^2\ \ \ (\text{Spring})</mrow>
+				<mrow> \amp W_{if} = \left( -\dfrac{Gm_1m_2}{r_i} \right) - \left( -\dfrac{Gm_1m_2}{r_f} \right)\ \ \ (\text{Newton's gravitation})</mrow>
+				<mrow> \amp W_{if} = \left( \dfrac{1}{4\pi\epsilon_0}\dfrac{q_1q_2}{r_i} \right) - \left( \dfrac{1}{4\pi\epsilon_0}\dfrac{q_1q_2}{r_f} \right)\ \ \ (\text{Coulomb's electric force})</mrow>
+			</mdn>
+		</p>
+		<p>
+			The derivation of the first three are presented below. Each case can be formally written as a difference of two terms, one evaluated at <m> t_i </m> and the other at <m> t_f</m>. 
+		</p>
+		<p>
+			We denote each term by letter <m> U </m>. The quantity <m> U </m> in each case is called <term> potential energy</term>.
+			The potential energies for the four forces listed above have the following formulas.
+			<mdn>
+				<mrow> \amp U_{\text{weight}} = mgy</mrow>
+				<mrow> \amp U_{\text{spring}} =\dfrac{1}{2}kx^2 </mrow>
+				<mrow> \amp U_{\text{gravitation}} = -\dfrac{Gm_1m_2}{r}   </mrow>
+				<mrow> \amp U_{\text{gravitation}} =  \dfrac{1}{4\pi\epsilon_0}\dfrac{q_1q_2}{r}   </mrow>
+			</mdn>
+		</p>
+		<p>
+			Thus, for every conservative force we can write the work done as the potential energy at the initial instant minus the potential energy at the final instant. 
+
+			<men>
+				W_{if}^{\text{conservative}} = U_i - U_f,
+			</men>				 
+			where <m> U </m> takes different form for different forces.  We also write this as
+			<men>
+				W_{if}^{\text{conservative}} = - \Delta U,
+			</men>
+			where <m> \Delta U = U_f - U_i </m>. 
+		</p>
+
+<!-- 			<p>				
+				Here, in the first equation <m> m </m> is the mass, <m> g </m> is the acceleration due to gravity, and <m> y </m> is the <m> y </m> coordinate in which the <m> y </m> axis is pointed up. In the second equation <m> k </m> is the spring constant, and <m> x </m> is the change in length of the spring from the length when spring is relaxed. In the third equation, <m> G </m> is the universal gravitational constant, <m> m_1 </m> and <m> m_2 </m> are the masses of two bodies, and <m> r </m> is the distance between them. In the last equation, <m> \epsilon_0</m> is the permittivity of vacuum, <m> q_1</m> and <m> q_2 </m> are the electric charges, and <m> r </m> is the distance between them. 
+			</p> -->
+		
+	</introduction>
+
+	<subsection><title> Work by weight - Calculus</title>
+		<p>
+			Weight is a conservative force. Since weight is a constant force, work done by weight will be independent of path as shown before.
+		</p>
+		<p>
+			Consider an object of mass <m> m </m>. We wish to find the work done by the weight between instants <m> t_i </m>, when the block is at coordinate <m> (x_i, y_i, z_i) </m>, and <m> t_f </m>, when the block is at coordinate <m> (x_f, y_f, z_f) </m>.
+
+		</p>
+		<p>
+			Let positive <m> y </m> axis be pointed up, then, weight vector is
+			<me>
+				\vec W = - mg \hat j,
+			</me> 
+			where <m> \hat j </m> is the unit vector pointed in the direction of the positive <m> y </m> axis. A general formula for the displacement vector is
+			<me>
+				d\vec r = \hat i\, dx + \hat j\, dy + \hat k\, dz, 
+			</me>
+			where as usual <m> \hat i </m> and <m> \hat k </m> are unit vectors in the positive <m> x </m> and <m> z </m> directions respectively. Therefore, the integral that gives the work done by weight during interval.
+			<me>
+				W_{if} = \int_i^f\, \vec W \cdot d\vec r = \int_{y_i}^{y_f}\, (- mg) dy =  m\, g\, y_i - m\, g\, y_f,
+			</me>
+			which is independent of the path and only depends upon the coordinates of the initial and final positions alogn with some constants.			 
+		</p>
+	</subsection>
+
+	<subsection> <title> Work by spring force - Calculus</title>
+
+		<p>
+			As an example of a conservative force, we will find the work done by a spring force on a block. 
+		</p>
+		<sidebyside widths="50% 50%">
+			<p>
+				Let a spring of spring constant <m> k </m> be along the <m> x </m> axis with origin at the position of the block when the spring is not stretched and the positive <m> x </m> axis is in the direction that leads to the stretching of the spring.
+			</p>
+			
+			<image source="./images/energy/work-by-spring-force.png" width="70%"/>
+		</sidebyside>
+		<p>
+			We wish to find the work done by the spring force between instants <m> t_i </m>, when the block is at coordinate <m> x_i </m>, and <m> t_f </m>, when the block is at coordinate <m> x_f </m>.
+		</p>
+		<p>
+			Let <m> x </m> be the coordinate of the block at instant <m> t </m>. The work is given by the integral
+			<me>
+				W_{if} = \int_i^f\, \vec F \cdot d\vec r = \int_{x_i}^{x_f}\, (- k x ) dx = \frac{1}{2} k x_i^2 - \frac{1}{2} k x_f^2,
+			</me>
+			which is independent of the path between <m> x_i </m> and   <m> x_f </m> since we will get the same integral whether motion has no full oscillations between <m> t_i </m> and <m> t_f </m> or had multiple oscillations.
+		</p>
+	</subsection>
+
+	<subsection><title> Work by gravitational force - Calculus- TODO</title>
+	</subsection>
+
+</section>

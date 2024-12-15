@@ -1,0 +1,112 @@
+<section xml:id="Thermodynamic-Processes"><title> Thermodynamic Processes </title>
+	<introduction>
+		<p>
+			The thermodynamic state of a system can change as a result of interaction with the environment.  For instance, you can change pressure, temperature, and/or volume of a gas by heating the gas. The state of the system may change gradually and in a well-defined way or change very abruptly. We call the process of change a <term> thermodynamic process</term>. 
+		</p>
+	</introduction>
+
+	<subsection> <title>Quasi-static Processes</title>
+		<p>
+
+			A <term> quasi-static process </term> refers to an idealized or imagined process where the change in state is made infinitesimally slowly so that at each instant the system can be assumed to be in a  thermodynamic equilibrium within itself and with the environment.
+		</p>  
+		<p>
+			For instance, imagine heating 1 kg of water from a temperature <m>20^{\circ}\text{C}</m> to <m>21^{\circ}\text{C}</m> at a constant pressure of <m>1\text{ atm}</m>.  To heat the water very slowly we may imagine placing the container with water in a large bath which can be slowly heated such that the temperature of the bath can rise infinitesimally slowly from <m>20^{\circ}\text{C}</m> to <m>21^{\circ}\text{C}</m>. If we put 1 kg water at <m>20^{\circ}\text{C}</m> directly into a bath which is at <m>21^{\circ}\text{C}</m>, the temperature of water will rise rapidly to <m>21^{\circ}\text{C}</m> in a non-quasi-static way.
+		</p>
+		<p>
+			Quasi-static processes are done slowly enough that the system remains at thermodynamic equilibrium at each instant despite the fact that system changes over time. The thermodynamic equilibrium of the system is necessary for the system to have well-defined values of macroscopic properties such as temperature and pressure of the system at each instant of the process. Therefore, quasi-static processes can be shown as well-defined paths in state diagram of the system as shown in <xref ref="fig-quasi-static-process"/>. If a finite change occurs fast, we would not know the intermediate states between the initial and final states. Therefore, we display such non-quasistatic processes by dashed curves or lines as shown in the figure.
+		</p>
+		<!-- <p>
+			Since quasi-static processes cannot be completely realized for any finite change of the system, all processes in nature are nonquasistatic.   Examples of quasi-static and non-quasi-static processes are shown in <xref ref="fig-quasi-static-process"/>.  Despite the fact that all finite changes must occur essentially non-quasi-statically at some stage of the change, we can imagine performing infinitely many quasi-static processes corresponding to every quasi-static process.  
+		</p> -->
+		<p>
+			Since quasi-static process can be analyzed analytically, we will mostly study quasi-static processes in this book. We have already seen that in a quasi-static process, work by a gas is given by <m>pdV</m>.  Even heat can be written in analytic form if the quasi-static process is also reversible as we will see in the chapter on entropy.
+		</p>
+		<figure xml:id="fig-quasi-static-process">
+			<caption>
+				Quasi-static and nonquasistatic processes between states A and B of a gas.  In a quasi-static process the path of the process between A and B can be drawn in a state diagram since all the states the system goes through are known.  In a nonquasistatic process the states between A and B are not known, and hence no path can be drawn. For a gas, you can draw a process in a plane of any pair of two state variables. In (a) the process is drawn in <m> (V,T) </m> plane, and in (b) in the <m> (p,V) </m> plane. At each point of the process, the pressure in the <m> (V,T) </m> plane and temperature in the <m> (p,V) </m> plane can be deduced by using the equation of state.
+			</caption>
+			<image source="./images/ideal-gas/quasi-static-process.png" width="100%"/>
+ 
+		</figure>
+
+
+	</subsection>
+
+
+	<subsection><title>Isothermal Process </title>
+		<p>
+			An isothermal process is a transformation during which temperature of the system is kept fixed. Say, you want to expand a gas at a constant temperature. You can place the gas in a heat-conductive container with a movable piston to heat flow and expansion. Then, you would place the container in a large bath, whose temperature you would maintain by heating or cooling it. You can vary the pressure in the gas by some weights on the piston as illustrated in <xref ref="fig-isothermal-process"/>. Since the piston is freely movable, the pressure inside <m> P_{\text{in}}</m> is balanced by the pressure outside <m> P_{\text{out}}</m> by some weights on the piston 
+		</p>
+
+		<figure xml:id="fig-isothermal-process">
+			<caption> 
+				Expanding a system at a constant temperature. Removing weights on the piston leads to an imbalance of forces on the piston which causes the piston to move up. As the piston moves up the temperature is lowered momentarily which cause heat to flow from the heat bath to the system. The energy to move the piston eventually comes from the heat bath.
+			</caption>
+			<image source="./images/ideal-gas/isothermal-process.png" width="70%"/>
+		</figure>
+		<p>
+			As weights on the piston are removed, an imbalance of forces on the piston develops.  The net non-zero force on the piston would cause the piston to  accelerate, resulting in an increase in volume.  The expansion of the gas cools the gas to a lower temperature, which makes it possible for the heat to enter from the heat bath into the system until the temperature of the gas is reset to the temperature of the heat bath.  
+		</p>
+		<p>
+			If weights are removed in infinitesimal steps, the pressure in the system will decrease infinitesimally slowly.  This way, an isothermal process can be conducted quasi-statically, which we can represent by a line in <m> (T,p)</m>, <m>(T,V)</m> or <m>(p,V)</m> plane of the gas.  On <m>(T,p)</m> and <m> (T,V) </m> diagrams a quasi-static isothermal process will be a straight line perpendicular to the temperature axis, while in the <m> (p,V) </m> diagram, an isothermal  is usually a curved line as shown in <xref ref="fig-isothermal-process-2"/>. For an ideal gas an isothermal process is hyperbolic curve since <m> p\sim \frac{1}{V}</m> for an ideal gas at constant temperature.
+		</p>
+		<figure xml:id="fig-isothermal-process-2">
+			<caption>
+				An isothermal expansion from a state labeled A to another state labeled B in three planes of <m>(p,V,T)</m> space.
+			</caption>
+			<image source="./images/ideal-gas/isothermal-process-2.png" width="100%"/>
+		</figure>
+		<p>
+			An isothermal process is always conducted quasi-statically, since it to be isothermal throughout the change of volume, you must be able to state the temperature of the system at each step, which is possible only if the system is in thermal equilibrium continuously.  Of course, the system must go out of equilibrium for the state to change, but for a quasi-static processes we imagine that the process is conducted in infinitesimal steps such that these departures from equilibrium  can be made as brief and as small as we like.
+		</p>
+		<p>
+			In the <m> pV</m>-plane different temperatures correspond to different curves. They are called <term> isotherms</term>.  In  <xref ref="fig-isothermal-process-3"/>, I have plotted isotherms at various temperatures for an ideal gas by using the ideal gas law, <m> pV = nRT = \text{constant}</m>, for an isotherm.  Different isotherms correspond to different values of <m>T</m>.
+		</p>
+			<figure xml:id="fig-isothermal-process-3">
+			\centering
+			\includegraphics[width=\textwidth]{ch18-first-law-thermo/figs/.eps}
+				<caption> 
+					Isotherms of one mole of an Ideal Gas. Each isotherm shows the states that can be reached by isothermal process from a point on the curve.
+				</caption>
+				<image source="./images/ideal-gas/isothermal-process-3.png" width="80%"/>
+			</figure>
+
+
+	</subsection>
+
+
+	<subsection><title> Isobaric and Isochoric Processes</title>
+		<p>
+			Besides the isothermal processes, other quasi-static processes of interest for gases are isobaric and  isochoric processes.  An <term>isobaric process </term> is a process where the pressure of the system does not change while an <term> isochoric process </term> is a process where the volume of the system does not change.
+		</p>
+	</subsection>
+
+
+
+	<subsection><title>Adiabatic Process </title>
+		<p>
+			In an <term> adiabatic process</term>, the system is thermally insulated from its environment so that no heat is allowed to enter or leave the system. Sometimes, the change is so sudden that there is no time for heat flow. An adiabatic process can be conducted either quasi-statically or nonquasistatically. 
+		</p>
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				In an adiabatic expansion, there are two time scales: rate of the process and the rate at which heat may enter the system through the walls. If the expansion occurs within a time frame in which negligible heat can enter the system, then the process is called adiabatic. Ideally, during an adiabatic process no heat will enter or exit the system.
+			</p>
+			<p></p>
+			<image source="./images/ideal-gas/adiabatic-expansion-1.png" width="40%"/>
+		</sidebyside>
+		<p>
+			When a gas expands adiabatically, it must do work against the outside world, and therefore its energy goes down, thus, having the effect of cooling the gas.  An adiabatic expansion leads to lowering of temperature and an adiabatic compression to the increase of temperature. Adiabatic expansion is one mechanism by which gases are liquefied.
+		</p> 
+		<!-- <figure xml:id="fig-adiabatic-expansion-1">
+			<caption>
+				Adiabatic expansion. In an adiabatic expansion, there are two time scales: rate of the process and the rate at which heat may enter the system through the walls. If the expansion occurs within a time frame in which negligible heat can enter the system, then the process is called adiabatic. Ideally, during an adiabatic process no heat will enter or exit the system.
+			</caption>
+			<image source="./images/ideal-gas/adiabatic-expansion-1.png" width="40%"/>
+		</figure> --> 
+ 
+	</subsection>
+
+
+
+</section>

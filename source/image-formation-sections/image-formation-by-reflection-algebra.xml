@@ -1,0 +1,355 @@
+<section xml:id="image-formation-by-reflection-algebraic-methods"><title> Image Formation by Reflection - Algebraic Methods</title>
+	<introduction>
+        <p>
+        	We can also find the location, orientation, and size of image algebraically rather than by drawing rays. First I will work out formulas that connect object distance, image distance, and radius of curvature of concave mirror. Then we will work out a similar formula for convex mirror. We will see that we can write one relation that will cover both cases if we follow a sign convention. 
+        </p>
+    </introduction>
+    <subsection><title>Concave Mirror Equation</title>
+    	<p>
+    		Consider an object OP located at a distance from a concave mirror so that a real image forms on a screen in front of the mirror as shown in <xref ref="fig-concave-mirror-equation-setup"/>. Although, I will work out a formula for the real image, the same formula will also work for a virtual image with appropriate sign convenstion.
+    	</p>
+	 	<figure xml:id="fig-concave-mirror-equation-setup">
+ 			<caption>
+ 				   Image by a concave mirror of a point P that is not on the axis. An off-axis point is chosen so that we can also study the vertical size of the image. We draw two special rays to find its image Q. Point O of the object will fall on the axis at I. Points Y and S are labeled since we will use them in calculations.
+ 			</caption>
+				<image source="./images/image-formation/concave-mirror-equation-setup.png" width="70%"/> 
+		</figure>
+		<p>
+			We will refer all horizontal distances from vertex V and all vertical distance from the optical axis OIV. Let <m>R</m> be the radius of the mirror. First notice that upon comparing the angles in triangles <m>\triangle\text{OPV}</m>  and  <m>\triangle\text{IQV}</m>, we find that these trinagles form a pair of similar triangles. Therefore, from plane geometry we can state that their corresponding sides must be proportional.
+			<men xml:id="eq-reflection-1">
+				\frac{\text{VO}}{ \text{VI} } = \frac{ \text{OP} }{ \text{IQ} }.
+			</men>
+			Similarly, try to establish that  triangles <m>\triangle\text{OPF}</m>  and  <m>\triangle\text{SFY}</m> are similar. That will give us the following relation.
+			<men xml:id="eq-reflection-2">
+				\frac{\text{FO}}{ \text{SY} } = \frac{ \text{OP} }{ \text{FS} }.
+			</men>			
+			By construction, we also have 	
+			<men xml:id="eq-reflection-3">
+				\text{IQ} = \text{FS}. 
+			</men>
+			In our calculations, we will assume that the rays make small angle with the optical axis. This is called  <term>  paraxial approximation</term>.  Paraxial rays make small angle, e.g.,  <m>\theta  = \angle\text{PVQ}</m> at the vertex, therefore we can make the follpwing approximations
+			<md>
+				<mrow> \amp \sin\theta \approx \tan\theta  \approx  \theta.</mrow>
+				<mrow> \amp \cos\theta  \approx 1.</mrow>
+			</md>
+			Using these approximations we will also have the following important relation.
+			<men xml:id="eq-reflection-4">
+				\text{SY} \approx \text{VF}. 
+			</men>
+			From Eqs. <xref ref="eq-reflection-1"/>  to <xref ref="eq-reflection-4"/>, we can deduce the following
+			<men xml:id="eq-reflec-concave-5">
+				\frac{\text{VO} }{ \text{VI} } = \frac{ \text{FO} }{ \text{VF} }.  
+			</men>
+			Since <m>\text{FO} = \text{VO} - \text{VF}</m>, we get the following after using this and then dividing both sides by <m>\text{VO} </m>, and then rearranging terms.
+			<men  xml:id="eq-concave-mirror-equation">
+				\frac{ 1 }{ \text{VO} } + \frac{ 1 }{ \text{VI} }  = \frac{ 1 }{ \text{VF} }. 
+			</men>
+			We now define symbols <m>p</m>, <m>q</m>, and <m>f</m> to represent the geometric distances as follows.
+			<md>
+				<mrow> \amp p = \text{VO} = \text{object distance}, </mrow>
+				<mrow> \amp q = \text{VI} = \text{image distance}, </mrow>
+				<mrow> \amp f = \text{VF} = \text{image distance} = \frac{R}{2}. </mrow>
+			</md>
+			Note that the distance <m>\text{VF}</m> is equal to half the radius of the curvature of the mirror. That is, focal length of a concave mirror is
+			<men xml:id="concave-mirror-focal-length">
+				f = \frac{R}{2}.  
+			</men>				
+			Using these symbols, Eq. <xref ref="eq-concave-mirror-equation"/> takes the following familiar form, which we will refer to as <term>concave mirror equation</term>.
+			<men xml:id="eq-concave-mirror-equation-2">
+				\frac{1}{p} + \frac{1}{q}  = \frac{1}{f}, 
+			</men>
+				
+		</p>
+	</subsection>
+	<subsection><title>Size and Orientation of Image</title>
+		<p>
+			Refer to <xref ref="fig-concave-mirror-equation-setup"/> for the drawing of image formation in a concave mirror. 
+			To study the size and orientation of the image compared to the object we can study the heights of the object and image points with respect to the symmetry axis. Let height above the axxis be positive and that below the axis be negative. Let
+			<md>
+				<mrow> \amp h_o = \text{OP} = \text{object height}, </mrow>
+				<mrow> \amp h_i = -\text{IQ} = \text{object height},  </mrow>
+			</md>
+			where note the negative sign to make <m>h_i</m> negative by multiplying the positive length <m>\text{IQ}</m> to negative height corresponding to our drawing in <xref ref="fig-concave-mirror-equation-setup"/>. Now, from similar triangles <m>\triangle\text{OPV}</m> and <m>\triangle\text{IQV}</m> we find
+ 			<me>
+ 				\frac{ \text{IQ} }{ \text{OP} } = \frac{ \text{IV} }{ \text{OV} }
+ 			</me>
+ 			Therefore,
+ 			<men>
+ 				\frac{h_i}{h_o} = -\frac{q}{p}.
+ 			</men>
+ 			The ration <m>h_i/h_o</m> gives both the relative size and relative orientation of the image with respect to the object. It is called <term>magnifcation</term>, or more accurately <term>transverse magnification</term> since the heights are perpendicular to the axis and not along the axis, of the image and denoted by <m>m_T</m>, or sometimes simply by <m>m</m>.
+ 			<men>
+ 				m_T = \frac{h_i}{h_o} = -\frac{q}{p}.
+ 			</men>
+ 			Thus, if <m>m_T</m> is positive, then image has the same orientation as the object and if it is negative the image is inverted. If   <m>|m_T| \gt 1</m> ,then image is larger than the object, i.e., magnified, and if <m>|m_T| \lt 1</m>,  then image is smaller than the object, i.e., shrunk.
+
+		</p>
+
+    </subsection>
+
+    <subsection><title>Virtual Image by a Concave Mirror</title>
+    	<p>
+    		When we use the concave mirror equation <xref ref="eq-concave-mirror-equation"/> for an object that is within a focal length, i.e., <m>p \lt R/2 </m>, then we find that <m>q</m> is negative.
+    		<me>
+    			\frac{1}{q} = \frac{1}{R/2} - \frac{1}{p} = \frac{p - R/2}{ pR/2} \lt 0\ \text{ if }\ p\lt R/2. 
+    		</me>
+    		The negative value of <m>q</m> would correspond to distance of the virtual image behind the mirror at a distance <m>|q|</m> from the vertex.
+    	</p>
+    </subsection>
+
+	<exercise xml:id="exercise-Real-Image-in-Front-of-a-Concave-Mirror"><title>Real Image in Front of a Concave Mirror</title>
+
+		<statement>
+			<p>
+				An object of height <m>4.5\text{ cm}</m> is placed <m>20\text{ cm}</m> from a concave mirror of radius of curvature <m>10\text{ cm}</m>. 
+			</p>
+			<p>
+				(a) Find the location of the image.
+			</p>
+			<p>
+				(b) Find transverse magnification, the size, and orientation of the image.
+			</p>
+		</statement>
+		<hint><p> (a) Use the concave mirror equation. (b) Use <m>h_o/h_i = -q/p</m>.  </p></hint>
+		<answer><p> (a) <m>\frac{20}{3}\text{ cm}</m>, (b) <m>-\frac{1}{3}</m>, inverted, <m> 1.5\text{ cm}</m>. </p></answer>
+		<solution><title>(a)</title>
+			<p>
+				We use the Concave mirror equation to solve for <m>q</m>. 
+				<md>
+					<mrow> \frac{1}{q} \amp = \frac{1}{f} - \frac{1}{p}</mrow>
+					<mrow> \frac{1}{q} \amp = \frac{1}{10/2} - \frac{1}{20} = \frac{3}{20}</mrow>
+				</md>
+				Inverting and putting the units back in, we get
+				<me>
+					q = \frac{20}{3}\text{ cm}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				The transverse magnification will be
+				<me>
+					m_T = \frac{h_i}{h_o} = - \frac{q}{p} = -\frac{20}{3} \times \frac{1}{20} = -\frac{1}{3}.
+				</me>
+				The sign here tells us that the image is inverted compared to the object. The size of the image will be
+				<me>
+					|h_i| =  h_o |m_T| =  4.5\text{ cm }\times \frac{1}{3} = 1.5\text{ cm}.
+				</me>
+			</p>
+		</solution>
+
+	</exercise>
+
+
+	<exercise xml:id="exercise-Virtual-Image-Behind-a-Concave-Mirror"><title>Virtual Image Behind a Concave Mirror</title>
+
+		<statement>
+			<p>
+				An object of height <m>4.5\text{ cm}</m> is placed <m>2\text{ cm}</m> from a concave mirror of radius of curvature <m>10\text{ cm}</m>. 
+			</p>
+			<p>
+				(a) Find the location of the image.
+			</p>
+			<p>
+				(b) Find transverse magnification, the size, and orientation of the image.
+			</p>
+		</statement>
+		<hint><p> (a) Use the concave mirror equation. (b) Use <m>h_o/h_i = -q/p</m>.  </p></hint>
+		<answer><p> (a) <m>-\frac{10}{3}\text{ cm}</m>, (b) <m>\frac{5}{3}</m>, same orientation, <m>7.5\text{ cm}</m>. </p></answer>
+		<solution><title>(a)</title>
+			<p>
+				We use the Concave mirror equation to solve for <m>q</m>. 
+				<md>
+					<mrow> \frac{1}{q} \amp = \frac{1}{f} - \frac{1}{p}</mrow>
+					<mrow> \frac{1}{q} \amp = \frac{1}{10/2} - \frac{1}{2} = -\frac{3}{10}</mrow>
+				</md>
+				Inverting and putting the units back in, we get
+				<me>
+					q = -\frac{10}{3}\text{ cm}.
+				</me>
+				In the case of real image forming in front of the mirror, <m>q</m> was positive. Now, we get a negative <m>q</m>. The image here will form behind the mirror at a distance <m>\frac{10}{3}\text{ cm}</m>.
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				The transverse magnification will be
+				<me>
+					m_T = \frac{h_i}{h_o} = - \frac{q}{p} = - \left(-\frac{10}{3} \right) \times \frac{1}{2}  = \frac{5}{3}.
+				</me>
+				The positive sign here tells us that the image has same vertical orientation as the object. Since <m>m_T \gt 1</m>, the image is larger than the object. The size of the image will be
+				<me>
+					|h_i| =  h_o |m_T| =  4.5\text{ cm }\times \frac{5}{3} = 7.5\text{ cm}.
+				</me>
+			</p>
+		</solution>
+
+	</exercise>
+
+
+	<exercise xml:id="exercise-Placing-an-Object-to-Obtain-Real-Image-of-Given-Size-from-a-Concave-Mirror"><title>Placing an Object to Obtain Real Image of Given Size from a Concave Mirror</title>
+
+		<statement>
+			<p>
+				Where should a <m>3\text{-cm}</m> tall object be placed in front of a concave mirror of radius <m>20\text{ cm}</m> so that its image is real and <m>2\text{ cm}</m> tall?		
+			</p>
+		</statement>
+		<hint><p>Set up two equations in <m>p</m> and <m>q</m>, and then solve them simultaneously.</p></hint>
+		<answer><p><m>25\text{ cm}</m>. </p></answer>
+		<solution>
+			<p>
+				Real image from a concave mirror is inverted. Therefore, we take <m>h_i = -2\text{ cm}</m> and <m>h_o = 3\text{ cm}</m>. This gives
+				<me>
+					-\frac{q}{p} = \frac{h_i}{h_o} = -\frac{2}{3}.
+				</me>
+				Therefore
+				<men xml:id="eq-Placing-an-Object-to-Obtain-Real-Image-of-Given-Size-from-a-Concave-Mirror-1">
+					3 q = 2 p.
+				</men>
+				Using the radius of curvature of the mirror we set up the second equation.
+				<men xml:id="eq-Placing-an-Object-to-Obtain-Real-Image-of-Given-Size-from-a-Concave-Mirror-2">
+					\frac{1}{p} + \frac{1}{q} = \frac{2}{R} = \frac{2}{20} = \frac{1}{10}.
+				</men>
+				Using Eq. <xref ref="eq-Placing-an-Object-to-Obtain-Real-Image-of-Given-Size-from-a-Concave-Mirror-1"/>, we eliminate <m>q</m> from this equation to get (I divided throughout by 3 first.)
+				<me>
+					\frac{1}{3p} + \frac{1}{2p} = \frac{1}{30}
+				</me>
+				This can be solved easily to get <m>p = 25\text{ cm}</m>. First factor out <m>1/p</m>, then the factor multiplying <m>1/p</m> will be <m>5/6</m>, which can be sent to the other side and simplified.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<subsection><title>Convex Mirror Equation</title>
+    	<p>
+    		Consider an object OP located at a distance from a convex mirror as shown in <xref ref="fig-convex-mirror-equation-setup"/>.  
+    	</p>
+	 	<figure xml:id="fig-convex-mirror-equation-setup">
+ 			<caption>
+ 				   Image by a convex mirror of a point P that is not on the axis. An off-axis point is chosen so that we can also study the vertical size of the image. We draw two special rays to find its image Q. Point O of the object will fall on the axis at I. Points Y is labeled for use in the calculations.
+ 			</caption>
+				<image source="./images/image-formation/convex-mirror-equation-setup.png" width="70%"/> 
+		</figure>
+		<p>
+			As for the concave mirror, we will refer all horizontal distances from vertex V and all vertical distance from the optical axis OIV. First notice that upon comparing the angles in triangles <m>\triangle\text{OPF}</m>  and  <m>\triangle\text{YVF}</m>, we find that these trinagles form a pair of similar triangles. Therefore, from plane geometry we can state that their corresponding sides must be proportional.
+			<men xml:id="eq-convex-mirror-equation-1">
+				\frac{ \text{OF} }{ \text{VF} } = \frac{\text{OP}}{ \text{VY} }.
+			</men>
+			Similarly, try to establish that  triangles <m>\triangle\text{OPV}</m>  and  <m>\triangle\text{IQV}</m> are similar. That will give us the following relation.
+			<men xml:id="eq-convex-mirror-equation-2">
+				\frac{ \text{VO} }{ \text{VI} } = \frac{\text{OP}}{ \text{IQ} }.
+			</men>
+			In paraxial approximation, <m> \text{VY} \approx \text{IQ}</m>. Therefore, we will have
+			<me>
+				\frac{ \text{OF} }{ \text{VF} } = \frac{ \text{VO} }{ \text{VI} }.
+			</me>
+			Now, from the figure, we notice that
+			<me>
+				\text{OF} = \text{OV} + \text{VF} =  \text{VO} + \text{VF}.
+			</me>
+			Therefore,
+			<me>
+				\frac{ \text{VO} + \text{VF} }{ \text{VF} } = \frac{ \text{VO} }{ \text{VI} }.
+			</me>
+			Simplifying this equation we get
+			<me>
+				\frac{ 1 }{ \text{VO} } + \frac{ 1 }{ \text{VF} } = \frac{ 1 }{ \text{VI} }.
+			</me>
+			Let's rearrange this equation so that object and image distance are on one side of the equation.
+			<men xml:id="eq-convex-mirror-equation-3">
+				\frac{ 1 }{ \text{VO} } - \frac{ 1 }{ \text{VI} } = -\frac{ 1 }{ \text{VF} }.
+			</men>			
+			Let us introduce the following symbols for our discussion.
+			<md>
+				<mrow> \amp p = \text{VO} = \text{object distance}, </mrow>
+				<mrow> \amp q = \text{VI} = \text{image distance}, </mrow>
+			</md>
+			From ray drawing, we know that the focal point F is at a distance of half the radius <m>R</m> of the mirror from the vertex V.
+			<men>
+				VF = \frac{R}{2}.
+			</men>
+			Then, Eq. <xref ref="eq-convex-mirror-equation-3"/> becomes the following equation. We will refer to this equation the <term>covex mirror equation</term>.
+			<men xml:id="eq-convex-mirror-equation-using-radius">
+				\frac{ 1 }{ p } - \frac{ 1 }{ q } = -\frac{ 1 }{ R/2 }.
+			</men>
+		
+
+
+		</p>
+
+		<subsubsection><title>Sign Convention</title>
+			<p>
+				Equation <xref ref="eq-convex-mirror-equation-using-radius"/> for the convex mirror  differs from the concave equation, Eq. <xref ref="eq-concave-mirror-equation-2"/> in signs of image distance and focal length. We can write both the concave mirror equation and the convex mirror equation in the same form but with a sign convention. 
+			</p>
+			<p>
+				Let <m>q'=-q</m>, and <m>f'=-R/2</m>. Then,
+				<men xml:id="eq-convex-mirror-equation-using-focal-length">
+					\frac{ 1 }{ p } + \frac{ 1 }{ q' } = \frac{ 1 }{ f' },
+				</men>
+				where <m>q'=-|q'| \lt 0</m> and <m>f'=-R/2 \lt 0</m> for the convex mirror. We can use this same equation or the cncave mirror as well if we make sure that <m>f' = R/2 \gt 0</m> but <m>q' \gt 0</m>  if the image is real and  <m>q'=-|q'| \lt 0</m> if the image is virtual.	
+			</p>
+		</subsubsection>
+		<subsubsection><title>Size and Orientation of Image by Convex Mirror </title>
+			<p>
+				I will not go through the geometric arguments, but suffice to say that, the algebraic relation here is same as that for the concave mirror. Let <m>h_o</m> be the object height from the axis, and <m>h_i</m> the image height. Let <m>p</m> the object distance and <m>q</m> the image distance, which will be negative here. Then, we have following for the transverse magnification.
+				<men>
+					m_T = \frac{h_i}{h_o} = -\frac{q}{p}.
+				</men>
+			</p>
+		</subsubsection>
+
+	</subsection>
+
+ 	<exercise xml:id="exercise-Image-by-a-Convex-Mirror"><title>  Image by a Convex Mirror</title>
+
+		<statement>
+			<p>
+				An object of height <m>4.5\text{ cm}</m> is placed <m>20\text{ cm}</m> from a convex mirror of radius of curvature <m>10\text{ cm}</m>. 
+			</p>
+			<p>
+				(a) Find the location of the image.
+			</p>
+			<p>
+				(b) Find transverse magnification, the size, and orientation of the image.
+			</p>
+		</statement>
+		<hint><p> (a) Use the convex mirror equation. (b) Use <m>h_o/h_i = -q/p</m>.  </p></hint>
+		<answer><p> (a) <m>5\text{ cm}</m> behind the mirror, (b) <m>\frac{1}{4}</m>, same orientation as object, <m> 1.1\text{ cm}</m>. </p></answer>
+		<solution><title>(a)</title>
+			<p>
+				We use the convex mirror equation to solve for <m>q</m>. We note that <m>f = -R/2 = -10/2 = -5\text{ cm}</m> here.
+				<md>
+					<mrow> \frac{1}{q} \amp = \frac{1}{f} - \frac{1}{p}</mrow>
+					<mrow> \frac{1}{q} \amp = -\frac{1}{5} - \frac{1}{20} = -\frac{1}{5}</mrow>
+				</md>
+				Inverting and putting the units back in, we get
+				<me>
+					q = -5\text{ cm}.
+				</me>
+				The negative sign is expected for convex mirror since the image is behind the mirror. The image will be <m>5\text{ cm}</m> from the vertex behind the mirror.
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				The transverse magnification will be
+				<me>
+					m_T = \frac{h_i}{h_o} = - \frac{q}{p} = -\frac{-5}{20}  = +\frac{1}{4}.
+				</me>
+				The positive <m>m_T</m> means that the image has the same orientation as the object. The size of the image will be
+				<me>
+					|h_i| =  h_o |m_T| =  4.5\text{ cm }\times \frac{1}{4} = 1.1\text{ cm}.
+				</me>
+			</p>
+		</solution>
+
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+</section>

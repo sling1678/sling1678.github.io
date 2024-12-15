@@ -1,0 +1,204 @@
+<section xml:id="Passive-Circuit-Elements"><title> Passive Circuit Elements </title>
+	<introduction>
+		<p>
+			Resistors, capacitors, and inductors are called passive elements of a circuit while EMF source is called the active element. When we analyze a dynamical circuit, such as an AC circuit, Faraday's loop equations replace the Kirchhoff's loop equations. By using formulas for EMF of each element, also called voltage drop across the element, can be used to write the EMF side of Faraday's law immediately. That would leave only the magnetic flux side of Faraday's law.
+		</p>
+		<p>
+			<alert> Voltage Drop Across a Resitor</alert>
+		</p>
+		<sidebyside widths="70% 10% 20%">
+			<p>
+				Suppose current <m>I</m> passes through a resistor of resistance <m>R</m>. Then, potential drop across the resistor, <m>\phi_a - \phi_b</m>, denoted as <m>V_R</m> will be given by Ohm's law.
+				<men>
+					V_R \equiv \phi_a - \phi_b = R I(t).
+				</men>
+				For an AC current <m>I(t) = I_0\, \cos(\omega t + \phi_I)</m>, we will get
+				<men>
+					V_R(t) = R I_0  \cos(\omega t + \phi_I).
+				</men>
+			</p>
+			<p> </p>
+			<image source="./images/ac-circuits/voltage-across-resistor.png" width="50%"/>
+		</sidebyside>
+		
+		<p>
+
+			If we write <m>V_R(t)</m> in terms of its own magnitude and phase constant, i.e.,
+			<men>
+				V_R(t) =V_{R0}  \cos(\omega t + \phi_V),
+			</men>
+			then, we find that current through a resistor and voltage across resistor are <alert>in-phase</alert>, i.e., their phases are same.
+			<mdn>
+				<mrow> \phi_V = \phi_I </mrow>
+				<mrow>  V_{R0}  = R I_0 </mrow>
+			</mdn>
+
+		</p>
+
+		<p>
+			<alert> (Calculus) Voltage Drop Across an Inductor</alert>
+		</p>
+		Suppose current <m>I</m> passes through an  inductor of self-inductance <m>L</m>. When current is increasing, then there is a back emf, which can be interpreted as a voltage drop across the inductor and when current is decreasing, there is a forward emf, which can be interprested as additional voltage source.
+		<sidebyside widths="70% 10% 20%">
+			<p>
+				Interpreting back emf and forward emf as voltages, we denote them by <m>V_L</m>, which may be thought of as potential drop across the inductor, <m>\phi_a - \phi_b</m>. The relation of <m>V_L</m> with current <m>I</m> is not as simple as Ohm's law for resistance.
+				<men>
+					V_L \equiv \phi_a - \phi_b = L \dfrac{dI}{dt}.
+				</men>
+				For an AC current <m>I(t) = I_0\, \cos(\omega t + \phi_I)</m>, we will get
+				<men>
+					V_L(t) = - \omega L I_0  \sin(\omega t + \phi_I).
+				</men>
+			</p>
+			<p> </p>
+			<image source="./images/ac-circuits/voltage-across-inductor.png" width="50%"/>
+		</sidebyside>
+		
+		<p>
+
+			If we write <m>V_L(t)</m> in terms of its own magnitude and phase constant, i.e.,
+			<men>
+				V_L(t) =V_{L0}  \cos(\omega t + \phi_V),
+			</men>
+			then, we find that current through an inductor and voltage across the inductor are <alert> not in-phase</alert>, but voltage is <m>\dfrac{\pi}{2}</m> radians or <m>90^\circ</m> is ahead of the current.
+			<mdn>
+				<mrow> \phi_V = \phi_I + \dfrac{\pi}{2}  </mrow>
+				<mrow>  V_{L0}  = \omega L I_0  </mrow>
+			</mdn>
+			From the amplitude relation <m> V_{L0}  = \omega L I_0 </m>, we see that inductor provides a frequency-dependent resistance; we call this resistance by another name, <term> inductive reactance</term> and denote it by  <m>X_L</m>.
+			<men>
+				X_L = \omega L.
+			</men>
+		</p>
+
+		<p>
+			<alert> (Calculus) Voltage Drop Across a Capacitor </alert>
+		</p>
+		Suppose current <m>I</m> is flowing in a capacitor of capacitance <m>C</m>, and same amout of current is leaving the other plate. This means, charge <m>q</m> on plates is increasing. 
+		<sidebyside widths="70% 10% 20%">
+			<p>
+				Suppose <m>q=0</m> at <m>t=0</m>, then,  charge at instant <m>t</m> will be
+				<me>
+					q(t) = \int_0^t I(t) dt.
+				</me>
+				Voltage across a capacitor, denoted by <m>V_C</m>, which may be thought of as potential drop across the inductor, <m>\phi_a - \phi_b</m>,  is given by capacitor equation.			 
+				<me>
+					V_C \equiv \phi_a - \phi_b = \dfrac{1}{C}\, q.
+				</me>
+				Therefore, we will have
+				<men>
+					V_C = \dfrac{1}{C}\, \int_0^t I(t) dt
+				</men>
+				For an AC current <m>I(t) = I_0\, \cos(\omega t + \phi_I)</m>, we will get
+				<men>
+					V_C(t) =  \dfrac{1}{\omega C}\, I_0  \sin(\omega t + \phi_I).
+				</men>
+			</p>
+			<p> </p>
+			<image source="./images/ac-circuits/voltage-across-capacitor.png" width="50%"/>
+		</sidebyside>
+		
+		<p>
+
+			If we write <m>V_C(t)</m> in terms of its own magnitude and phase constant, i.e.,
+			<men>
+				V_C(t) = V_{C0}  \cos(\omega t + \phi_V),
+			</men>
+			then, we find that current into a capacitor and voltage across the capacitor are <alert> not in-phase</alert>, but voltage is <m>\dfrac{\pi}{2}</m> radians or <m>90^\circ</m> is behind the current.
+			<mdn>
+				<mrow> \phi_V = \phi_I - \dfrac{\pi}{2}  </mrow>
+				<mrow>  V_{C0}  = \dfrac{1}{\omega C}\, I_0  </mrow>
+			</mdn>
+			From the amplitude relation <m> V_{C0}  = \dfrac{1}{\omega C}\,  I_0 </m>, we see that capacitor provides a frequency-dependent resistance; we call this resistance by another name, <term> capacitative reactance</term> and denote it by  <m>X_C</m>.
+			<men>
+				X_C = \dfrac{1}{\omega C}.
+			</men>
+		</p>
+
+
+
+	</introduction>
+	<subsection><title> (Calculus) Voltage Across an Inductor </title>
+		<p>
+			The self-inductance of a circuit <m>L</m> tells us how  the rate of change of magnetic flux <m>\Phi_B</m> through the area of the circuit depends on the rate at which the current in the circuit changes. 
+			<me>
+				\frac{d\Phi_B}{dt} = L \frac{dI}{dt}.
+			</me>
+			Faraday's law relates this change in magnetic flux to the loop line integral of electric field in the circuit. With the direction of the loop for the line integral in the direction of the electric field in the loop, we obtain the following equation. 
+			<me>
+				\oint \vec E\cdot d\vec l = - L \frac{dI}{dt}.\ \ \ \text{(at each instant)} 
+			</me>
+			Since the electric field in the circuit with a solenoid is induced by the changing magnetic field in the coils of a solenoid, the electric field is a non-conservative field and it is not possible to write the electric field as the gradient of the electric potential.   In the chapter on Faraday's law we came across the circuits that involved inductance and we dealt with them in terms of the induced EMF in the Faraday's flux rule rather than voltages. We can continue to proceed with the same approach here. 
+		</p>
+		<p>
+			However, an alternative simpler method of dealing with the dynamic circuits is widely practised which can be justified by making <q>reasonable</q> assumptions. We will like to be sure about these assumptions so that we can go ahead and use these methods when applicable and resort to the more fundamental method based on Farday's law when they are not applicable.  These assumptions make it possible to think in terms of voltages even in dynamic circuits and one can make use of Kirchhoff's rules.  We have already seen the types of assumptions we need when we discussed the concept of the voltage across an AC generator.  Similar assumptions are required here as well. We will repeat those arguments for an inductor here.
+		</p>
+		<p><alert> Assumptions:</alert></p>
+		<p>
+			<ol>
+				<li> The wires in the inductors are perfect conductors.</li>
+				<li> The magnetic field outside the inductor is zero.</li>
+
+			</ol> 
+		</p>
+		<sidebyside widths="65% 5% 30%">
+		<!-- <p>
+			These assumptions in the circuit shown in <xref ref="fig-inductor-voltage"/> allow us to split the line integral for electric field in the flux rule to one part inside the inductor and the other outside.
+		</p> -->
+		<!-- <figure xml:id="fig-inductor-voltage">
+			<caption>
+				Voltage across an inductor becomes equal to the EMF induced in the circuit with perfect conductor and localized magnetic field assumptions.
+			</caption> -->
+			<!-- <image source="./images/ac-circuits/inductor-voltage.png" width="50%"/> -->
+		<!-- </figure> -->
+
+			<p> 
+				With these assumptions the EMF in the circuit becomes
+				<md>
+					<mrow >\mathcal{E} \amp = \oint \vec E\cdot d\vec l</mrow>
+					<mrow >  \amp =  {\int_{a}^b}_{[\text{inside}]} \vec E_{\text{in}}\cdot d\vec l +  {\int_{b}^a}_{[\text{outside}]} \vec E_{\text{out}}\cdot d\vec l</mrow>
+					<mrow>\amp = {\int_{b}^a}_{[\text{outside}]} \vec E_{\text{out}}\cdot d\vec l</mrow>
+				</md> 
+				since negligible electric field inside the wires of the solenoid compared to the field in the wires outside.
+				<!-- <me>
+					\oint \vec E\cdot d\vec l = {\int_{a}^b}_{[\text{inside}]} \vec E_{\text{in}}\cdot d\vec l +  {\int_{b}^a}_{[\text{outside}]} \vec E_{\text{out}}\cdot d\vec l 
+				</me> -->
+				<!-- The line integral inside the inductor gives zero since the electric  field in a perfect inductor  is required to be zero. 
+				<me>
+					{\int_{a}^b}_{[\text{inside}]} \vec E_{\text{in}}\cdot d\vec l = 0 \ \ \text{(since perfect conductor)}
+				</me> -->
+				<!-- Therefore, only the contribution from the loop that is outside the inductor can be non-zero. -->  
+
+			</p>
+			<p></p>
+			<image source="./images/ac-circuits/inductor-voltage.png" width="50%"/>
+		</sidebyside>
+		<p>
+			With the assumption that the magnetic field outside is zero, the curl of the electric field outside is zero, which means that the electric field outside the inductor would be a conservative field, which we can write as difference in potentials.  
+				<!-- Therefore, the line integral over the electric field outside the inductor will be independent of the path and will depend only on the end points which are the two terminals of the inductor. -->  
+			<me>
+				{\int_{b}^a}_{[\text{outside}]} \vec E_{\text{out}}\cdot d\vec l  = -(\phi_a - \phi_b).
+			</me>
+			We will call this difference in potential between a and b to be the voltage across the inductor, <m>V_L</m>.
+			Now, equating the line integral of the electric field around the entire loop to the induced EMF due to the change in magnetic flux we obtain the voltage across the inductor.
+			<me>
+			 	V_L\equiv \phi_a - \phi_b.
+			 	<!--  = - \int_b^a \vec E_{\text{out}}\cdot d\vec l = -\oint \vec E\cdot d\vec l =   L \frac{dI}{dt}. -->
+			</me>
+			Therefore, we find that the EMF of the circuit with inductor is
+			<me>
+				\mathcal{E} = - V_L.
+			</me>
+			But, by Faraday's law, this must equal negative of the change in magnetic flux. With inductor in the circuit, this happens primarily in the inductor, which we can write in terms of the self inductance as
+			<me>
+				\dfrac{d\Phi_B}{dt} = L \dfrac{dI}{dt}
+			</me>
+			Thus, <m> \mathcal{E} = -d\Phi_B/dt</m> gives
+			<men>
+				V_L = L \dfrac{dI}{dt}.
+			</men>
+			Note that the current direction inside the solenoid is assumed to be in the a to b direction.  Thus, <alert> if current <m>I</m> is increasing, then <m>V_a>V_b</m> </alert>.  That is voltage will drop as you go through the inductor in the direction of the current when the current is increasing.  This decrease corresponds to the back EMF in the circuit, which mostly comes from the inductor part of the circuit.
+		</p>
+	</subsection>
+
+</section>

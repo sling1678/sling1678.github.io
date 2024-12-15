@@ -1,0 +1,172 @@
+<section xml:id="The-Carnot-Refrigerator"><title> The Carnot Refrigerator </title>
+	<introduction>
+		<p>
+			Reversing the direction of each of the four processes of the Carnot engine of <xref ref="fig-carnot-engine"/>  leads to the absorption of heat <m> Q_C</m> from the cold reservoir (at temperature <m> T_C</m>) and delivery of heat <m> Q_H</m> to the hot reservoir (at temperature <m> T_H</m>) with work <m> W</m>, now done on the system rather than by the system. as shown in <xref ref="fig-carnot-refrig"/>. 
+		</p>
+		<figure xml:id="fig-carnot-refrig">
+			<caption>
+				Schematics of energy flow in and out of a Carnot refrigerator. During one cycle, the refrigerator's energy goes up and down as energy flows in and out of the refrigerator. Suppose we start the cycle at the compressor where work is done on the refrigerator, thus raising its energy to <m>U_0 +W</m>, the refrigerator, then extracts heat <m> Q_C</m> from the cold bath. Now, the energy of the refrigerator is <m> U_0 + W + Q_C</m>, of which the refrigerator rejects <m> Q_H </m> to the high temperature reservoir, bringing it back to the starting state.
+			</caption>
+			<image source="./images/second-law-of-thermo/carnot-refrigerator.png" width="45%"/>
+		</figure>
+
+		
+		<p>
+
+ 			The efficiency of a refrigerator is defined differently than the efficiency of an engine since we are concerned here with a different task. In a refrigeration cycle we want to take out the maximum heat <m>Q_C</m> possible for a particular amount of energy <m>W</m> expended.  Therefore, the ratio of interest will be <m>Q_C</m> to <m>W</m>, which is called the <term> coefficient of performance (COP) </term> of the refrigerator, and is denoted by the Greek letter <m>\beta</m>.
+			<men>
+				 \beta = \dfrac{Q_C}{W}.
+			</men>
+			Unlike the efficiency of an engine, <alert> the coefficient of performance can be greater than 1.</alert>  Using the conservation of energy based on the first law of thermodynamics, work <m>W</m> must be the difference of <m>Q_H</m> and <m>Q_C</m> just like the engine.  This gives the coefficient of performance to be
+			<men>
+				\beta = \dfrac{Q_C}{W} = \dfrac{Q_C}{Q_H-Q_C} = \dfrac{1}{(Q_H/Q_C)-1}.
+			</men>
+			Since the processes in the Carnot refrigerator are just reverse of the processes in a Carnot engine, here you can show again that, <m>Q_H/Q_C = T_H/T_C</m>.  Therefore, we can write the coefficient of performance of a Carnot refrigerator in terms of absolute temperatures only.
+			<men>
+				\beta_{\text{Carnot}} =  \dfrac{1}{(T_H/T_C)-1} = \dfrac{T_C}{T_H-T_C}.
+			</men>
+		</p>
+	</introduction>
+
+
+ 	<subsection> <title> Is a Perfect Refrigerator Possible?</title>
+ 		<p>
+			A prefect refrigerator will transfer heat <m>Q = Q_H = Q_C</m> from the cold bath to the hot bath without any work <m>W</m> in  <xref ref="fig-carnot-refrig"/>. This will require a coefficient of performance,  <m> \beta = \infty </m>.
+ 		</p>
+ 		<p>
+ 			Since the refrigerator itself goes in a cyclic process, there is no change in the state of the working substance of the refrigerator in one cycle.  Therefore, there is a  net transfer of heat <m> Q</m> from a lower temperature reservoir to a higher temperature reservoir in each cycle of a <q> perfect refrigerator</q>.   This violates Clausius statement of the second law of thermodynamics.  Hence a prefect refrigerator is not possible.
+
+ 		</p>
+ 	</subsection>
+
+ 	 
+	<exercise xml:id="ex-Freezing-Water-in-a-Refrigerator"><title> Freezing Water in a Refrigerator </title>
+		<statement>
+			<p>
+				A refrigerator working between <m>-10^{\circ}\text{C}</m> and <m>30^{\circ}\text{C}</m> is used to freeze 0.5 kg of water at <m>0^{\circ}\text{C}</m>  into ice at  <m>0^{\circ}\text{C}</m>.  If the refrigerator is approximately Carnot refrigerator, how much electric energy will it use in the process?
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m> Q_C = m l</m> where <m>l</m> is the latent heat of fusion. </p> </hint>
+		<answer> <p> <m> 318\ \text{J}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				For a Carnot refrigerator, the coefficient of performance is 
+				<me>
+				\beta_{\text{Carnot}} =  \dfrac{Q_C}{W} = \dfrac{T_C}{T_H-T_C}. \ \ \ \text{(Temperatures in kelvin.)}
+				</me>
+				Therefore,
+				<me>
+				W = \left( \dfrac{T_H-T_C}{T_C} \right) Q_C = \left(\dfrac{40}{263.15}\right)Q_C.
+				</me>
+				We need to remove heat from water for freezing at  <m>0^{\circ}\text{C}</m>. The amount can be computed by using the heat of fusion of ice, which is <m> 4186\ \text{J/kg}</m>.
+				<me>
+				Q_C = m l = 0.5\ \text{kg} \times 4186\ \text{J/kg} = 2093\ \text{J}.
+				</me>
+				Therefore, electrical energy needed by the refrigerator is
+				<me>
+				W = \left(\dfrac{40}{263.15}\right)\times 2093\ \text{J} = 318\ \text{J}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Performance-of-a-Kitchen-Refrigerator"><title> Performance of a Kitchen Refrigerator </title>
+		<statement>
+			<p>
+				A kitchen refrigerator uses a Carnot cycle between the inside temperature <m>0^{\circ}\text{C}</m> and the outside temperature of <m>20^{\circ}\text{C}</m>.  (a) What is its coefficient of performance?  (b) If the refrigerator cycle is reversed, it would produce work.  Find the efficiency of the Carnot engine that would result by reversing the refrigerator cycle.
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use definition, (b) Use Carnot Cycle efficiency formula.  </p> </hint>
+		<answer> <p> (a) <m>13.65</m>, (b) <m>7.3\%</m>.  </p> </answer>
+		<solution> 
+			<p>
+				(a) From the definition
+				<me>
+					\beta_{\text{Carnot}} = \frac{T_C}{T_H-T_C}  = \frac{0 + 273.15}{20} = 13.65.
+				</me>
+			</p>
+			<p>
+				(b) The efficiency of the engine between the same two temperatures will be
+				<me>
+					\eta_{\text{Carnot}} = \frac{T_H-T_C}{T_H} = \frac{20}{20 + 273.15} = 0.073\ \ \text{or}\ \ 7.3\%.
+				</me>
+			</p>
+		</solution>
+	</exercise>	
+
+	<exercise xml:id="ex-Work-Required-to-Cool-a-Bucket-of-Water"><title> Work Required to Cool a Bucket of Water </title>
+		<statement>
+			<p>
+				A Carnot refrigerator, working between <m> 0^{\circ}\text{C}</m> and <m>30^{\circ}\text{C}</m> is used to cool a bucket of water containing <m>10\text{ L}</m> of water at <m>30^{\circ}\text{C}</m>  to <m>5^{\circ}\text{C}</m> in two hours.  (a) Find the total amount of work needed. (b) What is the power of the refrigerator?
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Figure out <m>Q_\text{out}</m>. (b) <m>P=W/t</m>. </p> </hint>
+		<answer> <p> (a) <m> 110,000\ \text{J}</m>, (b) <m>15\ \text{W}</m> </p> </answer>
+		<solution> 
+			<p>
+				(a)
+				The energy to be extracted from water would be
+				<md>
+					<mrow> Q_\text{out} \amp = 10\ \text{kg} \times 4186\ \text{J/kg.C} \times (30-5)^{\circ}\text{C}</mrow>
+					<mrow> \amp = 1.0\times 10^{6}\ \text{J}.</mrow>
+				</md>
+				The efficiency with which the refrigerator works is given by its coefficient of performance, which for a Carnot refrigerator can be written in terms of the temperature (in the Kelvin scale) of the two heat baths between which the refrigerator cycle works.
+				<me>
+					\beta = \frac{T_C}{T_H-T_C} = \frac{0+273}{30} = 9.1.
+				</me>
+				Therefore, the energy (i.e. work) needed
+				<me>
+					W = \frac{Q_{out}}{\beta} = 110,000\ \text{J}.
+				</me>
+			</p>
+			<p>
+				(b)
+				To accomplish this in <m>2\text{ h}</m> would require the following power refrigerator.
+				<me>
+					P = \frac{W}{\Delta t} = \frac{110,000\ \text{J}}{2\times 3600} = 15\ \text{W}. 
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+ 	<exercise xml:id="ex-Power-to-Maintain-Temperature-in-a-Carnot-Refrigerator"><title> Power to Maintain Temperature in a Carnot Refrigerator </title>
+		<statement>
+			<p>
+				A refrigerator has 3 cu.ft. of space to be maintained at <m> 0^{\circ}\text{C}</m> .  Heat leaks in the refrigerated space at a rate of 6.0 calories per minute.  If the outside temperature is <m> 35^{\circ}\text{C}</m>, what will be the minimum amount of power needed to maintain the temperature inside the refrigerator?
+			</p>
+
+		</statement>
+		<hint> <p>  Use energetics in one second. Also, use the Carnot efficiency. </p> </hint>
+		<answer> <p>  <m> 0.054\text{ W}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We will look at energetics during an interval of <m>1.0\text{ sec}</m>. Then, work done on the refrigerator will be the power needed. The power will be minimum for Carnot refrigerator. 
+				The efficiency of Carnot refrigerator working between the tenperatures given
+				<me>
+					\beta = \dfrac{T_C}{T_H - T_C} = \dfrac{0+273}{35} = 7.8.
+				</me>
+				In terms of energetics, the efficiency will be <m>Q_C/W</m> with <m>Q_C</m> in one second to be
+				<me>
+					Q_C = \dfrac{6\text{ cal}}{60} = \dfrac{1}{10} \times 4.18\text{ J} = 0.418\text{ J}.
+				</me>
+				Therefore, we have
+				<me>
+					\dfrac{0.418\text{ J}}{W} = 7.8.
+				</me>
+				This gives
+				<me>
+					W = 0.054\text{ J}.
+				</me>
+				Therefore, power will be <m>0.054\text{ W}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+</section>

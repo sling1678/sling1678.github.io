@@ -1,0 +1,129 @@
+<section xml:id="Rotational-Impulse"><title> Rotational Impulse</title>
+<idx>Rotational Impulse</idx>
+<idx><h>Impulse</h><h>Rotational</h></idx>
+	<introduction>
+		<p>
+			Recall that when a force acts on a body, we define the influence of the force by impulse. Impulse of a force causes change in momentum of a body. Similarly, we define the influence of a torque by rotational impulse. We will prove in a section below that the rotational impulse causes change in angular momentum of the body.
+		</p>
+ 
+		<p><alert> Rotational Impulse of a Constant Torque:</alert></p>
+		<p>
+			If a constant torque <m>\mathcal{T}</m> acts for a duration <m>\Delta t</m>, the rotational impulse, <m> J_{\text{rot}}</m>, of the torque is gven by the product of torque and duration.
+			<men>
+				J_{\text{rot}} = \mathcal{T}\, \Delta t\ \ \ (\text{constant torque})			
+			</men>
+			Since torque is a vector, <m>J_{\text{rot}}</m> is also a vector. Similar to torque, we can give the direction of rotational impulse either by the clockwise/counterclockwise sense of rotation or by its direction being towards the axis of rotation or opposite to the axis.
+		</p>
+		<sidebyside widths="55% 10% 30% 5%">
+			<p>
+				<p>
+					Consider a wheel which is pulled tangentially by a constant force at the edge as shown in <xref ref="fig-rot-impulse-constant-force-a"/>. Since the lever arm of this force is the radius <m> R </m>, the magnitude of the torque is <m>RF</m>. 
+
+				</p>
+				<p>
+					Rotational impulse of a this torque over a duration <m>\Delta t</m> will just be the product of torque and duration.
+					<me>
+						J_{\text{rot}} = R F \Delta t.
+					</me>
+				</p>
+			</p>
+			<p></p>
+			<figure xml:id="fig-rot-impulse-constant-force-a">
+				<caption></caption>
+				<image source="./images/rotation/rot-impulse-constant-force-a.png" width="80%"/>
+			</figure>
+			<p></p>
+		</sidebyside>			
+
+
+		<p>
+			The situation is a bit more complicated if either the magnitude or the direction of the torque is changing. In this chapter, we are mostly interested in fixed-axis rotations, therefore, we will examine circumstances in whcih direction of torque is fixed but may vary in magnitude with time.
+		</p>
+		
+		<p><alert> Rotational Impulse of a Varying Torque:</alert></p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				In <xref ref="fig-rot-impulse-constant-force-a"/>, force <m>F</m> was continuously actimg for duration <m>\Delta t</m> with same magnitude. But, sometimes, we have a situation force may act for a short period of time with varying magnitude, e.g., when you strike wheel by a hammer and make the wheel rotate as in <xref ref="fig-rot-impulse-varying-torque-wheel-struck-by-hammer"/>.
+			</p>
+			<p></p>
+			<figure xml:id="fig-rot-impulse-varying-torque-wheel-struck-by-hammer">
+				<caption></caption>
+				<image source="./images/rotation/rot-impulse-varying-torque-wheel-struck-by-hammer.png" width="80%"/>
+			</figure>
+		</sidebyside>
+		
+		<sidebyside widths="55% 40%">
+			<p>
+				The torque by hammer can be approximated to have a rising and falling shape as shown in <xref ref="fig-rot-impulse-varying-torque"/>. Now, to get the rotational impulse from <m>\mathcal{T}(t)</m> we need to integrate the torque, i.e., 
+				<me>
+					J_{\text{rot}} = \int \mathcal{T}(t)\, d t.
+				</me>
+				
+			</p>
+			<figure xml:id="fig-rot-impulse-varying-torque">
+				<caption></caption>
+				<image source="./images/rotation/rot-impulse-varying-torque.png" width="80%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			The result can also be obtained by  computing <alert> the area under the curve</alert> of the plot of <m> \mathcal{T} </m> versus <m> t </m>. 
+	
+			<men>
+					J_{\text{rot}} = \text{ Area under }\mathcal{T}\text{ versus }t. \ \ (\text{fixed direction})  
+			</men>
+
+			Often the lever arm <m>r_{\perp} </m> of a force will not be changing, then, magnitude of the rotational impulse is just the product of the lever arm and the regular impulse.
+			<me>
+				J_{\text{rot}} = r_{\perp}\times [\text{Area under }F\text{ versus }t], 
+			</me>
+			which is
+			<men>
+				J_{\text{rot}} = r_{\perp}\ J\ \ \ (\text{fixed direction, fixed }r_{\perp}) 
+			</men>
+		</p>	
+
+		<p><alert> Net Rotational Impulse of Multiple Forces:</alert>
+			Since rotational impulse is a vector, we would need to add them vectorially to get the net. In a fixed-axis situation, we keep track of counterclockwise and clockwise sense of each torque, and add or subtract them accordingly to obtain the net rotational impulse.
+		</p>
+	</introduction>
+
+	<example xml:id="ex-Rotating-a-Pulley-by-a-Jerk-on-a-Rope-Wound-Around-the-Pulley"><title> Rotating a Pulley by a Sudden Pull on a Rope Wound Around the Pulley </title>
+		<statement>
+			<p>
+				A pulley has a rope wound around its edge as shown in the left panel of <xref ref="fig-ex-jerk-on-a-rope-to-rotate-a-pulley-impulse" />. A boy gives a jerk to the rope to get the pulley rotating. If the force applied by the boy varies in time as shown in the right panel of <xref ref="fig-ex-jerk-on-a-rope-to-rotate-a-pulley-impulse" /> and the radius of the pulley is <m> 0.5 \text{ m}</m>, what is the rotational impulse of the force by the boy?
+			</p>
+			<figure xml:id="fig-ex-jerk-on-a-rope-to-rotate-a-pulley-impulse">
+				<caption>
+					Figure for <xref ref="ex-Rotating-a-Pulley-by-a-Jerk-on-a-Rope-Wound-Around-the-Pulley"/>.
+				</caption>
+				<image source="./images/rotation/ex-jerk-on-a-rope-to-rotate-a-pulley-impulse.png" width="90%"/>
+			</figure>
+			
+
+		</statement>
+
+		<answer> <p> <m> 3.5\text{ N.m.s} </m> into-the-page. </p> </answer>
+		<solution> 
+			<p>
+				Here, the lever arm of the force is fixed in time to <m> r_{\perp} = R = 0.5\text{ m}</m> and the magnitude of the regular impulse is just the area under the force-time plot. Therefore, we get
+				<me>
+					J_{\text{rot}} = r_\perp\, J = 0.5  \times \dfrac{1}{2} \times 0.200\times 70 = 3.5\text{ N.m.s}.
+				</me> 
+				The direction of the rotational impulse is into-the-page.
+			</p>
+		</solution>
+	</example>
+	
+	<subsection><title>(Calculus) Fundamental Definition of Rotational Impulse</title>
+		<p>
+			Rotational impulse is the integral of torque with respect to time over the duration <m> t_i </m> to <m> t_f</m>.
+			<men>
+				\vec{J}_{\text{rot}} = \int_{t_i}^{t_f}\vec{\mathcal{T}}(t)\, dt.
+			</men>
+			In sitations where force vectors lie in the Cartesian <m>xy</m>-plane, torques will either be zero or point towards positive or negative <m>z</m>-axis, i.e., torque that has only the <m> z </m> component. In these situaitons, only the <m> z </m> component of the rotational impulse will be nonzero.
+			<men>
+				 J_{\text{rot},z} = \int_{t_i}^{t_f} \mathcal{T}_z(t)\, dt.
+			</men>			
+		</p>
+	</subsection>
+</section>

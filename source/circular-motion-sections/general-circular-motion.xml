@@ -1,0 +1,329 @@
+<section xml:id="General-Circular-Motion"> <title> Centripetal and Tangential Accelerations </title>	
+
+	<!-- <subsection> <title> Centripetal and Tangential Accelerations </title>	 -->
+<introduction>
+		<p>
+			In <xref ref="Constant-Speed-Circular-Motion"/>, we studied acceleration of a <alert>uniform</alert> circular motion. In that type of motion, speed of the object does not change since the acceleration is pointed perpendicularly to the velocity which is the direction of towards the center of the circle. This acceleration is called <term>centripetal acceleration</term>. Let us denote this as a vector <m>\vec a_c</m>.
+		</p>
+		<p>
+			When speed changes, there will be additional acceleration in the direction of velocity (in case of speeding up) or in the opposite direction of the velocity (in case of slowing down). Since velocity direction is tangential to the circle, this type of acceleration is also called tangential and hence its name, <term>tangential acceleration</term> as shown in <xref ref="fig-centripetal-and-tangential-acceleration"/>. We denote this as <m>\vec a_\theta</m>. I am using <m>\theta</m> to remind that the tangential direction is in the direction of the unit vector <m>(\hat u_\theta = -\hat i \sin\theta + \hat j \cos\theta)</m>, where <m>\hat i</m> and <m>\hat j</m> are unit vectors towards positive <m>x</m> and <m>y</m> axes.
+		</p>
+
+
+		<figure xml:id="fig-centripetal-and-tangential-acceleration">
+			<caption> 
+			Centripetal and tangential acceleration directions. While the centripetal acceleration is always pointed towards the center, the tangential acceleration will point in the forward direction, i.e., the same direction as the velocity, if the body is speeding up as in (a), and will point back, i.e., opposite to the velocity if it is slowing down, as in (b). 
+			</caption>
+			<image source="./images/circular-motion/centripetal-and-tangential-acceleration.png" width="90%"/>
+		</figure>
+		<p>
+			The net acceleration, i.e., acceleration, <m>\vec a</m>, of the object in a circular motion will be a vector sum of the two types of acceleration as shown in <xref ref="fig-centripetal-and-tangential-acceleration"/>.
+			<men>
+				\vec a = \vec a_c + \vec a_\theta.
+			</men>
+		</p>
+
+		<p>
+			Let us denote the magnitude of the tangential acceleration by <m> a_\theta </m> and that of the centripetal acceleration by <m> a_c</m>. We have already seen the formula for the centripetal acceleration,
+			<men>
+				a_c = \dfrac{v^2}{R},
+			</men>
+			and the formula for the magnitude of the tangential acceleration is rate at which speed is changing
+			<men>
+				a_\theta = \frac{\Delta v}{\Delta t} \longrightarrow \frac{d v}{d t}.
+			</men>
+			The magnitude of the net acceleration <m> \vec a </m> of the body in circular motion is obtained from combining these two perpendicularly oriented components,
+			<men>
+				a = \sqrt{a_c^2 + a_\theta^2} = \sqrt{  \left( v^2/R\right)^2 + \left(dv/dt \right)^2 }.
+			</men>
+			We can find the direction of net acceleration either graphically or anlaytically from the directions of the centripetal and tangential accelerations are illustrated in Fig. <xref ref="fig-centripetal-and-tangential-acceleration"/>.  
+		</p>
+
+</introduction>
+
+	<example xml:id="ex-Combining-Centripetal-and-Tangential-Accelerations-in-a-Circular-Motion"><title> Combining Centripetal and Tangential Accelerations in a Circular Motion </title>
+		<statement>
+			<p> A pendulum swings back and forth. In one of those swings, the pendulum bob goes from A to E shown in the Figure. The speed and magnitude of tangential acceleration at the points marked on the figure are
+			</p>
+			<sidebyside widths="50% 50%">
+				<p>
+					<md>
+						<mrow> \amp v_A = 0, \ \ \  |a_\theta|_A = 9.81\,\text{m/s}^2</mrow>
+						<mrow> \amp v_B = 5.3\,\text{ m/s},  \ \ \ |a_\theta|_B = 7\,\text{m/s}^2</mrow>
+						<mrow> \amp v_C = 6.3\,\text{ m/s},  \ \ \  |a_\theta|_C = 0</mrow>
+						<mrow> \amp v_D = 5.3\,\text{ m/s},  \ \ \  |a_\theta|_D= 7\,\text{m/s}^2</mrow>
+						<mrow> \amp v_E = 0,   \ \ \   |a_\theta|_E = 9.81\,\text{m/s}^2</mrow>
+					</md>
+				</p>
+				<figure xml:id="fig-bc-pendulum-tangential-acceleration">
+					<caption></caption>
+					<image source="./images/circular-motion/bc-pendulum-tangential-acceleration.png" width="70%" />
+				</figure>
+			</sidebyside>
+			
+			<p>
+				Find magnitude and direction of the net acceleration at these instants. Note that direction of the swing is important here.
+			</p>
+			
+			
+		</statement>
+		<!-- <hint> <p> At each instant add the centripetal and tangential accelerations vectorially.  </p> </hint> -->
+		<answer> <p>  (A) <m> \vec a_A = -9.81\, \hat j,</m>,
+		              (B)  <m> -\dfrac{21}{\sqrt{2}} \, \hat i + \dfrac{7}{\sqrt{2}} \, \hat j. ,</m> 
+		          	  (C) <m> 19.8\text{ m/s}^2\, \hat j,</m> 
+		          	  (D) <m> \dfrac{21}{\sqrt{2}} \, \hat i + \dfrac{7}{\sqrt{2}} \, \hat j,</m> 
+		          	  (E) <m> -9.81\text{ m/s}^2\, \hat j </m>.
+		          	</p> </answer>
+		<solution> 
+			<p> We need to add the centripetal and tangential accelerations vectorially. Let's work out thee magnitude and directions of these at eqch instant first. For direction's sake, let <m> x</m> axis be pointed to the right and <m> y</m> pointed Up, and use the unit vectors <m> \hat i</m> and <m> \hat j</m>. You could also do these calculations by keeping track of <m> x </m> and <m> y </m> components.
+			</p>
+			<p> A.
+			</p>
+ 
+				<p> The centripetal and tangential acceleration vectors are:
+					<md>
+						<mrow> \amp a_c = 0\ \ (\text{since } v = 0.)</mrow>
+						<mrow> \amp a_\theta = -9.81\, \hat j. </mrow>
+					</md>
+					Adding then, we get the net acceleration at A to be
+					<me>
+						\vec a_A = -9.81\, \hat j.
+					</me>
+				</p>
+ 
+
+			<p> 
+				B. 
+			</p>
+ 
+				<p>
+					The magnitude of the centripetal acceleration is
+					<me>
+						a_c = \dfrac{v^2}{R} = \dfrac{5.3^2}{2} = 14.0\text{ m/s}^2.
+					</me>
+					The direction is in the second quadrant in the following unit vector direction. 
+					<me>
+						\hat u_c = -\cos\, 45^{\circ}\, \hat i + \sin\, 45^{\circ}\, \hat j = \dfrac{-\hat i + \hat j}{\sqrt{2}}
+					</me>
+					Similarly, the tangential direction in pointed in the third quadrant.
+					<me>
+						\hat u_\theta = -\cos\, 45^{\circ}\, \hat i - \sin\, 45^{\circ}\, \hat j = \dfrac{-\hat i - \hat j}{\sqrt{2}}
+					</me>
+					Therefore, the centripetal and tangential accelerations vectors in the component for are:
+					<md>
+						<mrow> \amp a_c = \dfrac{14.0}{\sqrt{2}} \left( -\hat i + \hat j\right)</mrow>
+						<mrow> \amp a_\theta = \dfrac{7}{\sqrt{2}}\left( -\hat i - \hat j\right). </mrow>
+					</md>
+				</p>
+				<sidebyside widths="50% 5% 45%">
+					<p>
+						Adding then, we get the net acceleration at A to be
+						<me>
+							\vec a_B= -\dfrac{21}{\sqrt{2}} \, \hat i + \dfrac{7}{\sqrt{2}} \, \hat j. 
+						</me>
+						That is the acceleration has the magnitude 
+						<me>
+							\sqrt{ \dfrac{21^2}{2} + \dfrac{7^2}{2} } \text{ m/s}^2 = 15.65\,\text{m/s}^2.
+						</me>
+						The direction of acceleration is shown in the figure.
+
+					</p>
+					<p></p>
+					<image source="./images/circular-motion/bc-pendulum-tangential-acceleration-B.png"/>
+				
+				</sidebyside>
+
+			<p> C.
+			</p>
+ 
+				<p> The tangential acceleration here is zero, so the net acceleration is just the centripetal acceleration, which is directed vertically up. Therefore,
+					<me>
+						\vec a_C = \dfrac{v^2}{R}\, \hat j = 19.8\, \hat j.
+					</me>
+					That is, the magnitude is <m> 19.8\text{ m/s}^2</m>.
+				</p>
+ 		
+
+			<p> D.
+			</p>
+ 
+				<p> Now, compared to ppoint B, the pendulum bob is slowing. Therefore, tangential acceleration is pointed in the fourth quadrant and the centripetal acceleration, being radial, is pointed in the first quadrant. Draw figures to convince youerself. This will mean that we will have net acceleration towards positive <m> x </m> direction and same magnitude as in B.
+ 				
+					<me>
+						\vec a_D =  \dfrac{21}{\sqrt{2}} \, \hat i + \dfrac{7}{\sqrt{2}} \, \hat j. 
+					</me>
+				</p>
+ 
+
+			<p> E.
+			</p>
+ 
+				<p> The situation here is same as A since centripetal acceleration is zero and tangential is pointed in the vertically down direction.
+ 				
+					<me>
+						\vec a_E =  -9.81\text{ m/s}^2\, \hat j. 
+					</me>
+				</p>
+
+		</solution>
+	</example>
+
+
+
+	<example xml:id="Acceleration-of-a-Car-Rounding-a-Turn-with-an-Increasing-Speed">
+		<title> Acceleration of a Car Rounding a Turn with an Increasing Speed </title>
+		<statement>
+			<sidebyside widths="50% 10% 30% 10%">
+				<p>
+					A car is taking a left turn as shown in <xref ref="fig-checpoint-car-turning-left-non-uniform-motion"/>. While in the turn, car moves on a circular arc of radius <m> 20\text{ m}</m>, but its speed is increasing at a steady pace of <m> 8\text{ m/s}^2</m> such that at the location marked P, speed is <m> 10\text{ m/s}</m>. 
+				</p>
+				<p> </p>
+
+				<figure xml:id="fig-checpoint-car-turning-left-non-uniform-motion">
+					<caption></caption>
+					<image source="./images/circular-motion/checpoint-car-turning-left-non-uniform-motion.png" width="60%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+
+			<p> 
+				(a) Find magnitudes of centripetal acceleration, tangential acceleration, and full acceleration of the car.
+			</p>
+			<p> 
+				(b) If tangent to the arc at point P  is pointed in the direction <m> 30^{\circ}</m>  North of East, what is the direction of acceleration at this instant?
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  (a) Use formula. (b) Use the fact that tangential and centripetal directions are perpendicular to each other.</p> </hint> -->
+		<answer> <p>  (a) <m> 5\text{ m/s}^2,\ 8\text{ m/s}^2,\ 9.43\text{ m/s}^2</m>, (b) <m> 62^{\circ} </m> North of East. </p> </answer>
+		<solution><title>a</title>
+			<p>
+				The tangential acceleration is already given in the problem statement.
+				<md>
+					<mrow> \amp a_c = \dfrac{v^2}{R} = \dfrac{10^2}{20} = 5\text{ m/s}^2,</mrow>
+					<mrow> \amp a_\theta = 8\text{ m/s}^2,</mrow>
+					<mrow> \amp a = \sqrt{a_c^2 + a_\theta^2} = \sqrt{5^2 + 8^2} = 9.43\text{ m/s}^2.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				A figure will help.
+			</p>
+			<p>
+				<image source="./images/circular-motion/checpoint-car-turning-left-non-uniform-motion-b.png" width="70%"/>
+			</p>
+			<p>
+				Once we find angle <m> \theta </m> in the figure, we can add <m> 30^{\circ}</m> to it to get the direction from the East.
+				<me>
+					\theta = \tan^{-1}\left(\dfrac{5}{8} \right) = 32^{\circ}.
+				</me>
+				Therefore, the direction of acceleration at this instant is <m> 32^{\circ} + 30^{\circ} = 62^{\circ}</m> North of East.
+
+
+			</p>
+		</solution>
+	</example>
+
+	<subsection> <title> (Calculus) Velocity and Speed for a Circular Motion</title>
+		<p>
+			Velocity is derivative of position. Since <m> \theta </m> is the only thing changing in a circular motion, the rate of change of <m> \theta </m> will figure prominantly in the velocity. We call the rate of change of <m> \theta </m> the angular velocity, and denote it by <m> \omega </m>, the small <q>omega</q>.
+			<men>
+				\text{Angular velocity: }\ \ \ \ \omega = \dfrac{d\theta}{dt}.
+			</men>
+		</p>
+		<p>
+			Let's perform the derivatives component by component. Thus, <m> x </m> and <m> y </m> components of the velocity will be
+			<md>
+				<mrow> v_x \amp = \dfrac{dx}{dt} = \dfrac{d}{dt} (R\, \cos\, \theta(t))
+				 = -R\, \sin\, \theta(t)\, \dfrac{d\theta}{dt} = - y\, \omega </mrow>
+			<mrow> v_y \amp = \dfrac{dy}{dt} = \dfrac{d}{dt} (R\, \sin\, \theta(t))
+				 = R\, \cos\, \theta(t)\, \dfrac{d\theta}{dt} = x\, \omega </mrow>
+			</md>
+		</p>
+		<p>
+			The magnitude of the velocity, i.e., speed is
+			<me>
+				v = \sqrt{v_x^2 + v_y^2} = \sqrt{ \left( y^2 + x^2 \right)  \omega^2 } =\sqrt{R^2\omega^2} = R |\omega|,
+			</me> 
+			and the tangent of the angle of velocity with respect to the <m> x </m> axis is 
+			<me>
+				\tan\theta_{v} =  \left(\dfrac{v_y}{v_x} \right) =  \left(\dfrac{x\, \omega}{- y\, \omega} \right)  = \left(  \dfrac{\cos\,\theta}{- \sin\,\theta} \right).
+			</me>
+			The right side can be rewritten as
+			<me>
+				\left(  \dfrac{\cos\,\theta}{- \sin\,\theta} \right) = \tan\left( \theta \pm \dfrac{\pi}{2}\right),
+			</me>
+			where plus is for the counterclockwise motion and negative for the clockwise motion. We will pick the counterclockwise motion.
+			Therefore, the angle of the velocity vector with respect to the <m> x </m> axis is
+			<men>
+				\theta_v = \theta + \dfrac{\pi}{2},
+			</men>
+			where <m> \theta </m> is the angle on the circle modulu <m> 2\pi</m>.
+		</p>
+		<p> <alert> Let's summarize the results. </alert>
+			<md> 
+				<mrow>\amp\text{Components: } 
+					v_x = - y\, \omega,\ \ v_y = - x\, \omega,</mrow>
+				<mrow>\amp\text{Magnitude, i.e., Speed: } 
+					v = R |\omega|,</mrow>
+				<mrow>\amp\text{Direction for counterclockwise motion: } 
+					\theta_v = \theta + \dfrac{\pi}{2},</mrow>
+			</md>
+			where <m> \theta </m> is the angle on the circle modulu <m> 2\pi</m> and <m> \theta_v</m> is angle with respect to the <m> x </m> axis. After we find the value of <m> \theta_v</m>, we need to interpret the value for the direction based on the quadrant to which point <m> (v_x, v_y)</m> belongs.
+		</p>
+	</subsection>
+
+
+	<subsection><title> (Calculus) Acceleration of a Circular Motion</title>
+		<idx><h>Circular Motion</h><h>Acceleration</h></idx>
+		<p>
+			Acceleration is derivative of velocity. Here, we will need to quantify the rate at which the angular velocity <m> \omega </m> changes. This is called angular acceleration, which we will denote by the symbol <m> \alpha</m>.
+			<men>
+				\alpha = \dfrac{d\omega}{dt} = \dfrac{d^2\theta}{dt^2}.
+			</men>
+			We will see below that <m>R\alpha</m> is the tangential acceleration.
+			<me>
+				R\alpha = R\dfrac{d\omega}{dt} = \dfrac{d(R\omega)}{dt} = \dfrac{dv}{dt}.
+			</me>
+			Acceleration, i.e., vector <m> \vec a </m>, is the rate of change of the velocity vector <m> \vec v </m>. Its much easier to work this out using Cartesian components.
+		</p>
+		<p>
+			<md>
+				<mrow xml:id="eq-circ-motion-acceleration-x" > a_x \amp = \dfrac{dv_x}{dt} =   - \dfrac{d}{dt}(y\, \omega) = -v_y\,\omega - y\, \alpha = x\, \omega^2 - y\,\alpha</mrow>
+				<mrow xml:id="eq-circ-motion-acceleration-y"> a_y \amp = \dfrac{dv_y}{dt} = \dfrac{d}{dt} (x\, \omega)
+				 =   v_x\, \omega + x\, \alpha = -y\,\omega^2 + x\, \alpha </mrow>
+			</md>
+			The magnitude of the acceleration vector is
+			<men xml:id="eq-circ-motion-acceleration-magnitude">
+				a = \sqrt{a_x^2 + a_y^2} = \sqrt{ \left( \dfrac{v^2}{R}\right)^2 + (R\alpha)^2 },
+			</men>
+			where simplification occurs in the detailed calculation by noting that 
+			<me>
+				x v_x  + y v_y = 0,
+			</me>
+			which is obtained by taking derivative of <m>x^2 + y^2 = R^2</m>, and replacing <m> \omega </m> by <m> v /R</m>. You should work out the full derivation of the formula for <m>a</m> in Eq. <xref ref="eq-circ-motion-acceleration-magnitude"/>.
+
+		</p>
+
+		<p>
+			<idx><h>Acceleration</h><h>Centripetal</h></idx>
+			<idx><h>Acceleration</h><h>Tangential</h></idx>
+			<idx>Tangential Acceleration</idx>	
+			The full acceleration in Eq. <xref ref="eq-circ-motion-acceleration-magnitude" />  has two contributing parts, which come from perpendicular directions. The first part, <m> \dfrac{v^2}{R} </m> is the <term> centripetal acceleration</term>, which is due to changing direction of velocity, and the second part <m> R\alpha</m>, which can also be written as <m> dv/dt</m>, is called the <term> tangential acceleration</term>. We will denote centripetal acceleration by <m> a_c</m> and the tangential by <m> a_\theta</m>. (The use of subscript <m> \theta </m> will become clear if/when you do the polar coordinates.)
+			<mdn>
+				<mrow> \amp \text{Centripetal Acceleration: } a_c = \dfrac{v^2}{R},</mrow>
+				<mrow> \amp \text{Tangential Acceleration magnitude: } a_\theta = |R\alpha|= \left| \dfrac{dv}{dt} \right|. </mrow>
+			</mdn>
+			The directions of centripetal and tangential accelerations are shown in Fig. <xref ref="fig-centripetal-and-tangential-acceleration"/>.
+
+
+		</p>
+	</subsection>
+
+
+
+
+
+	
+</section>

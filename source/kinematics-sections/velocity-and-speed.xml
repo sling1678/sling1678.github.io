@@ -1,0 +1,550 @@
+<section xml:id="kinematics-Velocity-and-Speed"> <title> Velocity and Speed </title><idx><h>Velocity</h><h>Vector</h></idx> <idx><h>Speed</h><h>General</h></idx>
+	<subsection><title>  Average Velocity </title> <idx><h>Velocity</h><h>Average</h></idx>
+		<p> 
+			The ratio of displacement  <m> \Delta \vec r</m> to the interval <m> \Delta t</m> over which displacement   occured is called <term> average velocity </term> during that interval.
+			<men xml:id="eq-average-velocity-vector-definition">
+				\vec v_{\text{av}} = \dfrac{\Delta \vec r}{\Delta t} .
+			</men>
+			Since <m> \Delta \vec r </m> is a vector and we are dividing it by a simple number, average velocity, <m> \vec v_{\text{av}} </m> will also be a vector. Just as other vectors, we can represent velocity by an arrow of appropriate size in appropriate direction. We can slso case it analytically as components or in magnitude-direction form. 
+		</p>
+
+		<p>
+			Noting that displacement <m> \Delta \vec r </m> has the components <m> (\Delta x, \Delta y, \Delta z) </m>, Eq. <xref ref="eq-average-velocity-vector-definition" /> gives us relation for each cmponent of average velocity to the correspnding displacement.
+			<me>
+				v_{\text{av},x}=  \dfrac{\Delta x}{\Delta t}, \ \  v_{\text{av},y}=  \dfrac{\Delta y}{\Delta t}, \ \ v_{\text{av},z}=  \dfrac{\Delta z}{\Delta t}. 
+			</me>
+			From the components, we can deduce the magnitude and direction as we would do for any other vector as illustrated in <xref ref="Average-Velocity-from-Displacement-and-Duration"/>.
+
+		</p>
+
+
+	<example xml:id="Average-Velocity-from-Displacement-and-Duration"><title> Average Velocity from Displacement and Duration  </title>
+		<statement>
+			<p>
+				An ant is crawling randomly on the floor. At some time <m> t = 0 </m>, the ant is at coordinates <m> (20\text{ cm}, -30\text{ cm}) </m> and some time later, at <m> t = 20\text{ sec} </m>, it is at <m> (-10\text{ cm}, 10\text{ cm}) </m>. What is the average velocity in (a) the component form and (b) in the magnitude-direction form? 
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  First find the displacement vector in the component form. </p> </hint> -->
+		<answer> <p> (a) <m> (-1.5\text{ cm/s}, 2.0\text{ cm/s} ) </m>, 
+					(b) <m> 2.5\text{ cm/s},\ 53.1^{\circ}</m> clockwise from negative <m> x </m> axis.</p> </answer>
+		<solution><title>a</title> 
+			<p> 
+				We first find the displacement vector in the component form.
+				<me>
+					\Delta x = -10-20 = -30\text{ cm},\ \ \Delta y = 10-(-30) = 40\text{ cm}.
+				</me>
+				Therefore, the components of the average velocity are
+				<md>
+					<mrow> \amp v_{\text{av},x} = \dfrac{\Delta x}{\Delta t} = \dfrac{-30}{20} = -1.5\text{ cm/s}. </mrow>
+					<mrow> \amp v_{\text{av},y} = \dfrac{\Delta y}{\Delta t} = \dfrac{40}{20} = 2.0\text{ cm/s}. </mrow>
+				</md>
+				Therefore, <m> \vec v_{\text{av}} = (-1.5\text{ cm/s}, 2.0\text{ cm/s} ) </m>.
+
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+				The magnitude and angle from components can be found from the same formulas that relate <m> (x, y) </m> to <m> (r, \theta)</m>.
+				<md>
+					<mrow> \amp v_{\text{av}} = \sqrt{1.5^2 + 2^2} = 2.5\text{ cm/s}. </mrow>
+					<mrow> \amp \theta = \tan^{-1}\left( \dfrac{2}{-1.5}\right) = -53.1^{\circ}. </mrow>
+				</md>
+				Now, we interpret the angle to get the direction. Note that the point <m> (-1.5, 2) </m> is in the second quadrant. Therefore, the direction is in a clockwise angle of <m> 53.1^{\circ}</m> from the negative <m> x </m> axis.				
+			</p>
+		</solution>
+	</example>
+
+	</subsection>
+
+	<subsection> <title> Average Speed </title><idx><h>Speed</h><h>Average</h></idx>
+		<p>
+			Average speed is different from average velociy, although we often tend to confuse them as same. For <term> average speed </term>, we divide the total distance traveled on the actual path by the time taken for the motion, not just the direct distance between the initial point and the final point.
+			<men>
+				\text{Average Speed } = \dfrac{\text{Distance Traveled}}{\text{Time Taken}}
+			</men>
+			The confusion comes from the fact that we use the same symbol for speed as we do for the magnitude of average velocity. To avoid the confusion, let us use symbol <m> v_{s,av} </m> for the average speed, <m> d </m> the distance traveled, and <m> t </m> the time, then we have
+			<men>
+				v_{s,av} = \dfrac{d}{t}
+			</men>
+			<alert>Average Speed is Different from Average Velocity: </alert>
+			An extreme example that shows the difference between average speed and average velocity occurs in a closed-loop motion. Let <m>T</m> denote the time it takes to return after going around the closed path, say from your home to the grocery store and back to your home. Let <m>D</m> be the total distance to the store and back. Average velocity here will be zero, since displacement is zero, but average speed will be <m>D/T</m>. 
+		</p>
+
+	<example xml:id="ex-Average-Speed-versus-Average-Velocity"><title> Average Speed versus Average Velocity</title>
+		<statement>
+			<p>
+				Google maps shows that a road trip from Boston to Los Angeles will cover <m> 4800 \text{ km}</m> and take <m> 48 \text{ hr}</m>. If you were to dig a direct tunnel through the Earth between Boston and Los Angeles, you would find that the direct distance is approximately <m> 4100 \text{ km}</m>.  
+			</p>
+			<p>
+				(a) What is the average speed for the trip in km/h?  (b) What is the average velocity for the trip?
+			</p>
+		</statement>
+		<!-- <hint> <p> (a) <m>v = d/t</m>, (b) <m> \vec v_\text{av} = \Delta\vec r /\Delta t</m>.  </p> </hint> -->
+		<answer> <p> (a) <m> 100\text{ km/hr}</m>, (b) <m> 84\text{ km/h}</m> in the direction in tunnel from Boston to Los Angeles.  </p> </answer>		
+		<solution><title>a</title>
+			<p> To obtain average speed, 
+				we divide the actual distance, as given by the road trip distance, by time.  
+				<me>
+					v_s = \dfrac{4800 \text{ km}}{48 \text{ hr}} = 100\text{ km/hr}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p> 
+				Average velocity <m>(\vec v_{\text{ave}})</m> is a vector - so, we need to specify both the magnitude and direction. 
+			</p>
+			<p>
+				The direction here is simple to state: it is along the direct line from Boston towards Los Angeles, as in the tunnel. 
+			</p>
+			<p> The magnitude of the average velocity will be equal to the direct distance, not the distance on the road trip, divided by time.
+				<me>
+					v_{\text{ave}} = \dfrac{4100\text{ km}}{48\text{ hr}} = 84\text{ km/h}.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+	</subsection>
+	<subsection> <title> Instantaneous Velocity - Formal Definition</title><idx><h>Velocity</h><h>Instantaneous</h></idx>
+		<p></p>
+		<p>
+			Average velocity and average speed do not tell us motion moment-by-moment. For that, Isaac Newton introduced the concept of <term>instantaneous velocity</term> based on concepts of limit and infinitesimal intervals.  
+		</p>
+		<p>
+			If you find average velocity using Eq. <xref ref="eq-average-velocity-vector-definition"/> for different interval values, i.e., different values of <m>\Delta t</m> in, say, from <m>t</m> to <m>t+\Delta t</m> interval, you will find that you get different magnitude and directions of average velocities. Newton noticed that, as <m>\Delta t</m> become increasingly small, the differences in average velocities become less and less pronounced in a well-defined way such that it is possible to define a unique velocity in the limit <m>\Delta t\rightarrow 0</m>. Furthermore, <m>\Delta t\rightarrow 0</m> limit also makes <m>t</m> to <m>t+\Delta t</m> interval to be of <q>zero size</q>, thus giving us information about motion <alert>at instant <m>t</m></alert>.
+		</p>
+		<p> 
+			Denoting the instantaneous velocity vector by <m> \vec v </m> and the position vector as <m> \vec r</m> we can write the definition of instantaneous velocity formally by
+			<men xml:id="eq-instantaneous-velocity-3d-limit">
+				\vec v	= \lim_{\Delta t \rightarrow 0} \dfrac{\vec r\left(\text{at } (t+\Delta t)\right) - \vec r\left(\text{at } t\right)}{\Delta t} \equiv \frac{d\vec r}{dt}.
+			</men> 
+			The magnitude of instantaneous velocity gives us the <alert>speed</alert> at that instant. Although, we noted above that average speed and magnitude of average velocity may be different, but instantaneous speed and magnitude of instantaneouos velocity are always same since averaging in Eq. <xref ref="eq-instantaneous-velocity-3d-limit"/> is over an infintesimal time interval.
+		</p>
+		<p>
+			Eq. <xref ref="eq-instantaneous-velocity-3d-limit" /> is an abstract definition, which we can make more accessibale by looking at the components. Denoting <m>\vec r\left(\text{at } (t+\Delta t)\right) - \vec r\left(\text{at } t\right)</m> by <m>\Delta \vec r \equiv (\Delta x, \Delta y, \Delta z)</m>.
+
+			<md>
+				<mrow> \amp v_x= \lim_{\Delta t \rightarrow 0}\dfrac{\Delta x}{\Delta t} \equiv \frac{dx}{dt},</mrow>
+				<mrow> \amp v_y= \lim_{\Delta t \rightarrow 0}\dfrac{\Delta y}{\Delta t} \equiv \frac{dy}{dt},</mrow>
+				<mrow> \amp v_z= \lim_{\Delta t \rightarrow 0}\dfrac{\Delta z}{\Delta t} \equiv \frac{dz}{dt}.</mrow>
+			</md>
+			These components of velocity are also called <m>x</m>-, <m>y</m>-, and <m>z</m>-velocity respectively. In a previous chapter, we have studied one-dimensional motion, where only one of them was non-zero. For general motion, you can expect all of them to be nonzero and you would need to keep track of them all. 			
+		</p>
+		<p>
+			Numbers <m>v_x</m>, <m>v_y</m>, and <m>v_z</m> you would obtain this way are the Cartesian components of the vector <m>\vec v</m>. Thus, once we have obtained <m> (v_x, v_y, v_z)</m>, we can deduce the magnitude and direction of the velocity vector as we do for any vector. For instane, <alert>magnitude</alert> of velocity, i.e., speed, will simply be the magnitude of the vector.
+			<men>
+				v = \sqrt{v_x^2 + v_y^2 + v_z^2}.
+			</men>
+			For direction of <m>\vec v</m>, we will use either polar angle in case of a motion in a plane, or spherical cordinate angles in case of motion in a three-dimensional space. 
+		</p>
+
+	<example><title>Velocity from Position</title><idx><h>Velocity</h><h>From Position</h></idx>
+		<statement>
+			<p> 
+				A ball is thrown in the air. With <m>x</m>-axis horizontal and <m>y</m>-axis pointed vertically up, the position of the ball at time <m>t</m> is given by
+				<me>
+					x = 30 t,\ \ y = 40 t - 5 t^2.
+				</me>
+				Here <m>x</m> and <m>y</m> are units of m and <m>t</m> is units of s. 
+				(a) What is its initial velocity? (b) What is its velocity at <m> t= 5\text{ s}</m>.
+			</p>
+		</statement>
+		<answer>(a) <m>50\text{ m/s}</m>, counterclockwise <m>53^\circ</m> from positive <m>x</m>-axis , (b) <m>10\sqrt{10}\,\text{m/s}</m>, <m>18.4^\circ</m> clockwise  from positive <m>x</m>-axis. </answer>
+		<solution><title>a</title>
+			<p>
+				By taking derivatives of <m>x</m> and <m>y</m> we get the components of vbelocity to be
+				<men xml:id="example-Velocity-from-Position-velocity-components-at-arbitrary-t">
+					v_x = \frac{dx}{dt} = 30,\ \ \ v_y = \frac{dy}{dt} = 40 - 10 t.
+				</men>
+				At initial instant <m>t=0</m>. Therefore, we have the following values of components at initial time.
+				<me>
+					v_x = 30, \ \ \ v_y = 40.
+				</me>
+				Therefore, the mangitude of the velocity is
+				<me>
+					v = \sqrt{v_x^2 + v_y^2} = \sqrt{30^2 + 40^2} = 50\text{ m/s},
+				</me>
+				and the direction is in the forst quadrant countercloclockwise from the positive <m>x</m>-axis at angle
+				<me>
+					\theta = \tan^{-1}\left( 40/30 \right) \approx 53^\circ.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				We already have components of velocity at an arbitrary instant in Eq. <xref ref="example-Velocity-from-Position-velocity-components-at-arbitrary-t"/>. Therefore magnitude of velocity is
+				<me>
+					v = \sqrt{ 30^2 + \left( 40 - 10 t\right)^2 }.
+				</me>
+				For <m>t=5\text{ s}</m>, this gives
+				<me>
+					v = 10\sqrt{10}\,\text{m/s}.
+				</me>
+
+				The counterclockwise angle from the positive <m>x</m>-axis is
+				<me>
+					\theta = \tan^{-1}\left( (40 - 10 t)/30 \right),
+				</me>
+				which can become negative if the ball continues to fall for a time <m>t > 4\text{ s}</m>. For <m>t=5\text{ s}</m>, it is
+				<me>
+					\theta = \tan^{-1}\left( -10/30 \right) =  -18.4^\circ.
+				</me>
+				This angle is in 4th quadrant and is clockwise <m>18.4^\circ</m> from positive <m>x</m>-axis.
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="ex-Velocity-as-a-Vector-in-a-Horizontal-Vertical-Plane"><title> Velocity as a Vector in a Horizontal-Vertical Plane</title>
+		<statement>
+
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Suppose a cannon ball is fired with a speed <m> 50 \text{ m/s}</m> at an angle <m>40^{\circ}</m> with the horizontal direction.  A coordinate system is chosen such that the <m> x </m> axis points horizontally and the positive <m> y </m> axis points vertically up. What are the <m> x </m>  and <m> y </m>  components of the velocity vector?
+				</p>
+				<p></p>
+				
+				<image source="./images/two-dim-motion/problem-velocity-components.png" width="60%"/>
+			</sidebyside>
+			
+
+		</statement>
+		<!-- <hint> <p> Project the vector on <m>x</m> axis to get <m>v_x</m>. similarly for <m>v_y</m>.  </p> </hint> -->
+		<answer>
+			<p>
+				<m> v_x = 38\text{ m/s} </m>, <m> v_y = 32\text{ m/s} </m>.
+			</p>
+		</answer>
+		<solution>
+			<p>
+				Project a vertical line from the tip of the arrow to the <m> x </m> axis (with the tail of the arrow at the origin. The length  on the <m> x </m> axis from origin is the <m> v_x </m>. Trigonometry tells us that this should be hypotehnuse (which equal to the speed <m> v </m>) times cosine.
+				<me>
+					v_x = v\, \cos\, \theta = 50\text{ m/s}\, \cos\, 40^{\circ} =  38\text{ m/s}.
+				</me>
+				Similiarly, the projection on the <m> y </m> axis gives <m> v_y = v\, \sin\, \theta</m>, which evaluates to <m> 32\text{ m/s} </m>.
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="checkpoint-velocity-components-from-magnitude-direction-2d"><title> Computing Velocity Components from Magnitude and Direction - 2D</title>
+		<statement>
+			<p>
+				A cannon ball is fired at an angle of <m> 30^{\circ} </m> above the horizon at a speed of <m>40\text{ m/s}</m>. Consider positive <m> x </m> axis horizontally in the general direction the ball will fly and positive <m> y </m> axis vertically up. (a) Draw the vector in the <m> xy</m> plane and from its projections on the axes, identify the components on the diagram. (b) What are the <m>x</m> and <m>y</m> components of the velocity vector?
+			</p>
+		</statement>
+		<!-- <hint> <p> Project the vector on <m>x</m> axis to get <m>v_x</m>. similarly for <m>v_y</m>.  </p> </hint> -->
+		<answer> <p> (b) <m> 34.64\text{ m/s}, 20\text{ m/s}</m>. </p></answer>
+		<solution><title>a</title>
+			<p> 
+				Lets draw the vector first and identify the <m> x </m> and <m> y </m> components in the diagram so that we can identify the trig we need. For clarity I will show only the <m> x </m> component. 
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					The diagram illustrates the projection on the <m> x </m> axis to get the <m> x </m> component <m> v_x</m>. We draw the velocity vector with tail at the origin, and then we drop a perpendicular from the tip to each axis - figure shows only to <m> x </m> axis for clarity. You should do similarly for the <m> y </m> component.
+				</p>
+	 
+				<p> </p>
+				<image source="./images/two-dim-motion/example-velocity-component.png" width="60%"/>
+			</sidebyside>
+ 
+ 		</solution>
+ 		<solution><title>b</title>
+			<p>  
+				We are going to omit units in the calculations, but put back the units in the answers. 
+				From the figure it is clear that
+				<md>
+					<mrow> v_x \amp = v \cos\theta  = 40  \times \cos\, 30^{\circ} = 34.64\text{ m/s}. </mrow>
+				</md>
+				Similarly,
+				<md>
+					<mrow> v_y\amp = v \sin\theta  = 40 \times \sin\, 30^{\circ}  = 20\text{ m/s}. </mrow>
+				</md>
+			</p>
+
+		</solution>
+	</example>
+
+
+	</subsection>
+
+	<subsection><title> Velocity from Slopes of <m> (x, y, z) </m> vs <m> t </m> Plots.</title>
+
+		<sidebyside widths="45% 5% 50%">
+			<p>
+				When we studied one dimensional motion on <m>x</m> axis, we noted that <m>v_x</m> was the derivative of <m>x</m> with respect to <m>t</m>. The value of derivative at a point is equal to the slope of the tangent to the function at that point. Therefore, we were able to compute <m>v_x</m>  by a plot of <m>x</m> versus <m>t</m>. 			 
+			</p>
+			<p></p>
+			<figure xml:id="fig-vx_from_x_vs_t_plot_curved">
+				<caption><m>v_x</m>  from slope.</caption>
+				<image source="./images/two-dim-motion/vx_from_x_vs_t_plot_curved.png" width="60%"/>
+				
+			</figure>
+		</sidebyside>
+		<p>
+			More generally, velocity (vector) is derivative of <m>\vec r</m> as defined in Eq. <xref ref="eq-instantaneous-velocity-3d-limit"/>. We cannot plot <m>\vec r</m> versus <m>t</m> like a function, since a vector has both quantitative (the magnitude) and qualitative (the direction) properties. But, we can think of <m>\vec r</m> as consisting of three functions, <m>x(t)</m>, <m>y(t)</m>, and <m>z(t)</m>, where I have placed <m>t</m> in the argument to emphasize dependence on time <m>t</m>. Plots of <m>x(t)</m>, <m>y(t)</m>, and <m>z(t)</m> versus <m>t</m> allows us to find <m>v_x</m>, <m>v_y</m>, and <m>v_z</m>, respectively by the slope method illustrated above for <m>v_x</m>.
+			<md>
+				<mrow> \amp v_x= \text{Slope of tangent to } x \text{ versus } t \text{ plot}.</mrow>
+				<mrow> \amp v_y= \text{Slope of tangent to } y \text{ versus } t \text{ plot}.</mrow>
+				<mrow> \amp v_z = \text{Slope of tangent to } z \text{ versus } t \text{ plot}.</mrow>
+			</md>
+		</p>
+		<p>
+			Once we have obtained <m> (v_x,\ v_y,\ v_z)</m>, we can deduce the magnitude and direction of the velocity vector as usual.  
+		</p>
+
+		<example xml:id="exp-Instantaneous-Velocity-from-Slope-1-Dimensional"><title> Instantaneous Velocity from Slope - 1 Dimensional</title>
+			<statement>
+				<p>
+					The figure below shows an example of calculation of the <m> x </m> component of instantaneous velocity from a plot of <m> x </m> vs <m> t</m>. To obtain <m> v_x</m> at an instant, say at <m> t=t_1</m>, we draw a tangent to the curve at <m> t=t_1</m>  as shown in the figure.
+				</p>
+				<sidebyside widths="45% 55%">
+					<p>
+						The rise of the tangent line gives the change in position <m> \Delta x</m> along the axis and the run of the tangent gives the duration <m> \Delta t</m> for that change.  Therefore, slope of the tangent line, obtained by dividing <m> \Delta x </m> by <m> \Delta t </m>  gives the rate at which <m> x </m> coodinate changes at <m> t_1</m>, i.e, the <m> v_x </m> at <m> t_1</m>.
+
+					</p>
+
+					<p>  
+						<image source="./images/two-dim-motion/example-xvst-2.png" width="60%"/>
+					</p>
+				</sidebyside>
+
+				<p>
+					At time <m> t_1</m>, the slope of the tangent, i.e., <m> v_x</m>,  is positive, meaning the velocity is pointed in the positive <m> x </m> direction for a one-dimensional motion on the <m> x </m> axis. 
+				</p>
+				<p>
+					Just to remind you that velocity for one-dimensional motion on the <m> x </m>  axis is <m> \vec v = v_x \hat i</m>, where <m> \hat i</m> is the unit vector pointed towards the positive <m> x </m>  axis.  Note that at time <m> t_2 </m> in the figure, the slope is zero, meaning that the <m> v_x </m>  is zero there. At time <m> t_3</m>, the slope is negative, meaning the velocity will be pointed in the negative <m> x </m> axis direction for a one-dimensional motion.
+				</p>
+				<p> 
+
+					I wish to emphasize here that an <m> x </m>  vs <m> t </m>  plot gives you only <m> v_x </m>. In a three-dimensional motion, you will need <m> x </m>  vs <m> t </m> , <m> y </m>  vs <m> t </m>, and <m> z</m>  vs <m> t </m> so that you can deduce <m> v_x </m>, <m> v_y </m>, and <m> v_z </m> of velocity. You can then construct the magnitude and direction of the velocity vector from them.
+
+
+				</p>
+			</statement>
+
+			
+		</example>
+
+
+	<example xml:id="Computing-Velocity-from-Position-Graphs-2-Dimensional"><title> Computing Velocity from Position Graphs - 2 Dimensional</title>
+		<statement>
+			<p>
+				A ball is rolling on the floor. The position of the ball is recorded as <m>(x,y)</m> of a coordinate system.  The <m>z</m> coordinate of the ball is always zero in this coordinate system and therefore ignored.  The plots of <m>x</m> vs <m>t</m> and <m>y</m> vs <m>t</m> are displayed here. Find the velocity of the ball at (a) <m> t = 3\text{ sec}</m>, (b) <m>t=5\text{ sec}</m>, and (c) <m> t=7\text{ sec}</m>.
+			</p>
+			<p>
+				<image source="./images/two-dim-motion/problem-vel-inst-slopes-xy-a.png" width="90%" />
+			</p>
+
+		</statement>
+		<!-- <hint> <p> (a) Find <m> v_x </m> and <m>v_y</m> from slopes at <m> t = 3\text{ sec}</m>.  </p></hint> -->
+		<answer> <p> (a) <m> (0.5\ \text{ m/s},\ 1.0\text{ m/s} )</m>, 
+			(b) <m> (-0.5\text{ m/s},\  0) </m>,
+			(c) <m> (-0.5\text{ m/s},\  -1.0\text{ m/s})</m>. </p></answer>
+		<solution><title>a</title>
+			<p>
+				The slope of the <m> x </m> vs <m> t </m>  grasph at <m> t = 3 </m> is obtained by two points on the line through the  <m>(t=3, x=1.5)</m> point on the graph. Lets pick the second point  on this line to be <m>(t=0, x=0)</m>. Then we get
+				<me>
+					v_x = \dfrac{1.5-0}{3-0} \text{ m/s} = \dfrac{1}{2} \text{ m/s}.
+				</me> 
+				Similarly we pick two points on the line through <m>(t=3, y=1.0)</m> point. Let the other point on this line be <m>(t=2, y=0)</m>. This gives
+				<me>
+					v_y = \dfrac{1.0-0}{3-2} \text{ m/s} = 1.0 \text{ m/s}.
+				</me> 
+				Therefore, the velocity in component form in the <m>xy</m>-plane is <m> (0.5\ \text{ m/s}</m>, <m>1.0\text{ m/s} )</m>.
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+				Similary, we get <m> v_x = -0.5\text{ m/s}</m> and <m> v_y = 0</m>.
+			</p>
+		</solution>
+		<solution><title>c</title>
+			<p>
+				I got <m> v_x = -0.5\text{ m/s}</m> and <m> v_y = -1.0\text{ m/s}</m>. 
+			</p>
+		</solution>
+	</example>
+
+
+
+	</subsection>
+
+	<!--
+	<subsection> <title> (Calculus) Instantaneous Velocity and Instantanous Speed </title>
+		<p>
+			To study accelerating motion, we need to understand not just average velocity, but also velocity throughout the motion. The instantaneous velocity and instantanous speed are mathematical concepts that tell us how fast the object is moving at an instant. Additionally, the  instantaneous velocity also tells us which way the object is headed next. 
+		</p>
+		<p>
+			We need Calculus to define these quantities - so if you have not had Calculus yet, you can skip this section - just note that the magnitude of the velocity at an instant says how fast it is moving at that instant, which is same as speed at that instant, and the direction of the velocity vector tells us the direction in which the object is headed next. 
+		</p>
+
+		<p>
+			Velocity at an instant, called the <term> instantaneous velocity</term> or simply as <term> velocity </term>, is defined as the average velocity over infinitesimal interval around the instant of interest. This requires taking a limit of the average velocity as we decrease the infinitesimal inerval. This results in the velocity equal to the derivative of position vector <m>\vec r</m>.
+			<men>
+				\vec v = \dfrac{d\vec r}{dt}.
+			</men>
+		</p>
+		<p> 
+			One way to think about derivative of a vector is to write it in Cartesian components. Since <m> \vec r = x \hat i + y \hat j + z \hat k</m>, the Cartesian components of velocity vector can be obtained by taking derivatives of position coordinates.
+			<men>
+				\vec v = \left( \dfrac{dx}{dt}, \dfrac{dy}{dt}, \dfrac{dy}{dt} \right),
+			</men>
+			Let us denote, as usual, the Catesian components of <m>\vec v</m> by <m> v_x </m>, <m> v_y </m>, and <m> v_z </m> . Then, we will have each component of the velocity vector  equal to just a derivative of the corresponding coodinate.
+			<men>
+				v_x = \dfrac{dx}{dt},\ \ v_y = \dfrac{dy}{dt},\ \  v_z = \dfrac{dz}{dt}.
+			</men>		
+		</p>
+		<p><alert> Magnitude of Instantaneous Velocity.</alert>
+			The magnitude of the velocity vector tells us how fast the object is moving. This is what we also mean by speed. Therefore, the magnitude of instantaneous velocity vector is the same thing as <term>  instantaneous speed </term>. 
+			From the Cartesian components of the velocity, we can immediatrely write a formula for speed in terms of the derivatives of the coordinates.	
+			<mdn>
+				<mrow> \text{Speed,  } v \amp = \sqrt{v_x^2 + v_y^2 + v_z^2} </mrow>
+				<mrow> \amp = \sqrt{ \left( \dfrac{dx}{dt} \right)^2 + \left( \dfrac{dy}{dt} \right)^2 + \left( \dfrac{dz}{dt} \right)^2} </mrow>
+			</mdn>
+		</p>
+		<p> <alert> Direction of Instantaneous Velocity. </alert>
+			The above procedure provides a way of finding the components of the instantaneous velocity,, viz., <m> \vec v = (v_x, v_y, v_z) </m>. From components <m>(v_x, v_y, v_z) </m>, we can also get the direction of <m>\vec v</m> in space as we would for any vector quantity. For instance, if the velocity vector was in the <m> xy </m>-plane, the <m> z </m> component will be zero, and we would write <m> \vec v = (v_x, v_y) </m>. Then, the angle with respect to the <m> x </m> axis will be
+			<me>
+				\theta = \tan^{-1}\left( {\dfrac{v_y}{v_x}}\right).
+			</me>
+			In case of a fully three-dimensional situation, we would use the polar and azimuthal angles, as usual, to indicate the direction.
+		</p>
+	</subsection>
+	-->
+
+	<subsection><title> Direction of Instantaneous Velocity from Trajectory</title>
+
+		<p> 
+			If you can draw the path of the moving object in space, you will get some curvy trajectory in space. The direction of velocity at some instant, then is the direction of the tangent to this trajectory as shown in  <xref ref="fig-velocity-from-tangent" />.
+		</p>
+		<p>	
+			<figure xml:id="fig-velocity-from-tangent">
+				<caption> The direction of velocity vector can be deduced from tangent to the path/trajectory of the object in space. The figure shows directions of velocity vectors at instants <m> t_1 </m> and <m>t_2</m>.
+				</caption>		
+				<image source="./images/two-dim-motion/velocity-from-tangent.png" width="70%"/>
+			</figure>
+		</p>
+
+
+		<example><title> Velocity of a Projectile at Different Points </title>
+			<statement>
+				<p> 
+					The trajectory of a projectile is shown in the figure below with the assumption that the initial velocity was <m> 80\text{ m/s}</m> at the angle of <m>72^{\circ}</m> from the horizontal direction.  The position of the projectile at successive <m> 1 \text{ sec}</m> instants are shown in the figure
+				</p>
+
+				<sidebyside widths="50% 5% 45%">
+					<p>
+						You can see that the direction as well as the magnitude of the velocity of the projectile changes with time.  As the projectile rises, the distance covered in each subsequent second decreases as a result of slowing down. At the top of the trajectory, the projectile only has horizontal velocity since the vertical component of the velocity is zero there. The velocity is never pointed vertically straight down since the projectile always has a non-zero horizontal component of the velocity.
+					</p>
+					<p></p>
+					<image source="./images/two-dim-motion/example-inst-vel-projectile.png" width="60%"/>
+				</sidebyside>
+			</statement>
+
+		</example>
+	</subsection>
+
+
+
+
+
+
+	<exercises>
+
+
+	<exercise xml:id="ex-Magnitude-and-Direction-from-Components-of-a-Velocity-in-the-Third-Quadrant"><title> Magnitude and Direction from Components of a Velocity in the Third Quadrant</title>
+		<statement>
+			<p>
+				Suppose a football is on a downward path. The <m> x </m> and <m> y </m> components of its velocity are <m> (-30\text{ m/s}, -40\text{ m/s}) </m>. Find its magnitude and direction. 
+				Assume positive <m> x</m> axis points East and positive <m> y </m> axis points Up.
+			</p>
+
+		</statement>
+		<hint> <p>  Use formulas for <m> (r, \theta)</m>  in terms of <m> (x,y) </m>.</p> </hint>
+		<answer> <p> <m> 50\text{ m/s}  </m>, <m> 53.1^{\circ}</m> South of West.  </p> </answer>
+		<solution> 
+			<p> The magnitude and angle of any vector are related to the components by the same formulas as <m> (r, \theta) </m> for position vector are to <m> (x,y) </m>. Therefore,
+				<md>
+					<mrow>\amp v = \sqrt{v_x^2 + v_y^2} = 50\text{ m/s},  </mrow>
+					<mrow>\amp \theta = \tan^{-1}\left(\dfrac{v_y}{v_x} \right) = 53.1^{\circ}.</mrow>
+				</md>
+			</p>
+			<sidebyside widths="40% 10% 40% 10%">
+				<p>
+					We now need to <alert> interpret </alert> this angle to get the direction. The point <m> (-30, -40) </m> is in the third quadrant, therefore, the direction is counterclockwise from the negative <m> x </m> axis. This gives the directioj to be <m> 53.1^{\circ}</m> South of West. as shown in <xref ref="fig-velocity_in_third_quadrant"/>.
+
+				</p>
+				<p></p>
+				<figure xml:id="fig-velocity_in_third_quadrant">
+					<caption></caption>
+					<image source="./images/two-dim-motion/velocity_in_third_quadrant.png" width="90%" />
+				</figure>
+				<p></p>
+			</sidebyside>
+		</solution>
+	</exercise>
+
+
+
+
+	<exercise xml:id="Drawing-Velocity-Vectors-in-a-Circular-Motion"><title> Drawing Velocity Vectors in a Circular Motion </title>
+		<statement>
+			<p>
+				Consider a child going in a circular path in a merry-go-round at a constant speed of <m> 5 \text{ m/s}</m>. Draw a circle and show velocity vectors at four different points of the circle.
+			</p>
+
+		</statement>
+		<hint> <p>  Direction is tangent to the circle. </p> </hint>
+		<answer> <p> see solution  </p> </answer>
+		<solution> 
+			<p> At each point, the velocity is tangent to the trajectory as shown in <xref ref="fig-checkpoint-velocity-in-a-circle" />.</p>
+			
+			<figure xml:id="fig-checkpoint-velocity-in-a-circle">
+				<caption>
+					Figure for <xref ref="Drawing-Velocity-Vectors-in-a-Circular-Motion" />.
+				</caption>
+				<image source="./images/two-dim-motion/checkpoint-velocity-in-a-circle.png" width="60%"/>
+			</figure>
+				
+			 
+		</solution>
+	</exercise>
+
+
+
+
+	<exercise xml:id="Velocity-from-Position"> <title> (Calculus) Velocity from Position </title> 
+		<statement>
+			<p> 
+				The position of a pendulum bob is given by <m> \vec r = 5 \cos(t)\, \hat i + 5\sin(t)\, \hat j</m> in units of m with units of  second for <m>t </m>. Find the velocity of the bob at <m> t = 2 \text{ s}</m>.
+			</p>
+		</statement>
+		<hint> <p> Take derivatives and evaluate at <m> t=2 \text{ s}</m>. </p> </hint>
+		<answer> <p> <m> v_x = -4.55 \text{ m/s, } v_y = -2.08 \text{ m/s}.</m> or <m>5.0\text{ m/s},\ 24^{\circ}</m> counterclockwise from the negative <m> x </m> axis. </p> </answer>
+		<solution>
+			<p>
+				Note that the position vector has given us the <m> x(t) </m> and <m> y(t) </m>, the coordinates of the pendulum bob as functions of time <m> t </m>. From these we can immediately obtain the <m> v_x </m> amnd <m> v_y </m>, the components of the velocity vector.
+			</p>
+			<p>
+				<md>
+					<mrow> \amp v_x = \dfrac{dx}{dt} = \dfrac{d}{dt}\left( 5\, \cos\,t\right) = -5\,\sin\,t</mrow>
+					<mrow> \amp v_y = \dfrac{dy}{dt} = \dfrac{d}{dt}\left( 5\, \sin\,t\right) = 5\, \cos\,t</mrow>
+				</md>
+			</p>
+			<p>
+				Evaluating these for <m> t = 2 </m> gives the following once we put the units back in.
+				<me>
+					v_x = -4.55 \text{ m/s, } v_y = -2.08 \text{ m/s}.
+				</me>
+				From this we get the magnitude of velocity to be <m> 5.0\text{ m/s}</m> and angle with the <m> x </m> axis to be
+				<me>
+					\theta = \tan^{-1}\left( 2.08/4.55\right)= 24^{\circ}.
+ 				</me>
+ 				Since the point <m> (-4.55, -2.08) </m> is in the third quadrant, the direction of the velocity is <m> 24^{\circ} </m> counterclockwise from the negative <m> x </m> axis.
+			</p>
+		</solution>
+	</exercise>
+
+	</exercises>
+
+</section>

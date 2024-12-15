@@ -1,0 +1,89 @@
+<section xml:id="sec-Light-as-Electromagnetic-Waves"><title>Light as Electromagnetic Waves</title>
+	<introduction>
+		<p>
+			Young's double-slit experiment demonstrates that light is a wave since light forms interference expected from waves. That light is a wave consisting of intertwined electric and magnetic waves was shown mathematically by James Clerk Maxwell. To arrive at this conclusion Maxwell  considered a region of space that has no currents or charges, so-called empty space or vacuum and sought the solution of his equations. This gives the following set of equations for <m>\vec E</m> and <m>\vec B</m>.
+			<mdn>
+				<mrow xml:id="eq-max-empty-1-1"> \amp  \vec{\nabla}\cdot \vec E = 0</mrow>
+				<mrow xml:id="eq-max-empty-2-1"> \amp  \vec{\nabla}\cdot \vec B = 0</mrow>
+				<mrow xml:id="eq-max-empty-3-1"> \amp  \vec{\nabla}\times \vec E = -\frac{\partial \vec B}{\partial t}</mrow>
+				<mrow xml:id="eq-max-empty-4-1"> \amp  \vec{\nabla}\times \vec B =\mu_0\epsilon_0 \frac{\partial \vec E}{\partial t}</mrow>
+			</mdn>
+			Is there a way to know the characteristics of the electric and magnetic fields that satisfy these equations?  It turns out that taking the curl of Eq. <xref ref="eq-max-empty-3-1"/> and using Eq. <xref ref="eq-max-empty-1-1"/> and <xref ref="eq-max-empty-4-1"/> shows that the electric field obeys the wave equation.
+			<men xml:id="eq-max-empty-e-field-wave">
+				\nabla^2\vec E = \frac{1}{\epsilon_0\mu_0}\: \frac{\partial^2\vec E}{\partial t^2}.
+			</men>
+			Similarly the curl of <xref ref="eq-max-empty-4-1"/>  gives the result that magnetic field also obeys the same wave equation.
+			<men xml:id="eq-max-empty-b-field-wave">
+				\nabla^2\vec B = \frac{1}{\epsilon_0\mu_0}\: \frac{\partial^2\vec B}{\partial t^2}.
+			</men>
+			These equations have solutions of the form <m>\vec F = \vec F_0 \cos( \vec k \cdot r - \omega t + \delta)</m>, which shows that vacuum has electric and magnetic field waves with speed
+			<me>
+				v = \frac{\omega}{|\vec k|} = \frac{1}{\sqrt{\epsilon_0\mu_0}}.
+			</me>
+			When you plug in the experimental values of <m>\epsilon_0 = 8.85\times 10^{-12}\:\textrm{C}^2/\textrm{N.m}^2</m> and <m>\mu = 4\pi\times10^{-7}\:\textrm{T.m/A}</m> you find the value of speed to be <m>3\times 10^{8}\text{ m/s}</m>, same as the speed of light <m>c</m>.
+			<men>
+				v = 3 \times 10^8 \text{ m/s}.
+			</men>
+			Maxwell found this speed to be too close to the speed of light to be a simply a coincidence. He then claimed that light itself was these waves and proposed that speed of light <m>c</m> in vacuum was related to electric susceptibility and magnetic permeability  of vacuum.
+			<men>
+				c = \frac{1}{\sqrt{\epsilon_0\mu_0}}.
+			</men>
+ 			
+		</p>
+
+	</introduction>
+
+
+	<subsection><title>Hertz's Experiment</title>
+		<p>
+			After Maxwell predicted the existence of the electromagnetic waves in 1873, many scientists tried to produce them in the laboratory.  The first person to succeed was the German physicist <term> Heinrich Hertz</term> who produced and detected radio waves in 1888.  Hertz's equipment consisted of a radiator and a detector/receiver, a replica of which is shown in <xref ref="fig-hertz-expt-1"/>. 
+		</p>
+		<figure xml:id="fig-hertz-expt-1">
+			<caption>
+				A replica of Heinrich Hertz'e apparatus for production and detection of radio waves. Photo courtesy of http://www.sparkmuseum.com/HERTZ.HTM.
+			</caption>
+			<image source="./images/modern-physics/hertz-expt.png" width="80%"/>
+		</figure> 
+
+		<p>
+			The radiator was a pair of one-meter rods with a spark gap in the center and two large spheres at the other ends of the wires to adjust the capacitance for resonance condition.  The rods were connected to an induction coil that supplied a high voltage.  The receiver was simply a loop of wire with a small gap.  When the rods of the radiator setup were given strong enough voltage, a spark was generated across the gap  and the current would oscillate back and forth across the gap and along the rods.
+		</p>
+		<p>
+			The receiver consisted of a loop of wire with a tiny gap.  When an electromagnetic waves passes through the area of the loop, the magnetic field in the electromagnet wave would cause the magnetic flux to change which would result in an induced EMF in the wire.  The induced EMF caused a spark across the tiny gap in the ring.
+		</p>
+		<p>
+			Hertz conducted many experiments measuring the wavelength and speed of these waves and showed that they travel at the predicted speed of light.  He also showed that the radio waves  refracted and reflected similar to light thus lending a strong support to Maxwell's assertion that the light was an electromagnetic wave.  When his students asked what use can be made of this discovery, he apparently replied, ``It's of no use whatsoever.  This is just an experiment that proves Maestro Maxwell was right - we just have these mysterious electromagnetic waves that we cannot see with the naked eye.  But they are there.''  But, here we are today about 100 years later with our cell phones and WiFi none of which would be possible without Hertz's discoveries. To honor Hertz the unit of frequency Hertz (Hz) is named after Heinrich Hertz.  One Hertz equals one cycle per second. 
+
+		</p>
+	</subsection>
+
+	<subsection><title>Electromagnetic Spectrum</title>
+		<p>
+			A wide range of electromagnetic waves have been either found in nature or produced in the laboratory.  The collection of all EM waves is called the electromagnetic spectrum.  They are usually categorized in various sub-ranges or bands as shown in <xref ref="fig-em-spectrum-1"/>.  Note the all important visible light occupies a minuscule band compared to the available EM spectrum.
+		</p>
+		<figure xml:id="fig-em-spectrum-1">
+			<caption>
+				The electromagnetic spectrum.  The names of the bands and corresponding frequencies are given below the double line.  Above the band some representative wavelengths in vacuum are given.  Note that the boundaries between different bands are arbitrary.
+			</caption>
+			<image source="./images/modern-physics/em-spectrum.png" width="100%"/>
+		</figure> 			
+
+ 
+		<p>
+			The frequency of an electromagnetic wave is same as the frequency of vibrating charges that produce it.  Hertz's waves had a frequency of about <m>10^6</m> cycles per second.  These waves are now called radio waves.  The visible light is also an electromagnetic wave but with considerably higher frequency than the radio waves.  Visible light have frequency approximately between <m>4 \times 10^{14}\text{ Hz}</m> (red) and  <m>7.5 \times 10^{14} \text{ Hz}</m> (violet) compared to the radio waves that have frequency less than <m>10^8</m> Hz.
+		</p>
+		<p>
+			The electromagnetic waves of frequency as high as  <m>10^{10}\text{ Hz}</m> are usually produced in the laboratory using a similar setup used by Hertz.  It consists of an antenna upon which an oscillating voltage is applied which radiates electromagnetic waves.  The EM waves of higher frequencies are not produced in the laboratory  by this method.  You can see from the fundamental wave relation that a higher frequency would correspond to a lower wavelength. To produce a visible light of frequency <m>4 \times 10^{14} \text{ Hz}</m>, you would need  an antenna less than one micrometer in length and a circuitry that can oscillate at <m>4 \times 10^{14}\text{ Hz}</m>, both of which are not currently available. 
+		</p>
+	</subsection>
+
+
+
+
+
+
+
+
+
+
+</section>

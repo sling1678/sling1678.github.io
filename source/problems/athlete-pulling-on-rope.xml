@@ -1,0 +1,60 @@
+	<problem><title> An Athlete Pulling on A Rope - Balancing Forces to Find Minimum <m> \mu_s</m>.</title>
+		<statement>
+			<sidebyside widths="50% 40%">
+				<p>
+					<p>
+						A <m>100\text{-kg}</m> athlete pulls a rope attached to a strong  pole at an angle of <m>15^{\circ}</m> from horizontal such that the tension in the rope devlops to <m> 800\text{ N}</m>.   
+					</p>
+					<p>(a) 
+						Find nomal and frictional forces on the athlete by the floor.
+					</p>
+					<p>(b) 
+						What must be minimum value of the coefficient of ststic friction betweeen the sole of the shoes of the athlete and the floor so that the athlete does not slip on the floor while he is pulling on the rope?
+					</p>
+				</p>
+				<image source="./images/forces/bc-athlete-pulling-on-rope-question.png" width="70%"/>	
+			</sidebyside>
+
+		</statement>
+		<hint> <p>  Draw a Free-Body Diagram of the athlete. </p> </hint>
+		<answer> <p>  (a) Friction = <m>773\text{ N}</m>, Normal = <m>461\text{ N}</m>. (b) <m>1.68 </m>.. </p> </answer>
+		<solution> 
+			<p> (a)
+				We start by identifying forces on the block, where I have used symbols for the forces: <m> W </m> for weight, <m> T </m> for weight, <m> N_L </m> for the normal on the left foot, <m> N_R </m> for the normal on the right foot, <m> S_L </m> for the static friction on the left foot, and <m> S_R </m> for the static friction on the right foot.
+			</p> 
+
+			<image source="./images/forces/bc-athlete-pulling-on-rope-forces.png" width="80%"/>	
+			<p>
+				In the translational motion, we can combine the normal forces into one and call that <m> N=N_L+N_R</m>, and similary for the static friction, <m> S=S_L+S_R</m>. We will have to keep they separate when we look at rotation.
+			</p>
+			<p>
+				Since acceleration of the block is zero, the forces are balanced. Since only <m> T </m> is not along one of the axes, we will need to work out its components. Let <m> \theta = 15^{\circ}</m>.
+				<me>
+					T_x = T\,\cos\,\theta,\ \ T_y = T\,\sin\,\theta.
+				</me>
+				Now, we can write the equations of motion along the two axes.
+ 			
+				<md>
+					<mrow>  T\,\cos\,\theta - S = 0,  </mrow>
+					<mrow>   T\,\sin\,\theta + N - W = 0,  </mrow>
+				</md>
+				Here, the values of <m> T </m>, <m>\theta</m>, and <m> W=mg</m>, are known. Therefore, we solve the first equation to get <m> S </m>, and the second one for <m> N </m>.  
+
+				<md>
+					<mrow>  S = T\,\cos\,\theta = 800 \times \cos\,15^{\circ} = 773\text{ N},  </mrow>
+					<mrow>  N = W - T\,\sin\,\theta  = 100\times 9.81 - 800 \times \sin\,15^{\circ} = 461\text{ N}.</mrow>
+				</md>
+			</p>
+			<p> (b)The definition of <m> \mu_s </m> requires the maximum static friction.
+
+				<me> 
+					\mu_s = \dfrac{S^{\text{max}}}{N}.
+				</me>
+				From the problem description, we need the minimum <m> \mu_s </m>. That means, if we assume the <m> S </m> we found was the <m> S^{\text{max}}</m>, then the <m> \mu_s </m> we will get will be the minimum required for the static condition to hold.
+				<me> 
+					\mu_s^{\text{min}} = \dfrac{S^{\text{found}}}{N} = \dfrac{773}{461} = 1.68.
+				</me>
+			</p>
+
+		</solution>
+	</problem>

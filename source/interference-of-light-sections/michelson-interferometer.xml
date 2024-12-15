@@ -1,0 +1,129 @@
+<section xml:id="section-michelson-interferometer"><title>Michelson Interferometer</title>
+	<introduction>
+		<p>
+			In a Michelson interferometer shown in <xref ref="fig-michelson-interferometer-drawing"/>, light from an extended source first splits into two beams by a half-silvered beam splitter at 45-degrees to the ray.  The two resulting waves travel perpendicularly to each other, and reflect off mirrors <m>\text{M}_1</m> and <m>\text{M}_2</m>. The reflected rays recombine resulting in interference which can be either viewed by naked eye or by projecting it on a screen with the use of a convergin lens.
+
+		</p>
+
+		<figure xml:id="fig-michelson-interferometer-drawing">
+			<caption>
+				Michelson's interferometer.
+			</caption>
+			<image source="./images/interference-of-light/michelson-interferometer-drawing.png" width="80%"/>
+		</figure> 
+
+		<p>
+			To compare the phases of the rays in the two arms we start from a point, say <m>\text{O}^\prime</m>, when the two were together and go to a point, say <m>\text{E}</m>, when they come together again. Therefore we will calculate the phase difference between the optical histories, i.e., reflections, wavelengths, and path lengths, of <m>\text{O}^\prime\text{OBCM}_1\text{CBOE}</m> <m>\equiv</m> <m>\text{OM}_1\text{E}</m> and <m>\text{O}^\prime\text{OAM}_2\text{AOE}</m> <m>\equiv</m> <m>\text{OM}_2\text{E}</m>. We will combine the path length and refractive index to write optical path length. For instance if a wave travels a distance <m>l</m> in a medium of refractive index <m>n</m>, then it has traveled an optical path length (<m>\text{OPL}</m>) given by
+			<me>
+				\text{OPL} = nl.
+			</me>
+			The phase flip will be included in <m>\text{OPL}</m> by adding half a wavelength.
+			<me>
+				\text{OPL}_\text{phase flip} = \frac{\lambda}{2}.
+			</me>
+		</p>
+		<p>
+			The optical path lengths <m>\text{O}^\prime\text{O}</m> is common to the two paths. The compensator is inserted in the path of the ray <m>\text{OM}_1\text{O}</m> so that the optical path lengths(OPL) for   <m>\text{BC} + \text{CB}</m> for the path on arm 1 is equal to the OPL for <m>\text{OA} + \text{AO}</m> for the path on arm 2.  Therefore, the net optical path length difference between the two arms comes from the distances to the mirrors and the phase shift when  reflecting off of a higher refractive index material. 
+		</p>
+
+		<p>
+			The ray <m>\text{O}^\prime\text{M}_2\text{E}</m> has one reflection at <m>\text{M}_2</m> that changes phase by <m>\pi</m>  radians, while ray <m>\text{O}^\prime\text{M}_1\text{E}</m> has two such reflections, one at <m>\text{M}_1</m> and the other at <m>\text{O}</m>.  Therefore, the condition of destructive interference will result if the phase difference is an integer multiple of <m>2\pi</m>, namely, <m>0</m>,  <m>2\pi</m>,   <m>4\pi</m>, etc, because the difference in phase flip due to reflections make the  phases of the waves in the two arms off by <m>\pi</m>  radians already.
+			<md>
+				<mrow>  \amp  2\times\left|\text{OB}+ \text{CM}_1 - \text{AM}_2 \right| \times \frac{2\pi}{\lambda_0} </mrow>
+				<mrow> \ \ \ \ \ \ \ \ \  \ \amp  = m'\times 2\pi,\ \ m'=0,\ 1,\ 2,\ \cdots\ \ (\text{Destructive}).</mrow>
+			</md>
+			where  <m>\lambda_0</m> is the wavelength in air. Simplifying this equation, we find the following.
+			<me>
+			 \left|\text{OB} + \text{CM}_1 - \text{AM}_2 \right|  = m'  \frac{\lambda_0}{2},\ \ m'=0,\ 1,\ 2,\ \cdots\ \ (\text{Destructive}).
+			</me>
+			But, this only gives the condition for a ray coming horizontally from the source.  How do we find the interference conditions for rays at other angles?  To address this question, notice that when you look at the incoming rays from the beam splitter, you are seeing reflections of  the source in mirrors <m>\text{M}_1</m> and <m>\text{M}_2</m>.  We can redraw a conceptual diagram of the Michelson's interferometer, where we display the image of the source in the mirrors, and how light from one point on the source must reflect to reach the back of the eye after converging from the eye lens as shown in <xref ref="fig-michelson-interferometer-effective-geometry"/>.			
+		</p>
+		<figure xml:id="fig-michelson-interferometer-effective-geometry">
+			<caption>
+				Effective geometry of interference of waves in a Michelson's interferometer.
+			</caption>
+			<image source="./images/interference-of-light/michelson-interferometer-effective-geometry.png" width="80%"/>
+		</figure> 
+		<p>
+			In the figure, plane <m>\text{Q}_1</m> is the image of plane P in mirror <m>\text{M}_1</m> and plane <m>\text{Q}_2</m> is the image in mirror <m>\text{M}_2</m>.  Points <m>\text{Q}_1</m> and <m>\text{Q}_2</m> are image of point P. To the eye, rays appear to come from the points <m>\text{Q}_1</m> and <m>\text{Q}_2</m>.  The interference of rays from <m>\text{Q}_1</m> and <m>\text{Q}_2</m> is observed by the eye.  Rays from all points P on the circle about the symmetry axis shown in the figure will meet on a circle that has point Q.  Rays inclined at the same angle   will either interfere constructively or destructively depending upon the difference in path which is <m>\text{AQ}_2</m>.  We have already discussed above the effects of reflection in the two rays.  If the distance <m>\text{AQ}_2</m>is an integral multiple of  <m>\lambda_0/2</m>, then we would have a destructive interference.
+			<me>
+				\left|\text{AQ}_2 \right| = m' \frac{\lambda_0}{2},\ \ \ m'=0,\ 1,\ 2,\ \cdots\ \ (\text{Destructive}).
+			</me>
+			If the distance between the mirrors is <m>d</m>, and the angle the rays make is  <m>\theta</m>, then the condition for destructive interference is as follows.
+			<men xml:id="eq-michelson-1">
+				2d\cos\theta = m' \frac{\lambda_0}{2},\ \ \ m'=0,\ 1,\ 2,\ \cdots\ \ (\text{Destructive}). \label{}
+			</men>
+			This equation gives us the condition for destructive interference at points of a circle on the retina or screen that contains point Q.  Since, the view of an observer is limited, one can only see circles made on the retina by rays that are inclined up to a maximum angle. Various <m>m</m> values in Eq. <xref ref="eq-michelson-1"/>  refer to the corresponding angles of inclination for dark circles.  Thus <m>m = 0</m> interference is at the center. This is followed by a bright circle. The <m>m=1</m> destructive interference happens at the following angle of inclination.
+			<me>
+				m = 1:\ \ \ \cos\theta =  \frac{\lambda_0}{4d}.
+			</me>
+			Suppose you start with the distance to the mirror <m>\text{M}_2</m> greater than to <m>\text{M}_1</m> by some distance <m>d</m>, and move mirror <m>\text{M}_2</m> so that $d$ decreases.  That will cause <m>\cos \theta</m>  to increase, which will imply that the condition for darkness is closer to the horizontal direction than before.  This makes <m>m = 1</m> circle on the screen smaller.  As <m>d</m> gets smaller the circle for <m>m = 1</m> also gets smaller, and when you have moved by  a distance equal to  <m>\lambda_0/2</m>, the <m>m = 1</m> circle disappears.  All other fringes move correspondingly.  The circle in space which used to be occupied by <m>m = 1</m>,   is now occupied by <m>m = 2</m>, and the circle originally occupied by <m>m = 2</m> will now be occupied by <m>m = 3</m>, and so on.  Hence, if you focus on a particular place on the screen, a change in <m>d</m> can be found by observing the number of fringes that pass, and multiplying that number by half the wavelength.
+			<me>
+				\Delta d = N \frac{\lambda_0}{2}
+			</me>
+			This equation is often used for making precise measurements of  sub-micrometer distances from a known source of light and counting number of fringes that pass the detector. 
+
+		</p>
+ 
+
+
+	</introduction>
+
+	<exercise xml:id="exercise-precise-distance-measurement-by-Michelson-interferometer"><title>Precise Distance Measurement by Michelson Interferometer</title>
+
+		<statement>
+			<p>
+				A red laser light of wavelength <m>0.630\,\mu\text{m}</m> is used in a Michelson interferometer.  While keeping the mirror <m>\text{M}_1</m> fixed, as mirror <m>\text{M}_2</m> is moved. The  fringes are found to move past a fixed hair cross in the viewer.  Find the distance mirror <m>\text{M}_2</m>  is moved for a single fringe to move past the reference line.
+			</p>
+		</statement>
+		<hint><p>Use <m>\lambda/2</m> for each fringe.</p></hint>
+		<answer><p> <m>0.315\, \mu\textrm{m}</m>. </p></answer>
+		<solution>
+			<p>
+				We use the result of the Michelson interferometer interference condition.  For a 630 nm red laser light, then for each fringe crossing (<m>N = 1</m>), the distance traveled by <m>\text{M}_2</m> if you keep <m>\text{M}_1</m>  fixed will be:
+				<me>
+					\Delta d = 1\times \frac{0.630\,\mu\text{m}}{2} = 0.315\, \mu\textrm{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="exercise-Movement-of-Fringes-in-a-Michelsons-Interferometer"><title>Movement of Fringes in a Michelson's Interferometer with Moving Mirror</title>
+
+		<statement>
+			<p>
+				A Michelson's interferometer has two equal arms.  A mercury light of wavelength <m>546\text{ nm}</m> is used for the interferometer and stable fringes are found.  One of the arms is moved by <m>1.5\:\mu\text{m}</m>.  How many fringes will cross the observing field?
+
+			</p>
+		</statement>
+		<hint><p>In Michelson's, a movement of <m>\frac{\lambda}{2}</m> of one of the mirrors leads to one fringe moving over. </p></hint>
+		<answer><p><m>5</m>.</p></answer>
+		<solution>
+			<p>
+				With a movement of <m>\frac{\lambda}{2}</m> of one of the mirrors leads to one fringe moving across the field of view. Therefore, the number of fringes moving across the field of view will be  <m>N = 1.5\:\mu\textrm{m}/(546\:\textrm{nm}/2) = 5</m>, where the answer was rounded down.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

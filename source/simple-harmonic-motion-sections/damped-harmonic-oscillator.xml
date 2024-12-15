@@ -1,0 +1,318 @@
+<section xml:id="Damped-Harmonic-Oscillator"><title> Damped Harmonic Oscillator</title>
+	
+	<introduction>
+
+		<p>
+			Any frictional force will damp the motion, but viscous drag is a particularly easier damping force to work with analytically. 
+			<men xml:id="eq-damped-oscillator-damping-force">
+				\vec F_{visc} = -b\ \vec v\ \ \ (b \ge 0), 
+			</men>
+			where <m>b</m> is the proportionality constant that depends on the viscosity of the medium and the geometry of the moving object. We have a minus sign in  Eq. <xref ref="eq-damped-oscillator-damping-force"/> since drag opposes velocity.
+		</p>
+		<p>
+			Viscous forces of this type act on objects moving in a fluid, such as air, water, oil, etc., if their speeds are not too great. A viscous damping can also be implemented by pushing and pulling a plunger into a gas cylinder as shown in  <xref ref="fig-sho-damping-mechanisms"/>(b). an arrangement called a dashpot. 
+		</p>
+		<figure xml:id="fig-sho-damping-mechanisms">
+			<caption>
+				Two mechanisms by which we can introduce linear damping force in Eq. <xref ref="eq-damped-oscillator-damping-force" />. (a) Damping by drag from fluid, such as a liquid or gas, (b) Damping from a dashpot attached to the moving body, where the plunger pushes and pulls on a gas in the cylinder.
+			</caption>
+			<image source="./images/simple-harmonic-motion/sho-damping-mechanisms.png" width="40%"/>
+		</figure>
+	</introduction>
+
+	<subsection><title> Equation of Motion </title>
+		<p>
+			We place <m> x </m> along the spring with positive <m> x </m> axis in the direction in which spring stretches and origin at the position of the block when in equilibrium. With these choices, the <m> x</m> component of the net force from the two forces on the damped block will be
+			<men>
+				F_x = - k x - b v_x.
+			</men>
+			Therefore, equation of motion of a damped block is
+			<men xml:id="eq-damped-oscillator-eq-of-motion">
+				m a_x = - k x - b v_x.
+			</men> 
+			Solving this as a differential equation gives us all possible motions of a damped harmonic oscillator.
+		</p>
+	</subsection>
+
+	<subsection><title> Three Types of Damped Oscillators </title>
+		<p>
+			Solutions of Eq.  <xref ref="eq-damped-oscillator-eq-of-motion" /> tell us about  <m> x </m> at an arbitrary instant <m> t</m>, possibly in terms of given <m>x_0</m> and <m> v_0 </m>, the position and velocity at initial instant <m> t=0</m>.  Once again, this can be done by treating Eq. <xref ref="eq-damped-oscillator-eq-of-motion" /> as differential equation. We will just borrow the solution found by advanced mathematics. 
+		</p>
+		<p>
+			There are three types of solutions, depending upon the values of the parameters <m> m</m>, <m> k</m>, and <m> b</m>. Actually, only two effective parameters are needed. These are
+			<mdn>
+				<mrow> \amp \text{Free angular frequency, } \omega = \sqrt{\dfrac{k}{m}},</mrow>
+				<mrow> \amp \text{Damping constant, } \gamma = \dfrac{b}{m}.</mrow>
+			</mdn>
+			Sometimes, formulas are written using another damping constant, <m> \beta </m>, instead of <m> \gamma</m>. For consistency of our treatment here, we will use <m> \gamma</m> in our formulas.
+			<men>
+				\beta = \dfrac{\gamma}{2} \equiv \dfrac{b}{2m}.
+			</men>
+			
+		</p>
+
+		<p>
+			Depending on the relative values of <m> \omega </m> and <m> \gamma</m>, we get either an oscillating behavior or some other motion. The solutions tell us that there are three types of motion possible.
+			<mdn>
+				<mrow> \amp \text{Underdamped Oscillations: }\ \ \  \omega \gt \frac{\gamma}{2},</mrow>
+				<mrow> \amp \text{Overdamped Motion: }\ \ \  \omega \lt \frac{\gamma}{2},</mrow>
+				<mrow> \amp \text{Critically Damped Motion: }\ \ \  \omega = \frac{\gamma}{2}.</mrow>
+			</mdn>			
+		</p> 
+	</subsection>
+
+	<subsection><title> Underdamped Oscillator Solution</title>
+ 
+		<p>
+			The underdamped solution can be written in many forms, but the following form is very useful in further understanding of what happens to the block as time passes.
+			<men xml:id="eq-underdamped-oscillator-solution-A-exp-cos">
+				x(t) = A\,e^{-\gamma t/2}\, \cos( \omega^{\prime} t + \phi  ),
+			</men>
+			where <m>\omega^{\prime} </m> is the oscilaltion angular frequency of the underdamped oscillator, given by
+			<men>
+				\omega^{\prime} = \sqrt{ \omega^2 - \gamma^2/4 },
+			</men>
+			which shows that the underdamped oscillator oscillates at another frequency than the <term> natural frequency</term>, <m> \omega</m>, which was the frequency at which the non-damped oscillator oscillated.
+			The constants <m> A </m> and <m> \phi </m> are related to the initial <m>x_0</m> and <m> v_0 </m>. They are very complicated and not very illuminating. Here, I will just list the equations from which you can deduce <m>  A </m> and <m> \phi</m>.
+			<mdn>
+				<mrow> \amp A\cos\,\phi = x_0,</mrow>
+				<mrow> \amp A\sin\,\phi = -\dfrac{v_0}{\omega^{\prime}} - \dfrac{\gamma}{2\omega^{\prime}}\,x_0. </mrow>
+			</mdn>
+			<xref ref="fig-underdamped-oscillator-x-vs-t" /> shows a plot of <m> x </m> versus <m> t</m> for an underdamped oscillator.	Clearly, an underdamped oscillator oscillates with decreasing amplitude.
+		</p>
+		<figure xml:id="fig-underdamped-oscillator-x-vs-t">
+			<caption>
+				A plot of position versus time for an underdamped oscillator. The oscillator oscillates with decreasing amplitude in each cycle. The peaks and troughs of the cycles fall on exponential envelops, ash shown by dashed lines above and below, due to the exponential multiplicative factor <m> \exp(-\gamma t /2) </m> in the solution. Following values wer used to generate the plot: <m> x_0=1</m>, <m> v_0=0</m>, <m> m=1</m>, <m> k=1</m>, <m> b = 0.05</m>.
+			</caption>
+			<image source="./images/simple-harmonic-motion/under-damped-oscillator.png" width="70%"/>
+		</figure>
+	</subsection>
+
+	<subsection><title> Overdamped Solution</title>
+		<p>
+			The overdamped solution shows only the exponential damping and no oscillations as illustrated in <xref ref="fig-overdamped-oscillator-x-vs-t"/>. The solution consists of two terms that decay at different rates.  
+			<men xml:id="eq-overdamped-oscillator-solution-A-exp-B-exp">
+				x(t) = A\,e^{-a\, t}  + B\,e^{-b\, t},
+			</men>
+			where, <m> a </m> and <m> b</m> are 
+			<mdn>
+				<mrow> \amp a = \dfrac{\gamma}{2} - \omega^{\prime\prime} , </mrow>
+				<mrow> \amp b =  \dfrac{\gamma}{2} + \omega^{\prime\prime}, </mrow>
+			</mdn>
+			where
+			<me>
+				\omega^{\prime\prime} = \sqrt{ \left( \frac{\gamma}{2} \right)^2 - \omega^2 }.
+			</me>
+			Since <m> \dfrac{\gamma}{2} \gt \omega \gt \omega^{\prime\prime} </m> for overdamping,  both <m> a </m> and <m> b</m> are positive numbers.  
+		</p>
+
+		<figure xml:id="fig-overdamped-oscillator-x-vs-t">
+			<caption>
+				A plot of position versus time for an overdamped oscillator. There are no cycles of oscillation in an overdamped oscillator. Following values wer used to generate the plot: <m> x_0=1</m>, <m> v_0=0</m>, <m> m=1</m>, <m> k=1</m>, <m> b = 4.0</m>.  
+			</caption>
+			<image source="./images/simple-harmonic-motion/overdamped-oscillator.png" width="70%"/>
+		</figure>
+	</subsection>
+
+	<subsection><title> Critically Damped Solution</title>
+
+		<p>
+			The critically damped solution shows a combination of exponential damping and a linearly increasing solution that is also damped exponentially. That means there is no oscillation here either.
+			<men xml:id="eq-criticallydamped-oscillator-solution-A-exp-B-exp">
+				x(t) = A\,e^{-\gamma t / 2}  + B\, t\, e^{-\gamma t / 2}.
+			</men>
+			<xref ref="fig-damped-oscillators-x-vs-t"/> illustrates critically damped oscillator. Visually, critically damped and overdamped oscillators appear similar, but when you plot the overdamped and critically damped oscillators under same initial conditions,  as in  <xref ref="fig-damped-oscillators-x-vs-t"/>,  you would find that critically damped oscillator does a little better job of damping the motion. 
+		</p>
+
+
+		<figure xml:id="fig-criticallydamped-oscillator-x-vs-t">
+			<caption>
+				A plot of position versus time for an overdamped oscillator. There are no cycles of oscillation in an overdamped oscillator. Following values wer used to generate the plot: <m> x_0=1</m>, <m> v_0=0</m>, <m> m=1</m>, <m> k=1</m>, <m> b = 2.0</m>.  
+			</caption>
+			<image source="./images/simple-harmonic-motion/criticallydamped-oscillator.png" width="60%"/>
+		</figure>
+
+		<sidebyside widths="50% 10% 30% 10%">
+			<p>
+				A very important application of critically damped oscillation is in car shock absorbers. A shock absorber provides critical damping to the springs of the suspension system and damps a car's motion smoothly and rapidly. Without a shock absorber, a car ride would be very bumpy and dangerous. The picture to the right is a rear shock absorber and spring of a BMW R75/5 motorcycle, where the shock absorber is in the inside space of the spring (Photo credits: uploaded by Jeff Dean for Wikicommons.)
+			</p>
+			<p></p>
+	 		<image source="./images/simple-harmonic-motion/R75-rear-shock.png" width="70%"/>
+	 		<p></p>
+	 	</sidebyside>
+
+		<figure xml:id="fig-damped-oscillators-x-vs-t">	 
+				<caption>
+					A plot of position versus time for three damped oscillators with the same initial conditions, <m> x_0 = 1</m> and <m> v_0 = 1</m>. The oscillators have <m> m=1</m>, <m> k=1</m>, but <m> b</m> is chosen different for the three - for underdamped, <m> b = 0.5</m>, for critically damped, <m> b = 2 </m>, and for overdamped, <m> b = 4</m>. The critically damped oscillator is seen to damp the motion better than the others.
+				</caption>
+				<image source="./images/simple-harmonic-motion/damped-oscillators.png" width="60%"/>
+		</figure>
+	</subsection>
+
+	<exercise xml:id="ex-Deciding-Type-of-Damped-Harmonic-Oscillator"><title> Deciding Type of Damped Harmonic Oscillator </title>
+		<statement>
+			<p>
+				Decide what type of damping is in the following oscillators.
+			</p>
+			<md>
+				<mrow> \amp (a)\ \ m=0.2\text{ kg},\ k=10\text{ N/m},\ b=6\text{ kg/s}, </mrow>
+				<mrow> \amp (b)\ \ m=0.2\text{ kg},\ k=20\text{ N/m},\ b=8\text{ kg/s}, </mrow>
+				<mrow> \amp (c)\ \ m=0.8\text{ kg},\ k=32\text{ N/m},\ b=8\text{ kg/s}, </mrow>
+				<mrow> \amp (d)\ \ m=0.8\text{ kg},\ k=80\text{ N/m},\ b=16\text{ kg/s}, </mrow>
+			</md>
+
+		</statement>
+		<hint> <p>  (a)-(d) First work out the effective parameters <m> \omega</m> and <m>\gamma</m>. </p> </hint>
+		<answer> <p>  (a) Overdamped, (b) Overdamped, (c) Underdamped, (d) Critically damped.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p> 
+				(a)
+				Let us first find the two effective parameters.
+				<md>
+					<mrow> \omega \amp = \sqrt{\dfrac{k}{m}} = \sqrt{\dfrac{10}{0.2}} = 7.07\text{ sec}^{-1}. </mrow>
+					<mrow> \gamma \amp =  \dfrac{b}{m} =  \dfrac{6}{0.2} = 30\text{ sec}^{-1}. </mrow>
+				</md>
+				Since <m>\omega \lt \gamma/2</m>, the oscillator is overdamped.
+			</p>
+		</solution>
+
+		<solution> <title>(b)</title>
+			<p> 
+				(b)
+				Let us first find the two effective parameters.
+				<md>
+					<mrow> \omega \amp = \sqrt{\dfrac{k}{m}} = \sqrt{\dfrac{20}{0.2}} = 10.0\text{ sec}^{-1}. </mrow>
+					<mrow> \gamma \amp =  \dfrac{b}{m} =  \dfrac{8}{0.2} = 40\text{ sec}^{-1}. </mrow>
+				</md>
+				Since <m>\omega \lt \gamma/2</m>, the oscillator is overdamped.
+			</p>
+		</solution>
+
+		<solution> <title>(c)</title>
+			<p> 
+				(c)
+				Let us first find the two effective parameters.
+				<md>
+					<mrow> \omega \amp = \sqrt{\dfrac{k}{m}} = \sqrt{\dfrac{32}{0.8}} = 6.32\text{ sec}^{-1}. </mrow>
+					<mrow> \gamma \amp =  \dfrac{b}{m} =  \dfrac{8}{0.8} = 10\text{ sec}^{-1}. </mrow>
+				</md>
+				Since <m>\omega \gt \gamma/2</m>, the oscillator is underdamped.
+			</p>
+		</solution>
+
+		<solution> <title>(d)</title>
+			<p> 
+				(d)
+				Let us first find the two effective parameters.
+				<md>
+					<mrow> \omega \amp = \sqrt{\dfrac{k}{m}} = \sqrt{\dfrac{80}{0.8}} = 10.0\text{ sec}^{-1}. </mrow>
+					<mrow> \gamma \amp =  \dfrac{b}{m} =  \dfrac{16}{0.8} = 20\text{ sec}^{-1}. </mrow>
+				</md>
+				Since <m>\omega = \gamma/2</m>, the oscillator is critically damped.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Lightly-Damped-Oscillator-Solution-and-Envelop"><title>Lightly Damped Oscillator Solution and Envelop</title>
+		<statement>
+			<p>
+				The position of a 250-gram lightly damped oscillator  is given by the following function of time, <m>x(t) = 2\exp{(-0.01\,t)}\cos(4\pi t)</m>, where <m> t</m> is in seconds and <m> x</m> in meters. 
+			</p>
+			<p>
+				(a) What is the frequency of oscillations? 
+			</p>
+			<p>
+				(b) Plot <m>x</m> vs <m> t</m> for at least 4 cycles.
+			</p>
+			<p>
+				(c) How long does it take for the envelop of oscillations to drop by <m>\dfrac{1}{e}</m>?
+			</p>
+			<p>
+				(d) How long does it take the envelop to drop by a factor <m>\dfrac{1}{e^2}</m>?
+			</p>
+
+		</statement>
+		<hint> <p> (a) Look at the argument of the cosine. (b) plot <m>t=0 </m> to <m> t=2</m>. (c) Set <m> 0.01\, t = 1</m>. (d) Set <m> 0.01\, t = 2</m>.</p> </hint>
+		<answer> <p>(a) <m> 2\text{ Hz}</m>, (b) See solution, (c) <m>100\text{ sec}</m>, (d) <m>200\text{ sec}</m>.   </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) 
+				From the argument of the cosine we can find the period of oscillations. The inverse of this period is the frequency. The period of <m>\cos(4\pi t)</m> is <m>T= 0.5\text{ sec}</m>. Hence, the frequency of the underdamped oscillatory is
+				<me>
+					f = \dfrac{1}{T} = 2\text{ Hz}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b) 
+				Plot the given function for the range <m>t=[0,\ 2]</m>.
+			</p>
+		</solution>
+		<solution> <title>(c)</title>
+			<p>
+				(c) 
+				The envelop is dropping in time as <m>\exp{(-0.01\,t)}</m>. We need to find the value of <m>t</m> at which the value becomes <m>\exp{(-1)}</m>. This means
+				<me>
+					0.01\,t = 1\ \ \Longrightarrow\ \ t = 100\text{ sec}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(d)</title>
+			<p>
+				(d) 
+				The envelop is dropping in time as <m>\exp{(-0.01\,t)}</m>. We need to find the value of <m>t</m> at which the value becomes <m>\exp{(-2)}</m>. This means
+				<me>
+					0.01\,t = 2\ \ \Longrightarrow\ \ t = 200\text{ sec}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Displacement-of-a-Harmonic-Oscillator-Given-Initial-Displacement-and-Velocity"><title> Displacement of a Harmonic Oscillator Given Initial Displacement and Velocity </title>
+		<statement>
+			<p>
+				A block of mass <m>2\text{ kg}</m> is attached to a spring of spring constant <m> 32\text{ N/m}</m> is oscillating with damping constant <m>8\text{ kg/s}</m>. The block started at <m>x = 2\text{ cm}</m> from rest. Where is the block at an arbitrary instant <m>t</m>?
+			</p>
+
+		</statement>
+		<hint> <p> First find out what type of damping it is and then use the general solution for  <m>x</m> and <m>v</m> to fit the initial condition given.  </p> </hint>
+		<answer> <p> <m> 3.1\text{ cm}\,\exp(-4 t)\,\cos(\sqrt{12} t -0.86)</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We have three formulas for <m>x</m> to choose from, depending upon the type of damping. The effective parameters are
+				<md>
+					<mrow> \omega \amp =\sqrt{\dfrac{32}{2}} = 4\text{ sec}^{-1},</mrow>
+					<mrow> \gamma \amp = \dfrac{8}{2} = 4\text{ sec}^{-1}.</mrow>
+				</md>
+				Since <m>\omega \gt \gamma/2</m>, the damping is an underdamping with oscillation angular frequency
+				<me>
+					\omega^\prime = \sqrt{\omega^2 - \gamma^2/4  } = \sqrt{12}\text{ sec}^{-1},
+				</me>
+				and <m>x</m> and <m>v</m> as:
+				<md>
+					<mrow> x\amp = A\,\exp(-\gamma t)\,\cos(\omega^\prime t + \phi) </mrow>
+					<mrow> v\amp = -\gamma A\,\exp(-\gamma t)\,\cos(\omega^\prime t + \phi) -\omega^\prime A\,\exp(-\gamma t)\,\sin(\omega^\prime t + \phi) </mrow>
+				</md>
+				Now, we use the given initial conditions to get 
+				<md>
+					<mrow> 2\amp = A\, \cos\,\phi </mrow>
+					<mrow> 0\amp = -\gamma A\,\cos\,\phi -\omega^\prime A\,\sin\, \phi </mrow>
+				</md>
+				The second equation gives <m>\phi=-0.857\text{ rad}</m> which is used in the first to get <m>A=3.1\text{ cm}</m>.
+				<me>
+					A = 3.1\text{ cm},\ \ \ \phi=-0.857.
+				</me>
+				Therefore, we have the following <m>x</m> at arbitrary instant.
+				<md>
+					<mrow> x\amp = 3.1\text{ cm}\,\exp(-4 t)\,\cos(\sqrt{12} t -0.857), </mrow>
+				</md>
+				where <m>t</m> is in <m>\text{sec}</m>.								
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+</section>

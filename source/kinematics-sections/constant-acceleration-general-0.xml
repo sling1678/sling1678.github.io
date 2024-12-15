@@ -1,0 +1,312 @@
+<section> <title> Constant Acceleration</title>
+	<introduction>
+		<p>
+			Constant acceleration motions play an important role in physics. For instance, free flights of projectiles near the surface of the Earth (or any other planet), if we ignore air resistance, and boxes sliding on inclined planes are examples of constant acceleratiopn motion.
+		</p>
+		<p>
+			<alert> All constant acceleration motions can be studied by motion in an <m>xy</m>-plane if we choose the axes appropriately.</alert> It turns out that choosing axes is not that difficult since the motion will be restricted to the plane formed by the velocity vector and the acceleration vector. For instance, if your <m> v_z =0 </m> and <m> a_z = 0 </m>, then <m> v_z </m> will remain zero throughout.
+		</p>
+		<p>
+			To simplify algebra further, point either the <m>x</m> axis or the <m> y </m> axis  in the same direction as the direction of the acceleration vector. Even more simplification can occur if we choose the origin of the coordinate system to be the location of the object at the initial instant of interest. You will practice these simplifying techniques in the problems.
+		</p>
+	</introduction>
+	<subsection> <title> Equations of Constant Acceleration Motion - Derivation </title>
+		<p> <alert> Most of the derivations are simple algebra with one Calculus step. If you are not in a Calculus-based course, you can just use the result of the Calculus step as given.</alert>
+		</p>
+		<p>
+			Let <m> \vec a </m> be constant during in the interval <m> (t_i, t_f) </m> of interest. That is, both its magnitude and direction are fixed during <m> t=t_i</m> to  <m> t=t_f</m>. Let us choose <m>x</m> axis so that positive <m>x</m> axis is pointed in the same direction as the direction of the acceleration. 
+		</p>
+		<p> 
+			Let <m> \vec v_i </m> denote the (instantaneous) velocity at <m> t=t_i</m>. We now choose the <m> y </m> axis so that <m> \vec v_i </m> and <m> \vec a </m> are in the <m>xy</m>-plane. Then, the velocity component in <m> z </m> direction, viz. <m> v_z </m>, will stay zero and therefore, we can ignore <m> z </m> axis completely. 
+		</p>
+		<p>
+			Now, that we have choosen the direction of the Cartesian axes, we choose the location of the origin. We place the origin at the point where the object was at the initial instant <m> t = t_i </m>. This makes the initial position a zero vector. Restricting to <m> xy</m>-plane, it is <m> \vec r_i = (0, 0) </m>, meaning <m> x_i = 0,\ y_i = 0</m>. Of course <m> z_i = 0</m> also, but we are ignoring <m> z </m> axis completely, so it does not matter.
+		</p>
+		<p>
+			<figure xml:id="fig-choosing-xy-plane">
+				<caption> Choosing axes to simplify calculations for <alert> constant acceleration motion</alert>. (a) Here I have started with the choice of the <m> x </m> axis to be in the direction of the acceleration vector <m>\vec a </m>. Often when we set up the projectile motion near the Earth, we choose the <m> y </m> axis to be up while the acceleration vector is pointed down. (b) The plane formed by the initial velocity <m> \vec v_i </m> and the acceleration <m>\vec a </m> is taken to be the <m>xy</m>-plane. This helps set the other axis not fixed by the choice of axis from acceleration direction. (c) The origin is chosen to be where the object of interest is located at the initial instant, making <m> x_i = 0 </m> and <m> y_i = 0</m>.
+				</caption>
+				<image source="./images/two-dim-motion/choosing-xy-plane.png" width="80%"/>
+			</figure>
+		</p>
+		<p>
+			With these choices, we have simple component representations of acceleration, initial velocity, and initial position.
+			<mdn>
+				<mrow> \amp \vec a = (a, 0)</mrow>
+				<mrow> \amp \vec v_i = \left(v_{i,x}, v_{i,y}\right)</mrow>
+				<mrow> \amp \vec r_i = (0, 0)</mrow>
+			</mdn>
+		</p>
+		<p> The equations of constant acceleration give us the relation between the position and velocity at as arbitrary instant <m> t </m> to the initial position, initial velocity, and acceleration. 
+		</p>
+		<p> Let us denote the position and velocity at intant <m> t </m> which is some instant between <m> t_i </m> and <m> t_f </m> by 
+			<mdn>
+				<mrow> \amp \vec r = (x, y)  </mrow>
+				<mrow> \amp \vec v = (v_x, v_y)  </mrow>
+			</mdn>
+			From constant acceleration between <m>t_i</m> and <m>t</m> we can immediately write the change in velocity equation over the duration <m>t_i</m> to <m>t</m>. Formally,
+			<men>
+				\vec v - \vec v_i = \vec a\, \left( t - t_i \right), 
+			</men>
+			whose components are
+			<mdn>
+				<mrow> \amp v_x - v_{i,x} =  a_x \, \left( t - t_i \right)</mrow>
+				<mrow>  \amp  v_y - v_{i,y} = a_y \, \left( t - t_i \right)</mrow>
+			</mdn>
+			which simplify to
+			<mdn>
+				<mrow xml:id="eq-const-accl-vx"> \amp v_x - v_{i,x} =  a \, \left( t - t_i \right)</mrow>
+				<mrow xml:id="eq-const-accl-vy">  \amp  v_y - v_{i,y} = 0\ \ \rightarrow\ \ v_y = v_{i,y}.</mrow>
+			</mdn>
+			This clearly says that  the velocity component does not change in the axis direction (here <m> y</m> axis) in which acceleration is zero. The quantity <m> v_x </m> is changing with <m> t</m> since there is an acceleration along this axis. 
+		</p>
+		<p> <alert> Calculus Step:  </alert>
+			Now, integrating <m> v_x </m> and <m> v_y </m> from <m> t = t_i</m> to <m> t=t </m> we can find the changes in <m> x </m> and <m> y </m> during this time.
+			<mdn>
+				<mrow number="no"> x - x_i \amp = \int_{t_i}^{t} v_x\, dt </mrow>
+				<mrow number="no"> 	       \amp =  \int_{t_i}^{t} \left[v_{i,x} +  a \, \left( t - t_i \right) \right] dt </mrow>
+				<mrow> 	       \amp =  v_{i,x} \left( t- t_i \right) +  \dfrac{1}{2}\, a  \, \left( t - t_i \right)^2  </mrow>
+ 				<mrow number="no"> y - y_i \amp = \int_{t_i}^{t} v_y dt </mrow>
+ 				<mrow number="no"> 	       \amp =  \int_{t_i}^{t}  v_{i,y}  dt </mrow>
+ 				<mrow> 	       \amp =  v_{i,y} \left( t- t_i \right) </mrow>
+			</mdn>			
+		</p>
+
+		<p> <alert> Summary: </alert>
+			These equations become simpler if we enforce <m> x_i = y_i = 0 </m> from the choice of the origin and by choosing to call time for initial instant to be zero,  <m> t_i = 0</m>.  
+		</p>
+
+		<p><alert> Case: Acceleration pointed towards positive <m>x</m> axis. </alert> 
+			We now 	summarize the constant-acceleration equations written with respect to the coordinate system in which positive <m> x </m> axis in teh direction of the acceleration <m> \vec a </m>. 
+			<mdn>
+				<mrow> \amp x  =   v_{i,x} \, t +  \dfrac{1}{2}\, a  \ t^2  </mrow>
+ 				<mrow> \amp y =   v_{i,y} \, t </mrow>
+			</mdn>
+			Equations <xref ref="eq-const-accl-vx"/> and <xref ref="eq-const-accl-vy" /> also simplify to
+			<mdn>
+				<mrow> \amp v_x = v_{i,x} +  a \, t</mrow>
+				<mrow>  \amp  v_y = v_{i,y}</mrow>
+			</mdn>
+			These four equations form the basis for constant acceleration motion when positive <m> x </m> axis is pointed in the direction of acceleration vector.	
+		</p>
+		<p>
+			In problems, often we not need to figure out <m> t </m>. Therefore, it is helpful to obtain the following equations by eliminating <m> t </m> from them.
+			<men>				
+				v_x^2 = v_{i,x}^2 +  2\, a \, x.
+			</men>
+		</p>
+		<p>
+			<alert>Separate <m> x </m> and <m> y </m> Worlds. </alert>  Often we think of the constant-acceleration equations as two separate motions, one along each axis. If the acceleration is along the <m> x </m> axis, then the <m> y </m> motion is a constant velocity motion, and if the acceleration is along the <m> y </m> axis, then the <m> x </m> motion is a constant velocity motion.
+		</p>
+		<p>
+			When we think of constant acceleration motion as two separate motions along axes, we list these equaions a little differently. The following is a listing of equations when acceleration is pointed towards the positive <m> x </m> axis.
+		</p>
+		<p> 
+			<md>
+				<mrow number="No"> x\text{-motion:}\amp  </mrow>
+				<mrow> \amp x  =   v_{i,x} \, t +  \dfrac{1}{2}\, a  \ t^2</mrow>
+				<mrow> \amp v_x = v_{i,x} +  a \, t</mrow>
+				<mrow> \amp v_x^2 = v_{i,x}^2 +  2\, a \, x </mrow>
+				<mrow number="No"> y\text{-motion:}\amp  </mrow>
+				<mrow> \amp y =   v_{i,y} \, t </mrow>
+				<mrow>  \amp  v_y = v_{i,y}</mrow>
+			</md>
+		</p>
+		<p>
+			<alert> Case: Acceleration pointed towards positive <m>y</m> axis. </alert> For reference, we can write equations that would result if we point <m> y </m> axis in the same direction as the acceleration direction, i.e., when <m> (a_x = 0, a_y = a) </m>, where <m> a </m> is the magnitude of the acceleration. 		
+				<mdn>
+					<mrow>  \amp  v_x = v_{i,x}</mrow>								
+					<mrow> \amp v_y = v_{i,y} +  a \, t</mrow>
+					<mrow> \amp x =   v_{i,x} \, t </mrow>
+					<mrow> \amp y  =   v_{i,y} \, t +  \dfrac{1}{2}\, a  \ t^2  </mrow>
+				</mdn> 
+		</p>
+		<p>
+			<alert> Case: Acceleration pointed towards negative <m>y</m> axis. </alert> For reference, we also can write equations that would result if we point <m> y </m> axis in the opposite direction to the acceleration direction, i.e., when <m> (a_x = 0, a_y = -a) </m>, where <m> a </m> is the magnitude of the acceleration. This is the normal practice when we do projectile motion problems near the Earth's surface, where we set <m> a = g </m>, the acceleration due to gravity, which has a standard value <m> 9.81 \text{ m/s}^2</m>.		
+				<mdn>
+					<mrow>  \amp  v_x = v_{i,x}</mrow>								
+					<mrow> \amp v_y = v_{i,y} -  a \, t</mrow>
+					<mrow> \amp x =   v_{i,x} \, t </mrow>
+					<mrow> \amp y  =   v_{i,y} \, t - \dfrac{1}{2}\, a  \ t^2  </mrow>
+				</mdn> 
+		</p>
+	</subsection>
+
+
+		<exercise xml:id="Constant-Acceleration-on-a-Straight-Track"><title> Constant Acceleration on a Straight Track </title>
+			<statement>
+				<p>
+					A runner starts from rest and picks up speed at a constant rate on a straight track. The acceleration has magnitude <m> 1.5\text{ m/s}^2</m>. 
+				</p>
+				<p>
+					(a) What will be his speed <m> 5 </m> seconds later? 
+				</p>
+				<p>
+					(b) How far from the starting place will he be at that time?
+				</p>
+
+			</statement>
+			<hint> <p> (a)  Use <m> v_{f,x} = v_{i,x} +  a_x \, t</m> </p> </hint>
+			<answer> <p>  (a) <m>7.5\text{ m/s}</m>, (b) <m>18.75\text{ m}</m>.</p> </answer>
+			<solution> <title> (a) </title>
+				<p> 
+					This motion is on only one axis. So, let us use the <m> x </m> axis for that with the origin at the starting place, and the positive <m>x </m> axis pointed in the direction of the runner's motion, which is also the direction of his acceleration here. With this choice, we do not need the axis of the constant velocity motion. We also set <m> t_i = 0</m> and <m> t_f = t</m>.
+				</p>
+				<p>
+					With this choice, we have the following values.
+					<me>
+						a_x = 1.5\text{ m/s}^2,\ \ v_{i,x} = 0, \ \ x_i = 0, \ \ t = 5\text{ s},
+					</me>
+					and we want to find out <m> v_{f,x}</m> in this part and  <m> x_f</m> in the next part. Looking at the list of equations we have, we find the following one to give the answer directly. We omit units in calculations and put them back at the end.
+					<me>
+						v_{f,x} = v_{i,x} + a_x\, t = 0 + 1.5\times 5 = 7.5\text{ m/s}.
+					</me>
+				</p>
+			</solution>
+
+			<solution> <title> (b) </title>
+				<p> 
+					 We don't need to start all over. Plus, we can use the result of part (a) if that is useful. We want <m>x_f</m>. We have some choices in the equations we can use.  We omit units in calculations and put them back at the end. Let's use the following equation.
+					<me>
+						 x_f  = x_i + v_{i,x}\, t + \frac{1}{2}\, a_x\, t^2,
+					</me>
+					gives
+					<me>
+						x_f  = 0 + 0 + \frac{1}{2}\times 1.5 \times 5^2 = 18.75\text{ m}.
+					</me>
+				</p>
+			</solution>
+
+		</exercise>
+
+
+		<exercise xml:id="Flight-of-a-Football-kinematics"><title> Flight of a Football - TO CHECK</title>
+			<statement>
+				<p>
+					 A football is kicked towards the East. The ball leaves the foot of the kicker at <m> 1.0\text{ m} </m> above ground. At the moment the ball leaves the foot it has a velocity of <m> 22.0\text{ m/s} </m> in <m>30^{\circ}</m> above the horizontal direction. 
+				</p>
+				<p>
+					 (a) Where on the ground will the ball land?  
+				</p>
+				<p>
+					(b) What will be the be velocity with which the ball will strike the ground? 
+				</p>
+				<p>
+					(c) How long the ball is in the air? Ignore effect of air drag on the ball and assume ideal free fall. That is, you can assume that acceleration of the ball has magnitude <m> g </m> and directed Down.
+				</p>
+				<p>
+					(d) In a coordinate system in which positive  <m> x </m> is towards East and positive <m> y</m> is pointed Up, and the origin is at the place where the ball left the kicker, find the path of the ball by giving the function <m> y(x) </m>.
+				</p>
+
+			</statement>
+			<hint> <p>   </p> </hint>
+			<answer> <p> 
+					<md>
+						<mrow> \amp \text{(a) } x_f=44.27\text{ m}, </mrow>
+						<mrow> \amp \text{(b) }\vec v_f = (19.0\text{ m/s},-11.9\text{ m/s}),</mrow>
+						<mrow>\amp  \text{(c) }t = 2.33\text{ sec}.</mrow>
+					</md>
+			 (d) <m> y = 0.579\, x - 0.01358\, x^2. </m> </p> </answer>
+			<solution> <title> (a), (b), and (c)</title>
+	 
+
+				<p> 
+					Notice the initial instant <m>t_i=0</m> is the immediate instant after the ball left the foot and the final instant of interest is <m> t_f = t</m>, one of the unknowns. 
+				</p>
+				<p>
+					The initial velocity is given in magnitude-direction form. We need it in component form.
+					<md>
+						<mrow> v_{i,x} \amp = v_i\, \cos\, \theta</mrow>
+						<mrow> \amp = 22.0 \times \cos\, 30^{\circ} = 19.0\text{ m/s}. </mrow>
+						<mrow>  v_{i,y} \amp = v_i\, \sin\, \theta</mrow>
+						<mrow> \amp = 22.0 \times \sin\, 30^{\circ} = 11.0\text{ m/s}. </mrow>
+					</md>
+				</p>
+				<p>
+					During <m> t=0 </m> to <m> t=t</m> interval, we organize the <m>x</m> and <m> y</m> components separately.
+				</p>
+				<p> <alert> x-world: </alert>
+				</p>
+				<md> 
+					<mrow> \amp x_i = 0,\ \ x_f = ?,\ \ v_{i,x} = 19.0\text{ m/s},\ \ v_{f,x} = ?, \ \ a_x = 0, </mrow>
+				</md>
+				<p> <alert> y-world: </alert>
+				</p>
+				<md> 
+					<mrow> \amp y_i = 0,\ \ y_f = -1.0\text{ m},\ \ v_{i,y} = 11.0\text{ m/s},\ \ v_{f,y} = ?, \ \ a_y = - g. </mrow>
+					<mrow>   </mrow>
+				</md>
+				<p>
+					Now we will write four equations which can be solved to get the four unknowns here: <m> t,\ x_f,\ v_{f,x},\ v_{f,y} </m>. We will use the following set of equations
+					<md>
+						<mrow>\amp v_{f,x} = v_{i,x},</mrow>
+						<mrow>\amp x_f - x_i= v_{i,x}\, t,</mrow>
+						<mrow>\amp v_{f,y} = v_{i,y} + a_y\ t,</mrow>
+						<mrow>\amp y_f - y_i= v_{i,y}\, t + \dfrac{1}{2}\, a_y\, t^2. </mrow>
+					</md>
+					Putting numerical values (leaving out units) we get
+					<md>
+						<mrow>\amp v_{f,x} = 19.0 ,</mrow>
+						<mrow xml:id="eq-cp-football-flight-xf">\amp x_f - 0= 19.0\, t,</mrow>
+						<mrow xml:id="eq-cp-football-flight-vfy">\amp v_{f,y} = 11.0 - 9.81\ t,</mrow>
+						<mrow>\amp -1.0 - 0= 11.0\, t - \dfrac{1}{2}\times 9.81 \, t^2. </mrow>
+					</md>
+					From this is clear that we solve the last equation for <m> t </m> and use appropriate value in middle two equations to get <m> x_f </m> and <m> v_{f,y} </m>. Note that when we solve the last equation for <m> t </m>, we will get two values, of which we will choose the positive value since, we don't want the time before <m> t = 0</m>.				
+				</p>
+				<p> Simplifying we get
+					<me>
+						4.905\, t^2 - 11\, t - 1 = 0. 
+					</me>
+					This gives
+					<me>
+						t = \dfrac{1}{9.81}\left( 11 \pm \sqrt{11^2 +  19.62} \right),
+					</me>
+					which gives us two values
+					<me>
+						t = -0.1\text{ sec}, 2.33\text{ sec}.
+					</me>
+					The value we want is the positive time.
+					<me>
+						t = 2.33\text{ sec}.
+					</me>
+					Now we put this value in Eq. <xref ref="eq-cp-football-flight-xf" /> and <xref ref="eq-cp-football-flight-vfy" />.
+					<md>
+						<mrow> x_f = 19.0\times 2.33 = 44.27\text{ m},</mrow>
+						<mrow> v_{f,y} = 11.0 - 9.81\times 2.33 = -11.9\text{ m/s}.</mrow>
+					</md>
+					To summarize:
+					<md>
+						<mrow> \amp \text{(a) } x_f=44.27\text{ m}, </mrow>
+						<mrow> \amp \text{(b) }\vec v_f = (19.0\text{ m/s},-11.9\text{ m/s}),</mrow>
+						<mrow>\amp  \text{(c) }t = 2.33\text{ sec}.</mrow>
+					</md>
+
+
+
+				</p>
+
+			</solution>
+
+
+			<solution> <title> (d) </title>
+				<p>
+					Writing <m> x </m> for <m> x_f</m>, <m> y </m> for <m> y_f</m>, and <m> t </m> for <m> t_f</m>, we found the following for <m> x </m> and <m> y</m> of the ball.
+					<md>
+						<mrow> \amp x = 19 t, </mrow>
+						<mrow> \amp y = 11\, t -   4.905\, t^2. </mrow>
+					</md>
+					We can solve the first equation for <m> t </m> and use that in the second equation to get an equation relating <m> x </m> to <m> y </m>.
+					<me>
+						y = \dfrac{11}{19}\, x -   4.905\times  \left( \dfrac{1}{19} \right)^2\, x^2
+					</me>
+					Simplifying we get the equation of the trajectory to be
+					<me>
+						y = 0.579\, x - 0.01358\, x^2.
+					</me>
+				</p>
+			</solution>
+
+		</exercise>
+
+
+</section>

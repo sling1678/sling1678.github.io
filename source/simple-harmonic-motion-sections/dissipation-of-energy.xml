@@ -1,0 +1,430 @@
+<section xml:id="Dissipation-of-Energy"><title> Dissipation of Energy and Q Factor </title>
+
+	<subsection><title>Energy of an Underdamped Oscillator </title>
+		<p>
+			Just as for any other system, the energy of a damped oscillator is the sum of its kinetic and potential energies. We will consider only the underdamped case, since, it is the only one that actually oscillates - the other two cases, the overdamped and the critically damped, do not oscillate.
+			<men xml:id="eq-Energy-of-an-Underdamped-Oscillator-main">
+				E = \dfrac{1}{2}m v^2 + \dfrac{1}{2}k x^2,
+			</men>
+			where <m> x </m> and <m> v</m> are for underdamped oscillator are
+			<md>
+				<mrow>
+					\amp  x = A\,e^{-\gamma t/2}\, \cos( \omega^{\prime} t + \phi  ),	 
+				</mrow>
+
+				<mrow>
+					\amp  v = -\dfrac{\gamma}{2}\, x - \omega^{\prime}\,A\,e^{-\gamma t/2}\, \sin( \omega^{\prime} t + \phi  ),	 
+				</mrow>
+			</md>
+			When you insert these in Eq. <xref ref="eq-Energy-of-an-Underdamped-Oscillator-main" />, you get a really ugly expression, which shows that energy of the oscillator oscillates in time with decreasing amplitudes, but at twice the frequency of the oscillation of <m> x </m>.
+			<!-- <md>
+				<mrow> E = e^{-\gamma t}\,\amp \left[ \dfrac{1}{2}kA^2 +\right. </mrow>
+				<mrow> \amp \dfrac{m\gamma^2}{8}\,A^2\cos( 2\omega^{\prime}t+2\phi ) + </mrow>
+				<mrow> \left. \amp \dfrac{m\gamma \omega^{\prime} }{4}\,A^2\sin( 2\omega^{\prime}t+2]\phi )
+				 \right]</mrow>
+			</md> -->
+		</p>
+		<p>
+			But if you have a lightly damped oscillator, i.e., if <m> \gamma \lt\lt \omega </m>, meaning that the tendency to damp is considerably small compared to the tendency to oscillate, then, we can show that, <em> on average, energy dies out exponentially with time.</em>
+			<men xml:id="eq-dissipation-of-energy-energy-t">
+				E(t) \approx E(0)\, e^{-\gamma\, t},
+			</men>
+			where <m> E(0) </m> is the energy at initial time, which for a lightly damped oscillator is
+			<me>
+				E(0) \approx \dfrac{1}{2}k A^2.
+			</me>
+			Eq. <xref ref="eq-dissipation-of-energy-energy-t"/> shows that energy of a lightly damped oscillator reduces to about one-third in time, <m>\tau</m>, equal to inverse of <m>\gamma</m>.
+			<me>
+				\tau = \dfrac{1}{\gamma}.
+			</me>
+			This <m>\tau</m> is sometimes called <term>time constant</term> for energy decay. It gives us time for energy to decay to <m>1/e\approx 1/2.7</m> of the original energy.
+		</p>
+	</subsection>
+
+	<subsection> <title> Quality Factor of Underdamped Oscillator </title>
+		<p>
+			Every physical system that oscillates, will have damping. That is, <alert> real oscillating systems are actually underdamped oscillators</alert>. Since, the amplitude of oscillations decreases with time, an important feature of a good oscillator will be to oscillate for many cycles before losing significant amount of energy. 
+		</p>
+		<p>
+			<term> Quality factor</term> provides a standard way to talk about the goodness of an oscillator. We denote Quality factor by <m> Q</m>. A simple measure of Quality of an oscillator would be to divide the average energy in a particular cycle by the energy lost in the cycle, so that the less the energy is lost in a cycle, the more persistent are the oscillations, and therefore, higher the Quality.  
+		</p>
+		<p>
+			For technical reasons, we define <m> Q </m> factor by dividing the energy at the beginning of a cycle to the energy lost in <m> \frac{1}{2\pi}</m> of a cycle rather than one cycle. The factor is not critical to the definition, since when we use <m>Q</m> factor, we are mostly interested in order of magnitude. But with <m> \frac{1}{2\pi}</m> of a cycle, we do get simple formula for <m>Q</m> when we apply this to a lightly damped oscillator as we will see below. Suppose <m>E(t)</m> be the energy at time <m>t</m>, then we would compute <m>Q</m> by
+			<men>
+				Q = \dfrac{E(t)}{\left| \Delta E\left(\text{during }t\text{ to }t+ \dfrac{1}{\omega^\prime}\right) \right| }.
+			</men>		
+			You could think of this definition as also telling us about amount of energy lost in <m>\frac{1}{2\pi}</m> of a cycle.
+			<me>
+				\left| \Delta E \text{ lost in next 1/2}\pi\text{ of a cycle} \right| = Q E.
+			</me>
+		</p>
+	</subsection>
+
+	<subsection> <title> Quality Factor of a Lightly Damped Oscillator </title>
+		<p>
+			The exact equations given above for <m> Q </m> of an underdamped oscillator are too complicated to be of much use, especilly since, most times, we use the concept of <m> Q </m> to characterize relatively good oscillators. These oscillators are called <term> light damped oscillators</term>. We identify an oscillator to be a lightly damped if the following condition holds.
+			<men>
+				\gamma \lt\lt \omega^\prime.
+			</men>
+			Under these conditions, energy on average decreases exponentially and is given by
+			<men>
+				E(t) = E(0) e^{-\gamma t}.
+			</men>
+			It is then easy to work out energy <m>\Delta E</m> lost during <m> t</m> to <m> t + \frac{1}{\omega} </m>, i.e., within <m>1/2\pi</m> of one cycle. Dividing <m>E(t)</m> by <m>\Delta E</m> and simplifying, we get quality factor to be:
+			<men>
+				Q = \frac{ E(0)e^{-\gamma t} }{ E(0)e^{-\gamma (t+1/\omega^\prime)} - E(0)e^{-\gamma t} } = \frac{1}{ e^{-\gamma/\omega^\prime} -1 } \approx \dfrac{\omega^\prime}{\gamma}
+			</men>		
+		</p>
+		<p>
+			Good oscillators such as tuning forks and guitar strings have <m> Q</m> values in the thousands.  Laser cavities have much higher <m> Q</m> values, exceeding <m>10^7</m>.  Of course, the undamped oscillator has zero  <m> \gamma</m>, and hence infinite <m>Q</m>.  <alert> There is no <m> Q</m> for the critically damped and overdamped cases since they do not oscillate</alert>. You might say, their <m> Q = 0</m>.
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Quality-of-a-Lightly-Damped-Oscillator"><title> Quality of a Lightly Damped Oscillator </title>
+		<statement>
+			<p>
+				A copper block of mass <m> 1.5\text{ kg}</m> is attached to a spring of stiffness <m> 450\text{ N/m}</m> and hung from a platform above a beaker that contains a thick liquid so that the block oscillates entirely in the liquid with a damping constant of <m>3.0\text{ kg/s}</m>. What is the Quality of this oscillator?
+			</p>
+
+		</statement>
+		<hint> <p> Check if lightly damped condition applies  </p> </hint>
+		<answer> <p>  8.7 </p> </answer>
+		<solution> 
+			<p>
+				Let us first find out if the oscillator is a lightly damped oscillator.
+				<md>
+					<mrow> \amp \omega = \sqrt{\dfrac{k}{m}} = \sqrt{\dfrac{450}{1.5}} = 17.32. </mrow>
+					<mrow> \amp \gamma = \dfrac{b}{m} = \dfrac{3.0}{1.5} = 2. </mrow>
+				</md>
+				Since <m> 2 \lt\lt 17.32 </m>, we can treat this oscillator as a lightly damped oscillator. Therefore, we use simpler formula for <m> Q</m>.
+				<me>
+					Q = \dfrac{\omega}{\gamma} = \dfrac{17.32}{2}  = 8.7.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Q-Factor-of-a-Paino-Tuning-Fork"><title> Q Factor of a Paino Tuning Fork </title>
+		<statement>
+			<p>
+				A piano technician uses a <m>440\text{-Hz}</m> standard tuning fork to tune piano strings. She notices that after <m>2\text{ sec}</m> only  <m>\dfrac{1}{3}</m> of sound energy remains. What is the Q of the tuning fork?
+			</p>
+
+		</statement>
+		<hint> <p>  Use energy disspation to find <m>\gamma</m>. </p> </hint>
+		<answer> <p> <m>5000</m>  </p> </answer>
+		<solution> 
+			<p>
+				From the rate at which energy dissipates, we can get <m>
+				\gamma</m>.
+				<me>
+					e^{-\gamma \times 4} = \dfrac{1}{3}.
+				</me>
+				Taking natural log of both sides gives
+				<me>
+					-2\, \gamma = \ln(1/3)=-\ln(3).
+				</me>
+				Therefore,
+				<me>
+					\gamma = \dfrac{\ln(3)}{2} = 0.55\text{ s}^{-1}
+				</me>
+				Using this in the formula for <m>Q</m> of underdamped oscillators, we get
+				<me>
+					Q = \dfrac{\omega}{\gamma} = \dfrac{2\pi\times 440\text{ s}^{-1} }{0.55\text{ s}^{-1}} \approx 5000.
+				</me> 
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Quality-of-an-Underdamped-Oscillator"><title> Quality of an Underdamped Oscillator </title>
+		<statement>
+			<p>
+				A copper block of mass <m> 1.5\text{ kg}</m> is attached to a spring of stiffness <m> 450\text{ N/m}</m> and hung from a platform above a beaker that contains a thick liquid so that the block oscillates entirely in the liquid with a damping constant of <m>45.0\text{ kg/s}</m>. What is the Quality of this oscillator?
+			</p>
+
+		</statement>
+		<hint> <p> Check if lightly damped condition applies.  </p> </hint>
+		<answer> <p>  0.3 </p> </answer>
+		<solution> 
+			<p>
+				Let us first find out if the oscillator is a lightly damped oscillator.
+				<md>
+					<mrow> \amp \omega = \sqrt{\dfrac{k}{m}} = \sqrt{\dfrac{450}{1.5}} = 17.32. </mrow>
+					<mrow> \amp \gamma = \dfrac{b}{m} = \dfrac{45.0}{1.5} = 30. </mrow>
+				</md>
+				Since <m> \omega \gt \gamma/2</m>, this is an underdamped oscillator, but since <m> 17.32 \sim 30/2 </m>, it is not lightly damped. We will then find <m> \omega^{\prime}</m>.
+				<me>
+					\omega^{\prime} = \sqrt{17.32^2 - 15^2 } = 8.7.
+				</me> 
+				Therefore, we us a loosely approximate formula for <m> Q</m>.
+				<me>
+					Q \sim \dfrac{\omega^{\prime}}{\gamma} = \dfrac{8.7}{30}  =  0.3.
+				</me>
+				This is not a very good oscillator and <m> Q </m> of <m> 0.3</m> has little practical use.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-damped-oscillator-energy-lost-per-cycle"><title> Energy Lost Per Cycle </title>
+		<statement>
+			<p>
+				An oscillator has <m> Q=100</m>. What fraction of energy does the oscillator lose every cycle? 
+			</p>
+
+		</statement>
+		<hint> <p>  Use the fact that <m>1/Q</m> lost in <m> 1/2\pi</m> of a cycle. </p> </hint>
+		<answer> <p> 0.063, i.e., 6.3%. </p> </answer>
+		<solution> 
+			<p>
+				Recall that <m> E_0/Q</m> is the amount of energy the oscillator loses in <m> 1/2\pi</m> of a cycle. Therefore, in one cylce fractional loss is
+			</p>
+			<p>
+				<me>
+					\dfrac{2\pi\times E_0/Q}{E_0} = \dfrac{2\pi}{Q} = \dfrac{2\pi}{100}=0.063.
+				</me>
+				That is, the loss of energy in each cycle is 6.3%.
+
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Quality-Factor-from-Dynamics-of-the-Displacement-of-Underdamped-Oscillators"><title> Quality Factor from Dynamics of the Displacement of Underdamped Oscillators </title>
+		<statement>
+			<p>
+				Find the <m>Q</m> factor for the following underdamped oscillators, where <m> x</m> is in <m>\text{cm}</m> and <m>t</m> in <m>\text{sec}</m>.
+				<ol label="(a)">
+					<li> <m> x(t) = 2 \exp{(-0.1\, t)}\cos(2\pi t)</m></li>
+ 					<li> <m> x(t) = 2 \exp{(-0.02\, t)}\cos(t)</m></li>
+					<li> <m> x(t) = 2 \exp{(-0.25\, t)}\cos(200\pi t)</m></li>
+ 					<li> <m> x(t) = 2 \exp{(-0.015\, t)}\cos\left(2000\pi t+\frac{\pi}{2}\right)</m></li>
+				</ol>
+			</p>
+
+
+		</statement>
+		<hint> <p> Read off <m>\gamma</m> and <m>\omega^\prime</m>.  </p> </hint>
+		<answer> <p> (a) 31.4; (b) 25; (c) 1,257; (d) 209,440.  </p> </answer>
+		<solution> 
+			<p>
+				(a) 
+				We read off <m>\gamma</m> and <m>\omega^\prime</m> from the given solution.
+				<me>
+					\dfrac{\gamma}{2} = 0.1\text{ sec}^{-1},\ \ \omega^\prime=2\pi\text{ sec}^{-1}.
+				</me>
+				Therefore,
+				<me>
+					Q = \dfrac{\omega^\prime}{\gamma} = 10\pi = 31.4
+				</me>
+			</p>
+			<p>
+				(b) Here,
+				<me>
+					\dfrac{\gamma}{2} = 0.02\text{ sec}^{-1},\ \ \omega^\prime=1\text{ sec}^{-1}.
+				</me>
+				Therefore,
+				<me>
+					Q = \dfrac{\omega^\prime}{\gamma} =  25. 
+				</me>				
+			</p>
+			<p>
+				(c)
+				<me>
+					Q = \dfrac{200\pi}{0.5} =  1,257.
+				</me>
+			</p>
+			<p>
+				(d)
+				<me>
+					Q = \dfrac{2000\pi}{0.03} =  209,440.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Energy-Dissipation-of-a-Lightly-Damped-Oscillator-from-Solution"><title>  Energy Dissipation of a Lightly-Damped Oscillator from Solution </title>
+		<statement>
+			<p>  
+				The position of a 250-gram lightly damped oscillator  is given by the following function of time, <m>x(t) = 2\exp{(-0.01\,t)}\cos(2\pi t)</m>, where <m>t</m> is in seconds and <m>x</m> in meters.
+			</p>
+			<p>
+				(a) Plot <m> x</m> vs <m>t</m> for at least 4 cycles.
+			</p>
+			<p>
+				(b) How long does it take for the envelop of oscillations to drop by <m>\frac{1}{e}</m>?
+			</p>
+			<p>
+				(c) How long does it take the envelop to drop by a factor <m>\frac{1}{e^2}</m>?
+			</p>
+			<p>
+				(d) What is the <m> Q </m> factor of the oscillator?
+			</p>
+			<p>
+				(e) What is the rate at which the energy of the oscillator is dissipated at <m> t =0</m>?
+			</p>
+			<p>
+				(f) What is the frequency of oscillations in <m>\text{Hz}</m>?
+			</p>
+			<p>
+				(g) How many oscillations will the oscillator make before 90% of the energy is dissipated?
+			</p>
+
+		</statement>
+		<hint>
+			Just the definitions.
+		</hint>
+		<answer>
+			<p>
+				(b) <m>100\text{ sec}</m>; (c) <m>200\text{ sec}</m>; (d) <m>314</m>; (e) <m> 0.375\text{ J/s}</m>; (f) <m>1\text{ Hz}</m>; (g) <m>115</m>. 
+			</p>
+		</answer>
+
+		<solution> <title> (a) </title>
+			<p>
+				(a) Skipped, for now.
+			</p>
+		</solution>
+
+		<solution> <title> (b) </title>
+			<p>
+				(b) The envelop goes as <m>\sim \exp(-0.01\ t) </m>. Therefore, drops by <m>1/e</m> in time:
+					<me>
+						t = \dfrac{1}{0.01} = 100\text{ sec}.
+					</me> 
+			</p>
+		</solution>
+
+		<solution> <title> (c) </title>
+			<p>
+				(c) The envelop goes as <m>\sim \exp(-0.01\ t) </m>. Therefore, drops by <m>1/e^2</m> in time:
+					<me>
+						t = \dfrac{2}{0.01} = 200\text{ sec}.
+					</me>
+			</p>
+		</solution>
+
+		<solution> <title> (d) </title>
+			<p>
+				(d)
+				The <m>Q</m> from <m>\omega^\prime/\gamma</m> is
+					<me>
+						Q = \dfrac{2\pi}{0.02} = 31.4.
+					</me>  
+			</p>
+		</solution>
+
+		<solution> <title> (e) </title>
+			<p>
+				(e)
+				The <m>\Delta E /\Delta t = -\gamma E(t)</m> gives
+				<me>
+					-\gamma E(0) = -0.02\times \dfrac{1}{2}kA^2,
+				</me> 
+				where <m> k=\omega^2 m</m> with <m> \omega^2 = {\omega'}^2 + \gamma^2</m> and <m>m=0.25\text{ kg}</m>, and <m>A=2\text{ m}</m>.
+				<me>
+					\omega^2 = 4\pi^2 + 0.02^2 = 39.5\text{ sec}^{-2}.
+				</me>
+				Therefore,
+				<me>
+					k = 39.5\times 0.25 = 9.875\text{ N/m}.
+				</me>
+				Therefore, rate of energy loss
+				<me>
+					-0.02\times \dfrac{1}{2}\times 9.875 \times 2^2 = -0.395\text{ J/s}.
+				</me>
+
+			</p>
+		</solution>
+
+		<solution> <title> (f) </title>
+			<p>
+				(f)
+				The frequency is obtained from the argument of cosine here.
+				<me>
+					f = \dfrac{\omega^\prime}{2\pi} = 1\text{ Hz}.
+				</me>
+			</p>
+		</solution>
+
+		<solution> <title> (g) </title>
+			<p>
+				(g)
+					Since only 10% energy is left, we need to solve the following condition for <m>t</m>.
+				<me>
+					E(t) = 0.1\,E(0), \text{ where } E(t) = E(0)\exp(-0.02\, t), 
+				</me>
+				since <m>\gamma = 0.02\text{ sec}^{-1}</m>. Therefore
+				<me>
+					\exp(-0.02\, t) = 0.1.
+				</me>
+				Taking natural log both sides we get
+				<me>
+					t = -\dfrac{\ln(0.1)}{0.02} = 115\text{ sec}.
+				</me>
+				Now, we divide this time by the period of oscillations, which is <m> 1 \text{ sec}</m>. Therefore, we have <m> 115</m> oscillations.
+			</p>
+		</solution>
+		
+	</exercise>
+
+	<exercise xml:id="ex-Energy-Damping-by-a-Car-Suspension-System"><title> Energy Damping by a Car Suspension System </title>
+		<statement>
+			<p>
+				A car of mass <m>3,500\text{ kg}</m> has a suspension system with an effective spring constant of <m>4.0\times 10^3\text{ N/m} </m>. When new, the damping constant corresponded to critical damping. But, with use, the damping had deteriorated and now the damping is underdamped. Car now takes <m>1.5\text{ s}</m> to damp out 90% of initial energy from a bump in the road.
+
+				Suppose the shock absorber is designed to remove 90% of initial energy in <m>1.5\text{ sec}</m>. 
+			</p>
+			<p>
+				(a) How much energy does the shock absorber remove in <m>1.5\text{ sec}</m> if the initial displacement is <m> 10\text{ cm}</m>?
+			</p>
+			<p>
+				(b) What is the <m>Q</m> of the suspension system now? 
+			</p>
+		</statement>
+		<hint> <p> (a) Initially energy is all potential energy. (b) Use the fact that 90% energy dissipates in 1.5 sec to find <m>\gamma</m>.  </p> </hint>
+		<answer> <p> (a) <m>200\text{ J} </m>, (b) <m> 15</m>.  </p> </answer>
+		<solution> 
+			<p>
+				(a)
+				The energy initially is all potential energy.
+				<me>
+					E = \dfrac{1}{2}kA^2 = \dfrac{1}{2}\times 4.0\times 10^4\text{ N/m} \times (0.10\text{ m})^2 = 200\text{ J}.
+				</me>
+			</p>
+			<p>
+				(b) From the fact the 90% of energy is <m>1.5\text{ sec}</m>, we have the following equation.
+				<me>
+					e^{-1.5\,\gamma} = 0.9.
+				</me>
+				Taking natural log of both sides we get
+				<me>
+					\gamma = -\dfrac{\ln(0.9)}{1.5} = 0.07\text{ s}^{-1}.
+				</me>
+ 				The angular frequency,
+ 				<me>
+ 					\omega^\prime = \sqrt{ k^2/m^2 -  (\gamma/2)^2  }  = 1.07\text{ s}^{-1}.
+ 				</me>
+ 				Therefore, <m>Q</m> is
+ 				<me>
+ 					Q = \dfrac{1.07}{0.07} =15.
+ 				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+
+
+
+
+
+
+</section>

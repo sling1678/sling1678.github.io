@@ -1,0 +1,362 @@
+<section xml:id="Impulse-and-Change-in-Momentum"><title> Impulse and Change in Momentum </title>
+<idx><h>Impulse</h><h>and Change of Momentum</h></idx>
+	<introduction>
+		<p>
+			Recall that Newton's second law of motion, which was <m>\vec F = m\vec a</m> for an unchanging mass, was special case of a more general expression in terms of rate of change of momentum.
+			<men>
+				\vec F = \frac{\Delta \vec p}{\Delta t} \leftrightarrow \vec F = \frac{d \vec p}{d t}.
+			</men>
+			We can multiply both sides by <m>\Delta t</m> to note that impulse <m>\vec J</m> will equal change in momentum.
+			<men xml:id="eq-change-in-momentum-equals-impulse">
+				\vec J = \vec F \Delta t = \Delta \vec p.
+			</men>
+			This is illustrated in <xref ref="fig-impulse-and-change-in-momentum-1"/>. 
+		</p>
+
+		<figure xml:id="fig-impulse-and-change-in-momentum-1">
+			<caption>
+				Each force causes a change in momentum equal to the impulse of the force, <m>\Delta \vec p = \vec J </m>, where <m> \Delta \vec p =  \vec p_f - \vec p_i</m> and <m>\vec J</m> is the impulse of the force.
+			</caption>
+			<image source="./images/momentum/impulse-and-change-in-momentum-1.png" width="70%"/>
+		</figure>
+
+
+<!-- 		<p>
+			According to Newton's second law of motion, impulse <m>\vec J</m> on a body and change in momentum <m>\Delta \vec p</m> during an infinitesimal interval <m>\Delta t</m> are related by 
+		</p> -->
+
+
+
+
+
+		<!-- <p>
+			Consider an object upon which <alert> only one force </alert> <m> \vec F </m> acts for a duration <m> t_i </m> to <m> t_f</m> as shown in <xref ref="fig-impulse-and-change-in-momentum-1"/>. Let us denote the impulse of this force by <m> \vec J </m>. During this interval, suppose, the momentum of the body changes from  <m> \vec p_i </m> to <m> \vec p_f</m> with the change in momentum, denoted by <m> \Delta \vec p</m>,
+			<me>
+				\Delta \vec p = \vec p_f - \vec p_i.
+			</me>
+		</p>
+		<p>
+			Newton's second law of motion, then, says that the impulse and change in momentum are equal to each other.
+			<men xml:id="eq-change-in-momentum-equals-impulse">
+				\Delta \vec p = \vec J.
+			</men>
+			This relation is another way of expressing Newton's second law - this form is called the <term>integral form of Newton's second law</term>. 
+		</p> -->
+
+
+
+		<p>
+			Since Eq. <xref ref="eq-change-in-momentum-equals-impulse"/> is a vector equation, the directions of the change in momentum and impulse vectors will be same, and their magnitudes will also be equal.
+<!-- 
+			<men >
+				\begin{cases}
+					\amp \text{Magnitudes: }  \left| \vec J \right| = \left| \Delta \vec p \right|,\\
+					\amp \text{Direction of } \Delta \vec p \text{ same as } \text{Direction of }  \vec J.
+				\end{cases}
+			</men> -->
+		</p>
+		<p>
+			<alert> If multiple forces act on the body, </alert> impulse from each force will cause its own change in momentum. This is similar to the acceleration of the body caused by each force. The observed change in momentum will be the change in the total momentum, which is again similar to the observed acceleration as the total acceleration from all forces. For the case of <m>n</m> forces on the body we would get the following changes caused by each impulse.
+		</p>
+			<md>
+				<mrow> \amp \Delta \vec p_1 = \vec J_1,\ \ \ \Delta \vec p_2 = \vec J_2,\ \ \ \cdots,\  \  \ \Delta \vec p_n = \vec J_n. </mrow>
+			</md>		
+		<p>
+
+			When we vectorially add all the impulses and all the changes in momenta, we find that the net impulse will give rise to the observed net change in momentum. This is called <term>integral form of Newton's second law of motion.</term>
+			<men xml:id="eq-net-change-in-momentum-equal-net-impulse">
+				\Delta \vec p_{\text{net}} = \vec J_{\text{net}},
+			</men>
+			where
+			<md>
+				<mrow> \amp\Delta \vec p_{\text{net}}  = \Delta\vec p_1 + \Delta\vec p_2 + \cdots + \Delta\vec p_n, </mrow> 
+				<mrow> \amp \vec J_{\text{net}}  = \vec J_1 + \vec J_2 + \cdots + \vec J_n. </mrow> 
+			</md>
+		</p>
+
+	</introduction>
+	<remark><title> Impulse is defined by force and duration, not by momentum</title>
+		<p>
+			Eq. <xref ref="eq-change-in-momentum-equals-impulse"/> is sometimes incorrectly interpreted as defining impulse. Impulse happens to equal change in momentum, just like, <m> \vec F = m \vec a </m> <alert> does not mean </alert> force is <m> m\vec a</m>, it just happes to equal <m> m\vec a</m>. Force is a push or pull applied by some other body while <m>m\vec a</m>  is mass times acceleration of the body. Similarly, here, impulse is a concept related to force from other bodies and duration for which force acts, and not on momentum.
+		</p>
+	</remark>
+
+	<example xml:id="Change-in-the-Momentum-of-a-Golf-Ball"><title> Change in the Momentum of a Golf Ball </title>
+		<statement>
+			<p>
+				A player hits a <m>46\text{-gram}</m>  golf ball with an average force of <m>4,600\text{ N}</m> while the golf club is in contact with the ball for <m> 0.5\text{ ms}</m>.  
+			</p>
+			<p>
+				Find the speed of the ball immediately after leaving the club if the golf ball was at rest before being it was struck.
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Use <m> x </m> axis only. </p> </hint> -->
+		<answer> <p> <m> 50\text{ m/s}</m>.  </p> </answer>
+		<solution> 
+			<p>
+
+				Speed is the magnitude of velocity, which can be obtained by dividing the magnitude of momentum by mass. In general, to find the final momentum, we just add the change in momentum to the initial momentum.
+				<men  xml:id="eq-mom-Change-in-the-Momentum-of-a-Golf-Ball">
+					\vec p_f = \vec p_i + \Delta \vec p,
+				</men>
+				in which we can replace <m> \Delta \vec p </m> by impulse. We now compute <m>\vec J</m> to find <m>\vec p_f</m> from <m>\vec p_i</m> and <m>\vec J</m>.
+			</p>
+			<p>					
+				Suppose the direction of the force does not change during the time the golf club was in contact with the ball and let that direction be the positive <m> x </m> axis.
+				Then, we can just work with the <m> x </m> components.
+				<me>
+					J_x = 4,600\text{ N} \times 0.5\text{ ms} = 2.3\text{ N.s}.
+				</me>
+				This is equal to the change in momentum of the ball.  
+				<me>
+					\Delta p_x = 2.3\text{ N.s} = 2.3\text{ kg.m/s}.
+				</me>
+				The <m> x </m> component of Eq. <xref ref="eq-mom-Change-in-the-Momentum-of-a-Golf-Ball"/> gives the final momentum
+				<me>
+					p_{f,x} = p_{i,x} + \Delta p_x = 0 + 2.3\text{ kg.m/s}.
+				</me>
+				Dividing by mass we get the <m> x</m> component of the velocity.
+				<me>
+					v_x = \dfrac{2.3\text{ kg.m/s}}{0.046\text{ kg}} = 50\text{ m/s}.
+				</me>
+				Speed is the absolute value, which is the same, <m> 50\text{ m/s}</m>.
+			</p>
+			<p> <em> 
+					Note: Working with components here is an overkill, but if we are not thinking the vector aspects of our equations, we will run into trouble in any non-trivial situation, e.g., the same problem with a baseball, in which baseball has a non-zero initial velocity, which is in the opposite direction to the final.
+				</em>
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="Average-Force-by-a-Bat-on-a-Baseball"><title> Average Force by a Bat on a Baseball </title>
+		<statement>
+			<p>
+				A player hits a <m>145\text{-gram}</m>  baseball that is approaching him at a speed of <m>40\text{ m/s}</m>. Immdiately after the hit, the ball leaves the bat with a speed of <m> 48\text{ m/s}</m> in <alert> exactly opposite direction</alert>. 
+			</p>
+			<p>
+				(a) Find the magnitude and direction of the change in momentum of the ball.
+			</p>
+			<p>
+				(b) If the bat was in contact with the ball for <m> 0.5\text{ ms}</m>, what is average force on the ball by the bat?
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Use <m> x </m> axis for the outgoing momentum direction. </p> </hint> -->
+		<answer> <p>(a) <m> 12.76 \text{ kg.m/s}</m>, in the direction of player to ball. (b) <m>  25,520\text{ N}</m> in the opposite direction in which the ball is approaching the bat  </p> </answer>
+		<solution> <title> a </title>
+			<p> 
+				To find the magnitude and direction, it is better to introduce a Cartesian coordinate system so that we can talk about the direction with respect to the axes. See figure below.
+			</p>
+
+			<image source="./images/momentum/Average-Force-by-a-Bat-on-a-Baseball-soln.png" width="70%"/>
+			<p>
+				Here, we will say that the positive <m> x </m> axis is pointed from the player towards the approaching ball. That will mean the following for the <m> x </m> components of initial and final momentum.
+				<md>
+					<mrow>\amp p_{i,x} = -0.145\text{ kg} \times 40\text{ m/s} = -5.8 \text{ kg.m/s},</mrow>
+					<mrow>\amp p_{f,x} = 0.145\text{ kg} \times 48\text{ m/s} = 6.96 \text{ kg.m/s}.</mrow>
+				</md>
+			</p>
+			<p> 
+				Therefore, the <m> x </m> component of the change in momentum will be
+				<me>
+					\Delta p_x = p_{f,x} - p_{i,x} = 12.76 \text{ kg.m/s}.
+				</me>
+				That is, magnitude of change in momentum is <m>12.76 \text{ kg.m/s}</m> and direction is from player to ball.
+			</p>
+		</solution>
+
+
+
+		<solution> <title> b </title>
+
+			<p>
+				The <m> \Delta p_x </m> found in (a) must be equal to the <m> x </m> component of the impulse, which we can write in <m> \text{N.s}</m> unit.
+				<me>
+					J_x  = 12.76 \text{ kg.m/s} = 12.76 \text{ N.s}.
+				</me>
+				Dividing this by the duration will give us the average force.
+				<me>
+					F_{x}^{\text{av}} = \dfrac{J_x}{\Delta t} = \dfrac{12.76 \text{ N.s}}{0.5\times 10^{-3}\text{ s}} = 25,520\text{ N}. 
+				</me>
+				The direction of this force is in the opposite direction in which the ball is approaching the bat.
+			</p>
+
+		</solution>
+	</example>
+
+
+	<subsection><title> Vectorial Nature of Impulse and Change in momentum </title>
+
+		<p>
+			Equation <xref ref="eq-net-change-in-momentum-equal-net-impulse"/> is a vector equation, similar to the <m> \vec F = m\vec a</m> you have studied. Therefore, when looking at a system analytically in a Cartesian coordinate system, we might sometimes be interested in the component form of this equation.
+			<mdn>
+				<mrow> \amp \Delta p_{\text{net},x} = J_{\text{net},x}, </mrow>
+				<mrow> \amp \Delta p_{\text{net},y} = J_{\text{net},y}, </mrow>
+				<mrow> \amp \Delta p_{\text{net},z} = J_{\text{net},z}. </mrow>
+			</mdn>
+			If we have only a one-dimensional situation and the direction of the force is changing with time, it would be safer to work within the component form. However, if the direction of the force is not changing with time, it is better to work with the magnitudes.
+		</p>
+
+
+		<example xml:id="ex-Change-in-Momentum-from-given-Force-Component-Graph-in-a-one-dimensional-Situation"><title> Change in Momentum from given Force Component Graph in a one-dimensional Situation</title>
+			<statement>
+				<p>
+					<xref ref="fig-ex-change-in-momentum-given-x-force"/> shows <m>x</m> component of a force as a function of time. At <m> t = 0</m>, <m>x</m> component of the momentum of the body upon which this force acts had the value <m> p_x = 10\text{ kg.m/s}</m>.
+				</p>
+				<p>
+					(a) What is the momentum of the body at <m> t = 80\text{ ms}</m>?
+				</p>
+				<p>
+					(b) What is the momentum of the body at <m> t = 200\text{ ms}</m>?
+				</p>
+				<figure xml:id="fig-ex-change-in-momentum-given-x-force">
+					<caption>
+						Figure for <xref ref="ex-Change-in-Momentum-from-given-Force-Component-Graph-in-a-one-dimensional-Situation"/>.
+					</caption>
+					<image source="./images/momentum/ex-change-in-momentum-given-x-force.png" width="60%"/>
+				</figure>
+				
+			</statement>
+			<!-- <hint> <p>  (a) Use the area under the curve up to 80 ms. (b) Use up to 200 ms. </p> </hint> -->
+			<answer> <p>  (a) <m>14\text{ N.s} </m>, (b) <m>8\text{ N.s} </m> </p> </answer>
+			<solution> <title> a </title>
+				<p>
+					From the graph, we obtain the <m>x</m> component of the impulse vector to be
+					<me>
+						J_x = \dfrac{1}{2}\times 100\text{ N}\times 0.080\text{ s} = 4\text{ N.s}.
+					</me>
+					This must equal the change in the <m>x</m> component of the momentum, <m>\Delta p_x</m>, which is <m> p_{f,x} - p_{i,x}</m>. Therefore,
+					<me>
+						p_{f,x} = p_{i,x} + \Delta p_x = 10\text{ N.s} + 4\text{ N.s} = 14\text{ N.s}.
+					</me>
+				</p>
+			</solution>
+			<solution> <title>b</title>
+				<p>
+					We need the area from the full graph. We use the already obtained area up to 80 ms.
+					<me>
+						J_x =  4\text{ N.s} + (-50\text{ N})\times 0.12\text{ s} = -2\text{ N.s}.
+					</me>
+					Therefore,
+					<me> 
+						p_{f,x} = p_{i,x} + \Delta p_x = 10\text{ N.s} - 2\text{ N.s} = 8\text{ N.s}.
+					</me>
+				</p>
+			</solution>
+		</example>
+
+
+
+		<example xml:id="ex-Change-in-Momentum-from-given-Force-Component-Graphs-in-a-Two-dimensional-Situation"><title> Change in Momentum from given Force Component Graphs in a Two-dimensional Situation</title>
+			<statement>
+				<p>
+					The graph shows the <m>x</m> component of a force as a function of time. At <m> t = 0</m>, the <m>x</m> and <m> y</m> components of the momentum of the body upon which this force acts had the values <m> p_x = 10\text{ kg.m/s}</m> and <m> p_y = -20\text{ kg.m/s}</m>. Find the magnitude and direction of the momentum at <m> t = 200\text{ ms}</m>.
+				</p>
+				<figure>
+					<image source="./images/momentum/ex-change-in-momentum-given-x-force.png" width="60%"/>
+					<image source="./images/momentum/ex-change-in-momentum-given-y-force.png" width="60%"/>
+					<caption>For <xref ref="ex-Change-in-Momentum-from-given-Force-Component-Graphs-in-a-Two-dimensional-Situation"/>. </caption>
+				</figure>
+			</statement>
+			<!-- <hint> <p>  Work out the <m>x</m> and <m>y</m> components separately. </p> </hint> -->
+			<answer> <p> <m> 16.1\text{ N.s}</m>, <m> 60.3^{\circ} </m> clockwise from the positive <m>x</m> axis  </p> </answer>
+			<solution> 
+				<p>
+					The change in <m>p_x</m>is already computed in <xref ref="ex-Change-in-Momentum-from-given-Force-Component-Graph-in-a-one-dimensional-Situation"/>
+					(b). There, we found
+					<me>
+						p_{f,x} = 8\text{ N.s}.
+					</me>
+					We find <m>p_{f,y}</m> similarly,
+					<me> 
+						p_{f,y} = -20\text{ N.s} + J_y =  -20\text{ N.s} + 6\text{ N.s}= -14\text{ N.s}.
+					</me>
+					We now get the magnitude and direction from these components as usual.
+					<md>
+						<mrow>\amp p_f = \sqrt{8^2 + 14^2} = 16.1\text{ N.s}, </mrow>
+						<mrow>\amp \theta = \tan^{-1}\left( \dfrac{-14}{8}\right) = -60.3^{\circ}, </mrow>
+					</md>
+					which is <m> 60.3^{\circ} </m> clockwise from the positive <m>x</m> axis direction since the point <m> (8,-14)</m> is in the 4th quadrant.
+				</p>
+			</solution>
+		</example>
+
+
+	</subsection>
+
+
+	<subsection> <title> (Calculus) Derivation of the Integral Form of Second Law</title>
+	<idx><h>Newton’s Laws of Motion</h><h>Second Law</h><h>Integral Form</h></idx>
+		<p>
+			In an earlier chapter we wrote two forms of Newton's second law. The fundamental form was
+			<men xml:id="eq-second-law-differential-fundamental">
+				\dfrac{d\vec p}{dt} = \vec F,
+			</men>
+			and when the mass of the body is fixed in time,
+			<me>
+				m\vec a = \vec F,
+			</me>
+			where I have written the force on the right side of the equation, just for convenience. 
+		</p>
+		<p>
+			We work with the fundamental form to obtain the integral form of the law. Let us multiply both sides by <m> dt </m>, and then integrate from an initial instant <m> t_i </m> to a final instant <m>t_f</m>. Let momentum at these instants be <m> \vec p_i</m> and 	<m> \vec p_f</m>, respectively.  
+			<me>
+				\int_{\vec p_i}^{\vec p_f}\, d\vec p = \int_{t_i}^{t_f}\, \vec F\, dt,
+			</me>
+			in which the left side gives <m> \Delta \vec p = \vec p_f - \vec p_i</m> and the right side the impulse. Hence,
+			<men>
+				\Delta \vec p = \vec J.
+			</men>		
+		</p>
+	</subsection>
+
+
+	<exercises>
+
+
+
+
+
+
+
+	<exercise xml:id="ex-Recoil-Force-on-the-Gun-by-Exiting-Bullet"><title> Recoil Force on the Gun by Exiting Bullet</title>
+		<statement>
+			<sidebyside widths="60% 5% 35%">
+				<p>
+					A gun of mass <m>1.5</m> kg fires bullets of mass <m>100</m> grams each.  The bullets come out at a speed of <m>400</m> m/s.  If each firing lasts <m>200</m> msec, what is the average recoil force on the gun? The <term> recoil force</term> is the force applied by the exiting bullet on the gun.
+				</p>
+				<p> </p>
+				<image source="./images/momentum/impulse-gun-firing-a-bullet.png"/>
+			</sidebyside>
+			
+		</statement>
+		<hint> <p>  Find <m>J</m> on bullet by <m>\Delta p</m> of bullet. </p> </hint>
+		<answer> <p>  <m> 200\text{ N}</m>, towards gun. </p> </answer>
+		<solution> 
+			<p>
+				 
+				The change in momentum of the bullet is as a result of impulse by the gun. By third law, the impulse of the recoil force on the gun has the same magnitude, although in the opposite drection. Thus, from the magnitude of the change in the momentum of the bullet, we get the magnitude of the impulse of the recoil force. 
+				<me>
+					J = 0.1\times 400 - 0 = 40\text{ N.s}.
+				</me>  
+				The firing process lasts <m>\Delta t = 0.2\text{ s}</m>. Therefore, the average recoil force has the magnitude give by
+				<me>
+					F_\text{av} = \dfrac{J}{\Delta t} = 200\text{ N}. 
+				</me>
+				The direction of the recoil force on the gun is obviously towards the gun.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	</exercises>
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,650 @@
+<section xml:id="momentum-Collisions"><title> Collisions </title>
+<idx>Collisions</idx>
+	<introduction>
+		<p>
+			As an illustration of collision, consider hanging two pendula next to each other as shown in <xref ref="fig-collision-two-pendula"/>. After you let go of the pendulum, say an instant before (a) in the figure, ball 1 accelerates under the influence of external forces of weight (<m>m_1 g</m>) and tension (<m>T_1</m>).
+		</p>
+
+		<figure xml:id="fig-collision-two-pendula">
+			<caption> Illustration of a colliding process.
+			</caption>
+			<image source="./images/momentum/collision-two-pendula.png" width="80%"/>
+		</figure>
+
+
+		<p>
+			An instant before the collision, ball 1 has momentum <m>\vec p_1 = p_{1x}\hat i</m> and ball 2 has zero momentum, <m>\vec p_2 = 0</m>. The collision is the process in which the two balls push into each other and change each other's momenta. After the collision, the momenta of the two balls will be <m>\vec p^\prime_1 = p^\prime_{1x}\hat i</m> and <m>\vec p^\prime_2 = p^\prime_{12}\hat i</m>. The collision process lasts for a very short period of time. During this interval, <m>\Delta t</m>, impulse by the external forces will be nearly zero. Therefore, we will find that the total momenta of the two balls will be unchanged during the collision.
+			<men xml:id="eq-collision-momentum-conservation-0">
+				\vec p_1 + \vec p_2 = \vec p^\prime_1 + \vec p^\prime_2.
+			</men>
+			Here, only <m>x</m> components are involved and this will give one analytic equation.
+			<me>
+				p_{1x} + p_{2x} = p^\prime_{1x} + p^\prime_{2x}.
+			</me>
+			In Eq. <xref ref="eq-collision-momentum-conservation-0"/>, often we use subscript <m>i</m> for before collision and <m>f</m> for after collision momenta rather than unprime and prime symbols. Thus, <m> \vec p_{1i} </m> and <m> \vec p_{2i} </m> will be the momenta of two colliding balls an instant before the collision, and <m> \vec p_{1f} </m> and <m> \vec p_{2f} </m> be their momenta an instant after the collision<!-- , as shown in <xref ref="fig-two-body-collision" /> then -->. In a collision process we must have
+			<men xml:id="eq-collision-momentum-conservation">
+				\vec p_{1i} + \vec p_{2i} = \vec p_{1f} + \vec p_{2f}.
+			</men>
+<!-- 		</p>
+
+		<p>
+			Therefore, during a collision,  a transfer of momentum between the bodies takes place such that the total momentum of bodies before the collision is equal to the total momentum after the collision.  Both the direction and the magnitude of the momenta of the two colliding objects may change, subject to the constraint that the total momentum remains fixed at the value immediately prior to the collision.
+		</p>
+	 
+		<figure xml:id="fig-two-body-collision">
+			<caption> The momenta before and after a two-body collision.
+			</caption>
+			<image source="./images/momentum/two-body-collision.png" width="70%"/>
+		</figure>
+	 
+		<p>
+			Note that this a vector equation: we can think of this equation in terms of magnitudes and directions on the two sides, and/or, in terms of the Cartesian components.  --> When we think of this equation in terms of components, we get three analytic equations, one along each axis.
+			<md>
+				<mrow> \amp p_{1i,x} +  p_{2i,x} =  p_{1f,x} +  p_{2f,x} </mrow>
+				<mrow> \amp p_{1i,y} +  p_{2i,y} =  p_{1f,y} +  p_{2f,y} </mrow>
+				<mrow> \amp p_{1i,z} +  p_{2i,z} =  p_{1f,z} +  p_{2f,z} </mrow>
+			</md>
+		</p>
+
+		<p>
+			<xref ref="fig-collision-momnetum-vectors-before-after"/> shows relations of momentum vectors before collision and after collision. The total moementum vector before the collision is the same vector as after the collision. Therefore, if total momentum vector before the collision falls in <m>xy</m>-plane, it will be also in the <m>xy</m>-plane after the collision. You can illustrate that if three of the four momentum vectors shown in the figure falls in <m>xy</m>-plane, the fourth one must also be in <m>xy</m>-plane. 
+		</p>
+		<figure xml:id="fig-collision-momnetum-vectors-before-after">
+			<caption> The momenta before and after a two-body collision.
+			</caption>
+			<image source="./images/momentum/collision-momnetum-vectors-before-after.png" width="90%"/>
+		</figure>
+		<p></p>
+
+	<example xml:id="One-Dimensional-Collision"> <title> One Dimensional Collision </title>
+
+		<statement>
+			<p>
+				Two carts of masses <m> 200\text{ g}</m> and <m> 300\text{ g}</m> are moving towards each other on a straight track with speeds of <m>10\text{ m/s}</m> and <m>15\text{ m/s}</m> respectively.  Immediately after the collision, the <m> 200\text{-g}</m> cart reverses direction and moves with a speed of <m>8\text{ m/s}</m>.  
+			</p>
+			<p>
+				What is the velocity (i.e. speed and direction) of the <m> 300\text{-g}</m> cart after collision? 
+			</p>
+		</statement>
+
+		<!-- <hint> <p> Use momentum conservation on <m> x </m> axis.</p> </hint> -->
+
+		<answer> <p> <m> 3.0\text{ m/s}</m>, opposite to the initial direction of <m> 200\text{-g}</m> cart.  </p> </answer>
+
+		<solution>
+			<p>
+				Since all momenta lie along the same line, we choose <m> x </m> axis to be that line. We can arbitrarily choose the direction of motion of the <m> 200\text{-g}</m> cart to be the direction of the positive <m> x </m> axis. 
+			</p>
+			<image source="./images/momentum/collision-two-carts-along-a-line-head-on.png" width="80%"/>
+			
+			<!-- <p>
+				Let <m> v_x </m> be the velocity <m> 300\text{-g}</m> cart after collision.  The <m> x </m> components of the momenta are (using label 1 for <m> 200\text{-g}</m> cart) as follows, where yo should pay attention to the positive and negative signs corresponding to whether the velocity is in the positive <m> x </m> or negative <m> x </m> direction.
+				<md>
+					<mrow> \amp p_{1,i,x} = 0.2 \text{ kg} \times 10 \text{ m/s} </mrow>
+					<mrow> \amp p_{2,i,x} = 0.3 \text{ kg} \times (- 15 \text{ m/s} ) </mrow>
+					<mrow> \amp p_{1,f,x} = 0.2 \text{ kg} \times ( - 8 \text{ m/s} )</mrow>
+					<mrow> \amp p_{1,f,x} = 0.3 \text{ kg} \times v_x</mrow>
+				</md>
+			</p> -->
+			<p>
+				We denote the <m> x </m> component of the unknown velocity by <m>  v_{2x}^\prime</m>. The conservation of momentum along the <m> x </m> axis gives the following equation, where the left side is the before and the right side the after.
+				<me>
+					 0.2 \text{ kg} \times 10 \text{ m/s} + 0.3 \text{ kg} \times (- 15 \text{ m/s} ) = 0.2 \text{ kg} \times ( - 8 \text{ m/s} ) + 0.3 \text{ kg}\times v_{2x}^\prime. 
+				</me>
+				Therefore, <m> v_{2x}^\prime = - 3.0\text{ m/s}</m>. That is, after the collision, the <m> 300\text{-g}</m> cart continues to move in the negative <m> x </m> direction, the same direction it had before the collision, but now with speed <m> 3.0\text{ m/s}</m>.
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="ex-Two-Dimensional-Collision"><title> Two Dimensional Collision</title>
+		<statement>
+			<p>
+				Two balls A and B of masses <m> 0.4\text{ kg}</m> and <m> 0.45\text{ kg}</m> are moving towards each other and collide as shown in <xref ref="fig-ex-Two-dimensional-Collision"/>.
+			</p>
+			<p>
+				Before the collision, A has speed <m> 5\text{ m/s}</m> and B has speed <m> 8\text{ m/s}</m>.  The collision happens, not head-on, but at an angle so that, 
+				after the collision, ball A continues in the direction that is <m> 15^{\circ}</m> to its original direction at a speed of <m> 10\text{ m/s}</m>.  What is the velocity of ball B after the collision?
+			</p>
+			<figure xml:id="fig-ex-Two-dimensional-Collision">
+				<caption>
+					Figure for <xref ref="ex-Two-Dimensional-Collision" />.
+				</caption>
+				<image source="./images/momentum/ex-Two-dimensional-Collision.png" width="100%"/>
+			</figure>
+
+		</statement>
+		<!-- <hint> <p>  Set up <m> x </m> and <m> y </m> equations for the conservation of momentum. </p> </hint> -->
+		<answer> <p> <m> 12.3\text{ m/s}</m>, <m> 10.8^{\circ}</m> counterclockwise from the negative <m> x </m> axis </p> </answer>
+		<solution> 
+			<p>
+				We need to find the magnitude and direction of the velocity <m> \vec v_{B,f}</m>. For brevity, let us denote the components of this velocity by <m> (v_x,\, v_y) </m>. Setting up the conservation of momentum across the event of collision in the <m> x </m> and <m> y </m> directions we get the following two equations.
+				<md>
+					<mrow> \amp 0.4\times 5 + 0.45\times (-8) = 0.4\times 10\,\cos\,15^{\circ} + 0.45\, v_x</mrow>
+					<mrow> \amp 0 + 0 = 0.4\times 10\,\sin\,15^{\circ} + 0.45\, v_y</mrow>
+				</md>
+				Solving them for <m> v_x </m> and <m> v_y </m> we find
+				<me>
+					v_x = -12.1\text{ m/s},\ \ v_y = -2.3\text{ m/s}.
+				</me>
+				Therefore, the magnitude and angle with the <m> x </m> axis is
+				<md>
+					<mrow> \amp v = \sqrt{ 12.1^2 + 2.3^2 } = 12.3\text{ m/s},</mrow>
+					<mrow>\amp \theta = 10.8^{\circ}.</mrow>
+				</md>
+				We now <alert> interpret </alert> the direction from this angle and the quadrant of <m> (v_x, v_y)</m>. Since 	<m> (-12.1,\, -2.3)</m> is in the third quadrant, the direction is <m> 10.8^{\circ}</m> counterclockwise from the negative <m> x </m> axis.			
+			</p>
+		</solution>
+	</example>
+
+
+	</introduction>
+<!-- 	<subsection> <title> Simplifications </title>
+ 
+		<p>
+			If the three of the incoming and outgoing momenta lie in the same plane, then we usually take the plane to be the <m>xy</m>-plane, and work with only the <m> x </m> and <m>y</m> components. 
+		</p>
+		<figure xml:id="fig-two-body-collision">
+			<caption> The momenta before and after a two-body collision.
+			</caption>
+			<image source="./images/momentum/two-body-collision.png" width="70%"/>
+		</figure>
+
+		<p>
+			On the other hand, if three of the incoming and outgoing momenta lie along the same line, then we usually take the line to be the <m>x</m> axis, and work with only the <m> x </m>  components.
+		</p> 
+		<p>
+			The reason we require only three of them to lie in the same plane or on the same line is that the fourth one will then automatically lie in the same plane or line as per Eq. <xref ref="eq-collision-momentum-conservation" /> . 
+		</p>
+	</subsection> -->
+
+	<subsection><title> Elastic Collision</title>
+	<idx>Elastic Collisions</idx>
+	<idx><h>Collisions</h><h>Elastic</h></idx>
+		<p>
+			A collision is said to be <term>elastic</term> if, in addition to the conservation of momentum, kinetic energy is also conserved. Kinetic energy of a particle of mass <m> m</m> and speed <m>v</m> is defined by
+			<me>
+				KE = \dfrac{1}{2} m v^2.
+			</me>
+			This can also be written as <m>p^2/2m</m> by using magnitude of momentum as <m>p=mv</m>. 
+			We say that a collision is a a <term>head-on collision</term> if momenta before and after collision are along one line as illustrated in <xref ref="fig-elastic-collision-head-on"/>.
+		</p>
+
+		<figure xml:id="fig-elastic-collision-head-on">
+			<caption> 
+				A head-on collision between two balls resulting in motion along <m>x</m> axis. The collision would be elastic, if in addition to the momentum conservation, kinetic energy is also conserved.
+			</caption>
+			<image source="./images/momentum/elastic-collision-head-on.png" width="70%"/>
+		</figure>
+		<p>
+			In a head-on collision momentum conservation will produce one equation along the axis of the momenta. If the collision is elastic, we will also have an equation for the conservation of kinetic energy. Refering to the quantities shown in <xref ref="fig-elastic-collision-head-on"/> we will have
+			<mdn>
+				<mrow> \amp m_1 v_{1x} + m_2 v_{2x} = m_1 {v'}_{1x} + m_2 {v'}_{2x}, </mrow>
+				<mrow> \amp \dfrac{1}{2}m_1 v_{1x}^2 + \dfrac{1}{2}m_2 v_{2x}^2 = \dfrac{1}{2}m_1 {v'}_{1x}^2 + \dfrac{1}{2}m_2 {v'}_{2x}^2. </mrow>
+			</mdn>
+			If collision occurs in <m>xy</m>-plane, then we would get three equations.
+			<mdn>
+				<mrow> \amp m_1 v_{1x} + m_2 v_{2x} = m_1 {v'}_{1x} + m_2 {v'}_{2x}, </mrow>
+				<mrow> \amp m_1 v_{1y} + m_2 v_{2y} = m_1 {v'}_{1y} + m_2 {v'}_{2y}, </mrow>
+				<mrow> \amp \dfrac{1}{2}m_1 v_1^2 + \dfrac{1}{2}m_2 v_2^2 = \dfrac{1}{2}m_1 {v'}_1^2 + \dfrac{1}{2}m_2 {v'}_2^2, </mrow>
+			</mdn>
+			where
+			<me>
+				v_1^2 = v_{1x}^2 + v_{1y}^2,
+			</me>
+			and similarly for <m>v_2^2</m>, <m>{v'}_1^2</m> and <m>{v'}_2^2</m>.
+		</p>
+		<p>
+
+			If kinetic energy is not conserved, we say that the collision is inelastic. In a  <term> perfectly inelastic</term> collision, the two bodies get stuck together and move as one. We will have examples of elastic collisions in the chapter on energy.
+		</p>
+
+		<p>
+			
+		</p>
+
+
+	<example xml:id="ex-One-Dimensional-Elastic-Collision-of-Two-blocks-of-Different-Masses"><title>One Dimensional Elastic Collision of Two blocks of Different Masses</title>
+
+		<statement>
+			<p>
+				A block of mass <m>m</m> moving with speed <m>v_0=5\text{ m/s}</m> collides head on with another block of mass <m>3m</m> at rest. After an elastic collision, <m>m</m> moves in the opposite direction to its original direction. Find speeds of the two blocks after the elastic collision.
+			</p>
+		</statement>
+		<!-- <hint><p>
+			Both momentum and kinetic energy will be conserved.
+		</p></hint> -->
+		<answer><p>
+			<m>-5/2\text{ m/s},\ 5/2\text{ m/s}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Let <m>u</m> and <m>v</m> be the speeds after collision for blocks  <m>m</m> and <m>3m</m> respectively. Since motion is along one axis, we take that axis to be <m>x</m>-axis with original direction to be positive <m>x</m>-axis. Since the collision is elastic, we will get both momentum and kinetic energy conservations.
+				<md>
+					<mrow>\amp x\text{-momentum: } m v_0 = m u + 3 m v. </mrow>
+					<mrow>\amp  \text{kinetic energy: } \frac{1}{2}m v_0^2 = \frac{1}{2}m u^2  + \frac{1}{2}3m v^2.</mrow>
+				</md>
+				These can be simplified to
+				<md>
+					<mrow>\amp  u + 3 v = 5. </mrow>
+					<mrow>\amp  u^2  + 3 v^2  = 25.</mrow>
+				</md>
+				Eliminating <m>v</m>, we get
+				<me>
+					u^2 - \frac{5}{2}\,u -\frac{25}{2} = 0.
+				</me>
+				This gives <m>u=5, -5/2</m>. If <m>u=5</m>, <m>v=0</m>, which is not the solution we seek. Using <m>u=-5/2</m>, we get
+				<me>
+					v = \frac{1}{3}( 5-u ) = \frac{5}{2}.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="ex-Resulting-Motion-After-a-Head-on-Collision-Elastic-Versus-Inelastic"><title> Resulting Motion After a Head-on Collision - Elastic Versus Inelastic </title>
+		<statement>
+			<p>
+				Two balls A and B of masses <m>m_A = 0.2\text{ kg}</m> and <m> m_B = 0.4\text{ kg}</m> collide head on. Before the collision, both balls are moving in the same direction with speeds <m>v_A = 10\text{ m/s}</m> and <m> v_B = 8\text{ m/s}</m>. Find their velocities after the collision if (a) the collision is elastic and (b) if the two balls stick together and move as one.
+			</p>
+
+		</statement>
+		<!-- <hint> <p> (a) Both momentum and kinetic energy are conserved. (b) Just momentum is conserved.  </p> </hint> -->
+		<answer> <p> (a) <m> (v_A = 22/3\text{ m/s},\ v_B = 28/3\text{ m/s})</m>, (b) <m> v_A = v_B = 26/3\text{ m/s}</m>.  </p> </answer>
+		<solution> <title>a</title>
+			<p>
+				Suppose the motion is along <m>x</m> axis. For brevity in equations, let <m>u</m> and <m>v</m> denote the <m>x</m> components of the velocities of A and B, respectively. Since in this part we are assuming that the collision is elastic, we will have two conditions to satisfy.
+				<md>
+					<mrow> \amp 0.2\times 10 + 0.4\times 8 = 0.2\,u + 0.4\, v,</mrow>
+					<mrow> \amp \dfrac{1}{2}\ 0.2\times 10^2 + \dfrac{1}{2}\ 0.4\times 8^2 = \dfrac{1}{2}\ 0.2\,u^2 + \dfrac{1}{2}\ 0.4\, v^2. </mrow>
+				</md>
+				Simplifying these equations, we get
+				<md>
+					<mrow> \amp u + 2 v = 26,</mrow>
+					<mrow> \amp u^2 + 2 v^2 = 228. </mrow>
+				</md>
+				Solving them we get <m> (u = 10,\ v=8)</m> and <m> (u = 22/3,\ v=28/3)</m>. The first of these states that there is no collision, so we drop it. The seond answer is what will happen due to the elastic collision.
+				<me>
+					\text{After elastic collision: } v_A = \dfrac{22}{3}\text{ m/s},\ \ v_B = \dfrac{28}{3}\text{ m/s}. 
+				</me>
+				Since the values are positive, both A and B still moving towards the positive <m>x</m>axis.  				
+
+			</p>
+		</solution>
+		<solution> <title>b</title>
+			<p>
+				Since the two balls stick together, they will have same velocity after the collision. Let their common <m>x</m>-velocity be denoted by <m>v</m>. Setting up conservation of momentum gives
+				<me>
+					0.2\times 10 + 0.4\times 8 = (0.2 + 0.4)\, v.
+				</me> 
+				Solving this for <m>v</m> we get
+				<me>
+					v = \dfrac{26}{3}\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="Colliding-Bodies-Stuck-Together"><title> Colliding Bodies Stuck Together - Inelastic Collision</title>
+		<statement>
+			<p>
+				Two balls A and B of mass <m> 0.4\text{ kg}</m> and <m> 0.45\text{ kg}</m> are moving towards each other with speeds <m> 5\text{ m/s}</m> and <m> 8\text{ m/s}</m> respectively.   
+			</p>
+			<p>
+				After collision, they stick together, and then move as one rigid object. 
+			</p>
+			<p>
+				Find the speed and direction in which the pair moves.
+			</p>
+			<figure xml:id="fig-ex-Colliding-Bodies-Stuck-Together">
+				<caption></caption>
+				<image source="./images/momentum/ex-Colliding-Bodies-Stuck-Together.png" width="100%"/>
+			</figure>
+
+		</statement>
+		<!-- <hint> <p>  Apply conservation of momentum along the <m> x </m> axis. Be mindful of signs when computing components. </p> </hint> -->
+		<answer> <p> <m> 1.9\text{ m/s} </m> towards the negative <m> x </m> axis. </p> </answer>
+		<solution> 
+			<p>
+				In the figure, the final velocity direction is taken to be arbitrary to the right. We will actually find the <m> x </m> component of the final velocity, <m> v_{f,x} </m>, whose sign will be indiactive of the direction.
+			</p>
+			<p>
+				The conservation of momentum along the <m> x </m> axis will give rise to the following equation.
+				<me>
+					0.4\times 5 + 0.45\times (-8) = (0.4 + 0.45)\, v_{f,x},
+				</me>
+				which gives
+				<me>
+					v_{f,x} = -1.9\text{ m/s}.
+				</me>
+				Since <m> v_{f,x} \lt 0</m>, the pair move towards the negative <m> x </m> axis.
+			</p>
+		</solution>
+	</example>
+
+
+	</subsection>
+
+	<subsection><title> Impulse of Internal Forces </title>
+		<p>
+			In a collision, although the total momentum of the colliding bodies do not change, the individual momenta do change. This is due to the impulse they exert on each other. From the change in the momentum of one body, we get the impulse by the other body. By looking at the change in momentum of the body and an estimate of the duration <m> \Delta t </m> of their contact, we can ascertain the average force between the bodies during the collision.
+		</p>
+		<p>
+			<md>
+				<mrow> \amp \vec p_{1,f} - \vec p_{1,i} = \vec F_{\text{on 1}}^{\text{by 2}}\, \Delta t,</mrow>
+		  		<mrow> \amp \vec p_{2,f} - \vec p_{2,i} = \vec F_{\text{on 2}}^{\text{by 1}}\, \Delta t, </mrow>
+			</md> 
+			where 
+			<me>
+				\vec F_{\text{on 1}}^{\text{by 2}} = - \vec F_{\text{on 2}}^{\text{by 1}}.
+			</me> 
+			If we know the momentum change of one colliding body and have a good estimate of the duration <m> \Delta t </m>  for which the two objects were in contact, these equations can be used to obtain an estimate of the average force <m> \vec F_{\text{ave}}  </m>  <m> = \vec F_{\text{on 1}}^{\text{by 2}}</m> between the two bodies.
+		</p>
+	</subsection>
+
+	<subsection><title> Summary of Formulas for Collision</title>
+		<p>
+			We get two types of information in collision - a redistribution of total momentum among the colliding bodies and impulse on each body.
+			<md>
+				<mrow> \amp \vec p_{1,i} + \vec p_{2,i} = \vec p_{1,f} + \vec p_{2,f},</mrow>
+				<mrow> \amp \vec p_{1,f} - \vec p_{1,i} = \vec J_\text{on 1}.</mrow>
+			</md> 
+			From the impulse and an estimate of the collision duration we can obtain an estimate of the averge force during the collision, whose magnitude will be
+			<me>
+				F_\text{av} = \dfrac{J_\text{on 1}}{\Delta t} = \dfrac{|\Delta p_1|}{\Delta t}.
+			</me>
+			Additionally, if collision is elastic, 
+			<me>
+				\frac{p_{1,i}^2}{2m_1} + \frac{p_{2,i}^2}{2m_2} = \frac{p_{1,f}^2}{2m_1} + \frac{p_{2,f}^2}{2m_2}, 
+			</me>
+			where I have written Kinetic energy as
+			<me>
+				KE = \frac{1}{2}mv^2 = \frac{p^2}{2m}.
+			</me>
+		</p>
+	</subsection>
+
+
+
+
+
+
+	<exercises>
+
+	<exercise xml:id="ex-Bullet-Passing-Through-a-Block-of-Wood"><title> Bullet Passing Through a Block of Wood </title>
+		<statement>
+			<p>
+				A 15-gram bullet is fired at a 5.0-kg block of wood sitting on a frictionless table. The bullet enters the wood at <m> 400\text{ m/s}</m>, passes through the wood, and exits at <m>100\text{ m/s} </m>. What is the speed of the wood block immediately after the bullet exits, ignoring any mass loss of the wood in the process. 
+			</p>
+			<figure xml:id="fig-collision-bullet-through-block-exits-statement">
+				<caption></caption>
+				<image source="./images/momentum/collision-bullet-through-block-exits-statement.png" width="80%"/>
+			</figure>
+			
+
+		</statement>
+		<hint> <p> Use one-dimensional collision  </p> </hint>
+		<answer> <p> <m> 0.9\text{ m/s} </m> </p> </answer>
+		<solution> 
+			<p>
+				Let index 1 refer to the bullet and 2 to the block. Let positive <m> x </m> axis be in the direction of the velocity of the bullet. From the conservation of momentum along the <m>x</m> axis, we immediately get the following equation.
+				<me>
+					m_1v_{1,x} + 0 = m_1 v_{1,x}^\prime + m_2 v_{2,x}^\prime.
+				</me>
+				We solve this for <m>  v_{2,x}^\prime </m>. We also note that  <m> x </m> components of all the velocity are positive.
+				<md>
+					 <mrow> v_{2,x}^\prime \amp = \dfrac{m_1}{m_2}\left(v_{1,x} - v_{1,x}^\prime \right), </mrow>
+					 <mrow>  \amp = \dfrac{0.015}{5}\left(400 - 100 \right) = 0.9\text{ m/s}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-A-Projectile-Breaking-up-in-Mid-Air"><title> A Projectile Breaking up in Mid Air </title>
+		<statement>
+			<p>
+				A projectile of mass <m> 2\text{ kg}</m> moving at <m>50\text{ m/s}</m> breaks up in mid air into two pieces as shown in <xref ref="fig-ex-A-Projectile-Breaking-up-in-Mid-Air"/>.  The larger piece comes out at <m>60\text{ m/s}</m>  in the forward direction, and the smaller piece at <m>100\text{ m/s}</m>  in the backward direction.  
+			</p>
+			<p>
+				What are the masses of the two pieces?
+			</p>
+			<figure xml:id="fig-ex-A-Projectile-Breaking-up-in-Mid-Air">
+				<caption>
+					Figure for <xref ref="ex-A-Projectile-Breaking-up-in-Mid-Air"/>.
+				</caption>
+				<image source="./images/momentum/ex-A-Projectile-Breaking-up-in-Mid-Air.png" width="80%"/>
+			</figure>	
+
+
+		</statement>
+		<hint> <p>  Use conservation of momentum using the forward-bacward direction as the <m> x </m> axis.  </p> </hint>
+		<answer> <p>  <m> 1.875\text{ kg}</m> and <m> 0.125\text{ kg}</m>. </p> </answer>
+		<solution> 
+			<p>
+				The breaking up process is reverse of sticking together process. In both situations, we have only the internal forces. Therefore, momentum is conserved.  
+			</p>
+			<sidebyside widths="55% 5% 40%">
+				<p> 
+					Since the momentum conservation is a vector equation, we can choose axes to simplify that equation. 
+					Here, if we choose positive <m>x</m>-axis to point in the forward direction, as shown in the figure below, we need to work with only <m>x</m>-components.
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-A-Projectile-Breaking-up-in-Mid-Air-soln">
+					<caption></caption>
+					<image source="./images/momentum/ex-A-Projectile-Breaking-up-in-Mid-Air-soln.png" width="50%"/>
+				</figure>
+			</sidebyside>
+				
+			<p>
+				Implementing momentum conservation equation we get
+				<men xml:id="eq-ex-A-Projectile-Breaking-up-in-Mid-Air-1">
+					2\times 50 = 60\,m_1 + (-100)\, m_2,
+				</men>
+				and mass conservation gives
+				<men xml:id="eq-ex-A-Projectile-Breaking-up-in-Mid-Air-2">
+					m_1 + m_2 = 2.
+				</men>
+				Therefore, we replace <m> m_2</m> by <m> 2 - m_1 </m> in Eq. <xref ref="eq-ex-A-Projectile-Breaking-up-in-Mid-Air-1"/> to get
+				<me>
+					100 = 60\,m_1  - 100\times (2 - m_1),
+				</me>
+				which can be solved for <m> m_1 </m>.
+				<me>
+					m_1 = 300/160 = 1.875\text{ kg}.
+				</me>
+				From Eq.  <xref ref="eq-ex-A-Projectile-Breaking-up-in-Mid-Air-2"/>	
+				<me>
+					m_2 = 2 - 1.875 = 0.125\text{ kg}.
+				</me>		
+			</p>	
+			
+		</solution>
+	</exercise> 
+ 
+	<exercise xml:id="ex-Recoil-of-a-Tennis-Ball-Machine"><title>Recoil of a Tennis Ball Machine</title>
+
+		<statement>
+			<p>
+				A tennis ball machine is placed on a frictionless table. Let <m>M</m> be the mass of ball machine and <m>m</m> the mass of the tennis ball. Initially, the ball machine and ball are at rest.
+			</p>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					The ball machine shoots ball at speed <m>u</m> <alert>with respect to the machine</alert>, when the machine itself is recoiling. The ball comes out at angle <m>\theta</m> above the horizontal as shown in <xref ref="fig-recoil-of-tennis-ballmachine"/>. 
+					What will be the recoil speed <m>V</m> of the ball machine with respect to the table?
+				</p>
+				<p></p>
+				<figure xml:id="fig-recoil-of-tennis-ballmachine">
+					<caption></caption>
+					<image source="./images/momentum/recoil-of-tennis-ballmachine.png" width="50%"/>
+				</figure>
+			</sidebyside>
+		</statement>
+		<hint><p>Use conservation of momentum with respect to the table.</p></hint>
+		<answer><p>
+			<m>
+				\frac{ m u\cos\theta. }{M+m}
+			</m>.
+
+		</p></answer>
+		<solution>
+			<p>
+				We will use conservation of momentum with in the frame of the table. Therefore, we need to express all velocities with respect to the table. 
+			</p>
+			<p>
+				Let <m>x</m>-axis point horizontally to the right. Then, after the shot, the ball machine has the <m>x</m>-velocity,
+				<me>
+					V_x = - V,
+				</me>
+				and the ball has the <m>x</m>-velocity
+				<me>
+					v_x = u\cos\theta - V. 
+				</me>
+				Make sure you understand why <m>V</m> needs to be subtracted to get velocity of ball with respect to the table.
+			</p>
+			<p>
+				 Then, <m>x</m>-component of the conservation of momentum equation gives
+				<me>
+					(M+m)\times 0 = m (u\cos\theta - V) + M (-V),
+				</me>
+				where <m>-V</m> has negative sign since we are using <m>x</m>-component. Solving for <m>V</m> we havbe
+				<me>
+					V = \frac{ m u\cos\theta. }{M+m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Motion-of-Two-Pieces-in-a-One-Dimensional-Explosion"><title>Motion of Two Pieces in a One Dimensional Explosion </title>
+
+		<statement>
+			<p>
+				A rocket of mass <m>M</m> is flying at a speed <m>100\text{ m/s}</m> with respect to ground. Suddenly it breaks up into two pieces of mass <m>0.3M</m> (piece A) and <m>0.7M</m> (piece B). After the explosion, B continues in the forward direction with a new speed <m>V</m> with respect to ground and A moves in the backward direction with speed <m>u=150\text{m/s}</m> relative to the B. Find the speed of B.
+			</p>
+		</statement>
+		<hint><p>
+			Total momentum is conserved in an explosion.
+		</p></hint>
+		<answer><p>
+			<m>145\text{ m/s}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The explosion involves only internal forces between the two resulting pieces. Therefore, total momentum is conserved. But, we need to make sure we express all momenta with respect to the same reference, which we will take to be ground.
+			</p>
+
+
+			<p>
+				Let forward direction be positive <m>x</m>-axis direction as shown in <xref ref="fig-one-dim-explosion-point3-point7M"/>. Then, <m>x</m>-component of velocities of original and A and B pieces with respect to ground will be
+				<md>
+					<mrow> \amp v_x(\text{original}) = 100\text{ m/s}. </mrow>
+					<mrow> \amp v_x(A) = v_x(\text{ of B with respect to ground}) +  v_x(\text{ of a with respect to B}) = V - 150.</mrow>
+					<mrow> \amp v_x(B) = V .</mrow>
+				</md>
+			</p>
+			<figure xml:id="fig-one-dim-explosion-point3-point7M">
+				<caption></caption>
+				<image source="./images/momentum/one-dim-explosion-point3-point7M.png" width="70%"/>				
+			</figure>
+			
+			<p>
+				Conservation of momentum will yield
+				<me>
+					100\,M = 0.3\,M\,(V-150) + 0.7\,M\,V\ \ \longrightarrow\ \ V = 145\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+	</exercise>	
+
+
+	<exercise xml:id="ex-Motion-of-Two-Pieces-in-a-Two-Dimensional-Explosion"><title>Motion of Two Pieces in a Two Dimensional Explosion </title>
+
+		<statement>
+			<p>
+				<xref ref="fig-two-dim-explosion-point3-point7M"/> shows a rocket of mass <m>M</m> moving in space with speed <m>v_0=110\text{ m/s}</m> with respect to ground, and then exploding in two pieces. Let the masses of the two pieces A and B be <m>0.2M</m> and <m>0.8M</m> respectively. Piece A is seen to move with speed <m>u</m> in the direction <m>\phi=60^\circ</m> as seen by a ground-based observer. Larger piece B moves with speed <m>V</m> in the direction <m>\theta=30^\circ</m> by the ground-based observer. Find values of <m>u</m> and <m>V</m>.
+			</p>
+			<figure xml:id="fig-two-dim-explosion-point3-point7M">
+				<caption></caption>
+				<image source="./images/momentum/two-dim-explosion-point3-point7M.png" width="70%"/>				
+			</figure>
+
+		</statement>
+		<hint><p>
+			Apply conservation of momentum along <m>x</m> and <m>y</m> axis.
+		</p></hint>
+		<answer><p>
+			<m>u=550\text{ m/s}</m>, <m>V=238\text{ m/s}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Using <xref ref="fig-two-dim-explosion-point3-point7M"/> we can write conservation of momentum along <m>x</m> and <m>y</m> axis. 
+				<mdn>
+					<mrow xml:id="eq-two-dim-explosion-point3-point7M-1">\amp 0.8 M V \cos\theta - 0.2 M u \cos\phi = M v_0. </mrow>
+					<mrow  xml:id="eq-two-dim-explosion-point3-point7M-2">\amp 0.8 M V \sin\theta - 0.2 M u \sin\phi = 0. </mrow>
+				</mdn>
+				From the second equation, we get
+				<me>
+					V = \frac{1}{4}\,u\,\frac{\sin\phi}{\sin\theta} = \frac{\sqrt{3}}{4}\,u.
+				</me>
+				Using this in Eq. <xref ref="eq-two-dim-explosion-point3-point7M-2"/> gives
+				<me>
+					0.8\times \frac{\sqrt{3}}{4}\,u\,\cos\theta - 0.2\,\,\cos\phi = v_0.
+				</me>
+				Solving this for <m>u</m>, we get
+				<me>
+					u = 5 v_0 = 550\text{ m/s}.
+				</me>
+				Therefore,
+				<me>
+					V = \frac{5\sqrt{3}}{4}v_0 = 238\text{ m/s}.
+				</me>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-One-Dimensional-Collision-of-Two-blocks-of-Different-Masses"><title>One Dimensional Collision of Two blocks of Different Masses</title>
+
+		<statement>
+			<p>
+				A block of mass <m>m</m> moving with speed <m>5\text{ m/s}</m> collides head on with another block of mass <m>am</m> at rest, where <m>a\gt 0</m>. After collision, <m>m</m> moves in the opposite direction to its original direction with the same speed as before the collision. (a) Find speed of the the other block. (b) Prove that in the limit <m>a\rightarrow \infty</m>, the collision will be elastic.
+			</p>
+		</statement>
+		<hint><p>
+			(a) Only momentum is conserved.
+		</p></hint>
+		<answer><p>
+			(a) <m>\frac{10}{a}\text{ m/s}</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				Let <m>v</m> be the speed of the second block after collision. Using <m>x</m>-axis along the direction of motion, we get
+				<md>
+					<mrow>\amp x\text{-momentum: } m \times 5 = m \times (-5) + a m v. </mrow>
+				</md>
+				This gives
+				<me>
+					v = \frac{10}{a}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				Let us find the difference in kinetic energy.
+				<md>
+					<mrow>\Delta\,KE \amp = \left[ \frac{1}{2} (am) \left( \frac{10}{a}\right)^2 + \frac{1}{2}m \times 5^2 \right] - \frac{1}{2}m \times 5^2  </mrow>
+					<mrow> \amp =  \frac{50\,m}{a}. </mrow>
+				</md>
+				This will be zero as <m>a\rightarrow \infty</m>. Therefore, kinetic energy will be also consered in this limit, which will mean that for the first block to bounce back with the same speed, the collision will be elastic if the second block has infinite mass.
+			</p>
+		</solution>
+
+	</exercise>
+
+
+	</exercises>
+
+</section>

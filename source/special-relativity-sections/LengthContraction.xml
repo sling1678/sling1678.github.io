@@ -1,0 +1,129 @@
+<section xml:id="sec-LengthContraction"><title> Length Contraction </title>
+	<introduction>
+		<p>
+			We define length of a rod as the distance between the positions of the two ends <alert>at the same time</alert>. The caveat that the positions of the two ends be know at the same time in the frame in which we seek the length is important since time and position are connected in Lorentz transformations. Below we will apply Lorentz transformation to seek length in a frame in which rod is moving.
+		</p>
+ 
+
+		<p>
+			For simplicity, we consider rod along <m>x</m> axis, which is the direction of the relative motion of frames as shown in <xref ref="fig-length-contraction-frames"/>. We consider rod to be at rest in frame S' with ends A and B  with events <m>(t'_A, x'_A)</m> and <m>(t'_B=t'_A, x'_B \gt x'_A)</m>, respectively. In frame S', we define length by 
+			<me>
+				L_0 = x'_B - x'_A.
+			</me>
+
+		</p>
+		<figure xml:id="fig-length-contraction-frames">
+			<caption>
+				Length <m>L_0</m> is defined as <m>|x'_B-x'_A|</m> when <m>t'_B=t'_A</m> for events A and B.
+			</caption>
+			<image source="./images/modern-physics/length-contraction-frames.png" width="90%"/>
+
+		</figure>
+		<p>
+			To calculate length of the rod in frame S, we first find Lorenz transformation of events A and B. During calculation we will keep <m>t'_A</m> and <m>t'_B</m> separate even though they are equal in our calculations. This helps keeping track of the two events.
+			<md>
+				<mrow> \amp t_A = \gamma \left( t'_A + V x'_A/c^2 \right),\ \ x_A = \gamma \left( x'_A + V t'_A \right) </mrow>
+				<mrow> \amp t_B = \gamma \left( t'_B + V x'_B/c^2 \right),\ \ x_B = \gamma \left( x'_B + V t'_B \right) </mrow>
+			</md>
+			We want <m>x_B-x_A</m> when <m>t_B=t_A</m>. Towards that end, let us express <m>t'_A</m> and <m>t'_B</m> in terms of <m>t_A</m> and <m>t_B</m>  by using the first set of these equations.
+			<me>
+				t'_A = \frac{t_A}{\gamma} - V x'_A/c^2,\ \  t'_B = \frac{t_B}{\gamma} - V x'_B/c^2.
+			</me>
+			Therefore,
+			<md>
+				<mrow>x_B - x_A \amp = \gamma \left[ x'_B + \frac{V t_B}{\gamma} - \frac{V ^2}{c^2}x'_B\right] - \gamma \left[ x'_A + \frac{V t_A}{\gamma} - \frac{V ^2}{c^2}x'_A\right] </mrow>
+				<mrow> \amp = \gamma \left[ x'_B - x'_A   - \frac{V ^2}{c^2}\, \left(x'_B - x'_A \right)\right] + \frac{V}{\gamma}\left( t_B - t_A  \right) </mrow>
+			</md>
+			<alert>This will give length if <m>t_B=t_A</m> in this frame (S)</alert>. Denoting <m>x_B-x_A</m> by <m>L</m> since we have denoted <m>x'_B - x'_A</m> by <m>L_0</m>, we have
+			<md>
+				<mrow> L\amp =  \gamma \left( 1 - \frac{V^2}{c^2} \right) \, L_0.</mrow>
+			</md>
+			With <m>\gamma = 1/\sqrt{1-V^2/c^2}</m>, this is
+			
+			<men xml:id="lorentz-contraction">
+				L = \dfrac{L_0}{\gamma} = L_0\,\sqrt{ 1 - \dfrac{V^2}{c^2}  }.
+			</men>
+			This is called <term>length cortaction</term>. Since <m>\gamma \gt 1</m>, length of a rod will be smaller in a frame in which rod is moving, i.e., <m>L \le L_0</m>.
+		</p>
+		<p>
+			Since <m>y</m> and <m>z</m> coordinates do not change, the transverse dimensions, i.e., the dimensions of the rod perpendicular to the direction of the motion of the rod are unaffected. Let us denote these dimensions with a subscript <m>\perp</m>.
+			<men>
+				L_{\perp} = L_{0\perp}.
+			</men>
+		</p>
+
+	</introduction>
+
+	<exercise xml:id="ex-Relation-of-Distance-in-Two-Spaceships-in-Relative-Motion"><title>Relation of Distance in Two Spaceships in Relative Motion</title>
+
+		<statement>
+			<p>
+				Same two observers as in Exercise  <xref ref="ex-Relation-of-Duration-in-Two-Spaceships-in-Relative-Motion"/>.  A rod of length <m>1\:\textrm{m}</m> is laid out on the <m>x</m>-axis in the frame of A from origin to <m>(x =1\: \textrm{m}, 0,0)</m>.  What will be the length of the rod observed by an observer in frame of spaceship B?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+				We use length contraction to answer this.
+				<me>
+					L_B = \frac{L_A}{\gamma} = \frac{\sqrt{3}}{2}\times 1\text{ m} = 0.866\text{ m}.
+				</me>
+			</p>
+		</solution>
+	</exercise> 
+	
+
+	<exercise xml:id="ex-Size-of-a-spaceship"><title>Size of a spaceship</title>
+
+		<statement>
+			<p>
+				A spaceship is seen to move past an observer on Earth at a speed of <m>0.95 c</m>, i.e. at <m>95\%</m> of the speed of light in the direction parallel to the length of the ship. An astronaut in the spaceship has measured the length of the spaceship to be 100 m. What will be the length of the spaceship as observed by the observer on Earth?
+			</p>
+		</statement>
+		<hint><p>
+			Use length contraction formula.
+		</p></hint>
+		<answer><p>
+			<m>31.3\:\textrm{m}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The length 100 m for the spaceship is the length in the rest frame of the ship. The length observed by the Earth-based observer will be in the lab frame. From our discussion above the lab frame value will be contracted compared to the rest frame value by a factor of <m>\gamma</m>.  Here <m>\gamma</m> has the following value.
+				<me>
+					\gamma = \frac{1}{\sqrt{1-V^2/c^2}} = \frac{1}{\sqrt{1-0.95^2}} = 3.2.
+				</me>
+				Therefore, the length observed by the observer on Earth will be
+				<me>
+					L = \frac{L_0}{\gamma} = \frac{100\: \textrm{m}}{3.2} = 31.3\:\textrm{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Relation-of-Duration-in-Two-Spaceships-in-Relative-Motion-2"><title>Relation of Duration and Distance in Two Spaceships in Relative Motion</title>
+
+		<statement>
+			<p>
+				Same two observers as in Exercise  <xref ref="ex-Relation-of-Duration-in-Two-Spaceships-in-Relative-Motion"/>.  But, now we look at two events occurring in spaceship A. A photon arrives at the origin of A at its time <m>t=0</m> and another photon arrives at <m>(x =1\: \textrm{m}, 0,0)</m> at <m>t=0</m> in the frame of ship A. (a) Find the coordinates and times of the two events as observed by frame B. (b) In which frame, the two events are simultaneous and in which frame they are not simultaneous?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p>
+			(a) <m>1.92 \times 10^{-9}\text{ sec}</m>, <m>1.155\text{ m}</m>, (b) Simultaneous in A.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)
+				Now, the events are in frame A, which is moving towards positive <m>x</m> axis when observed from frame B. The event of photon arriving at origin at <m>t_A=0</m> will be also origin of B at <m>t_B=0</m> since the two frames were set that way. The other event of photon at <m>x_A = 1\text{ m}</m> at <m>t_A=0</m> will have <m>t_B</m> and <m>x_B</m> as follows.
+				<md>
+					<mrow> t_B \amp = \gamma\left( t_A + x_A V/c^2\right)</mrow>
+					<mrow> \amp = \sqrt{2}{\sqrt{3}}\times \frac{1}{2\times 3 \times 10^{8}} = 1.92 \times 10^{-9}\text{ sec}.</mrow>
+				</md>
+				<md>
+					<mrow> x_B \amp = \gamma\left( x_A + V t_A\right) = \sqrt{2}{\sqrt{3}}\times 1 =  1.155\text{ m}.</mrow>
+				</md>				
+			</p>
+		</solution>
+	</exercise>
+</section>

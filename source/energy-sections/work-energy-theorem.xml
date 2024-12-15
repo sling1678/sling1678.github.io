@@ -1,0 +1,213 @@
+<section xml:id="The-Work-Energy-Theorem"><title> The Work-Energy Theorem </title>
+
+	<subsection> <title> Kinetic Energy and Net Work</title>
+
+		<p>
+			Consider the motion of the body over an interval from <m> t_i </m> to <m> t_f</m>. Let <m> K_i </m> be its kinetic energy  at the initial time and <m> K_f </m> at the final time. That is,
+			<me>
+				K_i = \dfrac{1}{2}\, m\, v_i^2,\ \ \ K_f = \dfrac{1}{2}\, m\, v_f^2,
+			</me>
+			where <m> v_i</m> and <m> v_f </m> are the speeds at the initial and final instants.
+		</p>
+		<p> 
+			Using Newton's second law of motion, we can prove the following important equality.			  
+			<men>
+				W_{if}^{\text{net}} = K_f - K_i,
+			</men>
+			where <m> W_{if}^{\text{net}} </m> is the <alert> net </alert> work done by all the forces during the interval <m> t_i </m> to <m> t_f</m>. This result is called the <term> Work-energy theorem</term>. It says that if there is no net work, then kinetic energy would not change. You might think of this as a statement of the <term> conservation of kinetic energy</term>. 
+			<p>
+				 <alert> No change in kinetic energy if no work done! </alert>
+			</p>
+		</p>
+	</subsection>
+
+	<exercise xml:id="Using-Work-energy-Theorem"><title> Using Work-energy Theorem to Find Work and Changes in Kinetic Energy</title>
+		<statement>
+			<sidebyside widths="60% 10% 25% 5%">
+				<p> A box of mass <m> 20\text{ kg}</m> is pushed on a floor with a constant horizontal force of <m> 50\text{ N}</m>. There is a kinetic friction of magnitude <m> 10\text{ N}</m> that opposes the sliding of the box. The weight of the box is balanced by the normal force. 
+				</p>
+				<p> </p>
+				<image source="./images/energy/wet-box-pushed-on-floor.png" />
+				<p></p>
+			</sidebyside>			
+			<p>
+				(a) How much work is done on the box by each of the forces when the box is displaced by <m> 3.0 \text{ m}</m>?
+			</p>
+			<p>
+				(b) How much net work is done on the box when box is displaced by <m> 3.0 \text{ m}</m>?
+			</p>
+
+			<p>
+				(c) How much kinetic energy of the box changes when it is displaced by <m> 3.0 \text{ m}</m>?
+			</p>
+			<p>
+				(d) If the speed of the box was <m> 2.0\text{ m/s} </m> at the beginning of the interval, what will be its speed  at the end?
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p> (a) <m>150\text{ N.m}</m>, <m> -30\text{ N.m}</m>, 0, 0, (b) <m> 120\text{ N.m}</m>, (c) <m> 120\text{ J}</m>, (d) <m> 4\text{ m/s}</m>. </p> </answer>
+		<solution> <title>(a)</title>
+			<p>(a) 
+				The push force <m> \vec F</m> is in the direction of the displacement. Therefore, work by this force will be
+				<me>
+					W_{if}^{F} = 50\text{ N}\times 3.0 \text{ m}\times \cos\, 0^{\circ} = 150\text{ N.m}.
+				</me>
+				The kinetic friction <m> \vec F_k</m> acts in the opposite direction of motion, and hence to displacement. Therefore,
+				<me>
+					W_{if}^{F_k} = 10\text{ N}\times 3.0 \text{ m}\times \cos\, 180^{\circ} = -30\text{ N.m}.
+				</me>
+				Work by other forces, weight and normal, are zero, since they are perpendicular to the displacement.					
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>(b)
+				We add work by all forces to get he net work.
+				<me>
+					W_{if}^{\text{net}} = W_{if}^{F} + W_{if}^{F_k} =  150\text{ N.m} - 30\text{ N.m} =  120\text{ N.m}.
+				</me>
+					
+			</p>
+		</solution>
+		<solution> <title>(c)</title>
+			<p>(c)
+				According the work-energy theorem, the change in kinetic energy is equal to the net work.
+				<me>
+					\Delta K = W_{if}^{\text{net}} = 120\text{ N.m}.
+				</me>
+				But, when we write units of <m> K </m>, we reexpress the unit as
+				<me>
+					\text{kg.m}^2\text{/s}^2 \text{ or } \text{J},   
+				</me>
+				which is equal to <m> \text{N.m} </m>.
+				<me>
+					\Delta K = 120\text{ J}.
+				</me>					
+					
+			</p>
+		</solution>
+		<solution> <title>(d)</title>
+			<p>(d)
+			</p>
+			<!-- <image source="./images/energy/wet-box-pushed-on-floor-solution-d.png" width="60%" /> -->
+			<p>
+				From the change in kinetic energy, we can find the speed at the end if we know the speed at the beginning. We have,
+				<me>
+					\dfrac{1}{2}\,m\,v_f^2 - \dfrac{1}{2}\,m\,v_i^2 = W_{if}^{\text{net}}.
+				</me>
+					Rearranging we get
+					<me>
+						v_f^2 = v_i^2 + \dfrac{2}{m}\times W_{if}^{\text{net}}.
+					</me>
+					Putting in the numbers gives
+					<me>
+						v_f^2 = 2.0^2 + \dfrac{2}{20}\times 120 = 16.
+					</me>
+					Taking square root and keeping only the positive root (since speed by definition is positive), we get
+					<me>
+						v_f = 4\text{ m/s}.
+					</me> 					
+					
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Average-Force-on-a-Train-From-Change-in-Kinetic-Energy"><title> Average Force on a Train From Change in Kinetic Energy </title>
+		<statement>
+			<p>
+				The speed of a train of mass <m> 20,000\text{ kg}</m> changes from <m> 5 \text{ m/s}</m> to <m> 10 \text{ m/s}</m> over a distance of <m> 200\text{ m}</m>. What is the average net force on the train?
+			</p>
+
+		</statement>
+		<hint> <p> Use <m> F_\text{av} d = \Delta KE </m>. </p> </hint>
+		<answer> <p> <m>3,750\text{ N} </m>.  </p> </answer>
+		<solution> 
+			<p>
+				Since the train is accelerating, the average net force will be in the direction of the motion of the train. Let <m>F_\text{av}</m> be the magnitude of this force. The work done by this force over a displacement <m> d </m> will be
+				<me>
+					W = F_\text{av} d,
+				</me>
+				which will equal the change in the kinetic energy. Therefore, we will have
+				<me>
+					F_\text{av} d = \Delta KE.
+				</me>			
+				Solving this we get
+				<me>
+					F_\text{av} = \dfrac{1}{d}\, \Delta KE.
+				</me>
+				Now, we use numerical values given.
+				<me>
+					\Delta KE = \dfrac{1}{2} m v_f^2 - \dfrac{1}{2} m v_i^2   = 750,000\text{ J}.
+				</me>
+				Therefore
+				<me>
+					F_\text{av} = \dfrac{750,000}{200} = 3,750\text{ N}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<subsection> <title> (Calculus) Work-Energy Theorem </title>
+ 
+		<p> 
+			We will now prove the work-energy theorem stated above using a simple system. Let us consider the simplest possible system - a system that has a single particle of fixed mass <m> m </m>, that is subject to a net force, <m>\vec F_{\text{net}}</m>. Newton's second law in Force/acceleration form is as follows.
+			<me>
+				\vec F_{\text{net}} = m\dfrac{d\vec v}{dt}
+			</me>
+			Now, we take a dot product of both sides with the infinitesimal displacment vector <m> d\vec r</m> and integrate over a path during an interval <m> t_i</m> to <m> t_f</m>. The force side of this eqaution  gives the net work by all forces, but what about the right side?  
+			<md>
+				<mrow> \int_i^f\,\vec F_{\text{net}}\cdot d\vec r \amp = \int_i^f\,m\,\dfrac{d \vec v}{dt}\cdot d\vec r  = \int_i^f\,m\, 
+					(d \vec v) \cdot   \dfrac{d\vec r}{dt}  
+				</mrow>
+				<mrow> \amp	= \int_i^f\,m\,  
+					(d \vec v) \cdot    \vec v = \int_i^f\,m\,  
+					   \vec v \cdot  d \vec v
+					</mrow>
+				<mrow>  	\amp = \int_i^f\,m\, (v_xdv_x + v_ydv_y + v_zdv_z)  </mrow> 
+				<mrow>
+					\amp = m\,\int_i^f\,  \left( \dfrac{1}{2}dv_x^2 + \dfrac{1}{2}dv_y^2 + \dfrac{1}{2}dv_z^2 \right) </mrow> 
+
+				<mrow> \amp  = \dfrac{m}{2}\,\int_i^f\,  d\left( v_x^2 +  v_y^2 +  v_z^2 \right)  = \dfrac{m}{2}\,\int_i^f\, dv^2  </mrow>
+				<mrow>\amp = \dfrac{1}{2} m \,\left( v_f^2 - v_i^2\right) = K_f - K_i, </mrow>
+			</md>
+			where <m> v_i </m> and <m> v_f </m> are the initial and final speeds. 
+			The left side is just the total work done and the right side the change in kinetic energy. 
+			<men xml:id="eq-work-energy-theorem-0">
+				W_{if}^{\text{net}} = K_f - K_i.
+			</men>
+ 
+		</p>
+
+		<p> 
+			You might say that: But, you have proven work-energy theorem for a system of one particle only. How do I know it works in general? 
+		</p>
+		<p>
+		Well, lets see what will happen to a system of arbitray number of particles. Each particle will have its own equation of motion given by Newton's second law applied to that particle. Using obvious notation to denote quantities, we will get the following collection of equations.
+ 
+			<md>
+				<mrow>\amp \vec F_{\text{on 1}} = m_1 \dfrac{d\vec v_1}{dt}, </mrow>
+				<mrow>\amp \vec F_{\text{on 2}}  = m_2 \dfrac{d\vec v_2}{dt}, </mrow>
+				<mrow>\amp \vec F_{\text{on 3}} = m_3 \dfrac{d\vec v_3}{dt}, </mrow>
+				<mrow>\amp \cdots </mrow>
+			</md>
+			where the forces on each particle are the net force on that particle, that include forces from other particles in the system, and objects that are not part of the system.
+		</p>
+		<p>
+			Now, we take dot product of first equation with <m> d\vec r_1</m> where <m> \vec r_1</m> is the position of particle 1. And, do similarly, for the other equations. Each equation can then be processed as we have done for the one-particle calculation above. These will give us
+			<md>
+				<mrow>\amp W_{\text{on 1}} = K_{1,f} - K_{1,i}, </mrow>
+				<mrow>\amp W_{\text{on 2}} = K_{2,f} - K_{2,i}, </mrow>
+				<mrow>\amp W_{\text{on 3}} = K_{3,f} - K_{3,i}, </mrow>
+				<mrow>\amp \cdots </mrow>
+			</md>
+			Now summing all these will give us
+			<me>
+				W_{if}^{\text{all}} = K_f^{\text{all}} - K_i^{\text{all}}.
+			</me>
+			This shows that the work-energy theorem is applicable to systems containing any number of particles. The work must include work by forces between particles of the system as well as by forces between the system and the external world.	Unlike the impulse/momentum of multiparticle system, the work by internal forces do not necessarily cancel out here.		
+
+		</p>
+	</subsection>
+
+
+</section>

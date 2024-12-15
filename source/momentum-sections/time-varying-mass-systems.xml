@@ -1,0 +1,613 @@
+<section xml:id="momentum-Mass-Varying-System"><title> Mass Varying System </title>
+	<idx>Mass-varying Systems</idx>
+	<introduction>
+
+		<p>
+			There are many systems of interest in which the mass of the system is not constant in time. For instance, a rocket loses fuel when it is in the accelerating phase, a squid propels itself forward by ejecting water from back, etc.
+		</p>
+
+		<!-- <p>
+			In many situations, you find that an object accelerates even in the absence of an external force.  For instance, a rocket lifts off without anyone actually pushing up on it, a squid  propels itself forward without anyone pushing forward on it, etc.     
+		</p> -->
+		<p>
+			In these examples object of interest accelerates even in the absence of an external force, apparently violating <m>\vec F = m\vec a</m>. The reason is that <m>\vec F = m\vec a</m> is not correct if <m>m</m> changes with time. We need the general form of second law of motion in terms of momentum, either in its differential form or integral form.
+			<men>
+				\vec F = \frac{\Delta \vec p}{\Delta t} \rightarrow \dfrac{d\vec p}{dt}, \ \ \leftrightarrow\ \ \vec J = \int \vec F dt = \Delta \vec p .
+			</men>
+		</p>
+		<p>
+			Besides needing to work with <m>\vec J = \Delta \vec p</m>, there is also a question of what is <alert>included in the system</alert> and what is not. A good way to proceed is to look at how momentum changes in an infinitesimal interval of time <m>\Delta t</m>. We will work out examples to show this method below.
+		</p>
+
+	</introduction>
+
+
+	<subsection><title>Motion of a Rocket in Free Space</title>
+		<p>
+			Consider a rocket far away from planets and stars so that we can focus exclusively on effects of changing mass. Let <m>m(t)</m> be the mass of the rocket and <m>v_x(t)</m> be its <m>x</m>-velocity at instant <m>t</m> with respect to a fixed frame as shown in <xref ref="fig-rocket-in-free-space"/>.
+		</p>
+		<figure xml:id="fig-rocket-in-free-space">
+			<caption></caption>
+			<image source="./images/momentum/rocket-motion.png" width="70%" />
+		</figure>
+		
+		<p>
+			During interval <m>t</m> to  <m>t + \Delta t</m>, burnt fuel of mass <m>\Delta m</m> is ejected from back. Let us assume that the ejected gas has speed <m>u</m> <em>with respect to the rocket</em> at instant <m>t</m>. The remainder of the rocket has mass <m>m(t)-\Delta m</m> and has <m>x</m>-velocity <m>
+			v_x + \Delta v_x</m> with respect to the fixed frame. 
+		</p>
+		<p>
+			The interval between <m>t</m> to <m>t+\Delta t</m> is just like one-dimensional explosion problems you have studied. To apply conservation of momentum with respect to the fixed frame, we will need to express all velocities with respect to the fixed frame. The <m>x</m>-velocity of the ejected fueld with respect to the fixed frame will be <m>v_x -u</m>.
+
+			The <m>x</m>-equation of conservation of momentum will be
+			<me>
+				m v_x = |\Delta m| (  v_x   -u ) + (  m - |\Delta m| ) (v_x + \Delta v_x).
+			</me>
+			Note that <m>|\Delta m \Delta v_x| \ll |u\Delta m| \text{ or } | m\Delta v_x| </m>, we drop <m>\Delta m \Delta v_x</m>. This gives the following relation.
+			<me>
+				m \Delta v_x = u |\Delta m|.
+			</me>
+		</p>
+		<p>
+			<idx>Rocket Equation</idx>
+			Dividing by <m>\Delta t</m> we obtain the correct equation of motion for a rocket, which is sometimes called <term>rocket equation</term>. 
+			<me>
+				m \frac{\Delta v_x}{\Delta t} = u \frac{|\Delta m|}{\Delta t}.
+			</me>
+			Now, when we take <m>\Delta t \rightarrow 0</m> limit, we obtain the equation at instant <m>t</m> as a differential equation. Here, we need to observe that <m>|\Delta m|/\Delta t</m> should be positive but mass is decreasing. So, <m>|\Delta m|/\Delta t</m> will go over to <m>-dm/dt</m> rather than <m>dm/dt</m>.
+			<men xml:id="eq-rocket-equation-non-calculus">
+				m \frac{d v_x}{d t} = - u \frac{d m}{d t}.
+			</men>
+		</p>
+		<p>
+			<idx>Thrust</idx>
+			Left side is <m>m a_x</m> and right side is caled the force of <term>thrust</term> provided by the ejecting burnt fuel. 
+			This equation can be solved by calculus to give the following expression for the final velocity <m>v_f</m>, when mass of the rocket has gone from <m>m_i</m> to <m>m_f</m>.
+			<men>
+				v_{x,f} = v_{x,i} + u \ln\frac{m_i}{m_f}.
+			</men>
+			<remark>
+				<p>
+					We give the missing steps here. First we multiply both sides of Eq. <xref ref="eq-rocket-equation-non-calculus"/> by <m>dt/m</m>. This gives
+					<me>
+						d v_x  = - u \frac{d m}{m}.
+					</me>
+					Now, integrating from <m>t=t_i</m> to <m>t=t_f</m> has limits <m>v_{x,i}\,\text{to}\, v_{x,f}</m> on the left side and the limits <m>m_i\,\text{to}\, m_f</m> on the right side.
+					<me>
+						\int_{v_{x,i}}^{v_{x,f}}d v_x  = -\int_{m_i}^{m_f}u \frac{d m}{m}.
+					</me>
+					Since <m>dm/m = d(\ln\,m)</m> and <m>u</m> is independent of <m>m</m>, we immediately get
+					<me>
+						v_{x,f} - v_{x,i} = - u \ln\frac{m_f}{m_i}.
+					</me>
+				</p>
+			</remark>				
+		</p>
+<!-- 		<p><alert>(Requires Calculus)</alert></p>
+		<p>
+			In Eq. <xref ref="eq-rocket-equation-non-calculus"/>, suppose we consider <m>m</m> as a function of <m>t</m>, then, <m>m(t)</m> will be a decreasing function of <m>t</m>. Taking <m>\Delta t\rightarrow 0</m> limit in Eq. <xref ref="eq-rocket-equation-non-calculus"/> will mean we replace right side by <m>-dm/dt</m>. With negative sign <m>-dm/dt</m> will be positive, as we required for increasing <m>v</m>. Therefore, we have the following differential equation, which is the actual <term>rocket equation</term>.
+			<men xml:id="eq-rocket-equation-calculus">
+				m \frac{d v}{d t} = -u \frac{d m}{dt}.
+			</men>			
+			To solve this differential equation, we rewrite this as
+			<me>
+				dv = -u \frac{d m}{m}.
+			</me>
+			Now, we integrate this to get
+			<me>
+				v_f - v_i = -u \ln\frac{m_f}{m_i},
+			</me>
+			where subscripts <m>i</m> and <m>f</m> denote quantity at initial and final instants respectively. We rearrange this equation in the following form commonly used in problems.
+ 
+			<men xml:id="eq-rocket-equation-calculus-solution">
+				v_f = v_i + u \ln\frac{m_i}{m_f}.
+			</men>			
+		</p> -->
+
+	</subsection>
+
+
+
+
+
+	<!-- <subsection><title>(Calculus) Motion of a Rocket in Free Space</title> -->
+
+
+		<!-- <p>
+			When we take infinitesimal time limit in Eq. <xref ref="eq-rocket-equation-non-calculus"/>, this equation will become a differential equation. But, we need to be careful when we convert <m>\Delta m/\Delta t</m> to <m>dm/dt</m> since <m>m</m> of the rocket is decreasing and <m>dm/dt</m> will be negative while <m>\Delta m/\Delta t</m> was positive. Hence, we will compensate by including a minus sign.
+			<men xml:id="eq-rocket-equation-non-calculus-to-calculus">
+				m \frac{d v_x}{d t} =-  u \frac{d m}{d t}.
+			</men>
+			This can be written as
+			<me>
+				\dfrac{dv_x}{u} = -\dfrac{dm}{m}.
+			</me>
+			Integrating this on the left from <m> v_x = v_0 </m> to <m> v_x = v_x(t) </m> and on the right from <m> m = M </m> to <m> m = m(t) </m>, we obtain the following for the final velocity of the rocket after rearranging terms.
+			<me>
+				v_x(t) - v_0 = u\, \ln \left( \dfrac{M}{m(t)}  \right).
+			</me>
+		</p> -->
+
+<!-- 
+		<p>
+			Consider a rocket in gravity-free space with total mass <m> M </m> of which <m> M_f </m> be the fuel. The rocket is cruizing at constant speed of <m> v_0 </m> and  starts to fire up at <m> t = 0 </m> ejecting burnt fuel from back of the rocket till it runs out of fuel. The burnt fuel comes out from the back at a constant speed <m> u </m> with respect to the rocket. We wish to find the speed of the rocket at an arbitrary time <m> t </m> before the rocket runs out of fuel.
+		</p>
+
+		<p>
+			Since there are no external forces on the (rocket <m>+</m> fuel) system, their combined momentum cannot change. Let us look at what happens during a period <m> t </m> to <m> t + \Delta t </m>. Since the motion will be along some line, we pick that line to be the <m> x </m> axis of an inertial frame. 
+		</p>
+ 
+		<figure xml:id="fig-rocket-motion" >
+			<caption>
+					The rocket and fuel at instant <m> t </m> and <m> t + \Delta t </m> used for setting up the conservation of momentum using this interval.
+			</caption>
+
+			<image source="./images/momentum/rocket-motion.png" width="70%" />
+		</figure>
+ 
+		<p>
+			Let <m> v_x </m> denote the <m> x  </m> component of the velocity of the rocket at instant <m> t </m> and let <m> \Delta v_x </m> be the change in it during the interval. Notice also that velocity of the ejected fuel with respect to the inertial frame will be <m> v_x - u</m>.
+		</p> -->
+
+		
+<!-- 		<p>
+
+			Let the mass of the fuel that is ejected be <m> \Delta m</m>. The figure shows the <m> x </m> components of velocities. Equating the total momentum at <m> t </m> to total momentum <m> t + \Delta t </m> we get
+			<me>
+				m\, v_x = (m- \Delta m )\left( v_x + \Delta v_x \right) + (v_x - u) \Delta m.
+			</me>
+			This equation simplifies to:
+			<me>
+				m\,\Delta v_x - u\,\Delta m - \Delta m \Delta v_x = 0.
+			</me>
+			If we look at infintesimal time interval, the last term will become much smaller than the first term, and hence can be dropped. Now, taking the infinitesimal limit, the change   <m> \Delta v_x </m> is replaced by <m> dv_x </m> and the change in mass <m> \Delta m </m> is replaced by <m> -dm </m> since <m> dm </m> is negative.
+			<me>
+				m\,d v_x = - u\,d m,
+			</me>
+			which can be written as
+			<me>
+				\dfrac{dv_x}{u} = -\dfrac{dm}{m}.
+			</me>
+			Integrating this on the left from <m> v_x = v_0 </m> to <m> v_x = v_x(t) </m> and on the right from <m> m = M </m> to <m> m = m(t) </m>, we obtain the following for the final velocity of the rocket after rearranging terms.
+			<me>
+				v_x(t) - v_0 = u\, \ln \left( \dfrac{M}{m(t)}  \right).
+			</me>
+			Since we have only <m> x </m> component, the speed is simply the magnitude of <m> v_x </m>. Let <m> M_r </m> be the mass of the rocket without any fuel. Then, this equation is applicable till <m> t </m> such that <m> m(t) \le M_r </m>.
+		</p> -->
+
+
+	<!-- </subsection> -->
+
+
+	<subsection><title>Example of Mass Accretion</title><idx>Mass Accretion</idx>
+		<p>
+			Rocket motion is an example where the object of interest is losing mass in time, which led to the crucial minus sign when we went from <m>|\Delta m|/\Delta t</m> to <m>-dm/dt</m>. We now look at a situation in which the object of interest gains mass with time.
+		</p>
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+
+				<p>
+					Consider a spaceship moving in space where it is struck by a continuous stream of particles which stick to the ship. 
+				</p>
+
+				<p>
+					Let <m>m(t)</m> and <m>\vec v(t)</m> be the mass and velocity of the spaceship at instant <m>t</m>.  Let particles move with velocity <m>\vec u</m> and add a mass <m>\Delta m</m> to the spaceship in duration from  <m>t</m> to  <m>t + \Delta t</m>.
+				</p>
+			</p>
+			<p></p>
+			<figure xml:id="fig-mass-accretion-spacship">
+				<caption></caption>
+				<image source="./images/momentum/mass-accretion-spacship.png" width="70%" />
+			</figure>
+		</sidebyside>	
+
+		<p>
+			 Let <m>\vec v' = \vec v + \Delta \vec v</m> be the velocity of the spacecraft at <m>t+\Delta t</m>. Then, change in momentum in this duration will be
+			<me>
+				\Delta \vec p = (m+\Delta m)\, \vec v' - (m\, \vec v + \Delta m\, \vec u).
+			</me>
+			Simplifying we have 
+			<me>
+				\Delta \vec p = m\, \Delta \vec v + \Delta m\, ( \vec v - \vec u )  + \Delta m \Delta \vec v.
+			</me>
+ 			Dividing by <m>\Delta t</m> we get
+ 			<me>
+ 				\frac{\Delta \vec p}{\Delta t} = m\, \frac{\Delta \vec v}{\Delta t} + \frac{\Delta m}{\Delta t}\, ( \vec v - \vec u )  + \Delta m \frac{\Delta \vec v}{\Delta t}.
+ 			</me>
+ 			(Calculus Part) Taking <m>\Delta t \rightarrow 0</m> limit will mean <m>\Delta m \rightarrow 0</m> and <m>\Delta v\rightarrow 0</m> as well. In this limit we see that the last term drops out and the other terms turn into derivatives.
+ 			<me>
+ 				\frac{d\vec p}{dt} = m\, \frac{d \vec v}{dt} + \frac{d m}{d t}\, ( \vec v - \vec u ).
+ 			</me>
+ 			Let <m>\vec F</m> be the net external force on the spaceship. By, <m>\vec F = d\vec p/dt</m>, we must have
+ 			<men xml:id="eq-spaceship-accretion-calculus">
+ 				\vec F = m\, \frac{d \vec v}{d t} + \frac{d m}{d t}\, ( \vec v - \vec u ).
+ 			</men>
+ 			In the absence of any force <m>\vec F=0</m>, the velocity of the spaceship will change according to
+ 			<me>
+ 				m\, \frac{d \vec v}{d t} = - \frac{d m}{d t}\, ( \vec v - \vec u ),
+ 			</me>
+ 			which is usullay analyzed in component form, e.g., for <m>x</m>-component we will get the following (and similarly for other components).
+ 			<men>
+ 				\frac{dv_x}{ v_x - u_x} = - \frac{dm}{m}.
+ 			</men>
+ 			Equation <xref ref="eq-spaceship-accretion-calculus"/> also says that if you wanted the velocity of the spaceship steady at <m>\vec v</m>, i.e., you required <m>d \vec v/dt = 0</m>, you will need a force, e.g., by rockets on the ship, of the magnitude and direction given by
+ 			<me>
+ 				\vec F =  \frac{d m}{d t}\, ( \vec v - \vec u ).
+ 			</me>
+ 			This equation is consistent with the observation that if <m>\vec u = \vec v</m>, particles will move at the same velocity as the ship and hence will never strike the ship. In that case ship does not need any force to act on it to maintain constant velocity.
+
+
+		</p>
+	</subsection>
+
+
+	<subsection><title>Momentum Transport by Massless Radiation</title><idx>Momentum in Radiation</idx>
+		<p>
+			Light particles, called photons, do not have mass but carry momentum and energy. The formula for the magnitude of momentum for a photon in light of wavelength <m>\lambda</m> is given by 
+			<men>
+				p = \frac{h}{\lambda},
+			</men> 
+			where <m>h</m> is called Planck's constant and has the following value.
+			<me>
+				h = 6.626 \times 10^{-34}\, \text{m}^2\text{kg/s}.
+			</me>
+
+		</p>
+		<sidebyside widths="60% 5% 35%">
+			<p>
+				An example of application of momentum from photons, consider a payload that uses large solar sail to collect momentum from photons from the star for its navigation. Suppose area of the sail is <m>A</m>. Let intensity of radiation from the star be such that <m>N</m> photons of wavelength <m>\lambda</m> per unit volume are traveling in the direction of the payload. 
+			</p>
+			<p></p>
+
+			<figure xml:id="fig-momentum-collection-solar-sail">
+				<caption></caption>
+				<image source="./images/momentum/momentum-collection-solar-sail.png" width="70%" />
+			</figure>
+		</sidebyside>	
+		
+		<p>
+			Since speed of light in space will be equal to <m>c=3\times 10^{8}\,\text{m/s}</m>, the number of photons striking the collector in time <m>\Delta t</m> will be
+			<me>
+				\Delta n = N A c.
+			</me>
+			For the sake of simplicity, let us suppose that momentum of photon flips in direction upon reflection. That will mean that each photon will increase the momentum of the payload by twice its own momentum.  
+			<me>
+				\Delta p_\text{payload} = 2 N A c h /\lambda \Delta t.
+			</me> 
+			Now, let us look at some numbers to get a sense of the size of the effect. Consider visible light photon of wavelength <m>0.5\,\mu\text{m}</m>, area <m>A=50\text{ m}^2</m>, number density <m>N=10^{12}\text{ m}^{-3}</m>. This will impose following force on the payload. 
+			<md>
+				<mrow> F \amp = \Delta p_\text{payload}/\Delta t</mrow>
+				<mrow> \amp  =   2\times 10^{12}\times 50\times3\times 10^8\times 6.626\times10^{-34}/(0.5\times 10^{-6})</mrow>
+				<mrow> \amp = 4.0\times 10^{-5}\text{ N}.</mrow>
+			</md>
+			This is not too small to ignore.
+		</p>
+	</subsection>
+
+
+
+<!-- 	<subsection><title> Role of Thrust</title> -->
+
+		<!-- <p>
+			In many situations of practical interest we find that the mass of the body of interest changes with time. For instance, in the motion of a rocket, the mass of the rocket decreases as burnt fuel is ejected from the rocket. Similarly, a squid can propel itself forward by squirting water back.    
+		</p>
+		<p>
+			The momentum carried away by the ejected fuel of the rocket provides additional momentum in the opposite direction to the rest of the rocket due to conservation of momentum. In a sense, the rest of the rocket recoils just as gun recoils after a bullet is fired.
+		</p>
+
+		<p>
+			These systems can accelerate even in the absence of any force contrary to the equation <m> m\vec a= \vec F</m>. For instance, a rocket can pick up speed even when shot up although gravity alone should cause the rocket to slow down. 
+		</p> -->
+<!-- 		<p>
+			In a rocket, the impulse from ejected fuel is said to provide an inertial force, called <q> thrust</q>, which we need to include in <m>m\vec a = \vec F</m> to complete the picture.  Let us denote the thrust by <m> \vec T</m> and write our <q> modified <m>m\vec a = \vec F</m></q>.
+			<men xml:id="eq-newton-second-law-with-thrust">
+				m\vec a = \vec F + \vec T,
+			</men>
+			where <m> m</m> is the mass of the rocket at time <m> t </m>.  The impulse from the ejected fuel will equal to change in momentum of the ejected fuel. In a duration <m>\Delta t</m>, the impulse on the ejected fuel is equal to change in its momentum. The impulse on the rocket will be negative of this impulse.
+			<me>
+				\vec T \Delta t = - \Delta \vec p_\text{ejected},
+			</me>
+			which will give us the thrust
+			<men xml:id="eq-thrust-calculation">
+				\vec T = - \dfrac{\Delta \vec p_\text{ejected}}{\Delta t}.
+			</men>
+			Using this equation to find thrust usually involves Calculus. In a non-Calculus setting, we work with Eq. <xref ref="eq-newton-second-law-with-thrust"/> to obtain thrust by observed acceleration. -->
+			<!-- , <m> \vec a </m> its acceleration at this instant, <m>\vec F</m> the external force, such as gravity, if any, and <m> \vec T</m> the thrust at this instant. -->
+<!-- 		</p> -->
+		<!-- <p>
+			Actually, if we had used the more fundamental form of the second law in terms of force and rate of change in momentum, the thrust would have naturally appeared.
+		</p> -->
+<!-- 		<subsubsection> <title> Formulas for Velocity of Rocket </title>
+
+			<p>
+				In rockets, if the speed of the fuel with respect to the rocket is denoted by <m> u</m> and the rate of mass loss is <m> \alpha</m>, then, the magnitude of <term> thrust </term> can be shown to be
+				<men>
+					T = \alpha\, u.
+				</men>
+				Faster burning rate and/or burnt fuel ejection at higher speed gives more powerful thrust.  
+			</p>
+			<p>
+				For constant <m> u</m> and <m> \alpha </m>, i.e., constant thrust, which is the most common case, and no external force, using Calculus, we will show below that the velocity in the forward direction varies with time as follows.
+				<men>
+					v = v_0 + u \ln\left( \dfrac{m_0}{m_0-\alpha t}\right),
+				</men>
+				where <m>m_0</m> is the inital mass of the rocketand <m> v_0 </m> the initial velocity  at instant <m> t=0</m> .
+			</p>
+
+			<p> Furthermore, for constant <m> u</m> and <m> \alpha </m> and constant gravity with magnitude <m> mg</m>, we can show that the velocity in the forward direction varies with time as follows.
+				<men>
+					v = v_0 - g t+ u \ln\left( \dfrac{m_0}{m_0-\alpha t}\right).
+				</men>
+			</p>
+		</subsubsection> -->
+<!-- 	</subsection> -->
+
+
+
+	<exercises>
+
+
+	<exercise xml:id="Rocket-Acceleration-at-Constant-Burn-Rate"><title> Rocket Acceleration at Constant Burn Rate </title>
+		<statement>
+			<p>
+				A spacecraft is moving at a constant speed of <m> 100\text{ m/s}</m> in gravity-free space along a straight path. The crew decided to accelerate the spacecraft. When the pilot turns on one of the thrusters, it ejects burnt fuel in the back at the rate of <m> 10.0 \text{ kg/s}</m> at a speed of <m> 1,000\text{ m/s}</m> relative to the craft. At the moment the thruster was turned on, the mass of the spacecraft with crew plus the unburnt fuel was <m> 5.0\times 10^{5}\text{ kg}</m>. 
+			</p>
+			<p>
+				(a) What is the thrust on the spacecraft?
+			</p>
+
+			<p> (b) Express the acceleration of the craft as a function of time, <m> t </m>, and evaluate the acceleration at the following values <m> t </m> : (i) <m> 0 </m>, (ii) <m> 10\text{ s} </m>, (iii) <m> 100\text{ s}</m>, where <m> t=0 </m> is the instant when the thruster was turned on:
+			</p>
+			<p>
+				(c) Find the speed of the spacecraft as a function of time, and evaluate the speed at the following values <m> t </m> : (i) <m> 0 </m>, (ii) <m> 100\text{ s} </m>, (iii) <m> 10000\text{ s}</m>. 
+			</p>
+ 
+
+		</statement>
+		<hint> <p>  Use the formulas. </p> </hint>
+		<answer> 
+			<p> 
+				(a) <m> 10,000\text{ N} </m>, (b) <m> 0.02\text{ m/s}^2</m>, <m> 0.02004\text{ m/s}^2</m>, <m> 0.025\text{ m/s}^2</m>, (c) Not provided.
+		 	</p> 
+		 </answer>
+		<solution> <title>(a)</title>
+			<p> 
+				(a) The thrust <m> T </m> on the spacecraft comes from the rate at which mass is lost and the velocity of that ejected mass.
+				<me>
+					T = \alpha u  = 10.0 \text{ kg/s} \times  1,000\text{ m/s} = 10,000\text{ N}.
+				</me>
+				The direction of the thrust is towards forward of the spacecraft since the burnt fuel is being ejected in the backward direction.
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b)  Using the full Newton's equation equation with no external force:
+				<me>
+					m\vec a =  \vec T,
+				</me>
+				where mass <m> m </m> is decreasing with time with the following value at instant <m> t </m>.
+				<me>
+					m = m_0 - \alpha\, t,
+				</me>
+				where
+				<me> 
+					m_0 = 5.0\times 10^{5}\text{ kg} ,\ \ \alpha = 10.0 \text{ kg/s}.
+				</me>
+
+				Let <m> x </m> axis be pointed in the forward direction. Then, we have the following for the <m>x</m> component of acceleration at instant <m>t</m>.
+				<me>
+					a_x = \dfrac{T_x}{m} = \dfrac{T}{m_0 - \alpha\, t}. 
+				</me>
+				Therefore,  magnitude <m> a </m> of acceleration is
+				<me>
+					a(t) = \dfrac{10,000}{5\times 10^5 - 10\, t}.
+				</me>
+			</p>
+			<p>
+				(i) <me> a(0) = \dfrac{10,000}{5\times 10^5 } = 0.02\text{ m/s}^2 </me>
+			</p>
+			<p>
+				(ii) <me> a(100\text{ s}) = \dfrac{10,000}{5\times 10^5 - 1\times 10^3} = 0.02004\text{ m/s}^2 </me>
+			</p>
+			<p>
+				(ii) <me> a(10^4\text{ s}) = \dfrac{10,000}{5\times 10^5 - 1\times 10^5} = 0.025\text{ m/s}^2 </me>
+			</p>
+		</solution>
+		<solution> <title>(c)</title>
+			<p> (c)
+				Use the following equation to find the values of speed.
+				<me>
+					v = v_0 + u \ln\left( \dfrac{m_0}{m_0-\alpha t}\right).
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+<!-- 	<example xml:id="example-Rocket-Motion-in-Gravity-free-Space"><title> (Calculus) Rocket Motion in Gravity-free Space</title>
+		<p>
+			Consider a rocket in gravity-free space with total mass <m> M </m> of which <m> M_f </m> be the fuel. The rocket is cruizing at constant speed of <m> v_0 </m> and  starts to fire up at <m> t = 0 </m> ejecting burnt fuel from back of the rocket till it runs out of fuel. The burnt fuel comes out from the back at a constant speed <m> u </m> with respect to the rocket. We wish to find the speed of the rocket at an arbitrary time <m> t </m> before the rocket runs out of fuel.
+		</p>
+
+		<p>
+			Since there are no external forces on the (rocket <m>+</m> fuel) system, their combined momentum cannot change. Let us look at what happens during a period <m> t </m> to <m> t + \Delta t </m>. Since the motion will be along some line, we pick that line to be the <m> x </m> axis of an inertial frame. 
+		</p>
+ 
+		<figure xml:id="fig-rocket-motion" >
+			<caption>
+					The rocket and fuel at instant <m> t </m> and <m> t + \Delta t </m> used for setting up the conservation of momentum usring this interval.
+			</caption>
+
+			<image source="./images/momentum/rocket-motion.png" width="70%" />
+		</figure>
+ 
+		<p>
+			Let <m> v_x </m> denote the <m> x  </m> component of the velocity of the rocket at instant <m> t </m> and let <m> \Delta v_x </m> be the change in it during the interval. Notice also that velocity of the ejected fuel with respect to the inertial frame will be <m> v_x - u</m>.
+		</p>
+
+		
+		<p>
+
+			Let the mass of the fuel that is ejected be <m> \Delta m</m>. The figure shows the <m> x </m> components of velocities. Equating the total momentum at <m> t </m> to total momentum <m> t + \Delta t </m> we get
+			<me>
+				m\, v_x = (m- \Delta m )\left( v_x + \Delta v_x \right) + (v_x - u) \Delta m.
+			</me>
+			This equation simplifies to:
+			<me>
+				m\,\Delta v_x - u\,\Delta m - \Delta m \Delta v_x = 0.
+			</me>
+			If we look at infintesimal time interval, the last term will become much smaller than the first term, and hence can be dropped. Now, taking the infinitesimal limit, the change   <m> \Delta v_x </m> is replaced by <m> dv_x </m> and the change in mass <m> \Delta m </m> is replaced by <m> -dm </m> since <m> dm </m> is negative.
+			<me>
+				m\,d v_x = - u\,d m,
+			</me>
+			which can be written as
+			<me>
+				\dfrac{dv_x}{u} = -\dfrac{dm}{m}.
+			</me>
+			Integrating this on the left from <m> v_x = v_0 </m> to <m> v_x = v_x(t) </m> and on the right from <m> m = M </m> to <m> m = m(t) </m>, we obtain the following for the final velocity of the rocket after rearranging terms.
+			<me>
+				v_x(t) - v_0 = u\, \ln \left( \dfrac{M}{m(t)}  \right).
+			</me>
+			Since we have only <m> x </m> component, the speed is simply the magnitude of <m> v_x </m>. Let <m> M_r </m> be the mass of the rocket without any fuel. Then, this equation is applicable till <m> t </m> such that <m> m(t) \le M_r </m>.
+		</p>
+
+	</example> -->
+
+
+
+
+
+<!-- 	<subsection><title> (Calculus) Dynamics of Open Systems </title>
+		<p>
+			In many situations of practical interest we find that the mass of the body of interest changes with time. For instance, in the motion of a rocket, the mass of the rocket decreases as burnt fuel is ejected from the rocket. Although the total mass of the rocket and the ejected fuel is constant in this situation, we are normally interested in describing the motion of the rocket part only. Similarly, when a rain drop falls, it gathers more water and consequently its mass increases with time.  
+		</p>
+		<p>
+			These systems are called sytems with  <term> time-varying mass </term>. They are also examples of <term>open systems</term> as opposed to <term>closed systems</term>, which refers to systems with constant mass. 
+		</p>
+		<p>
+			These problems are handled by using the complete form of Newton's second law in terms of the change of momentum since the constant-mass formulation of Newton's second law does not even apply here. In this section, we will show how to adapt Newton's second law for systems with varying mass.  
+		</p>
+		<p>
+			To see the special problem that arises in  systems with time-varying mass substitute <m> \vec p = m\vec v</m> in  the Newton's second law in the momentum form, and carry out the derivative with respect to time to obtain the following.
+			<me>
+				\vec F = \left( \dfrac{dm}{dt} \right)\, \vec v + m\, \vec a.
+			</me>
+			Let us rearrange the terms in this equation so that we keep <m> m\, \vec a</m> on the one side of the equation and other terms on the other side
+			<men xml:id="eq-time-varying-equation-of-motion"> 
+			 m\,\vec a = \vec F - \left( \frac{dm}{dt} \right)\, \vec v. 
+			</men>
+			The second term on the right is an inertial term that <q> acts like a force</q>.
+			Thus, if mass of the system can change (i.e., if  <m> dm/dt \ne 0 </m>), then we will notice acceleration or deceleration, even when there is no force <m>(\vec F=0)</m>.  
+		</p>
+		<p>
+			When mass is decreasing, <m> dm/dt \lt 0</m>, the inertial force would provide additional force in the direction of the velocity. This is the mechanism by which rockets gain speed when they are ejecting the burnt fuel. On the other hand, 
+			when mass is accumulating, <m> dm/dt \gt 0</m>,  motion will be impeded by the inertial force.
+		</p>
+	</subsection> -->
+
+
+
+	<exercise xml:id="ex-Grain-Filling-a-Uniformly-Moving-Cart"><title>Grain Filling a Uniformly Moving Cart</title>
+
+		<statement>
+			<sidebyside widths="60% 5% 35%" >
+				<p>
+					A cart of mass <m>M</m> is moving at a constant velocity <m>v</m> as shown. When the cart enters the space below a large funnel, grain starts to fill the cart at constant mass rate, <m>\Delta m/\Delta t =\alpha</m>. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-grain-falling-in-moving-cart" >
+					<caption>
+					</caption>
+
+					<image source="./images/momentum/grain-falling-in-moving-cart.png" width="70%" />
+				</figure>
+			</sidebyside>
+			<p>
+				In order to keep the track moving at constant velocity, you need to constantly apply a force <m>F</m>. Find an expression of this force.
+			</p>
+			
+		</statement>
+		<hint><p>
+			Use <m>\vec F\Delta t = \Delta \vec p</m> in a duration <m>\Delta t</m>.
+		</p></hint>
+		<answer><p>
+			<m>\alpha v</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Consider a interval from <m>t</m> to <m>t+\Delta t</m>  when the mass of grain and cart goes from  <m>m</m> to <m>m + \alpha \Delta t</m>. Let <m>x</m>-axis be pointed in the direction of constant velocity. Using <m>J_x = \Delta p_x</m>, we will get
+				<me>
+					F\Delta t = (m + \alpha \Delta t)\, v - m v= \alpha \Delta t)\, v.
+				</me>
+				Therefore, <m>F = \alpha v</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="Rocket-Motion-Moving-Opposite-to-Gravity"><title>(Calculus) Rocket Motion Moving Opposite to Gravity</title>
+		<statement>
+			<p>
+				Rocket motion near the surface of the Earth is subject to an approximately constant gravitational force of the Earth.
+			</p>
+			<p> Consider a rocket of initial total mass <m> M_0 </m> with <m> M_r </m> the mass of the rocket without the fuel. The rocket is rising straight up near Earth with the  fuel being ejected at a constant speed <m>u</m> with respect to the rocket and at a constant rate <m> \alpha \text{ kg/s}</m>.
+			</p>
+			<p>
+				Prove that the vertical component of the velocity at time <m> t </m> will be
+				<me>
+					v = v_0 - gt + u\ln\left(\frac{M_0}{M_0-\alpha t}\right)
+				</me>
+			</p>
+ 
+
+		</statement>
+		<hint> <p>  Set up equation similar to the example with no external force. </p> </hint>
+		<answer> <p>  Already given in the statement. </p> </answer>
+		<solution> 
+
+
+			<p>
+				We will work with positive <m>y</m> axis pointed up. Let <m> v_y </m> denote <m> y  </m> component of the velocity of the rocket at instant <m> t </m> and let <m> \Delta v_y </m> be the change in it during an interval between <m> t </m> and <m> t + \Delta t </m>. Notice also that velocity of the ejected fuel with respect to the inertial frame will be <m> v_y - u</m>.
+			</p>
+			<p>
+				Therefore, the change in momentum of the rocket plus burnt fuel combined system along the <m> y </m> axis is
+				<md>
+					<mrow>\Delta p_y  \amp = \left[ \Delta m ( v_y - u ) + (m - \Delta m) (v_y + \Delta v_y ) \right] - m v_y,</mrow>
+					<mrow>   \amp \rightarrow  - u \Delta m   +  m \Delta v_y  \text{ (as } \Delta t \rightarrow 0\text{.)}</mrow>
+				</md>
+ 
+			</p>
+			<p>
+				The impulse of the external force of gravity on the rocket during the intreval is
+				<me>
+					J_y = - m(t) g \Delta t.
+				</me>
+			</p>
+			<p>
+				Using the momentum-impulse relation we get
+				<me>
+					m \Delta v_y - u \Delta m = - m g \Delta t.
+				</me>
+				Divide both sides by <m> m</m>. Now, taking the infinitesimal limit, the change   <m> \Delta v_x </m> is replaced by <m> dv_x </m> and the change in mass <m> \Delta m </m> is replaced by <m> -dm </m> since <m> dm </m> is negative. We also write <m> dm/m </m> as <m> d\ln m</m>.
+			
+				<me>
+					 d v_y + u\, d \ln m = - g\, dt.
+				</me>
+				Integrating from <m> t = 0</m> to <m> t = t</m> we find
+				<me>
+					v_y(t) - v_y(0)  + u\,\ln\left(\frac{M_0-\alpha t}{M_0}\right) = - gt.
+				</me>
+				In this equation we can write <m> v_y(t) </m> as <m> v</m> and <m> v_y(0) </m> as <m> v_0</m>, and  rerarrange  to get the desired result.
+				<me>
+					v = v_0 - gt + u\,\ln\left(\frac{M_0}{M_0-\alpha t}\right).
+				</me>
+			</p>
+ 
+		</solution>
+	</exercise>	
+
+	</exercises>
+
+
+
+</section>

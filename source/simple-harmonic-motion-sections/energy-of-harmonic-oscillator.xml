@@ -1,0 +1,192 @@
+<section xml:id="Energy-of-a-Harmonic-Oscillator"><title> Energy of a Harmonic Oscillator</title>
+	<introduction>
+		<p>
+			Spring force is a conservative force with the following potential energy formula.
+			<men>
+				U = \dfrac{1}{2} k x^2,
+			</men> 
+			where the zero potential energy reference  corresponds to the situation when spring is in its original relaxed state. By adding this to the kinetic energy of the block we get the energy <m> E</m> of the block. Let us write energy at time <m> t </m> as <m> E(t) </m>.
+			<men>
+				E(t) = \dfrac{1}{2}m v^2 + \dfrac{1}{2} k x^2,
+			</men>
+			where for brevity, I have dropped the subscript <m>x</m> from <m> v_x </m>. By plugging in the solution <m> x(t)= A\cos(\omega t + \phi)</m> and <m> v(t)= -\omega A\sin(\omega t + \phi)</m>, and using <m> k = m\omega^2</m>, you can show that 
+			<men>
+				E(t) = \dfrac{1}{2} k A^2,
+			</men>
+			or, equivalently,
+			<men>
+				E(t) = \dfrac{1}{2} m v_0^2 + \dfrac{1}{2} k x_0^2,
+			</men>
+			which is just the energy at the initial time. That is, the energy of simple harmonic oscillator is conserved.
+			<men>
+				E(t) = E(0).
+			</men>
+			Although, the sum of kinetic and potential energies remains unchanged, kinetic and potential energies change with time. The potential energy is maximum when the oscillator is at the turning points of the motion, where velocity is zero, and hence kinetic energy is zero. You might say that the block spends most of its time near the two ends of its motion, where it is moving the slowest.
+		</p>
+		<p>
+			When the block is at <m> x = 0 </m>, potential energy is zero, which is the minimum value of potential energy. That means kinetic energy is largest at <m> x=0 </m>, i.e, when the block is at the equilibrium position it moves the fastest. 
+		</p>
+
+	</introduction>
+
+	<exercise xml:id="ex-Energy-Stored-in-a-Spring"><title> Energy Stored in a Spring </title>
+		<statement>
+			<p>
+				(a) A spring of length <m>110\text{ cm}</m> and spring constant <m> 1.5\times 10^{4}\text{ N/m}</m> is compressed such that its length shrinks by <m>20\text{ cm}</m>. What is the amount of energy stored in the spring?
+			</p>
+			<p>
+				(b)The same spring is strethed such that its length expands by <m>20\text{ cm}</m>. What is the amount of energy stored in the spring?
+			</p>
+		</statement>
+		<hint> <p>  (a) and (b): The length of the spring does not matter - only the change in length. </p> </hint>
+		<answer> <p>  (a) <m> 300\text{ J}</m>, (b) <m> 300\text{ J}</m>. </p> </answer>
+		<solution> 
+			<p>
+				(a) The change in length <m>\Delta l</m> is what we need, not the length of the spring. The energy stored is 
+				<me>
+					U =\dfrac{1}{2}k (\Delta l)^2 = \dfrac{1}{2}\times 1.5\times 10^{4} \times 0.20^2 = 300\text{ J}.
+				</me>
+			</p>
+			<p>
+				(b) The energy in spring is same for compression and expansion, since the energy depends on the square of the change.
+				<me>
+					U = 300\text{ J}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="Speed-of-a-Block-Attached-to-a-Spring"><title> Speed of a Block Attached to a Spring </title>
+		<statement>
+			<p>
+				A block of mass <m>0.6\text{ kg}</m> is attached to a spring of spring constant <m>180\text{ N/m}</m> and negligible mass compared to the mass of the block.  The block is placed on a frictionless horizontal table, then pulled horizontally <m>3\text{ cm}</m> from its equilibrium position and let go from rest.  Evaluate speed of the block (a) as it crosses the equilibrium position, and (b) when it is <m>1.5\text{ cm}</m> from the equilibrium. 
+			</p>
+
+		</statement>
+		<hint> <p>  Use conservation of energy. </p> </hint>
+		<answer> <p> (a) <m> 0.52\text{ m/s}</m>, (b) <m>0.45\text{ m/s}</m>. </p> </answer>
+		<solution> 
+			<p> 
+				Since block has no friction on it, its energy will be conserved. Let us denote the original position as point A, equilibrium as point B and <m>1.5\text{ cm}</m> from the equilibrium as point C.
+			</p>
+			<p>
+				(a) 
+				When block is at point A, it is not moving, therefore all energy is in the potential energy stored in the spring. We convert all length units to <m>\text{meter}</m>. 
+				<me>
+ 					E_A = \frac{1}{2}kx_A^2 = \frac{1}{2}(180)(0.03)^2 = 0.081\text{ J}.
+ 				</me>
+				When block is at point B, the spring is neither stretched nor compressed, therefore there is no potential energy stored in the spring.  Hence, all the energy which the system started out with must be in the form of kinetic energy of the block.
+				<me>
+				 	E_B = \frac{1}{2}mv_B^2 = \frac{1}{2}(0.6)\,v_B^2 = 0.3\, v_B^2.
+				</me>
+				Equating the energy at B to the energy at A we find
+				<me>
+					0.3\, v_B^2 = 0.081\ \ \Longrightarrow\ \ v_B = 0.52\text{ m/s}.
+				</me>
+			</p>
+			<p>
+				(b) When block is at point C, which could be on either side of the equilibrium a distance of <m>1.5\text{ cm}</m> away from the equilibrium, the spring is either compressed or stretched.  Therfore, there will be potential energy stored in the spring.  But, the stored potential energy is less than the starting energy, hence, the rest of the energy will be in the form of kinetic energy of the block.
+				<me>
+				 E_C = \frac{1}{2}mv_C^2 + \frac{1}{2}kx_C^2= 0.3\, v_C^2 + 0.020.
+				</me>
+				Equating <m>E_C</m>  to  <m>E_A</m>, and solving for <m>v_C</m>  we find the speed when the block is <m>1.5\text{ cm}</m> from the equilibrium to be
+				<me>
+					0.3\, v_C^2 + 0.020 = 0.081 \ \ \Longrightarrow\ \ v_C = 0.45\text{ m/s}.
+				</me>
+				
+			</p>
+		</solution>
+	</exercise>
+
+
+	<subsection><title> Potential Energy and Turning Points</title>
+
+
+		<p>
+			Often we plot a potential energy diagram to display the turning motions at a particular energy value. <xref ref="fig-sho-potential-energy-turning-points"/> shows one such plot of potential energy versus position. The horizontal energy line on the diagram reflects the fact that energy is same at any position taken by the oscillator. The oscillator moves between the turning points, where velocity turns around in direction. At these points velocity must be zero - energy at these points are all in potential energy. When <m> x = 0</m> all energy in kinetic energy. At other values of <m> x</m>, the energy has both kinetic and potential energies.  
+		</p>
+		<figure xml:id="fig-sho-potential-energy-turning-points">
+			<caption>
+				The energy diagram shows visually, the conversion between kinetic and potential energies in a simple harmonic motion, keeping the total energy fixed. 
+			</caption>
+
+			<image source="./images/simple-harmonic-motion/sho-potential-energy-turning-points.png" width="80%"/>
+		</figure>	
+	</subsection>
+
+	<exercise xml:id="ex-Energy-at-Different-Points-of-the-Cycle"><title> Energy at Different Points of the Cycle </title>
+		<statement>
+			<p>
+				Consider a simple harmonic oscillator of mass <m> m </m>, amplitude <m> A</m> and frequency <m>f</m>.
+			</p>
+			<p>
+				(a) What fraction of the energy of the oscillator is in the kinetic energy when the oscillator's displacement is half the amplitude?
+			</p>
+			<p>
+				(b) What fraction of the energy of the oscillator is in the potential energy when the oscillator's displacement is half the amplitude?
+			</p>
+			<p>
+				(c) Where in the cycle of an oscillation does the oscillator have the lowest speed? Why?
+			</p>
+			<p>
+				(d) Where in the cycle of an oscillation does the oscillator have the largest speed? Why? 
+			</p>
+
+		</statement>
+		<hint> <p> (a) and (b) Use conservation of energy, (c) Think what happens at the turning points, (d) Think when the PE is lowest, i.e., zero.  </p> </hint>
+		<answer> <p> (a) <m> 75\% </m>, (b) <m> 25\% </m>,  (c) Turning points, <m> x=\pm A </m>, (d) At equilibrium point,  <m> x=0</m>, <m> v = 2\pi f A</m>.  </p> </answer>
+		<solution> <title> (a),(b) </title>
+			<p>
+				(a) From energy conservation, we know that energy at any time in the cylce must equal the energy at the turning points. At turning points, energy is all potential energy.
+				<me>
+					E = \dfrac{1}{2}kA^2,
+				</me>
+				where 
+				<me>
+					k = m\omega^2 = 4\pi^2 m f^2.
+				</me>
+				When oscillator's displacement is half of <m> A </m>, we will get 
+				<me>
+					KE + \dfrac{1}{2} k \left( \dfrac{A}{2}\right)^2.
+				</me>
+				Equating the two, we get
+				<me>
+					KE = \dfrac{1}{2} k A^2 \times \dfrac{3}{4}.
+				</me>
+				Therefore, 
+				<me>
+					\dfrac{KE}{E} = \dfrac{3}{4}.
+				</me>
+				<!-- and the kinetic energy
+				<me>
+					KE = \dfrac{3}{8}4\pi^2 m f^2  A^2  = \dfrac{3}{2}\pi^2 m f^2  A^2.
+				</me> -->
+			</p>
+			<p>
+				(b) Potential Energy at this instant is <m> 25\% </m> of the total energy.
+				<!-- , i.e., 
+				<me>
+					\dfrac{3}{2}\pi^2 m f^2  A^2 \times \dfrac{1}{3} = \dfrac{1}{2}\pi^2 m f^2  A^2
+				</me> -->
+			</p>
+		</solution>
+
+		<solution><title> (c),(d)</title>
+			<p> 
+				(c) Lowest speed is zero which occurs at the turning points, when the displacment has values, <m> x = -A</m> and when <m> x = A</m>.
+			</p>
+			<p>
+				(d) Largest speed will occur where KE is largest, which would occur where the PE is the least. The least PE is zero here and occurs when <m> x = 0</m>. Therefore, at equilibrium position
+				<me>
+					\dfrac{1}{2}mv^2 = \dfrac{1}{2} k A^2.
+				</me>
+				Therefore, maximum speed is
+				<me>
+					v = \sqrt{\dfrac{k}{m}}\ A = \omega\, A = 2\pi f A.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+</section>

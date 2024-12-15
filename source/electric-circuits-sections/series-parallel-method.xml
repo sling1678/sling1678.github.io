@@ -1,0 +1,119 @@
+<section xml:id="series-parallel-method"><title> Series-Parallel Method </title>
+	<introduction>
+		<p>
+			Certain complex circuits can be simplified by a method that uses only the results of resitors in series and in parallel. They provide good examples for deeping your understanding of the series and parallel circuits. We will illustrate this method with an example below. 
+		</p>
+		<p>
+			The basic idea of <term> series-paralllel method</term> is to successively use equivalent resistance rules for series and parallel resistors in a sequence of steps. 
+			<ol >
+				<li xml:id="li-series-parallel-method-1"> 
+					First we replace all the resistors in series by their equivalent resistances.  This step usually leaves some resistors in parallel. 
+				</li> 
+				<li xml:id="li-series-parallel-method-2"> 
+					Then we replace the resistors that are in parallel by their equivalent resistances.  This step generates new resistors in series, which can then be replaced by their equivalent resistances. 
+				</li>
+				<li> 
+					Continue, if necessary, <xref ref="li-series-parallel-method-1"/>, and, if necessary, followed by  <xref ref="li-series-parallel-method-2"/>, until we simplify the circuit to one net equivalent resistor connected to one source. If at any point, we have more than one resistor remaining and we cannot decide if two or more resistors are in series or in parallel, the process tops with failure of method. You will need more advanced method in those cases.
+				</li>
+				<li>
+					Suppose our process succeeds in simplifying the circuit to one resitor across a source. The one-equivalent-resistor circuit is solved for the ovrall current.
+				</li>
+				<li>
+					The calculated current is used in a backward steps to find potential drops and currents in previously simplifield circuits until all currents and potential drops have been computed.
+				</li>
+ 
+			</ol>
+		</p>
+		<p>
+			 The <alert> series-parallel method does not always work</alert>. For instance, if a circuit has a bridge from one branch to another, it becomes impossible to label resistors into series or parallel categories. For these more complicated circuits, you will learn more general method, called Kirchoff's rules in a later section.
+		</p>
+	</introduction>
+
+	<example xml:id="exp-Circuits-with-Series-and-Parallel-Connections"><title> Circuits with Series and Parallel Connections </title>
+		<statement>
+			<p>
+				Consider four resistors connected to a voltage source as shown in <xref ref="fig-exp-series-parallel-4-resistors"/>.  Find current through each resistor.
+			</p>
+			<figure xml:id="fig-exp-series-parallel-4-resistors">
+				<caption>
+				</caption>
+				<image source="./images/electric-circuits/exp-series-parallel-4-resistors.png" width="50%"/>
+			</figure>
+		</statement>
+		<hint> <p> Study the solution. </p> </hint>
+		<answer> <p> <m> \phi_d= 0;</m> <m>\phi_a = 6\ \text{V};</m> <m>\phi_b = \dfrac{60}{17}\ \text{V};</m> <m>\phi_c = \dfrac{40}{17}\ \text{V}.</m>
+			<m> I_1 = \dfrac{2}{7}\ \text{A};</m>  <m>I_2 = \dfrac{3}{34}\ \text{A};</m>  <m>I = \dfrac{7}{34}\  \text{A}.</m>  </p> </answer>
+		<solution> 
+
+			<p>
+				To find current through the resistors, we need potential drop across each.  Therefore, we start with labeling the node potential points on the circuit as shown in the figure.
+			</p>
+			<image source="./images/electric-circuits/exp-series-parallel-4-resistors-a.png" width="60%"/>
+			 
+
+			<p>
+				As explained above, the node points represent points of unique electric potential values. There are four nodes in the given circuit, which are labeled <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m>. Node <m>d</m> is connected to the negative of the source and is usually set zero volt as reference, <m>\phi_d = 0</m>. Since voltage of the battery is 6 volts, the potential at <m>a</m> is 6 V, that is, <m>\phi_a = 0</m>.  Now, we follow step-by-step procedure of simplifying the circuit to find the potentials at <m>b</m> and <m>c</m>, viz.,  <m>\phi_b</m> and <m>\phi_c</m>, respectively.
+			</p>
+			<p> <alert>Step 1:</alert> </p>
+			<p>
+				If any resistors in series, replace them by their equivalent resistors.  Here only <m>10\ \Omega</m>  and <m>20\ \Omega</m> are in series.  Therefore, we replace them by a <m>30\text{-}\Omega</m> resistor.  It is best to keep the same labels here as in the previous diagram.
+			</p>
+			 
+			<image source="./images/electric-circuits/exp-series-parallel-4-resistors-b.png" width="60%"/>
+
+			<p> <alert> Step 2: </alert> </p>
+			<p>
+				If any resistors in parallel, replace them by equivalent resistors.  Here only 30 <m>\Omega</m>   and 40 <m>\Omega</m>  are in parallel.  Therefore, we replace the combination by their equivalent resistance, which is <m>\dfrac{120}{7}\ \Omega</m>.
+			</p>
+			<image source="./images/electric-circuits/exp-series-parallel-4-resistors-c.png" width="60%"/>
+ 			 
+ 
+ 			<p> <alert>Step 3:  </alert> </p>
+ 			<p>
+ 				After replacing the parallel resistors by <m>\dfrac{120}{7}\ \Omega</m>, we find that it is in series with the  <m>12\text{-}\Omega</m>   resistor.  Therefore current through the <m>\dfrac{120}{7}\ \Omega</m> must be same as that goes through the  <m>12\text{-}\Omega</m>   resistor.  Now the two resistors in series can be replaced by a <m>\dfrac{204}{7}\text{-}\Omega</m>  resistor resulting in a really simple circuit.  The current through the <m>\dfrac{204}{7}\text{-}\Omega</m>  resistor  must be same as the <m>12\text{-}\Omega</m>   or <m>\dfrac{120}{7}\text{-} \Omega</m>  resistor since it is replacing resistors in series.
+			</p>
+			<image source="./images/electric-circuits/exp-series-parallel-4-resistors-d.png" width="45%"/>
+			<p><alert> Step 4:  </alert> </p>
+
+			<p>			 
+				Now, we can use Ohm's law to find the current through <m>\dfrac{204}{7}\text{-}\Omega</m>  resistor.
+				<me>
+					I = \dfrac{6V}{(204/7)\Omega} = \dfrac{7}{34}\ \text{A}.
+				</me>
+			</p>
+			<p> <alert>
+				Step 5:  </alert> </p>
+			<p>
+
+				We then trace our path backwards towards the original circuit.  The current through the <m>12\text{-}\Omega</m> resistor is also <m>7/34\text{ A}</m>.  Therefore, potential drop across the <m>12\text{-}\Omega</m> resistor is
+				<me>
+					\phi_a-\phi_b = \dfrac{7}{34}\ \text{A} \times 12\ \Omega = \dfrac{42}{17}\ \text{V}.
+				</me>
+				The potential drop across the <m>\dfrac{120}{7}\text{-} \Omega</m> resistor  is <m> (60/17)\text{V}</m>.
+				<me>
+					\phi_b-\phi_d = \dfrac{7}{34}\ \text{A} \times \dfrac{120}{7}\ \Omega = \dfrac{60}{17}\  \text{V}\ \ \Longrightarrow\ \phi_b = \dfrac{60}{17}\ \text{V}.
+				</me>
+				Going back one more step we find that potential drop across the <m>30\text{-}\Omega</m> resitor is same as that across the <m> \dfrac{120}{7}\text{-}\Omega</m> resistor we  worked out.  Hence, current through the <m>30\text{-}\Omega</m> resistor is simply 
+				<me>
+					I_1 = \dfrac{(60/17)\ \text{V}}{30\ \Omega} = \dfrac{2}{17}\ \text{A}
+				</me>
+				Therefore, voltage <m>\phi_c</m> is obtained from the potential drop across the <m>20\text{-} \Omega</m> resistor as given by
+				<me>
+					\phi_c - \phi_d = \left( \dfrac{2}{17}\ \text{A} \right) \times 20\ \Omega = \dfrac{40}{17}\ \text{V}.
+				</me>
+				Since <m>\phi_d = 0</m>, we obtain <m>\phi_c = \dfrac{40}{17}\ \text{V}</m>.  We can use the node voltages to obtain the current through various resistors.  Alternately, since the total current <m>I</m> was split into <m>I_1</m> and <m>I_2</m>, we can find <m>I_2</m> by subtracting <m>I_1</m> from <m>I</m>.
+				<me>
+					I_2 = I - I_1 = \dfrac{7}{34}\ \text{A} - \dfrac{2}{17}\ \text{A} = \dfrac{3}{34}\ \text{A}
+				</me>
+				Summarizing the answer:
+				<md>
+					<mrow> \amp \phi_d= 0;\ \phi_a = 6\ \text{V};\ \phi_b = \dfrac{60}{17}\ \text{V};\ \phi_c = \dfrac{40}{17}\ \text{V}.</mrow>
+					<mrow> \amp I_1 = \dfrac{2}{7}\ \text{A};\    I_2 = \dfrac{3}{34}\ \text{A};\   I = \dfrac{7}{34}\  \text{A}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</example>
+
+
+
+</section>

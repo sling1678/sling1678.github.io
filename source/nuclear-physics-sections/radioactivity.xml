@@ -1,0 +1,795 @@
+<section xml:id="sec-Radioactivity"><title>Radioactivity</title>
+	<introduction>
+		<p>
+			The emission of radiation from an unstable nucleus is called its <term>radioactivity</term>. After the discovery of X rays in 1895 by William R\"ontgen, Henri Becquerel suspected that the glow produced by phosphorescent materials could be same as X rays. Phosphorescent materials glow after they have been exposed to light. To test his ideas, Becquerel placed several phosphorescent materials on photographic plates that were wrapped in black paper to shield them from direct sunlight.  When he set them out in the sunlight he would find that the area beneath the phosphorescent materials would be darkened which seemed to confirm his hypothesis until one day in February of 1896 when the sun was out for a few days and he still got the plate under the uranium salt darkened as shown in <xref ref="fig-Becquerel-plate-1896-wikicommons"/>.  This led him to abandon his hypothesis about phosphorescence being  the cause of these effects. In his own words,
+		</p>
+		<p>
+			<q> I will insist particularly upon the following fact, which seems to me quite important and beyond the phenomena which one could expect to observe: The same crystalline crusts [of potassium uranyl sulfate], arranged the same way with respect to the photographic plates, in the same conditions and through the same screens, but sheltered from the excitation of incident rays and kept in darkness, still produce the same photographic images. Here is how I was led to make this observation: among the preceding experiments, some had been prepared on Wednesday the 26th and Thursday the 27th of February, and since the sun was out only intermittently on these days, I kept the apparatuses prepared and returned the cases to the darkness of a bureau drawer, leaving in place the crusts of the uranium salt. Since the sun did not come out in the following days, I developed the photographic plates on the 1st of March, expecting to find the images very weak. Instead the silhouettes appeared with great intensity ... One hypothesis which presents itself to the mind naturally enough would be to suppose that these rays, whose effects have a great similarity to the effects produced by the rays studied by M. Lenard and M. Röntgen, are invisible rays emitted by phosphorescence and persisting infinitely longer than the duration of the luminous rays emitted by these bodies. However, the present experiments, without being contrary to this hypothesis, do not warrant this conclusion. I hope that the experiments which I am pursuing at the moment will be able to bring some clarification to this new class of phenomena.</q>
+		</p>
+
+		<figure xml:id="fig-Becquerel-plate-1896-wikicommons">
+			<caption>
+				Photographic plate made by Henri Becquerel.  The plate shows marks where the plate was exposed to radiation from a uranium salt. Credits: Wikimedia Commons.
+			</caption>
+			<image source="./images/modern-physics/Becquerel-plate-1896-wikicommons.png" width="70%"/>
+		</figure>
+
+		<p>
+			Further studies with non-phosphorescent uranium compounds, which also darkened the plates, convinced Becquerel that the rays responsible for darkening of the photographic plates in his experiments came from uranium itself and were a new phenomenon. After the discovery of radioactivity, Marie Skłodowska-Curie and her husband Pierre Curie found other materials that exhibited radioactivity.  Other scientists at the time also worked on radioactivity and isolated radioactive elements. Henri Becquerel, Marie Skłodowska-Curie and  Pierre Curie were awarded Nobel prize for Physics in 1903 for their work on radioactivity.
+		</p>
+		<p>
+			When Marie Curie separated uranium from pitchblende, a uranium ore, she found that the left-over material, which did not have any uranium, was also radioactive. She correctly interpreted that the left over part of the ore must contain some other radioactive element. It took several tons of pitchblende to isolate 100 mg of radium. In 1911 Marie Curie was awarded a second Nobel prize, this time in Chemistry, ``in recognition of her services to the advancement of chemistry by the discovery of the elements radium and polonium, by the isolation of radium and the study of the nature and compounds of this remarkable element.''
+		</p>
+	</introduction>
+
+	<subsection><title>Alpha, beta, and gamma rays</title>
+		<p>
+			The radiation from radioactive materials do not all consist of same particles. Experiments of Rutherford of the kind shown in <xref ref="fig-radioactivity-rays-mag-field"/>  showed that radiation from radioactive elements behaved differently when directed into a space with a magnetic field.  The positively charged particles of alpha rays bend one way, the negatively charged particles of the negative beta rays bend the other way, and the uncharged particles of the gamma rays go undeviated.   The three types of rays also differ in their ability to penetrate materials with the alpha rays being the least penetrating and gamma rays the most.  Alpha rays can be stopped by a sheet of paper while it takes several cm of lead to shield from gamma rays.  The beta rays can be stopped with a few mm thick aluminum.
+		</p>
+		<p>
+			The alpha rays are made up of the doubly charged helium nucleus, <m>^4_2</m>He, which are also called alpha particles. The beta rays consist of electrons or positrons.  A positron has all the same properties as an electron, except that it has the opposite charge.  We designate a positron with a plus sign, <m>e^{+}</m>, and electron with a minus sign, <m>e^{-}</m>.  The electron rays are sometimes designated as <m>\beta^{-}</m> rays and the positron rays as <m>\beta^{+}</m> rays as in <xref ref="fig-radioactivity-rays-mag-field"/>. The gamma rays consist of photons which are uncharged and hence are not bent by the magnetic field.
+		</p>
+
+		<figure xml:id="fig-radioactivity-rays-mag-field">
+			<caption>
+				Bending of alpha, beta, and gamma rays in a magnetic field. The <m>\alpha</m> and <m>\beta^{-}</m> rays bend in opposite directions in a magnetic field while <m>\gamma</m> rays do not bend. The <m>\beta^{+}</m> rays consist of positrons and bend in the same direction as the <m>\alpha</m> rays.
+			</caption>
+			<image source="./images/modern-physics/radioactivity-rays-mag-field.png" width="70%"/>
+		</figure>
+
+		<p>
+			Radioactive materials are often characterized by the type of ray they emit. Thus, we say that <m>^{238}_{92}</m>U is an alpha source, <m>^{23}_{11}</m>Na is a <m>\beta^{+}</m> source, and Co is a gamma source.
+		</p>
+	</subsection>
+
+	<subsection><title>The Decay Dynamics</title>
+		<p>
+			The radioactive decay, whether it be <m>\alpha</m>-, <m>\beta</m>-, or <m>\gamma</m>-decay, or some other decay process consists of the transformation of a radioactive nucleus into some other nucleus and/or the change of the quantum state of the nucleus over time, e.g. from an excited nuclear state  to the ground state of the nucleus. We will refer to both of these possibilities by a common phrase: decay. Since the decay event is a quantum mechanical process, the actual time it takes for a particular nucleus to decay is known only statistically. Therefore, we study radioactivity of large populations of radioactive nuclides statistically.
+		</p>
+		<p>
+			Let <m>N(t)</m> represent the number of a radioactive nuclide in a given sample at time <m>t</m>.  Then, we find that the rate of decay, i.e. the rate at which <m>N(t)</m> changes with time,  is proportional to the number of radioactive nuclide at that time.  
+			<men xml:id="eq-radioactivity-rate-equation">
+				\frac{dN}{dt} = -\lambda N.
+			</men>
+			The proportionality constant <m>\lambda</m> is called the <term>rate constant</term> or <term>decay constant</term>. Let us bring <m>N</m> to the left side of the equation and transfer <m>dt</m> to the right to obtain fractional change in the number of radioactive nuclide during the interval <m>t</m> to <m>t+dt</m> to be
+			<me>
+				\frac{dN}{N}  = -\lambda\: dt.
+			</me>
+			Let <m>N_0</m> be the number of radioactive atoms at <m>t=0</m>.  Integrating this equation from <m>t=0</m> to <m>t=t</m> means the integration on the left side will be from <m>N_0</m> to <m>N</m> and the integration on the right side will be from <m>t=0</m> to <m>t=t</m> giving
+			<men xml:id="eq-radioactivity-rate-equation-sol">
+				\ln \frac{N(t)}{N_0}=-\lambda t\ \ \Longrightarrow\ \  N(t) = N_0 e^{-\lambda t}.
+			</men>
+			This says that number of radioactive atoms in a sample decreases exponentially with time. In time <m>t = 1/\lambda</m>, only <m>1/e</m> of the original radioactive atoms would have remained in the original state.
+		</p>
+		<p>
+			An important concept associated with the decay rate is the <term>half-life</term>, <m>T_{1/2}</m>, of a radioactive material.  The half-life is defined to be the time it takes for half of the radioactive nuclei to have decayed into its products, or, equivalently, only half of the initial radioactive atoms are remaining in the sample. To find the half life we set <m>t=T_{1/2}</m> and <m>N=\frac{1}{2}N_0</m> in Eq. <xref ref="eq-radioactivity-rate-equation-sol"/>.
+			<men xml:id="eq-radioactivity-half-life-1">
+			\frac{N_0}{2} = N_0 e^{-\lambda T_{1/2}}. 
+			</men>
+			We solve this equation for <m>T_{1/2}</m> by dividing out <m>N_0</m> and taking the natural logarithm of the two sides.  This gives
+			<men xml:id="eq-radioactivity-half-life-2">
+				T_{1/2} = \frac{\ln 2}{\lambda} \approx \frac{0.693}{\lambda}.
+			</men>
+			Note that the half-life does not depend upon the number of atoms in the sample - it only depends on the rate of decay, <m>\lambda</m>.  For instance, if you have <m>10^{12}</m> radioactive atoms in the sample at <m>t=0</m>, then you  will  have <m>\frac{1}{2}\times 10^{12}</m> radioactive atoms left at <m>t=T_{1/2}</m>, and <m>\frac{1}{4}\times 10^{12}</m> radioactive atoms left (which is half of <m>\frac{1}{2}\times 10^{12}</m>) at <m>t=2T_{1/2}</m>, and so on.   Note that <m>\lambda</m> in Eq. <xref ref="eq-radioactivity-rate-equation-sol"/> can be exchanged for half life <m>T_{1/2}</m> as follows.
+			<men xml:id="eq-radioactivity-rate-equation-sol-half">
+			 	N(t) = N_0 2^{-  t /T_{1/2}} = N_0 \left( \frac{1}{2}\right)^{t /T_{1/2}}. 
+			</men>
+			Clearly, larger the decay rate, the more active the sample will be and  smaller will be the half-life of the sample. The activity of a sample of a radioactive material is defined by the absolute value of the rate of change of <m>N</m>.
+			<me>
+				\textrm{Activity} = \left|\frac{dN}{dt}\right|.
+			</me>
+			From Eq. <xref ref="eq-radioactivity-rate-equation"/> we can express this in terms of the number of radioactive atoms at the moment and the rate constant.
+			<men xml:id="eq-nuclear-activity-first">
+				\textrm{Activity} = \left|\frac{dN}{dt}\right| = \lambda N. 
+			</men>
+			That is,  a sample with more radioactive material will have a higher activity. The decay of one nucleus constitutes one event.  Therefore, we define the unit of activity by number of decays in one second.  This unit is also called 1 <term>Becquerel (Bq)</term>.
+			<me>
+				1\:\textrm{Bq} = 1\:\textrm{decay/second}.
+			</me>
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				Radioactivity is often measured by a device called a <term>Geiger counter</term> in which radiation from each event enters a tube and ionizes a gas.  The ionized gas is accelerated by high voltage which magnifies the signal for detection.  In Geiger counter, each event gives one count and the activity is given by counts per second.
+			</p>
+			<p></p>
+			<figure xml:id="fig-970px-Geiger_counter">
+				<caption>
+					<url source="https://commons.wikimedia.org/wiki/File:Geiger_counter.jpg">Credits</url>
+				</caption>
+				<image source="./images/modern-physics/970px-Geiger_counter.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+		<p>
+			The activity is also given in terms of another unit called <term>Curie (Ci)</term>. Originally, 1 Ci was defined by the activity of one gram of highly radioactive radium-226, but now by definition we state 1 Ci in terms of Bq.
+			<me>
+				1\:\textrm{Ci} = 3.7\times 10^{10}\:\textrm{Bq}.
+			</me>
+			It turns out that 1 Ci is too large a unit for most laboratory work. The milliCurie (mCi) and microCurie (<m>\mu</m>Ci) are in common use.
+		</p>
+		<p>
+			Eq. <xref ref="eq-nuclear-activity-first"/> can also be written in other forms by making use of other equations presented above.
+			<men xml:id="eq-nuclear-activity-various">
+				\textrm{Activity} = \left|\frac{dN}{dt}\right| = \left|\frac{dN}{dt}\right|_{t=0}\ e^{-\lambda t} = \left|\frac{dN}{dt}\right|_{t=0}\ \left(\frac{1}{2} \right)^{t/T_{1/2}}. 
+			</men>
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Half-Life-from-Activity"><title>Half Life from Activity</title>
+
+		<statement>
+			<p>
+				Tritium decays by beta decay according to the following equation.
+				<me>
+					^{3}_{1}\textrm{H} \longrightarrow \ ^{3}_{1}\textrm{He} + e^{-1} + \bar\nu_e.
+				</me>
+				The radioactivity of a  chemical compound containing tritium  was measured fifteen days apart. On the first day, the sample had an activity of 10,000 Bq and on the 16th day the activity was 9975.  Determine the half life of tritium from this data.
+			</p>
+		</statement>
+		<hint><p>
+			Use Eq. <xref ref="eq-nuclear-activity-various"/>.
+		</p></hint>
+		<answer><p>
+			<m>4,154\:\textrm{d}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				We use Eq. <xref ref="eq-nuclear-activity-various"/> since the data is in activity.  We will write the equation as
+				<me>
+					\textrm{Activity}[t]=  \textrm{Activity[t=0]}\ \left(\frac{1}{2} \right)^{t/T_{1/2}},
+				</me>
+				where <m>t=0</m> is the activity on the first day. Setting the <m>t=15</m> days in this equation with the activity for the 16th day we get
+				<me>
+					9975\: \textrm{Bq}= 10,000\: \textrm{Bq} \ \left(\frac{1}{2} \right)^{15\:\textrm{d}/T_{1/2}}
+				</me>
+				Dividing both sides by 10,000 and taking the log of both sides we get
+				<me>
+					\frac{15\:\textrm{d}}{T_{1/2}}\:\log 2 = -\log 0.9975.
+				</me>
+				Therefore,
+				<me>
+					T_{1/2} = \frac{15\:\textrm{d}\: \log 2}{-\log 0.9975} = 4,154\:\textrm{d}
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+  
+	<exercise xml:id="ex-Amount-of-Sample-Remaining-Radioactive"><title>Amount of Sample Remaining Radioactive</title>
+
+		<statement>
+			<p>
+				A radioactive material has a half life of 10 days. Initially, there is 128 <m>\mu</m>g of the material in a test tube. How much of the radioactive material is left after 50 days?
+			</p>
+		</statement>
+		<hint><p>
+			Use half-life.
+		</p></hint>
+		<answer><p>
+			<m>4\:\:\mu\textrm{g}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The duration <m>t</m> is 5 half-lives. Therefore, the amount left will be
+				<me>
+					128\:\mu\textrm{g} \times \left(\frac{1}{2} \right)^{5} = 4\:\:\mu\textrm{g}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="Number-of-Radioactive-Radon-Atoms-Remaining"><title>Number of Radioactive Radon Atoms Remaining</title>
+
+		<statement>
+			<p>
+				The half life of the isotope <m>^{222}</m>Rn of radon is  3.8 days. Initially, there are <m>10^{12}</m> atoms of <m>^{222}</m>Rn in the sample.  How many atoms of <m>^{222}</m>Rn will remain after 30 days?
+			</p>
+		</statement>
+		<hint><p>
+			Use Eq. <xref ref="eq-radioactivity-rate-equation-sol-half"/>.
+		</p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+				We use Eq. <xref ref="eq-radioactivity-rate-equation-sol-half"/> to figure this out, where <m>t= 30</m> days and <m>T_{1/2} = 3.8</m> days.
+				<me>
+					N = 10^{12}\:\textrm{atoms} \times \left( \frac{1}{2}\right)^{(30\:\textrm{d}/3.8\:\textrm{d})} = 4.2 \times 10^9\:\textrm{atoms}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 	<subsection><title>Radioactive Dating</title>
+ 		<p>
+ 			Radioactive dating refers to determining the age of a specimen by using the radioactivity of the sample. One application of radioactive dating is called carbon dating which is used to find the age of fossils of living organisms.  The idea is based on the observation that the radioactive isotope  <m>^{14}</m>C of carbon is generated by nuclear reaction with cosmic rays.  It has been found that the level of  <m>^{14}</m>C in the atmosphere has not changed much over a long period of time. So, we make an assumption that  <m>^{14}</m>C in the atmosphere is a constant.  Presently, there are 
+			
+			<me>
+				\textrm{Present value of } \frac{^{14}\textrm{C}}{^{12}\textrm{C}} = 1.2\times 10^{-12}.
+			</me>
+	
+			Plants and other living organisms exchange <m>^{14}</m>C and <m>^{12}</m>C from sources that are in equilibrium with the atmosphere.   Thus, living organisms have a very steady ratio of the isotopes <m>^{14}</m>C to <m>^{12}</m>C in their bodies since a living organism exchanges carbon with the environment.  Once an organism dies, the exchange of carbon with the environment stops.  Since <m>^{12}</m>C is stable while <m>^{14}</m>C decays to <m>^{14}</m>N, the ratio of <m>^{14}</m>C to <m>^{12}</m>C in the dead organism decreases with time with the half life of 5,730 years, the half life of <m>^{14}</m>C.  By assuming the  <m>^{14}</m>C to <m>^{12}</m>C ratio in the organism when it died to be same as the ratio we find today in the living organisms, we can determine the age of the fossil.  The carbon dating of ancient bristlecone pine trees have provided an independent check for the method to around 6,000 years with a margin of error of 600 or 700 years.
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Age-of-a-Fossil-by-Carbon-Dating"><title>Age of a Fossil by Carbon Dating</title>
+
+		<statement>
+			<p>
+				One g of pure carbon extracted from a living organism has activity of approximately 15 disintegration per minute. One milligram of carbon from a fossil shows an activity of <m>4\times 10^{-3}</m> disintegration per minute.  What is the age of the fossil?
+			</p>
+		</statement>
+		<hint><p>
+			See solution.
+		</p></hint>
+		<answer><p>
+			<m>10,900\:\textrm{y}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				As described in the text, the activity in the living organism now will be assumed to be the activity in the fossil at the time <m>t=0</m> when the organism died.  For consistency in calculations, we will write all activities for 1 g of sample in units of per minute.
+				<md>
+					<mrow> \amp \left[ \frac{dN}{dt} \right]_{t=0} = -15\:\textrm{min}^{-1}\textrm{g}^{-1},</mrow>
+					<mrow> \amp \left[ \frac{dN}{dt} \right]_{t=t} = -4\times 10^{-3}\times 10^3 \:[\textrm{mg in g}]   = -4\:\textrm{min}^{-1}\textrm{g}^{-1}</mrow>
+				</md>
+				The half life of <m>^{14}</m>C in minutes is
+				<me>
+					T_{1/2} = 5730\:\textrm{y} \times 365.25 \times 24\times 60\: \textrm{min/y} = 3.01375\times 10^9\:\textrm{min}.
+				</me>
+				This gives  <m>\lambda</m> in per min.
+				<me>
+					\lambda = \frac{0.693}{T_{1/2}} = \frac{0.693}{3.01375\times 10^9\:\textrm{min}} = 2.3\times 10^{-10}\:\textrm{min}^{-1}. 
+				</me>
+				We now write out the equations for the <m>t=0</m> and <m>t=t</m> and divide them to get rid of the common factors.
+				<md>
+					<mrow> \amp  \left[ \frac{dN}{dt} \right]_{t=0} = -\lambda N_0,</mrow>
+					<mrow> \amp  \left[ \frac{dN}{dt} \right]_{t=t} = -\lambda N_0\:e^{-\lambda t},</mrow>
+				</md>
+				where I have replaced <m>N</m> on the right side in the equation by <m>N_0 e^{-\lambda t}</m>.  Dividing we get
+				<me>
+					e^{-\lambda t} =  \left( \frac{dN}{dt} \right)_{t=t} \div \left( \frac{dN}{dt} \right)_{t=0}. 
+				</me>
+				Therefore, the time <m>t</m> will be
+				<me>
+					t = \frac{1}{\lambda} \: \ln\left[ \left( \frac{dN}{dt} \right)_{t=0} \div \left( \frac{dN}{dt} \right)_{t=t}  \right].
+				</me>
+				Now, we put in the numerical values to obtain
+				<md>
+					<mrow>t \amp = \frac{1}{2.3\times 10^{-10}\:\textrm{min}^{-1}} \: \ln\left[   15\:\textrm{min}^{-1}\textrm{g}^{-1} \div 4\:\textrm{min}^{-1}\textrm{g}^{-1} \right]</mrow>
+					<mrow> \amp = 5.75\times 10^9 \textrm{min} = 10,900\:\textrm{y}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<subsection><title>Alpha Decay</title>
+		<p>
+			In an alpha decay a nucleus  <m>^A_Z</m>X  spontaneously loses two protons and two neutrons when it emits a <m>^4_2</m>He particle and transforms to another nucleus Y with <m>Z</m> two less than that of X and <m>A</m> four less than that of X. We can write this nuclear transformation as follows.
+			
+			<men xml:id="eq-alpha-decay-nuc-rx">
+				^A_Z\textrm{X} \longrightarrow\  ^{A-4}_{Z-2}\textrm{Y}  + ^4_2\textrm{He}. 
+			</men>
+			
+			The original nucleus <m>X</m> is called the <term>parent nucleus</term> and the product nucleus Y is called the <term>daughter nucleus</term>. When writing nuclear reactions such as Eq. <xref ref="eq-alpha-decay-nuc-rx"/> we make sure that  the two sides of the arrow have:
+			
+			<ol>
+				<li> the same <m>A</m>, and, </li>
+				<li> the same electric charge.</li>
+			</ol>
+			 
+			In this reaction if X was a neutral atom then Y will have to have charge <m>-2e</m> since <m>\alpha</m> particle has a charge of <m>+2e</m>. One could display the electric charge information in Eq. <xref ref="eq-alpha-decay-nuc-rx"/> and write it as follows.
+
+			<men xml:id="eq-alpha-decay-nuc-rx-2">
+				^A_Z\textrm{X}^{0} \longrightarrow\  ^{A-4}_{Z-2}\textrm{Y}^{-2}  + ^4_2\textrm{He}^{+2}. 
+			</men>
+
+			However, this notation will be too cumbersome and the convention is to omit charges on nulcides and alpha particles and keep the charge information implicit.
+		</p>
+		<p>
+			There are numerous examples of <m>\alpha</m> decay. Each alpha decay is characterized by its half-life.  For instance, the <m>\alpha</m> source used by Rutherford in his scattering experiment that led to the discovery of nucleus was purified radium, <m>^{226}_{\ 88}</m>Ra, which transforms into radon with alpha decay,
+			<me>
+				^{226}_{\ 88}\textrm{Ra} \longrightarrow\  ^{222}_{\ 86}\textrm{Rn}  + ^4_2\textrm{He}  \ \ \ \ \ \ (T_{1/2} = 1600\:\textrm{yr})
+			</me>
+			Polonium-210 blamed for the death of the Russian spy Alexander Litvinenko in 2006 is an alpha emitter with the following reaction.
+			<me>
+				^{210}_{\ 84}\textrm{Po} \longrightarrow\  ^{222}_{\ 82}\textrm{Pb}  + ^4_2\textrm{He} \ \ \ \ \ \ (T_{1/2} = 138\:\textrm{days})
+			</me>
+			The element polonium was originally discovered in 1897 by Marie Curie who named the element after her country of birth, Poland. Many other nuclides decay by alpha decay process.
+		</p>
+		<p>
+			When a parent nuclide X decays we find that the rest mass of the parent nuclide X is larger than the sum of the rest masses of the daughter nuclide Y and the  <m>\alpha</m> particle.
+			
+			<me>
+				m_{\textrm{X}} > m_{\textrm{Y}} + m_{\alpha}.
+			</me>
+			
+			Since energy is conserved in the decay, the difference in the rest energies of the parent and the products shows up in the kinetic energies of the daughter nucleus and the alpha particle.  The difference in the  the rest energies of the starting nuclide and the products is called the <term>disintegration energy</term> which is usually denoted by the letter <m>Q</m> [do not confuse this with the same symbol for charge].
+			
+			<me>
+				Q =   m_{\textrm{X}} c^2 - \left( m_{\textrm{Y}} c^2+ m_{\alpha} c^2\right).
+			</me> 
+			
+			In alpha decay of large nuclei, most of this energy ends up in the kinetic energy of the alpha particles as we can show by applying conservation of energy and conservation of momentum to the alpha decay reaction as we will study below.  For alpha decay <m>Q>0</m>.  If <m>Q \lt 0</m> for some hypothetical process, then the process will not take place spontaneously, one would need to put energy into the process to make it happen, if at all.
+		</p>
+		<p>
+			Consider a nuclide X at rest decay into a nuclide Y and an alpha particle <m>\alpha</m>. Let <m>K_\textrm{Y}</m>  and <m>K_\alpha</m> be the kinetic energies of Y and <m>\alpha</m> particle. Let <m>p_\textrm{Y}</m>  and <m>p_\alpha</m> be the momenta of Y and <m>\alpha</m> particle, which would be in the opposite directions for the momentum to add up to zero, which is the momentum of X.  The conservation of energy and momentum gives the following two equations.
+			
+			<mdn>
+				<mrow xml:id="eq-alpha-enery-cons-1"> \amp  \textrm{Conservation of Energy:}\ \ \ \left( m_{\textrm{Y}} c^2+ m_{\alpha} c^2\right)  +K_\textrm{Y} + K_\alpha =  m_{\textrm{X}} c^2. </mrow>
+				<mrow xml:id="eq-alpha-mom-cons-1"> \amp   \textrm{Conservation of Momentum:}\ \ \ p_\textrm{Y} - p_\alpha = 0.</mrow>
+			</mdn>
+			In the second equation, we can write the momenta in terms of the kinetic energies.  With the assumption that the speeds are non-relativistic we will have
+			<me>
+				K = \frac{p^2}{2m},\ \  p = \sqrt{2m K}.
+			</me>
+			Rewriting Eq. <xref ref="eq-alpha-mom-cons-1"/> in terms of kinetic energies we get
+			
+			<men xml:id="eq-alpha-mom-cons-2">
+				m_\textrm{Y} K_\textrm{Y} = m_\alpha K_\alpha.
+			</men>
+			
+			We also rewrite Eq. <xref ref="eq-alpha-enery-cons-1"/> using <m>Q</m> for the disintegration energy part.  We get
+			
+			<men xml:id="eq-alpha-enery-cons-2">
+				K_\textrm{Y} + K_\alpha = Q. 
+			</men>
+			
+			We can now solve Eqs. <xref ref="eq-alpha-mom-cons-2"/> and <xref ref="eq-alpha-enery-cons-2"/> for <m> K_\alpha</m> and <m>K_\textrm{Y}</m>.
+			
+			<md>
+				<mrow> \amp  K_\alpha = \frac{m_{\textrm{Y}}}{m_{\textrm{Y}} + m_{\alpha}}\: Q.</mrow>
+				<mrow> \amp   K_\textrm{Y}  = \frac{m_{\alpha}}{m_{\textrm{Y}} + m_{\alpha}}\: Q.</mrow>
+			</md>
+			
+			If <m>m_\alpha \ll m_{\textrm{Y}}</m>, which is the case with heavy nuclides, we will have approximately
+			
+			<men xml:id="eq-alpha-decay-kinetic-energies">
+				\left.
+				\begin{array}{l}
+				K_\alpha \approx  Q,\\
+				K_\textrm{Y}  \approx \frac{m_{\alpha}}{m_{\textrm{Y}} }\: Q
+				\end{array}
+				\right\} \ \ (m_\alpha \ll m_{\textrm{Y}}).
+			</men>
+ 
+		</p>
+	</subsection>
+
+
+	<exercise xml:id="ex-Q-value-in-an-Alpha-Decay-U238"><title>Q value in an Alpha Decay</title>
+
+		<statement>
+			<p>
+				(a) Calculate the energy released in the alpha decay of <m>^{238}_{\ 92}</m>U into <m>^{234}_{\ 90}</m>Th. 
+				 <me>
+				 	^{238}_{\ 92}\textrm{U} \longrightarrow\ ^{234}_{\ 90}\textrm{Th} \ +\ ^{4}_{2}\textrm{He}. 
+				 </me>
+				 The masses of nuclides are
+				 <me>
+				 	 m[^{238}_{\ 92}\textrm{U}] = 238.050 788 26  \:\textrm{u};\ \  m[^{234}_{\ 90}\textrm{Th}] = 234.043 601  \:\textrm{u}; \ \   m[^{4}_{2}\textrm{He}] = 4.002 054 76 \:\textrm{u};
+				 </me>
+				 (b) What are the kinetic energies of the alpha particle and Th-239?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p>
+			(a) <m>4.78\:\textrm{MeV}</m>, (b) <m>0.082\:\textrm{MeV}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The <m>Q</m> is given by the difference in the rest energies of the starting nuclide and ending nuclides.
+				 <me>
+					Q = m[^{238}_{\ 92}\textrm{U}] c^2 - \left( m[^{234}_{\ 90}\textrm{Th}] + m[^{4}_{2}\textrm{He}]\right) c^2.
+				 </me> 
+				The masses are given in the unit u, when when multiplied by <m>c^2</m> will be
+				<me>
+					1\: \textrm{u} \times c^2 = 932\:\textrm{MeV}.
+				</me>
+				Therefore we can get the <m>Q</m> directly in terms of MeV by
+				<me>
+					Q = \left[ 238.050 788 26 - 234.043 601 - 4.002 054 76\right]\:\textrm{u}\times 932\:\frac{\textrm{MeV}}{\textrm{u}} = 4.78\:\textrm{MeV}.
+				</me>
+				In these calculations there are many significant figures.  It is important to keep these figures in the calculation since often the multipliers are large.
+			</p>
+			<p>
+				 
+				(b) From Eq. <xref ref="eq-alpha-decay-kinetic-energies"/> we obtain the required kinetic energies
+				<me>
+					K_\alpha \approx  Q = 4.78\:\textrm{MeV}.
+				</me>
+				Therefore,
+				<md>
+					<mrow>K_\textrm{Y} \amp \approx \frac{m_{\alpha}}{m_{\textrm{Y}} }\: Q</mrow>
+					<mrow>\amp =  \frac{4.002 054 76\:\textrm{u}}{234.043 601\:\textrm{u}}\times 4.78\:\textrm{MeV} =  0.082\:\textrm{MeV}. </mrow>
+				</md>
+				
+			</p>
+		</solution>
+	</exercise>
+
+  
+	<subsection><title>Beta Decay</title>
+		<p>
+			The emission of electrons and positrons from a nucleus are usually called beta decay.  This does not mean that electrons and positrons were inside the nucleus before the decay. Rather, they are formed during the process of decay accompanied by the conversion of neutron to proton or of proton to neutron by the following fundamental nuclear reactions similar to when an excited atom gives off a photon, we do not claim that the photon was inside the atom.
+
+			<mdn>
+				<mrow xml:id="eq-beta-decay-1"> \amp  n \longrightarrow\ p^{+} + e^{-} + \bar{\nu}_e,\ \ \ (\textrm{negative beta decay},\beta^{-})  </mrow>
+				<mrow xml:id="eq-beta-decay-2"> \amp  p^{+}  \longrightarrow\  n + e^{+} + \nu_e, \ \ \ (\textrm{positive beta decay},\beta^{+})  </mrow>
+			</mdn>
+
+			where <m>\nu_e</m> and <m>\bar{\nu}_e</m> are neutrino and antineutrino (more specifically electron-neutrino and anti-electron-neutrino) respectively. The mass of a neutrino is much less than even the mass of an electron, which is the lightest particle with non-zero mass whose mass is known with some accuracy. We will assume the mass of a neutrino to be zero and its speed to be equal to the speed of light:
+			
+			<me>
+				m_{\nu} = 0,\ \ v_{\nu} = c.
+			</me> 
+
+			Therefor the energy and momentum of a neutrino will have the same relation as for photons, the particle of light.
+			
+			<me>
+				E_{\nu} = p_{\nu} c.
+			</me> 
+			
+			The reactions in Eq. <xref ref="eq-beta-decay-1"/><m>-</m><xref ref="eq-beta-decay-2"/> occurring in nuclei of atoms undergoing a beta decay.
+			
+			<mdn>
+				<mrow xml:id="eq-beta-decay-1a"> \amp  ^{A}_{Z}\textrm{X} \longrightarrow\ ^{A}_{Z+1}\textrm{Y} + e^{-} + \bar{\nu}_e, \ \ \ (\textrm{negative beta decay},\beta^{-})</mrow> 
+				<mrow xml:id="eq-beta-decay-2a"> \amp  ^{A}_{Z}\textrm{X}\longrightarrow\  ^{A}_{Z-1}\textrm{Y}  + e^{+} + \nu_e, \ \ \ (\textrm{positive beta decay},\beta^{+}) </mrow> 
+			</mdn>
+
+			Some examples of these beta decays are shown in <xref ref="tab-beta-decay"/> along with the disintegration energy and the half-life time  for each.  As in the table, it is common practice to omit the <m>Z</m> from the symbol of the nuclide since it is understood from the symbol of the element itslef.
+			
+			<me>
+			^	{A}_{Z}\textrm{X}\ \equiv\ \ ^{A}\textrm{X}. 
+			</me>
+			<!-- %Here are two representative cases, one for <m>\beta^{-}</m> and the other for <m>\beta^{+}</m>. 
+			%\begin{align}
+			% \amp  ^{14}_{6}C \longrightarrow\ ^{14}_{7}N + e^{-} + \bar{\nu}_e, \ \ \ (\textrm{negative beta decay},\beta^{-}) \label{eq-beta-decay-1b}\\
+			% \amp  ^{22}_{11}Na \longrightarrow\  ^{22}_{10}Ne + e^{+} + \nu_e, \ \ \ (\textrm{positive beta decay},\beta^{+})\label{eq-beta-decay-2b}
+			%\end{align} -->
+		</p>
+		<table xml:id="tab-beta-decay"><title>Examples of Beta Decay Processes</title>
+			<tabular halign="center">
+				<col halign="left"></col><col></col><col></col>
+				<row header="yes" bottom="minor">
+					<cell>Decay  </cell> <cell> <m> Q (\;\text{MeV}\;)</m></cell> <cell> <m>T_{1/2}</m></cell>
+				</row>
+				<row>
+					<cell> <m> ^{14}_{ }\text{C}  \longrightarrow\ ^{14}_{ }\text{N} + e^{-} + \bar{\nu}_e</m> </cell> <cell><m>0.16</m> </cell> <cell><m>5,700 \text{ yrs}</m> </cell>
+				</row>
+				<row>
+					<cell> <m> ^{99}_{ }\text{Tc}  \longrightarrow\ ^{99}_{ }\text{Ru} + e^{-} + \bar{\nu}_e</m> </cell> <cell><m>0.29</m> </cell> <cell><m>2.1\times 10^5 \text{ yrs}</m> </cell>
+				</row>				
+				<row>
+					<cell> <m> ^{124}_{ }\text{I}  \longrightarrow\ ^{124}_{ }\text{Te} + e^{+} +  \nu_e</m> </cell> <cell><m>2.14</m> </cell> <cell><m>4.2 \text{ day}</m> </cell>
+				</row>				
+				<row>
+					<cell> <m> ^{25}_{ }\text{Al}  \longrightarrow\ ^{25}_{ }\text{Mg} + e^{+} +  \nu_e</m> </cell> <cell><m>3.26</m> </cell> <cell><m>7.2 \text{ sec}</m> </cell>
+				</row>				
+				<row>
+					<cell> <m>^{23}_{ }\text{Ne}  \longrightarrow\ ^{23}_{ }\text{Na} + e^{-} + \bar{\nu}_e</m> </cell> <cell><m>4.38</m> </cell> <cell><m>38 \text{ sec}</m> </cell>
+				</row>
+			</tabular>
+		</table>
+
+		<p>
+			The disintegration energy <m>Q</m> of a beta decay is defined in a similar way as we have done for the <m>\alpha</m> decay by the difference in rest energies of the starting nuclide and the ending products.
+			<me>
+				Q = m_{\textrm{X}} c^2  - \left(m_{\textrm{Y}} c^2 + m_e c^2 + m_\nu c^2 \right).
+			</me>
+			Since <m>m_\nu =0</m> we get
+			<me>
+				Q = m_{\textrm{X}} c^2  - \left(m_{\textrm{Y}} + m_e  \right)  c^2.
+			</me>
+			Now, note that we can add the masses of <m>X</m> electrons to <m>m_{\textrm{X}}</m> and <m>X+1</m> electrons to <m>m_{\textrm{Y}}</m> and convert this equation to the masses of the atoms, which we denote by the capital letter <m>M</m>.
+			<me>
+				Q =\left(  M_{\textrm{X}}    - M_{\textrm{Y}} \right) c^2.
+			</me>
+			For instance, the <m>Q</m> value of the  <m>^{14}_{\ 6}</m>C beta decay is
+			<md>
+				<mrow> Q \amp = \left(m[^{14}_{ }C]   -  m[^{14}_{ }N]\right) c^2</mrow>
+				<mrow> \amp = \left( 14.00324989 \: \textrm{u}  - 14.003074004\: \textrm{u}\right) c^2 = 0.164\:\textrm{MeV}.</mrow>
+			<!-- %Q_2 = \left(m[ ^{22}_{11}Na   -  m[^{22}_{10}Ne]\right) c^2 = \left( 21.994436 \: \textrm{u}  - 21.991385114\: \textrm{u}\right) c^2 = 2.84\:\textrm{MeV} -->
+			</md>
+			Unlike the alpha decay, where the disintegration energy ends up as the kinetic energy of alpha particles, in the beta decay, the  disintegration energy is shared by electron (or positron) and neutrino with a certain probability of a portion of the energy as the kinetic energy of the electron and the rest in the neutrino. 
+			<me>
+				K_{e} + E_\nu \approx Q=\left(  M_{\textrm{X}}    - M_{\textrm{Y}} \right) c^2.
+			</me>
+			Therefore, electrons (or positrons) coming out of a sample of beta-emitting sample have various energies upto a maximum, corresponding to the decay with <m>E_\nu =0</m>.
+			<me>
+				K_{e}^{\textrm{max}} = Q.
+			</me>
+			<xref ref="fig-nuclear-beta-decay-1"/> shows the relative number of electrons with various kinetic energies in the beta decay spectrum of <m>^{14}</m>C. The maximum kinetic energy is equal to 0.156 MeV which is equal to the disintegration energy. In the decay of each nucleus the sum of the energy carried by the electron and the neutrino is equal tot 0.156 MeV although the energies of electron and neutrino emitted from the decay of different nuclei may be different.
+		</p> 
+
+		<figure xml:id="fig-nuclear-beta-decay-1">
+			<caption>
+				 The distribution of kinetic energy among electrons in the beta decay of <m>^{14}</m>C. For each electron emitted a neutrino is also emitted that carries the energy such that the sum of the energy of the neutrino and the kinetic energy of the electron equals the dissociation energy, which is  0.156 MeV for the <m>^{14}</m>C to <m>^{14}</m>N decay.
+			</caption>
+			<image source="./images/modern-physics/nuclear-beta-decay-1.png" width="80%"/>
+		</figure>
+
+
+ 	<subsubsection><title>Electron Capture</title>
+ 		<p>
+ 			A related process to the process of emission of electrons and positrons is the capture of an electron from the orbit closest to the nucleus. Such an event usually occurs when the nucleus captures an electron from the K  or L shell of the atom.  The capture of an electron leads to a nuclear reaction that converts a proton into a neutron and a neutrino is released in the process. 
+			<men xml:id="eq-beta-decay-3">
+				p^{+}  + e^{-}[\textrm{orbital}]  \longrightarrow\  n  + \nu_e.\ \ \ (\textrm{Orbital electron capture},\mathcal{E}) 
+			</men>  
+			This reaction, called <term>electron capture</term>, is hard to detect directly since the released products are the daughter nucleus and the neutrino. However, as a result of the capture of the inner-shell electron, an electron from a higher enegy state falls into the inner shell to fill the empty level, which causes X rays to be emitted, which can be detected without too much difficulty.  The increase in the number of daughter nuclides will also be a signal for this reaction mode.  The reaction in Eq. <xref ref="eq-beta-decay-3"/> occurring in nuclei of atoms undergoing a beta decay can be written as
+			
+			<md>
+			<!-- % \amp  ^{A}_{Z}X \longrightarrow\ ^{A}_{Z+1}Y + e^{-} + \bar{\nu}_e, \ \ \ (\textrm{negative beta decay},\beta^{-}) \label{eq-beta-decay-1a}\\
+			% \amp  ^{A}_{Z}X \longrightarrow\  ^{A}_{Z-1}Y + e^{+} + \nu_e, \ \ \ (\textrm{positive beta decay},\beta^{+})\label{eq-beta-decay-2a}\\ -->
+			 	<mrow xml:id="eq-beta-decay-3a"> \amp  ^{A}_{Z}X  + e^{-}[\textrm{orbital}]  \longrightarrow\  ^{A}_{Z-1}Y  + \nu_e.\ \ \ (\textrm{Orbital electron capture},\mathcal{E})</mrow>
+			</md>
+
+			The <m>Q</m> of this reaction must take into account the binding energy pf the captured electron, which can be considerable. 
+			<men xml:id="eq-nuclear-q-electron-capture">
+				Q = \left( m_X - m_Y \right) c^2 - E_{K}, 
+			</men>
+			where <m>E_{K}</m> is the binding energy of the captured electron.  The mass of the electron on the left side of the reaction is already included in the mass of the nuclide <m>m_X</m>. The following transformations exemplify electron capture process.
+			<!-- %\begin{align}
+			%% \amp  ^{14}_{6}C \longrightarrow\ ^{14}_{7}N + e^{-} + \bar{\nu}_e, \ \ \ (\textrm{negative beta decay},\beta^{-}) \label{eq-beta-decay-1b}\\
+			%% \amp  ^{22}_{11}Na \longrightarrow\  ^{22}_{10}Ne + e^{+} + \nu_e, \ \ \ (\textrm{positive beta decay},\beta^{+})\label{eq-beta-decay-2b}\\
+			%
+			%\amp <m> ^{23}_{ }</m>Ne  <m>\longrightarrow\ ^{23}_{ }</m>Na <m>+ e^{-} + \bar{\nu}_e</m>  \amp   4.38  \amp   <m> 38 <m> sec\\
+			%
+			% \amp  ^{49}_{23}V + e^{-}[\textrm{orbital}] \longrightarrow\  ^{49}_{22}Ti  + \nu_e.\ \ \ (\textrm{Orbital electron capture},\mathcal{E})\label{eq-beta-decay-3b}
+			%\end{align} -->
+		</p>
+		<tabular halign="center">
+			<col halign="left"></col><col></col><col></col>
+			<row>
+				<cell><m> ^{41}_{ }\text{Ca} + e^{-}  \longrightarrow\ ^{41}_{ }\text{K} +  \nu_e</m></cell> 
+				<cell><m> (Q =0.43 \text{ MeV}) </m></cell> <cell> <m>( T_{1/2} =  1.0\times 10^5 \text{ yr})</m> </cell>
+			</row>
+			<row>
+				<cell><m>^{49}_{ }\text{V} + e^{-}  \longrightarrow\ ^{49}_{ }\text{Ti} +  \nu_e</m></cell> 
+				<cell><m>(Q = 0.620\text{ MeV})</m></cell> <cell><m> (T_{1/2} =  337 \text{ days})</m></cell>
+			</row>
+			<row>
+				<cell><m>^{15}_{ }\text{O} + e^{-}  \longrightarrow\ ^{15}_{ }\text{N} + \nu_e</m></cell> 
+				<cell><m> (Q = 2.75 \text{ MeV})</m></cell> <cell><m>( T_{1/2} =  1.22 \text{ sec})</m></cell>
+			</row>
+		</tabular>
+		<p>
+			Some nuclides undergo all three types of beta decay.  For instance, <m>^{40}</m>K is just such a nuclide.  About 89.28\% of the time, it undegoes <m>\beta^{-}</m> decay to  <m>^{40}</m>Ca, 10.72\% of the time undergoes electron capture <m>\mathcal{E}</m>  to  an excited state of <m>^{40}</m>Ar (which de-excites and gives of gamma rays), and about 0.001\% of the time  <m>\beta^{-}</m> decay to  <m>^{40}</m>Ar.
+		</p>
+	</subsubsection>
+
+	<exercise xml:id="ex-Q-Value-of-a-K-shell-Capture"><title> Q Value of a K-shell Capture</title>
+
+		<statement>
+			<p>
+				Compute the <m>Q</m> value of K-shell capture 
+				<me>
+					^{15}_{8}\textrm{O} + e^{-} \longrightarrow\ ^{15}_{7}\textrm{N}  + \bar{\nu}_e.
+				</me>
+				The binding energy of K-shell electron, <m>E_K = 0.543</m> keV. Masses of the isotopes are:  <m>^{15}_{8}</m>O 15.003065 u, <m>^{15}_{7}</m>N 15.000108 u. 
+			</p>
+		</statement>
+		<hint><p>
+			Use Eq. <xref ref="eq-nuclear-q-electron-capture"/>
+		</p></hint>
+		<answer><p>
+			<m> 2.75388\:\textrm{MeV}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				From Eq. <xref ref="eq-nuclear-q-electron-capture"/> we get
+				<me>
+					Q = \left( 15.003065\:\textrm{u} - 15.000108\:\textrm{u}\right) c^2\times 931.494\frac{\textrm{MeV}}{c^2} - 0.000543\:\textrm{MeV} = 2.75388\:\textrm{MeV} .
+				</me>
+			</p>
+		</solution>
+	</exercise>	
+
+ 
+
+ 	</subsection>	
+
+ 	<subsection><title>Gamma Decay</title>
+ 		<p>
+ 			A Gamma decay occurs when a nucleus makes quantum transition from a nuclear excited state to a state of lower energy by emitting a high energy photon, called gamma particles (which are high energy photons) in this context.  We usually represent the excited state by placing a star on the symbol. Since gamma decay involves the emission of a photon only, which has no charge and no mass, the <m>A</m> and <m>Z</m> of the nucleus do not change.
+			<me>
+			^{A}_{Z}\textrm{X}^* = ^{A}_{Z}\textrm{X} + \gamma.
+			</me>
+			It is common for a nucleus to end up in an excited state as a result of the alpha or beta decay and then undergo the gamma decay. For instance, when <m>^{40}</m>K undergoes an electron capture, the daughter nucleus <m>^{40}</m>Ar is actually in an excited state, <m>^{40}</m>Ar<m>^*</m>.
+			<me>
+			 ^{40}_{ }\textrm{K} +  e^{-}  \longrightarrow\ ^{40}_{ }\textrm{Ar}^{*} +  \nu_e. 
+			</me>
+			The excited <m>^{40}_{ }\textrm{Ar}^{*}</m> undergoes nuclear transition to the lower energy state and releases 1.460 MeV of energy in a photon. 
+			<me>
+			^{40}_{ }\textrm{Ar}^{*} \longrightarrow\ ^{40}_{ }\textrm{Ar}  + \gamma.
+			</me>
+			The energy diagram in <xref ref="fig-nuclear-40K-to-40Ar-EC-Gamma"/> represents the beta and gamma decays for the entire process. The wavelength of this photon is very small as can be seen by
+			<me>
+			\frac{hc}{\lambda} = E\ \ \Longrightarrow\ \ \lambda = \frac{hc}{E} = \frac{1.23984193\:\mu\textrm{m}.\textrm{eV}}{1.460\;\textrm{MeV}} = 0.85\:\textrm{pm}.
+			</me>
+			For comparison, the X ray from a Molybdenum target is 71 pm.
+		</p> 
+
+		<figure xml:id="fig-nuclear-40K-to-40Ar-EC-Gamma">
+			<caption>
+				The Decay scheme of <m>^{40}</m>K through the electron capture and then subsequent gamma emission from the excited nucleus of <m>^{40}</m>Ar.
+			</caption>
+			<image source="./images/modern-physics/nuclear-40K-to-40Ar-EC-Gamma.png" width="70%"/>
+		</figure>
+		<p>
+			A common source of gamma rays is an artificially produced cobalt nuclide <m>^{60}</m>Co.  The decay scheme of <m>^{60}</m>Co is shown in <xref ref="fig-nuclear-2000px-Cobalt-60m-decay-wiki-commons"/>. <m>^{60}</m>Co decays by beta decay by two modes into two different excited nuclear states of <m>^{60}</m>Ni.  Each of these excited states then give off photons for eventually relaxation to the ground state. Therefore, here we get two different energy gamma particles from the inter-nuclear transitions of <m>^{60}</m>Ni.
+		</p>
+
+		<figure xml:id="fig-nuclear-2000px-Cobalt-60m-decay-wiki-commons">
+			<caption>
+				The Decay scheme of <m>^{60}</m>Co through the electron capture and then subsequent gamma emissions from the excited nuclear states of <m>^{60}</m>Ni.  The metastable state of <m>^{60}</m>Co, labeled  Co60m is also shown. Credits: Wikicommons.
+			</caption>
+			<image source="./images/modern-physics/nuclear-2000px-Cobalt-60m-decay-wiki-commons.png" width="80%"/>
+		</figure>		
+
+ 
+
+		<!-- %
+		%\subsubsection*{Other Decay Processes}
+		%
+		%In addition to the <m>^4_2</m>He, <m>e^{-}</m>, <m>e^{+}</m>, and photons, nuclei gives off other particles in their nuclear decay. A hard-to-detect neutral particle, neutrino <m>\nu</m> is accompanied in the beta decay. Some unstable nuclei give off neutrons while some others give off proton <m>p^{+}</m>. Some proton rich nuclei of atoms capture their own electron, called the <term>electron capture</term> and give off neutrino radiation.  -->
+
+	</subsection>
+
+	<subsection><title>Natural Radioactivity Series</title>
+		<p>
+			Radioactivity on Earth occurs in naturally occurring radionuclides as well as radioactive nuclides produced in nuclear reactions in laboratory. The radioactivity of <m>^{60}</m>Co discussed above is an example of the latter since <m>^{60}</m>Co is produced by nucelar reaction in which a neutron reacts with the nucleus of <m>^{59}</m>Co.	
+			<me>
+				^{59}\textrm{Co} + \textrm{n} =\ ^{60}\textrm{Co},
+			</me>
+			which decays by various channels and has a half life of 5.2714 years.  The naturaly occuring radionuclides  are of two types
+			<ol>
+				<li> 
+					Radionuclides that are either produced by nuclear reactions with cosmic rays. Carbon-14 is an example of a nuclide which is produced by the nuclear reaction of a neutron with the nucleus of <m>^{14}</m>N in atmosphere.
+					<me>
+						^{14}\textrm{N} + \textrm{n} \longrightarrow\ ^{14}\textrm{C} + \textrm{p}^{+}.
+					</me>
+				</li>
+				<li>
+					Long half-life radionuclides present at the time of the formation of the Earth  approximately <m>4.54\times 10^9</m> years ago. They are <m>^{238}_{\ 92}</m>U, <m>^{235}_{\ 92}</m>U, and <m>^{232}_{\ 90}</m>Th with half lives of <m>4.47\times 10^9</m> years, <m>7.04\times 10^8</m> years, and <m>1.41\times 10^{10}</m> years, respectively.
+				</li>
+			</ol>
+			These long-lived radionuclides decay into daughter nuclides that are themselves radioactive, whose daughters are also radioactive, and so on, till the final daughter is a stable isotope.  The final product of the decay series starting with <m>^{238}_{\ 92}</m>U, <m>^{235}_{\ 92}</m>U, and <m>^{232}_{\ 90}</m>Th are three stable isotopes of lead, <m>^{206}_{\ 82}</m>Pb, <m>^{207}_{\ 82}</m>Pb, and <m>^{209}_{\ 82}</m>Pb, respectively.  The uranium  <m>^{238}</m>U  series is shown in <xref ref="fig-nucelar-u-238-series-my-drawing"/>.
+		</p>
+		<p>
+			There is also a radioactive series that can be started with the radionuclide <m>^{237}_{\ 93}</m>Np, but since the half life <m>^{237}_{\ 93}</m>Np is only <m>2.14\times 10^6</m> years, none of the original <m>^{237}_{\ 93}</m>Np is left to continue the fourth series.  The <m>^{237}_{\ 93}</m>Np ends at an isotope of Bismuth, <m>^{209}_{\ 83}</m>Bi rather than at the lead.
+		</p>
+		<figure xml:id="fig-nucelar-u-238-series-my-drawing">
+			<caption>
+				The uranium  <m>^{238}</m>U  nuclear decay series  ending at <m>^{206}</m>Pb.  The first step in the series is an alpha decay with half life of <m>4.7\times 10^{9}</m> years indicating that much of <m>^{238}</m>U at the time of formation of Earth are still around.
+			</caption>
+			<image source="./images/modern-physics/nucelar-u-238-series-my-drawing.png" width="70%"/>
+		</figure>			
+ 
+ 
+ 	</subsection>
+
+
+
+TODO:
+
+<p>
+\begin{exercise}
+ The isotope $^{32}$P decays by negative beta decay with a half life of  14.28 d. (a) If there was $1.0\time 10^{10}$ atoms of $^{32}$P in the sample at $t=0$, how many will be left in a 142.8 days? (b) How many will be left in 365 days?
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+ An unknown radioactive material is decaying at a rate of 5,000 counts per second.  You wait two weeks and measure the activity and find that the counts now is 2,500 counts per second. What is is half life of the material?
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+ An unknown radioactive material is decaying at a rate of 50,000 counts per min.  You wait two weeks and measure the activity and find that the counts now is 1,150 counts per minute. What is is half life of the material?
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+ (a) Compute the number of molecules of potassium chloride KCl in 1 g of KCl. (b) Suppose 1\% of potassium atoms are in isotope $^{40}$K.  How many $^{40}$K atoms will be in 1 g of KCl?  (c) Normally KCl has a slight radioactivity. Supposing the radioactivity comes from $^{40}$K atoms in KCl, what will be the activity in decays per second of 1 g KCl if the half life of  $^{40}$K is $1.3 \times 10^9$ y?
+\end{exercise}
+
+
+</p>
+<p>
+ 
+ \begin{exercise}
+In Fukushima, Japan, 13,500 TBq (Tera Becquerel) of Cs-134 was released.  Cs-134 is a beta emitter with a half life of 30.2 y.  What is the total mass of Cs-134 released?
+\end{exercise}
+ 
+
+</p>
+<p>
+
+ 
+ \begin{exercise}
+ Complete the following decay reactions with appropriate symbols for the atomic species and other particles.
+ \begin{enumerate}[(a)]
+ \item $^{154}_{64}\textrm{Gd} \longrightarrow\ ^{4}_{2}\textrm{He} \ +\  ?$
+  \item $^{238}_{92}\textrm{U} \longrightarrow\ ^{4}_{2}\textrm{He}\ +\  ?$
+   \item $^{231}_{91}\textrm{Pa} \longrightarrow\ ^{4}_{2}\textrm{He} \ +\  ?$
+      \item $ \ \ ?\ \ \  \longrightarrow\ ^{4}_{2}\textrm{He} +\  ^{181}_{77}\textrm{Ir} $.
+            \item $ \ \ ?\ \ \  \longrightarrow\ ^{4}_{2}\textrm{He} +\  ^{228}_{88}\textrm{Ra} $.
+ \end{enumerate}
+\end{exercise}
+
+</p>
+<p>
+
+ \begin{exercise}
+ Complete the following beta decay reactions with appropriate symbols for the atomic species and other particles.
+ \begin{enumerate}[(a)]
+ \item $^{131}_{51}\textrm{I} \longrightarrow\   ?$    \ \ \ \ (beta minus)     
+   \item $^{247}_{95}\textrm{Am} \longrightarrow\   ?$    \ \ \ \ (beta minus)    
+   \item $^{40}_{19}\textrm{K} \longrightarrow\ ?$    \ \ \ \ (beta plus)   
+    \item $^{23}_{12}\textrm{Mg} \longrightarrow\ ?$    \ \ \ \ (beta plus)   
+ \end{enumerate}
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+Find the amount of energy released when $^{238}$U decays into $^234$Th by an  alpha decay process. Data: M(U238) = 238.0507847 u, M(Th234) = 234.036596 u.
+\end{exercise}
+
+
+</p>
+<p>
+
+
+\begin{exercise}
+An unbound neutron decays rapidly by beta decay. Find the maximum energy of the electron in the beta decay of a neutron. 
+\end{exercise}
+
+
+</p>
+<p>
+
+\begin{exercise}
+The isotope $^{223}$Ra has a potential use in cancer therapy.  It decays by alpha decay into radon. (a) Find the $Q$ of the reaction. (b) If an atom of Ra at rest decays, what is the kinetic energy of the alpha particle that comes out?  (c) What is the kinetic energy of the radon atom that forms? Data: M(Ra223) =  223.018497 u, M(Rn219) = 219.00948 u.
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+ The isotope $^{137}$Cs is a beta minus emitter. (a) Write the equation of the beta decay.  (b) Determine the $Q$ of the reaction?  (c) What is the maximum kinetic energy of the electron released?  (d) What is the maximum energy of the antineutrino released?
+\end{exercise}
+
+
+</p>
+<p>
+
+\begin{exercise}
+ The half lives of the two isotopes of Uranium are: ($^{235}$ U, $7.04\times 10^{8}$ y), ($^{238}$ U, $4.47\times 10^{9}$ y). The current abundances of the two isotopes, $^{235}$ U and $^{238}$ U in natural deposits are 0.7\% and 99.3\% respectively.  What were the corresponding abundances when Earth was formed 4.54 billion years ago?
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+Prove $N(t) = N_0 2^{-t/T_{1/2}}$.
+\end{exercise}
+ 
+
+</p>
+ 
+
+
+
+
+
+
+
+</section>

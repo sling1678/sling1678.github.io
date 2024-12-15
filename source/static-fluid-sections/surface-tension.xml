@@ -1,0 +1,476 @@
+<section xml:id="Surface-Tension"><title> Surface Tension </title>
+	<subsection><title>Surface Energy and Surface Tension </title>
+
+		<p>
+			If you place a stainless steel needle carefully upon a calm surface of water, it will float even though the density of steel is considerably more than the density of water and the needle is a compact solid. 
+		</p>
+		<sidebyside widths="65% 5% 30%" >
+			<p> 
+				The needle floats not due to the buoyancy as you can easily demonstrate by placing the needle infinitesimally under the surface in which case the needle will sink.  Instead, the needle floats because with gravity's pull, the needle stretches out the distance between the surface molecules, which push out on the needle, suporting its weight.   
+			</p>
+			<p></p>
+			<image source="./images/static-fluid/surface-tension-needle-on-water.png"/>
+		</sidebyside>
+		<p>
+			A different behavior occurs at the surface due to the special situation of the surface molecules as compared to the molecules inside the volume.
+		</p>
+
+		<sidebyside widths="45% 10% 45%">
+			<p>
+				  A molecule inside the volume has other molecules of the fluid all around it so that, on  average, there is no net intermolecular force on the molecules in the bulk. But, a molecule on the surface, is attracted by molecules of the liquid only on one side. This attractive force is balanced by the net upward impulse from movement of molecules below the surface.
+			</p>
+ 			<p></p>
+			<image source="./images/static-fluid/surface-tension-surface-molecules.png"/>
+		</sidebyside>
+ 
+		<p>
+			The balance of the attractive force and impulse of inner molecules determine the size and shape of the fluid surface. If you try to stretch the surface area, you would have to work against these attractive forces. This suggests that there is a potential energy stored per unit area of the surface. 
+		</p>
+		<p>
+			Let <m> U </m> denote the surface energy when the surface area is <m> A</m>, and <m> U + \Delta U</m>  the surface energy when the surface area is <m> A+\Delta A</m>. That is, <m>\Delta U</m> be the energy cost when stretching the surface from area <m>A</m> to the area <m> A+\Delta A</m>. The rate at which surface energy changes is called <term> surface tension </term>, which we denote by the Greek letter <q>gamma</q>, <m> \gamma </m>.
+			<men>
+				\gamma = \dfrac{\Delta U}{\Delta A}.
+			</men>
+			The units of surface tension will be <m>\text{J/m}^2</m>, which is same as <m> \text{N/m}</m>.
+		</p>
+		<p>
+			Surface tension varies strongly with temperature. For instance, surface tension of water is <m> 75.6\times 10^{-3}\text{N/m}</m> at <m> 0^{\circ}\text{C}</m>,   <m> 72.8\times 10^{-3}\text{N/m}</m> at <m> 20^{\circ}\text{C}</m>, and <m> 58.8\times 10^{-3}\text{N/m}</m> at <m> 100^{\circ}\text{C}</m>. This explains why hot water is better at cleaning than the cold water - with the reduced surface tension, water molecules can squeeze through microscopic spaces between fibers of the fabric, and remove any trapped dirt particles.
+		</p>
+		<p>
+			Similarly, soap lowers the surface tension of water. The detergent molecules, themselves may not be able to pass through the space between fabric fibers, but help water molecules to pass by lowering the surface tension of the mixture.  
+		</p>
+		<p><alert>(Calculus)</alert></p>
+		<p>
+			Taking <m>\Delta A \rightarrow 0</m> limit will give us the rate at which surface energy changes with area. Thus, we define surface tension by
+			<me>
+				\gamma = \lim_{\Delta A \rightarrow 0}\, \dfrac{\Delta U}{\Delta A}.
+			</me>
+		</p>
+	</subsection>
+
+	<subsection><title> Surface Tension in Stretching a Planar Film</title>
+
+		<p>
+			As a simple yet powerful example of a surface tension application, consider a thin film of  soapy water produced on a wire frame where one end  is movable as shown in <xref ref="fig-surface-tension-stretch-a-film" />. 
+
+		</p>
+		<figure xml:id="fig-surface-tension-stretch-a-film">
+			<caption>
+				Stretching of a soap film. 
+				A constant force <m> F </m> stretches the film by a length <m> \Delta x</m>, increasing the surface energy by <m> \Delta U = F \Delta x</m> and the surface area by <m> \Delta A = 2w\Delta x</m>, where factor <m>2</m> is due to top and bottom surfaces.
+			</caption>
+			<image source="./images/static-fluid/surface-tension-stretch-a-film.png" width="80%"/>
+		</figure>
+
+		<p>
+			The force needed to move the wire outward by a distance <m> \Delta x</m> depends on the width <m>w</m> of the film.  Furthermore, there are two sides of the film that need to be stretched together.  Surface energy will increase due to the work done by the applied force F.
+			<me>
+				\Delta U = F\Delta x.
+			</me>
+			The film has two surfaces, the top and the bottom.  Therefore, the amount of increase in area would be twice the area on one side.
+			<me>
+				\Delta A = 2\times w\Delta x.
+ 			</me>
+			Therefore, the surface tension will be
+			<me>
+				\gamma = \frac{\Delta U}{\Delta A} = \frac{F}{2w}.
+			</me>
+
+ 		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Surface-Energy-of-a-Water-Droplet"><title>  Surface Energy of a Water Droplet </title>
+
+		<statement>
+		<p>
+			Assuming surface tension to be independent of the size of the bubble, find the energy stored in the surface energy of a spherical water droplet of <m>1\text{-mm}</m> radius at <m> 20^{\circ}\text{C}</m>.
+		</p>
+
+		</statement>
+		<hint> <p>  Only one surface in a water droplet. </p> </hint>
+		<answer> <p>  <m>9.1\times 10^{-7}\textrm{J} </m> </p> </answer>
+		<solution> 
+			<p>
+				 Let <m>R</m> be the radius of the bubble. Since surface tension <m> \gamma</m> is independent of the size of the bubble, we get
+				 <me>
+				 	\Delta U = \gamma \Delta A.
+				 </me>
+				 The surface area of the bubble is <m> 4\pi R^2</m>. Therefore, the bubble has surface energy
+				<me>
+					U(R) = 4\pi R^2 \gamma .
+				</me>			 
+			</p>
+			<p>
+				In the droplet there is only one surface as opposed to the soap film on a wire frame where there were two surfaces.   Putting the numerical values we obtain.
+				<me>
+					U(R) = 4\pi  \times (10^{-3}\textrm{m})^2  \times (72.8\times 10^{-3}\textrm{N/m}) = 9.1\times 10^{-7}\textrm{J}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-surface-energy-in-a-mercury-film"><title> Surface Energy in a Mercury Film </title>
+		<statement>
+			<p>
+				A rectangular film of mercury has a length of <m>2.0\text{ cm}</m> and width <m> 1.0\text{ cm}</m>.  It is stretched by <m>1.5\text{ mm}</m> along its length while keeping the width same.  What is the increase in surface energy of the film?
+			</p>
+			<p>
+				Data:  <m>\gamma_\text{Hg} = 0.480\text{ N/m}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m>\Delta U = \gamma\, \Delta A</m>. </p> </hint>
+		<answer> <p>  <m>  1.44\times 10^{-5}\text{ J}.</m> </p> </answer>
+		<solution> 
+			<p>
+				From the definition of surface tension, the change in surface energy is given by
+				<me>
+					\Delta U = \gamma \Delta A.
+				</me>
+				Here the change in area is for the two surfaces, above and below the film. Thus,
+				<md>
+					<mrow> \Delta A \amp = 2\times 1.5\times 10^{-3}\text{ m} \times 1.0\times 10^{-2}\text{ m}</mrow>
+					<mrow> \amp  = 3.0 \times 10^{-5}\ \text{m}^2.</mrow>
+				</md>
+				Therefore, the change in the surface energy will be
+				<md>
+					<mrow> \Delta U \amp = 0.480\text{ N/m} \times 3.0 \times 10^{-5}\text{ m}^2 </mrow>
+					<mrow> \amp =  1.44\times 10^{-5}\text{ J}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Surfaxce-Energy-in-Blowing-an-Olive-Oil-Bubble"><title> Surface Energy in Blowing an Olive Oil Bubble </title>
+		<statement>
+
+			<sidebyside widths="55% 10% 30% 5%">
+				<p>
+					<p>
+						A perfectly spherical bubble of diameter <m>2.0\text{ cm}</m> is blown with Olive oil aboard the International Space Station.  How much work was done in expanding the diameter from <m>1.0\text{ cm}</m> to <m>2.0\text{ cm}</m>? 
+					</p>
+					<p>
+						Data: <m>\gamma_\text{olive oil} =  0.032\text{ N/m} </m>.
+					</p>
+				</p>
+				<p> </p>
+				<image source="./images/static-fluid/surface-tension-blowing-a-bubble.png"/>
+				<p></p>
+			</sidebyside>
+
+			
+
+		</statement>
+		<hint> <p> Use the surface energy of one spherical surface, <m>U(R) = \gamma \times 4\pi R^2 </m>.  </p> </hint>
+		<answer> <p>  <m>2.4\times 10^{-4}\text{ J}. </m> </p> </answer>
+		<solution> 
+			<p>
+				The surface energy of a spherical surface of radius <m>R</m> of a substance of surface tension <m>\gamma</m> will be
+				<me> 
+					U(R) = \gamma \times 4\pi R^2.
+				</me> 				
+			</p>
+			<p>
+				Therefore, the change in energy for expanding one surface will be
+				<me> 
+					U(R_2) - U(R_1) = 4\pi \gamma\left( R_2^2 - R_1^2\right)
+				</me> 
+				The olive oil bubble, not the drop, has two surfaces one inside and the other outside since the bubble encloses air pocket.  Therefore, the work required will be twice as much. (You may say what about the impact of thickness of the oil film? we assume that the radius of the bubble is much greater than the thickness and hence thickness can be ignored.)
+				<me> 
+					W = 2\times  4\pi \gamma\left( R_2^2 - R_1^2\right).
+				</me> 
+				The values here are <m>\gamma = 0.032\text{ N/m}</m>, <m>R_1 = 0.01</m>  m, and <m>R_2 = 0.02</m>  m giving
+				<me> 
+					W = 2.4\times 10^{-4}\ \text{J}.
+				</me> 
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<exercise xml:id="Energy-Required-for-Breaking-up-a-Drop-into-Droplets"><title>Energy Required for Breaking up a Drop into Droplets</title>
+
+		<statement>
+			<p>
+				A drop of oil of radius <m>R</m> is broken into <m>N</m> idential droplets. If surface tension is <m>\gamma</m>, what is the change in surface energy? 
+			</p>
+			<p>
+				Check answer: if  <m>R=10^{-2}\text{ m}</m>, <m>4\pi\gamma = 0.1\text{ N/m}</m>, <m>N=10^6</m>, answer is <m>10^{-3}\text{ J</m>. (adapted from Indian JEE Advanced 2017.)
+			</p>
+		</statement>
+		<hint><p>
+			Use mass conservation criterion and formula for the surface energy of a drop.
+		</p></hint>
+		<answer><p>
+			<m>4\pi\gamma R^2  \left(N^{1/3} -1\right)</m>.
+		</p></answer>
+		<solution>
+			<p>
+				From the conservation of mass, we must have masses of droplets add up to the mass of the originl drop. Since density is same, we will just equate the volumes. From this we can get an expression for the radius <m>r</m> of the droplets.
+				<me>
+					N \times \frac{4}{3}\pi r^3 = \frac{4}{3}\pi R^3.
+				</me>
+				Therefore,
+				<me>
+					r = N^{-1/3}\, R.
+				</me>
+				Now, surface energy in a drop is <m>4\pi \gamma r^2</m>. Therefore, we get the net change in surface enrgy to be
+				<md>
+					<mrow>\Delta U \amp = N \times 4\pi \gamma r^2 - 4\pi \gamma R^2 </mrow>
+					<mrow>\amp = 4\pi \gamma R^2 \left( N \times N^{-2/3} - 1\right) = 4\pi \gamma R^2 \left(N^{1/3} -1\right) . </mrow>
+				</md> 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Height-of-Liquid-Above-a-Test-Tube-Rim-Before-Flow-Begins"><title>(Calculus) Height of Liquid Above a Test Tube Rim Before Flow Begins (JEE, 2020)</title>
+
+		<statement>
+			<p>
+				When water is filled carefully in a glass, one can fill it to a height <m>h</m> above the rim of the glass due to the surface tension of water. 
+			</p>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					To calculate <m>h</m> just before water starts flowing, model the shape of the water above the rim as a disc of thickness h having semicircular edges, as shown schematically in <xref ref="fig-jee-2020-surface-tension"/>. 
+				</p>
+				<p></p>
+
+				<figure xml:id="fig-jee-2020-surface-tension">
+					<caption>
+					</caption>
+					<image source="./images/static-fluid/jee-2020-surface-tension.png" width="80%"/>
+				</figure>
+			</sidebyside>
+
+			<p>
+				When the pressure of water at the bottom of this disc exceeds what can be withstood due to
+				the surface tension, the water surface breaks near the rim and water starts flowing from there. If the
+				density of water, its surface tension and the acceleration due to gravity are <m>10^3\text{ kg m}^{−3}</m>, <m>0.07\text{ N m}^{−1}</m> and <m>10\text{ ms}^{−2}</m>, respectively, what is the value of <m>h</m> (in mm)? (From Indian JEE, 2020)
+			</p>
+		</statement>
+		<hint><p>
+			Balance the force from surface tension acting at the rim by the outward force from varying pressure of the fluid through the bulging surface.
+		</p></hint>
+		<answer><p>
+			<m>h=\sqrt{14}\text{ mm}=3.74\text{ mm}.</m>.
+		</p></answer>
+		<solution>
+			<p>
+				From the discription of the problem, we interpret that by balancing forces on the extra water above the rim will give us the necessary condition for the stability of the bulging water. Let's think of bulging water in the shape of a cap and balance force on an element of bottom part of size <m>R\Delta \phi</m>, where <m>R</m> is radius of the rim and <m>\Delta \phi</m> is angle subtended at the center of the tube.
+			</p>
+			<p>
+				There are two forces on the element: (1) horizontal force due to surface tension and (2) horizontal component of the  force by pressure in the fluid acting on semicircular shaped element of width <m>R\Delta \phi</m> and radius <m>a=h/2</m> as shown in <xref ref="fig-jee-2020-surface-tension-sol-2"/>.
+			</p>
+			<figure xml:id="fig-jee-2020-surface-tension-sol-2">
+				<caption>
+				</caption>
+				<image source="./images/static-fluid/jee-2020-surface-tension-sol-2.png" width="70%"/>
+			</figure>
+
+
+			<p>
+				The force from surface tension will be horizontal at the rim, giving
+				<me>
+					F_{st,x} = \gamma R\Delta\phi.
+				</me>
+				The force due to fluid pressure on the strip shown in <xref ref="fig-jee-2020-surface-tension-sol-2"/> can be computed by adding contributions from elements of te strip. An area element of the strip will be
+				<me>
+					\Delta A = R\Delta\phi \times a\Delta \theta.
+				</me>
+				Then at coordinate <m>y</m> where height of fluid above is <m>a-y</m>, we get pressure <m>\rho g (a-y)</m>. Therefore, force has magnitude <m>dF=\rho g (a-y)\Delta A</m>. We want its horizzontal component to balance the horizontal force of tension. We have <m>dF_x</m> to be
+				<me>
+					dF_x = dF\,\cos\theta = \rho g (a-y)R\Delta\phi \times a\Delta \theta\,\cos\theta.
+				</me>
+				Summing over all elements alog strip is done by going to the infinitesimal limit in <m>\Delta \theta</m> and integrating. Since <m>y=a\sin\theta</m>, we need to include it inside integration.
+				<md>
+					<mrow> F_x \amp =  \rho g R\Delta\phi \times a \,  \int_{-\pi/2}^{\pi/2}(a-y)\cos\theta d\theta</mrow>
+					<mrow> \amp=  \rho g R\Delta\phi \times a \times 2a </mrow>
+					<mrow> \amp=  \rho g R\Delta\phi \times \frac{h^2}{2}.</mrow>
+				</md>
+				Balancing this with the force of tension yields
+				<me>
+					\rho g R\Delta\phi \times \frac{h^2}{2} =  \gamma R\Delta\phi.
+				</me>
+				Simplifying this we get
+				<me>
+					h = \sqrt{\frac{2\gamma}{\rho g}}.
+				</me>
+				Therefore,
+				<me>
+					h = \sqrt{\frac{2\times 0.07}{10^3\times 10}} = \sqrt{14}\,\times 10^{-3}\text{ m} = 3.74\text{ mm}. 
+				</me>
+			</p>
+
+
+		</solution>
+	</exercise>
+
+
+
+
+
+
+	<subsection><title> Capillary Action</title>
+		<p>
+			When you dip a wide tube in a fluid, the level of the fluid in the tube is same inside the tube as outside.  
+		</p>
+		<sidebyside widths="50% 50%">
+			<p>
+				However, when very thin tubes are dipped in a liquid, this is not the case.  Instead, liquid rises to various heights depending on the diameter of the opening as illustrated in  <xref ref="fig-capillary-effect"/>.  The effect is called the <term>capillary action</term>. 
+			</p>
+
+			<figure xml:id="fig-capillary-effect">
+				<caption>
+				</caption>
+				<image source="./images/static-fluid/capillary-effect-0.png" width="80%"/>
+			</figure>
+		</sidebyside>
+
+
+		<p>
+			In <xref ref="fig-capillary-effect"/> we see that level of the fluid inside the tube may be above or below the level in the wider container depending upon the contact angle. In the fogure,  the two center tubes have contact angle less than 90° and two tubes to the right two tubes have contact angle greater than 90°.
+		</p>
+		<p>
+			The meniscus may be convex, e.g., water in a glass tube, or convex, e.g., meercury in a glass tube as illustrated in <xref ref="fig-capillary-effect-2"/>. The reason behind these shapes has to do with the comparative attraction between molecules of the fluid and between fluid and the wall material. 
+		</p>
+
+		<sidebyside widths="50% 50%">
+			<p>
+				If fluid is more attracted to the material of the tube that to each other, then the meniscus will be concave, i.e., it will crrep up on the wall. If the fluid has higher attraction among themselves, then it will minimize energy by having a convex surface, i.e., it will curl up on itself away from the wall.
+			</p>
+
+			<figure xml:id="fig-capillary-effect-2">
+				<caption>
+				</caption>
+				<image source="./images/static-fluid/capillary-effect-2.png" width="80%"/>
+			</figure>
+		</sidebyside>
+
+ 
+		<!-- <sidebyside widths="50% 50%"> -->
+			<p>
+				To understand the capilary action, let us an open tube of radius <m>r</m> dipped in a fluid of density <m> \rho</m> so that the fluid rises in the tube by a height <m>h</m> above which there is a spherical meniscus of radius of curvature <m>R</m> and contact angle <m>\theta</m> as shown in <xref ref="fig-capillary-effect-1"/>. 
+			</p>
+
+			<figure xml:id="fig-capillary-effect-1">
+				<caption>
+				</caption>
+				<image source="./images/static-fluid/capillary-effect-1.png" width="70%"/>
+			</figure>
+		<!-- </sidebyside> -->
+
+
+		<p>
+			The pressure difference due to surface tension at the miniscus is given by Young-Laplace's equation to be
+ 			<men>
+ 				P_0 - P_1 = \frac{2\gamma}{R} = \frac{2\gamma\,\cos\theta}{r}.
+ 			</men>
+ 			This pressure is pushing down on the fluid in the tube. 
+ 			From the figure, pressure difference in the liquid of height <m>h</m>, pushing up on the fluid is
+ 			<men>
+ 				P_0 - P_1 = \rho g h. 
+ 			</men>
+ 			At equilibrium the two pressures will be balanced giving
+ 			<men>
+ 				h = \frac{2\gamma\,\cos\theta}{ \rho g r}.
+ 			</men>
+ 			If the meniscus is flat, then <m>\theta=0</m>, giving
+ 			<me>
+ 				h = \frac{2\gamma}{ \rho g r},\ \ \text{(flat meniscus)}
+ 			</me>
+ 			We find that height <m> h</m> is inversely proportional to the tube radius <m> r</m>.  If we use the surface tension of water at <m> 20^{\circ}\text{C}</m> in this relation, we find that water will rise <m> 3\text{ cm}</m> in a tube of inner diameter <m> 1\text{ mm}</m>. 			
+		</p>
+ 
+
+	</subsection>
+
+ 
+ 	<exercise xml:id="ex-Surface-Tension-from-Capillary-Action"><title> Surface Tension from Capillary Action </title>
+		<statement>
+			<p>
+				A liquid of density <m>2.0\text{ g/cc}</m> rises by <m>1.8\text{ cm}</m> in a capillary tube of radius <m>0.075\text{ cm}</m> when dipped vertically in the liquid. What is its surface tension? 
+			</p>
+
+		</statement>
+		<hint> <p>  Use capillary action. </p> </hint>
+		<answer> <p> <m> 0.132\text{ N/m}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Let us assume flat meniscus. 
+				From the capillary action formula <m> h = 2\gamma/ \rho g R</m>, we get
+				<me>
+					 \gamma =  \dfrac{1}{2}\,\rho g R h.
+				</me>
+				We can either convert all units in <m>\text{kg,m}</m> or work in <m>\text{g,cm}</m>. Let's convert the units.
+				<md>
+					<mrow> \rho \amp = 2.0\text{ g/cc} = 2000\text{ kg/m}^3</mrow>
+					<mrow> R \amp = 0.075\text{ cm} = 7.5\times 10^{-4}\text{ m}</mrow>
+					<mrow> h \amp = 1.8\text{ cm} = 1.8\times 10^{-2}\text{ m}</mrow>
+					<mrow> g \amp = 9.81\text{ m/s}^2</mrow>
+				</md>
+				Therefore,
+				<me>
+					 \gamma =  0.132\text{ N/m}.
+				</me>				
+			</p>
+		</solution>
+	</exercise>
+ 
+
+	<exercise xml:id="ex-Contact-Angle-in-Capillary-Tube-in-Water"><title>Contact Angle in Capillary Tube in Water</title>
+
+		<statement>
+			<p>
+				Water rises to a height of <m>2.5\text{ cm}</m> in a capillary tube of radius<m>0.50\text{ mm}</m>. If surface tension of water at that temperature is <m>72 mN/m</m>, what is the angle of contact?
+			</p>
+		</statement>
+		<hint><p>Use capillary action formula.</p></hint>
+		<answer><p><m>31.6^\circ</m>.</p></answer>
+		<solution>
+			<p>
+				We will use the capillary action formula derived in this section.
+				<me>
+					h = \frac{2\gamma\,\cos\theta}{ \rho g r}.
+				</me>
+				We use <m>\rho = 1000\,\text{kg/m}^3</m>. We get
+				<me>
+					\cos\theta = \frac{1000\times 9.81 \times 0.5\times 10^{-3} \times 2.5\times 10^{-2} }{ 2\times 0.5\times 10^{-3}  } = 0.85.
+				</me>
+				This gives <m>\theta = 31.6^\circ</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

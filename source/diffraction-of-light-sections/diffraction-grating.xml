@@ -1,0 +1,466 @@
+<section xml:id="section-diffraction-grating-light"><title>Diffraction Grating</title>
+	<introduction>
+		<p>
+			If you place refleting surfaces periodically very close to each other, the interference of multiple reflected rays will form sharp diffraction peaks. You can get similar effect if you transmit light wave through periodic tranmitting slits which are space closely. These are called <term>reflection gratings</term> and <term>transmission gratings</term>. <xref ref="fig-reflection-and-transmission-gratings"/> illustrates diffraction gratings.
+		</p>
+
+		<figure xml:id="fig-reflection-and-transmission-gratings">
+			<caption>
+				(a) Transmission grating and (b) reflection grating.  
+			</caption>
+			<image source="./images/diffraction-of-light/reflection-and-transmission-gratings.png" width="100%"/>
+		</figure>
+
+		<p>
+			You can make a transmission grating by scoring fine parallel lines on a glass plate. Here, the space between lines serve as slits.  In a transmission grating, light is incident on one side of the grating and emerges on the other side having passed through the slits (<xref ref="fig-reflection-and-transmission-gratings"/>(a)). In a transmission grating, the wavefront at each slit serves as a new source of wave.
+		</p>
+		<sidebyside widths="50% 10% 30% 10%">
+			<p>
+				The reflection gratings are made by etching parallel grooves on a glass or metal plate from which light can be reflected off (<xref ref="fig-reflection-and-transmission-gratings"/>(b)).  Music and computer CDs have just the right width reflecting lines that  visible light forms beautiful diffraction patterns when you look at appropriate angle.   
+			</p>
+			<p></p>
+<!-- 			<figure xml:id="fig-diffraction-from-a-DVD">
+				<caption>
+					  A DVD disk as a reflection grating.
+				</caption> -->
+				<image source="./images/diffraction-of-light/diffraction-from-a-DVD.png" width="100%"/>
+<!-- 			</figure> -->
+			<p></p>
+		</sidebyside>
+
+	</introduction>
+	<subsection><title>Maxima and Minima Directions in a Transmission Grating</title>
+		<p>
+			A transmission grating is a multi-slit system. Suppose light from a monochromatic source of wavelength <m>\lambda</m> is incident on a grating such that light goes through <m>N</m> slits, each having a width <m>a</m> and neighbors separated by <m></m>. 
+
+			<!-- Now, if you work out the interference of <m>N</m> waves in the direction <m>\theta</m> from the incident direction, you will find that intensity will be given by a very similar formula we had for the two-slit system. Suppose the incident direction is towards <m>\theta=0</m>, then 
+			<men>
+				I(\theta) = I(0) \left(\frac{\sin\beta}{\beta} \right)^2 \left[\frac{\sin(N\alpha)}{N\sin\alpha} \right]^2,
+			</men>
+			where
+			<men>
+				\alpha = \frac{\pi a \sin\theta}{\lambda}, \ \ \ \beta \equiv \frac{\pi b \sin\theta}{\lambda}.
+			</men>
+			The parameters <m>\alpha</m>   and <m>\beta</m>  control the effect of the interference of waves from adjacent slits and the diffraction from secondary wavelets within the same slit respectively. In diffraction grating width of slits is usually very small. -->
+		</p>
+
+
+		<p>
+			The number of slits <m>N</m> is an important feature of a grating.  In <xref ref="fig-intensity-plots-in-diffraction-grating-with-varying-N"/>, I have plotted  diffraction patterns of a monochromatic light incident across <m>N</m> slits of a transmission grating for various values for <m>N</m>. You will notice that there are <term> principal peaks</term> and <term> minor peaks</term>. When we increase <m>N</m>, the major peaks become sharper and more pronounced and minor peaks become less pronoiunced.
+		</p>
+		<figure xml:id="fig-intensity-plots-in-diffraction-grating-with-varying-N">
+			<caption>
+				Multiple slits diffraction. Normalized intensity is plotted against <m>b\sin\theta</m> with slit width <m>b =  \lambda/2</m> and distance between slits <m>a = 2 \lambda</m>. The number of slits <m>N</m> as shown in each plot. The envelop is the diffraction of a single slit.
+			</caption>
+			<image source="./images/diffraction-of-light/intensity-plots-in-diffraction-grating-with-varying-N.png" width="100%"/>
+		</figure> 
+
+		<sidebyside widths="55% 45%">
+			<p>
+				   We can obtain the positions of the principal peaks   easily  by considering the interference of only the adjacent slits, which is same as the interference condition for the two-slit case we have worked out before.
+				<men> 
+					\text{Principal maxima:} \ \ a\sin\theta_m = m \lambda, \ \ \  m \text{ integer}.
+				</men>
+			</p>
+			<image source="./images/diffraction-of-light/transmission-grating-principal-peaks.png" width="100%"/>
+		</sidebyside>
+ 			
+	 
+		<p>
+			To understand the sharpness of principal maxima, consider the  interference of waves near a principal maximum.  At the principal maximum, waves from all slits interfere constructively.  At a nearby point on the screen, the waves from two adjacent slits will be slightly out-of-phase, but waves from slits further away will be more and more out of phase so that for every slit there is some other slit whose waves are completely out of phase thus canceling the waves there. This would lead to very sharp peaks when all the waves have constructive condition. 
+		</p>
+	</subsection>
+
+	<subsection><title>Half-Widths of Principal Peaks</title>
+		<p>
+			A peak is defined by the bright spot surrounded by the minima around it. The center of a major peak of order <m>m</m> is in the direction <m>\theta_m</m> given by
+			<me>
+				a \sin\theta_m = m \lambda.
+			</me>
+			Let <m>\theta_{m^\prime}</m> and <m>\theta_{m^{\prime\prime} }</m> be angles around the direction <m>\theta_m</m> where intensity is the minimum. then, we say that <m> \Delta \theta_m \equiv |\theta_{m^\prime} - \theta_{m^{\prime\prime} }|</m> is full-width of that peak and half its value is called the <term>half-width</term>, which we denote by <m>\theta_\text{hw}</m>. For a diffraction grating with <m>N</m> slits, half width turns out to be
+			<men xml:id="eq-half-width-principal-maxima-grating">
+				\theta_\text{hw} = \frac{\lambda}{ N a \cos\theta_m}.
+			</men>
+		 
+		</p>
+	</subsection>
+	<subsection><title>Dispersion of a Diffraction Grating</title>
+		<p>
+			The diffraction pattern of a light consisting of multiple wavelengths consists of separated colors, similar to the light coming out of a prism or in a rainbow.  The phenomenon was explained by wavelength dependence of refractive index, called dispersion. We will define a similar quantity here and use the same term for it. However, unlike separation of colors in prisms, the diffraction pattern shows separation of colors in each order.  That is, many "rainbows" come out of a diffraction grating when white light is incident on it. <xref ref="fig-diffraction-grating-two-wavelengths-separated"/> shows separation of two wavelenths in each principal peak.  
+		</p>
+ 		<figure xml:id="fig-diffraction-grating-two-wavelengths-separated">
+			<caption>
+				 Diffraction pattern for the light consisting of two wavelengths,  <m>\lambda_1 = 1.0 \mu\text{m}</m> and <m>\lambda_1 = 1.15 \ \mu\text{m}</m>, incident on a grating with a separation of <m>4 \ \mu\text{m}</m>, slit width of <m>1 \ \mu\text{m}</m> over <m>N=7</m> slits.  The solid curve is for <m>\lambda_1</m> and the dashed curve for <m>\lambda_2</m>. The peaks for <m>m = 0</m> are unresolved.  The peaks for <m>m = 1</m> order are resolvable based on the Raleigh criterion.  The principal peaks of the two waves are seen to separate out more for the <m>m = 2</m> order than for the <m>m = 1</m> order.
+			</caption>
+			<image source="./images/diffraction-of-light/diffraction-grating-two-wavelengths-separated.png" width="100%"/>
+		</figure> 
+
+  
+		<p>  
+			The magnitude of the angular separation of two colors <m>\Delta \theta</m>   depends upon the difference of the wavelength   <m>\Delta \lambda</m>.  Hence, we define a quantity by rate at which angular separation varies with wavelength,  called  <term> dispersion</term>, by the following.
+			<me>
+				D = \frac{\Delta \theta}{\Delta \lambda}.
+			</me>
+			Since the angular separation of two colors depends on the parameters of the diffraction grating and the order <m>m</m> of the principal maximum, we expect the dispersion <m>D</m> to depend upon these quantities as well.   Consider a grating consisting of <m>N</m> slits with inter-slit separation <m>a</m>.  Then the principal maxima occur at angles consistent with the following condition.
+			<me>
+				\text{Principal maxima:}\ \ \ a\sin\theta_m  = m \lambda,\ \ m = 0, \pm 1, \pm 2, \cdots.
+			</me>
+			Taking the differential of both sides, we find
+			<me>
+				a\cos\theta_m \Delta\theta_m = m \Delta\lambda.
+			</me>
+			Therefore, the dispersion of a diffraction grating corresponding the the <m>m^{th}</m> order diffraction is
+			<me>
+				D = \frac{\Delta \theta_m}{\Delta \lambda} = \frac{m}{a\cos\theta_m}.
+			</me>
+			The result clearly shows that to achieve a greater angular separation we must have a smaller spacing <m>a</m>  between the slits and look at higher order <m>m</m>.  With increasing <m>m</m>, the numerator increases as well as the denominator <m>\cos\theta</m> decreases, both helping to increase the dispersion <m>D</m>.
+
+		</p>
+	</subsection>
+
+
+	<subsection><title>Resolving Power of a Diffraction Grating</title>
+		<p>
+			The ability of a diffraction grating to separate lights of different wavelength is often designated by its <term>resolving power</term>. A grating with higher resolving power helps resolve two wavelengths by producing narrower peaks.  We have already encountered dispersion of a grating that gives us the separation of waves by a diffraction grating.  The resolving power is a related quantity defined by making use of the smallest wavelength interval that can be barely resolved.  Let  <m>\Delta\lambda \equiv |\lambda_1 - \lambda_2|</m> be the smallest wavelength interval resolvable so that <m>\lambda_1</m> and <m>\lambda_2</m> can be barely resolved by the given diffraction grating.  Then the resolving power <m>R</m> is defined as
+			<me>
+				R = \frac{\lambda_{\text{ave}}}{\Delta\lambda},
+			</me>
+			where <m>\lambda_{\text{ave}}</m> is the average of the two wavelengths,
+			<me>
+				\lambda_{\text{ave}} = \frac{\lambda_1 + \lambda_2}{2}.
+			</me>
+			Using the Raleigh criterion that two peaks are barely resolvable if the peak of one is at the zero of the other peak.  That means for the wavelengths    <m>\lambda_1</m> and <m>\lambda_2</m>  to be resolvable by the Raleigh criterion   their peaks will be separated by half-width given in Eq. <xref ref="eq-half-width-principal-maxima-grating"/>.
+			<men>
+				\theta_{\text{hw}} = \frac{\lambda_{\text{ave}}}{N a \cos\theta_m}.
+			</men>
+			We will equate this to the angular separation between peaks of <m>\lambda_1</m> and <m>\lambda_2</m>, viz., <m>\Delta \theta</m>.
+			Now, using the condition for the maxima of the principal peaks  we find the angular separation betwen the peaks corresponding to the two wavelengths separated by <m>\Delta\lambda=|\lambda_1-\lambda_2|</m>.
+			<men>
+				(a\cos\theta_m) \Delta\theta = m \Delta \lambda\ \ \Longrightarrow\ \ \Delta \theta = \frac{m \Delta\lambda}{a\cos\theta_m}.
+			</men>
+			Therefore, equating <m>\theta_{\text{hw}} = \Delta \theta</m>, we get  			
+			<me>
+				\frac{\lambda_{\text{ave}}}{N a \cos\theta_m} = \frac{m \Delta\lambda}{a\cos\theta_m}\ \Longrightarrow\  \frac{\lambda_\text{av}}{\Delta\lambda} = Nm.
+			</me>
+			Hence, the resolving power <m>R</m> of a diffraction grating with <m>N</m> slits spread over a distance <m>Na</m> is given by
+			<me>
+				R = \frac{\lambda_{\text{ave}}}{\Delta\lambda} = N m.
+			</me>
+
+		</p>
+	</subsection>
+
+
+	<exercise xml:id="exercise-Wavelength-from-Direction-of-First-order-Peak-in-a-Diffraction-Grating"><title>Wavelength from Direction of First-order Peak in a Diffraction Grating</title>
+
+		<statement>
+			<p>
+				A light beam of an unknown wavelength is incident over 5 mm of a diffraction grating that has 400 lines per mm, and the first-order peak is observed at an angle of <m>20^{\circ}</m>. Find the wavelength in <m>\mu\text{m}</m>.
+			</p>
+		</statement>
+		<hint><p>Use the principal peaks condition for <m>m=1</m>. </p></hint>
+		<answer><p><m>0.855\:\mu\textrm{m}</m>. </p></answer>
+		<solution>
+			<p>
+				From the data number of grating lines upon which the light is incident, <m>N = 2000</m>, and separation of lines, <m>a = 2.5\:\mu\textrm{m}</m>. From the codition of <m>m=1</m> peak,
+				<me>
+					\lambda = a\:\sin\:\theta =  0.855\:\mu\textrm{m}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+	<exercise xml:id="exercise-Spacing-Between-Slits-in-a-Diffraction-Grating-from-the-Direction-of-First-Order-Peaks"><title>Spacing Between Slits in a Diffraction Grating from the Direction of First Order Peaks</title>
+
+		<statement>
+			<p>
+				A diffraction grating produces a first order peak at 18 degrees for a yellow light of wavelength 580 nm.  Find the spacing between the slits.
+			</p>
+		</statement>
+		<hint><p>Use condition for the principal peaks.</p></hint>
+		<answer><p><m>1.9\:\mu\text{m}</m></p></answer>
+		<solution>
+			<p>
+				Using <m>m=1</m> in the condition for principal peaks we get
+				<me>
+					a = \dfrac{\lambda}{\sin\theta_1} = \dfrac{0.580\: \mu\text{m}}{\sin\:18^{\circ}} = 1.9\:\mu\text{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+	<exercise xml:id="exercise-Number-of-Lines-in-a-Grating-from-Angle-of-Second-Principal-Maximum"><title>Number of Lines in a Transmission Diffraction Grating from Angle of Second Principal Maximum</title>
+
+		<statement>
+			<p>
+				How many lines per mm are there in  the diffraction grating if the second order principal maximum for a light of wavelength 536 nm occurs at an angle of 24 degrees with respect to the line from the grating to the center of the diffraction pattern? 
+			</p>
+		</statement>
+		<hint><p>Write distance <m>a</m> in terms of  number of lines per mm.</p></hint>
+		<answer><p>379.4 lines per mm.</p></answer>
+		<solution>
+			<p>
+				Let there be <m>N</m> lines per mm. Then we will have
+				<me>
+					a = \dfrac{1000}{N}\:\mu\text{m}.\ \ \ \ \ (1)
+				</me>
+				From the given data of the second order peak we get
+				<me>
+					a\:\sin\:\theta_2 = 2\:\lambda.\ \ \ \ \ (2)
+				</me>
+				From (1) and (2) we get
+				<me>
+					N = \dfrac{500\:\sin\:\theta_2}{\lambda} = 379.4.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+	<exercise xml:id="exercise-Separation-of-Light-of-Different-Wavelengths-By-a-Diffraction-Grating"><title>Separation of Light of Different Wavelengths By a Diffraction Grating</title>
+
+		<statement>
+			<p>
+				Find the separation in angles of a light of wavelength <m>550\text{ nm}</m> and <m>575\text{ nm}</m> for the <mm>m=1</mm> order principal peak of the two waves from a diffraction grating with <m>800\text{ lines per mm}</m>.
+			</p>
+		</statement>
+		<hint><p>The lines per mm can be used to find the separation distance <m>a</m>. </p></hint>
+		<answer><p> <m>1.3^{\circ}</m>. </p></answer>
+		<solution>
+			<p>
+				Since there are 800 lines per mm, the distance between adjacent slits is
+				<me>
+				a = \frac{1\ \text{mm}}{800} = 1.25\ \mu\text{m}.
+				</me>
+				Hence, the directions for <m>m = 1</m> principal peaks corresponding to the two wavelengths in the problem are
+				<md>
+				<mrow> \amp \theta_{550} = \sin^{-1}\left( \frac{0.550\ \mu\text{m}}{1.25\ \mu\text{m}}\right) = 26.1^{\circ}.</mrow>
+				<mrow>\amp \theta_{575} = \sin^{-1}\left( \frac{0.575\ \mu\text{m}}{1.25\ \mu\text{m}}\right) = 27.4^{\circ}.</mrow>
+				</md>
+				Therefore, 
+				<me>
+				\theta_{575} - \theta_{550} = 1.3^{\circ}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Resolving-the-Sodium-Doublet-By-Diffraction-Grating"><title>Resolving the Sodium Doublet By Diffraction Grating</title>
+
+		<statement>
+			<p>
+				The D-line of sodium consists of two different wavelengths, <m>589.0\text{ nm}</m> and <m>589.6\text{ nm}</m>.   A beam of light  from a sodium lamp forms a beam of width <m>2\text{ mm}</m>.  The beam is incident perpendicularly on a diffraction grating that has 1600 rulings over a width of <m>2\text{ mm}</m>. 
+			</p>
+			<p>
+				(a) Find the directions of the first-order principal peaks for the two wavelengths. 
+			</p>
+			<p>
+				(b) Decide if the two peaks are resolvable in the first order. 
+			</p>
+			<p>
+				(c) Find the number of lines of a grating so that peaks in the first order are barely resolved?
+			</p>
+		</statement>
+		<hint><p> (a) Find <m>a</m> first. (b) Compare resolution required to the resolution at hand. (c) Look at how many lines per mm you would need to meet just the resolution required.</p></hint>
+		<answer><p>(a) <m>0.49065\ \text{rad},\ 0.49119\ \text{rad}</m>, (b) yes, (c) 999 lines over 2 mm, or 500 lines per mm. </p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)	We need to calculate the separation distance <m>a</m>  between the slits  to figure out the direction of the first-order principal peak.
+				<me>
+					a = \frac{2\ \text{mm}}{1600\ \text{lines}} = 1250\ \text{nm}.
+				</me>
+				For <m>m = 1</m>, the condition for the principal peak is  <m>a\sin\theta = \lambda</m>.  Let us denote the angle for the wavelength <m>589.0\text{ nm}</m> by <m>\theta_1</m> and the angle for the wavelength <m>589.6\text{ nm}</m>by <m>\phi_1</m>. Hence the directions of <m>m = 1</m> peaks for the the two wavelengths are as follows, where we will keep a few additional digits in the answers.
+				<md>
+					<mrow> \amp 
+							\theta_1 = \sin^{-1}\left( \frac{589.00\ \text{nm}}{1250\ \text{nm}} \right) = 0.49065\ \text{rad}</mrow>
+					<mrow> \amp 
+						\phi_1 = \sin^{-1}\left( \frac{589.59\ \text{nm}}{1250\ \text{nm}} \right) = 0.49119\ \text{rad}</mrow>
+				</md>						
+ 
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)	We can compare the resolution required to the resolving power of the grating to see if the peaks will be resolved.  The resolving power required for resolving the the two given  wavelengths  is 
+				<me>
+					R_{\text{req}} = \frac{\lambda_{\text{ave}}}{\Delta \lambda} = \frac{589.295\ \text{nm}}{0.59\ \text{nm}} = 999.
+				</me>
+				The resolving power of the given grating for <m>m=1</m> peaks is 
+				<me>
+					R_{\text{grating}} = Nm = 1600.
+				</me> 
+				Since <m>R_{\text{grating}} > R_{\text{req}}</m> the peaks will be resolved.
+
+
+
+			</p>
+		</solution>
+		<solution><title>(c)</title>
+			<p>
+				(c)	Using the required resolving power, we can work backwards and deduce the number of lines required in <m>2\text{ mm}</m>, the beam width, so that the grating can resolve the two given waves.
+				<me>
+					Nm = R_{\text{req}} \ \ \Longrightarrow\ \ N \times 1 = 999 \ \ \Longrightarrow\ \ N= 999.
+				</me>
+				That is 999 lines over <m>2\text{ mm}</m>, or just 500 lines per mm.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+	<exercise xml:id="exercise-Determine-if-a-Diffraction-Grating-can-Resolve-Mercury-Yellow-Orange-Doublet"><title>Determine if a Diffraction Grating can Resolve Mercury Yellow-Orange Doublet</title>
+
+		<statement>
+			<p>
+				The spectrum of mercury has a pair of yellow orange light at 576.959 nm and 579.065 nm.  A diffraction grating with 200 lines per mm is available in the lab.  Determine if this grating will do the job of resolving the two mercury yellow orange lines if the beam diameter is 4 mm. If not, what is the minimum number of lines per mm is needed for this task if it needs to be resolved in the first-order?
+
+			</p>
+		</statement>
+		<hint><p>Use resolving power needed to resolve the two wavelengths and compare that to the resolving power of the available grating.</p></hint>
+		<answer><p>Yes, given grating will be enough.</p></answer>
+		<solution>
+			<p>
+				Note that the beam will cover 800 lines. The resolving power needed is
+				<me>
+					R = \dfrac{\Delta \lambda}{\lambda} = 274.5.
+				</me>
+				For the order <m>m=1</m> we have <m>R = N</m>. Therefore, we need 275 lines of the grating over which the beam is to be incident.  Since the beam covers 800 lines of the grating, the lines would be resolved in the first order.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Resolving-Mercury-Doublet-by-a-Powerful-Diffraction-Grating"><title>Resolving Mercury Doublet by a Powerful Diffraction Grating</title>
+
+		<statement>
+			<p>
+				A powerful diffraction grating with 1500 lines/mm is tried for separating the yellow-orange light pair of wavelength 576.959 nm and 579.065 nm in the mercury spectrum. The beam covers <m>2\text{ mm}</m> of the grating. 
+
+			</p>
+			<p>
+				(a) Find angular separation of the two wavelengths for <m>m = 1</m>.
+			</p>
+			<p>
+				(b) Find half-width of each mercury line.
+			</p>
+			<p>
+				(c) Are the two lines resolved by Raleigh criterion?
+			</p>
+		</statement>
+		<hint><p>(a) Find directions of the two wavelengths in <m>m=1</m> order. (b) Use formula for half-widths. </p></hint>
+		<answer><p>
+			(a) <m> 0.4^\circ</m>,
+			(b) <m> 0.033^\circ,\ 0.033^\circ</m>,
+			(c) Yes.
+
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)
+				Since the beam covers <m>2\text{ mm}</m>, the number of lines contributing to the diffraction is
+				<me>
+					N = 1500\times 2 = 3000.
+				</me>
+				The separation between lines is
+				<me>
+					a = \frac{1000\:\mu\text{m}}{1500\text{ lines}} = (1/1.5)\:\mu\text{m}. 
+				</me>
+				Let <m>\theta_1</m> and <m>\phi_1</m> be the directions in which <m>m=1</m> order occurs for <m>576.959\text{ nm}</m> and <m>579.065\text{ nm}</m> respectively. From the prinicipal peak conditions we get
+				<md>
+					<mrow> \theta_1 = \sin^{-1}\left(\frac{576.959\text{ nm}}{(1/1.5)\:\mu\text{m} }\right) = 59.9^\circ.</mrow>
+					<mrow> \phi_1 = \sin^{-1}\left(\frac{579.065\text{ nm}}{(1/1.5)\:\mu\text{m} }\right) = 60.3^\circ.</mrow>
+				</md>
+				Therefore, their angular separation is
+				<me>
+					\Delta\theta = 60.3-59.9 = 0.4^\circ.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)
+				We can compute the half widths of each peak by using the formula for this quantity, which is given in Eq. <xref ref="eq-half-width-principal-maxima-grating"/>.
+				<me>
+					\theta_\text{hw} = \frac{\lambda}{ N a \cos\theta_m}.
+				</me>
+				We get the following values.
+				<md>
+					<mrow> \Delta\theta_{1,hw} = \frac{0.576959\:\mu\text{m} }{ 3000 \times (1/1.5)\:\mu\text{m} \times \cos 59.9^\circ}=5.75\times 10^{-4}\text{ rad}  = 0.033^\circ.</mrow>
+					<mrow> \Delta\theta_{1,hw} = \frac{0.579065\:\mu\text{m} }{ 3000 \times (1/1.5)\:\mu\text{m} \times \cos 60.3^\circ}=5.84\times 10^{-4}\text{ rad}  = 0.033^\circ.</mrow>
+				</md>				
+
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				Since half of the separation angle, <m> \Delta\theta/2 =   0.4^\circ/2 = 0.2\circ</m> is greater than width <m>0.033^\circ</m>, they are resolved. Actually, they will be very distinct and separate.
+			</p>
+
+		</solution>
+	</exercise>
+ 
+
+
+	<exercise xml:id="exercise-Resolving-Power-and-Dispersion-of-a-Transmission-Grating"><title>Resolving Power and Dispersion of a Transmission Grating</title>
+
+		<statement>
+			<p>
+				A laser light of wave length 632.8 nm is expanded so that it is incident on a 2.5-cm wide transmission diffraction grating over the entire face. It is seen that the second-order peak is at <m>30^{\circ}</m> angle. (a) What is the resolving power of the grating for the second-order? (b) What is the dispersion for the second-order? 
+			</p>
+		</statement>
+		<hint><p>
+			(a) First find <m>a</m> from the angle and wavelength, and then find <m>N</m> to use in the resolving power formula. (b) Use disersion formula. 
+			</p></hint>
+		<answer><p>(a) <m>20,000</m>, (b) <m>910\text{ rad/mm}^{-1}</m>.
+			</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a) Since the second order peak occurs at <m>\theta = <m> 30</m>^{\circ}</m>, the separation between slits must be
+				<me>
+					a = \dfrac{2\lambda}{\sin\theta} = \dfrac{2\times 632.8\: \textrm{nm}}{\sin\:30^{\circ}} = 2.53\:\mu\textrm{m}.
+				</me>
+				Let <m>N</m> be the total number of slits the light is incident, then we have <m>Na = 2.5\text{ cm}</m>.  Therefore, 
+				<me>N = 2.5\:\textrm{cm}/2.53\:\mu\textrm{m} = 9877.</me>  
+				This gives the resolving power for <m>m=2</m> to be
+				<me>
+					R = N\: m   = 19800.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b) The dispersion <m>D</m> in this order will be
+				<me>
+					D = \dfrac{m}{a\cos\theta} = \dfrac{2}{2.53\:\mu\textrm{m}\times \cos\:30^{\circ}} = 0.913\:\mu\textrm{m}^{-1}.
+				</me>				
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+</section>

@@ -1,0 +1,152 @@
+<section xml:id="force-Tension-Force"><title> Tension Force</title>
+<idx><h>Forces</h><h>Tension</h></idx><idx>Tension</idx>
+<introduction>
+	<p>
+		Many common situations involve tying two objects by using a rope or a string. When the connecting string is taut, it acts as a stretched spring and pulls in the the two bodies at the two ends. We say that the taut string provides a tension force on the two bodies. We will denote the magnitude of the tension force by <m>F_T</m> and sometimes just by <m>T</m>.
+	</p>
+	<p>
+		<!-- Tension develops as a reaction to some other external force such as gravity or pull on the two bodies connected by the string. Consider hanging an object A from ceiling B as shown in <xref ref="fig-tension-force"/>. The gravity pulls on A, which causes the string to become taut with some tension.  -->
+	</p>
+	<!-- <p>
+		Consider an object A hanging frm ceiling B by a taut string as shown in <xref ref="fig-tension-force"/>. The dynamics of the two bodies are connected by force of tension in the string.  
+	</p> -->
+	<sidebyside widths="55% 10% 35%">
+		<p>
+			Tension develops as a reaction to some other external force such as gravity or pull on the two bodies connected by the string. Consider hanging an object A from ceiling B as shown in <xref ref="fig-tension-force"/>. The gravity pulls on A, which causes the string to become taut with some tension of magnitude <m>F_T</m>. In the figure, <m>F_T</m> acts upward on A, opposing the external force that caused it, while this same force acts downward when acts on B, which is taken to be <q>fixed</q>.
+			<!-- When tension force acts on A, we have the tension force vector <m> \vec F_{T}^{\text{on A}}</m>, and when it acts on B, we have the tension force vector <m> \vec F_{T}^{\text{on B}}</m>. The direction of <m> \vec F_{T}^{\text{on A}}</m> will be along the string away from A and that of <m> \vec F_{T}^{\text{on B}}</m>  away from B. Even though these two tension forces are different forces, we will often use the same symbol for them and which one we mean will be clear from the context. -->
+		</p>
+		<p></p>
+		<figure xml:id="fig-tension-force">
+			<caption></caption>
+			<image source="./images/forces/tension-force.png" width="70%"/>
+		</figure>
+	</sidebyside>
+
+	<p>
+		Unlike spring force, we do not have any formula for the magnitude of the tension force. If you have memorized formulas such as <m>F_T = mg</m>, then you need to forget that since there is no such law although in <xref ref="fig-tension-force"/> <em>if A is not accelerating</em>, then balancing the forces on A does give <m>F_T = m_A g</m>. In general,  magnitude of tension is obtained by setting up Newton's equation of motion. When we study elasticity, we will be able to give a formula for tension in terms of Young's modulus using Hooke's law. But, for now, we will just represent tension by a unknown symbol.
+	</p>
+
+	<example xml:id="tension-example-supporting-a-hanging-mass-part-a">
+		<title>Supporting a hanging mass</title>
+		<statement>
+			<p>
+				A 50-kg block is hanging from the ceiling by a light rope. (a) Find the tension in the string. Now, suppose you place your hand and push vertically up on the block from underneath it by a force of 100 N. (b) What is the tension in the rope? (c) What will be the tension in the rope if you were to pull the block down with 100 N? (d) What will happen if you push up by a force of 600-N?
+			</p>
+		</statement>
+			<answer>
+				(a) <m>500\text{ N}</m>,
+				(b) <m>400\text{ N}</m>,
+				(c) <m>600\text{ N}</m>,
+				(d) <m>T=0</m>, <m>a = 2.0\text{ m/s}^2</m>.
+
+			</answer>
+			<solution><title>a</title>
+				<sidebyside widths="70% 5% 25%">
+					<p>
+						Since <m>a=0</m>, forces are balanced. Furthermore, forces here are all along the same line. Using any axis along the line of forces, will immediately give
+						<me>
+							T - mg = m \times 0 = 0.
+						</me>
+						Hence,
+						<me>
+							T = mg = 50\times 10 = 500\text{ N}. 
+						</me>
+					</p>
+					<p></p>
+					<figure>
+						<image source="./images/forces/tension-example-supporting-a-hanging-mass-part-a.png" width="70%"/>
+						<caption></caption>
+					</figure>
+				</sidebyside>
+			</solution>
+
+			<solution><title>b</title>
+				<sidebyside widths="70% 5% 25%">
+					<p>
+						Again, since <m>a=0</m>, forces are balanced. Furthermore, forces here are all along the same line. Using any axis along the line of forces, will immediately give
+						<me>
+							F + T' - mg = m \times 0 = 0.
+						</me>
+						Hence,
+						<me>
+							T' = mg-F = 500-100 = 400\text{ N}. 
+						</me>
+					</p>
+					<p></p>
+					<figure>
+						<image source="./images/forces/tension-example-supporting-a-hanging-mass-part-b.png" width="70%"/>
+						<caption></caption>
+					</figure>
+				</sidebyside>
+			</solution>
+
+			<solution><title>c</title>
+				<sidebyside widths="70% 5% 25%">
+					<p>
+						This is just like part (b) except that now the applied force is pointed down. Again, since <m>a=0</m>, forces are balanced. Furthermore, forces here are all along the same line. Using any axis along the line of forces, will immediately give
+						<me>
+							-F + T' - mg = m \times 0 = 0.
+						</me>
+						Hence,
+						<me>
+							T' = mg+F = 500+100 = 600\text{ N}. 
+						</me>
+					</p>
+					<p></p>
+					<figure>
+						<image source="./images/forces/tension-example-supporting-a-hanging-mass-part-c.png" width="70%"/>
+						<caption></caption>
+					</figure>
+				</sidebyside>
+			</solution>
+
+			<solution><title>d</title>
+				<p>
+					Now, we cannot assume <m>a=0</m>. If the string remained taut, tension on the block must point up. Therefore, the value of <m>T</m> must be positive. 
+				</p>
+
+				<sidebyside widths="70% 5% 25%">
+					<p>
+						Let <m>y</m>-axis be pointed up and we look at the <m>y</m>-component of net force.
+						<me>
+							F + T - mg = 600 + T -500 = T + 100.
+						</me>
+						If <m>a_y</m> were zero, setting this to zero would give <m>T = -100\text{ N}</m>, which is not possible if the string is taut. Hence, <m>a_y\ne 0</m> and string is loose with tension <m>T=0</m>.
+						Actually, setting this to <m>ma_y</m> gives
+						<me>
+							a_y = 100/50 = 2\text{ m/s}^2.
+						</me>
+					</p>
+					<p></p>
+					<figure>
+						<image source="./images/forces/tension-example-supporting-a-hanging-mass-part-d.png" width="70%"/>
+						<caption></caption>
+					</figure>
+				</sidebyside>
+			</solution>
+		
+	</example>
+
+</introduction>
+
+<subsection><title>String Connecting Bodies</title>
+	<p>
+		Bodies connected by strings are common occurence. A great example of a conected system is Atwood machine shown in <xref ref="fig-tension-force-atwood-machine"/>, where two blocks are tied together by a string that goes over a pulley. The string connects the dynamics of three bodies in this system: the two blocks and the pulley. By requiring that the length of the string do not change during the motion, we immediately get that magnitude of displacement of the two blocks must be equal. Furthermore, if the string is not to slide over the rotating pulley, then the angle by which pulley should rotate will also be related to the magnitude of displacement.
+	</p>
+	
+	<sidebyside widths="65% 5% 30%">
+ 
+		<p>
+			If string does not slide on the pulley surface due to sufficient static friction, the strings on the two sides of the pulley may have two different magnitudes <m> T_1 </m> and <m>T_2</m> with <m> T_1 \ne T_2</m>. However, if pulley's mass is negligible compared to the masses of the blocks, we can assume <m> T_1 = T_2</m> and represent them with the same symbol <m>T</m>. We will study the dynamics of coupled systems in another section.
+		</p>
+ 
+		<p> </p>
+		<figure xml:id="fig-tension-force-atwood-machine">
+			<caption></caption>
+			<image source="./images/forces/tension-force-atwood-machine.png" width="70%"/>
+		</figure>
+	</sidebyside>
+ 
+</subsection>
+
+</section>

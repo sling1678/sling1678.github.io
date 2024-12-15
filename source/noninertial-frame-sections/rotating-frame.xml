@@ -1,0 +1,420 @@
+<section xml:id="sec-rotating-frame"><title> Rotating Frame </title>
+<idx>Rotating Frame</idx>
+	<introduction>
+		<p>
+			<!-- In the sky, the Sun appears to go around the Earth making a round trip in 24 hours even though Sun is more or less fixed in space when observed from an inertial frame. This is a consequence of observing the Sun from a rotating frame. In this section we will look at the emergence of fictitious forces when we study motion with resepct to a rotating frame. -->
+			<!-- A rotating frame is accelerating with respect to an inertial frame. In <xref ref="sec-accelerating-frame"/>, we found that in a rotating frame we need to subtract a fictitious force from real forces in Newton's law equation. --> <!-- In this section we will like to work out acceleration of a rotating frame. -->
+		</p>
+		<!-- <p>
+			Since a rotating frame is not an inertial frame, the form of the second law, <m>\vec F = m\vec a</m>,  is modified to <m>\vec F-m\vec A = m\vec a^{\prime}</m>, where <m>\vec A</m> is the acceleration of the non-inertial frame with respect to the inertial frame.  
+
+			In this section, we will work out the implications of the acceleration of the frame arising from the rotation of the frame with respect to an inertial frame.
+		</p> -->
+		<p>
+			<!-- To relate kinematic quantities of motion of a particle in a rotating frame to those of a fixed frame, we will work on describing the motion of a point particle in a rotating frame and in a fixed frame.  -->
+			To keep things simple in this section we will look at describing the motion of a point particle with respect to a fixed frame and with respect to a frame that shares origin with the fixed frame but which is rotating.
+
+			To distinguish variables in the rotating frame, let us denote kinematic variables in rotating frame with a prime, e.g.,  <m>\vec r^{\prime}</m>,  <m>\vec v^{\prime}</m>, and <m>\vec a^{\prime}</m> be the position, velocity, and acceleration of the particle as observed in the rotating frame. We use the same symbols but without prime for corresponding quantities in the fixed frame.
+		</p>
+		<!-- <p>
+			For simplicity, we will consider two situations:  (1) a particle at rest in the rotating frame, and (2) a particle allowed to move in a plane perpendicular to the rotation axis of the rotating frame - specifically, we will look at motion in <m>xy</m>-plane with rotation axis being the <m>z</m>-axis.
+		</p> -->
+		<p>
+			Let us first look at a particle at rest in the rotating frame. For more complex situation, we will need to work in vector notation, as explained below. Finally, we will work out a relation between acceleration observed in an inertial frame and a uniformly rotating frame.
+		</p>
+ 
+	</introduction>
+	<subsection><title>A particle fixed at the <m>x</m>-axis of a uniformly rotating frame</title>
+		<p>
+			Consider a particle fixed at <m>(x',0,0)</m> as shown in <xref ref="fig-noninertial-frame-rotating-frame-1"/>.  Although this particle's position in the rotating frame is fixed, its position in the fixed frame is changing.  As a matter of fact, as far as the fixed frame is concerned, the particle moving in <m>xy</m>-plane in a circle of radius equal to <m>x'</m> with angular speed  <m>\Omega</m>.
+		</p>
+			<figure xml:id="fig-noninertial-frame-rotating-frame-1">
+				<caption>
+				</caption>
+				<image source="./images/noninertial-frame/rotating-frame-1.png" width="80%"/>
+			</figure>
+		<p>
+			From the right side of <xref ref="fig-noninertial-frame-rotating-frame-1"/>, we can easily find the position of the particle in the two frames.   
+			<md>
+				<mrow> \amp x =x'\cos\Omega t,\ y=x'\sin\Omega t,\ z=0</mrow>
+				<mrow> \amp x' =\text{fixed},\ y'=0,\ z'=0</mrow>
+				
+			</md>
+			Therefore, components of the velocity of the particle in the two frames, obtained by taking derivatives of the positions, will be
+			<md>
+				<mrow> \amp v_x =\frac{dx}{dt}=-\Omega x'\sin\Omega t,\ v_y=\frac{dy}{dt}=\Omega x'\cos\Omega t,\ v_z=\frac{dz}{dt}=0  </mrow>
+				<mrow>\amp v'_x = \frac{dx'}{dt}=0,\ v'_y=\frac{dy'}{dt}=0,\ v'_z=\frac{dz'}{dt}=0 </mrow>
+				
+			</md>
+			The acceleration of the particle in the two frames can be obtained by taking derivatives of the corresponding velocities.
+			<md>
+				<mrow> \amp a_x =\frac{dv_x}{dt}=-\Omega^2 x'\cos\Omega t,\ \ a_y=\frac{dv_y}{dt}=-\Omega^2 x'\sin\Omega t,\ \ a_z=\frac{dv_z}{dt}=0</mrow>
+				<mrow> \amp a'_x =\frac{dv'_x}{dt}=0,\ \ a'_y=\frac{dv'_y}{dt}=0,\ \ a'_z=\frac{dv'_z}{dt}=0</mrow>
+				
+			</md>
+			The <m>x</m> and <m>y</m>-components of acceleration in the inertial frame are equivalent to the radially inward acceleration, i.e. the centripetal acceleration. This makes sense, because from the perspective of the fixed frame, the particle moves in a uniform circular motion of radius equal to <m>x'</m> at constant angular speed <m>\Omega</m>.  Therefore, the acceleration in the fixed frame of a body moving uniformly in a circle about the center  is pointed radially inwards towards the center, as expected.
+		</p>
+ 
+	</subsection>
+
+	<subsection><title>Vector Notation</title>
+		<p>
+			It is instructive to write the kinematic quantities in the fixed and rotating frames given above in a vector notation. The example particle does not move with respect to the rotating frame.  This particle will appear to rotate in a circle about the <m>z</m>-axis when observed from the fixed frame. Therefore, in the fixed frame  the angular velocity vector will be pointed along the <m>z</m>-axis.
+			<me>
+				\vec \Omega = \Omega\hat u_z.
+			</me>
+			The velocity of the particle in the fixed frame is tangential to the circle in the <m>xy</m>-plane and is given by the cross product of the angular velocity vector and the position vector.
+			<me>
+
+				\vec v = \frac{d\vec r}{dt}=\vec \Omega \times \vec r.
+			</me>
+			Since acceleration is equal to the time-derivative of velocity, we obtain the following for the acceleration in the fixed frame.
+			<md>
+				<mrow>  \amp  \vec a =\frac{d\vec v}{dt} = \vec \Omega \times \frac{d\vec r}{dt}</mrow>
+				<mrow>  \amp \Longrightarrow\ \ \vec a = \vec \Omega \times \left( \vec \Omega \times \vec r\right)\ \ \text{(Const <m>\vec\Omega</m>)}</mrow>
+			</md>
+			We find that, although the particle is not moving in the rotating frame, the particle has an acceleration in the fixed frame.
+
+		</p>
+	</subsection>
+
+	<subsection><title>A particle moving in the <m>xy</m>-plane of a uniformly rotating frame</title>
+		<p>
+			Let us consider a particle that is not fixed but moves in the <m>xy</m>-plane of a uniformly rotating frame <m>Ox'y'z'</m>  which is rotating with respect to a fixed frame <m>Oxyz</m> about their common <m>z</m>-axis.  Since the frame is rotating about the <m>z</m>-axis, the particles moves in the <m>xy</m>-plane of the fixed frame as well.  The situation between time <m>t</m> and <m>t+\Delta t</m> is shown in <xref ref="fig-noninertial-frame-rotating-frame-2"/>. For simplicity, let the axes of the two frames be coincident at time <m>t</m>.
+		</p>
+
+			<figure xml:id="fig-noninertial-frame-rotating-frame-2">
+				<caption>
+					The physical situations at times <m>t</m> and <m>t+\Delta t</m>.  In duration <m>t</m> to <m>t+\Delta t</m>, the particle moves from P to Q, and the rotating frame rotates by an angle <m>\Omega t</m>.  The common <m>z</m>-axis pointed out-of-page.
+				</caption>
+				<image source="./images/noninertial-frame/rotating-frame-2.png" width="70%"/>
+			</figure>
+ 
+		<p>
+
+			Let <m>(x,y)</m> and <m>(x',y')</m> be the coordinates of the particle at some time <m>t</m> in the <m>Oxyz</m> and <m>Ox'y'z'</m> frames respectively.  The change of the coordinates over the interval   from <m>t</m> to  <m>t+\Delta t</m> are  <m>(\Delta x,\Delta y)</m>  and  <m>(\Delta x',\Delta y')</m> respectively.  What are their relations?  The relation between the displacements in the two frames is more conveniently written in the vector notation. Therefore, we will work with vector notation here.
+		</p>
+		<p>
+			As shown in  <xref ref="fig-noninertial-frame-rotating-frame-2"/>, particle is at point <m>P</m> along momentarily coincident <m>x</m> and <m>x'</m>-axes. The non-rotating frame marks the location with a marker at <m>P</m> at its <m>x</m>-axis and the rotating frame marks the same location in its frame as <m>P'</m> at its <m>x</m>-axis.  As time passes, the particle moves to another location shown as <m>Q</m> at time  <m>t+\Delta t</m>.   Meanwhile the rotating frame has also moved. 
+			 
+		</p> 
+
+			<!-- <figure xml:id="fig-noninertial-frame-rotating-frame-3">
+				<caption>
+					The physical situations at times <m>t</m> and <m>t+\Delta t</m>.  In duration <m>t</m> to <m>t+\Delta t</m>, the particle moves from P to Q, and the rotating frame rotates by an angle <m>\Omega t</m>.  The common <m>z</m>-axis pointed out-of-page.
+				</caption>
+				<image source="./images/noninertial-frame/rotating-frame-3.png" width="70%"/>
+			</figure> -->		
+
+		<p>
+			
+
+			Therefore, from the perspective of the rotating frame, the displacement of the particle between  <m>t</m> and  <m>t+\Delta t</m> is the vector from  <m>P'</m> on its <m>x</m>-axis where the particle was at <m>t</m> to the space point <m>Q</m>.  The same displacement of the particle from the perspective of the  non-rotating frame is <m>PQ</m> vector in space.  From <m>\triangle PP'Q</m> we obtain the following relation in space.
+			<men xml:id="eq-rot-inert-fr-1">
+				\overrightarrow{PQ} = \overrightarrow{PP'} + \overrightarrow{P'Q}. \label{}
+			</men>
+			Now, <m>\overrightarrow{PP'}</m> is on the arc of a circle of radius <m>|\vec r|</m> with the arc angle <m>\Omega\Delta t</m>, therefore
+			<me>
+				\overrightarrow{PP'} = \left( \vec \Omega \Delta t\right) \times \vec r.
+			</me>
+			The vector <m>\overrightarrow{PQ}</m> is the displacement <m>\Delta \vec r</m> of the particle in the fixed frame and <m>\overrightarrow{P'Q}</m> is the displacement <m>\Delta \vec r^{\prime}</m> of the particle in the rotating frame.  Putting these quantities in Eq. <xref ref="eq-rot-inert-fr-1"/>  we have the following relation among displacements in the time interval <m>\Delta t</m>.
+			<me>
+			\Delta \vec r = \left( \vec\Omega\Delta t \right)\times \vec r + \Delta\vec r^{\prime}.
+			</me>
+
+			Dividing by <m>\Delta t</m> and taking the  <m>\Delta t \rightarrow 0</m> limit, we find that the velocity in the inertial frame is equal to the sum of the velocity of the particle in the rotating frame and an additional term resulting from the rotation of the frame.
+			<men xml:id="eq-vel-relation-frames-1">
+				\vec v =  \vec v^{\prime} + \vec\Omega\times \vec r. 
+			</men>
+			Rather than use prime for the quantities in the rotation frame, sometimes a different notation is use in which we attach a subscript <q>in</q> and <q>rot</q> for quantities in the fixed frame and the rotating frame respectively. 
+			<men xml:id="eq-vel-relation-frames">
+				\vec v_\text{in} =  \vec v_\text{rot} + \vec\Omega\times \vec r.  
+			</men>
+			There is no need to put a subscript to <m>\vec r</m> since <m>\vec r</m> is a vector from the common origin of the two frame to the position of the particle, which will give the same result in the two frames. The result of relation between the velocity vectors is also often written as
+			<me>
+				\left(\frac{d\vec r}{dt}\right)_\text{in} = \left(\frac{d\vec r}{dt}\right)_\text{rot} + \vec\Omega\times \vec r.
+			</me>
+			where the subscript <q>in</q> denotes the quantity in the inertial or non-rotating frame and the subscript <q>rot</q> for a quantity with respect to the rotating frame. 
+		</p> 
+		<p>
+			Note that to derive this relation, we only used the geometric property of the position vector.  A similar argument can be made about the rate of change of any arbitrary vector <m>\vec w</m>  in the two frames.
+			<me>
+				 \left(\frac{d\vec w}{dt}\right)_\text{in} = \left(\frac{d\vec w}{dt}\right)_\text{rot} + \vec\Omega\times \vec w.
+			</me>
+			For instance, we can obtain the time-derivative of the velocity vector <m>\vec v_\text{in}</m>  in the inertial frame by setting <m>\vec w = \vec v_\text{in}</m> in this equation.
+			<men xml:id="eq-rot-inert-eq-2">
+				 \left(\frac{d\vec v_\text{in}}{dt}\right)_\text{in} = \left(\frac{d\vec v_\text{in}}{dt}\right)_\text{rot} + \vec\Omega\times \vec v_\text{in}.
+			</men>
+			The left hand side of this equation is the acceleration of the particle in the inertial frame since it is the rate of change of the corresponding velocity in the same frame.  The first term on the right side of this equation is not acceleration of anything since this term mixes information from the two frames - this term is the rate of change of the velocity in the inertial frame as observed from the rotating frame. 
+		</p>
+ 		<p>
+			Finally, by substituting <m>\vec v_\text{in}</m> in the right-side of Eq. <xref ref="eq-rot-inert-eq-2"/>   in terms of  <m>\vec v_\text{rot}</m> as given in Eq.  <xref ref="eq-vel-relation-frames"/>  we can work out the relation between accelerations in the two frames. 
+			<md>
+				<mrow> \left(\frac{d\vec v_\text{in}}{dt}\right)_\text{in}  \amp =  \left[ \frac{d}{dt} \left( \vec v_\text{rot} + \vec\Omega\times\vec r_\text{in} \right) \right]_\text{rot} + \vec\Omega\times\left( \vec v_\text{rot} \times\vec\Omega\times\vec r_\text{in}\right)</mrow>
+				<mrow> \amp = \vec a_\text{rot} + 2\vec \Omega\times \vec v_\text{rot} + \vec \Omega \times \left( \vec\Omega \times \vec r \right)</mrow>
+			</md>  
+			Therefore, the accelerations of the particle in the two frames are related as follows. 
+			<men xml:id="eq-rot-frame-acc-main">
+				 \vec a_\text{in} = \vec a_\text{rot} + 2\vec \Omega\times \vec v_\text{rot} + \vec \Omega \times \left( \vec\Omega \times \vec r \right)\ \ (\text{Constant }\vec\Omega). 
+			</men>
+			The second term on the right is called <term>Coriolis</term> acceleration and the third is called <term>centrifugal</term> acceleration. In the next section we will use this expression to get Newton's equation of motion in a rotating frame, such as an Earth-based system.
+
+		</p>
+	</subsection>
+
+
+	<subsection><title>Newton's Second Law in Uniformly Rotating Frame</title>
+	<idx><h>Rotating Frame</h><h>Second Law</h></idx>
+
+		<p>
+			Newton's second law for a particle of fixed mass <m>m</m> in inertial frame is
+			<me>
+				m\vec a_{in} = \vec F
+			</me>
+			where <m>\vec F</m> is the net force. Substituting <m>\vec a_{in}</m> from Eq. <xref ref="eq-rot-frame-acc-main"/> into this equation, we find that mass times acceleration in a rotating frame has the following form, which we will refer to as Newton's second law in a frame that is rotating uniformly with a constant angular velocity <m>\vec \Omega</m>.
+			<men xml:id="eq-rot-frame-acc">
+				 m \vec a_{rot}=\vec F  - m \left[2\vec \Omega\times \vec v_{rot} + \vec \Omega \times \left( \vec\Omega \times \vec r \right)\right].  
+			</men>
+		</p>
+		<p>
+			<idx>Coriolis Force</idx>
+			<idx>Centrifugal Force</idx>
+			<idx><h>Forces</h><h>Coriolis</h></idx>
+			<idx><h>Forces</h><h>Centrifugal</h></idx>
+			We see that acceleration observed in a rotating frame depends on forces as well as fators that depend on the rotaton of the frame.  One of these extra terms depends on the velocity of the particle. This term is called <term> Coriolis force</term>.
+			<me>
+				\text{Coriolis Force } = -2m\vec \Omega\times \vec v_{rot}.
+			</me>
+			Other term depends on the position of the particle and is called <term> centrifugal force</term>.
+			<me>
+				\text{Centrifugal Force } = -m\vec \Omega \times \left( \vec\Omega \times \vec r \right).
+			</me>
+			While the direction of the Coriolis force is perpendicular to the axis of rotation and the velocity of the particle, the centrifugal force is always pointed away from the axis of rotation and remains perpendicular to the axis.
+		</p>			
+		<p>
+			<idx>Fictitious Force</idx>
+			<idx><h>Forces</h><h>Fictitious</h></idx>
+			That is, in a rotating frame, mass times acceleration is not equal to the net real force on the particle.  In addition to the net real force <m>\vec F</m>, there are terms that have units of force but are dependent on the rotation of the frame.  These are the <term> fictitious forces</term> or <term>inertial forces</term>.  In a rotating frame, the  <q>real</q> and <q>fictitious</q> forces are indistinguishable in their effect on the acceleration except that there appears to be no agent(s) for the fictitious forces as far as the rotating frame is concerned.
+		</p> 
+
+		<!-- <p>
+			The term <m>\left( -2m\vec \Omega\times \vec v_{rot}\right)</m> is called the <term> Coriolis force</term>,  and the second term  <m>\left[ -m\vec \Omega \times \left( \vec\Omega \times \vec r \right)\right]</m> the <term> centrifugal force</term>.   While the direction of the Coriolis force is perpendicular to the axis of rotation and the velocity of the particle, the centrifugal force is always pointed away from the axis of rotation and remains perpendicular to the axis.
+		</p> -->
+	</subsection>
+
+
+	<example xml:id="ex-Motion-of-a-Rotating-Platform-in-a-Rotation-Frame"><title>Motion of a Rotating Platform in a Rotation Frame</title>
+
+		<statement>
+			<p>
+				A large platform is rotating uniformly with an angular speed <m>\Omega</m> about the <m>z</m>-axis of a fixed frame <m>Oxyz</m> with the origin at the center of the platform. A man is on the platform at a distance <m>R</m> from the center.
+			</p>
+			<p>
+				(a) What is the motion of the man in the fixed frame? 
+			</p>
+			<p>
+				(b) What is the motion of the man with respect to a frame <m>O'x'y'z'</m> that has the same origin and <m>z</m>-axis as the fixed frame but whose <m>x</m> and <m>y</m>-axes rotate with the platform?
+			</p>
+			<p>
+				(c) Let the man be along the <m>x'</m> axis at <m>t=0</m> when he starts to walk directly towards the center at a constant speed <m>v'</m>. That is, he is walking along the <m>x'</m> axis towards origin with speed <m>v'</m> with respect to the origin <m>O'</m>.  Assuming no change in the rotation of the platform, what is the motion of the person as seen from the fixed frame? 
+			</p>
+			<p>
+				[The conservation of angular momentum would mean that the rotation speed will go up as the person walks towards the center.  Here we assume that some torque maintains the angular speed.]
+			</p>
+		</statement>
+		<!-- <hint><p>Definition.</p></hint> -->
+		<answer><p>See solution.</p></answer>
+		<solution><title>a</title>
+			<p>
+				The man moves in a circle of radius <m>R</m> with constant speed <m>v = \Omega R</m>.
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				Think of this frame as the frame of someone standing along the <m>z</m>-axis observing the person on the platform.  The person on the platform will be at rest with respect to this observer.
+			</p>
+		</solution>
+		<solution><title>a</title>
+			<p>
+				In the fixed frame you will notice a change in the rotation speed to conserve the angular momentum of the platform plus the person system.  Here, for the sake of simplicity we are assuming that the rotation speed remain at <m>\Omega</m>.  This will mean that in the fixed frame the radius of the circle in which the person is moving changes as <m>R(t) = R - v' t</m>.  Now, the circular motion will have speed <m>v = \Omega (R - v' t)</m>. 
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="ex-Coriolis-Force-on-a-Car-in-Northern-Hemisphere"><title>Coriolis Force on a Car in Northern Hemisphere</title>
+
+		<statement>
+			<p>
+				A car in Los Angeles, California, USA, is moving with a velocity of <m>30\text{ m/s}</m> towards North with respect to an observer on the ground.  Find magnitude and direction of Coriolis force on the car if its mass is <m>3000\text{ kg}</m>. Los Angeles, USA has latitude <m>34.0522^{\circ}\text{ N}</m>, and the longitude <m>118.2428^{\circ}\text{ W}</m>.
+			</p>
+		</statement>
+		<!-- <hint><p>Definition.</p></hint> -->
+		<answer><p>
+			 <M>7.3\text{ N}</M> towards the local East.
+
+		</p></answer>
+		<solution>
+			<p>
+				The Coriolis force will be
+				<me>
+					\vec F_c = -2 m \vec \Omega \times \vec v_{rot}.
+				</me>
+				Here,
+				<md>
+					<mrow> \amp \vec \Omega = \frac{2\pi}{T} \hat k,</mrow>
+					<mrow> \amp \vec v_{rot} = -(30\ \text{m/s})\ \hat u_{\theta}, </mrow>
+				</md>
+				where <m>T = 24\times 3600</m> s, <m>\hat k</m> is the unit vector from the origin towards the North pole,
+			</p>
+
+			<sidebyside widths="50% 50%">
+
+				<p>
+					 and <m>\hat u_{\theta}</m> is the unit vector tangent to the great circle through the point at LA and passing through the North and South pole, the polar unit vector for the spherical coordinate system, the other unit vector we need is the tangent to the circle for constant Latitude, which will be denoted as <m>\hat u_{\phi}</m>.  The vector <m>\hat u_{\phi}</m> is pointed towards the local East direction.
+				</p>
+
+				<figure xml:id="fig-ex-Coriolis-Force-on-a-Car-in-Northern-Hemisphere-sol">
+					<caption>
+						 
+					</caption>
+					<image source="./images/noninertial-frame/ex-Coriolis-Force-on-a-Car-in-Northern-Hemisphere-sol.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			
+			<p>
+
+				The cross-product of the unit vectors <m>\hat k</m> and <m>\hat u_{\theta}</m> can be shown to be
+				\[
+					\hat u_z \times \hat u_{\theta} =\sin\lambda \hat u_{\phi},
+				\]
+				where <m>\lambda</m> is the latitude, the angle towards the North from the equator. The cross product gives the Coriolis force.
+				<men xml:id="eq-Coriolis-Force-on-a-Car-in-Northern-Hemisphere-1">
+					\vec F_c = 2 m \frac{2\pi}{T}(30)\sin\lambda\, \hat u_{\phi}. 
+				</men>
+				Now, putting in the numbers we find <m>F_c = 7.3\text{ N}</m> towards the local East.  From the given longitude and latitude you can write the unit vector in terms of the unit vectors of the Cartesian axes.
+
+			</p>
+		</solution>
+	</example>
+
+	<exercises>
+
+	<exercise xml:id="ex-Coriolis-Force-on-a-Car-in-Southern-Hemisphere"><title>Coriolis Force on a Car in Southern Hemisphere</title>
+
+		<statement>
+			<p>
+				A car in Canberra, Australia, is moving with a velocity of <m>30\text{ m/s}</m> towards North with respect to an observer on the ground.  Find magnitude and direction of Coriolis force on the car if its mass is <m>3000\text{ kg}</m>. Canberra, Australia has latitude <m>35.2828^{\circ}\text{ S}</m>, and longitude <m>149.1314^{\circ}\text{ E}</m>.
+			</p>
+		</statement>
+		<hint><p>Definition.</p></hint>
+		<answer><p>
+			<m>7.56\ \text{N, West}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				 Using the Eq.  <xref ref="eq-Coriolis-Force-on-a-Car-in-Northern-Hemisphere-1"/> in the last problem with <m>\lambda</m> negative now gives the direction of the Coriolis force towards the local West with the magnitude
+				 <me>
+				 	F_c = 2 m \frac{2\pi}{T}(30)|\sin\lambda| = 7.56\ \text{N}.
+				 </me>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Bead-Sliding-on-a-Rotating-Ring"><title>Bead Sliding on a Rotating Ring</title>
+
+		<statement>
+			<sidebyside widths="65% 10% 25%">
+				<p>
+					A bead of mass <m>m</m> can slide frictionlessly on a rotating ring of mass <m>M</m> and radius <m>R</m> which rotates at an angular speed of  <m>\omega</m> about a vertical axis through its center. When the bead is at a particular location, it does not slide.  (a) Find this special position of the bead using calculations in a rotating frame. (b) Repeat the calculation in an inertial frame.
+				</p>
+				<p></p>
+				<figure xml:id="fig-earth-frame-exer-bead-on-ring">
+					<caption>
+					</caption>
+					<image source="./images/noninertial-frame/exer-bead-on-ring.png" width="90%"/>
+				</figure>
+			</sidebyside>			
+		</statement>
+		<hint><p>
+			Write cartesian components of equation of motion.
+		</p></hint>
+		<answer><p>
+			<m>\theta = \cos^{-1} \left( \frac{g}{\omega^2 R} \right)</m>.
+		</p></answer>
+		<solution><title>a</title>
+			<p>
+				The figure shows the choice of the fixed frame <m>Oxyz</m> and <m>Ox'y'z</m>.  In the rotating frame, the bead is fixed in the <m>x'z</m>-plane as the bead rotates about the <m>z</m>-axis.  The calculations in the rotating frame with <m>\vec v_{rot}=0</m> and <m>\vec a_{rot} = 0</m> gives
+				<md>
+					<mrow>\amp  z\textrm{-component: }\ \ F_N\cos\theta-mg = 0</mrow>
+					<mrow> \amp  x\textrm{-component: }\ \ F_N\sin\theta - m\omega^2 R\sin\theta = 0.</mrow>
+				</md>
+				Therefore,
+				<me>
+					\theta = \cos^{-1} \left( \frac{g}{\omega^2 R} \right).
+				</me>
+				Note that <m>\omega^2R>g</m> for the cosine here.  Therefore, the bead will settle at a non-zero value if <m>\omega^2R>g</m>.
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				The calculations in the fixed frame with <m>v = |\vec v| =\omega R\sin\theta</m> and <m>|\vec a| = v^2/R\sin\theta</m> gives
+				<md>
+					<mrow> \amp  z\textrm{-component: }\ \ F_N\cos\theta-mg = 0 </mrow>
+					<mrow> \amp  \textrm{centripetal component: }\ \ F_N\sin\theta = m\frac{v^2}{R\sin\theta}.</mrow>
+				</md>
+				Therefore, we get the same angle as in the rotating frame.
+				<me>
+					\theta = \cos^{-1} \left( \frac{g}{\omega^2 R} \right).
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<exercise xml:id="ex-Rotating-a-Pendulum-Base"><title>Rotating a Pendulum Base</title>
+
+		<statement>
+			<sidebyside widths="55% 45%">
+				<p>
+					A block of mass <m>M</m> is attached to a string of length <m>l</m>. The other end of the string is attached to a post at the center of a rotating platform.  When the platform is rotating at a steady angular speed <m>\Omega</m>  the block moves in a circular motion.  
+				</p>
+				<figure xml:id="fig-earth-frame-exer-block-on-string">
+					<caption>
+					</caption>
+					<image source="./images/noninertial-frame/exer-block-on-string.png" width="90%"/>
+				</figure>				
+			</sidebyside>
+			<p>
+				Find the radius of the circular motion of the block performing the calculations in a rotating frame.
+			</p>
+		</statement>
+		<hint><p>
+			
+		</p></hint>
+		<answer><p>
+			<m>\frac{l}{\omega^2 R}\sqrt{\omega^4 R^2 - g^2}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Let <m>T</m> be the magnitude of the tension force in the string. This problem is analogous to <xref ref="ex-Bead-Sliding-on-a-Rotating-Ring"/> the following mapping.
+				<md>
+					<mrow> \amp F_N\ \  \longrightarrow\ \ T.</mrow>
+					<mrow> \amp R\ \   \longrightarrow\ \ l.</mrow>
+				</md>
+				Therefore, radius of the circular motion will be
+				<me>
+					l \sin\theta = l \sqrt{1-\cos^2\theta} = \frac{l}{\omega^2 R}\sqrt{\omega^4 R^2 - g^2}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+</exercises>
+
+
+
+</section>

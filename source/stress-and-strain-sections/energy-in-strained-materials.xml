@@ -1,0 +1,199 @@
+<section xml:id="Energy-in-Strained-Material"><title> Energy in Strained Material </title>
+	<introduction>
+		<p>
+			If strain in a matrial is not too great, the material will go back to the original shape when stress-causing force is removed. <emph> The energy stored in the strained material in the elastic region is just like the energy of a spring and is called <term> elastic energy</term>. </emph>
+			<!-- Recall that the energy stored in a spring is given by the following formula
+			<me>
+				U = \dfrac{1}{2}k (\Delta l)^2,
+			</me>
+			where <m> \Delta l</m> is the change in the length of the spring and <m> k </m> is the spring constant.  -->
+		</p>
+		<p>
+			When you strecth a wire by pulling on it by some force at the ends as in <xref  ref="fig-strain-energy-wire-stretched" />, the quantity <m> Y A/L</m> acts similar to spring constant of a spring. 
+			<me>
+				k \equiv Y\dfrac{A}{L},
+			</me>
+			with the stretching <m>\Delta L</m> to be the <m>x</m> of spring.
+			<me>
+				x \equiv \Delta L,
+			</me>
+			and strain will be
+			<me>
+				\epsilon = \dfrac{\Delta L}{L} = \dfrac{x}{L}.
+			</me> 
+		</p>
+		<p>
+			Therefore, potential energy stored in a strained material, i.e., the elastic energy, will be
+			<me>
+				U = \dfrac{1}{2} k x^2 =  \dfrac{1}{2}  \dfrac{YA}{L} \left( \Delta L \right)^2 = \dfrac{1}{2}YV\epsioon^2,
+			</me>
+			where <m> V = AL</m>, the volume of the material. This elastic energy is due to the stretching of the wire, therefore, it is also called <term>tensile energy</term>. A similar formula can be obtained for compressive elastic energy. Dividing by the volume of the wire, we see that <term>elastic energy density</term>, i.e., elastic energy per unit volume depends only on the elastic modulus and strain.
+			<me>
+				u = \dfrac{U}{V} = \dfrac{1}{2}  Y \, \epsilon^2.
+			</me>
+		</p>
+		<figure xml:id="fig-strain-energy-wire-stretched">
+			<caption>
+				The elastic energy stored in the stretched wire is 
+				<m>\dfrac{1}{2}  YV \epsilon^2</m>, with <m>\epsilon = \Delta L/L</m>. 
+			</caption>
+			<image source="./images/stress-and-strain/strain-energy-wire-stretched.png" width="60%"/>
+		</figure>
+
+		<p>
+			When you look at a volume deformation, the strain is
+			<me>
+				\epsilon = \dfrac{\Delta V}{V},
+			</me>
+			and the modulus is the bulk modulus, <m>B</m>. The elastic energy stored in volume strain is
+			<men>
+				U = \frac{1}{2}B V \epsilon^2.
+			</men>
+		</p>
+
+		<sidebyside widths="60% 10% 30%">
+			<p>
+				Similarly, the energy stored in shear strain <m>\theta</m> is
+				<men>
+					U = \frac{1}{2}V G \theta^2,
+				</men>
+				where <m> G</m> is the shear modulus.
+			</p>
+			<p> </p>
+			<image source="./images/stress-and-strain/strain-energy-shear-strain.png" width="50%"/>
+		</sidebyside>
+		<p>
+			From different formulas for different types of deformation, you can guess a common formula that you can apply to any type.
+			<men>
+				U = \dfrac{1}{2} V \times \text{Modulus} \times \text{Strain}^2.
+			</men>
+		</p>
+		
+	</introduction>
+
+	<exercise xml:id="ex-Strain-Energy-in-Stretched-Cable"><title> Strain Energy in Stretched Cable </title>
+		<statement>
+			<p>
+				A <m>100\text{-kg}</m> steel ball is hung from a high ceiling using a <m>8\text{-m}</m> long steel cable of diameter <m>4.0\text{mm}</m>. How much elastic energy is stored in the cable? Data: Young's modulus of steel = <m>220\text{ GPa}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Use formula after finding the strain. </p> </hint>
+		<answer> <p> <m>1.39\text{ J} </m>.  </p> </answer>
+		<solution> 
+			<p>
+				First we find the strain <m>\Delta L/L</m> by Hooke's law. For that we need to work out stress, for which we need the area of cross-section.
+				<md>
+					<mrow> A = \pi R^2 = \pi \times \left( 2\times 10^{-3} \right)^2 = 1.25\times 10^{-5}\text{ m}^2 </mrow>
+					<mrow> F = mg = 100\times 9.81 = 981\text{ N}</mrow>
+				</md>
+				Therefore, stress in the cable is
+				<me>
+					\text{Stress } = \dfrac{F}{A} = 7.8\times 10^7\text{ N/m}^2.
+				</me>
+				Using <m> Y = 220\text{ GPa} = 220\times 10^9\text{ Pa}</m>, we can get the strain caused in the cable.
+				<me>
+					\dfrac{\Delta L}{L} = \dfrac{1}{Y} \dfrac{F}{A} = 3.55\times 10^{-4}.
+				</me>
+				Therefore, the tensile energy stored in the cable is
+				<md>
+					<mrow> U \amp = \dfrac{1}{2}  YV\left( \dfrac{\Delta L}{L} \right)^2,</mrow>
+					<mrow>  \amp = \dfrac{1}{2} 220\times 10^9 \times 1.25\times 10^{-5} \times 8\times \left( 3.55\times 10^{-4} \right)^2 = 1.39\text{ J}.</mrow>
+				</md>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Energy-Stored-in-Achiles-Tendon"><title> Energy Stored in Achiles Tendon</title>
+		<statement>
+			<p>
+				The Achiles tendon contracts and stretches as you run.  Suppose a <m>80\text{-kg}</m> man has <m>10\text{-cm}</m> long tendon with area of cross-section <m>0.75\text{ cm}^2</m>.  Data: Young's modulus of tendon = <m>1.5\text{ GPa}</m>.
+			</p>
+			<p>
+				(a) When you run you tend to strike the ground with considerable more force than just your weight. Suppose at some instant, the force on the tendon of the runner is 5 times his weight and the tendon is compressed by this force. (i) What is the stress in the Achiles tendon at this instant? (ii) What is the strain of the Achiles tendon at this instant?
+			</p>
+			<p>
+				(b) How much strain energy is stored at the instant in (a)?
+			</p>
+
+		</statement>
+		<hint> <p> (a) Pay attention to units and use definitions. (b) Assume linear regime. </p> </hint>
+		<answer> <p> (a)(i) <m>5.23\times 10^7\text{ N/m}^2 </m>, (ii) <m>0.035</m> , (b) <m> 6.89\text{ J}</m>. </p> </answer>
+		<solution> <title>(a) </title>
+			<p>
+				(a)
+				(i) 
+				From the statement we note that a force of 5 times the weight acts on an area <m>0.75\text{ cm}^2</m>, which will give stress
+				<me>
+					\text{Stress } = \dfrac{5\times 80\times 9.81}{0.75\times 10^{-4}} = 5.23\times 10^7\text{ N/m}^2.
+				</me>
+				(ii) With this stress, the strain will be
+				<me>
+					\dfrac{\Delta L}{L} = \dfrac{\text{ Stress}}{Y} = \dfrac{5.23\times 10^7}{1.5\times 10^9} = 0.035.
+				</me>
+
+			</p>
+		</solution>
+		<solution> <title>(b) </title>
+			<p>
+				(b) Assuming linear regime, we would have the following amount of energy stored.
+				<md>
+					<mrow> U \amp = \dfrac{1}{2}  YV\left( \dfrac{\Delta L}{L} \right)^2</mrow>
+					<mrow> \amp = \dfrac{1}{2} 1.5\times 10^9 \times (0.75 \times 10^{-4} \times 0.10) \times 0.035^2 = 6.89\text{ J}.  </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+ 	<exercise xml:id="ex-Elastic-Energy-Stored-in-a-Deformed-Jello"><title> Elastic Energy Stored in a Deformed Jello </title>
+		<statement>
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					<p>
+						A rectangular parallelepiped-shaped jello with dimensions <m> (a\times b \times c) =  5\text{ cm} \times 4\text{ cm} \times 3\text{ cm}</m> is resting on a plate.  A glass slide is glued to the top surface.  A force of <m>F = 30\text{ mN}</m> is applied to the glass plate deforming the jello sideways. 
+					</p> 
+					<p>
+						What is the amount of elastic energy stored in the jello?
+					</p>
+					<p>
+						Data: shear modulus of <m>G=1000\text{ Pa}</m>.
+					</p>
+				</p>
+
+				<p> </p>
+				<image source="./images/stress-and-strain/shear-stress-jello-exercise.png" width="50%"/>
+			</sidebyside>			
+
+		</statement>
+		<hint> <p>  Find strain and then use formula for energy. </p> </hint>
+		<answer> <p> <m> 4.5\times 10^{-4} \text{ J}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				From <xref ref="ex-Deforming-a-Jello-By-Shear-Stress"/> we have the shear strain to be
+				<me>
+					\theta = 1.5\times 10^{-2}\text{ rad}.
+				</me>
+				The volume of undeformed jello is
+				<me>
+					V = 5\text{ cm} \times 4\text{ cm} \times 3\text{ cm} = 60\times 10^{-6}\text{ m}^3.
+				</me>
+				Therefore, the stored energy is
+				<md>
+					<mrow> U \amp = \dfrac{1}{2}\times 1000\text{ Pa} \times 60\times 10^{-6} \text{ m}^3 \times 1.5\times 10^{-2} \text{ rad},</mrow>
+					<mrow> \amp = 4.5\times 10^{-4} \text{ J}.</mrow> 
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+</section>

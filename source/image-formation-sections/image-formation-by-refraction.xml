@@ -1,0 +1,300 @@
+<section xml:id="image-formation-by-refraction"><title> Image Formation by Refraction </title>
+	<introduction>
+        <p>
+        	When you look at a straight rod partially submerged in water, it appears bent at the interface as shown in <xref ref="fig-refraction-rod-bent-at-interface"/>.  The reason behind this strange effect is that the image of the rod inside water is a little bit above the actual position of the rod, and does not line up with the part of the rod that is above water.   A similar phenomenon is the reason a fish in water appears to be closer to the surface than it actually is. 
+        </p>
+	 	<figure xml:id="fig-refraction-rod-bent-at-interface">
+ 			<caption>
+ 				   Bending of rod at air/water interface. The point P on the rod would appear at the point Q, the image of the point P due to refraction at the interface.
+ 			</caption>
+				<image source="./images/image-formation/refraction-rod-bent-at-interface.png" width="50%"/> 
+		</figure>
+
+ 
+		<p>
+			To study image formation as a result of refraction, we ask the following questions: 
+			<ol>
+				<li>
+					What happens to the rays of light when they enter or pass through another medium?
+				</li>
+				<li>
+					Do the refracted rays originating from a single point meet at some point or diverge away from one another?
+				</li>
+			</ol>
+        </p>
+        <p>
+        	To be concrete, let us consider a simple system consisting of two media separated by a plane interface as shown in <xref ref="fig-refraction-apparent-depth-near-normal"/>. The object will be in one medium and the observer in the other.  For instance, when you look at a fish from above the water surface, the fish would be in water which has a refractive index <m>\frac{4}{3}</m> and your eyes woulb be in air with refractive index 1.00, and the surface of water is the interface.  The depth that you will <q>see</q>, i.e., <m>h_i</m>,   will be called the <term> apparent depth</term>, and the actual depth of the fish will be denoted by <m>h_o</m>.
+        </p> 
+	 	<figure xml:id="fig-refraction-apparent-depth-near-normal">
+ 			<caption>
+ 				   Apparent depth due to refraction.
+ 			</caption>
+				<image source="./images/image-formation/refraction-apparent-depth-near-normal.png" width="50%"/> 
+		</figure>
+		<p>
+			The apparent depth <m>h_i</m> depends on the angle at which you view the image.  For a view from directly above, the so-called <term>normal view</term>, we can assume the refraction angle <m>\theta</m> to be small, and replace <m>\sin\theta</m> in Snell's law by <m>\tan\theta</m>.  With this approximation, using the triangles <m>\triangle\text{OPR}</m> and <m>\triangle\text{OQR}</m>, you can show that the apparent depth is given by the following formula.
+			<men>
+				\frac{h_i}{h_o} \approx \frac{n_2}{n_1}.
+			</men> 
+			Thus, a fish will appear approximatel <m>\frac{3}{4}</m> times the real depth when viewed from above. 
+        </p>
+        <p>  
+        	<alert>Spherical shape</alert> is important in optics, primarily because high quality spherical shapes are far easier to manufacture than other specialized curved surfaces.  A spherical shape can be <term> convex</term> if the material of higher refractive index than the surroundings is bulging out or concave if the material has been carved out.  In the following subsections, we will study image formation by refraction at convex and concave surfaces. In the next section, we will study a lens made where it has two refraction surfaces.
+
+        </p>
+    </introduction>
+    <subsection><title>Refraction at a Convex Surface</title>
+    	<p>
+    		For concreteness, consider a point source of light at point P in front of a transparent material that has a convex surface facing the light source as shown in <xref ref="fig-refraction-at-convex-surface-image-formation"/>. Let <m>n_1</m> be the refractive index of the medium that point P is located and <m>n_2</m> be the refractive index of the material with the convex surface. We assume that <m>n_2 \gt n1</m>; for instance, the material may be glass with <m>n_2=1.5</m> and the surroundings may be air with <m>n_1 = 1.0</m>. 
+    	</p>
+    	<p>
+    		We further assume that other surfaces of the <m>n_2</m>-material are far away and we are not interested in what happens when light ray reaches those surfaces. We want to know what happens as a result of refraction on this face only. 
+    	</p>
+	 	<figure xml:id="fig-refraction-at-convex-surface-image-formation">
+ 			<caption>
+ 				   Refraction at a convex interface with <m>n_2 \gt n_1</m>.
+ 			</caption>
+				<image source="./images/image-formation/refraction-at-convex-surface-image-formation.png" width="80%"/> 
+		</figure>
+		<p>
+			We will do our calculations in the paraxial approximation, i.e., for rays that make small angles with the symmetry axis.  Paraxial rays make small angle  <m>\theta</m>, therefore we make the approximations <m>\cos\theta\approx 1</m> and  <m>\sin\theta\approx\tan\theta\approx\theta</m> where <m>\theta</m> is in radian.  We also find that 
+			<md>
+				<mrow> \amp 
+					\text{EV} \approx  0,</mrow>
+				<mrow> \amp  
+					n_1 \theta_ 1 \approx n_2 \theta_ 2.</mrow>
+			</md>
+			The following geometric relations are also easily seen from the figure.
+			<md>
+				<mrow>\amp 
+					\text{In } \triangle \text{PBE},\ \ \ \angle \text{BPE} = \theta_1 - \theta \approx \frac{ \text{BE} }{ \text{VP} } = \frac{h}{p}.</mrow>
+				<mrow> \amp 
+					\text{In } \triangle \text{BEC},\ \ \ \angle \text{BCE} = \theta \approx \frac{ \text{BE} }{ \text{VC} } = \frac{h}{R}.</mrow>
+				<mrow>\amp 
+					\text{In } \triangle \text{QBE},\ \ \ \angle \text{BPE} = \theta - \theta_2 \approx \frac{ \text{BE} }{ \text{VQ} } = \frac{h}{q}.
+				</mrow>
+			</md>
+			These relations  yield  the following relation.
+			<men xml:id="eq-refraction-spherical-1">
+				\frac{n_1}{p} + \frac{n_2}{q}  = \frac{n_2 - n_1}{R}. 
+			</men>
+ 
+		</p>
+		<subsubsection><title>First and Second Focal Points</title>
+			<p>
+				<xref ref="fig-refraction-first-focal-point-convex-surface"/> shows that there exists a special point <m>\text{F}_1</m> in medium <m>n_1</m> such that if you place a point object there, light passing through the convex surface becomes parallel in medium <m>n_2</m>. This means the image of a such a source is at infinity, i.e., <m>q=\infty</m>. Point <m>\text{F}_1</m>  is called <term>first focal point</term>.
+			</p>
+		 	<figure xml:id="fig-refraction-first-focal-point-convex-surface">
+	 			<caption>
+	 				   First focal point <m>\text{F}_1</m> for a convex spherical surface with <m>n_2 \gt n_1</m>.
+	 			</caption>
+					<image source="./images/image-formation/refraction-first-focal-point-convex-surface.png" width="80%"/> 
+			</figure>
+			<p>
+				With <m>q=\infty</m>, <m>p</m> in Eq. <xref ref="eq-refraction-spherical-1"/> will be equal to first focal length <m>f_1</m>, which is the distance from vertex V to the first focal point <m>\text{F}_1</m>.
+				<me>
+					\frac{n_1}{f_1} + \frac{n_2}{\infty}  = \frac{n_2 - n_1}{R}.
+				</me>
+				Therefore,
+				<men>
+					f_1 = \frac{n_1}{n_2 - n_1}\, R.
+				</men>
+			</p>
+
+			<p>
+				<xref ref="fig-refraction-second-focal-point-convex-surface"/> shows that there exists another special point <m>\text{F}_2</m> in medium <m>n_2</m> such that if
+				you place the object very far away such that the rays from the object striking the convex surface can be considered to be parallel, e.g., source can be sunlight from the Sun. Then, we find that these rays, pass through point <m>\text{F}_2</m>  and continue. This means the image of a such a source at infinity <m>p=\infty</m>, is at the second focal point, i.e., <m>q=f_2</m>. Point <m>\text{F}_2</m> is called <term>second focal point</term> and distance of  <m>\text{F}_2</m> from the vertex is called the <term>second focal length</term>.
+			</p>
+		 	<figure xml:id="fig-refraction-second-focal-point-convex-surface">
+	 			<caption>
+	 				   Second focal point <m>\text{F}_2</m> for a convex spherical surface with <m>n_2 \gt n_1</m>.
+	 			</caption>
+					<image source="./images/image-formation/refraction-second-focal-point-convex-surface.png" width="80%"/> 
+			</figure>
+			<p>
+				With <m>p=\infty</m>, <m>q=f_2</m> in Eq. <xref ref="eq-refraction-spherical-1"/> gives
+				<me>
+					\frac{n_1}{\infty} + \frac{n_2}{f_2}   = \frac{n_2 - n_1}{R}.
+				</me>
+				Therefore,
+				<men>
+					f_2 = \frac{n_2}{n_2 - n_1}\, R.
+				</men>
+			</p>
+		</subsubsection>
+    </subsection>
+
+
+    <subsection><title>Refraction at a Concave Surface</title>
+    	<p>
+    		Consider a point source P in front of a concave surface of the medium <m>n_2 \gt n_1</m> as shown in <xref ref="fig-refraction-at-concave-surface-image-formation"/>.  You may think of oint P being in air and the concave surface of glass if you like.
+    	</p>
+    	<p>
+    		Unlike the case of refraction of rays at the convex surface, here, refracted rays, say, BD and VA diverge away from each other.  Therefore they will not cross at any real image point. to find the image we extend refracted rays VA and BD backwards form then to meet at a point Q which is the <term>virtual image</term> of point P. Once again, we measure all distances from the vertex V. Thus VP is the object distance <m>p</m>, VQ the image distance <m>q</m> and VC the radius of curvature <m>R</m>.
+    	</p>
+	 	<figure xml:id="fig-refraction-at-concave-surface-image-formation">
+ 			<caption>
+ 				   Refraction at a concave surface with <m>n_2 \gt n_1</m>.
+ 			</caption>
+				<image source="./images/image-formation/refraction-at-concave-surface-image-formation.png" width="80%"/> 
+		</figure>
+ 
+    	<p>
+    		Using the geometry given in <xref ref="fig-refraction-at-concave-surface-image-formation"/>, and the paraxial approximation with <m>\text{EV} \approx 0</m>, one can derive the following relation.  The derivation is left as an exercise for the student to complete.
+    		<me>
+    			\frac{n_1}{p} + \frac{n_2}{-q}  = \frac{n_2 - n_1}{-R}.
+    		</me>
+
+    		This equation for a concave surface is similar in form to  Eq. <xref ref="eq-refraction-spherical-1"/>   of the convex surface.  The only differences are the negative signs with <m>q</m> and <m>R</m>.  If we assume the following sign convention then we can write the same equation for both cases.
+    		<me>
+    			\frac{n_1}{p} + \frac{n_2}{q}  = \frac{n_2 - n_1}{R}\ \ \text{(Sign Convention Required!)}
+    		</me>
+    		<alert> Sign convention  for refraction at spherical surfaces. </alert>
+    		Assume object is on the left of the curved surface.
+    		<ol>
+    			<li>
+    				<m>p</m> positive.
+    			</li>
+    			<li>
+    				<m>q</m> positive if image to the right of the surface and negative when image to the left of the surface.
+    			</li>
+    			<li>
+    				<m>R</m> positive if center of circle falls on the right and negative if center on the left.
+    			</li>
+    		</ol>
+ 
+    	</p>
+    </subsection>
+
+    <subsection><title>Transverse Magnification of Image by Refraction at Spherical Surface</title>
+    	<p>
+    		I will not derive the result here, but if you draw rays from a point that is not on the axis, you can also study the transverse magnification as we did for reflection from spherical surfaces. We get similar results here.
+    	</p>
+    	<p>
+    		Let <m>h_o</m> be the height of the object, <m>h_i</m> be the height of the image, which can be positive or negative, <m>p</m> the object distance, and <m>q</m> the image distance, then transverse magnification <m>m_T</m> has the following relations.
+    		<men>
+    			m_T = \frac{h_i}{h_o} = - \frac{q}{p}.
+    		</men>
+    	</p>
+	</subsection>
+
+	<subsection><title>Apparent Depth Behind Curved Surface</title>
+		<p>
+			Eq. <xref ref="eq-refraction-spherical-1"/> can also be applied to <m>n_2 \lt n_1</m>, e.g., an object in a medium with higher refractive index. For instance, we had the case of fish in water. The radius of curvature in that case is infinity, <m>R=\infty</m> since the surface is planar. This will give the following for the apparent depth, which is the value of <m>q</m> in <xref ref="eq-refraction-spherical-1"/>.
+			<me>
+				\frac{n_1}{p} + \frac{n_2}{q} = 0. 
+			</me>
+			In the fish in water tank example, we have <m>h_o = p</m> and <m>h_i=-q</m> since the image is on the same side as the object. The refractive indices there are <m>n_1=\frac{4}{3}</m> and <m>n_2=1.0</m>.
+			<me>
+				\frac{h_i}{h_o} = \frac{n_2}{n_1} = \frac{3}{4}.
+			</me>
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				What will hapen if the surface was not plane. Suppose, you have dust particle stuck in glass with spherical surface. Suppose, the radius of curvature is <m>5\text{ cm}</m>, and the dust particle is at a distance <m>p=4\text{ cm}</m> from the vertex. The following calculation will give us the distance from the vertex the dust will appear from air. Let <m>n_1=1.5</m> for glass and <m>n_2=1.0</m> for glass.
+			</p>
+			<p></p>
+			<image source="./images/image-formation/refraction-looking-through-a-curved-surface.png" width="80%"/> 
+		</sidebyside>
+
+		<p>
+			<me>
+				\frac{1.5}{4\text{ cm}} + \frac{1.0}{q} = \frac{1.0-1.5}{5\text{ cm}}.
+			</me>
+			Solving for <m>q</m> we get
+			<me>
+				q = -\frac{40}{19}\approx -2.0\text{ cm}.
+			</me>
+			The dust will be at a distance <m>2\text{ cm}</m> from the vertex - still on the glass side since it is negative, meaning same side as the object.
+
+		</p>
+	</subsection>
+
+
+	<exercise xml:id="exercise-Image-by-Refraction-on-a-Concave-Refracting-Surface"><title>Image by Refraction on a Concave Refracting Surface</title>
+
+		<statement>
+			<p>
+				An object is located in air 30 cm from the vertex of a concave surface made of glass with a radius of curvature 10 cm.  Where does the image by refraction form and what are its orientation and magnification? Use <m>n_{\textrm{air}}</m> = 1 and <m>n_{\textrm{glass}}</m>  = 1.5.
+			</p>
+		</statement>
+		<hint><p>Use the formulas derived in this section.</p></hint>
+		<answer><p> <m>q= -18\text{ cm}</m>,; <m>m = +3/5</m>.</p></answer>
+		<solution>
+			<p>
+				In this problem we have
+				<me>
+					R = -10\:\text{cm},\ \ p = 30\:\text{cm},\ \ n_1 = 1,\ \ n_2 = 1.5.
+				</me>
+				Therefore,
+				<me>
+					\dfrac{n_1}{p} + \dfrac{n_2}{q} = \dfrac{(n_2-n_1)}{R}\ \Longrightarrow\ \dfrac{1}{30} + \dfrac{1.5}{q} = \dfrac{(1.5-1)}{-10}.
+				</me>
+				This gives <m>q = -18\:\textrm{cm}</m>.  The magnification of the image would be
+				<me>
+					m_T = \dfrac{h_i}{h_o} = -\dfrac{q}{p} = +\dfrac{3}{5}.
+				</me>
+				Since <m>m_T \gt 0</m> the image has the same orientation as the object.
+			</p>
+		</solution>
+	</exercise>
+
+
+ 
+
+
+
+	<exercise xml:id="exercise-Image-by-Refraction-from-a-Convex-Surface"><title>Image by Refraction from a Convex Surface</title>
+
+		<statement>
+			<p>
+				An object is located in air <m>30\text{ cm}</m> from the vertex of a convex surface made of glass with a radius of curvature <m>80\text{ cm}</m>.  
+			</p>
+			<p> (a)
+				Where does the image by refraction form?
+			</p>
+			<p>
+				(b) What are magnification and orientation of the image relative to the object?  
+
+			</p>
+		</statement>
+		<hint><p> Use the formulas derived in this section.</p></hint>
+		<answer><p><m> (a) q  =  - 55.4\text{ cm}</m>, (b) <m>m_T = +1.85</m>.</p></answer>
+		<solution><title>(a)</title>
+			<p> (a)
+
+				In this problem we have
+				<me>
+					R = +80\:\text{cm},\ \ p = 30\:\text{cm},\ \ n_1 = 1,\ \ n_2 = 1.5.
+				</me>
+				Therefore,
+				<me>
+					\dfrac{n_1}{p} + \dfrac{n_2}{q} = \dfrac{(n_2-n_1)}{R}\ \Longrightarrow\ \dfrac{1}{30} + \dfrac{1.5}{q} = \dfrac{(1.5-1)}{80}.
+				</me>
+				Therefore
+				<me>
+					\dfrac{1.5}{q} = \dfrac{1}{160} - \dfrac{1}{30} = \dfrac{3-16}{480} =  -\dfrac{13}{480}
+				</me>
+				This gives 
+				<me>
+					q = - 1.5\times\dfrac{480}{13} =  -55.4\:\text{cm}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)  
+				Since <m>q\lt 0</m> the image is on the left of the vertex, meaning 550 cm in the air. The magnification of the image would be
+				<me>
+					m_T = \dfrac{h_i}{h_o} = -\dfrac{q}{p} = +1.85.
+				</me>
+				Since <m>m_T \gt 0</m> the image has the same orientation as the object.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+</section>

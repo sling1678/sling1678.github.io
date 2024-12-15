@@ -1,0 +1,288 @@
+<section xml:id="Mechanical-Work-by-Gas"><title> Mechanical Work by Gas </title>
+
+
+	<subsection><title> Mechanical Work</title>
+		
+			<p>
+				Consider a system consisting of a fixed amount of a gas in a cylinder with a movable piston of area <m>A</m>. Let pressure of the gas inside the system be <m>p</m>. The piston is held in place by an external force <m>F</m> that balances the push <m>pA</m> by the gas molecules on the piston (<xref ref="fig-work-on-gas-1"/>).  
+			</p>
+			<p>
+				How much work will the gas do if the piston is pushed out by a distance <m> \Delta x</m>, expanding the gas by a volume <m>\Delta V = A \Delta x</m>?  Work <m> \delta W </m> by gas will be opposite of the work by the external force.
+				<men>
+					\delta W_{\text{by gas}} =  pA\Delta x = p\Delta V. 
+				</men>
+				This is just the area in the <m>(p,V)</m>-plane. As a result of this work, energy of the gas will decrease by this amount.
+			</p>
+				<figure xml:id="fig-work-on-gas-1">
+					<caption> 
+						Calculating work done by a gas against an external agent applying a force <m> F</m>. For a quasistatic process, the applied force <m> F</m> on the piston is kept infintesimally less than the force by the gas so that the gas expands slowly and gently with pressure in gas kept at <m> p</m>.  The expansion process is shown in the horizontal line in <m>(p,V)</m>-plane. The work equals the area <m> p\Delta V</m> under the <m> p </m> line.
+					</caption>
+					<image source="./images/ideal-gas/work-on-gas-1.png" width="70%"/>
+				</figure>
+
+			<p>
+				  <xref ref="fig-work-as-under-curve"/> illustrates the work-from-area-under-the-curve in two situations - (a) an expansion, and (b) a cyclic process. A quasistatic process that leads to an expansion or compression of a material will be represented by a curve in the <m>(p,V)</m>-plane. The area under the curve gives us the total work by the gas - the expansion gives positive work and the compression negative work by the gas.
+			</p>
+			<figure xml:id="fig-work-as-under-curve">
+				<caption> 
+					(a) Mechanical work in a quasistatic process is the area under the <m> p</m> versus <m> V </m> curve of the process of expansion or contraction. (b) If the process is cyclic, it will contain both an expansion phase and a comntraction. The expansion will be positive work by the system and the contraction the negative work. The area enclosed in the cycle in the <m>(p,V)</m>-plane equals the net work in the cyclic process. 
+				</caption>
+				<image source="./images/ideal-gas/work-as-under-curve.png" width="90%"/>
+			</figure>
+
+	</subsection>
+
+			<remark><title> Expanding Against Vacuum</title>
+				<p>
+					<alert> What happens if there is a vacuum outside the gas container  and the container of the gas is punctured so that the gas can freely flow into the vacuum?</alert>
+				</p>
+				<p>
+					In this situation, the gas would not be in a mechanical equilibrium.  Hence, you cannot assign any pressure to the entire gas.  However, since, there would be no force opposing the movement of the gas molecules, the gas molecules would not do any work on any outside body. The molecules will, of course do work on each other if interactions between molecules are significant, which we will ignore for the moment.
+					<men>
+						W_{if} = 0  \ \ \ \text{(expanding in vacuum.)}
+					</men>
+				</p>
+			</remark>
+			<remark><title> Expanding Into a Vacuum</title>
+				<p>
+					<alert> What if we keep gas in the container and let the piston move as gas expands against a vacuum? </alert>
+				</p>
+				<p>
+					The puncturing of the container to let the gas out into the vacuum is different from letting the piston of the gas cylinder move as a result of the pressure differential between inside and outside while keeping the gas inside the enclosed container. Suppose, you create vacuum in the space outside the cylinder of gas while keeping the piston fixed in place. Now, when you release the piston, there would be an imbalance of forces on the piston.
+				</p>
+				<p>
+					 Let the mass of the piston be <m>M</m>.  Then, over the course of expansion of the gas by the amount <m> \Delta V</m>, the piston would have moved <m> \Delta x</m> under the force <m> pA</m>, where <m> A</m> is the area of cross-section of the cylinder.  This would mean that gas would do the work on the piston of the amount <m> p\Delta V</m> causing the piston to accelerate.  The energy lost by the gas would go into changing the kinetic energy of the piston.
+				</p>
+   
+		</remark>
+
+	<exercise xml:id="ex-Path-Dependence-of-Mechanical-Work-by-Gas"><title> Path Dependence of Mechanical Work by Gas </title>
+		<statement>
+			<p>
+				A gas in a cylinder undergoes change from an initial state i to a final state f shown in the figure through three paths, (a) i-a-f, (b) i-b-f, and (c) direct i-f.  Find work done by the gas for each path.
+			</p>
+			<image source="./images/ideal-gas//work-on-gas-3.png" width="70%"/>
+	 
+		</statement>
+		<hint> <p> Use area under <m> p </m> versus <m> V </m> curve to find the work.  </p> </hint>
+		<answer> <p> (a) <m> 3 p_0 V_0</m>, (b) <m> 9 p_0 V_0</m>, (c) <m> 6p_0V_0</m>.  </p> </answer>
+		<solution> 
+			<p> (a) Work on path i-a-f:
+			</p>
+			<p>
+
+				This path has two segments:  i-a and  a-f.  On segment i-a, the volume <m> V </m> does not change, therefore <m> W_{\text{i-a}} =0</m>.    On the segment a-f, the pressure is constant, therefore, the area under the curve is just a product of the constant pressure and the change in volume. Therefore,  work done by the gas
+				<me>
+					W_{\text{i-a-f}} = p_0\times(4V_0 - V_0) = 3 p_0 V_0.
+				</me>
+ 
+			</p>
+
+			<p> (b) Work on path i-b-f:
+			</p>
+			<p>
+
+				This path has two segments:  i-b and  b-f.  On segment i-b, the pressure is constant with value <m> 3p_0</m> and the volume changes from <m> V_0</m> to <m> 4V_0</m>. Therefore,
+				<me>
+					W_{\text{i-b}} = 3p_0 \times 3 V_0 = 9 p_0 V_0.
+				</me>
+				The work done on segment b-f is zero since the volume is constant during this process. Therefore,  work done by the gas
+				<me>
+					W_{\text{i-b-f}} = 9 p_0 V_0.
+				</me>
+				Make note that this is different than what happened on path i-a-f.
+ 
+			</p>
+
+			<p> (c) Work on direct path i-f:
+			</p>
+			<p>
+
+				The area under the curve is that of a rectangle and a triangle. Since the process is an expansion, work by the gas will be positive.
+				<me>
+					W_{\text{i-f}} = \left( p_0\times 3V_0 +\frac{1}{2}\times 2p_0\times 3V_0 \right)=  6p_0V_0. 
+				</me>
+ 
+ 
+			</p>
+
+
+		</solution>
+	</exercise>
+
+ 
+
+
+	<subsection> <title> (Calculus) Mechanical Work by Ideal Gas</title>
+
+		<introduction>
+			<p>
+
+				Consider a system consisting of a fixed amount of an ideal gas in a cylinder with a movable piston of area <m>A</m> as in <xref ref="fig-work-on-gas-1"/>. We now look at work in an infinitesimal expansion, corresponding to the distance <m>dx</m> moved by the piston. Work <m> \delta W </m> by gas will be opposite of the work by the external force.
+				<men>
+					\delta W_{\text{by gas}} =  pA dx = p  dV, 
+				</men>
+				where <m> dV = A dx</m>. If gas expands so that its thermodynamic state changes from <m> (p_i,\, V_i,\, T_i)</m> to <m>(p_f,\, V_f,\, T_f)</m>, we need to sum up work on every infinitesimal change.
+				<me>
+					W_{if} = \int_{i}^{f}\, p dV.
+				</me>
+				For an ideal gas, we have <m> p = nRT/V</m>. This gives
+				<men xml:id="eq-work-by-ideal-gas">
+					W_{if} = nR\int_{i}^{f}\, \dfrac{T}{V} dV.
+				</men >		
+				Here <m> T </m> will also change with <m> V</m> depending on how the change was accomplished, whether the process was isothermal or adiabatic or something else.
+			</p>
+		</introduction>
+		<subsubsection><title> (Calculus) Work by Gas in an Isothermal Process</title>
+			<p>
+				In an isothermal process temperature does not change. Therefore, in Eq. <xref ref="eq-work-by-ideal-gas"/>, the temperature will come out of integral, and then the integration can be easily performed.
+				<men>
+					W_{if} = nRT\int_{i}^{f}\, \dfrac{1}{V} dV = nRT\ln\left( \dfrac{V_f}{V_i}\right).
+				</men>
+			</p>
+		</subsubsection>
+
+		<subsubsection><title> (Calculus) Work by Gas in an Adiabatic Process</title>
+			<p>
+				When a gas expands it loses energy to the environment, consequenctly, the gas cools. In a quasi-static adiabatic process of an ideal gas, pressure and volume change so that 
+				<me>
+					pV^{\gamma} = \text{constant},
+				</me> 
+				where <m>\gamma</m> is ratio of specific heats, namely, <m>\gamma=c_P/c_V</m>, where <m>c_P</m> is specific heat at constant pressure and <m>c_V</m> specific heat at constant volume; specific heat is the amount of energy you need to change the temperature of <m>1\text{ kg}</m> of gthe sample by one degree. For monatomic gas, <m>\gamma=5/3</m>, and for diatomic gas,  <m>\gamma=7/5</m>. Using this as giving us function <m>p(V)</m> on the path in the <m>(p,V)</m>-plane, 
+
+				<me>
+					pV^\gamma = p_i V_i^\gamma,
+				</me>
+				we can express the work integral as:
+				<me>
+					W_{if} = \int_{i}^{f}\, p dV =   p_iV_i^{\gamma}\int_{i}^{f}\, \dfrac{dV}{V^{\gamma}}.
+				</me>				
+				Since <m>\gamma\ne 1</m> we will get
+				<me>
+					W_{if}^{\text{adiabatic}} = \dfrac{p_iV_i^{\gamma}}{1-\gamma}\left( V_f^{1-\gamma} - V_i^{1-\gamma} \right),
+				</me>
+				which simplifies by using <m> p_iV_i^{\gamma} = p_fV_f^{\gamma} </m> to be
+				<men>
+					W_{if}^{\text{adiabatic}} = \dfrac{1}{1-\gamma} \left( p_fV_f - p_i V_i\right).
+				</men>
+			</p>
+		</subsubsection>
+
+
+	</subsection>
+
+
+
+	<exercise xml:id="ex-Work-in-an-Adiabatic-Process"><title>  (Calculus) Work in an Adiabatic Process  </title>
+		<statement>
+			<p>
+				Oxygen gas in a container is compressed along a path that can be described by the following pressure <m>p</m> in atm as a function of volume <m>V</m>, with <m>V_0 = 1\text{ L}</m>.
+				<me>
+					p=(3.0\ \text{atm})\left(V/V_0\right)^{-1.2}.
+				</me> 
+				The initial and final volumes during the process were <m>2\text{ L}</m> and <m>1.5\text{ L}</m> respectively. Find the amount of work done on the gas.
+			</p>
+
+		</statement>
+		<hint> <p> Integrate with a minus sign.  </p> </hint>
+		<answer> <p>  <m>0.77 \ \text{L.atm} = 78\text{ J}</m>. </p> </answer>
+		<solution> 
+			<p>
+				Here the work required is the work on the gas. Therefore, we will calculate the integral with the minus sign.
+				<me>
+					W_\text{on} = - \int p dV.
+				</me>
+				The integral for the given function gives
+				<md>
+					<mrow> W_\text{on} \amp = - \int_{V_1}^{V_2} p dV = - \frac{3.0\ \text{atm} V_0^{1.2}}{-0.2}\left[ \frac{1}{V_2^{0.2}} - \frac{1}{V_1^{0.2}} \right].</mrow>
+				</md>
+				Now, we put in the numerical values of $V_0$,  $V_1$ and $V_2$ to obtain
+				<md>
+					<mrow> W_\text{on} = -\frac{3.0\ \text{atm} (1\ \text{L})^{1.2}}{-0.2} \left[ \frac{1}{(1.5\ \text{L})^{0.2}} - \frac{1}{(2\ \text{L})^{0.2}} \right] =  0.77 \ \text{L.atm}</mrow>
+				</md>
+				Check if the sign is correct - since contraction of the gas, we expect a  positive sign for the work on the gas as found. In terms of <m>\text{J}</m> the answer would be <m>78\text{ J}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Work-in-an-Isobaric-Process"><title>  (Calculus) Work in an Isobaric Process </title>
+		<statement>
+			<p>
+				A cylinder containing three moles of a monatomic ideal gas is heated at a constant pressure of <m>2 \text{ atm}</m>.  The temperature of the gas changes from <m>300\text{K}</m> to <m>350\text{K}</m> as a result of the expansion.  Find work done (a) on the gas, and (b) by the gas.	
+			</p>
+
+		</statement>
+		<hint> <p>  Get <m>V_i</m> and <m>V_f</m> from using ideal gas law and use them in the integral. </p> </hint>
+		<answer> <p> (a) <m>1245\text{ J}</m>, (b) <m>-1245\text{ J}</m>.  </p> </answer>
+		<solution> 
+			<p> (a) 
+				Since the pressure of the gas is constant during the change, the work integral will simply equal the product of the pressure and the change in the volume.
+				<me>
+					W = \int p dV = p \Delta V.
+				</me>
+				So, we need to find the change in the volume to plug into this formula.  From the given data we can find the volumes at the two ends of the process using the ideal gas law for those states.
+				<md>
+					<mrow> \amp V_i = \frac{nR}{p} T_i</mrow>
+					<mrow> \amp V_f = \frac{nR}{p} T_f</mrow>
+				</md>
+				Therefore, the change in the volume is
+				<me>
+					\Delta V = V_f - V_i = \frac{nR}{p} \left( T_f -T_i\right).
+				</me>
+				Now putting this in the work we get work by the gas to be
+				<me>
+					W = p\Delta V = nR \left( T_f -T_i\right).
+				</me>
+				By carrying out the calculation symbolically we find that the pressure cancels out.  This reduces the actual numerical work we need to do.
+				<md>
+					<mrow> W_{by} \amp =  3\ \text{mol}\times 0.082\frac{\text{L.atm}}{\text{mol.K}}\times \left( 350 -300\right)\ \text{K}</mrow>
+					<mrow>  \amp = 12.3 \ \text{L.atm}  = 1250\ \text{J}.</mrow>
+				</md>
+			</p>
+			<p>
+				(b) 
+				Work done by the gas will have the same magnitude as done on the gas but opposite in sign. therefore, we will get <m>-1250\ \text{J}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+	<!-- <exercise><title>  Work in Compressing a Copper Block TODO</title>
+		<statement>
+			<p>
+				A 1500-kg block of solid copper is compressed quasi-statically at a constant temperature of <m>20^{\circ}\text{C}</m> from a pressure of <m>100\text{ kPa}</m> to <m>1,500,000\text{ kPa}</m>.  Given the density of copper to be <m>8930\text{ kg/m}^3</m>, the isothermal compressibility <m>k</m> to be <m>7.16 \times 10^{-12}\text{ Pa}^{-1}</m>, find the amount of work done by the copper block.	
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p>    </p> </answer>
+		<solution> 
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise><title>  Work by Water Vapor TODO</title>
+		<statement>
+			<p>
+				A concrete container has  <m>1.5\times 10^{-3}\text{ m}^3</m> of water at <m>20^{\circ}\text{C}</m> at 1 atmosphere of pressure.  The pressure is increased to <m>1.2\text{ MPa}</m>.  Find the amount of work done by water assuming no change in the concrete container and constant temperature. Use isothermal compressibility of water at <m>20^{\circ}\text{C}</m> to be <m>4.6 \times 10^{-4}\text{ MPa}^{-1}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p>    </p> </answer>
+		<solution> 
+			<p>
+			</p>
+		</solution>
+	</exercise> -->
+
+
+
+
+</section>

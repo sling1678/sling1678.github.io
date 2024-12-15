@@ -1,0 +1,125 @@
+<section xml:id="Non-Conservative-Forces-and-Energy"><title> Non-Conservation of Energy</title>
+	<introduction>
+		<p>
+			<idx><h>Forces</h><h>Nonconservative Forces</h></idx>
+			We found above that if only conservative forces act on a system, then, energy is conserved during its motion. A conservative force was found to have work that has no path-dependence. Work by a non-conservative force, such as drag or friction, <alert> does depend on path</alert>. To handle non-conservative forces in an energy consideration, we separate net work in the work-energy theorem into contributions of conservative and non-conservative forces.
+			<me>
+				W_{if}^{\text{cons}} + W_{if}^{\text{non-cons}} = K_f - K_i,
+			</me>
+			where the superscript <q> cons </q> refers to the conservative part and <q> non-cons </q> to the non-conservative part.  
+			We know that the work by conservative forces will be equal to the difference of initial and final potential energies.
+			<me>
+				\sum U_i - \sum U_f + W_{if}^{\text{non-cons}} = K_f - K_i,
+			</me>
+			where <m> \sum U </m> stands for the sum of potential energies from all the conservative forces involved, not just one.	Now, we can send the <m>U</m>'s to the right side, where we bundle them with the corresponding kinetic energy term.
+			<me>
+				  W_{if}^{\text{non-cons}} = \left(K_f + \sum U_f\right) - \left(K_i+\sum U_i\right).
+			</me>			
+		</p>
+		<p>
+			<idx><h>Energy</h><h>Non-conservation of Energy</h></idx>
+			<idx>Non-conservation of Energy</idx>
+			The <m> \left( K + \sum U \right)</m> is energy, so we replace it by <m> E </m>, the symbol for energy, and rewrite this equation as
+			<men xml:id="eq-conservation-of-mechanical-energy">
+				  W_{if}^{\text{non-cons}} = E_f - E_i.
+			</men>
+			That is, any change in energy, either increase or decrease, comes from the work by the nonconservative forces. 	Sometimes, we call this the <alert> general principle of conservation of energy</alert>.	
+		</p>
+
+	<example xml:id="The-Impact-of-Drag-Force-on-the-Energy-of-a-Skier-Going-Down-a-Slope"><title> The Impact of Drag Force on the Energy of a Skier Going Down a Slope </title>
+
+		<statement>
+			<p>
+				A <m>70\text{-kg}</m> skier starts from rest on top of a <m>40\text{ m}</m> high hill. When he reaches the bottom of the hill he is going at <m>20\text{ m/s}</m>. How much energy has he lost to air and friction?
+			</p>
+		</statement>
+		<!-- <hint> <p>  Find <m>\Delta E = E_f - E_i</m>. </p> </hint> -->
+		<answer> <p>  <m>13,500\text{ J} </m>. </p> </answer>
+		<solution> 
+			<p>
+				We look at the difference in energy.
+				<md>
+					<mrow> \Delta E \amp = (K_f + 0) - (0 +U_i) =\dfrac{1}{2}m\,v_f^2 - m\,g\,h_i </mrow>
+					<mrow>   \amp =  \dfrac{1}{2}\times 70\times 20^2  - 70\times 9.81\times 40 = -13,500\text{ J}, </mrow>
+				</md>
+				where I have rounded off the answer to 3 digits. The negative value of <m> \Delta E</m> means a loss in energy. This is the work done by the nonconservative forces, which are air drag and friction.
+			</p>
+		</solution>
+	</example>
+
+
+	</introduction>
+
+	<exercises>
+
+	<exercise xml:id="ex-Determining-Energy-Conservation-in-Motion-of-a-Skydiver"><title> Determining Conservation of Energy in the Motion of a Skydiver</title>
+
+		<statement>
+			<sidebyside widths="65% 35%">
+				<p>
+					A sky diver exits an air plane at almost zero speed.  He falls a distance of <m>50\text{ m}</m>.  His speed at that point is <m>10\text{ m/s}</m>.  Show calculations to decide if his energy is conserved or not.
+				</p>
+				<image source="./images/energy/nce-skydiver-losing-energy.png" width="50%"/>
+			</sidebyside>
+			
+		</statement>
+		<hint> <p>  Find the sign of <m> \Delta E</m>. </p> </hint>
+		<answer> <p> Not conserved  </p> </answer>
+		<solution> 
+			<p>
+				We compare energy at the later instant with the energy when the skydiver fell from the plane.
+				<md>
+					<mrow>\Delta E \amp = E_f - E_i = (K_f + 0) - (0 +U_i) </mrow>
+					<mrow> \amp = m\left(  \dfrac{1}{2}\times 10^2 - 9.81\times 50 \right) = -440.5\, m\lt 0.</mrow>
+				</md>
+				This says that the skydiver lost energy in his motion. That is, the energy of skydiver is not conserved.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<!-- <exercise xml:id="ex-Determining-Energy-Conservation-in-Motion-of-a-Bottle-Rocket"><title> Determining Energy Conservation in Motion of a Bottle Rocket NOAnswer </title>
+
+		<statement>
+			<p>
+				A bottle rocket is  shot straight up in the air with a speed <m> 30\text{ m/s}</m>. The rocket goes up to only <m> 35\text{ m}</m>  before returning to the ground.  How much energy was lost to the air resistance?
+			</p>
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p>   </p> </answer>
+		<solution> 
+			<p>
+			</p>
+		</solution>
+	</exercise> -->
+
+
+
+
+	<exercise xml:id="ex-Power-Needed-to-Overcome-Friction"><title> Power Needed to Overcome Friction  </title>
+		<statement>
+			<p>
+				A crate is being pushed across a rough floor surface.  If no force is applied on the crate, the crate will slow down and come to a stop. The friction is such that if the crate of mass <m> 50 \text{ kg}</m> moving at speed <m> 8 \text{ m/s}</m> comes to rest in <m>10 \text{ sec}</m> at constant deceleration. You need to continue to push on the crate if you want the motion to continue at constant speed <m> 8\text{ m/s}</m>. What would be the work done by your force in one second, also called power of the force?  
+			</p>
+
+		</statement>
+		<hint> <p> In one second, the displacement <m> d = v</m>. </p> </hint>
+		<answer> <p> <m> 320 \text{ J/s}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				From the data on deceleration, we find that the friction force is
+				<me>
+					F_k = 50 \text{ kg}\times \dfrac{ 8 \text{ m/s} - 0 }{10 \text{sec}} = 40\text{ N}.
+				</me>
+				We need to supply the energy at the rate equal to the rate at which energy is removed by this friction force. The distance traveled in <m>1\text{ sec}</m> will be equal to <m>v</m>. Therefore, work per second, i.e., power <m>P</m>, will be
+				<me>
+					P = F_k\times v = 40\text{ N} \times 8\text{ m/s} = 320\text{ J/s}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 	</exercises>
+
+</section>

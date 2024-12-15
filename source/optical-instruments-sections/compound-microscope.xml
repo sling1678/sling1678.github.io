@@ -1,0 +1,147 @@
+<section xml:id="section-compound-microscope"><title> Compound Microscope </title>
+	<introduction>
+        <p>
+        	We saw above that a simple convex lens can give magnified image when used as a magnifying glass.  However, a magnification more than <m>5\times</m> is difficult to get this way without introducing significant distortion in the image. To get larger  magnification, we combine the simple magnifying glass with one or more lens. Such arrangements are called <term>compound microscope</term>.
+        </p>
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+
+		        <p>
+		        	The simplest compound microscope will contain two convex lenses, an <term> objective</term> and an <term> eyepiece</term> or <term> ocular</term>, as illustrated in <xref ref="fig-compound-microscope"/>.  The objective is a convex lens facing the physical object we wish to view and the eyepiece is the lens closest to the eye. 
+		        </p>
+		        <p>
+		        	The task of the objective is to form a magnified real image at a point that is within a focal length of the eyepiece. This way, we would present a larger object for the eyepiece to further magnify in the same way a magnifying glass works as explained in <xref ref="section-magnifying-glass"/>.
+		        </p>
+	        	<p>
+        			Hence, we place the specimen a little bit outside of the first focal point of the objecive and arrange the lenses so that a magnified real image by the objective lens is formed inside the focal length of the eyepiece.  The image by the eyepiece is therefore a magnified virtual image for eye to look at.
+        		</p>
+	    	</p>
+	    	<p> </p>
+	        <figure xml:id="fig-compound-microscope">
+	        	<caption>
+	        		Compound microscope. The specimen forms a magnified real image at distance <m>q_0</m> from the objective. This real image is object for the eyepiece, which forms magnified virtual image. This virtual image forms object for the eye, which forms a real image at the retina.
+	        	</caption>
+	        	<image source="./images/optical-instruments/compound-microscope.png" width="100%"/> 
+	        </figure> 
+	    </sidebyside>   	
+
+
+<!--         <p>
+        	 The magnification of the microscope comes from the product of magnification by the objective $m_o$ and the angular magnification $M$ by the eyepiece/eye system.
+\begin{align}
+\amp m = -\frac{q_o}{p_o} \approx  -\frac{q_o}{f_o}\ \ \textrm{(linear magnification by objective)}\\
+\amp M =1+\frac{25\ \textrm{cm}}{f_e}\ \ \ \textrm{(angular magnification by eyepiece/eye)}
+\end{align}
+where $f_o$ and $f_e$ are the focal lengths of the objective and the eyepiece respectively.  Note that the angular magnification from the eyepiece/eye system is same as obtained above for the simple magnifying glass.  This is not a surprise since the eyepiece/eye system is identical to the viewing through a magnifying glass, and the same physics would apply here. 
+
+The {\bf net magnification} $M$ of the compound microscope\index{Magnification!Compound microscope} will be the product of the linear magnification of the objective and the angular magnification of the eyepiece/eye:
+\begin{equation}
+M_{net} = - \frac{q_o\left(f_e + 25\ \textrm{cm} \right)}{f_o f_e}.
+\end{equation} 
+
+        </p> -->
+    </introduction>
+    <subsection><title>Magnification of a Compound Microscope</title>
+    	<p>
+    		<xref ref="fig-compound-microscope-optics-parameters"/> shows image formation by the two lenses and various distances involved. The object, i.e., the speciment is at OP of height <m>h_\text{o}</m>. The objective forms a real image of height <m>h_\text{int}</m> at <m>\text{I}_\text{o}\text{Q}_\text{o}</m> with magnification <m>m_\text{obj}</m> given by
+    		<me>
+    			m_\text{obj} = \frac{h_\text{int}}{h_\text{o}} = -\frac{q_\text{o}}{p_\text{o}}.
+    		</me>
+    		Usually, for max magnification from the objective, the speciment is very small distance greater than the focal length of the objective, <m>f_\text{o}</m>.
+     		<me>
+    			m_\text{obj} \approx -\frac{q_\text{o}}{f_\text{o}}.
+    		</me>
+    		This number is usually referred to some number X on the objective of the microscope. For instance, <m>50\text{X}</m> objective means you have <m>m_\text{obj} = 50</m>.
+    	</p>
+    	<p>
+    		We now look at this real image <m>\text{I}_\text{o}\text{Q}_\text{o}</m> using the eyepiece as a magnifying glass. Let <m>n_p</m> denote the distance to the near point of the eye. The magnification of the magnifying glass was done by angular magnification.
+    		<me>
+    			M_\text{eyepiece/eye} = 1 + \frac{n_p}{f_e}.
+    		</me> 
+    		This number is usually referred to some number X on the eyepiece of the microscope. For instance, <m>10\text{X}</m> eyepiece means you have <m>M_\text{eyepiece/eye}=10</m>.
+    	</p>
+
+    	<p>
+    		Multiplying these two sources of magnification gives us the magnification of the microscope, which will be the angular magnification.
+    		<men xml:id="eq-compound-microscope-magnification-formula">
+    			M_\text{microscope} = m_\text{obj} \times M_\text{eyepiece/eye} = -\frac{q_\text{o}\left(f_\text{e} + n_p \right)}{ f_\text{o} f_\text{e}}.
+    		</men>
+    		Thus, if you have a <m>50\text{X}</m> objective and a <m>10\text{X}</m> eyepiece, you will get a microscope that has <m>500\text{X}</m> magnification. The magnification of the microscope is sometimes referred to as the <term>magnifying power</term>.
+    	</p>
+    	<p>
+  			We can multiply the size of the specimen <m>h_\text{o}</m> with this <m>M</m> of the microscope to get the apparent size of the image perceived.
+  			<me>
+  				\text{Height Perceived} = M_\text{microscope}\ h_\text{o}.
+  			</me>
+    	</p>
+    	<figure xml:id="fig-compound-microscope-optics-parameters">
+    		<caption>
+    			Optical parameters for image formation and magnification calculations of a compound microscope.
+    		</caption>
+    		<image source="./images/optical-instruments/compound-microscope-optics-parameters.png" width="100%"/>
+    	</figure>
+    	
+    </subsection>
+
+
+	<exercise xml:id="exercise-Perceived-Size-of-a-Microscopic-Specimen-in-a-Compound-Microscope"><title>Perceived Size of a Microscopic Specimen in a Compound Microscope</title>
+
+		<statement>
+			<p>
+				The objective and eyepiece of a compound microscope have focal lengths <m>2.5\text{ cm}</m> and <m>10.0\text{ cm}</m> respectively.  You use this microscope to observe a <m>70\, \mu\text{m}</m> specimen placed <m>3.0\text{ cm}</m> from the objective. Assuming your near point is <m>25\text{ cm}</m> from your eye, how large is would be the image you would perceive?
+			</p>
+		</statement>
+		<hint><p>Work out the magnification first. Since <m>p_\text{o}\ne f_\text{o}</m>, its best to find magnification of the objective by using <m>m=-q/p</m>. </p></hint>
+		<answer><p> <m>1.23\text{ mm}</m>.  </p></answer>
+		<solution>
+			<p>
+				We need to find <m>q_0</m> to find the magnification. We do that from the lens equation applied to the objective.
+				<md>
+					<mrow> q_\text{o} \amp = \frac{p_\text{o}\, f_\text{o}}{p_\text{o} - f_\text{o}} </mrow>
+					<mrow>   \amp = \frac{3 \times 2.5}{3- 2.5} = 15\text{ cm}.</mrow>
+				</md>
+				This gives objective to be magnifying by a factor of 
+				<me>
+					m_\text{obj} = - q_\text{o}/p_\text{o} = -5.
+				</me>
+				That is the objective is <m>5\times</m>. The magnification of the eyepiece/eye is
+				<me>
+					M_\text{eyepiece} = 1 + \frac{n_p}{f_\text{e}} = 1 + \frac{25\text{ cm}}{10\text{ cm}} = 3.5.
+				</me>
+				That is the eyepiece is <m>3.5\times</m>. Now, we multiply the two to get
+				Therefore,
+				<md>
+					<mrow> M_\text{microscope} \amp = -5\times 3.5 = -17.5. </mrow>
+				</md>
+				Therefore, the size perceived will be <m>70\times 17.5</m> <m>= 1225\,\mu\text{m}</m> <m> = 1.23\text{ mm}</m>.
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="exercise-Thickness-of-Hair-from-Magnification-and-Apparent-Thickness"><title>Thickness of Hair from Magnification and Apparent Thickness</title>
+
+		<statement>
+			<p>
+				A hair is viewed in a microscope with a <m>20\text{X}</m> object and a <m>5\text{X}</m> eyepiece. The hair appears to to be <m>5\text{ mm}</m> thick. What is the actual thickness of the hair.
+			</p>
+		</statement>
+		<hint><p>Divide by the magnification of the microscope.</p></hint>
+		<answer><p><m>0.05\text{ mm}</m>.</p></answer>
+		<solution>
+			<p>
+				The magnifying power of the microscope is
+				<me>
+					M_\text{microscope} = 20 \times 5 = 100.
+				</me>
+				Therefore, the sample thickness must be
+				<me>
+					t = \frac{t_\text{appear}}{M} = \frac{5\text{ mm}}{100} = 0.05\text{ mm}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+</section>

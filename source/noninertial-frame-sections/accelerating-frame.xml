@@ -1,0 +1,665 @@
+<section xml:id="sec-accelerating-frame"><title> Accelerating Frame </title>
+
+	<introduction>
+		<p>
+
+		</p>
+	</introduction>
+	<subsection><title>Kinematics in Accelerating Frame</title>
+	<idx><h>Accelerating Frame</h><h>Kinematics</h></idx>
+		<p>
+			In this section I will define position, velocity, and acceleration with respect to an accelerating frame. We will also find relation between same quantities with respect two frames.
+		</p>
+
+		<p>
+			As usual, <term>position vector</term> is the displacement vector from the origin of a frame to the current position as shown by <m>\vec r</m> and <m>\vec r'</m> in <xref ref="fig-noninertial-frame-two-frames"/>, which are positions of a particle with respect to non-accelerating and accelerating frames, respectively. Let <m>\vec R</m> denote vector from origin <m>O</m> of the non-accelerating frame to origin <m>O'</m> of the accelerating frame. From the triangle of vectors we have
+
+			<men xml:id="eq-two-frames-1">
+				\vec r = \vec R + \vec r^{\prime}.
+			</men>
+		</p>
+			<figure xml:id="fig-noninertial-frame-two-frames">
+				<caption>
+					Position vectors of a point mass in two frames.
+				</caption>
+				<image source="./images/noninertial-frame/two-frames.png" width="80%"/>
+			</figure>
+		<p>
+			The velocity <m>\vec V</m> and acceleration <m>\vec A</m> of the accelerating frame with respect to the non-accelerating frame are simply the velocity and acceleration of origin <m>O'</m>  of the accelerating frame, and can be obtained by successively taking time derivatives of vector  <m>\vec R</m>.
+			<mdn>
+			 	<mrow xml:id="eq-two-frames-2"> \amp \vec V = \frac{d\vec R}{dt}\label{} </mrow>
+			 	<mrow xml:id="eq-two-frames-3">\amp \vec A = \frac{d\vec V}{dt} = \frac{d^2\vec R}{dt^2}</mrow>
+			</mdn>
+			The velocity <m>\vec v'</m>  of the particle with respect to the accelerating frame is simply the rate at which position <m>\vec r'</m>  of the particle changes with time.
+			<men xml:id="eq-two-frames-4">
+				\vec v^{\prime} = \frac{d\vec r^{\prime}}{dt}.
+			</men>
+			Similarly, the acceleration <m>\vec a^{\prime}</m>  of the particle with respect to the accelerating frame is simply the rate at which velocity <m>\vec v^{\prime}</m>   of the particle with respect to the same frame changes with time.
+			<men xml:id="eq-two-frames-5">
+				\vec a^{\prime} = \frac{d\vec v^{\prime}}{dt}.
+			</men>
+			Now, by  taking successive derivatives of both sides of Eq. <xref ref="eq-two-frames-1"/>  with respect to time gives us the relation between velocity and acceleration of a particle in an in an inertial and a non-inertial frame.
+			<mdn>
+			 	<mrow xml:id="eq-two-frames-6"> \amp \vec v = \vec V + \vec v^{\prime}.</mrow>
+			 	<mrow xml:id="eq-two-frames-7">\amp \vec a = \vec A + \vec a^{\prime}.</mrow>
+			</mdn>
+
+		</p>
+	</subsection>
+	<subsection><title>Newton's Second Law in Accelerating Frame</title>
+
+	<idx><h>Accelerating Frame</h><h>Second Law</h></idx>
+		<p>
+			Newton's second law of a point particle of mass <m>m</m> in an inertial frame is given by
+			<me>
+				\vec F = m\vec a
+			</me>
+			where <m>\vec F</m> is the net force on the particle and <m>\vec a</m>  the acceleration.  This equation remains the same in all inertial frames, which are frames that have constant velocity with respect to each other.  Now, we wish to find the corresponding equation of motion if the particle's motion is observed from an accelerating frame.  Let <m>\vec a^{\prime}</m>  be the acceleration of the particle as observed from an accelerating frame.  Let the acceleration of the accelerating frame  with respect to the inertial frame be <m>\vec A</m> .  By substituting Eq. <xref ref="eq-two-frames-7"/> from the last section, we find that the following relation holds.
+			<me>
+				\vec F -m\vec A = m\vec a^{\prime}.
+			</me>
+
+			Thus, in an accelerating frame one needs to add <m>(-m\vec A)</m>  to the real net force <m>\vec F</m>  to equate the <q>corrected force</q> to mass times acceleration in that frame. 
+
+		</p>
+		<p>
+			The quantity  <m>(-m\vec A)</m>   acts like an additional force on the mass <m>m</m>, and is called a <term> fictitious force</term>  or <term>inertial force</term>  to distinguish it from the <q>real force</q>  <m>\vec F</m>. 
+		</p>
+		<p>
+			In the accelerating frame the inertial forces are felt the same way as real forces except there is no agent that applies them. The inertial force in a uniformly accelerating frame acts just like the gravitational force since it is proportional to mass.  This observation led Albert Einstein to develop an alternate theory of gravitation called the general theory of relativity.
+		</p>
+	</subsection>
+
+
+ 	<example xml:id="ex-Describing-Motion-in-an-Accelerating-Frame-Runners"><title>Describing Motion in an Accelerating Frame</title>
+
+		<statement>
+			<p>
+				Two friends John and Jane observe the location of a building from their own frames which are accelerating with respect to each other.
+			</p>
+			<sidebyside widths="50% 50%">
+				<p>
+					In Jane's frame John has a constant acceleration <m>\vec A</m> whose direction makes an angle <m>\theta</m> with respect to the direction of the building. Let the building be at a distance <m>R</m> from Jane who is fixed to the Earth. 
+				</p>
+				<figure xml:id="fig-accl-frame-runner-accl">
+					<caption>
+						<!-- For <xref ref="ex-Describing-Motion-in-an-Accelerating-Frame-Runners"/>. -->
+					</caption>
+					<image source="./images/noninertial-frame/runner-accl.png" width="60%"/>
+				</figure>
+			</sidebyside>
+			<P>
+				Suppose at <m>t=0</m>, John and Jane were at the same location and their relative velocity was zero.
+				(a) Draw a figure in Jane's frame showing a choice of coordinates for both John and Jane supposing that the position vector of the building and acceleration vector <m>\vec A</m> are in the <m>xy</m>-plane.  You can also take the <m>x</m>-axis to be the direction of vector <m>\vec A</m>.
+				(b) Deduce the relation between the coordinates of the building in the two frame at an arbitrary time?
+				(c) Describe the motion of the building in the two frames.
+			</P>
+
+		</statement>
+		<!-- <hint><p>Study definitions.</p></hint> -->
+		<answer><p>
+			See solution.
+		</p></answer>
+		<solution><title>a</title>
+			<p>
+				The following figure is drawn in the frame of Jane.  The position of John is shown at point <m>O'</m>.
+			</p>
+			<figure xml:id="fig-accl-frame-runner-accl-a-sol">
+				<caption>
+					For <xref ref="ex-Describing-Motion-in-an-Accelerating-Frame-Runners"/>.
+				</caption>
+				<image source="./images/noninertial-frame/runner-accl-a-sol.png" width="90%"/>
+			</figure>
+			<p>
+				Here <m>x</m> is the coordinate of John at instant <m>t</m>. Since <m>O'</m> moves at a constant acceleration with respect to <m>O</m> and the initial speed of <m>O'</m> was zero at time <m>t=0</m>, the constant acceleration equation gives
+				<me>
+					x = \frac{1}{2} A t^2.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				The position of the building B in <m>Oxyz</m> frame is clear from the picture.
+				<md>
+					<mrow> \amp  x_B = R\cos\theta.</mrow>
+					<mrow> \amp  y_B = R \sin\theta.</mrow>
+				</md>
+				The position of the same building with respect to <m>O'</m> will be
+				<md>
+					<mrow> \amp  x_B^{\prime} = x_B - x = R\cos\theta - \frac{1}{2}At^2.</mrow>
+					<mrow> \amp  y_B^{\prime} = y_B = R \sin\theta.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>c</title>
+			<p>
+				In frame <m>Oxyz</m> the building is at rest, but in frame <m>O'xyz</m> is not at rest as given by the time-dependence of its <m>x</m>-coordinate <m>x_B</m>.
+
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="ex-Apparent-Weight-in-an-Elevator"><title>Apparent Weight in an Elevator</title>
+	<idx>Apparent Weight</idx>
+		<statement>
+			<p>
+				As an example of an accelerating frame, consider a person in an elevator that is accelerating with respect to the ground with acceleration <m>A</m> pointed up. Suppose the person is stands on a weighing scale in the elevator. 
+			</p>
+			<p>
+				(a) What will be the reading in the scale as observed by the person in the elevator? Note that the scale gives the value of normal force on the scale.
+			</p>
+			<p>
+				Suppose there is another observer outside the elevator and at rest with the ground. (b) What will be the value of the normal force by this observer?
+			</p>
+		</statement>
+		<solution><title>a</title>
+
+			<p> <alert>Elevator frame.</alert> </p>
+			<p>
+				
+			</p>
+			<sidebyside widths="70% 5% 25%">
+				<p>
+					This is non-inertial frame when the elevator has non-zero acceleration <m>\vec A</m>  with respect to the ground. In this frame the real forces on the person are gravity (<m>Mg</m>, down) and normal (<m>N</m> unknown, up) as shown in <xref ref="fig-noninertial-frame-accl-elevator-2"/>. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-noninertial-frame-accl-elevator-2">
+					<caption>
+					</caption>
+					<image source="./images/noninertial-frame/accl-elevator-2.png" width="80%"/>
+				</figure>				
+			</sidebyside>
+			<p>
+				 In this frame need to subtract <m>M\vec A</m>, from real forces to get the net force on the person as shown in the figure.  Also, person is at rest in this frame, hence <m>a'=-</m>. Therefore, vertical component of Newton's second law gives
+				 <me>
+				 	N-Mg - MA = 0.
+				 </me>
+				 Hence, reading in the scale will be
+				 <me>
+				 	N = M(g+A).
+				 </me>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p> <alert>Ground-based frame.</alert> </p>
+			<p>
+				
+			</p>
+			<sidebyside widths="70% 5% 25%">
+				<p>
+					In this frame forces on the person are gravity (<m>Mg</m>, down) and normal (<m>N</m> unknown, up) as shown in <xref ref="fig-noninertial-frame-accl-elevator-2"/>. And person has acceleration <m>a=A</m> pointed up. Hence, Newton's second law will give
+					 <me>
+					 	N-Mg = MA.
+					 </me>
+				</p>
+				<p></p>
+				<figure xml:id="fig-noninertial-frame-accl-elevator">
+					<caption>
+					</caption>
+					<image source="./images/noninertial-frame/accl-elevator.png" width="80%"/>
+				</figure>				
+			</sidebyside>
+			<p>
+
+				 Therefore, reading in the scale will be
+				 <me>
+				 	N = M(g+A).
+				 </me>
+				 This is same as we found in (a).
+			</p>
+		</solution>
+	</example>
+
+
+
+	<example xml:id="ex-Pendulum-in-an-Accelerating-Train"><title>Pendulum in an Accelerating Train</title>
+		<statement>
+			<p>
+				As a second example, consider a pendulum of mass <m>M</m> hanging from the ceiling of a train.  When the train is at rest or coasting at a constant velocity, the pendulum hangs vertically.  But when the train is accelerating the bob hangs at an angle <m>\theta</m> to the vertical.  We wish to find this angle when the train's acceleration is <m>\vec A</m>.  We will do this problem in two frames to illustrate a non-accelerating frame and an accelerating frame shown in <xref ref="fig-noninertial-frame-pendulum-in-car"/>.
+			</p>
+				<figure xml:id="fig-noninertial-frame-pendulum-in-car">
+					<caption>
+						Example <xref ref="ex-Pendulum-in-an-Accelerating-Train"/>. Free-body diagrams in (a) inertial and (b) non-inertial frames.  Note the additional inertial force on the bob in the accelerating frame.
+					</caption>
+					<image source="./images/noninertial-frame/pendulum-in-car.png" width="80%"/>
+				</figure>	
+
+
+			<p>
+				Equations of motion in the ground-based frame (<m>\vec a \ne 0</m>):
+				<md>
+					<mrow> \amp x\text{-component: }\ \ 	T\sin\theta = MA </mrow>
+					<mrow> \amp y\text{-component: }\ \ 	T\cos\theta-Mg=0 </mrow>
+				</md>
+				Equations of motion in the train-based frame (<m>\vec a' = 0</m>):
+				<md>
+					<mrow> \amp x\text{-component: }\ \ 	T\sin\theta - MA=0</mrow>
+					<mrow> \amp y\text{-component: }\ \ 	T\cos\theta-Mg=0</mrow>
+				</md>
+				Note that the two frames yield identical relations for the equations of motion.  Both frames will yield the same value for the real forces such as the tension in the string.
+			</p>
+
+		</statement>
+	</example>
+
+	<exercises>
+
+
+
+
+	<exercise xml:id="ex-Box-on-an-Accelerating-Truck"><title>Box on an Accelerating Truck</title>
+
+		<statement>
+			<p>
+				A box sits on a rubber floor in a truck.  The driver starts the truck and increases the acceleration steadily from zero to <m>5\ \textrm{m/s}^2</m> in 2 seconds.  If the coefficient of static friction between the box and the rubber floor is 0.2, determine if the box will slide, and if so, at what acceleration?  Do this problem in the frame of the truck.
+			</p>
+		</statement>
+		<hint><p>
+			Frame of truck is accelerating with respect to the ground.
+		</p></hint>
+		<answer><p>
+			The box will not slide.
+		</p></answer>
+		<solution>
+			<p>
+				In the frame of the truck, the acceleration of the box is zero when it does not slide, but the box has an additional fictitious force <m>-m\vec A</m>, where <m>\vec A</m> is the acceleration of the truck with respect to the ground.  Let the <m>x</m> axis point in the direction of <m>\vec A</m> and the <m>y</m>-axis vertical.  Then, the <m>x</m>- and <m>y</m>-components of the equation of motion of the box in the truck frame will be
+				<md>
+					<mrow> \amp \mu_s F_N - m A \ge 0\ \ \textrm{(if the box does not slide using }F_{s}^{\textrm{max})}</mrow>
+					<mrow> \amp F_N - mg = 0.</mrow>
+				</md>
+				The given data has <m>mA = 5\ m</m> and <m>\mu_s F_N</m> = <m>0.2\times 9.81\ m</m> <m> = 19.62\ m</m>.  Therefore, we do have <m>\mu_s F_N > m A</m>.  Hence, the box will not slide.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Motion-of-a-Particle-in-Accelerating-Frame"><title>Motion of a Particle in Accelerating Frame</title>
+
+		<statement>
+			<p>
+				The coordinates of a particle in space from two frames <m>Oxyz</m> and <m>O'x'y'z'</m> are related as follows.
+				<md>
+					<mrow>\amp x' = x + (5\ \textrm{m/s})\ t</mrow>
+					<mrow>\amp y' = y + (5\ \textrm{m/s})\ t+ (2\ \textrm{m/s}^2)\ t^2</mrow>
+					<mrow>\amp z' = z</mrow>
+				</md>
+				(a) Describe the relative motion of the two frames with respect to each other. 
+				(b) If a particle has a constant velocity  with respect to <m>Oxyz</m> with components <m>(2\ \textrm{m/s},0,0)</m>, what are the velocity and acceleration of this particle with respect to <m>O'x'y'z'</m>?  
+				(c)  If a particle has a constant velocity  with respect to <m>O'x'y'z'</m> with components <m>(2\ \textrm{m/s},0,0)</m>, what are the velocity and acceleration of this particle with respect to <m>Oxyz</m>?
+			</p>
+		</statement>
+		<hint><p>
+			Definition.
+		</p></hint>
+		<answer><p>
+			See solution.
+		</p></answer>
+		<solution><title>(a)</title>
+			<sidebyside widths="70% 30%">
+				<p>
+					(a) The figure shows that the relative motions of the two frames is in the vector <m>\vec R</m> given by
+					<me>
+						\vec R = \vec r - \vec r^{\prime}.
+					</me>
+					The <m>X</m>, <m>Y</m> and <m>Z</m>-coordinates of <m>O'</m> with respect to <m>O</m> are given in the problem.
+				</p>
+				<figure xml:id="fig-particle-in-accl-frame-sol">
+					<caption></caption>
+					<image source="./images/noninertial-frame/particle-in-accl-frame-sol.png" width="90%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				<md>
+					<mrow> \amp X = x - x' = -(5\ \textrm{m/s})\ t</mrow>
+					<mrow> \amp Y = y -y' = -(5\ \textrm{m/s})\ t - (2\ \textrm{m/s}^2)\ t^2</mrow>
+					<mrow> \amp  Z = z - z' =0.</mrow>
+				</md>
+				Taking the time derivatives we obtain the components of the velocity of <m>O'</m> with respect to <m>O</m>.
+				<md>
+					<mrow> \amp V_x = \frac{dX}{dt} = -5\ \textrm{m/s}</mrow>
+					<mrow> \amp V_y = \frac{dY}{dt} = -5\ \textrm{m/s} - (4\ \textrm{m/s}^2)\ t</mrow>
+					<mrow> \amp  V_z = \frac{dZ}{dt}=0.</mrow>
+				</md>
+				Taking another derivative gives the  components of the  acceleration of <m>O'</m> with respect to <m>O</m>.
+				<md>
+					<mrow> \amp A_x = 0</mrow>
+					<mrow> \amp A_y =  -4\ \textrm{m/s}^2 </mrow>
+					<mrow> \amp  A_z = 0.</mrow>
+				</md>
+				Therefore, the frame <m>O'x'y'z'</m> has the acceleration of magnitude <m>4\ \textrm{m/s}^2</m> towards the negative <m>y</m> axis.  At <m>t=0</m>, the origins of the two frames are co-incident with the frame   <m>O'x'y'z'</m> moving at speed <m>5\sqrt{2}</m> m/s at <m>45^{\circ}</m> with respect to the negative <m>x</m>-axis in the third quadrant.
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b) To obtain the components of the velocity we use the given position of the particle at an arbitrary time. We are given
+				<md>
+					<mrow> \amp v_x = \frac{dx}{dt} = 2\ \textrm{m/s} </mrow>
+					<mrow> \amp v_y = \frac{dy}{dt} = 0 </mrow>
+					<mrow> \amp  v_z = \frac{dz}{dt}=0.</mrow>
+				</md>
+				Therefore,
+				<md>
+					<mrow> \amp v_x^{\prime} = \frac{dx'}{dt}= \frac{dx}{dt} + 5 = 7\ \textrm{m/s} </mrow>
+					<mrow> \amp v_y^{\prime} = \frac{dy'}{dt} = \frac{dy}{dt} + 5  + 4 t= 5\ \textrm{m/s}   + (4\ \textrm{m/s}^2)  t</mrow>
+					<mrow> \amp  v_z^{\prime} = \frac{dz'}{dt}=0.</mrow>
+				</md>
+				The acceleration of the particle in the prime frame is
+				<md>
+					<mrow> \amp a_x^{\prime} = \frac{dv_x^{\prime}}{dt}= 0</mrow>
+					<mrow> \amp a_y^{\prime} = \frac{dv_y^{\prime}}{dt} = 4\ \textrm{m/s}^2 </mrow>
+					<mrow> \amp  a_z^{\prime} = \frac{dv_z^{\prime}}{dt}=0.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(c)</title>
+		<p>
+			(c) Similar procedure as above would give
+			<md>
+				<mrow> \amp v_x  = \frac{dx}{dt}= -3\ \textrm{m/s} </mrow>
+				<mrow> \amp v_y  = \frac{dy}{dt} = -3\ \textrm{m/s}   - (4\ \textrm{m/s}^2)  t </mrow>
+				<mrow> \amp  v_z  = \frac{dz}{dt}=0.</mrow>
+			</md>
+			<md>
+				<mrow> \amp a_x  = \frac{dv_x }{dt}= 0 </mrow>
+				<mrow> \amp a_y  = \frac{dv_y }{dt} = -4\ \textrm{m/s}^2 </mrow>
+				<mrow> \amp  a_z  = \frac{dv_z }{dt}=0.</mrow>
+			</md>
+ 
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Box-Sliding-on-Floor-in-an-Accelerating-Frame"><title>Box Sliding on Floor in an Accelerating Frame</title>
+
+		<statement>
+			<p>
+				A box is sliding on a floor so that its coordinates with respect to a frame <m>Oxyz</m> fixed with respect to the floor are given as
+				<md>
+					<mrow> \amp x = (1\ \textrm{m})  + (2\ \textrm{m/s})\ t + (3\ \textrm{m/s}^2)\ t^2</mrow>
+					<mrow> \amp y =z=0</mrow>
+				</md>
+ 
+				What would be the coordinates of this box when observed with respect to another frame <m>O'x'y'z'</m> that has the following acceleration with respect to <m>Oxyz</m>?
+				<md>
+					<mrow> \amp A_x = 2\ \textrm{m/s}^2 </mrow>
+					<mrow> \amp A_y= A_z=0 </mrow>
+				</md>
+				Assume origins <m>O</m> and <m>O'</m> coincide at <m>t=0</m> and the axes of the two frames are parallel with each other.
+			</p>
+		</statement>
+		<hint><p>
+			Definition.
+		</p></hint>
+		<answer><p>
+			See solution.
+		</p></answer>
+		<solution>
+			<p>
+				 We have shown the triangle of vectors above to give
+				<men xml:id="eq-Box-Sliding-on-Floor-in-an-Accelerating-Frame-1">
+					\vec {r}^{\prime} = \vec r - \vec R. 
+				</men>
+				This leads to
+				<me>
+					\vec a^{\prime} = \vec a - \vec A,
+				</me>
+				by taking two time-derivatives.   In terms of components
+				<md>
+					<mrow> \amp a_x^{\prime} =a_x - A_x = 6\ \textrm{m/s}^2 - 2\ \textrm{m/s}^2 = 4\ \textrm{m/s}^2</mrow>
+					<mrow> \amp a_y^{\prime}= a_z^{\prime}=0</mrow>
+				</md>
+				The acceleration in the prime frame is constant in time.  From Eq. <xref ref="eq-Box-Sliding-on-Floor-in-an-Accelerating-Frame-1"/>, with <m>V_x = A_x t</m> we get  the  velocity in the prime frame at any arbitrary time to be
+				<md>
+					<mrow> \amp v_x^{\prime} =v_x - V_x =2 \ \textrm{m/s} + (6\ \textrm{m/s}^2) t-  (4\ \textrm{m/s}^2) t = 2 \ \textrm{m/s} + (2\ \textrm{m/s}^2) t.</mrow>
+					<mrow> \amp v_y^{\prime}= v_z^{\prime}=0</mrow>
+				</md>
+				Integrating these with the particle at <m>x' = 1</m> m at <m>t=0</m> since <m>O</m> and <m>O'</m> coincide at <m>t=0</m>.
+				<m>
+					<mrow> \amp x^{\prime} = (1\ \textrm{m}) + (2 \ \textrm{m/s}) t + (1\ \textrm{m/s}^2) t^2.</mrow>
+					<mrow> \amp y^{\prime}= z^{\prime}=0.</mrow>
+				</m>
+ 
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-A-Block-Hanging-by-a-Spring-attached-to-Accelerating-Elevator"><title>A Block Hanging by a Spring attached to Accelerating Elevator</title>
+
+		<statement>
+
+			<sidebyside widths="60% 5% 30%">
+				<p>
+					A block of mass <m>m</m> is hung from the ceiling of an elevator using a spring of spring constant <m>k</m>.  Find the change in the length of the spring under the following situations. (a) Elevator going up with constant velocity, <m>\vec v_1</m>. (b) Elevator going down with constant velocity, <m>\vec v_2</m>. (c) Elevator going up with acceleration  <m>\vec a_1</m> point up.  (d) Elevator going up with acceleration   <m>\vec a_2</m> pointed down.  (e) Elevator going down with acceleration    <m>\vec a_3</m> pointed up.  (f) Elevator going down with acceleration   <m>\vec a_4</m> pointed down.
+				</p>
+				<p></p>
+				<figure xml:id="fig-accl-frame-person-in-elevator">
+					<caption></caption>
+					<image source="./images/noninertial-frame/person-in-elevator.png" width="90%"/>
+				</figure>
+			</sidebyside>
+
+			 
+		</statement>
+		<hint><p>
+			Definition.
+		</p></hint>
+		<answer><p>
+			See solution.
+		</p></answer>
+		<solution><title>(a) and (b)</title>
+			<p>
+				(a) and (b): Since elevator is not accelerating, the situation for the block and spring system is same as on the ground.  The stretching of the spring will be <m>\Delta l = mg/k</m>, where <m>k</m> is the spring constant.
+			</p>
+		</solution>
+		<solution><title>(c) </title>
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					(c) The acceleration of the elevator is pointed up and has the magnitude <m>a_1</m> with respect to the ground.  Therefore, in the elevator frame, there will be a fictititous force on the block of magnitude <m>ma_1</m> and direction pointed down in addition to the weight <m>mg</m> of the block pointed down and the spring force <m>\vec F_{\textrm{spring}}</m>.  In the elevator frame the block has no acceleration.  Therefore, in the elevator frame,
+					<me>
+						F_{\textrm{spring}} - mg - ma_1 = 0.
+					</me>
+				</p>
+				<p></p>
+				<figure xml:id="fig-accl-frame-person-in-elevator-c-sol">
+					<caption></caption>
+					<image source="./images/noninertial-frame/person-in-elevator-c-sol.png" width="90%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Writing the magnitude of the spring force as <m>k\Delta l</m> we find the stretching now
+				<me>
+					\Delta l = \frac{m}{k} \left( g +a_1\right).
+				</me>
+			</p>
+		</solution>
+
+		<solution><title>(d) </title>
+			<p>
+				(d) When the acceleration of the elevator is pointed down, the fictitious force will be pointed up.  This will give
+				<me>
+					F_{\textrm{spring}} - mg + ma_2 = 0.
+				</me>
+				Therefore, the stretching now
+				<me>
+					\Delta l = \frac{g}{k} \left( g -a_2\right).
+				</me>
+			</p>
+		</solution>
+		<solution><title>(e) </title>
+			<p>
+				(e) The direction of the movement of the accelerator does not matter - only the direction of the acceleration of the elevator goes into the force equation.  Therefore, the situation is like (c).
+				<me>
+					\Delta l = \frac{g}{k} \left( g +a_3\right).
+				</me>
+			</p>
+		</solution>
+		<solution><title>(f) </title>
+			<p>
+				(f) The direction of the movement of the accelerator does not matter - only the direction of the acceleration of the elevator goes into the force equation.  Therefore, the situation is like (d).
+				<me>
+					\Delta l = \frac{g}{k} \left( g -a_4\right).
+				</me>
+
+
+
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Motion-a-Falling-Ball-from-an-Accelerating-Car"><title>Motion a Falling Ball from an Accelerating Car</title>
+
+		<statement>
+			<sidebyside widths="65% 10% 25%">
+				<p>
+					A ball is dropped from a tall building from a height <m>H</m>. In a frame fixed to Earth, the ball drops vertically with a constant acceleration <m>g</m> pointed down. The same ball is observed from a car that is accelerating with respect to the fixed frame. The acceleration of the car is pointed horizontally and away from the building and has the magnitude <m>A</m>. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-accl-frame-accl-car">
+					<caption></caption>
+					<image source="./images/noninertial-frame/accl-car.png" width="90%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Suppose the fixed frame has a coordinate system <m>Oxyz</m> whose <m>y</m>-axis is pointed up and the <m>x</m>-axis is pointed in the direction of the acceleration of the car. Let <m>O'x'y'z'</m> be the coordinate system whose origin is fixed to the car.  The coordinate axes of the two frame are parallel to each other.  The time <m>t=0</m> is chosen when the two origins coincide and the velocity of the car is zero with respect to the ground.
+			</p>
+			<p>
+				(a) Write the coordinates of the ball in <m>Oxyz</m> frame during the flight, i.e., before the ball hits the ground.  (b) Write the coordinates of the ball in <m>O'x'y'z'</m> frame during the flight, i.e., before the ball hits the ground.  (c) What are the trajectory of the ball in the two frames?  Do the trajectory equations make sense,  i.e. does the ball fall vertically in both frames?
+
+			</p>
+		</statement>
+		<hint><p>
+			Definition.
+		</p></hint>
+		<answer><p>
+			See solution.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a) This is just free-fall towards the negative <m>y</m> axis.
+				<md>
+					<mrow> \amp  x = 0.</mrow>
+					<mrow> \amp  y = H -\frac{1}{2} g t^2.</mrow>
+					<mrow> \amp  z = 0.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>	
+				(b) To find the <m>(x',y',z')</m> of the ball we first write down the coordinates <m>(X,Y,Z)</m> of the car (<m>O'</m>) with respect to <m>O</m>.
+				<md>
+					<mrtow> \amp  X = \frac{1}{2} A t^2.</mrtow>
+					<mrow> \amp  Y = 0.</mrow>
+					<mrow> \amp  Z = 0.</mrow>
+				</md>
+				The  coordinates of the ball in the two frames are related by <m>\vec r = \vec r^{\prime} + \vec R</m>, where <m>\vec r</m> is the position of the ball in <m>Oxyz</m>, <m>\vec r^{\prime}</m> is the position of the ball in <m>O'x'y'z'</m>, and <m>\vec R</m> the position of <m>O'</m> with respect to <m>O</m>.
+				<md>
+					<mrow> \amp  x' = x-X = -\frac{1}{2} A t^2.</mrow>
+					<mrow> \amp  y'=y-Y =H -\frac{1}{2} g t^2.</mrow>
+					<mrow> \amp  z'=z-Z = 0.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(c)</title>
+
+			<sidebyside widths="70% 5% 15% 10%">
+				<p>
+					(c) The trajectory of the ball in the frame <m>Oxyz</m> is straight down towards the negative <m>y</m>-axis.  That is the trajectory is a vertically straight line since only the <m>y</m>-coordinate is changing with time. 
+				</p>
+				<p></p>
+				<!-- <figure xml:id="fig-accl-frame-accl-car-b-sol">
+					<caption></caption> -->
+					<image source="./images/noninertial-frame/accl-car-b-sol.png" width="90%"/>
+					<p></p>
+				<!-- </figure> -->
+			</sidebyside>				 
+ 
+
+			<sidebyside widths="70% 5% 25% 0%">
+				<p>
+					The trajectory of the ball in  <m>O'x'y'z'</m>-frame is in the <m>x'y'</m> plane.  The ball moves from <m>(0,H)</m> to <m>(-AH/g,0)</m> in a straight line.  The trajectory is not straight down in this frame but tilted with the angle in the third quadrant with the angle <m>theta</m> below the negative <m>x</m> axis given by <m>\tan^{-1}(g/A)</m>.  
+				</p>
+				<p></p>
+				<!-- <figure xml:id="fig-accl-frame-accl-car-c-2-sol">
+					<caption></caption> -->
+					<image source="./images/noninertial-frame/accl-car-c-2-sol.png" width="90%"/>
+					<p></p>
+				<!-- </figure> -->
+			</sidebyside>	
+
+ 
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-SkyDiver-Observed-by-another-Diver"><title>Skydiver Observed by Another Diver</title>
+
+		<statement>
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					A freely falling sky diver looks at another diver directly above him that has his parachute on and finds his position in a coordinate system that has the <m>y</m>-axis vertically up as follows.
+					<me>
+						y = 4 + 5 t + 3 t^2.
+					</me>
+
+					If at <m>t=0</m>, the freely falling person was 100 meters from the ground.  Find the position of the person with his parachute on as a function of time when observed from the ground?
+				</p>
+				<p></p>
+				<figure xml:id="fig-accl-frame-parachute-free-drop">
+					<caption></caption>
+					<image source="./images/noninertial-frame/parachute-free-drop.png" width="90%"/>
+					<p></p>
+				</figure>
+			</sidebyside>				
+ 
+			
+		</statement>
+		<hint><p>
+			Definition.
+		</p></hint>
+		<answer><p>
+			See solution.
+		</p></answer>
+		<solution>
+			<p>
+
+				Let the frame of the freely falling be <m>Oxyz</m> and the frame fixed to the ground be <m>O'x'y'z'</m>.  The position of the diver with the parachute open is given in the <m>Oxyz</m>.
+				<me>
+					x = 0;\ \ y = 4 + 5 t + 3 t^2;\ \ z = 0.
+				</me>
+				The position <m>O</m> of the freely falling person with respect to O will be
+				<me>
+					X = 0;\ \ Y = Y_0 + V_{0y} t - \frac{1}{2} g t^2;\ \ Z = 0.
+				</me>
+				Using the <m>(x,y,z)</m> of the parachuter P with respect to <m>O</m> and <m>(X,Y,Z)</m> of <m>O</m> with respect to <m>O'</m> we can deduce the coordinate <m>(x',y',z')</m> of P with respect to <m>O'</m>.
+				<me>
+					x' = 0;\ \ y' = (Y_0 + V_{0y} t - \frac{1}{2} g t^2)+(4 + 5 t + 3 t^2);\ \ z' = 0.
+				</me>
+
+
+			</p>
+		</solution>
+	</exercise>
+
+	</exercises>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

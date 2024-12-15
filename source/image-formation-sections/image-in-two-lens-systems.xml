@@ -1,0 +1,199 @@
+<section xml:id="image-in-two-lens-systems"><title> Image in Two-lens Systems </title>
+	<introduction>
+        <p>
+        	In many instruments two or more lenses, sometimes in combnation with mirrors and prisms, are used one after another to form the final image, which can be a real image on a screen or a detector or a virtual image that you would view.
+        </p>
+        <p>
+            In this section, we will address the issue of finding the location, orientation, and magnification of the final image in the case of two-lens systems. We can do this either by ray tracing method or algebraic method. 
+        </p>
+        <p>
+            <alert>Procedure: </alert>
+            In both ray tracing and algebraic methods, we work one lens at a time. first we locate the image, say <m>I_1</m> of the object from the first lens, completely ignoring the presence of second lens. Then, we take this image to be the object for the second lens and locate the final image <m>I_2</m>. Clearly, this iterative process can continue for any number of optical elements, whether you have lenses or mirrors.
+        </p>
+ 
+    </introduction>
+    <subsection><title>Ray Tracing in a Two-Lens System</title>
+        <p>
+            As an illustrative example consider a convex lens (lens <m>\text{L}_1</m>) followed by a concave lens (lens <m>\text{L}_2</m>) as shown in <xref ref="fig-lenses-two-lenses-convex-then-concave-ray-tracing"/>. Here, <m>\text{F}_{ij}</m> refers to the focal point <m>i=(1 \text{ or } 2</m>, for first and second focal points) of the <m>j^\text{th}</m> lens. That is, <m>\text{F}_{12}</m> is the first focal point of the lens number 2.
+        </p> 
+        <p>
+
+            I have placed the object <m>\text{OP}</m> within a focal length of lens <m>\text{L}_1</m> so that we will get a virtual image, which is guaranteed to form to the left of <m>\text{L}_1</m> and <m>\text{L}_2</m>. This is easier case than the case in which image from <m>\text{L}_1</m> forms on the right of lens <m>\text{L}_2</m>. In the present example, I have drawn rays <m>11'</m> and <m>22'</m> to locate the image of point <m>\text{P}</m> at <m>\text{Q}_1</m> by lens <m>\text{L}_1</m>.
+        </p>
+        <p>
+            Then, I have used <m>\text{Q}_1</m> as object with lens <m>\text{L}_1</m> removed. That is, I have pretended that lens <m>\text{L}_1</m> isn't even there, and drawn rays <m>33'</m> and <m>44'</m> for refraction by <m>\text{L}_2</m> only. The backward extensions of <m>3'</m> and <m>4'</m> gives us the image of <m>\text{Q}_1</m> at <m>\text{Q}_2</m>. This is the final image of <m>\text{P}</m>. The image is virtual.
+ 
+        </p>
+        <figure xml:id="fig-lenses-two-lenses-convex-then-concave-ray-tracing">
+            <caption>
+                Ray tracing in a two-lens optical system.
+            </caption>
+            <image source="./images/image-formation/lenses-two-lenses-convex-then-concave-ray-tracing.png" width="100%"/>
+        </figure>
+
+    </subsection>
+
+    <subsection><title>Algebraic Method for Two-Lens System</title>
+        <p>
+            We work one lens at a time, making sure that we follow the sign convention given <xref ref="section-thin-lens-equation"/>. Let us work out the example in <xref ref="fig-lenses-two-lenses-convex-then-concave-ray-tracing"/> with the following numerical values where <m>d</m> is the separation between the lenses. I have drawn the figure with the following values.
+            <md>
+                <mrow> \amp f_1 = 8.0\text{ cm},</mrow>
+                <mrow> \amp  f_2 = -4.0\text{ cm},</mrow>
+                <mrow> \amp  d = 10.0\text{ cm},</mrow>
+                <mrow> \amp  p = 5.0\text{ cm}.</mrow>
+            </md>
+            From <m>f_1</m> and <m>p</m>, we get <m>q_1</m>.
+            <me>
+                \frac{1}{q_1} = \frac{1}{8} - \frac{1}{5} = -\frac{3}{40}. 
+            </me>
+            Therefore, <m>q_1 = -40/3\text{ cm} = -13.3\text{ cm}</m>. Now, this image is to serve as object for <m>\text{L}_2</m>. The <q>object</q> is to the left of <m>\text{L}_2</m>, therefore, object distance will be positive. We need to include the distance between the two lenses to get the distance of this <q>object</q> to <m>\text{L}_2</m>. Therefore, for <m>\text{L}_2</m>, we have
+            <md>
+                <mrow> \amp p_2 = d + |q_1| = 10 + \frac{40}{3} = \frac{70}{3}\text{ cm}.</mrow>
+                <mrow> \amp f_2 = -4.0\text{ cm}.</mrow>                
+            </md>
+            Using these we get <m>q_2</m> by
+            <me>
+                \frac{1}{q_2} = -\frac{1}{4} - \frac{3}{70} =  -\frac{82}{470}.
+            </me>
+            Therefore, <m>q_2 = -5.7\text{ cm}</m>.            
+
+        </p>
+        <p>
+            We can work out the magnification step by step also. In lens <m>\text{L}_1</m>, the magnification occured by the following factor.
+            <me>
+                m_1 = -\frac{q_1}{p} = -\frac{-40}{3\times 5} = +\frac{8}{3}.
+            </me>
+            In lens <m>\text{L}_2</m>, the magnification occured by
+            <me>
+                m_2 = -\frac{q_2}{p_2} = -\frac{-470}{82} \times \frac{3}{70} = +0.25.
+            </me>
+            Therefore, the net magnification will be a product of these two.
+            <me>
+                m = m_1\times m_2 = \frac{8}{3} \times 0.25 = 0.67.
+            </me> 
+            Thus, final image will be upright and about two-thirds of the size of the object. In <xref ref="fig-lenses-two-lenses-convex-then-concave-ray-tracing"/> the image looke like half the size. That's because it is really difficult to draw rays accurately. While ray tracing, you would need to be very careful with the sketch if you want an accurate result.          
+        </p>
+    </subsection>
+
+    <exercise xml:id="exercise-two-lenses-convex-and-convex"><title>Image by Two Convex Lenses</title>
+
+        <statement>
+            <p>
+                Two convex lenses of focal lengths <m>20\text{ cm}</m> and <m>10\text{ cm}</m> are placed <m>30\text{ cm}</m> apart as shown in <xref ref="fig-exercise-two-lenses-convex-and-convex"/>. An object of height <m>2\text{ cm}</m> is placed <m>10\text{ cm}</m> in front of the lens of the focal length <m>20\text{ cm}</m>. Find the location, orientation and magnification factor of the final image.
+            </p>
+        <figure xml:id="fig-exercise-two-lenses-convex-and-convex">
+            <caption>
+                Figure for <xref ref="exercise-two-lenses-convex-and-convex"/>.
+            </caption>
+            <image source="./images/image-formation/exercise-two-lenses-convex-and-convex.png" width="100%"/>
+        </figure>
+
+
+
+        </statement>
+        <hint><p>Work one lens at a time.</p></hint>
+        <answer><p>
+            <m>12.5\ \text{cm}</m> back of lens L2,  inverted, half the size, <m>h_i = 1.0 \text{ cm}</m>.
+        </p></answer>
+        <solution>
+            <p>
+
+                We will work one lens at a time. First we find the image from lens L1 and use this image as object for lens L2. We have the following for lens L1.
+                <me>
+                    p = +10\ \text{cm},\ \ f = + 20\ \text{cm}.
+                </me>
+
+                Therefore, the image distance <m>q_1</m> will be
+                <me>
+                    \frac{1}{q} = \frac{1}{20\ \text{cm}} - \frac{1}{10\ \text{cm}} = -\frac{1}{20\ \text{cm}}  \ \ \Longrightarrow q_1 = -20\text{ cm}.
+                </me>
+                Therefore, the image by lens L1 will be virtual and at <m>20\text{ cm}</m> to the left of the L1. 
+            </p>
+            <p>
+                Now, we take the image from L1 and treat it like an object for lens L2. To get the object distance to L2, we need to include the distance between the lenses also.
+                <me>
+                    p_2 = |q_1| + d =  20\text{ cm} + 30\text{ cm} = 50\text{ cm}.
+                </me>
+                with <m>f_2= + 10\text{ cm}</m>, we get
+                <me>
+                    \ \frac{1}{q_2} = \frac{1}{10\ \text{cm}} - \frac{1}{50\ \text{cm}}\ \ \Longrightarrow\ \ q_2 = 12.5\ \text{cm}.
+                </me>
+                Therefore, the location of the final image is <m>12.5\ \text{cm}</m> back of lens L2. 
+            </p>
+            <p>
+                To find the net magnification, we find magnification in each lens and then multily them.
+                <md>
+                    <mrow> \amp m_1 = -\frac{q_1}{p} = -\frac{-20\ \text{cm}}{10\ \text{cm}}   = + 2. </mrow>
+                    <mrow> \amp m_2 = -\frac{q_2}{p_2} = -\frac{12.5\ \text{cm}}{50\ \text{cm}} = - 1/4. </mrow>
+                    <mrow>\amp m = m_1\times m_2 = -\frac{1}{2}. </mrow>
+                </md>
+                Hence, the final image is inverted and is half the size of the original object. That, is the size of the image is <m>1\text{ cm}</m>.
+            </p>
+        </solution>
+    </exercise>
+
+
+   <exercise xml:id="exercise-two-lenses-convex-and-convex-q1-behind-L2"><title>Image by Two Convex Lenses with Intermediate Image Behind Second Lens</title>
+
+        <statement>
+            <p>
+                Two convex lenses of focal lengths <m>20\text{ cm}</m> and <m>10\text{ cm}</m> are placed <m>5\text{ cm}</m> apart as shown in <xref ref="fig-exercise-two-lenses-convex-and-convex-q1-behind-L2"/>. An object of height <m>2\text{ cm}</m> is placed <m>40\text{ cm}</m> in front of the lens of the focal length <m>20\text{ cm}</m>. Find the location, orientation and magnification factor of the final image.
+            </p>
+        <figure xml:id="fig-exercise-two-lenses-convex-and-convex-q1-behind-L2">
+            <caption>
+                Figure for <xref ref="exercise-two-lenses-convex-and-convex-q1-behind-L2"/>.
+            </caption>
+            <image source="./images/image-formation/exercise-two-lenses-convex-and-convex-q1-behind-L2.png" width="100%"/>
+        </figure>
+
+        </statement>
+
+        <hint><p>Work one lens at a time. The intermediate image will be to the right of L2. that will mean <m>p_2</m> will be negative. </p></hint>
+        <answer><p>
+           <m>\frac{70}{9}\ \text{cm}</m> back of lens L2,  inverted,  <m>\frac{2}{9}</m> of the size of object, <m>h_i = \frac{4}{9} \text{ cm}</m>.            
+        </p></answer>
+
+        <solution>
+            <p>
+
+                We will work one lens at a time. First we find the image from lens <m>\text{L}_1</m> and use this image as object for lens <m>\text{L}_2</m>. We have the following for lens <m>\text{L}_1</m>.
+                <me>
+                    p = +40\ \text{cm},\ \ f = + 20\ \text{cm}.
+                </me>
+
+                Therefore, the image distance <m>q_1</m> will be
+                <me>
+                    \frac{1}{q} = \frac{1}{20\ \text{cm}} - \frac{1}{40\ \text{cm}} = \frac{1}{40\ \text{cm}}  \ \ \Longrightarrow q_1 = 40\text{ cm}.
+                </me>
+                Therefore, the image by lens <m>\text{L}_1</m> will be real and at <m>40\text{ cm}</m> to the right of the <m>\text{L}_1</m>. 
+            </p>
+            <p>
+                Now, we take the image from <m>\text{L}_1</m> and treat it like an object for lens <m>\text{L}_2</m>. To get the object distance to <m>\text{L}_2</m>, we need to include the distance between the lenses also. From the geometry we see that the image from <m>\text{L}_1</m> will fall to the right of <m>\text{L}_2</m>. Therefore, the object distance here will be negative.
+                <me>
+                    p_2 = -(|q_1| - d) = -35\text{ cm}.
+                </me>
+                with <m>f_2= + 10\text{ cm}</m>, we get
+                <me>
+                    \ \frac{1}{q_2} = \frac{1}{10\ \text{cm}} - \frac{1}{-35\ \text{cm}}\ \ \Longrightarrow\ \ q_2 = \frac{70}{9}\ \text{cm}.
+                </me>
+                Therefore, the location of the final image is <m>\frac{70}{9}\ \text{cm}</m> back of lens <m>\text{L}_2</m>. That is the final image will be a real image.
+            </p>
+            <p>
+                To find the net magnification, we find magnification in each lens and then multily them.
+                <md>
+                    <mrow> \amp m_1 = -\frac{q_1}{p} = -\frac{40\ \text{cm}}{40\ \text{cm}}   = -1. </mrow>
+                    <mrow> \amp m_2 = -\frac{q_2}{p_2} = -\frac{70}{9}\times\frac{1}{-35}=\frac{2}{9}. </mrow>
+                    <mrow>\amp m = m_1\times m_2 =  -1\times \frac{2}{9} = - \frac{2}{9}. </mrow>
+                </md>
+                Hence, the final image is inverted and is <m>\frac{2}{9}</m> the size of the original object. That, is the size of the image is <m>\frac{4}{9}\text{ cm}</m>.
+            </p>
+        </solution>
+
+
+
+    </exercise>
+
+
+
+
+</section>

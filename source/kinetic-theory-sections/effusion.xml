@@ -1,0 +1,103 @@
+<section xml:id="Effusion"><title> Effusion </title>
+	<introduction>
+		<p>
+
+			<term> Effusion</term> is process where a gas exits from a container through a tiny hole.  Ideally the hole should be much smaller than the mean free path so that the molecules do not suffer collisions among themselves when exiting.
+		</p>
+		<p>
+			Effusion is used to study the average speed of molecules in the container.  According to <terM> Graham's law</terM>, the average kinetic energies of molecules of different gases at the same temperature are identical.
+		</p>
+		<p>
+			<em> Average kinetic energy of two gases at the same temperature is same.</em>
+		</p>
+		<p>
+			This will give the following equality between the kinetic energies of molecules of two gases.
+			<men>
+				\frac{1}{2}m_av_a^2 = \frac{1}{2}m_bv_b^2\ \ \text{(same temperature)}
+			</men>
+			Therefore, the ratio of their speed will have to be inversely proportional to the square root of their molecular masses.
+			<men>
+				\frac{v_a}{v_b}= \sqrt{\frac{m_b}{m_a}}\ \ \text{(same temperature)}
+			</men>
+			From this, we can conclude that hydrogen gas in a balloon will effuse <m> 4</m> times faster than oxygen and  <m> \sqrt{2}</m> times helium.
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-Reduction-of-Pressure-in-a-Container-due-to-Escaping-Molecules-by-Effusion"><title> (Calculus) Reduction of Pressure in a Container due to Escaping Molecules by Effusion </title>
+		<statement>
+			<p>
+				A container of volume 2 L contains 0.3 moles of Helium gas kept at constant temperature 300 K.  There is a small hole of area<m> 0.003\text{ mm}^2</m> though which gas molecules escape.  The density of molecules outside is so low that no molecules get back into the container.  Find the pressure inside the container after 0.2 seconds. Assume all the atoms arriving at the hole leave the container.
+			</p>
+
+		</statement>
+		<hint> <p>  Use the rms-speed for the escape speed and set up an equation for the rate of decrease of mass inside the container. From the mass remaining at the end, compute the pressure. </p> </hint>
+		<answer> <p> <m> 3.6\ \text{atm}</m>.  </p> </answer>
+		<solution> 
+			<sidebyside widths = "55% 5% 40%">
+				<p>
+					<p>
+						We will first find the density of the gas inside the container as a function of time. Let us consider the container in the shape of a cube. Consider a hole of area <m>A</m> in the face perpendicular to the <m>x</m>-axis.  
+					</p>
+					<p>
+						The molecules in the volume <m>|v_x| A \Delta t</m> with the <m>x</m>-component of velocity positive will eject the hole in time <m>\Delta t</m>. We have found that we can estimate the magnitude of <m>v_x</m> from the root-mean square speed.
+					</p>
+				</p>
+
+				<p></p>
+				<image source="./images/kinetic-theory/escaping-molecules-effusion.png" width="50%"/>
+			</sidebyside>
+			<p>
+				<me>
+					|v_x| = \sqrt{\langle v_x^2 \rangle} = \frac{1}{\sqrt{3}} v_\text{rms}.
+				</me>
+			
+				As a result the mass of gas will decrease with time. The decrease in mass of gas inside the container will be
+				<me>
+					\Delta m = - \rho  \times |v_x| A \Delta t,
+				</me> 
+				where <m>\rho</m> is the density of the gas at time <m>t</m>,
+				<me>
+					\rho = \frac{m}{V_0},
+				</me> 
+				where <m>V_0</m> is the volume of the container. Therefore,
+				<me>
+					\frac{ \Delta m}{\Delta t} = - \frac{ |v_x| A}{V_0}  m.
+				</me> 
+				Taking the infinitesimal limit we obtain the following for the rate of change of mass of the gas inside the container.
+				<men xml:id="eq-ch21-pr-5-1">
+				\frac{ d m}{d t} = -  \frac{ m}{\tau}, 
+				</men>
+				where the constants in the formula are lumped into <m>\tau</m>, a constant quantity that has the unit of time.
+				<me>
+					\tau = \frac{V_0}{ |v_x| A} =    \frac{\sqrt{3}V_0}{ v_\text{rms} A} .
+				</me>
+				The solution of Eq. <xref ref="eq-ch21-pr-5-1"/> is 
+				<me>
+					m(t) = M\ e^{-t/\tau},
+				</me>
+				where <m>M</m> is the mass of the gas in the container at time <m>t=0</m>.  To convert this information to the pressure, we will assume that the mechanical equilibrium exists at each instant so that we can assign a value of pressure in the container although the content of the container would be changing with time.  The ideal gas equation can be used to relate mass of the gas in the container to the pressure.
+				<me>
+					p V = n RT = \frac{m}{\text{mol. wt.}} RT.
+				</me>
+				where mol. wt. is the molecular weight, which for He is 4 g/mol. 
+				<me>
+					p  =   \frac{MRT}{\text{(mol. wt.)} V} \ e^{-t/\tau} = p_0\ e^{-t/\tau},
+				</me>
+				where <m>p_0</m> is the pressure at time <m>t=0</m>. Now, we can use the numerical values given in the problem.
+				<md>
+					<mrow> \amp p_0  = \frac{0.3\ \text{mol} \times 0.082\ \text{L.atm/mol.K} \times 300\ \text{K}}{2\ \text{L}} = 3.7\ \text{atm}.</mrow>
+					<mrow> \amp v_\text{rms} = \sqrt{\frac{3 k_B T}{m_{He}}} = 1370\ \text{m/s}.</mrow>
+					<mrow> \amp \tau = \frac{\sqrt{3}V_0}{ v_\text{rms} A} = \frac{\sqrt{3}\times 2\times 10^{-3} \ \text{m}^3}{ 1370\ \text{m/s}\times 3\times 10^{-9}\ \text{m}^2} = 840\  \text{s}.</mrow>
+				</md>
+				The pressure at <m>t=0.4</m> s will be (if my numbers are correct)
+				<me>
+					p (t=0.2\ \text{s})= 3.7\ \text{atm}\ e^{-0.2\  \text{s}/840\  \text{s}} \approx 3.7\ \text{atm}.
+				</me>
+				<me>
+					p (t=20\ \text{s})= 3.7\ \text{atm}\ e^{20\ \text{s}/840\  \text{s}} \approx 3.6\ \text{atm}.
+				</me>
+			</p>			
+		</solution>
+	</exercise>
+
+</section>

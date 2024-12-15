@@ -1,0 +1,273 @@
+<section xml:id="sec-charge-of-electron"><title> Charge of an Electron</title>
+	<introduction>
+		<p>
+			The knowledge of the charge of an electron can be traced to Faraday's experiments in electrolysis in 1830s.  Faraday showed that a mole of singly charged ions carried a charge of 96,500 C.  Therefore, the charge on individual singly charged ions would be obtained by dividing this charge by Avogadro number, <m>N_A = 6.022\times 10^{23}</m>, which is the number of ions in one mole.
+			<men>
+				q = \frac{96,500\:\textrm{C}}{N_A} \approx 1.6\times 10^{-19}\:\textrm{C}.
+			</men>
+			J.J. Thomson conducted experiments on charged mist to deduce the electronic charge directly but only got values that were in the ballpark of this value. 
+		</p>
+	</introduction>
+	<subsection><title>Millikan's Oil Drop Experiment</title>
+		<p>
+
+			In 1908 the American physicist, Robert Millikan, who conducted careful experiments for directly determining the charge on droplets that had been charged to some unknown amounts. The experiment relies on careful measurements on falling charged oil droplets through air to deduce the charge on each droplet.  Then, a common factor that multiplied with an integer was sought that would match the charges on various droplets.  The common factor was identified to be the charge on one electron. This experiment is called Millikan's oil drop experiment. The schematics of the Millikan oil drop experiment is shown in <xref ref="fig-Simplified_Millikan_oil_drop-1"/>.
+		</p>
+
+		<figure xml:id="fig-Simplified_Millikan_oil_drop-1">
+			<caption>
+				Schematic view of the Millikan oil drop experiment. Credits: Wikicommons.
+			</caption>
+			<image source="./images/modern-physics/Simplified_Millikan_oil_drop.png" width="90%"/>
+		</figure>
+
+		<p>
+			I will describe here only the most basic aspects of the Millikan oil drop experiment.  The actual experiment suffers from several additional complications that must be taken into account. In this experiment we conduct two experiments on each drop.
+		</p>
+		<p>
+			<alert>Experiment # 1: Terminal velocity in the absence of electric field</alert>
+		</p>
+		<p>
+			In Millikan's oil drop experiment an atomizer releases tiny charged oil droplets that fall under gravity in air.  Due to the viscosity of air the droplets reach a terminal velocity.  Let <m>m</m> be the mass, <m>R</m> the radius of the spherical oil drop, <m>\eta</m> the viscosity coefficient of air, and <m>v</m> the terminal velocity.  Balancing forces we obtain
+			<men xml:id="eq-millikan-oil-1">
+				mg = 6\pi\eta R v. 
+			</men>
+			Let <m>\rho</m> be the density of oil. Then we can write 
+			<men xml:id="eq-millikan-oil-2">
+				m = \frac{4}{3} 4\pi R^3\rho. 
+			</men>
+			Putting this in Eq. <xref ref="eq-millikan-oil-1"/> and solving for <m>R</m> we get
+			<men xml:id="eq-millikan-oil-3">
+				R = \sqrt{\frac{9\eta v}{2\rho g}}. 
+			</men>
+			Therefore, a measurement of terminal velocity can be used to obtain the mass of the droplet.
+			<men xml:id="eq-millikan-oil-4">
+				m = \frac{4}{3} 4\pi  \rho \:\left( \frac{9\eta v}{2\rho g}\right)^{3/2}. 
+			</men>
+		</p>
+		<p>
+			<alert>Experiment # 2: Terminal velocity in the presence of electric field</alert>
+		</p>
+		<p>
+			Now, we turn on the electric field between the plates. With the plate separation <m>d</m> and voltage <m>V</m> between the plates, the magnitude of the electric field between the plates will be
+			<men xml:id="eq-millikan-oil-5">
+				E = \frac{V}{d}. 
+			</men>
+			With electric field on, the forces on the charged droplet will not be balanced since the droplet would be currently falling at the terminal velocity <m>v</m> when there was no electric force. With electric field on, the droplet comes to a new terminal velocity.  Let the new terminal velocity be denoted by <m>v_E</m>.  Let the charge on the droplet under observation be <m>q \lt  0</m> and the electric field be pointed down.  That would give an electric force of <m>qE</m> on the droplet pointed up.  Let us examine the forces on a droplet that is rising with a constant speed when the electric field is on.  Balancing force now gives the following equation.
+			<men xml:id="eq-millikan-oil-1a">
+				qE - mg - 6\pi\eta R v_E = 0. 
+			</men>
+			Solving for <m>q</m> we get
+			<men>
+				q = \frac{1}{E}\: \left[ mg + 6\pi\eta R v_E  \right]
+			</men>
+			Using Eqs. <xref ref="eq-millikan-oil-3"/>, <xref ref="eq-millikan-oil-4"/>, and <xref ref="eq-millikan-oil-5"/> we obtain
+			<men>
+				q = \frac{d}{V}\: \left[ v +  v_E  \right] 6\pi\eta \ \sqrt{\frac{9\eta v}{2\rho g}}.
+			</men>
+			The atomization process does not produce droplets of same size or same charge. The experimentally obtained charges <m>q</m> on a number of droplets are examined and analyzed to deduce the elementary charge. 
+		</p>
+		<p>
+			Often, while a particular drop is being observed with the field on, the droplet will suddenly accelerate as if it has picked up some more charge or lost some of its charge.  This discontinuous jump in charge content of the drop gives a new terminal velocity. Suppose that when a charge <m>q_1</m> was on the droplet of mass <m>m</m> the terminal velocity with field on was <m>v' = v_1</m> and when the charge content on the ball changed suddenly it settled on another terminal velocity <m>v' = v_2</m>.  Assuming  negligible change in mass of the droplet we can obtain the ratio of the two charges
+			<men xml:id="eq-millikan-oil-drop-integer">
+				\frac{q_1}{q_2} = \frac{v + v_1}{v+v_2}.
+			</men>
+			If the ratio <m>q_1/q_2</m> turn out to be expressible in ratio of integers, it will prove that the charges are themselves an integral multiple of an elementary charge. Millikan's oil drop experiment established the following two fact about the elementary charge.
+		</p>
+		<p>
+			<alert>Result 1:  Electric charge is quantized. All electric charges are integral multiples of an elementary charge <m>e</m>.</alert>
+		</p>
+		<p>
+			<alert>Result 2: The elementary charge has the value <m>e = 1.60\times 10^{-19}</m> C.</alert>
+		</p>
+		<p>
+			From the <m>e/m</m> value of  J.J. Thomson and <m>e</m> value of Millikan we can calculate the mass <m>m</m> of an electron.
+			<men>
+				m = \frac{e}{e/m} = \frac{1.60\times 10^{-19}\:\textrm{C}}{1.76\times10^{11} \textrm{C.kg}^{-1}} = 9.1\times 10^{-31}\:\textrm{kg}.
+			</men>
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Value-of-Electric-Charge-from-Oil-Drop-Experiment-Data"><title>Value of Electric Charge from Oil Drop Experiment Data</title>
+
+		<statement>
+			<p>
+				When Robert Millikan studied one of the oil drops he measured the falling time <m>(t_0)</m> with no electric field and rising time <m>(t_E)</m> with electric field on for a distance of 10.21 mm.  The successive measurements for the falling and rising times showed a consistent value for the fall time without the electric field but a wide variation of the time with the electric field on.
+
+				<md>
+					<mrow> (t_0, t_E) = \amp [(18.689, 17.756), (18.73,	17.778), (18.686,	 45.978), (18.726,	45.87),</mrow>
+					<mrow> \amp   (18.772,	45.716), (18.74,	 45.758), (18.724, 	694.0), (18.72, 	27.95), </mrow>
+					<mrow> \amp  (18.816, 	118.388),  (18.816, 	45.03), (18.716, 	34.564), (18.804, 	44.826),</mrow>
+					<mrow> \amp   (18.746, 	117.198), (18.746, 	44.784)]</mrow>
+				</md>
+				The variation in the times when the electric field was on was attributed to different charges on the same droplet. By assuming that the difference in the charges of the same droplet must be an integral multiple of a fundamental unit of charge he was able to deduce a value of the electronic charge. To apply the electric field a voltage of <m>5100\text{ V}</m> across the plates separated by 16 mm was applied. The density of the oil was <m>0.9199 \text{ g/cm}^3</m> and the viscosity of air was <m>1.824 \times 10^{-5}\:\textrm{kg.m/s}</m>.  Use this data to deduce the electronic charge.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p>
+			<m>1.74\times 10^{-19}\:\textrm{C}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				We want the multiple readings of <m>(v+v_E)</m>  to be in proportion of integers.  First, we will average <m>t_0</m> to get the average time for the fall without electric field.  This will give us the best value for <m>v</m>.
+				<me>
+					v = \frac{h}{t_0} = \frac{10.21\:\textrm{mm}}{ 18.745\:\textrm{s}} = 0.545\:\textrm{mm/s}.
+				</me>
+				Various rise times give different values of <m>v_E</m> corresponding to different amount of charge on the drop.  In Eq. \ref{eq:millikan-oil-drop-integer}, they are referred to <m>v_1</m> and <m>v_2</m> for two such data.
+				<md>
+					<mrow> v_E (\textrm{mm/s})= \amp [ 0.575, 0.574, 0.222, 0.223, 0.223, 0.223, </mrow>
+					<mrow> \amp  0.0147, 0.365, 0.0862, 0.227, 0.295, 0.228, 0.087, 0.228]</mrow>
+				</md>
+				Suppose you sibtract 1 from both sides of  Eq. \ref{eq:millikan-oil-drop-integer}.  you will get the following for the difference of two charges. 
+				<me>
+					q_1 - q_2 = \frac{v_1-v_2}{v+v_2}\:q_2.
+				</me>
+				We require that this be an integer multiple of the electronic charge <m>e</m>.
+				<me>
+					\frac{v_1-v_2}{v+v_2}\:q_2 = n e.
+				</me>
+				Therefore,
+				<me>
+					v_1-v_2 = n e_2,\ \ e_2 = e/[(v+v_2)q_2]. 
+				</me>
+				So, if we compare all other velocities to a particular velocity we should get integers times some fixed number <m>e_2</m>. Therefore, let us look at the difference between the velocities with the smallest velocity, which is 0.0147 mm/s.  We get the following
+				<md>
+					<mrow> v_1 - v_2 (\textrm{mm/s})= \amp [ 0.56, 0.56, 0.21, 0.21, 0.21, 0.21,</mrow>
+					<mrow> \amp  0, 0.35, 0.07, 0.21, 0.28, 0.21, 0.07, 0.21]</mrow>
+				</md>
+				Now, we can try to get smallest integers <m>n</m> for each <m>v_1-v_2</m>.  Suppose, we divide each by the smallest one in the list here, which would be 0.07 mm/s.
+				<md>
+					<mrow> (v_1 - v_2 \amp (\textrm{mm/s}))/(0.07 \textrm{mm/s})= [ 7.8, 7.8, 2.9, 2.9, 2.9, 2.9,</mrow>
+					<mrow> \amp  0, 4.9, 1.0, 3.0, 3.9, 3.0, 1.0, 3.0]</mrow>
+				</md>
+				Let the charge was <m>q_0</m> for the reference case and <m>q_1</m> when the difference in rise time was  0.07 mm/s.  The formula for each charge is
+				<me>
+					q = \frac{d}{V} (v + v_E) 6\pi \eta \sqrt{\frac{9\eta v}{2\rho g}}.
+				</me>
+				We have
+				<me>
+					d = 16\:\textrm{mm},\ \ V = 5100\:\textrm{V},\ \ \eta = 1.824 \times 10^{-5}\:\textrm{kg.m/s}, \rho = 0.9199\: \textrm{g/cm}^3.
+				</me>
+				 Therefore,
+				<md>
+					<mrow>q_0 \amp  = \frac{0.016\:\textrm{m}}{5100\:\textrm{V}} ( 0.000545\:\textrm{m/s}+ 0.0000147\:\textrm{m/s}) 6\pi \times 1.824 \times 10^{-5}\:\textrm{kg.m/s} </mrow>
+					<mrow> \amp \ \ \ \sqrt{\frac{9\times 1.824 \times 10^{-5}\:\textrm{kg.m/s}\times 0.000545\:\textrm{m/s}}{2\times 919.9\:\textrm{kg/m}^3\times 9.81\:\textrm{m/s}^2}} = 1.344 \times 10^-18\:\textrm{C}.</mrow>
+				</md>
+				<md>
+					<mrow>q_1 \amp  = \frac{0.016\:\textrm{m}}{5100\:\textrm{V}} ( 0.000545\:\textrm{m/s}+ 0.000087\:\textrm{m/s}) 6\pi \times 1.824 \times 10^{-5}\:\textrm{kg.m/s} </mrow>
+					<mrow> \amp \ \ \ \sqrt{\frac{9\times 1.824 \times 10^{-5}\:\textrm{kg.m/s}\times 0.000545\:\textrm{m/s}}{2\times 919.9\:\textrm{kg/m}^3\times 9.81\:\textrm{m/s}^2}} = 1.518 \times 10^-18\:\textrm{C}.</mrow>
+				</md>
+				 
+				The difference in their charges is
+				<me>
+					q_1 - q_0 = 1.518 \times 10^-18\:\textrm{C} - 1.344 \times 10^-18\:\textrm{C} = 1.74\times 10^{-19}\:\textrm{C}.
+				</me>
+				If we assume that the smallest difference in the rise times occur as a result of capture of one electron by the drop, we can deduce that the electronic charge is <m>e =1.74\times 10^{-19}\:\textrm{C}</m>, which is not too far from the accepted value of <m>e =1.60\times 10^{-19}\:\textrm{C}</m>.  Working with other pair of data produced additional results for <m>e</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+ 
+
+
+	<exercise xml:id="ex-Electric-Charge-in-Electroplating"><title>Electric Charge in Electroplating TODO</title>
+
+		<statement>
+			<p>
+				Atomic weight of an element is mass in grams of the Avogadro number of atoms of that element. (a) How many atoms are there in <m>11.5\text{ grams}</m> of sodium? (b) An electric current of <m>2\text{ A}</m> is passed through a sodium chloride (Na<m>^+</m>Cl<m>^-</m>) solution.  How long will it take to deposit <m>11.5\text{ grams}</m> of sodium on the cathode? (c) How many grams of  chlorine will bubble off at the anode? Atomic weights: Na 23, Cl 35.5.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Depositing-Copper-on-Cathode"><title>Depositing Copper on Cathode TODO</title>
+
+		<statement>
+			<p>
+				An electric current of <m>2\text{ A}</m> is passed through a copper sulfate (Cu<m>^{+2}</m>SO<m>_{4}^{-2}</m>) solution.  How long will it take to deposit <m>2.0\text{ grams}</m> of copper on the cathode?   Atomic weight: Cu 63.5.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+ 
+
+	<exercise xml:id="ex-Analyzing-a-Falling-Drop-in-Millikans-Oil-Drop-Experiment"><title>Analyzing a Falling Drop in Millikan's Oil Drop Experiment TODO</title>
+
+		<statement>
+			<p>
+				In a Millikan's oil drop experiment, one of the drops is falling steadily.  The drop is found to fall <m>1.0\text{ cm}</m> in <m>12\text{ sec}</m> when there is no electric field. If the density of the oil is <m>0.956\text{ g/cm}^3</m> and viscosity of air is  <m>1.81 \times 10^{-5}\text{ kg/m.s}</m>, what is the radius of the drop?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+ 	<exercise xml:id="ex-Analyzing-a-Falling-Drop-in-Millikans-Oil-Drop-Experiment-Find-em"><title>Analyzing a Falling Drop in Millikan's Oil Drop Experiment - Find <m>e/m</m>  TODO</title>
+
+		<statement>
+			<p>
+				In a Millikan's oil drop experiment, one of the drops is falling steadily.  The drop falls <m>1.0\text{ cm}</m> in <m>12\text{ sec}</m> when there is no electric field. A voltage of <m>5,000\text{ V}</m> is now applied across the plates separated by <m>1.5\text{ cm}</m> and the time for the drop to rise <m>1.0\text{ cm}</m> is observed which is  found to be <m>30.0\text{ sec}</m>.  If the density of the oil is <m>0.956\text{ g/cm}^3</m> and viscosity of air is  <m>1.81 \times 10^{-5}\text{ kg/m.s}</m>, what is the <m>e/m</m> of the drop?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+
+ 	<exercise xml:id="ex-Analyzing-a-Falling-Drop-in-Millikans-Oil-Drop-Experiment-Original-Data"><title>Analyzing a Falling Drop in Millikan's Oil Drop Experiment - Original Data TODO</title>
+
+
+		<statement>
+			<p>
+				In the original paper in Aug, 1913 issue of Physical Reviews, R. A. Millikan, reported the readings on several drops. The data on one of the drops, Drop No. 6, is given below.
+				<md>
+					<mrow> \amp \textrm{Radius of drop} = 2.76\:\mu\textrm{m};\ \ \textrm{Distance of fall or ascent} = 10.21\:\textrm{mm}</mrow>
+					<mrow> \amp \textrm{Electric potential across plates} = 5,085\:\textrm{V};\ \ \textrm{Plate separation} = 16\:\textrm{mm}</mrow>
+					<mrow> \amp \textrm{Density of oil} = 0.9199 \:\textrm{g/cm}^3;\ \ \textrm{Viscosity of air} = 1.824 \times10^{-5}\:\textrm{kg/m.s}</mrow>
+					<mrow> \amp \textrm{Averrage fall time in sec when E-field was off} = 11.88\:\textrm{sec}</mrow>
+					<mrow> \amp \textrm{Successive ascent times in sec when E-field was on:}</mrow>
+					<mrow> \amp \ \ \ 80.708,\ 22.375,\ 140.564,\ 79.600,\ 34.762,\ 137.308,</mrow>
+					<mrow> \amp \ \ \ 34.638,\ 22.268,\ 19.704,\ 77.630,\ 42.302.</mrow>
+				</md>
+				From this data deduce the charge of the elementary charge by using the assumption used by Millikan: the difference in the rise times for the same drop when electric field is on is due to the charge difference among them, which would be due to the capture of loss of integral number of electrons.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+ 
+
+
+
+
+
+</section>

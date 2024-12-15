@@ -1,0 +1,376 @@
+<section xml:id="Rotational-Speed-and-Velocity"><title> Rotational Speed and Velocity </title>
+		<idx>Rotational Speed</idx>
+		<idx>Rotational Velocity</idx>
+	<introduction>
+		<p> Just like regular velocity, we will have two types of rotational velocity: average rotational velocity and instantaneous rotational velocity. We will also have average rotational speed and instantaneous rotational speed.
+		</p>
+	</introduction>
+	<subsection> <title> Average Rotational Speed</title>
+		<p>
+			This is simply the average rate of rotation during an interval, regardless of any direction. Say, you rotated 4 full rotations clockwise and 1 full rotation counterclockwise in <m> 10\text{ sec}</m>, then, for the average speed you have rotated 5 full rotations, regardless of direction. This would give rotation speed 
+			<me>
+				\dfrac{5\text{ rev}}{10 \text{ sec}} = 0.5\text{ rev/sec}.
+			</me>
+		</p>
+		<p>
+			We denote the average rotational speed by the Greek letter <m> \omega </m> (omega) with subscript <m>(\text{s,av})</m>. We can write a formula for its definition as
+			<me>
+				\omega_{\text{s,av}} = \dfrac{\text{Total Angle Rotated}}{\text{Time Taken}}.
+			</me>
+		</p>
+	</subsection>
+
+	<subsection> <title> Average Rotational Velocity</title>
+		<p>
+			This is another way of characterizing average rate of rotation during an interval. However, unlike the average angular speed, now the direction of rotation matters. We count the clockwise rotation angles as negative and the counterclockwise as positive. We might call it net counterclockwise angle rotated. 
+		</p>
+		<p>
+			Thus, if you rotated 4 full rotations clockwise and 1 full rotation counterclockwise in <m> 10\text{ sec}</m>, then, for the average angular velocity your total angle of rotation is only 3 clockwise. This would give average angular velocity.
+			<me>
+				-\dfrac{3\text{ rev}}{10 \text{ sec}} = -0.3\text{ rev/sec}.
+			</me>
+			The negative sign is important since it has information about the direction of rotation as being overall clockwise. Another way to incorporate direction information is to think average angular velocity as a vector which is pointed along the axis of rotation. Therefore, if <m>z</m>-axis is the axis of rotation in this example, then we will write this angular velocity as
+			<me>
+				-0.3\text{ rev/sec}\ \hat k.
+			</me>
+		</p>
+		<p>
+			Angular velocity is also denoted by the Greek letter <m>\omega</m>. As a vector, we denote it as <m>\vec \omega</m> and can be defined by the ratio of the angular displacement vector and time duration. As a formula, we can write the definition as
+			<md>
+				<mrow> \vec \omega_{\text{av}} \amp = \dfrac{\text{Net Counterclockwise Angle Rotated}}{\text{Time Taken}}  .</mrow>
+				<mrow>  \amp = \dfrac{\Delta \theta}{\Delta t},\ \ (\text{Clockwise or Counterclockwise})</mrow>
+				<mrow>  \amp = \dfrac{\Delta \vec \theta}{\Delta t}.</mrow>
+			</md>
+			The main use of these definitions is to define instantaneous angular velocity by taking the <m>\Delta t\rightarrow 0</m> limit.			
+		</p>
+ 
+	</subsection>
+
+	<subsection> <title> Instantaneous Rotational Velocity</title>
+		<idx><h>Rotational Velocity</h><h>Instantaneous</h></idx>
+		<idx>Instantaneous Rotational Velocity</idx>
+		<p>
+			<alert>Instantaneous rotational velocity at an instant </alert> is the rate  at which the angle of rotation <m> \theta </m> is changing at that instant. We will denote angular velocity by <m> \vec \omega</m>, or sometimes simply by <m>\omega</m>, omitting the overhead arrow. Even if we ignore the arrow over <m>\omega</m> for brevity, make sure you are fully aware that rotational velocity is a vector since it has a direction in space along the axis of rotation.
+		</p>
+		<sidebyside widths="60% 5% 35%">
+			<p>
+				Suppose we are studying rotation of a disk about <m>z</m>-axis as shown in <xref ref="fig-rotating-disk-counterclockwise-instant-velocity"/>. Let <m>\theta</m> denote angle of rotation since <m>t=0</m>. Then, instantaneous angular velocity, which would be denoted by <m>\vec \omega = \omega\, \hat k</m>, at instant <m>t</m> can be defined by average angular velocity between instant <m>t</m> and another closeby instant <m>t+\Delta t</m>.
+							 
+			</p>
+			<p> </p>
+			<figure xml:id="fig-rotating-disk-counterclockwise-instant-velocity">
+				<caption></caption>
+				<image source="./images/rotation/rotating-disk-counterclockwise-instant-velocity.png" width="70%"/>
+			</figure>
+		</sidebyside>  
+		<p>
+			<men xml:id="eq-instantaneous-rotational-velocity-limit">
+				\omega = \dfrac{\theta\left(\text{at } (t+\Delta t)\right) - \theta\left(\text{at } t\right)}{\Delta t} = \dfrac{\Delta \theta}{\Delta t}.
+			</men> 			
+			In this equation, when the interval <m>\Delta t</m> near <m>t</m> is taken to be an infinitesimal interval, the ratio <m>\Delta \theta/\Delta t</m> is the same as derivative, <m>d\theta/dt</m>. 
+			Since <m> \omega </m> is a ratio of a change in <m> \theta </m> to a change in <m> t </m>, it can be computed by the slope of a <m> \theta </m> versus <m> t</m> plot as I will illustrate next.  
+		</p>
+
+	</subsection>
+
+	<subsection><title> Instantaneous Rotational Velocity and Speed - Graphically</title>
+
+		<p>
+			The formal definition of instantaneous velocity given in Eq. <xref ref="eq-instantaneous-rotational-velocity-limit"/> can be implemented graphically. The ratio on the right side of this equation is just a slope of the <m> \theta</m> versus <m> t </m> plot. 
+		</p>
+
+		<p>
+			<!-- Suppose we examine rotation of a disk by marking a line on it. Suppose initially, the line points in the postive <m>x</m> direction.  --><xref ref="fig-rotation-velocity-graphical-two"/> shows <m> \theta</m>  versus <m> t</m> of some rotating object. The left panel shows the case of steady motion. The slope of this line will be the instantaneous angular velocity at each instant of the duration.
+			<me>
+				\omega = \omega_\text{av} = \dfrac{\theta_2 - \theta_1}{t_2 - t_1}.
+			</me>
+			The right panel of <xref ref="fig-rotation-velocity-graphical-two"/> shows the case of increasing rotation speed. Here, instantaneous angular velocity will be different at different times. For instance, at <m>t_1</m>, we will get <m>\omega</m> by slope of the tangent at <m>t_1</m> and at <m>t_2</m>, we will get <m>\omega</m> by slope of the tangent at <m>t_2</m>.
+		</p>
+
+		<figure xml:id="fig-rotation-velocity-graphical-two">
+			<caption>
+				Left panel: case of uniform angular velocity. Right panel: case of increasing angular velocity. Instantaneous angular velocity is slope of the line in left panel and slope of tangent line in the right panel.
+			</caption>
+			<sidebyside widths="45% 10% 45%">
+				<image source="./images/rotation/rotation-velocity-graphical-steady.png"/>
+				<p></p>
+				<image source="./images/rotation/rotation-velocity-graphical-curved.png"/>
+			</sidebyside>
+		</figure>
+
+
+		<!-- <sidebyside widths="50% 5% 45%">
+			<p>
+			As the disk rotates,
+			angle <m> \theta</m> of the marked line with respect to the positive <m> x </m> axis changes with time. Now, we plot <m> \theta</m>  versus <m> t</m>. If the rotation was steady, we will find the plot to be a straight line. The slope of this line will be the instantaneous angular velocity at each instant of the duration.  
+			</p>
+			<p>
+			</p>
+			<image source="./images/rotation/rotation-velocity-graphical-steady.png"/>
+		</sidebyside>
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				If the rotation was not steady, i.e., either speed was picking up or slowing down, the plot of <m> \theta</m>  versis <m> t</m> will not be a straight line, but it will be curved as shown in the figure. In this case, we will draw a tangent line to the curve at the instant of interest. The figure shows tangent lines for instants <m> t_1 </m> and <m> t_2</m>.  The slope of the tangent lines <m> L_1 </m> and <m> L_2</m> are then the instantaneous angular velocities at these instants.
+			</p>
+			<p> </p>
+			<image source="./images/rotation/rotation-velocity-graphical-curved.png"/>
+		</sidebyside> -->
+		<p>
+			The magnitude of instantaneous angular velocity, i.e., the value without the sign of the sense of rotation, is called <term> instantaneous angular speed</term>. We use the same symbol for angular speed as for the angular velocity.
+		</p>
+	</subsection>
+
+	<example xml:id="ex-Angular-Velocity-from-Angle-versus-Time-Plot-Linear-Segments"><title> Angular Velocity from Angle versus Time Plot - Linear Segments </title>
+		<statement>
+			<p> 
+				<xref ref="fig-ex-ang-vel-from-graph-of-theta-vs-t"/> shows a plot of angle rotated versus time. Find angular velocity at (a) <m> 10\text{ sec}</m>, (b) <m> 15\text{ sec}</m>, (c) <m> 30\text{ sec}</m>, and (d) <m> 50\text{ sec}</m>.
+			</p>
+			<figure xml:id="fig-ex-ang-vel-from-graph-of-theta-vs-t">
+				<caption>
+					Figure for <xref ref="ex-Angular-Velocity-from-Angle-versus-Time-Plot-Linear-Segments"/>.
+				</caption>
+				<image source="./images/rotation/ex-ang-vel-from-graph-of-theta-vs-t.png" width="70%"/>
+			</figure>
+
+		</statement>
+		<!-- <hint> <p>  (a) Find slope. (b) Think slope - no need to do another calculation. (c) and (d) similar to (a) and (b). </p> </hint> -->
+		<answer> <p>  (a) and (b) <m> 15\text{ rad/sec}</m>, (c) and (d) <m> -8\text{ rad/sec}</m>,  </p> </answer>
+		<solution> <title> (a) and (b)  </title>
+			<p>
+				(a) The slope of the line through the point on the graph corresponding to the instant <m> t = 10\text{ sec} </m> gives the angular velocity.
+				<me>
+					\omega = \dfrac{400-100}{20-0} = 15\text{ rad/sec}.
+				</me>
+				This is counterclockwise rotation.
+			</p>
+			<p>(b) The slope here is same as (a) since it is the same line.
+			</p>
+		</solution>
+
+		<solution> <title> (c) and (d)  </title>
+			<p>
+				(c) The slope of the line through the point on the graph corresponding to the instant <m> t = 30\text{ sec} </m> gives the angular velocity.
+				<me>
+					\omega = \dfrac{400-0}{20-70} = -8\text{ rad/sec}.
+				</me>
+				This part is clockwise rotation.
+			</p>
+			<p>(c) The slope here is same as (c) since it is the same line.
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="ex-Angular-Velocity-from-Angle-versus-Time-Plot-Curved"><title> Angular Velocity from Angle versus Time Plot - Curved </title>
+		<statement>
+			<p> 
+				<xref ref="fig-ex-ang-vel-from-graph-of-theta-vs-t-curved" /> shows a plot of angle rotated versus time. The coordinates of some points that may be useful have been provided and so are the tangent lines at the instants of interest.
+			</p>
+			<p>
+
+				Find angular velocity at (a) <m> 7\text{ sec}</m>, (b) <m> 16\text{ sec}</m>, and (c) <m> 33\text{ sec}</m>.
+			</p>
+			<figure xml:id="fig-ex-ang-vel-from-graph-of-theta-vs-t-curved">
+				<caption>
+					Figure for <xref ref="ex-Angular-Velocity-from-Angle-versus-Time-Plot-Curved"/>.
+				</caption>
+				<image source="./images/rotation/ex-ang-vel-from-graph-of-theta-vs-t-curved.png" width="70%"/>
+			</figure>
+
+		</statement>
+		<!-- <hint> <p>  Find the slopes of the tangents. </p> </hint> -->
+		<answer> <p> (a) <m>15\text{ rad/s}</m>, (b) <m> 4.4\text{ rad/s}</m>, (c)  <m>-5.7\text{ rad/s}</m>. </p> </answer>
+		<solution> <title>a</title>
+			<p>
+				Let's leave the units out during the calclations and put them back in at the end with the final answers.
+				We pick the points <m> (0, 100)</m> and <m> (20, 400)</m>. Therefore angular velocity is
+				<me>
+					\omega = \dfrac{400-100}{20-0} = 15\text{ rad/s}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				For this we use the points <m> (0, 225) </m> and <m> (40,400 )</m>. Therefore, the angular velocity at <m> t = 16\text{ sec}</m> is
+			<me>
+				\omega = \dfrac{400-225}{40-0} = 4.4\text{ rad/s}.
+			</me>
+			</p>
+		</solution>
+		<solution><title>c</title>
+			<p>
+				For this we use the points <m> (10, 400) </m> and <m> (63,100 )</m>. Therefore, the angular velocity at <m> t = 16\text{ sec}</m> is
+			<me>
+				\omega = \dfrac{100-400}{63-10} = -5.7\text{ rad/s}.
+			</me>
+			</p>
+		</solution>
+	</example>
+
+	<subsection><title> Net Angle Rotated from Rotational Velocity - Graphically </title>
+		<p>
+			Suppose a wheel rotates at a constant rate of <m> 10 \text{ rad/sec}</m>, and I ask you how much has the wheel rotated during <m> t=0 </m> and <m> t=5\text{ sec}</m>? You will immediately say, <m> 50\text{ rad}</m>. 
+		</p>
+		<p>
+			Now, take a look at the plot of <m> \omega </m> versus <m> t </m> in <xref ref="fig-area-under-the-curve-for-theta-from-omega"/>(a). You will find that your answer of <m>50\text{ rad/s}</m> is just <alert> the area under the curve</alert>. Figure (b) corresponds to a clockwise rotation; in that case, area under the curve gives <m>-50\text{ rad/s}</m>.
+		</p>
+
+		<figure xml:id="fig-area-under-the-curve-for-theta-from-omega">
+			<caption> The plot of <m>\omega</m> versus <m> t </m> is a horizontal line here since the angular velocity is constant. The positive <m> \omega </m> corresponds to the counterclockwise rotation and the negative <m> \omega </m> to the clockwise rotation. The area in each case gives the net angle rotated, which is <m> + 50\text{ rad}</m> in (a) and <m> - 50\text{ rad}</m> in (b).
+			</caption>
+			<image source="./images/rotation/area-under-the-curve-for-theta-from-omega.png" width="80%"/>
+		</figure>
+
+
+		<p>
+			Now, if you have some counterclockwise and some clockwise rotations during <m> t_i </m> to <m> t_f </m> interval, then you would have cancellation of some areas.  If net angle turns out to be positive, we have a net counterclockwise rotation over that period, and if it comes out negative, we have a clockwise rotation, and if it turns out zero, then, we have a net zero rotation, meaning that all counterclockwise rotations got cancelled by equal amount of clockwise rotation bringing the body to the original orientation.
+		</p>
+	</subsection>
+
+	<subsection><title>Angular Velocity Vector</title>
+		<idx><h>Rotational Velocity</h><h>Vector Treatment</h></idx>
+		<p>
+			The discussion above has focused on angular velocity for rotation about an axis. For a fixed-axis situation, that is fine. We can speak about the direction using the clockwise and counterclockwise sense or in the direction of the axis or in the opposite direction. 
+		</p>
+
+		<sidebyside widths="50% 5% 35% 10%">
+			<p>
+				But, for more general situations, such as a rotation of a top about its tip as shown in <xref ref="fig-top-rotating-not-fixed-axis"/>. There are two axes of rotation, axes 1 and 2. The direction of the angular velocity vector about axis 1, <m>\vec \omega</m>, changes with time. These non-fixed axis situations require a full vector treatment of angular velocity.    
+ 
+			</p>
+			<p></p>
+			<figure xml:id="fig-top-rotating-not-fixed-axis">
+				<caption> 
+				</caption>
+				<image source="./images/rotation/top-rotating-not-fixed-axis.png" width="80%"/>
+			</figure>
+			<p></p>
+		</sidebyside>
+		
+		<p>
+			In the angular displacement section, we introduced angular displacement vector. We use that to defind the average angular velocity vector over an interval from <m> t</m>  to  <m> t +  \Delta t</m>, during which the angular displacement vector is <m> \Delta\vec\theta</m>, by
+			<men xml:id="eq-angular-velocity-vector-average">
+				\vec \omega_{\text{av}} = \dfrac{\Delta\vec\theta}{\Delta t}.
+			</men>
+			This definition clearly tells us that the angular velocity vector is in the direction of the displacement vector, i.e., which is either in the direction of the axis or in the opposite direction.
+		</p>
+
+		<p>
+			The instantaneous angular velocity is the average velocity between arbitrarily close instants near the instant of interest. We will not repeat the alternate graphical ways we can compute instataneous quantity from the slope of tangent fom the plots. I will assume that we have information about how fast the body is rotating and the direction of the axis at that instant. We will denote angular velocity vector by <m> \vec \omega</m>.
+		</p>
+
+		<p>
+			If the rotation axis is along the <m> z </m> axis and fixed in time, then we only have the <m>z</m>-component. For these fixed-axis situations, there is no need to use a complicated notation. In these cases, it is sufficient to use the following notation.
+			<me>
+				\vec \omega = \omega_z\,\hat k = \omega\,\hat k.
+			</me> 
+			Or, even drop all these vector considerations, and work with clockwise and counterclockwise.
+		</p>
+		<p>
+			In general, the direction of rotation axis might be pointed in any arbitrary direction with respect to the Cartesian axes. In that case, we can speak either in terms of the magnitude and direction of the angular velocity vector or in terms of its Cartesian components. We will find use of these when we discuss general rotation in another chapter.
+			<men>
+				\vec \omega = \omega_x\hat i + \omega_y\hat j + \omega_z\hat k.
+			</men>
+		</p>
+	</subsection>
+
+	<subsection><title>(Calculus)  Instantaneous Rotational Velocity and Speed - Analytically</title>
+		<idx><h>Rotational Velocity</h><h>Analytical Treatment</h></idx>
+		<p>
+			Analytically, the instantaneous angular velocity  of a fixed-axis rottion is the derivative of the angle with respect to time.
+			<men xml:id="eq-instantaneous-rotational-velocity-derivative-def">
+				\omega = \dfrac{d\theta}{dt}.
+			</men>
+			Since <m> d\theta</m> is positive for a counterclockwise rotation and negative when clockwise, the angular velocity for a counterclockwise rotation is positive and negative for a clockwise rotation.
+		</p>
+		<p>
+			Eq. <xref ref="eq-instantaneous-rotational-velocity-derivative-def"/> actually defines component of angular velocity along the axis of rotation. Say, axis of rotation was the <m>z</m> axis, then angle rotated around <m>z</m> axis as <m>\theta_z</m>, and <m>\omega</m> as <m>\omega_z</m>. You might think of these as
+			<me>
+				\omega_z = \dfrac{d\theta_z}{dt}.
+			</me>
+			Instantaneous angular speed is the absolute value of <m>\omega</m>, i.e., <m>|d\theta/dt|</m>.
+		</p>
+	</subsection>
+
+	<subsection><title> (Calculus) Net Angle Rotated from Rotational Velocity </title>
+
+		<p>
+			We can find the net angle rotated, meaning the counterclockwise angles minus the clockwise angles, by integrating Eq. <xref ref="eq-instantaneous-rotational-velocity-derivative-def"/>. To integrate the equation, we multiply both sides by <m> dt </m> and then integrate the instantaneous angular velocity, shown explictily as function of <m> t</m>, from  <m> t_i </m> to  <m> t_f </m>.
+			<men xml:id="eq-net-angle-rotated-from-angular-velocity">
+				\Delta \theta = \int_{t_i}^{t_f} \, \omega(t)\, dt. 
+			</men>			
+			As an example, say, the angular velocity of a rotating wheel is increasing with time, as given by <m> \omega = 3\,t^2</m> in units of <m> \text{rad/sec}</m> if <m> t </m> in seconds. The net rotated angle during <m> t = 2\text{ sec} </m> to <m> t = 5\text{ sec} </m> will be
+			<me>
+				\Delta \theta = \int_{2}^{5} \,  3\, t^2\, dt = \left( 5^3 - 2^3\right) = 117\text{ rad}.
+			</me>
+		</p>
+	</subsection>
+
+	<subsection><title>(Calculus) Angular Velocity Vector</title>
+	
+		<p>
+			Taking the <m> \Delta t \rightarrow 0</m> limit in Eq. <xref ref="eq-angular-velocity-vector-average"/>, which defines the average angular velocity vector, gives us the angular velocity vector as usual.
+			<men>
+				\vec \omega  = \dfrac{d\vec\theta}{d t},
+			</men>
+			where <m> \vec \theta</m> is the angular displacement with respect to the zero theta direction, i.e., angular position of a marker on the body which is used to indicate the rotation of the body.
+		</p>
+
+	 	<sidebyside widths="50% 5% 45%">
+	 		<p>
+				The direction of angular velocity vector is the direction of rotation axis and the magnitude is the rate at which the body is rotating. Therefore, if the body is rotating at speed <m>10\text{ rad/sec}</m> about an axis in the direction <m>\hat u</m>, we will write this as
+				<me>
+					\vec \omega = (10\text{ rad/sec})\, \hat u.
+				</me>
+			</p>
+			<p></p>
+			<figure xml:id="fig-angular-velocity-vector">
+				<caption>
+				</caption>
+				<image source = "./images/rotation/angular-velocity-vector.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		
+	</subsection>
+
+
+	<subsection><title>Velocity and Angular Velocity</title>
+		<p>
+			Consider a point particle moving in a circle of radius <m>r</m> about <m>z</m>-axis in the <m>xy</m>-plane with a constant speed <m>v</m> as shown in <xref ref="fig-angular-velocity-vector-position-and-velocity"/>. 
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				The directions of the position vector <m>\vec r</m>, velocity vector <m>\vec v</m> and angular velocity vector <m>\vec \omega</m> are such that the direction of the cross product <m>\vec\omega \times \vec r</m> is in the direction of <m>\vec v</m> as you can verify by using the right hand rule.
+			Since the magnitudes of these vectors are related by <m>v = \omega\,r</m>, we can immediately write the following vector relation among these vectors.
+			<men xml:id="eq-angular-velocity-vector-position-and-velocity">
+				\vec v = \vec \omega \times \vec r.
+			</men>
+
+
+			</p>
+			<p></p>
+			<figure xml:id="fig-angular-velocity-vector-position-and-velocity">
+				<caption>
+				</caption>
+				<image source = "./images/rotation/angular-velocity-vector-position-and-velocity.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				The cross-product of <m>\vec \omega</m> and position vector <m>\vec r</m> takes care of the case in which the object moves in any other plane than the plae with origin. <xref ref="fig-angular-velocity-vector-position-and-velocity-2"/> shows a particle moving in a circle about <m>z</m>-axis. At some instant its postion is <m>\vec r</m> which makes angle <m>\alpha</m> with the <m>z</m>-axis. In this case the changing direction of velocity as well as its magnitude is given properly by the cross product of vectors as in Eq. <xref ref="eq-angular-velocity-vector-position-and-velocity"/>
+
+			</p>
+			<p></p>
+			<figure xml:id="fig-angular-velocity-vector-position-and-velocity-2">
+				<caption>
+				</caption>
+				<image source = "./images/rotation/angular-velocity-vector-position-and-velocity-2.png" />
+			</figure>
+		</sidebyside>
+
+	</subsection>
+
+
+
+</section>

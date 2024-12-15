@@ -1,0 +1,145 @@
+<section xml:id="RLC-Circuits"><title> RLC Circuits</title>
+	<introduction>
+		<p>
+			<xref ref="fig-RLC-series-circuit"/> shows a circuit that has all three basic circuit elements, namely a resistor <m>R</m>, an inductor <m>L</m> and a capacitor <m>C</m> connected in series with an alternating EMF source with voltage <m>V(t) = V_0\:\cos(\omega t)</m>.
+		</p>
+		<figure xml:id="fig-RLC-series-circuit">
+			<caption>
+				A series RLC-circuit driven by an alternating EMF.
+			</caption>
+			<image source="./images/ac-circuits/RLC-series-circuit.png" width="60%"/>
+		</figure>
+		<p>
+			We have already studied this circuit in the last chapter. The analysis starts by writing down the Faraday loop rule, which is same as Kirchoof's KVL in this case. We get the following integro-differential equation for the current at instant <m>t</m>.
+			<men>
+				L\frac{dI}{dt} + R I + \frac{1}{C}\int^t I(t')dt' = V_0\cos(\omega t).
+			</men>
+			Taking a derivative of <m>t</m> converts this to a second order differential eqaution.
+			<men xml:id="eq-equation-of-motion-RLC">
+				L\frac{d^2 I}{dt^2} + R \frac{dI}{dt} + \frac{1}{C}\;I = -\omega V_0\sin(\omega t).
+			</men>
+		</p>
+		<p>
+			In AC circuit analysis, we are interested in only the steady state solution, which we recall now.  In steady state, current oscillates with the same frequency <m>\omega</m>, but its phase constant may be different than the phase constant of the source emf. Therefore, we seek solution of the form
+			<men>
+				I(t) = I_0\:\cos(\omega t + \phi_I).
+			</men>
+			We find <m>I_0</m> and <m>\phi_I</m> that solves Eq. <xref ref="eq-equation-of-motion-RLC"/> by inserting <m>I(t)</m> in that equation, expanding the trig functions, collecting terms that multiply <m>\sin(\omega t)</m> and <m>\cos(\omega t)</m>. We then equate the multipliers of <m>\sin(\omega t)</m> and <m>\cos(\omega t)</m> from both sides. These steps are left as an exercise for the student. In the end, you will find the following answer.
+			
+			<mdn>
+				<mrow xml:id="eq-RLC-driven-current-amplitude"> \amp I_0 = \dfrac{V_0}{\sqrt{R^2 + \left(\omega L - \dfrac{1}{\omega C} \right)^2}},</mrow>
+				<mrow xml:id="eq-RLC-driven-current-phase"> \amp \tan\,\phi_I = \dfrac{1}{\omega RC} -  \dfrac{\omega L}{R}.</mrow>
+			</mdn>
+			By taking the ratio of <m>V_0</m> to <m>I_0</m> we determine the amplitude of the impedance <m>|Z|</m> of the series RLC circuit to be
+			<men>
+				|Z| = \sqrt{R^2 + \left( \omega L - \dfrac{1}{\omega C}\right)^2}.
+			</men>
+			From the phase of current with respect to the phase of the source we get the phase of impedance, <m>\phi_Z</m> to be
+			<men>
+				\phi_Z =  -\tan^{-1} \left( \dfrac{1}{\omega RC} -  \dfrac{\omega L}{R} \right).
+			</men>
+			Due to the presence of <m>L</m> and <m>C</m> in the circuit, we expect electromagnetic oscillations in the circuit and due to <m>R</m> we expect damping of the oscillations.  We had found in the last chapter that the series RLC circuit connected to a sinusoidal source is equivalent to a driven damped oscillator. 
+
+		</p>
+	</introduction>
+	<subsection><title>Resonance of Current in Driven RLC Circuit</title>
+		<p>
+			Magnitude <m>I_0</m> and phase <m>\phi_I</m> in Eqs. <xref ref="eq-RLC-driven-current-amplitude"/> and <xref ref="eq-RLC-driven-current-amplitude"/> vary with driving frequency with a largest <m>I_0</m> occuring for a specific frequency, called resonance frequency of current. 
+		</p>
+		<p>
+			Suppose you have a tunable source, which allows you to vary the frequency of th source. As you  vary the frequency <m>\omega</m> of the source, while keeping <m>V_0</m>, <m>L</m>, <m>R</m> and <m>C</m> fixed, you will find that the peak current <m>I_0</m> changes. That is, even when the voltage of the source is fixed, the current in the circuit changes when we change the frequency with which you drive the circuit.
+		</p>  
+		<p>
+			From formula for <m>I_0</m> you can show that the largest peak current will occur  when the frequency <m>\omega</m> of the EMF source is equal to the natural frequency <m>\omega_0</m> of the circuit. 
+			<me>
+				I_0\ \text{max when}\ \ \omega = \dfrac{1}{\sqrt{LC}} \equiv \omega_0.
+			</me>
+			The phenomenon is called the <term>resonance</term> of current the circuit. It turns out that if you look at average power delivered to the resistor in the circuit, that quantity also exhibits a resonance phenomenon. We call that <term>resonance of power</term>. We denote the resonanace frequency of average power of the source by  <m>\omega_R</m>, which occurs at the same frequency as the resonance of current.
+			<men>
+				\omega_R = \dfrac{1}{\sqrt{LC}}.
+			</men>
+			It is also observed that at the resonant frequency, the phase difference between the driving EMF and the current disappears. That is the phase of impedance becomes zero.
+			<men>
+				\phi_Z (\text{ when } \omega = \omega_R) = 0.
+			</men>
+			Therefore, at resonance the driving EMF and the current are in synchronization with each other. Current in the circuit at resonance is given by
+			<men>
+				I_R(t) = \dfrac{V_0}{R}\: \cos(\omega_R t),
+			</men>
+			which would have been the current if the circuit contained only the resistor and no capacitor or inductor.  At resonance, the circuit <q>forgets</q> that the capacitor and inductor are there!
+		</p>
+
+	</subsection>	
+
+
+	<exercise xml:id="ex-Impedance-Current-and-Voltages-in-a-Numerical-RLC-circuit"><title> Impedance, Current, and Voltages in a Numerical RLC circuit </title>
+		<statement>
+			<p>
+				A <m>20\text{-}\Omega</m>  resistor,<m>50\text{-}\mu\text{F}</m>, and <m>30\text{-mH}</m> inductor are connected in series with an AC source of amplitude <m>10\text{ V}</m> and frequency <m>125\text{ Hz}</m>.
+			</p>
+			<p>
+				<ol label="(a)">
+					<li> 
+						What is the (amplitude of) impedance of the circuit? </li>
+					<li> 
+						What is the amplitude of the current in the circuit?</li>
+					<li>
+						What is the phase constant of the current? Is it leading or lagging the source voltage?
+					</li>
+					<li> 
+						Write voltage drops across resistor, inductor and capacitor, and the source voltage as a function of time.
+					</li>
+
+				</ol>
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Definition, (b) Definition, (c) Phase of current is related to phase of impedance, (d) Overall <m>V(t)</m> has zero phase constant, others have nonzero phase constants. Use phase constant of overall current to find the phase constant of voltage across elements. </p> </hint>
+		<answer> <p>  (a) <m>20\ \Omega</m>, (b) <m>0.5\text{ A}</m>, (c) <m>5.4^{\circ}</m>, (d) With <m>V_{\text{Source}} = 10.0\ \text{V} \cos(250\pi t)</m>, <m>V_R = 9.96\ \text{V} \cos(250\pi t + 5.4^{\circ})</m>, <m>V_C = 12.7\ \text{V} \cos(250\pi t + 5.4^{\circ}-90^{\circ})</m>, and <m>V_L = 11.8\ \text{V} \cos(250\pi t + 5.4^{\circ}+90^{\circ})</m>. </p> </answer>
+		<solution> 
+			<p>
+<ol label="(a)">
+<li>	<m>|Z| = \sqrt{R^2 + |X_L - X_C|^2} = 20.1\:\Omega</m>. </li>
+<li> 	<m>I_0 = \dfrac{V_0}{|Z|} \approx 0.5\:\text{A}</m>.  </li>
+<li> 	We have <m>X_L = 2\pi f L = 23.60\:\Omega</m>, and <m>X_C = 1/2\pi f C = 25.5\:\Omega</m>. Since <m>X_C>X_L</m> the current will lead the EMF.  The angle of lead will be
+\[
+\phi = \tan^{-1}\left(\dfrac{X_C - X_L}{R} \right) = 5.4^{\circ} = 0.095\:\text{rad}.
+\]  
+</li>
+<li>	We found above the common current to be <m>I = (0.5\:\text{A})\:\cos(2\pi\times 125\:  t + 0.095)</m>.  Therefore, the voltage drops across various elements as a function of time will be
+<md>
+<mrow> \amp  V_R(t) = (0.5\:\text{A}\times R)\:\cos(2\pi\times 125\:  t + 0.095)</mrow>
+<mrow> \amp  V_L(t) = (0.5\:\text{A}\times X_L)\:\cos\left(2\pi\times 125\:  t + 0.095+\frac{\pi}{2}\right)</mrow>
+<mrow> \amp  V_C(t) = (0.5\:\text{A}\times X_C)\:\cos\left(2\pi\times 125\:  t + 0.095-\frac{\pi}{2}\right)</mrow>
+<mrow> \amp  V(t) = (0.5\:\text{A}\times |Z|)\:\cos\left(2\pi\times 125\:  t \right)</mrow>
+</md>
+Putting in the numerical values for <m>R</m>, <m>X_L</m>, <m>X_C</m> and <m>|Z|</m> gives
+<md>
+<mrow> \amp  V_R(t) = (10\:\text{V})\:\cos(250\pi \:  t + 0.095)</mrow>
+<mrow> \amp  V_L(t) = (11.8\:\text{V})\:\cos\left(250\pi \:  t + 0.095+\frac{\pi}{2}\right)</mrow>
+<mrow> \amp  V_C(t) = (12.75\:\text{V})\:\cos\left(250\pi \:  t + 0.095-\frac{\pi}{2}\right)</mrow>
+<mrow> \amp  V(t) = (10\:\text{V})\:\cos\left(250\pi \:  t \right)</mrow>
+</md>
+</li>
+</ol>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

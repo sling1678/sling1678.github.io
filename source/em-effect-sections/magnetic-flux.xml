@@ -1,0 +1,191 @@
+<section xml:id="Magnetic-Flux"><title> Magnetic Flux </title>	
+
+	<introduction>
+
+
+
+		<p>
+			Magnetic flux through a surface is a measure of number magnetic field lines that pass through the surface. You may recall from your study of electric flux that relative orientation of the surface and field is important for flux. For instance, if a field is parallel to a surface, there will be no flux, and if a field is perpendicular to the surface, it will have maximum flux as shown in <xref ref="fig-magnetic-flux"/>. 
+		</p>
+		<figure xml:id="fig-magnetic-flux">
+			<caption>
+				Magnetic flux through a surface is largest when the surface is perpendicular to the magnetic field lines. In general, 
+				magnetic flux of a uniform magnetic field through flat surface of a loop is <m>\Phi_B = BA\cos\theta</m>. We write this in vector notation as <m>\Phi_B = \vec B\cdot \vec A</m>.
+			</caption>
+			<image source="./images/em-effect/magnetic-flux.png" width="80%"/>
+		</figure>
+		<p>
+			We denote magnetic flux of magnetic field <m>\vec B</m> by <m>\Phi_B</m>. Consider a open flat surface with area <m>A</m>. To take orientation of the surface, we introduce area vector <m>\vec A</m> which has magnitude <m>A</m> and direction normal to the surface. 
+		</p>
+		<p> <alert> 1. Uniform Field Case. </alert> </p>
+		<sidebyside widths="70% 30%">
+			<p>
+				If <m>\vec B</m> is uniform, then flux of this field through  the surface will be
+				<mdn>
+					<mrow xml:id="eq-magnetic-flux-uniform-case"> \Phi_{B,\text{uniform}} \amp = \vec B \cdot \vec A.</mrow>
+					<mrow number="no"> \amp = B A \cos\,\theta,</mrow>
+				</mdn>
+				where <m>\theta</m> is angle between <m>\vec B</m> and <m>\vec A</m>.
+			</p>
+			<image source="./images/em-effect/magnetic-flux-uniform-case.png" width="30%"/>
+		</sidebyside>
+		
+
+		<p> <alert> 2. (Calculus) General Case.</alert> </p>
+		<sidebyside widths="70% 30%">
+			<p>
+				In the general case of arbitrary field and arbitrary surface, we break the surface into small patches of flat areas, and apply Eq. <xref ref="eq-magnetic-flux-uniform-case"/> to each patch. Summing over all patches gives us an estimate of the net flux through the surface. We can write this process as a formal sum.
+				<men>
+					\Phi_B \approx \sum_\text{patches} \vec B \cdot \Delta \vec A.
+				</men>
+			</p>
+			<image source="./images/em-effect/magnetic-flux-general-case.png" width="30%"/>
+		</sidebyside>
+		
+		<p>
+
+			In the limit of infinitesimally small patches, we get the exact flux, which we write as a conceptual integral.
+			<men>
+				\Phi_B = \int_\text{surface}\, \vec B \cdot d \vec A.
+			</men>
+		</p>
+
+		<p>
+			 
+		</p>
+	</introduction>
+
+
+	<exercise><title> Flux of Constant Magnetic Field - Simple Surfaces </title>
+		<statement>
+			<sidebyside widths="50% 5% 35% 10%">
+				<p>
+					A constant magnetic field <m>B_0\hat u_z </m> is present in a region as shown in <xref ref="fig-mag-flux-calc-1"/>.  Calculate magnetic flux through two flat surfaces of area <m>A</m> (a) in the <m>xy</m>-plane (surface <m>S_1</m>) and (b) in the <m>xz</m>-plane (surface <m>S_2</m>).
+				</p>
+				<p></p>
+				<figure xml:id="fig-mag-flux-calc-1">
+					<caption>
+					</caption>
+					<image source="./images/em-effect/mag-flux-calc-1.png" width="60%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+		</statement>
+		<hint> <p> Use <m>\Phi_B = \vec B\cdot \vec A</m>.  </p> </hint>
+		<answer> <p> (a) <m> \pm B_0 A</m>, (b) <m> 0</m>.  </p> </answer>
+		<solution> 
+			<p>
+				(a) The given magnetic field is pointed towards positive <m>z</m> axis. The normal to an area in the <m>xy</m>-plane is along the <m>z</m> axis. The unit vector normal to the <m>xy</m>-plane will be either <m>+\hat u_z </m> or <m>-\hat u_z </m>, which we can write as <m>\pm\hat u_z </m>. The magnetic flux is
+				<md>
+					<mrow> \Phi_B \amp = \left( B_0\hat u_z  \right) \cdot \left(\pm \hat u_z  A\right)</mrow>
+					<mrow> \amp =\pm B_0 A.</mrow>
+				</md>
+			</p>
+			<p>
+				(b) The normal to the area in the <m>xz</m>-plane is <m>\pm\hat u_y</m>.  The dot product between the magnetic field and  the normal now equals zero.  Therefore, the flux of the magnetic field pointed towards the positive <m>z</m> axis through an area in the <m>xz</m>-plane will be zero.  A similar argument will show that the flux of the given magnetic field through an area in the <m>yz</m>-plane will also be zero.
+			</p>
+		</solution>
+	</exercise>	
+
+	<exercise><title>  Flux of Constant Magnetic Field - Slanted Surface </title>
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Given a constant magnetic field of magnitude <m>B_0</m> in the positive <m>z</m>-axis direction find the magnetic flux through the rectangular surface PQRS inside the cube of side <m>a</m> as shown in <xref ref="fig-mag-flux-calc-2"/>, where <m>\hat u_n</m> is normal to the surface.
+				</p>
+				<p></p>
+				<figure xml:id="fig-mag-flux-calc-2">
+					<caption>
+					</caption>
+					<image source="./images/em-effect/mag-flux-calc-2.png" width="60%"/>
+				</figure>
+			</sidebyside>
+
+		</statement>
+		<hint> <p>  Note an easier surface that has same number of field lines through it. </p> </hint>
+		<answer> <p> <m>B_0\, a^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Recall that a dot product also has a meaning in terms of the projection of vectors.  For instance, <m>\vec B\cdot\vec A</m> is equal to the product of the magnitude <m>|\vec B|</m> and the projection of the vector <m>\vec A</m> in the the direction of the vector <m>\vec B</m>.
+			</p>
+			<p>
+				Here, the projection of the area denoted in the figure as PQRS in the direction of magnetic field is equal to the area at the base, viz. PQUT through which magnetic field lines pass perpendicularly. Therefore, the flux through PQRS is equal to the flux through PQUT. 
+				<me>
+					\Phi_B = B_0\, a^2.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise><title>(Calculus) Flux of Inhomogeneous Magnetic Field </title>
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Magnetic field of a current in a wire is inhomogeneous and varies over space. In the Cartesian coordinate system shown in <xref ref="fig-mag-flux-calc-3"/>, the magnetic field of the current <m>I</m> towards the positive <m>z</m>-axis in a long straight wire is given by 
+					<me>
+						\vec B = \dfrac{\alpha}{x^2+y^2}\left(- y\hat u_x + x \hat u_y\right),
+					</me> 
+					
+				</p>
+ 
+				<p></p>
+				<figure xml:id="fig-mag-flux-calc-3">
+					<caption>
+					</caption>
+					<image source="./images/em-effect/mag-flux-calc-3.png" width="60%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				where <m>\alpha = \mu_0 I/2\pi</m>. The magnetic field lines in teh figure  are shown circulating about <m>z</m> axis.
+			</p>
+			<p>
+				Find the flux through surfaces (a) <m>S_1</m>,  (b) <m>S_2</m>, and  (c) <m>S_3</m> shown in <xref ref="fig-mag-flux-calc-3"/>.
+			</p>
+		</statement>
+		<hint> <p>  Think dot product and integration. </p> </hint>
+		<answer> <p> (a) <m>0</m>, (b) <m>\mp\alpha \left(c_2-c_1 \right) \ln{\left(\dfrac{b_2}{b_1}\right)} </m>, (c) <m> \pm\alpha \left(c_2-c_1 \right) \ln{\left(\dfrac{a_2}{a_1}\right)}</m>.  </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				Since the magnetic field varies over an area, we will think in terms of area element <m>dA</m> of each surface.
+			</p>
+			<p> 
+				(a) The normal <m>\hat u_n</m> to surface <m>S_1</m> is along the <m>z</m>-axis.  Therefore, the dot product of <m>\vec B</m> with <m>\hat u_n</m> will vanish, which makes the flux through <m>S_1</m> zero.
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				(b) The normal <m>\hat u_n</m> to surface <m>S_2</m> along the <m>x</m>-axis, giving <m>\hat u_n = + \hat u_x</m> or  <m>\hat u_n = - \hat u_x</m>. Due to this ambguity in normal direction, we will get two answers. The area element on <m>S_2</m> in the <m>yz</m>-plane is 
+				<me>
+					d\vec A = \pm dydz \hat u_x.
+				</me>  
+				The surface <m>S_2</m> has <m>x=0</m>. The magnetic flux through <m>S_2</m> will be given by the following integral based on the general formula.
+				<md>
+					<mrow> \Phi_B \amp = \iint \vec B\cdot d\vec A</mrow>
+					<mrow>         \amp =  \mp\alpha\int_{y=b_1}^{y=b_2}\int_{z=c_1}^{z=c_2}\left[ \dfrac{y}{x^2+y^2}\right] _{x=0}dydz</mrow>
+					<mrow>         \amp = \mp\alpha \left(c_2-c_1 \right) \ln{\left(\dfrac{b_2}{b_1}\right)}</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(c)</title> 
+			<p>
+				(c) A similar calculation as part (b) will give the following two answers for the magnetic flux through <m>S_3</m>.
+
+				<me>
+					\Phi_B = \pm\alpha \left(c_2-c_1 \right) \ln{\left(\dfrac{a_2}{a_1}\right)}
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+	
+</section>

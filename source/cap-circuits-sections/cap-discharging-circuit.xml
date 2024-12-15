@@ -1,0 +1,142 @@
+<section xml:id="Capacitor-Discharging-Circuit"><title> Capacitor Discharging Circuit </title>
+	<introduction>
+		<p>
+			A charged capacitor provides a ready supply of separated charges. When you provide a conducting path for excess electrons on the negative plate to drift to positive plate, it leads to <term>discharge</term> of the capacitor. This process releases electrical energy in a short time.
+		</p>
+		<sidebyside widths="55% 5% 40%">
+			<p>
+				<p>
+					  To use charges on a charged capacitor one can connect the ends of the capacitor through a device of resistance <m>R</m> and a switch S as indicated in <xref ref="fig-cap-discharging-circuit" />. When the switch is closed, current flows in the circuit until electrons from the negative plate neutralize the positive charges on the positive plate.  
+				</p>
+			</p>
+			<p></p>
+			<figure xml:id="fig-cap-discharging-circuit">
+				<caption>
+					A simple capacitor discharging circuit. <!-- When switch S is closed, electrons at the negative plate drift to the positive plate generating a (traditional) current as indicate in the figure. After time <m>RC</m>, called the time constant of the RC-circuit, <m>1/e</m> of charge will remain. -->
+				</caption>
+				<image source="./images/cap-circuits/cap-discharging-circuit.png" width="40%"/>
+			</figure>
+		</sidebyside>
+
+		<p>
+			Rate of discharge depends on the current value of charges on the plates, which leads to charge decaying exponentially. Let <m>Q_0</m> be the starting charge at <m>t=0</m>. Then, using Calculus, it will be shown below that charge remaining on capacitor at time <m>t</m> will be
+			<me>
+				Q(t) = Q_0 e^{ - t/RC}.
+			</me>
+			A plot of this function versus time is shown in <xref ref="fig-cap-discharging-circuit-exponetial-decay-plot"/>. The rate of discharge, i.e., current in the circuit varies with time and is proportional to the charge on the plates at the instant.
+			<me>
+				\text{Rate of discharge } = \dfrac{1}{RC}\, Q(t).
+			</me>
+		</p>
+		<p>
+			The time to reach <m> \dfrac{1}{e}</m> of the original charge, where <m> e </m> is the Euler number with value <m>e = 2.718...</m>, is an important  characteristic of the circuit. This time is called <term>time constant</term> of the circuit. The time constant is usually denoted by the Greek letter <m>\tau</m>. Of course, during this time, <m> 1-1/e</m> of the charge, which is approximately two-thirds of the charge, has been discharged through the circuit. The time constant of the circuit in <xref ref="fig-cap-discharging-circuit" /> is product of the resistance and capacitance of the circuit.
+
+			<men xml:id="eq-cap-discharging-circuit-tau">
+				\tau = RC.
+			</men>
+
+			By adjusting <m>R</m> we can congtrol the rate at which dischsrging of a capacitor can take place. In another section, we will study charging process. We will find there that the rate of charging has also the same time constant. 
+		</p>
+	</introduction>
+
+	<subsection><title> (Calculus) Equation of Motion for Discharging a Capacitor </title> 
+
+		<p>
+			Let us examine discharging circuit in <xref ref="fig-cap-discharging-circuit" /> at instant <m>t</m>. Let <m>I(t)</m> be current in the circuit, <m>\pm Q(t)</m> be charges on the plates. The potential drop <m> V_c </m> across the capacitor is given by the capacitor equation.
+			<men xml:id="eq-cap-discharging-circuit-Q-eq-CV">
+				V_c(t) = \dfrac{Q(t)}{C}.
+			</men>
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+	 			By Kirchhoff's Loop Rule on the loop a-b-a' in  <xref ref="fig-cap-discharging-circuit-KVL-loop"/>, we find the following equation for relation among these quantities.
+	 			<men xml:id="eq-cap-discharging-circuit-KVL-loop-eq">
+	 				-R I + V_c = 0.
+	 			</men>
+	 			Current <m>I</m> is rate at which charge is decreasing in time. Therefore,
+	 			<men xml:id="eq-cap-discharging-circuit-I-eq-dQdt">
+	 				I = - \dfrac{dQ}{dt}.
+	 			</men>
+	 		</p>
+	 		<p></p>
+	 		<figure xml:id="fig-cap-discharging-circuit-KVL-loop">
+	 			<caption>
+	 			</caption>
+	 			<image source="./images/cap-circuits/cap-discharging-circuit-KVL-loop.png" width="50%"/>
+	 		</figure>
+	 	</sidebyside>
+
+ 		<p>
+ 			From Eqs. <xref ref="eq-cap-discharging-circuit-Q-eq-CV"/> to <xref ref="eq-cap-discharging-circuit-I-eq-dQdt" /> gives the following equations for rate at which charge drops in time.
+ 			<men xml:id="eq-cap-discharging-circuit-eom">
+ 				\dfrac{dQ}{dt} = - \dfrac{1}{RC}\, Q.
+ 			</men>
+ 			Let <m>\pm Q_0</m> be the charges on capcitor plates at <m>t=0</m>, when the circuit switch was closed. Then, Eq. <xref ref="eq-cap-discharging-circuit-eom"/> can be solved to show that charge at an arbitrary instant <m>t \gt 0</m> will be
+ 			<men xml:id="eq-cap-discharging-circuit-eom-soln-Q">
+ 				Q(t) = Q_0\, e^{- t / RC}.
+ 			</men>
+ 			A plot of <m>Q</m> versus <m>t</m> presented in <xref ref="fig-cap-discharging-circuit-exponetial-decay-plot"/> shows the exponential decaying behavior of the discharge process. 
+ 		</p>
+ 		
+		<figure xml:id="fig-cap-discharging-circuit-exponetial-decay-plot">
+			<caption>
+				Charge on positive plate decays exponentially with time with a time constant <m>\tau= RC</m>. The time constant is equal to the time for charge to decay to <m>1/e</m> of its initial value.
+			</caption>
+			<image source="./images/cap-circuits/cap-discharging-circuit-exponetial-decay-plot.png" width="70%"/>
+		</figure>
+ 
+ 		<p>
+			Plots of current <m>I</m> vs <m>t</m> and potential drop across the capacitor <m>V_c</m> vs <m>t</m> show similar plots.
+ 			<md>
+ 				<mrow> I \amp = -\dfrac{dQ}{dt} = \dfrac{Q_0}{RC}\, e^{- t / RC}.</mrow>
+ 				<mrow> V_c \amp = \dfrac{Q}{C} = \dfrac{Q_0}{C}\, e^{- t / RC}.</mrow>
+ 			</md>
+ 
+		</p>
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Numerical-Example-of-Discharging-a-Capacitor"><title> Numerical Example of Discharging a Capacitor </title>
+		<statement>
+			<p>
+				Consider a capacitor of capacitance <m>2\;\mu\text{F}</m>.  (a) Find the time constant of a circuit when the capacitor is connected to a <m>1.0\text{ k}\Omega</m>  resistor. (b) Suppose the capacitor was charged to contain <m>5.0\;\mu\text{C}</m> at <m>t = 0</m>. At what time will there be <m>2.0\;\mu\text{C}</m> left on the capacitor?
+			</p>
+
+		</statement>
+		<hint> <p>  Use the solution of discharging circuit. </p> </hint>
+		<answer> <p>  (a) <m>2\text{ ms} </m>, (b) <m>1.8\text{ ms} </m>. </p> </answer>
+		<solution> <title>(a) </title>
+			<p>
+				(a) The time constant follows from the result <m>\tau = RC</m> for this circuit given above.
+				<me>
+					\tau = RC = 1000\ \Omega\times 2\times 10^{-6}\text{ F} = 2\times 10^{-3}\text{ sec} = 2\text{ ms}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b) </title>
+			<p>
+				(b) Using <xref ref="eq-cap-discharging-circuit-eom-soln-Q"/>, we set up the following equation for charge at an unknown time.
+				<me>
+					2\ \mu\text{C} = 5\ \mu\text{C} \times \exp{\left(-\frac{t}{2\text{ ms} } \right)}
+				</me>
+				Therefore, we have the following exponential equation to solve.
+				<me>
+					\exp{\left(-\frac{t}{2 \text{ms} } \right)} = 0.4.
+				</me>
+				Taking natural logarithm of both sides converts this equation into a linear equation for the unknown <m>t</m>.
+				<me>
+					-\frac{t}{2 \text{ ms} } = \ln(0.4),
+				</me>
+				which gives <m>t=1.8\text{ ms}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+ 
+
+
+
+
+</section>

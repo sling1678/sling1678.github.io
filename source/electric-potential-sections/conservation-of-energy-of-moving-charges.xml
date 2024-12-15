@@ -1,0 +1,56 @@
+<section xml:id="section-Conservation-of-Energy-of-Moving-Charges"><title> Conservation of Energy of Moving Charges </title>
+	<introduction>
+		<p>
+			Electric force applied by a static electric field is a conservative force. Suppose a charge <m>Q</m> of mass <m>m</m> is subject to only electric force and is moving in a region where electric potential by all other charges is <m>\phi</m>. Then, we define its energy to be sum of its kinetic energy and electrical potential energy. Let's denote energy here by <m>\mathcal{E}</m> symbol to distinguish it from <m>E</m> which are using for electric field.
+			<me>
+				\mathcal{E} = \frac{1}{2} mv^2 + Q\phi.
+			</me>
+			Now, recall that potential varies from place to place, so, we might right <m>\phi</m> as a function of space <m>\phi(x,y,z)</m>. Often, we use <m>\vec r</m> as a short hand for <m>(x,y,z)</m>.
+			<me>
+				\mathcal{E} = \frac{1}{2} mv^2 + Q\phi(x,y,z) .
+			</me>
+			Therefore, if the particle moving under the influence of the electric field, goes from some point <m>P_1(x_1, y_1, z_1)</m>, where it has speed <m>v_1</m> to point <m>P_2(x_2, y_2, z_2)</m>, where it has speed <m>v_2</m>, by conservation of energy we will have
+			<men xml:id="eq-conservation-of-energy-electrical">
+				\frac{1}{2} mv_1^2 + Q\phi(x_1,y_1,z_1) = \frac{1}{2} mv_2^2 + Q\phi(x_2,y_2,z_2).
+			</men>
+			If you have other forces, then, you will have to include potential energies corresponding to them as well, and any loss of energy or gain of energy by work by other forces. But, as long as you have only electrical force, Eq. <xref ref="eq-conservation-of-energy-electrical"/> will be applicable.
+		</p>
+		<p>
+			You must be careful when using Eq. <xref ref="eq-conservation-of-energy-electrical"/>. For instance, if you use this equation for an electron accelerating across a potential difference of more than <m>270\text{ kV}</m>, you will get speed of electron to be more than the speed of light. This is not allowed by special relativity. You need a different analysis at high speeds.
+		</p>
+ 
+	</introduction>
+
+	<exercise xml:id="ex-Accelerating-a-Charged-Particle-Between-two-Parallel-Plates"><title>Accelerating a Charged Particle Between two Conductors</title>
+
+		<statement>
+			<p>
+				Two plates are maintained at a potential difference of <m>1,000\text{ V}</m>. An electron is released from the negative plate at nearly zero speed. After a short time, the electron strikes the postive plate. What is the speed of the electron when it strikes the positive plate?
+			</p>
+		</statement>
+		<hint><p>Use conservation of energy.</p></hint>
+		<answer><p><m>1.87\times 10^{7}\text{ m/s}</m>.</p></answer>
+		<solution>
+			<p>
+				There is only electric force on the electron in the situation. Therefore, its energy is conserved. The two points we take are (1) near the negative plate and (2) near the positive plate. We have the following data:
+				<me>
+					\phi_1 = 0,\ \ \phi_2=1,000\text{ V},\ \ v_1 = 0,\ \ v_2=?.
+				</me>
+				Using Eq. <xref ref="eq-conservation-of-energy-electrical"/>, we get
+				<me>
+					0 + 0  = \frac{1}{2} m_e v_2^2 - e \times 1000.
+				</me>
+				Therefore,
+				<md>
+					<mrow> v_2 \amp = \sqrt{ \dfrac{ 2000\, e}{ m_e} }  = \sqrt{ \dfrac{ 2000\times 1.6\times 10^{-19}}{ 9.11\times 10^{-31}} }  = 1.87\times 10^{7}\text{ m/s}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>	
+
+
+
+
+
+
+</section>

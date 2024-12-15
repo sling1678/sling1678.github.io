@@ -1,0 +1,221 @@
+<section xml:id="resistors-in-series"><title> Resistors in Series </title>
+
+	<introduction>
+
+		<p>
+			When two resistors are connected end-to-end such that the same current must flow through both, then we say that the resistors are <term> conected in series</term> as shown in <xref ref="fig-resistors-in-series-definition" />.  
+		</p>
+		
+		<figure xml:id="fig-resistors-in-series-definition">
+			<caption>
+				Two resitors in series in a circuit if same current passes through them both.
+			</caption>
+			<image source="./images/electric-circuits/resistors-in-series-definition.png" width="55%"/>			
+		</figure>
+	</introduction>
+
+	<subsection> <title> Current and Voltages in Series </title>
+		<p>
+			In <xref ref="fig-resistors-in-series-definition" />, the resitors in series are connected to a voltage source such that we set up a potential differece across the two resistors.
+			<men xml:id="eq-over-all-potential-drop-R-in-series-1">
+				\phi_a - \phi_b = V.
+			</men>
+			But since we do not know the potential drop across either of the two resitors, we cannot apply Ohm's law to either resitor to find the current through them. If we apply Ohm's law to each of the two resitors we will get the following equations with unknown <m>\phi_c</m> as well as <m>I</m>.
+			<mdn>
+				<mrow xml:id="eq-ohms-law-for-R1">
+					\phi_a - \phi_c \amp = I R_1. </mrow>
+				<mrow xml:id="eq-ohms-law-for-R2">
+					\phi_c - \phi_b \amp = I R_2. </mrow>
+			</mdn>
+			We can think of finding <m>I</m> as an algebra problem for these two equations. You can eliminate <m>\phi_c</m> by adding the two equations and solve for <m>I</m>. 
+			<men>
+				I = \dfrac{V}{R_1 + R_2}.
+			</men>
+			Using this in the two equations above, we can immediately find the voltage drops across each resitor.
+			<md>
+				<mrow>
+					\Delta\phi_1 \amp = \phi_a - \phi_c  = V \dfrac{ R_1 }{R_1 + R_2}. </mrow>
+				<mrow >
+					\Delta\phi_2 \amp =\phi_c - \phi_b  = V \dfrac{ R_2 }{R_1 + R_2}. </mrow>
+			</md>
+			From these you can see that total voltage drop <m>V</m> has been proportionaltely shared by the two resistors in series. We say that resitors in series <q>divide-up</q> the total voltage acoss them in proportion of their own resitance - the resitor with higher resitance has the higher proportion of voltage across it. 
+		</p>
+		<p>
+			An open circuit with no connection, say between <m>b</m> and <m>c</m> in <xref ref="fig-resistors-in-series-definition"/> will have <m>R_2=\infty</m>, and all voltage will drop across such an open line. We call such places in a circuit to be <term>open circuit</term>.
+
+		</p>
+	</subsection>
+
+	<subsection> <title> Equivalent Resistance of Resitors in Series </title>
+		<p>
+			It is instructive to think of resistors in series conceptually, as well, which we do next.
+			To find the common current <m>I</m> through resistors in series, we will combine them into one resistor, to which we can apply Ohm's law. For instance, if resistor <m>R_1</m> is a <m>5\text{-m}</m> copper wire and <m>R_2</m> is a <m>3\text{-m}</m> copper wire, then we can replace them with <m>5+3=8\text{-m}</m> wire of same thickness. That means, the net resitance of two resistors in series is 
+			<me>
+				R_\text{series} = R_1 + R_2.
+			</me>
+			These arguments for two resitors in series can be easily extend to the case of  <m>N</m> resistors in series, giving us 
+			<men> 
+				R_\text{series} = R_1 + R_2 + \cdots + R_N.
+			</men>
+		</p>
+		<p>
+			We say that between points <m>a</m> and <m>b</m>, in <xref ref="fig-resistors-in-series-definition" /> the two resistors present an equivalent resistance, <m> R_\text{equiv}</m>, 
+			<me>
+				R_\text{equiv} = R_\text{series} = R_1 + R_2.
+			</me>
+ 			We may think of an equivalent circuit that has only one resitor, with resistance <m>R_\text{equiv} </m> rather than two resistors of the original circuit, <alert> without affecting the original circuit outside of points <m>a</m> and <m>b</m></alert>, as indicated in <xref ref="fig-resistors-in-series-equivalent" />.
+ 		</p>
+ 
+ 		<p>
+			Now, we can apply Ohm's law for this equivalent resistor to obtain current <m>I</m> as
+			<men>
+				I = \dfrac{\Delta \phi}{R_\text{equiv}} = \dfrac{\phi_a - \phi_b}{R_1 + R_2} = \dfrac{V}{R_1 + R_2},
+			</men> 
+			where I have replaced <m>\phi_a-\phi_b</m> by <m>V</m> as we noted in Eq. <xref ref="eq-over-all-potential-drop-R-in-series-1" />.
+		</p>
+		<figure xml:id="fig-resistors-in-series-equivalent">
+			<caption>
+				Two resitors in series in a circuit can be replaced by an equivalent resistor without affecting circuit outside of points <m>a </m> and <m>b</m>. 
+			</caption>
+			<image source="./images/electric-circuits/resistors-in-series-equivalent.png" width="80%"/>			
+		</figure>
+	</subsection>
+
+	<subsection> <title> Potential Drops Across Each Resistor in Series </title>
+		<p>
+			Now, we can use Ohm's law on each of the resistor, as in Eqs. <xref ref="eq-ohms-law-for-R1" /> and <xref ref="eq-ohms-law-for-R2" />, to find potential drops across each.
+			<mdn>
+				<mrow xml:id="eq-ohms-law-for-R1-potential-diff">
+					\Delta\phi_1 = \phi_a - \phi_c \amp = \dfrac{R_1}{R_1 + R_2}\, V, </mrow>
+				<mrow xml:id="eq-ohms-law-for-R2-potential-diff">
+					\Delta\phi_2 = \phi_c - \phi_b \amp = \dfrac{R_2}{R_1 + R_2}\, V. </mrow>
+			</mdn>
+		</p>
+		<sidebyside widths="50% 50%">
+			<p>
+				An important conceptual lesson to note here is that total potential drop across the two resistors, <m>\Delta\phi = \phi_a - \phi_b\equiv V</m>, is actually a sum of the potential drops <m>\Delta\phi_1 = \phi_a - \phi_c\equiv V_1</m> and <m>\Delta\phi_2 = \phi_c - \phi_b\equiv V_2</m> across the two resitors in series.
+				<me>
+					V = V_1 + V_2.
+				</me>
+			</p>
+ 
+			<image source="./images/electric-circuits/resistors-in-series-voltages.png" width="70%"/>
+		</sidebyside>
+		<p>
+			We say that original voltage across the two has been <alert> divided up</alert> between the two resitors. We say that resitors in series is a <alert>volatage-divider circuit</alert>! Eqs. <xref ref="eq-ohms-law-for-R1-potential-diff"/>  and  <xref ref="eq-ohms-law-for-R2-potential-diff"/> tell us that the total voltage drop <m>V</m> has been proportionaltely shared by the two resistors in series. We say that resitors in series <q>divide-up</q> the total voltage acoss them in proportion of their own resitance - the resitor with higher resitance has the higher proportion of voltage across it. 
+		</p> 
+	</subsection>
+ 
+	<exercise xml:id="ex-Current-Voltage-and-Power-in-Resistors-in-Series-Circuit"><title> Current, Voltage, and Power in Resistors in Series Circuit </title>
+		<statement>
+			<p>
+				The circuit in <xref ref="fig-ex-resistors-in-series-cur-voltage-power"/> shows two resitors in series with a voltage source.
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					<p>
+						(a) Find current through each resitor.
+					</p>
+					<p>
+						(b) Find voltage across each resitor.
+					</p>
+					<p>
+						(c) Find power dissipated in each resistor.
+					</p>
+
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-resistors-in-series-cur-voltage-power">
+					<caption>
+					</caption>
+					<image source="./images/electric-circuits/ex-resistors-in-series-cur-voltage-power.png" width="60%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				(d) How much energy is delivered to the circuit by the voltage source in <m>10\text{ minutes}</m>.
+			</p>
+		</statement>
+		<hint> <p> (a)-(c) Use definitions. (d) Use energy conservation. </p> </hint>
+		<answer> <p>  (a) <m> 0.4\text{ A}</m>,
+					(b) <m> 4\text{ V}</m>, <m> 8\text{ V}</m>, 
+					(c) <m>1.6\text{ W} </m>, <m>3.2\text{ W} </m>, 
+					(d) <m> 2,880\text{ J} </m>. </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a) Since the resitors are in series, same current <m>I</m> flows through both resitors and encounters a net resistance <m>R_1 + R_2</m>.
+				<md>
+					<mrow> I \amp = \dfrac{V}{R_1 + R_2} = \dfrac{12\ \text{V}} {10\ \Omega + 20\ \Omega} = 0.4\text{ A}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				(b) 
+				Same current <m>I</m> flows through both resitors. Applying Ohm's law on each resitor will give us the potential drops across each of the resitors.
+				<md>
+					<mrow> V_1 \amp = I_1R_1 = IR_1  =   0.4\text{ A} \times 10\ \Omega = 4\text{ V},</mrow>
+					<mrow> V_2 \amp = I_2R_2 = IR_2 =   0.4\text{ A} \times 20\ \Omega = 8\text{ V}.</mrow>
+				</md>
+			</p>
+		</solution>
+
+
+		<solution> <title> (c) </title>
+			<p>
+				(c) 
+				Power dissipated in a resitor equals <m>IV</m> for that resistor. 
+				<md>
+					<mrow> P_1 \amp = I_1 V_1 = I V_1 = 0.4\text{ A} \times 4\text{ V} = 1.6\text{ W}.</mrow>
+					<mrow> P_2 \amp = I_2 V_2 = I V_1 = 0.4\text{ A} \times 8\text{ V} = 3.2\text{ W}.</mrow>
+				</md>
+			</p>
+		</solution>
+
+		<solution> <title> (d) </title>
+			<p>
+				(d) 
+				Energy conservation means the energy lost to the resitors must be suplied by the voltage source. Therefore, the net power of the source must be
+				<me>
+				 	P_\text{source} = P_1 + P_2 = 4.8\text{ W}. 
+				</me>
+				Therefore energy supplied in <m>10\text{ minutes}</m> will be
+				<me>
+				 	E = P_\text{source}\Delta t = 4.8\text{ W} \times 600\text{ s} = 2,880\text{ J}.
+				</me>
+			</p>
+		</solution>
+	</exercise>	
+
+	<example xml:id="exp-Dependence-of-the-Terminal-Voltage-of-Battery-on-the-Load"><title> Dependence of the Terminal Voltage of Battery on the Load </title>
+		<statement>
+			<p>
+				Every battery has an internal resistance.  As a result voltage measured at the terminals is not equal to the EMF of the battery. While EMF of the battery is determined by the chemical potential of the chemicals involved, the potential difference, i.e., the voltage across terminals, depends on the resistance of the load connected across the terminals as we will show in the solution here.  
+			</p>
+			<p>
+				If you want to explore the issue yourself, try finding a formula for the potential drop across the terminals in the following figure, which has   a battery with EMF <m>V</m> and internal resistance <m>R_i</m> connected to a load of resistance <m>R_L</m>. Then, explore <m>V_T</m> as a function of <m>R_L</m>. What happens when <m>R_L \gt\gt R_i</m>?
+			</p>
+			<image source="./images/electric-circuits/exp-dc-circuit-terminal-voltage-of-source-and-load.png" width="50%"/>
+
+		</statement>
+		<hint> <p>  <m>R_i</m> and <m>R_L</m> are in series. </p> </hint>
+		<answer> <p> <m>V_T = \dfrac{R_L}{R_L + R_i}\, V </m>. </p> </answer>
+		<solution> 
+			<p>
+
+				From the circuit, we see that <m>R_L</m> and <m>R_i</m> are in series. We also see that the terminal voltage is just the potential drop across the load <m>R_L</m>. Therefore,
+				<me>
+					V_T =  \phi_b - \phi_c =   I R_L =  \dfrac{R_L}{R_L + R_i}\, V.
+				</me>
+				Therefore, the voltage across the terminals of a battery depends upon whatever you connect across its terminals. However, if <m>R_i \lt \lt R_L</m>, then <m>V_t</m> can be approximately independent of the load.
+				<me>
+					V_T = \dfrac{R_L}{R_L + R_i}\, V \approx V\text{ if }R_i=0\text { or } R_i \lt\lt R_L.
+				</me>
+				This can be illustrated for a voltaic cell of EMF 1.5 volts and internal resistance <m>1\ \Omega</m>.   With a <m>1000\text{-} \Omega</m> resistor load, the terminal voltage will be approximately 1.5 volts, but with a <m> 0.5\text{-}\Omega</m> load resistor, the voltage across the same terminals will be only 0.5 volt! 
+			</p>
+		</solution>
+	</example>
+
+
+
+
+</section>

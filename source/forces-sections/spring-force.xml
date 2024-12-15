@@ -1,0 +1,153 @@
+<section xml:id="forces-Spring-Force"><title> Spring Force</title>
+	
+	<p>
+		A fundamental property of springs is that when it is either stretched or compressed, it tends to develop a force. The spring force pulls at the two ends if it is stretched and pushes away at the two ends if it is compressed.  You might say that when spring is stretched, the bodies at the two ends develop an attractive force between them and when spring is compressed, the bodies at the two ends develop a repulsive force between them. 
+	</p>
+	<p>
+		<idx><h>Forces</h><h>Spring Force</h></idx><idx>Spring Force</idx>
+
+		This force is called <term>spring force</term>. We denote the magnitude of spring force by symbol <m> F_{\text{sp}}</m>. The magnitude of spring force between the two bodies connected by the spring is proportional to the <alert>change in length of the spring</alert>, not the length of the spring.
+	</p>
+
+	<sidebyside widths="50% 5% 45%">
+		<p>
+			<idx>Spring Constant</idx>
+			Let <m> \Delta l </m> be the absolute value of the change in length, taken to be positive for both stretch and compression. Then, <m> F_{\text{sp}}</m> is given by
+			<men> 
+				F_{\text{sp}} = k\, \Delta l,
+			</men>
+			where <m> k </m> is called <term> spring constant</term>. A stiffer spring has larger value of <m> k </m>.
+		</p>
+ 
+		<p></p>
+		<figure xml:id="fig-spring-force">
+			<caption></caption>
+			<image source="./images/forces/spring-force.png" width="70%"/>
+		</figure>
+	</sidebyside>
+	<p>
+		Often, one end of the spring is fixed to a fixed support. In <xref ref="fig-spring-force-x-axis" />, let B be a fixed support, then, the change in the length of the spring is completely dependent on the position of the block A on the other end.
+	</p>
+
+	<figure xml:id="fig-spring-force-x-axis">
+		<caption>
+			Spring force on a block attached through a spring to a fixed support with a Cartesian coordinate system. The origin is placed at the point where moving body A is located when spring is neither stretched nor compressed.
+		</caption>
+		<image source="./images/forces/spring-force-x-axis.png" width="70%"/>
+	</figure>
+
+	<p>
+	<!-- <sidebyside widths="55% 45%">
+		<p>  -->
+			We will then place positive <m> x </m> axis in the direction of A and place the origin at the point where A is present when the spring is neither stretched nor compressed. Let <m> x </m> be the <m> x </m> coordinate of the block A at some instant <m> t </m>. This gives the change in the length of the spring to be
+				<me>
+					\Delta l = |x|.
+				</me>
+		<!-- </p>
+		<image source="./images/forces/spring-force-x-axis.png" width="70%"/>
+	</sidebyside>
+	<p> -->
+		Then, spring force vector on A can be written more simply by using unit vector <m> \hat i</m> for the direction of the force on A as
+		<men>
+			\vec F_{\text{sp}}^{\text{on A}} = - k\, x\, \hat i.
+		</men>
+		<!-- We don't always have to be so verbose and write <q>on A</q> all the time. The object on which the force is acting in a particular situation may be clear from the context. -->
+		Although, in most situations, we will be dealing with only A and ignore B, just for completeness, I would like to point out that there is a force on B also in the opposite direction to that on A.
+		<men>
+			\vec F_{\text{sp}}^{\text{on B}} = + k\, x\, \hat i.
+		</men>
+ 	
+	</p>
+	<p>
+		The <m>F_x=ma_x</m> of the block attached to spring and placed on a frictionless table will be
+		<me>
+			m a_x = - k x.
+		</me>
+		Since <m>x</m> varies with time, we see that <m>a_x</m> is a function of time also. Actually, this equation should be treated as a differential equation of variable <m>x(t)</m>.
+		<me>
+			m \frac{d^2x}{dt^2} = - k x.
+		</me>
+		The solution of this equation gives position as function of time. Solving this differential equation gives us a general solution, which is a linear combination of a sine and a cosine function.
+		<men>
+			x(t) = C\;\cos(\omega t) + S\; \sin(\omega t),
+		</men>
+		where <m>C</m> and <m>S</m> are constants, dependent on initial position and velocity, and <m>\omega</m> is 
+		<me>
+			\omega = \sqrt{ \frac{k}{m} }.
+		</me>
+		Quantity <m>\omega</m> is called angular frequency, In one cylce, <m>\omega t </m> changes by <m>2\pi\text{ rad}</m>. This gives period of oscillations <m>T</m> to be
+		<me>
+			T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{m}{k}}.
+		</me>
+		We will devote an entire chapter on the motion of a block attached to a spring. This system goes by the name <term>simple harmonic motion</term>.
+	</p>
+
+
+
+
+	<example xml:id="ex-A-Block-Hanging-from-a-Spring-The-Stretch-of-Spring"><title> A Block Hanging from a Spring - The Stretch of Spring</title>
+		<statement>
+			<sidebyside widths="60% 10% 15% 15%">
+				<p>
+					<p>
+						A <m>2\text{-kg}</m> brass block is attached at one end of a spring of spring.  The other end of the spring is attached to a support in the ceiling so that the brass block hangs at rest.  We find that the length of the sring has stretched by <m> 5.0\text{ cm}</m>.
+					</p>
+
+					<p>
+						(a) Draw a free-body diagram of forces on the brass block.
+					</p>
+					<p>
+						(b) By how much does the spring stretch? 
+					</p>
+
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-block-on-spring-question">
+					<caption></caption>
+					<image source="./images/forces/ex-block-on-spring-question.png"/>
+				</figure>
+
+				<p></p>
+			</sidebyside>
+		</statement>
+		<!-- <hint> <p> Balance the two opposing forces.  </p> </hint> -->
+		<answer> <p> (a) see the solution. (b) <m> 2.0\text{ cm}. </m>  </p> </answer>
+		<solution> 
+			<sidebyside widths="60% 20%">
+				<p> <p>(a) The figure shows the two forces on the block.
+					</p> 
+					<p> (b)
+						They must be balanced since the block has zero acceleratio. Therefore,
+						<me> 
+							k\Delta l = m g.
+						</me>
+						Solving for the stretching we get
+						<me>
+							\Delta l = \dfrac{mg}{k} = \dfrac{2\times 9.81}{1000} = 0.01962\text{ m} = 2.0\text{ cm}. 
+						</me>
+					</p>
+				</p>
+				<figure xml:id="fig-ex-block-on-spring-forces">
+					<caption></caption>
+					<image source="./images/forces/ex-block-on-spring-forces.png"/>
+				</figure>
+			</sidebyside>
+
+		</solution>
+	</example>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,149 @@
+<section xml:id="The-Orbit-Equation"><title> The Orbit Equation </title>
+	<introduction>
+		<p>
+			Orbit equation gives the analytic expression of the orbit of a planet in a planet-Sun two-body system. We usullay study these oribits in the CM frame, where the orbit equation refers to the orbit of the reduced mass <m>\mu</m> about the origin, where we place total mass <m>M</m> at rest. In this approach, we obtain evolution of relative motion of the planet with respect to Sun. The equation of motion will be derived in the Calculus section below.  
+		</p>
+
+		<sidebyside widths="50%  10% 40%">
+			<p>
+				I will state the final answer here so that we can discuss the physical consequences of the result, which are important for understanding the motion of planets.  You may not be surprised that the solution of the equation of motion, Eq. <xref ref="eq-orbit-equation-dr-dtheta"/> given below, is an ellipse, which in polar coordinates with origin at one of the foci of the ellipse is
+				<men xml:id="eq-orbit-equation-solution">
+					r = \frac{r_0}{1-e\cos\,\theta}.
+				</men>
+			</p>
+			<p></p>
+			<image source="./images/gravitation/orbit-motion-ellipse-properties.png"/>
+		</sidebyside>
+
+		<p>
+			In terms of the masses, energy, and angular momentum, the parameters, <m>r_0</m> and eccentricity <m>e</m>, of the ellipse are
+			<men xml:id="eq-orbit-equation-parameters">
+				r_0 = \dfrac{l^2}{G_N m_1m_2\mu}, \ \ \ e = \sqrt{1 + \dfrac{E}{|U_0|} },
+			</men>
+			where, as before, 
+			<me>
+				M = m_1 + m_2,\ \ \mu = \dfrac{m_1m_2}{M},\ \ \ |U_0| = \dfrac{(G_N m_1 m_2)^2 \mu}{2l^2}.
+			</me>
+			The semi-major <m>a</m>, semi-minor <m>b</m>, and focal distance <m>c</m> of the ellipse are
+			<men xml:id="eq-orbit-eqn-ellipse-parameters">
+				a = \dfrac{r_0}{1-e^2},\ \ b = \dfrac{r_0}{\sqrt{1-e^2}},\ \ c = \dfrac{e\,r_0}{1-e^2}.
+			</men>
+
+		</p>
+
+
+
+
+	</introduction>
+
+
+	<subsection><title> Four Types of Orbits </title>
+		<p>
+			Depending upon energy, we have seen four types of possible orbits. From Eq. <xref ref="eq-orbit-equation-parameters" /> eccenetricity of orbit depends on energy. The part of energy that is other than the kinetic energy of radial motion, i.e., the term containing <m>(dr/dt)^2</m>, is called effective potential energy, <m>U_\text{eff}</m>. You can see that <m>U_\text{eff}</m> is sum of regular potential energy and the angular motion part.
+			<men>
+				U_\text{eff} = \frac{1}{2}\frac{l^2}{\mu r^2} - \frac{G_N m_1 m_2}{r}.
+			</men>
+		</p>
+
+		<p>
+			When you plot this with respect to <m>r</m>, as shown in <xref ref="fig-eff-potential-energy"/>, you find that, depending on energy <m>E</m>, there are cases of one turning point and two turning points in the motion. In the case of two turning points, they corresponding to the minimum <m>r</m>  and maximum <m>r</m>. These are perihelion and aphelion in the case of Sun-Planet system.
+		</p>
+		<figure xml:id="fig-eff-potential-energy">
+			<caption>
+				The effective potential energy diagram shows four different types of motion depending upon the energy <m>E</m> of the system. (1) Circular motion when <m>E = U_0</m>, the minimum of <m>U_\text{eff}</m>, (2) Elliptical motion when <m> U_0 \lt E \lt 0 </m>, (3) Parabolic motion when <m> E=0</m>, and (4) Elliptical motion when <m> E \gt 0</m>.
+			</caption>
+
+			<image source="./images/gravitation/eff-potential-energy.png" width="80%"/>
+ 		</figure>
+
+		<p>
+			To discuss the type of orbits that result for various values of energy as compared to the minimum effective potential energy, it is best to rewrite the parameters <m>r_0</m> and <m> e</m>  in terms of the minimum value of the effective potential energy  <m>U^{\text{min}}_{\text{eff}}</m>, which we will denote by symbol <m> U_0</m>.  By an elementary calculation, you can show that the minimum value of the effective potential energy is at
+			<men>
+				U_0 = -\dfrac{(G_N m_1 m_2)^2 \mu}{2l^2}
+			</men>
+			Therefore, the parameters <m> r_0</m> and <m> e</m> in the orbit equation are 
+			<men>
+				 r_0  = \frac{l}{\sqrt{-2\mu U_0}},\ \ \ \ e = \sqrt{1- \frac{E}{U_0}}.
+			</men>
+			<alert> Four Cases: </alert>
+		</p>
+		<p>
+			<ol label="(1)">
+				<li>
+					<p>
+						<m> E = 0.</m>
+					</p>
+					<p> 
+						If <m>E = 0</m>, then <m> e=1</m>.  The trajectory is not an ellipse, but a parabola.
+					</p> 
+				</li>
+				<li>
+					<p>
+						<m> E \gt 0.</m>
+					</p>
+					<p>
+						If <m> E \gt 0</m>, then <m> e \gt 1 </m> since  <m> U_0 \lt 0</m>. This corresponds to a hyperbolic trajectory. This type of object will get closest to the Sun only once. See <xref ref="fig-hyperbolic-orbits"/> for an example.
+					</p>
+				</li>
+				<li>
+					<p>
+						<m> U_0 \lt E \lt 0. </m>
+					</p>
+					<p>
+						This case corresponds to <m> 0 \lt e \lt 1 </m>. Hence, the orbit is an ellipse. This is the case for the bound planetary orbits about the Sun. See <xref ref="fig-orbits-elliptic"/> for an example.
+					</p>
+				</li>
+				<li>
+					<p>
+						 <m> E=U_0.</m>  
+					</p>
+					<p>
+						This makes <m> e = 0</m>.  With <m> e = 0</m>, <m>r = r_0</m>. Therefore, the trajectory is a circle of radius <m>r_0</m>. The orbit of Earth is very close to this case.
+					</p>
+				</li>
+	 
+			</ol>
+		</p>
+		<figure xml:id="fig-hyperbolic-orbits">
+			<caption>
+					Hyperbolic orbit for <m>r_0 = 1</m>  unit and <m>e = 1.5</m> for an attractive potential. The other branch is for a repulsive force since acceleration will be pointed away from the CM.
+			</caption>
+			<image source="./images/gravitation/orbits-hyperbolic.png" width="70%"/>
+		</figure>
+		<p></p>
+		<figure xml:id="fig-orbits-elliptic">
+			<caption>
+					Elliptical orbits for three eccentricities <m>0.2, 0.4, 0.6</m>. The thick solid line is a circular orbit which corresponds to <m>e = 0</m>. The higher the eccentricity more elongated the ellipse. The value of <m>r_0</m> was set to 1 for the plots.
+			</caption>
+			<image source="./images/gravitation/orbits-elliptic.png" width="70%"/>
+		</figure>
+		<p>
+			Both cases 3 and 4 correspond to bound orbits.  Hence planets (as well as comets) have either elliptical or circular orbits around the Sun <alert> confirming Kepler's first law</alert>.  The orbits of different planets differ in their eccentricities.  The orbit of Venus is almost a circle while the orbit of Pluto is quite elongated.  Comets have much higher eccentricities. Checkout eccentricities and other parameters of planets at the <url href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/"> NASA website</url>.
+		</p>
+	</subsection>
+
+
+	<subsection><title> (Calculus) The Equation of Motion for Orbit Equation</title> 
+
+		<p>
+			To obtain the orbit of fictitious particle of reduced mass <m> \mu</m>  in a two-body system, it is sufficient to examine the conservation of angular momentum and the conservation of energy in the system, which we write in polar coordinates. Denote conserved angular momentum by <m>l</m> and energy by <m>E</m>.
+			<mdn>
+				<mrow xml:id="cons-ang-mom-mu-1"> \amp \mu r^2 \dfrac{d\theta}{dt} = l,</mrow>
+				<mrow xml:id="cons-enr-mu-1"> \amp \dfrac{1}{2}\mu\left( \dfrac{dr}{dt} \right)^2 + \frac{1}{2}\frac{l^2}{\mu r^2} - \frac{G_N m_1 m_2}{r} = E.</mrow>
+			</mdn>
+			Isolate the first term with <m> (dr/dt)^2 </m> in the second equation and divide this by the square of the first equation gives
+			<men xml:id="eq-orbit-equation-dr-dtheta">
+				\dfrac{dr}{d\theta} = \pm \sqrt{ \alpha\, r^4 + \dfrac{2}{r_0}\, r^3 - 2 r^2  },
+			</men>
+			where
+			<me>
+				\alpha = \dfrac{2 \mu\,E}{l^2},\ \ \dfrac{1}{r_0} = \dfrac{G_N M}{l^2}\ \ \text{with}\ \ M = m_1 + m_2.
+			</me>
+			Integrating this equation will give the equation of the trajectory as the function <m>r(\theta)</m> given in Eq. <xref ref="eq-orbit-equation-solution"/> above. The calculations needed to perform these operations is somewhat beyond the scope of this book.  If you are intrigued, you will have to look up a more advanced book on mechanics to find the necessary algebra, or better yet, carry out the calculations yourself. 
+		</p>
+
+
+
+	</subsection>
+</section>
+ 

@@ -1,0 +1,143 @@
+<section xml:id="Capacitor-Charging-Circuit"><title> Capacitor Charging Circuit </title>
+	<introduction>
+		<p>
+			To charge a capacitor we make the circuit shown in <xref ref="fig-cap-charging-circuit"/> with a constant EMF source. In the diagram, a capacitor of capacitance <m>C</m> is in series with an EMF source of voltage <m>V</m>.  The resistance <m>R</m> is the total resistance in the circuit and and a switch S is included to control the closing and opening of the circuit.
+		</p>
+
+		<figure xml:id="fig-cap-charging-circuit">
+			<caption>
+				A capacitor-charging circuit. 
+			</caption>
+			<image source="./images/cap-circuits/cap-charging-circuit.png" width="60%"/>
+		</figure>
+
+		<p>
+			Suppose that the capcitor is uncharged at time <m>t=0</m>. 
+			When switch S is closed, the EMF source sets up an elecrtic field in the circuit which causes electrons to flow in the wires. However, when electrons arrive at the negative plate of the capacitor, they cannot move to the positive plate since there is an insulator between the plates. Instead, the buildup of electrons on the negative plate repels electrons from the positive plate.
+		</p>
+
+		<p> 
+			As charges build up on the capacitor, the elecrtric field of the charges on the capacitor completely cancels the electric field of the EMF source, ending the current flow. Capacitor becomes an open circuit with all the voltage <m>V</m> of the source dropping across the capcitor. We say that the capacitor is fully charged, with charge <m>Q = C V</m>.
+		</p>
+		<p>
+			By using Kirchhoff's loop equation and solving that equation, I show below that charge at instant <m>t</m> on an initially uncharged capacitor is given by
+			<me>
+				Q(t) = CV \left[ 1- \exp{\left(-t/RC\right)} \right].
+			</me>
+			As <m>t\rightarrow \infty</m>, the second term goes to zero. That is, when the capacitor is fully charged, the final charge on the capacitor will be
+			<me> 
+				Q_\text{final} = C V.
+			</me>
+			This confirms that, in the end, all voltage of the EMF source drops across the capacitor. Function <m>Q(t)</m> also shows that it takes a time <m>\tau = RC</m> for the charge to reach <m>( 1 - 1/e)</m>, i.e., about two-thirds, of the final value. This is the same time we obtained for discharging of the capacitor. We might take this time to indicate that in time <m>\tau</m>, capcacitor is <q>sufficiently</q> charged.
+		</p>
+
+
+	</introduction>
+
+	<subsection><title> (Calculus) Equation of Motion for Charging a Capacitor </title> 
+		<p>
+			Consider the state of the circuit at some time <m>t</m>. Let <m>\pm Q(t)</m> be charges on the capacitor, whose formula we wish to determine. Let <m>I(t)</m> be the current in the circuit at this instant. The voltage drop across the capacitor, <m>V_c</m> will be given by the capacitor formula,
+			<me>
+				V_c = \dfrac{Q}{C}.
+			</me>
+			Now, applying Kirchhoff's loop rule in the loop <m>a-b-c-a</m>, we will get
+			<me>
+				-V_c - R I + V = 0.
+			</me>
+			As current flows into the positive plate of the capacitor, charge <m>Q</m> on that plate increases. Therefore, we will have
+			<me>
+				I = \dfrac{dQ}{dt}
+			</me>
+			From three equations above we obtain the following equation for rate of charge build-up.
+			<men xml:id="eq-cap-charging-eom">
+				\dfrac{dQ}{dt} + \dfrac{Q}{RC} = \dfrac{V}{R}.
+			</men>
+			Suppose we started out with uncharged capacitor, then we seek solution of this equation with <m>Q(0) = 0</m>. By plugging the answer back into this equation, you can check that following function is the right solution of this equation.
+			<men xml:id="eq-cap-charging-eom-ans">
+				Q(t) = CV \left[ 1- \exp{\left(-t/RC\right)} \right].
+			</men>
+			How can we get this answer? Let us change variable in Eq. <xref ref="eq-cap-charging-eom"/> to
+			<me>
+				f(t) = Q(t) - CV,
+			</me>
+			Then, we will get
+			<me>
+				\dfrac{df}{dt} = \dfrac{dQ}{dt} - 0,,
+			</me>
+			which can be transformed using Eq. <xref ref="eq-cap-charging-eom"/> to
+			<md>
+				<mrow> \dfrac{df}{dt} \amp = - \dfrac{Q}{RC} + \dfrac{V}{R}, </mrow>
+				<mrow> \amp = - \dfrac{f + CV}{RC} + \dfrac{V}{R},</mrow>
+				<mrow> \amp = - \dfrac{f}{RC}.</mrow>
+			</md>
+			That is <m>f(t)</m> obeys a simpler equation,
+			<me>
+				\dfrac{df}{dt} = - \dfrac{1}{RC}\, f,
+			</me>
+			which is the equation we encountered in the discharging circuit. The solution of this equation is easy to write down.
+			<me>
+				f(t) = f(0)\, \exp\left(- \dfrac{t}{RC} \right).
+			</me>
+			Therefore, <m>Q(t)</m> is 
+			<md>
+				<mrow> Q(t)\amp = f(t) + CV </mrow>
+				<mrow>  \amp = f(0)\, \exp\left(- \dfrac{t}{RC} \right) + CV.</mrow>
+			</md>
+			Now, we use the condition that at <m>t=0</m>, we have <m>Q=0</m>. This will fix <m>f(0)</m>.
+			<me>
+				0 = f(0)\times 1 + CV\Longrightarrow f(0) = - CV.
+			</me>
+			Therefore,
+			<me>
+				 Q(t)  = -CV\, \exp\left(- \dfrac{t}{RC} \right) + CV. 
+			</me>
+			This is the answer in Eq. <xref ref="eq-cap-charging-eom-ans" />.
+		</p>
+		<p>
+			It is instructive to gain insight from <m> Q(t)</m> into the current flow during charging. We can get current by taking derivative of <m>Q(t)</m>.
+			<me>
+				I(t) = \dfrac{dQ}{dt} = \dfrac{V}{R}\, \exp\left(- \dfrac{t}{RC} \right).
+			</me>
+			It shows that maximum current, <m>I_\text{max} = V/R</m>, is at <m>t=0</m>. This corresponds to all voltage of the EMF dropping across the resistor and none around the capacitor. This makes sense since at this instant capacitor has no charge, and hence no voltage drop. As time passes, current dies out with time constant <m>\tau = RC</m>.
+		</p>
+	</subsection>
+
+
+	<exercise xml:id="ex-Numerical-Example-of-Charging-a-Capacitor"><title> Numerical Example of Charging a Capacitor </title>
+		<statement>
+			<p>
+				A capacitor of capacitance <m>5\text{ nF}</m> is connected to a <m>1.5\text{-V}</m> battery.  (a) If the net resistance in the circuit is <m>1.0\text{ M}\Omega</m>  in series with the capacitor, find the time it will take to charge up the capacitor to 90% of maximum.  (b) Also find the maximum charge on the positive plate once fully charged.
+			</p>
+
+		</statement>
+		<hint> <p>  Use the solution in this section. </p> </hint>
+		<answer> <p> (a) <m> 11.5\text{ ms}</m>, (b) <m>7.5\times 10^{-9}\text{ C} </m>.  </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a) 
+				First, we find the time constant to be used in the time development of charge. 
+				<me>
+					\tau = RC = 10^6\ \Omega\times 5\times 10^{-9}\text{ F} = 5\text{ ms}.  
+				</me>
+				Let <m>t</m> be time for 90% charging.  Then,  we have the following equation for charging.
+				<me>
+					\frac{Q}{Q_{\infty}} = 0.9 = 1- \exp{\left(-t/\tau \right)} = 1- \exp{\left(-t/5\text{ ms}\right)}
+				</me>
+				Solving for <m>t</m> in <m>\text{ms}</m> we find <m>t = 11.5\text{ ms}</m>.
+			</p>
+		</solution>
+		<solution><title>(b)</title> 		
+			<p>
+				(b)
+				When the capacitor is fully charged, current goes to zero and all the voltage of the source drops across the capacitor.  Using the capacitor formula for this voltage gives the maximum charge on the plates to be
+				<me>
+					Q_{\infty} = CV = 5\times 10^{-9}\text{ F} \times 1.5 \text{ V} = 7.5\times 10^{-9}\text{ C}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	
+</section>

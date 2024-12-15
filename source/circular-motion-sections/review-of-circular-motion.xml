@@ -1,0 +1,336 @@
+<section xml:id="circular-motion-Summary-of-Formulas"><title> Summary of Formulas </title>
+	<subsection> <title> Position in a Circle </title>
+		<p> 
+			We track the motion of an object moving in a circle by the change in the angle <m> \theta </m> subtended at the center of the circle. It is helpful to think of <m> \theta </m> as a function of time, <m> \theta(t) </m>. 
+		</p>
+	 
+		<image source="./images/circular-motion/circular-motion-basic.png" width="60%"/>"
+	 
+		<p>
+			If we express angle <m> \theta </m> as <m>\text{radian}</m> or <m>\text{rad}</m>, we get a simple relation between the physical distance on the arc, denoted by  <m> s </m>  and called the arc length, and the angle <m> \theta </m> subtended at the center by
+			<me>
+				s = R\, \theta\ \ \ \ (\theta \text{ in radians.})
+			</me>
+		</p>
+
+		<p>
+			The position <m> \vec r </m> of an object in circular motion has the following magnitude/direction and components representations.
+			<mdn>
+				<mrow> \amp \text{Magnitude } = R,\text{ Direction given by }\  \theta,  </mrow>
+				<mrow> \amp \text{Components: } x = R\,\cos\,\theta,\ \ x = R\,\sin\,\theta. </mrow>
+			</mdn>
+
+		</p>
+
+
+
+		<exercise>
+			<title> Position, and Displacement on a Circle</title>
+			<statement>
+				<p>
+					A child in a merry-go-round is moving in a circle of radius <m> 4\text{ m}</m>. At some instant, let <m> t = 0 </m>, the child is at a point labeled A.  
+				</p>
+				<p>
+					(a) At time <m> t=2.0\text{ sec}</m>, the child is at another point labeled B. How far distance on the arc between A and B has the child moved if the angle subtended at the center O between lines  OA and OB is <m> 30^{\circ}</m>?
+				</p>
+				<p>
+					(b) At some other instant, <m> t = 3.0\text{ sec}</m>, the child is at point C. If the distance moved between A and C on the arc is <m> 10.0\text{ m}</m>, what is the angle subtended between OA and OC in degrees? 
+				</p>
+				<p>
+					(c) Suppose you use a Caretisn coordinates with O at the center and OA towards the positive <m> x </m> axis, what are the coordinates of points A, B and C?
+
+				</p>
+				<p>
+					(d) What is the displacement between B and C?
+				</p>
+
+			</statement>
+			<hint> <p> Use <m> s = R \theta </m>. </p> </hint>
+			<answer> <p> (a) <m> 2.09\text{ m}</m> (b) <m> 143.2^{\circ}</m> (c) <m>(4.0\text{ m}, 0) </m>, <m> ( 3.46\text{ m}, 2\text{ m})</m>, <m> ( -3.20\text{ m}, 2.39\text{ m})</m>  (d) <m>6.67\text{ m}</m> at <m> 3.35^{\circ}</m> clockwise from the negative <m> x </m> axis. </p> </answer>
+			<solution>  
+				<p> (a)
+					The distance on the arc is related to the angle in radian, so we convert degrees to radians.
+					<me>
+						s = R\theta = 4.0\times \dfrac{30\times \pi}{180} = 2.09\text{ m}.
+					</me>
+				</p>
+				<p>(b)
+					The angle in radian will be
+					<me>
+						\theta = \dfrac{s}{R} = \dfrac{10.0}{4.0} = 2.5\text{ rad}.
+					</me>
+					We need to convert this to degrees.
+					<me>
+						\theta = 2.5 \times 180 / \pi = 143.2^{\circ}.
+					</me>
+				</p>
+				<p>(c)
+					Using the axes given, we will get the following for the positions of A, B, and C.
+					<md>
+						<mrow> \amp \vec r_A = (4.0\text{ m}, 0),</mrow>
+						<mrow> \amp \vec r_B = (4.0\,\cos\,30^{\circ}, 4.0\,\sin\,30^{\circ}) = ( 3.46\text{ m}, 2\text{ m}),</mrow>
+						<mrow> \amp \vec r_C = (4.0\,\cos(2.5\text{ rad}), 4.0\,\sin(2.5\text{ rad})) = ( -3.20\text{ m}, 2.39\text{ m}),</mrow>
+
+					</md>
+				</p>
+
+				<p>(d)
+					Now, since we know the coordinates of B and C, it is trivial to get the <m> x </m> and <m> y</m> components of the displacement vector. From
+					<me>
+						\Delta r = \vec r_C - \vec r_B,
+					</me>
+					we get
+					<md>
+						<mrow>\amp \Delta x = x_C - x_B = -3.20-3.46 = -6.66\text{ m}, </mrow>
+						<mrow>\amp \Delta y = y_C - y_B = 2.39-2 = 0.39\text{ m}. </mrow>
+					</md>
+					We can get the magnitude and direction of the displacement from these components.
+					<md>
+						<mrow>\amp\text{Magnitude: }  \Delta r =  6.67\text{ m}, </mrow>
+						<mrow>\amp \theta = \tan^{-1}\dfrac{0.39}{-6.66} = -3.35^{\circ}. </mrow>
+					</md>
+					Since <m>(-6.66,0.39)</m> is in the second quadrant, the direction is <m> 3.35^{\circ}</m> clockwise from the negative <m> x </m> axis.
+
+				</p>
+			</solution>
+		</exercise>
+
+
+
+
+
+
+
+
+	</subsection>
+
+	<subsection> <title> Velocity </title>
+
+		<p>
+			Velocity changes continously in a circular motion since the direction of the velocity vector is tangent to the circle, which is oriented differently at different points of the circle as shown in figure below.
+		</p>
+		<image source="./images/circular-motion/velocity-arrows-in-circular-motion.png" width="60%"/>
+		<p>
+			A particularly important circular motion occurs when speed <m> v</m> around the circle is same. We call these motions <term> uniform circular motion </term>.
+		</p> 
+		<p> 
+			The velocity <m> \vec v</m> has magnitude <m> v </m> and the direction is given by the direction of the tangent at the point.
+				<md>
+					<mrow> \amp \text{Magnitude } = v,</mrow>
+					<mrow> \amp \text{Direction: draw tangent to the circle and place an arrow head on the tangent. }</mrow>
+				</md>
+		</p>
+
+
+		<exercise>
+			<title> Anagle and Distance in a Uniform Circular Motion </title>
+			<statement>
+				<p>
+					A child in a merry-go-round is moving in a circle of radius <m> 5\text{ m}</m> at a constant speed of <m> 2.0\text{ m/s}</m>. 
+				</p>
+				<p>
+					(a) What is the distance on the arc the child moves during a <m> 4.0\text{ sec} </m> interval? 
+				</p>
+				<p>
+					(b)  How much angle in radians the child covers during a <m> 4.0\text{ sec} </m> interval? 
+				</p>
+				<p>
+					(c) What is the angular speed of the child?
+				</p>
+				<p>
+					(d) At <m> t= 0 </m>, the child was towards East from the center and was moving towards North, what is direction of the child at <m> t = 100\text{ sec}</m>?
+				</p>
+
+			</statement>
+			<hint> <p>  (a) <m>s=vt</m> , (b) <m> s= R \theta </m>, (c) definition, (d) Find the cumulative angle, and then find the angle within the range 0 to <m>360^\circ</m>.</p> </hint>
+			<answer> <p> (a) <m>8.0\text{ m}</m>, (b) <m>1.6\text{ rad}</m>,(c)  <m>0.4\text{ rad/sec} </m>,(d) <m> 131.83^{\circ}</m> counterclockwise from positive <m> x </m> axis. </p> </answer>
+			<solution> 
+				<p>(a)
+					Since speed is constant, the distance will simply be the product of speed and time.
+					<me>
+						s = v t = 2.0 \times 4.0 = 8.0\text{ m}.
+					</me>
+				</p>
+				<p>(b)
+					The distance <m> 8.0\text{ m} </m> on the arc will translate into the angle subtended by <m> s = R\theta</m> formula.
+					<me>
+						\theta = \dfrac{s}{R} = \dfrac{8}{5} = 1.6\text{ rad}.
+					</me>
+				</p>
+				<p>(c)
+					Rotated <m> 1.6\text{ rad} </m> in <m> 4.0\text{ sec}</m>. Therefore, average angular speed will be 
+					<me>
+						\omega = \dfrac{1.6}{4} = 0.4\text{ rad/sec}.
+					</me>
+					We could also get this result by using the formula relating angular velocity to the speed.
+					<me>
+						\omega = \dfrac{v}{R} = \dfrac{2}{5} = 0.4\text{ rad/sec}.
+					</me>
+				</p>
+				<p>(d)
+					The angle at instant <m> t = 100\text{ sec}</m> has to be placed between <m> 0</m> and <m> 360^{\circ}</m> by dividing the cumulative angle by <m> 360</m>, and throwing away the multiples. Let's first work out the cumulative angle.
+					<me>
+						\theta_\text{cumulative} = 0.4\text{ rad/sec}\times 100\text{ s} \times \frac{180}{\pi}= 2291.83^{\circ}.
+					</me>
+					Now, we divide this by <m> 360</m>.
+					<me>
+						 2291.83/360 = 6.366194.
+					</me>
+					Throwing the integral part and then multiplying the fractional part by 360 we get the counterclockwise angle from the positive <m> x </m> axis.
+					<me>
+						\theta  =  0.366194 \times 360 = 131.83^{\circ}.	
+					</me>				
+				</p>
+			</solution>
+		</exercise>
+
+
+	</subsection>
+	<subsection> <title> Acceleration in Uniform Circular Motion </title>
+		<sidebyside widths="50% 40%">
+			<p> 
+				The acceleration of a uniform circular motion occurs entirely due to changing direction of the velocity since the magnitude of the velocity is constant. The direction of acceleration in this case is towards the center of the circle.  The direction of <q> pointed towards circle </q> is also refered to as <term> centripetal</term>. Therefore, we often call this acceleration, the <term>centripetal acceleration</term>.
+			</p>
+
+			<image source="./images/circular-motion/acceleration-arrows-in-constant-speed-circular-motion.png" width="60%"/>
+		</sidebyside>
+		The magnitude of the centripetal acceleration is given by the following formula.
+		<me>
+			a = \dfrac{v^2}{R}\ \ (\text{centripetal})
+		</me>
+
+		<exercise>
+			<title> Acceleration of a Uniform Circular Motion </title>
+			<statement>
+				<p>
+					A child in a merry-go-round is moving in a circle of radius <m> 5\text{ m}</m> at a constant speed of <m> 2.0\text{ m/s}</m>. 
+				</p>
+				<p> (a)
+					What is the acceleration of the child at the instant the child is in the direction of East from the center? 
+				</p>
+				<p> (b)
+					What is the acceleration of the child at the instant the child is in the direction of North from the center? 
+				</p>
+
+			</statement>
+			<hint> <p>  Be mindful of direction! </p> </hint>
+			<answer> <p> (a) <m>0.8 \text{ m/s}^2</m> West, (b) <m>0.8 \text{ m/s}^2</m> South </p> </answer>
+			<solution> 
+				<p> The magnitude of acceleration will be constant, but its direction will be different depending on where in the circle the child happens to be.
+				</p>
+				<me>
+					\text{Magnitude, }a = \dfrac{v^2}{R} = \dfrac{2.0^2}{5} = 0.8\text{ m/s}^2.
+				</me>
+				<p> (a)
+					The acceleration at this instant has magnitude <m> 0.8\text{ m/s}^2</m> towards West, where the center is from the child's position.
+				</p>
+				<p> (b)
+					The acceleration at this instant has magnitude <m> 0.8\text{ m/s}^2</m> towards South, where the center is from the child's position.
+				</p>				
+			</solution>
+		</exercise>
+
+
+		<exercise>
+			<title> Acceleration at Different Locations in an Oval Track</title>
+			<statement>
+				<p> 
+					The figure shows an oval track with two ends arcs of circles of radius <m> 40 \text{ m}</m>. You are running on the track at a constant speed of <m> 2.0 \text{ m/s} </m>. 
+				</p>
+				<p> Find the magnitude and direction of accelerations at the two points marked (a) A and (b) B.
+				</p>
+				<image source="./images/circular-motion/checpoint-oval-track-uniform-motion.png" width="70%"/>
+ 
+			</statement>
+			<hint> <p> (a) centripetal, (b) tricky.  </p> </hint>
+			<answer> <p>  (a) <m> 0.1\text{ m/s}^2</m> in the directoin from A to O. (b) Zero. </p> </answer>
+			<solution> 
+				<p>(a)
+					The acceleration here is the centripetal acceleration towards O, the center of the circular arc with magnitude
+					<me>
+						a_A = \dfrac{v^2}{R} = \dfrac{2^2}{40} = 0.1\text{ m/s}^2.
+					</me>
+				</p>
+				<p> (b) At the instant you are at B, not only your speed is constant, but your direction is also constant. Hence, your velocity is constant. Therefore, the acceleration is zero here.
+				</p>
+			</solution>
+		</exercise>
+
+
+
+	</subsection>
+	<subsection> <title> Accelerations of a General Circular Motion </title>		
+		<p> 
+			<alert> General Circular Motion</alert> does not have restriction of constant speed. That means, the acceleration will have both a centripetal acceleration and a tangential acceleration. If the speed is increasing, then the tangential part will be pointed in the direction of the velocity, and if the speed is decreasing, then the tangential acceleration will be popinted in opposite direction of the velocity. 
+		</p>
+		<p>
+			Let us denote the magnitude of the tangential acceleration by <m> a_t </m> and that of the centripetal acceleration by <m> a_c</m>. We have already seen the formula for the centripetal acceleration,
+			<men>
+				a_c = \dfrac{v^2}{R},
+			</men>
+			and the formula for the magnitude of the tangential acceleration is
+			<men>
+				a_t = \left| \dfrac{dv}{dt} \right|,
+			</men>
+			where <m> v </m> is the speed. The magnitude of the net acceleration <m> a </m> of the body in circular motion is obtained from combining these two perpendicularly oriented components,
+			<men>
+				a = \sqrt{a_c^2 + a_t^2} = \sqrt{ \left( \dfrac{v^2}{R}\right)^2 + \left(\dfrac{dv}{dt}\right)^2 }.
+			</men>
+
+
+		</p>
+
+
+		<exercise>
+			<title> Acceleration of a Car Rounding a Turn with an Increasing Speed </title>
+			<statement>
+				<sidebyside widths="50% 50%">
+					<p>
+						A car is taking a left turn as shown in the figure. While in the turn, the car moves on a circular arc of radius <m> 20\text{ m}</m>, but its speed is increasing at a steady pace of <m> 8\text{ m/s}^2</m> such that at the location marked P, the speed is <m> 10\text{ m/s}</m>. 
+					</p>
+
+					<image source="./images/circular-motion/checpoint-car-turning-left-non-uniform-motion.png" width="60%"/>
+				</sidebyside>
+
+				<p> 
+					(a) Find the magnitudes of the centripetal acceleration, tangential acceleration, and full acceleration of the car.
+				</p>
+				<p> 
+					(b) If the tangent to the arc at point P  is pointed in the direction <m> 30^{\circ}</m>  North of East, what is the direction of acceleration at this instant?
+				</p>
+
+
+			</statement>
+			<hint> <p>  (a) Use formula (b) use the fact that tangential and centripetal directions are perpendicular to each other.</p> </hint>
+			<answer> <p>  (a) <m> 5\text{ m/s}^2,\ 8\text{ m/s}^2,\ 9.43\text{ m/s}^2</m>, (b) <m> 62^{\circ} </m> North of East. </p> </answer>
+			<solution> 
+				<p>(a) The tangential acceleration is already given in the problem statement.
+					<md>
+						<mrow> \amp a_c = \dfrac{v^2}{R} = \dfrac{10^2}{20} = 5\text{ m/s}^2,</mrow>
+						<mrow> \amp a_\theta = 8\text{ m/s}^2,</mrow>
+						<mrow> \amp a = \sqrt{a_c^2 + a_\theta^2} = \sqrt{5^2 + 8^2} = 9.43\text{ m/s}^2.</mrow>
+					</md>
+				</p>
+				<p>(b) A figure will help.
+				</p>
+				<p>
+					<image source="./images/circular-motion/checpoint-car-turning-left-non-uniform-motion-b.png" width="70%"/>
+				</p>
+				<p>
+					Once we find angle <m> \theta </m> in the figure, we can add <m> 30^{\circ}</m> to it to get the direction from the East.
+					<me>
+						\theta = \tan^{-1}\left(\dfrac{5}{8} \right) = 32^{\circ}.
+					</me>
+					Therefore, the direction of acceleration at this instant is <m> 32^{\circ} + 30^{\circ} = 62^{\circ}</m> North of East.
+
+
+				</p>
+			</solution>
+		</exercise>
+
+
+
+	</subsection>
+
+
+</section>

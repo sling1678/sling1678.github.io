@@ -1,0 +1,486 @@
+<section xml:id="sec-Hydrogen-Atom-According-to-QM"><title>Hydrogen Atom According to Schr&#x00F6;dinger Equation</title>
+	<introduction>
+		<p>
+			Despite the successes of the Bohr model for Hydrogen atom it lacked any basis for the rules and important questions remained unanswered: Why would an electron not radiate when it is in these special orbits?  Why can't angular momentum be any real value?  Why does it have to be an integral multiple of <m>h/2\pi</m>? Other nagging aspect of the Bohr model was that it worked well for Hydrogen atom but didn't work well for other atoms. Clearly, Bohr had something missing in his model.
+		</p>
+		<p>
+			Quantum mechanics provides a more satisfying treatment of the energetics of hydrogen atom. A hydrogen atom consists of a proton and an electron which interact through Coulomb force.  The proton is about 2000 times more massive than the electron.  We fix the proton at the origin and study the motion of the electron by quantum mechanics.
+		</p>
+		<p>
+			The time-independent Schr&#x00F6;dinger equation for the wavefunction <m>\psi(r, \theta, \phi)</m> of  electron is best written in the spherical coordinates (<m>r,\theta,\phi</m>) shown in <xref ref="fig-hydrogen-atom-spherical"/>.   
+			<men xml:id="eq-hydrogen-atom-sch-eqn">
+				-\frac{\hbar^2}{2m}\nabla^2\psi - \frac{1}{4\pi\epsilon_0}\frac{e^2}{r}\psi  = E \psi. 
+			</men>
+			The solution of this equation tells us possible energy states of the electron in the hydrogen atom.  It turns out that these states correspond to the Bohr orbits.
+		</p>
+
+		<figure xml:id="fig-hydrogen-atom-spherical">
+			<caption>
+				 The spherical coordinates used for the description of the wavefunction of the electron of the hydrogen atom.  The proton is fixed at the origin and the coordinates of the electron is given using <m>(r, \theta, \phi)</m>.
+			</caption>
+			<image source="./images/modern-physics/hydrogen-atom-spherical.png" width="60%"/>
+		</figure>
+
+	</introduction>
+
+
+	<subsection><title>Quantum Numbers of Energy States of H Atom</title>
+		<p>
+			The solution of Eq. <xref ref="eq-hydrogen-atom-sch-eqn"/> with the condition <m>\psi\rightarrow 0</m> as <m>r\rightarrow \infty</m> corresponds to the states of definite energy.  Although, the mathematics of working out the solution is beyond the scope of this book, we can understand the solution themselves without much mathematical complications.   It turns out that there are infinitely many solutions.  These solutions are labelled by three integers, <m>n, l, m_l</m>, called <term>quantum numbers</term>.
+			<men>
+				\psi_{n,l,m_l}(r, \theta, \phi) = R_{n,l}(r) Y_{l,m_l}(\theta, \phi),
+			</men>
+			where <m>R_{n,l}(r)</m> is the radial part of the wavefunction and <m>Y_{l,m_l}(\theta,\phi)</m> is the angular part of the wavefunction.  In a future course you will learn more about these special functions. The functions <m>R_{n,l}(r)</m>  and <m>Y_{l,m_l}(\theta,\phi)</m>  for small values of the quantum numbers are listed in <xref ref="tab-hydrogen-radial"/> and <xref ref="tab-hydrogen-angular"/> respectively.
+		</p>
+		<table xml:id="tab-hydrogen-radial"><title>Radial Wave Function <m>R_{n,l}</m> for <m>n = 1,\, 2</m></title>
+			<tabular halign="center">
+				<col right="minor"></col>  <col right="minor"></col> <col halign="center"></col>
+				<row header = "yes" bottom = "minor">
+					<cell><m>n</m>  </cell><cell><m>l</m></cell> <cell><m>R_{n,l}</m></cell>
+				</row>
+				<row>
+					<cell><m>1</m></cell>  <cell><m>0</m></cell>  <cell><m>\frac{2}{a_0^{3/2}}e^{-r/a_0}</m></cell>
+				</row>
+				<row>
+					<cell><m>2</m>  </cell><cell><m>0</m></cell> <cell><m>\frac{1}{(2a_0)^{3/2} }\left( 2 - r/a_0\right) e^{-r/2a_0}</m></cell>
+				</row>
+				<row>
+					<cell><m>2</m>  </cell><cell><m>1</m></cell>  <cell><m>\frac{1}{(2a_0)^{3/2} } \left( \frac{r}{\sqrt{3}a_0}\right) e^{-r/2a_0}</m></cell>
+				</row>
+			</tabular>
+		</table>
+
+		<table xml:id="tab-hydrogen-angular"><title>Angular Wave Function <m>Y_{l,m_l}</m> for <m>l = 0,\, 1</m></title>
+			<tabular halign="center">
+				<col right="minor"></col>  <col right="minor"></col> <col halign="center"></col>
+				<row header = "yes" bottom = "minor">
+					<cell><m>l</m>  </cell><cell><m>m_l</m></cell> <cell><m>Y_{l,m_l}</m></cell>
+				</row>
+				<row>
+					<cell><m>0</m></cell>  <cell><m>0</m></cell>  <cell><m>\frac{1}{2\sqrt{\pi}}</m></cell>
+				</row>
+				<row>
+					<cell><m>1</m>  </cell><cell><m>-1</m></cell> <cell><m>-\frac{1}{2}\sqrt{\frac{3}{2\pi}}\:\sin\theta\:e^{-i\phi}</m></cell>
+				</row>
+				<row>
+					<cell><m>1</m>  </cell><cell><m>0</m></cell>  <cell><m>\frac{1}{2}\sqrt{\frac{3}{\pi}}\:\cos\theta</m></cell>
+				</row>
+				<row>
+					<cell><m>1</m>  </cell><cell><m>1</m></cell>  <cell><m>\frac{1}{2}\sqrt{\frac{3}{2\pi}}\:\sin\theta\:e^{+i\phi}</m></cell>
+				</row>
+			</tabular>
+		</table>
+
+
+ 
+		<p>
+			The label <m>n</m> is called the <term>principal quantum number</term>, <m>l</m> the <term>orbital quantum number</term>, and <m>m_l</m> the <term>magnetic quantum number</term>. The principal quantum number <m>n</m> can take on any positive integer.  For a particular <m>n</m>, the allowed values of the orbital quantum number <m>l</m> is from <m>0</m> to <m>n-1</m>.  For a particular <m>l</m>, the magnetic quantum number <m>m_l</m> can take values from <m>-l</m> to <m>+l</m> in steps of 1. 
+			<md>
+				<mrow> \amp  n = 1, 2, 3,  \cdots</mrow>
+				<mrow> \amp  l = 0, 1, 2, \cdots, n-1</mrow>
+				<mrow> \amp  m_l = -l, -(l-1), -(l-2), \cdots, l-2, l-1, l.</mrow>
+			</md>
+			The energy <m>E_{n,l,m_l}</m> of the state <m>\psi_{n,l,m_l}</m> with quantum numbers <m>n, l, m_l</m>  depends only on the principal quantum number <m>n</m>.
+			<men xml:id="eq-hydrogen-energy">
+				E_{n,l,m_l}  =  -\frac{1}{4\pi\epsilon_0}\: \frac{e^2}{a_0}\:\frac{1}{n^2} \equiv -\frac{E_{1,0,0}}{n^2}. 
+			</men>
+			where <m>a_0</m> is the Bohr radius defined in Eq. <xref ref="eq-bohr-newton-eqn-4"/>.  Note that this is the values of energy of the stationary states obtained by Bohr as given in Eq. <xref ref="eq-bohr-energy-3"/>.  Since the energy of the hydrogen atom does not depend on <m>l</m> or <m>m_l</m>  we often write <m>E_n</m> for <m>E_{n,l,m_l}</m>.
+			<me>
+				E_n \equiv E_{n,l,m_l}.
+			</me>
+			All states with the same <m>n</m> value are said to form a <term>shell</term> and various states within this group with same <m>l</m> are said to form a <term>subshell</term>.  Historically,  shells and subshells were designated by spectroscopic notation with capital letters for shells and small letters for subshells. Thus, <m>n=1,\ 2,\ 3,\ 4,\ 5,\ 6, \cdots</m> are designated by <m>K,\ L,\ M,\ N,\ O,\ P,\ \cdots</m> and <m>l = 0,\ 1,\ 2,\ 3,\ 4,\ 5, \cdots</m> are designated by <m>s,\ p,\ d,\ f,\ g,\ \cdots</m> as illustrated in <xref ref="fig-hydrogen-atom-shells-subshells"/>.
+
+		</p>
+
+		<figure xml:id="fig-hydrogen-atom-shells-subshells">
+			<caption>
+				 The shells and subshells for electronic states in hydrogen atom.  The <m>n=1,\ 2,\ 3, \cdots</m> are called shells <m>K,\ L,\ M, \cdots</m>, and the <m>l=0,\ 1,\ 2, \cdots</m> are called subshells <m>s,\ p,\ d, \cdots</m>.
+			</caption>
+			<image source="./images/modern-physics/hydrogen-atom-shells-subshells.png" width="60%"/>
+		</figure>
+ 
+
+		<p>
+			An <term>energy level diagram</term> helps visualize the energies of states.  <xref ref="fig-energy-levels-hydrogen-atom"/> shows the energy diagram for the hydrogen atom corresponding the energies in Eq. <xref ref="eq-hydrogen-energy"/>.  In the  energy level diagram, we use a mixed notation: use <m>n</m> for the shell and spectroscopic notation <m>s,\ p,\ d,\ f,\ g,\ \cdots</m> for the subshells.
+		</p>
+		<figure xml:id="fig-energy-levels-hydrogen-atom">
+			<caption>
+				 The energy level diagram for the hydrogen atom.  Note that reference is chosen so that when energy is greater than 0, the electron will not be bound to the proton.
+			</caption>
+			<image source="./images/modern-physics/energy-levels-hydrogen-atom.png" width="80%"/>
+		</figure>
+ 
+
+	</subsection>
+
+
+	<subsection><title>Low-Energy States of Hydrogen Atom</title>
+		<p><alert>The Ground State</alert></p>
+		<p>
+			The lowest energy state is called the <term>ground state</term>. According to Eq. <xref ref="eq-hydrogen-energy"/>, the lowest energy of hydrogen atom corresponds to <m>n=1</m>.  The other quantum numbers for <m>n=1</m> will be <m>l=0</m> and <m>m_l = 0</m>.   The energy of this state is given by
+			<men>
+			E_{1, 0, 0}  =  -\frac{1}{4\pi\epsilon_0}\: \frac{e^2}{a_0}\:\frac{1}{1^2} = - 13.6\:\textrm{eV}.
+			</men>
+			The wavefunction for the ground state <m>\psi_{1,0,0}(r,\theta,\phi)</m> is given by the product of the radial and angular parts as stated above.
+			<men>
+			\psi_{1,0,0} = R_{1,0} Y_{0,0} =  \frac{1}{2\sqrt{\pi}}\:  \left(\frac{1}{a_0}\right)^{3/2} 2\: e^{-r/a_0}.
+			</men>
+			Thus, the wavefunction for the ground state is isotropic in space, i.e., it is independent of the direction in space.  The reason for the isotropy can be traced to the isotropy of the potential energy in the Schr&#x00F6;dinger equation.  The wave function for the ground state has the largest value at the origin, where the nucleus is located and decreases exponentially with distance.
+		</p>
+		<p>
+			The ground state wave function of hydrogen atom is also real.  Its square  gives the probability density of finding the electron in a small volume around a point. Thus, in a small volume <m>dV</m> around the point <m>(r,\theta,\phi)</m> the probability that the electron is in this volume will be
+			<men>
+			dP = \left|\psi_{1,0,0} \right|^2 dV.
+			</men>
+			The volume element in spherical coordinates is
+			<men>
+			dV = r^2 \sin\theta dr d\theta d\phi.
+			</men>
+			Since <m>\psi_{1,0,0}</m> is only a function of <m>r</m> we can deduce the probability of finding the electron in the spherical shell of thickness <m>dr</m> at distance <m>r</m> by integrating over <m>\theta</m> and <m>\phi</m>.  Let us denote this probability as <m>dP_r</m>
+			<men xml:id="eq-hydrogen-probability-1s-1">
+			dP_r = \left|\psi_{1,0,0} \right|^2 4\pi r^2 dr =  \frac{4}{a_0^3}\: r^2 e^{-2r/a_0} dr. 
+			</men>
+			The quantity multiplying <m>dr</m> is the probability per unit distance from the nucleus.  Let us denote this quantity by symbol <m>\rho_{1s}</m> to indicate that it is a density for the <m>1s</m> state.
+			<men xml:id="eq-hydrogen-electron-cloud-probability">
+			\rho_{1s} (r)=  \frac{4}{a_0^3}\: r^2 e^{-2r/a_0}. 
+			</men>
+		</p>
+
+		<figure xml:id="fig-hydrogen-electron-cloud-probability">
+			<caption>
+				 The probability that the electron is in the shaded region is given by <m>dP_r =\rho_{1s}(r) dr</m>, where <m>\rho_{1s}</m> is given in Eq. <xref ref="eq-hydrogen-electron-cloud-probability"/>.
+			</caption>
+			<image source="./images/modern-physics/hydrogen-electron-cloud-probability.png" width="60%"/>
+		</figure>
+ 		<p>
+ 			Note that the probability in Eq. <xref ref="eq-hydrogen-probability-1s-1"/> is properly normalized.  That is, the probability of finding the electron somewhere in space is equal to 1, as you can verify by integrating the right side from <m>r=0</m> to <m>r=\infty</m>. 
+			<men>
+			\int_0^{\infty}\rho_{1s} (r)dr =  \int_0^{\infty}\frac{4}{a_0^3}\: r^2 e^{-2r/a_0} dr = 1.
+			</men>
+			A plot of <m>\rho_{1s} (r)</m> versus the radial distance <m>r</m> shown in <xref ref="fig-hydrogen-1s-plot"/> is instructive as it shows visually how the probability per unit distance varies with distance from the nucleus.  The peak of this plot occurs at the Bohr radius, <m>r=a_0</m>. We say that the most probable distance to find the electron from the nucleus is <m>r = a_0</m>.
+		</p>
+		<p>
+			Note the departure of the quantum mechanical interpretation from that of the Bohr model.  While, in the Bohr model, we had a definite orbit for the electron, in quantum mechanics, the electron can be anywhere with different probabilities.  For the lowest energy state, the most probable distance the electron can be found is at the Bohr radius.
+		</p>
+		<p>
+			Since the electron has different probabilities for being at different distances from the nucleus we can calculate the average distance of the elctron from the nucleus by averaging the variable <m>r</m> with respect to the probability distribution <m>\rho_{1s} (r)</m>.
+			<men>
+			\langle r \rangle = \int_0^{\infty}r\:\rho_{1s} dr  = \frac{4}{a_0^3}\int_0^{\infty}r^3 e^{-2r/a_0} dr = \frac{3}{2} a_0.
+			</men>
+			Although the probability density peaks at <m>r=a_0</m>, the average <m>r</m> is at <m>r= \dfrac{3}{2}a_0</m>.
+		</p>
+
+		<figure xml:id="fig-hydrogen-1s-plot">
+			<caption>
+				 Probability density of finding an electron at a distance <m>r</m> from the nucleus of a hydrogen atom. [Note to publisher: A picture of <m>\psi^2</m> for 1s state will be good here.]
+			</caption>
+			<image source="./images/modern-physics/hydrogen-1s-plot.png" width="80%"/>
+		</figure>
+ 
+
+		<p><alert>First excited state</alert></p>
+		<p>
+			The  energy of the first excited occurs when the principal quantum number has the value <m>n=2</m>.  The orbital quantum numbers for <m>n=2</m> has two possible values, <m>l=0,1</m>.  When <m>l=0</m>, <m>m_l</m> has only one value, <m>m_l =0</m>.  When <m>l=1</m>, <m>m_l</m> has three possible values and <m>m_l = -1,0,1</m>.  Therefore, we have four different possible states for the energy state <m>E_2</m>.
+			<md>
+				<mrow> \amp  n = 2,\ l = 0,\ m_l = 0,</mrow>
+				<mrow> \amp  n = 2,\ l = 1,\ m_l = -1,</mrow>
+				<mrow> \amp  n = 2,\ l = 1,\ m_l = 0,</mrow>
+				<mrow> \amp  n = 2,\ l = 1,\ m_l = 1.</mrow>
+			</md>
+			All four states have the same energy since they all have <m>n=2</m> and the energy depends only on the value of <m>n</m>.  
+			<me>
+				E_{2, l, m_l}  =  -\frac{1}{4\pi\epsilon_0}\: \frac{e^2}{a_0}\:\frac{1}{2^2} = -3.4\:\textrm{eV}.
+			</me>
+			Since four states have the same energy we say that the state is degenerate with <term>degeneracy</term> four.  The wavefunctions for the four states are different.
+			<md>
+				<mrow> \amp  \psi_{2,0,0} = R_{2,0} Y_{0,0}, </mrow>
+				<mrow> \amp  \psi_{2,1,-1} = R_{2,1} Y_{1,-1},</mrow>
+				<mrow> \amp  \psi_{2,1,0} = R_{2,1} Y_{1,0},</mrow>
+				<mrow> \amp  \psi_{2,1,1} = R_{2,1} Y_{1,1},</mrow>
+			</md>
+			where the <m>R</m>'s and <m>Y</m>'s are given in <xref ref="tab-hydrogen-radial"/> and <xref ref="tab-hydrogen-angular"/> respectively.  From the Tables we find that while <m>\psi_{2,0,0}</m>, called the <m>2s</m> orbital is isotropic, the other states <m>\psi_{2,1,-1}</m>, <m>\psi_{2,1,0}</m>, <m>\psi_{2,1,1}</m>, collectively called <m>2p</m> states are not isotropic. Even though the wave functions for <m>2s</m> and <m>2p</m> states of the hydrogen atom are very different in their distribution in space, the energies corresponding to these states are equal.   
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Probability-of-Electron-in-a-Region"><title>Probability of Electron in a Region</title>
+
+		<statement>
+			<p>
+				What is the probability of finding the electron in the 1s state to be within a distance <m>a_0</m> of the nucleus?
+			</p>
+		</statement>
+		<hint><p>Integrate probability density.</p></hint>
+		<answer><p>
+			<m>0.32</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The integration of the probability density <m>\rho_{1s}</m> from <m>r=0</m> to <m>r=a_0</m> will give us the required probability.
+				<me>
+					P_{r\le a_0} = \int_0^{a_0} \rho_{1s} dr = \int_0^{a_0} \frac{4}{a_0^3}\: r^2 e^{-2r/a_0} dr = 1 - \frac{5}{e^2} \approx 0.32.
+				</me>
+				That is, there is only 32\% chance that the electron is within a Bohr radius if the electron is in the 1s state.
+			</p>
+		</solution>
+	</exercise>
+ 
+
+	<subsection><title>Emission Spectrum of Hydrogen Atom</title>
+		<p>
+			The emission of photons are connected to the pumping of a system from one energy state to another energy state of lower energy.  The absorption happens when an incident photon is able to cause the transition of a system from a lower energy state to a higher energy state. <xref  ref="fig-energy-levels-hydrogen-atom-transitions"/> shows transition of states <m>(n=2, l=1,m_l=0,\pm1)</m> to state <m>(n=1, l=0,m_l=0)</m> and states <m>(n=3, l=2,m_l=0,\pm1, \pm2)</m> to states <m>(n=1, l=1,m_l=0, \pm1)</m>.
+		</p> 
+
+		<figure xml:id="fig-energy-levels-hydrogen-atom-transitions">
+			<caption>
+				 The transition hydrogen atom between its stationary states results in emission of light.  The emission for 3d state to 2p state transition emits light in the visible range while the emission from the 2p state to 1s state is in the ultraviolet range.
+			</caption>
+			<image source="./images/modern-physics/energy-levels-hydrogen-atom-transitions.png" width="80%"/>
+		</figure>
+
+		<p>
+			The energy conservation dictates that the energy of the photon released must equal the change in the energy of the electron.  Therefore, if an electron jumps from a state of energy <m>E_n</m> to a state of energy <m>E_m \lt E_n</m>, the energy of the emitted photon will be the difference <m>E_n-E_m</m>.  Equating this to <m>hf</m> gives us the frequency of the light emitted in the process.
+			<men>
+				h f = E_n-E_m.
+			</men>
+			We can obtain the wavelength of the light in the process by writing <m>\lambda</m> in terms of <m>f</m> and the speed of light <m>c</m>.
+			<men>
+				\lambda = \frac{c}{f} = \frac{hc}{E_n-E_m}.
+			</men>
+			Among all the transitions of hydrogen atom, the transition of the hydrogen atom to <m>n=2</m> state from states <m>n=3,4,5,6</m> are particularly interesting since the energy corresponds to the release of photons in the visible spectrum.  The series is called the <term>Balmer series</term> as we have seen before.
+		</p>
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Balmer-Series-qm"><title>Balmer Series</title>
+
+		<statement>
+			<p>
+				What is the energy and wavelengths of the photons released when hydrogen atom jumps from a state with <m>n=4</m> to <m>n=2</m>?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+				The energy of the photon will be the difference in the energy of the two states of hydrogen.
+				<me>
+					E_{\textrm{photon}} = -\frac{E_1}{4^2} - (-\frac{E_1}{2^2}) = \frac{3}{16} E_1 = \frac{3}{16} \times 13.6\:\textrm{eV} = 2.55\:\textrm{eV}.
+				</me>
+				The wavelength of the photon will be
+				<me>
+					\lambda = \frac{hc}{E_{\textrm{photon}}} = \frac{1.24\:\textrm{eV.}\mu\textrm{m}}{2.55\:\textrm{eV}} = 0.486\ \mu\textrm{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+ 
+ 	<subsection><title>Quantization of Energy and Angular Momentum</title>
+ 		<p>
+ 			The solution of the hydrogen atom problem has shown us that the energy of hydrogen atom can take only certain discrete value, labeled by the principal quantum number <m>n</m>.
+			<men>
+				E_n = - \frac{E_1}{n^2}, \ \ n = 1, 2, 3, \cdots.
+			</men>
+			The quantum states are labeled with two additional quantum numbers, <m>(l, m_l)</m>, that inform us about  the angular variation of the wavefunction. A more detail analysis shows that these quantum numbers give us the information about the magnitude of the angular momentum <m>|\vec L|</m>  and the component of the angular momentum about a particular direction in space, which is usually taken to be the <m>z</m>-axis, <m>L_z</m>.  A state <m>\psi_{n,l,m_l}</m> has the following magnitude of the angular momentum and the <m>z</m>-component of the angular momentum.
+			<mdn>
+				<mrow> \amp |\vec L| = \sqrt{l(l+1)}\: \hbar,</mrow>
+				<mrow> \amp  L_z = m_l \hbar,</mrow>
+			</mdn>
+			where <m>\hbar = h/2\pi</m>.  Recall that for a particular <m>n</m>, the <m>l</m> takes <em>integer values</em> from <m>0</m> to <m>n-1</m> and for a particular <m>l</m>,  the <m>m_l</m> takes <em>integer values</em> between <m>-l</m> and <m>l</m>. Therefore, <m>|\vec L|</m> and <m>L_z</m> take on discrete values.  We say that <m>|\vec L|</m> and <m>L_z</m> are quantized.
+		</p>
+		<p>
+			The quantization of the <m>z</m> (or <m>x</m>, or <m>y</m>) component of the angular momentum is also called <term>space quantization</term>. Since <m>L_z=|\vec L|\cos\theta</m> for angular momentum vector pointed at angle <m>\theta</m> to the <m>z</m>-axis, the quantization of <m>L_z</m> means quantization of <m>\theta</m>, the direction in space, hence the term space quantization. Each allowed value of <m>L_z</m> for a particular value of <m>|\vec L|</m> corresponds to the angular momentum vector pointed in specific direction in space.  That is, quantum mechanics of hydrogen atom shows that the angular momentum of the electron in the atom must be pointed only at certain angles to the chosen axis.
+		</p>
+	</subsection>  
+
+
+
+	<exercise xml:id="ex-Angular-Momenta-of-an-Electron-in-Hydrogen-Atom"><title>Angular Momenta of an Electron in Hydrogen Atom</title>
+
+		<statement>
+			<p>
+				(a) An electron in the hydrogen atom has <m>l=2</m>, what is the magnitude of the angular momentum?  (b) What are the possible values of <m>m_l</m> for this electron? (c) What are the possible values of the <m>z</m>-component of the angular momentum vector for this electron? (d) What directions in space can the angular momentum vectors be pointed? (e) Draw a diagram showing the directions of the angular momentum vectors in space.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+				(a) This is just a straighforward application of the given formula for <m>|\vec L|</m>.
+				<me> 
+					|\vec L|= \sqrt{l(l+1)}\: \hbar = \sqrt{2(2+1)}\: \hbar =  \sqrt{6}\: \hbar = 2.6 \times 10^{-34}\: J.s.
+				</me>
+			</p>
+			<p>
+				(b) <m>m_l</m> takes values from <m>-l</m> to <m>+l</m>.  Therefore, the possible values of <m>m_l</m> of this electron will be
+				<me> 
+					m_l = -2,\ -1,\ 0,\ 1,\ 2.
+				</me>
+			</p>
+			<p>
+				(c) This is just a straighforward application of the given formula for <m>L_z</m> for each value of <m>m_l</m>.
+				<me> 
+					L_z = m_l  \: \hbar = \left( -2\hbar,\ -1\hbar,\ 0,\ 1\hbar,\ 2\hbar\right) =  (-2.1,\ - 1.05,\ 0 ,\ 1.05,\ 2.1) \times 10^{-34}\: J.s.
+				</me>
+			</p>
+			<p>
+				(d) We work out the angles by setting <m>\cos\theta = L_z/L</m> with <m>L= \sqrt{6}\: \hbar</m> and <m>L_z =  \left( -2\hbar,\ -1\hbar,\ 0,\ 1\hbar,\ 2\hbar\right)</m>. You should get
+				<me>
+					\cos\theta = \left( -\frac{2}{\sqrt{6}},\ -\frac{1}{\sqrt{6}},\ 0,\ \frac{1}{\sqrt{6}},\ \frac{2}{\sqrt{6}}\right).
+				</me>
+				Therefore, the angles are
+				<me>
+					\theta = -35.3^{\circ},\  -65.9^{\circ},\  0,\ 65.9^{\circ},\ 35.3^{\circ}.
+				</me>
+			</p>
+			<p>
+				(e) The five quantized directions in space are shown by the five angular momentum arrows for <m>l=2</m>.  The rotation of the arrows about the <m>z</m>-axis give all other directions in space for the angular momentum vector.
+			</p>
+			<p>
+				<image source="./images/modern-physics/example-ang-mom-quantization.png" width="80%"/>
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Quantum-States-of-Hydrogen-in-n4-State"><title>Quantum States of Hydrogen in <m>n = 4</m> State</title>
+
+		<statement>
+			<p>
+				The electron in a hydroen atom is in a quantum state with principal quantum number <m>n=4</m>.  (a) What are the  possible values of the orbital angular momentum <m>l</m>?  (b) For each possible values of <m>l</m>, what are the possible values of the magnetic quantum number <m>m_l</m>?  (c) How many quantum states of hydrogen atom are possible that have <m>n=4</m> as their principal quantum number [ignoring the spin for now]?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Subshells-of-K-Shell"><title>Subshells of K Shell</title>
+
+		<statement>
+			<p>
+				(a) An electron is in s subshell of the <m>K</m> shell.  What are its <m>n</m> and <m>l</m>? (b) An electron has <m>n=3</m> and <m>l=2</m>, what are the spectroscopic letter designations of the shell and subshell for these values?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Probability-of-Finding-Electron-in-a-Region-in-H-Atom"><title>Probability of Finding Electron in a Region in H Atom</title>
+
+		<statement>
+			<p>
+				The electron in the hydrogen atom is in the 1s state.  (a) What is the probability that the electron is located within <m>a_0/4</m> of the nucleus? (b)  What is the probability that the electron is outside a distance <m>r=4a_0</m> from the nucleus? Here <m>a_0</m> is the Bohr radius.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Probability-of-Finding-Electron-in-a-Region-in-H-Atom-in-n-eq-2-state"><title>Probability of Finding Electron in a Region in H Atom in an <m>n=2</m> State </title>
+
+		<statement>
+			<p>
+				The electron in the hydrogen atom is in the state <m>n=2, l=1, m_l = 0</m>.  (a) What is the probability that the electron is located within <m>a_0</m> of the nucleus? (b)  What is the probability that the electron is outside a distance <m>r=2a_0</m> from the nucleus? Here <m>a_0</m> is the Bohr radius.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Probability-of-Finding-Electron-in-a-Direction-in-H-Atom"><title>Probability of Finding Electron in a Direction in H Atom in <m>n=2</m> State </title>
+
+		<statement>
+			<p>
+				The electron in the hydrogen atom is in the state <m>n=2, l=1, m_l = 0</m>.  (a) What is the probability that the electron is located in the direction <m>\theta \le 45^{\circ}</m> of the <m>z</m>-axis? (b)  What is the probability that the electron is located in the direction <m>\theta \le 45^{\circ}</m> of the <m>xy</m>-plane?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Probability-of-Finding-Electron-in-a-Region-in-H-Atom-Ex2"><title>Probability of Finding Electron in a Region in H Atom in <m>n=2</m> State - Ex 2 </title>
+
+		<statement>
+			<p>
+				The electron in the hydrogen atom is in the state <m>n=2, l=1, m_l = +1</m>.  (a) What is the probability that the electron is located within <m>a_0</m> of the nucleus? (b)  What is the probability that the electron is outside a distance <m>r=2a_0</m> from the nucleus? Here <m>a_0</m> is the Bohr radius.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Probability-of-Finding-Electron-in-a-Direction-in-H-Atom-Ex2"><title>Probability of Finding Electron in a Direction in H Atom in <m>n=2</m> State - Ex 2 </title>
+
+		<statement>
+			<p>
+				The electron in the hydrogen atom is in the state <m>n=2, l=1, m_l = +1</m>.  (a) What is the probability that the electron is located in the direction <m>\theta \le 45^{\circ}</m> of the <m>z</m>-axis? (b)  What is the probability that the electron is located in the direction <m>\theta \le 45^{\circ}</m> of the <m>xy</m>-plane?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise> 
+
+	<exercise xml:id="ex-Energy-of-Transition-in-H-Atom"><title>Energy of Transition in H Atom </title>
+
+		<statement>
+			<p>
+				An electron makes a transition from 3p state to 2s state of a Hydrogen atom.  What will be the energy and wavelength of the photon emitted?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise> 
+
+	<exercise xml:id="ex-Energy-of-Transition-in-H-Atom-Ex2"><title>Energy of Transition in H Atom Ex 2</title>
+
+		<statement>
+			<p>
+				An electron makes a transition from 6d state to 5p state of Hydrogen atom.  What will be the energy and wavelength of the photon emitted?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise> 
+
+ 
+
+
+
+
+
+</section>

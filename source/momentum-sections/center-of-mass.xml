@@ -1,0 +1,595 @@
+<section xml:id="momentum-Center-of-Mass"><title> Center of Mass</title>
+	<introduction>
+		<p>
+			A macroscopic object such as a car or a human being has many independently moving parts. To understand their motion fully you need to study motion of each part and how they impact each other. However, all you need is the overall motion of the entire body, regardless of the changing shape due to independenly moving parts, you can follow the motion of the entire mass placed at a special mathemtical point for the entire body. 
+		</p>
+		<p>
+			<idx>Center of Mass</idx>
+			This special point is called <term>center of mass</term>. Center of mass of a body may or may not be inside the body. Below, you will learn to find the location of the center of mass in various situations. 
+			<!-- Near Earth, since gravity is uniform, center of mass coincides with the center of gravity. -->
+		</p>
+		<!-- <p>
+			To fully understand mechanics of an object that consists of many moving parts, you will need to study motion of each part. For instance, if you wanted to understand motion of a person, you will need to follow motion of arms, legs, heart, etc.
+		</p>
+		<p>
+			Despite these complications, you can study <term>overall translational motion </term> of the entire body by replacing the entire body by a single point and placing the total mass at that point. This special point is called the <term>center of mass</term>. This mathematical point may or may not be part of the body. Below, you will learn to find the location of a center of mass. Near Earth, since gravity is uniform, center of mass coincides with the center of gravity.
+		</p> -->
+ 		
+	</introduction>
+
+	<subsection><title>Center of Mass of Object Made up of Point Particles</title>
+	<idx><h>Center of Mass</h><h>of Multiparticle System</h></idx>
+		<p>
+			Consider an entity, such as a molecule, that consists of point particles of masses <m> m_1 </m>, <m> m_2 </m>, <m> \cdots </m>, <m> m_N </m> and positions <m> \vec r_1 </m>, <m> \vec r_2 </m>, <m> \cdots </m>, <m> \vec r_N </m>. Then, the center of mass of the entity will be at <m> \vec R_{\text{CM}}</m>, given by the following mass-weighted position.
+
+			<men xml:id="eq-cm-position-of-n-point-masses">
+					\vec R_{\text{CM}} = \dfrac{m_1\vec r_1 + m_2\vec r_2 + \cdots + m_N\vec r_N }{M},
+			</men>
+			where <m>M</m> is the total mass.
+			<me>
+				M = m_1 + m_2 + \cdots + m_N.
+			</me>
+				We can write the components of this equation to obtain the <m> X_{\text{CM}} </m>, <m> Y_{\text{CM}} </m>, and <m> Z_{\text{CM}} </m> from the coordinates of the parts. For instance, <m> X_{\text{CM}} </m>, will be:
+				<men>
+					X_{\text{CM}} = \dfrac{m_1 x_1 + m_2 x_2 + \cdots + m_N x_N }{M},
+				</men>				
+				and similarly for <m> Y_{\text{CM}} </m>, and <m> Z_{\text{CM}} </m>. You might think of <m>\vec R_\text{cm}</m> as <term>mass-weighted position</term> of the entire entity.
+		</p>
+		<remark><title>Center of Mass of a Multipart System</title>
+			<p>
+				If an object is made up of parts that are not point particles, such as a human body, then center of mass of such as object can be obtained by replacing each macroscopic part by an <q>equivalent point particle</q> with the same mass but located at the center of mass of part. Thus, we replace position vectors in Eq. <xref ref="eq-cm-position-of-n-point-masses"/> by the center of mass of each part.
+				<men xml:id="eq-cm-position">
+					\vec R_{\text{CM}} = \dfrac{m_1\vec r_{1,\text{cm}} + m_2\vec r_{2,\text{cm}}  + \cdots + m_N\vec r_{N,\text{cm}}  }{M}.
+				</men>
+				Such an equivalent point particle system is said to be a collection of discrete masses <m>m_1</m> at <m>\vec r_{1,\text{cm}}</m>, <m>m_2</m> at <m>\vec r_{2,\text{cm}}</m>, <m>\cdots</m>, <m>m_N</m> at <m>\vec r_{N,\text{cm}}</m>, with center of mass at <m>\vec R_\text{CM}</m>.
+
+			</p>
+		</remark>
+
+
+
+	<!-- <subsection><title> Center of Mass of a Multipart System </title>
+		<p> 
+			Consider a multipart system, such as your body. Suppose the body has <m> N </m> parts with masses <m> m_1 </m>, <m> m_2 </m>, <m> \cdots </m>, <m> m_N </m>. <em> These parts don't have to be joined together</em>, e.g., when a projectile breaks up into ten parts, they can all go their separate ways, but for us, all ten parts will still be part of the combined system, whose overall motion we wish to study.
+		</p> 
+		<p>
+			Let the centers of those parts be located at position vectors <m> \vec r_1 </m>, <m> \vec r_2 </m>, <m> \cdots </m>, <m> \vec r_N </m>. Then, the position of the center of mass, denoted by <m> \vec R_{\text{CM}}</m>, is defined by
+				<men xml:id="eq-cm-position">
+					\vec R_{\text{CM}} = \dfrac{m_1\vec r_1 + m_2\vec r_2 + \cdots + m_N\vec r_N }{M},
+				</men>
+				where <m> M </m> is the total mass,
+				<men>
+					M = m_1 + m_2 + \cdots + m_N.
+				</men>
+				We can write the components of this equation to obtain the <m> X_{\text{CM}} </m>, <m> Y_{\text{CM}} </m>, and <m> Z_{\text{CM}} </m> from the coordinates of the parts. For instance, <m> X_{\text{CM}} </m>, will be:
+				<men>
+					X_{\text{CM}} = \dfrac{m_1 x_1 + m_2 x_2 + \cdots + m_N x_N }{M},
+				</men>				
+				and similarly for <m> Y_{\text{CM}} </m>, and <m> Z_{\text{CM}} </m>. You might think of <m>\vec R_\text{cm}</m> as <term>mass-weighted position</term> of the entire body.
+		</p>
+	</subsection> -->
+
+	<example xml:id="CM-of-a-Two-Mass-System"> <title> CM of a Two Mass System </title>
+		<statement>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					Two blocks of masses <m> 10\text{ kg}</m> and <m> 20\text{ kg}</m>  are attached at the ends of a  <m> 1\text{-meter} </m>  rod of negligible mass. Where is the CM located?
+				</p>
+				<p></p>
+				<figure xml:id="fig-CM-of-a-Two-Mass-System">
+					<caption></caption>
+					<image source="./images/momentum/CM-of-a-Two-Mass-System.png" width="50%"/>
+				</figure>
+			</sidebyside>
+		</statement>
+
+		<!-- <hint><p> Use the formula. </p> </hint> -->
+
+		<answer><p> The CM is located <m> \dfrac{1}{3}\text{ m}</m> from the <m> 20\text{-kg}</m> block towards the other block.    </p> </answer>
+		<solution>
+			<p>
+				Since we have only two masses, we place one of the masses at the  origin and the other mass along the <m> x </m> axis. Suppose we place the <m> 20\text{-kg}</m> block at the origin and the <m> 10\text{-kg}</m> block at <m> x = 1\text{ m} </m>. 
+			</p>
+			<p>
+				Leaving the units out of the calculations we get the following from the <m> X_{\text{CM}} </m> formula.
+					<me> 
+						X_{\text{CM}} = \frac{ 20\times 0 + 10 \times 1}{30 } = \frac{1}{3}.
+					</me>
+					Now, we put the units back in. Therefore, the CM is located <m> \dfrac{1}{3}\text{ m}</m> from the <m> 20\text{-kg}</m> block towards the other block.   
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="CM-of-a-Three-Mass-System"> <title> CM of a Three Mass System </title>
+		<statement>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					Three balls of masses <m> 2\text{ kg}</m>, <m> 3\text{ kg}</m> and <m> 4\text{ kg}</m>  are located at the corners of a right-angles triangle as shown in the fogure below. The three masses may or may not be connected by any rods. Where is the CM located in a coordinate sytem with the 3-kg mass at the origin.
+				</p>
+				<p></p>
+				<figure xml:id="fig-example-cm-triangle-statement">
+					<cation></cation>
+					<image source="./images/momentum/example-cm-triangle-statement.png" width="50%"/>
+				</figure>
+			</sidebyside>
+		</statement>
+
+		<!-- <hint> <p> You will need both <m> x </m> and <m> y</m>.  </p> </hint> -->
+		<answer> <p>  The CM is located at <m> (-\dfrac{8}{9}\text{ m}, \dfrac{4}{3}\text{ m})</m> in the coordinate system in the figure. Note that these values will changes if we use another coordinate system, but the physical location of the CM will remain the same. </p> </answer>
+
+		<solution>
+			<sidebyside widths="55% 5% 40%">
+				<p>					
+					Since we have a right-angled triangle, two of those sides can be chosen to align with Cartesian axes as shown. This gives us <m> (x,y) </m> coordinates of each of the masses. We use them in formulas for <m> X_{\text{CM}} </m> and <m> Y_{\text{CM}} </m>.
+
+					<md>
+						<mrow> \amp X_{\text{CM}} =  \frac{2\times (-4) + 3\times 0 + 4 \times 0}{2+3+4} = -\dfrac{8}{9} </mrow>
+						<mrow> \amp Y_{\text{CM}} =  \frac{2\times 0 + 3\times 0 + 4 \times 3}{2+3+4} = \dfrac{4}{3} </mrow>
+					</md>
+
+				</p>
+				<p></p>
+				<figure xml:id="fig-example-cm-masses-on-right-triangle">
+					<caption></caption>
+					<image source="./images/forces/example-cm-masses-on-right-triangle.png" width="60%"/>
+				</figure>
+				
+			</sidebyside>
+			<p>	
+				Therefore, the CM is located at <m> (-\dfrac{8}{9}\text{ m}, \dfrac{4}{3}\text{ m})</m> in the coordinate system in the figure. Note that these values will changes if we use another coordinate system, but the physical location of the CM will remain the same.  
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="CM-from-CMs-of-the-Parts"><title> CM from CM's of the Parts </title>
+		<statement>
+
+			<sidebyside widths="50% 10% 30% 10%">
+				<p>
+					Consider a cylindrical object with a cap at the top as shown in <xref ref="fig-example-composite-object"/>. 
+					Let <m> M_1 </m> be the mass of the cylidrical part and  <m> M_2 </m> be the mass of the cap. Let <m> H </m> be the height of the cylindrical part and <m> h </m> the height of the cap. Find the center of mass of the full system.
+					 
+				</p>
+				<p> </p>
+				<figure xml:id="fig-example-composite-object">
+					<caption></caption>		 
+					<image source="./images/momentum/example-composite-object-cylinder-cap-1.png" width="40%" />
+				</figure>			 
+				<p></p>
+			</sidebyside>
+ 
+		</statement>
+		<!-- <hint> <p> Place mass of each part at the center of mass of that part. Then use the point mass formula for the center of mass.</p></hint> -->
+		<answer><p> 			<m>
+					Y_{\text{CM}} = \dfrac{ M_1 \times H/2 + M_2 \times (H + h/3) }{M_1 + M_2}.
+				</m></p> </answer>
+		<solution>
+			<p>
+				The center of mass of a composite object can be obtained by replacing parts by point particles at their centers of mass and then using center of mass of multiparticle system.
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					We replace the cylinder and the conical cap by point masses at their corresponding CMs. The CM of the cylinder will be at the center of the cylinder, but the CM of a cone is at a height of <m>\frac{1}{3}h</m> from the base. Since both CMs fall on one line, we need only one Cartesian axis. We place the <m> y </m> coordinate axis for calculation purpose.
+				</p>
+				<p> </p>
+				<figure xml:id="fig-example-composite-object-solution">
+					<caption></caption>
+					<image source="./images/momentum/example-composite-object-solution.png" width="60%" />
+				</figure>
+			</sidebyside>
+
+			<p>
+
+				The <m> Y_{\text{CM}} </m> of the two together gives
+				<me>
+					Y_{\text{CM}} = \dfrac{ M_1 \times H/2 + M_2 \times (H + h/3) }{M_1 + M_2}.
+				</me>
+			</p>
+
+		 </solution>
+	</example>
+
+
+	</subsection>
+
+
+
+
+
+	<subsection><title>(Calculus) Center of Mass of Continuous Objects </title>
+	<idx><h>Center of Mass</h><h>of Continous Objects</h></idx>
+
+		<introduction>
+
+		<p>
+			In a physical object, such as the human body, large number of discrete atoms are essentially distributed continuously. To take into account the possibility that different parts of the object may have different densities, we model a physical body by a <term> density function</term>, <m> \rho(x,y,z)</m>, which is local density at position <m>(x,y,z)</m>. An integral over the volume of the object gives the mass, <m> M </m>
+			<men xml:id="eq-cm-continupius-object-mass">
+				M = \iiint\, \rho(x,y,z)\, dxdydz
+			</men>
+			The center of mass can then be stated as the following integral.
+			<men xml:id="eq-cm-continupius-object-rcm">
+				\vec R_\text{cm} = \dfrac{1}{M}\, \iiint\,\vec r\, \rho(x,y,z)\, dxdydz,
+			</men>
+			where <m>\vec r = x \hat i + y \hat j + z \hat k </m>.			
+		</p>
+		<!-- <p>
+			To locate the center of mass of a continuous body, we first discretize the body by conceptually <q> breaking it up into small cells</q>, and then, replace each cell by its mass <m> \Delta m </m>.  This process converts the original continuous body into an equivalent system of point masses to which we can apply the formula for the CM of discrete masses given in <xref ref="eq-cm-position"/>.  Making the sizes of these cells infinitely small coverts the sums into integrals. 
+			<men>
+					\vec R_{\text{CM}} = \dfrac{1}{M}\, \int\int\int\, \vec r \, \rho(x,y,z)\, dxdydz,
+				</men>
+				where <m>\vec r = x \hat i + y \hat j + z \hat k </m>. 
+		</p> -->
+		<sidebyside widths="60% 5% 35%">
+			<p>
+				We often write the integral in a more conceptual form by denoting <m> \rho(x,y,z)\, dxdydz </m> by <m> dm </m>, which stands for a small mass at  the infintesimal cubical cell located center at <m> (x,y,z) </m>.
+				<men xml:id="eq-cm-position-continuous">
+					\vec R_{\text{CM}} = \dfrac{1}{M}\, \int\, \vec r \, dm.
+				</men>				
+			</p>
+			<p> </p>
+			<figure xml:id="fig-cm-continuous-body-dm-integral">
+				<caption></caption>
+				<image source="./images/momentum/cm-continuous-body-dm-integral.png" width="60%"/>
+			</figure>
+		</sidebyside>
+
+		<p>
+			The first step in calculating integral in Eq. <xref ref="eq-cm-position-continuous"/> involves picking a representative infinitesimal element of the body guided by the symmetry of the body. Then, <m>dm</m> can be cast into an integral that you can often do without much difficulty. The three steps of calculation of CM are illustrated for a cone in <xref ref="fig-cm-calculation-illustration-cone"/>.
+		</p>
+		<figure xml:id="fig-cm-calculation-illustration-cone">
+			<caption>
+				Three steps in calculation of CM of a cone. Step 1. An element of cone is selcted for <m>dm</m>. Step 2. Total mass <m>M</m> is calulated. 3. Finally, <m>CM</m> is calculated.
+			</caption>
+			<image source="./images/momentum/cm-calculation-illustration-cone.png" width="80%"/>
+		</figure>
+		
+		<p>
+			Although Eq. <xref ref="eq-cm-position-continuous"/>  is applicable to all systems, most of the time we will be working with regular solids of uniform density. In these situations, the density function <m> \rho(x,y,z) = \rho_0</m>, the uniform density, comes out of integrals for <m>M</m> and <m>\vec R_\text{CM}</m> and cancels out.
+			<men>
+				\vec R_{\text{CM}} = \dfrac{1}{V}\,\iiint \vec r \, dxdydz;\ \ V = \iiint dxdydz,
+			</men>
+			where integrals are taken over the space occupied by the body. The integral over <m>\vec r</m> locates the geometric centroid of the body. Thus, if a body has some symmetry, you do not need to do any integral since you can often locate the geometric centroid just by inspection.				
+		</p>
+		<p>
+			 Thus, CM can sometimes be <em> guessed  by symmetry</em>. For instance, the center of mass of a spherical object will be at the center, the center of mass of a box will be at the center of the box, etc.  <xref ref="fig-centers-of-mass-solids"/> shows the centers of a sphere, a cylinder, and a triangular shaped object of uniform density.
+			 <idx><h>Center of Mass</h><h>Common Solids</h></idx>
+		</p>
+		<figure xml:id="fig-centers-of-mass-solids">
+			<caption>
+				Center of mass of some common solids.
+			</caption>
+			<image source="./images/momentum/centers-of-mass-solids.png" width="80%"/>
+		</figure>
+		</introduction>
+
+		<subsubsection><title>Simplification for One- and Two-Dimensional Objects</title>
+			<p>
+				Integrals in Eqs. <xref ref="eq-cm-continupius-object-mass"/> and <xref ref="eq-cm-continupius-object-rcm"/> become simpler in the case where object is a wire (one-dimension) or a plate (two-dimension). In the case of wire, we work with <term>linear density</term>, denoted by <m>\lambda</m>, which is mass per unit length, and in the case of plate, we work with <term>surface density</term>, denoted by <m>\sigma</m>, which is mass per unit area. The corresponding integrals will be as follows.
+			</p>
+			<p>
+				<alert> Wire:</alert> Let <m>ds</m> be a length elment on the wire. If the wire is along <m>x</m> axis it will be <m>dx</m>, but if the wire is curved, it may be more complicated. Then mass element <m>dm</m> on the wire will be 
+				<me>
+					dm = \lambda ds.
+				</me>
+				The total mass and center of mass integrals will be
+				<md>
+					<mrow>\amp M = \int dm =  \int \lambda\, ds.</mrow>
+					<mrow> \amp \vec R_\text{CM} = \dfrac{1}{M}\int \vec r dm = \dfrac{1}{M}\int \vec r\, \lambda\, ds.</mrow>
+				</md>
+			</p>
+			<p>
+				<alert> Plate:</alert> Let <m>dA</m> be an area elment on the surface. If the wire is flat on <m>xy</m>-plane it will be <m>dxdy</m>, but if the plate is curved, it may be more complicated. Then mass element <m>dm</m> on the wire will be 
+				<me>
+					dm = \sigma dA.
+				</me>
+				The total mass and center of mass integrals will be
+				<md>
+					<mrow>\amp M = \int dm =  \int \sigma\, dA.</mrow>
+					<mrow> \amp \vec R_\text{CM} = \dfrac{1}{M}\int \vec r\, dm = \dfrac{1}{M}\int \vec r\, \sigma dA.</mrow>
+				</md>
+			</p>
+		</subsubsection>
+
+		<example xml:id="CM-of-a-Triangle-of-Uniform-Density"> <title> (Calculus) CM of a Triangle of Uniform Density </title>
+			<statement>
+				<p>
+					Consider a plate of uniform density and uniform thickness <m>t</m> cut in the shape of right-angled triangle with base <m> b </m> and height <m> h </m>.  Where is the center of mass?
+				</p>			
+			</statement>
+			<hint> <p>  Use a coodinate system with one corner of the base at origin and the end with <m>90^\circ</m> corner at <m>x=b</m>. </p> </hint>
+			<answer> <p> <m>(\frac{2}{3}b, \frac{1}{3}h, 0)</m> with respect to coordinate given in solution.  </p> </answer>
+			<solution>
+				<sidebyside widths="50% 5% 45%">
+					<p>
+						Let thickness of the plate be <m>t</m> and the uniform density <m> \rho </m>. Along the thickness of the plate, the CM will be in the plane half-way between the two faces of the plate.  So, we only need to find the center of mass coordinates on the triangular shape surface. We will place the triangular face in the <m>xy</m>-plane as shown in the figure.
+						
+					</p>
+					<p>
+					</p>
+					<figure xml:id="fig-example-cm-triangle">
+						<caption></caption>
+						<image source="./images/momentum/example-cm-triangle.png" width="50%"/>
+					</figure>
+				</sidebyside>
+
+				<p>
+					The <m> dm </m> in Eq. <xref ref="eq-cm-position-continuous" /> is
+					<me>
+						dm = \rho\, t\,  dx\,  dy.
+					</me>
+					Then, the calculations for <m> X_{\text{CM}} </m> goes as follows.
+					<md>
+						<mrow> X_{\text{CM}} \amp = \frac{1}{M} \int_{plate} x\ dm  </mrow>
+						<mrow> 		  \amp = \frac{1}{M} \int_{plate} x\ \rho\, t\, dx dy  </mrow>
+						<mrow>  	  \amp = \frac{\rho\ t}{M}\int_0^b dx \left[ x \int_0^{hx/b} dy \right]  </mrow>
+						<mrow> 	      \amp = \frac{2}{3}b,\ \ \text{ using } M = \dfrac{1}{2}bht\rho. </mrow>					
+					</md>
+					Similarly, <m> Y_{\text{CM}} = \dfrac{1}{3} h</m>. By symmetry, <m> Z_{\text{CM}} = \dfrac{t}{2}</m>.
+				</p>
+			</solution>
+		</example>
+
+
+	<example xml:id="ex-Center-of-Mass-of-a-Wire-in-the-Shape-of-a-Triangle"><title>Center of Mass of a Wire in the Shape of a Triangle</title>
+
+		<statement>
+			<p>
+				A uniform wire of length <m>L</m> is bent into an equilateral triangle. Find its center of mass.
+			</p>
+		</statement>
+		<!-- <hint><p>
+			Use symmetry and place the triangle with one side along <m>y</m>-axis.
+		</p></hint> -->
+		<answer><p>
+			<m>\frac{L}{6\sqrt{3}}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Let <m>\lambda</m> be the mass per unit length of the wire and let us denote the total mass by <m>3m</m>. Let <m>2a=L/3</m> denote the length of each side. Making use of symmetry, we will place the triangle so that the center of mass will be on <m>x</m> axis as shown in <xref ref="fig-Center-of-Mass-of-a-Wire-in-the-Shape-of-a-Triangle-solution"/>.
+			</p>
+			<figure xml:id="fig-Center-of-Mass-of-a-Wire-in-the-Shape-of-a-Triangle-solution">
+				<caption></caption>
+				<image source="./images/momentum/Center-of-Mass-of-a-Wire-in-the-Shape-of-a-Triangle-solution.png" width="70%"/>
+			</figure>
+			<p>
+				Let us find <m>x_0</m> by working on the side in the first quadrant. The equation of the line of this side is
+				<me>
+					y = a - \frac{1}{\sqrt{3}}\, x.
+				</me>
+				A mass element of the side will be
+				<md>
+					<mrow> dm \amp = \lambda\, ds = \lambda\, \sqrt{dx^2 + dy^2}</mrow>
+					<mrow>\amp = \lambda\, \sqrt{1 + (dy/dx)^2}\, dx = \frac{2}{\sqrt{3}}\,\lambda\, dx.</mrow>
+				</md>
+				Now, we get <m>x_0</m>, the <m>x</m>-cm of the two slanted sides.
+				<md>
+					<mrow> x_0 \amp = \frac{1}{ \frac{2}{\sqrt{3}}\,\lambda \int dx}\, \frac{2}{\sqrt{3}}\,\lambda \int x dx</mrow>
+					<mrow> \amp = \frac{\sqrt{3}}{2}\,a.</mrow>
+				</md>
+				Therefore, CM of the triangular structure will be at
+				<me>
+					X_\text{CM} = \frac{1}{3m}\left(m\times 0 + 2m\times \frac{\sqrt{3}}{2}\,a  \right) = \frac{a}{\sqrt{3}}.
+				</me>
+				Writing this in terms of <m>L</m> we have
+				<me>
+					X_\text{CM} = \frac{L}{6\sqrt{3}}.
+				</me>
+			</p>
+			
+		</solution>
+	</example>
+
+
+
+	<example xml:id="ex-Center-of-Mass-of-a-Semi-Circular-Ring"><title>(Calculus) Center of Mass of a Semi-Circular Ring</title>
+
+		<statement>
+			<p>
+				Find the location of the center of mass of a uniform semi-circular ring of radius <m>R</m>.
+			</p>
+		</statement>
+		<!-- <hint><p>
+			Use mass element of projected angle <m>d\theta</m>. Project their mass on symmetric line. Integrate.
+		</p></hint> -->
+		<answer><p>
+			<m>\dfrac{2}{\pi}R</m>.
+		</p></answer>
+		<solution>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Refer to <xref ref="fig-cm-semicircular-ring-solution"/> for calculations. I have placed the ring symmetrically about <m>y</m> axis. Therefore, CM will be on the <m>y</m> axis.
+				</p>
+				<p></p>
+				<figure xml:id="fig-cm-semicircular-ring-solution">
+					<caption>
+					</caption>
+					<image source="./images/momentum/cm-semicircular-ring-solution.png" width="50%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Let <m>\lambda</m> [kg/m] be linear density of the ring. The mass in the arc element shown in the figure is
+				<me>
+					dm = \lambda\; ds = \lambda Rd\theta.
+				</me>
+				We want to evaluate two integrals.
+				<md>
+					<mrow> \amp(1)\ \  M = \int dm = \int_0^\pi \lambda Rd\theta</mrow>
+					<mrow> \amp(2)\ \  \int y\; dm = \int_0^\pi  (R\sin\theta) (\lambda Rd\theta)</mrow>
+				</md>
+				The first one (1) is not even needed. We know the integral already since we have length of the semicircular ring. This will give
+				<me>
+					M= \pi R \lambda.
+				</me>
+				The second integral (2) will be
+				<me>
+					\int y\; dm  =  R^2 \lambda \int_0^\pi  \sin\theta\, d\theta = 2 R^2\lambda.
+				</me>
+				Therefore,
+				<me>
+					Y_\text{cm} = \frac{1}{M}\int y\; dm  = \frac{2}{\pi}R.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+
+
+
+	</subsection>
+
+
+
+
+
+
+	<exercises>
+
+
+		<exercise 
+			xml:id="ex-Change-in-the-Center-of-Mass-of-Human-Body-with-Movement-of-Arms"><title> Change in the Center of Mass of Human Body with Movement of Arms </title>
+			<statement>
+				<p>
+					Suppose you weigh <m>90\text{ kg}</m> and your arm weighs <m> 10\text{ kg}</m> each. Suppose  the center of mass of your arms is <m>18\text{ cm}</m> from your shoulder.  How much will your center of mass rise if you lift your arm from both down to both fully up and extended as shown in <xref ref="fig-change-in-cm-of-human-body-lifting-arm"/>.  
+				</p>
+				<figure xml:id="fig-change-in-cm-of-human-body-lifting-arm">
+					<caption>
+						Figure for <xref ref="ex-Change-in-the-Center-of-Mass-of-Human-Body-with-Movement-of-Arms" />.
+					</caption>
+					<image source="./images/momentum/change-in-cm-of-human-body-lifting-arm.png" width="50%"/>
+				</figure>
+			</statement>
+			<hint> <p> Set up equations for the center of mass in the vertical direction in the two ssituations. Choosing origin  at the center of mass when arms down may be helpful also. </p> </hint>
+			<answer> <p> <m> 12\text{ cm}</m>.  </p> </answer>
+			<solution> 
+				<p>
+					Let us choose <m>y</m> axis pointed up with origin at the center of mass when the arms are down. Let <m>y_0</m> be the <m>y</m>-coordinate of the arms when they are down and <m>Y</m> be the <m>y</m> coordinate of the rest of the body. Let <m>M</m> denote your entire mass and <m>m</m> the mass of each arm. 
+				</p>
+				<figure xml:id="fig-change-in-cm-of-human-body-lifting-arm-solution">
+					<caption>
+						Figure for <xref ref="ex-Change-in-the-Center-of-Mass-of-Human-Body-with-Movement-of-Arms" /> (solution).
+					</caption>
+					<image source="./images/momentum/change-in-cm-of-human-body-lifting-arm-solution.png" width="60%"/>
+				</figure>
+				<p>
+					Since in my construction, <m>y</m> coordinate of the CM is zero when arms are down, from the left side of  <xref ref="fig-change-in-cm-of-human-body-lifting-arm-solution"/>, we will get
+					<me>
+						M\,y_\text{cm} = 2\, m\, y_0 + (M-2m_0)\, Y,
+					</me>
+					which is zero on the left side, giving
+					<men xml:id="eq-cm-when-hands-down">
+						2\, m\, y_0 + (M-2m_0)\, Y = 0.
+					</men>
+					Let <m> h </m> be the <m>y</m> coordinate of the CM when the arms are up and <m> y_1</m> the <m>y</m> coordinate of the arms when they are up. Then, the right side of <xref ref="fig-change-in-cm-of-human-body-lifting-arm-solution"/> will give
+					<men  xml:id="eq-cm-when-hands-up">
+						M\,h = 2\, m\, y_1 + (M-2m_0)\, Y.
+					</men>
+					Subtracting Eq. <xref ref="eq-cm-when-hands-down"/> from  Eq. <xref ref="eq-cm-when-hands-up"/>, we get
+					<me>
+						M\, h = 2\, m\, \left(  y_1 - y_0 \right).
+					</me>
+					Note that <m>y_1-y_0</m> is twice the distance of the CM of the arm from the shoulder. Let us denote the distance of the CM of the arms from the shoulder by <m>d</m>. Solving for <m>h</m> we get
+					<me>
+						h = \dfrac{4\, m}{M}\, d = \dfrac{4\times 15}{90}\times 18 = 12\text{ cm}.
+					</me>
+				</p>
+			</solution>
+		</exercise>
+
+	<exercise xml:id="ex-Calculus-Center-of-Masss-of-Rod-of-Varying-Density"><title> (Calculus) Center of Masss of Rod of Varying Density</title>
+
+		<statement>
+			<p>
+				Density of material of a rod of uniform cross-section varies along its length. Let <m>x=0</m> at one end and <m>x=L</m> at the other end. Then, density <m>\rho(x) = \lambda_0\;(x/a)^2</m>, where <m>\lambda_0</m> and <m>a</m> are constants. Find the location from the CM.
+			</p>
+		</statement>
+		<hint><p>
+			Set up integrals <m>\int dm</m> and <m>\int x dm</m>.
+		</p></hint>
+		<answer><p>
+			<m>\frac{3 L}{4}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Let <m>A</m> be the area of cross-section. Consider an element between <m>x</m> and <m>x+dx</m>. The <m>X_\text{cm}</m> will be
+				<men xml:id="eq-Rod-of-Varying-Density-1">
+					MX_\text{cm} = \int x dm.
+				</men>
+				Here,
+				<me>
+					dm = \rho A dx =  \lambda_0\;(x/a)^2 A dx.
+				</me>
+				Therefore, total mass will be
+				<me>
+					M = \int dm = \int_0^L  \lambda_0\;(x/a)^2 A dx = \frac{\lambda_0}{3a^2}\; A L^3.
+				</me>
+				Using this and <m>dm</m> in Eq. <xref ref="eq-Rod-of-Varying-Density-1"/>, we get
+				<md>
+					<mrow> X_\text{cm} \amp = \frac{1}{M}\;\int x dm</mrow>
+					<mrow>   \amp = \frac{3a^2}{\lambda_0 A L^3}\;\int_0^L \lambda_0\;(x/a)^2 A x dx</mrow>
+					<mrow>   \amp = \frac{3a^2}{\lambda_0 A L^3}\; \frac{\lambda_0}{4a^2} AL^4 = \frac{3 L}{4}. </mrow>
+				</md>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+	<exercise xml:id="ex-Practice-with-a-Friend-CM-of-a-semi-disk"><title>(Calculus) Practice with a Friend: CM of a Semi-disk</title>
+
+		<statement>
+			<p>
+				A semi-disk of radius <m>R</m> has uniform density. Find its CM.
+			</p>
+		</statement>
+		<!-- <hint><p></p></hint>
+		<answer><p></p></answer> -->
+		<!-- <solution>
+			<p>
+				No Solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+	<exercise xml:id="ex-Practice-with-a-Friend-CM-of-a-spherical-bowl"><title>(Calculus) Practice with a Friend: CM of a Spherical Bowl</title>
+
+		<statement>
+			<p>
+				A spherical bowl of radius <m>R</m> and height <m>R</m> has uniform density. Find its CM.
+			</p>
+		</statement>
+		<!-- <hint><p></p></hint>
+		<answer><p></p></answer> -->
+		<!-- <solution>
+			<p>
+				No Solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+	<exercise xml:id="ex-Practice-with-a-Friend-CM-of-a-hemisphere"><title>(Calculus) Practice with a Friend: CM of a Hemisphere</title>
+
+		<statement>
+			<p>
+				A hemisphere block of radius <m>R</m> has uniform density. Find its CM.
+			</p>
+		</statement>
+		<!-- <hint><p></p></hint> -->
+		<answer><p><m>\frac{3}{8} R</m> above center. </p></answer>
+		<!-- <solution>
+			<p>
+				No Solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+	</exercises>
+
+
+
+
+</section>

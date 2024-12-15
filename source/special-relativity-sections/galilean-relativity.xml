@@ -1,0 +1,352 @@
+<section xml:id="sec-galilean-relativity"><title> Galilean Relativity </title>
+	<introduction>
+
+		<p>
+			The notion of motion is inherently relative. This was perhaps first emphasized by Galileo Galilei. For instance, when you are driving 50 km/h East, the speed of the car with respect to you is actullay just zero since car is not going anywhere with respect to you. By 50 km/h East we mean the car is moving at 50 km/h East with respect to fixed ground. 
+		</p>
+		<p>
+			Not only velocity is relative but so are many other physical quantities such as acceleration, energy, and momentum. For quantities that are relative we would like to know appropriate relation between their values with respect to one reference and corresponding values with respect to another reference frame. <term>Galilean relativity</term> gives us appropriate transformations, given in a section below, when the relative speed of the two reference frames are small compared to speed of light and special relativity applies to speeds upto speed of light.
+		</p>
+
+		<p>
+			Any object can be used as a reference with respect to which we can study motion regardless of the state of the motion of the object itself. Even a point in space can be used to define a reference point for this purpose. 
+		</p>
+		<p>
+			We usually attach a set of Cartesian coordinates to the reference to serve as a <term>reference frame</term>. <xref ref="fig-two_frames_illustration"/> shows two frames, a frame S with respect to a stationary person and a frame S<m>^\prime</m> which is moving with the truck, which is moving with respect to frame S at speed <m>V</m> as shown.
+		</p>
+		<figure xml:id="fig-two_frames_illustration">
+			<caption>
+				Two frames S and S<m>^\prime</m> drawn from the perspective of frame S.
+			</caption>
+			<image source="./images/modern-physics/two_frames_illustration.png" width="90%"/>
+		</figure>		
+		<p>
+			It looks weird, but we can redraw <xref ref="fig-two_frames_illustration"/> in another way. We can think of truck as stationary. That will make person have velocity <m>V</m> pointed left as shown in <xref ref="fig-two_frames_illustration_in_truck_frame"/>. Now, we have frame S<m>^\prime</m> is stationary and frame S moving to the left.
+		</p>
+		<figure xml:id="fig-two_frames_illustration_in_truck_frame">
+			<caption>
+				Two frames S and S<m>^\prime</m> drawn from the perspective of frame S<m>^\prime</m>. This picture is equivalent to <xref ref="fig-two_frames_illustration"/>.
+			</caption>
+			<image source="./images/modern-physics/two_frames_illustration_in_truck_frame.png" width="90%"/>
+		</figure>	
+
+	</introduction>
+
+	<subsection><title>Events</title>
+		<p>
+			In special relativity when you want time in one frame (say, S) from time in another frame (say S<m>^\prime</m>), we find that time in S depend on both position and time in S<m>^\prime</m>. Even though, this is not the case in Galilean relativity, we will carry information of time and position together. This combination, (time, position), is called an event. It refers to some event occuring at the said position at the said time.   
+		</p>
+
+	</subsection>
+
+
+	<subsection><title>The Galilean Transformations</title>
+
+		<p>
+			The Galilean transformations relate the same event in two different frames that are in <alert> uniform relative motion with respect to each other</alert>. We will look at the position of a particle P from two frame S and S<m>^\prime</m> as shown in <xref ref="fig-two-frames"/>, where S<m>^\prime</m> frame is moving towards positive <m>x</m>-axis with speed <m>V</m> relative to S.
+		</p>
+		<figure xml:id="fig-two-frames">
+			<caption>
+				Coordinates of a particle P with respect to two frames S and S<m>^\prime</m>.
+			</caption>
+			<image source="./images/modern-physics/two-frames.png" width="90%"/>
+		</figure>
+		<p>
+			In Galilean relativity, we assume that there is a universal time that can be set to read the same value. That means we will have
+     		<men xml:id ="eq-galilean-relativity-of-time">
+         		t'=t.\ \ (\textrm{Galilean relativity of time})
+         	</men>
+		</p>
+
+		<p>
+			From <xref ref="fig-two-frames"/>, it is immediately clear that
+			<mdn>
+				<mrow xml:id ="eq-galilean-relativity-of-x">\amp  x = x' + V t</mrow>
+				<mrow xml:id ="eq-galilean-relativity-of-y">\amp y = y' </mrow>
+				<mrow xml:id ="eq-galilean-relativity-of-z">\amp z = z' </mrow>
+			</mdn>
+			These equations are <term>Galilean transformations</term> for the two frames in <xref ref="fig-two-frames"/>. By taking time derivatives we can get relations between components of velocity of P in the two frames.
+			<mdn>
+				<mrow xml:id ="eq-galilean-relativity-of-vx">\amp  v_x = v'_x + V </mrow>
+				<mrow xml:id ="eq-galilean-relativity-of-vy">\amp v_y = v'_y </mrow>
+				<mrow xml:id ="eq-galilean-relativity-of-vz">\amp v_z = v'_z </mrow>
+			</mdn>
+			Similarly, we get the relation between accceleration of P in the two frames.
+			<mdn>
+				<mrow xml:id ="eq-galilean-relativity-of-ax">\amp  a_x = a'_x </mrow>
+				<mrow xml:id ="eq-galilean-relativity-of-ay">\amp a_y = a'_y </mrow>
+				<mrow xml:id ="eq-galilean-relativity-of-az">\amp a_z = a'_z </mrow>
+			</mdn>
+			Since the relative motion between frames is uniform and not accelerating, acceleration will be same in the two frames. Therefore, fixed-mass Newton's law will be same in the two frames.
+			<men>
+				\vec F = m \vec a\ \ \longleftrightarrow\ \ \vec F' = m \vec a'.
+			</men>
+			This is an illustration of the principle of relativity  that state that 
+				<alert>laws of physics are same for all inertial observers.</alert>
+		</p>
+		<p>
+			We will find below that the Galilean transformations given above depend crucially on the assumption of the existence of an universal absolute time <m>t</m>. If this assumption is somehow wrong (which it is!!), then all these relations will turn out to be wrong. 
+		</p>
+
+	</subsection>
+
+	<exercise xml:id="ex-Velocity-of-a-Ball-Observed-from-Station-and-from-Inside-a-Moving-Train"><title>Velocity of a Ball Observed from Station and from Inside a Moving Train</title>
+
+		<statement>
+			<p>
+				 A man standing still at a train station watches two boys throwing baseball in a moving train.  Suppose the train is moving towards East with a constant speed of <m>20\text{ m/s}</m> and one of the boys throws the ball with a speed of <m>5\text{ m/s}</m> with respect to him towards the other boy who is <m>5 \text{ m}</m>  from him towards West.  What will be the velocity of the ball as observed by the man on the station.  
+			</p>
+		</statement>
+		<hint><p>
+			Use relative velocity.
+		</p></hint>
+		<answer><p>
+			<m>15 \text{ m/s East}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Let's take positive <m>x</m> axis be pointed towards East. Label quantities with superscript S in the frame of station and with T in the frame of train. From the description of the problem we have
+				<md>
+					<mrow> \amp v_{Tx}^S = + 20\text{ m/s} \ \ \text{(of train in frame of station)}</mrow>
+					<mrow> \amp v_{Bx}^T = -5\text{ m/s} \ \ \text{(of ball in frame of train)}</mrow>
+				</md>
+				The relation between the two frames gives
+				<md>
+					<mrow> v_{Bx}^S\amp =  v_{Tx}^S + v_{Bx}^T  </mrow>
+					<mrow> \amp = 20 + (-5) = 15\text{ m/s}.</mrow>
+				</md>
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Speed-of-Mass-Realtive-to-Earth-Given-Their-Velocities-with-Respect-to-the-Sun"><title>Speed of Mass Realtive to Earth Given Their Velocities with Respect to the Sun</title>
+
+		<statement>
+			<p>
+				When observed from the Sun at a particular instant Earth and Mars appear to move in the opposite directions with speeds <m>108,000\text{ km/h}</m> and <m>86,871\text{ km/h}</m> respectively.  What is the speed of Mars at this instant when observed from Earth?
+			</p>
+		</statement>
+		<hint><p>
+			Use relative velocity.
+		</p></hint>
+		<answer><p>
+			<m>194,871\text{ km/h}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Let's take positive <m>x</m> axis be pointed in the direction of the motion of Earth at the instant in question. Label quantities with superscript S in the frame of Sun and with E in the frame of Earth. From the description of the problem we have
+				<md>
+					<mrow> \amp v_{Ex}^S = + 108,000\text{ km/h} \ \ \text{(of Earth in frame of Sun)}</mrow>
+					<mrow> \amp v_{Mx}^S = -86,871\text{ km/h} \ \ \text{(of Mars in frame of Sun)}</mrow>
+				</md>
+				The relation between the two frames gives
+				<md>
+					<mrow> v_{Mx}^E\amp =  v_{Mx}^S - v_{Ex}^S  </mrow>
+					<mrow> \amp = -86,871 - 108,000 =  194,871\text{ km/h}.</mrow>
+				</md>				
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Speed-of-a-Runner-with-Respect-to-a-Train"><title>Speed of a Runner with Respect to a Train</title>
+
+		<statement>
+			<p>
+				A man is running on a straight road perpendicular to a train track and away from the track at a speed of <m>5\text{ m/s}</m>. The train is moving with a speed of <m>30\text{ m/s}</m> with respect to the track.  What is the speed of the  man with respect to a passenger sitting at rest in the train?
+			</p>
+		</statement>
+		<hint><p>
+			Use vector relation.
+		</p></hint>
+		<answer><p>
+			<m>
+				30.4\text{ m/s}.
+			</m>
+		</p></answer>
+		<solution>
+			<sidebyside widths="65% 5%  30%">
+				<p>
+					Label quantities with superscript G in the frame of ground and with T in the frame of train. Let <m>x</m> axis be pointed in the direction of man's motion and <m>y</m> in the direction of train's motion.
+					 
+
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-Speed-of-a-Runner-with-Respect-to-a-Train">
+					<caption>
+					</caption>
+					<image source="./images/modern-physics/ex-Speed-of-a-Runner-with-Respect-to-a-Train.png" width="90%"/>
+				</figure>
+			</sidebyside>
+
+			
+			<p>
+				From the description of the problem we have the following components of velocities with respect to the ground.
+				<md>
+					<mrow> \amp v_{mx}^G = 5\text{ m/s} \ \ \text{(of man in frame of Ground)}</mrow>
+					<mrow> \amp v_{Ty}^G = 30\text{ m/s} \ \ \text{(of train in frame of Ground)}</mrow>
+				</md>
+				Since the velocities in two dimensions, we need to look at vector relation between velocities in different frames.
+				<me>
+					\vec v_{m}^{G} = \vec v_{m}^{T} + \vec v_{T}^{G}.
+				</me>
+				Its <m>x</m> and <m>y</m> components will give <m>x</m> and <m>y</m> components of the velocity we desire. Thus,
+				<md>
+					<mrow>\amp v_{mx}^{G} = v_{mx}^{T} + v_{Tx}^{G},  </mrow>
+					<mrow>\amp  v_{my}^{G} = v_{my}^{T} + v_{Ty}^{G} </mrow>
+				</md>
+				give
+				<md>
+					<mrow>\amp v_{mx}^{T} =  v_{Tx}^{G} - v_{mx}^{G} = 0 - 5 </mrow>
+					<mrow>\amp v_{my}^{T} =  v_{Ty}^{G} - v_{my}^{G} = 30 </mrow>
+				</md>
+				Therefore, speed of man with respect to train will be
+				<me>
+					v = \sqrt{  (-5)^2 + 30^2 } = 30.4\text{ m/s}.
+				</me>					 
+			</p>
+		</solution>
+	</exercise>
+ 
+
+	<exercise xml:id="ex-Speed-of-a-Runner-with-Respect-to-a-Train-example-2"><title>Speed of a Runner with Respect to a Train Example 2</title>
+
+		<statement>
+			<p>
+				A man is running on a straight road that makes <m>30^\circ</m> with the train track.  The man is running in the direction on the road that is away from the track at a speed of <m>5\text{ m/s}</m>. The train is moving with a speed of <m>30\text{ m/s}</m> with respect to the track.  What is the speed of the  man with respect to a passenger sitting at rest in the train?
+			</p>
+		</statement>
+		<hint><p>
+			Use vector relation.
+		</p></hint>
+		<answer><p>
+			<m>25.8\text{ m/s}</m>.
+		</p></answer>
+		<solution>
+			<sidebyside widths="65% 5%  30%">
+				<p>
+					Label quantities with superscript G in the frame of ground and with T in the frame of train. Let <m>x</m> and <m>y</m> axes be pointed in the direction shown in <xref ref="fig-ex-Speed-of-a-Runner-with-Respect-to-a-Train-2"/>. 
+					
+
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-Speed-of-a-Runner-with-Respect-to-a-Train-2">
+					<caption>
+					</caption>
+					<image source="./images/modern-physics/ex-Speed-of-a-Runner-with-Respect-to-a-Train-2.png" width="90%"/>
+				</figure>
+			</sidebyside>
+
+			
+			<p>
+				From the description of the problem we have the following components of velocities with respect to the ground.
+				<md>
+					<mrow> \amp v_{mx}^G = 5\cos 60^\circ = 2.5,\ \  v_{my}^G = 5\sin 60^\circ =  4.33 </mrow>
+					<mrow> \amp v_{Tx}^G = 0,\ \ v_{Ty}^G = 30  </mrow>
+				</md>
+				Since the velocities in two dimensions, we need to look at vector relation between velocities in different frames.
+				<me>
+					\vec v_{m}^{G} = \vec v_{m}^{T} + \vec v_{T}^{G}.
+				</me>
+				Its <m>x</m> and <m>y</m> components will give <m>x</m> and <m>y</m> components of the velocity we desire. Thus,
+				<md>
+					<mrow>\amp v_{mx}^{G} = v_{mx}^{T} + v_{Tx}^{G},  </mrow>
+					<mrow>\amp  v_{my}^{G} = v_{my}^{T} + v_{Ty}^{G} </mrow>
+				</md>
+				give
+				<md>
+					<mrow>\amp v_{mx}^{T} =  v_{Tx}^{G} - v_{mx}^{G} = 0 - 2.5 </mrow>
+					<mrow>\amp v_{my}^{T} =  v_{Ty}^{G} - v_{my}^{G} = 30 - 4.33 = 25.67</mrow>
+				</md>
+				Therefore, speed of man with respect to train will be
+				<me>
+					v = \sqrt{  (-2.5)^2 + 25.67^2 } = 25.8\text{ m/s}.
+				</me>					 
+			</p>
+
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Momentum-Conservation-from-the-Perspective-of-Two-Frames"><title>Momentum Conservation from the Perspective of Two Frames</title>
+
+		<statement>
+			<p>
+				In a frame at rest with respect to the billiard table, a billiard ball of mass <m>m</m> moving with speed <m>v</m> strikes another billiard ball of mass <m>m</m> at rest.  The first ball comes to rest after the collision while the second ball takes off with speed <m>v</m> in the original direction of the motion of the first ball. This shows that momentum is conserved in this frame. (a) Now, describe the same collision from the perspective of a frame that is moving with speed <m>v</m> in the direction of the motion of the first ball.  (b) Is the momentum conserved in this frame?
+			</p>
+		</statement>
+		<hint><p>
+			Drawing figures before and after collision might help. 
+		</p></hint>
+		<answer><p>
+			(a) See below.  (b)Yes.
+		</p></answer>
+		<solution>
+			<p>
+				(a) Let us call the first billiard ball A and the other one B. In the frame that moves with billiard ball A, before the collision this ball will be at rest  while ball B will be moving towards ball B with speed <m>v</m>. After the collision, the frame will continue to move in the same direction as before, but ball A will now move backward with speed <m>v</m> and ball B will be at rest.
+			</p>
+			<p>
+				(b) Yes, momentum is conserved. Let <m>+x</m> be the direction of motion of A before collision in the ground frame. Then, in the moving frame, we have
+				<me>
+					p_{x}^\text{bef} = p_{Ax}^\text{bef} + p_{Bx}^\text{bef} = 0 +(-mv).
+				</me> 
+				After the collision
+				<me>
+					p_{x}^\text{aft} = p_{Ax}^\text{aft} + p_{Bx}^\text{aft} = (-mv) + 0.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+	<exercise xml:id="ex-Momentum-Conservation-from-the-Perspective-of-Two-Frames-2"><title>Momentum Conservation from the Perspective of Two Frames Example 2</title>
+
+		<statement>
+			<p>
+				In a frame at rest with respect to the billiard table, two billiard balls of same mass <m>m</m> are moving towards each other with the same speed <m>v</m>. After the collision, the two balls come to rest.  (a) Show that momentum is conserved in this frame.   (b) Now, describe the same collision from the perspective of a frame that is moving with speed <m>v</m> in the direction of the motion of the first ball.  (c) Is the momentum conserved in this frame?
+			</p>
+		</statement>
+		<hint><p>
+			Drawing figures before and after collision might help. 
+		</p></hint>
+		<answer><p>
+			See solution.
+		</p></answer>
+		<solution>
+			<p>
+				(a) Let positive <m>x</m> axis point in the first ball. Let's label first ball by A and second ball by B. Looking at the <m>x</m>-component of total momentum before and after collision we wee that momentum is conserved, as it should.
+				<md>
+					<mrow>\amp p_{x}^\text{bef} = p_{Ax}^\text{bef} + p_{Bx}^\text{bef} = mv +(-mv) = 0.</mrow>
+					<mrow> \amp p_{x}^\text{aft} = p_{Ax}^\text{aft} + p_{Bx}^\text{aft} = 0 + 0 - 0.</mrow>
+				</md>
+
+			</p>
+			<p>
+				(b) In a frame that has same velocity as ball A, ball A will be at rest. Using same direction of positive <m>x</m> axis as in (a) for this frame as well, we find that momenta of the two balls in this frame are
+				<md>
+					<mrow> p_{Ax}^\text{bef} = 0,\ \ p_{Bx}^\text{bef} = -2mv.</mrow>
+				</md>
+				Hence, total momentum before the collision is 
+				<me>
+					p_{x}^\text{bef} = - 2 m v.
+				</me>
+			</p>
+			<p>
+				(c) 
+				After collision, both balls have <m>x</m>-component of velocity equal to <m>-v</m> in this frame. Therefore.
+				<me>
+					p_{x}^\text{aft} = (-mv) + (-mv) = - 2 m v.
+				</me>
+				Hence, momentum is conserved in this frame also.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+ 
+</section>

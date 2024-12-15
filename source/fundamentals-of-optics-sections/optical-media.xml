@@ -1,0 +1,163 @@
+<section xml:id="optical-media"><title> Optical Media </title>
+	<introduction>
+        <p>
+        	When light interacts with a material it can be absorbed, reflected, scattered or transmitted.  If a significant part of light is transmitted such that you can see the source of light through the medium, we say that matrial is a <term>transparent medium</term>. An example is clear glass is tranaparent to visible light. 
+        </p>
+        <p>
+        	On the other hand, if light passes through the medium but one cannot see the source clearly, the medium is called <term>translucent</term>.  In a translucent medium, light scatters around and takes a cicuitous path. For instance, light through mily water. 
+        </p>
+        <p>
+        	A medium is called <term>opaque</term> if light cannot pass through it at all. For instance, a piece of metal is opaque to visible light.
+        </p>
+        <p>
+        	It is difficult to label a medium absolutely transparent or opaque, since the transparency depends on the wavelength of light.  There are some media, such as glass and lucite, that are transparent to the wavelengths of the visible light to a large extent, and they are often considered transparent enough for optical devices.
+        </p>
+    </introduction>
+    <subsection><title>Transparent Medium</title>
+    	<p>
+    		In this book you will be studying mainly light through transparent media. therefore, it is important to note down some salient aspects of behavior of light waves in transparent media.
+    	</p>
+        <p>
+        	First thing to note is that speed of light varies among transparent media due to their differing dielectric constant. From Maxwell's theory of electricity and magnetism, one can show that sped of light in a linear medium is related to its electric susceptibiliy <m>\epsilon</m> and magnetic permeability  <m>\mu</m> by
+        	<men>
+        		v = \frac{1}{\sqrt{\mu\epsilon}}.
+        	</men>
+        	Magnetic permeability of dielectric media are very close to the value in vacuum, <m>\mu \approx \mu_0</m>. We write electric susceptibility in terms of dielectric constant <m>\epsilon_r</m> and electric susceptibility of vacuum, <m>\epsilon_0</m>.
+        	<me>
+        		\epsilon = \epsilon_0 \epsilon_r.
+        	</me>
+        	Therefore, speed in light in a linear medium is
+        	<men>
+        		v = \frac{1}{\sqrt{\mu_0\epsilon_0\epsilon_r}} = \frac{c}{\sqrt{\epsilon_r}},
+        	</men>
+        	where <m>c</m> is the speed of light in vacuum.
+        	<men>
+        		c = \frac{1}{\sqrt{\mu_0\epsilon_0}}
+        	</men>
+        	Since dielectric constant is greater than <m>1</m>, we see that light has lower speed in a material than in vacuum. We also identify <m>\sqrt{\epsilon_r}</m> with the refractive index <m>n</m> of the medium.        	
+        	<men>
+        		n = \sqrt{\epsilon_r}.
+        	</men>
+        	Therefore, we can write the speed in a medium also in terms of refractive index as
+        	<men xml:id="eq-refractive-index-speed-relation">
+        		v = \frac{c}{n}.
+        	</men>
+        	We can use <m>v=f\lambda</m> to replace <m>v</m> and <m>c=f\lambda_0</m> for light of same frequency but different wavelength in vacuum to obtain the following useful relation.
+        	<men xml:id="eq-wavelength-in-medium-from-wavelength-in-vacuum">
+        		\lambda = \frac{\lambda_0}{n}.
+        	</men>
+        	<xref ref="table-"/> gives refractive indices of some common materials for a yellow light.
+        </p>
+        <table xml:id="table-">
+        	<title> Refractive Index of Common Substances (<m>\lambda = 589\text{ nm}</m>, yellow light)</title>
+        	<tabular>
+        		<col align="left" right="minor"/>
+        		<col align="center"/>
+        		<row bottom="major">
+        			<cell></cell><cell></cell>
+        		</row>
+        		<row bottom="minor">
+        			<cell>Material</cell><cell>Refractive index</cell>
+        		</row>
+        		<row>
+        			<cell>Vacuum</cell><cell>1.0</cell>
+        		</row>
+        		<row>
+        			<cell>Air</cell><cell>1.0</cell>
+        		</row>
+        		<row>
+        			<cell>Water</cell><cell>1.33</cell>
+        		</row>
+        		<row>
+        			<cell>Plexiglas (plastic)</cell><cell>1.51</cell>
+        		</row>
+        		<row>
+        			<cell>Crown glass</cell><cell>1.52</cell>
+        		</row>        	
+        		<row bottom="major">
+        			<cell>Flint glass</cell><cell>1.58</cell>
+        		</row>
+        	</tabular>
+
+        </table>
+
+
+        <p>
+        	When a light some frequency <m>f</m> is incident from one medium into another, the frequency of the transmitted light will be same as that of the incident light since it is depedent on the vibration at the original soource of light. But, the wavelength of the transmitted light will be different than that of the incident light since speeds will be different and wavelength <m>\lambda = v/f</m>. This is illustrated in <xref ref="fig-wave-two-media"/>. If the wavelength is <m>\lambda_1</m> in the medium of refractive index <m>n_1</m> and the same light has a wavelength <m>\lambda_2</m> in the medium of refractive index <m>n_2</m>, then, using <xref ref="eq-wavelength-in-medium-from-wavelength-in-vacuum"/>, we get
+        	<men>
+        		n_1 \lambda_1 = n_2 \lambda_2.
+        	</men>
+        </p>
+        <figure xml:id="fig-wave-two-media">
+        	<caption>
+        		Different wavelengths in different media for the same light. Here, dielectric constant and refractive index of the second medium is larger than that of the first medium. The amplitude is shown smaller in the second medium to show that some of the incident light is reflected at the interface.  The reflected wave is not shown here.
+        	</caption>
+        	<image source="./images/fundamentals-of-optics/wave-two-media.png" width="60%"/>
+        </figure>
+ 
+ 
+    </subsection>
+
+    <subsection><title>Dispersion of Media</title>
+    	<p>
+    		The refractive index <m>n</m>, or equivalently, the dielectric constant <m>\epsilon_r</m>, is often a function of wavelength <m>\lambda</m> of light. For instance, the refractive index of flint glass for red light   is 1.62 while for a violet light   it is 1.67.  This difference is responsible for the separation of colors when sun light passes through a prism.  The dependence of refractive index on frequency  is called <term> dispersion</term> of light.   
+    	</p>
+    	<p>
+    		<xref ref="fig-refractive-index-as-a-function-of-wavelength"/> shows refractive index of BK7 glass and fitting of the experimental data by two models - the Cauchy equation and Sellmeir equation. Both of these try to fit the experimental curve by using parameters. Cauchy is much simpler fitting model.
+    		<men>
+    			n(\lambda) = A + \frac{B}{\lambda} + \frac{C}{\lambda^2} + \cdots,
+    		</men>
+    		Sellmeir is built on this model. Often a three-parameter Sellmeir equation fits data over a wide range quite well.
+    		<men>
+    			n^2(\lambda) = A + \frac{B\lambda^2}{\lambda^2 - C}.
+    		</men>
+    	</p>
+        <figure xml:id="fig-refractive-index-as-a-function-of-wavelength">
+        	<caption>
+        		 Refractive index of BK7 glass as a function of wavelength of light. The experimental data are marked with <m>\times</m> and fits to the data are to Cauchy's eqution (blue) and Sellmeier equation (green). By Bob Mellish at https://en.wikipedia.org/wiki/User:DrBob.
+        	</caption>
+        	<image source="./images/fundamentals-of-optics/refractive-index-as-a-function-of-wavelength.png" width="80%"/>
+        </figure>    	
+
+ 
+    </subsection>
+
+
+	<exercise xml:id="exercise-Speed-and-Wavelength-of-Light-in-Glass"><title>Speed and Wavelength of Light in Glass</title>
+
+		<statement>
+			<p>
+				Find speed and wavelength of light in glass if its wavelength in vacuum is <m>632.8\text{ nm}</m>.  Use <m>n = 1.55</m> for the refractive index of glass for the given light.
+			</p>
+		</statement>
+		<hint><p>Use <m>v = c/n</m> and <m>f=c/\lambda_0=v/\lambda</m>.</p></hint>
+		<answer><p> <m>1.94\times 10^8\ \text{m/s}</m>, <m>408.3\ \text{nm}</m>. </p></answer>
+		<solution>
+			<p>
+				We can find the value of speed easily by dividing the speed in vacuum by the refractive index.
+				<md>
+					<mrow> v \amp = \frac{c}{n} = \frac{3\times 10^8\ \text{m/s}}{1.55}
+					 = 1.94\times 10^8\ \text{m/s}.</mrow>
+				</md>
+			</p>
+			<p>
+				For the wavelength we note that frequency of light does not change when it passes from one medium into another.  Let <m>\lambda_0</m> be the wavelength of the light in vacuum and <m>\lambda</m> be the wavelength of the same light in the medium. The, we will have
+				<me>
+					f = \frac{c}{\lambda_0} =  \frac{v}{\lambda}.
+				</me>
+				Since <m>v = c/n</m>, we obtain
+				<me>
+					\lambda = \frac{\lambda_0}{n}  = \frac{632.8\ \text{nm}}{1.55} = 408.3\ \text{nm}.
+				</me>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+</section>

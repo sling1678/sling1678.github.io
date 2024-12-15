@@ -1,0 +1,215 @@
+<section xml:id="Power-Dissipation"><title> Power Dissipation </title>
+	<introduction>
+		<p>
+			Electrons in motion collide with fixed nuclei, other electrons, and vibrational excitations called phonons. As a result, a material heats up when a current flows through it. In this context, we refer conductors as resistors. The heating of resistors is responsible for such useful applications of electricity as the conventional electric oven and the light bulb.
+		</p>
+		<p>
+			The rate of heating of a resistor can be calculated by using the principle of conservation of energy. Suppose current <m>I</m> flows through a cylindrical wire  across which a voltage difference <m>\Delta \phi=\phi_1-\phi_2</m> is maintained (<xref ref="fig-power-dissipation-in-a-wire"/>).  Let <m>n</m>  be the number of conduction electrons per unit volume and <m>v</m> their average drift speed.  Let <m>A</m> be the area of cross-section and <m>R</m> the resistance of the wire. As a result of the current in the wire, electrons in the wire will move a distance <m>v \Delta t</m> in time <m>\Delta t</m>.
+		</p>
+
+		<figure xml:id="fig-power-dissipation-in-a-wire">
+			<caption>
+				Electrons at the point where potential is <m>\phi_2</m> enters the wire and exits at a point where potential is <m>\phi_1</m>, which is larger than <m>\phi_2</m>. With <m>n</m> conduction electrons per unit volume, area of cross-section A, and drift speed <m>v</m>, the number of electrons entering and exiting the wire between <m>\phi_1</m> and <m>\phi_2</m> in duration <m>\Delta t</m> is <m>nvA\Delta t</m>.
+			</caption>
+			<image source="./images/electric-current/power-dissipation-in-a-wire.png" width="80%"/>
+		</figure>
+
+		<p>
+			What will be  the change in energy of the segment of wire between points 1 and 2 in <xref ref="fig-power-dissipation-in-a-wire"/> during this interval? Notice that <m>nvA\Delta t</m> electrons will enter the wire at potential <m>\phi_2</m> and leave at potential <m>\phi_1</m>. The entering electron at 2 will bring in energy equal to <m>-envA\Delta t \phi_2</m> since the potential energy of a charge <m>q</m> at a point of potential <m>\phi</m> is equal to <m>qV</m>. The outgoing electrons at 1 will take away energy equal to <m>-envA\Delta t \phi_1</m>. The difference will be increase in energy of the segment between 1 and 2. This energy heats up wire with heat equal to 
+			<me>
+				\text{Heat} = -e n v A\Delta t \phi_2 - \left(- e n v A\Delta t \phi_1\right).
+			</me>
+			Therefore, the rate of heating of the wire segment, also called power dissipated in the wire, will be given by dividing heat by time. This gives
+			<me>
+				P = e n v A \left( \phi_1 - \phi_2 \right).
+			</me>
+			The quantity <m>e n v A</m> is the rate of net charge flow in the wire, which is the current <m>I</m> in the wire. The difference <m>\left( \phi_1 - \phi_2 \right)</m> is the potential difference <m>\Delta\phi</m>, which is also denoted by voltage symbol <m>V</m>.
+			<me>
+				P = I \Delta \phi = I\;V.
+			</me>
+			By using Ohm's law  <m>V = I R</m> we can rewrite power in alternate forms.
+			<me>
+				P = I \Delta \phi = I V = I^2 R = \frac{V^2}{R}.
+			</me>
+			The SI unit of power is <term>Watts</term> (<m>\text{W}</m>), which is same as Joule/sec (J/s). In electrical units, <m>1\text{ W}</m> of power is equal to  <m>1\text{ VA}</m>, or, <m>1 \text{ A}^2\Omega</m>, or,  <m>1 \text{ V}^2/\Omega</m>.
+			<me>
+				1\ \text{W} = 1\ \text{V.A} = 1\ \text{A}^2\Omega = 1\ \text{V}^2/\Omega = 1\ \text{J/s}.
+			 </me>
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-Energy-Used-by-Light-Bulb"><title> Energy Used by Light Bulb </title>
+		<statement>
+			<p>
+				A <m>60</m>-W light bulb has <m>120</m>-V drop across its terminals.  (a) How much energy is used by the bulb in <m>10</m> hours?   (b) Determine the resistance of the filament. (c) Determine the height <m>H</m> that you could lift a <m>50</m>-kg person with the same amount of energy.
+			</p>
+
+		</statement>
+		<hint> <p>  Use definitions. </p> </hint>
+		<answer> <p> (a) <m>2.2\times 10^6\ \text{J} </m>, (b) <m>4.2\times 10^{-3}\Omega </m>, (c) <m> 4.4\times 10^3\ \text{m}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				(a)	Energy Used = <m>P\Delta t</m> = <m>60\ \text{W}\times 10\ \text{h}\times 3600\ \text{s/h}</m> = <m>2.2\times 10^6\ \text{J}</m>.
+			</p>
+			<p>
+				(b)	The resistance <m>R</m> of the filament, <m>R = P/(\Delta \phi)^2 = 60\ \text{W}/(120\ \text{V})^2 = 4.2\times 10^{-3}\Omega</m>.
+ 			</p>
+ 			<p>
+ 				(c)	The given condition on energy gives <m>mgH = 2.2\times 10^6\ \text{J}</m>. Therefore, we obtain <m>H = 2.2\times 10^6\ \text{J}/ \left( 50\ \text{kg}\times 9.81\ \text{m/s}^2 \right) = 4.4\times 10^3\ \text{m}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Resistance-in-Filaments-of-a-60-W-Light-Bulb"><title> Resistance in Filaments of a 60-W Light Bulb </title>
+		<statement>
+			<p>
+				(a) How much is the resistance in the filaments of a 60-W  light bulb that operates at a voltage of 220 volts?
+			</p>
+			<p>
+				(b) If in 10 seconds bulb emits 200 J  of energy in light, what is its efficiency? 
+			</p>
+			<p>
+				(c) Supposing light is produced with the same efficiency when you use the bulb in a 110-V line, how much light energy will be generated in 10 seconds?
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m>P = \dfrac{V^2}{R} </m>. </p> </hint>
+		<answer> <p> (a)  <m> 810 \Omega</m>, (b) <m>33.3\%</m>,  (c) <m>50\text{ J}</m>.  </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a)
+
+				The bulb uses energy at a rate of <m>60\text{ W}</m> at <m>\Delta\phi = 220\text{ V}</m>. Using the formula for power dissipation in terms of potential difference and resistance we find
+				<me>
+					R = \dfrac{V^2}{P}.
+				</me>
+				Therefore,
+				<me>
+					R = = \dfrac{(220\:\text{V})^2}{60\:\text{W}} = 810\:\Omega.
+				</me>
+			</p>
+ 		</solution>
+		<solution><title>(b)</title>  		
+			<p>
+				(b)	The energy emitted in desired form in 10 seconds = <m>200 \text{J}</m> while the energy used in 10 seconds <m>= 60 \text{ W} \times 10 \text{ s} = 600 \text{ J}</m>.  Therefore, the efficiency is
+				<me>
+					\eta = \dfrac{200 \text{ J}}{600 \text{ J} } =  1/3 = 33.3\%.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(c)</title> 
+			<p>
+				(c) With <m>R = 810\:\Omega</m> and <m>\Delta\phi=110\text{ V}</m>, the power used will be
+				<me>
+					P = \dfrac{V^2}{R} = 14.9\text{ W}.
+				</me>
+				With 33.3% efficiency, the light energy in 10 seonds will be
+				<me>
+					E = \eta P \Delta t = 0.333 \times 14.9\text{ W} \times 10\text{ s} = 50\text{ J}.
+				</me>
+				Note that the light energy is not 1/2. Actually, it is 1/4. You could make the arguments based on <m>P \sim (\Delta\phi)^2</m>. Can you see how?
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Resistance-of-Heating-Element-from-Power-Consumed"><title> Resistance of Heating Element from Power Consumed </title>
+		<statement>
+			<p>
+				A six-inch coil electric heater uses 1500 Watts power at the high setting.  If the voltage across the element is 120 V, what is the resistance of the element. 
+			</p>
+
+		</statement>
+		<hint> <p> Use <m>P=V^2/R</m>.  </p> </hint>
+		<answer> <p>  <m>9.6\ \Omega</m>. </p> </answer>
+		<solution> 
+			<p>
+				We just use the formula of power in terms of voltage and resistance to get
+				<md>
+					<mrow> R \amp = \dfrac{V^2}{P}</mrow>
+					<mrow> \amp  = \dfrac{(120\:\text{V})^2}{1500\:\text{W}} = 9.6\:\Omega</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<exercise xml:id="ex-Rise-in-Temperature-of-a-Copper-Rod-Carrying-Current"><title> Rise in Temperature of a Copper Rod Carrying Current </title>
+		<statement>
+			<p>
+				A copper rod of length <m>50 \text{ cm}</m> and diameter <m>4 \text{ mm}</m> carries a current of <m>2 \text{ A}</m>. If the specific heat of copper is <m>380 \text{ J/kg.K}</m>, what is the rate at which its temperature rises? Use density of copper <m>8.23 \text{ g/cc}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Energy used in raising temperature by <m>\Delta T </m> is <m> m c \Delta T</m>, where <m>m</m> is the mass and <m>c</m> the specific heat. </p> </hint>
+		<answer> <p>  <m>1.36\times 10^{-4} \ \text{K/s}</m>. </p> </answer>
+		<solution> 
+			<p>
+				Let us find the rate of dissipation of energy in copper by using the power formula, <m>P = I R^2</m>.  We need <m>R</m>.
+				<md>
+					<mrow> R \amp =  \rho\:\dfrac{L}{A} </mrow>
+					<mrow> \amp = 1.7\times 10^{-8}\:\Omega.\text{m}\times \dfrac{0.5\:\text{m}}{\pi\times 0.002^2\:\text{m}^2} = 6.8\times 10^{-4}\:\Omega.</mrow>
+				</md>
+				Hence, power dissipated in the copper rod is
+				<me>
+					P = I^2 R = (2\:\text{A})^2 \times 6.8\times 10^{-4}\:\Omega = 2.7 \times 10^{-3}\:\text{J/s}.
+				</me>
+				The heating of copper takes place by the following equation.
+				<me>
+					m\:c_p\dfrac{\Delta T}{\Delta t} = P.
+				</me>
+				From the given data we know that mass of the rod is
+				<me>
+					m = \text{Vol.} \times \text{Den.} = (\pi\times 0.002^2\times 0.5\ \text{m}^3) \times 8300\:\text{kg/m}^3 = 0.052\:\text{kg}.
+				</me>
+				Hence, the rate of rise of temperature is
+				<md>
+					<mrow> \dfrac{\Delta T}{\Delta t} \amp = \dfrac{P}{m\:c_p}</mrow>
+					<mrow> \amp = \dfrac{2.7\times 10^{-3}\:\text{J/s}}{0.052\:\text{kg}\times 380\;\text{J/kg.K}} = 1.36\times 10^{-4}\:\text{K/s},</mrow>
+				</md>
+				where K is degrees Kelvin. Change of temperature in Kelvin equals the change in temperature in Celsius. So, the rate will be <m>1.36\times  10^{-4}\ ^{\circ}\text{C/s}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Heating-an-Aluminum-Rod-by-Passing-a-Current-Through-it"><title> Heating an Aluminum Rod by Passing a Current Through it </title>
+		<statement>
+			<p>
+				An aluminum rod of length <m>25 \text{ cm}</m> and diameter <m>2 \text{ m}</m> is insulated.  When a current is passed through the rod, its temperature rises at the rate of <m>20 </m> degrees Celsius per minute. Find the current. 
+
+			</p>
+			<p>
+				Data: 
+				Density of aluminum <m>2.7 \text{ g/cc}</m>, specific heat aluminum <m>900 \text{ J/kg.K}</m>.  
+			</p>
+
+		</statement>
+		<hint> <p> Use conservation of energy, <m>m\:c_p\:\dfrac{\Delta T}{\Delta t} = P = I^2 R</m>.  </p> </hint>
+		<answer> <p>  <m> 17.2 \text{ A}</m>. </p> </answer>
+		<solution> 
+			<p>
+				This problem is similar to the one solved above.  The governing equation being the balancing of energy per unit time.
+				<me>
+				 	m\:c_p\:\dfrac{\Delta T}{\Delta t} = P = I^2 R.
+				</me>
+				This gives
+				<me>
+					I = \sqrt{\dfrac{m\:c_p}{R}\:\dfrac{\Delta T}{\Delta t}}.
+				</me>
+				Putting the expression for R in terms of resistivity, and mass by the product of volume <m>(AL)</m> and density <m>(D)</m>.
+				<me>
+					I = \sqrt{\dfrac{ALD\:c_pA}{\rho L}\:\dfrac{\Delta T}{\Delta t}} = \sqrt{\dfrac{A^2D\:c_p}{\rho}\:\dfrac{\Delta T}{\Delta t}}.\  \ \ \ (1)
+				</me>
+				The numerical values given in the problem are
+				<md>
+				 	<mrow> A \amp = \pi\times (0.001\:\text{m})^2 </mrow>
+				 	<mrow> \amp =  3.14\times 10^{-6}\;\text{m}^2,\ \ D = 2700\:\text{kg/m}^3,</mrow>
+				 	<mrow> c_p \amp = 900\:\text{J/kg.K},\ \rho </mrow>
+				 	<mrow> \amp  = 2.7\times 10^{-8}\:\Omega.\text{m},\ \ \dfrac{\Delta T}{\Delta t} = \dfrac{1}{3}\:\text{deg/s}. </mrow> 
+				</md>
+				Putting these numerical values in (1) gives the current, <m>I = 17.2</m> Amps. 
+			</p>
+		</solution>
+	</exercise>
+
+	
+</section>

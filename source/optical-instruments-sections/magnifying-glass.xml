@@ -1,0 +1,160 @@
+<section xml:id="section-magnifying-glass"><title> Magnifying Glass </title>
+	<introduction>
+        <p>
+        	Recall that when an object is placed within a focal length of a convex lens its image is virtual, erect and larger than the object.  Therefore, when you look at an object through a convex lens when the object is within a focal length distance behind the lens, you find it magnified.  When a convex lens is used for this purpose, it is also called a <term>magnifying glass</term>  or a <term> simple microscope</term>. 
+        </p>
+        <p> 
+        	Our perception of magnification is based on the larger angle that the virtual image from the magnifying glass subtends at the eye. <xref ref="fig-magnifying-glass-angular-magnification"/> shows a virtual image IQ of the physical object OP. To define the angular magnification that we would perceive, we virtually move the object OP at the same distance as the virtual image IQ. This is shown as <m>\text{IP}_\text{Q}</m>. Then, we have angle <m>\theta_\text{P} = \angle{\text{P}_\text{Q}\text{EI}}</m> subtended at the eye by moved object and <m>\theta_\text{Q}=\angle\text{QEI}</m> at the eye by the virtual image.
+        	<men>
+        		\theta_\text{P} = \angle{\text{P}_\text{Q}\text{EI}},\ \ \theta_\text{Q}=\angle\text{QEI}.
+        	</men>
+        	The ratio of these two angles is called the <term>angular magnification</term> of the magnifying glass. We denote it by capital letter <m>M</m>.
+        	<men>
+        		M = \frac{\theta_\text{Q}}{\theta_\text{P}}.
+        	</men>
+        	Below, we will discuss critical role that the eye plays in this magnification.
+        </p>
+
+        
+        <figure xml:id="fig-magnifying-glass-angular-magnification">
+        	<caption>
+        		Magnifying glass in front of an eye has the impact of <q>moving</q> the object from OP to IQ. Here <m>n_p</m> is the distance to the near point of the eye where viewing is the clearest. Perceived magnification is given by the ratio of the angles subtended at the eye by the virtual image IQ and the <q>moved object</q> <m>\text{IP}_\text{Q}</m>. These angles are shown as <m>\theta_\text{Q}</m> and <m>\theta_\text{Q}</m>, respectively. Their ratio,  <m>\theta_\text{Q}/\theta_\text{P}</m> is the angular magnification. Below, we show that <m>M \approx \frac{n_p+f}{f}</m>.
+        	</caption>
+        	<image source="./images/optical-instruments/magnifying-glass-angular-magnification.png" width="100%"/> 
+        </figure>
+    </introduction>
+
+    <subsection><title>Role of Near Point of Eye</title>
+
+    	<subsubsection><title>Placing the Viewing Object</title>
+	        <p>
+				Stretch your arm and look at the tip of one of your fingers, say the index finger. They try bringing your hand closer. You will notice that the tip of the finger is clearest at about <m>25\text{ cm}</m> from your eye. This is the nearest point of your eye. Your eye muscles are contracted in this state.
+			</p>
+			<p>
+				When you look through a magnifying glass, for the clearest view, you would want the image by the magnifying glass to be at your near point. So, where should you plce the object?
+			</p>
+			<p>
+				Refer to <xref ref="fig-magnifying-glass-angular-magnification"/> as we figure out a formula for where the object be placed for clear viewing. 
+				Let us denote the distance from your eye to the near point by <m>n_p</m>. For a normal eye, <m>n_p\approx 25\text{cm}</m>. Let <m>f</m> be the focal length of the magnifying glass and <m>d</m> the distance themagnifying glass is from your eye. This gives the image distance from the lens to be <m> - |n_p-d|</m>. 
+				<me>
+					q = - |n_p-d| = -(n_p-d) \text{  since  }n_p \gt d.
+				</me>
+				With these, we can calculate where we should place the object for clear viewing. Let <m>p</m> be the distance from magnifying glass to the physical object.
+				<me>
+					\frac{1}{p} = \frac{1}{f} - \left( - \frac{1}{n_p - d} \right).
+				</me>
+				This gives
+				<me>
+					p = \frac{f(n_p-d)}{n_p-d+f}.
+				</me>
+				Here <m>d \lt\lt n_p</m>, and hence <m>d</m> can be ignored.
+				<men xml:id="eq-placing-the-viewing-object-magnifying-glass">
+					p \approx \frac{f\;n_p}{n_p+f}.
+				</men>
+			</p>
+		</subsubsection>
+		<subsubsection><title> Role of Eye in the Angular Magnification </title>
+			<p>
+				We can work out the angular magnification by exploiting the geometry in <xref ref="fig-magnifying-glass-angular-magnification"/>. Since both the virtual image and the <em>virtually moved object</em> are at the near point of the eye, we get the following for the angles subtended at the eye.
+				<md>
+					<mrow>\amp \tan\theta_\text{P} = \frac{h_\text{o}}{n_p} </mrow>
+					<mrow>\amp \tan\theta_\text{Q} = \frac{h_\text{i}}{n_p} = \frac{h_\text{i}}{n_p} </mrow>
+				</md>
+				If we make small angle approximation, then, we will have
+				<md>
+					<mrow>\amp  \theta_\text{P} \approx \frac{h_\text{o}}{n_p} </mrow>
+					<mrow>\amp  \theta_\text{Q} \approx \frac{h_\text{i}}{n_p} </mrow>
+				</md>
+				Therefore, the angular magnification will be
+				<me>
+					M = \frac{\theta_\text{Q}}{\theta_\text{P}} = \frac{h_\text{i}}{h_\text{o}}.
+				</me>
+				That is, the angular magnification in the small angle approximation is nuercally equal to the the lateral magnification of the magnifying glass itself.
+				We can replace <m>h_\text{i}/h_\text{o}</m> by <m>-q/p</m> by the magnifying glass itself.
+				<me>
+					\frac{h_\text{i}}{h_\text{o}} = -\frac{q}{p} = \frac{n_p+f}{f}.
+				</me>
+				Therefore, the angular magnification can also be written as
+				<men xml:id="eq-angular-magnification-by-a-magnifying-glass">
+					M = \frac{n_p+f}{f}.
+				</men>				
+				This says that furthest is your near point more angular magnification you will perceive for the same magnifying glass. So, if your friend says he sees the magnification only 5x with a magnifier that has focal length <m>4.5\text{ cm}</m> and you say you see magnification 7x. Both of you may be right. Your <m>n_p \approx  31.5\text{ cm}</m> and your friend's <m>n_p \approx 22.5\text{ cm}</m>.
+			</p>
+		</subsubsection>						  			
+
+    </subsection>
+
+	<exercise xml:id="exercise-Angular-Magnification-of-a-Magnifying-Glass-for-a-Typical-Eye"><title>Angular Magnification by a Magnifying Glass for a Typical Eye</title>
+
+		<statement>
+			<p>
+				(a) Find the angular magnification of an image by a mgnifying glass of focal length <m>f=5\text{ cm}</m>. Assume the magnifying glass is next to the eye and the near point of the eye is <m>25\text{ cm}</m> from the eye.
+			</p>
+			<p>
+				(b) How far behind the magnifying glass should the physical specimen be for clearest view?
+			</p>
+		</statement>
+		<hint><p>(a) Use Eq. <xref ref="eq-angular-magnification-by-a-magnifying-glass" />. (b) Use Eq. <xref ref="eq-placing-the-viewing-object-magnifying-glass" />. </p></hint>
+		<answer><p>  (a) <m>6</m>, <m>4.17\text{ cm}</m>.</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)
+				From Eq. <xref ref="eq-angular-magnification-by-a-magnifying-glass" />, we see that
+				<me>
+					M = \frac{n_p+f}{f} = \frac{25+5}{5} = 6.
+				</me>
+
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)
+				From Eq. <xref ref="eq-placing-the-viewing-object-magnifying-glass" />, we see that
+				<me>
+					p \approx \frac{f\;n_p}{n_p+f} = \frac{5\times 25}{5+25} = 4.17\text{ cm}.
+				</me>
+
+			</p>
+		</solution>
+
+	</exercise>
+
+
+	<exercise xml:id="exercise-Power-of-Magnifying-Glass-from-Observed-Magnification"><title>Power of Magnifying Glass from Observed Magnification</title>
+
+		<statement>
+			<p>
+				You perceive an angular magnification of a magnifying glass to be <m>10\times</m>. Suppose your near point is <m>25\text{ cm}</m>. What is the power in unit <m>\text{diopter}</m> of the magnifying glass? 
+			</p>
+		</statement>
+		<hint><p>Use Eq. <xref ref="eq-angular-magnification-by-a-magnifying-glass" /> and convert <m>1/f</m> to power. </p></hint>
+		<answer><p><m>45\text{ diopters}</m>.</p></answer>
+		<solution>
+			<p>
+				Let's write Eq. <xref ref="eq-angular-magnification-by-a-magnifying-glass" /> in terms of <m>1/f</m> with <m>f</m> in meter. With near point in meter, we get
+				<me>
+					M = 1 + \frac{0.25\text{ m}}{f} = 1 +  .25\, P.
+				</me>
+				Therefore,
+				<me>
+					P = \frac{M-1}{0.25} =  \frac{10-1}{0.25} = 45\text{ diopters}.
+				</me>
+				You can see for higher magnification, <m>M \approx n_p\, P</m>, where <m>n_p</m> is the near point in <m>m</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

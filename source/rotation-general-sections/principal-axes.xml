@@ -1,0 +1,473 @@
+<section xml:id="sec-principal-axes"><title> Principal Axes </title>
+<idx>Principal Axes</idx>
+	<introduction>
+
+		<p>
+			From the matrix representation of <m>{\bf I}</m> in Eq. <xref ref="eq-vec-L-I-vec-omega-tensor-notation"/>, it is obvious that it is a symmetric matrix. We say that moment of inertia is a symmetric tensor. Since symmetric matrices can always be diagonalized, there is a choice of direction of the body-attached axes so that off-diagonal elements turn out to be zero. We call these axes <term>principal axes</term>. In principal axes we will have only three non-zero moment of inertia components; in that case, we just denote them by simpler symbols, <m>I_1</m>, <m>I_2</m>, <m>I_3</m>.
+			<me>
+				{\bf I} = 
+				\begin{pmatrix}
+  					I_1 \amp 0 \amp 0\\ 
+  					0 \amp I_2 \amp 0\\
+  					0 \amp 0 \amp I_3
+				\end{pmatrix}
+			</me>
+			Denoting <m>x,y,z</m> by <m>x_1,\,x_2,\,x_3</m> for simplicity and subscripts by simply <m>1,\,2,\,3</m> instead of <m>x,y,z</m>, we have
+			<me>
+				I_1 = \sum m (x_2^2 + x_3^2),\ \ I_2 = \sum m (x_1^2 + x_3^2),\ \ I_3 = \sum m (x_1^2 + x_2^2).
+			</me>
+			From these, it is easy to see that sum of two of these moments of inertia cannot exceed the third.
+			<me>
+				I_1  + I_2 = \sum m (x_1^2 + x_2^2 + 2x_3^2) \ge  \sum m (x_1^2 + x_2^2) = I_3.
+			</me>
+		</p>
+		<p>
+			Based on the values of <m>I_1,\ I_2,\ I_3</m> we can classify systems into three categories: (1) if <m>I_1=I_2=I_3</m>, then we have <term>spherical top</term>, (2) if <m>I_1 = I_2 \ne I_3</m>, then we have <term>symmetrical top</term>, and (3) if all <m>I_i</m> are diferent, then we have <term>asymmetrical top</term>. Often, we work with systems that are elongated along one dimension, such as rod or linear molecules. In that case, we will have <m>I_1=I_2</m> and <m>I_3=0</m>. This type of system is called a <term>rotator</term>.
+		</p>
+
+		<p>
+			If there are symmetries in a rigid body, it is much simpler to guess the directions of principal axes. For instance, in the case of sphere, every axis through the CM is a principal axis. 
+		</p>
+
+		<sidebyside widths="60% 10% 30%">
+			<p>
+				In the case of a cylinder, one prinicipal axis will be the axis of the cylinder and the other two will be axes perpendicular to the axis of the cylinder and passing through the CM. In this case, we will get <m>I_1=I_2</m> and <m>I_3</m>.
+	
+			</p>
+			<p></p>
+			<figure xml:id="fig-principal-axes-cylinder-123">
+				<caption></caption>
+				<image source="./images/rotation-general/principal-axes-cylinder-123.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			A calculation on a cylinder of mass <m>M</m>, height <m>H</m> and  radius <m>R</m> will show that moment of inertia tensor with respect to principal axes will be
+			<me>
+				{\bf I} = 				
+					\begin{pmatrix}
+	  					\frac{1}{4}MR^2 + \frac{1}{12}MH^2 \amp 0 \amp 0\\ 
+	  					0 \amp \frac{1}{4}MR^2 + \frac{1}{12}MH^2 \amp 0\\
+	  					0 \amp 0 \amp \frac{1}{2}MR^2
+					\end{pmatrix}
+			</me>
+		</p>
+ 
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				When masses are restricted to be in a plane, we call it a <term>coplanar system</term>. 
+			For a coplanar system, say in the <m>xy</m> plane, let <m>I_{1}</m> and <m>I_2</m> be moments of inertia about principal axes in <m>xy</m>-plane and <m>I_3</m> be about principal axis perpendicular to the plane.
+	
+			</p>
+			<p></p>
+			<figure xml:id="fig-coplanar-system-moments">
+				<caption></caption>
+				<image source="./images/rotation-general/coplanar-system-moments.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+
+
+		<p>	
+			Since <m>z=0</m> for all particles in this system, we have
+			<me>
+				I_1 = \sum m y^2,\ \ I_2 = \sum m x^2,\ \ I_3 = \sum m (x^2 + y^2).
+			</me>
+			Clearly, for coplanar systems we must have
+			<me>
+				I_3 = I_1 + I_2.
+			</me>
+		</p>
+
+
+	<example xml:id="ex-Moment-of-Inertia-of-a-Dumbbell"><title>Moment of Inertia of a Dumbbell</title>
+
+		<statement>
+
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					We want to find moment of inertia of a dumbbell with respect to two different coordinate systems shown in <xref ref="fig-moment-of-inertia-of-a-dumbbell"/>. Find all nine moments of inertia in <m>Oxyz</m> and <m>Ox'y'z'</m>. <!-- We will find that <m>Ox'y'z'</m> are principal axes while <m>Oxyz</m> is not. -->
+				</p>
+				<p></p>
+				<figure xml:id="fig-moment-of-inertia-of-a-dumbbell">
+					<caption></caption>
+					<image source="./images/rotation-general/moment-of-inertia-of-a-dumbbell.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+			
+		</statement>
+		<!-- <hint><p>
+			First figure out coordinates of the two masses in the two coordinte systems and then use formulas for each moment of inertia component.
+		</p></hint> -->
+		<answer><p>
+			See solution.
+		</p></answer>
+		<solution>
+			<p>
+				We need coordinates of the two masses in the two systems. From <xref ref="fig-moment-of-inertia-of-a-dumbbell"/>, we read off the following for the mass (say 1) on the right.
+				<md>
+					<mrow> x_1 = l\cos\theta,\ \ y_1 = l \sin\theta,\ \ z_1 = 0</mrow>
+					<mrow> x'_1 = l,\ \ y'_1 = 0,\ \ z'_1 = 0</mrow>
+				</md>
+				The coordinates of the other particle are negative of these values. Therefore, we get the following moments of inertia in <m>Oxyz</m>.
+				<md>
+					<mrow>\amp I_{xx} = 2m l^2 \sin^2\theta,\ \ I_{yy} = 2m l^2 \cos^2\theta,\ \ I_{zz} = 2m l^2,</mrow>
+					<mrow>\amp I_{xy} = -2m l^2 \sin\theta\,\cos\theta,\ \ I_{xz} = 0,\ \ I_{yz} = 0.</mrow>
+				</md>
+				Organizing this in matrix we have the following in <m>Oxyz</m>.
+				<me>
+					{\bf I} = 				
+						\begin{pmatrix}
+		  					2m l^2 \sin^2\theta \amp -2m l^2 \sin\theta\,\cos\theta \amp 0\\ 
+		  					-2m l^2 \sin\theta\,\cos\theta \amp 2m l^2 \cos^2\theta \amp 0\\
+		  					0 \amp 0 \amp 2m l^2
+						\end{pmatrix}
+				</me>
+				In <m>Ox'y'z'</m>, we will get
+				<md>
+					<mrow>\amp I_{x'x'} = 0,\ \ I_{y'y'} = 2m l^2,\ \ I_{z'z'} = 2m l^2,</mrow>
+					<mrow>\amp I_{x'y'} = 0,\ \ I_{x'z'} = 0,\ \ I_{y'z'} = 0.</mrow>
+				</md>
+				Organizing this in matrix we have the following in <m>Ox'y'z'</m>.
+				<me>
+					{\bf I'} = 				
+						\begin{pmatrix}
+		  					0 \amp 0 \amp 0\\ 
+		  					0 \amp 2m l^2 \amp 0\\
+		  					0 \amp 0 \amp 2m l^2
+						\end{pmatrix}
+				</me>										
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="ex-Principal-Moments-of-Inertia-of-a-Cone"><title>Principal Moments of Inertia of a Cone</title>
+
+		<statement>
+			<p>
+				Find principal moments of inertia of a circular-based cone with radius <m>R</m> and height <m>h</m>.
+			</p>
+		</statement>
+		<!-- <hint><p>
+			First find moments of inertia through parallel axes through apex. Also, use cylindrical coordinates to simplify integrals.
+		</p></hint> -->
+		<answer><p>
+			<m>I_1 = I_2 = \frac{3}{20}\,MR^2  + \frac{3}{80}\,Mh^2</m>, <m>\frac{3}{10}\,MR^2</m>.
+		</p></answer>
+		<solution>
+	
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					To find the principal moments of inertia about the CM at <m>O</m>, we first find moment of inertia about the apex at <m>O'</m> using axes parallel to the principal axes, and then make use of parallel axis theorem as illustrated in <xref ref="fig-moment-of-inertia-of-a-cone"/> . We also make use of cylindrical coordinates since integrals will work out more easily there. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-moment-of-inertia-of-a-cone">
+					<caption></caption>
+					<image source="./images/rotation-general/moment-of-inertia-of-a-cone.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				An element of mass <m>dm = \rho\,dV</m> at coordinates <m>(x',y',z')</m> here will be
+				<me>
+					dm = \rho r'dr' d\phi' dz',
+				</me>
+				where upper limit of integration on radial distance <m>r' = \sqrt{ {x'}^2 + {y'}^2 }</m> depends on  <m>z'</m> from the ratio of sides of similar triangles,
+				<me>
+					\frac{r'_\text{max}}{z'} = \frac{R}{h},\ \ \longrightarrow\ \ r'_\text{max} = \frac{R}{h}\, z'.
+				</me>
+				Mass of the cone will be
+				<md>
+					<mrow> M \amp =  2\pi \rho \int_0^h dz'\, \int_0^{r'_\text{max}}\, r'dr'</mrow>
+					<mrow>  \amp =  \frac{2\pi \rho R^2}{2 h^2} \int_0^h\, z'\, dz' = \frac{\pi R^2 h}{3}\, \rho. </mrow>
+				</md>
+				To find <m>I_{z'z'}</m> we need
+				<md>
+					<mrow>I_{z'z'} \amp = \int \rho \left(x^2 + y^2 \right) dV  </mrow>
+					<mrow>  \amp = \rho \int {r'}^2  r'dr' d\phi' dz' </mrow>
+					<mrow>  \amp = \frac{ 2\pi R^4 \rho}{4h^4} \int_0^h {z'}^4 dz' </mrow>
+					<mrow>  \amp = \frac{ \pi R^4 h \rho}{10} = \frac{3}{10}\,MR^2.</mrow>
+				</md>
+	 
+			</p>
+			<p>
+				 For <m>I_{x'x'}=I_{y'y'}</m>, we need only one calculation. 
+				 <md>
+				 	<mrow> I_{x'x'} \amp = \int \rho \left(y^2 + z^2 \right) dV </mrow>
+				 	<mrow>   \amp = \rho \int  dz'\int r' dr'\, \int d\phi' \left( {r'}^2 \sin^2\phi'   + {z'}^2\right) </mrow>
+				 	<mrow>   \amp = \rho \int  dz'\int r' dr'\,   \left( \pi {r'}^2   + 2\pi  {z'}^2\right) </mrow>
+				 	<mrow>   \amp = \rho \int  dz'   \left( \frac{\pi}{4}{Rz'/h}^4  + \pi {Rz'/h}^2  {z'}^2\right) </mrow>
+
+				 	<mrow>   \amp =  \rho \left( \frac{\pi}{20}(R/h)^4 h^5  + \frac{1}{5}\,\pi (R/h)^2  h^5\right) </mrow>
+				 	<mrow>   \amp =  \frac{\pi\rho R^2 h}{3} \left(  \frac{3}{20} R^2 + \frac{3}{5}h^2 \right) </mrow>
+				 	<mrow>   \amp =  \frac{3}{5}\,M \left(  \frac{1}{4} R^2 +  h^2 \right) </mrow>
+				 </md>
+			</p>
+			<p>
+				To make use of parallel axis theorem to get <m>I_{xx}</m>, <m>I_{yy}</m>, <m>I_{zz}</m> through the CM, we need to locate the CM of the cone. We just need to find the <m>z'_\text{cm}</m>. This will be at
+				<me>
+					z'_\text{cm} = \frac{1}{M}\int z' dV = \frac{3}{4}\, h.
+				</me>
+				Now, we use parallel axis theorem to get
+				<md>
+					<mrow> I_{xx} \amp = I_{x'x'} - M {z'}_\text{cm}^2 = \frac{3}{5}\,M \left(  \frac{1}{4} R^2 +  h^2 \right) - \frac{9}{16} h^2  </mrow>
+					<mrow> \amp = \frac{3}{20}\,MR^2  + \frac{3}{80}\,Mh^2.</mrow>
+					<mrow> I_{yy} \amp =  I_{xx} = \frac{3}{20}\,MR^2  + \frac{3}{80}\,Mh^2. </mrow>
+					<mrow> I_{zz} \amp =  \frac{3}{10}\,MR^2.  </mrow>
+				</md>
+			</p>
+		</solution>
+	</example>
+
+
+	</introduction>
+
+	<subsection><title>Parallel Axis Theorem</title>
+		<p>
+			Often we want moment of inertia about an axis that does not pass through center of mass. We have seen this before, for instance, in the case of moment of inertia of a rod about an axis through the edge.
+		</p>
+
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				 Given moment of inertia <m>I_{1}=\frac{1}{12}ML^2</m> about axis <m>1</m> through the center of the rod, the moment of inertia about an axis <m>1'</m> through the edge and parallel to the axis through the CM was
+				<me>
+					I_{1'} = I_{1} + Ma^2 = \frac{1}{3}ML^2.
+				</me>
+	
+			</p>
+			<p></p>
+			<figure xml:id="fig-parallel-axis-theorem-rod">
+				<caption></caption>
+				<image source="./images/rotation-general/parallel-axis-theorem-rod.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			We want to generalize it. Suppose we have <m>I_1,\, I_2,\ I_3</m> are moments of inertial about principal axes <m>1,\, 2,\ 3</m> respectively, origin <m>O</m> at CM. Let there be axes <m>1',\, 2',\ 3'</m> that are parallel to <m>1,\, 2,\ 3</m> but with origin at <m>A</m> in the body such that the displacment from <m>O</m> to <m>A</m> be <m>\vec a</m>.
+		</p>
+		<p>
+			Consider a point P in the body. Let <m>\vec r</m> be its position with respect to <m>O</m> and <m>\vec r'</m> with respect to <m>A</m>. Then
+			<me>
+				\vec r = \vec r' + \vec a. 
+			</me>
+			The diagonal components of the moment of inertia will become
+			<md>
+				<mrow> I_{x'x'} \amp = \sum m (y'^2 + z'^2) </mrow>
+				<mrow> \amp \sum m [(y-a_y)^2 + (z-a_z)^2]  </mrow>
+				<mrow> \amp \sum m (y^2 + z^2)  + \sum m (a_y^2 + a_z^2) -2a_y\sum m y -  2a_z\sum m z </mrow>  
+			</md>
+			Last two terms here will be zero since  <m>O</m> is at the CM, i.e, since <m>\sum m \vec r = 0</m>, we will end up with 
+			<me>
+				I_{x'x'} = \sum m (y^2 + z^2)  + \sum m (a_y^2 + a_z^2) = I_{xx} + \sum m (a_y^2 + a_z^2).
+			</me>
+			Similarly for <m>I_{y'y'}</m> and <m>I_{z'z'}</m>. For off-diagonal components, lets look at <m>I_{x'y'}</m>. 
+			<md>
+				<mrow> I_{x'y'} \amp = - \sum m x'y' </mrow>
+				<mrow> \amp = - \sum m  (x-a_x)(y-a_y)  </mrow>
+				<mrow> \amp = - \sum m x y  - \sum m a_xa_y + a_x\sum m y + a_y \sum m x   </mrow> 
+				<mrow> \amp = I_{xy}  - \sum m a_xa_y + 0 + 0  = I_{xy} - \sum m a_xa_y  </mrow> 
+			</md>
+			Similarly, for other off-diagonal components. Thus, although moment of inertia <m>{\bf I}</m> was diagonal with origin of principal axes at CM, it is not diagonal if origin is not at CM.			
+		</p>
+
+
+		<example xml:id="example-Radius-of-Gyration-of-a-Sphere-About-an-Axis-Tangent-to-the-Edge"><title>Radius of Gyration of a Sphere About an Axis Tangent to the Edge</title>
+			<statement>
+				<p>
+					What is the radius of gyration of a solid sphere of mass <m>M</m> and radius <m>R</m> about an axis that is tangent to its surface? Assume the sphere to be of unform density.
+				</p>
+			</statement>
+			<answer><p> <m>\sqrt{\frac{7}{5}}\, R</m>.</p></answer>
+			<solution>
+				<p>
+					Recall the definition of radius of gyration. It's the distance from the axis, usually denoted by <m>R_G</m>, such that moment of inertia about the axis is <m>I = M R_G^2</m>.
+				</p>
+				<p>
+					We will start with the previously known fact that moment of inertia of a sphere about an axis passing through the center is
+					<me>
+						I_0 = \frac{2}{5}MR^2.
+					</me>
+					Now, we want moment of inertia about an axis <m>A</m> that is parallel to the axis through the CM but is at a distance <m>R</m> away. Hence, moment of inertia about <m>A</m> will be
+					<me>
+						I_A = I_0 + MR^2 = \frac{7}{5} MR^2.
+					</me>
+					Now, to get radius of gyration, we equate this to <m>MR_G^2</m>. This gives us
+					<me>
+						R_G = \sqrt{\frac{7}{5}}\, R.
+					</me>
+				</p>
+			</solution>
+		</example>
+
+
+
+
+	</subsection>
+
+
+		<!-- <p>
+			The components of angular momentum with respect to principal axes will be simpler with components of <m>\vec L = {\bf I}\,\vec \omega</m> as
+			<men>
+				L_1 = I_1\,\omega_1,\ \ L_2 = I_2\,\omega_2,\ \  L_3 = I_3\,\omega_3.
+			</men>
+		</p>			
+ 
+
+
+
+		<p>
+			In <xref ref="sec-angular-velocity-and-angular-momentum"/> we showed that moment of inertia is more complicated than a single number. We found that when we express Cartesian components of angular momwentum <m>\vec L</m> in terms of components of angular velocity <m>\vec \omega</m>, in general we need nine moments of inertia numbers. Let us use bold symbol <m>{\bf I}</m> for moment of inertia. Usually, we organize <m>\vec L = {\bf I} \vec \omega</m> as a matrix equation, where <m>{\bf I}</m> is represented by a matrix.
+			<men xml:id="eq-L-I-omega-matrix-relation">
+				\begin{pmatrix}
+  					L_x\\ 
+  					L_y\\
+  					L_z
+				\end{pmatrix} = 
+				\begin{pmatrix}
+  					I_{xx} \amp I_{xy} \amp I_{xz}\\ 
+  					I_{yx} \amp I_{yy} \amp I_{yz}\\
+  					I_{zx} \amp I_{zy} \amp I_{zz}
+				\end{pmatrix}
+				\begin{pmatrix}
+  					\omega_x\\ 
+  					\omega_y\\
+  					\omega_z
+				\end{pmatrix}\ \ \leftrightarrow\ \ \vec L = {\bf I}\,\vec \omega
+			</men>
+			The formulas for various <m>I_{ij}</m> are given in <xref ref="sec-angular-velocity-and-angular-momentum"/>. Matrix for <m>{\bf I}</m> is a symmetric matrix with <m>I_{ij} = I_{ji}</m>. 
+		</p>
+		<p>
+ 			For every system, it is possible to find Cartesian axes so that off-diagnal elements of matrix <m>{\bf I}</m> vanishes. Let <m>x',y',z'</m> be principal axes, then we will have
+ 			<men xml:id="eq-L-I-omega-matrix-relation-principal">
+				\begin{pmatrix}
+  					L_{x'}\\ 
+  					L_{y'}\\
+  					L_{z'}
+				\end{pmatrix} = 
+				\begin{pmatrix}
+  					I_{x'x'} \amp 0 \amp 0\\ 
+  					0 \amp I_{y'y'} \amp 0\\
+  					0 \amp 0 \amp I_{z'z'}
+				\end{pmatrix}
+				\begin{pmatrix}
+  					\omega_{x'}\\ 
+  					\omega_{y'}\\
+  					\omega_{z'}
+				\end{pmatrix}.
+			</men>
+		</p>
+		<p>
+			Principal axis directions for symmetric bodies are easy to find since they will be along symmetry axes of the body.  
+		</p>
+		<sidebyside widths="60% 10% 30%">
+			<p>
+				For instance, for a cylinder principal axes will be along the axis of the cylinder and two other axes perpendicular to this direction passing through the center of cylinder. After a full calculation we get
+	
+			</p>
+			<p></p>
+			<figure xml:id="fig-principal-axes-cylinder">
+				<caption></caption>
+				<image source="./images/rotation-general/principal-axes-cylinder.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			<me>
+				{\bf I} = 				
+					\begin{pmatrix}
+	  					\frac{1}{4}MR^2 + \frac{1}{12}MH^2 \amp 0 \amp 0\\ 
+	  					0 \amp \frac{1}{4}MR^2 + \frac{1}{12}MH^2 \amp 0\\
+	  					0 \amp 0 \amp \frac{1}{2}MR^2
+					\end{pmatrix}
+			</me>
+		</p> -->			
+
+
+
+
+
+	<exercises>
+
+	<exercise xml:id="ex-moment-of-inertia-of-triatomic-molcule"><title>Principal Moment of Inertia of Water Molecule</title>
+
+		<statement>
+ 
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Use symmetry arguments to guess principal axes and find moments of inertia about them for a water molecule with <m>m_1=m_3=m</m> and <m>m_2=M</m> and <m>l</m> being the bond length and <m>\theta</m> angle between the bonds. Use <m>a=l\sin\theta/2</m> and <m>h=l\cos\theta/2</m>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-water-molecule-moment-of-inertia">
+					<caption></caption>
+					<image source="./images/rotation-general/water-molecule-moment-of-inertia.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+
+		</statement>
+		<hint><p>
+			Use definition.
+		</p></hint>
+		<answer><p>
+			<m>I_{xx}\frac{2mM h^2}{M + 2m}</m>, <m>I_{yy}=2 m a^2</m>, <m> I_{zz} = I_{xx} + I_{yy}</m>.
+		</p></answer>
+		<solution>
+ 
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					In <xref ref="fig-water-molecule-moment-of-inertia-sol"/> two principal axes are shown; <m>z</m>-axis is coming out of the page. I have used symmetry to place CM at the center of the horizontal divider. By placing <m>2m</m> at <m>Q</m> and <m>M</m> at <m>P</m>, we get
+					<me>
+						\bar{OP} = \frac{2m\,l\cos(\theta/2) }{M+2m} = \frac{2mh}{M+2m}. 
+					</me> 
+				</p>
+				<p></p>
+				<figure xml:id="fig-water-molecule-moment-of-inertia-sol">
+					<caption></caption>
+					<image source="./images/rotation-general/water-molecule-moment-of-inertia-sol.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Distance <m>OQ</m> will be
+				<me>
+					\bar{OQ} = h - \bar{OP} = \frac{M\,h }{M+2m}. 
+				</me>
+				The horizontal distance of masses <m>m</m> are <m>a = l\sin(\theta/2)</m>. Now, we write Cartesian coordinates of the three masses, with <m>m_1</m> being the lower left corner.
+				<md>
+					<mrow>\amp x_1 = - a,\ \ y_1 = -  \frac{M\,h }{M+2m},\ \ z_1 = 0.</mrow>	
+					<mrow>\amp x_2 = 0,\ \ y_2 = \frac{2m\,h }{M+2m},\ \ z_2 = 0.</mrow>
+					<mrow>\amp x_3 = + a = -x_1,\ \ y_3 = -  \frac{M\,h}{M+2m}=y_1,\ \ z_3 = 0.</mrow>
+				</md>
+				The diagonal components of moment of inertia will be
+				<md>
+					<mrow>I_{xx} \amp = m_1 (y_1^2 + z_1^2) + m_2 (y_2^2 + z_2^2) + m_3 (y_3^2 + z_3^2)  </mrow>
+					<mrow>  \amp =  2m \left(\frac{M\,h }{M+2m}\right)^2  + M \left( \frac{2m\,h }{M+2m}\right)^2</mrow>
+					<mrow>  \amp =  \frac{2mM h^2}{M + 2m}. </mrow>
+				</md>
+				<md>
+					<mrow>I_{yy} \amp = m_1 (x_1^2 + z_1^2) + m_2 (x_2^2 + z_2^2) + m_3 (x_3^2 + z_3^2)  </mrow>
+					<mrow> \amp = 2m a^2  + M \times 0   =  2 m a^2.</mrow>
+				</md>
+				Since this is a coplanar system, we must have
+				<me>
+					I_{zz} = I_{xx} + I _{yy} = 2m a^2  + \frac{2mM\,h^2 }{M+2m}.
+				</me>
+				We can verify it by carrying out calculation explicitly.
+				<md>
+					<mrow>I_{zz} \amp = m_1 (x_1^2 + y_1^2) + m_2 (x_2^2 + y_2^2) + m_3 (x_3^2 + y_3^2)  </mrow>
+					<mrow> \amp = 2m a^2 + 2m \left( \frac{M\,h }{M+2m} \right)^2 + M \left( \frac{2m\,h }{M+2m} \right)^2  </mrow>
+					<mrow> \amp =  2m a^2  + \frac{2mM\,h^2 }{M+2m}.  </mrow>
+				</md>
+				Let's work out one of th eoff-diagonal components. Let's say we want <m>I_{xy}</m>. 
+				<md>
+					<mrow> I_{xy} \amp = - m_1 x_1 y_1 - m_2 x_2 y_2 - m_3  x_3 y_3 </mrow>
+					<mrow>  \amp = - m x_1 y_1 - 0  - m (-x_1) (y_1) = 0.</mrow>
+				</md>
+			</p>
+
+		</solution>
+	</exercise>		
+
+
+
+	</exercises>
+
+
+</section>

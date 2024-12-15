@@ -1,0 +1,624 @@
+<section xml:id="Electric-Field-for-Spherical-Symmetry"><title> Electric Field for Spherical Symmetry </title>
+	<subsection><title>Spherical Symmetry of Charge Distribution</title>
+		<p>
+			A charge distribution has a <term> spherical symmetry</term> if density of charge <m>\rho</m> depends only on the distance from a center and not on the direction in space. Note that its not the shape of container of charges that determines spherical symmetry but rather the how charges are distributed as illustrated in <xref ref="fig-gauss-law-spherical-symmetry"/>.
+		</p>
+		<figure xml:id="fig-gauss-law-spherical-symmetry">
+				<caption>
+					Illustrations of spherically symmetric and non-symmetric situations. Spherical symmetry occurs only when charge density does not depend on the direction.  (a) and (c) have spherical symetry, but (b) does not have spherical symmetry.
+				</caption>
+				<image source="./images/gausss-law/gauss-law-spherical-symmetry.png" width="80%"/>
+		</figure>
+		<!-- <p>
+			Therefore, if you place a charged object with spherical symmetry with center at the origin and express density as a function of spherical coordinates <m> (r,\theta, \phi)</m>, then you will find that it will be only a function of <m>r</m> and not of <m>\theta</m> or <m>\phi</m>.
+			<me>
+				\rho(r,\theta, \phi) = f(r).
+			</me>
+			That is, the density is the same function of radial distance in every direction.
+		</p> -->
+		<p>
+			 In <xref ref="fig-gauss-law-spherical-symmetry"/>(a), we have a sphere of radius <m>R</m> that is uniformly charged with constant value of <m>\rho_0</m> everywhere. Therefore, its charge density can be written as a piecewise function of <m>r</m> only, being same in all directions.
+			 <me>
+			 	\rho(r,\theta, \phi) = \begin{cases}
+			 			\rho_0 \amp 0\le r \le R\\
+			 			0 \amp r \gt R.
+			 			\end{cases}
+			 </me> 
+			 
+		</p>
+
+		<p>
+			 On the other hand, if a sphere of radius <m> R</m>  is charged so that top half of the sphere has uniform charge density <m> \rho_1</m>  and the bottom half a uniform charge density  <m> \rho_2\ne\rho_1</m> , as in <xref ref="fig-gauss-law-spherical-symmetry"/>(b). Clearly, this charge density depends on the direction, and hence <alert>does not have spherical symmetry</alert>. Therefore, it is not the shape of an object but rather the shape of the charge distribution that determines whether or not a system has a spherical symmetry!
+
+			 <!-- Let <m>z</m> axis is pointed up from the center of the sphere. Using spherical angle <m>\theta</m> from the <m>z</m> axis, the charge distribution will be
+			 <me>
+			 	\rho(r,\theta, \phi) = \begin{cases}
+			 			0 \amp 0\le r \lt R\\
+			 			\rho_1 \amp  r=R,\ 0\le \theta \le \pi/2 \\
+			 			\rho_1 \amp  r=R,\ \pi/2\lt \theta \le \pi\\
+			 			0 \amp r>R.
+			 			\end{cases}
+			 </me> 	
+			 Clearly, this charge density depends on the direction. Therefore <xref ref="fig-gauss-law-spherical-symmetry"/>(b) does not have spherical symmetry. -->
+		</p>
+ 
+
+		<p>
+			In <xref ref="fig-gauss-law-spherical-symmetry"/>(c), a sphere with four different shells, each with its own uniform charge density is shown.  Although this is a situation where charge density in the full sphere is not uniform, but since charge density function depends only on <m>r</m> and not on the direction, <alert>this charge distribution does have a spherical symmetry</alert>.
+		</p>
+
+
+	</subsection>
+
+	<subsection><title> Consequences of Symmetry</title>
+		<p>
+			In all spherically symmetric cases, the electric field must be radially directed, either towards the center or away from the center, because there are no preferred directions in the charge distribution. Why will that be the case? Simple, for any charge that has a non-radial component, there is another charge that will have non-radial component that will cancel the non-radial component of the previous charge.
+		</p> 
+
+		<p>
+			Therefore, using spherical coordinates with origin at the center of a spherical charge distribution, we can claim that electric field at a space point P located at a distance <m> r</m> from the center can only depend on <m>r</m> and radial unit vector <m>
+			\hat u_r</m>.  
+
+			<men xml:id="eq-spherical-sym-form-1">
+				\text{Spherical symmetry:}\ \ \vec E_P = E_P(r)\hat u_r, 
+			</men>
+			Note that at this stage we do not have a formula for the electric field, we just have its direction and functional form. We will use Gauss's law to find the formula for <m>E_P(r)</m>.
+		</p>
+		<p> 
+			Sometimes, we write the radial component <m> E_P(r)</m> as <m>E_r(P)</m>, or <m>E_r</m>, or just <m>E</m>.  When <m> E_P \gt 0</m>, the electric field at P would be pointed away from the origin, i.e., in the direction of <m>\hat u_r </m>, and when <m> E_P \lt 0</m>, the the electric field at P would be pointed towards the origin, i.e., in the direction of <m>-\hat u_r </m>.
+		</p>		
+	</subsection>
+
+ 	<subsection><title> Electric Field of a Uniformly Charged Sphere </title>
+
+ 		<p>
+ 			Consider a uniformly charged sphere with charge density
+ 			<me>
+ 				\rho = \begin{cases}
+			 			\rho_0 \amp 0\le r \le R\\
+			 			0 \amp r \gt R.
+			 			\end{cases}
+ 			</me> 			
+ 		</p>
+
+ 		<sidebyside widths="60% 5% 35%">
+	 		<p>
+
+	 			There are two types of points in this space, where we will find electric field.
+	 			<ol>
+	 				<li> a point <m>P_\text{out} </m> outside the sphere,  <m> r \gt R</m>,  and </li>
+	 				<li> a point <m>P_\text{in} </m> inside the sphere, <m> r \le R</m>. </li>
+	 			</ol>
+	 		</p>
+	 		<p> </p>
+
+ 		
+ 			<image source="./images/gausss-law/gauss-unif-charged-sphere.png" width="70%"/>
+ 		</sidebyside>		
+ 		<p>
+ 			We will show below that the magnitude of electric field varies with distance by two different rules, one for points inside the sphere and another for point outside the sphere.
+ 			<me>
+ 				E = \begin{cases}
+			 			 \dfrac{\rho_0}{3\epsilon_0}\, r \amp  0\le r \le R,\\
+			 			\dfrac{1}{4\pi\epsilon_0}\, \dfrac{q_\text{tot}}{r^2} \amp r \gt R,
+			 			\end{cases}
+ 			</me> 
+ 			where <m>q_\text{tot}</m> is the total charge on the sphere. <xref ref="fig-gauss-law-spherical-symmetry-2"/> shows a drawing of this function. 			
+ 		</p>
+ 		<figure xml:id="fig-gauss-law-spherical-symmetry-2">
+ 			<caption>
+ 				Electric field of a uniformly charged non-conducting sphere increases inside the sphere to a maximum at the surface, and then decreases as <m>1/r^2</m>. Here, I have scaled all constants so that <m>E(r=1)=1</m>.
+ 			</caption>
+ 			<image source="./images/gausss-law/e-field-of-uniform-sphere-matlab-edited.png" width="70%"/>
+ 		</figure>
+
+ 		
+ 
+ 		<subsubsection> <title> Electric Field at an Outside Point by Gauss's Law</title>
+ 		 	<p><alert>Gaussian Surface and Flux</alert></p>
+ 			<p>
+ 				Let's call electric field at an outside point as <m>E_\text{out}</m>. From spherical symmetry, we know that electric field at this point is radial in direction and its  magnitude dependends only on the radial distance <m>r</m> from the origin, independent of direction. To indicate this fact, we write the magnitude as a function of <m>r</m>.
+ 				<me>
+ 					E_\text{out} = E_\text{out}(r),
+ 				</me>
+ 				To find electric field in the present context means we need to find the formula for this function.
+ 			</p>
+<!--  			<p>
+ 				In Gauss's law, electric field is inside an integral over a closed surface. So, if we want electric field at point P, we need to introduce appropriate surface that contains point P. Since electric field has same value at all points same distance as P from origin, the surface we seek is a spherical surface with center at origin. For area vectors on patches of this surface, we take normal that points from inside to outside.
+ 			</p> -->
+ 			<sidebyside widths= "55% 45%">
+	 			<p>
+	 				In Gauss's law, electric field is inside an integral over a closed surface. So, if we want electric field at point P, we need to introduce appropriate surface that contains point P. Since electric field has same value at all points same distance as P from origin, the surface we seek is a spherical surface with center at origin. For area vectors on patches of this surface, we take normal that points from inside to outside.
+	 			</p>
+
+	 			<!-- <p>
+	 				To find <m>E_\text{out}(r)</m> by using Gauss's law, we envision a closed surface whose area element at each point is either in the direction of <m> \vec E_\text{out} </m>. Clearly, a spherical Gausssian surface that has point <m>P_\text{out} </m> with center at the origin has all area elements that have directions that are radial. 
+	 			</p> -->
+	 			<image source="./images/gausss-law/gauss-unif-charged-sphere-outside-point.png" width="70%"/>
+	 		</sidebyside>
+ 			<p>
+ 				Therefore, electic flux through the spherical surface will be
+	 				<men xml:id="eq-gaussian-spherical-outside-1">
+	 					\Phi_\text{out} = \oint_{S}\vec E\cdot d\vec A =  E _\text{out}\times 4\pi r_\text{out}^2.
+	 				</men> 
+ 			</p>
+ 			<p><alert>Enclosed Charge: </alert></p>
+ 			<p>
+ 				Gauss's law says that this will equal <m>q_\text{enc}/\epsilon_0</m>. Since point <m>P_\text{out} </m> is outside, the Gaussian surface encloses all charges in the spherical charge distribution.
+ 				<me>
+ 					q_\text{enc} = \dfrac{4}{3} \pi R^3\rho_0.
+ 				</me>
+ 				Let's denote this by <m>q_\text{tot}</m>.
+  				<men xml:id="eq-gaussian-spherical-outside-2">
+ 					q_\text{enc} = \dfrac{4}{3} \pi R^3\rho_0 \equiv q_\text{tot}.
+ 				</men>
+ 				Note that the volume is not the volume inside the Gaussian surface but the volume occupied by the charges. 				
+ 			</p>
+ 		 	<p><alert>Use Gauss's Law:</alert></p>			
+ 			<p>
+ 				By Gauss's law we equate <m>\Phi_E</m> from Eq. <xref ref="eq-gaussian-spherical-outside-1"/> to <m>q_\text{enc}/\epsilon_0</m>. 
+ 				<me>
+ 					E_\text{out} \times 4\pi r_\text{out}^2 =  q_\text{tot}/\epsilon_0.
+ 				</me>
+ 				Solving 
+ 				<men xml:id="eq-gaussian-spherical-outside-3">
+ 					E_\text{out} = \dfrac{1}{4\pi \epsilon_0}\, \dfrac{q_\text{tot}}{ r_\text{out}^2 }.
+ 				</men>
+ 				This is the same formula you will get if you <em> replace spherical charge distribution by a point charge </em> <m> q_\text{tot}</m> at the center. That is, a  spherical charge distribution produces electric field at an outside point as if it was a point charge. This is not the case at a point inside the sphere.
+ 			</p>
+ 		</subsubsection>
+
+
+ 		<subsubsection><title>Electric Field at an Inside Point by Gauss's Law</title>
+
+ 			<p>
+ 				Let's call electric field at an inside point as <m>E_\text{in}</m>. From spherical symmetry, we know that electric field at this point is radial in direction and magnitude just dependent on the radial distance <m>r</m> from the origin indepdent of direction.
+ 				<me>
+ 					E_\text{in} = E_\text{in}(r),
+ 				</me>
+ 			</p>
+
+ 			<sidebyside  widths="55% 10% 35%">
+	 			<p>
+	 				The arguments for finding this function goes similar to the way we found <m>E_\text{out}</m>. We choose a spherical Gaussian surface that has point <m>P_\text{in}</m> on it and has center at the origin. Now, the electric flux through this Gaussian surface will be
+	 				<me>
+	 					\Phi_\text{in} = E _\text{in}\times 4\pi r_\text{in}^2.
+	 				</me> 
+	 			</p>
+	 			<p> </p>
+	 			<image source="./images/gausss-law/gauss-unif-charged-sphere-inside-point.png" width="70%"/>
+	 		</sidebyside>
+
+ 			<p>
+
+ 				But unlike the <m>P_\text{out}</m> case, the Gaussian surface here does not include all the charges in the sphere, but only charges upto radius <m>r_\text{in}</m>. Therefore,
+ 				<me>
+ 					q_\text{enc} = \dfrac{4}{3}\pi r_\text{in}^3\,\rho_0.
+ 				</me>
+ 
+ 				Now using Gauss's law we get
+ 				<me>
+ 					E _\text{in}\times 4\pi r_\text{in}^2 =  \dfrac{\dfrac{4}{3}\pi r_\text{in}^3\,\rho_0}{\epsilon_0}
+ 				</me>
+ 				Therefore,
+ 				<men xml:id="eq-gaussian-spherical-inside">
+ 					E _\text{in} = \dfrac{\rho_0}{3\epsilon_0}\, r_\text{in}.
+ 				</men>
+ 				Notice that this says that as you move out from the center, the electric field magnitude increases as long as we are inside the sphere. Once you go outside the sphere, you will be using Eq. <xref ref="eq-gaussian-spherical-outside-3"/>, which drops as inverse of square od the distance from the center of the sphere. Why does the electric field inside increase with distance? Clearly, this happens because you are including more and more charges within the Gaussian sphere for increasing radius points.
+ 			</p>
+ 			<p>
+ 				It is worth noting that <alert>same thing happens to gravity as well </alert>. If you move around inside Earth, force on you increases linearly from the center of Earth, but when you are outside, force decreases as inverse square of distance from the center.
+ 			</p>			
+ 			
+ 		</subsubsection>		
+ 	</subsection>
+
+	<exercise xml:id="ex-Electric-Field-of-Charged-Thick-Concentric-Spherical-Shells"><title> Electric Field of Charged Thick Concentric Spherical Shells </title>
+		<statement>
+			<p>
+				Figure shows two charged concentric spherical shells. There are no charges in the space at the core, i.e., charge density, <m> \rho = 0,\ r\lt R_1</m>. There are four distinct field points, labeled, <m>P_1</m>, <m>P_2</m>, <m>P_3</m>, and <m>P_4</m>.  Find electric fields at these points.
+			</p>
+			<image source="./images/gausss-law/ex-e-field-by-charges-on-thick-spherical-shells.png" width="50%"/>
+			
+
+		</statement>
+		<hint> <p>  Set up Gauss's law for each point. </p> </hint>
+		<answer> <p>  See solution. </p> </answer>
+		<solution> 
+			<p>
+				We first note that the charge distribution has a spherical symmetry since charge density is a function only of <m>r</m>, the distance from the common center, and not on the direction. That means, we can use Gauss's law to find electric field rather easily.
+			</p>
+			<sidebyside widths="60% 40%">
+				<p>
+					So, if we want field at one of these points, say <m>P_3</m>, we will imagine a <em> spherical Gaussian surface</em> <m>S_3</m> that contains point  <m>P_3</m>. By spherical symmetry we already know the direction of <m>\vec E_3</m> and the magnitude will depend on charges inside the Gaussian closing surface, which we denote by <m> q_\text{enc,3}</m>.
+
+				</p>
+				<image source="./images/gausss-law/ex-e-field-by-charges-on-thick-spherical-shells-gs-3.png" width="50%"/>
+			</sidebyside>
+			<p>
+				<me>
+					E_3 = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q_\text{enc,3}}{r_3^2}.
+				</me>
+			</p>
+			<p>
+				Same arguments can be applied at all four points. Let us denote the distances to the field points from the common center be <m>r_1</m>, <m>r_2</m>, <m>r_3</m>, and <m>r_4</m>. So, the only thing we need to work out the enclosed charges in each case.
+				<md>
+					<mrow> q_\text{enc,1} \amp = 0, </mrow>
+					<mrow> q_\text{enc,2} \amp = \rho_1\, \dfrac{4}{3}\pi\left(r_2^3 - R_1^3 \right), </mrow>
+					<mrow> q_\text{enc,3} \amp = \rho_1 \, \dfrac{4}{3}\pi\left(R_2^3 - R_1^3 \right) + \rho_2\, \dfrac{4}{3}\pi\left(r_3^3 - R_2^3 \right), </mrow>
+					<mrow> q_\text{enc,4} \amp = \rho_1 \, \dfrac{4}{3}\pi\left(R_2^3 - R_1^3 \right) + \rho_2\, \dfrac{4}{3}\pi\left(R_3^3 - R_2^3 \right), </mrow>
+				</md>
+				Therefore, electric fields are radial outward if <m>q_\text{enc,i}</m> is positive and radially inward if <m>q_\text{enc,i}</m> is negative, and the magnitude will be
+				<me>
+					E_i = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q_\text{enc,i}}{r_i^2}.
+				</me>
+				for <m>i=1,\ 2,\ 3, 4</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="Electric-Field-of-Two-Oppositely-Charged-Thin-Spherical-Shells"><title> Electric Field of Two Oppositely Charged Thin Spherical Shells </title>
+		<statement>
+			<p>
+				Figure shows two charged concentric thin spherical shells. There are no charges in the space at the core, i.e., charge density, <m> \rho = 0,\ r\lt R_1</m> or between the shells <m> \rho = 0,\ R_1\lt r \lt R_2</m>. The two shells are uniformly charged with charge densities such that the net charge on the two shells are equal in magnitude but opposite in sign.  
+			</p>
+			<p>
+				There are three distinct field points, labeled, <m>P_1</m>, <m>P_2</m>, and <m>P_3</m>.  (a) Find electric fields at these points. (b) Draw representative electric field lines for this system of charges.
+			</p>
+			<image source="./images/gausss-law/e-field-two-thin-spherical-shells.png" width="50%"/>
+			<p>
+				How can you create this type of situation? You can start with two concentric metal shells. Place some positive charge on inner shell and same amount on the outer shell by connecting a positive terminal of a DC battery to the inner shell and the negative of the battery to the outer shell. This arrangement of metal shells is called a <term> spherical capacitor</term>. We will study capacitors in a future chapter.
+			</p>
+			
+		</statement>
+		<hint> <p>  Apply spherical Gaussian symmetry. </p> </hint>
+		<answer> <p> (a) <m> E_1   = 0, </m>
+					<m> E_2   =  \dfrac{1}{4\pi\epsilon_0}\, \dfrac{4\pi R_1^2\sigma_1}{r_2^2}, </m>
+					<m> E_3   = 0.</m>
+				  
+				(b)  see the solution. </p> </answer>
+		<solution><title> (a) </title>
+			<p>
+				We first note that the charge distribution has a spherical symmetry since charge density is a function only of <m>r</m>, the distance from the common center, and not on the direction. That means, we can use Gauss's law to find electric field rather easily.
+			</p>
+			<sidebyside widths="60% 40%">
+				<p>
+					So, if we want field at one of these points, say <m>P_2</m>, we will imagine a <em> spherical Gaussian surface</em> <m>S_2</m> that contains point  <m>P_2</m>. By spherical symmetry we already know the direction of <m>\vec E_2</m> and the magnitude will depend on charges inside the Gaussian closing surface, which we denote by <m> q_\text{enc,2}</m>. This surface encloses only the charge on the inner shell.
+
+				</p>
+				<image source="./images/gausss-law/e-field-two-thin-spherical-shells-gs-2.png" width="50%"/>
+			</sidebyside>
+			<p>
+				<md>
+					<mrow> E_2 \amp = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q_\text{enc,2}}{r_2^2}.</mrow>
+					<mrow> \amp = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{4\pi R_1^2\sigma_1}{r_2^2}.</mrow>
+				</md>
+			</p>
+			<p>
+				Same arguments can be applied at all three points. Let us denote the distances to the field points from the common center be <m>r_1</m>, <m>r_2</m>, and <m>r_3</m>. So, the only thing we need to work out the enclesed charges in each case.
+				<md>
+					<mrow> q_\text{enc,1} \amp = 0, </mrow>
+					<mrow> q_\text{enc,2} \amp = 4\pi R_1^2\sigma_1, </mrow>
+					<mrow> q_\text{enc,3} \amp = 4\pi R_1^2\sigma_1 + 4\pi R_2^2(-\sigma_2) = 0.</mrow>
+				</md>
+				Therefore, electric fields are  the stated points are
+				<md>
+					<mrow> E_1 \amp = 0, </mrow>
+					<mrow> E_2 \amp =  \dfrac{1}{4\pi\epsilon_0}\, \dfrac{4\pi R_1^2\sigma_1}{r_2^2}, </mrow>
+					<mrow> E_3 \amp = 0.</mrow>
+				</md>
+				That is, the only place we have non-zero electric field is in the space between the two shells. Since the inner shell is positive and outer shell negative, the electric field is radially directed from each inner shell point to a corresponding point on the outer shell. 
+			</p>
+		
+		</solution>
+		<solution><title> (b) </title>
+			<p>
+				The following figure shows elelectric field lines for this system.
+				<image source="./images/gausss-law/e-field-two-thin-spherical-shells-lines.png" width="50%"/>
+			</p>
+		</solution>
+
+	</exercise>
+
+	<exercise xml:id="ex-Flux-of-Electric-Field-of-a-Spherical-Charge-Distribution-Through-Various-Surface"><title>Flux of Electric Field of a Spherical Charge Distribution Through Various Surface and Meaning of Zero Flux </title>
+		<statement>
+			<p>
+				A non-conducting sphere of radius <m>3\text{ cm}</m> has a uniform charge density of <m>2\text{ nC/m}^3</m>. 
+				<ol label="(a)">
+					<li> Find the total charge contained in the sphere.</li>
+					<li> Find charge contained within <m>2\text{ cm}</m> of its center. </li>
+					<li> Find electric flux through a spherical surface of radius <m>4\text{ cm}</m> centered at the center of the charged sphere.</li>
+					<li> Find electric flux through a spherical surface of radius <m>2\text{ cm}</m> centered at the center of the charged sphere.</li>
+					<li> Find electric flux through a spherical surface of radius <m>2\text{ cm}</m> centered about a point <m>6\text{ cm}</m> from the center of the charged sphere.</li>
+					<li> In the last part, you should get an answer 0. Does this mean that  thre are no electric field at the location of the sphere centered about <m>6\text{ cm}</m>? Explain. </li>
+				</ol>
+
+				
+			</p>
+
+		</statement>
+		<hint> <p> Draw figures to guid your calculations. For electric flux, you do not need to know electric field; there is another way through Gauss's law. </p> </hint>
+		<answer> <p> (a) <m>2.26\times 10^{-13}\ \text{C}</m>, (b)  <m>6.70\times 10^{-14}\ \text{C}</m>, (c)  <m>2.56\times 10^{-2}\  \text{N.m}^2/\text{C}</m>, (d)  <m>7.57\times 10^{-3}\  \text{N.m}^2/\text{C}</m>, (e) <m>0</m>, (f) No, flux zero does not mean zero electric field.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a)	Since uniformly charged, the density of charges <m>\rho</m> is constant. Therefore, <m>q_{\text{tot}} = \rho\: V</m>, where <m>V</m> is the volume of the sphere containing charges.
+				<md>
+					<mrow> q_{\text{tot}} \amp = \rho\: V</mrow>
+					<mrow> \amp  = \left( 2\times 10^{-9}\right) \times \left( \frac{4}{3}\pi\ 0.03^3 \right) = 2.26\times 10^{-13}\: \text{C}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b) The charge contained will be in the sphere with radius 2 cm.  Hence, we just scale the results of (a).
+				<md>
+					<mrow> \amp = q_{\text{tot}}\times \left(\frac{2\:\text{cm}}{3\:\text{cm}} \right)^3</mrow>
+					<mrow> \amp = 6.70\times 10^{-14}\: \text{C}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(c)</title>
+			<p>
+				(c)	The flux will be given by Gauss's law.  All charges in the sphere are enclosed by the surface at 4 cm radius.
+				<md>
+					<mrow> \Phi \amp = \frac{q_{\text{enc}}}{\epsilon_0} </mrow>
+					<mrow> \amp = \frac{2.26\times 10^{-13}\:\text{C}}{8.85\times10^{-12}\:\text{C}^2/\text{N.m}^2}</mrow>
+					<mrow> \amp = 2.56\times 10^{-2}\: \text{N.m}^2/\text{C}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(d)</title>
+			<p>	
+				(d)	Here only the charges inside the 2-cm radius from the center of the sphere matters.  Hence,
+				<md>
+					<mrow> \Phi \amp = \frac{q_{\text{enc}}}{\epsilon_0}</mrow> 
+					<mrow> \amp = \frac{6.70\times 10^{-14}\:\text{C}}{8.85\times10^{-12}\:\text{C}^2/\text{N.m}^2} </mrow>
+					<mrow> \amp = 7.57\times 10^{-3}\: \text{N.m}^2/\text{C}</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(e)</title>
+			<p> 
+				(e)	The closed surface through which flux is being calculated does not enclose any charges.  Hence,  <m>\Phi = 0</m>.
+
+			</p>
+		</solution>
+
+		<solution> <title>(f)</title>
+			<p> 
+				(f) No, zero electric flux does not mean zero electric field; all it means that the number of electric field lines that cross the surface in one direction are exactly equal to the number of lines cross the surface in the opposite direction. Here, since the surface is closed and is outside of any charges, every electric field line that enters in the region bounded by the surface, must come out at some point, since the lines must continue till they land on some other charge, which are all outside. 
+
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Electric-Flux-of-Charges-on-a-Copper-Spherical-Ball"><title> Electric Flux of Charges on a Copper Spherical Ball </title>
+		<statement>
+			<p>
+				Some charge are places on a copper spherical ball of radius <m> 2\text{ cm}</m> where excess charges settle on the surface of the ball and distribute uniformly.  Suppose we know that electric flux through a spherical surface of radius <m> 30\text{ cm}</m> concentric with the spherical ball is <m>-3\times 10^4 \text{ N.m}^2/\text{C}</m>. 
+				<ol label="(a)">
+					<li> What is the electric flux through a <m>5\text{-cm}</m> radius spherical surface concentric with the copper ball? </li>
+					<li> What is the electric flux through a spherical surface of radius <m>1</m> cm concentric with the copper ball?  </li>
+					<li> What is the electric flux through a cube of side <m> 1\text{ cm}</m> side which has the center as the center of the ball?</li>
+					<li> What is the electric flux through a cube of side <m> 4\text{ cm}</m> that has the same center as the center of the ball.</li>
+(				</ol>
+			</p>
+
+		</statement>
+		<hint> <p>  Use Gauss's law. Make sure you understand, whether charges are enclosed within the Gaussian surface or not. </p> </hint>
+		<answer> <p>  (a)  <m>-3.0\times 10^4\ \text{N.m}^2/\text{C}</m>, (b) <m>0</m>, (c) <m> 0</m>, (d) <m>-3.0\times 10^4\ \text{N.m}^2/\text{C}</m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a) The 5-cm spherical surface about the 2-cm spherical ball encloses same amount of charge as the 30-cm spherical surface about the same ball.  Hence, <m>\Phi = - 3\times 10^{4}\text{ N.m}^2/\text{C}</m>.
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>	
+				(b) <m>\Phi = 0</m> since no charge is enclosed within the spherical surface with radius <m>1\text{ cm}</m>.
+			</p>
+		</solution>
+		<solution> <title> (c) </title>
+			<p>	
+				(c) <m>\Phi = 0</m> since no charge is enclosed within the cubic surface with side <m>1\text{ cm}</m>.
+			</p>
+		</solution>
+		<solution> <title> (d) </title>
+			<p>	
+				(d)	The cube of side 4 cm   will enclose the same amount of charge as the 30-cm spherical surface about the same ball.  Hence, <m>\Phi = - 3\times 10^{4}\text{ N.m}^2/\text{C}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electric-Flux-and-Electric-Field-of-a-Charged-Copper-Ball-Surrounded-by-a-Gold-Spherical-Shell"><title> Electric Flux and Electric Field of a Charged Copper Ball Surrounded by a Gold Spherical Shell </title>
+		<statement>
+			<sidebyside widths="70% 30%">
+				<p>
+					A small copper ball of radius <m> 1.0\text{ cm} </m>  with <m> +1.5\text{ nC}</m> on its surface is surrounded by an uncharged gold spherical shell with inner radius <m>2.0\text{ cm}</m> and outer radius <m>3.0\text{ cm}</m>. Due to induction, the inner surface of the gold shell develops a charge  <m> -1.5\text{ nC}</m> , uniformly spread out and the outer surface develops a charge <m> +1.5\text{ nC}</m>, also uniformly spread over the surface. 
+				</p>
+
+				<image source="./images/gausss-law/charged-copper-ball-inside-cavity-of-gold-shell.png" width="50%"/>
+			</sidebyside>
+
+			<p> 
+				<ol label="(a)">
+					<li> 
+						Determine the electric flux through the spherical surfaces of radii: 
+						 	(i) <m>0.5\text{ cm}</m>,  
+							(ii) <m>1.5\text{ cm}</m>,  
+							(iii) <m>2.5\text{ cm}</m>,  and  
+							(iv) <m>4.0\text{ cm}</m> concentric with the gold shell. 
+					</li>
+
+					<li> 
+						Find the magnitude of electric field at three points 
+
+						(i) <m>P_1</m> at a distance <m>0.5\text{ cm}</m> from the common center,
+						(ii) <m>P_2</m> at a distance <m>1.5\text{ cm}</m> from the common center, 
+						(iii) <m>P_3</m> at a distance <m>2.5\text{ cm}</m> from the common center,
+						(iv) <m>P_4</m> at a distance <m>4.0\text{ cm}</m> from the common center.  
+					</li>
+
+					<li>
+						Draw electric field lines. 
+					</li>
+				</ol>
+			</p>
+			
+
+		</statement>
+
+		<hint> <title> (a)</title> <p>  For flux through closed surface, we can use Gauss's law, and get it from information on charge. </p> </hint>
+		<hint> <title> (b)</title> <p>  Use Gauss's law. </p> </hint>
+		<hint> <title> (c)</title> <p>  Use the electric field you worked out. </p> </hint>
+
+		<answer> <p> (a) (i) <m>0</m>, (ii) <m> 170\text{ N.m}^2\text{/C}</m>, (iii) <m>0</m>, (iv) <m> 170\text{ N.m}^2\text{/C}</m>,
+			(b) (i) <m>0</m>, (ii) <m>60,125\text{ N/C}</m>, (iii) <m>0</m>, (iv) <m> 8,455\text{ N/C}</m>.
+		  </p> </answer>
+
+		<solution><title> (a) </title> 
+			<p>
+				Let <m>r</m> denote distance of a point from the common center.
+			</p>
+			<p>
+				(i) No charges are inside the volume enclosed by the closed surface at <m>r=0.5\text{ cm}</m>. Therefore, by Gauss's law, flux will be zero.
+			</p>
+			<p>
+				(ii) Enclosed charge is equal to all the charges on the copper ball. That means, <m>q_\text{enc} = +1.5\text{ nC}</m>.  Therefore, by Gauss's law, flux will be
+				<me>
+					\Phi = \dfrac{q_\text{enc}}{\epsilon_0} = 170\text{ N.m}^2\text{/C}.
+				</me>
+			</p>
+
+			<p>
+				(iii) Enclosed charge is equal to sum of the charges on the copper ball and the charges on the inner surface of the gold shell. That means, <m>q_\text{enc} = +1.5\text{ nC} - 1.5\text{ nC} = 0</m>.  Therefore, by Gauss's law, flux will be zero.
+			</p>
+
+			<p>
+				(iv) Enclosed charge is equal to sum of the charges on the copper ball, the charges on the inner surface of the gold shell, and the charges on the outer surface of the gold shell. That means, <m>q_\text{enc} = +1.5\text{ nC} - 1.5\text{ nC} + 1.5\text{ nC} = + 1.5\text{ nC}</m>.  Therefore, by Gauss's law, flux will be 
+				<me>
+					\Phi =  170\text{ N.m}^2\text{/C}.
+				</me>
+			</p>
+
+
+		</solution>
+
+		<solution><title> (b) </title> 
+			<p>
+				Let <m>r</m> denote the distance from center. We note that charge distribution on the three locations maintain the spherical symmetry of the charge distribution. Therefore, all the Gaussian surfaces will be sperical with center same as the center of the charge distribution.
+			</p>
+
+			<p>
+				(i) We use a spherical Gaussian surface of radius <m> r_1 = 0.5\text{ cm}</m>.  From the spherical symmetry, Gauss's law for this surface gives
+				<me>
+					4\pi r_1^2 E_1 = \dfrac{q_\text{end}}{\epsilon_0} = 0.
+				</me>
+				Therefore,
+				<me>
+					E_1 = 0.
+				</me>
+			</p>
+			<p>
+				(ii) Applying Gauss's law to a spherical Gaussian surface through the point under consideration gives
+				<me>
+					4\pi r_2^2 E_2 = 170\text{ N.m}^2\text{/C}.
+				</me>
+				With <m>r_2 = 1.5\text{ cm}</m> we get
+				<me>
+					E_2 = 60,125\text{ N/C}.
+				</me>				
+			</p>
+
+			<p>
+				(iii) Same logic as in (b)(i) we get <m> E_3 = 0</m>.
+			</p>
+
+			<p>
+				(iv) Same logic as in (b)(ii) will lead to a simlar formula in which distance will now be <m>4.0\text{ cm}</m>.
+				<me>
+					E_4 = \dfrac{170\text{ N.m}^2\text{/C}}{ 4\pi 0.04^2} = 8455\text{ N/C}.
+
+				</me>
+
+			</p>
+
+		</solution>
+
+		<solution><title> (c) </title> 
+			<p>
+				<image source="./images/gausss-law/charged-copper-ball-inside-cavity-of-gold-shell-e-lines.png" width="80%"/>
+			</p>
+
+		</solution>
+	
+
+	</exercise> 
+
+ 
+ 	<exercise xml:id="ex-Electric-Field-of-a-Non-Uniform-Charge-Distribution-of-Spherical-Symmetry"><title>Electric Field of a Non-Uniform Charge Distribution of Spherical Symmetry </title>
+
+		<statement>
+			<p>
+				A 3D printer is used to deposit charges on a nonconducting sphere. The sphere grows from a radius <m>R_1</m> to a radius <m>R_2</m> such that the charge density varies as
+				<me>
+					\rho = \rho_0 \frac{a}{r}, \ \ R_1\le r\le R_2,
+				</me>
+				where <m>\rho_0</m> and <m>a</m> are some constants.  
+				Find electric field at (a) a point outside the sphere, and (b) a point inside the spherical shell grown by the printer. 
+
+			</p>
+		</statement>
+		<hint><p>(a) and (b):  You will need to integrate to get enclosed charge.</p></hint>
+		<answer><p>
+			(a) <m>\frac{\rho_0 a}{2\epsilon_0}  \frac{R_2^2 - R_1^2}{r_\text{out}^2} </m>,
+			(b) <m> \frac{\rho_0}{2\epsilon_0}\left( 1 - \frac{R_1^2}{r_\text{in}^2} \right) </m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a) Because of spherical symmetry, the direction of the field will be radial. Since field point P is outside the distribution, Gaussian surface encloses all charges and from Gauss's law we get the following for magnitude <m>E_\text{out}</m>.
+				<me>
+					E_\text{out} \times 4\pi r_\text{out}^2 = \frac{q_\text{total}}{\epsilon_0}.
+				</me>
+				To obtain the total charge we just need the <m>r</m> integral from <m>r=R_1</m> to <m>r=R_2</m>, the radius of the distribution.
+				<md>
+					<mrow>q_\text{total} \amp = \int_{R_1}^{R_2} \rho\ 4\pi r^2 dr </mrow>
+					<mrow> \amp = 4\pi \rho_0 a \int_{R_1}^{R_2} r dr</mrow>
+					<mrow> \amp = 2\pi \rho_0 a \left( R_2^2 - R_1^2\right) . </mrow>
+				</md>
+				Therefore, electric field will be
+				<me>
+					E_\text{out} = \frac{\rho_0 a}{2\epsilon_0}  \frac{R_2^2 - R_1^2}{r_\text{out}^2}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)
+				For a point inside the sphere, Gaussian surface will not include all charges, just the charges from <m>r=R_1</m> upto the Gaussian surface at <m>r=r_\text{in}</m>. Let's denote <m>r=r_\text{in}</m> for the radius of this surface. We get,
+				<me>
+					E_\text{in} \times 4\pi r_\text{in}^2 = \frac{q_\text{enc}}{\epsilon_0},
+				</me>
+				with <m>q_\text{enc}</m>
+				<me>
+					q_\text{enc}  = \int_{R_1}^{r_\text{in}} \rho\ 4\pi r^2 dr.
+				</me>
+				This gives
+				<me>
+					q_\text{enc}  = 2\pi\rho_0 a \left( r_\text{in}^2 - R_1^2 \right).
+				</me>
+				Therefore,
+				<me>
+					E_\text{in} = \frac{\rho_0}{2\epsilon_0}\left( 1 - \frac{R_1^2}{r_\text{in}^2} \right).
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,273 @@
+<section xml:id="section-Electric-Potential-of-a-Dipole"><title> Electric Potential of a Dipole</title>
+	<introduction>
+		<p>
+			Electric field of a dipole far away from the dipole is called <term>dipole field</term> and the corresponding electric potential is called <term>dipole potential</term>. 
+		</p>
+		<sidebyside widths="65% 5% 30%">
+			<p>
+				Consider a dipole of moment <m>\vec p</m> as in <xref ref="fig-dipole-field-setup"/>. What will be potential at a far away point P from it? We will show below that the electric potential of a dipole at a point far from the dipole, to be denoted by <m>\phi_\text{dip}</m> is
+				<men xml:id="eq-dipole-potential">
+					\phi = \frac{1}{4\pi\epsilon_0}\,\frac{p\,\cos\theta}{r^2}.
+				</men> 
+			</p>
+			<p></p>
+			<figure xml:id="fig-dipole-field-setup">
+				<caption>
+				</caption>
+				<image source="./images/dielectrics/dipole-field-setup.png" width="50%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			You may recall that potential from a charge dropped as <m>\frac{1}{r}</m> when you moved away from the charge. The dipole potential, in contrast, drops much faster as <m>\frac{1}{r^2}</m>. So, in the case of a dipole, if you had <m>12\text{ V}</m> at <m>r=1\text{ mm}</m>, you would have <m>0.12\text{ V}</m> at a distance <m>r=10\text{ mm}</m> if you went in the same direction.
+		</p>						
+		<p>
+			We find electric field by computing the gradient of potential and multiplying the result by <m>-1</m>. It is easier to do this calculation in spherical coordinates with the following result.
+			<men>
+				\vec E_\text{dip} = -\vec \nabla \phi_\text{dip} = \frac{1}{4\pi\epsilon_0}\;\frac{p}{r^3}\;\left(2\cos\theta\,\hat u_r + \sin\theta\,\hat u_\theta \right).
+			</men>
+			It is often best to write this in coordinate-free form by absorbing the angle through the use of dot product.
+			<men xml:id="eq-dipole-field-coordinate-free">
+				\vec E_\text{dip} = \frac{1}{4\pi\epsilon_0}\;\frac{1}{r^3}\;\left[ 3\,(\vec p\cdot\hat u_r)\, \hat u_r - \vec p \right].
+			</men>
+		</p>
+	</introduction>
+
+	<subsection><title>Derivation of Dipole Potential</title>
+		<sidebyside widths="65% 5% 30%">
+			<p>
+				Consider two equal and opposite charges <m>\pm q</m> separated by a distance <m>d</m> as shown in <xref ref="fig-dipole-potential-derivation-setup"/>. We wish to find formula for electric potential at point P which is <alert>far away</alert> from the dipole. We will define the meaning of far away as being
+				<men xml:id="eq-meaning-of-far-away">
+					r \gg d,\ \ \text{ or equivalently, }\ \ \frac{d}{r}\ll 1.
+				</men>
+			</p>
+			<p></p>
+			<figure xml:id="fig-dipole-potential-derivation-setup">
+				<caption>
+				</caption>
+				<image source="./images/dielectrics/dipole-potential-derivation-setup.png" width="50%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Using the superposition of potentials of each charge gives us
+			<men xml:id="eq-dipole-potential-exact">
+				\phi_P = \frac{q}{4\pi\epsilon_0}\left(\dfrac{1}{r_{+}} - \dfrac{1}{r_{-}} \right).
+			</men>
+			Now, we can use law of cosines in the upper triangle in the figure to get
+			<md>
+				<mrow> r_{+}^2 \amp = r^2 + (d/2)^2 - r d \cos\theta. </mrow>
+			</md>
+			To apply the condition of far away given in <xref ref="eq-meaning-of-far-away"/>, we pull <m>r^2</m> out and express right side as 
+			<md>
+				<mrow> r_{+}^2 \amp = r^2 \left[ 1 - \frac{d}{r} \cos\theta + \frac{1}{4}\;\left(\frac{d}{r}\right)^2 \right] . </mrow>
+			</md>
+			We see clearly that the terms on the right side are in powers of <m>d/r</m>, which is expected to be get small in the far away region. Let us write this as one symbol 
+			<me>
+				\epsilon = \frac{d}{r}.
+			</me>
+			We want <m>1/r_{+}</m> when <m>\epsilon \ll 1 </m>. Therefore, 
+			<md>
+				<mrow> \dfrac{1}{r_{+}} \amp = \dfrac{1}{r} \left[ 1 - \epsilon \cos\theta + \frac{1}{4}\;\epsilon^2 \right]^{-1/2}  </mrow>
+				<mrow>  \amp = \dfrac{1}{r} \left[ 1 + \frac{1}{2} \epsilon \cos\theta - \frac{1}{8}\;\epsilon^2  +\frac{3}{8}\;\epsilon^2 \cos^2\theta +\cdots \right]  </mrow>
+				<mrow>  \amp = \dfrac{1}{r} + \dfrac{1}{2}\;\dfrac{d}{r^2}\;\cos\theta +\cdots   </mrow>
+			</md>
+			You can carry out similar steps using the lower triangle in the figure to get
+			<me>
+				\dfrac{1}{r_{-}} =  \dfrac{1}{r} - \dfrac{1}{2}\;\dfrac{d}{r^2}\;\cos\theta +\cdots 
+			</me>
+			Using expressions for <m>1/r_+</m> and <m>1/r_-</m> in Eq. <xref ref="eq-dipole-potential-exact"/> we get
+			<me>
+				\phi_P = \frac{q}{4\pi\epsilon_0}\left( \dfrac{d}{r^2}\;\cos\theta + \cdots \right),
+			</me>
+			where <m>\cdots</m> are terms with higher powers of <m>d/r</m>. We drop those terms since their importance decreases very rapidly compared to the leading term. We also write <m>qd</m> as <m>p</m> giving us the final expression for the dipole potential.
+			<men xml:id="eq-dipole-potential-approximate">
+				\phi_\text{dip} = \frac{1}{4\pi\epsilon_0} \dfrac{p\cos\theta}{r^2}.
+			</men>						
+
+		</p>
+
+
+	</subsection>
+
+
+	<subsection><title>(Calculus) Derivation of Dipole Electric Field</title>
+		<p>
+			It is possible to carry out approximation scheme presented for the dipole potential - start from the exact field using the field of the two point charges and expand in powers of <m>d/r</m>. However, once we have the potential, it is much easier to just take its gradient to get the field.
+		</p>
+		<p>
+			Since potential in Eq. <xref ref="eq-dipole-potential-approximate"/> is in spherical coordinates, we express gradient in spherical coordinates.
+			<me>
+				\vec \nabla = \hat u_r \frac{\partial }{\partial r} + \hat u_\theta \frac{1}{r} \frac{\partial }{\partial \theta}+ \hat u_\phi \frac{1}{r} \frac{\partial }{\partial \phi}.
+			</me>
+			Here <m>\phi</m> is the azimuthal angle, and not the potential. Since potential has no azimuthal angle dependence, we need only the other two derivatives.
+			<md>
+				<mrow> \amp \frac{\partial \phi_\text{dip}}{\partial r}  =  \frac{1}{4\pi\epsilon_0} \dfrac{p\cos\theta}{r^3}\; (-2).  </mrow>
+				<mrow> \amp \frac{\partial \phi_\text{dip}}{\partial \theta}  =  \frac{1}{4\pi\epsilon_0} \dfrac{p\sin\theta}{r^2}\; (-1).  </mrow>
+			</md>
+			Therefore, dipole field will be
+			<me>
+				\vec E_\text{dip} = -\vec \nabla \phi_\text{dip} = \frac{1}{4\pi\epsilon_0}\;\frac{p}{r^3}\;\left(2\cos\theta\,\hat u_r + \sin\theta\,\hat u_\theta \right).
+			</me>
+
+		</p>
+
+	</subsection>
+
+	<exercise xml:id="ex-Force-Between-an-Electric-Dipole-and-a-Point-Charge"><title>Force Between an Electric Dipole and a Point Charge</title>
+
+		<statement>
+			<p>
+				A point charge <m>Q</m> is at a distance <m>D</m> from a dipole of dipole monent <m>p</m>. The displacement vector of the charge <m>Q</m> makes an angle <m>\theta</m> with respect to the direction of the dipole moment vector <m>\vec p</m>. (a) Find the electric force on <m>Q</m>. (b) Find the electric potential energy of <m>Q</m>.
+			</p>
+		</statement>
+		<hint><p> (a)Use <m>\vec F = Q\vec E</m>. (b) Use <m>U=Q\phi</m>. </p></hint>
+		<answer><p>
+			(a) <m>\frac{1}{4\pi\epsilon_0}\;\frac{Qp}{D^3}\;\left(2\cos\theta\,\hat u_r + \sin\theta\,\hat u_\theta \right)</m>, (b) <m>\frac{1}{4\pi\epsilon_0} \dfrac{Qp\cos\theta}{D^2}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				(a) The force on <m>Q</m> will be the product of <m>Q</m> and electric field at <m>Q</m>. The electric field at <m>Q</m> is by the dipole. Therefore, the force on <m>Q</m> will be
+				<me>
+					\vec F_{\text{on }Q} = \frac{1}{4\pi\epsilon_0}\;\frac{Qp}{D^3}\;\left(2\cos\theta\,\hat u_r + \sin\theta\,\hat u_\theta \right).
+				</me>
+			</p>
+			<p>
+				(b) The potential energy of <m>Q</m> will be product of <m>Q</m> and potential at <m>Q</m> by the dipole. Therefore,
+				<me>
+					U_{\text{of }Q} = \frac{1}{4\pi\epsilon_0} \dfrac{Qp\cos\theta}{D^2}.
+				</me>				
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Force-on-a-Point-Charge-from-an-Electric-Dipole"><title>Force on a Point Charge from an Electric Dipole</title>
+
+		<statement>
+			<p>
+				A tiny electric dipole of moment <m> 5.0\times 10^{-15}\text{ Cm}</m> is located at the origin and points in the positive <m>z</m> axis direction. Suppose this dipole is fixed there. 
+			</p>
+			<p>
+				A particle of charge <m>-4.0\times 10^{-15}\text{ C}</m> and mass <m>2.0\times 10^{-18}\text{ kg}</m> is released from rest on the positive <m>z</m> axis at <m>z=3.0\text{ mm}</m>.
+			</p>
+			<p>
+				(a) What is the force on the charge immediately after it is released?
+			</p>
+			<p>
+				(b) The negativel partile is seen to move towards the dipole. What is the speed of the particle when it reaches <m>z=1\text{ mm}</m>?
+			</p>
+		</statement>
+		<hint><p>
+			(a) Use <m>\vec F = Q\vec E</m>, (b) Use conservation of energy.
+		</p></hint>
+		<answer><p>
+			(a) <m>-1.33\times 10^{-11}\text{ N}\ \hat u_z</m>,
+			(b) <m>400\text{ m/s}</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a) The electric field by the dipole at the location of the particle will be given by setting <m>\theta=0</m> in the formula given above.
+				<md>
+					<mrow> \vec E_\text{dip} \amp = \frac{1}{4\pi\epsilon_0}\;\frac{p}{r^3}\;\left(2\cos\theta\,\hat u_r + \sin\theta\,\hat u_\theta \right)</mrow>
+					<mrow>   \amp = \frac{1}{2\pi\epsilon_0}\;\frac{p}{z^3}\;\hat u_z = \frac{10^4}{3}\text{ N/C}\ \hat u_z. </mrow>
+				</md>
+				Therefore, force will be
+				<md>
+					<mrow> \vec F \amp = -4.0\times 10^{-15}\text{ C} \times \frac{10^4}{3}\text{ N/C}\ \hat u_z </mrow>
+					<mrow> \amp = -1.33\times 10^{-11}\text{ N}\ \hat u_z.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b) Note that acceleration is not constant, so we cannot use constant acceleration formulas here. But, if we use conservation of energy, we can get speed we seek. With zero kinetic energy at the start, we get
+				<me>
+					Q\phi_\text{start} = \frac{1}{2}mv^2 +  Q\phi_\text{end}.
+				</me>
+				Therefore, we get
+				<md>
+					<mrow> v^2 \amp = \frac{2Q}{m} \left( \phi_\text{start} - \phi_\text{end} \right)</mrow>
+					<mrow> \amp =\frac{p}{4\pi\epsilon_0}  \frac{2Q}{m}  \left( \frac{1}{z_1^2} - \frac{1}{z_2^2}  \right) </mrow>
+					<mrow> \amp = 9\times 10^9 \times 5.0\times 10^{-15} \times \frac{2 \times -4.0\times 10^{-15}}{2.0\times 10^{-18}}\times</mrow>
+					<mrow> \amp\ \ \ \ \ \ \ \ \ \   \left( \frac{1}{0.003^2} - \frac{1}{0.001^2}  \right) </mrow>
+					<mrow> \amp =  160,000\text{ m}^2/\text{s}^2.</mrow>
+				</md>
+				This gives
+				<m>
+					v = 400\text{ m/s}.
+				</m>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Torque-on-a-Dipole-from-Field-of-another-Electric-Dipole"><title>Torque on a Dipole from Field of another Electric Dipole</title>
+
+		<statement>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					<xref ref="fig-ex-torque-on-dipole-from-another"/> shows two dipoles. (a) Find the torque on dipole <m>p_2</m>. (b) Find the torque on dipole <m>p_1</m>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-torque-on-dipole-from-another">
+					<caption>
+					</caption>
+					<image source="./images/dielectrics/ex-torque-on-dipole-from-another.png" width="50%"/>
+					
+				</figure>
+			</sidebyside>
+
+		</statement>
+		<hint><p>(a) First find the electric field of <m>p_1</m> and then use <m>\vec p_2\times \vec E_1</m>. (b) Repeat for field of <m>p_2</m>. The coordinate-free form of electric field of a dipole will be useful. </p></hint>
+		<answer><p>
+			(a) <m>\frac{1}{4\pi\epsilon_0}\, \frac{p_1 p_2\sin\theta}{a^3}\,\hat u_y</m>, (b) <m>\frac{1}{4\pi\epsilon_0}\, \frac{2p_1 p_2\sin\theta}{a^3}\,\hat u_y</m>.
+
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>(a)
+				The torque on <m>p_2</m> will be <m>\vec\tau = \vec p_2 \times \vec E_1</m>, where <m>\vec E_1</m> is the electric field of <m>p_1</m> at the location of <m>p_2</m>. 
+			</p>
+
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					Using the coordinates in <xref ref="fig-ex-torque-on-dipole-from-another-sol-a"/>, the electric field of <m>\vec p_1=p_1 \hat u_z</m> at location of <m>p_2</m> at <m>x=a,y=0,z=0</m> will be
+					<me>
+						\vec E_1 = -\frac{1}{4\pi\epsilon_0}\, \frac{p_1}{a^3}\,\hat u_z.
+					</me>
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-torque-on-dipole-from-another-sol-a">
+					<caption>
+					</caption>
+					<image source="./images/dielectrics/ex-torque-on-dipole-from-another-sol-a.png" width="50%"/>
+					
+				</figure>
+			</sidebyside>
+			<p>
+				You can easily get this answer in you set <m>\hat u_r=\hat u_x</m> in Eq. <xref ref="eq-dipole-field-coordinate-free"/>. 
+				Since <m>\hat p_2 = p_2\sin\theta\, \hat u_x + p_2\cos\theta\, \hat u_z</m>, for torque on <m>p_2</m> we get
+				<me>
+					\vec \tau_2 = \frac{1}{4\pi\epsilon_0}\, \frac{p_1 p_2\sin\theta}{a^3}\,\hat u_y.
+				</me>
+				This will cause angular acceleration of the dipole about positive <m>y</m> axis.
+			</p>
+
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b) We use the same figure as in (a). To get the electric field of <m>\vec p_2</m>, we note that <m>r=a</m>, same as (a), but now <m>\vec p_2 = -p_2\,\sin\theta\,\hat u_x + p_2\,\cos\theta\, \hat u_z</m>. Using this in the coordinate-free form of electric field, given in Eq. <xref ref="eq-dipole-field-coordinate-free"/>, we obtain electric field of <m>p_2</m> at the location of <m>p_1</m>.
+				<md>
+					<mrow> \vec E_2 \amp = \frac{1}{4\pi\epsilon_0}\; \frac{1}{a^3} \left( [\vec p_2\cdot (-\hat u_x)]\,(-\hat u_x)  - \vec p_2\right)</mrow>
+					<mrow> \amp = \frac{1}{4\pi\epsilon_0}\; \frac{1}{a^3} \left( 2\sin\theta\,\hat u_x  - \cos\theta\,\hat u_z \right).</mrow>
+				</md>
+				Now, with <m>\vec p_1 = p_1\hat u_z</m>, we get the torque <m>\vec p_1\times \vec E_2</m> to be
+				<me>
+					\vec \tau_1 = \frac{1}{4\pi\epsilon_0}\, \frac{2p_1 p_2\sin\theta}{a^3}\,\hat u_y.
+				</me>				
+			</p>
+		</solution>
+
+	</exercise>
+
+
+
+
+</section>

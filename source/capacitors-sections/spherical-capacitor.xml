@@ -1,0 +1,120 @@
+<section xml:id="Spherical-Capacitor"><title> Spherical Capacitor </title>
+	<introduction>
+		<p>
+			Two concetric metal spherical shells make up a spherical capacitor. 
+		</p>
+		<sidebyside widths="70% 5% 25%">
+			<p>
+				The capacitance of a spherical capacitor with radii <m>R_1 \lt R_2</m> of shells without anything between the plates is
+	 			<men xml:id="eq-spherical-capacitor-capacitance">
+					C = 4\pi\epsilon_0\, \left( \dfrac{1}{R_1} - \dfrac{1}{R_2} \right)^{-1}.
+				</men>
+			</p>
+			<p> </p>
+			<image source="./images/capacitors/spherical-capacitor.png"/>
+		</sidebyside>
+		<p>
+			We have seen before that if we have a material of dielectric constant <m>\epsilon_r</m> filling the space between plates, the capacitance  in <xref ref="eq-spherical-capacitor-capacitance"/> will increase by a factor of the dielectric constant.
+			<me>
+				C = 4\pi\epsilon_0\epsilon_r\, \left( \dfrac{1}{R_1} - \dfrac{1}{R_2} \right)^{-1}.
+			</me>
+		</p>
+		<p>
+			To prove the formula given in Eq. <xref ref="eq-spherical-capacitor-capacitance"/>, we place positive <m>+Q</m> on the inner shell and <m>-Q</m> on the outer shell. We will find potential difference <m>V</m> and then get <m>C</m> from <m>Q/V</m>. To find the potential between the plates, we integrate electric field from negative plate to positive plate. Therefore, we first find electric field between the plates.
+		</p>
+
+		<sidebyside widths="65% 5% 30%">
+			<p>
+				 Using Gauss's law for a spherical surface with radius <m>r</m> between plates, we get
+				<me>
+					E = \begin{cases}
+						0 \amp r \lt R_1\\
+						\dfrac{1}{4\pi\epsilon_0}\, \dfrac{Q}{r^2} \amp R_1 \lt r \lt R_2\\
+						0 \amp r \gt R_2
+						\end{cases}
+				</me>
+			</p>
+		
+			<p> </p>
+			<image source="./images/capacitors/spherical-capacitor-with-charges.png"/>
+		</sidebyside>
+		<p>
+
+			With zero of potential at <m>r=\infty</m>, potential difference can be shown by integrating <m>-\vec E\cdot d\vec r = -E dr</m> from <m>r=R_2</m> to <m>r=R_1</m>. If you are working through this book with a Calculus background you should do that integral. For others, I will just give the result.
+			<me>
+				V = \phi_+ - \phi_- = \dfrac{1}{4\pi\epsilon_0}\, \left( \dfrac{Q}{R_1} - \dfrac{Q}{R_2} \right).
+			</me>
+			From this we get the capacitance by finding <m>V/Q</m>.
+			<me>
+				C = 4\pi\epsilon_0\, \left( \dfrac{1}{R_1} - \dfrac{1}{R_2} \right)^{-1}.
+			</me>
+			It is interesting to note that you can get capacitance of a single spherical conductor from this formula by taking the radius of the outer shell to infinity, <m> R_2\rightarrow \infty</m>. Since we will have only one sphere, let us denote its radius by <m>R</m>.
+			<me>
+				C_\text{single sphere} = 4\pi\epsilon_0\, R.
+			</me>			
+
+		</p>
+	</introduction>
+
+
+	<exercise xml:id="ex-Capacitance-of-a-Spherical-Capacitor"><title> Capacitance of a Spherical Capacitor </title>
+		<statement>
+			<p>
+				A spherical capacitor has following radii <m>R_1=1\text{ cm}</m> and <m>R_2=2\text{ cm}</m>. There is nothing in the space between the two conductors. (a) What is its capacitance? (b) What will be the capacitor if the space between the two shells is filled with mica of dielectric constant <m>\epsilon_r = 7.0</m>?
+			</p>
+
+		</statement>
+		<hint> <p>  Use formula given in this section. </p> </hint>
+		<answer> <p> (a) <m> 0.74\text{ pF}</m>, (b) <m> 5.2\text{ pF}.</m> </p> </answer>
+		<solution> <title> (a)</title>
+			<p> (a)
+				From the formula we evaluate 
+				<md>
+					<mrow> C \amp = 4\pi\epsilon_0\, \left( \dfrac{1}{R_1} - \dfrac{1}{R_\text{out}} \right)^{-1}</mrow>
+					<mrow> \amp = 4\pi\times 8.85\times 10^{-12}\, \left( \dfrac{1}{0.01} - \dfrac{1}{R_\text{0.02}} \right)^{-1}</mrow>
+					<mrow> \amp = 4\pi\times 8.85\times 10^{-12}\, \dfrac{0.01\times 0.02}{0.01+0.02} </mrow>
+					<mrow> \amp =  7.4\times 10^{-13}\text{ F}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title> (a)</title>
+			<p>
+				The capacitance with dielectric filling all of space between he plates is simple multiple of that with vacuum there.
+				<me>
+					C = 7 \times 7.4\times 10^{-13}\text{ F} = 5.2\text{ pF}.
+				</me> 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="eq-Voltage-of-a-Charged-Metal-Sphere"><title>Voltage of a Charged Metal Sphere</title>
+
+		<statement>
+			<p>
+				A copper ball of radius <m>2.5\text{ cm}</m> has <m>5.0\,\mu\text{C}</m> of charge. What is its potential with respect to infinity?
+			</p>
+		</statement>
+		<hint><p>You can use single sphere capacitor formula.</p></hint>
+		<answer><p><m>1.8\times 10^{6}\text{ V}</m>.</p></answer>
+		<solution>
+			<p>
+				Although we can solve this problem couple of different ways, I will just use the capacitance formula for a single sphere and the <m>Q=CV</m> for a capacitor.
+				<md>
+					<mrow> C \amp = 4\pi\epsilon_0\, R</mrow>
+					<mrow> \amp = \frac{0.025}{9\times 10^{9}} = 2.78\times 10^{-12}\text{ F}.</mrow>
+				</md>
+				Therefore,
+				<me>
+					V = \frac{Q}{C} = \frac{5.0\times 10^{-6}}{2.78\times 10^{-12}} = 1.8\times 10^{6}\text{ V}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+</section>

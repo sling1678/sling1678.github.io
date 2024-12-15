@@ -1,0 +1,140 @@
+<section xml:id="First-law-Calorimetry"> <title> Energy Conservation in Calorimetry</title>
+	<introduction>
+		<p>
+			What will happen if you drop a hot copper block in water at room temperature? Energy from hot copper block will flow into water and raise the temperature of water.  First law of thermodynamics helps us address this quantitatively and figure out the final state in this situation. Let us address this type of objects coming in thermal contact in more general terms first.
+		</p>
+
+		<p>
+			When two systems at different temperatures come in a thermal contact, energy is exchanged between them through heat and work.  The energy conservation says that if the two systems together are isolated from everything else, then their combined energy will remain the same, and any gain in the energy of one will be accompanied by equal loss of energy by the other.  Labeling the two systems as A and B we say that
+			<men xml:id="eq-calor-en-bal-1">
+				\Delta E_A = -\Delta E_B.
+			</men>
+		</p>
+		<p>
+			We classify the transfer of energy from one to the other as heat <m>Q</m> and work <m>W</m>. Let <m>Q_A</m>  be the amount of heat into A and <m>W_A</m> be the amount of work on A.  Then, the change of energy of A is
+			<me>
+				\Delta E_A = Q_A + W_A.
+			</me>
+			Similarly, suppose <m>Q_B</m>  be the amount of heat into B and <m>W_B</m> be the amount of work on B. Then,
+			<me>
+				\Delta E_B = Q_B + W_B.
+			</me>
+			Writing Eq. <xref ref="eq-calor-en-bal-1"/> in terms of heat and work we obtain
+			<men xml:id="eq-calor-en-bal-2">
+				Q_A + W_A = -\left(Q_B + W_B\right). 
+			</men>
+		</p>
+		<p>
+			Now, if <m>W_A</m> and <m> W_B</m> are negligible, then this balancing of energy leads to the balancing of heat into A and heat into B.
+			<men xml:id="eq-calor-en-bal-3">
+				Q_A \approx - Q_B. 
+			</men>
+
+			On the right side we have the negative of the heat into B, which is equal to the heat out of B.  Therefore, we can say that if neither of the two interacting systems do work, then the heat into one of the systems is equal to the heat out of the other system. We write this result in more colloquial language as
+			<men xml:id="eq-calometry-1">
+					|\text{Heat Lost}| \approx	|\text{Heat Gained}|\ \ \ \ (\text{since}, W_{\text{on either system}} \approx 0.)  
+			</men>
+			While working out the heat gained or the heat lost, you must pay particular attention to any phase change(s) and not only to the changes in the temperature.  At each phase change you will need to account for the heat of transformation involved in the change of phase.  I will illustrate these cautionary remarks in the examples below.
+		</p>
+		<p>
+
+			A more serious limitation in the use of Eq. <xref ref="eq-calometry-1"/> is that this equation is valid only when no work  is done by either system.  Therefore, we normally use Eq. <xref ref="eq-calometry-1"/> for experiments with either liquids or solids since they are somewhat incompressible.  This equation can also be applied to a system of gas in a rigid container to prevent the volume of the gas from changing.  If volume of the system changes much, then Eq. <xref ref="eq-calometry-1"/> cannot be used since energy conservation will not work if you take into account only the heat part, you must also include the amount in work.
+		</p>
+		<p>
+
+			A device using the principles of heat exchange in the absence of any work can be used to measure the heat released in a particular process.  Such a device is called a <term> calorimeter</term>, and the technique of measuring heat this way is called <term> calorimetry</term>.  We will illustrate the idea with examples.
+
+
+		</p>
+	<!-- 		<figure xml:id="fig-bomb-calorimeter">
+			<caption>
+				A  bomb calorimeter.  The container shown to the side is the bomb in which chemical to be tested is placed and ignited so that the thermal energy released in the explosion can be measured. Photo credit: Harbor1 via Wikimedia Commons. 
+			</caption>
+			<image source="./images/first-law-of-thermo/bomb-calorimeter.png" width="60%"/>
+		</figure> -->
+
+	</introduction>
+
+	<subsection> <title> Exercises </title>
+
+		<p>
+			<p> Follow the link: <xref ref="Calirometry"> Calirometry in Thermal Properties Chapter </xref>.
+			</p>
+		</p>
+
+	</subsection>
+
+
+	<!-- <exercise xml:id="ex-Mixing-Water-at-Different-Temperatures"><title> Mixing Water at Different Temperatures TODO </title>
+		<statement>
+			<p>
+				An insulated 20-kg copper container contains 5 kg water at <m>10^{\circ}</m>C and 1 atm pressure.  Two kg of water at <m>90^{\circ}</m>C is poured into the insulated container with water.  The mixture comes to equilibrium while the pressure is maintained at 1 atm  throughout the process.  What is the final temperature?  Assume negligible expansion or contraction during mixing.
+			</p>
+
+		</statement>
+		<hint> <p>  Balance energy gain and loss to find an equation  </p> </hint>
+		<answer> <p> <m> 28^{\circ}C.</m>.  </p> </answer>
+		<solution> 
+			<p>
+				In this problem, the two systems exchanging energy are: system A consisting of the container and 5 kg water, and system B consisting of 2 kg water. Here, the system A gains energy and the system B loses energy. Since, we have assumed that no work is done, we will have
+				<me>
+					|\text{Heat gained by A}| = |\text{Heat lost by B}|.
+				</me>
+				We can convert this observation into an equation for the unknown final temperature <m>t</m> by using specific heat of water and change in temperature.  Since no phase change of water occurs between <m>10^{\circ}</m>C and <m>90^{\circ}</m>C, we need not worry about the latent heat here.
+			</p>
+			<p>
+				It is important to note that <m>10^{\circ}C\lt t \lt 90^{\circ}</m>C here, and the two sides of heat gained and heat lost must both be positive number. Therefore, for the heat lost side you must use <m>90-t</m> for the change in temperature and for the heat gained you need to use <m>t-10</m>. We obtain the following equation for the unknown t. 
+				<md>
+					<mrow> 2\textrm{kg}\times 4186 \frac{\textrm{J}}{\textrm{kg.C}}\times (90-t)\textrm{C} = \amp 5\ \textrm{kg}\times 4186 \frac{\textrm{J}}{\textrm{kg.C}}\times (t-10)\textrm{C} </mrow>
+					<mrow> \amp +  20\ \textrm{kg}\times 390 \frac{\textrm{J}}{\textrm{kg.C}}\times (t-10)\textrm{C}.</mrow>
+				</md>
+				Now, we solve the equation for the unknown t.
+				<me>
+					t = 28^{\circ}C.
+				</me>
+				Does this answer make sense? Think about it.  Why is the temperature not half-way between the hot water and the cold water?
+
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Mixing-Water-With-Ice"><title> Mixing Water With Ice TODO</title>
+		<statement>
+			<p>
+				An insulated 60-kg Aluminum container has a 50 kg ice block at temperature <m>-10^{\circ}</m>C and pressure 1 atm.  Two kg of warm water at <m>50^{\circ}</m>C is poured into the container and the lid is closed quickly so that heat loss is negligible.  Find the final state, i.e. the final temperature and the amounts of ice and water of the mixture in the Aluminum container. Assume negligible expansion or contraction of any part of the systems, and that the pressure is kept at 1 atm  at all time.
+			</p>
+
+		</statement>
+		<hint> <p>  Beware of the latent heat. </p> </hint>
+		<answer> <p> <m>t=-3.1^{\circ}</m>C  </p> </answer>
+		<solution> 
+			<p>
+				Here, we do not know if the final temperature is below <m>0^{\circ}</m>C or above <m>0^{\circ}</m>C or right at <m>0^{\circ}</m>C.  So, there are three scenarios to check out.  The final temperature will go below <m>0^{\circ}</m>C if all of liquid water comes to <m>0^{\circ}</m>C, freezes, and then loses some more heat so that the total heat lost will equal that gained by ice and the container.  The final temperature will be above <m>0^{\circ}</m>C if ice and container come to <m>0^{\circ}</m>C, all ice melts, and then container and ice gain some more heat so that the total heat gained would equal the heat lost by water.  
+			</p>
+			<p>
+				The final temperature will be <m>0^{\circ}</m>C if all heat available in the water from <m>50^{\circ}</m>C to <m>0^{\circ}</m>C minus necessary to raise the temperature of the container plus ice from <m>-10^{\circ}</m>C to <m>0^{\circ}</m>C is not enough to melt the ice, OR if all the heat available in the water from <m>50^{\circ}</m>C to <m>0^{\circ}</m>C minus necessary to raise the temperature of the container plus ice from <m>-10^{\circ}</m>C to <m>0^{\circ}</m>C is negative but not more than released when all the water freezes. 
+			</p>
+			<p>
+				We first check out the <m>t=0^{\circ}</m>C scenarios: Let us check first if heat released in simply lowering the temperature of water at <m>50^{\circ}</m>C to <m>0^{\circ}</m>C is enough to raise the temperature of ice/container to <m>0^{\circ}</m>C  without part or all of liquid water needing to freeze. Heat available when water goes for <m>50^{\circ}</m>C to <m>0^{\circ}</m>C is  <m>2\times4186\times50=418600\ J</m>, and heat needed to raise the temperature of the container and ice is <m>50\times2100\times10</m> <m>+</m> <m>60\times900\times10</m> or <m>1,590,000\ J</m>.  This says that there is not enough heat released to bring the ice/container to <m>0^{\circ}</m>C.
+			</p>
+			<p>
+
+				Now the questions are:  (a) How much  heat will be released if all water froze? and (b) Would the total heat released this way is greater than the heat needed to raise the temperature of ice/container to <m>0^{\circ}</m>C?  We take up these questions next.
+			</p>
+			<p>
+				Heat released if all water freezes at <m>0^{\circ}</m>C is 2 x 333,000, which is 666,000 J.
+			</p>
+			<p>
+				We see that total heat released  418600+666,000 = 1,084,600 is less than what is needed to raise the temperature of the ice/container to <m>0^{\circ}</m>C.  Hence, we conclude that all water freezes and the final temperature is somewhere between <m>-10^{\circ}</m>C and <m>0^{\circ}</m>C.  Let the final temperature be <m>t^{\circ}</m>C. <m>|\textrm{Heat gained}| = |\textrm{Heat lost}|</m> equation gives:
+				<md>
+					<mrow> \left[50\ kg\times 2100 \frac{J}{kg.C}  +  60\ \right.kg \amp \left.\times 900 \frac{J}{kg.C} \right]\times[t -(-10) ] </mrow> 
+					<mrow> \amp = 1,084,600 J + 2\ kg\times 2100 \frac{J}{kg.C}(0-t) </mrow>
+				</md>
+				Solving for <m>t</m> we find  <m>t=-3.1^{\circ}</m>C.
+			</p>
+		</solution>
+	</exercise> -->
+
+</section>

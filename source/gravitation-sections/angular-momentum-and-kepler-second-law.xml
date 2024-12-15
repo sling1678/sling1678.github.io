@@ -1,0 +1,51 @@
+<section xml:id="Deriving-Keplers-Second-Law"><title> Deriving Kepler's Second Law</title>
+	<introduction> <title> (Calculus) Conservation of Angular Momentum in Sun-Planet System</title> 
+		<p>
+			Kepler's second law is a consequence of the conservation of angular momentum. We look at the motion of one planet and the Sun, a two-body problem interacting with  gravitational form. We will work in the CM frame, where the problem simplifies to the motion of one particle of mass equal to reduced mass.
+			<men>
+				\mu\dfrac{d^2\vec r}{dt^2} = -G_N \dfrac{\mu\, M}{r^2}\, \hat u,
+			</men>
+			where <m>\hat u</m> is unit vector pointed towards the origin, the radially inward direction. We can rewrite this as
+			<men>
+				\dfrac{d(\mu \vec v)}{dt} = -G_N \dfrac{\mu\, M}{r^2}\, \hat u,
+			</men>
+			where <m> \vec v = d\vec r/ dt	</m>. The left side is the rate of change of momentum. Taking cross product with <m>\vec r</m> on both sides we get
+			<men>
+				\vec r \times \dfrac{d(\mu \vec v)}{dt} = -G_N \dfrac{\mu\, M}{r^2}\, \vec r \times \hat u.
+			</men>			
+			The right side is zero since there is <m>180^\circ </m> angle between <m>\vec r</m> and <m>\hat u</m>. By moving <m>\vec r \times </m> inside the <m>d/dt</m> on the left side, we can show that
+			<me>
+				\text{Left side } = \dfrac{d( \mu  \vec r \times \vec v)}{dt}.
+			</me>
+			Therefore, upon cross product with <m>\vec r</m> we get
+			<men>
+				\dfrac{d( \mu  \vec r \times \vec v)}{dt}  = 0,
+			</men>	
+			which is the statement of conservation of angular momentum.  We can pull <m>\mu</m> out, giving us the following equation obeyed by the trajectory <m>\vec r(t) </m>.
+			<men>
+				\vec r \times \vec v = \vec c,
+			</men>
+			where <m>\vec c</m> is a constant vector. Rewrite this as
+			<men xml:id="eq-kepler-cons-ang-mom-eqn-to-integrate">
+				\vec r \times d\vec r = \vec c\, dt,
+			</men>
+			and note that the magnitude of <m> \vec r \times d\vec r</m> is the area of the rectangle formed by vectors <m>\vec r </m> and <m>d \vec r</m>, which is twice the area swept by  vector <m>\vec r </m>.
+			<men>
+				 \vec r \times d\vec r = 2\times \text{Area swept by }\vec r.
+			</men>
+
+			<figure xml:id="fig-kepler-cons-ang-mom">
+				<caption>
+					The position vector <m>\vec r</m> sweeping out half the area given by the magnitude of <m>\vec r \times d\vec r</m>. By conservation of angular momentum, it is shown that the magnitude of the integral <m>\int \vec r \times d\vec r</m> is proportional to time. Therefore, we get the law that radial vector from the Sun to a planet sweeps out equal area in equal time.
+				</caption>
+				<image source="./images/gravitation/kepler-cons-ang-mom.png" width="60%"/>
+			</figure>
+
+			When we integrate Eq. <xref ref="eq-kepler-cons-ang-mom-eqn-to-integrate"/> for any interval <m>t_i</m> to <m> t_f</m>, we find that
+			<men>
+				\int_{\vec r(t_i)}^{\vec r(f)} \vec r \times d\vec r = \vec c (t_f - t_i),
+			</men>
+			where the left side is twice the area swept by vector <m>\vec r</m> as shown in <xref ref="fig-kepler-cons-ang-mom"/>. That is, the radial position vector of <m>\mu</m> sweeps out equal area in equal time. Since mass of Sun is much greater than most planets, 	particle <m>\mu</m> can be replaced by the planet alone, which is the observation made by Kepler in his second law of planetary motion. By Newton's analysis, we get more than Kepler's law - we see the precise variables we should look at when we are computing the area swept.		
+		</p>
+	</introduction>
+</section>

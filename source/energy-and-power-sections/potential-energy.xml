@@ -1,0 +1,440 @@
+<section xml:id="Potential-Energy"><title> Potential Energy</title>
+<idx><h>Energy</h><h>Potential Energy</h></idx>
+<idx>Potential Energy</idx>
+	<introduction>
+		<p>
+			<idx>Conservative Forces</idx>
+			<idx><h>Forces</h><h>Conservative Forces</h></idx>
+			Previously we have studied energy due to motion, called kinetic energy. Now, we look at energy associated with position, which is called potential energy. It is based on the observation that work by a class of forces, which will be called <term>conservative forces</term>, do not depend on the path of motion but just the initial and final positions.  Weight, spring force, Newton's gravitational force, and Coulomb's electric force are common examples of conservative forces. 
+		</p>
+		<p>
+			Formulas for work by these forces for a motion between an initial position and a final position for any arbitrary path between them are as follows. (The derivation of these results requires Calculus.)			
+			<mdn>
+				<mrow xml:id="eq-work-by-weight">\amp \text{Weight: } W_{if} = mgy_i - mgy_f</mrow>
+				<mrow>\amp \text{Spring: } W_{if} = \dfrac{1}{2}kx_i^2 - \dfrac{1}{2}kx_f^2</mrow>
+				<mrow>\amp \text{Gravitation: } W_{if} = \left( -\dfrac{Gm_1m_2}{r_i} \right) - \left( -\dfrac{Gm_1m_2}{r_f} \right)</mrow>
+				<mrow  xml:id="eq-work-by-electric">\amp \text{Electric: } W_{if} = \left( \dfrac{1}{4\pi\epsilon_0}\dfrac{q_1q_2}{r_i} \right) - \left( \dfrac{1}{4\pi\epsilon_0}\dfrac{q_1q_2}{r_f} \right)</mrow>
+			</mdn>
+
+		</p>
+		<p>
+			One way of interpreting these results can be illustrated by focusing on weight. As shown in <xref ref="fig-pe-work-against-gravity"/>, suppose you push a box of mass <m>m</m> from <m>y=y_i</m> to <m>y=y_f</m> by balancing weight at each instant. 
+
+		</p>
+		<sidebyside widths="70% 5% 25%">
+			<p>
+				Then, your work will be
+				<m>
+					W_{if}^\text{by you} =  mgy_f - mgy_i,
+				</m>
+				which is negative of the work done by gravity. Now, if you let the box fall freely from <m>y_f</m>, the box will accelerate, gaining speed, and hence kinetic energy, as it passes through point <m>y_i</m>. Thus, we can think of <m>(mgy_f - mgy_i)</m> as <term>stored energy</term> or <term>potential energy</term>, when the box was at <m>y_f</m> relative to <m>y_i</m>, that got released when you let go of the box at <m>y_f</m>.
+
+			</p>
+			<p></p>
+			<figure xml:id="fig-pe-work-against-gravity">
+				<caption></caption>
+				<image source="./images/energy/pe-work-against-gravity.png" width="80%" />
+			</figure>
+		</sidebyside>
+
+
+		<p>
+			We will denote potential energy by letter <m> U </m> and sometimes by <m>\text{PE}</m>. Experiment such as illustrated in <xref ref="fig-pe-work-against-gravity"/> can be performed for every conservative force. In each case, the work you would do, while balancing the force, will end up being stored in the system as difference of potential energy of the system between initial and final positions. Let's denote this difference by  <m> \Delta U</m>. Since your force is balancing the conservative force, the work done by the conservative force will be exactly opposite in sign. We can summarize these observations by the following.
+			<men xml:id="eq-potential-energy-change-work-formulas">
+				W_{if}^\text{by you} =  \Delta U = U_f - U_i  = - W_{if}^\text{by conservative force}
+			</men>
+			Quantity <m> U </m> in each case is called <term> potential energy</term>, with <m>U_i</m> being potential energy at initial position and <m>U_f</m> potential energy at final position. Now, making use of the formulas for work done by conservative forces given in Eqs. <xref ref="eq-work-by-weight"/>-<xref ref="eq-work-by-electric"/>, we get following formulas for potential energy.
+			<mdn>
+				<mrow> \amp U_{\text{weight}} = mgy</mrow>
+				<mrow> \amp U_{\text{spring}} =\dfrac{1}{2}kx^2 </mrow>
+				<mrow> \amp U_{\text{gravitation}} = -\dfrac{Gm_1m_2}{r}   </mrow>
+				<mrow> \amp U_{\text{coulomb}} =  \dfrac{1}{4\pi\epsilon_0}\dfrac{q_1q_2}{r}   </mrow>
+			</mdn>
+			Often, we will write potential energy due to spring force in terms of change in length <m>\Delta l</m> of the spring rather than the coordinate of the block.
+			<men>
+				U_{\text{spring}} =\dfrac{1}{2}k(\Delta l)^2.
+			</men>
+			<alert>Potential energy due to weight </alert> is also called <term> gravitational potential energy</term>, and is often written as <m> m g h</m> where <m> h</m> is height above some reference zero. 
+			<men>
+				U_\text{gr} = m\,g\,h.
+			</men>
+			Since points below a reference zero will have <m>y</m> coordinate negative, their heights will be negative also. Therefore, when you use <m>mgh</m>, make sure the sign is negative for points below the reference zero and positive for points above.
+		</p>		
+	</introduction>
+
+
+	<example xml:id="ex-Potential-Energy-of-a-Skier-from-the-Bottom-of-Hill"><title> Potential Energy of a Skier at Different Heights with Zero Potential at the Bottom of Hill</title>
+		<statement>
+			<p>
+				A skier of mass <m>50\text{ kg}</m> is skiing down a bumpy hill as shown in <xref ref="fig-potential-energy-skier-heights-from-bottom"/>. The zero of the potential energy due to gravity is chosen at the bottom of the hill.
+			</p>
+			<p> 
+				(a) What are the values of his potential energy at points A and B where <m> h_A = 20\text{ m}</m> and <m> h_B = 30\text{ m}</m>?
+			</p>
+			<p>
+				(b) What is the difference in the potential energies, <m> U_B - U_A</m>? In the next Checkpoint, you will find that this is independent of the choice of zero potential reference.
+			</p>
+			<figure xml:id="fig-potential-energy-skier-heights-from-bottom">
+				<caption></caption>
+				<image source="./images/energy/potential-energy-skier-heights-from-bottom.png" width="80%" />
+			</figure> 
+
+		</statement>
+		<!-- <hint> <p> Use <m> mgh</m>.  </p> </hint> -->
+		<answer> <p> (a) <m> U_A = 9,810 \text{ J} </m>, <m> U_B = 14,715 \text{ J} </m>, 
+		(b) <m>  4,905 \text{ J}</m>. </p> </answer>
+		<solution><title>a</title> 
+			<p>
+				We use the formula for the potential energy due to gravity.
+				<md>
+					<mrow> U_A \amp = mgh_A = 50\times 9.81\times 20 = 9,810 \text{ J}.</mrow>
+					<mrow> U_B \amp = mgh_B = 50\times 9.81\times 30 = 14,715\text{ J}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+				The difference is
+				<me>
+					\Delta U = U_B - U_A =  4,905 \text{ J}.
+				</me>
+			</p>
+
+		</solution>
+	</example>
+
+	<example xml:id="ex-Potential-Energy-of-a-Skier-from-the-top-of-Hill"><title> Potential Energy of a Skier at Different Heights with Zero Potential at the Top of Hill</title>
+		<statement>
+			<p>
+				A skier of mass <m>50\text{ kg}</m> is skiing down a bumpy hill as shown in <xref ref="fig-potential-energy-skier-heights-from-top"/>. The zero of the potential energy due to gravity is chosen at the top of the hill.
+			</p>
+			<p> 
+				(a) What are the values of his potential energy at points A and B where <m> h_A = 50\text{ m}</m> and <m> h_B = 40\text{ m}</m>?
+			</p>
+			<p>
+				(b) What is the difference in the potential energies, <m> U_B - U_A</m>?
+			</p>
+			<figure xml:id="fig-potential-energy-skier-heights-from-top">
+				<caption></caption>
+				<image source="./images/energy/potential-energy-skier-heights-from-top.png" width="80%" />
+			</figure> 
+
+		</statement>
+		<!-- <hint> <p> Use <m> mgh</m> but with <m> h</m> now negative since below the zero reference.  </p> </hint> -->
+		<answer> <p> <m> U_A = - 24,525 \text{ J} </m>, <m> U_B = -19,620 \text{ J} </m>. </p> </answer>
+		<solution><title>a</title> 
+			<p>
+				We use the formula for the potential energy due to gravity, <m> m g h</m>, but now, <m>h</m> is negative since points A and B are below the reference zero.
+				<md>
+					<mrow> U_A \amp = mgh_A = 50\times 9.81\times (-50) = - 24,525 \text{ J}.</mrow>
+					<mrow> U_B \amp = mgh_B = 50\times 9.81\times (-40) = -19,620\text{ J}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+				The difference is
+				<me>
+					\Delta U = U_B - U_A =  4,905 \text{ J}.
+				</me>
+			</p>
+
+		</solution>
+	</example>
+
+	<example xml:id="ex-Spring-Potential-Energy-of-a-Block"><title> Spring Potential Energy of a Block </title>
+		<statement>
+			<p>
+				A block is attached to a spring of spring constant <m> 1000\text{ N/m}</m>. 
+			</p>
+			<p>
+				(a) What is the spring potential energy of the block if the spring is compressed by <m> 5\text{ cm}</m>?
+			</p>
+			<p>
+				(b) What is the spring potential energy of the block if the spring is stretched by <m> 5\text{ cm}</m>?
+			</p>
+			<p>
+				(c) The block is oscillating. At one point A the spring is compressed by <m> 5\text{ cm}</m> and at another point B the spring is stretched by  <m> 2\text{ cm}</m>. What is the change in potential energy, <m> U_B - U_A</m>?
+			</p>
+		</statement>
+		<!-- <hint> <p>  Use <m> \dfrac{1}{2}kx^2</m>. </p> </hint> -->
+		<answer> <p> (a) <m>1.25\text{ J}</m>, (b) <m>1.25\text{ J}</m>,  (c) <m>-1.05\text{ J}</m>. </p> </answer>
+		<solution> <title>a</title>
+			<p>
+				We use the formula of potential energy due to a spring.
+				<me>
+					U = \dfrac{1}{2}k x^2 = \dfrac{1}{2}\times 1000\times 0.05^2 = 1.25\text{ J}. 
+				</me>
+			</p>
+		</solution>
+		<solution> <title>b</title>
+			<p>
+				We use the formula of potential energy due to a spring. We should get the same value as in (a) since we square the change in length of the spring.
+				<me>
+					U = \dfrac{1}{2}k x^2 = \dfrac{1}{2}\times 1000\times 0.05^2 = 1.25\text{ J}. 
+				</me>
+			</p>
+		</solution>
+
+		<solution> <title>c</title>
+			<p>
+				We use the formula of potential energy due to a spring. 
+				<md>
+					<mrow> U \amp = \dfrac{1}{2}k x_f^2 - \dfrac{1}{2}k x_i^2 </mrow>
+					<mrow> \amp = \dfrac{1}{2}\times 1000\times 0.02^2  - \dfrac{1}{2}\times 1000\times 0.05^2</mrow>
+					<mrow> \amp  = -1.05\text{ J}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="ex-Gravitational-Potential-Energy-of-a-Spacecraft-at-Various-Distances-from-the-Earth"><title> Gravitational Potential Energy of a Spacecraft at Various Distances from the Earth </title>
+		<statement>
+			<p>
+				What are the values of the gravitational potential energies of a spacecraft of mass <m>1000\text{ kg}</m> when it is at the following distances from the center of the Earth, where <m> R_E </m> is the radius of the Earth. Note: mass of the Earth, <m> M_E = 5.97219 \times 10^{24}\text{ kg} </m> and radius of Earth, <m> R_E = 6.378\times 10^6 \text{ m}</m>.
+			</p>
+			<ol marker="(a)">
+				<li> <m> r = R_E</m>, i.e., on the surface of the Earth. </li>
+				<li> <m> r = 2 R_E</m>, </li>
+				<li> <m> r = 4 R_E</m>. </li>
+			</ol>
+
+		</statement>
+		<!-- <hint> <p>  Use <m> -GMm/r</m> and not <m>mgh</m>. </p> </hint> -->
+		<answer> <p>   </p> </answer>
+		<solution> <title>a</title>
+			<p> 
+				We will use the potential energy due to universal gravitational force.
+				We get
+				<md>
+					<mrow> U_a \amp = - G \dfrac{Mm}{r}</mrow>
+					<mrow> \amp = - 6.67\times 10^{-11} \times \dfrac{5.97219 \times 10^{24} \times 1000}{6.378\times 10^6} </mrow>
+					<mrow> \amp = - 6.25 \times 10^{10}\text{ J}.</mrow>
+				</md> 
+			</p>
+		</solution>
+		<solution> <title>b</title>
+			<p>
+				The distance here is double of the distance in (a). From the <m>1/r</m> dependence, we can immediately see that the numerical part will become half and since the sign is negative, the potential energy will increase.
+				<me>
+					U_b = - \dfrac{6.25}{2} \times 10^{10}\text{ J} = -3.13\times 10^{10}\text{ J}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>c</title>
+			<p>
+				The distance here is four times of the distance in (a). From the <m>1/r</m> dependence, we can immediately see that the numerical part will become <m>1/4</m> times, and since the sign is negative, the potential energy will increase.
+				<me>
+					U_c = - \dfrac{6.25}{4} \times 10^{10}\text{ J} = -1.56\times 10^{10}\text{ J}.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+
+
+	<subsection><title> Derivation of Potential Energy Due to Weight </title>
+
+		<sidebyside widths="60% 10% 30%">
+
+			<p>
+				To derive the formula <m>U=mgy</m> corresponding to the force of weight, consider you moving a block of mass <m>m</m> from <m> (x_i, y_i) </m> to <m> (x_f, y_f) </m> by balancing the force of weight at each instant as shown in <xref ref="fig-derivation-pe-weight"/>. We assume that weight is pointed towards negative <m>y</m>-axis.
+			</p>
+			<p></p>
+			<figure xml:id="fig-derivation-pe-weight">
+				<caption></caption>
+				<image source="./images/energy/derivation-pe-weight.png" width="80%" />
+			</figure>
+		</sidebyside>
+		
+		<p>
+			To balance the force of weight, you will need to apply force with <m>y</m> components, <m>F_y=mg</m> and other components zero. On the path from initial to final positon selected in <xref ref="fig-derivation-pe-weight"/>, work by this force is zero on the part(s) which are perpendicular to <m>y</m>-axis. Work integral has nonzero contribution only from the path parallel to <m>y</m>-axis. By performing the work integral, we get
+			<me>
+				W_{if}^\text{by you} = mgy_f - mg y_i.
+			</me> 
+			Writing this work as <m> U_f- U_i</m>, i.e., change in potential energy of the block, as defined in Eq. <xref ref="eq-potential-energy-change-work-formulas"/>, gives us
+			<me>
+				U_i =m\, g\, y_i + c;\ \ U_f =m\, g\, y_f + c,
+			</me>
+			where <m>c</m> is an unknown constant to be fixed by choice of reference.  
+			If we choose <m>U(y=0)=0</m> as <term>reference</term>, then it fixes <m>c=0</m>.  This reference corresponds to zero potential energy at all points of <m>y=0</m> plane.  With this reference, we can write a general formula for any allowed <m>y</m> as
+			<men>
+				U(y) = m\, g\, y.
+			</men>
+
+
+		</p>
+	</subsection>
+
+	<subsection> <title> (Calculus) Potential Energy Due to Spring Force </title>
+
+		<!-- <p>
+			As an example of a conservative force, we will find the work done by a spring force on a block. 
+		</p> -->
+		<p>
+			Unlike weight, spring force is not constant since force depends upon the extent of stretch or compression. To be concrete, we will consider a block attached to a spring of spring constant <m>k</m> placed along <m>x</m>axis as shown in <xref ref="fig-work-by-spring-force-1"/>.
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				We will place origin of axis at the position of the block when the spring is not stretched and the positive <m> x </m> axis is in the direction that leads to the stretching of the spring.
+			</p>
+			<p></p>
+			<figure xml:id="fig-work-by-spring-force-1">
+				<caption></caption>
+				<image source="./images/energy/work-by-spring-force-1.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+		<p>
+			To find the potential energy due to spring force, we will find work done by you, if you were to balance sprign force when the block moves from <m>x_i</m> to <m>x_f</m> on a path that does not have a turn around as shown in <xref ref="fig-work-by-spring-force-2"/>. 
+		</p>
+		<sidebyside widths="45% 55%">
+			<p>
+				When the block is a position <m>x</m>, spring will be stretched by <m>x</m> and your force will have the following <m>x</m>-component.
+				<me>
+					F_x^\text{by you} = k x.
+				</me>
+			</p>
+			<figure xml:id="fig-work-by-spring-force-2">
+				<caption></caption>
+				<image source="./images/energy/work-by-spring-force-2.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Work will be
+			<men>
+				W_{if} = \int_{x_i}^{x_f} k x dx =  \frac{1}{2} k x_f^2 - \frac{1}{2} k x_i^2.
+			</men>
+		</p>
+		<p>
+			Writing this work as <m> U_f- U_i</m>, i.e., change in potential energy of the block, as defined in Eq. <xref ref="eq-potential-energy-change-work-formulas"/>, gives us
+			<me>
+				U_i = \frac{1}{2} k x_i^2 + c;\ \ U_f =\frac{1}{2} k x_f^2 + c,
+			</me>
+			where <m>c</m> is an unknown constant to be fixed by choice of reference.  
+			If we choose <m>U(x=0)=0</m> as <term>reference</term>, then it fixes <m>c=0</m>. With this reference, we can write a general formula for any physically allowed position <m>x</m> as  
+			<me>
+				U(x) = \frac{1}{2}\, k\, x^2.
+			</me>
+
+		</p>
+	</subsection>
+
+	<subsection><title> (Calculus) Potential Energy Due to Universal Gravitational Force </title>
+
+		<p>
+			Gravitational force between two bodies of masses <m>m</m> and <m>M</m> is an attractive force that is proportional to the masses and inversely proportional to square of the distance <m>r</m> between them. The magnitude is written as 
+			<men>
+				F = G_N \dfrac{M m}{r^2},
+			</men>
+			where <m>G_N</m> is called universal gravitational constant with value
+			<me>
+				G_N = 6.67\times 10^{-11}\text{N.}^2/\text{kg}^2.
+			</me> 
+			 
+		</p>
+
+
+		<sidebyside widths="50% 5% 45%">
+ 			<p>
+				To find potential energy of a particle of mass <m>m</m>, we try to move the particle from an initial separation <m>r_i</m> to a final separation <m>r_f</m> along the path <m>i\rightarrow a\rightarrow f</m> as shown in <xref ref="fig-pe-univ-grav"/>.  While moving <m>m</m>, you would provide a force that balances the gravitational force on it at all all instants. We then, find the wrk done by you on <m>m</m>.
+			</p>
+			<p></p>
+			<figure xml:id="fig-pe-univ-grav">
+				<caption></caption>
+				<image source="./images/energy/pe-univ-grav.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Work on path <m>i\rightarrow a</m> will be zero since the force is radial but path is tangential with angle <m>90^\circ</m> between them. So, we just need to find work on path <m>a\rightarrow f</m>. Your force is radially out and the path direction is also radially out. Therefore, we get
+			<me>
+				W_{if}^\text{by you} = \int_{r_i}^{r_f}\,G_N \dfrac{M m}{r^2}\,dr.
+			</me>
+			This gives
+			<men>
+				W_{if}^\text{by you} = -G_N \dfrac{M m}{r_f} + G_N \dfrac{M m}{r_i}.  
+			</men>						
+		</p>
+
+		<p>
+			Writing this work as <m> U_f- U_i</m>, i.e., change in potential energy of the block, as defined in Eq. <xref ref="eq-potential-energy-change-work-formulas"/>, gives us
+			<me>
+				U_i = - G_N \dfrac{M m}{r_i} + c;\ \ U_f = -G_N \dfrac{M m}{r_f} + c,
+			</me>
+			where <m>c</m> is an unknown constant to be fixed by choice of reference.  
+			If we choose <m>U(r=\infty)=0</m> as <term>reference</term>, then it fixes <m>c=0</m>. This reference corresponds to zero potential energy when <m>m</m> is infinitely far away from <m>M</m>. With this reference, we can write a general formula for any separation <m>r</m> as
+			<me>
+				U(r) = -G_N \dfrac{M m}{r}.
+			</me>
+
+		</p>
+
+		<p>
+			We got a negative sign due to the attractive nature of the gravitational force. If we had a repulsive force, e.g., between two positive charges, we would have ended up with a positive sign there.			
+		</p>
+		<p>
+			This formula blows up in the unphysical situation when the two particles are on top of each other. 
+		</p>
+	</subsection>
+
+
+	<subsection><title>(Calculus) Potential Energy and Force</title>
+		<p>
+			From the variation of potential energy in space, you can deduce the conservative force. For simplicity, consider a one-dimensional situation of a block attached to a spring of spring constant along <m>x</m>-axis.  We know that, with zero potential energy at <m>x=0</m>, the formula for potential energy is
+			<me>
+				U = \frac{1}{2}k x^2.
+			</me>
+			Now, let us consider motion over an infinitesimal distance <m>x</m> to <m>x+\Delta x</m>. The change in potential energy will be
+			<me>
+				\Delta U = U(x+\Delta x) - U(x) \approx k x \Delta x.
+			</me>
+			Now, we see that if we divide this by <m>\Delta x</m>, take inifitesimal limit, and multiply by negative 1, we get the force.
+			<me>
+				F_x = - \lim_{ \Delta x\rightarrow 0 } \frac{\Delta U}{\Delta x} =   -\frac{dU}{dx} = - k x.
+			</me>
+			It is possible to carry out these steps for any conservative force. Therefore, in general, for any conservative along <m>x</m>-axis, we will get
+			<men xml:id="eq-pe-force-relations-1d">
+				F_x = -\frac{dU}{dx}.
+			</men>
+			This would generalize to other dimensions as well. Therefore, in three dimensions, we will get
+			<men>
+				F_x = -\frac{\partial U}{\partial x},\ \ F_y = -\frac{\partial U}{\partial y},\ \ F_z = -\frac{\partial U}{\partial z}.
+			</men>
+			You can write this more compactly as <m>\vec F = -\vec\nabla U</m>.			
+
+		</p>
+	</subsection>
+
+
+	<subsection><title>(Calculus) Potential Energy and Equilibrium</title>
+		<p>
+			A mechanical system is said to be in equilibrium when force on it vanishes. For instance, a block attached to a spring will be at equilibrium when length of the spring is equal to its relaxed length. In a one-dimensional case along <m>x</m> axis, from Eq. <xref ref="eq-pe-force-relations-1d"/> we find that at equilibrium potential energy will have zero derivative.
+			<me>
+				\text{At equilibrium:  } \frac{dU}{dx} = 0.
+			</me>
+			Thus,  <m>U(x)</m> is either at its minimum or maximum when <m>x</m> has the value at an equilibrium. For instance, for a block attached to a spring along <m>x</m>-axis, 
+			<me>
+				\frac{dU}{dx} = k x = \ \ \Longrightarrow \ \ x=0.
+			</me>
+			In the case of block/spring system, this equilibrium is <term>stable</term> since if you place the block at a  <m>x\ne 0</m>, the block tends to move towards the equilibrium point. In terms of function <m>U(x)</m>, this corresponds to <m>U(x)</m> being concave up, i.e., the second derivative being positive at equilibrium, <m>x=0</m>, as illustrated in left paanel of <xref ref="fig-stable-unstable-neutral-pe-diagrams"/>.
+			<me>
+				\text{Stable equilibrium:  }\ \ \ \left.\frac{d^2U}{dx^2}\right|_{x=0} \ \gt\ 0.
+			</me>
+			Imagine a potential energy which is concave down at the equilibrium, as in the middle panel of <xref ref="fig-stable-unstable-neutral-pe-diagrams"/>. This will have the effect that if you place the system even infintesimally away from the equilibrium, the system will move away. This will be an <m>unstable</m> equilibrium.	If <m>U</m> has zero second derivative at an equilibrium, as in the right panel of <xref ref="fig-stable-unstable-neutral-pe-diagrams"/> then we call it a neutral equilibrium.		
+		</p>
+			<figure xml:id="fig-stable-unstable-neutral-pe-diagrams">
+				<caption></caption>
+				<image source="./images/energy/stable-unstable-neutral-pe-diagrams.png" width="80%"/>
+			</figure>
+
+		
+	</subsection>
+
+
+
+
+
+
+
+
+</section>

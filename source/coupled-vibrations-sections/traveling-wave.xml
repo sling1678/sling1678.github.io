@@ -1,0 +1,51 @@
+<section xml:id="traveling-wave"><title> Traveling Wave </title>
+	<introduction>
+        <p>
+            A <term>traveling or progressive wave </term> or simply wave represents the movement of a disturbance from one place to another without the actual movement of the underlying medium itself.
+        </p>
+        <p>
+            The property characterizing a disturbance depends on the nature of the wave.  For instance, in the case of a mechanical or sound wave, the disturbance refers to the displacement of particles of the medium from their equilibrium as we have seen above. In the case of the electromagnetic wave, the disturbance refers to the change in the electric and magnetic fields in space. The disturbance varies both in space and time.
+        </p>
+        <p>
+            The function that describes the disturbance is called the <term>wave function</term>. We have used <m>y(x,t)</m> for the transverse vibration modes on a string. We will use symbol <m>\psi</m> (read: psi) for a wave function which may stand for a traveling transverse vibrations on a string or some other system. 
+        </p>
+        <p>
+            A particularly simple wave function for the mathematical analysis results if the continuous disturbance can be cast as a sine or a cosine function of the space and time variables.  These waves are called <term>sinusoidal waves</term>  and are characterized by periodicities of the wave in space and time. These waves are also called <term>plane waves</term> if they travel in a three-dimensional space since the wave function for these waves take the same value in a plane perpendicular to their propagation direction.
+        </p>
+        <p>
+            The wave function <m>\psi</m> for a sinusoidal wave of amplitude <m>A</m>, wavenumber <m>k</m>, and angular frequency <m>\omega</m> traveling towards the positive <m>x</m>-axis is given by
+            <men xml:id="eq-plane-wave-1">
+                \psi(x,t) = A\ cos(kx-\omega t), 
+            </men>
+            where <m>\ \ -\infty \lt x \lt\infty,\ -\infty\lt t\lt \infty</m>,  and I have assumed  <m>\psi(0,0) = A</m>. To visualize the motion of a wave we usually draw  multiple images of the <term>wave profile</term>  at successive times.  
+
+        </p>
+        <p>
+
+            In <xref ref="fig-waves-plane-4"/> I have plotted snapshots of a sinusoidal wave at different times of a plane wave traveling towards the positive <m>x</m>-axis. Note that the wave arrives at a screen at different times with different values of the wave function. The picture of the wave function at different times shows that the wave at the screen or at any other point in space acts as a simple harmonic oscillator, oscillating between <m>\psi=A</m> and <m>\psi=-A</m> with frequency <m>\omega</m> as the wave passes through the point.
+        </p>
+        <figure xml:id="fig-waves-plane-4">
+            <caption>
+                A sinusoidal traveling wave along the <m>x</m>-axis for three different instants <m>(t_3>t_2 >t_1)</m>. The wave function <m>\psi=cos[2\pi(x-t)]</m> is plotted  with <m>t=t_1=0</m>, <m>t=t_2=0.1</m> sec, and <m>t=t_3 = 0.2</m> sec. Note that the wave arrives at the screen with different values of wave function at different times.
+            </caption>
+            <image source="./images/coupled-vibrations/waves-plane-4.png" width="100%"/>
+        </figure>
+        <p>
+            The wave function in Eq. <xref ref="eq-plane-wave-1"/> moves towards positive <m>x</m>-axis. If the two terms in the argument of cosine in the wave function in Eq. <xref ref="eq-plane-wave-1"/>  have the same sign, the wave would move towards negative <m>x</m>-axis.  Therefore, the following wave function will be for a wave moving towards the negative <m>x</m>-axis.
+            <men xml:id="eq-plane-wave-2">
+                \psi'(x,t) = A\ \cos(kx+\omega t).
+            </men>
+            At any time, say <m>t=0</m>, the successive crests or successive troughs of the wave are separated by a wavelength, <m>\lambda</m>, which is <m>2\pi/k</m>.  You can see this by setting <m>t=0</m> in either Eq. <xref ref="eq-plane-wave-1"/>  or <xref ref="eq-plane-wave-2"/>  and finding the period of the resulting function, <m>A \cos(kx)</m>.
+        </p>
+        <p>
+            As seen in <xref ref="fig-waves-plane-4"/> the wave <m>A\ cos(kx-\omega t)</m> moves towards the positive <m>x</m>-axis. If we focus on one of the crests, we note that the crest moves over a distance equal to a wavelength in time <m>2\pi/\omega</m>.  Therefore, the speed of the wave <m>v</m> is given by dividing <m>|\Delta x| = \lambda = 2\pi/k</m> by <m>\Delta t = 2\pi/\omega</m>.
+            <men xml:id="eq-plane-wave-3">
+                v = \frac{|\Delta x|}{\Delta t} = \frac{\omega}{k}
+            </men>
+            We can write the speed of the wave in terms of the wavelength <m>\lambda</m> and the regular frequency <m>f</m> rather than in terms of the wavenumber and the angular frequency.
+            <men xml:id="eq-plane-wave-4">
+                v =  \frac{\omega}{k} =\lambda  f.
+            </men>
+        </p>
+    </introduction>
+</section>

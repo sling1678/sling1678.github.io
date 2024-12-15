@@ -1,0 +1,165 @@
+<section xml:id="wave-functions"><title> Wave Functions</title>
+	<introduction>
+        <p>
+            A traveling or progressive wave, which we have been calling simply a wage, represents the movement of a disturbance from one place to another without the actual movement of the underlying medium itself. 
+        </p>
+        <p> 
+            The property characterizing a disturbance in a wave depends on the nature of the wave.  For instance, in the case of a mechanical wave or sound wave, the disturbance refers to the displacement of the particles of the medium from their equilibrium positions as we have seen above. In the case of the electromagnetic wave, the disturbance refers to is the change in the electric and magnetic fields in space. 
+        </p>
+        <p>    
+            The function that describes how the disturbance, representing a wave, varies both in space and time is called <term>wave function</term>. We have used <m>y(x,t)</m> for the transverse vibration modes on a string to represent wabe on a string. But, the use of <m>y</m> would be misleading if we want to represent a wave in a three-dimensional situation, such as sound wave. Therefore, often we will use  Greek letter <m>\psi</m> (read: si) for a wave function. Thus, wave on a string laid out along <m>x</m> axis will be <m>\psi(x,t)</m> with <m>\psi</m> standing for the transverse displacement and pressure wave in air will be <m>\psi(x,y,z,t)</m> with <m>\psi</m> denoting the pressure difference <m>\Delta p</m> from th ambient pressure.
+
+        </p>
+        <p>
+            When a wave is moving in a three-dimensional space, such as sound produced by a speaker, we can speak of <term>wave fronts</term>. A wave front of a wave at some time <m>t</m> is a surface representing the displacement of particles at that instant. We will talk about two special wavefronts - plane wavefronts and spherical wave fronts - that we use in analytic work with waves.
+        </p>
+        <p>
+            In this section, we will present three examples of wave functions that are very useful for analytic purposes.
+        </p>
+    </introduction>
+    <subsection><title>Plane Waves</title>
+        <p>
+            A plane wave is a simple three-dimensional wave where the wave travels in a straight line, which is usually taken to be one of the Cartesian axes. Furthermore, wave function has the same value throughout any plane normal to the direction of wave.  The <term>wavefronts</term>  of such waves are planar and not curved.
+        </p>
+        <figure xml:id="fig-waves-plane-1">
+            <caption>
+                A plane wave has same wave amplitude in the entire plane.  It is a volume wave.  Although it looks similar to the wave on a string it is three-dimensional rather than one-dimensional.
+            </caption>
+            <image source="./images/coupled-vibrations/waves-plane-1.png" width="80%"/>
+        </figure>
+        <p>
+            If a plane wave is traveling along <m>x</m> axis, then on each plane parallel to the <m>yz</m> plane, the wave displacement has the same value (see <xref ref="fig-waves-plane-1"/>). Therefore, the wave function for a plane wave traveling towards the positive <m>x</m> axis would not depend on the <m>y</m> or <m>z</m> coordinates of the point.
+        </p>
+        <p>
+            Plane waves are also sinusoidal. Therefore, the plane wave corresponding to a wave of wavelength <m>\lambda</m> and frequency <m>f</m> traveling towards the positive <m>x</m> axis will have the following wavefunction.
+            <men>
+                \psi(x,y,z,t) = A\cos\left( \dfrac{2\pi}{\lambda} x - 2\pi f t + \phi\right),
+            </men>
+            where <m>\phi</m> is the phase constant. Of course, the wave going towards the negative <m>x</m> axis will be
+            <men>
+                \psi(x,y,z,t) = A\cos\left( \dfrac{2\pi}{\lambda} x + 2\pi f t + \phi\right).
+            </men>
+            The speed of the wave will be given by the fundamental relation.
+            <men>
+                v = \lambda f.
+            </men>
+            These wavefunctions are similar to the wavefunction of wave on a string laid out along <m>x</m> axis, but there is a big difference - plane waves are waves in three-dimensional space and cover the entire space, not just along string.            
+        </p>
+        
+        <sidebyside widths="45% 10% 45%">
+            <p>
+                We can write a more general formula for a plane wave moving in an arbitrary direction, say the direction of the unit vector <m>\hat u</m>. Let us introduce a vector of length equal to the wavenumber <m>k</m> and the direction of <m>\hat u</m>.
+            </p>
+
+            <p></p>
+
+            <image source="./images/coupled-vibrations/waves-plane-arbitrary-direction.png" width="80%"/>
+
+        </sidebyside>
+        <p>
+            We will denote this vector by <m>\vec k</m>. 
+            <men>
+                \vec{k} = k\, \hat u,
+            </men>
+            where <m>k</m>, you may recall is related to the inverse of wavelength <m>\lambda</m>. 
+            <men>
+                 k = \dfrac{2\pi}{\lambda}. 
+            </men>
+             Vector <m>\hat k</m> is called <term>wave vector</term>. Let us denote position of an arbitrary point P<m>(x,y,z)</m> by vector <m>\vec r</m> from origin to that point.
+             <men>
+                \vec{r} = x\, \hat i + y\, \hat j + z\, \hat k,
+             </men>             
+            where <m>\hat i,\ \hat j,\ \hat k</m> are the usual unit vectors along the Cartesian axes. Using wave vector and the posotion vecor, we can write the wave function of a plane wave more generally as  
+            <men>
+                \psi(x,y,z,t) = A\cos\left( \vec k \cdot \vec r - 2\pi f t + \phi\right).
+            </men>            
+ 
+        </p>
+
+    </subsection>
+
+    <subsection><title>Spherical Waves</title>
+        <p>
+            If energy from a source of wave spreads out radially in all three directions, then, wave amplitude will decrease with distance and it is no longer be appropriate to think of these waves as plan waves. As shown in <xref ref="fig-waves-spherical-1"/>, the wavefronts of these waves are spherical in shape, and therefore they are called <term>spherical waves</term>. 
+        </p>
+        <figure xml:id="fig-waves-spherical-1">
+            <caption>
+                Spherical wave fronts emanating from a source at the center, the drawing on the left. A cross-section is shown in the drawing on the right. The amplitude drops with the radial distance from the source. The drop off of the amplitude is shown with thickness of lines in the dawing on the right.
+            </caption>
+        
+            <image source="./images/coupled-vibrations/waves-spherical-1.png" width="100%"/>
+        </figure>
+        <p>
+            Since spherical wave spreads out symmetrically in all directions, it is independent of the angular coordinates <m>\theta</m> and <m>\phi</m> of spherical coordinates with origin at the source.
+            To describe a spherical wave of wavelength <m>\lambda = 2\pi/k</m> and frequency <m>f = \omega/2\pi</m>, we use spherical radial distance <m>r</m> with origin at the source.
+            <men>
+                \psi(r, t) = \dfrac{A}{r}\cos(kr-\omega t + \delta),
+            </men>
+            where <m>\delta</m> is the phase constant. 
+        </p>
+    
+    </subsection>
+
+    <subsection><title>Wave Pulses</title>
+        <p>
+            So far we have discussed  waves of infinite extent such as the sinusoidal and plane waves. Sinusoidal waves are given by a sine or a cosine function of space and time.  For these types of waves, the displacement oscillates in time according to a combination of sine and cosine functions of time having a definite frequency. Mathematically, to be periodic in space and time, the sinusoidal functions must have a domain that cover the entire space and entire time, viz. <m>-\infty \lt x \lt \infty</m> and <m>-\infty \lt t \lt \infty</m> for a wave traveling along <m>x</m>-axis. These waves are idealization of the situations encountered in real life.
+        </p>
+        <p>
+            Real waves, such as water waves, a pulse traveling on a string, or sound of a drum are not sinusoidal waves. They can be of any shape. For instance, suppose a  very long taut string is given a snap at one end once while the end is held fixed in one place to provide tension in the string (<xref ref="fig-wave-pulse-1"/>).  This results in a bump in the string, which moves towards the other end. This is also a wave, although it does not look like the sine or cosine function. We call such a wave a <term>pulse</term>.
+        </p>
+        <figure xml:id="fig-wave-pulse-1">
+            <caption>
+                Generation and movement of a wave pulse on a string. Insteach of continuously shaking the end, you just givbe it a snap and let the pulse go.
+            </caption>
+            <image source="./images/coupled-vibrations/wave-pulse-1.png" width="100%"/>            
+        </figure>
+        <p>
+            How would you represent a pulse mathematically? There are a variety of ways to do that. You would want a shape to move in time. Say, we want a Gaussian shape, then we might try the following for the pulse on a string along <m>x</m> axis.
+            <men>
+                \psi(x,t) = A \exp{ \left[ - \dfrac{(x-vt)^2}{2\sigma^2}  \right] },
+            </men>
+            where parameter <m>\sigma</m> controls the width of the Gaussian - small <m>\sigma</m> will mean highly peaked and large <m>\sigma</m> will mean a more spreadout Gaussian. At instant <m>t</m>, the Gaussian will be centered at <m>x=vt</m>.
+        </p>
+        <p>
+            Similarly, suppose you turn a Laser on for a very brief period, you would get a pulse of light wave.  Or, if you hit a piano key, there again you will get a pulse of sound wave.  In these cases, you produce waves of some particular frequency, but let it last only for a short period of time - these periods often contain tens to hundreds of cycles of the wave. Since the cycles do not last for ever, mathematically, they are not really sinusoidal, but sometimes, it is okay to treat them as if they were purely sinusoidal or plane waves. These waves are called <term>wavetrains</term>. In a future course, you might learn Fourier anlaysis and there you will learn how to better analyze them analytically.
+        </p>
+
+    </subsection>
+
+
+    <exercise xml:id="exercise-Determining-Wave-Function-of-a-Plane-Wave-from-Given-Characteristic">
+        <title>Determining Wave Function of a Plane Wave from Given Characteristic</title>
+        <statement>
+            <p>
+                 A pressure plane wave of wavelength 3 cm and speed 350 m/s travels through a medium of density <m>1.2\text{ kg/m}^3</m> towards positive <m>y</m> axis of a Cartesian coordinate system with an amplitude of <m>5.0\times 10^{-4}\text{ Pa}</m>. Assume that at <m>t=0</m>, the wave function at <m>y=0</m> has the value equal to its amplitude. Write the wave function for this wave. 
+            </p>
+        </statement>
+        <hint><p> Find <m>A</m>, <m>k</m>, and <m>\omega</m> in <m>A\cos(ky - \omega t + \phi)</m>. </p></hint>
+        <answer><p> <m>5.0\times 10^{-4}\text{ Pa}\ \cos( 209\, y - 73,300\, t)</m> </p></answer>
+        <solution>
+            <p>
+                Since the wave is moving towards the positive <m>y</m> axis, the functional form of the wave will be
+                <me>
+                    \psi(y,t) = A\cos(ky - \omega t + \phi).
+                </me>
+                Since at <m>t=0</m> and <m>y=0</m>, <m>\psi=A</m>, we must have <m>\phi=0</m>. Therefore, we have
+                <me>
+                    \psi(y,t) = A\cos(ky - \omega t).
+                </me>
+                In this expression, <m>A=5.0\times 10^{-4}\text{ Pa}</m>, and we need to find the values of <m>k</m> and <m>\omega</m> from the given information.
+                <md>
+                    <mrow>k \amp = \frac{2\pi}{\lambda} = \frac{2\pi}{0.03} = 209.4\text{ m}^{-1}.</mrow>
+                    <mrow> \omega \amp = k v=  209.4 \times 350 = 73,300\text{ sec}^{-1}.</mrow>
+                </md>
+                Therefore, the wave function is
+                <me>
+                    \psi(y,t) = 5.0\times 10^{-4}\text{ Pa}\ \cos( 209\, y - 73,300\, t),
+                </me>
+                where <m>y</m> is in <m>m</m> and <m>t</m> in <m>sec</m>.
+            </p>
+        </solution>
+    </exercise>
+
+
+
+</section>

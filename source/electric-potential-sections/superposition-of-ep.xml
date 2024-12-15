@@ -1,0 +1,122 @@
+<section xml:id="Superposition-of-Electric-Potentiale"><title> Superposition of Electric Potential </title>
+	<introduction>
+		<p>
+			Similar to electric field, electric potential also obeys a superposition principle. But unlike electric field, the sum of two potentials is just an algebraic sum and not a vector sum. That makes working with potentials a much easier task.
+		</p> 
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				Let's say, some charge <m>q_1</m> has potential <m>\phi_1</m> at space point P and some other charge <m>q_2</m> has potential <m>\phi_2</m> at the same point P. Then, you would observe net potential at P to be just a simple sum of the two.
+				<men>
+					\phi = \phi_1 + \phi_2.
+				</men> 
+				<!-- For example, say you have two <m>1.5\text{-volt}</m> batteries, say A and B. When a battery is by itself, we can take the negative of the battery to be the reference zero, then the positive end of each battery is at <m>\phi_+ = +1.5\text{ V}</m>. Now, we stack batteries with negative of B touching the positive of A. With negative of A as zero, the positive of A and negative of B are now at  <m>\phi_{+A} = \phi_{-B} = +1.5\text{ V} + 0 = +1.5\text{ V} + 0 </m>. Since the difference across B is maintained at <m>1.5\text{ V}</m>, the positive of B at <m> \phi_{+B} = +3.0\text{ V}</m>.  -->
+			</p>
+		
+			<p> </p>
+			<image source="./images/electric-potential/superposition-of-electric-potential-two-charges.png" width="60%"/>
+		</sidebyside>
+
+		<p>
+			It is easy to write a general formula for electic potential of a collection of <m>N</m> charges. Suppose the field point P is at distances <m>r_1</m>, <m>r_2</m>, <m>r_3</m>, <m>\cdots</m>, <m>r_N</m> from point charges <m>q_1</m>, <m>q_2</m>, <m>q_3</m>, <m>\cdots</m>, <m>q_N</m>, respectively. 
+			<!-- Since we know the formula for electric potential a distance <m>r</m> from a single charge <m>q</m>, namely,
+			<me>
+				\phi = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q}{r},
+			</me> 
+			to get the potential from the collection of charges, we just sum over potentials from all them. --> 
+			Superposition will give the net potential from all <m>N</m> charges.
+			<md>
+				<mrow> \phi_P \amp = \phi_1 + \phi_2 + \cdots + \phi_N,</mrow>
+				<mrow> \amp = \dfrac{1}{4\pi\epsilon_0}\, \left(  \dfrac{q_1}{r_1} + \dfrac{q_2}{r_2}  + \cdots   +  \dfrac{q_N}{r_N}\right) </mrow>
+				<mrow> \amp = \dfrac{1}{4\pi\epsilon_0}\, \sum_{i=1}^{N} \dfrac{q_i}{r_i}. </mrow>
+			</md>
+			Note that the distances <m>r_i</m> between the charge and the field point P can be expressed in terms of the Cartesian coordinates of charge <m>q_i</m> and the field point. Let us denote the coordinates of P by <m>(x,\ y,\ z)</m> and of charge <m>q_i</m> by <m>(x_i,\ y_i,\ z_i)</m>. Then, we have
+			<me>
+				r_i = \sqrt{ (x-x_i)^2 + (y-y_i)^2 + (z-z_i)^2  }.
+			</me> 
+		</p>
+		
+	</introduction>
+
+
+
+	<exercise xml:id="ex-Electric-Potential-of-Charges-at-Three-Corners-of-a-Square"><title> Electric Potential and Electric Field of Charges at Three Corners of a Square </title>
+		<statement>
+			<p>
+				Three equal charges are located at the corners of a square of side <m>a</m> as shown. (a) Find the electric potential at the fourth corner. (b) Find the electric field at the fourth corner.
+			</p>
+			<image source="./images/electric-potential/ex-three-equal-charges-at-corners-of-square.png" width="40%"/>
+
+		</statement>
+		<hint> <p> Find the direct distances and use superposition.  </p> </hint>
+		<answer> <p> (a) <m>\dfrac{1}{4\pi\epsilon_0}\,\left( 2 + \dfrac{1}{\sqrt{2}} \right)\, \dfrac{q}{a} </m>. 
+			(b) Magnitude <m>E=k \dfrac{q}{a^2} \left(  \sqrt{2} + \dfrac{1}{2}\right)</m> in the diagonal direction.
+			</p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				We just add up the potentials of the three charges.
+				<md>
+					<mrow> \phi_P \amp = \dfrac{1}{4\pi\epsilon_0} \left( \dfrac{q}{a} + \dfrac{q}{a\,\sqrt{2}}  +  \dfrac{q}{a}\right) </mrow>
+					<mrow>   \amp = \dfrac{1}{4\pi\epsilon_0}\,\left( 2 + \dfrac{1}{\sqrt{2}} \right)\, \dfrac{q}{a}.  </mrow>
+
+				</md>
+
+			</p>
+		</solution>
+
+		<solution> <title> (b) </title>
+			<p>
+				For electric field, let us assume the given charges are positive. We now need to include the impact of directions of the forces.
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Let <m>x</m> axis be horizontal to the right and <m>y</m> vertically up. Let us also use <m>k</m> for <m>1/4\pi\epsilon_0 </m>. Then, we get the following for the magnitudes of the electric fields.
+					<md>
+						<mrow> E_1 \amp = k \dfrac{q}{a^2}</mrow>
+						<mrow> E_2 \amp = k \dfrac{q}{2a^2}</mrow>
+						<mrow> E_3 \amp = k \dfrac{q}{a^2}</mrow>
+					</md>
+				</p>
+				<p> </p>
+				<image source="./images/electric-potential/ex-three-charges-at-corners-of-square-solution-b.png" width="40%"/>
+			</sidebyside>
+			
+
+
+			<p>
+				Note that net <m>E</m> at P is not just a simple sum of these.
+				<me>
+					E \ne E_1 + E_2 + E_3.
+				</me>
+				We need to add them vectorially. This is simple enough to see that the magnitude of the field will be (we can get the same by working out the components, if you like)
+				<md>
+					<mrow> E \amp = E_1\,\cos\,45^\circ + E_3\,\cos\,45^\circ + E_2, </mrow>
+					<mrow>  \amp = k \dfrac{q}{a^2} \left( \dfrac{1}{\sqrt{2}} + \dfrac{1}{\sqrt{2}}  + \dfrac{1}{2}\right), </mrow>
+					<mrow>  \amp = k \dfrac{q}{a^2} \left(  \sqrt{2}  + \dfrac{1}{2}\right), </mrow>
+				</md>
+				and the direction is <m>45^\circ</m> in the direction of <m>\vec E_2</m>.
+
+			</p>
+		</solution>
+
+	</exercise>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

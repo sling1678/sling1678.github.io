@@ -1,0 +1,151 @@
+<section xml:id="Gausss-Law-Section"><title> Gauss's Law </title>
+	<introduction>
+		<p>
+			In <xref ref="ex-Electric-Flux-of-a-Radial-Electric-Field"/>, we found that electric flux through a spherical surface around a charge <m>q</m> to be
+			<me>
+				\Phi_E = \dfrac{q}{\epsilon_0}.
+			</me>
+		</p>
+		<p>
+			It may not surprise you that if you try to find flux through another spherical surface of different radius, you would get the same answer. <alert>What is really stunning is that electric flux through any surface enclosing the charge would give the same flux!</alert>		 
+		</p>
+		<figure>
+			<caption>
+				The electric flux of the electric field through three surfaces - a sphere of radius <m>R_1</m>, a second one of radius <m>R_2</m>, and a cube. Same number of electric field lines pass through each of the surfaces giving the same flux through the three surfaces.  Every surface that encloses the charge will give the same value of the flux, which is <m>\Phi_E = q/\epsilon_0</m>.
+			</caption>
+			<image source="./images/gausss-law/e-flux-through-two-surfaces.png" width="70%"/>
+		</figure>
+	</introduction>
+	<subsection><title> Statement of Gauss's Law </title>
+		<p>
+			Gauss's law generalizes the result obtained above to the case of any number of charges and any location of the charges in the space inside the closed surface.  According to Gauss's law, the flux of electric field <m>\vec E</m>  through any closed surface is equal to the net charge enclosed <m>q_\text{enc}</m> divided by the permittivity of free space <m>\epsilon_0</m>. 
+			<men xml:id="eq-Gausss-law-statement">
+				\Phi_{\text{through enclosing surface}} = \frac{q_\text{enc}}{\epsilon_0}.
+			</men>
+			The enclosing surface is <alert> arbitrary except that it must be a closed surface </alert>. The surface used for this purpose is also called a <term>Gaussian Surface</term>.
+		</p>
+		<p>
+			<m>q_\text{enc}</m> is the sum total of all charges inside the space enclosed by the Gaussian surface, using positive number for positive charges and negative number for negative charges. <alert>It's important to note that charges outside the closed surface do not contribute!</alert> If charges are discrete point charges, then we just sum over them, and if they are described by a continuous charge distribution, then we might need to integrate to find the total enclosed charge.
+		</p>
+		<!-- <p>
+			<alert>The flux through a closed surface is easy if you know charges inside the surface</alert> - no need to know electric field - just use Gauss's law!
+		</p> -->
+	</subsection>
+	<subsection><title> (Calculus) Statement of Gauss's Law </title>
+		<p>
+			We can replace <m>\Phi_{\text{through enclosing surface}}</m> in Eq. <xref ref="eq-Gausss-law-statement"/> by the general definition of electric field flux given in Eq. <xref ref="eq-electric-flux-general"/> in <xref ref="Flux-of-Electric-Field"/>. Let us denote the closed surface by <m>\text{S}</m> and show by a circle on the integral sign that the surface is a closed surface. 
+			<men xml:id="eq-Gausss-law-statement-calculus">
+				\oint_\text{S} \vec E\cdot d\vec A = \frac{q_\text{enc}}{\epsilon_0},
+			</men>			
+			where <m>q_\text{enc}</m> will be the net charge enclosed within the closed Gaussian surface. We can also replace the enclosed charges on the right side by a sum of discrete charges and an integral over continous charges. We need to restrict them to the volume of space enclosed by <m>\text{S}</m>. Thus, we can write a more expnaded view.
+			<men xml:id="eq-Gausss-law-statement-calculus-expanded-0">
+				\oint_\text{S} \vec E\cdot d\vec A = \frac{1}{\epsilon_0} \left[  \sum_i q_i + \int \rho dV \right]_\text{within S}
+			</men>
+			We can, of course, think of discrete charges as distributed in a tiny volume and assign it a charge density. Therefore, we should actually drop the <m>q_i</m> part and absorb that in <m>\rho</m>. This gives us the most general way of writing Gauss's law.
+			<men xml:id="eq-Gausss-law-statement-calculus-expanded">
+				\oint_\text{S} \vec E\cdot d\vec A = \frac{1}{\epsilon_0} \int_\text{within S} \rho dV  
+			</men>			
+		</p>
+	</subsection>
+	<subsection><title> (Calculus) Divergence of Electric Field </title>
+		<p>
+			Applying Eq. <xref ref="eq-Gausss-law-statement-calculus-expanded"/> for infinitesimal volumes around any arbitray point in space and dividing by the volume of that space gives us an alternate way of looking at Gauss's law.
+			<me>
+				\lim_{\Delta V \rightarrow 0}\left[ \frac{1}{\Delta V} \sum \vec E\cdot \Delta\vec A\right] = \frac{\rho}{\epsilon_0}.  
+			</me>
+			The left side of this equation is the definiing equation for divegence of electric field, written as <m>\vec \nabla \cdot \vec E</m>. The divergence at a point tells us how electric field lines spread out from that point. Therefore,
+			<men>
+				\vec \nabla \cdot \vec E = \frac{\rho}{\epsilon_0}.
+			</men>
+			If you work out the divergence of electric field of a point charge, you will find that it is zero everywhere except at the point where the charge is located. 
+		</p>
+	</subsection>	
+
+
+	<exercise xml:id="ex-Using-Gausss-Law-To-Find-Electric-Flux-Through-Closed-Surfaces-From-Charges"><title> Using Gauss's Law To Find Electric Flux Through Closed Surfaces From Charges </title>
+		<statement>
+			<p>
+				Figure below shows a region of space with three point charges and three uniform charge distribution, one a line charge, another a surface charge distribution, and a volume charge distribution. Find electric flux through each of the seven <alert> closed</alert> surface shown as dashed line. 
+			</p>
+			<image source="./images/gausss-law/ex-computing-e-flus-through-closed-surfaces.png" width="70%"/>
+
+		</statement>
+		<hint> <p>  Use Gauss's Law. </p> </hint>
+		<answer> <p> 
+			(1) <m>\dfrac{q_1}{\epsilon_0}</m>, 
+			(2) <m>\dfrac{-q_2+q_3}{\epsilon_0} </m>, 
+			(3) <m> \dfrac{q_3 + \lambda L}{\epsilon_0}</m>, 
+			(4) <m> \dfrac{-\sigma\, A}{\epsilon_0}</m>, 
+			(5) <m> \dfrac{\rho\, V}{\epsilon_0}</m>, 
+			(6) <m>\dfrac{(-\sigma\, A + \rho\, V)}{\epsilon_0} </m>, 
+			(7) <m>0</m>.  </p> </answer>
+		<solution> 
+			<p>
+				In each case, we just need to find how much charge there is inside the enclosing surface.
+				<md>
+					<mrow> \Phi_{S_1}\amp = \dfrac{q_1}{\epsilon_0}.</mrow>
+					<mrow> \Phi_{S_2}\amp = \dfrac{-q_2+q_3}{\epsilon_0}.</mrow>
+					<mrow> \Phi_{S_3}\amp = \dfrac{q_3 + \lambda L}{\epsilon_0}.</mrow>
+					<mrow> \Phi_{S_4}\amp = \dfrac{-\sigma\, A}{\epsilon_0}.</mrow>
+					<mrow> \Phi_{S_5}\amp = \dfrac{\rho\, V}{\epsilon_0}.</mrow>
+					<mrow> \Phi_{S_6}\amp = \dfrac{(-\sigma\, A + \rho\, V)}{\epsilon_0}.</mrow>
+					<mrow> \Phi_{S_7}\amp = 0.</mrow>
+
+				</md>
+				Note the answer for <m>\Phi_{S_7}</m> - it is zero since there is no charge inside the surface.
+			</p>
+		</solution>
+	</exercise>
+
+	<subsection><title> Applying Gauss's Law to Find Electric Field</title>
+
+		<p>
+			Gauss's law is very helpful in determining formulas for <alert>magnitude</alert> of electric field even though the law is about the electric flux and not directly about the electric field as we will see in examples below. The application hinges on recognizing and applying symmetry in physical situations.
+		</p>
+		<!-- <p>
+			It turns out that in <alert>situations that have a certain symmetry</alert> in the charge distribution we can deduce the electric field based on a knowledge of the electric flux.  In these situations an application of the Gauss's law  can make a complicated problem very simple.  Therefore, it is worthwhile for you to learn when and how you may be able to use Gauss's law to find electric field.
+		</p> -->
+		<p>
+			Basically, there are only three types of problems that have the requisite symmetry so that Gauss's law can be fruitfully used to deduce the electric field.  
+			<ol>
+				<li> A charge distribution with a spherical symmetry</li>
+				<li> A charge distribution with a cylindrical symmetry</li>
+				<li> A charge distribution with a planar symmetry </li>
+			</ol>
+ 		</p>
+ 		<p><alert>General Approach:</alert></p>
+ 		<p>	
+			In each case, based on the symmetry of the charge distribution, we can guess two important aspects of the electric field by that type of symmtery:
+			<ol>
+				<li> Direction of <m>\vec E</m>. </li>
+				<li> Functional form of the magnitude, <m>E</m>. </li>
+			</ol>
+			Armed with this knowledge, it is possible to find a Gaussian surface which will make flux equal to either zero or a product of <m>E</m> and some area <m>A</m>. 
+			<me>
+				\Phi \sim E \times A.
+			</me>
+			By using the charge distribution, we find the charge that's inside the Gaussian surface we choose. This will give <m>q_\text{enc}</m>. Now, we put the expression for flux and <m>q_\text{enc}</m> in Gauss's law and solve for the magnitude of electric field <m>E</m>.
+			<me>
+				E = \dfrac{1}{A}\,\dfrac{q_\text{enc}}{\epsilon_0}.
+			</me>
+		</p>
+		<p>
+			Mathematical details differ considerably in the three types of symmetries. Therefore, I will present each in a separate section.
+		</p>
+ 
+
+	</subsection>
+
+
+
+
+
+   
+
+  
+
+
+
+
+
+</section>

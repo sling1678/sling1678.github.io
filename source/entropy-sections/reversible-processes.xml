@@ -1,0 +1,104 @@
+<section xml:id="Reversible-Process"><title> Reversible Process </title>
+	<introduction>
+		<p>
+			How would you heat a tank of gas so slowly that at each instant it remains in equilibrium? This is clearly not possible in reality. In order for heat to flow into the gas, you would need environment of the gas to be at a higher temperature than the gas. This would make the gas near wall to be at a slightly higher temperature than the rest of the gas. This means that the gas would not be in thermal equilibrium with itself or with the environment. 
+		</p>
+		<p>
+			However, <em>we can imagine an ideal process</em> in which the difference is negligible. Say, the temperature of the gas is <m> 300\text{K}</m>. If we place the tank in a large water bath also at temperarture <m> 300\text{K}</m>, then gas and the water will be in thermal equilibrium. Now, if we increase the temperature of the water bath ever so sligtly, heat will flow in the gas but we can control the heating rate so that if we were to cool the water a little bit, the change will be exactly reversed restoring the original states of everything. This can be guaranteed to a degree of accuracy we may demand, especially if this is done in infinitely many <em> infinitesimal steps</em>.
+		</p>
+		<p>
+			The ideal slow process described in the last paragraph is called <term> reversible</term> process, since reversing the previous <em> infintesimal step</em> completely restores all states.
+		</p>
+		<sidebyside widths="45% 10% 40% 5%">
+			<p>
+				Every step of a Carnot cycle is a reversible process. It was shown by Carnot that the heat exchanged by the gas in a Carnot cycle obeys a proportionality relation to the temperature of the two baths. 
+			</p>
+			<p></p>
+			<image source="./images/entropy/carnot-engine.png"/>
+			<p></p>
+		</sidebyside>
+		<p>
+			Carnot showed that heat <m> Q_H </m> absorbed by the ideal gas at temperature <m> T_H </m> and heat <m> Q_C</m> released at the lower temperature <m> T_C</m> are in the same proportion as the temperatures expressed in the absolute scale.
+				<me>
+					\left| \dfrac{Q_H}{Q_C} \right| = \dfrac{T_H}{T_C}
+				</me>
+			Using a positive sign for an energy entering the system and a negative for the energy leaving the system, we obtain the following over a cycle.
+			<me>
+				\dfrac{Q_H}{-Q_C} = \dfrac{T_H}{T_C}
+			</me>
+			Rearranging this equation, we find the following relation for the heat exchange of the Carnot engine with the environment over a cycle.
+			<men xml:id="eq-qh-th-qc-tc-carnot">
+				\frac{Q_H}{T_H} + \frac{Q_C}{T_C} = 0.
+			</men>
+			Suppose you think of the isothermal step of heating at <m> T_H</m> as made up tiny steps each with heat <m>\Delta Q</m> at <m> T_H</m>. And similarly for the processes at the colder bath. That would mean Eq. <xref ref="eq-qh-th-qc-tc-carnot"/> is actually a n infinte sum of infinitesimal steps. By doing that we get an very general result, applicable not only to the Carnot cycle but to <em> every reversible cyclic process</em>.
+			<men xml:id="eq-carnot-cycle-heat-1">
+				\sum{\frac{\Delta Q}{T}} = 0.\ \ \ \ \text{(Reversible Cyclic Process)}
+			</men>
+			This more general conclusion was obtained mathematically by Clausius. He actually obtained an inequality that is obeyed by all cyclic processes, where equality is for the reversible process.
+			<men xml:id="eq-entropy-inequality-delta-form">
+				\sum\frac{\Delta Q}{T} \le 0 \ \ \ 	\textrm{(All cycle processes in nature)}.
+			</men>
+
+		</p>
+	</introduction>
+
+
+
+
+
+
+<!-- 
+	<subsection><title><m> \Delta Q/T</m> in the Carnot Cycle</title>
+
+		<p>
+			The examination of reversible cyclic processes, such as the Carnot cycle, led Clausius to the discovery of the property of entropy.  Therefore, we first recall some of the important features of a Carnot engine cycle.  We found that in a Carnot engine, heat <m> Q_H </m> absorbed by the ideal gas at temperature <m> T_H </m> and heat <m> Q_C</m> released at the lower temperature <m> T_C</m> are in the same proportion as the temperatures expressed in the absolute scale.
+			<men>
+				\dfrac{Q_H}{Q_C} = \dfrac{T_H}{T_C}
+			</men>
+			Using a positive sign for an energy entering the system and a negative for the energy leaving the system, we obtain the following over a cycle.
+			<men>
+				\dfrac{Q_H}{-Q_C} = \dfrac{T_H}{T_C}
+			</men>
+			Rearranging this equation, we find the following relation for the heat exchange of the Carnot engine with the environment over a cycle.
+			<men>
+				\frac{Q_H}{T_H} + \frac{Q_C}{T_C} = 0.
+			</men>
+
+			Using the summation sign, we can rewrite this result more compactly as follow.
+			<men xml:id="eq-carnot-cycle-heat-1">
+				\sum{\frac{\Delta Q}{T}} = 0 \ \ \ 	\text{(Carnot cycle)} 
+			</men>
+			where <m> \Delta Q</m> is the heat entering the system from the environment at temperature <m>T</m>.  In this equation, <m> \Delta Q</m> is positive for heat entering  the system and negative for heat leaving the system.
+		</p>
+		<p>
+			Clausius proved a more general result than Eq. <xref ref="eq-carnot-cycle-heat-1"/> and showed that Eq. <xref ref="eq-carnot-cycle-heat-1"/> is a result of the reversibility of the Carnot cycle. In any <term> reversible cycle</term>, the sum of the ratio of heat and temperature at which heat was exchanged can never be positive.
+		</p>
+	</subsection> -->
+<!-- 	<subsection><title> (Calculus) Vanishing of <m>\Delta Q/T</m> in a Reversible Cycle</title>
+
+		<p>
+			The vanishing of <m>Q/T</m> in a reversible cycle can be proven more generally. For instance, consider an arbitrary Carnot cycle. <xref ref="fig-carnot-multiple"/> shows how this Carnot can be broken up into infinitely many smaller Carnot sub-cycles. 
+		</p>
+		<figure xml:id="fig-carnot-multiple">
+			 <caption> 
+			 	Any Carnot cycle can be broken up into multiple Carnot subcycles as shown here. The larger cycle is just a sum of the smaller cycles indicated. This process can be continued ad-infinitum.
+			 </caption>
+			 <image source="./images/entropy/carnot-multiple.png" width="70%"/>
+		</figure>
+		<p>
+			Now, thinking of the entire cyclic process as consisting of infinitesimal steps, one can write Eq. <xref ref="eq-carnot-cycle-heat-1"/> as an integral. 
+			<men>
+				\oint\frac{dQ}{T} = 0 \ \ \ 	\textrm{(Carnot cycle)}
+			</men>
+			By an ingenious argument presented at the end of this chapter, Clausius proved that the following inequality will hold true for any arbitrary cyclic process.
+			<men xml:id="eq-entropy-inequality-1">
+				\oint\frac{dQ}{T} \le 0 \ \ \ 	\textrm{(All cycle processes in nature)}.
+			</men>
+			This inequality is called <term> Clausius's inequality</term>. This inequality  is yet another way  of expressing second law of thermodynamics.  If the equality holds, then the process is called a <term> reversible process</term>.  If the equality does not hold then the process is called an <term> irreversible process</term>.   
+
+		</p>
+	</subsection> -->
+
+
+
+</section>

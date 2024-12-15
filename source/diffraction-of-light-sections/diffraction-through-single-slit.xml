@@ -1,0 +1,137 @@
+<section xml:id="section-diffraction-through-a-single-slit-light"><title>Diffraction Through a Single Slit</title>
+	<introduction>
+		<p>
+			In this section we study the diffraction phenomenon in more detail.  As our first example, we consider a light source in front of a narrow slit in an opaque material as shown in <xref ref="fig-single-slit-diffraction-setup"/>.  Suppose the light source is either far away or at the focal plane of a lens so that the waves are planar at the slit.
+		</p>
+
+		<figure xml:id="fig-single-slit-diffraction-setup">
+			<caption>
+				  Shadow, Fresnel and Fraunhofer diffraction regions and patterns from a horizontal slit in front of a point source placed far away from the slit of width <m>b</m>.
+			</caption>
+			<image source="./images/diffraction-of-light/single-slit-diffraction-setup.png" width="100%"/>
+		</figure>
+
+
+		<p>
+			We place a screen behind the slit to observe the diffraction pattern there when it is placed at different distances from the slit.  If the screen is placed immediately behind the slit, we find a <alert> shadow of the slit</alert> on the screen.  When we move the screen further out, the shadow develops fringes whose pattern changes as you move the screen further out.  These patterns are called <term> Fresnel or near-field diffraction}</term>. Moving the screen further away from the slit you reach a region where the patterns stabilize and although they spread out more as you move the screen further away, the pattern remains the same.  We call this pattern the <term> Fraunhofer or far-field diffraction</term> after <term> Joseph von Fraunhofer</term>, who built the first diffraction grating consisting of 260 closely, spaced parallel wires in 1821, and measured wavelengths of colored lights. 
+		</p>
+		<p>
+			In the following, we will study a trick that lets us predict the directions for diffraction minima. In the next section we will study variation of intensity in a diffraction pattern. We can use the formula of intensity to find the direction of diffraction maxima as well as minima and the width of the peaks corresponding to the maxima.  
+		</p>
+
+	</introduction>
+
+	<subsection xml:id="subsection-Minima-in-a-Single-slit-Diffraction-by-trick"><title>Minima in a Single-slit Diffraction</title>
+		<p>
+			How can we predict the locations of bright and dark circles on the screen of a single-slit Fraunhofer diffraction?  It turns out that we can find the minima of  the diffraction on the screen by a clever procedure rather than looking at how intensity of the wave varies with the direction.  
+			The trick is to imagine the wavefront at the slit as consisting of infinite number of wave sources and try to pair up two points whose waves will produce a destructive interference on the screen.  
+		</p>
+		<p>
+			For instance, say we divide up the slit into two equal zones, we obtain one set of pairs of sources which consist of a point at the top of the upper zone and a point at the top of the lower zone, the next point of the top zone is paired with the corresponding point of the lower zone, etc., as illustrated in <xref ref="fig-pairing-single-slit-parts-at-half"/>. 
+		</p>
+		<figure xml:id="fig-pairing-single-slit-parts-at-half">
+			<caption>
+				   The first-order minimum - the path difference must equal half-wavelength for the paired waves to be out-of phase.
+			</caption>
+			<image source="./images/diffraction-of-light/pairing-single-slit-parts-at-half.png" width="70%"/>
+		</figure>
+
+
+		<p>
+			Since, the screen is far away, all the rays will be approximately parallel there and the path differences between the members of every pair will be same, regardless of their location in the zones.   Thus if the path difference of one of these pairs is equal to half a wavelength, they will all interfere destructively at the screen.
+ 		</p>
+ 		<p>
+			We can work out the path difference from the triangle in  <xref ref="fig-pairing-single-slit-parts-at-half"/>. With the slit width <m>b</m>, the path difference between  rays in the direction <m>\theta</m> from the top of one zone and  and the top of the zone below it will be
+			<me>
+				\frac{b}{2}\, \sin\theta.
+			</me>
+			To be destructive, this will have to equal to <m>\lambda_2</m>. You might say that we can capure this by making this equal to an odd multiple of <m>\lambda/2</m>, but this trick does not work that way. To find the other diffraction minima, the trick is to divide th wavefront at the slit into 4 parts, 8 parts, 16 parts, etc., and make sure that the path difference between top of one zone and the top of the immediate next zone is <m>\pm \lambda/2</m>.
+			<me>
+				\frac{b}{2}\, \sin\theta = \pm \frac{\lambda}{2}.
+			</me>
+			Simplifying this formula we get, as we will recognize as <m>m^\prime=\pm 1</m> diffraction minimum when we study the intensity below, 
+			<men>
+				b\sin\theta = \pm \lambda.
+			</men>
+			Similarly, if you divide up the wave at the slit into four equal zones as shown in  <xref ref="fig-pairing-single-slit-parts-at-quarter"/>.
+		</p>
+
+		<figure xml:id="fig-pairing-single-slit-parts-at-quarter">
+			<caption>
+				   The second-order minimum - the path difference must equal half-wavelength for the paired waves to be out-of phase.
+			</caption>
+			<image source="./images/diffraction-of-light/pairing-single-slit-parts-at-quarter.png" width="70%"/>
+		</figure>
+		<p>
+			Let us label the zones 1, 2, 3 and 4,. We ensure that (1,2) cancel each other and (3,4) cancel each other. Since, the screen is supposed to be far away, we will get the same condition for the two pairs.
+			<me>
+				\frac{b}{4}\, \sin\theta = \pm \frac{\lambda}{2}.
+			</me>
+			Simplifying this formula we get, as we will recognize as <m>m^\prime=\pm 2</m> diffraction minimum when we study the intensity below, 
+			<men>
+				b\sin\theta =  \pm2\lambda.
+			</men>
+			You can generalize your results to
+			<me>
+				b\sin\theta =  m^\prime \lambda, \ \ \ (m^\prime = \pm 1, \pm 2, \pm 3, \cdots.)
+			</me>
+ 
+
+		</p>
+
+	</subsection>
+
+	<exercise xml:id="exercise-Angles-and-Position-for-Diffraction-Minima-for-a-Single-Slit-Diffraction"><title>Angles and Position for Diffraction Minima for a Single Slit Diffraction</title>
+
+		<statement>
+			<p>
+				Light of wavelength <m>550\text{ nm}</m> passes through a slit of width <m>2.0\:\mu\text{m}</m>.  Find the location of <m>m^\prime=-2,\ -1,\ 1,\ 2</m> <alert>minima</alert> on a screen <m>50\text{ cm}</m> away in terms of  
+				(a) angles subtendend with the horizontal direction from the center of the slit, and 
+				(b) <m>y</m> coordinates of the positions of the dark bands using a <m>y</m> axis pointed up with origin at the center of the  central maximum.
+			</p>
+		</statement>
+		<hint><p>(a Use the condition for minima. (b) Use <m>y=L\tan\theta</m>.</p></hint>
+		<answer><p> (a) <m>16^{\circ},\ 33.4^{\circ}</m>,  (b) <m>\pm 14\ \textrm{cm},\  \pm 33\ \textrm{cm}</m> .</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)	The minima are given by the following condition
+				<me>
+					b\sin\theta = m^\prime \lambda \ \ (m^\prime = \pm 1, \pm 2, \pm 3, \cdots)\ \ \text{(destructive)}.
+				</me>
+				Hence, the four minima around the central maxima will have <m> m^\prime = \pm 1, \pm 2</m>.  The corresponding directions from the slit are
+				<md>
+					<mrow> \amp \theta_{\pm 1} = \pm\sin\left( \frac{\lambda}{b}\right) = \pm 16^{\circ}</mrow>
+					<mrow> \amp \theta_{\pm 2} = \pm\sin\left( \frac{2\lambda}{b}\right) = \pm 33.4^{\circ}</mrow>
+				</md>
+				Pictorially, the directions from the slit for the minima are illustrated in <xref ref="fig-exercise-single-slit-diffraction-minima-550nm-50cm"/>.
+				<figure xml:id="fig-exercise-single-slit-diffraction-minima-550nm-50cm">
+					<caption>
+						 Figure for <xref ref="exercise-Angles-and-Position-for-Diffraction-Minima-for-a-Single-Slit-Diffraction"/> (a). 
+					</caption>
+					<image source="./images/diffraction-of-light/exercise-single-slit-diffraction-minima-550nm-50cm.png" width="80%"/>
+				</figure>
+
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				The location of the diffraction minima on the screen can be deduced from the right-angled triangles.  Let the <m>y</m>-axis be pointed up on the screen, then we will have
+				<me>
+					y = (50\ \textrm{cm})\ \tan\theta.
+				</me>
+				Denote the positions of the four minima by <m>y_{+1}</m>, <m>y_{-1}</m>, <m>y_{+2}</m> and <m>y_{-2}</m>.
+				<md>
+					<mrow> \amp y_{\pm 1} =  (50 \textrm{cm})\ \tan\theta_{\pm 1} = \pm 14\ \textrm{cm}</mrow>
+					<mrow> \amp y_{\pm 2} =(50 \textrm{cm})\ \tan\theta_{\pm 2} = \pm 33\ \textrm{cm}</mrow>
+				</md>
+			</p>
+		</solution>
+
+
+	</exercise>
+
+
+
+
+
+</section>

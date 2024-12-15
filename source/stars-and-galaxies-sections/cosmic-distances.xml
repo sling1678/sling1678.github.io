@@ -1,0 +1,150 @@
+<section xml:id="sec-Cosmic-Distances"><title>Cosmic Distances</title>
+	<introduction>
+		<p>
+			In the night sky brighter stars appear to be nearer than the fainter stars.  But is that really the case? Various methods are used to measure distance to stars. The distance to the nearest stars can be obtained by the parallax method of geometry.
+		</p>
+	</introduction>
+
+	<subsection><title>The Parallax Method</title>
+		<p>
+			The parallax method makes use of the fact that when you look at an object from two positions, the object would appear to be in different directions in space.  Suppose a star is directly overhead.  When you look at such a star every day you would find that the star is in slightly different direction each night compared to the ``fixed stars'' background. Over a period of one year the directions to the star would make a circle in the sky as illustrated in <xref ref="fig-astro-parallax-method-1"/>.  In this diagram, we measure <m>\theta</m>, the angle to the horizon, and deduce   the apex angle, <m>\alpha</m>, which is also called the <term>parallax angle</term>.
+		</p>
+
+ 		<figure xml:id="fig-astro-parallax-method-1">
+			<caption>
+				The distance <m>x</m> to the star S can be obtained from the Earth-Sun distance <m>d_{\odot}</m> and the parallax angle <m>\alpha</m>, obtained by the angles <m>\theta</m>  by the observation points from two points on the orbit of the Earth around the Sun by  <m>x = d_{\odot}/\tan\alpha</m>. The angle <m>\alpha</m> is usually very small so that <m>\tan\alpha</m> can be replaced by <m>\alpha</m> in radians.
+			</caption>
+			<image source="./images/modern-physics/astro-parallax-method-1.png" width="70%"/>
+		</figure>
+
+		<p>
+			The angle <m>\alpha</m> at the star S of the triangle is called the <term>parallax angle</term>.  From the triangle with vertices at the Earth, the Sun, and the star, we see that the apex angle <m>\alpha</m> will be given by
+			<me>
+				\alpha = 90^{\circ} - \theta.
+			</me>
+			In terms of the parallax angle the distance to the star will be
+			<me>
+				x = \frac{d_{\odot}}{\tan\alpha}.
+			</me>
+			The angle <m>\alpha</m> is usually very small such that we can replace <m>\tan\alpha</m> by <m>\alpha</m> expressed in radians.
+			<men xml:id="eq-parallax-formula">
+				x = \frac{d_{\odot}}{\alpha}. 
+			</men>
+			The Earth-Sun distance <m>d_{\odot}</m> is approximately <m>1.5\times 10^{11}</m> m and referred to as 1 astronomical unit (AU).
+			<me>
+				d_{\odot} = 1.5\times 10^{11}\:\text{m} \equiv 1\: \text{AU}.
+			</me>
+			In astronomy we deal with very large distances and unit meter is not convenient.  In addition to AU unit of distance, there are two more units of distance in use - parsec (pc) and lightyear (ly).  Parsec is defined by the parallax formula givenin Eq. <xref ref="eq-parallax-formula"/>. We define one parsec to be the distance for which the parallax is one arcsec.  That is, oneparsec is the value of <m>x</m> in Eq. <xref ref="eq-parallax-formula"/> when
+			<me>
+				\alpha = 1\:\text{arcsec} = 4.848\times10^{-6} \:\text{rad}.
+			</me>
+			This gives
+			<me>
+				1\:\text{pc} = \frac{1.5\times 10^{11}\:\text{m}}{ 4.848\times10^{-6} \:\text{rad}} = 3.1\times10^{16}\:\text{m}.
+			</me>
+			Expressing this in AU we get
+			<me>
+				1\:\text{pc} = 3.1\times10^{16}\:\text{m}  = 2.1 \times 10^{5}\:\text{AU}.
+			</me>
+		</p>
+		<p>
+			There is another convenience in using the unit parsec.  Let <m>\alpha</m> be given in arcsec, then the distance is parsec will be simply the inverse of the angle in arcsec.
+			<men xml:id="eq-arsec-to-parsec">
+				x[\text{pc}] = \frac{1}{\alpha[\text{arcsec}]}. 
+			</men>
+			This is easily seen by dividing both sides of Eq. <xref ref="eq-parallax-formula"/> by 1 pc. The cancellation of <m>d_{\odot}</m> leaves the simple formula for the relation of the distance in parsec and the parallax angle in arcsec.
+			<me>
+				\frac{x}{1\:\text{pc}} = \frac{d_{\odot}/\alpha}{d_{\odot}/1[\:\text{arcsec}]}\ \ \Longrightarrow\ \  x[\text{pc}] = \frac{1}{\alpha[\text{arcsec}]}.
+			</me>
+			Most of the stars visible to the naked eye are within about 100 pc from us. For larger distances, we successively use metric system prefixes such as, kilo-parsec (kpc), mega-parsec (Mpc), and giga-parsec (Gpc).
+		</p>
+		<p>
+			Sometimes distances are  expressed in yet another unit of distance called lightyear (ly).  This name is misleading since the name ends in the word year, which would imply that this is a unit of time, but, a light year is a distance traveled by light in one year. 
+			<me>
+				1\:\text{ly} = 3.0\times 10^{8}\:\text{m/s} \times \frac{3.156 \times 10^{7}\:\text{s}}{1\:\text{y}} \times 1\:\text{y} = 9.468\times 10^{15}\:\text{m}.
+			</me>
+			The conversion between light years and parsec will be
+			<me> 
+				1\:\text{pc} = \frac{3.1\times10^{16}\:\text{m}}{9.468\times 10^{15}\:\text{m}}\:\text{ly} = 3.3\:\text{ly}.
+			</me>
+		</p>
+	</subsection>
+
+
+	<exercise xml:id="ex-Parallax-Angle-for-Alpha-Centauri"><title>Parallax Angle for Alpha Centauri</title>
+
+		<statement>
+			<p>
+				The parallax angle for the star alpha centauri is measured to be <m>\alpha</m> =0.75 arcsec. (a) What is the distance to the star in meter? (b) What is the distance in parsec? (c) What is the distance in light year?
+			</p>
+		</statement>
+		<hint><p>
+			Use Eq. <xref ref="eq-parallax-formula"/>.
+		</p></hint>
+		<answer><p>
+			(a) <m>\frac{4}{3}\: \text{pc}</m>, (b) <m>4.4\:\text{ly}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				(a) To find the distance in meter we first convert the angle into radian and then use the relation, Eq. <xref ref="eq-parallax-formula"/>. Since, there are 3,600 arcsec in 1-degree and 180 degrees in <m>\pi</m> radian, <m>\alpha</m> in radian will be
+				<me>
+					\alpha = 0.75\:\text{arcsec}\times \frac{1^{\circ}}{3,600\:\text{arcsec}}  \times \frac{\pi\:\text{rad}}{180^{\circ}} = 3.636\times 10^{-6}\:\text{rad}.
+				</me>
+				From this we obtain the distance to alpha centauri meter to be.
+				<me>
+					x = \frac{d_{\odot}}{\alpha} = \frac{1.5\times 10^{11}\:\text{m}}{3.636\times 10^{-6}\:\text{rad}} = 4.125 \times 10^{16}\:\text{m}.
+				</me>
+				(b) We could use the conversion from meter to parsec to get the distance in parsec.  But, I want to illustrate the inverse relation of the arcsec to parsec in Eq. <xref ref="eq-arsec-to-parsec"/>.
+				<me>
+					x[\text{pc}] = \frac{1}{\alpha[\text{arcsec}]} =  \frac{1}{0.75\: \text{arcsec}} = \frac{4}{3}\: \text{pc}. 
+				</me>
+				(c) Now, we can use either m to ly or pc to ly. 
+				<me>
+					x = \frac{4}{3}\: \text{pc} \times 3.3 \:\text{ly/pc} = 4.4\:\text{ly}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<subsection><title>Limitations of the Parallax Method</title>
+		<p>
+			Note from above that if the stars are too far away [<m>x</m> large] then the parallax angle <m>\alpha</m> will be too small. So far, the smallest parallax was measured by the European Space Agency satellite Hipparcos  (acronym for <q>High precision parallax collecting satellite</q> and also a reference to the ancient Greek astronomer Hipparchus who is reputed to have compiled the first list of stars according to their intensities), launched in 1989. Hipparcos collected data on 118,200 stars during the period 1989-1993 with a precision of  0.002 arcsec. This precision gives the largest distance measurable distance by the parallax to be about 1000 pc.
+			<me>
+				x_{\text{Hipparcos}} \sim \frac{1}{0.002\: \text{arcsec}} [\text{pc}] = 500\: \text{pc}.
+			</me>
+			Currently we are a long way from obtaining a complete map of our galaxy, the Milky Way, since our galaxy is about 30,000 pc across. European Space Agency (ESA) has launched a mission on Decemeber 19, 2013, called Gaia, which is a follow up of Hipparcos. The satellite Gaia has 50 times better precision than Hipparcos with a precision of 0.040 milli-arc-sec (mas).  With this precision it would be able to explore a distance of 
+			<me>
+				x_{\text{Gaia}} \sim \frac{1}{0.040\: \text{milliarcsec}} [\text{pc}] = 25\: \text{kpc}.
+			</me>
+
+		</p>
+	</subsection>
+
+	<subsection><title>Standard Candles for Distance</title>
+
+		<p>
+			Presently distances beyond 1000 pc are not measurable by the parallax method. In 1912, <term>Henrietta Leavitt</term> discovered that pulsating stars, called <term>Cepheids</term>, had a strong correlation between their luminosity and period. Cepheids are a class of stars which pulsate between brightest and dimmest intensity with a well-defined period, usually over days.  When Henietta Leavitt plotted the maximum luminosity of the cepheid stars in the Small Magellenic Cloud versus the period of pulsation she found that the luminosity and period were correlated.  From her plot, you can predict the absolute luminosity if you know the period. From the absolute luminosity and measured luminosity at Earth, you can determine the distance since luminosity drops as the square of the distance from the source. We will discuss these methods in more detail after we discuss luminosity of stars.
+		</p>
+		<p>
+			When used for deducing cosmic distances, the Cepheids are also called <term>standard candles</term>.  There are also other standard candles. The distance to even further distances are deduced by using Supernovae due to their intense brightness. 
+		</p>
+	</subsection>
+
+TODO: 
+
+<p>
+\begin{exercise}
+You shoot a radar towards the moon.  The signal comes back 2.4 sec later.  How far is the Moon?
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+ The parallax angle to a star is 0.01 arcsec.How far is the star in  (a)  pc , (b) ly,  (c)  m?
+\end{exercise}
+
+</p>
+
+</section>

@@ -1,0 +1,86 @@
+<section xml:id="Magnetization-of-Materials"><title> Magnetization of Materials </title>
+	<introduction>
+		<p>
+			Magnetic materials contain atomic magnetic dipoles. When these dipoles align with each other, their net magnetism can be felt macroscopically. Therefore, net magnetic dipole moment per unit volume will give us a measure of strength of a magnet. This quantity is called <term> magnetization</term>.
+		</p>
+		<p> 
+			Suppose there are <m>N</m> magnetic dipoles in volume <m>V</m>, each with magnetic dipole monent <m>\vec \mu</m>. If all of these dipoles were to line up in the same direction, say, the positive <m>z</m> direction, then the net dipole moment will be <m>N\vec \mu</m>. This will give magnetization <m>\vec M</m> to be
+			<me>
+				\vec M = \dfrac{N\vec \mu}{V}.
+			</me>
+			In real life, perfect alignment does not occur due to thermal effects, which gets worse if you heat a magnet. For instance, a magnet made from iron will completely lose its magnetization above <m>773^\circ\text{C}</m>, the <term> Curie temperature</term> for iron.
+		</p>
+	</introduction>
+	<subsection><title> Diamagnets, Paramagnets, and  Ferromagnets </title>
+
+		<p>
+			When you place an unmagnetized material in a magnetic field,  induced magnetization depends upon whether or not its atoms have permanent microscopic magnetic dipoles. The resulting magnetization of a material with permanent microscopic magnetic dipoles is parallel to the applied magnetic field. These materials are called <term>  paramagnets</term>. When the resulting magnetization of a material is opposite to the direction of the applied field, the material is called <term> diamagnets</term>. Superconductors are extreme example of diamagnets since their magnetization completely cancels the applied field in the body of the superconductor.
+		</p>
+
+		<p>
+			Both paramagnetic and diamagnetic materials lose their magnetism when external field is removed since their magnetization is induced by an external field. But in nature we find magnets, such as iron or nickel magnets, called <term> ferromagnets</term>, that remain magnetized even in the absence of external magnetic field. If an unmagnetized sample of  these materials is placed in an external magnetic field, they tend to get permanently magnettized as long as temperature is less than critical temperature, called Curie point, that varies among materials. Strangely, magnetic strength of ferromagnets depends not only on the temperature and the applied field, but also upon its magnetic history. 
+		</p>
+	</subsection>
+
+
+	<subsection><title> Nuclear Magnetization </title>
+
+		<p>
+			The protons and neutrons in an atom reside in the nucleus having a volume of the order of <m>10^{-45} \text{ m}^3</m>.  Contrast this to the volume occupied by an atom, which is of the order of <m>10^{-30} \text{ m}^3</m>.  Since the repulsive electrical forces between protons in the nucleus is tremendous, you would expect that protons cannot stay in the tiny space of the nucleus.  There is, however, a much stronger force called the <term>strong nuclear force</term> that acts between protons that is responsible for overcoming the repulsive electrical force between protons in the nucleus. Strong nuclear force also acts between protons and neutrons, and between neutrons and neutrons.
+		</p>
+		<p>
+			A proton is a spin 1/2 particle similar to an electron.  The projection of spin angular momentum along any direction is again quantized giving the values  <m>\pm\hbar/2</m> in any measurement of the spin angular momentum projection along the chosen axis.  The gyromagnetic ratio for protons <m>g_p</m> is approximately 2000 times smaller than the gyromagnetic ratio of electrons due to different masses of the two kinds of particles.   
+			<me>
+				g_p = \dfrac{m_e}{m_p}\, g_e
+			</me>
+			where <m>m_e</m> and <m>m_p</m> are masses of electron and proton respectively.  The magnetic moments of nuclei are given in terms of nuclear magneton  <m>\mu_N</m> instead of Bohr magneton <m>\mu_B</m>.  The  nuclear magneton  <m>\mu_N</m> is defined by replacing the electron mass in the Bohr magneton definition by a mass of a proton. 
+			<me>
+				\mu_N = g_p \hbar = \dfrac{e\hbar}{2m_p} = 3.15\times 10^{-27} A.m^2.
+			</me>
+			The magnetic moment of a proton inside hydrogen nucleus is <m>2.7928 \mu_N</m>.  Note that nuclear magnetic moments are of the order of <m>10^{-27} \ \text{A.m}^2</m> per nucleus while electron magnetic moments are of the order of <m>10^{-24} \ \text{A.m}^2</m>.  Hence, nuclear magnetism can be mostly ignored when studying magnetic properties of materials.  Even so, the resonance of nuclear magnetic moments provides a useful analytical tool.
+		</p>
+		<p> 
+			The resonance of a nuclear magnetic moment takes place when its direction is flipped back and forth dynamically with respect to a direction defined by a static magnetic field.  The dynamical magnetic field is provided by electromagnetic waves.  The frequency of the wave needed to accomplish the flip depends on the chemical environment of the atom.  The effect, called <term>  nuclear magnetic resonance</term> or <term>NMR</term>,  provides an important tool for the identification of chemical structure and the study of chemical environment of an atom. 
+		</p>
+		<p>
+			Nuclear magnetic resonance has also found medical applications through the invention of a machine called the <term> Magnetic Resonance Imaging (MRI)</term>. In MRI, we align the nuclear magnetic moments of protons, usually of  hydrogen atoms in the body, by means of a strong static magnetic field, and then apply a time dependent magnetic field on the sample that flips the direction of the nuclear magnetic moments.  In doing so, the sample absorbs energy from the dynamic field.  The energy needed to flip a proton's spin magnetic moment from being aligned parallel to static field  <m>\vec B</m>  to being anti-parallel to it is given by 
+			<me>
+				\Delta U = \Delta\left( -\vec\mu\cdot\vec B\right) = 2\mu B.
+			</me>
+			The energy taken from the electromagnetic wave of appropriate frequency is accounted for in terms of energy of each photon of the electromagnetic wave,
+			<me>
+				E_{\text{photon}} = hf,
+			</me>
+			where <m>h</m> is the Planck constant and <m>f</m> the frequency of the electromagnetic wave.
+			Hence, the energy conservation for the absorption of electromagnetic wave by the sample yields the required frequency.
+			<me>
+			hf = 	\Delta U = 2\mu B\ \  \Longrightarrow \ \ f = \dfrac{2\mu B}{h}.
+			</me>
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Energy-for-Rotating-Magnetic-Dipole-Moment-of-Proton"><title> Energy for Rotating Magnetic Dipole Moment of Proton</title>
+		<statement>
+			<p>
+				Determine the frequency of electromagnetic wave needed to flip the magnetic moment of a proton in hydrogen atom aligned in a <m>2\text{ T}</m> field.  Use 2.7928 <m>\mu_N</m> for the magnetic moment of the proton.
+			</p>
+
+		</statement>
+		<hint> <p>  Use definitions. </p> </hint>
+		<answer> <p>  <m>53\ \text{MHz}</m>. </p> </answer>
+		<solution> 
+			<p>
+				We just use the formula derived above putting in the numerical values.
+				<md>
+					<mrow> f  \amp = \dfrac{2\mu B}{h} </mrow>
+					<mrow>  \amp =\dfrac{2\times 2.7928 \times3.15\times 10^{-27}\text{A.m}^2 \times 2\ \text{T}}{6.627\times 10^{-34} \text{J.s}} </mrow>
+					<mrow>  \amp  = 5.3\times 10^{7}\ \text{Hz} = 53\ \text{MHz}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+</section>

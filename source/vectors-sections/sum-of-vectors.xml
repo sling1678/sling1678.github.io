@@ -1,0 +1,593 @@
+<section xml:id="Adding-Vectors"> <title>Adding Vectors</title><idx>Adding Vectors</idx>
+	<introduction>
+		<p>
+			Vectors are not like simple numbers. They have magnitude, which is a simple positive number, but they also have a direction, which is not a number but a description. Addition of vectors requires special procedure and much care.
+		</p>
+		<p>
+			There are basically two ways to add vectors - (1) graphically, and (2) analytically. The graphical addition procedure is more visual and important for understanding how vectors act together to produce a net vector. The analytical procedure is algebraic and hides much of the intuition, but it is also much easier to implement, especially when multiple vectors have to be added. 
+		</p>
+
+	</introduction>
+
+
+
+	<subsection><title> Adding Vectors Graphically</title><idx><h>Adding Vectors</h><h>Graphically</h></idx>
+		<p>
+			We have already done this in the section on using arrows with a scale for the length-to-magnitude relation to represent vectors. The main idea is in the parallelogram law of addition of vectors. You can review that section and then come back here to get other ways of adding vectors.
+		</p>
+		<p>
+			For the sake of review, let us use our intuition by looking at adding two force vectors. Suppose two of your friends push on you at right angles to each other. You know that the net effect will be at an angle between them. Another thing that you might not notice in this simple experiment is that the net force on you will be less than the sum of the two forces. For instance, one friend pushed on you with <m>10\text{ N}</m> and the other friend with <m>15\text{ N}</m>, then net force on you will NOT BE <m>25\text{ N}</m> if they are pushing at right angle to each other.
+		</p>
+
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				It has been known for a long time that forces add such that if you draw forces on the two sides of a parallelogram, their sum will have magnitude and direction of one of the diagnals of the parallelogram. Which diagonal? Well, if you draw both force coming out of a common vertex with the same scale as in <xref ref="fig-adding_force_vectors_parallelogram"/>, then, net force will be along the diagonal with that same vertex. This is called <term>parallelogram law of addition</term>. Not only forces, but all vectors add this way.
+			</p>
+			<p></p>
+
+		    <figure xml:id="fig-adding_force_vectors_parallelogram">
+		    	<caption> 
+		    	</caption> 
+				<image source="./images/vectors/adding_force_vectors_parallelogram.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+		
+
+
+		<!-- <p> In <alert> diagram form </alert>, 
+			the sum <m>\vec r_{\text{sum}}</m> is the diagonal vector in the parallelogram constructed from <m>\vec r_1</m> and <m>\vec r_2</m> when <m>\vec r_1</m> and <m>\vec r_2</m> are drawn from the same point as shown in <xref ref="fig-vector-sum" />(a). This is called <term>the parallelogram law of addition</term>. 
+		</p> -->
+		<p>
+			An alternative view of vector addition by a diagram is shown in  <xref ref="fig-vector-sum" />(b) with position vectors <m>\vec r_1</m> and <m>\vec r_2</m>. Here, we move the second vector so that it starts at the tip of the first vector. Then, the vector from the tail of the first vector to the tip of the second vector would be the same as the diagonal of the corresponding parallelogram, and hence would be the sum of the two vectors. This method is often called <term> tip-to-tail method of addition</term>.
+		</p>
+
+	    <figure xml:id="fig-vector-sum">
+	    	<caption> 
+	    		Illustrating vector sum, <m> \vec r_{\text{sum}} = \vec r_1 + \vec r_2</m>. (a) The Parallelogram View: Form a paralleogram from <m>\vec r_1</m> and <m>\vec r_2</m>, then the diagonal will be the sum <m>\vec r_{\text{sum}}</m>. (b) The Triangle View: Place the tail of vector <m>\vec r_2</m> at the tip of vector <m>\vec r_1</m>, then the sum is the vector from the tail of <m>\vec r_1</m> to the tip of <m>\vec r_2</m>.
+	    	</caption> 
+			<image source="./images/vectors/vector-sum.png" width="70%"/>
+		</figure>
+	
+	</subsection>
+
+	<example xml:id="Adding-Vectors-Graphically"><title> Adding Vectors Graphically </title>
+		<statement>
+			<!-- <sidebyside widths="50% 50%"> -->
+				 
+			<p>
+				(a) From <xref ref="fig-two-vec-for-subtraction"/> , read off magnitudes and directions of vectors <m> \vec A </m> and <m> \vec B </m>,  draw the negative of vector <m> \vec B </m>. Lets call it <m>\vec C</m>.  
+			</p>
+			<p>
+				(b) Find the magnitude and direction of <m> \vec A - \vec B</m> in two ways: (i) from the components of <m> \vec A + \vec C</m>, and (ii) graphically from the parallelogram formed by <m> \vec A </m> and <m> \vec C </m>.
+			</p>
+				 
+			<figure xml:id="fig-two-vec-for-subtraction">
+				<caption>
+					Figure for <xref ref="Adding-Vectors-Graphically"/>.
+				</caption>
+
+				<image source="./images/vectors/two-vec-for-subtraction.png" width="70%"/>
+			</figure>
+				
+			<!-- </sidebyside> -->
+
+		</statement>
+		<!-- <hint> <p>  For (b) (i), read off the components of <m> \vec A </m> and <m> \vec B </m> and then work out the algebra. For (b) (ii), us a ruler to read off the length of the vector and a protractor to read the angle. </p> </hint> -->
+		<answer> <p> (b) (i) <m> \sqrt{17}\text{ m}, 14.0^{\circ} </m> counterclockwise from <m>+x</m> axis. </p> </answer>
+		<solution> <title>a</title>
+			<p> 
+				We first draw vector <m>\vec C</m> as shown in <xref ref="fig-two-vec-for-subtraction-part-b"/>.
+			</p>
+			<figure xml:id="fig-two-vec-for-subtraction-part-b" >
+				<caption>
+					Figure for <xref ref="Adding-Vectors-Graphically"/>(a).
+				</caption>
+
+				<image source="./images/vectors/two-vec-for-subtraction-part-b.png" width="70%"/>
+			</figure>
+		</solution>
+		<solution> <title>b</title>
+			<p>
+				(i) We add <m> \vec A </m> and <m>\vec C</m> using their components. Let's denote the sum by <m> \vec D</m>.
+				<md>
+					<mrow> \amp D_x = A_x + C_x = 3 + 1 = 4.</mrow>
+					<mrow> \amp D_y = A_y + C_y = 2 - 1 = 1.</mrow>
+				</md>
+				Therefore, the magnitude and angle are:
+				<md>
+					<mrow> \amp D = \sqrt{D_x^2 + D_y^2 } = \sqrt{17}\text{ m}.</mrow>
+					<mrow> \amp  \theta = \tan^{-1}\left( \dfrac{1}{4}\right) = 14.0^{\circ}.</mrow>
+				</md>
+				Since <m> (4,1) </m> is in the first quadrant, the direction is this angle counterclockwise from the positive <m> x </m> axis. 
+
+			</p>
+			<p>
+				(ii) I printed out the figure and used a ruler and a protractor to get the length and the angle - this will give only approximate values, and that's okay. Read directly, the magnitude is <m> \approx 4.0 </m> and the  counterc;ockwise angle from the positive <m> x </m> axis is <m> \approx 15^{\circ}</m>. These values are close enough to the exact values in (i).
+			</p>
+		</solution>
+	</example>
+
+	<subsection> <title> Adding Vectors Analytically Component-by-Component</title><idx><h>Adding Vectors</h><h>Analytically</h></idx>
+		<p>
+		    <!-- You can add vectors diagramatically or analytically. I will show first how to do it analytically using the coordinate-form of the vectors. --> 
+		    The diagramatic addition of vectors illustrated above is very visual and is good for building intuitions and for appreciating the fact that VECTORS DO NOT ADD LIKE REGULAR NUMBERS. There is an alternative approach based on first converting given vectors into sum of vectors along Cartesian axes (or any orthogonal set of axes, for that matter). This method is called the Analytic Method.
+		</p>
+		<p>
+		    Suppose you have two position vectors <m> \vec r_1 </m> and <m> \vec r_2 </m> and you want their sum <m> \vec r_{\text{sum}} </m> as shown in <xref ref="fig-sum_of_vectors_analytically"/>. Formally, we write the parallelogram addition of  vectors <m> \vec r_1 </m> and <m> \vec r_2 </m> as a vector equation.
+			<men xml:id="eq-vector-sum"> 
+				\vec r_{\text{sum}} = \vec r_1 + \vec r_2.
+			</men>
+			<alert>Beware: </alert> THIS DOES NOT MEAN THAT THE LENGTH OF THE SUM VECTOR IS EQUAL TO THE SUM OF THE LENGTHS OF THE TWO VECTORS BEING SUMMED!!!.
+			<me>
+				\text{length of }\vec r_{\text{sum}} \ne (\text{length of }\vec r_{1}) + (\text{length of }\vec r_{2}).
+			</me> 
+			Replacing Eq. <xref ref="eq-vector-sum"/>  by coordinate representations of the three vectors, we might write it like the following.
+			<me>
+				x_{\text{sum}}\,\hat u_x +  y_{\text{sum}}\,\hat u_x = x_1\,\hat u_x +  y_1\,\hat u_x + x_2\,\hat u_x +  y_2\,\hat u_x.
+			</me>
+
+			Or, in a more compact notation, in which we suppress writing the unit vectors explicitly.
+			<me> 
+				\left( x_{\text{sum}}, y_{\text{sum}}\right) =  (x_1, y_1) + (x_2, y_2).
+			</me>
+			<!-- If vectors were in three-dimensional space, we will also have their <m>z</m>-components. -->
+		</p>
+		<!-- <sidebyside widths="50% 5% 45%"> -->
+			<p>
+				<!-- You will learn below that you can sum two vectors by placing one vector at the tip of the other vector and the sum will be from the tail of the first to the tip of the second. --> 
+				If you look at the diagram in (b), you will immediately see that <m>x_\text{sum}</m> is just sum of <m>x_1</m> and <m>x_2</m>, and similarly for the <m>y</m> parts.
+				<mdn> 
+					<mrow>  \amp x_{\text{sum}} = x_1 + x_2,</mrow>
+					<mrow>  \amp y_{\text{sum}} = y_1 + y_2.</mrow>
+				</mdn>
+			</p>
+			<p></p>
+			<figure xml:id="fig-sum_of_vectors_analytically">
+				<caption>
+					Analytical addition of two vectors.
+				</caption>
+				<image source="./images/vectors/sum_of_vectors_analytically.png" width="60%"/>
+			</figure>
+		<!-- </sidebyside> -->
+
+		<p>
+			Now, <alert> if we wanted the magnitude and direction of the sum vector, </alert> we  can just use the <m> (x,y) </m> to <m> (r, \theta)</m> transformations, as we do for any vector.
+			<mdn> 
+				<mrow>  \amp r_{\text{sum}} =  \sqrt{ x_{\text{sum}}^2 + y_{\text{sum}}^2 }</mrow>
+				<mrow>  \amp \tan \theta_{\text{sum}} =  \dfrac{ y_{\text{sum}} }{ x_{\text{sum}} } </mrow>
+			</mdn>
+			Once we get the angle, we deduce the direction from the angle value based on the quadrant the vector is pointed, and then we state the direction as clockwise or counterclockwise angles from Cartesian axes.
+		</p>
+		<p>
+			Often a table of components helps organize the calculations. This is illustrated in <xref ref="Adding-Forces-Using-an-Organizing-Table"/>.
+		</p>
+
+
+
+	</subsection>
+
+
+	
+
+	<example xml:id="Adding-Two-Forces-Given-in-Component-Form"><title> Adding Two Forces Given in Component Form</title>
+		<statement>
+			<p> 
+				Suppose a box is being pushed by two forces, which are given to us in component form, as <m>(F_x, F_y)</m>:
+				<me> 
+					\vec F_1 = (20\text{ N}, 25\text{ N}),\ \ \vec F_2 = (10\text{ N}, 15\text{ N})
+				</me>
+				What are the magnitude and direction of their sum, also called the net force, <m> \vec F_{\text{net}}</m>.
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Add components first. </p> </hint> -->
+		<answer> <p>  <m> 50\text{ N},\, 53.1^{\circ} </m> counterclockwise from positive <m> x </m> axis. </p> </answer>
+		<solution> 
+			<p>
+				From the discusssion of this section, we know that the components of the sum can be easily obtained from the components of the summand.
+				<md>
+					<mrow> \amp F_{\text{net},x} = F_{1x} + F_{2x} = 20\text{ N} + 10\text{ N} = 30\text{ N}. </mrow>
+					<mrow> \amp F_{\text{net},y} = F_{1y} + F_{2y} = 25\text{ N} + 15\text{ N} = 40\text{ N}. </mrow>
+				</md>
+				Therefore, the magnitude of the sum is
+				<me>
+					\text{Magnitude, } F_{\text{net}} = \sqrt{30^2 + 40^2} = 50\text{ N}.
+				</me>
+				To get the direction, we find the angle first by
+				<me>
+					\theta =  \tan^{-1}\left( \dfrac{40}{30}\right) = 53.1^{\circ}.
+				</me>
+				Since point <m>(30, 40)</m> is in the first quadrant, the direction of the net force is counterclockwise from the positive <m> x </m> axis.
+			</p>
+		</solution>
+	</example>
+
+	
+
+	<example xml:id="Adding-Two-Forces-Given-in-Magnitude-Direction-Form"><title> Adding Two Forces Given in Magnitude-Direction Form</title>
+		<statement>
+			<p> 
+				Suppose a box is being pushed by two forces, which are given to us in magnitude-direction form in the <m> xy</m> plane:
+				<me> 
+					\vec F_1 = (30\text{ N},\, \text{East}),\ \ \vec F_2 = (40\text{ N},\, \text{South})
+				</me>
+				Use coordinate axes with positive <m> x </m> towards East and positive <m> y </m> towards North. What are the magnitude and direction of their sum? Note: magnitude is not equal to <m>70\text{ N}</m>.
+			</p>
+
+		</statement>
+		<!-- <hint> <p> First write the given forces in the component forms.  </p> </hint> -->
+		<answer> <p>  <m> 50\text{ N},\, 53.1^{\circ} </m> clockwise from positive <m> x </m> axis. </p> </answer>
+		<solution>
+			<p>
+				We will need to first write the given forces in their component forms. Let <m> x </m> axis be towards East and the <m> y </m> axis towards North. Then, here the component forms of the two given forces are easy to work out.
+				<md>					
+					<mrow> \amp \vec F_1 = (30\text{ N},\ 0),</mrow>
+					<mrow> \amp \vec F_2 = (0,\ -40\text{ N}) </mrow>
+				</md>
+			</p>
+
+			<p>
+				Let's write <m> \vec F </m> for the sum vector. The components of the sum are then
+				<md>
+					<mrow> \amp F_{x} = F_{1x} + F_{2x} = 30\text{ N} + 0 = 30\text{ N}. </mrow>
+					<mrow> \amp F_{y} = F_{1y} + F_{2y} = 0 + (-40\text{ N}) = -40\text{ N}. </mrow>
+				</md>
+				Therefore, the magnitude of the sum is
+				<me>
+					\text{Magnitude, } F_{\text{net}} = \sqrt{30^2 + 40^2} = 50\text{ N}.
+				</me>
+				To get the direction, we find the angle first by
+				<me>
+					\theta =  \tan^{-1}\left( \dfrac{-40}{30}\right) = - 53.1^{\circ}.
+				</me>
+				Since point <m>(30, -40)</m> is in the fourth quadrant, the direction of the net force is clockwise from the positive <m> x </m> axis.
+			</p>
+		</solution>
+	</example>	
+
+
+
+	<exercises>
+
+	<exercise xml:id="Adding-Two-Force-Vectors"><title> Adding Two Force Vectors </title>
+		<statement>
+			<p>
+				Consider two force vectors, <m> \vec F_1 </m> that has a magnitude <m> 25.0\text{ N}</m> in the direction of East, and   <m> \vec F_2 </m> that has a magnitude <m> 40.0\text{ N}</m> in the direction of <m> 30^{\circ}</m> North of East. What are the magnitude and direction of their sum, <m> \vec F_1 + \vec F_2</m>? For stating directions in space, let <m> x </m> axis be pointed towards East, <m> y </m> axis be pointed towards North, and <m> z </m> axis be pointed Up.
+			</p>
+
+		</statement>
+		<hint> <p> Add <m> x </m> components separately from the <m> y </m> components.  </p> </hint>
+		<answer> <p>  <m> 62.9\text{ N}, 18.6^{\circ} </m> counterclockwise from East towards North. </p> </answer>
+		<solution> 
+			<p> 
+				First we find the component forms of each vector, and then will sum components in each direction separately.
+				<md>
+					<mrow>\amp F_{1x} = 25.0\text{ N},\ \ F_{1y} = 0,</mrow>
+					<mrow>\amp F_{2x} = 40.0 \cos\, 30^{\circ} = 34.6\text{ N}, </mrow>
+					<mrow>\amp F_{2y} = 40.0 \sin\, 30^{\circ} = 20.0\text{ N}, </mrow>
+				</md>
+				Now, adding values along each axis separartely, we get  <m> x </m> and <m> y </m> components of the sum. Let us denote them by <m> F_x </m> and <m> F_y</m>.
+				<md>
+					<mrow>\amp F_{x} = F_{1x} + F_{2x} = 25.0 + 34.6 = 59.6\text{ N},</mrow>
+					<mrow>\amp F_{y} =   F_{1y} + F_{2y} =  20.0\text{ N}, </mrow>
+				</md>
+				From these components, we can get the magnitude and direction. Since the values of <m> F_x </m> and <m> F_y</m> places the vector in the first quadrant, the angle will just be the counterclockwise from the positive <m> x </m> axis.
+				<md>
+					<mrow> \amp \text{Magnitude, }F = \sqrt{F_{x}^2 + F_{y}^2 }  = \sqrt{59.6^2 + 20.0^2} = 62.9\text{ N},</mrow>
+					<mrow>\amp  \theta = \tan^{-1}\left( \dfrac{F_y}{F_x} \right) = 
+						\tan^{-1}\left( \dfrac{20}{59.6} \right) = 18.6^{\circ}.
+					 </mrow>
+				</md>										
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="Adding-Forces-Using-an-Organizing-Table"><title> Adding Forces Using an Organizing Table </title>
+		<statement>
+			<p>
+				Suppose we want to add three forces shown in <xref ref="fig-Adding-Forces-Using-an-Organizing-Table"/>.
+			</p>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					<p>
+						 (1) <m> 15.0\text{ N} </m> force pointed down,  (2) <m>12\text{ N} </m> force pointed <m> 54^{\circ}</m> below horizon, and (3) <m> 10.0 \text{ N} </m> force pointed up. 
+					</p>
+					<p>
+						(a) Organize the components of these forces in a table and find the components of the sum.
+					</p>
+					<p>
+						(b) Find the magnitude and direction of the sum.
+					</p>							
+				</p>
+				<p></p>
+				<figure xml:id="fig-Adding-Forces-Using-an-Organizing-Table">
+					<caption>
+					</caption>
+					<image source="./images/vectors/Adding-Forces-Using-an-Organizing-Table.png"/>
+				</figure>
+			</sidebyside>
+
+
+			
+		</statement>
+		<hint> <p> Find the components and make a table with three columns - name, <m> x </m> component, <m> y</m> component. </p></hint>
+		<answer> <title>(a)</title>
+			<p> 
+				(a) <m>( 7.05\text{ N}, -14.7\text{ N})</m>,
+			</p> 
+		</answer>
+		<answer> <title>(b)</title>
+			<p>
+				(b) <m> 16.30\text{ N}, </m> <m> 64.4^{\circ}</m> clockwise from the positive <m> x </m> axis in the fourth quadrant. 
+			</p>
+		</answer>
+		<solution> <title> a </title>
+			<p>
+				We can make the following table to help us organize the components
+			</p>
+
+			<table>
+				<title>  Force Components </title>
+
+ 
+				<tabular halign ="left" >
+					<row bottom ="major"  >
+						<cell > Force </cell >
+						<cell > <m>x</m >-component </cell >
+						<cell > <m>y</m >-component </cell >
+					</row >
+					<row bottom ="minor" >
+						<cell > <m> F_1 </m> </cell >
+						<cell > <m>0</m >  </cell >
+						<cell > <m>-15.0\text{ N}</m >  </cell >
+					</row >
+					<row bottom ="minor" >
+						<cell > <m>  F_2 </m> </cell >
+						<cell > 
+								<m> 12\text{ N}\, \cos\, 54^{\circ}=7.05\text{ N}</m>
+								<!-- <md>
+									<mrow> \amp 12\text{ N}\, \cos\, 30^{\circ} </mrow>
+									<mrow> = \amp 7.05\text{ N} </mrow>
+								</md >  -->
+							
+						</cell >
+						<cell > 
+								<m> -12\text{ N}\, \sin\, 54^{\circ}=-9.71\text{ N}</m>
+								<!-- <md>
+									<mrow> \amp -12\text{ N}\, \sin\, 30^{\circ} </mrow>
+									<mrow> = \amp -9.71\text{ N}</mrow>
+								</md > --> 
+							
+
+						</cell >
+					</row >
+	 
+					<row bottom ="minor" >
+						<cell > <m>F_3</m> </cell >
+						<cell >  0 </cell >
+						<cell > <m>10\text{ N}</m > </cell >
+					</row >
+				</tabular>
+			</table>
+			<p>
+				From this table we find the components of the sum.
+				<md>
+					<mrow> \amp F_x = 0 + 7.05\text{ N} + 0 = 7.05\text{ N},
+					</mrow> 
+					<mrow> \amp F_y = -15.0\text{ N}-9.71\text{ N}+10\text{ N} = -14.7\text{ N}. 
+					</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title> b </title>
+			<p>
+
+				We use the components and find the magnitude to be
+				<me>
+					F = \sqrt{F_x^2 + F_y^2} = \sqrt{7.05^2 + 14.7^2 } = 16.30\text{ N},
+				</me>
+				and the angle with respect the the <m> x </m> axis 
+				<me>
+					\theta = \tan^{-1}\left( \dfrac{-14.7}{7.05} \right) = - 64.4^{\circ},
+				</me>
+				which means <m> 64.4^{\circ}</m> clockwise from <m>+x</m> axis in the fourth quadrant. 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="Adding-Three-Velocity-Vectors"><title> Adding Three Velocity Vectors </title>
+		<statement>
+			<p>
+				Consider the following three velocity vectors:
+				<md>
+					<mrow>\amp \vec v_1 = \left(25.0\text{ m/s},\text{ towards East} \right), </mrow>
+					<mrow>\amp \vec v_2 = \left(25.0\text{ m/s},\ 30^{\circ}\text{ North of East} \right), </mrow>
+					<mrow>\amp \vec v_3 = \left(40.0\text{ m/s},\ 30^{\circ}\text{ North of West} \right). </mrow>
+				</md>
+	 			What are the magnitude and direction of their sum, <m> \vec v_1 + \vec v_2 + \vec v_3</m>? For stating directions in space, let <m> x </m> axis be pointed towards East, <m> y </m> axis be pointed towards North, and <m> z </m> axis be pointed Up. 
+			</p>
+
+		</statement>
+		<hint> <p>  Be careful with the signs. The <m> v_{3x} </m> should be negative. </p> </hint>
+		<answer> <p> <m> 34.64\text{ m/s}, 69.7^{\circ} </m> </p> </answer>
+		<solution> 
+			<p> 
+				We start by working out the components of each of the three velocity vectors. The components of <m> \vec v_1 </m> and <m> \vec v_2 </m> do not give us any trouble.
+				<md>
+					<mrow> \amp v_{1x} = 25.0\text{ m/s},\ \ v_{1y} = 0</mrow>
+					<mrow> \amp v_{2x} = 21.65\text{ m/s},\ \ v_{2y} = 12.5\text{ m/s}</mrow>
+				</md>
+			</p>
+			<sidebyside widths="60% 40%">
+				<p>
+					However, we need to be careful when we work on <m> \vec v_3 </m> since the vector is pointed in the second quadrant of the <m> xy </m> plane. 
+					When we peoject the arrow of the vector <m> \vec v_3 </m> on the <m> x </m> axis, we strike the negative <m> x </m> axis, which means that <m> v_{3x} \lt 0 </m>, i.e., negative.
+					<md>
+						<mrow> \amp v_{3x} = -v_3\, \cos(|\theta|) = -34.64\text{ m/s}</mrow>
+						<mrow> \amp v_{3y} = +v_3\, \sin(|\theta|) = +20.0\text{ m/s}</mrow>
+					</md>
+				</p>
+				<figure>
+					<caption></caption>
+					<image source="./images/vectors/checkpoint-three-velocities-v3arrow-in-quad2.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+			<p>
+				The components of the sum, to be written as <m> v_x </m> and <m> v_y</m> will be
+				<md>
+					<mrow> \amp v_{x} = v_{1x} + v_{2x} + v_{3x} = 25.0+21.65-34.64 = 12.0\text{ m/s},</mrow>
+					<mrow> \amp v_{y} = v_{1y} + v_{2y} + v_{3y} =  0 + 12.5 + 20 = 32.5\text{ m/s}.</mrow>
+				</md>
+				This results in the following magnitude and angle 
+				<md>
+					<mrow> \amp v = \sqrt{v_{x}^2 + v_y^2}  =  34.64\text{ m/s},</mrow>
+					<mrow> \amp \theta = \tan^{-1}\left( \dfrac{v_y}{v_x}\right) = 69.7^{\circ}.</mrow>
+				</md>										
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exer-Sum-of-Vectors-Adding-Three-Velocity-Vectors"><title>Adding Three Velocity Vectors</title>
+		<statement>
+			<p>
+				Three velocity vectors fall in the <m>xy</m>-plane of a coordinate system and have the following representations: <m>\vec V_1 = (3\ \textrm{m/s})\hat u_x + (2\ \textrm{m/s})\hat u_y</m>,  <m>\vec V_2 = (9\ \textrm{m/s})\hat u_x + (11\ \textrm{m/s})\hat u_y</m>, and <m>\vec V_3 = (-8\ \textrm{m/s})\hat u_y</m>. (a) Find the <m>x</m> and <m>y</m>-components of the sum of the three vectors.  (b) Determine the magnitude and direction of the sum.
+			</p>
+		</statement>
+		<solution><title>a</title>
+			<p>
+				Let us denote the sum by symbol <m>\vec V</m>. The <m>x</m>- and <m>y</m>-components of the sum will be equal to the sum of the <m>x</m>- and <m>y</m>-components of the other vectors.
+				<md>
+					<mrow>\amp 
+						V_x = (3\ \textrm{m/s}) + (9\ \textrm{m/s}) = 12\ \textrm{m/s}
+					</mrow>
+					<mrow>\amp
+						V_y = (2\ \textrm{m/s}) + (11\ \textrm{m/s}) + (-8\ \textrm{m/s}) = 5\ \textrm{m/s}.
+					</mrow>
+				</md>
+			</p>
+
+		</solution>
+
+		<solution><title>b</title>
+			<p>
+				The magnitude of the sum vector = <m>\sqrt{V_x^2 + V_y^2} = 13\ \textrm{m/s}</m>.  The direction will be in the first quadrant of the <m>xy</m>-plane.  We can denote the direction here by the angle <m>\theta</m> that the vector <m>\vec V</m> makes with respect to the positive <m>x</m>-axis as we have done before.   
+				<me>
+					\theta =  \tan^{-1}\left( \frac{V_y}{V_x}\right) = 23^{\circ}.
+				</me>
+
+			</p>
+		</solution>
+
+	</exercise>
+
+ 
+ 	<exercise xml:id="exer-Sum-of-Vectors-Adding-Three-Force-Vectors"><title>Adding Three Force Vectors</title>
+ 		<statement>
+ 			<p>
+ 				Three force vectors fall in the <m>yz</m>-plane of a coordinate system and have the following representations: <m>\vec V_1 = (100\ \textrm{N})\hat u_y + (200\ \textrm{N})\hat u_z</m>,  <m>\vec V_2 = (-500\ \textrm{N})\hat u_y + (100\ \textrm{N})\hat u_z</m>, and <m>\vec V_3 = (-400\ \textrm{N})\hat u_y+ (500\ \textrm{N})\hat u_z</m>. (a) Find the <m>y</m> and <m>z</m>-components of the sum of the three vectors.  (b) Determine the magnitude and direction of the sum.
+ 			</p>
+ 		</statement>
+ 		<solution><title>a</title>
+ 			<p>
+ 				Let us  denote the sum vector  here by the symbol <m>\vec F</m>. The <m>y</m>- and <m>z</m>-components of the sum will be equal to the sum of the <m>y</m>- and <m>z</m>-components of the other vectors.
+ 				<md>
+ 					<mrow>\amp 
+ 						F_y = (100\ \textrm{N}) + (-500\ \textrm{N}) + (-400\ \textrm{N}) = (-800\ \textrm{N})
+ 					</mrow>
+ 					<mrow>\amp 
+ 						F_z = (200\ \textrm{N}) + (100\ \textrm{N}) + (500\ \textrm{N}) =(800\ \textrm{N}).
+ 					</mrow>
+ 				</md>
+ 
+ 			</p>
+ 		</solution>
+ 		<solution><title>b</title>
+ 			<p>
+ 				The magnitude of the sum vector = <m>\sqrt{F_y^2 + F_z^2} = 800\sqrt{2}\ \textrm{N}</m>.  
+ 			</p>
+ 			<p>
+ 				Here we can choose to describe the direction by the angle a vector makes with the positive <m>y</m> axis in a counterclockwise sense as we look at the <m>yz</m> plane from positive <m>x</m> axis direction.
+ 				The direction will be in the second quadrant of the <m>yz</m>-plane.  We can denote the direction here by the angle <m>\theta</m> that the vector <m>\vec F</m> makes with respect to the positive <m>y</m>-axis. 
+ 				<me>
+ 					\theta =  \tan^{-1}\left( \frac{F_z}{F_y}\right) + 180^{\circ}=  135^{\circ}.
+ 				</me>
+ 				Note that I have added <m>180^{\circ}</m> to convert the angle I obtained from the arctangent so that the angle refers to the angle with respect to the positive <m>y</m>-axis.
+ 			</p>
+ 		</solution>
+ 	</exercise>
+
+
+
+ 	<exercise xml:id="exer-add-vectors-Find-Components-and-Add-Forces"><title>Find Components and Add Forces</title>
+ 		<statement>
+ 			<sidebyside widths="45% 5% 50%">
+ 			<p>
+ 				(a) Find the <m>x</m> and <m>y</m>-components of the two forces given in <xref ref="fig-exer-vec-analytic-comps-2"/> with respect to the coordinates given in the figure. (b) Add the two vectors and find the magnitude and direction of the resultant vector. 
+ 			</p>
+ 			<p></p>
+ 			<figure xml:id="fig-exer-vec-analytic-comps-2">
+ 				<caption></caption>
+ 				<image source="./images/vectors/exer-vec-analytic-comps-2.png"/>
+ 			</figure>
+ 		</sidebyside>
+
+ 		</statement>
+
+ 		<solution><title>a</title>
+	 		<p>
+	 			Let <m>\vec F_1</m> be the vector at <m>60^{\circ}</m> from the <m>x</m> axis and <m>\vec F_2</m> be the other vector.The components of <m>\vec F_1</m> and <m>\vec F_2</m> are
+		 		<md>
+		 			<mrow>\amp 
+		 				F_{1x} = (100\ \textrm{N}) \cos(60^{\circ}) = 50\ \textrm{N}
+		 			</mrow>
+		 			<mrow>\amp
+		 				F_{1y} = (100\ \textrm{N}) \sin(60^{\circ}) = 86.6\ \textrm{N}
+		 			</mrow>
+		 			<mrow>\amp 
+		 				F_{2x} = -100\ \textrm{N}
+		 			</mrow>
+		 			<mrow>\amp 
+		 				F_{2y} = 0
+		 			</mrow>
+		 		</md>
+		 	</p>
+ 		</solution>
+ 		<solution><title>b</title>
+ 			<p>
+ 				The sum of these vectors, to be denoted by <m>\vec F</m> will have the following components.
+				<md>
+					<mrow>\amp 
+						F_{x} =  (50-100)\ \textrm{N} = -50\ \textrm{N}
+					</mrow>
+					<mrow>\amp 
+						F_{y} =  86.6\ \textrm{N} </mrow>
+				</md>
+				From these components we construct the magnitude of the net vectors to be
+				<me>
+				F = \sqrt{F_x^2 +F_y^2} = \sqrt{(-50\ \textrm{N})^2 + (86.6\ \textrm{N})^2 } = 100\ \textrm{N}.
+				</me>
+				The direction of this vector can be given by the angle with respect to the positive <m>x</m> axis.  Since the <m>x</m>-component is negative and the <m>y</m>-component is positive, the vector will fall in the second quadrant. To obtain the counterclockwise angle from the arctangent of ratio of y to x we will need to add <m>180^{\circ}</m> to the answer.
+				<me>
+				\theta = 180^{\circ} + \tan^{-1}\left( \frac{-50}{86.6}\right) = 180^{\circ} - 30^{\circ}  = 150^{\circ}.
+				</me>
+ 			</p>
+
+ 		</solution>
+
+ 
+
+
+ 	</exercise>
+
+ 
+
+	</exercises>
+
+
+
+</section>

@@ -1,0 +1,65 @@
+ <section xml:id="planar-sound-wave"><title>Planar Sound Wave</title>
+	<introduction>
+		<p>
+			Consider a planar sound wave in air of frequency <m>f</m> and wavelength <m>\lambda</m>. We can think of this wave in terms of displacement of particles of the air or in terms of presser differences at different places. Let us first look at the displacement wave.
+		</p>
+		<p>
+			Let direction of wave be towards the positive <m>x</m> axis and amplitude of the wave at the origin be <m>0</m> at <m>x=0</m> and <m>t=0</m>. Then displacement at <m>x</m> at intant <m>t</m> will be give by
+			<men xml:id="eq-sound-displacment-plane-wave">
+				\psi(x,t) = D_0 \sin\left( \frac{2\pi}{\lambda} x - 2\pi f t\right),
+			</men>
+			where <m>D_0</m> is the amplitude of the wave. We use letter <m>D</m> for the amplitude instead of <m>A</m> because we will use <m>A</m> for area below. The wavenumber <m>k</m> and angular frequency <m>\omega</m> of the wave are
+			<me>
+				k = \frac{2\pi}{\lambda},\ \ \omega = 2\pi f.
+			</me>
+		</p>
+		<p>
+			To obtain the corresponding pressure wave, we need to look at a small volume through which this displacment wave is passing and apply the definition of Bulk modulus <m>B</m> from the chapter on Statics. The pressure change <m>\Delta P</m> for a fractional  volume change <m>\Delta V / V</m> is related by Bulk modulus <m>B</m> by 
+			<me>
+				\Delta P = - B\frac{\Delta V}{V}.
+			</me>			
+		</p>
+		<sidebyside widths="45% 10% 45%">
+			<p>  
+				Consider a small box of thickness <m>
+				\Delta x</m> along the wave and area <m>A</m> perpendicular to the wave. Suppose as a result of the displacement wave <m>\psi</m>, this box is shrunk by <m>\Delta \psi</m>. this shrinking will happen due to different values of <m>\psi</m> at the two ends of the box separated by <m>\Delta x</m>. 
+			</p>
+			<p></p>
+			<image source="./images/sound/pressure-wave-derivation.png" width="100%"/>
+		</sidebyside>
+		
+		<p>
+			Thus, volume change will be <m>\Delta V = A\Delta \psi</m> while the original volume was <m>A\Delta x</m>. From the definition of bulk modulus in chapter on statics, you will note that the pressure in the box will change by <m>\Delta P</m> given by
+			<me>
+				\Delta P = - B\frac{\Delta \psi}{\Delta x}.
+			</me>
+			In the limit of  <m>\Delta x \rightarrow 0</m> this becomes a partial derivative with respect to <m>x</m>.
+			<men>
+				\Delta P =   - B\frac{\partial \psi}{\partial x}.
+			</men>
+			Using <m>\psi</m> from Eq. <xref ref="eq-sound-displacment-plane-wave"/> we get
+			<men>
+				\Delta P = - \frac{2\pi}{\lambda} D_0 B \cos\left( \frac{2\pi}{\lambda} x - 2\pi f t\right).
+			</men>
+			We can write this as a sine function to compare with the displacement wave as
+			<men>
+				\Delta P = P_0 \sin\left( \frac{2\pi}{\lambda} x - 2\pi f t - \frac{\pi}{2}\right),
+			</men>
+			where <m>P_0</m> is the amplitude of the pressure wave
+			<me>
+				P_0 = \frac{2\pi}{\lambda} D_0 B.
+			</me>
+			Note that the argument of sine for pressure wave has a phase constant of <m>-\pi/2</m> as compared to the displacement wave give in Eq. <xref ref="eq-sound-displacment-plane-wave"/>. Thus, pressure wave has peaks and troughs when displacement wave is zero and vice versa as shown in <xref ref="fig-displacement-and-pressure-waves"/>.
+
+		</p>
+		<figure xml:id="fig-displacement-and-pressure-waves">
+			<caption>
+				Comparison of displacement wave <m>\psi</m> (the solid line) and pressure wave <m>\Delta P</m> (the dashed line) in space at one instant. 
+			</caption>
+			<image source="./images/sound/displacement-and-pressure-waves.png" width="80%"/>
+		</figure>
+
+		
+		 
+	</introduction>
+</section>

@@ -1,0 +1,531 @@
+<section xml:id="Electric-Current-Section"><title> Electric Current </title>
+	<introduction>
+
+		<p>
+			The flow of charges produces an electric current just as the flow of water produces a water current. While water current is quantified by the amount of water that flows per unit time through the cross-section of flow, <alert> electric current is quantified by total charge flowing per unit time through the cross-section of flow.</alert> 
+		</p>
+		<p>
+			SI unit of current would be <m>\text{C/s}</m>, which is also called ampere, which is denoted as <m>\text{A}</m> and <m>\text{amp}</m>.
+		</p>
+
+		<p>
+			In metals, current flow occurs by moving conduction electrons. In semiconductors, current flow may occur either by moving conduction electrons or holes. In electrolytic cells, current flow occurs by both positive and negative ions.
+		</p>
+		<figure>
+			<caption>
+				Examples of electric current.  Electric current in a metal wire is carried by conduction electrons.  Electric current in an electrolytic solution is carried by both positive and negatively charged ions.
+			</caption>
+			<sidebyside widths="40% 5% 30% 25%" valign="middle" halign="middle">
+				<image source="./images/electric-current/current-in-metal.png"/>
+				<p></p>
+				<image source="./images/electric-current/current-in-electrolytic-solution.png"/>
+				<p></p>
+			</sidebyside>
+		</figure>
+
+ 
+
+
+	</introduction>
+	<subsection> <title> Electric Current in a Metal Wire </title>
+
+		<p>
+			Let's look at current flowing in a thin wire of cross-section area <m>A_\perp</m>.
+		</p>
+
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				 Let <m>v</m> be the speed with which electrons are drifting in the wire. We will make an assumption that all drifting electrons have the same speed. Let <m>n</m> be number of conduction electrons per unit volume.
+			</p>
+			<p> </p>
+			<image source="./images/electric-current/current-in-a-wire.png"/>
+		</sidebyside>
+
+		<p>
+			 Since, each electron carries a charge <m>q=-e</m>, the charge per unit length of wire in these conduction electrons is
+			<me>
+				\lambda_e = -nA_\perp e.
+			</me>
+			
+			Then, we will find that <m>-neAv</m> amount of charge flows per unit time. This is electronic current in the wire.
+			<men>
+				I_\text{electron} = -neA_\perp v.
+			</men> 
+			But, the convention of electric current is to leave the sign out. Just ignoring the sign will give us wrong direction of charge flow. So, if we ignore the sign, we will also need to flip the direction of flow. Therefore, in metal, we say that electric current is
+			<men>
+				I = neA_\perp v,
+			</men>
+			which is in the opposite direction in which electron is drifting.
+		</p>
+
+	</subsection>
+		<subsection><title>Current Density</title> 
+
+			<p></p>
+			<p>
+				The quantity <m>I/A_\perp</m> gives current per unit cross-section area. It is called current density and denoted by letter <m>J</m>.
+				<men>
+					J = \dfrac{I}{A_\perp} = n e v.
+				</men>
+				Current density is useful when studying situations where current density varies over the cross-section. For instance, when current is flowing in a layered material with different conductivities, <m>J</m> will be different for different material. 
+				<!-- In a metal, though, current density is same throughout the cross-section. In a cylindrically shaped wire, since there is more area at the edge than in the center, higher fraction of the total current will go through the outer parts. -->
+			</p>
+			<p>
+				Suppose current density <m>J</m> is same through a cylindrical wire of radius <m>R</m>. What will be current in the center upto a radius <m>R/2</m> and what will be current in the shell of inner radius <m>R/2</m> and outer radius <m>R</m>?  Let's call the first one as <m>I_\text{center}</m> and the other one as <m>I_\text{edge}</m>.
+				<md>
+					<mrow> I_\text{center} \amp = \pi J (R/2)^2 = \frac{1}{4} \pi J R^2,</mrow>
+					<mrow> I_\text{edge}  \amp = \pi J ( R^2 - (R/2)^2 ) = \frac{3}{4} \pi J R^2.</mrow>
+				</md>
+				Clearly, current for the same thickness is higher near the edge than near the center. You might say that in a wire, most of the current flows at the edge than at the center.
+			</p>
+			<p>
+				For nonsteady currents, such as alternating current, current density varies across the cross-section. At high frequencies, current density is non-zero only near the surface, upto a thickness, called the <term>skin depth</term>.
+			</p>
+		</subsection>
+
+
+
+
+
+	<subsection><title>Surface Current Density</title>
+
+		<p>
+			Current on metals flows mostly on the surface. In this case cross-section of flow is a line, whose length will be denoted by <m>L_\perp</m>. Therefore, in place of current density, <m>J</m>, we use surface current density, denote by <m>K</m>.
+			<men>
+				K = \dfrac{I}{L_\perp}.
+			</men>
+			In terms of drift speed <m>v</m> and number of electrons per unit surface area, <m>n^\prime</m>, this becomes
+			<men>
+				K = n^\prime e v.
+			</men>
+		</p>
+			<sbsgroup widths="50% 50%">
+				<sidebyside widths="50% 50%">
+					<p>
+						In case of a metal wire of radius <m>R</m>, the cross-section length will be
+						<me> 
+							L_\perp = 2\pi R.
+						</me>
+
+					</p>
+					<p>
+						<image source="./images/electric-current/surface-current-cylindrical-wire.png"/>
+
+					</p>
+				</sidebyside>
+				<sidebyside widths="50% 50%">
+
+					<p>
+						In the case of a metal sheet of length <m>l</m> and width <m>w</m>, with current flowing along the length, the cross-sectional length will be the width,
+						<me>
+							L_\perp = w.
+						</me>
+					</p>
+					<image source="./images/electric-current/surface-current-plate.png"/>
+
+				</sidebyside>
+			</sbsgroup>
+ 
+
+	</subsection>
+
+
+
+	<subsection><title>Vector Current Density</title>
+		<p>
+			In some instances it is useful to define vector current densities, <m>\vec J</m> and <m>\vec K</m> by incorporating the drift velocity vector, <m>\vec v</m>. The vector (volume) current density <m>\vec J</m> for current in a metal will be in the opposite direction of the direction in which electron drifts since the charge on electron is negative.
+			<me>
+				\vec J = -ne\vec v,
+			</me> 
+			where <m>n</m> is number density of conduction electrons, i.e., number of conduction electrons per unit volume. 
+			Similarly, the vector surface surrent density will be
+			<me>
+				\vec K = -n^\prime e \vec v,
+			</me>
+			where <m>n^\prime</m> is number surface density of conduction electron, i.e., number of conduction electrons per unit surface area.
+		</p> 
+ 
+	</subsection>
+
+	<exercise xml:id="ex-Computing-Number-of-Electrons-in-Metals"><title> Computing Number of Electrons in Metals </title>
+		<statement>
+			<p>
+				How many electrons are present in 1 gram samples of (a) Copper, (b) Gold, and (c) Aluminum? Atomic weights: Cu 63.5, Au 197, Al 27; Atomic numbers Cu 29, Au 79, Al 13.  
+
+			</p>
+
+		</statement>
+		<hint> <p>  Use Avogadro number <m>N_A</m> atoms in a mole. </p> </hint>
+		<answer> <p> (a)  <m>2.75\times 10^{23}</m>, (b)  <m>2.41\times 10^{23}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				These exercises are solved by noting that there are Avogadro number of atoms in one atomic weight of an element expressed in grams.  The atomic number is equal to the number of electrons in one neutral atom. Let <m>N_{\text{Cu}}</m>, <m>N_{\text{Au}}</m>, and <m>N_{\text{Al}}</m> ne the number of electrons in one gram each of copper, gold and aluminum. Therefore,
+			</p>
+			<p>
+				(a)
+				<md>
+					<mrow> N_{\text{Cu}} \amp = \dfrac{29\times 6.022\times 10^{23}\:\text{mole}^{-1}}{63.5\:\text{g.mole}^{-1}}</mrow>
+					<mrow> \amp = 2.75\times 10^{23}.</mrow>
+				</md>
+				(b)
+				<md>
+					<mrow> N_{\text{Au}} \amp = \dfrac{79\times 6.022\times 10^{23}\:\text{mole}^{-1}}{197\:\text{g.mole}^{-1}}</mrow>
+					<mrow> \amp = 2.41\times 10^{23}.</mrow>
+				</md>
+				(c)
+				<md>
+					<mrow> N_{\text{Al}} \amp = \dfrac{13\times 6.022\times 10^{23}\:\text{mole}^{-1}}{27\:\text{g.mole}^{-1}}</mrow>
+					<mrow> \amp = 2.90\times 10^{23}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Rate-of-Flow-of-Electrons-in-a-Current-Carrying-Copper-Wire"><title> Rate of Flow of Electrons in a Current-Carrying Copper Wire </title>
+		<statement>
+			<p>
+				In a thin wire of copper <m>20\text{ mA}</m> of current is flowing.  How many electrons are passing through through the wire every minute?
+			</p>
+
+		</statement>
+		<hint> <p>  Convert charge into number of electrons. </p> </hint>
+		<answer> <p> <m>7.5\times 10^{18}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We use the definition of current of <m>1\text{ A}</m>  as <m>1\text{ C/s}</m>  and convert the charge into number of electrons. Hence,
+				<md>
+					<mrow> I \amp = 20\times 10^{-3}\:\dfrac{\text{C}}{\text{s}}\times \dfrac{1\:\text{e}}{1.6\times 10^{-19}\:\text{C}}\times \dfrac{60\:\text{s}}{1\:\text{min}} </mrow>
+					<mrow> \amp = 7.5\times 10^{18}\:\dfrac{\text{e}}{\text{min}}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Drift-Speed-of-Electrons-in-Copper-Wire"><title> Drift Speed of Electrons in Copper Wire </title>
+		<statement>
+			<p>
+				Find drift speed of conduction electrons in a cylindrical copper wire of diameter <m>4\text{ mm}</m> that carries a <m>10\text{ A}</m> current. 
+			</p>
+			<p>
+				(a) Find number density of conduction electrons.
+			</p>
+			<p>
+				(b) Find the drift speed of electrons.
+			</p>
+			<p>
+				(c) What would be the drift speed if the wire carrying <m>10\text{ A}</m> current was <m>0.4\text{ mm}</m>, thick, i.e. one-tenth as thick?
+			</p>
+			<p>
+				Data about Cu: one electron per atom as conduction electron, density = <m>8,960 \text{ kg/m}^3</m>,  atomic weight = <m>0.063546 \text{ kg/mole}</m>,  atomic number = <m>29</m>. 
+			</p>
+			<p>
+				Data: Avogadro number = <m> 6.022\times 10^{23}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Find number of atoms per unit volume. (b) use formula of current. </p> </hint>
+		<answer> <p> (a) <m> 8.49\times 10^{28}\text{ m}^{-3}</m>, (b) <m>5.84\times 10^{-5}\text{ m/s} </m>, (c) <m> 5.84\times 10^{-3}\text{ m/s}</m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) 
+				When we divide density by atomic weight, we will get number of moles per unit volume. Let's denote that by <m>\mu</m>.
+				<me>
+					\mu = \dfrac{8,960 \text{ kg/m}^3}{0.063546 \text{ kg/mole}} = 141,000\text{ mole/m}^3.
+				</me>
+				There are Avogador number of atoms in one mole. And since each atom contributes one electron to conduction, the number of these electrons per unit volume will be same as number of atoms per unit volume.
+				<me>
+					n = 141,000\text{ mole/m}^3 \times 6.022\times 10^{23}\text{ mole}^{-1} = 8.49\times 10^{28}\text{ m}^{-3}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b)
+				The area of cross-section is
+				<me>
+					A = \pi r^2 = \pi \times0.002^2 = 1.26\times 10^{-5}\text{ m}^2.
+				</me>
+				Therefore, drift speed is
+				<md>
+					<mrow> v \amp = \dfrac{I}{n A e}</mrow>
+					<mrow> \amp = \dfrac{10\text{ A}}{8.49\times 10^{28}\text{ m}^{-3} \times 1.26\times 10^{-5}\text{ m}^2 \times 1.6\times 10^{-19}\text{ C} } </mrow>
+					<mrow> \amp = 5.84\times 10^{-5}\text{ m/s}.</mrow>
+				</md>
+
+			</p>
+		</solution>
+		<solution> <title>(c)</title>
+			<p>
+				(c) 
+				Since drift speed is inversely proportional to <m>A_\perp</m>, we will just scale the result in (b) to get <m>v</m> here.
+			
+				<me>
+					v_c = v_b\times \dfrac{A_b}{A_c} = v_b \times 10^2 = 5.84\times 10^{-3}\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+
+
+	</exercise>
+ 
+	<exercise xml:id="ex-Current-Density-and-Drift-Speed-in-a-Current-Carrying-Copper-Wire"><title> Current Density and Drift Speed in a Current Carrying Copper Wire </title>
+		<statement>
+			<p>
+				A steady current of <m>2\text{ A}</m> flows through a gauge number 12 wire (<m>0.0808\text{-in}</m> diameter) made of copper.   (a) Find the current density.  (b) How many conducting electrons are there in one inch of the wire?  (c) How many total electrons are there in a one-inch of the wire? (d) Find the drift speed of electrons.  
+			</p>
+
+		</statement>
+		<hint> <p>  Start out by converting into SI units. </p> </hint>
+		<answer> <p>  (a)  <m>6.05\times 10^{5}\ \text{A/m}^2</m>, (b)  <m>1.44\times 10^{22}</m>, (c) <m>4.17\times10^{23}</m>, (d)  <m>4.85\times 10^{-5}\ \text{m/s}</m>.  </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a)	Let us convert the diameter from inch into meter first.
+				<me>
+					D = 0.0808\:\text{in}\times \dfrac{0.0254\:\text{m}}{1\:\text{in}} = 2.05\times 10^{-3}\:\text{m}.
+				</me> 
+				The area of cross-section, 
+				<me>
+					A = \dfrac{\pi}{4}\:D^2 = 3.31\times 10^{-6}\:\text{m}^2.
+				</me>
+				Hence, the current density is
+				<me>
+					J = \dfrac{I}{A} = \dfrac{2\:\text{A}}{3.31\times 10^{-6}\:\text{m}^2} = 6.05\times 10^{5}\:\text{A}/\text{m}^2.
+				</me>
+ 			</p>
+ 		</solution>
+ 		<solution><title>(b)</title> 
+ 			<p>
+				(b)	The number of mobile electrons in one inch of the wire can be obtained from the number of atoms of copper since each atom contributes one electron to the conduction.
+				<md>
+					<mrow> \text{No. of cond. electrons} \amp = \text{No. of atoms}\times \text{No. of cond. electrons/atom} </mrow>
+					<mrow> \amp = \text{No. of atoms}\times 1 = \text{No. of atoms}. </mrow>
+				</md>
+				Now, the number of atoms in one inch of copper wire will be
+				<md>
+					<mrow> N_{\text{atoms}} \amp = \text{Volume} \times \text{Density} \times \dfrac{1}{\text{At. Wt.}}\times \text{Avo. No}.</mrow>
+					<mrow> \amp = (2.54\:\text{cm}\times 0.0331 \:\text{cm}^2) \times 8.23\:\dfrac{\text{g}}{{\text{cm}}^3} \times \dfrac{1}{29\:\text{g}}\times 6.022\times 10^{23}</mrow>
+					<mrow> \amp = 1.44\times 10^{22}.</mrow>
+				</md>
+ 			</p>
+ 		</solution>
+ 		<solution><title>(c)</title> 
+ 			<p>
+				(c)	  There are 29 times as many electrons in copper as there are conducting electrons.
+				<me>
+					\text{Total} = 29\times 1.44\times 10^{22} = 4.17\times10^{23}.
+				</me>
+ 			</p>
+ 		</solution>
+ 		<solution><title>(d)</title> 
+ 			<p>
+				(d)	 The drift speed of conducting electrons is related to the conduction electron density and current density.
+				<me>
+					J = e n v. 
+				</me>
+				The density of conduction electrons can be found from the number of electrons in the volume within one-inch length we calculated above.
+				<me>
+					n = \dfrac{1.44\times 10^{22}}{2.54\:\text{cm}\times 0.0331 \:\text{cm}^2} = 1.71 \times 10^{23}\:\text{cm}^{-3}. 
+				</me>
+				Hence, 
+				<md>
+					<mrow> v \amp = \dfrac{J}{e n} </mrow>
+					<mrow> \amp = \dfrac{6.05\times 10^{5}\:\text{A}/\text{m}^2}{1.6\times 10^{-19}\:\text{C}\times 1.71 \times 10^{27}\:\text{m}^{-3}} = 22\:\text{m/s}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Surface-Current-Density-in-an-Aluminum-Plate"><title> Surface Current Density in an Aluminum Plate </title>
+		<statement>
+			<p>
+				How much current flows if the current density on the surface of an aluminum plate of width <m>3 \text{ cm}</m> is <m>20 \text{ A/m}</m>?
+			</p>
+
+		</statement>
+		<hint> <p>  Use definition of surface current density. </p> </hint>
+		<answer> <p> <m>0.6 \text{ A}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				This is an exercise in using the definition of surface current density <m>K</m>.
+				<me>
+					I = K\:L_\perp = 20\:\dfrac{\text{A}}{\text{m}}\times 0.03\:\text{m} = 0.6\:\text{A}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Current-Desity-in-a-Current-Carrying-Copper-Pipe"><title> Current Desity in a Current Carrying Copper Pipe </title>
+		<statement>
+			<p>
+				A current of <m>10 \text{ A}</m> passes through a cylindrical copper pipe of inner radius <m>2 \text{ cm}</m> and outer radius <m>2.5 \text{ cm}</m>.  Find the current density.  
+ 
+			</p>
+
+		</statement>
+		<hint> <p>  Use definition of <m>J</m>. </p> </hint>
+		<answer> <p> <m>1.4\times 10^{4} \ \text{A/m}^2</m>. </p> </answer>
+		<solution> 
+			<p>
+
+				This is an exercise in using the definition of volume current density J.
+				<md>
+					<mrow> J \amp = \dfrac{I}{A_\perp} </mrow>
+					<mrow> \amp = \dfrac{10\:\text{A}}{\pi\left( 0.025^2 - 0.02^2 \right)\:\text{m}^2}</mrow>
+					<mrow> \amp  = 1.4\times 10^4\:\text{A/m}^2.</mrow>
+				</md>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+	<exercise xml:id="ex-Current-Density-in-Oppositely-Flowing-Cylindrical-Wire-and-Shell"><title> Current Density in Oppositely Flowing Cylindrical Wire and Shell </title>
+		<statement>
+			<p>
+				A copper pipe of inner radius <m>1.5 \text{ cm}</m> and outer radius <m>1.8 \text{ cm}</m> surrounds a copper rod of rod of radius <m>0.5 \text{ cm}</m>.  A <m>5 \text{ A}</m> current flows in the pipe in one direction and the same amount flows in the inner rod in the opposite direction.  Write the current density as a function of distance from the center.  
+ 
+			</p>
+
+		</statement>
+		<hint> <p> Use <m>z</m> axis along the current in the rod and work with <m>J_z</m>.  </p> </hint>
+		<answer> <p>  <m>J_{z,\text{rod}} = 6.37\times 10^4 \ \text{A/m}^2</m>,  <m>J_{z,\text{shell}} = -1.61\times 10^4 \ \text{A/m}^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The current density is non-zero only in the material. The current density in the rod and the shell are related to the cross-sectional ares of the material in which current flow. Furhtermore,  directions of flow in the two are opposite. Let <m>+z</m> axis be the direction of current in the rod, then <m>-z</m> wil be the direction in the shell. We can then write the <m>z</m> component of vector current density.
+				<md>
+					<mrow> J_{z,\text{rod}} \amp = \dfrac{I}{A_{\text{rod}}}</mrow>
+					<mrow> \amp = \dfrac{5\:\text{A}}{\pi\times 0.005^2\:\text{m}^2} = 6.37\times 10^4\:\text{A/m}^2,</mrow>
+					<mrow> J_{z,\text{shell}} \amp = \dfrac{I}{A_{\text{shell}}}</mrow>
+					<mrow> \amp = \dfrac{5\:\text{A}}{\pi\times (0.018^2-0.015^2)\:\text{m}^2} = 1.61\times 10^4\:\text{A/m}^2.</mrow>
+				</md>
+				Let <m>s</m> denote the distance  of a point from the axis of the cylinder.  Then the <m>J_z(s)</m>, current density as a function, will be
+				<me>
+					J_z = \begin{cases}
+							6.37\times 10^4\:\text{A/m}^2, \amp s \le 0.5\:\text{cm}\\
+							- 1.61\times 10^4\:\text{A/m}^2, \amp 1.5\:\text{cm} \le s \le  1.8\:\text{cm}
+							\end{cases}
+				</me>
+			</p>
+		</solution>
+	</exercise> 
+ 
+	<exercise xml:id="ex-Current-Through-Different-Parts-of-a-Cross-Section-of-a-Steel-Wire"><title> Current Through Different Parts of a Cross-Section of a Steel Wire </title>
+		<statement>
+			<p>
+				A steel cylindrical rod of radius <m>5 \text{ cm}</m> carries <m> 30 \text{ amps}</m> of current uniformly spread through out its cross section.  (a) How much current flows within <m>1 \text{ cm}</m> of its center? (b) How much current flows between <m>2 \text{ cm}</m>  and  <m>3 \text{ cm}</m>  of its center?  (c) How much of the current flows between <m>4 \text{ cm}</m>  and <m>5 \text{ cm}</m> of its center?  
+
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m>I = J A</m>. </p> </hint>
+		<answer> <p> (a)  <m>1.2\text{ A}</m>, (b)  <m>6\text{ A}</m>, (c)  <m>10.8\text{ A}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Since the current is uniformly distributed throughout the cross-section, the current density is not dependent on the distance from the axis and found to be
+				<me>
+				 	J = \dfrac{I}{A}  = \dfrac{30\:\text{A}}{\pi\times 0.05^2\:\text{m}^2} = 3.82\times 10^3\:\text{A/m}^2
+				</me>
+				Now we use the current density to solve different parts of the problem.
+			</p>
+			<p>
+				(a)	Only the current passing through the area of cross-section matters.
+				<me>
+				 	I = J\:A = 3.82\times 10^3\:\text{A/m}^2 \times (\pi\times 0.01^2\:\text{m}^2) = 1.2\:\text{A}.
+				</me>
+			</p>
+			<p>
+				(b)	Between 2 cm and 3 cm, the area of cross-section is different.
+				<me>
+				 	I = J\:A = 3.82\times 10^3\:\text{A/m}^2 \times [\pi  (0.03^2 - 0.02^2 )\:\text{m}^2] = 6\:\text{A}.
+				</me>
+			</p>
+			<p>
+				(c)	 Between 4 cm and 5 cm the area of cross-section is even bigger.
+				<me>
+				 	I = J\:A = 3.82\times 10^3\:\text{A/m}^2 \times [\pi  (0.05^2 - 0.04^2 )\:\text{m}^2] = 10.8\:\text{A}.
+				</me>
+				More exercise for you:  Find the current through 1cm-2cm and 3cm-4cm and add up all the current to show that the total current is indeed 30 A.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Artificial-Example-of-Current-Density-Varying-Linearly-Across-Cross-Section-of-a-Wire"><title> (Calculus) Artificial Example of Current Density Varying Linearly Across Cross-Section of a Wire </title>
+		<statement>
+			<p>
+				A 4-gauge wire of a special material of diameter <m>0.2038\text{ in}</m> carries <m>10\text{ amp}</m> current with a non-uniform current density across the cross-section of the wire.  The current density increases linearly with distance from the center,  <m>J = a s</m>, with constant <m>a=5\text{ A/m}^3</m>   and <m>s</m> is the distance from the axis of the wire in m.  Find current flowing within  <m> 0.1\text{ mm}</m> of the outer surface, and compare it with the current that flows within <m> 0.1\text{ mm}</m> of the center.  
+
+			</p>
+
+		</statement>
+		<hint> <p> Use <m> I = \int J dA</m> for the appropriate area.  </p> </hint>
+		<answer> <p> <m>9.42\text{ A versus } 1.73\text{ A}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Let us first convert radius <m>R</m> of the wire in metric unit.
+				<me>
+				 	R = \dfrac{0.2038\:\text{in}}{2} = 2.59\times 10^{-3}\:\text{m}.
+				</me>
+				The relation between the current density and total current can be used to find the constant <m>a</m>.
+				<me>
+					\int\: J\:dA \ \ \Longrightarrow\ \ \int\: J\: 2\pi s ds\ \ \Longrightarrow\ \ 2\pi a\int_0^R\: s^2\: ds = I.
+				</me>
+				Hence,
+				<me>
+					a = \dfrac{3 I}{2\pi R^3} = \dfrac{3\times 10\:\text{A}}{2\pi (2.59\times 10^{-3}\:\text{m})^3} = 2.75\times 10^{8}\:\text{A/m}^3.
+				</me>
+				The current flowing within 0.1 mm of the outer surface is found by integrating <m>J</m> there.
+				<me>
+					I = 2\pi a \int_{R-d}^R\: s^2\: ds = \dfrac{2\pi a}{3}\:\left[ R^3 - (R-d)^3 \right]= 9.42\:\text{A}.
+				</me>
+				The current flowing within 0.1 mm of the axis has different limits on the integral.
+				<me>
+					I = 2\pi a \int_0^d\: s^2\: ds = \dfrac{2\pi a}{3}\:d^3 = 1.73\:\text{A}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Artificial-Example-of-Current-Density-That-Drops-With-Distance-From-Axis"><title> (Calculus) Artificial Example of Current Density That Drops With Distance From Axis </title>
+		<statement>
+			<p>
+				A 10-gauge wire of a special material diameter <m>0.102 \text{in}</m> carries <m>10 \text{amp}</m> current with a non-uniform current density.  The current density increases with distance from the center as given by  <m>J=\frac{a}{b^2+s^2}</m>, with constant <m>a= 10 \text{ A}</m>, <m>b=0.1 \text{ m} </m>,  and <m>s</m> is the distance from the axis of the wire in <m>\text{m}</m>.  Find current flowing within <m>0.1 \text{ mm}</m> of the outer surface, and compare it with the current that flows within <m>0.1 \text{ mm}</m> of the center. 
+			</p>
+
+		</statement>
+		<hint> <p> Use <m> I = \int J dA</m> for the appropriate area.  </p> </hint>
+		<answer> <p> <m>0.7687\:\text{A}</m>, <m>0.7697\:\text{A}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Let us first convert the radius <m>R</m> of the wire in metric unit.
+				<me>
+				 	R = \dfrac{0.102\:\text{in}}{2} = 1.3\times 10^{-3}\:\text{m}.
+				 </me>
+				The relation between the current density and total current can be used to find the constant <m>a</m>.
+				<me>
+					\int\: J\:dA \ \ \Longrightarrow\ \ \int\: J\: 2\pi s ds\ \ \Longrightarrow\ \ 2\pi a\int_0^R\: \dfrac{s\: ds}{s^2+1}  = I.
+				</me>
+				Hence,
+				<me>
+					a = \dfrac{I}{\pi\:\ln(R+1)} = \dfrac{10\:\text{A}}{\pi\times \ln(1.0013)} = 2450\:\text{A}.
+				</me>
+				The current flowing within 0.1 mm of the outer surface is found by integrating <m>J</m> there.
+				<me>
+					I = 2\pi a \int_{R-d}^R\: \dfrac{s\: ds}{s^2+1} = \pi a \ln\left( \dfrac{R+1}{R-d-1} \right) = 0.7687\:\text{A}.
+				</me>
+				The current flowing within 0.1 mm of the axis has different limits on the integral.
+				<me>
+					I =  2\pi a \int_0^d\: \dfrac{s\: ds}{s^2+1}= \pi a \ln\left( d+1\right) = 0.7697\:\text{A}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+</section>

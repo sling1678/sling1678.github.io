@@ -1,0 +1,229 @@
+<section xml:id="kinematics-Position-Vector"><title> Position </title>
+<idx><h>Position</h><h>Vector</h></idx>
+	<introduction>
+		<p>
+			<term> Position </term> is a vector from a reference object or reference point in space to the location of the object. Usually, coordinate system for the study is chosen so that its origin is at th location of the reference object or the reference point in space.
+			We will denote position vector by <m> \vec r </m>. 
+		</p>
+		<p>
+			<xref ref="fig-position-vector-3d"/> shows position vector and a three-dimensional coordinate system. The arrow from origin O to point P represents the vector pictorially. The coordinates <m> (x,y,z) </m>   are the Cartesian components of vector <m>\vec r</m>. The direct distance OP, i.e., the length of the vector <m> \vec r </m>, is magnitude of the vector. The spherical coordinate angles <m> \theta </m> and <m>\phi </m> can be used to indicate the direction of vector <m> \vec r </m> in the three-dimensional space. 
+		</p>
+ 
+		<figure xml:id="fig-position-vector-3d">
+			<caption> Position vector <m> \vec r </m> for a particle located at P. Point Q in the <m>xy</m>-plane is the point where normal from point P intersects the  <m>xy</m>-plane.
+			</caption>
+			<image source="./images/two-dim-motion/position-vector-3d.png" width="70%"/>
+		</figure>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+		 		<p>
+		 			In a two-dimensional space, say in the <m> xy</m> plane, position vector would be as vector from O to P, where P is now in the <m>xy</m> plane. In this case, we need only angle <m> \theta </m> from <m> x </m> axis to describe the direction as shown in <xref ref="fig-position_in_two_dimensions_definition"/>.
+		 		</p>
+		 		<p>
+		 			In one dimensions, say motion on <m>x</m> axis, direction is given by whether the location is on the positive side of origin or the negative side.
+		 		</p>
+		 	</p>
+	 		<p></p>
+			<figure xml:id="fig-position_in_two_dimensions_definition">
+				<caption> Position vector <m> \vec r </m> for a particle located at P in <m>xy</m> plane.   
+				</caption>
+				<image source="./images/two-dim-motion/position_in_two_dimensions_definition.png" width="70%"/>
+			</figure>
+		</sidebyside>
+ 		
+	</introduction>
+	<subsection><title> Position Vector in the Component Form</title>
+		<p>  
+			The Cartesian components of the position vector <m> \vec r</m> are simply the Cartesian coordinates <m>(x, y, z)</m> of the location. For some other vectors, e.g., a force vector <m> \vec F</m>, they would be denote by <m> (F_x, F_y, F_z) </m>. If you compare the notations for components for vectors <m>\vec r</m> and <m>\vec F</m>,  you might see that we are using <m> r_x = x,\ r_y = y,\ r_z = z</m>, but we do not write <m> (r_x, r_y, r_z) </m>. While we use the notation of placing subscripts to the symbol of the vector, for <m>\vec r</m>, we don't do that; we just use <m>(x,y,z)</m> for <m>\vec r</m>.
+	 	</p>
+	 	<p>
+			We can also write the position vector using the unit vectors along the axes, namely, <m> \hat i </m> (towards positive <m>x</m>-axis), <m> \hat j</m> (towards positive <m>y</m>-axis), and <m> \hat k</m> (towards positive <m>z</m>-axis). That is, there are two equivalent ways of writing position vector (or any other vector) in terms of components.
+
+			<men>
+				\text{Position Vector:  } \vec r = (x, y, z) = x\hat i+ y \hat j + z \hat k.
+			</men>
+			Using unit vectors often makes it easier to do the algebra - clearly, it is another way of organizing the components of the vector.
+		</p>
+	</subsection>
+
+	<subsection><title> Magnitude and Direction of Position</title>
+
+		<p></p>
+
+		<p><alert>Magnitude: </alert> </p>
+ 
+			<p>  
+				The <alert> magnitude </alert> of the position vector <m> \vec r </m> is simply the direct distance from the origin.
+				<men>
+					\text{Magnitude of position vector,  } r = \sqrt{x^2 + y^2 + z^2}.
+				</men>
+				Magnitude of vector in <m>xy</m> plane is similar. For direction of position in two and three dimensions, we proceed a little differently.
+			</p>
+ 		<p><alert>Direction of Vector in the <m>xy</m>-Plane: </alert> </p>
+ 
+ 
+			<p>
+				If the vector is in the <m>xy</m>-plane, then we usually specify the angle of the vector with the <m>x</m>-axis as shown in <xref ref="fig-position_in_two_dimensions_definition"/>. Let <m> \theta</m> be the angle the vector makes with either the positive or the negative <m> x </m> axis directions, then by trig you can get
+					<men>
+						\tan\, \theta = \dfrac{y}{x}.
+					</men>
+				Be aware that <alert> the value of this angle is not the direction of the vector</alert>. You need to interpret the value of <m> \theta </m> to deduce the direction. You can get the direction of the vector from the sign of <m> \theta </m> and the quadrant in which point <m> (x,y) </m> lies. The situation in the four Cartesian coordinates is illustrated in <xref ref="fig-position-directions-in-plane-in-different-quadrants"/>.
+				<ol>
+					<li> If <m>\theta</m> is positive, then the direction is obtained by going counter-clockwise from the axis, and if <m>\theta</m> is negative, then the direction is obtained by going clockwise from the axis, as seen from <m>+z</m> axis. </li>
+					<li> If <m> (x,y) </m> is in first or fourth quadrant, the direction is with respect to the positive <m> x </m> axis, and if <m> (x,y) </m> is in second or third quadrant, the direction is with respect to the negative <m> x </m> axis.
+					</li>
+				</ol> 
+			</p>
+
+			<figure xml:id="fig-position-directions-in-plane-in-different-quadrants">
+				<caption> Position vector <m> \vec r </m> for a particle located at P in different quadrants in the <m>xy</m>-plane.   
+				</caption>
+				<image source="./images/two-dim-motion/position-directions-in-plane-in-different-quadrants.png" width="90%"/>
+			</figure>
+
+
+  		<p><alert>Direction of Vector in 3-Dimensions: </alert> </p>
+
+			<p>  
+				If the vector is in three-dimensions, for instance, the position of a star, we would need to specify two angles to describe the direction. One way to do that is familiar to you when you use the latitude and azimuth angles to locate places on the Earth. Another way is to give angles of the vector with the Cartesian axes. The easiest is perhaps the spherical angles as shown in <xref ref="fig-position-vector-3d"/>.
+			</p>
+			<p>
+				<alert>Spherical Angle Variables for Directions in 3-Dimensional Space. </alert> Spherical coordinates has two angles, the polar angle <m> \theta </m> between the vector and the positive <m> z </m> axis, and the azimuth <m> \phi </m> between the projection of the vector on the <m>xy</m> plane and the positive <m> x </m> axis. Note that <m> \phi </m> is not the direct angle between the vector and <m> x </m> axis but the angle of the projection. From the components <m> (x, y, z) </m> these angles can be computed by the following formulas.
+				<mdn>
+					<mrow> \amp \cos\,\theta = \dfrac{z}{r}, </mrow>
+					<mrow> \amp \tan\,\phi = \dfrac{y}{x}</mrow>
+				</mdn>
+				After computing, you would need to interpret the values vis-a-vis the octant the point <m> (x,y,z) </m> lies. 
+			</p>
+			<p> 
+				<alert>Direction Cosines For Directions in 3-Dimensional Space. </alert> 
+				Let <m> \theta_x, \theta_y, \theta_z</m> be the angle that the position vector makes with the axes. These angles are often denoted by Greek letters <m>\alpha, \beta, \gamma</m>, respectively. By taking dot product of <m>\vec r</m> with <m>\hat i</m>, <m>\hat j</m>, and <m>\hat k</m>, we can show that
+				<mdn>
+					<mrow> \amp \cos \theta_x = \dfrac{x}{r}</mrow>
+					<mrow> \amp \cos \theta_y = \dfrac{y}{r}</mrow>
+					<mrow> \amp \cos \theta_z = \dfrac{z}{r}</mrow>
+				</mdn>
+				These cosines are called <term> direction cosines</term> of the vector. It turns out that the three angles are not independent but are related by
+				<men>
+					\cos^2 \theta_x + \cos^2 \theta_y + \cos^2 \theta_z = 1.
+				</men>
+
+			</p>
+	</subsection>
+
+	
+
+	<example xml:id="Representations-of-a-2D-Position-Vector"><title> Representations of a  Position Vector in Plane</title>
+		<statement>
+			<p>
+				A marble is located at a point in the <m>xy</m>-plane at the coordinates <m> (3 \text{ m}, 4 \text{ m}) </m>. Express the position vector in (a) coordinate form, (b) magnitude-direction form, and (c) using unit vectors along the axes.
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Use definitions. </p> </hint> -->
+		<answer> <p>  (a) <m> (3 \text{ m}, 4 \text{ m}) </m>,
+						(b) <m>5\text{ m} </m>, <m> 53.1^{\circ} </m> counterclockwise from the positive <m> x </m> axis,
+						(c) <m>3 \text{ m }\hat i +  4 \text{ m }\hat j</m>.
+		 </p> </answer>
+		<solution><title>a</title> 
+			<p>
+				The coordinate-form is already given in the problem statement as <m> (3 \text{ m}, 4 \text{ m}) </m>.
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+				Magnitude is:
+				<me>
+					r = \sqrt{x^2 + y^2} = \sqrt{3^2 + 4^2} = 5\text{ m}.
+				</me>
+				First we find the angle <m> \theta </m> and then we interpret it to get the direction.
+				<me>
+					\theta = \tan^{-1}\left( 4/3 \right) = 53.1^{\circ}. 
+				</me>
+				Since the point <m> (3,4) </m> is in the first quadrant, the direction is <m> 53.1^{\circ} </m> counterclockwise from the positive <m> x </m> axis.
+			</p>
+		</solution>
+		<solution><title>c</title> 
+			<p>
+				From the components in (a), we can immediately write
+				<me>
+					\vec r = 3 \text{ m }\hat i +  4 \text{ m }\hat j.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+
+
+	<example xml:id="Three-Dimensional-Position-Vector-Magnitude-and-Direction-Cosines"><title> Three Dimensional Position Vector Magnitude and Direction Cosines </title>
+		<statement>
+			<p>
+				The Cartesian coordinates of a person on the 10-th floor of a building is <m> (20 \text{ m}, 30\text{ m}, 35\text{ m}) </m>. (a) How far away from the origin is the person? What is the angle the position vector of the person makes with (b) the <m>x</m> axis, (c) the <m>y</m> axis, and (d) with the <m>z</m> axis?
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  (a) use <m> r = \sqrt{x^2 + \cdots}</m>, (b) Use direction cosines.</p> </hint> -->
+		<answer> <p> (a) <m> 50.3\text{ m}</m>, (b) <m> 66.6^{\circ}</m>,
+		<m>53.4^{\circ}</m>, <m> 45.9^{\circ}</m>.  (c) <m> \theta_y = 53.4^{\circ}</m>, (d) <m> \theta_z = 45.9^{\circ}</m>. </p> </answer>
+		<solution><title>a</title> 
+			<p> The distance is the radial distance of the spherical coordinate system.
+				<me>
+					r = \sqrt{20^2 + 30^2 + 35^2} = 50.3\text{ m}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p> 
+				The dot product between the given position and <m>\hat i </m> vector will give us the cosine of angle with the <m> x </m> axis.
+				<me>
+					\cos\, \theta_x = \dfrac{x}{r} = \dfrac{20}{50.3}=0.3976.
+				</me> 
+				Therefore, <m> \theta_x = 66.6^{\circ}</m>.
+			</p>
+		</solution>
+		<solution><title>c</title> 
+			<p> 
+				Similarly, 
+				the dot product between the given position and <m>\hat j </m> vector will give us the cosine of angle with the <m> y </m> axis.
+				<me>
+					\cos\, \theta_y = \dfrac{y}{r} = \dfrac{30}{50.3}=0.596.
+				</me> 
+				Therefore, <m> \theta_y = 53.4^{\circ}</m>.
+			</p>
+		</solution>
+		<solution><title>d</title> 
+			<p> 
+				Similarly, 
+				the dot product between the given position and <m>\hat k </m> vector will give us the cosine of angle with the <m> z </m> axis.
+				<me>
+					\cos\, \theta_z = \dfrac{z}{r} = \dfrac{35}{50.3}=0.6958.
+				</me> 
+				Therefore, <m> \theta_z = 45.9^{\circ}</m>.
+			</p>
+		</solution>
+	</example>
+
+<exercises>
+
+	<exercise xml:id="Direction-of-a-Vector-from-a-Direction-Cosine-Calculation"><title> Direction of Position Vector from a Direction Cosine Calculation </title>
+		<statement>
+			<p>
+				A position vector makes <m>120^{\circ}</m> with respect to the positive <m>x</m> axis and <m>90^{\circ}</m> with respect to the positive <m>y</m> axis. What angle does it make with respect to the positive <m> z</m> axis?
+			</p>
+
+		</statement>
+		<hint> <p>  Use the identity <m> \cos^2\, \theta_x + \cos^2\, \theta_y + \cos^2\, \theta_z = 1</m> </p> </hint>
+		<answer> <p> <m> 30^{\circ},\ 150^\circ.</m>  </p> </answer>
+		<solution> 
+			<p> Using the identity <m> \cos^2\, \theta_x + \cos^2\, \theta_y + \cos^2\, \theta_z = 1</m>, we get
+			<me>
+				\cos\,\theta_z = \pm\sqrt{1- \dfrac{1}{4} - 0 } = \pm\dfrac{\sqrt{3}}{2}
+			</me>
+			Therefore, <m> \theta_z = 30^{\circ},\ 150^\circ</m>. We need more information about the octant the vector points to choose between the two values.
+			</p>
+		</solution>
+	</exercise>
+
+	</exercises>
+
+</section>

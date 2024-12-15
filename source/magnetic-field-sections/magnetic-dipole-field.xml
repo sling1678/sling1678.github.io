@@ -1,0 +1,30 @@
+<section xml:id="Magnetic-Dipole-Field"><title> Magnetic Dipole Field </title>
+	<introduction>
+		<p>
+			The magnetic field of a current in a circular loop given in Eq. <xref ref="eq-mag-field-of-current-loop-magnitude"/> has interesting limiting behaviors. We will now show that for microscopic loops, magnetic field varies as inverse cube of the distance from the loop. This is similar to the way electric field of an electric dipole varies. Therefore, we will interpret this type of magnetic field as magnetic field of an ideal magnetic dipole, i.e., a microscopic magnet.
+		</p>
+		<p>
+			To obtain the distance-dependence of a micoscopic loop we look at Eq. <xref ref="eq-mag-field-of-current-loop-magnitude"/> for <m>z \gg R</m> and find the leading behavior using Maclauren expansion using variable <m> \epsilon = R/z </m>. This will give us magnetic field in direction perpendicular to the loop.
+ 
+			<md>
+				<mrow>  B_P \amp =  \frac{\mu_0I_R^2}{2}  \lim_{z \gg R} \dfrac{1}{\left(R^2 + z^2\right)^{3/2}} =  \frac{\mu_0I_R^2}{2z^3}  \lim_{\epsilon \ll 0} \dfrac{1}{\left(1 + \epsilon^2\right)^{3/2}},  </mrow>
+				<mrow>    \amp =  \frac{\mu_0I_R^2}{2z^3}  \lim_{\epsilon \ll 0} \left[ 1 - \frac{3}{2}\,\epsilon^2 + \cdots\right]   = 	\frac{\mu_0I_R^2}{2} \frac{1}{z^3}.  </mrow>
+			</md>
+			 Introducing factors of <m>\pi</m> and rewriting the field in the following way helps with the identification of  the <term> magnetic dipole moment of the current loop</term> in the formula, which we will denote by symbol <m>\mu</m>, as before. This field is called <term>dipole field</term> and denoted by attaching a subscript to the symbol for the field.
+			<md>
+				<mrow> B_{\textrm{dipole}} \amp = \frac{\mu_0}{2\pi} \frac{I\pi R^2}{z^3}  = \frac{\mu_0}{2\pi} \frac{IA}{z^3}  = \frac{\mu_0}{2\pi} \frac{\mu}{z^3} </mrow>
+			</md>
+			The <m>z \gg R</m> limit on the field of a current loop provides two views of magnetic phenomenon - as tiny current loops and as magnetic dipole as illustrated in <xref ref="fig-magnetic-dipole-vs-current-loop"/>.
+ 
+		</p>
+
+		<figure xml:id="fig-magnetic-dipole-vs-current-loop">
+			<caption>
+				   Two views of small current loop. Magnetic field on the axis of a current loop when field point is far away, i.e., when <m>z \gt\gt R</m>, <m>B\sim 1/z^3</m>, which is the same as magnetic field of a dipole of magnetic dipole moment, <m>\mu=IA</m>, with <m>A</m> the area of the loop. 
+			</caption>
+			<image source="./images/magnetic-field/magnetic-dipole-vs-current-loop.png" width="60%"/>
+			
+		</figure>
+
+	</introduction>
+</section>

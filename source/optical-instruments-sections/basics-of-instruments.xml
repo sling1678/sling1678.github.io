@@ -1,0 +1,136 @@
+<section xml:id="section-basics-of-instruments"><title> Basics of Optical Instruments</title>
+	<introduction>
+        <p>
+        	 Optical instruments such as camera, microscope, and telescope use lenses and mirrors to view and record images of physical objects. They also rely on gathering enough light energy for clear view and the speed with which instrument can be operated. They are often characterized by a few parameters, such as aperture, f-stops, magnifying power, focal length, numerical aperture, etc. Let's briefly define them here so that we can use them in our discussion of instruments in this chapter.
+        </p>
+    </introduction>
+    <subsection><title>Focal Length, Optical Equation, Magnifications</title>
+    	<p>
+    		We have encountered focal length, denoted by <m>f</m>, for curved mirrors and lenses. For converging systems, whether a concave mirror or a convex lens, focal length is the distance from vertex to the focal plane where parallel rays from distant objects converge. For diverging systems, i.e., a convex mirror or a concave lens, focal length the distance from vertex to the focal plane where parallel rays from distant objects appear to diverge from. 
+    	</p>
+    	<p>
+    		In the case of curved mirrors, absolute value of the focal length is also equal to half the radius of curvature.
+    		<me>
+    			|f| = \frac{R}{2}.
+    		</me>
+    		With appropriate sign conventions, object distance <m>p</m>, image distance <m>q</m>, and focal length <m>f</m> for both mirrors and lenses for arbitrarily placed object, not just objects that are far away, are  related by the same equation.
+    		<me>
+    			\frac{1}{p} + \frac{1}{q} = \frac{1}{f},\ \ \text{ with appropriate sign convention!}
+    		</me>
+    		The magnification, also known as ttansverse or lateral magnification, denoted by <m>m</m> or <m>m_T</m>, is given by the ratio of the height of the image <m>h_i</m> to the height of the object <m>h_o</m>. By geometry and sign convenstions, it can also be shown to be equal to ratio of the image distance and object distance.
+    		<me>
+    			m = \frac{h_i}{h_o} = - \frac{q}{p}.
+    		</me> 
+    		When eye is involved in viewing a virtual image, an angular magnification is more relevant. This is the ratio of the angle <m>\theta_i</m> subtended by the virtual image at the eye to the angle <m>\theta_o</m> submitted, not by the original object but by the object placed at the same distance as the virtual image. We denote angular magnification by <m>M</m>.
+    		<me>
+    			M = \frac{\theta_i}{\theta_o}.
+    		</me>
+    		Eye can see an object clearly at a distance about <m>25\text{ cm}</m>. This is called near point of the eye. I will desnote this distance by <m>n_p</m>. The angular magnification of a converging lens of focal length <m>f</m> will be shown to be
+    		<me>
+    			M = 1 + \frac{n_p}{f}.
+    		</me>
+    	</p>
+    	<p>
+    		Magnification of a multi-lens system comes from multiplying magnifying power of each one. For instance, in a microscope, the magnifying power of the microscope is a product of the magnification of the objective and the angular magnification of the eyepiece.  
+    		<me>
+    			M_\text{microscope} = m_\text{objective} \times M_\text{eyepiece}.
+    		</me>
+    	</p>
+    	<p>
+    		When applied to a telescope, this leads to the following formula for the magnification of a telescope
+    		<me>
+    			|M_\text{telescope}| = \frac{f_\text{o}}{f_\text{e}},
+    		</me>
+    		where <m>f_\text{o}</m> is the focal length of the objective and  <m>f_\text{e}</m> is the focal length of the eyepiece.
+
+    	</p>
+
+    </subsection>
+
+
+    <subsection><title>Aperture, Aperture Stop, Marginal Ray, Numerical Aperture</title>
+    	<p>
+    		Light can enter an instrument through some opening called aperture. The area <m>A</m> of the aperture is an important characteristic of an instrument as it gives us a way to quantify amount of light energy that can enter the system. Recall that intensity <m>I</m> of light is energy per unit time per unit area. Therefore, a product of intensity and area of the aperture is the energy entering the apparatus per unit time.
+    		<me>
+    			\text{Energy per unit time entering apparatus} = I\,A.
+    		</me>
+    		Often, the opening through which light enter an instrument is circular. In that case, in place of aperture area, we give <term> aperture diameter</term>, <m>D</m>, which is the diameter of the aperture stop. Of course, you can get area from it immediately.
+    		<me>
+    			A = \frac{\pi}{4} D^2.
+    		</me>
+    		In a reflecting telescopes, usually a concave mirror collects light. So, if you have an <m>8\text{-in}</m> telescope, it means that you have <m>D=8\text{ inches}</m>. Due to the square of diameter in the formula for area, a <m>16\text{-in}</m> telescope will gather <m>4</m> times as much light, and therefore, you will be able to see much fainter object.
+    	</p>
+    	<p>
+     		In many instruments, light is restricted to be near the axis of the instrument by using a light blocker with a hole. This object is called <term>aperture stop</term>. See <xref ref="fig-instruments-numerical-aperture-and-stop"/>.
+     	</p>
+     	<p>
+     		When you place an object on the axis in front of the entrance of an instrument, the ray with the largest angle that can enter the instrument is called <term>Marginal Ray</term> as illustrated in <xref ref="fig-instruments-numerical-aperture-and-stop"/>. The angle of the marginal ray is an important characteristic of an instument. A quantity, numerical aperture, is defined based on this angle and the refractive index of the ambient medium.		
+    	</p>
+    	<sidebyside widths="50%  50%">
+	       	<p>
+	    		Consider a lens with object at point P on the axis. Let <m>n_0</m> be the refractive index of the ambient around P as shown in <xref ref="fig-instruments-numerical-aperture-and-stop"/>. Let there be an aperture stop of diameter <m>D</m> behind the lens. Then, we define numerical aperture as
+	    		<men>
+	    			\text{NA} = n_0\,\sin\theta.
+	    		</men>
+	    	</p>
+	    	 
+	    	<figure xml:id="fig-instruments-numerical-aperture-and-stop">
+	    		<caption>
+	    			 Aperture, aperture stop and marginal rays. 
+	    		</caption>
+	    		<image source="./images/optical-instruments/instruments-numerical-aperture-and-stop.png" width="100%"/>
+	    	</figure> 
+    	</sidebyside>   	
+    	<p>
+    		 If you don't have any aperture stop, then you can think of <m>D</m> as the diameter of the lens itself since light will be entering through the entire lens. Using the geometry in <xref ref="fig-instruments-numerical-aperture-and-stop"/>, you can express <m>\text{NA}</m> also as
+    		 <me>
+    		 	\text{NA} = n_0\sin\theta = \frac{n_0 D}{\sqrt{D^2 + p^2}}.
+    		 </me>
+    		 If we further assume that angle <m>\theta</m> is small, then, this will simplify to
+    		 <men xml:id="eq-numerical-aperture-small-angle">
+    		 	\text{NA} = n_0\sin\theta \approx n_0\sin\theta = \frac{n_0 D}{p}.
+    		 </men>
+  		 
+    	</p>
+    	
+    </subsection>
+
+
+    <subsection><title>F/Number and F-Stops </title>
+    	<p>
+    		In Eq. <xref ref="eq-numerical-aperture-small-angle"/>, if you place the object at the focal point of the lens, i.e., when <m>p=f</m>, you will get a characteristic numerical aperture, which we will denote by attaching a subscript <m>f</m> to <m>\text{NA}</m>.
+    		 <me>
+    		 	\text{NA}_f =  \frac{n_0 D}{f}.
+    		 </me> 
+    		 Thus, we see that ability of light to enter the instrument can be characterized by the ratio of diameter of the aperture and the focal length. We note that larger value of <m>D/f</m> will mean more light enters the apparatus. Larger   <m>D/f</m> would mean we can collect same amount of light in less time. The inverse of this, i.e., <m>f/D</m>, is called the <term>F/Number</term> or <term>F-Stop</term>. 
+    		 <men>
+    		 	\text{F/Number or F-stop} = \frac{f}{D}.
+    		 </men>
+    		 In terms of numerical aperture at focal length, this becomes
+
+    		 <me>
+    		 	\text{F/Number or F-stop} = \frac{n_0}{\text{NA}_f}.
+    		 </me>
+    	</p>
+    	<sidebyside widths="60% 40%">
+	    	<p>
+	    		F/Number is more commonly written as <term>F/#</term>. The term F-Stop is more common name for this parameter in cameras, where it is set by selecting the diameter of an aperture stop since focal length is fixed.
+	    	</p>
+	    	<image source="./images/optical-instruments/camera-f-stops.png" width="100%"/>
+	    </sidebyside>
+    	<p>
+    		 Note that a larger <m>D/f</m> means more light being collected per second, meaning that an instrument with a larger <m>D/f</m> is faster than one with a smaller <m>D/f</m>. Since <m>D/f</m> and F/Number are oppsitely related, smaller F/Number or F-Stop will correspond to collection of more light per sec, which will mean smaller F/Number or F-Stop is a faster system than one with higher higher F/Number or F-Stop.
+    	</p>
+<!--     	<sidebyside widths="60% 40%">
+	    	<p>
+	    		In cameras, you will notice that F-Stops are set by selecting the diameter of an aperture stop since focal length is fixed.
+	    	</p>
+			<image source="./images/optical-instruments/camera-f-stops.png" width="100%"/>
+		</sidebyside> -->
+	    	
+ 
+    </subsection>
+
+
+
+</section>

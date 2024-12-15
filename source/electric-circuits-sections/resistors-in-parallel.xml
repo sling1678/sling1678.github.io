@@ -1,0 +1,221 @@
+<section xml:id="resistors-in-parallel"><title> Resistors in Parallel </title>
+
+	<introduction>
+		<p>
+			We say that two resistors <m> R_1</m> and <m>R_2</m> are connected in parallel if a current entering the combination splits and recombines <alert> immediately</alert> after going through each of the resistors as shown in <xref ref="fig-resistors-in-parallel-definition"/>. The two resistors in parallel circuit are also called two <term>branches</term> of the circuit and points <m>a</m> and <m>b</m> where they split or join are called <term>junctions</term> or <term>nodes</term>.
+		</p>
+		<p>
+			Another property to note of resistors in parallel is that the potential drops across each resistor is same for all resitors in parallel since every resistor is connected to same junction points on the two ends.  
+		</p>
+		<figure xml:id="fig-resistors-in-parallel-definition">
+			<caption>
+				Two resitors connected in parallel. Current <m>I</m> entering the combination at junction <m>a</m> <alert>splits</alert> with separate currents entering the two resitors, which then immediately combine at junction <m>b</m> after exiting each resitor. Also, potential drop each resitor is same, viz., <m>\Delta \phi_1 = \Delta\phi_2 = \phi_a - \phi_b</m>.
+			</caption>
+			<image source="./images/electric-circuits/resistors-in-parallel-definition.png" width="60%"/>			
+		</figure>
+	</introduction>
+
+	<subsection> <title> Potential Drop Across Resistors in Parallel </title>
+		<p>
+			In <xref ref="fig-resistors-in-parallel-definition"/>, the resitors in parallel are connected to a voltage source such that we set up the same potential differece across both resistors.
+			<men xml:id="eq-over-all-potential-drop-R-in-series">
+				\Delta \phi_1 = \Delta \phi_2 = \phi_a - \phi_b = V.
+			</men>
+		</p>
+	</subsection>
+
+	<subsection> <title> Currents in Resitors in Parallel </title>
+		<p>
+			Applying Ohm's law to the two resistors separatelty gives us currents through the individual resitors immediately. 
+			<mdn>
+				<mrow xml:id="eq-resistors-in-parallel-current-I1"> I_1 \amp  = \dfrac{\Delta\phi_1}{R_1} = \dfrac{V}{R_1}</mrow>
+				<mrow xml:id="eq-resistors-in-parallel-current-I2"> I_2 \amp  = \dfrac{\Delta\phi_2}{R_2} = \dfrac{V}{R_2} </mrow>
+			</mdn>
+			These show that if <m>R_1 \gt R_2</m>, then <m>I_1 \lt I_2</m>. That is, higher current will flow through the branch with smaller resistance. If a branch has no resistance, then there will be no current will be left to flow through any other branch. Such as branch is called a <term>short</term> in the circuit.
+		</p>
+		<p>
+			Since a total current <m>I</m> comes into junction <m>a</m> and currents <m>I_1</m> and <m>I_2</m> leave and no charge accumates at <m>a</m>, we can apply conservation of charge to conclude the following current conservation at each junction.
+			<me>
+				I - I_1 - I_2 = 0,
+			</me>
+			that is, overall current in the circuit is
+			<men xml:id="eq-resistors-in-parallel-current-conservation">
+				I = I_1 + I_2 = \dfrac{V}{R_1} + \dfrac{V}{R_2} = V \left(\dfrac{1}{R_1} + \dfrac{1}{R_2} \right) .
+			</men>
+			This shows that resitors in parallel <alert> divide up </alert> the total current among themselves. That is why we often refer to parallel resitors as <term>current dividers</term>. Solving this for <m>V</m> and using it in Eqs. <xref ref="eq-resistors-in-parallel-current-I1"/> and <xref ref="eq-resistors-in-parallel-current-I2"/>, we find current in each branch in terms of the total current entering or exiting the parallel resistors. After simplification we get the folloing useful formulas.
+			<mdn>
+				<mrow xml:id="eq-resistors-in-parallel-current-I1-in-I"> I_1 \amp =  I\,\dfrac{R_2}{R_1+R_2},</mrow>
+				<mrow xml:id="eq-resistors-in-parallel-current-I2-in-I"> I_2 \amp  = I\,\dfrac{R_1}{R_1+R_2}. </mrow>
+			</mdn>
+			Note the resistor in the numerator of each formula is the resitor in the other branch. Therefore, if other branch 2 has more resistance than branch 1, more current will flow in branch 1.
+		</p>
+	</subsection>
+
+	<subsection> <title> Equivalent Resistor of Resistors in Parallel </title>
+		<p>
+			Eq. <xref ref="eq-resistors-in-parallel-current-conservation" /> can be written in the following way, where voltage across the parallel combination is equal to the total current and a resistor, which is called <term>equivalent resistor</term> of the combination, <m>R_\text{eqiv}</m> .
+			<me>
+				V =  I\left( \dfrac{1}{R_1} + \dfrac{1}{R_2}  \right)^{-1} \equiv I R_\text{equiv}.
+			</me>
+			The total current and total voltage related this way implies that the parallel combination of resistors <q>act</q> as if there was a single resitor of an equivalent resistance. We will also denote this equivalent resistance by <m>R_\text{parallel}</m> as illustrated in <xref ref="fig-resistors-in-parallel-equivalent" />.
+			<men xml:id="eq-equiv-res-parallel-resitors-resistance">
+				R_\text{parallel} = \left( \dfrac{1}{R_1} + \dfrac{1}{R_2}  \right)^{-1}  \equiv R_\text{equiv}.
+			</men>
+			This can be written in calculationally more friendly way,
+			<men>
+				R_\text{parallel} = \dfrac{R_1 R_2}{R_1 + R_2}.
+			</men>
+			
+		</p>
+
+
+		<figure xml:id="fig-resistors-in-parallel-equivalent">
+			<caption>
+				An equvalent circuit of two resitors connected in parallel. The resitors between the common junctions <m>a</m> and <m>b</m> can be replaced by <m>R_\text{equiv}</m> without affecting anything outside of the resitors that have been combined if <m>R_\text{equiv} = R_\text{parallel} = \left( \dfrac{1}{R_1} + \dfrac{1}{R_2}  \right)^{-1} </m>.
+			</caption>
+			<image source="./images/electric-circuits/resistors-in-parallel-equivalent.png" width="80%"/>			
+		</figure>
+
+
+
+		<p>
+			We will often write Eq. <xref ref="eq-equiv-res-parallel-resitors-resistance" /> as an inverse resistance, i.e., a conductance relation.
+			<men xml:id="eq-equiv-res-parallel-resitors-inv-resistance">
+				\dfrac{1}{R_\text{parallel}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} \Longleftrightarrow G_\text{parallel} = G_1 + G_2,
+			</men>
+			where I have used the inverse relation between conductance <m>G</m> and resistance <m>R</m>.
+			<me>
+				G = \dfrac{1}{R}.
+			</me>
+		</p>
+		<p> 
+			For <m>N</m> resistors in parallel, you can show that
+			<men> 
+				\frac{1}{R_\text{parallel} } = \frac{1}{R_{1}} + \frac{1}{R_{2}} + \cdots + \frac{1}{R_{N}},
+			</men>
+			and the following for the conductances.
+			<men>
+				G_\text{parallel} = G_1 + G_2 + \cdots + G_N.
+			</men>
+			Hence, conductances add in a parallel circuit. Earlier, we found that resistances add up in series.
+ 
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-A-Current-Divider"><title>  A Current Divider </title>
+		<statement>
+			<p>
+				Consider the circuit given in <xref ref="fig-dc-circuit-two-parallel-resistors"/>.
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					<p>
+						(a) Find percentage of current that passes through each resistor.
+					</p>
+					<p>
+						(b) Find equivalent resitance across the voltage source.
+					</p>
+					<p>
+						(c) Find current through the voltage source.
+					</p>
+					<p>
+						(d) Find current in each resistor.
+					</p>
+				</p>
+				<p></p>
+				<figure xml:id="fig-dc-circuit-two-parallel-resistors">
+					<caption>
+					</caption>
+					<image source="./images/electric-circuits/dc-circuit-two-parallel-resistors.png" width="50%"/>
+				</figure>
+			</sidebyside>
+		</statement>
+		<hint> <p> Use definitions.  </p> </hint>
+		<answer> <p>  (a) <m> 75\%,\ 25\%</m>,
+					  (b) <m> 75\ \Omega </m>,
+					  (c) <m> 267\text{ mA}</m>,
+					  (d) <m> 67\text{ mA},\ 200\text{ mA}</m>. </p> </answer>
+		<solution> <title>(a) </title>
+			<p>
+				(a)
+				In this example, current <m> I_1</m> will be more than current <m> I_2</m> since <m>I_1</m> passes through the smaller resistance.
+				<md>
+					<mrow>I_1 \amp = \left(\frac{300\Omega}{100\Omega + 300\Omega } \right) I = \frac{3}{4} I. </mrow>
+					<mrow>I_2  \amp = \left(\frac{100\Omega}{100\Omega + 300\Omega } \right) I = \frac{1}{4} I. </mrow>
+				</md> 
+				Hence 75% of the total current passes through the <m>100\;\Omega</m>  resistor and <m>25\%</m> through the <m>300\; \Omega</m> resistor.
+			</p>
+		</solution>
+		<solution> <title>(b) </title>
+			<p>
+				(b)
+				The equivalent resistance across the source is the equivalent resistance of parallel resitors.
+				<md>
+					<mrow> R_\text{equiv} \amp = \left( \dfrac{1}{R_1} + \dfrac{1}{R_2} \right)^{-1}  = \dfrac{R_1 R_2}{R_1 + R_2}</mrow>
+					<mrow> \amp = \dfrac{100\Omega \times 300\Omega }{100\Omega + 300\Omega }  = 75\ \Omega. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(c) </title>
+			<p>
+				(c)
+				The equivalent resistance across the source is the equivalent resistance of parallel resitors.
+				<md>
+					<mrow>I \amp =  \dfrac{V}{R_\text{parallel}} =  \dfrac{20\text{ V}}{75\ \Omega} = 267\text{ mA}</mrow>
+				</md>
+			</p>
+		</solution>
+
+		<solution> <title>(d) </title>
+			<p>
+				(d)
+				Using the results of (a) and (c) we get
+				<md>
+					<mrow>I_1  \amp = \frac{3}{4} I = 67\text{ mA}.</mrow>
+					<mrow> I_2 \amp  = \frac{1}{4} I = 200\text{ mA}.</mrow>
+				</md>				
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-A-Parallel-Circuit-of-Three-Resistors-in-Disguise"><title> A Parallel Circuit of Three Resistors in Disguise </title>
+		<statement>
+			<p>
+				Find current through each resistor in the circuit given in <xref ref="fig-dc-circuit-three-parallel-resistors"/>.
+			</p>
+			<figure xml:id="fig-dc-circuit-three-parallel-resistors">
+				<caption>
+				</caption>
+				<image source="./images/electric-circuits/dc-circuit-three-parallel-resistors.png" width="50%"/>
+			</figure>
+		</statement>
+		<hint> <p>  Think of potential difference across each resistor. </p> </hint>
+		<answer> <p> <m> \frac{1}{10}\text{ A},\ \frac{1}{20}\text{ A},\ \frac{1}{30}\text{ A}</m>  </p> </answer>
+		<solution> 
+			<p>
+
+				As before, we will choose the negative terminal of the battery as zero potential reference.  Then, the positive terminal of battery is at 10 volts.  We see from the diagram in <xref ref="fig-dc-circuit-three-parallel-resistors-solution" /> that the voltage situation across each of the resistors is same:  Each resistor is actually connected across the two terminals of the battery.
+			</p>
+
+			<figure xml:id="fig-dc-circuit-three-parallel-resistors-solution">
+				<caption>
+					This diagram shows that one side of each resitor is connected to the negative of the voltage source while the other side is connected to the positive. That means current from voltage source will split into three branches which will then combine. Thus, the three resitors are actually in parallel, even though the diagram does not have then drawn in a traditional parallel diagram.
+				</caption>
+				<image source="./images/electric-circuits/dc-circuit-three-parallel-resistors-solution.png" width="50%"/>				
+			</figure>
+
+			<p>
+				The given circuit is identical with the three resistors connected parallel to the battery.  Hence the currents are
+				<md>
+					<mrow> I_1 \amp = \frac{10\text{ V}} {100\ \Omega} = \frac{1}{10}\text{ A}.</mrow>
+					<mrow> I_2 \amp = \frac{10\text{ V}}{200\ \Omega} = \frac{1}{20}\text{ A}.</mrow>
+					<mrow> I_3 \amp = \frac{10\text{ V}}{300\ \Omega} = \frac{1}{30}\text{ A}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+		
+	
+</section>

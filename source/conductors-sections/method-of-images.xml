@@ -1,0 +1,80 @@
+<section xml:id="Method-of-Images"><title> Method of Images </title>
+
+	<introduction>
+
+		<p>
+			Electric potential of a charge near a metal is quite complicated. Method of images is a special technique that can simplify the calculation. It is based on making sure that the potential function produce potential at <alert>all surface points</alert> of the metal. We will see this im practice below for a potential of a charge near a flat metal surface. 
+		</p>
+
+	 	<p>
+	 		<xref ref="fig-image-problems-2"/>(a)  shows charge <m>+q</m> in front of a grounded conductor plate, meaning, electric potential, <m>\phi=0</m> at surface points of the metal.  Let the conducting plane be the <m>xy</m> plane and the point charge <m>+q</m> be on the <m>z</m> axis.  We look for a problem that has charge <m>+q</m> at <m>z = h</m> and some other charge or charges arranged in such a way that the potential is zero for all point in the z=0 plane.  
+	 	</p>
+
+		<figure xml:id="fig-image-problems-2">
+			<image source="./images/conductors/image-problems-2.png" width="90%"/>
+			<caption> 
+				Method of images. (a) A point charge in front of a grounded  infinite planar conductor.  (b) Two point charges which have a zero potential surface that falls in the same place as the planar conductor's surface. The negative charge in (b) is called the image charge. Figure (b) without the plate is equivalent to problem in Fig. (a) since they both agree at points above the plate. They disagree at points below the plate.
+			</caption>
+		</figure>
+
+		<p>
+			As shown in <xref ref="fig-image-problems-2"/>(b), there is a problem indeed that has the desired characteristics: two charges, <m>+q</m> at <m>z = h</m> and <m>-q</m> at <m>z = -h</m>.  We replace the original problem of one charge in front of a <m>V=0</m> conducting plane with a problem of two charges <m>+q</m> and <m>-q</m> separated by a distance <m>2h</m> and no conducting plane as displayed in <xref ref="fig-image-problems-2"/>(b).  The electric potential of the problem in <xref ref="fig-image-problems-2"/>(b) for <m>z\ge 0</m> is identical to the electric potential of the problem in <xref ref="fig-image-problems-2"/>(a).
+		</p>
+		<p>
+			The potential at point P of the two charge system will be same as the potential for one charge and a <m>V=0</m> infinite plane for <m>z\ge 0</m> in order to coincide with the boundary condition. 
+			<me>
+				\phi_P = \frac{q}{4\pi\epsilon_0}\left[\frac{1}{\sqrt{x^2+y^2+(z-h)^2}} - \frac{1}{\sqrt{x^2+y^2+(z+h)^2}}\right].
+			</me>
+		</p> 
+		<p>
+			In <xref ref="fig-image-problems-3"/>, we show the equipotential lines and the electric field lines in the <m>yz</m> plane of <xref ref="fig-image-problems-2"/>.  We see that the field lines bend and land perpendicular to the conducting plate where negative charges on the conducting plate is induced.  
+		</p>
+
+		<figure xml:id="fig-image-problems-3">
+			<image source="./images/conductors/image-problems-3.png" width="70%"/>
+			<caption> 
+				Equipotential and electric field lines for a point charge near a conducting plate.
+			</caption>
+		</figure>
+	</introduction>
+	<subsection><title> (Calculus) Electric Field for a Charge Near a Grounded Cunductor</title>
+		<p>
+			From the electric potential for a point charge in front of a plane conductor found above we can determine the electric field by <m> \vec E = \vec{\nabla}\phi</m>.  The components of the electric field are
+			<md>
+				<mrow> E_x \amp = - \frac{\partial \phi_P}{\partial x}</mrow> 
+				<mrow> E_y \amp = - \frac{\partial \phi_P}{\partial y}</mrow> 
+				<mrow> E_z \amp = - \frac{\partial \phi_P}{\partial z}</mrow>
+			</md>
+		</p>
+		<p>
+			These components are not very instructive. We do not need to find all three components to get more information about the induced charges on the plates. 
+		</p>
+	</subsection>
+	<subsection><title> (Calculus) Distribution of Induced Charges on Metal Plate near a Point Charge</title>
+
+		<p>
+			Near the plate, electric field is equal constant with magnitude equal to <m>\sigma/\epsilon_0</m> and perpendicular to the plates. 
+			Therefore, the distribution of negative charges on the plate can be determined from the difference of the normal component of the electric field across the surface.
+			<md>
+				<mrow> \amp E_{z}|_{z>0} - E_z|_{z \lt 0} = \frac{\sigma_\text{ind}(x,y,0)}{\epsilon_0} </mrow>
+			</md>
+			where <m>\sigma_\text{ind}(x,y,0)</m> is the induced charge density distribution on the plate.  Using the <m>z</m> component of the electric field, we find the following for the surface charge density on the plate.
+			<me>
+				\sigma_\text{ind}(x,y,z) = \frac{-qh/2\pi}{\left(x^2+y^2+h^2 \right)^{3/2}}
+			</me>
+			The total induced negative charge can be obtained by integrating  ind over the plate, which goes to infinity.  It is best to do this in the polar coordinates, <m>(s,\phi,z)</m>.  The induced charge on the plate is function of only the radial coordinate <m>s</m>, which is integrated of the surface area of <m>xy</m> plane to yield that the induced charge is equal to the negative of the point charge of the point charge in front of the grounded plane.
+			<me>
+				\sigma_\text{ind}(s) = \frac{-qh/2\pi}{\left(s^2+h^2 \right)^{3/2}}
+			</me>
+			We can integrate the surface charge density over the plane and obtain the net charge induced in the plane.
+			<me>
+				q_\text{ind} = \int\sigma_\text{ind} 2\pi sds = -q
+			</me>
+		</p>
+	</subsection>
+
+
+
+	
+
+</section>

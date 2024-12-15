@@ -1,0 +1,855 @@
+<section xml:id="forces-Coupled-Motion"><title> Coupled Motion and Constraints</title>
+<idx>Coupled Motion</idx><idx>Constraints of Motion</idx><idx><h>Motion</h><h>Coupled</h></idx>
+	<introduction>
+		<p>
+			When motion of two or more bodies are connected, we say that their motion is coupled. One way to analytically see the relation among the motion is look at the displacement of various bodies in some interval <m>\Delta t</m>. Sometimes, you can see this in the relation between their coordinates and other times you will have to look at two times <m>t</m> and <m>t+\Delta t</m>. These relations are called <term>constraints</term>.
+		</p>
+
+		<p>
+			Analytically, we think of individual parts of a coupled system as separate systems that are linked by one or more constraints. The equations of each together with the constraints are then analyzed to gain insight into the motion of the original system. In this section, we will look at two common types of problems that you often see in introductory books.
+		</p>
+
+	</introduction>
+	<subsection><title>Objects Pushing on Each Other</title>
+		<p>
+			Place one book next to another. Now, push on one of the books towards the other book as in <xref ref="fig-coupled-motion-books-next-to-each-other"/>. Notice how the two books move together. We say that the displacements of the two books are <q> coupled </q>. 
+		</p>
+		<figure xml:id="fig-coupled-motion-books-next-to-each-other">
+			<caption> Two books move together when pushed by force <m> F</m> with constraint <m> x_2 - x_1 = D</m>, a constant.
+			</caption>
+			<image source="./images/forces/coupled-motion-books-next-to-each-other.png" width="70%"/>
+		</figure>
+		<p>
+			For example, in the example of the two books in <xref ref="fig-coupled-motion-books-next-to-each-other"/>, say their motion is along <m>x</m> axis. Let positions of the two books be denoted by symbols, <m> x_1 </m> and <m> x_2</m>. 
+			We can express the constraint here either by saying the the difference of these coordinates is a fixed quantity, say <m> D </m>,
+			<men>
+				x_2 - x_1 = D.
+			</men>
+			or, that any change in <m> x_1 </m> must equal the change in <m> x_2 </m>.
+			<me>
+				\Delta x_1 = \Delta x_2.
+			</me>
+			This leads to their velocities and accelerations also equal.
+			<me>
+				v_{1,x} = v_{2,x},\ \ \text{and}\ \ a_{1,x} = a_{2,x}.
+			</me>
+		</p>
+
+
+	<example xml:id="ex-force-between-two-books-moving-together" ><title> Force between Two Books Moving Together</title>
+		<statement>
+			<p>
+				Consider two books of masses <m>m_1</m> and <m>m_2</m> that are next to each other on a  frictionless table as shown in <xref ref="fig-ex-coupled-motion-books-next-to-each-other"/>. A constant force <m>\vec F</m> pushes on book 1 horizontally.
+			</p>
+			<p>
+				(a) What is the magnitude of the acceleration of the two books?
+			</p>
+			<p>
+				(b) What is the magnitude and direction of the force on book 1 by book 2?
+			</p>
+			<figure xml:id="fig-ex-coupled-motion-books-next-to-each-other">
+				<caption>
+					Figure for <xref ref="ex-force-between-two-books-moving-together"/>.
+				</caption>
+				<image source="./images/forces/ex-coupled-motion-books-next-to-each-other.png" width="70%"/>
+			</figure>
+
+		</statement>
+		<!-- <hint> <p>  (a) Think of two books as one large system. (b) Look at one of the books only. </p> </hint> -->
+		<answer> <p> (a) <m> \dfrac{F}{m_1 + m_2}</m>, (b) magnitude = <m> \dfrac{m_1}{m_1 + m_2}\, F</m>, direction opposite to <m> \vec F</m>. </p> </answer>
+		<solution> <title>a</title>
+			<p>
+				Since we want the acceleration of both, we can look at the two books together as one system and investigate forces on the combined system. The forces are shown in <xref ref="fig-ex-coupled-motion-books-next-to-each-other-a" /> along with the choice of Cartesian axes.
+			</p>
+			<figure xml:id="fig-ex-coupled-motion-books-next-to-each-other-a">
+				<caption>
+					Figure for <xref ref="ex-force-between-two-books-moving-together" />(a).
+				</caption>
+				<image source="./images/forces/ex-coupled-motion-books-next-to-each-other-a.png" width="70%"/>
+			</figure>
+			<p>
+				Equations of motion along the two Cartesian axes are
+				<md>
+					<mrow> \amp\text{ Along }x\text{ axis: } F = \left( m_1 + m_2 \right) a,</mrow>
+					<mrow> \amp\text{ Along }y\text{ axis: } N -  \left( m_1 + m_2 \right) g = 0.</mrow>
+				</md>
+				From the first equation, we have our answer.
+				<me>
+					a = \dfrac{F}{m_1 + m_2}.
+				</me>
+
+			</p>
+		</solution>
+		<solution> <title>b</title>
+			<p> 
+				Since we now want force on one of the books by the other book, we will need to set up force diagram of one book. Here, we want the force on book 1. So, it may seem <q> natural</q> to look at the force diagram of book 1, but it turns out it is easier to get this information from force diagram on 2 as we will show after I do the first way.
+			</p>
+			<p>
+				<alert> Using force diagram on 1: </alert>
+			</p>
+			<p>
+				<xref ref="fig-ex-coupled-motion-books-next-to-each-other-b-1"/> gives the forces on book 1 alone. Note that we have a new force here, the (normal) force by book 2 on book1.
+			</p>
+
+			<figure xml:id="fig-ex-coupled-motion-books-next-to-each-other-b-1">
+				<caption>
+					Figure for <xref ref="ex-force-between-two-books-moving-together"/>(b).
+				</caption>
+				<image source="./images/forces/ex-coupled-motion-books-next-to-each-other-b-1.png" width="70%"/>
+			</figure>
+			<p>
+				Now, the <m> x </m> axis equation of motion is
+				<me>
+					F - F_{\text{by 2}}= m_1\, a,
+				</me>
+				where we can use the <m> a </m> we found in part (a) to give
+				<me>
+					F_{\text{by 2}} = F - m_1\,\dfrac{F}{m_1 + m_2} = \dfrac{m_2}{m_1 + m_2}\, F.
+				</me>
+			</p>
+
+			<p>
+				<alert> Using force diagram on 2: </alert>
+			</p>
+
+			<p>
+				<xref ref="fig-ex-coupled-motion-books-next-to-each-other-b-2"/>  gives the forces on book 2 along with <m> \vec F </m>, which is here for illustrative purposes only.  Note that force <m> \vec F </m> does not act on book 2 - its acting on book 1 or (combined book 1 and book 2, but not on book 2 alone) - since the person pushing book 1 is not in contact with book 2.
+			</p>
+
+			<figure xml:id="fig-ex-coupled-motion-books-next-to-each-other-b-2">
+				<caption>
+					Figure for <xref ref="ex-force-between-two-books-moving-together"/>(book2).
+				</caption>
+				<image source="./images/forces/ex-coupled-motion-books-next-to-each-other-b-2.png" width="70%"/>
+			</figure>
+			
+			
+			<p>
+				Now, the <m> x </m> axis equation of motion is
+				<me>
+					F_{\text{by 1}}= m_2\, a,
+				</me>
+				where we can use the <m> a </m> we found in part (a) to give
+				<me>
+					F_{\text{on 2}}^\text{by 1} =  \dfrac{m_2}{m_1 + m_2}\, F.
+				</me>
+				But by third law, this is equal to <m> F_{\text{on 1}}^\text{by 2}</m>.
+			</p>
+
+
+		</solution>
+	</example>
+
+
+	</subsection>
+
+	<subsection><title>Motion Connected by Strings and Pulleys</title>
+	<idx>Pulleys</idx>
+
+		<sidebyside widths="50% 10% 25% 15%">
+	 
+			<p>
+				In a similar way, displacements of two blocks conected by a string around a pulley are linked if the length of the string does not change during their motion - the amount one moves up is equal to the amount the other moves down. Here, we write the constraint as <m>h_1 + \pi R + h_2 = \text{constant}</m>, where <m>h_1 (h_2)</m> is the length of the rope on mass 1(2) side and <m>R</m> is the radius of the pulley.
+			</p>
+	 
+			<p> </p>
+			<figure xml:id="fig-tension-force-atwood-machine-coupled">
+				<caption></caption>
+				<image source="./images/forces/tension-force-atwood-machine-coupled.png" width="70%"/>
+			</figure>
+			<p></p>
+		</sidebyside>
+		<sidebyside widths = "50% 10% 30% 10%">
+			<p>
+				In the example of the masses on the pulley, let us point positive <m> y </m> axis up and let <m> y_1 </m> and <m> y_2</m> denote the positions of the two blocks. Then, constraint will be
+				<me>
+					\Delta y_1 = - \Delta y_2.
+				</me>
+				Note the crucial negative sign here - as one goes up the other goes down. 
+			</p>
+			<p></p>
+			<image source="./images/forces/coupled-motion-blocks-on-pulley.png" width="70%"/>
+			<p></p>
+		</sidebyside>
+		<p>
+			This gives the following relations between <m>y</m>-components of their velocities and accelerations.
+				<me>
+					v_{1,y} = - v_{2,y},\ \ \text{and}\ \ a_{1,y} = -a_{2,y}.
+				</me>					 
+		</p>
+		<p>
+			Furthermore, if we look at the string moving on the edge of the pulley, we can also relate the distances blocks rise or fall to the angle <m>\Delta \theta</m>, the pulley rotates <alert>if string does not slide on the pulley</alert> by using the arc-angle relation, <m>s=R\theta</m> of a circular arc.
+			<me>
+				R\Delta \theta = |\Delta y_1| = |\Delta y_2|.
+			</me>
+		</p>
+
+	<example xml:id="ex-Two-Blocks-Moving-Vertically-Coupled-Through-an-Ideal-Pulley"><title> Two Blocks Moving Vertically Coupled Through an Ideal Pulley </title>
+		<statement>
+			<sidebyside widths="60% 10% 30%">
+ 
+				<p>
+					<idx>Atwood's Machine</idx>
+					Two blocks of mass <m> m_1 </m> and <m> m_2 </m>  are conncted by a string that goes over an ideal pulley. By ideal pulley, we will mean that the tensions on the two sides of the pulley can be assumed to have same magnitude. Both blocks are hanging with initially kept in place by some support force, which is not shown in the figure. Once the support force is removed, the two blocks start to accelerate. This system is called <term>Atwood's machine</term>. 
+				</p>
+ 
+				<p> </p>
+				<figure>
+					<caption></caption>
+					<image source="./images/forces/tension-force-atwood-machine-coupled.png" width="70%"/>
+					<!-- <image source="./images/forces/bc-coupled-motion-two-blocks-ideal-pulley-vertical.png" width="70%"/> -->
+				 </figure>
+				 
+			</sidebyside>
+				
+					<p>
+						(a) Find the acceleration of the two blocks.
+					</p>
+					<p>
+						(b) Find the magnitude of tension in the string.
+					</p>
+					<p>
+						(c) If block 2 has less mass than block 1, block 2 will rise and block 1 will fall. By how much height would block 2 rise in time <m> \Delta t </m> starting from rest?
+					</p>
+			<p>
+				Check your answer for the following values: <m> m_1 = 8.0\text{ kg}</m>, <m> m_2 = 2.0\text{ kg}</m>,  <m> \Delta t = 0.75\text{ s}</m>.
+			</p>
+		</statement>
+		<!-- <hint> <p> (a) and (b) Find equations of motion of the two blocks separately making use of the constraint of same magnitude of acceleration of the two. (c) Use constant-acceleration equations.  </p> </hint> -->
+		<answer> <p>  (a)  <m> 5.89\text{ m/s}^2</m>, (b)  <m> 15.7\text{ N} </m>, (c) <m> 0.184\text{ m}</m>. </p> </answer>
+		
+		<solution> <title> (a) and (b) </title>
+
+			<p>
+				We will write equations of motions of the two blocks by working <m> \vec F = m\vec a </m> for each, with two common values, the magnitude of tension force and the magniture of the acceleration. 
+			</p>
+			<sidebyside widths="60% 5% 30% 5%">
+
+				<p>
+					The diagram shows force diagrams for both blocks. While drawing arrows in the diagram, I assumed for the moment that block 1  has axcceleration pointed down. It also takes into account the constraint in the system that the magnitude of acceleration of block 1 is equal to that of block 2, even though the directions of the acceleration vectors are different.
+				</p>
+				<p></p>
+				<p>
+
+					<image source="./images/forces/bc-coupled-motion-two-blocks-ideal-pulley-vertical-forces.png" width="70%"/>
+				</p>
+				<p></p>
+			</sidebyside>
+			<p>
+				The diagram also displays a fundamental assumption - the ideal pulley assumption, by which we mean that the tension on the two sides of the pulley have the same magnitude. 
+			</p>
+			<p>
+				With the positive <m> y </m> axis pointed up, we get the follwing two equations of motion.
+			</p>
+			<p>
+				<alert> With <m> a_y = -a </m> for block 1, the equation of motion for block 1 is </alert>
+				<md>
+					<mrow > \amp T - m_1 g =  -m_1  a,</mrow>
+				</md>
+				and, <alert> with <m> a_y = a </m> for block 2, he equation of motion for block 2 is </alert>
+				<md>
+					<mrow > \amp T - m_2 g = m_2 a.</mrow>
+				</md>
+				We can easily solve these equations for <m> a </m> and <m> T </m>.
+				<md>
+					<mrow > a = \dfrac{m_1 - m_2}{m_1 + m_2}\, g,</mrow>
+					<mrow > T = \dfrac{m_1m_2}{m_1 + m_2}\, g.</mrow>
+				</md>							
+			</p>
+			<p>
+				Using the numerical values, we get
+				<md>
+					<mrow > a = \dfrac{8 - 2}{8 + 2}\times 9.81 = 5.89\text{ m/s}^2,</mrow>
+					<mrow > T = \dfrac{8\times 2}{8 + 2}\times 9.81 = 15.7\text{ N}.</mrow>
+				</md>				
+			</p>
+		</solution>
+		<solution> <title> c </title>
+			<p>
+				Using constant acceleration for zero initial speed, we get
+				<me>
+					h = \dfrac{1}{2} a t^2 =  \dfrac{1}{2} \times 5.89\times 0.25^2 = 0.184\text{ m}.
+				</me>
+
+			</p>
+
+		</solution>
+	</example>
+
+
+	</subsection>
+
+
+
+	<exercises>
+
+	<exercise xml:id="ex-Force-Between-Two-Books-Stacked-with-One-Book-Pushed-from-Side"><title>Force Between Two Books Stacked with One Book Pushed from Side</title>
+
+		<statement>
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					Two books are stacked on a table and the lower book is pushed with a force <m>F</m> horizontally as shown in <xref ref="fig-one-book-on-another-force-on-lower-book"/>. Suppose <m>\mu_{s12}</m> and  <m>\mu_{k12}</m> are the coefficients of static and kinetic kinetic frictions between the two books and <m>\mu_{s1}</m> and  <m>\mu_{k1}</m> are the coefficients of static and kinetic kinetic frictions between the lower book and the table surface.
+				</p>
+				<p></p>
+				<figure xml:id="fig-one-book-on-another-force-on-lower-book">
+					<caption></caption>
+					<image source="./images/forces/one-book-on-another-force-on-lower-book.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				(a) If the two books slide on the table together, what will be their acelleration?
+			</p>
+			<p>
+				(b) If top book slides with respect to bottom book with both books moving, what will their separate accelerations?
+			</p>
+			<p>
+				(c) Suppose you start to push at lower book with increasing force, from say force <m>F=0</m>, you find that the two books start to accelerate together on the table upto a maximum acceleration. If you push with a higher force than that, top book slides on the bottom book. Find the value of <m>F</m> when tat happens.
+			</p>
+
+		</statement>
+		<hint><p>(a) Treat the two books as one system.  (b) Treat the two books as two systems and make sure the friction and the normal force between the books  work in opposite directions when acting on the two books. (c) Think about what force is responsible for aqccelerartion  </p></hint>
+		<answer><p>
+			(a) <m> \frac{F - \mu_{k1}(m_1+m_2)g}{ (m_1 + m_2) }</m>,
+			(b) <m>\frac{F - \mu_{k1}(m_1 + m_2)g  - \mu_{k12}m_2 g}{m_1},\ \ \mu_{k12}g</m>,
+			(c) <m>\mu_{s12}\,g</m>.
+
+		</p></answer>
+		<solution><title>(a)</title>
+
+			<sidebyside widths="50% 50%">
+				<p>
+					When books move together, the problem is same as a problem of one book of their combined mass on the table. From the forces shown in the figure we can immediately write equations of motion.
+				</p>
+				
+				<figure xml:id="fig-one-book-on-another-force-on-lower-book-a">
+					<caption></caption>
+					<image source="./images/forces/one-book-on-another-force-on-lower-book-a.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+
+			<p>
+				<md>
+					<mrow>\amp F - \mu_{k1}N = (m_1 + m_2) a</mrow>
+					<mrow>\amp N - (m_1+m_2)g = 0</mrow>
+				</md>
+				Therefore, acceleration is
+				<me>
+					a = \frac{F - \mu_{k1}(m_1+m_2)g}{ (m_1 + m_2) }.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<sidebyside widths="45% 5% 50%">
+				<p>
+					When the two books slide with respect to each other, we should look at force diagram for each book separately as shown in <xref ref="fig-one-book-on-another-force-on-lower-book-b"/>. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-one-book-on-another-force-on-lower-book-b">
+					<caption></caption>
+					<image source="./images/forces/one-book-on-another-force-on-lower-book-b.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+			<p>
+				The important things to notice is that normal force on book 2 is by book 1 and therefore, its pair must act on book 1 downward. Similarly, friction on book 2 must also act on book 1, but in opposite direction to how it does on book 2. 
+				From the forces shown in the figure we can immediately write equations of motion.
+			</p>
+			<p>
+				<md>
+					<mrow>\amp F - \mu_{k1}N_{1}  - \mu_{k12}N_{12}  = m_1 a_1</mrow>
+					<mrow>\amp N_1 - N_{12} - m_1 g = 0</mrow>
+					<mrow>\amp  \mu_{k12}N_{12}  = m_2 a_2</mrow>
+					<mrow>\amp N_{12} - m_2 g = 0</mrow>
+				</md>
+				First we get <m>N_{12}</m> from the last equation. Then, we use it to get <m>a_2</m> and <m>N_1</m>. Then we get <m>a_1</m>.
+				<md>
+					<mrow>a_2 \amp = \frac{\mu_{k12}m_2 g}{ m_2} = \mu_{k12}g.</mrow>
+					<mrow>a_1 \amp = \frac{F - \mu_{k1}N_{1}  - \mu_{k12}N_{12}}{m_1}</mrow>
+					<mrow>  \amp = \frac{F - \mu_{k1}(m_1 + m_2)g  - \mu_{k12}m_2 g}{m_1}</mrow>
+				</md>
+			</p>			
+		</solution>
+		<solution><title>(c)</title>
+			<p>
+				Let's look at when book at the top moves with the book at the bottom without sliding between them. The force that is responsible for the acceleration of the book at the top is the <alert>static force</alert> between the books. We know that static force has a maximum value.
+				<me>
+					F_{s12}^\text{max} = \mu_{s12} N_{12},
+				</me>
+				with <m>N_{12}=m_2 g</m> as from <xref ref="fig-one-book-on-another-force-on-lower-book-b"/>. 
+				Therefore, maximum acceleration before sliding will be
+				<me>
+					a_\text{max} = \frac{\mu_{s12} N_{12}}{m_2} = \mu_{s12}\,g.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-A-Block-Pushed-on-Another-Block-and-Held-in-Place-by-Static-Friction"><title>A Block Pushed on Another Block and Held in Place by Static Friction</title>
+
+		<statement>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					<xref ref="fig-block-pushed-on-another-and-supported-by-static-friction"/> shows a block of mass <m>m</m> being pushed horizontally by a force <m>\vec F</m> onto another block of mass <m>M</m>. While the two blocks move together, block <m>m</m> does not slide down. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-block-pushed-on-another-and-supported-by-static-friction">
+					<caption></caption>
+					<image source="./images/forces/block-pushed-on-another-and-supported-by-static-friction.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				The coefficient of static friction between <m>m</m> and <m>M</m> is <m>\mu_s</m> and the coefficient of kinetic fricton between <m>M</m> and the table is <m>\mu_k</m>. Find an expression of <alert>minimum</alert> magnitude of force <m>F</m>.
+			</p>
+			
+		</statement>
+		<hint><p>(1) The block is supported by static friction force. (2) Write equations of combined system, and  equations of motion for the block <m>m</m> only. </p></hint>
+		<answer><p>
+			<m>\left( \frac{1}{\mu_s} - \mu_k\right)\; \left(1+ \frac{m}{M}\right)\;m\; g</m>.
+		</p></answer>
+		<solution>
+			<p>
+				<xref ref="fig-block-pushed-on-another-and-supported-by-static-friction-solution"/> shows force diagrams for two systems - the left panel is for the combined system and the right panel is that of a system that has mass <m>m</m> only. Since <m>m</m> does not slide down, the two systems will have the same acceleration with respect to the table. Since, we seek <alert>minimum</alert> magnitude of <m>F</m>, we will the condition that the static friction force between <m>m</m> and <m>M</m> is <alert>maximum</alert> as shown in the diagram by the use of <m>\mu_s N'</m> for this force.
+			</p>
+			<figure xml:id="fig-block-pushed-on-another-and-supported-by-static-friction-solution">
+				<caption></caption>
+				<image source="./images/forces/block-pushed-on-another-and-supported-by-static-friction-solution.png" width="70%"/>
+			</figure>
+			<p>
+				Using the axes shown, we get the following <m>x</m> and <m>y</m> component of the combined motion.
+				<md>
+					<mrow>\amp F - \mu_k N = (M+m)A </mrow>
+					<mrow>\amp N -  (M+m)g = 0 </mrow>
+				</md>
+				And the following <m>x</m> and <m>y</m> component for motion of <m>m</m> alone. Note the direction of normal on <m>m</m> is horizontal here since the surface of contact is vertical.
+				<md>
+					<mrow>\amp F - N' = mA </mrow>
+					<mrow>\amp \mu_s N' -  mg = 0 </mrow>
+				</md>
+				From the first set we get
+				<me>
+					F - \mu_k (M+m)g = (M+m)A,
+				</me>
+				and from the second set
+				<me>
+					F - \frac{mg}{\mu_s}= mA.
+				</me>
+				From these, we can eliminate <m>A</m> to get
+				<me>
+					F = \left( \frac{1}{\mu_s} - \mu_k\right)\; \left(1+ \frac{m}{M}\right)\;m\; g.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+	<exercise xml:id="ex-coupled-motion-of-two-blocks-and-an-ideal-pulley"><title> Coupled Motion of Two Blocks and an Ideal Pulley </title>
+		<statement>
+			<p>
+				Two blocks of mass <m> m_1 </m> and <m> m_2 </m>  are conncted by a string that goes over an ideal pulley as shown in <xref ref="fig-ex-coupled-motion-two-blocks-ideal-pulley"/>.
+			</p>
+			<sidebyside widths="65% 5% 30%">
+
+				<p>
+					 By ideal pulley, we will mean that the tensions on the two sides of the pulley can be assumed to have same magnitude. Block 1 is sliding on a horizontal table and block 2 is hanging. The coefficient of kinetic friction of block 1's bottom surface and the table is <m> \mu_k</m>.
+				</p>
+
+				<p></p>
+				<figure xml:id="fig-ex-coupled-motion-two-blocks-ideal-pulley">
+					<caption></caption>
+					<image source="./images/forces/ex-coupled-motion-two-blocks-ideal-pulley.png" width="60%"/>
+				</figure>
+			</sidebyside>
+
+			<p>
+				(a) Find the acceleration of the two blocks.
+			</p>
+			<p>
+				(b) Find the magnitude of tension in the string.
+			</p>
+			<p>
+				(c) By how much height would block 2 fall in time <m> \Delta t </m> starting from rest?
+			</p>
+
+			<p>
+				Check your answer for the following values: <m> m_1 = 8.0\text{ kg}</m>, <m> m_2 = 2.0\text{ kg}</m>, <m> \mu_k = 0.15</m>, <m> \Delta t = 0.75\text{ s}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  (a) and (b) Set up equations of motion for block 1 and  block 2 separately using same values for the magnitudes of tension and acceleration. (c) Use constant-acceleration equations. </p> </hint>
+		<answer> <p>  (a) <m>0.785\,\text{ m/s}^2</m>, (b) <m>18.1\text{ N}</m>, (c) <m>0.221\text{ m}</m>. </p> </answer>
+		<solution> <title> (a) and (b) </title>
+			<p> (a) and (b). 
+				We will write equations of motions of the two blocks by working <m> \vec F = m\vec a </m> for each, with two common values, the magnitude of tension force and the magniture of the acceleration. <xref ref="fig-ex-coupled-motion-two-blocks-ideal-pulley-forces"/> shows force diagrams for both blocks.
+			</p>
+			<figure xml:id="fig-ex-coupled-motion-two-blocks-ideal-pulley-forces">
+				<caption>
+					Figure for <xref ref="ex-coupled-motion-of-two-blocks-and-an-ideal-pulley" /> (a) and (b).
+				</caption>
+				<image source="./images/forces/ex-coupled-motion-two-blocks-ideal-pulley-forces.png" width="70%"/>
+			</figure>
+			<p>
+				Note that block 1 will have two equations of motion and block 1 will give one. <alert> Equations of motion for block 1 are </alert>
+				<mdn>
+					<mrow xml:id="eq-coupled-motion-two-blocks-ideal-pulley-1x"> \amp T-\mu_k N =  m_1  a,</mrow>
+					<mrow xml:id="eq-coupled-motion-two-blocks-ideal-pulley-1y"> \amp N -   m_1  g = 0,</mrow>
+				</mdn>
+				and, since for block 2, we have <m> a_y = -a </m>, taking the magnitude <m> a </m> as positive, <alert> equation of motion for block 2 is </alert>
+				<men xml:id="eq-coupled-motion-two-blocks-ideal-pulley-2y">
+
+					T - m_2 g = - m_2 a.
+				</men>			
+			</p>
+			<p> 
+				Solving <xref ref="eq-coupled-motion-two-blocks-ideal-pulley-1x"/>-<xref ref="eq-coupled-motion-two-blocks-ideal-pulley-2y"/> we can get
+				<md>
+					<mrow> \amp a = \dfrac{m_2 -\mu_k\,m_1}{m_1 + m_2}\ g,</mrow>
+					<mrow> \amp T = \dfrac{(1+\mu_k)\,m_1\,m_2}{m_1 + m_2}\ g.</mrow>
+				</md>
+			</p>
+			<p>
+				Using the given numerical values we will get
+				<md>
+					<mrow> \amp a = \dfrac{2 -0.15\times8}{8 + 2}\times 9.81 = 0.785\,\text{ m/s}^2,</mrow>
+					<mrow> \amp T = \dfrac{(1+0.15)\times 8 \times 2}{8 + 2}\times 9.81 = 18.1\text{ N}.</mrow>
+				</md>				
+			</p>
+
+		</solution>
+
+		<solution> <title> (c) </title>
+			<p>
+				(c) We can use the constant-acceleration formulas to find <m> |\Delta y| </m> of block 2 since we know the acceleration. We use the following equation
+			<me>
+				\Delta y = v_{i,y}\Delta t + \dfrac{1}{2}a_y(\Delta t)^2,
+			</me>
+			with <m> v_{i,y} = 0</m> and  <m> a_y = -a </m>. Height <m> h </m> is the absolute value of <m>\Delta y</m>.
+			<me>
+				h = \dfrac{1}{2}\,   \dfrac{m_2 -\mu_k\,m_1}{m_1 + m_2}\ g\, (\Delta t)^2. 
+			</me> 
+			</p>
+			<p>
+				The numerical values give us 
+				<me>
+					 h = \dfrac{1}{2}a(\Delta t)^2 = \dfrac{1}{2}  0.785 \times \times 0.75^2 = 0.221\text{ m}.
+				</me>
+
+			</p>
+		</solution>
+
+	</exercise>	 
+
+
+
+
+
+	<exercise xml:id="ex-Block-on-Incline-of-an-Accelerating-Wedge"><title>Block on Incline of an Accelerating Wedge</title>
+
+		<statement>
+			<sidebyside widths="50% 50%">
+				<p>
+					<xref ref="fig-two-blocks-on-two-inclines"/> shows a block of mass <m>m</m> sliding on a wedge of mass <m>M</m> with incline <m>\theta</m>. As observed from a fixed frame <m>Oxy</m>, the wedge has acceleration <m>A</m> horizontally towards positive <m>x</m> axis and the block has acceleration <m>a</m> pointed down the incline. 
+				</p>
+				<figure xml:id="fig-block-on-accelerating-wedge">
+					<caption></caption>
+					<image source="./images/forces/block-on-accelerating-wedge.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Assuming zero friction between the block and wedge and between wedge and the table, find expressions for <m>a</m> and <m>A</m>.
+			</p>
+		</statement>
+		<hint><p>Draw two figures - one for forces on block and one for forces on wedge. Make sure you include normal from block onto wedge correctly using Newton's third law. Use an inertial frame, say a frame attached to the table, not to the wedge.</p></hint>
+		<answer><p>
+			 See solution.
+
+		</p></answer>
+		<solution>
+			<p>
+				When using <m>\vec F = m\vec a</m>, we need to be cognizant of the fact that this is valid only with respect to an inertial frame - if coordinate system is attached to an accelerating object, then this equation is modified appropriately. Here, we should attach coordinate to the table and to the wedge as shown in <xref ref="fig-block-on-accelerating-wedge-fbd"/>.
+			</p>
+
+			<figure xml:id="fig-block-on-accelerating-wedge-fbd">
+				<caption>Left panel: Forces on the block and its free-body diagram. Right panel: Forces on the wedge and its free-body diagram. Notice the normal force between wedge and block, <m>N</m>, has opposite direction when acting on block and when acting on wedge as required by Newton's third law.</caption>
+				<sidebyside widths="50% 50%">
+					<image source="./images/forces/block-on-accelerating-wedge-block-1.png" width="70%"/>
+					<image source="./images/forces/block-on-accelerating-wedge-wedge-1.png" width="70%"/>
+				</sidebyside>
+			</figure>
+			<p>
+
+				Let <m>(X(t),0)</m> be coordinates of the tip of the wedge and <m>(x(t), y(t))</m> coordinates of the block at instant <m>t</m>. then, from the geometry of the wedge, we have the following relation.
+				<me>
+					\tan\theta = \frac{y}{x-X},
+				</me>
+				which can be written as
+				<me>
+					y \cos\theta = x \sin\theta - X \sin\theta.
+				</me>
+				Now, taking two derivatives with respect to <m>t</m>, w obtain the following relation among components of acceleration of the block and the wedge.
+				<men xml:id="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-1">
+					a_y \cos\theta = a_x \sin\theta - A_x \sin\theta.
+				</men>
+				Now, from the free-body diagram of the block we get
+				<mdn>
+					<mrow xml:id="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-2"> \amp -N\sin\theta=  m  a_x,</mrow>
+					<mrow xml:id="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-3"> \amp N\cos\theta - m g = m a_y.</mrow>
+				</mdn>
+				Similarly, the free-body diagram of the wedge gives
+				<mdn>
+					<mrow xml:id="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-4"> \amp N\sin\theta =  M  A_x,</mrow>
+					<mrow xml:id="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-5"> \amp N' - Mg - N\cos\theta - m g = 0.</mrow>
+				</mdn>
+				These are 5 equations in 5 unknowns: <m>a_x, a_y, A_x, N, N'</m>. Thus, by eliminating <m>N</m> and <m>N'</m> we can solve for <m>A_x</m>, <m>a_x</m> and <m>a_y</m>. From these we will get the final answer as
+				<me>
+					A = |A_x|,\ \ a = \sqrt{a_x^2 + a_y^2}.
+				</me>
+				Now, to do the calculations, we notice that from Eqs. <xref ref="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-2"/> and 	<xref ref="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-4"/>, we get
+				<men xml:id="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-2-4">
+					MA_x = - m a_x.
+				</men>
+				This is actually a statement of conservation of linear momentum along <m>x</m>-axis since external forces are only along the <m>y</m>-axis.	From Eqs. <xref ref="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-2"/> and 	<xref ref="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-3"/>, we get
+				<men xml:id="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-2-3">
+					a_x\cos\theta + a_y\sin\theta = -- g \sin\theta.
+				</men>
+				From Eqs. <xref ref="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-2-4"/> and 	<xref ref="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-1"/>, we get	
+				<men xml:id="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-1-2-4">
+					a_y\cos\theta  = \left( 1 + \frac{m}{M}\right)a_x\sin\theta.
+				</men>
+				Using Eq. <xref ref="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-1-2-4"/> in <xref ref="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-2-3"/> gives us equation from which we can get <m>a_x</m>.
+				<me>
+					a_x \cos\theta + \frac{1}{\cos\theta} \left( 1 + \frac{m}{M}\right)a_x\sin^2\theta = - g \sin\theta.
+				</me> 
+				Hence,
+				<men>
+					a_x = \frac{-g\sin\theta\cos\theta}{ 1 + \frac{m}{M}\sin^2\theta }.
+				</men>
+				This into Eq. <xref ref="ex-Block-on-Incline-of-an-Accelerating-Wedge-eq-1-2-4"/> gives
+				<men>
+					a_y = \left( 1 + \frac{m}{M}  \right)\tan\theta a_x.
+				</men>
+				Finally, <m>A_x</m> will be
+				<men>
+					A_x = - \frac{m}{M} a_x.
+				</men>
+			</p>						
+			<!--
+			<p>
+				<xref ref="fig-block-on-accelerating-wedge-fbd"/> shows forces on block and on wedge in separate panels. Since acceleration of the bock is down the incline direction, the rotated coordinate system <m>Ox'y'</m> will be easier to work with. Both <m>Oxy</m> and <m>Ox'y'</m> are fixed, i.e., non-accelerating coordinate systems, hence the law is still <m>\vec F = m\vec a</m>. In the diagram <m>N</m> is the magnitude of the normal force between wedge and block and <m>N'</m> the normal force between table and the wedge.
+			</p>
+			<figure xml:id="fig-block-on-accelerating-wedge-fbd-older">
+				<caption>Left panel: Forces on the block and its free-body diagram. Right panel: Forces on the wedge and its free-body diagram. Notice the normal force between wedge and block, <m>N</m>, has opposite direction when acting on block and when acting on wedge as required by Newton's third law.</caption>
+				<sidebyside widths="50% 50%">
+					<image source="./images/forces/block-on-accelerating-wedge-block.png" width="70%"/>
+					<image source="./images/forces/block-on-accelerating-wedge-wedge.png" width="70%"/>
+				</sidebyside>
+			</figure>
+			<p>
+				Decomposing <m>\vec F = m\vec a</m> of the block using <m>Ox'y'</m>  coordinate system, we will have the following equations along the two axes.
+				<md>
+					<mrow>\amp -mg\sin\theta = - ma</mrow>
+					<mrow>\amp N - mg\cos\theta = 0</mrow> 
+				</md>
+				These give us
+				<me>
+					a = g\sin\theta,\ \  N = mg\cos\theta.
+				</me>
+				Decomposing <m>\vec F = M\vec A</m> of the wedge using <m>Oxy</m>  coordinate system, we will have the following equations along the two axes.
+				<md>
+					<mrow>\amp N\sin\theta= MA</mrow>
+					<mrow>\amp N' - Mg - N\cos\theta = 0</mrow> 
+				</md>
+				Using <m>N</m> from the equations of the block, we get
+				<me>
+					A = \frac{m \sin\theta\cos\theta}{M}\; g.
+				</me>
+				We can also write down the normal from the table to be
+				<me>
+					N' = M g + mg\cos^2\theta.
+				</me>				
+
+			</p>
+
+			-->
+			
+
+		</solution>
+	</exercise>
+
+
+
+
+	<exercise xml:id="ex-Block-on-Frictionless-Wedge-Condition-for-not-Sliding"><title>Block not Sliding on Frictionless Wedge</title>
+
+		<statement>
+
+			<sidebyside widths="50% 50%">
+				<p>
+					<xref ref="fig-nonsliding-block-on-accelerating-wedge"/> shows a block of mass <m>m</m> on a wedge of mass <m>M</m> with incline <m>\theta</m>. The surface of contact between the block and wedge is frictionless.   
+				</p>
+				<figure xml:id="fig-nonsliding-block-on-accelerating-wedge">
+					<caption></caption>
+					<image source="./images/forces/nonsliding-block-on-accelerating-wedge.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Normally, a block under this condition would slide. But, if wedge has a horizontal force <m>\vec F</m> of a specific magnitude, the block will not slide; instead block and wedge would just move together as if block was glued to the wedge. Find the magnitude of this force.
+			</p>			
+		</statement>
+		<hint><p>Draw two free-body diagrams, one for block and another for wedge.</p></hint>
+		<answer><p><m>(m + M)g\;\tan\theta</m>.</p></answer>
+		<solution>
+			<p>
+				As in <xref ref="fig-block-on-accelerating-wedge-fbd"/>, we draw free-body diagrams of block and wedge, making sure we take care of normal force between block and wedge appropriately. For more detail, see <xref ref="ex-Block-on-Incline-of-an-Accelerating-Wedge"/>. For the current problem, FBD for both block and wedge are shown in <xref ref="fig-nonsliding-block-on-accelerating-wedge-solution"/>. For block not to slide, block must have same acceleration as the wedge with respect to fixed frame <m>Oxy</m>.
+			</p>
+			<figure xml:id="fig-nonsliding-block-on-accelerating-wedge-solution">
+				<caption></caption>
+				<image source="./images/forces/nonsliding-block-on-accelerating-wedge-solution.png" width="70%"/>
+			</figure>
+			<p>
+				Using the coordinate system <m>Oxy</m>, we get equations for the block to be
+				<md>
+					<mrow>\amp -N \sin\theta  = -m A. </mrow>
+					<mrow>\amp N \cos\theta - mg = 0. </mrow>
+				</md>
+				This will give
+				<md>
+					<mrow>\amp N =  \frac{mg}{\cos\theta} </mrow>
+					<mrow>\amp A =  g\tan\theta. </mrow>
+				</md>				
+				Using the coordinate system <m>Oxy</m>, we get equations for the wedge to be
+				<md>
+					<mrow>\amp -F + N \sin\theta = -m A. </mrow>
+					<mrow>\amp N' - N \cos\theta - Mg  = 0. </mrow>
+				</md>
+				Using <m>A</m> and <m>N</m>, we get
+				<me>
+					F = (m + M)g\;\tan\theta.
+				</me>				
+			</p>
+			
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Block-not-Sliding-when-Block-below-it-Moves-in-an-Atwood-Machine"><title>Block not Sliding in Motion of Three Blocks and a Pulley</title>
+
+		<statement>
+			<sidebyside widths="50% 50%">
+				<p>
+					<xref ref="fig-three-blocks-and-one-pulley-block-not-sliding"/> shows three blocks whose motion is coupled through a string that goes over an ideal (massless, frictionless) pulley. If there is no friction between blocks 1 and 2, block 2 will just stay put with block 1 sliding away from underneath it.
+				</p>
+				<figure xml:id="fig-three-blocks-and-one-pulley-block-not-sliding">
+					<caption></caption>
+					<image source="./images/forces/three-blocks-and-one-pulley-block-not-sliding.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Assuming no friction between block 1 and the table, find the <alert>minimum</alert> coefficient of static friction between blocks 1 and 2 so that block 1 does not slide from under block 2.
+			</p>
+			
+		</statement>
+		<hint><p>(1) Use maximum static friction between 1 and 2. (2) You wil need three free-body diagrams.</p></hint>
+		<answer><p>
+			<m>
+				\mu_s = \frac{m_3}{m_1 + m_2 + m_3}
+			</m>.
+		</p></answer>
+		<solution>
+			<sidebyside widths="50% 50%">
+				<p>
+					<xref ref="fig-three-blocks-and-one-pulley-block-not-sliding-solution"/> shows three force diagrams for this problem. One is for the combined systems of <m>(m_1+m_2)</m>, another one for <m>m_1</m>, and the third one is for <m>m_3</m>. Since pulley is ideal, we use the tension on the two sides of the pulley has same magnitude. 
+				</p>
+				<figure xml:id="fig-three-blocks-and-one-pulley-block-not-sliding-solution">
+					<caption></caption>
+					<image source="./images/forces/three-blocks-and-one-pulley-block-not-sliding-solution.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Since, we want block 2 not to slide on 1, magnitude of acceleration for 1 and 2 must be same. Since string's length is not changing during motion, acceleration of all three blocks will have same magnitude. that explains the choice of same symbol. Since, we seek minimum <m>\mu_s</m> between 1 and 2, we will use <m>maximum</m> static friction between them. Also, note that this static friction has the direction same as the direction of acceleration when acting on block 2.
+			</p>
+			<p>
+				Working with horizontal and vertical coordinates in the frame of the table, we get the following equations for the combined system,
+				<md>
+					<mrow>\amp T = (m_1 + m_2)A </mrow>
+					<mrow>\amp N - (m_1 + m_2)g = 0 </mrow>
+				</md>
+				for the <m>m_2</m> system,
+				<md>
+					<mrow>\amp \mu_s N' = m_2 A </mrow>
+					<mrow>\amp N' -   m_2 g = 0 </mrow>
+				</md>
+				and for the <m>m_3</m> system
+				<me>
+					T - m_3 g = - m_3 A.
+				</me>
+				We eliminate, <m>T,\ N',\ A</m> from these to get
+				<me>
+					\mu_s = \frac{m_3}{m_1 + m_2 + m_3}.
+				</me>
+				We do not have any use of <m>N</m> in this problem.				
+			</p>			
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Coupled-Motion-of-Two-Blocks-on-Two-Sides-of-a-Fixed-Wedge"><title>Practice with a Friend: Coupled Motion of Two Blocks on Two Sides of a Fixed Wedge</title>
+
+		<statement>
+			<sidebyside widths="50% 50%">
+				<p>
+					<xref ref="fig-two-blocks-on-two-inclines"/> shows two blocks on two inclines. Assuming surfaces to be frictionless, the wedge to be fixed in its place, tension to be same througout the string, and the acceleration direction as shown to be correct, find the magnitude of acceleration and tension in the string.
+				</p>
+				<figure xml:id="fig-two-blocks-on-two-inclines">
+					<caption></caption>
+					<image source="./images/forces/two-blocks-on-two-inclines.png" width="70%"/>
+				</figure>
+			</sidebyside>
+		</statement>
+		<answer><p>
+			<m>a = \left( \frac{m_2\sin\theta_2 - m_1\sin\theta_1 }{m_1 + m_2}\right)\; g.</m>.
+		</p></answer>
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+	<exercise xml:id="Practice-with-a-friend-Block-on-Incline-of-an-Accelerating-Wedge"><title>Practice with a Friend: Block on Incline of an Accelerating Wedge</title>
+
+		<statement>
+			<p>
+				In <xref ref="ex-Block-on-Incline-of-an-Accelerating-Wedge"/>, we assumed that there is no friction between wedge and table and between wedge and block. Now, we relax these assumptions. Let static friction coefficient between wedge and table be <m>\mu_{wt}</m> while the surface between wedge and block still remain frictionless.
+			</p>
+			<p>
+				Let us now assume that angle of inclination <m>\theta</m> is adjustable. You will find that up to some angle <m>\theta_c</m>, block just slides down the incline without the wedge moving on the table. When you exceed this angle, the wedge starts to slide on the table. Find an expression for this critical angle.
+			</p>
+		</statement>
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+
+
+
+
+	</exercises>
+
+
+
+
+
+</section>

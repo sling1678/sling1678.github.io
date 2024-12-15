@@ -1,0 +1,599 @@
+<section xml:id="Constant-Speed-Circular-Motion"> <title> Uniform Circular Motion</title>
+<idx>Uniform Circular Motion</idx>
+<idx><h>Circular Motion</h><h>Uniform</h></idx>
+<idx><h>Motion</h><h>Uniform Circular</h></idx>
+	<introduction>
+		<p>
+			An object in a uniform circular motion goes around a circular path at a <alert>constant speed</alert>. Uniform circular motions are used to understand all sorts of circular motion and rotation. In this motion, the direction of motion is changing all the time; that means velocity is not constant even though the motion is uniform. Hence, a uniform circular motion must have a nonzero acceleration.
+		</p> 
+		<p>
+			Let <m>R</m> denote the radius of the circle and <m>T</m> the time to complete one cycle. That is the object covers a distance of one circumference, <m>2\pi R</m>, in time <m>T</m>. Then, average speed <m>v</m> of motion will be
+			<!-- not only the average speed but also speed <m>v</m> at any instant will be -->
+			<men>
+				v = \dfrac{2\pi R}{T}.
+			</men>
+			<!-- Since in uniform motion speed is constant, speed at any instant on the circle has this same speed. -->
+			<!-- Uniform circular motion are applied to understand all sorts of circular motion and rotation.  -->
+		</p>
+		<p>
+			Now, you would think that requiring speed to be constant in the motion will severely limit application of formulas in this section. It turns out that, even in places of nonuniform motion on a circular arc, not necessarily motion in a circle, an application of formulas of this section provides a good starting point. A case in point is the application of uniform circular motion formulas to the elliptical motion of Earth around Sun, where motion is neither circular nor uniform. 
+		</p>
+	</introduction>
+
+
+
+	<subsection> <title> Velocity Directions in a Circular Motion </title>
+
+		<p>
+			In general, a tangent to the trajectory of motion gives the direction of velocity. In the case of a circle, the tangent is perpendicular to the radial line from the center of the circle. As you can immediately see in <xref ref="fig-velocity-arrows-in-circular-motion"/>, the direction of tangent is different at different points of the circle. Therefore, even though, magnitude of velocity, i.e., speed, is same at all points of a uniform motion, velocity itself changes with time.
+		</p>
+		<figure xml:id="fig-velocity-arrows-in-circular-motion">
+			<caption>
+				Velocity at any point on the circle is in the direction of the tangent to the circle at that point. The lengths of the arrows correspond to the values of the speed. In a constant-speed motion, the lengths of the arrows remain same, but their directions in space changes. <!-- That changes the velocity even when speed does not change, which means that there will be acceleration even for constant-speed motion in a circle. -->
+			</caption>
+			<image source="./images/circular-motion/velocity-arrows-in-circular-motion.png" width="50%"/>
+		</figure>
+
+		<p>
+			Thus, we can describe velocity vector, <m>\vec v </m> for a uniform circular motion in a circle of radius <m>R</m> and period <m>T</m> as follows.
+			<md>
+				<mrow> \amp \text{Magnitude } = v = \frac{2\pi R}{T},</mrow>
+				<mrow> \amp \text{Direction: tangent to the circle. }</mrow>
+			</md>
+			  
+		</p>
+	</subsection>
+
+
+	<example xml:id="ex-Average-Speed-of-Motion-in-Circular-Motion-and-Deciding-if-Steady-Motion"><title> Average Speed of Motion in Circular Motion and Deciding if Steady Motion </title>
+		<statement>
+			<p>
+				A block of steel is tied to a string. By holding the other side of the string, the block is swung in a circle of radius <m>R=50\text{ cm}</m>. It takes <m>4.0\text{ s}</m> to complete 10 complete cycles. (a) What is the average speed of the block? (b) Is the motion a uniform circular motion?
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  (a) Use <m>d/t</m>. </p> </hint> -->
+		<answer> <p>  (a) <m> 7.85\text{ m/s}</m>, (b) We do not know if the motion has steady speed at all instants. </p> </answer>
+		<solution><title>a</title> 
+			<p>  
+				We can get average speed of the block by dividing the net distance traveled by the time. In 10 cycles, the distance covered will be 10 times circumference. Therefore, average speed
+				<md>
+					<mrow> v_\text{s,av} \amp = \dfrac{10\times 2\pi R}{t}</mrow>
+					<mrow> \amp = \dfrac{20\times \pi \times 0.5\text{ m}}{4.0\text{ s}} = 7.85\text{ m/s}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+				We do not know if the motion has steady speed at all instants. We only know what happened, on average.
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="Angle-Covered-and-Distance-Moved-in-a-Uniform-Circular-Motion"><title> Angle Covered and Distance Moved in a Uniform Circular Motion </title>
+		<statement>
+			<p>
+				A child in a merry-go-round is moving in a circle of radius <m> 5\text{ m}</m> at a constant speed of <m> 2.0\text{ m/s}</m>. 
+			</p>
+			<p>
+				(a) What is the distance on the arc the child moves during a <m> 4.0\text{ sec} </m> interval? 
+			</p>
+			<p>
+				(b)  How much angle in radians the child covers during a <m> 4.0\text{ sec} </m> interval? 
+			</p>
+			<p>
+				(c) What is the angular speed of the child?
+			</p>
+			<p>
+				(d) At <m> t= 0 </m>, the child was towards East from the center and was moving towards North, what is direction of the child at <m> t = 100\text{ sec}</m>?
+			</p>
+			<p>
+				(e) Another child is on the same merry-go-around at a distance of <m>4\text{ m}</m> from the center. (i) What is his angular speed? (ii) What is his speed on his circle of motion?
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  (a) <m>s=vt</m> , (b) <m> s= R \theta </m>, (c) definition, (d) Find the cumulative angle, and then find the angle within the range 0 to <m>360^\circ</m>.</p> </hint> -->
+		<answer> <p> (a) <m>8.0\text{ m}</m>, (b) <m>1.6\text{ rad}</m>,(c)  <m>0.4\text{ rad/sec} </m>,(d) <m> 131.83^{\circ}</m> counterclockwise from positive <m> x </m> axis. 
+		(e) (i) <m> 0.4\text{ rad/sec}</m>, (ii) <m>1.6\text{ m/s}</m>.</p> </answer>
+		
+		<solution><title>a</title> 
+			<p>
+				Since speed is constant, the distance will simply be the product of speed and time.
+				<me>
+					s = v t = 2.0 \times 4.0 = 8.0\text{ m}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+				The distance <m> 8.0\text{ m} </m> on the arc will translate into the angle subtended by <m> s = R\theta</m> formula.
+				<me>
+					\theta = \dfrac{s}{R} = \dfrac{8}{5} = 1.6\text{ rad}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>c</title> 
+			<p>
+				Rotated <m> 1.6\text{ rad} </m> in <m> 4.0\text{ sec}</m>. Therefore, average angular speed will be 
+				<me>
+					\omega = \dfrac{1.6}{4} = 0.4\text{ rad/sec}.
+				</me>
+				We could also get this result by using the formula relating angular velocity to the speed.
+				<me>
+					\omega = \dfrac{v}{R} = \dfrac{2}{5} = 0.4\text{ rad/sec}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>d</title> 
+			<p>
+				The angle at instant <m> t = 100\text{ sec}</m> has to be placed between <m> 0</m> and <m> 360^{\circ}</m> by dividing the cumulative angle by <m> 360</m>, and throwing away the multiples. Let's first work out the cumulative angle.
+				<me>
+					\theta_\text{cumulative} = 0.4\text{ rad/sec}\times 100\text{ s} \times \frac{180}{\pi}= 2291.83^{\circ}.
+				</me>
+				Now, we divide this by <m> 360</m>.
+				<me>
+					 2291.83/360 = 6.366194.
+				</me>
+				Throwing the integral part and then multiplying the fractional part by 360 we get the counterclockwise angle from the positive <m> x </m> axis.
+				<me>
+					\theta  =  0.366194 \times 360 = 131.83^{\circ}.	
+				</me>				
+			</p>
+		</solution>
+		<solution><title>e</title>
+			<p>
+				(i) This child also goes around once when the other child goes around once. Hence, both have the same angular speed give by
+				<me>
+					\omega = 0.4\text{ rad/sec} = \omega_{\text{other-child}}.
+				</me>
+				<!-- <me>
+					\omega = \omega_\text{other_child} = 0.4\text{ rad/sec}.
+				</me> -->
+				(ii) But, this child is covering different distance in each turn since his radius is different. He covers <m>(2\pi \times 4\text{ m})</m> where the other child covered <m>(2\pi \times 5\text{ m})</m>. Hence, his speed is <m>4/5^\text{th}</m> of the other child.
+				<me>
+					v = \frac{4}{5}\times 2.0\text{ m/s} = 1.6\text{ m/s}.
+				</me>			
+
+			</p>
+		</solution>
+
+	</example>
+
+	<subsection><title> Centripetal Acceleration</title>
+	<idx><h>Acceleration</h><h>Centripetal</h></idx>
+	<idx>Centripetal Acceleration</idx>
+
+		<p>
+			Acceleration is the rate of change of velocity. Normally, acceleration either speeds up the motion or slows it down. But, here neither speed up or slowing down of the motion occurs, but instead, the role of acceleration is to change the direction of velocity.
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				To appreciate change in velocity during a small interval, we can draw velocity vectors for two nearby instances and find their difference vector as shown in <xref ref="fig-centripetal-acceleration"/>. The direction of acceleration will be in the direction of the vector <m>\Delta \vec v</m>, which is pointed towards the center of the circle in the limit of <m>\Delta t \rightarrow 0</m>.
+			</p>
+			<p></p>
+			<figure xml:id="fig-centripetal-acceleration">
+				<caption></caption>
+				<image source="./images/circular-motion/centripetal-acceleration.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+		<p>
+			The diagram in <xref ref="fig-centripetal-acceleration"/> gives us direction of acceleration to be towards the center of the circle. A direction <alert>towards the center</alert> is also called <term>centripetal</term>; hence, this acceleration is also called <term>centripetal acceleration</term>. To get the magnitude from this diagram, you can carefully draw arrows to scale and estimate magnitude of <m>\Delta \vec v</m>. Then, you would divide this magnitude by <m>\Delta t</m>. Instead of doing that, an analytic calculation, which will be presented when we discuss <alert>circular motion in polar coordinates</alert>, shows us that the magnitude of centripetal acceleration <m>a_c</m> has the following formula.
+			<men>
+				a_c = \frac{v^2}{R}.
+			</men>  
+		</p>
+
+		<sidebyside widths="50% 10% 40%">
+
+			<p>
+				Note that, although the magnitude of the centripetal acceleration, <m> v^2/R</m>, does not change since <m> v</m> and <m>R</m> are constant, the direction of the acceleration in space changes all the time. Hence, acceleration (vector) is <alert>not constant</alert> in a uniform circular motion. This is illustrated in <xref ref="fig-acceleration-arrows-in-constant-speed-circular-motion"/>, where we notice that even though at each point in the circle, centripetal acceleration is pointed towards the center of the circle, but these directions are differently pointed in space.
+			</p>
+			<p></p>
+			<figure xml:id="fig-acceleration-arrows-in-constant-speed-circular-motion">
+				<caption></caption>
+				<image source="./images/circular-motion/acceleration-arrows-in-constant-speed-circular-motion.png" width="60%"/>
+			</figure>
+		</sidebyside>
+		<alert>ALERT:</alert> <em> Formulas of constant acceleration you have learned in earlier chapters are not applicable for uniform motion! </em>
+		<!-- <sidebyside widths="50% 10% 40%">
+			<p> 
+				In a constant-speed motion, the acceleration occurs entirely due to the changing direction of motion. The direction of acceleration in this case is towards the center of the circle.  The direction of <q> pointed towards circle </q> is also refered to as <term> centripetal</term>. Therefore, we often call this acceleration, the <term>centripetal acceleration</term>. 
+			</p>
+			<p></p>
+			<image source="./images/circular-motion/acceleration-arrows-in-constant-speed-circular-motion.png" width="60%"/>
+		</sidebyside>
+
+		<p>
+				After a complicated calculation, one can deduce the following for the magnitude and direction of acceleration in this case.
+		</p>
+		<p>
+			<md>
+				<mrow> \amp \text{Magnitude } = \dfrac{v^2}{R},</mrow>
+				<mrow> \amp \text{Direction: radially pointed towards the circle. }</mrow>
+			</md>
+
+		</p>
+
+		<p>
+			Note that, although the magnitude of the centripetal acceleration, <m> v^2/R</m>, does not change since <m> v</m> is constant, the direction of the acceleration in space changes all the time. Hence, <em> the formulas of constant acceleration you have learned in earlier chapters are not applicable here! </em>
+		</p>
+
+		<p>
+			How is it possible that a change in direction of velocity can result in a non-zero acceleration?  This can be seen in a vector diagram of two nearby velocities, one at <m> t </m> and another at <m> t + \Delta t</m>, shown in Fig. <xref ref="fig-centripetal-acceleration-vector-diagram"/>. The average acceleration, being <m> \Delta \vec v/\Delta t</m> will be in the same direction as the vector <m> \Delta \vec v</m>, which is clearly towards the center of the circle.
+		</p>
+		<figure xml:id="fig-centripetal-acceleration-vector-diagram">
+			<caption> To show that the centripetal acceleration arises purely from the change in direction of the velocity, we draw a vector diagram to show the direction of the change in velocity, <m> \Delta \vec v = \vec v_{t+\Delta t} - \vec v_t</m>. These velocity vectors are shown as tangents to the circle with the circle - the two vectors have the same length since they correspond to the same speed. Then I have redrawn them in another diagram with their tails at the same point, in which the vector from the tip of the vector for velocity at <m> t </m> to the other one at <m> t + \Delta t</m> gives the  change in velocity <m> \Delta \vec v</m>. This change is clearly not zero and is pointed towards the center of the circle.
+			</caption>
+			<image source="./images/circular-motion/centripetal-acceleration.png" width="70%"/>
+		</figure> -->
+	</subsection>
+
+
+
+
+	<example xml:id="Acceleration-of-a-Uniform-Circular-Motion"><title> Acceleration of a Uniform Circular Motion </title>
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+
+				<p>
+					<p>
+						A child in a merry-go-round is moving in a circle of radius <m> 5\text{ m}</m> at a constant speed of <m> 2.0\text{ m/s}</m>. 
+					</p>
+					<p> (a)
+						What is the acceleration of the child at the instant the child is in the direction of East from the center? 
+					</p>
+
+				</p>
+
+				<p></p>
+				<figure xml:id="fig-https-upload-wikimedia-org-wikipedia-commons-d-d8-Man-C3-A8geLR1">
+					<caption></caption>
+					<image source="./images/circular-motion/https-upload-wikimedia-org-wikipedia-commons-d-d8-Man-C3-A8geLR1.jpg" width="60%"/>
+				</figure>
+
+			</sidebyside>
+			<p> (b)
+				What is the acceleration of the child at the instant the child is in the direction of North from the center? 
+			</p>
+			<p>
+				Figure credits: https://upload.wikimedia.org/wikipedia/commons/d/d8/Man%C3%A8geLR1.jpg.
+			</p>			
+
+
+		</statement>
+		<!-- <hint> <p>  Be mindful of direction! </p> </hint> -->
+		<answer> <p> (a) <m>0.8 \text{ m/s}^2</m> West, (b) <m>0.8 \text{ m/s}^2</m> South </p> </answer>
+		<solution><title>a</title> 
+			<p> The magnitude of acceleration will be constant, but its direction will be different depending on where in the circle the child happens to be.
+			</p>
+			<me>
+				\text{Magnitude, }a = \dfrac{v^2}{R} = \dfrac{2.0^2}{5} = 0.8\text{ m/s}^2.
+			</me>
+			<p> 
+				The acceleration at this instant has magnitude <m> 0.8\text{ m/s}^2</m> towards West, where the center is from the child's position.
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p> 
+				The acceleration at this instant has magnitude <m> 0.8\text{ m/s}^2</m> towards South, where the center is from the child's position.
+			</p>				
+		</solution>
+	</example>
+
+
+	<exercises>
+
+		<exercise xml:id="ex-Centripetal-Acceleration-in-a-Circular-Motion"><title> Centripetal Acceleration in a Circular Motion </title>
+			<statement>
+				<p> <xref ref="fig-bc-centripetal-acceleration-from-circle-on-grid" /> shows a particle moving in a circle at a constant speed with the positions marked every second. The circular path has been placed on a grid with the distances as marked. 
+				</p>
+				<figure xml:id="fig-bc-centripetal-acceleration-from-circle-on-grid">
+					<caption>
+						Figure for <xref ref="ex-Centripetal-Acceleration-in-a-Circular-Motion"/>.
+					</caption>
+					<image source="./images/circular-motion/bc-centripetal-acceleration-from-circle-on-grid.png" width="60%"/>
+				</figure>
+				<p> (a) 
+					Express the position of the particle at A, B, C, D, E, F, G, and H in the polar coordinates, i.e., read off the distances <m> r </m> and angles <m> \theta </m> in radian going counterclockwise from the positive <m> x </m> axis. 
+				</p>
+				<p> (b) 
+					Express the position of the particle at A, B, C, D, E, F, G, and H in the Cartesian coordinate form, i.e., give <m> (x,y)</m> of each point.
+				</p>
+				<p> (c) 
+					What are the speed and angular speed of the particle at these points?
+				</p> 
+				<p> (d) 
+					What are the velocity of the particle at these points?
+				</p>
+				<p> (e) 
+					What are the centripetal acceleration of the particle at these points?
+				</p>
+				<p> (f) 
+					What are the tangential acceleration of the particle at these points?
+				</p>
+				<p>(g)
+					What are the acceleration of the particle at these points?
+				</p>
+				<p> (h) 
+					Your friend claims that the magnitude of the average velocity between A and C is greater than that between A and E. Is he right? Compute them and compare.
+				</p>			
+				
+			</statement>
+			<hint> <p> (a) same <m> r </m>, (b) exploit symmetry since angles are all <m> \pm45^{\circ}</m> , (c) find average since constant, (d) think direction also, (e) formula and think direction, (f) zero, (g) think definition, (h) direct distance will be helpful. </p> </hint>
+			<answer> <p> See solutions. </p> </answer>
+			<solution> <title>(a), (b)</title>
+				<p>(a) 
+					First note that <m> r =  5\text{ m}</m> for every point on the circle. The angles in radian are: 
+					<m>\theta_A = 0</m>, 
+					<m> \theta_B = \dfrac{\pi}{4}\text{ rad}</m>, 
+					<m> \theta_C = \dfrac{\pi}{2}\text{ rad}</m>, 
+					<m> \theta_D = \dfrac{3\pi}{4}\text{ rad}</m>, 
+					<m> \theta_E = \pi\text{ rad}</m>, 
+					<m> \theta_F = \dfrac{5\pi}{4}\text{ rad}</m>, 
+					<m> \theta_G = \dfrac{3\pi}{2}\text{ rad}</m>, 
+					<m> \theta_H = \dfrac{7\pi}{4}\text{ rad}</m>.
+
+				</p>
+				<p>(b)
+					For A, C, E, and G, we don't need any work.
+					<md>
+						<mrow> \amp (x_A = 5\text{ m},\ y_A = 0 ) </mrow>
+						<mrow> \amp (x_C = 0,\  y_C = 5\text{ m} ) </mrow>
+						<mrow> \amp (x_E = -5\text{ m},\ y_E = 0 ) </mrow>
+						<mrow> \amp (x_G = 0,\  y_G = -5\text{ m} ) </mrow>
+					</md>
+					For B, D, F, and G, we just need to work out the <m> x </m> of B since all these are at <m> 45^{\circ}</m> form either positive or negative <m> x </m> axis. Then use it to write <m> (x,y) </m> of B, D, F, and H.
+					<me>
+						x_B = 2\, \cos\, 45^{\circ} = 1.414\text{ m}.
+					</me>
+					Therefore,
+					<md>
+						<mrow> \amp (x_B = 1.414\text{ m},\ y_B = 1.414\text{ m} ) </mrow>
+						<mrow> \amp (x_D = -1.414\text{ m},\ y_D = 1.414\text{ m} ) </mrow>
+						<mrow> \amp (x_F = -1.414\text{ m},\ y_F = -1.414\text{ m} ) </mrow>
+						<mrow> \amp (x_H = 1.414\text{ m},\ y_H = -1.414\text{ m} ) </mrow>
+					</md>
+	 
+				</p>
+			</solution>
+
+			<solution> <title> (c), (d) </title>
+				<p> (c) 
+					Since the speed is constant, we need to work out just the average speed, which would be just an arc length between any two points divided by time it took. Between A and B, the arc length is 
+					<me>
+						s_{AB} = R\theta = 2\times\dfrac{\pi}{4} = 1.57\text{ m}.
+					</me>
+					This takes <m> 1\text{ sec}</m>. Therefore, the speed is
+					<me>
+						v_s = \dfrac{1.57\text{ m}}{1\text{ s}} = 1.57\text{ m/s}.
+					</me>
+					The angle between A and B was <m> \pi/4\text{ rad}</m>. Therefore, the angular speed is
+					<me>
+						\omega = \dfrac{\pi/4\text{ rad}}{1\text{ s}} = 0.785\text{ rad/s}.
+					</me>
+
+				</p>
+				<p> (d)
+					Since speed is constant, the magnitude of velocity is cinstant also. 
+					<me>
+						\text{Magnitude: } 1.57\text{ m/s}.
+					</me>
+					But, the direction of velocity at differnet points are actually different - that makes velocity different at different points here.
+				</p>
+				<p> A. 
+					The velocity at A is pointed towards positive <m> y </m> axis.
+				</p>
+				<sidebyside widths="50% 5% 45%">
+					<p> B. 
+						At point B, the velocity has magnitude <m> 1.57\text{ m/s}</m>, same as speed there, and the direction is towards  <m> 45^{\circ} </m> clockwise from the negative <m> x</m> axis as shown in the figure below. Note how I drew the valeocity as tangent to the circle at point B and then redrew a vector parallel to the velocity vector but the tail at the origin.
+					</p>
+					<p> </p>
+					<image source="./images/circular-motion/bc-centripetal-acceleration-from-circle-on-grid-dB.png" width="60%"/>
+				</sidebyside>
+
+				<p> C. The velocity at C is pointed towards negative <m> x </m> axis. 
+				</p>
+
+				<p> D. The velocity at D is pointed <m> 45^{\circ} </m> counterclockwise from the negative <m> x</m> axis
+				</p>
+
+				<p> E. The velocity at E is pointed towards negative <m> y </m> axis. 
+				</p>
+
+				<p> F. The velocity at F is pointed <m> 45^{\circ} </m> clockwise from the positive <m> x</m> axis
+				</p>
+
+				<p> G. The velocity at G is pointed towards positive <m> x </m> axis.
+				</p> 
+
+				<p> H. The velocity at H is pointed <m> 45^{\circ} </m> counterclockwise from the positive <m> x</m> axis
+				</p>
+
+
+			</solution>
+
+			<solution> <title> (e), (f), (g) </title>
+				<p> (e) 
+					The centripetal acceleration at all points have the same magnitude since speed is constant.
+					<me>
+						\text{Magnitude } = \dfrac{v^2}{R} = \dfrac{1.57^2}{2} = 0.785\text{ m/s}^2. 
+					</me>
+					The direction at various points are pointed towards the center of the circle. Thus, 
+					at A, the direction is towards the negative <m> x </m> axis. 
+					At B, it is <m> 45^{\circ}</m> counterclockwise to the negative <m> x </m> axis, 
+					at C, it is pointed towards the negative <m> y </m> axis, 
+					at D, it is towards <m> 45^{\circ}</m> clockwise from the positive <m> x </m> axis, 
+					at E, it is towards the positive <m> x </m> axis, 
+					at F, it is towards <m> 45^{\circ}</m> counterclockwise from the positive <m> x </m>, 
+					at G it is towards the positive <m> y </m> axis, and 
+					at H it is towards <m> 45^{\circ}</m> clockwise to the negative <m> x </m> axis.
+				</p>
+				<p> (f)
+					The tangential acceleration is zero since speed is constant. 
+				</p>
+				<p> (g) 
+					Acceleration is the vector sum of centripetal and tangential accelerations. But since the tangential acceleration is zero, acceleration is same as the centripetal acceleration.
+
+				</p>
+			</solution>
+
+			<solution> <title> (h) </title>
+				<p> (h) Your friend is correct. Lets work out the magnitudes of the average velocity by working out the <em> direct distances</em> and dividing by the corresponding times.
+				</p>
+				<sidebyside widths="50% 10% 40%">
+					<p>
+						Between A and C, the direct distance can be obtained by the triangle shown.
+						<me>
+							d_{\text{AC}} = 2\sqrt{2} = 2.83\text{ m}.
+						</me>
+						This takes <m> 2\text{ sec}</m>. Therefore, the magnitude of the averafge velocity is
+						<me>
+						v_{\text{AC}} = \dfrac{2.83}{2} = 1.42\text{ m/s}.
+						
+						</me>
+					</p>
+					<p> </p>
+					<image source="./images/circular-motion/bc-centripetal-acceleration-from-circle-on-grid-h.png" width="60%"/>
+
+				</sidebyside>
+				<p> Between A and E, the direct distance is <m> 4 \text{ m}</m> and the time is <m> 4 \text{ s}</m>. Therefore, the magnitude of the average velocity is
+				<me>
+					v_{AE} = \dfrac{4 \text{ m}}{4 \text{ s}} = 1.0\text{ m/s}.
+				</me>
+				The calculations bear out the correctness of the claim by your friend.
+				</p>
+			</solution>
+		</exercise>
+
+
+
+	<exercise xml:id="Acceleration-at-Different-Locations-in-an-Oval-Track"><title> Acceleration at Different Locations in an Oval Track</title>
+		<statement>
+			<p> 
+				The figure shows an oval track with two ends arcs of circles of radius <m> 40 \text{ m}</m>. You are running on the track at a constant speed of <m> 2.0 \text{ m/s} </m>. 
+			</p>
+			<p> Find the magnitude and direction of accelerations at the two points marked (a) A and (b) B.
+			</p>
+			<image source="./images/circular-motion/checpoint-oval-track-uniform-motion.png" width="70%"/>
+
+		</statement>
+		<hint> <p> (a) centripetal, (b) tricky.  </p> </hint>
+		<answer> <p>  (a) <m> 0.1\text{ m/s}^2</m> in the directoin from A to O. (b) Zero. </p> </answer>
+		<solution><title>(a)</title> 
+			<p>(a)
+				The acceleration here is the centripetal acceleration towards O, the center of the circular arc with magnitude
+				<me>
+					a_A = \dfrac{v^2}{R} = \dfrac{2^2}{40} = 0.1\text{ m/s}^2.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p> (b) At the instant you are at B, not only your speed is constant, but your direction is also constant. Hence, your velocity is constant. Therefore, the acceleration is zero here.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Velocity-of-a-Particle-From-Given-Circle-and-Angular-Speed"><title> (Calculus) Velocity of a Particle From Given Circle and Angular Speed </title>
+		<statement>
+			<p>
+				A particle moves in a circle of radius <m>20\ \text{cm}</m> and centered at <m>(x = 1\ \text{m}, y=0)</m> in the <m>xy</m>-plane with a constant angular speed of <m>50 \text{ rad/sec}</m>.  At <m>t=0</m>, the particle is at <m>(x = 1.2\ \text{m}, y=0)</m>. 
+			</p>
+			<p>
+				(a) Give an expression of the position of the particle at an arbitrary time <m>t</m>? (b) For the particle moving in a counterclockwise sense, find velocity at <m>t=0</m>?  
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use center of circle and redius to get <m>x</m> and <m>y</m>. (b) Take derivative.  </p> </hint>
+		<answer> <p> (a) <m>x = 1 + 0.2 \cos(50 t),\ \ y = 0.2 \sin(50 t)</m>, (b)<m>10\text{ m/s}\ \hat j</m>.  </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a) From the fact that the motion is circular with center at <m>(1\text{ m},0)</m> and radius <m>R=0.2\text{ m}</m>, we can immediately write <m>x</m> and <m>y</m> coordinates
+				<me>
+					x = 1 + 0.2\; \cos(\omega t),\ \ y = 0.2\; \sin(\omega t),
+				</me>
+				where <m>\omega = 50 \text{ rad/sec}</m>.
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				(b) Taking derivatives we get the components, which we evaluate at <m>t=0</m>.
+				<md>
+					<mrow> v_x \amp = -0.2\;\omega\; \sin(\omega t) = 0,</mrow>
+					<mrow> v_y \amp = 0.2\;\omega\; \cos(\omega t) = 10\text{ m/s}.</mrow>
+				</md>
+				The velocity has magnitude <m>10\text{ m/s}</m> and directed towards positive <m>x</m> axis.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Using-Derivatives-to-Study-Velocity-and-Acceleration-of-Circular-Motion"><title> (Calculus) Using Derivatives to Study Velocity and Acceleration of Circular Motion </title>
+		<statement>
+			<p>
+				The position of a particle moving in the <m>xy</m>-plane is given by  <m>\vec r(t) = a \cos(\pi t) \hat i + (b + a \sin(\pi t)) \hat j</m>, where <m>t</m> is in <m>\text{sec}</m> and <m>a</m> in <m>\text{cm}</m>.  (a) Show that the motion is a circular motion, and find the value of the radius of the circle, and Cartesian coordinates of the center of the circle.  (b) Find an expression for the velocity of the particle at an arbitrary instant <m>t</m>.  (c) Find an expression for the angular speed of the particle at an arbitrary time <m>t</m>. (d) Find an expression of the acceleration of the particle at an arbitrary instant <m>t</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Look at components of the position vector. (b) Take drivative. (c) Use relation of angular speed and speed. (d) Take derivative. </p> </hint>
+		<answer> <p>  
+			(a) <m> x^2 + (y - b)^2 = a^2</m>,
+			(b) <m>v = \pi a </m>, <m> \hat u_v = -\hat i\, \sin(\pi t)+ \hat j\, \cos(\pi t)</m>,
+			(c) <m> \pi</m>,
+			(d) <m> - \pi^2 a \left( \hat i \cos(\pi t) +  \hat j\,  \sin(\pi t) \right)</m>.
+
+		 </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a) From the given position vector we have <m>x</m> and <m>y</m> of the particle to be
+				<me>
+					x(t) = a \cos(\pi t),\ \ y(t) = b  + a \sin(\pi t).
+				</me>
+				From this we see that
+				<me>
+					x^2 + (y - b)^2 = a^2.
+				</me>
+				This is equation of a circle with radius <m>a</m> and center at <m>(0,b)</m>.
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				(b) From <m>x</m> and <m>y</m>, we get <m>v_x</m> and <m>v_y</m> as usual.
+				<md>
+					<mrow> v_x \amp \dfrac{dx}{dt} = - \pi\, a\, \sin(\pi t),</mrow>
+					<mrow> v_y \amp \dfrac{dy}{dt} =  \pi\, a\, \cos(\pi t),</mrow>
+				</md>
+				This gives magnitude 
+				<me>
+					v = \pi a,
+				</me>
+				and direction in the direction of the unit vector
+				<me>
+					\hat u_v = -\hat i\, \sin(\pi t)+ \hat j\, \cos(\pi t),
+				</me>
+				which shows explicitly that direction of velocity is changing with time.
+
+			</p>
+		</solution>
+		<solution><title>(c)</title> 
+			<p>
+				(c) Angular speed will be equal to the magnitude of velocity divided by radius of the circle. This gives
+				<me>
+					\omega = \dfrac{\pi a}{a} = \pi.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(d)</title> 
+			<p>
+				(d) Acceleration will be obtained by taking derivative of the velocity.
+				<me>
+					\vec a = - \pi^2 a \left( \hat i \cos(\pi t) +  \hat j\,  \sin(\pi t) \right).
+				</me>
+
+			</p>
+		</solution>
+	</exercise>	
+
+	</exercises>	
+
+</section>

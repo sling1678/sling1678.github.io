@@ -1,0 +1,160 @@
+<section xml:id="Entropy-Change-in-Irreversible-Processes"><title> Entropy Change in Irreversible Processes </title>
+	<introduction>
+
+		<p>
+			The definition of entropy gives us only an inequality for irreversible processes.  For an irreversible process that transforms a system from state A to state B, we have the following inequality.
+			<men xml:id="eq-entropy-inequality-in-irreversible-process">
+				S(B) - S(A) \gt \left( \sum \dfrac{\Delta Q}{T} \right)_{\text{irr}}.
+			</men>
+			The Calculus folks should read the sum as integral.
+			Here the right side may not be calculable since we may not know <m>\Delta Q</m> and/or <m>T</m> during the process since the process is an irreversible process.  
+		</p>
+		<p>
+			Even though Eq. <xref ref="eq-entropy-inequality-in-irreversible-process" /> does not help us compute entropy, if we know the state A and B, then <em> we can imagine a reversible process</em> that will transform the system from state A to state B. We can use this imagined reversible process to find the entropy change.
+			<men>
+				S(B) - S(A)=\left( \sum \frac{\Delta Q}{T} \right)_{\text{imagined rev process}}.
+			</men>
+			Since entropy is a state function, the difference of entropy between states A and B does not depend on how the change was made - whether the change was made by a reversible process or by an irreversible process.  It should be the same for any process between A and B.  Therefore, if the actual process performed between states A and B is an irreversible process, then, to find the entropy change, we can invent some convenient reversible process that starts with state A and ends at state B.  The entropy change over the imagined reversible process will equal the entropy change over the irreversible process in question.  I will now present two examples to make this point clearer.
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-Entropy-Change-for-Heating-Water-Irreversibly"><title> (Calculus) Entropy Change for Heating Water Irreversibly </title>
+		<statement>
+			<p>
+				A glass beaker of mass <m> 600\text{g}</m> contains <m> 800\text{ g}</m>  of water at <m> 20^{\circ}\text{C}</m>.  The beaker is put in a microwave and heated.  At the end the temperature of water and beaker becomes <m> 80^{\circ}\text{C}</m>.  What is the change in entropy of the beaker and water? Use specific heat <m> c = 0.2\text{ cal/g.K}</m> for glass and <m> c = 1.0\text{ cal/g.K}</m>  for water.
+			</p>
+
+		</statement>
+		<hint> <p>  Think of an easy-to-calculate reversible process between the initial and final states. </p> </hint>
+		<answer> <p> <m>171\text{ cal/K} </m>  </p> </answer>
+		<solution> 
+			<p>
+				We note that water is not heated slowly enough to be quasi-static and reversible.  Therefore we have an irreversible process between two states: beaker+water at <m> 20^{\circ}\text{C}</m> (state A) and same at <m> 80^{\circ}\text{C}</m> (state B).  We do not have any formula for directly evaluating entropy for this process.
+			</p>
+			<p>
+				We need to imagine a reversible process or processes that will cause state A to change to state B.  One way this can be done is as follows.  We can imagine an infinite number of heat baths of different temperatures between <m> 20^{\circ}\text{C}</m> and <m> 80^{\circ}\text{C}</m>.  The system at temperature <m> T</m> is then dipped into a bath at temperature <m> T+dT</m> so that the temperature of the system rises by an infinitesimally amount quasi-statically and reversibly. The change of entropy in one such infinitesimal reversible process is
+				<me>
+					dS = \left(m c_p \frac{dT}{T} \right)_{beaker} + \left(m c_p \frac{dT}{T} \right)_{water}
+				</me>
+				Integrating from <m>  T=T_i</m> to <m> T=T_f </m> we find the following.
+				<me>
+					\Delta S = \left(m c_p \ln\frac{T_f}{T_i} \right)_\text{beaker} + \left(m c_p \ln\frac{T_f}{T_i} \right)_\text{water}.
+				</me>
+				Now, putting in the values <m>  T_i=20+273 = 293\text{K}</m> and <m> T_f = 80+273=353\text{K}</m>, along with other numerical values, we find the following.
+				<me>
+					\Delta S  = 171\text{ cal/K}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Entropy-Change-for-an-Ideal-Gas-Expanding-in-Vacuum-in-an-Irreversible-Process"><title> (Calculus) Entropy Change for an Ideal Gas Expanding in Vacuum in an Irreversible Process </title>
+		<statement>
+			<p>
+				Two moles of a monatomic ideal gas at <m> -50^{\circ}\text{C}</m> is in one chamber of a two chamber insulated container where the chambers are equal in volume and are connected by a stopcock.  The other chamber is evacuated to a perfect vacuum.  When the stopcock is opened the gas rushes into the second chamber without any effort.  Since gas does not move any piston or wall no work is done in the process.  Find the entropy change. 
+			</p>
+
+		</statement>
+		<hint> <p> <m>\Delta S \ne 0</m>. Must imagine a reversible process that transforms the state. Think of an isothermal process.  </p> </hint>
+		<answer> <p> <m> 11.5\text{ J/K} </m>. </p> </answer>
+		<solution> 
+			<p>
+				Even though no heat enters or exits the system, the entropy change is not necessarily zero.  We cannot use <m> dQ/T</m> of an irreversible process to find the entropy change.  We have to imagine a reversible process between the initial and final state to carry out the calculation of entropy change.
+			</p>
+			<p>
+				Let us make sure we are clear about the initial and final states, A and B. Since no work is done and no heat is exchanged, the internal energy of the gas  does not change.  As internal energy of an ideal gas is only a function of temperature, this means that the temperature of the final state is same as that of the initial state.
+			</p>
+			<md>
+				<mrow> \amp  \text{State } A:\ \  T=223\text{K}, \text{ volume } V, \text{ pressure } p_A.</mrow>
+				<mrow> \amp  \text{State } B:\ \ 	T=223\text{K}, \text{ volume } 2V, \text{ pressure } p_B.</mrow>
+			</md>
+			<p>
+				By using the ideal gas law, we can show that <m> p_B = p_A/2</m>.  Now we can imagine some convenient reversible processes for calculation of entropy.  Since temperature of state B is same as that of state A, we can imagine an isothermal reversible process. 
+			</p>
+			<p>
+				<alert> Imagined reversible process: Isothermal process between A and B.</alert>  As the system is an ideal gas, the internal energy is only a function of temperature, which makes <m> dU = 0</m> on this process.  Therefore, from the first law of thermodynamics we get 
+				<me>
+					dQ = pdV = \dfrac{nRT}{V}\, dV
+				</me>
+					
+				Hence the change in entropy is
+				<me>
+					\Delta S = nR\int_{V_A}^{V_B}\frac{dV}{V} = nR\ln\frac{V_B}{V_A} = 2\ mol\times \frac{8.31\ J}{mol. K}\ln(2) = 11.5\text{ J/K}. 
+				</me>
+				This says that even when <m> (\Delta Q)_\text{irr} = 0</m>, <m>\Delta S\ne 0</m>.
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Entropy-of-an-Irreversible-Expansion-of-a-Diatomic-Ideal-Gas"><title> (Calculus) Entropy of an Irreversible Expansion of a Diatomic Ideal Gas </title>
+		<statement>
+			<sidebyside widths="60% 40%">
+				<p>
+					Three moles of the Nitrogen gas at 400 K in a container is suddenly expanded to twice its volume.  The process is so rapid that no heat is exchanged with the environment but the temperature of the final state upon reaching equilibrium is found to be 300 K.  The gas is then compressed isothermally at 300 K back to the initial volume.  
+				</p>
+				
+				<image source="./images/entropy/diatomic-ideal-gas-sudden-expansion-statement.png" width="50%"/>
+			</sidebyside>
+
+			<p>
+				Find the total change in entropy of the gas. 
+			</p>
+			<p>
+				Data:  Treat the Nitrogen gas as a diatomic ideal gas with the molar specific heat <m>C_V = \frac{5}{2} R</m>.
+			</p>
+
+
+		</statement>
+		<hint> <p> Replace the irreversible sudden expansion process by a constant pressure and a constant volume process.  </p> </hint>
+		<answer> <p> <m>-17.9\ \text{J/K}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We redraw the processes in the following diagrma, where the origial irreversible process is now shown as 1-2, which will be replaced by a reversible process 1-4-2 for entropy calculations. For simplicity, I chosethe  process 1-4-2 since it consists of constant pressure and constant volume steps for which entropy changes are easily computed.
+			</p>
+ 
+			<image source="./images/entropy/diatomic-ideal-gas-sudden-expansion.png" width="50%"/>
+ 
+			<p>
+
+				<me>
+					\Delta S_{12} = \Delta S_{14}  + \Delta S_{42}. 
+				</me>
+				Since 1-4 process involved changing volume the heat will have both the change in the internal energy and the work.
+				<md>
+					<mrow> \Delta S_{14}  \amp   = \int \frac{dQ}{T} =  \int \frac{dU}{T} +  \int \frac{pdV}{T}</mrow>
+					<mrow> \amp   = \int \frac{nC_V dT}{T} +  \int \frac{n RdV}{V} = \int \frac{nC_V dV}{V} +  \int \frac{n RdV}{V}</mrow>
+					<mrow> \amp   = n(C_V + R) \ln\left(V_2/V_1 \right). </mrow>
+				</md>
+				The change in 4-2 process will be
+				<md>
+					<mrow> 
+						\Delta S_{42} \amp   = \int \frac{dQ}{T} =  \int \frac{dU}{T} = \int \frac{nC_V dT}{T}  = \int \frac{nC_V dp}{p} </mrow> 
+					<mrow> 
+						\amp   = n C_V   \ln\left(p_2/p_4 \right) = n C_V \ln\left(p_2/p_1 \right).</mrow>
+				</md>
+				Therefore, the change of entropy in the irreversible process 1-2 will be
+				<md>
+					<mrow> \Delta S_{12} \amp   = \Delta S_{14} + \Delta S_{42} </mrow>
+					<mrow> \amp   =  n(C_V + R) \ln\left(V_2/V_1 \right) +  n C_V  \ln\left(p_2/p_1 \right)</mrow>
+					<mrow> \amp   = n C_V\ln\left(p_2V_2/p_1V_1 \right) + n R \ln\left(V_2/V_1 \right)</mrow>
+					<mrow> \amp   = n C_V\ln\left(T_2/T_1 \right) + n R \ln\left(V_2/V_1 \right)</mrow>
+				</md>
+				The process 2-3 is a constant temperature process, for which we will have  
+				<me>
+					\Delta S_{23} = nR\ln\left(V_3/V_2\right) = nR \ln\left(V_1/V_2\right).
+				</me>
+				The net for 1-2-3 process would be
+				<md>
+					<mrow> \Delta S \amp   = \Delta S_{12} + \Delta S_{23}</mrow>
+				    <mrow> \amp   = n C_V\ln\left(T_2/T_1 \right)</mrow>
+				</md>
+				Putting in the numerical values for the problem we obtain
+				<me>
+					\Delta S =3\ \text{mol}\times \frac{5}{2}\times 8.31\  \frac{\text{J}}{\text{mol. K}} \ln\left(\frac{300\ \text{K}}{400\ \text{K}}\right) = -17.9\ \text{J/K}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+</section>

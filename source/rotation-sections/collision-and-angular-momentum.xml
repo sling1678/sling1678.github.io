@@ -1,0 +1,94 @@
+<section xml:id="Collision-and-Angular-Momentum"><title> Collision and Angular Momentum </title>
+<idx><h>Collisions</h><h>Angular Momentum</h></idx>
+<idx><h>Angular Momentum</h><h>Collisions</h></idx>
+	<introduction>
+		<p>
+			In a collision, only internal forces are involved. That gives <m>\vec J\text{ext}=0</m> and <m>\vec J_\text{rot,ext}=0</m>. Therefore, both momentum and angular momenta are conserved.
+			<mdn>
+				<mrow>\amp  \vec p_\text{net,before} = \vec p_\text{net,after}.</mrow>
+				<mrow>\amp \vec L_\text{net,before} = \vec L_\text{net,after}.</mrow>
+			</mdn>
+			In addition, if the collision is elastic, we will also have conservation of kinetic energy.
+			<men>
+				K_\text{before} = K_\text{after}.
+			</men>
+		</p>
+		<p>
+			Previously, we looked at only the translational motion in a collision. In this section, we will illustrate application to rotation problems.
+ 		
+		</p>
+	</introduction>
+
+	<example xml:id="ex-A-Ball-Striking-a-Rotating-Wheel-and-Bouncing-Back"><title> A Ball Striking a Rotating Wheel and Bouncing Back </title>
+		<statement>
+			<p> 
+				<xref ref="fig-ex-Ball-Striking-a-Rotating-Wheel"/> shows a ball of mass <m> m</m> striking a wheel of mass <m> M </m> and radius <m> R</m> and bouncing back in the drection away from the center of the wheel. Assume you are given, the angle <m>\theta</m>, <m> v_i</m>, and <m> \omega_i</m>. You do not need <m> v_f</m> in this geometry. You are to find <m> \omega_f</m>.
+			</p>
+			<p>
+				I would prefer you work with symbols, but if you want numerical values, you may use: <m> m = 0.2\text{ kg}</m>, <m> M=5\text{ kg} </m>, <m> R=0.5\text{ m}</m>, <m> \theta = 30^{\circ}</m>, <m> v_i = 200\text{ m/s}</m>, <m> \omega_i = 10\text{ rad/s}</m>.
+			</p>
+			<figure xml:id="fig-ex-Ball-Striking-a-Rotating-Wheel">
+				<caption>
+					Figure for <xref ref="ex-A-Ball-Striking-a-Rotating-Wheel-and-Bouncing-Back"/>.
+				</caption>.
+				<image source="./images/rotation/ex-Ball-Striking-a-Rotating-Wheel.png" width="70%"/>
+			</figure>
+		</statement>
+		<!-- <hint> <p> Think of the ball and the wheel as one combined system. Also, keep track of directions of angular momentum. </p> </hint> -->
+		<answer> <p> <m> \omega_i - \dfrac{2 m v_i\cos\,\theta}{ M R}</m>, <m> 17.7\text{ rad/s} </m> in the clockwise sense. </p> </answer>
+		<solution> 
+			<p>
+				Consider a combined system of the ball and the wheel. Apply the conservation of angular momentum about the axis through the center of the wheel and perpendicular to the wheel. We also need to keep track of the directions since we will need to add angular momenta vectorially.
+			</p>
+			<p>
+				Initially, we have the angular momentum of the wheel to be
+				<me>
+					L_{i}^{\text{wheel}} = \dfrac{1}{2}MR^2\, \omega_i,\ \ \ \text{(Counterclockwise)}
+				</me>
+			</p>
+			<sidebyside widths="50% 10% 35% 5%">
+				<p>
+					and the motion of the ball about this axis gives the angular momentum of the ball to be
+					<me>
+						L_{i}^{\text{ball}} = m R\cos\,\theta, \ \ \ \text{(Clockwise)}
+					</me>
+					This is clear from the picture to the right.
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-Ball-Striking-a-Rotating-Wheel-solution">
+					<caption></caption>
+					<image source="./images/rotation/ex-Ball-Striking-a-Rotating-Wheel-solution.png" width="90%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+			<p>
+				For counterclockwise, we use positive, and for clockwise we use negative.
+				Therefore, initially, we have the following net angular momentum.
+				<me>
+					L_i = \dfrac{1}{2}MR^2\, \omega_i - m v_i R\cos\,\theta. 
+				</me>
+				Now, the angular momentum of the ball is zero since its velocity line passes through the axis of rotation.
+				<me>
+					L_{f}^{\text{ball}} = 0,
+				</me>
+				and the final angular momentum of the wheel will be
+				<me>
+					L_{f}^{\text{wheel}} = \dfrac{1}{2}MR^2\, \omega_f.
+				</me>				
+				Therefore, the final net angular momentum is
+				<me>
+					L_f = \dfrac{1}{2}MR^2\, \omega_f.
+				</me>
+				Equating <m> L_i </m> to <m> L_f</m> and solving for <m> \omega_f</m> we get
+				<me>
+					\omega_f = \omega_i - \dfrac{2 m v_i\cos\,\theta}{ M R}.
+				</me>
+				Now, using the numerical values we will get
+				<me>
+					\omega_f =10 - \dfrac{2 \times 0.2 \times 200 \cos\,30^{\circ}}{ 5\times 0.5} = -17.7\text{ rad/s}.
+				</me>
+				The negative value means the wheel is now rotating in the clockwise sense.				
+			</p>					
+		</solution>
+	</example>ß	
+</section>

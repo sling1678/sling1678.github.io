@@ -1,0 +1,151 @@
+<section xml:id="radiometry"><title> Radiometry </title>
+	<introduction>
+        <p>
+        	<term>Radiometry</term> is the branch of optical physics that deals with the measurement of energy in light.  The measurement of optical energy is an old subject and the physical quantities of interest and the methods for their measurements have evolved over time.  
+        </p>
+        <p>
+        	Historically, the power of a light source was obtained by observing the brightness of the source.  It turns out that the brightness perceived by the human eye depends upon the wavelength, i.e. the color of light, and differs from the actual energy contained in the light.  Radiometry deals with the actual objective energy content  rather than the subjective perception by a human. 
+        </p>
+        <p>
+        	Since ordinary light has continuously flowing energy, the most basic quantity of interest is the amount of energy propagating per unit time, which is the <term>power</term> <m>P</m> in the beam.
+        </p>
+        <p>
+        	We are often interested in power in a particular direction (<xref ref="fig-solid-angle"/>).  The amount of power emitted per unit solid angle of a light source is called its  <term>radiant intensity</term> <m>I_R</m>. The SI unit of radiant intensity is Watts per steradian (<m>\text{W/sr}</m>). Let  <m>\Delta P</m> be the power of light in the solid angle   <m>\Delta \Omega</m>, then the radiant intensity is given by
+        	<men>
+        		I_R = \frac{\Delta P}{\Delta \Omega}\ \ \ \text{(Radiant Intensity)}
+        	</men>
+        	If the source is isotropic, i.e., emits same power in all directions, then the total optical energy produced per second will be <m>4\pi I_R</m>.
+        </p>
+        <figure xml:id="fig-solid-angle">
+        	<caption>
+        		Radiant intensity is the power per unit solid angle.
+        	</caption>
+			<image source="./images/fundamentals-of-optics/solid-angle.png" width="80%"/>
+        </figure>
+        <p>
+        	The <term>intensity</term> of light <m>I</m> at a particular place, on the other hand, is the amount of average power that crosses a unit area perpendicular to the direction of light.  The intensity of light is also called <term>radiant emittance</term> when light is emitted from a source and <term>irradiance</term> if light is incident upon a detector (<xref ref="fig-solid-angle-area"/>).
+        </p> 
+        <figure xml:id="fig-solid-angle-area">
+        	<caption>
+        		Irradiance  at point is the power crossing a unit area perpendicular to light. Note the same power crosses may pass through two different areas corresponding to different irradiance at those locations.
+        	</caption>
+			<image source="./images/fundamentals-of-optics/solid-angle-area.png" width="80%"/>
+        </figure>
+		<p>
+			Thus, if power  <m>\Delta P</m> is incident on a perpendicular area <m>\Delta  A</m>, then irradiance <m>I</m> is
+			<men>
+				I = \frac{\Delta P}{\Delta A}\ \ \ \text{(Intensity or Irradiance)}
+			</men>
+			The unit of intensity in the SI system of units is Watts per square meter (<m>\text{W/m}^2</m>). 
+		</p>
+
+		<p>
+			Similarly, suppose light is emitted perpendicular to an area such that power  <m>\Delta P</m> is emitted from a perpendicular area <m>\Delta  A</m>, then the radiant emittance <m>M</m> of the source is defined as:
+			<men>
+				M = \frac{\Delta P}{\Delta A}\ \ \ \text{(Emittance)}
+			</men>
+			From here on, we will use the same symbol <m>I</m>  for both the irradiance and the radiant emittance.  From the conservation of energy you can show that the intensity of light from a point source that emits light uniformly in all direction must drop off with the square of the distance from the source, since the same energy is spreading out over larger and larger areas as light moves out from the source.
+		</p>
+		<figure xml:id="fig-intensity-drop-off">
+			<caption>
+				Intensity of light from a point source drops off as inverse square of distance.
+			</caption>
+			<image source="./images/fundamentals-of-optics/intensity-drop-off.png" width="60%"/>
+		</figure>
+		<p>
+			Since the area of the spherical surface about a point source increases as the square the distance from the source, the intensity at distances <m>r_1</m> and <m>r_2</m> in <xref ref="fig-intensity-drop-off"/> would be related by the following relation.
+			<men>
+				4\pi r_1^2 I_1 = 4\pi r_2^2 I_2\ \ \Longrightarrow\ \ \frac{I_2}{I_1} = \left( \frac{r_1}{r_2} \right)^2.
+			</men>
+ 
+		</p>
+		<p>
+			Most sources of light do not emit light equally in all directions;  instead they emit more light in some directions than others.  The quantity that gives both a measure of the intensity of light and its direction in space with respect to the source is called the {\bf radiance}\index{Radiance}.  The radiance is defined as the power per unit solid angle per unit normal area.  It is usually denoted by the letter <m>L</m>.
+			<men>
+				L = \frac{\Delta P}{\Delta \Omega\Delta A}\ \ \ \text{(Radiance)}
+			</men>
+			Light emitted by a source usually does not have the same power over different wavelength ranges.  For instance, the sun emits more power in the blue-green color, of wavelength approx. 500 nm,  than either blue or red.  To study wavelength-dependence of intensity, one defines <q>density</q> of each quantity per unit wavelength.  For instance, we define intensity of light in the range <m>\lambda</m>  to  <m>\lambda + d\lambda</m>  by 
+			<men>
+				dI = I_{\lambda} d\lambda
+			</men>
+			where <m>I_\lambda</m> is the intensity per unit wavelength and <m>dI</m>  is the intensity in the aforementioned range of wavelength.  The total intensity is then obtained by integrating over wavelength. The quantity <m>I_\lambda</m> is important in spectroscopy where we study the distribution of light energy among different wavelengths or frequencies.
+        </p>
+    </introduction>
+
+	<exercise xml:id="exercise-Irradiance-of-the-Sun"><title>Irradiance of the Sun</title>
+
+		<statement>
+			<p>
+				The irradiance of sun light on earth is approximately <m>1.4 \text{ kW/m}^2</m>. Use the following additional data to answer the questions below: Radius of earth  <m>R_E = 6.37 \times10^3\text{ km}</m>,  the average Earth-Sun distance <m>r = 1.5 \times 10^8\text{ km}</m> and the radius of the Sun (<m>R</m>) equal to <m>6.96\times10^5\text{ km}</m>. 
+			</p>
+			<p>
+				(a) How  much energy is incident on the Earth per day?  
+			</p>
+			<p>
+				(b) Find the intensity of light at the surface of the Sun.  
+			</p>
+			<p>
+				(c) Find the total energy in light emitted by the Sun in one earth day assuming it emits light isotropically in all direction. 
+			</p>
+		</statement>
+		<hint><p>(a) The light blocked by cross-sectional area is required. (b) Use isotropy of irradiance from the sun and that intensity drops off as distance squared from the center of the Sun. (c) Make use of the surface area of the Sun.</p></hint>
+		<answer><p>
+			(a) <m>1.54\times 10^{19} \text{kJ} </m>,
+			(b) <m> 6.5 \times 10^4 \ \text{kW/m}^2</m>,
+			(c) <m> 3.4\times 10^{28} \text{kJ}</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)	The cross-section of Earth, which is a circle of radius <m>R_E</m>, collects light from the Sun.  Since, the Earth is far away from the Sun, we can assume that all light is incident normally on to the cross-section.  Therefore, if we multiply the irradiance with the area of the circle, we will obtain the energy incident on the Earth per unit time.  Hence, the energy incident on the Earth per day would be
+				<md>
+					<mrow> \text{Energy} \amp  = \pi R_E^2\ I\ T\ \ \ (T = 1\ \text{day}) </mrow>
+					<mrow>
+				\amp  = \pi\left(6.37 \times10^6\text{m} \right)^2 \times 1.4\ \text{kW/m}^2\times 24\times 3600\ \text{s}</mrow>
+				<mrow>\amp =1.54\times 10^{19} \text{kJ}. </mrow>
+				\</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>		
+				(b)	Assuming the Sun to irradiate isotropically, the light energy from the Sun will drop as <m>1/r^2</m> from the Sun, where <m>r</m> is the distance from the center of the Sun.  Let <m>I_0</m> and <m>I</m> be irradiance at the surface of the Sun and a distance <m>r=R</m>, the radius of the Sun.  Since, all light passing throiugh the surface of at <m>r=R</m> must also pass through the spherical surface of radius <m>r \gt R</m>, we will have
+				<me>
+					I_0 R^2 = I r^2.
+				</me>
+				Npw, we apply this to <m>r=</m> distance from the center of the Sun to the center of Earth. since we know the irradiance at Earth, we will get the irradiance at the surface of the Sun to be 
+				<md>
+					<mrow> I_0 \amp = \left( \frac{r}{R}\right)^2 I </mrow>
+					<mrow> \amp = \left(\frac{1.5 \times 10^8\ \text{km}}{6.96\times10^5\ \text{km}} \right)^2 \times 1.4\ \text{kW/m}^2</mrow>
+					<mrow> \amp = 6.5 \times 10^4 \ \text{kW/m}^2.</mrow>
+				</md>
+
+			</p>
+		</solution>
+		<solution><title>(c)</title>
+			<p>
+				(c)	The energy leaving the Sun  will be obtained by the intensity at the surface of the Sun and the total surface area of the Sun. Therefore, the energy of light leaving the Sun in all directions in time <m>T</m> will be
+				<me>
+					\text{Energy}  = 4\pi R^2\ I_0\ T.
+				</me>
+				Putting in the numerical values we get the energy emitted in <m>T= 1 \text{ Earth day}</m> to be
+				<md>
+					<mrow> \text{Energy} \amp =4 \pi\left(6.96 \times10^8\text{m} \right)^2   \times6.5\times 10^4\ \frac{\text{kW}}{\text{m}^2} \times 24\times 3600\ \text{s}</mrow>
+					<mrow> \amp  =3.4\times 10^{28} \text{kJ}. </mrow>
+				</md>
+	 
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

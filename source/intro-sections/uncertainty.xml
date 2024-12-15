@@ -1,0 +1,571 @@
+<section xml:id="section-uncertainty-in-measurements"><title> Uncertainty, Precision, Accuracy </title>
+	<introduction>
+
+		<p>
+			Often when you measure the same quantity repeatedly you get different values. If spread of values is small, then we say that <term>precision</term> is high and when the spread is large, the precision is said to be low. Uncertainty in a measured quantity is a quantitative statement of precision. 
+		</p>
+	</introduction>
+	<subsection><title>Uncertainty</title><idx>Uncertainty</idx>
+		<p>
+
+			Usually, the value of uncertainty is obtained by statistical analysis of the spread of the measured values. Thus, measurements of a quantity gives rise to two values: the main value (i.e., the average) and the uncertain amount. For instance, repeated length measurements of the same rod will give us main value <m>L</m> and uncertain amount <m>\Delta L</m>, and report the values using a plusminus sign <m>\pm</m>. 
+		</p>
+		<men>
+			L \pm \Delta L.
+		</men>
+		<p>
+			For instance, if we measure the length of a rod to be <m>1.5\,\text{m}</m> with uncertainty <m>0.2\,\text{cm}</m>, we will record it as follows.
+			<me>
+				L = 1.5\,\text{m} \pm 0.2\,\text{cm},\ \text{or} \ 1.5\,\text{m} \pm 2.0\times 10^{-3}\,\text{m}, \ \text {or}\ (1500.0 \pm 2.0)\times 10^{-3}\, \text{m}.
+			</me>
+		</p>
+		<p>
+			Beware that sometimes the symbol <m>\Delta L</m> denotes a change in <m>L</m>, but not in the context of reporting the uncertain part of a measured quantity. 
+		</p>
+	</subsection>
+	<subsection><title>Precision</title><idx>Precision</idx>
+ 
+		<sidebyside widths="50% 10% 40%">
+			<!-- <p>
+				For instance, a mm-marked ruler can give very precise reading up to a mm or a small factor of a mm, such as half a mm. But it cannot tell hundreth of a mm. You can easily make a vernier caliper with markings that can read <m>0.02\text{ mm}</m>, which means we can read with good confidence up to 50th of a mm. A micrometer can even go smaller distance than that. 
+			</p> -->
+			<p>
+				Although precision reflects uncertainty in measurements, there is also another meaning of precision - a value known to larger number of digits is also said to be more precise. For instance, if you measure thickness of a wire by using a millimeter-ruled ruler, you might get value up to about <m>0.5\text{ mm}</m>, but with a vernier caliper you could get precision up to <m>0.01\text{ mm}</m> and with a micrometer, may be even <m>0.005\text{ mm}</m>.
+			</p>
+			<p></p>
+			<figure xml:id="fig-rulers-0">
+				<caption>
+					 
+				</caption>
+				<image source="./images/intro-to-physics/mm-ruler-vernier-micrometer.png" width="80%"/>
+				<!-- <image source="./images/intro-to-physics/vernier-caliper.png" width="80%"/>
+				<image source="./images/intro-to-physics/micrometer.png" width="80%"/> -->
+			</figure>
+		</sidebyside>
+	</subsection>
+	<subsection><title>Accuracy</title><idx>Accuracy</idx>
+
+		<sidebyside widths="50% 50%"> 
+			<p>
+				Accuracy is different. <term>Accuracy</term> refers to how close measured values are to some known value. You may have highly repeatable values but which are way off the known value. That will be the case of high precision and low accuracy. 
+			</p>
+
+			<!-- <p></p> -->
+			<figure xml:id="fig-precision-accuracy">
+				<caption>
+					 
+				</caption>
+				<image source="./images/intro-to-physics/precision-accuracy.png" width="80%"/>
+			</figure>
+		</sidebyside> 
+		<p>
+			For instance, suppose you used a faulty watch and measured a period of a pendulum to be <m>4.5\,\text{ s}\pm 0.1\,\text{s}</m>. Suppose you used a working watch, the value was <m>4.0\,\text{s}\pm\text{s}</m>. The faulty watch is giving a very precise reading, within <m>0.1\,\text{s}</m>, but it is off by <m> (4.5-4.0)/4.0 = 12.5\%</m>. Thus <alert>precise does not mean accurate</alert>. Beware of that!
+		</p>
+
+		<p>
+			The accuracy is often expressed in <term> percent error</term>.
+			<me>
+				\text{Percent Error} = \frac{|\text{Accepted Value - Experimental Value}|}{ |\text{Accepted Value}| }\times100\%.
+			</me>
+			Thus, if you measured the width of a metal plate to be <m>5.7\text{ cm}</m> while it was manufactured to the <q>exact</q> specification of <m>6.0\text{ cm}</m>.  Then, your  percent error will be <m>5\%</m> as obtained from the following calculation.
+			<me>
+				\text{Percent Error} = \frac{|6.0-5.7|}{|6.0|}\times100\% = 5\%.
+			</me>
+			The causes of percent error may be a defect in the ruler or a faulty procedure of measurement.
+		</p>
+
+ 
+		<!-- <p>
+			We stated earlier that time measured by the NIST-F1 atomic clock is highly precise, the uncertainly being only <m>3\times 10^{-16}\text{ sec}</m> in <m>1\text{ sec}</m>. Even though this is highly <term>precise</term>, it is not <m>100\%</m> precise. As a matter of fact, no measuring device can be <m>100\%</m> precise due to the problems associated with preparing the sample perfectly, reading the dials, the fineness of the discretization of an analog signal, etc.
+		</p> -->
+
+
+		<!-- <p>
+			Every measured quantity will have a main value and uncertainty amount. For instance, if you read length of a rod, you might get main value <m>2.5\text{ cm}</m> and uncertainty amount <m>0.1\text{ cm}</m>. Here, it is important to note that main value is claimed to one decimal place, which is how far the uncertain value goes. If you were to claim the main value to a higher precision, say two decimal places, e.g., say <m>2.54\text{ cm}</m> with uncertain amount <m>0.1\text{ cm}</m>, then it does not make sense - how can a quantity be known to a precision of <m>100^{th}</m> place and uncertain in the <m>10^{th}</m> place? 
+		</p> -->
+	</subsection>
+	<subsection><title>Significant Figures</title><idx><h>Precision</h><h>Significant  Figures</h></idx>		
+		<p>
+			A normal practice is to round off the uncertain amount to one or two non-zero digit and use that absolute uncertainty figure as a guide to round off the main number to the same precision level. In this book, we will round the uncertain part to one nonzero digit by using appropriate powers of <m>10</m>, if necessary.
+			So, if you somehow ended up with main amount <m>2.57\text{ cm}</m> with uncertain amount <m>0.1\text{ cm}</m>, you would use the precision of the uncertain amount and round off the main value to the same precision. Thus, this will become <m>2.6\text{ cm}</m> with uncertain amount <m>0.1\text{ cm}</m>
+			<me>
+				2.57\, \text{cm} \pm 0.1\, \text{cm} \rightarrow 2.6\, \text{cm} \pm 0.1\, \text{cm}.
+			</me>
+			The pratice of rounding off to reflect the precision present in the uncertain amount is also called keeping the values to <term>significant figures</term>. You do not need to memorize any rules about significant figures; just look at the uncerain part and keep the main value upto that significance. <em>If uncertain part is not given, then we assume that the last digit in the given value must correspond to the uncertain part with uncertainty be one or two units in that digit. </em> Hence, a value <m>1.576</m> would just mean <m>1.576\pm0.001</m>.
+		</p>
+
+		<sidebyside widths="70% 5% 25%">
+		
+			<p>
+				<p>
+					Suppose you measured diameter of a cylinder with main value <m>D = 2.5\text{ cm}</m> and uncertainty <m>\Delta D = 0.1\text{ cm}</m> and height <m>H=5.23\text{ cm}</m> with uncertainty  <m>\Delta H = 0.02\text{ cm}</m>. What will be its volume? 
+				</p>
+				<p>
+					We would want main value <m>V</m> and uncertainty <m>\Delta V</m>. It is possible to propagate <m>\Delta D</m>  and <m>\Delta H</m> to <m>\Delta A</m> by using Calculus. We will address that question in another section on propagation of uncertainty. Here, we want to address getting <m>V</m> to a reasonable number of digits, called number of significant figures, that respects the precision with which <M>D</M> and <m>H</m> were measured. We make use of  a simple principle:
+				</p>
+			</p>
+			<p></p>
+			<figure xml:id="fig-volume-of-cylinder2">
+					<caption>
+					</caption>
+					<image source="./images/intro-to-physics/volume-of-cylinder.png" width="80%"/>
+			</figure>
+		</sidebyside> 
+ 
+			<p>
+				<emph>
+					Answer for a derived quantity cannot have more precision than the precision of the measured value. If we add or multiply or divide two quantities, the number of significant digits in the answer should equal lesser of the two quantities. By maintaining significant figures throughout a calculation we keep the precision of measured quantities in our derived quantities. 
+				</emph>
+			</p>
+			<p>
+				In our example since <m>D</m> was measured to two digits and <m>H</m> to three digits. Therefore, we expect <m>V</m> to have only two significant digits, i.e., we will round off <m>V</m> to two digits. 
+				<me>
+					V = \frac{\pi}{4}D^2 H = \frac{\pi}{4}( 2.5\text{ cm})^2 \times 5.23 = 25.6727\Longrightarrow 26\text{ cm}^3.
+				</me>
+				A more complete analysis will, of course, give you uncertainty <m>\Delta V</m> as well. 
+			</p>
+			<p>
+				In numerical calculations where uncertainty is not explicitly stated it is assumed that the last digit displayed is uncertain. For instance, a measure quantity stated as <m>786</m> would imply that it has three significant figures. Integers with trailing zeros without a decimal at the end do not count in significant figures. Thus, <m>78600</m> still has three significant figures. But <m>78600.</m> has five significant figures. 
+			</p>
+	</subsection>
+	<subsection><title>Reason for Uncetainty</title>
+
+		<p>
+			Why do we get spread in values of measured quantities? One or more factors may be at play.
+			<ol>
+				<li> No measuring device is capable to infinite precision; i.e., you cannnot get a measurement good to infinite number of decimal places.</li>
+				<li> The object being measured may have irregularities, e.g., if you are measuring length of a table, the edges of the table may not be sharp enough or length may vary along the table.</li>
+				<li> You might not be able to reproduce the conditions exactly when you repeat measurement.</li>
+				<li> You might make mistake by not making sure there are no obvious sources of error or carrying out a faulty procedure.</li>
+			</ol>
+			Note that not every quantity measured or observed will have to have an uncertainty. For instance, if I give you a box of marbles and ask you to count them. You will get an exact number, such as 1322 marbles without any plus minus! Uncertainties usually arise in measurements that take continuous values or occur randomly, e.g., number of radioactive decays in a minute. 
+		</p>
+	</subsection>
+
+	
+
+	<subsection><title> Absolute and Relative Uncertainty</title><idx><h>Uncertainty</h><h>Absolute</h></idx><idx><h>Uncertainty</h><h>Relative</h></idx>
+		<p>
+			We report uncertainty in a measurement in one of two equivalent ways, called <term>absolute uncertainty</term> and <term>relative uncertainty</term>. To illustrate the difference, suppose, you measure the thickness of a wire (<m>D</m>) by a Vernier caliper and want to report your answer as <m>0.50\text{ mm}</m> with an uncertainty of <m>0.01\text{ mm}</m>. Here <m>0.01\text{ mm}</m> will be the <term>absolute uncertainty</term>. We report this using a plus minus sign.
+			<men xml:id="eq-absolute-uncertainty">
+				D = 0.50 \text{ mm} \pm 0.01 \text{ mm} = \left( 0.50 \pm 0.01 \right)\text{ mm}.
+			</men>
+
+		</p>
+		<p>
+			The problem with absolute uncertainty is that we do not know how bad the uncertainty is relative to the main value. You may be interested in uncertainty as a  percentage of the main value - this is called relative uncertainty. In that case, you will divide absolute uncertainty by the main value to get <term>relative uncertainty</term>. In this example 
+			<me>
+				\frac{\Delta D}{D} = \frac{0.01\text{ mm}}{0.50\text{ mm}} = 0.02.
+			</me>
+			Relative uncertainty of <m>0.02</m> is <m>2\%</m>. We often speak of relative uncertainty as <term>percentage error</term>. Relative uncertainty is reported as
+			<men  xml:id="eq-relative-uncertainty">
+				D   \pm \frac{\Delta D}{D}\%  =  0.50 \text{ mm}  \pm  2.0\%.  
+			</men>
+			Notice that you can easily go from absolute (Eq. <xref ref="eq-absolute-uncertainty"/> ) to relative (Eq. <xref ref="eq-relative-uncertainty"/> ) and vice-versa. Practice with, say, from <m> 10.0 \text{ sec} \pm  5.0\% </m> to absolute uncertainty. 
+				
+		</p>
+ 
+	</subsection>
+
+		<example xml:id="ex-Relative-Uncertainty-to-Absolute-Uncertainty"><title>Relative Uncertainty to Absolute Uncertainty</title>
+
+			<statement>
+				<p>
+					A time interval is reported to be <m>365.0\,\text{days}\pm 0.1\%</m>. What is the abolute uncertainty in the time interval? Report this value to one nonzero digit significance.
+				</p>
+			</statement>
+
+			<!-- <hint>
+				<p>
+					Convert <m>\Delta t/t</m> in percentage to fraction notation.
+				</p>
+			</hint> -->
+
+			<answer>
+				<p>
+					<m>0.4\,\text{day}</m>
+				</p>
+			</answer>
+
+			<solution>
+				<p>
+					From the uncertain part of the given data we have
+					<me>
+						\frac{\Delta t}{t} = 0.1\% = \frac{0.1}{100} = \frac{1}{1000}.
+					</me>
+					Therefore,
+					<me>
+						\Delta t = \frac{1}{1000} \times t = \frac{1}{1000} \times 365 = 0.365\,\text{day}.
+					</me>
+					Rounding the answer to one non-zero digit we get <m>0.4\,\text{day}</m>.
+				</p>
+
+			</solution>
+
+		</example>
+
+		<subsection><title>The Scientific Notation for Numbers</title><idx>Scientific Notation</idx><idx><h>Numbers</h><h>Scientific Notation</h></idx>
+			<p>
+				Writing physical numbers in the scientific notation helps with maintenance of significant figures in calculations. In scientific notation we use powers of 10 to write a decimal number with an additional requirment of writing the multiplier to have required number of significant figures. A number with <m>n</m> significant digits in scientific notation will have the following form.
+				<me>
+					d_1.d_2d_3\cdots d_n \times 10^{x}, 
+				</me>
+				with <m>d_1</m> a non-zero integer and all other <m>d_i</m> can be zero or non-zero digit. For instance, if a measured quantity was stated as <m>786</m>, we assume that it has three significant digits. We can then write this number in scientific notation as
+				<me>
+					7.86 \times 10^{2}.
+				</me>
+				Unlike non-scientific notation of numbers, trailing zeros on the right of decimal are considered significant. For instance, <m>1.23\times 10^{5}</m> is in scientific notation with three significant figures. Suppose you write this number as <m>12.3\times 10^4</m>. Although, it is the same number, but it is not in a scientific notation. Now, <m>1.2300\times 10^{5}</m> is numerically same as <m>1.23\times 10^{5}</m> but, as a scientific notation, they are not same since trailing zeros in <m>1.2300\times 10^{5}</m> as scientific notation are significant.
+ 
+			</p>
+
+ 
+			<p>
+				Following examples illustrate the standard scientific notation and the same numbers not in standard scientific notation.
+				<md>
+					<mrow>\amp \text{Scientific: }  1.5\times 10^{-3},\ \ 9.05\times 10^6,\ \   9.050 \times 10^3.</mrow>
+					<mrow>\amp \text{Non-scientific: }  0.0015,\ \ 90.5\times 10^5,\ \  9050.</mrow>
+				</md>
+			</p>  
+	 
+
+			<p>
+				<alert>Special Treatment of Zeros.</alert> Whether a zero in a number counts as a significant figure or not depends on the convenstion used to write that number. Thus, in <m>0.00785</m>, none of the zeros are significant since they are just placeholders. Its best to write this to three significant digits using the scientific notation: <m>7.85\times 10^{-3}</m>. How about trailing zeros on the right side, e/g., in <m>7.8500</m>? The two zeros on the right may or may not be significant; if we are additionally told is this number should be four significant figure, then it should be written as <m>7.850</m> and if it is supposed to be five significant figures, then <m>7.8500</m> is right. Finally, if you are told that this number has three significant digits, then, you should drop the trailing zeros to avoid confusion ands write it as <m>7.85</m>. 
+			</p>
+
+	 
+		</subsection>
+
+
+<!-- 
+	<remark><title>Uncertainty and Accuracy</title>
+		<p>
+			The <term>accuracy</term> of a measurement does not refer to the precision of the measurement, but instead, to the closeness of the measured value to the <q>true value</q>, also called the accepted value.  The accuracy is often expressed in <term> percent error</term>.
+			<me>
+				\text{Percent Error} = \frac{|\text{Accepted Value - Experimental Value}|}{ |\text{Accepted Value}| }\times100\%.
+			</me>
+			Thus, if you measured the width of a metal plate to be <m>5.7\text{ cm}</m> while it was manufactured to the <q>exact</q> specification of <m>6.0\text{ cm}</m>.  Then, your  percent error will be <m>5\%</m> as obtained from the following calculation.
+			<me>
+				\text{Percent Error} = \frac{|6.0-5.7|}{|6.0|}\times100\% = 5\%.
+			</me>
+			The causes of percent error may be a defect in the ruler or a faulty procedure of measurement.
+		</p>
+	</remark>
+
+
+	<remark>
+		<p>
+			Although there is an uncertainty in every measurement, for the sake of brevity I will not be indicating any uncertainty in values given in problems or tables in this book.  When an uncertainty is not specified, the general practice is to regard the last digit to be uncertain by one or two units.  For example, if the length of a rod is given to be <m>55.7\text{ cm}</m> then it is usually assumed that the length is between <m>55.6\text{ cm}</m> and <m>55.8\text{ cm}</m> using one unit of the last digit as uncertainty.  I will try to follow this practice when truncating the digits in numerical problems.
+		</p>
+	</remark>
+
+ -->
+
+<!-- 	<subsection><title>Uncertainty in Calculations</title>
+
+		<subsubsection><title>Significant Figures</title>
+
+			<sidebyside widths="70% 5% 25%">
+
+				<p>
+					Suppose you measured diameter of a cylinder with main value <m>D = 2.5\text{ cm}</m> and uncertainty <m>\Delta D = 0.1\text{ cm}</m> and height <m>H=5.23\text{ cm}</m> with uncertainty  <m>\Delta H = 0.02\text{ cm}</m>. What will be its volume? We would want main value <m>V</m> and uncertainty <m>\Delta V</m>. It is possible to propagate <m>\Delta D</m>  and <m>\Delta H</m> to <m>\Delta A</m> by using Calculus. We will address that question in another section on propagation of uncertainty. Here, we want to address getting <m>V</m> to a reasonable number of digits, called number of significant figures, that respects the precision with which <M>D</M> and <m>H</m> were measured. We make use of  a simple principle:
+				</p>
+				<p></p>
+				<figure xml:id="fig-volume-of-cylinder">
+					<caption>
+						 
+					</caption>
+					<image source="./images/intro-to-physics/volume-of-cylinder.png" width="80%"/>
+				</figure>
+			</sidebyside> 
+			
+			<p>
+				<emph>
+					Answer for a derived quantity cannot have more precision than the precision of the measured value. If we add or multiply or divide two quantities, the number of significant digits in the answer should equal lesser of the two quantities. By maintaining significant figures throughout a calculation we keep the precision of measured quantities in our derived quantities. 
+				</emph>
+			</p>
+			<p>
+				In our example since <m>D</m> was measured to two digits and <m>H</m> to three digits. Therefore, we expect <m>V</m> to have only two significant digits, i.e., we will round off <m>V</m> to two digits. 
+				<me>
+					V = \frac{\pi}{4}D^2 H = \frac{\pi}{4}( 2.5\text{ cm})^2 \times 5.23 = 25.6727\Longrightarrow 26\text{ cm}^3.
+				</me>
+				A more complete analysis will, of course, give you uncertainty <m>\Delta V</m> as well. 
+			</p>
+			<p>
+				In numerical calculations where uncertainty is not explicitly stated it is assumed that the last digit displayed is uncertain. For instance, a measure quantity stated as <m>786</m> would imply that it has three significant figures. Integers with trailing zeros without a decimal at the end do not count in significant figures. Thus, <m>78600</m> still has three significant figures. But <m>78600.</m> has five significant figures. 
+			</p>
+
+
+		</subsubsection>
+
+
+		<subsubsection><title>The Scientific Notation for Numbers</title>
+			<p>
+				Writing physical numbers in the scientific notation helps with maintenance of significant figures in calculations. In scientific notation we use powers of 10 to write a decimal number with an additional requirment of writing the multiplier to have required number of significant figures. A number with <m>n</m> significant digits in scientific notation will have the following form.
+				<me>
+					d_1.d_2d_3\cdots d_n \times 10^{x}, 
+				</me>
+				with <m>d_1</m> a non-zero integer and all other <m>d_i</m> can be zero or non-zero digit. For instance, if a measured quantity was stated as <m>786</m>, we assume that it has three significant digits. We can then write this number in scientific notation as
+				<me>
+					7.86 \times 10^{2}.
+				</me>
+				Unlike non-scientific notation of numbers, trailing zeros on the right of decimal are considered significant. For instance, <m>1.23\times 10^{5}</m> is in scientific notation with three significant figures. Suppose you write this number as <m>12.3\times 10^4</m>. Although, it is the same number, but it is not in a scientific notation. Now, <m>1.2300\times 10^{5}</m> is numerically same as <m>1.23\times 10^{5}</m> but, as a scientific notation, they are not same since trailing zeros in <m>1.2300\times 10^{5}</m> as scientific notation are significant.
+ 
+			</p>
+
+ 
+			<p>
+				Following examples illustrate the standard scientific notation and the same numbers not in standard scientific notation.
+				<md>
+					<mrow>\amp \text{Scientific: }  1.5\times 10^{-3},\ \ 9.05\times 10^6,\ \   9.050 \times 10^3.</mrow>
+					<mrow>\amp \text{Non-scientific: }  0.0015,\ \ 90.5\times 10^5,\ \  9050.</mrow>
+				</md>
+			</p>  
+	 
+
+			<p>
+				<alert>Special Treatment of Zeros.</alert> Whether a zero in a number counts as a significant figure or not depends on the convenstion used to write that number. Thus, in <m>0.00785</m>, none of the zeros are significant since they are just placeholders. Its best to write this to three significant digits using the scientific notation: <m>7.85\times 10^{-3}</m>. How about trailing zeros on the right side, e/g., in <m>7.8500</m>? The two zeros on the right may or may not be significant; if we are additionally told is this number should be four significant figure, then it should be written as <m>7.850</m> and if it is supposed to be five significant figures, then <m>7.8500</m> is right. Finally, if you are told that this number has three significant digits, then, you should drop the trailing zeros to avoid confusion ands write it as <m>7.85</m>. 
+			</p>
+
+	 
+		</subsubsection>
+ 
+
+		<subsubsection><title>Rounding Off</title>
+			<p>
+				In numerical calculations, we must often round off numbers to display the result up to the correct number of significant digits.  This requires making decision about the least significant digit.  We use the following rules for whether or not to increment the least significant digit when eliminating the insignificant part of a number.
+			</p>
+			<ol>
+				<li>If the fraction to the right of the least significant digit is greater than <m>\frac{1}{2}</m>, then we increment the least significant digit by one.</li>
+				<li>If the fraction to the right of the least significant digit is less than <m>\frac{1}{2}</m>, then we do not increment the least significant digit.</li>
+
+				<li>If the fraction to the right of the least significant digit is equal to <m>\frac{1}{2}</m>, then we increment the least significant digit only when it is odd.  This leads to incrementing of least significant digit in a group of numbers only half the time, and therefore reduces the chance of the introduction of a systematic error by either incrementing all the time or not incrementing all the time. Thus, <m>3.5</m> may be rounded up to <m>4.0</m> and <m>4.5</m> may rounded down to <m>4.0</m>. As long as you practice this consistently, then over a large group of numbers you would not introduce any systematic error which might creep in by rounded up a borderline case all the time.</li>
+			</ol>
+		</subsubsection> -->
+
+		<example xml:id="ex-Illustration-of-Significant-Figures"><title>Illustration of Significant Figures</title>
+
+			<statement>
+				<p>
+					The length, width and height of a rectangular parallelepiped are given to be <m>1.5\ \text{cm}</m>, <m>0.600\ \text{cm}</m>, and <m>0.105\ \text{cm}</m>.  What is the volume of the parallelepiped up to the correct number of significant figures using the simple rule of significant figures?
+				</p>
+			</statement>
+			<!-- <hint><p>Least significant figure quantity controls the product of numbers.</p></hint> -->
+			<answer><p>
+				<m>9.5\times10^{-2}\ \text{cm}^3</m>.
+			</p></answer>
+			<solution>
+				<p>
+					To apply rules of significant figures in a calculation, we need to identify the least precise number in the input numbers. Here the length of <m>1.5\ \text{cm}</m> has two significant figures, the width of  <m>0.600\ \text{cm}</m> and height of <m>0.105\ \text{cm}</m> each have three.  Thus, the least precise number has two significant digits.  Therefore, the volume will have no more than two significant digits.
+					<md>
+						<mrow> \text{Volume} \amp =  1.5\ \text{cm} \times 0.600\ \text{cm}\times 0.105\ \text{cm} </mrow>
+						<mrow> \amp = 0.0945\ \text{cm}^3\ \text{(from calculator; incorrect number of digits)}</mrow>
+					</md>
+					Now we need to round off the number obtained above to the correct number of significant digits, which is two here.  The final number 0.0945 has one digit to the left of the decimal and four digits to the right of the decimal. The decimal is readily moved to get rid of the leading zeros if we write the number using a power of ten as a multiplier.  Therefore, the only digits which matter are the contiguous non-zero digits, i.e., 9, 4 and 5 here.
+				</p>
+				<p>
+					We seek a two-digit approximation of number 945: the digit 4 is called the least significant digit.  Now, we need to decide about rounding off the digits to the right of the left significant digit: will 945 be rounded off to 940 or 950? Since we have a 5 after the least significant digit 4 here, we can round up the number to 950. Finally, we write the answer in the scientific notation to display the appropriate number of significant digits.
+					<me>
+						\text{Volume} = 0.095\ \text{cm}^3\ \text{or}\ 9.5\times10^{-2}\ \text{cm}^3.
+					</me>
+ 
+				</p>
+			</solution>
+		</example>		
+
+
+	<!-- </subsection> -->
+
+
+
+
+ 	<exercises>
+
+
+		<exercise xml:id="ex-Practice-Significant-Figures-in-Numbers"><title>Practice Significant Figures in Numbers</title>
+
+			<statement>
+				<p>
+					Evaluate the following to the correct number of significant figures/digits.  (a) <m>2.52+1.008</m>, (b) <m>3.01 \times 5</m>, (c) <m>2.51/ \pi</m>, (d) <m>\pi(1.5)^2</m>, (e) <m>3.5^{1/3}</m>, (f) <m>\sqrt{5.34}</m>, (g) <m>15.5\times(1.1)^{1/4}</m>, (h) <m>\pi^2</m> (Trick question!).
+				</p>
+			</statement>
+			<hint><p> Use a calculator and round off to the lowest significant number in the expression.</p></hint>
+			<answer><p>(a) 3.53, (b) 15.1, (c) 0.799,(d) 7.1,(e) 1.5,(f) 2.31,(g)<m> 1.6 \times 10^1</m>, (h)<m>9.86960440108935...</m>. </p></answer>
+			<solution><title>(a)</title>
+				<p>(a)
+					<me>
+						2.52 + 1.008 = 3.528 \rightarrow 3.53.
+					</me>
+					I rounded to three digits since 2.52 has the lower precision of the two numbers being added.
+				</p>
+			</solution>
+			<solution><title>(b)</title>
+				<p>(b) 
+					<me>
+						3.01 \times 5 = 15.05 \rightarrow 15.1.
+					</me>
+					I rounded to three digits since 3.01 has the lower precision of the two numbers being multiplied. Number 5 is assumed to be exact, i.e., it's good to infinite number digits of zeros.
+				</p>
+			</solution>
+			<solution><title>(c)</title>
+				<p> (c) 
+					<me>
+						2.51/ \pi = 0.7989578 \rightarrow 0.799.
+					</me>
+					I rounded to three digits since 2.51 has the lower precision of the two numbers being multiplied. Number <m>\pi</m> is assumed to be exact.
+				</p>
+			</solution>
+			<solution><title>(d)</title>
+				<p> (d) 
+					<me>
+						\pi(1.5)^2 = \pi\times (1.5)^2 = 7.06858  \rightarrow  7.1.
+					</me>
+					I rounded to two digits since 1.5 has the lower precision of the two numbers being multiplied. Number <m>\pi</m> is assumed to be exact.
+				</p>
+			</solution>
+
+			<solution><title>(e)</title>
+				<p> (e) 
+					<me>
+						3.5^{1/3} = 1.518  \rightarrow 1.5.
+					</me>
+					I rounded to two digits since 3.5 has two digits. 
+				</p>
+			</solution>
+
+			<solution><title>(f)</title>
+				<p> (f) 
+					<me>
+						\sqrt{5.34} =  2.3108 \rightarrow 2.31.
+					</me>
+					I rounded to three digits since 5.34 has three digits. 
+				</p>
+			</solution>
+
+			<solution><title>(g)</title>
+				<p> (g) 
+					<me>
+						15.5\times(1.1)^{1/4} = 15.87  \rightarrow 1.6 \times 10^1\text{  or  } 16.0.
+					</me>
+					I rounded to two digits since 1.1, the number with the least number of significant digits in the express, has two digits. 
+				</p>
+			</solution>
+
+			<solution><title>(h)</title>
+				<p> (h) 
+					<me>
+						\pi^2 =  9.86960440108935...
+					</me>
+					The result here is of infinite precision since <m>\pi</m> is of infinite precision.
+				</p>
+			</solution>
+
+		</exercise>
+
+
+		<exercise xml:id="ex-Relative-Uncertainty-of-Your-Height"><title>Relative Uncertainty of Your Height</title>
+
+			<statement>
+				<p>
+					 During the day suppose your height ranges between <m>69\text{ in}</m> in the morning and <m>67\text{ in}</m> in the evening. Lets' report this as average height <m>68\text{ in}</m> and uncertainty <m>1 \text{ in}</m>. Find relative uncertainty of your height.
+				</p>
+			</statement>
+			<hint><p>We have absolute uncertianty.</p></hint>
+			<answer><p><m>1.5\%</m>.</p></answer>
+			<solution>
+				<p>
+					From the average value and absolute uncertainty, we get
+					<me>
+						\frac{\Delta h}{h} = \frac{1\,\text{in}}{68\,\text{in}} = 0.0147 \rightarrow 1.5 \times 10^{-2} = 1.5\%.
+					</me>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="ex-Relative-Uncertainty-of-a-Measuring-Tape"><title>Relative Uncertainty of a Measuring Tape</title>
+
+			<statement>
+				<p>
+					A measuring tape is used to measure a hallway. The result is found to be <m>25\text{ m}</m>, but you are sure that this reading may be off on either side by <m>5\text{ cm}</m>. What is the relative uncertainty of the measurement in percent notation?
+				</p>
+			</statement>
+			<hint><p>Use <m>L</m> and <m>\Delta L</m>. </p></hint>
+			<answer><p><m>20\%</m></p></answer>
+			<solution>
+				<p>
+					The measurement given is <m>25\,\text{m} \pm 5\,\text{m}</m>. Therefore, relative uncertainty will be
+					<me>
+						\frac{\Delta L}{L} = \frac{5\,\text{m}}{25\,\text{m}} = 0.20 \rightarrow 2.0 \times 10^{-1} = 20\%.
+					</me>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="ex-Avoiding-Speeding-Ticket-by-Using-Uncertainty"><title>Avoiding Speeding Ticket by Using Uncertainty</title>
+
+			<statement>
+				<p>
+					Suppose the manufacturer of speedometer of your car specifies that the reading has uncertainty of <m>5\%</m>. The speed limit posted on the road is <m>70\text{ mph}</m>. (a) If you drive at <m>75\text{ mph}</m>, by how much you could be above the speed limit? (b) At what speed on this meter that you could safely be below the speed limit?
+				</p>
+			</statement>
+			<hint><p>Work with the fraction rather than percentage notation for the relative uncertainty and pay attention the specific wordings of the questions.</p></hint>
+			<answer><p>(a) <m>1.2\,\text{mph}</m>, (b) <m>74.0\,\text{mph}</m></p></answer>
+			<solution><title>(a)</title>
+				<p>
+					The uncertainty <m>\Delta v/v = 5\%</m> in fraction notation means
+					<me>
+						\frac{\Delta v}{ v } = \frac{5}{100} = 0.05.
+					</me>
+					With <m>v = 75\, \text{mph}</m>, we get
+					<me>
+						\Delta v = 0.05\,v = 0.05 \times 75 = 3.75 \rightarrow 3.8\,\text{mph}.
+					</me>
+					You could be going at <m>75 - 3.8 = 71.2</m> mph. That means you could be above the posted speed limit by <m>1.2</m> mph.
+				</p>
+			</solution>
+			<solution><title>(b)</title>
+				<p>
+					Let <m>x</m> be the required speed. From (a) above, we see that we want
+					<me>
+						x - 0.05 x = 70.
+					</me>
+					Therefore,
+					<me>
+						x = 73.68 \rightarrow 74.0\,\text{mph}.
+					</me>
+				</p>
+			</solution>
+		</exercise>
+	</exercises>
+
+
+
+
+  
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,204 @@
+<section xml:id="Calirometry"><title> Calorimetry</title>
+
+	<p>
+		When two systems at different temperatures come in a thermal contact, energy is exchanged between them through heat and work.  The energy conservation says that if the two systems together are isolated from everything else, then their combined energy will remain the same, and any gain in the energy of one will be accompanied by loss of energy by the other.  Labeling the two systems as A and B we say that
+	</p>
+	<p>
+		If energy flow between the two systems are only through the mechanism of heat, we get a simple relation, called the <term>calometric equation</term>.
+		<men xml:id="eq-calorimetric-equation">
+			\text{Heat flow from A to B} + \text{Heat flow from B to A} = 0.
+		</men>
+		If heat flow is positive, we often say that the target system has <q> gained heat</q> and the receiving system has <q> lost heat</q>.  
+	</p>
+	<p>
+		A serious limitation of Eq. <xref ref="eq-calorimetric-equation"/> is the assumption that energy flow between A and B occur through only heat. One way to ensure this is to make sure the process is done in a rigid containers with negligible volume change, thus preventing energy transfer by work. 
+	</p>
+	<p>
+		A device using the principles of heat exchange in the absence of any work can be used to measure the heat released in a particular process.  Such a device is called a <term>calorimeter</term>, and the technique of measuring heat this way is called <term> calorimetry</term>.  We will illustrate the idea with examples.
+	</p>
+	<sidebyside widths="60% 5% 35%">
+		<p>
+			You can construct a simple calorimeter by using two cups, one with slightly larger diameter, both may be made from nonconducting material, such as styrofoam. You would place the smaller cup inside the larger one and seal the gap between them to prevent heat from escaping, and a cover with holes to access the inside cup, for stirring and temperature readings. Now, you can place materials A and B, corresponding to systems A and B, in the inside cup to conduct the calometric experiment.
+		</p>
+		<p></p>
+		<image source="./images/thermal-properties/simple-calorimeter.png"/>
+	</sidebyside>
+
+	<exercise xml:id="ex-Calorimetry-of-Mixing-Water-at-Different-Temperatures"><title> Calorimetry of Mixing Water at Different Temperatures </title>
+		<statement>
+			<p>
+				An insulated <m>20\text{-kg}</m> copper container contains <m>5\text{ kg}</m> water at <m>10^{\circ}\text{C}</m> and <m>1.0 \text{ atm}</m> pressure.  Two kg of water at <m>90^{\circ}\text{C}</m> is poured into the insulated container with water. What is the final temperature? 
+			</p>
+			<p>
+				Data: <m> c_\text{Cu} = 390\text{ J/kg.}^\circ\text{C}</m>, <m> c_{\text{H}_2\text{O}} = 4186\text{ J/kg.}^\circ\text{C}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Everything will come to the same temperature at equilibrium. Use calorimetric equation. </p> </hint>
+		<answer> <p>  <m>28^\circ\text{C}</m>. </p> </answer>
+		<solution> 
+			<p>
+				Let system A consist of the <m>20\text{-kg}</m> copper container together with <m>5\text{ kg}</m> water, and system B be <m>2\text{ kg}</m> water. At equilibrium, systems A and B reach the same temeprature. Let that temperature be <m>t_f</m> degrees Celsius.  
+			</p>
+			<p>
+				Since no phase change occurs the heat flow can be accounted for by using specific heat formula <m>Q=mc\Delta T</m>. The equation of heat flows gives
+				<me>
+					 20\times 390 \times (t_f - 10) + 5\times 4186\times (t_f - 10) + 2\times 4186\times(t_f - 90) = 0.
+				</me>
+				We can rearrange to get
+				<md>
+					<mrow> \dfrac{t_f - 10}{90-t_f} \amp = \dfrac{2\times 4186\times}{20\times 390 + 5\times 4186}, </mrow>
+					<mrow> \amp = 1.29.</mrow>
+				</md>
+				We can solve this equation for <m>t_f</m> to get
+				<me>
+					t_f = 28^\circ\text{C}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Calorimetry-of-Adding-Warm-Water-to-Low-Temperature-Ice"><title> Calorimetry of Adding Warm Water to Low Temperature Ice </title>
+		<statement>
+			<p>
+				An insulated <m>60\text{-kg}</m> Aluminum container has a <m>50\text{ kg}</m> ice block at temperature <m>-10^{\circ}\text{C}</m> and pressure <m>1.0\text{atm}</m>.  <m>2.0 \text{kg}</m> of warm water at <m>50^{\circ}\text{C}</m> is poured into the container and the lid is closed quickly so that heat loss is negligible.
+			</p>
+			<p>
+				Find the final state, i.e. the final temperature and the amounts of ice and water of the mixture in the Aluminum container.  
+			</p>
+			<p>
+				Data: <m>c_{\text{Al}} = 900\text{ J/kg.}^\circ\text{C}</m>, 
+				<m>c_{\text{Ice}} = 2,100\text{ J/kg.}^\circ\text{C}</m>, <m> c_{\text{H}_2\text{O}} = 4186\text{ J/kg.}^\circ\text{C}</m>,
+				<m> l_\text{ice/water} = 334,000\text{ J/kg}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> You need to explore various scenarios of the final temperature values: (a) <m>t_f = 0^\circ\text{C}</m>, (b) <m>t_f \gt 0^\circ\text{C}</m>, (c) <m>t_f \lt 0^\circ\text{C}</m>. Judicious choice will reduce work needed to solve this problem. </p> </hint>
+		<answer> <p> All ice at <m>-3.1^{\circ}\text{C}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Let system A be the (Aluminum container plus ice block) and B the <m>2.0 \text{kg}</m> of water.
+			</p>
+			<p>
+				Here, we do not know if the final temperature is below <m>0^\circ\text{C}</m> or above <m>0^\circ\text{C}</m> or right at <m>0^\circ\text{C}</m>.  So, there are three scenarios to check out.  Let <m>t_f</m> be the final temperature.
+			</p>
+			<ol>
+				<li> <m>t_f \lt 0^\circ\text{C}</m>:  The final temperature will go below <m>0^\circ\text{C}</m> if all of liquid water comes to <m>0^\circ\text{C}</m>, freezes, and then loses some more heat </li> 
+				<li> <m>t_f \gt 0^\circ\text{C}</m>: if ice and container come to <m>0^\circ\text{C}</m>, all ice melts, and then container and ice gain some more heat </li>
+				<li> <m>t_f = 0^\circ\text{C}</m>: if a fraction of ice melts. It is also possible that all ice melts but no more heat flows from water.</li>
+			</ol>
+			<p>
+				We first check out the <m>t_f = 0^\circ\text{C}</m> scenarios: 
+			</p>
+			<p> Scenario 1: 
+			</p>
+			<p>
+				Let <m>x</m> be the fraction of ice that melts at the equilibrium. That is, temperature of system A rises to  <m>0^\circ\text{C}</m> and then <m>50 x\text{ kg}</m> melts to reach equilibrium. The temperature of system B 
+				changes from <m>50^{\circ}\text{C}</m> to  <m>0^\circ\text{C}</m>. The calorimetric equation will be
+				<md>
+					<mrow> \amp \left[ (mc)_\text{Al} + (m_Ac)_{\text{H}_2\text{O}}\right](0- (-10))</mrow>
+					<mrow> \amp \ \ \ + (x m_A l)_{\text{H}_2\text{O}} </mrow>
+					<mrow> \amp \ \ \ + (m_B c)_{\text{H}_2\text{O}}( 0 - 50 ) = 0. </mrow>
+				</md>
+				Let's put in the numbers and see if we have a positive number for <m>x</m>.
+				<md>
+					<mrow> \amp \left[ 60\times 900 + 50\times 2,100\right]\times 10</mrow>
+					<mrow> \amp \ \ \ +  x \times 50 \times 334,000 </mrow>
+					<mrow> \amp \ \ \ -  2\times 4186 \times 50  = 0. </mrow>
+				</md>
+				This gives <m> x  = -0.07</m>, which is unphysical. So, this scnario does not work. But it tells us that energy from lowering the temperature of system B was not enough, even to raise the temperature of system A to <m>0^\circ\text{C}</m>.	How about after the lowering of the temperature, a fraction <m>y</m> of water in system B freezes, but the final temperature is still <m>0^\circ\text{C}</m>. Calorimetric equation for this case will be
+				<md>
+					<mrow> \amp \left[ (mc)_\text{Al} + (m_Ac)_{\text{H}_2\text{O}}\right](0- (-10))</mrow>
+					<mrow> \amp \ \ \ + (m_B c)_{\text{H}_2\text{O}}( 0 - 50 )  </mrow>
+					<mrow> \amp \ \ \ -(y m_B l)_{\text{H}_2\text{O}} = 0 </mrow>
+				</md>		
+				Let's put in the numbers and see if we have a positive number for <m>y</m>.
+				<md>
+					<mrow> \amp \left[ 60\times 900 + 50\times 2,100\right]\times 10</mrow>
+					<mrow> \amp \ \ \ -  2\times 4186 \times 50  </mrow>
+					<mrow> \amp \ \ \ - y \times 2 \times 334,000 = 0. </mrow>
+				</md>
+				This gives fraction value, <m>y=1.75</m>, another unphysical answer. This also suggests that we need much more water in system B to provide enough energy to raise the temperature of system A to zero degrees. 				  			
+			</p>
+			<p>
+				The above calculations suggest that the final temperature will be below zero degrees. All water of system B woud have frozen and gone below zero degrees. For this scenario, the calometric equation is
+				<md>
+					<mrow> \amp \left[ (mc)_\text{Al} + (m_Ac)_{\text{ice}}\right](t_f- (-10))</mrow>
+					<mrow> \amp \ \ \ + (m_B c)_{\text{H}_2\text{O}}( 0 - 50 )  </mrow>
+					<mrow> \amp \ \ \ -(m_B l)_{\text{H}_2\text{O}}   </mrow>
+					<mrow> \amp \ \ \ +(m_B c)_{\text{ice}}( t_f - 0 ) = 0 </mrow>
+				</md>
+				In numerical form,
+				<md>
+					<mrow> \amp \left[ 60\times 900 + 50\times 2,100\right]\times (t_f - (-10) )</mrow>
+					<mrow> \amp \ \ \ -  2\times 4186 \times 50  </mrow>
+					<mrow> \amp \ \ \ -  2 \times 334,000   </mrow>
+					<mrow> \amp \ \ \ +  2 \times 2100 \times t_f = 0. </mrow>
+				</md>
+				Solving for <m>t_f</m>, I got
+				<me>
+					t_f = -3.1^{\circ}\text{C}.
+				</me>
+				This makes sense in the context. 
+			</p>
+
+ 
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Calorimetry-of-Melting-of-Ice-in-a-Brass-Container"><title> Calorimetry of Melting of Ice in a Brass Container </title>
+		<statement>
+			<p>
+				A cube of ice from a freezer at <m>-10^{\circ}\text{C}</m> is placed in an insulated <m>5\text{ kg}</m> brass jar which is initially at <m>60^{\circ}\text{C}</m>.  After sometime has elapsed and the equilibrium has reached, it is found that the brass jar contains water at <m>+10^{\circ}\text{C}</m> and no ice.  Find the mass of the ice initially. 
+			</p>
+			<p>
+				Data: Specific heat of brass = <m>380\text{ J per kg per deg C}</m>, specific heat of ice = <m> 2000 \text{ J per kg per deg C}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Set up calometric equation.  </p> </hint>
+		<answer> <p><m>240\text{ g}</m></p> </answer>
+		<solution> 
+			<p>
+				Let <m>m_1</m> be the mass of the ice.  Let <m>c_0</m> be the specific heat of ice, <m>c_1</m> the specific heat of water, and <m>l_1</m> the latent heat of fusion of ice.  Let <m>c_2 </m>  denote the specific heat of copper. Let us also denote the initial temperatures of  ice <m>T_1</m>  and the initial temperature of brass container <m>T_2</m>.  Let <m>T</m> be the final temperature of the water and brass.
+				<md>
+					<mrow> \amp \text{The energy gained by ice =}</mrow>
+					<mrow> \amp \ \ \ \text{Energy to raise the temperature of ice from <m>T_1</m> to } 0^{\circ}\text{C}\  +</mrow>
+				 	<mrow> \amp \ \ \ \text{Energy to change the phase from ice to water at } 0^{\circ}\text{C}\  + </mrow>
+				  	<mrow> \amp \ \ \ \text{Energy to raise the temperature of water from } 0^{\circ}\text{C} \text{ to }T. </mrow>
+				</md>
+				This gives
+				<me>
+					\text{The energy gained by ice = } m_1 c_0 T_1 + m_1 l_1 + m_1 c_1 T.
+				</me>
+				The energy lost by the container will be from its decreasing temperature from <m>T_2</m> to <m>T</m>.
+				<me>
+					\text{The energy lost by brass = } m_2 c_2 (T_2-T).
+				</me>
+				The total energy of the two systems together is conserved.  Therefore,
+				<me>
+					-m_1 c_0 T_1 + m_1 l_1 + m_1 c_1 T = m_2 c_2 (T_2-T)
+				</me>
+				Solving for <m>m_1</m> we get
+				<me>
+					m_1 = \frac{m_2 c_2 (T_2-T)}{-c_0 T_1 + l_1 + c_1 T}
+				</me>
+				Let us list the known numerical values are
+				<md>
+					<mrow> m_2 \amp = 5\ \text{kg};\  T_1 = -10^{\circ}\text{C};</mrow>
+					<mrow>  T_2 \amp  = 60^{\circ}\text{C};\  T = 10^{\circ}\text{C};</mrow>
+					<mrow>  c_0 \amp = 2,000 \frac{\text{J}}{ \text{kg.} ^{\circ}\text{C}};\  c_1 = 4,180 \frac{\text{J}}{ \text{kg.} ^{\circ}\text{C}};\ </mrow>  
+					<mrow> c_2 \amp = 380 \frac{\text{J}}{ \text{kg.} ^{\circ}\text{C}};\  l_1 = 334  \frac{\text{kJ}}{ \text{kg.}}.</mrow>
+				</md>
+				With these values we find that <m>m_1 = 240\text{ g}</m>.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	
+ 
+
+</section>

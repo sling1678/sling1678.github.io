@@ -1,0 +1,410 @@
+<section xml:id="Archimedes-Principle"><title> Archimedes' Principle</title>
+	<introduction>
+		<p>
+			Archimedes's principle refers to the <term> upward force of buoyancy</term> that results when a body is submerged in a fluid, whether partially or wholly. We will find that the main reason for buoyancy is the difference in pressure at different depths. Due to buoyancy, an object appear lighter when submerged. The difference of actual weight of a body and the buoyancy force is called the <term> apparent weight</term> of the body.
+		</p>
+		<p>
+			Let's look at a rectangular block fully submerged in water as in <xref ref="fig-archimedes-principle-illustration"/>. The pressure from the sides exert forces on the block - they cancel each other out. But, since the pressure at the top surface is less than the pressure at the bottom surface, the forces from those pressures will have a left over upward pointing net force. This is the buoyancy force.
+		</p>	
+		<figure xml:id="fig-archimedes-principle-illustration">
+			<caption>
+				The buoyancy force on the block occurs due to pressure increasing with depth. The net upward force is the buoyancy force, whose magnitude would be <m> F_b = p_2\ A - p_1\, A = (p_2-p_1)A</m>. The horizontal forces, <m>p_3A,\ p_4A,\ p_5A,\ p_6A</m> are balanced - they are not involved in buoyancy.
+			</caption>
+			<image source="./images/static-fluid/archimedes-principle-illustration.png" width="50%"/>
+		</figure>
+
+		<p>
+			The buoyancy force is pointed up and has the magnitude
+			<me>
+				F_b = p_2\ A - p_1\, A = (p_2-p_1)A. 
+			</me>
+			Writing the pressure at a point in the fluid as
+			<me>
+				p = p_0 + \rho\,g\,h,
+			</me>
+			where <m>p_0</m> is the atmospheric pressure, we can see that 
+			<me>
+				p_2-p_1 = \rho_w g h.
+			</me>
+			where <m> \rho_w</m> is the density of water and <m> h </m> the height of the block. Therefore, we can write the force of buoyancy as 
+			<me>
+				F_b =  (p_2-p_1)A = \rho_w g h A =  \rho_w g V, 
+			</me>
+			where <m>V</m> is the volume of the block. Since the block is fully submerged, <m> V</m> is also the volume of the  <term>fluid</term> that was displaced by the block. We see that <m> \rho_w V</m> is the mass of the water corresponding to the volume of water that was displaced by the submerged block. Therefore, we write the buoyancy force alternately as
+			<men>
+				\vec F_b = \text{Weight of displaced fluid, pointed up}.
+			</men>
+			This is the statement of the <term> Archimedes' principle</term>. We should that this works also for the partially submerged block. When the block is partially submerged, the volume will not be the volume of the entire block, but of only the part that is actually submerged.
+
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p> 
+				Figure to the right shows a partially submerged block of full height <m> h</m>, of which only the height <m> h_s</m> is submerged. Forces from the sides again cancel out, and the upward buiyancy force is
+				<md>
+					<mrow> F_b \amp = (p_2-p_1)A = \rho_w g h_s A, </mrow>
+					<mrow> \amp = W_{\text{displaced fluid}}.</mrow>
+				</md>
+			</p>
+			<p></p>
+			<image source="./images/static-fluid/archimedes-principle-illustration-partially-submerged.png" />
+		</sidebyside>
+		<p>
+
+			Now, <m> Ah_s</m> is not the volume of the block, but only the part that is submerged. That is the part that equals the volume of fluid that was displaced. Therefore, once again, the buoyancy is the weight of the displaced fluid.
+		</p>
+ 		
+	</introduction>
+
+
+	<exercise xml:id="ex-Pushing-Down-a-Ball-Filled-with-Air-into-Water"><title> Pushing Down a Ball Filled with Air into Water</title>
+		<statement>
+			<p>
+				A plastic spherical ball of negligible mass and filled with air has a radius of <m> 10\text{ cm}</m>.  A boy pushes the ball in water till quarter of its volume is submerged.  How much force the boy must apply to keep the ball so submerged?  Assume negligible change in the volume of the ball. 
+			</p>
+
+		</statement>
+		<hint> <p> Balance the required force by the force of buoyancy. When computing buoyancy, only the volume of the displaced fluid matters.  </p> </hint>
+		<answer> <p> <m>10.3\text{ N}</m>, down. </p> </answer>
+		<solution>
+			<sidebyside widths="65% 5% 30%"> 
+				<p>
+					Let <m>F</m> be the force by the boy. This force on the ball balances the buoyancy force on the ball. We ignore the weight of the ball.
+					<me>
+						F = F_b,
+					</me>
+					with
+					<me>
+						F_b = \dfrac{V}{4}\,\rho_w\, g.
+					</me>
+				</p>
+				<p></p>
+				<image source="./images/static-fluid/boy-pushing-baloon-in-water.png"/>
+			</sidebyside>
+
+			<p>
+				Therefore,we have
+				<md>
+					<mrow> F \amp = \dfrac{1}{4}\,\dfrac{4}{3} \pi R^3 \rho_w\, g, </mrow>
+					<mrow>  \amp = \dfrac{1}{3} \pi\times 0.1^3 \times 10^3\times 9.81  = 10.3\text{ N}.</mrow>
+				</md>
+				The direction of this force is down.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Density-from-Apparenet-Weight-of-Fully-Submerged-Body"><title> Density from Apparenet Weight of Fully Submerged Body</title>
+		<statement>
+			<p>
+				We tie a block of a material of density higher than the density of water to a thin thread and measure the tension in the thread as the block is lowered in water. When the block is in air, the tension is <m> 50\text{ N} </m> and when fully submerged, the tension is <m> 40\text{ N} </m>. What is the density of the material if the density of water is <m> 1000\text{ kg/m}^3</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m>  W' = W - F_b</m> and <m> V = \dfrac{W}{\rho g}</m>. </p> </hint>
+		<answer> <p>  <m>5000\text{ kg/m}^3 </m> </p> </answer>
+		<solution> 
+
+			<p>
+				Let <m> W </m> be the tension in air, and <m> W'</m> the tension when fully submerged in water. Let <m> V </m> be the volume of the block, <m> \rho_0</m> the density of water, and <m> \rho</m> the density of the block.
+			</p>
+			<p> From the two experiments we can write the following relations.
+				<md>
+					<mrow>\amp W = V\rho g, </mrow>
+					<mrow>\amp W' = W - F_b, </mrow>
+					<mrow>\amp F_b = V\rho_0 g. </mrow>
+				</md>
+				The volume of the block can be written as
+				<me>
+					V = \dfrac{W}{\rho g}
+				</me>
+				Therefore,
+				<me>
+					W' = \dfrac{W}{\rho} \left( \rho  - \rho_0 \right).
+				</me>
+				Therefore,
+				<me>
+					1- \dfrac{\rho_0}{\rho} = \dfrac{W'}{W},
+				</me>
+				which gives
+				<me>
+					\rho = \dfrac{W}{W-W'}\, \rho_0.
+				</me>
+			</p>
+			<p>
+				Now, putting in the numbers we get
+				<me>
+					\rho = \dfrac{50}{10}\times 1000 = 5000\text{ kg/m}^3.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="archimedes-floating-steel-container-in-water"><title> Floating Steel Container in Water </title>
+		<statement>
+
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					<p>
+						A <m>1\text{-mm}</m> thick steel sheet is made into a cylindrical cup of outer radius <m>10\text{ cm}</m> and height <m>30\text{ cm}</m> with one end sealed and the other end open.  It is then placed in water with the closed end first.  How much of the cup stays above water?
+					</p>
+					<p>
+						Data: density of water = <m>1.0\text{ g/cm}^3</m>, density of steel = <m>8.0\text{ g/cm}^3</m>.
+					</p>
+				</p>
+				<p></p>
+				<image source="./images/static-fluid/archimedes-floating-steel-cup.png" />
+			</sidebyside>
+
+
+		</statement>
+		<hint> <p>  Balance buoyancy and weight. </p> </hint>
+		<answer> <p> <m>24.4\text{ cm}.</m>  </p> </answer>
+		<solution> 
+			<sidebyside widths="45% 10% 40% 5%">
+				<p>Let <m>h</m> be the height of the cylinder above water and <m> H</m> its total height. Let <m> r_\text{out}</m> be the outer radius, <m> r_\text{in}</m> the inner radius, and <m> t </m> the thickness. Let us denote the density of steel by <m>\rho</m> ad the density of water by <m>\rho_0</m>. 
+				</p>
+				<p></p>
+				<image source="./images/static-fluid/archimedes-floating-steel-cup-solution.png" />
+				<p></p>
+			</sidebyside>				
+			<p>
+				The force of buoyancy on the container will balance the weight of the container since the acceleration of the container is zero. To find an expression for the weight of the container, we figure out the volume of the material used to make the container by adding the volume of the side and the bottom.
+				<me>
+					V = \left( \pi r_\text{out}^2 -   \pi r_\text{in}^2 \right)\, H  + \pi r_\text{in}^2 t.
+				</me>
+				Therefore, weight of the container is
+				<men xml:id="eq-archimedes-floating-steel-cup-weight">
+					W = \rho V g.
+				</men>
+			</p>
+			<p>
+				Recall the magnitude of the buoyancy force is equal to the weight of the displaced fluid. Since <m>H-h</m> of the height is under water,  this gives the following for the magnitude of the buoyancy force.
+				<men>
+					F_b = \rho_0\, \left[ \pi r_\text{out}^2 (H-h)\right]\, g. 
+				</men>
+ 
+			</p>
+			<p>
+				Equating <m>W</m> with <m>F_b</m> gives the equation,
+				<me>
+					\rho_0\, \left[\pi r_\text{out}^2 (H-h)\right]\, g = W,
+				</me>
+				which can be solved for <m>h</m>
+				<me>
+					h = \dfrac{W}{ \rho_0 \pi r_\text{out}^2 g}.
+				</me>
+				Putting in the full expression for <m>W</m> from Eq. <xref ref="eq-archimedes-floating-steel-cup-weight"/>, and setting <m>r_\text{out} = R = r_\text{in}+t</m>
+				<me>
+					H-h = \dfrac{\rho}{\rho_0} \left[ (1 - x) H + x t  \right],
+				</me>
+				where
+				<me>
+					x = \left( 1- \dfrac{t}{R}\right)^2.
+				</me>
+			</p>
+			<p>
+				Now, we use the numerical values in <m>\text{cm}</m> units for length, we get
+				<md>
+					<mrow> x \amp= \left( 1- \dfrac{0.1}{10}\right)^2 = 0.99^2 = 0.9801. </mrow>
+				</md>
+				Therefore, we get
+				<md>
+					<mrow> H-h \amp = \dfrac{8.0}{1.0} \left[ (1 - 0.9801) \times 30 + 0.9801\times 0.1 \right]  </mrow>
+					<mrow> \amp = 5.6\text{ cm}.  </mrow>
+				</md>
+				Hence,
+				<md>
+					<mrow> h \amp =  H - 5.6\text{ cm} = 24.4\text{ cm}.  </mrow>
+				</md>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Apparent-Weight-of-a-Brass-Block-Half-Submerged-in-Water"><title> Apparent Weight of a Brass Block Half Submerged in Water </title>
+		<statement>
+			<sidebyside widths="55% 10% 35%">
+				<p>
+					<p>
+						A block of brass of mass <m>800\text{ grams}</m> is attached to a string and hung from a support.  The block is then placed so that half of the block is submerged in the water.  What is the tension in the string?  
+					</p>
+					<p>
+						Data: density of brass = <m> 8.6\text{ g/cc}</m>, density of water = <m> 1.0\text{ g/cc}</m>.
+					</p>
+				</p>
+				<p></p>
+				<image source="./images/static-fluid/archimedes-brass-half-submerged.png"/>
+			</sidebyside>
+		</statement>
+		<hint> <p> Balance tension, buoyancy, and weight.  </p> </hint>
+		<answer> <p> <m> 7.4\text{ N}.</m>  </p> </answer>
+		<solution> 
+			<sidebyside widths="55% 10% 35%">
+				<p>
+					Let <m> \rho </m> denote the density of brass and <m> \rho_0 </m> the density of water. There are three forces on the block: the weight <m> Mg</m> of the block pointed down, the tension <m>T</m> in the string pointed up, and the buoyancy <m> F_B </m> pointed up.  The forces are in balance.
+
+					<me>
+						F_B + T = Mg.
+					</me>
+				</p>
+				<p></p>
+				<image source="./images/static-fluid/archimedes-brass-half-submerged-solution.png"/>
+			</sidebyside>
+
+
+			<p>
+
+				Half of the volume <m> V</m> of the block is in water, which we will write as <m> V = M/\rho</m>.  Therefore, the buoyancy is
+				<me>
+					F_B = \frac{1}{2}V \rho_0 g =  \frac{1}{2} \frac{M}{\rho} \rho_0 g.
+				</me>
+				The two equations give the magnitude of the tension in the string to be
+				<me>
+					T = \left[ 1 -  \frac{1}{2} \frac{\rho_0}{\rho}  \right]\ M g.
+				</me>
+				Now, putting in the numbers we get
+				<md>
+					<mrow> T \amp =\left[ 1 -  \frac{1}{2} \times \dfrac{1.0\ \text{g/cc}}{ 8.6\ \text{g/cc}}  \right]\ 0.8\ \text{kg} \times 9.81 \text{m/s}^2 </mrow>
+					<mrow> \amp  = 7.38\text{ N}. </mrow>
+				</md>
+			</p>
+
+			
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Thickness-of-a-Closed-Cubical-Aluminum-Box-Floats-in-Water"><title> Thickness of a Closed Cubical Aluminum Box Floats in Water</title>
+		<statement>
+			<sidebyside widths="65% 35%">
+				<p>
+					<p>
+						A closed cubical box of side <m> a = 16\text{ cm}</m>  made of aluminum sheet of unknown thickness <m>t</m>  floats in water with <m>\dfrac{1}{4}</m> of it above the surface of water.  Find the thickness of the sheet.
+					</p>
+					<p>
+						Data: Density of aluminum = <m>2.7\text{ g/cc} </m>, dnesity of water = <m> 1.0\text{ g/cc}</m>.
+					</p>
+				</p>
+				<image source="./images/static-fluid/archimeds-aluminum-cube-find-thickness.png"/>
+			</sidebyside>
+
+
+
+		</statement>
+		<hint> <p> Balance weight by the buoyancy.  </p> </hint>
+		<answer> <p>  <m>0.256\text{ cm}. </m> </p> </answer>
+		<solution> 
+			<p>
+
+				Let <m>\rho</m> denote the density of aluminum and <m>\rho_0</m> the density of water. Let us denote the fraction of the block submerged by <m>f</m>, which has the value <m>\frac{3}{4}a = 12\text{ cm}</m> here. Balancing the weight of the box by the buoyancy force gives
+				<men xml:id="eq-aluminum-cube-find-thickness-fb-eq-wt">
+					Mg = f a^3 \rho_0 g,
+				</men>
+				where
+				<me>
+					M = (4 a^2 t + 2 (a-2t)^2 t) \rho.
+				</me>
+				Let us define a simple variable to solve for.
+				<me>
+					x =\frac{t}{a},
+				</me>
+				and expanding Eq. <xref ref="eq-aluminum-cube-find-thickness-fb-eq-wt" /> to find
+				<me>
+					x^3 - x^2 + 0.75 x = \frac{f\rho_0}{8 \rho}.
+				</me>
+				Putting in the numerical values given we find that we need to solve the following cubic equation.
+				<me>
+					x^3 - x^2 + 0.75 x - 0.01157 = 0.
+				</me>
+				where I have kept the extra digits.  The final answer will be rounded to two significant digits. I put this equation in Mathematica and found that there is only one real value, the other two solutions are complex numbers.
+				<me>
+					x = 0.01575.
+				</me>
+				Rounding off to two significant digits we find the thickness in terms of the side of the cube to be
+				<me>
+					t = 0.016\; a = 0.016\times 16\text{ cm} = 0.256\text{ cm}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+	<exercise xml:id="ex-Work-for-Pushing-a-Wooden-Block-Under-Water"><title> (Calculus) Work for Pushing a Wooden Block Under Water </title>
+		<statement>
+			<p>
+				A cubic wooden block (density <m>0.9</m>) of side <m>5\text{ cm}</m> is placed in water.  
+			</p>
+			<p>
+				(a) How much of the block is under water?  
+			</p>
+			<p>
+				(b) (Calculus) The block is then pushed down by a force which balances the increase in the buoyancy force at each instant.  What is the total work needed to fully submerge the block?  
+			</p>
+
+		</statement>
+		<hint> <p> (a) Balance weight by buoyancy force, (b) You will find that the force when an amount <m>y</m> is pushed in, depends on <m>y</m>. You can integrate over <m>y</m> to get the force - similar to the way you get the work by the spring force.   </p> </hint>
+		<answer> <p> (a) <m>4.5\text{ cm}</m>, (b) <m>0.003\text{ J}</m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				 (a)  Let <m>a</m> denote the side of the cube, <m>\rho</m> the density of the wood and <m>\rho_0</m> the density of water. Let <m>h_0</m> be the height submerged when freely floating.  Balancing the buyoancy force with the weight of the block gives
+				<me>
+					(a^2 h_0) \rho_0 g = a^3 \rho g.
+				</me>
+				Solving for <m>h_0</m> we get
+				<me>
+					h_0 = \left(  \dfrac{ \rho}{\rho_0} \right) a.
+				</me>
+				Putting in the numbers given we find the height submerged is
+				<md>
+					<mrow> h_0 \amp = \left( \dfrac{ 0.9\ \text{g/cc}}{1.0\ \text{g/cc}} \right) 5\ \text{cm}</mrow>
+					<mrow> \amp  = 4.5\ \text{cm}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b) The force needed to push in the block depends on the level of submersion.  
+			</p>
+
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					For instance, suppose you choose a coordinate system such that <m>y</m> axis is pointed up and  the center of the block is at the origin when the block is submerged by <m>h_0</m>, then the force to push in will depend on the <m>y</m>-coordinate of the center of the block.  The <m>y</m>-component of the force applied will be
+					<me> 
+						F_y = - (a^2 y) \rho_0 g.
+					</me>
+				</p>
+				<p></p>
+				<image source="./images/static-fluid/wooden-block-pushed-down-solution-b.png"/>
+			</sidebyside>
+
+			The change in the <m> y</m>-coordinate to fully submerge the block  will be
+			<me>
+				\Delta y = -(a-h_0).
+			</me>
+			The work done by the applied force to fully submerge the block can be obtained by the area under the curve or integral. Doing the integral for force that varies with displacement gives
+			<md>
+			 	<mrow> W \amp = \int _0^{\Delta y} F_y dy = \frac{1}{2}  a^2  \rho_0 g (\Delta y)^2</mrow>
+			 	<mrow> \amp = \frac{1}{2}  a^2 (a-h_0)^2 \rho_0 g. </mrow>
+			 </md>
+			Putting in the numbers we find
+			<md>
+				<mrow> W \amp =  \frac{1}{2} \times 0.05^2 (0.05-0.045)^2 \times 1000 \times 9.81 </mrow>
+				<mrow> \amp =3.07\times 10^{-4}\ \text{J}. </mrow>
+			</md>
+
+
+
+
+		</solution>
+	
+	</exercise>
+
+
+ 
+
+
+</section>

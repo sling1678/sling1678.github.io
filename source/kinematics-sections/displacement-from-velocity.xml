@@ -1,0 +1,249 @@
+<section xml:id="kinematics-Displacement-from-Velocity"> <title> Displacement from Velocity</title><idx><h>Displacement</h><h>From Velocity</h></idx>
+	<introduction>
+		<p>
+			Recall that velocity <m>\vec v</m> is derivative of position <m>\vec r</m>. To emphasize that this definition is true at each instant <m>t</m>, let us write each vector with its dependence on time <m>t</m>.
+			<men>
+				\vec v(t) = \frac{d\vec r(t)}{dt}.
+			</men>
+			Now, we ask how can we get dispacement, i.e., change in position in an interval <m>t=t_i</m> to <m>t=t_f</m>? From Calculus, this is obtained by integrating both sides of this equation from <m>t=t_i</m> to <m>t=t_f</m>. Formally, the steps of calculation would go as follows.
+
+			<men>
+				\int_{t_i}^{t_f}\vec v(t) dt = \int_{t_i}^{t_f} \frac{d\vec r(t)}{dt} dt.
+			</men>
+			The canceling <m>dt</m> on the right side, gives integral over <m>d\vec r</m>, which leads to just change in position when integrated.
+			<men>
+				\int_{t_i}^{t_f} \frac{d\vec r(t)}{dt} dt = \int_{\vec r_i}^{\vec r_f} \frac{d\vec r(t)} = \vec r_f - \vec r_i.
+			</men>
+			That is, displacment in the time interval is given by the integration of the velocity vector over that interval.
+			<men xml:id="displacment-equals-integration-of-the-velocity-vector">
+				\vec r_f - \vec r_i = \int_{t_i}^{t_f}\vec v(t) dt.
+			</men>
+		</p>
+		<p>
+			The components of this equation are related to integrating the components of the velocity.
+
+			<mdn>
+				<mrow xml:id="dx-equals-integration-of-the-vx">\amp x_f - x_i = \int_{t_i}^{t_f}v_x(t) dt </mrow>
+				<mrow>\amp y_f - y_i = \int_{t_i}^{t_f}v_y(t) dt </mrow>
+				<mrow>\amp z_f - z_i = \int_{t_i}^{t_f}v_z(t) dt </mrow>
+			</mdn>
+			In this form, since we are dealing with integration over ordinary functions, and nor a vector fuction of <m>t</m>, we can interpret the right sides of these component equations in terms of area under the curve or area above the curve in a plot of the correponding velocity component.
+		</p>
+		<p>
+			That is, if you plot <m>v_x</m> versus <m>t</m>, the right side of equation <xref ref="dx-equals-integration-of-the-vx"/> can be evaluated by the integration below the plot if <m>v_x</m> is positive in the time range and above the plot if <m>v_x</m> is negative with area now negative. The sum of all positive and negative areas in the interval will give <m>\Delta x \equiv x_f - x_i</m>. Similarly, for <m>\Delta y</m> and <m>\Delta z</m>.
+		</p>
+	</introduction>
+
+	<example><title>Area Under the Velocity versus Time Plot</title>
+		<p>
+			To interpret Eqs. <xref ref="dx-equals-integration-of-the-vx"/> , let us look at a numerical example where <m>v_x</m> is constant. Then, integration gives
+			<me>
+				\int_{t_i}^{t_f}v_x(t) dt = v_x \int_{t_i}^{t_f} dt = v_x( t_f -  t_i ) = v_x\, \Delta t.
+			</me>
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				Let <m>v_{x} = 5\text{ m/s}</m> and <m>\Delta t = 2\text{ s}</m>. Suppose we plot <m> v_x </m> versus <m>t</m>, then we will find that <m>v_{x}\times {\Delta t} = 10 \text{ m}</m> gives us the area under the <m> v_x </m> versus <m>t</m> plot, which is equal to change in <m>x</m>, <m>\Delta x = 5\text{ m/s} \times 2\text{ s} = 10 \text{ m}</m>.
+			</p>
+			<p></p>
+			<image source="./images/two-dim-motion/displacement-from-area-under-curve-numerical.png"/>
+		</sidebyside>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				If velocity <m>v_x</m> is negative during the interval, it would mean that object is moving towards negative <m>x</m> axis. This shows up as negative area <alert> above </alert> the plot. Therefore, the <m>x</m> displacement will be <m> \Delta x = -5\text{ m/s} \times 2\text{ s} = - 10 \text{ m}</m>.
+			</p>
+			<p></p>
+			<image source="./images/two-dim-motion/displacement-from-area-under-curve-numerical-negative.png"/>
+		</sidebyside>		
+	</example>
+
+
+	<!-- <subsection><title> Area Under the Velocity versus Time Plot </title>
+		<p>
+			Recall the definition of average <m>x</m> velocity, <m>v_{\text{av},x}</m>.
+			<me>
+				v_{\text{av},x} = \dfrac{\Delta x}{\Delta t}.
+			</me>
+			Let us solve this for <m>\Delta x</m>, the displacement in <m>x</m>.
+			<me>
+				\Delta x = v_{\text{av},x}\times {\Delta t}.
+			</me>
+		</p>
+
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				To interpret Eqs. <xref ref="dx-equals-integration-of-the-vx"/> , let us look at a numerical example. Let <m>v_{x} = 5\text{ m/s}</m> (a constant) and <m>\Delta t = 2\text{ s}</m>. Suppose we plot <m> v_x </m> versus <m>t</m>, then we will find that <m>v_{x}\times {\Delta t} = 10 \text{ m}</m> gives us the area under the <m> v_x </m> versus <m>t</m> plot, which is equal to change in <m>x</m>, <m>\Delta x = 5\text{ m/s} \times 2\text{ s} = 10 \text{ m}</m>.
+			</p>
+			<p></p>
+			<image source="./images/two-dim-motion/displacement-from-area-under-curve-numerical.png"/>
+		</sidebyside>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				If velocity <m>v_x</m> is negative during the interval, it would mean that object is moving towards negative <m>x</m> axis. This shows up as negative area <alert> above </alert> the plot. Therefore, the <m>x</m> displacement will be <m> \Delta x = -5\text{ m/s} \times 2\text{ s} = - 10 \text{ m}</m>.
+			</p>
+			<p></p>
+			<image source="./images/two-dim-motion/displacement-from-area-under-curve-numerical-negative.png"/>
+		</sidebyside>
+		
+		<p>
+			In general, we will have three plots, one for <m>v_x</m>, one for <m>v_y</m>, and one for <m>v_z</m>. We then compute <m> \Delta x</m>, <m> \Delta y</m>, and <m> \Delta z</m>, from the net area under the respective plots. Sometimes, we may find that postive areas cancel the negative areas. In that case the displacement will be zero. After we get <m> \Delta x</m>, <m> \Delta y</m>, and <m> \Delta z</m>, we can use displacement vector ad we wish.
+			<me>
+				\Delta \vec r = (\Delta x,\ \Delta y,\ \Delta z ), \text{ or, } \Delta x\, \hat i  + \Delta y\, \hat j + \Delta z\, \hat k.
+			</me>
+			Numerical illustration of area-under-the-curve and area-above-the-curve used average velocity, whose area is rectangular in shape. For varying velocities, we will encounter areas in the shape of a triangle. The formula for a triangle of height <m>h</m> and base <m>b</m> is
+			<me>
+				A_\triangle = \dfrac{1}{2} b h.
+			</me>
+		</p>
+ 
+	</subsection> -->
+
+	<example xml:id="Displacement-from-Velocity-Areas-Under-Curve"><title> Displacement from Velocity - Areas Under Curve</title>
+		<statement>
+			<p>
+				<xref ref="fig-checkpoint-dx-from-vx"/> shows a <m> v_x </m> versus <m> t</m> plot. Find the displacements in the following intervals, given in seconds, (a) <m>(0,\ 4)</m>, (b) <m>(4,\ 6)</m>, (c) <m>(6,\ 8)</m>, (d) <m>(8,\ 10)</m>, and (e) <m>(0,\ 10)</m>.		
+			</p>
+			<figure xml:id="fig-checkpoint-dx-from-vx">
+				<caption>
+					Figure for <xref ref="Displacement-from-Velocity-Areas-Under-Curve" />
+				</caption>
+				<image source="./images/two-dim-motion/checkpoint-dx-from-vx.png" width="70%"/>
+			</figure>
+
+		</statement>
+		<!-- <hint> <p> Compute the areas under the curve, which are just lines here.  That makes shapes of the area rectangles and triangles.</p> </hint> -->
+		<answer> <p>  (a) <m>8\text{ m}</m>, (b) <m>2\text{ m}</m>, (c) <m>-2\text{ m}</m>, (d) <m>-4\text{ m}</m>, (e) <m> 4\text{ m}</m>. </p> </answer>
+		<solution> <title> a </title>
+			<sidebyside widths="50% 50%">
+			<p>
+				Note that the <m> t </m> axis is the <m> v_x = 0 </m> line. Therefore, we need the area of the shaded region in the figure on the right. This gives 
+
+			<md> <mrow> \Delta x \amp = 4\text{ s} \times 2\text{ m/s}</mrow>
+			<mrow> \amp = 8\text{ m}.</mrow></md>
+			</p>
+			<image source="./images/two-dim-motion/checkpoint-dx-from-vx-a.png" width="70%"/>
+		 </sidebyside>
+
+		</solution>
+
+		<solution> <title> b </title>
+			<sidebyside widths="50% 50%">
+			<p>
+				Note that the <m> t </m> axis is the <m> v_x = 0 </m> line. Therefore, we need the area of the shaded region in the figure on the right. This gives 
+				<me> 
+					\Delta x = \dfrac{1}{2}\times 2\text{ s}  \times 2\text{ m/s} = 2\text{ m}.
+				</me>
+
+			</p>
+			<image source="./images/two-dim-motion/checkpoint-dx-from-vx-b.png" width="70%"/>
+		 </sidebyside>
+
+		</solution>
+
+		<solution> <title> c </title>
+			<sidebyside widths="50% 50%">
+			<p>
+				Note that the <m> t </m> axis is the <m> v_x = 0 </m> line. Therefore, we need the area of the shaded region in the figure on the right. This area will be negative as is also clear from the direction motion - it is moving to the left. This gives 
+				<md> 
+					<mrow> \Delta x \amp = \dfrac{1}{2}\times 2\text{ s} \times (-2\text{ m/s})</mrow>
+					<mrow> \amp = -2\text{ m}.</mrow>
+				</md>
+
+			</p>
+			<image source="./images/two-dim-motion/checkpoint-dx-from-vx-c.png" width="70%"/>
+		 </sidebyside>
+
+		</solution>
+
+		<solution> <title> d </title>
+			<sidebyside widths="50% 50%">
+			<p>
+				Note that the <m> t </m> axis is the <m> v_x = 0 </m> line. Therefore, we need the area of the shaded region in the figure on the right. This area will be negative as is also clear from the direction motion - it is moving to the left. This gives 
+			<md> <mrow> \Delta x \amp = 2\text{ s} \times (-2\text{ m/s})</mrow>
+			<mrow> \amp = -4\text{ m}.</mrow></md>
+
+			</p>
+			<image source="./images/two-dim-motion/checkpoint-dx-from-vx-d.png" width="70%"/>
+		 </sidebyside>
+
+		</solution>
+		<solution> <title> e </title>
+			<p>
+				
+				Adding up all the areas we get
+				<me>
+					\Delta x(0\rightarrow 10\text{ s}) = 8\text{ m} + 2\text{ m} + (-2)\text{ m} + (-4)\text{ m} = 4\text{ m}.
+				</me>
+			</p>
+
+		</solution>		
+	</example>
+
+
+
+	<!-- <subsection><title>(Calculus) Integrating the Velocity </title>
+	
+		<p>
+			Suppose you record the velocity of your car over some period of time. Can you find your final position if you knew where you were at the start of the period?
+		</p>
+		<p>
+			This question is answerable by using Calculus. In Calculus, there is an inverse relation between derivative and integration.
+			<me>
+				\dfrac{df}{dx} = g \Longleftrightarrow f(x) - f(x_0) = \int_{x_0}^{x}\, g(x)\, dx.
+			</me>
+		</p>
+		<p> 
+			We can apply this to the <m> x </m> component of the motion to obtain the following for a motion between <m> t=t_i </m> and <m> t=t_f</m>.
+			<men xml:id="eq-displacement-from-velocity-x-fundamental">
+				\dfrac{dx}{dt} = v_x \Longleftrightarrow x_f - x_i = \int_{t_i}^{t_f}\, v_x(t)\, dt.
+			</men>			
+			Applying this similarly to <m> y </m> and <m> z </m> motions gives us displacements in those directions as well.
+		</p>
+		<p>
+			The integral in Eq. <xref ref="eq-displacement-from-velocity-x-fundamental" /> is simple if <m> v_x</m> is constant.
+			<men xml:id="eq-displacement-from-velocity-x-constant">
+				x_f - x_i = v_x \times (t_f - t_i).\ \ (\text{constant }v_x)
+			</men>
+			For non-constant <m> v_x </m>, we can do the integral analytically if function <m> v_x(t) </m> is simple enough. Otherwise, there are numerical methods for computing the integral. One such numerical method goes by the name, <q> area under the curve</q>, which is described below. 	
+		</p>
+	</subsection> -->
+
+	<example xml:id="Displacement-from-Velocity-Calculus"><title> (Calculus) Displacement from Velocity </title>
+		<statement>
+			<p>
+				A particle is moving in a circle with its velocity components changing with time as given by (in units of m/s with <m> t</m> in units of seconds.)
+				<me> v_x = 5.0\,\cos(2\pi t),\ \ \ v_y = 5.0\,\sin(2\pi t)</me>. (a) What are the components of the displacement vector during the interval from <m> t=0.25\text{ s} </m> to <m> t=0.50\text{ s} </m>. (b) What are the magnitude and direction of the displacement?
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Integrate velocity components. </p> </hint> -->
+		<answer> <p> (a) <m> (-0.80\text{ m},\ 0.80\text{ m} ) </m> (b) <m> 1.13\text{ m} </m> in  <m> 45^{\circ} </m> direction from the negative <m> x </m> axis into the second quadrant. </p> </answer>
+		<solution><title>a</title> 
+			<p>
+				The components will be obtained by taking the integral.
+				<md>
+					<mrow> \Delta x \amp = \int_{0.25}^{0.5}\, 5.0\,\cos(2\pi t)\, dt, </mrow>
+					<mrow> \amp = \dfrac{5.0}{2\pi}\sin(2\pi t)|_{0.25}^{0.5} </mrow>
+					<mrow> \amp =  -0.80\text{ m}. </mrow>
+				</md>
+				<md>
+					<mrow> \Delta y \amp = \int_{0.25}^{0.5}\, 5.0\,\sin(2\pi t)\, dt, </mrow>
+					<mrow> \amp = -\dfrac{5.0}{2\pi}\cos(2\pi t)|_{0.25}^{0.5} </mrow>
+					<mrow> \amp =  0.80\text{ m}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p> 
+				Therefore, the magnitude and angle will be:
+				<md>
+					<mrow>  \Delta r = 0.8\times \sqrt{2} = 1.13\text{ m},</mrow>
+					<mrow>   \theta = \tan^{-1}(-1) = - 45^{\circ},</mrow>
+				</md>
+				which we interpret to be clockwise angle of <m> 45^{\circ} </m> from the negative <m> x </m> axis into the second quadrant.					
+			</p>
+		</solution>
+	</example>
+
+
+</section>

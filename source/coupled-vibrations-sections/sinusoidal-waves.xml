@@ -1,0 +1,115 @@
+<section xml:id="sinusoidal-waves"><title> Sinusoidal Waves</title>
+	<introduction>
+        <p>
+            When a string is shaken sinusoidally, i.e., it is vibrated such that the oscillations are sine or cosine function of time, the wave propagated in the string also has sinusoidal shape as illustrated in <xref ref="fig-wave-on-string-characteristics-2"/>. The period of the wave in space is called its <term>wavelength</term>, and it is usually denoted by the Greek letter <m>\lambda</m> (lambda). The absolute value of the displacement of the disturbance on either side of the equilibrium is called <term>amplitude</term>, usually denoted by letter <m>A</m>. Note that amplitude is not the entire range of displacement but half of that. 
+        </p>
+ 
+        <figure xml:id="fig-wave-on-string-characteristics-2">
+            <caption>
+                Traveling wave on a string. Figure shows wave at three instants of time. The repeating distance, denoted by <m>\lambda</m> is the wavelength, the absolute value of the displacement of the disturbance on either side of the equilibrium is called amplitude, and the time it takes the wave to cover a wavelength is its period, which we denote by <m>T</m>. The ratio <m>\lambda/T</m> is the wave speed, which is also called phase velocity in the case of sinusoidal waves.
+            </caption>
+            <image source="./images/coupled-vibrations/wave-on-string-characteristics-2.png" width="80%"/>
+        </figure>
+        <p>
+            As <xref ref="fig-wave-on-string-characteristics-2"/> shows, the moving wave will move with some speed <m>v</m>, which we call <term>wave speed</term>. In the case of sinusoidal waves, wave speed is also called <term>phase velocity</term>. We will encounter another velocity associated with pulses or nonsinusoidal waves called <term>group velocity</term>. The wave in <xref ref="fig-wave-on-string-characteristics-2"/> will travel a distance of the wavelength in some time <m>T</m>, which is called <term>period</term> of the wave. That is,
+            <men xml:id="eq-wave-fundametal-equation-1">
+                vT = \lambda.
+            </men>
+            The inverse of the period is called <term>frequency</term> or cylce frequency or ordinary frequency of the wave. We will denote frequency by letter <m>f</m> although sometimes it is also denoted by the Greek letter <m>\nu</m> (nu).
+            <men>
+                f = \frac{1}{T}.
+            </men>
+            In terms of frequency, Eq. <xref ref="eq-wave-fundametal-equation-1"/>> takes the following form, called the <term>fundamental equation of waves</term>. 
+            <men xml:id="eq-wave-fundametal-equation-2">
+                v = \lambda\, f.
+            </men> 
+        </p>
+    </introduction>
+    <subsection><title>Mathematical Description of Wave</title>
+        <p>
+            Let string in <xref ref="fig-wave-on-string-characteristics-2"/> be along <m>x</m> axis and oscillate along the <m>y</m> axis with frequency <m>f</m>. Let <m>y(x,t)</m> denote the displacement of string particle at coordinate <m>x</m> at time <m>t</m>, i.e., let the particle be at <m>(x,y)</m> at instant t. Then, we can write the sinusoidal wave moving towards the positive <m>x</m>axis by
+            <men>
+                y(x,t) = A\, \cos\left(\dfrac{2\pi}{\lambda} x - 2\pi f t + \phi\right),
+            </men>
+            where <m>\phi</m> is a constant, called the <term>phase constant</term>. If diaplacement at origin at time <m>t=0</m> is equal to the ampitude <m>A</m>, then phase constant will be <m>\phi=0</m>. We will usually take this to be the case.
+            <men>
+                y(x,t) = A\, \cos\left(\dfrac{2\pi}{\lambda} x - 2\pi f t\right).
+            </men> 
+            Rather than write <m>2\pi</m> all over the place, we often write this using angular quantities by replacing frequency by angular frequency, <m>\omega</m>,
+            <men>
+                \omega = 2\pi f,
+            </men>
+            and inverse wavelength by <term>wave number</term>, <m>k</m>, defined by
+            <men>
+                k = \frac{2\pi}{\lambda}.
+            </men>
+            the speed of the wave in terms of angular quantities will be
+            <men>
+                v = f\lambda = \frac{\omega}{2\pi}\times \frac{2\pi}{k} = \frac{\omega}{k}.
+            </men>
+            Using angular variables, the sinusoidal wave moving to the right is given by
+            <men>
+                y(x,t) = A\, \cos\left(k x - \omega t\right).
+            </men>
+            A wave moving towards left will have both <m>x</m> and <m>t</m> same sign.
+            <men>
+                y(x,t) = A\, \cos\left(k x + \omega t\right).
+            </men> 
+         
+        </p>
+    </subsection>
+
+    <exercise xml:id="exercise-Obtaining-Properties-of-Sinusoidal-Waves-from-Wave-Function">
+        <title>
+            Obtaining Properties of Sinusoidal Waves from Wave Function
+        </title>
+        <statement>
+            <p>
+
+                The sound produced by a speaker is given by the following pressure difference, <m>\Delta p</m>, in air.
+                <me>
+                    \Delta p = (10 \text{ Pa})\, \cos(k x + 6000\, t + \pi),
+                </me>
+                where <m>x</m> is in meters and <m>t</m> in seconds. Suppose the speed of this wave is <m>343\text{ m/s}</m>. find the wavelength of the sound wave.
+            </p>
+            <p>
+                (a) What is the amplitude of the wave?
+            </p>
+            <p>
+                (b) What is the frequency of the wave?
+            </p>
+            <p>
+                (c) What is the wavelength of the wave?
+            </p>
+        </statement>
+        <hint><p>The <m>\Delta p</m> is just a sinusoidal wave.</p></hint>
+        <answer><p>(a) <m>10\text{ Pa}</m>, (b) <m>954.9\text{ Hz}</m>, (c) <m>35.9\text{ cm}</m>. </p></answer>
+        <solution>
+            <p>
+                (a) Here <m>\Delta p</m> is actually a sinusoidal wave. In the text, we used the symbol <m>y</m> for the wave, but here, it is <m>\Delta p</m>. The amplitude is just the number multiplying the oscillating part.
+                <me>
+                    \text{Amplitude} = 10\text{ Pa}.
+                </me>
+            </p>
+            <p>
+                (b) We can read of angular frequency <m>\omega</m> from the number that multiplies <m>t</m> in the argument of coine, and then obtained frequency <m>f</m> from it.
+                <me>
+                    f = \frac{\omega}{2\pi} = \frac{6000}{2\pi} = 954.9\text{ Hz}.
+                </me>
+                I have used <m>\text{Hz}</m> for the unit since it is regular cycle per second, and not the angular cycle.
+            </p>
+            <p>
+                (c) 
+                If we knew the wavenumber <m>k</m>, we will get <m>\lambda</m> from it. But, since we don't know <m>k</m> yet, but we do know <m>v</m> and <m>f</m>, therefore, we will use the fundamental equation.
+                <me>
+                    \lambda = \frac{v}{f} = \frac{343}{954.9} = 0.359\text{ m} = 35.9\text{ cm}.
+                </me>
+            </p>
+        </solution>
+    </exercise>
+
+
+
+
+
+</section>

@@ -1,0 +1,267 @@
+<section xml:id="Pressure-in-an-Ideal-Gas"><title> Pressure of an Ideal Gas</title>
+
+	<introduction>
+		<p>
+			Pressure in the gas must be the force per unit area exerted on the walls as a result of the impacts of the molecules.  In the following, we will deduce a formula for the pressure in two models for the motion of molecules in the ideal gas.  First, we will work out the formula for a particularly simple motion of the molecules, and then we will do the general case.
+		</p>
+		<!-- <p>
+			Ideal gas is a useful model of dilute gases.  An ideal gas is an imagined system consisting of point-like molecules that interact only with walls, where they suffer elastic collisions.
+		</p>
+		<p>
+
+			Molecular model of an ideal gas:
+			<ol>
+
+				<li> Point-like molecules moving randomly.</li>
+				<li> Large number of molecules uniformly distributed in the volume.</li>
+				<li> No interaction among molecules.</li>
+				<li> Elastic collisions of molecules with the walls. </li>
+			</ol>
+		</p> -->
+		<p>
+			To be specific consider a system containing <m> N </m> molecules, each of mass <m> m </m>, in a cubical container with dimensions <m> L\times L\times L</m>.  Let the edges of the box be along the Cartesian coordinates. We want to find formula for pressure experienced by the wall. We will present calculation using two models of the gas.
+		</p>
+
+
+	</introduction>
+
+	<subsection> <title> Simple Model </title>
+
+		<p>
+			Suppose the motion is such that <m>1/3^\text{rd}</m> of the molecules are moving along the <m>x</m> axis, <m>1/3^\text{rd}</m> along the <m>y</m> axis and <m>1/3^\text{rd}</m> along the <m>z</m> axis.  Note the molecules will have a variety of speeds.  For the simple model, let us assume all speeds be equal to <m>v</m>.
+		</p>
+		<p>
+			A simple model of an ideal gas would have:
+			<ol>
+				<li> One-third of the molecules moving back and forth between two facing walls.</li>
+				<li> All speeds same; use average speed.</li>
+			</ol> 
+		</p>
+		<p>
+			Let us look at the impacts of the molecules of the gas on one wall of the container.  The situation at the other walls will be similar.  The molecules will move between the facing walls as shown in <xref ref="fig-impacts-on-wall"/>.
+		</p>
+		<figure xml:id="fig-impacts-on-wall">
+			<caption>
+				Molecules along x-axis striking a wall elastically and transferring momentum.
+			</caption>
+			<image source="./images/kinetic-theory/impacts-on-wall.png" width="50%"/>
+		</figure>
+ 		<p>
+
+ 			At the wall each molecule will suffer a change of momentum.  Since the positive <m>x</m>-axis is pointed to the right in the figure, the change in the <m>x</m>-component of the momentum of the molecule will be <m>\Delta p_x = -mv- mv= -2mv</m>, and the corresponding change in momentum <m>\Delta P_x^{\text{wall}}</m> of the right wall as a result of one impact is 
+			<me>
+				\Delta P_x^{\text{wall}} = -\Delta p_x = 2mv \ \ \text{(each impact)}
+			</me> 
+			Now, over a duration <m>\Delta t</m>, in which there are many impacts back and forth, the number of impacts on the right wall will be <m>v\Delta t/2L</m> since there will be one impact on the right wall for each distance <m>2L</m>. Therefore, in time <m>\Delta t</m>, the momentum imparted to the right wall will be 
+			<me>
+				\Delta P_x^{\text{wall}} = (v\Delta t/2L)\times 2mv \ \ \text{(in duration <m>\Delta t</m>)}
+			</me>  
+			Therefore, the <m>x</m>-component of the force exerted on the right wall by one molecule would be
+			<me>
+				F_x= \dfrac{\Delta P_x^{\text{wall}}}{\Delta t} = \dfrac{mv^2}{L}\ \ \text{(one molecule)}.
+			</me>
+			Since, one-third of molecules in this model are moving along <m>x</m>-axis, the <m>x</m>-component of the total force on the right wall by all molecules is   
+			<me>
+				F_x^\text{net}= \dfrac{N}{3} \dfrac{mv^2}{L}\ \ \text{(net on right wall)}.
+			</me>
+			We can divide the force on the right wall by the area of the wall to obtain the pressure there. 
+			<mdn>
+				<mrow number="no"> p \amp = \dfrac{F_x^\text{net}}{L^2}=\dfrac{2}{3} \dfrac{N}{L^3}\dfrac{1}{2}mv^2 </mrow>
+				<mrow xml:id="eq-kin-theo-simple-1"> \amp = \dfrac{2}{3} \dfrac{N}{V}\times \left(\text{Kinetic energy of one molecule} \right). </mrow>
+			</mdn>
+			This relation can be used to write an expression for the average kinetic energy per molecule in terms of pressure, volume, and total number of molecules.
+			<men>
+				\text{KE per molecule} = \dfrac{3}{2} \dfrac{pV}{N}.
+			</men>
+			Therefore, kinetic theory model gives us information about individual molecules in terms of macro properties such as pressure and volume.
+
+
+
+ 		</p>
+
+	</subsection>
+
+
+	<subsection> <title> Less Simple Model </title>
+		<p>
+			Suppose that the molecules are moving in random directions each with its own speed.  Since the collision is elastic, their speeds remain fixed in time.  Furthermore since the wall is infinitely heavier than a molecule, the collision results in reversal of the component of velocity perpendicular to the wall while other components are not changed (<xref ref="fig-impacts-on-wall-2"/>).
+		</p>
+		<figure xml:id="fig-impacts-on-wall-2">
+			<caption>
+				The elastic collision with a wall perpendicular to <m>x</m>-axis flips the sign of the <m>x</m>-component of velocity, the magnitude remains the same.  All other components of the velocity remain same.
+			</caption>
+			<image source="./images/kinetic-theory/impacts-on-wall-2.png" width="50%"/>
+		</figure>
+		<p> 
+			The less simple model of an ideal gas:
+			<ol>
+
+				<li> Molecules in random motion.</li>
+				<li> Elastic collisions of molecules with the walls.</li>
+			</ol>
+		</p>
+		<p>
+	
+			Looking at the wall at <m>x=L</m> again, we find the calculations of the simple model for a single molecule goes through without much change except now we have <m>v_x</m> in place of <m>v</m> in the formulas.  The number of collisions made by a molecule on the right wall only depends on the <m>v_x</m>.  A random molecule will collide with all six walls because, in general, it will have all three components <m>v_x</m>, <m>v_y</m> and <m>v_z</m> non-zero.  Therefore, the force on the right wall will be obtained by adding up the contributions from all <m>N</m> molecules with the following result.
+			<me>
+				F_x^{net}= \dfrac{1}{L} \left( mv_{1x}^2 + mv_{2x}^2 +\cdots +  mv_{Nx}^2 \right)\ \ \text{(net on right wall)},
+			</me>
+			where the subscripts <m>1, 2,  \cdots , N</m> label the molecules.  The quantity in parenthesis is related to the average of the square of the <m>x</m>-component of velocities of the molecules denoted as  <m> \langle v_x^2\rangle</m>.
+			<me>
+				\langle v_x^2\rangle = \dfrac{v_{1x}^2 + v_{2x}^2 +\cdots +  v_{Nx}^2}{N}.
+			</me>
+			We will denote the average quantities by including them within angle brackets, <m>\langle \dots\rangle</m>. Therefore, the force exerted on the right wall by all molecules can be written more compactly as
+			<men xml:id="eq-force-on-right-wall-1">
+				F_x^{net}= \dfrac{m}{L} N \langle v_x^2\rangle  \ \ \text{(net on right wall)}.
+			</men>
+			Since, the velocities are assumed to be random, the average of square of the <m>x</m>-component of velocities must be equal to the corresponding <m>y</m> and <m>z</m>-averages, especially because <m>N</m> is very large in any macroscopic sample.
+			<men xml:id="eq-aveage-vel-squared-1">
+				\langle v_x^2\rangle = \langle v_y^2\rangle  = \langle v_z^2\rangle.
+			</men>
+			Recall that the  sum of squares of the <m>x</m>, <m>y</m> and <m>z</m>-component of velocity is equal to the square of the speed. Writing the speed of any one molecule as <m>v</m>, we have the following for each molecule.
+			<me>
+				v_x^2 + v_y^2 + v_z^2 = v^2
+			</me>
+			Now, adding this equation for all molecules and dividing by the total number of molecules gives an identical relation for the average of square of the components of the velocity and the speed.
+			<men xml:id="eq-aveage-vel-squared-2">
+				\langle v_x^2\rangle + \langle v_y^2\rangle + \langle v_z^2\rangle = \langle v^2\rangle.
+			</men>
+			The average of the square of speeds is also called <term> root-mean-squared speed</term>,  <m>v_{rms}</m>.
+			<men xml:id="eq-aveage-vel-squared-2a">
+				v_{\text{rms}}=\sqrt{\langle v^2\rangle}. 
+			</men>
+			From Eqs. <xref ref="eq-aveage-vel-squared-1"/>, <xref ref="eq-aveage-vel-squared-2"/>, and <xref ref="eq-aveage-vel-squared-2a"/>, we find
+			<men xml:id="eq-aveage-vel-squared-3">
+				\langle v_x^2\rangle = \langle v_y^2\rangle = \langle v_z^2\rangle = \dfrac{1}{3}v_\text{rms}^2.
+			</men>
+			Using this relation in Eq. <xref ref="eq-force-on-right-wall-1"/> and noting that there is nothing special about any one wall, we find that the magnitude of force on any one of the six walls is give by the following.
+			<men xml:id="eq-force-on-right-wall-2">
+				|F^\text{net}|= \dfrac{1}{3L} N  m v_\text{rms}^2.
+			</men>
+			Dividing by area of the wall, we obtain the pressure in terms of the root-mean squared speed.
+			<men>
+				p = \dfrac{|F^\text{net}|}{L^2} = \dfrac{N}{3V}\, mv_\text{rms}^2.
+			</men>
+			The only difference between this formula and Eq. <xref ref="eq-kin-theo-simple-1" /> is that <m>v</m> now is <m>v_\text{rms}</m>. 
+		</p>
+		<p>
+			 Using the Ideal Gas equation of state, viz. <m>pV = Nk_B T</m>, we can rewrite the root-mean squared speed as
+			 <md>
+			 	<mrow> v_\text{rms} \amp = \sqrt{ \dfrac{ 3 p V }{N m } } = \sqrt{ \dfrac{ 3 N k_B T }{N m } } = \sqrt{ \dfrac{ 3 k_B T }{m } }. </mrow>
+			 </md>
+			 Note that the rms-speed does not depend on how many molecules you have in the sample. It just depends on the temperature and mass of a molecule.
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Root-Mean-Squared-Speed-of-a-Helium-Molecule"><title> Root Mean Squared Speed of a Helium Molecule </title>
+		<statement>
+			<p>
+				A <m>20\text{-L}</m> gas tank has Helium gas at room temperature of <m>27^\circ\text{C}</m>. The pressure of gas in the tank is <m>10\text{ atm}</m>. What is the root-mean squared speed of the molecules in  <m> \text{m/s} </m> and in <m>\text{miles per hour}</m>?
+			</p>
+			<p>
+				Data: Avogadro's number, <m>N_A = 6.022\times 10^{23}</m>, Boltzmann's constant, <m>k_B = 1.38\times 10^{-23} \text{m}^2\text{kg}\text{s}^{-2}\text{K}^{-1}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Use the less simple model of an ideal gas. </p> </hint>
+		<answer> <p>  <m>1,370\text{ m/s}</m> or  <m>3,065\text{ mph}</m>. </p> </answer>
+		<solution> 
+			<p>
+				We will use the <q>less simple model</q> of an ideal gas, which gives
+				<me>
+					v_\text{rms}  = \sqrt{ \dfrac{ 3 k_B T }{m } }.
+				</me>
+				We have temperature in Kelvin scale
+				<me>
+					T = 27 + 273 = 300\text{ K},
+				</me>
+				and mass of one molecule by dividing the molar mass (called the mokeclar weight) by Avogadro's number,
+				<me>
+					m =  \dfrac{M}{N_A} = \dfrac{4\times 10^{-3}\text{ kg}}{6.022\times 10^{23}} = 6.64 \times 10^{ -27 }\text{ kg}.
+				</me>
+				Theerefore,
+				<md>
+					<mrow> v_\text{rms}  \amp = \sqrt{ \dfrac{ 3 \times 1.38\times 10^{-23} \times 300 }{ 6.64 \times 10^{ -27 } } } </mrow>
+					<mrow> \amp = 1370\text{ m/s}. </mrow>
+				</md>
+				<!-- This is really fast! No kidding. Let's see this in miles per hour.
+				<me>
+					1370\text{ m/s} \times 2.23694 \dfrac{\text{mph}{\text{m/s}} = 3,065\text{ mph}.
+				</me>
+				To escape the Earth, you need about <m>25,000\text{ mph}</m> speed. -->
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Pressure-from-a-Stream-of-Particles-Striking-on-a-Wall"><title>  Pressure from a Stream of Particles Striking on a Wall</title>
+		<statement>
+			<sidebyside widths="60% 10% 20% 10%">
+				<p>
+					A stream of particles of mass <m>m</m> strikes a wall of area <m>A</m> perpendicularly  with speed <m>v</m>.  Suppose that upon rebound particles emerge with speed <m>v'</m>.  If there are <m>n</m> particles per unit volume, what is the pressure exerted on the wall?  (Note the collision with the wall is not elastic.)
+				</p>
+				<p> </p>
+				<image source="./images/kinetic-theory/particle-bouncing-off-a-wall.png" width="50%"/>
+				<p></p>
+			</sidebyside>	
+
+		</statement>
+		<hint> <p>  Work out change in momentum during an interval <m>\Delta t</m>. </p> </hint>
+		<answer> <p> <m> m n v (v+v')</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Let us focus on the molecules moving towards the wall. In time <m>\Delta t</m> all the particles in the volume <m>Av\Delta t</m> will strike.  The number of particles will be
+				<me>
+					\text{No. of impacts on the wall in duration <m>\Delta t</m>} = n Av\Delta t.
+				</me>
+				Each molecule will impart impulse equal to the change in the momentum. Let the direction towards the wall be the <m>x</m>-axis, then the change in the momentum of one molecule of mass will be
+				<me>
+					\Delta p_x = -mv' - mv = - m(v+v').
+				</me>
+				The <m>x</m>-component of the impulse on the wall as a result of the impact of one molecule will be
+				<me>
+					\Delta J_x = m(v+v')\ \ \text{(One molecule)}
+				</me>
+				Now, we multiply this by the number of impacts in duration <m>\Delta t</m> to obtain the impuse in time <m>\Delta t</m>.
+				<me>
+					\Delta J_x = m(v+v')  n Av\Delta t.
+				</me>
+				Therefore, the <m>x</m>-component of the net force on the wall will be
+				<me>
+					F_x = \frac{\Delta J_x}{\Delta t} = m(v+v')  n Av.
+				</me>
+				Dividing this by the area of the wall would give the pressure of the gas.
+				<me>
+					p = \frac{F_x}{A} =  m n v (v+v').
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Pressure-from-a-Stream-of-Particles-Striking-on-a-Wall-and-Sticking"><title> Pressure from a Stream of Particles Striking on a Wall and Sticking to the Wall </title>
+		<statement>
+			<p>
+				A stream of particles of mass <m>m</m> strikes a wall of area <m>A</m> perpendicularly  with speed <m>v</m>, sticks to it and comes to rest.  If there are <m>n</m> particles per unit volume, what is the pressure exerted on the wall?  (Note the collision with the wall is not elastic.)
+			</p>
+
+		</statement>
+		<hint> <p>  Study <xref ref="ex-Pressure-from-a-Stream-of-Particles-Striking-on-a-Wall" />. </p> </hint>
+		<answer> <p>  <m> m n v^2 </m>. </p> </answer>
+		<solution> 
+			<p>
+				If the particles stick to the wall, then the imparted impulse in the <xref ref="ex-Pressure-from-a-Stream-of-Particles-Striking-on-a-Wall" /> will have <m>v'=0</m>.  The pressure will now be given by
+				<me>
+					p = \frac{F_x}{A} =  m n v^2.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+ 
+</section>

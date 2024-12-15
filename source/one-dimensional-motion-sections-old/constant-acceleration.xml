@@ -1,0 +1,496 @@
+<section xml:id="oneD-Constant-Acceleration-Motion"> <title> Constant Acceleration Motion </title>
+
+	<p>
+		The one-dimensional kinematics for constant acceleration motion plays an important practical role. Typically, we are interested in a motion between two instants in time, which we call the initial and final instants. We use subscripts <m> i </m> and <m> f </m> to denote quantities at these instants. The following diagram illustrates the setup.
+	</p>
+	<figure>
+		<caption>
+			Set up for constant acceleration motion along the <m> x </m> axis with <m> a_x </m> same throughout the interval. The time interval of interest is <m> \Delta t = t_f - t_i</m>. The initial and final positions are <m> x_i </m> and <m> x_f </m> respectively, with displacement <m> \Delta x = x_f - x_i</m>. The initial and final velocities are <m> v_{i,x} </m> and <m> v_{f,x} </m> resectively, with change <m> \Delta v_x = v_{f,x} - v_{i,x} </m>. 
+ 		</caption>
+
+		<image source="./images/one-dim-motion/one-dim-constant-acceleration-set-up.png" 
+			width="80%"/>
+	</figure>
+
+	<p> 
+		We denote the interval by <m> \Delta t = t_f - t_i </m>, the change in position by <m> \Delta x = x_f-x_i </m>, and change in velocity by <m> \Delta v_x = v_{f,x} - v_{i,x} </m>. 
+	</p>
+	<p>
+		They obey the following relations.
+			<mdn>
+				<mrow> \amp \Delta v_x = a_x \Delta t. </mrow>
+				<mrow> \amp \Delta x = v_{av,x} \Delta t,</mrow>
+			</mdn>
+		where
+			<men>
+				v_{av,x} = \dfrac{v_{i,x} + v_{f,x}}{2}.
+			</men>
+		It is possible to eliminate <m> \Delta t </m> from these equations to obtain 
+		<men  xml:id="eq-1-d-no-t-equation">
+			v_{f,x}^2 = v_{i,x}^2 + 2 a_x \left( \Delta x \right)^2,
+		</men>
+		which we will refer to as the <q>no-<m>t</m>-equation </q>.
+		It is also possible to eliminate <m> v_{f,x} </m> to obtain another useful equation
+		<men  xml:id="eq-1-d-no-vf-equation">
+			\Delta x = v_{i,x} \Delta t + \dfrac{1}{2}a_x\left(\Delta t \right)^2,
+		</men>
+		which we will refer to as the <q> no-<m>v_f</m>-equation</q>.
+	</p>
+
+
+		<!-- <p>
+			Some special motions require simplified analysis. For instance, <alert> if velocity is constant</alert>, then, in these equations
+			<me>
+				a_x = 0\ \ \ \ (\text{constant velocity case})
+			</me> 
+		</p>
+		<p>
+			Another important special situation occurs when speed is constant during a motion. Speed at an instant is equal to the absolute value of the velocity at that instant, i.e., in one-dimensional situation, you would strip the sign of the velocity to get the speed at that instant.  Even though you can get speed at an instant from the velocity at that instant, the <alert> average speed </alert> during an interval is not related to the average velocity over that interval due to the way averaging is done in the two cases. 
+		</p>
+		<p>
+
+			Average speed to be denoted by the symbol <m> v_{s,av}</m> is totality of distance covered divided by the time taken. Thus, if you move from origin to <m> x = 10 \text{ cm}</m> and return to origin, you would actually cover a distance of <m> 20 \text{ cm}</m>  even though your <m> \Delta x = 0 </m> since your initial <m> x </m> is the same as your final <m> x</m>.
+			We denote the actual distance covered by the letter <m> d </m>. In <alert> constant speed </alert> motion following equations are used.
+			<mdn>
+			<mrow> \amp |v_f| = |v_i| = v_{s,av}  </mrow>
+			<mrow> \amp  d = v_{s,av} \, \Delta t</mrow>
+		</mdn>
+		</p> -->
+
+
+
+	<p><alert>Sign conventions.</alert>
+		We use a sign convention to follow the directions of velocity and acceleration. The source of these sign conventions will become clear after you learn vectors. The following diagrams clarify the sign assignments of velocity and acceleration. 
+	</p>
+	<sidebyside widths="50% 5% 45%">
+		<p>
+			<p> 
+				The velocity <m> v_x </m> is positive if object is moving in the direction of positive axis and negative if in the opposite direction. 
+			</p>
+			<p>
+				Acceleration <m> a_x </m> is positive in two situations: if either <m> v_x </m> is positive <em> and </em> speeding up   <alert> OR </alert> <m> v_x </m> is negative <em> and </em> slowing down. 
+			</p>
+			<p>
+				Acceleration <m> a_x </m> is negative in two situations: if either <m> v_x </m> is negative <em> and </em> speeding up <alert>  OR </alert> <m> v_x </m> is positive <em> and </em> slowing down. 
+			</p>
+		</p>
+		<p></p>
+		<image source="./images/one-dim-motion/signs-of-v-and-a.png" width="70%"/>
+	</sidebyside>
+
+
+
+		<p><alert>Summary of Formulas </alert>
+		</p>
+		<p> <alert> Constant Acceleration: </alert>
+		</p>
+		<p>
+			<mdn>
+				<mrow> \amp \Delta v_x = a_x \Delta t. </mrow>
+				<mrow> \amp \Delta x = v_{av,x} \Delta t.</mrow>
+				<mrow> \amp v_{av,x} = \dfrac{v_{i,x} + v_{f,x}}{2}.</mrow>
+				<mrow> \amp  \Delta x = v_{i,x} \Delta t + \dfrac{1}{2}a_x\left(\Delta t \right)^2</mrow>
+				<mrow> \amp  v_{f,x}^2 = v_{i,x}^2 + 2 a \left( \Delta x \right)^2</mrow>
+		</mdn>
+	</p>
+	<p><alert>Constant Speed: </alert>
+	</p>
+	<p>
+		<mdn>
+			<mrow> \amp |v_f| = |v_i| = v_{s,av}  </mrow>
+			<mrow> \amp  d = v_{s,av} \, \Delta t</mrow>
+		</mdn>
+	</p>
+
+
+
+
+
+	<exercise xml:id="Predicting-the-Final-Velocity-in-a-Constant-Acceleration-Motion"><title> Predicting the Final Velocity in a Constant Acceleration Motion </title>
+		<statement>
+			<p>
+				A skier is coming down a steep slope with a constant acceleration <m> a = 3.0\text{ m/s}^2</m>.  If the speed of the skier at the top of the hill was <m> 0 </m>, what is his speed when he has skied a distance of <m> 40 \text{ m}</m> down the hill? Take the positive <m> x </m> axis to point down the hill.
+			</p>
+
+		</statement>
+		<hint> <p>  Since we don't need <m>\Delta t</m> the <q>no-<m>t</m>-equation</q> can be useful </p> </hint>
+		<answer> <p> <m> + 98\text{ m/s} </m></p> </answer>
+		<solution> 
+			<p> For the sake of brevity, we will drop the  coordinate  subscript <m> x </m> from the symbols.
+				Here taking the <m> x </m> axis down the hill makes all the motion along the <m> x </m> axis. From the problem statement, we can get the following.
+				<me>
+					a = 3.0\text{ m/s}^2,\ \ \Delta x = 40 \text{ m},\ \ v_i = 0,\ \ v_f = ?
+				</me>
+				The <q>no-<m>t</m>-equation</q> is perfect for this and gives
+				<me>
+					v_f^2 = v_i^2 + 2 a (\Delta x)^2 = 0 + 2 \times 3 \times 40^2 = 9600.
+				</me>
+				Taking square root of both sides gives two values
+				<me>
+					v_f = \pm 98\text{ m/s}.
+				</me>
+				Since the velocity we want to in the direction of the positive <m> x </m> axis, we want the positive root.
+				<me>
+					v_f = + 98\text{ m/s}.
+				</me>
+				We want the speed, which is the absolute value of this velocity.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Constant-Acceleration-Warmup"> <title> Constant Acceleration Warmup </title>
+		<statement>
+             <p>
+                   A car can accelerate from zero velocity to <m> 30 </m> m/s in 2.5 seconds.     
+             </p>  
+             <p>
+                    (a) What is the acceleration of the car?
+             </p>
+             <p>
+                    (b) What is the average velocity of the car when it accelerating from  zero velocity to <m> 30 </m> m/s?  
+             </p>
+             <p>
+                    (c) How far does the car travel during the <m>2.5</m> s? 
+             </p>
+		</statement>
+       	<hint>
+            <p>Think the motion on <m> x </m> axis and try using the constant acceleration equations.</p>
+             
+      	</hint>
+       	<answer>
+                    <p> (a) <m>12.0</m> m/s/s,  (b) <m>15.0</m> m/s, (c) <m>37.5</m> m.</p>            
+      	</answer>
+      	<solution>
+             <p> (a) From the change in velocity we find
+             	<me>
+             		a = \dfrac{v_f - v_i}{t} = \dfrac{30 \text{ m/s}  - 0}{2.5\text{ s}} = 12 \text{ m/s}^2.
+             	</me>
+             </p>       
+             <p> (b) Since acceleration is constant, average velocity will be average of initial and final velocities.
+             	<me>
+             		v_{av} = \dfrac{v_f + v_i}{2} = \dfrac{30 \text{ m/s}  + 0}{2} = 15 \text{ m/s}.
+             	</me>
+             </p> 
+             <p> (c) From average velocity and duration, we get the displacement to be
+             	<me>
+             		x_f - x_i = v_{av} t =  15 \text{ m/s} \times 2.5 \text{ s} = 37.5 \text{ m}.
+             	</me>
+             </p>       
+       	</solution>               
+	</exercise>
+	
+    <exercise xml:id="ex-Constant-Acceleration-Warmup-2"> <title> Stopping Distance in a Constant Deceleration Situation </title>
+        <statement>
+            <p>
+                The maximum deceleration of a particular car is <m>30.0 \text{ m/s}^2</m>.  
+                The car is  moving at a steady pace of <m>40.0 \text{m/s}</m> on a straight road. The driver notices a deer on the road and applies the maximum brake right away. How far the deer must be if the car must stop before it hits the deer?
+             </p>  
+        </statement>
+       	<hint>
+            <p> 
+            	Think the motion on <m> x </m> axis and try using the constant acceleration equations.
+        	</p>
+             
+      	</hint>
+       	<answer>
+            <p>
+            	<m>26.7\text{ m}</m>.  
+            </p>
+      	</answer>
+      	<solution>
+            <p> 
+            	Here, we are given that acceleration is in the opposite direction of initial velocity. So, if the initial veloccity <m> v_x </m>is positive, the acceleration <m>a_x</m>will be negative. For brevity, I will drop <m>x</m> from the symbols. We have
+                <me> 
+                	v_i = 40.0 \text{ m/s}, \  \ v_f = 0, \ \ a = - 30.0 \text{ m/s}^2,
+                </me>     
+                and we are to find <m> \Delta x</m>, which is another way to write <m>x_f-x_i</m>. Using the <q> no <m>t</m> equation </q> we get  (I will omit units in the calculations.)
+                <me> 
+                	v_f^2 - v_i^2 = 2 a \Delta x \rightarrow  0 - 40^2 = 2 \times 30 \times \Delta x
+                </me> 
+                Therefore,     
+                <me> 
+                	\Delta x = 26.7 \text{ m}.
+                </me>
+            </p>
+               
+      
+       </solution>	               
+    </exercise>
+
+    <exercise xml:id="ex-Constant-Acceleration-Warmup-3"> <title> Constant Acceleration Down an Incline</title>
+    	<statement>
+    		<p>
+    			Starting from rest a box slides down an incline at a constant acceleration of <m> 2\text{ m/s}^2</m> pointed down the incline (not vertically down). 
+    		</p>
+    		<p> (a) Find the speed of the box at <m>t = 1.5</m> sec.  
+    		</p>
+    		<p>
+    			(b) Find the average velocity of the box between <m>t = 0</m> and <m>t =1.5</m> sec. 
+    		</p>
+    		<p>
+    			(c) Determine the distance traveled on the incline in <m>1.5</m> sec.
+    		</p>
+    		<p>
+    			(d) Verify that the displacement during the <m>1.5</m> sec interval from <m>t = 0</m> to <m>t =1.5</m> sec is equal to the product of the average velocity for the interval and the time interval.
+    		</p>
+    	</statement>
+
+		<hint> <p>  Using <m>+x</m> axis down the incline will be helpful. </p> </hint>
+		<answer> <p> (a) <m> 3.0\text{ m/s}</m>, (b) <m> 1.5\text{ m/s}</m>, (c) <m> 2.25\text{ m}</m>, (d) <m> 2.25\text{ m}</m>.   </p> </answer>
+		<solution> 
+			<p>
+				Let us point <m>+x</m> axis down the incline. This will give
+				<me>
+					a_x = + 2\text{ m/s}^2,\ \ v_{ix} = 0,\ \ \Delta t = 1.5\text{ sec}\equiv t.
+				</me>
+			</p>
+			<p>
+				(a) Therefore,
+				<me>
+					v_{fx} = v_{ix} + a_x t = 0 + 2\times 1.5 = 3.0\text{ m/s}.
+				</me>
+				This gives final speed equal to <m> 3.0\text{ m/s}</m>.
+			</p>
+			<p>
+				(b) For constant acceleration, average velocity is just the average of initial and final velocities.
+				<me>
+					v_\text{av,x} = \dfrac{v_{ix} + v_{fx}}{2} = 1.5\text{ m/s}.
+				</me>
+			</p>
+			<p>
+				(c) The displacement from initial velocity and accl will be
+				<me>
+					\Delta x = v_{ix} t + \dfrac{1}{2}a t^2 = 0 + \dfrac{1}{2}\times 2\times 1.5^2 = 2.25\text{ m}.
+				</me>
+			</p>
+			<p>
+				(d) Using average velocity and duration we verify
+				<me>
+					\Delta x = v_\text{av,x}\, t= 1.5\times 1.5 = 2.25\text{ m}.
+				</me>
+			</p>
+		</solution>
+
+
+	</exercise>
+
+	    
+    <exercise xml:id="ex-Constant-Acceleration-Warmup-4"> <title> Deceleration of a Hockey Puck While Moving up an Incline</title>
+    	<statement>
+    		<p>
+    			A hockey puck is hit up an incline.  The puck slows down at a constant acceleration of magnitude <m>5\text{ m/s}^2</m> and stops after <m>1.2</m> sec.  
+ 
+    		</p>
+     		<p>
+    			(a) Find the initial velocity, i.e. the velocity of the puck immediately after leaving the stick.
+    		</p>
+   			<p>
+    			(b) How far up the incline does the puck go before coming to rest? 
+    		</p>
+    		<p> 
+    			(c) What are the directions of velocity and acceleration at <m>t = 0.5\text{ sec}</m>?  
+    		</p>
+    		<p>
+    			(d) Find the position of the puck at <m>t = 0.5\text{ sec}</m>. 
+    		</p>
+    	</statement>
+
+ 		<hint> <p>  (a) and (b) have different time interval than (c) and (d). </p> </hint>
+		<answer> <p>  
+			(a)<m> 6.0\text{ m/s}</m>,
+			(b) <m> 3.6\text{ m}</m>,
+			(c) <m> 3.5\text{ m/s}</m>,
+			(d) <m> 2.375\text{ m}</m>. </p> </answer>
+		<solution> 
+			<p>
+				Let <m>+x</m> axis be pointed up the incline. This makes
+				<me>
+					a_x = - 5.0\text{ m/s}^2,\ \ \Delta t = 1.2\text{ sec}\equiv t,\ \ v_{fx} = 0.
+				</me>
+			</p>
+			<p>
+				(a)
+				From <m>v_f = v_i + a t</m> we get
+				<me>
+					v_{ix} = v_{f,x} - a t = 0-(-5)\times 1.2 = 6.0\text{ m/s}.
+				</me>
+			</p>
+			<p>
+				(b) From <m>\Delta x = v_{ix} + \dfrac{1}{2}at^2</m>, we get
+				<me>
+					\Delta x = 6\times 1.2 + \dfrac{1}{2}\times (-5)\times 1.2^2 = 3.6\text{ m}.
+				</me>
+			</p>
+			<p>
+				(c) Now, <m>t=0.5\text{ s}</m> and <m>v_{fx}\ne 0</m>. We can use <m>v_{ix}</m> found above to find <m>v_{fx}</m>.
+				<me>
+					v_{fx} = v_{ix} + a_x t = 6.0 + (-5)\times 0.5 = 3.5\text{ m/s}.
+				</me>
+			</p>
+			<p>
+				(d) The displacement
+				<md>
+					<mrow> \Delta x \amp = \dfrac{v_{ix} + v_{fx}}{2}\, \Delta t</mrow>
+					<mrow> \amp = \dfrac{6 + 3.5}{2}\times 0.5 = 2.375\text{ m}.</mrow>
+				</md>
+
+			</p>
+		</solution>
+	</exercise>
+
+    <exercise xml:id="ex-Constant-Acceleration-Warmup-5"> <title> Constant Deceleration of a Skater</title>
+    	<statement>
+    		<p>
+    			A skater after an initial push glides with a constant deceleration.  He comes to a stop after reaching <m>120</m> m in <m>25\text{ sec}</m>.
+    		</p>
+    		<p> 
+    			 (a) Find his initial speed.
+    		</p>
+    		<p>
+    			(b) Find the deceleration.
+    		</p>
+    		<p>
+    			(c) How much distance did he cover in the first <m>12.5</m> sec? 
+    		</p>
+    		<p>
+    			(d) How much distance did he cover in the last <m>12.5</m> sec?  
+    		</p>
+    	</statement>
+
+ 		<hint> <p> Use <m>+x</m> axis in the direction of motion.  </p> </hint>
+		<answer> <p> 
+			(a) <m> 9.6\text{ m/s}</m>,
+			(b) <m>- 0.384\text{ m/s}^2 </m>,
+			(c) <m> 90\text{ m}</m>,
+			(d) <m> 30\text{ m}</m>.			 
+						  </p> </answer>
+		<solution> 
+			<p> (a)
+				With <m>+x</m> axis in the direction of motion, we have
+				<me>
+					\Delta x = 120 \text{ m},\ \ v_{fx} = 0,\ \ \Delta t = 25\text{ s}\equiv t.
+				</me>
+				Using <m>\Delta x = v_{\text{av},x}\, \Delta t </m> and <m> v_{\text{av},x} = (v_{ix}+v_{fx})/2</m>, we get
+				<me>
+					120\text{ m} = \dfrac{v_{ix} + 0 }{2} \times 25\text{ s}.
+				</me>
+				Therefore,
+				<me>
+					v_{ix} = 9.6\text{ m/s}.
+				</me>
+			</p>
+			<p>
+				(b)
+				<me>
+					a_x = \dfrac{v_{fx} - v_{ix}}{\Delta t }= \dfrac{ 0 - 9.6 }{25} = - 0.384\text{ m/s}^2.				
+				</me>
+			</p>
+			<p>
+				(c) Now, we have
+				<me>
+					v_{ix} = 9.6\text{ m/s},\ \ a_x = - 0.384\text{ m/s}^2,\ \ \Delta t = 12.5\text{ s}\equiv t.
+				</me>
+				Therefore
+				<md>
+					<mrow> \Delta x \amp = v_{ix} t + \dfrac{1}{2}a_x t^2</mrow>
+					<mrow> \amp = 9.6 \times 12.5 + \dfrac{1}{2} \times (-0.384) \times 12.5^2 = 90\text{ m}.</mrow>
+				</md>
+			</p>
+			<p>
+				(d)
+				<me> 
+					\Delta x = 120\text{ m} - 90\text{ m} = 30\text{ m}.
+				 </me>
+ 			</p>
+		</solution>
+	</exercise>
+
+
+
+    <exercise xml:id="ex-Constant-Acceleration-on-an-Inclined-Plane"> <title> Constant Acceleration on an Inclined Plane</title>
+    	<statement>
+		    <p>
+		    	A truck is parked on an inclined slippery road. Suddenly, the brake fails and the truck starts to slide down the incline. You notice that starting from rest, the truck has picked up a speed of <m>20.0 </m> m/s over a period of <m> 30.0 </m> seconds. (a) Assuming constant acceleration, how far has the truck moved in this time? (b) What is the acceleration of the truck?
+		    </p>
+		</statement>
+		<hint> 
+			<p>
+				Assume <m> x </m> axis down the incline.
+			</p>  
+		</hint>
+		<answer>
+			<p>
+				(a) <m> 300.0 </m> m, (b) <m> 0.67 \text{ m/s}^2</m> pointed down the incline.
+			</p>
+		</answer>
+		<solution>
+			<p>
+				(a) Since we have a constant acceleration situation, it is easy to get average velocity from the initial and final velocities. Here, the initial velocity <m> v_i = 0 </m> since the truck was not moving initially, and the final velocity <m> v_f = 20.0 </m> m/s.
+				<me> v_{av} = \dfrac{0 + 20.0}{2} = 10.0 \text{ m/s}.</me>
+				Therefore, the distance moved in <m> t = 30.0 </m> sec:
+				<me> \Delta x = v_{av} t = 10.0 \text{ m/s} \times 30.0 \text{ s} = 300.0 \text{ m}.</me> 
+			</p>
+			<p> 
+				(b) To get <m> a </m>, we just use the velocities and time given.
+				<me> a = \dfrac{v_f - v_i }{t} = \dfrac{2}{3} \text{ m/s}^2.</me>
+				From the description, it is clear that truck's speed is picking up. Hence, the direction of the acceleration is same as the direction in which the truck is moving, which is down the inclined road.
+			</p>
+		</solution>
+    </exercise>
+
+
+
+    <exercise xml:id="ex-Modeling-a-Varying-Acceleration-by-Average-Constant-Acceleration"><title> Modeling a Varying Acceleration by Average Constant Acceleration </title>
+		<statement>
+			<p> 
+				A cheeta's acceleration varies during its motion over a wide range. An example is given in <xref ref="pr-Acceleration-and-Displacement-for-a-Cheetah-from-Speed-Versus-Time-Plot"/> below. Even though, the real-life situation is complicated, we can get a lot of physics by modeling the motion <alert> as if</alert> the motion was a constant acceleration motion, by replacing the varying acceleration by an average acceleration value. You would, of course not get the exact values, but your answer will be in the right ball park.
+			</p>
+			<p>
+				Suppose, the average acceleration of a cheetah between <m> t=0 </m> and <m> t = 30\text{ sec}</m> is <m> 2.2\text{ m/s}^2</m>. If cheetah started out at rest, what will be (a) the distance traveled and (b)  speed at <m> t = 30\text{ sec}</m>? 
+			</p>
+
+		</statement>
+		<hint> <p>  For both (a) and (b) use constant acceleration equations. </p> </hint>
+		<answer> <p> 
+		(a) <m> 990\text{ m} </m>, (b) <m> 66\text{ m/s} </m>.  </p> </answer>
+		<solution> 
+			<p> (a)
+				Since <m> \Delta t</m> and <m> v_i </m> are given to us, the following equation will give the displacement.
+				<me>
+					\Delta x = v_{i,x}\Delta t + \dfrac{1}{2} a_{\text{av},x} (\Delta t)^2.
+				</me>
+				With the numerical values given, we get
+				<me>
+					\Delta x = 0 + \dfrac{1}{2} \times 2.2\times 30^2 = 990\text{ m}.
+				</me>
+
+			</p>
+			<p> (b) 
+				The velocity at the final instant can be obtained by
+				<me>
+					v_{f,x} = v_{i,x} +  a_{\text{av},x}\,  \Delta t  = 2.2\times 30 = 66\text{ m/s}.
+				</me>					
+			</p>
+		</solution>	    	
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

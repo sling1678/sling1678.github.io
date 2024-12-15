@@ -1,0 +1,242 @@
+<section xml:id="Pascals-Principles"><title> Pascal's Principles</title>
+	<introduction>
+		<p>
+			When a fluid is not flowing, we say that the fluid is in a  static equilibrium. In this condition, the net force on any part of a fluid at rest must be zero, otherwise the fluid will start to flow. 
+		</p>
+		<p> 
+			In 1653 the French mathematician, and physicist Blaise Pascal (1623-1662) published his Treatise on the Equilibrium of Liquids in which he outlined three principles of static fluids. 
+		</p>
+	</introduction>
+	<subsection><title>Pascal's First Principle </title>
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				<p> According to this principle:
+				</p>
+				<p>
+					The force at any point inside a fluid due to the pressure at that point acts with the same magnitude in all direction. 
+				</p>
+				<p>
+					The direction is important here. As a consequence of the direction, the force on the walls of the container due to the pressure of the fluid is perpendicular to the wall.
+				</p>
+			</p>
+			<p></p>
+			<image source="./images/static-fluid/pascal-principle-1.png"/>
+		</sidebyside>
+
+	</subsection>
+
+	<subsection><title>Pascal's Second Principle </title>
+		<p>
+			According to this principle:
+		</p>
+		<p>
+			  When pressure is changed (increased or decreased) at any point in an incompressible fluid, the pressure at all other points in the fluid changes to the same extent.
+		</p>
+		<p>
+			The key phrase here is <alert>change in pressure</alert>.  Often, the second principle of Pascal is also referred to as the  <term> Pascal's principle</term>.  Note that this principle does not say that the pressure is same at all points of a fluid, which is certainly not correct, since we already know that the pressure in a fluid varies with depth.  This principle rather addresses the change in pressure. 
+		</p>
+		<p>
+			<xref ref="fig-pascal-principle-2"/> illustrates Pascal's principle of same change in pressure everywhere.
+		</p>
+		<figure xml:id="fig-pascal-principle-2">
+			<caption>
+				Pressure in fluid is changed when the fluid is pressed by placing additional weight on the moveable lid. Although, the pressure at the top layer of the fluid is different than at the bottom layer, they both increase by the same amount <m>\Delta p </m>. 
+			</caption>
+			<image source="./images/static-fluid/pascal-principle-2.png" width="50%"/>
+		</figure> 
+	</subsection>
+
+	<exercise xml:id="ex-Numerical-Illustration-of-Pascal-Principle"><title> Pressure Changes from Weight of a Block Placed on Piston </title>
+		<statement>
+
+
+			<sidebyside widths="50% 25%">
+				<p>
+					<p>
+						A freely movable piston of mass 100 kg covers water in a rigid cylinder of radius 5 cm touching the surface of the water.  
+					</p>
+					<p>
+						(a) What is the pressure at a depth of 50 cm from the top of water?  
+					</p>
+					<p>
+						(b) A block of steel of mass 300 kg is placed on the piston.  What is the new pressure at a depth of 50 cm from the top? 
+					</p>
+				</p>
+
+				<image source="./images/static-fluid/fig-Numerical-Illustration-of Pascal-Principle.png" width="50%"/>
+			</sidebyside>
+
+			
+
+		</statement>
+		<hint> <p> (a) <m> p_0 + mg/A + \rho g h </m>, 
+		(b) <m> mg/A </m> and Pascal's second principle.   </p> </hint>
+		<answer> <p>  (a) <m> 2.31\times 10^5\text{ Pa}</m> , (b) <m> 6.05\times 10^5\text{ Pa}</m>. </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) The pressure at <m> 50\text{ cm}</m> depth will be the sum of atmospheric pressure, the pressure due to the weight of the piston, and the <m> 50\text{-cm}</m> column of water above the point where we want the pressure. We need area of cross-section.
+			<me>
+				A = \pi R^2 = \pi \times 0.05^2 = 0.007854\text{ m}^2.
+			</me>
+			Therefore, 
+			<md>
+				<mrow> p \amp = p_0 + \dfrac{mg}{A} + \rho g h, </mrow> 
+				<mrow> \amp = 1.013\times 10^{5} + \dfrac{100\times 9.81}{0.007854} + 1000\times 9.81\times 0.50,</mrow>
+				<mrow> \amp = 2.31\times 10^5\text{ Pa}.</mrow>
+			</md>
+
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p> 
+				(b) According to Pascal's second principle, the new pressure will be the old pressure plus the additional pressure from new weight.
+				<me>
+					2.31\times 10^5  + \dfrac{300\times 9.81}{0.007854} = 6.05\times 10^5\text{ Pa}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Pressure-Change-in-Oil-Tank"><title> Pressure Change in Oil Tank </title>
+		<statement>
+			<p>
+				A cylindrical tank containing oil is under pressure such that  the pressure at the bottom is <m>3.0\text{ atm}</m>, while the pressure at the top  is <m>1.5\text{ atm}</m>.  The cover of the container is removed so that the pressure at the top is now <m>1.0\text{ atm}</m>.  What is the pressure at the bottom now?
+			</p>
+
+		</statement>
+		<hint> <p>  Change in pressure as governed by Pascal's second principle. </p> </hint>
+		<answer> <p> <m>2.5\text{ atm}</m>  </p> </answer>
+		<solution> 
+			<p>
+				Since the pressure at the top decreased by <m>0.5\text{ atm}</m>, the same should happen at all points in the tank.  Therefore, the pressure at the bottom will now be <m>3.0-0.5 = 2.5\text{ atm}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<subsection><title>Pascal's Third Principle </title>
+		<p>
+			Pascal's third principle addresses the operation of a hydraulic jack.
+		</p>
+		<p>
+			In a hydraulic jack, a small force applied over a small area can balance a much larger force on the other side over a larger area.
+		</p>
+		<p>
+			A <term> hydraulic jack </term> is a device that contains an incompressible fluid in a U-tube fitted with moveable pistons on the two sides.  One side of the U-tube is narrower than the other as shown in <xref ref="fig-hydraulic-jack" />. We understand the reason behind the working of the hydraulic jack as follows.
+		</p>
+
+
+		<figure xml:id="fig-hydraulic-jack">
+			<caption>
+				A hydraulic jack. A smaller force acting on a smaller area can produce as much pressure as a larger force acting on a larger area. The ratio <m> F_2/F_1 = A_2/A_1</m> is the mechanical advantage of the hydraulic jack.
+			</caption>
+			<image source="./images/static-fluid/hydraulic-jack.png" width="70%"/>
+		</figure>
+
+		<p>
+			When a force <m>  F_1</m> is applied on the side with the area of cross-section <m> A_1</m> it adds pressure <m>P_1</m> to all points of the fluid according to the second principle stated above.
+			<me>
+				P_1 = \dfrac{F_1}{A_1}
+			</me> 
+			This pressure when transmitted through the internal stress in the fluid acts on the other piston in the upward direction. Therefore, 
+ 			a second force <m> F_2</m> must be applied on the piston <m> A_2</m> to balance the effect of the increased pressure <m> P_1</m>, which provides pressure <m> P_2 = F_2/A_2</m>. Balancing of the two increases in pressure from two opposite directions is the statement of the third principle.
+			<men>
+				\dfrac{F_1}{A_1} = \dfrac{F_2}{A_2}.
+			</men>
+			You can rearrange this equation to show the force multiplication occuring in a hyhraulic jack.
+			<men>
+				\dfrac{F_2}{F_1} = \dfrac{A_2}{A_1}.
+			</men>
+			If <m> A_2>A_1</m>, a smaller force <m>F_1</m> can support a larger force <m> F_2</m>. That is why the ratio <m> \dfrac{F_2}{F_1}</m> is called the <term> mechanical advantage </term> of a hydraulic jack.		
+		</p>
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Lifting-a-Car"><title> Lifting a Car Using a Hydraulic Jack </title>
+		<statement>
+			<p>
+				Refer to <xref ref="fig-ex-lifting-a-car-using-jack"/>.
+				(a) Find the force needed to balance a <m>3000\text{-kg}</m> car on the wider side of a hydraulic jack with the circular cross-sections of radii <m>10\text{ cm}</m> and <m>0.5\text{ cm}</m>.
+			</p>
+			<p>
+				(b) What is the mechanical advantage of this hydraulic jack?
+			</p>
+			<figure xml:id="fig-ex-lifting-a-car-using-jack">
+				<caption>
+					Figure for <xref ref="ex-Lifting-a-Car"/>.
+				</caption>
+				<image source="./images/static-fluid/ex-lifting-a-car-using-jack.png" width="60%"/>
+			</figure>
+
+
+		</statement>
+		<hint> <p> Use Pascal's thrid principle.  </p> </hint>
+		<answer> <p> (a)<m> 73.6\text{ N}</m>, (b) <m>400 </m>. </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a)
+				From Pascal's third principle, it is immediately evident that we need the following force to balance the weight of the car placed on the wider side.
+				<md>
+					<mrow> F_1 \amp = \dfrac{A_1}{A_2}F_2   = \left( \dfrac{\pi r_1^2}{\pi r_2^2}\right)F_2 = \left( \dfrac{ r_1 }{ r_2 }\right)^2\,F_2.</mrow>
+				</md>
+				With <m> F_2 = mg = 3000 \times 9.81 = 29430\text{ N}</m>, we get
+				<me>
+					F_1 = \left( \dfrac{0.5}{10} \right)^2 \times 29430 = 73.6\text{ N},
+				</me>
+				which is the weight of a <m> 7.5\text{-kg}</m> block.
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				The mechanical advantage is the ratio of forces on the two sides of the hydraulic jack.
+				<me>
+					\dfrac{F_2}{F_1} = \dfrac{29430\text{ N}}{73.6\text{ N}} = 400.
+				</me>
+
+			</p>
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Balancing-a-Truck-and-its-Load-by-a-Hydraulic-Jack"><title>  Balancing a Truck and its Load by a Hydraulic Jack</title>
+		<statement>
+			<p>
+				In a hydraulic jack, a <m>4000\text{-kg}</m> pickup truck is supported on the side with cross-sectional area <m>0.3\text{ m}^2</m> by a <m>100\text{-N}</m> force act on the narrower end. 
+			</p>
+			<p>
+				(a) Find the area of cross-section of the narrower end.
+			</p>
+			<p>
+				(b) A refrigerator weighing <m>3000\text{ kg}</m> is loaded on the truck.  Now, what force must be used to support the truck?
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Use hydraulic jack equation, (b) You do not need to start over, instead use the proportionality of the hydraulic jack. </p>  </hint>
+		<answer> <p> (a) <m> 7.65\text{ cm}^2</m>, (b) <m>175\text{ N}</m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) We use the Hydraulic Jack equation
+				<me>
+					\dfrac{F_1}{A_1} = \dfrac{F_2}{A_2},
+				</me>
+				to find the area
+				<md>
+					<mrow> A_1 \amp = \frac{F_1}{F_2} A_2 </mrow>
+					<mrow> \amp = \dfrac{100}{4000 \times 9.81 }\ \times 0.3 = 7.65\text{ cm}^2.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b) The areas are same but the weight on the truck side went from <m>4000\times g</m>  to <m>7000\times g</m>.  Therefore, the support force must go from <m>100\text{ N}</m> to <m>(7/4) \times 100 = 175\text{ N}</m>.   
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+</section>

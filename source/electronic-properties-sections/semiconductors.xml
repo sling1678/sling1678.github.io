@@ -1,0 +1,185 @@
+<section xml:id="sec-Semiconductors"><title>Semiconductors</title>
+
+	<introduction>
+		<p>
+		</p>
+ 
+	</introduction>
+
+	<subsection><title>Electron and Hole Carriers</title>
+		<p>
+			We have seen above that the band structure of a semiconductor is such that there is an energy gap <m>E_g</m> between the highest filled band (the valence band) and the next empty band (the conduction band) which is not too large compared to the thermal energy <m>k_BT</m> available at that temperature <m>T</m>.  As a result of thermal energy some of the electrons from the valence band are excited to the conduction band.  However, the density of conduction electrons in silicon at room temperature <m>(T = 300 K)</m> is in the range <m>10^{10}</m> per <m>\text{cm}^3</m>, which is far cry from <m>\sim 10^{28}</m> per <m>\text{cm}^3</m> in a metal.
+		</p>
+		<p>
+			In a semiconductor without doping, such as a pure Si crystal, the valence band has as many empty states are there are filled states in the conduction band since the electrons in the conduction band come from the electrons which were in the valance band before excitation.  That is, for each electron that moves to the conduction band, a <term>hole</term> opens up in the valence band. A hole  is an unoccupied state in the valence band.  As a result, both the conduction band and the valence band are partially filled states as illustrated in <xref ref="fig-band-semiconductor-electrons-holes-intrinsic"/>, and electrons in both these bands contribute to the conduction as illustrated in <xref ref="fig-semi-conductors-from-HyperPhysics"/>.
+		</p> 
+ 
+
+		<figure xml:id="fig-band-semiconductor-electrons-holes-intrinsic">
+			<caption>
+				 In an intrinsic semiconductor, electrons in conduction band come from the excitation of electrons in previously completely filled valence band. The excitation process makes both the conduction band and the valence band partially filled.  The vacant states in the valence band are called holes. Both bands contribute to the conduction of current.  The conduction by the conduction electrons is by the flow of electrons and the conduction by the valence band is by the flow of holes.
+			</caption>
+			<image source="./images/modern-physics/band-semiconductor-electrons-holes-intrinsic.png" width="100%"/>
+		</figure>
+ 
+		<figure xml:id="fig-semi-conductors-from-HyperPhysics">
+			<caption>
+				 (a) The creation of elecron and holes in Si crystal. (b) Current flow by electron current and hole current in Si. (From http://hyperphysics.phy-astr.gsu.edu/hbase/solids/intrin.html)
+			</caption>
+			<image source="./images/modern-physics/semi-conductors-from-HyperPhysics.png" width="100%"/>
+		</figure>
+
+ 
+	</subsection>
+
+	<subsection><title>Doped Semiconductors</title>
+		<p>
+			Pure silicon (Si) crystal forms a diamond crystal lattice in which each Si atom is covalently bonded to four other Si atoms  as shown in <xref ref="fig-semi-conductors-Si-diamond-structure-Shockley-elec-holes-book-page6"/>. Each Si atom has four valence electrons, each of which is shared with other Si atoms. Thus, there are eight elctrons around each Si atom. The sharing of electrons between Si atoms competes the atomic shell for each Si atom.
+		</p>
+
+		<figure xml:id="fig-semi-conductors-Si-diamond-structure-Shockley-elec-holes-book-page6">
+			<caption>
+				 (a) The creation of elecron and holes in Si crystal. (b) Current flow by electron current and hole current in Si. (From http://hyperphysics.phy-astr.gsu.edu/hbase/solids/intrin.html)
+			</caption>
+			<sidebyside widths="50% 50%">
+				<image source="./images/modern-physics/semi-conductors-Si-diamond-structure-Shockley-elec-holes-book-page6.png" width="100%"/>
+				<image source="./images/modern-physics/semi-cond-Si-two-dimensional.png" width="100%"/>
+			</sidebyside>
+		</figure>
+
+		<p>
+			Now, suppose you replace some of the Si atoms by Arsenic (As) atoms, which have five valence electrons.	Arsenic atoms will make four bonds with four Si atoms around it and will have one left over valence electron which will act as a conduction electron. Therefore, introducing As impurities in Si will introduce conduction electrons in the material.  In these materials there will be more (conduction) electrons than holes as illustrated in <xref ref="fig-semi-conductors-n-doped"/>(a).  When you apply a voltage across these materials, the electricity is conducted by both the conduction electrons and the valence holes, however, more current is carried by electrons than by holes.  Therefore, we say that  in As-doped Si   electrons are  <term>majority carriers</term> and  holes are the <term>minority carriers</term>.
+		</p>
+		<p>
+			The semiconductor in which a Periodic Table Group IV element is doped with a Group V element is called <m>n</m>-type semiconductor with the letter <m>n</m> denoting the majority carrier being (negatively charged) electrons.  The atom with the extra electron, here As, is called the <term>donor atom</term>.
+		</p>
+
+
+		<figure xml:id="fig-semi-conductors-n-doped">
+			<caption>
+				 (a) Doping Si with As creates an <m>n</m>-type semiconductor. (b) The extra electron in As has energy levels close to the the conduction band and can easily be excited to the conduction band.  Typically, <m>E_g \sim 1</m> eV and <m>E_d \sim 0.05\text{ eV}</m>.
+			</caption>
+			<sidebyside widths="50% 40%">
+				<image source="./images/modern-physics/semi-cond-Si-As-n-type.png" width="100%"/>
+				<image source="./images/modern-physics/semi-cond-Si-As-n-type-levels.png" width="100%"/>
+			</sidebyside>
+		</figure>
+
+ 
+
+		<p>
+			We can understand the transfer of electron from the donor atom to the lattice by noting that due to shielding of the core electrons, Si acts as a net +4 nucleus with 4 electrons around it and As as a net +5 nucleus with 5 electrons.  When four electrons of As are paired with the four electrons of Si, the As site is like a hydrogen atom with net charge +1 at the nucleus and one electron loosely bound to it. Solving the H-atom problem for this quasi-hydrogen atom we find that the energy of this electron is in the band gap of the host lattice of Si  just below the conduction band of the Si lattice as illustrated in <xref ref="fig-semi-conductors-n-doped"/>(b).  The  electrons in the donor levels are easily excited to the conduction band.
+		</p>
+		<p>
+			Group III elements such as Aluminum (Al) have only three valence electrons.  Therefore, when you dope Si (Gourp IV element) with Al, there is not enough electrons to share to complete every atom's atomic shell. Consequently, the valence band will not fill up as was the case with pure Si.  As we have seen before, the unfilled states in the valence band act as holes in the valence band. The electrons from the neighboring atoms fall in the hole, and in this way, the hole is transferred to the next atom, giving rise to the motion of the hole in the system, as illustrated in <xref ref="fig-semi-conductors-p-doped"/>(a).  The conduction by holes is distinct from the conduction by electrons - while the conduction by electrons occurs in the conduction band, the conduction by holes occurs in the valence band.
+		</p>
+		<p>
+			The energy levels of the acceptor atoms are close to the top of the valence band of the host crystal which makes it easy for an electron from the valence band of Si to jump to the empty acceptor quantum state, in the process creating a hole  in the valence band, as illustrated in <xref ref="fig-semi-conductors-p-doped"/>(b). The current in this type of semiconductor is mostly carried by the mechanism of hole motion rather than electron motion. The semiconductor of this type is called <m>p</m>-type, where the letter <m>p</m> indicates positive carriers, since holes, being absence of electrons, act as positively charge particles.
+		</p>
+
+		<figure xml:id="fig-semi-conductors-p-doped">
+			<caption>
+				(a) Doping  Si with Al creates a <m>p</m>-type semiconductor.  The holes travel as electron from nearby atoms fill the empty state in the valence band. Therefore, as an electron from atom labeled B fills the hole in atom labeled A, the hole moves in the direction of AB while the electron moves in the direction BA. (b) The energy levels of the acceptor atom fall near the valence band so that electrons from the valence band can be excited to the acceptor levels leaving holes in the valence band.  Typically, <m>E_g \sim 1\text{ eV}</m> and <m>E_a \sim 0.05\text{ eV}</m>.
+			</caption>
+			<sidebyside widths="50% 40%">
+				<image source="./images/modern-physics/semi-cond-Si-Al-p-type.png" width="100%"/>
+				<image source="./images/modern-physics/semi-cond-Si-Al-p-type-levels.png" width="100%"/>
+			</sidebyside>
+		</figure>
+
+
+ 
+	</subsection>
+
+	<subsection><title>The p-n Junction</title>
+		<p>
+			What will happen if you bring a <m>p</m>-type semiconductor in contact with an <m>n</m>-type semiconductor? Let us consider the concrete example of Si/Al as <m>p</m>-type and Si/As as <m>n</m>-type. Initially, near the junction there will be conduction electrons on the <m>n</m>-side and holes (empty states) on the <m>p</m>-side.	 Therefore, conduction electrons will simply flow from the <m>n</m>-side 	to the <m>p</m>-side, creating a region free of mobile electrons and holes as shown in <xref ref="fig-semi-conductors-pn-junction-no-field"/> This region is called the <term>depletion region</term>.  A depletion region could be hundreds of microns wide.
+		</p>
+		<p>
+			The flow of conduction electrons from the <m>n</m>-side leaves the donor atoms with an extra proton, making the <m>n</m>-side near the junction become positively charged.  At the same time, the flow of electrons into the holes on the <m>p</m>-side makes the acceptor atoms negatively charged, causing the <m>p</m>-side of the junction become negatively charged near the junction. The charged regions create an electric field in the direction <m>n</m> to <m>p</m>, which opposes the motion of electrons across the junction.  At equilibrium the flow of electrons stops with a potential difference across the depletion region as shown in <xref ref="fig-semi-conductors-pn-junction-no-field"/>.  The potential developed is called the <term>intrinsic voltage</term>, <m>V_i</m>,  which is positive on the <m>n</m>-side and negative on the <m>p</m>-side.
+		</p>
+
+		<figure xml:id="fig-semi-conductors-pn-junction-no-field">
+			<caption>
+				(a) The <m>pn</m>-junction at equilibrium with depletion layer.  (b) The electric field due to charged ion-core in the depletion region. (c) Built-in potential with reference zero in the <m>p</m>-region.
+			</caption>
+			<image source="./images/modern-physics/semi-conductors-pn-junction-no-field.png" width="90%"/>
+		</figure>
+
+		<p>
+			Note that although the <m>p</m> region has more holes than conduction electrons, it still contains conduction electrons. The built-in electric field opposes the diffusive flows of the majority carrier, thus bringing a stop to their flow at equilibrium.  Because the majority and minority carriers are oppositely charged, the built-in electric field actually accelerates the minority carriers.  So, any minority carrier that makes it in the depletion region is quickly swept away to the other side of the depletion region.
+		</p>
+		<p>
+			A <m>pn</m>-junction responds to an external voltage in a very interesting way: the current depends on the polarity of the connection. If the <m>p</m>-side is connected to the negative side of a voltage source and the <m>n</m>-side to the positive side, the so-called reverse-bias connection, there is hardly any current - current may be picoAmp or less. But, if you connect the other way, the <m>p</m>-side to the positive of the voltage source and the <m>n</m>-side to the negative, the so-called forward-bias, a large current flows as shown in <xref ref="fig-semi-conductors-pn-diode"/>. In this way, a <m>pn</m>-junction is like a one-way electronic valve.  If you connect an AC -source to the <m>pn</m>-device, the output signal will be rectified with only half the cycle passing through the <m>pn</m>-junction.  The circuit element that uses <m>pn</m>-juction is called a <term>diode</term>.
+		</p>
+
+		<figure xml:id="fig-semi-conductors-pn-diode">
+			<caption>
+				Top: The circuit connections for reverse and forward bias modes. Middle: The depletion layer also becomes narrower in the forward bias and wider in the reverse bias.  Bottom: The IV-characteristics of a pn-diode in the forward-bias and reverse-bias connections.  The current in the reverse-bias is too small to see on this plot.
+			</caption>
+			<image source="./images/modern-physics/semi-conductors-pn-diode.png" width="90%"/>
+		</figure>
+ 
+
+	</subsection>
+	<subsection><title>The Light-Emitting Diode</title>
+		<p>
+			If a <m>pn</m>-junction of two highly doped materials is driven with a strong forward bias, the majority carriers from both <m>p</m> and <m>n</m> are injected into the junction region.  The electrons  then fall into hole states in the junction region.  This is similar to the de-excitation of an electron from a higher energy state to a lower energy state. In the light-emitting diode the difference in energy is given off as light.  From energy conservation, the energy of the released photon will equal the gap energy <m>E_g</m>.  
+			<me>
+				hf = E_g
+			</me>  
+			By adjusting chemical content of the <m>p</m> and <m>n</m> materials one can design diodes that emit light in visible range.
+		</p>
+
+		<figure xml:id="fig-semi-conductors-light-emitting-diode">
+			<caption>
+				In a light-emitting diode, majority carriers, electron from the <m>n</m>-side and holes from the <m>p</m>-side are injected in the junction area.  Photon is emitted from the energy released when an electron falls into a hole.
+			</caption>
+			<image source="./images/modern-physics/semi-conductors-light-emitting-diode.png" width="90%"/>
+		</figure>
+
+	</subsection>
+
+	<subsection><title>The Diode Laser</title>
+
+		<p>
+			The diode laser is based on the principle that when you inject electrons from the <m>n</m>-side and holes from the <m>p</m>-side of a <m>pn</m>-junction, there is population inversion with higher quantum states occupied and lower states unoccupied. Laser diode is made possible by sandwiching a material between the <m>p</m> and <m>n</m> material that has a narrower band gap than those of the <m>n</m>-side or <m>p</m>-side so that the injected electrons and holes become trapped in the active layer and can combine to produce photons.  The continuous pumping of the electrons and holes into the active region acts as the pump for the laser.  These lasers are also called <term>injection-pumped lasers</term> due to the mechanism by which they are pumped.
+		</p>
+		<p>
+			The original diode laser was based on the GaAs as active layer sandwiched between an <m>n</m>-type GaAlAs and a <m>p</m>-type GaAlAs. Current is injected into the structure by connecting it to a current source with positive voltage connected to the <m>p</m>-end and the negative voltage at the <m>n</m>-end. The energetics and injections of majority carriers are shown in <xref ref="fig-semi-conductors-laser-diode"/>.
+		</p>
+
+		<figure xml:id="fig-semi-conductors-laser-diode">
+			<caption>
+				The schematics of the energy levels in a diode laser.  A diode laser has an active layer material, which is a thin layer between the <m>p</m> and <m>n</m> type semiconductors. The the conduction and valence bands of the active layer is such that the injected electrons and holes could be trapped there for recombination to produce photons.
+			</caption>
+			<image source="./images/modern-physics/semi-conductors-laser-diode.png" width="90%"/>
+		</figure>
+
+
+	</subsection>
+
+
+TODO:
+
+<p>
+
+\begin{exercise}
+ The energy gap in the Germanium is  0.67 eV.  (a) What will be the longest wavelength of the photon that can excite an electron from the valence band to the conduction band?  (b) What will happen if you expose a sample of Germanium to a light of longer wavelength? (c) What will happen if you expose a sample of Germanium to a light of shorter wavelength?
+\end{exercise}
+</p>
+<p>
+	
+\begin{exercise}
+ Often the band gap in a semiconductor is measured by absorption spectrum.  It is found that the longest wavelength  that a semiconductor will absorb is 1.1 $\mu$m. What is the band gap?
+\end{exercise}	
+</p>
+<p>
+\begin{exercise}
+ Silicon has a band gap of 1.14 eV. If the Fermi level is taken to be halfway between the Conduction and Valence bands, what is the probability that a state at the bottom of the conduction band will be occupied at (a) T=250 K, (b) T=300 K, (c) 350 K?
+\end{exercise}
+ 
+</p>
+ 
+
+</section>

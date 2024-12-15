@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="rotation-general" xmlns:xi="http://www.w3.org/2001/XInclude">
+    
+    <title>Rigid Body Motion</title>
+
+    <introduction>
+<!--         <p>
+            In the last chapter we have studied rolling motion of a rigid body. A rigid body is defined as a system of particles in which distance between particles do not change. This will include objects that have discrete masses and objects which can be treated as continuous masses.
+        </p> -->
+<!--         <p>
+            The formulas for objects with discrete masses usually involve summation over the particles. These formulas are converted to integrals by replacing infinitesimal mass elelemt by <m>\rho dV</m>, where <m>\rho</m> is density and <m>dV</m> is volume element.
+        </p>
+  
+
+        <sidebyside widths="50% 50%">
+            <p>
+                As was apparent in our discussion of rolling motion, analysis of rigid body motion is handled by two coordinate systems: (1) a fixed or inertial system <m>Ox'y'z'</m>, and (b) a moving coordinate system <m>Oxyz</m> rigidly fixed to the body.
+            </p>
+
+            <figure xml:id="fig-two-coordinates-in-rigid-body-mechanics">
+                <caption></caption>
+                <image source="./images/rotation-general/two-coordinates-in-rigid-body-mechanics.png" width="70%"/>
+            </figure>
+        </sidebyside> -->
+
+        
+    	<p>
+
+    		In the last chapter we studied rotation of point masses and rigid bodies about a fixed axis. Although, rotation about a fixed axis covers a lot of common applications, there are important applications, such as gyroscope, rotation of planets, tumbling bodies, etc, where axis of rotation, itself rotates. In this chapter we will tackle some of these problems. 
+    		 
+    	</p>
+
+        <!-- <p>
+            Between the general rotation and fixed-axis rotation is a situation of a fixed-point rotation, where rather than a full axis remaining fixed, we require that one point remaining fixed which will allow for study of precession of axis of rotation.
+        </p> -->
+        <sidebyside widths="50% 10% 30%">
+            <p>
+                <xref ref="fig-rotation-of-a-top"/> shows an example of a fixed-point rotation. While the top is rotating about axis 1, point O is fixed. Due to torque from its weight, the angular velocity direction rotates about axis 2. The motion of angular velocity vector <m>\vec \omega</m> about axis 2 is called <term> precession</term>.
+            </p>
+            <p></p>
+            <figure xml:id="fig-rotation-of-a-top">
+                <caption></caption>
+                <image source="./images/rotation-general/rotation-of-a-top.png" width="70%"/>
+            </figure>
+        </sidebyside>
+        <p>
+            Unlike the fixed-axis rotation, where you could take care of vector nature of angular quantities by just following the <q>sense of rotation</q>, here you will need to treat vectors more analytically. We will start by first a review of angular velocity <m>\vec \omega</m>, angular momentum <m>\vec L</m> and torque <m>\vec {\mathcal{T}}</m>.
+        </p>
+
+
+    </introduction>
+
+    	<!-- Sections -->
+
+<!-- 	<section><title> Main Points </title> </section> -->
+
+
+        <xi:include href="./rotation-general-sections/angular-velocity.xml" />
+		<xi:include href="./rotation-general-sections/angular-momentum.xml" />
+        <xi:include href="./rotation-general-sections/principal-axes.xml" />
+
+        <xi:include href="./rotation-general-sections/rotational-dynamics.xml" />
+
+        <xi:include href="./rotation-general-sections/gyroscope.xml" />
+
+		<xi:include href="./rotation-general-sections/rotational-kinetic-energy.xml" />
+
+        <xi:include href="./rotation-general-sections/rotation-general-bootcamp.xml" />
+
+
+</chapter>

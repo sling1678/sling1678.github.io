@@ -1,0 +1,109 @@
+<section xml:id="ray-optics-versus-wave-optics"><title> Ray Optics versus Wave Optics </title>
+	<introduction>
+        <p>
+        	What happens when an electromagnetic wave encounters an object? That depends on the relative size of the object and wavelength of light. We will denote the size of the object by its smalles dimension along any direction by letter <m>L</m>. We assume that <m>L</m> is not atomic size so that we can treat everything <term>classically</term>.
+        </p>
+        <p>
+        	The interaction between light particles and matter particles occur through the electric charge of the matter particles and electric and magnetic fields associated with the electromagnetic wave of light. Upon interaction, matter reradiates light - the new light back into the original medium is called <term>reflected</term> light and that goes inside the matter is called <term>transmitted or refracted</term> light. 
+        </p>
+        <p>
+        	Although, we could study the classical interaction between light and matter in terms of wave picture of light, these details are not necessary in many practical situations, such as studying microscopes and telescopes. We distinguish two types of analysis as outlined below and illustrated in <xref ref="fig-wave-vs-ray"/>.
+        </p>
+        <p>
+        	<term>Ray/Geometric Optics</term>: 
+        	If the wavelength <m>\lambda</m> of light is much smaller than the size <m>L</m> of the object <alert> and </alert> we are only interested in directions of reflected and transmitted lights, then, we could treat light beam simply by a ray picture. When we do that, we say that we are doing geometric or ray optics.
+        </p>
+        <p>
+        	<term>Wave/Physical Optics</term>: 
+        	However, if <m>\lambda \ge L</m> or <m>L</m> only a few times <m>\lambda</m> so that we cannot claim <m>\lambda \lt \lt </m>, then ray picture will give us misleading answers. In this situation, we must use the wave picture and treat light as electromagnetic wave. Also, if we are interested in how much energy in the light ends up in the reflected part and how much in the transmitted part, we must use the wave picture. Physical optics is another term for wave optics.
+        </p>
+        <figure xml:id="fig-wave-vs-ray">
+        	<caption>
+        		(a) Geometric optics situation applies when wavelength is much smaller than the dimensions of objects the light interacts with, and  (b) Physical or wave optics situation applies when the wavelength of the light is of the same order as the dimension of the object.
+        	</caption>
+			<image source="./images/fundamentals-of-optics/wave-vs-ray.png" width="90%"/>
+        </figure>
+ 		<p>
+ 			Although geometrical optics can also be understood from the more fundamental subject of physical optics, it is far easier to apply, and when applicable, it is definitely preferred.  Thus, when the red light of wavelength 700 nm strikes a lens of size 1 cm it is best to use rules of geometrical optics to figure out what will happen, but when the same light strikes a thin fiber of diameter <m>1\ \mu\text{m}</m> you will have to use physical optics to understand what is going on.
+ 		</p>
+        
+    </introduction>
+
+	<exercise xml:id="exercise-Deciding-Between-Wave-Optics-and-Geometric-Optics"><title>Deciding Between Wave Optics and Geometric Optics</title>
+
+		<statement>
+			<p>
+				Decide when you will have to use wave optics in the following situations. 
+			</p>
+			<p>
+				(a) A green laser light of wavelength <m>530\text{ nm}</m> is incident on a mirror of size <m>30\text{ cm}</m>. Will your answer change if you also needed to fidn intensity of the reflected and transmitted waves?
+			</p>
+			<p>
+				(b) A red laser light of wavelength <m>632\text{ nm}</m> is incident on a bead of diameter <m>10\:\mu\text{m}</m>. Will your answer change if you also needed to fidn intensity of the reflected and transmitted waves?
+			</p>
+ 
+			<p>
+				(c) A radio wave of frequency <m>10^9\text{ Hz}</m> is incident on a square aluminum plate of area <m>9 \text{m}^2</m>.  Will your answer change if you also needed to fidn intensity of the reflected and transmitted waves?
+			</p>
+			<p>
+				(d) A radio wave of frequency <M>10^9\text{ Hz}</M> incident on a square aluminum plate of area <m>9\text{ cm}^2</m>. Will your answer change if you also needed to fidn intensity of the reflected and transmitted waves?
+			</p>
+		</statement>
+		<hint><p>Compare wavelength with the dimension of the object. </p></hint>
+		<answer><p> (a) Ray, (b) Wave, (c) Ray, (d) Wave. If intensity required, we need to study wave picture. </p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a) Here dimension is <m>L=30\text{ cm}</m> and wavelength <m>\lambda = 530\text{ nm}</m>. These give us
+				<me>
+					\frac{L}{\lambda} = 5.66\times 10^5.
+				</me>
+				That is <m>L \gt\gt \lambda</m>. We will use ray optics here if we do not need to study intensity.
+			</p>
+			<p>
+				Yes, the answer will change since for intensity studies we need the wave picture.
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b) Here dimension is <m>L=2.0\:\mu\text{m}</m> and wavelength <m>\lambda = 632\text{ nm}</m>. These give us
+				<me>
+					\frac{L}{\lambda} = 3.16.
+				</me>
+				That is <m>L \sim \lambda</m>. We must use wave optics here.
+			</p>
+			<p>
+				No, the answer will not change since for intensity studies we need the wave picture.
+			</p>
+		</solution>
+		<solution><title>(c)</title>
+			<p>
+				(c) Compare <m>\lambda</m> to the smallest dimensions of the plate, which would be the square-root of the area, <m>\sqrt{A}</m>.  Note, we cannot compare a length to an area, that is why we must get the square root of the area. Here 
+
+				<md>
+					<mrow> \lambda \amp = \frac{3\times 10^8\:\textrm{m/s}}{10^9\:\textrm{Hz}} = 0.3\:\textrm{m}</mrow>
+					<mrow> sqrt{A} = 3 \text{ m}</mrow>
+
+				</md> 
+				Therefore, we have <m>\lambda \lt \lt \sqrt{A}</m>, we can use the ray approximation if we do not need intensity studies. 
+			</p>
+			<p>
+				Yes, the answer will change since for intensity studies we need the wave picture.
+			</p>
+		</solution>
+		<solution><title>(d)</title>
+			<p>
+				(d) Here, <m>\sqrt{A}= 0.03\text{ m}</m> and <m>\lambda = 0.3\text{ m}</m>. Since <m>\lambda \gt \gt \sqrt{A}</m>, we need to use the wave picture.
+			</p>
+			<p>
+				No, the answer will not change since for intensity studies we need the wave picture.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+
+</section>

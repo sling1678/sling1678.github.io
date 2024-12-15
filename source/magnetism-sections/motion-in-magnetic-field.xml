@@ -1,0 +1,533 @@
+<section xml:id="Motion-in-Magnetic-Field"><title> Motion in a Magnetic Field </title>
+	<introduction>
+		<p>
+			In this section we will study motion of a charged particle in an environment where only magnetic field is present. To further simplify the situation, we will study the motion only in an environement of constant magnetic field. 
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				We will find below that if a particle of charge <m>Q</m> enters a region of constant uniform magnetic field <m>\vec B</m> with velocity <m>\vec v</m> perpendicular to the magnetic field, then, its motion is a circular motion with Newton's law taking the following form.
+				<me>
+					m\dfrac{v^2}{R} = Q v B.
+				</me>
+
+			</p>
+			<p> </p>
+			<figure xml:id="fig-particle-circle-uniform-mag">
+				<caption>
+					Circular motion of a positive charge in a uniform magnetic field.  <!-- <m>\vec B</m> with direction comin-out-of-page. The particle enters the uniform <m>\vec B</m> with speed <m>v</m>. The radius of the circle depends on mass <m>m</m>, charge <m>Q</m>, and magnetic field <m>B</m>, as given by <m> R= (m/QB) v</m>. -->
+				</caption>
+				<image source="./images/magnetism/particle-circle-uniform-mag.png" width="50%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			This also says that, even though momentum changes as reflected in the chnaging direction of motion, the magnitude of momentum is constant and is given by
+			<me>
+				m v = Q R B.
+			</me>
+			Note that the angular speed <m>\Omega</m> in the circular motion is
+			<me>
+				\Omega = \dfrac{v}{R} = \dfrac{QB}{m}. 
+			</me>
+			Even when the motion may not complete a circle, we can imagine a period of a particle moving continuously in a circle with this angular speed. The period of such an imagined motion will be the time to complete the motion once around the circle, i.e, time for <m>2\pi</m> radians of  angle.
+			<me>
+				T = \dfrac{2\pi}{\Omega}.
+			</me>
+			the inverse of this period is called <term>cyclotron frequency</term>, <m>f_c</m>.
+			<me>
+				f_c = \dfrac{\Omega}{2\pi}.
+			</me>
+		</p>
+ 
+		<sidebyside widths="65% 10% 25%">
+			<p>
+				The formulas above are for particles that enter a magnetic field region with velocity perpendicular to the magnetic field. What happens if velocity is not perpendicular to the magnetic field? Suppose magnetic field is along <m>z</m> axis and particle's velocity makes an angle <m>\theta</m> with the <m>z</m> axis. You will find that the particle moves in a helical path around the <m>z</m> axis, as shown in <xref ref="fig-helical-path-1"/> below, with the pitch <m>\lambda</m> given by
+ 
+				<me>
+					\lambda = \dfrac{ 2\pi v\cos\, \theta }{\Omega},
+				</me>
+				and the radius <m>R</m> of the loops in the helix is
+				<me>
+					R =  \dfrac{1}{\Omega}v\sin\,\theta.
+				</me>
+			</p>
+
+			<p> </p>
+			<figure xml:id="fig-helical-path-1">
+				<caption>
+				</caption>
+				<image source="./images/magnetism/helical-path.png" width="50%"/>
+			</figure>
+
+		</sidebyside>
+
+ 
+	</introduction>
+	<subsection> <title>(Calculus) Equation of Motion of a Particle in Uniform Magnetic Field </title>
+		<p>
+			Consider a particle of  mass <m>m</m> and charge Q moving in a uniform magnetic field of magnitude <m>B_0</m>, which is pointed towards positive <m>z</m> axis. We assume only magnetic forces on the particle are relevant. Then, equation of motion of the particle,
+			<me>
+				m\dfrac{d\vec v}{dt} = Q\vec v \times \vec B,
+			</me>
+			takes the following component form.
+			<md>
+				<mrow>  \dfrac{dv_x}{dt} \amp = \dfrac{QB_0}{m}\,v_y, </mrow>
+				<mrow>  \dfrac{dv_y}{dt} \amp = -\dfrac{QB_0}{m}\,v_x, </mrow>
+				<mrow> \frac{dv_z}{dt} \amp = 0. </mrow>
+			</md>
+			Denote <m>Q B_0/m</m> by symbol <m>\Omega</m> to simplify writing.
+			<me>
+				\Omega = \dfrac{QB_0}{m}.
+			</me>
+			Therefore, the equations of motion are
+			<mdn>
+				<mrow>  \dfrac{dv_x}{dt} \amp = \Omega\,v_y, </mrow>
+				<mrow>  \dfrac{dv_y}{dt} \amp = -\Omega\,v_x, </mrow>
+				<mrow> \frac{dv_z}{dt} \amp = 0. </mrow>
+			</mdn>
+			We wish to solve this equation for given initial velocity, <m>\vec v_0 = \left( v_{0x},\ v_{0y}\ v_{0z}\right)</m>. First notice that we can get separate equations for v_x and v_y.
+			<mdn>
+				<mrow>  \dfrac{d^2v_x}{dt^2} \amp = -\Omega^2\,v_x, </mrow>
+				<mrow>  \dfrac{d^2v_y}{dt^2} \amp = -\Omega^2\,v_y, </mrow>
+				<mrow> \frac{dv_z}{dt} \amp = 0. </mrow>
+			</mdn>
+			The solutions are
+			<md>
+				<mrow> \amp  v_x(t) = A \cos(\Omega t) + B \sin(\Omega t), </mrow>
+				<mrow> \amp v_y(t) = C \cos(\Omega t) + D \sin(\Omega t), </mrow>
+				<mrow> \amp v_z(t) = E, </mrow>				
+			</md>
+			where <m> A,\ B,\ C,\ D,\ E</m> are constants.	By using the initial veocity condition, we get
+			<me>
+				E = v_{0z},
+			</me>			
+			Note<m> A,\ B,\ C,\ D</m> are not all independent since derivative of <m>v_x</m> is proportional to <m>v_y</m>. Therefore, we must have
+			<me>
+				-\Omega A \sin(\Omega t) + \Omega B \cos(\Omega t) =\Omega  C \cos(\Omega t) + \Omega D \sin(\Omega t).
+			</me>
+			Therefore,
+			<me>
+				-A = D,\ \ B = C.
+			</me>
+			Therefore, we write <m>v_x </m> and <m>v_y</m> with only two constants.
+			<md>
+				<mrow> \amp v_x(t) = A \cos(\Omega t) + B \sin(\Omega t), </mrow>
+				<mrow> \amp v_y(t) = B \cos(\Omega t) - A \sin(\Omega t), </mrow>	
+			</md>
+			Now, we use initial conditions on these components.
+			<md>
+				<mrow> \amp  v_{0x} = A, </mrow>
+				<mrow>  \amp v_{0y} = B, </mrow>	
+			</md>
+			Finally, we have velocity at arbitray time
+ 			<md>
+				<mrow> \amp  v_x(t) = v_{0x} \cos(\Omega t) + v_{0y} \sin(\Omega t), </mrow>
+				<mrow> \amp  v_y(t) = v_{0y} \cos(\Omega t) - v_{0x} \sin(\Omega t), </mrow>
+				<mrow> \amp	v_z(t) = v_{0z}.</mrow>
+			</md>
+			From these we can obtain position of the particle at arbitrary instant by simply integrating. Let position at initial instant be <m>\vec r_0 = (0,\ 0,\ 0)</m>.
+ 			<md>
+				<mrow>  \amp x(t) = \dfrac{v_{0x}}{\Omega} \sin(\Omega t) + \dfrac{v_{0y}}{\Omega} \left(1- \cos(\Omega t) \right), </mrow>
+				<mrow>  \amp y(t) = \dfrac{v_{0y}}{\Omega} \sin(\Omega t) - \dfrac{v_{0x}}{\Omega} \left( 1 - \cos(\Omega t) \right), </mrow>
+				<mrow> 	\amp z(t) = v_{0z} t.</mrow>
+			</md>
+			
+		</p>
+		<sidebyside widths="65% 10% 25%">
+			<p>
+				The  trajectory in the <m>(x,y)</m>plane, i.e., plane perpendicular the magnetic field, is an equation of a circle with the following center and radius.
+				<md>
+					<mrow> \amp \text{center at: } \left( \dfrac{v_{0y}}{\Omega},\ - \dfrac{v_{0x}}{\Omega} \right)</mrow>
+					<mrow> \amp \text{radius: } R = \dfrac{1}{\Omega}\sqrt{ v_{0x}^2 + v_{0y}^2}.</mrow>
+				</md>
+				The <m>z</m> coordinate moves linearly in time. As a result, the motion is a helical motion whose axis is parallel to the <m>z</m> axis.
+			</p>
+
+			<p> </p>
+			<figure xml:id="fig-helical-path">
+				<caption>
+				</caption>
+				<image source="./images/magnetism/helical-path.png" width="50%"/>
+			</figure>
+
+		</sidebyside>
+		<p>
+			The circular motion perpendicular to the axis of the helix completes one cycle in the time period given by angular frequency <m>\Omega</m>. Suppose this time is <m>t_\text{pitch}</m>. Then,
+			<me>
+				t_\text{pitch}= \dfrac{2\pi}{\Omega}.
+			</me>
+			During this time, the particle will move a distance <m>v_{0z}t_\text{pitch}</m> along the axis. Therefore, the <alert> pitch</alert>, <m>\lambda</m>, of the helical path will be
+			<me>
+				\lambda = v_{0z}\, t_\text{pitch} =  \dfrac{2\pi v_{0z}}{\Omega}.
+			</me>
+		</p>
+		
+	</subsection>
+
+	<exercise xml:id="ex-Identifying-Elementary-Particle-from-its-Trajectory-in-Magnetic-Field"><title> Identifying Elementary Particles from Their Trajectories in Magnetic Field </title>
+		<statement>
+			<p>
+				A particle of charge <m>+1\;e</m> enters a region of  uniform magnetic field of magnitude <m>2\text{ T}</m> with a velocity of <m>9.6 \times 10^5\text{ m/s}</m> perpendicular to the magnetic field.  It is observed that the particle makes an arc of radius <m>5\text{ mm}</m> before coming out of the region.  Find the mass of the particle.
+			</p>
+
+		</statement>
+		<hint> <p> Use <m> mv = QRB</m> formula.  </p> </hint>
+		<answer> <p>  <m> 1.67\times 10^{-27}\ \text{kg}</m>. </p> </answer>
+		<solution> 
+			<p>
+				The problem states that the particle makes an arc, which is part of a circle.  Therefore, we can claim that the particle describes a circular path when in the region of constant magnetic field and use the formula for <m>Q/m</m> obtained above to write mass in terms of the given quantities.
+				<me>
+					\frac{Q}{m} = \frac{v}{RB_0}\ \ \Longrightarrow \ \ m = \frac{QRB_0}{v}
+				</me>
+				Now, we put numbers in to obtain
+				<md>
+					<mrow> m \amp = \frac{1.6\times 10^{-19} \text{C} \times 0.005\ \text{m}\times 2\ \text{T}}{9.6\times 10^{5} \text{m/s}}</mrow>
+					<mrow> \amp = 1.67\times 10^{-27}\ \text{kg}.</mrow>
+				</md> 
+				The particle with charge <m> +1\ e</m> and mass <m>1.67\times 10^{-27}\ \text{kg}</m> is proton.
+
+			</p>
+		</solution>
+	</exercise>
+ 
+	<example xml:id="exp-The-Velocity-Selector"><title> The Velocity Selector </title>
+		<statement>
+			<sidebyside widths="50% 50%">
+				<p>
+					Consider a region of space where electric field <m>\vec E</m> and magnetic field <m>\vec B</m> are perpendicular to each other as shown in figure below.  The perpendicular electric and magnetic fields are called <term>crossed fields</term>. 
+				</p>
+				<image source="./images/magnetism/velocity-selector.png" width="50%"/>
+			</sidebyside>
+			<sidebyside widths="50% 50%">
+				<p>
+					A charged particle entering the region with its velocity perpendicular to both <m>\vec E </m> and <m>\vec B </m> will have oppositely directed electric and magnetic foeces acting on it. Balancing the two forces gives the condition for zero acceleration. Let us denote this particular speed to by <m>v_\text{selected}</m>.
+
+				</p>
+				<image source="./images/magnetism/velocity-selector-balancing-forces.png" width="50%"/>
+			</sidebyside>
+			<me>
+				qv_\text{selected} B = qE\Longrightarrow v_\text{selected} = \dfrac{E}{B}.
+			</me>
+			<p>
+				If <m> v \gt v_\text{selected} </m>, then magnetic force is greater and if <m> v \lt v_\text{selected} </m>, then electric force is greater. In both cases, particle curves up or down. If we collect particles that pass through the region undeviated, i.e., in the straight path, we will selected particles with speed equal to <m>\dfrac{E}{B}</m>. This is why a crossed-field region is called a <term>velocity selector</term>.
+			</p>
+ 
+			<p>
+				Suppose, for some experiment you need charged particles with speed <m>2.0\times 10^6\text{ m/s}</m>. You have an apparatus that can generate a voltage of <m>3000\text{ V}</m>. You apply this voltage across a parallel plate capacitor with distance <m>1.0\text{ cm}</m>. What magnitude magnetic field do you need?
+			</p>
+			
+
+			
+			<!-- <image source="./images/magnetism/cross-field-1.png" width="50%"/> -->
+ 
+		</statement>
+		<hint><p>Use <m>E=V/d</m> and <m>v=E/B</m>.</p></hint>
+		<answer> <p>  <m>0.15\text{ T}</m>.  </p> </answer>
+		<solution>
+			<p>
+				From voltage across the parallel plate capacitor we get the electric field between the plates to be
+				<me>
+					E = \dfrac{V}{d} =  \dfrac{3000\text{ V}}{1.0\times 10^{-2}\text{ m}} = 3\times 10^5\text{ V/m}.
+				</me>
+				Now, we use the velocity-selector formula to get the needed <m>B</m>.
+				<me>
+					B = \dfrac{E}{v} = \dfrac{3\times 10^5}{2.0\times 10^{6}} = 0.15\text{ T}. 
+				</me>
+			</p>
+		</solution>		
+ 
+	</example>
+
+ 	<exercise xml:id="ex-Cyclotron-Frequency-of-an-Electron-in-a-Magnetic-Field"><title> Cyclotron Frequency of an Electron in a Magnetic Field </title>
+		<statement>
+			<p>
+				An electron of speed <m>5 \times 10^6</m> m/s moves in a circle of radius 3 cm when subjected to a magnetic field perpendicular to its velocity.  (a) Find the magnetic field. (b) Evaluate the cyclotron frequency. 
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Use <m>mv=QBR</m>. (b) Use <m>f_c</m> formula. </p> </hint>
+		<answer> <p>  (a)  Magnitude <m>9.5\times 10^{-4}\ \text{T}</m>, (b)  <m>\Omega = 1.7\times 10^8 \ \text{rad/s}</m> or <m> f_c=2.66\times 10^{7}\text{ Hz} </m> . </p> </answer>
+		<solution><title>(a)</title>
+			<p> (a)
+				Use the circular motion for a particle moving a magnetic field to obtain
+				<md>
+					<mrow> \dfrac{Q}{m} \amp = \dfrac{v}{RB}\ \ \Longrightarrow\ \ B = \dfrac{mv}{QR}</mrow>
+					<mrow>  \amp = \dfrac{9.1\times 10^{-31}\:\text{kg}\times 5\times 10^{6}\:\text{m/s}}{1.6\times 10^{-19}\:\text{C}\times 0.03\:\text{m}} = 9.5\times 10^{-4}\:\text{T}.</mrow>
+				</md>
+			</p>
+
+		</solution>
+
+		<solution><title>(b)</title>
+			<p>
+				(b)
+				The cyclotron (angular) frequency is
+				<md>
+					<mrow> \Omega \amp = \dfrac{QB}{m}</mrow>
+					<mrow> \amp = \dfrac{1.6\times 10^{-19}\:\text{C} \times 9.5\times 10^{-4}\:\text{T}}{9.1\times 10^{-31}\:\text{kg}} = 1.67\times 10^{8}\:\text{rad/s}.</mrow>
+				</md>
+				Therefore, cyclotron frequqncy is
+				<me>
+					f_c = \dfrac{\Omega}{2\pi} = 2.66\times 10^{7}\text{ Hz}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Bending-of-Trtajectory-of-an-Alpha-Particle-in-Magnetic-Field"><title> Bending of Trajectory of an Alpha Particle in Magnetic Field </title>
+		<statement>
+			<sidebyside widths="60% 5% 35%">
+				<p>
+					In a region between north and south poles of a strong magnet there is a uniform magnetic field of 3 T pointed up.  An alpha particle of charge <m>+2\ e</m> and mass equal to the sum of two protons and two neutrons enters the region from east with a speed of <m>4 \times 10^6</m> m/s.  It makes a circular arc of 90-degrees before exiting. 
+				</p>
+				<p></p>
+				<image source="./images/magnetism/bending-path-of-alpha-particle.png" width="50%"/>
+			</sidebyside>
+			<p>
+				(a) What is the radius of the circular arc?  (b) What is the value of the cyclotron frequency? 
+			</p>
+
+			
+
+		</statement>
+		<hint> <p>  Use circular motion equations. </p> </hint>
+		<answer> <p> (a) 2.78 cm, (b)  <m>\Omega = 1.44\times 10^8\ \text{rad/s}</m> or <m>f_c = 2.29\times 10^7\text{ Hz}.</m>. </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a)
+
+				The radius of the circular arc will be
+				<md>
+					<mrow> R \amp = \dfrac{mv}{QB}  = \dfrac{4\times 1.67\times 10^{-27}\:\text{kg}\times 4\times 10^{6}\:\text{m/s}}{2\times 1.6\times 10^{-19}\:\text{C}\times 3\:\text{T}} = 2.78\:\text{cm}.
+					</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				(b)
+				The cyclotron (angular) frequency will be
+				<md>
+					<mrow> \Omega \amp = \dfrac{QB}{m}= \dfrac{2\times 1.6\times 10^{-19}\:\text{C} \times 3\:\text{T}}{4\times 1.67\times 10^{-27}\:\text{kg}} = 1.44\times 10^{8}\:\text{rad/s}. </mrow>
+				</md>
+				In units of <m>Hz</m> this will be
+				<me>
+					f_c = \frac{\omega}{2\pi} = 2.29\times 10^7\text{ Hz}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Helical-Path-of-a-Proton-in-a-Magnetic-Field"><title> Helical Path of a Proton in a Magnetic Field </title>
+		<statement>
+			<p>
+				A proton enters a uniform magnetic field region with a velocity of <m> 6 \times 10^5 \text{ m/s}</m> at an angle of <m>80^{\circ}</m> with the direction of the magnetic field.  Find the pitch of the helical path if magnetic field has a magnitude of <m>2\text{ T}</m>.  
+			</p>
+
+		</statement>
+		<hint> <p>  Use helical path equations. </p> </hint>
+		<answer> <p> <m>3.4\text{ mm}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				To find the pitch we need the cyclotron frequency <m>\Omega</m> and <m>z</m>-component of initial velocity, where <m>z</m> is the axis of the helix.
+			</p>
+			<me>
+				\Omega = \dfrac{QB}{m} = \dfrac{1.60\times 10^{-19}\text{ C}\times 2\text{ T} }{ 1.67 \times 10^{-27}\text{ kg} } = 1.92\times 10^{8}\text{ rad/s}.
+			</me>
+			The component of velocity along axis is
+			<me>
+				v_z = v\cos\,\theta = 6 \times 10^5\text{ m/s}\times \cos\, 80^{\circ} = 1.04\times 10^{5}\text{ m/s}.
+			</me>
+			Therefore, pitch along axis is
+			<me>
+				\lambda = \dfrac{2\pi v_z}{\Omega} = 0.0034\text{ m} = 3.4\text{ mm}.
+			</me>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Beam-Steering-by-Magnetic-Field"><title> Beam Steering by Magnetic Field </title>
+		<statement>
+			<p>
+				A particle's path is bent when it passes through a region of non-zero magnetic field although its speed remains unchanged. This is very useful for <term>beam steering</term>  in particle accelerators.
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					 Consider an electron of speed <m>4 \times 10^6\text{ m/s}</m> entering a region of uniform magnetic field <m>0.5\times 10^{-4}\text{ T}</m> over a <m>10\text{-cm}</m> wide region. Magnetic field is perpendicular to the velocity of the particle as shown in <xref ref="fig-beam-steering"/>. By how much angle will the path of the electron be bent? 
+				</p>
+				<p></p>
+				<figure xml:id="fig-beam-steering">
+					<caption>
+					</caption>		
+					<image source="./images/magnetism/beam-steering.png" width="90%"/>
+				</figure>
+			</sidebyside>
+
+		</statement>
+		<hint> <p> The particle goes in and comes out tangents to a circle. </p> </hint>
+		<answer> <p>  <m> 12.7^\circ</m>. </p> </answer>
+		<solution> 
+			<sidebyside widths="55% 45%">
+				<p>
+					The particle will move at a constant speed since magnetic force on a charged particle affects only the direction of the velocity and not the magnitude. From the circular motion we find that the radius of the circular arc will be given by
+				</p>
+				<image source="./images/magnetism/beam-steering-particle-exit.png" width="80%"/>
+			</sidebyside>
+			<md>
+				<mrow> R \amp = \dfrac{mv}{|q|B}<!-- </mrow>
+				<mrow> \amp  -->= \dfrac{9.1\times 10^{-31}\text{ kg} \times 4\times 10^{6}\text{ m/s}}{1.6\times 10^{-19}\text{ C}\times 0.5 \times 10^{-4}\text{ T}} <!-- </mrow>
+				<mrow> \amp --> = 0.455 \:\textrm{m}.</mrow>
+			</md>
+			<p>
+				The angle of deviation <m> \theta</m>  can be obtained from the fact that particle's velocity is tangent to the circle of motion. Hence, from the figure it is seen that <m>\theta = \phi</m> in the right-angled triangle. You can show this by making use of the fact that the tangent to a circle is normal to the line from the center. Therefore, the exit angle will be
+				<md>
+					<mrow> 
+						\theta \amp = \phi = \sin^{-1} \left( \dfrac{d}{R}\right)<!-- </mrow>
+					<mrow> 
+						\amp --> = \sin^{-1} \left( \dfrac{10\:\textrm{cm}}{45.5\:\textrm{cm}}\right)  = 12.7^{\circ}.</mrow>
+				</md>
+
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<example xml:id="exp-Cyclotron"><title> The Cyclotron </title>
+			<p>
+				A <term>cyclotron</term> is a device for accelerating charged particles.  It was one of the earliest particle accelerators and it is still used today as a first stage in a multistage particle accelerator. Cyclotron uses electric field to boost the speed and magnetic field to bend the trajectory of the particle and bring it in a region where there is electric field to act on it again and again.
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					To accomplish this task a cyclotron used two D-shaped hollow metals with open flat side as shown in <xref ref="fig-cyclotron-ds"/>.  They are connected to an AC source of voltage, <m>V = V_0 \cos (2 \pi f t)</m>, which creates an oscillating electric field in the gap between the two D's.  Particle travels with increasing speed in larger and larger radii circles, but the time is same for each half-cycle.  
+				</p>
+				<p></p>
+				<figure xml:id="fig-cyclotron-ds">
+					<caption>
+						 
+					</caption>
+
+					<image source="./images/magnetism/cyclotron-ds.png" width="50%"/>
+				</figure>
+			</sidebyside>
+ 
+
+			<p>
+				A magnetic field is created perpendicular to the plane of D's by  magnetic poles below and above the D's. Particles are injected in the center and accelerated into one of the D's where magnetic field bends it back into the gap, at which time electric field also is in the opposite direction to the last time particle was in the gap. 
+			</p>
+
+			<p>	
+				Particle travels with increasing speed in larger and larger radii circles, but the time is same for each half-cycle. The frequency the cyclotron frequency. The maximum speed achieved depends on the radius of the largest orbit. Let <m>Q</m> and <m>m</m> be the charge and mass of the particle, and <m>B_0</m> be the uniform magnetic field. 
+			</p>
+			<p>
+				Matching the cyclotron frequency to the frequency <m>f</m> of the voltage oscillations required for proper operations of the cyclotron.
+				<me>
+					f = f_c = \dfrac{\Omega}{2\pi}= \dfrac{1}{2\pi}\:\dfrac{QB_0}{m}.
+				</me>
+			</p>
+
+
+
+	</example>
+
+
+	<exercise xml:id="ex-Mass-Spectrometer"><title> The Mass Spectrometer </title>
+		<statement>
+			<p>
+				<xref ref="fig-mass-spectrometer"/> shows an arrangement for measuring mass of ions by an instrument called <term>mass spectrometer</term>.  
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					In a mass spectrometer, an ion created in a chamber is accelerated to a high speed by a accelerating voltage <m>V_\text{acc}</m>. The ions of speed <m>v</m> bend in a circular arc in a constant magnetic field <m>B_0</m>. From the radius <m>R</m> of the trajectory, <m>v</m>, <m>q</m>, and <m>B_0</m>, we can find the mass of the ion.
+				</p>
+				<p></p>
+				<figure xml:id="fig-mass-spectrometer">
+					<caption>
+					</caption>
+					<image source="./images/magnetism/mass-spectrometer.png" width="70%"/>
+				</figure>
+
+			</sidebyside>
+			<p>
+				(a) In  <xref ref="fig-mass-spectrometer"/>, the ion moves in a semi-circular path striking a photographic plate at a distance <m> x</m> from the entry point. Derive a formula for mass <m>m</m> in terms of <m> B_0</m>, <m>q</m>, <m>V_{\text{acc}}</m> and <m>x</m>. 
+			</p>
+			<p>
+				(b) In an experiment, we desire to have a separation of <m>\text{C}_2\text{H}_6^{+}</m> and <m>\text{C}_2\text{H}_5\text{D}^{+}</m> by <m>1.0\text{ mm}</m> on the screen. We have <m>V_\text{acc}=550\text{ V}</m> and we need to decide on the magnetic field we will need. Find the required magnetic field. Use masses of the ions to equal <m>30\,m_p</m> and <m>31\,m_p</m> .
+			</p>
+			
+
+		</statement>
+		<hint> <p> (a) (1) Conservation of energy for the acceleration part, and (b) Circular motion for magnetic field par. (b) Use the answer of (a). </p> </hint>
+		<answer> <p> (a) <m> m = \left( \dfrac{qB_0^2}{8 V_{\textrm{acc}} }\right)\: x^2</m>, (b) <m>0.0194\text{ T}</m>. </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a)
+				In the acceleration part we apply conservation of energy to find the speed upon acceleration by electric field in the accelerator.
+				<men xml:id="eq-mass-spec-acceleration">
+					\dfrac{1}{2}\,m v^2 = qV_{\text{acc}}\Longrightarrow v = \sqrt{2qV_{\text{acc}}/m}.
+				</men>
+			</p>
+			<p>
+				In the region of the uniform magnetic field, the motion is uniform circular motion of radius <m>R</m>.
+				<men xml:id="eq-mass-spec-bending-path">
+					R = \dfrac{mv}{qB_0}.
+				</men>				
+			</p>
+			<p>
+				Using <m>v</m> from Eq. <xref ref="eq-mass-spec-acceleration" />, we get
+				<me>
+					R = \dfrac{m}{qB_0}\times \sqrt{2qV_{\text{acc}}/m}.
+				</me>
+				Solving for <m>m</m>,
+				<me>
+					m = \left( \dfrac{qB_0^2}{2 V_{\textrm{acc}} }\right)\: R^2.
+				</me>
+				Since diameter <m>x = 2R</m>, we can express this in <m>x</m>
+				<me>
+					m = \left( \dfrac{qB_0^2}{8 V_{\textrm{acc}} }\right)\: x^2.
+				</me>				
+			</p>
+ 
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)
+				From answer in (a) we have 
+				<me>
+					x = 2R = \dfrac{1}{B_0}\times \sqrt{8mV_{\text{acc}}/q}.
+				</me>
+				Therefore, for the two ions we will get
+				<md>
+					<mrow> x_2 - x_1 \amp = \dfrac{1}{B_0}\times \sqrt{8m_2V_{\text{acc}}/q} - \dfrac{2}{B_0}\times \sqrt{8m_1V_{\text{acc}}/q} </mrow>
+					<mrow> \amp = \dfrac{1}{B_0}\times \sqrt{8V_{\text{acc}}/q} \left(\sqrt{m_2} - \sqrt{m_1} \right). </mrow>
+				</md>
+				Solving for <m>B_0</m> gives
+				<me>
+					B_0 = \dfrac{\sqrt{8V_{\text{acc}}/q}}{x_2-x_1} \left(\sqrt{m_2} - \sqrt{m_1} \right). 
+				</me>
+				We now put in the numbers, converting all units in the SI. Using masses <m>m_1=30m_p</m> and <m>m_2=31m_p</m> and <m>m_p = 1.67\times 10^{-27}\text{ kg}</m>, to get
+				<md>
+					<mrow>B_0 \amp = \dfrac{ \sqrt{8 \times 550/1.6\times 10^{-19}} }{0.001}\times </mrow>
+					<mrow>\amp \ \ \ \ \ \ \ \ \left(\sqrt{31\times 1.67 \times 10^{-27} } - \sqrt{30\times 1.67 \times 10^{-27} } \right) </mrow>
+					<mrow> \amp = 0.0194\text{ T}.</mrow>
+				</md>
+			</p>
+		</solution>
+
+	</exercise>
+
+
+ 
+
+
+
+
+
+
+
+
+
+</section>
+
+

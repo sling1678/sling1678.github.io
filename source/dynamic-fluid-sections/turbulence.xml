@@ -1,0 +1,86 @@
+<section xml:id="Turbulence"><title> Turbulence </title>
+
+	<introduction>
+		<p>
+			When you let water out of a tap, first you get a smooth laminar flow when the speed of flow is not high, but as you turn up the flow it becomes more roiled and turbulent.  You see the same transition from a laminar flow to a turbulent flow in all fluids when speed is increased. Turbulence occurs when the resistance to flow is dominated by inertial forces rather than viscous forces.
+		</p>
+		<p>
+			Reynold's number, named after the British engineer Osborne Reynolds (1842-1912) who introduced it in a paper in 1883, can be used to decide if the flow is in a turbulent regime or in a laminar flow regime. We will denote Reynold's number by <m> N_R</m>, although you will find it dented by <m> Re</m> in some other books.
+		</p>
+		<p>
+			We define <m> N_R</m> by the ratio of the inertial properties and viscous properties so that the resulting number is dimensionless. Inertial properties are represented by density of the  fluid, <m>\rho</m> and the speed of flow <m> v</m>, whose product makes up momentum density. The viscous effects are represented by the coefficient of viscosity <m> \eta </m> and a length dimension <m> D</m>, a sort-of cross-section over which the viscous effect occurs. Dividing <m>\eta</m> by <m> D</m> also has units of momentum density.
+			<men>
+				N_R = \dfrac{\rho v}{ \eta/D} = \dfrac{\rho v D}{ \eta}. 
+			</men>		
+		 	The Reynolds number of a flow is higher for higher speed flow.  Reynolds number is also higher for a fluid flowing through a thicker pipe. 
+		</p>
+
+		<p>
+			Experiments show that, regardless of the chemical make-up, the flow is laminar if the Reynolds number is less than about <m> 2,000</m>, turbulent for Reynolds number above <m>4000</m>, and in-transition for Reynolds number between <m>2,000</m> and <m>4,000</m>.
+		</p>
+		<md>
+			<mrow> \amp N_R \lt 2,000\longrightarrow \text{Laminar}, </mrow>
+			<mrow> \amp  N_R \gt 4,000\longrightarrow \text{Turbulent},  </mrow>
+			<mrow> \amp 2,000 \lt N_R \lt 4,000 \longrightarrow \text{In Transition}. </mrow>
+		</md>
+		<p>
+
+			Since <m> N_R \sim v/\eta </m>, a liquid of lower viscosity will become turbulent at lower speed. With increase in speed, the liquid molecules migrate more rapidly from one layer into the other destroying any ordering and the flow develops eddies or vortices at multiple scales. 
+		</p>
+		<p>
+			Turbulence mixes fluid rather well.  In the internal combustion engine, for instance, air and fuel mix well due to the turbulence in the chamber, which is necessary for a more efficient burn.  Turbulence is also an important factor that determines the flight path of baseballs and tennis balls.  
+		</p>
+		<p>
+			For a <q> standard air at sea level,</q> the density and viscosity of air are <m>1.23\text{ kg/m}^3</m> and <m>1.73\times10^{-3}\text{ Pa.s}</m>, respectively.  If a ball of diameter <m>5\text{ cm}</m> is moving at <m>200\text{ km/h}</m> or <m>125\text{ mph}</m>, then from the perspective of the ball the Reynolds number of air will be <m>2000</m>.  Spinning of a baseball gives the air an effective speed greater than the nominal speed, and hence a higher Reynolds.  Similarly, the dimples in a golf ball help with the development of turbulence around the ball, which make the drives longer. 
+		</p>
+
+	</introduction>
+
+	<exercise xml:id="ex-Reynolds-Number-of-Water-and-Turbulent-Flow"><title> Reynolds Number of Water and Turbulent Flow </title>
+		<statement>
+			<p>
+				A <m>2\text{-cm}</m> diameter pipe carries pure water of density <m>1\text{ g/cc}</m> and viscosity <m> 1.002\text{ centipoise}</m>.  
+			</p>
+			<p>
+				(a) At what speed will the Reynolds number be 2000?
+			</p>
+			<p>
+				(b) How much water in liters will flow out per hour? 
+				Compare this to  1000 liters per hour, the normal kitchen faucet flow rate to decide if the kitchen faucet flow is turbulent.
+			</p>
+
+		</statement>
+		<hint> <p> (a) USe <m> N_R=2000</m> in the formula. (b) Use <m> Q=Av</m>.  </p> </hint>
+		<answer> <p> (a) <m> 0.10\text{ m/s}</m>, (b) Turbulent.  </p> </answer>
+		<solution> <title>(a) </title>
+			<p> 
+				(a)
+				We use the formula defining the Reynold's number.
+				<me>
+					v = \dfrac{ \eta N_R}{\rho  D},
+				</me>
+				where we use the diameter of the pipe for the length scale <m> D</m>. 
+				<me>
+					v = \dfrac{1.002\times 10^{-3}\text{ Pa.s} \times 2000  }{ 1000\text{ kg/m}^3 \times 2\times 10^{-2}\text{ m}} = 0.10\text{ m/s}.
+				</me>
+
+			</p>
+		</solution>
+		<solution> <title>(b) </title>
+			<p> (b) 
+				<me>
+					Q = A v = \pi\ (0.01\text{ m})^2 0.10\text{ m/s}  = 3.142\times 10^{-5}\text{m}^3/s.
+				</me>
+				Converting this into <m>\text{L/hr}</m>
+				<me>
+					3.142\times 10^{-5} \times 1000 \times 3600 = 113\text{ L/hr}.
+				</me> 
+				At this flow speed, 113 liters of water will flow per hour.  Comparing this to the normal kitchen water foucet flow rate in the US, which is more than 1000 liters per hour. Clearly the kitchen faucet flow is turbulent. This is visible as frothy and bubbly flow when the water comes out of the faucet.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+</section>

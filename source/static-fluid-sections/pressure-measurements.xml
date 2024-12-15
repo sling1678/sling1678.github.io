@@ -1,0 +1,319 @@
+<section xml:id="Pressure-Measurements"><title> Pressure Measurements </title>
+
+	<introduction>
+
+		<p>
+			The variation of pressure with height provides a simple way to measure pressure.  This principle was utilized in the invention of mercury barometer by the Italian mathematician and physicist Evangelista Torricelli (1608-1647) in 1643.  Since then, many other techniques of pressure measurement have been developed. 
+		</p> 
+
+		<p>
+			Any property that changes with pressure in a known way can be used to construct pressure-measuring devices called <term> pressure gauges</term>.  
+		</p>
+		<sidebyside widths="60% 5% 35%">
+			<p>
+				The most common ones are the <term> strain gauges</term>,  which use the change in shape of a material with pressure. The change in shape can be amplified mechanically or electrically. The tire pressure gauge shown in the image uses a mechanical way to diaplay the pressure. (Image Credit: <q>By JEG14 - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=52069008</q>. )
+
+			</p>
+			<p>
+			</p>
+			<image source="./images/static-fluid/tire-gauge-ReifendruckPruefen.png"/>
+		</sidebyside>
+		
+		<p>
+			The electrically detected pressure gauges use various electrical properties that depend on material between two poles. For instance, resistance gauges uses resistance of a wire which changes due to the change in length and thickness of specially made wire mesh. The capacitance pressure gauges use the change in capacitance due to shape change with pressure. 
+		</p>
+		<figure>
+			<caption>
+				Picture of an unmounted resistance pressure gauge. Once mounted, pressure from the horizontal direction will shrink the length and increase the thickness of the wires, thus reducing the resistance, which can be detected by appropriate electrical circuit. 
+				Credits: https://upload.wikimedia.org/wikipedia/commons/0/0a/Unmounted_strain_gauge.jpg. 
+			</caption>
+			<image source="./images/static-fluid/unmounted_resistance_gauge.png" width="50%"/>
+		</figure>
+
+		
+		<p>
+			The piezoelectric pressure gauge which generates a voltage difference across a piezoelectric material under pressure difference between the two sides, and the ion gauges which measures pressure by ionizing molecules in highly evacuated chambers and measuring conductivity of the ionized gas.  Different pressure gauges are useful in different pressure ranges and under different physical situations. 
+		</p>
+		<p>
+			<alert>Gauge Pressure: </alert>
+		</p>
+
+		<p>
+			Pressure gauges often measure the difference of the absolute pressure and the ambient pressure and hence the name <term> gauge pressure</term>.  Open manometer, decribed below in <xref ref="subsection-open-end-manometer"/>,  is one kind of pressure gauge. Tire pressure gauge measures the pressure difference between the air inside the tire and the atmospheric pressure. Therefore, the actual pressure or the absolute pressure in the tire is gauge reading plus atmospheric pressure.
+		</p>
+	</introduction>
+
+	<subsection><title> Mercury Barometer </title>
+ 
+		<p>
+			Evangelista Torricelli (1608-1647) invented mercury barometer in 1643.
+			A mercury barometer is a tube with an opening at one end and closed at the other.  The tube is wide enough that fluid can flow freely in the tube. The tube is filled with mercury and the open end covered so that no air is trapped in the tube when the tube is inverted. The filled tube is then inverted and opened in a mercury tank such that no air can enter the tube.
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				At the neck, marked X in the tube, the upward force by pressure transmitted by the atmospheric pressure at the open surface at that level of mercury balances the weight of mercury above in the tube, <m>p_0 A = (Ah\rho) g</m> <m> \longrightarrow</m> <m>p_0 =  \rho g h</m>. To balance atmospheric pressure, the height <m> h \approx 29.9\text{ inches}</m>. With density of mercury <m>13600\text{ kg/m}^3</m>, <m> p_0 = 101324\text{ Pa}</m>.
+			</p>
+			<p></p>
+			<image source="./images/static-fluid/barometer.png"/>
+		</sidebyside>
+	</subsection>
+
+	<subsection><title> Closed-tube Manometer</title>
+		<p>
+			The pressure of a gas can be measured by making a modification to the barometer.  The inverted tube of Torricelli's experiment is made into a U-shaped tube with the open end, rather being exposed to the atmosphere, is connected to the gas container whose pressure we wish to measure as in <xref ref="fig-closed-tube-manometer" />.  The instrument is called a <term> manometer</term>.
+		</p> 
+		<figure xml:id="fig-closed-tube-manometer">
+			<caption>
+				A closed-tube manometer to measure gas pressure. The gas pressure pushes on the liquid. With vacuum on the closed end, the difference in the levels on the two sides is a measure of gas pressure, <m> p = \rho g h </m>, as shown in text below.
+			</caption>
+			<image source="./images/static-fluid/closed-tube-manometer.png" width="70%"/> 
+		</figure>
+		<p>
+			Balancing forces at a particle at the gas pressure level gives
+				<me>
+					pA = \rho A h g,
+				</me>
+			where <m> p</m> is the gas pressure, <m> \rho</m> the density of the liquid in the tube, <m> h</m> the height above the gas pressure level, and <m> A </m> the area of cross-section of the closed end tube. Simplifying the equation we find the following for the pressure reading for the gas.
+				<me>
+					p = \rho g h.
+				</me>
+			The closed end of a manometer are calibrated and marked for directly reading off the pressure.
+
+		</p>
+	</subsection>
+
+	<subsection xml:id="subsection-open-end-manometer"><title> Open-end Manometer</title>
+		<p>
+			Manometers can also be constructed to read the difference of pressure of the gas and the atmospheric pressure, called the gauge pressure, if both ends of the U-tube are open as I will show now.  One end of the U-tube is opened to air and the other to the gas as shown in  <xref ref="fig-open-tube-manometer" />.
+		</p>
+
+		<figure xml:id="fig-open-tube-manometer">
+			<caption>
+				A open-tube manometer to measure gas pressure. The gas pressure pushes on the liquid from one side and air pushes from the other side. The difference in the levels on the two sides is a measure of gas pressure minus the atmospheric pressure, <m> p = p_0 + \rho g h </m>, as shown in text below.
+			</caption>
+			<image source="./images/static-fluid/open-tube-manometer.png" width="60%"/> 
+		</figure>	
+
+		<p>
+			Balancing forces at a particle at the gas pressure level gives
+				<me>
+					pA = p_0 A + \rho A h g,
+				</me>
+			where <m> p</m> is the gas pressure, <m> p_0</m> the atmospheric pressure,  <m> \rho</m> the density of the liquid in the tube, <m> h</m> the height above the gas pressure level, and <m> A </m> the area of cross-section of the closed end tube. Simplifying the equation we find the following for the pressure reading for the gas.
+				<me>
+					p = p_0 + \rho g h.
+				</me>
+			The difference <m>p - p_0</m> is called the <term> gauge pressure</term>.
+
+		</p>
+	</subsection>
+ 
+ 	<exercise xml:id="ex-Fluid-Heights-in-an-Open-U-tube"><title> Fluid Heights in an Open U-tube</title>
+		<statement>
+			<sidebyside widths="50% 10% 25% 15%">
+				<p>
+					A U-tube with both ends open is filled with a liquid of density <m> \rho_1</m> to a height <m> h </m> on both sides. A liquid of density <m> \rho_2\lt \rho_1</m> is poured on one side.  We find that liquid 2 settles on top of liquid 1, with the heights on the two sides now becoming different.  The height to the top of the liquid 2 from the interface of the two liquids is <m> h_2</m> and the height to the top of liquid from the level of the interface is <m> h_1</m>. Find <m> h_2 - h_1 </m>.
+				</p>
+				<p> </p>
+				<image source="./images/static-fluid/ex-fluid-heights-open-u-tube.png"/>
+				<p></p>
+			</sidebyside>
+			
+		</statement>
+		<hint> <p>  The pressure at the same height on the two sides of a U-tube must be same as long as the two points are connected by a continuous line in the same liquid. </p> </hint>
+		<answer> <p> <m> \left( 1- \frac{\rho_1}{\rho_2} \right) h_2</m>.  </p> </answer>
+		<solution>
+			<sidebyside widths="55% 5% 40%"> 
+				<p>
+					The pressure at the same height on the two sides of a U-tube must be same as long as the two points are connected by a continuous line in the same liquid.  Therefore, we consider two points at the same level in the two arms of the tube: One point will be the interface on the side of the liquid 2 and the other will be a point in the arm with liquid 1 that is at the same level as the interface in the other arm.
+				</p>
+				<p></p>
+
+				<image source="./images/static-fluid/ex-fluid-heights-open-u-tube-solution.png"/>
+			</sidebyside>
+
+			<p>
+				<md>
+					<mrow> \amp \text{Pressure on the side with liquid 1} = p_0+\rho_1 g h_1. </mrow>
+					<mrow>\amp
+						\text{Pressure on the side with liquid 2} = p_0+\rho_2 g h_2.
+					</mrow>
+				</md>
+				Since, the two points are in liquids 1, one at the top of the left side of liquid 1 and the other in the liquid on the right side at the same height, the pressure at the two points  must be the same pressure.  Therefore, we have
+				<me>
+					p_0+\rho_1 g h_1 = p_0+\rho_2 g h_2.
+				</me>
+				Hence,
+				<me>
+					\rho_1 h_1 = \rho_2 h_2.
+				</me> 				
+				This says that the difference in heights of the two sides on the U-tube would be
+				<me>
+					h_2-h_1 = \left( 1- \frac{\rho_1}{\rho_2} \right) h_2.
+				</me>
+				The result makes sense if we set <m> \rho_2=\rho_1</m>, which gives <m>h_2=h_1</m>.  If the two sides have the same density, they would have the same height.								
+			</p>
+		</solution>
+	</exercise>
+ 
+ 	<exercise xml:id="ex-A-U-Tube-of-Different-Cross-Sections-and-Different-Liquids"><title> A U Tube of Different Cross Sections and Different Liquids</title>
+		<statement>
+			<p>
+				An open U-tube has different cross-sections on the two sides as shown in <xref ref="fig-ex-fluid-heights-open-u-tube-different-xsections"/>.  On one side the cross-section is <m> 2.5\text{ cm}^2</m> and on the other side it <m> 4.0\text{ cm}^2</m>.  Water is poured so that the level is <m> 30\text{ cm}</m> from the top on both sides.  
+			</p>
+			<p>
+				Find the volume of the oil of density <m> 0.8\text{ g/cm}^3</m> that must be poured on the wider end so that water rises by <m> 2\text{ cm}</m> on the other end, i.e., the level now would be <m> 28\text{ cm}</m> from the top on that end.
+			</p>
+			<figure xml:id="fig-ex-fluid-heights-open-u-tube-different-xsections">
+				<caption>
+					Figure for <xref ref="ex-A-U-Tube-of-Different-Cross-Sections-and-Different-Liquids"/>.
+				</caption>
+				<image source="./images/static-fluid/ex-fluid-heights-open-u-tube-different-xsections.png" width="80%"/>
+			</figure>
+
+		</statement>
+		<hint> <p>  Water displaced from the wider side ends up on top of the original level in the narrow side. </p> </hint>
+		<answer> <p> <m>6.16\text{ cm}^3</m>.   </p> </answer>
+		<solution> 
+			<p>
+				We will use <xref ref="fig-ex-fluid-heights-open-u-tube-different-xsections-sol"/> to answer this question.
+			</p>
+
+			<figure xml:id="fig-ex-fluid-heights-open-u-tube-different-xsections-sol">
+				<caption>
+					Figure for <xref ref="ex-A-U-Tube-of-Different-Cross-Sections-and-Different-Liquids"/> solution.
+				</caption>
+				<image source="./images/static-fluid/ex-fluid-heights-open-u-tube-different-xsections-sol.png" width="80%"/>
+			</figure>
+			
+			<p>
+				Balancing the pressure at point C, by force from above by liquid 2 and by force from below from pressure in liquid 1 at this level, we will get
+				<men xml:id="eq-fluid-heights-open-u-tube-different-xsections">
+					\rho_1 h_1 = \rho_2 h_2.
+				</men>
+				Now, we note from the displacement of liquid 1, the volume of the liquid between A and C must equal the volume between B and E. The height BE is given in the problem. Let us denote this by letter <m>y</m>. Let <m> A_1</m> and <m>A_2</m> be the areas on the two ends, where 1 is for the narrow end and 2 for the wide end. Thus, equating the volume of the fluid in AC to that of BE, we must also have
+				<men>
+					A_1(h_1 - y) = A_2 y.
+				</men>
+				This gives
+				<me>
+					h_1 = \dfrac{A_2}{A_1 + A_2}\, y.
+				</me>
+				Using this in Eq. <xref ref="eq-fluid-heights-open-u-tube-different-xsections"/> we get 
+				<me>
+					h_2 = \dfrac{\rho_1}{\rho_2}\,  \dfrac{A_2}{A_1 + A_2}\, y.
+				</me>
+				Note that we have ratios of similar quantities, hence, we do not need to convert any units. Putting the numerical values we get
+				<md>
+					<mrow> h_2 \amp = \dfrac{1.0}{0.8}\,  \dfrac{4.0}{2.5 + 4.0}\times 2\text{ cm}, </mrow>
+					<mrow> \amp = 1.54\text{ cm}.</mrow>
+				</md>
+				Multiplying this by <m>A_2=4\text{ cm}^2</m> will give the volume we need.
+				<me>
+					V_2 = A_2h_2 = 4.0\times 1.54 = 6.16\text{ cm}^3.
+				</me>
+
+			</p>
+
+		</solution>
+	</exercise>
+ 
+
+
+	<exercise xml:id="ex-Ratio-of-Heights-of-Two-Fluids-on-Two-Sides-of-U-tube"><title>Ratio of Heights of Two Fluids on Two Sides of U-tube (JEE, 2020)</title>
+
+		<statement>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					An open-ended U-tube of uniform cross-sectional area contains water (density <m>10^3\text{ kg m}^{−3}</m>). Initially the water level stands at 0.29 m from the bottom in each arm. Kerosene oil (a water-immiscible liquid) of density <m>800\text{ kg m}^{−3}</m> is added to the left arm until its length is <m>0.1\text{ m}</m> as shown in <xref ref="fig-jee-2020-fluids-on-two-sides-of-u-tube"/>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-jee-2020-fluids-on-two-sides-of-u-tube">
+					<caption>
+					</caption>
+					<image source="./images/static-fluid/jee-2020-fluids-on-two-sides-of-u-tube.png" width="80%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				The ratio <m>\left( \frac{h_1}{h_2} \right)</m> of the heights of the liquid in the two arms is (A) <m>\frac{15}{14}</m>, (B) <m>\frac{35}{33}</m>, (C) <m>\frac{7}{6}</m>, (D) <m>\frac{5}{4}</m>. (From Indian JEE, 2020.)
+			</p>
+
+			
+		</statement>
+		<hint><p>
+			1. Equate pressure at same level in same fluid. 2. The denser fluid level on the two side goes down on one side by same height as it goies up on the other side.
+		</p></hint>
+		<answer><p>B.</p></answer>
+		<solution>
+
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					When we are in a single fluid, say within the water part, pressure at same horizontal level on the two sides will be same. That is, pressure in water at points A and B in <xref ref="fig-jee-2020-fluids-on-two-sides-of-u-tube-sol"/>  will be same.
+				</p>
+				<p></p>
+				<figure xml:id="fig-jee-2020-fluids-on-two-sides-of-u-tube-sol">
+					<caption>
+					</caption>
+					<image source="./images/static-fluid/jee-2020-fluids-on-two-sides-of-u-tube-sol.png" width="80%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Thus, we will get the following equation.
+				<me>
+					p_\text{atm} + \rho_1 g h = p_\text{atm} +  \rho_2 g \left[ h - \left(h_1 - h_2\right) \right].
+				</me>
+				Simplifying and then dividing both sides by <m>\rho_1 h</m> we get
+				<men xml:id="eq-jee-2020-equate-pressure">
+					h_1 - h_2 = 0.2 h.
+				</men>
+
+			</p>
+
+
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					From the original level of water (level D in <xref ref="fig-jee-2020-fluids-on-two-sides-of-u-tube-sol-2"/>), we notice that point A would be as much below the original level D as point C will be above D since the two sides have the same area of cross-section.
+				</p>
+				<p></p>
+				<figure xml:id="fig-jee-2020-fluids-on-two-sides-of-u-tube-sol-2">
+					<caption>
+					</caption>
+					<image source="./images/static-fluid/jee-2020-fluids-on-two-sides-of-u-tube-sol-2.png" width="80%"/>
+				</figure>
+			</sidebyside>
+
+			<p>
+				Using DC = BC/2 and BC from <xref ref="fig-jee-2020-fluids-on-two-sides-of-u-tube-sol"/> gives
+				<me>
+					h_2 - h_0 = \frac{ h - \left(h_1 - h_2\right) }{2}
+				</me>
+				Simplifying we have
+				<men xml:id="eq-jee-2020-use-original-level">
+					h_1 + h_2 = h + 2 h_0.
+				</men>
+				From Eq. <xref ref="eq-jee-2020-equate-pressure"/> and <xref ref="eq-jee-2020-use-original-level"/>, we get
+				<me>
+					h_1 = 0.6 h + h_0,\ \ h_2 = 0.4 h + h_0. 
+				</me>
+				Therefore, the ratio is
+				<me>
+					\frac{h_1}{h_2} = \frac{0.6 h + h_0}{0.4 h + h_0}.
+				</me>
+				Using the numerical values given,
+				<me>
+					\frac{h_1}{h_2} =  \frac{0.6 \times 0.1 + 0.29}{0.4 \times 0.1 + 0.29} = \frac{0.35}{0.33} = \frac{35}{33}.
+				</me>
+				This is choice B.
+			</p>
+			
+		</solution>
+	</exercise>
+
+
+
+
+
+
+ 
+
+</section>

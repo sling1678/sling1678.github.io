@@ -1,0 +1,208 @@
+<section xml:id="sec-gyroscope"><title> The Gyroscope </title>
+<idx>Gyroscope</idx>
+	<introduction>
+		<p>
+			Gyroscope is a valuable device for navigation. An important aspect of the motion of a gyroscope is its <term>precession</term> about a vertical axis as illustrated in <xref ref="fig-toy-gyroscope-annotated"/>. To understand the <alert>cause of precession</alert> we need to use vectorial nature of rotational dynamics. 
+		</p>
+ 
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				<p>
+					<xref ref="fig-toy-gyroscope-annotated"/> shows a toy gyroscope.  Inside a gyroscope there is flywheel which can rotate independently. The flywheel axle rotates about a fixed structure which has a rod in the direction of the flywheel's axis.
+				</p> 
+				<p>
+					Normally, you would wind a string around the axle of the flywheel. When you pull on the string while holding the outer structure, you can make the flywheel spinning at rapid pace. When spinning gyroscope is placed on a pylon, the entire structure revolves around the vertical axis.
+				</p>		
+			</p>
+			<p></p>
+			<figure xml:id="fig-toy-gyroscope-annotated">
+				<caption></caption>
+				<image source="./images/rotation-general/toy-gyroscope-annotated.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+
+
+		<p>
+			Let <m>\vec L_s</m> be angular momentum of spinning of the flywheel and <m>\vec L_p</m> be the angular momentum of CM rotating about the verical axis. 
+
+			
+		</p>
+		<sidebyside widths="48% 2% 50%">
+			<p>
+				
+				Angular momentum of gyroscope about the pivot point O will be the sum of the two.
+				<me>
+					\vec L(t) = \vec L_s(t) + \vec L_p
+				</me>						
+				As a result of torque by <m>mg</m>, <m>\vec L_s</m> precesses around a vertical axis with horizontal part <m>\vec L_{xy}</m> of <m>\vec L_s</m> rotating with angular speed <m>\Omega</m>.
+			</p>
+			<p></p>
+			<figure xml:id="fig-toy-gyroscope-annotated-vectors">
+				<caption></caption>
+				<image source="./images/rotation-general/toy-gyroscope-annotated-vectors.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		
+		<p>
+			The change in angular momentum <m>\Delta \vec L</m> will equal change in <m>\Delta \vec L_s</m> since <m>\vec L_p</m> does not change with time.  
+			<men xml:id="eq-delta-Ls-equal-tau-dt">
+				\left|\Delta \vec L_s\right| = \left|\Delta \vec L\right|= \mathcal{T}_W\,\Delta t, 
+			</men> 
+			where <m>\mathcal{T}_W</m> is the magnitude of torque by weight. Since torque is pointed horizontally, only horizontal component of <m>\vec L_s</m> will change. With tilt angle <m>\alpha</m> with vertical, horizontal component <m>\vec L_{xy}</m> will be given by
+			<me>
+				\vec L_{xy} = L_s \sin\alpha \left( \cos\Omega t\, \hat i +  \sin\Omega t\, \hat j  \right),
+			</me>
+			and the vertical component is
+			<me>
+				\vec L_z = L_s \cos\alpha\, \hat k.
+			</me>
+			Since <m>\vec L_s = \vec L_{xy} + \vec L_z</m>, 
+			<me>
+				\frac{d\vec L_s}{dt} = \frac{d\vec L_{xy}}{dt} = L_s\,\Omega\, \sin\alpha \left( -\sin\Omega t\, \hat i +  \cos\Omega t\, \hat j  \right).
+			</me>
+			Therefore, 
+			<men xml:id="eq-delta-Ls-equal-Omega-Ls-sin-alpha">
+				\left|\Delta \vec L_s\right| = L_s\,\Omega\, \sin\alpha\Delta t.
+			</men>
+			With gyroscope tilted at angle <m>\alpha</m> from vertical and CM at a distanc <m>l</m> from the pivot O as indicated in <xref ref="fig-toy-gyroscope-annotated-vectors"/>, the torque will be 
+			<men xml:id="eq-torque-equal-mgl-sin-alpha">
+				\mathcal{T}_W = mgl\sin\alpha
+			</men>.
+
+			Using <xref ref="eq-delta-Ls-equal-Omega-Ls-sin-alpha"/> and <xref ref="eq-torque-equal-mgl-sin-alpha"/> in <xref ref="eq-delta-Ls-equal-tau-dt"/>, we find that angular speed of precession, called <term>precession rate</term>, is given by
+			<me>
+				 \Omega = \frac{mgl}{L_s}.
+			</me> 
+			Let <m>I_0</m> be moment of inertia about spin axis at instant <m>t</m> and <m>\omega</m> be angular speed of spinning of th flywheel. Then, magnitude of spin angular momentum will be
+			<me>
+				L_s = I_0\omega.
+			</me>
+			Therefore, 
+			<men xml:id="eq-precession-angular-speed-final-formula">
+				\Omega =  \frac{mgl}{I_0\omega}.
+			</men>
+			Thus, we find that higher the rate of spinning, i.e., larger <m>\omega</m>, slower the precession, i.e., smaller <m>\Omega</m>. An interesting aspect of this result is that precession angular speed is indepdent of the tilt angle <m>\alpha</m>.
+		</p>
+		<p>
+				Writing the moment of inertia <m>I_0</m> in terms of radius of gyration of the gyroscope, i.e., <m>I_0 = m R_G^2</m>, we see that precession angular speed is indepdent of the mass of the gyroscope.
+				<men>
+					\Omega =  \frac{gl}{R_G^2\omega}.
+				</men>
+		</p>		
+	</introduction>
+
+
+	<example xml:id="ex-Precession-of-a-Spinning-Top"><title>Precession of a Spinning Top</title>
+
+		<statement>
+
+			<sidebyside widths="70% 5% 25%">			
+				<p>
+					A conical shaped top with mass <m>0.40\text{ kg}</m>, height <m>5\text{ cm}</m>, and angle at tip <m>45^\circ</m> is spinning at <m>25\text{ rev/sec}</m> at angle of <m>10^\circ</m> with respect to the vertical. (a) What is the rate of precession? (b) What is the direction of precession when looked from above? Moment of inertia of a cone <m>\frac{3}{10}MR^2</m>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-precession-of-a-top">
+					<caption></caption>
+					<image source="./images/rotation-general/precession-of-a-top.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+		</statement>
+		<!-- <hint><p>
+			Spinning top is like a gyroscope.
+		</p></hint> -->
+		<answer><p>
+			(a) <m>1.93\text{ rev/sec}</m>, (b) counterclockwise sense.
+		</p></answer>
+		<solution>
+			<p>
+				(a) We notice that spinning top is just like a gyroscope. From the precession rate formula for the gyroscope, we get
+				<me>
+					\Omega =  \frac{mgl}{I_0\omega}.
+				</me>
+				In the present case, we have the following values
+				<md>
+					<mrow> m \amp = 0.40\text{ kg},\ \ g = 9.81\text{ m/s}^2,\ \ l = 2.5\text{ cm} = 0.025\text{ m}, </mrow>
+					<mrow> I_0 \amp = \frac{3}{10}MR^2 = \frac{3}{10}\times 0.4\text{ kg} \times (0.05\text{ m}\times \tan(22.5^\circ))^2  </mrow>
+					<mrow> \amp =  5.147\times 10^{-5}\text{ kg m}^2 </mrow>
+					<mrow> \omega \amp =  25\text{ rev/sec} = 25\times 2\pi \text{ rad/sec}.  </mrow>
+				</md>
+				We get
+				<me>
+					\Omega = 12.1\text{ rad/sec} = \frac{12.1}{2\pi}\text{ rev/sec} = 1.93\text{ rev/sec}.
+				</me>
+			</p>
+			<p>
+				(b) When we look at the precessiing top from above, we will find the precession in the direction of the torque by weight. By using right hand rule on <m>\vec r\times \vec F</m> on frce of weight at center of mass, we get counterclockwise sense.
+			</p>
+		</solution>
+	</example>
+
+	<subsection><title>Gyroscope as a Compass</title>
+		<p>
+			To understand how a Gyroscope serves as a compass consider a spinning gyroscope placed on a platform that is rotated uniformly as shown in <xref ref="fig-gyroscope-on-rotating-platform"/>.
+		</p>
+		<sidebyside widths="50% 5% 45%">			
+			<p>
+				 Here <m>\lambda</m> is a fixed direction, which corresponds to latitude. In this setup, spinning disk rotates about <m>PA</m>, which allows change in direction of spin axis, i.e., direction of <m>\vec \omega_s</m>, which oscillates about direction <m>\hat n</m>, the axis of angular velocity <m>\vec \Omega</m> for rotation of the platform. In the end, <m>\vec \omega_s</m> aligns with <m>\vec \Omega</m>. 
+			</p>
+			<p></p>
+			<figure xml:id="fig-gyroscope-on-rotating-platform">
+				<caption></caption>
+				<image source="./images/rotation-general/gyroscope-on-rotating-platform.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			 
+		</p>
+
+		<sidebyside widths="50% 5% 45%">			
+			<p>
+				The oscillation of <m>\vec L_s</m> can be understood by examining equation of motion for angle <m>\theta</m> between <m>\vec \omega_s</m> and <m>\vec \Omega</m>. A complete treatment shows that <m>\theta</m> will oscillate with frequency
+				<me>
+					f = \frac{1}{2\pi}\sqrt{ \frac{ I_{zz} \omega_s \Omega \cos\lambda }{I_{xx}} }.
+				</me>
+				
+				   
+			</p>
+			<p></p>
+			<figure xml:id="fig-gyroscope-on-rotating-platform-a">
+				<caption></caption>
+				<image source="./images/rotation-general/gyroscope-on-rotating-platform-a.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+		<p>
+			For a thin disk, <m>I_{xx} = \frac{1}{4}MR^2</m> and <m>I_{zz} = \frac{1}{2}MR^2</m>. Therefore, a simpler formula is
+			<men xml:id="eq-freq-gyroscope-compass">
+				f = \frac{1}{2\pi}\sqrt{  2 \omega_s \Omega \cos\lambda  }.
+			</men>
+			For Earth, <m>\Omega</m> will be
+			<me>
+				\Omega_\text{E}=2\pi\,\text{day}^{-1} = 7.27\times 10^{-5}\,\text{sec}^{-1}.
+			</me> 
+			By measuring <m>f</m> for a set up with known spin angular speed <m>\omega_s</m>, we can use <xref ref="eq-freq-gyroscope-compass"/> to find <m>\lambda</m>.
+			<me>
+				\cos\lambda  = \frac{2\pi^2 f^2}{ \omega_s \Omega_\text{E} }.
+			</me>
+			Writing <m>\omega_s = 2\pi f_s</m> and <m>\Omega_\text{E} = 2\pi f_\text{E}</m>, we get a more easily usable formula.
+			<me>
+				\cos\lambda = \frac{f^2}{ 2f_s f_\text{E} }.
+			</me>
+			Or, in terms of time periods, <m>T</m> of oscillation, <m>T_s</m> of spin, <m>T_\text{E}</m> of Earth's rotation, 
+			<me>
+				\cos\lambda = \frac{T_s\, T_\text{E}}{ 2 T^2 }.
+			</me>			
+ 			For example, if oscillation time is <m>30\text{ sec}</m> for a gyroscope that is spinning at <m>10,000\text{ Hz}</m> frequency will mean latitude to be
+ 			<md>
+ 				<mrow> \lambda \amp  = \cos^{-1}\left( \frac{  (1/10,000\text{ s})\times 24\times 3600\text{ s}}{ 2 (30\text{ s})^2 }\right)</mrow>
+ 				<mrow>   \amp  = \cos^{-1} (0.144) = 81.7^\circ.</mrow>
+ 			</md>
+		</p>
+		
+	</subsection>
+
+
+</section>

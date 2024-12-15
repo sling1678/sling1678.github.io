@@ -1,0 +1,109 @@
+<section xml:id="Magnetic-Field-of-Magnets"><title> Magnetic Field of Magnets </title>
+	<introduction>
+		<p>
+			Previously we have studied magnetic field by steady electric current as given by Biot-Savart law and Ampere's law. We study magnetic field of magnets mostly empirically by experiments. However, the current-loop equivalence of a magnetic dipole provides a way 
+			to study magnets theoretically as well.
+		</p>
+		<sidebyside widths="50% 10% 15% 25%">
+			<p>
+				For instance, to know the magnetic field of a tiny magnet at a point along the dipole, we just work out the magnetic field at the axis of a loop of current. Then, we substitute <m>\mu</m> for <m>IA</m> and take a limit where size of the loop becomes small. For a dipole <m>\mu</m> pointed towards <m>z</m> axis, we get magnetic field at a point on the <m>z</m> axis to be 
+				<men xml:id="eq-dipole-field-at-axis">
+					\vec B_P = \dfrac{\mu_0}{2\pi}\dfrac{\mu}{z^3}\, \hat u_z.
+				</men>
+			</p>
+			<p></p>
+			<figure xml:id="fig-magnetic-dipole-field">
+				<caption>
+				</caption>
+				<image source="./images/magnetic-materials/magnetic-dipole-field.png" width="70%"/>
+			</figure>
+			<p></p>
+		</sidebyside>
+		<p>
+			Magnetic field of a magnetic dipole at a point that is not on the axis is more difficult to work out.  
+		</p>
+
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				Here we will just cite the formula for magnetic field at a point P that is located at a spherical radial distance <m>r</m> from the origin and line from origin to P makes an angle <m>\theta</m> with respect to <m>z</m> axis for a magnetic dipole placed at the origin in the <m>z</m> axis direction.
+				<men xml:id="eq-dipole-field-at-arbitrary-point">
+					\vec B_P = \dfrac{\mu_0\mu}{4\pi r^3}\left( 2\cos\theta\ \hat u_r + \sin\theta\ \hat u_{\theta}\right).
+				</men>
+			</p>
+
+			<p> </p>
+			<figure xml:id="fig-dipole-field-parameters-fig">
+				<caption></caption>
+				<image source="./images/magnetic-materials/dipole-field-parameters-fig.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+		<p>
+			In this formula <m>\hat u_r</m> and <m>\hat u_\theta </m> are radial unit vector and a unit vector tangent to the great circle through P. This field is called dipole field due to its distance dependence of <m>1/r^3</m>.   
+		</p> 
+		<p>
+			The dipole field is symmetric about the direction of the dipole - you get the same picture when you rotate about the direction of the dipole.  Therefore, we can just draw field lines in <m>xz</m> plane as shown in <xref ref="fig-dipole-field"/>. You can rotate the field lines in your mind to figure out what it would look like in three dimensional space.
+		</p>
+		<figure xml:id="fig-dipole-field">
+			<caption>
+				Magnetic dipole field lines of a magnetic dipole.
+			</caption>
+			<image source="./images/magnetic-materials/dipole-field.png" width="70%"/>
+		</figure>
+
+	</introduction>
+
+	<subsection><title> (Calculus) A Uniformly Magnetized Thin Bar Magnet </title>
+
+		<p>
+			To figure out magnetic field around a thin bar magnet, we can superpose the magnetic field by each piece of the thin bar. To be specific, consider a bar magnet of length <m>L</m>, which is unifomly magnetized in the direction of its length with magnetic dipole moment per unit length equal to <m>M</m>.
+		</p>
+		<p>
+			Let bar be placed along the <m>z</m> axis with its magnetization pointed in the positive <m>z</m> direction. We will find magnetic field from this magnet  <alert> at a point on the <m>z</m> axis that is far away from the magnet</alert> and on the positive <m>z</m> axis.
+		</p>
+		<p>
+			Using Eq. <xref ref="eq-dipole-field-at-axis"/> we can write the field by the piece of bar between <m>z'</m> and <m>z'+dz'</m>. Note that <m>z</m> in the formula in Eq.  <xref ref="eq-dipole-field-at-axis"/> is the distance from the dipole at origin. Therefore, we will need to replace <m>z</m> there by <m>z-z'</m>. The dipole moment in <m>dz'</m> is <m> d\mu = Mdz'</m>. Therefore, <m>z</m> component of the field at P is
+			<md>
+				<mrow> dB_z \amp = \dfrac{\mu_0}{2\pi}\dfrac{d\mu}{(z-z')^3}</mrow>
+				<mrow> \amp =  \dfrac{\mu_0}{2\pi}\dfrac{ Mdz'}{(z-z')^3} </mrow>
+			</md>
+			We will integrate this from <m>z'=-L/2</m> to <m>z'=L/2</m> to get the net field at P.
+			<md>
+				<mrow>B_z \amp =  \dfrac{\mu_0 M }{2\pi} \int_{-L/2}^{L/2}\, \dfrac{ dz'}{(z-z')^3} </mrow>
+				<mrow> \amp =  \dfrac{\mu_0 M }{2\pi} \left[  \dfrac{1}{2(z-z')^2} \right]_{-L/2}^{L/2} </mrow>
+				<mrow> \amp = \dfrac{\mu_0M}{\pi}\left[ \dfrac{1}{\left(2z-L \right)^2} -  \dfrac{1}{\left(2z+L \right)^2} \right].</mrow>
+			</md>
+			Note that this formula is only good for point on the axis. The magnetic field at an arbitray point will be different from this formula. 
+		</p>
+
+	</subsection>
+
+
+	<subsection><title> (Calculus) A Uniformly Magnetized Sphere </title>
+		<p>
+			Consider a sphere of radius R that is uniformly magnetized with magnetization <m>M</m>. We choose <m>z</m> axis to be the direction of the magnetization and use a spherical coordinate to write the answer here. Let <m>m</m> denote the <alert>total</alert> dipole moment of the sphere, i.e.,
+			<me>
+				m = \dfrac{4}{3}\pi R^3 M.
+			</me>
+		</p>
+
+		<p>
+			I will not give a derivation of the results. Instead, I will just  quote the results and let it a challenge to a more ambitious student to prove them. The magnetic field at a distance <m>r</m>  from the center of the sphere and at an angle  <m>\theta</m> from the direction of the dipole is given by the following formula in spherical coordinates.
+
+			<me>
+				\vec B(r,\theta,\phi) = \left\{
+				\begin{array}{ll}
+				\dfrac{2}{3}\mu_0  M\,	\hat k\amp\ \ \ \ (r\lt R)\\
+				\dfrac{\mu_0}{4\pi}\dfrac{m}{r^3}\left( 2\cos\theta\,\hat u_r + \sin\theta\,\hat u_{\theta}\right)	\amp\ \ \  \ (r \gt R)
+				\end{array}
+				\right.
+			</me>
+			The magnetic field outside is that of the total magnetic moment placed at the center of the sphere. 
+		</p>
+
+	</subsection>
+
+
+
+
+</section>

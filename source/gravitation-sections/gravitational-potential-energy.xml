@@ -1,0 +1,211 @@
+<section xml:id="Gravitational-Potential-Energy"><title> Gravitational Potential Energy</title>
+	<introduction>
+		<p>
+			Since gravitational force is a conservative force, the work by this force can be expressed as a change in potential energy. With reference of zero potential energy when the two particles are far apart, the potential energy is given by
+			<men>
+				U = -G_N\,\dfrac{m_1\, m_2}{r},
+			</men>
+			where <m> r \gt 0</m>. Note that gravitaional potential energy is undefined when the two particles are on top of each other.  We do not worry about this mathematical problem since such a configuration is physically impossible.  
+		</p>
+		<p>
+			One derivation of this formula is presented in the chapter on Energy.
+		</p>
+	</introduction>
+	<subsection><title> Energy of Two Bodies Interacting by Gravitational Force </title>
+		<p>
+			The total energy of the two objects interacting with each other through a gravitational force only will be obtained by adding the kinetic energies of the two  and the gravitational potential energy for force between them. That is, if the mass <m> M </m>  has a speed <m> V </m>  and the mass <m> m </m>  a speed <m> v </m> and  separated by a distance <m> r </m>, the total energy <m> E </m> of the two will be
+			<men xml:id="eq-full-two-body-graviitational-energy">
+				E=\dfrac{1}{2}MV^2 + \dfrac{1}{2}mv^2 -\dfrac{G_NMm}{r}.
+			</men>
+			Note that the energy of the combined system is not equal to the sum of the energy of individual parts since the parts interact with each other and you must not count the energy of the same interaction twice. 
+		</p>
+		<p>
+			When the two objects move so that their separation distance <m> r</m>  changes, their speeds must also change so that the total energy <m> E</m>  is conserved.  
+		</p>
+		<p>
+			The kinetic energy part can also be written as sum of two parts, the kinetic energy of the center of mass and the kinetic energy of the motion with respect to the center of mass. Let the relative velocity of the two particles be <m> \vec {v}_r = \vec v - \vec V</m>, then
+			<men xml:id="eq-full-two-body-graviitational-energy-cm-rel-separation">
+				E=\dfrac{1}{2}MV_{\text{CM}}^2 + \dfrac{1}{2}\mu\,v_r^2 -\dfrac{G_NMm}{r},
+			</men>			
+			where <m>\mu</m> is called the reduced mass, whose inverse is the sum of the inverse of the two masses.
+			<me>
+				\dfrac{1}{\mu} = \dfrac{1}{m} + \dfrac{1}{M}.
+			</me> 
+			If <m> M \gt\gt m</m>, e.g., if <m> M</m> was the Sun and <m> m </m> the Earth, or <m> M </m> was the Earth and <m> m</m> a satelite, then
+			<me>
+				\mu \approx m.
+			</me>
+			Since the kinetic energy of the CM will not change if we ignore forces from other bodies, we end up focusing on the relative distance and velocities only. Therefore, instead of the complete energy, we work with effective energy,
+			<men>
+				E_\text{eff} = \dfrac{1}{2} m\,v_r^2 -\dfrac{G_NMm}{r}.
+			</men>
+			We will work most of the time with this reduced energy rather than the full two-body energy in Eq. <xref ref="eq-full-two-body-graviitational-energy"/>.				
+		</p>
+		
+	</subsection>
+
+
+	<exercise xml:id="ex-Proving-Kinetic-Energy-of-Two-Bodies-Separates-into-CM-and-Relative-Motion-Kinetic-Energies"><title> Proving Kinetic Energy of Two Bodies Separates into CM and Relative Motion Kinetic Energies </title>
+		<statement>
+			<p>
+				Consider two bodies moving along <m> x </m> axis with total kinetic energy given by
+				<me>
+					K=\dfrac{1}{2}m_1v_1^2 + \dfrac{1}{2}m_2v_2^2.
+				</me>
+				Let the CM and relative velocities be 
+				<me>
+					V_{\text{CM}} = \dfrac{m_1v_1 + m_2v_2}{m_1 + m_2},\ \ v_r = v_1-v_2.
+				</me>
+				Prove that <m> K </m> can be also written as
+				<me>
+					K = \dfrac{1}{2} (m_1 + m_2) V_{\text{CM}}^2 + \dfrac{1}{2}\mu v_r^2,
+ 				</me>
+ 				where
+ 				<me>
+ 					\mu = \dfrac{m_1 m_2}{m_1 + m_2}.
+ 				</me>
+
+			</p>
+
+		</statement>
+		<hint> <p>  Start from the final answer and plug in the expressions for <m>V_{\text{CM}}</m> and <m> v_r</m>. Carry out the algebra.  </p> </hint>
+		<answer> <p>  Already in the statement. </p> </answer>
+		<solution> 
+			<p>
+				In the expression we seek, we substitute defining expressions for <m>V_{\text{CM}}</m> and <m> v_r</m>.
+				<md>
+					<mrow> K \amp = \dfrac{1}{2} (m_1 + m_2) \left( \dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2} \right)^2 + </mrow>
+					<mrow>  \amp \ \ \ \ \ \ \ \ \ \  \dfrac{1}{2} \dfrac{m_1 m_2}{m_1 + m_2}\left(v_1 -v_2 \right)^2,</mrow>
+					<mrow> \amp =\dfrac{\left( m_1^2 v_1^2 + m_2^2 v_2^2 + m_1m_2v_1^2 + m_1m_2 v_2^2\right)}{2(m_1+m_2)} ,</mrow>
+					<mrow> \amp = \dfrac{1}{2}m_1v_1^2 + \dfrac{1}{2}m_2v_2^2.</mrow>
+				</md>
+				QED!
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Placing-a-Satellite-in-a-Geocentric-Orbit-about-the-Earth"><title> Placing a Satellite in a Geocentric Orbit about the Earth </title>
+		<statement>
+			<p>
+				A satellite of mass <m> 1000\text{ kg}</m>  is placed in a geocentric orbit at an altitude of approximately  <m>30,000\text{ km}</m>  from Earth.  How much energy was expended to accomplish that? Mass of Earth = <m> 5.97\times 10^{24}\text{ kg}</m>.
+
+			</p>
+
+		</statement>
+		<hint> <p> Use conservation of energy.  </p> </hint>
+		<answer> <p> <m> 5.7\times 10^{10}\text{ J}</m>.  </p> </answer>
+		<solution> 
+			<p>
+
+ 
+				The energy for sending satellites above the Earth is usually supplied by chemical energy obtained by burning fuel. The energy goes in lifting the material of the satellite from the surface of the Earth to the orbit with some initial kinetic energy to the satellite. Once the satelite is in the orbit, it has converted kinetic energy to potential energy.
+			</p>
+			<p>
+
+				We will calculate the required kinetic energy at the surface of the Earth as a measure of the energy needed to send the satellite to the orbit.  Let us label quantities at the surface of the Earth by a subscript <m> 1</m> and the corresponding quantities when the satellite is in the orbit by <m>2</m>.   From the conservation of energy of the satellite, we have
+				<me> 
+					K_1 + U_1 = K_2 + U_2\longrightarrow K_1 = K_2 + U_2-U_1.
+				</me> 
+				Therefore, we have 
+				<me>
+					K_1 = \dfrac{1}{2}mv_2^2 - \dfrac{G_N M m}{r_2} + \dfrac{G_N M m}{r_1}  
+				</me>
+				From the given information in the problem, we can obtain the change in the potential energy, but we do not have the information for <m> v_2 </m> given in the problem.  We can obtain <m> v_2 </m> from the equation of motion of the satellite when it is in the circular orbit.  From the equation of motion of the satellite in a circular orbit at radius <m> r_2 </m> we have
+				<me> 
+					m\dfrac{v_2^2}{r_2}= \dfrac{G_N M m}{r_2^2}
+				 </me> 
+				Therefore, the energy equation becomes
+				<md> 
+					<mrow> K_1 \amp = -\dfrac{G_N M m}{2r_2} + \dfrac{G_N M m}{r_1}, </mrow>
+					<mrow> \amp = G_N M m\left( \dfrac{1}{r_1} - \dfrac{1}{2r_2}\right)</mrow>
+ 				</md> 
+				Now, we are ready to put in the numbers, and obtain the numerical answer.
+				<md>
+					<mrow>  G_N M m \amp = 6.67\times 10^{-11} \times 5.97\times10^{24} \times 1000 </mrow>
+					<mrow> \amp  = 3.98\times 10^{17}, </mrow>
+				</md>
+				<md>
+					<mrow>  \dfrac{1}{r_1} - \dfrac{1}{2r_2} \amp   = 
+						 \dfrac{1}{6.37\times10^6  } -\dfrac{1}{2\times 36.37\times10^6 }</mrow>
+					<mrow> \amp  = 1.43\times 10^{-7}. </mrow>
+				</md>
+				Therefore,
+				<me>
+					3.98\times 10^{17} \times 1.43\times 10^{-7} = 5.7\times 10^{10}.
+				</me>
+				The SI unit of energy is <m> \text{J}</m>. Therefore
+				<me>
+ 					5.7\times 10^{10}\text{ J}.
+				</me>
+ 
+				Just for fun:
+					How does this energy compare to the chemical energy in gasoline?  Googling for the energy in gasoline we find that one kilogram of conventional gasoline contains approximately <m> 4.4\times10^{7}\text{ J}</m>. Therefore, we would need energy in approximately <m> 750\text{ kg}</m> gasoline to put a 1000-kg satellite into the geosynchronous orbit <m> 30,000\text{ kg}</m> above the surface of Earth.
+  
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Escape-Speed-of-Projectiles-from-Planets"><title> Escape Speed of Projectiles from Planets</title>
+		<statement>
+			<p>
+				Find the escape speed of a projectile from the following planets, (a) Earth, (b) Mars, (c) Saturn, and (d) Jupiter.
+			</p>
+			<p>
+				The masses of planets mentioned above are: <m>M_\text{Earth} = 5.97</m>, <m>M_\text{Mars} = 0.642</m>, <m>M_\text{Saturn} = 568</m>, and <m>M_\text{Jupiter} = 1,898</m> in units of <m> 10^{24}\text{ kg}</m>. The diameters of these planets are  <m>D_\text{Earth} = 12,756\text{ km}</m>, <m>D_\text{Mars} = 6792\text{ km}</m>, <m>D_\text{Saturn} = 120,536\text{ km}</m>, and <m>D_\text{Jupiter} = 142,984\text{ km}</m>.					 			
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p> (a) <m> 11,175\text{ m/s}</m>, (b) <m> 5,022\text{ m/s}</m>, (c) <m> 35,468\text{ m/s}</m>, (d) <m> 59,529\text{ m/s}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The escape speed is the minimum speed needed to escape the gravitational pull of a planet. Since projectile will be subject to gravitational force only, the energy of gthe projectile will be conserved. For minimum energy, we require that the speed at planet surface be such that when the planet is far away from the planet it has zero kinetic energy and zero potential energy. This gives the following equation.
+				<me>
+					\dfrac{1}{2} m v^2 - G_N\dfrac{mM}{R} = 0 + 0.
+				</me>
+				Therefore,
+				<me>
+					v_\text{esc} = \sqrt{ \dfrac{2G_N M}{R}  } = \sqrt{ \dfrac{4G_N M}{D}  }.
+				</me>
+				Now, we use the numerical values in SI units to get the following for the four parts.
+			</p>
+			<p>
+				(a)
+				<md> 
+					<mrow>v_\text{esc} \amp = \sqrt{ \dfrac{4\times 6.67408\times 10^{-11}\times 5.97\times 10^{24}}{12,756\times 10^3}  } </mrow>
+					<mrow> \amp =  11,175\text{ m/s}. </mrow>
+				</md>
+			</p>
+			<p>
+				(b)
+				<md> 
+					<mrow>v_\text{esc} \amp = \sqrt{ \dfrac{4\times 6.67408\times 10^{-11}\times 5.97\times 10^{24}}{12,756\times 10^3}  } </mrow>
+					<mrow> \amp =  5,022\text{ m/s}. </mrow>
+				</md>
+			</p>
+			<p>
+				(c)
+				<md> 
+					<mrow>v_\text{esc} \amp = \sqrt{ \dfrac{4\times 6.67408\times 10^{-11}\times 568\times 10^{24}}{ 120,536\times 10^3}  } </mrow>
+					<mrow> \amp =  35,468\text{ m/s}. </mrow>
+				</md>
+			</p>
+
+			<p>
+				(d)
+				<md> 
+					<mrow>v_\text{esc} \amp = \sqrt{ \dfrac{4\times 6.67408\times 10^{-11}\times 1,898\times 10^{24}}{ 142,984\times 10^3}  } </mrow>
+					<mrow> \amp = 59,529\text{ m/s}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+</section>

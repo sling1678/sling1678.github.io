@@ -1,0 +1,486 @@
+<section xml:id="forces-Dynamics-in-Polar-Coordinates"><title> Dynamics in Polar Coordinates</title>
+
+	<idx><h>Dynamics</h><h>in Polar Coordinates</h></idx>
+
+	<introduction> 
+		<p><alert>(Requires Calculus) </alert>
+		</p>
+		<p>
+			Often a physical situation requires following the distance of an object and/or direction from some fixed point. For instance, in the motion of a pedulum we are interested in the direction of the bob from the suspension point. In the motion of planets, we are interested in the distance and direction from the Sun.
+
+
+		</p>
+		<p>
+			In these cases, it is worthwhile to use polar and cylindrical coordinates. Recall that cylindrical coordinates is just polar coordinates in the <m>xy</m> plane plus the <m>z</m> axis. Let <m>r</m> and <m>\theta</m> be polar coordinates. The, we recall the following important quantities from our earlier discussion on the kinematics of polar coordinates.
+			<md>
+				<mrow>\amp r = \sqrt{x^2 + y^2},\ \ \tan\theta = \frac{y}{x}. </mrow>
+				<mrow>\amp \hat u_r = \cos\theta\; \hat i + \sin\theta\; \hat j,\ \  \hat u_\theta = -\sin\theta\; \hat i + \cos\theta\; \hat j. </mrow>
+			</md>
+			Any vector can be decomposed into radial and angular components by simply taking the dot product. For an arbitrary vector, <m>\vec A = A_r \hat u_r + A_\theta \hat u_\theta</m>, we have
+			<me>
+				A_r = \vec A \cdot \hat u_r,\ \  A_\theta = \vec A \cdot \hat u_\theta.
+			</me>
+			Since direction <m>\hat u_\theta</m> is tangential, we often call the angular component, the tangential component. Position vector is very simple.
+			<men>
+				\vec r = r\; \hat u_r.
+			</men>
+			The velocity vector has both radial and tangential components.
+			<men>
+				\vec v = v_r\; \hat u_r + v_\theta\; \hat u_\theta,
+			</men>
+			where
+			<men>
+				v_r = \frac{dr}{dt},\ \ v_r = r\frac{d\theta}{dt}.
+			</men>
+			We often use a simpler notation for <m>d\theta/dt</m>.
+			<men>
+				\omega = \frac{d\theta}{dt}.
+			</men>
+			The radial and angular components are known as negative of centripetal and tangential components.
+			<men>
+				\vec a = a_r\; \hat u_r + a_\theta\; \hat u_\theta,
+			</men>
+			with the following
+			<men>
+				a_r = \frac{d v_r}{dt} - r \omega^2,\ \ a_\theta= r\frac{d\omega}{dt} + 2v_r\,\omega.
+			</men>
+			Decompsing the force vector <m>(\vec F = F_r \hat u_r + F_\theta \hat u_\theta)</m>, we can separate the <m>(\vec F = m\vec a)</m> for analysis.
+			<men>
+				F_r = m a_r,\ \ F_\theta = m a_\theta.
+			</men>
+			For three-dimensional situations, we might also need the <m>z</m> components of the vectors when using cylindrical coordinates. 
+			You can get more practice of using them by working exercises in this section.
+		</p>
+
+		<p><alert>Case of Circular Motion: </alert></p> 
+		<p>
+			<idx><h>Dynamics</h><h>Circular Motion</h></idx>
+			In circular motion, the distance <m>r</m> remains fixed, giving the following simplifications.
+			<md>
+				<mrow> \amp r = R,\ \text{constant}, </mrow>
+				<mrow> \amp v_r = 0,\ \ v_\theta = R \frac{d\theta}{dt} \equiv R\,\omega,</mrow>
+				<mrow> \amp a_r = -R \omega^2,\ \ a_\theta = R\frac{d\omega}{dt}.</mrow>
+			</md>
+		</p>
+
+	<example xml:id="ex-Rock-Tied-to-String-Moving-in-a-Circle"><title> Rock Tied to String Moving in a Circle</title>
+		<statement>
+			<p>
+				
+			</p>
+
+			<sidebyside widths="50% 5% 45%">			
+				<p>
+					A rock of mass <m>0.6\text{ kg}</m> is tied to a string and swung overhead in a horizontal uniform circular motion as shown in <xref ref="fig-stone-tied-to-string-whirled-around"/>. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-stone-tied-to-string-whirled-around">
+					<caption></caption>
+					<image source="./images/forces/stone-tied-to-string-whirled-around.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				The length of the string is <m>0.8\text{ m}</m>. The string will break if tension in the string exceeds <m>96\text{ N}</m>. 
+			</p>
+			<p>
+				(a) Assuming the string to be almost in the horizontal plane, set up polar coordinate equations of motion for the rock for the condition in which the tension is an infinitsimal amount less than the breaking point. 
+			</p>
+			<p>
+				(b) Find position, velocity, and acceleration of the rock as functions of time.
+			</p>			
+		</statement>
+		<!-- <hint><p>(a) If <m>xy</m> plane is horizontal, weight will be along the <m>z</m> axis. (b) Start by integrating components of acceleration. </p></hint> -->
+		<answer><p>
+			(a) <m>\omega = \sqrt{\frac{T}{mR}},\ \ \text{constant}</m>,  or, <m>\omega = 14.1\text{ rad/sec}</m>, 
+			(b) <m></m>. 
+		</p></answer>
+		<solution><title>a</title>
+			<p>
+				Let us us polar coordinates with origin at the center of the circle. Let <m>a_r(t)</m> and <m>a_\theta(t)</m> be the radial and angular components of acceleration at instant <m>t</m> and <m>F_r(t)</m> and <m>F_\theta(t)</m> be the radial and angular components of net force on the stone. at the same instant. There are two forces on the stone: weight <m>mg</m> along <m>z</m> axis and horizontal component of tension <m>\vec T</m> in the radially inward directions, i.e., in the <m>(-\hat u_r)</m> direction. Therefore, we will have the following equations of motion.
+				<me>
+					-T = m a_r,\ \ 0 = m a_\theta,\ \ T_z-m g = m a_z=0.
+				</me>
+				We are asssuming that horizontal component of <m>\vec T</m> has almost the full magnitude and <m>a_z=0</m>. Here the acceleration components will have simplified expressions due to the fact that radius of the circle is not changing.
+				<me>
+					a_r = -R \omega^2,\ \ a_\theta = R\frac{d\omega}{dt},
+				</me> 
+				where <m>\omega = d\theta/dt</m>. Therefore, we have the following.
+				<md>
+					<mrow>\amp \omega^2 = \frac{T}{m R}.</mrow>
+					<mrow>\amp \frac{d\omega}{dt} = 0.</mrow>
+					<mrow>\amp T_z = mg.</mrow>
+				</md>
+				These can be simplified to 
+				<men xml:id="eq-ex-Rock-Tied-to-String-Moving-in-a-Circle-a">
+					\omega = \sqrt{\frac{T}{mR}},\ \ \text{constant}.
+				</men>
+				Numerically, this becomes
+				<men>
+					\omega = \sqrt{\frac{96}{0.6\times 0.8}} = 14.1\text{ rad/sec}.
+				</men>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				From Eq. <xref ref="eq-ex-Rock-Tied-to-String-Moving-in-a-Circle-a"/> we get
+				<me>
+					\omega = \frac{d\theta}{dt} = \sqrt{\frac{T}{mR}} = 14.1.
+				</me>
+				Integrating this we get
+				<me>
+					\theta(t) = \theta_0 + 14.1\; t.
+				</me>
+				Thus, we have
+				<md>
+					<mrow>\amp r(t) = 0.8\text{ m},\ \ \theta(t) = \theta_0 + 14.1 t. </mrow>
+					<mrow>\amp v_r(t) = 0,\ \ v_\theta = r\omega(t) = 0.8\times 14.1 = 11.3\text{ m/s}. </mrow>
+					<mrow>\amp a_r(t) = -r\omega^2 = -160\text{ m/s}^2,\ \ a_\theta = 0. </mrow>
+				</md>
+			</p>
+		</solution>
+	</example>
+
+
+
+	<example xml:id="ex-Movement-of-a-Bead-on-a-Spinning-Frictionless-Rod"><title>(Calculus) Movement of a Bead on a Spinning Frictionless Rod</title>
+
+		<statement>
+			<p>
+				A frictionless rod of length <m>l</m> passes through a hole in a bead of mass <m>m</m> as shown in <xref ref="fig-bead-on-a-frictionless-rod"/>.
+			</p>
+ 
+			<sidebyside widths="50% 10% 40%">			
+				<p>
+					One end of the bead is tied to a shaft of a motor that spins the rod in at a fixed angular speed <m>\omega</m> in a horizontal plane. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-bead-on-a-frictionless-rod">
+					<caption></caption>
+					<image source="./images/forces/bead-on-a-frictionless-rod.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Initially bead is at rest at a distance <m>r_0</m> from the motor.  
+			</p>
+			<p>
+				(a) Find the location of the bead from the motor, <m>r</m>, on the rod as a function of time <m>t</m>. (b) Find speed of the bead as a function of time <m>t</m>. Practice the following parts with a Friend: (c) Find the instant, bead will leave the rod. (d) Find the direction the bead will leave the rod.
+			</p>
+		</statement>
+		<!-- <hint><p>(a) Angular speed of the bead is constant at <m>\omega</m>. Use this fact to solve the differential equation obeyed by <m>r(t)</m> obtained by applying <m>\vec F=m\vec a</m> in polar coordinates. </p></hint> -->
+		<answer><p>
+			(a) <m>r(t) = r_0\; \cosh(\omega\, t)</m>,
+			(b) <m>\omega^2 r_0^2\;\sqrt{\cosh(2 \omega\, t)}</m>.
+		</p></answer>
+		<solution><title>a</title>
+			<p>
+				
+				We use a polar coordinate system with origin at the motor and <m>xy</m> plane being the horizontal plane. Forces on the bead are gravity, which would be in the <m>z</m> axis direction.  
+			</p>
+
+
+			<sidebyside widths="50% 5% 45%">			
+				<p>
+					There are normal forces in the upward (<m>z</m> axis, magnitude <m>N_\text{up}</m>) and sideway (<m>\hat u_\theta</m>, magnitude <m>N_\theta</m>) directions.
+				</p>
+				<p></p>
+				<figure xml:id="fig-bead-on-a-frictionless-rod-solution">
+					<caption></caption>
+					<image source="./images/forces/bead-on-a-frictionless-rod-solution.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+
+			<p>
+				Thus, none of the forces have components along <m>\hat u_r</m> direction. These considerations give us the following equations of motion.
+				<mdn>
+					<mrow xml:id="eq-bead-on-rod-radial-acc"> \amp a_r = 0\ \ \longrightarrow \frac{d^2r}{dt^2} = \omega^2 r. </mrow>
+					<mrow xml:id="eq-bead-on-rod-tangential-acc"> \amp a_\theta = \frac{N_\theta}{m}\ \ \longrightarrow  2\omega \frac{dr}{dt} = \frac{N_\theta}{m}. </mrow>
+				</mdn>
+				The second equation looks easier to solve than the first, but it is deceptive since we do not know <m>N_\theta</m> which is actually time-dependent. Once, we figure eout <m>r(t)</m> from the radial equation, we can use that to get <m>N_\theta(t)</m> from this equation. 
+			</p>
+			<p>
+				Since <m>\omega</m> is constant, it is rather easy to guess the answer <m>r(t) = e^{+\omega t}</m> or <m>e^{-\omega t}</m> for Eq. <xref ref="eq-bead-on-rod-radial-acc"/>. A general answer will be a linear combination of these two.
+				<men xml:id="eq-bead-on-rod-r-as-func">
+					r(t) = A\; e^{+\omega t} + B\; e^{-\omega t}.
+				</men>
+				Its derivative will give the rate at which radial distance is changing with time.
+				<men xml:id="eq-bead-on-rod-vr-as-func">
+					v_r = \frac{dr}{dt} = \omega\,\left( A\; e^{+\omega t} - B\; e^{-\omega t}.\right).
+				</men>
+				From initial conditions we know that <m>r(0)=r_0</m> and <m>v_r(0)=0</m>. Therefore,
+				<men xml:id="eq-bead-on-rod-A-and-B">
+					A = B = \frac{r_0}{2}.
+				</men>
+				Hence,
+				<men xml:id="eq-bead-on-rod-ans-a">
+					r(t) = r_0\; \cosh(\omega\, t),
+				</men>
+				where
+				<me>
+					\cosh(\omega\, t) = \frac{e^{\omega t} + e^{-\omega t}}{2}.
+				</me>
+
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				
+				Taking time derivative of <xref ref="eq-bead-on-rod-ans-a"/> we get the radial component of velocity.
+				<me>
+					v_r = \omega r_0\sinh(\omega\, t),
+				</me>
+				where
+				<me>
+					\sinh(\omega\, t) = \frac{e^{\omega t} - e^{-\omega t}}{2}.
+				</me>
+				The tangential component of velocity is
+				<me>
+					v_\theta = \omega r = \omega r_0 \cosh(\omega\, t)
+				</me>
+				Therefore, speed at this instant will be the  magnitude of velocity as obtained by combining the components in a quadrature.
+				<md>
+					<mrow> v \amp = \sqrt{v_r^2 + v_\theta^2} = \omega r_0\sqrt{ \sinh^2(\omega\, t) + \cosh^2(\omega\, t) }</mrow>
+					<mrow> \amp = \omega r_0\sqrt{\cosh(2 \omega\, t)}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</example>	
+
+
+	</introduction>
+
+	<exercises>
+
+
+
+
+	<exercise xml:id="ex-Equation-of-Motion-of-a-Simple-Pendulum"><title> (Calculus) Equation of Motion of a Simple Pendulum</title>
+
+		<statement>
+
+			<sidebyside widths="50% 10% 40%">			
+			<p>
+				A simple pendumum consists of a bob of mass <m>m</m> attached to a string of length <m>l</m> that swings back ad forth in <alert>a vertical plane</alert> as shown in <xref ref="fig-ex-eqn-ofmotion-of-pendulum-statement"/>. You will work with polar coordinates in this problem with origin at the suspension points, positive <m>x</m> axis pointed down and positive <m>y</m> axis pointed to right. 
+			</p>
+				<p></p>
+				<figure xml:id="fig-ex-eqn-ofmotion-of-pendulum-statement">
+					<caption></caption>
+					<image source="./images/forces/ex-eqn-ofmotion-of-pendulum-statement.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				(a) Find equations of motion in polar coordinates. (b) Solve the differential equation corresponding to the tangential equation for variable <m>\theta(t)</m> when <m>\theta</m> is small. Hint: When <m>\theta</m> is small, we can approximate <m>\sin\theta \approx \theta</m> and <m>\cos\theta \approx 1 - \frac{1}{2}\theta^2</m>.
+			</p>
+
+		</statement>
+		<hint><p>
+			(a) Use radial and angular decomposition of two force vectors. (b) Simplify one of the eqiations of motion and solve a second order differential equation. 
+		</p></hint>
+		<answer><p>
+			(a) <m> \omega^2  =  \frac{T}{ml} - \frac{g}{l} \cos\theta</m>, <m>frac{d^2\theta}{dt^2}  = -  \frac{g}{l} \sin\theta</m>, (b) <m>A\; \cos\left( \sqrt{\frac{g}{l}}\;\; t \right) + B\; \sin\left( \sqrt{\frac{g}{l}}\;\; t \right)</m>.
+		</p></answer>
+		<solution><title>a</title>
+
+			<sidebyside widths="50% 10% 40%">			
+				<p>
+					Let origi<m>r</m> and <m>\theta</m> denote the radial and angular coordinates at an arbitrary instant <m>t</m>. Forces on the bob are shown in <xref ref="fig-ex-eqn-ofmotion-of-pendulum"/>. From this, we get
+					<md>
+						<mrow> \amp F_r = -T + mg \cos\theta.</mrow>
+						<mrow> \amp F_\theta = - mg \sin\theta.</mrow>
+					</md>					
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-eqn-ofmotion-of-pendulum">
+					<caption></caption>
+					<image source="./images/forces/ex-eqn-ofmotion-of-pendulum.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<!-- From <xref ref="fig-ex-eqn-ofmotion-of-pendulum"/>, we can immdeitely write the radial and angular components of net force. -->
+			<p>
+				Corresponding components of acceleration for the case of fixed <m>r</m> is
+				<md>
+					<mrow> \amp a_r = -l\omega^2.</mrow>
+					<mrow> \amp a_\theta = l \frac{d\omega}{dt}.</mrow>				
+				</md>
+				Therefore, equations of motion are
+				<md>
+					<mrow> -ml\omega^2 \amp = -T + mg \cos\theta.</mrow>
+					<mrow> ml \frac{d\omega}{dt} \amp = - mg \sin\theta.</mrow>
+				</md>
+				We can rewrite these equations as
+				<mdn>
+					<mrow> \amp  \omega^2  =  \frac{T}{ml} - \frac{g}{l} \cos\theta.</mrow>
+					<mrow xml:id="eq-plane-pendulum-tangential-eom"> \amp \frac{d^2\theta}{dt^2}  = -  \frac{g}{l} \sin\theta.</mrow>
+				</mdn>				
+			</p>		
+		</solution>
+		<solution><title>b</title>
+			<p>
+				The tangential equation of motion in Eq. <xref ref="eq-plane-pendulum-tangential-eom"/> can be simplified for small angles to
+				<me>
+					\frac{d^2\theta}{dt^2}  = -  \frac{g}{l} \theta.
+				</me>
+				This is a simple differential equation with solution as sines and cosine functions. 
+				<me>
+					\theta(t) = A\; \cos\left( \sqrt{\frac{g}{l}}\;\; t \right) + B\; \sin\left( \sqrt{\frac{g}{l}}\;\; t \right),
+				</me>
+				where <m>A</m> and <m>B</m> are constants that are fixed by initial values of <m>\theta</m> and <m>\omega</m>. For instance, if bob is let go from rest at angle <m>\theta_0</m>, we will get
+				<me>
+					\theta(t) = \theta_0\; \cos\left( \sqrt{\frac{g}{l}}\;\; t \right).
+				</me>
+				In general, if at <m>t=0</m>, <m>\theta=\theta_0</m> and <m>\omega=\omega_0</m>, then
+				<me>
+					\theta(t) = \theta_0\; \cos\left( \sqrt{\frac{g}{l}}\;\; t \right) + \frac{\omega_0}{\sqrt{g/l}}\; \sin\left( \sqrt{\frac{g}{l}}\;\; t \right).
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+	<exercise xml:id="ex-A-Block-Attached-to-a-String-Rotated-on-a-Table-with-Length-of-String-Changing"><title>(Calculus) A Block Attached to a String Rotated on a Table with Length of String Changing</title>
+
+		<statement>
+			<p>
+				 
+			</p>
+
+
+			<sidebyside widths="50% 5% 45%">			
+				<p>
+					<xref ref="fig-block-on-table-varying-string-length"/> shows a block of mass <m>m</m> on a frictionless table attached to a string that goes through a hole. While block moves around the hole, the string below the table is pulled at a constant speed <m>V</m>. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-block-on-table-varying-string-length">
+					<caption></caption>
+					<image source="./images/forces/block-on-table-varying-string-length.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+
+			<p>
+				Suppose the block was at <m>r=r_0</m> from the hole and had a angular speed of <m>\omega = \omega_0</m> at <m>t=0</m>. (a) Find <m>r(t)</m> and <m>\omega(t)</m> at instant <m>t</m>. (b) Find tension <m>T(t)</m> in the string at instant <m>t</m>.
+			</p>
+
+			
+		</statement>
+		<hint><p>
+			(a) Set up tangential equation of motion. (b) Set up radial equation of motion.
+		</p></hint>
+		<answer><p>
+			(a) <m>r(t) = r_0 - V t</m>, <m>\omega(t) = \frac{\omega_0 r_0^2}{ \left( r_0 - V t \right)^2 }</m>, 
+			(b) <m>\frac{m \omega^2 r_0^4}{ \left(r_0 - V t \right)^3 }</m>.
+
+		</p></answer>
+		<solution> <title>a</title>
+			<p>
+				From the description of the problem, we have the following for the radial coordinate of the block.
+				<me>
+					\frac{dr}{dt} = -V,\ \ \frac{d^2r}{dt^2} = 0.
+				</me>
+				Negative since <m>r</m> is decreasing with time at the rate the string is pulled down. From these two equations and <m>r(0) = r_0</m>, we will get
+				<men>
+					r(t) = r_0 - V t.
+				</men>
+				Now, to get <m>\omega(t)</m>, we will look at the tangential component of <m>\vec F = m\vec a</m> of the block. Since, there is no friction, we do not have any force in that direction. (Other force are gravity, normal, and tension, which do not have any components in the tangential direction.) Therefore, <m>a_\theta = 0</m>. Now, <m>a_\theta = r (d\omega/dt) + 2 (dr/dt)\omega </m>. Therefore,
+				<me>
+					r\;\frac{d\omega}{dt}  + 2 \frac{dr}{dt}\;\omega = 0. 
+				</me>
+				This gives
+				<me>
+					\frac{d\omega}{\omega}  = - 2 \frac{dr}{r}
+				</me>
+				Therefore,
+				<me>
+					\ln\frac{\omega}{\omega_0} = - 2 \ln\frac{r}{r_0} = - \ln\frac{r^2}{r_0^2}.
+				</me>
+				Hence,
+				<men>
+					\omega(t) = \frac{\omega_0 r_0^2}{ \left( r_0 - V t \right)^2 }.
+				</men>
+
+			</p>
+		</solution>
+		<solution> <title>b</title>
+			<p>
+				To find tension in the string, we look at radial component of <m>\vec F = m\vec a</m>. Only tension has component along this direction. Therefore, we get
+				<me>
+					-T = m a_r = m \left( \frac{d^2r}{dt^2} - r \omega^2 \right).
+				</me>
+				Now, using <m>r</m> and <m>\omega</m> found in (a), we get
+				<me>
+					T = m r \omega^2 = \frac{m \omega^2 r_0^4}{ \left(r_0 - V t \right)^3 }.
+				</me>
+			</p>
+		</solution>
+
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Angular-Speed-and-Tension-of-a-Simple-Pendulum"><title> Practice with a Friend: (Calculus) Angular Speed and Tension of a Simple Pendulum</title>
+
+		<statement>
+
+			<sidebyside widths="50% 10% 40%">			
+			<p>
+				A simple pendumum consists of a bob of mass <m>m</m> attached to a string of length <m>l</m> that swings back ad forth in <alert>a vertical plane</alert> as shown in <xref ref="fig-ex-eqn-ofmotion-of-pendulum-statement-find-ang-speed-and-tension"/>. You will work with polar coordinates in this problem with origin at the suspension points, positive <m>x</m> axis pointed down and positive <m>y</m> axis pointed to right. 
+			</p>
+				<p></p>
+				<figure xml:id="fig-ex-eqn-ofmotion-of-pendulum-statement-find-ang-speed-and-tension">
+					<caption></caption>
+					<image source="./images/forces/ex-eqn-ofmotion-of-pendulum-statement.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Suppose pendulum bob is let go from rest when the angle has value <m>\theta_0</m>. 
+				(a) Find angular speed and regular speed when angle is  <m>\theta</m> where <m>|\theta| \le |\theta_0|</m>. (b) Find the tension in the string when angle is  <m>\theta</m>.
+			</p>
+
+		</statement>
+		<hint><p>
+			(a) Think of <m>d^2\theta/dt^2</m> as <m>d\omega/dt</m> and use the trick of multiplying by <m>d\theta/dt</m> on both sides of the tangential equation of motion,
+			<me> \frac{d^2\theta}{dt^2} = - \frac{g}{l}\sin\theta \rightarrow \omega d\omega = -\frac{g}{l}\sin\theta\; d\theta.</me>
+		</p></hint>
+		<answer><p>
+			(a) <m>\sqrt{\frac{g}{l}\left( \cos\theta - \cos\theta_0\right)}</m>, (b) <m>mg\left(2\cos\theta - \cos\theta_0 \right)</m>.
+		</p></answer>
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+
+	<exercise xml:id="ex-A-Block-Attached-to-a-String-Rotated-on-a-Table-with-Length-of-String-Changing-Constant-Acceleration"><title> Practice with a Friend: (Calculus) Length of String Changing at Constant Acceleration</title>
+		<statement>
+			<p>
+				 Refer to <xref ref="ex-A-Block-Attached-to-a-String-Rotated-on-a-Table-with-Length-of-String-Changing"/>, but now, let the string be pulled so that it has a constant acceleration <m>A</m> and has speed <m>V_0</m> at instant <m>t=0</m>. (a) Show that
+				 <mdn>
+				 	<mrow>\amp r(t) = r_0 - V_0 t - \frac{1}{2} A t^2. </mrow>
+				 	<mrow>\amp \omega(t) = \frac{\omega_0 r_0^2}{ \left( r_0 - V_0 t - \frac{1}{2}A t^2\right)^2 }. </mrow>
+				 </mdn>
+				 (b) Find an expression of tension <m>T(t)</m>.
+			</p>
+		</statement>
+	</exercise>
+
+
+
+
+
+
+	</exercises>
+
+
+
+
+
+
+
+
+
+
+</section>

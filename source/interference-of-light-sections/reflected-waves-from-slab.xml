@@ -1,0 +1,554 @@
+<section xml:id="section-interference-from-dielectric-film"><title>Interference from Dielectric Films</title>
+	<introduction>
+		<p>
+			You have probably seen colored bands on soap bubbles. <xref ref="fig-Macro_Photography_of_a_soap_bubble"/> from Wikipedia show separation of colors by a soap film. This is different than the separation of colors when rainbow forms across the sky. Rainbow occurs occurs due to difference in refractive index for different colors. Here, as we will see below, the pattern is due to interference of two reflected waves. A soap film is a thin film of water and we get light reflected from front at air/water interface and another reflection from water/air interface at the back of the film facing inside of the bubble.  Since the angles of interference depend on the wavelength, you see different colors in different directions. You also see repeat of color pattern due to the different orders of interference as we saw in Young's double slit experiment in <xref ref="section-youngs-double-slit-expt"/>.
+		</p>
+
+		<figure xml:id="fig-Macro_Photography_of_a_soap_bubble">
+			<caption>
+				  Interference fringes from a soap film. Credits: https://en.wikipedia.org/wiki/Soap_bubble#/media/File:Macro_Photography_of_a_soap_bubble.jpg
+			</caption>
+			<image source="./images/interference-of-light/Macro_Photography_of_a_soap_bubble.jpeg" width="80%"/>
+		</figure> 
+
+		<p>
+			Actually, you can get interference patttern from any transparent thin film such as a thin sheet of glass, or  plastic, or airgap, etc. We will use <xref ref="fig-reflections-from-a-thin-film-for-interference"/> to study interference from dielectric films where a light from a monochromatic source is incident on a film and reflected waves from the front and back are brought to a common point at a screen. We will examine one representative ray at incident angle <m>\theta</m>.
+		</p>
+		<figure xml:id="fig-reflections-from-a-thin-film-for-interference">
+			<caption>
+				  Interference from reflections from two sides of a planar film.
+			</caption>
+			<image source="./images/interference-of-light/reflections-from-a-thin-film-for-interference.png" width="80%"/>
+		</figure> 
+		<p>
+			Let <m>d</m> be the thickness of the film and <m>n_1,\ n_2,\ n_3</m> be the refractive indices of the media of the incident ray, the film and the media behind the film. Note that in the soap film, <m>n_1</m> and <m>n_3</m> are both for air and <m>n_2</m> is that of water.
+		</p>
+		<p>
+			The amplitide of the incident wave PA is split at the <m>n_1/n_2</m> interface into a reflected part in AD and a transmitted part in AB. The transmitted part, then travels to the <m>n_2/n_3</m> interface, where its amplitude  splits into a reflected part in BC and a transmitted part which we will ignore in the present discussion.
+		</p>
+		<p>
+			The  reflected ray BC travels back to the <m>n_1/n_2</m> interface and refracts into the first medium  in the direction <m>\text{CC}^{\prime}</m>, which travels parallel to the ray  AD. We bring the parallel rays to a point of the focal plane, which is labeled Q, of a converging lens. The parallel rays represent two waves. Therefore, their superposition will display interference and you will see constructive or destructive interference depending upon the difference in their phases at that point.
+		</p>
+		<p>
+			You might have already noticed that there are infintely many reflected rays that will be coming back into <m>n_1</m> medium by rays reflecting back and forth inside the plate. Here we will look at just first two waves since amplitudes of other waves will be considerably less than these two. Another thing you should notice is that we could very well bring multiple transmitted waves together on the other side of the plate for interference. We will not do this calculation here, but you might want to do that, just for practice.
+		</p>
+		<p>
+			I will present calculations for interference conditions in subsections below. Here let us summarize the results for a quick look up for the most <alert>common case</alert> <m>n_1=n_3\lt n_2</m>. The formula for interference conditons take simpler form when written using the refraction angle <m>\theta_r</m> rather than the incidence angle <m>\theta</m> and the wavelength <m>\lambda_2</m> of light in the film.
+			<mdn>
+				<mrow xml:id="eq-interference-constructive-thin-film-theta-r">\amp \text{Constructive: } 2 d \cos\theta_r = m\frac{\lambda_2}{2}  \ \ (m\ \text{ odd})</mrow>
+				<mrow xml:id="eq-interference-destructive-thin-film-theta-r">\amp \text{Destructive: } 2 d \cos\theta_r = m^\prime \lambda_2 \ \ (m^\prime\ \text{ integer})</mrow>
+			</mdn>
+			where <m>m</m> odd, <m>m^\prime</m>, <m>\lambda_2</m>, and <m>\theta_r</m> are
+
+			<mdn>
+				<mrow>\amp m = \pm 1, \pm 3, \pm 5, \cdots, </mrow>
+				<mrow>\amp m^\prime = 0, \pm 1, \pm 2, \pm 3, \cdots, </mrow>
+				<mrow>\amp \lambda_2 = \frac{\lambda_0}{n_2},</mrow>
+				<mrow>\amp n_2 \sin\theta_r =  n_1  \sin\theta,\ \ \text{Snell's law.}</mrow>
+			</mdn>
+			Note that not all <m>m</m> and <m>m^\prime</m> will be possible since we must obey
+			<men>
+				-1.0 \le \cos\theta_r \le +1.
+			</men>
+			We can write the conditions in terms of incidence (and obviously same reflected angle) <m>\theta</m>, telling the direction in whih we need to look for the interference.
+			<mdn>
+				<mrow xml:id="eq-interference-constructive-thin-film-theta">\amp \text{Constructive: } \sin\theta = \frac{1}{4n_1 d} \sqrt{ 16 n_2^2d^2- m^2\lambda_0^2 } \ \ (m\ \text{ odd})</mrow>
+				<mrow xml:id="eq-interference-destructive-thin-film-theta">\amp \text{Destructive: }  \sin\theta = \frac{1}{2n_1 d} \sqrt{ 4 n_2^2d^2- {m^\prime}^2\lambda_0^2 } \ \ (m^\prime\ \text{ integer})</mrow>
+			</mdn>
+			In these formulas, you need to restrict <m>m</m> and <m>m^\prime</m> so that your results are real numbers and values of <m>\sin\theta</m> makes sense.
+			<mdn>
+				<mrow>\amp  -1.0\le \sin\theta\le 1.0,\ \  |m^\prime| \le \frac{2 n_2 d}{\lambda_0},\ \ |m| \le \frac{4 n_2 d}{\lambda_0}.</mrow>
+			</mdn>			
+ 
+		</p>
+		<p>
+			For a nearly normal reflection, angles of incidence and refraction will be zero.  This is the situation when you are looking at a film nearly vertically to the film. This would give an interference condition that would depend on the thickness of the film and the wave length. Setting <m>\cos\theta_r=1</m> in Eqs. <xref ref="eq-interference-constructive-thin-film-theta-r"/> and <xref ref="eq-interference-destructive-thin-film-theta-r"/>, we will see constructive and desctrctive interferences if thickness of the film corresponds to the following conditions.
+			<mdn>
+				<mrow xml:id="eq-interference-constructive-thin-film-normal">\amp \text{Constructive: } 2 d  = m\frac{\lambda_2}{2}  \ \ (m\ \text{ odd})</mrow>
+				<mrow xml:id="eq-interference-destructive-thin-film-normal">\amp \text{Destructive: } 2 d  = m^\prime \lambda_2 \ \ (m^\prime\ \text{ integer})</mrow>
+			</mdn> 
+			This result is useful in understanding why we see different colors in a soap film evern when we look at it nearly normally - the explanation has to do with varying thickness of the film. At different points thickness is just right for say purple light to be constructive and at some nearby location it is just right for green light to be constructive, etc.
+  
+		</p>
+ 
+
+
+
+<!-- 		<p>
+			From Fresnel equations we know that at each interface, the amplitude of the incident electric field is split into amplitudes of reflected and transmitted waves.
+			<me>
+				E_{0r} = \rho E_{0i},\ \ E_{0t} = \tau E_{0i},
+			</me>
+			where <m>\rho</m> and <m>tau</m> are the reflection and transmission coefficients for the appropriate polarization - S or P.
+		</p> -->
+
+
+	</introduction>
+
+ 	<exercise xml:id="exercise-Thickness-of-a-Soap-Film-from-Wavelength-of-the-Reflected-Light"><title>Thickness of a Soap Film from Wavelength of the Reflected Light</title>
+
+		<statement>
+			<p>
+				A soap film reflects blue light of wavelength, which has the value of <m>0.475\,\mu\text{m}</m> in vacuum, when viewed normally.  Find the thickness of the film at the site where the reflection is occuring from if the soap water has a refractive index of <m>1.33</m>? Assume the interference observed is of order <m>1</m>.
+			</p>
+		</statement>
+		<hint><p>Use the formula for the normal incidence.</p></hint>
+		<answer><p> <m> 0.893 \,\mu\text{m} </m>.</p></answer>
+		<solution>
+			<p>
+				To use the interference formula, first we need to evaluate the wavelength <m>\lambda_2</m>  inside the soap film, which is different from <m>0.475\,\mu\text{m}</m>. 
+				<me>
+					\lambda_2 = \frac{\lambda_0}{n_2}  = \frac{0.475\,\mu\text{m}}{1.33} = 0.375\,\mu\text{m}.
+				</me>
+				We find the thickness of the soap film  by using order number to be <m>m = 1</m> in the constructive interference condition. Of course, using other values of order would give other thicknesses.
+				<me>
+
+					d = \frac{1}{2}\ \frac{\lambda_2}{2} = \frac{1}{2}\ \frac{0.375\,\mu\text{m}}{2} = 0.893 \,\mu\text{m}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<subsection xml:id="subsection-Derivation-of-Interference-Conditions-for-Dielectric-Film"><title>Derivation of Interference Conditions for Dielectric Film</title>
+		<p>
+			In this section we will work out the formulas I have given above for the most common case of use, viz.,  <m>n_1=n_3\lt n_2</m>, such as air/glass/air. Since we only wish to find the interference conditions and not actual values of intensities, we do not need to do a full calcualtion using the electric field wave. We can actually derive the conditions using a few simple rules. 
+			<ol>
+				<li>1. When a wave in a medium <m>n_{first}</m> is incident on a medium <m>n_{second}</m>, then reflected wave will have additional phase change by <m>\pi</m> radians if <m>n_{first} \lt n_{second}</m>, otherwise no additional phase change occurs. </li>
+				<li> 1. Wave length in a medium depends on refractive index. Thus, if wavelength in vacuum is <m>\lambda_0</m>, then refractive index in a medium of refractive index <m>n</m> will be
+				<me>
+					\lambda = \frac{\lambda_0}{n}.
+				</me>
+				</li>
+				<li> 3. For each wavelength traveled, phase changes by <m>2\pi</m> radians.</li>
+			</ol>
+		</p>
+		<p>  
+			Now, let us redraw the figure for reflections from a thin film (see <xref ref="fig-reflections-from-a-thin-film-for-interference2"/>) so that we can use it here rather than switch back and forth from above. We wish to calculate the phase difference between the wave going in  paths PADD'Q and PABCC'Q. Note that phase changes on DD'Q and CC'Q are same, so they cancel out in the difference and we need to only consider paths PAD and PABC. 
+		</p>
+		<figure xml:id="fig-reflections-from-a-thin-film-for-interference2">
+			<caption>
+				  Interference from reflections from two sides of a planar film.
+			</caption>
+			<image source="./images/interference-of-light/reflections-from-a-thin-film-for-interference.png" width="80%"/>
+		</figure> 
+		<p>
+			To find the phase difference in the two paths, we trace them so that we can locate  phase changing reflections and appropriate path lengths starting from their common point P before any reflection occurs. Note that although PA part is common to both, but there is a difference between immediately before A and immediately after A in the two. So, you can imagine P to be as close to A as possible, but just before the reflection. This will give us the following phase difference <m>\Delta_{12}</m>.
+			<md>
+				<mrow> \Delta_{12}\amp = (\text{phase change for reflection at A?} </mrow>
+				<mrow> \amp \ \ \ \ \ \ \ + \text{phase change for path AD})</mrow>
+				<mrow> \amp \ \ \ \  - ( \text{phase change for path AB}</mrow>
+				<mrow> \amp \ \ \ \ \ \ \ \ \ \ \ + \text{phase change for reflection at B?}</mrow>
+				<mrow> \amp \ \ \ \ \ \ \ \ \ \ \ + \text{phase change for path BC}).</mrow>
+			</md>
+			In the present case, the reflection at A causes a phase change of <m>\pi</m>  radians since <m>n_1\lt n_2</m>, but the reflection at B does not have any phase change since <m>n_2 \gt n_3</m> - make sure you understand these comparisions in terms of first medium and second medium for each reflection event. 
+		</p>
+		<p>
+			Now, we can find the phase change for traveling a distance AD in the first medium by noting that phase of a wave changes by <m>2\pi</m>  radians when it travels one wavelength in the medium.  We must be careful here and use the correct wavelength for each path since waves are traveling in different media.  We are using  <m>\lambda_1</m> and  <m>\lambda_2</m> for the wavelength in the two media.  Note that although the frequency of light is same in the two media, the wavelength will be different in the two media because speed of the wave depends on the refractive index.	
+			<md>
+				<mrow> \amp 
+						\lambda_1 = \frac{v_1}{f} = \frac{c}{n_1 f}
+					</mrow>
+				<mrow> \amp 
+						\lambda_2 = \frac{v_2}{f} = \frac{c}{n_2 f}
+					</mrow>
+				</md>
+			Therefore, we will have the following relation between the wavelengths.
+			<me>
+				n_2 \lambda_2 =  n_1 \lambda_1.
+			</me>
+			Hence, phase changes over the two paths are as follows.
+			<md>
+				<mrow> \amp 
+					\text{phase change over AD}=  \frac{\text{AD}}{\lambda_1}\times 2\pi.
+				</mrow>
+				<mrow> \amp
+					\text{phase change over AB}=  \frac{\text{AB}}{\lambda_2}\times 2\pi =
+					\frac{n_2}{n_1} \frac{\text{AB}}{\lambda_1}\times 2\pi.
+				</mrow>
+				<mrow> \amp 
+					\text{phase change over BC}=  \frac{\text{BC}}{\lambda_2}\times 2\pi = 
+					\frac{n_2}{n_1} \frac{\text{BC}}{\lambda_1}\times 2\pi.
+				</mrow>
+			</md>
+			Therefore phase difference between the two waves will be
+			<men>
+				\Delta_{12} = \pi + \frac{2\pi}{\lambda_1}\left[ \text{AD} - \frac{n_2}{n_1} \left(\text{AB} + \text{BC} \right) \right].
+			</men>
+			We can replace the distances AB, BC, and AD in terms of the thickness <m>d</m> of the film, angle of incidence <m>\theta</m> and angle of refraction <m>\theta_r</m>.
+
+			<md>
+				<mrow> \text{AB} \amp = \text{BC} = \frac{d}{\cos\theta_r}</mrow>
+				<mrow> \text{AD} \amp =  \text{AC} \sin\theta = 2 d \tan\theta_r \sin\theta </mrow>
+				<mrow> \amp = 2d \frac{n_2}{n_1}\ \frac{\sin^2\theta_r}{\cos\theta_r},</mrow>
+			</md>
+			where I have made use of the Snell's law for the refraction at A, <m>n_1\sin\theta = n_2 \sin\theta_r</m>. Substituting for AB, BC and AD in the expression for  <m>\Delta_{12}</m> gives
+			<men>
+				\Delta_{12} = \pi + \frac{2\pi}{\lambda_2} \times 2d \cos\theta_r.
+			</men>
+			The interference will be constructive if this is integer multiple of <m>2\pi</m> and destructive if odd multiple of <m>\pi</m>.
+			<mdn>
+				<mrow xml:id="eq-interference-constructive-thin-film-phase-diff">\amp \text{Constructive: } \Delta_{12} = n\times 2\pi  \ \ (n\ \text{ integer})</mrow>
+				<mrow xml:id="eq-interference-destructive-thin-film-phase-diff">\amp \text{Destructive: } \Delta_{12} = n^\prime \pi\ \ (n^\prime\ \text{ odd})</mrow>
+			</mdn>
+			We can send <m>\pi</m> on the other side, simplify, and replace <m>n</m> and <m>n^\prime</m> by appropriate <m>m</m> and <m>m^\prime</m>. Due to moving <m>\pi</m> to the right side, the choice of <m>m</m> is different than that of <m>n</m>.
+			<mdn>
+				<mrow xml:id="eq-interference-constructive-thin-film-theta-r-derived">\amp \text{Constructive: } 2 d \cos\theta_r = m\frac{\lambda_2}{2}  \ \ (m\ \text{ odd})</mrow>
+				<mrow xml:id="eq-interference-destructive-thin-film-theta-r-derived">\amp \text{Destructive: } 2 d \cos\theta_r = m^\prime \lambda_2 \ \ (m^\prime\ \text{ integer})</mrow>
+			</mdn>					 
+
+ 
+
+		</p>		
+	</subsection>
+
+
+
+	<subsection><title>Reflected Waves from a Wedge-shaped Film</title>
+		<p>
+			A wedge is a simple system of linearly varying thickness. The phase difference between the rays reflected from the top and the bottom of a wedge-shaped dielectric film  will depend upon where on the wedge this happens.  A set-up that makes use of the reflections from a wedge-shaped film is shown in <xref ref="fig-interference-from-reflected-waves-from-wedge"/>.  An extended source is used to strike at different parts of the wedge, and observations are made on the reflections of <alert>nearly normally incident rays</alert>.
+		</p> 
+		<figure xml:id="fig-interference-from-reflected-waves-from-wedge">
+			<caption>
+				   Interference from reflection from two sides of a wedge.
+			</caption>
+			<image source="./images/interference-of-light/interference-from-reflected-waves-from-wedge.png" width="80%"/>
+		</figure> 
+ 
+		<p>
+			We again consider the case <m>n_1=n_3</m>.  If <m>n_1\lt n_2</m>, then the reflection at A will cause a phase shift of <m>\pi</m>  radians and no phase shift for the reflection at B.  If <m>n_1=n_3>n_2</m>, then the reflection at A will not cause phase shift but the reflection at B will cause phase shift of   <m>\pi</m> radians.  Therefore, as far as the phase shift contributions in the two waves labeled <m>E_{1r}</m> and <m>E_{2r}</m> are concerned, the situation here is similar to the plane plate worked out in the last section.
+		</p>
+		<p>
+			Since we are looking at near normal directions, the angles of incidence and refraction would be nearly zero.  Therefore we will set <m>\cos\theta_r \approx 1</m> in the condition for interference worked out in the last section.  Let <m>x</m> be the distance from the corner of the wedge and  <m>\alpha</m> be the angle at the corner of the wedge, then the thickness <m>d</m> of the dielectric material in the wedge at the place shown in the figure will be
+			<me>
+				d = x \tan\alpha \approx x \alpha,
+			</me>
+			where <m>\alpha</m> is in radian and I have assumed that the angle at the wedge is very small, making <m>\alpha \ll 1.0\text{ rad}</m>.  Depending on the values of <m>d</m> and <m>x</m>, we will have constructive or destructive interferences on the screen as given by the following conditions. With <m>2d  \approx 2\alpha x</m> we get
+			<me>
+				2 \alpha x = 
+				\begin{cases}
+
+					\frac{m}{2}\  \lambda_2  \amp  \text{ for constructive with }   m = \pm 1, \pm 3, \pm 5, \cdots\\
+					m'  \lambda_2  \amp  \text{ for destructive with }   m' = 0, \pm 1, \pm 3, \pm 5, \cdots
+				\end{cases}
+			</me>
+ 
+			Since different places on the wedge have different <m>d</m>, the constructive interference condition for <m>m=1,\ 2, \cdots</m>, is satisfied dor different wavelengths. this gives rise to bands of colors when white light is shone on the wedge. These bands are also called   <term>Fizeau fringes</term>.
+
+		</p>
+
+		<subsubsection><title>Newton's Rings</title>
+
+			<p>
+				<xref ref="fig-newtons-ring-setup"/> shows a hemispherical surface on a flat surface. This arrangment provides an interesting way to create air gap of varying heights. Reflections from top of glass/air and then air/glass interfaces interfere and one sees fringes. These fringes are called <term>Newton's rings</term>. Let us analyze this setup and find a formula for normal viewing.
+			</p>
+
+			<figure xml:id="fig-newtons-ring-setup">
+				<caption>
+					   A curved plate pressed against a flat plate provides layer of air with varying depths.
+				</caption>
+				<image source="./images/interference-of-light/newtons-ring-setup.png" width="80%"/>
+			</figure> 			
+ 
+ 
+ 			<p>
+ 				The thickness d at a horizontal distance r from the center is given by the following relation from the Pythagoras theorem. 
+				<me>
+					(R-d)^2 + r^2 = R^2.
+				</me>
+				Solve for <m>d</m> keeping the root with d\lt R.
+				<me>
+					d = R - \sqrt{R^2 - r^2}.</me>
+				The condition for constructive interference in case of near normal incidence is as follows.
+				<me>
+					d = R - \sqrt{R^2 - r^2} = \frac{m}{2} \frac{\lambda_0}{2}.
+				</me>
+				where <m>m</m> is an odd number and <m>\lambda_0</m> is the wavelength in air, the medium of the wedge.  The bright fringes form at following radial values from the center.
+				<me>
+					r = \sqrt{ \frac{m}{2} R \lambda_0 },
+				</me>
+				where we have assumed  <m>\lambda_0 \ll R</m> and dropped a term.  Since bright and dark fringes form in circles, they look like rings as illustrated in <xref ref="fig-newtons-rings-pattern"/>.  Isaac Newton reported these rings in his book Optiks: or, a Treatise on the Reflexions, Refractions, Inflexions and Colours of Light. We now call these rings Newton's rings. Newton pressed a double convex lens against the curved sides of the planar convex lens to create wedge that produced colored rings.
+			</p>
+			<figure xml:id="fig-newtons-rings-pattern">
+				<caption>
+					   Newton's rings are observed when viewd from above.
+				</caption>
+				<image source="./images/interference-of-light/newtons-rings-pattern.png" width="80%"/>
+			</figure> 
+ 
+
+		</subsubsection>
+
+
+	</subsection>
+
+
+
+	<exercise xml:id="exercise-Interference-of-Laser-Light-Reflected-from-a-Wedge"><title>Interference of Laser Light Reflected from a Wedge</title>
+
+		<statement>
+			<p>
+				A laser light of wavelength in air of <m>0.630\,\mu\text{m}</m> is incident in the apparatus shown above.  The slides are made of glass of refractive index <m>1.60</m>, and the wedge is water with refractive index <m>1.33</m>. Find the distance along <m>x</m> you need to move to go from one bright fringe to the next if the wedge angle is <m>5^\circ</m>.
+			</p>
+		</statement>
+		<hint><p>Use normal incidence.</p></hint>
+		<answer><p> <m>2.72\ \mu\text{m}</m>. </p></answer>
+		<solution>
+			<p>
+				Let us work out the constructive interference conditions for <m>m  = 0</m> and <m>m = 1</m>. Note that the angle <m>\alpha</m> of the wedge must be expressed in radians. Denoting <m>x_0</m> for <m>x</m> value when <m>m=0</m> and <m>x_1</m> when <m>m=1</m> we get
+				<md>
+					<mrow> \amp x_0 = \frac{1}{\alpha}\ \frac{\lambda_{\text{water}}}{4} =  \frac{180}{5\times\pi}\ \frac{1}{4} \frac{ 1.0\times 0.630\,\mu\text{m}}{1.33} = 1.36\ \mu\text{m}. </mrow>  
+					<mrow>\amp x_1 = \frac{1}{\alpha}\ \frac{3 \lambda_{\text{water}}}{4} =  3x_0.</mrow>
+				</md>
+				 
+				Hence,   <m>\Delta x = x_1-x_0 = 2x_0 = 2.72\ \mu\text{m}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Calculating-Phase-Difference-Between-Two-Optical-Paths"><title>Calculating Phase Difference Between Two Optical Paths</title>
+
+		<statement>
+			<p>
+				Two waves start from a coherent source.  They travel the same physical distance of <m>\frac{1}{2}</m> meter.  But there is a <m>10\text{ cm}</m> thick glass of refractive index <m>1.53</m> in the path of  one of the waves.  What is the phase difference between the two waves if the wavelength is <m>530\text{ nm}</m> in the air. Use refractive index of air <m>= 1.00</m>? 
+			</p>
+			<figure xml:id="fig-exercise-phase-diffrence-between-two-paths">
+				<caption>
+					   Figure for <xref ref="exercise-Calculating-Phase-Difference-Between-Two-Optical-Paths"/>.
+				</caption>
+				<image source="./images/interference-of-light/exercise-phase-diffrence-between-two-paths.png" width="80%"/>
+			</figure> 			
+		</statement>
+		<hint><p> Wavelength in glass is different than in air.</p></hint>
+		<answer><p> <m>5.5^{\circ}</m>.</p></answer>
+		<solution>
+			<p>
+				To find the phase difference between the two paths it is sufficient to find the phase difference over the 10 cm path when one wave goes through the glass and the other travels in air. There will be phase difference because the wavelengths of two lights of same frequency will be different in different media due to different refractive indices.  Let us calculate the wavelength  of the given light in glass of refractive index <m>1.53</m>. 
+				<me>
+					\lambda = \dfrac{\lambda_0}{n} = \dfrac{530\:\text{nm}}{1.53} = 346\:\text{nm}.
+				</me>
+				Now, when the wave goes through glass it makes one cycle every <m>346\:\text{nm}</m> of travel distance. In each cycle the phase changes by <m>2\pi</m> rad.  Therefore, this wave will have the phase change in 10 cm in glass given by
+				<me>
+					\phi_1 = \left[ \dfrac{10\:\text{cm}}{346\:\text{nm}}\times 2\pi \right]\:\text{mod}\:2\pi.
+				</me>
+				Similarly, the wave through air will have the phase change by
+				<me>
+					\phi_2 = \left[ \dfrac{10\:\text{cm}}{530\:\text{nm}}\times 2\pi \right]\:\text{mod}\:2\pi.
+				</me>
+				Hence the phase difference between the two paths will be
+				<md>
+					<mrow> \phi_1 - \phi_2 \amp = \left[ 20\pi\left(\dfrac{1}{346} - \dfrac{1}{530} \right) \times 10^7\right]\: \text{mod}\:2\pi</mrow>
+					<mrow> \amp = 0.0958\: \text{rad} = 5.56^{\circ}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<exercise xml:id="exercise-Change-in-Interference-When-Glass-Plate-is-Inserted-in-one-Path"><title>Change in Interference When Glass Plate is Inserted in one Path </title>
+
+		<statement>
+			<p>
+				A <m>530\text{-nm}</m> light is incident on a double-slit of separation <m>5.0\  \mu\text{m}</m>.  When one of the slits is covered with a <m>2.0\ \mu\text{m}</m> thick glass film of refractive index 1.5, interference pattern on a scren located <m>1.0\text{ m}</m> is observed to move.  Find the distance <m>m</m> = 1 constructive interference moves on the screen.
+			</p>
+		</statement>
+		<hint><p>The phase rotation in a medium of thickness <m>x</m> with refractive index <m>n></m> will be <m>2\pi d/ (\lambda/n)</m>. Also path differece in direction <m>\theta</m> is just <m>d\sin\theta</m> where <m>d</m> is the distance between slits. </p></hint>
+		<answer><p><m>1.77\text{ cm}.</m></p></answer>
+		<solution>
+			<p>
+				Let <m>y</m> corrdinate be pointed upward on the screen with origin at the symmetry axis. Then, <m>m=1</m> constructive interference will be located at 
+				<me>
+					d\sin\theta_1 = 1 \times \lambda, 
+				</me>
+				from which can be written as <m>y_1</m>, the <m>y</m> coordinate there as
+				<me>
+					y_1 = \frac{\lambda L}{d} = \frac{0.530 \  \mu\text{m} \times 1.0\text{ m}}{5.0  \mu\text{m}} = 10.6\text{ cm}.
+				</me> 
+				When we place a glass plate in one of the paths, the path difference <m>d\sin\theta</m> will be modified. Let <m>t</m> denote the thickness of the glass plate. So, we have phase changes in <m>(d-t)\sin\theta</m> with wavelength <m>\lambda</m> and 
+				<m>t\sin\theta</m> with wavelength <m>\lambda/n</m>. For <m>=1</m> we want the net phase change to equal <m>2\pi</m>. This gives
+				<me>
+					\frac{(d-t)\sin\theta}{\lambda}\times 2\pi + \frac{t\sin\theta}{\lambda/n}\times 2\pi = 1\times 2\pi.
+				</me>
+				Therefore, the condition now is
+				<me>
+					\sin\theta = \frac{\lambda}{d+(n-1)t}.
+				</me>
+				Replacing <m>\sin\theta\approx y^\prime_1/L</m>, where <m>y^\prime_1</m> is the new location where <m>m=1</m> constructive inteference will occur.
+				<md>
+					<mrow> y^\prime_1 \amp = \frac{\lambda}{d+(n-1)t}\, L </mrow>
+					<mrow>   \amp = \frac{\lambda L}{d}\ \frac{1}{1+(n-1)t/d} = \frac{y_1}{1+(n-1)t/d} </mrow>
+					<mrow>   \amp = \frac{10.6\text{ cm}}{1+(1.5-1)2.0/5} = 8.83\text{ cm} </mrow>
+				</md>
+				Therefore, <m>m=1</m> spot will move by
+				<me>
+					|y^\prime_1-y_1| = 1.77\text{ cm}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Thicknesss-of-an-Oil-Film-on-Glass-from-Wavelength-of-Light-Observed-at-Normal"><title>Thicknesss of an Oil Film on Glass from Wavelength of Light Observed at Normal</title>
+
+		<statement>
+			<p>
+				When you look at a oily surface on a glass plate  at a near normal angle, you find that it looks green. Let the wavelength of the light you see in air be <m>520\text{ nm}</m>. The refractive index of oil is 1.25 and that of glass is 1.5. What could be the minimum thickness of the oil film?
+			</p>
+		</statement>
+		<hint><p>Note that you have <m>n_1 \lt n_2 \lt n_3</m> here. Therefore, both reflections at <m>n_1/n_2</m> and <m>n_2/n_3</m> interfaces are now phase flipping. </p></hint>
+		<answer><p><m>208\text{ nm}</m>. </p></answer>
+		<solution>
+			<p>
+				Thinking of oil film as a parallel plate. We have air/film/glass system with <m>n_1 \lt n_2 \lt n_3</m>. Both reflections at <m>n_1/n_2</m> and <m>n_2/n_3</m> interfaces are now phase flipping. Therefore, the condition for constructive and destructive interferences now, will be opposite of what we had for <m>n_1 = n_3 \lt n_2</m>, where only <m>n_1/n_2</m> interface was phase flipping.
+			</p>
+			<p>
+				Now, the constructive interference will be
+				<me>
+					2 d \cos\theta_r = m \lambda_2\ \ (m\ \text{ integer})
+				</me>
+				Here, <m>d</m> is the thickness of the film. Near normal incidence <m>\cos]theta_r=1</m>. We also want smallest <m>d</m>. Therefore, we take <m>m=1</m>. Therefore, we have
+				<md>
+					<mrow>d \amp = \frac{\lambda_2}{2} = \frac{\lambda}{2 n_\text{oil}} </mrow>
+					<mrow>d \amp = \frac{520\text{ nm}}{2\times 1.25} = 208\text{ nm}.</mrow>
+				</md>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="exercise-Color-of-Very-Thin-Soap-Film-When-Observed-from-Normal-Direction"><title>Color of Very Thin Soap Film When Observed from Normal Direction</title>
+
+		<statement>
+			<p>
+				What color will a 150 nm thick soap bubble appear if illuminated by a white light at near normal?  Assume a refractive index of <m>1.4</m>.  
+ 
+			</p>
+		</statement>
+		<hint><p>Wavelengths of constructiely interfering ling may not be in the visible range.</p></hint>
+		<answer><p>Black</p></answer>
+		<solution>
+			<p>
+				Here we have
+				<me>
+					d = 150\:\text{nm},\ \ \lambda = \dfrac{\lambda_0}{n} = \dfrac{\lambda_0}{1.4}.
+				</me>
+				The constructive interference for the normal incidence 
+				<md>
+					<mrow> \amp m = 0 :\ \ d = \lambda/4,\ \ \Longrightarrow\ \ \lambda_0 = 4\times 1.4\times 150\:\text{nm} = 840\:\text{nm},</mrow>
+					<mrow> \amp m = 1 :\ \ d = \left(1 + \dfrac{1}{2} \right)\dfrac{\lambda_0}{2\times 1.4},\ \ \Longrightarrow\ \ \lambda_0 = 280\:\text{nm}.</mrow>
+				</md>
+				The reflected light does not fall in the visible range. Therefore, the soap will appear black.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="exercise-First-Two-Angles-From-Normal-Direction-of-Bright-Fringes-from-a-Plastic-Film"><title>First Two Angles From Normal Direction of Bright Fringes from a Plastic Film</title>
+
+		<statement>
+			<p>
+				A transparent plastic film has a thickness of <m>30\ \mu\text{m}</m> and a refractive index of <m>1.45</m>.  Find the first two angles at which a green light of wavelength <m>530\text{ nm}</m> will form bright fringes. Assume air on both sides of the film.
+			</p>
+		</statement>
+		<hint><p>Use the constructive interference formula for a dielectric film. Also note that order <m>m</m> is largest near normal. </p></hint>
+		<answer><p>
+			<m>	3.8^\circ</m>, <m>9.9^\circ</m>. 
+
+		</p></answer>
+		<solution>
+			<p>
+				Since we have <m>n_1=n_3\lt n_2</m> case , we have the following condition for  constructive interference with <m>m</m> an odd integer.
+				<me>
+					2d\:\cos\:\theta_r =  m \lambda_2 = m \frac{\lambda}{n}.
+				</me>
+				Note that for near normal angles, we want <m>\theta_r</m> to be near zero. This will give us order <m>m</m> that we will look at.
+				<me>
+					m_\text{normal} = \left\lfloor \frac{2nd}{\lambda}\right\rfloor. 
+				</me>
+				This will give
+				<me>
+					m_\text{normal} = \left\lfloor \frac{2\times 1.45\times 30\ \mu\text{m}}{0.530\ \mu\text{m}}\right\rfloor = 164.
+				</me>
+				Therefore, we want <m>m=164</m> and <m>m=163</m> orders. For <m>m=164</m>, we get
+				<md>
+					<mrow>\cos\theta_{r} \amp = m\frac{\lambda}{2nd}</mrow>
+					<mrow> \amp = 164\times \frac{0.530\ \mu\text{m}}{2\times 1.45\times 30\ \mu\text{m}} = 0.999. </mrow>
+				</md>
+				Therefore,
+				<me>
+					\theta_{r} = 2.6^\circ.
+				</me>
+				For <m>m=164</m>, we get
+				<md>
+					<mrow>\cos\theta_{r} = 163\times \frac{0.530\ \mu\text{m}}{2\times 1.45\times 30\ \mu\text{m}} = 0.993. </mrow>
+				</md>
+				Therefore,
+				<me>
+					\theta_{r} = 6.8^\circ.
+				</me>
+				We want incidence angles corresponding to these refraction angles.
+				<md>
+					<mrow>\theta_{i,164} \amp = \sin^{-1}\left( 1.45\sin 2.6^\circ\right) = 3.8^\circ.</mrow>
+					<mrow>\theta_{i,163} \amp = \sin^{-1}\left( 1.45\sin 6.8^\circ\right) = 9.9^\circ.</mrow>
+				</md>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Distance-Between-Constructive-Interference-due-to-Air-Wedge"><title>Distance Between Constructive Interference due to Air Wedge</title>
+
+		<statement>
+			<p>
+				A laser light of wavelength in air of <m>530\text{ nm}</m> is incident on a wedge made of air between glass plates of refractive index <m>1.55</m>. Find the distance along the wedge you need to move to go from one bright fringe to the next if the wedge angle is <m>2^\circ</m>. 
+			</p>
+		</statement>
+		<hint><p>Use constructive interference condition for wedge with <m>n_1=n_3\gt n_2</m>.</p></hint>
+		<answer><p><m>7.6\:\mu\text{m}</m></p></answer>
+		<solution>
+			<p>
+				For constructive interference from a wedge we get the following for order <m>m</m>.
+				\[
+					2\alpha x_m =  m \dfrac{\lambda_2}{2},\ \ (m\ \text{ odd integer})
+				\]
+				where <m>\alpha</m> is in radians, <m>x_m</m> the distance from the corner of the wedge to the <m>m^{\text{th}}</m>, <m>\lambda_2</m> the wavelength in the medium of the wedge (air here). Therefore, the distance between two successive bright rings will be 
+				\[
+				x_m - x_{m-2} = 2\times \frac{1}{2\alpha}\dfrac{\lambda_2}{2} = \dfrac{530\:\text{nm}}{2\times 0.0349\:\text{rad}} = 7.6\:\mu\text{m}.
+				\]
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Radius-of-Curvature-of-a-Lens-from-Number-of-Newtonian-Rings"><title>Radius of Curvature of a Lens from Number of Newtonian Rings</title>
+
+		<statement>
+			<p>
+				A plano-convex lens made of glass of refractive index <m>1.55</m> is set on a flat surface with the curved part of the lens facing the flat surface.  A light of wavelength <m>632.8\text{ nm}</m> is shone on the lens from the above.  One can see <m>60</m> bright rings from the center of the lens right up to the edge.  What is the radius of curvature of the lens? 
+			</p>
+		</statement>
+		<hint><p>Use formula for Newton's rings.</p></hint>
+		<answer><p><m>37.7\:\mu\text{m}</m>.</p></answer>
+		<solution>
+			<p>
+				Here <m>m=59</m> for the largest radius fringe.
+				<me>
+					r_{59} = \sqrt{59.5R\lambda_0},\ \ \Longrightarrow\ \ R = \dfrac{r_{59}^2}{59.5\lambda_0}.
+				</me>
+				Putting in the numbers we obtain <m>R = 37.7\:\mu\text{m}</m>.
+			</p>
+		</solution>
+	</exercise>
+ 
+ 
+
+
+
+</section>

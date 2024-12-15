@@ -1,0 +1,130 @@
+<section xml:id="Plane-Pendulum"><title> Plane Pendulum </title>
+	<introduction>
+ 
+		<p>
+			A plane pendulum consists of a bob of mass <m> m</m>  suspended from a light inextensible cord of length  <m>l</m> and swinging in a plane.   We will assume that the physical dimension of the bob is much smaller than the length of the cord so that we can treat the bob as a point mass.
+		</p>
+		<sidebyside widths="65% 10% 25%">
+			<p>
+				A pendulum has a stable equilibrium position when the bob is hanging vertically down from the suspension point.  The angular displacement of the bob from the equilibrium is given in terms of angle  <m>\theta</m>  that the cord makes with the vertical line. The displacement angle is positive for the counter-clockwise change in angle and negative for a clockwise change in angle when viewed from the axis coming out-of-page in the figure.
+			</p>
+			<p> </p>
+			<image source="./images/simple-harmonic-motion/shm-examples-plane-pendulum.png"/>
+		</sidebyside>
+
+		<sidebyside widths="65% 10% 25%">
+			<p>
+
+				Because we wish to study the angular displacement, it is more convenient to treat the pendulum motion as rotation of the bob about an axis through the point of suspension O perpendicular to the plane of motion.  The two forces on the bob are weight <m>mg</m> and tension <m>F_T</m>. The lever arm of <m>F_T</m> is zero and that of weight is <m>l\sin\,\theta</m>. Therefore the net torque is
+				<me>
+					\tau_\text{net} = \left( mg l \sin\,\theta, \text{ clockwise sense}\right), 
+				</me>
+				
+			</p>
+
+			<p> </p>
+			<image source="./images/simple-harmonic-motion/shm-examples-plane-pendulum-eom.png"/>
+		</sidebyside>
+
+		<p>
+			Let <m>\alpha</m> denote the angular acceleration. The moment of inertia of bob about the axis is <m>I=ml^2</m>. Therefore, the equation of motion is
+			<me>
+				ml^2\alpha = - mg l \sin\,\theta,
+			</me>
+			where negative sign is due to the clockwise sense. Simplifying we get
+			<men>
+				\alpha = - \dfrac{g}{l}\, \sin\,\theta.
+			</men>
+			This equation is not analogous to <m> a_x =- \omega^2\ x</m>, but if <m>\sin\theta</m> were to be replaced by <m>\theta</m>, we will get equation where acceleration is prportional to the negative of the displacement. It turns out that for small angles in radians you can replace <m>\sin\theta</m> by <m>\theta</m>. We call this <term>small-angle approximation</term>.
+			<men>
+				\sin\,\theta \approx \theta\ \ \ (\theta\text{ in radians.})
+			</men>
+			This approximation is good to two decimal precision for angles <m>\theta \lt 15^\circ= 0.26\text{ rad}</m>. Therefore, in the small-angle approximation
+			<men>
+				\alpha = - \dfrac{g}{l}\, \theta.
+			</men>
+			We can use analogy to <m> a_x =- \omega^2\ x</m> to study the motion of the pendulum. Thus, angular frequency of the pendulum will be
+			<men>
+				\omega = \sqrt{ \dfrac{g}{l} },
+			</men>
+			which means the frequancy of the oscillations
+			<men>
+				f = \dfrac{\omega}{2\pi} = \dfrac{1}{2\pi}\,\sqrt{ \dfrac{g}{l} }, 
+			</men>
+			and the period <m>T</m> 
+			<men>
+				T = \dfrac{1}{f} =  2\pi\,\sqrt{ \dfrac{l}{g} }.
+			</men>
+		</p>
+		<p>
+			The formula for the period shows that the time period of a small-amplitude pendulum does not depend on either the mass <m> m</m> of the pendulum bob or the amplitude of oscillations, but only on the length <m> l</m> of the pendulum cord and acceleration due to gravity <m> g</m>.  
+		</p>
+		<p>
+			The dependence of the period on <m> g</m> means that the same pendulum will have different periods on different planets.  Also, since the value of <m> g</m> varies over the surface of the Earth, the same pendulum will run at different rates in different locations on the Earth. 
+		</p>
+		<p> 
+			Galileo appears to be the first person to notice this aspect of a pendulum motion when he made the observation that different chandeliers of equal length in a church had the same period regardless of their amplitudes of swing or weights. It is said that he timed the swings of chandeliers using his pulses.
+		</p>
+	</introduction>
+ 
+	<exercise xml:id="ex-Period-of-a-Child-on-a-Swing"><title> Period of a Child on a Swing </title>
+		<statement>
+			<p>
+				 (a) A child is swinging on a swing such that her center of mass is <m>2.0\text{ m}</m> from the suspension point. How long does she take to complete one swing?  
+			</p>
+			<p>
+				(b) The child moves to another swing and finds that her swings now take <m>1.2</m> times as much. What is the distance of her center of mass now in this swing?
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Treat swing as a plane pendulum. (b) Use <m> T \propto \sqrt {L}</m>. </p> </hint>
+		<answer> <p>  (a) <m> 2.84\text{ sec}</m>, (b) <m> 2.88\text{ m}</m>. </p> </answer>
+		<solution> 
+			<p>
+				(a)
+				Treating the child as a point mass at her center of mass, the swing is just a plane pendulum. Then, the time to complete one swing is the period of the pendulum.
+				<me>
+					T = 2\pi\,\sqrt{ \dfrac{L}{g} } = 2\pi\,\sqrt{ \dfrac{2}{9.81} } = 2.84\text{ sec}.
+				</me>
+			</p>
+			<p>
+				(b)
+				Since only length is different, we can use the proportionality, <m> T \propto \sqrt {L}</m>, to deduce
+				<me>
+					\dfrac{T_2}{T_1} = \sqrt{{L_2}{L_1}}.
+				</me>
+				Therefore, <m>L_2/L_1</m> is square of the ratio of times. This gives
+				<me>
+					L_2 = 1.2^2\times 2.0\text{ m}= 2.88\text{ m}.
+				</me>
+				Note that length is not <m>1.2\times</m>. If that was the case, the answer would have been <m>2.4\text{ m}</m>, but the actual answer is <m>2.88\text{ m}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Period-of-Same-Pendulum-at-Different-Locations-on-Earth"><title> Period of Same Pendulum at Different Locations on Earth </title>
+		<statement>
+			<p>
+				The period of a plane pendulum varies from place to place. At place A, the period is <m>2.84\text{ sec}</m>. At place B, the period is <m>2.89\text{ sec}</m>. What is the ratio of the acceleration due to gravity, <m>g_A/g_B</m>?
+			</p>
+
+		</statement>
+		<hint> <p> Use <m>T\propto 1/\sqrt{g}</m>.  </p> </hint>
+		<answer> <p> <m>1.05</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Since only thing different may be the acceleration  due to gravity, we use the proportionality <m>T\propto 1/\sqrt{g}</m> to obtain
+				<me>
+					\dfrac{T_A}{T_B} = \sqrt{\dfrac{g_B}{g_A}}.
+				</me>
+				From this we get
+				<me>
+					\dfrac{g_A}{g_B} = \left( \dfrac{T_B}{T_A} \right)^2 = \left( \dfrac{2.89}{2.82} \right)^2 = 1.05.
+				</me>
+				That is, <m>g</m> is about 5% higher at A than at B.
+			</p>
+		</solution>
+	</exercise>
+
+
+</section>

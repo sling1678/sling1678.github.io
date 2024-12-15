@@ -1,0 +1,238 @@
+<section xml:id="Position-of-a-Circular-Motion"><title> Position of a Circular Motion </title>
+	<subsection> <title> Arc Length and Angle Subtended</title>
+
+		<sidebyside widths="50% 50%">
+			<p>
+
+				<p> 
+					We track the motion of an object moving in a circle by the change in the angle <m> \theta </m> subtended at the center of the circle. It is helpful to think of <m> \theta </m> as a function of time, <m> \theta(t) </m>. 
+				</p>
+	 
+	 	
+				<p>
+					If we express angle <m> \theta </m> as <m>\text{radian}</m> or <m>\text{rad}</m>, we get a simple relation between the physical distance on the arc, denoted by  <m> s </m>  and called the <term> arc length</term>, and the angle <m> \theta </m> subtended at the center by
+					<me>
+						s = R\, \theta\ \ \ \ (\theta \text{ in radians.})
+					</me>
+				</p>
+			</p>
+			<image source="./images/circular-motion/circular-motion-basic.png" width="60%"/>"
+		</sidebyside>
+	</subsection>
+	<subsection> <title> Position on a Circle </title>
+		<p>
+			When an object is restricted to be in a circle, its distance from the center remains fixed during the motion. That means, if the origin is placed at the center, the magnitude of the position vector <m> \vec r </m> will always be equal to the radius <m> R </m> of the circle.
+			<me>
+				\text{Magnitude of }\vec r:\ \ \ \ r = R\ \ (\text{constant in time})
+			</me>
+		</p>
+		<p>
+			Therefore, only the direction of the position vector <m> \vec r</m> changes with time. The angle <m> \theta</m> of the vector with the <m> x </m> axis gives us the direction of the vector. That means, the changing position of a circular motion will be given by this angle as a function of time, <m> \theta (t) </m>.
+		</p>
+		<p>
+			Given a value of the angle <m> \theta(t) </m> at instant <m> t </m>, we can find the <m> x </m> and <m> y </m> coordinates that make up the position vector at that instant.
+			<md>
+				<mrow xml:id="eq-circ-motion-position-x">\amp x(t) = R\, \cos\, \theta(t),</mrow>
+				<mrow xml:id="eq-circ-motion-position-y">\amp y(t) = R\, \sin\, \theta(t).</mrow>
+			</md>
+		</p>
+		<p>
+			Thus, the position vector using unit vectors along the axes is
+			<me>
+				\vec r = \left( R\, \cos\, \theta(t) \right)\hat i + \left( R\, \sin\, \theta(t) \right)\hat j,
+			</me>
+			and the magnitude/direction representation as:
+			<md>
+				<mrow> \amp\text{Magnitude } = R,</mrow>
+				<mrow> \amp\text{Direction angle } = \theta, </mrow>
+			</md>
+			<alert> where angle <m> \theta </m> is modulo <m> 2\pi\text{ rad} </m>, i.e., we express the angle in the range <m> 0 </m> to <m> 360^{\circ}</m>, so that the angle gives unique direction in the plane.</alert>
+		</p>
+	</subsection>
+
+		<exercise xml:id="Position-and-Displacement-on-a-Circle">
+			<title> Position, and Displacement on a Circle</title>
+			<statement>
+				<p>
+					A child in a merry-go-round is moving in a circle of radius <m> 4\text{ m}</m>. At some instant, let <m> t = 0 </m>, the child is at a point labeled A.  
+				</p>
+				<p>
+					(a) At time <m> t=2.0\text{ sec}</m>, the child is at another point labeled B. How far distance on the arc between A and B has the child moved if the angle subtended at the center O between lines  OA and OB is <m> 30^{\circ}</m>?
+				</p>
+				<p>
+					(b) At some other instant, <m> t = 3.0\text{ sec}</m>, the child is at point C. If the distance moved between A and C on the arc is <m> 10.0\text{ m}</m>, what is the angle subtended between OA and OC in degrees? 
+				</p>
+				<p>
+					(c) Suppose you use a Caretisn coordinates with O at the center and OA towards the positive <m> x </m> axis, what are the coordinates of points A, B and C?
+
+				</p>
+				<p>
+					(d) What is the displacement between B and C?
+				</p>
+
+			</statement>
+			<hint> <p> Use <m> s = R \theta </m>. </p> </hint>
+			<answer> <p> (a) <m> 2.09\text{ m}</m> (b) <m> 143.2^{\circ}</m> (c) <m>(4.0\text{ m}, 0) </m>, <m> ( 3.46\text{ m}, 2\text{ m})</m>, <m> ( -3.20\text{ m}, 2.39\text{ m})</m>  (d) <m>6.67\text{ m}</m> at <m> 3.35^{\circ}</m> clockwise from the negative <m> x </m> axis. </p> </answer>
+			<solution>  
+				<p> (a)
+					The distance on the arc is related to the angle in radian, so we convert degrees to radians.
+					<me>
+						s = R\theta = 4.0\times \dfrac{30\times \pi}{180} = 2.09\text{ m}.
+					</me>
+				</p>
+				<p>(b)
+					The angle in radian will be
+					<me>
+						\theta = \dfrac{s}{R} = \dfrac{10.0}{4.0} = 2.5\text{ rad}.
+					</me>
+					We need to convert this to degrees.
+					<me>
+						\theta = 2.5 \times 180 / \pi = 143.2^{\circ}.
+					</me>
+				</p>
+				<p>(c)
+					Using the axes given, we will get the following for the positions of A, B, and C.
+					<md>
+						<mrow> \amp \vec r_A = (4.0\text{ m}, 0),</mrow>
+						<mrow> \amp \vec r_B = (4.0\,\cos\,30^{\circ}, 4.0\,\sin\,30^{\circ}) = ( 3.46\text{ m}, 2\text{ m}),</mrow>
+						<mrow> \amp \vec r_C = (4.0\,\cos(2.5\text{ rad}), 4.0\,\sin(2.5\text{ rad})) = ( -3.20\text{ m}, 2.39\text{ m}),</mrow>
+
+					</md>
+				</p>
+
+				<p>(d)
+					Now, since we know the coordinates of B and C, it is trivial to get the <m> x </m> and <m> y</m> components of the displacement vector. From
+					<me>
+						\Delta r = \vec r_C - \vec r_B,
+					</me>
+					we get
+					<md>
+						<mrow>\amp \Delta x = x_C - x_B = -3.20-3.46 = -6.66\text{ m}, </mrow>
+						<mrow>\amp \Delta y = y_C - y_B = 2.39-2 = 0.39\text{ m}. </mrow>
+					</md>
+					We can get the magnitude and direction of the displacement from these components.
+					<md>
+						<mrow>\amp\text{Magnitude: }  \Delta r =  6.67\text{ m}, </mrow>
+						<mrow>\amp \theta = \tan^{-1}\dfrac{0.39}{-6.66} = -3.35^{\circ}. </mrow>
+					</md>
+					Since <m>(-6.66,0.39)</m> is in the second quadrant, the direction is <m> 3.35^{\circ}</m> clockwise from the negative <m> x </m> axis.
+
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="ex-Arc-Length-Arc-Angle-Average-Speed-Average-Angular-Speed-and-Average-Velocity"><title> Arc Length, Arc Angle, Average Speed, Average Angular Speed, and Average Velocity </title>
+			<statement>
+				<sidebyside widths="50% 50%" >
+					<p>The figure shows a body (A) fixed at the edge of a circular rotating platform of radius <m> 5 \text{ m}</m>. In <m> 2 \text{ sec}</m>, the body goes from the location marked A to the location marked B without making any full turns.				
+					</p>
+					<image source="./images/circular-motion/bc-one-body-on-a-rotating-platform.png" width="50%"/>
+				</sidebyside>
+	 
+				<p>(a)
+					What is the value of the angle rotated in radian?
+				</p>
+				<p>(b)
+					How much distance has the body traveled in space?
+				</p>
+				<p>(c) 
+					What is the average speed of the body?
+				</p>
+				<p>(d)
+					What is the average angular speed of the body?
+				</p>
+				<p>(e)
+					Draw arrows on the figure to show the direction of the velocity (i) at the instant the body was at A and (ii) at the instant the body was at B. 
+				</p>
+				<p>(f)
+					(i) Draw an arrow on the figure to show the direction of the average velocity during the interval between A and B. (ii) What is the magnitude of the average velocity?  
+				</p>
+				<p> (g)
+					Suppose the body ended up at location B, but during the <m> 2 \text{ sec}</m> interval, the body made three full turns before ending up at B. What would be the average speed and  average angular speed now?
+				</p>
+				<p> (h) 
+					Suppose the body ended up at location B, but during the <m> 2 \text{ sec}</m> interval, the body made three full turns before ending up at B. Will the average velocity now be same or different from the situation when the body did not make any full turns? Why or why not?
+				</p>
+			</statement>
+			<hint> <p>  Use definitions. </p> </hint>
+			<answer> <p>  (a) <m> \dfrac{\pi}{3}\text{ rad}</m>,
+			(b) <m> 5.24\text{ m} </m>, (c) <m> 2.62  \text{ m/s}</m>,
+			(d) <m> 0.524  \text{ rad/s}</m>, (e) and (f) see the solution for figures; <m>
+						v_{\text{av}} = 2.5\text{ m/s}.
+					</m>, (g) <m> 49.74\text{ m/s}, 9.95\text{ rad/s} </m>,
+			(h) Same as (f), magnitude of average velocity <m> 2.5\text{ m/s} </m>.
+
+			 </p> </answer>
+			<solution> <title> (a), (b), (c), (d) </title>
+				<p> (a)
+					<m> \theta = 60^{\circ} = 60\times\dfrac{\pi}{180} = \dfrac{\pi}{3}\text{ rad}</m>.
+				</p>
+				<p> (b)
+					<m> s = R\,\theta = 5\times \dfrac{\pi}{3} = 5.24\text{ m}</m>.
+				</p>
+				<p> (c)
+					<m> v_{\text{s,av}} = \dfrac{d}{t} = \dfrac{5.24}{2} = 2.62  \text{ m/s}</m>.
+				</p>
+				<p> (d)
+					<m> \omega_{\text{av}} = \dfrac{\theta}{t} = \dfrac{\pi}{3\times2} =  0.524  \text{ rad/s}</m>.
+				</p>
+
+			</solution>
+
+			<solution><title> (e), (f) </title>
+
+				<p>(e) and (f). The figure shows the velocity directions at A (<m> \vec v_A</m>) and at B (<m> \vec v_B</m>), and the average velocity direction(<m> \vec v_{\text{av}}</m>). 
+				</p>
+				<image source="./images/circular-motion/bc-one-body-on-a-rotating-platform-ef.png" width="50%"/>
+				<p>
+					To figure out the magnitude of the average velocity, we need the direct distance between points A and B, and <em>  not the distance on the arc</em>, which was used for the average speed.
+				</p> 
+				<p>
+					We can compute the direct distance from the <m> (x,y) </m> of A and B. The formula for direct distance between two points with coordinates <m> (x_A, y_A) </m> <m> (x_B, y_B) </m> is
+					<me>
+						d = \sqrt{ (\Delta x)^2 + (\Delta y)^2  },
+					</me>
+					where <m> \Delta x = x_B - x_A </m> and <m> \Delta y = y_B - y_A </m>.
+				</p>
+				<p>
+					In the figure, we have 
+					<md> 
+						<mrow> \amp x_A = R,\ \ y_A = 0 </mrow>
+						<mrow> \amp x_B = 5\,\cos\, 60^{\circ} = 2.5\text{ m},\ \ y_B =  5\,\cos\, 60^{\circ} = 4.33\text{ m}.</mrow>
+					</md>
+					Therefore, the direct distance
+					<me>
+						d = \sqrt{2.5^2 + 4.33^2} = 5\text{ m}.
+					</me>
+					Therefore, the magnitude of the average velocity is
+					<me>
+						v_{\text{av}} = \dfrac{5}{2} = 2.5\text{ m/s}.
+					</me>
+
+				</p>
+
+
+			</solution>
+
+			<solution><title> (g), (h) </title>
+
+				<p> (g) 
+					If the body made three additional full turns, then the distance traveled for average speed will be not just the arc length from A to B but that plus the distance of the three full turns. For each turn, the distance is the circumference, <m> 2\pi R </m>. The time still is <m> 2\text{ sec}</m>. Therefore, the average speed now will be
+					<me>
+						v_{\text{s,av}} = \dfrac{5.24 + 3\times 2\pi\times 5}{2} = 49.74\text{ m/s}.
+					</me>
+					Similarly, the average angular speed will include all the angles went over.
+					<me>
+						\omega_{\text{av}} = \dfrac{\pi/3 + 3\times 2\pi}{2} = 9.95\text{ rad/s}.
+					</me>
+
+				</p>
+
+				<p> (h) 
+					For average velocity, whatever you did between A and B does not matter - only the end points matter. Therefore, the direct distance will not change, and since the time is the same, the magnitude of the averafge velocity will not change. The direction is also the same, from point A towards point B.  
+
+				</p>
+			</solution>
+		</exercise>
+
+</section>

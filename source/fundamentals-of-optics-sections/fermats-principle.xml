@@ -1,0 +1,125 @@
+<section xml:id="fermats-principle"><title> Fermat's Principle </title>
+	<introduction>
+        <p>
+        	The three laws of geometric optics can be understood from the perspectives of a deeper principle concerning the propagation of light due to Pierre Fermat (1601-1665), the French lawyer and mathematician.  In its original form, <term> Fermat's principle</term> states that,
+        </p>
+        <p>
+        	<q> The actual path between two points taken by a beam of light is the one which is traversed in the least time.</q>
+    	</p>
+    	<p>
+    		This principle can be stated in terms of a quantity called  the <term> optical path length</term>(OPL) defined as the product of geometric length and the refractive index of the medium. Let a ray of light travel a geometric length <m>l</m> in a medium of refractive index <m>n</m>. then, its optical path lenfth will be
+    		<men>
+    			\text{OPL} = n l.
+    		</men>
+    		Let <m>v</m> be the speed of light in that medium. Then time taken will be
+    		<me>
+    			t = \dfrac{l}{v}.
+    		</me>
+    		Since <m>v</m> in a medium is related to <m>c</m> in vacuum by <m>v = c/n</m>, we can write this as
+    		<me>
+    			t = \dfrac{nl}{c} = \frac{\text{OPL}}{c}.
+    		</me>
+    		Therefore, minimizing <m>t</m> will mean minimizing <m>\text{OPL}</m> also.  
+    		The laws of reflection and refraction through transparent media can be easily derived from Fermat's principle as I will show now.
+        </p>
+    </introduction>
+
+    <subsection><title>(Calculus) Law of Reflection from Fermat's Principle</title>
+	    <p>
+	    	Consider two points A and B in the same medium as shown in <xref ref="fig-fermat-reflect"/>. A ray of light traveling to a mirror reflects in the direction of B.  Where on the mirror the light has to hit so that total time between A and B will be minimum? I know that you know the answer that <m>\theta^\prime = \theta</m>. But, here we pretend that we do not know this and want to apply Fermat's principle of least time, or equivalently least optical path length, to figure this fact out.
+	    </p>
+
+    	<sidebyside widths="50% 5% 45%">
+	    	<p>
+	    		   Strategy: if we can find the location of point P such that time for AP+PB corresponds to the least time path between A and B that contains a reflection from the mirror, we should be able to prove the two angles are equal. Note: the least time path without reflection will just be the direct path from A to B, but we are not interested in that path.
+	    	</p>
+	    	<p>
+	    	</p>
+	    	<figure xml:id="fig-fermat-reflect">
+		    	<caption>
+		    		Deriving law of reflection using Fermat's principle.
+		    	</caption>
+		    	<image source="./images/fundamentals-of-optics/fermat-reflect.png" width="60%"/>
+		    </figure>
+		</sidebyside>
+ 
+
+		<p>
+			Let the fixed distances in the figure be AC = BD = <m>L</m> and  CD = <m>h</m>.  Since we need to find P, let CP = <m>x</m>, unknown. Then, according to Fermat's least time principle, for fixed A and B, point P will be at a spot such that the time for travel for light of speed <m>v</m> will be smallest. Let time for AP be <m>t_{AP}</m> and time for PB be <m>t_{PB}</m>.  Since the rays are in the same medium we will use the same speed for both rays.  We can write time <m>t</m> as a function of <m>x</m>.
+			<md>
+				<mrow>t \amp = t_{AP} + t_{PB} = \frac{AP}{v} + \frac{PB}{v} </mrow>
+				<mrow> \amp = \frac{\sqrt{L^2 + x^2}}{v} + \frac{\sqrt{L^2 + (h-x)^2}}{v}.</mrow>
+			</md>
+			To minimize <m>t</m>, we take a derivative of <m>t</m> with respect to the independent variable <m>x</m> and set it to zero.
+			<me>
+				\frac{x}{\sqrt{L^2 + x^2}} = \frac{h-x}{\sqrt{L^2 + (h-x)^2}}.
+			</me>
+			This relation can be written in terms of the angles <m>\theta_1</m> and  <m>\theta_1^\prime</m>.
+			\<me>
+				\sin\theta_1 = \sin\theta_1^{\prime}
+			</me>
+			Since both angles are less than <m>90^{\circ}</m>, we can immediately write down their equality.
+			<me>
+				\theta_1 = \theta_1^{\prime}
+			</me>
+			Therefore, point P has to be such that the angle of incidence will be equal to  the angle of reflection.
+
+    	</p>
+    </subsection>
+
+
+    <subsection><title>(Calculus) Law of Refraction from Fermat's Principle</title>
+    	<p>
+    		To deduce the law of refraction based on Fermat's principle, we fix points A and B in the two media, and  find  point P at the interface where a ray from point A in medium 1 will refract in the direction of B in medium 2 as illustrated in <xref ref="fig-fermat-refract"/>.
+    	</p>
+    	<figure xml:id="fig-fermat-refract">
+	    	<caption>
+	    		Deriving law of refraction using Fermat's principle.
+	    	</caption>
+	    	<image source="./images/fundamentals-of-optics/fermat-refract.png" width="80%"/>
+	    </figure>
+ 
+
+ 
+		<p>
+			Let points A and B be such that AC = BD = <m>L</m> and CD = <m>h</m>.  AC and BD are chosen equal for the convenience in calculation. Let point P be at a  distance <m>x</m> from C. We need to find point P such that time from A to B is least. Note that light travels with different speeds in the two media.
+			<md>
+				<mrow> \amp v_1 = \frac{c}{n_1},</mrow>
+				<mrow> \amp v_2 = \frac{c}{n_2},</mrow>
+			</md>
+			where <m>c</m> is the speed of light in vacuum.  On path APB we can write the time as a function of <m>x</m> and then minimize this function.
+			<md>
+				<mrow> t \amp = t_{AP} + t_{PB} = \frac{AP}{v_1} + \frac{PB}{v_2}</mrow>
+				<mrow> \amp = \frac{\sqrt{L^2 + x^2}}{v_1} + \frac{\sqrt{L^2 + (h-x)^2}}{v_2}.</mrow>
+			</md>
+			To minimize <m>t</m>, we take the derivative of <m>t</m> with respect to the independent variable <m>x</m> and set it to zero.
+			<me>
+				\frac{1}{v_1}\frac{x}{\sqrt{L^2 + x^2}} = \frac{1}{v_2}\frac{h-x}{\sqrt{L^2 + (h-x)^2}}.
+			</me>
+			Writing the speeds in terms of <m>c</m> and the refractive indices, and replacing the ratios of the distances in the right angled triangles by trigonometric functions we immediately arrive at the Snell's law.
+			<me>
+				n_1\sin\theta_1 = n_2\sin\theta_2.
+			</me>
+    	</p>
+    </subsection>
+
+
+    <subsection><title>Fermal's Principle is Fundamental</title>
+    	<p>
+    		The derivations of the laws od reflection and refraction from requiring that the true path of the ray be the one where light takes least amount of time captures some fundamental nature of light. Although, we already knew the results of these derivations from experiments, the derivations do not rely on experiments. Instead, we can take the view that Fermat's principle <alert>predicts</alert> these results, which can then be tested in experiments. 
+    	</p>
+    	<p>
+    		A general lesson of Fermat's principle is that, in order to understand physical reality, we just need to find some physical aspect of a system that nature is trying to <alert>optimize</alert> - in the case of light, it is the time of travel, and in other systems, it may be something else. This way of thinking led to the discovery of principle of least action, upon which classical mechanics can be understood.  
+    	</p>
+    </subsection>
+
+
+
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,379 @@
+<section xml:id="Keplers-Laws-of-Planetary-Motion"><title> Kepler's Laws of Planetary Motion</title>
+
+
+	<subsection><title> Math of Ellipse</title>
+		<p>
+			Ellipse plays central role in planetary motion. Here, we review some of the basics of ellipse.
+		</p>
+		<p>
+			Ellipse is an oval-shaped planar curve with two focal points <m>F_1</m> and <m>F_2</m> as shown in <xref ref="fig-kepler-ellipse-cartesian" />. The sum of the distances <m>d_1</m> and <m>d_2</m> from the focal points to the points of the ellipse is constant,
+			<me>
+				d_1 + d_2 = \text{constant}.
+			</me> 
+		</p>
+		<figure xml:id="fig-kepler-ellipse-cartesian">
+			<caption> Parameters of an ellipse. Semi-major axis <m>a</m>, semi-minor asis <m>b</m>, focii <m>F_1</m> and <m>F_2</m>, the focal distance <m>c</m>. The constants are related by <m> c = \sqrt{a^2-b^2}</m>. The quantity <m>c/a</m> is the eccentricity of the ellipse. With Cartesian axes shown, the equation of the ellipse is <m> \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1</m>.
+			</caption>
+			<image source="./images/gravitation/kepler-ellipse-cartesian.png" width="60%"/>
+		</figure>
+		
+		<p>
+			Let <m>c</m> denote the distance of a focus from the center, <m>a</m> the distance from the center to the end of the wider side, and <m>b</m> the distance from the center to the end of the narrower side. The quantities <m> a</m> and <m>b</m> are also called semi-major and semi-minor axes, and quantity <m>c</m> is called the focal distance. They are related by
+			<men  xml:id="eq-ellipse-csq-asq-bsq" >
+				c^2 = a^2 - b^2,
+			</men> 
+			The ratio <m>c/a</m> is called the <term> eccentricity</term> and denoted by <m>e</m>.
+			<men>
+				\text{Eccentricity,  } e = \dfrac{c}{a}.
+			</men>
+		</p>
+		<p>
+			<alert>Ellipse in Cartesian Form</alert>
+		</p>
+		<p>
+			Suppose we place an ellipse with wider side along <m>x</m> axis and the narrower side along <m>y</m> axis. This will place the center of the ellipse at the origin. The foci will be symmetrically located on <m>x</m> axis at <m>(-c,0)</m> and 
+			<m>(c,0)</m>. The definition of ellipse says that any point <m>(x,y)</m> on ellipse must obey
+			<men>
+				\sqrt{ (x+c)^2 + y^2 } + \sqrt{ (x-c)^2 + y^2 } = \text{constant}
+			</men>
+			The points <m>(a,0)</m> and <m>(-a,0)</m> will be the end points of the ellipse on the <m>x</m> axis. Then,
+			<men xml:id="eq-ellipse-defining-equation">
+				\sqrt{ (x+c)^2 + y^2 } + \sqrt{ (x-c)^2 + y^2 } = 2a.
+			</men>
+ 	
+
+			By appropriately rearranging terms in Eq. <xref ref="eq-ellipse-defining-equation"/> and squaring to remove radicals, and then using Eq. <xref ref="eq-ellipse-csq-asq-bsq"/> we can obtain the standard form of equation of ellipse.
+			<men xml:id="eq-ellipse-defining-equation-standard">
+				\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1.
+			</men>
+		</p>
+ 		<p>
+			<alert>Ellipse in Polar Form With Origin at Focus</alert>
+		</p>
+		<p>
+			Sometimes, it is better to work with polar form of an ellipse that has origin at the focus and not at the center. Let <m> r </m> denote the radial coordinate and <m>\theta</m> counterclockwise from the <m>x</m> axis that is along the major axis. Then, it is possible to show that if origin is at the focal point on the right then
+			<men>
+				r = \dfrac{a\left( 1 - e^2\right)}{1 + e\,\cos\theta},
+			</men> 
+			and if origin is at the focal point on the left then
+			<men>
+				r = \dfrac{a\left( 1 - e^2\right)}{1 - e\,\cos\theta}.
+			</men> 			
+
+		</p>
+		<figure>
+			<caption> Left panel: The equation of ellipse in polar form is <m>r = \dfrac{a\left( 1 - e^2\right)}{1 + e\,\cos\theta} </m>. Right panel: The equation of ellipse in polar form is <m>r = \dfrac{a\left( 1 - e^2\right)}{1 - e\,\cos\theta} </m>.
+			</caption>
+			<sidebyside widths="5% 42% 6% 42% 5%">
+				<p> </p>
+				<image source="./images/gravitation/kepler-ellipse-polar-1.png" width="60%"/>
+				<p> </p>
+				<image source="./images/gravitation/kepler-ellipse-polar-2.png" width="60%"/>
+				<p> </p>
+			</sidebyside>
+		</figure>
+
+
+		<p>
+			If the origin was not at one of the foci, but at the center of the ellipse, we would get
+			<me>
+				r = \dfrac{b}{ \sqrt{1-e^2\,\cos^2\theta} }.
+			</me>
+			Finally, we will find the formula of the area of an ellipse useful.
+			<men>
+				\text{Area of an ellipse, } A = \pi\,a\,b.
+			</men>
+		</p>
+	</subsection>
+
+	<subsection> <title> Kepler's Laws </title>
+		<p>
+			Johannes Kepler (1571-1630) analyzed the voluminous data of planetary positions recorded by Tycho Brahe (1546-1601) and deduced the following three laws of planetary motion. A good place to get planetary data now a days is at the <url href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">NASA website</url>.
+		</p>
+
+		<p><alert>First Law or the Law of Elliptical Orbits</alert></p>
+		<p>
+			Planets travel in elliptical orbits about the Sun with the Sun at one focus.
+		</p>
+
+		<p><alert>Second Law or the Law of Equal Areas</alert></p>
+		<p>
+			The line joining the Sun and a planet covers equal area in equal time.  Thus when a planet is nearer to the Sun, it has a higher speed than when it is further out.  <xref ref="fig-planetary-motion-kepler-law-2" /> illustrates this law.
+		</p>
+		<figure xml:id="fig-planetary-motion-kepler-law-2">
+			<caption>
+				The area OAB covered by a planet in a duration  <m> \Delta t</m> is equal to the area OCD covered in the <alert> same duration </alert> <m> \Delta t</m>.
+			</caption>
+			<image source="./images/gravitation/planetary-motion-kepler-law-2.png" width="60%"/>
+		</figure>
+ 		
+ 
+ 		<p><alert>Third Law or the Law of Harmonies</alert></p>
+		<p>
+			The ratio of square of the period of revolution about the Sun to the cube of the semi major axis of the elliptical orbit of two planets are equal to each other.  Thus if <m> T_1</m> and <m> T_2</m> are time for planets 1 and 2 to go around the Sun, and <m> a_1</m> and <m> a_2</m> the semi-major axes of their elliptical orbits, we have the following equality (see <xref ref="fig-planetary-motion-kepler-law-3"/>).  
+			<men>
+				\frac{T_1^2}{a_1^3} = 	\frac{T_2^2}{a_2^3},\ \ \text{or,}\ \ \left( \frac{T_1}{T_2} \right)^2 = 	\left( \frac{a_1}{a_2} \right)^3.
+			</men>
+
+		</p>
+		<figure xml:id="fig-planetary-motion-kepler-law-3">
+			<caption>
+				Kepler's third law says that <m>T_1^2 / a_1^3 =  T_2^2 / a_2^3</m>, where <m> T_1 </m> and <m>T_2 </m> are time for planets 1 and 2 to go around sun once. It's worth noting that <m> a_1</m> and <m> a_2</m> are not distances from the Sun, but they are the semi-major axes of the elliptical orbits. If the oribit was a circular orbit, they would be the distance from the Sun.
+			</caption>
+			<image source="./images/gravitation/planetary-motion-kepler-law-3.png" width="60%"/>
+		</figure>
+	</subsection>
+
+	<exercise xml:id="ex-Earths-Orbit-Around-the-Sun"><title> Earth's Orbit Around the Sun </title>
+		<statement>
+			<p>
+				The closest and farthest distance of the Earth from the Sun are 0.98 AU and 1.02 AU, where, the Astronomical Unit, 1 AU = 149,598,000 km. Find (a) the semi-major axis, (b) the eccentricity of Earth's orbit, and (c) the semi-minor axis.
+			</p>
+
+		</statement>
+		<hint> <p>  <m>2a =</m> sum of the two distances given. </p> </hint>
+		<answer> <p> (a) <m> 1.0\text{ AU}</m>, (b) <m> 0.02</m>, (c) <m>b=0.9998\text{ AU}\approx 1.00\text{ AU}</m>.  </p> </answer>
+		<solution> 
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					<p> (a) 
+						We will refer to the following figure.
+					</p>
+					<p>
+						From the figure, we see that
+						<me>
+							a = \dfrac{0.98+1.02}{2} = 1.0\text{ AU}.
+						</me>
+					</p>
+				</p>
+				<p></p>
+				<image source="./images/gravitation/planet-around-sun-aphelion-perihelion.png" width="50%"/>
+			</sidebyside>
+
+			<p>
+				(b) Therefore, the focal distance is
+				<me>
+					c = a - r_\text{min} = 1.0 - 0.98 = 0.02\text{ AU}.
+				</me>
+				From <m>a</m> and <m>c</m> we get the eccentricity of the orbit.
+				<me>
+					e = \dfrac{c}{a} = \dfrac{0.02}{1.0} = 0.02\text{ (no units)}
+				</me>
+			</p>
+			<p>
+				(c) 
+				<me>
+					b^2 = a^2 - c^2 = 1.0^2 - 0.02^2 = 0.9996.
+				</me>
+				Therefore, <m>b=0.9998\text{ AU}\approx 1.00\text{ AU}</m> = a. Since <m>a\approx b</m>, the orbit of Earth is very close to circular.
+			</p>
+	
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Mars-Orbit-Around-the-Sun"><title> Mar's Orbit Around the Sun </title>
+		<statement>
+			<p>
+				The closest and farthest distance of Mars from the Sun are <m>1.38\text{ AU}</m> and <m>1.67\text{ AU}</m>, where, the Astronomical Unit, <m>1\text{ AU} = 149,598,000\text{ km}</m>. Data: Semimajor axis of Earth's orbit = <m>1.0\text{ AU}</m> and orbital period of Earth = <m>365.2\text{ days}</m>.
+			</p>
+			<p>
+				Find (a) the semi-major axis, (b) the eccentricity , and (c) the period of Mars's orbit.  
+			</p>
+			<p>
+				The semi-major axis of Earth is <m>1.0\text{ AU}</m> and the orbital period is <m>365.2\text{ days}</m> 
+			</p>
+
+		</statement>
+		<hint> <p>  <m>2a =</m> sum of the two distances given. </p> </hint>
+		<answer> <p> (a) <m> 1.0\text{ AU}</m>, (b) <m> 0.02</m>, (c) <m>687.8\text{ days} </m>.  </p> </answer>
+		<solution> 
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					<p>
+						We will refer to the following figure.
+					</p>
+					
+					<p>
+						(a) From the figure, we see that
+						<me>
+							a = \dfrac{1.38+1.67}{2} = 1.525\text{ AU}.
+						</me>
+					</p>
+					<p>
+						(b)
+						Therefore, the focal distance is
+						<me>
+							c = a - r_\text{min} = 1.525 - 1.38 = 0.145 \text{ AU}.
+						</me>
+					</p>
+				</p>
+				<p> </p>
+
+				<image source="./images/gravitation/planet-around-sun-aphelion-perihelion.png" width="50%"/>
+			</sidebyside>
+			<p>
+				From <m>a</m> and <m>c</m> we get the eccentricity of the orbit.
+				<me>
+					e = \dfrac{c}{a} = \dfrac{0.145}{1.525} =  0.095\text{ (no units)}
+				</me>
+			</p>
+			<p>
+				(c)
+				From the semi-major axis of Mars and the semi-major axis and orbital period of Earth, we can find the orbital period of Mars by using Kepler's third law. 
+				<me>
+					T_\text{Mars} = \left( \dfrac{1.525\text{ AU}}{1.0\text{ AU}} \right)^{3/2}\times 365.2\text{ days} =  687.8\text{ days}.
+				</me> 
+			</p>
+	
+		</solution>
+	</exercise>
+
+  
+	<exercise xml:id="ex-Orbit-of-Haleys-Comet"><title> Orbit of Haley's Comet </title>
+		<statement>
+			<p>
+				The orbit of Halley's comet is approximately elliptical with <m>e=0.967</m>.  Halley's comet comes around every 76 years. 
+			</p>
+			<p>
+				Find (a) the distance of the closest approach to the Sun and (b) the farthest distance the comet goes from the Sun.
+			</p>
+			<p>
+				Data: The semi-major axis of Earth is <m>1.0\text{ AU}</m> and the orbital period is <m>365.2\text{ days}</m>, where <m>1\text{ AU} = 149,598,000\text{ km}</m>.  
+			</p>
+		</statement>
+		<hint> <p>  (a) and (b) : Use third law to find <m>a</m> of Haley's comet first. </p> </hint>
+		<answer> <p> (a) <m>0.59\text{ AU}</m>, (b) <m>35.29\text{ AU}</m>. </p> </answer>
+		<solution> 
+ 			<sidebyside widths="50% 10% 40%">	
+				<p>
+					First we use Kepler's third law on orbits of Haley's comet and Earth to obtain the semi-major axis of Heley's comet.
+					<md>
+						<mrow> a_H \amp = \left( \dfrac{T_H}{T_E} \right)^{2/3}\, a_E, </mrow>
+						<mrow>  \amp = \left( \dfrac{76\text{ yr}}{1\text{ yr}} \right)^{2/3}\, 1\text{ AU} = 17.94\text{ AU}. </mrow>
+					</md>
+				</p>
+				<p></p>
+				<image source="./images/gravitation/planet-around-sun-aphelion-perihelion.png" width="50%"/>
+			</sidebyside>
+			<p>
+				Now, we use the definition of eccentricity to find the focal distance.
+				<me>
+					c = e\,a = 0.967\times 17.94\text{ AU} = 17.35\text{ AU}.
+				</me>
+			</p>
+			<p>
+				Now, refer to the figure to obtain the min and max distances.
+				<md>
+					<mrow> \amp \text{(a) } r_\text{min} = a - c = 17.94-17.35= 0.59\text{ AU}.</mrow>
+					<mrow> \amp  \text{(b) } r_\text{max} = a + c = 17.94+17.35= 35.29\text{ AU}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Predict-the-Orbital-Period-of-Mercury-From-Aphelion-and-Perihelion-Data-on-Earth-and-Mercury"><title> Predict the Orbital Period of Mercury From Aphelion and Perihelion Data on Earth and Mercury </title>
+		<statement>
+			<p>
+				 The perihelion and aphelion distances of Mercury are <m> 46.0</m> and <m> 69.8 </m> in units of <m> 10^{6}\text{ km}</m>, and that of Earth are <m> 147.1</m> and <m> 152.1 </m> in the same units. What is the orbital period of Mars in Earth days if the orbital period of Earth is <m> 365.2\text{ days}</m>? Compare your answer to the listed value of <m> 88.0\text{ days}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Use Kepler's third law. </p> </hint>
+		<answer> <p>  <m> 87.9 \text{ days}</m>. </p> </answer>
+		<solution> 
+			<p>
+				We can use Kepler's third law. 
+				<me>
+					\left( \dfrac{T_1}{T_2} \right)^2 = 	\left( \dfrac{a_1}{a_2} \right)^3.
+				</me>
+				Here, the semimajor axis <m>a</m> is the average of the perihelion and aphelion distances. We don't even have to average them, we can just add them, since the dividing factor 2 will be canceled in the ratio.
+				<md>
+					<mrow> T_\text{mer} \amp = 	\left( \dfrac{a_\text{mer}} {a_\text{earth}} \right)^{3/2}\ T_\text{earth}, </mrow>
+					<mrow> \amp = \left( \dfrac{ 46.0 + 69.8}{ 147.1 + 152.1} \right)^{3/2}\times 365.2  = 87.9 \text{ days}, </mrow>
+				</md>
+				This is impressively close to <m>88.0\text{ days}</m>.				
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Discovering-Keplers-Third-Law-from-Modern-Data"><title> Discovering Kepler's Third Law from Modern Data </title>
+		<statement>
+			<p>
+				The distances of various planets from Sun and their orbital periods are given in NASA website as follows. (Unit of distance is <m> 10^6\text{ km} </m> and the unit of time is Earth <m>\text{day}</m>.)
+			</p>
+			<p>
+				The list order is [Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto]. The orbital periods are [88.0, 224.7, 365.2, 687.0, 4331, 10747, 30589, 59800, 90560] and the distances from the Sun are [57.9, 108.2, 149.6, 227.9, 778.6, 1433.5, 2872.5, 4495.1, 5906.4].
+			</p>
+			<p>
+				You suspect that <m> T \propto r^n</m>, where <m>T</m> is the period and <m>r</m> the distance. But you don't know <m>n</m> yet. We pretend we don't know - since this has already been found by Kepler, but here we will find it our own way from the data. Find <m> n </m> from the given data.
+			</p>
+
+		</statement>
+		<hint> <p> Plot <m>\ln T</m> versus <m>\ln r</m>.  </p> </hint>
+		<answer> <p> <m> n = 1.50</m>.  </p> </answer>
+		<solution>
+			<p>
+				Since we suspect <m>T\propto r^n </m>, we make it an equality first and set
+				<me>
+					 T = c r^n,
+				</me>
+				where <m>c</m> is an unknown constant - at the moment of no interest.
+				By taking natural log of both sides you get
+				<me>
+					\ln T = \ln c + n \ln r.
+				</me>
+				Thus if we plot <m> \ln T</m> on the <m>y</m>-axis and <m> \ln r</m> on the <m>x</m>-axis, and fit the data to a straight line, the slope of this line will give us <m> n</m>.  The following figure shows the calculations and result done in Microsoft Excel.
+				
+			</p>
+			<image source="./images/gravitation/kepler-third-law-exercise-find-exponent.png" width="60%"/>
+		</solution>
+	</exercise>
+
+
+
+	<!-- <introduction>
+		<p>
+			Johannes Kepler (1571-1630) was an assistant to the great observational astronomer Tycho Brahe (1546-1601) who meticulously recorded the positions of planets for over twenty years at the observatory built on the island of Hveen with the financial support of the Danish king Frederik II.  After Brahe's death in 1601, Kepler persuaded Brahe's widow to let him study the voluminous data collected by Tycho Brahe.  
+		</p>
+		<p>
+			Kepler originally believed that the motion of planets must be based on the  perfect symmetry of the platonic solids and expected to find circular paths for the planetary motion.  However, when he found that the observed orbit of Mars was not a circular motion, he had to abandon his belief, and instead, tried to understand the data directly, which led to his discovery of three laws of planetary motion.  
+		</p>
+
+
+	</introduction> -->
+
+
+
+
+
+
+	<subsection><title> Kepler's Impact on the Development of Physics</title>
+
+		<p>
+			Kepler's three laws played critical role in the discovery of the universal law of gravitation, and had  major impact on the acceptance of science by the general public.  By 1666 Newton had early versions of his three laws of motion, but yet did not have the law of gravitation.  In that year he had an insight that Earth's gravity extended also to the Moon and was counterbalanced by the centrifugal force.  Newton used the balance of the two forces to find that the gravitational force must decrease as inverse square of the distance.  The calculation was, however, only for a circular motion. 
+		</p>
+		<p>
+			Newton did not work on the planetary motion problem any further till 1679 when another physicist, Robert Hooke, which you have met in the Hooke's law of the spring force, went to see him about the elliptical orbit problem of the planets.  Hooke had conjectured that a planet moving in an ellipse must be acted on by a central force by the Sun.  Hooke had also come to the conclusion  that this force must vary as the square of the inverse of the distance of the planet from the Sun, but he could not prove his conjectures mathematically.
+		</p>
+		<p>  
+			After Hooke's visit, Newton went back to work on the planetary motion problem.  First he showed mathematically that, if a body obeys Kepler's second law, then the force on the body must be central.  Isaac Newton also showed that the angular momentum of a body is conserved if the body is acted upon by a central force.  This finding demonstrated the physical basis of Kepler's second law.
+		</p>
+		<p>
+			Next, Newton showed that if a body is in an elliptical path, then the force must be pointed towards one of the foci and must vary as the square of the inverse  of the distance from the focus.  However, Newton did not publish any of these results until after the great Astronomer, Edmund Halley (1656-1742), asked him in 1684 if he could prove Hooke's conjecture.  To Haley's surprise, Newton immediately replied that he had proved it five years earlier.  Upon Halley's insistence Newton wrote up his treatise on mechanics and its applications to the celestial mechanics. This work is called the Philosophiae naturalis principia mathematica, or  <em> Principia</em> and was published in 1687.
+		</p>
+
+		<p>
+			Halley used Newtonian calculations to ascertain that comets appearing in the sky in 1531, 1607 and 1682 were the same object and it was regularly appearing every 76 years.  Sure enough the comet, now called Halley's comet, arrived on Christmas day in 1758 as predicted by Edmund Halley. The last time Halley's comet observable on Earth was in 1986  shown in <xref ref="fig-HalleyCometNasa" />. 
+		</p>
+
+
+		<figure xml:id="fig-HalleyCometNasa">
+			<caption>
+				Halley's Comet. Picture by NASA (1986).
+			</caption>
+			<image source="./images/gravitation/HalleyCometNasa.png" width="70%"/>
+		</figure>
+	</subsection>
+
+</section>

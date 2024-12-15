@@ -1,0 +1,251 @@
+<section xml:id="Passive-Circuit-Elements"><title> Passive Circuit Elements </title>
+	<introduction>
+		<p>
+			Resistors, capacitors, and inductors are called <term>passive elements</term> of a circuit while EMF source is called the <term>active element</term>. We analyze a dynamical circuit, such as an AC circuit, using Faraday's loop rule. 
+		</p>
+		<p>
+			In this section, we will work out formulas for voltage drop  across each element, which carry amplitude and phase informations now. We will use these formulas to write the EMF side of Faraday's law immediately. That would leave only the magnetic flux side of Faraday's law to work out if the circuit is subject to changing external magnetic flux, otherwise, that side will be zero.
+		</p>
+		<p>
+			<alert> Voltage Drop Across a Resitor</alert>
+		</p>
+		<sidebyside widths="70% 10% 20%">
+			<p>
+				Suppose current <m>I</m> passes through a resistor of resistance <m>R</m>. Then, voltage drop across the resistor, denoted as <m>V_R</m> will be given by Ohm's law.
+				<men>
+					V_R = R I(t).
+				</men>
+				For an AC current <m>I(t) = I_0\, \cos(\omega t + \phi_I)</m>, we will get
+				<men>
+					V_R(t) = R I_0  \cos(\omega t + \phi_I).
+				</men>
+			</p>
+			<p> </p>
+			<figure>
+				<caption></caption>
+				<image source="./images/ac-circuits/voltage-across-resistor.png" width="50%"/>
+			</figure>
+		</sidebyside>
+		
+		<p>
+
+			If we write <m>V_R(t)</m> in terms of its own magnitude and phase constant, i.e.,
+			<men>
+				V_R(t) =V_{R0}  \cos(\omega t + \phi_V),
+			</men>
+			then, we find that current through a resistor and voltage across resistor are <alert>in-phase</alert>, i.e., their phases are same.
+			<men>
+				  \phi_V = \phi_I,\ \ \ V_{R0}  = R I_0 .
+			</men>
+			Important thing to note here is that voltage and current amplitudes across a resistor here have same relation as in the DC circuit case and they are in sync with each other.
+		</p>
+
+		<p>
+			<alert> (Calculus) Voltage Drop Across an Inductor</alert>
+		</p>
+		Suppose current <m>I</m> passes through an  inductor of self-inductance <m>L</m>. When current is increasing, then there is a back emf, which can be interpreted as a voltage drop across the inductor and when current is decreasing, there is a forward emf, which can be interprested as additional voltage source.
+		<sidebyside widths="70% 10% 20%">
+			<p>
+				Interpreting back emf and forward emf as voltages, we denote them by <m>V_L</m>. The relation of <m>V_L</m> with current <m>I</m> is not as simple as Ohm's law for resistance.
+				<me>
+					V_L  = L \dfrac{dI}{dt}.
+				</me>
+				For an AC current with <m>I(t) = I_0\, \cos(\omega t + \phi_I)</m>, we will get
+				<men>
+					V_L(t) = - \omega L I_0  \sin(\omega t + \phi_I).
+				</men>
+			</p>
+			<p> </p>
+			<figure>
+				<caption></caption>
+				<image source="./images/ac-circuits/voltage-across-inductor.png" width="50%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			
+			We need to express <m>V_L</m> as cosine since we want to compare its phase  to that of current <m>I</m>, which we are writing in cosine. When we change from sine to cosine, we will want to absorb the sign also. Therefore, <m>V_L</m> is
+			<men>
+				V_L(t) = \omega L I_0  \cos(\omega t + \phi_I + \frac{\pi}{2} ).
+			</men> 
+			If we write <m>V_L(t)</m> in terms of its own magnitude and phase constant, i.e.,
+			<men>
+				V_L(t) =V_{L0}  \cos(\omega t + \phi_V),
+			</men>
+			then, we find that current through an inductor and voltage across the inductor are <alert> not in-phase</alert>, but voltage is <m>\dfrac{\pi}{2}</m> radians or <m>90^\circ</m> is ahead of the current.
+			<men xml:id="eq-curent-voltage-relation-inductor">
+				 \phi_V = \phi_I + \dfrac{\pi}{2},\ \ \ V_{L0}  = \omega L I_0.
+			</men>
+			From the amplitude relation <m> V_{L0}  = \omega L I_0 </m>, we see that inductor provides a frequency-dependent <q>resistance</q>. We call this resistance by another name, <term> inductive reactance</term> and denote it by  <m>X_L</m>.
+			<men>
+				X_L = \omega L.
+			</men>
+			The phase relation in Eq. <xref ref="eq-curent-voltage-relation-inductor"/> shows that, across an inductor, <m>\phi_V \gt \phi_I</m>. We say that, across an inductor,  <alert>voltage leads current</alert>.
+		</p>
+
+		<p>
+			<alert> (Calculus) Voltage Drop Across a Capacitor </alert>
+		</p>
+		Suppose current <m>I</m> is flowing in a capacitor of capacitance <m>C</m>, and same amout of current is leaving the other plate. This means, charge <m>q</m> on plates is increasing. 
+		<sidebyside widths="70% 10% 20%">
+			<p>
+				Suppose <m>q=0</m> at <m>t=0</m>, then,  charge at instant <m>t</m> will be
+				<me>
+					q(t) = \int_0^t I(t) dt.
+				</me>
+				Voltage across a capacitor, denoted by <m>V_C</m>, will be given by the capacitor equation.			 
+				<me>
+					V_C   = \dfrac{1}{C}\, q.
+				</me>
+				Therefore, we will have
+				<men>
+					V_C = \dfrac{1}{C}\, \int_0^t I(t) dt
+				</men>
+			</p>
+			<p> </p>
+			<figure>
+				<caption></caption>
+				<image source="./images/ac-circuits/voltage-across-capacitor.png" width="50%"/>
+			</figure>
+		</sidebyside>
+		
+		<p>
+
+			For an AC current with <m>I(t) = I_0\, \cos(\omega t + \phi_I)</m>, we will get
+			<men>
+				V_C(t) =  \dfrac{1}{\omega C}\, I_0  \sin(\omega t + \phi_I).
+			</men>
+			We need to express <m>V_C</m> as cosine since we want to compare its phase  to that of current <m>I</m>, which we are writing in cosine.  Therefore, <m>V_C</m> is
+			<men>
+				V_C(t) =  \dfrac{1}{\omega C}\, I_0  \cos(\omega t + \phi_I - \frac{\pi}{2} ).
+			</men>
+			If we write <m>V_C(t)</m> in terms of its own magnitude and phase constant, i.e.,
+			<men>
+				V_C(t) = V_{C0}  \cos(\omega t + \phi_V),
+			</men>
+			then, we find that current into a capacitor and voltage across the capacitor are <alert> not in-phase</alert>, but voltage is <m>\dfrac{\pi}{2}</m> radians or <m>90^\circ</m> is behind the current.
+			<men xml:id="eq-curent-voltage-relation-capacitor">
+				\phi_V = \phi_I - \dfrac{\pi}{2},\ \ \   V_{C0}  = \dfrac{1}{\omega C}\, I_0.
+			</men>
+			From the amplitude relation <m> V_{C0}  = \dfrac{1}{\omega C}\,  I_0 </m>, we see that capacitor provides a frequency-dependent resistance. We call this resistance by another name, <term> capacitative reactance</term> and denote it by  <m>X_C</m>.
+			<men>
+				X_C = \dfrac{1}{\omega C}.
+			</men>
+			The phase relation in Eq. <xref ref="eq-curent-voltage-relation-capacitor"/> shows that, across a capacitor, <m>\phi_C \lt \phi_I</m>. We say that, across a capcacitor,  <alert>current leads voltage</alert>.
+
+		</p>
+
+
+
+	</introduction>
+
+
+
+	<exercise xml:id="ex-Numerical-Inductive-Reactances"><title> Numerical Inductive Reactances </title>
+		<statement>
+			<p>
+				Find reactances of the following inductors in AC circuits with the given frequencies in each case.
+				<ol label="(a)">
+					<li> <m>2\text{-mH}</m> inductor with a <m>60\text{-Hz}</m> frequency  of the AC circuit. </li>
+					<li> <m>2\text{-mH}</m> inductor with a <m>600\text{-Hz}</m> frequency of the AC circuit.</li>
+					<li>	<m>20\text{-mH}</m> inductor with a <m>6\text{-Hz}</m> frequency  of the AC circuit.</li>
+					<li> 	<m>20\text{-mH}</m> inductor with a <m>60\text{-Hz}</m> frequency   of the AC circuit.</li>
+				</ol>
+			</p>
+
+		</statement>
+		<hint> <p> Use <m>X_L = \omega L = 2\pi f L</m>.  </p> </hint>
+		<answer> <p> (a) <m> 0.754\,\Omega </m>, (b) <m>7.54\:\Omega</m>, (c) <m>0.754\: \Omega</m>, (d) <m>7.54\:\Omega</m>,   </p> </answer>
+		<solution> 
+			<p>
+
+				<ol label="(a)">
+
+					<li> 
+						<p>
+							<me>
+							X_L = 2\pi f L = 2\pi\times 60\:\textrm{Hz}\times 2\:\textrm{mH} =  754\:\textrm{m}\Omega,
+							</me>
+						</p> </li>
+					<li> 
+						<p>
+							<me>
+								X_L = 2\pi f L = 2\pi\times 600\:\textrm{Hz}\times 2\:\textrm{mH} =  7.54\:\Omega,
+							</me>
+						</p> 
+					</li>  
+					<li> 
+						<p>
+							<me>
+								X_L = 2\pi f L = 2\pi\times 6\:\textrm{Hz}\times 20\:\textrm{mH} =  754\:\textrm{m}\Omega,
+							</me>
+						</p>
+					</li>  
+					<li> 
+						<p>
+							<me>
+								X_L = 2\pi f L = 2\pi\times 60\:\textrm{Hz}\times 20\:\textrm{mH} = 7.54\:\Omega.
+							</me>
+						</p>
+					</li>
+				</ol> 
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Numerical-Capacitative-Reactances"><title> Numerical Capacitative Reactances </title>
+		<statement>
+			<p>
+				Find reactances of the following capacitors in AC circuits with the given frequencies in each case.
+				<ol label="(a)">
+					<li> <m>2\text{-mF}</m> capacitor with a <m>60\text{-Hz}</m> frequency  of the AC circuit. </li>
+					<li> <m>2\text{-mF}</m> capacitor with a <m>600\text{-Hz}</m> frequency of the AC circuit.</li>
+					<li> <m>20\text{-mF}</m> capacitor with a <m>6\text{-Hz}</m> frequency  of the AC circuit.</li>
+					<li> <m>20\text{-mF}</m> capacitor with a <m>60\text{-Hz}</m> frequency   of the AC circuit.</li>
+				</ol>
+			</p>
+
+ 
+		</statement>
+		<hint> <p> Use <m>X_C = 1/\omega C = 1/(2\pi f C)</m>.  </p> </hint>
+		<answer> <p> (a) <m> 1.33\,\Omega </m>, (b) <m>133\:\text{m}\Omega</m>, (c) <m> 1.33\:\Omega</m>, (d) <m>133\:\text{m}\Omega</m>,   </p> </answer>
+		<solution> 
+			<p>
+
+				<ol label="(a)">
+
+					<li> 
+						<p>
+							<me>
+							X_C = \dfrac{1}{2\pi f C} = \dfrac{1}{2\pi\times 60\:\text{Hz}\times 2\:\text{mF}}  = 1.33\:\Omega.
+							</me>
+						</p> </li>
+					<li> 
+						<p>
+							<me>
+								X_C = \dfrac{1}{2\pi f C} = \dfrac{1}{2\pi\times 600\:\text{Hz}\times 2\:\text{mF}}  = 133\:\text{m}\Omega.
+							</me>
+						</p> 
+					</li>  
+					<li> 
+						<p>
+							<me>
+								X_C = \dfrac{1}{2\pi f C} = \dfrac{1}{2\pi\times 6\:\text{Hz}\times 20\:\text{mF}} = 1.33\:\Omega.
+							</me>
+						</p>
+					</li>  
+					<li> 
+						<p>
+							<me>
+								X_C = \dfrac{1}{2\pi f C} = \dfrac{1}{2\pi\times 60\:\text{Hz}\times 20\:\text{mF}} = 133\:\text{m}\Omega. 
+							</me>
+						</p>
+					</li>
+				</ol> 
+
+			</p>
+		</solution>
+	</exercise>
+
+</section>

@@ -1,0 +1,294 @@
+<section xml:id="Power-of-a-Force"><title> Power of a Force</title>
+	<introduction>
+		<p>
+			The rate at which a force does work is called <term>power </term> of that force. That is, if work <m>W_{if}</m> is done over an interval of <m>\Delta t</m>, then,
+			<men>
+				\text{Power} = \text{Rate of Work} = \dfrac{W_{if}}{\Delta t}.
+			</men>
+		</p> 
+		<p>
+			Since work is proportional to the magnitude of force, more work will be done if you use a larger force for the same displacement. With a larger force, you will have to do more work but you would also get the work done in less time, and, consequently, will have more power. 
+		</p> 
+		<p>
+			If force varies with time, then the rate of work will also vary with time. Therefore, we define two types of power - an <term>instantaneous power</term>, to be denoted by <m> P(t) </m> and an <term>average power</term> during an interval <m> t_i</m> to <m> t_f </m>, denoted by   <m> P_{\text{av}} </m>.
+		</p>
+	</introduction>
+	<subsection><title> Instantaneous Power</title>
+
+		<sidebyside widths="60% 10% 30%">
+			<p> 
+				Suppose a force <m> \vec F </m> acts on an object which is moving with instantanous velocity <m> \vec v </m> at instant <m> t </m>. In duration <m>t</m> to <m>t + \Delta t</m>, the displacment will be <m> \Delta \vec r = \vec v\Delta t</m>. Here we are thinking <m>\Delta t</m> to be small, ideally infinitesimal. Therefore, work during this interval is
+				<me>
+					W = \vec F \cdot \Delta \vec r = \vec F \cdot \vec v\Delta t.
+				</me>
+
+			</p>
+			<p></p>
+			<image source="./images/energy/power-def-force-velocity.png"/>
+		</sidebyside>
+		<p>
+			We omit the subscriot <q><m>if</m></q> from <m>W</m> since the instants will be indistinguishable in the infinitesimal limit.  Dividing <m>W</m> by duration <m>\Delta t</m>, and ideally taking <m>\Delta t\rightarrow 0</m> limit in a Calculus sense, will give us the rate at which work is being done, i.e., the instantaneous power will be 
+			<men xml:id="eq-instantaneous-power-dot-prod-def"> 
+				P(t) =  \dfrac{W}{\Delta t} = \vec F \cdot \vec v.
+			</men>
+		</p>
+		<p>
+			As you know that the dot product can be written using magnitudes of <m> \vec F </m> and <m> \vec v </m> and angle <m> \theta</m> between them or in terms of their components, giving us other formulas for the instantaneous power.
+			<men> 
+				P(t) =  F\, v\, \cos\,\theta = F_xv_x + F_yv_y + F_zv_z.
+			</men>		
+		</p>
+	</subsection>
+	<subsection><title> Average Power</title>
+		<p>
+			The average power is the average of this quantity over an interval. 
+			<men>
+				P_{\text{av}} = \text{Average of }P(t)\text{ over the interval }\Delta t.
+			</men>
+			If force and velocity are constant, then, averaging is easy to do. Say, both force and velocity are in the positive <m> x </m> direction with fixed magnitudes. Then, the average will be same as instantaneous. Then, by performing the following series of calculations, we can obtain an alternative form of average power, which is very useful in practice.
+			<me>
+				 P_{\text{av}} = F_x v_x = F_x\, \dfrac{\Delta x}{\Delta t} = \dfrac{F_x\Delta x}{\Delta t} = \dfrac{W_{if}}{\Delta t}.
+			</me>
+			This demonstrates that the average power is the overall rate at which work is being perfomed by the force.
+		</p>
+		<p>
+			<men  xml:id="eq-average-power-work-over-time-def">
+				P_{\text{av}} = \dfrac{W_{if}}{\Delta t}.
+			</men>
+		</p>
+
+		<p>
+			Another way to average the instantaneous power, <m>P(t)</m>, is to plot <m>P(t)</m> versus time. The net area under the curve between <m>t_i</m> and <m>t_f</m> will give the net work done during the interval. Dividing that by the interval will give the average power.
+		</p>
+			<men>
+				P_{\text{av}} = \dfrac{ \text{Area under }P(t)\text{ versus } t }{ \Delta t }.
+			</men>
+		<p>
+			The SI unit of work and time gives us the unit of work as <m> \text{J/s}</m>, which is also called <term>Watts</term> and abbreviated by <m> \text{W}</m>. The unit <m>\text{Watts}</m> is named in honor of James Watts, who made critical improvements to early steam engines.
+		</p>
+	</subsection>
+
+
+
+	<exercise xml:id="Average-Power-and-Moving-a-Machine-Faster"><title> Average Power and Moving a Machine Faster  </title>
+		<statement>
+			<p>
+				You push a heavy machinery horizontally across the room for a total distance of <m> 3 \text{ m}</m> with a constant  horizontal force of magnitude <m> 250\text{ N}</m>. 
+			</p>
+			<image source="./images/energy/pwr-crate-moved-with-different-forces.png" width="80%"/>
+			
+			<p>
+				(a) If you completed your task in <m> 10\text{ sec}</m>, what would be your average power?
+			</p>
+			<p>
+				(b) You can complete the task in <m> 5\text{ sec}</m>, if you apply <m> 1000\text{ N}</m>. What would be your average power now?
+			</p>
+		</statement>
+		<hint> <p> (a) Use average power formula (b) calculate the new work. </p> </hint>
+		<answer> <p>  (a) <m> 75\text{ W}</m>, (b) <m> 600\text{ W} </m>.  </p> </answer>
+		<solution> <title>(a) </title>
+			<p> (a) 
+				Here, we are given information to find the work done by the push.
+				<me>
+					P_{\text{av}} = \dfrac{W_{if}}{\Delta t} = \dfrac{ 250 \times 3}{10}= 75\dfrac{\text{ W}}{\text{s}} = 75\text{ W}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b) </title>
+			<p> (b) 
+				Your work will be <m> 4\times</m> as much since we have  <m> 4\times</m> the force in (a) for the same displacement. But you did that work <m> 2\times </m> faster. Therefore, your power will be <m> 8\times </m> as much.
+				<me>
+					P_{\text{av}} =  \dfrac{ 1000 \times 3}{5} = 600\text{ W}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="Instantaneous-Power-of-Weight"><title> Instantaneous and Average Power of Weight </title>
+		<statement>
+			<p>
+				You drop a  <m> 10\text{-kg}</m> ball from a <m> 100\text{-m}</m> tall building initially at rest.  
+			</p>
+			<p> 
+
+				(a)
+				Find the instantaneous power at the following instants in time: (i) <m> 0 </m>, (ii) <m> 2\text{ sec}</m>, and (iii) <m> 4\text{ sec}</m>. 
+			</p>
+			<p>
+				(b)
+				Find the average power between <m>t=0 </m> and <m> 4\text{ sec}</m>. 
+			</p>
+
+ 
+		</statement>
+		<hint> <p>  Find the velocities first. </p> </hint>
+		<answer> <p> (a) (i) <m> 0</m>, (ii) <m> 1925\text{ W}</m>, (iii) <m> 3849\text{ W}</m>, (b) <m> 1925\,\text{ W}</m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p> (a) 
+				We will use <m> P = \vec F\cdot \vec v</m>. The force is the weight of magnitude <m> mg </m>, down, in the same direction the velocity, therefore, the dot product will give:
+				<me> 
+					P(t) = mg v.
+				</me>
+				where <m> v </m> is the speed at instant <m> t </m>. Since the ball is falling freely at constant acceleration of <m> g</m>, we will have
+				<me>
+					v = g t.
+				</me>
+				Therefore, the instantaneous power at instant <m> t </m> is
+				<me>
+					P(t) = mg^2 t = 10\times 9.81^2\, t = 962.36\, t.
+				</me>
+				Therefore, the instantaneous power at required instants are:
+				<me>
+					\text{(i) } 0,\ \ \text{(ii) } 1925\text{ W},\ \ \text{(iii) } 3849\text{ W}.
+				</me>			
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+ 			<p> (b)
+ 				In (a) we found that the instaneous power is
+ 				<me>
+					P(t)  = 962.36\, t.
+				</me>
+				Plot this function versus time from <m> t=0</m> to <m>t=4</m> and compute the area under the curve gives
+ 				<me>
+					P_\text{av}  = \dfrac{\text{Area under } P(t) \text{ vs } t}{4\text{ sec}}
+					= \dfrac{962.36\times \frac{4^2}{2}}{4}= 1925\,\text{ W}.
+				</me>					
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Power-to-Maintain-Steady-Motion-of-a-Conveyor-Belt-Moving-Increasing-Amount-of-Grain"><title>  Power to Maintain Steady Motion of a Conveyor Belt Moving with Increasing Amount of Grain</title>
+		<statement>
+			
+			<p>
+				Grains from a hopper falls at a rate of  <m> 10 \text{ kg/sec}</m>  vertically onto a conveyor belt  that is moving horizontally at a constant speed <m>2 \text{ m/s}</m>.  
+			</p>
+			<sidebyside widths="50% 10% 40%">
+				<p> 	
+					<p>
+						(a) What force is needed to keep the conveyor belt moving at the constant velocity?  
+					</p>
+					<p>
+						(b) What is the minimum power of the motor driving the conveyor belt?  
+					</p>
+				</p>
+				<p> </p>
+				<image source="./images/energy/pwr-grain-on-a-conveyor-belt-statement.png" width="50%"/>
+			</sidebyside>
+
+
+		</statement>
+		<hint> <p> (a) Use <m>F_\text{av}\Delta t = \Delta p</m>, (b) Use <m>P=Fv</m>.  </p> </hint>
+		<answer> <p> (a) <m>20 \text{ N}</m>, (b) <m>40 \text{ W} </m>. </p> </answer>
+		<solution> <title>(a) </title>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					The horizontal force must proivide the impulse needed to increase <m>x</m> component of momentum of the grains. In one second, <m>v_x</m> of  <m> 10 \text{ kg}</m> of grains increases from zero to <m>2 \text{ m/s}</m>. This gives us the momentum change. 
+				</p>
+
+				<p> </p>
+				<image source="./images/energy/pwr-grain-on-a-conveyor-belt-sol.png" width="50%"/>
+			</sidebyside>
+			<p>
+				Equating <m>x</m> impulse during one sec interval to change in <m>x</m> momentum gives
+
+				<me>
+					F\times 1\text{ sec} = 10 \text{ kg}\times 2 \text{ m/s} - 0.
+				</me>
+				Therefore, 
+				<m>
+					F = 20\text{ N}.
+				</m>
+
+			</p>
+		</solution>
+		<solution> <title>(b) </title>
+			<p>
+				The power of the force will come from the dot product of the force with the velocity. This gives
+				<me>
+					P = F\,v = 40\text{ W}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<subsection> <title>(Calculus) Time Averaging of Instantaneous Power</title>
+		<p>
+			The time-average of a function <m> f(t) </m> of time <m> t </m> over an interval from <m> t_i </m> to <m> t_f </m> is defined by the following integral.
+			<men xml:id="eq-time-averaging-general-def">
+				f_{\text{av}} = \dfrac{1}{t_f - t_i}\, \int_{t_i}^{t_f}\, f(t)\, dt.
+			</men>
+		</p>
+		<p>
+			We now show that time averaging <m> P(t) </m> given in Eq. <xref ref="eq-instantaneous-power-dot-prod-def"/> yields the result in Eq. <xref ref="eq-average-power-work-over-time-def" />. We start with the time averaging given in <xref ref="eq-time-averaging-general-def"/> applied to instantaneous power <m> P(t) </m>.
+			<md>
+				<mrow> P_{\text{av}} \amp  =  \dfrac{1}{t_f - t_i}\, \int_{t_i}^{t_f}\, P(t)\, dt, </mrow>
+				<mrow>   \amp  =  \dfrac{1}{t_f - t_i}\, \int_{t_i}^{t_f}\, \vec F\cdot \vec v\, dt \ \ (\text{def. of }P(t)),</mrow>
+				<mrow>   \amp  =  \dfrac{1}{t_f - t_i}\, \int_{t_i}^{t_f}\, \vec F\cdot \dfrac{d\vec r}{dt}\, dt  \ \ (\text{def. of }\vec v),</mrow>
+				<mrow>   \amp  =  \dfrac{1}{t_f - t_i}\, \int_{i}^{f}\, \vec F\cdot d\vec r \ \ (\text{cancel }dt),  </mrow>
+				<mrow>   \amp  =  \dfrac{1}{t_f - t_i}\, W_{if}, \ \ (\text{def. of }W_{if}),</mrow>
+			</md>
+			which was to be proved.
+		</p>
+	</subsection>
+
+	<exercise xml:id="Average-Power-of-Weight"><title> (Calculus) Average Power of Weight</title>
+		<statement>
+			<p>
+				You drop a  <m> 10\text{-kg}</m> ball from a <m> 100\text{-m}</m> tall building initially at rest.  Find the average power during the following intervals: (i) <m> t_i = 0 </m> to <m> t_f = 2\text{ sec}</m>, and (ii) <m> t_i = 2\text{ sec}</m> to <m> t_f=4\text{ sec}</m>. 
+			</p>
+ 
+		</statement>
+		<hint> <p>  First derive the instantaneous power function of time. then use the time averaging process to obtain the average power. </p> </hint>
+		<answer> <p> (i) <m> 962\text{ W}</m>, (ii) <m> 2887\text{ W}</m>  </p> </answer>
+		<solution> 
+			<p>  
+				Above, in <xref ref="Instantaneous-Power-of-Weight"/>, we found that the instantaneous power for a ball dropped from rest is
+				<me>
+					P(t) = mg^2 t.
+				</me>
+				Time average of this function will be
+				<md>
+					<mrow> P_{\text{av}}\amp = \dfrac{1}{t_f-t_i}\int_{t_i}^{t_f}\, P(t)\, dt = \dfrac{mg^2}{2(t_f-t_i)} \left( t_f^2 - t_i^2\right),</mrow>
+					<mrow> \amp = \dfrac{mg^2 (t_f+t_i)}{2} = 481.18 \left( t_f + t_i\right).</mrow>
+				</md>
+
+			</p>
+			<p>(i)
+				We now use the numerical values of the times we get
+				<me>
+					P_{\text{av}} =  481.18 \times (2+0)   = 962\text{ W}.
+				</me>
+ 
+			</p>
+			<p>(ii)
+				We now use the numerical values of the times we get
+				<me>
+					P_{\text{av}} =  481.18 (4+2)  = 2887\text{ W}.
+				</me>
+ 
+			</p> 
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+</section>

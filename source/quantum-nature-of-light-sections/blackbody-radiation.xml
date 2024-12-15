@@ -1,0 +1,447 @@
+<section xml:id="sec-Blackbody-Radiation"><title> The Blackbody Radiation</title>
+	<introduction>
+		<p>
+			Every object at a non-zero absolute temperature emits electromagnetic radiation.  If you put your hand next to a cup of hot water you will feel warmth due to the infrared radiation from the heated water. If you heat an object at even higher temperatures they will emit radiation at even shorter wavelengths, e.g., the wavelengths in the visible range.  This is what happens in a fire or glow. Objects at even higher temperatures emit radiation at even shorter wavelengths, such as ultraviolet and x-rays.
+		</p>
+		<p>
+			The radiation emitted by a body at constant temperature is called the <term>black-body radiation</term>. It is also called <term>thermal radiation</term>.  After a suggestion by Gustav Kirkchhof in 1859,  the characteristics of the radiation emitted by a body at constant temperature was studied experimentally  by examining the radiation coming out of a small hole in a cavity [such as an oven] kept at a constant temperature <m>T</m>. Careful experiments established the following facts.
+		</p>
+		<p><alert>Result 1: </alert>
+			The radiation from the cavity is independent of the material or shape of the cavity.  The intensity of radiation depends only on the temperature of the body and the wavelength of the radiation.
+		</p>
+		<p><alert>Result 2: Wien's displacement law</alert></p>
+		<p>
+			The wavelength of the radiation where the radiation intensity is maximum is inversely proportional to the temperature - the higher the temperature the shorter the wavelength of the maximum intensity. Let <m>\lambda_{\textrm{max}}</m> denote the wavelength where the intensity is maximum when the body is at the absolute temperature <m>T</m>, i.e., the temperature in the Kelvin scale.  Then, experiment shows
+			<men xml:id="eq-wien-law">
+				\lambda_{\textrm{max}} T  =  \textrm{constant},
+			</men>
+			with constant equal to approximately <m>2.90\times 10^{-3}\:\textrm{m}.\textrm{K}</m>.  Equation <xref ref="eq-wien-law"/> is called <term>Wien's displacement law</term>.		
+		</p>
+		<p><alert>Result 3: Stefan-Boltzmann law</alert></p>
+		<p>
+			The total radiation intensity <m>I</m> over all wavelengths increases as the temperature is raised with a fourth power dependence on the absolute temperature  <m>T</m>:
+			<men xml:id="eq-stefan-bolt-law">
+				I(T) = \sigma T^4,
+			</men>
+			where <m>\sigma</m> is a universal constant, called the <term>Stefan-Boltzmann constant</term> with the value
+			<me>
+				\sigma = 5.670\times 10^{-8}\:\dfrac{\textrm{W}}{\textrm{m}^2\textrm{K}^4}.
+			</me>
+			Equation <xref ref="eq-stefan-bolt-law"/> is called the  <term>Stefan-Boltzmann law</term>. This law is often used to determine the temperature of a body in thermal equilibrium from a measurement of the radiation intensity.  For instance, the measurement of the cosmic microwave background radiation shows that the radiation can be approximated to a thermal radiation of temperature <m>2.7</m>K. We say that the temperature of the universe is <m>2.7</m>K.
+		</p>
+		<p>
+			<alert>Result 4: Raleigh-Jeans Law</alert> </p>
+		<p>
+			The Wien's law and Stefan-Boltzmann law are particular aspects of the complete radiation spectrum. Suppose the energy emitted in the wavelength range <m>\lambda</m> to <m>\lambda+d\lambda</m> in a time interval <m>\Delta t</m> from a surface of area <m>\Delta A</m> be <m>\Delta U</m>. Then, the intensity <m>\Delta I</m> of the radiation in this wavelength range would be given by
+			<me>
+				\Delta I [\textrm{in range}\ \lambda\ \textrm{to}\ \lambda+d\lambda] = \dfrac{\Delta U}{\Delta A \Delta t}.
+			</me>
+			This quantity will be proportional to the the wavelength range <m>\Delta \lambda</m>. Therefore, we define another quantity called <term>spectral radiancy</term> <m>R_T(\lambda)</m> by writing <m>\Delta I</m> as
+			<me>
+				\Delta I = R_T(\lambda) \Delta \lambda.
+			</me>
+			The spectral radiancy <m>R_T(\lambda)</m> is the intensity per unit wavelength at the wavelength <m>\lambda</m>. If we integrate over all wavelengths we will get the total radiation intensity at temperature <m>T</m>, whose dependence on <m>T</m> is emphasized by writing <m>I</m> as a function of <m>T</m> as <m>I(T)</m>.
+			<men xml:id="eq-intensity-radiancy">
+				I(T) = \int_0^{\infty}  R_T(\lambda) d \lambda. 
+			</men>
+			The variation of the total intensity of light at any temperature is given by the Stefan-Boltzmann law given in Eq.  <xref ref="eq-stefan-bolt-law"/> above.
+		</p>
+		<p>
+			<xref ref="fig-black-body-spectrum-labeled"/> shows typical radiancy <m>R_T</m> as a function of <m>\lambda</m> at different temperatures. The plots show that as temperature increases the maximum of intensity occurs at smaller wavelength. From Eq. <xref ref="eq-intensity-radiancy"/> we see that the area under the curves would be equal to the total intensity at temperature <m>T</m>. Clearly, the areas under the curves, <m>I(T)</m>, increase with temperature as expected from Stefan-Boltzmann law.
+		</p> 
+		<figure xml:id="fig-black-body-spectrum-labeled">
+			<caption>
+				The black-body spectrum at three temperatures, <m>T=5000\textrm{K}, 6000\textrm{K}, 7000\textrm{K}</m>. The wavelength at the peak moves towards smaller wavelength as temperature rises in accordance with Wien's law, <m>\lambda_{\textrm{max}} = \textrm{const}/T</m>. The total intensity at a particular temperature is the area under each curve, which is clearly seen to rise as the temperature rises in accordance with the Stefan-Boltzmann law, <m>I(T) = \sigma T^4</m>.
+			</caption>
+			<image source="./images/modern-physics/black-body-spectrum-labeled.png" width="70%"/>
+		</figure>
+		<p>
+			A calculation based on classical physics predicted that
+			<men xml:id="eq-Raleigh-Jeans-law">
+				R_T(\lambda) = 2\pi c k_B\:\dfrac{T}{\lambda^4}. 
+			</men>
+			This result is called <term>Raleigh-Jeans Law</term>. This result agrees with the experimental result given in <xref ref="fig-black-body-spectrum-labeled"/> at long wavelengths but as the wavelength becomes smaller it deviates considerably from the experiment.  And in the <m>\lambda\rightarrow 0</m>, <m>R_T \rightarrow\infty</m>, i.e. classical physics predicts that radiation intensity will become infinite as <m>\lambda</m> approaches zero.  This result is called the <term>ultraviolet catastrophe</term>. The calculation of Raleigh and Jeans was done to illustrate that there was something missing in the classical physics.
+		</p>
+		<figure xml:id="fig-raleigh-jeans-law-labeled">
+			<caption>
+				The black-body spectrum at  <m>T= 6000\textrm{K}</m> and prediction of Raleigh-Jeans Law, Eq. <xref ref="eq-Raleigh-Jeans-law"/>.  Notice that at large wavelengths the Raleigh-Jeans law gives more or less correct prediction that radiacny would go down with increasing wavelength but fails to account for decrease in radiancy for smaller wavelengths.
+			</caption>
+			<image source="./images/modern-physics/raleigh-jeans-law-labeled.png" width="70%"/>
+		</figure>
+ 	</introduction>
+
+ 	<subsection><title>Planck's Explanation</title>
+		<p>
+			In 1900 Max Planck derived a formula for the radiancy based on a quantum assumption that fit the data at all wavelengths. Planck modeled the atoms in the cavity wall act as tiny springs which exchange energy with the electromagnetic radiation. The electric field of the electromagnetic radiation would accelerate electrons of the cavity wall which will then oscillate at the frequency of the electromagnetic radiation.
+		</p>
+		<p>
+			Before Planck it was assumed that any amount of energy can be exchanged between the radiation field and the atoms of the cavity wall. The Raleigh-Jeans formula is the result of such an approach. Planck introduced a quantum assumption - he assumed that the exchange would take place only in integral multiples of a quantum of energy proportional to the frequency <m>f</m> of the radiation.
+			<me>
+				E_{\textrm{quantum}} \propto f,
+			</me>
+			and introduced a constant of proportionality <m>h</m>, which we now call <term>Planck's constant</term>.
+			<men>
+				E_{\textrm{quantum}} = h f.
+			</men>
+			Since frequency of light in vacuum is related to wavelength by 
+			<men>
+				f \lambda = c,
+			</men>
+			we can write energy formula also in terms of wavelength as
+			<men>
+				E_{\textrm{quantum}} = \frac{hc}{\lambda}.
+			</men>
+			Planck then used methods of statistical mechanics to derive the following radiancy formula of the radiation in the cavity at thermal equilibrium at temperature <m>T</m>.
+			<men xml:id="eq-planck-bb-1">
+				R_T(\lambda) = \left(2 \pi h c^2\right)\:\dfrac{1}{\lambda^5}\:\left[\dfrac{1}{e^{hc/\lambda k_B T}-1}\right], 
+			</men>
+			where <m>k_B</m> is the Boltmann constant and <m>c</m> the speed of light. This formula is known as <term>Planck's radiation law</term>. This formula completely agreed with the experimental results at all wavelengths and at all temperatures for a universal value of <m>h</m> which he estimated to be <m>6.55\times 10^{-34}\:\textrm{J.s}</m>. The best experimental values now put the value of Planck constant at
+			<me>
+				h = 6.63\times 10^{-34}\:\textrm{J.s}.
+			</me>
+			Although it is tempting to say that the fundamental quanta of energy <m>hf</m> correspond to the energy of elementary particles that make up the radiation of frequency <m>f</m> in the cavity, Planck, however, thought of the idea of the fundamental quantum of energy to be only a mathematical device and not representing some reality of the system in the cavity.  It was difficult for scientists  at the time to believe that the atoms of the cavity could not absorb arbitrary amounts of energy in a continuous spectrum.
+		</p>
+		<p>
+			In 1916 Einstein gave another derivation of Planck's radiation law based on the quantized energy levels of atoms of the cavity. The quantization of energy of atoms give rise to the radiation with spectral radiancy given by the formula in Eq. <xref ref="eq-planck-bb-1"/>. Although, the quanta of energy in the cavity equal to <m>hf</m> suggests strongly that electromagnetic radiation consists of particles, called photons, we will see that a more compelling case for the particle nature of light comes from Einstein's explanation of the Photoelectric effect and and Compton's explanation of the Compton effect. In modern time we are able to produce, manipulate, and detect single photons as if they were particles. 
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Number-of-Photons-in-a-Laser-Beam"><title>Number of Photons in a Laser Beam</title>
+
+		<statement>
+			<p>
+				A laser beam of wavelength <m>633\text{ nm}</m> and power <m>3\text{ mW}</m> is incident on a plate.  How many photons strike the plate per second?
+			</p>
+		</statement>
+		<hint><p>
+			Use Energy = Power times Duration.
+		</p></hint>
+		<answer><p>
+			<m> 9.55\times10^{15}</m>.
+		</p></answer>
+		<solution>
+			<p>
+			Let <m>P</m> be the power of the laser and <m>E</m> be the energy of one photon, then we see that the number <m>N</m> of photons striking the plate per unit time will be
+			<me>
+				N = \dfrac{P}{E}.
+			</me>
+			The energy of a photon is related to the wavelength <m>\lambda</m> as
+			<me>
+				E = h f = \dfrac{h c }{\lambda}
+			</me>
+			Numerically,
+			<me>
+				E = \dfrac{6.63\times 10^{-34}\:\textrm{J.s}\times 3\times 10^{3}\:\textrm{m/s}}{633\times 10^{-9}\:\textrm{m}} = 3.14\times10^{-19}\:\textrm{J}.
+			</me>
+			Therefore,
+			<me>
+				N = \dfrac{3\times 10^{-3} J/s}{3.14\times10^{-19}\:\textrm{J}} = 9.55\times10^{15}.
+			</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Sun-Radiating-as-a-Blackbody"><title>Sun Radiating as a Blackbody</title>
+
+		<statement>
+			<p>
+				The solar spectrum above atmosphere is very close to the black-body spectrum at <m>T=5500\textrm{K}</m>. What is the wavelength of the light emitted by the Sun at the maximum intensity?
+			</p>
+		</statement>
+		<hint><p>
+			Use Wien's law.
+		</p></hint>
+		<answer><p>
+			<m>527\:\textrm{nm}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The Wien's law can be used to find the <m>\lambda_{max}</m>.
+				<me>
+					\lambda_{\textrm{max}} T  =  2.90\times 10^{-3}\:\textrm{m}.\textrm{K}.  
+				</me>
+				Putting in the temperature this gives
+				<me>
+					\lambda_{\textrm{max}} = \dfrac{2.90\times 10^{-3}\:\textrm{m}.\textrm{K}}{5500\textrm{K}} = 527\:\textrm{nm},
+				</me>
+				which is in the middle of the visible spectrum.
+			</p>
+		</solution>
+	</exercise>
+
+
+ 	<exercise xml:id="ex-Stefan-Boltzman-law-from-Plancks-Radiation-Law"><title>Stefan-Boltzman law from Planck's Radiation Law</title>
+
+		<statement>
+			<p>
+				 Derive Stefan-Boltzmann law from Planck's radiation law.
+			</p>
+		</statement>
+		<hint><p>
+			Integrate <m>R_T(\lambda)</m> over all wavelengths.
+		</p></hint>
+		<!-- <answer><p></p></answer> -->
+		<solution>
+			<p>
+				Integrating the radiancy <m>R_T(\lambda)</m> over all wavelengths should give the total intensity at temperature <m>T</m>.
+				<me>
+					I(T) = \int_0^{\infty} R_T(\lambda) d\lambda = \int_0^{\infty}\left(2 \pi h c^2\right)\:\dfrac{1}{\lambda^5}\:\left[\dfrac{1}{e^{hc/\lambda k_B T}-1}\right]\: d\lambda.
+				</me>
+				A change of variable helps isolate a definite integral that will have a purely numerical value.  Let
+				<me>
+					x = \dfrac{hc}{\lambda k_B T}.
+				</me> 
+				Then,
+				<me>
+					dx = - \dfrac{hc}{k_B T}\: \dfrac{d\lambda}{\lambda^2}.
+				</me>
+				In terms of integral over <m>x</m>, the intensity becomes
+				<me>
+					I(T) = -\left(2 \pi h c^2\right)\left(\dfrac{k_BT}{hc} \right)^4\:\int_{\infty}^0 \dfrac{x^3}{e^{x}-1}\: dx
+				</me>
+				The integral in this expression is difficult to do. If you look up a standard table of integrals or work it in Mathematica you will find that
+				<me>
+					\int_0^{\infty} \dfrac{x^3}{e^{x}-1}\: dx = \dfrac{\pi^4}{15}
+				</me>
+				Therefore, we find the following expression for the total intensity,
+				<me>
+					I(T) = \left[ \dfrac{2\pi^5 k_B^4}{15 h^3 c^2}\right]\: T^4.
+				</me>
+				The quantity <m>[\ ]</m> should equal the Stefan-Boltzmann constant <m>\sigma</m>.
+				<me>
+					\sigma = \dfrac{2\pi^5 k_B^4}{15 h^3 c^2}. 
+				</me>
+				<!-- %5.670\times 10^{-8}\:\dfrac{\textrm{W}}{\textrm{m}^2\textrm{K}^4}. -->
+				Let us check the numerical value.
+				<me>
+					\dfrac{2\pi^5 k_B^4}{15 h^3 c^2} = 5.65\times 10^{-8}\:\frac{\textrm{W}}{\textrm{m}^2\textrm{K}^4},
+				</me>
+				which is close to the standard value <m>5.670\times 10^{-8}\:\frac{\textrm{W}}{\textrm{m}^2\textrm{K}^4}</m> given above.
+			</p>
+		</solution>
+	</exercise>
+ 
+
+	<exercise xml:id="ex-Energy-of-a-Photon-in-He-Ne-Laser"><title>Energy of a Photon in He-Ne Laser TODO</title>
+
+		<statement>
+			<p>
+				The light from a He-Ne laser has a wavelength of 632.8 nm. What is the energy in each photon of this light?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Photons-in-Sodium-Lamp"><title>Photons in Sodium Lamp TODO</title>
+
+		<statement>
+			<p>
+				A sodium lamp emits orange-colored light of wavelength 589 nm. How many photons will be released per second by a 60 W lamp if all light is assumed to be of this wavelength?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+  	<exercise xml:id="ex-Photons-in-Green-Laser-Lamp"><title>Photons in Green Laser TODO</title>
+
+		<statement>
+			<p>
+				In a green laser the light of wavelength 1064 nm produced by a Nd-doped crystal is passed through a frequency-doubler KTP which produces light of wavelength 532 nm. How many photons of 1064 nm must be produced per second if light coming out of the laser has a power of 5 mW?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+  	<exercise xml:id="ex-Comparing-Photon-Rates-in-Two-Lasers"><title>Comparing Photon Rates in Two Lasers TODO</title>
+
+		<statement>
+			<p>
+				Two lasers are rated at same power 10 mW.  One of the lasers is the He-Ne laser which emits light at 632.8 nm and the other is a He-Cd laser which emits at 325 nm.  Which laser emits photons at a higher rate? 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+  	<exercise xml:id="ex-Exciting-an-Electron-in-Silicon-Bandgap"><title>Exciting an Electron in Silicon Bandgap TODO</title>
+
+		<statement>
+			<p>
+				Silicon has a bandgap of 1.1 eV. To excite an electron this bandgap you need to provide energy corresponding to the bandgap. What frequency light would you need to excite an electron across this bandgap? 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+  	<exercise xml:id="ex-Absorbing-Most-Power-from-the-Sun-Light"><title>Absorbing Most Power from the Sun Light TODO</title>
+
+		<statement>
+			<p>
+				Silicon has a bandgap of 1.1 eV. To excite an electron across the bandgap of a semiconductor th eincident photon must have energy at least as much as the bandgap. The power in the visible part of sun light has a maximum at wavelength of 481 nm.  What should be the minimum bandgap of a semiconductor that would be needed if you are to absorb this light. 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<!-- Black Body -->
+ 
+  	<exercise xml:id="ex-Electromagnetic-Radiation-Emitted-by-Earth"><title>Electromagnetic Radiation Emitted by Earth TODO</title>
+
+		<statement>
+			<p>
+				The Earth can be treated as a black body radiator at temperature 300K. What would be the maximum wavelength at which electromagnetic waves from Earth will be emitted?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+
+  	<exercise xml:id="ex-Electromagnetic-Radiation-Emitted-by-a-Heated-Tungsten-Filament"><title>Electromagnetic Radiation Emitted by a Heated Tungsten Filament TODO</title>
+
+		<statement>
+			<p>
+				The tungsten filament in an incandescent light bulb is heated to around 3000K.  What would be the maximum wavelength at which electromagnetic waves from the bulb will be emitted if the surface of the filament is a perfect radiator? 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+  	<exercise xml:id="ex-Temperature-of-the-Universe-from-Cosmic-Background-Radiation"><title>Temperature of the Universe from Cosmic Background Radiation TODO</title>
+
+		<statement>
+			<p>
+				The background radiation in the universe, called the cosmic microwave background radiation (CMBR), that is almost isotropic in all directions in space is a thermal radiation that follows closely the blackbody distribution with the peak at 1.06 mm. What does it say about the temperature of the universe? 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+  	<exercise xml:id="ex-Power-Radiated-by-Proxima-Centauri"><title>Power Radiated by Proxima Centauri  TODO</title>
+
+		<statement>
+			<p>
+				The nearest star from the Solar system is Proxima Centauri which has  radius <m>R = 1.0\times 10^8\text{ m}</m> and a surface temperature of 3,000 K. Calculate the total power radiated by Proxima Centauri's surface. 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+  	<exercise xml:id="ex-Varying-Intensity-of-Radiation-with-Temperature"><title>Varying Intensity of Radiation with Temperature  TODO</title>
+
+		<statement>
+			<p>
+				A body is heated to various temperatures.  The total intensity of all electromagnetic waves from the body at some temperature <m>T_0</m> (in Kelvin) is found to be <m>I_0</m>.  (a) What will be the intensity at twice the temperature, <m>T = 2T_0</m>? (b) What will be the intensity at half the temperature, <m>T = \frac{1}{2}T_0</m>? 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+  	<exercise xml:id="ex-Varying-Peak-Wavelength-of-Radiation-with-Temperature"><title>Varying Peak Wavelength of Radiation with Temperature  TODO</title>
+
+		<statement>
+			<p>
+				A body is heated to various temperatures.  The intensity of the electromagnetic waves from the body at some temperature <m>T_0</m> (in Kelvin) is found to peak at  <m>\lambda = \lambda_0</m>.  (a) At what wavelength the intensity will peak if the temperature, <m>T = 2T_0</m>? (b) At what wavelength the intensity will peak if the temperature, <m>T = \frac{1}{2}T_0</m>?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+  	<exercise xml:id="ex-Radiation-Emitted-by-Human-Body"><title>Radiation Emitted by Human Body TODO</title>
+
+		<statement>
+			<p>
+				Suppose your temperature is a constant <m>36^{\circ}\textrm{C}</m>. (a) If your body can be treated as a blackbody radiator, at what wavelength will the electromagnetic radiation peak? (b) If your surface area is <m>0.3\text{ m}^2</m>, estimate the energy your body radiates away in one hour? 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+  	<exercise xml:id="ex-Total-Intensity-of-Cosmic-Microwave-Background"><title>Total Intensity of Cosmic Microwave Background  TODO</title>
+
+		<statement>
+			<p>
+				The peak intensity of Cosmic Microwave Background Radiation (CMBR) is  <m>3.7 \times 10^{-18}\:\textrm{W m}^{-2}\textrm{Hz}^{-1} \textrm{sr}^{-1}</m>.  The frequency at the max intensity is <m>f_{\textrm{max}} ~ 160\text{ GHz}</m>. What will be the total intensity of the CMRB over all frequencies? 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+
+
+
+
+</section>

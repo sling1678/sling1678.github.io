@@ -1,0 +1,360 @@
+<section xml:id="Angular-Momentum"><title> Angular Momentum</title>
+<idx>Angular Momentum</idx>
+	<introduction>
+		<p>
+			Angular momentum is a fundamental property of a rotating body. In this section we will develop the concept systematically.
+		</p>
+	</introduction>
+	
+	<subsection> <title>Angular Momentum of a Particle </title>
+	<idx><h>Angular Momentum</h><h>Single Particle</h></idx>
+		<p>
+			Let <m> \vec r </m> be the position of a particle of mass <m> m </m> and velocity <m> \vec v</m>. The momentum of the particle is <m> \vec p = m\vec v</m> and the angular momentum, to be denoted by <m> \vec l </m>, is defined by the cross product of <m> \vec r </m> and momnetum <m> \vec p </m>.
+			<men>
+				\vec l = \vec r \times \vec p.
+			</men>
+
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				From this definition, magnitude of angular momentum will be
+				<men>
+					l = r\,p\,\sin\,\phi,
+				</men>
+				where <m>\phi</m> is the angle between vectors <m>\vec r </m> and <m> \vec p</m>.
+			</p>
+			<p> </p>
+			<figure xml:id="fig-angular-momentum-particle">
+				<caption></caption>
+				<image source="./images/rotation/angular-momentum-particle.png"/>
+			</figure>
+		</sidebyside>
+		<p>
+			
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				<alert> The direction of angular momentum</alert> is obtained by applying the <alert> right hand rule</alert> of cross product on vectors <m>\vec r </m> and <m> \vec p</m>. First, note that vector <m>\vec l</m> will be perpendicular to the plane formed by vectors <m>\vec r</m> and <m>\vec p</m>. To use right hand rule, place <m>\vec r</m> along the thumb of your right hand and <m>\vec p</m> along any of the other fingers. Then, <m>\vec l</m> will be coming out of the palm.
+			</p>
+			<p> </p>
+			<figure xml:id="fig-angular-momentum-particle-direction">
+				<caption></caption>
+				<image source="./images/rotation/angular-momentum-particle-direction.png"/>
+			</figure>
+		</sidebyside>
+
+	</subsection>
+
+	<subsection> <title>Angular Momentum of a Particle in a Circular Motion</title>
+		<p>
+			Consider a particle of mass <m>m</m> moving in a circle of radius <m>R</m> as shown in <xref ref="fig-angular-momentum-particle-in-circle"/>. For a particle moving in a circle, the velocity is in the direction of the tangent to the circle. 
+		</p>
+
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				Since the tangent of a circle is perpendicular to the radial line from the center, the angle between vectors <m>\vec r </m> and <m> \vec p</m> is <m> 90^{\circ}</m>.
+				<me>
+					\phi = 90^{\circ}.
+				</me>
+				This gives the magnitude of angular momentum to be
+				<men xml:id="eq-angular-momentum-magnitude-mvR">
+					l = m v R.
+				</men>
+				And, the direction of <m>\vec l</m> is towards positive <m>z</m>-axis.
+			</p>
+			<p> </p>
+			<figure xml:id="fig-angular-momentum-particle-in-circle">
+				<caption></caption>
+				<image source="./images/rotation/angular-momentum-particle-in-circle.png"/>
+			</figure>
+		</sidebyside>
+	</subsection>
+
+	<subsection> <title>A Particle in Circular Motion as Rotation</title>
+
+		<p>
+			We can also think of the circular motion in <xref ref="fig-angular-momentum-particle-in-circle"/> as rotation about <m>z</m>-axis by quantifying the rotation by angle  <m> \theta</m> subtended by the radial line to the particle with positive <m>x</m>-axis. The distance <m>s</m> covered on the arc of the circle will be related with angle covered <m>\theta</m> by arc-angle relation. 
+			<me>
+				s = R \theta.
+			</me>
+			The rate of change in arc distance <m> s </m> is the speed <m> v </m> and rate of change of <m> \theta</m> is the angular speed <m>\omega</m>. Therefore,
+			<me>
+				v = R \omega.
+			</me>
+			Substituting in Eq. <xref ref="eq-angular-momentum-magnitude-mvR" /> we get another useful expression for angular momentum. 
+			<men>
+				l = m R^2 \omega.
+			</men>
+			The quantity <m> m R^2</m> in this formula is called <term> moment of inertia </term> of the particle about the axis. It is denoted by letter <m> I </m>.
+			<men>
+				I\, (\text{of a particle at a distance }R \text{ from axis}) = m R^2.
+			</men>
+			In terms of moment of inertia and the angular velocity, the formula for the magnitude of the angular momentum for a particle moving in a circle takes a really simple form
+			<men>
+				l = I\,\omega.
+			</men>
+			If you want to be more complete in your description, you could include information about the axis of rotation. For <m>z</m>-axis, this equation would be <m>l_z = I_{zz}\,\omega_z</m>. The two subscripts for moment of inertia will become clear when we discuss moments of inertia of more complicated systems.
+		</p>
+
+
+	</subsection>
+
+	<example xml:id="ex-Magnitude-and-Direction-of-Angular-Momentum-of-a-Ball-Moving-in-a-Circle"><title> Magnitude and Direction of Angular Momentum of a Ball Moving in a Circle  </title>
+		<statement>
+			<p>
+				A ball of mass <m> 200\text{ grams}</m> is moving in a circle of radius <m> 25\text{ cm}</m> with a uniform speed of <m>10\text{ m/s}</m>.  When observed from above the motion appears counterclockwise.  Find the angular momentum about the center of the circle treating the ball as a point particle.  Give both the magnitude and the direction of the angular momentum.
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Use definition </p> </hint> -->
+		<answer> <p> <m> 0.5\text{ kg.m}^2\text{/s}</m>, up.  </p> </answer>
+		<solution> 
+			<p> The magnitude is
+					<md>
+						<mrow> L \amp = m v R</mrow>
+						<mrow> \amp = 0.2\text{ kg}\times 10\text{ m/s} \times 0.25\text{ m} </mrow>
+						<mrow> \amp = 0.5\text{ kg.m}^2\text{/s}.</mrow>
+					</md>
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Using the right hand rule, we find that the direction of angular monentum vector is pointed up. The direction is shown in the figure.
+				</p>
+				<p></p>
+				<figure xml:id="fig-angular-momentum-exercise-ball-in-circle-direction">
+					<caption></caption>
+					<image source="./images/rotation/angular-momentum-exercise-ball-in-circle-direction.png" width="60%"/>
+				</figure>
+			</sidebyside>
+			
+		</solution>
+	</example>	
+
+
+
+	<example xml:id="ex-Speed-of-a-Ball-Moving-in-a-Circle-with-Angular-Momentum-Given"><title> Speed of a Ball Moving in a Circle with Angular Momentum Given  </title>
+		<statement>
+			<p>
+				The magnitude of the angular momentum of a steel ball of mass <m>400\text{ grams}</m> moving in a circle in a horizontal plane of radius <m>50\text{ cm}</m> is <m>3\text{ kg. m}^2\text{/s}</m> about the center and the direction of the angular momentum vector is towards the ground.
+			</p>
+			<p>
+				Find the speed of the ball and the clockwise or counterclockwise sense of its motion in the circle as observed from above the circle.  Treat the ball as a point particle.
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Use definition </p> </hint> -->
+		<answer> <p> <m>15\text{ m/s}</m>, clockwise.  </p> </answer>
+		<solution> 
+			<p> 
+				Let <m> v </m> be the speed of the ball. From the definition, we get <m> m v R = L</m>, which gives
+				<me>
+					v = \dfrac{L}{m R } = \dfrac{3\text{ kg. m}^2\text{/s}}{ 0.4\text{ kg} \times 0.5\text{ m} } = 15\text{ m/s}.
+				</me>
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					By the right-hand rule, we get the direction of the motion is clockwise since the direction of the angular momentum is down.
+				</p>
+				<p></p>
+				<figure xml:id="fig-angular-momentum-exercise-ball-in-circle-direction-vel">
+					<caption></caption>
+					<image source="./images/rotation/angular-momentum-exercise-ball-in-circle-direction-vel.png" width="60%"/>
+				</figure>
+			</sidebyside>
+		</solution>
+	</example>
+
+
+
+
+
+	<subsection> <title>Angular Momentum of a Collection of Particles</title>
+	<idx><h>Angular Momentum</h><h>Collection of Particles</h></idx>
+		<p>
+			Since, angular momentum is a vector, to get the momentum of the collection, we just need to work out the momenta of each particle and then add them up vectorially. Say, we have <m> N </m> particles in the collection, with positions <m>\vec r_1</m>, <m>\vec r_2</m>, <m>\cdots</m>, and similarlry for their momenta <m>\vec p_1</m>, <m>\vec p_2</m>, <m>\cdots</m>. Then, their individual momenta will be
+			<md>
+				<mrow> \amp \vec l_1 = \vec r_1 \times \vec p_1,</mrow>
+				<mrow> \amp \vec l_2 = \vec r_2 \times \vec p_2,</mrow>
+				<mrow> \amp \cdots,</mrow>
+			</md>
+			and the total angular momentum, to be denoted by <m> \vec L </m>, will be
+			<men>
+				\vec L = \vec l_1 + \vec l_2 + \cdots + \vec l_N.
+			</men>
+		</p>
+	</subsection>
+
+	<subsection> <title>Angular Momentum of a Rotating Rigid Body of Point Masses</title>
+	<idx><h>Angular Momentum</h><h>Rigid Body</h></idx>
+		
+		
+		<p>
+			Suppose we have <m> N</m> balls tied together by light rigid bars. We can ignore the masses of the bars and focus on the angular momenta of the balls only. Now, this is the same problem as the last subsection --- with one big simplification --- all of the balls have the same angular velocity <m> \omega</m>. 
+		</p>
+		<sidebyside widths="55% 5% 40%">
+			<p>
+				The angular momentum of each of the ball will simply be its moment of inertia times the angular velociy, and the total angular momentum will just be their sum.
+				<md>
+					<mrow> \amp l_1 = m_1 R_1^2 \omega,</mrow>
+					<mrow> \amp l_2 = m_2 R_2^2 \omega,</mrow>
+					<mrow> \amp l_3 = m_3 R_3^2 \omega,</mrow>
+					<mrow> \amp \cdots.</mrow>
+				</md>
+			</p>
+			<p> </p>
+			<image source="./images/rotation/angular-momentum-rigid-point-masses.png"/>
+		</sidebyside>
+		<p>
+
+			Adding them all, we get the magnitude of the total angular momentum will be
+			<men>
+				L = \left( m_1 R_1^2 + m_2 R_2^2 + \cdots + m_N R_N^2  \right)\ \omega,
+			</men>
+			which we can again write as moment of inertia times angular velocity.
+			<men>
+				L = I\, \omega,
+			</men>
+			with <m> I </m> for the <m> N\text{-}</m>particle system to be 
+			<men>
+				I = m_1 R_1^2 + m_2 R_2^2 + \cdots + m_N R_N^2.
+			</men>		
+		</p>
+	</subsection>
+
+
+	<subsection> <title>Angular Momentum of a Rotating Rigid Body </title>
+	<idx><h>Angular Momentum</h><h>Rigid Body</h></idx>
+		<p>
+			The angular momentum of a rotating body depends on angular velocity and moment of inertia, which takes into account how the mass is distributed in the body. In our treatment of angular momentum above, we have noted that if an object is rotating at angular velocity <m>\omega</m> about an axis about which its moment of inertia is <m> I</m>, then, we could expect its angular momentum to be
+			<men xml:id="eq-angular-momentum-equal-I-omega">
+				L = I\,\omega.
+			</men>
+			This is true for rotation about special axes, called <term>principal axes</term>. <xref ref="fig-moment-of-inertia-disk-perp"/> and <xref ref="fig-moment-of-inertia-disk-parallel"/> illustrate two types of principal axes for a disk.			
+		</p>
+		<sidebyside widths="55% 10% 25% 10%">
+			<p>
+				For instance, for a disk of mass <m> M </m> and radius <m> R</m>, the moment of inertia <m>I</m> for rotation about the axis through the center of the axis and perpendicular to the disk is
+				<men xml:id="eq-I-disk-perp">
+					I_\text{disk}^\perp = \frac{1}{2}M\,R^2.
+				</men>
+			</p>
+			<p>
+			</p>
+			<figure xml:id="fig-moment-of-inertia-disk-perp">
+				<caption></caption>
+				<image source="./images/rotation/moment-of-inertia-disk-perp.png"/>
+			</figure>
+			<p></p>
+		</sidebyside>
+
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				This wouldn't be the case if you were rotating the disk about an axis through the center but lying in the plane of the disk. Then, we will have
+				<men xml:id="eq-I-disk-parallel">
+					I_{\text{disk}}^\parallel = \dfrac{1}{4}M\,R^2.
+				</men>			
+			</p>
+			<p>
+			</p>
+			<figure xml:id="fig-moment-of-inertia-disk-parallel">
+				<caption></caption>
+				<image source="./images/rotation/moment-of-inertia-disk-parallel.png"/>
+			</figure>
+		</sidebyside>
+		<p>
+			For a fixed-axis rotation about axis in <xref ref="fig-moment-of-inertia-disk-perp"/>, angular momentum will be in the same direction as angular velocity with magnitude
+			<me>
+				L = \frac{1}{2}M\,R^2\,\omega.
+			</me>
+			For a fixed-rotation about axis in <xref ref="fig-moment-of-inertia-disk-parallel"/>, angular momentum will be in the same direction as angular velocity with magnitude
+			<me>
+				L = \frac{1}{4}M\,R^2\,\omega.
+			</me>			
+		</p>
+ 
+
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				In general, our axis of rotation, may be in some arbitrary direction. What happens then? <xref ref="fig-aang-mom-rotate-about-arbitrary-axis"/> shows rotation of a disk about an arbitrary axis. We choose Cartesian axes along principal axis of <xref ref="fig-moment-of-inertia-disk-parallel"/> and <xref ref="fig-moment-of-inertia-disk-perp"/>.  Angular momentum vector will be
+			<me>
+				\vec \omega = \omega_x\hat i + \omega_y\hat j+ \omega_z\hat k. 
+			</me>			
+			</p>
+			<p>
+			</p>
+			<figure xml:id="fig-aang-mom-rotate-about-arbitrary-axis">
+				<caption></caption>
+				<image source="./images/rotation/aang-mom-rotate-about-arbitrary-axis.png"/>
+			</figure>
+ 
+		</sidebyside>
+
+
+		<p>
+			Now, angular momentum will have the following components
+			<md>
+				<mrow>L_x = I_{\text{disk}}^\parallel\, \omega_x.</mrow>
+				<mrow>L_y = I_{\text{disk}}^\parallel\, \omega_y.</mrow>
+				<mrow>L_z = I_\text{disk}^\perp\, \omega_z.</mrow>
+			</md>
+			Clearly, <m>\vec L</m> is not in the same direction as angular velocity <m>\vec \omega</m>. This is very different than what happened in the case of velocity and momentum - they are always in the same direction.
+		</p>
+
+
+
+		<!-- <p>
+
+			In general, when you arbitray <m>x</m>, <m>y</m>, and <m>z</m> axes, you find that Cartesian components of angular momentum vector <m>\vec L</m> are related to Cartesian components of angular velocity vector <m>\vec \omega</m> in a complicated way. This can be expressed as a matrix equation with nine possible moments of inertia.
+			<me>
+				\begin{pmatrix}
+  					L_x\\ 
+  					L_y\\
+  					L_z
+				\end{pmatrix} = 
+				\begin{pmatrix}
+  					I_{xx} \amp I_{xy} \amp I_{xz}\\ 
+  					I_{yx} \amp I_{yy} \amp I_{yz}\\
+  					I_{zx} \amp I_{zy} \amp I_{zz}
+				\end{pmatrix}
+				\begin{pmatrix}
+  					\omega_x\\ 
+  					\omega_y\\
+  					\omega_z
+				\end{pmatrix}			
+			</me>
+			If <m>x</m>, <m>y</m>, and <m>z</m> axes are principal axis of the rotating body, this equation simplifies to
+			<me>
+				\begin{pmatrix}
+  					L_x\\ 
+  					L_y\\
+  					L_z
+				\end{pmatrix} = 
+				\begin{pmatrix}
+  					I_{xx} \amp 0 \amp 0\\ 
+  					0 \amp I_{yy} \amp 0\\
+  					0 \amp I_{zz} \amp 0
+				\end{pmatrix}
+				\begin{pmatrix}
+  					\omega_x\\ 
+  					\omega_y\\
+  					\omega_z
+				\end{pmatrix}
+				= \begin{pmatrix}
+  					I_{xx}\omega_x\\ 
+  					I_{yy}\omega_y\\
+  					I_{zz}\omega_z
+				\end{pmatrix}		
+			</me>
+			Therefore, if we use principal axes as Cartesian axes and rotate the body about some arbitray axis, we will get the following for angular momentum for rotation.
+			<me>
+				L_x = I_{xx}\omega_x,\ \ L_y = I_{yy}\omega_y,\ \ L_z = I_{zz}\omega_z.
+			</me>
+			This says that, in general <m>\vec L</m> and <m>\vec \omega</m> will not be in the same direction. However, if you were to rotate about a principal axis, say the <m>z</m> axis, which was a principal axis, then
+			<me>
+				\vec \omega = \omega_z\, \hat k\ \ \Longrightarrow\ \ \vec L = L_z\, \hat k,\ \ L_z = I_{zz}\omega_z.
+			</me>
+			In this case, we can drop all the subscripts and write the relation as simply <m>L = I\omega</m> while keeping the <m>z</m>-subscripts implicit. 
+		</p> -->
+	</subsection>
+
+</section>

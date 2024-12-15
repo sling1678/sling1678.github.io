@@ -1,0 +1,124 @@
+<section xml:id="section-refracting-telescope"><title> Refracting Telescope </title>
+	<introduction>
+        <p>
+        	Historically, refracting telescope was the first telescope to be used for observing astronomical objects.  Although the accounts vary as to who invented the first refracting telescope, but records suggest that Galileo Galelei built his own refracting telescope and was the first one to make observations in astronomy using a telescope.
+        </p>  
+        <p>
+        	Refracting telescope is similar to a microscpe. It also uses two lenses - the first of these lenses facing the object is called the objective or objective lens, and the second lens near the eye is called the eyepiece. While in microscope, both lenses were used to magnify, the task of the objective in a telescope is to bring the far away object near and then eyepiece is used to magnify this real image. 
+        </p>
+
+        <p>
+        	<xref ref="fig-telescope-setup-refractive"/> shows the optical setup of a telescope. 
+        	The objective forms a real image <m>\text{Q}_1</m> of a star that lies in the direction of <m>\theta_\text{o}</m>. This image forms in the focal plane of the second focal plane of the objective lens. The first focal plane of the eyepiece is very close to it and left of it sso that when we use the real image as the object for the eyepiece, we get a virtual image in the direction <m>\theta_\text{i}</m>.
+        </p>
+
+     	<figure xml:id="fig-telescope-setup-refractive">
+    		<caption>
+    			 Image formation in a refracting telescope. 
+    		</caption>
+    		<image source="./images/optical-instruments/telescope-setup-refractive.png" width="80%"/>
+    	</figure>  
+
+        <p>
+        	The <term>magnification</term> or <term>power</term> of a telescope is given by the ratio of the angle subtended by the image to that subtended by the object.
+        	<me>
+        		M_\text{telescope} = \frac{\theta_i}{\theta_o}.
+        	</me>
+        	We can identify a triangle between the two lenses using the chief rays to the image <m>\text{Q}_1</m> from the objective and the ray in the direction of the final virtual image as shown in <xref ref="fig-telescope-inner-triangles-refractive"/>. Then, angles <m>\theta_\text{o}</m> and <m>\theta_\text{i}</m> can be related to the focal lengths of the two lenses since their separation is very close to the sum of the foci.
+        	<me>
+        		\text{separation of lenses } = f_\text{o} + f_\text{e}.
+        	</me>
+
+        </p>
+     	<figure xml:id="fig-telescope-inner-triangles-refractive">
+    		<caption>
+    			  Geometry of the chief rays with the assumption that the distances between the image <m>\text{I}_1\text{Q}_1</m> and the lenses are each approximately equal to the respective focal lengths.
+    		</caption>
+    		<image source="./images/optical-instruments/telescope-inner-triangles-refractive.png" width="80%"/>
+    	</figure> 
+
+    	<p>
+    		By using tthe geometry in <xref ref="fig-telescope-inner-triangles-refractive"/> and assuming small angles, we can rewrite the magnification of a refractive telescope as
+    		<md>
+    			<mrow> M_\text{telescope} \amp = \frac{\theta_\text{i}}{\theta_\text{o}}\approx = \frac{\tan\theta_\text{i}}{\tan\theta_\text{o}}</mrow>
+    			<mrow> \amp  = -\frac{\text{I}_1\text{Q}_1}{f_\text{e}} \times \frac{f_\text{o}} {\text{I}_1\text{Q}_1} = - \frac{f_\text{o}}{f_\text{e}},</mrow>
+    		</md>
+    		where I have introduced a minus sign to take care of the negative direction of the direction to the final image. Thus, magnifying power of a telescope simply depends on the foci of the objective and the eyepiece. Since power of a lens is inverse of their focal length, we can also write the magnification as
+    		<me>
+    			M_\text{telescope} = - \frac{f_\text{o}}{f_\text{e}} = - \frac{P_\text{e}}{P_\text{o}}.
+    		</me>
+    		Therefore, higher power eyepiece and lower power objective will give you more magnification.
+    	</p>
+    	<p>
+    		Typical eyepieces have focal lengths of <m>2.5\text{ cm}</m>, and <m>1.25\text{ cm}</m>.  If the objective of the telescope has a focal length of <m>1\text{ meter}</m>, then these eyepieces would result in magnifications of 40-times, and 80-times respectively.  The angular magnifications would make the image appear 40-times, or 80-times closer.
+    	</p>
+    	<p>
+    		In a refracting telescope objective lens collects light from the source.  For fainter objects in the sky you need large diameter objective lens.  The largest refracting telescope in the world is the 40 inch diameter Yerkes telescope operated by the University of Chicago and located at Lake Geneva, Wisconsin (<xref ref="fig-yerkes-observatory"/>). 
+    	</p> 
+
+     	<figure xml:id="fig-yerkes-observatory">
+    		<caption>
+    			   Yerkes observatory in Wisconsin (USA) built in 1897 has a large objective lens of <m>40\text{ inches}</m> in diameter and tube length of <m>62\text{ feet}</m>. (Photo credit: Yerkes Observatory, University of Chicago)
+    		</caption>
+    		<image source="./images/optical-instruments/yerkes-observatory.png" width="80%"/>
+    	</figure> 
+    	<p>
+    		It is very difficult and expensive to build large refracting telescopes.  You need large defect free lenses, which in itself is a technically demanding task.  Refracting telescope basically looks like a tube with support structure to rotate it in different directions.  
+    	</p>
+    	<p>
+    		A refracting telescope suffers from a number of defects.  The aberration of lenses causes the image to be blurred. Also as the lenses become thicker for larger lenses more light is absorbed making the faint stars more difficult to observe.  Large lenses are also very heavy and deform under their own weight. Some of these problems with refracting telescope is addressed by avoiding refraction for collecting light. Instead a curved mirror is used for the objective. Such telescopes were first designed by Isaac Newton. These telescopes are called the reflecting telescopes which we discuss next.
+    	</p>
+
+    </introduction>
+
+
+
+	<exercise xml:id="exercise-Magnification-of-a-Telescope-from-Powers-of-the-Objective-and-the-Eyepiece"><title>Magnification of a Telescope from Powers of the Objective and the Eyepiece</title>
+
+		<statement>
+			<p>
+				A telescope has an objective of focal length equal to <m>1100\text{ mm}</m>. When you use an eyepiece that has focal length <m>20\text{ mm}</m>, what will be the magnification?
+			</p>
+		</statement>
+		<hint><p>It is the ratio of foci.</p></hint>
+		<answer><p><m>55</m>.</p></answer>
+		<solution>
+			<p>
+				Answer is obtained simply by taking the ratio of the foci. We ignore the sign here.
+				<me>
+					|M| = \frac{f_\text{o}}{f_\text{e}} = \frac{1100}{20} = 55.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Magnification-of-Galileos-First-Telescope"><title>Magnification of Galileo's First Telescope</title>
+
+		<statement>
+			<p>
+				The first telescope that Galileo is said to have made had two lenses in a tube with objective of focal length <m>98\text{ cm}</m> and the eyepiece had the focal length of <m>5\text{ cm}</m>. What was its magnification?
+			</p>
+		</statement>
+		<hint><p>It is the ratio of foci.</p></hint>
+		<answer><p><m>55</m>.</p></answer>
+		<solution>
+			<p>
+				Answer is obtained simply by taking the ratio of the foci. We ignore the sign here.
+				<me>
+					|M| = \frac{f_\text{o}}{f_\text{e}} = \frac{98\text{ cm}}{5\text{cm}} = 19.6.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+</section>

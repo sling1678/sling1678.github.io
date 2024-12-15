@@ -1,0 +1,155 @@
+<section xml:id="sec-Paulis-Exclusion-Principle"><title>Pauli's Exclusion Principle</title>
+	<subsection><title>Fermions and Bosons</title>
+		<p>
+			All particles in nature have spin.  The  magnitude <m>|\vec S|</m> of the spin angular momentum  and the projection of the spin angular momentum  vector in a direction, say the positive <m>z</m>-axis,  <m>S_z</m>, of a particle of spin quantum number <m>s</m> are given by
+			<mdn>
+				<mrow> \amp  |\vec S| = \sqrt{s(s+1)}\ \hbar,</mrow>
+				<mrow> \amp  |\vec S| = m_s\ \hbar,\ \ m_s = -s,\ -(s-1),\ \cdots,\ +(s-1),\ +s.</mrow>
+			</mdn>
+			The spin quantum number  of every particle in nature is either an odd number multiple of <m>\frac{1}{2}</m>, or zero or a positive integer. For instance, the spin quantum number of  electron is <m>s = \frac{1}{2}</m>.  The spin of a proton is also <m>\frac{1}{2}</m>. The spin quantum number of <m>Z</m> boson is 0.  The spin of a photon is 1.
+		</p>
+		<p>
+			The particles whose spins are an odd multiple of <m>\frac{1}{2}</m> are called <term>fermions</term> after the Italian physicist Enrico Fermi and the particles   whose spins are zero or positive integers are called <term>bosons</term> after the Indian physicist Satyendra Nath Bose, who first studied their thermodynamic properties.
+		</p>
+	</subsection>
+
+	<subsection><title>Pauli's Exclusion principle</title>
+		<p>
+			While studying anomalous Zeeman effect, Wolfgang Pauli found that spectroscopic lines for atoms having multiple electrons, which are all identical to each other, could be understood if he assumed that no two electrons could have the same values of all quantum numbers (Pauli actually had to introduce the fourth quantum number which turned out to be the spin quantum number proposed by Goudsmit and Uhlenbeck).  Quantum numbers specify the wave function of each electron completely. So, the Pauli's principle implies that no two electrons can occupy the same space completely and have same spin projections.
+		</p>
+		<p>
+			Pauli's exclusion principle is  actually a more general principle of nature than just applicable to electrons in atoms. Pauli exclusion principle applies to all fermions: No two fermions can be in the same quantum state. Pauli's exclusion principle does not apply to the bosons, the particles with zero or integer spins.
+		</p>
+		<p>
+			When you apply Pauli's principle to simple atoms such as lithium, which has three electrons, you can understand why lithium behaves as a one-electron system, i.e. with chemical valence of one.  First note that only two electrons can in the state with <m>n=1, l=0, m_l=0</m>:  the two differing in their <m>m_s</m> values, one with <m>m_s = -1/2</m> and the other with <m>m_s = +1/2</m>.  The third electron has to be in the higher energy orbit with <m>n=2</m>.  We say that two electrons in <m>n=1</m> are paired in spin and there is a lone electron with unpaired spin in <m>n=2</m> level as illustrated in <xref ref="fig-lithium-electronic-config"/>.
+		</p>
+
+		<figure xml:id="fig-lithium-electronic-config">
+			<caption>
+				The electronic configuration of a lithium atom.
+			</caption>
+			<image source="./images/modern-physics/lithium-electronic-config.png" width="60%"/>
+		</figure> 
+
+		<p>
+			When Pauli's exclusion principle is applied to the wave function of a multielectron system, we require the wavefunction to be antisymmetric with respect to the exchange of particles.  Suppose, we have a two electron system, e.g. the Helium atom, and let us label one electron by subscript 1 and the other electron by subscript 2.  Let <m>\psi_1</m> be the wavefunction of electron 1, <m>\psi_2</m> the wavefunction of electron 2.  The wavefunction <m>\psi_{12}</m> of the helium atom for two electrons to be in a state that one electron is in quantum state <m>\alpha \equiv (n_a, l_a, m_{la}, m_{sa})</m> and the other in <m>\beta \equiv (n_b, l_b, m_{lb}, m_{sb})</m> will be
+			<men>
+				\psi_{12} (\alpha, \beta) = \psi_1(\alpha) \psi_2(\beta) - \psi_1(\beta) \psi_2(\alpha).
+			</men>
+			Note that the electrons themselves are identical and we have used labels to write properties assigned to them, however, we cannot say which electron is in which state since they are identical. The antisymmetry of the wavefunction is evident when you switch the labels 1 and 2 in each term: you obtain a wave function that is minus of the wavefunction.
+			 <men>
+				\psi_{21} (\alpha, \beta) = \psi_2(\alpha) \psi_1(\beta) - \psi_2(\beta) \psi_1(\alpha) = - \psi_{12}(\alpha, \beta).
+			</men>
+			Also note that the antisymmetry guarantees that if <m>\alpha = \beta</m> then <m>\psi_{12} = 0</m>.
+			<men>
+				\psi_{12} (\alpha, \alpha) = 0.
+			</men>
+		</p>
+	</subsection>
+
+	<subsection><title> Applications of Pauli's Principle</title>
+		<p>
+			Pauli's exclusion principle can be applied anywhere we have a collection of fermions. When Pauli's principle is applied to the electrons in an atom, it helps explain the shell structure of the electron distribution around the nuclei of atoms and  the fundamental reasons for the order in the periodical table.
+		</p>
+		<p>
+			When Pauli's principle is applied to electons in metals, we discover the Fermi level of a metal and available states in the conduction band.  Pauli's principle has been applied very successfully to Astronomy. The Indian physicist Subramanyan  Chandrasekhar  applied Pauli's principle to predict the existence of white dwarfs, which are stars that are prevented from gravitational collapse due to the degeneracy pressure as a consequence of the Pauli's exclusion principle applied to electrons.  When we apply Pauli's exclusion principle to neutrons, which also have spin <m>\frac{1}{2}</m>, we discover that neutrons also provide outwards pressure due to the exclusion of one neutron from occupying the same quantum state occupied by another neutron that balances immense gravitational pull.
+		</p>
+	</subsection>
+
+
+
+TODO:
+
+	<exercise xml:id="ex-Paulis-Principle-Applied-to-States-of-Particle-in-a-Box"><title>Pauli's Principle Applied to States of Particle in a Box TODO</title>
+
+		<statement>
+			<p>
+				The quantum states of a particle in a one-dimensional box of size <m>a</m> are designated by the principal quantum number <m>n</m> and the spin quantum number <m>m_s</m>, which can be <m>+\frac{1}{2}</m> or <m>-\frac{1}{2}</m>.  The energy of a state with a particular value of <m>n = 1, 2, 3, \cdots</m> is given by
+				\[
+					E_n = n^2 \frac{\hbar^2}{2 m a},
+				\]
+				where <m>m</m> is the mass of the particle.  Suppose there are five particles in the box and they do not interact with each other except for the Pauli's exclusion principle. (a) Write the electronic configuration of the particles in the box in the lowest energy state. Your answer will state the <m>n</m> and <m>m_s</m> values of each particle. (b) What is the energy of the ground state?  (c) What are the configuration and the energy of the first excited state?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Paulis-Principle-Applied-to-States-of-Particle-in-a-Box-Ex2"><title>Pauli's Principle Applied to States of Particle in a Box Ex 2 TODO</title>
+
+		<statement>
+			<p>
+				The quantum states of a particle in a one-dimensional  box of size <m>a</m> are designated by the principal quantum number <m>n</m> and the spin quantum number <m>m_s</m>, which can be <m>+\frac{1}{2}</m> or <m>-\frac{1}{2}</m>.  The energy of a state with a particular value of <m>n = 1, 2, 3, \cdots</m> is given by
+				\[
+					E_n = n^2 \frac{\hbar^2}{2 m a},
+				\]
+				where <m>m</m> is the mass of the particle. Suppose there are six particles in the box and they do not interact with each other except for the Pauli's exclusion principle.  (a) Write the electronic configuration of the particles in the box in the lowest energy state. Your answer will state the <m>n</m> and <m>m_s</m> values of each particle. (b) What is the energy of the ground state?  (c) What are the configuration and the energy of the first excited state?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Paulis-Principle-Applied-to-States-of-Particle-in-a-Box-Ex3"><title>Pauli's Principle Applied to States of Particle in a Box Ex 3 TODO</title>
+
+		<statement>
+			<p>
+				The quantum states of a particle in a two-dimensional box of size <m>a \times a</m> are designated by the principal quantum numbers <m>n_1</m> and <m>n_2</m> and the spin quantum number <m>m_s</m>, which can be <m>+\frac{1}{2}</m> or <m>-\frac{1}{2}</m>.  The energy of a state with particular values of <m>n_1 = 1, 2, 3, \cdots</m> and <m>n_2 = 1, 2, 3, \cdots</m> is given by
+				\[
+					E_n = \left(n_1^2 + n_2^2\right) \frac{\hbar^2}{2 m a},
+				\]
+				where <m>m</m> is the mass of the particle.  Suppose there are nine particles in the box and they do not interact with each other except for the Pauli's exclusion principle. (a) Write the electronic configuration of the particles in the box in the lowest energy state. Your answer will state the <m>n_1</m>, <m>n_2</m>, and <m>m_s</m> values of each particle. (b) What is the energy of the ground state?  (c) What are the configuration and the energy of the first excited state?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Paulis-Principle-Applied-to-States-of-Particle-in-a-Box-Ex4"><title>Pauli's Principle Applied to States of Particle in a Box Ex 4 TODO</title>
+
+		<statement>
+			<p>
+				The quantum states of a particle in a two-dimensional box of size <m>a \times a</m> are designated by the principal quantum numbers <m>n_1</m> and <m>n_2</m> and the spin quantum number <m>m_s</m>, which can be <m>+\frac{1}{2}</m> or <m>-\frac{1}{2}</m>.  The energy of a state with particular values of <m>n_1 = 1, 2, 3, \cdots</m> and <m>n_2 = 1, 2, 3, \cdots</m> is given by
+				\[
+					E_n = \left(n_1^2 + n_2^2\right) \frac{\hbar^2}{2 m a},
+				\]
+				where <m>m</m> is the mass of the particle.  Suppose there are ten particles in the box and they do not interact with each other except for the Pauli's exclusion principle. (a) Write the electronic configuration of the particles in the box in the lowest energy state. Your answer will state the <m>n_1</m>, <m>n_2</m>, and <m>m_s</m> values of each particle. (b) What is the energy of the ground state?  (c) What are the configuration and the energy of the first excited state?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+</section>

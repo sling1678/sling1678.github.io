@@ -1,0 +1,264 @@
+<section xml:id="Rotational-Acceleration"><title> Rotational Acceleration </title>
+<idx>Rotational Acceleration</idx>
+	<introduction>
+		<p>
+			Just as angular velocity <m>\omega </m> is the rate of change of rotation angle <m>\theta</m>, angular acceleration is the rate of change of angular velocity <m>\omega</m>. Angular acceleration is also called rotational acceleration. We denote angular acceleration by the Greek letter <m> \alpha</m> (alpha). 
+		</p>
+		<p>
+			Similar to the average angular velocity, we have average angular acceleration. This refers to net angular acceleration averaged over some period of time. An instantaneous angular acceleration refers to the angular acceleration at a particular instant. 
+		</p>
+		<p>
+			It is important to note that angular acceleration is a vector quantity. In the following we will be working in a fixed-axis rotation and use simple notation of using only velocity and acceleration components along the axis of rotation, which will be taken to define the <m>z</m>-axis of the reference frame.
+		</p>
+	</introduction>
+
+	<subsection><title> Average Angular Acceleration</title>
+	<idx><h>Rotational Acceleration</h><h>Average</h></idx>
+		<p>
+			By dividing the change in (instantaneous) angular velocity by the time interval we get the average angular acceleration for that time interval. Consider an interval from <m> t_i </m> to <m> t_f</m>. Let the instantaneous angular velocity at these instants be <m> \omega_i \hat k</m> and <m> \omega_f \hat k</m>, where we are including the axis of rotation information. Then, the average angular acceleration, <m> \vec \alpha_{\text{av}}</m> will be
+			<men>
+				\vec \alpha_{\text{av}} = \left( \dfrac{\omega_f - \omega_i }{t_f - t_i} \right)\, \hat k \equiv \dfrac{\Delta \omega }{\Delta t}\, \hat k.
+			</men>
+			Since we will be working exclusively with axis of rotation along the <m>z</m>-axis, it is not a problem to work with just the component part and drop off the <m>\hat k</m> from our formulas. This should not cause any problem.
+			<men>
+				\alpha_{\text{av}} =  \dfrac{\omega_f - \omega_i }{t_f - t_i}  \equiv \dfrac{\Delta \omega }{\Delta t}.
+			</men>			
+		</p>
+	</subsection>
+
+	<subsection><title> Instantaneous Angular Acceleration</title>
+	<idx><h>Rotational Acceleration</h><h>Instantaneous</h></idx>
+		<p>
+			Often we want angular acceleration <alert> at a particular instant</alert>. What we mean by this is the average angular acceleration between that instant, say <m> t </m> and an instant very close to <m> t</m>, say, <m> t + \Delta t </m> where <m>\Delta t</m> is an infinitesimal time.  
+		</p>
+		<p>
+			Denoting the instantaneous angular acceleration  by  symbol <m> \alpha </m>, we write this special average quantity formally as
+			<men xml:id="eq-instantaneous-angular-acceleration-limit">
+				\alpha = \dfrac{\omega\left(\text{at } (t+\Delta t)\right) - \omega\left(\text{at } t\right)}{\Delta t} = \frac{\Delta \omega}{\Delta t}.
+			</men>
+			Here, it is understood that a limit <m>\Delta t \rightarrow 0</m> is to be taken in these expressions. With the limit included, we also write it as a derivative.
+			<men>
+				\alpha = \frac{d\omega}{dt}.
+			</men> 
+			Since <m> \alpha </m> is a ratio of a change in <m> \omega </m> to a change in <m> t </m> it can be computed by the slope of <m> \omega </m> versus <m> t</m> plot.  
+		</p>
+		<sidebyside widths="50% 50%">
+	 		<p>
+	 			The angular acceleration is a vector quantity. Therefore, it has a direction and a magnitude. The direction for a fixed-axis rotation wil either be in the direction of the axis of rotation or in the opposite direction as illustrated in <xref ref="fig-angular-acceleration-and-angular-velocity" />. 
+	 		</p>
+	 		<figure xml:id="fig-angular-acceleration-and-angular-velocity">
+	 			<caption><!-- 
+
+	 				For fixed-axis rotation, the direction of angular acceleration is same as the direction of angular velocity if rotation is speeding up and opposite if slowing down. -->
+	 			</caption>
+
+	 			<image source="./images/rotation/angular-acceleration-and-angular-velocity.png" width="70%"/>
+	 		</figure>
+	 	</sidebyside>
+ 		<p>
+ 			To tell the <alert>direction of angular acceleration</alert>, you will need to look at the direction of angular velocity <alert>and</alert> whether the motion is slowing or speeding up. The angular velocity is in the direction of the axis if the object is rotating counterclockwise otherwise it is in the opposite direction. The angular acceleration will then be in the direction of the angular velocity or opposite to it depending upon whether the rotation is speeding up or slowing down. 
+ 		</p>
+ 		<example><title>Signs of Angular Velocity and Angular Acceleration</title>
+ 			<statement>
+	 			<p>
+	 				For instance, if angular velocity is 30 rad/sec counterclockwise  and the rotation is slowig down at a rate of 5 rad/sec per second.  Then, <m>\omega = 30\text{ rad/sec}</m> and <m>\alpha = -5 \text{ rad/sec}^2</m>. If the rotation was speeding up, <m>\alpha = +5 \text{ rad/sec}^2</m>. 
+	 			</p>
+	 			<p>
+	 				On the other hand if angular velocity is 30 rad/sec clockwise  and the rotation is slowig down at a rate of 5 rad/sec per second. Then, <m>\omega = -30\text{ rad/sec}</m> and <m>\alpha = +5 \text{ rad/sec}^2</m>, and if speeding up, <m>\alpha = -5 \text{ rad/sec}^2</m>. Speeding up means acceleration has same direction as velocity and slowing down means they are in the opposite direction.
+	 			</p>
+	 		</statement>
+	 	</example>		
+	</subsection>
+
+	<subsection><title> Instantaneous Angular Acceleration - Graphically</title>
+	<idx><h>Rotational Acceleration</h><h>Graphically</h></idx>
+		<p>
+			 The rate of change of <m> \omega </m> at an instant can be computed by the slope of the tangent to <m> \omega </m> versus <m> t </m> plot - similar to the way we defined the rate of chang of <m> x </m>. 
+		</p>
+		<p>
+			If angular velocity is increasing or decreasing at a constant rate, we say the object has uniform angular acceleration. An example is shown in <xref ref="fig-rotation-acceleration-graphical-steady"/>.
+		</p>
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				Since <m> \omega </m> versus <m> t </m>  plot is a straight line, angular velocity changes uniformly wth time with a constant acceleration.  From slope, we get  angular acceleration, <m>\alpha</m>.
+				<me>
+					\alpha = \alpha_\text{av} = \dfrac{\omega_2 - \omega_1}{t_2 - t_1}.
+				</me> 
+			</p>
+			<p> </p>
+			<figure xml:id="fig-rotation-acceleration-graphical-steady">
+				<caption></caption>
+				<image source="./images/rotation/rotation-acceleration-graphical-steady.png"/>
+			</figure>
+		</sidebyside>
+		<!-- <p>
+			Therefore, the slope of linear <m> \omega </m> versus <m> t </m>  plot gives us angular acceleration.  Since the slope of a straight line does not change, the angular acceleration will be same for all instants if the plot is a straight line.
+		</p> -->
+		<p>
+			On the other hand, if the angular velocity is increasing or decreasing at a non-constant rate, <m> \omega </m> versus <m> t </m>  plot will not be a straight line. An example is shown in <xref ref="fig-rotation-acceleration-graphical-curved"/>. In this case,  slope of tangent to the curve at the instant of interest gives acceleration at that instant.  
+		</p>
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				The figure shows tangent lines for instants <m> t_1 </m> and <m> t_2</m>.  The <alert> slope of the tangent lines <m> L_1 </m> and <m> L_2</m></alert> are then the instantaneous angular accelerations at these instants.
+			</p>
+			<p> </p>
+			<figure xml:id="fig-rotation-acceleration-graphical-curved">
+				<caption></caption>
+				<image source="./images/rotation/rotation-acceleration-graphical-curved.png"/>
+			</figure>
+		</sidebyside>
+	</subsection>
+
+	<example xml:id="ex-Angular-Acceleration-from-Angular-Velocity-versus-Time-Plot-Linear-Segments"><title> Angular Acceleration from Angular Velocity versus Time Plot - Linear Segments </title>
+		<statement>
+			<p>
+				<xref ref="fig-ex-ang-acc-from-graph-of-omega-vs-t-linear" /> shows the angular velocity of a rotating fan at different times. We wish to study this plot and determine the following aspects of the rotation.
+			</p>
+			<p>
+				(a) Is the rotation at (i) <m> t = 5\text{ sec} </m>, (ii) <m> t = 15\text{ sec} </m>, (iii) <m> t = 25\text{ sec} </m>, (iv) <m> t = 35\text{ sec} </m>, (v) <m> t = 45\text{ sec} </m>, (vi) <m> t = 55\text{ sec} </m>, clockwise or a counterclockwise or no rotation? How can you tell? 
+			</p>
+
+			<p>
+				(b) What are the values of instantaneous angular accelerations at (i) <m> t = 5\text{ sec} </m>, (ii) <m> t = 15\text{ sec} </m>, (iii) <m> t = 25\text{ sec} </m>, (iv) <m> t = 35\text{ sec} </m>, (v) <m> t = 45\text{ sec} </m>, (vi) <m> t = 55\text{ sec} </m>? 
+			</p>
+
+			<p>
+				(c) What are the average accelerations during the following intervals (i) <m> t = 0 </m> to <m> t = 20\text{ sec} </m>, (ii) <m> t = 20\text{ sec} </m> to  <m> t = 30\text{ sec} </m>, (iii) <m> t = 30\text{ sec} </m> to  <m> t = 40\text{ sec} </m>, (iv) <m> t = 40\text{ sec} </m> to  <m> t = 50\text{ sec} </m>, (v) <m> t = 50\text{ sec} </m> to  <m> t = 60\text{ sec} </m>, and (vi) <m> t = 0 </m> to  <m> t = 60\text{ sec} </m>.
+			</p>
+
+			<figure xml:id="fig-ex-ang-acc-from-graph-of-omega-vs-t-linear">
+				<caption>
+					Figure for <xref ref="ex-Angular-Acceleration-from-Angular-Velocity-versus-Time-Plot-Linear-Segments"/>.
+				</caption>
+				<image source="./images/rotation/ex-ang-acc-from-graph-of-omega-vs-t-linear.png" width="70%"/>
+			</figure>
+
+			
+
+		</statement>
+		<!-- <hint><title>(a)</title> <p>  Look at the sign of <m> \omega</m>. </p> </hint> -->
+		<!-- <hint><title>(b) and (c)</title> <p>  Use slope </p> </hint> -->
+
+		<answer> 
+			<p> 
+				(a) Counterclockwise: (i), (ii), (iii); No rotation at (iv), and clockwise at (v), and (vi).   
+				(b)  (i) <m> 1\text{ rad/sec}^2</m>, (ii) <m>1\text{ rad/sec}^2</m>, (iii) <m> 0</m>, (iv) <m> -4\text{ rad/sec}^2</m> , (v) <m> 1\text{ rad/sec}^2</m> , and (vi) <m> 0</m>.  
+				(c)  (i) <m> 1\text{ rad/sec}^2</m>, (ii)<m> 0</m>, (iii) <m> -4\text{ rad/sec}^2</m> , (iv) <m> 1\text{ rad/sec}^2</m> , (v) <m> 0</m>, and (vi) <m>-\dfrac{1}{6}\,\text{ rad/sec}^2</m>. 
+			</p> 
+		</answer>
+
+		<solution> <title> a </title>
+			<p>
+				From the definition of angular velocity, we know that a clockwise rotation will have a negative value of <m> \omega </m> and a counterclockwise rotation a positive value. Therefore, we can answer this question immediately from reading off the sign of <m> \omega </m>.
+			</p>
+			<p> Counterclockwise at 
+				(i)  <m> t = 5\text{ sec} </m>, (ii) <m> t = 15\text{ sec} </m>, and (iii) <m> t = 25\text{ sec} </m>,
+			</p>
+			<p>
+			  no rotation at (iv) <m> t = 35\text{ sec} </m>, and 
+			</p>
+			<p>
+				Clockwise at (v) <m> t = 45\text{ sec} </m>, and (vi) <m> t = 55\text{ sec} </m>.
+			</p>
+		</solution>
+
+		<solution> <title> b </title>
+			<p>
+				Since the segments are all linear, we do not need to draw any tangents; we just use the slope of the line upon which the point of interest falls.
+			</p>
+			<p>  (i) The slope here is
+				<me>
+					\alpha = \dfrac{20-0}{20-0} = 1\text{ rad/sec}^2.
+				</me>
+				(ii) We do not need to do any work. This is same as (i).
+			</p>
+			<p>(iii) The angular velocity is not changing here. Therefore, the slope here is zero. Hence, <m> \alpha = 0</m>.
+			   
+			</p>
+			<p>(iv) the slope here is				
+				<me>
+					\alpha = \dfrac{-20-20}{40-30} = -4\text{ rad/sec}^2.
+				</me>					 
+			</p>
+			<p>(v) The slope here is 
+				<me>
+					\alpha = \dfrac{-10-(-20)}{50-40} = 1\text{ rad/sec}^2.
+				</me>
+				You could have just used the parallel nature of this line to the line for (i) and guessed the answer.					
+			</p>
+			<p> (vi) The angular velocity is not changing here. Hence, <m> \alpha = 0</m>.
+			</p>
+		</solution>
+
+
+		<solution> <title> c </title>
+			<p>
+				We just use the values of angular velocity and times at the end points of the segment and calculate the slopes. The slopes here will give us the average angular accelerations, and not the instantaneous angular accelerations.
+			</p>
+			<p>  (i) The slope here is
+				<me>
+					\alpha_{\text{av}} = \dfrac{20-0}{20-0} = 1\text{ rad/sec}^2.
+				</me>
+				 
+			</p>
+			<p>(ii) The angular velocity at the two ends is same. Therefore, the slope here is zero. Hence, <m> \alpha_{\text{av}} = 0</m>.
+			   
+			</p>
+			<p>(iii) the slope here is				
+				<me>
+					\alpha_{\text{av}} = \dfrac{-20-20}{40-30} = -4\text{ rad/sec}^2.
+				</me>					 
+			</p>
+			<p>(iv) The slope here is 
+				<me>
+					\alpha_{\text{av}} = \dfrac{-10-(-20)}{50-40} = 1\text{ rad/sec}^2.
+				</me>					
+			</p>
+			<p> (v) The final angular velocity is same as initial angular velocity, here. Hence, <m> \alpha_{\text{av}} = 0</m>.
+			</p>
+			<p> (vi) The slope here is 
+				<me>
+					\alpha_{\text{av}} = \dfrac{-10-0}{60-0} = -\dfrac{1}{6}\,\text{ rad/sec}^2.
+				</me> 
+			</p>
+		</solution>
+	</example>
+	
+	<!-- <subsection><title>Angular Acceleration Vector</title>
+		<p>
+			The rate of change of the angular velocity vector is the angular acceleration vector. Since a change in angular velocity vector can occur by a change in its magnitude or its direction, we need to deal with the change as vectors.
+		</p>
+		<p>
+			The average acceleration vector during an interval <m> t</m> to <m> t + \Delta t</m> will be given by
+			<men xml:id="eq-angular-acceleration-vector-average">
+				\vec \alpha_{\text{av}} = \dfrac{\Delta\vec\omega}{\Delta t}.
+			</men>
+			Of course, the instantaneous rate of change of the angular velocity is captured, as usual, by the average angular acceleration between two instants arbitrarily close to the instant of interest, e.g., between <m> t </m> and another instant that is arbitrarily close to <m> t</m>. We have learned how to handle this by the method of slope of the tangent to plots of components of <m>\vec\omega</m> vs <m>t</m>, which we will nit repeat here.
+		</p>
+	</subsection> -->
+
+	<!-- <subsection><title> (Calculus) Instantaneous Angular Acceleration - Analytically</title>
+		<p>
+			Analytically, the component of instantaneous angular acceleration along the axis of rotation is the derivative of the anglular velocity component with respect to time.
+			<men>
+				\alpha = \dfrac{d\omega}{dt},
+			</men>
+			where <m> d\omega</m> is positive for increasing counterclockwise rotation and negative for increasing clockwise rotation. Make sure you understand how the sign of <m> \alpha </m> is related to what is happening with the rotation as stated in the following paragraph.
+		</p>
+		<p>
+			If <m> \omega \gt 0 </m> (i.e., rotating counterclockwise) and rotation is speeding up, then <m>\alpha \gt 0</m>. If <m> \omega \lt 0 </m> (i.e., rotating clockwise) and rotation is speeding up, then <m>\alpha \lt 0</m>. Now, if <m> \omega \gt 0 </m> (i.e., rotating counterclockwise) and rotation is slowing down, then <m>\alpha \lt 0</m>, and if <m> \omega \lt 0 </m> (i.e., rotating clockwise) and rotation is slowing down, then <m>\alpha \gt 0</m>.
+		</p>
+	</subsection> -->
+
+	<!-- <subsection><title>(Calculus) Angular Acceleration Vector</title>
+		<p>
+			By taking <m> \Delta t \rightarrow 0</m> in Eq. <xref ref="eq-angular-acceleration-vector-average"/>, we get the instantaneous angular acceleration as derivative of angular velocity vector.
+			<men>
+				\vec \alpha  = \dfrac{d\vec\omega}{d t}.
+			</men>			
+		</p>
+	</subsection> -->
+
+</section>

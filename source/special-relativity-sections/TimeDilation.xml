@@ -1,0 +1,328 @@
+<section xml:id="sec-Time-Dilation"><title> Time Dilation </title>
+	<introduction>
+		<p>
+			I will now work out relation between time duration in two frames that are in uniform relative motion as shown in <xref ref="fig-time_dilation"/>. An Einstein clock is placed in frame S', which moves with respect to frame S at uniform velocity <m>V</m> towards positive <m>x</m>-axis.  The clock is not moving with respect to S'. 
+		</p>
+
+			<figure xml:id="fig-time_dilation">
+				<caption>
+					(a) An expanded view of a clock at origin in frame S' as clock and frame move with respect to frame S. In frame S', clock is at rest, hence path of a photon is vertical. (b) Path of a photon of the clock in S' as observed in frame S. Since clock is moving to the right, the path of the photon is at an angle.
+				</caption>
+				<image source="./images/modern-physics/time_dilation.png" width="90%"/>
+			</figure>
+
+
+		<p>
+			In S', to time for one trip of light M<m>_1</m>M<m>_2</m>M<m>_1</m> takes time <m>\Delta t'</m> in which light goes a distance <m>2L</m>. Therefore, 
+			<men xml:id="eq-time-in-S-prime">
+				2 L = c \Delta t'.
+			</men>
+			In <xref ref="fig-time_dilation"/>(b), light path in frame S is shown. Since clock is moving light particle in its flight will move with the box and its position will take a slanted path in frame S. Let the total time taken in this frame is <m>\Delta t</m>. From the right-angled triange in this figure we can write the following.
+			<me>
+				\left( c\frac{\Delta t}{2} \right)^2 = L^2 + \left( V\frac{\Delta t}{2} \right)^2.
+			</me>
+			Now, using Eq. <xref ref="eq-time-in-S-prime"/> in here, we will get after some simplification.
+			<men xml:id="eq-time-in-S-from-time-in-S-prime">
+				\Delta t = \frac{\Delta t'}{\sqrt{ 1- V^2/c^2 }}. 
+			</men>
+			Since relative speed of frames <m>V</m> is always less than speed of light <m>c</m>, the denominator is less than 1 and hence the time elapsed in frame S is larger than the time elapsed in S', where clock is at rest. This is called <term>time dilation</term>. Frame S' is also called <term>rest frame</term> of the clock. Since <m>\Delta t' \lt \Delta t</m>, we can say that: 
+		</p>
+		<p>
+			<alert>Moving clock (a clock in S') runs slower (a clock in S)</alert>. 
+		</p>
+		<p>
+			The 1/square root on the right side of this equation offers frequently in special relativity. Itis given its own symbol, <m>\gamma</m> (gamma).
+			<men>
+				\gamma = \frac{1}{ \sqrt{ 1- V^2/c^2 } }.
+			</men>
+			The time dilation formula becomes simple when we use <m>\gamma</m>.
+			<men>
+				\Delta t = \gamma\,\Delta t'.
+			</men>
+			You can read this as <m>(\text{moving}) = \gamma (\text{rest})</m> so you would know which frame would have longer duration. 
+		</p>			
+	</introduction>
+	<subsection><title>View From Frame S'</title>
+		<p>
+			Eq. <xref ref="eq-time-in-S-from-time-in-S-prime"/> gives duration in frame S in terms of duration in S' with the result that <m>\Delta t \gt \Delta t'</m>. You may have noticed symmetry in the situation in <xref ref="fig-time_dilation"/> - we could look at a clock in S from the perspective of S' as shown in <xref ref="fig-time_dilation_2"/>. 
+		</p>
+
+			<figure xml:id="fig-time_dilation_2">
+				<caption>
+					Situation of <xref ref="fig-time_dilation"/> in the frame of S'. Now, we are examining clock in frame S moving with respect to frame S'.
+				</caption>
+				<image source="./images/modern-physics/time_dilation_2.png" width="100%"/>
+			</figure>
+		<p>
+			You can follow the same procedure as above to show that
+			<me>
+				\Delta t' = \frac{\Delta t}{\sqrt{ 1- V^2/c^2 }}. 
+			</me>
+			Now, <m>\Delta t' \gt \Delta t</m>, which is exactly opposite of <xref ref="eq-time-in-S-from-time-in-S-prime"/>. Rather than just look at symbols, it is better to focus on in which frame clock is at rest. Here clock is at rest in S while clock was at rest in S' earlier. Therefore, a better way to state time dilation formulas is to  say that: <alert>Moving clock (a clock in S') runs slower (a clock in S)</alert>. 
+
+			<men xml:id="eq-time-dilation-generic">
+				\text{duration} = \frac{1}{\sqrt{ 1- V^2/c^2 }} \times \text{(duration in rest frame)}.
+			</men>
+		</p>
+
+
+	</subsection>
+
+	<subsection><title>The Twin Paradox</title>
+
+		<p>
+			The symmetry of the situation from perspectives of S and S' frames poses some paradoxes. Chief among them is the twin paradox.
+		</p>
+		<p>
+			The paradox can be stated more dramatically by the following hypothetical situation about two identical twins Alice and Barbara.  Suppose Alice is in a space ship and Barbara is Earth-bound. Suppose Alice takes off from Earth, moving in a straight line with a constant speed V with respect to Barbara. Let us call the time in Alice's clock be the A-time, <m>t_A</m>, and that in Barbara's clock to be the B-time, <m>t_B</m>.
+			As far as Barbara is concerned, for every heartbeat of Alice, Barbara will have <m>\gamma</m> beats since
+			<me>
+				\Delta t_B = \gamma\: t_A.
+			</me>
+			That would mean <em>Barbara will be aging faster than Alice.</em> However, when you look at the situation from Alice's frame, you will get exactly opposite conclusion since Alice will conclude that Barbara's clock is moving and therefore
+			<me>
+				\Delta t_A = \gamma\: t_B.
+			</me> 
+			That is, <em>Alice will be aging faster than Barbara.</em> 
+			Suppose after some time they get together. According to Barbara, Alice will be younger, and according to Alice, Barbara should be younger.  Both possibilities cannot be right.  So, which is the correct possibility?  This the paradox.  This paradox is called the Twin Paradox.
+		</p>
+		<p>
+			The source of the problem is the fact that we have neglected to notice that if Alice has a constant velocity with respect to Barbara, then once Alice has left Earth she cannot come back to Earth and there is no possibility of an event where Alice's clock and Barbara's clock are at the same position so that their times could be compared. For Alice to come back to Earth she must have deceleration and acceleration in her path. Unlike uniform motion, the decelerating and accelerating frames can detect their own deceleration and acceleration.  The period of acceleration and deceleration of Alice's ship breaks the symmetry between the frames, since there is no acceleration or the deceleration of Barbara's frame.  Thus, both would agree that Alice's clock is in the moving frame and therefore should run slowly giving us a unique answer of the riddle:  Alice would have aged less than Barbara!
+		</p>
+
+	</subsection>
+
+ 	<exercise xml:id="ex-Neutron-lifetime"><title>Neutron lifetime</title>
+
+		<statement>
+			<p>
+				A free neutron at rest in the laboratory decays into a proton, an electron, and an anti-neutrino in approximately <m>15 \text{ min}</m>. What will be the lifetime of a neutron that moves at speed that is <m>99\%</m> of the speed of light?
+			</p>
+		</statement>
+		<hint><p>Use two frames - one moving with neutron, where neutron is at rest, and a lab frame.</p></hint>
+		<answer><p>
+			<m>107\:\textrm{min}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Consider a frame moving with the neutron.  Then, this frame will be the rest frame.  In this frame neutron will take 15 min to decay.  
+				<me>
+					\Delta t_{\textrm{rest}} = 15\:\textrm{min}.
+				</me>
+				We wish to determine the corresponding time elapsed in the laboratory frame.  Here <m>\gamma</m> has the following value.
+				<me>
+					\gamma = \frac{1}{\sqrt{1- V^2/c^2} }= \frac{1}{\sqrt{1- 0.99^2} }=  7.1.
+				</me>
+				Therefore, the lifetime of the neutron in the lab frame will be
+				<me>
+					\Delta t_{\textrm{lab}} = \gamma\Delta t_{\textrm{rest}} = 7.1 \times 15\:\textrm{min} = 107\:\textrm{min}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Travel-time"><title>Travel time</title>
+
+		<statement>
+			<p>
+				An airplane takes 5 hours to go from Boston to San Francisco, a distance of 3,000 miles. What will be the total flight time in the cockpit if the plane's velocity was constant?
+			</p>
+		</statement>
+		<hint><p>
+			Use two frames - one frame at rest in the cockpit and another on ground.
+		</p></hint>
+		<answer><p>
+			<m>7.2\:\textrm{ns}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The clock in the cockpit is the clock in the rest frame of the plane. The ground-based frame is thelab frame and we are given <m>\Delta t_{\textrm{lab}} = 5</m> h.  We also have the relative speed of the two frames.
+				<me>
+					V = \frac{3,000\:\textrm{mi}}{5\:\textrm{h}} = 600\: \textrm{mi/h} = 268\:\textrm{m/s}.
+				</me>
+				This is a small fraction of the speed of light.
+				<me>
+					\frac{V}{c} = \frac {268\:\textrm{m/s}}{3\times 10^{8}\:\textrm{m/s}} = 8.93\times 10^{-7}.
+				</me>
+				Therefore, <m>\gamma</m> will be very close to 1.
+				<me>
+					\gamma = \frac{1}{\sqrt{1-V^2/c^2}} \approx 1 + \frac{1}{2}V^2/c^2 = 1 + 3.99\times10^{-13}.
+				</me>
+				Let us represent the small number by the suymbol <m>\epsilon</m>. 
+				<me>
+					\gamma =  1 + \epsilon,\ \ \ \epsilon = 3.99\times10^{-13}.
+				</me>
+				Therefore, the flight time in the rest frame will be
+				<md>
+					<mrow>\Delta t_{\textrm{rest}} \amp = \frac{\Delta t_{\textrm{lab}}}{\gamma}= \frac{\Delta t_{\textrm{lab}}}{1+\epsilon} \approx \Delta t_{\textrm{lab}} (1-  \epsilon)</mrow>
+					<mrow> \amp = 5 \: \textrm{hr} - 5\times3.99\times10^{-13}\: \textrm{hr}.</mrow>
+				</md> 
+				The difference is
+				<me> 
+					\Delta t_{\textrm{lab}} - \Delta t_{\textrm{rest}} = 5\times3.99\times10^{-13} \: \textrm{hr} = 7.2\:\textrm{ns}.
+				</me>
+				The difference is too small a fraction of the total time to be observable.
+			</p>
+		</solution>
+	</exercise>
+
+
+ 	<exercise xml:id="ex-Mystery-of-muons"><title>Mystery of muons</title>
+
+		<statement>
+			<p>
+				Muons are created when cosmic rays made up of protons and other highly energetic particles strike the upper atmosphere approximately 15 km from the surface of Earth. In laboratory experiments it is found that a muon at rest decays into two photons in <m>\tau = 2.2\:\mu\textrm{s}</m>. Suppose a muon created at the upper atmosphere has a speed of <m>0.9999 c</m>.  If we use Newtonian mechanics, we will conclude that within a lifetime, the muon will go a distance of <m>0.9999 c \tau</m>, which would be 660 m. Therefore, we would not expect any muon to make it to the surface of Earth. However, we do observe a considerable fraction of muons make it to the surface of Earth. What is the correct explanation? 
+			</p>
+		</statement>
+		<hint><p>
+			Use time dilation formula.
+		</p></hint>
+		<answer><p>
+			See solution.
+		</p></answer>
+		<solution>
+			<p>
+				This mystery can be understood if we examine the phenomenon of muon decay by special relativity. We consider two frames: the rest frame in which muon is at rest and the laboratory frame in which Earth is at rest. In the lab frame muon is moving towards Earth and in the rest frame Earth is moving towards the muon. The mystery of muon traveling all the way to Earth can be understood from the perspectives of the two frames as follows.
+			</p> 
+			<p>
+				<alert>Perspective of Lab frame: </alert> Muon is traveling towards Earth at speed <m>0.9999\: c</m> and lives long enough to travel a distance of 15 km.  In this perspective, the muon lifetime is dilated and lives longer than the lifetime of <m>2.2\,\mu\text{s}</m> in the rest frame.
+			</p>
+			<p>
+				<alert>Perspective of muon rest frame: </alert> Earth is traveling towards muon at speed <m>0.9999\:c</m> and  in <m>2.2\,\mu\text{s}</m> the surface of the Earth to travels through the distance of thickness of the atmosphere.  In this perspective, the thickness of the atmosphere is contracted and is less than <m>15 \text{ km}</m>, making it possible for the surface of Earth to travel a distance of the thickness of the atmosphere.
+			</p>
+			<p>
+				Now, let us work out the details of the two perspectives. 
+			</p>
+			<p>
+				<alert>Lab Frame: </alert> The lifetime in the lab frame will be dilated with respect to the time in the rest frame by a factor of <m>\gamma</m>, which is
+				<me>
+					\gamma = \frac{1}{\sqrt{1- V^2/c^2} }= \frac{1}{\sqrt{1- 0.9999^2} }=  70.7.
+				</me>
+				Therefore, the lifetime in the lab frame will be
+				<me>
+					\Delta t_{\textrm{lab}} = \gamma\Delta t_{\textrm{rest}} = 70.7 \times 2.2\:\mu\textrm{s} = 156\:\mu\textrm{s} .
+				</me>
+				Now, in this frame the speed of muon is <m>0.9999c</m>.  Therefore, the muon will travel a distance,
+				<me>
+					\Delta x = 0.9999\:c \times \Delta t_{\textrm{lab}} = 46,795\:\textrm{m} > 15\:\textrm{km}.
+				</me>
+				Since <m>\Delta x > 15\:\textrm{km}</m> this muon will make it to the surface of Earth.
+			</p>
+			<p>
+				<alert>Muon Rest Frame: </alert> Let <m>L_0</m> be thickness of atmosphere in the Earth frame. We have been given <m>L_0 = 15</m> km. Now, from the perspective of the muon rest frame the length <m>L_0</m> will be contracted by a factor of <m>\gamma</m>.  Therefore, the thickness of the atmosphere will be less in the muon rest frame.
+				<me>
+					L = \frac{L_0}{\gamma} = \frac{15,000\:\textrm{m}}{70.7} = 212\:\textrm{m}.
+				</me>
+				Now, during the interval of 2.2 <m>\mu</m>s, the surface of Earth will move 660 m, which is more than the thickness of 220 m.  Therefore, from the perspective of the muon rest frame, the muon will make it to the surface of Earth.  Note that the two frames differ in the reason behind the fact that muon will arrive at the surface of Earth, but they agree on the fundamental physical observation that a muon created at 15 km above the surface of Earth and moving towards Earth at speed <m>0.9999c</m> will make it to the surface of Earth.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Time-Dilation-of-Clock-in-a-Spaceship"><title>Time Dilation of Clock in a Spaceship </title>
+
+		<statement>
+			<p>
+				A clock in a spaceship runs one-tenth the rate at which an identical clock on Earth runs.  What is the speed of the spaceship?
+			</p>
+		</statement>
+		<hint><p>
+			Use time dilation.
+		</p></hint>
+		<answer><p>
+			<m>
+				 0.995\, c
+			</m>.
+		</p></answer>
+		<solution>
+			<p>
+				From the given description, we can glean that what is given is <m>1/gamma</m>. Therefore, we have
+				<me>
+					\sqrt{ 1 - V^2/c^2} = 0.1.
+				</me>
+				Solving for <m>V</m>, we get
+				<me>
+					V = c\, \sqrt{ 1 - 0.01 } = 0.995\, c.
+				</me>
+			</p>
+		</solution>
+	</exercise> 
+
+	<exercise xml:id="ex-Heartbeat-Rate-of-an-Astronaut-in-Two-Different-Frames"><title>Heartbeat Rate of an Astronaut in Two Different Frames </title>
+
+		<statement>
+			<p>
+				An astronaut X in a spaceship A has a heartbeat rate of 66 beats per minute as measured during his physical exam on that ship. Another spaceship B passes by a speed of <m>0.5c</m>. What will be the reading of the hearbeat rate of X in the frame of B?
+			</p>
+		</statement>
+		<hint><p>
+			Use time dilation.
+		</p></hint>
+		<answer><p>
+			<m>57.16\text{ min}^{-1}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				We can convert this problem to a problem about time dilation by looking at duration between two heartbeats. In the rest frame, we have
+				<me>
+					\Delta t_A = \frac{1}{66}\text{ min}.
+				</me>
+				This duration in the moving frame B will be
+				<me>
+					\Delta t_B = \gamma \Delta t_A,
+				</me>
+				where 
+				<me>
+					\gamma = \frac{1}{\sqrt{1- (V/c)^2}} = \frac{1}{\sqrt{1 - 1/4}}= \frac{2}{\sqrt{3}}.
+				</me>
+				Hence,
+				<me>
+					\Delta t_B = \frac{2}{\sqrt{3}} \times \frac{1}{66}= \frac{1}{33\sqrt{3} }\text{ min}.
+				</me>
+				Inverting this will give the heart rate
+				<me>
+					\text{Rate}_B = {33\sqrt{3} \text{ min}^{-1} = 57.16\text{ min}^{-1}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Relation-of-Duration-in-Two-Spaceships-in-Relative-Motion"><title>Relation of Duration in Two Spaceships in Relative Motion</title>
+
+		<statement>
+			<p>
+				A spaceship (A) is moving at speed <m>\dfrac{c}{2}</m> with respect to another spaceship (B).  Observers in A and B use Cartesian coordinates which have the same directions of the axes in space.  With respect to these Cartesian axes, the motion of A is towards the positive <m>x</m>-axis.  That is, from the perspective of B, the coordinates of A move towards the positive <m>x</m>-axis.  Observers in A and B set zero of their times such that when the origins of of the two coordinates coincide the times there are also zero.  That is the event given by <m>(x,y,z,t)</m> is  <m>(0,0,0,0)</m> in A as well as in B.  Observer at the origin of B turns on a laser at <m>t=0</m> and turns off at <m>t=5\text{sec}</m> in his time.  What will the time duration between on and off as observed by an observer in A?
+			</p>
+		</statement>
+		<hint><p>
+			Think of duration as time between two events.
+		</p></hint>
+		<answer><p>
+			<m>5.77\text{ sec}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Duration is basically time between two events. We have two events, turning on and turning off of laser. In frame B, their analytic form is easy to write down. We work with only <m>x</m> coordinates since motion is only along <m>x</m>-axis.
+				<md>
+					<mrow> (t_1, x_1)_B = (0,0) \ \ \text{(ON at origin of B)}</mrow>
+					<mrow> (t_2, x_2)_B = (5\text{ sec},0) \ \ \text{(OFF at origin of B)}</mrow>
+				</md>
+				Lorentiz transformation of these to frrame A gives
+				<md>
+					<mrow> (t_1, x_1)_A = (0,0) \ \ \text{(ON at origin of B)}</mrow>
+					<mrow> (t_2, x_2)_A = (5\,\gamma,\ \ -\gamma\,0.5c\times 5) \ \ \text{(OFF at origin of B)}</mrow>
+				</md>
+				where
+				<me>
+					\gamma = \frac{1}{\sqrt{1- V^2/c^2}} = \frac{2}{\sqrt{3}}.
+				</me>
+				Therefore, we will get the following duration in frame A.
+				<me>
+					t_{2A} - t_{1A} =  5\,\gamma - 0 = \frac{10}{\sqrt{3}} = 5.77\text{ sec}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+</section>

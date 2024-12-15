@@ -1,0 +1,408 @@
+<section xml:id="Heat-Transfer"><title> Heat Transfer </title>
+	<introduction>
+		<p>
+			When two objects at different temperatures come in thermal contact, either directly or indirectly, the two bodies are initially not in thermal equilibrium with each other. If you wait for long enough time, nature tends to bring them to thermal equilibrium by transferring energy from the object at higher temperature to the object at lower temperature. This process is called <term> heat transfer</term>.
+		</p>
+		<p>
+			There are basically three ways that heat transfer occurs.  They are 
+			<ol>
+				<li> Conduction, </li>
+				<li> Convection, </li>
+				<li> Radiation. </li>
+			</ol>
+			These modes of heat transfer differ in the physical mechanism of the energy transport. Conduction requires a direct contact between the bodies or a continuous thermal conductor between the place of higher temperature to the place of lower temperature, convection requires a flow of material from higher energy regions to lower energy regions, and radiation happens through electomagnatic radiation.
+		</p>
+	</introduction>
+
+	<subsection><title>Thermal Conduction </title>
+		<p>
+			The heat transfer mechanism that requires a physical contact between the bodies or a continuous thermal conductor between the place of higher temperature to the place of lower temperature is called  <term> conduction</term>.  
+		</p>
+		<p>
+			When a conducting material is used for heat transfer from a hotter region to a colder place, the rate at which energy transfer occurs varies among materials. Some materials are good conductors while others are not so. For instance, aluminum is a good conductor of heat  while wood is poor conductor. 
+
+		</p>
+		<p>
+			The larger conductivity of aluminum over wood is easily demonstrated by touching an aluminum sheet and a wooden piece, which had been in the same oven for some time so that they have the same temperature.  
+		</p>
+		<p>
+			The aluminum sheet feels hotter because it easily transfers heat from other points of the aluminum sheet to the point of touch.  As a result, a large amount of energy is given to your skin in a short amount of time as compared to what happens when you touch wood.  This quick transfer of heat raises the temperature of your hand giving the sensation that aluminum sheet is hotter than the wood, even though they are at the same temperature. 
+		</p>
+		<p>
+			Just because a particular object is sensed hotter than another does mean the hotter object is at a higher temperature.  <alert> We sense the rate at which heat energy is deposited at the site of touch to ascertain the sense of hot and cold. We do not necessarily sense the temperature of a substance. </alert>  Of course, if you touch two identical aluminum sheets at different temperatures, you will be able to correctly tell which sheet is at a higher temperature, since the two sheets have the same conductivity.
+		</p>
+		<p>
+			To study the conductivity quantitatively, consider a bar of length <m>L</m> and uniform cross-section area <m>A</m> whose ends are kept in contact with two large objects, also called heat baths, of constant temperatures <m>T_1</m> and <m>T_2</m> as shown in <xref ref="fig-heat-transfer-1"/>.
+		</p>
+		<p>
+			The <q> heat baths</q> may not even be baths at all; they may be an oven or some other device so that the temperature can be kept steady at <m>T_1</m> or <m>T_2</m> on the two sides of the bar under study.
+		</p>
+		<p>
+			We will assume that the heat baths are so large that their temperatures do not change during the experiment. We also assume that heat passing from one bath to the other through the bar does not leak out from the side surface of the bar. This can be accomplished by insulating the bar on the sides.
+		</p>
+
+		<figure xml:id="fig-heat-transfer-1">
+			<caption> 
+				Study of conductivity of heat for the material connecting the two blocks at temperature <m>T_1</m> and <m>T_2</m> .  As <m>T_1>T_2</m> heat flows in the direction from <m>T_1</m> towards <m>T_2</m>.
+			</caption>
+			<image source="./images/thermal-properties/heat-transfer-1.png" width="90%"/> 
+		</figure>
+		<p>
+			Let <m>\Delta Q</m> amount of heat flows from one bath to the other in time duration <m>\Delta t</m>. The <term> power flux </term> <m> \Phi</m> of heat transfer from one bath to the other is defined as the rate of heat transfer per unit cross-sectional area of the bar. Note the use of letter <m>t</m> here: the letter <m>t</m> in this section stands for the time and not the temperature.
+			<men xml:id="eq-thermal-flux-def-1">
+				\Phi = \dfrac{\Delta Q}{A\Delta t}.
+			</men>
+		</p>
+
+		<p>
+			Experiments show that the power flux is directly proportional to the difference in the temperature across the ends and inversely proportional to the length of the rod.
+			<men xml:id="eq-thermal-flux-def-2">
+				\Phi = k \left( T_1-T_2\right) \dfrac{1}{L}, \ \ \ \ (T_1>T_2).
+			</men>
+			The proportionality constant <m>k</m> is called the <term> thermal conductivity </term> which has units of J/s.m.K. The constant <m>k</m> in  distinguishes  different materials by their conduction rates.  Thermal conductivity of some common materials are given in <xref ref="tab-heat-conductivity"/>.  
+		</p>
+
+		<p>
+			A material with larger thermal conductivity is a better conductor of heat.  From the table you can see that thermal conductivities of metals are <m>10^1</m> to <m>10^4</m> times the conductivities of other materials. Therefore, metals are considered good conductors of heat.  Materials whose thermal conductivities are small compared to good conductors are called insulators. Wood and air are good example of insulators.  Water is not as good a conductor as metals but a much better conductor than air.  That is why you feel much colder in the lake water than air of the same temperature.
+		</p>
+
+		<p>
+
+			This equation has a direct analogy with the electric current <m>I</m> (in place of <m>\Delta Q/\Delta t</m>) through a wire of resistance <m>(R)</m> when a voltage difference <m>\Delta V</m>  (in place of <m>T_1-T_2</m>) is applied across the wire.  In electric circuits, the relation among <m>I</m>, <m>R</m> and <m>V</m> is given by Ohm's law.
+			<me>
+				I = \dfrac{1}{R}V
+			</me>
+			Therefore, it is a common practice to define a <term> thermal resistance</term> <m>R_{th}</m> of a slab of thickness <m>\Delta x</m>  and area of cross-section <m>A</m>, made up of a material of conductivity <m>k</m>, by the following 
+			<men>
+				R_{th} = \dfrac{\Delta x}{k A}
+			</men>
+			The insulating properties of building materials, such a fiberglass, are indicated by the thermal  resistance of unit area slab, called the <term> <m>R</m>-factor</term>. 
+			<men>
+				R \text{-factor} = \dfrac{\Delta x}{k}
+			</men>
+			A commonly used fiberglass in the US is R-19, which corresponds to <m>\dfrac{1}{19}</m> BTU per hour per square foot area of the insulation.  In calculating the R-value of a multi-layered installation, the R-values of the individual layers are added. <xref ref="tab-R-factors"/>  shows the <m>R</m>-factors of several common insulations used in the  construction industry.
+		</p>
+
+
+	</subsection>
+
+	<subsection> <title> (Calculus) Conduction </title>
+
+		<p>
+			From the definition of heat flux in Eq.  <xref ref="eq-thermal-flux-def-1"/>   and the experimental results of conduction in Eq. <xref ref="eq-thermal-flux-def-2"/>, we have the following relation for the rate of flow of heat through a bar of length <m>L</m> and cross-section area <m>A</m>.
+			<men xml:id="eq-heat-flux-1">
+				\dfrac{1}{A}\dfrac{\Delta Q}{\Delta t} = k \left( T_1-T_2\right) \dfrac{1}{L} \ \ \ \ (T_1>T_2) 
+			</men>
+			The relation actually holds for each thin section of the connecting rod.  Therefore, it should be more appropriately written in terms of  time-derivative of <m>Q</m>.  
+		</p>
+		<sidebyside widths="50% 40%">
+			<p>
+				Let the heat flow be in the <m>x</m>-direction as shown in the figure. In Eq. <xref ref="eq-heat-flux-1"/>, we set <m> L = \Delta x</m>, <m> \Delta T = T_2-T_1</m> and take the limit <m>\Delta t \rightarrow 0</m> on the left and <m>\Delta x \rightarrow 0</m> on the right side. 
+			</p>
+ 
+				<image source="./images/thermal-properties/heat-transfer-1a.png" width="50%"/> 
+ 
+		</sidebyside>
+		<p>
+	 		This results in the following differential equation for the dynamical flow of heat.
+			<men xml:id="eq-cunductivity-law">
+						\dfrac{dQ}{dt} = - k A\dfrac{dT}{dx}. 
+			</men>
+			Here the minus sign ensures that <m>dQ</m> flows from a high <m>T</m> to a low <m>T</m> region. 
+		</p>
+	</subsection>
+
+
+	<table xml:id="tab-R-factors"> <title> <m>R</m>-factor of Common Materials</title>
+		<tabular top="minor" halign="left">
+			<row  bottom="minor">
+				<cell>Material</cell> <cell>R-factor</cell>
+			</row>
+			<row> <cell>Roof(no insulation)</cell> <cell>3.3</cell> </row>
+			<row> <cell>3" fiberglass</cell> <cell>10</cell> </row>
+			<row> <cell>6" fiberglass</cell> <cell>20</cell> </row>
+			<row> <cell>6" cellulose</cell> <cell>23</cell> </row>
+			<row> <cell>8" thick concrete block</cell> <cell>2.0</cell> </row>
+			<row> <cell>4" thick brick</cell> <cell>4</cell> </row>
+			<row> <cell>Wooden frame</cell> <cell>5</cell> </row>
+			<row> <cell>Wooden wall with 3 1/2" fiberglass</cell> <cell>12</cell> </row>
+			<row> <cell>Concrete slab with 1" foam permimeter</cell> <cell>45</cell> </row>
+			<row> <cell>Floor with 6" insulation</cell> <cell>25</cell> </row>
+			<row> <cell>Single pane window</cell> <cell>1</cell> </row>
+			<row> <cell>Double pane window</cell> <cell>2</cell> </row>
+			<row bottom="minor"> <cell>1/2" air space between panes</cell> <cell>2</cell> </row>
+		</tabular>
+	</table>
+
+
+	<table xml:id="tab-heat-conductivity"><title>Thermal conductivities at <m>25^{\circ}</m>C (Handbook of chemistry and physics, 82nd edition, 2001-2002) </title>
+		<tabular top="major" halign="left">
+			<row bottom="minor"> 
+				<cell>Substance </cell> <cell right="major">Conductivity </cell>
+			 	<cell left="major"> Substance</cell> <cell> Conductivity</cell> </row>
+			<row > 
+				<cell><alert>Metals</alert> </cell> <cell right="major"> </cell> 				
+				<cell > <alert> Fluids</alert></cell> <cell> </cell> 
+			</row>
+			<row> 
+				<cell> Silver  </cell> <cell right="major"> 429</cell>
+
+				<cell >  Mercury </cell> <cell> 8.25</cell>  
+			</row>
+			<row> 
+				<cell> Copper  </cell> <cell right="major"> 401</cell>
+				<cell >   Water </cell> <cell>  0.6</cell>
+				
+			</row>
+			<row> 
+				<cell> Gold  </cell> <cell right="major"> 317</cell> 				
+				<cell >   Ethanol </cell> <cell> 0.169</cell> 
+			</row>
+			<row> 
+				<cell> Aluminum  </cell> <cell right="major"> 237 </cell>
+				<cell >   Water vapor </cell> <cell> 0.027</cell>
+				 
+			</row>
+
+			<row bottom="major"> 
+				<cell> Iron  </cell> <cell right="major"> 80</cell> 				
+				<cell >  Air </cell> <cell> 0.023</cell>
+			</row>
+
+			<row> 
+				<cell><alert>Common Solids</alert> </cell> <cell >  </cell> 				
+				<cell >   </cell> <cell>  </cell> 
+			</row>
+			<row> 
+				<cell> Asbestos  </cell> <cell >0.7 </cell> 				
+				<cell> Porcelain   </cell> <cell>1 </cell> 
+			</row>
+			<row> 
+				<cell> Asphalt  </cell> <cell >0.06 </cell> 				
+				<cell >   Pyrex glass </cell> <cell> 1</cell> 
+			</row>
+			<row> 
+				<cell> Brass </cell> <cell >120 </cell> 				
+				<cell >   Rock </cell> <cell>1 </cell> 
+			</row>
+			<row> 
+				<cell> Brick, Dry  </cell> <cell > 0.04</cell> 				
+				<cell >   Rubber </cell> <cell> 0.05</cell> 
+			</row>
+			<row> 
+				<cell> Cork  </cell> <cell > 0.04</cell> 				
+				<cell >   Sand </cell> <cell>0.33 </cell> 
+			</row>
+			<row> 
+				<cell> Glass wool  </cell> <cell > 0.04</cell> 				
+				<cell >   Steel </cell> <cell>  52</cell>
+			</row>
+			<row> 
+				<cell> Mica </cell> <cell >0.2-0.7 </cell> 				
+				<cell >  Styrofoam </cell> <cell>0.03</cell> 
+			</row>
+			<row bottom="major"> 
+				<cell> Polyurethane  </cell> <cell >0.06 </cell> 				
+				<cell >   Wood </cell> <cell>0.04-0.35 </cell> 
+			</row>
+		</tabular>
+	</table>
+ 
+	
+
+	<exercise xml:id="ex-Heat-Transfer-Through-a-Copper-Rod"><title> Heat Transfer Through a Copper Rod</title>
+		<statement>
+			<p>
+				A <m>\dfrac{1}{2}</m>-m copper rod of cross-sectional area <m>3.14\times 10^{-6}\text{ m}^2</m> is insulated so that heat cannot escape from the sides.  One end of the rod is free of insulation and placed in a steam container maintained at <m>150^{\circ}\text{C}</m>.  The other end is also free of insulation and placed in ice water maintained at <m>0^{\circ}\text{C}</m>.  Find the amount of heat transferred from the steam container to the ice water in 30 minutes.
+			</p>
+
+		</statement>
+		<hint> <p> Use <m>
+					\dfrac{\Delta Q}{A\Delta t} = k\, \dfrac{T_1-T_2}{L}\ \ \ (T_1>T_2).
+				</m>.  </p> </hint>
+		<answer> <p> <m> 680\ \text{J}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				This problem is a direct application of the relation between heat flux and the difference in temperature at two points in a conductor.
+				<me>
+					\dfrac{\Delta Q}{A\Delta t} = k\, \dfrac{T_1-T_2}{L}\ \ \ (T_1>T_2).
+				</me>
+				Here, the following quantities are given:
+				<md> 
+					<mrow> \amp A = 3.14\times 10^{-6}\ \text{m}^2 </mrow>
+					<mrow> \amp \Delta t = 30\ \text{min} = 1800\ \text{sec}</mrow>
+					<mrow> \amp k = 401\ \text{J/s.m.K}</mrow>
+					<mrow> \amp T_1-T_2 = 150\text{K}</mrow>
+					<mrow> \amp L = 0.5\  \text{m}</mrow>
+
+				</md>
+ 
+				Therefore,
+				<me>
+					\Delta Q = k A \Delta t \dfrac{(T_1-T_2)}{L} = 680\ \text{J}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Conduction-by-Two-Welded-Metals"><title> Conduction by Two Welded Metals </title>
+		<statement>
+			<p>
+				An aluminum and a steel cylindrical rod, each of diameter 1 cm and length 25 cm, are welded together.  The other end of the aluminum rod is placed in a large tank of water at <m> 20^{\circ}\text{C}</m>, while the other end of the steel rod is in a boiling water at <m>100^{\circ}\text{C}</m>.  The rods are insulated so that no heat escapes from the surface. What is the temperature at the joint when a steady state has reached so that the rate of flow of heat is same throughout?
+			</p>
+			<image source="./images/thermal-properties/two-metal-welded.png" width="70%"/>
+
+		</statement>
+		<hint> <p> Balance the flow of heat into the middle with the flow out of the middle.  </p> </hint>
+		<answer> <p> <m> 298.4\  \text{K} \text{ or } 25.2^{\circ} \text{C}</m>. </p> </answer>
+		<solution> 
+			<p>
+				Let <m> T</m> be the temperature at the joint.  The steady state condition requires that rate at which heat is transferred to the joint from the hotter end of the steel must be same as the heat transferred by aluminum from the joint to the colder end.
+				<md>
+					<mrow> \amp \text{Hot end to middle:  } \dfrac{\Delta Q}{\Delta t} = A_{\text{steel}}k_{\text{steel}} \dfrac{(T_{\text{hot}}-T)}{L_{\text{steel}}}, </mrow>
+					<mrow> \amp \text{middle to cold end:  }  \dfrac{\Delta Q}{\Delta t} = A_{\text{Al}}k_{\text{Al}} \dfrac{(T-T_{\text{cold}})}{L_{\text{Al}}}. </mrow>
+				</md>
+				Equating the two rates gives
+				<me>
+					A_{ \text{steel}}k_{ \text{steel}} \dfrac{(T_{ \text{hot}}-T)}{L_{ \text{steel}}} = A_{ \text{Al}}k_{ \text{Al}} \dfrac{(T-T_{ \text{cold}})}{L_{ \text{Al}}}.
+				</me>
+				The areas of cross-section and lengths of the rods cancel out from the two sides, and we find the following for the temperature at the joint. 
+				<md>
+					<mrow> T \amp = \dfrac{k_{ \text{steel}}T_{ \text{hot}} + k_{ \text{Al}} T_{ \text{cold}}}{k_{ \text{steel}} + k_{ \text{Al}}},</mrow> 
+					<mrow> \amp = \dfrac{80\times 373.15+237\times 273.15}{40+237}\  \text{K} = 298.4\  \text{K} = 25.2^{\circ} \text{C}. </mrow>
+				</md>
+				Note the temperature in the middle of the two metals is not the average of the temperatures at the two ends since the metals have different conductivities.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Conduction-in-the-Radial-Direction"><title> (Calculus) Conduction in the Radial Direction </title>
+		<statement>
+			<p>
+				A 5 m long copper pipe of diameter 2.0 cm carries steam at <m>150^{\circ} \text{C}</m>.  The pipe is insulated by Styrofoam of thickness 1 cm, and the outside space is at room temperature of <m>20^{\circ}</m>C.  Find the rate of heat loss from the pipe.  Use <m>k = 0.03\  \text{W/m.K}</m> for Styrofoam.
+			</p>
+			<image source="./images/thermal-properties/example-heat-transfer-1a.png" width="70%"/>
+		</statement>
+		<hint> <p>  Use Eq. <xref ref="eq-cunductivity-law"/> and set up the problem in cylindrical coordinates. </p> </hint>
+		<answer> <p> <m> 177\  \text{W} </m>. </p> </answer>
+		<solution> 
+			<sidebyside widths="50% 40%">
+				<p>
+					Here, heat is not transferred in one direction but radially outward in all directions from an axis.  Therefore, we use the cylindrical coordinate system shown in the figure. 
+				</p> 
+
+				<image source="./images/thermal-properties/example-heat-transfer-1b.png" width="70%"/>
+			=</sidebyside>
+		
+			<p>	
+				At the radial distance <m> r</m>, the area <m> A </m> through which heat passes is the area of a cylindrical shell of length <m> L </m> and width <m> 2\pi r</m>.  Eq. <xref ref="eq-cunductivity-law"/> for rate of flow through the shell at radial distance <m> r </m> would be
+				<me>
+				\dfrac{dQ}{dt} = - k(2\pi r L) \dfrac{dT}{dr}
+				</me>
+			</p>
+			<p>
+				Since, there is no source or sink of heat in the insulation, the rate of flow of heat must be independent of the distance from the center.  Rearranging the equation, and integrating from <m>T = T_1</m>   when <m>r = R_1</m> (the inside radius of the insulation) to <m>T= T_2</m> when <m>r =R_2</m> (the outer radius of the insulation) will give the following.
+
+				<me>
+					\dfrac{dQ}{dt} \int_{R_1}^{R_2}\dfrac{dr}{r}= - 2\pi k L \int_{T_1}^{T_2} dT.
+				</me>
+				This gives the following relation for the rate of flow of heat from the inner surface at radius <m>R_1</m> to the outer surface at radius <m>R_2</m>.
+				<me>
+					\dfrac{dQ}{dt} = \dfrac{2\pi k L(t_1-T_2)}{\ln{(R_2/R_1)}}.
+				</me> 
+				Note that we do not need to convert the temperature into Kelvin since the change in Kelvin is the same in degree Celsius.  Putting the numerical values for our case, we get
+				<me>
+					\dfrac{dQ}{dt} = \dfrac{2\pi \times 0.03( \text{W/m.K})\times 5  \text{m}\times 130\  \text{K}}{\ln{(2\  \text{cm}/1\  \text{cm})}} = 177\  \text{W}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<subsection> <title> Convection TODO </title>
+		<p>
+			\index{Convection}Convection occurs in fluids when the higher energy molecules from one part of a fluid move to another part resulting in a bulk motion of the fluid.  If the movement is caused by forcing the hot fluid with a mechanical stirrer or a blower, the convection is called {\bf forced convection}\index{Force convection}, otherwise it is called the {\bf free or natural convection}\index{Free convection}.  For example, when you heat water on a stove, higher energy molecules from the bottom rise and mix with lower energy molecules above due to natural or free convection (Fig. \ref{fig:convection-2}).  
+
+			Since the molecules in the hot region have more kinetic energy, they tend to exclude more space from other molecules.  As a result, the volume per molecule in the hotter region is more and so the density in the hotter region is less than the colder region.   This the reason why hot water rises in a container.  Similarly, hot air from the surface of the Earth rises in the atmosphere. The flow of the fluid creates a convection current   that leads to a heat transfer from the hot region to the cold region.
+			\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=1\textwidth]{ch17-heat-temp/figs/convection-2.eps}
+				\caption{(a) Convection currents in water on a heater carry energy from the larger temperature bottom to the cooler top.  (b) Granular convection cells at the surface of sun that carry energy from the interior of the sun to the surface. Credits: http://solarscience.msfc.nasa.gov/images/granules.jpg}\label{fig:convection-2}
+			\end{figure}
+			 
+			Convection plays a major role in the atmosphere as hot air with water vapor from near the surface of the Earth rises and cools at a lower temperature above the Earth where they condense and form clouds.  Convection is also thought to play an important role in bringing heat from the center of the Sun to the surface of the Sun.  The {\bf convection cells}\index{Convection cells}  photographed at the solar surface shown in Fig. \ref{fig:convection-2}b are evidence of the role of convection in the solar dynamics.
+		</p>
+	</subsection>
+
+
+
+
+	<subsection> <title> Radiation TODO</title>
+		<p>
+
+			\index{Radiation}The third form of heat transfer does not require any medium.  Radiation carries energy from one system to another by light and other energetic particles, which are collectively called the radiation.  Unlike the conduction or the convection, the transfer of energy by way of radiation can occur even across a vacuum between two bodies as evidenced from radiation from far away stars reaching the Earth.  
+
+			The radiation mode of heat transfer is based on the fact that all materials above absolute zero temperature ($-273.15^{\circ}$C or zero degree Kelvin) emit electromagnetic waves.  The intensity of the electromagnetic waves emitted when the object is at a particular temperature varies with the frequency of the radiation and the chemical composition of the material.  The distribution of intensity with frequency for a blackbody, an ideal object that is both a perfect absorber  and a perfect emitter of radiation, is given by the {\bf Planck radiation law}\index{Planck radiation law}.  According to the Planck radiation law the power per unit area $d\Phi$ in the radiation of frequencies between $f$ and $f+df$ is given by the following formula.
+			\begin{equation}
+			d\Phi = \frac{2\pi h}{c^2}\frac{f^3}{\exp{(\frac{hf}{k_B T})} - 1} df\ \ (0\le f <\infty) \label{eq:Planck-law}
+			\end{equation}
+			where $c (3 \times 10^8\ \textrm{m/s})$ is the speed of light, $h (6.63\times 10^{-34} \textrm{J.s})$ the {\bf Planck constant}\index{Planck constant} and $k_B (1.38 \times 10^{-23} \textrm{J/K})$ the Boltzmann constant.  The total radiation emitted by a black body at a given temperature is given by the {\bf Stefan-Boltzmann law}\index{Stefan-Boltzmann law} in terms of the power radiated per unit surface area.
+			\begin{equation} 
+			\boxed{\left(\frac{\textrm{Power}}{\textrm{Area}}\right)_{\textrm{emitted}} = \sigma T^4.}
+			\end{equation}
+			where  $\sigma$ is a universal constant called the {\bf Stefan-Boltzmann constant}\index{Stefan-Boltzmann constant} with magnitude $5.7\times 10^{-8} \textrm{W/m}^2\textrm{K}^4$.  You can obtain the Stephan Boltzmann law from the Planck distribution, given in Eq. \ref{eq:Planck-law}, by integrating the later from $f = 0$ to $\infty$.  Stephan-Boltzmann law gives an expression for the total radiation emitted by a blackbody.  To obtain the heat flux emitted by a real body we multiply the black-body formula by a surface property of the material called the {\bf emissivity}\index{Emissivity}  $\epsilon$.
+			\begin{equation} 
+			\left(\frac{\textrm{Power}}{\textrm{Area}}\right)_{\textrm{emitted}} = \epsilon\sigma T^4\ \  \textrm{(All objects)}	
+			\end{equation}
+			The emissivity has a range of  $0\le\epsilon\le 1$. The emissivity of a body is related to its ability to absorb radiation.  The larger the emissivity, the  more the radiation emitted.  
+
+			The ability of a body to absorb radiation is given by absorptivity. We define {\bf absorptivity}\index{Absorptivity} $\alpha$  as the ratio of radiation it absorbed to the radiation incident on it. 
+			\begin{equation} 
+			\textrm{Absorptivity, }\ \alpha = \frac{\textrm{Radiation absorbed}}{\textrm{Radiation incident}}	
+			\end{equation}
+			To simplify calculations we often assume that the absorptivity of a material is equal to the emissivity.
+			\[
+			\alpha = \epsilon.
+			\]
+			This relation is strictly true only for an ideal black body, where both quantities have the value equal to 1, but for most materials, this relation can be taken as a starting point of analysis.  The absorptivity and emissivity are experimental quantities which are normally found by empirical means for each material.
+		</p>
+	
+	</subsection>
+
+	<exercise><title> Surface Temperature of the Sun TODO </title>
+		<statement>
+			<p>
+				The Sun radiates $4\times10^{26} \textrm{J}$ of energy per second.   Assuming that the radiation from the Sun is very close to that expected from a blackbody, and the radius of the sun to be $7.0 \times 10^8 \textrm{m}$, find the surface temperature of the sun.
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p>   </p> </answer>
+		<solution> 
+			<p>
+					The amount of energy radiated per unit time per unit area is given by the Stefan-Boltzmann law.
+	\[ 
+	\left(\frac{\textrm{Power},\ P}{\textrm{Area},\ A}\right)_{\textrm{emitted}} = \sigma T^4.	
+	\]
+	Here, the area is equal to the surface area of a sphere, which is $4\pi R^2$. Solving for $T$, we find
+	\[T = \left( \frac{P}{4\pi R^2  \sigma}\right)^{1/4}.
+	\]
+	Now, we put values of $p$, $R$ and $\sigma$  to obtain the following temperature at the surface of Sun.
+	\[T = \left( \frac{4.0\times 10^{26}\textrm{W}}{4\pi (7.0\times 10^8 \textrm{m})^2 (5.7\times 10^{-8} \textrm{W/m}^2\textrm{K}^4)}\right)^{1/4} = 5,800\ \textrm{K}.
+	\]
+			</p>
+		</solution>
+	</exercise>
+ 
+
+
+
+
+
+
+
+ 
+</section>

@@ -1,0 +1,119 @@
+<section xml:id="First-Law-of-Thermodynamics"><title> First Law of Thermodynamics</title>
+
+<!-- 	<introduction>
+		<p>
+			We have previously studied conservation of energy in conservative mechanical systems. In these sytems, the forces among the particles are conservative forces, which excludes systems with viscous forces. There, the energy of a system, defined by the sum of kinetic energies of all particles and potential energy of interaction between the particles is a constant of time.
+			<men xml:id="eq-energy-conservative-no-external-force">
+				E = \sum_j K_j + \sum_{jk\text{-pairs}} U_{jk} = \text{constant, since conservative system.}
+			</men>
+			We will call this energy internal energy of the system and denote by
+			<men>
+				E^\text{int} = \sum_j K_j + \sum_{jk\text{-pairs}} U_{jk}.
+			</men>
+		</p>
+		<p>
+			According to the principle of the conservation of energy, the energy of a conservative system can only be changed by the energy exchanged with the environment. Suppose, a conservative system  has energy <m> E_i </m> at intant <m>t_i</m>, and let <m> W_\text{if}^\text{ext}</m> be the amount of work done on the system by the external force during <m> t_i </m> to <m> t_f</m>, changing the energy of the sytem to <m> E_f</m>  at <m>t_f</m>.  Then, by the principle of conservation of energy,
+			<men xml:id="eq-energy-conservative-with-external-force">
+				E_f - E_i = W_\text{if}^\text{ext}.
+			</men>
+		</p>
+		<p>
+			If external force was also conservative, we express the negative of the work  as difference in potential energy due to that force.
+			<men>
+				W_\text{if}^\text{ext, conservative} = U_i^\text{ext} - U_f^\text{ext}.
+			</men>
+			We redefine the energy of the system by including these with the energy in Eq. <xref ref="eq-energy-conservative-no-external-force"/>.
+			<men>
+				E = E^\text{int} +  U^\text{ext}.
+			</men>
+		</p>
+		<p>
+			If some of the work by the environment in Eq. <xref ref="eq-energy-conservative-with-external-force"/> is by conservative and the rest by the nonconservative forces, the statement of conservation of energy with redefined energy becomes.
+			<men xml:id="eq-energy-conservative-with-external-force-non-cons">
+				E_f - E_i = W_\text{if}^\text{ext,non-conservative}.
+			</men>
+		</p>
+
+ 
+	</introduction> -->
+
+
+	<subsection><title> Energy Change of a Thermally Insualted System</title>
+		<p>
+			To get oriented with the energy considerations in a thermodynamic system, let us consider a simple system of a gas contained in a cylinder with movable piston as in <xref ref="fig-energy-in-adiabatic-work"/>. Suppose the cylinder and piston are <alert> thermally insulated</alert> from the environment. 
+		</p>
+		<figure xml:id="fig-energy-in-adiabatic-work">
+			<caption>
+				The gas is compressed in a thermally insulated environment with positive work on the gas by the spring force.
+			</caption>
+			<image sourc="./images⁩/first-law-of-thermodynamics⁩/energy-in-adiabatic-work.png" width="70%"/>
+		</figure>
+		⁨
+
+		
+		<p>
+			Suppose you balance the force of gas on the piston by force <m> F </m> from a compressed spring that has the other end fixed. Suppose the force on the piston by the spring is infinitesimally larger than the force by the gas so that the piston moves by a distance <m> \Delta x</m> into the gas, corresponding to change in volume  <m> \Delta V</m>. The work done by the spring force will be
+			<me>
+				W = F\Delta x.
+			</me>
+			This will be the energy lost by the spring,
+			<me>
+				\Delta U_\text{spring} = - W,
+			</me>
+			which is the amount of energy gained by the gas in expansion.
+			<me>
+				\Delta E_\text{gas} = W =  -p\Delta V.
+			</me>
+		</p>
+		<p>
+			We think of the gas as the thermodynamic system and the spring as environment and state this observation as a conservation of energy as
+			<me>
+				\Delta E_\text{gas} = \text{Energy exchanged with environment.}
+			</me>
+			Here, we saw the mechanism of exchange of energy through performance of a mechanical work.  
+		</p>
+	</subsection>
+
+	<subsection><title> Energy Change of a Fixed-Volume System</title>
+		<p>
+			In the above qwe saw energy change of a thermally insulated system. Let us now consider a situation where the system is in thermal contact. To isolate the thermal effect, we examine a gas in a rigid container which is a good conductor of heat. 
+		</p>
+		<p>
+			Suppose the gas is initially at temperature <m> T</m>. The gas is in thermal equilibrium with a water bath also at temperature <m> T</m>. You will find that the energy of the gas will not change. But, if you heat the water bath, as the temperature of the bath increases, the temperature of the gas will also increase. But since volume of the gas did not change, the energy change of the gas is not by a mechanical work, but by some other mechanism. We call this mechanism of energy transfer, heat.
+		</p>
+		<p>
+			If you look at the heating process microscopically, with increasing temperature, the molecules of water bath have higher momentum, and when they collide with the container, they transfer some of the energy to the container molecules, which in turn transfer energy to the gas molecules.
+		</p>
+		<p>
+			We denote energy exchange by this mechanism by letter <m> Q</m> or <m> Q_{if}</m>, where the subscript refers to the process. 
+		</p>
+		<p>
+			<me>
+				\Delta E_\text{gas} = Q.
+			</me>
+		</p>
+		<p>
+			We think of the gas as the thermodynamic system and the spring as environment and state this observation as a conservation of energy as
+			<me>
+				\Delta E_\text{gas} = \text{Energy exchanged with environment.}
+			</me>
+			Here, we saw the mechanism of exchange of energy was through a mechanical work since we were dealing with thermally insulated system.
+		</p>
+	</subsection>
+
+
+	<subsection> <title> First Law of Thermodynamics</title>
+
+		<p>
+			In the last two subsections, we identified two mechanisms by which energy of a thermodynamic system can change - (1) work  <m>W</m> done by the enevironment and (2) energy flow <m>Q</m> due to a temperature difference across a thermal contact. Summing these two mechanisms gives us the statement of First Law of Thermodynamics.
+			<men xml:id="eq-first-law-of-thermodynamics">
+				\Delta E = Q + W.
+			</men>
+			Notice that we need to be careful with the signs -  <m> Q </m> is positive if temperature of the system is less than that of environment and <m> W </m> is positive if positive work is done on the system.
+		</p>
+		<p>
+			
+		</p>
+
+	</subsection>
+</section>

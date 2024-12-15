@@ -1,0 +1,242 @@
+<section xml:id="laws-of-reflection-and-refraction"><title> Reflection and Refraction </title>
+	<introduction>
+        <p>
+        	Light rays travel in a straight line in a homogeneous tranaparent medium. At the interface of two such media, some of the light is reflected back and the rest enters the second medium, which is called <term>refraction</term>. The relations of the directions of the reflected and transmitted rays to that of the direction of incident lights are codified in two laws - the laws of reflection and refraction.
+        </p>
+    </introduction>
+    <subsection><title>Law of reflection</title>
+    	<p>
+    		When light is incident on an interface between two media, some or all of it comes back to the first medium.  The phenomenon is called reflection and the returned ray is called the <term> reflected ray</term> while the starting ray is called the <term>incident ray</term>.
+    	</p>
+
+		<p>
+			<xref ref="fig-specular-diffuse"/> shows two types of reflection - specular and diffuse. 
+			When the interface is smooth the reflected ray is sharp whose direction is symmetrical with respect to the incident ray.  Such a reflection is called <term> specular reflection</term>, from the word Speculum for mirror in Latin.  This is what happens when a visible light ray is reflected from a mirror.  When the reflection is not sharp it is called a <term> diffuse reflection</term>, e.g. reflection from a ground glass.  You are reading this book from diffuse reflected light from the paper, which makes it possible to read the same letter from different angles.
+		</p>
+
+ 		<figure xml:id="fig-specular-diffuse">
+ 			<caption>
+ 				Specular and diffuse reflections.  In specular reflection, only eye A is in a position to receive the reflected light while diffused reflected light can reach both eyes A and B.
+ 			</caption>
+ 			<image source="./images/fundamentals-of-optics/specular-diffuse.png" width="80%"/>
+ 		</figure>
+
+
+		<p>
+			As shown in <xref ref="fig-geometric-optics-at-plane-interface"/>, the directions of incident and reflected rays are given by angles with respect to the <term>normal</term>  to the interface.  Thus, incidence angle  <m>\theta_1</m> made by the incident ray with the normal is called the <term> angle of incidence</term>, and angle <m>\theta_1^{\prime}</m>  made by the reflected ray is called the <term> angle of reflection</term>.  The law of reflection asserts that the two angles are equal to each other.
+			<men>
+				\theta_1^{\prime} = \theta_1.
+			</men>
+			We will try to use the common convention - add a prime to designate a reflected angle for the corresponding incident angle.
+		</p>
+
+ 		<figure xml:id="fig-geometric-optics-at-plane-interface">
+ 			<caption>
+ 				Geometric optics at an interface of two media. The figure has plane interface between two media. All angles are measured from the normal to the interface. Measuring angles with respect to the normal is a convention in which the law of refraction is written in terms of sine functions of angles rather than cosines.
+ 			</caption>
+ 			<image source="./images/fundamentals-of-optics/geometric-optics-at-plane-interface.png" width="80%"/>
+ 		</figure>
+    	
+    </subsection>
+    <subsection><title> Law of Refraction or Snell's Law</title>
+    	<p>
+    		At the interface of two media some or the entire incident light manages to enter the second medium as shown in <xref ref="fig-geometric-optics-at-plane-interface"/>.  The light ray in the second medium is called the <term>refracted ray</term>.  The direction of the refracted is given by the angle (<m>\theta_2</m>) the refracted ray makes with the normal as shown in the figure. The <term> angle of refraction </term>  <m>\theta_2</m> is related to the angle of incidence and the refractive indices <m>n_1</m> and <m>n_2</m> of the two media by the <term> law of refraction</term>, also called the <term> Snell's law</term>.
+    		<men>
+    			n_1\ \sin\theta_1 = n_2\ \sin\theta_2.
+    		</men>
+    		According to Snell's Law, if <m>n_2 \lt n_1</m> then <m> \theta_2 \gt  \theta_1</m> and if <m>n_2 \gt n_1</m> then <m>\theta_2 \lt \theta_1</m> as shown in <xref ref="fig-refraction-two-types-of-interface"/> Thus, if a ray of light in air  (<m>n_1 = 1.0</m>) is incident on water (<m>n_2 = 1.33</m>), it will bend towards the normal, but if a ray of light enter water from its path in glass (<m>n_1 = 1.5</m>), it will bend away from the normal.
+    	</p>
+ 		<figure xml:id="fig-refraction-two-types-of-interface">
+ 			<caption>
+ 				Refraction at two type of interfaces. (a) Light is refracted into a medium of higher refractive index, which bends the ray towards the normal. (b) Light is refracted into a medium of lower refractive index, which bends the ray further away from the normal.
+ 			</caption>
+ 			<image source="./images/fundamentals-of-optics/refraction-two-types-of-interface.png" width="100%"/>
+ 		</figure>
+
+
+    </subsection>
+
+
+	<exercise xml:id="exercise-Rotation-of-Reflected-Light-upon-Rotation-of-Mirror"><title>Rotation of Reflected Light upon Rotation of Mirror</title>
+
+		<statement>
+			<p>
+				A ray of light PO is incident on a plane mirror M1 as shown in <xref ref="fig-rotated-mirror"/>.  If the mirror is rotated to a new orientation M2, the reflected ray rotates from <m>\text{OR}_1</m> to <m>\text{OR}_2</m>.  Find the relation between the angle of rotation of the mirror <m>\angle\text{M}_1\text{OM}_2</m> and the angle <m>\angle\text{R}_1\text{OR}_2</m>.
+			</p>
+	 		<figure xml:id="fig-rotated-mirror">
+	 			<caption>
+	 				 Figure for <xref ref="exercise-Rotation-of-Reflected-Light-upon-Rotation-of-Mirror"/>.
+	 			</caption>
+	 			<image source="./images/fundamentals-of-optics/rotated-mirror.png" width="80%"/>
+	 		</figure>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p><m>\phi = 2\theta</m>.</p></answer>
+		<solution>
+			<p>
+				From the figure
+				<md>
+				<mrow>
+					\amp \angle \text{PON}_1 = \angle \text{N}_1\text{OR}_1 = 90^{\circ}-\angle \text{R}_1\text{OM}_1, </mrow>
+				<mrow>
+					\amp \angle \text{PON}_2 = \angle \text{N}_2\text{OR}_2 = 90^{\circ}-\angle \text{R}_2\text{OM}_2.</mrow>
+				</md>
+				Therefore,
+				<md>
+					<mrow> \angle \text{PON}_1 - \angle \text{PON}_2 \amp  = \angle \text{R}_2\text{OM}_2 - \angle \text{R}_1\text{OM}_1,</mrow>
+					<mrow> \amp   = \angle \text{R}_2\text{OR}_1 +  \angle \text{R}_1\text{OM}_2 -(\angle \text{R}_1\text{OM}_2 + \angle \text{M}_2\text{OM}_1),</mrow>
+					<mrow> \amp   = \angle \text{R}_2\text{OR}_1  - \angle \text{M}_2\text{OM}_1 = \phi - \theta. \ \ \ \ \ \ (1) </mrow>
+				</md>
+				We also have
+				<md>
+				<mrow> \amp 
+					\angle \text{PON}_1 =  90^{\circ}-\angle \text{P}\text{OM}_1^{\prime},</mrow>
+				<mrow> \amp
+					\angle \text{PON}_2 =  90^{\circ}-\angle \text{P}\text{OM}_2^{\prime}. </mrow>
+				\end{array}
+				</md>
+				These give
+				<me>
+				\angle \text{PON}_1 - \angle \text{PON}_2 = \angle \text{P}\text{OM}_2^{\prime}-\angle \text{P}\text{OM}_1^{\prime} = \theta.\ \ \ \ \ \ (2)
+				</me>
+				From (1) and (2) we get
+				<me>
+				\phi - \theta = \theta,\ \ \ \Longrightarrow\ \ \ \phi = 2\theta.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+ 
+
+
+
+	<exercise xml:id="exercise-Refraction-at-Air-Water-Interface"><title>Refraction at Air/Water Interface</title>
+
+		<statement>
+			<p>
+				Find the angle of refraction when light from air is incident on a water surface  with an angle of incidence <m>60^{\circ}</m>.
+			</p>
+		</statement>
+		<hint><p>Use Snell's law.</p></hint>
+		<answer><p> <m>41^{\circ}</m>. </p></answer>
+		<solution>
+			<p>
+				We use Snell's law,  <m>n_1\, \sin\theta_1 = n_2\, \sin\theta_2</m>. Here <m>n_1 = 1</m>, <m>n_2 = \frac{4}{3}</m>,  <m>\theta_1 = 60^{\circ}</m>.  Therefore,
+				<me>
+					\theta_2 = \sin^{-1}\left(\frac{n_1}{n_2}\sin\theta_1 \right) = 41^{\circ}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="exercise-Light-Bending-from-a-Bulb-Immersed-in-Water"><title>Light Bending from a Bulb Immersed in Water</title>
+
+		<statement>
+			<p>
+				 A light bulb is immersed inside a water tank.  A ray of light from the bulb is incident on the water/air interface at an angle of <m>65^\circ</m> from the horizontal interface.  At what angle from the normal does the ray come out in  the air? 	
+			</p>
+		</statement>
+		<hint><p>Use Snell's law.</p></hint>
+		<answer><p><m>34.3^\circ</m> from normal.</p></answer>
+		<solution>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					<md>
+						<mrow> \theta_1 \amp = 90^{\circ}-65^{\circ} = 25^{\circ}.</mrow>
+						<mrow> \theta_2 \amp = \sin^{-1}\left( \dfrac{n_1\sin\theta_1}{n_2}\right)</mrow>
+						<mrow>\amp = \sin^{-1}\left( \dfrac{\frac{4}{3}\sin25^{\circ}}{1}\right) = 34.3^{\circ}. </mrow>
+					</md>
+
+				</p>
+				<p></p>
+				<image source="./images/fundamentals-of-optics/exercise-bending-at-water-air-interface.png" width="80%"/>
+			</sidebyside>
+
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="exercise-Lateral-Displacment-of-a-Ray-when-Traversing-a-Rectangular-Plate"><title>Lateral Displacment of a Ray when Traversing a Rectangular Plate</title>
+
+		<statement>
+			<p>
+				A ray of light is incident at <m>30^\circ</m> to the normal on  a rectangular glass plate of width <m>5\text{ cm}</m>, and emerges on the other side (see <xref ref="fig-exercise-lateral-displacement"/> ).  Find (a) the direction of the emergent ray, and (b) the lateral displacement from the original direction.  Use <m>n = 1.5</m> for glass.  
+
+			</p>
+	 		<figure xml:id="fig-exercise-lateral-displacement">
+	 			<caption>
+	 				figure for <xref ref="exercise-Lateral-Displacment-of-a-Ray-when-Traversing-a-Rectangular-Plate"/>.
+	 				 
+	 			</caption>
+	 			<image source="./images/fundamentals-of-optics/exercise-lateral-displacement.png" width="80%"/>
+	 		</figure>
+		</statement>
+		<hint><p>First draw ray diagram for the two refraction points for the ray. Then find angle of refraction at the first refraction. </p></hint>
+		<answer><p><m>d = 0.97\text{ cm}</m>.</p></answer>
+		<solution>
+			<p>
+				The ray through the glass plate is shown in the figure below. The ray exiting the other end of the rectangular plate at A would be parallel to the incident ray at P. Let <m>\theta</m> be the angle of refraction at point P.
+			</p>
+	 		<image source="./images/fundamentals-of-optics/exercise-lateral-displacement-solution.png" width="60%"/>
+	 		<p>
+	 			<me>
+
+					\theta = \sin^{-1}\left( \dfrac{1\times \sin\:30^{\circ}}{1.5}\right) = 19.5^{\circ}.
+				</me>
+				Therefore, the distance OA and OB will be
+				<md>
+					<mrow> \amp \text{OA} = (5\:\text{cm})\:\tan\:19.5^{\circ} = 1.77\:\text{cm}.</mrow>
+					<mrow> \amp \text{OB} = (5\:\text{cm})\:\tan\:30^{\circ} = 2.89\:\text{cm}.</mrow>
+				</md>
+				Now, in the triangle <m>\angle\text{ABC} = 30^{\circ}</m>.  Therefore,
+				<me>
+					\text{BC} = \text{AB}\:\cos\:30^{\circ} = 0.97\:\text{cm}. 
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Separation-of-Two-Rays-of-Different-Frequencies-when-Traversing-a-Rectangular-Plate"><title>Separation of Two Rays of Different Frequencies when Traversing a Rectangular Plate</title>
+
+		<statement>
+			<p>
+				A ray of light consisting of two wavelengths of light (<m>700\text{ nm}</m> and <m>400\text{ nm}</m> in air) is incident at <m>30^\circ</m> to the normal on a rectangular flint glass plate of width <m>5\text{ cm}</m>, and emerges on the other side as shown in <xref ref="fig-exercise-lateral-displacement"/> of <xref ref="exercise-Lateral-Displacment-of-a-Ray-when-Traversing-a-Rectangular-Plate"/>.  The refractive indices of flint glass for <m>700\text{-nm}</m> and <m>400\text{-nm}</m> light are <m>1.62</m> and <m>1.67</m> respectively.
+			</p>
+			<p>
+				Find (a) direction(s) of the emergent ray, and (b) the lateral displacement(s) d from the original direction. (c) Using a protractor and a ruler, draw as accurately as you can the rays you found in exercise above.	
+			</p>
+		</statement>
+		<hint><p> Find displacements of each ray separately as in <xref ref="exercise-Lateral-Displacment-of-a-Ray-when-Traversing-a-Rectangular-Plate"/>.</p></hint>
+		<answer><p><m>d_{\text{R}} = 1.09\text{ cm}</m>, <m>d_{\text{B}} = 1.14\text{ cm}</m>.</p></answer>
+		<solution>
+			<p>
+				Refer to the figures in the <xref ref="exercise-Lateral-Displacment-of-a-Ray-when-Traversing-a-Rectangular-Plate"/>.  There will be one such ray for each color. Let <m>\theta = \theta_{\text{R}}</m> for the red light of wavelength <m>700\text{ nm}</m> and <m>\theta = \theta_{\text{B}}</m> for the blue light of wavelength <m>400\text{ nm}</m>.  These angles in glass will be
+				<md>
+					<mrow> \amp \theta_{\text{R}} = \sin^{-1}\left( \dfrac{1\times \sin\:30^{\circ}}{1.62}\right) = 18^{\circ}.</mrow>
+					<mrow> \amp \theta_{\text{B}} = \sin^{-1}\left( \dfrac{1\times \sin\:30^{\circ}}{1.67}\right) = 17.4^{\circ}.</mrow>
+				</md>
+				The displacemets of the two rays when they exit on the other side would be $d = d_{\text{R}}$ and $d = d_{\text{B}}$ given by
+				<md>
+					<mrow> \amp d_{\text{R}} = (5\:\text{cm})\:\left( \tan\:30^{\circ} - \tan\:18^{\circ}\right)\:\cos\:30^{\circ} = 1.09\:\text{cm}.</mrow>
+					<mrow> \amp d_{\text{B}} = (5\:\text{cm})\:\left( \tan\:30^{\circ} - \tan\:17.4^{\circ}\right)\:\cos\:30^{\circ} = 1.14\:\text{cm}.</mrow>
+				</md>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

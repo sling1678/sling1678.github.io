@@ -1,0 +1,187 @@
+<section xml:id="Vector-Equations"> <title>Vector Equations</title><idx>Vector Equations</idx>
+	<introduction> 
+		<p>
+			The equation for summing two vectors, viz. Eq. <xref ref="eq-vector-sum" /> in <xref ref="Adding-Vectors"/>,
+			<me>
+				\vec r_\text{sum} = \vec r_1 + \vec r_2,
+			</me>
+			is an example of a vector equation, where the left and right sides of the equation are vector quantites written in abstract formal symbols. When we express vectors in their Cartesian components, we get one simple algebraic equation along each Cartesian axis. We will handle almost all vector equations this way. 
+		</p>
+		<p>
+			Simplest vector equation will have two vectors that are equal to each other. For example
+			<me>
+				\vec A = \vec B.
+			</me>
+			What this is saying is that the two vectors have the same magnitude <alert> and </alert> the same direction.
+			<md>
+				<mrow> \amp A = B, \text{ and } </mrow>
+				<mrow> \amp \text{Direction of }\vec A = \text{Direction of }\vec B</mrow>
+			</md>
+			If we look at the components of <m> \vec A </m> and <m> \vec B </m>, we will conclude that, they have the same components.
+			<men xml:id="eq-vector-equation-component">
+				A_x = B_x,\ \ A_y = B_y,\ \ A_z = B_z. 
+			</men>
+		</p>
+		<p>
+			This component-wise equality can be understoor in another way. Let's write <m> \vec A = \vec B </m> as 
+			<me>
+				\vec A - \vec B = 0.
+			</me>
+			That means the vector <m> \vec A - \vec B </m> is a zero vector. That can happen only if its magnitude is zero, which can happen if <alert> all </alert> its components are zero.
+			<me>
+				A_x - B_x = 0,\ \ A_y - B_y = 0, \ \ A_z - B_z = 0,
+			</me>
+			which is the same as Eq. <xref ref="eq-vector-equation-component" />. Since any vector equation can be written by rewriting the equation with everything on one side and a zero on the other side, a vector equation will give us one equation for each axis as in Eq. <xref ref="eq-vector-equation-component" />.
+		</p>
+		<p>
+			<!-- For instance, suppose we have four vectors that are related by -->
+			A more general example of a vector equation will be
+			<me>
+				\vec A + \vec B = \vec C + \vec D.
+			</me>
+			This will give us the following three equations for the components.
+			<md>
+				<mrow> \amp A_x + B_x = C_x + D_x, </mrow>
+				<mrow> \amp A_y + B_y = C_y + D_y, </mrow>
+				<mrow> \amp A_z + B_z = C_z + D_z.</mrow>
+			</md>
+		</p>
+	</introduction>
+ 
+	
+	<example xml:id="Negative-of-a-Vector"><title> Negative of a Vector </title>
+		<statement>
+			<p>
+				Two vectors <m> \vec A </m> and <m> \vec B </m> add up to give a zero vector. Suppose vector <m> \vec A </m> is known, what can you say about the magnitude and direction of vector <m> \vec B</m>? 
+			</p>
+
+		</statement>
+		<!-- <hint> <p> Think what happens when you change the sign of a vector  </p> </hint> -->
+		<answer> <p> <m> B = A</m>, opposite direction of <m>\vec A</m>. </p> </answer>
+		<solution> 
+			<p>
+				We are given that
+				<me>
+					\vec A + \vec B = 0.
+				</me>
+				Solving for <m> \vec B </m>, we get
+				<me>
+					\vec B = - \vec A.
+				</me>
+				That is, <m> \vec B </m> is just <m>\vec A </m> woith direction flipped. Therefore, <m> \vec B </m> has the same magnitude as <m> \vec A </m> but has opposite direction
+			</p>
+		</solution>
+	</example>
+
+
+	<exercises>
+		
+		<exercise xml:id="Finding-the-Third-Force-that-will-Balance-Two-Other-Forces-Given-in-Component-Form"><title> Finding the Third Force that will Balance Two Other Forces Given in Component Form </title>
+			<statement>
+				<p>
+					Consider a situation in which three forces cancel out. Two of the forces are given in the component form in the <m>xy</m>-plane as <m> \vec F_1 = (20 \text{ N},  10 \text{ N}) </m>, and <m> \vec F_2 = (-30 \text{ N},  10 \text{ N}) </m>. 
+				</p>
+				<p>
+					(a) What are the magnitude and direction of the third force?  (b) Draw the three forces in the tip-to-tail manner and show that they form a closed path. 
+				</p>
+
+			</statement>
+			<hint> 
+				<p>
+					(a) Thinking in terms of components is helpful. (b) Why would they form a closed path? Think what their sum is. 
+				</p>
+			</hint>
+			<answer>
+				<p> 
+					(a) <m> (10\text{ N} , -20 \text{ N}) </m> in component form, giving magnitude <m> 10\sqrt{5}\text{ N} </m>, and the angle, <m> \theta = 63.4^\circ</m> clockwise into the fourth quadrant.  
+				</p> 
+			</answer>
+			<solution><title>(a)</title> 
+				<p> (a) Let us call the third force <m> \vec F_3 </m>. Then, we are given that
+					<me>
+						\vec F_1 + \vec F_2 + \vec F_3 = 0.
+					</me>
+					Therefore, 
+					<me>
+						\vec F_3 = -( \vec F_1 + \vec F_2 ),
+					</me>
+					which means, the components of <m> \vec F_3</m> will be opposite of those of the sum of the other two force. Hence, (note: as in other places, we omit units in calculations, but put the units back in the final result.)
+					<md>
+						<mrow> \amp F_{3x} = -( F_{1x} + F_{2x} ) = -( 20 -30) = 10\text{ N}.</mrow>
+						<mrow> \amp F_{3y} = -( F_{1y} + F_{2y} ) = -( 10 + 10) = -20\text{ N}.</mrow>
+					</md>
+					Therefore the magnitude and angle of <m> \vec F_3 </m> are
+					<md>
+						<mrow> \amp F = \sqrt{F_{3x}^2 + F_{3y}^2} = \sqrt{10^2 + 20^2} = 22.4\text{ N}.</mrow>
+						<mrow> \amp  \theta = \tan^{-1}\left(\dfrac{F_{3y}}{F_{3x}} \right) = -63.4^{\circ}.</mrow>
+					</md>
+					Since <m> (F_{3x} , F_{3y}) = (10, -20)	</m> in the fourth quadrant, the direction is <m> 63.4^{\circ}</m> clockwise from positive <m> x </m> axis. 				
+				</p>
+			</solution>
+			<solution><title>(b)</title>
+
+				<sidebyside widths="45% 5% 50%">
+					<p>
+						The three forces placed tip-to-tail should form a closed loop for their vector sum to be zero. We draw <m>\vec F_1</m> and <m>\vec F_2</m> to scale, and then find <m>\vec F_3</m> from the tip of <m>\vec F_2</m>  to the tail of <m>\vec F_1</m>.
+					</p>
+					<p></p>
+					<figure>
+						<caption></caption>
+						<image source="./images/vectors/ex-f1-f2-f3-balance-graphically.png" width="70%"/>
+					</figure>
+				</sidebyside>
+
+
+			</solution>
+
+			
+		</exercise>
+
+
+		<exercise xml:id="Finding-the-Third-Force-that-will-Balance-Two-Other-Forces-Given-in-Magnitude-Direction-Form"><title> Finding the Third Force that will Balance Two Other Forces Given in Magnitude-Direction Form </title>
+			<statement>
+				<p>
+					Consider a situation in which three forces cancel out, i.e., their vector sum is equal to zero. Two of the forces are: <m> \vec F_1 = (12</m> N, due East), and <m> \vec F_2 = (5</m> N, due North). 
+				</p>
+				<p>
+					(a) What are the magnitude and direction of the third force? 
+				</p>
+				<p>
+					(b) Draw the three forces in the tip-to-tail manner and show that they form a closed path. Why would they form a closed path? Hint: Think about their sum.
+				</p>
+
+			</statement>
+			<hint> <p> Convert the given forces to component form first.  </p> </hint>
+			<answer> <p>  (a) <m> (-12\text{ N} , -5 \text{ N}) </m> in component form with <m> x </m> towards East and <m> y </m> toward North. This will give magnitude = <m> 13 \text{ N}</m>, and the angle will be in the third quadrant, <m> 22.6^\circ</m> south of west. </p> </answer>
+			<solution> 
+				<p> (a) 
+					Let us call the third force <m> \vec F_3 </m>. Then, we are given that
+					<me>
+						\vec F_1 + \vec F_2 + \vec F_3 = 0.
+					</me>
+					Therefore, 
+					<me>
+						\vec F_3 = -( \vec F_1 + \vec F_2 ),
+					</me>
+					which means, the components of <m> \vec F_3</m> will be opposite of those of the sum of the other two force.  From the magnitudes and directions of <m> \vec F_1 </m> and <m> \vec F_2 </m> we find their component forms to be
+					<md>
+						<mrow> \amp F_{1x} = 12\text{ N},\ \ F_{1x} = 0,</mrow>
+						<mrow> \amp F_{2x} = 0,\ \ F_{1x} = 5\text{ N},</mrow>
+					</md>
+					Therefore, for <m> \vec F_3 </m> we get
+					<md>
+						<mrow> \amp F_{3x} = -( F_{1x} + F_{2x} ) = -( 12 + 0) = -12\text{ N}.</mrow>
+						<mrow> \amp F_{3y} = -( F_{1y} + F_{2y} ) = -( 0 + 5) = -5\text{ N}.</mrow>
+					</md>
+					Therefore the magnitude and angle of <m> \vec F_3 </m> are
+					<md>
+						<mrow> \amp F = \sqrt{F_{3x}^2 + F_{3y}^2} = \sqrt{12^2 + 5^2} = 13.0\text{ N}.</mrow>
+						<mrow> \amp  \theta = \tan^{-1}\left(\dfrac{F_{3y}}{F_{3x}} \right) = \tan^{-1}\left(\dfrac{ -5}{-12}\right) = 22.6^{\circ}.</mrow>
+					</md>
+					Since <m> (F_{3x} , F_{3y}) = (-12, -5)	</m> in the third quadrant, the direction is <m> 22.6^{\circ}</m> counterclockwise from the negative <m> x </m> axis. This is <m> 22.6^{\circ}</m> South of West.						
+				</p>
+			</solution>
+		</exercise>
+	</exercises>
+
+</section>

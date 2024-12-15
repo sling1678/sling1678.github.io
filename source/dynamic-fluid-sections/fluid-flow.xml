@@ -1,0 +1,330 @@
+<section xml:id="fluid-flow"><title> Fluid Flow </title>
+
+	<subsection> <title> Flow in a Pipe </title>
+		<p>
+			Turn on the faucet and collect water in a bucket. Suppose it takes <m> 15\text{ sec}</m> to fill a <m> 4\text{-liter}</m> bucket. Dividing the volume by the time, i.e., <m> 16\text{ liter/min} </m>, gives us an important measure of flow, called the <term> volume rate of flow</term>. This is denoted by letter <m> Q</m>.
+			<men xml:id="eq-volume-rate-of-flow-bucket">
+				Q = \dfrac{\Delta V}{\Delta t}
+			</men>
+		</p>
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				We can also speak of the <term> speed of flow </term>, <m> v</m>, by looking inside the pipe. Observe that all the fluid that was within a distance of <m> v\Delta t</m> would have gone to the bucket in time <m> \Delta t</m>. That is, if the cross-section of the pipe is <m> A </m>, then, the volume flowed is
+				<men xml:id="eq-volume-of-flow-pipe">
+				\Delta V = A v\Delta t.
+				</men>
+			</p>
+			<p> </p>
+
+			<image source="./images/dynamic-fluid/faucet-flow-drawn.png" width="50%"/>
+		</sidebyside>
+		<p>
+			Using this in Eq. <xref ref="eq-volume-rate-of-flow-bucket"/> we find the relation between the two measures of flow, viz., volume rate of flow and the speed of flow. 
+			<men xml:id="eq-volume-rate-and-speed-of-flow">
+				Q = A  v.
+			</men>
+		</p>
+		<p>
+			On multiplying <m> Q </m> by the density of the fluid, <m> \rho</m>, we will get the <term> mass rate of flow</term>. The mass rate of flow is also called <term> current</term>. It is usually denoted by letter <m> I</m>.
+			<men xml:id="eq-mass-rate-and-speed-of-flow">
+				I = \rho Q = \rho A  v.
+			</men>
+			When we divide current by the area of cross-section <m>A</m>, we get current density, denoted by <m>J</m>.
+			<me>
+				J = \dfrac{I}{A} = \rho\,v.
+			</me>
+		</p>
+	</subsection>
+
+	<subsection><title> Incompressibility and Steady Flow </title>
+
+		<p>
+			When the volume flow rate <m>Q = Av</m> is same throughout and not changing with time, we say that the fluid flow is <term>steady</term>. An object is incompressible if volume change is negligible when you compress the object. Below, we derive an important relation for an incompressible fluid flow.
+		</p>
+ 
+		<p>
+			To study analytically, let us consider a steadily flowing incompressible fluid in a pipe whose cross-section varies as shown in <xref ref="fig-volume-conservation-two-connected-pipes"/>.  
+		</p>
+
+		<figure xml:id="fig-volume-conservation-two-connected-pipes">
+			<caption>
+				Incompressibility of the fluid in a steadily flowing fluid implies that the volume of liquid entering the space between 1 and 2 at 1 must equal the volume leaving at 2.
+			</caption>
+
+			<image source="./images/dynamic-fluid/volume-conservation-two-connected-pipes.png" width="70%"/>
+		</figure>
+		<p>
+			Let <m>A_1</m> and <m>A_2</m> be the cross-sectional areas of the entrance and exit respectively, and <m>v_1</m> and <m>v_2</m> be the corresponding speeds. In time <m> \Delta t </m>, all fluid within a volume <m> A_1 v_1 \Delta t </m> would have entered the space between 1 and 2, and during this time all fluid within a volume <m> A_2 v_2\Delta t </m> would have exited the space. Equating the two, and canceling out <m> \Delta t</m> gives the following important result, which is sometimes called the <term>equation of continuity</term>.
+			<men>
+				A_1 v_1 = A_2 v_2.
+			</men>
+	 		This says that the fluid will be faster (higher <m> v </m>) in the narrower part (ie., where <m> A</m> is smaller) and vice-versa. 
+ 		</p> 
+	</subsection>
+
+	<exercise xml:id="ex-Volume-and-Mass-Flow-Rates-in-a-Cylindrical-Pipe"><title> Volume and Mass Flow Rates in a Cylindrical Pipe </title>
+		<statement>
+			<p>
+				Water flows through a cylindrical pipe of internal diameter <m>1.0\text{ cm}</m>.  (a) If <m>1000\text{ L}</m> of water flows per minute, what is the velocity of flow in <m>\text{m/s}</m>? (b) What is the mass rate of flow in <m>\text{kg/s}</m>?
+			</p>
+			<p>
+				Data: <m>\rho_w = 1000\text{ kg/m}^3</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Use definitions after converting into SI units. </p> </hint>
+		<answer> <p> (a) <m> 212\text{ m/s}</m>, (b) <m> 16.7\text{ kg/s}</m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a) Let us work with SI units <m>\text{(m, kg, s)}</m>. 
+				<md>
+					<mrow> R \amp = 0.5\times 10^{-2}\text{ m}, </mrow>
+					<mrow> A \amp = \pi R^2 = 7.85\times 10^{-5}\text{ m}^2 </mrow>
+					<mrow> Q \amp = 1000\dfrac{\text{L}}{\text{min}} = \dfrac{1.0}{60}\text{ m}^3\text{/s}.</mrow>
+				</md>
+				Therefore,
+				<me>
+					v = \dfrac{Q}{A} = 212\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+
+		<solution> <title> (b) </title>
+			<p> 
+				(b) By multiplying <m>Q</m> by <m>\rho</m>, the density,  we will get the mass current.
+				<me>
+					\rho_w Q =  16.7\text{ kg/s}. 
+				</me>
+			</p>
+		</solution>		
+	</exercise>
+
+	<exercise xml:id="ex-Varying-Flow-Speeds-in-a-Garden-Hose-and-Nozzle"><title> Varying Flow Speeds in a Garden Hose and Nozzle </title>
+		<statement>
+			<p>
+				Your garden hose has an innser radius of <m> 0.65\text{ cm}</m> and the nozzle through which water comes out has a radius of <m> 0.250\text{ cm}</m>. You are watering the lawn with <m> 40\text{ L}</m> per minute.
+			</p>
+			<p>
+				(a) What is the speed of water in the hose?
+			</p>						
+			<p>
+				(b) What is the speed of water in the nozzle?
+			</p>
+
+		</statement>
+		<hint> <p>  (a) <m>Q = A v</m>, (b) <m>A_1 v_1 = A_2 v_2</m>. </p> </hint>
+		<answer> <p> (a) <m> 5.0\text{ m/s}</m>, (b) <m> 33.8\text{ m/s}</m>.  </p> </answer>
+		<solution><title> (a)  </title>
+			<p>
+				(a)
+				We need the area of cross-section of hose.
+				<me>
+					A = \pi R^2 = \pi \times 0.65^2 = 1.327\text{ cm}^2.
+				</me>
+				We work in <m> \text{cm} </m> units by converting <m>1\text{ L}=1000\text{ cm}^3</m> and in <m> \text{s} </m> by <m> 1\text{ min} = 60\text{ s}</m>.
+				<me>
+					v = \dfrac{Q}{A} = \dfrac{40\times 1000}{60}\dfrac{1}{1.327} = 502.4\text{ cm/s} = 5.0\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+		<solution><title> (b) </title>
+			<p>
+				(b) Since <m> Q </m> is same, the velocity will only vary due to the areas.
+				<me>
+					v_{\text{nozzle}} = \dfrac{A_{\text{hose}}}{A_{\text{nozzle}}}\ v_{\text{hose}}.
+				</me>
+				We do not need to find the individual areas since we need only their ratio, which wil lbecome ratio of their radii squared.
+				<me>
+					v_{\text{nozzle}} = \left( \dfrac{0.65}{0.250} \right)^2 \, 5.0 = 33.8\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Steady-Flow-of-Water-Through-Pipes-in-a-House"><title> Steady Flow of Water Through Pipes in a House </title>
+		<statement>
+			<p>
+				A water supply pipe to a house has an internal diameter of 4 cm.  The second floor of the house has water pipe of diameter 2 cm.  
+			</p>
+			<p>
+				(a) If water flows at the speed of 10 m/s from the pipe at the second floor, what is the speed of flow in the supply line?  
+			</p>
+			<p>
+				(b) What is the volume rate of flow?  
+			</p>
+			<p>
+				(c) What does current equal to? 
+			</p>
+			<p>
+				Data: <m>\rho_w = 1000\text{ kg/m}^3</m>.
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use <m>A_1v_1 = A_2v_2</m>, (b) <m>Q=Av</m>, (c) <m>I = \rho Q</m>.  </p> </hint>
+		<answer> <p> (a) <m> 2.5\text{ m/s}</m>, (b) <m>3.14\text{ L/s}</m>, (c) <m>3.14\text{kg/s}</m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a) Using the speed of flow and the internal diameter for the pipe from the data for the second floor we find the volume rate of flow anywhere in the same pipe regardless the diameter of the pipe.
+				<md>
+					<mrow> Av \amp = \pi r^2 v = \pi\times (0.001\ \text{m})^2 \times 10\ \text{m/s}</mrow>
+					<mrow> \amp =  \pi \times 10^{-5} \text{m}^3/\text{s}.</mrow>
+				</md> 
+				Now we can divide this by the area of cross-section of the supply line to find the speed of flow there.
+				<md>
+					<mrow> v_{\text{supply}} \amp = \dfrac{ \pi \times 10^{-5} \text{m}^3/\text{s}}{\pi (0.002\ \text{m})^2}</mrow> 
+					<mrow> \amp = 2.5 \ \text{m/s}.</mrow>
+				</md>
+				<alert>Better Way: </alert>
+			</p>
+			<p>
+				Although we have the correct answer here, but you may have noticed that there were quite a lot of cancellations in the calculations.  In these calculations and actually many other places in physics putting the numbers right away is not a good idea.  We should get to the final expression first before putting in the numbers.  Let us do this problem again.
+			</p>
+			<p>
+				Let us label the quantities in the supply line with a subscript 1 and that in the second floor by the subscript 2.  Then, we have 
+				<me>
+				A_1 v_1 = A_2 v_2.
+				</me>
+				We are looking for <m> v_1</m>.  Let us solve for <m> v_1</m>  and keep the ratio the same type of quanties together. 
+				<me>
+				 v_1 = \frac{A_2}{A_1} v_2.
+				</me>
+				Note that keeping <m> A_1</m>  and <m> A_2</m>  together means that we do not need to worry about the particular units of <m> A_1</m>  and <m> A_2</m>  as long as they are both in the same units since the units will cancel out.  Also any common factor will cancel out.  Now we can write this formula in terms of the diameters.
+				<me>
+				 v_1 = \left( \frac{d_2}{d_1} \right)^2 v_2.
+				</me>
+				At this point we would plug in the numbers.
+				<me>
+				v_1 = \left( \frac{2 \ \text{cm}}{4\ \text{cm}} \right)^2 \times 10\ \text{m/s} = 2.5 \ \text{m/s}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				(b) The volume rate of flow is <m> Av</m>, which can be determined from flow either in the supply line or the second floor.
+				<me>
+				A_2v_2 = \pi r^2 v = \pi\times (0.01\ \text{m})^2 \times 10\ \text{m/s} = 3.14 \times 10^{-3} \text{m}^3/\text{s}.
+				</me> 
+			</p>
+		</solution>
+		<solution> <title> (c) </title>
+			<p>
+				(c) The current in the present context refers to the mass rate of flow which would be equal to the product of the volume rate of flow and the density.
+				<me> \text{Current},\ 
+				A_2v_2 \rho = 3.14\  \text{kg}/\text{s}.
+				</me>
+			</p>
+
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Flow-in-a-Branching-System-The-Human-Circulatory-System"><title> Flow in a Branching System - The Human Circulatory System</title>
+		<statement>
+			<p>
+				In a human circulatory, the Cardiac output flows through a large number of capillaroes. By one estimate a cardiac output of <m> 4.7\text{ L/min}</m> branches out into <m> 5\times 10^{9}</m> capillaries, each of diameter, approximately <m> 10\,\mu\text{m}</m>. 
+			</p>
+			<p>
+				(a) What is the blood flow speed in the capilalries?
+			</p>
+			<p>
+				(b) If the cadiac output is modeled to have a diameter of <m> 1.5\text{ cm}</m>, what is the average speed of blood flow in the heart?
+			</p>
+
+		</statement>
+		<hint> <p> (a) Add the flow rates of all capillaries.  </p> </hint>
+		<answer> <p> (a) <m> 0.2\text{ mm/s}</m>, (b) <m> 1.4\text{ m/s}</m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a)
+				The volume flow rates of capillaries must add up to the net cardiac output. For convenience, we work in the <m> \text{m} </m> units.
+				<md>
+					<mrow> \amp Q = 4.7\text{ L/min} = 7.8\times 10^{-5}\text{ m}^3\text{/s},</mrow>
+					<mrow> \amp A_{\text{cap}} = \pi\times  5^2 \times 10^{-12} = 7.85\times 10^{-11}\text{ m}^2.</mrow>
+					<mrow> \amp A = N_{\text{cap}} A_{\text{cap}} =  0.392\text{ m}^2.</mrow>
+				</md>
+				<md>
+					<mrow>v \amp = \dfrac{Q}{N_{\text{cap}}A_{\text{cap}}} = \dfrac{7.8\times 10^{-5}}{0.392 }, </mrow>
+					<mrow> \amp =  0.000199\text{ m/s} = 0.2\text{ mm/s}. </mrow>
+				</md>
+
+			</p>
+		</solution>
+		<solution><title> (b) </title>
+			<p>
+				(b) 
+				We just need to scale with respect to areas. Let us use subscript 1 for the arteries and 2 for the capillaries.
+				<md>
+					<mrow> v_1 \amp = \dfrac{N_2A_2}{A_1} v_2  = \dfrac{0.392}{\pi (0.75\times 10^{-2})^2}\, 0.2\text{ mm/s} 
+					</mrow>
+					<mrow> \amp = 1400\text{ mm/s} = 1.4\text{ m/s}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<subsection> <title> (Calculus) Current Density</title>
+		<p>
+			Current per unit area of cross-section is called the <term>current density</term>. We defined current above by <m> I = \rho  A v</m>. Dividing this by <m> A </m> we get the current density, which will be denoted by letter <m> J</m>.
+			<men>
+				J = \rho v.
+			</men>
+			If the flow in a tube is not uniform, for instance, flow may be faster in the middle of the tube than near the edge, then current density will vary over the cross-section. Current density will also vary if density of the material varies. We then speak of current density as local current density, and can think of <m> J</m> as a function of position <m> (x, y, z) </m>.
+			<men xml:id="eq-local-current-density">
+				J(x,y,z) = \rho(x,y,z) v(x,y,z).
+			</men>
+			Current density is a vector with magnitude given here and the direction in the direction of the flow.
+		</p>
+		<p>
+			If current density does not vary over the cross-section, then current is simply the product of current density and the area of cross-seciotn.
+			<men>
+				I = JA\ \  \ \ (\text{if } J\text{ uniform,})
+			</men>
+			otherwise, we need to integrate current density over the cross-section area. This is written as a conceptual integral.
+			<men>
+				I = \int\, J\, dA.
+			</men>
+			In a particular situation, you will need to decide how to write <m>dA</m>. In a rectangular cross-section, you might say <m>dA=dxdy</m> and in a circular cross-section, polar coordinates will be more appropriate with <m> dA = rdrd\theta</m>. If we have a circular symmetry, you might use <m>dA=2\pi r dr</m>.
+		</p>
+	</subsection>
+	<subsection><title> (Calculus) Laminar Flow in a Cylindrical Tube </title>
+		<p>
+			It will not surprise you that fluid flows faster in the center than near the wall - this is what happens in a river where water flows faster in the middle and hardly any near the bank.
+		</p>
+		<sidebyside widths="60% 5% 35%">
+			<p>				 
+				A more advanced treatment of fluid flow shows that at low speeds of flow, speed of flow at radial distance <m>r</m> from the center of a tube of radius <m>R</m> varies quadratically as shown diagrmatically in the figure on the right.
+				<men xml:id="eq-velocity-profile-cylindrical-pipe">
+					v = v_0 -  \dfrac{r^2}{R^2}  v_0,
+				</men>
+
+			</p>
+			<p> </p>		
+			<image source="./images/dynamic-fluid/velocity-profile-cylindrical-tube.png" width="70%"/>
+		</sidebyside>
+		<p>
+			where <m>v_0</m> is the speed at the center. 
+		</p>
+		<sidebyside widths="60% 5% 35%">
+			<p>
+				To find current through the tube, we look at flow through a ring of infinitesimal area <m>dA = 2\pi rdr</m>, which is between radius <m>r</m> and <m>r+dr</m>. Let <m> \rho</m> be uniform density. 
+				
+				<md>
+					<mrow> I \amp = \int J\, dA = \int \rho v 2\pi rdr  </mrow>
+					<mrow> \amp = 2\pi \rho v_0 \int_0^R \left( 1 -  \dfrac{r^2}{R^2}\right) r dr </mrow>
+					<mrow> \amp = \dfrac{1}{2}\rho v_0 \pi R^2 = \dfrac{1}{2}\rho v_0 A. </mrow> 
+
+				</md>
+				
+			</p>
+			<p> </p>
+			<image source="./images/dynamic-fluid/non-uniform-current-density.png" width="70%"/>
+		</sidebyside>
+		<p>
+			Note that if the speed was <m> v_0</m> at all points of the cross-section, we would get <m> 2 \times </m> as much current, but that is not what actually happens. You get only half as much flow as dictated by the speed at the center since fluid is flowing at different speeds across the cross-section.
+		</p>
+	</subsection>	
+	
+
+
+
+</section>

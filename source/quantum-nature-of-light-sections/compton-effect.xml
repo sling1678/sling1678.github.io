@@ -1,0 +1,215 @@
+<section xml:id="sec-Compton-Effect"><title> Compton Effect</title>
+	<introduction>
+		<p>
+			Photoelectric effect demonstrated that energy in light came in bunches or quanta called photons. If photons really do exist as particles, each photon would have energy as well as momentum. We have seen that the energy of a photon is equal to <m>hf</m>.  Since a photon must travel at the speed of light, its rest mass must be zero as shown in the chapter on relativity.  This gives the following expression for the momentum of a photon.
+			<men>
+				p  = \dfrac{E}{c} = \dfrac{h f}{c} = \dfrac{h}{\lambda},
+			</men>
+			where I have replaced <m>f/c = \lambda</m>, where <m>\lambda</m> is the wavelength of the electromagnetic wave.  We will often refer to <m>f</m> and <m>\lambda</m> the frequency and wavelength of the photon, even though they refer to the frequency and wavelength of the electromagnetic wave that the photon belongs to.
+		</p>
+		<p>
+			Arthur Compton of Washington University in St. Louis, Missouri analyzed the energy and momentum conservation in the process of collision of a photon with an electron and found that, the photon coming at an angle to the original direction after collision  will have a different wavelength than the wavelength of the incident photon.  The predicted shift in wavelength was small, of the order of picometers, and was independent of the wavelength of the incoming photon. Since X-rays have wavelengths in the picometer range the experiment is usually done with X-rays as Compton had done. Also, since the work function of a surface is in the electron-volt (eV) range while the energy of a photon in X-ray has energy in the keV range, we ignore the work function completely.
+		</p>
+		<p><alert>Collision of a photon with a free electron:</alert></p>
+		<p>
+			<xref ref="fig-compton-effect-momentum"/> shows  schematically the situation before collision and after collision. The electron initially is taken to be an almost free electron and at rest. This assumption for the electron is justified since the speeds of the photon and the recoiled electron will be in the relativistic regime while the speeds of a loosely bound electron in the material will be non-relativistic. 
+		</p> 
+		<figure xml:id="fig-compton-effect-momentum">
+			<caption>
+				Collision of a photon with an electron at rest.
+			</caption>
+			<image source="./images/modern-physics/compton-effect-momentum.png" width="80%"/>
+		</figure>
+
+ 
+
+		<p>
+			Let <m>\vec p_0</m> be the momentum of the incoming photon, <m>\vec p_\theta</m> the momentum of the outgoing photon at angle <m>\theta</m>, and <m>\vec p_e</m> be the momentum of the recoiled electron. The vector equation of conservation of momentum will be
+			<men>
+				\vec p_0 = \vec p_{\theta} + \vec p_e.
+			</men>
+			These vectors form a triangle as shown in <xref ref="fig-compton-effect-momentum"/>. The law of cosine applied to the triangle gives the following relation between the magnitudes of the momenta and angle <m>\theta</m>.
+			<men>
+				p_e^2 = p_0^2 +   p_{\theta}^{2} + 2 p_0 p_{\theta}\cos\theta,
+			</men>
+			with the momenta given by the following:
+			<men>
+				p_0 = \frac{h}{\lambda_0}\ ,\quad p_{\theta} = \frac{h}{\lambda_{\theta}}\ ,\quad p_e = \gamma m v\ ,\quad \gamma = \frac{1}{\sqrt{1-v^2/c^2}},
+			</men>
+			where <m>v</m> is the speed of the recoiled electron, <m>\lambda_0</m> is the wavelength of the incoming photon, and <m>\lambda_\theta</m> the wavelength of the outgoing photon at angle <m>\theta</m>. Therefore, we get the following equation from the conservation of momentum
+			<men xml:id="eq-compton-momentum">
+				\frac{m^2 v^2}{1-v^2/c^2} = \left(\frac{h}{\lambda_0}\right)^2 +  \left(\frac{h}{\lambda_{\theta}}\right)^2   -2 \frac{h^2}{\lambda_0\lambda_{\theta}}\cos\theta. 
+			</men>
+			The conservation of energy will give
+			<men xml:id="eq-compton-energy">
+				\frac{hc}{\lambda_0}  + mc^2 = \frac{hc}{\lambda_{\theta}} + \frac{mc^2}{\sqrt{1-v^2/c^2}}.
+			</men>
+			Since the velocity of the recoiled electron is not measured in the experiment we will eliminate <m>v</m> from Eqs. <xref ref="eq-compton-momentum"/> and <xref ref="eq-compton-energy"/>. A long and tedious calculation gives the following result.
+			<men xml:id="eq-compton-formula">
+				\lambda_{\theta} - \lambda_0 = \frac{h}{mc} ( 1 - \cos\theta). 
+			</men>
+			The quantity <m>\Delta\lambda =  \lambda_{\theta} - \lambda_0</m> is called the <term>Compton shift</term>  and the quantity <m>\lambda_c = \dfrac{h}{mc}</m> is called the <term>Compton wavelength</term>  of the particle of mass <m>m</m>, which is the mass of electron here.  Putting the value of <m>h</m>, <m>c</m>, and <m>m</m> in <m>\dfrac{h}{mc}</m> we find the Compton wavelength of an electron to be
+			<md>
+				<mrow>\lambda_c \amp = \frac{h}{mc} = \frac{6.63\times 10^{-34}\textrm{J.s}}{9.11\times 10^{-31}\textrm{kg} \times 3.0\times 10^{8}\textrm{m}}</mrow>
+				<mrow> \amp = 2.43\times 10^{-12}\:\textrm{m} = 2.43\: \textrm{pm}.</mrow>
+			</md>
+			According to Equation <xref ref="eq-compton-formula"/> no shift will be seen in the forward direction, <m>\theta = 0</m> and a maximum shift will occur at the back scattered direction, <m>\theta = 180^{\circ}</m>. At <m>90^{\circ}</m> the shift will equal the Compton wavelength of the object that the photon was scattered from. 		
+		</p>
+	</introduction>
+
+	<subsection><title>Compton's Experiment</title>
+		<p>
+			Compton tested Eq. <xref ref="eq-compton-formula"/> experimentally using <m>\text{K}\alpha</m> X-rays from a Molybdenum source of wavelength <m>\lambda = 71.1\:\textrm{pm}</m>. A schematic diagram of the apparatus is shown in <xref  ref="fig-compton-effect-apparatus"/>. Compton directed the <m>\text{K}\alpha</m> rays to a carbon target.  He then observed the scattered rays at various angles with a Bragg spectrometer which consisted of a rotating calcite crystal.  The calcite crystal diffracted X-rays of a particular wavelength into an ionization chamber where the intensity of the ray was recorded. From the crystal spacing of the calcite and the angle of diffraction one could determine the wavelength diffracted into the ionization chamber accurately to within <m>0.1\:\textrm{pm}</m>.
+		</p> 
+
+		<figure xml:id="fig-compton-effect-apparatus">
+			<caption>
+				 Schematic diagram of the apparatus used by Compton.
+			</caption>
+			<image source="./images/modern-physics/compton-effect-apparatus.png" width="70%"/>
+		</figure>
+
+		<p>
+			<xref ref="fig-compton-effect-data-0-135"/> shows Compton's results for scattering at <m>0^{\circ}, 45^{\circ}, 90^{\circ}</m>, and <m>135^{\circ}</m> angles.  The <m>x</m>-axis on the figure is the glancing angle from the calcite crystal which is used to calculate the wavelength of X-ray.  The experiment at non-zero angles show two peaks, which Compton called the modified and unmodified rays. The peak of the unmodified ray occurs at nearly the same wavelength as the <m>\text{K}\alpha</m> ray from the source while the peak of the modified ray occurs at a longer wavelength in accordance with  the formula in Eq. <xref ref="eq-compton-formula"/> For instance, the shift at <m>90^{\circ}</m> was found to be <m>2.2\:\textrm{pm}</m> which was in excellent agreement with the predicted shift of <m>2.4\:\textrm{pm}</m>. 
+  
+
+			<!-- %\begin{figure}[h!]
+			%\centering
+			%\includegraphics[width=0.9\textwidth]{figs/compton-scattering-fig-4-from-compton-phys-rev-vol-21-no-5-pp-483-502.eps}
+			%\caption{ The spectrum of X-ray in the direction at an angle <m>90^{\circ}</m> from the original direction of X-ray from Molybdenum incident on a graphite target. The <m>x</m>-axis is the glancing angle from the calcite crystal which corresponds to the wavelength of X-ray. The unit of length in the legend is angstrom, with <m>1\:\text{\normalfont\AA} = 100\:\textrm{pm}</m>}.\label{fig:compton-scattering-fig-4-from-compton-phys-rev-vol-21-no-5-pp-483-502}
+			%\end{figure} -->
+		</p>
+
+ 
+		<figure xml:id="fig-compton-effect-data-0-135">
+			<sidebyside widths="50% 50%">
+				<image source="./images/modern-physics/compton-effect-data-0-45.png" width="70%"/>
+				<image source="./images/modern-physics/compton-effect-data-90-135.png" width="70%"/>
+			</sidebyside>
+			<caption>
+				The spectrum of <m>\text{K}\alpha</m> rays from Molybdenum at angles <m>0^{\circ}, 45^{\circ}, 90^{\circ}, 135^{\circ}</m>. The <m>x</m>-axis is the glancing angle from the calcite crystal from which the wavelength can be computed.  the solid line is the theoretical expectation based on Eq. <xref ref="eq-compton-formula"/>.
+			</caption>
+		</figure>
+
+ 
+		<p>
+			From Eq. <xref ref="eq-compton-formula"/> only one peak should appear in any one direction for scattering from one particle. Why do we see two peaks at every angle? Compton investigated this question also. In Eq. <xref ref="eq-compton-formula"/> the shift is inversely proportional to the mass <m>m</m> of the particle with which the photon collides. If photon collides with more tightly bound electrons such that the momentum imparted to the electron goes into moving the entire carbon atom, then <m>m</m> in this formula will have to be replaced by mass of the atom, which is approximately 22,000 times heavier than a proton. Therefore, the shift for a collision with a tightly bound electron will be 22,000 times less, meaning if the shift for a loosely bound electron was <m>2.4\text{ pm}</m>, the shift for tightly bound electron will be <m>0.11</m> fm, which would be not observable in the experiment.
+		</p>
+		<p>
+			The experimental verification of the Compton effect in 1923 provided strong evidence for the particle nature of light in addition to the photoelectric effect.  This helped convince most physicists of the time that the interaction of light with matter cannot be explained by purely appealing to the wave nature of light and that light consisted of stream of particles whose energy was proportional to the frequency of light. For his discovery Compton was awarded the 1927 Nobel prize in physics.
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Compton-scattering-of-X-ray-by-electrons"><title>Compton scattering of X-ray by electrons</title>
+
+		<statement>
+			<p>
+				The <m>\text{K}\alpha_1</m> X-ray of wavelength <m>56.0</m> pm from Silver is incident on a graphite target and the scattered ray at <m>60^{\circ}</m> is observed. (a) What will be the Compton shift? (b) What will be the wavelength of the X-ray detected at <m>60^{\circ}</m>?
+			</p>
+		</statement>
+		<hint><p>
+			(a) Use wavelength shift formula. 
+		</p></hint>
+		<answer><p>
+			(a) <m>1.215\:\textrm{pm}</m>, (b) <m>57.215\:\textrm{pm}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				(a) The Compton shift is independent of the wavelength of the incident ray. We can calculate by using the shift formula directly.
+				<me>
+					\Delta \lambda = \lambda_c(1- \cos\theta) = 2.43\:\textrm{pm} (1 - \cos 60^{\circ}) = 1.215\:\textrm{pm}.
+				</me>
+			</p>
+			<p>
+				(b) The wavelength observed is <m>\lambda_{\theta}</m>.
+				<me>
+					\lambda_{\theta} = \lambda_0 + \Delta \lambda = 56.0\:\textrm{pm} +  1.215\:\textrm{pm} = 57.215\:\textrm{pm}.
+				</me>
+			</p>
+		</solution>
+	</exercise>	
+
+ 
+	<exercise xml:id="ex-Compton-Shift-in-X-ray-on-Graphite-Target"><title>Compton Shift in X-ray on Graphite Target TODO</title>
+
+		<statement>
+			<p>
+				X-rays of wavelength <M>21 \text{ pm}</M> from tungsten are incident on a graphite target, which can be considered to contain free electrons. (a) Find the Compton shift at angles (i) <m>30^{\circ}</m>, (ii) <m>60^{\circ}</m>, (iii) <m>90^{\circ}</m>, and (iv) <m>120^{\circ}</m>.  (b) Find the wavelength of the X-rays at angles (i) <m>30^{\circ}</m>, (ii) <m>60^{\circ}</m>, (iii) <m>90^{\circ}</m>, and (iv) <m>120^{\circ}</m>.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Energy-and-Momentum-of-Scattered-Electron-in-Compoton-Experiment"><title>Energy and Momentum of Scattered Electron in Compoton Experiment TODO</title>
+
+		<statement>
+			<p>
+				X-rays of wavelength <m>71 \text{ pm}</m> from molybdenum are incident on a graphite target  and observations are made at <m>90^{\circ}</m> to the original direction.  It is found that the detected photon has less energy than the incident X-ray due to Compton scattering. What are the (a) energy and (b) momentum of the scattered electron assuming the scattered electron to be at rest and zero binding energy.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Wavelength-of-Scattered-Photon-from-a-Free-Electron-Target"><title>Wavelength of Scattered Photon from a Free-Electron Target  TODO</title>
+
+		<statement>
+			<p>
+				Light of various wavelengths are incident on a free electron target  and the scattered light is observed at <m>60^{\circ}</m> to the original direction.  (a) What will be the wavelengths of the scattered light if the incident light has the following wavelengths: (i) <m>2 \text{ cm}</m> (Microwave), (ii) <m>550 \text{ nm}</m> (visible), (iii) <m>10 \text{ nm}</m> (uv), (iv) <m>21 \text{ pm}</m> (X-ray), (v) <m>100 \text{ fm}</m> (Gamma ray).  (b) What is the percentage change in energy of the photon in each case?  (c) What is the percentage change in momentum of the photon in each case? 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Energy-and-Momentum-of-X-ray-Scattered-at-Right-Angle"><title>Energy and Momentum of X-ray Scattered at Right Angle TODO</title>
+
+		<statement>
+			<p>
+				A <m>100\text{ keV}</m> X-ray scatters off  a free electron target  and the scattered light is observed at <m>90^{\circ}</m> to the original direction.  (a) What will be the wavelength of the scattered light.  (b) What is the percentage change in energy of the photon?  (c) What is the percentage change in momentum of the photon?  
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Energy-and-Momentum-of-Gamma-Ray-Scattered-at-Right-Angle"><title>Energy and Momentum of Gamma RayScattered at Right Angle TODO</title>
+
+		<statement>
+			<p>
+				A <m>100 \text{ GeV}</m> gamma-ray scatters off  a free electron target  and the scattered light is observed at <m>90^{\circ}</m> to the original direction.  (a) What will be the wavelength of the scattered light.  (b) What is the percentage change in energy of the photon?  (c) What is the percentage change in momentum of the photon?  
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise> 
+ 
+ 
+
+
+
+
+
+</section>

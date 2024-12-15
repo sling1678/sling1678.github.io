@@ -1,0 +1,90 @@
+<section xml:id="sec-Band-Structure"><title>Band Structure</title>
+
+	<introduction>
+		<p>
+			We have seen in previous section that we can understand several aspects of electric and heat conduction of metals by modeling metals as free electrons, whether as a classical gas or as a quantum gas. This begs the question: What is the role of the core of the atoms in a metal? Since ignoring the complications from the electron-electron repulsion has led us to some stunning results already, we would continue to treat the conduction electrons as independent of each other and only attracted to the cores by the Coulomb force. Modeling the metal as a perfect crystal without impurities or defects will also simplify the problem. Then, the answer to the question of the role of the nucleus of a metal atom should be present in the solution of the Schr&#x00F6;dinger equation of an electron moving in a periodic potential <m>U(\vec r)</m>. 
+			<men xml:id="eq-electron-in-periodic-potential">
+				-\frac{\hbar^2}{2m}\left[ \frac{\partial^2 \psi}{\partial x^2}      + \frac{\partial^2 \psi}{\partial y^2} + \frac{\partial^2 \psi}{\partial z^2}      \right]  + U(\vec r) \psi = E \psi , 
+			</men>
+			with
+			<me>
+				U(\vec r +\vec R) = U(\vec r),
+			</me>
+			where <m>\vec R</m> is a vector connecting any two points in the lattice, reflecting the periodicity of the lattice. In 1928 Felix Block proved that the wave function of an electron in a periodic potential will have a particular form, called the <term>Block wave</term> form, in which a periodic wave <m>u(\vec r)</m> is modulated by a plane wave of wavelength <m>\lambda = 2\pi/|\vec k|</m>.
+			<me>
+				\psi(\vec r) = e^{i\vec k \cdot \vec r} u(\vec r),
+			</me>
+			where <m>u(\vec r)</m> is a periodic function with the period of the lattice,
+			<me>
+				u(\vec r +\vec R) = u(\vec r),
+			</me>
+			and <m>\vec k</m> has units of inverse length or wave number. Using vector <m>\vec k</m> we define the <term>crystal momentum</term>, <m>\vec p</m>, by
+			<me>
+				\vec p = \hbar \vec k.
+			</me>
+			Note the vector <m>\vec p</m> is not the momentum of crystal, but instead it is a momentum associated with the electron wave. When you insert the Block form in Eq. <xref ref="eq-electron-in-periodic-potential"/> you obtain a complicated equation for <m>u(\vec r)</m> which can be solved for simple examples of the periodic potential <m>U(\vec r)</m>. There are infinitely many solutions for each value of <m>\vec k</m>. We label these solutions by an integer <m>n</m>,  called the <term>band index</term>.  Thus, the wave function of an electron in a periodic lattice is characterized by a wave number vector  <m>\vec k</m> and an integer <m>n</m>, and the same goes for the energy <m>E_{\vec k, n}</m>. 
+			<me>
+				\textrm{Solutions:}\ \ \psi_{\vec k, n}(\vec r) \ \textrm{corresponding to energy} \ E_{\vec k, n}.
+			</me>
+			A plot of the energy <m>E_{\vec k, n}</m> for different <m>n</m> versus <m>\vec k</m> for copper are shown in <xref  ref="fig-band-structure-copper-burdick-PhysRev-129-138-1963-a"/>. In these diagrams the values of <m>k</m> are plotted towards various directions of <m>\vec k</m> in the <m>\vec k</m>-space. The diagram shows continuous bands of allowed energy values.  Although some bands have gaps at some values of <m>k</m>, but there is no gap here if  every direction of <m>\vec k</m> is taken into account: there is at least one state at all energies.  Therefore, as you fill electrons in these energy levels, the electrons have continuous energy up to the bands labeled <m>\Delta_1</m>, <m>Q_{-}</m>, and <m>\Sigma_1</m>, which are not fully filled by conduction electrons.  The unfilled band at the Fermi energy is a hallmark of metals - actually, we take this to be the electronic definition of a conductor.  If the band is partially filled, as is the case here, there are states available to the conduction electrons within an infinitesimally small energy range of the highest filled state, which makes conduction possible with the slightest push.
+		</p>
+
+		<figure xml:id="fig-band-structure-copper-burdick-PhysRev-129-138-1963-a">
+			<caption>
+				 Energy bands of copper calculated by Glenn Burdick published in Physical Reviews, vol 129, p 138-150 (1963).  The simplified diagram captures essential aspects of the complete band diagram. Here, 1 Rydberg = 13.605 eV.
+			</caption>
+			<image source="./images/modern-physics/band-structure-copper-burdick-PhysRev-129-138-1963-a.png" width="100%"/>
+		</figure>
+
+ 
+		<p>
+			The band structure of copper should be compared with that of a semiconductor such as silicon whose band structure is given in <xref ref="fig-band-structure-silicon-phillips-PhysRev-125-1931-1936-1962-a"/>.  The band at the Fermi level of silicon is completely  filled with a gap in energy before the next energy states are possible.  If there is enough thermal energy <m>k_BT</m> or photon energy <m>hf</m> from an incident photon is supplied to the electrons of the filled band, some of the electrons will move to the next level, which will cause two partially filled levels, one upper level and the other the lower level. The excitation is necessary to cause Si to conduct electricity. The lower band is called the <term>valence band</term> and the upper level the <term>conduction band</term>.  The energy gap between the two bands is called the <term>band gap</term>.
+		</p>
+
+		<figure xml:id="fig-band-structure-silicon-phillips-PhysRev-125-1931-1936-1962-a">
+			<caption>
+				 Energy bands of silicon calculated by J.C. Phillps published in Physical Reviews, vol 125, p 1931-36 (1962).  At T=0 K, the lower three bands are completely filled. There is a gap in energy for the next available state. The simplified diagram captures essential aspects of the complete band diagram. The band gap in Silicon is 1.1 eV which is much larger than the thermal energy 0.026 eV at room temperature, <m>T=300</m> K. For insulators, the band gap, <m>E_g>>k_BT</m>.
+			</caption>
+			<image source="./images/modern-physics/band-structure-silicon-phillips-PhysRev-125-1931-1936-1962-a.png" width="100%"/>
+		</figure>
+
+		<p>
+			Continuing in the spirit of band structure of materials, if we analyze the band structure of diamond, which is a good insulator, we find that the bands of carbon in the diamond structure are similar to the bands of silicon, which is not a surprise since both are Group IV elements in the periodic table and both have the same lattice structure. However, the band gap in diamond is 5.5 eV, which is much larger than the band gap of 1.1 eV in silicon. The energy gap in diamond is almost 200 times the thermal energy 0.026 eV at room temperature, <m>T = 300</m> K.  The probability that an electron from the valence band will be excited to the conduction band thermally can be calculated from the Fermi level and the energy of the final state.
+			<me>
+				f_{\textrm{FD}} = \frac{1}{e^{(E-E_F)/k_BT} + 1}. 
+			</me>
+			To perform this calculation, we need to know <m>E_F</m> in the case where the valence band is completely filled. Note that, in this case, the energy required to remove an electron will be equal to the the binding energy of the top of the valence band; on the other hand,  when you want to add an electron you cannot add it to the valence band, instead you will need to place the electron in the conduction band - to add an electron, we need to extract only the energy corresponding to the bottom of the conduction band. Therefore, we place the Fermi level in the middle of the gap.  Therefore, <m>E_F</m> will be taken to be
+			<me>
+				E_F = E_V + E_g/2,
+			</me>
+			where <m>E_V</m> is the energy of the top of the valence band and <m>E_g</m> the gap. With <m>E=E_C</m>, the energy of the bottom of the conduction band,  after simplification, we get the following probability
+			<me>
+				f_{\textrm{FD}}  = \frac{1}{e^{( E_g)/2k_BT} + 1}. 
+			</me>
+			Now, putting in the numbers we get the probability to be
+			<me>
+				f_{\textrm{FD}}  =  \frac{1}{e^{5.5\:\textrm{eV}/(2\times 0.026\:\textrm{eV})} + 1} = 1.2 \times 10^{-46}
+			</me>
+			This makes it extremely unlikely that any electron in diamond will be in the conduction band. That is why diamond is a good conductor.  <xref ref="fig-conductor-semi-insulator"/> illustrates the essential difference between a conductor, a semiconductor, and an insulator.
+		</p>
+
+ 
+		<figure xml:id="fig-conductor-semi-insulator">
+			<caption>
+				 A simplified picture of the band strucures of (a) a conductor, (b) a semiconductor, and (c) an insulator.
+			</caption>
+			<image source="./images/modern-physics/conductor-semi-insulator.png" width="100%"/>
+		</figure>
+
+ 
+	</introduction>
+
+
+
+<!-- 		 -->
+
+
+ 
+
+
+</section>

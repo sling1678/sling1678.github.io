@@ -1,0 +1,785 @@
+<section xml:id="Motion-in-Polar-Coordinates"><title> Motion in Polar Coordinates</title>
+
+	<introduction>
+		<p>
+
+			Some planar motions are more effectively analyzed in a different coordinate system than the Cartesian coordinates. Polar coordinates are more natural for circular and elliptical trajectories. In this section, we will introduce polar coordinates and define new unit vectors for analysing vectors.
+		</p>
+	</introduction>
+	<subsection><title> The Polar Coordinates</title><idx>Polar Coordinates</idx><idx><h>Coordinates</h><h>Polar</h></idx>
+	
+		<p>
+			Refer to Fig. <xref ref="polar-coordinates-def" /> that shows a description of point P in Cartesian and polar coordinates.  To specify the position of P, we could equally state as <m> (x, y) </m> or as <m> (r,\, \theta)</m>. The radial coordinate <m> r</m> is the direct distance from the origin and the angular coordinate <m> \theta </m> the angle from the positive <m> x </m> axis. If the direction OP is counterclockwise, <m> \theta </m> is positive, and if clockwise, then <m> \theta </m> is negative.
+		</p>
+
+		<figure xml:id="polar-coordinates-def">
+			<caption>Polar coordinates <m> r </m> and <m> \theta</m>. The right-angled triangle <m>\triangle OPX</m> shows the relation between the Cartesian coordinates <m>(x,y)</m> and polar coordinates <m> (r,\theta)</m> for the same point P. Clearly, <m> x = r \cos\, \theta </m>, <m> y = r \sin\, \theta </m>, <m> r = \sqrt{x^2 + y^2}</m>, and <m>\tan\, \theta = y/x</m>.
+			</caption>
+			<image source="./images/circular-motion/polar-coordinates.png" width="70%"/>
+		</figure>
+		<p>
+
+			You can see that the polar coordinates are simply the magnitude <m>r</m> and direction <m> \theta </m> of the position vector <m> \vec r</m>. The relations between the polar coordinates <m>(r,\theta)</m> and the Cartesian coordinates <m>(x,y)</m> for the same point are 
+		
+			<mdn>
+			 	<mrow> \amp  x = r\, \cos\,\theta,  </mrow>
+			 	<mrow> \amp  y = r\, \sin\,\theta,  </mrow>
+			 	<mrow> \amp  r = \sqrt{x^2+y^2},  </mrow>
+			 	<mrow> \amp  \theta = \tan^{-1}\left(\dfrac{y}{x} \right) </mrow>
+			</mdn>
+			Note that <m> \theta </m> obtained using the <m> \tan^{-1}</m> function will need to be adjusted for the quadrant in which <m> (x,y) </m> resides: add <m> \pi \text{ rad}</m> if <m> (x,y) </m> is in quadrant 2 or 3 and  <m> 2\pi \text{ rad}</m> if <m> (x,y) </m> is in quadrant 4. 
+		</p>
+		<p>
+
+			Polar coordinates <m>(r,\theta)</m> in the <m> xy </m> plane together with the Cartesian <m> z </m> are the  <term> Cylindrical coordinates</term>. The cylindrical coordinate system is useful for studying physics of systems that have a rotational symmetry about the <m>z</m> axis. We will study Cylindrical coordinates more later in the book.
+		</p>
+
+	<example xml:id="ex-Cartesian-to-Polar-Coordinates"><title> Cartesian to Polar Coordinates </title>
+		<statement>
+			<p>
+				Convert the following Cartesian coordinates <m>(x,y)</m> into polar coordinates.
+				<ol marker="(a)">
+					<li> <m>(0,1)</m>; </li>
+					<li> <m>(1,0)</m>; </li>
+					<li> <m>(-1,0)</m>;</li>
+					<li> <m>(0,-1)</m>;</li>
+					<li> <m>(3,4)</m>;</li>
+					<li> <m>(-3,4)</m>;</li>
+					<li> <m>(-3,-4)</m>;</li>
+					<li> <m>(3,-4)</m>.</li>
+				</ol>
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Use definition. </p> </hint> -->
+		<answer> <p>   See solution.</p> </answer>
+		<solution> 
+			<p>
+				Answers are
+				<ol marker="(a)">
+					<li> <m>r = 1</m>, <m>\theta = \pi/2</m> </li>
+					<li> <m>r = 1</m>, <m>\theta = 0</m> </li>
+					<li> <m>r = 1</m>, <m>\theta = -\pi</m> </li>
+					<li> <m>r = 1</m>, <m>\theta = -\dfrac{3}{2}\pi</m> </li>
+					<li> <m>r = 5</m>, <m>\theta = \tan^{-1}({4/3}) = 53^\circ</m> </li>
+					<li> <m>r = 5</m>, <m>\theta = \tan^{-1}({4/-3}) = -53^\circ</m> clockwise from negative <m>x</m> axis. </li>
+					<li> <m>r = 5</m>, <m>\theta = \tan^{-1}({-4/-3}) = 53^\circ</m> counterclockwise from negative <m>x</m> axis. </li>
+					<li> <m>r = 5</m>, <m>\theta = \tan^{-1}({-4/3}) = -53^\circ</m> clockwise from positive <m>x</m> axis. </li>
+				</ol>				
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="ex-Polar-to-Cartesian-Coordinates"><title> Polar to Cartesian Coordinates </title>
+		<statement>
+			<p>
+				Convert the following polar coordinates <m>(r,\theta)</m> into Cartesian coordinates.  The angle is given in radians counterclockwise from the positive <m>x</m>-axis as seen from the side of the positive <m>z</m>-axis.
+				<ol marker="(a)">
+					<li> <m>(1,0)</m>; </li>
+					<li> <m>(1,\pi/3)</m>; </li>
+					<li> <m>(1,2\pi/3)</m>;</li>
+					<li> <m>(1,3\pi/3)</m>;</li>
+					<li> <m>(1,4\pi/3)</m>;</li>
+					<li> <m>(1,5\pi/3)</m>;</li>
+					<li> <m>(1,6\pi/3)</m>;</li>
+					<li> <m>(2,29\pi/3)</m>.</li>
+				</ol>
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Use definition. </p> </hint> -->
+		<answer> <p>   See solution.</p> </answer>
+		<solution> 
+			<p>
+				Answers are
+				<ol marker="(a)">
+					<li> <m>x = 1.0</m>, <m>y=0</m> </li>
+					<li> <m>x = 0.5</m>, <m>y=0.866</m> </li>
+					<li> <m>x = -0.5</m>, <m>y=0.866</m> </li>
+					<li> <m>x = -1.0</m>, <m>y=0</m> </li>
+					<li> <m>x = -0.5</m>, <m>y=-0.866</m> </li>
+					<li> <m>x = 0.5</m>, <m>y=.866</m> </li>
+					<li> <m>x = 1.0</m>, <m>y=0</m> </li>
+					<li> <m>x = -0.736</m>, <m>y=0.677</m> </li>
+				</ol>				
+			</p>
+		</solution>
+	</example>
+
+
+	</subsection>
+
+	<subsection> <title>Unit Vectors <m>\hat u_r</m> and <m> \hat u_\theta</m></title>
+	<idx><h>Unit Vectors</h><h>Polar</h></idx>
+		<introduction>
+			<p>
+				The radial and tangential directions are important in circular motion as we saw in the separation of acceleration of an object moving in a circle into the centripetal and tangential accelerations. When studying circular motion, we used radially inward direction towards center to denote the centripetal part of acceleration. Here, in polar coordinates, we will use radially outward direction to define corresponding radial component.
+			</p>
+			<p> 
+				To simplify vector algebra for polar coodinates, we take advantage of unit vectors along the radial and tangential directions, as we did with analyzing vectors in Cartesian coordinates with <m>\hat i</m> and <m> \hat j</m>. They are also called unit vectors of the polar coordinate system.
+			</p>
+		</introduction>
+		<subsubsection><title> Definition of <m>\hat u_r</m> and <m> \hat u_\theta</m></title>
+
+			<p>
+				The polar coordinate unit vectors, denoted by <m>\hat u_r</m> and <m> \hat u_\theta</m>, respectively, are shown in <xref ref="fig-unit-vectors-rhat-thetahat"/>. We can write <m>\hat u_r</m> in terms of <m> \hat i</m> and <m> \hat j</m>.
+								
+			</p>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					<men>
+					\hat u_r = (\cos\theta)\; \hat i+ (\sin\theta)\;\hat j.
+					</men>
+					The unit vector <m> \hat u_\theta</m> is just <m> \hat u_r</m> rotated <m>90^{\circ}</m>, therefore, by substituting  <m> \theta </m> by <m> \theta + \pi/2 </m> in above gives
+					<men>
+						\hat u_\theta = -(\sin\theta)\; \hat i+ (\cos\theta)\; \hat j.
+					</men>				
+					
+				</p>
+				<p></p>
+				<figure xml:id="fig-unit-vectors-rhat-thetahat">
+					<caption></caption>
+					<image source="./images/circular-motion/unit-vectors-rhat-thetahat.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Unlike the <m> \hat i</m> and <m> \hat j</m>, the polar unit vectors <m> \hat u_r </m> and <m> \hat u_\theta </m> depend on angle <m> \theta </m> of the location of object P. You might say that, while we have just one pair, i.e., <m> (\hat i,\ \hat j)</m>, in the Cartesian system, we have <alert> infinitely many</alert> unit vector pairs <m>\left(  \hat u_r,\  \hat u_\theta\right) </m>  in the polar system, one pair for each value of <m>\theta</m>.
+			</p>
+			<p>
+				You may find in other books that the vectors <m> \hat u_r </m> and  <m> \hat u_{\theta}</m> are  denoted as simply <m> \hat r </m> and <m> \hat\theta</m>.  For pedagogical reasons I will continue with our notation, although at times it may appear too cumbersome to write <m>u</m> all the time and you may want to use simpler notation; just make sure you do not confude <m>\hat r</m> with distance <m>r</m> and similarly for <m>\hat\theta</m> and <m>\theta</m>.
+			</p>		
+		</subsubsection>
+		<subsubsection><title><m>\hat u_r</m> and <m> \hat u_\theta </m> as Basis Vectors</title>
+			<p>
+				Recall that <m>\hat i</m> and <m>\hat j</m> are sufficient to express any arbitrary vector <m>\vec v</m> in <m>xy</m>-plane.
+				<me>
+					\vec v = v_x\; \hat i + v_y\; \hat j.
+				</me>
+				We say that <m>\hat i</m> and <m>\hat j</m> form a <term>basis</term> for <m>xy</m>-plane. <m>\hat i</m> and <m>\hat j</m> are further characterized by their length being <m>1</m> and their dot product being zero, i.e., they are perpendicular. Perpendicular vectors are also called <term>orthogonal</term> to each other. Vectors whose length equal 1 are called normalized. Thus, <m>\hat i</m> and <m>\hat j</m> are a set of orthonormal vectors in <m>xy</m>-plane.
+			</p>
+			<p>
+				Similar to <m>\hat i</m> and <m>\hat j</m>, the radial and tangential vectors <m>\hat u_r</m> and <m> \hat u_\theta </m> are orthogonal and hence, they also form a basis for <m>xy</m>-plane. Since, their lengths are also equal to 1, they are a pair of orthonormal vectors.
+				<me>
+					\hat u_r \cdot \hat u_\theta = 0,\ \ |\hat u_r|=1,\ \  |\hat u_\theta|=1.
+				</me>
+				An arbitrary vector <m>\vec v</m> expressed in terms of unit vectors of the polar coordinates is written as
+				<me>
+					\vec v = v_r\; \hat u_r + v_\theta\; \hat u_\theta.
+				</me>
+				Here <m>v_r</m> is <term>radial</term> component of <m>\vec v</m> and <m>v_\theta</m> is <term>tangential</term> component.
+			</p>
+			<p>
+				Just as taking the dot product of vector <m>\vec v</m> with <m>\hat i</m> or <m>\hat j</m> gives us the corresponding Cartesian component,
+				<me>
+					v_x = \vec v \cdot \hat i,\ \ v_y = \vec v \cdot \hat j,				
+				</me>
+				we can get the radial and tangential components similarly by an appropriate dot product.
+				<me>
+					v_r = \vec v \cdot \hat u_r,\ \ v_\theta = \vec v \cdot \hat u_\theta.				
+				</me>				 
+			</p>
+		</subsubsection>
+
+		<subsubsection><title> Relation Among Components in <m>(\hat i, \hat j)</m> and <m>(\hat u_r, \hat u_\theta)</m> Bases</title>
+			<p> 
+				We start with first noting that 
+				we can also write <m> \hat i</m> and <m> \hat j</m> in terms of <m> \hat u_r </m> and <m> \hat u_\theta</m>, just by reversing the definition of <m> \hat u_r </m> and <m> \hat u_\theta</m>.
+				<mdn>
+					<mrow xml:id="eq-unit-cartesian-expanded-in-polar-hati"> \amp \hat i= (\cos\theta)\; \hat u_r -(\sin\theta)\; \hat u_\theta,</mrow>
+					<mrow xml:id="eq-unit-cartesian-expanded-in-polar-hatj"> \amp \hat j= (\sin\theta)\; \hat u_r + (\cos\theta)\; \hat u_\theta.</mrow>
+				</mdn>
+			</p>
+			<p>
+				By using Eqs. <xref ref="eq-unit-cartesian-expanded-in-polar-hati"/> and <xref ref="eq-unit-cartesian-expanded-in-polar-hatj"/> we can replace <m> \hat i</m>  and <m>\hat j</m> in terms of  <m> \hat u_r </m> and  <m> \hat u_{\theta}</m> in any arbitrary vector written in Cartesian components.
+				<mdn>
+					<mrow> \vec A\amp = A_x \hat i+ A_y \hat j</mrow>
+					<mrow> \amp = A_x \left( \cos\theta\ \hat u_r - \sin\theta\ \hat u_{\theta} \right) + A_y \left(\sin\theta\ \hat u_r + \cos\theta\ \hat u_{\theta} \right)</mrow>
+					<mrow> \amp = \left(  A_x \cos\theta\ +  A_y \sin\theta\ \right) \hat u_r + \left( -A_x \sin\theta\ + A_y\cos\theta\ \right)\hat u_{\theta}</mrow>
+					<mrow> \amp = A_r\;\hat u_r + A_\theta\;\hat u_{\theta}</mrow>
+				</mdn>
+				Therefore,  
+				<mdn>
+					<mrow xml:id="eq-Ar-from-Ax-and-Ay"> \amp A_r = A_x \cos\theta\ +  A_y \sin\theta,</mrow>
+					<mrow xml:id="eq-Atheta-from-Ax-and-Ay"> \amp A_{\theta} = -A_x \sin\theta\ + A_y\cos\theta.</mrow>
+				</mdn>
+			</p>
+		</subsubsection>
+
+	<example xml:id="ex-Unit-Vector-hat-u-r"><title> Unit Vector <m>\hat u_r</m> </title>
+		<statement>
+			<p>
+				(a) Draw the unit vector <m>\hat u_r</m>  for the following rays. The rays are specified by the angles they make with the positive <m>x</m>-axis. (i) <m>\theta = 0</m>, (ii) <m>\theta = \pi/3</m>, (ii) <m>\theta = 2\pi/3</m>, (iv) <m>\theta = 3\pi/3</m>, (v) <m>\theta = 4\pi/3</m>, (vi) <m>\theta = 5\pi/3</m> , (vii) <m>\theta = 6\pi/3</m>. (b) Give the expression of these unit vectors in terms of the unit vectors <m>\{\hat i, \hat j\}</m> along the Cartesian axes.
+			</p>
+
+		</statement>
+		<!-- <hint> <p> Use <m>\hat u_r = \cos\theta\ \hat i + \sin\theta\ \hat j</m> for different value of <m>\theta</m>.   </p> </hint> -->
+		<answer> <p> (b) <m>\hat u_r = \cos\theta\ \hat i + \sin\theta\ \hat j</m> for different value of <m>\theta</m>.  </p> </answer>
+		<solution> 
+			<p>
+				(a) The unit vectors in different directions fall on the unit circle as shown in <xref ref="fig-ex-circular-motion-unit-radial-vectors"/>.
+			</p>
+			<figure xml:id="fig-ex-circular-motion-unit-radial-vectors">
+				<caption>
+					Figure for <xref ref="ex-Unit-Vector-hat-u-r"/>(a).
+				</caption>
+
+				<image source="./images/circular-motion/ex-circular-motion-unit-radial-vectors.png" width="60%"/>
+			</figure>
+ 			<p>
+ 				(b) 
+				The <m>x</m>- and <m>y</m>-components of unit radial vector in the direction of counterclockwise angle <m>\theta</m> from the positive <m>x</m> axis is given by
+				<me>
+					 \hat u_r = \cos\theta\ \hat i + \sin\theta\ \hat j
+				</me>
+				We would substitute the value for <m>theta</m> for each of the rays to find the representation of the unit radial vector in that direction.  For instance, the case (ii) when <m>\theta = \pi/3</m> is
+				<md>
+					 <mrow> \hat u_r \amp = \cos(\pi/3)\ \hat i + \sin(\pi/3)\ \hat j</mrow>
+					 <mrow> \amp = \frac{1}{2}\ \hat i + \frac{\sqrt{3}}{2}\ \hat j.</mrow>
+				</md>
+
+			</p>
+		</solution>
+	</example>
+
+
+		<exercise xml:id="ex-Practice-with-a-Friend-Cartesian_Components-From-Polar"><title>Express Cartesian Components in terms of Polar Components</title>
+			<statement>
+				<p>
+					In Eqs. <xref ref="eq-Ar-from-Ax-and-Ay"/> and <xref ref="eq-Atheta-from-Ax-and-Ay"/>, we have <m>A_r</m> and <m>A_\theta</m> in terms of <m>A_x</m> and <m>A_y</m>. Now, do the other way - find expressions of <m>A_x</m> and <m>A_y</m> in terms of <m>A_r</m> and <m>A_\theta</m>.
+				</p>
+			</statement>
+			<!-- <solution>
+				<p>
+					No solution provided.
+				</p>
+			</solution> -->
+		</exercise>
+
+	</subsection>
+
+	<subsection> <title>(Calculus) Position, Velocity, Acceleration </title>
+
+
+		<subsubsection> <title> Position</title>
+		<idx><h>Position</h><h>Polar Coordinates</h></idx>
+		<idx><h>Polar Coordinates</h><h>Position</h></idx>
+			<p>
+				The position of a particle is vector <m>\vec r</m> with magnitude <m> r </m>, which is the radial coordnate, and the direction is given by <m> \theta </m>, which is the angular coordinate of the polar coordinate system. We could also write this very simply if we use the unit vector <m> \hat u_r </m>.
+				<men xml:id="eq-position-in-polar-coordinates-uhatr">
+					\vec r = r\, \hat u_r.
+				</men>
+			</p>
+		</subsubsection>
+
+		<subsubsection> <title> Displacement and Distance on Trajectory</title>
+			<p>
+				An infinitesimal displacement on the trajectory of motion can be obtained by comparing position vectors of nearby points on the trajectory. <xref ref="fig-displacement_in_polar_coords"/> shows  infinitesimal displacement vector <m>d\vec r</m> whose direction will be tangential to the trajectory, i.e., the direction of velocity at that instant. 
+			</p>
+			<sidebyside widths = "50% 5% 45%">
+				<p>
+					We can work out the magnitude of <m>d\vec r</m> by imagining a circle centered at the origin with radius <m>(r = |\vec r|)</m> and we seek arc length on that circle.
+					<men>
+						|d\vec r| = r d\theta.
+					</men>
+				</p>
+				<p></p>
+				<figure xml:id="fig-displacement_in_polar_coords">
+					<caption>
+					</caption>
+					<image source="./images/circular-motion/displacement_in_polar_coords.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				To find the distance travel on the trajectory between instant <m>t_1</m> and instant <m>t_2</m>, we just have to integrate the length of infinitesimal vector. Informally, we can write this as
+				<me>
+					\text{Distance} = \int r d\theta.
+				</me>
+				To convert this to an integral over time we will do the following.
+
+				<me>
+					\text{Distance} = \int_{t_1}^{t_2} r \frac{d\theta}{dt}\; dt.
+				</me>
+				The displacement between <m>t_1</m> and <m>t_2</m> will be a formal integral of the infinitesimal displacment vector.
+				<me>
+					\text{Displacment} = \int   d\vec r.
+				</me>
+			</p>
+
+ 
+		</subsubsection>
+
+		<subsubsection> <title> Velocity. </title> 	
+		<idx><h>Velocity</h><h>Polar Coordinates</h></idx>
+		<idx><h>Polar Coordinates</h><h>Velocity</h></idx>
+
+			<p>
+				Velocity is the derivative of position vector.
+				<me>
+					\vec v = \dfrac{d\vec r}{dt}.
+				</me>
+				If we use Eq. <xref ref="eq-position-in-polar-coordinates-uhatr"/>, we would get
+				<me>
+					\vec v = \dfrac{d }{dt}\left( r\, \hat u_r \right).
+				</me>
+				Expanding the right side, using the product rule,
+				<men xml:id="eq-velocity-in-polar-coordinates-uhatr" >
+					\vec v = \frac{d r}{dt}\,  \hat u_r  + r\,  \frac{d \hat u_r}{dt}.
+				</men>
+				We are now stuck since
+				<me>
+					\frac{d \hat u_r}{dt} \ne 0,
+				</me> 				
+				since <m> \hat u_r </m> depends on the direction of the position, which is a time-dependent. However, the Cartesian unit vecotrs <m> \hat i</m> and <m> \hat j</m> are independent of position, i.e., 
+				<men>
+					\frac{d \hat i}{dt} = 0,\ \ \ \frac{d \hat j}{dt} = 0.
+				</men>
+				That means, to evaluate <m> \dfrac{d \hat u_r}{dt}</m>, we should work with the expression of <m> \hat u_r</m> in terms of <m> \hat i</m> and <m> \hat j</m>.
+				<md>
+					<mrow> \dfrac{d \hat u_r}{dt} \amp = \dfrac{d  }{dt} \left(\cos\theta\, \hat i+ \sin\theta\, \hat j\right),</mrow>
+					<mrow>  \amp = \left(-\sin\theta\, \hat i+ \cos\theta\, \hat j\right) \dfrac{d\theta}{dt}.</mrow>
+					<mrow>  \amp =   \left(\frac{d\theta}{dt}\right)\, \hat u_\theta.</mrow>
+				</md>
+				The derivative <m> d\theta/dt</m> gives us the rate at which the angular variable changes, and therefore, it is called the <term>angular velocity</term>. It is denoted by the small <q> omega </q>, <m> \omega</m>.
+				<men>
+					\omega = \frac{d\theta}{dt}.
+				</men>
+				Therefore, the velocity in Eq. <xref ref="eq-velocity-in-polar-coordinates-uhatr"/> will be
+				<men xml:id="eq-velocity-in-polar-coordinates-uhatr-2">
+					\vec v = \frac{d r}{dt}\,  \hat u_r  + \omega\, r\,  \hat u_\theta.
+				</men>
+				It is also helpful to introduce the notation for the rate of change of the radial coordinate <m> r </m>:
+				<men>
+					v_r = \frac{dr}{dt}.
+				</men>
+				This is called <term> radial velocity </term>. The 
+				product <m> \omega\, r </m> is the <term> tangential velocity</term>, denoted by <m> v_\theta</m>.
+				<men>
+					v_\theta =  \omega\, r.
+				</men>
+
+				Finally, we get a simple expression for the velocity
+				<men xml:id="eq-velocity-in-polar-coordinates-uhatr-3">
+					\vec v = v_r\,  \hat u_r  + v_\theta\,  \hat u_\theta.
+				</men>
+			</p>
+			<p><alert>Case of Circular Motion:</alert></p>
+			<sidebyside widths="5% 95%">
+				<p>
+					<m> </m>
+				</p>
+
+				<p>	 When motion happend in a circle of radius R. Then, the radial variable is fixed in time. This gives
+					<me>
+						v_r = \dfrac{dr}{dt} = 0.
+					</me>
+					Therefore, we will get the velocity as
+					<me>
+						\vec v =  \omega\, R\,  \hat u_\theta.
+					</me>
+					That is velocity is tangential, and directed in the <m> \hat u_\theta</m> direction for the counterclockwise motion, and in the <m>-\hat u_\theta </m> direction for a clockwise motion, with magnitude, <m> v=|\omega\, R|</m>, i.e., the speed <m> v</m>.
+				</p>
+			</sidebyside>		
+		</subsubsection>
+		<subsubsection><title>(Calculus) Acceleration </title>
+		<idx><h>Acceleration</h><h>Polar Coordinates</h></idx>
+		<idx><h>Polar Coordinates</h><h>Acceleration</h></idx>
+			<p>
+				Acceleration is derivative of velocity. Therefore,
+				<men>
+					\vec a = \dfrac{d}{dt}\left( v_r\,  \hat u_r  + \omega\, r\,  \hat u_\theta\right).
+				</men>
+				Carrying out the calculations as we have done for velocity, i.e., expressing <m> \hat u_r</m> and <m> \hat u_\theta</m> in terms of <m> \hat i</m> and <m> \hat j</m>, and expanding the derivatives, and simplifying we get
+				<md>
+					<mrow> \vec a\amp = \left[ \frac{dv_r}{dt} - r\, \omega^2 \right]\hat u_r +   \left[2  v_r\, \omega + r\left( \frac{d \omega}{dt}\right) \right]\hat u_{\theta}.</mrow>
+				</md>
+			</p>
+			<p>
+				This gives the radial and angular components of the acceleration vector <m> \vec a </m> as
+				<mdn>
+					<mrow> \amp a_r = \frac{dv_r}{dt} - r\, \omega^2. </mrow>
+					<mrow> \amp a_{\theta} = 2 v_r\, \omega + r\left( \frac{d \omega}{dt}\right) .</mrow>
+				</mdn>
+
+				In the case of circular motions,  <m>a_r</m> and <m>a_{\theta}</m>  are also called (negative of) centripetal and tangential accelerations respectively.
+
+			</p>
+			<p><alert>Case of Circular Motion:</alert></p>
+			<sidebyside widths="5% 95%">
+				<p>
+					<m> </m>
+				</p>
+
+				<p>
+
+					For a circular motion, <m> r </m> is fixed making its derivative equal to zero.
+					<me>
+						r = R,\ \ \ v_r = \dfrac{dr}{dt} = 0.
+					</me>
+					Therefore,
+					<md>
+						<mrow> \amp a_r = - R\, \omega^2. </mrow>
+						<mrow> \amp a_{\theta} =  R\left( \frac{d \omega}{dt}\right).</mrow>
+					</md>
+					Notice the negative sign in the radial part <m> a_r </m>; this indicates that the radial accceleration is pointed towards the center, which is why <m> R\omega^2</m> is the centripetal acceleration, <m> a_c </m>. If we substitute <m>\omega = v/R</m> where <m> v </m> is the speed, then
+					<me>
+						a_c = -a_r =  R\, \omega^2  = \dfrac{v^2}{R}.
+					</me>
+					The tangential component <m> a_{\theta} </m> is the tangential acceleration, which, for a coounterclockwise motion, is positive for increasing speed  and negative for decreasing speed. It can be also written using the rate of change of speed <m> v </m>
+					<me>
+						a_\theta   =  R\left( \frac{d \omega}{dt}\right) = \left( \frac{d R\omega}{dt}\right)  = \dfrac{dv}{dt}.
+					</me>
+				</p>
+			</sidebyside>
+ 		</subsubsection>
+
+	<example xml:id="ex-Displacement-Vector-in-Cartesian-and-Polar-Coordinates"><title> Displacement Vector in Cartesian and Polar Coordinates </title>
+		<statement>
+			<p>
+				A displacement vector is given in the <m>xy</m>-plane by its magnitude <m>2\ \text{m}</m> and direction of <m>30^{\circ}</m> with respect to the <m>x</m>-axis. Write the displacement vector in terms of the unit vectors (i) <m>\{\hat i, \hat j\}</m>, (ii) <m>\{ \hat u_r, \hat u_{\theta} \}</m> for <m>\theta =30^{\circ}</m>, (iii) <m>\{ \hat u_r, \hat u_{\theta} \}</m> for <m>\theta =45^{\circ}</m>, and  (iv) <m>\{ \hat u_r, \hat u_{\theta} \}</m> for <m>\theta =90^{\circ}</m>.
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Use the definition of <m>\hat u_r</m> and <m>\hat u_\theta</m>. </p> </hint> -->
+		<answer> <p> See solution for answers. </p> </answer>
+		<solution> 
+			<p>
+				Let us denote the three pairs of radial/angular unit vectors in parts (ii), (iii), and (iv) as <m>(\hat u_r, \hat u_{\theta})</m>, <m>(\hat u_r^{\prime }, \hat u_{\theta}^{\prime })</m>, <m>(\hat u_r^{\prime \prime}, \hat u_{\theta}^{\prime \prime})</m> respectively. Their expressions in terms of <m>\hat i</m> and <m>\hat j</m> are
+				<mdn>
+					<mrow> \hat u_r \amp = \frac{\sqrt{3}}{2} \hat i + \frac{1}{2} \hat j</mrow>
+					<mrow> \hat u_{\theta} \amp = - \frac{1}{2} \hat i +  \frac{\sqrt{3}}{2} \hat j</mrow>
+					<mrow> \hat u_r^{\prime } \amp = \frac{1}{\sqrt{2}}  \hat i + \frac{1}{\sqrt{2}}  \hat j</mrow>
+					<mrow> \hat u_{\theta}^{\prime } \amp = - \frac{1}{\sqrt{2}}  \hat i +  \frac{1}{\sqrt{2}}  \hat j</mrow>
+					<mrow xml:id="eq-ch3-ex-38-1a"> \hat u_r^{\prime \prime} \amp=   \hat j </mrow>
+					<mrow xml:id="eq-ch3-ex-38-1b"> \hat u_{\theta} ^{\prime \prime} \amp= -   \hat i </mrow>
+				</mdn>
+				We can also write <m>\hat i</m> and <m>\hat j</m> in terms of these  radial/angular unit vector pairs. In general the relation of Cartesian unit vector with the polar unit vectors for a ray in the direction of <m>\theta</m> will be
+				<md>
+					<mrow> \hat i \amp = \cos\theta\ \hat u_r - \sin\theta\  \hat u_{\theta}</mrow>
+					<mrow> \hat j  \amp = \sin\theta\ \hat u_r + \cos\theta\  \hat u_{\theta}
+					</mrow>
+				</md>
+ 			</p>
+ 			<sidebyside widths="60% 5% 35%">
+ 				<p>
+ 					Now, we are ready to tackle the problem at hand. The given displacement vector is a radial vector in the direction of <m>\theta = 30^{\circ}</m>.  Let us denote this vector by <m>\vec D</m>.
+				 	<mdn>
+						<mrow> \vec D \amp  = 2\ \text{m}\  \left[ \cos (30^{\circ}) \hat i +    \sin (30^{\circ}) \hat j \right]</mrow>
+						<mrow xml:id="eq-ch3-ex-38-1"> \amp  = \sqrt{3}\ \text{m}\ \hat i +1\  \text{m}\  \hat j .</mrow>
+					</mdn>
+ 				</p>
+ 				<p></p>
+ 				<image source="./images/circular-motion/ex-38.png"/>
+ 			</sidebyside>
+ 
+ 			<p>
+				This can be written immediately in terms of <m>\hat u_r</m>.
+				<me>
+					\vec D = 2\ \text{m}\  \hat u_r.
+				</me>
+				It is also easily written in terms of <m>\hat u_r^{\prime \prime}</m> and <m>\hat u_{\theta} ^{\prime \prime}</m> using Eqs. <xref ref="eq-ch3-ex-38-1a"/> and <xref ref="eq-ch3-ex-38-1b"/>  in Eq. <xref ref="eq-ch3-ex-38-1"/>.
+				<me>
+					\vec D =  \left[ \sqrt{3}\ \text{m}\  (-\hat u_{\theta} ^{\prime \prime}) +    1\  \text{m}\  (\hat u_r^{\prime \prime}) \right]. 
+				</me>
+				To write this displacement in terms of <m>\hat u_r^{\prime }</m> and <m>\hat u_{\theta}^{\prime }</m> we replace <m>\hat i</m> and <m>\hat j</m> by
+				<md>
+					<mrow> \amp \hat i  = \frac{1}{\sqrt{2}}\ \hat u_r^{\prime } - \frac{1}{\sqrt{2}}\  \hat u_{\theta}^{\prime } </mrow>
+					<mrow> \amp \hat j  = \frac{1}{\sqrt{2}}\ \hat u_r^{\prime } + \frac{1}{\sqrt{2}}\  \hat u_{\theta}^{\prime }</mrow>
+				</md>
+				<md>
+					<mrow> \vec D \amp  = \left[\sqrt{3}\ \text{m}\  \hat i +    1\  \text{m}\  \hat j \right]</mrow>
+				    <mrow> \amp  =  \sqrt{3} \ \text{m}\  \left(\frac{1}{\sqrt{2}}\ \hat u_r^{\prime } - \frac{1}{\sqrt{2}}\  \hat u_{\theta}^{\prime } \right) + 1\ \text{m}\ 
+				           \left( \frac{1}{\sqrt{2}}\ \hat u_r^{\prime } + \frac{1}{\sqrt{2}}\  \hat u_{\theta}^{\prime } \right)</mrow>
+				    <mrow> \amp  = \frac{\sqrt{3} + 1}{\sqrt{2}} \ \text{m}\  \hat u_r^{\prime } + \frac{\sqrt{3} - 1}{\sqrt{2}} \ \text{m}\   \hat u_{\theta}^{\prime } 
+				    </mrow>
+				</md>
+			 </p>
+		</solution>
+	</example>
+
+
+	</subsection>
+
+
+	<exercises>
+
+ 
+
+
+
+
+
+
+
+
+	<exercise xml:id="ex-Motion-of-a-Person-on-a-Rotating-Platform-Using-Polar-Coordinates"><title>Motion of a Person on a Rotating Platform Using Polar Coordinates </title>
+		<statement>
+
+			<sidebyside widths="60% 5% 35%">
+
+				<p>
+					Suppose you are standing on a rotating platform of radius <m>5</m> meters that is rotating at a constant angular velocity of magnitude <m>0.5</m> radian per second.  
+				</p>
+				<p>
+				</p>
+				<figure xml:id="fig-rotating-platform-1">
+					<caption></caption>
+					<image source="./images/circular-motion/rotating-platform-1.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				(a) What will be your speed when you are standing at the edge?  
+			</p>
+			<p>
+				(b) What will be your velocity at an instant you are in the direction of <m>30^\circ</m> with respect to the positive <m>x</m> axis?
+			</p>
+			<p>
+				(c) What will be your acceleration at the instant in (b)? 
+			</p>
+			<p>
+				(d) What will be your speed and magnitude of acceleration when you are standing 2 meters from the center.
+			</p>
+
+		</statement>
+		<hint> <p> Use definitions.  </p> </hint>
+		<answer> <p> (a) <m>2.5\ \text{m/s} </m>, (b) <m>2.5\ \text{m/s}\ \hat u_\theta</m>, <m>\hat u_\theta-\dfrac{1}{2}\, \hat i+ \dfrac{\sqrt{3}}{2}\, \hat j</m>, (c) <m>-1.25\ \text{m/s}\ \hat u_r</m>, <m> \hat u_r = \dfrac{\sqrt{3}}{2}\, \hat i+ \dfrac{1}{2}\, \hat j</m>, (d) <m>1.0\text{ m/s}</m>, <m>0.5\ \text{m/s}^2</m>. </p> </answer>
+		<solution><title>(a) and (b)</title> 
+			<p>
+				Note that parts (a) and (b) are about the circular motion when the radius of the circle is <m>R=5</m> m and part (c) is for a circular motion in a different radius, viz., <m>R=2\text{ m}</m>. Using the formulas for uniform circular motions, we immediately find the following answer.
+			</p>
+			<p>
+				With <m>\omega</m> for angular rotation speed and <m>v</m> for speed, we have
+				<me>
+					v = R\omega = (5\ \text{m}) \times (0.5\ \text{rad/s}) = 2.5\ \text{m/s}.
+				</me>
+
+			</p>
+			<p>
+				(a) Speed, <m></m>.  Note that <m>\text{m}\ \times\ \text{rad} = \text{m}</m>, since the radian is dimensionless as it is the ratio of arc length to radius, both of dimension length.
+			</p>
+
+			<p>
+				(b) For velocity, we also need to specify direction. The direction of velocity is tangent to the circle in the direction of the unit vector <m>\hat u_\theta</m>. Therefore, velocity vecor at the instant is
+				<me>
+					\vec v = 2.5\ \text{m/s}\ \hat u_\theta,
+				</me> 
+				where <m>\hat u_\theta</m> has the following analytic representation in <m>\hat i</m> and <m>\hat j</m>.
+				<me>
+					\hat u_\theta = -\sin\,\theta\, \hat i+ \cos\,\theta\, \hat j= -\dfrac{1}{2}\, \hat i+ \dfrac{\sqrt{3}}{2}\, \hat j.
+				</me>
+			</p>
+		</solution>
+		<solution><title>c</title>
+			<p>
+				Since the motion is uniform circular motion, the direction of acceleration is towards the center, i.e., in the direction of the negative of the unit vector <m>\hat u_r</m>. The magnitude is <m>a_c</m>,
+				<me>
+					a = \dfrac{v^2}{R} = \dfrac{ (2.5\ \text{m/s})^2 }{5} = 1.25\text{ m/s}^2.
+				</me>
+				Therefore, we can write the acceleration vector to be
+				<me>
+					\vec a = -1.25\ \text{m/s}\ \hat u_r,
+				</me> 
+				where <m>\hat u_r</m> has the following analytic representation in <m>\hat i</m> and <m>\hat j</m>.
+				<me>
+					\hat u_r = \cos\,\theta\, \hat i+ \cos\,\theta\, \hat j= \dfrac{\sqrt{3}}{2}\, \hat i+ \dfrac{1}{2}\, \hat j.
+				</me>
+			</p>
+		</solution>
+		<solution><title>d</title>		
+			<p>
+				Similar calculations as those of parts (a) and (b) give the following answer. Speed  = <m>1.0</m> m/s and magnitude of acceleration <m>0.5\ \text{m/s}^2</m>.  The direction of velocity is pointed in the direction of the unit vector <m>\hat u_\theta</m> and the direction of the acceleration is pointed towards the center, i.e., in the direction of vector <m>-\hat u_r</m>.
+			</p>
+
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Particle-in-Uniform-Circular-Motion-Using-Polar-Coordinates"><title> Particle in Uniform Circular Motion Using Polar Coordinates </title>
+		<statement>
+			<p>
+				A particle moves in a circle of radius <m>R</m> with a uniform circular motion of constant angular velocity <m>\omega = \omega_0</m>.  The particle moves in the <m>xy</m>-plane in a counter-clockwise manner when observed from the positive <m>z</m>-axis with the center of the circle of motion at the origin.
+			</p>
+			<p>
+				At <m>t=0</m> the particle  is at the point whose Cartesian coordinates are <m>(R,0)</m> with respect to origin at the center of the circle of motion.  Where will the particle be at an arbitrary time <m>T</m>?
+			</p>
+
+		</statement>
+		<hint> <p>  Constant <m>\omega = \omega_0</m> means <m>\Delta\theta = \omega_0\Delta t</m>. </p> </hint>
+		<answer> <p> <m>\theta(T) = 2\pi \times [\text{fractional part of }(\omega_0 T/2\pi)].</m>  </p> </answer>
+		<solution> 
+			<p>
+				Since the particle is moving in a circle, it is advantageous to work in polar coordinates.  We have the radial coordinate given to be <m>r=R</m>, which is independent of time.  Therefore, we need to find the angular coordinate at time <m>T</m>. Since <m>\omega</m> is fixed in time,  angle at <m>t=T</m> will be
+				<me>
+					\theta(T) = \omega_0 T.
+				</me> 
+				Suppose <m>\omega_0</m> was positive, i.e., a counterclockwise motion. Then, <m>\omega_0 T</m> can be more than <m>2\pi</m>. So, we would need to subtract away angles for full rotations. That is, divide by <m>2\pi</m> and then collect only the fractional part. Let's call it <m>f</m>.
+				<me>
+					 f = \text{fractional part of } (\theta(T)/2\pi).
+				</me>
+				Now, we multiply it by <m>2\pi</m> to get back the angle in radian.
+				<me>
+					\theta = f\times 2\pi\text{ rad}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Particle-in-a-Non-uniform-Circular-Motion-Using-Polar-Coordinates"><title> (Calculus) Particle in a Non-uniform Circular Motion Using Polar Coordinates </title>
+		<statement>
+			<p>
+				A particle moves in a circle of radius <m>a</m> in <m>xy</m>-plane with a varying angular velocity <m>\omega = b t</m> counterclockwise, where <m>b</m> is constant.  At <m>t=0</m> the particle has Cartesian coordinates are <m>(a,0)</m> with respect to the origin at the center of the circle of motion which is at the origin.  Where will the particle be at an arbitrary time <m>T</m>?
+			</p>
+
+		</statement>
+		<hint> <p>  Integrate <m> d\theta = \omega\, dt</m>. </p> </hint>
+		<answer> <p>  <m>r=a,\ \theta=  \frac{1}{2}b T^2</m>.</p> </answer>
+		<solution> 
+			<p>
+				Since the particle is moving in a circle, it is advantageous to work in polar coordinates.  We have the radial coordinate given to be <m>r=a</m>, which is independent of time.  Therefore, we need to find the angular coordinate at time <m>T</m>. Now, making use of the definition of angular velocity in terms of the derivative of the angular coordinate we find that the angular coordinate changes according to the following equation. 
+				<me>
+					\frac{d\theta}{dt} = bt.
+				</me>
+				This equation can be solved for general time <m>t</m>.
+				<me>
+					\theta(t) = \theta(0) + \frac{1}{2}b t^2.
+				</me>
+				The angle at <m>t=0</m> is zero since the particle was located on the <m>x</m>-axis.  Therefore, the angular coordinate at the desired time is
+				<me>
+					\theta(T) =  \frac{1}{2}b T^2.
+				</me> 
+				We have found that the polar coordinates at the desired time is <m>(r, \theta) = (a,1/2\ bT^2)</m>.  We can convert these into Cartesian coordinates by standard procedure with the result 
+				<md>
+					<mrow> \amp x = a \cos \left(\frac{1}{2}bT^2\right).</mrow>
+					<mrow> \amp y = a \sin \left(\frac{1}{2}bT^2\right).</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Motion-on-a-Straight-Line-Described-in-Polar-Coordinates"><title>Motion on a Straight Line Described in Polar Coordinates</title>
+
+		<statement>
+			<p>
+				Motion on a straighline is easiest to describe by placing the motion on a Cartesian axis. But, sometimes, we need to work in polar coordinates even for this motion. 
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					In this exercise you will practice getting polar representation of position, velocity and acceleration (vectors) for a particle moving parallel to <m>x</m> axis at <m>y=c</m> in the <m>xy</m>-plane, where <m>c</m> is some constant. Let <m>x=0</m> at <m>t=0</m>.
+				</p>
+				<p></p>
+				<figure>
+					<caption>
+					</caption>
+					<image source="./images/circular-motion/ex-motion-on-a-straightline-by-polar-coords.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			
+		</statement>
+		<hint><p>Better to work using Cartesian unit vectors. </p></hint>
+		<answer><p>See the solution.</p></answer>
+		<solution>
+			<p>
+				Let us write position vector in Cartesian component first.
+				<me>
+					\vec r = x\; \hat i + c\; \vec j,\ \ x = r\;\cos\theta.
+				</me>
+				In Polar coordinates it will be
+				<me>
+					\vec r = r\; \hat u_r;\ \ r(t=0) = c,\ \ \theta(t=0)=\frac{\pi}{2}.
+				</me>
+			</p>
+			<p>
+				Now, the velocity will be
+				<me>
+					\vec v = \frac{d\vec r}{dt} = \frac{dx}{dt}\;\hat i.
+				</me> 
+				But <m>x = r\cos\theta</m>, therefore
+				<me>
+					\frac{dx}{dt} = \frac{dr}{dt}\;\cos\theta - r\;\sin\theta\; \frac{d\theta}{dt}
+				</me>
+				For simplicity of notation, let us write <m>dr/dt</m> as <m>v_r</m> and <m>d\theta/dt</m> as <m>\omega</m>. Therefore, we have the following for velocity.
+				<me>
+					\vec v =  \left(  v_r\;\cos\theta - \omega r \; \sin\theta \right)\hat i.
+				</me>
+				This is a mix of two different systems. We could remedy this by replacing <m>\hat i</m> by its expression in <m>\hat u_r</m> and <m>\hat u_\theta</m>. But, that will look complicated. So, I will leave this as it is here. 				
+			</p>
+			<p>
+				To get acceleration, we take another derivative. This will give acceleration that will also have only <m>x</m> components.
+				<me>
+					\vec a = a_x\; \hat i, 
+				</me>
+				with <m>a_x</m> as follows (using <m>\alpha = d\omega/dt</m>)
+				<me>
+					 a_x  =  \frac{dv_r}{dt}\;\cos\theta -2\omega v_r\sin\theta  - \alpha r \; \sin\theta - \omega^2 r \;\cos\theta .
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Motion-on-a-Straight-Line-Described-in-Polar-Coordinates-2"><title>(Calculus) Practice with a Friend: Motion on a Straight Line Described in Polar Coordinates</title>
+		<statement>
+			<p>
+				Motion on a straighline is easiest to describe by placing the motion on a Cartesian axis. But, sometimes, we need to work in polar coordinates even for this motion. 
+			</p>
+			<p>
+				In this exercise you will practice getting polar representation of position, velocity and acceleration (vectors) for a particle moving parallel to <m>y</m> axis at <m>x=c</m> in the <m>xy</m>-plane, where <m>c</m> is some constant. Let <m>y=0</m> at <m>t=0</m>.
+			</p>
+		</statement>
+		<!-- <solution>
+			No solution provided.
+		</solution> -->
+
+	</exercise>
+
+
+	<exercise xml:id="ex-Elliptical-Trajectory-In-Polar-Coordinates"><title>Practice with a Friend: Elliptical Trajectory In Polar Coordinates</title>
+
+		<statement>
+			<p>
+				Planets go around the Sun in elliptical orbits with Sun at one of the foci of the ellipse.  A planet's trajectory is most conveniently written in the polar coordinate. Let <m>r,\theta</m> be the polar coordinates with origin at the center of the ellipse and <m>x</m> axis the major axis and <m>y</m> the minor axis. The ellipse of a planet's orbit is 
+				<me>
+					r = \frac{r_0}{1 - \epsilon\; \cos(\theta)},\ \ r_0 = a(1-\epsilon^2), 
+				</me>
+				where <m>\epsilon</m> is eccentricity with values in the range <m>[0,1)</m> and <m>a</m> is semimajor axis, i.e., <m>2a</m> is the <q>diameter</q> of ellipse on the wide side. Semi-major axis of Mars is <m>1.5273\text{ AU}</m>, where <m>1\text{ AU} = </m> Earth-Sun distance, and the eccentricity of its orbit is <m>0.093</m>. (a) Find the Cartesian representation of the orbit of Mars and (b) Find the distances when Mars gets (i) closest to the Sun (perihelion) and (ii) farthest from the Sun (aphelion .
+
+			</p>
+		</statement>
+		<answer><p> (b) (i) <m>1.38\text{ AU}</m>,  <m>1.666\text{ AU}</m>.</p></answer>
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+
+	<exercise xml:id="ex-Spiral-Trajectory-With-Zero_Radial-Component"><title> (Calculus) Practice with a Friend: Spiral Trajectory with Zero Radial Acceleration</title>
+
+		<statement>
+			<p>
+				Consider a motion described by the following velocities of polar coordinates of a particle.
+				<md>
+					<mrow> \amp \frac{d\theta}{dt} = \omega,\ \text{constant} </mrow>
+					<mrow>\amp \frac{dr}{dt} = \omega\; r </mrow>
+				</md>
+				(a) Prove that radial component of acceleration, <m>a_r = 0</m>. (b) Let <m>r=r_0</m> and <m>\theta=0</m> at <m>t=0</m>, show that <m>r(t) = r_0 e^{\omega t}</m>. (c) A small element of the trajectory can be given by <m>r d\theta</m> by using the arc-angle formula. Use this to find the total distance on the spiral traveled in time <m>T</m>. (d) Find <m>x(t)</m> and <m>y(t)</m> and plot the trajectory (i.e., <m>y</m> versus <m>x</m>) for <m>\omega=0.1,\ r_0=1.0</m> from <m>0 \le  t \le 20</m>. 
+			</p>
+		</statement>
+		<answer><p> (c) <m>r_0 \left(e^{\omega T} -1 \right)</m>. </p></answer>
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+
+
+	</exercises>
+
+
+
+
+
+
+</section>

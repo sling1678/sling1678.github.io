@@ -1,0 +1,149 @@
+<section xml:id="Cylindrical-Capacitor"><title> Cylindrical Capacitor </title>
+	<introduction>
+		<p>
+			In many situations we deal with metal wires that are surrounded by a metal shield. 
+		</p>
+		<sidebyside widths="60% 10% 15% 15%">
+			<p>
+				For instance, in a coaxial cable shown in <xref ref="fig-coaxial-cable"/>, the central wire is surrounded by a metallic sheath. This structure shields the current in the central wire from electromagnetic noise. An analysis of coaxial cable requires its capacitance, which we can approximate by the capcitance of cylindrical capacitor.
+			</p>
+			<p></p>
+			<figure xml:id="fig-coaxial-cable">
+				<caption>
+				</caption>
+				<image source="./images/capacitors/coaxial-cable.png"/>
+			</figure>
+			<p></p>
+		</sidebyside>
+		<sidebyside widths="70% 30%">
+			<p>
+				Consider an infinitely long cylindrical metal wire of outer radius <m>R_1</m> surrounded by metal shell of inner radius <m>R_2</m> as in <xref ref="fig-cylindrical-capacitor"/>. For cylindrical symmetry we require the wire to be infintely long, which makes capacitance infinite. Threfore, we will get formula for capacitance per unit length.
+			</p>
+			
+			<figure xml:id="fig-cylindrical-capacitor">
+				<caption>
+				</caption>
+				<image source="./images/capacitors/cylindrical-capacitor.png"/>
+			</figure>
+
+
+		</sidebyside>
+		
+		<p>
+			We will find below that capacitance per unit length is given by
+			<me>
+				C/L = \dfrac{2\pi\epsilon_0}{\ln\left(R_2/R_1 \right)},
+			</me>
+			if there is nothing between the two conductors, and 
+			<me>
+				C/L = \dfrac{2\pi\epsilon_0\epsilon_r}{\ln\left(R_2/R_1 \right)},
+			</me>
+			if there is a material of dielectric constant <m>\epsilon_r</m> filling the space between the conductors.			
+		</p>
+
+
+		<p><alert>Derivation of the Capitance Formula</alert></p>
+		<p>
+			As always, to get capacitance, we will place charges on the two conductors and find the potential difference between them. The ratio of potential difference to the charge will be identified to be the capacitance.
+		</p>
+		<sidebyside widths="70% 30%">
+			<p>
+				In cylindrical symmetry, we will work with charge per unit length. Let <m>+\lambda</m> be the charge per unit length on the exrernal surface of the inner wire and <m>-\lambda</m> on the inner surface of the outer wire. Let <m>s</m> denote distance to an arbitrary point from the axis. This is cylindrical radial distance. 
+			</p>
+			<image source="./images/capacitors/cylindrical-capacitor-with-charges.png"/>
+		</sidebyside>
+		
+		<p>
+			By applying Gauss's law, you can show that the electric field of these charges is 
+			<me>
+				E = \begin{cases}
+					0 \amp s \lt R_1\\
+					\dfrac{1}{2\pi\epsilon_0}\, \dfrac{\lambda}{s} \amp R_1 \lt r \lt R_2\\
+					0 \amp s \gt R_2
+					\end{cases}
+			</me>
+			Integrating this from outer plate to inner plate will give the potential difference. For students with Calculus background, you should do that integral. For othere, use the following answer.
+			<me>
+				V = \phi_+ - \phi_- = \dfrac{\lambda}{2\pi\epsilon_0}\, \ln\left(\dfrac{R_2}{R_1} \right).
+			</me>
+			Dividing <m>\lambda</m> by  <m>V</m>, we get <alert>capacitance per unit length</alert> of a cylindrical capacitor, which we will denote by a compound symbol <m>C/L</m>, to be
+			<me>
+				C/L = \dfrac{2\pi\epsilon_0}{\ln\left(R_2/R_1 \right)}.
+			</me>
+			If the space between the two wires is occupied by an dielectric/insulator of dielectric constant <m>\epsilon_r</m>, then capacitance is increased by a multiple of <m>\epsilon_r</m>.
+			<me>
+				(C/L)_\text{with dielectric} = \epsilon_r\, C/L = \dfrac{2\pi\epsilon_0\epsilon_r}{\ln\left(R_2/R_1 \right)}.
+			</me>
+
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-Capacitance-of-a-Coaxial-Cable"><title> Capacitance of a Coaxial Cable </title>
+		<statement>
+			<p>
+				An RG59 coaxial cable has inner core of radius <m>0.28\text{ mm}</m> surrounded by plastic of dielectric constant <m>\epsilon_r = 2.7</m>, which is surrounded by a metal jacket of radius <m>2.2\text{ mm}</m>. 
+			</p>
+			<p>
+				(a) Find the capacitane per unit length for the case in which the space between the wire and metal jacket is vacuum instead of plastic.
+			</p>
+			<p>
+				(b) Find the capacitane per unit length for the  coaxial cable described above.
+			</p>
+		</statement>
+		<hint> <p>  Use the formula given in this section. </p> </hint>
+		<answer> <p>  (a) <m>115 \text{ pF/m}</m>, (b) <m>311 \text{ pF/m} </m>. </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a)
+				In the formula for capacitance per unit length the radii enter as ratio, therefore, we do not need to convert units.
+				<md>
+					 <mrow> (C/L)_0 \amp = \dfrac{2\pi\epsilon_0}{\ln\left(R_1/R_2 \right)}, </mrow>
+					 <mrow> \amp = \dfrac{2\pi\times 8.85\times 10^{-12}}{\ln\left(2.2/0.28\right)} = 115 \text{ pF/m}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				With dielectric between the plates, the capacitance will go up.
+				<me>
+					C/L = \epsilon_r (C/L)_0 = 2.7 \times 115 \text{ pF/m} = 311 \text{ pF/m}.
+				</me>
+			</p>
+		</solution>
+
+	</exercise>
+
+	<exercise xml:id="ex-Cylindrical-Capacitor-from-Aluminum-Foil-Surrounding-a-Glass-Tube"><title> Cylindrical Capacitor from Aluminum Foil Surrounding a Glass Tube </title>
+		<statement>
+			<p>
+				A long glass cylindrical shell made of <m> 4\text{ mm}</m> thick Pyrex is used to make a capacitor. The inside and outside of the cylindrical shell is lined with a thin aluminum foil.  What is the capacitance per unit length if the inside radius is <m>5\text{ cm}</m>?  
+
+			</p>
+			<p>
+				Data: <m>\epsilon_{r,\text{ glass} }= 4.7</m>
+			</p>
+
+		</statement>
+		<hint> <p> Use <m>C/L=\epsilon_r (C/L)_0</m>  </p> </hint>
+		<answer> <p> <m>3 \text{ nF/m}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The capacitance per unit length for a cylindrical capacitor of radii <m>R_1</m>  and   <m>R_2</m> of the inner and outer plates with vacuum between them is given by
+				<me>
+					(C/L)_0 = \dfrac{2\pi\epsilon_0}{\ln(R_2/R_1)},
+				</me>
+				With pyrex between the plates this will be multiplied by the dielectric constant <m>\epsilon_r</m> of pyrex.
+				<me>
+					C/L = \epsilon_r\: \dfrac{2\pi\epsilon_0}{\ln(R_2/R_1)}.
+				</me>
+				Putting in the given dimensions we obtain
+				<me>
+					C/L = 4.7\: \dfrac{2\pi\times 8.85\times 10^{-12}}{\ln(5.4/5)} = 3\times 10^{-9}\:\text{F/m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+</section>

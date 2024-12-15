@@ -1,0 +1,366 @@
+<section xml:id="sec-ConsequencesofLorentzTransformations"><title> Some Consequences of Lorentz Transformations </title>
+	<introduction>
+		<p>
+			Lorentz transformations can be applied to study the relativity of physical quantities such as length, time, simultaneity of events, time order of events, and many more. However, it is a little tricky to use them correctly since some of our ordinary notions of time and space have to be carefully revised. There are basically two main departures in thinking compared to Newtonian thinking that we must pay particular attention to.
+		</p>
+		<p>
+			First, there is no <q>universal time</q> since each frame has its own time. Clocks in different inertial frames with non-zero relative speed will show different times and run at different speeds. One important consequence of this difference is that simultaneous events in one frame will not be simultaneous in another. Even the time-order of events can be reversed. Weird, right?
+		</p>
+		<p>
+			Second, clocks at different locations require synchronization by light signals which gives meaning to the <q>observed time</q> in one particular reference frame. To synchronize clocks at different locations you would need one observer at each space point.  That is, the notion of an observer in a frame is actually replaced by infinitely many observers, one at each space point of the stationary space.  That makes simple questions about observers confusing.
+		</p>
+
+	</introduction>
+
+<!-- 	<subsection><title>Simultaneity  of Events</title>
+	 	<p>
+	 		Simultaneous events refer to two or more events happening at the same time, say two lightning occurring at the same time or two trains arriving at the station at the same time, etc. With the implicit assumption of a <q>universal time</q> in the Newtonian thinking, two events that were simultaneous in one frame would be automatically simultaneous in all frames. That is, simultaneity was an <em> absolute</em> concept. Now, since we do not have the notion of a <q>universal time</q> we need to examine whether two events that are simultaneous in one frame are also simultaneous in other frames. Our analysis will show that simultaneity is not absolute but a relative concept.
+	 	</p>
+		<p>
+			Let us use the same two frames S and <m>\text{S}^{\prime}</m> as we have used to deduce the Lorentz transformation equations above.  Consider two events <m>E_1</m> and <m>E_2</m>, whose coordinates and times in the the coordinate system for the <m>\text{S}^{\prime}</m> frame will be denoted by <m>(t_1^{\prime}, x_1^{\prime}, y_1^{\prime}, z_1^{\prime})</m> and <m>(t_2^{\prime}, x_2^{\prime}, y_2^{\prime}, z_2^{\prime})</m> respectively, and without the primes on the symbols in the S frame.  Let us take a concrete example of two simultaneous events <m>E_1</m> and <m>E_2</m> as observed in the <m>\text{S}^{\prime}</m> frame that occur at  <m>t^{\prime} = 0</m> at <m>x_1' = 0</m> and <m>x_1'=a</m> respectively. 
+			<men>
+				\left.
+				\begin{array}{l}
+					E_1:\ \ t_1^{\prime}  = 0,\ x_1^{\prime}  = 0,\ y_1^{\prime}  = 0,\ z_1^{\prime}  = 0\\
+					E_2: \ \ t_2^{\prime}  = 0,\ x_2^{\prime}  =   a,\ y_2^{\prime}  = 0,\ z_2^{\prime}  = 0
+				\end{array}
+				\right\}
+			</men>
+			Since <m>t_1^{\prime} = t_2^{\prime}</m> the two events are simultaneous in <m>\text{S}^{\prime}</m> frame.  Now, we ask if <m>t_1 = t_2</m>? According to the Lorentz transformations worked out in the last section, the coordinates and times for these events in the S frame  would be
+			<men>
+				\left.
+				\begin{array}{l}
+					E_1:\ \ t_1 = 0,\ x_1 = 0,\ y_1 = 0,\ z_1 = 0\\
+					E_2: \ \ t_2 = \gamma \dfrac{V}{c^2}\: a,\ x_2 = \gamma\: a,\ y_2 = 0,\ z_2 = 0
+				\end{array}
+				\right\}
+			</men>
+			Since times <m>t_1  \ne t_2</m>, the two events  will not be simultaneous in S frame even though they are simultaneous in the <m>S6{\:\prime}</m> frame! As a matter of fact, for <m>a>0</m>, the second event will occur later than the first event, and for <m>a\lt 0</m>, i.e. an event occurring on the negative <m>x'</m>-axis, the second event will occur earlier than the first event.
+		</p>
+		<p>
+			Note: some authors state this result as <q>the second event will {\it appear} to be earlier (or later) than the first event</q>, which is somewhat misleading since it will {\it indeed} be earlier than the first event, not just appear to be so.  Special theory of relativity embodied in the Lorentz transformations clearly leads to an unmistakable conclusion that simultaneity is not an absolute concept.  Simultaneous events in one frame will not be simultaneous in another frame.
+		</p> 
+
+	</subsection>
+
+
+	<subsection><title>Order of Events</title>
+		<p>
+			If simultaneity is a relative concept, then how about the order of events? If one event occurs later than the other in one frame, could the time order  of events be opposite in some other frame?  Let us see what the Lorentz transformations tell us for two events that are not simultaneous in the <m>\text{S}^{\prime}</m> frame.
+		</p>
+		<p><alert>1. Events at the origin of one system</alert></p>
+		<p>
+			For simplicity let us consider two events that occur at the origin of <m>\text{S}^{\prime}</m> frame at times <m>t' = 0</m> and <m>t' = \tau</m>.
+			<men>
+				\left.
+				\begin{array}{l}
+				E_1:\ \ t_1^{\prime}  = 0,\ x_1^{\prime}  = 0,\ y_1^{\prime}  = 0,\ z_1^{\prime}  = 0\\
+				E_2: \ \ t_2^{\prime}  = \tau,\ x_2^{\prime}  =   0,\ y_2^{\prime}  = 0,\ z_2^{\prime}  = 0
+				\end{array}
+				\right\}
+			</men>	 
+			According to the Lorentz transformations, the coordinates and times for these events in the frame S would be
+			<men>
+				\left.
+				\begin{array}{l}
+					E_1:\ \ t_1 = 0,\ x_1 = 0,\ y_1 = 0,\ z_1 = 0\\
+					E_2: \ \ t_2 = \gamma\: \tau,\ x_2 =  \gamma\: V \tau,\ y_2 = 0,\ z_2 = 0
+				\end{array}
+				\right\}\label{eq-time-dilation-2}
+			</men>
+			Thus, if <m>\tau>0</m>, then both <m>t_2^{\prime}>0</m> and <m>t_2>0</m>, and if <m>\tau\lt 0</m>, then both <m>t_2^{\prime}\lt 0</m> and <m>t_2\lt 0</m>.  The order of events is same in the two frames. You might say, this is particular to the events at the origin. 			
+		</p>
+		<p><alert>2. Events at the same location of one system</alert></p>
+		<p>
+			Let us check out two events at a place that is not at the origin of the coordinate system, but let them again occur at the same space point, say <m>x^{\prime} = a</m>.	
+			<men>
+				\left.
+				\begin{array}{l}
+					E_3:\ \ t_3^{\prime}  = 0,\ x_3^{\prime}  = a,\ y_3^{\prime}  = 0,\ z_3^{\prime}  = 0\\
+					E_4: \ \ t_4^{\prime}  = \tau,\ x_4^{\prime}  =  a,\ y_4^{\prime}  = 0,\ z_4^{\prime}  = 0
+				\end{array}
+				\right\}
+			</men>	
+			Now the Lorentz transformations give
+			<men>
+				\left.
+				\begin{array}{l}
+					E_3:\ \ t_3  = \gamma\:\dfrac{V}{c^2}\: a,\ x_3  = \gamma a,\ y_3  = 0,\ z_3  = 0\\
+					E_4: \ \ t_4  = \gamma \left( \tau + \dfrac{V}{c^2}\: a\right),\ x_4  =  \gamma\left( a + V \tau\right),\ y_4  = 0,\ z_4  = 0
+				\end{array}
+				\right\}
+			</men>
+			Again, we find that if <m>t_4^{\prime}-t_3^{\prime}=\tau>0</m> then <m>t_4 - t_3 = \gamma \tau >0</m> and if <m>t_4^{\prime}-t_3^{\prime}=\tau\lt 0</m> then <m>t_4 - t_3 = \gamma \tau \lt 0</m>.  The order of events in not changed. You might now say that, this and the example at the origin are particular to the events at one location. 			
+		</p>
+		<p><alert> 3. Events at the two locations of one system</alert></p>
+		<p>
+			Let us check out two events at two places, say one event at <m>t' = 0</m> at  <m>x' = 0</m> and the later event at <m>t' = \tau</m> at <m>x' = a</m>.
+			<men>
+				\left.
+				\begin{array}{l}
+					E_5:\ \ t_5^{\prime}  = 0,\ x_5^{\prime}  = 0,\ y_5^{\prime}  = 0,\ z_5^{\prime}  = 0\\
+					E_6: \ \ t_6^{\prime}  = \tau,\ x_6^{\prime}  =  a,\ y_6^{\prime}  = 0,\ z_6^{\prime}  = 0
+				\end{array}
+				\right\}
+			</men>	
+			Now the Lorentz transformations give
+			<men>
+				\left.
+				\begin{array}{l}
+					E_5:\ \ t_5 = 0,\ x_5 = 0,\ y_5 = 0,\ z_5 = 0\\
+					E_6: \ \ t_6 = \gamma \left( \tau + \dfrac{V}{c^2}\: a\right),\ x_6 =  \gamma\left( a + V \tau\right),\ y_6 = 0,\ z_6 = 0
+				\end{array}
+				\right\}
+			</men>
+			This will give
+			<men>
+			t_6 - t_5 = \gamma \left( \tau + \dfrac{V}{c^2}\: a\right).
+			</men>
+			We see that for <m>t_6^{\prime}  - t_5^{\prime} = \tau > 0</m>, the order of events will depend on the relative velocity <m>V</m> of the frames.
+			<men>
+				\left.
+				\begin{array}{l}
+					\textrm{If}\ \ V > - \dfrac{c^2\tau}{a}\: a, \ \ \textrm{then}\ \ t_6  - t_5 > 0,\ \ \textrm{Order of events same}\\
+					\textrm{If}\ \ V \lt - \dfrac{c^2\tau}{a}\: a, \ \ \textrm{then}\ \ t_6  - t_5  \lt 0,\ \ \textrm{Order of events opposite}\\
+					\textrm{If}\ \ V = - \dfrac{c^2\tau}{a}\: a, \ \ \textrm{then}\ \ t_6  - t_5  = 0,\ \ \textrm{Events simultaneous in S.}
+				\end{array}
+				\right\}
+			</men>
+		</p>
+
+	 	<p>
+	 		Three examples in this subsection illustrate that the order of events in two frames may or may not be same which depends on the particulars of the two events in question.
+
+		</p>
+
+	</subsection> -->
+
+<!-- 	<subsection><title>Relativity of Uniformly Moving Clocks</title>
+		<p>
+			The clock at the origin (or for that matter any other location) of the <m>\text{S}^{\prime}</m> system is moving with respect to the S system. Let <m>\Delta t'</m> be a time interval observed by an observer at rest with the clock in the <m>\text{S}^{\prime}</m> system. That is, we are looking at the time intervals between two events which are given by <m>(t_1^{\prime}, 0, 0, 0)</m> and <m>(t_2^{\prime}, 0, 0, 0)</m> with <m>\Delta t' = t_2^{\prime}-t_1^{\prime}</m>.
+		</p>
+		<p>
+			We would like to know what will be the time interval recorded by an observer in the S system. The <m>\text{S}^{\prime}</m> frame in this context is referred to as the {\bf rest frame}\index{Rest Frame} of the clock since the system we are examining, here, the clock fixed to the origin of <m>\text{S}^{\prime}</m> frame,  is at rest in the <m>\text{S}^{\prime}</m> frame.   The time in the rest frame is also called the {\bf proper time}.\index{Proper time}  The other frame (the S frame) is then called the {\bf lab frame}.\index{Lab Frame} The system (the clock fixed to the origin of <m>\text{S}^{\prime}</m> frame) is moving with respect to the lab frame.  Let <m>\Delta t</m> be the time interval in the lab frame.
+		</p>
+		<p>
+			To examine what S frame will record when <m>\text{S}^{\prime}</m> frame records <m>\Delta t'</m> in the clock, we look at the events <m>E_1: (t'=0, x'=0, y' = 0, z'=0)</m> and <m>E_2: (t'=\Delta t', x'=0, y' = 0, z'=0)</m> and ask the times and coordinates of these events in the S frame. We have already worked out the events in the S frame corresponding to the two events in the last subsection.  From Eq. \ref{eq-time-dilation-2} the duration <m>\Delta t</m> in the lab frame (the S frame) will be
+			<men xml:id="eq-time-dilation-tprimet">
+			\Delta t = \gamma \Delta t' = \frac{\Delta t'}{\sqrt{1- V^2/c^2}}. 
+			</men>
+			Since for <m>V \ne 0</m>,  <m>\gamma > 1</m>, the time duration in the lab frame will always be greater than the time duration in the rest frame, <m>\Delta t> \Delta t'</m>. This means that a moving clock runs slower with respect to the clock of the frame in which the clock is moving.
+		</p>
+		<p>
+			If you examine a clock fixed to the S frame, say the clock at the origin of the S frame.  That clock will be moving with respect to the <m>\text{S}^{\prime}</m> frame. Now, we compare the time intervals for two intervals which occur at the origin of the S frame, <m>(t_1, 0, 0, 0)</m> and <m>(t_2, 0, 0, 0)</m>.  The corresponding events in the <m>\text{S}^{\prime}</m> frame will be <m>(\gamma t_1,  -\gamma\: V t_1, 0, 0)</m> and <m>(\gamma t_2,  -\gamma\: V t_2, 0, 0)</m> respectively.  Let us denote the time interval between the two events in the S frame by <m>\tilde{\Delta t}</m> and in the <m>\text{S}^{\prime}</m> frame by <m>\tilde{\Delta t'}</m>. Here the S frame is the rest frame and the <m>\text{S}^{\prime}</m> frame is the lab frame.  We get the same relation as in Eq. <xref ref="eq-time-dilation-tprimet"/>.
+			<men xml:id="eq-time-dilation-ttprime">
+				\tilde{\Delta t'} = \gamma \tilde{\Delta t} = \frac{\tilde{\Delta t}}{\sqrt{1- V^2/c^2}}. 
+			</men> 
+			It is perhaps better to write the time-dilation relations using the rest frame and lab frame language rather than S and <m>S^{\:\prime}</m>.
+			<men xml:id="eq-time-dilation-tprimet-1">
+			\Delta t_{\textrm{lab}} = \gamma \Delta t_{\textrm{rest}} = \frac{\Delta t_{\textrm{rest}}}{\sqrt{1- V^2/c^2}}. 
+			</men>
+			The confusion arises here from the fact that the <q>rest frame</q> is the frame which is moving with respect to the lab frame.  The reason for  calling the <q>moving frame</q> the rest frame has to do with the fact that <em> the clock under study is  at rest in this frame</em>.
+		</p>
+	</subsection> -->
+
+
+ 
+ 
+
+
+<!-- 	<subsection><title>The Twin Paradox</title>
+		<p>
+			The time dilation formula Eq. <xref ref="eq-time-dilation-tprimet-1"/> makes a distinction between the duration in one frame and the duration in the other frame. We have computed the formula by setting the <m>\text{S}^{\prime}</m> frame as the rest frame and S frame the lab frame. Suppose we looked at the clock fixed at the origin of the S frame, then S frame will be the rest frame and  <m>\text{S}^{\prime}</m> frame the lab frame. That is if we look at the passage of time in the clock at rest in S frame, it will go slower than the clocks in the <m>\text{S}^{\prime}</m> frame.  So, clock in which frame will go slower S or <m>S^{\:\prime}</m>? 
+		</p>
+		<p>
+			The problem can be stated more dramatically by the following hypothetical situation about two identical twins Alice and Barbara.  Suppose Alice is in a space ship and Barbara be Earth-bound. Suppose Alice takes off from Earth is moving in a straight line with a constant speed V with respect to Barbara. Let us call the time in Alice's clock be the A-time, <m>t_A</m> and that in Barbara's clock to be the B-time, <m>t_B</m>.  As far as Barbara is concerned the time elapsed in Alice's clock will be less than the time elapsed in her clock, since her clock is in the lab frame and Alice's clock in the rest frame.
+			<men>
+				\Delta t_B = \gamma t_A.
+			</men>
+			However, the situation is different from Alice's frame. When she examines the clock carried by Barbara, she is in the lab frame and Barbara is in the rest frame.  Thus, she will record that the time in her clock is more than the time elapsed in Barbara's clock. 
+			<men>
+				\Delta t_A = \gamma t_B.
+			</men>
+			Suppose after some time they get together. According to Barbara, Alice will be younger, and according to Alice, Barbara should be younger.  Both possibilities cannot be right.  So, which is the correct possibility?  This the paradox.  This paradox is called the Twin Paradox.
+		</p>
+		<p>
+			The source of the problem is the fact that we have neglected to notice that if Alice has a constant velocity with respect to Barbara, then once Alice has left the Earth she cannot come back to Earth and there is no possibility of an event where Alice's clock and Barbara's clock are at the same position so that their times could be compared. For Alice to come back to Earth she must have deceleration and acceleration. Unlike uniform motion, the decelerating and accelerating frames can detect their own deceleration and acceleration.  The period of acceleration and deceleration of Alice's ship breaks the symmetry between the frames, since there is no acceleration or the deceleration of Barbara's frame.  Thus, both would agree that Alice's clock is in the moving frame and therefore should run slowly giving us a unique answer of the riddle:  Alice would have aged less than Barbara!
+		</p>
+
+	</subsection> -->
+
+
+	<subsection><title>Relativity of Length</title>
+<!-- 		<p>
+			How do we measure length of a rod? We mark the two ends on some axis, say <m>x</m> axis, and then length of the rod is just the distance between the markings. This procedure works in the frame in which rod is at rest.
+		</p>
+		<p>
+			How will you find length of the rod if you were in a different frame, which was moving with respect to the rod? Examining the procedure given above for length in the reset frame, we consider the events of marking the ends. They must occur <alert>at the same time</alert>, then the distance between the marking can be computed in other frames.
+		</p>
+
+		<p>
+			Let events of markings on the two ends be denoted by A and B as shown in <xref ref="fig-length-contraction-frames"/> with events <m>(t'_A, x'_A)</m> and <m>(t'_B, x'_B)</m>. In rest frame <m>\text{S}^\prime</m>, we define length by <m>L_0 = |x'_B - x'_A|</m> for <m>t'_B=t'_A</m>.
+
+		</p>
+		<figure xml:id="fig-length-contraction-frames">
+			<caption>
+				Length <m>L_0</m> is defined as <m>|x'_B-x'_A|</m> when <m>t'_B=t'_A</m> for events A and B.
+			</caption>
+			<image source="./images/modern-physics/length-contraction-frames.png" width="90%"/>
+
+		</figure>
+		<p>
+			To calculate the length in frame S, we first find Lorenz transformation of these events,
+			<md>
+				<mrow> \amp t_A = \gamma \left( t'_A + V x'_A/c^2 \right),\ \ x_A = \gamma \left( x'_A + V t'_A \right) </mrow>
+				<mrow> \amp t_B = \gamma \left( t'_B + V x'_B/c^2 \right),\ \ x_B = \gamma \left( x'_B + V t'_B \right) </mrow>
+			</md>
+			We want <m>x_B-x_A</m> when <m>t_B=t_A</m>. Towards that end, let us express <m>t'_A</m> and <m>t'_B</m> in terms of <m>t_A</m> and <m>t_B</m>  by using the first set of these equations.
+			<me>
+				t'_A = \frac{t_A}{\gamma} - V x'_A/c^2,\ \  t'_B = \frac{t_B}{\gamma} - V x'_B/c^2.
+			</me>
+			Therefore,
+			<md>
+				<mrow>x_B - x_A \amp = \gamma \left[ x'_B + \frac{V t_B}{\gamma} - \frac{V ^2}{c^2}x'_B\right] - \gamma \left[ x'_A + \frac{V t_A}{\gamma} - \frac{V ^2}{c^2}x'_A\right] </mrow>
+				<mrow> \amp = \gamma \left[ x'_B - x'_A   - \frac{V ^2}{c^2}\, \left(x'_B - x'_A \right)\right] + \frac{V}{\gamma}\left( t_B - t_A  \right) </mrow>
+			</md>
+			<alert>This will give length if <m>t_B=t_A</m> in this frame (S)</alert>. Denoting <m>x_B-x_A</m> by <m>L</m> since we have denoted <m>x'_B - x'_A</m> by <m>L_0</m>, the length in the rest frame.
+			<md>
+				<mrow> L\amp =  \gamma \left( 1 - \frac{V^2}{c^2} \right) \, L_0.</mrow>
+			</md>
+			With <m>\gamma = 1/\sqrt{1-V^2/c^2}</m>, this is
+			
+			<men xml:id="lorentz-contraction">
+				L = \dfrac{L_0}{\gamma} = L_0\,\sqrt{ 1 - \dfrac{V^2}{c^2}  }.
+			</men>
+			This is called <term>length cortaction</term>. Since <m>\gamma \gt 1</m>, length of a rod will be smaller in a frame in which rod is moving, i.e., <m>L \le L_0</m>.
+		</p>
+		<p>
+			Since <m>y</m> and <m>z</m> coordinates do not change, the transverse dimensions, i.e., the dimensions of the rod perpendicular to the direction of the motion of the rod are unaffected. Let us denote these dimensions with a subscript <m>\perp</m>.
+			<men>
+				L_{\perp} = L_{0\perp}.
+			</men>
+		</p>
+ -->
+
+
+<!-- 		<p>
+			To calculate length in another frame that is in uniform motion with respect to the rest frame, we can make use of two events - <m>E_1</m> corresponding to placing a mark on the left of the rod and <m>E_2</m> for marking on the roght of the rod. Each event will have its <m>(t,x)</m> in the rest frame. Then using Lorentz transformation on each event we will get <m>(t,x)</m> for these events in the new frame, say frame S, which is moving at speed <m>V</m> with respect to <m>\text{S}^\prime</m>. The trouble is that <m>(t,x)_1</m> of event 1 has now different time than <m>(t,x)_2</m> of event 2, which means length is not just <m>|x_2-x_1|</m>. Below, I will show you how to deduce length in the new frame from these events.
+
+ 
+		</p>
+		<p>
+			Formally, we have the following representation for the two events described above, where I have dropped <m>y</m> and <m>z</m> axes.
+			<men>
+				\textrm{Frame }S^{\:\prime}:\ \ \ \left\{
+				\begin{array}{l}
+					E_1 :\ \ t_1^{\prime}  = 0,\ \ x_1^{\prime}  = 0,
+					E_2 : \ \ t_2^{\prime}  = 0,\ \ x_2^{\prime}  =  l_0.
+				\end{array}
+				\right.
+			</men>			
+
+			Lorentz transformation gives corresponding events in frame S.\
+			<men>
+				\textrm{Frame S}:\ \ \ \left\{
+				\begin{array}{l}
+					E_1 :\ \ t_1  = 0,\ x_1  = 0,
+					E_2 : \ \ t_2 = \gamma \frac{V l_0}{c^2},\ \ x_2   =  \gamma\, l_0.
+				\end{array}
+				\right.
+			</men>
+			Clearly, these events are at two different times. By linearity of Lorentz transformation, the event at left end of rod needs to moved to another position to correspond to the time <m>t_2</m>. Thus,
+			<me>
+				\tilde {x}_1 =x_1 + V t_2 =   \gamma \frac{V^2}{c^2} l_0.
+			</me>
+			is the event at left end that corresponds to same time as the event on the right end in the S frame. Hence, length in the S frame will be
+			<mdn>
+				<mrow number="no"> l \amp = x_2 - \tilde {x}_1 = \gamma \left(1 -  \frac{V^2}{c^2}\right) l_0</mrow>
+				<mrow xml:id="lorentz-contraction-0"> \amp = l_0 \ \sqrt{ 1 -  \frac{V^2}{c^2} } = \frac{l_0}{\gamma}.</mrow>
+			</mdn>
+			This is called <term>length cortaction</term>. From a frame in which rod is moving, length of the rod will be smaller since <m>\gamma \gt 1</m>. We will write this relation as
+			<men xml:id="lorentz-contraction">
+				l_\text{lab} = \dfrac{l_\text{rest}}{\gamma} = l_\text{rest}\,\sqrt{ 1 - \dfrac{V^2}{c^2}  }.
+			</men>
+			Since <m>y</m> and <m>z</m> coordinates do not change, the transverse dimensions, i.e., the dimensions of the rod perpendicular to the direction of the motion of the rod are unaffected. Let us denote these dimensions with a subscript <m>\perp</m>.
+			<men>
+				l_{\perp} = l_{0\perp}.
+			</men>		
+		</p> -->
+
+
+ 
+<!-- 		<p>
+			Let rod be laid out along <m>x</m>-axis at rest in frame <m>\text{S}^{\prime}</m> between <m>x'=0</m> and <m>x'=l_0</m> at <m>t'=0</m>. The two ends of the rod at rest in the <m>\text{S}^{\prime}</m> frame correspond to two events in this frame given by the following times and space coordinates. ( For simplicity, We will ignore <m>y'</m> and <m>z'</m>.)
+
+	 
+			<men>
+				\textrm{Frame }S^{\:\prime}:\ \ \ \left\{
+				\begin{array}{l}
+					E_1 :\ \ t_1^{\prime}  = 0,\ x_1^{\prime}  = 0,
+					E_2 : \ \ t_2^{\prime}  = 0,\ x_2^{\prime}  =  l_0.
+				\end{array}
+				\right.
+			</men>
+
+
+
+			Although two events are simultaneous in the <m>\text{S}^{\prime}</m> frame, they will not be simultaneous in frame S, which is moving with respect to <m>\text{S}^{\prime}</m> frame with speed <m>V</m>. To find the length of this rod in the S frame, we need to find where the two ends of the rod will be at the same value of <m>t</m>.  That is we seek two events <m>E_3</m> and <m>E_4</m> which happen at the same value of <m>t</m> in the S frame. Let us find the two events corresponding to <m>t=0</m>. The left end of the rod is at origin.  So, <m>E_3</m> is same as <m>E_1</m>.
+			<men>
+				E_3:\ \ \ t_3 = 0,\ x_3 = 0,
+			</men>
+			For the other event we have <m>t_2 = 0</m> and  <m>x_2^{\prime}  =  l_0</m> and we seek <m>x_2</m>. We will describe this event by giving you the information from two different frames.
+			<men>
+				E_4:\ \ \ t_4 = 0,\ x_4^{\prime} = l_0,\ y_4 = 0,\ z_4 = 0.
+			</men>
+			We do not yet know <m>t_4^{\prime}</m> or <m>x_4</m>. Let us write down the relevant Lorentz transformation to deduce them.
+			<men>
+				\left.
+				\begin{array}{l}
+				t_4^{\prime} = -\gamma\:\dfrac{V}{c^2}\: x_4\\
+				x_4^{\prime}= l_0 = \gamma x_4
+				\end{array}
+				\right\}
+			</men>
+			From <m>x_3=0</m> and <m>x_4 = l_0/\gamma</m> we find that the length <m>l = \left|x_4 - x_3 \right|</m> in the lab frame will be
+			<men xml:id="lorentz-contraction-0">
+				l = \dfrac{l_0}{\gamma} = l_0\sqrt{1-\dfrac{V^2}{c^2}}. 
+			</men>
+			This says that the length <m>l</m> of the bar moving in the direction of the length will be less than the length <m>l_0</m> when it is not moving.  that is length is contracted.  This effect is called {\bf Lorentz contraction}.\index{Lorentz contraction}  Let us again rewrite this equation in terms of the rest frame and lab frame language, where the rest frame refers to the frame in which the bar is at rest and the lab frame refers to the frame in which the bar is moving in the direction of the length of the bar with speed <m>V</m>.
+			<men xml:id="lorentz-contraction">
+				l_\text{lab} = \dfrac{l_\text{rest}}{\gamma} = l_\text{rest}\,\sqrt{ 1 - \dfrac{V^2}{c^2}  }.
+			</men>
+			Since <m>y</m> and <m>z</m> coordinates do not change, the transverse dimensions, i.e., the dimensions of the rod perpendicular to the direction of the motion of the rod are unaffected. Let us denote these dimensions with a subscript <m>\perp</m>.
+			<men>
+				l_{\perp} = l_{0\perp}.
+			</men>
+		</p> -->
+
+	</subsection>
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

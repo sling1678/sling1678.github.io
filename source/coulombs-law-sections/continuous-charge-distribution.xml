@@ -1,0 +1,705 @@
+<section xml:id="Continuous-Charge-Distribution"><title> Continuous Charge Distributions </title>
+	<introduction>
+		<p>
+			Even a small amount of charge corresponds to a large number of electrons.  For instance, a nano Coulomb of charge, which is not much as far as charges go, would contain about <m>10^{10}</m> electrons. Therefore, rather than treat such large collection of charges individually, we model them as distributed continuously with a charge density, i.e., charge per unit volume, which we will denote by the Greek symbol <m>\rho</m>, pronunced as <q>rho</q>.
+			<men>
+				\rho = \dfrac{q}{V}.
+			</men>
+			This is similar to mass density you are familiar with, but with one diffrence - charge density can be positive and negative, depending on the type of charge <m>q</m>. Thus, if you remove some electrons from a neutral body, the charge density of the body will be positive, and if you place extra electron on a neutral body, the body will have negative charge density. 
+		</p>
+		<p>
+			Often charge density will vary in the same body. For instance, if we place some extra charge on a metal cone, then charge density at the tip will tend to be larger than elsewhere. That means, we should think of <m>\rho</m> as a function of location, i.e., <m> \rho (x, y, z)</m>.
+		</p>
+		<p>
+			Often we work with charges distributed only on the surface. For instance, when we place some charge on a metal, the charges tend to spread out at the surface only. That means, we will have charge per unit area rather than charge per unit volume. This is called <term>surface charge density</term>, which is denoted by Greek letter <m>\sigma</m>, <q> sigma</q>.
+			<men>
+				\sigma = \dfrac{q}{A}.
+			</men>
+		</p>
+		<p>
+			We also work with charges on wires and such, where we can think of charge per unit length. This type of charge density is called <term>line charge density</term>. It is denoted by the Greek letter <m>\lambda</m>, <q> lambda</q>.
+			<men>
+				\lambda = \dfrac{q}{L}.
+			</men>			
+		</p>
+	</introduction>
+
+	<subsection> <title> Electric Field of Continuous Charges</title>
+		<p>
+			Here I will list electric field formulas for some illustrative continuous charge distributions. To work out these results requires Calculus and is relegated to worked out examples below.
+		</p>
+		<subsubsection> <title> Electric Field of a Charged Rod</title>
+			
+			<p>
+				First case of interest is the electric field of a uniformly charged thin rod of length <m>L</m> with line charge density <m>\lambda</m> (SI units: <m> \text{C/m}</m>). We right away note that the direction of electric firld is away from the rod if <m>\lambda</m> is positive and towards the rod if <m>\lambda</m> is negative.
+			</p>
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					In <xref ref="ex-Electric-Field-of-a-Uniformly-Charged-Thin-Rod"/>, I show that electric field at a point P that is at a distance <m>D</m> from the middle of the rod has magnitude
+					<men xml:id="eq-Electric-Field-of-a-Charged-Rod">
+						E = k\dfrac{ 2|q| }{ D  \sqrt{ L^2 + 4D^2} },
+					</men>
+					where <m>|q|=|\lambda| L</m>, the total charge on the rod.
+				</p>
+				<p>
+			
+				</p>
+				<image source="./images/coulombs-law/e-field-of-line-charge-result.png" width="70%"/>
+			</sidebyside>
+			<p>
+				Note that <em> this formula does not look anything like the electric field of a point charge.</em> In particular, if you get very close to the rod such that we have  <m>L\gt\gt D</m>, the field drops of as <m>1/D</m> rather than <m>1/D^2</m>.
+				<me>
+					E = k\dfrac{ 2|\lambda| }{  D}\ \ \text{if}\ \ L\gt\gt D.
+				</me>
+				However, if we looked at a point P that is far away, we expect the rod to be more like point charge and field drops with distance as <m>1/D^2</m>, as we get when we apply <m>D\gt\gt L</m> to Eq. <xref ref="eq-Electric-Field-of-a-Charged-Rod"/>. 
+				<md>
+					<mrow> E_x \amp =  k\,  \dfrac{q}{D^2}\text{, if } D\gt\gt L.</mrow>
+				</md>				
+			</p>
+		</subsubsection>
+
+ 
+	<example xml:id="ex-Electric-Field-of-a-Uniformly-Charged-Thin-Rod"> <title> (Calculus) Electric Field of a Uniformly Charged Thin Rod </title>
+		
+
+
+		<sidebyside widths="60% 10% 30%">
+			<p>
+				Suppose we have a uniformly charged rod of length <m>L</m> with line charge density <m>\lambda</m> and we want to find field at P in <xref ref="fig-e-field-of-line-charge-set-up-0"/>. The electric field is given in Eq. <xref ref="eq-Electric-Field-of-a-Charged-Rod"/>.  
+				<me >
+					E = k\dfrac{ 2|q| }{ D  \sqrt{ L^2 + 4D^2} },
+				</me>
+
+			</p>
+			<p></p>
+			<figure xml:id="fig-e-field-of-line-charge-set-up-0">
+				<caption>
+				</caption>
+				<image source="./images/coulombs-law/e-field-of-line-charge.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Now, we will like to <alert>derive</alert> this result from the fundametal formula for electric field of a point charge.
+		</p>
+		<p> <alert>General Strategy:</alert> </p>
+		<p>
+			When we deal with a continuous charges, it is helpful to start with pieces of the body, and use point charge formula. Whenever possible, it usually simplifies calculation if you make use of the symmetry. In the present question, since the field point is in the plane that divides the rod in half, there is a symmetry between the upper half and lower half.
+		</p>
+		<p> <alert> Derivation: </alert></p>
+		<p>
+			To exploit symmetry in the situation, we will look at electric fields from two small parts of the rod that are symmetrucally placed shown as <m>dq_1</m> and <m>dq_2</m> in <xref ref="fig-e-field-of-line-charge-set-up"/>. Note that the symmetry leads to the cancellation of <m>y</m> component. Hence, we just need to work out <m>E_x</m>. furthermore, we can find <m>E_x</m> from one half of the rod and double that. 
+		</p>
+		<figure xml:id="fig-e-field-of-line-charge-set-up">
+			<caption>
+				This figure illustrates that vertical components of the electric fields of two symmetrically placed charge elements will cancel out.
+				<!-- To find the electric field from charges uniformly spread over the line, we first look at the two symmetrically placed charges <m>dq_1</m> and <m>dq_2</m> of equal amount. We note that their electric field sums to an electric field that is non-zero only along the <m>x</m> axis. That tells us that at P, electric field is pointed along <m>x </m> axis. If charge on the rod was positive, the field will be as shown, and if negative the field will be in the opposite direction. -->
+			</caption>
+			<image source="./images/coulombs-law/e-field-of-line-charge-set-up.png" width="70%"/>
+		</figure>
+
+		
+		<p>
+			From element of the rod between <m>y</m> and <m>y+dy</m>, shown in the upper part of the rod in  <xref ref="fig-e-field-of-line-charge-set-up"/> the <m>x</m>-component of the electric field, to be written informally in infinitesimal notation of <m>dE_x</m>, is 
+			<md>
+				<mrow> dE_x \amp = k \dfrac{\lambda\, dy}{  D^2 + y^2 }\, \cos\theta</mrow>
+				<mrow> \amp = k \dfrac{\lambda\, dy}{  D^2 + y^2 }\, \dfrac{D}{ \sqrt{D^2 + y^2} }</mrow>
+			</md>
+			To get the net electric field from the rod we will integrate the right side from <m>y=0</m> to <m>y=L/2</m> and multiply the result by 2 to take into account the contributions of the lower half.
+			<md>
+				<mrow> E_x \amp = 2\times k\,\lambda\, D \int_0^{L/2}  \dfrac{dy}{ \left(  D^2 + y^2 \right)^{3/2}  }.</mrow>
+			</md>
+			I will use <url source="https://www.wolframalpha.com/"> Wolfram Alpha</url> to find the integral
+			<me>
+				\int \dfrac{dy}{ \left(  D^2 + y^2 \right)^{3/2}  } = \dfrac{y}{D^2\sqrt{y^2 + D^2}} + C.
+			</me>
+			Therefore, we will get following answer for our problem.
+			<md>
+				<mrow> E_x \amp = 2\times k\,\lambda\,   \dfrac{L/2}{D\sqrt{(L/2)^2 + D^2}}.</mrow>
+			</md>
+			Now, we see that <m>\lambda L</m> is the total charge on the rod. Let us denote this by <m>q</m>.
+			<mdn>
+				<mrow xml:id="eq-line-charge-x-electric-field"> E_x \amp =  k\,  \dfrac{q}{D\sqrt{(L/2)^2 + D^2}}.</mrow>
+			</mdn>
+			Therefore, the magnitude is
+			<me>
+				E = k\,  \dfrac{|q|}{D\sqrt{(L/2)^2 + D^2}} = k\,  \dfrac{2|q|}{D\sqrt{L^2 + 4\:D^2}},
+			</me>
+			the direction towards <m>+x</m> if <m>q</m> positive and <m>-x</m> if <m>q</m> negative.
+		</p>
+		<p>
+			Notice that if P is very far away, our rod would look like a point charge, therefore, our answer should become same as that of point charge.  We can see this expectation emerge when we apply <m>D\gt\gt L</m>  limit our result in Eq. <xref ref="eq-line-charge-x-electric-field"/> by just dropping <m>(L/2)^2</m> compared to <m>D^2</m>.
+			<md>
+				<mrow> E_x \amp =  k\,  \dfrac{q}{D^2}\text{, if } D\gt\gt L.</mrow>
+			</md>
+
+		</p>
+	</example>
+
+
+
+
+
+		<subsubsection> <title> Electric Field of a Charged Ring</title>
+
+			<sidebyside widths="60% 10% 30%">
+			<p>
+				The electric field of a uniformly charged ring of radius <m>R</m> with line charge density <m>\lambda</m> (SI units: <m> \text{C/m}</m>) is also  easy to find as I will show in derivation in <xref ref="ex-Electric-Field-of-a-Ring-of-Charge"/>. The electric field a point P that is at a distance <m>D</m> above the middle of the ring has magnitude
+				<men>
+					E =  k \dfrac{|q|D }{ \left(  R^2 + D^2 \right)^{3/2} },
+				</men>
+				where <m>q=2\pi R L</m>, the total charge on ring.
+			</p>
+				<p>
+				</p>
+				<image source="./images/coulombs-law/e-field-of-ring-of-charges-result.png" width="70%"/>
+			</sidebyside>
+			<p>			
+				The direction is away from the ring if <m>\lambda</m> is positive and towards the ring if <m>\lambda</m> is negative. The direction and the magnitude can all be put together in one formula if we use vector notation. With <m>\hat u_z</m> for unit vector in the positive <m>z</m> axis, we will remove the absolute sign around <m>q</m> to write the net field to be
+				<men>
+					\vec E = k \frac{qD}{\left( R^2 + D^2\right)^{3/2}}\, \hat u_z.
+				</men>
+			</p>
+
+			<p>
+				Note that this formula does not look anything like the electric field of a point charge either.  		
+			</p>
+
+	<exercise xml:id="ex-Electric-Field-of-a-Ring-of-Charge"><title> (Calculus) Derivation of Electric Field of a Charged Ring </title>
+		<statement>
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					Suppose we have a uniformly charged ring of radius <m>R</m> with line charge density <m>\lambda</m>. <alert>Derive</alert> the formula for the electric field at a point P that is  at a distance <m>D</m> above the center of the ring. 
+				</p>
+
+				<p>
+				</p>
+				<image source="./images/coulombs-law/e-field-of-ring-of-charges.png" width="70%"/>
+			</sidebyside>
+		</statement>
+
+		<hint> 
+			<p>
+				Only <m>E_z</m> is nonzero due to symmetry.
+			</p>
+		</hint>
+
+		<answer>
+			<p>
+				<m>
+				\vector E = k \dfrac{ 2\pi R \lambda \, D}{ \left(  R^2 + D^2 \right)^{3/2} }\ \hat u_z.
+			</m>
+			
+			</p>
+		</answer>
+
+		<solution>
+			<p> <alert>General Strategy:</alert> </p>
+			<p>
+				When we deal with a continuous charges, it is helpful to start with pieces of the body, and use point charge formula. Whenever possible, it usually simplifies calculation if you make use of the symmetry. In the present question, since the field point is in the plane that divides the rod in half, there is a symmetry between the upper half and lower half.
+			</p>
+			<p> <alert>Derivation:</alert> </p>			
+			<p>
+				To exploit the symmetry in this situation, we notice two things in this problem: (1) every piece of the ring is same distance from the field point P, and (2) the horizontal component of the electric field from two oppositely placed charges on the ring, as shown in <xref ref="fig-e-field-of-ring-of-charges-solution"/>, will cancel out, which means that we need to work out only the vertical component.
+			</p>
+		<figure xml:id="fig-e-field-of-ring-of-charges-solution">
+			<caption>
+				To find the electric field from charges uniformly spread over the ring, we first look at the two symmetrically placed charges <m>dq_1</m> and <m>dq_2</m> of equal amount. We note that their electric field sums to an electric field that is non-zero only along <m>z</m> axis. That tells us that at P, electric field is pointed along <m>z </m> axis. If charge on the rod was positive, the field will be as shown, and if negative the field will be in the opposite direction.
+			</caption>
+			<image source="./images/coulombs-law/e-field-of-ring-of-charges-solution.png" width="50%"/>
+		</figure>
+
+		<p>
+			To get an idea of what to proceed, let us look at the <m>z</m> component of the electric field from element of arc length <m>ds</m>, say from <m>dq_1 = \lambda ds </m>. The magnitude of this electric field is
+			<me>
+				dE_1 = k \dfrac{\lambda\, ds}{ R^2 + D^2 },
+			</me> 
+			where <m> \sqrt{R^2 + D^2} </m> is the direct distance from the <m>dq_1</m> to the field point P. Now, we need to get its <m>z</m> component by multiplying with <m>\cos\,\theta</m>, where
+			<me>
+				\cos\theta = \dfrac{D}{ \sqrt{R^2 + D^2} }.
+			</me>
+			Therefore, the <m>z</m> component will be
+			<me>
+				dE_{1z} = k \dfrac{\lambda\, ds}{ R^2 + D^2 }\ \dfrac{D}{ \sqrt{R^2 + D^2} }.
+			</me> 
+			Now, we notice that as we go around the ring, everything is same for every element. Therefore, the net field will just be <m>ds</m> replaced by the circumference of the ring. Let us we drop 1 from the subscript since this is the net.
+			<me>
+				E_{z} = k \dfrac{\lambda\, 2\pi R}{ R^2 + D^2 }\ \dfrac{D}{ \sqrt{R^2 + D^2} }.
+			</me>
+			We can write this formula more compactly by replacing <m> \lambda\, 2\pi R </m> by the total charge <m>q</m> on the ring, and combining the denominator.
+			<me>
+				E_{z} = k \dfrac{q\, D}{ \left(  R^2 + D^2 \right)^{3/2} }.
+			</me>
+			Since this is the only non-zero component, this gives the magnitude of the net field at P.
+			<me>
+				E = k \dfrac{ |q|\, D}{ \left(  R^2 + D^2 \right)^{3/2} },
+			</me>
+			and direction towards <m>+z</m> axis if <m>\lambda</m> is positive and 	<m>-z</m> axis if <m>\lambda</m> is negative. Of course, you can write this in a vector notation as well by using unit vector <m>\hat u_z</m> that points in the positive <m>z</m> direction.
+			<me>
+				\vec E = k \dfrac{ q\, D}{ \left(  R^2 + D^2 \right)^{3/2} }\ \hat u_z.
+			</me> 	
+		</p>
+
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Electric-Field-of-Two-Charged-Rings-in-a-Plane"><title>Electric Field of Two Charged Rings in a Plane </title>
+
+		<statement>
+			<sidebyside widths="55% 10% 35%">
+			<p>
+				<xref ref="fig-ex-Electric-Field-of-Two-Charged-Rings-in-a-Plane"/> shows two rings of radii <m>R_1</m> and <m>R_2</m> with charge densities <m>\lambda_1</m> and <m>\lambda_2</m> respectively. (a) Find electric field at point P a distance <m>D</m> above the common center of the rings. (b) What is the field when the rings have equal but opposite total charges?
+			</p>
+			<p></p>
+			<figure xml:id="fig-ex-Electric-Field-of-Two-Charged-Rings-in-a-Plane">
+				<caption>
+					 For <xref ref="ex-Electric-Field-of-Two-Charged-Rings-in-a-Plane"/>.
+				</caption>
+				<image source="./images/coulombs-law/ex-Electric-Field-of-Two-Charged-Rings-in-a-Plane.png" width="50%"/>
+			</figure>
+		</sidebyside>
+
+			
+		</statement>
+		<hint><p>Use the result of one ring and superposition.</p></hint>
+		<answer><p>
+			
+			(a) <m>\hat u_z\ k D \left[ \frac{q_1}{\left( R_1^2 + D^2\right)^{3/2}} +  \frac{q_2}{\left( R_2^2 + D^2\right)^{3/2}} \right]</m>,
+			(b) <m>\hat u_z\ k D  q_1 \left[ \frac{1}{\left( R_1^2 + D^2\right)^{3/2}} +  \frac{1}{\left( R_2^2 + D^2\right)^{3/2}} \right]</m>.
+
+		</p></answer>
+		<solution>
+			<p>
+				(a)
+				The net electric field will be superposition of the two fields, one by each ring. To be safe with signs, we work with the vector notation. In vector notation, the field by one ring will have the form
+				<me>
+					\vec E = k \frac{qD}{\left( R^2 + D^2\right)^{3/2}}\, \hat u_z.
+				</me>
+				There will be one term from each ring. The net will be
+				<md>
+					<mrow> \vec E_\text{net} \amp = k \frac{q_1D}{\left( R_1^2 + D^2\right)^{3/2}}\, \hat u_z + 
+					k \frac{q_2D}{\left( R_2^2 + D^2\right)^{3/2}}\, \hat u_z.</mrow>
+					<mrow> \amp = \hat u_z\ k D \left[ \frac{q_1}{\left( R_1^2 + D^2\right)^{3/2}} +  \frac{q_2}{\left( R_2^2 + D^2\right)^{3/2}} \right]. </mrow>
+				</md>
+				Here <m>q_1 = 2\pi R_1 \lambda_1</m> and <m>q_2 = 2\pi R_2 \lambda_2</m>
+			</p>
+			<p>
+				(b) when <m>q_1 = -q_2</m>, we will have
+				<me>
+					\vec E_\text{net} = \hat u_z\ k D  q_1 \left[ \frac{1}{\left( R_1^2 + D^2\right)^{3/2}} +  \frac{1}{\left( R_2^2 + D^2\right)^{3/2}} \right].
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Electric-Fields-of-Two-Rings-of-Charges-on-Two-Parallel-Planes"><title>Electric Fields of Two Rings of Charges on Two Parallel Planes</title>
+
+		<statement>
+			<sidebyside widths="55% 10% 35%">
+				<p>
+					<xref ref="fig-ex-Electric-Field-of-Two-Charged-Rings-in-a-Plane"/> shows two rings of saame radius <m>R</m> with opposite charge densities <m>\pm\lambda</m> placed above each other separated by a distance <m>D</m>. (a) Find the formula for the electric field at an arbitray point P between the rings at a distance <m>a</m> from the center of one of the rings as shown. (b) What is the field at the mid-point between them?
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-Electric-Fields-of-Two-Rings-of-Charges-on-Two-Parallel-Planes">
+					<caption>
+						 For <xref ref="ex-Electric-Fields-of-Two-Rings-of-Charges-on-Two-Parallel-Planes"/>.
+					</caption>
+					<image source="./images/coulombs-law/ex-Electric-Fields-of-Two-Rings-of-Charges-on-Two-Parallel-Planes.png" width="50%"/>
+				</figure>
+			</sidebyside>
+		</statement>
+		<hint><p>Use the formula for electric field from one ring. <alert>Beware</alert> that the formula derived in this section is for a ring whose center is at the origin of the coordinate system.</p></hint>
+		<answer><p>
+			(a) <m>\hat u_z\ k q  \left[ \dfrac{ a}{ \left(  R^2 + a^2 \right)^{3/2} }  + \dfrac{ (D-a)}{ \left(  R^2 + (D-a)^2 \right)^{3/2} }  \right]</m>,
+			(b) <m>\hat u_z \dfrac{ k q D}{ \left(  R^2 + (D/2)^2 \right)^{3/2} }</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					(a)
+					I will use the formula derived for one ring. When origin is at the center of the ring, the axis is <m>z</m> axis, and point P is <m>z=a</m>, then the electric field would be
+					<me>
+						\vec E = k \dfrac{ q\, a}{ \left(  R^2 + a^2 \right)^{3/2} }\ \hat u_z,
+					</me>
+				</p>
+				<p></p>
+				<image source="./images/coulombs-law/ex-Electric-Fields-of-Two-Rings-of-Charges-on-Two-Parallel-Planes-1.png" width="50%"/>
+			</sidebyside>		
+			<p>
+				where <m>q=2\pi R \lambda</m>, the total charge on the ring. The ring at the bottom is like this. So, let us rename this as <m>\vec E_1</m>.
+				<me>
+					\vec E_1 = k \dfrac{ q\, a}{ \left(  R^2 + a^2 \right)^{3/2} }\ \hat u_z,
+				</me>
+			</p>
+
+			<sidebyside widths="60% 10% 30%">
+				<p>				
+					Now, we have the second ring whose center is not at the origin, but it is at <m>z=D</m>. Therefore, distance to the field point P from this ring will not be <m>a</m> but <m>D-a</m> since P is between the two rings. 
+				</p>
+				<p></p>
+				<image source="./images/coulombs-law/ex-Electric-Fields-of-Two-Rings-of-Charges-on-Two-Parallel-Planes-2.png" width="50%"/>
+			</sidebyside>
+			<p>
+				Furthermore, since this ring is negatively charged, field at this P by this ring will be pointed up in the positive <m>z</m> direction.
+					<me>
+						\vec E_2 = +k \dfrac{ q\, (D-a)}{ \left(  R^2 + (D-a)^2 \right)^{3/2} }\ \hat u_z,
+					</me>
+				where <m>q</m> is same as above and <m>D \gt a</m>.
+				The net field at P will be a vector sum of these two fields.
+				<md>
+					<mrow>\vec E \amp =  \vec E_1+ \vec E_2</mrow>
+					<mrow>  \amp =   \hat u_z\ k q  \left[ \dfrac{ a}{ \left(  R^2 + a^2 \right)^{3/2} }  + \dfrac{ (D-a)}{ \left(  R^2 + (D-a)^2 \right)^{3/2} }  \right]. </mrow>
+				</md>				
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b) We just set <m>a=D/2</m> in the formula we obtained in (a).
+				<md>
+					<mrow> \vec E \amp =   \hat u_z \dfrac{ k q D}{ \left(  R^2 + (D/2)^2 \right)^{3/2} }.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Electric-Field-of-Uniformly-Charged-Arc"><title>Electric Field of Uniformly Charged Arc</title>
+
+		<statement>
+			<p>
+				A thin wire of length <m>L</m> made of a nonconducting material is bent into a cricular arc of radius <m>R</m>. The wire is then painted with charged paint so that it has a uniform charge of density <m>\lambda</m> (units: <m>C/m</m>). Find the electric field at the center of the arc.
+			</p>
+		</statement>
+		<hint><p>Place arc in the <m>xy</m> plane so that it is symmetrical about <m>x</m> axis. Then, compute <m>x</m> component of electric field of an element of the arc. </p></hint>
+		<answer><p>
+			Magnitude:
+							<m>
+					E = \left| \frac{2k\lambda}{R}\sin (L/2R) \right|,
+				</m>
+				and direction away from the arc if <m>\lambda</m> positive and towards arc if negative.  
+
+		</p></answer>
+		<solution>
+			<sidebyside widths="50% 50%">
+				<p>
+					Let us place the arc symmetrically about <m>x</m> axis in the <m>xy</m> plane as shown in <xref ref="fig-ex-Electric-Field-of-Uniformly-Charged-Arc"/>. This will have the effect of having <m>y</m> component of electric field zero by symmetry and we will need to work out only the <m>x</m> component.
+					
+				</p>
+				<figure xml:id="fig-ex-Electric-Field-of-Uniformly-Charged-Arc">
+					<caption>
+						 For <xref ref="ex-Electric-Field-of-Uniformly-Charged-Arc"/>.
+					</caption>
+					<image source="./images/coulombs-law/ex-Electric-Field-of-Uniformly-Charged-Arc.png" width="50%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				As we did for line and ring, we look at electric field of a small segment and treat it as a point charge. Taking into account the direction of the field as shown in the figure, <m>x</m> component of the electric field from an element of size <m>Rd\theta</m> at angle <m>\theta</m> will be
+				<me>
+					dE_x = -dE\:\cos\theta = -k\;\frac{\lambda R d\theta }{ R^2}\: \cos\theta.
+				</me>
+				Since the arc spans from an angle <m>-\theta_0</m> to <m>\theta_0</m> with <m>\theta_0 = L/2R</m> using <m>s=R\theta</m> formula, we integrate this to get the net electric field at origin.
+				<md>
+					<mrow> E_x \amp = - \frac{k\lambda}{R}\int_{-\theta_0}^{\theta_0}\:\cos\theta\:d\theta </mrow>
+					<mrow>\amp = - \frac{2k\lambda}{R}\sin\theta_0 = - \frac{2k\lambda}{R}\sin (L/2R). </mrow>
+				</md>
+				Since this is the only non-zero component, magnitude of electric field is just the magnitude of this quantity.
+				<me>
+					E = \left| \frac{2k\lambda}{R}\sin (L/2R) \right|,
+				</me>
+				and direction away from the arc if <m>\lambda</m> positive and towards arc if negative.  
+
+			</p>
+			
+		</solution>
+	</exercise>
+
+
+
+
+
+		</subsubsection>
+
+		<subsubsection> <title> Electric Field of a Charged Disk</title>
+
+			<sidebyside widths="60% 10% 30%">
+			<p>
+				The electric field of a uniformly charged disk of radius <m>R</m> with surface charge density <m>\sigma</m> (SI units: <m> \text{C/m}^2</m>) can also be easily worked out. The electric field st a point P that is at a distance <m>D</m> above the middle of the ring has magnitude
+				<me>
+					E = 2\pi k |\sigma| \left( 1 - \dfrac{D}{\sqrt{R^2 + D^2 }}  \right)
+				</me>
+			</p>
+				<p>
+				</p>
+				<image source="./images/coulombs-law/e-field-of-disk-of-charges-result.png" width="70%"/>
+			</sidebyside>
+			<p>			
+				The direction is away from the disk if <m>\sigma</m> is positive and towards the disk if <m>sigma</m> is negative. Note that this formula does not look anything like the electric field of a point charge either.  		
+			</p>
+			<p>
+				An intersting results occurs when we look at a point very close to the disk, i.e., when <m>D \lt\lt R</m>.
+				<men xml:id="eq-e-field-near-center-of-a-disk">
+					E = 2\pi k |\sigma|,\text{ or, } \dfrac{|\sigma|}{2\epsilon_0}.
+				</men>
+			</p>
+
+	<exercise xml:id="ex-Electric-Field-of-a-Circular-Disk-Of-Uniform-Charge-Density"><title> (Calculus) Electric Field of a Circular Disk Of Uniform Charge Density  </title>
+		<statement>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					Suppose we have a disk of radius <m>R</m> with surface charge density <m>\sigma</m> on only one side of the disk. (a) What will be the electric field at a point P that is at a distance <m>D</m> above the center of the disk? 
+				</p>
+
+				<p>
+				</p>
+				<image source="./images/coulombs-law/e-field-of-disk-of-charges.png" width="70%"/>
+			</sidebyside>
+			<p>
+				(b) Take the limit <m>D\gt\gt R</m> to show that you get the electric field of a point charge. 
+			</p>
+			<p>
+				(c) Take the limit <m>D\lt\lt R</m> and find the expression of the electric field at a point just above the center of the disk.
+			</p>
+		</statement>
+		<hint> <p> Build disk out of rings. Set up a ring of thickness <m>dr</m> between radius <m>r</m> and <m>r+dr</m>.  </p> </hint>
+		<answer> <p>   
+
+			(a) <m>E_z= \dfrac{2 k q}{R^2} \left( 1 - \dfrac{D}{\sqrt{R^2 + D^2 }}  \right)</m>, 
+
+			(b) <m>E_z =  k \dfrac{q}{D^2} </m>,
+
+			(c) <m>E_z= \dfrac{\sigma}{2\epsilon_0} </m>.
+		</p> </answer>
+		<solution> <title>(a) </title>
+			<p> (a) 
+				We imagine dividing up the disk into concentric rings as shown in <xref ref="fig-e-field-of-disk-of-charges-solution"/>. Consider one representative ring of radius <m>r</m> of thickness <m>dr</m>. The infintesimal charge <m>dq</m> on the ring will be
+				<m>
+					dq = \sigma\, (2 \pi r dr).
+				</m>
+
+			</p>
+
+			<figure xml:id="fig-e-field-of-disk-of-charges-solution">
+				<caption>
+					To find the electric field from charges uniformly spread over a disk, we think of the disk as made of infintely many rings. One such representative ring of thickness <m>dr</m> and radius <m>r</m> is shown. The net field from this ring has only the <m>z</m> component non-zero. By adding over all such rings will give the electric field of the whole disk.  
+				</caption>
+				<image source="./images/coulombs-law/e-field-of-disk-of-charges-solution.png" width="50%"/>
+			</figure>
+
+			<p>
+				The electric field of this ring will have only the <m>z</m> component nonzero. We can utilize the result of electric field of a ring of charges worked out in <xref ref="ex-Electric-Field-of-a-Ring-of-Charge"/>. 
+				We will get the infinitesimal electric field <m>dE_z</m> by the ring here as
+				<me>
+					dE_z = k\dfrac{ (2 \pi \sigma r dr) \,D}{ \left( r^2 + D^2 \right)^{3/2} }.
+				</me>
+				Now, to obtain the contribution of all such rings on the disk, we will integrate (i.e., sum over) from <m>r=0</m> to <m>r=R</m>, giving us the <m>z</m> component of the net electricv field at P.
+				<md>
+					<mrow> E_z \amp = 2 \pi k \sigma D \int_0^R \dfrac{r\, dr}{  \left( r^2 + D^2 \right)^{3/2} } </mrow>
+					<mrow> \amp =  \pi k \sigma D \int_0^{R^2} \dfrac{dy}{  \left( y + D^2 \right)^{3/2} } </mrow>
+					<mrow> \amp =  2\pi k \sigma \left( 1 - \dfrac{D}{\sqrt{R^2 + D^2 }}  \right) </mrow>
+				</md>
+				We can write this expression in terms of the total charge on the disk
+				<me>
+					q = \pi R^2 \sigma.
+				</me>
+				This gives
+				<me>
+					E_z = \dfrac{2 k q}{R^2} \left( 1 - \dfrac{D}{\sqrt{R^2 + D^2 }}  \right).
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p> (b) 
+				To take the limit, let us introduce the variable
+				<me>
+					\epsilon = \dfrac{R^2}{D^2}.
+				</me>
+				This would mean we are interested in the limit <m>\epsilon \rightarrow 0</m>. Let us express the answer in (a) in <m>\epsilon</m> and <m>R</m> in place of <m>D</m> and <m>R</m>.
+				<me>
+					E_z = \dfrac{2 k q}{R^2} \left( 1 - \dfrac{1}{\sqrt{ 1 + \epsilon }}  \right).
+				</me>
+				Recall from Calculus the Mclaurin series of <m>\dfrac{1}{\sqrt{ 1 + \epsilon }} </m> as
+
+				<me>
+					\dfrac{1}{\sqrt{ 1 + \epsilon }}  = 1 - \dfrac{1}{2}\epsilon + \cdots,
+				</me>
+				Keeping only the leading two terms from this series we get
+				<md>
+					<mrow> E_z \amp = \dfrac{2 k q}{R^2} \times \dfrac{1}{2}\epsilon, </mrow>
+					<mrow>  \amp = \dfrac{  k q}{R^2} \times  \dfrac{R^2}{D^2}, </mrow>
+					<mrow> \amp = k \dfrac{q}{D^2},</mrow>
+				</md>
+				which is the electric field at a distance <m>D</m> from a point charge <m>q</m>.								
+
+			</p>
+			</solution>
+
+			<solution><title> (c) </title>
+				<p> (c)
+					Let us introduce another symbol for the small parameter.
+					<me>
+						\delta = \dfrac{D}{R},
+					</me>
+					We will take <m>\delta\rightarrow 0</m> limit. Writing in <m>\delta</m> and <m>R</m>
+					<me>
+						E_z = \dfrac{2 k q}{R^2} \left( 1 - \dfrac{\delta}{\sqrt{1 + \delta^2 }}  \right).
+					</me>
+					The expansion now gives
+					<me>
+						\left( 1 - \dfrac{\delta}{\sqrt{1 + \delta^2 }}  \right) \approx  1.
+					</me>
+					Therefore, we get
+					<me>
+						E_z = \dfrac{2 k q}{R^2},
+					</me>
+					which we can write back in <m>\sigma</m>, the charge density as
+					<me>
+						E_z = 2\pi k \sigma.
+					</me>
+					In terms of <m>\epsilon_0</m>, the permittivity of vacuum, with <m>k = 1/4\pi\epsilon_0</m>, we get
+					<me>
+						E_z = \dfrac{\sigma}{2\epsilon_0}.
+					</me>
+					This says that when you get very close to a charged surface, the electric field becomes a constant, independent of the distance to the surface. This turns out to be an important result with many applications.
+
+
+				</p> 
+			</solution>
+			
+		
+	</exercise>
+
+
+		</subsubsection>
+
+
+		<subsubsection xml:id="subsection-Electric-Field-Near-a-Large-Uniformly-Charged-Sheet"><title> Electric Field Near a Large Uniformly Charged Sheet </title>
+			<p>
+				Suppose you spray one side of a very large plastic sheet uniformly with  charge density <m>\sigma</m> (SI unit: <m> \text{C/m}^2</m>) (<xref ref="fig-e-field-of-charged-sheet" />). The electric field of this system is very useful in study of capacitors as we will see in a later chapter.
+			</p>
+			<p>
+				We will find electric field at a space point close to the sheet. By close to the sheet, we mean that if the dimensions of sheet are <m>L\times L</m> and the distance to the space point is <m>D</m>, then <m>D \lt \lt L </m>. 
+			</p>
+			<p>
+				If the sheet is large, then the physical situation of the feild point P is same as teh case of a point near the center of a uniformly charged disk. The magnitude in that case was given in Eq. <xref ref="eq-e-field-near-center-of-a-disk"/>. Therefore, the magnitude of electric field of an infintely large sheet is
+				<men>
+					E_P = \dfrac{\sigma}{2\epsilon_0}.
+				</men>
+				The direction of electric field will be away from the sheet both above and below the sheet for a positively charged sheet, i.e., when <m>\sigma \gt 0</m>, and the direction will be towards the sheet. The direction is also perpendicular to the sheet itself as shown in <xref ref="fig-e-field-of-charged-sheet" />.
+			</p>
+			<figure xml:id="fig-e-field-of-charged-sheet">
+				<caption>
+					The electric field from an infintely large charged sheet with charge density <m>\sigma</m> (SI unit: <m> \text{C/m}^2</m>) is independent of the location of point P. It has magnitude <m>\sigma/2\epsilon_0</m>, where <m>\epsilon_0</m> is the permittivity of vacuum. The direction is perpendicular to sheet, away from the sheet above and below the sheet if <m>\sigma</m> is positive. The electric field arrows shown in the figure will be reversed for negative charges.
+				</caption>
+
+				<image source="./images/coulombs-law/e-field-of-charged-sheet.png" width="60%"/>
+			</figure>
+		</subsubsection>
+
+
+		<subsubsection><title> Electric Field of Two Oppositely Charged Sheets Facing Each Other</title>
+			<p>
+				Suppose you spray one side of a very large plastic sheet uniformly with a positive charge density <m>+\sigma</m> (SI unit: <m> \text{C/m}^2</m>) and another sheet with negative charge density <m>-\sigma</m>. Then, we place them parallel to each other  (<xref ref="fig-e-field-of-two-charged-sheets" />). This arrangement is called a <term>parallel plate capacitor</term> and is very important on sotrage of electrical energy as we will see in a later chapter. 
+			</p>
+
+			<sidebyside widths="50% 10% 40%">
+
+				<p>
+					We can easily work out electric field  here by superposing the electric fields of the each sheet already given in <xref ref="subsection-Electric-Field-Near-a-Large-Uniformly-Charged-Sheet"/>. 
+					<!-- We should note that there are two regions of space: (1) space between the plates and (2) space outside. --> 
+					As <xref ref="fig-e-field-of-two-charged-sheets" /> shows, the electic fields of the two plates are in the same direction in the space between the plates  but they are in opposite to each other in the outside region.  
+				</p>
+				<p></p>
+				<figure xml:id="fig-e-field-of-two-charged-sheets">
+
+					<caption>
+						The electric field of two oppositely charged sheets facing each other.
+					</caption>
+						
+					<image source="./images/coulombs-law/e-field-of-two-charged-sheets.png" width="50%"/>
+					
+				</figure>
+			</sidebyside>
+			<!-- <sidebyside widths="50% 50%"> -->
+				
+				<!-- <p>
+				
+					The electric field of two oppositely charged sheets facing each other. Each plate has same charge density <m>\sigma</m> but of opposite types. In the space between the plates, the electric fields of the two plates are in the same direction, therefore, they add, giving twice as large a field as that of one sheet. In the outside space, the electric field of the positive and negative plates cancel each other.
+				</p> -->				
+
+				<!-- <figure xml:id="fig-e-field-of-two-charged-sheets">
+
+					<caption>
+					</caption>
+						
+					<image source="./images/coulombs-law/e-field-of-two-charged-sheets.png" width="50%"/>
+					
+				</figure>
+			</sidebyside> -->
+			<p>
+				Therefore, in the space between the plates, we get twice field as that of one sheet, and, in the outside space, we get zero field.
+ 
+				<me>
+					E = \begin{cases} 
+						\dfrac{\sigma}{\epsilon_0} \amp \text{between plates}, \\
+						0 \amp \text{outside}, \end{cases}
+				</me>
+ 				with direction from the positive plate to the negative plate.
+			</p>
+
+
+	<exercise xml:id="ex-Electric-Charge-in-Clouds-from-Electric-Field-Readings"><title>Electric Charge in Clouds from Electric Field Readings</title>
+
+		<statement>
+			<p>
+				Clouds sometimes build up a net negative charge directly above ground and ground in teh vicinity is net positively charged. Suppose we model this arrangement as a parallel plate capacitor of dimension <m>1\text{ km}</m> by <m>1\text{ km}</m> separated by <m>100\text{ m}</m>. What will be the total charge on the cloud facing the Earth if electric field is measured to be <m>400\text{ N/C}</m>? Note that uppper part of cloud in this situation is net positive so that cloud as a whole is nearly neutral.
+			</p>
+			<p>
+				Data: <m>\epsilon_0 = 8.854\times 10^{-12}</m> in SI units.
+			</p>
+		</statement>
+		<hint><p>Use <m>E=\sigma/\epsilon_0</m>.</p></hint>
+		<answer><p> <m>3.54 \times 10^{-3}\text{ C}</m>. </p></answer>
+		<solution>
+			<p>
+				From the electric field  between plates of a parallel plate capacitor we have
+				<me>
+					E = \sigma/\epsilon_0,
+				</me>
+				where <m>\sigma = Q/A</m>. Therefore, we have
+				<md>
+					<mrow> Q \amp = \epsilon_0 E A</mrow>
+					<mrow>  \amp = 8.854\times 10^{-12} \times 400 \times 10^6 = 3.54 \times 10^{-3}\text{ C}.</mrow>
+				</md>
+				
+
+			</p>
+		</solution>
+	</exercise>
+
+
+			
+		</subsubsection>
+
+
+
+
+	</subsection>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

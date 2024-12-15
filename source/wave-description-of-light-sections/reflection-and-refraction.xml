@@ -1,0 +1,311 @@
+<section xml:id="section-refelection-and-refraction-of-light"><title> Reflection and Refraction </title>
+	<introduction>
+        <p>
+        	Suppose a monochromatic plane wave in air is incident on a plane surface of glass of refractive index <m>n</m> at an angle  <m>\theta_1</m>.  A reflected ray would come back in air at angle  <m>\theta^{\prime}_1</m> and a refracted ray would be transmitted into the glass at angle  <m>\theta_2</m>.  Can we see this in terms of wave picture of light?
+        </p>
+        <p>
+        	To see the reflection and refraction angles, we only need to look at the wavefronts of the three waves. First, note that frequencies of incident, reflected and refracted light will be equal to each other.  But, \since refractive indices of air less than that of glass, wavelength will be larger in air and smaller in glass. <xref ref="fig-wave-picture-of-reflection-and-refraction-of-light"/> shows these by the spacings between the wavefronts. 
+		</p>
+
+
+        <figure xml:id="fig-wave-picture-of-reflection-and-refraction-of-light">
+        	<caption>
+        		  Reflection and refraction of plane waves.
+        	</caption>
+        	<image source="./images/wave-description-of-light/wave-picture-of-reflection-and-refraction-of-light.png" width="90%"/>
+        </figure>
+
+    </introduction>
+    <subsection xml:id="subsection-Fresnels-Equations"><title>Fresnel's Equations</title>
+        <p>
+        	To study the intensities in the reflected and transmitted waves, we need to actually solve Maxwell's equations for this situation. We represent each wave in the plane wave form. For instance, electric field wave will be
+        	<me>
+        		\vec E = \vec E_0 \cos(\vec k \cdot \vec r - \omega t),
+        	</me>
+        	where <m>\vec E_0</m> amplitude as vector in the direction of the electric field, <m>\vec k</m> is the wave propagation vector, which is product of wavenumber <m>k</m> and unit vector in the direction of wave, and <m>\omega</m> is the angular frequency of the wave. Here, <m>\vec r</m> is the position and point in space andn <m>t</m> is the instant. The associated magnetic field is similar
+        	<me>
+        		\vec B = \vec B_0 \cos(\vec k \cdot \vec r - \omega t),
+        	</me>
+        	with the following relation between the amplitudes for wave in vacuum, 
+        	<me>
+        		B_0 = \frac{E_0}{c},
+        	</me>
+        	and the directions of the electric field, magnetic field, and propagation are related by
+        	<me>
+        		\vec k\ \ \text{  in the direction of }\ \ \vec E\times \vec B.
+        	</me>
+        	The full calculations using Maxwell's equations to understand relations between the amplitudes and direcions is beyond the scope of this book. I will quote here some of the important results for a monochromatic light. 
+        </p>
+        <subsubsection><title>Plane of Incidence and Polarizations</title>
+	        <p>
+	        	The amplitudes of reflected and transmitted waves depend on the direction of the electric field. This direction is given with respect to the plane containing the directions of the incident, reflected, and transmitted waves as shown in <xref ref="fig-plane-of-polaroization-and-polarizations"/>. This plane is called <term>plane of incidence</term>. If electric field is perpendicular to the plane of incidence, we say the wave is <term>S polarized</term> or <term>transverse electric </term> or <term>TE</term>. If the direction of electric field is in the plane of incidence, then the direction of magnetic field will be perpendicular to the plane of incidence - we call these waves <term>P poarized</term>  or <term>transverse magnetic </term> or <term>TM</term>. 
+	        </p>
+
+	        <figure xml:id="fig-plane-of-polaroization-and-polarizations">
+	        	<caption>
+	        		   Plane of Incidence and S (<m>\perp</m>) and P (<m>\parallel</m>) polarizations. S and P polarizations are also called TE and TM polarizations. The electric fields for S polarization are labeled with <m>\perp</m>, to indicate that they are perpendicular to the plane of incidence and those for P (meaning parallel) polarization are labeled with <m>\parallel</m>.
+	        	</caption>
+	        	<image source="./images/wave-description-of-light/plane-of-polaroization-and-polarizations.png" width="80%"/>
+	        </figure>
+
+		</subsubsection>
+		<subsubsection><title>Reflection and Transmission Coefficients</title>
+			<p>
+				Let <m>E_{0i}</m>, <m>E_{0r}</m>, and <m>E_{0t}</m>  be the electric field amplitudes in the incident, reflected and refracted waves respectively. 
+				Maxwell's equations require that the component of electric and magnetic fields that are parallel to the interface be same on the two sides of the interface - these are called <term>boundary conditions</term>. Applying these boundary conditions leads to equations that can be solved for reflection amplitudes and transmission amplitudes in terms of incidence amplitudes. Therefore, we define the ratios <m>E_{0r}/E_{0i}</m> and <m>E_{0t}/E_{0i}</m> to write the answers for the two polarization cases. These ratios are called <term> reflection coefficient</term> and <term> transmission coefficient</term>, respectively, and denoted by <m>\rho</m> and <m>\tau</m>.
+				<md>
+					<mrow> \amp \rho = \frac{E_{0r}}{E_{0i}}, \ \ \ \tau = \frac{E_{0t}}{E_{0i}}.</mrow>
+				</md>
+				Additionally, boundary conditions also show that the waves must satisfy law of reflection and Snell's law of refraction. With incidence angle <m>\theta_1</m>, reflected angle <m>\theta_1^\prime</m>, refracted angle <m>\theta_2</m>, and the refractive indices <m>n_1</m> and <m>n_2</m>, by matching of the phases of the three waves we get the usual ray optics laws.
+				<md>
+					<mrow> \amp \theta_1^\prime = \theta_1,\ \ \  n_1\, \sin\theta_1 = n_2\, \sin\theta_2.</mrow>
+				</md>
+			</p>
+		</subsubsection>
+
+		<subsubsection><title>Fresnel Equations for S Polarized Waves</title>
+			<p>
+				<xref ref="fig-reflection-transmission-s-polarization"/> shows rays in the plane of incidence and the direction of electric  and magnetic fields in the electromagnetic wave picture of light. 
+			</p>
+
+	        <figure xml:id="fig-reflection-transmission-s-polarization">
+	        	<caption>
+	        		The electric field polarizations for reflection and transmission waves. The boundary condition enforces <m> E_{i\perp}  + E_{r\perp} = E_{t\perp}</m>. When you examine magnetic field, you will find it parallel to the plane. You will need to work out the component of the magnetic field that is parallel to the interface. Suppose horozontal axis is the <m>x</m> axis, then you would enforce <m> B_{ix\perp}/\mu_1  + B_{rx\perp}/\mu_1 = B_{tx\perp}/\mu_2</m>, where <m>\mu</m> is magnetic susceptibility. Normally we have <m>\mu_1=\mu_2\approx\mu_0</m>.
+	        	</caption>
+	        	<image source="./images/wave-description-of-light/reflection-transmission-s-polarization.png" width="70%"/>
+	        </figure>		
+
+			<p>
+				For S polarized waves we denote the reflection and transmission coefficients as <m>\rho_\perp (= E_{0r\perp}/E_{0i\perp}) </m> and <m>\tau_\perp  (= E_{0t\perp}/E_{0i\perp}) </m> respectively. There are several alternative ways to write these solutions, using Snell's law and the relation between electric susceptibility and refractive index, <m>\epsilon = n^2</m>. Following are two useful expressions of <m>\rho_\perp</m> and <m>\tau_\perp</m>  when we use <m>\mu_1=\mu_2\approx\mu_0</m>.
+
+	        	<mdn>
+	        		<mrow  xml:id="eq-rho-for-s-polarization"> \rho_{\perp} \amp = \frac{n_1\cos\theta_1 - n_2\cos\theta_2}{n_1\cos\theta_1 + n_2\cos\theta_2}  = \frac{\sin(\theta_2-\theta_1)}{\sin(\theta_2+\theta_1)}. </mrow>
+	        		<mrow  xml:id="eq-tau-for-s-polarization"> \tau_{\perp} \amp  = \frac{2n_1\cos\theta_1}{ n_1\cos\theta_1 + n_2\cos\theta_2 }   = \frac{2\sin\theta_2 \cos\theta_1}{\sin(\theta_2+\theta_1)}. </mrow>
+	        	</mdn>			
+			</p>
+			
+
+		</subsubsection>
+
+		<subsubsection><title>Fresnel Equations for P Polarized Waves</title>
+			<p>
+				<xref ref="fig-reflection-transmission-p-polarization"/> shows rays in the plane of incidence and the direction of electric and magnetic fields in the electromagnetic wave picture of light for the case of P-polarization.  
+			</p>
+
+			
+	        <figure xml:id="fig-reflection-transmission-p-polarization">
+	        	<caption>
+	        		The electric field polarizations for reflection and transmission waves. The boundary condition enforces <m> B_{i\parallel}/\mu_1  + B_{r\parallel}/\mu_1 = B_{t\parallel}/\mu_2</m>. Note that the direction of the reflected magnetic field is flipped compared to the direction of the incident magnetic field \since the direction of the wave is cross-product of electric and magnetic fields. You will need to work out the component of the electric field that is parallel to the interface. Suppose horozontal axis is the <m>x</m> axis, then you would enforce <m> E_{ix\parallel}  + E_{rx\parallel} = E_{tx\parallel}</m>.
+	        	</caption>
+	        	<image source="./images/wave-description-of-light/reflection-transmission-p-polarization.png" width="70%"/>
+	        </figure>
+			<p>
+				For P polarized waves we denote the reflection and transmission coefficients as <m>\rho_\parallel (= E_{0r\parallel}/E_{0i\parallel})</m> and <m>\tau_\parallel  (= E_{0t\parallel}/E_{0i\parallel})</m> respectively. There are several alternative ways to write <m>\rho_\parallel</m> and <m>\tau_\parallel</m>, using Snell's law and the relation between electric susceptibility and refractive index, <m>\epsilon = n^2</m>. Following are two useful expressions of <m>\rho_\parallel</m> and <m>\tau_\parallel</m> when we use <m>\mu_1=\mu_2\approx\mu_0</m>.
+
+	        	<mdn>
+	        		<mrow xml:id="eq-rho-for-p-polarization"> \rho_{\parallel} \amp   = \frac{n_1\cos\theta_2 - n_2\cos\theta_1}{n_1\cos\theta_2 + n_2\cos\theta_1}  = \frac{\tan(\theta_1-\theta_2)}{\tan(\theta_1+\theta_2)}. </mrow>
+	        		<mrow  xml:id="eq-tau-for-p-polarization"> \tau_{\parallel} \amp   = \frac{2n_1\cos\theta_1}{ n_1\cos\theta_2 + n_2\cos\theta_1 }  = \frac{2\sin\theta_2 \cos\theta_1)}{\sin(\theta_1+\theta_2)\cos(\theta_1-\theta_2)}.. </mrow>
+	        	</mdn>			
+			</p>
+
+		</subsubsection>
+
+	</subsection>
+ 
+
+	<subsection><title>Reflection Coefficient, Brewster's and Critical Angles</title>
+		<p>
+			In <xref ref="fig-fresnel-reflections-from-matlab-edited"/> I have plotted reflecion coefficients for reflection when light is incident from air onto glass. Since refractive index of the incident medium is less than that of the second medium, we do not get total internal reflection. Instead, we seen different behaviors of the two polarizations. The S-polarized reflected wave amplitude is negative compared to the incident wave amplitude. With increasing angle, <m>|\rho_\perp|</m> increases to <m>1</m> when incidence angle in <m>90^\circ</m>, i.e., the ray is just grazing on the glass plate.
+		</p>
+		<p>
+			The P wave shows some strange behavior. The reflection coefficient actually vanishes at a special angle, called <term>Brewster's angle</term>.  At this angle <m>\rho</m> vanishes. Let us denote this special incidence angle by <m>\theta_B</m>. When we set <m>\theta_1=\theta_B</m> in Eq. <xref ref="eq-rho-for-p-polarization"/> and set that to zero, we find a formula for <m>
+			theta_B</m> in terms of the refractive indices.
+			<me>
+				n_1\sqrt{1- (n_1/n_2)^2 \sin^2\theta_B} - n_2\cos\theta_B = 0.
+			</me>
+			You can solve this to find that
+			<me>
+				\sin\theta_B = \frac{n_2}{\sqrt{n_1^2 + n_2^2}},
+			</me>
+			where I ignored negative root \since angle here is positive. We can get <m>\cos\theta_B</m> from it and actually, write a simpler formula for Brewster's angle.
+			<men>
+				\tan \theta_B = \frac{n_2}{n_1}.
+			</men>
+			For ray from air into glass, we have <m>n_1=1.0</m> and <m>n_2=1.55</m>. This gives
+			<men>
+				\theta_B = \tan^{-1} \left( n_2 / n_1 \right) = \tan^{-1} \left( 1.55 / 1.0 \right) = 57.2^\circ.
+			</men>
+
+		</p>
+
+        <figure xml:id="fig-fresnel-reflections-from-matlab-edited">
+        	<caption>
+        		 Reflection coefficients for reflection when light is incident from air (lower refractive index medium) on glass (higher refractive index medium) for two types of polarizations. In the S polarization case (subscript <m>\perp</m>), the reflected amplitude is negative compared to the incident amplitude; that is, the reflected wave is flipped in phase compared to the incident wave. In the P polarization case (subscript <m>\parallel</m>), the reflected amplitude is negative for small values but becomes positive, vanishing at a special angle called <term>Brewster's angle</term>.
+        	</caption>
+        	<image source="./images/wave-description-of-light/fresnel-reflections-from-matlab-edited.png" width="90%"/>
+        </figure>
+
+        <p>
+        	To study critical angle, we need to study incidence from a medium of higher refractive index into a medium of lower refractive index. For instance, a ray in glass being incident on glass/air interface. We see that same critical angle <m>\theta_c</m> occurs for both polarizations when the incidence angle is
+        	<men>
+        		\theta_c = \sin^{-1}\left( n_2 / n_1 \right).
+        	</men>
+        	In the present example, we have <m>n_1=1.55</m> and <m>n_2=1.0</m>. Therefore,
+        	<me>
+        		\theta_c = \sin^{-1}\left( 1.0 / 1.55 \right) = 40.2^\circ.
+        	</me>
+        	But, only the P-polarization reflected wave vanishes at the Brewster's angle, which will be different the Brewster's angle of <m>57.5^\circ</m> we found above \since the media are switched now.
+        	<me>
+        		\theta_B = \tan^{-1}\left( n_2 / n_1 \right) = \tan^{-1}\left( 1.0 / 1.55 \right) = 32.8^\circ.
+        	</me>
+        </p>
+
+        <figure xml:id="fig-fresnel-p-reflections-from-matlab-edited">
+        	<caption>
+        		 Reflection coefficients for reflection when light is incident from aglass (higher refractive index medium) on air (lower refractive index medium) for two types of polarizations. In the S polarization case (subscript <m>\perp</m>), the reflected amplitude is positive and increases with angle till it becomes the max allowed of <m>+1</m>, i.e., there is no transmitted ray at this point. This incidence angle is called <term>critical angle</term>. It occurs when incidence angle, <m>\theta_1 = \sin^{-1}\left( n_2/n_1\right)</m>. In the P polarization case (subscript <m>\parallel</m>), the reflected amplitude is positive for small values but becomes negative, vanishing at the  <term>Brewster's angle</term>; once <m>\rho_\parallel</m> becomes negative it keeps becoming more negative till it reaches the minimum <m>-1</m>. The incidence angle at which this happens is the same critical angle at which no transmission into air takes place in this case.
+        	</caption>
+        	<image source="./images/wave-description-of-light/fresnel-p-reflections-from-matlab-edited.png" width="90%"/>
+        </figure>
+        
+	</subsection>
+
+
+	<subsection><title>Reflectance and Transmittance</title>
+
+		<p>
+			<xref ref="fig-reflectance-and-transmittance-light"/>(a) shows incident,reflected, and transmitted beams with area <m>A</m> at the interface and the corresponding cross-sectional areas of the beams <m>A_i</m>, <m>A_r</m>, and <m>A_t</m>. From the geometry of the incident beam shown in figure (b), you can show that
+			<me>
+				A_i = A\cos\theta_1.
+			</me>
+			Similarly, for other beams we will get
+			<me>
+				A_r = A\cos\theta_1,\ \ A_t = A\cos\theta_2.
+			</me>
+		</p>
+        <figure xml:id="fig-reflectance-and-transmittance-light">
+        	<caption>
+        		  (a) Incident, reflected, and transmitted beams. (b) Geometry for calculating the relation between the area illuminated at the interface and the cross-sectional area of the incident beam.
+        	</caption>
+        	<image source="./images/wave-description-of-light/reflectance-and-transmittance-light.png" width="90%"/>
+        </figure>
+
+		<p>
+			Now power in each beam will be related to their areas of cross-sections. Let <m>I_i</m>, <m>I_r</m>, and <m>I_t</m> be the intensities of the three beams. Recall that intensity in an electromagnetic wave is given by
+			<me>
+				I = \frac{1}{2}\epsilon v E_0^2,
+			</me>
+			where <m>\epsilon </m> is the electric susceptibility of the medium, <m>v</m> the speed of light in that medium, and <m>E_0</m> the electric field amplitude of the EM wave. We can write the constant factors  multiplying the square of the amplitude by using <m>\epsilon=n^2</m> and <m>v=c/n</m> and get the following useful expression of intensity, which we will use below.
+			<men>
+				I = \frac{c}{2} n E_0^2.
+			</men>
+			Since intensity is power per unit area,  power in each beam will be
+			<me>
+				P_i = I_i A_i,\ \ P_r = I_r A_r,\ \ P_t = I_t A_t.
+			</me>
+			From energy conservation, we expect that
+			<men>
+				P_r + P_t = P_i
+			</men>
+			Dividing both sides by <m>P_i</m> can remove the need to <q>know</q> the area of cross-section.
+			<men xml:id="eq-energy-conservation-in-terms-of-power-3-beams">
+				\frac{P_r}{P_i} + \frac{P_t}{P_i} = 1.
+			</men>
+			These ratios are called <term>reflectance</term> and <term>transmittance</term>. They are denoted by <m>R</m> and <m>T</m>, respectively.
+			<mdn>
+				<mrow xml:id="eq-reflectance-definition">\amp  \text{Reflectance, } R = \frac{P_r}{ P_i} = \frac{I_r}{I_i}.</mrow>
+				<mrow xml:id="eq-transmittance-definition">\amp  \text{Transmitance, } T = \frac{P_t}{ P_i} = \frac{I_t \cos\theta_2}{I_i \cos\theta_1}.</mrow>
+			</mdn>
+			Rewriting Eq. <xref ref="eq-energy-conservation-in-terms-of-power-3-beams"/>, we find that
+			energy conservation in the reflection/refraction of an incident beam then takes a simple form.
+			<men>
+				R + T = 1.
+			</men> 
+
+		</p>
+		<p>
+			<alert> Verifying Energy Conservation </alert>
+		</p>
+		<p>
+			By expressing <m>R</m> and <m>T</m> in terms of intensities and then replacing intensities, we can write <m>R</m> and <m>T</m> in terms of reflection and transmission coefficients, <m>\rho</m> and <m>\tau</m>.
+			<md>
+				<mrow> R \amp = \frac{I_r}{I_i} = \frac{\frac{c}{2} n_1 E_{0r}^2}{\frac{c}{2} n_1 E_{0i}^2} = \rho^2.  </mrow>
+				<mrow> T \amp = \frac{I_t\cos\theta_2}{I_i\cos\theta_1} = \frac{\frac{c}{2} n_2 E_{0t}^2 \cos\theta_2}{\frac{c}{2} n_1 E_{0i}^2 \cos\theta_1}   = \frac{n_2\cos\theta_2}{n_1\cos\theta_1}\ \tau^2.</mrow>
+			</md>
+			Let's first verify for S-polarization. Using <m>\rho</m> and <m>\tau</m> from Eqs. <xref ref="eq-rho-for-s-polarization"/> and <xref ref="eq-tau-for-s-polarization"/>, we get
+			<md>
+				<mrow> R + T \amp = \rho^2 + \frac{n_2\cos\theta_2}{n_1\cos\theta_1}\ \tau^2 </mrow>
+				<mrow> \amp = \left( \frac{n_1\cos\theta_1 - n_2\cos\theta_2}{n_1\cos\theta_1 + n_2\cos\theta_2} \right)^2</mrow>
+				<mrow> \amp \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  + \frac{n_2\cos\theta_2}{n_1\cos\theta_1} \left( \frac{2n_1\cos\theta_1}{ n_1\cos\theta_1 + n_2\cos\theta_2  }\right)^2</mrow>
+				<mrow> \amp = \frac{(n_1\cos\theta_1 - n_2\cos\theta_2 )^2 + 4n_1n_2\cos\theta_1\cos\theta_2 }{ (n_1\cos\theta_1 + n_2\cos\theta_2 )^2} = 1. </mrow>
+			</md>
+			How about for the P-polarization? Using <m>\rho</m> and <m>\tau</m> from Eqs. <xref ref="eq-rho-for-p-polarization"/> and <xref ref="eq-tau-for-p-polarization"/>, we get
+			<md>
+				<mrow> R + T \amp = \rho^2 + \frac{n_2\cos\theta_2}{n_1\cos\theta_1}\ \tau^2 </mrow>
+				<mrow> \amp = \left( \frac{n_1\cos\theta_2 - n_2\cos\theta_1}{n_1\cos\theta_2 + n_2\cos\theta_1} \right)^2</mrow>
+				<mrow> \amp \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ + \frac{n_2\cos\theta_2}{n_1\cos\theta_1} \left( \frac{2n_1\cos\theta_1}{ n_1\cos\theta_2 + n_2\cos\theta_1  }\right)^2</mrow>
+				<mrow> \amp = \frac{(n_1\cos\theta_2 - n_2\cos\theta_1 )^2 + 4n_1n_2\cos\theta_1\cos\theta_2 }{ (n_1\cos\theta_2 + n_2\cos\theta_1 )^2} = 1. </mrow>
+			</md>
+
+		</p>
+
+
+	</subsection>
+
+
+	<subsection><title>Reflection at Normal Incidence</title>
+		<p>
+			You saw above that formulas for reflectance <m>R</m> and transmittance <m>T</m> in Eq. <xref ref="eq-reflectance-definition"/> and <xref ref="eq-transmittance-definition"/> become very complicated once we write out the details of the reflection and trtansmission coefficient. They show that  <m>R</m> and <m>T</m> depend on incident angle and refractive indices in an unwieldy way. For many applications, such detail is not necessary. A particularly useful case is that of near normal incidence. In that case <m>\theta_1 \approx 0</m>. Now, with this value of incicenc angle we find that
+			<md>
+				<mrow>\amp R = \left( \frac{n_2 - n_1}{n_2 + n_1} \right)^2,\ \ \ T = \frac{4n_1n_2}{ \left( n_2 + n_1\right)^2 }.</mrow>
+			</md>
+			Its much easier to use these formulas to get some rough idea of what will happed at an interface. For instane, at the beach if you looking at the water <m>(n=1.33)</m> from above, you would expect,
+			<me>
+				R = 0.02,\ \ T = 0.98.
+			</me> 
+			That is, about <m>2\%</m> of light energy will be reflected, the rest will get into the water. Since these equations are symmetric in <m>n_1</m> and <m>n_2</m>, it does not matter which side of the interface light came from. That is, if you have a light source below the water level, <m>98\%</m> of light energy from that source will also be transmitted in the air.  
+		</p>
+	</subsection>
+
+
+	<exercise xml:id="exercise-Calculating-Brewsters-Angles-for-Water-Glass-Interface"><title>Calculating Brewster's Angles for Water/Glass Interface</title>
+
+		<statement>
+			<p>
+				Suppose refractive index of water and glass are <m>1.33</m> and <m>1.5</m> respectively.
+			</p>
+			<p>
+				(a) What is the Brewster's angle if incident ray comes from the water side?
+			</p>
+			<p>
+				(b) What is the Brewster's angle if incident ray comes from the glass side?
+			</p>
+		</statement>
+		<hint><p> Note that Brewster's angle is given by <m>\tan^{-1}(n_2/n_1)</m>, where <m>n_1</m> is the incindent side and <m>n_2</m> is the transmitted or refracted side. </p></hint>
+		<answer><p>
+			(a) <m>48.4^\circ</m>. (b) <m>41.6^\circ</m>.
+
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)
+				Using the formula <m>\tan^{-1}(n_2/n_1)</m> with <m>n_1</m> the refractive index of water and <m>n_1</m> the refractive index of glass we get
+				<me>
+					\theta_B = \tan^{-1}\left( \frac{1.5}{1.33}\right) = 48.4^\circ.
+				</me> 
+
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)
+				Using the formula <m>\tan^{-1}(n_2/n_1)</m> with <m>n_1</m> the refractive index of glass and <m>n_1</m> the refractive index of water we get
+				<me>
+					\theta_B = \tan^{-1}\left( \frac{1.33}{1.5}\right) =  41.6^\circ.
+				</me> 
+
+			</p>
+		</solution>
+	</exercise>
+
+
+</section>

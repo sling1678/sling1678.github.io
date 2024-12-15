@@ -1,0 +1,431 @@
+<section xml:id="forces-Net-Force"> <title> Net Force </title>
+	<introduction> 
+
+		<p>
+			What happens when several forces act on a single body?
+			For simplicity, here we consider a body of fixed mass <m> m </m>.
+			Second law already tells us what to do - each force will cause acceleration. The acceleration we will observe is the net acceleration. For <m> n </m> forces, <m> \vec F_1</m>, <m> \vec F_2</m>, <m> \cdots </m>, <m> \vec F_n</m>, let the accelerations be <m> \vec a_1</m>, <m> \vec a_2</m>, <m> \cdots </m>, <m> \vec a_n</m>, respectively, the acceleration of the body will be
+			<men xml:id="eq-net-acceleration">
+				\vec a_{\text{net}} = \vec a_1 + \vec a_2 + \cdots + \vec a_n. 
+			</men>
+			where each individual acceleration is given by the second law as
+			<md>
+				<mrow> \amp \vec a_1 = \dfrac{\vec F_1}{m}, </mrow>
+				<mrow> \amp \vec a_2 = \dfrac{\vec F_2}{m}, </mrow>
+				<mrow> \amp  \cdots </mrow>
+				<mrow> \amp \vec a_n = \dfrac{\vec F_n}{m}. </mrow>
+			</md>
+			Adding them all, we get the observed acceleration, from the sum of all forces. 
+			<men>
+				\vec a_{\text{net}} = \dfrac{1}{m} \left( \vec F_1 + \vec F_2 + \cdots + \vec F_n\right).
+			</men>
+		</p>
+		<p>
+			For instance, if you are pushed by two friends with equal-magnitude forces, one pointed East and the other pointed West. The net force on you will be zero and you will have no acceleration. 
+		</p>
+		<p>
+			But, you know that if only one of your friends pushed on you, say the friend who was pushing in the East direction, you will have acceleration towards East. We say that, when both friends were pushing on you from opposite directions, each of your friend caused their own acceleration, but their vector sum cancelled out, resulting in no acceleration for you.
+		</p>
+
+		<p> 
+			Now, if one friend pushed you towards East and the other towards North with an equal-magnitude force, your net acceleration will be in the North-East direction. The friend pushing East caused acceleration towards East, and the friend pushing North caused acceleration towards North. 
+		</p>
+		<p>
+			The net result is the vector sum of the two, which is the observed acceleration. Therefore, rather than compute accelerations of each and then compute the vector sum of accelerations, we compute the vector sum of the forces, and then compute one acceleration from the net force.
+		</p>
+
+		<p>
+			<idx>Net Force</idx>
+			We call the sum of all forces,  the <term> net force </term>.
+			<mdn>
+				<mrow xml:id="eq-net-force"> \amp \vec F_{\text{net}} = \vec F_1 + \vec F_2 + \cdots + \vec F_n,</mrow>
+			</mdn>
+			Often, we write <m> \vec a_{\text{net}} </m> simply as <m> \vec a</m>, and write the result in the following way.		
+			<men xml:id="eq-net-force-equals-ma">
+				\vec F_{\text{net}} = m \vec a.
+			</men>
+			We may also omit <m>\text{net}</m> from the force and indicate the net force as simply <m> \vec F</m>.
+
+		</p>
+		<p>
+			(Calculus) 
+			For the general case, we will need to work with the general equation, Eq. <xref ref="eq-second-law-momentum-1"/>, in which the force would now be the net force, Eq. <xref ref="eq-net-force"/>, and the momentum will the momentum of the body, <m> \vec p = m \vec v</m>. 
+
+			<men xml:id="eq-second-law-momentum-1">
+				\vec F_{\text{net}} = \dfrac{d\vec p}{dt}.
+			</men>
+		</p>
+
+	</introduction>
+
+
+	<subsection><title>Free-body Diagram</title><idx>Free-body Diagram</idx>
+		<p>
+			If our object of interest is a point particle, all forces on that particle will act at one point, i.e., the point where the particle  is currently located. But, when an object has a finite size, forces on the object can act any of the outer surface and at volume points occupied by the object. The forces acting throughout the volume include gravitational, eletric, and magnetic. The forces on the surface include friction, air drag, normal force, etc. 
+		</p>
+		<p>
+			To find the net force on a finite object, we first identify all forces at the point they act and draw them out on the body accordingly. For gravity, we assume forces acting at all volume points add up and can be placed on a special point, called center of gravity of the body. This is the first step.
+		</p>
+		<p>
+			But, then, to add them vectorially, especially using the analytic method of vector addition, we draw another figure in which we <alert>replace the finite body by a single point </alert> and draw force arrows <alert>coming out of that point</alert> in their original directions. This new diagram is is called a <term>free-body diagram (FBD)</term>.
+		</p>
+		<p>
+			For instance, <xref ref="fig-free-body-diagram-illustration"/> shows three forces on a block on an inclined surface - (1) weight (the name for the gravity force) <m>\vec W</m>, is placed acting on the center of gravity, (2) normal (the upward push by the incline surface) <m>\vec F_N</m>, and (3) friction (from the incline surface horizontal to the incline surface) <m>\vec F_\text{fr}</m>. Corresponding free-body diagram removes the block and replaces it wth a point.
+		</p>
+		<figure xml:id="fig-free-body-diagram-illustration">
+			<caption>Illustration of a free-body diagram. </caption>
+			<image source="./images/forces/free-body-diagram-illustration.png" width="80%" />
+		</figure>
+
+
+
+
+
+	<!-- <subsection> <title> (Calculus) General Case </title>
+		<p>
+
+			For the general case, we will need to work with the general equation, Eq. <xref ref="eq-second-law-momentum"/>, in which the force would now be the net force, Eq. <xref ref="eq-net-force"/>, and the momentum will the momentum of the body, <m> \vec p = m \vec v</m>. 
+
+			<me >
+				\vec F_{\text{net}} = \dfrac{d\vec p}{dt}.
+			</me>
+			We can derive this equation by setting up <m> n </m> equations, one for each force, causing its own rate of momentum change, and then summing them all will result in net rate at which the observed momentum changes.
+		</p>
+
+	</subsection> -->
+
+	<example xml:id="ex-Net-Force-on-a-Box-Pulled-by-Two-Forces-in-Perpendicular-Directions"><title> Net Force on a Box Pulled by Two Forces in Perpendicular Directions</title>
+
+		<statement>
+			<p> </p>
+			<sidebyside widths="60% 10% 30%">
+				<p>	
+					A box is pulled by a force of <m>40\text{ N}</m> in the horizontal direction and a force of <m>30\text{ N}</m> also horizontally but at an angle of <m>90^{\circ}</m> to the direction of the other force.  Find  the magnitude and direction of the net force by these two forces in the horizontal plane.
+				</p>
+				<p></p>
+				<image source="./images/forces/Net-Force-on-a-Box-Pulled-by-Two-Forces-in-Perpendicular-Directions.png" width="40%"/>
+			</sidebyside>
+
+		</statement>
+		<!-- <hint> <p> Add the forces by vector rules. </p> </hint> -->
+		<answer> <p>  <m> 50\ N,\ 37^{\circ}</m> counterclockwise from the postitive <m> x </m> axis. </p> </answer>
+		<solution>
+			<p>
+				This problem can be done either graphically or analytically by setting up a coordinate system and using the components. We will do it analytically here. First, note that the forces of weight and normal force from the floor are not in the horizontal plane, therefore, we will ignore them since the question is only about forces that act in the horizontal plane.
+			</p> 
+			<sidebyside widths="50% 10% 35% 5%">
+				<p>
+					First, we draw the forces in a figure so that the tails of the force vectors of interest are at the same point. This diagram of forces is called a <term> free-body diagram</term>. Then, we pick axes for a Cartesian coordinate system that would be very helpful in calculating the components as illustrated in the figure shown here. 
+				</p>
+				<p></p>
+				<image source="./images/forces/example-add-forces-b.png" width="50%" />
+				<p></p>
+			</sidebyside> 
+
+			<p> <alert> Computational Steps. </alert>
+				Using the chosen axes, we compute the Cartesian components of each force. Note that while the magnitude of a force is always positive, the components can be positive or negative.
+				Finally, we add the <m> x </m> components of the forces separately from their  <m> y </m> components to obtain the <m> x </m> and <m> y </m>  components of the net force.  The strength of the force is the magnitude. Therefore, we calculate the magnitude and direction of the net force from the <m> x </m> and <m> y </m>  components as we would for any vector quantity.  
+			</p>
+			<p><alert> The implementation in the present case.</alert> The table below summarizes the components found for each force. 
+			</p>
+			<p> </p>
+			<tabular halign ="left" >
+				<row bottom ="major" >
+					<cell > Force </cell >
+					<cell > <m>x</m >-component </cell >
+					<cell > <m>y</m >-component </cell >
+				</row >
+
+				<row bottom ="major" >
+					<cell > <m> \vec F_1 </m></cell >
+					<cell >  <m> 40\text{ N} </m> </cell >
+					<cell > <m>0</m > </cell >
+				</row >
+				<row bottom ="major" >
+					<cell > <m> \vec F_2 </m>  </cell >
+					<cell >  <m>0</m ></cell >
+					<cell > <m> 30\text{ N} </m>  </cell >
+				</row >
+			</tabular>
+			<p> </p>
+			<p>
+				For simplicity in writing, let us denote the net force by  <m> \vec F </m> rather than <m> \vec F_{\text{net}}</m>.
+				Therefore, the <m> x </m> and <m> y </m> components of the net force are
+				<md>
+					<mrow> \amp F_x = 40 + 0 = 40\text{ N}</mrow>
+					<mrow> \amp F_y = 0 + 30 = 30\text{ N}</mrow>
+				</md>
+			</p>
+			<p>
+				Therefore, the magnitude of the force is
+				<me>
+					F = \sqrt{F_x^2+F_y^2}=\sqrt{40^2+30^2} = 50\ N,
+				</me>
+				and the angle from the positive <m> x </m> axis is
+
+				<me>
+					\theta =\arctan\left(\frac{F_y}{F_x}\right)=\arctan\left(\frac{30}{40}\right) = 37^{\circ}.
+				</me>
+
+				Since <m> (40,\ 30)</m> is in the first quadrant, the direction is <m> 37^{\circ}</m> counterclockwise from the postitive <m> x </m> axis.
+				
+			</p>
+		</solution>
+
+	</example>
+
+
+
+
+	<example xml:id="ex-Net-Force-of-Two-Forces-General-Case"> <title> Net Force of Two Forces General Case</title>
+		<statement>
+			<p> </p>
+			<sidebyside widths="50% 10% 25% 15%">
+				<p>
+					The figure shows <alert> all </alert> the forces acting on a body. What is the net force on the body?
+				</p>
+				<p></p>
+				<image source="./images/forces/bc-free-body-diagram-practice-two-forces-one-slanted.png"/>
+				<p></p>
+			</sidebyside>
+		</statement>
+
+		<!-- <hint> <p> You can use <m> x </m> and <m> y</m> axes. </p> </hint> -->
+		<answer> <p> <m>265\text{ N}</m> <m> 49.1^{\circ}</m> <alert> clockwise</alert> from the positive <m>x</m> axis. </p> </answer>
+		<solution> 
+			<p> 
+				We choose the positive <m> x </m> axis to the right and the positive <m>y </m> axis pointed up.  Then, we have the components of the two forces as follows.
+				<md>
+					<mrow> \amp F_{1x} = 200\,\cos\,30^{\circ} = 173.2,\ \ F_{1y} = 200\,\sin\,30^{\circ} = 100,</mrow>
+					<mrow> \amp F_{2x} = 0, \ \ F_{2y} = -300\text{ N}.</mrow>
+				</md>
+				Let us denote the net force by <m> \vec F</m>. Therefore, the components of the net force are
+				<md>
+					<mrow> \amp F_{x} = F_{1x} + F_{2x} = 173.2 + 0 = 173.2\text{ N},</mrow>
+					<mrow> \amp F_{y} = F_{1y} + F_{2y} = 100 - 300 = -200\text{ N}.</mrow>
+				</md>
+				From these we get the magnitude of the net force to be
+				<me>
+					F = \sqrt{F_x^2 + F_y^2} = \sqrt{173.2^2 + 200^2} = 265\text{ N}.
+				</me>
+				We will get the direction from the angle <m> \theta </m>,
+				<me>
+					\theta = \tan^{-1}\left(\dfrac{-200}{173.2} \right) = -49.1^{\circ}.
+				</me>
+				Since, the point <m>(F_x, F_y)=(173.2\text{ N}, -200\text{ N}) </m> is in the first quadrant, this angle says that, the direction of the net force is <m> 49.1^{\circ}</m> <alert> clockwise</alert> from the positive <m>x</m> axis.
+ 
+			</p> 
+		</solution>
+
+
+	</example>
+
+
+
+	<example xml:id="ex-Net-Force-of-Three-Forces-Simple-Case"> <title> Net Force of Three Forces Simple Case</title>
+		<statement>
+			<p> </p>
+			<sidebyside widths="40% 10% 30% 20%">
+				<p>
+					<p></p>
+					<p>
+						The figure shows <alert> all </alert> the forces acting on a body. What is the net force on the body?
+					</p>
+				</p>
+				<p></p>
+				<image source="./images/forces/bc-free-body-diagram-practice-three-forces.png"/>
+				<p></p>
+			</sidebyside>
+		</statement>
+
+		<!-- <hint> <p> You can use <m> x </m> and <m> y</m> axes. </p> </hint> -->
+		<answer> <p> <m>202\text{ N}</m> <m> 82.4^{\circ}</m> <alert> counterclockwise</alert> from the negative <m>x</m> axis. </p> </answer>
+		<solution> 
+			<p> 
+				We choose positive <m> x </m> axis to the right and the positive <m>y </m> axis pointed up.  Then, we have the components of the three forces as follows.
+				<md>
+					<mrow> \amp F_{1x} = 200\,\cos\,30^{\circ} = 173.2,\ \ F_{1y} = 200\,\sin\,30^{\circ} = 100,</mrow>
+					<mrow> \amp F_{2x} = 0, \ \ F_{2y} = -300\text{ N},</mrow>
+					<mrow> \amp F_{3x} = -200\text{ N}, \ \ F_{2y} = 0.</mrow>
+				</md>
+				Let us denote the net force by <m> \vec F</m>. Therefore, the components of the net force are
+				<md>
+					<mrow> \amp F_{x} = F_{1x} + F_{2x} + F_{3x}= 173.2 + 0 -200= -26.8\text{ N},</mrow>
+					<mrow> \amp F_{x} = F_{1x} + F_{2x} + F_{3y}= 100 - 300+0 = -200\text{ N}.</mrow>
+				</md>
+				From these we get the magnitude of the net force to be
+				<me>
+					F = \sqrt{F_x^2 + F_y^2} = \sqrt{26.8^2 + 200^2} = 202\text{ N}.
+				</me>
+				We will get the direction from the angle <m> \theta </m>,
+				<me>
+					\theta = \tan^{-1}\left(\dfrac{-200}{-26.8} \right) = 82.4^{\circ}.
+				</me>
+				Since, the point <m>(F_x, F_y)=(-26.8\text{ N}, -200\text{ N}) </m> is in the third quadrant, this angle says that, the direction of the net force is <m> 82.4^{\circ}</m> <alert> counterclockwise</alert> from the negative <m>x</m> axis.
+ 
+			</p> 
+		</solution>
+
+
+	</example>
+
+
+
+	</subsection>
+
+
+
+	<exercises>
+
+	<exercise xml:id="ex-Net-Force-of-Two-Forces-Simple-Case"> <title> Net Force of Two Forces Simple Case</title>
+		<statement>
+			<p> </p>
+			<sidebyside widths="50% 10% 25% 15%">
+				<p>
+					The figure shows <alert> all </alert> the forces acting on a body. What is the net force on the body?
+				</p>
+				<p></p>
+				<image source="./images/forces/bc-free-body-diagram-practice-two-forces.png"/>
+				<p></p>
+			</sidebyside>
+		</statement>
+
+		<hint> <p> You can use <m> x </m> and <m> y</m> axes. </p> </hint>
+		<answer> <p> <m>361\text{ N}</m> <m> 56.3^{\circ}</m> <alert> counterclockwise</alert> from the positive <m>x</m> axis. </p> </answer>
+		<solution> 
+			<p> 
+				We choose the positive <m> x </m> axis to the right and the positive <m>y </m> axis pointed up. Let us denote the horizontal force by <m> \vec F_1 </m> and the vertical force by <m> \vec F_2</m>. Then, we have the components of the two forces as follows.
+				<md>
+					<mrow> \amp F_{1x} = 200\text{ N},\ \ F_{1y} = 0,</mrow>
+					<mrow> \amp F_{2x} = 0, \ \ F_{2y} = 300\text{ N}.</mrow>
+				</md>
+				Let us denote the net force by <m> \vec F</m>. Therefore, the components of the net force are
+				<md>
+					<mrow> \amp F_{x} = F_{1x} + F_{2x} = 200 + 0 = 200\text{ N},</mrow>
+					<mrow> \amp F_{x} = F_{1x} + F_{2x} = 0 + 300 = 300\text{ N}.</mrow>
+				</md>
+				From these we get the magnitude of the net force to be
+				<me>
+					F = \sqrt{F_x^2 + F_y^2} = \sqrt{200^2 + 300^2} = 361\text{ N}.
+				</me>
+				We will get the direction from the angle <m> \theta </m>,
+				<me>
+					\theta = \tan^{-1}\left(\dfrac{300}{200} \right) = 56.3^{\circ}.
+				</me>
+				Since, the point <m>(F_x, F_y)=(200\text{ N}, 300\text{ N}) </m> is in the first quadrant, this angle says that, the direction of the net force is <m> 56.3^{\circ}</m> <alert> counterclockwise</alert> from the positive <m>x</m> axis.
+ 
+			</p> 
+		</solution>
+
+
+	</exercise>
+
+
+
+
+
+	<exercise xml:id="ex-Three-Balanced-Forces-Find-Magnitude-and-Direction-of-One"> <title> Three Balanced Forces - Find Magnitude and Direction of One</title>
+		<statement>
+			<p> </p>
+			<sidebyside widths="50% 10% 35% 5%">
+				<p>
+					<p> </p>
+					<p>
+						The figure shows <alert> all </alert> the forces acting on a body. The net acceleration of the body is zero. Find the magnitude and direction of the unknown force.
+					</p>
+				</p>
+				<p></p>
+				<image source="./images/forces/bc-practice-three-forces-mag-and-dir-unk.png"/>
+				<p></p>
+			</sidebyside>
+		</statement>
+
+		<hint> <p> Set the net force to zero. </p> </hint>
+		<answer> <p> <m>265\text{ N}</m>, <m> 49.1^{\circ}</m> <alert> clockwise </alert> from the negative <m> x </m> axis. </p> </answer>
+		<solution> 
+			<p> 
+				From the second law of motion, since net acceleration is zero, the net force is zero.
+				<me>
+					\vec F_{\text{net}} = 0.
+				</me>
+				In a plane, this will lead to two equations along the two axes. To be concrete, 
+				we choose the positive <m> x </m> axis to the right and the positive <m>y </m> axis pointed up.  Then, we have the components of the four forces as follows.
+				<md>
+					<mrow> \amp F_{x} = 200\,\cos\,30^{\circ} =  173.2,\ \ F_{y} = 200\,\sin\,30^{\circ} = 100,</mrow>
+					<mrow> \amp W_x = 0, \ \ W_{y} = -300.</mrow>
+					<mrow> \amp  T_x = ?, \ \  T_{y} = ?.</mrow>
+				</md>
+				Setting the <m> x </m> and <m> y</m> components of the net force to zero separately, we get the two equations.
+				<md>
+					<mrow> \amp 173.2 + 0 + T_x = 0,</mrow>
+					<mrow> \amp 100 - 300 + T_y= 0.</mrow>
+				</md>
+				From these we get the components of <m> \vec T </m> to be
+				<me>
+					T_x = -173.2\text{ N}, \ \ T_y = 200\text{ N} 
+				</me>
+				From these, we find the magnitude
+				<me>
+					T = \sqrt{T_x^2 + T_y^2} = 265\text{ N}.
+				</me>
+				The angle with <m> x </m> axis:
+				<me>
+					\theta = \tan^{-1}\left( \dfrac{200}{-173.2} \right) = -49.1^{\circ}.
+				</me>
+				Since <m> (-173.2, 200)</m> is in the second quadrant, the direction is <m> 49.1^{\circ}</m> <alert> clockwise </alert> from the negative <m> x </m> axis.
+ 
+			</p> 
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Four-Balanced-Forces-Find-Magnitudes-of-Two"> <title> Four Balanced Forces - Find Magnitudes of Two</title>
+
+		<statement>
+			<p> </p>
+			<sidebyside widths="50% 40%">
+				<p>
+					<p> </p>
+					<p>
+						The figure shows <alert> all </alert> the forces acting on a body. The net acceleration of the body is zero. Find the magnitudes of the two forces whose symbols are <m> F </m> and <m> T </m>.
+					</p>
+				</p>
+				<image source="./images/forces/bc-practice-four-forces-two-unknows.png"/>
+			</sidebyside>
+		</statement>
+
+		<hint> <p> Set the net force to zero. </p> </hint>
+		<answer> <p> <m>F = 230\text{ N}</m>, <m> T = 194\text{ N}</m>. </p> </answer>
+		<solution> 
+			<p> 
+				From the second law of motion, since net acceleration is zero, the net force is zero.
+				<me>
+					\vec F_{\text{net}} = 0.
+				</me>
+				In a plane, this will lead to two equations along the two axes. To be concrete, 
+				we choose the positive <m> x </m> axis to the right and the positive <m>y </m> axis pointed up.  Then, we have the components of the four forces as follows.
+				<md>
+					<mrow> \amp F_{x} = F\,\cos\,30^{\circ} = 0.866\, F,\ \ F_{y} = F\,\sin\,30^{\circ} = 0.5\, F,</mrow>
+					<mrow> \amp T = 0, \ \ T_{y} = T,</mrow>
+					<mrow> \amp W_x = 0, \ \ W_{y} = -300.</mrow>
+					<mrow> \amp S_x = -200, \ \ S_{y} = 0.</mrow>
+				</md>
+				Setting the <m> x </m> and <m> y</m> components of the net force to zero separately, we get the two equations.
+				<md>
+					<mrow> \amp 0.866\, F +0 +0 - 200 = 0,</mrow>
+					<mrow> \amp 0.5\, F + T - 300 = 0.</mrow>
+				</md>
+				From these we get the magnitudes to be
+				<me>
+					F = 231\text{ N}, \ \ T = 194\text{ N} 
+				</me>
+ 
+			</p> 
+		</solution>
+	</exercise>
+
+	</exercises>
+
+
+</section>

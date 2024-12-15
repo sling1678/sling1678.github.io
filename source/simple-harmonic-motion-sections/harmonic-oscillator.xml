@@ -1,0 +1,637 @@
+<section xml:id="Simple-Harmonic-Oscillator"><title> Simple Harmonic Oscillator</title>
+	<introduction>
+		<p>
+			Oscillatory motions are ubiquitous is nature, from the to and fro swaying of high-rise buildings to back and forth motion of pendulums, to vibrations of atoms in molecules, vibrations of guitar string, just to name a few. 
+		</p>
+		<p>
+			A block attached to a spring provides an ideal model to study harmonic oscillations. We often call this model system a <term> simple harmonic oscillator (SHO)</term>.  In real blocks attached to spring, friction and drag forces take away energy and damp the motion of the block, eventually stopping it. But, in this section, we will not worry about these effects - as a result, we will get a perpetual motion -  the block will be oscillating forever! In a later section we will address damping as well as how additional energy can be put into the block to keep it going.
+		</p>
+
+		<sidebyside widths="50% 10% 40%">
+ 
+			<p>
+				<p>
+					Consider a block A of mass <m>m</m> attached to a spring of spring constant <m> k</m> placed on a <em> horizontal  frictionless </em> surface. The other end of the spring is attached to an <em> infinite-mass </em> immovable support B.
+				</p>
+				<p>
+					The spring has a natural length, which we can call its <term>equilibrium length</term>. When spring is extended or shortened, the spring  pulls in or pushes out at the two ends by a force, whose magnitude <m>F_{s}</m> is equal to the amount <m> \Delta l</m> by which the length is different from the equilibrium length.
+					<men xml:id="eq-harmonic-scillator-spring-force-general">
+						F = k\,\Delta l.
+					</men>
+				</p>
+			</p>
+			<p>
+			</p>
+			<image source="./images/simple-harmonic-motion/spring-force.png"/>
+		</sidebyside>
+		<p>			
+			The direction of this force is from the current location of the end of the spring to the point at which the spring has the natural length. Another way to look at the spring force is that the force between objects at the two ends of the spring is attractive when the spring is stretched and repulsive when the spring is compressed.  
+		</p>
+		<p>
+			If the block of mass <m> m</m> is started with displacement <m>x=x_0</m> and velocity <m>v_x = v_0</m>,  the resulting motion is an oscillatory motion with <m>x</m> between <m>x=-A</m> and <m>x=+A</m> with
+			<men>
+				A = \sqrt{ x_0^2 + \left( v_0/\omega \right)^2 },
+			</men> 
+			with period
+			<men>
+				T = 2\pi \sqrt{ \dfrac{m}{k} }.
+			</men>
+			Qunatity <m>A</m> is called <term>amplitude</term> of the motion. 
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-Mass-of-an-Astronaut-from-Harmonic-Motion"><title> Mass of an Astronaut from Harmonic Motion </title>
+		<statement>
+			<p>
+				Astronauts must keep a good record of their masses. Th normal bathroom scales that use gravity to get mass would not work in space. Instead, mass can be obtained from <m> T = 2\pi\sqrt{m/k}</m> of a spring/mass oscillations. In this method, we find the mass of an astronaut by strapping the astronaut to a chair which is attached to a spring, and observing the motion.
+			</p>
+			<p>
+				The mass of the chair is <m>200\text{ kg}</m>. When astronaut is not in the chair, the period of oscillation is <m>1.50\text{ sec}</m>. The period changes to <m>1.75\text{ sec}</m>. 
+			</p>
+			<p>
+				What is the mass of the astronaut?
+			</p>
+
+		</statement>
+		<hint> <p>  From the motion of the chair alone, find the <m>k</m> of the spring. Or, use  <m>T\propto\sqrt{m}</m>. </p> </hint>
+		<answer> <p>  <m> 72.2\text{ kg}</m>. </p> </answer>
+		<solution> 
+			<p>
+				Let <m>M</m> be the mass of the astronaut. Thinking of <m> T = 2\pi\sqrt{m/k}</m> as <m>T\propto\sqrt{m}</m>, gives us the following ratio
+				<me>
+					\dfrac{T_1}{T_2} = \sqrt{ \dfrac{M_1}{M_2} }\ \ \Longrightarrow\ \ M_2 = \left( \dfrac{T_2}{T_1} \right)^2\, M_1.
+				</me>
+				Setting <m>M_1 = 200</m>, <m>M_2 = M + 200</m>, <m>T_1=1.50</m> and <m>T_2=1.75</m> we have
+				<me>
+					M = \left( \dfrac{1.75}{1.50} \right)^2 \times 200 - 200 = 72.2\text{ kg}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+	<subsection> <title> Equation of Motion and Solution </title>
+		<p>
+			To study the block analytically, we choose <m> x </m> coordinate system that has a positive <m> x </m> axis pointed in the direction in which the spring stretches and we place the origin at the place where the block is located when spring has length equal to the equilibrium length, i.e., when there is zero force on the block.   
+		</p>
+		<figure xml:id="fig-spring-force-x-axis-2">
+			<caption>
+				Using coordinates to express the spring force analytically, <m>F_x = - k x</m>.
+			</caption>
+
+			<image source="./images/simple-harmonic-motion/spring-force-x-axis.png" width="60%"/>
+		</figure>
+		
+		<p>
+			Let <m> x </m> denote the <m> x </m> coordinate of the block at instant <m> t </m>.
+			With the arrangement in <xref ref="fig-spring-force-x-axis-2"/>, when the block's position has <m> x \gt 0 </m>, the force on the block is pointed left, i.e., <m> F_x \lt 0</m>, and when the block's position has <m> x \lt 0</m>, we have <m> F_x \gt 0</m>, where <m> F_x</m> is the <m> x </m> component of the force vector <m> \vec F</m> as usual. Therefore, force by spring has <m>x</m>-component given by
+			<men>
+				F_x = -k\, x.
+			</men>
+			Therefore, <m>x</m>-equation of motion of the block is
+			<men  xml:id="eq-harmonic-scillator-spring-force-kx">
+				m a_x = - kx.
+			</men>
+			We would like to get a formula that tells us <m> x(t) </m> for given initial position and velocity, <m> x_0</m> and <m> v_0</m>. This is called <alert> solving the equation of motion</alert>. If you solve Eq. <xref ref="eq-harmonic-scillator-spring-force-kx"/> for acceleration, they don't take you anywhere. 
+			<me>
+				a_x = -\dfrac{k}{m}\, x\ \ \ \text{or}\ \ \ x = -\dfrac{m}{k}\, a_x,
+			</me>
+			You need <alert> to think of Eq. <xref ref="eq-harmonic-scillator-spring-force-kx"/> as a differential equation </alert> and solve that differential equation. We will not do that here. We will just borrow the solution from the folks who have solved this equation.  
+		</p>
+		<p>
+			The solution is more compactly written if we replace <m> k/m</m> by another symbol, actually, the square of a symbol <m>\omega^2</m>, since we want to make sure this number is always positive.
+			<men>
+				\omega^2 = \sqrt{\dfrac{k}{m}}.
+			</men>
+			Then, position of the block that starts at <m> x=x_0</m> and <m>x</m> component of the velocity <m> v=v_0</m> is completely determined by
+			<men xml:id="eq-harmonic-scillator-x-in-x0-v0">
+				x(t) = x_0\, \cos(\omega t) + \dfrac{v_0}{\omega}\sin(\omega t).
+			</men>
+			The oscillator moves about the origin symmetrically. The largest <m>x</m> away from the equilibrium is called the <term>amplitude</term>, which is obtained by combining the coefficients of the cosine and sine terms as follows. The amplitude is usually denoted by <m>A</m>.
+			<men>
+				A = \sqrt{ x_0^2 + \left( v_0/\omega \right)^2 }.
+			</men> 
+			The velocity at intstant <m> t </m> is given by
+			<men xml:id="eq-harmonic-scillator-v-in-x0-v0">
+				v_x(t) = v_0\, \cos(\omega t) - \omega\,x_0\, \sin(\omega t),
+			</men>
+			from which we get the largest speed in the motion to be
+			<men>
+				\text{Largest speed } = \sqrt{v_0^2 + \left(\omega^2 x_0^2\right)^2  },
+			</men>
+			which occurs when the block passes through the equilibrum position, i.e., <m>x=0</m>. 
+		</p>
+		<p>	
+			Contrast these formulas for <m>x</m> and <m>v</m>  to the constant acceleration motion for acceleration <m> a_x </m>.
+			<md>
+				<mrow> \text{Constant}\amp \text{ Acceleration Motion:}</mrow>
+				<mrow> 		\amp x(t) = x_0 + v_0)\, t + \dfrac{1}{2}\, a_x\, t^2, </mrow>
+				<mrow> 		\amp v(t) = v_0 +  a_x\, t. </mrow>
+			</md>
+			We don't have this situation here. The acceleration of a simple harmonic oscillator oscialltes in time and is definitely not constant.		
+		</p>
+	</subsection>
+
+	<subsection> <title> Multiple Ways of Writing the Solution</title>
+		<p>
+			The solution in Eq. <xref ref="eq-harmonic-scillator-x-in-x0-v0"/> is good for some purposes but not convenient for some other purposes. For instance, if we wanted to know the furthest from the equilibrium the block will go, its not <m> x_0</m>, and it is not clear right away how we would get the answer. There is another way to write a sum of cosine and sine of the same argument using the trig formulas for sum of angles. 
+		</p>
+		<p>
+			For instance, we can write Eq. <xref ref="eq-harmonic-scillator-x-in-x0-v0"/>, which we now refer to as <term>two-amplitudes form </term>, also in the following form, which we will call <term>amplitude-phase form</term>.
+			<men  xml:id="eq-harmonic-scillator-x-in-Acosphi">
+				x(t) = A\,\cos(\omega t + \phi),
+			</men> 
+			where <m> A </m> is the amplitude and <m> \phi </m> the phase constant. Then, the velocity is
+			<men  xml:id="eq-harmonic-scillator-v-in-Acosphi">
+				v(t) = -\omega A\,\sin(\omega t + \phi),
+			</men>
+			Another way to write in <term>amplitude-phase form</term> is as a sine function. 
+			<men  xml:id="eq-harmonic-scillator-x-in-Bsintheta">
+				x(t) = B\,\sin(\omega t + \phi_s),
+			</men>
+			Our convention is to write as positive amplitude times a  cosine  and use the following to convert anything written in sine to cosine, which makes writing in sine superflous.
+			<men>
+				\sin(\theta) = \cos(\theta - \pi/2).
+			</men> 
+			If we find an expression with negative amplitude times a cosine, we can convert that to positive amplitude times cosine by
+			<men>
+				-\cos(\theta) = \cos(\theta - \pi).
+			</men> 
+			The new constants <m> A </m> and <m>\phi </m>  are related to <m> x_0</m> and <m> v_0</m> in Eq. <xref ref="eq-harmonic-scillator-x-in-x0-v0"/>. To find the relation, we expand the right side in this equation, 
+			<me> 
+				A\,\cos(\omega t + \phi) = A\, \cos\omega t\,\cos\phi - A\, \sin\omega t\,\sin\phi,  
+			</me>
+			and compare the result to Eq. <xref ref="eq-harmonic-scillator-x-in-x0-v0"/>. This gives the following two equations.
+			<md>
+				<mrow> \amp A\,\cos\phi = x_0,</mrow>
+				<mrow> \amp A\,\sin\phi = -\dfrac{v_0}{\omega}.</mrow>
+			</md>
+			Squarring and adding these will give us <m> A^2 </m> and dividing will give us <m>\tan\phi</m>. We take the notation that <m> A </m> be positive.
+			<md>
+				<mrow> \amp A = \sqrt{ x_0^2 + \dfrac{v_0^2}{\omega^2} },</mrow>
+				<mrow> \amp \tan\phi = -\dfrac{v_0}{\omega x_0}.</mrow>
+			</md>
+			The velocity corresponding to the form <xref ref="eq-harmonic-scillator-x-in-Acosphi"/> is
+			<men xml:id="eq-harmonic-scillator-vx-in-omegaAcosphi">
+				v_x(t) = -\omega\, A\,\sin(\omega t + \phi).
+			</men>
+			This says that the velocity oscillates between <m> -\omega A </m> and <m> \omega A</m>. Clearly, oscillator has turns in its motion, where velocity must be zero. Turning point at <m>x=+A</m> and <m>x=-A</m> correspond to <m>v=0</m>.
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Reading-Harmonic-Oscillator-Solutions-Amplitudes-Form"><title> Reading Harmonic Oscillator Solutions in Two-Amplitudes Form</title>
+		<statement>
+			<p>
+				A harmonic oscillator oscillates on <m>x</m> axis about the origin with its <m>x</m> coordinate given by
+				<me>
+					x = 3\, \cos\,\left( 15\, t \right) + 4\, \sin\,\left( 15\, t \right) 
+				</me>
+				where <m> t </m> is in seconds and <m>x</m> in <m>\text{cm}</m>. 
+			</p>
+			<p>
+				(a) What is the amplitude of the oscillations?
+			</p>
+			<p>
+				(b) What is the angular frequency of the oscillator?
+			</p>
+			<p>
+				(c) How many cycles of oscillations occurs in <m>5\text{ sec}</m>?
+			</p>
+
+			<p>
+				(d) What is the period of the oscillator?
+			</p>
+
+			<p>
+				(e) Where is the oscillator at <m> t = 0</m>? 
+			</p>
+
+			<p>
+				(f) How fast is the oscillator moving at <m> t = 0</m> and which way? Note: from the formula of <m>x</m>, the <m>x</m> component of velocity is
+				<me>
+					v = -45\, \sin\,\left( 15\, t\right) + 60\, \cos\,\left( 15\, t \right).
+				</me>
+				If you have Calculus background, try deriving this yourself.
+			</p>
+		</statement>
+		<hint> <p> Use two-amplitiudes form of the solution in the text. </p> </hint>
+		<answer> <p>  (a) <m> 5\text{ cm}</m>, (b) <m> 15\text{ sec}^{-1}</m>, (c) <m> 11.94\text{ cycles}</m>, (d) <m>0.42\text{ sec} </m>, (e) <m> 3\text{ cm}</m>, (f) <m> 60\text{ cm/sec}</m> in the direction of positive <m>x</m> axis. </p> </answer>
+
+		<solution> 
+			<p>
+				(a)
+				From the two-amplitudes form of the solution, we get the amplitude immediately.
+				<me>
+					\text{Amplitude } = \sqrt{ (3\text{ cm})^2 + (4\text{ cm})^2 } = 5\text{ cm}.
+				</me>
+			</p>
+
+			<p>
+				(b)
+				From the argument of cosine or sine, here, we see how the periodic motion varies in time. Equating the time part to <m>\omega t</m> we immediately get <m>\omega</m>.
+				<me>
+					\omega = 15\text{ sec}^{-1}.
+				</me>
+			</p>
+
+			<p>
+				(c)
+				First we find the frequency from <m>\omega</m>.
+				<me>
+					f = \dfrac{\omega}{2\pi} = \dfrac{15}{2\pi} = 2.387\text{ Hz}.
+				</me>
+				That is, 2.387 cycles each second. Therefore, we will have 
+				<me>
+					N = 2.387\text{ Hz} \times 5\text{ sec} = 11.94\text{ cycles}.
+				</me>
+			</p>
+
+			<p>
+				(d)
+				Inverting the frequency gives the period.
+				<me>
+					T = \dfrac{1}{f} =  \dfrac{1}{2.387\text{ Hz}} = 0.42\text{ sec}.
+				</me>
+			</p>
+
+			<p>
+				(e)
+				Set <m>t=0</m> in the given <m>x</m> to get
+				<me>
+					x_0 =  3\text{ cm}.
+				</me>
+			</p>
+			<p>
+				(f)
+				Set <m>t=0</m> in the given <m>v</m> to get
+				<me>
+					v_0 =  60\text{ cm/sec}.
+				</me>
+				Since <m>v_0</m> is positive, the block is moving in the direction of positive <m>x</m> axis.
+			</p>
+
+		</solution>		
+	</exercise>	
+
+	<exercise xml:id="ex-Reading-Harmonic-Oscillator-Solutions"><title> Reading Harmonic Oscillator Solutions in Amplitude-Phase Form</title>
+		<statement>
+			<p>
+				A harmonic oscillator oscillates on <m>x</m> axis about the origin with its <m>x</m> coordinate given by
+				<me>
+					x = 10\, \cos\,\left( 15\, t + \dfrac{\pi}{4}\right),
+				</me>
+				where <m> t </m> is in seconds and <m>x</m> in <m>\text{cm}</m>. 
+			</p>
+			<p>
+				(a) What is the amplitude of the oscillations?
+			</p>
+			<p>
+				(b) What is the angular frequency of the oscillator?
+			</p>
+			<p>
+				(c) How many cycles of oscillations occurs in <m>5\text{ sec}</m>?
+			</p>
+
+			<p>
+				(d) What is the period of the oscillator?
+			</p>
+
+			<p>
+				(e) Where is the oscillator at <m> t = 0</m>? 
+			</p>
+
+			<p>
+				(f) How fast is the oscillator moving at <m> t = 0</m> and which way? Note: from the formula of <m>x</m>, the <m>x</m> component of velocity in <m>\text{cm/s}</m> is
+				<me>
+					v = -150\, \sin\,\left( 15\, t + \dfrac{\pi}{4}\right).
+				</me>
+				If you have Calculus background, try deriving this yourself.
+			</p>
+		</statement>
+		<hint> <p>  For all parts: consult amplitude/phase form of the solution. </p> </hint>
+		<answer> <p>  (a)<m> 10\text{ cm}</m>, (b)<m> 15\text{ sec}^{-1}</m>, (c)<m> 11.94\text{ cycles}</m>, (d)<m>0.42\text{ sec} </m>, (e)<m> 7.07\text{ cm}</m>, (f)<m> 106\text{ cm/sec}</m> towards the origin. </p> </answer>
+		<solution> 
+			<p>
+				(a)
+				From the amplitude/phase form of the solution, we get the amplitude immediately.
+				<me>
+					\text{Amplitude } = 10\text{ cm}.
+				</me>
+			</p>
+			<p>
+				(b)
+				From the argument of cosine, here, we see how the periodic motion varies in time. Equating the time part to <m>\omega t</m> we immediately get <m>\omega</m>.
+				<me>
+					\omega = 15\text{ sec}^{-1}.
+				</me>
+			</p>
+
+			<p>
+				(c)
+				First we find the frequency from <m>\omega</m>.
+				<me>
+					f = \dfrac{\omega}{2\pi} = \dfrac{15}{2\pi} = 2.387\text{ Hz}.
+				</me>
+				That is, 2.387 cycles each second. Therefore, we will have 
+				<me>
+					N = 2.387\text{ Hz} \times 5\text{ sec} = 11.94\text{ cycles}.
+				</me>
+			</p>
+			<p>
+				(d)
+				Inverting the frequency gives the period.
+				<me>
+					T = \dfrac{1}{f} =  \dfrac{1}{2.387\text{ Hz}} = 0.42\text{ sec}.
+				</me>
+			</p>
+			<p>
+				(e)
+				Set <m>t=0</m> in the given <m>x</m> to get
+				<me>
+					x_0 =  10\, \cos\,\left( \dfrac{\pi}{4}\right) = 7.07\text{ cm}.
+				</me>
+			</p>
+			<p>
+				(f)
+				Set <m>t=0</m> in the given <m>v</m> to get
+				<me>
+					v_0 =  -150\, \sin\,\left( \dfrac{\pi}{4}\right) = -106\text{ cm/sec}.
+				</me>
+				That is, it has speed <m> 106\text{ cm/sec}</m> and moving to the left.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Writing-Harmonic-Oscillator-Solutions-in-Alternate-Forms"><title> Writing Harmonic Oscillator Solutions in Alternate Forms </title>
+		<statement>
+			<p>
+				The solution of a Simple Harmonic Motion can be written in three ways: 
+				<md>
+					<mrow> 	x(t) \amp = C_1\ \cos(\omega  t) + C_2\ \sin(\omega  t)</mrow>
+					<mrow> \amp = A \cos(\omega t + \phi_c)</mrow>
+					<mrow> \amp = B \sin(\omega t + \phi_s)</mrow>
+				</md>
+				Find the relations among (a) <m>C_1</m>, <m>C_2</m>, <m>A</m>, <m>\phi_c</m>, (b) <m>C_1</m>, <m>C_2</m>, <m>B</m>, <m>\phi_s</m>, and (c) <m>A</m>, <m>\phi_c</m>, <m>B</m>, <m>\phi_s</m>. Trig formulas  <m>\cos(A+B) = \cos\,A\cos\,B-\sin\,A\sin\,B </m>, <m>\sin(A+B)=\sin\,A\cos\,B+\sin\,B\cos\,A</m>, and <m>\sin(\theta + \pi/2) = \cos\,\theta </m> will be helpful.
+			</p>
+
+		</statement>
+		<hint> <p> Expand the amplitude/phase form, and then equate the coefficients of <m>\cos(\omega t)</m> and similarly for <m>\sin(\omega t)</m>. </p> </hint>
+		<answer> <title>(a)</title>
+				<p> 
+					(a)  <m> A\cos\,\phi_c = C_1</m>, <m> A\sin\,\phi_c = C_2</m>, <m> A  = \sqrt{ C_1^2 + C_2^2 }</m>, <m> \tan\,\phi_c = -\dfrac{C_2}{C_1}</m>.
+				</p> 
+			</answer>
+		<answer><title> (b)</title>
+			<p>
+				(b)  <m> B \sin\,\phi_s = C_1</m>, <m> B \cos\,\phi_s = C_2</m>, <m> B  = \sqrt{ C_1^2 + C_2^2 }</m>, <m> \tan\,\phi_s = \dfrac{C_1}{C_2}</m>.
+			</p>
+		</answer>
+		<answer><title> (c)</title>
+			<p>
+				(c) <m>B = A,\ \ \phi_s = \phi_c +\pi/2</m>.
+			</p>
+		</answer>
+		<solution> <title>(a) </title>
+			<p>
+				(a)
+				Let us expand <m>A \cos(\omega t + \phi_c)</m>.
+				<me>
+					A \cos(\omega t + \phi_c) = (A\cos\,\phi_c)\, \cos (\omega t) - (A\sin\,\phi_c)\, \sin (\omega t).
+				</me>
+				Equate the coefficients of <m>\cos(\omega t)</m> and similarly for <m>\sin(\omega t)</m> in this expression to that in <m> C_1\ \cos(\omega  t) + C_2\ \sin(\omega  t)</m> we get
+				<md>
+					<mrow> A\cos\,\phi_c \amp = C_1, </mrow>
+					<mrow> -A\sin\,\phi_c \amp = C_2.</mrow>
+				</md>
+				From this we can get
+				<md>
+					<mrow> \amp A = \sqrt{ C_1^2 + C_2^2 }, </mrow>
+					<mrow> \amp \tan\,\phi_c = -\dfrac{C_2}{C_1}.</mrow>
+				</md>
+
+			</p>
+		</solution>
+
+		<solution> <title>(b) </title>
+			<p>
+				(a)
+				Let us expand <m>B \sin(\omega t + \phi_s)</m>.
+				<me>
+					B \sin(\omega t + \phi_s) = (B \cos\,\phi_s)\, \sin (\omega t) + (B\sin\,\phi_s)\, \cos (\omega t).
+				</me>
+				Equate the coefficients of <m>\cos(\omega t)</m> and similarly for <m>\sin(\omega t)</m> in this expression to that in <m> C_1\ \cos(\omega  t) + C_2\ \sin(\omega  t)</m> we get
+				<md>
+					<mrow> B \sin\,\phi_s \amp = C_1, </mrow>
+					<mrow> B \cos\,\phi_s \amp = C_2.</mrow>
+				</md>
+				From this we can get
+				<md>
+					<mrow> \amp  B = \sqrt{ C_1^2 + C_2^2 }, </mrow>
+					<mrow> \amp \tan\,\phi_s = \dfrac{C_1}{C_2}.</mrow>
+				</md>
+
+			</p>
+		</solution>
+
+		<solution> <title>(c) </title>
+			<p>
+				(c)
+				Since <m>\sin(\theta + \pi/2) = \cos\,\theta</m>, we can write both of then in either cosines or sines forms. Let us write the cosine into sine to get
+				<me>
+					A\cos(\omega t + \phi_c) = A\sin(\omega t + \phi_c +\pi/2).
+				</me>
+				Equating this to the sine-form given, we immediately get
+				<me>
+					B = A,\ \ \phi_s = \phi_c +\pi/2.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Harmonic-Oscillator-Solution-for-Given-Initial-Position-andVelocity"><title> Harmonic Oscillator Solution for Given Initial Position and Velocity </title>
+		<statement>
+			<p>
+				A block of mass <m>2\text{ kg}</m> is attached to a spring of spring constant <m> 32\text{ N/m} </m> and placed on a frictionless surface. The other end of the spring is attached to a fixed support. At <m>t=0</m>, the block is hit with a hammer such that it instantaneously gains speed of <m>0.8\text{ m/s}</m> and starts to compress the spring. You can assume that at <m>t=0</m> the block is at the equilibrium position. 
+			</p>
+			<p>
+				(a)
+				With <m>x</m> axis along the spring and positive <m>x</m> axis in the direction in which the spring stretches, find the position and velocity of the block at an arbitrary instant <m>t</m>.
+			</p>
+			<p>
+				(b) 
+				What is the amplitude of the oscillations?
+			</p>
+
+		</statement>
+		<hint> <p>  (a) The initial velocity component is negative.  (b) Read amplitude from <m>x(t) </m>.</p> </hint>
+		<answer> <p> (a) <m> x(t) = - 0.2\text{ m }\,\sin(4\,t )</m>, <m> v(t) = - 0.8 \text{ m/s } \,\cos(4\,t )</m>, (b) <m>0.2\text{ m } </m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				Since the  block at <m>t=0</m> is moving in the opposite direction to the positive <m>x</m> axis, we have the following initial condition on the <m>x</m> component of the velocity
+				<me>
+					v_0 = - 0.8\text{ m/s}.
+				</me>
+				The initial position is <m> x_0 = 0</m> since it is at the equilibrium position. From the given mass and spring constant, we get the angular frequency to be
+				<me>
+					\omega = \sqrt{ \dfrac{k}{m} } = 4\text{ sec}^{-1}.
+				</me>
+				Using these in the two-amplitudes-form of the solution we get
+				<md>
+					<mrow>\amp x(t) = - 0.2 \,\sin(4\,t ), </mrow>
+					<mrow>\amp v(t) = - 0.8 \,\cos(4\,t ), </mrow>
+				</md>
+				where <m>t</m> is in <m> \text{sec}</m>, <m>x</m> in <m>\text{m}</m>, and <m>v</m> in <m>\text{m/s}</m>.
+			</p>
+		</solution>
+
+		<solution> <title> (b) </title>
+			<p>
+				From <m> x(t) = - 0.2\,\sin(4\,t ) </m>, we see that <m>x</m> goes between <m> - 0.2\text{ m } </m> and <m>  + 0.2\text{ m } </m>. That is, the amplitude is <m>0.2\text{ m } </m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<subsection><title>Meaning of <m> \omega </m> </title>
+		<p>
+			The meaning of <m> \omega</m> can be gleaned from the periodic behavior of the solution given in Eq. <xref ref="eq-harmonic-scillator-x-in-x0-v0"/>. We observe that
+			<md>
+				<mrow> x\left(t + \dfrac{2\pi}{\omega}\right) \amp = x_0\, \cos\left[\omega\,\left(t + \dfrac{2\pi}{\omega}\right) \right] + \dfrac{v_0}{\omega}\sin\left[\omega\,\left(t + \dfrac{2\pi}{\omega}\right)  \right],</mrow>
+				<mrow> \amp = x_0\, \cos \left( \omega t + 2\pi  \right)   + \dfrac{v_0}{\omega} \sin\left( \omega t + 2\pi  \right), </mrow>
+				<mrow> \amp = x_0\, \cos(\omega t) + \dfrac{v_0}{\omega}\sin(\omega t) = x(t) </mrow>
+			</md>
+			That is, the position is periodic in time with a period <m> T = \dfrac{2\pi}{\omega}</m>. Furthermore, velocity in Eq. <xref ref="eq-harmonic-scillator-v-in-x0-v0" /> is also periodic with the same period. That is, the motion at <m> t  + \dfrac{2\pi}{\omega}</m>  is identical to the motion at <m> t</m>.
+			<men>
+				T = \dfrac{2\pi}{\omega}.
+			</men>
+			Therefore, we can state <m> \omega </m> in terms of the period of the oscillator.
+			<men>
+				\omega = 2\pi\,\dfrac{1}{T}.
+			</men>
+			Now, in one <term>period</term>  <m> T</m>, an oscillator will complete one cycle. Therefore, <m> 1/T</m> would be the number of cylces in unit time. This is called <term>frequency</term> of the oscillator and denoted by <m> f</m>, and sometimes by the Greek letter <q> nu </q>, <m> \nu </m>.
+			<men>
+				 f = \dfrac{1}{T}.
+			</men>
+			Now, writing <m> \omega</m> in terms of the frequency <m> f</m>, we have
+			<men>
+				\omega = 2\pi f,
+			</men>
+			where <m> 2\pi </m> is an angle in radian. Therefore, <alert><m> \omega </m> is frequency such that for each cycle we count <m> 2\pi</m> radian instead of one</alert>. This is what you would expect of angle variable for something moving in a circle. That is why we call <m> \omega</m> the <term>angular frequency</term>. Note that the block attached to a spring is not moving in circle - its just an interpretation of <m>\omega</m> as it relates to the regular frequency, which is the number of cycles of oscillations per unit time.
+		</p>
+		<p>
+			The unit of period <m> T </m> is seconds. Therefore, the unit of regular frequency, <m> f </m> is per second or cycles per second, which is given its own name, <term>Hertz (Hz)</term>. The unit for <m>\omega</m> is radians per second.
+		</p>
+	</subsection>
+
+	<subsection><title> Amplitude and Phase </title>
+		<p>
+			The solution in the form <xref ref="eq-harmonic-scillator-x-in-Acosphi"/> tells us that <m> x </m> will oscillate between <m> + A </m> and <m> -A </m> since cosine will oscillate between <m> +1 </m> and <m> -1</m> as illustrated in <xref ref="fig-sho-amplitude-oscillations"/>. That is, <m> A </m> is the <term> amplitude </term> of the oscillation.
+		</p>
+		<figure xml:id="fig-sho-amplitude-oscillations">
+			<caption> 
+				The plot of the position of an oscillator versus time showing the amplitude. The plot of <m> x </m> versus <m> t </m> was made with <m> \phi = 0</m> and <m> \omega = 1 </m>.
+			</caption>
+			<image source="./images/simple-harmonic-motion/sho-amplitude-oscillations.png" width="70%"/>
+		</figure>
+
+		<p>
+			In the solution in the form Eq. <xref ref="eq-harmonic-scillator-x-in-Acosphi"/>, the argument of the cosine, viz., <m>(\omega t + \phi) </m> is called <term> phase </term> of the oscillator, and <m> \phi </m> is called the <term> phase constant</term>. We usually think of phase as an angle in a circle as illustrated in <xref ref="fig-sho-full-phase-in-oscillations"/>.
+		</p>
+
+		<figure xml:id="fig-sho-full-phase-in-oscillations">
+			<caption> 
+				The left side of the figure shows a block attached to a spring and labels the block at various points in its periodic motion. One cycle of motion here could be thought in the order, A-B-C-D-E-F. Note that although C and E are same point in space, the block is moving to the left when at C, snd moving to the right when at E - that is, the state of motion of the block is different at the the two instants. The cylce can also be represented by showing the phase as angle <m>\theta = (\omega t + \phi) </m> of a <alert>fictitious vector</alert> rotating in a circle at rate <m>\omega</m>.
+			</caption>
+			<image source="./images/simple-harmonic-motion/sho-full-phase-in-oscillations.png" width="100%"/>
+		</figure>
+
+		<p>
+			But what about <m> \phi</m>? How to think about it? It has the information about where in the cycle, the oscillator is. Actually, <m> \phi</m> is best understood by comparing two identical oscillators, oscillator 1 with <m> \phi = 0</m> and oscillator 2 with <m> \phi = -\pi/2</m>, as presented in <xref ref="fig-sho-two-phases-oscillations"/>.
+			<md>
+				<mrow> \amp x_1 (t) = A\,\cos(\omega t ), </mrow>
+				<mrow> \amp x_1 (t) = A\,\cos(\omega t -\pi/2) =  A\,\sin(\omega t), </mrow>
+			</md>
+			From the pictures of sine and cosine, you can see that cosine at <m>\theta=0</m> is at the same place in cycle as sine would be at <m> \theta=\pi/2</m>. You might say sine is behind by <m> \pi/2</m> radian. that is oscillator 2 with <m> \phi=-\pi/2</m> is <m> \pi/2</m> radian behind oscillator 1. 
+		</p>
+		<figure xml:id="fig-sho-two-phases-oscillations">
+			<caption>
+				Comparing the motions of two oscillators with different phase constants. In each case, the arrow from the center to the arc of the circle rotates with angle with respect to the positive <m> x </m> axis as  <m> \theta(t) = \omega t + \phi</m>. This arrow is called a <term> phasor</term> and the angle of the phasor is called the <term> phase </term> of the oscillator. Since the two oscillators have the same frequency <m>\omega </m>, the two phasors rotate at the same rate, but since block 2 is behind block 1 by a phase constant of <m> \pi/2</m> radians, the motion of block 2 is quarter cycle behind in its motion relative to block 1.
+			</caption>
+			<image source="./images/simple-harmonic-motion/sho-two-phases-oscillations.png" width="70%"/>
+		</figure> 		
+	</subsection>
+
+
+	<exercise xml:id="ex-Understanding-Positions-of-Two-Oscillators-and-Their-Phasors"><title> Understanding Positions of Two Oscillators and Their Phasors </title>
+		<statement>
+			<p>
+				Two oscillators of masses <m>200\text{ g}</m> and <m>400\text{ g}</m> oscillate with the same frequency. They move such that their positions from their corresponding equilibrium points are given by the following two functions (<m>t</m> in seconds, <m>x</m> in cm) <m>x_1</m> and <m>x_2</m> respectively.
+				<md>
+					<mrow>\amp x_1 = 2 \cos(t)</mrow>
+					<mrow>\amp x_2 = 2 \sin(t)</mrow>
+				</md>
+				
+				
+			</p>
+			<p>
+				(a)	What are the angular frequencies, amplitudes and phase constants of the two oscillators?
+			</p>
+			<p>
+				(b)	What were their positions and velocities at the initial time <m> t=0</m>?
+			</p>
+			<p>
+				(c)	Show phasors on a circle for the positions at <m> t = 1\text{ sec}</m>.
+			</p>
+
+
+		</statement>
+		<hint> <p> (a) For <m>x_1</m> compare to <m> A \cos(\omega t + \phi)</m> and for <m> x_2</m>, first write this as a cosine and then compaere to <m> A \cos(\omega t + \phi)</m>. (b) The velocity of cosine is -sine and of sine is cosine. </p> </hint>
+
+		<answer> <p>  (a)  <m>\omega_1 = 1\text{ rad/s}</m>, <m> A_1 = 2\text{ cm}</m>, <m>\phi_1 = 0</m>, <m>\omega_2 = 1\text{ rad/s}</m>, <m> A_2 = 2\text{ cm}</m>, <m>\phi_1 = -\dfrac{\pi}{2}</m>; (b) <m> x_1(0) = 2\text{ cm}</m>, <m> x_2(0) = 0</m> , <m> v_{1}(0) = 0 </m>, <m> v_{2}(0) = 2\text{ cm/s}</m>, (c) Two arrows, one at one radian counterclockwise from positive <m> x </m> axis, and the other <m> \pi/2</m> radian behind in the cycle. </p> </answer>
+		
+		<solution><title> (a) </title>
+			<p>
+				Comparing with the solution <m> x = A \cos(\omega t + \phi)</m>, we read off the values for the first oscillator.
+				<me>
+					\omega_1 = 1\text{ rad/s},\ \ A_1 = 2\text{ cm},\ \ \phi_1 = 0.
+				</me>
+			</p>
+			<p>
+				The second oscillator is given in sine. So, we first write it as a cosine with positive multiplying factor, and then read off the values.
+				<me>
+					x_2 = 2\,\sin(t) = 2\,\cos(t-\pi/2).
+				</me>
+				Therefore,
+				<me>
+					\omega_2 = 1\text{ rad/s},\ \ A_2 = 2\text{ cm},\ \ \phi_2 = -\dfrac{\pi}{2}.
+				</me>				
+
+			</p>
+
+		</solution>
+		<solution><title> (b)</title>
+			<p> (b)
+				The initial positions are just the values of <m> x </m> at <m> t = 0</m>. The velocities are
+				<md>
+					<mrow> \amp v_1 = -2\,\sin(t) \longrightarrow v_1(0) = 0. </mrow>
+					<mrow> \amp v_2 = 2\,\cos(t) \longrightarrow v_2(0) = 2\text{ cm/s}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title> (c) </title>
+			<p>
+				(c) See <xref ref="fig-ex-two-oscillators-sine-cosine-phasors"/>.
+			</p>
+			<figure xml:id="fig-ex-two-oscillators-sine-cosine-phasors">
+				<caption>
+					Figure for <xref ref="ex-Understanding-Positions-of-Two-Oscillators-and-Their-Phasors"/>(c).
+				</caption>
+				<image source="./images/simple-harmonic-motion/ex-two-oscillators-sine-cosine-phasors.png" width="30%"/>
+			</figure>		
+
+		</solution>
+	</exercise>
+
+
+	
+</section>

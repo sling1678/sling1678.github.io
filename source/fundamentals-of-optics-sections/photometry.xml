@@ -1,0 +1,266 @@
+<section xml:id="photometry"><title> Photometry </title>
+	<introduction>
+        <p>
+        	Radiometry gives us the objective measure of energy and power of light sources.  However, human eye does not respond to all colors of light equally, and we perceive intensities differently than an objective instrument.  For instance, experiments have shown that the eye is most sensitive to the yellow-green light than to the red and blue lights of the spectrum.  Therefore, yellow-green light will appears brighter to our eyes than either the red or the blue light of the same intensity.  To take the difference into account, a new set of physical measures of light is 
+        	introduced for visible lights. these new metrics are called <term>photometric quantities</term>.
+        </p>
+        <p>
+        	In the photometric quantities, power is weighted according to the human response by multiplying the radiometric quantity by a special function, called spectral luminance efficiency or the <m>V(\lambda)</m> function,  whose value is between 0 and 1. The <m>V</m> function takes care of the response of human eye to various wavelengths. The <m>V</m>-function was arrived at experimentally in 1924, and is an average response of a population of people in a wide range of ages.  The astronomical instruments use a <term> <m>V</m>-filter </term> for photometry.
+        </p>
+        <p>
+        	The units as well as the names photometrics quantities differ from those in radiometry. For instance, power is simply called power in radiometry, but it is called the <term>luminous flux</term> in photometry, and while the unit of power in radiometry is <m>\text{Watt}</m>, in photometry it is <m>\text{lumen}</m>.  A <m>\text{lumen}</m> is defined in terms of a superfluous fundamental unit, called <term> candela</term>  which is one of the seven independent quantities of the SI system of units, viz. meter, kilogram, second, ampere, Kelvin, mole and candela.
+        </p>
+        <p>
+        	Candela is the SI unit of the photometric quantity called <term>luminous intensity</term> or <term> luminosity</term>  that corresponds to the radiant intensity in radiometry.  The following working definition was adopted for candela in 16th General Conference on Weights and Measures  in 1979.
+        </p>
+        <p>
+        	A monochromatic radiation source of frequency <m>540 \times 10^{12}\text{ Hz}</m> is said to have a luminous intensity of one candela in a given direction if it emits <m>\frac{1}{683}\text{ watt}</m> of power per steradian in that direction.
+        </p>
+        <p>
+        	Since there are <m>\frac{4}{pi}</m>  steradians in the full solid angle around a source, the total power emitted by a one-candela source is <m>\frac{4}{683\pi}\text{ W}</m>, which is equal to <m>1.0\text{ lumen}</m>, if the source emits radiation isotropically in all directions.
+        	<men>
+        		1.0 \text{ lumen} = \frac{4}{683\pi}\text{ W}.
+        	</men>
+        	<xref ref="table-Radiometric-and-Photometric-Quantities-and-Units"/>  shows  the units of radiometry and photometry side by side.  Various sources of light are often labelled with  their luminance, which is the photometric term for the total power radiated per unit are per unit solid angle.  <xref ref="table-Luminance-of-Various-Sources"/> gives approximate luminance of  several sources of light.
+
+        </p>
+
+		<table xml:id="table-Radiometric-and-Photometric-Quantities-and-Units">
+			<title>Radiometric and Photometric Quantities and Units</title>
+			<tabular>
+
+		                    <col align="left" right="minor"/>
+		                    <col align="left" right="minor"/>
+		                    <col align="center" right="medium"/>
+		                    <col align="left" right="minor"/>
+		                    <col align="center" right="minor"/>
+		                    <col align="left"/>		
+			<row bottom="major">
+				<cell right="none" > </cell><cell right="none"> </cell> <cell right="none" > </cell><cell right="none"></cell><cell right="none"></cell><cell right="none" > </cell> 
+			</row>
+			<row bottom="major">
+				<cell right="none" > Radiometry</cell><cell right="none"> </cell> <cell> </cell><cell right="none">Photometry</cell><cell right="none"></cell><cell> </cell> 
+			</row>
+			<row>
+				<cell> Definition</cell><cell> Name	</cell> <cell> Unit	</cell><cell> Name	</cell><cell> Unit </cell><cell>	Unit </cell>
+			</row>
+			<row bottom="minor">
+		   		<cell> </cell><cell> </cell> <cell></cell> <cell></cell> <cell> </cell> <cell>Conversion</cell>
+		   	</row>
+		   	<row>
+		 	<cell> Power	</cell><cell> Power </cell><cell>	Watt  	</cell><cell> Luminous flux	</cell><cell> Lumin  	</cell><cell> <m>1\text{ W}</m> </cell>
+		 	</row>
+		 	<row bottom="minor">
+		 		<cell> 	</cell><cell>   </cell><cell>	  (<m>\text{W}</m>)	</cell><cell> Flux	</cell><cell>  (lm)	</cell><cell>  <m>= 683\text{ lm}</m></cell>
+		 	</row>
+		 	<row>
+				<cell> Power per unit  </cell><cell>	Radiant   </cell><cell>		</cell><cell> Luminous 	</cell><cell> Candela  </cell><cell> <m>1\text{ W/sr}</m> </cell>
+			</row>
+		 	<row>
+				<cell> unit solid   </cell><cell>	 intensity </cell><cell>	W/sr 	</cell><cell>  intensity	</cell><cell>   (<m>\text{Cd}</m>)	</cell><cell>  <m>= 683\text{ Cd}</m> </cell>
+			</row>
+			<row bottom="minor">
+				<cell>  angle </cell><cell>	   </cell><cell>	  	</cell><cell>   	</cell><cell>   	</cell><cell>  </cell>
+			</row>
+			<row>
+				<cell>Power per  </cell><cell>	Irradiance/ </cell><cell>	 </cell><cell>	Illuminance </cell><cell>	<m>\text{lm/m}^2</m>  </cell><cell>  <m>1\text{ W/m}^2</m> </cell>
+			</row>
+			<row>
+				<cell> unit  area	</cell><cell>  Emittance/ 	</cell><cell> <m>\text{W/m}^2</m>	</cell><cell> Illuminance </cell><cell>	 (lux(<m>\text{lx}</m>)	)</cell><cell>  <m>= 683\text{ lx}</m> </cell>
+			</row>
+			<row bottom="minor">
+				<cell>  </cell><cell>   Intensity	</cell><cell>  	</cell><cell>   </cell><cell></cell><cell>    </cell>
+			</row>
+			<row>
+				<cell>Power per   </cell><cell>	Radiance </cell><cell> 	<m>\text{W/(m}^2\text{sr)}</m> </cell><cell>	Luminance </cell><cell> 	<m>\text{Cd/m}^2</m>   </cell><cell> <m>1  \text{ W/m}^2 \text{sr}</m> </cell>
+			</row>
+			<row>
+				<cell>unit area    </cell><cell> 	</cell><cell>	 </cell><cell>	 	 </cell><cell>  <m>(\text{nit})</m>	</cell><cell>  <m>= 683\text{ nit}</m></cell>
+			</row>
+			<row>
+				<cell>per unit  	</cell><cell>  </cell><cell>  </cell><cell>   </cell><cell>   </cell><cell> </cell>
+			</row>
+			<row  bottom="minor">
+				<cell> solid angle	</cell><cell>  </cell><cell>  </cell><cell>   </cell><cell>   </cell><cell> </cell>
+			</row>
+			</tabular>
+		</table>
+ 
+ 
+
+		<table xml:id="table-Luminance-of-Various-Sources">
+			<title> Luminance of Various Sources (Ref: National Physical Laboratory, UK.)</title>
+			<tabular>
+				<col align="left" right="minor"/>
+				<col align="center"/>
+				<row bottom="major">
+					<cell> </cell><cell>  </cell>
+				</row>
+				<row bottom="minor">
+					<cell>Light Source </cell><cell> 	Luminance (<m>\text{nits}</m>)</cell>
+				</row>
+				<row>
+					<cell>Atomic fission bomb </cell><cell> <m>2 \times 10^{12}</m></cell>
+				</row>
+				<row>
+					<cell> (<m>0.1\text{ msec}</m> after firing)	</cell><cell>  </cell>
+				</row>
+				<row>
+					<cell> Lightning flash	</cell><cell> <m>8 \times 10^{10}</m> </cell>
+				</row>
+				<row>
+					<cell> Sunlight on the surface of Earth   </cell><cell> <m>1.6 \times 10^9</m> </cell>
+				</row>
+				<row>
+					<cell>  (at meridian) </cell><cell>   </cell>
+				</row>
+				<row>
+					<cell>Photoflash lamps 	</cell><cell> <m>2.5 \times 10^8</m></cell>
+				</row>
+				<row>
+					<cell><m>60\text{ W}</m>   bulb </cell><cell> 	<m>1.2 \times 10^5</m> </cell>
+				</row>
+				<row>
+					<cell> Sperm candle flame </cell><cell>	<m>1 \times 10^4</m> </cell>
+				</row>
+				<row>
+					<cell> Clear blue sky 	</cell><cell> <m>4 \times 10^3</m> </cell>
+				</row>
+				<row>
+					<cell>Moonlight on Earth </cell><cell> 	<m>3 \times 10^3</m> </cell>
+				</row>
+				<row bottom="major">
+					<cell>Starlit sky  </cell><cell> 	<m>5 \times 10^{-4}</m> </cell>
+				</row>
+			</tabular>
+		</table>
+ 
+    </introduction>
+
+	<exercise xml:id="exercise-Luminance-of-Moon"><title>Luminance of Moon</title>
+
+		<statement>
+			<p>
+				What will be the luminance of moon if observed from half the distance to the moon? Luminance of Moonlight on Earth <m>= 3000\text{ nits}</m>.
+			</p>
+		</statement>
+		<hint><p> Luminosity varies as inverse square of distance from an isotropic source. Assume moon as an isotropic source. </p></hint>
+		<answer><p><m>1.2 \times 10^4\text{ nits}</m>.</p></answer>
+		<solution>
+			<p>
+				The luminosity will vary in space from the source (moon here) as the intensity varies. Let us assume moon to be an isotropic source of secondary light. Therefore, the luminosity at half the distance will be 4 times as much.
+				<me>
+					L_{x/2} = \left(\dfrac{x}{x/2} \right)^2 \times L_x = 4\times 3000 = 12,000\:\text{nit}.
+				</me>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="exercise-Luminosity-of-a-Laptop-Monitor-at-the-Eye"><title>Luminosity of a Laptop Monitor at the Eye</title>
+
+		<statement>
+			<p>
+				The luminance of a laptop monitor is <m>150\text{ nits}</m> at the eye <m>25\text{ cm}</m> from the screen.  How much energy in Joules  enters the eye in one hour if the cross-section of the pupil is assumed to be a circle of radius <m>5\text{ mm}</m>?		
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p><m>1.55 \times 10^{-5}\text{ J}</m>.</p></answer>
+		<solution>
+			<p> 
+				The solid angle <m>\Delta\Omega</m> subtended at the cross-section of the pupil by a point source 25 cm from the eye is given by <m>4\pi</m> times the ratio of the area of the eye to the area of the spherical surface from the source.
+			</p>
+	    	<figure xml:id="fig-exercise-luminosity-from-laptop-solid-angle-and-area">
+	    		<caption>
+	    			 The solid angle and area element at the eye for <xref ref="exercise-Luminosity-of-a-Laptop-Monitor-at-the-Eye"/>.
+	    		</caption>
+	    		 <image source="./images/fundamentals-of-optics/exercise-luminosity-from-laptop-solid-angle-and-area.png" width="100%"/>
+	    	</figure>			
+ 
+			<p>
+
+				<me>
+					\Delta\Omega = \dfrac{ \pi (0.5\:\text{cm})^2}{(25\:\text{cm})^2} = 2.5\times 10^{-4}\:\text{sr},
+				</me>
+				and the luminosity given in nits can be expressed in SI units to give
+				<me>
+					150\:\text{nit} = \dfrac{150}{683}\:\dfrac{\text{W}}{\text{m}^2\text{sr}}.
+				</me>
+				Therefore,
+				<md>
+					<mrow> \text{Energy} \amp = \dfrac{150}{683}\:\dfrac{\text{W}}{\text{m}^2\text{sr}}\times 2.5\times 10^{-4}\:\text{sr} \times \pi(0.005\:\text{m})^2  </mrow>
+					<mrow> \amp = 1.55\times 10^{-5}\:\text{J}.</mrow>
+				</md> 
+
+
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Illuminance-of-Sunlight-from-Irradiance"><title> Illuminance of Sunlight from Irradiance</title>
+
+		<statement>
+			<p>
+				The irradiance of the sunlight on the Earth is approximately <m>1.4\text{ kW/m}^2</m>.  Determine the illuminance.
+			</p>
+		</statement>
+		<hint><p>Use definition of illuminance.</p></hint>
+		<answer><p> <m>9.6 \times 10^5\text{ lx}</m>. </p></answer>
+		<solution>
+			<p> Using the definition of illuminance we get
+				<me>
+					\text{Illuminance} = 1.5\times 10^3\:\frac{\text{W}}{\text{m}^2}\times \dfrac{683\:\text{lux}}{1\:\text{W/m}^2} = 9.56\times 10^5\:\text{lux}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Radiant-Intensity-and-Luminous-Intensity-of-the-Sun-from-Irradiance"><title>Radiant Intensity and Luminous Intensity of the Sun from Irradiance</title>
+
+		<statement>
+			<p>
+				The irradiance of the sunlight on the Earth is approximately <m>1.4\text{ kW/m}^2</m>.  The average distance between the Earth and the Sun is <m>1.5\times10^8\text{ km}</m>.  Determine the radiant intensity and luminous intensity of the Sun.
+
+			</p>
+		</statement>
+		<hint><p>Use definitions of radiant intensity and luminous intensity.</p></hint>
+		<answer><p> <m>3.15 \times 10^{22}\text{ kW/sr}</m>, <m>2.15 \times 10^{28}\text{ cd}</m>.</p></answer>
+		<solution>
+			<p> Using the definitions we get
+				<md>
+					<mrow> \text{Radiant intensity} \amp  = \dfrac{\text{Total power}}{4\pi\:\text{str}} = \dfrac{1.4\:\text{kW/m}^2\times 4\pi\times R_{\text{ES}}^2}{4\pi},</mrow>
+					<mrow> \amp = 1.4\:\text{kW/m}^2\times(1.5\times 10^{11}\:\text{m})^2  </mrow>
+					<mrow> \amp = 3.15\times 10^{22}\:\text{kW/str}.</mrow>
+				</md>
+				<md>
+					<mrow>\text{Luminous } \amp \text{intensity}  = \text{Radiant intensity}\times 683\times 10^{3}\:\text{Cd.str/kW}, </mrow>
+					<mrow>\amp = 3.15\times 10^{22}\:\text{kW/str}\times 683\times 10^{3}\:\text{Cd.str/kW} </mrow>
+					<mrow> \amp = 2.15\times 10^{28}\:\text{Cd}. </mrow>
+				</md>
+ 
+			</p>
+		</solution>
+	</exercise> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

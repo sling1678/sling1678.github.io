@@ -1,0 +1,108 @@
+<section xml:id="Elementary-AC-Circuits"><title> Elementary AC Circuits </title>
+	<introduction>
+		<p>
+		</p>
+	</introduction>
+	<subsection><title> (Calculus) Series RL Circuit </title>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				For our first example, we consider a circuit containing a resistor (<m>R</m>) and an inductor (<m>L</m>) driven by a sinusoidal EMF as shown in the figure. Using voltage drops across each element, we get the following Faraday loop equation.
+				<me>
+					V_0\: \cos(\omega t) -L\frac{dI}{dt} - R I = 0. 
+				</me>
+			</p>
+			<p> </p>
+			<image source="./images/ac-circuits/ac-RL-series-circuit-basic.png" width="50%"/>
+		</sidebyside>
+		<p>
+			We will write this equation as
+			<men xml:id="eq-RL-series-eom-1">
+				\frac{dI}{dt} + \dfrac{R}{L} I = \dfrac{V_0}{L}\, \cos(\omega t).
+			</men>
+		</p>
+
+		<p>
+			When switch is closed at <m>t=0</m>, there is a transient behavior of the circuit, where the current in the circuit does not oscillate with the same frequency as the frequency of the driving EMF.  But, after some time (here <m>t \gt \gt L/R </m>) a steady state is reached, and thereafter, current in the circuit oscillates with the same frequency as the frequency of the driving EMF.  Therefore, we can write the steady state solution of Eq. <xref ref="eq-RL-series-eom-1" />  in the following form that has two unknowns the amplitude <m>I_0</m> and phase constant  <m>\phi_I</m>.
+			<men xml:id="eq-RL-series-eom-2"> 
+			I(t) = I_0\: \cos(\omega t+\phi_I).\ \ \ \textrm{(Steady state)}  
+			</men>
+			To find <m>I_0</m> and  <m>\phi_I</m>, we substitute this solution in Eq. <xref ref="eq-RL-series-eom-1" /> to obtain
+			<me>
+				-L\:\omega\: I_0\: \sin(\omega t+\phi_I) + RI_0\: \cos(\omega t+\phi_I) = V_0\: \cos(\omega t).  
+			</me>
+			Now, we expand the trigonometric functions and rearrange terms to obtain the following.
+			<md>
+				<mrow> \amp \left[ V_0 + L\:\omega\: I_0\: \sin\phi_I - R\: I_0\: \cos\phi_I \right] \cos(\omega t)</mrow>
+				<mrow> \amp \ \ \ \ \ \ \ + \left[ L\:\omega\: I_0\: \cos\phi_I - R\: I_0\: \sin\phi_I \right] \sin(\omega t) = 0.</mrow>
+			</md>
+			In this equation, the coefficients of <m>\cos(\omega t)</m> and <m>\sin(\omega t)</m> must be independently zero since they are orthogonal functions.  This can be shown by multiplying this equation by <m>\cos(\omega t)</m> and integrating over one period.  You should do this step.  you will find that this integration leads to the conclusion that the coefficient of the cosine term must be zero.  Similarly, when you multiply by <m>\sin(\omega t)</m> and integrate over one period, you find that the coefficient of the sine term must be zero.  
+			<mdn>
+				<mrow xml:id="eq-RL-series-eom-current-amplitude"> \amp   V_0 + L\:\omega\: I_0\: \sin\phi_I - R\: I_0\: \cos\phi_I = 0. </mrow>
+				<mrow> \amp   L\:\omega\: I_0\: \cos\phi_I - R\: I_0\: \sin\phi_I = 0. </mrow>
+			</mdn>
+			Therefore, we get the following for the phase constant of current
+			<me>
+				\tan\phi_I = -\frac{\omega L}{R},
+			</me>
+			from which we get sine and cosine of <m>\phi_I</m>.
+			<md>
+				<mrow> \amp \cos\phi_I = \frac{R}{\sqrt{R^2 +(\omega L)^2}}.</mrow>
+				<mrow> \amp \sin\phi_I = -\frac{\omega L}{\sqrt{R^2 +(\omega L)^2}}.</mrow>
+			</md>
+			Putting these expressions for  <m>\sin\phi_I</m> and <m>\cos\phi_I</m> in Eq. <xref ref="eq-RL-series-eom-current-amplitude" />, we find <m>I_0</m>.
+			<me>
+				I_0 = \frac{V_0}{\sqrt{R^2 +(\omega L)^2}} 
+			</me>
+			Summarizing, our results, we found current in the circuit is <m>I=I_0\cos(\omega t + \phi_I)</m> with
+			<me> 
+				I_0 = \frac{V_0}{\sqrt{R^2 +(\omega L)^2}},\ \ \ \  \phi_I = -\tan^{-1}\left(\frac{\omega L}{R}\right) 
+			</me>
+		</p>
+
+		<subsubsection><title>Impedance of series RL Circuit</title>
+
+			<p>
+				The ratio of the amplitude of the voltage of the source to that of  the current through the source has units of resistance, it consists of contributions from the inductance and the frequency.  This quantity <q>acts</q> like an overall resistance in the circuit and is called the <term> amplitude of impedance</term> or simply <term> impedance</term> of the circuit, denoted usually by the letter <m>|Z|</m>.  The amplitude of the impedance does not have the information of the phase difference between the voltage and the current. The complete impedance is defined to contain both of these informations into one complex quantity we will study in the next section.  Here, the amplitude of the  impedance of the RL-circuit is found to be
+				<me>
+					|Z| = \frac{\textrm{Amplitude of Voltage}}{\textrm{Amplitude of Current}} = \sqrt{R^2 +(\omega L)^2}.
+				</me>
+			</p>
+		</subsubsection>
+
+		<subsubsection><title>RL Circuit at High and Low Frequencies </title>
+		
+			<p>
+				<ol>
+					<li> 
+						<p>
+							<alert> High frequency ( <m>\omega\ \rightarrow\ \infty</m>  Limit) </alert>
+						</p>
+						<p>
+							As frequency of the driving EMF is raised, we note that the inductive reactance increases without bound, and hence the resistor becomes less and less important in the RL-circuit.  At very high frequencies, an RL-circuit acts purely inductive with phase constant of current, <m> \phi_I</m>, reaching close to  <m>-\pi/2</m> radians and the amplitude <m>I_0</m> given by simply ignoring the resistance in the circuit, <m>I_0 \approx V_0/\omega L</m>.
+						</p>
+					</li>
+					<li> 
+						<p> <alert> Low frequency  ( <m>\omega\ \rightarrow\  0</m> Limit) </alert></p>
+						<p>
+							At low frequency the circuit becomes more like a DC circuit.  Hence, the inductance becomes less important since a back EMF requires a changing magnetic flux.  The current in the circuit will be in-phase with the driving EMF, i.e., <m>\phi_I \rightarrow 0</m>, and the amplitude <m>I_0</m> is obtained by ignoring the inductor altogether, i.e., <m>I_0\ \approx  V_0/R</m>.
+						</p>
+					</li>
+				</ol>
+
+	 
+			</p>
+		</subsubsection>
+
+
+ 
+
+	</subsection>
+
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,574 @@
+<section xml:id="The-Universal-Law-of-Gravitation"><title> The Universal Law of Gravitation</title>
+	<introduction>
+		<p>
+			In <em> Principia</em>, Newton presented his three laws of motion, and also stated the law of gravitation.  The law of gravitation states that there is an <alert> attractive force between all objects </alert> that depends on their masses and distances.
+		</p>
+		<p>
+			The magnitude of the gravitational force <m> F</m> between two particles of masses <m> m_1 </m> and <m> m_2 </m> separated by a distance <m> r </m> is given by   
+			<men xml:id="eq-Newtons-law-of-gravitation">
+				  F = G_N\, \dfrac{m_1 m_2}{r^2},
+			</men>
+			where <m> G_N</m> is a universal constant, called <term> gravitational constant</term>.  Do not confuse this <m> G_N</m> with acceleration due to gravity <m> g</m>, although sometimes we write <m>G</m> for <m> G_N</m>.  The value of <m> G_N</m> has been determined experimentally to be 
+			<men>
+				G_N = 6.67428\times10^{-11}\ \text{N.(m/kg)}^2.
+			</men> 
+			Constant <m> G_N</m>  is considered to be truly universal, being same between any two objects anywhere in the universe, although there has been speculation that its value may have changed over time.
+		</p>
+		<p>
+			The force is very weak as you can tell if you calculate force between two <m>1\text{-kg}</m> objects <m>1\text{-m}</m> apart. It will be
+			<me>
+				F = 6.67 \times 10^{-11}\text{ N}.
+			</me>
+			Experimental verification of the law in a lab experiment was done by Henry Cavendish, who made use of a very sensitive torsion balance, now called the Cavendish balance, to detect small forces. Modern versions of Canvendish experiment are routinely perfomed by advanced physics students.
+		</p>
+	</introduction>
+	<subsection> <title> Applying the Law of Gravitation to Spherical Bodies</title>
+
+		<p><alert> Outside a Spherical Body</alert> </p>
+ 
+		<p>
+			Eq. <xref ref="eq-Newtons-law-of-gravitation"/> is for force between point particles. To get the formula for gravitational force between extended bodies, we need to use mathematics to figure out the net force between all particles of the two bodies. 
+		</p>
+		<p>
+			Mathematics (Calculus) shows that the gravitaional force between two spherical bodies that are outside of each other has the same form as Eq. <xref ref="eq-Newtons-law-of-gravitation"/> <alert> provided the distance <m> r </m> is center-to-center distance </alert>.  For instance, the force between Earth and Sun will be
+			<me>
+				F = G_N\, \dfrac{M_{\text{Sun}} M_{\text{Earth}}}{r_{\text{ES}}^2},
+			</me>
+			where <m> r_{\text{ES}}</m> is the distance from the center of the Sun to the center of the Earth.
+		</p>
+		<p>
+			Similarly, the gravitaitonal force of Earth on a satellite around Earth will be based on the distance from the center of the Earth and the satellite, and not just the altitude of the satellite.
+		</p>
+
+		<p><alert>Inside a Spherical Body</alert> </p>
+		<p>
+			But, how about force on an object at a point inside a spherical body? For instance, what will be the force on a miner deep inside the Earth? Math shows that, only the mass of the sphere that is within the distance to the object matters.
+		</p>
+
+		<p>
+			Say, an object of mass <m>m</m> inside Earth is at a distance <m> d </m> from the center of Earth. The surprising discovery of the mathematics of spherical bodies is that the force of Earth on such a body will be from only those masses of Earth that are within a distance <m> d </m> from the center. That is, effectively Earth will be of radius <m> d</m> rather than <m> R_E</m>. 
+			<me>
+				F = G_N\, \dfrac{m M_d}{d^2},
+			</me>
+			where <m>M_d</m> is the part of Earth that is within a distance <m>d</m> from its center.
+		</p>
+		<p><alert>Inside a Spherical Shell</alert> </p>
+		<p>
+			One of the consequences of  this result is that if you sit inside a spherical shell, the gravitational force on you will be zero no matter where you sit, since there is no mass within your distance from the center.
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Gravitational-Force-Between-Spherical-Bodies"><title> Gravitational Force Between Spherical Bodies </title>
+		<statement>
+			<p>
+				Evaluate the gravitational force in the following situations: 
+			</p>
+			<p> 
+				(a) between two 5-kg spherical steel balls separated by a center-to-center distance of <m>15\text{ cm}</m>,  and, 
+			</p>
+			<p>
+				(b) the Sun and the planet Neptune which have an average separation of <m>30.15\text{ AU}</m>. <m>M_\text{Sun} \approx 2.0\times 10^{30}\text{ kg}</m>, <m>M_\text{Neptune} \approx 1.0\times 10^{26}\text{ kg}</m> and <m>1\text{ AU} = 1.496\times 10^8\text{ km}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> (a) and (b) : Use formulas for spherical bodies.  </p> </hint>
+		<answer> <p> (a) <m> 7.41\times 10^{-8}\text{ N}</m>, (b) <m> 6.56\times 10^{20}\text{ N}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				(a) We use the formulas given.
+				<md>
+					<mrow> F \amp = G_N \dfrac{m_1 m_2}{r^2},</mrow>
+					<mrow>  \amp = 6.67\times 10^{-11} \dfrac{ 5\times 5}{0.15^2} = 7.41\times 10^{-8}\text{ N}.</mrow>
+				</md>
+			</p>
+
+			<p>
+				(b) We use the formulas given.
+				<md>
+					<mrow> F \amp = G_N \dfrac{m_1 m_2}{r^2},</mrow>
+					<mrow>  \amp = 6.67\times 10^{-11} \dfrac{2.0\times 10^{30}\times 1.0\times 10^{26}}{(30.15\times 1.496\times 10^8\times 10^3)^2}, </mrow> 
+					<mrow> \amp = 6.56\times 10^{20}\text{ N}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>	
+
+	<subsection> <title> Applying the Law of Gravitation to Arbitrary Bodies</title>
+		<p>
+			If the distance between two bodies is large compared to their sizes, the bodies can be replaced by point masses and then we can use the same form of the law as given in Eq.  
+			<xref ref="eq-Newtons-law-of-gravitation"/> for point particles. The force of attraction between non-spherical objects which are not far apart compared to their sizes is complicated and can only be computed by dividing the bodies into smaller parts and vectorially summing up the forces between every pair of masses.
+		</p>
+	</subsection>
+
+	<example> <title> Newton's Apple</title>
+		<p>
+			It is interesting to note that a straightforward analysis of the falling of an apple and the continuous falling of the Moon towards the Earth can lead one to the discovery of the inverse distance square part of the universal law of gravitation. Although, Newton did not come upon the universal law of gravitation in this way, the analysis is none-the-less instructive, and will be presented here. 
+		</p>
+		<p>
+			From the observations on freely falling objects near the Earth, you know that the apple falls with an acceleration of <m>9.81\text{ m/s}^2</m>.  From observations on the Moon, i.e. from the distance to the Moon and its time period, it is also known that the Moon has a centripetal acceleration of <m>0.00272\text{ m/s}^2</m> in its circular orbit about Earth.
+		</p>
+		<!-- <figure>
+			<caption>
+				The Moon traveling in circular motion about the Earth completes one orbit in approximately 29 days, which gives it's a centripetal acceleration of <m>0.00272\text{ m/s}^2</m>.
+			</caption>
+ 
+		</figure> -->
+
+		<p>
+		 
+			Thus, the acceleration of the Moon is approximately 3600 times less than that of apple. 
+			<me>
+				\dfrac{a_{\text{Moon}}}{a_{\text{apple}}} = \dfrac{0.00272\ \text{m/s}^2}{9.81\ \text{m/s}^2} \approx \dfrac{1}{3600}
+			</me>
+			Since Moon is at a distance of approximately <m>60</m> times the radius of Earth, it can be concluded that the acceleration due to the gravitation of the Earth drops as the inverse of the square of the distance.
+			<me>
+			\dfrac{a_{\text{Moon}}}{a_{\text{apple}}} = \dfrac{r_{\text{apple}}^2}{r_{\text{Moon}}^2}
+			</me>
+			Since, force on an object is proportional to the acceleration, the force must also vary as <m> 1/r^2 </m> if the acceleration varies as such.  The genius of Newton was in the realization that the same law of force must apply between Earth and Moon as applies between Earth and apple.
+			<me>
+			\dfrac{F}{m}\propto \dfrac{1}{r^2}
+			</me>
+			Here <m>m</m>  may stand for the mass of the apple or the Moon.  
+ 
+		</p>
+	</example>
+
+	<exercise xml:id="ex-Computing-Gravitational-Force-Between-Objects"><title> Computing Gravitational Force Between Objects</title>
+		<statement>
+			<p>
+				Find gravitational forces between objects in the following situations.  
+			</p>
+			<p>
+				(a) Two spherical lead balls of masses 10 kg each separated by center-to-center distance of 10 cm. 
+			</p>
+			<p>
+				(b) Two people of height approximately 1.5 m and masses 100 kg and 60 kg separated by a distance of 2 m. 
+			</p>
+			<p>
+				(c) Same two people 20 m apart. 
+			</p>
+			<p>
+				(d) A satellite of mass 1000 kg in orbit 200 km above the Earth; use mass of the Earth = <m> 5.96\times 10^{24}\text{ kg}</m>, and mean radius of the Earth = 
+				<m>6.37\times 10^6\text{ m}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> (a) force same as point objects, (b) Too complicated to calculate, (c) approximately same as point objects, (d) same as a spherical object and a point object outside of the sphere.  </p> </hint>
+		<answer> <p> (a) <m> 6.67\times 10^{-7}\ \textrm{N} </m>, (b) Crude idea <m>1.0\times 10^{-8}\ \textrm{N} </m>, (c) <m>1.0\times 10^{-10}\ \textrm{N} </m>,  (d) <m> 9.2\times 10^{3}\ \textrm{N}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				(a) I have stated above that a spherical object <q>acts</q> same as a point particle as far as gravitation outside the sphere is concerned.  Therefore, the force between the spherical lead balls can be easily computed giving the following magnitude.
+				 <me>  F = \left(6.67\times 10^{-11} \right) \times \dfrac{10\  \times 10\  }{\left( 0.1\  \right)^2} = 6.67\times 10^{-7}\ \textrm{N}.
+				 </me> 
+			</p>
+
+			<p>
+				(b)
+				Since people are not spherical objects, and since their separation is not too great compared to their sizes, we cannot use  the same form of the law of gravitation as given for the point particles.  If we use the formula given, we will only get some rough estimate, not an exact answer for the magnitude of the force.
+				 <me> F(\text{CRUDE IDEA}) = \left(6.67\times 10^{-11}  \right) \times \dfrac{100\ \times 100\  }{\left( 2\ \textrm{m}\right)^2} = 1.0\times 10^{-8}\ \textrm{N}.
+				 </me> 
+			</p>
+
+			<p> (c)
+ 				In this part, the people are separated by more than 10-times their sizes. Therefore approximating them as spheres will not give us too different a result than an exact result. Although the result of spherical approximation for a person will not give an exact result, but we expect the result to be more precise here than it was in part (b). The magnitude of the force is
+				 <me> F \approx   \left(6.67\times 10^{-11}  \right) \times \dfrac{100\ \times 100\ }{\left( 20\  \right)^2} = 1.0\times 10^{-10}\ \textrm{N}.
+				 </me> 
+			</p>
+
+			<p> (d)
+				Although, the satellite is not a spherical object, it is far away from the Earth compared to the size of the satellite.  Therefore, we can treat the satellite as a point mass. This gives the following for the magnitude of the force on the satellite.
+				 <me> F =\left(6.67\times 10^{-11}  \right) \times \dfrac{5.97\times10^{24}\  \times 1000\  }{\left( 6.37\times10^6\ +0.200\times10^6\  \right)^2} = 9.2\times 10^{3}\ \textrm{N}.
+				 </me> 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Gravitational-Force-Between-Astronomical-Objects"><title> Gravitational Force Between Astronomical Objects </title>
+		<statement>
+			<p>
+				(a) Find the gravitational force between Earth and Sun. (b) What is the magnitude of acceleration of Earth caused by this force acting on Earth? (c) What is the magnitude of acceleration of Sun caused by this force acting on Sun?
+			</p>
+			<p>
+				Data: <m>M_\text{E} = 5.96\times 10^{24}\text{ kg}</m>, <m>M_\text{S} = 2.0\times 10^{30}\text{ kg}</m>, <m>r_\text{ES} = 1.5\times 10^{11}\text{ m}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use formula. (b) Apply <m>F=ma</m> on Earth. (c) Apply <m>F=ma</m> on Sun.  </p> </hint>
+		<answer> <p> (a)<m> 3.53 \times 10^{22}\text{ N}</m>, (b) <m> 5.92\times 10^{-3}\text{ m/s}</m>, (c) <m>1.77\times 10^{-8}\text{ m/s} </m>.  </p> </answer>
+		<solution> 
+			<p>
+				(a)
+				The magnitude of the gravitational force is
+				<md>
+					<mrow> F \amp = G_N\dfrac{ M_\text{E} M_\text{S}  }{ r^2}</mrow>
+					<mrow>  \amp = 6.67\times 10^{-11}\dfrac{  5.96\times 10^{24} \times 2.0\times 10^{30} }{ (1.5\times 10^{11})^2}</mrow>
+					<mrow>  \amp = 6.67\dfrac{  5.96 \times 2.0  }{ 1.5 ^2} \times 10^{-11+24+30-22}</mrow>
+					<mrow>  \amp = 35.3 \times 10^{21} = 3.53 \times 10^{22}\text{ N}.</mrow>
+				</md>
+				Note that I separated out the powers of 10. This often helps prevent numerical error.
+			</p>
+			<p>
+				(b) 
+				Dividing by mass of Earth will give the magnitude of acceleration.
+				<me>
+					a = \dfrac{F}{M_\text{E}} =  \dfrac{ 3.53 \times 10^{22}\text{ N} }{ 5.96\times 10^{24}\text{ kg}} = 5.92\times 10^{-3}\text{ m/s}^2.
+				</me>
+			</p>
+			<p>
+				(c) 
+				Dividing by mass of Sun will give the magnitude of acceleration.
+				<me>
+					a = \dfrac{F}{M_\text{S}} =  \dfrac{ 3.53 \times 10^{22}\text{ N} }{ 2\times 10^{30}\text{ kg}} = 1.77\times 10^{-8}\text{ m/s}^2.
+				</me>
+			</p>
+		</solution>
+	</exercise>	
+
+
+	<exercise xml:id="ex-Gravitational-Force-and-Circular-Orbits"><title> Gravitational Force and Circular Orbits </title>
+		<statement>
+			<p>
+				A satellite is to be placed in a geocentric circular orbit about Earth.  Find the altitude of the circular orbit above Earth.
+			</p>
+
+		</statement>
+		<hint> <p>  Use centripetal acceleration of the uniform circular motion. You get started by comuting the speed obtained by dividing the circumference by time of one day, the time it takes the satelite go once around in its geocentric orbit.</p> </hint>
+		<answer> <p> <m> \left(\dfrac{G_N M_E T^2}{4\pi^2}\right)^{1/3} -R_E= 3.6\times 10^7\ \textrm{m}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				A  <term> geocentric orbit </term> means that the satellite has the same time period as the time period of the rotation of Earth.  When a satellite is in a geocentric orbit, the satellite appears  at the same spot above the Earth.  These satellites are used for telecommunications. 
+			</p>
+			<p>
+				Let <m> h </m> be the altitude above Earth, and <m> R_E</m> the radius of the Earth.  Then, the radius of the circular motion of the satellite is <m> R_E+h</m>.  Since the satellite covers a distance of one circumference <m> 2\pi(R_E+h)</m> in time <m> T = 1\text{ day}</m>, the average speed of the satellite must be
+				 <me> v = \dfrac{2\pi(R_E+h)}{T}
+				 </me> 
+				We will assume that the speed of the satellite is constant. This means that the satellite would be in a uniform circular motion and the magnitude of the centripetal acceleration of the satellite would be
+				 <me> a_c = \dfrac{v^2}{R}=\left[\dfrac{2\pi(R_E+h)}{T}\right]^2\dfrac{1}{R_E+h} = \dfrac{4\pi^2(R_E+h)}{T^2}
+				 </me> 
+				The centripetal acceleration is the net acceleration of the satellite in this case.  The net force on the satellite is the force from the Earth. Therefore, we can write the following using the magnitudes of the force on the satellite and the acceleration of the satellite. 
+				 <me> ma_c = F\ \ \Longrightarrow\ \ m\dfrac{4\pi^2(R_E+h)}{T^2}  \approx G_N\dfrac{m M_{E}}{(R_E+h)^2}
+				 </me>  
+				We can solve this equation for the altitude of the satellite in a geocentric orbit with the following result.
+				 <me> 
+				h = \left(\dfrac{G_N M_E T^2}{4\pi^2}\right)^{1/3} -R_E= 3.6\times 10^7\ \textrm{m}. 
+				 </me> 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Gravitational-Force-on-an-Object-by-Two-Other-Objects-Vector-Nature"><title> Gravitational Force on an Object by Two Other Objects - Vector Nature </title>
+		<statement>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					Three spherical bodies are located at the corners of a right-angled triangle as shown. You may use the following values: <m>m_1=200\text{ kg}</m>, <m>m_2=400\text{ kg}</m>, <m>m_3=300\text{ kg}</m>, <m>a=4\text{ m}</m>, <m>b=2\text{ m}</m>.
+				</p>
+				<p>
+				</p>
+				<image source="./images/gravitation/grav-force-by-two-particles-right-angled-triangle.png" width="50%"/>
+			</sidebyside>
+			<p>
+				(a) What are the magnitude and direction of the net gravitational force on 1 by 2 and 3?
+			</p>
+			<p>
+				(b) What are the magnitude and direction of the net gravitational force on 2 by 1 and 3?
+			</p>
+ 			<p>
+				(c) What are the magnitude and direction of the net gravitational force on 3 by 1 and 2?
+			</p>
+
+			
+		</statement>
+		<hint> <p> (a), (b), (c): Find magnitudes of the forces and use components to add the vectors to obtain the net force. </p> </hint>
+		<answer> <p>  (a) <m> 10.5\times 10^{-7}\text{ N}</m> at <m> 72^\circ</m> counterclockwise from positive <m>x</m> axis. (b) <m> 7.1\times 10^{-7}\text{ N}</m> at <m> 14.6^\circ</m> clockwise from negative <m>x</m> axis. (c) <m> 12.2\times 10^{-7}\text{ N}</m> at <m> 73^\circ</m> clockwise from positive <m>x</m> axis. </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) 
+				We first find the forces on 1 by 2 and 3 separately and then add them vectorially to obtain the net force on 1. Lets denote the magnitudes of these forces as <m>F_{21}</m> and <m>F_{31}</m>. The magnitudes of these forces are
+				<md>
+					<mrow> F_{21} \amp = G_N\dfrac{m_1 m_2}{a^2} </mrow>
+					<mrow> \amp = 6.67\times 10^{-11}\dfrac{200\times400}{4^2} = 3.3\times 10^{-7}\text{ N}. </mrow>
+					<mrow> F_{31} \amp = G_N\dfrac{m_1 m_3}{b^2} </mrow>
+					<mrow> \amp = 6.67\times 10^{-11}\dfrac{200\times300}{2^2} =10.0\times 10^{-7}\text{ N}. </mrow>
+				</md>
+			</p>
+			<p>
+				Looks like we should use the unit of <m> 10^{-7}\text{ N} </m>. We will call this unit <m>\text{N*}</m> to save space. 
+			</p>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					To add these forces, we will use analytic method. For that we inroduce axes. <m>F_{21}</m> is towards positive <m>x</m>axis and <m>F_{31}</m> towards positive <m>y</m>axis. From the figure we get
+					<md>
+						<mrow> F_\text{net} \amp = \sqrt{ F_{21}^2 + F_{31}^2  }</mrow>
+						<mrow> \amp = \sqrt{3.3^2 + 10.0^2} = 10.5 \text{ N*}</mrow>
+						<mrow> \amp = 10.5\times 10^{-7}\text{ N}.</mrow> 
+					</md>
+				</p>
+				<p>
+				</p>
+				<image source="./images/gravitation/grav-force-by-two-particles-right-angled-triangle-a.png" width="50%"/>
+			</sidebyside>
+			<p>
+				We use angle <m>\theta</m> to indicate the direction. The counterclockwise angle from the positive <m>x</m> axis is
+				<me>
+					\theta = \tan^{-1}\left(\dfrac{10.0}{3.3} \right) = 72^\circ.
+				</me>
+
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				Lets denote the magnitudes of forces on 2 by <m> F_{12}</m> and <m>F_{32} </m>. We have already worked the magnitude of the force between 1 and 2, which we had called <m> F_{21}</m>.
+				<me>
+					F_{12} = F_{21} = 3.3 \text{ N*}.
+				</me>
+				The other force on 2 is
+				<md>
+					<mrow> F_{32} \amp = G_N\dfrac{m_2 m_3}{c^2} </mrow>
+					<mrow> \amp = 6.67\times 10^{-11}\dfrac{400\times300}{2^2 + 4^2} = 4.0\times 10^{-7}\text{ N}. </mrow>					
+				</md>
+				That is <m> F_{32} = 4.0\text{ N*}</m>. To add these two forces we use the components.
+				<md>
+					<mrow> F_{12,x} \amp = -3.3\text{ N*}, </mrow>
+					<mrow> F_{12,y} \amp = 0, </mrow>
+					<mrow> F_{32,x} \amp = -4.0\times \dfrac{4}{\sqrt{2^2+4^2}} = -3.6\text{ N*}, </mrow>
+					<mrow> F_{32,y} \amp = 4.0\times \dfrac{2}{\sqrt{2^2+4^2}} = 1.8\text{ N*}, </mrow>		
+				</md>
+				Therefore, the components of the net force are
+				<md>
+					<mrow> F_{\text{net},x} =  -3.3 -3.6 = -6.9\text{ N*}, </mrow>
+					<mrow> F_{\text{net},y} =  0 + 1.8 = + 1.8\text{ N*}. </mrow>
+				</md>
+			</p>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					The magnitude of this force is
+					<me>
+						F_{\text{net}} = \sqrt{ 6.9^2 + 1.8^2 } = 7.1\text{ N*} = 7.1\times 10^{-7}\text{ N}.
+					</me>
+					The direction is in the second quadrant with clockwise angle with respect to the negative <m>x</m> axis give by
+					<me>
+						\theta = \tan^{-1}\left(\dfrac{1.8}{6.9} \right) = 14.6^\circ.
+					</me>
+				</p>
+				<p>
+				</p>
+				<image source="./images/gravitation/grav-force-by-two-particles-right-angled-triangle-b.png" width="50%"/>
+			</sidebyside>
+
+			
+		</solution>
+
+		<solution> <title>(c)</title>
+			<p>
+				(c)
+				We have worked out the magnitudes <m>F_{13}</m> and <m>F_{23}</m> already as <m>F_{31}</m> and <m>F_{32}</m>. 
+				<md>
+					<mrow> F_{13} \amp = F_{31} = 10.0  \text{ N*}. </mrow>
+					<mrow> F_{23} \amp = F_{32} =  4.0 \text{ N*}. </mrow>
+				</md>
+				We also know their components as per Newton's third law.
+				<md>
+					<mrow> F_{13,x} \amp = 0, </mrow>
+					<mrow> F_{13,y} \amp = -10.0\text{ N*}, </mrow>
+					<mrow> F_{23,x} \amp = - F_{32,x}  = 3.6\text{ N*}, </mrow>
+					<mrow> F_{23,y} \amp = - F_{32,y} =-1.8\text{ N*}, </mrow>		
+				</md>				
+				Therefore, the net force on 3 has the following components.
+				<md>
+					<mrow> F_{\text{net},x} =  0 + 3.6 = 3.6 \text{ N*}, </mrow>
+					<mrow> F_{\text{net},y} =  -10.0 - 1.8 = - 11.8\text{ N*}. </mrow>
+				</md>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					The magnitude of this force is
+					<me>
+						F_{\text{net}} = \sqrt{ 3.^2 + 11.8^2 } = 12.2\text{ N*} = 12.2\times 10^{-7}\text{ N}.
+					</me>
+					The direction is in the fourth quadrant with clockwise angle with respect to the positive <m>x</m> axis give by
+					<me>
+						\theta = \tan^{-1}\left(\dfrac{11.8}{3.6} \right) = 73^\circ.
+					</me>
+				</p>
+				<p>
+				</p>
+				<image source="./images/gravitation/grav-force-by-two-particles-right-angled-triangle-c.png" width="50%"/>
+			</sidebyside>
+
+
+			</p>
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Gravitational-Force-a-Ball-and-a-Rod"><title> (Calculus) Gravitational Force Between a Ball and a Rod </title>
+		<statement>
+			<p>
+				A spherical ball of mass <m>m</m> and radius <m>R</m> is at one end of a uniform thin rod of mass <m>M</m> and length <m>L</m> as shown in <xref ref="fig-force-calc-sphere-thin-rod"/>. What is the magnitude of the gravitational force between them?
+			</p>
+			<figure xml:id="fig-force-calc-sphere-thin-rod">
+				<caption>
+					Figure for <xref ref="ex-Gravitational-Force-a-Ball-and-a-Rod"/>
+				</caption>
+				<image source="./images/gravitation/force-calc-sphere-thin-rod.png" width="50%"/>
+			</figure>
+			
+		</statement>
+		<hint> <p>  Break up the rod into infinitesimal elements and set up an integral. </p> </hint>
+		<answer> <p> <m>G_N \dfrac{mM}{R(R+L)}</m>  </p> </answer>
+		<solution> 
+			<p>
+				We place the sphere with its center at the origin and the rod along <m>x</m> axis as shown in <xref ref="fig-force-calc-sphere-thin-rod-solution"/>. Now consider the force on the sphere by an infinitesimal element of the rod between <m>x</m> and <m>x+dx</m>. The mass in the element <m>dx=\lambda dx</m>, where <m>\lambda = M/L</m>, the linear mass density.
+			</p>
+			<figure xml:id="fig-force-calc-sphere-thin-rod-solution">
+				<caption>
+					Figure for <xref ref="ex-Gravitational-Force-a-Ball-and-a-Rod"/> solution.
+				</caption>
+				<image source="./images/gravitation/force-calc-sphere-thin-rod-solution.png" width="50%"/>
+			</figure>
+			<p>				
+				<me>
+					dF = G_N\dfrac{1}{x^2}\, m\,\dfrac{M}{L} dx.
+				</me>
+				We need to integrate this from <m>x=R</m> to <m>x=R+L</m>. 
+				<md>
+					<mrow> F \amp = G_N \dfrac{mM}{L}\, \int_{R}^{R+L}\dfrac{1}{x^2}\, dx, </mrow>
+					<mrow> \amp = G_N \dfrac{mM}{L}\, \left(\dfrac{1}{R} - \dfrac{1}{R+L}\right).</mrow> 
+					<mrow> \amp = G_N \dfrac{mM}{R(R+L)}.</mrow> 
+				</md>
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Gravitational-Force-Between-a-Ball-and-a-Rod-with-Ball-Placed-Above-Rod"><title> (Calculus) Gravitational Force Between a Ball and a Rod with Ball Placed Above Rod</title>
+		<statement>
+			<p>
+				A spherical ball of mass <m>m</m> and radius <m>R</m> is at above the middle of a uniform thin rod of mass <m>M</m> and length <m>L</m> as shown in <xref ref="fig-force-calc-sphere-above-thin-rod"/>. What is the magnitude of the gravitational force between them and direction of the force on the sphere?
+			</p>
+			<figure xml:id="fig-force-calc-sphere-above-thin-rod">
+				<caption>
+					Figure for <xref ref="ex-Gravitational-Force-Between-a-Ball-and-a-Rod-with-Ball-Placed-Above-Rod"/>.
+				</caption>
+				<image source="./images/gravitation/force-calc-sphere-above-thin-rod.png" width="50%"/>
+			</figure>
+			
+		</statement>
+		<hint> <p>  Due to symmetry only the vertical component is non-zero.</p> </hint>
+		<answer> <p> Magnitude <m>  \dfrac{ G_N  m M  }{ D \sqrt{D^2 + L^2/4} }</m> and direction towards the center of the rod. </p> </answer>
+
+		<solution> 
+			<p>
+				 We place the mass of the sphere at its center and examine the force on this mass by two infintesimal elements of rod symmetrically placed as shown in <xref ref="fig-force-calc-sphere-above-thin-rod-solution"/>. Note that the direction of the two forces is such that the sum of their horizontal components is zero. Therefore, we need to find only the vertical component. 
+			</p>
+			<figure xml:id="fig-force-calc-sphere-above-thin-rod-solution">
+				<caption>
+					Figure for <xref ref="ex-Gravitational-Force-Between-a-Ball-and-a-Rod-with-Ball-Placed-Above-Rod"/>.
+				</caption>
+				<image source="./images/gravitation/force-calc-sphere-above-thin-rod-solution.png" width="50%"/>
+			</figure>
+
+			<p>
+				The <m>y</m> component of force on the sphere by a small element between <m>x</m> and <m> x + dx </m> is
+				<me>
+					dF_y = -G_N \dfrac{m\, dM}{x^2 + D^2}\, \dfrac{D}{ \sqrt{ x^2 + D^2 } }.
+				</me>
+				The infinitesimal mass, <m> dM = (M/L)dx </m> .We integrate this from <m> x = -L/2</m> to <m> x = L/2</m>.
+				<md>
+					<mrow> F_y \amp = -\int_{\text{rod}}  G_N \dfrac{m\, dM}{x^2 + D^2}\, \dfrac{D}{ \sqrt{ x^2 + D^2 } },</mrow>
+					<mrow>  \amp = -\dfrac{G_N m M D}{L} \int_{-L/2}^{L/2}  \dfrac{1}{ \left( x^2 + D^2 \right)^{3/2} }\,dx,</mrow>
+					<mrow>  \amp = -\dfrac{2G_N m M D}{L} \int_{0}^{L/2}  \dfrac{1}{ \left( x^2 + D^2 \right)^{3/2} }\,dx,</mrow>
+					<mrow>  \amp = -\dfrac{2G_N m M D}{L}  \dfrac{ L/2 }{ D^2  \sqrt{D^2 + L^2/4}  },</mrow>
+					<mrow>  \amp = -G_N  \dfrac{ m M  }{ D \sqrt{D^2 + L^2/4} }.</mrow>
+
+				</md>
+				Therefore, the force on the sphere has magnitude <m>   \dfrac{ G_N m M  }{ D \sqrt{D^2 + L^2/4} }</m> and direction towards the center of the rod.
+			</p>
+		</solution>		
+	</exercise>
+
+	<exercise xml:id="ex-Gravitational-Force-Between-a-Ball-and-a-Ring"><title> (Calculus) Gravitational Force Between a Ball and a Ring with Ball Placed Above the Center of Ring </title>
+		<statement>
+			<sidebyside widths="50% 20% 30%">
+				<p>
+					There is a small sphere of mass <m> m</m> at a height <m>D</m> from the center of a uniform ring  of radius <m>R</m> and mass <m>M</m>. Find the gravitational force on the sphere.
+				</p>
+				<p> </p>
+				<image source="./images/gravitation/grav-force-on-sphere-above-ring.png" width="50%"/>
+			</sidebyside>	
+		</statement>
+		<hint> <p>  Only vertical component is non-zero. </p> </hint>
+		<answer> <p>  <m>  \dfrac{G_N m M D}{ \left( D^2 + R^2 \right)^{3/2}  } </m> towards the center of the ring. </p> </answer>
+
+		<solution> 
+			<sidebyside widths="50% 10% 25% 15%">
+				<p>
+					Looking at force from two elements of the ring that are at the diagonally opposite sides shows us that only the vertical component is non-zero. The magnitude of the force from an element of the ring on the sphere is
+					<me>
+						dF = G_N \dfrac{m\, (M/L) dl}{ D^2 + R^2}
+					</me>
+				</p>
+				<p> </p>
+				<image source="./images/gravitation/grav-force-on-sphere-above-ring-solution.png" width="50%"/>
+				<p></p>
+			</sidebyside>
+			
+			<p>
+				Let <m>z</m> axis be pointed up. Then, <m>z</m> component of the gravitational force from an element of the ring of size <m>dl</m> is
+				<me>
+					dF_z = - dF\, \dfrac{D}{ \sqrt{D^2 + R^2} },
+				</me>
+				which is independent of the location of the element on the ring. When we integrate this aroiund the ring, we will get
+				<me>
+					F_z = - G_N \dfrac{m M D}{ \left( D^2 + R^2 \right)^{3/2}  }.
+				</me>
+				Therefore, the magnitude of the force on the sphere is <m>  \dfrac{G_N m M D}{ \left( D^2 + R^2 \right)^{3/2}  } </m> towards the center of the ring.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Gravitational-Force-Between-a-Ball-and-a-Disk"><title> (Calculus) Gravitational Force Between a Ball and a Disk with Ball Placed Above the Center of Disk </title>
+		<statement>
+			<sidebyside widths="50% 15% 25% 10%">
+				<p>
+					There is a small sphere of mass <m> m</m> at a height <m>D</m> from the center of a uniform disk of radius <m>R</m> and mass <m>M</m>. Find the gravitational force on the sphere.
+				</p>
+				<p> </p>
+				<image source="./images/gravitation/grav-force-on-sphere-above-disk.png" width="50%"/>
+				<p></p>
+			</sidebyside>
+		</statement>
+		<hint> <p> Build the solution from the solution of a ring between <m>r</m> and <m>r+dr</m>.  </p> </hint>
+		<answer> <p>  <m> \dfrac{2 G_N m M D}{R^2} \left( \dfrac{1}{D} - \dfrac{1}{\sqrt{D^2 + R^2}}  \right)</m> towards the center of the ring. </p> </answer>
+		<solution> 
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					We will build the solution of the disk from the solution of a ring between <m>r</m> and <m>r+dr</m>. The mass in the infinitesimal ring will be
+					<me>
+						dM = \dfrac{M}{\pi R^2}\, 2\pi r dr,
+					</me>
+					since area of the ring is <m>2\pi r dr</m>. From symmetry, we also know that only the vertical component of the force is non-zero. Let <m>dF_z</m> denote the <m>z</m> component of the ring. From the ring solution we have
+				</p>
+			
+
+				<p> </p>
+				<image source="./images/gravitation/grav-force-on-sphere-above-disk-solution.png" width="50%"/>
+			</sidebyside>
+			<p>
+				<md>
+					<mrow> dF_z \amp = - G_N \dfrac{m\,D\,dM}{ \left( D^2 + r^2 \right)^{3/2}  } </mrow>
+					<mrow>  \amp = - G_N \dfrac{m\,D}{ \left( D^2 + r^2 \right)^{3/2}  }  \dfrac{M}{\pi R^2}\, 2\pi r dr</mrow>
+					<mrow>  \amp = - \dfrac{G_N m M D}{R^2} \   \dfrac{2 r dr}{ \left( D^2 + r^2 \right)^{3/2}  }  </mrow>
+				</md>
+				Now, we integrate this from <m>r=0</m> to <m>r=R</m> to get the contribution of the entire disk.
+				<md>
+					<mrow> F_z \amp = - \dfrac{G_N m M D}{R^2} \int_0^R \dfrac{2 r dr}{ \left( D^2 + r^2 \right)^{3/2}  }  </mrow>
+					<mrow>  \amp = - \dfrac{G_N m M D}{R^2} \int_{D^2}^{D^2 + R^2} \dfrac{dy}{ y^{3/2}  }  </mrow>
+					<mrow>  \amp = - \dfrac{2 G_N m M D}{R^2} \left( \dfrac{1}{D} - \dfrac{1}{\sqrt{D^2 + R^2}}  \right)  </mrow>
+				</md>
+				The magnitude is the above quantity without the sign and direction is towards the center of the ring.				
+			</p>
+		</solution>
+	</exercise>
+
+</section>

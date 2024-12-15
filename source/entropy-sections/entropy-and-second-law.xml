@@ -1,0 +1,168 @@
+<section xml:id="The-Second-Law-and-Entropy"><title> The Second Law and Entropy </title>
+	<introduction>
+		<p>
+			We show below that entropy change for an isolated system is always positive for all real processes. In the case of interacting system, then we can combine system with environment to get an isolated system. This will give the entropy change of system more then compensated by opposite change in entropy of the environment.
+			<me>
+				\Delta S_\text{system} + \Delta S_\text{environment} \ge 0.
+			</me>			
+		</p>
+	</introduction>
+	<subsection><title>(Calculus) Entropy Change of Universe</title>
+		<p>
+			Clausius proved that, for any cyclic process, whether it be reversible or irreversible, the following inequality must hold true.
+			<men>
+				\oint \dfrac{dQ}{T}\le 0\ \ \  	\textrm{(All cyclic processes)}
+			</men>
+			Here, <em> the equality holds only when the process is reversible</em>. 
+		</p>
+		<sidebyside widths="50% 50%">
+			<p>
+				Now, let us consider a cyclic process that is made up of an unknown process from state A to state B, and a reversible process from B to A as shown in the 
+				figure.
+				<!-- <xref ref="fig-rev-irrev-processes"/>.  --> 
+
+			</p>
+			<image source="./images/entropy/rev-irrev-processes.png" width="50%"/>
+		</sidebyside>
+		<p>
+			When Clausius's result is applied to this cyclic process it yields the following result.
+			<men>
+				\left( \int_A^B \dfrac{dQ}{T} \right)_\text{unknown} + \left( \int_B^A \dfrac{dQ}{T} \right)_\text{rev} \le 0,
+			</men>
+			where the equality will be the case if both processes were reversible. Now, from the definition of entropy, the integral over the reversible process is equal to the difference in entropy of states A and B.
+			<men>
+				\left( \int_A^B \frac{dQ}{T} \right)_{\text{unknown}} + S(A) - S(B) \le 0.
+			</men>
+			Moving the entropy change on the other side of the inequality, we obtain the following for change of entropy for the A to B process.
+			<men xml:id="eq-second-law-entropy">
+				S(B) - S(A) \ge \left( \int_A^B \frac{dQ}{T} \right)_{\text{unknown}}. 
+			</men>
+		</p>
+		<p>
+			Now, we apply this result to a combined system consisting of two subsystems, X and Y, which can interact thermally as shown in <xref ref="fig-system-environment"/>, but they are thermally insulated from the rest of the universe.  Consider a state change process in which  the combined system changes from state A<m>_\text{combo}</m> to state B<m>_\text{combo}</m>.  
+		</p>
+		<figure xml:id="fig-system-environment">
+			<caption>
+				An isolated combined system undergoing change from a state A<m>_\text{combo}</m> to another state B<m>_\text{combo}</m>.
+			</caption>
+			<image source="./images/entropy/system-environment.png" width="80%"/>
+		</figure>
+		<p>
+			Since there is no heat exchange with the outside world, the right side of Eq. <xref ref="eq-second-law-entropy"/> is zero.  The final entropy of the combined system <m> S(B)</m> will then be greater than the entropy of the initial state <m>S(A)</m>.
+			<men xml:id="eq-second-law-entropy-2">
+				S(B) - S(A) \ge 0\ \ \text{(Isolated system, state A to B transformation)}, 
+			</men>
+			where the equality sign holds when A<m>_\text{combo}</m> to B<m>_\text{combo}</m> transformation occurs by a reversible process.  This means that if the subsystem X is our finite system and Y the rest of the universe, then the net entropy of the universe does not decrease in any process.
+			<men xml:id="eq-second-law-entropy-3">
+				\Delta S_\text{system} + \Delta S_\text{environment} \ge 0.
+			</men>
+			If the process is reversible, then the reduction in entropy of the system will be balanced by increase in entropy of the environment and vice-versa.  If the process is irreversible, however, then the increase in entropy of the environment will be more than any reduction in the entropy of the system, or vice-versa.  This leads to the following statement of second law of thermodynamics in terms of entropy.
+		</p>
+		<p>
+			<em> The entropy of the universe cannot decrease.</em>
+		</p>		
+	</subsection>
+ 
+	<exercise xml:id="ex-Entropy-Change-in-Equilibration-of-a-Two-Compartment-System"><title> (Calculus) Entropy Change in Equilibration of a Two Compartment System   </title>
+		<statement>
+			<p>
+				A nonconducting cylinder of total volume 2 L closed at both ends is divided into two parts by a diathermal frictionless circular wall.  Initially the piston is clamped in the middle with the Nitrogen gas, assumed to be an ideal gas of <m>C_V=\dfrac{5}{2}R</m>, at different temperatures and pressures on the two side. The initial pressure and temperatures on the left and right sides are (3 atm, 330 K) and (2 atm, 250 K) respectively.  
+			</p>
+			<p>
+				(a) Find the temperature and pressure of the final state when the two sides are in thermal and mechanical equilibrium.  
+			</p>
+			<p>
+				(b) Find the net change in the entropy of the gas.
+			</p>
+			<image source="./images/entropy/pr-entropy-change-in-two-compartment-system.png" width="70%"/>
+
+
+		</statement>
+		<hint> <p>  (a) at mechanical equilibrium pressure on the two sides must become equal. (b) replace the actual process between the initial and final states by constant pressure and constant volume processes since computation of entropy on them will be easier to compute. </p> </hint>
+		<answer> <p> (a) <m>2.51\ \textrm{atm}</m>, <m>V_1 = 1.064\ \textrm{L}</m>, <m>V_2 = 0.936\ \textrm{L}. </m> (b) see the solution. </p> </answer>
+		<solution> <title>(a)</title>
+
+			<p>
+				(a)
+				From the given data on the left and right chambers in the ideal gas law for each we obtain
+				<md>
+					<mrow> \amp  n_1 = \frac{p_1 (V_0/2)}{RT_1} = 0.111\ \textrm{mol}.</mrow>
+					<mrow> \amp  n_1 = \frac{p_2 (V_0/2)}{RT_2} = 0.0976\ \textrm{mol}.</mrow>
+				</md>
+				Now, we find the common pressure <m>p</m> and temperature <m>T</m> values in the two chambers in the final state.  To find the temperature we note that total energy of the two systems will not change since although the gas  on the sides interact with each other, the two together are isolated from other systems. 
+				<me>
+					\Delta U = \Delta U_1  + \Delta U_2 = 0.
+				</me>
+				The change in the internal energies of the two sides separately will be
+				<md>
+					<mrow> \amp  \Delta U_1 = n_1 C_V (T - T_1).</mrow>
+					<mrow> \amp  \Delta U_2 = n_2 C_V (T - T_2).</mrow>
+				</md>
+				Therefore,
+				<me>
+					T = \frac{ n_1 T_1 + n_2 T_2}{ n_1  + n_2  } =  \frac{ 0.111 \times 330+ 0.0976\times 250 }{ 0.111  + 0.0976  }  = 293\ \textrm{K}.
+				</me>
+				Let <m>V_1</m> and <m>V_2</m> be the volumes on the left and right sides at equilibrium.  Let us denote the total volume by <m>V_0</m>. Then, we have
+				<men xml:id="eq-ch20-pr-8-1">
+					V_1 + V_2 = V_0. 
+				</men>
+				The volumes on the two sides are also given by the ideal gas laws on the two sides.
+				<md>
+					<mrow> \amp  V_1 = n_1  \frac{R T}{p} \equiv n_1 x.</mrow>
+					<mrow> \amp  V_2 = n_2  \frac{R T}{p} = n_2 x. </mrow>
+				</md>
+				Put these in Eq. <xref ref="eq-ch20-pr-8-1"/> to obtain
+				<me>
+					V_1 = 1.064\ \textrm{L},\ \ V_2 = 0.936\ \textrm{L}.
+				</me>
+				Now, applying the ideal gas law on either of the chamber in the final state gives
+				<me>
+					p = \frac{n_1RT}{V_1} = \frac{0.111\ \textrm{mol} \times 0.082\ \textrm{L.atm/mol.K}\times 293}{1.064\ \textrm{L}} = 2.51\ \textrm{atm}.
+				</me>
+			</p>
+
+
+		</solution>
+
+		<solution> <title>(b)</title>
+			<p>
+				(b) To compute the entropy change, we envision reversible steps that lead to the same change in state but where the computation of entropy changes are easier to compute. The following figure gives one set of possible easy-to-compute processes in the <p>pV</p>-planes of the gases in the two compartments.
+			</p>
+
+			<image source="./images/entropy/pr-entropy-change-in-two-compartment-system-soln.png" width="70%"/>
+			
+			<p>
+				For a constant-pressure step,
+				<me>
+					\Delta S = n\, C_P\,\ln\dfrac{T_2}{T_1} = n\, C_P\,\ln\dfrac{V_2}{V_1},
+				</me>
+				and for a constant-pressure step,
+				<me>
+					\Delta S = n\, C_V\,\ln\dfrac{T_2}{T_1} = n\, C_V\,\ln\dfrac{V_2}{V_1},
+				</me>
+				with
+				<me>
+					C_P = C_V + R = \dfrac{7}{2}R.
+				</me>
+				For the case of gas in the left chamber we have
+				<me>
+					\Delta S_{12} = \Delta S_{13} + \Delta S_{32},
+				</me>
+				with
+				<me>
+					\Delta S_{13} = n_L \dfrac{7}{2}R \ln\dfrac{V_3}{V_1},
+				</me>
+				and
+				<me>
+					\Delta S_{23} = n_L \dfrac{5}{2}R \ln\dfrac{V_2}{V_3}.
+				</me>
+				You can work out similar exprssions for the gas in the right tank. Adding the change in left tank and the right tank will give the ne change.				
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+</section>

@@ -1,0 +1,272 @@
+<section xml:id="Inductive-AC-Circuits"><title> Inductive AC Circuits</title>
+	<introduction>
+		<p>
+			Every circuit with varying current will have inductive effect due to the back emf from the self-inductance of the circuit. Usually, back emf effect at frequency of an AC circuit is not significant, but if we insert coils or inductors with significant inductance, we call the circuit an <term>inductive circuit</term>.  
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+ 
+					In this section we will study current in a simple inductive circuit with inductance <m>L</m> and resistance  <m>R</m>  in series with an AC source with EMF, <m>V(t) = V_0\cos(\omega t)</m>. 
+ 
+
+ 
+			</p>
+
+			<p></p>
+
+			<image source="./images/ac-circuits/ac-RL-series-circuit-basic.png" width="50%"/>
+		</sidebyside>
+		<p>
+			By applying Faraday's law to the loop of the circuit, we show in a Calculus section that current in the circuit is
+			<men>
+				I(t) = I_0 \cos(\omega t + \phi_I),
+			</men>
+			with
+			<men> 
+				I_0 = \frac{V_0}{\sqrt{R^2 +(\omega L)^2}},\ \ \ \  \phi_I = -\tan^{-1}\left(\frac{\omega L}{R}\right).
+			</men>
+		</p>
+		<p>
+			The net resistive effect of <m>R</m> and <m>L</m> in series is noted in the ratio of the voltage amplitude of the source and amplitude of the current through the source. This ration, <m>V_0/I_0</m>, is called amplitude of impedance, or, simply, impedance of the RL-circuit, denoted by  <m> |Z|</m>.
+			<men>
+				|Z| = \dfrac{V_0}{I_0} = \sqrt{R^2 +(\omega L)^2},
+			</men>
+			and negative of the phase of current, <m>I(t)</m>, relative to the source <m>V(t)</m> gives the phase of the impedance. Denoting this phase by <m>\phi_Z</m>, we have
+
+			<men>
+				\phi_Z = \tan^{-1}\left(\frac{\omega L}{R}\right).
+			</men>
+			This phase is the difference between the phase of source voltage and current through the source since net impedance may be thought to be "equivalent resistance" of the entire circuit connected to the source.	
+			<men>
+				\phi_Z = \phi_{V,\text{source}} - \phi_{I,\text{through source}}.
+			</men>	
+		</p>
+	</introduction>
+	<subsection><title> (Calculus) Series RL Circuit </title>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				For our first example, we consider a circuit containing a resistor (<m>R</m>) and an inductor (<m>L</m>) driven by a sinusoidal EMF as shown in the figure. Using voltage drops across each element, we get the following Faraday loop equation.
+				<men>
+					V_0\: \cos(\omega t) -L\frac{dI}{dt} - R I = 0. 
+				</men>
+			</p>
+			<p> </p>
+			<image source="./images/ac-circuits/ac-RL-series-circuit-basic.png" width="50%"/>
+		</sidebyside>
+		<p>
+			We will write this equation as
+			<men xml:id="eq-RL-series-eom-1">
+				\frac{dI}{dt} + \dfrac{R}{L} I = \dfrac{V_0}{L}\, \cos(\omega t).
+			</men>
+		</p>
+
+		<p>
+			When switch is closed at <m>t=0</m>, there is a transient behavior of the circuit, where the current in the circuit does not oscillate with the same frequency as the frequency of the driving EMF.  But, after some time (here <m>t \gt \gt L/R </m>) a steady state is reached, and thereafter, current in the circuit oscillates with the same frequency as the frequency of the driving EMF.  Therefore, we can write the steady state solution of Eq. <xref ref="eq-RL-series-eom-1" />  in the following form that has two unknowns the amplitude <m>I_0</m> and phase constant  <m>\phi_I</m>.
+			<men xml:id="eq-RL-series-eom-2"> 
+			I(t) = I_0\: \cos(\omega t+\phi_I).\ \ \ \text{(Steady state)}  
+			</men>
+			To find <m>I_0</m> and  <m>\phi_I</m>, we substitute this solution in Eq. <xref ref="eq-RL-series-eom-1" /> to obtain
+			<me>
+				-L\:\omega\: I_0\: \sin(\omega t+\phi_I) + RI_0\: \cos(\omega t+\phi_I) = V_0\: \cos(\omega t).  
+			</me>
+			Now, we expand the trigonometric functions and rearrange terms to obtain the following.
+			<md>
+				<mrow> \amp \left[ V_0 + L\:\omega\: I_0\: \sin\phi_I - R\: I_0\: \cos\phi_I \right] \cos(\omega t)</mrow>
+				<mrow> \amp \ \ \ \ \ \ \ + \left[ L\:\omega\: I_0\: \cos\phi_I - R\: I_0\: \sin\phi_I \right] \sin(\omega t) = 0.</mrow>
+			</md>
+			In this equation, the coefficients of <m>\cos(\omega t)</m> and <m>\sin(\omega t)</m> must be independently zero since they are orthogonal functions.  This can be shown by multiplying this equation by <m>\cos(\omega t)</m> and integrating over one period.  You should do this step.  you will find that this integration leads to the conclusion that the coefficient of the cosine term must be zero.  Similarly, when you multiply by <m>\sin(\omega t)</m> and integrate over one period, you find that the coefficient of the sine term must be zero.  
+			<mdn>
+				<mrow xml:id="eq-RL-series-eom-current-amplitude"> \amp   V_0 + L\:\omega\: I_0\: \sin\phi_I - R\: I_0\: \cos\phi_I = 0. </mrow>
+				<mrow> \amp   L\:\omega\: I_0\: \cos\phi_I - R\: I_0\: \sin\phi_I = 0. </mrow>
+			</mdn>
+			Therefore, we get the following for the phase constant of current
+			<me>
+				\tan\phi_I = -\frac{\omega L}{R},
+			</me>
+			from which we get sine and cosine of <m>\phi_I</m>.
+			<md>
+				<mrow> \amp \cos\phi_I = \frac{R}{\sqrt{R^2 +(\omega L)^2}}.</mrow>
+				<mrow> \amp \sin\phi_I = -\frac{\omega L}{\sqrt{R^2 +(\omega L)^2}}.</mrow>
+			</md>
+			Putting these expressions for  <m>\sin\phi_I</m> and <m>\cos\phi_I</m> in Eq. <xref ref="eq-RL-series-eom-current-amplitude" />, we find <m>I_0</m>.
+			<me>
+				I_0 = \frac{V_0}{\sqrt{R^2 +(\omega L)^2}} 
+			</me>
+			Summarizing, our results, we found current in the circuit is <m>I=I_0\cos(\omega t + \phi_I)</m> with
+			<me> 
+				I_0 = \frac{V_0}{\sqrt{R^2 +(\omega L)^2}},\ \ \ \  \phi_I = -\tan^{-1}\left(\frac{\omega L}{R}\right) 
+			</me>
+		</p>
+
+		<remark><title>Impedance of series RL Circuit</title>
+
+			<p>
+				The ratio of the amplitude of the voltage of the source to that of  the current through the source has units of resistance; it consists of contributions from the inductance and the frequency.  This quantity <q>acts</q> like an overall resistance in the circuit and is called the <term> amplitude of impedance</term> or simply <term> impedance</term> of the circuit, denoted usually by the letter <m>|Z|</m>.  
+			</p>
+			<p>
+				The amplitude of the impedance does not have the information of the phase difference between the voltage and the current. The complete impedance is defined to contain both of these informations into one complex quantity we will study in the next section.  Here, the amplitude of the  impedance of the RL-circuit is found to be
+				<me>
+					|Z| = \frac{\text{Amplitude of Voltage}}{\text{Amplitude of Current}} = \sqrt{R^2 +(\omega L)^2}.
+				</me>
+				Negative of the phase of current, <m>I(t)</m>, relative to the source <m>V(t)</m> is called phase of the impedance.	Denoting this phase by <m>\phi_Z</m>, we have
+
+				<me>
+					\phi_Z = \tan^{-1}\left(\frac{\omega L}{R}\right).
+				</me>
+
+			</p>
+		</remark>
+
+		<remark><title>RL Circuit at High and Low Frequencies </title>
+		
+			<p>
+				<ol>
+					<li> 
+						<p>
+							<alert> High frequency ( <m>\omega\ \rightarrow\ \infty</m>  Limit) </alert>
+						</p>
+						<p>
+							As frequency of the driving EMF is raised, we note that the inductive reactance increases without bound, and hence the resistor becomes less and less important in the RL-circuit.  At very high frequencies, an RL-circuit acts purely inductive with phase constant of current, <m> \phi_I</m>, reaching close to  <m>-\pi/2</m> radians and the amplitude <m>I_0</m> given by simply ignoring the resistance in the circuit, <m>I_0 \approx V_0/\omega L</m>.
+						</p>
+					</li>
+					<li> 
+						<p> <alert> Low frequency  ( <m>\omega\ \rightarrow\  0</m> Limit) </alert></p>
+						<p>
+							At low frequency the circuit becomes more like a DC circuit.  Hence, the inductance becomes less important since a back EMF requires a changing magnetic flux.  The current in the circuit will be in-phase with the driving EMF, i.e., <m>\phi_I \rightarrow 0</m>, and the amplitude <m>I_0</m> is obtained by ignoring the inductor altogether, i.e., <m>I_0\ \approx  V_0/R</m>.
+						</p>
+					</li>
+				</ol>
+
+	 
+			</p>
+		</remark>
+	</subsection>
+
+	<exercise xml:id="ex-Numerical-Inductive-Circuit-Example"><title> Numerical Inductive Circuit Example </title>
+		<statement>
+			<p>
+				A <m>50\text{-mH}</m> inductor with internal resistance <m>0.2\, \Omega</m>  is connected across the terminals of a <m>5\text{-V}</m> AC source (i.e. <m>V_\text{rms} = \frac{V_0}{\sqrt{2}} = 5\text{ V}</m>) of frequency <m>60\text{ Hz}</m>.  Find 
+				<ol label="(a)">
+					<li> the reactance of the inductor, </li>
+					<li> the amplitude of impedance of the circuit,</li>
+					<li> the current amplitude, </li>
+					<li> the phase constant for current.</li>
+				</ol>
+			</p>
+
+		</statement>
+		<hint> <p> Use defining equations.  </p> </hint>
+		<answer> <p> (a) <m>18.8\: \Omega </m>,
+					(b) <m> 18.9\: \Omega</m>,
+					(c) <m> 375\:\text{mA}</m>,
+					(d) <m> -89.4^{\circ}</m>.
+		  </p> </answer>
+		<solution> 
+			<p>
+				Using formulas for the corresponding quantities we get
+				<ol label="(a)">
+				 	<li>
+				 		<p>
+				 			<me>
+				 				X_L = 2\pi f L = 2\pi\times 60\:\text{Hz}\times 50\:\text{mH} =  18.8\: \Omega.
+				 			</me>
+				 		</p>
+				 	</li>
+				 	<li>
+				 		<p>
+				 			<me>
+				 				|Z| = \sqrt{R^2 + X_L^2} = \sqrt{0.2^2 + 18.8^2} = 18.9\: \Omega. 
+				 			</me>
+				 		</p>
+				 	</li>
+				 	<li>
+				 		<p>
+				 			<me>
+				 				I_0 = \dfrac{V_0}{|Z|} = \dfrac{\sqrt{2}V_{\text{rms}}}{Z} = \dfrac{\sqrt{2}\times 5\:\text{V}}{18.9\: \Omega} = 375\:\text{mA}. 
+				 			</me>
+				 		</p>
+				 	</li>
+				 	<li>
+				 		<p>
+				 			<me>
+				 				\phi_I = -\tan^{-1}\left(\dfrac{\omega L}{R} \right) = -\tan^{-1}\left(\dfrac{18.8\: \Omega}{0.2\: \Omega}    \right) = -89.4^{\circ}.
+				 			</me>
+				 		</p>
+				 	</li>
+				</ol>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Current-and-Voltage-Drops-Across-Resistor-and-Inductor-in-Inductive-Circuit"><title> Current and Voltage Drops Across Resistor and Inductor in Inductive Circuit </title>
+		<statement>
+			<p>
+				A <m>300\text{-}\Omega</m>  and <m>0.2\text{-H}</m> inductors connected in series to an AC source.  The voltage across the resistor is found to be <m>(30\ \text{V})\ \cos(200\, t)</m> where <m>t</m> is time in seconds.
+				<ol label="(a)">			 
+					<li> Find the amplitude and phase of the current in the circuit. </li>
+					<li> Find the amplitude and phase of the voltage across the inductor.</li>
+					<li> Find the amplitude and phase of the voltage of the source.</li>
+				</ol>
+ 
+			</p>
+
+		</statement>
+		<hint> <p> (a) Current through and voltage across a resistor are in phase, (b) EMf across inductor leads current through it by <m>90^\circ</m>, (c) For phase use <m>X_L/R</m> to find phase. </p> </hint>
+		<answer> <p>  (a) <m>100\text{ mA},\ 0^{\circ}</m>, (b) <m>4\text{ V},\ 90^{\circ}</m>, (c) <m>30.3\text{ V}, 7.6^{\circ}</m> </p> </answer>
+		<solution> 
+			<p>
+				<ol label="(a)">
+ 
+					<li> 
+						<p>
+							The current and voltage across a resistor are in-phase. Let the current through the resistor be denotes as <m>I = I_0\:\cos(\omega t + \phi_I)</m>. From the given voltage across the resistor we obtain
+							<me>
+								\phi_I = 0,\ \ I_0 = \dfrac{V_{0R}}{R} = \dfrac{30\: \text{V}}{300\:\Omega} = 0.1\:\text{A}.
+							</me>
+							This current flows through all elements of the circuit.
+							<me>
+								I(t) = (0.1\:\text{A})\:\cos(200\, t).
+							</me>
+						</p>
+					</li>
+					<li> 
+						<p>
+							To find the amplitude of the voltage across the inductor we multiply the amplitude of the current, which is <m>0.1\:\text{A}</m>, and the reactance of the inductor.
+							<me>
+								V_{0L} = I_0\:X_L = 0.1\:\text{A}\times 200\:\text{s}^{-1}\times 0.2\:\text{H} =  4\:\text{V}.
+							</me> 
+							The phase of the voltage across an inductor is <m>90^{\circ}</m> ahead of the phase of the current. The phase of the current is set from the given data on the phase of the voltage across the resistance, which is zero here. Therefore, if we write <m>V_L</m> as <m>V_L(t) = V_{0L}\:\cos(\omega t + \phi)</m>, then <m>\phi = 90^{\circ}</m>. [Recall the phrase: ELI the ICE man, meaning EMF leads current in L and current leads EMF in C.]
+						</p>
+					</li>
+					<li>
+						<p>
+							To find the  amplitude of the voltage of the source we will multiply the amplitude of the current and the impedance amplitude <m>|Z|</m> of the circuit.  The impedance here is
+							<me>
+								|Z| = \sqrt{(300\:\Omega)^2 + (200\:\text{s}^{-1}\times 0.2\:\text{H})^2} = 303\:\Omega. 
+							</me>
+							Therefore the amplitude of the EMF of the source will be
+							<me>
+								V_0 = 0.1\:\text{A} \times 303\:\Omega = 30.2\:\text{V}.
+							</me>
+							If we write the voltage of the source as <m>V_0\:\cos(\omega t + \phi_V)</m>, then this phase is the phase of voltage with respect to the zero phase for the current.  Therefore, <m>\phi_V</m> will be given by 
+							<me>
+								\phi_V = \tan^{-1}\left(\dfrac{X_L}{R} \right),
+							</me>
+							where note the minus sign is not there since now we are writing <m>\phi_V</m> as phase of voltage with respect to the current in place of phase of the current with respect to the voltage.
+							<me>
+								\phi_V = \tan^{-1}\left(\dfrac{40\:\Omega}{300\:\Omega} \right) = 7.6^{\circ}.
+							</me>
+						</p>
+					</li>
+ 
+				</ol>
+
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+</section>

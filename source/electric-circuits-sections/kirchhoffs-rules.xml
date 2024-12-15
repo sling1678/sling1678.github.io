@@ -1,0 +1,327 @@
+<section xml:id="Kirchhoffs-Rules"><title> Kirchhoff's Rules </title>
+
+	<introduction>
+		<p>
+			Conservation of charge and energy in the circuit provide us with two rules that are called Kirchhoff's current law (KCL) and Kirchhoff's voltage law (KVL).  They are also called the node rule and the loop rule respectively.
+		</p>
+		<p><term> The Node Rule or Kirchhoff's current law (KCL)</term></p>
+		<p>
+			In a circuit, charges do not accumulate or deplete from any point - any charge leaving a point  by way of an outgoing current is replenshed by charges arriving by way of incoming current. The rate of leaving and arrival must equal due to the principle of conservaiton of charge. 
+		</p>
+		<sidebyside widths="55% 10% 30% 5%">
+			<p>
+				Suppose we represent current comming to a point by a positive number and that leaving by a negative number, then we will find that sum of incoming and outgoing currents must equal zero (<xref ref="fig-kirk-node-rule-1" />). That is, algebraic sum of all currents must be zero.
+				<men xml:id="eq-KCL">
+					\sum I = 0.
+				</men>
+
+			</p>
+			<p></p>
+			<figure xml:id="fig-kirk-node-rule-1">
+				<caption> 
+					<!-- Kirchhoff's current law or the node rule: The algebraic sum of all currents at a node is equal to zero, i.e., <m>\sum_{i=1}^N I_i = 0</m>, with the convention that incoming currents and outgoing currents have opposite signs -->
+				</caption>
+
+				<image source="./images/electric-circuits/kirk-node-rule-1.png" width="35%"/>
+
+			</figure>
+			<p></p>
+		</sidebyside>
+		<p>
+			When we apply this law to nodes of a circuit, we get relations among currents in various branches of the circuit.
+		</p>
+
+		<p><term> The Loop Rule or Kirchhoff's voltage law (KVL)</term></p>
+		<p>
+			<!-- Recall that elctric potential energy of a charge <m>q</m> placed at a location where electric potential is <m>\phi</m> has potential energy 
+			<me>
+				U = q\phi.
+			</me> -->
+			Suppose we start at some point in an electric circuit and move some charge <m>q</m>  across various circuit elements, finally arriving at the initial place, thus making a closed loop.  Since final place is same as the initial place, net change in energy of the charge will be zero. 
+			<me>
+				\sum_\text{steps across elements} U = 0.
+			</me>
+			Since potentials across circuit elements are usually different, when you go across an element, the energy of the charge goes up or goes down by <m>q\Delta\phi</m>, goes up if <m>\Delta\phi \gt 0</m> and goes down if <m>\Delta\phi \lt 0</m>. These increases and decreases must sum to zero as illustrated in <xref ref="fig-kirk-loop-rule-1-2" />. 
+
+		</p>
+
+			<figure xml:id="fig-kirk-loop-rule-1-2">
+				<caption> 
+					Kirchhoff's voltage law or the loop rule: <!-- When you take a charge from some point  around the Kirchhoff's loop, shown with dashed green, the net change in energy will be zero as shown for a positive charge here. The diagram for negatively charged electrons can be obtained from the figure given here by changing the sign of energy for each step. Dividing the energy by the charge we get the loop rule as --> <m>\sum_\text{around a loop} \Delta\phi= 0</m>.
+				</caption>
+				<sidebyside widths="45% 10% 45%">
+					<image source="./images/electric-circuits/kirk-loop-rule-1.png" width="50%"/>
+					<p></p>
+					<image source="./images/electric-circuits/kirk-loop-rule-2.png" width="50%"/>
+				</sidebyside>
+			</figure>
+		<p>
+			Since <m>q </m> is a common factor in this sum, we can just sum  potential differences in each step and the sum should equal zero.
+			<men>
+				\sum_\text{around a loop} \Delta\phi= 0.
+			</men>
+			This is the loop rule or Kirchhooff's voltage law (KVL). Applying this law to loops in circuits gives us relations among the potential values <m>\phi_i</m> at various nodes of the circuit. These potential values are sometimes also called voltage values at those points - these values are potential difference with respect to a point chosen to be zero of the potential, which is usually the negative of some power source.			
+		</p>
+	</introduction>
+
+	<subsection><title> Sign Conventions for Voltage in Loop Equation</title>
+		<p>
+			To apply the Kirchhoff's Loop Rule, it is often helpful to follow a sign convention for currents and voltages for consistency in algebraic manipulations.  <alert>While electric circuit is a fixed structure, Kirchhoff's loop is arbitrary loop</alert>. Hence, the direction of voltages and currents in the actual circuit may differ from the way you traverse a particular Kirchhoff's loop. Therefore, it is important that you maintain a sign convention that assigns increase or decrease in voltage consistently across all your calculations.
+		</p>
+ 
+		<p> <alert>Sign Convention for Voltage Sources </alert></p>
+		<p>
+			For potentials across a voltage source, we note that potential drops from a higher value to a lower value when you go from the positive terminal of a battery to its negative terminal, but if you go in the other direction, the potential will increase across the battery. Therefore, when we go from the negative to the positive of a voltage source, the change in potential is positive and when we go from positive to the negative of the source the change in potential is negative as shown in <xref ref="fig-kirk-loop-rule-sign-1"/>.
+		</p>
+		<figure xml:id="fig-kirk-loop-rule-sign-1">
+			<caption>
+				Sign convention for a voltage source.
+			</caption>
+			<image source="./images/electric-circuits/kirk-loop-rule-sign-1.png" width="80%"/>
+		</figure>
+
+		<p> <alert>Sign Convention for Voltages Across Resitors </alert></p>
+		<p>
+			Similarly, when we assume a direction of current in a resistor, we are actually assuming one side of the resistor as being at a higher potential than the other side since the current flows from the higher potential towards the lower potential.
+		</p>
+		<p>
+			In a circuit we may not know the direction of a current a-priori, but we must pick a direction in order to proceed in calculations.  Therefore, we label the two ends of a resistor with <m>+</m> and <m>-</m> to indicate the sides presumed to be at higher and lower voltages respectively.  Although such labeling is not necessary but it often helps avoid silly mistake. This is illustrated in <xref ref="fig-kirk-loop-rule-sign-2"/>.
+		</p> 
+		<figure xml:id="fig-kirk-loop-rule-sign-2">
+			<caption>
+				Using sign convention shows that voltage drop across can be <m>+IR</m> or <m>-IR</m> depending upon the direction of traversal in the Kirchhoff's voltage loop.
+			</caption>
+			<image source="./images/electric-circuits/kirk-loop-rule-sign-2.png" width="70%"/>
+		</figure>
+
+		<p> <alert>Zero Voltage Reference in a Circuit with Multiple Voltage Sources</alert></p>
+		<p>
+			When you have multiple voltage sources in a circuit, you can choose the negative end of <alert>only one of the sources</alert>. The negative ends of only those sources which are directly connected to the zero potential chosen will be at zero potential. The voltage of the source tells us by how much potential changes when you go across from the negative end to the positive end. 
+		</p>
+
+	</subsection>
+
+	<subsection><title> Applying KCL and KVL </title>
+		<p>
+			In a circuit with given resitors and voltage sources, there are two types of unknowns:
+			<ol>
+				<li> Currents through each circuit element, i.e., through each resistor and through each voltage source, or alternately, in each branch of the circuit. </li>
+				<li>Electric potential drop across each circuit element, i.e., across each resistor and across each voltage source. </li>
+			</ol>
+			From potential drops across every resistor we can us Ohm's law to find current through them, and using KCL then lets us find current through the voltage sources. On the other hand, from current through each resistor, we can us Ohm's law to find potential drops across each resistor. 
+		</p>
+		<p>
+			Therefore, we can choose to set up algebraic quations for unknown currents or unknown potentials. Since current through all elements that are connected in series would be same, i.e., there is one current per branch rather than one current for each element, it is often easier to set up equations for currents. But if you are careful with potential drops, same amount of algebra is involved in that approach. In the end, it is up to you to see which way to proceed.
+		</p>
+
+	</subsection>
+
+	<exercise xml:id="ex-Circuit-With-Two-Voltage-Sources"><title>  Circuit With Two Voltage Sources </title>
+		<statement>
+			<p>
+				Find current through each resistor in the circuit in <xref ref="fig-exp-kirk-two-source-three-loop-circuit"/>. The values are: <m>R_1 = 10\ \Omega</m>, <m>R_2 = 20\ \Omega</m>, <m>R_1 = 30\ \Omega</m>, <m>V_1 = 10\ \text{V}</m>, <m>V_2 = 15\ \text{V}</m>.
+			</p>
+			<figure xml:id="fig-exp-kirk-two-source-three-loop-circuit">
+				<caption>
+				</caption>
+				<image source="./images/electric-circuits/exp-kirk-two-source-three-loop-circuit.png" width="60%"/>
+			</figure>
+		</statement>
+		<hint> <p> 1. Pick specific directions for the three currents. 2. One KCL equation. 3. Two KVL equations, wher make sure to use the correct signs.  </p> </hint>
+		<answer> <p> <m>
+					I_1=\dfrac{1}{22}\, \text{ A},\  I_2=\dfrac{6}{22}\, \text{ A},\  I_3=\dfrac{7}{22}\, \text{ A}.
+				</m>  </p> </answer>
+		<solution> 
+			<p>
+				First we pick currents in each branch and label the resistors with <m>+</m> and <m>-</m> across each resistor based on our choice of direction of current as shown in <xref ref="fig-exp-kirk-two-source-three-loop-circuit-current-plus-signs"/>. Note that, at this stage I do not know the directions of the currents, but I must pick these directions based on intuition or arbitrarily.
+			</p>
+			<sidebyside widths="45% 5% 50%">
+				<p>
+					The directions are then used to assign <m>+</m> and <m>-</m> across each resistor. These will be used to assign pick up voltage or drop off voltage in the Kirkchoof's loop equations. We also recognize nodes where potential values are unique. There are four such nodes, labeled, <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-exp-kirk-two-source-three-loop-circuit-current-plus-signs">
+					<caption>
+					</caption>
+					<image source="./images/electric-circuits/exp-kirk-two-source-three-loop-circuit-current-plus-signs.png" width="70%"/>
+				</figure>
+			</sidebyside>	
+
+			<p>
+				There are two junctions in the diagram where currents meets. We get the same KCL equation from them.
+				<men xml:id="eq-exp-kirk-two-source-three-loop-KCL">
+					I_1 + I_2 - I_3 = 0.
+				</men>
+				This gives us one equation in three unknowns. Therefore, we need to generate two other equations, which will come from KVL applied to two loops in the circuit.
+			</p>
+			<p>
+				Let's apply KVL in loop <m>a-b-c-a</m>. 
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					In the <m>a-b</m> step, we are going in the same direction in the math loop as the current in the resistor. Therefore, the potential will drop by <m>I_3R_3</m>, which is evident in going from <m>+\text{ to }-</m>  of the element. Then, in step <m>b-c</m>, we go from <m>-\text{ to }+</m>, which will mean increase of potential by <m>V_1</m>. 
+				</p>
+				<p> </p>
+				<figure xml:id="fig-exp-kirk-two-source-three-loop-circuit-inner-loop">
+					<caption>
+					</caption>
+					<image source="./images/electric-circuits/exp-kirk-two-source-three-loop-circuit-inner-loop.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Finally, in step <m>c-a</m>, we go from <m>+\text{ to }-</m>, therefore, there will be a drop of potential of magnitude <m>I_1R_1</m>. We get
+					<me>
+						-I_3R_3 + V_1 - I_1R_1 = 0.
+					</me>
+				Using the numerical values we get
+				<men xml:id="eq-exp-kirk-two-source-three-loop-KVL-1">
+					-30 I_3 + 10 - 10 I_1 = 0.
+				</men>
+
+			</p>
+			<p>
+				Finally, we apply KVL to the outer  loop <m>a-d-b-c-a</m>. 
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					In step <m>a-d</m> we will have <alert>increase</alert> of <m>I_2R_2</m> since, in the loop, we are going against the direction of the current in the resistor, or equivalently, we are going from <m>-\text{ to }+</m> of the assigned signs to the resistor. In step  <m>a-d</m>, the potential drops by <m>V_2</m>. In step <m>b-c</m>, potential goes up by <m>V_1</m> and in step <m>c-a</m>, potential drops by <m>I_1R_1</m>. 
+				</p>
+
+				<p> </p>
+				<figure xml:id="fig-exp-kirk-two-source-three-loop-circuit-outer-loop">
+					<caption>
+					</caption>
+					<image source="./images/electric-circuits/exp-kirk-two-source-three-loop-circuit-outer-loop.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+
+			<p>
+				Therefore,
+					<me>
+						+I_2R_2 -V_2 + V_1 - I_1R_1 = 0.
+					</me>
+				Using the numerical values we get
+				<men xml:id="eq-exp-kirk-two-source-three-loop-KVL-2">
+					+20 I_2 -15 + 10 - 10 I_1 = 0.
+				</men>				
+			</p>
+			<p>
+				You can solve Eqs. <xref ref="eq-exp-kirk-two-source-three-loop-KCL" />, <xref ref="eq-exp-kirk-two-source-three-loop-KVL-1"/>, and <xref ref="eq-exp-kirk-two-source-three-loop-KVL-2"/> by method of elimination or some other method you are more familiar with. It is very common to make mistakes in these calculations, so, you should pluc back your answer into these equations to check your answer. I used the command <q> Solve x+y=z, 10x+30z=10, 10x -20y=-5</q> at <url source="https://www.wolframalpha.com/">Wolfram Alpha</url> website. My answers are
+				<me>
+					I_1=\dfrac{1}{22}\, \text{ A},\  I_2=\dfrac{6}{22}\, \text{ A},\  I_3=\dfrac{7}{22}\, \text{ A}.
+				</me>
+				Since I got all of these current magnitude positive, my original directions were correct. If I had got any of them negative, it would tell me that the direction of the current I picked in the figure above should have been the oposite direction.
+			</p>
+
+
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Numerical-Bridge-Circuit-Example"><title> Numerical Bridge Circuit Example </title>
+		<statement>
+			<p>
+				In a bridge circuit, resistors and other elements in a circuit form a bridge-like structure.  Bridge circuits are used for many purposes in engineering and physics.  Find currents in each wire of the bridge circuit given in <xref ref="fig-exp-kirk-bridge-circuit-numerical"/>.
+			</p>
+			<figure xml:id="fig-exp-kirk-bridge-circuit-numerical">
+				<caption>
+				</caption>
+				<image source="./images/electric-circuits/exp-kirk-bridge-circuit-numerical.png" width="70%"/>
+			</figure>
+		</statement>
+		<hint> <p>  Systematically set up KCL and KVL equations. </p> </hint>
+		<answer> <p>  <m> I = \dfrac{78}{155}\, \text{ A}</m>, <m>I_1 = \dfrac{51}{155}\, \text{ A}</m>, <m>I_2 = \dfrac{27}{155}\, \text{ A},</m>
+				<m>  I_3 = \dfrac{45}{155}\, \text{ A}</m>, <m>I_4 = \dfrac{33}{155}\, \text{ A}</m>, <m>I_5 = \dfrac{6}{155}\, \text{ A}.</m>
+			</p> </answer>
+		<solution> 
+			<p>
+				Using current conservations at nodes we get three equations from four nodes, the KCL on the fourth node is just a sum of the other relations.
+				<mdn>
+					<mrow xml:id="exp-kirk-bridge-circuit-KCL-1"> \amp \text{node a: } 	I = I_1 + I_2 </mrow>
+					<mrow xml:id="exp-kirk-bridge-circuit-KCL-2"> \amp \text{node b: } I_1 = I_3 + I_5</mrow>
+					<mrow xml:id="exp-kirk-bridge-circuit-KCL-3"> \amp \text{node d: } I_2 + I_5 = I_4</mrow>
+				</mdn>
+				These give us three relations among <alert> six unknowns</alert>, <m>I,\ I_1,\ I_2,\ I_3,\ I_4,\ I_5</m>. Therefore, we need three loops equations from KVL. We can pick any three loop in the circuit. My choice is shown in figure below.
+			</p>
+			<image source="./images/electric-circuits/exp-kirk-bridge-circuit-numerical-loops.png" width="70%"/>
+			<p>
+				The KVL equations for the three loops are
+				<mdn>
+					<mrow xml:id="exp-kirk-bridge-circuit-KVL-1"> \amp  -10 I_1 - 5 I_5 + 20 I_2 = 0 </mrow>
+					<mrow xml:id="exp-kirk-bridge-circuit-KVL-2"> \amp -30 I_3 + 40 I_4 + 5 I_5 = 0</mrow>
+					<mrow xml:id="exp-kirk-bridge-circuit-KVL-3"> \amp -20 I_2 -40 I_4 + 12 = 0</mrow>
+				</mdn>				
+			</p>
+			Solving Eqs. <xref ref="exp-kirk-bridge-circuit-KCL-1"/> to <xref ref="exp-kirk-bridge-circuit-KVL-3"/> simultaneously will give the values of the six currents in the circuit. You can systematically apply the method of elimination. Very tedious to do that. I will carefully type command at <url source="https://www.wolframalpha.com/">Wolfram Alpha</url> website. Here is the command I used,
+			<q> Solve a = a1 + a2, a1 = a3 + a5, a2 + a5 = a4, -10 a1 - 5 a5 + 20 a2 = 0, -30 a3 + 40 a4 + 5 a5 = 0, -20 a2 - 40 a4 + 12 = 0,</q> which gave me the following answer.
+			<md>
+				<mrow> \amp I = \dfrac{78}{155}\, \text{ A}, I_1 = \dfrac{51}{155}\, \text{ A}, I_2 = \dfrac{27}{155}\, \text{ A},</mrow>
+				<mrow> \amp I_3 = \dfrac{45}{155}\, \text{ A}, I_4 = \dfrac{33}{155}\, \text{ A}, I_5 = \dfrac{6}{155}\, \text{ A}.</mrow>
+			</md>
+			
+		</solution>
+	</exercise> 
+
+
+	<exercise xml:id="ex-Finding-Electric-Potentials-in-a-Bridge-Circuit"><title> Finding Electric Potentials in a Bridge Circuit   </title>
+		<statement>
+			 
+			<p>
+				In a bridge circuit, resistors and other elements in a circuit form a bridge-like structure. You can analyze the circuit given in <xref ref="fig-exp-kirk-bridge-circuit-numerical-2"/> by setting up six equations for six currents. That is not the most economical way for analyzing this circuit since it has only four unique values of electic potentials at four nodes in the circuit. The values of potentials at two of the nodes is already known. Therefore, we need to find only two unknown potentials. Find values of electric potential at the four nodes in the  circuit.
+			</p>
+			<figure  xml:id="fig-exp-kirk-bridge-circuit-numerical-2">
+				<caption>
+				</caption>
+				<image source="./images/electric-circuits/exp-kirk-bridge-circuit-numerical.png" width="70%"/>
+			</figure>	
+			 
+
+		</statement>
+		<hint> <p>  Express each current in terms potentials and then use them in current conservation law, KCL. </p> </hint>
+		<answer> <p> <m>\phi_a = 12\text{ V}</m>, <m>\phi_b=0</m>, <m>\phi_c = \dfrac{270}{31}\text{ V}</m>, <m>\phi_d = \dfrac{264}{31}\text{ V}</m>. </p> </answer>
+		<solution> 
+			<p>
+				Let <m>\phi_a</m>, <m>\phi_b</m>, <m>\phi_c</m>, and <m>\phi_d</m> denote electric potentials at <m>a,\ b,\ c,\ d</m> respectively. Since voltage source maintains potential difference across it, 
+				<me>
+					\phi_a - \phi_b = 12\text{ V}.
+				</me>
+				We can always, choose one place to be zero reference of electric potential. As customary, we will choose it to be the negative of a voltage source. Note, if we had multiple voltage sources, negative of only one of them can be set to zero. 
+				<me>
+					\phi_b = 0,\ \phi_a= 12\text{ V}.
+				</me>
+				From the circuit we have the following for Ohm's law for each resistor.
+				<md>
+					<mrow> \amp 12- \phi_c = 10 I_1</mrow>
+					<mrow> \amp 12- \phi_d = 20 I_2</mrow>
+					<mrow> \amp \phi_c -0 = 30 I_3</mrow>
+					<mrow> \amp \phi_d -0 = 40 I_4</mrow>
+					<mrow> \amp \phi_c - \phi_d = 5 I_5</mrow>
+				</md>
+				We will use these to replace currents in the following KCL equations at nodes <m>c</m> and <m>d</m>,
+				<md>
+					<mrow> \amp I_1 = I_3 + I_5,</mrow>
+					<mrow> \amp I_4 = I_2 + I_5,</mrow>
+				</md>
+				which gives
+				<md>
+					<mrow> \amp  \dfrac{12-\phi_c}{10} = \dfrac{\phi_c}{30} + \dfrac{\phi_c - \phi_d}{5},</mrow>
+					<mrow> \amp  \dfrac{ \phi_d}{40} = \dfrac{12-\phi_d}{20} + \dfrac{\phi_c - \phi_d}{5}.</mrow>
+				</md>
+				These can be simplified to
+				<md>
+					<mrow> \amp  10 \phi_c  - 6 \phi_d = 36,</mrow>
+					<mrow> \amp  -8 \phi_c  + 11 \phi_d = 24.</mrow>
+				</md>
+				Solving them yields
+				<me>
+					\phi_c = \dfrac{270}{31}\text{ V},\ \ \phi_d = \dfrac{264}{31}\text{ V}.
+				</me>
+				From the potentials, it is trivial to get the currents now.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+</section>

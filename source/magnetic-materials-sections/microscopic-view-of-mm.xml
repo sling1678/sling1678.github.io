@@ -1,0 +1,287 @@
+<section xml:id="Microscopic-View-of-Magnetic-Materials"><title> Microscopic View of Magnetic Materials </title>
+	<introduction>
+		<p>
+			The magnetism of a material is due to the magnetic properties of the constituent particles, electrons, protons and neutrons of their atoms.  Electrons, protons and neutrons each have their magnetic dipole moments, and their vector sum gives the net magnetic dipole moment of the atom.  
+			 
+		</p>
+		<p>
+			However, due to the low mass of electrons compared to protons and neutrons the electronic contribution to the net magnetic dipole moment is dominant unless electronic magnetic dipole moment happens to be zero. Therefore, in the following, we will ignore the contributions of protons and neutrons.
+		</p>
+
+		
+		<p>
+			The magnetic dipole moment of an electron in an atom comes from two sources:
+			<ol>
+				<li> 
+					<sidebyside widths="70% 5% 25%">
+						<p>
+							<term> Orbital magnetic dipole moment</term> due to the motion of elctron about the nucleus. We will denote the corresponding magnetic dipole moment by <m>\vec \mu_l</m>.
+						</p>
+						<p> </p>
+						<image source="./images/magnetic-materials/orbital-motion-mu.png"/>
+					</sidebyside>
+
+				</li>
+				<li>
+						<!-- <sidebyside widths="70% 10% 15% 5%"> -->
+					<p>
+						<term>Quantum spin</term>. Electron is intrinsically magnetic with a magnetic dipole moment due to an intrinsic angular momentum, called  <term> spin</term>. We will denote the corresponding magnetic dipole moment by <m>\vec \mu_s</m>.
+					</p>
+							<!-- <p> </p>
+							<image source="./images/magnetic-materials/spin-mu.png"/>
+							<p> </p>
+						</sidebyside>
+ -->
+				</li>
+			</ol>
+	 	</p>
+	 	<p> </p>
+ 		<p>
+ 			The net angular momentum of an atom will be a vector sum of the two angular momenta of every electron in the atom.
+			<men>
+				\vec \mu_\text{atom} \approx \sum_\text{electrons} \left( \vec \mu_l + \vec \mu_s\right) 
+			</men>
+
+		</p>
+
+
+	</introduction>
+
+	<subsection> <title> Orbital Angular Momentum and Magnetic Dipole Moment</title>
+		<p>
+			Here, I will use fictitious current loop model of a magnetic dipole moment to show that when an electron moves in an orbit, it will develop a magnetic dipole moment due to its motion. The current loop model states that magnetic moment can be written as a product of current and an area of a fictitious closed circuit.
+			<men  xml:id="eq-mu-equals-IA">
+				\mu  = \left(I A\right)_\text{model}.
+			</men>
+			Suppose the circuit is formed by an electron moving uniformly with speed <m>v</m> in a circle of radius R. Therefore, <m>I</m> and <m>A</m> will be
+			<me>
+				I = \frac{|e|v}{2\pi R},\ \ A = \pi R^2.
+			</me>
+			This will correspond to a magnetic dipole moment 
+			<me>
+				\mu = \fract{|e|}{2}\, v R.
+			</me>
+			In this formula, we can replace <m>vR</m> by angular momentum <m>L</m> divided by mass of electron, <m>m_e</m>. 
+			<me>
+				\mu = \fract{|e|}{2m}\, L.
+			</me>			
+
+			<!-- The product <m>IA</m> can be shown to also equal <m>\frac{1}{2}qvR</m> in the case of an charge of mass <m>m</m> moving with speed <m>v</m> in a circle of radius <m>R</m>. Let <m>T</m> be the period of the circular motion.
+			<me>
+				IA = \dfrac{q}{T}\, \pi R^2.
+			</me>
+			Now, for circular motion with speed <m>v</m> and radius <m>R</m>, the time to complete one circle is
+			<me>
+				T = \dfrac{2\pi R}{v}.
+			</me>
+			Therefore, <m>IA</m> becomes
+			<me>
+				IA = \dfrac{1}{2} q v R.
+			</me>
+			Now, angular momentum <m>L</m> of a particle of mass <m>m</m> moving in circle of radius <m>R</m> with speed <m>v</m> is 
+			<me>
+				L = m v R.
+			</me>
+			Therefore, we can write <m>IA</m> as
+			<men xml:id="eq-IA-equals-q-by-2m-times-l">
+				IA = \dfrac{q}{2m} L.
+			</men>
+			We can combine Eqs. <xref ref="eq-mu-equals-IA"/> and <xref ref="eq-IA-equals-q-by-2m-times-l"/> to get a quantity that says that every charge that has non-zero angular momentum will have a magnetic dipole moment.  -->
+
+			We denote this dipole moment by <m>\mu_l</m>, to indicate that it is from the angular momentum due to the orbital motion.
+			<men>
+				\mu_l = \dfrac{|e|}{2m_e} L.
+			</men>
+			In general, for any charged particle, we expect that there will be a magnetic moment due to its orbital angular momentum <m>L</m>, with the proportionality depending on its charge <m>q</m> and  mass <m>m</m>.
+			<men>
+				\mu_l = \dfrac{|q|}{2m} L.
+			</men>
+
+			<!-- In this result, we see that arbitrariness of current and area of loop has been replaced by measureable quantities.  -->
+			The quantity <m> |q|/2m </m> is called the gyromagnetic ratio of the particle, usually denoted by <m>g_q</m>, where the subscript is an identifier for the particle.
+			<me>
+				g_q = \dfrac{|q|}{2m},
+			</me>
+			For an electron the value of gyromagnetic ratio is
+			<men>
+				g_e = \dfrac{|e|}{2m_e} \approx 8.78 \times 10^{10}\text{ C/kg}.
+			</men>
+			For a proton, it is about <m>1/2000</m> times smaller due to the mass of proton being about <m>2000</m> times larger. 
+		</p>
+		<p>
+			Since, conventional current is in the opposite direction to the motion of electron, the direction of magnetic moment vector of an electron will be in the opposite direction to its angular momentum. Thus, we will write the vector relation as 
+			<me>
+				\vec \mu_l = - g_e\, \vec L,
+			</me>
+			It turns out that in SI units, the value of <m>\mu</m> due to electron's motion in atoms are very tiny numbers. More commonly, we express it in a unit called <term> Bohr magneton</term>, denoted by <m>\mu_B</m>.
+			<men>
+				\mu_B = \dfrac{|e|\hbar}{ 2 m_e}  = g_e\hbar,
+			</men>
+			where <m>\hbar</m> is Planck constant <m>h</m> divided by <m>2\pi</m>.
+			<me>
+				\hbar = \dfrac{h}{2\pi} = 1.0545718 \times  10^{-34} \text{ m}^2\text{kg / s}.
+			</me>
+			In terms of <m>\mu_B</m> the magnetic dipole moment of electron that has angular momentum <m>\vec L</m> will be
+			<men>
+				\vec \mu_l = - \dfrac{\vec L}{\hbar}\, \mu_B.
+			</men>
+			In atoms, angular momentum <m>L</m> is usually a small multiple of <m>\hbar</m>, and hence, magnetic dipole moments are a small multiple of <m>\mu_B</m>.
+		</p>
+		<p>
+			Classically, the magnitude of angular momentum <m>L</m> can be any positive real number with units, of course. But, quantum mechanically, <m>L</m> can only have certain values given by the following formula.
+			<men xml:id="eq-orbital-angular-momentum">
+				L = \sqrt{l(l+1)}\, \hbar,\ \ l = 0, 1, 2, 3, \cdots.
+			</men>
+			That is, only <m>L=0</m>, <m>L = \sqrt{2}\, \hbar</m>, <m>L = \sqrt{6}\, \hbar</m>,
+			<m>L = \sqrt{12}\, \hbar</m>, etc are allowed. Therefore, magnetic dipole moment will also be quantized in the same way and will have only certain values.
+			<men xml:id="eq-orbital-angular-momentum-magnetic-moment">
+				\mu_l = \sqrt{l(l+1)}\, \mu_B,\ \ l = 0, 1, 2, 3, \cdots.
+			</men>			 	
+		</p>
+		<p>
+			Furthermore, when we look at one of its Cartesian components, it can be integral values of <m>\hbar</m>.
+			<men xml:id="eq-orbital-angular-momentum-components">
+				L_z = l_z \hbar,\ \ l_z = 0, \pm 1, \pm 2, \pm 3, \cdots.
+			</men>
+			This says that magnetic moment along a Cartesian axis will be integral multiples of a Bohr magneton.
+			<men xml:id="eq-orbital-angular-momentum-components-magnetic-moment">
+				\mu_{lz} = l_z \mu_B,\ \ l_z = 0, \pm 1, \pm 2, \pm 3, \cdots.
+			</men>			
+		</p>
+ 
+	</subsection>
+
+
+	<subsection><title> Spin And Magnetic Dipole Moment</title>
+		<p>
+			Every electron has an intrinsic angular momentum called <term> spin</term> regardless of the state of motion of the electron. The name <q>spin</q> for this property of an electron is a misnomer and suggests that the electron is in rotational motion about an axis through its center.  If that were the case, angular momentum of such a spinning motion will be zero since moment of inertia about axis through a point particle would be zero.  Hence, spin of an electron is best regarded as an <alert> intrinsic property</alert> and not to be taken literally.    
+		</p>
+		<p>
+			The spin property accounts for the fact that electrons appear to have additional  angular momentum than one can account for based only on the motion of the electron.
+		</p>
+
+		<p>
+			Unlike the magnitude of the orbital angular momentum, which can take many values, depending upon integer <m>l</m> in Eq. <xref ref="eq-orbital-angular-momentum-magnetic-moment"/>, a measurement of the magnitude of the spin angular momentum of an electron, to be denoted by <m>\vec S</m>, results in only one value for the magnitude. For an electron, the magnitude <m>S=\frac{\sqrt{3}}{2}\hbar</m>. In general, for any particle, we can write the magnitude <m>S</m> as
+			<men>
+				S =  \sqrt{ s\left( s + 1 \right)}\, \hbar,
+			</men>
+			where <m>s</m> is called the <term>spin</term> of the particle. For electron 
+			<me>
+				s = \dfrac{1}{2}.
+			</me>
+			Proton and neutrons also have <m>s=\frac{1}{2}</m>. As a matter of fact, <m>s</m> can only be positive integer multiples of <m>\frac{1}{2}</m>. Particles with odd multiples are called <term>Fermions</term> and 0 and even multiples are called <term>Bosons</term>.  
+		</p>
+		<p>
+			A measurement of the spin angular momentum of an electron along any direction, say the <m>z</m>-axis, results in only the following two values.
+			<me>
+				 S_z = s_z\, \hbar,\ \ s_z = \pm\dfrac{1}{2},
+			</me>
+			similar to the way <m>L_z</m> works out, except now the value is <m>1/2</m> instead of integers. 
+		</p>
+
+		<p>
+			Just as the orbital angular momentum creates a magnetic dipole moment for the electron, spin angular momentum creates additional magnetic dipole moment for the electron. However, the gyromagnetic ratio of the spin angular momentum is not the same as the gyromagnetic ratio of the orbital angular momentum. Actually, for electrons, each unit of spin angular momentum is actually about twice as effective in creating magnetic moment as orbital angular momentum. 
+		</p>
+		<p>
+			The factor by which you will need to multiply gyromagnetic ratio of orbital angular momentum to get the g-factor of spin angular momentum is called the <m>g</m> factor. It is often denoted by <m>g_S</m>.
+			<men>
+				g_{e,\text{spin}} = g_S\, g_e = g_S\, \dfrac{\mu_B}{\hbar}.
+			</men>
+			<m>g_S</m>  is  one of most precisely known number in physics with reported value at <url sourc="https://physics.nist.gov/cgi-bin/cuu/Value?gem">NIST</url> in May/2020 to be
+			<me>
+				g_S = 2.00231930436256 \left(1 \pm 1.7\times10^{−13} \right).
+			</me>
+			We will just use <m>g_S=2.0</m> for electron. I gave you the more precise value for you to marvel at how many decimals have actually been measured! The <m>g</m> factor of protons, neutrons, and other particles are different.
+		</p>
+		<p>
+			Therefore, magnetic moment contribution of the spin angular moment will be
+			<me>
+				\vec \mu_S = g_{e,\text{spin}}\ \vec S = g_S\, \vec S\, \dfrac{\mu_B}{\hbar} ,
+			</me>
+			with Cartesian components given by
+			<men>
+				{\mu_S}_z = \pm\dfrac{1}{2}\, g_S\, \mu_B = \pm\mu_B,
+			</men>
+			and total spin magnetic moment to be
+			<men>
+				\mu_S = \dfrac{\sqrt{3}} {2}\,  g_S\, \mu_B = \sqrt{3}\,\mu_B .
+			</men>
+			This much magnetic moment will be produced by orbital angular momentum between <m>l=2</m> and <m>l=3</m>.
+		</p>
+
+		<subsubsection><title> Pairing of Spins</title>
+			<p>
+				The two values of the spin projections along a Cartesian axis are called the spin up and the spin down states respectively. The rules of quantum mechanics often forces the pairing of up and down spins so that atoms that have an even number of electrons often end up with zero net spin angular momentum in any direction. In these cases, the magnetism of a material comes from the orbital angular momentum.
+			</p> 
+			<p> 
+				Therefore, the effect of the spin magnetic moment will be present when spins of electrons cannot be paired up.  This will definitely happen if a particular atom  has either an odd number of electrons or where spins of different electrons are not paired up.  From our formulas above, we see that the spin magnetic moment of a single elctron along any axis is either <m>+1\ \mu_B</m> or <m>-1\ \mu_B</m>. 
+			</p>
+			<p>
+				If we place atoms with magnetic dipole moment due to unpaired spins or non-zero orbital angular momentum in an external magnetic field, the alignment of atomic dipole moments give rise to macroscopically observable magnetic phenomenon. 
+			</p>
+			<p>
+				For instance, if the magnetic dipole moments of <m>N</m> atoms, each with a dipole moment of, say 1 <m>\mu_B</m>, are line up in one direction, then the net magnetic dipole moment of the sample will be <m>N\mu_B</m>. How large can these number be? Suppose <m>N</m> is of the order of the Avogadro number, then the net magnetic dipole moment will be
+				<me>
+					\mu \sim 6\times 10^{23}\times 9\times 10^{-24} \text{A.m}^2 = 5\ \text{A.m}^2 .
+				</me>
+				This is equivalent to the magnetic dipole moment of a whopping <m> 500\text{ A}</m> current in a <m> 10 \text{ cm} \times 10 \text{ cm}</m> loop.
+			</p>
+		</subsubsection>
+
+
+	</subsection>
+
+	<exercise xml:id="ex-Calculating-Magnetic-Moments-of-Atoms"><title> Calculating Magnetic Moments of Atoms </title>
+		<statement>
+			<p>
+				Determine the magnetic moment of (a) a sodium atom which has an unpaired electron in <m>l_z = 0</m> and the spin up state, and (b) an electron in the carbon atom that is in spin up state and has <m>l_z = 1</m>. Use the <m>z</m>-axis as the axis for the angular momentum vector.
+			</p>
+
+		</statement>
+		<hint> <p> Add up the magnetic momenta of orbital and spin parts.  </p> </hint>
+		<answer> <p> (a) <m> \mu_B</m>, (b) <m> 2\mu_B</m>. </p> </answer>
+		<solution> 
+			<p>
+				(a) Since <m>l_z = 0</m>, the orbital angular momentum along the <m>z</m>-axis is zero.  That means magnetic moment will be all from the spin of the electron.
+				<me>
+					\mu_z = {\mu_S}_z = + \mu_B.
+				</me>
+			</p>
+			<p>
+				(b) Now, both orbital and spin will contribute. Since they are in the same direcion, they will add together. 
+				<me>
+					\mu_z = \mu_{\text{orbital},z} + \mu_{\text{spin},z} =  1\times \mu_B +    \mu_B = 2\mu_B.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Magnetic-Moment-of-a-Helium-Atom-in-an-Electronically-Excited-State"><title> Magnetic Moment of a Helium Atom in an Electronically Excited State </title>
+		<statement> 
+			<p>
+				An excited helium atom has two electrons in different states, one with <m>l_z = 0</m>, and spin down, and the other with <m>l_z = + 2 </m>, and spin up state.  What is the magnetic moment of the atom? Use the <m>z</m>-axis as the axis of projections of the angular momentum vectors.
+			</p>
+
+		</statement>
+		<hint> <p>  Find magnetic moment of each and then add them vectorally </p> </hint>
+		<answer> <p> <m>2\mu_B</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Adding the <m>z</m> magnetic moments of the two electrons we get
+
+				<md>
+					<mrow> \mu_z \amp = \mu_{1z} + \mu_{2z}</mrow>
+					<mrow> \amp = \left[ \mu_{\text{orbital},z} + \mu_{\text{spin},z} \right]_1 + (1\rightarrow 2)</mrow>
+					<mrow>  \amp = \left[(0-1)\mu_B \right]_1 + \left[(2+1)\mu_B \right]_2</mrow>
+					<mrow> \amp = -\mu_B + 3 \mu_B  = 2\mu_B.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+ 
+
+ 
+ 
+
+
+</section>

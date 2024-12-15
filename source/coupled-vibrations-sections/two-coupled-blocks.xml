@@ -1,0 +1,75 @@
+<section xml:id="Coupled-Motion-of-Two-Blocks"><title> Coupled Vibrations of Two Blocks </title>
+	<introduction>
+		<p>
+			In a previous chapter on simple harmonic motion we studied oscillations of one block attached to a spring about its equilibrium. Wave phenomena arises as a result of the coupling of vibratory motions of many parts of a system. To develop a feel for the consequences of coupling of vibrations, we will study a simple system consisting of two blocks of masses <m>m_1</m> and <m>m_2</m> that are connected by a spring and supported on the two sides by two other springs as shown in <xref ref="fig-two-blocks-three-springs-system-setup"/>. In this section we will study this system analytically. 
+		</p>
+		<figure xml:id="fig-two-blocks-three-springs-system-setup">
+			<caption>
+				Two blocks coupled with each other by a spring and attached  to fixed supports with additional springs. At equilibrium, the blocks are at points marked <m>O_1</m> and <m>O_2</m>. The <m>x</m>-component of the displacements of the two blocks as measured from <m>O_1</m> and <m>O_2</m> are denoted by <m>x_1</m> and <m>x_2</m>. Any change in <m>x_1</m> affects the forces on block 2 and any change on <m>x_2</m> affects the forces on block 1.  We say that the motions of the blocks are coupled.
+			</caption>
+			<image source="./images/coupled-vibrations/two-blocks-three-springs-system-setup.png" width="80%"/>
+		</figure>
+ 
+
+	</introduction>
+
+	<subsection><title>(Calculus) Analytic Solution</title>
+		<p>
+			We will study the one-dimensional motion of the coupled masses analytically by choosing the <m>x</m>-axis to coincide with the line of the springs and the blocks as shown in <xref ref="fig-two-blocks-three-springs-system-setup"/>. Let <m>x_1</m> and <m>x_2</m> be the displacements of the two blocks from their equilibrium positions.  Note that <m>x_1</m> and <m>x_2</m> are not the <m>x</m>-coordinates of the blocks but rather the <m>x</m>-components of their displacements from the corresponding equilibrium positions. 
+		</p>
+		<p>
+			Let <m>k_{s1}</m> be the spring constant of the spring connecting block <m>m_1</m> to the left support, <m>k_{s2}</m> the spring constant of the spring connecting block <m>m_2</m> to the right support, and <m>k_c</m>  the spring constant of the spring coupling the two blocks as indicated in the figure.
+		</p>
+		<p>
+			The <m>x</m>-components of the equations of motion of the two blocks are
+			<mdn>
+				<mrow xml:id="eq-coupled-1a">\amp m_1\frac{d^2x_1}{dt^2} = -k_{s1} x_1-k_c (x_1-x_2),</mrow>
+				<mrow xml:id="eq-coupled-2a">\amp m_2\frac{d^2x_2}{dt^2} = -k_{s2} x_2+k_c (x_1-x_2).</mrow>
+			</mdn>
+		</p>
+		<p>
+			Rather than solve these two equations for arbitrary values of the masses and constants, let us simplify the problem by looking at the case where masses are equal and two of the springs connecting the blocks to the support have equal spring constants.
+			<md>
+				<mrow>\amp m_1 = m_2 \equiv m</mrow>
+				<mrow>\amp k_{s1} = k_{s2}\equiv k_s</mrow>
+			</md>>
+			Then, the equations of motion for <m>x_1</m> and <m>x_2</m> are
+			<mdn>
+				<mrow xml:id="eq-coupled-1">\amp m\frac{d^2x_1}{dt^2} = -k_{s} x_1-k_c (x_1-x_2),</mrow>
+				<mrow xml:id="eq-coupled-2">\amp m\frac{d^2x_2}{dt^2} = -k_{s} x_2+k_c (x_1-x_2).</mrow>
+			</mdn>
+			To solve these equations, I will introduce new composite variables <m>X</m> and <m>x</m> in place of <m>x_1</m> and <m>x_2</m> by
+			<mdn>
+				<mrow xml:id="eq-coupled-3">\amp X = \frac{x_1 + x_2}{2},</mrow>
+				<mrow xml:id="eq-coupled-4">\amp x = x_1 - x_2.</mrow>
+			</mdn>
+			Equations <xref ref="eq-coupled-1"/> and <xref ref="eq-coupled-2"/> then gives rise to the following equations of motion for <m>X(t)</m> and <m>x(t)</m>.
+			<mdn>
+				<mrow xml:id="eq-coupled-5">\amp m\frac{d^2X}{dt^2} = -k_s X,</mrow>
+				<mrow xml:id="eq-coupled-6">\amp m\frac{d^2x}{dt^2} = -\left( k_s+2k_c \right) x.</mrow>
+			</mdn>
+			Equation <xref ref="eq-coupled-5"/> is an equation of motion of an oscillator of mass <m>m</m> and spring constant <m>k_s</m>, and Eq. <xref ref="eq-coupled-6"/> is an equation of motion of an oscillator of mass <m>m</m> and spring constant <m>k_s+2k_c</m>. Therefore, we can think of <m>X</m> and <m>x</m> as displacements of two fictitious simple harmonic oscillators of mass <m>m</m> attached to springs of spring constants <m>k_s</m> and <m>\left( k_s+2k_c \right)</m> respectively.  The solution of these equations show that the variables <m>X</m> and <m>x</m> will oscillate with angular frequencies given by
+			<mdn>
+				<mrow xml:id="eq-coupled-7">\amp \text{X oscillates at:  }\ \ \  \omega_X = \sqrt{\frac{k_s}{m}}</mrow>
+				<mrow xml:id="eq-coupled-8">\amp \text{x oscillates at: }\ \ \  \omega_x = \sqrt{\frac{k_s+2k_c}{m}}</mrow>
+			</mdn>
+			The variables <m>X</m> and <m>x</m> are called  <term>normal modes</term>   and the angular frequencies <m>\omega_X</m> and <m>\omega_x</m> the  <term>normal frequencies</term>  of this system of two masses. 
+			The normal coordinates <m>X</m> and <m>x</m> execute simple harmonic motions of their corresponding frequencies and are given by 
+			<mdn>
+				<mrow xml:id="eq-coupled-9">\amp X(t) = A \cos(\omega_X t-\delta)</mrow>
+				<mrow xml:id="eq-coupled-10">\amp x(t) = B \cos(\omega_x t-\phi)</mrow>
+			</mdn>
+			From Eqs. <xref ref="eq-coupled-3"/> and <xref ref="eq-coupled-4"/>, we see that <m>x=0</m> when <m>x_1=x_2</m>, i.e., when the two blocks have equal displacment, the motion is that of mode <m>X</m>. When <m>x_1=-x_2</m>, i.e., ehen their displacments are opposite, <m>X=0</m>, in which case, the motion is in mode <m>x</m>. These are illustrated in <xref ref="fig-TwoMassesCoupledWithASpring2"/>.
+		</p>
+
+		<figure xml:id="fig-TwoMassesCoupledWithASpring2">
+			<caption>
+				Illustrations of the two normal modes <m>X</m> and <m>x</m>.  In mode <m>X</m>, the blocks move in tandem, both towards right or both towards left, such that the middle spring in unaffected.  In mode <m>x</m>, the blocks move in the opposite directions such that the center of mass of the two blocks remains fixed.
+			</caption>
+			<image source="./images/coupled-vibrations/TwoMassesCoupledWithASpring2.png" width="80%"/>
+		</figure>
+ 
+	</subsection>
+
+
+</section>

@@ -1,0 +1,258 @@
+<section xml:id="static-fluid-Pressure"><title> Pressure </title>
+	<introduction>
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				An important characteristics of fluids is that there is no significant reaction force from the fluid when you apply a force horizontal to the free surface of the fluid. The fluid simply flows under such a force. 
+			</p>
+			<p></p>
+			<image source="./images/static-fluid/tangential-force-fluid-flow.png"/>
+		</sidebyside>
+		
+		<sidebyside widths="65% 10% 20% 5%">
+			<p>
+				On the other hand, if you push on a fluid such that the fluid cannot flow and the force results in change in volume, thus resulting in a volumetric strain, then a stress develops inside the fluid. The stress in fluid is called <term>pressure</term>. Suppose <m>F_\text{reaction}</m> is reaction force developed inside the fluid as a result of an external force <m>F_\tet{ext}</m>. Since force acts on area <m>A_\perp</m>. Then, pressure inside the dluid will be
+				<men>
+					p = \dfrac{F_\text{reaction}}{A_\perp}.
+				</men>
+			</p>
+			<p> </p>
+			<image source="./images/static-fluid/pressure-definition.png"/>
+			<p></p>
+		</sidebyside>
+		<!-- <sidebyside widths="65% 10% 25%">
+			<p>
+				So, the pressure in the fluid at a surface point will be the reaction force divided by the area over which these molecules push back. We denote pressure by the small letter <m>p</m>. Let <m> F_\text{reaction} </m> denote the magnitude of the reaction force outward normal from the fluid, and <m> A </m> the area. Then,
+		  
+				<men xml:id="eq-pressure-definition">
+					p =  \dfrac{F_\text{reaction}}{A} =  \dfrac{F_{\text{ext},\perp}}{A}. 
+				</men>
+			</p>
+			<p>
+				The pressure at any point in the fluid acts in all directions away from that point. At the surface, the pressure acts normal to the surface, which balances the normal component of the external force, <m> F_{\text{ext},\perp}</m>.
+				<men>
+					F_\text{reaction, surface} = F_{\text{ext},\perp}.
+				</men>
+			</p>
+			<p> </p>
+			<image source="./images/static-fluid/pressure-definition.png"/>
+		</sidebyside> -->
+	</introduction>
+
+	<subsection> <title> Units of Pressure</title>
+
+		<p>
+			The dimension of pressure is
+			<me>
+			  [p] =  [M][L]^{-1}[T]^{-2}, 
+			</me>
+			and therefore the unit in SI system is 
+			<me>
+				\text{kg/m.s}^2\text{  called   Pascal (Pa)}, 
+			</me>
+ 			in honor of the French mathematician and physicist Blaise Pascal (1623-1662).  
+ 		</p>
+ 		<p>
+ 			Actually, other units of pressure are in more common use in physics, engineering, and other sciences.  For instance, the ambient pressure due to the atmosphere is called <term> one atmosphere (atm) </term> which is 
+ 			<me>
+ 				1\text{ atm} \approx 1.013\times10^5\text{ Pa}.
+ 			</me>
+ 		</p>
+ 		<sidebyside widths="55% 10% 25% 10%">
+	 		<p>
+	 			The pressure at the bottom of a 760-mm high column of mercury at <m> 0^{\circ}\text{ C}</m> in a container where the top part is evacuated is equal to the atmospheric pressure.  Thus, 760-mmHg is also used in place of 1 atmospheric pressure.
+	 			<me>
+	 				1\text{ atm} = 760\text{ mmHg}.
+	 			</me>
+			</p>
+			<p> </p>
+			<image source="./images/static-fluid/atmospheric-pressure-mercury-column.png"/>
+			<p></p>
+		</sidebyside>
+		<p>
+			In vacuum physics labs, one often uses another unit called Torr, named after the Italian inventor Evangelista Torricelli (1608-1647), who invented the mercury manometer for measuring pressure.  One <term> Torr </term> is equal to a pressure of <m>1\text{ mmHg}</m>.  Low pressures in atmospheric physics and high vacuum physics are often expressed in yet another unit called <term>  millibar or mbar</term>, which is equal to 100 Pa, with a <term> bar </term> being <m>10^5\text{ Pa}</m>.  The multitude of units for pressure is certainly very confusing to students. Perhaps, when doing problems, you should stick to <m>\text{Pa}</m>.
+			<md>
+				<mrow> 1\text{ Torr} = 1\text{ mmHg},</mrow>
+				<mrow> 1\text{ bar} = 10^5\text{ Pa},</mrow>
+				<mrow> 1\text{ mbar} = 100\text{ Pa}. </mrow>
+			</md>
+			Not to be left out is the pounds per square inch (<m> \text{psi} </m>) will be the English unit of pressure - this is used, for instance in tire pressure in USA:
+			<me>
+				1\text{ psi} = 7.015\times10^3\text{ Pa} = \dfrac{1}{14.7}\text{ atm}.
+			</me>
+		</p>
+
+
+	</subsection>
+
+	<subsection><title> Range of Pressure</title>
+		<p>
+			<xref ref="tab-Pressures-in-universe"/> displays pressure under various conditions in nature.
+		</p>
+		<table xml:id="tab-Pressures-in-universe"> <title>Pressures in universe (Source: various) </title>
+			<tabular halign ="center" >
+				<row bottom ="minor" >
+					<cell> Place </cell>  <cell> Pressure (Pa)	</cell>   <cell> Place	</cell>  <cell>  Pressure (Pa) </cell>
+				</row>
+				<row>
+					<cell> Center of the Sun </cell>  <cell> <m>\approx 3 \times 10^{16} </m>	</cell>   <cell> Mechanical Vacuum Pump	</cell>  <cell>  <m>100 \text{ to } 10^{-4} </m> </cell>
+				</row>					
+ 
+				<row>
+					<cell> Center of the Earth </cell>  <cell> <m>\approx 4 \times 10^{11} </m>	</cell>   <cell> Cryopump molecular beam epitaxy	</cell>  <cell>  <m>10^{-9} </m> </cell>
+				</row>	
+
+				<row>
+					<cell> Atmosphere </cell>  <cell> <m>1.013\times10^5 </m>	</cell>   <cell> On the Moon	</cell>  <cell>  <m>10^{-9} </m> </cell>
+				</row>
+ 
+ 				<row>
+					<cell> Vacuum cleaner </cell>  <cell> <m>\approx8\times10^4</m>	</cell>   <cell> Interstellar space	</cell>  <cell>  <m>10^{-15} </m> </cell>
+				</row>
+  
+			</tabular>
+		</table>
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Balancing-Force-by-Gas-Pressure"><title> Balancing Force by Gas Pressure </title>
+		<statement>
+			<p>
+				In a zero gravity and vacuum environment, nitrogen gas is kept at a pressure of <m>50,000\text{ Pa}</m> in a rigid cylinder with a movable piston. The area of the piston is <m>20\text{ cm}^2</m>.  What force must be applied on the piston to keep the gas from expanding? 
+			</p>
+
+		</statement>
+		<hint> <p> Balance the forces on the piston.  </p> </hint>
+		<answer> <p> <m> 100\text{ N}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Let <m>F</m> be the magnitude of the force required to act normally to the piston. Then, this force must balance the force by the pressure of the gas.
+				<me>
+					F = pA.
+				</me>
+				Now, before we put in the numerical values, we need to convert area in <m>\text{m}^2</m>.
+				<me>
+					A = 20\text{ cm}^2 = 20\times 10^{-4}\text{ m}^2,
+				</me>
+				where note that we need a factor of <m> (1/100)^2</m>. Therefore,
+				we have
+				<me>
+					F = 50,000 \times 20\times 10^{-4} = 100\text{ N}.
+				</me>
+			</p>
+		</solution>
+	</exercise>	
+
+
+	<exercise xml:id="ex-Pressure-of-Same-Magnitude-Force-Acting-on-a-Pin-Versus-on-a-Nail"><title> Pressure of Same Magnitude Force Acting on a Pin Versus on a Nail </title>
+		<statement>
+			<p>
+				Compare the pressures by a <m> 1\text{ N}</m> force on a pin and a nail.  The tip of the pin has a diameter of <m>10\ \mu\text{m}</m> and the nail <m>100\ \mu\text{m}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Dividing by area gives pressure.  </p> </hint>
+		<answer> <p> pin: <m> 1.27\times 10^{10}\text{ Pa}</m>, nail: <m>1.27\times 10^8\text{ Pa}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				First we work out the areas in <m>\text{m}^2</m>.
+				<md>
+					<mrow> A_\text{pin} \amp = \dfrac{\pi}{4}d^2 = \dfrac{\pi}{4}\times 10^{-10}\text{ m}^2, </mrow>
+					<mrow> A_\text{nail} \amp = \dfrac{\pi}{4}d^2 = \dfrac{\pi}{4}\times 10^{-8}\text{ m}^2, </mrow>
+				</md>
+			</p>
+			<p>
+				Dividing the force by the area will give pressure in each case.
+				<md>
+					<mrow> p_\text{pin} \amp = 1.27\times 10^{10}\text{ Pa},</mrow>
+					<mrow> p_\text{nail} \amp = 1.27\times 10^{8}\text{ Pa}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Conversion-Among-Units-of-Pressure"><title> Conversion Among Units of Pressure  </title>
+		<statement>
+			<p>
+				In a low pressure laboratory, partial vacuum of <m> 1.0 \times 10^{-6}\text{ Torr}</m> is achieved.  (a) What is the corresponding reading in millibar? (b) How much is that in psi? (c) How much is that in Pa?
+			</p>
+
+		</statement>
+		<hint> <p> Look up the unit conversion factors.  </p> </hint>
+		<answer> 
+			<p>  (a) <m> 1.33\times 10^{-6}\text{ mbar}</m>. (b) <m> 1.9\times 10^{-8}\text{ psi}</m>. (c) <m> 1.33\times 10^{-4}\text{ Pa}</m>. </p> 
+		</answer>
+		<solution> 
+			<p>
+				Using the conversion factors gives the results.
+			</p>
+			<p>
+				(a) <m> 1.33\times 10^{-6}\text{ mbar}</m>.
+			</p>
+			<p>
+				(b) <m> 1.9\times 10^{-8}\text{ psi}</m>.
+			</p>
+			<p>
+				(c) <m> 1.33\times 10^{-4}\text{ Pa}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Opening-a-Door-on-a-Windy-Day-Handling-Pressure-Difference"><title> Opening a Door on a Windy Day - Handling Pressure Difference </title>
+		<statement>
+			<p>
+				On a windy day, the air pressure outside a 90 cm x 200 cm door is 943 mbar, while the air pressure inside the building is 1013 mbar.  How much force you must apply at the handle of the door to open it if the door is hinged on the long side?  
+			</p>
+
+		</statement>
+		<hint> <p> (1) Place the force by pressures at the center.  (2) Balance the torque by your force.  </p> </hint>
+		<answer> <p> <m>630\text{ N} </m>.  </p> </answer>
+		<solution> 
+			<p>
+				The force by outside air and inside air could both be placed at the center of th door. Say, we apply a force <m> F</m> at the handle. Then, the torque balancing will give us the following equation.
+				<me>
+					F w = \left[ (p_\text{in} - p_\text{out})wh \right]\, \dfrac{w}{2}.
+				</me>
+				Solving for <m> F</m> we get
+				<me>
+					F = \dfrac{1}{2} (p_\text{in} - p_\text{out})wh.			
+				</me>
+				Putting in the numerical values requires us to convert <m>\text{mbar}</m> to <m> \text{Pa}</m>.
+				<me>
+					\dfrac{1}{2} \times (1013 - 943)\times \times 10^{2} \times 0.9\times 2.0 = 630\text{ N}. 				
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+	<!-- <exercise><title> (Calculus) Force from Inside of the Jumbo Jet to the Outside - TODO
+	Solution </title>
+		<statement>
+			<p>
+				The fuselage of Boeing 777 aircraft is approximately a cylinder of diameter <m>6\text{ m}</m> and length <m>64\text{ m}</m>.  If the pressure of the interior of the aircraft is maintained at <m> 0.82\text{ atm}</m>, what will be the force tearing the two halves of the aircraft lengthwise when the aircraft is flying at an altitude of <m>40,000\text{ feet}</m> where the pressure outside is <m>0.22\text{ atm}</m>?  Hint: Horizontal components of forces cancel out.
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p>   </p> </answer>
+		<solution> 
+			<p>
+			</p>
+		</solution>
+	</exercise> -->
+
+
+
+
+
+
+
+
+</section>

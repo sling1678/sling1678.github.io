@@ -1,0 +1,178 @@
+<section xml:id="momentum-Collisions-in-the-center-of-mass-frame"><title> The CM Frame</title>
+	<idx>Center of Mass Frame</idx>
+	<introduction>
+		<p>
+			You saw above that total momentum, or equivalently center-of-mass momentum does not change during a collision. That suggests that a reference frame attached to the center of mass would also be an inertial frame. This frame is called the CM frame. Calculations become simpler when performed in this frame. Once, you have made calculations in the CM frame, you can deduce the results in the regular or lab frame by the associated transformations.
+		</p>
+		<p>
+			Consider a block A moving towards another block B at rest on a table as shown in <xref ref="fig-cm-frame-collision-before-collision"/>. The left side of the figure shows the drawing in standard frame, called LAB frame. The CM of the two blocks also moves towards B here, but at a lower speed than speed of A.
+		</p>
+		<figure xml:id="fig-cm-frame-collision-before-collision">
+			<caption>
+			</caption>
+			<image source="./images/momentum/cm-frame-collision-before-collision.png" width="80%"/>
+		</figure>
+		<p>
+			The first row in <xref ref="fig-cm-frame-collision-before-collision"/> is the situation before the collision and the bottom part is the situation after the collision. The left two figures illustrate that momentum is conserved in the collision; the total momentum given by total mass times the CM velocity does not change in collision.
+		</p>
+		<p>
+			The right two figures in <xref ref="fig-cm-frame-collision-before-collision"/>  show the same situation in the CM frame. In the CM frame, the origin is at the CM. In this frame, both A and B have non-zero velocity. Before the collision, they are moving towards origin with momentum of equal magnitude and opposite direction.
+			<me>
+				\vec p_{A,\text{cm}} + \vec p_{B,\text{cm}} = 0.
+			</me>
+			That is,
+			<me>
+				 m_A\vec v_{A,\text{cm}} + m_B\vec v_{B,\text{cm}} = 0.
+			</me>
+		</p>
+		<p>
+			After collision, they are moving away from CM, again with  momentum of equal magnitude and opposite direction.
+		</p>
+			<me>
+				\vec p'_{A,\text{cm}} + \vec p'_{B,\text{cm}} = 0.
+			</me>
+			That is,
+			<me>
+				 m_A\vec v'_{A,\text{cm}} + m_B\vec v'_{B,\text{cm}} = 0.
+			</me>
+
+
+		<p>
+			Because of the symmetry in the before and after collision, as observed in the CM frame, this frame is often used to study collision problems.
+		</p>
+	</introduction>
+
+	<subsection><title> Relation between CM and LAB frames</title>
+		<p>
+			Relating LAB and CM frames is no different than relating any two inertial frames as we have studied in the relative velocity section. Suppose we want to find the relation for position, velocity and acceleration between LAB and CM frames. 
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				Let <m>\vec R</m> be the position of the origin of the CM frame with respect to the origin of the LAB frame. Let <m>\vec r</m> and <m>\vec r_\text{cm}</m> be position of a particle with respect to the origins of the LAB and CM frames respectively. Then, from traingle of vectors we will have
+				<men xml:id="eq-lab-cm-position-relation">
+					\vec r = \vec R + \vec r_\text{cm}.
+				</men>
+			</p>
+			<p>
+			</p>
+			<figure xml:id="fig-cm-lab-frames-pos-reln">
+				<caption>
+				</caption>
+				<image source="./images/momentum/cm-lab-frames-pos-reln.png" width="80%"/>
+			</figure>
+		</sidebyside>
+		
+		<p>
+			Here, <m>\vec r</m> and <m>\vec R</m> are in the LAB frame and <m>\vec r_\text{cm}</m> is in the CM frame. The quantities <m>\vec r</m> and <m>\vec r_\text{cm}</m> are positions of the same point particle with respect to the LAB and CM frames respectively and <m>\vec R</m> is the position of the CM in the LAB frame. 
+			Now, by taking a time derivative we immediately get the relation among velocities.
+			<men xml:id="eq-lab-cm-velocity-relation">
+				\vec v = \vec V + \vec v_\text{cm}.
+			</men>
+			Another derivative gives us relation among the accelerations.
+			<men xml:id="eq-lab-cm-acceleration-relation">
+				\vec a = \vec A + \vec a_\text{cm}.
+			</men>	
+			Once again, in these relations <m>\vec R</m>, <m>\vec V</m>, and <m>\vec A</m> are the position, velocity, and acceleration of the CM as observed in the LAB frame; they are, of course, all zero in the CM frame since origin of the CM frame moves with the CM itself.				
+		</p>
+	</subsection>
+	<subsection><title> Velocities in CM and LAB Frame of Two Bodies</title>
+ 
+		<p>
+			Let <m>m_A</m> and <m>m_B</m> be the masses of two bodies A and B with velocities  <m>\vec v_{A,\text{cm}}</m>  and <m>\vec v_{B,\text{cm}}</m> in the CM frame and  <m>\vec v_{A,\text{LAB}}</m>  and <m>\vec v_{B,\text{LAB}}</m> in the LAB-frame.  
+			In the LAB frame, we can easily see that the velocity of CM itself with respect to the LAB frame, to be denoted as <m>\vec V</m>, will be
+			<me>
+				\vec V  = \frac{ m_A\vec v_{A,\text{LAB}} +  m_B\vec v_{B,\text{LAB}}  }{m_A +  m_B}
+			</me>
+			Now, we can use Eq. <xref ref="eq-lab-cm-velocity-relation"/>, to write the relation between LAB and CM velocities of the two bodies.
+
+			<mdn>
+				<mrow>\amp \vec v_{A,\text{LAB}} = \vec V  + \vec v_{A,\text{cm}}, </mrow>
+				<mrow> \amp \vec v_{B,\text{LAB}} = \vec V  + \vec v_{B,\text{cm}}.</mrow>
+			</mdn>
+ 
+
+
+		</p>
+
+	</subsection>
+
+	<subsection><title> Collision in CM Frame</title>
+	<idx><h>Center of Mass Frame</h><h>Collisions</h></idx>
+	<idx><h>Collisions</h><h>in CM Frame</h></idx>
+		<p>
+			Above in <xref ref="fig-cm-frame-collision-before-collision"/> we found that in the CM frame, both particles appraoch the CM with equal magnitude momentum and after collision move away with some other magnitude momentum, again both with equal magnitude. 
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				In two or more dimensions, the directions of the menenta of the two bodies are still along the same line, but the line of the motions of the two bodies may be different than the line they approached the CM before the collision. That is, there is a rotation of the direction of motion in the collision process as shown in <xref ref="fig-cm-2d-collision-rotation-of-direction"/>. Still the outgoing directions and incoming directions fall into one Cartesian plane!
+			</p>
+			<p></p>
+			<figure xml:id="fig-cm-2d-collision-rotation-of-direction">
+				<caption>
+				</caption>
+				<image source="./images/momentum/cm-2d-collision-rotation-of-direction.png" width="80%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			In <xref ref="fig-cm-2d-collision-rotation-of-direction"/>, we will have the following relation for the conservation of momentum in the collision process, noting that net momentum in CM frame is zero. 
+			<me>
+				m_A \vec v'_{A,\text{cm}} + m_B \vec v'_{B,\text{cm}}  = m_A \vec v_{A,\text{cm}} + m_B \vec v_{B,\text{cm}} = 0. 
+			</me>
+			The angle of rotation of direction can be obtained from looking at the ratio of <m>x</m> and <m>y</m> components of  <m>\vec v'_{A,\text{cm}}</m> or <m>\vec v'_{B,\text{cm}}</m>.
+			<me>
+				\tan\,\theta = \frac{v'_{B,\text{cm},y}}{v'_{B,\text{cm},x}}.
+			</me> 
+		</p>
+
+
+	</subsection>
+
+	<example xml:id="ex-Scattering-of-Alpha-Particles-from-Gold-Nucleus"><title>Scattering of Alpha Particles from Gold Nucleus</title>
+
+		<statement>
+			<p>
+				Alpha particles of mass <m>4 \text{AMU}</m> are incident on gold nucleus of mass <m>197\text{ AMU}</m>.  Before the collision, alpha particle is moving with a speed of <m>2\times10^5\ \text{m/s}</m> in the LAB-frame.  After the collision, the alpha particle  comes out with a speed of <m>1.5\times10^5\ \text{m/s}</m> at an angle of <m>10^{\circ}</m> from the original direction in the LAB frame.  Find the angle between the incoming and outgoing directions in the CM-frame. AMU is atomic mass unit with value <m>(1\ \text{AMU} = 1.66053\times10^{-27} \text{ kg})</m>.
+			</p>
+		</statement>
+		<!-- <hint><p>
+			First use conservation of momentum in LAB frame.
+		</p></hint> -->
+		<answer><p>
+			<m>10^\circ</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Let us orient axes of the LAB and CM frames so that their axes are parallel, and initially the motion is along the <m>x</m>-axis as in <xref ref="fig-cm-2d-collision-rotation-of-direction"/>.  The velocity of the origin of the CM-frame with respect to the LAB-frame will be towards positive <m>x</m>-axis. Only <m>V_x</m> will be non-zero.
+				<me>
+					V_{x}    = \frac{4 \times 2 \times 10^5 + 0}{4+197} = 4,000 \text{m/s}.
+				</me>
+				Let <m>v_x</m> and <m>v_y</m> denote the velocity (in LAB frame) of gold nucleus after collision.  Conservation of momentum in LAB frame gives
+				<md>
+					<mrow> 4\times 1.5\times10^5\, \cos(10^\circ) + 197\times v_x = 4\times 2 \times 10^5.</mrow>
+					<mrow> 4\times 1.5\times10^5\, \sin(10^\circ) +197\times v_y =  0.</mrow>
+				</md>
+				Therefore,
+				<me>
+					v_x = 1,061.5,\ \ v_y = -529.
+				</me>
+				Now, we can compute velocities of alpha particle and gold nucleus in CM frame by subtracting the velocity of CM from these numbers.
+				<md>
+					<mrow>\amp\text{Gold nucleus: } v_{x,\text{cm}} = 1,061.5-4,000 = -2938.5,\ \ v_{y,\text{cm}} = -529</mrow>
+					<mrow>\amp\text{alpha: } v_{x,\text{cm}} = 147,721-4,000 = 143,721,\ \ v_{y,\text{cm}} = 26,047.</mrow>
+
+				</md>
+				Therefore, angle between incoming and outgoing directions is
+				<me>
+					\tan^{-1}\frac{-529}{2938.5} = 10^\circ,\text{ counterclockwise from }-x\text{-axis}.
+				</me>
+				or,
+				<me>
+					\tan^{-1}\frac{26,047}{143,721} = 10^\circ,\text{ counterclockwise from +}x\text{-axis}.
+				</me>
+
+			</p>
+		</solution>
+	</example>
+
+
+</section>

@@ -1,0 +1,282 @@
+<section xml:id="Poiseuillis-Law"><title> Poiseuilli's Law </title>
+	<introduction>
+		<p>
+			The French physician Jean Poiseuille studies the flow of fluids through uniform pipes experimentally and publised his results in 1840's. The results were theoretically derived by George Stokes in 1845 which made the conditions under which the law is applicable. We will present the derivation in the Calculus subsection below. We list here the conditions for the applicability of Poiseuilli's Law before we state the law.
+		</p>
+		<p>
+			<ol>
+				<li> Fluid is incompressible,</li>
+				<li> Fluid is Newtonian, meaning, the shear stress is linearly related to shear strain,</li>
+				<li> The length of the tube is much longer than its radius, </li>
+				<li> Fluid is not accelerating, and </li>
+				<li> Effects of gravity on flow are ignored.</li>
+			</ol>
+		</p>
+
+		<p>
+			The law states that the volume flow rate of the fluid flow <m> Q </m> or <m> \Delta V/\Delta t</m> in a tube of uniform circular cross-section is directly proportional to the pressure differnece <m> \Delta p</m> across the tube and viscous resistance to the flow  <m> \mathcal{R}</m>.
+			<men xml:id="eq-poiseuillis-law-1">
+				Q\equiv \dfrac{\Delta V}{\Delta t} = \dfrac{\Delta p}{\mathcal{R}}.
+			</men>
+			Poiseuille found by experiments that the resistance <m> \mathcal{R}</m> is directly proportional to the length <m> L </m> of the tube and inversely proportional to fourth power of the radius <m> R</m> of the tube as long as <m> R \lt\lt L</m>. Furthermore, the resistance <m> mathcal{R} </m> is also proportional to the viscosity <m> \eta</m>. 
+			<men>
+				\mathcal{R} =\dfrac{8}{\pi} \frac{\eta L}{R^4}.
+			</men>
+			The surprising part of this resistance is the fourth power dependence on the viscous flow resistance. Putting <m> \mathcal{R} </m> in Eq. <xref ref="eq-poiseuillis-law-1"/> we get the following expression of Poiseuille's law for the pressure drop expected from the higher pressure end of the tube to the lower pressure end.
+			<men xml:id="eq-poiseuillis-law-dp">
+				\Delta p = \mathcal{R}Q = \dfrac{8}{\pi} \frac{\eta Q L}{R^4}.
+			</men>
+		</p>
+		<p>
+			Note the very strong dependence of the resistance on the radius of the pipe; if the radius is halved, then the resitance becomes four times, which means you would need four times as much pressure difference to maintain the same volume flow rate, or if your pressure difference is maintained at the same level, then the flow rate will drop to quarter of its value. 
+		</p>
+		<p>
+			The Poiseuille's law is useful in the study of flow of blood in the body and other engineering applications.
+		</p>
+
+	</introduction>
+
+
+	<exercise xml:id="ex-Determining-Diameter-of-Vein-from-Pressure-Difference-and-Length-of-Vein"><title> Determining Diameter of Vein from Pressure Difference and Length of Vein </title>
+		<statement>
+			<p>
+				One liter of blood flows per day through a narrow vein of length <m>5\text{ cm}</m> which has a pressure difference of <m>0.5\text{ atm}</m> across its length.  What is the diameter of the vein? 
+			</p>
+			<p>
+				Data: <m>\eta_\text{blood} = 2.7\text{ cP}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Use Poiseuille's law. Also, make sure you convert everything in the same system of units. </p> </hint>
+		<answer> <p> <m>224\, \mu\text{m}</m>  </p> </answer>
+		<solution> 
+			<p>
+				The Poiseuille's law says that
+				<me>
+					Q = \frac{\pi R^4}{8\eta L} \Delta p.
+				</me>
+				Therefore,
+				<me>
+					R = \left( \frac{8\eta L}{\pi \Delta p}\  Q\right )^{1/4}.
+				</me>
+				In this problem, various given quantities should be first converted into the same system of units. We will convert them into standard SI system.
+				<md>
+					<mrow> \amp Q = 1 \frac{\text{L}}{\text{Day}} = \frac{10^{-3}\ \text{m}^3}{24\times 3600\ \text{s}} =  0.01157 \ \text{m}^3\text{s}</mrow>
+					<mrow> \amp \Delta p = 0.5\ \text{atm} = 2.53\times 10^{4}\ \text{Pa} </mrow>
+					<mrow> \amp L = 0.05\ \text{m} </mrow>
+					<mrow> \amp \eta = 2.7\ \text{cP} = 2.7\times 10^{-3}\ \text{Pa.s} </mrow>
+				</md>
+				Therefore, <m> R = 112\, \mu\text{m}</m>.  The diameter of the vein would be <m>224\, \mu\text{m}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Pressure-Drop-in-the-Needle-of-an-IV-System"><title> Pressure Drop in the Needle of an IV System </title>
+		<statement>
+			<p>
+				An intravenous (IV) system is supplying saline solution to a patient at the rate of <m> 750\text{ mL}</m> in <m>180\text{ minutes}</m> using a needle of inner radius <m>0.15\text{ mm}</m> and length <m>2.54\text{ cm}</m>. The pressure in the vein into which saline from the needle tip will enter is <m> 1\text {atm} + 10\text{mm Hg}</m>. Suppose the viscosity of saline solution is <m>1.002\text{ cP}</m>.
+			</p>
+			<p>
+				(a) What is the flow rate in <m> \text{m}^3\text{/sec}</m>?
+			</p>
+			<p>
+				(b) What is the pressure at the back part of the needle in units of <m> \text{mm Hg} </m>?
+			</p>
+			<p>
+				(c) What will be the pressure needed at the back part of the needle in units of <m>\text{ mm Hg}</m> for the same flow rate if a thicker needle of radius <m> 0.1475\text{ mm}</m> is used?
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use <m>V/\Delta t</m>. (b) Use Poiseuille's law. (c) Use rescaling argument rather than a detailed calculation. </p> </hint>
+		<answer> <p> (a) <m> 6.94\times 10^{-8}\text{ m}^3\text{/s} </m>, (b) <m>836\text{ mm Hg} </m>,  (c) <m>894\text{ mm Hg} </m>. </p> </answer>
+		<solution> <title> (a) </title>
+			<me>
+				\dfrac{ 750\text{ mL} }{ 180\text{ minutes} } = \dfrac{ 750\times 10^{-6} }{ 180 \times 60} = 6.94\times 10^{-8}\text{ m}^3\text{/s}.
+			</me>
+		</solution>
+		<solution> <title> (b) </title>
+			<p> We convert units to SI, and then to <m> \text{mm Hg}</m> from <m>\text{Pa}</m>.
+			</p>
+			<p>
+				<md>
+					<mrow>\amp R = 0.15\text{ mm}= 1.5\times 10^{-4} \text{ m}, </mrow>
+					<mrow>\amp L = 2.54\text{ cm}= 2.54\times 10^{-2} \text{ m}, </mrow>
+					<mrow>\amp p_{\text{vein}} = 1\text {atm} + 10\text{mm Hg} =  1.026 \times 10^{5}\text{ Pa}, </mrow>
+					<mrow> \amp \eta = 1.002\text{ cP} =  1.002 \times 10^{-3}\text{ Pa.s}, </mrow>
+				</md>
+			</p> 
+			<p>
+				Therefore,
+				<md> 
+					<mrow> \Delta p \amp = \dfrac{8}{\pi} \frac{\eta L}{R^4} </mrow>
+					<mrow> \amp = \dfrac{8}{\pi} \frac{1.002 \times 10^{-3} \times 2.54\times 10^{-2}}{  (1.5\times 10^{-4})^4} </mrow>
+					<mrow> \amp = 8885\text{ Pa}</mrow>
+				</md>
+				This gives pressure at the back end of the needle
+				<me>
+					p_{\text{high}} = p_{\text{vein}} + \Delta p = 1.026 \times 10^{5}  + 8885  = 111485\text{ Pa}.
+				</me>
+				We convert this to <m> \text{mm Hg}</m>.
+				<me>
+					111485\text{ Pa} = 111485\times \dfrac{760}{1.013\times 10^{5}} = 836\text{ mm Hg}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title> (c) </title>
+			<p>
+				We do not need to do a fresh calculation since we have same <m> Q</m>, <m> L</m>, and <m>\eta </m>. We just rescale <m> \Delta p</m>.
+				<me>
+					\Delta p = 836\text{ mm Hg} \times 
+					\left( \dfrac{0.15\text{ mm}}{0.1475\text{ mm} }\right)^4 = 894\text{ mm Hg}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-A-Medical-Application-of-Poiseuillis-Law-in-Quantifying-Blood-Flow-Blockage"><title> A Medical Application of Poiseuilli's Law in Quantifying Blood Flow Blockage </title>
+		<statement>
+			<p>
+				A blood clot in an artery essentially decreases the radius of the artery. Suppose a blood clot in a artery has reduced the blood flow to 85% of its normal flow rate and the pressure differece increased to 120% of the normal. Without much calculation, find the ratio of the current radius to the original.
+			</p>
+
+		</statement>
+		<hint> <p>  Divide formulas for one situaion by another and cancel out the common factors. </p> </hint>
+		<answer> <p> 90%  </p> </answer>
+		<solution> 
+			<p>
+				Lets use subscripts  1 for normal and 2 for clotted situaiton.
+				From the pressure difference ratio and the flow rate ratio, we get the ratio of resitances in the two situations as
+				<me>
+					\dfrac{\mathcal{R}_2}{\mathcal{R}_1} = 1.20 \times \dfrac{1}{0.8} = 1.5.
+				</me>
+				Now only thing different in resistance formulas are the radii. Therefore,
+				<me>
+					\left( \dfrac{R_1}{R_2} \right)^4 = 1.5,
+				</me>
+				which gives
+				<me>
+					\dfrac{R_2}{R_1} = 1.5^{-1/4} = 0.90.
+				</me>
+				That is, the new radius is 90% of the original.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<subsection xml:id="sec-Velocity-Profile-in-a-Flow-Through-a-Cylidrical-Pipe"><title> (Calculus) Velocity Profile in a Flow Through a Cylidrical Pipe </title>
+		<p>
+			Consider a viscous fluid flow at constant velocity through a straight cylindrical pipe of radius <m> R </m> placed horizontally.  Let there be a difference of pressure <m> \Delta p </m> maintained across its ends separated by a distance <m>L</m>.  
+		</p>
+		<p>
+			We assume that the velocity is such that we can assume a laminar flow. The layers will be in the shape of concentric cylindrical shells with the fluid at the center moving fastest while the fluid next to the non-moving wall is at rest. We would like to find the velocity profile, i.e., velocity as a function of the distance from the center.
+		</p>
+
+		<sidebyside widths="50% 50%">
+			<p>
+				Let us look at the fluid in a cylindrical shell of inner radius <m> r </m> and outer radius <m> r+\Delta r </m> about the central axis.  The cylindrical shell is taken to be thin enough that we can assume the fluid in the shell to move with the same velocity <m> v_z</m>.  
+			</p>
+			<image source="./images/dynamic-fluid/Poiseuille-velocity-profile-derivation.png" width="50%"/>
+		</sidebyside>
+
+
+		
+		<p>
+			The fluid just outside the shell moves at a lower velocity and therefore has a retarding effect on the cylindrical shell under consideration, while the fluid just inside moves at a higher velocity, and therefore tends to accelerate the fluid in the shell. Their difference is balanced by the force due to the pressure  difference <m> \Delta p =p_1 -p_2 </m> of the pressures  at the two ends.
+		</p>
+		<p>
+			Let the flow be in the direction of positive <m> z </m> axis and the cross-section in the <m>xy</m>-plane. Thne, we have the following force balance equation on the shell.
+		
+			<men xml:id="eq-velocity-flow-profile-force-balance-equation-1">
+				\Delta p \times 2\pi r \Delta r = F_z \left( r+\Delta r \right)- F_z \left( r \right),
+			</men>
+			where <m> F_z</m>'s are the viscous forces.
+			<md>
+				<mrow>\amp F_z (r) = 2\pi  \eta L r\frac{dv_z}{dr},  </mrow>
+				<mrow>\amp F_z (r + \Delta r) =2\pi \eta L \left[ r\frac{dv_z}{dr}\right]_{r+\Delta r} </mrow>
+			</md>
+			Their difference gives
+			<md>
+				<mrow> \amp \dfrac{1}{2\pi \eta L} \dfrac{F_z \left( r+\Delta r \right)- F_z \left( r \right)}{\Delta r} =  -\frac{d}{dr} \left( r \frac{dv_z}{dr} \right), </mrow>
+			</md>
+			where last step is after taking the <m> \Delta r\rightarrow 0</m>. Using this in Eq. <xref ref="eq-velocity-flow-profile-force-balance-equation-1"/>, we get
+			<men xml:id="eq-velocity-flow-profile-force-balance-equation-2">
+				\dfrac{1}{r}\dfrac{d}{dr} \left( r \frac{dv_z}{dr} \right) =  - \dfrac{1}{\eta L}\, \Delta p.
+			</men>
+		</p>
+		<p>
+			We need to solve this differential equation in order to find the <m> v_z</m>  as a function of distance <m>r</m> from the center.  Let us try a polynomial function for <m> v_z</m> as a trial solution.
+			<me>
+				\text{Try: }\ \ \ v_z(r) = ar^2 + br + c.
+			</me>
+			If we find <m>a</m>, <m> b</m>,  and <m> c</m> then we have the desired answer.  Now, since <m> v_z(r)</m> is a maximum for <m> r=</m>, the coefficient of <m> r^1</m> must be zero as can be seen by applying elementary result of Calculus: at a maximum or minimum the derivative is zero.
+			<me>
+				\left.\frac{dv_z}{dr} \right|_{r=0}\ \ \Longrightarrow\ \ \left.(2ar+b)\right |_{r=0} = 0\ \ \Longrightarrow\ \ b=0.
+			</me>
+			Furthermore, at the wall of the pipe, i.e. when <m> r = R</m>, the velocity of flow is zero.
+			<me>
+				v_z(R) = aR^2 + c = 0\ \ \Longrightarrow c = -aR^2.
+			</me>
+			Hence, the velocity has a quadratic profile with a maximum at <m> r=0</m> and zero at <m> r=R</m> as shown in <xref ref="fig-Poiseuilles-velocity-profile"/>  
+			<men xml:is="eq-Poiseuilles-velocity-profile">
+				v_z(r) = a\left( r^2 -R^2 \right);.
+			</men>	
+			where <m>a</m> can be fixed by plugging this in Eq. <xref ref="eq-velocity-flow-profile-force-balance-equation-2"/> and solving for <m> a</m>.
+			<me>
+				a = -\dfrac{\dfrac{1}{\eta L}\, \Delta p}{4}.
+			</me>
+
+
+
+		</p>
+		<figure xml:id="fig-Poiseuilles-velocity-profile">
+			<caption>
+				Velocity profile of flow in a cylinder between the center, <m> r = 0 </m> and the edge at <m> r = R</m>.
+			</caption>
+			<image source="./images/dynamic-fluid/Poiseuille-velocity-profile.png" width="50%"/>
+		</figure>
+ 
+	</subsection>
+
+	<subsection> <title> (Calculus) Derivation of Poiseuilli's Law </title>
+		<p>
+			From the velocity profile in <xref ref="sec-Velocity-Profile-in-a-Flow-Through-a-Cylidrical-Pipe"/>, we can compute the flow rate through a shell between <m> r </m> and <m> r+dr</m> as
+			<me>
+				dq(r) = A v = (2\pi r dr)\ a\left( r^2 -R^2 \right), 
+			</me>
+			where <m> a = -\dfrac{\Delta p}{4\eta L}</m>. 
+			Integrating this from <m> r= 0</m> to <m> r = R </m> gives the volume flow rate through the entire cross-section of the pipe.
+			<me>
+				Q = 2\pi a \int_0^R \left(r^3 - R^2\,r \right)\ dr,
+			</me>
+			which simplifies to the Poiseuilli's Law.
+			<me>
+				Q = \dfrac{\pi R^4}{8\eta L}\, \Delta p.
+			</me>
+
+
+		</p>
+
+
+
+	</subsection>
+
+
+
+
+
+  
+</section>

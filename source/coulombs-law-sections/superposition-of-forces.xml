@@ -1,0 +1,318 @@
+<section xml:id="Superposition-of-Forces"><title> Superposition of Forces </title>
+	<introduction>
+		<p>
+			The Coulomb's law gives the electric force between two charges.  What happens if you have more than two charges?  
+		</p>
+		<sidebyside widths="70% 30%">
+			<p>
+				Experiments show that the force between any two charges is independent of the presence of any other charges.  This means that,  the force on a charge <m>q_1</m> by two charges <m>q_2</m> and <m>q_3</m> will just be the vector sum of  the forces by <m>q_2</m> and <m>q_3</m> given by Coulomb's law for each.  This property of the electric force is called the <term> Superposition Principle</term> of Coulomb force.
+			</p> 
+			<image source="./images/coulombs-law/coulomb-force-superposition.png" width="30%"/> 
+		</sidebyside>
+		<p>
+		<mdn>
+			<mrow number="no"> \vec F_\text{on 1} \amp = \vec F_\text{on 1}^\text{by 2}  + \vec F_\text{on 1}^\text{by 3}, </mrow>
+			<mrow> \amp =  \dfrac{1}{4\pi\epsilon_0} \dfrac{q_1 q_2}{r_{12}^2} \hat u_{21} + \dfrac{1}{4\pi\epsilon_0} \dfrac{q_1 q_3}{r_{13}^2} \hat u_{31}.</mrow>
+		</mdn>
+		where <m>\hat u_{21}</m> is a unit vector in the direction from 2 to 1 and <m>\hat u_{21}</m> is a unit vector in the direction from 3 to 1.
+
+		</p>
+		<p>
+			Alternately, you can work with the components of forces and add them separately to get the components of the force on <m>q_1</m>.
+			<mdn>
+				<mrow> F_\text{on 1,x} \amp =  F_\text{on 1,x}^\text{by 2}  + F_\text{on 1,x}^\text{by 3}, </mrow>
+				<mrow> F_\text{on 1,y} \amp =  F_\text{on 1,y}^\text{by 2}  + F_\text{on 1,y}^\text{by 3}, </mrow>
+				<mrow> F_\text{on 1,z} \amp =  F_\text{on 1,z}^\text{by 2}  + F_\text{on 1,z}^\text{by 3}. </mrow>
+			</mdn>
+			You can then find the magnitude and direction of the force on <m>q_1</m> from these components.
+		</p>		
+	</introduction>
+
+
+
+
+	<exercise xml:id="ex-Net-Coulomb-Force-on-a-Charge-by-Two-Other-Charges-on-Cartesian-Axes"><title>  Net Coulomb Force on a Charge by Two Other Charges on Cartesian Axes </title>
+		<statement>
+			<p>
+				Find the force on the charge at the origin in the following system containing three charges.
+			</p>
+			<image  source="./images/coulombs-law/coulomb-force-superposition-exercise-simple.png" width="60%"/>
+			
+		</statement>
+		<hint> <p> Add two forces vectorially  </p> </hint>
+		<answer> <p>  <m>7.5\times 10^9\text{ N}</m>, <m> 36.9^\circ</m>. </p> </answer>
+		<solution> 
+			<p>
+				Let's refer to the charge at the origin by subscript 1, the one on the <m>x</m> axis by 2, and the one on the <m>y</m> axis by 3. We need to vectorially sum the two forces <m>F_2</m> and <m>F_3</m> on the charge at the origin to get the magnitude and direction of the Coulomb force on charge 1.
+			</p>
+			<image  source="./images/coulombs-law/coulomb-force-superposition-exercise-simple-solution.png" width="60%"/>
+			<p>
+				First we will work out the magnitudes of the two forces, and then, deduce their Cartesian components, which we will use to find the sum of the vectors. The magnitudes of the two forces are 
+				<md>
+					<mrow> F_2 \amp = k\dfrac{q_1 q2}{r_{12}^2} </mrow>
+					<mrow> \amp = 9\times 10^{9} \times \dfrac{2\times  3}{3^2} = 6\times 10^{9}\text{ N},</mrow>
+					<mrow> F_3 \amp = k\dfrac{q_1 q3}{r_{13}^2} </mrow>
+					<mrow> \amp = 9\times 10^{9} \times \dfrac{2\times  4}{4^2} = 4.5\times 10^{9}\text{ N}.</mrow>
+				</md>
+				To add these forces, we can't just add the magnitudes. Since they are in perpendicular directions, Pythagora's theorem will give us an easy way to get the magnitude. Let <m>F</m> denote the magnitude of the net force. We can notice that its <m>x</m> and <m>y</m> components are simply 
+				<md>
+					<mrow> F_x = F_{2x}+F_{3x} = 6\times 10^{9}\text{ N}+0,</mrow>
+					<mrow> F_y = F_{2y}+F_{3y} = 0+4.5\times 10^{9}\text{ N}.</mrow>
+				</md>
+				Therefore, the magnitude will be
+				<me>
+					F = \sqrt{ F_x^2 + F_y^2 } = \sqrt{ 6^2 + 4.5^2 }\times 10^9 = 7.5\times 10^9\text{ N}.
+				</me>
+				and the direction can be given by the counterclockwise angle from the positive <m>x</m> axis since point <m>(6,\ 4.5)</m> is in the first quadrant.
+				<me>
+					\theta = \tan^{-1} \left( \dfrac{4.5}{6} \right) = 36.9^\circ.
+				</me>
+
+
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Net-Coulomb-Force-on-a-Charge-by-Two-Other-Charges-in-a-Plane"><title> Net Coulomb Force on a Charge by Two Other Charges in a Plane </title>
+		<statement>
+			<p>
+				Consider three charges <m>+2\ \mu\text{C}</m>, <m>-3\ \mu\text{C}</m>, and <m>+4\ \mu\text{C}</m> held in the <m>xy</m>-plane at <m>(0,0)</m>, <m>(3\ \text{cm}, 1\ \text{cm})</m>, and <m>(-2\ \text{cm}, 4\ \text{cm})</m> respectively. Find the magnitude and direction of the net Coulomb force on the <m>+2\ \mu\text{C}</m> charge. 
+			</p>
+			<image  source="./images/coulombs-law/coulomb-force-superposition-exercise.png" width="60%"/>
+
+
+
+		</statement>
+		<hint> <p>  Work with components of the two forces. </p> </hint>
+		<answer> <p>  <m>69\text{ N}</m>, <m> 12.7^\circ</m> clockwise from positive <m>x</m> axis. </p> </answer>
+		<solution> 
+			<p>
+				We will denote <m>+2\ \mu\text{C}</m>, <m>-3\ \mu\text{C}</m>, and <m>+4\ \mu\text{C}</m> charges by subscripts 1, 2, and 3 respectively.
+			</p>
+			<p>
+				First we should work out the direct distances we need for Coulomb's law.
+				<md>
+					<mrow> r_{12} \amp = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 } </mrow>
+					<mrow>   \amp = \sqrt{(3-0)^2 + (1-0)^2 } = \sqrt{10}\text{ cm}. </mrow>
+					<mrow> r_{13} \amp = \sqrt{(x_3-x_1)^2 + (y_3-y_1)^2 } </mrow>
+					<mrow>   \amp = \sqrt{(-2-0)^2 + (4-0)^2 } = \sqrt{20}\text{ cm}. </mrow>
+				</md>
+
+				<image  source="./images/coulombs-law/coulomb-force-superposition-exercise-solution.png" width="60%"/>
+
+
+				Let <m>F_2</m> and <m>F_3</m> be the magnitudes of the Coulomb forces on <m>q_1</m> by the two other charges respectively. The numerical values of these magnitudes are
+				<md>
+					<mrow> F_2 \amp = k\dfrac{q_1 q2}{r_{12}^2}</mrow>
+					<mrow> \amp = \left[ 9\times 10^9 \times \dfrac{2 \times 4}{(\sqrt{10})^2} \right]\times \left( 10^{-6}/10^{-2} \right)^2\text{ N},</mrow>
+					<mrow> \amp =  54\text{ N},</mrow>
+				</md>
+				<md>
+					<mrow> F_3 \amp = k\dfrac{q_1 q3}{r_{13}^2}</mrow>
+					<mrow> \amp = \left[ 9\times 10^9 \times \dfrac{2 \times 4}{
+						(\sqrt{20})^2} \right]\times \left( 10^{-6}/10^{-2} \right)^2\text{ N},</mrow>
+					<mrow> \amp =  36\text{ N},</mrow>
+				</md>
+				Sice their directions are not along the same line, we will use <m>x</m> and <m>y</m>  components to find their vector sum.
+				<md>
+					<mrow> F_{2x} \amp = F_2\, \dfrac{x_1-x_2}{r_{12}}\times (\text{ sign of }q_1) \times (\text{ sign of }q_2)</mrow>
+					<mrow> \amp = 54\text{ N} \times  \dfrac{0-3}{\sqrt{10}} \times (+)\times(-) = +51.23\text{ N}. </mrow>
+					<mrow> F_{2y} \amp = F_2\, \dfrac{y_1-y_2}{r_{12}}\times (\text{ sign of }q_1) \times (\text{ sign of }q_2)</mrow>
+					<mrow> \amp = 54\text{ N} \times  \dfrac{0-1}{\sqrt{10}} \times (+)\times(-) = +17.08\text{ N}. </mrow>
+				</md>
+				Similarly,
+				<md>
+					<mrow> F_{3x} \amp = F_3\, \dfrac{x_1-x_3}{r_{13}}\times (\text{ sign of }q_1) \times (\text{ sign of }q_3)</mrow>
+					<mrow> \amp = 36\text{ N} \times  \dfrac{0 + 2}{\sqrt{20}} \times (+)\times(+) = +16.1\text{ N}. </mrow>
+					<mrow> F_{3y} \amp = F_3\, \dfrac{y_1 - y_3}{r_{13}}\times (\text{ sign of }q_1) \times (\text{ sign of }q_3)</mrow>
+					<mrow> \amp = 36\text{ N} \times  \dfrac{0-4}{\sqrt{20}} \times (+)\times(+) = -32.2\text{ N}. </mrow>
+				</md>
+				Therefore, the net force <m>F</m> on <m>q_1</m> will have the components
+				<md>
+					<mrow>F_x = F_{2x} + F_{3x} = 51.23\text{ N} + 16.1\text{ N} = 67.33\text{ N}, </mrow>
+					<mrow>F_y = F_{2y} + F_{3y} = 17.08\text{ N} - 32.2\text{ N} = -15.12\text{ N}, </mrow>
+				</md>
+				Thus, the magnitude of this force is
+				<me>
+					F = \sqrt{ F_x^2 + F_y^2 } = \sqrt{67.33^2 + 15.12^2} =  69\text{ N},
+				</me>
+				and the direction will be given by the clockwise angle from the positive <m>x</m> axis since the point <m>(67.33,\ -15.12)</m> is in the fourth quadrant.
+				<me>
+					\theta = \tan^{-1}\left(-15.12/(67.33) \right) = - 12.7^\circ.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>	
+
+	<exercise xml:id="ex-Force-on-a-Charge-By-Two-Other-Charges-When-Placed-at-Various-Locations"><title> Force on a Charge By Two Other Charges When Placed at Various Locations </title>
+		<statement>
+			<p>
+				Two charges <m>+3\ \mu\text{C}</m> and <m>+12\ \mu\text{C}</m>  are fixed one meter apart.  Find the magnitude and direction of the net force on a <m>-2 \text{ nC}</m>  charge when it is placed at the following locations: 
+
+				<ol label="(a)">
+					<li> half-way between the two,</li>
+					<li> half a meter to the left of <m>+3\ \mu\text{C}</m> while the other charge is to the right, </li>
+					<li> half a meter above the <m>+12\ \mu\text{C}</m> charge in a direction perpendicular to the line joining the two fixed charges. </li>
+				</ol>
+ 
+			</p>
+
+		</statement>
+		<hint> <p>  Use vector nature of force when working out the superposition. </p> </hint>
+		<answer> <p>(a) magnitude <m>6.5\times 10^{-4}</m> N pointed towards the <m>\ +12\ \mu</m>C charge, (b)  <m> 3.1 \times 10^{-4}\ \textrm{N}</m>, 
+		(c)  <m>  8.84\times 10^{-4}\ \textrm{N}</m>, counterclockwise angle <m>87^\circ</m> from negative <m>x</m> axis.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) 
+				The forces on the charge <m>q = -2</m> nC are the attractive forces from the two charges <m>q_1 = +3\ \mu</m>C and <m>q_2 = +12\ \mu</m>C.
+			</p>
+
+			<image source="./images/coulombs-law/ex-force-by-two-cahrges-part-a.png" width="80%"/>
+
+			<p>
+				Let <m>r_1</m> and <m>r_2</m> be the distances between <m>q</m> and <m>q_1</m> and <m>q_2</m> respectively.  Let <m>\vec F_1</m> and <m>\vec F_2</m> be the forces on <m>q</m> by the two charges.  If the <m>x</m>-axis is pointed in the direction from <m>q_1</m> to <m>q_2</m> then the <m>x</m>-component of the net force will be
+				<me>
+					F_x = F_{1x} + F_{2x} = -k\frac{|q_1| |q|}{r_1^2} + k\frac{|q_2| |q|}{r_2^2}. 
+				</me>
+				The algebra is simplified when we recognize that <m>q_2 = 4q_1</m> and <m>r_1 = r_2</m>.
+				<me>
+					F_x =  k\frac{3|q_1| |q|}{r_1^2}.
+				</me>
+				Therefore,
+				<md>
+					<mrow> F_x \amp = 9\times 10^9 \ \textrm{N.m}^2/\textrm{C}^2 \times \frac{3\times 3\times 10^{-6}\ \textrm{C} \times 2\times 10^{-9}\ \textrm{C} }{(0.5\ \textrm{m})^2}</mrow> 
+					<mrow> \amp = 6.5\times 10^{-4} N.</mrow>
+				</md>
+				Therefore, the force on the charge <m>q</m> has the magnitude <m>6.5\times 10^{-4}</m> N pointed towards the <m>\ +12\ \mu</m>C charge.
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b) In this part the charge <m>-2</m> nC is placed to the left of <m>+3\ \mu</m>C.
+			
+			</p>
+
+				<image source="./images/coulombs-law/ex-force-by-two-cahrges-part-b.png" width="80%"/>				
+			<p>
+				Again taking the positive <m>x</m>-axis pointed to the right we obtain
+				<me>
+					F_x = F_{1x} + F_{2x} = k\frac{|q_1| |q|}{r_1^2} + k\frac{|q_2| |q|}{r_2^2}. 
+				</me>
+				Now, <m>r_2 = 3 r_1</m>.  Therefore,
+				<me>
+					F_x =  k\frac{|q_1| |q|}{r_1^2} \left( 1 + \frac{4}{9} \right) = 3.1 \times 10^{-4}\ \textrm{N}. 
+				</me>
+
+			</p>
+
+		</solution>
+
+		<solution> <title>(c)</title>
+			<p>
+				(c) Now, we have a two-dimensional situation since the forces act in a plane rather than one line. 
+
+				<image source="./images/coulombs-law/ex-force-by-two-cahrges-part-c.png" width="80%"/>	
+
+				To add forces analytically we choose a Cartesian coordinate system with the positive <m>x</m>-axis pointed to the right and the positive <m>y</m>-axis pointed up. The direct distance  <m>r_1</m> and <m>r_2</m> of the charge <m>q</m> from the charges <m>q_1</m> and <m>q_2</m> are
+				<me>
+					r_1 = \sqrt{1^2 + 0.5^2}\ \textrm{m} = 1.118\ \textrm{m},\ \ \textrm{and}\ \ r_2 = 0.5\ \textrm{m}.
+				</me>
+				Then the <m>x</m> and <m>y</m>-components of the net force will be
+				<md>
+					<mrow> \amp F_x =  -k\frac{|q_1| |q|}{r_1^2}\times \left( \frac{1\ \textrm{m}}{1.118\ \textrm{m}} \right)^2 = - 3.86\times 10^{-5} \ \textrm{N}.</mrow>
+					<mrow> \amp F_y =  -k\frac{|q_1| |q|}{r_1^2}\times \left( \frac{0.5\ \textrm{m}}{1.118\ \textrm{m}} \right)^2 -k\frac{|q_2| |q|}{r_2^2} = - 8.83\times 10^{-4} \ \textrm{N}. </mrow>
+				</md> 
+				Now, we can compute the magnitude and find the direction of the net force from the <m>x</m>- and <m>y</m>-components.
+				<md>
+					<mrow> \amp F  = \sqrt{F_x^2 + F_y^2} =   \sqrt{ 0.386^2 + 8.83^2 }\times 10^{-4} \ \textrm{N} = 8.84\times 10^{-4}\ \textrm{N}.</mrow>
+					<mrow> \amp \theta = \tan^{-1}\left(F_y/F_x \right) + 180^{\circ}\ \ [\textrm{since third quadrant}] = 267^{\circ}. </mrow>
+				</md>
+				The angle <m>\theta</m> is the counterclockwise angle with respect to the positive <m>x</m>-axis.  Note the adjustment of <m>180^{\circ}</m> for the direction in the third quadrant.
+			</p>
+		</solution>
+
+ 
+
+
+
+
+	</exercise>
+
+
+	<exercise xml:id="exercise-Five-Balanced-Charged-on-a-Square-Face"><title>Five Balanced Charges on a Square Face</title>
+
+		<statement>
+			<sidebyside widths="70% 30%">
+				<p>
+					Four identical charges of magnitude <m>q</m> are located at the corners of a square. The charges are not balanced in force. But if you place appropriate amount of charge <m>Q</m> of the opposite type at the center, you can make all five charges balanced. Find <m>Q</m> in terms of <m>q</m>.
+				</p>
+				<image source="./images/coulombs-law/exercise-Five-Balanced-Charged-on-a-Square-Face.png" width="80%"/>					
+			</sidebyside>
+		</statement>
+		<hint><p>It is sufficient to balance <m>x</m> component on one of the corners. For calculation, assume side of the square is <m>a</m>. </p></hint>
+		<answer><p><m>-\frac{1 + 2\sqrt{2}}{4} \: q \approx -0.957\:q</m>. </p></answer>
+		<solution>
+			<p>
+				From the symmetry, we see that we need to ensure balance of <m>x</m> force on one corner. 
+				Let side of the square be <m>a</m> . Working out <m>x</m>-component of forces on the charge at the top right corner we get the following condition. Note that <m>Q</m> is negative if we take <m>q</m> as positive.
+				<me>
+					k \frac{q^2}{a^2} + k \frac{q^2}{ (a\sqrt{2})^2 } \frac{1}{\sqrt{2}} + k \frac{q Q}{ ((a/2)\sqrt{2})^2 } \frac{1}{\sqrt{2}} = 0.
+				</me>
+				Canceling out common factors and solving for <m>Q</m>, we get
+				<me>
+					Q = - \frac{1 + 2\sqrt{2}}{4} \: q \approx - 0.957\:q.
+				</me>
+			</p>
+		</solution>
+	</exercise>	
+
+
+	<exercise xml:id="exercise-Seven-Balanced-Charges-on-a-Hexagon-Face"><title>Seven Balanced Charges on a Hexagon Face</title>
+
+		<statement>
+			<sidebyside widths="70% 30%">
+				<p>
+					Six identical charges of magnitude <m>q</m> are located at the corners of a regular hexagon. The charges are not balanced in force. But if you place appropriate amount of charge <m>Q</m> of the opposite type at the center, you can make all seven charges balanced. Find <m>Q</m> in terms of <m>q</m>.
+				</p>
+				<image source="./images/coulombs-law/exercise-Seven-Balanced-Charges-on-a-Hexagon-Face.png" width="80%"/>					
+			</sidebyside>
+		</statement>
+		<hint><p>It is sufficient to balance <m>x</m> component on one of the corners. </p></hint>
+		<answer><p><m>-\frac{45 + 4\sqrt{3}}{36} \: q \approx  -1.44\:q</m>. </p></answer>
+		<solution>
+			<p>
+				From the symmetry, we see that we need to ensure balance of <m>x</m> force on one corner. 
+				Let side of the hexagon be <m>a</m>. Working out <m>x</m>-component of forces on the charge at the diagonal top right corner we get the following condition. I went around the hexagon in counterclockwise and then the center and found the direct distance and the angle for <m>\cos</m> that will give the <m>x</m> component of the force. Note that <m>Q</m> is negative if we take <m>q</m> as positive.
+				<md>
+					<mrow> k \frac{q^2}{a^2} \cos 30^\circ + \amp  k \frac{q^2}{ 3 a^2 }  + k \frac{q^2}{  4 a^2 }  \cos 30^\circ + </mrow>
+					<mrow> \amp  k \frac{q^2}{  4 a^2 }  \cos 60^\circ + 0 + k \frac{q Q}{  a^2 }  \cos 30^\circ = 0. </mrow>
+				</md>
+				Canceling out common factors and solving for <m>Q</m>, we get
+				<me>
+					Q = -\frac{45 + 4\sqrt{3}}{36} \: -q \approx  1.44\:q.
+				</me>
+			</p>
+		</solution>
+	</exercise>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

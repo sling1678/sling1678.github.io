@@ -1,0 +1,251 @@
+<section xml:id="Mean-Free-Path"><title> Mean Free Path </title>
+	<introduction>
+		<p>
+			Unlike ideal gases the molecules of real gases interact with each other and collide which changes their momenta.  The average distance traveled by a molecule between collisions is called the mean free path.  To get a useful estimate of the <term> mean free path</term>, we model molecules as spheres of diameter <m>d</m>, and look at the collision cross-section between two molecules <m>A</m> and <m>B</m> as shown in <xref ref="fig-mean-free-path"/>, which is drawn in the rest frame of <m>B</m>.  Let <m>v_{rel}</m> be average relative speed between two molecules. 
+		</p>
+		<figure xml:id="fig-mean-free-path">
+			<caption> 
+				Collision of molecules <m>A</m> and <m>B</m> in the rest frame of <m>B</m>.  Molecules <m>A</m> and <m>B</m> will collide if they are within the circle of radius <m>D</m>, which is taken to be the diameter of one molecule.
+			</caption>
+			<image  source="./images/kinetic-theory/mean-free-path.png" width="80%"/>
+		</figure>
+		<p>
+			Molecule A will collide with molecule B if latter's center is within a distance <m>D</m> of the center of the molecule <m>A</m> as shown in Fig. \ref{fig:mean-free-path}.  Therefore the cross-section for collision is equal to  <m>\pi D^2</m>.
+		</p>
+		<p>
+			The number of collisions suffered by a molecule will depend on the density of molecules and their relative speed.  Although after each collision the direction of motion of a molecule will change, but in each direction it is the same cross-sectional area.  Therefore the number of collisions in some duration  <m>\Delta t</m> will equal the number of molecules in the volume of a cylinder of the cross-sectional area <m>\pi D^2</m> and length  <m>v_{rel} \Delta t</m>, the distance traveled by the molecule shown as A (<xref ref="fig-mean-free-path-2"/>).
+		</p>
+		<figure xml:id="fig-mean-free-path-2">
+			<caption> 
+				Molecules in the enclosed cylinder will collide with a selected molecule
+			</caption>
+			<image  source="./images/kinetic-theory/mean-free-path-2.png" width="50%"/>
+		</figure>
+		<p>
+			<md>
+				<mrow>\amp \text{Number of collisions in } \Delta t  = \dfrac{N}{V}\left(\pi D^2 v_{rel}\Delta t \right)</mrow>
+				<mrow>\amp \text{Distance traveled in } \Delta t = v_\text{ave} \Delta t </mrow>
+			</md>
+			where <m>v_\text{ave}</m> is the average speed of the molecule, <m>N</m> is the total number of molecules occupying volume <m>V</m>.  It can be shown that the average speed is related to the average relative speed as follows.
+			<me>
+				v_{rel} = \dfrac{ v_\text{ave} }{\sqrt{2}}
+			</me>
+			Hence, mean free path <m>\lambda</m> is
+			<me>
+				\text{Mean free path, }\lambda = \dfrac{\text{Distance traveled}}{\text{Number of Collisions}} = \dfrac{1}{\sqrt{2}\ \pi D^2}\dfrac{V}{N}.
+			</me>
+			Because most real gases at high temperature and low density behave as  ideal gas, sometimes we can use the ideal gas law even for real gases.  In that case we can replace <m>V/N</m> and obtain mean free path in terms of temperature and pressure.
+			<md>
+				<mrow> \text{Approximately Ideal}\text{ Gas} \amp \text{ Behavior:}   \lambda =  \dfrac{k_B}{\sqrt{2}\ \pi D^2}\dfrac{T}{p}. </mrow>
+			</md>
+			You might call this <q>ideal gas mean free path</q>.  In a strict sense, a true ideal gas will have <m>\lambda = \infty</m>, since the molecules of an ideal gas do not interact with each other.  This formula is a mixture of ideas from the real gas and the ideal gas and the final mean free path formula is often called the <q>ideal gas mean free path</q>.
+
+		</p>
+
+	</introduction>
+
+	<example xml:id="example-Mean-Free-Path-of-an-Ideal-Gas-Illustrated"><title> Mean Free Path of an Ideal Gas Illustrated </title>
+		<statement>
+			<p>
+				Find the ideal mean free path for a gas at standard temperature and pressure (STP), i.e. a temperature <m> T = 300\text{K}</m> and a pressure <m> p = 1\text{ atm}</m>, for a molecule of size <m>0.4\text{ nm}</m> and compare it to the average distance between molecules.
+			</p>
+
+		</statement>
+		<hint> <p>  Use formulas. </p> </hint>
+		<answer> <p> <m>\lambda = 52\ \text{nm},\ d=3.3\ \text{nm}</m> </p> </answer>
+		<solution> 
+			<p>
+				We use the formula for mean free path for an ideal gas given in terms of <m> T</m> and <m> p</m> to obtain
+				<me>
+					\lambda_{\text{ideal}} = \frac{k_B}{\sqrt{2}\ \pi D^2}\frac{T}{p} =  52\ \text{nm}.
+				</me>
+				Average separation between molecules can be obtained from the average space occupied by one molecule.  If the average space occupied by one molecule as a sphere of radius <m>R</m>,  The average separation between molecules <m>d_\text{ave}</m> will be <m> 2R</m>.
+				<me>
+					d_\text{ave} = 2\left(\frac{3k_B T}{4\pi p} \right)^{1/3}  = 3.3\ \text{nm}.
+				</me>
+				Thus, at standard temperature and pressure (STP) mean free path <m> \lambda >> \text{ average distance between molecules}</m>  as shown in <xref ref="fig-mean-free-path-3"/>.
+
+			</p>
+
+			<figure xml:id="fig-mean-free-path-3">
+				<caption> 
+					Molecular size, the separation of molecules and the mean free path illustrated approximately to scale in an ideal gas at 300 K and 1 atm.
+				</caption>
+				<image  source="./images/kinetic-theory/mean-free-path-3.png" width="60%"/>
+			</figure>
+
+		</solution>
+	</example>
+
+	<exercise xml:id="ex-Mean-Free-Path-HeliumGas"><title> Mean Free Path, Mean Free Time, and Intermolecular Distance in Helium Gas </title>
+		<statement>
+			<p>
+				Find the (a) mean free path, (b) mean free time, and (c) inter-molecular distance in a container of volume 5 L that contains 2 grams of Helium gas at <m>25^{\circ}</m>C and 1 atmosphere, assuming the diameter of each Helium molecule to be <m>1.0 \ \unicode{x212B}</m>.  Mean free time is the average time a molecule spends in-between collisions.  (<m>1.0 \ \unicode{x212B}= 0.1\ \text{nm} </m>).
+			</p>
+
+		</statement>
+		<hint> <p> Use defining formulas.  </p> </hint>
+		<answer> <p> (a) <m>914\text{ nm}</m>, (b) <m>0.725\text{ ns}</m>, (c) <m>  2.55\ \text{nm}</m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a) 
+				We us the formula for the mean free path
+				<me>
+					\lambda = \frac{k_B}{\sqrt{2}\pi D^2}\frac{T}{p}, 
+				</me>
+				where <m>N_A</m> is the Avogadro number.  The given system has
+				<md>
+					<mrow> \amp p = 1.013\times 10^5\ \text{Pa}</mrow>
+					<mrow> \amp T = 25+273 = 298\ \text{K}</mrow>
+					<mrow> \amp D = 1\times 10^{-10}\ \text{m}</mrow>
+					<mrow> \amp k_B = 1.38\times 10^{-23}\ \text{J/K}.</mrow>
+				</md>
+				The mean free path equals <m>914\text{ nm}</m>.
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				(b) 
+				To find the mean free time we will use the average speed of molecules.
+				<me>
+					v_{ave} = \sqrt{8 k_b T/\pi m} = 1260\ \text{m/s}.
+				</me>
+				Therefore, the mean free time will be
+				<me>
+					\tau = \frac{\lambda}{v_{ave}} =  \frac{914 \times 10^{-9}\ \text{m}}{1260\ \text{m/s}}  = 0.725 \text{ ns}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title> (c) </title>
+			<p>
+				(c) 
+				From the number of molecules spread over the volume of the container we can estimate the average inter-molecular distance.  Let <m>l</m> be the average distance between molecules, <m>N</m>  the number of molecules, and <m>V</m> the volume of the container.  Then we can assume dividing up the volume in little cubes of side <m>l</m> and place one molecule in each cube.  This will give
+				<me>
+					N l^3 = V,
+				</me>
+				Therefore,
+				<me>
+					l = (V/N)^{1/3}.
+				</me>
+				Here 
+				<me>
+					V = 5\ \text{L},\ \ N = \frac{2\ \text{g}}{4\ \text{g}/6.022\times 10^{23}\ \text{molecules}} = 3.011\times 10^{23}\ \text{molecules}.
+				</me>
+				Therefore,
+				<me>
+					l = (5\times 10^{-3} \text{m}^3/3.011\times 10^{23})^{1/3} = 2.55\ \text{nm}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="Variation-of-Mean-Free-Path-with-Pressure-Temperature-Volume-Amount-of-Gas"><title> Variation of Mean Free Path with Pressure, Temperature, Volume, Amount of Gas </title>
+		<statement>
+			<p>
+				What will happen to the mean free path in <xref ref="ex-Mean-Free-Path-HeliumGas"/> if we do the following:
+			</p>
+
+			<p>
+				(a)  double the pressure while keeping the other quantities same?  
+			</p>
+			<p>
+				(b)  double the temperature while keeping the other quantities same?  
+			</p>
+			<p>
+				(c)  double the volume while keeping the other quantities same?  
+			</p>
+			<p>
+				(d) double the amount of gas, i.e. mass,  while keeping the other quantities same?  
+			</p>
+			<p>
+				(e)  double the mass and volume while keeping the other quantities same?
+			</p>
+
+		</statement>
+		<hint> <p>  Think proportionality relations, e.g., for (a) <m>\lambda \sim 1/p</m>. </p> </hint>
+		<answer> <p> See the solutions.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+
+				(a) Since <m>\lambda \sim 1/p</m>, doubling <m>p</m> would halve   <m>\lambda</m>.
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+
+				(b) Since <m>\lambda \sim T</m>, doubling the temperature in the Absolute scale <m>T</m> would make   <m>\lambda</m> twice as large.  This makes sense since the speed of molecules will go up.
+			</p>
+		</solution>
+		<solution> <title>(c)</title>
+			<p>
+
+				(c) Doubling the volume will double the mean-free path.
+			</p>
+		</solution>
+		<solution> <title>(d)</title> 
+			<p>
+				(d) If you increase the number of molecules of the gas in the same volume, the mean-free path will decrease in proportion since <m>\lambda \sim 1/N</m>, where <m>N</m> is the number of molecules.
+			</p>
+		</solution>
+		<solution> <title>(e)</title>
+			<p>
+				(e) The mean-free path is proportional to the ratio of <m>V</m> to <m>N</m>, so if you doubled both, <m>\lambda</m> would not change.
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Exploring-Distribution-of-Free-Lengths"><title> (Calculus) Exploring Distribution of Free Lengths </title>
+		<statement>
+			<p>
+				The probability of different free lengths between collisions is given by a probability function  <m>\rho (r)</m>, similar to what was done for the Maxwell distribution of speed, except that  <m>\rho (r)</m> is a different function. While Maxwell distribution was Gaussian, free path distribution is exponential.
+				<me>
+					\rho (r)= A\,e^{-r/\xi}
+				</me>
+				where <m>A</m> and <m>\xi</m> (read <q>shee</q>)  are constants. Constant <m>\xi</m> characterizes the average distance between the molecules.
+			</p>
+			<p>
+				The product  <m>\rho dr</m> gives the probability that a molecule will travel a distance <m>r</m> between collisions.  The integral of  <m>\rho dr</m> from <m>r = 0</m> to <m>r = \infty</m> must equal 1, and the average <m>r</m> is equal to the mean free path  <m>\lambda</m>.  Find <m>A</m> and <m>\xi</m>  in terms of  <m>\lambda</m>. 
+			</p>
+
+		</statement>
+		<hint> <p> Normalize by integrating from <m>0</m> to <m>\infty</m>. The mean is defined as ususal by <m>\int_0^\infty r\,\rho(r)\,dr</m>.   </p> </hint>
+		<answer> <p>  <m>\xi</m>. </p> </answer>
+		<solution> 
+			<p>
+				To normalize we note that the integral:
+				<me>
+					\int_0^{\infty} A\ e^{-r/\xi} dr = A\xi.
+				</me>
+				Setting this to 1 gives us the normalizing condition and sets <m>A</m>.
+				<me>
+					A = \frac{1}{\xi}.
+				</me>
+				Now, 
+				<me>
+					\int_0^{\infty} r\rho(r)dr =  \dfrac{1}{\xi}\,\int_0^{\infty} r \ e^{-r/\xi} dr = \xi.
+				</me>
+				Setting this to <m>\lambda</m>, we get
+				<me>
+					\lambda = \xi.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+</section>

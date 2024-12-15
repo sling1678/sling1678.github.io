@@ -1,0 +1,216 @@
+<section xml:id="section-electromagnetic-wave"><title> Electromagnetic Wave </title>
+	<introduction>
+        <p>
+        	The wave nature of light is essential for many phenomena exhibited by light.  In 1865, James Clerk Maxwell  identified light as intertwined waves of electric and magnetic fields. These waves are called <term>electromagnetic waves</term>.  Before Maxwell, optics and electromagnetism were two separate branches of study in physics. Maxwell showed that optics is actually a subfield of electromagnetism. 
+        </p>
+        <p>
+        	According to the Maxwell's equations of electricity and magnetism, an oscillating electric field induces an oscillating magnetic field, which in turn induces oscillating electric field. This explains how light can travel in vacuum without needing any material medium. Maxwell also showed that the electric and magnetic fields of an electromagnetic wave in vacuum are perpendicular to each other, and they in turn are perpendicular to the direction of the propagation of the wave.  
+
+        </p>
+        <p>
+        	A particularly simple form of electromagnetic wave is a plane harmonic wave in which electric field oscillates along a single axis, and magnetic field in an axis perpendicular to that as shown in  <xref ref="fig-em-wave-pic-section-electromagnetic-wave"/>.  For instance, an electromagnetic wave traveling towards positive <m>x</m> axis with electric field oscillating along <m>y</m> axis and  magnetic field oscillating <m>z</m> axis is an example of a plane wave.  
+        </p>
+        <figure xml:id="fig-em-wave-pic-section-electromagnetic-wave">
+        	<caption>
+        		Plane electromagnetic wave traveling to the right. The electric field and magnetic field are perpendicular to each other and direction of the wave is perpendicular to both electric and magnetic fields.
+        	</caption>
+        	<image source="./images/wave-description-of-light/em-wave-picture.png" width="90%"/>
+        </figure>
+
+        <p>
+        	We can write the <term> plane electromagnetic wave</term>  shown in <xref ref="fig-em-wave-pic-section-electromagnetic-wave"/> analytically by two vector functions, one the electric field and the other for the magnetic field. The two waves have the same angular frequency <m>\omega</m>, same wavenumber <m>k</m> , and same phase constant  <m>\phi</m>. Let us denote their amplitudes by <m>E_0</m>  and  <m>B_0</m>, respectively. With unit vectors <m>\hat u_y</m> towards positive <m>y</m> axis and <m>\hat u_z</m> towards positive <m>z</m> axis, the following functions will describe oscillating electric and magnetic fields propagating towards positive <m>x</m> axis.
+        	<mdn>
+        		<mrow xml:id="eq-em-wave-1"> 
+        			\amp  \vec E = E_y \hat u_y = \hat u_y E_0 \cos(k x -\omega t  + \phi),</mrow>
+        		<mrow xml:id="eq-em-wave-2">
+        			\amp  \vec B = B_z \hat u_z = \hat u_z B_0 \cos(k x -\omega t  + \phi).</mrow>
+        	</mdn>
+        	The amplitudes of the waves, viz. <m>E_0</m> and <m>B_0</m> are related by the wave speed <m>v</m> in the medium. We will use symbol <m>c</m> for the speed in vacuum.
+        	<men xml:is="eq-em-wave-3">
+        		B_0 = \frac{E_0}{v}.
+        	</men>
+        	With <m>\hat u_x</m> as unit vector towards positive <m>x</m> axis, the direction of the wave is given by the <term>wave propagation vector</term>, <m>\vec k = k \hat u_x</m>, which is the product of the wavenumber and the direction unit vector.
+        </p>
+        
+        <p>
+        	The argument of the trigonometric functions on the right of Eqs. <xref ref="eq-em-wave-1"/> and <xref ref="eq-em-wave-2"/>  is called the <term> phase</term> of the wave. As shown in these formulas, the waves of these fields march with the same phase: the crest of the electric field occurs at the same location and time as the crest of the magnetic field wave and the trough with the trough.
+        </p>
+        <p>
+        	The angular frequency <m>\omega</m>  (radians per second) and wave number <m>k</m> (radians per meter) are related to the frequency <m>f</m> (cycles per second or Hertz, Hz) and wavelength  <m>\lambda</m> (meter) respectively.
+        	<md>
+        		<mrow> 
+        			\amp \omega = 2\pi f.</mrow>
+        		<mrow>
+        			\amp k = \frac{2\pi}{\lambda}.
+        		</mrow>
+        	</md>
+        	The ratio  <m>\omega/k</m> is therefore equal to the wavespeed <m>v</m> in the medium by the following fundamental equation of waves.
+        	<men>
+        		\frac{\omega}{k} = \lambda f = v.
+        	</men>
+        	Maxwell showed that the speed of electromagnetic wave in the vacuum is simply related to the electrromagnetic properties of vacuume, namely, electric susceptibility  <m>\epsilon_0</m> and the magnetic permeability <m>\mu_0</m>.
+        	<men xml:id="eq-speed-of-light-in-vaccum-ch-light-wave">
+        		\text{Speed of light in vacuum, }\ \ c = \frac{1}{\sqrt{\mu_0 \epsilon_0}}.
+        	</men>
+        	In other linear media, a similar formula relates speed to electric susceptibility  <m>\epsilon</m> and the magnetic permeability <m>\mu</m> of the medium. 
+        	<men>
+        		v = \frac{1}{\sqrt{\mu\epsilon}}.
+        	</men>
+
+        	It turns out that, for nonmagnetic media, <m>\mu\approx \mu_0</m>. Therefore,
+        	<men>
+        		v = \sqrt{\frac{\epsilon}{\epsilon_0}} \; c.
+        	</men>
+        	The ratio <m>\frac{\epsilon}{\epsilon_0}</m> is called the dieelectric constant of the medium, which is denoted by <m>\epsilon_r</m>.
+        	<men>
+        		v = \sqrt{\epsilon_r} \; c.
+        	</men>
+        	Refractive index <m>n</m> of the medium is related to the dielectric constant by
+        	<men>
+        		n = \frac{1}{\sqrt{\epsilon_r}}.
+        	</men>
+        	Therefore, <m>v</m> in a medium can also be written as
+        	<men>
+        		v = \frac{c}{n}.
+        	</men>
+        	Since <m>\epsilon_0</m> and <m>\mu_0</m> are universal values, speed of light in vacuum, giben by Eq. <xref ref="eq-speed-of-light-in-vaccum-ch-light-wave"/>, has the following exact alue.
+        	<men>
+        		c =  299,792,458\ \text{m/s}\ \ \ \text{(Exact)}
+        	</men>
+        	Since electric and magnetic fields of an electromagnetic wave are interdependent, it often suffices to examine only the electric field of the wave.  You should, however, keep in mind that magnetic field wave is also present.
+        </p>
+        <p>
+        	The points in space with equal phase form a surface called the <term>wavefront</term>.  Evidently, wave function has the same value at all points of the wavefront. We see that the wavefronts of the plane waves given in Eqs. <xref ref="eq-em-wave-1"/> and <xref ref="eq-em-wave-2"/> are planes perpendicular to the direction of the wave.   That is why these waves are also called <term> plane waves</term>.
+        </p>
+        <p>
+        	Let us examine the crest of the waves at <m>t=0</m>.  The crests will occur when the argument of the cosine is equal to <m>2n\pi</m> for <m>n</m> an integer.
+        	<men>
+        		-kx + \phi = 2 n \pi\ \ \Longrightarrow\ \ x = \text{constant}
+        	</men>
+        	Thus, a plane wave moving along <m>x</m> axis crests simultaneously at all points of planes parallel to the <m>yz</m> plane separated by one wavelength. 
+        </p>
+        <p>
+        	Not all waves are plane waves. For instance, an isotropic light emitted by a point source will spread out as spherical wave fronts centered at the source.  These waves are called <term>spherical waves</term>.  The traveling spherical waves are given by a wave function whose amplitude drops off inversely with the distance <m>r</m> from the source.  With <m>\hat u_r</m> a unit vector pointed radially outward from the origin, we get the following for a spherical wave.
+        	<men>
+        		\vec E = \hat u_r \frac{V_0}{r}\ \cos(kr - \omega t + \phi),
+        	</men>
+        	where <m>V_0</m> is a constant amplitude with units of electric potential. 
+        	Pictorially, a traveling electromagnetic wave of a single frequency can be represented by drawing wavefronts that are a single wavelength apart.  Rather than draw a three-dimensional plot it is customary to draw a cross-section.  Thus, for a plane wave we draw parallel lines, each line representing a plane wavefront, while for a spherical wave we draw arcs or circles, each representing a spherical wavefront (<xref ref="fig-EM-wave-plane-and-spherical"/>).  Note that the wave fronts are perpendicular to the direction of wave.
+
+        </p>
+        <figure xml:id="fig-EM-wave-plane-and-spherical">
+        	<caption>
+        		 Wave fronts are perpendicular to the waves: (a) plane wave, (b) spherical wave.
+        	</caption>
+        	<image source="./images/wave-description-of-light/EM-wave-plane-and-spherical.png" width="90%"/>
+        </figure>        
+
+    </introduction>
+
+
+
+	<exercise xml:id="exercise-Reading-Properties-of-Electromagnetic-Wave-from-Electric-Field-Wave-Function"><title>Reading Properties of Electromagnetic Wave from Electric Field Wave Function</title>
+
+		<statement>
+			<p>
+				The electric field of an electromagnetic wave in vacuum is given by the following vector function of space and time, where <m>y</m> is in meters and <m>t</m> is in seconds.
+				<me>
+					\vec E = \hat u_x\ 3\times 10^{5}(\text{N/C})\ \cos\left(2\pi\times 10^{15}\ t + k y + \frac{\pi}{2} \right),
+				</me>
+				where <m>\hat u_x</m> is a unit vector pointed towards positive <m>x</m> axis.
+			</p>
+			<p>
+				(a)
+				Find the values of the frequency, wavenumber and wavelength of the wave.
+			</p>
+			<p>
+				(b)
+				What is the direction of the travel of the wave? Find the propagation vector for the wave.
+			</p>
+			<p>
+				(c)
+				Find the associated magnetic field wave.
+			</p> 
+ 
+		</statement>
+		<hint><p>See the discussion in this section.</p></hint>
+		<answer><p>  
+			(a) <m>f=10^{15}\text{ Hz}</m>, <m>k=2.09\times 10^{7}\text{ m}^{-1}</m>, <m>\lambda=3\times 10^{-7}\text{ m}</m>. 
+			(b) <m>\vec k = - 2.09\times 10^{7}\text{ m}^{-1} \hat u_y</m>.
+			(c) <m>\vec B = \hat u_z 10^{-3}\text{ T} \cos\left(  \pi\times 10^{15}\ t + 2.09\times 10^{7}  y + \frac{\pi}{2}   \right) </m>.
+			</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)
+				From the phase part, i.e., the argument of the cosine, we read off the number multiplying time to get the angular frequency, <m>\omega</m>.
+				<me>
+					\omega = 2\pi\times 10^{15}\text{ sec}^{-1}.
+				</me>
+				Dividing this by <m>2\pi</m> will give the cycles per sec or <m>\text{Hz}</m>.
+				<me>
+					f = \frac{\omega}{2\pi} = 10^{15}\text{ Hz}. 
+				</me>
+				Similarly, we readoff the wavenumber from the number that is multiplying the space, here <m>y</m>. We see that it is <m>k</m>. So, we need to think of another way of getting numerical value of <m>k</m>. We know that the product of frequency and wavelength is speed, we know for EM wave in vacuum.  In terms of angular quantities this becomes
+				<me>
+					\frac{\omega}{k} = c.
+				</me>
+				Therefore,
+				<me>
+					k = \frac{\omega}{c}  = \frac{2\pi\times 10^{15}\text{ sec}^{-1}}{3\times 10^8\text{ m/s}} = 2.09\times 10^{7}\text{ m}^{-1}. 
+				</me>
+				We get wavelength <m>\lambda</m> from <m>k</m> by
+				<me>
+					\lambda = \frac{2\pi}{k} = 3\times 10^{-7}\text{ m}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p> (b)
+				By setting the argument of cosine to zero, we see that <m>y/t \lt 0</m>. This means the wave is traveling towards negative <m>y</m> axis. The popagation vector is product of the wavenumber and a unit vector along the direction of wave. Therefore,
+				<me>
+					\vec k = - 2.09\times 10^{7}\text{ m}^{-1} \hat u_y,
+				</me>
+				where I have used the symbol <m>\hat u_y</m> for the unit vector in the direction of positive <m>y</m> axis. With negative multiplying the unit vector, the direction of <m>\vec k</m> is towards negative <m>y</m> axis.
+			</p>
+		</solution>
+
+		<solution><title>(c)</title>
+			<p> (c)
+				 We need to obtain the direction of <m>\vec B </m> and magnitude of the amolitude <m>B_0</m>. Lets work out the direction first. The direction of <m>\vec E</m>, <m>\vec B</m>, and propagation vector <m>\vec k</m> are related for an EM wave.
+				 <me>
+				 	\text{ Direction of }\vec k \text{ is direction of } \vec E\times \vec B\text{ product}.
+				 </me>
+				 Now, use right hand to figure the direction of <m>\vec B</m> given that <m>\vec E</m> is towards positive <m>x</m> axis and <m>\vec k</m> is towards negative <m>y</m> axis. I got the direction of  <m>\vec B</m> to be towards positive <m>z</m> axis.
+			</p>
+			<p>
+				The magnitude of <m>B_0</m> is <m>E_0/c</m>, therefore
+				<me>
+					B_0 = \frac{E_0}{c} = \frac{3\times 10^{5}\text{ N/C}}{3\times 10^{8}\text{ m/s}} = 10^{-3}\text{ T}.
+				</me>
+				Therefore, magnetic field wave function is
+				<me>
+					\vec B = \hat u_z 10^{-3}\text{ T} \cos\left(  \pi\times 10^{15}\ t + 2.09\times 10^{7}  y + \frac{\pi}{2}   \right),
+				</me>
+				where I hae used <m>\hat u_z</m> for the unit vector pointed towards ppositive <m>z</m> axis.
+			</p>
+		</solution>
+
+
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</section>

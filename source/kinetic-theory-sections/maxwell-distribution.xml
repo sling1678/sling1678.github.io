@@ -1,0 +1,301 @@
+<section xml:id="Maxwells-Distribution-of-Molecular-Speeds"><title> Maxwell's Distribution of Molecular Speeds </title>
+
+	<introduction>
+		<p>
+			The molecules of an ideal gas move independently of each other.  When a molecule bounces off a wall, its speed does not change because we assume that the collision with the walls are elastic. Furthermore, since the molecules of an ideal gas do not interact with one another, there will also be no collision among the molecules of an ideal gas.  Therefore, speeds of molecules of ideal gas remain constant in time.  
+		</p>
+		<p>
+			But, molecules of real gases do interact and collide with each other and with the walls of the container, resulting in the change of velocity and speed upon collision.  Therefore even if you start out by giving the same speeds to all the molecules, the speeds will soon become different in a real gas. 
+		</p>
+		<p>
+			James Clerk Maxwell studied this problem and found a formula for the distribution of speeds, shown in <xref ref="fig-maxwell-distribution-1"/>, but his results apply only to ideal gases, whose molecules can be allowed to collide with one another as billiard balls.  Since most real gases, when they are dilute or at high temperature, behave like an ideal gas, the distribution function worked out by Maxwell can be used also for understanding real gases.
+		</p>
+		<figure xml:id="fig-maxwell-distribution-1">
+			<caption>
+				Maxwell molecular speed distribution in one mole of helium at 300 K. The distribution function was multiplied by <m>10^4</m> for plotting.
+			</caption>
+			<image source="./images/kinetic-theory/maxwell-distribution-1.png" width="70%"/>
+		</figure> 
+		<p>
+			The mean of this distribution gives the average speed and it can be shown that this depends on the temperarure <m> T</m>, in kelvin scale, and the  molecular mass <m> m</m>.
+			<men>
+				v_\text{ave} = \sqrt{\dfrac{8k_B T}{\pi m}}.
+			</men>
+			We can also write this in molar quantities by multiplying and dividing the expression on the right side by the Avogadro number <m>N_A</m>.
+			<men>
+				v_\text{ave} = \sqrt{\dfrac{8R T}{\pi M}},
+			</men>
+			where <m> M=N_A m</m> is the molecular weight and <m> R </m> the gas constant. The peak of the distribution does not occur at the average speed. The peak occurs at, what is called, the <term> the most probably speed</term>, <m> v_p</m>
+			<men>
+				v_p = \sqrt{ \dfrac{2k_BT}{m} },
+			</men>
+			which is actually less than the average speed since the distribution has a long tail.
+		</p>
+		<p>
+			Since kinetic energy varies as square of speed, another type of average speed based on taking square-root of the average of speed squared gives us more accurate information about the energetics of the gas moleculs. This average is called <term> the root mean squared </term> or the rms speed. The rms speed of Maxwell's distribution is
+			<men>
+				v_\text{rms} = \sqrt{\dfrac{3k_BT}{m}}.
+			</men>
+			The average kinetic energy of a monatomic ideal gas, such as Helium, is
+			<men>
+				\text{KE} = \dfrac{1}{2} m v_\text{rms}^2 = \dfrac{3}{2} k_B T.
+			</men>
+			The factor 3 on the right side can be understood to correspond to three different directions a molecule can move, i.e., degrees of freedom of the molecule, and the quantity <m> (\dfrac{1}{2} k_B T)</m> is the kinetic energy for each degree of freedom.
+			<men>
+				\text{KE per degree of freedom} = \dfrac{1}{2} k_B T.
+			</men>
+		</p>
+		<p>
+			For a datomic molecular gas, such as Nitrogen, the average kinetic energy would be different when expressed in temperature.
+			<men>
+				\text{KE} = \dfrac{1}{2} m v_\text{rms}^2 = \dfrac{5}{2} k_B T.
+			</men>
+			The difference in the factor between the monatomic and diatomic comes from the difference in degrees of freedom of each molecule. Monatomic molecule has three translational degrees of freedom and diatomic molecule has three translational, one vibrational, and one rotational degree of freedom, making it altogether five degrees of freedom. For triatomic molecules, such as water molecule, there are additional degrees of freedoms.		 
+		</p>
+
+	</introduction>
+
+
+	<exercise xml:id="ex-Average-Speed-of-a-Nitrogen-Molecule"><title>  Average Speed and RMS Speed of a Nitrogen Molecule </title>
+		<statement>
+			<p>
+				Find (a) the average speed and (b) the root-mean squared speed of molecules of nitrogen gas treated as an ideal gas at room temperature <m> 27^{\circ}\text{C}</m>.
+			</p>
+			<p>
+				Data: Avogadro's number, <m>N_A = 6.022\times 10^{23}</m>, Boltzmann's constant, <m>k_B = 1.38\times 10^{-23} \text{m}^2\text{kg}\text{s}^{-2}\text{K}^{-1}</m>.
+			</p>
+		</statement>
+		<hint> <p> (a) Use formula for the average speed. Also, make sure you change temperture to kelvin. (b) Use the formula for diatomic gas. </p> </hint>
+		<answer> <p> (a) <m> 494\text{ m/s}  </m>,  (b) <m> 692\text{ m/s}</m>. </p> </answer>
+		<solution> <title> (a) </title>
+			<p> (a)
+				The average speed in molar units is
+				<me>
+					v_\text{ave} = \sqrt{\dfrac{8 k_B T}{\pi m}}.
+				</me>
+				Here the numbers are 
+				<md>
+					<mrow> \amp T = 273+27=300K.</mrow>
+					<mrow> \amp m =    \dfrac{ 28\times 10^{-3}\text{ kg}}{6.022\times 10^{23} }  = 4.32 \times 10^{-26}\text{ kg}.</mrow>				
+				</md>
+				Using these numbers we get
+				<me>
+					v_\text{ave} =  494\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				(b)
+				For a diatomic molecular gas, the RMS speed from kinetic energy formula is given by
+				<me>
+					v_\text{rms} = \sqrt{\dfrac{5k_B T}{m}} = 692\text{ m/s}.
+				</me>				
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+	<subsection> <title> (Calculus) Maxwell's distribution </title>
+		<p>
+			Suppose there are <m>N</m> molecules of a gas at temperature <m>T</m>. Let the mass of each molecule be <m>m</m>.  According to Maxwell, molecules in a gas move at many different speeds, and, since the number of molecules <m>N</m> is very large in any finite sample, the speeds of molecules can be considered to be distributed continuously, i/e., we can treat speed as a continuous real variable for mathematical purposes. 
+		</p>
+		<p>
+			Maxwell's distribution of speeds for molecules of a gas gives the number <m>f(v)dv</m> of molecules that have speed between <m>v</m> and <m>v+dv</m>.
+			<men xml:id="eq-max-boltz-1a">
+				f(v) dv = \alpha v^2 \exp{\left(-\frac{\frac{1}{2}mv^2}{k_BT} \right)}dv, 
+			</men>
+			where <m>\alpha</m>  is a normalization constant and <m>k_B</m> is the Boltzmann constant.  The normalization constant <m>\alpha</m> is determined by requiring that the integration over all possible speeds be equal to the total number <m>N</m> of molecules in the system. 
+			<men xml:id="eq-max-boltz-2">
+				N = \int_0^\infty f(v) dv\label{}
+			</men>
+			By using <m>f(v)dv</m> from Eq. <xref ref="eq-max-boltz-1"/> and integrating, we find the normalization constant <m>\alpha</m> to be
+			<me>
+			\alpha = 4\pi N \left( \frac{m}{2\pi k_B T} \right)^{3/2}.
+			</me>
+			Thus Maxwell distribution of speeds for a gas with <m>N</m> molecules at temperature <m>T</m>
+			<men xml:id="eq-max-boltz-1">
+				f(v) dv = 4\pi N \left( \frac{m}{2\pi k_B T} \right)^{3/2} v^2 \exp{\left(-\frac{\frac{1}{2}mv^2}{k_BT} \right)}dv.
+			</men>
+			Note that the distribution function  <m>f(v)</m> is not equal to the number of molecules having speed <m>v</m>.  Rather,  <m>f(v)</m> is <q> a number density in speed space,</q> so that the number of molecules with speed between <m>v</m> and <m>v+dv</m> is given by <m>f(v)dv</m>.  The units of <m>f(v)</m> is seconds/meter since its product with speed element <m>dv</m> is a unitless number.
+		</p>
+		<p>
+			The  Maxwell distribution function depends on the speed as a product of the square of the speed and an exponential function with a negative exponent containing the ratio of kinetic energy of one molecule and an energy scale <m>k_BT</m>. Thus, the distribution of speeds critically depends upon the relative magnitudes of the kinetic energy of molecules and the energy scale <m>k_BT</m> set by the temperature <m>T</m>.
+		</p>
+		<p>
+			The negative exponential factor makes it less likely that a molecule will have much higher kinetic energy than <m>k_BT</m> while the quadratic prefactor of velocity squared makes low speeds less likely. The competition between the two factors results in a maximum for the distribution.
+		</p>
+ 		<p>
+			<xref ref="fig-maxwell-distribution-1" />  shows the distribution function  <m>f(v)</m>  for the Helium gas at 300 K.  Note that the distribution is not symmetric about the peak, and the most probable speed is not the same as the average speed of molecules.  The lowest speed is zero, but the distribution trails off to infinity for the highest speed. 
+		</p>
+		<p>
+			<xref ref="fig-maxwell-distribution-2" />  shows distribution of molecular speeds in the same system but at different temperatures.  The peak speed of the distribution shifts to higher values for higher temperatures.  Since the number of molecules is the same in the three graphs, the areas under the curves for different temperatures must be equal to each other.  Therefore, as the peak speed shifts to the right the distribution curve flattens out.
+		</p>
+		<figure xml:id="fig-maxwell-distribution-2">
+			<caption>
+				Molecular speed distributions of one mole of helium at T=100 K (thin line), T=200 K (dashed line), and T=300 K (thick line).  The three distribution functions were multiplied by <m>10^4</m> for plotting purposes. With increasing temperature, the peak speed shifts to higher speeds and the distribution becomes wider.
+			</caption>
+			<image source="./images/kinetic-theory/maxwell-distribution-2.png" width="70%"/>
+		</figure>  
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Mean-of-the-Maxwells-Distribution"><title> (Calculus) Mean of the Maxwell's Distribution </title>
+		<statement>
+			<p>
+				Find the mean of the Maxwell's distribution.
+			</p>
+
+		</statement>
+		<hint> <p> Compute <m> \dfrac{1}{N}\int_0^\infty\, v \, f(v)\, dv. </m>.  </p> </hint>
+		<answer> <p> <m> \sqrt{\dfrac{8k_B T}{\pi m}} </m>.</p> </answer>
+		<solution> 
+			<p>
+				The mean of the distribution is given by the following integral.
+				<me>
+					\langle v \rangle = \dfrac{1}{N}\int_0^\infty\, v \, f(v)\, dv.
+				</me>
+				Performing this integral we get
+				<me>
+					\langle v \rangle = \sqrt{\dfrac{8k_B T}{\pi m}}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Exploring-Maxwells-Distribution-of-Energy-of-Molecules"><title> (Calculus) Exploring Maxwell's Distribution of Energy of Molecules</title>
+		<statement>
+			<p>
+				The molecules for Maxwell distribution have only translational kinetic energy.  Therefore, we can express their speed <m>v</m> in terms of energy <m>E</m> of a molecule.
+				<me>
+					\frac{1}{2} m v^2 = E\ \ \ \text{(since PE = 0.)}
+				</me>
+			</p>
+			<p>
+				(a) Change the variable from <m>v</m> to <m>E</m> in the Maxwell distribution and obtain the distribution function for energy from the distribution function of speed.  Note that distribution function for energy, lets say <m>g(E)</m> is a function of energy <m>E</m> such that <m>g(E) dE</m> gives the number of particles with energy between <m>E</m> and <m>E+dE</m>.  The distribution of energy is called the Maxwell-Boltzmann energy distribution. Ans:
+				<me>
+					g(E) dE = \frac{2\pi N}{(\pi k_B T)^{3/2}}\sqrt{E} \exp{(-E/k_BT)} dE.
+				</me>
+			</p>
+			<p>
+				(b) Show that integration of  <m>g(E)</m> from <m>E= 0</m> to <m>\infty</m> yields <m>N</m>, the total number of molecules. 
+			</p>
+			<p>
+				(c) Calculate the average energy and show it is equal to <m>\frac{3}{2} k_BT</m>.
+			</p>
+
+		</statement>
+		<hint> <p> 	Use <m>
+					f(v) \dfrac{dv}{dE} dE.
+				</m>  </p> </hint>
+		<answer> <p>  Already in the statement. </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				From <m> E=\dfrac{1}{2} m v^2 </m>, we get
+				<me>
+					dE = m v dv\ \ \Longrightarrow\ \ \dfrac{dv}{dE} = \dfrac{1}{mv}.
+				</me>
+				Let 
+				<me>
+					\beta = \dfrac{1}{k_B T},\ \ a = \dfrac{m}{2}\,\beta,\ \ \alpha = 4N\, a^{3/2}/\sqrt{\pi}. 
+				</me>
+				Then, the distribution of speeds looks simpler
+				<me>
+					f(v)dv = \alpha\, v^2\, \exp(-a v^2)\, dv.
+				</me>
+				We can see that the distribution in speed can be recast with <m>E</m> as indeopendent variable by
+				<me>
+					f(v) \dfrac{dv}{dE} dE.
+				</me>
+				Write this as
+				<me>
+					\alpha\, v^2\, \exp(-a v^2)\, \dfrac{1}{mv} dE.
+				</me>
+				With <m> v = \sqrt{2E/m}</m> we get the result after simplification.
+				<me>
+					 \dfrac{2N}{\sqrt{\pi}}\, \beta^{3/2}\, \sqrt{E}\, \exp(-\beta E)\,  dE.
+				</me>
+				Therefore, the energy distribution is
+				<me>
+					g(E) dE = \dfrac{2N}{\sqrt{\pi}}\, \beta^{3/2}\, \sqrt{E}\, \exp(-\beta E)\,  dE,
+				</me>
+				where <m>\beta = 1/k_BT</m>.
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b)
+				I looked up the following integral from 
+				<url ref="https://www.wolframalpha.com/"> wolfram alpha website </url> with the command <q>integrate x^(1/2) exp(-a x)  dx from x=0 to infinity</q> to get
+				<me>
+					\int_0^\infty \sqrt{x} \exp(-a\,x)\,dx = \dfrac{\sqrt{\pi}}{2a^{3/2}}.
+				</me>
+				Using this I was able to prove the required result.
+			</p>
+		</solution>
+		<solution> <title>(c)</title>
+			<p>
+				From definition of mean of a distribution, we will have
+				<me>
+					E_\text{ave} = \int_0^\infty E\,g(E)\, dE.
+				</me>
+				This requires the following integral
+				<me>
+					\int_0^\infty E\sqrt{E} \exp(-\beta\,E)\,dE = \dfrac{3\,\pi^{1/2}}{4\beta^{5/2}}.
+				</me>
+				Using this gives the required result.				
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+<!-- \begin{example}\label{ex:root-mean-square-speed}  {\bf The Root-mean Square Speed}
+
+Find a formula for the root-mean squared speed of a gas molecule obeying Maxwell's velocity distribution.
+\end{example}
+
+\begin{ans} 
+The {\bf root mean square speed}\index{Rms speed} <m>v_{rms}</m> is obtained by first summing over the squares of speeds <m>v_i</m> of molecules, dividing the sum by the total number of molecules, and then taking the square root of the result.  It is easier to write the square of rms speed formula.
+\[
+v_{rms}^2 = \frac{1}{N}\sum_{i=1}^N v_i^2
+\]
+Once again, the sum can be replaced by an integral over speed <m>v</m> if we use the distribution function.
+\[
+v_{rms}^2 = \frac{1}{N}\int_{0}^{\infty} v^2 f(v) dv.
+\]
+Substituting the distribution function and integrating we find the following for the square of the root-mean square speed.
+\[
+v_{rms}^2 = \frac{3k_BT}{m}.
+\]
+The positive root of this equation gives the root-mean square speed as
+\[
+v_{rms} = \sqrt{\frac{3k_BT}{m}}.
+\]
+\end{ans} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

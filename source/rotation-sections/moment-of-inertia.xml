@@ -1,0 +1,937 @@
+<section xml:id="Moment-of-Inertia"><title> Moment of Inertia </title>
+<idx>Momen of Inertia</idx>
+	<introduction>
+		<p>
+			We found above that angular momentum of a body rotating with angular velocity <m>\omega </m> <alert>about a principal axis</alert> is 
+			<me>
+				L = I\,\omega,
+			</me>
+			where <m> I </m> is the moment of inertia of the body about the axis of rotation. If you compare this formula with the formula for the magnitude of momentum of a particle of mass <m> m </m> and velocity <m>\vec v </m>.
+			<me>
+				p = m v,
+			</me>
+			you will notice that moment of inertia <m> I </m> plays the same role in rotation as mass <m> m </m> plays in the translational motion. 
+		</p>
+		<p>
+			When we studied <m>\vec F = m\vec a </m> for constant mass system, we found that mass <m> m</m> can be interpreted as a measure of <alert>inertia</alert> against change in velocity. Later in this chapter, when we introduce a similar dynamic equation, <m> \tau = I \alpha</m> for constant <m>I</m> system, where <m> \tau</m> is torque of the force, we will find that <m> I </m> is a measure of inertia against change in angular velocity, and hence the name, moment of inertia.
+		</p>
+		<p>
+			In this section, we will practice computing moment of inertia of some commonly encountered objects, starting from the fundamental formula for the moment of inertia of a single particle.
+		</p>
+	</introduction>
+
+	<subsection><title>Moment of Inertia of Single Particle  </title>
+	<idx><h>Moment of Inertia</h><h>Single Particle</h></idx>
+ 		<sidebyside widths="55% 10% 35%">
+			<p>
+				Consider a single particle of mass <m> m</m> moving in a circle of radius <m>R</m> as shown in <xref ref="fig-moment-of-inertia-single-particle-1"/>.  We can think of it as a particle rotating about an axis at a distance <m> R </m> from the axis.  The moment of inertia of this system is
+				<men>
+					I_{\text{particle}} = m\,R^2.
+				</men>
+				This will be the building block for moment of inertia of an arbitrary object.
+			</p>
+			<p> </p>
+			<figure xml:id="fig-moment-of-inertia-single-particle-1">
+				<caption></caption>
+				<image source="./images/rotation/moment-of-inertia-single-particle.png"/>
+			</figure>
+		</sidebyside>		
+	</subsection>
+
+	<subsection><title>Moment of Inertia of Systems of Particles  </title>
+	<idx><h>Moment of Inertia</h><h>Systems of Particles</h></idx>
+
+		<sidebyside widths="55% 5% 40%">
+			<p>
+				Suppose we have <m> N</m> particles that rotate about a common axis as shown in <xref ref="fig-angular-momentum-rigid-point-masses-1"/>. The figure shows a system of 4 particles. Let <m> m_1</m>, <m> m_2</m>, <m> \cdots</m>, be their masses and <m> R_1</m>, <m> R_2</m>, <m> \cdots</m>, be their distances from the axis. The net moment of inertia will be the sum of moment of inertia for each particle.
+			</p>
+			<p></p>
+			<figure xml:id="fig-angular-momentum-rigid-point-masses-1">
+				<caption></caption>
+				<image source="./images/rotation/angular-momentum-rigid-point-masses.png"/>
+			</figure>
+		</sidebyside>
+		<men>
+			I_{N\text{-particles}} = m_1 R_1^2 + m_2 R_2^2 + \cdots + m_N R_N^2.
+		</men>
+		<p>
+			We might write this using a sum notation.
+		</p>
+		<men xml:id="eq-mom-inertia-n-particles-sum">
+			I_{N\text{-particles}} = \sum_{i=1}^{N}m_i R_i^2 .
+		</men>	
+	</subsection>
+
+	<example xml:id="ex-Moment-of-Inertia-of-a-Baton-about-an-Irregular-Axis"><title> Moment of Inertia of a Baton about an Irregular Axis </title>
+		<statement>
+			<sidebyside widths="55% 10% 35%">
+				<p>
+					A <m>1.2\text{-m}</m> baton has a <m>0.4\text{-kg}</m> ball at each end. The rod of the baton has considerably smaller mass which we can ignore in this problem. The baton is held at <m> 0.5\text{ m}</m> from one end and twirled so that the two masses rotate about a vertical axis at an angle of <m> 30^{\circ}</m> from the axis.  
+				</p>
+				<p> </p>
+				<figure xml:id="fig-ex-moment-of-inertia-baton-problem-1">
+					<caption></caption>
+					<image source="./images/rotation/ex-moment-of-inertia-baton-problem-1.png"/>
+				</figure>
+				 
+			</sidebyside>
+
+			<p>
+				(a) Find the distances of the two masses from the axis of rotation.
+			</p>
+			<p>
+				(b) Find the moment of inertia of the baton about the axis described in the problem.
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  (a) Draw a perpendicular from the mass to the axis - the length of that is the distance, which is the same as the radius. (b) USe point mass formula. </p> </hint> -->
+		<answer> <p> (a) <m> 0.35\text{ m}</m>, <m>0.25\text{ m}</m>  (b) <m>0.074\text{ kg.m}^2 </m>.</p> </answer>
+		<solution><title>a</title> 
+			<sidebyside widths="55% 10% 35%">
+				<p> 
+					We figure out the distances from the radii of the circles in which the balls move. We do that by dropping  
+					a perpendicular from the masses to the axis and using trig on the triangle formed.
+
+					<md>
+						<mrow> \amp R_1 = l_1\,\sin\,30^{\circ} = \dfrac{0.7}{2} = 0.35\text{ m}. </mrow>
+						<mrow> \amp R_2 = l_2\,\sin\,30^{\circ} = \dfrac{0.5}{2} = 0.25\text{ m}. </mrow>
+					</md>
+				</p>
+				<p> </p>
+				<figure xml:id="fig-ex-moment-of-inertia-baton-solution-1">
+					<caption></caption>				
+					<image source="./images/rotation/ex-moment-of-inertia-baton-solution-1.png"/>
+				</figure>
+				 
+			</sidebyside>
+		</solution>
+
+		<solution><title>b</title> 
+			<p> 
+				From the masses and the distances from the axis, we get
+				<me>
+					I = m_1 R_1^2 + m_2 R_2^2 = 0.4\times(0.35^2 + 0.25^2) = 0.074\text{ kg.m}^2.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+
+
+	<example xml:id="ex-Moment-of-Inertia-and-Angular-Momentum-of-a-Three-Particle-System"><title> Moment of Inertia and Angular Momentum of a Three Particle System </title>
+		<statement>
+			<sidebyside widths="60% 5% 30% 5%">
+				<p>
+					Three particles of masses <m>m_1</m>, <m>m_2</m>, and <m>m_3</m> are rotating  with angular speed  <m>\omega</m> about the given axis shown in <xref ref="fig-exer-mom-inert-1"/>.
+					Find the magnitude and direction of the total angular momentum in two different ways: (a) from a sum of the angular momentum of each particle, and (b) first finding the moment of inertia of the three as a system about the axis of rotation, and then multiplying the moment of inertia about the axis with the angular velocity about that axis.
+				</p>
+				<p></p>
+				<figure xml:id="fig-exer-mom-inert-1">
+					<caption></caption>
+					<image source="./images/rotation/exer-mom-inert-1.png" width="50%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+ 	
+
+		</statement>
+		<!-- <hint> <p> (a) Each particle has <m>l = m v r</m> with <m> v = \omega r</m>, (b) Each particle has <m>I = m r^2</m> and <m> l = I \omega</m>.  </p> </hint> -->
+		<answer> <p>  (a) <m>m_2\, \omega\, a^2\,\sin^2\theta</m>, up. (b) Same as (a).</p> </answer>
+		<solution> <title> a </title>
+			<sidebyside widths="60% 5% 30% 5%">
+				<p>
+					Each particle has angular momentum <m> l = mvr</m> where <m>r</m> is the radius of its circle of motion. Speed of its motion will be <m> v = \omega r </m>. Therefore, we will get
+
+					<md>
+						<mrow> \amp l_1 = 0,\ \text{ since } r_1 = 0.</mrow>
+						<mrow> \amp l_2 = m_2\, \left( \omega\, a\,\sin\theta \right)\, a\,\sin\theta ,\ \text{ since } r_2 = a\,\sin\theta.</mrow>
+						<mrow> \amp l_3 = 0,\ \text{ since } r_3 = 0.</mrow>
+					</md>
+					Using the right-hand rule, we get the direction of <m> \vec l_2</m> to be up. Therefore, the total angular momentum is <m>m_2\, \omega\, a^2\,\sin^2\theta</m>, pointed up.
+				</p>
+				<p></p>
+				<figure xml:id="fig-exer-mom-inert-1-solution">
+					<caption></caption>
+					<image source="./images/rotation/exer-mom-inert-1-solution.png" width="50%"/>
+				</figure>
+				<p></p>
+			</sidebyside>		
+	 
+		</solution>
+		<solution> <title>b</title>
+			<p>
+				The moment of inertia of a point particle is <m>mr^2</m> where <m>r</m> is the radius of its circle of motion. From the radii found in (a), we can immediately write the moment of inertia to be
+				<me>
+					I = 0 + m_2\,   a^2\,\sin^2\theta + 0.
+				</me>
+				Therefore, the magnitude of angular momentum will be <m> I\omega</m>, which is the same as we found in (a). The direction is found by applying the right-hand rule, which gives the direction up.
+
+			</p>
+
+		</solution>
+	</example>
+
+	<example xml:id="ex-Moment-of-Inertia-and-Angular-Momentum-of-a-Three-Particle-System-different-axis"><title> Moment of Inertia and Angular Momentum of a Three Particle System Different Axis</title>
+		<statement>
+			<sidebyside widths="60% 5% 30% 5%">
+				<p>
+					 
+						Three particles of masses <m>m_1</m>, <m>m_2</m>, and <m>m_3</m> are rotating  with angular speed  <m>\omega</m> about the given axis shown in the figure.
+						Find the magnitude and direction of the total angular momentum in two different ways:
+					 
+						(a) from a sum of the angular momentum of each particle, and 
+					 
+						(b) first finding the moment of inertia of the three as a system about the axis of rotation, and then multiplying the moment of inertia about the axis with the angular velocity about that axis.
+					 
+				</p>
+				<p></p>
+				<figure xml:id="fig-exer-mom-inert-2">
+					<caption></caption>
+					<image source="./images/rotation/exer-mom-inert-2.png" width="50%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+	
+
+		</statement>
+		<!-- <hint> <p> (a) Find the radii of each particles circle of motion. (b) Each particle has <m>I = m r^2</m> and <m> l = I \omega</m>.  </p> </hint> -->
+		<answer> <p>  (a) <m>\frac{\omega\, a^2}{\cos^2\theta}\, \left( m_1\, \sin^4\theta + m_3\,\cos^4\theta \right)</m>, to the right. (b) Same as (a).</p> </answer>
+		<solution> <title> a </title>
+			<sidebyside widths="60% 5% 30% 5%">
+				<p>
+					First, we figure out the radii of the circles of the motion of each particle. The figure is helpful in that.
+	 
+					<md>
+						<mrow> \amp r_1 = a\,\sin^2\,\theta/\cos\,\theta,</mrow>
+						<mrow> \amp l=r_2 = 0,</mrow>
+						<mrow> \amp r_3 = a\,\cos\,\theta.</mrow>
+					</md>
+					
+				</p>
+				<p> </p>
+				<image source="./images/rotation/exer-mom-inert-2-solution.png" width="40%"/>
+				<p></p>
+			</sidebyside>
+			<p>
+				Each particle has angular momentum <m> l = mvr</m> where <m>r</m> is the radius of its circle of motion. Speed of its motion will be <m> v = \omega r </m>, where <m>\omega</m> is same for all particles. 
+			</p>
+			<p>
+				Therefore, we will get
+				<md>
+					<mrow> \amp l_1 =  m_1\,\omega\, \left( a\,\sin^2\,\theta/\cos\,\theta \right)^2,</mrow>
+					<mrow> \amp l_2 = 0,</mrow>
+					<mrow> \amp l_3 =  m_3\,\omega\, \left(  a\,\cos\,\theta \right)^2.</mrow>
+				</md>
+				Both <m>l_1</m> and <m>l_3</m> are pointed in the same direction, to the direction right. Therefore, they will add, giving us the magntitude of the net angular momentum to be
+				<me>
+					L = \omega\, a^2\, \left( m_1\, \sin^4\theta/\cos^2\theta + m_3\,\cos^2\theta \right).
+				</me>
+				 
+			</p>
+		</solution>
+		<solution> <title> b </title>
+			<p>
+				The moment of inertia of a point particle is <m>mr^2</m> where <m>r</m> is the radius of its circle of motion. From the radii found in (a), we can immediately write the moment of inertia to be
+				<me>
+					I =  m_1\, a^2\,\sin^4\theta/\cos^2\theta +  0 + m_3\,a^2\,\cos^2\theta.
+				</me>
+				Therefore, the magnitude of angular momentum will be <m> I\omega</m>, which is the same as we found in (a). The direction is found by applying the right-hand rule, which gives the direction right.
+
+			</p>
+
+		</solution>
+	</example>
+
+
+	<subsection><title>Moment of Inertia of a Uniform Rod </title>
+	<idx><h>Moment of Inertia</h><h>Uniform Rod</h></idx>
+
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				We look at the simplest continuous mass system - a rod of length <m>L</m> and mass <m>M</m>, rotating about an axis that passes through one edge perpendicular to the rod as shown in the figure. 
+			</p>
+			<p>
+			</p>
+			<figure xml:id="fig-rotating-bar-axis-at-edge">
+				<caption></caption>
+				<image source="./images/rotation/rotating-bar-axis-at-edge.png"/>
+			</figure>
+		</sidebyside>
+
+		
+		<p>
+			If we divide up the rod into <m> N </m> parts, we can essentially turn the rod into <m> N</m>-particle system as shown in <xref ref="fig-moment-of-inertia-rotating-bar-axis-at-edge-N-parts"/>.
+		</p>
+		<figure xml:id="fig-moment-of-inertia-rotating-bar-axis-at-edge-N-parts">
+			<caption>
+				We divide up the rod into <m> N</m> (shown 7) equal cells and place the masses in each piece at one end of each cell. We can then use the formula for the moment of inertia of each mass to estimate the moment of inertia of the rod.
+			</caption>
+
+			<image source="./images/rotation/moment-of-inertia-rotating-bar-axis-at-edge-N-parts.png" width="70%"/>
+		</figure>
+		<p>
+			For simplicity, let us take the segments to be of equal length  <m> \Delta r</m>,
+			<me>
+				\Delta r = \dfrac{L}{N}.
+			</me>
+			We now place the masses in each segment at the right end of the segments. This gives us the distance <m> R_i</m> to the <m> i</m>-th mass as follows,
+			<me>
+				R_i = i\Delta r,
+			</me>
+			with mass in each segment
+			<me>
+				m_i = \dfrac{M}{N}.
+			</me>
+			This will result in the following formula for the moment of inertia.		
+			<me>
+				I = \sum_{i=}^{N}m_i R_i^2 = \dfrac{M (\Delta r)^2 }{N}\sum_{i=1}^{N}\, i^2.
+			</me>
+			The sum the squares of integers is known to be
+			<me>
+				\sum_{i=1}^{N}\, i^2 = \dfrac{N  (N + 1)  (2N + 1)}{6}.
+			</me>
+			Therefore, dividing up the rod in <m> N</m> equal parts gives us the following formula for the moment of inertia of the rod.
+			<me>
+				I =  \dfrac{M (\Delta r)^2 }{N} \times \dfrac{N  (N + 1)  (2N + 1)}{6}.
+			</me>
+			Cancelling <m> N </m> from numerator and denominator simplifies this to
+			<me>
+				I = \dfrac{1}{6}\, M (\Delta r)^2  (N + 1)  (2N + 1).
+			</me>
+			Now, the original rod had many particles; in an ordinary sized rod, <m> N </m> would be of the order of Avogadro number, <m> N_A = 6 \times 10^{23}</m>. That will make adding 1 to <m> N </m> or to <m> 2N</m> insignificant. Thus,
+			<me>
+				I = \dfrac{1}{6}\, M (\Delta r)^2  \times 2N^2 = \dfrac{1}{3} M (N\Delta r)^2.
+			</me>
+			Using <m> N\Delta r = L</m>, the length of the rod, we finally get the formula for moment inertia of a rod about an axis through one end.
+			<men>
+				I_{\text{rod}}^{\text{axis-at-end}} = \dfrac{1}{3}\, M L^2.
+			</men>							
+		</p>
+	</subsection>	
+
+
+
+	<example xml:id="ex-A-Chain-of-Rings-Rotating-About-an-Axis-Through-One-End"><title> A Chain of Rings Rotating About an Axis Through One End </title>
+		<statement>
+			<sidebyside widths="60% 40%">
+				<p>
+					N rings, each of mass <m>m</m>, are linked together into a chain and hung from the middle.  The chain is then rotated at an angular speed of <m>\omega</m> such that the angle with the vertical is <m>\theta</m> as shown in the figure. Model the chain as a sequence of masses separated by distance <m> a </m>, and find the magnitude and direction of angular momentum.
+				</p>
+				<figure xml:id="fig-exer-mom-inert-3">
+					<caption></caption>
+					<image source="./images/rotation/exer-mom-inert-3.png" width="50%" />
+				</figure>
+			</sidebyside>
+			
+
+		</statement>
+		<hint> <p> Use <m>L=I\omega</m>. Find <m>I</m> by adding up the <m>I</m> of each ring. You may fin dit helpful to focus on an arbitrary <m>i</m>-th ring.  </p> </hint>
+		<answer> <p> <m> \left( m a^2 \sin^2\theta\right)\,  \dfrac{N(N+1)(2N+1)}{6}\, \omega</m>, in direction up.  </p> </answer>
+		<solution> 
+			<p>
+				Let <m>r_i</m> be the radius of the circle in which the  <m>i</m>-th ring rotates. The distance of this ring from the support is <m>ia</m>. Therefore, the moment of inertia of this ring is
+				<me>
+					I_i = mr_i^2 = m \left( i a \sin\,\theta\right)^2 = \left( m a^2 \sin^2\theta\right)\, i^2. 
+				</me>
+				Summing these for all <m>N</m> rings gives
+				<md>
+					<mrow> I \amp = \sum I_i = \left( m a^2 \sin^2\theta\right)\, \sum_{i=1}^{N} i^2 </mrow>
+					<mrow> \amp =  \left( m a^2 \sin^2\theta\right)\,  \dfrac{N(N+1)(2N+1)}{6}. </mrow>
+				</md>
+				Therefore, the magnitude of angular momentum will be
+				<me>
+					L = I\omega = \left( m a^2 \sin^2\theta\right)\,  \dfrac{N(N+1)(2N+1)}{6}\, \omega.
+				</me>
+				By using the right-hand rule, the direction of <m>\vec L</m> is up.
+			</p>
+		</solution>
+	</example>
+
+
+	<subsection><title> The Parallel-Axis Theorem </title>
+	<idx><h>Moment of Inertia</h><h>Parallel-Axis Theorem</h></idx>
+	<idx>Parallel-Axis Theorem</idx>
+
+		<p>
+			The parallel-axis theorem establishes a relation between the moment of inertia about an axis through the  center of mass  and about another axis that is parallel to this axis. We will state it here and prove in the Calculus-based section.
+		</p>
+		<sidebyside widths="55% 5% 40%">
+			<p>
+				Let <m> M</m> be the mass of the object, <m> I_{\text{cm}}</m> be the moment of inertia about an axis through the center of mass and <m> I_{\text{A}}</m> be the moment of inertia about a parallel axis that is a distance <m> d</m> away. Then,
+				<men>
+					I_{\text{A}} = I_{\text{cm}} + M\,d^2.
+				</men> 
+			</p>
+			<p></p>
+			<figure xml:id="fig-parallel-axis-theorem">
+				<caption></caption>
+				<image source="./images/rotation/parallel-axis-theorem.png"/>
+			</figure>
+		
+		</sidebyside>
+
+		<example xml:id="Moment-of-Inertia-Through-CM-of-a-Rod"><title> Moment of Inertia Through the CM of a Rod</title>
+			<statement>
+				<p> 
+					The moment of inertial of a rod of length <m> L </m> and mass <m> M</m> about an axis through one edge and perpendicular to the rod is given by
+					<me>
+						I_{\text{edge}} = \dfrac{1}{3}ML^2.
+					</me>
+				 	Find the moment of inertia of the rod about an axis through the center of the rod and perpendicular to the rod.
+				</p>
+
+			</statement>
+			<!-- <hint> <p>  Use parallel axis theorem. </p> </hint> -->
+			<answer> <p> <m> \dfrac{1}{12}ML^2</m>.  </p> </answer>
+			<solution> 
+				<p> Using the parallel axis theorem, we can write the following relation.
+					<me>
+						I_{\text{edge}} = I_{\text{cm}} + M\,\left( \dfrac{L}{2} \right)^2
+					</me>
+					Using the formula, <m> I_{\text{edge}} = \dfrac{1}{3}ML^2</m>, given to us, we get
+					<me>
+						I_{\text{cm}} = \left( \dfrac{1}{3} - \dfrac{1}{4}  \right)\, ML^2 = \dfrac{1}{12}\,ML^2.
+					</me>
+				</p>
+			</solution>
+		</example>
+	</subsection>
+
+
+
+	<subsection><title>Radius of Gyration</title>
+	<idx><h>Moment of Inertia</h><h>Radius of Gyration</h></idx>
+	<idx>Radius of Gyration</idx>
+
+		<p>
+			We ask the following question: suppose we replace a rotating body of mass <m>M</m> by a point particle of the same mass <m> M</m>, at what distance should we place this fictitious particle so that its moment of inertia will be the same as that of the original body? This distance is called the <term>radius of gyration </term>, which is denoted by <m> R_G</m>.
+		</p>
+
+		<p>
+			For instance, the moment of inertia of a disk of mass <m>M</m> and radius <m>R</m> about an axis through the center and perpendicular to the disk is
+			<me>
+				I_{\text{disk}}^{\perp} = \dfrac{1}{2} MR^2.
+			</me>
+			Replacing the disk by a point mass <m>R_G</m> away from the axis will mean
+			<me> 
+				I_\text{particle} = M R_G^2 = \dfrac{1}{2} MR^2 = I_{\text{disk}}^{\perp},</me>
+			which gives
+			<me>
+				R_G = \dfrac{1}{\sqrt{2}}\,R.
+			</me>
+			This is not the only <m> R_G</m> in a disk. If we rotate the disk about an axis through the center but the axis is in the plane of the face of the disk, then, we will have
+			<me> M R_G^2 = \dfrac{1}{4} MR^2,</me>
+			giving
+			<me>
+				R_G = \dfrac{1}{2}\,R.
+			</me>
+			Thus, there is not one <m> R_G </m> per object, but one <m> R_G</m> per axis, unless the object is fully symmetric, such as a sphere. In that case there is only one <m> R_G</m>, which is 
+			<me>
+				R_G^{\text{sphere}} = \dfrac{\sqrt{2}}{\sqrt{5}}\, R,
+			</me>
+			since moment of inertia of a sphere through any axis through its center is 
+			<me>
+				I_{\text{sphere}} = \dfrac{2}{5}\,MR^2.
+			</me>
+		</p>
+	</subsection>
+
+
+
+
+
+
+
+
+	<subsection><title>(Calculus) Moment of Inertia of a Uniform Rod </title>
+		<p>
+			The non-Calculus derivation of the moment of inertia of a rod about its end done above is difficult to generalize to more complicated objects, such as disk. Here, we introduce the Calculus aproach to the same problem. 
+		</p>
+
+		<sidebyside widths="40% 5% 55%">		
+			<p>
+				We start with noting that moment of inertia will be the sum of moment onertia of all the particles of the rod. Let us look at the infinitesimal mass <m> \delta m</m> that is between <m> r </m> and <m> r + dr </m> from the end of the rod. 
+			</p>
+			<p> </p>
+			<figure xml:id="fig-moment-of-inertia-rotating-bar-axis-at-edge-diff-elem">
+				<caption></caption>
+				<image source="./images/rotation/moment-of-inertia-rotating-bar-axis-at-edge-diff-elem.png" width="70%"/>
+			</figure>
+		</sidebyside>
+			<p>
+				Assuming mass is distributed uniformly over the length of the rod, we can immediately write the value of <m> \delta m</m>.
+				<me>
+					\delta m = \dfrac{M}{L}\, dr.
+				</me>
+			</p>
+
+			
+
+		<p>
+			Since this is at a distance <m> r </m> from the axis, its moment of inertia is
+			<me>
+				\delta I = r^2 \delta m = \dfrac{M}{L}\, r^2 dr.
+			</me>
+			Adding the contributions of all the particles can be achieved by integrating this from <m> r = 0 </m> to <m> r = L</m>, giving the following for the moment of inertia of the rod.
+			<me>
+				I = \int_0^L\, \dfrac{M}{L}\, r^2 dr = \dfrac{M}{L}\times \dfrac{L^3}{3}.
+			</me>
+			Simplifying this gives us the same answer we found above.
+			<me>
+				I_{\text{rod}}^{\text{axis-at-end}} = \dfrac{1}{3}\, M L^2.
+			</me>
+		</p>
+	</subsection>
+
+	<subsection><title> (Calculus) Proof of the Parallel Axis Theorem </title>
+		<idx><h>Parallel Axis Theorem</h><h>Proof</h></idx>
+		<p>
+			Let us choose the <m> z </m> axis to be the orientation of the two parallel axes, one through the CM and the other through the axis A as shown in <xref ref="fig-parallel-axis-theorem-proof"/>. Let origin be at the CM, which would mean
+			<me>
+				\int x dm = 0,\ \ \int y dm = 0, \ \ \int z dm = 0.
+			</me>
+			The moment of inertia about axis through the CM will be
+			<me>
+				I_{\text{cm}} = \int \left( x^2 + y^2 \right)\, dm.
+			</me>
+		</p>
+		<figure xml:id="fig-parallel-axis-theorem-proof">
+			<caption>
+				The diagram for parallel axis theorem proof. For clarity, the <m> y</m> axis has been supressed and we have drawn <m> x</m> axis in the direction from P to the CM. 
+			</caption>
+			<image source="./images/rotation/parallel-axis-theorem-proof.png" width="50%"/>
+		</figure>
+		<p>
+
+			If axis A intersects the plane (perpendicular to the axes that contains the CM) at point P with cooridinates <m> (x_P, y_P, 0) </m> with respect to the coordinate system with origin at the CM, then
+			<me>
+				x_P^2 + y_P^2  = d^2.
+			</me>
+			With another coordinate system, say P<m>x'y'z'</m> with origin at P, we get the moment of inertial expression for <m> I_{\text{A}} </m>.
+			<me>
+				I_{\text{A}} = \int \left( x'^2 + y'^2 \right)\, dm',
+			</me>
+			with 
+			<me>
+				x' = x-x_P,\ y' = y-y_P,\ z' = z,\  dm'=dm.
+			</me>			
+			Substituting this in <m> I_{\text{A}}</m> we get
+			<md>
+				<mrow> I_{\text{A}} \amp = \int \left( (x-x_P)^2 + (y-y_P)^2 \right)\, dm,</mrow>
+				<mrow>   \amp = \int \left( x^2 + y^2 \right)\, dm - 2x_P\int xdm - 2y_P\int ydm + d^2\int dm,</mrow>
+				<mrow>   \amp = I_{\text{cm}} + 0 + 0 + Md^2.</mrow>
+
+			</md>
+			Therefore,
+			<me>
+				I_{\text{A}} = I_{\text{cm}} +  Md^2.
+			</me>			
+
+	 
+		</p>
+	</subsection>
+
+
+
+	<subsection><title>(Calculus) Moment of Inertia of a Uniform Body </title>
+	<idx><h>Moment of Inertia</h><h>Uniform Body</h></idx>
+		<p>
+ 			The method illustrated above for the moment of inertia of a rod, can be generalized for any uniform body. Let <m> \delta m</m> be an infinitesimal mass element whose distance from the axis is <m> r </m>, then its contribution to moment of inertia will be
+			<me>
+				\delta I = r^2 \delta m.
+			</me> 
+		</p>
+
+		<p>
+			We are using the notation <m> \delta m</m>  for an infinitesimal mass rather than <m> dm</m> since we usually do not do an integral over this variable, but rather use it to think about the problem, and replace <m> \delta m</m>  by one of the infinitesimal expressions given below, and then perform appropriate integral.
+			<men>
+				I = \int\, r^2 \delta m.
+			</men> 
+		</p>
+		<p>
+
+			The mass <m> \delta m</m> will be the mass in an infinitesimal line (e.g., a bar) or an area (e.g., a thin disk) or a volume (e.g., a sphere). Depending on the situation, we will get different expressions for <m> \delta m</m>. 
+			<me>
+				\delta m =  \begin{cases}
+					(M/L)\, dr, \amp \text{for mass in a line segment}\\
+					(M/A)\, dxdy, \amp \text{for mass in a rectagular plane area element}\\
+					(M/A)\, rdrd\theta, \amp \text{for mass with area in polar coordinates}\\
+					(M/V)\, dx dy dz, \amp \text{for mass in a rectangular box volume element}\\
+					(M/V)\, r^2\sin\,\theta\,dr d\theta d\phi, \amp \text{for mass in a spherical element}
+				\end{cases}
+			</me>			
+		</p>
+	</subsection>
+
+
+		
+	<subsection><title>(Calculus) Principal Axes and Moment of Inertia Tensor</title>
+	<idx>Principal Axes</idx>
+	<idx>Moment of Inertia Tensor</idx>
+		<p>
+			If a body has a rotational symmetry, we can direct the Cartesian axes to take advantage of that symmetry and simplify the expressions of moment of inertia. 
+		</p>
+		<p>
+			What happens if rotating body does not have a rotational symmetry? Turns out that every rigid body, regardless of shape, has three mutually perpendicular special directions in space, called principal axes. The moment of inertia about these principal axes are called <term> principal moments</term>.
+		</p>
+		<p> 
+			Suppose we choose Cartesian axes along the principal axes, and call the moments of inertia about them to be <m> I_{xx}</m>, <m> I_{yy}</m>, and <m> I_{zz}</m>. Then, the angular momentum vector for any arbitrary rotation with <m>\omega = (\omega_x,\ \omega_y,\ \omega_z) </m> will have the following components.
+			<mdn>
+				 <mrow> \amp L_x = I_{xx}\omega_x, </mrow>
+				 <mrow> \amp L_y = I_{yy}\omega_y, </mrow>
+				 <mrow> \amp L_z = I_{xx}\omega_z. </mrow>
+			</mdn>
+		</p>
+		<p>
+			In a general situation, if you are not using principal axes for your Cartesian coordinates, then, you would find that a component of the angular momentum, say <m> L_x </m> depends on all three components of <m> \vec \omega</m>.
+			<men>
+				L_x = I_{xx}\omega_x + I_{xy}\omega_y + I_{xz}\omega_z,
+			</men>
+			where coefficients   <m>I_{xy}</m> and <m> I_{xz} </m> of <m> \omega_y </m> and <m> \omega_z</m>, respectivley, are also moments of inertia, called the off-diagonal elements of the moment of inertia tensor. Their formulas are different than the diagonal elements. Similarly, for <m> L_y</m> and <m> L_z</m>. For a curious student, the formulas for various moments of inertia are listed here. 
+			<mdn>
+				<mrow> \amp I_{xx} = \int\, (y^2 + z^2)\, dm, </mrow>
+				<mrow> \amp I_{yy} = \int\, (z^2 + x^2)\, dm, </mrow>
+				<mrow> \amp I_{zz} = \int\, (x^2 + y^2)\, dm, </mrow>
+				<mrow> \amp I_{xy} = I_{yx} = -\int\, x\,y\, dm , </mrow>
+				<mrow> \amp I_{yz} = I_{zy} = -\int\, y\,z\, dm , </mrow>
+				<mrow> \amp I_{zx} = I_{xz} = -\int\, z\,x\, dm . </mrow>
+			</mdn>
+		</p>
+	</subsection>
+
+
+
+
+	<exercises>
+
+
+	<exercise xml:id="Moment-of-Inertia-of-a-Disk-with-a-Hole-in-the-Center-Negative-Mass-Trick"><title> Moment of Inertia of a Disk with a Hole in the Center - Negative Mass Trick </title>
+		<statement>
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					You cut out a circular hole of radius <m>b</m> from a disk of radius <m>a</m> and mass <m>M</m>. What is the moment of inertia of the resulting disk with the hole about an axis perpendicular to the disk and passing through the center? Assuming uniform density.
+				</p>
+				<p> </p>
+				<figure xml:id="fig-ex-moment-disk-with-hole-in-center">
+					<caption></caption>
+					<image source="./images/rotation/ex-moment-disk-with-hole-in-center.png" width="60%"/>
+				</figure>
+			</sidebyside>
+				
+		</statement>
+		<hint> <p> Think of hole as another disk with negative mass density.  </p> </hint>
+		<answer> <p>  <m>  \dfrac{1}{2} M a^2 \left( 1 - \dfrac{b^4}{a^4} \right).</m> </p> </answer>
+		<solution> 
+			<p>
+				Let <m>\rho</m> be the density and <m>h</m> the thickness. 
+				<me>
+					\rho = \dfrac{M}{\pi a^2 h}.
+				</me>
+				Now, we think of the disk with the hole as a complete disk of radius <m>a</m> and density <m>\rho</m> and a second disk of radius <m>b</m> but of density <m>-\rho</m>. This way of treating hole in a material is called the negative mass trick. The moments of inertia of these two disks will be
+				<md>
+					<mrow> I_a \amp = \dfrac{1}{2} M_a a^2 = \dfrac{1}{2} M a^2,</mrow>
+					<mrow>  I_b \amp = \dfrac{1}{2} M_b b^2 = -\dfrac{1}{2} \pi b^2 h \rho b^2.</mrow>
+				</md>
+				We can write <m>I_b</m> in terms of <m>M</m> as follows
+				<me>
+					I_b = -\dfrac{1}{2} M \dfrac{b^4}{a^2}.
+				</me>
+				Adding the two moments we get
+				<me>
+					I = I_a + I_b = \dfrac{1}{2} M a^2 \left( 1 - \dfrac{b^4}{a^4} \right).
+				</me>
+				 
+
+			</p>
+		</solution>
+	</exercise>
+	<exercise xml:id="Moment-of-Inertia-of-a-Disk-with-Off-Axis-Hole-Negative-Mass-Trick"><title> Moment of Inertia of a Disk with Off-Axis Hole - Negative Mass Trick </title>
+	<idx><h>Moment of Inertia</h><h>Negative Mass Trick</h></idx>
+		<statement>
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					You cut out a circular hole of radius <m>b</m> from a disk of radius <m>a</m> and mass <m>M</m>. The center of the hole is at a distance <m> c</m> from the axis of rotation, which is perpendicular to the disk and passes through the center.  What is the moment of inertia of the resulting disk  about the axis through the center? Assuming uniform density.
+				</p>
+				<p> </p>
+				<figure xml:id="fig-ex-moment-disk-with-off-axis-hole">
+					<caption></caption>
+					<image source="./images/rotation/ex-moment-disk-with-off-axis-hole.png" width="60%"/>
+				</figure>
+			</sidebyside>
+
+		</statement>
+		<hint> <p> Think of hole as another disk with negative mass density and use parallel axis theorem. </p> </hint>
+		<answer> <p>  <m> \dfrac{1}{2} M a^2 \left( 1 - \dfrac{b^2(b^2 + 2c^2)}{a^4} \right).</m> </p> </answer>
+		<solution> 
+			<p> 
+				First we fill the hole with negative density material to get a complete disk. Thus, replacing the disk with a hole by two complete disks, one of mass <m> M</m> and radius <m>a</m> and another of mass <m>-M b^2/a^2</m> and radius <m>b</m>, but rotating with axis to center distance <m>c</m>. 
+			</p>
+			<p>
+				The moment of inertia of the off-axis disk can be obtained by applying the parallel axis theorem. Thus, the moments of inertia of the two disks are
+				<md>
+					<mrow> I_a \amp = \dfrac{1}{2} M a^2 </mrow>
+					<mrow> I_b \amp = -\dfrac{1}{2} M \dfrac{b^2}{a^2} b^2 - M \dfrac{b^2}{a^2} c^2  </mrow>
+				</md>
+				Therefore, the moment of inertial of the disk with the hole is
+				<me>
+					I = I_a + I_b = \dfrac{1}{2} M a^2 \left( 1 - \dfrac{b^2(b^2 + 2c^2)}{a^4} \right).
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Moment-of-Inertia-of-Rod-about-Axis-Through-the-Center"><title>(Calculus)  Moment of Inertia of Rod about Axis Through the Center </title>
+		<statement>
+			<p>
+				Derive the expression for the moment of inertia of a uniform rod of mass <m>M</m> and length <m>L</m> about an axis through its center and perpendicular to the rod.
+			</p>
+
+		</statement>
+		<hint> <p> Set up moment of inertial of an element at <m>x</m> away from axis.  </p> </hint>
+		<answer> <p>  <m>\dfrac{1}{12}ML^2</m> </p> </answer>
+		<solution> 
+			<p>
+				<xref ref="fig-mom-inertia-rod-abt-ctr-calc"/> shows the setup for the calculaton. We place the rod symmetrically on the <m>x</m>axis. Looking at the moment of inertia of a segment at distance <m>x</m> from the axis we note that the moment of inertial of <m>\delta m</m> in the segment will be
+				<me>
+					\delta I = \delta m\, x^2 = (M/L)dx\, x^2.
+				</me>
+			</p>
+			<figure xml:id="fig-mom-inertia-rod-abt-ctr-calc">
+				<caption>
+					Figure for <xref ref="ex-Moment-of-Inertia-of-Rod-about-Axis-Through-the-Center"/> solution.
+				</caption>
+				<image source="./images/rotation/mom-inertia-rod-abt-ctr-calc.png" width="50%"/>
+			</figure>
+			<p>
+				Integrating this from <m>x=-L/2</m> to <m>x=L/2</m> will give the answer we seek.
+				<md>
+					<mrow> I \amp = (M/L)\int_{-L/2}^{L/2}\, x^2 dx = 2(M/L)\int_{0}^{L/2}\, x^2 dx, </mrow>
+					<mrow> \amp  = \dfrac{2M}{L}\, \dfrac{1}{3}\,\left( \dfrac{L}{2}\right)^3 = \dfrac{1}{12}\,ML^2.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<!-- <exercise xml:id="ex-Moment-of-Inertia-of-Recangular-Plate-about-an-Axis-Through-the-Center"><title>(Calculus)  Moment of Inertia of Recangular Plate about an Axis Through the Center TODO </title>
+		<statement>
+			<p>
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p>   </p> </answer>
+		<solution> 
+			<p>
+			</p>
+		</solution>
+	</exercise> -->
+
+
+	<exercise xml:id="ex-Moment-of-Inertia-of-Triangular-Plate-about-an-Axis-Through-the-Corner"><title>(Calculus)  Moment of Inertia of Triangular Plate about an Axis Through the Corner </title>
+		<statement>
+			<p>
+				Derive the expression for the moment of inertia of a uniform right-angled triangle of mass <m>M</m>, base <m>b</m>, and height <m>h</m> about an axis through the corner of base and hypoteneus and parallel to the height side.
+			</p>
+		</statement>
+		<hint> <p>  Place axes with origin at the corner through which axis passes and <m>x</m> axis along the base. Set up moment of inertia of an element at <m>x</m> away from axis.   </p> </hint>
+		<answer> <p> <m>\dfrac{1}{2} M b^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				<xref ref="fig-mom-inertia-triangle-abt-corner-calc"/> shows the setup for the calculaton. We place origin at the corner through which axis passes and point <m>x</m> axis along the base. The axis of rotation is the <m>y</m> axis. 
+			</p>
+			<figure xml:id="fig-mom-inertia-triangle-abt-corner-calc">
+				<caption>
+					Figure for <xref ref="ex-Moment-of-Inertia-of-Rod-about-Axis-Through-the-Center"/> solution.
+				</caption>
+				<image source="./images/rotation/mom-inertia-triangle-abt-corner-calc.png" width="50%"/>
+			</figure>
+			<p>
+				Now, we look at element of width <m>dx</m> and height <m>y</m> at a distance <m>x</m> from the axis. Its moment of inertia is
+				<me>
+					\delta I = \delta m\, x^2 = \left( \dfrac{M}{A}\, ydx \right)\, x^2,
+				</me>
+				where <m>A = (1/2)bh</m>, the area of the triangle. Here <m>y = (h/b) x</m>. Therefore, we have for the moment of inertia of the element as
+				<me>
+					\delta I =   \dfrac{Mh}{Ab} \, x^3 dx.
+				</me>
+				Integrating from <m>x=0</m> to <m>x=b</m> will give us the answer.
+				<md>
+					<mrow> I \amp = \dfrac{Mh}{Ab} \, \int_0^b\, x^3 dx = \dfrac{Mh}{Ab}\times \dfrac{b^4}{4}. </mrow>
+				</md>
+				We can simplify it 
+				<me>
+					\dfrac{2Mh}{bhb}\times \dfrac{b^4}{4} = \dfrac{1}{2} M b^2.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Moment-of-Inertia-of-Right-Triangular-Plate-about-one-Edge"><title>(Calculus)  Moment of Inertia of Right Triangular Plate About one Edge  </title>
+	<idx><h>Moment of Inertia</h><h>Right Triangular Plate</h></idx>
+		<statement>
+			<p>
+				Derive the expression for the moment of inertia of a uniform right-angled triangle of mass <m>M</m>, base <m>b</m>, and height <m>h</m> about an axis  coincident with the height side.
+			</p>
+		</statement>
+		<hint> <p>   Choose <m>y</m> axis to be axis of rotation. Set up moment of inertia of an element at <m>x</m> away from axis.   </p> </hint>
+		<answer> <p> <m>\dfrac{1}{6}Mb^2</m>  </p> </answer>
+		<solution> 
+			<p>
+				<xref ref="fig-mom-inertia-triangle-abt-corner-calc"/> shows the setup for the calculaton. We place origin at the corner of right-angle. With axis of rotation to be the <m>y</m> axis, we have base along <m>x</m> axis. 
+			</p>
+			<figure xml:id="fig-mom-inertia-triangle-abt-side-calc">
+				<caption>
+					Figure for <xref ref="ex-Moment-of-Inertia-of-Right-Triangular-Plate-about-one-Edge"/> solution.
+				</caption>
+				<image source="./images/rotation/mom-inertia-triangle-abt-side-calc.png" width="50%"/>
+			</figure>
+			<p>
+				Now, we look at element of width <m>dx</m> and height <m>y</m> at a distance <m>x</m> from the axis. Its moment of inertia is
+				<me>
+					\delta I = \delta m\, x^2 = \left( \dfrac{M}{A}\, ydx \right)\, x^2,
+				</me>
+				where <m>A = (1/2)bh</m>, the area of the triangle. Here <m>y = h - (h/b) x</m>. Therefore, we have for the moment of inertia of the element as
+				<me>
+					\delta I =   \dfrac{M}{A} \, \left( h x^2 -(h/b) x^3 \right) dx.
+				</me>
+				Integrating from <m>x=0</m> to <m>x=b</m> will give us the answer.
+				<md>
+					<mrow> I \amp = \dfrac{M}{A} \times \dfrac{hb^3}{12} =  \dfrac{1}{6}Mb^2. </mrow>
+				</md>
+ 			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center"><title>(Calculus)  Moment of Inertia of Thin Disk about an Axis Through the Center and Perpendicular to Disk </title>
+	<idx><h>Moment of Inertia</h><h>Thin Disk</h></idx>
+		<statement>
+			<p>
+				Derive the expression for the moment of inertia of a uniform thin disk of mass <m>M</m>  and radius <m>R</m> about an axis through the center and perpendicular to the disk.
+			</p>
+
+		</statement>
+		<hint> <p> Think of a disk being made up of rings. A ring has all masses same distance from the center. Therefore, moment of inertia of ring will be <m>m r^2</m>. You need to think of how to add them.  </p> </hint>
+		<answer> <p> <m>\dfrac{1}{2}\,MR^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				<xref ref="fig-mom-inertia-disk-abt-ctr-perp-calc"/> shows setup for claculations. The axis in coming-out-of page in the figure.
+			</p>
+			<figure xml:id="fig-mom-inertia-disk-abt-ctr-perp-calc" >
+				<caption>
+					Figure for <xref ref="ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center"/> solutiuon. 
+				</caption>
+				<image source="./images/rotation/mom-inertia-disk-abt-ctr-perp-calc.png" width="50%"/>
+			</figure>
+			Now we look at an element of the disk in the shape of a ring between <m>r</m> and <m>r+dr</m>. All masses in the ring would rotated from the axis at a distance <m>r</m>. Therefore,  moment of inertia of the ring element will be
+			<me>
+				\delta I = \delta m \times r^2 =   \left( \dfrac{M}{A}\, 2\pi r dr \right)\, r^2,
+			</me>
+			where <m>A=\pi R^2</m> and <m>2\pi r dr </m> is the area of the ring. We would integrate this from <m>r=0</m> to <m>r=R</m> to find <m>I</m>.
+
+			<md>
+				<mrow> I \amp = \dfrac{2M}{R^2}\, \int_0^R r^3 dr = \dfrac{1}{2}\,MR^2. </mrow>
+			</md>
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center-and-Coplanar-to-Disk"><title>(Calculus)  Moment of Inertia of Thin Disk about an Axis Through the Center and Coplanar to Disk </title>
+		<statement>
+			<p>
+				Derive the expression for the moment of inertia of a uniform thin disk of mass <m>M</m>  and radius <m>R</m> about an axis through the center and coplanar to the disk, i,e., along one of its diameter.
+			</p>
+		</statement>
+		<hint> <p> Take <m>y</m> axis to be axis of rotation and an element between <m>x</m> anx <m>x+dx</m> parallel to <m>y</m> axis.  </p> </hint>
+		<answer> <p> <m>\dfrac{1}{4}\,MR^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				<xref ref="fig-mom-inertia-disk-abt-ctr-paralell-disk-calc"/> shows setup for claculations. The axis is along <m>y</m> axis.
+			</p>
+			<figure xml:id="fig-mom-inertia-disk-abt-ctr-paralell-disk-calc" >
+				<caption>
+					Figure for <xref ref="ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center-and-Coplanar-to-Disk"/> solutiuon. 
+				</caption>
+				<image source="./images/rotation/mom-inertia-disk-abt-ctr-paralell-disk-calc.png" width="50%"/>
+			</figure>
+			Now we look at an element of the disk in rectangular shape  between <m>x</m> and <m>x+dx</m>. The area of the element will be <m>2ydx</m> since the length is <m>2y</m> and width <m>dx</m>. The <m>y</m> in the element area is
+			<me>
+				y = \sqrt{R^2 - x^2}.
+			</me>
+			All masses in the element would rotated from the axis at a distance <m>x</m>. Therefore,  moment of inertia of the ring element will be
+			<md>
+				<mrow> \delta I \amp = \delta m \times x^2 =   \left( \dfrac{M}{A}\, 2ydx \right)\, x^2,</mrow>
+				<mrow> \amp =  \dfrac{2M}{\pi R^2}\, x^2 \sqrt{R^2 - x^2}\, dx</mrow>
+			</md>
+			We would integrate this from <m>x=-R</m> to <m>r=R</m> to find <m>I</m>. Since integrand is an even function of <m>x</m>. That would mean we will get <m>2</m> times integral from <m>x=0</m> to <m>r=R</m>.
+			<md>
+				<mrow> I \amp = \dfrac{2M}{\pi R^2}\,2\times\,\int_0^R x^2 \sqrt{R^2 - x^2}\, dx. </mrow>
+			</md>
+			The integral is difficult to do. I typed the command <c>integrate x^2*sqrt(R^2-x^2), x</c> in <url href="https://www.wolframalpha.com/"><c>https://www.wolframalpha.com/</c></url> and found the following answer.
+			<md>
+				<mrow> \int_0^R x^2 \sqrt{R^2 - x^2}\, dx \amp  = \dfrac{1}{8}\left[  x\sqrt{R^2 - x^2}\left( 2x^2 - R^2\right) \right.</mrow>
+				<mrow> \amp  \ \ + R^4\tan^{-1}\left.\left( \dfrac{x}{R^2-x^2}\right)\right]_0^R,</mrow>
+				<mrow> \amp  = \dfrac{1}{8}\left[ 0 - 0 + \dfrac{\pi}{2} - 0\right] = \dfrac{\pi}{16}.</mrow>
+			</md>
+			Therefore,
+			<me>
+				I =  \dfrac{4M}{\pi R^2} \times \dfrac{\pi}{16} = \dfrac{1}{4}\,MR^2.
+			</me>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Moment-of-Inertia-of-a-Sphere-about-an-Axis-Through-the-Center"><title>(Calculus)  Moment of Inertia of a Sphere about an Axis Through the Center </title>
+	<idx><h>Moment of Inertia</h><h>Sphere</h></idx>
+		<statement>
+			<p>
+				Derive the expression for the moment of inertia of a uniform sphere of mass <m>M</m>  and radius <m>R</m> about an axis through the center of the sphere.
+			</p>
+
+		</statement>
+		<hint> <p>  With <m>z</m> axis as axis of rotation, consider thin disk between <m>z</m> and <m>z+dz</m>. </p> </hint>
+		<answer> <p> <m>\frac{2}{5}MR^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				<xref ref="fig-mom-inertia-sphere-abt-ctr"/> shows setup for claculations. The axis of rotation is <m>z</m> axis in the figure.
+			</p>
+			<figure xml:id="fig-mom-inertia-sphere-abt-ctr" >
+				<caption>
+					Figure for <xref ref="ex-Moment-of-Inertia-of-a-Sphere-about-an-Axis-Through-the-Center"/> solutiuon. 
+				</caption>
+				<image source="./images/rotation/mom-inertia-sphere-abt-ctr.png" width="50%"/>
+			</figure>
+			<p>
+				Now we look at an element of the sphere in the shape of a disk perpendicular to <m>z</m> axis between <m>z</m> and <m>z+dz</m>. The radius of the disk <m>r</m> is
+				<me>
+					r = \sqrt{R^2 - z^2}.
+				</me>
+				Therefore, volume of the element is
+				<me>
+					dV = \pi r^2 dz =\pi\, \left(R^2 - z^2 \right)\, dz.
+				</me>
+				The mass of the disk is
+				<me>
+					dm = \dfrac{M}{V}\, dV = \dfrac{M}{V}\, \pi\, \left(R^2 - z^2 \right)\, dz,
+				</me>
+				where <m> V = \frac{4}{3}\pi R^3</m>. The moment of inertia of this element about <m>z</m> axis is
+				<me>
+					dI = \dfrac{1}{2}\, dm\, r^2. 
+				</me>
+				This gives
+				<me>
+					dI = \dfrac{M}{2V}\, \pi\, \left(R^2 - z^2 \right)^2\, dz.
+				</me>
+				Integrating this from <m>z=-R</m> to <m>z=R</m>, which is same as <m>2\times</m> inegration from <m>z=0</m> to <m>z=R</m> due to evenness of the integrand, gives the answer.
+				<me>
+					I = \dfrac{\pi M}{V}\, R^5\,\left( 1 - \frac{2}{3} + \frac{1}{5}\right) = \dfrac{2}{5}MR^2.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+</exercises>
+
+</section>

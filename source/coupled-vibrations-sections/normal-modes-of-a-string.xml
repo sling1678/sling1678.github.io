@@ -1,0 +1,371 @@
+<section xml:id="normal-modes-of-a-string"><title> Normal Modes of a String </title>
+	<introduction>
+        <p>
+            Normal modes of strings help us understand the sound produced by plucking guitar strings and other string instruments.  Consider a string tied at both ends. First, we divide up the mass of the string in <m>N</m> parts and place them as beads on equal intervals as shown in <xref ref="fig-n-beads-on-a-string"/>. 
+
+        </p>
+        
+        <figure xml:id="fig-n-beads-on-a-string">
+            <caption>
+                <m>N</m> beads on a taut string act as <m>N</m> coupled oscillators.
+            </caption>
+            <image source="./images/coupled-vibrations/n-beads-on-a-string.png" width="100%"/>
+        </figure>
+        <p>
+            This converts the problem of vibration of a string to the vibrations of <m>N</m> beads, each of mass <m>m</m>, on a massless string which are coupled by the tension force in the string. For the sake of ease of visualization of the modes we consider the modes of the transverse motion of the string. 
+        </p>
+        <p>
+            Before we discuss the motion of this general model of a string, let us look a simpler case of two beads on a string.
+        </p>
+        
+    </introduction>
+
+	<subsection xml:id="Motion-of-Two-Beads-on-a-Taut-String">
+		<title>(Calculus) Motion of Two Beads on a Taut String</title>
+		<p>
+			Now, consider two beads on a string. For simplicity, we will take their masses to be same, <m>m</m>, and place them symmetrically. Let <m>l</m> be the distance between the beads and on either side of the two beads. That is length of the string, <m>L=3l</m> here, as shown in <xref ref="fig-two-beads-on-a-string"/>
+		</p>
+		<figure xml:id="fig-two-beads-on-a-string">
+			<caption>
+				Two beads A and B placed symmetrically on a taut string with tension <m>T</m> shown at an arbitrary instant with vertical displacments <m>y_A</m> and <m>y_B</m>. We study only the vertical motion here.
+			</caption>
+			<image source="./images/coupled-vibrations/two-beads-on-a-string.png" width="80%"/>
+		</figure>
+		
+		<p>
+			Rather than study the general motion, we will find only the normal modes of the system in the small displacment approximation, i.e., Assume small displacements, i.e., when <m>|y_A| \lt\lt l</m> and <m>|y_B|\lt\lt l</m>, where <m>y_A</m> and <m>y_B</m> are displacements of the beads.
+		</p>
+
+		<p>
+			You should show that the <m>y</m> component of net force on the two beads are
+			<md>
+				<mrow> \amp F_{Ay} = \frac{T}{l}\left( -2 y_A + y_B\right)</mrow>
+				<mrow> \amp F_{By} = \frac{T}{l}\left( -2 y_B + y_A\right)</mrow>
+			</md>
+			This gives following for their accelerations.
+			<mdn>
+				<mrow  xml:id="eq-of-motion-two-beads-on-string-1"> \amp \frac{d^2y_A}{dt^2} = \frac{2T}{ml}\left( - y_A + 0.5 y_B\right)</mrow>
+				<mrow  xml:id="eq-of-motion-two-beads-on-string-2"> \amp \frac{d^2y_B}{dt^2} = \frac{2T}{ml}\left( - y_B + 0.5 y_A\right)</mrow>
+			</mdn>
+			In normal modes, both beads have the frequency of the normal mode. Each bead acts like a simple harmonic oscillator at the frequency of the mode. Let <m>\omega</m> be the frequency of the mode, which we don't know yet - it will be replaced by <m>\omega_1</m> and <m>\omega_2</m> for the two modes. 			
+		</p>
+		<p>
+			How do we find <m>\omega_1</m> and <m>\omega_2</m>? We will just plug in expected behavior of beads in the equations, Eqs. <xref ref="eq-of-motion-two-beads-on-string-1"/> and <xref ref="eq-of-motion-two-beads-on-string-2"/>. That is, we set
+			<md>
+				<mrow> \amp y_A = A_1 \cos(\omega t) </mrow>
+				<mrow> \amp y_B = A_2 \cos(\omega t) </mrow>
+			</md>
+			This will be their motions if we start the beads in one of the modes, letting then go at rest - once again, of course <m>\omega</m> will be either <m>\omega_1</m> or <m>\omega_2</m>, the angular frequencies of the modes. After plugging these in Eqs. <xref ref="eq-of-motion-two-beads-on-string-1"/> and <xref ref="eq-of-motion-two-beads-on-string-2"/>, we will find these allowed values of <m>\omega</m> and the ratio of <m>A_2</m> to <m>A_1</m>.
+		</p>
+		<p>
+			To simplify writing, I will introduce a scale for angular frequency by 
+			<me>
+				\omega_0 = \sqrt{ \frac{2T}{ml} },
+			</me>
+			and 
+			<me>
+				\tilde\omega = \frac{\omega}{\omega_0}.
+			</me>
+		</p>
+		<p>
+			The result is 
+			<mdn>
+				<mrow  xml:id="eq-normal-modes-two-beads-on-string-1"> \amp  (1-\tilde\omega^2) A_1 = 0.5 A_2 </mrow>
+				<mrow  xml:id="eq-normal-modes-two-beads-on-string-2"> \amp (1-\tilde\omega^2) A_2 = 0.5 A_1</mrow>
+			</mdn>
+			Taking the ratio that cancel out <m>A_1</m> and <m>A_2</m>, we get
+			<me>
+				(1-\tilde\omega^2)^2 = \left( \frac{1}{2}\right)^2.
+			</me>
+			This gives two values for <m>\tilde\omega^2</m>, namely,
+			<me>
+				\tilde\omega_1^2 = \frac{1}{2},\ \ \tilde\omega_2^2 = \frac{3}{2}.
+			</me>
+			Therefore, angular frequencies of the normal modes are
+			<men>
+				\omega_1 = \sqrt{ \frac{T}{ml} },\ \ \omega_2 = \sqrt{ \frac{3T}{ml} }.
+			</men>			
+			Putting <m>\tilde\omega_1</m> in Eq. <xref ref="eq-normal-modes-two-beads-on-string-1"/>, we see that the ratio of <m>A_2</m> to <m>A_1</m> is
+			<men>
+				\left[ \frac{A_2}{A_1}\right]_\text{mode 1} = 1.
+			</men>
+			Putting <m>\tilde\omega_2</m> in Eq. <xref ref="eq-normal-modes-two-beads-on-string-1"/>, we see that the ratio of <m>A_2</m> to <m>A_1</m> is
+			<men>
+				\left[ \frac{A_2}{A_1}\right]_\text{mode 2} = -1.
+			</men>
+			Thus, we have our modes now. the frequencies and displacements of the two modes when started from rest are
+			<md>
+				<mrow> \amp \omega_1= \sqrt{ \frac{3T}{mL} }, \ \ \ y_A = y_B = A \cos(\omega_1 t)</mrow>
+				<mrow> \amp \omega_2= 3\sqrt{ \frac{T}{mL} },\ \ \  y_A = -y_B = A \cos(\omega_2 t)</mrow>
+			</md>			
+
+		</p>
+		<p>
+			We can sketch these normal modes to get the shape of string as the two beads move in one or the other mode. In mode 1, the beads move with the same displacement since <m>y_A=y_B</m>. Therefore, the string will look like a trapezoid at an arbitrary insant. In mode 2, the beads move with opposite displacments since <m>y_A=-y_B</m>. Therefore, the string will have a zig-zag shap.
+		</p>
+
+
+		<figure xml:id="two-beads-on-a-string-modes">
+			<caption>
+				Two normal modes of two beads on a taut string. In mode 1, the two beads move with the same displacment, and in mode 2, they move in the opposite direction with opposite displacements.
+			</caption>
+			<image source="./images/coupled-vibrations/two-beads-on-a-string-modes.png" width="80%"/>
+		</figure>
+
+		
+
+	</subsection>
+
+	<subsection xml:id="N-Beads-on-a-String"><title>Normal Modes of a String</title>
+		<p>
+			It is interesting to ask: what will be the normal modes if we have 3, 4, 5, ..., beads on the string. As an illustration, modes of the <m>N=2,3,4</m> on a taut string system are shown in <xref ref="fig-two-beads-to-four-beads-on-a-string-modes"/>. 
+		</p>
+		<p>
+			You will notice that number of normal modes equals number of these beads and in each mode the ratio of the amplitudes of displacements of different beads must have a particular relation. For instance, in the 3-bead system, we have the following relations between the displacments of the beads.
+			<md>
+				<mrow> \amp \text{Mode 1: } A_1 = B_1 = C_1. </mrow>
+				<mrow> \amp \text{Mode 2: } A_2 = -C_2,\ B_2=0. </mrow>
+				<mrow> \amp \text{Mode 3: } A_3 = -\frac{1}{\sqrt{2}}B_3 = C_3. </mrow>
+			</md>
+		</p>
+
+		<figure xml:id="fig-two-beads-to-four-beads-on-a-string-modes">
+			<caption>
+				Transverse modes of (a) <m>N=2</m>, (b) <m>N=3</m>, and (c) <m>N=3</m>. In each case <m>\omega_1</m> is the lowest frequency mode.  The points at the nodes, the place where the string crosses the zero displacement, do not oscillate; other points of the string oscillate up and down with the frequency of the corresponding normal mode.
+			</caption>
+			<image source="./images/coupled-vibrations/two-beads-to-four-beads-on-a-string-modes.png" width="100%"/>
+		</figure>
+		
+		<p>
+			As you place more and more beads on the string, you can imagine, at some point, we can just say that beads are just continuously placed on the string. This is <m>N\rightarrow\infty</m> limit. In that case, the shapes of normal modes are just piecess of sine function of increasing frequency.
+		</p>
+		<p>
+			You will find that the lowest frequency mode has the shape of half cycle of a sine function, the next has the shape of one cycle of a sine function, the next one has <m>\frac{3}{2}</m> cycles, and so on. First three of these modes are shown in <xref ref="fig-first-three-harmonics-of-string-vw"/>. If we imagine these shapes continue in both directions for ever, we will find that they repeat in space. The smallest repeat distance is called <term>wavelength</term> of the mode. We usually denote wavelength by the Greek letter <m>\lambda</m> (lambda).
+
+		</p>
+		<figure xml:id="fig-first-three-harmonics-of-string-vw">
+			<caption>
+				 Normal modes of a string tied at both ends. The figure shows modes of lowest three frequencies. These modes are the first three harmonics or the fundamental, the first overtone, and the second overtones. The wavelengths are <m>\lambda_1 = 2 L</m>, <m>\lambda_2 = L</m>, and <m> \lambda_3 = \frac{2L}{3}</m>. The locations of maximum displacment are called <term>anti-nodes</term> and the locations of zero displacement are called <term>nodes</term>. The <m>\lambda_1</m> mode is the fundamental mode and <m>\lambda_2</m> and <m>\lambda_3</m> are <term>overtones</term>.
+			</caption>
+			<image source="./images/coupled-vibrations/first-three-harmonics-of-string.png" width="100%"/>
+		</figure>
+		<p>
+			We can describe the shape of all normal modes by a common formula for shape functions <m>C_n(x)</m> with <m>n=1, 2, 3, ...</m> for the modes. I will state the results here without full calculations since they are involved and you can find them in a book on more advanced books on vibrations and waves.
+			<men xml:id="eq-largeN-mode-functions-N-beads-on-string">
+				C_n(x) = A_n \sin\left( \dfrac{n\pi x}{L} \right).
+			</men>
+			Each part of the string will be vibrating in a simple harmonic motion with the frequency of that mode. Therefore, at any instant <m>t</m>, the string in the <m>n</m>th mode will have the shape given by
+			<men>
+				y_n(x,t) = C_n(x) \cos(\omega_n t) = A_n \sin\left( \dfrac{n\pi x}{L} \right) \cos(\omega_n t),
+			</men>
+			where angular frequencies are 
+			<men>
+				\omega_n = n \omega_1, \ \text{ with }\ \omega_1 = \frac{\pi}{L}\sqrt{\dfrac{T}{\mu}},
+			</men>
+			where <m>\mu</m> is mass per unit length on the string. The quantity multiplying the spatial coridinate <m>x</m>, i.e., <m>n\pi/L</m>, is denoted by symbol <m>k_n</m>. It is called the <term>wavenumber</term> of the <m>n^\text{th}</m> mode.
+			<men>
+				k_n = \frac{n\pi}{L}.
+			</men>
+			If the wavelength of the <m>n^\text{th}</m> is denoted by <m>\lambda_n</m>, then we expect that the wave repeat every wavelength giving us.
+			<me>
+				\sin\left[ k_n (x + \lambda_n) \right] = \sin\left( k_n x \right) 
+			</me>
+			Therefore, smallest value of <m>k_n\lambda_n</m> has to be <m>2\pi</m>.
+			<men>
+				k_n\lambda_n = 2\pi.
+			</men>
+			This gives the wavelength of the <m>n^\text{th}</m> mode to be
+			<men>
+				\lambda_n = frac{2\pi}{k_n} = 2\pi \times \frac{L}{n\pi} = \frac{2L}{n}.
+			</men>
+		</p>
+
+		<p>
+			The vibrations of string give aapperarance of a wave riding on the string but going no where. These waves are called <term>standing waves</term>.  <xref ref="fig-first-three-harmonics-of-string-vw"/> show three such waves corresponding to the lowest three frequencies.
+		</p>
+		<p>
+			The speeds of standing waves on the string, called <term>wave speed</term>, depends on the tension and linear mass density as given by the following formula.
+            <me>
+                v_s = \sqrt{\dfrac{T}{\mu}},
+            </me>
+            The frequency of the lowest mode is obtained from angular frequency <m>\omega_1</m> by dividing it by <m>2\pi</m>, the angle in one cycle.
+            <men>
+                f_1 = \dfrac{\omega_1}{2\pi}.
+            </men>
+            This frequency is called the <term>fundamental frequency</term>, and the mode itself is called the fundamental mode. The other modes are <term>overtones</term>  and their frequencies are integral multiples of the fundamental.
+            <men>
+                f_n = n f_1.
+            </men>
+		</p>
+<!-- 		<p>
+			To get a feel for a large <m>N</m> situation, <xref ref="fig-forty-beads-on-a-string-modes"/> displays four lowest frequency modes of an <m>N=40</m> system. Each mode has no displacement points at the end due to the string being bound there. If you look at the mode corresponding to frequency <m>\omega_2</m>, there is a point in the middle that does not oscillate. This point is called a <term>node</term>. With every successively higher mode, you get one more node in the string's motion.
+		</p>
+		 
+		<figure xml:id="fig-forty-beads-on-a-string-modes">
+			<caption>
+				Four lowest frequency modes of vibration of a string with <m>N=40</m> beads shown at an arbitrary instant; with time, the string vibrates up and down with the points that fall on horizontal line remaining stationary with time. We see that the masses start to form almost continuous string and their positions fall on the sine function given in Eq. <xref ref="eq-largeN-mode-functions-N-beads-on-string"/>.
+			</caption>
+			<image source="./images/coupled-vibrations/forty-beads-on-a-string-modes.png" width="100%"/>
+		</figure> -->
+
+
+ <!--    <subsection><title>Transverse Vibrations of a String</title>
+        <p>
+            In a transverse vibration mode of a string, each part of the string vibrates up and down with the frequency corresponding to that of the mode. <xref ref="fig-string-mode1-time"/> shows the lowest frequency mode. We find that the lowest frequency mode is symmetric about the middle of the string. 
+        </p>
+        <p>
+            Suppose, we pull the string such that string takes the shape of the lowest mode, and release the string from rest. What will happen?  <xref ref="fig-string-mode1-time"/> shows the position of the string at intervals of <m>\frac{1}{8}^{\text{th}}</m> periods. The string moves slowly in the first <m>\frac{1}{8}^{\text{th}}</m> period when it is furthest from the equilibrium than in the second and third <m>\frac{1}{8}^{\text{th}}</m> periods when it passes through the equilibrium position, which is similar to the behavior of a mass attached to a spring. The particles near the middle of the string cover the largest distance in the same time than the particles near the fixed ends, and  all particles of the string vibrate with the same period of oscillation. Each particle of the string <q>acts</q> as if the particle was attached to an <q>invisible</q> spring and vibrates up and own in a sinusoidal manner corresponding to the Simple Harmonic Motion at the frequency of the mode.
+        </p>
+		<figure xml:id="fig-string-mode1-time">
+			<caption>
+				The fundamental mode of a string fixed at both ends. The string is plucked in the shape shown in thick black line and let go from rest. The string's location at successive <m>\frac{1}{8}</m> of a period intervals are shown in the figure.  The string vibrates such that the ratio of the vertical displacements at different horizontal locations remains independent of time.
+			</caption>
+			<image source="./images/coupled-vibrations/string-mode1-time.png" width="80%"/>
+		</figure>
+        <p>
+            The first overtone, i.e. mode <m>n=2</m>, is shown in <xref ref="fig-string-mode2-time"/>. The first overtone mode is antisymmetric about the middle position. When the left half of the string moves up, the right half moves down, and vice-versa with every particle oscillating with frequency <m>\omega_2</m>. The point in the middle remains at rest and is called a <term>node</term>.
+
+        </p>
+		<figure xml:id="fig-string-mode2-time">
+			<caption>
+				The second lowest frequency mode, <m>n=2</m>, of a string fixed at both ends. The stretched string is pulled in the shape shown in thick black line and let go from rest. The string's location at successive <m>\frac{1}{8}^{\text{th}}</m> period intervals are shown in the figure. The point labeled <em>Node</em> is stationary and does not move.
+			</caption>
+			<image source="./images/coupled-vibrations/string-mode2-time.png" width="80%"/>
+		</figure>
+ 
+    </subsection> -->
+
+	</subsection>
+
+
+ <!--    <subsection><title>Vibrations of a Very Long String</title>
+        <p>
+            In the last subsections we studied the normal modes of a string of a finite length <m>L</m>L that was tied at both ends.  We found that the string supports the normal modes in which the string can oscillate at various frequencies that are integral multiples of a fundamental frequency.
+        </p>
+        <p>
+            Now, we ask: what happens when the string in very long?  Clearly, if the string is infinitely long, we will be looking at only a small finite part of the string that would be far away from the two ends. Suppose, again, the string to be along the <m>x</m>-axis.  If the string is infinitely long, we can assume that the oscillations occur over the entire <m>x</m>-axis. Sinusoidal oscillations that continue over the entire axis are mathematically periodic functions. We write these modes as follow.
+            <men xml:id="eq-long-string-1">
+                y(x) = A \sin(kx),\ \ \ -\infty \lt x \lt \infty,
+            </men>
+            where <m>k</m> is called the <term>wavenumber</term>. 
+        </p>
+        <figure>
+            <caption>
+                Wavelength corresponding to a mode of oscillation of a taut string.
+            </caption>
+            <image source="./images/coupled-vibrations/wavelength-pic-4.png" width="80%"/>
+        </figure>
+        <p>
+            For an infinitely long string, the wavenumber can assume any real value up to  a maximum cutoff value, which depends on the smallest distance between atoms of the string.  The period of the sinusoidal mode function given in Eq. <xref ref="eq-long-string-1"/> is called the <term>wavelength</term>  corresponding to the mode.  Wavelength is usually denoted by the Greek letter <m>\lambda</m> (read: lambda).  From the periodicity of Eq. <xref ref="eq-long-string-1"/> along the <m>x</m>-axis,
+            <me>
+                y(x+\lambda) = y(x),\ \ \ \ -\infty \lt x \lt \infty,
+            </me>
+            we see that the wavelength is related to the wave number by
+            <men xml:id="eq-long-string-2">
+                \lambda = \frac{2\pi}{k}.
+            </men>
+        </p>
+    </subsection> -->
+    <exercise xml:id="exercise-Vibrations-of-a-Guitar-String">
+    	<title>
+    		Vibrations of a Guitar String
+    	</title>
+    	<statement>
+    		<p>
+    			A guitar string of length <m>0.75\text{ m}</m> and mass <m>0.040\text{ kg}</m>. 
+    		</p>
+    		<p>
+    			If this string is to produce vibrations of frequencies that are multiples of <m>256\text{ Hz}</m>, what should be tension in the string?
+    		</p>
+
+    	</statement>
+    	<hint><p>Use the wavelength of the fundamental to be <m>2L</m>.</p></hint>
+    	<answer><p><m>7500\text{ N}</m>.</p></answer>
+    	<solution>
+    		<p>
+    			The wavelength of the fundamental will be twice the length of the string.
+    			<me>
+    				\lambda = 2\times L = 2\times 0.75 = 1.5\text{ m}.
+    			</me>
+    			The frequency <m>f=250\text{ Hz}</m>. Therefore, the speed of the wave on the string will be
+    			<me>
+    				v = \lambda f = 1.5\times 250 = 375\text{ m/s}.
+    			</me>
+    			Equating this to <m>\sqrt{T/\mu}</m> will give the equation, which we can solve for <m>T</m> since <m>\mu = 0.04/0.75</m>.
+    			<me>
+    				\sqrt{T/\mu} = v\ \ \longrightarrow\ \ T = \mu v^2.
+    			</me>
+    			Therefore,
+    			<me>
+    				T = \frac{0.04}{0.75} \times 375^2 = 7500\text{ N}.
+    			</me>
+    		</p>
+    	</solution>
+
+    </exercise>
+
+
+    <exercise xml:id="exercise-Shape-of-Modes-of-Vibration-of-a-String">
+    	<title>
+    		Shape of Modes of Vibration of a String
+    	</title>
+
+    	<statement>
+    		<p>
+    			A string of length <m>120\text{ cm}</m> and linear density <m>20\text{ g/m}</m> is tightened to a tension of <m>250\text{ N}</m>. The string is axcited to vibrate in the fundamental mode with amplitude of standing wave to be <m>10\text{ cm}</m> and the string being farthest from the equilibrium at <m>t=0</m>. 
+    		</p>
+    		<p>
+    			(a) What are the values of amplitude of oscillations of particles of the string at the following points from one end: (i) <m>10\text{ cm}</m>, (ii) <m>20\text{ cm}</m>, (iii) <m>40\text{ cm}</m>, and (iv) <m>60\text{ cm}</m>?
+    		</p>
+    		<p>
+    			(b) How much time do the particles in part (a) take to go from maximum displacement to zero displacement? 
+    		</p>
+    	</statement>
+    	<hint><p>(a) Use <m>y=A\sin(k_1 x - \omega_1 t)</m>. (b) Note that every particle vibrates at the frequency of the mode.</p></hint>
+    	<answer><p> (a) (i) <m>2.6\text{ cm}</m>, (ii) <m>5.0\text{ cm}</m>, (iii) <m>8.7\text{ cm}</m>, (iv) <m>10.0\text{ cm}</m>. (b) <m>5.37\text{ msec}</m>. </p></answer>
+    	<solution><title>(a)</title>
+    		<p>
+    			The displacements at various points along the string will be given by
+    			<me>
+    				y(x,t) = 10\text{ cm}\sin( k_1 x - \omega_1 t ),
+    			</me>
+    			with <m>k_1</m> the wavenumber of a wave of wavelength equal to <m>2L</m>.
+    			<me>
+    				k_1 = \frac{2\pi}{2L} = \frac{\pi}{1.20\text{ m}} = 2.618\text{ m}^{-1}.
+    			</me>
+    			At <m>t=0</m> the displacement of each particles will be equal to its amplitude.
+    			<me>
+    				y(x,t) = 10\text{ cm}\sin( 2.618 x),
+    			</me>
+    			with <m> x </m> in <m>\text{m}</m>. Now, we plug in various values of <m>x</m> in this equation to find the numerical values of the displacements.
+    			<md>
+    				<mrow>\amp (i) \ \ \ 10\text{ cm} \times \sin( 2.618 \times 0.1) = 2.6\text{ cm}. </mrow>
+    				<mrow>\amp (ii) \ \ 10\text{ cm} \times \sin( 2.618 \times 0.2) = 5.0\text{ cm}. </mrow>
+    				<mrow>\amp (iii) \ 10\text{ cm} \times \sin( 2.618 \times 0.4) = 8.7\text{ cm}. </mrow>
+    				<mrow>\amp (iv) \ \ 10\text{ cm} \times \sin( 2.618 \times 0.6) = 10.0\text{ cm}. </mrow>
+    			</md>
+    		</p>
+    	</solution>
+    	<solution><title>(b)</title>
+    		<p>
+    			Since frequency is same for every part of the string, they will all take the same amount of time. From the description, we need time for quarter of the cycle. Therefore,
+    			<me>
+    				\Delta t = \frac{1}{4f} = \frac{2\pi}{4\omega_1},
+    			</me>
+    			with <m>\omega_1</m> related to <m>k_1</m> by
+    			<me>
+    				\omega_1 = v k_1 = \sqrt{ \frac{T}{\mu} } k_1.
+    			</me>
+    			Now, using numerical values with all units in <m>\text{kg-m-s}</m>, we get
+    			<me>
+    				\omega_1 = \sqrt{ \frac{250}{0.020} } \times 2.618 = 292.7\text{ sec}^{-1}.
+    			</me>
+    			Therefore, the time required is
+    			<me>
+    				\Delta t = \frac{\pi}{2 \times 292.7} = 0.005366\text{ s} = 5.37\text{ msec}.
+    			</me>
+
+    		</p>
+    	</solution>
+    </exercise>
+</section>

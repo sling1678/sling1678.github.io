@@ -1,0 +1,212 @@
+<section xml:id="Rotational-Kinetic-Energy"><title> Rotational Kinetic Energy</title>
+<idx>Rotational Kinetic Energy</idx>
+<idx><h>Kinetic Energy</h><h>Rotational</h></idx>
+	<introduction>
+		<p>
+			Recall that <m>\vec F_\text{net}=m\vec a</m> implied a work-energy theorem on a path of motion. By following very similar steps, we can deduce a work-energy theorem for rotation from <m>\mathcal{T}=I\alpha</m>.
+		</p>
+		<p>
+			To do that let us examine rotational work done over an interval. The work by all torques on a system will be obtained by summing <m> \mathcal{T} \Delta\theta</m> from the initial time to the final time for each torque. 
+			<men xml:id="rotational-kinetic-energy-1">
+				W_{if}^{\text{rot}} = \sum\, \mathcal{T}  \Delta\theta.
+			</men>
+		</p>
+		<p>
+			Now, recall that <m>\alpha</m> in <m>\mathcal{T}=I\alpha</m> is actually <m>\Delta\omega/\Delta t</m> for infinitesimal <m>\Delta t</m>, i.e., rate of change of angular velocity. Therefore, we write
+			<men xml:id="rotational-kinetic-energy-2">
+				 {\mathcal{T}}_{\text{net}} = I \, \alpha = I \, \dfrac{\Delta \omega}{\Delta t}.
+			</men>
+			Using this <m>\mathcal{T}</m> in Eq. <xref ref="rotational-kinetic-energy-1" /> we get
+			<me>
+				W_{if}^{\text{rot}} = \sum\, I \, \dfrac{\Delta \omega}{\Delta t} \Delta\theta = \sum\, I \,\Delta \omega\, \dfrac{\Delta\theta}{\Delta t}= \sum\, I \,\Delta \omega\,  \omega.
+			</me>
+			(Calculus Step) The right hand side is a cumulative effect of infinitesimal intervals, which makes it an integral.
+			<me>
+				W_{if}^{\text{rot}} =  \int_{\omega_i}^{\omega_f} I \, \omega\, d\omega.
+			</me>
+			Carrying out the integral we get
+			<men xml:id="rotational-kinetic-energy-half-I-omega-squared">
+				W_{if}^{\text{rot}} = \dfrac{1}{2}\,  I\omega_f^2   - \dfrac{1}{2}\,  I\omega_i^2.
+			</men>			
+		</p>
+		<p>
+			 The quantity <m> \dfrac{1}{2} I\omega^2</m> is <term> rotational kinetic energy </term> of the body. We will denote this by <m> K_{\text{rot}}</m>.
+			 <men>
+			 	K_{\text{rot}} = \dfrac{1}{2} I\omega^2.
+			 </men>
+			 Writing Eq. <xref ref="rotational-kinetic-energy-half-I-omega-squared"/> in the following form gives us the result the net rotational work is the change in rotational kinetic energy.
+			 <men>
+			 	W_{if}^{\text{rot}} = K_{f}^{\text{rot}} - K_{i}^{\text{rot}}.
+			 </men>
+		</p>
+ 
+	</introduction>
+
+
+	<example xml:id="ex-Kinetic-Energy-of-a-Baton-Rotating-about-the0-Center-ke-sec"><title> Kinetic Energy of a Baton Rotating about the Center</title>
+		<statement>
+			<sidebyside widths="60% 5% 35%">
+				<p>
+					A baton has two balls at the end of a light beam of length <m> 0.80\text{ m} </m>. Let the masses of the two balls be <m> 0.25\text{ kg}</m> each. The baton is gently held at the center and rotated at an angular speed of <m> 10\text{ rad/sec} </m>. 
+						What is the kinetic energy of the baton? Ignore the mass of the beam.
+				</p>
+				<p> </p>
+				<image source="./images/energy/ke-baton-rotating-about-center.png" width="50%"/>
+			</sidebyside>
+			
+
+		</statement>
+		<!-- <hint> <p>  Use <m> I = m_1r_1^2 + m_2r_2^2</m>. </p> </hint> -->
+		<answer> <p> <m> 4.0\text{ J}. </m>  </p> </answer>
+		<solution> 
+			<p>
+				Since the baton is in a pure rotation, we wil use the kinetic energy formula for the pure rotation.
+				<md>
+					<mrow> K \amp = \dfrac{1}{2}\, I\, \omega^2, </mrow>
+					<mrow>  \amp = \dfrac{1}{2}  (m_1r_1^2 + m_2r_2^2)\,\omega^2,</mrow>
+					<mrow>  \amp = \dfrac{1}{2}\, 2\, m\, r^2\, \omega^2, </mrow>
+					<mrow>  \amp = \dfrac{1}{2}\times 2\times 0.25 \times 0.4^2\times 10^2 = 4.0 \text{ J}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</example>
+
+	<exercises>
+
+	<exercise xml:id="ex-Kinetic-Energy-of-a-Baton-Rotating-about-a-Point-away-from-the-Center-ke-sec"><title> Kinetic Energy of a Baton Rotating about a Point away from the Center</title>
+		<statement>
+			<sidebyside widths="60% 5% 35%">			
+				<p>
+					A baton has two balls at the end of a light beam of length <m> 0.80\text{ m} </m>. Let the masses of the two balls be <m> 0.25\text{ kg}</m> each. The baton is gently held 
+					<m> 0.20\text{ m}</m> away from the center and rotated at an angular speed of <m> 10\text{ rad/sec} </m>. In a pure rotation, all parts of a rigid body have the same angular speed.
+						What is the kinetic energy of the baton? Ignore the mass of the beam.
+				</p>
+				<p>
+				</p>
+				<image source="./images/energy/ke-baton-rotating-about-off-center.png" width="50%"/>
+			</sidebyside>	
+		</statement>
+		<hint> <p>  Use <m> I = m_1r_1^2 + m_2r_2^2</m>. </p> </hint>
+		<answer> <p> <m> 5.0\text{ J}. </m>  </p> </answer>
+		<solution> 
+			<p>
+				Since the baton is in a pure rotation, we wil use the kinetic energy formula for the pure rotation.
+				<md>
+					<mrow> K \amp = \dfrac{1}{2}\, I\, \omega^2, </mrow>
+					<mrow>  \amp = \dfrac{1}{2}  (m_1r_1^2 + m_2r_2^2)\,\omega^2,</mrow>
+					<mrow>  \amp = \dfrac{1}{2} m (r_1^2 + r_2^2)\,\omega^2</mrow>
+					<mrow>  \amp = \dfrac{1}{2} \times 0.25 \times ( 0.6^2 + 0.2^2)\times 10^2 = 5.0 \text{ J}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Work-to-Change-Rotational-Kinetic-Energy-of-a-Disk"><title> Work to Change Rotational Kinetic Energy of a Disk </title>
+		<statement>
+			<p>
+				 A uniform density disk of mass <m> 50\text{ kg}</m> and radius <m>12\text{ cm}</m> is set on an axle through its center and rotated from rest. 
+			</p>
+			<p>
+				(a) How much work is required to bring the angular speed from zero to <m> 10\text{ rev/sec}</m>?
+			</p>
+
+			<p>
+				(b) How much work is required to change the angular speed from <m>10\text{ rev/sec}</m> to <m>20\text{ rev/sec}</m>? 
+			</p>
+
+			<p>
+				(c) If an average force of <m>20\text{ N}</m> acts at the rim in the direction of the tangent to the rim of the disk continuously, how many full rotations would it take to reach <m> 10\text{ rev/sec}</m> from rest? 
+			</p>
+			<p>
+				(d) If you want to get to <m> 20\text{ rev/sec}</m> from <m> 10\text{ rev/sec}</m> in half as many rotations as it took you to get from rest to <m> 10\text{ rev/sec}</m> using the average <m> 20\text{ N}</m> force, what average force would you need to act along the tangent of the rim?
+			</p>
+
+ 
+
+		</statement>
+		<hint> <p> (a) Use Rot. KE formula, (b) Use <m>K_f-K_i</m>, (c) Use work-energy theorem, (d) (d) Set up work energy theorem with required force as unknown.  </p> </hint>
+		<answer> <p>  (a) <m>711\text{  J} </m>, (b) <m> 2,132\text{ J}</m>, (c) <m>47.15\text{ revs} </m>, (d) <m> 120\text{ N}</m>. </p> </answer>
+		<solution> <title> a </title>
+			<p>
+				The net rotational work needed will be equal to the change in the rotational kientic energy. For that, let us calculate the moment of inertia first. Using the formula for the disk we have
+				<me>
+					I = \dfrac{1}{2}\,MR^2 = \dfrac{1}{2}\times 50 \times 0.12^2 = 0.36\text{ kg.m}^2.
+				</me>
+				The initial rotational speed is zero and the final rotational speed is
+				<me>
+					\omega_f = 10\times 2\pi = 20\pi\text{ rad/sec},
+				</me>
+				since there are <m>2\pi</m> radians in each full cycle. Therefore, the change in rotational kinetic energy is
+				<me>
+					\Delta K_\text{rot} = \dfrac{1}{2}\times 0.36\times (20\pi)^2 - 0 = 711\text{ J}.
+				</me>
+				This is the amount of work required.
+
+			</p>
+		</solution>
+		<solution> <title> b </title>
+			<p>
+				Now the change in rotational kinetic energy is different.
+				<me>
+					\Delta K_\text{rot} =  \dfrac{1}{2}\times 0.36\times (40\pi)^2 - \dfrac{1}{2}\times 0.36\times (20\pi)^2 = 2,132\text{ J}.
+				</me>				
+			</p>
+		</solution>
+		<solution> <title> c </title>
+			<p>
+				
+				From (a), we need to <m> 711\text{ J}</m> of work. With torque
+				<me>
+					\tau = 20\text{ N} \times 0.12\text{ m} = 2.40\text{ N.m},
+				</me>
+				acting or a rotation angle of <m>\Delta\theta</m> will produce the required work by the work-energy theorem. That is,
+				<me>
+					2.40\text{ N.m}\times \Delta\theta = 711\text{ J}.
+				</me>
+				This gives the angle in radians.
+				<me>
+					\Delta \theta = 296.25\text{ rad},
+				</me>
+				which is
+				<me>
+					296.25\text{ rad} = \dfrac{296}{2\pi}\text{ revs} = 47.15\text{ revs}.
+				</me>
+			</p>
+		</solution>
+
+		<solution> <title> d </title>
+			<p>
+				
+				From (b), we need to <m> 2,132\text{ J}</m> of work. But now in  <m> 296.25\text{ rad}/2</m> displacement. Therefore, the required force must obly
+				<me>
+					F\times 0.12\text{ m} \times 296.25/2 \text{ rad} = 2,132 \text{ J}.
+				</me>
+				Therefore,
+				<me>
+					F = 120\text{ N}.
+				</me>
+			</p>
+		</solution>
+
+
+	</exercise>
+
+
+</exercises>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

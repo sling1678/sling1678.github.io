@@ -1,0 +1,377 @@
+<section xml:id="Bernoullis-Equation"><title> Bernoulli's Equation </title>
+
+	<interoduction>
+
+		<p>
+			We will see below that if flow is viscous, then molecules drag each other down and fluid loses energy. However, if we can ignore viscosity, we expect energy to be conserved.  
+		</p>
+		<p>
+			Applying conservation of energy to the fluid between two points along a flow Daniel Bernoulli (1700-1782) found a relation between flow speeds and pressures at the two ends. This relation is called <term>Bernoulli's equation</term>. It has many applications as we will see below.
+		</p>
+		<p>
+ 			Consider a fluid flowing through a pipe that may have different cross-sections and different heights along the way as shown in <xref ref="fig-bernoulli-set-up"/>.
+		</p>
+		<figure xml:id="fig-bernoulli-set-up">
+			<caption>
+				The fluids outside of the fluid between 1 and 2 are considered external to the system. During a time interval <m>\Delta t</m> some energy comes into the system by work of pressure <m> p_1 </m> and material flow there. During the same interval, energy leaves the system at 2 due to work against <m>p_2</m> and flow of material. The gain and loss of energy must equal in magnitude due to the conservation of energy in a non-viscous system.
+			</caption>
+			<image source="./images/dynamic-fluid/bernoulli-set-up.png" width="70%"/>
+		</figure>
+		
+		<p>
+			Our system will be the fluid between points marked 1 and 2. The fluid before point 1 pushes onto the system doing positive work on the system, while the fluid after point 2 does negative work on the system. At point 1, it could even be the pump that is pushing the fluid in the pipe; in that case, work will be done by the pump.
+		</p>
+		<p>
+			The incoming fluid at 1 brings in kinetic and potential energies in the 1-to-2 space and the departing fluid at 2 reduces energy.
+		</p>
+		<p>
+			The work by <m>p_1</m> at end 1 is
+			<me>
+				\vec F \cdot \Delta \vec r \longrightarrow (p_1 A_1)(v_1\Delta t).
+			</me>
+		</p>
+		<p>
+			At 1, fluid outside of the system bring in kinetic energy
+			<me>
+				\dfrac{1}{2}mv^2 \longrightarrow \dfrac{1}{2} (\rho A v_1\Delta t) v_1^2, 
+			</me>
+			and potential energy,
+			<me>
+				mgh\longrightarrow (\rho A_1 v_1\Delta t) g h_1.
+			</me>			
+		</p>
+		<p> 
+			We work out corresponding quantities at 2 similarly. Summarizing, processes at 1  increase the energy by
+			<me>
+				p_1 A_1 v_1\Delta t + \dfrac{1}{2}\rho A v_1\Delta t v_1^2 + \rho A_1 v_1\Delta t g h_1,
+			</me>
+			and processes at 2 decrease the energy by
+			<me>
+				p_2 A_2 v_2\Delta t + \dfrac{1}{2}\rho A v_2\Delta t v_2^2 + \rho A_2 v_2\Delta t g h_2.
+			</me>
+			Due to the incompressibility of fluid, we also have
+			<me>
+				A_1 v_1 = A_2 v_2.
+			</me>
+			Equating the increase and decrease amounts, using the last equation, and canceling out the common factors give us the Bernoulli's equation.
+			<men>
+				p_1 +  \dfrac{1}{2}\rho v_1^2 + + \rho g h_1 = p_2 +  \dfrac{1}{2}\rho v_2^2 + + \rho g h_2.
+			</men>
+			This says that along the flow we have a constant of motion.
+			<men>
+				p +  \dfrac{1}{2}\rho v^2 + + \rho g h = \text{constant}.
+			</men>
+		</p>
+	</interoduction>
+
+
+	<exercise xml:id="ex-Pumping-Water-in-a-Tall-Building"><title> Pumping Water in a Tall Building</title>
+		<statement>
+			<p>
+				Water is to be pumped from the basement of a tall building such that <m> 15\text{ l/min}</m> of water must come out froma faucet of inner diameter <m> 2.5\text{ cm} </m> at a height <m> 30\text{ m}</m>. The water is being pumped into a pipe of diameter  <m> 5.0\text{ cm} </m>. Assume no branching, and if branching, then all other branches are closed off. Assume nonviscous flow.
+			</p>
+			<p>
+				(a) What are the speeds of flow in the (i) basement and at (ii) faucet?
+			</p>
+
+			<p>
+				(b) What is the pressure at the pump?
+			</p>
+		</statement>
+		<hint> <p> (a) Convert units of <m>  Q</m> and use <m> Q = Av</m> and <m>A_1v_1 = A_2 v_2 </m>.  (b) Use Bernoulli's equation. </p> </hint>
+		<answer> <p>  (a) (i) <m>0.128\text{ m/s}</m>, (ii) <m> 0.51\text{ m/s}</m>, (b) <m> 2.95\times 10^{5}\text{ Pa} </m>.</p> </answer>
+		<solution> <title> (a) </title>
+			<p> (a) 
+				First, we find the speed of flow at the faucet by using the volume flow rate given. We need to convert that into the SI units.
+				<me>
+					Q = 15\text{ l/min} \times \dfrac{10^{-3} \text{ m}^3\text{/l}} {60\text{ s/min}} = 2.5\times 10^{-4}\text{ m}^3\text{/s}.
+				</me>
+				Let subscript 1 refer to the pipe at the pump and 2 to the pipe at the faucet. Then, 
+				<m>
+					A_2 v_2 = Q 
+				</m>
+				gives
+				<me>
+					v_2 = \dfrac{Q}{A_2} = \dfrac{2.5\times 10^{-4}}{ \pi\times 0.0125^2}= 0.51\text{ m/s}.
+				</me>
+				From <m>A_1 v_1 =  A_2 v_2</m>, we get
+				<me>
+					v_1 = \dfrac{A_2}{A_1}\, v_2 = \left(  \dfrac{2.5}{5} \right)^2\, 0.51 = 0.128\text{ m/s}.
+				</me>
+
+			</p>
+		</solution>
+
+		<solution> <title> (b) </title>
+
+			<p> (b) 
+				Bernoulli's equation applies here since flow is nonviscous. The pressure against which water comes out of faucet is the atmospheric pressure. Using 1 for pump's locaiton and 2 for the faucet's location, we will have 
+				<md>
+					<mrow>p_1 \amp = p_2 + \dfrac{1}{2}\rho (v_2^2 - v_1^2) + \rho g (h_2-h1) </mrow>
+					<mrow>\amp = 1.013\times 10^{5} + 1000\left[ \dfrac{1}{2} (0.51^2 - 0.128^2) +  9.81\times 30 \right] </mrow>
+					<mrow>\amp = 2.95\times 10^{5}\text{ Pa}.  </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-bernoulli-Draining-a-Tank-of-Water"><title> Draining a Tank of Water </title>
+		<statement>
+
+			<p>
+				Consider a tank of water with a tap at depth <m> h </m> from the surface in a container as shown in <xref ref="fig-torricellis-law-in-a-tank-statement"/>.  As the tap is opened what is the speed with which water will come out?  Assume steady flow.  Also assume that the speed of flow of water at the surface in the tank to be very nearly zero compared to the speed at the tap.
+			</p>
+			<figure xml:id="fig-torricellis-law-in-a-tank-statement">
+				<caption>
+					Figure for <xref ref="ex-bernoulli-Draining-a-Tank-of-Water"/>.
+				</caption>
+				<image source="./images/dynamic-fluid/torricellis-law-in-a-tank-statement.png" width="60%"/>
+			</figure>
+			
+
+
+
+		</statement>
+		<hint> <p> At the exit, think what pressure the fluid is pushing against; note that it's not <m>p_0+\rho g h</m>.  </p> </hint>
+		<answer> <p> <m>\sqrt{2gh}</m>  </p> </answer>
+		<solution> 
+			<p>
+				To apply Bernoulli's equation, we consider two points in the fluid. Point 1 is at the surface and point 2 is just outside the valve at the spigot as shown in <xref ref="fig-torricellis-law-in-a-tank"/>.
+			</p>
+			<figure xml:id="fig-torricellis-law-in-a-tank">
+				<caption>
+					Figure for <xref ref="ex-bernoulli-Draining-a-Tank-of-Water"/> solution.
+				</caption>
+				<image source="./images/dynamic-fluid/torricellis-law-in-a-tank.png" width="60%"/>
+			</figure>
+			<p>
+				<alert>Point 1: </alert> 
+				Since the area of cross-section at the surface is much larger than the opening, the speed of flow at the surface is  much smaller than the speed at the opening.  Therefore, I will assume that the speed at a point at the top of the tank may be set to zero without incurring significant error.  The pressure at the surface is the atmospheric pressure <m> p_0</m> since it is freely exposed to the atmosphere.
+			</p>
+			<p>
+				<alert>Point 2: </alert>
+				The pressure against which the water comes out at the opening is also the atmospheric pressure <m>p_0</m> and not <m>p_0+\rho gh</m> as would be the case if water was not flowing!  This aspect is somewhat disturbing to people first learning to think in terms of dynamics rather than static situation, especially after memorizing formulas of static fluid in the last chapter. The reason  for the pressure at the exit to be equal to the atmospheric pressure has to do with the fact  that the only the force due to the atmospheric pressure is opposing the flow coming out of the nozzle. 
+			</p>
+			<p>
+				One way to figure out the dynamic pressure at the exit is to pretend that you are the fluid at the exit, and ask, <q> what force will you be pushing against?</q> When you think in this language, you would not be confused about the dynamic pressure at any point.
+			</p>
+			<p>
+				We now put the properties at the two points 1 and 2 in the Bernoulli's equation.
+				<me>
+					p_0 + 0+ \rho g h = p_0 + \dfrac{1}{2}\rho v_2^2 + 0.
+				</me>
+				Therefore, the speed of water at the spigot is
+				<me>
+					 v_2 = \sqrt{2gh}
+				</me>
+				This formula is also called the <alert> Torricelli's theorem </alert> .  It is interesting to note that the speed of a freely falling particle dropped from a height <m>h</m> is given by the same formula.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Draining-a-Tank-by-Using-a-Pipe-that-Varies-in-Cross-Section-and-Height"><title> Draining a Tank by Using a Pipe that Varies in Cross Section and Height </title>
+		<statement>
+			<p>
+				A water tank is drained by a pipe that varies in cross-section, with <m>5\text{ cm}</m> diameter at the tank (point 2) and a diameter of <m>1\text{ cm}</m>  at the exit (point 1) as shown in <xref ref="fig-emptying-tank-of-water-varying-pipe"/>.  Point 2 is <m>30\text{ cm}</m> above point 1.  The surface of water in the tank is <m>50\text{ cm}</m> above point 1.  
+			</p>
+			<p>
+				(a) Find the speed of flow at point 1.  
+			</p>
+			<p>
+				(b) Find the volume rate of flow at 1.  
+			</p>
+			<p>
+				(c) Find the volume rate of flow at point 2. 
+			</p>
+			<p>
+				(d) Find pressure at point 2.
+			</p>
+			<figure xml:id="fig-emptying-tank-of-water-varying-pipe">
+				<caption>
+					Figure for <xref ref="ex-Draining-a-Tank-by-Using-a-Pipe-that-Varies-in-Cross-Section-and-Height"/>.
+				</caption>
+				<image source="./images/dynamic-fluid/emptying-tank-of-water-varying-pipe.png" width="60%"/>
+			</figure>
+			
+
+		</statement>
+		<hint> <p> (a) Use Bernoulli's equation. (b) <m>Q=A_1v_1</m>,  (c) <m>A_1v_1 = A_2v_2</m>. </p> </hint>
+		<answer> <p> (a) <m>3.13 \ \text{m/s} </m>, (b) <m>246\ \text{cm}^3/\text{s} </m>, (c) <m> 12.5\ \text{cm/s}</m>, (d) <m> p_{\text{atm}} - 2450\ \text{Pa}</m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				We take the point 1 as the reference  for the height, set it height zero. Let us denote the pressure, speed and height at points marked 0, 1, and 2 by attaching subscripts to <m> p</m>, <m> v</m>, and <m> h</m> respectively.  Bernoulli's equation applies to any two points along the flow and in the following we will apply this equation between the two pairs here 0 to 1 and 1 to 2.
+			</p>
+			<p> (a) The Bernoulli's equation for 0 <m> \rightarrow</m> 1 gives
+				<men xml:id="eq-ch13-f-d-ex4-1">
+					p_0 + \dfrac{1}{2}\rho v_0^2 + \rho g h_0 = p_1 + \dfrac{1}{2}\rho v_1^2 + \rho g h_1. 
+				</men>
+				Since the point 0 is open to the atmosphere, the pressure at that point is the atmospheric pressure.  Similarly the pressure at point 1 is also atmospheric pressure since the fluid is exiting against the atmosphere.
+				<md>
+					<mrow> p_0 \amp = p_{\text{atm}}, </mrow>
+					<mrow> p_1 \amp = p_{\text{atm}}. </mrow>
+				</md>
+				The tank is assumed to be wide compares to the pipes and the flow at point 0 can be assumed to be of low speed such that  we can take <m> v_0</m> to be zero.
+				<me>
+					v_0 \approx 0.
+				</me>
+				The height <m> h_1</m> is zero by the choice for heights and the height <m> h_0</m> with respect to point 1 is <m>50\text{ cm}</m>. 
+				<md>
+					<mrow> \amp h_0 = 50\ \text{cm },</mrow>
+					<mrow> \amp h_1 = 0. </mrow>
+				</md>
+				Putting these in Eq. <xref ref="eq-ch13-f-d-ex4-1"/> gives us an equation that can be simplified to
+				<md>
+				 	<mrow> v_1 \amp  = \sqrt{2 g h_0} = \sqrt{2\times 981\ \text{cm/s}^2 \times 50\text{ cm} }, </mrow>
+				 	<mrow> \amp  = 313 \ \text{cm/s} = 3.13 \ \text{m/s}.</mrow>
+				</md>
+
+			</p>
+		</solution>
+
+
+		<solution><title>(b) </title>
+			<p>
+				(b) 
+
+				<md>
+					<mrow> \text{Volume rate of flow}\amp  = A_1 v_1 = \dfrac{\pi}{4}\times (1\ \text{cm})^2 \times 313\ \text{cm/s}</mrow>
+					<mrow>\amp = 246\ \text{cm}^3/\text{s}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(c) </title>
+			<p> 
+				(c) The conservation equation <m> A_1v_1 = A_2 v_2</m> gives
+				<md>
+					<mrow> v_2 \amp = \left(\dfrac{d_1}{d_2}\right)^2 v_1, </mrow>
+					<mrow> \amp = \left(\dfrac{1}{5}\right)^2 \times 313\ \text{cm/s} = 12.5\ \text{cm/s}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(d) </title>
+			<p>
+				(d) To find <m> p_2</m> we can apply Bernoulli's equation between 0 and 2 or 1 and 2.  We will use 1 and 2 pair.
+				<me>
+					p_2 + \dfrac{1}{2}\rho v_2^2 + \rho g h_2 = p_1 + \dfrac{1}{2}\rho v_1^2 + \rho g h_1. 
+				</me>
+				In this equation we already know the following.
+				<md>
+					<mrow> \amp  h_1 = 0 </mrow>
+					<mrow> \amp  v_1 = 3.13 \ \text{m/s}</mrow>
+					<mrow>\amp  p_1 = p_{\text{atm}} = 1.013 \times 10^{5}\ \text{Pa}</mrow>
+					<mrow>\amp  h_2 = 0.3\ \text{m}</mrow>
+					<mrow>\amp  v_2 = 0.125\ \text{m/s} </mrow>
+				</md>
+				Putting these values we solve for <m> p_2</m>.
+				<me>
+				p_2 =  p_{\text{atm}} - 2450\ \text{Pa}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Pumping-Water-to-the-Tenth-Floor-of-a-Tall-Building"><title> Speed of Water when Pumping Water to the Tenth Floor of a Tall Building </title>
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Water is pumped from the ground floor of a high-rise building to a 10th floor apartment <m>25\text{ meters}</m> above.  A gauge pressure at the pump reads <m>400\text{ kPa}</m> and the pipe on the 10th floor is open to atmosphere.  The pipe on the ground floor is <m>5\text{ cm}</m> in diameter and that in the apartment is only <m>2\text{ cm}</m> in diameter.  Find speeds of flow at (a) the ground floor and (b) the tenth floor.
+				</p>
+				<p></p>
+				<image source="./images/dynamic-fluid/ex-pumping-from-ground-to-tenth-floor.png" width="50%"/>
+				<!-- <p></p> -->
+			</sidebyside>
+
+		</statement>
+		<hint> <p> Set up Bernoulli equation with point 1 at the ground floor and point 2 at the tenth floor.  </p> </hint>
+		<answer> <p> (a) <m> 2.85\text{ m/s}</m>, (b) <m> 17.8\text{ m/s}</m>.  </p> </answer>
+		<solution> 
+			<p> (a) and (b). 
+				It is almost always helpful to sketch out the physical situation of the problem as shown in the figure.
+			</p>
+			
+			<p>
+				We will be using the volume conservation equation and Bernoulli's equation to relate the properties at point 1 and 2.
+				<mdn>
+				<mrow xml:id="eq-ch13-f-d-ex-5-1"> \amp A_1 v_1 = A_2 v_2.  </mrow>
+				<mrow xml:id="eq-ch13-f-d-ex-5-2"> \amp  p_2 + \dfrac{1}{2}\rho v_2^2 + \rho g h_2 = p_1 + \dfrac{1}{2}\rho v_1^2 + \rho g h_1. </mrow>
+				</mdn>
+				We have the following quantities known.  I will assign symbols to work with before putting in the numbers at the end.
+				<md>
+					<mrow> \amp  h_2-h_1 = 20\ \text{m} \equiv h.</mrow>
+					<mrow> \amp  p_1 - p_2 = 400\ \text{kPa}\equiv \Delta p</mrow>
+					<mrow> \amp  \dfrac{A_1}{A_2} = \left(\dfrac{d_1}{d_2}\right)^2 = 2.5^2 = 6.25 \equiv \alpha. </mrow>
+				</md>
+				We need only the ratio of the areas of cross-section. Putting <m>v2 = \alpha v_1</m> from Eq. <xref ref="eq-ch13-f-d-ex-5-1"/> in Eq. <xref ref="eq-ch13-f-d-ex-5-2"/> and dividing out by <m>\rho</m> leads to
+				<me>
+					\dfrac{\Delta p}{\rho} + \dfrac{1}{2} v_1^2 =  \dfrac{1}{2} \alpha^2 v_1^2 + g h.
+				</me>
+				(a)
+				This equation can be rearranged and solved for <m>v_1</m>.
+				<md>
+					<mrow> v_1  \amp  = \sqrt{\dfrac{2}{\alpha^2 - 1} \left[ \dfrac{\Delta p}{\rho} -  g h \right]}, </mrow>
+				    <mrow> \amp   = 2.85\  \text{m/s}.</mrow>
+				</md>
+				(b)
+				Putting back in Eq. <xref ref="eq-ch13-f-d-ex-5-1"/> will give <m>v_2 = \alpha^2 v_1 = 17.8</m> m/s.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Atmospheric-Pressure-Suporting-Enclosed-Water-Tank-from-Leaking"><title>Atmospheric Pressure Suporting Enclosed Water Tank from Leaking</title>
+		<statement>
+			<sidebyside widths="50% 10% 35% 5%">
+				<p>
+					A large water tank is filled with water to the top, and sealed off at the top so that it is not exposed to the atmospheric pressure. A small orifice is opened at the bottom.  Determine the minimum water height in the tank for the water to leak at all. 
+				</p>
+				<p></p>
+				<image source="./images/dynamic-fluid/pressure-inside-enclosed-tank-statement.png"/>
+				<p></p>
+			</sidebyside>
+		</statement>
+		<hint> <p>  When you seal off the top, the pressure there would not be atmospheric pressure. </p> </hint>
+		<answer> <p> <m> 10.34\text{ m}.</m>  </p> </answer>
+		<solution> 
+			<p>
+				When you seal off the top, the pressure there would not be atmospheric pressure.  The water in the tank is supported by the push by the atmosphere at the opened orifice at the bottom until the height in the tank is greater than the critical height. At the critical height, the pressure at the top of the enclosed tank is zero.
+			</p>
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					<p>
+						Let us denote a point in the opened orifice as point 1 and the top point of water in the tank as point 2.  We apply Bernoulli's equation.
+						<me>
+							p_2 + \frac{1}{2}\rho v_2^2 + \rho g h_2 = p_1 + \frac{1}{2}\rho v_1^2 + \rho g h_1. 
+						</me>
+					</p>
+				</p>
+				<p></p>
+				<image source="./images/dynamic-fluid/pressure-inside-enclosed-tank-solution.png"/>
+			</sidebyside>
+			
+			<p>
+				At the critical height <m>h_c</m> we will have the following values.
+				<md>
+					<mrow> \amp  h_1 = 0,</mrow>
+					<mrow> \amp  v_1 = 0\ \ \textrm{(just when starts to flow)}</mrow>
+					<mrow> \amp  p_1 = p_{\textrm{atm}} = 1.013 \times 10^{5}\ \textrm{Pa}</mrow>
+					<mrow> \amp  h_2 =  h_c\ \ \textrm{(the critical height)}</mrow>
+					<mrow> \amp  v_2 = 0.</mrow>
+				</md>
+				This gives
+				<me>
+					\rho g h_c = p_{\textrm{atm}}.
+				</me>
+				Therefore
+				<me>
+					h_c = \frac{p_{\textrm{atm}}}{\rho g} = 10.34\ \textrm{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+ 
+
+
+</section>

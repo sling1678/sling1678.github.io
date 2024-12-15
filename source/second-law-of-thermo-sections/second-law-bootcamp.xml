@@ -1,0 +1,212 @@
+<section xml:id="Second-Law-Bootcamp"><title> Second Law Bootcamp </title>
+
+	<subsection><title> Heat Engine</title>
+
+		<problem><title> Efficiency of a Steam Engine  </title>
+			<p> Follow the link: <xref ref="ex-Efficiency-of-a-Steam-Engine"/>.
+			</p>
+		</problem>
+
+		<problem><title> Work Produced and Efficiecy of a Thermal Engine  </title>
+			<p> Follow the link: <xref ref="ex-Work-Produced-and-Efficiecy-of-a-Thermal-Engine"/>.
+			</p>
+		</problem>		
+ 
+
+	</subsection>
+
+	<subsection><title> Carnot Engine</title>
+		<problem><title> The Efficiency of a Carnot Engine  </title>
+			<p> Follow the link: <xref ref="ex-The-Efficiency-of-a-Carnot-Engine"/>.
+			</p>
+		</problem>
+
+		<problem><title> Heat Flow in a Carnot Engine  </title>
+			<p> Follow the link: <xref ref="ex-Heat-Flow-in-a-Carnot-Engine"/>.
+			</p>
+		</problem>		
+ 
+
+		<problem><title> Power of a Carnot Engine  </title>
+			<p> Follow the link: <xref ref="ex-Power-of-a-Carnot-Engine"/>.
+			</p>
+		</problem>		
+
+ 
+		<problem><title> Carnot Cycle with Monatomic Ideal Gas  </title>
+			<p> 
+				Follow the link: <xref ref="ex-Carnot-Cycle-with-Monatomic-Ideal-Gas"/>.
+			</p>
+		</problem>	
+ 
+
+		<problem><title> Numerical Study of Carnot Cycle  </title>
+			<p> 
+				Follow the link: <xref ref="ex-Numerical-Study-of-Carnot-Cycle"/>.
+			</p>
+		</problem>	
+
+
+	</subsection>
+
+ 
+
+	<subsection><title> Carnot Refrigerator</title>
+
+		<problem><title> Freezing Water in a Refrigerator </title>
+			<p> Follow the link: <xref ref="ex-Freezing-Water-in-a-Refrigerator"/>.
+			</p>
+		</problem>
+
+		<problem><title> Performance of a Kitchen Refrigerator </title>
+			<p> Follow the link: <xref ref="ex-Performance-of-a-Kitchen-Refrigerator"/>.
+			</p>
+		</problem>
+
+		<problem><title> Work Required to Cool a Bucket of Water </title>
+			<p> Follow the link: <xref ref="ex-Work-Required-to-Cool-a-Bucket-of-Water"/>.
+			</p>
+		</problem>
+ 
+		<problem><title> Power to Maintain Temperature in a Carnot Refrigerator </title>
+			<p> Follow the link: <xref ref="ex-Power-to-Maintain-Temperature-in-a-Carnot-Refrigerator"/>.
+			</p>
+		</problem>
+
+	</subsection>
+ 
+	<subsection><title> Real Engines</title>
+
+		<problem><title> The Real Efficiency of a Power Plant </title>
+			<p> Follow the link: <xref ref="ex-The-Real-Efficiency-of-a-Power-Plant"/>.
+			</p>
+		</problem>
+
+		<problem><title> Efficiency of a Coal Power Plant </title>
+			<p> Follow the link: <xref ref="ex-Efficiency-of-a-Coal-Power-Plant-Real"/>.
+			</p>
+		</problem>
+
+
+	</subsection>
+ 
+
+
+	<subsection><title> Miscellaneous</title>
+
+		<problem><title> Carnot Engine Providing Energy to Run an Electric Motor </title>
+			<statement>
+				<p>
+					An engine working in a Carnot cycle between two heat baths of temperatures <m>600\text{ K}</m> and <m> 273\text{ K}</m> runs an electric motor that uses <m>60\text{ W}</m> of power.  If each cycle is completed in 10 seconds, how much heat does the engine absorb from the higher-temperature bath in each cycle?
+				</p>
+
+			</statement>
+			<hint> <p>  Use <m> W = P\Delta t</m> to find the work the engine should produce. </p> </hint>
+			<answer> <p> <m>1100\ \text{J}</m>.  </p> </answer>
+			<solution> 
+				<p>
+					The efficiency
+					<me>
+						\eta = \frac{T_H - T_C}{T_H} = \frac{327}{600} = 0.545.
+					</me>
+					The work output in each cycle is
+					<me>
+						W = P\Delta t = 60\ \text{W}\times 10\ \text{s} = 600\ \text{J}.
+					</me>
+					Therefore
+					<me>
+						Q_{in} = \frac{W}{\eta} = \frac{600\ \text{J}}{0.545} = 1100\ \text{J}.
+					</me>
+				</p>
+			</solution>
+		</problem>
+
+		<problem><title> Using a Carnot Engine to Run a Carnot Refrigerator </title>
+			<statement>
+				<p>
+					A Carnot cycle working between <m>100^{\circ}\text{C}</m> and <m>30^{\circ}\text{C}</m> is used to drive a refrigerator between  <m>-10^{\circ}\text{C}</m> and <m>30^{\circ}\text{C}</m>. (a) How much energy must the Carnot engine produce per second so that the refrigerator is able to discard 10 Joules of energy per second? (b) How much heat does the Carnot engine take in each second from its hot bath source to produce the work required to run the refrigerator at <m>10\text{ J/s}</m> rate?
+				</p>
+
+			</statement>
+			<hint> <p>  First find the work required to discard 10 J. </p> </hint>
+			<answer> <p>  <m>8.1\text{ J}</m>  </p> </answer>
+			<solution> <title> (a) </title>
+				<p> (a)
+					The definition of the coefficient of performance of the refrigerator gives the work required to extract <m>Q_C</m> from the refrigerator.
+					<me>
+						W = \frac{Q}{\beta}.
+					</me>
+					The coefficient of performance <m>\beta</m> for a Carnot refrigerator can be computed from the temperatures inside and outside.
+					<me>
+						\beta = \frac{T_C}{T_H-T_C} = \frac{263.15}{40}  =  6.58.
+					</me>
+					Therefore we need the engine to supply the following energy per second.
+					<me>
+						W = \frac{Q}{\beta} = \frac{10\ \text{J}}{6.58} = 1.52\ \text{J}.
+					</me>
+				</p>
+			</solution>
+			<solution> <title> (b) </title>
+				<p>
+					(b)
+					Since we need <m>1.52\text{ J}</m> of energy from the engine we need
+					<md>
+						<mrow> Q_{in} \amp = \frac{W}{\eta} =  \frac{W T'_H}{T'_H - T'_C} </mrow>
+						<mrow> \amp =  \frac{1.52\ \text{J} \times  373.15}{ 70} = 8.1\ \text{J}. </mrow>
+					</md>
+					Thus, in the end we need to spend <m>8.1\text{J}</m> of thermal energy from the ultimate source in the engine/refrigerator combined system to take out <m>10\text{ J}</m> of energy from inside the refrigerator assuming the temperature of the bath at <m>30^{\circ}\text{C}</m> does not change.
+				</p>
+			</solution>
+		</problem>
+
+
+		<problem xml:id="pr-Carnot-Engine-Driving-a-Carnot-Refrigerator"><title> Carnot Engine Driving a Carnot Refrigerator </title>
+			<statement>
+				<p>
+					The work output of a Carnot engine operating between temperatures <m>T_1</m> and <m>T_2</m>  with <m> T_1>T_2</m> is used to drive a refrigerator between temperatures <m> T_3</m> and <m> T_4</m> where <m> T_3>T_4</m>.  Find the ratio of heat taken from thermal baths <m> T_1</m> and <m> T_4 </m> in terms of the four temperatures. 
+				</p>
+				<figure>
+					<caption> 
+						Figure for <xref ref="pr-Carnot-Engine-Driving-a-Carnot-Refrigerator"/>.
+					</caption>
+					<image source="./images/second-law-of-thermo/carnot-pr-2.png" width="60%"/>
+				</figure>
+
+			</statement>
+			<hint> <p> Work in one cycle of engine will be the work used by the refrigerator.  </p> </hint>
+			<answer> <p> <m> \left(T_3/T_4 -1 \right)/\left(1-T_2/T_1 \right)</m>.  </p> </answer>
+			<solution> 
+				<p>
+					In this problem, we have a Carnot engine and a Carnot refrigrator. Let us denote the quantities of refrigerator by a prime and those of the engine without a prime. 
+					We wish the work produced by the engine to be equal to the work used by the refrigerator. 
+					<me>
+						Q_H - Q_C = Q^\prime_H - Q^\prime_C.
+					</me>
+					Dividing both sides by $Q_H Q'_C$ gives
+					<me>
+						\frac{1}{Q^\prime_C} \left(1 - \frac{Q_C}{Q_H}\right)  = \frac{1}{Q_H} \left(  \frac{Q^\prime_H}{Q^\prime_C} - 1\right).
+					</me>
+					Carnot cycles have
+					<me>
+						\frac{Q_H}{Q_C} = \frac{T_1}{T_2}\ \ \textrm{and}\ \ \frac{Q^\prime_H}{Q^\prime_C} = \frac{T_3}{T_4}.
+					</me>
+					Therefore,
+					<me>
+						\frac{Q_H}{Q^\prime_C} = \frac{\frac{T_3}{T_4} - 1}{1 - \frac{T_2}{T_1}} = \left( \frac{T_3-T_4}{T_1-T_2}\right)\ \frac{T_1}{T_4}.
+					</me>
+				</p>
+			</solution>
+		</problem>
+
+ 
+
+
+ 
+
+	</subsection>
+
+
+
+
+
+</section>

@@ -1,0 +1,304 @@
+<section xml:id="section-diffraction-through-a-double-slit-light"><title>Diffraction Through a Double-Slit</title>
+	<introduction>
+		<p>
+			In the last chapter when we were studying interference in the Young's double-slit experiment  we ignored the diffraction effect in each slit.  We assumed that the slits were so narrow that on the screen you only saw the interference of light from just two point sources.
+		</p>
+		<p>
+			<xref ref="fig-intensity-vs-angle-plot-single-slit"/> in <xref ref="section-intensity-in-diffraction-pattern-light"/> shows us that  if width of a slit is less than one wavelength, then, there is just a spreading of light and no diffraction peaks or troughs on the screen.  Therefore, it was reasonable to leave out the diffraction effect in the last chapter. That figure also illustrated that if you a slit wider than a wavelength, you cannot ignore diffraction effects. 
+
+		</p>
+		<p>
+			In this section we will study the complications to the double-slit experiment when you also need to take into account the diffraction effect of each slit. You will find that diffraction effects from each slit and interference between waves from the two slits combine to produce complicated interference pattern, in which some of the anticiapted interference orders may be missing while intensities of some orders may be considerably reduced as shown in <xref ref="fig-intensity-vs-angle-plot-double-slit"/> below.
+		</p>
+		<p>
+			We will use <xref ref="fig-diffraction-double-slit-setup"/> for a basic arrangement of a double-slit experiment. The slits <m>\text{S}_1</m> and <m>\text{S}_2</m> have the same width <m>b</m> and are separated by a center-to-center distance <m>a</m>. Calculation in subsection <xref ref="subsection-Derivation-of-the-Intensity-Formula-Double-Slit"/> gives the following expression for intensity in the direction <m>\theta</m> when a plane wave of wavelength <m>\lambda</m> is incident on the slits.
+			<men xml:id="eq-intensity-double-slit-diffraction-summary">
+				I(\theta) = I_0 \left(\frac{\sin\beta}{\beta} \right)^2\: \cos^2\alpha,
+			</men>
+			where parameters <m>\alpha</m> and <m>\beta</m> are given by
+			<mdn>
+				<mrow xml:id="eq-diffraction-double-slit-alpha-def"> \amp \alpha \equiv \frac{\pi a \sin\theta}{\lambda}.</mrow>
+				<mrow xml:id="eq-diffraction-double-slit-beta-def"> \amp \beta \equiv \frac{\pi b \sin\theta}{\lambda}.</mrow>
+			</mdn>
+
+ 
+		</p>
+		<figure xml:id="fig-diffraction-double-slit-setup">
+			<caption>
+				 Basic setup for Fraunhofer diffraction through a double-slit.	  
+			</caption>
+			<image source="./images/diffraction-of-light/diffraction-double-slit-setup.png" width="80%"/>
+		</figure>
+		<p>
+			The factor  <m>(\sin\beta/\beta)^2</m> in intensity in Eq. <xref ref="eq-intensity-double-slit-diffraction-summary"/> comes from the diffraction of the waves originating from the same slit and the factor <m>\cos^2\alpha</m> arises from the interference of the waves originating from two different slits.  The intensity will be zero whenever either of these two have a value of zero. Since maxima of <m>(\sin\beta/\beta)^2</m> for its side peaks are much lower than the central peak, the peaks at further away from the center have less intensity maximum than peak at the center. Thus, we find that the peaks  of <m>\cos^2\alpha</m> are modulated by the peaks and valleys of <m>(\sin\beta/\beta)^2</m>.
+		</p>
+		<p><alert>Diffraction Maxima and Minima</alert></p>
+		<p>
+
+			The diffraction pattern has a minimum whenever <m>I(\theta)</m> becomes a  minimum.
+			<mdn>
+				<mrow number="no">\text{Minima:} \amp </mrow>
+				<mrow> \amp \ \ \ \ \ \alpha = \pm\frac{\pi}{2}, \pm 3 \frac{\pi}{2}, \cdots</mrow>
+				<mrow> \amp \ \ \ \ \ \beta = \pm \pi, \pm 2 \pi, \pm 3 \pi, \cdots</mrow>
+			</mdn>
+			The minima due to  <m>\alpha</m> are called the <term>interference minima</term> and the ones due to <m>\beta</m>  are called the <term> diffraction minima</term>.  It is also useful to rewrite the minima conditions in terms of wavelength <m>\lambda</m> and slit dimensions <m>a</m> and <m>b</m>.
+			<mdn>
+				<mrow number="no"> \text{Minima:}\amp </mrow>
+				<mrow> \amp  \text{Interference:}\ \ \ \ \ a\sin\theta = \pm\frac{\lambda}{2}, \pm 3 \frac{\lambda}{2}, \cdots</mrow>
+				<mrow> \amp \text{Diffraction:}\ \ \ \ \ b\sin\theta = \pm \lambda, \pm 2 \lambda, \pm 3 \lambda, \cdots</mrow>
+			</mdn>
+			The maxima due to interference occur at maxima of <m>\cos^2\alpha</m>. This give the maxima conditions to be at <m>\alpha = m\pi</m> with <m>m</m> being an integer. Writign this in angle <m>\theta</m> we get the following directions for interference maxima.
+			<me>
+				\text{Interference Maxima: }\ a\sin\theta = m \lambda, \ \ m = 0, \pm 1, \pm 2, \cdots.
+			</me>
+			Some of these interference maxima would not show up on the screen if that direction also corresponds to a minimum for the diffraction. We refer to these missing peaks as <term> missing order</term>. Thus, if there exists an <m>m^\prime</m> for some <m>m</m> such that following two conditions hold true for the direction <m>\theta</m>, then, order <m>m</m> is said to be missing.
+			<men>
+				a\sin\theta =  m \lambda\ \ \text{and}\ \ b\sin\theta = m^\prime \lambda.
+			</men>		
+			One example diffraction pattern on the screen is presented in <xref ref="fig-intensity-vs-angle-plot-double-slit" />.  The solid line with multiple peaks of various heights is the intensity observed on the screen.  It is a product of the interference pattern form waves from separate slits and the diffraction of waves from within one slit. The plot shows the expected result for a slit width <m>b = 2\lambda</m> and slit separation <m>a = 6\lambda</m>.  The maximum corresponding to <m>m=\pm 3</m> orders for the interference is missing because the minumum of the diffraction occurs in the same direction.
+
+		</p>
+		<figure xml:id="fig-intensity-vs-angle-plot-double-slit">
+			<caption>
+				Diffraction from a double-slit.  The dashed line with same height peaks are from the interference of the waves from two slits, the dashed line with one big hump in the middle is the diffraction of waves from within one slit and the solid line is the product of the two, which is the pattern observed on the screen.  Here <m>b=2\lambda</m> and <m>a=6\lambda</m>.
+				 	  
+			</caption>
+			<image source="./images/diffraction-of-light/intensity-vs-angle-plot-double-slit.png" width="80%"/>
+		</figure>
+
+	</introduction>
+
+	<subsection xml:id="subsection-Derivation-of-the-Intensity-Formula-Double-Slit"><title>Derivation of the Intensity Formula</title>
+
+		<p>
+			In case you are wondering how one can obtain the formula for intensity cited above, here it is.  Consider plane waves incident on an opaque shield with two long horizontal slits each with width <m>a</m> and center-to-center distance <m>b</m> as shown in <xref ref="fig-diffraction-double-slit-setup"/>.  Then the superposition of secondary wavelets from the plane waves at the two slits will proceed in a similar way as for a single slit, except now the integration over <m>z</m> will have two parts, one over each slit.
+			<md>
+				<mrow> E_P \amp  = \text{Contribution from the wave through slit 1} </mrow>
+				<mrow> \amp  \ \ \ \ \ + \text{Contribution from the wave through slit 2}. </mrow>
+			</md>
+			We have already worked out the math for one slit in detail when we studied the diffraction through a single slit.  The same math is applied here with the range for <m>z</m> for the slits to be: <m>\frac{a}{2}</m> <m>-</m> <m>\frac{b}{2}</m> to <m>\frac{a}{2}</m> <m>+</m> <m>\frac{b}{2}</m> for the slit <m>S_1</m> and <m>-\frac{a}{2}</m> <m>-</m> <m>\frac{b}{2}</m> to <m>-\frac{a}{2}</m> <m>+</m> <m>\frac{b}{2}</m> for the slit <m>S_2.</m>
+			<md>
+				<mrow> E_P \amp  = \frac{A}{R} \left[ \int_{a/2-b/2}^{a/2+b/2}\sin( kR - k z \sin\theta - \omega t) dz\right]_{\text{slit 1}} </mrow>
+				<mrow> \amp \ \ \ \ \ \ +  \frac{A}{R} \left[ \int_{-a/2-b/2}^{-a/2+b/2}\sin( kR - k z \sin\theta - \omega t) dz\right]_{\text{slit 2}} </mrow>
+			</md>
+			where <m>A</m> is the amplitude at the slits.  For simplicity we have assumed the same amplitude at the points of the two slits.  The integrals are easy to do with the following result. 
+			<me>
+				E_P = 2 \frac{bA}{R}\ \left(\frac{\sin\beta}{\beta} \right) \cos\alpha\ \sin(kR -\omega t),
+			</me>
+			where <m>\alpha</m> and <m>\beta</m> are same as defined above. The intensity at a point P on the screen is obtained from the fluctuating electric field of the wave by time-averaging the square of the field and multiplying by the permittivity  <m>\epsilon_0</m> and the speed of light <m>c</m>.  The Intensity at point P of screen is then found to be
+			 <me>
+				I(\theta) = \left[ 2\epsilon_0 c \left( \frac{bA}{R} \right)^2 \right] \ \left(\frac{\sin\beta}{\beta} \right)^2 \cos^2\alpha,
+			</me>
+			where the quantity in the square bracket has units of intensity.  As we are mostly interested in how the intensity changes on the screen and not in the absolute value, it will be nice to find a reference intensity <m>I_{\text{ref}}</m> to write <m>I(\theta)</m> in terms of.  The intensity of light from one slit on the screen at the horizontal spot from the slit when the other slit is covered provides a nice reference intensity. This intensity is easily obtained from noting that the electric field has amplitude <m>A</m>   at any point of the slit and accounting for the  spreading out in a sphere of radius <m>R</m> when traveling to  the screen.
+			<me>
+				I_{\text{ref}} = \frac{1}{2}\epsilon_0 c \left( \frac{bA}{R} \right)^2.
+			</me>
+			Therefore intensity <m>I(\theta)</m> from two slits is written as follows.
+			<men xml:id="eq-intensity-double-slit-diffraction-using-iref">
+				I(\theta) = 4 I_{\text{ref}}  \left(\frac{\sin\beta}{\beta} \right)^2 \cos^2\alpha.
+			</men>
+			Note that when both slits are open, there is 4 times intensity of one slit rather than 2 times.  This is because the amplitudes add giving 2 <m>\times</m> the amplitude of one slit, but the intensity is proportional to the square of amplitudes, and therefore you get 4 <m>\times</m> the intensity of one slit. 
+		</p>
+		<p>
+			By setting <m>\theta=0</m> in Eq. <xref ref="eq-intensity-double-slit-diffraction-using-iref"/> you will notice that <m>I(0) = 4 I_\text{ref}</m>. Let us write this as <m>I_0</m> as we have done before.
+			<men>
+				I(\theta) = I_0  \left(\frac{\sin\beta}{\beta} \right)^2 \cos^2\alpha.
+			</men>
+		</p>
+
+
+	</subsection>
+
+	<exercise xml:id="exercise-maxima-within-central-peak-double-slit-diffraction"><title>Interference Maxima Within Central Peak of a Double-slit Diffraction</title>
+
+		<statement>
+			<p>
+				Find the angular positions of the interference maxima within the central peak of a double-slit diffraction for a monochromatic light of wavelength 628 nm on slits of width of <m>1.5\ \mu\text{m}</m> separated by <m>4.0\ \mu\text{m}</m>.
+			</p>
+		</statement>
+		<hint><p>Find the range of angles inside central peak of diffraction first. then, you can use the interference conditions and stay within the required range.</p></hint>
+		<answer><p>  <m>0,\ 9.0^\circ,\ -9.0^\circ,\ 18.3^\circ,\ -18.3^\circ, </m> </p></answer>
+		<solution>
+			<p>
+				First let us find the range of angle included within the central maximum of the diffraction by locating the first diffraction minima.
+				<me>
+					b\sin\theta = \pm \lambda.
+				</me> 
+				Therefore, the central peak is between <m>-\sin^{-1}(\lambda/b)</m>  to  <m>+\sin^{-1}(\lambda/b)</m>, which gives <m>-23.3^{\circ}</m> to <m>+23.3^{\circ}</m>.  We need to find the interference maxima within this range.  The condition for interference maxima are
+				<me>
+					a\sin\theta = m \lambda, \ \ \ m = 0, \pm 1, \pm 2, \pm 3, \cdots.
+				</me>
+				The value of <m>m</m> for which the edge of the central peak of diffraction is reached is obtained by setting angle to <m>23.3^{\circ}</m>.
+				<me>
+					m = \frac{a\sin\theta}{\lambda} = \frac{4\ \mu\text{m}\ \sin(23.36{\circ})}{0.628\ \mu\text{m}} = 2.5.
+				</me>
+				Hence, the central peak will have five interference peaks, corresponding to  <m>m = 0</m> , <m>\pm 1</m>, <m>\pm 2</m>. For calculation, we will need <m>\lambda/a = 0.157</m>. Their directions will be
+				<md>
+					<mrow> \amp \theta_0 = 0</mrow>
+					<mrow> \amp \theta_1 = \sin^{-1}\left(\lambda /a \right) = \sin^{-1}\left( 0.157 \right) = 9^\circ.</mrow>
+					<mrow> \amp \theta_{-1} =  - 9^\circ.</mrow>
+					<mrow> \amp \theta_2 = \sin^{-1}\left( 2 \lambda /a \right) = \sin^{-1}\left( 2\times 0.157 \right) = 18.3^\circ.</mrow>
+					<mrow> \amp \theta_{-2} =   -18.3^\circ.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Combined-Diffraction-and-Interference-in-a-Double-Slit-Diffraction"><title>Combined Diffraction and Interference in a Double-Slit Diffraction</title>
+
+		<statement>
+			<p>
+				Two slits of width <m>2\: \mu\text{m}</m> each in an opaque material are separated by a center-to-center distance of <m>6\: \mu\text{m}</m>.  A monochromatic light of wavelength 450 nm is incident on the double-slit.  One finds a combined interference and diffraction pattern on the screen. 
+			</p>
+			<p>
+				(a) How many peaks of the interference will be observed in the central maximum of the diffraction pattern?
+			</p>
+			<p>
+				(b) How many peaks of the interference will be observed if the slit width is doubled while keeping the distance between the slits same?
+			</p>			
+			<p>
+				(c)  How many peaks of interference will be observed if the slits are separated by twice the distance, i.e., <m>12\: \mu\text{m}</m>, while keeping the widths of the slits <m>2.0\:\mu\text{m}</m>? 
+			</p>
+
+		</statement>
+		<hint><p> (a)-(c) The central peak is bounded by the minima of <m>m^\prime=\pm</m> of the diffraction minima. </p></hint>
+		<answer><p> (a) <m>7</m>, (b) <m>3</m>, (c) <m> 13</m>. </p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a) 
+				We will first find the angular width of the central peak due to diffraction.  Then, we will determine how many interference peaks will lie within that angular width.
+			</p>
+			<p>
+
+				Since the central diffraction peak is bounded by the <m>m^\prime=\pm1</m> mininima, the angular width will be
+				<me>
+					\Delta \theta = 2\theta_1 = 2\times \sin^{-1}\left(\dfrac{\lambda}{b} \right) = 2\times \sin^{-1}\left(\dfrac{0.450\:\mu\text{m}}{2\:\mu\text{m}} \right) = 26^{\circ}.
+				</me>
+				We now need to find interference maxima between <m>\theta = -13^{\circ}</m> and <m>\theta = +13^{\circ}</m>.  The condition for interference maxima is
+				<me>
+					a\:\sin\theta_m = m\:\lambda,\ \ m = 0, \pm 1, \pm 2, \cdots.
+				</me>
+				Lets see the value of <m>m</m> when we require <m>\theta_m = 13^{\circ}</m>.
+				<me>
+					6\:\mu\text{m}\sin\:13^{\circ} = m \times 0.450\:\mu\text{m}.
+				</me>
+				Solving this for integer part of <m>m</m> we get <m>m=3</m>.  
+				Therefore, we have <m>m=0, \pm 1, \pm 2, \pm 3</m> order interferences within the central diffraction maximum. That is, there will be <m>7</m> interference peaks within the central peak. 
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)
+				If the slit width is doubled, the angular width of the central diffraction peak will be
+				<me>
+					\Delta \theta =  2\times \sin^{-1}\left(\dfrac{0.450\:\mu\text{m}}{4\:\mu\text{m}} \right) = 13^{\circ}.
+				</me>
+				So, the question is how many interference maxima between <m>\theta = - 6.5^{\circ}</m> and <m>\theta = + 6.5^{\circ}</m>. Using <m>\theta_m = 6.5^{\circ}</m> we find
+				<me>
+					(6\:\mu\text{m})\:\sin\:6.5^{\circ} = m \times 0.450\:\mu\text{m}.
+				</me>
+				Solving this for integer part of <m>m</m> we get <m>m=1</m>. 
+				Therefore, there will be only 3 interference peaks in the central max now since the central maximum has become narrower.
+
+			</p>
+		</solution>
+		<solution><title>(c)</title>
+			<p>
+				(c)
+				Here the central maximum of diffraction is still <m>26^{\circ}</m> wide, but since the slits are separated more, the interference maxima will be more closely together. Using <m>\theta = 13^{\circ}</m> in the interference condition gives the maximum order of interferene ti be <m>|m| = 6</m>.  Therefore, there will be 13 interference peaks now.
+			</p>
+		</solution>
+
+	</exercise>
+
+
+	<exercise xml:id="exercise-Separation-of-Slits-from-Number-of-Interference-Peaks-within-Central-Maximum"><title>Separation of Slits from Number of Interference Peaks within Central Maximum</title>
+
+		<statement>
+			<p>
+				A monochromatic light of wavelength 589 nm incident on a double-slit with slit width 2.5 <m>\mu</m>m and unknown separation results in a diffraction pattern containing <m>9</m> interference peaks inside the central maximum.  Find the separation of the slits.  
+			</p>
+		</statement>
+		<hint><p>Use <m>m^\prime=1</m> diffraction minimum to locate the widest angle within the central maximum.</p></hint>
+		<answer><p>10.0 <m>\mu</m>m  to 12.5  <m>\mu</m>m.</p></answer>
+		<solution>
+			<p>
+				Let <m>a</m> be the separation between the slits and <m>b</m> the width of slits. From the given data we obtain the half angular width of the central max from the  direction of the <m>m^\prime=1</m> diffraction minimum, whose condition is <m>b\sin\:\theta_1 = \lambda</m>.
+				<me>
+				\theta_1 = \sin^{-1}\left( \dfrac{\lambda}{b}\right) = \sin^{-1}\left( \dfrac{0.589\:\mu\text{m}}{2.5\:\mu\text{m}}\right) = 13.6^{\circ}.
+				</me>
+				For this half-width we expect the following value for the maximum order <m>m</m> for the interference peaks within the central peak of diffraction.
+				<me>
+				m \lambda = a\: \sin\:13.6^{\circ},\ \ \Longrightarrow\ \ m = \text{integer value of }\left[ \dfrac{a\:\sin\:13.6^{\circ}}{\lambda}\right].
+				</me>
+				Number of interference peaks inside the central maximum will be
+				<me>
+				1 + 2\times \text{integer value of }\left[ \dfrac{a\:\sin\:13.6^{\circ}}{\lambda}\right] = 9.
+				</me>
+				Solving this gives
+				<me>
+				\text{integer value of }\left[ \dfrac{a\:\sin\:13.6^{\circ}}{\lambda}\right] = 4.
+				</me>
+				Therefore, 
+				<me>
+					\frac{a\:\sin\:13.6^{\circ}}{\lambda} \in (4,\ 5).
+				</me>
+				This will give a range of values for the slit separation. The minimum separation consistent with observation is
+				<me>
+					a = 4\times \frac{\lambda}{\sin\:13.6^{\circ}} = 10.0\:\mu\text{m},
+				</me>
+				and the maximum is
+				<me>
+					a = 5\times \frac{\lambda}{\sin\:13.6^{\circ}} = 12.5\:\mu\text{m}.
+				</me>				
+				Therefore, the slit separation is between <m>10.0\:\mu\text{m}</m> and  <m>12.5\:\mu\text{m}</m>. 				
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="exercise-Different-Number-of-Interference-Peaks-Inside-Central-Maximum-for-Different-Wavelengths"><title>Different Number of Interference Peaks inside Central Maximum for Different Wavelengths</title>
+
+		<statement>
+			<p>
+				When a monochromatic light of wavelength 430 nm incident on a double slit of slit separation 5 <m>\mu</m>m, there are 11 interference fringes in its central maximum.  How many interference fringes will be in the central maximum of a light of wavelength 632.8 nm for the same double-slit? 
+			</p>
+		</statement>
+		<hint><p>First find the <m> m^\prime=1</m> to find the max angle inside central peak. </p></hint>
+		<answer><p><m>9</m>.</p></answer>
+		<solution>
+			<p>
+				From the number of interference fringes in the central maximum when we use 430 nm light we determine the width of the central maximum.  First note that the maximum order of the interference peak to fit in the half-width of the central max will obey
+				<me>
+					a\:\sin\:\theta_{1/2} = \left( \dfrac{m_{\text{max}}-1}{2}\right)\:\lambda,
+				</me>
+				where <m>\theta_{1/2}</m> is the half-width of the central max of diffraction. Therefore,
+				<me>
+					\theta_{1/2} = \sin^{-1}\left( \dfrac{5\times 0.430\:\mu\text{m}}{ 5.0\:\mu\text{m}} \right) = 25.5^{\circ}.
+				</me>
+				This gives us the condition of minimum for <m>m^\prime=1</m> diffraction minimum when we use 430 nm light.
+				<me>
+					b\:\sin\theta_{1/2} = \lambda,\ \ \Longrightarrow\ \ b = \dfrac{0.430\:\mu\text{m}}{\sin\:25.5^{\circ}} = 1.0\:\mu\text{m}.
+				</me>
+				Thus, by using the data of 430 nm light we have found the width of the slits.  Now, we apply these to the red light. For the red light the central maximum half-width will be different.
+				<me>
+					\theta_{1/2}(\text{red}) = \sin^{-1}\left( \dfrac{\lambda}{ b} \right) 
+				= \sin^{-1}\left( \dfrac{ 0.6328\:\mu\text{m}}{1.0\:\mu\text{m}} \right)  = 39^{\circ}.
+				</me>
+				This gives 
+				<me>
+					m_{\text{max}}(\text{red}) = \text{integer part of } \left[ \dfrac{a\:\sin\:39^{\circ}}{\lambda}\right] = 4.
+				</me>
+				Therefore, there will be 9 fringes in the central max for the light of wavelength 632.8 nm.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+</section>

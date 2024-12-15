@@ -1,0 +1,425 @@
+<section xml:id="Variable-Acceleration"><title> Variable Acceleration</title><idx><h>Acceleration</h><h>Variable</h></idx> <idx>Variable Acceleration</idx>
+	<introduction>
+		<p>
+			In the last section we studied motion in an interval in which acceleration is constant. That happens when force on the body is unchanging. However, many interesting situations, if not most, involve changing acceleration. 
+		<!-- </p>
+		<p> -->
+			<!-- Predictions of velocity and position become more difficult mathematically when acceleration changes with time. You will see that acceleration can change abruptly by simple stopping a force or suddenly turning on a force or channging direction of a force on the body.  -->
+			For instance, when a ball hits the floor, force immediately changes from simple gravity to a combination of gravity and force from the floor. In this case, acceleration which has a value of <m>g</m> pointed down an instant before touching the ground but it changes to something else right after the ball comes in contact with the ball.
+		</p>
+		<p>
+			To illustrate the mathematical process for dealing with a variable acceleration, it is sufficient to consider one-dimensional motion along <m>x</m>-axis. Then, we will have only <m>a_x</m> to deal with. For simplicity, we will look at <m>a_x(t)</m> that is made up of constant segments in the interval of interest. In this way, we can build full solution from  constant-acceleration formulas applied to each infintesimal time-segments. 
+		</p>
+ 
+	<!-- </introduction>
+
+	<subsection><title>Position and Velocity in a Two-Acceleration Problems</title> -->
+
+		<sidebyside widths="55% 5% 40%">
+			<p>
+				<p>
+					<xref ref="fig-variable_acceleration_two_step_general"/> shows acceleration in a one-dimensional situation along <m>x</m>-axis that has two values of acceleration in the interal <m>(0, t_2)</m> of interest. Suppose <m>v_{ix}=v_0</m> and <m>x_i=0</m> at <m>t=0</m>. We wish to know <m>v_x</m> and <m>x</m> at <m>t=t_2</m>.
+				</p>
+				<p>
+					In this situation, we first work out <m>v_x</m> and <m>x</m> at <m>t=t_1</m> and use that to work on the second segment. Let us denote them by <m>v_1</m> and <m>x_1</m>.
+					<me>
+						v_1 = v_0 + a_1 t_1;\ \ x_1 = v_0t_1 + \frac{1}{2}a_1t_1^2.
+					</me>
+				</p>
+			</p>
+			<p></p>
+			<figure xml:id="fig-variable_acceleration_two_step_general">
+				<caption>
+				</caption>
+			<image source="./images/two-dim-motion/variable_acceleration_two_step_general.png" width="70%" />
+			</figure>
+		</sidebyside>
+		<p>
+			Now, we use these values as initial values for the second segment to obtian <m>v_2</m> and <m>x_2</m> at <m>t=t_2</m> using the acceleration of the second segment. Note the time during this segment is not <m>t_2</m> but <m>t_2-t_1</m>.
+			<md>
+				<mrow> v_2 \amp =  v_1 + a_2 (t_2-t_1) = v_0 + a_1 t_1 + a_2 (t_2-t_1)</mrow>
+				<mrow> x_2 \amp = x_1 + v_1(t_2-t_1) + \frac{1}{2}a_2 (t_2-t_1)^2 </mrow>
+				<mrow>   \amp = v_0t_1 + \frac{1}{2}a_1t_1^2 +  ( v_0 + a_1 t_1 )(t_2-t_1) + \frac{1}{2}a_2 (t_2-t_1)^2 </mrow>
+			</md> 
+		</p>
+		
+	<!-- </subsection>	 -->
+	</introduction>
+
+
+	<!-- 	<subsection><title>Acceleration Changing in Steps</title>
+		<p>
+			Since an arbitrarily varying acceleration can always be broken up into constant acceleration segments, in this subsection, we will consider problems where accelerations change abruptly from one constant value to another. When you plot <m>a_x</m> versus <m>t</m>, the plot will look like steps as illustrated in <xref ref="fig-exp-varying-acceleration-1"/> below.
+		</p>
+		<p>
+			This type of motion is a simple extension of our study on constant acceleration motions.  No new techniques are needed to predict velocity and position.  One just implements the equations of motion for each segment separately, matching the position and velocity at the end of first segment to the initial position and velocity of the second segment, as illustrated for a two-segment case in <xref ref="exp-Stepwise-Varying-Acceleration" /> below. For more segments, you would continue this process till you reach the end.
+		</p>
+	</subsection> -->
+
+
+
+	<subsection><title> (Calculus) Arbitrarily Varying Acceleration</title>
+		<p>
+			Although most of our examples in this book will have constant-acceleration segments, it is worthwhile to look at a case of arbitrarily varying acceleration as an important extension of the multi-step method presented above. We will assume only <m>a_x</m> is nonzero, and, for brevity, use <m>a</m> for <m>a_x</m>.
+		</p>
+		<p>
+			The basic idea for handling an arbitrarily varying acceleration is to replace the original acceleration by an approximation obtained by dividing up the time interval of interest into smaller time intervals. If time segments are small enough, we can approximate the original arbitrarily varying acceleration by a step-wise varying acceleration, where each step is an average acceleration in the corresponding time segment. This is often called discretizing acceleration.
+		</p>
+		<p>
+			Clearly the original situation of a continuously varying acceleration is not the same as its replacement by constant acceleration steps.  However, Isaac Newton showed that if intervals were allowed to be arbitrarily small, then the predictions of final position and velocity, based on step-wise approximate acceleration, can be made arbitrarily close to the exact answer without the approximation (see <xref ref="fig-varying-acceleration-arbitrary-case"/>.)
+		</p>
+		<figure xml:id="fig-varying-acceleration-arbitrary-case"> 
+			<caption>
+				A varying acceleration (a) and successive approximate constant acceleration steps of different step sizes (b, c and d).  In (b) the variable acceleration is replaced by one constant step with the average acceleration denoted as <m>a_1</m> in (b).  In (c) the variable acceleration is replaced by two segments of constant acceleration steps of <m>a_1</m> and <m>a_2</m>. Similarly, in (d) the variable acceleration is replaced by four steps. The process can be continued ad-infinitum. As you decrease the step size, or equivalently increase the number of steps, the original acceleration is covered more accurately by the approximation.
+			</caption>
+			<image source="./images/two-dim-motion/varying-acceleration-arbitrary-case.png" width="70%" />
+		</figure>
+		<p>
+			With this approximation scheme, it is possible to find changes in velocity over the entire finite interval, from <m>t = 0</m> to <m>t = T</m>, not just over one of the small steps.
+		</p>
+		<p>
+			Let us divide the interval <m>[0,T]</m> into <m>N</m> equal intervals: <m>[0, \Delta t)</m>, <m>[\Delta t, 2\Delta t )</m>, <m>[2\Delta t, 3\Delta t)</m>, <m>\cdots</m> <m>[(N-1)\Delta t, N\Delta t]</m>.  The time <m>N\Delta t</m> is equal to the total time <m>T</m> of all the intervals added. Let acceleration in thes subintervals be <m>a_1</m>, <m>a_2</m>, <m>a_3</m>, <m>\cdots</m> , <m>a_N</m>, respectively.  Let <m>v_1</m>, <m>v_2</m>, <m>v_3</m>, <m>\cdots</m> , <m>v_N</m> be velocities at the end of the corresponding intervals.  Of course <m>v_N</m> is same as <m>v(T)</m> or simply <m>v</m> at the end of the final time.  Now, we show that our procedure leads us to the prediction of the final velocity from the initial velocity <m>v_0</m>, the velocity at time <m>t=0</m>.
+		</p>
+		<p> </p>
+		<sidebyside widths="10% 80% 10%">
+			<p></p>
+			<tabular halign="left">
+				<row bottom="minor">
+					<cell>Interval </cell> <cell>Velocity at the end of the interval </cell>
+				</row>
+				<row>
+					<cell><m> 0 \text{ to } \Delta t  </m> </cell> <cell> <m> v_1 = v_0 + a_1 \Delta t</m> </cell>
+				</row>
+
+				<row>
+					<cell><m> \Delta t \text{ to } 2\Delta t  </m> </cell> <cell> <m> v_2 = v_1 + a_2 \Delta t</m> </cell>
+				</row>
+				<row>
+					<cell><m>  2\Delta t \text{ to } 3\Delta t </m> </cell> <cell> <m> v_3 = v_2 + a_3 \Delta t</m> </cell>
+				</row>
+				<row>
+					<cell><m>  3\Delta t \text{ to } 4\Delta t </m> </cell> <cell> <m> v_4 = v_3 + a_4 \Delta t</m> </cell>
+				</row>
+				<row hlalign="center">
+					<cell><m> \vdots  </m> </cell> <cell> <m>  \vdots </m> </cell>
+				</row>
+				<row>
+					<cell><m> (N-2)\Delta t \text{ to } (N-1)\Delta t  </m> </cell> <cell> <m> v_{N-1} = v_{N-2} + a_{N-1} \Delta t</m> </cell>
+				</row>
+				<row>
+					<cell><m> (N-1)\Delta t \text{ to } N\Delta t  </m> </cell> <cell> <m> v_{N} = v_{N-1} + a_{N} \Delta t</m> </cell>
+				</row>
+				<row>
+					<cell><m> 0 \text{ to } N\Delta t  </m> </cell> <cell> <m> v_{N} = v_{0} + \sum_{i=1}^{N}a_{i} \Delta t</m> </cell>
+				</row>
+			</tabular>
+			<p>
+			</p>
+		</sidebyside>
+		<p></p>
+		<p>
+			Summing the velocity change equation in each interval gives us the following equation for the change in velocity from <m>v_0</m> to <m>v</m> over the entire time <m>[0,T]</m>.
+			<men xml:id="eq-var-acc-vel-1">
+				v = v_0 + \sum_{i=1}^{N} a_i \Delta t.  
+			</men>
+			The approximation becomes better as  <m>\Delta t</m> is made smaller.  We denote the limit of the summation as  <m>\Delta t</m> approaches zero by another symbol, called the definite integral of <m>a(t)</m>  from <m>t = 0</m> to <m>t = T</m>.
+			<men xml:id="eq-var-acc-vel-2">
+				v - v_0 = \int_{0}^{T} a(t) dt, \ or,  (\text{Area under the curve of }a \text{ vs } t).
+			</men>
+			For an arbitrary interval t = t1 to t= t2, the integration will be done accordingly.
+			<me>
+				v_2 - v_1 = \int_{t_1}^{t_2} a(t) dt.
+			</me>
+		</p>
+		<!-- <p>
+			If the interval is other than <m>[0,T]</m>, e.g. from <m>t = t_1</m> to <m>t = t_2</m>, then the integration will have to be done over the corresponding interval.
+			<me>
+				v_2 = v_1 + \int_{t_1}^{t_2} a(t) dt,
+			</me>
+			where <m>v_1</m> is the velocity at <m>t_1</m> and <m>v_2</m> the velocity at <m>t_2</m>.
+
+		</p>
+
+		<figure xml:id="fig-varying-acceleration-avst-3">
+			<caption>
+				The change in velocity is equal to the area under the curve, approximated by the rectangles.
+			</caption>
+			<image source="./images/two-dim-motion/varying-acceleration-avst-3.png" width="50%" />
+		</figure>
+
+		<p>
+			Another extremely useful interpretation of the result obtained in Eq. <xref ref="eq-var-acc-vel-1"/> is obtained by noting that <m>a_1\Delta t</m>, <m>a_2\Delta t</m>,<m>a_1\Delta t</m>, <m>\cdots</m>, <m>a_N\Delta t</m>  are areas in the rectangle under the approximated constant acceleration steps in the graph of <m>a</m>  vs <m>t</m>  plot as shown in  <xref ref="fig-varying-acceleration-avst-3"/> for four segments.  The sum in Eq. <xref ref="eq-var-acc-vel-1"/> is the net area under the curve.  Therefore, we can read Eq. <xref ref="eq-var-acc-vel-1"/> as follows.
+
+			<me>
+				v = v_0 + (\text{Area under the curve of }a \text{vs} t).
+			</me>
+
+			The definite integral in Eq. <xref ref="eq-var-acc-vel-2"/> gives us an exact value of the area under the <m>a</m>  vs <m>t</m>  curve.  Unlike the area of a polygon in space, though, the area under the curve can also be negative if the curve is below the horizontal since we would be multiplying a negative acceleration by a positive time segment resulting in a negative area (see  <xref ref="fig-varying-acceleration-avst-4"/>).
+		</p>
+
+		<figure xml:id="fig-varying-acceleration-avst-4">
+			<caption>
+				Positive and negative areas.
+			</caption>
+			<sidebyside widths="50% 50%">
+				<image source="./images/two-dim-motion/varying-acceleration-avst-4-positive-area.png" width="50%" />
+				<image source="./images/two-dim-motion/varying-acceleration-avst-4-negative-area.png" width="50%" />
+			</sidebyside>
+		</figure> -->
+
+ 		<p>
+
+			Similar arguments will lead you to analogous relation between change in position and velocity as we found between change in velocity and acceleration.  We give the result for future reference and leave the derivation as an exercise for the student. Denoting average velocities in segments <m>1, 2, 3, \cdots, N</m> as <m>\bar v_1, \bar v_2, \bar v_3, \cdots, \bar v_N</m> we will obtain the following change in position <m>x-x_0</m> for the total time <m>T=N\Delta t</m>.
+
+			<me>
+				x - x_0 = \sum_{i=1}^N \bar v_i\Delta t \Longrightarrow \int_0^T v(t) dt,\ or,  (\text{Area under the curve of }v \text{ vs } t).
+			</me>
+			For an arbitrary interval t = t1 to t= t2, the integration will be done accordingly.
+			<me>
+				x_2 - x_1 = \int_{t_1}^{t_2} v(t) dt.
+			</me>
+
+		</p>
+	</subsection>
+
+
+	<!-- <example><title> Change in Velocity from Area Under Curve of Acceleration vs Time</title>
+				<statement>
+			<p>
+				A skydiver's acceleration changes as the parachute opens up.  A coordinate with <m>y</m> axis pointed vertically up is used to record the acceleration of the skydiver. The skydiver exits from an air plane at vertical velocity component zero.  She opens her parachute after <m>10 \text{ sec}</m>. We will assume that parachute opens instantaneously at <m>10 \text{-sec}</m> second mark. For the first <m>10\text{ sec}</m> the acceleration of the parachuter is <m>7 \text{m/s}^2</m> pointed down.  After the parachute opens at the <m>10\text{-sec}</m> mark, the <m>y</m> component of the acceleration comes to zero in another <m>20 \text{ sec}</m>  as shown in <xref ref="fig-varying-acceleration-avst-5"/>.  Find the velocity of the parachuter at (a) <m>t = 10 \text{ sec}</m>, (b) <m>t = 30 \text{sec}</m>? 
+			</p>
+			<figure xml:id="fig-varying-acceleration-avst-5">
+				<caption>
+					Variable acceleration of a parachuter.
+				</caption>
+				<image source="./images/two-dim-motion/varying-acceleration-avst-5.png" width="60%" />
+			</figure>
+		</statement>
+		<hint> <p>  Use area under the curve. </p> </hint>
+		<answer> <p> (a) <m>-70\text{ m/s}</m>, (b) <m>140\text{ m/s}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The area under the curve method for the changing acceleration can be applied to determine the change in velocity over any period. Part (a) is actually over an interval where the acceleration is constant.  Therefore, for part (a) we could use either the constant acceleration equations or the area under the <m>a</m> vs <m>t</m> method.  For part (b) we cannot use the constant acceleration formulas and must resort to variable acceleration method.
+			</p>
+			<p>
+				(a) The area under the curve method can be applied to the the segment of curve from <m>t=0</m> to <m>t=10 \text{ sec}</m>.  The area is that of a rectangle with one side equal to <m>-7 \text{ m/s}^2</m> and the other side equal to <m>10 \text{ sec}</m>.  Therefore, the area is <m>-70 \text{ m/s}</m>, which is the change in the velocity of the parachuter. Since the initial velocity of the parachuter is given to be zero, the velocity at <m>10\text{ sec}</m> mark is <m>-70\text{ m/s}</m>.  The negative sign correctly gives the direction as pointed down since pointed up has been taken to be the positive direction. We can verify that we get the same result from using constant acceleration equations. Here <m>v_0=0</m>, <m>t=10\text{ sec}</m>, <m>a=-7\text{ m/s}^2</m>.  Therefore <m>v=v_0+at</m> gives <m>v=-70\text{ m/s}</m>, same as the area under the curve method.
+			</p>
+			<p>
+				(b) This part has variable acceleration, so it would be mistake to use constant acceleration formulas. The area is that of a triangle of height <m>-7\text{ m/s}^2</m> and the base equal to <m>20\text{ sec}</m>.  The area is <m>-7\times 20/2 = -70\text{ m/s}</m>.  Therefore, the change in velocity in the time <m>10\text{ sec}</m> to <m>30\text{ sec}</m> is also <m>-70\text{ m/s}</m>.  Since the velocity at the beginning of this interval was also <m>-70\text{ m/s}</m>, the velocity at the end of the interval will be <m>(-70\text{ m/s}) + (-70\text{ m/s})</m>, or <m>-140\text{ m/s}</m>.  Thus, velocity at time <m>t=30\text{ sec}</m> is <m>140\text{ m/s}</m> pointed down.
+			</p>
+		</solution>
+	</example> -->
+
+
+
+	<example xml:id="exp-Stepwise-Varying-Acceleration"><title>Stepwise Varying Acceleration </title>
+		<statement>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					A train starts out at rest and moves in a straight line.  The acceleration of the train changes with time, with magnitude <m>0.5 \text{ m/s}^2</m> between <m>t = 0</m> and <m>t = 1 \text{ sec}</m>, and then with magnitude <m>1 \text{ m/s}^2</m> between <m>t = 1 \text{ sec}</m> and <m>t =3\ \text{sec}</m> as shown in <xref ref="fig-exp-varying-acceleration-1"/>. Find the position and the velocity of the train at <m>t = 3 \text{ sec}</m>.
+				</p>
+				<p> </p>
+				<figure xml:id="fig-exp-varying-acceleration-1">
+					<caption>
+						Figure for <xref ref="exp-Stepwise-Varying-Acceleration" />.
+					</caption>
+					<image source="./images/two-dim-motion/exp-varying-acceleration-1.png" width="70%" />
+				</figure>
+			</sidebyside>
+ 
+
+		</statement>
+		<!-- <hint> <p> Work with one acceleration at a time.  </p> </hint> -->
+		<answer> <p>  <m>2.5\text{ m/s}</m> </p> </answer>
+		<solution> 
+			<p>
+				As discussed above, we work out each constant acceleration segment one after the other.
+			</p>
+			<p><alert>Interval <m>t = 0</m> to <m>t =1 \text{ sec}</m>:</alert></p>
+			<p>
+				Let's list the information about this interval as follows.
+				<md>
+					<mrow> \amp x_i = 0\ \text{(setting the initial position at the origin);}</mrow>
+					<mrow> \amp v_{ix} = 0\ \text{  (initially at rest);}</mrow>
+					<mrow> \amp a_x = 0.5 \text{ m/s}^2\ \text{  (constant <m>x</m>-acceleration during this interval);}</mrow>
+					<mrow> \amp \text{Set t = 0 at the beginning of the interval so that we can use the standard formulas.} </mrow>
+				 	<mrow> \amp t = 1 \text{ s} \ \text{  (duration of this interval);}</mrow>
+				</md>
+				With this information, we need to find <m>x</m> and <m>v</m>, the position and velocity at the end of interval.
+				<md>
+					<mrow> \amp  v_x  = v_{ix} + a_x t = 0 + 0.5\times 1 = 0.5 \text{ m/s};</mrow>
+					<mrow> \amp  x = x_i + v_{ix} t + \frac{1}{2}a_xt^2 </mrow>
+					<mrow> \amp = 0 + 0 + \frac{1}{2}\times 0.5\times 1^2  = 0.25 \text{ m}.</mrow>
+				</md>
+			</p>
+
+			<p> <alert> Interval <m>t = 1 \text{ sec}</m> to <m>t =3 \text{ sec}</m>:</alert> </p>
+			<p>
+				Using the information at the end of the previous segment of time, we now know the following information for this interval.
+			</p>
+			<p>
+				<m>x_i = 0.25 \text{ m}</m> since initial <m>x</m>-position here is the final <m>x</m>-position at the end of the previous interval.
+			</p>
+			<p>
+				<m>v_{ix} = 0.5 \text{ m/s}</m> since initial <m>x</m>-velocity here is the final <m>x</m>-velocity at the end of the previous interval.
+			</p>
+			<p>
+
+				<m>a_x = 1.0 \text{ m/s}^2</m> since constant <m>x</m>-acceleration during this interval.
+			</p>
+			<p>
+				<m>t = 2 \text{ s}</m> duration of this interval is from  <m>t= 1\text{ s}</m> to <m>t = 3 \text{ s}</m> or <m>(3\text{ s}-1\text{ s}=2\text{ s})</m>.
+			</p>
+			<p>
+				With this information, we need to find <m>x</m> and <m>v_x</m>, the <m>x</m>-position and <m>x</m>-velocity at the end of interval.
+				<md>
+					<mrow> \amp  v_x  = v_{ix} + a t = 0.5 + 1\times 2  = 2.5 \text{ m/s};</mrow>
+					<mrow> \amp  x = x_i + v_{ix} t + \frac{1}{2}a_xt^2 </mrow>
+					<mrow> \amp = 0 + 0.5\times 2 + \frac{1}{2}\times 1.0\times 2^2 = 3.0 \text{ m}.</mrow>
+				</md>
+				Therefore, the train is at <m>3.0 \text{ m}</m> from where it was at <m>t=0</m> and it is moving at <m>2.5\text{ m/s}</m> at <m>t=3.0 \text{ s}</m> mark.
+			</p>
+		</solution>
+
+
+	</example>
+ 
+
+
+	<example xml:id="ex-Two-Acceleration-Segments"><title>Two Acceleration Segments</title>
+		<statement>
+
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					A particle starts out at rest at <m>t=0</m> and accelerates in a straight line with an acceleration of <m>2 \text{ m/s}^2</m> from <m>t = 0</m> to <m>t = 3\text{ sec}</m>, and then with an acceleration of <m>4\ \text{m/s}^2</m> pointed in the same direction from <m>t = 3\text{ sec}</m> to <m>t =5\text{ sec}</m>.  
+				</p>
+				<p></p>
+				<image source="./images/two-dim-motion/ex-variable-accln-two-steps.png" width="50%" />
+			</sidebyside>
+			<p>
+				(a) Find the position and the velocity of the particle at <m>t = 3</m> sec.
+			</p>
+			<p>
+				(b) Find the position and the velocity of the particle at <m>t = 5</m> sec.
+			</p>
+		</statement>
+		<!-- <hint> <p> Work on each segment as if that was the only segment  </p> </hint> -->
+		<answer> <p> (a) <m>9\text{ m},\ 6\text{ m/s}</m>m (b) <m>29\text{ m},\ 14\text{ m/s}</m>.  </p> </answer>
+		<solution><title>a</title> 
+			<p>
+				Working between <m>t=0</m> and <m>t=3\text{ sec}</m> we get
+				<md>
+					<mrow> v_f \amp = v_i + a t = 0 +2\text{ m/s}^2\times 3\text{ s} = 6\text{ m/s}.  </mrow>
+					<mrow> x_f \amp = x_i + \dfrac{v_i + v_f}{2}\, t = 0 +3\text{ m/s}\times 3\text{ s} = 9\text{ m}.  </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+				When, we work between <m>t=3\text{ sec}</m> and <m>t=5\text{ sec}</m>, the initial condition is same as final condition in the last step. Therefore we jnow have
+				<me>
+					x_i = 9\text{ m},\ \ v_i = 6\text{ m/s}.
+				</me>
+				With <m>a=4\text{ m/s}^2</m>, we get
+				<md>
+					<mrow> v_f \amp = v_i + a t = 6\text{ m/s} +4\text{ m/s}^2\times 2\text{ s} = 14\text{ m/s}.  </mrow>
+					<mrow> x_f \amp = x_i + \dfrac{v_i + v_f}{2}\, t = 9\text{ m} +\dfrac{6\text{ m/s} + 14\text{ m/s}}{2}\times 2\text{ s} = 29\text{ m}.  </mrow>
+				</md>					
+
+			</p>
+		</solution>
+	</example>
+
+
+
+	<example xml:id="ex-Variable-Acceleration-Two-Acceleration-Segments"><title> Variable Acceleration - Two Acceleration Segments</title>
+		<statement>
+			<sidebyside widths="45% 5% 50%">
+				<p>
+					At <m>t=0</m> a particle located at origin has a velocity of <m>20</m> m/s in the direction of the positive <m>x</m>-axis, and accelerates on the <m>x</m>-axis as shown in the figure.  The <m>y</m>  and <m>z</m>-components of the acceleration are zero. 
+				</p>
+				<p> </p>
+				<image source="./images/two-dim-motion/exer-var-accln-redone.png" width="60%"/>
+			</sidebyside>
+			<p>
+				(a) Find the position and the velocity of the particle at <m>t = 2</m> sec.
+			</p>
+			<p>
+				 (b) Find the position and the velocity of the particle at <m>t = 5</m> sec.
+			</p>
+			
+		</statement>
+		<!-- <hint> <p> Work on each segment as if that was the only segment  </p> </hint> -->
+		<answer> <p> (a) <m>34\text{ m},\ 14\text{ m/s}</m>m (b) <m>94\text{ m},\ 26\text{ m/s}</m>.  </p> </answer>
+		<solution><title>a</title> 
+			<p>
+				Working between <m>t=0</m> and <m>t=2\text{ sec}</m> we have
+				<me>
+					x_i=0,\ v_i=20\text{ m/s},\ a = -3\text{ m/s}^2,\ t = 2\text{ s}.
+				</me>
+				Therefore,
+				<md>
+					<mrow> v_f \amp = v_i + a t = 20\text{ m/s} + (-3\text{ m/s}^2)\times 2\text{ s} = 14\text{ m/s}.  </mrow>
+					<mrow> x_f \amp = x_i + \dfrac{v_i + v_f}{2}\, t = 0 +17\text{ m/s}\times 2\text{ s} = 34\text{ m}.  </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+				When, we work between <m>t = 2\text{ sec}</m> and <m>t = 5\text{ sec}</m>, the initial condition is same as final condition in the last step. Therefore we now have
+				<me>
+					x_i = 34\text{ m},\ v_i = 14\text{ m/s},\ a = 4\text{ m/s}^2,\ t = 3\text{ s}.
+				</me>
+				Therefore,
+				<md>
+					<mrow> v_f \amp = v_i + a t = 14\text{ m/s} + 4\text{ m/s}^2\times 3\text{ s} = 26\text{ m/s}.  </mrow>
+					<mrow> x_f \amp = x_i + \dfrac{v_i + v_f}{2}\, t = 34\text{ m} +\dfrac{14\text{ m/s} + 26\text{ m/s}}{2}\times 3\text{ s} = 94\text{ m}.  </mrow>
+				</md>					
+
+			</p>
+		</solution>
+	</example>
+
+	<exercises>
+
+	<exercise xml:id="ex-Change-in-Position-and-Velocity-from-Analytic-Expression-of-Variable-Acceleration"><title> (Calculus) Change in Position and Velocity from Analytic Expression of Variable Acceleration</title>
+		<statement>
+			<p>
+				The <m>x</m>-component of the acceleration of a particle changes according to the following analytic expression, <m>a_x(t) = 4+t^2/2</m>, where <m>t</m> is in sec and the acceleration in <m>\text{m/s}^2</m>.  Find the <m>x</m>-components of the velocity and position vectors. Use <m>v_0</m> and <m>x_i</m> for initial velocity and initial position respectively.
+			</p>
+		</statement>
+		<hint> <p>  <m>v_x(t) - v_x(0) = \int_0^t\, a_x dt</m>.  </p> </hint>
+		<answer> <p> (a) <m>x = x_i +  v_0 t + 2 t^2 + \dfrac{1}{24} t^4</m>,
+					(b) <m>v = v_0 + 4 t + \dfrac{1}{6} t^3 </m>.  </p> </answer>
+		<solution> 
+			<p>
+				Integrating <m>a_x(t)</m> will give <m>v_x(t) - v_0</m> and integrating <m> v_x(t)</m> will give <m>x(t)-x_i</m>.
+				<md>
+					<mrow> v_x(t) \amp =  v_x(0) + \int_0^t\, a_x dt   </mrow>
+					<mrow>   \amp =  v_0 + \int_0^t\,\left(  4+t^2/2 \right) dt   </mrow>
+					<mrow>   \amp =  v_0 + 4 t + \dfrac{1}{6} t^3.   </mrow>
+					<mrow> x(t) \amp =  x(0) + \int_0^t\, v_x(t) dt   </mrow>
+					<mrow>   \amp =  x_i + \int_0^t\, \left(v_0 + 4 t + \dfrac{1}{6} t^3 \right) dt   </mrow>
+					<mrow>   \amp =  x_i +  v_0 t + 2 t^2 + \dfrac{1}{24} t^4. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-accelerate-then-decelerate-to-a-stop"><title>Practice with a Friend: Accelerate and Decelerate</title>
+
+		<statement>
+			<p>
+				Suppose you accelerate your car at a constant rate of <m>2.0\text{ m/s}^2</m> starting from rest for some unspecified time. After that you immediately apply your brake and decelerate at <m>5.0\text{ m/s}^2</m> and come to a stop. The total distance covered between start and stop was <m>800\text{ m}</m>. (a) Find the peak velocity. (b) Find the total time it was in the accelerating phase. (c) Find the total time it was in the decelerating phase.
+			</p>
+		</statement>
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+	</exercises>
+
+</section>

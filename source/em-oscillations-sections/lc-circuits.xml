@@ -1,0 +1,321 @@
+<section xml:id="LC-Circuits"><title> LC Circuits </title>
+	<introduction>
+
+		<p>
+			We address the following question: What will happen when you connect a charged capacitor to the ends of a coil as in <xref ref="fig-lc-circuits-basic"/>? 
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				Electrons from the negative plate of the capacitor will start to flow through the coil to the positive plate. The current starts with a maximum value and decreases to zero, but then picks up again, but this time going in the opposite direction. If we assume zero resistance, then current never dies!!
+			</p>
+			<p></p>
+			<figure xml:id="fig-lc-circuits-basic">
+				<caption>
+				</caption>
+				<image source="./images/em-oscillations/lc-circuits-basic.png" width="50%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			It turns out that back EMF has its maximum value in this circuit precisely when capacitor has fully discharged. Now, due to the back EMF, the capacitor starts to charge again. Since current would be flowing in the reverse direction, previously negatively charged plate will become positively charged and vice-versa.
+		</p>
+		<p>
+			If the circuit has negligible resistance, very little energy can dissipate. Hence, this back-and-forth charging and discharging of capacitor will continue for ever. We call this phenomenon <term>electromagnetic oscillation</term>. This has analogy to the <q>perpetual motion</q> of a block attached to a spring with inductance serving as mass inertia and 1/capacitance serving as spring constant. Full analogy is summarized in <xref ref="tab-analogy-between-simple-harmonic-motion-and-LC"/>.
+		</p>
+		<p>
+			We will prove below that current <m>I(t)</m> in an <m>LC</m>-circuit with capacitor fully charged at <m>t=0</m> and current value positive when flowing into positive plate and negative when flowing away from positive plate is sinusoidal.
+			<men>
+				I(t) = -\omega\, Q_0\,\sin(\omega\, t),
+			</men>
+			where 
+			<men>
+				\omega = \dfrac{1}{\sqrt{LC}},
+			</men>
+			where <m>L</m> is the self-inducatance of the circuit and <m>C</m> capacitance in the circuit. The quantity <m>\omega</m> is angular frequency with which current oscillates. This frequency of an LC circuit is also called the <term>natural frequency</term> of the circuit. The period of oscillation is
+			<men>
+				T = \dfrac{2\pi}{\omega},
+			</men>
+			and the cycle frequency is
+			<men>
+				f = \dfrac{1}{T} = \dfrac{\omega}{2\pi}.
+			</men>
+		</p>
+
+	</introduction>
+
+
+	<subsection><title> (Calculus) Equation of Motion of LC circuit </title>
+
+		<p>
+			We wish to determine dynamical equation for charge on one of the capacitor plates, say plate G, in the figure. Let <m>q(t)</m> denote the charge on the this plate at time <m>t</m>. We will pick a time <m>t</m> when charge on the plate is positive and is building up. Then, current in the wire connected to this plate will be
+			<men xml:id="eq-lc-circuit-current-charge-relation">
+				I(t) = \dfrac{dq}{dt}.
+			</men>
+			This current passes through the inductor. Therefore, the back-emf across the inductor will be
+			<men xml:id="eq-lc-circuit-current-emf-across-L">
+				\mathcal{E}_L(t) = -L \dfrac{dI}{dt}. 
+			</men>
+ 			The EMF across the capacitor at this instant will be
+ 			<men xml:id="eq-lc-circuit-current-emf-across-C">
+ 				\mathcal{E}_C(t) = \dfrac{1}{C}\,q(t).
+ 			</men>
+ 			Now, Faraday's loop rule around the loop of the circuit gives the equation of motion of the charge on plate G.
+ 			<men xml:id="eq-lc-circuit-current-faradays-equation" >
+ 				\dfrac{1}{C}\,q(t) = -L \dfrac{dI}{dt}.
+ 			</men>
+ 			Using Eq. <xref ref="eq-lc-circuit-current-charge-relation" /> in this equation and rearranging we get the standard form of the equation of motion.
+ 			<men xml:id="eq-lc-circuit-charge-equation-of-motion">
+ 				\dfrac{d^2 q}{dt^2 } + \dfrac{1}{LC}\, q = 0.
+ 			</men>
+ 			Taking one more derivative of this equation and using Eq. <xref ref="eq-lc-circuit-current-charge-relation"/>, you can obtain equation of motion of current in the circuit.
+ 			<men xml:id="eq-lc-circuit-current-equation-of-motion">
+ 				\dfrac{d^2 I}{dt^2 } + \dfrac{1}{LC}\, I = 0.
+ 			</men>
+		</p>
+		<subsubsection><title> Solution of Equation of Motion</title>
+			<p>
+				General solution of equation of motion for <m>q</m>, Eq. <xref ref="eq-lc-circuit-charge-equation-of-motion"/> is a linear combination of sine and cosine functions of <m>t</m>.
+				<me>
+				 	q(t) = A\,\cos(\omega\,t) + B\,\sin(\omega\,t),
+				</me>
+				where
+				<me>
+				 	\omega = \dfrac{1}{\sqrt{LC}},
+				</me>
+				and <m>A</m> and <m>B</m> are constants that depend on initital state of the circuit. With <m>Q_0</m> as initial charges on the capacitors and <m>I=0</m> the initial current, we will have
+				<men>
+				 	q(t) = Q_0\,\cos(\omega\,t).
+				</men>
+				Its derivative gives the current as a function of time.
+				<men>
+				 	I(t) = -\omega\,Q_0\,\sin(\omega\,t).
+				</men>
+			</p>
+		</subsubsection>
+		
+	</subsection>
+
+
+	<subsection><title> Analogy Between Simple Harmonic Oscillator and LC Circuit</title>
+
+		<p>
+			Note that Eq. <xref ref="eq-lc-circuit-charge-equation-of-motion"/> is same as equation of a block attached to spring, the simple harmonic oscillator. Therefore, there is an important analogy between the mechanical system and corresponding electric circuit. <xref ref="tab-analogy-between-simple-harmonic-motion-and-LC"/> displays this analogy.
+		</p>
+
+		<table xml:id="tab-analogy-between-simple-harmonic-motion-and-LC">
+			<title> Analogy Between Harmonic Oscillator and Oscillating Circuit </title>
+			<tabular halign="left">
+				<row bottom="major">
+					<cell>  </cell> <cell>  </cell>
+				</row>
+				<row bottom ="minor">
+					<cell>Mechanical System </cell> <cell> Electrical System</cell>
+				</row>
+				<row bottom="minor">
+					<cell>Mass (<m>m</m>) </cell> <cell> Inductance (<m>L</m>)</cell>
+				</row>
+				<row bottom="minor">
+					<cell>Spring constant (<m>k</m>) </cell> <cell> Inverse capacitance <m>\left(\dfrac{1}{C}\right)</m></cell>
+				</row>
+				<row bottom="minor">
+					<cell>Damping constant (<m>b</m>) </cell> <cell> Resistance (<m>R</m>)</cell>
+				</row>				
+				<row bottom="minor">
+					<cell>Position (<m>x</m>) </cell> <cell> Charge (<m>q</m>)</cell>
+				</row>
+				<row bottom="minor">
+					<cell>Velocity (<m>v</m>) </cell> <cell> 
+					Current (<m>I</m>)</cell>
+				</row>
+				<row bottom="minor">
+					<cell>Kinetic energy, <m>\dfrac{1}{2}mv^2</m> </cell> <cell> Magnetic energy, <m>\dfrac{1}{2}LI^2</m></cell>
+				</row>
+				<row bottom ="major">
+					<cell>Potential energy, <m>\dfrac{1}{2}kx^2</m> </cell> <cell> Electrical energy, <m>\dfrac{1}{2}\dfrac{1}{C}q^2 =\dfrac{1}{2}CV_C^2</m></cell>
+				</row>
+			</tabular>
+		</table>
+
+
+	</subsection>
+
+	<subsection><title>Energy in an LC-Circuit</title>
+
+		<p>
+			The analogy between the electrical and mechanical systems also extends to the energy in the circuit with the magnetic field energy being analogous to the kinetic energy and the electric field energy to the potential energy.  With <m>I</m> current in the circuit and <m>V_C</m> voltage across the capacitor, the net constant in the circuit will be
+			<men>
+				U_\text{net} = \frac{1}{2}LI^2 + \frac{1}{2}CV_C^2.
+			</men>
+			In the absence of resistance in the circuit, this energy is conserved over time. Thus, if the circuit in <xref ref="fig-lc-circuits-basic"/> started out with voltage <m>V_0</m> and zero current, then at time <m>t</m> after closing the circuit, we expect the following from conservation of energy.
+			<men>
+				\frac{1}{2}LI^2 + \frac{1}{2}CV_C^2 = \frac{1}{2}CV_0^2.
+			</men>
+			Let <m>t=t_1</m> when capacitor is discharged fully. At this instant, the voltage across the capacitor will be zero and current in the circuit will be maximum. Let <m>I_\text{max}</m> be current at this instant. Conservation of energy gives
+			<me>
+				\frac{1}{2}LI_\text{max}^2 = \frac{1}{2}CV_0^2.
+			</me>
+			We can solve this to find an expression for maximum current in this oscillating circuit.
+			<men>
+				I_\text{max} =  \sqrt{C/L}\,V_0 = \omega\: C\: V_0.
+			</men>			
+			In <xref ref="fig-LC-circuit-2a"/>, I have plotted the energies in the electric field  and the magnetic filed  for the following values of constants, <m>C=\frac{1}{2}\text{ F}</m>, and <m>L=2\text{ H}</m>, and <m>V_0=1\text{ V}</m>.  We see that sum of the energies is constant but at sometime all of the energy is in electric field, at some other time all the energy is in the magnetic field, and the rest of the time the energy is in both fields. 
+
+		</p>
+		<figure xml:id="fig-LC-circuit-2a">
+			<caption>
+				The total energy in an LC circuit oscillates between completely in the electric field between the plates of the oscillator to completely in the magnetic field. The curve with a solid line is the magnetic  energy and the one with dashed line the electrical energy. The horizontal line the total energy which does not change with time.
+			</caption>
+			<image source="./images/em-oscillations/LC-circuit-2a.png" width="90%"/>
+		</figure>
+
+
+
+	</subsection>
+
+ 
+
+	<exercise xml:id="ex-Frequency-of-Oscillations-of-an-LC-circuit-and-Voltage-at-an-Instant"><title> Frequency of Oscillations of an LC-circuit and Voltage at an Instant</title>
+		<statement>
+			<p>
+				A <m>3\text{-F}</m> capacitor is charged so that it contains <m>\pm</m>30 <m>\mu\text{C}</m> on its plates.  It is then connected in series to a <m>2\text{-H}</m> inductor through a switch.  The switch is closed at <m>t = 0</m>.
+			</p>
+			<p>
+				(a) Find  the frequency of oscillations of the circuit.
+			</p>
+			<p>
+				(b) Find the voltage across the capacitor at <m>t = 0.3\text{ sec}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Use formulas in this section. </p> </hint>
+		<answer> <p> (a) <m> 6.5\times 10^{-2}\ \text{Hz}</m>, (b) <m> 9.9\ \text{V}</m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p> 
+				(a) 
+				The frequency <m>f</m> is related to the angular frequency <m>\omega</m> by <m>2\pi f = \omega</m>.  Therefore,
+				<me>
+					f=  \frac{1}{2\pi\sqrt{LC}} = 6.5\times 10^{-2}\ \text{Hz}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b)
+				The initial voltage will be related to the initial charge by <m>V_0 = Q_0/C = 10</m> V.  Therefore, the voltage at <m>0.3</m> sec will be
+				<me>
+					V(0.3\ \text{sec}) = (10\ \text{V})\ \cos(2\ \pi\times 0.065\ \text{Hz}\times\ 0.3\ \text{sec}) = 9.9\ \text{V}.
+				</me>
+			</p>
+		</solution>
+	</exercise>	
+
+	<exercise xml:id="Inductance-Energy-and-Current-of-an-LC-circuit-from-Period-of-Oscillations"><title> Inductance, Energy, and Current of an LC circuit from Period of Oscillations </title>
+		<statement>
+			<p>
+				A 40-<m>\mu</m>F capacitor is connected across a 10-V battery till it is fully charged.  It is then disconnected and connected across an inductor.  The current in the LC circuit so formed oscillated with a period of <m>5\text{ msec}</m>.  
+			</p>
+			<p>
+				Determine (a) the inductance of the inductor, (b) the total energy of the circuit, and (c) the maximum current in the circuit.  
+			</p>
+			<p>
+				(d) If at some instant, current in the circuit is half of the maximum, what is the amount of charge at that instant on the plate of the capacitor whose charging corresponds to postitive current flowing into that plate?
+			</p>
+
+		</statement>
+		<hint> <p>  Use the formulas derived in this section </p> </hint>
+		<answer> <p>  (a) <m>0.016\ \text{H} </m>, (b) <m> 2\ \text{mJ}</m>, 
+					  (c) <m> 0.5\text{ A}</m>, (d) <m> 35\ \mu\text{C}</m>.  </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a)	 From <m>\omega = 1/\sqrt{LC}</m> we obtain the following for <m>L</m> in terms of the period <m>T</m> of the oscillations.
+				<md>
+					<mrow> L \amp = \frac{1}{\omega^2 C}= \frac{T^2}{4\pi^2 C} </mrow>
+					<mrow> \amp = \frac{(0.005\ \text{s})^2}{4\pi^2 \times 40\times 10^{-6}\text{F}} = 0.016\ \text{H}.</mrow>
+				</md> 
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				(b) The total energy in the circuit will be equal to the energy at any time, say at <m>t=0</m>, which is
+				<md>
+					<mrow> E(t=0) \amp = \frac{1}{2}CV_0^2</mrow>
+					<mrow> \amp = \frac{1}{2}\times 40\times 10^{-6}\text{F} \times (10\ \text{V})^2 = 2\ \text{mJ}. </mrow>
+				</md>
+			</p>
+		</solution>
+
+		<solution><title>(c)</title> 
+			<p>
+				(c) Use conservation of energy to figure out the maximum current in the circuit. That will happen when all the energy is in the magnetic field.
+				<me>
+					\frac{1}{2}LI_{\text{max}}^2  = 2\ \text{mJ}
+				</me>
+				This gives <m>I_{\text{max}} = 0.5\text{ A}</m>.
+			</p>
+		</solution>
+
+		<solution><title>(d)</title> 
+			<p>
+				(d) Use conservation of energy for arbitrary time.  Writing the energy in the capacitor in terms of the charge on the capacitor instead of the voltage across the capacitor we have
+				<me>
+					\frac{1}{2}LI(t)^2  + \frac{1}{2C}q(t)^2  = 2\ \text{mJ}\equiv E_{\text{tot}}.
+				</me>
+				Since current at this time is given to be  <m>I</m> = 0.25 A, we can find q at that instant.
+				<me>
+					q = \sqrt{2 C E_{\text{tot}} - I^2/\omega^2 }  = 35\ \mu\text{C}.
+				</me>
+			</p>
+		</solution>
+
+	</exercise>
+
+
+	<exercise><title> Natural Frequency of LC Circuits </title>
+		<statement>
+			<p>
+				Find natural frequencies of circuits in <xref ref="fig-exer-em-res-1"/>. 
+			</p>
+			<figure xml:id="fig-exer-em-res-1">
+				<caption></caption>
+				<image source="./images/em-oscillations/exer-em-res-1.png" width="70%"/>
+			</figure>
+
+		</statement>
+		<hint> <p> Use <m>\omega = 1/\sqrt{LC}</m>. For (c) the net capacitance is sum <m>C = C_1 + C_2</m> since the capacitors are in series. In (d), the net capacitance is obtained by adding them in inerse, <m>\dfrac{1}{C} = \dfrac{1}{C_1} + \dfrac{1}{C_2} </m>. </p> </hint>
+		<answer> <p> (a) <m>503\text{ Hz}</m>, (b) <m>0.503\text{ Hz}</m>, (c) <m>356\text{ Hz}</m>, (d) <m>712\text{ Hz}</m>.  </p> </answer>
+		<solution>
+			For (c) the net capacitance is sum <m>C = C_1 + C_2</m> since the capacitors are in series. In (d), the net capacitance is obtained by adding them in inerse, <m>\dfrac{1}{C} = \dfrac{1}{C_1} + \dfrac{1}{C_2} </m>.
+			<p> The angular frequencies are
+				<md>
+					<mrow>\amp\text{(a) } \omega_a = \dfrac{1}{\sqrt{LC}} = 3162.3\text{ sec}^{-1}. </mrow>
+					<mrow>\amp\text{(b) } \omega_b = \dfrac{1}{\sqrt{LC}} = 3.162\text{ sec}^{-1}. </mrow>
+					<mrow>\amp\text{(b) } \omega_b = \dfrac{1}{\sqrt{LC}} = 2236\text{ sec}^{-1}. </mrow>
+					<mrow>\amp\text{(b) } \omega_b = \dfrac{1}{\sqrt{LC}} = 4472\text{ sec}^{-1}. </mrow>
+
+				</md>
+				As regular frequencies, we have <m>f= \omega/2\pi</m>.
+				<md>
+					<mrow>\amp\text{(a) } f_a  = 503\text{ Hz}. </mrow>
+					<mrow>\amp\text{(b) } f_b = 0.503\text{ Hz}. </mrow>
+					<mrow>\amp\text{(b) } f_b = 356\text{ Hz}. </mrow>
+					<mrow>\amp\text{(b) } f_b = 712\text{ Hz}.</mrow>
+
+				</md>				
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

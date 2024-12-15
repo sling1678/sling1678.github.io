@@ -1,0 +1,277 @@
+<section xml:id="sec-The-Big-Bang-and-the-Expanding-Universe"><title>The Expanding Universe</title>
+	<introduction>
+		<p>
+			Cosmology is the branch of Astrophysics that deals with the origin and final fate of the Universe.  Although our universe appears to be neither isotropic (meaning same in all directions) nor homogeneous (same at all places), if you average the galaxies at large enough scale, you do obtain a fairly smooth model of the universe which is more or less validated by the Automated Plate Measurement (APM) Galaxy Survey of the 1980s and 190s shown in <xref ref="fig-astro-apm-galaxy-survey-maddox-etal"/>.  Even before the data for the Universe was clear, a fundamental assumption about the distribution of matter and energy in the universe was made to make progress in using Einstein's gravity for cosmology.  That assumption goes by the name of <term>Cosmological Principle</term>:
+		</p>
+
+ 		<p>
+ 			The universe is isotropic and homogeneous at large scale.
+ 		</p>
+
+ 		<figure xml:id="fig-astro-apm-galaxy-survey-maddox-etal">
+			<caption>
+				The Automated Plate Measurement (APM) Galaxy Survey. Over 2 million galaxies are depicted in a region 100 degrees across centered toward  Milky Way's south pole. Credit: S. Maddox (Nottingham U.) et al., APM Survey, Astrophys. Dept. Oxford U.
+			</caption>
+			<image source="./images/modern-physics/astro-apm-galaxy-survey-maddox-etal.png" width="80%"/>
+		</figure>
+
+ 		<p>
+ 			The solution to Einstein's equations that obeys the Cosmological principle was originally derived by the Russian mathematician, Alexander Friedmann in 1922.  Further work was done by several other scientists, including the Belgian priest Geroge LaMa&#x00EE;tre, American physicist Howard Robertson, and the British physicist Arthur Walker. This solution is known as Friedmann-LaMa&#x00EE;tre-Robertson-Walker (FLMR), Friedmann-LaMa&#x00EE;tre, or Robertson-Walker metric, and serves as the <term>standard model of cosmology</term>. It has a <term>scale factor</term> <m>a</m>, which is a function of time <m>t</m> and  addresses the expansion or contraction of space and a <term>curvature</term> <m>k</m>, which is a constant and describes the curvature of space.
+			<men xml:id="eq-LaMaitre-metric">
+				ds^2 = c^2 dt^2 - a^2(t)  d\Sigma^2, 
+			</men>
+			where <m>d\Sigma</m> is the length element of the space and given in spherical coordinates as
+			<men xml:id="eq-LaMaitre-metric-space">
+				d\Sigma^2 = \frac{ dr^2}{1-k r^2} +r^2 \left( d\theta^2 + \sin^2\theta d\phi^2 \right). 
+			</men>
+			This metric can describe three types of universes depending on the characteristic of the scale factor.
+			<mdn>
+				<mrow> \amp  a = 1\ \   \amp\amp \text{(flat static universe)}</mrow>
+				<mrow> \amp  da/dt \gt 0 \ \ \amp\amp \text{(expanding universe)}</mrow>
+				<mrow> \amp  da/dt \lt 0 \ \  \amp\amp \text{(shrinking universe)}</mrow>
+			</mdn>
+			The curvature constant <m>k</m> has units of inverse area and distinguishes between open, closed, and flat universes,
+			<mdn>
+				<mrow> \amp  k = 0\ \ \ \amp\amp \text{(flat universe)}</mrow>
+				<mrow> \amp  k \gt 0 \ \ \ \  \amp\amp \text{(closed universe, such as a sphere)}</mrow>
+				<mrow> \amp  k \lt 0 \ \ \ \  \amp\amp \text{(open universe, such as a hyperbola)}</mrow>
+			</mdn>
+			The scale factor <m>a</m> and the curvature <m>k</m> in the FLRW metric are determined from Einstein's equation. For instance, let us set <m>k=0</m> and speed of light <m>c=1</m> for simplicity in writing, and treat the universe as a gas of galaxies.  Then, Einstein's general relativity for the universe with density <m>\rho</m> and pressure <m>p</m> gives the following equation for the acceleration of the scale factor.
+			<men>
+				\frac{d^2 a}{dt^2} = - \frac{4\pi G_N }{3} (\rho + 3p) a.
+			</men>
+			Note that for ordinary matter we expect <m>\rho + 3 p > 0</m>.  This would give <m>d^2a/dt^2 \lt 0</m>, which would have the effect of slowing down the expansion of the Universe.  A particularly intriguing possibility occurs when <m>\rho + 3 p \lt 0</m>, which could happen if pressure was highly negative.  This possibility has been shown to be possible in certain theories.  If this possibility actually occured in the Universe then the Universe will expand exponentially. This mechanism has been proposed for very early part of the Universe in a model of the Cosmolgy called the <term>inflationary cosmology</term>.  
+		</p>
+	</introduction>
+
+	<subsection><title>Hubble's Law and Big Bang Cosmology</title>
+
+		<p>
+			Hubble's law of a linear relation between the recession speed and the distance can be interpreted as a consequence of the expansion of the space itself.  The coordinates <m>r</m>, <m>\theta</m>, and <m>\phi</m> in the FLRW-metric (Eq. <xref ref="eq-LaMaitre-metric-space"/>) are called <term>comoving coordinates</term>. Let us suppress the angle part and discuss what we will observe on Earth when we look at a distance galaxy. The distance at time <m>t</m> we observe will be denoted by <m>\tilde r</m>.  The scale factor says that the distance element <m>\tilde r (t)</m> will be related to the comoving distance <m>r</m> as
+			
+			<me>
+				\tilde r (t)= a(t) r.
+			</me>
+			
+			We take derivative with respect to <m>t</m> to obtain the recession velocity as
+			
+			<me>
+				\frac{d\tilde r}{dt} = \frac{da}{dt} \ r + a (t)\frac{dr}{dt} .
+			</me>
+			
+			Since <m>r</m> is independent of <m>t</m> we will have <m>dr/dt = 0</m>.  Setting <m>dr/dt = 0</m> and replacing <m>r</m> by <m>\tilde r/a</m> we get
+			
+			<me>
+				\frac{d\tilde r}{dt} = \frac{da}{dt} \ r = \frac{1}{a(t)} \frac{da}{dt} \ \tilde r.
+			</me>
+			
+			Therefore, we see that the FLRW solution predicts the Hubble's law,
+			
+			<me>
+				v = H_0 D,
+			</me>
+			
+			with
+			
+			<me>
+				v = \frac{d\tilde r}{dt},\ \ \ H_0 = \frac{1}{a(t)} \frac{da}{dt}.
+			</me>
+			
+			If the Hubble constant is positive we will have expanding universe. 
+			
+			<me>
+				\text{Expanding universe if}\ \ H_0 = \frac{1}{a(t)} \frac{da}{dt} >0.
+			</me>
+			
+			The data from observations of galaxies shows that <m>H_0</m> is indeed <m>>0</m>. Therefore, we live in an expanding universe. If we trace the expansion backward in time, we will conclude that universe must have been very small in the long past. The universe may have been a single point in spacetime. The event associated with the beginning of such a universe is called the <term>Big Bang</term>. 
+			\index{Big bang}  The Big Bang event is said to have spawned our Universe.  The cosmology based on this hypothesis is called the Big Bang Cosmology.
+		</p>
+	</subsection> 
+
+	<subsection xml:id="sec-thermal-history-universe"><title>Thermal History of Universe</title>
+		<p>
+			Big Bang Cosmology gives us insight into the early history of the Universe that is based on the observed expansion of the universe and the application of the fundamental laws of physics to a simple model of the Universe.  Since 1940s when George Gamow and his students initiated applying nuclear physics to the Universe fundamental laws of nuclear and particle physics have played importatn role in predicting the current state of the universe based on the Big Bang hypothesis. The laws of nuclear and particle physics tell us about different reactions that are possible when particles have certain energies and in the Big Bang hypothesis the universe began in a very dense and hot phase and subsequently cooled giving conditions of various energies in which ordinary matter could form. In this way, particle physics, the study of very small is intermittently connected to Physical Cosmology, the study of the very large.
+		</p>
+		<p>
+			The expansion of the Universe means that in the past the Universe was smaller than it is today. Cramming all the materials of the Universe into small space made the Universe very dense and very hot. Based on the present theories of the nuclear and particle physics we can trace the time to an instant after the big bang when the size of the universe was only <m>10^{-26}</m> m.  The energy of the particles of radiation can be estimated by the thermal energy formula.
+			<me>
+				E \sim k_B T.
+			</me>
+			We know that for nucleons to form the energy must be of the order of 1000 MeV,  which is approximately the rest energy of a proton.  This gives the temperature at the time the nucleons formed to be
+			<me>
+				T = \frac{1000\:\text{MeV}}{8.62 \times 10^{−11}\:\text{MeV.K}^{-1}} = 1.2 \times 10^{13}\:\text{K}.
+			</me>
+			Similarly, we can get the order of magnitudes of the temperature of the Universe when atoms could form. Let us use the data for the hydrogen atom.  The ionization energy of a hydrogen atom is 13 eV. The temperature corresponding to this energy will be
+			<me>
+				T = \frac{13\:\text{eV}}{8.62 \times 10^{−5}\:\text{eV.K}^{-1}} = 1.6 \times 10^{5}\:\text{K}.
+			</me> 
+			Once atoms formed, the photons decouple from the rest of the Universe since photons do not interact very strongly with neutral atoms.  Arguments such as these have produced the following brief history of the Universe with <m>t=0</m> be the event of Big Bang.
+		</p>
+		<p>
+			It can be shown that the time since the Big Bang <m>t</m> and the temperature of the Universe that has <m>N(T)</m>  degrees of freedom  for relativistic particles are approximately related as
+			
+			<me>
+				t \ [\text{sec}]= \frac{2.4}{\sqrt{N(T)}} \left(  \frac{1\:\text{MeV}}{k_B T} \right)^2.
+			</me>
+			
+			The number of degrees of freedom in the Standard Model of particle physics is around 86. If the thermal energy of the universe is greater than about 100 GeV, all degrees of freedom will be active.   Thus, the time before which weak bosons  were created would be approximately,
+			
+			<me>
+				t  = \frac{2.4}{\sqrt{86}} \left(  \frac{1\:\text{MeV}}{100\times 1000\:\text{MeV}} \right)^2 = 2.6\times 10^{-7}\:\text{s}.
+			</me>
+			
+			The time after which atoms could form could be estimated by setting <m>k_BT \sim 1\: \text{eV}</m>.
+			
+			<me>
+				t \sim \frac{1}{10} \left(  \frac{1\:\text{MeV}}{1\times 10^{-6}\:\text{MeV}} \right)^2  = 10^{11}\:\text{s} = 3,200 \:\text{yrs}.
+			</me>
+
+			The following are important milestones in the thermal history of the Universe.
+
+			<ol>
+				<li>
+
+					<alert>The Big Bang Event</alert>, <m>t \lt 10^{-43}</m> sec:  The current physics breaks down and we cannot yet study.  We can call this phase the Big Bang event in which some cataclysmic event created an expanding universe.
+				</li>
+				<li>
+					<alert>The Age of Unified Force</alert>, <m>t</m> from <m>10^{-35}</m> to <m>10^{-32}\text{ sec}</m>:  In this period, the gravity force separates from the other forces.  The condensation of vacuum leads to an exponential expansion of Universe, called the inflationary phase. 
+				</li>
+				<li>
+					<alert>The Age of Leptons</alert>, <m>t</m> from <m>10^{-32}</m> to <m>10^{-6}\text{ sec}</m>:  Electroweak force separates from the color force.  The Universe is filled with quarks, antiquarks, gluons, leptons, photons.
+				</li>
+				<li>
+
+					<p> <alert>The Age of Nucleons</alert> , <m>t</m> from <m>10^{-6}</m> to <m>225\text{ sec}</m>:</p>
+
+					<p> 
+
+						The temperature of the Universe was <m>\sim 1.0 \times 10^{13}\:\text{K}</m> and the Universe consisted of mostly photon, electrons, positrons, muons, antimuons, tau, antitau, neutrinos, antineutrinos, protons, antiprotons, neutrons, antineutrons, mesons, antimesons, in thermal equilibrium.  The pair productions and pair annihilations occured with equal ease and kept the photons in thermal equilibrium.
+						
+						<md>
+							<mrow> \amp \gamma + \gamma  \leftrightarrow \text{e}^{-} + \text{e}^{+}</mrow>
+							<mrow> \amp \gamma + \gamma  \leftrightarrow \text{p} + \bar{\text{p}}</mrow>
+							<mrow> \amp \gamma + \gamma  \leftrightarrow \text{n} + \bar{\text{n}}</mrow>
+						</md>
+						
+						During this time there were as many protons as neutrons since neutrinos and antineutrinos had enough energy to produce them.
+						
+						<md>
+							<mrow> \amp \nu_e +  \text{n}   \leftrightarrow \text{e}^{-} + \text{p}</mrow>
+							<mrow> \amp \bar{\nu}_e +  \text{p} \leftrightarrow \text{e}^{+} + \text{n}</mrow>
+						</md>
+					</p>
+					<p> <m>t \sim  10^{-2}</m> sec: </p>
+					<p>
+						The temperature of the Universe was <m>\sim 1.0 \times 10^{11}\:\text{K}</m>.  This temperature is not high enough for the production of nucleon-antinucleon pairs since the thermal energy is only <m>k_BT \sim 10\:\text{MeV}</m>.  The protons-antiproton and neutron-antineutron annihilation continue but the protons and neutrons and their antiparticles are not being formed anymore. However, it is believed that there was more particle than antiparticle at that time, which would imply that at the end of the annihilations only proton and neutrons will be left. The neutrons decay by beta decay
+						<me>
+							\text{n}   \leftrightarrow \text{e}^{-} + \bar{\nu}_e +  \text{p}
+						</me>
+						and therefore, neutrons are converted to protons, but protons are not being converted to neutrons since antineutrinos do not have energy.  The number of neutrons compared to protons drop and the neutrino and antineutrino <q>decouple</q> from the rest of the soup.  The neutron:proton ratio drops to 1:3 by <m>t = 1</m> sec.  After the decoupling of the neutrinos they cool with the expansion of the Universe.  The energy of these neutrinos, which used to be <m>\sim 10\:\text{MeV}</m> at the time of decoupling  is now about <m>0.5\:\text{meV}</m>. 
+					</p>
+					<p>
+						The temperature is high enough that the the energy of neutrino is more than the threshold for converting neutrons to protons by the following nuclear reaction.
+						<me> 
+							\text{n} + \nu_e  \rightarrow \text{p} + \text{e}^{-}
+						 </me>
+					</p>
+					<p>
+						 <m>t \sim  1</m> sec: </p> 
+					<p>
+						The temperature of the Universe was <m>\sim 1.0 \times 10^{10}\:\text{K}</m>.   The proton and neutron can now react to form Deuteron (<m>^2</m>H) which can be stable due to the <m>Q</m> for the reverse reaction being too high for the thermal energy, <m>k_BT \sim 1</m> MeV. 
+						<me>
+						\text{n}  +  \text{p} \rightarrow \ ^{2}\text{H} + \gamma.\ \ \ (Q = 2.2\:\text{MeV}).
+						</me>
+						Actually, the temperature has to be far less than <m>T= 1.0 \times 10^{10}\:\text{K}</m> to prevent the reverse reaction since <m>k_BT</m> value does not capture the entire physics.  The thermalized photons have a black body spectrum and have a distribution of low and hifgh energy photons such that even at <m> T= 1.0 \times 10^{10}\:\text{K}</m>, there are a large number of photons of high energy.  A careful analysis shows that the temperature needs to be <m>\sim 10^9 \:\text{K}</m> for significant <m>^2</m>H to start to accumulate.  This happens at time <m>t \sim 225</m> sec.
+					</p>
+				</li>
+				<li>
+					<alert>Age of Nucleosynthesis</alert>, <m>t</m> from <m>10^{-6}</m> to <m>225</m> sec:  The <m>^2</m>H starts to build up and neutron has depleted even further due to the beta decay. The Universe at this state has far fewer neutrons than neutrons with a ratio of neutron:proton <m>\sim 1:7</m>. The deuteron quickly captures protons and neutrons which are still abundant to carry out the following reactions.
+					<md>
+						<mrow> \amp  ^2\text{H}  +  \text{p}   \leftrightarrow\  \ ^3\text{He} + \gamma</mrow>
+						<mrow> \amp  ^2\text{H}  +  \text{n}   \leftrightarrow\  \ ^3\text{H} + \gamma</mrow>
+					</md>
+					The <m>^3\text{H}</m> captures a proton to produce a <m>^4\text{He}</m>, and <m>^3\text{He}</m> captures a neutron to produce  a <m>^4\text{He}</m>.
+					<md>
+						<mrow>\amp  ^3\text{H}  +  \text{p}   \leftrightarrow\  \ ^4\text{He} + \gamma</mrow>
+						<mrow> \amp  ^3\text{He}  +  \text{n}   \leftrightarrow\  \ ^4\text{He} + \gamma</mrow>
+					</md>
+					The capture of a single p or n moves up the mass number by 1.  The next mass number will be 5.  However, there is no stable nuclide of mass number 5.  Therefore, this chain of reaction stops with <m>4</m>He. Since n:p ratio at the start of this period was 1:7, we will use us all neutron in this step and end up with protons and <m>^4\text{He}</m> only with <m>^4\text{He}</m> : p ratio of 1:12 using 2 n and 2 p to make one <m>^4\text{He}</m>. 
+					<me>
+					  \%\ \text{mass in}\ ^4\text{He} = \frac{4}{4+ 12} = \frac{1}{4} = 25\%.
+					</me>
+					At the end of this period we will have 25\% of the mass in He. This explains why 20\% of the content of the Universe is  <m>^4\text{He}</m>.
+					\item [<m>t \sim  6 \text{ sec}</m>:] By the time <m>t=6\text{ sec}</m>, the temperature has dropped to about <m>6\times 10^9\text{K}</m>. Now, photons do not have enough energy to produce electron-positron pairs which requires about 1 MeV while <m>k_BT \sim 0.5 \text{ MeV}</m>. Therefore the following reaction occurs only in one direction - the pair annihilation.
+					<me>
+						\text{e}^{-} + \text{e}^{+} \leftrightarrow  \gamma + \gamma. 
+					</me>
+				</li>
+				<li>
+					<alert>The Age of Ions</alert>, <m>t</m> from <m>1000 \text{ sec}</m> to <m>3000 \text{ yrs}</m>: The Universe is hot enough to ionize any atoms formed. The Universe consists of electrons, positrons, protons, light nuclei, photons.
+				</li>
+				<li>
+					<alert>The Age of Atoms</alert>, <m>t</m> from <m>3000 \text{ yrs}</m> to <m>300,000\text{ yrs}</m>:  The Universe has cooled below <m>10^{5}\text{K}</m> and atoms can form. Once atoms form, the photons become decoupled.  These are the photons for cosmic microwave background radiation we see now at much smaller energies. 
+				</li>
+				<li>
+					<alert>The Age of Stars and Galaxies</alert> , <m>t</m> from <m>300,000\text{ yrs}</m> to now: ] The atoms and particles are pulled together by gravity and forms large lumps. The atoms and particles in stars undergo nuclear fusion reaction. Life evolves.
+				</li>
+			</ol>
+		</p>
+
+	</subsection>
+
+
+TODO:
+
+<p>
+
+\begin{exercise}
+A $\pi^{0}$ meson of rest mass energy is 135 MeV/c$^2$.  In the early universe temperature was high enough that it contained photons of energy such that two photons produced one $\pi^{0}$ meson.  (a) What must be the minimum energy of each photon so that $\pi^{0}$ meson can be produced? (b) What must have been the temperature of the Universe at that time?  (c) In which age of the Universe did this temperature occur?
+\end{exercise}
+
+</p>
+<p>
+
+
+\begin{exercise}
+What was the age ($t$ value) of the Universe when the temperature of the Universe was (a) $10^{15}$ K,  (b)  300 K?  
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+ The distances to some well-known galaxies are: (a) distance to Large Magellanic Cloud  is 50 kpc, (b) distance to Andromeda Galaxy  is 780 kpc, and (c) the distance to Messier 83 is	4.5 Mpc. The sodium D line in the lab is seen at 5890 \AA.  What will be the wavelengths of this spectral line in the light from these galaxies?  
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+The figure below shows the absorption spectrum from the Andromeda Galxy, also called M31.  The spectrum shows two lines that can be attributed to calcium. Use the graph to find the recession speed of the galaxy with respect to Earth. [Fig. credit: NASA]
+  \end{exercise}
+
+<figure>
+	<caption>
+	</caption>
+	<image source="./images/modern-physics/astro-M31-spectrum.png" width="80%"/>
+</figure>
+ 
+
+</p>
+<p>
+
+\begin{exercise}
+ (a) Compute the threshold energy for the following reaction.
+ \[
+ \textrm{p} + \textrm{e}^{-} \rightarrow  \textrm{p}  + \nu_e.
+ \]
+ (b) At what time in the universe would the temperature will be high enough for this reaction to occur?
+\end{exercise}
+
+
+</p>
+ 
+
+
+
+</section>

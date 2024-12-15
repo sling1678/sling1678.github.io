@@ -1,0 +1,651 @@
+<section xml:id="oneD-Acceleration"> <title> Acceleration </title><idx>Acceleration</idx>
+	<introduction>
+		<p>
+			Acceleration is an important characteristic of motion. It connects the motion of an object to the influence of environment on the motion. In this first exposure to this topic, we will focus on motion along <m>x</m>-axis only. In a later chapter we will study acceleration in a more general setting. 
+		</p>
+<!-- 		<p>
+			The rate at which <m>x</m>-coordinate of an object changes with time gave us velocity <m> v_x</m>. Now, we study the rate at which <m>v_x</m> changes with time. This will give us <term>acceleration</term> for a motion along <m>x</m>-axis. 
+		</p> 
+		<p>
+			In a later chapter you will learn that the acceleration of an object depends on force you apply on the object. Therefore, it is of considerable interest to understand the concept of acceleration well.    
+		</p> -->
+
+		<p>
+			Similar to our treatment of velocity, we will define an average acceleration and an instantaneous acceleration. For a motion on the <m> x </m> axis, we will denote instantaneous acceleration by symbol <m> a_x</m> and average acceleration by <m> a_{\text{av},x}</m>. 
+
+		</p>
+	</introduction>
+
+
+
+	<subsection><title> Average Acceleration</title><idx><h>Acceleration</h><h>Average</h></idx>
+
+		<p>
+			The average rate of change of velocity during a finite interval can be obtained by dividing the change in velocity by the interval. Let <m> v_{i,x} </m> be the (instantaneous) velocity at instant <m> t_i</m> and  <m> v_{f,x} </m> be the (instantaneous) velocity at instant <m> t_f</m>, then average acceleration, <m> a_{\text{av},x}</m> during <m> t_i</m> to  <m> t_f</m>, will be
+			<men>
+				  a_{\text{av},x}  = \dfrac{v_{f,x} - v_{i,x}}{ t_f - t_i}.
+			</men>
+			You can see that writing all the subscripts can be too tedious. So, if there is no confusion that we are working along one axis and that we are dealing with average acceleration, we can write this definition much more simply by dropping off all the unnecessary subscripts as follows.
+			<me>
+				a   = \dfrac{v_{f} - v_{i}}{ t_f - t_i}.
+			</me>
+			However, for the sake of being specific and completeness, in the book I will continue to add all the necessary subscripts, but in your studies, you don't have to bother as long as you are clear about what you are suppressing. 
+			By writing <m> \Delta v_x</m> for <m>v_{f,x} - v_{i,x}</m> and <m>\Delta t</m> for <m>t_f - t_i</m>, 
+			we often write this as
+			<me>
+				a_{\text{av},x}  = \dfrac{\Delta v_x}{ \Delta t},
+			</me>
+			Note that for average aceleration, we do not need to know the details of the motion at any instant other than what happened at just the initial and final instants. For instance, for a motion shown in <xref ref="fig-average_acceleration_example_x_axis"/>, the average acceleration between A and B will be obtained from <m>v_x</m> at those points and time between them. 
+		</p>
+		<sidebyside widths="50% 50%">
+			<p>
+				Note that <m>v_x(\text{at B})</m> is negative since the particle is moving towards negative <m>x</m> axis although it is on the positive <m>x</m>-axis.
+				<md>
+					<mrow>\amp v_x(A) = 2.0\text{ m/s}, </mrow>
+					<mrow>\amp v_x(B) = - 2.0\text{ m/s}, </mrow>
+					<mrow>\amp a_{\text{av},x} = \frac{-2.0-2.0}{2.0} = -2.0\text{ m/s}^2.</mrow>
+				</md>
+			</p>
+			<figure xml:id="fig-average_acceleration_example_x_axis">
+				<caption>
+				</caption>
+				<image source="./images/one-dim-motion/average_acceleration_example_x_axis.png" width="70%"/>
+			</figure>
+		</sidebyside>
+	 
+
+	 	<example><title>Change in Velocity from Average Acceleration</title>
+	 		<statement>
+				<p>
+					A box is moving on <m>x</m>-axis with velocity of <m>+12.0\text{ m/s}</m> and has a constant acceleration of <m>-9.0\text{ m/s}^2</m>. Find its velocity after (a) 1\text{ sec}, (b) 2\text{ s}.
+				</p>
+			</statement>
+			<answer>(a) <m>+3.0\text{ m/s}</m>, (b) <m>-6.0\text{ m/s}</m>. </answer>
+			<solution><title>a</title>
+				<p>
+					If the acceleration is constant, then this acceleration is same as average acceleration. From the definition of average acceleration we have the change in velocity to be
+					<me>
+						\Delta v_x = a_x\, \Delta t.
+					</me>
+					Therefore in one second
+					<me>
+						\Delta v_x = -9.0 \times 1 = -9.0\text{ m/s}.
+					</me>
+					Adding this to the initial velocity gives
+					<me>
+						v_x(\text{at }t=1\text{ sec}) = v_{ix} + \Delta v_x = 12 - 9 = 3.0\text{ m/s}.
+					</me>
+				</p>
+			</solution>
+			<solution><title>b</title>
+				<p>
+					In 2 sec:
+					<me>
+						\Delta v_x = -9.0 \times 2 = -18.0\text{ m/s}.
+					</me>
+					Adding this to the initial velocity gives
+					<me>
+						v_x(\text{at }t=2\text{ sec}) = v_{ix} + \Delta v_x = 12 - 18 = -6.0\text{ m/s}.
+					</me>
+					The negative sign here means the object is not moving in the direction of the negative <m>x</m>-axis.
+				</p>
+			</solution>
+	 	</example>
+
+	</subsection>
+
+
+	<subsection><title> Instantaneous Acceleration</title><idx><h>Acceleration</h><h>Instantaneous</h></idx>
+
+
+		<p>
+			Often we want acceleration <em> at a particular instant</em>, called instantaneous acceleration, or simply, <term>acceleration</term>. 
+			<!-- This refers to the average acceleration between that instant, say <m> t </m>, and an instant very close to <m> t</m>, e.g., a tiny amount of time later than <m> t</m>, which we can indicate by <m> t + \Delta t </m>. Or, alternately, between <m>t</m> and a tiny instant before <m>t</m>, say at <m>t-\Delta t</m>. -->
+			This is the rate of change of velocity at that instant. Again, here we just look at a one-dimensional motion on the <m>x</m>-axis and defer the more complete treatment to a later chapter.
+		</p>
+
+		<!-- <p>
+			How close instants <m> t </m> and <m> t + \Delta t </m> be? The answer is as close as possible except right at <m>t</m>. This is the notion of infintesimal interval already discussed in <xref ref="subsection-Instantaneous-Velocity"/> on instantaneous velocity.
+		</p> -->
+		<p>
+			Consider an arbitrary motion on <m>x</m>-axis. Let <m>v_x\left(\text{at } t\right)</m> be the <m>x</m>-velocity at instant <m>t</m> and <m>v_x\left(\text{at } t+\Delta t\right)</m> at instant <m>(t+\Delta t)</m>. Then, <m>x</m>-acceleration <m>a_x</m> AT INSTANT <m>t</m> will be defined by the limiting process of taking the duration <m>\Delta t</m> as close to zero as possible except <m>\Delta t = 0</m>.
+			<men xml:id="eq-instantaneous-acceleration-1d-limit">
+				a_x = \lim_{\Delta t \rightarrow 0}\dfrac{v_x\left(\text{at } t+\Delta t\right) - v_x\left(\text{at } t\right)}{\Delta t}.
+			</men> 
+			Of course, we also denote this process by a simler notation of the derivative symbol, <m>dv_x/dt</m>, where we think of <m>v_x</m> as a continuous function of <m>t</m>.
+			<men>
+				a_x = \dfrac{dv_x}{dt}.
+			</men>
+			Recall that graphically, the derivative of a function is also slope of tangent at that point. Here, we look at the plot of <m>v_x</m> (on the ordinate) versus <m>t</m> (on the abscissa). Then, <m>a_x</m> can be computed by <alert> the slope of the tangent to the <m> v_x </m> versus <m> t</m></alert> at the instant of interest.  
+		</p>
+
+		<remark><title>Positive and Negative <m>a_x</m> do not tell direction of motion</title>
+
+			<p>
+				Recall that positive <m>v_x</m> corresponded to the object moving towards <m>x=+\infty</m> and negative <m>v_x</m> corresponded to moving towards <m>-\infty</m>. But, positive and negative <m>a_x</m> do not have such simple interpretations. Positive <m>a_x</m> means the <m>v_x</m> of the motion is becoming more positive with time and negative <m>a_x</m> means <m>v_x</m> of the motion is becoming more negative with time. Let us look at two important cases.
+			</p>
+		</remark>
+		<example><title>Positive <m>a_x</m></title>
+			<!-- <p>
+				<alert>Positive <m>a_x</m>:</alert>
+				
+			</p> -->
+
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					Positive <m>a_x</m> adds positive velocity values to <m>v_x</m>. Thus if an object is initially moving towards positive <m>x</m>-axis, it will speed up and if it was moving towards the negative <m>x</m>-axis, it will slow down. In this later case, if <m>a_x</m> remains the same, the object will eventually turn around and move towards positive <m>x</m>-axis, i.e., <m>v_x</m> eventually becoming positive. 
+				</p>
+				<p></p>
+				<image source="./images/one-dim-motion/acceleration_x_positive_impact_on_pos_and_neg_vx.png" width="80%"/>
+			</sidebyside>
+		</example>
+
+		<example><title>Negative <m>a_x</m></title>
+
+			<!-- <p>
+				<alert>Negative <m>a_x</m>:</alert>
+				
+			</p> -->
+
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					Negative <m>a_x</m> adds negative velocity values to <m>v_x</m>. Thus if an object is initially moving towards negative <m>x</m>-axis, it will speed up and if it was moving towards the positive <m>x</m>-axis, it will slow down. In this later case, if <m>a_x</m> remains the same, the object will eventually turn around and move towards negative <m>x</m>-axis, i.e., <m>v_x</m> eventually becoming negative. 
+				</p>
+				<p></p>
+				<image source="./images/one-dim-motion/acceleration_x_negative_impact_on_pos_and_neg_vx.png" width="80%"/>
+			</sidebyside>
+		</example>
+
+
+
+
+
+			<!-- <p> <alert> Positive and Negative <m>a_x</m> When Moving Towards <m> x = + \infty</m>: </alert>
+				When an object is moving towards <m> x = + \infty</m> with increasing speed, we will have 
+				<m>v_x\left(\text{at } t+\Delta t\right) \gt v_x\left(\text{at } t\right)</m>, which will give positive <m>a_x</m>. And, when the object is moving towards <m> x = + \infty</m> with <em>decreasing</em>  speed, we will have 
+				<m>v_x\left(\text{at } t+\Delta t\right) \lt v_x\left(\text{at } t\right)</m>, which will give negative <m>a_x</m>.   
+			</p>
+
+			<p> <alert> Positive and Negative <m>a_x</m> When Moving Towards <m> x = - \infty</m>: </alert>
+				When the object is moving towards <m> x = - \infty</m>, <m>v_x \lt 0</m>. That means that if the motion is with increasing speed, we will have 
+				<m>v_x\left(\text{at } t+\Delta t\right) \lt v_x\left(\text{at } t\right)</m>, which will give negative <m>a_x</m>. And, when the object is moving towards <m> x = - \infty</m> but with <em>decreasing</em>  speed, we will have 
+				<m>v_x\left(\text{at } t+\Delta t\right) \gt v_x\left(\text{at } t\right)</m>, which will give positive <m>a_x</m>.   
+			</p> -->
+		
+
+		<example xml:id="ex-Velocity-and-Acceleration-from-Derivative"><title> (Calculus) Velocity and Acceleration from Derivative</title>
+			<statement>
+				<p>
+					In theoretical work you might find that you are given position as a function <m> x(t) </m>. For example, a block attached to a spring oscillates with its position <m> x(t) = (5 \text{ cm}) \cos( 2\pi t)</m>, where <m> t </m> is in seconds. If you plot this <m> x </m> versus <m> t </m>, you will notice that the block moves between <m> x = - 5 </m> cm and <m> x = 5 </m> cm, repeating a complete cycle every second. 
+				</p>
+				<p> (a) 
+					What is the velocity of this block at (i) <m> t = 0.25 </m> s, (ii) 
+					<m> t = 0.5 </m> s, and (iii) <m> t = 0.75 </m> s.
+				</p>
+				<p> (b) 
+					What is the acceleration of this block at (a) <m> t = 0.25 </m> s, (b) 
+					<m> t = 0.5 </m> s, and (c) <m> t = 0.75 </m> s.
+				</p>	
+			</statement>
+			<!-- <hint>
+				<p>
+					Take the derivatives: (a) <m>v_x = dx/dt</m>, (b) <m>a_x = dv_x/dt</m>.
+				</p>
+			</hint> --> 
+			<answer>
+				<p>
+					(a) (i) <m>-10\pi\text{ cm/s}</m>, (ii) <m>0</m>, (iii) <m>10\pi\text{ cm/s}</m>,
+					(b) (i) <m>0</m>, (ii) <m>20\pi^2 \text{ cm/s}^2</m>, (iii) <m>0</m>.
+				</p>
+			</answer>
+			<solution><title> a </title>
+				<p>
+					Taking the derivative of given <m> x(t) </m> and then evaluating the result at the required times should give us the answers.
+				</p>
+				<p> 
+					<me>
+						v_x = \dfrac{dx}{dt} = (-10\pi \text{ cm/s}) \sin(2\pi t).
+					</me>
+				</p>
+				<p>
+					(i) <m>v_x = (-10\pi \text{ cm/s}) \sin(2\pi \times 0.25) = -10\pi \text{ cm/s} = -31.4 \text{ cm/s}. </m>
+				</p>
+				<p>
+					(ii) <m>v_x = (-10\pi \text{ cm/s}) \sin(2\pi \times 0.50) = 0. </m>
+				</p>
+				<p>
+					(iii) <m>v_x = (-10\pi \text{ cm/s}) \sin(2\pi \times 0.75) = 10\pi \text{ cm/s}= 31.4 \text{ cm/s}. </m>
+				</p>
+			</solution> 
+
+			<solution><title> b </title>
+				<p> 
+					Taking the derivative of  <m> v_x </m> and then evaluating the result at the requires times should give us the answers.
+				</p>
+				<p> 
+					<me>
+						a_x = \dfrac{dv_x}{dt} = (-20\pi^2 \text{ cm/s}^2) \cos(2\pi t).
+					</me>
+				</p>
+				<p>
+					(i) <m>a_x = (-20\pi^2 \text{ cm/s}^2) \cos(2\pi \times 0.25) = 0. </m>
+				</p>
+				<p>
+					(ii) <m>a_x = (-20\pi^2 \text{ cm/s}^2) \cos(2\pi \times 0.50) = 20\pi^2 \text{ cm/s}^2. </m>
+				</p>
+				<p>
+					(iii) <m>a_x = (-20\pi^2 \text{ cm/s}^2) \cos(2\pi \times 0.75) = 0. </m>
+				</p>
+			</solution> 
+		</example>
+
+
+	</subsection>
+
+
+	<subsection> <title> Graphical Definition of Acceleration </title><idx><h>Acceleration</h><h>Graphical</h></idx>
+
+		<p>
+			Since the slope of a function is the rate of change of that function, the rate of change of velocity at a particular instant can be obtained from the slope of the tangent of the velocity versus time plot. We can take this as defining acceleration <m> a_x </m> for one-dimensional motion on the <m> x </m> axis.
+ 
+			<men>
+				 a_x = \text{ slope of tangent to }v_x\text{ versus }t.
+			</men>
+		</p>
+	
+		<p>
+			If the plot of <m> v_x </m> versus <m> t </m> is linear, i.e., a straight line as in Fig. <xref ref="accln-positive-and-negative"/>, then the tangent line is same as the line of the plot, hence <m> a_x </m> is just the slope of the line. 
+		</p>
+
+		<figure xml:id="accln-positive-and-negative">
+			<caption> 
+				The slope of <m> v_x </m> versus <m> t </m> plot gives the acceleration <m> a_x </m>. Since the plot is linear, the slope is same for all instants plotted. In (a) <m> a_x = 1.0 \text{ m/s}^2</m> and in (b) <m> a_x = - 0.75 \text{ m/s}^2</m>. 
+			</caption>		
+				
+			<image source="./images/one-dim-motion/accln-positive-and-negative.png" width="80%"/>
+		</figure>
+
+		<p>
+			But, if the  plot of <m> v_x </m> versus <m> t </m> is curved as in <xref ref="fig-ax-from-vx-vs-t-curved"/>, then you would draw a tangent line at the instant of interest, and compute the slope of the tangent line to get <m> a_x </m>.
+		</p>
+
+		<figure xml:id="fig-ax-from-vx-vs-t-curved">
+			<caption> 
+				The slope of <m> v_x </m> versus <m> t </m> plot gives the acceleration <m> a_x </m>. Since the plot is not linear, we need to first draw a tangent line at the instant we want the acceleration value. The figure illustrates <m> a_x</m> at <m> t = 4\text{ sec}</m>, where the slope of the tangent line is <m>a_x = (4-(-1))/(5-3) = 2.5\text{ m/s}^2 </m>.
+			</caption>		
+				
+			<image source="./images/one-dim-motion/ax-from-vx-vs-t-curved.png" width="80%"/>
+		</figure>
+
+
+
+
+
+		<example xml:id="ex-Using-slope-of-vx-to-compute-ax"><title> Using slope of <m> v_x </m> to compute <m> a_x </m> </title>
+			<statement>
+				<p>
+					From the <m> v_x </m> versus <m> t </m> plot in <xref ref="fig-checkpoint-ax-from-vx-plot"/>, find  <m> a_x </m> at the following instants: (a) <m> t = 1\text{ sec}</m>, (b)  <m> t = 3\text{ sec} </m>, and (c)  <m> t = 3.75\text{ sec} </m>.
+				</p>
+				<figure xml:id="fig-checkpoint-ax-from-vx-plot">
+					<caption>
+						Figure for <xref ref="ex-Using-slope-of-vx-to-compute-ax" />.
+					</caption>
+					<image source="./images/one-dim-motion/checkpoint-x-from-v-areas-new.png" width="70%"/>
+				</figure>
+
+			</statement>
+			<answer> <p> (a) <m>0</m>, (b)  <m>-4\text{ m/s}^2</m>, (c) <m>4\text{ m/s}^2</m> </p> </answer>
+			<solution><title>a</title> 
+				<p>
+					(a) The <m> v_x </m> versus <m> t</m> plot through the time when <m> t = 1\text{ sec}</m> is a straight line. Therefore, <m> a_x </m> will simply be slope of this part of the plot. The slope of this line is clearly zero. Therefore, <m> a_x (\text{at }t=1\text{ sec}) = 0</m>.
+				</p>
+				<p>
+					(b) The <m> v_x </m> versus <m> t</m> plot through the time when <m> t = 3\text{ sec}</m> is a straight line. Therefore, <m> a_x </m> will simply be slope of this part of the plot. The slope of this line is obtained by picking two points on the line between <m> t = 2\text{ sec}</m> and <m> t = 3.5\text{ sec}</m>. We pick points at <m> t = 2\text{ sec}</m> and <m> t = 3\text{ sec}</m> to obtain
+					<me>
+					a_x = \dfrac{0 - 4\text{ m/s}}{3\text{ s}-2\text{ s}} = -4\text{ m/s}^2.
+					</me>
+				</p>
+			</solution>
+			<solution><title>b</title>
+				<p>
+					The <m> v_x </m> versus <m> t</m> plot through the time when <m> t = 3.75\text{ sec}</m> is a straight line. Therefore, <m> a_x </m> will simply be slope of this part of the plot. The slope of this line is obtained by picking two points on the line between <m> t = 3.5\text{ sec}</m> and <m> t = 4.0\text{ sec}</m>. We pick points at <m> t = 3.5\text{ sec}</m> and <m> t = 4\text{ sec}</m> to obtain
+					<me>
+					a_x = \dfrac{0 - (-2)\text{ m/s}}{4\text{ s}-3.5\text{ s}} = 4\text{ m/s}^2.
+					</me>
+				</p>
+			</solution>
+		</example>
+
+
+	</subsection>
+
+
+	<subsection><title>Change in Velocity from Acceleration</title>
+
+		<p>
+			Suppose a motion is along <m>x</m>-axis with velocity <m>v_x</m> at instant <m>t</m> and <m>(v_x+\Delta v_x) </m> at instant <m>t + \Delta t</m>. Here <m>\Delta v_x</m> stands for whatever is the change in velocity during the interval. Then, recall that average acceleration for the finite interval <m>t</m> to  <m>t + \Delta t</m> will be
+			<me>
+				a_{x,av} = \frac{(v_x + \Delta v_x) - v_x}{ (t + \Delta t) - t} = \frac{\Delta v_x}{\Delta t}.
+			</me>
+			Then, we can immediately get the change in velocity <m>\Delta v_x</m> by multiplying both sides by the interval <m>\Delta t</m>.
+			<me>
+				\Delta v_x = a_{x,av}\,\Delta t.
+			</me>
+			<alert>How about getting the change in velocity <m>\Delta v_x</m> from instantaneous acceleration </alert> <m>a_x</m> given at each instant between <m>t</m> and  <m>t + \Delta t</m>? Since <m>a_x</m> is the derivative of the instantaneous velocity taken as a function of time, <m>v_x(t)</m>, to get the change in <m>v_x</m>, we will need to integrate <m>a_x</m>, which is itself a function of <m>t</m>. Let us denote <m>t_i</m> for the intitial instant and <m>t_f</m> for the final instant, and <m>v_{x,f}-v_{x,i}</m> for <m>\Delta v_x</m>.
+			<men>
+				a_x = \frac{dv_x}{dt}\ \ \longleftrightarrow\ \ v_{x,f} - v_{x,i} = \int_{t_i}^{t_f}\, a_x(t)\,dt.
+			</men>
+			Now, an integral has a nice graphical interpretation - it is the area "under or over" the curve! You have already seen this in the context of velocity/displacement relation.
+			<me>
+				v_x = \frac{dx}{dt}\ \ \longleftrightarrow\ \ x_f - x_i = \int_{t_i}^{t_f}\, v_x(t)\,dt.
+			</me>
+			The corresponding ideas of area under the curve when the curve is above the abscissa and over the curve if below the abscissa is illustrated in Fig. <xref ref="fig-v-from-ax-vs-t-main-new"/>. 
+			<figure xml:id="fig-v-from-ax-vs-t-main-new">
+				<caption>
+					The area under the curve to get <m> \Delta v_x </m> from <m> a_x</m> versus <m> t </m> plot. The area for the curve when <m> a_x \gt 0</m> is positive, as between <m> t=0 </m> and <m> t= 2\text{ sec}</m> and the area for the curve when <m> a_x \lt 0</m> is negative, as between <m> t= 2\text{ sec} </m> and <m> t= 4\text{ sec}</m>.
+				</caption>
+
+				<image source="./images/one-dim-motion/v-from-ax-vs-t-main-new.png" width="80%"/>	
+			</figure> 
+		</p>
+
+
+	</subsection>
+
+
+
+
+	<!-- <subsection> <title> Change in Velocity from Acceleration versus Time Plot</title>
+		<p>
+			Since <m>a_x</m> is detivative of <m>v_x(t)</m>, a change in <m>v_x</m> will be given by an integral of <m>a_x(t)</m>. Since we can think of an integral as area under a plot of <m>a_x</m> between the <m>a_x(t)</m> and <m>a_x=0</m> as illustrated in <xref ref="fig-v-from-ax-vs-t-main-new" />.. We have seen same relation between <m>v_x</m> and <m>x(t)</m> as we are seeing between <m>a_x</m> and <m>v_x(t)</m>.   
+		</p> -->
+
+		<!-- <p>
+			You have learned above that area under (or above) <m>v_x</m> versus <m>t</m> corresponds to the change in <m>x</m>, i.e., the displacement in that interval. Similarly, we can get the change in velocity, <m>\
+			Delta v_x</m>, from area under (or above) the curve of <m>a_x</m> versus <m>t</m> as illustrated in <xref ref="fig-v-from-ax-vs-t-main-new" />.
+		</p> -->
+		<!-- <p>
+			The area under the curve is the area between the graph and <m>a_x=0</m> line. Therefore, from positive <m>a_x</m> we get positive area and for negative <m>a_x</m> we get negative area. Positive <m>a_x</m> leads to positive change in the <m>v_x</m> and a negative <m>a_x</m> to a negative change in <m>v_x</m>. This makes sense; say, starting <m>v_x = 10\text{ m/s}</m> and acceleration is constant, <m>a_x=-3\text{ m/s}^2</m>. Then, change in velocity in <m>2\text{ sec}</m> will be <m>\Delta v_x = -3\times 2 = -6\text{ m/s}</m>. This will give <m>v_x = 4\text{ m/s}</m> after <m>2\text{ sec}</m>.
+		</p> -->
+
+ 
+
+		<!-- <figure xml:id="fig-v-from-ax-vs-t-main-new">
+			<caption>
+				The area under the curve to get <m> \Delta v_x </m> from <m> a_x</m> versus <m> t </m> plot. The area for the curve when <m> a_x \gt 0</m> is positive, as between <m> t=0 </m> and <m> t= 2\text{ sec}</m> and the area for the curve when <m> a_x \lt 0</m> is negative, as between <m> t= 2\text{ sec} </m> and <m> t= 4\text{ sec}</m>.
+			</caption>
+
+			<image source="./images/one-dim-motion/v-from-ax-vs-t-main-new.png" width="80%"/>	
+		</figure> -->
+
+
+	<!-- </subsection> -->
+
+
+
+	<example xml:id="ex-Compute-Delta-vx-from-ax-versus-t-plot"><title> Compute <m> \Delta v_x </m> from <m> a_x</m> versus <m> t </m> plot </title>
+		<statement>
+			<p>
+				A ball is initially (<m> t=0 </m>) moving at <m> v_x = 3\text{ m/s}</m>. The acceleration of the ball at different times are as shown in the  <m> a_x </m> versus <m> t </m> plot in <xref ref="fig-checkpoint-v-from-a-areas" />. Find <m> v_x </m> at (a) <m> t = 1\text{ sec} </m>, (b)  <m> t = 2\text{ sec} </m>, and (c)  <m> t = 4\text{ sec} </m>.
+			</p>
+			<figure xml:id="fig-checkpoint-v-from-a-areas">
+				<caption>
+					Figure for <xref ref="ex-Compute-Delta-vx-from-ax-versus-t-plot"/>.
+				</caption>
+				<image source="./images/one-dim-motion/checkpoint-v-from-a-areas.png" width="70%"/>
+			</figure>
+			
+		</statement>
+
+		<answer> <p> (a) <m>5\text{ m/s}</m>,  (b) <m> 5\text{ m/s}</m> , (c) <m>1\text{ m/s} </m>.</p> </answer>
+		<solution><title>a</title>
+			<p>
+				From the area-under-curve we can find the change in <m> v_x </m> during <m> t= 0 </m> to <m> t = 1\text{ sec}</m>. Adding this change to the <m> v_x </m> at <m> t= 0</m> will give us the <m> v_x </m> at <m> t=1\text{ sec}</m>.
+				<me>
+				\Delta v_x = \dfrac{1}{2}\times 4 \times 1 = 2\text{ m/s}.
+				</me>
+				Therefore, <m> v_x </m> at <m> t=1\text{ sec}</m>:
+				<me>
+				v_x(\text{ at }t=1\text{ sec }) = v_x(\text{ at }t=0\ ) + \Delta v_x = 5\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				The area-under-the-curve during <m> t= 1\text{ sec} </m> to <m> t = 2\text{ sec}</m> is zero. Hence the velocity does not change over this interval, i.e., <m>\Delta v_x = 0 </m>. 
+				<me>
+				v_x(\text{ at }t=2\text{ sec }) = v_x(\text{ at }t=1\text{ sec } ) + \Delta v_x = 5\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>c</title>
+			<p>
+				From the area-under-curve we can find the change in <m> t= 2\text{ sec} </m> to <m> t = 4\text{ sec}</m>. Adding this change to the <m> v_x </m> at <m> t= 2\text{ sec}</m> will give us the <m> v_x </m> at <m> t=4\text{ sec}</m>.
+				<me>
+				\Delta v_x =  -2 \times (4-2) = -4\text{ m/s}.
+				</me>
+				Therefore, <m> v_x </m> at <m> t=4\text{ sec}</m>:
+				<me>
+				v_x(\text{ at }t=4\text{ sec }) = v_x(\text{ at }t=2\text{ sec }  ) + \Delta v_x = 1\text{ m/s}.
+				</me>
+			</p>
+
+		</solution>
+	</example>
+
+
+<!-- 
+	<subsection> <title> (Calculus) Analytic Definition of Acceleration </title>
+
+		<p>
+			The derivative of velocity with respect to time gives the rate at which velocity changes. That is, acceleration  <m> a_x </m> on the <m> x </m> axis is the derivative of the velocity <m> v_x </m>.
+		</p>
+ 
+		<p>
+			<men xml:id="eq-1d-review-accleration-def">
+				 a_x = \dfrac{dv_x}{dt}.
+			</men>
+		</p>
+ 
+	</subsection> -->
+
+
+
+<!-- 	<subsection> <title> (Calculus) Change in Velocity from Acceleration Analytically </title>
+		<p>
+			The inverse problem of obtaining change in velocity, <m> \Delta v_x</m>, from a known acceleration, <m> a_x(t) </m>, is a similar problem of going from <m> v_x </m> to <m> \Delta x</m>. Therefore, the math is similar.
+		</p>
+
+		<p>
+			The inverse of Eq. <xref ref="eq-1d-review-accleration-def"/> gives the change in velocity <m> \Delta v_x = v_{f,x} - v_{i,x}</m> when we integrate acceleration <m> a_x </m>.
+			<men xml:id="eq-dvx-as-integral-of-ax">
+				 \Delta v_x \equiv   v_{f,x} - v_{i,x} = \int_{t_i}^{t_f}\ a_x(t)\, dt.
+			</men>
+		</p>
+		<p>
+			In this equation, if we choose <m>t_f</m> to be  a variable <m>t</m>, then  we will get velocity as a function of <m>t</m>. Writing <m>v_{f,x}</m> as <m>v_x(t)</m> we have
+			<men xml:id="eq-vx-as-integral-of-ax">
+				v_{x}(t) = v_{i,x} + \int_{t_i}^{t}\ a_x(t')\, dt',
+		   </men>
+		   where <m>v_{i,x}</m>	is some known velocity at the initial instant and I have replaced the integration variable by symbol <m>t'</m> so as not to get confused by <m>t</m>.	Integrating <m>v_x</m> as a function we will get the change in position.
+		   <md>
+			   <mrow> x_f - x_i &amp;= \int_{t_i}^{t_f} v_x(t) dt </mrow>
+			   <mrow>   &amp;= \int_{t_i}^{t_f} \left[ v_{i,x} + \int_{t_i}^{t}\ a_x(t')\, dt' \right]  dt </mrow>
+			   <mrow>   &amp;= v_{i,x}\left(t_f - t_i \right) + \int_{t_i}^{t_f}  \left(  \int_{t_i}^{t}\ a_x(t')\, dt' \right)  dt </mrow>
+		   </md>
+		</p>
+		<p>
+			Let us work out the case of a constant acceleration. Let us say that acceleration has a constant value <m>a_x=a_0</m>, initial instant <m>t_i=0</m>, and <m>v_{i,x}=v_0</m>. Let us write <m>t_f-t_i</m> as <m>T</m>. Then, we will get the following for change in <m>x</m>.
+			<md>
+				<mrow> x_f - x_i &amp;=   v_{0} T + \int_{0}^{T}  \left(  a_0\, t \right)  dt </mrow>
+				<mrow>   &amp;= v_{0} T + \frac{1}{2} a_0 T^2</mrow>
+			</md>
+
+		</p>
+
+	</subsection> -->
+
+	<exercises>
+
+
+
+	<exercise xml:id="exer-Analyzing-an-Experimental-Data-from-Motion-Detectors"><title>Analyzing an Experimental Data from Motion Detectors</title>
+		<statement>
+			<p>
+				A motion detector is used to measure the velocity of a cart that moves along a straight track. The data is recorded as the <m>x</m>-component of the velocity by placing the <m>x</m>-coordinate on the track. The recorded <m>x</m>-component of the velocity is shown<xref ref="tab-Analyzing-an-Experimental-Data-from-Motion-Detectors"/>.  Plot the data, and, from the graph, determine the acceleration at the following instants:(i) <m>t =0</m>, (ii) <m>t = 5</m> sec, and (iii) <m>t = 10</m> sec.
+			</p>
+			<table xml:id="tab-Analyzing-an-Experimental-Data-from-Motion-Detectors">
+				<title>Data from a Motion Detector for <xref ref="exer-Analyzing-an-Experimental-Data-from-Motion-Detectors"/>.</title>
+				<tabular>
+					<row header="yes" bottom="minor" >
+						<cell><m>t(\text{s})</m></cell>
+						<cell><m>v_x(\text{m/s})</m></cell> 
+						<cell><m>t(\text{s})</m></cell>
+						<cell> <m>v_x(\text{m/s})</m></cell>
+					</row>
+					<row>
+						<cell>0</cell><cell>6.0</cell><cell>10</cell><cell>11.0</cell>
+					</row>
+					<row>
+						<cell>2</cell><cell>6.2</cell><cell>12</cell><cell>13.2</cell>
+					</row>
+					<row>
+						<cell>4</cell><cell>6.8</cell><cell>14</cell><cell>15.8</cell>
+					</row>
+					<row>
+						<cell>6</cell><cell>7.8</cell><cell>16</cell><cell>18.8</cell>
+					</row>
+					<row>
+						<cell>8</cell><cell>9.2</cell><cell></cell><cell></cell>
+					</row>
+				</tabular>
+			</table>
+		</statement>
+		<hint>
+			<p>
+				Find accelerations from a plot of velocity versus time. 
+			</p>
+		</hint>
+		<answer> <p><m>a_x(0) = 0.1\ \text{m/s}^2</m>, <m>a_x(5\ \text{s}) = 0.4\ \text{m/s}^2</m>, <m> a_x(10\ \text{s}) = 1\ \text{m/s}^2</m>.</p> </answer>
+		<solution>
+			<p>
+				Let's plot <m>v_x</m> versus <m>t</m> as in <xref ref="fig-Analyzing-an-Experimental-Data-from-Motion-Detectors"/>. The figure shows the calculations of the <m>x</m>-component of the acceleration. The acceletation at <m>t=0</m> is <m>a_x(0) = 0.1\ \text{m/s}^2</m>, at <m>t=5</m> s is <m>a_x(5\ \text{s}) = 0.4\ \text{m/s}^2</m>, and at <m>t=10</m> s is <m> a_x(10\ \text{s}) = 1\ \text{m/s}^2</m>.
+				<figure xml:id="fig-Analyzing-an-Experimental-Data-from-Motion-Detectors">
+					<caption><xref ref="exer-Analyzing-an-Experimental-Data-from-Motion-Detectors"/>.</caption>
+					<image source="./images/one-dim-motion/exer-Analyzing-an-Experimental-Data-from-Motion-Detectors-old-ex-27.png" width="80%"/>
+				</figure>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+	<exercise xml:id="exer-Practice-with-a-Friend-Analyze-the-Experiment-Glider-Motion"><title>Practice with a Friend : Analyze the Experiment</title>
+		<p>
+			The position of a glider on a straight track is determined at various times.  The <m>x</m>-coordinate of the glider at various times is shown in <xref ref="tab-Practice-with-a-Friend-Analyze-the-Experiment-Glider-Motion"/>. (a) From the given table or a plot of <m>x</m> vs <m>t</m> from the data in the table, determine the instantaneous velocities at sufficient number of instants [10 may be enough] to draw a smooth curve for the <m>v_x</m> vs <m>t</m> plot.  (b) Draw the <m>v_x</m> vs <m>t</m> plot from the data generated in part (a). (c) From the <m>v_x</m> vs <m>t</m> plot  you generated, estimate the values of the instantaneous acceleration at the following instants: (i) <m>t = 2</m> sec, (ii) <m>t = 8</m> sec, and (iii) <m>t = 16</m> sec.
+
+		</p>
+		<p>
+			Note the plots in this exercise are not necessarily smooth.
+		</p>
+
+
+			<table xml:id="tab-Practice-with-a-Friend-Analyze-the-Experiment-Glider-Motion">
+				<title>Data from a Motion Detector for <xref ref="exer-Practice-with-a-Friend-Analyze-the-Experiment-Glider-Motion"/>.</title>
+				<tabular>
+					<row header="yes" bottom="minor" >
+						<cell><m>t(\text{s})</m></cell>
+						<cell><m>x(\text{m})</m></cell> 
+						<cell><m>t(\text{s})</m></cell>
+						<cell> <m>x(\text{m})</m></cell>
+					</row>
+					<row>
+						<cell>0</cell><cell>0</cell><cell>9</cell><cell>-3</cell>
+					</row>
+					<row>
+						<cell>1</cell><cell>5</cell><cell>10</cell><cell>-35</cell>
+					</row>
+					<row>
+						<cell>2</cell><cell>10</cell><cell>11</cell><cell>-35</cell>
+					</row>
+					<row>
+						<cell>3</cell><cell>15</cell><cell>12</cell><cell>-32</cell>
+					</row>
+					<row>
+						<cell>4</cell><cell>20</cell><cell>13</cell><cell>-26</cell>
+					</row>
+					<row>
+						<cell>5</cell><cell>25</cell><cell>14</cell><cell>-17</cell>
+					</row>
+					<row>
+						<cell>6</cell><cell>25</cell><cell>15</cell><cell>-5</cell>
+					</row>
+					<row>
+						<cell>7</cell><cell>23</cell><cell>16</cell><cell>10</cell>
+					</row>
+					<row>
+						<cell>8</cell><cell>15</cell><cell></cell><cell></cell>
+					</row>
+				</tabular>
+			</table>
+
+
+	</exercise>
+
+
+
+	<exercise>
+	</exercise>
+
+
+
+	 <exercise><title> 
+ 		(Calculus) Practice with a Friend </title>
+		<statement>
+			<p>
+				The position of a block on a spring along <m>x</m> axis is given by
+				<me>
+					x(t) = A\, cos(\omega\, t + \phi),
+				</me>
+				where <m>A</m>, <m>\omega</m>, and <m>\phi</m> are constant. Show that its acceleration at an arbitrary instant <m>t</m> is given by
+				<me>
+					a_x = -\omega^2\, x(t).
+				</me>
+			</p>
+
+		</statement>
+		<hint> <p>  Differentiate <m>x</m>. </p> </hint>
+		<!-- <solution> 
+			<p>
+				Not provided.
+			</p>
+		</solution> -->
+	</exercise>	
+
+	 <exercise><title> 
+ 		(Calculus) Practice with a Friend </title>
+		<statement>
+			<p>
+				The acceleration of a car at the start is changing with time, as given by the following function.
+				<me>
+					a(t) = 12.0\; t^2.
+				</me>
+				The unit of acceleration is <m>\text{m/s}^2</m>. 
+				If the car starts from rest, how far will it go in <m>3.0\text{ sec}</m>?
+				Place the motion of the car along <m>x</m> axis.
+			</p>
+
+		</statement>
+		<hint> <p>  Integrate <m>a_x</m>, then integrate again. </p> </hint>
+		<answer><m>81.0\text{ m}</m>.</answer>
+		<!-- <solution> 
+			<p>
+				Not provided.
+			</p>
+		</solution> -->
+	</exercise>	
+
+	</exercises>
+
+</section>

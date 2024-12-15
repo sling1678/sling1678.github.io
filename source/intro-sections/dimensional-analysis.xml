@@ -1,0 +1,236 @@
+<section xml:id="section-dimensional-analysis"><title> Dimensional Analysis </title><idx><h>Dimensions</h><h>Analysis</h></idx>
+	<introduction>
+		<p>
+			Dimensional analysis is a powerful tool for studying the dependence of a physical quantity on the dimensions and other properties of the system. It is based on the observation that units on the two sides of an equation must match exactly. Thus, if you have an equation
+			<me>
+				A = B.
+			</me> 
+			Then, units of <m>A</m> must be same as units of <m>B</m>. To make sure they have the same units, we often need to express comlex units, e.g., unit of energy, into a few basic fundamentl units. When we do that, we can call these units as dimensions and name the procedure dimensional analysis. 
+		</p>
+		<p>
+			Fundamental units/dimensions of mechanics are <m>\text{length, L}</m>, <m>\text{time, T}</m>, and <m>\text{mass, M}</m>. Thus, dimension of a complex quantity, such as speed will be
+			<me>
+				\text{Speed} = \frac{\text{distance}}{\text{time}} = \frac{\text{[L]}}{\text{[T]}},
+			</me>
+			and dimension of force turns out to be
+
+			<me>
+				\text{Force} = \frac{ \text{mass} \times \text{distance} }{ \text{time}^2} = \frac{ \text{[M][L]} }{ \text{[T]}^2 }.
+			</me>
+
+
+			<!-- In the most basic form, dimensional analysis is about checking the units in a physics equation: <alert> basically, you should get the same units on both sides of an equation if the equation is valid</alert>.  But, you can often go beyond just checking the units, and discover interdependence among physical quantities if you apply dimensional analysis to a given physical situation.  In this application, dimensional analysis often helps you guess the right physics as we will see in the example below. -->
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				Following the Scottish physicist James Clerk <term>Maxwell</term> (1831 - 1879), we denote the dimension of a physical quantity by enclosing its symbolic name in square brackets. Thus, dimension of time is denoted by <m>[T]</m>, length by <m>[L]</m>, and mass by <m>[M]</m>.   
+			</p>
+
+			<p></p>
+			<!-- <figure xml:id="fig-JCMaxwell"> -->
+				<!-- <caption></caption> -->
+				<image source="./images/intro-to-physics/JCMaxwell.png" width="80%"/>
+			<!-- </figure> -->
+		</sidebyside> 
+		<p>
+			All in all, there are <alert>five base dimensional quantities</alert> corresponding to five base units: length <m>[L]</m>, time <m>[T]</m>, mass <m>[M]</m>, temperature <m>[\theta]</m>, and electric current <m>[I]</m>.  Often angle is expressed as radian rather than degrees. An angle in radian is just a ratio of arc subtended to the radius of the arc, and hence radian is dimensionless.
+			<me>
+				\theta (\text{rad}) = \frac{\text{arclength}}{\text{radius}} = \frac{{\text{[L]}}}{{\text{[L]}}}  = \text{[L]}^0.
+			</me> 
+		</p>		
+		<p> 
+			The dimensions of other physical quantities are determined by first expressing their units in base units, and then by replacing the unit names by the corresponding base physical quantities.  <!-- For instance, the unit of speed is meter per second, which means that its dimension is <m>[L]/[T]</m>, i.e length over time. 
+			<me>
+				\text{Dimension of Speed } = \frac{L}{T}.
+			</me>
+			Similarly, the dimensions of density are <m>[M]/[L]^3</m>, and electric charge is <m>[I][T]</m>.  --> The dimensions of some commonly encountered mechanical quantities are listed in <xref ref="tab-DimensionsTable"/>. You do not need to memorize these dimensions. You will encounter all of these quantities in future chapters. <xref ref="tab-DimensionsTable"/> is included here as a reference that can be used to solve problems in this chapter to get a feel for how dimensional analysis works in calculations.
+		</p>
+
+	</introduction><idx><h>Dimensions</h><h>Table</h></idx>
+ 		<table xml:id="tab-DimensionsTable">
+ 			<title>Dimensions and SI Units of Common Mechanical Quantities</title>
+			<tabular halign="left">
+			  	<row header="yes" bottom="minor">
+			  		<cell>Quantity</cell> <cell>Dimension</cell> <cell>SI unit</cell>
+			  	</row>
+			  	<row header="yes" bottom="minor">
+			  		<cell></cell> <cell></cell> <cell></cell>
+			  	</row>
+			  	<row><cell>Mass</cell> <cell>[M]</cell> <cell><m>\text{kg}</m></cell></row>
+			  	<row> <cell>Time</cell> <cell>[T]</cell> <cell><m>\text{s}</m></cell> </row>
+			  	<row> <cell>Velocity</cell> <cell><m>[L] [T]^{-1}</m></cell> <cell>\text{m s}^{-1}</cell> </row>
+			  	<row> <cell>Acceleration</cell> <cell><m>[L] [T]^{-2}</m> </cell> <cell> <m>\text{m s}^{-2}</m> </cell> </row>
+			  	<row> <cell>Angle</cell> <cell>Dimensionless </cell> <cell>\text{rad}</cell> </row>
+			  	<row> <cell>Angular velocity</cell> <cell> <m>[T]^{-1}</m></cell> <cell> <m>\text{rad s}^{-1}</m></cell> </row>
+			  	<row> <cell>Density</cell> <cell> <m>[M] [L]^{-3}</m> </cell> <cell><m>\text{kg m}^{-3}</m></cell> </row>
+			  	<row> <cell>Momentum</cell> <cell> <m>[M][L][T]^{-1}</m> </cell> <cell><m>\text{kg m s}^{-1}</m></cell> </row>
+			  	<row> <cell>Force</cell> <cell><m>[M][L][T]^{-2}</m></cell> <cell> <m>\text{kg m s}^{-2} = \text{N}</m> </cell> </row>
+			  	<row> <cell>Work, Energy</cell> <cell> <m>[M][L]^2[T]^{-2}</m></cell> <cell><m>\text{kg m}^2\text{s}^{-2} = \text{J}</m></cell> </row>
+			  	<row> <cell>Torque</cell> <cell> <m>[M][L]^2[T]^{-2}</m></cell> <cell> <m>\text{kg m}^2\text{s}^{-2} =\text{N m}</m></cell> </row>
+			  	<row> <cell>Power</cell> <cell> <m>[M][L]^2[T]^{-3}</m></cell> <cell><m>\text{kg m}^2\text{s}^{-3} = \text{W}</m></cell> </row>
+			  	<row> <cell>Pressure, Stress </cell> <cell><m>[M][L]^{-1}[T]^{-2}</m></cell> <cell><m>\text{kg m}^{-1}\text{s}^{-2} = \text{Pa}</m></cell> </row>
+			</tabular>
+  		</table>
+
+  	<subsection><title>How to Perform Dimensional Analysis</title>
+  		<p>
+  			By dimensional analysis, we can often determine relations between different physical properties of a system. For instance, suppose we want to know a formula for <m>X</m> in terms of some relevant quantites, say <m>A</m>, <m>B</m>, and <m>C</m>. Suppose the relation is multiplicative. Then, the problem boils down to finding the powers <m>a</m>, <m>b</m>, and <m>c</m>  of each independent variable on the right side of the following euation.
+			<me>
+				X = \alpha\, A^{a} B^{b} C^{c},
+			</me>
+			where <m>\alpha</m> stands for some non-dimensional quantity, whose values cannot be determined by this method. Then, we express each quantity into its representation in the fundamental quantities. This will give us equations for the unknowns, <m>a</m>, <m>b</m>, and <m>c</m>, which can be readily solved. We illustrate this procedure by the following example. 
+  		</p>
+  	</subsection>
+
+	<example xml:id="ex-Checking-Dimensions-in-a-Physics-Equation"><title>Checking Dimensions in a Physics Equation</title>
+
+		<statement>
+			<p>
+				A physics student claims that he has found a new force that depends on density <m>D</m>, velocity <m>v</m>, and acceleration <m>a</m>. 
+				<me>
+					F = D\ v^6/a^2.
+				</me>
+				Check the dimensions to decide if the equation makes sense.
+			</p>
+		</statement>
+		<!-- <hint><p>
+			Check units.
+		</p></hint> -->
+		<answer><p>Makes sense.</p></answer>
+		<solution>
+			<p>
+				Using <m>M</m>, <m>L</m>, and <m>T</m> for units of mass, length, and time, we get the following for the given equation.
+				<md>
+					<mrow>\text{Left side}\amp = F = \frac{ML}{T^2}. </mrow>
+					<mrow>\text{Right side}\amp = D\ v^6/a^2 = \frac{M}{L^3}\times \frac{L^6}{T^6} \times \frac{T^4}{L^2} = \frac{ML}{T^2}.</mrow>
+				</md>
+				The dimensions on both sides are the same. So, the right side is a possible force.
+			</p>
+		</solution>
+	</example>
+
+
+  	<exercises>
+ 
+	<exercise xml:id="ex-Dimensions-of-Spring-Constant"><title>Dimensions of Spring Constant</title>
+
+		<statement>
+			<p>
+				Hooke's law gives the force of a spring by <m>F = k x</m>, where <m>x</m> is the stretching or compression of the spring and <m>k</m> the spring constant.  Find the dimensions of the spring constant.
+			</p>
+		</statement>
+		<hint><p>
+			Use units.
+		</p></hint>
+		<answer><p> <m>\frac{M}{T^2}.</m> </p></answer>
+		<solution>
+			<p>
+				Note: your answer should be written in the fundamental dimensions, not as <m>N/m</m>. Okay, let's express <m>F</m> and <m>x</m> in their fundamental units and carry out the simplification. This gives the dimensions of spring constant to be
+				<me>
+					[k] = \frac{[F]}{[x]} = \frac{ML/T^2}{L} = \frac{M}{T^2}.
+				</me>
+			</p>
+		</solution>
+	</exercise> 
+ 
+
+
+
+
+ 
+
+	<exercise xml:id="ex-Guessing-the-Formula-for-Frequency-of-a-Pendulum"><title>Guessing the Formula for Frequency of a Pendulum</title>
+		<statement>
+			<p>
+				The frequency of the pendulum is the number of cycles it makes in unit time.  How does the frequency of a pendulum depend upon its length, mass, angle of swing and force of gravity?
+			</p>
+		</statement>
+		<hint><p>
+			Use dimensional analysis.
+		</p></hint>
+		<answer><p>
+			<m>h(\theta)\sqrt{\frac{g}{l}}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The dimensional analysis can be used to find a formula for the frequency <m>f</m> of a pendulum of length <m>l</m>, and mass <m>m</m>, which swings between angles <m>\pm \theta</m> radians of the vertical axis.  Because pendulum swings as a result of gravity, we need to include the acceleration due to gravity g as one of the possible variables.  We assume that the mass of the string is negligible compared to the mass of the pendulum bob.  Our task is to find the frequency, <m>f</m>, as a function of <m>m</m>, <m>l</m>, <m>\theta</m>, and <m>g</m>.
+				<me>
+					\text{Frequency},\ f = f(m,l,\theta, g). 
+				</me>
+				Now, we anticipate that frequency would go as some power of each of the physically relevant variables.
+				<men xml:id="eq-dim-analysis-freq-formula">
+					[f]=h(\theta) \times [l]^a \times [m]^b \times [g]^c. 
+				</men>
+				where <m>h(\theta)</m> is dimensionless since angle <m>\theta</m> is dimensionless, and exponents <m>a</m>, <m>b</m>, and <m>c</m> are to be determined.  Dimensional analysis would not help us with the form of the function <m>h(\theta)</m> since <m>\theta</m> is dimensionless.  Now, let us write out the dimensions of all physical quantities I have listed. 
+				<me>
+					[f] = 1/[T];\ [ l] = [L];\ [m]= [M];\ [g] = [L]/[T]^2;\ [\theta] = \text{Dimensionless}.
+				</me>
+				Now, putting the dimensions in <xref ref="eq-dim-analysis-freq-formula"/> we find
+				<me>
+					\frac{1}{[T]}=h(\theta)\times[L]^a\times[M]^b\times\frac{[L]^c}{[T]^{2c}}.
+				</me>
+				Equating the exponents of <m>[L]</m>, <m>[T]</m> and <m>[M]</m> on the two sides of the equation gives us the following relations among a, b and c.  If a particular dimension is missing on one side of the equation, e.g. <m>[M]</m> is missing on the left side, then the exponent of that quantity would be zero on that side of the equation.
+				<me> 
+					a+c = 0;\ b=0;\  2c = 1,\ \ \Longrightarrow\ \  a = -\frac{1}{2};\ b = 0;\ c=\frac{1}{2}.
+				</me>
+				Therefore, we find that the frequency of a pendulum is 
+				<men xml:id="eq-dim-analysis-freq-formula-final-answer"> 
+					f=h(\theta)\sqrt{\frac{g}{l}}.
+				</men>
+				The only part that remains undetermined by the dimensional analysis here is the dimensionless part, <m>h</m>, which may depend on dimensionless quantity <m>\theta</m> and/or dimensionless combinations of <m>g</m>, <m>l</m>, and <m>m</m>. 
+			</p>
+			<p>
+				To appreciate the power of dimensional analysis, compare our answer for frequency <xref ref="eq-dim-analysis-freq-formula-final-answer"/> to the following exact answer for the frequency obtained by a more difficult calculation using small angle approximation and Newton's laws of motion.
+				<me> 
+					f=\frac{1}{2\pi}\sqrt{\frac{g}{l}}.
+				</me>
+				The dimensional analysis gave us the important part of physics that frequency of a pendulum does not depend on its mass, and it is inversely proportional to the square root of length of the pendulum with very little effort on our part.
+			</p>
+		</solution>
+	</exercise>
+ 
+
+	<exercise xml:id="ex-Predicting-Formula-for-Frequency-of-a-Block-Attached-to-a-Spring"><title>Predicting Formula for Period of a Block Attached to a Spring</title>
+
+		<statement>
+			<p>
+				By using dimensional analysis, find a formula for the oscillation period of a mass <m>m</m> attached to a spring of spring constant <m>k</m>. 
+			</p>
+		</statement>
+		<hint><p>
+			Predict product of unknown powers of physical quantities and balance units.
+		</p></hint>
+		<answer><p><m>T = \alpha \sqrt{\frac{m}{k}}.</m></p></answer>
+		<solution>
+			<p>
+				When you pull a mass attached to a spring along the axis of the spring, you have three quantities that the period may depend on: amplitude <m>A</m> of stretch, mass <m>m</m> of the block, and spring constant <m>k</m>. We assume spring's mass is negligible compared to that of the block. This gives us the following relation to work with.
+				<me>
+					T = \alpha\, A^a m^b k^c.
+				</me>
+				Here <m>\alpha</m> is some dimensionless constant, which cannot be determined by this analysis. Now, we express quantities in their fundamental dimensions. We drop <m>\alpha</m> for brevity.
+				<me>
+					T^1 = L^a M^b \frac{M^c}{T^{2c}} = L^a M^{b + c} T^{-2b}.
+				</me>
+				Equating the powers of the fundamental dimensions from each side we get
+				<md>
+					<mrow>\amp a = 0</mrow>
+					<mrow>\amp b + c = 0 </mrow>
+					<mrow> \amp -2b = 1 </mrow>
+				</md>
+				Hence, we have <m>b = -1/2</m> and <m>c = 1/2</m>. Therefore, the answer is
+				<me>
+					T = \alpha \sqrt{\frac{m}{k}}
+				</me>
+				A more complete analysis based on Newton's laws of motion gives the same formula with <m>\alpha = 2\pi</m>.
+
+			</p>
+		</solution>
+	</exercise>
+
+ 	</exercises>
+  
+ 
+
+ 
+
+</section>

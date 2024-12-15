@@ -1,0 +1,376 @@
+<section xml:id="Driven-Oscillations"><title> Driven Oscillations </title>
+	<introduction>
+		<p>
+			The damped oscillator was discussed in <xref ref="Damping-by-Resistance"/>, where we saw is that, in a purely damped circuit, with dissipation of energy in the resistor, the charged capacitor becomes uncharged over time. In this section we modify the damped circuit by including an alternating current (AC) generator  in the circuit as  shown in <xref ref="fig-RLC-circuit-drive-1"/>.
+		</p>
+		<figure xml:id="fig-RLC-circuit-drive-1">
+			<caption>
+				A sinusoidally driven electromagnetic oscillator circuit with  resistor <m>R</m>,  inductor <m>L</m> and  capacitor <m>C</m> in series with a sinusoidal driving EMF source that varies in time as <m>V_0 \cos \omega t</m>.
+			</caption>
+			<image source="./images/em-oscillations/RLC-circuit-drive-1.png" width="60%" />
+
+		</figure>
+		<p>
+			The (angular) frequency <m>\omega</m> of the generator is called <term> driving frequency</term>. When you wait <q>long enough</q>, the current in the circuit also oscillates at the driving frequency. When that state has reached, we say that the circuit has reached a <term>steady state</term>. For short times after switch is turned on, the circuit behaves in a complicated way. This short-time benavior is called <term>transients</term>. 
+		</p>
+		<p>
+			In practical applications of driven circuits, we work with <m>R,\ L,\ C</m> values <alert>corresponding to underdamped circuit</alert>. That is,
+			<me>
+				\dfrac{\gamma}{2} \lt \omega_0,
+			</me>
+			where, as usual, 
+			<me>
+				\gamma = \dfrac{R}{L},\ \ \ \ \omega_0 =  \dfrac{1}{ \sqrt{LC} }.
+			</me>
+			We will show below that, for <m>t \gg 2/\gamma</m>, current in the circuit will be
+			<men xml:id="driven-circuit-current">
+				I(t) = I_0\,\cos(\omega t + \phi_I),
+			</men>
+			where 
+			<mdn>
+				<mrow xml:id="driven-circuit-current-amplitude">\amp I_0 = \dfrac{V_0}{\sqrt{R^2+\left(\omega L - \dfrac{1}{\omega C} \right)^2}}. </mrow>
+				<mrow xml:id="driven-circuit-current-phase">\amp \phi_I = \dfrac{\pi}{2} +  \tan^{-1} \left(\dfrac{1}{\omega R C} - \dfrac{\omega L}{R} \right). </mrow>
+			</mdn>
+			Here <m>\phi_I</m> is called <term>phase constant</term> of current. The argument of cosine for sinusoidal function is called <term>phase</term>. The phase of the driving EMF in <m>V_0\cos(\omega t)</m> is set to zero as reference. The phase constant <m>\phi_I</m> of current in the circuit is relative to the phase of the driving EMF. Note, to compare phases of two sinusoidal quantities, you need to express both of them either in sine or cosine since every sine can be written as a cosine by
+			<me>
+				\sin(\theta) = \cos(\theta - \pi/2).
+			</me>
+		</p>
+		<p>
+			Notice that the denominator on the right side of Eq. <xref ref="driven-circuit-current-amplitude" /> acts as the effective resistance of the series RLC circuit. This effective reistance is called <term>impedance</term> of the circuit. We denote impedance by capital letter <m>Z</m>.
+			<men xml:id="eq-impedance-of-series-RLC-circuit">
+				Z = \sqrt{R^2+\left(\omega L - \dfrac{1}{\omega C} \right)^2}.
+			</men>
+		</p>
+		<p>
+			Current in the circuit varies between <m>+I_0</m> and <m>-I_0</m>. We call <m>I_0</m>  <term>current amplitude</term>. From Eq. <xref ref="driven-circuit-current-amplitude" />, we conclude that current amplitude varies with the driving frequency, <m>\omega</m>. As you vary <m>\omega</m> of the EMF source, you will change <m>I_0</m> as illustrated in <xref ref="fig-RLC-circuit-res-current-amp"/>. The driving frequency at which you get the largest amplitude current occurs when
+			<men>
+				\omega =\omega_0 = \dfrac{1}{\sqrt{LC}} \equiv \omega_R.
+			</men>
+			The observation that a frequency exists at which current fluctuates with the largest amplitude is called <term>resonance</term> of current and the special frequency, <m> \omega_R</m>, its <term>resonance frequency</term>. When you drive the circuit at the resonance frequency, current makes the largest oscillations about zero. We will see below that at this frequency, source is also able to deliver maximum power into the circuit by examining the resonance of average power.
+		</p>
+
+		 	<figure xml:id="fig-RLC-circuit-res-current-amp">
+		 		<caption>
+		 			Resonance of amplitude of current for <m>R = 0.2\,\Omega</m>, <m>L= 1\text{ H}</m>, <m>C = 1\text{ F}</m>, and the peak voltage of the driving EMF set to <m>V_0 = 1\text{ V}</m>. The peak current in the circuit is maximum when the driving frequency <m>\omega</m> is equal to the natural frequency <m>\omega_0</m> of the circuit.
+		 		</caption>
+		 	<image source="./images/em-oscillations/RLC-circuit-res-current-amp.png" width="60%"/>		 		
+		 	</figure>
+ 
+	</introduction>
+
+	<subsection><title> (Calculus) Equation of Motion of Driven RLC Circuit</title>
+		<p>
+			Faraday loop equation for circuit in <xref ref="fig-RLC-circuit-drive-1"/> gives the following for charge <m>q(t)</m> on the positive plate at an instant when the plate is charging.
+			<men xml:id="eq-faraday-loop-equation-driven-circuit">
+				L\dfrac{dI}{dt} + RI + \dfrac{1}{C}\,q = V_0\, \cos \omega t,
+			</men>
+			with
+			<me>
+				I = \dfrac{dq}{dt}.
+			</me>
+			Replacing <m>I</m> in Eq. <xref ref="eq-faraday-loop-equation-driven-circuit"/> we get equation of motion for charge <m>q(t)</m>.
+			<men xml:id="eq-motion-of-q-driven-circuit">
+				\dfrac{d^2q}{dt^2} + \gamma\, \dfrac{dq}{dt} + \omega_0^2\,q = \dfrac{V_0}{L}\, \cos \omega t,
+			</men>
+			where
+			<me>
+				\gamma = \dfrac{R}{L},\ \ \ \ \omega_0 = \dfrac{1}{\sqrt{LC}}.
+			</me>
+			For underdamped case, we have <m>\gamma/2 \lt \omega_0</m>. 			
+		</p>
+	</subsection>
+
+	<subsection><title> (Calculus) Solution of Equation of Motion of Driven RLC Circuit</title>
+		<p>
+			Eq. <xref ref="eq-motion-of-q-driven-circuit" /> is an inhomogeneoud linear differential equation. Its solution has two parts, which we will denote by <m>q_c</m> and <m>q_s</m>, with the following exporesions for underdamped case, i.e., when <m>\gamma/2 \lt \omega_0</m>. 
+			<men>
+				q(t) = q_c(t) + q_s(t),
+			</men>
+			with
+			<mdn>
+				<mrow xml:id="eq-driven-circuit-solution-homogeneous"> \amp q_c = e^{-\gamma t / 2} \left( A\, \cos \omega_1 t  +  B\, \cos \omega_1 t   \right),</mrow>
+				<mrow xml:id="eq-driven-circuit-solution-steady-state"> \amp q_s = q_\text{amp}\, \cos (\omega t + \phi_q),</mrow>
+
+			</mdn>
+			where
+			<md>
+				<mrow>\amp q_\text{amp} =  \dfrac{V_0/L}{ \sqrt{ (\omega^2 - \omega_0^2)^2 + \gamma^2 \omega^2  } }, </mrow>
+			</md>
+			and,
+			<md>
+				<mrow>\tan \phi_q \amp = \dfrac{ \gamma \omega }{\omega^2 - \omega_0^2 }, </mrow><mrow>\amp  = \dfrac{ 1 }{(\omega L/R) - (1/\omega RC) }, </mrow>
+			</md>
+			and <m>A</m> and <m>B</m> are constants to be fixed using initial values of charge <m>q</m> and current <m>I</m>. Current <m>I</m> at arbitrary time is obtained by
+			<me>
+				I = \dfrac{dq}{dt}.
+			</me>
+			In Eq. <xref ref="eq-driven-circuit-solution-homogeneous" />, you can see that, with time, the multiplicative negative exponetial will make it negligible after <m>t \gt \gt 2/\gamma</m>.
+			<me>
+				q_c(t)\rightarrow 0 \text{ as } t\gt \gt 2/\gamma.
+			</me> 
+			This leaves <m>q_s</m> part the only part, which is the steady state solution. We notice that <m>q_s(t)</m> is sinusoidal with same frequency as the driving EMF.
+			<me>
+				q(t) \rightarrow q_s(t) \text{ as } t\gt \gt 2/\gamma.
+			</me>
+			By taking time derivative of <m>q_s</m> we get steady state current, <m>I_s</m>.
+			<md>
+				<mrow> I_s \amp = \dfrac{dq_s}{dt} = -\omega q_\text{amp}\, \sin (\omega t + \phi_q), </mrow>
+				<mrow>   \amp =  \omega q_\text{amp}\, \cos (\omega t + \phi_q + \pi/2), </mrow>
+				<mrow>   \amp =  \omega I_0\, \cos (\omega t + \phi_I), </mrow>
+			</md>
+			where current amplitude,
+			<md>
+				<mrow> I_0 \amp = \omega q_\text{amp} </mrow>
+				<mrow>  \amp = \omega \dfrac{V_0/L}{ \sqrt{ (\omega^2 - \omega_0^2)^2 + \gamma^2 \omega^2  } } </mrow>
+				<mrow>  \amp = \dfrac{V_0}{ \sqrt{ R^2 +  \left(\omega L - \dfrac{1}{\omega C}\right)^2 } }, </mrow>
+			</md>
+			and the phase constant, 
+			<md>
+				<mrow> \tan \phi_I \amp = \tan (\phi_q + \pi/2 )</mrow>
+				<mrow>  \amp = -1.0/\tan \phi_q = \left( \dfrac{1}{\omega R C} - \dfrac{\omega L}{R}\right) . </mrow>
+			</md>
+
+		</p>
+	</subsection>
+
+	<subsection><title>Power Delivered to the Circuit by the EMF Source </title>
+
+		<p>
+			The practical importance of the resonance phenomenon is seen dramatically in the choice of the frequency of the driving power source in delivering power to the rest of the circuit. The energy at any instant is stored in the capacitor and the inductor, but only the resistor in the circuit dissipates energy. Therefore,  the average energy used by the circuit during an interval will be equal to the product of the instantaneous power into the resistor  and the interval of time. Thus,  the energy deposited in the resistor in an interval of time between <m>t</m> to <m>t+dt</m> will  be given by 
+			<me>
+				P(t) dt = I(t) V_R(t),
+			</me>
+			where <m>I(t)</m> is the current through the resistor and <m>V_R</m> is the voltage drop across the resistor.  From Ohm's law we can replace <m>V_R</m> by <m>I R</m> and obtain 
+			<me>
+				P(t) dt = I_0^2 R\cos^2(\omega t+\phi_I),
+			</me>
+			where  <m>\phi_I</m> is the phase of the current relative to the phase of the driving EMF. The energy deposited in the resistor per cycle is obtained by integrating this expression over a period, <m>T = 2\pi/\omega</m>.  
+			<me>
+				\text{Energy(one cyle)}=\int_0^{T}P(t) dt = \dfrac{1}{2}I_0^2 RT.
+			</me>
+			Therefore, the average rate at which the energy is dissipated in the resistor will be <m>\dfrac{1}{2}I_0R^2</m>.  This is the average power dissipated. 
+			<me>
+				P_{\text{ave}} = \dfrac{\text{Energy(one cyle)}}{T} = \dfrac{1}{2}I_0^2R.
+			</me>
+			Since the peak current <m>I_0</m> is a function of the driving frequency <m>\omega</m>, the average power delivered would also be a function of the  frequency <m>\omega</m> of the EMF source.  Thus, the average power is maximum at the same frequency at which the peak current is maximum. We saw above that the peak current was maximum when the source EMF was oscillating at the same frequency as the natural frequency of the circuit; see <xref ref="fig-RLC-circuit-res-av-power" />.
+		</p> 
+			<figure xml:id="fig-RLC-circuit-res-av-power">
+				<image source="./images/em-oscillations/RLC-circuit-res-av-power.png" width="80%"/>
+				<caption>
+					The resonance curve of the average power dissipated in the resistor for <m>R</m> = 0.2 <m>\Omega</m>, <m>L</m>= 1 H, <m>C</m> = 1 F, and the peak voltage of the driving EMF set to <m>V_0 = 1</m> V.  The peak power is delivered when the driving  frequency <m>\omega</m> is equal to the natural frequency <m>\omega_0</m> of the circuit.
+				</caption>
+			</figure>
+		<p>
+			The curve shows that the maximum power is delivered to the circuit when the circuit is driven at the natural frequency.  Denoting the resonance frequency of power as <m>\omega_R</m> we have
+			<me>
+				 \omega_R = \omega_0 = \dfrac{1}{\sqrt{LC}}\ \ \ \text{(Resonance of Power.)} 
+			</me>
+			This formula for the average power in the resistor differs from the power for the constant current circuit we had found in an earlier chapter.  There, we had found that the power dissipated in a resistor is <m>I^2R</m>, but here we find that the average power is <m>\dfrac{1}{2}I_0^2R</m> where <m>I_0</m> is the amplitude of the oscillating current, which changes between <m>-I_0</m> and <m>+I_0</m> sinusoidally in time. It is possible to define an averaged current, called the <term> root-mean squared current</term>, or the <term> RMS-current</term>, we can rewrite the average power <m>P_{\text{ave}}</m> as a formula that is similar to a DC circuit.
+			<me>
+				I_{\text{rms}} = \dfrac{I_0}{\sqrt{2}}
+			</me>
+			This will give the average power dissipated as
+			<me>
+				P_{\text{ave}} = R\: I_{\text{rms}}^2.
+			</me>
+
+		</p>
+
+	</subsection>
+
+
+	<exercise xml:id="Practicing-Resonance-Frequency-of-Current-in-RLC-Circuits"><title> Practicing Resonance Frequency of Current in RLC Circuits </title>
+		<statement>
+			<p>
+				Find frequencies at which current in each circuit of <xref ref="fig-exer-em-res-3"/> will resonate.
+			</p>
+			<figure xml:id="fig-exer-em-res-3">
+				<caption>For <xref ref="Practicing-Resonance-Frequency-of-Current-in-RLC-Circuits"/>.</caption>
+				<image source="./images/em-oscillations/exer-em-res-3.png" width="80%"/>
+			</figure>
+		</statement>
+		<hint> <p> <m>f_R = \omega_R/2\pi</m>, <m>\omega_R=1/\sqrt{LC}</m>.  </p> </hint>
+		<answer> <p> (a) <m>796\:\text{Hz}</m>, (b) <m>1125\:\text{Hz} </m>
+		(c) <m> 1989\:\text{Hz}</m>, (d) <m>1592\:\text{Hz}</m>.  </p> </answer>
+		<solution> 
+			<p> 
+				(a) 
+				<me>
+					\omega_R = \dfrac{1}{\sqrt{LC}} = \dfrac{1}{\sqrt{10\times 10^{-3}\:\text{H}\times 4\times 10^{-6}\text{F}}} = 5000\:\text{sec}^{-1}.
+				</me>
+				This give <m>f_R = \omega_R/2\pi = 796\:\text{Hz}</m>.
+			</p>
+			<p>
+				(b) 
+				<me>
+					\omega_R = \dfrac{1}{\sqrt{LC}} = \dfrac{1}{\sqrt{1\times 10^{-3}\:\text{H}\times 20\times 10^{-6}\text{F}}} = 7071\:\text{sec}^{-1}.
+				</me> 
+				This give <m>f_R = \omega_R/2\pi = 1125\:\text{Hz}</m>.
+			</p>
+			<p>
+				(c) 
+				<me>
+					\omega_R = \dfrac{1}{\sqrt{LC}} = \dfrac{1}{\sqrt{4\times 10^{-3}\:\text{H}\times 1.6\times 10^{-6}\text{F}}} = 12500\:\text{sec}^{-1}.
+				</me> 
+				This give <m>f_R = \omega_R/2\pi = 1989\:\text{Hz}</m>.
+			</p>
+			<p> 
+				(d) 
+				<me>
+					\omega_R = \dfrac{1}{\sqrt{LC}} = \dfrac{1}{\sqrt{5\times 10^{-3}\:\text{H}\times 2\times 10^{-6}\text{F}}} = 10000\:\text{sec}^{-1}.
+				</me> 
+				This give <m>f_R = \omega_R/2\pi = 1592\:\text{Hz}</m>.
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Current-Amplitude-in-a-Driven-RLC-Circuit"><title> Current Amplitude in a Driven RLC Circuit </title>
+		<statement>
+			<p>
+				For each circuit in <xref ref="Practicing-Resonance-Frequency-of-Current-in-RLC-Circuits" />, find the amplitude of the current if the peak voltage of the source of frequency <m>600\text{ Hz}</m> is <m>10\text{ V}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Use <m>I_0 = \dfrac{V_0}{Z} </m>  </p> </hint>
+		<answer> <p> (a) <m>20\text{ mA}</m>, (b) <m>730\text{ mA}</m>, (c) <m>66\text{ mA}</m>, and (d) <m>31\text{ mA}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We use the result for a series <m>RLC</m> circuit.
+				<me>
+					I_0 = \dfrac{V_0}{Z},\ \ \ \ Z = \sqrt{R^2 + (\omega L - 1/\omega C)^2}.
+				</me>
+				where  <m>\omega = 2 \pi f</m> with <m>f</m> the frequency of the source EMF.  Putting the numerical values from each figure we find the following values for the peak current in the four cases: (a) <m>20\text{ mA}</m>, (b) <m>730\text{ mA}</m>, (c) <m>66\text{ mA}</m>, and (d) <m>31\text{ mA}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Average-Power-of-the-Source-in-a-Driven-RLC-Circuit"><title> Average Power of the Source in a Driven RLC Circuit </title>
+		<statement>
+			<p>
+				For each circuit in <xref ref="Practicing-Resonance-Frequency-of-Current-in-RLC-Circuits" />, find the average power delivered to the circuit if the peak voltage of the source of frequency <m>600\text{ Hz}</m> is <m>10\text{ V}</m>.
+			</p>
+		</statement>
+		<hint> <p>  <m>P_{\textrm{ave}} = \frac{1}{2}RI_0^2 </m>. </p> </hint>
+		<answer> <p> (a) <m>0.8\text{ W}</m>, (b) <m>2.7\text{ W}</m>, (c) <m>0.011\text{ W}</m>, and (d) <m>0.14\text{ W}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Average power is related to the peak current and resistance only: <m>P_{\textrm{ave}} = \frac{1}{2}RI_0^2</m>, where <m>I_0</m> is the peak current.  The peak current for each circuit has been worked out in the last exercise. Now, using this formula we obtain the following values for the average power: (a) <m>0.8\text{ W}</m>, (b) <m>2.7\text{ W}</m>, (c) <m>0.011\text{ W}</m>, and (d) <m>0.14\text{ W}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Current-and-Voltages-in-a-Driven-Series-RLC-Circuit"><title> Current and Voltages in a Driven Series RLC Circuit </title>
+		<statement>
+			<p>
+				Consider the circuit given in <xref ref="fig-example-drive-1"/>.
+			</p>
+			<sidebyside widths="50% 50%">
+				<p>
+					<p>
+						(a) Find the steady state current in the circuit.
+					</p>
+					<p>
+						(b) Find the resonance frequency of current.
+					</p>
+					<p>
+						(c) Find the voltage across the resistor in the steady state.
+					</p>
+
+				</p>
+				<figure xml:id="fig-example-drive-1">
+					<caption></caption>
+					<image source="./images/em-oscillations/example-drive-1.png"/>
+				</figure>
+			</sidebyside>
+
+			<p>
+				(d) (Calculus) Find the voltage drop across the capacitor in the steady state.
+			</p>
+			<p>
+				(e) (Calculus) Find the back emf in the inductor in the steady state.
+			</p>
+ 
+		</statement>
+		<hint> <p> Use formulas presented in this section.  </p> </hint>
+		<answer> <p> (a) <m> I(t) = (7.2\text{ mA})\, \cos\left( 200\,t + 1.57\right) </m>,
+					(b) <m>\omega_R = \omega_0 = 1921\text{ sec}^{-1}</m>, or <m> 306\text{ Hz}</m>.
+					(c) <m> (36\text{ mV})\, \cos\left( 200\,t + 1.57\right)</m>, 
+					(d) <m>12\text{ V} \,\sin(200\,t + 1.57)</m>,
+					(e) <m>-5.76\text{ mV} \sin(200\, t + 1.57)  </m>,
+					   </p> </answer>
+		<solution> <title>(a) </title>
+			<p>
+				Let us compute the constants we will need.
+				<md>
+					<mrow> \amp \gamma = \dfrac{R}{L} = 1250\text{ sec}^{-1}. </mrow>
+					<mrow> \amp \omega_0 = \dfrac{1}{\sqrt{RC}} = 1921\text{ sec}^{-1}. </mrow>
+					<mrow> \amp Z = \sqrt{R^2 + ( \omega L - 1/(\omega C) )^2 } = 1669\ \Omega.</mrow>
+				</md>
+				The current amplitude
+				<me>
+					I_0 = \dfrac{V_0}{Z} = \dfrac{12\text{ V}}{1669\ \Omega} = 7.2\text{ mA}.
+				</me>
+				The phase constant for current
+				<md>
+					<mrow> \phi_I \amp = \tan^{-1}\left( \dfrac{1}{\omega R C} - \dfrac{\omega L}{R }  \right)</mrow>
+					<mrow> \amp = 1.57\text{ rad}.</mrow>
+				</md>
+				Therefore, steady starte current at instant <m>t</m> will be
+				<me>
+					I(t) = (7.2\text{ mA})\, \cos\left( 200\,t + 1.57\right).
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b) </title>
+			<p> (b) Resonance angular frequency of current will be
+				<me>
+					\omega_R = \omega_0 = 1921\text{ sec}^{-1}.
+				</me>
+				This would give the regular frequency
+				<me>
+					f_R = \dfrac{\omega_R}{2\pi} = 306\text{ Hz}.
+				</me>
+			</p>
+		</solution>	
+
+		<solution> <title>(c) </title>
+			<p> (c) Voltage across resistor is simply <m>IR</m>.
+				<me>
+					 V _R = (36\text{ mV})\, \cos\left( 200\,t + 1.57\right).
+				</me>
+			</p>
+		</solution>	
+
+		<solution> <title>(d) </title>
+			<p> (d) Voltage across capacitor is a little tricky since  <m>V_C = q/C</m> with <m>q = \int I(t) dt</m>.
+				<md>
+					  <mrow> V_C \amp = \dfrac{1}{C}\int I(t) dt</mrow>
+					  <mrow> \amp = \dfrac{1}{C}\int I_0\,\cos(\omega t + \phi_I) dt</mrow>
+					   <mrow> \amp = \dfrac{I_0}{\omega C} \,\sin(\omega t + \phi_I) </mrow>
+					   <mrow> \amp = 12.006\text{ V} \,\sin(200\,t + 1.57) </mrow>
+				</md>
+			</p>
+		</solution>
+
+		<solution> <title>(e) </title>
+			<p> (e) Back EMF by the inductor is also a little tricky since  <m>\mathcal{E}_\text{back} = L dI/dt</m>.  
+				<md>
+					  <mrow> \mathcal{E}_\text{back} \amp = L \dfrac{dI}{dt}</mrow>
+					  <mrow> \amp = L I_0\, \dfrac{d \cos(\omega t + \phi_I)}{dt}</mrow>
+					   <mrow> \amp = -\omega L I_0 \sin(\omega t + \phi_I)  </mrow>
+					   <mrow> \amp = -5.76\text{ mV} \sin(200\, t + 1.57)  </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>	
+
+ 
+
+
+ 
+
+
+
+</section>

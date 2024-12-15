@@ -1,0 +1,63 @@
+<section xml:id="sec-Rotation-as-a-Vector"><title> Rotation Angle as a Vector</title>
+		<idx><h>Angle of Rotation</h><h>Vector Angle</h></idx>
+		<idx><h>Rotation</h><h>Vector Angle</h></idx>
+	<p><alert>(Requires Calculus)</alert></p>
+	<p>
+		Could we include information about axis in the angle of rotation? Say, you rotate about <m>z</m>-axis by <m>\pi/2</m> rad, then, could we write this as a vector <m>\frac{\pi}{2}\, \hat k\,</m>? It turns out that we cannot do this. Let's illustrate this by rotating a point mass as in <xref ref="fig-rotation-angle-not-a-vector"/> about <m>z</m> and <m>x</m> axes. The result of rotation about <m>z</m>-axis followed by <m>x</m>-axis is different than rotation about <m>x</m>-axis followed by <m>z</m>-axis. If we could write rotation angle as a vector, we will get an absurdity: <m>\vec \theta_1 + \vec \theta_2 </m> <m>\ne</m> <m>\vec \theta_2 + \vec \theta_1 </m>.
+ 
+	</p>
+
+	<figure xml:id="fig-rotation-angle-not-a-vector">
+		<caption>
+			Left: Rotation of a point mass about <m>z</m>-axis followed by a rotation about <m>x</m>-axis moves the particle to point C. Right: A rotation <m>x</m>-axis followed by a rotation about <m>y</m>-axis moves the particle to point B.
+		</caption>
+		<image source = "./images/rotation/rotation-angle-not-a-vector.png" width="70%"/>
+	</figure>
+	<p>
+		Although, we cannot treat a rotated angle as a vector, the situation is different if angles are infinitesimal as shown in <xref ref="fig-rotation-angle-infinitesimal"/>. 
+	</p>
+
+	<sidebyside widths="50% 50%">
+		<p>
+			Each angle can be states as <m>ds/R</m> with movement of distance <m>ds</m> on the arc. In the limit of infinitsimal displacement, they will become straight and the triangle of vectors will give net displacement that will be vector sum. 
+		</p>
+		<figure xml:id="fig-rotation-angle-infinitesimal">
+			<caption>
+			</caption>
+			<image source = "./images/rotation/rotation-angle-infinitesimal.png" width="70%"/>
+		</figure>
+	</sidebyside>
+	<p>
+		That is, the difference between a rotation about <m>d\theta_1</m> about <m>z</m>-axis followed by <m>d\theta_2</m> about <m>x</m>-axis and a rotation about <m>d\theta_2</m> about <m>x</m>-axis followed by <m>d\theta_1</m> about <m>z</m>-axis would be negligible so that we can treat these infinitesimal rotations as vectors with net rotation,
+		<m>
+			d\theta_1\,\hat k + d\theta_2\,\hat i.
+		</m>
+	</p>
+
+	<sidebyside widths="50% 5% 45%">
+		<p>
+			Hence, we can incorporate axis of rotation in analytic description of rotation by using infinitesimal rotation vectors with direction of vector being the axis of rotation and the angle of rotation being <m>d\theta</m>. Thus, for an arbitrary axis <m>\hat u</m> of rotation we will write
+			<men xml:id="eq-infinitesimal-rotation-vector">
+				d\theta\,\hat u = d\theta_x\, \hat i + d\theta_y\, \hat j + d\theta_z\, \hat k.
+			</men>
+	 
+		</p>
+		<p></p>
+		<figure xml:id="fig-rotation-angle-infinitesimal-components">
+			<caption>
+			</caption>
+			<image source = "./images/rotation/rotation-angle-infinitesimal-components.png" width="70%"/>
+		</figure>
+	</sidebyside>
+
+	<p>
+		If we divide infinitesimal angular displacement vector by infinitesimal time we will get rotation velocity vector. We will discuss rotation velocity in next section.
+	</p>
+
+
+
+
+
+	
+	
+</section>

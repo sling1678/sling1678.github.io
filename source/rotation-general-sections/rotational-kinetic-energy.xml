@@ -1,0 +1,432 @@
+<section xml:id="sec-rot-kinetic-energy"><title> Kinetic Energy of a Rigid Body</title>
+<idx>Rotational Kinetic Energy</idx>
+<idx><h>Kinetic Energy</h><h>Rotating Rigid Body</h></idx>
+	<introduction>
+		<p>
+			Kinetic energy of a particle of mass moving with speed <m>v</m> is given by
+			<me>
+				K = \frac{1}{2}mv^2.
+			</me>
+			Now, if we have a collection of particles <m>m_1</m>, <m>m_2</m>, <m>\cdots</m>, with speeds <m>v_1</m>, <m>v_2</m>, <m>\cdots</m>, the total kinetic energy will be just the sum.
+			<men xml:id="eq-total-kinetic-energy">
+				K_\text{tot} = \frac{1}{2}\sum_{i}m_i v_i^2.
+			</men>
+			Similar to how the total angular momentum separated into angular momentum of CM and angular momentum about the CM, analogous calculations lead to the separation of total kinetic energy can be separated into a translational motion of the CM and a rotation about an axis through the CM. This rotation energy is called rotational kinetic energy. 
+			<men xml:id="eq-total-kinetic-energy-as-sum-cm-plus-rot">
+				K_\text{tot} = K_\text{cm} + K_\text{rot}
+			</men>
+			In the following section we will show that <m>K_\text{rot}</m> is given by
+			<me>
+				K_\text{rot} = \frac{1}{2}\,\vec\omega \cdot  \vec L.
+			</me>
+			This simplifies when we work with principal axes. Then, we can write this as
+			<men>
+				K_\text{rot} = \frac{1}{2} I_{xx}\omega_x^2 + \frac{1}{2} I_{yy}\omega_y^2 + \frac{1}{2} I_{zz}\omega_z^2.
+			</men>
+			Using <m>L_i = I_{ii}\omega_i</m> applicable for principal axes, we can write it using angular momentum as well.
+			<me>
+				K_\text{rot} =  \frac{1}{2} \frac{L_x^2}{I_{xx}} + \frac{1}{2} \frac{L_y^2}{I_{yy}} + \frac{1}{2} \frac{L_z^2}{I_{zz}}.
+			</me>	 
+		</p>
+	</introduction>
+
+	<subsection><title>Kinetic Energy About Center of Mass</title>
+		<p>
+			We found in our last chapter that we can separate translational motion of the center of mass motion and motion about the center of mass by replacing velocity <m>\vec v_i</m> by sum of velocity  <m>\vec v'_i</m> with respect to CM and velocity <m>V_\text{cm}</m> of the CM. 
+			<me>
+				\vec v_i = \vec V_\text{cm} + \vec v'_i.
+			</me>
+			The calculation of separation gives
+			<md>
+				<mrow>K_\text{tot} \amp = \frac{1}{2}\sum_{i}m_i v_i^2 = \frac{1}{2}\sum_{i}m_i \vec v_i \cdot \vec v_i </mrow>
+				<mrow> \amp = \frac{1}{2}\sum_{i}m_i (\vec V_\text{cm} + \vec v'_i) \cdot (\vec V_\text{cm} + \vec v'_i) </mrow>
+				<mrow> \amp = \frac{1}{2}\vec V_\text{cm} \cdot \vec V_\text{cm} \sum_{i}m_i  + 
+					  \vec V_\text{cm}\cdot \sum_{i}m_i  \vec v'_i + \frac{1}{2}\sum_{i}m_i\vec v'_i\cdot \vec v'_i </mrow>
+				<mrow> \amp = \frac{1}{2} M  V_\text{cm}^2 +  \frac{1}{2}\sum_{i}m_i\vec v'_i\cdot \vec v'_i. </mrow>					  
+			</md>
+			In the last step I used the fact that <m>\sum_{i}m_i  \vec v'_i=0</m> since <m>\vec v'_i</m> are velocities with respect to the CM and have replaced total mass by <m>M</m>. The first part is kinetic energy of translation of the CM and the second part is the rotational kinetic energy.
+			<mdn>
+				<mrow>\amp K_\text{cm} = \frac{1}{2} M  V_\text{cm}^2. </mrow>
+				<mrow>\amp K_\text{rot} = \frac{1}{2}\sum_{i}m_i\vec v'_i\cdot \vec v'_i. </mrow>
+			</mdn>
+			By making use of the relation, <m>\vec v' = \vec\omega \times \vec r'</m>, for each particle, we can write <m>K_\text{rot}</m> in terms of angular velocity and angular moementum. Thus,
+			<md>
+				<mrow> K_\text{rot} \amp = \frac{1}{2}\sum_{i}m_i\vec v'_i\cdot \vec v'_i</mrow>
+				<mrow>   \amp = \frac{1}{2}\sum_{i}m_i(\vec\omega \times \vec r'_i)\cdot (\vec\omega \times \vec r'_i)</mrow>
+				<mrow>   \amp = \frac{1}{2}\sum_{i}m_i\vec\omega \cdot [ \vec r'_i \times (\vec\omega \times \vec r'_i)]</mrow>
+				<mrow>   \amp = \frac{1}{2}\vec\omega \cdot \sum_{i}m_i [ \vec r'_i \times (\vec\omega \times \vec r'_i)] .</mrow>
+			</md>
+			The expression <m>\sum_{i}m_i [ \vec r'_i \times (\vec\omega \times \vec r'_i)]</m> is angular momentum <m>\vec L</m> about CM by <xref ref="eq-ang-mom-vector-multi-particle"/>. Therefore, 
+			<men>
+				K_\text{rot} = \frac{1}{2}\,\vec\omega \cdot  \vec L.
+			</men>
+			We can replace <m>\vec L</m> by <m>{\bf I}\vec \omega</m>, where <m>{\bf I}</m> is full moment of inertia, giving us
+			<men>
+				K_\text{rot} = \frac{1}{2}\,\vec\omega \cdot  ( {\bf I}\vec \omega ).
+			</men>
+			We know that  <m>{\bf I}</m> simplifies when we use principal axes of the rotating body. Therefore, in a coordinate system along principal axes we can write kinetic energy in terms of components of angular velocity as
+			<men>
+				K_\text{rot} = \frac{1}{2} I_{xx}\omega_x^2 + \frac{1}{2} I_{yy}\omega_y^2 + \frac{1}{2} I_{zz}\omega_z^2.
+			</men>
+			Often, it is useful to think of this relation in terms of angular momentum components rather than angular velocity components. Since in principal axes, <m>L_{i} = I_{ii}\omega_i</m> for <m>i=x,y,z</m>, rotational kinetic energy can also be written as
+			<men>
+				K_\text{rot} =  \frac{1}{2} \frac{L_x^2}{I_{xx}} + \frac{1}{2} \frac{L_y^2}{I_{yy}} + \frac{1}{2} \frac{L_z^2}{I_{zz}}. 
+			</men>
+			From this expression of <m>K_\text{rot}</m>, we can see that the principal axis about which moment of inertia is largest would tend to minimize kinetic energy. This leads to more stability for rotations around principal axis of largest <m>I</m>. If you start a rotation around an axis that has smallest moment of inertia, then, over time, the body will wobble and tend to settle in rotation about axis of largest moment of inertia. 
+		</p>
+
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				That is why rotation of a thin disk about axis perpendicular to the disk is more stable than one about an axis in the plane of the disk.
+			</p>
+			<p></p>
+			<figure xml:id="fig-stable-rotation-axis">
+				<caption></caption>
+				<image source="./images/rotation-general/stable-rotation-axis.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+
+
+	</subsection>
+
+
+
+	<example xml:id="ex-kinetic-energy-of-rotation-of-a-rod"><title>Kinetic Energy of Rotation of a Rod</title>
+
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					 A rod of mass <m>M</m> and length <m>l</m> is poivoted at one end as shown in <xref ref="fig-kinetic-energy-of-rotation-of-a-rod"/>. At a particular instant angular speed is <m>\omega</m>. Find kinetic energy of the rod in two ways: (a) rotation about <m>P</m>, (b) sum of translation of CM and rotation about the CM.
+				</p>
+				<p></p>
+				<figure xml:id="fig-kinetic-energy-of-rotation-of-a-rod">
+					<caption></caption>
+					<image source="./images/rotation-general/kinetic-energy-of-rotation-of-a-rod.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			
+		</statement>
+		<!-- <hint><p>
+			Follow the suggestio in the problem statement.
+		</p></hint> -->
+		<answer><p>
+			<m>\frac{1}{6}Ml^2 \omega^2</m>.
+		</p></answer>
+		<solution>
+			<p>
+				(a) For rotation about <m>P</m>, we need moment of inertia about <m>P</m>, which is <m>I=\frac{1}{3}Ml^2</m>. Therefore, kinetic energy will be
+				<me>
+					K = \frac{1}{2}I \omega^2 = \frac{1}{6}Ml^2 \omega^2.
+				</me> 
+			</p>
+			<p>
+				(b) Now, we have <m>I_0 = \frac{1}{12}Ml^2</m>. We also need the speed of CM. Since CM is moving in a circle of radius <m>\frac{l}{2}</m> with angular speed <m>\omega</m>, we get
+				<me>
+					V_\text{cm} = \frac{l}{2}\,\omega.
+				</me> 
+				Therefore, kinetic energy will be sum of CM translational energy and rotation about the CM.
+				<md>
+					<mrow> K \amp = \frac{1}{2}M V_\text{cm}^2 +  \frac{1}{2}I_0 \omega^2  </mrow>
+					<mrow> \amp = \frac{1}{2}M  \frac{l^2}{4}\,\omega^2 +  \frac{1}{2} \frac{1}{12}Ml^2 \omega^2 </mrow>
+					<mrow> \amp = Ml^2 \omega^2\left( \frac{1}{8} + \frac{1}{24} \right) = \frac{1}{6}Ml^2 \omega^2. </mrow>
+				</md> 
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="ex-Kinetic-Energy-of-a-Rolling-Cylinder"><title>Kinetic Energy of a Rolling Cylinder</title>
+
+		<statement>
+			 
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					A cylinder of mass <m>M</m> and radius <m>R</m> is rolling without slipping with center moving at speed <m>V</m>. What is its kinetic energy?
+				</p>
+				<p></p>
+				<figure xml:id="fig-rolling-cylinder-kinetic-energy">
+					<caption></caption>
+					<image source="./images/rotation-general/rolling-cylinder-kinetic-energy.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			 
+		</statement>
+		<!-- <hint><p>
+			Its not just <m>\frac{1}{2}MV^2</m>.
+		</p></hint> -->
+		<answer><p>
+			<m>\frac{3}{4}MV^2</m>.
+		</p></answer>
+		<solution>
+
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Kinetic energy will be sum of translational kinetic energy of center of mass and rotation about an axis through the center of mass. To find the rotation velocity, we attach a moving coordinate system in the body with origin at the center of mass as shown in <xref ref="fig-rolling-cylinder-kinetic-energy-sol"/>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-rolling-cylinder-kinetic-energy-sol">
+					<caption></caption>
+					<image source="./images/rotation-general/rolling-cylinder-kinetic-energy-sol.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				From the figure, it is easy to tell that angular speed <m>\omega</m> will be related to speed <m>V</m> with which the cylider rolls on the surface.
+				<me>
+					\omega = \frac{\Delta \theta}{\Delta t} = \frac{1}{R}V.
+				</me>
+				Hence, kinetic energy will be
+				<md>
+					<mrow>K \amp = \frac{1}{2}MV^2 + \frac{1}{2} I_0 \omega^2 </mrow>
+					<mrow> \amp = \frac{1}{2}MV^2 + \frac{1}{2} \frac{1}{2}MR^2\omega^2  = \frac{3}{4}MV^2. </mrow>
+				</md>
+			</p>
+
+
+
+			 
+		</solution>
+	</example>
+
+
+	<exercises>
+
+
+	<exercise xml:id="ex-Kinetic-Energy-of-a-Rolling-Cylinder-on-a-Cylindrical-Surface"><title>Kinetic Energy of a Rolling Cylinder on a Cylindrical Surface  </title>
+
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					A cylinder of mass <m>M</m> and radius <m>a</m> is rolling without slipping with center moving at speed <m>V</m> on a cylindrical surface of radius of curvature <m>R</m> as shown in <xref ref="fig-rolling-cylinder-on-cylindrical-surface-ke"/>. (a) What is its kinetic energy? (b) What is angular momentum about center of the center of the cylindrical surface?
+				</p>
+				<p></p>
+				<figure xml:id="fig-rolling-cylinder-on-cylindrical-surface-ke">
+					<caption></caption>
+					<image source="./images/rotation-general/rolling-cylinder-on-cylindrical-surface-ke.png" width="70%"/>
+				</figure>
+			</sidebyside>
+		</statement>
+		<hint><p>
+			For angular velocity, think of rotation about instantaneously at-rest line as axis of rotation. 
+		</p></hint>
+		<answer><p>
+			(a) <m>\frac{3}{4}MV^2</m>, (b) <m>MV\left( R - \frac{a}{2}\right)</m> coming out of page.
+		</p></answer>
+		<solution><title>a</title>
+			<p>
+				Kinetic energy with respect to the fixed axis will be sum of translational kinetic energy of center of mass and rotation about an axis through the center of mass. 
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					To find angular velocity <m>\omega</m> in terms of speed of CM <m>V</m>, we use instantaneous axis of rotation passing through point P in <xref ref="fig-rolling-cylinder-on-cylindrical-surface-ke-sol"/>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-rolling-cylinder-on-cylindrical-surface-ke-sol">
+					<caption></caption>
+					<image source="./images/rotation-general/rolling-cylinder-on-cylindrical-surface-ke-sol.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				With velocity <m>V</m> of the CM about instantaneously at-rest point P at a distance <m>a</m> from P, angular velocity will be
+				<me>
+					\omega = \frac{V}{a}.
+				</me>
+				Therefore, kinetic energy of the cylinder will be
+				<md>
+					<mrow>K \amp = \frac{1}{2}MV^2 + \frac{1}{2} I_0 \omega^2 </mrow>
+					<mrow> \amp = \frac{1}{2}MV^2 + \frac{1}{2} \frac{1}{2}Ma^2\omega^2  = \frac{3}{4}MV^2. </mrow>
+				</md>
+ 
+			</p>			
+		</solution>
+
+		<solution><title>b</title>
+			<p>
+				Both the angular momentum associated with the motion of the CM and the angular momentum about an axis through CM will be coming out of the page in <xref ref="fig-rolling-cylinder-on-cylindrical-surface-ke-sol"/>. Let that axis be <m>z</m>-axis of body-fixed coordinate system and <m>z'</m> of the fixed coordinate system. Then, angular momentum about <m>O'</m> will be
+				<me>
+					\vec L = MV(R-a)\hat k + I_{zz}\omega\hat k.
+				</me>
+				With <m>I_{zz} = \frac{1}{2}Ma^2</m> and <m>\omega=V/a</m>, this simlifies to
+				<me>
+					L_z = MV(R-a) +  \frac{1}{2}MaV = MV\left( R - \frac{a}{2}\right).
+				</me>
+			</p>
+
+		</solution>
+
+
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Rolling-a-Cylinder-About-Edge"><title>Rolling a Cylinder About Edge</title>
+
+		<statement>
+			<p>
+				A cylinder of mass <m>M</m>, radius <m>R</m> and height <m>H</m> has a tiny hole through the center. When a pin is inserted in the hole, cylinder can rotate about the pin freely as shown in  <xref ref="fig-rolling-cylinder-about-edge"/>. 
+			</p>
+
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Holding the pin at one end, the cylinder is rolled on a flat surface such that cylinder rolls without sliding with its center moving at speed <m>V</m>. Find kinetic energy of the cylinder.
+				</p>
+				<p></p>
+				<figure xml:id="fig-rolling-cylinder-about-edge">
+					<caption></caption>
+					<image source="./images/rotation-general/rolling-cylinder-about-edge.png" width="70%"/>
+				</figure>
+			</sidebyside>
+ 
+
+		</statement>
+		<hint><p>No hint.</p></hint>
+		<answer><p>
+			<m>\frac{3}{4}MV^2</m>.
+		</p></answer>
+		<solution>
+			<sidebyside widths="50% 5% 45%">
+ 
+				<p>
+					For the sake of simplification, let us pick a moment shown in <xref ref="fig-rolling-cylinder-about-edge-sol"/> where the principal axis <m>Oz</m> is in the direction of fixed axis  <m>O'x'</m>. 
+				</p>
+
+				<p></p>
+				<figure xml:id="fig-rolling-cylinder-about-edge-sol">
+					<caption></caption>
+					<image source="./images/rotation-general/rolling-cylinder-about-edge-sol.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				By looking at motion of CM at <m>x'=\frac{L}{2},\ y'=0,\  z'=R</m> about instantaneous axis or rotation <m>O'A</m>, we see that angular velocity pointed towards negative <m>z</m>-axis with magnitude
+				<me>
+					\omega = V/R.
+				</me>
+				Therefore, we have kinetic energy
+				<md>
+					<mrow>K \amp = \frac{1}{2}MV^2 + \frac{1}{2} I_{zz} \omega^2 </mrow>
+					<mrow> \amp = \frac{1}{2}MV^2 + \frac{1}{2} \frac{1}{2}MR^2 (V/R)^2 = \frac{3}{4}MV^2. </mrow>
+				</md>				
+			</p>
+
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Angular-Momentum-and-Kinetic-Energy-of-a-Cone-Rolling-on-Side"><title>Kinetic Energy of a Cone Rolling on Side</title>
+
+		<statement>
+
+
+			<!-- <sidebyside widths="45% 5% 50%"> -->
+				<p>
+					A cone of mass <m>M</m>, height <m>h</m> and apex angle <m>2\alpha</m> is placed on a flat surface and rolled wwithout slipping around its apex. The line touching a flat plane sweeps out <m>\Omega</m> rad/sec about the vertical axis as shown in <xref ref="fig-cone-rolling-on-side"/>. Find kinetic energy of the cone.
+				</p>
+				<p></p>
+				<figure xml:id="fig-cone-rolling-on-side">
+					<caption></caption>
+					<image source="./images/rotation-general/cone-rolling-on-side.png" width="80%"/>
+				</figure>
+			<!-- </sidebyside> -->
+			 <p>
+			 	Center of mass of a cone is at <m>\frac{3}{4}h</m> from the apex and formulae for principal moments of inertia are <m>I_1=I_2=\frac{3}{20}M\left(R^2 + \frac{1}{4}h^2 \right)</m>, <m>I_3=\frac{3}{10}MR^2</m>.
+ 			</p>			
+		</statement>
+		<hint><p>
+			Find the radius of the circle in which CM moves around <m>O'A</m> to get angular speed.
+		</p></hint>
+		<answer><p>
+			<m>\frac{3}{40}\,Mh^2\Omega^2\left( 1 + 5 \cos^2 \alpha \right)</m>.
+		</p></answer>
+		<solution>
+			<p>
+				<xref ref="fig-cone-rolling-on-side-sol"/> shows fixed and moving coordinates. At the instant depicted in the figure, instantaneous axis of rotation is in the direction of <m>O'A</m> in <m>O'x'y'</m> plane. The origin of the moving coordinate system is at the center of mass with <m>\overline{O'O}=\frac{3}{4}h</m>. 
+			</p>
+
+			<figure xml:id="fig-cone-rolling-on-side-sol">
+					<caption></caption>
+					<image source="./images/rotation-general/cone-rolling-on-side-sol.png" width="80%"/>
+			</figure>
+ 
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					The CM will go around axis <m>O'A</m> in a circle of radius <m>b</m> given by
+					<me>
+						b = a\,\sin\alpha.
+					</me>
+					Angular speed of rotation about <m>O'A</m> will be
+					<me>
+						\omega = \frac{V}{b} = \frac{V}{a\,\sin\alpha}. 
+					</me>
+					 
+				</p>
+				<p></p>
+				<figure xml:id="fig-cone-rolling-on-side-sol-ang-vel">
+					<caption></caption>
+					<image source="./images/rotation-general/cone-rolling-on-side-sol-ang-vel.png" width="70%"/>
+				</figure>
+			</sidebyside>			
+			<p>
+				Now, we work out components of angular velocity vector with respect to principal axes attached to moving cone so that we can use diagonal <m>{\bf I}</m>.
+			</p>
+ 
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					 Since direction of angular velocity vector is in <m>O'A</m> direction, the components of <m>\vec \omega</m> in the moving coordinate system will be
+					<me>
+						\omega_x = -\omega\,\sin\alpha ,  \omega_y = 0,  \omega_z = \omega\,\cos\alpha.
+					</me>
+					 
+				</p>
+				<p></p>
+				<figure xml:id="fig-cone-rolling-on-side-sol-omega-components">
+					<caption></caption>
+					<image source="./images/rotation-general/cone-rolling-on-side-sol-omega-components.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+
+			<p>
+				Therefore, kinetic energy about <m>O'</m> will be
+				<mdn>
+					<mrow number="no"> K \amp = \frac{1}{2} MV^2 + \frac{1}{2} I_{xx}\omega_x^2 + \frac{1}{2} I_{zz}\omega_z^2</mrow>
+					<mrow number="no"> \amp = \frac{1}{2} MV^2  + \frac{1}{2}\times \frac{3}{20}M\left(R^2 + \frac{1}{4}h^2 \right) \omega^2\sin^2\alpha</mrow>
+					<mrow xml:id="eq-kinetic-energy-cone-prelim"> \amp \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  + \frac{1}{2}\times \frac{3}{10}MR^2 \omega^2\,\cos^2\alpha  </mrow>
+				</mdn>
+
+			</p>
+
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					  We can express kinetic energy in <m>\Omega</m> by working out <m>V</m> of the CM in terms of <m>\Omega</m>. As showin in <xref ref="fig-cone-rolling-on-side-sol-cm-vel"/>, CM moves in a circle of radius <m>a\cos\alpha</m>. Therefore,
+					  <me>
+					  	V = \Omega a\cos\alpha.
+					  </me>
+					 
+				</p>
+				<p></p>
+				<figure xml:id="fig-cone-rolling-on-side-sol-cm-vel">
+					<caption></caption>
+					<image source="./images/rotation-general/cone-rolling-on-side-sol-cm-vel.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Using <m>V</m> in <m>\omega</m> we get
+				<me>
+					\omega = \frac{V}{a\sin\alpha} = \frac{\Omega a\cos\alpha}{a\sin\alpha} = \Omega\,\cot\alpha.
+				</me>
+				Use these along with <m>R = h\tan\alpha</m> and <m>a = 3h/4</m> to convert Eq. <xref ref="eq-kinetic-energy-cone-prelim"/> to
+				<me>
+					K = \frac{3}{40}\,Mh^2\Omega^2\left( 1 + 5 \cos^2 \alpha \right).
+				</me>
+			</p>
+
+	 
+		</solution>
+	</exercise>
+
+	</exercises>
+
+ 
+</section>

@@ -1,0 +1,317 @@
+<section xml:id="kinematics-Acceleration"> <title> Acceleration </title><idx><h>Acceleration</h><h>Vector</h></idx>
+	<introduction>
+		<p>
+			You know that you can make your car move from rest, speed up, slow down and bring to rest, or turn a corner. These are examples of changing velocity, either by changing magnitude or changing itd direction or both. The rate at which velocity, either speed or direction or both, changes is called <term> acceleration</term>. 
+		</p>
+	</introduction>
+	<subsection> <title> Average Acceleration </title> <idx><h>Acceleration
+</h><h>Average</h></idx>
+		<p>
+			Suppose we are looking at what happens to velocity during an interval from <m> t_i </m> to <m> t_ f </m>. Let the instantaneous velocity (vector) at  <m> t_i </m> be <m> \vec v_i </m> and at  <m> t_f </m> be <m> \vec v_f </m>. Then, average acceleration is defined by
+			<men xml:id="eq-average-accln-0">
+				\vec a_{\text{av}} = \dfrac{\vec v_f - \vec v_i}{t_f - t_i}.
+			</men>
+			We often use symbol <m>\Delta \vec v</m> to denote the change in velocity. Here,
+			<men>
+				\Delta \vec v = \vec v_f - \vec v_i.
+			</men>
+			Writing the intertval of time as <m>\Delta t</m>, we write the definition of average acceleration more succinctly as
+			<men xml:id="eq-average-accln">
+				\vec a_{\text{av}} = \dfrac{\Delta \vec v}{\Delta t}.
+			</men>
+			Since we are dividing a vector <m>\Delta \vec v</m> by a number <m>\Delta t</m>, average acceleration is also a vector. The direction of <m>\vec a_{\text{av}}</m> will be in the direction of change in velocity <m>\Delta \vec v</m>. In particular, the direction of acceleration has nothing to do with direction of velocity at any one instant, but instead with the <alert>change in velocity</alert>, i.e, how velocity of changing. 
+		</p>
+		<p>
+			<xref ref="fig-average_acceleration_direcitons_in_circular_motion"/> shows an object moving in a circle with constant speed of <m>5\text{ m/s}</m>. In (a), we see that the change in velocity between A and B points of the circle are neither in the direction of <m>\vec v_A</m> nor in the direction of <m>\vec v_B</m>, but its own direction as shown by vector <m>(\vec v_B - \vec v_A)</m>. Since the change in velocity is not zero, the object's average acceleration between A and B is not zero. In (b), another construction for change in velocity during B and C is shown. Try to draw for what happens between C and D and betwen D and A.
+		</p>
+		<figure xml:id="fig-average_acceleration_direcitons_in_circular_motion">
+			<caption>Changing velocity in a circular motion for an object with constant speed.</caption>
+			<image source="./images/two-dim-motion/average_acceleration_direcitons_in_circular_motion.png" width="80%" />
+		</figure>
+		<p>
+			Just as with other vector quantities, we can analyze average acceleration in terms of its Cartesian components, <m>a_{av,x} </m>, <m>a_{av,y} </m>, and <m>a_{av,z} </m>. From these components, you can find the magnitude and direction of the acceleration vector.  
+		</p>
+		
+	</subsection>
+
+	<example xml:id="Average-Acceleration"><title> Average Acceleration </title>
+	<statement>
+		<p>
+			The velocity of a car changes from <m> (v_x, v_y) = (5, 10) </m> in m/s at time instant <m> t=3.0 </m> sec to <m> (5, -10) </m> in m/s at instant <m> t=8.0 </m> sec.  
+		</p>
+		<p>
+			(a) What are <m> a_x </m> and <m> a_y </m> of the average acceleration vector? 
+		</p>
+		<p>
+			(b) What are the magnitude and direction of the average acceleration vector?
+		</p>
+
+	</statement>
+	<!-- <hint> <p>  (a) Use <m> a_{av,x} = \Delta v_x/\Delta t </m>. (b) Use <m> (x,y) \rightarrow (r, \theta) </m>. </p> </hint> -->
+	<answer> <p>(a) <m> (0, -4\text{ m/s}^2) </m>, (b) <m> 4\text{ m/s}^2 </m>, pointed towards the negative <m> y </m> axis.  </p> </answer>
+	<solution><title>a</title> 
+		<p>
+			Using the definition of the average velocity in components we get <m> a_{av, x} = \dfrac{\Delta v_x}{\Delta t}</m>, and similarly for other components.
+			<md>
+				<mrow> \amp a_{av,x} =  \dfrac{5-5}{8-3}= 0,</mrow>
+				<mrow> \amp a_{av,y} =  \dfrac{-10-10}{8-3}= -4\text{ m/s}^2.</mrow>
+			</md>
+		</p>
+	</solution>
+	<solution><title>b</title> 
+		<p>
+			From <m> a_x </m> and <m> a_y </m>, it is immediately clear that the acceleration vector has magnitude <m> 4\text{ m/s}^2 </m> and pointed towards negative <m> y </m> axis.
+		</p>
+	</solution>
+	</example>
+
+
+	<example xml:id="ex-Acceleration-as-a-Vector-on-an-incline"><title> Acceleration as a Vector on an Incline</title>
+		<statement>
+			<p>
+				A car stalls on a slippery road that is sloped at <m> 15^{\circ} </m>. The car then slides down the road with an acceleration of <m> 2.5 \text{ m/s}^2</m>. 
+			</p>
+			<sidebyside widths="45% 10% 30% 15%">
+				<p>
+					(a) Suppose, your coordinates system has <m> x </m> axis horizontal and <m> y </m> axis vertically up. What will be <m> x </m>   and <m> y </m> components of the acceleration vector <m> \vec a </m>? 
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-Acceleration-as-a-Vector-on-an-incline-a">
+					<caption></caption>
+					<image source="./images/two-dim-motion/ex-Acceleration-as-a-Vector-on-an-incline-a.png" width="90%" />
+				</figure>
+				<p></p>
+			</sidebyside>
+			<sidebyside widths="45% 10% 30% 15%">
+			<p>
+				(b) Suppose your <m> x </m> axis is pointed down the road and <m> y </m> axis is vertical to the road. What will be <m> x </m>   and <m> y </m> components of the acceleration vector <m> \vec a </m>?
+			</p>
+
+				<p></p>
+				<figure xml:id="fig-ex-Acceleration-as-a-Vector-on-an-incline-b">
+					<caption></caption>
+					<image source="./images/two-dim-motion/ex-Acceleration-as-a-Vector-on-an-incline-b.png" width="90%" />
+				</figure>
+				<p></p>
+			</sidebyside>
+
+		</statement> 
+
+		<answer> <p> (a) <m> (-2.41\text{ m/s}^2 </m>, <m> -0.65\text{ m/s}^2) </m> or 
+			<m> (2.41\text{ m/s}^2 </m>, <m> -0.65\text{ m/s}^2) </m>, (b) <m> (2.5\text{ m/s}^2 </m>, <m> 0) </m>
+			</p> 
+		</answer>
+		<solution><title>a</title>
+			<p> 
+				It is always a good idea to sketch the vector on a coordinate system where the tail of the vector is at the origin. This gives us a good idea of positive and negative values for the components. In <xref ref="fig-problem-accln-vector-a-and-b"/>(a) below, we will find that both components are negative. If you draw the figure differently, as in (b), you might find the signs to come out differently.
+			</p>
+
+
+			<figure xml:id="fig-problem-accln-vector-a-and-b">
+
+ 				<caption>
+ 					For <xref ref="ex-Acceleration-as-a-Vector-on-an-incline"/> (a).
+ 				</caption>
+				<!-- <sidebyside widths="50% 50%">
+					<image source="./images/two-dim-motion/problem-accln-vector-a.png" width="90%" /> -->
+					<image source="./images/two-dim-motion/problem-accln-vector-b.png" width="70%" />
+				<!-- /sidebyside> -->
+ 
+			</figure>
+			<p>
+				Let <m> a </m> be the magnitude of the acceleration. Using trig in <xref ref="fig-problem-accln-vector-a-and-b"/>(a), we find <m> a_x = - a \cos\, 15^{\circ}</m><m>=-2.41\text{ m/s}</m>, and <m> a_x = - a \sin\, 15^{\circ}</m><m>=-0.65\text{ m/s}</m>. Using Fig. (b), we get the sign of <m> a_x </m> changed to positive now. 
+			</p>
+			<p>
+				This exercise illustrates that, although the physical description of acceleration, namely, <m> 2.5 \text{ m/s}^2</m> down the slope is unique, the components depend upon how you draw the physical situation and the coordinates. This point is further explored in part (b) of this problem.
+			</p> 
+		</solution>	
+
+
+		<solution><title> b </title>
+			<p> 
+				The axes are now completely different from the axes in part (a). Now, we do not get any projections on the <m> y </m> axis. Therefore, <m> a_y = 0</m>. From <xref ref="fig-problem-accln-vector-part-b"/>, it is clear that <m> a_x = a = 2.5\text{ m/s}^2</m>.
+				
+			</p>
+			<figure xml:id="fig-problem-accln-vector-part-b">
+				<caption>
+					Figures for <xref ref="ex-Acceleration-as-a-Vector-on-an-incline"/>(b).
+				</caption>
+				<image source="./images/two-dim-motion/problem-accln-vector-part-b.png" width="60%" />
+			</figure>
+		</solution>
+	</example>
+
+
+	<subsection> <title> Instantaneous Acceleration - Formal Definition</title>
+	<idx><h>Acceleration</h><h>Instantaneous</h></idx>
+		<p></p>
+		<p>
+			Average acceleration defined above does not tell us about moment-by-moment acceleration. For that Isaac Newton, introduced the concept of <term>instantaneous acceleration</term>, or more siply <term>acceleration</term>, based on concepts of limit and infinitesimal intervals, as we have done for instantaneous velocity.  
+		</p>
+
+		<p>
+			If you find average acceleration using Eq. <xref ref="eq-average-accln"/> for different interval values, i.e., different values of <m>\Delta t</m>, you will find that you get different velocities as was illustrated for a circular motion. Newton noticed that, when <m>\Delta t</m> becomes increasingly small, the differences in average acceleration so-obtained become less and less in a well-defined way such that it is possible to define a unique acceleration in the limit <m>\Delta t\rightarrow 0</m>. 
+			Denoting the instantaneous acceleration vector by <m> \vec a </m> and instantaneous velocity vector as <m> \vec v</m> we can write the definition of instantaneous velocity formally by
+			<men xml:id="eq-instantaneous-acceleration-3d-limit">
+				\vec a	= \lim_{\Delta t \rightarrow 0} \dfrac{\vec v\left(\text{at } (t+\Delta t)\right) - \vec v\left(\text{at } t\right)}{\Delta t} \equiv \frac{d\vec r}{dt}.
+			</men> 
+			Unlike the magnitude of instantaneous velocity, which is called speed, the magnitude of instantaneous acceleration does not have any special name. 
+		</p>
+		<p>
+			Eq. <xref ref="eq-instantaneous-acceleration-3d-limit" /> is an abstract definition, which we can make more accessibale by looking at the components. Denoting <m>\vec v\left(\text{at } (t+\Delta t)\right) - \vec v\left(\text{at } t\right)</m> by <m>\Delta \vec v \equiv (\Delta v_x, \Delta v_y, \Delta v_z)</m>.
+
+			<md>
+				<mrow> \amp a_x= \lim_{\Delta t \rightarrow 0}\dfrac{\Delta v_x}{\Delta t} \equiv \frac{dv_x}{dt},</mrow>
+				<mrow> \amp a_y= \lim_{\Delta t \rightarrow 0}\dfrac{\Delta v_y}{\Delta t} \equiv \frac{dv_y}{dt},</mrow>
+				<mrow> \amp a_z= \lim_{\Delta t \rightarrow 0}\dfrac{\Delta v_z}{\Delta t} \equiv \frac{dv_z}{dt}.</mrow>
+			</md>
+			These components of acceleration are also called <m>x</m>-, <m>y</m>-, and <m>z</m>-accelerations respectively. In a previous chapter, we have studied one-dimensional motion, where only one of them was non-zero. For general motion, you can expect all of them to be nonzero and you would need to keep track of them all. 			
+		</p>
+	</subsection>
+
+
+
+	<subsection><title> Acceleration from Slopes of <m> (v_x,\ v_y,\ v_z) </m> vs <m> t </m> Plots.</title>
+
+		<p>
+			Acceleration at an instant, also called the instantaneous acceleration, is the rate at which velocity is changing with time. In one-dimensional situation, we analyzed by only <m>x</m> component of acceleration for motion along <m>x</m>-axis. Analytically, this was given by the derivative of <m>v_x</m>, the <m>x</m>-component of velocity.
+			<me>
+				a_x = \dfrac{dv_x}{dt}.
+			</me>
+			Since derivate of a function also equals slope of a graph of that function, we had used <m>v_x</m> versus <m>t</m> plot to find <m>a_x</m> when using graphical method.
+			<me>
+				a_x= \text{Slope of tangent to } v_x \text{ versus } t \text{ plot}.
+			</me>
+		</p>
+		<p>
+			Now, with acceleration possible along arbitrary directions, we can choose to analyze using all three Cartesian directions and  calculate derivatives from the slopes of appropriate plots. Thus,
+			<md>
+				<mrow> \amp a_x= \text{Slope of tangent to } v_x \text{ versus } t \text{ plot}.</mrow>
+				<mrow> \amp a_y= \text{Slope of tangent to } v_y \text{ versus } t \text{ plot}.</mrow>
+				<mrow> \amp a_z = \text{Slope of tangent to } v_z \text{ versus } t \text{ plot}.</mrow>
+			</md>
+		</p>
+		<p>
+			Once we have obtained <m> (a_x,\ a_y,\ a_z)</m>, we can deduce the magnitude and direction of the acceleration vector as usual. For instance, magnitude of acceleration will be
+			<men>
+				a = \sqrt{a_x^2 + a_y^2 + a_z^2},
+			</men>
+			and the direction will be given by one angle if the motion is 2-dimensional or by two angles if the motion is 3-dimensional.
+		</p>
+	</subsection>
+
+		<example xml:id="Acceleration-from-Slopes-of-Velocity-Components"><title> Acceleration from Slopes of Velocity Components</title>
+			<statement> 
+				<p>
+					The following figure shows plots of the <m> x </m> and <m> y </m> components of velocity, <m> v_x </m> and <m> v_y </m>. Find the acceleration in the component form at the following instants: (a) <m> t = 1\text{ s}</m>, (b) <m> t = 3\text{ s}</m>, (c) <m> t = 5\text{ s}</m>, (d) <m> t = 7\text{ s}</m>, (e) <m> t = 9\text{ s}</m>.
+				</p>
+				<image source="./images/two-dim-motion/checkpoint-acceleration-from-velocity-plots.png"/>
+
+			</statement>
+			<!-- <hint> <p>  Find slopes at those instants. </p> </hint> -->
+			<answer> <p>  (a) <m>(0, 1\text{ m/s}^2)</m>,
+			(b) <m>(0, -2\text{ m/s}^2)</m>,
+			(c)  <m>(-1\text{ m/s}^2, 1\text{ m/s}^2)</m>, 
+			(d) <m>(-1\text{ m/s}^2, 1\text{ m/s}^2)</m>,  
+			(e) <m>(0, 0)</m>.</p> </answer>
+			<solution> 
+				<p> We need to find slopes at the indicated instants by <m> a_x = \dfrac{\Delta v_x}{\Delta t}</m> and similarly for <m> a_y</m>.
+					<md>
+						<mrow> \amp \text{(a)}\ \  a_x = 0,\ \ a_y = 1\text{ m/s}^2,</mrow>
+						<mrow> \amp \text{(b)}\ \  a_x = 0,\ \ a_y = -2\text{ m/s}^2,</mrow>
+						<mrow> \amp \text{(c)}\ \  a_x = -1\text{ m/s}^2,\ \ a_y = 1\text{ m/s}^2,</mrow>
+						<mrow> \amp \text{(d)}\ \  a_x = -1\text{ m/s}^2,\ \ a_y = 1\text{ m/s}^2,</mrow>
+						<mrow> \amp \text{(d)}\ \  a_x = 0,\ \ a_y = 0,</mrow>
+					</md>
+				</p>
+			</solution>
+		</example>
+
+	<subsection><title> (Calculus) Instantaneous Acceleration </title>
+	
+		<p>
+			To obtain  acceleration <em> at a particular instant <m> t </m>, </em> we seek average acceleration in an infinitesimal interval near the instant <m> t </m>. This leads to the ratio in Eq. <xref ref="eq-average-accln" /> becoming a derivative.
+			<men xml:id="eq-accln-def">
+				\vec a  = \dfrac{d \vec v}{dt}.
+			</men>
+			We can express the Cartesian components of acceleration as derivatives of the corresponding Cartesian components of the velocity vector.
+			<mdn>
+				<mrow> \amp a_x = \dfrac{dv_x}{dt}</mrow>
+				<mrow> \amp a_y = \dfrac{dv_y}{dt}</mrow>
+				<mrow> \amp a_z = \dfrac{dv_z}{dt}</mrow>
+			</mdn>
+			Since <m> v_x = dx/dt </m>, <m> v_y = dy/dt </m>, snd <m> v_z = dz/dt </m>, we find that we can express components of acceleration as second derivatives of the position.
+			<mdn>
+				<mrow> \amp a_x = \dfrac{d^2x}{dt^2}</mrow>
+				<mrow> \amp a_y = \dfrac{d^2y}{dt^2}</mrow>
+				<mrow> \amp a_z = \dfrac{d^2z}{dt^2}</mrow>
+			</mdn>
+			This is often written compactly as
+			<men>
+				\vec a = \dfrac{d^2\vec r}{dt^2}.
+			</men>
+			
+		</p>
+	</subsection>
+
+		<example xml:id="Acceleration-of-an-Airplane-during-a-Takeoff"><title> (Calculus) Acceleration of an Airplane during a Takeoff </title>
+			<statement>
+				<p>
+					The velocity of an airplane during the takeoff is given in the component form with respect to some coordinate system: <m> \vec v =  (10\, t, 0, 3\, t^2) </m> in m/s units with <m> t </m> is in seconds. Note the value of <m> t </m> is restricted to the time during the takeoff, which we will take to be <m> 0 \lt t \lt 10 </m> in seconds. 
+				</p>
+				<p>
+					(a) What is the acceleration of the plane at an arbitray instant <m> t </m> in <m> (0,  10)  </m> sec interval? 
+				</p>
+				<p>
+					(b) What is the acceleration at <m> t=2 </m> sec? 
+				</p>
+				<p>
+					(c) What are the components of the average acceleration during this time interval? Note this will not be a function of <m> t </m>.
+				</p>
+				<p>
+					NOTE: Time average of a function between instants <m>t_1</m> and <m>t_2</m> is defined by
+					<me>
+						f_{av} = \dfrac{1}{t_2-t_1}\, \int_{t_1}^{t2}\, f(t) dt.
+					</me>					
+				</p>
+
+			</statement>
+			<!-- <hint> <p>  (a) Compute derivatives. (b) Evaluate. (c)  </p> </hint> -->
+			<answer> <p> (a) <m> (10,\ 0,\ 6\, t)</m> in units of <m> m/s^2</m> if <m> t</m> is in sec. (b) <m> (10\text{ m/s}^2,\ 0,\ 12\text{ m/s}^2) </m> , (c) <m> \left(10\text{ m/s}^2,\ 0,\  30\text{ m/s}^2 \right)</m>.</p> </answer>
+			<solution><title>a</title> 
+				<p> 
+					Taking the derivative of <m> \vec v </m> we get
+					<me>
+						\vec a = (10, 0, 6\, t)
+					</me>
+					in units of <m> m/s^2</m> if <m> t </m> is in seconds. 
+				</p>
+			</solution>
+			<solution><title>b</title> 
+				<p>
+					Putting <m> t = 2 </m> in the answer in (a) gives us the acceleration at <m> t = 2\text{ sec} </m>.
+				<me>
+					\vec a = (10, 0, 12).
+				</me>
+				</p>
+			</solution>
+			<solution><title>c</title> 
+				<p>
+					For average acceleration, we will average the time-dependent acceleration with respect to time. Time-average of a function <m> f(t)</m> between <m> t=t_1 </m> and <m> t=t_2</m> is defined by
+					<me>
+						f_{av} = \dfrac{1}{t_2-t_1}\, \int_{t_1}^{t2}\, f(t) dt.
+					</me>
+					We need to do this only for the <m> a_z </m> since that is the only part that is time-dependent.
+					<me>
+						a_{av,z} = \dfrac{1}{10}\,\int_0^{10}\, 6\,t\, dt = 30\text{ m/s}^2.
+					</me>
+					Therefore,
+					<me>
+						\vec a_{av} = \left(10\text{ m/s}^2,\ 0,\  30\text{ m/s}^2 \right).
+					</me>
+				</p>
+			</solution>
+		</example>
+
+	
+</section>

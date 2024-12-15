@@ -1,0 +1,171 @@
+<section xml:id="Thermal-Length-Expansion"><title> Thermal Length Expansion</title>
+
+	<introduction>
+		<p>
+			Most things expand when heated and contract when cooled. 
+			When a solid bar is heated its length expands and contracts if cooled if either end is free.  In almost all materials, the fractional change in length  <m> \Delta L / L</m>, i.e., the strain, is proportional to the change in temperature <m> \Delta T </m>. 
+			<men>
+				\dfrac{\Delta L}{L} = \alpha \Delta T,
+			</men>
+			where the proportionality constant <m> \alpha </m>  is called the <term> coefficient of thermal expansion</term>.  <xref ref="tab-coeff-expansion" /> has values of the coefficient for common materials. You can see that <m>\alpha</m> is very small for most solids, being <m>10^{-5}-10^{-6}\text{ per }^\circ\text{C}</m>.  
+		</p>
+
+		<table xml:id="tab-coeff-expansion"><title> Coefficient of linear expansion of common materials at <m>298\text{K}</m> (CRC Handbook of Chemistry and Physics, 82nd Edition and Kaye and Laby Online, 2006.)</title>
+			<tabular halign ="left" >
+				<row bottom ="minor" >
+					<cell > Substance </cell >
+					<cell > <m>\alpha(10^{-6}/ ^{\circ}\text{C}) </m> </cell >
+					<cell > Substance </cell >
+					<cell > <m>\alpha(10^{-6}/ ^{\circ}\text{C}) </m> </cell >
+				</row >
+				<row > <cell > <alert>Metals and alloys </alert></cell > 	<cell > <m> </m> </cell > <cell > <alert>Common solids </alert></cell > 		<cell > <m> </m> </cell ></row >
+				<row > <cell > Aluminum </cell > 			<cell > <m>23.1 </m> </cell > <cell > Cement/Concrete </cell > 	<cell > <m> 3-10</m> </cell ></row >
+				<row > <cell > Brass </cell >    			<cell > <m> 20.3</m> </cell > <cell > Glass (crown) </cell > 		<cell > <m>7-8 </m> </cell > </row >
+				<row > <cell > Copper </cell >   			<cell > <m> 16.5</m> </cell > <cell > Glass (Pyrex) </cell > 		<cell > <m> 2.8</m> </cell ></row >
+				<row > <cell > Lead </cell > 				<cell > <m> 28.9</m> </cell > <cell > Graphite </cell > 			<cell > <m> 7.1</m> </cell ></row >
+				<row > <cell > Steel </cell > <cell > <m> 11.7</m> </cell > <cell > Granite </cell > 			<cell > <m> 7-14</m> </cell ></row >
+				<row > <cell >   </cell > <cell > <m>  </m> </cell > <cell > Invar </cell > 				<cell > <m> 0.13</m> </cell ></row >
+				<row bottom ="minor"> <cell >  </cell > <cell > <m>  </m> </cell > <cell > Quartz </cell > 				<cell > <m> 3-6</m> </cell ></row >
+
+			</tabular>
+		</table>
+
+
+	</introduction>
+
+	<subsection><title>Thermal Expansion Applications </title>
+		<subsubsection><title> Bimetal Strip</title>
+			<p>
+				An important application of thermal expansion is a <term> bimetallic strip</term>, which is used to measure temperature.  In a bimetallic strip, two strips made up of different metals such as brass and steel are welded at the ends as shown in <xref ref="fig-bimetal-strip-2"/>.  When the bimetallic strip is heated the two metals expand to different extent, which causes the bimetal strip to bend since the ends are fixed.  The direction of bending can be calibrated to give readings of temperature. 
+			</p>
+ 
+		<figure xml:id="fig-bimetal-strip-2">
+			<caption>
+				A bimetal strip - the two metals expand with different coefficients, causing the strip to bend one way or the other depending on the temperature.
+			</caption>
+			<image source="./images/thermal-expansion/bimetal-strip.png" width="80%"/>
+		</figure>
+		<p>
+
+			A common approach for enhancing the effect so that a more sensitive equipment for measuring temperature can be constructed is to wind a bimetallic strip as a helix on a support.  The winding lets one use a very long bimetallic wire so that the twists along the wire can be magnified. With temperature the helix winds and unwinds which is displayed on an analog dial or converted to a digital output (<xref ref="fig-bimetallic-strip-pic"/>).
+		</p>
+
+		<figure xml:id="fig-bimetallic-strip-pic">
+			<caption>
+				A bimetal coil in a thermostat.
+			</caption>
+			<image source="./images/thermal-expansion/bimetallic-strip-pic.png" width="60%"/>
+		</figure>
+
+		</subsubsection>
+
+		<subsubsection> <title> Preventing Rail Tracks from Stress </title>
+			<p>
+				Rail tracks are joined together with a gap left for allowing the  expansion in hot weather and/or heating of the rails from the friction. 
+			</p>
+
+			<figure xml:id="fig-rail-track">
+				<caption>
+					Rail tracks have gaps placed on purpose to prevent the bending of tracks as a result of heat and expansion.
+				</caption>
+				<image source="./images/thermal-expansion/rail-track.png" width="60%"/>
+			</figure>
+
+			<p>
+				How much gap should be left between two <m>20\text{-m}</m> tracks made of steel if it is laid at <m> 22^{\circ}\text{C}</m> and is to operate up to a temperature of <m>47^{\circ}\text{C}</m>? 
+			</p>
+			<p>
+				Each track will expand half of the gap on each side.  Hence the total expansion will the equal to the gap.
+				<md>
+					<mrow> \text{Gap } \amp = \Delta L = \alpha L \Delta T </mrow>
+					<mrow> \amp = 11.7\times 10^{-6} \times 20 \times 25  = 5.9\times 10^{-3} \text{m}.</mrow>
+				</md>
+			</p>
+
+ 
+		</subsubsection>
+
+	</subsection>
+	
+
+	<exercise xml:id="ex-Expansion-of-an-Aluminum-and-a-Copper-Rod-with-Rise-in-Temeperature"><title> Expansion of an Aluminum and a Copper Rod with Rise in Temeperature </title>
+		<statement>
+			<p>
+				An aluminum and a copper bar each of length <m>1.0\text{ m}</m> at <m>27^{\circ}\text{C}</m>   are put in boiling water at <m>99^{\circ}\text{C}</m>.  What is the difference in their lengths at <m>99^{\circ}\text{C}</m>?
+			</p>
+			<p>
+				Data: <m>\alpha_{\text{aluminum}} = 23.1\times 10^{-6}\ \text{per }^{\circ}\text{C}</m> and <m>\alpha_{\text{copper}} = 16.5\times 10^{-6}\ \text{per }^{\circ}\text{C}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m>\Delta L = \alpha L_0 \Delta T</m>. </p> </hint>
+		<answer> <p> <m>0.47\text{ mm}. </m>  </p> </answer>
+		<solution> 
+			<p>
+				Using  
+				<m>
+				 	\Delta L = \alpha L_0\Delta T,
+				</m>
+				we find the change in the lengths of the two bars when their temperatures are raised to <m>99^{\circ}\text{C}</m>. 
+				<md>
+					<mrow> \amp \Delta L_{\text{aluminum}} =    \frac{23.1\times 10^{-6}}{\ ^{\circ}\text{C}}\times 1\ \text{m} \times (99-27)^{\circ}\text{C} =  1.66\ \text{mm}.</mrow>
+					<mrow> \amp  \Delta L_{\text{copper}} =    \frac{16.5\times 10^{-6}}{\ ^{\circ}\text{C}}\times 1\ \text{m} \times (99-27)^{\circ}\text{C} =  1.19\ \text{mm}.</mrow>
+				</md>
+				Therefore, the difference in the lengths of the the two bars at <m>99^{\circ}\text{C}</m> will be <m>1.66\text{ mm} - 1.19\text{ mm} = 0.47\text{ mm}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Gap-Requirement-for-Train-Tracks-for-Temperature-Variations"><title> Gap Requirement for Train Tracks for Temperature Variations </title>
+		<statement>
+			<p>
+				A train track is made of long steel bars each of length <m>20\text{ m}</m> at <m>20^{\circ}\text{C}</m>.  The track is to operate between the temperatures of <m>-5^{\circ}\text{C}</m> and <m>40^{\circ}\text{C}</m>.  What gap should be placed between the tracks at <m>20^{\circ}\text{C}</m> so that the maximum separation between them does not exceed <m>5\text{ m}</m> and the minimum gap be zero in the given temperature range.
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m>\Delta L = \alpha L_0 \Delta T</m>. </p> </hint>
+		<answer> <p> Between <m>0.5\text{ cm}</m> and <m>4.4\text{ cm}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Let <m>L_1</m> and <m>L_2</m> denote the smallest and largest lengths of the bar in the given temperature range. These lengths of the bar at the two extreme temperatures will be
+				<md>
+					<mrow> L_1 \amp =  20\ \text{m} -  \frac{11.7\times 10^{-6}}{\ ^{\circ}\text{C}}\times 20\ \text{m} \times (20-(-5))^{\circ}\text{C}</mrow>
+					<mrow> \amp =  19.994\ \text{m}.</mrow>
+					<mrow> L_2 \amp =  20\ \text{m} +  \frac{11.7\times 10^{-6}}{\ ^{\circ}\text{C}}\times 20\ \text{m} \times (40-20)^{\circ}\text{C}
+					</mrow>
+					<mrow> \amp =  20.005\ \text{m}.</mrow>
+				</md>
+				Let <m>w</m> be the gap at <m>20^{\circ}\text{C}</m>. The gap in winter will increase by <m>0.6 \text{ cm}</m> becoming <m>w + 0.6 \text{ cm}</m>, which is required by the problem not to exceed <m>5 \text{cm}</m>.  Therefore.
+				<me>
+					w \lt 5\ \text{cm} - 0.6\ \text{cm} = 4.4\ \text{cm}.
+				</me>
+				In the summer the gap will decrease by <m>0.5\text{ cm}</m> becoming <m> w - 0.5\text{ cm}</m>, which must not be less than zero since then the rails will push against each other.
+				<me>
+					w \gt 0.5\ \text{cm}.
+				</me>
+				Therefore, any gap between <m>0.5\text{ cm}</m> and <m>4.4\text{ cm}</m> will satisfy the requirements.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

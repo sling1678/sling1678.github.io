@@ -1,0 +1,141 @@
+<section xml:id="secction-charged-particle-in-electric-field"><title> Charged Particles in Electric Field</title>
+	<introduction>
+		<p>
+			In many accelerator experiments, it is common practice to accelerate charged particles by placing the particle in an electric field. If you place a particle of charge <m>q</m> in ellectric field <m>\vec E</m>, the force on the particle will be given by
+			<men>
+				\vec F_\text{on q} = q\:\vec E.
+			</men>
+			In this section we will work out examples of motion of particles when electric force is the only force on the particle. Later on, when we discuss magnetic force, we will look at another way we can change the motion of a particle based on its charge.
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-Motion-of-an-Electron-with-Initial-Velocity-Parallel-to-the-Electric-Field"><title>Motion of an Electron with Initial Velocity Parallel to the Electric Field </title>
+
+		<statement>
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					An electron with speed <m>2.0\times 10^5\text{ m/s}</m> enters a region of constant electric field of magnitude <m>1000\text{ N/C}</m> from a direction so that initial velocity is in the opposite to the direction as the electric field. 
+				</p>
+				<p></p>
+				<image source="./images/coulombs-law/ex-Motion-of-an-Electron-with-Initial-Velocity-Parallel-to-the-Electric-Field.png" width="70%"/>
+			</sidebyside>
+			
+			<p>
+				(a) What is the magnitude and direction of acceleration of the electron?
+			</p>
+			<p>
+				(b) What is the velocity of the electron after <m>5.0\ \text{ ns}</m>?
+			</p>
+			<p>
+				(c) What is the velocity of the electron after it has covered a distance of <m>4.0\text{ mm}</m> in the non-zero electric field region? 
+			</p>
+		</statement>
+		<hint><p>(a) Let electric field be pointed towards positive <m>x</m> axis. With this choice, only <m>x</m> components matter here. (b) and (c) Use constant acceleration formulas.</p></hint>
+		<answer><p>
+			(a) <m>1.8\times 10^{14}\text{ m/s}^2</m> opposite to direction of electric field,
+			(b) <m>1.1\times 10^6\text{ m/s}</m> opposite to direction of electric field, 
+			(c) <m>1.36 \times 10^{6} \text{ m/s}</m> opposite to direction of electric field.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)
+				Since electron is negatively charged, force on the electron will be in the opposite direction of the electric field. Let electric field direction be towards <m>x</m> axis. Then, we see that the acceleration will have only <m>x</m> component.
+				<md>
+					<mrow> a_x \amp = \frac{F_x}{m} = \frac{q E_x}{m} </mrow>
+					<mrow>  \amp = \frac{-1.60\times 10^{-19}\text{ C}\times 1000\text{ N/C}}{9.1\times 10^{-31}\text{ kg} } = - 1.8\times 10^{14}\text{ m/s}^2</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)
+				The initial velocity is pointed in the negative <m>x</m> axis. Therefore, we have
+				<me>
+					v_{ix} = -2.0\times 10^5\text{ m/s}.
+				</me>
+				Since acceleration is constant, we will get
+				<md>
+					<mrow> v_{fx} \amp = v_{ix} + a_x t </mrow>
+					<mrow> \amp = -2.0\times 10^5\text{ m/s} - 1.8\times 10^{14}\text{ m/s}^2\times 5.0\times 10^{-9}\text{ s}</mrow>
+					<mrow> \amp = -2.0\times 10^5\text{ m/s}  - 9\times 10^{5} \text{ m/s} = -1.1\times 10^6\text{ m/s}.</mrow>
+				</md>
+
+			</p>
+		</solution>
+		<solution><title>(c)</title>		
+			<p>
+				(c)
+				Using constant acceleration formula we have
+				<me>
+					v_{fx} = - \sqrt{ v_{ix}^2 + 2 a_x \Delta x },
+				</me>
+				where I used the negative root since velocity is pointed towards negative <m>x</m> axis. Here, both <m>a_x</m> and <m>\Delta x </m> are negative. 
+				Now, using the given numbers we get
+				<md>
+					<mrow> v_{fx} \amp =  - \sqrt{ (2.0\times 10^5)^2 + 2 \times 1.8\times 10^{14}\text{ m/s}^2 \times  5.0\times 10^{-3}\text{ m}} </mrow>
+					<mrow> \amp = - 1.36 \times 10^{6} \text{ m/s}.</mrow>
+				</md>
+
+			</p>
+
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Motion-of-an-Electron-with-Initial-Velocity-Perpendicular-to-the-Electric-Field"><title>Motion of an Electron with Initial Velocity Perpendicular to the Electric Field </title>
+
+		<statement>
+			<p>
+				An electron with speed <m>v_0</m> enters a region of constant electric field of magnitude <m>E</m> from a direction so that initial velocity is perpendicular to the direction of the electric field as shown in the figure. 
+			</p>			 
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					Electron's path is parabolic such that, for <m>d_\perp</m> in the forward direction, the electron moves a distance <m>d_\parallel</m> in the direction parallel to the electric field. Find <m>d_\parallel</m>  in terms of <m>d_\perp</m>. Use symbol <m>m_e</m> for mass of electron and charge <m>-e</m> for its charge.
+				</p>
+				<p></p>
+				<image source="./images/coulombs-law/ex-Electron-with-Initial-Velocity-Perpendicular-to-the-E.png" width="70%"/>
+			</sidebyside>
+				
+			 
+		</statement>
+		<hint><p>Apply projectile motion concepts.</p></hint>
+		<answer><p> <m>d_\parallel =  \frac{eE}{2m_ev_0^2}  d_\perp^2</m>.</p></answer>
+		<solution>
+
+
+
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					This is similar to projectile motion. Let us introduce <m>x</m> and <m>y</m> axes so we can work with component motions. With these axes, we have
+					<md>
+						<mrow> \amp v_{ix}=0,\ v_{iy}=v_0,\ x_i=0,\ y_i=0</mrow>
+						<mrow> \amp a_x = - eE/m_e,\ a_y=0,\ x_f=-d_\parallel,\ y_f=d_\perp.</mrow>
+					</md>
+				</p>
+				<p></p>
+				<image source="./images/coulombs-law/ex-Electron-with-Initial-Velocity-Perpendicular-to-the-E-sol.png" width="70%"/>
+			</sidebyside>
+			<p>
+				Let <m>t</m> be the duration. Then, we have the following two equations for <m>x</m> and <m>y</m> motions.
+				<md>
+					<mrow> -\amp d_\parallel = 0 + \frac{1}{2}a_x t^2 = -\frac{eE}{2m_e} t^2.</mrow>
+					<mrow> \amp d_\perp = v_0 t. </mrow>
+				</md>
+				Squaring the second equation and dividing the first gets rid of <m>t</m> and gives us the following relation.
+				<me>
+					d_\parallel =  \frac{eE}{2m_ev_0^2}  d_\perp^2. 
+				</me>
+			</p>
+
+
+			
+		</solution>
+	</exercise>
+
+
+
+
+
+
+</section>

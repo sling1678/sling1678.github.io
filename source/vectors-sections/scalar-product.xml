@@ -1,0 +1,382 @@
+<section xml:id="Scalar-Product-Between-Vectors"><title> Scalar Product</title><idx><h>Vectors</h><h>Scalar Product</h></idx>
+<introduction>
+	<p>
+		We have already discussed the definition of scalar products in <xref ref="subsubsection-Graphical-Scalar-Or-Dot-Product"/>. To recap, the value of scalar product between two vectors <m>\vec A</m> and <m>\vec B</m> is ordinary multiplication of the magnitude of one of the vectors and the projection of the other vector on this vector. 
+
+	</p>
+	<sidebyside widths="50% 5% 45%">
+		<p>
+			Mathematically, we we able to write this using the cosine of the angle between the two vectors.
+			<mdn>
+				<mrow >
+					\vec A \cdot \vec B \amp= A_{\parallel B} B
+				</mrow>
+				<mrow xml:id="eq-dot-product-from-mag-and-angle-recalled">\amp  = A B_{\parallel A} = A B \cos\theta.</mrow>
+			</mdn>
+		</p>
+		<p></p>
+		<figure xml:id="fig-vector-dot-product">
+			<caption>
+				Vectors for definition of dot product of vectors. 
+			</caption>
+			<image source="./images/vectors/vector-dot-product.png" width="60%"/>
+		</figure>
+	</sidebyside>
+	<p>
+		Here, <m>A_{\parallel B}</m> is prjection of vector <m>\vec A</m> on vector <m>\vec B</m> and <m>B_{\parallel A}</m> is prjection of vector <m>\vec B</m> on vector <m>\vec A</m>. These are explained in <xref ref="subsection-Projection-of-one-Vector-Over-Another"/>.
+	</p>
+	<p>
+
+		Here, we will learn to make use of the Cartesian components of these vectors. Let us write each vector in terms of its Cartesian components.
+		<md>
+			<mrow> \amp \vec A = A_x \hat u_x + A_y\hat u_y + A_z \hat u_z</mrow>
+			<mrow> \amp \vec B= B_x \hat u_x + B_y\hat u_y + B_z \hat u_z</mrow>
+		</md>
+		We can make us of the Distributive Property <xref ref="Scalar-Product-Distributive-Property"/> of scalar product to expand their product as follows.
+		<md>
+			<mrow>\vec A \cdot \vec B \amp = \left(A_x \hat u_x + A_y\hat u_y + A_z \hat u_z\right) \cdot \left( B_x \hat u_x + B_y\hat u_y + B_z \hat u_z\right>)</mrow>
+			<mrow> \amp = A_xB_x \hat u_x\cdot \hat u_x + A_x B_y \hat u_x\cdot\hat u_y+\cdots</mrow>
+		</md>
+		Now, the dot product between the unit vectors along the axes is easily worked by using the angle form of the product in Eq. <xref ref="eq-dot-product-from-mag-and-angle-recalled"/> giving simple results.
+		<md>
+			<mrow>\amp \hat u_x \cdot \hat u_x = |\hat u_x||\hat u_x|\cos\,0^\circ = 1 \times 1 \times 1 = 1. </mrow>
+			<mrow>\amp \hat u_x \cdot \hat u_y = |\hat u_x||\hat u_y|\cos\,90^\circ = 1 \times 1 \times 0 = 0. </mrow>
+		</md>
+		You can work out the other pairs you need. The upshot is that the product between Cartesian components equals <m>1</m> when they are the same vectors and zero otherwise.
+		<men>
+			\hat u_i \cdot \hat u_j = 
+			\begin{cases} 
+				1 \amp\quad \text{ if } i = j,\\
+				0 \amp\quad \text{ if } i \ne j,\\
+			\end{cases}
+		</men>
+		where <m>i</m> and <m>j</m> stand for <m>x,y,z</m>. Now, we can complete the calculation for the dot product in terms of components left with <m>\cdots</m> above.
+		<men xml:id="eq-dot-product-from-components-derived">
+			\vec A \cdot \vec B = A_xB_x \hat u_x\cdot \hat u_x + A_x B_y \hat u_x\cdot\hat u_y+\cdots = A_xB_x + A_yB_y + A_zB_z.
+		</men>
+
+	</p>
+
+<!-- 	<p>  
+		Scalar or dot product of two vectors results in a single real number. To be specific, consider two vectors <m>\vec A</m> and <m>\vec B</m> that have an angle <m>\theta</m> between them as shown in <xref ref="fig-vector-dot-product"/>. We denote the scalar product by placing a dot between the abstract symbols <m> \vec A </m> and <m> \vec B</m> for the two vectors, as <m> \vec A\cdot\vec B</m>.
+	</p> -->
+<!-- 	<figure xml:id="fig-vector-dot-product">
+		<caption>
+			Vectors for definition of dot product of vectors. The angle between vectors are denoted by drawing the two vectors with their tails at the same point.
+		</caption>
+		<image source="./images/vectors/vector-dot-product.png" width="60%"/>
+	</figure> -->
+
+	<p>
+		Thus scalar product between <m> \vec A </m> and <m> \vec B</m> can be obtained in multiple ways. The following two are very useful for analytical work. 
+		<mdn>
+			<mrow xml:id="eq-dot-product-from-components"> \vec A \cdot\vec B \amp = A_x B_x + A_y B_y + A_z B_z,</mrow>
+			<mrow xml:id="eq-dot-product-from-mag-and-angle">  \amp = A B \cos\theta,</mrow>
+		</mdn>
+			where <m> A </m> and <m> B </m> are magnitudes of these vectors.
+			<md>
+				<mrow> \amp A = \sqrt{A_x^2  + A_y^2 + A_z^2}</mrow>
+				<mrow> \amp B = \sqrt{B_x^2  + B_y^2 + B_z^2}</mrow>
+			</md>
+	</p>
+	<p>					
+		An important use of these formulas to find the angle between two vectors, given their components. Equating these Eqs. <xref ref="eq-dot-product-from-components"/> and <xref ref="eq-dot-product-from-mag-and-angle"/>, and solving for <m> \cos\theta </m> we get
+		<men>
+			\cos\theta = \dfrac{A_x B_x + A_y B_y + A_z B_z}{A\, B}.
+		</men>
+		Since components are simple numbers, their multiplication order does not matter, i.e., <m>A_xB_x = B_xA_x</m>, therefore, the order of vectors in the dot product does not matter. That is,
+		<men>
+			\vec A \cdot \vec B = \vec B \cdot \vec A.
+		</men> 
+		This will not be the case with the other product between vectors, called cross product, we will define below - we will find that reversing the order introduces a negative sign.
+			 
+	</p>
+
+
+	<example xml:id="example-Scalar-Product-of-Two-Vectors-Given-in-Components"><title>Scalar Product of Two Vectors Given in Components</title>
+		<statement>
+			<p>
+				Find the scalar product between the following vectors:
+				<m>\vec A = (100\ \textrm{N})\ \hat u_x</m> + <m>(10\ \textrm{N})\ \hat u_y</m> + <m>(100\ N)\ \hat u_z </m>, and <m>\vec B = (30\ \textrm{m/s})\ \hat u_y</m> + <m>(-4\ \textrm{m/s})\ \hat u_z</m>.
+			</p>
+		</statement>
+		<answer><m>100\text{ N.m/s}</m>.</answer>
+		<solution>
+			<p>
+				A straightforward applications of  the following formula for the scalar product: <m>\vec A\cdot \vec B = A_x B_x +  A_y B_y + A_z B_z</m> gives (suppressing units)
+				<md>
+					<mrow>\vec A\cdot \vec B \amp = 100\times 0 +  10 \times 30 + 100 \times (-4) </mrow>
+					<mrow>\amp = 0 + 300 - 400 = -100\text{ N.m/s}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="example-Scalar-Product-of-Two-Vectors-Given-in-Magnitude-and-Directions"><title>Scalar Product of Two Vectors Given Magnitudes and Directions</title>
+		<statement>
+			<p>
+				Find the scalar product between the following two vectors. <m>\vec F</m> that has magnitude <m>100\text{ N}</m> pointed towards East and <m>\vec d</m> that has magnitude <m>50\text{ cm}</m> pointed towards <m>30^\circ</m> West of North.
+			</p>
+		</statement>
+		<answer> <m>- 2500\text{ N.cm}</m>. </answer>
+		<solution>
+			<p>
+				Since we already have magnitudes of the two vectors, we need to figure out angle between them if they are drawn with their tails at the same point. You can draw to find that the angle between them is <m>\theta = 90^\circ+30^\circ=120^\circ</m>. Therefore,
+				<me>
+					\vec F\cdot \vec d = F d \cos\theta = 100\times 50\cos120^\circ = - 2500\text{ N.cm}.
+				</me>
+			</p>
+		</solution>
+
+	</example>
+
+
+
+	<example xml:id="Finding-Angle-Between-Two-Vectors"><title> Finding Angle Between Two Vectors</title>
+		<statement>
+			<p>
+				Consider the following vectors given in their component forms in a three-dimensional space, <m> \vec F = (3 \text{ N}, 4 \text{ N}, -5 \text{ N})</m>, and <m> \vec d = (-4 \text{ m}, 5 \text{ m}, 3 \text{ m})</m>. (a) Find the magnitudes of the two vectors. (b) Find the dot product of the two vectors. (c) What is the angle betwen the two vectors?
+
+			</p>
+		</statement>
+		<!-- <hint> <p> (a) Use <m> F = \sqrt{F_x^2 + F_y^2 + F_z^2}</m>, (b) Use dot product based on components, (c) Use dot product based on magnitude.</p></hint> -->
+
+		<answer> <p> (a) <m> 7.07\text{ N} </m>,  <m> 7.07\text{ m} </m>, (b) <m> - 7\text{ N.m} </m>, (c) <m>98^{\circ}</m></p></answer>
+		
+		<solution><title>a</title>
+
+			<p>
+				Using <m> F = \sqrt{F_x^2 + F_y^2 + F_z^2}</m> on <m> \vec F</m> and similar formula on <m> \vec d </m> we immediately get the answer. The only thing we need to notice that we will also get units.
+				<md>
+					<mrow> F \amp = \sqrt{F_x^2 + F_y^2 + F_z^2} </mrow>
+					<mrow>   \amp = \sqrt{(3 \text{ N})^2 + (4 \text{ N})^2 + (-5 \text{ N})^2} = 7.07\text{ N}.</mrow>
+				</md>
+				Similarly, <m> d = 7.07\text{ m}</m>. 
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				Since, vectors to be multiplied are given in the component forms, we use the definition of the scalar product based on the components.
+					<md>
+					<mrow> \vec F \cdot \vec d \amp =  F_x d_x + F_y d_y + F_z d_z</mrow>
+					<mrow>   \amp =  (3 \text{ N})\times(-4 \text{ m}) 
+									+ (4 \text{ N})\times(5 \text{ m})
+									+ (-5 \text{ N})\times(3 \text{ m}) = - 7 \text{ N.m}.</mrow>
+				</md>			
+			</p>
+		</solution>
+		<solution><title>c</title>
+			<p> 
+				Since two definitions of scalar product would give the same value and one of them has the angle <m> \theta </m> we seek. Therefore, we solve for <m> \theta </m> to get
+				<me> \cos\theta = \dfrac{\vec F \cdot \vec d}{ F \, d}.</me>
+				Now, using the numerical values, we find that
+				<me> \cos\theta = \dfrac{- 7 \text{ N.m}}{ 7.07\text{ N} \times 7.07\text{ m}} = -0.14. </me>
+				Inverting this we get 
+				<me> \theta = 1.71 \text{ rad or } 98^{\circ}.</me>
+
+			</p>
+		</solution>			
+
+	</example>
+
+
+
+</introduction>
+
+<exercises>
+
+	<exercise xml:id="scalar-product-calculating-scalar-products-a-e"><title>Calculating Scalar Products</title>
+		<statement>
+			<p>
+				Calculate the scalar product between the following pairs of vectors: 
+				<ol marker="(a)">
+					<li>
+						<m>(10\ \textrm{N})\ \hat u_x</m> + <m>(-5\ \textrm{N})\ \hat u_y</m> and <m>(3\ \textrm{m})\ \hat u_x</m> + <m>(4\ \textrm{m})\ \hat u_y</m>, 
+					</li>
+					<li>
+						<m>(40\ \textrm{N})\ \hat u_x</m> + <m>(-10\ \textrm{N})\ \hat u_y</m> and <m>(3\ \textrm{m})\ \hat u_x</m> + <m>(4\ \textrm{m})\ \hat u_z</m>,
+					</li>
+					<li>
+						<m>(100\ \textrm{N})\ \hat u_x</m> + <m>(-10\ \textrm{N})\ \hat u_y</m> and <m>(30\ \textrm{m})\ \hat u_y</m> + <m>(4\ \textrm{m})\ \hat u_z</m>,
+					</li>
+					<li>
+						<m>(2\ \textrm{N})\ \hat u_x</m> + <m>(3\ \textrm{N})\ \hat u_y + (4\ N)\ \hat u_z</m> and <m>(4\ \textrm{m/s})\ \hat u_x</m> + <m>(3\ \textrm{m/s})\ \hat u_y</m> + <m>(2\ \textrm{m/s})\ \hat u_z</m>,
+					</li>
+					<li>
+						<m>(100\ \textrm{N})\ \hat u_x</m> + <m>(-10\ \textrm{N})\ \hat u_y</m> + <m>(100\ N)\ \hat u_z</m> and <m>(30\ \textrm{m/s})\ \hat u_y</m> + <m>(4\ \textrm{m/s})\ \hat u_z</m>.
+					</li>
+				</ol>
+ 
+			</p>
+		</statement>
+		<answer><p>See solution.</p> </answer>
+		<solution>
+			<p>
+				These exercises are straightforward applications of  the following formula for the scalar product: <m>\vec A\cdot \vec B = A_x B_x +  A_y B_y + A_z B_z</m>.
+			</p>
+			<p>
+				(a) <m>\vec A\cdot \vec B = (10\ \textrm{N})(3\ \textrm{m}) + (-5\ \textrm{N})(4\ \textrm{m}) = -7 \ \textrm{N.m}</m>
+			</p>
+			<p>
+				(b) <m>\vec A\cdot \vec B = (40\ \textrm{N})(3\ \textrm{m}) + 0 + 0 = 120\ \textrm{N.m}</m>
+			</p>
+			<p>
+				(c) <m>\vec A\cdot \vec B = (-10\ \textrm{N})(30\ \textrm{m}) + 0 + 0 = -300\ \textrm{N.m}</m>
+			</p>
+			<p>
+				(d) 25 N.m/s.
+			</p>
+			<p>
+				(e) 100 N.m/s.
+			</p>
+
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="scalar-product-Angles-Between-Pairs-of-Vectors"><title>Angles Between Pairs of Vectors</title>
+ 		<statement>
+ 			<p>
+ 				Find the angle between each pair of vectors given in <xref ref="scalar-product-calculating-scalar-products-a-e"/>.
+ 			</p>
+ 		</statement>
+ 		<solution>
+ 			<p>
+ 				The scalar product is also equal to the product of the magnitudes of the two vectors times the cosine of the angle between the two.  Therefore, the angle <m>\theta</m> between two vectors <m>\vec A</m>  and <m>\vec B</m> can be obtained from the scalar product and the magnitudes of the two vectors by the following formula.
+ 				<me>
+ 					\cos\theta = \frac{\vec A\cdot \vec B}{|\vec A||\vec B|}.
+ 				</me>
+ 			</p>
+ 			<p>
+ 				(a) Here <m>|\vec A|</m> = <m>\sqrt{(10\ \textrm{N})^2 + (-5\ \textrm{N})^2 }</m> = <m>11.2\ \textrm{N}</m>, and <m>|\vec B|</m> = <m>\sqrt{(3\ \textrm{m})^2 + (4\ \textrm{m})^2 }</m> = <m>5\ \textrm{m}</m>. We have already found that <m>\vec A\cdot \vec B = -7 \ \textrm{N.m}</m>.  Therefore,
+ 				<me>
+ 					\cos\theta = \frac{-7 \ \textrm{N.m}}{11.2\ \textrm{N}. |5\ \textrm{m}} = -0.125.
+ 				</me>
+ 				This gives the angle to be <m>\theta = 97^{\circ}</m>.
+ 			</p>
+ 			<p>
+ 				(b) Similarly,
+ 				<me>
+ 					\cos\theta = \frac{120}{\sqrt{40^2 + 10^2}\sqrt{3^2+4^2}} = \frac{120}{41.2} = 0.58,
+ 				</me>
+ 				which gives <m>\theta = 54^{\circ}</m>.
+ 			</p>
+ 			<p>
+ 				(c) <m>\theta = 96^{\circ}</m>.
+ 			</p>
+ 			<p>
+ 				(d) <m>\theta = 31^{\circ}</m>.
+ 			</p>
+ 			<p>
+ 				(e)  <m>\theta = 89^{\circ}</m>.
+ 			</p>
+ 		</solution>
+ 	</exercise>
+
+
+	<exercise xml:id="Vectors-Whose-Dot-Pruduct-is-Zero"><title> Vectors Whose Dot Product is Zero </title>
+		<statement>
+			<p>
+				When will the dot product between two non-zero vectors be zero? 
+			</p>
+
+		</statement>
+		<hint> <p>  Think about directions. </p> </hint>
+		<answer> <p>  Dot product is zero when vectors are perpendicular to each other, i.e., <m> \theta = 90^{\circ}</m>. </p> </answer>
+		<solution> 
+			<p> Let <m> A </m> and <m> B </m> be the magnitudes of the vectors and <m> \theta </m> be the angle between them. Then, we want 
+				<me>
+					A\, B\, \cos\,\theta = 0 \text{ when } A\ne 0 \text{ and } B\ne 0.
+				</me>
+				That means,
+				<me>
+					\cos\, \theta = 0.
+				</me>
+				Since, <m> \theta</m> can be at most <m> 180^{\circ}</m>, there is only one value at which <m> \cos\, \theta = 0</m>. That is, when
+				<me>
+					\theta = 90^{\circ}.
+				</me> 
+				That is, the dot product is zero when the two vector are perpendicular.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="exer-Unit-Vectors-Perpendicular-to-a-Given-Vector"><title>Unit Vectors in the Direction of Perpendicular to a Given Vector</title>
+		<statement>
+			<p>
+				Find a unit vector in the <m>xy</m>-plane perpendicular to <m>a\hat u_x + b\hat u_y</m> with both <m>a</m> and <m>b</m> not zero.
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Let  vector <m>c\hat u_x + d\hat u_y</m> with <m>c</m> and <m>d</m> unknown but both <m>c</m> and <m>d</m> not zero be a vector that is perendicular to the given vector.  The condition that must be satisfied is that its dot product with the given vector must be zero and that neither of the vectors are null vectors. This gives the following conditions for 
+				<me>
+					a c + b d = 0.
+				</me>
+				Now, if  <m>b</m>   is not zero, then
+				<me>
+					d = - \frac{a}{b} c,
+				</me>
+				There are infinite number of choices here.  We need only two. Let us pick <m>c= \pm b</m> to cancel the denominator and make it simpler expression. Then, we get <m>d = \mp a</m>.  This says that <m>b\hat u_x - a\hat u_y</m> and <m>-b\hat u_x + a\hat u_y</m> will be perpendicular to <m>a\hat u_x + b\hat u_y</m>.  To get unit vectors in these directions, we just divide these by their magnitude.
+				<md>
+					<mrow>\amp \hat u_1 = \frac{b\hat u_x - a\hat u_y}{\sqrt{a^2 + b^2}},</mrow>
+					<mrow>\amp \hat u_1 = \frac{-b\hat u_x + a\hat u_y}{\sqrt{a^2 + b^2}}.</mrow>
+				</md>
+				Either of these unit vectors will be correct answer for this question. These vectors are of course just pointing away in the opposite directions from each other.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="More-Practice-on-Dot-Product"><title> More Practice on Dot Product </title>
+		<statement>
+			<p>
+				Find the dot products: 
+			</p>
+			<p> 
+				(a) between <m> \vec A = </m> ( <m> 30 </m> m/s, due East) and <m> \vec B = </m> ( <m> 40 </m> m/s, due <m> 60^{\circ}</m> North of  East), 
+			</p>
+			<p>
+				(b) between <m> \vec F = </m> ( <m> 100 </m> N, due East) and <m> \vec d = </m> ( <m> 40 </m> m, due <m> 120^{\circ}</m> Counterclockwise from East, i.e., towards North and <m> 30^{\circ} </m> past North).
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m> A B \cos\, \theta </m> </p> </hint>
+		<answer> <p>  (a) <m> 600\text{ m}^2/\text{s}^2</m>, (b) <m>- 2000\text{ N.m}</m>. </p> </answer>
+		<solution> <title> (a) </title>
+			<p> (a)
+				Here we know the magnitudes and the angle between the two vectors. Therefore, we use the dot product formula based on these quantities.
+				<md>
+					<mrow> \vec A\cdot \vec B \amp = A B \cos\, \theta </mrow> 
+					<mrow>  				  \amp = 30\text{ m/s } \times 40\text{ m/s } \times \cos\, 60^{\circ}, </mrow> 
+					<mrow>  				  \amp =  600\text{ m}^2/\text{s}^2. </mrow> 
+				</md>
+			</p>
+		</solution>
+		<solution> <title> (b)</title>
+			<p> (b)
+				Here we know the magnitudes and the angle between the two vectors. Therefore, we use the dot product formula based on these quantities.
+				<md>
+					<mrow> \vec F\cdot \vec d \amp = F d \cos\, \theta</mrow> 
+					<mrow>  				  \amp = 100\text{ N } \times 40\text{ m } \times \cos\, 120^{\circ}, </mrow> 
+					<mrow>  				  \amp =  - 2000\text{ N.m}. </mrow> 
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+</exercises>
+
+</section>

@@ -1,0 +1,417 @@
+<section xml:id="Coulombs-Force"><title> Coulomb's Force </title>
+
+
+	<introduction>
+ 
+		<p>
+			The French physicist <term> Charles Coulomb</term> studied electric force between charges extensively in 1780s using a torsion balance apparatus shown in <xref ref="fig-coulomb-torsion-balance"/>. Coulomb's torsion balance worked by charging two light-weight balls, one of which was fixed and the other attached to the end of a needle which was hung using a silver wire or hair to a torsion micrometer. 
+		</p>
+ 
+	 	<p>
+	 		The torque on the balls was proportional to the angle of twist, which could be measured accurately. This allowed Coulomb to experiment the dependence of force on charge on each ball and on their separation.
+		</p>
+
+		<figure xml:id="fig-coulomb-torsion-balance">
+			<caption>
+				Coulomb's torsion balance apparatus. A pith ball with charge is hung from a fine wire which can rotate when electric force from the charge on the fixed pith ball.
+			</caption>
+			<sidebyside widths="25% 15% 50% 10%">
+				<image source="./images/coulombs-law/coulomb-torsion-balance.png" width="30%"/> 
+				<p></p>
+				<image source="./images/coulombs-law/coulomb-original-torsion-balance-public-domain.png" width="30%"/>
+				<p></p>
+			</sidebyside>
+
+		</figure>
+
+		<p>
+			Coulomb found that <em> electric force is proportional to the magnitudes of each charge, and inversely proportional to the square of the distance between them</em>.  
+			To honor Coulomb for his contribution to our understanding of electricity, electric force is also called <term>Coulomb force</term> and the unit of charge is called Coulomb. In the following we will study this force mathematically. 
+		</p> 
+		<p> 
+			It is interesting to note that Henry Cavendish also discovered the inverse square dependence of the electrostatic forces prior to Coulomb, but he did not publish his findings and his discovery was not known until James Clerk Maxwell publicized it in 1879.  Other people who had known or suspected similarities with the Gravitational force included Benjamin Franklin and Joseph Priestly, whose work was the basis for Coulomb's experiments.
+		</p>
+	</introduction>
+
+	<subsection><title> Coulomb's Law</title>
+		<p>
+			Electric force  <m>\vec F_e</m>  between two charges <m>q_1</m> and <m>q_2</m> separated by a distance <m>r</m> has the following magnitude and direction.
+			<md>
+				<mrow> \amp \text{Magnitude:}\ \ F_e\propto \frac{|q_1| |q_2|}{r^2}. </mrow>
+				<mrow> \amp \text{Direction: use the rule: like charges repel, opposite charges attract.}</mrow>
+
+			</md>
+			The direction of the force on any one of the charges depends on the type of the two charges and the charge on which the force acts as shown in <xref ref="fig-forces-on-two-charges"/>.
+		</p>
+		<figure xml:id="fig-forces-on-two-charges">
+			<caption>
+				Direction of Coulomb forces on a charge by another charge depends upon whether the two charges are of the same type or of different types. Coulomb force on charge <m>q_2</m> by charge <m>q_1</m> are shown for four different cases depending upon the type of charges <m>q_1</m> and <m>q_2</m>.  Note the direction of the force depends on the relative type of each charge: (a) both positive, (b) <m>q_1</m> positive, <m>q_2</m> negative, (c) both negative and (d) <m>q_1</m> negative, <m>q_2</m> positive. For concreteness, this figure shows only force on <m>q_2</m>; there is also an equal magnitude force in opposite direction on <m>q_1</m> for each case.
+			</caption>
+
+			<image source="./images/coulombs-law/forces-on-two-charges-2.png" width="70%"/> 
+		</figure>
+
+ 
+		<p>
+
+			Note that the magnitude of the force is always positive regardless of the charges involved.  That is why I have placed an absolute sign <m>||</m> around the symbols for charges. The magnitude of electric force <m>\vec F_e</m>  can be written as an equality by introducing a proportionality constant <m>k</m> independent of <m>q_1</m>, <m>q_2</m>, or <m>r</m>.
+			<men>
+				 F_e = k \frac{|q_1| |q_2|}{r^2}.
+			</men>
+			The value of constant <m>k</m> depends on the units in which <m>F_e</m>, <m>q_1</m>, <m>q_2</m>, and <m>r</m> are expressed.  For instance, in the SI family of units, where force is expressed in Newton (<m>\text{N}</m>), charge in Coulomb (<m>\text{C}</m>) and distance in meter (<m>\text{m}</m>), the approximate value of <m>k</m> is:
+			<me>
+				k \approx 9\times 10^9\frac{\text{N.m}^2}{\text{C}^2}
+			</me>
+			Often one expresses <m>k</m> in terms of another constant, denoted by symbol  <m>\epsilon_0</m> (read as epsilon zero), called the  <term> permittivity of vacuum</term> or <term>permittivity of free space</term> by the following relation.
+			<me>
+				k \equiv \frac{1}{4\pi\epsilon_0}.
+			</me>
+			The value of <m>\epsilon_0</m> is then approximately given by
+			<me>
+				\epsilon_0 \approx 8.843 \times 10^{-12} \frac{\text{C}^2}{\text{N.m}^2}.
+			</me>
+			There is another unit in common use, called the Gaussian-cgs system. In this unit <m>F</m> is in units of <m>\text{dyne}</m>, which is <m>10^{-5}\text{N}</m>, <m>r</m> in <m>\text{cm}</m>, and <m>q</m> in <m>\text{statcoulomb}</m>. Then, <m>k = 1</m>, and Coulomb's law takes a simple form.
+			<me>
+				F = \dfrac{q_1 q_1}{r^2},\ \ \text{(Gaussian-cgs units.)}
+			</me> 
+			For the sake of consistency with other introductory books, we will use the SI units only. You will find Gaussian-cgs units in older books and may be in some lab manuals. 
+		</p>
+		<p>
+			Often, we need to work out components of Coulomb force from the magnitude and positions of the two charges. I will just write it here for your reference and to emphasize the vector aspect of the force. Let <m>F</m> be the magnitude (positive), and <m>
+			(x_1, y_1, z_1)</m> and <m>(x_2, y_2, z_2)</m> be the positions of charges <m>q_1</m> and <m>q_2</m>, respectively. The the Cartesian components of the <alert>force on <m>q_2</m></alert> will be
+			<mdn>
+				<mrow> F_{\text{on 2},x} \amp = F\times \dfrac{x_2-x_1}{r_{12}}\times (\text{ sign of }q_1) \times (\text{ sign of }q_2),</mrow>
+				<mrow> F_{\text{on 2},y} \amp = F\times \dfrac{y_2-y_1}{r_{12}}\times (\text{ sign of }q_1) \times (\text{ sign of }q_2),</mrow>
+				<mrow> F_{\text{on 2},z} \amp = F\times \dfrac{z_2-z_1}{r_{12}}\times (\text{ sign of }q_1) \times (\text{ sign of }q_2),</mrow>
+			</mdn>
+			where <m>r_{12}</m> is the direct distance between the two charges,
+			<men>
+				r_{12} = \sqrt{ \left(x_1-x_2\right)^2 + \left(y_1-y_2\right)^2 +\left(z_1-z_2\right)^2 }.
+			</men>
+		</p>
+	</subsection>
+
+	<subsection><title> Coulomb's Force in Vector Form</title>
+
+		<p>
+			We can write Coulomb's law in a vector form by introducing a unit vector to represent the direction, and then multiplying the magnitude of the force by the unit vector.
+		</p>
+<!-- 		<p>
+			For instance,  the directions of the Coulomb forces on <m>q_1</m> by <m>q_2</m> and <m>q_2</m>  by <m>q_1</m> depend on the relative nature of the two charges as shown in the <xref ref="fig-forces-on-two-charges"/>, although the magnitudes of the forces do not depend on the nature of the charges, only their amounts.
+		</p>  -->
+		<p> 
+			We will like to write one formula that captures all four cases shown in  <xref ref="fig-forces-on-two-charges"/>: both  <m>q_1</m> and <m>q_2</m> positive, both  <m>q_1</m> and <m>q_2</m> negative, <m>q_1</m> positive but <m>q_2</m> negative, and <m>q_1</m> negative  but <m>q_2</m> positive.  To illustrate the analytic way of writing these forces, I will illustrate here the force on <m>q_2</m> which I will denote by <m>\vec F_\text{on 2}^\text{by 1}</m>, or by <m>\vec F_2</m> for brevity. 
+		</p>
+		<sidebyside widths="60% 5% 30% 5%">
+			<p>
+				To do that we define  a unit vector in the direction from <m>q_1</m> to <m>q_2</m> by  <m>\hat u_{1\rightarrow 2}</m> and the direct distance between the two charges by <m>r_{12}</m> as in the figure to the right.  With this notation, all four cases of force on charge <m>q_2</m> can be stated by a single equation:
+			</p>
+			<p>
+			</p>
+			<image source="./images/coulombs-law/unit-vector-12.png" width="20%"/>
+			<p> </p>
+		</sidebyside>
+
+		<p>
+			The force on <m>q_2</m>  by <m>q_1</m> be 
+			<men>
+				\vec F_\text{on 2}^\text{by 1} = \frac{1}{4\pi\epsilon_0}\frac{q_1 q_2}{r_{12}^2}\ \hat u_{1\rightarrow 2},
+			</men>
+			where we use a positive number for a positive charge and a negative number for a negative charge in order for the direction of the force to come out right.  To write the force on <m>q_1</m> by <m>q_2</m> all you have to do in replace the unit vector by <m>\hat u_{2\rightarrow 1}</m>, the vector from 2-to-1, which is negative of the unit vector <m>\hat u_{1\rightarrow 2}</m>, i.e., <m>\hat u_{2\rightarrow 1} = - \hat u_{1\rightarrow 2}</m>
+			<men>
+				\vec F_\text{on 1}^\text{by 2} = \frac{1}{4\pi\epsilon_0}\frac{q_1 q_2}{r_{12}^2}\hat u_{2\rightarrow 1} = - \frac{1}{4\pi\epsilon_0}\frac{q_1 q_2}{r_{12}^2}\hat u_{1\rightarrow 2}.
+			</men>
+			You can write unit vector <m>\hat u_{1\rightarrow 2}</m> in terms of the Cartesian coordinate unit vectors <m>\hat u_x</m>, <m>\hat u_y</m>, and <m>\hat u_z</m>, which you may have seen as <m>\hat i</m>, <m>\hat j</m>, and <m>\hat k</m>, respectively. Let <m>\vec r_1</m> and <m>\vec r_2</m> be the position vectors of <m>q_1</m> and <m>q_2</m> respectively. Then, from the triangle of vectors in <xref ref="fig-coulombs-law-unit-vector"/>, we can write the displacement vector from <m>q_1</m> to <m>q_2</m>, denoted by <m>\vec r_{12}</m> in terms of the position vectors as
+			<me>
+				\vec r_{12} = \vec r_2 - \vec r_1.
+			</me>
+			<figure xml:id="fig-coulombs-law-unit-vector">
+				<caption>
+					 Position, displacement, and unit vectors for Coulomb's law.
+				</caption>
+
+				<image source="./images/coulombs-law/coulombs-law-unit-vector.png" width="70%"/> 
+			</figure>
+
+			Now, the position vectors can be simply written using the coordinates of the particles. This gives the following for the displacement vector.
+			<me>
+				\vec r_{12} = (x_2-x_1)\,\hat u_x + (y_2-y_1)\,\hat u_y + (z_2-z_1)\,\hat u_z.
+			</me>
+			Unit vector in this direction, <m>\hat u_{1\rightarrow 2}</m>, is just this vector divided by its magnitude.
+			<men>
+				\hat u_{1\rightarrow 2} = \dfrac{ (x_2-x_1)\,\hat u_x + (y_2-y_1)\,\hat u_y + (z_2-z_1)\,\hat u_z}{ \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2 } }.
+			</men> 
+			 
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Electric-Force-Between-an-Electron-and-a-Proton"><title> Electric Force Between an Electron and a Proton </title>
+		<statement>
+			<p>
+				An electron an proton are separated by a distance of one Bohr radius, which is <m> 5.3 \times 10^{−11}\text{ m}</m>. 
+			</p>
+			<p>
+				(a) What is the magnitude of the electric force between them?
+			</p>
+			<p>
+				(b) What are the magnitudes of accelerations of electron and proton?
+			</p>
+			<p>
+				Data: <m> e = 1.60 \times 10^{-19}\text{ C}</m>,  <m>m_e = 9.11 \times 10^{-31}\text{ kg}</m>,  <m>m_p =  1.67 \times 10^{-27}\text{ kg}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> (a) Strip the sign from the charge since magnitude. (b) Use <m>F/m</m>. </p> </hint>
+		<answer> <p> (a) <m>8.2 \times 10^{-8}\text{ N}</m>.  (b) <m>9.0 \times 10^{22}\text{ m/s}^2</m>, <m>4.91 \times 10^{19}\text{ m/s}^2</m>. </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				We will use the formula for the magnitude of the Coulomb force. Note that we strip the sign when we just need the magnitude.
+				<md>
+					<mrow> F_e \amp = k \dfrac{q_1 q_2}{r^2}</mrow>
+					<mrow> \amp = 9 \times 10^9 \dfrac{1.60 \times 10^{-19} \times 1.60 \times 10^{-19}}{(5.3 \times 10^{−11})^2}</mrow>
+					<mrow> \amp = 8.2 \times 10^{-8}\text{ N}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				Dividing force by their masses will give us the magnitude of their accelerations.
+
+				<md>
+					<mrow>a_e \amp = \frac{8.2 \times 10^{-8}\text{ N}}{9.11 \times 10^{-31}\text{ kg}} = 9.0 \times 10^{22}\text{ m/s}^2.</mrow>
+					<mrow>a_p \amp = \frac{8.2 \times 10^{-8}\text{ N}}{1.67 \times 10^{-27}\text{ kg} } = 4.91 \times 10^{19}\text{ m/s}^2. </mrow>
+				</md>
+
+
+			</p>
+		</solution>
+
+
+	</exercise>
+
+	<exercise xml:id="ex-Distance-Between-Charges-From-Force-Between-Them"><title> Distance Between Charges From Force Between Them </title>
+		<statement>
+			<p>
+				Two point particles with charges <m>+2\ \mu\text{C}</m> and <m>+5\ \mu\text{C}</m> are held in place by a <m>3\text{ N}</m> forces on each charge pushing each towards the other. Find the distance between the charges. 
+			</p>
+		<figure xml:id="fig-ex-Distance-Between-Charges-From-Force-Between-Them">
+			<caption>
+				 Figure for <xref ref="ex-Distance-Between-Charges-From-Force-Between-Them"/>.
+			</caption>
+
+			<image source="./images/coulombs-law/ex-Distance-Between-Charges-From-Force-Between-Them.png" width="70%"/> 
+		</figure>			
+
+		</statement>
+		<hint> <p> Balance force on one of the charges and solve for <m>r</m>.  </p> </hint>
+		<answer> <p> <m> 17.3 \text{ cm}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Balancing the forces on one of the particles tells us that the magnitude of the electric force between the two charges is also <m>3\text{ N}</m>. Let us denote by <m>F</m>.
+				<me>
+					k\frac{|q_1| |q_2|}{r^2} = F.
+				</me>
+				Solving for <m>r^2</m> we get
+				<me>
+					r^2 = k\frac{|q_1| |q_2|}{F}.
+				</me>
+				Putting in the numbers we get
+				<md>
+					<mrow> r^2 \amp =  9\times 10^9 \ \text{N.m}^2/\text{C}^2 \times \frac{2\times 10^{-6}\ \text{C} \times 5\times 10^{-6}\ \text{C} }{3\ \text{N}}</mrow>
+					<mrow> \amp = 0.03 \ \text{m}^2.</mrow>
+				</md>
+				This gives <m> r =  0.173\text{ m} = 17.3 \text{ cm}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Balancing-Electric-Forces-Along-a-Line-on-a-Charge"><title> Balancing Electric Forces Along a Line on a Charge </title>
+		<statement>
+			<p>
+				Two charges of magnitudes <m> q_1 = + 5\ \mu\text{C}</m> and <m> q_2 = + 8\ \mu\text{C}</m> are kept separated by a distance of <m>25\text{ cm}</m>.  When a third charge <m>q_3= +10\ \mu\text{C}</m> is brought at a particular point on the line joining the first two charges, the third charge does not experience any force on it. 
+			</p>
+
+		<figure xml:id="fig-ex-Balancing-Electric-Forces-Along-a-Line-on-a-Charge">
+			<caption>
+				 Figure for <xref ref="ex-Balancing-Electric-Forces-Along-a-Line-on-a-Charge"/>.
+			</caption>
+
+			<image source="./images/coulombs-law/ex-Balancing-Electric-Forces-Along-a-Line-on-a-Charge.png" width="70%"/> 
+		</figure>	
+
+
+			<p>
+				(a) Find the distance from <m>q_1</m> of this special point between the two charges. 
+			</p>
+			<p>
+				(b) Will the location of these special points change if we double <m>q_3</m> to <m> +20\ \mu\text{C}</m>?
+			</p>
+			<p>
+				(c) What are the magnitudes of forces <m>F_1</m> and <m>F_2</m> when <m>q_3 = +10\ \mu\text{C}</m> is at that special location between them?
+			</p>
+
+		</statement>
+		<hint> <p> (a) Balance two forces on <m>q_3</m>. (b) Think, what happened in your calculation? (c) Balance forces on <m>q_1</m> to get <m>F_1</m>. </p> </hint>
+		<answer> <p>  (a)  <m>11\text{ cm}</m>,  (b) No, (c) <m>43.0\text{ N},\ 42.5\text{ N}</m>. </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a)  
+				Clearly, the forces on <m>q_3</m> will be balanced at the special point. Let that point be <m>x</m> away from <m>q_1</m> towards <m>q_2</m>. Balancing the force on <m>q_3</m> we get the following equation.
+				<me>
+					k \dfrac{ q_1 \, q_3 }{ x^2} = k \dfrac{ q_2 \, q_3 }{ (0.25 - x)^2}.
+				</me>
+				Canceling the common factors and rearranging terms we get
+				<me>
+					5(0.25 - x)^2 = 8x^2.
+				</me>
+				Expanding and rearranging we get
+				<me>
+					3 x^2 + 2.5 x - 0.3125 = 0.
+				</me>
+				Solving this equation gives us two values of <m>x</m>.
+				<me>
+					x = \dfrac{1}{12}\left(-5 \pm 2\sqrt{10} \right) = -0.944,\ 0.11.
+				</me>
+				The first root is not a point between charges <m>q_1</m> and <m>q_2</m>. therefore, we will just reject it and use the second root. 
+				That is, the special point is <m>11\text{ cm}</m> from <m>q_1</m>.
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				(b) 
+				No, since <m>q_3</m> cancels out, the cancellation will occur at the special point for all values of <m>q_3</m>.
+			</p>
+		</solution>
+
+		<solution> <title> (c) </title>
+			<p>
+				(c) 
+				We note that at the instant in question, force <m>F_1</m> must balance the net electric forces on <m>q_1</m> by <m>q_2</m> and <m>q_3</m>. This will give
+				<md>
+					<mrow> F_1 \amp = k |q_1| \left[ \frac{|q_2|}{r_{12}^2} + \frac{|q_3|}{r_{13}^2} \right]</mrow>
+					<mrow> \amp = 9\times 10^9 \times 5\times 10^{-6} \left[ \frac{8\times 10^{-6}}{0.25^2} + \frac{10\times 10^{-6}}{0.11^2} \right]  = 43.0\text{ N}. </mrow>
+				</md>
+				Similarly, we get
+				<md>
+					<mrow> F_2 \amp = k |q_2| \left[ \frac{|q_1|}{r_{21}^2} + \frac{|q_3|}{r_{23}^2} \right]</mrow>
+					<mrow> \amp = 9\times 10^9 \times 8\times 10^{-6} \left[ \frac{5\times 10^{-6}}{0.25^2} + \frac{10\times 10^{-6}}{(0.25-0.11)^2} \right]  =  42.5\text{ N}. </mrow>
+				</md>				
+			</p>
+		</solution>		
+
+
+
+	</exercise>
+
+	<exercise xml:id="ex-Static-Equilibrium-of-Electric-Force-with-Gravity-and-Tension-Forces"><title> Static Equilibrium of Electric Force with Gravity and Tension Forces </title>
+		<statement>
+			<p>
+				Two Styrofoam balls of equal diameter are painted with a silver paint.  An unknown amount of charge is put on one of them and then the other ball is brought in contact with it.  As a result, an equal amount of charge is distributed on each ball.  
+			</p>
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					When the balls are hung by using a 1-meter long cotton thread each from the same point, they repel each other and come to rest with 60 degrees angle between them.  If the masses of the balls are 10 grams each, what is the amount of charge on each ball?
+				</p>
+				<p>
+				</p>
+				<image source="./images/coulombs-law/example-static-equilib-statement.png" width="30%"/>
+			</sidebyside>
+
+
+		</statement>
+		<hint> <p>  Balance the forces on one of the charges. It will be a two-dimensional case. So, use components when working with vector equations.</p> </hint>
+		<answer> <p> Either <m>+2.5\ \mu\text{C}</m> or <m>-2.5\ \mu\text{C}</m>  </p> </answer>
+		<solution> 
+			<p>
+				Since the acceleration of each ball is zero, net force on each ball would also be zero.   To obtain relations among the forces we will identify all the forces on one of the balls, say #2 in <xref ref="fig-example-static-equilib"/>, and then set their vector sum to zero.
+			</p>
+
+			<figure xml:id="fig-example-static-equilib">
+				<image source="./images/coulombs-law/example-static-equilib.png" width="50%"/>
+				<caption>
+					Forces on one of the charged balls are  tension <m>T</m>,  weight <m>W=mg</m>, and Coulomb <m>F_e</m>.
+				</caption>
+			</figure>
+			<p>
+				Let <m>F_e</m>, <m>T</m>, and <m>W</m> denote the magnitudes of the Coulomb force, the tension in the string, and the weight of the ball, respectively.  Then, from the free-body diagram shown in  <xref ref="fig-example-static-equilib"/>, we obtain the following components of the equation <m>\vec F_\text{net}=0</m>. 
+			</p>
+
+			<p>
+				Balancing the horizontal and vertical components of forces gives the following two equation.
+				<md>
+					<mrow> \amp F_e - T\, \sin(\theta/2)   = 0 </mrow>
+					<mrow> \amp  T\, \cos(\theta/2)   - W = 0</mrow>
+				</md>
+				Therefore, the Coulomb force must have the following magnitude.
+				<me>
+					F_e = W\,\tan(\theta/2).
+				</me>
+				This must equal the magnitude of this force from Coulomb's law. Since the balls have the same amount of charge, say <m>q</m>, we get
+				<me>
+					k \dfrac{q^2}{\left(2 L\,\sin(\theta/2) \right)^2  } = W\,\tan(\theta/2).
+				</me>
+				Solving for <m>q</m> we have
+				<me>
+					q = \pm \left(2 L \sin(\theta/2) \right)\sqrt{(W/k)\tan(\theta/2)}.
+				</me>
+
+
+			</p>
+			<p>
+				Now, we put in the numbers <m>L=1\text{ m}</m>, <m>\theta = 60^{\circ}</m>, <m>W = 0.01\times9.8\text{ N}</m>, <m>k = 9.0 \times 10^9 \text{N.m}^2/\text{C}^2</m> to obtain the numerical value of the charge <m>q</m>.
+				<me>
+					q = \pm  2.5 \times 10^{-6}\ \text{C} = \pm 2.5\ \mu\text{C}.
+				</me>
+				Since the two balls repel each other, the charges on the two are of the same type, either both are positive or both negative.  They are both either <m>+2.5\ \mu\text{C}</m> or <m>-2.5\ \mu\text{C}</m>.  However, based on the data given, we cannot determine which is the case here. If we knew the type for one of the charges, we would have immediately known the type for the other. 
+			</p>
+
+ 
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-What-will-happen-if-proton-q-neq-e"><title> Force Between Two Copper Spheres If Electron Charge Not Equal To Proton Charge </title>
+		<statement>
+			<p>
+				Two copper spheres of radius <m>2\text{ cm}</m> are held <m>1\text{ m}</m> apart. If proton's charge were to be <m>1\%</m> greater than an electron's charge in magnitude, what will be the magnitude of force between the two spheres?  Cu: density = <m>8.92\text{ g/cc}</m>, atomic number = <m>29</m>, atomic weight = <m>63.54</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Each sphere will have net positive charge. </p> </hint>
+		<answer> <p>  <m>1.5\times 10^{20}\ \textrm{N}</m>. </p> </answer>
+		<solution> 
+			<p>
+				Let <m>N</m> denote the number of atoms in one sphere.  Then each sphere has <m>29\times N</m> electrons and <m>29 \times N</m> protons. With <m>-e</m> denoting the charge on one electron we find that the net charge on each sphere will be
+				<me>
+					q = 0.01 \times 29\times  N \times e. 
+				</me>
+				With <m>r = 1</m> m the force between the spheres will be
+				<me>
+					F_e = k \frac{q^2}{r^2}.
+				</me>
+				Now we work out the numerical values.  First we find the value of <m>N</m>.  We recall from Chemistry that there are an Avogadro number <m>N_A =6.022 \times 10^{23}</m> atoms in one mole and that the atomic weight <m>M_A</m> refers to the mass of one mole in grams. Therefore, if we know the mass <m>M</m> of the sphere we will be able to find the number of atoms. The mass can be computed from the volume <m>V</m> and density <m>\rho</m>.
+				<me>
+					M = \rho V =\rho \times \frac{4}{3} \pi R^3, 
+				</me>
+				where <m>R</m> is the radius of the ball.
+				Therefore <m>N</m> is
+				<me>
+					N = \frac{M}{M_A} \times N_A,
+				</me>
+				where both <m>M</m> and <m>M_A</m> are in grams.  Putting these together we find the magnitude of the electric force between the two spheres to be
+				<md>
+					<mrow> F_e \amp = k \frac{q^2}{r^2} =  k \frac{( 0.01 \times 29\times  N \times e)^2}{r^2} </mrow>
+				    <mrow> \amp = k \frac{( 0.01 \times 29 \times e)^2}{r^2}\times \left(\frac{M(\textrm{in gram})}{M_A} \times N_A \right)^2.</mrow>
+				</md>
+				Now putting the numerical values gives <m>1.5\times 10^{20}\ \textrm{N}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+		
+		
+
+</section>

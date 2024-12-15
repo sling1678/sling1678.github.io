@@ -1,0 +1,218 @@
+<section xml:id="sho-Physical-Pendulum"><title> Physical Pendulum </title>
+	<introduction>
+ 
+		<p>
+			A rigid body hung from a post swings just like a pendulum.  Such oscillating bodies are called physical pendulums. We want to find the frequency of small oscillations.
+		</p>
+		<sidebyside widths="65% 10% 25%">
+			<p>
+				<p>
+					Almost anything can be a physical pendulum.  An illustration in shown in the figure.  The torque responsible for the oscillations comes from the force of gravity on the body. To calculate the torque of weight we place the weight vector at the center of mass of the body but for the moment of inertial we use the actual shape of the object. 
+				</p>
+				<p>
+					Let <m> M</m> be the mass of the body swinging about a suspension point. Let <m>D</m> be the distance from the suspension point to the center of mass. Only weight has non-zero lever arm about the axis through the suspension point.
+				</p>
+			</p>
+			<p> </p>
+			<image source="./images/simple-harmonic-motion/fig-phys-pend-1.png"/>
+		</sidebyside>
+		<p>
+			The torque of the weight when the body's CM is at an angle <m>\theta</m> with respect to the vertical.
+			<me>
+				\tau_\text{net} = - M g D \theta,
+			</me>
+			where the negative sign refers to the clockwise sense of rotation. Let <m> I</m> be moment of inertia about the axis and <m>\alpha</m> the angular acceleration. Then, the equation of motion
+			<men>
+				I\alpha = - MgD\theta.
+			</men>
+			Rewriting this as
+			<me>
+				\alpha = - \dfrac{MgD}{I}\,\theta.
+			</me>
+			Comparing this to the equation of motion of a simple harmonic motion, <m>a_x = -\omega^2 x </m>, and of simple pendulum in small angle approximation, <m>\alpha = -\omega^2 \theta</m>, we find that the angular frequency of the physical pendulum is
+			<men>
+				\omega = \sqrt{ \dfrac{MgD}{I} }.  
+			</men>
+			This gives frequency <m>f </m> to be
+			<men>
+				f = \dfrac{\omega}{2\pi} = \dfrac{1}{2\pi}\,\sqrt{ \dfrac{MgD}{I} },
+			</men>
+			and the period <m>T</m>,
+			<men>
+				T = \dfrac{1}{f} =  {2\pi}\,\sqrt{ \dfrac{I}{MgD} }.
+			</men>
+
+		</p>
+
+	</introduction>
+
+	<exercise xml:id="ex-Frequency-of-Oscillation-of-a-Swinging-Rod"><title> Frequency of Oscillation of a Swinging Rod </title>
+		<statement>
+			<sidebyside widths="50% 10% 20% 20%">
+				<p>
+					A rod of mass <m>10\text{ kg}</m> and length <m>1.5\text{ m}</m> is pivoted at one end. What is the frequency (in <m>\text{Hz}</m>) of small oscillations of the rod?
+				</p>
+				<p></p>
+				<image source="./images/simple-harmonic-motion/physical-pendulum-rod.png" width="50%"/>
+				<p></p>
+			</sidebyside>
+			
+		</statement>
+		<hint> <p>  Treat rod as a physical pendulum. </p> </hint>
+		<answer> <p> <m>0.5\text{ Hz}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The moment of inertia of the rod about the pivot point is
+				<me>
+					I = \dfrac{1}{3}ML^2.
+				</me>
+				The distance from pivot to the center of mass of the rod is
+				<me>
+					D = \dfrac{L}{2}.
+				</me>
+				Therefore, frequency of small oscillations will be
+				<md>
+					<mrow> f \amp = \dfrac{1}{2\pi}\,\sqrt{ \dfrac{MgD}{I} } </mrow>
+					<mrow> \amp = \dfrac{1}{2\pi}\,\sqrt{ \dfrac{3g}{2L} } = \dfrac{1}{2\pi}\,\sqrt{ \dfrac{3\times 9.81}{2\times 1.5} } = 0.5\text{ Hz}.</mrow>
+				</md>				
+			</p>
+		</solution>
+	</exercise>	
+
+	<exercise xml:id="ex-Frequency-of-Oscillation-of-a-Swinging-Rod-With-a-Spherical-Ball-at-End"><title> Frequency of Oscillation of a Swinging Rod With a Spherical Ball at End </title>
+		<statement>
+			<sidebyside widths="50% 10% 30% 10%">
+				<p>
+					<p>
+						A physical pendulum has pivot at one of a rod and a spherical ball at the other end. The rod has mass <m>m</m> and length <m>l</m> and ball has mass <m>M</m> and radius <m>R</m>. 
+						Assume the center of the ball to be at a distance <m>l+R</m> from the pivot point. What is the frequency of oscillation?
+					</p>
+					<p>
+						Numerical values: <m>m=10\text{ kg}</m>, <m>l = 1.5\text{ m}</m>, <m>M=20\text{ kg}</m>, <m>R=0.25\text{ m}</m>
+					</p>
+				</p>
+			
+
+				<p></p>
+				<p>
+					<image source="./images/simple-harmonic-motion/physical-pendulum-rod-and-ball.png" width="50%"/>
+				</p>
+				<p></p>
+			</sidebyside>
+
+		</statement>
+		<hint> <p>  Find <m>D</m> from CM formula and <m>I</m> by adding up <m>I</m> of parts. </p> </hint>
+		<answer> <p>  <m>0.40\text{ Hz}</m>. </p> </answer>
+		<solution> 
+			<p>
+				The center of mass of the rod plus ball system will be at distance <m>D</m> from the pivit, given by
+				<me>
+					D = \dfrac{1}{m+M}\left( \dfrac{1}{2}m l  + M(l + R) \right).
+				</me>
+				The moment of inertia of the rod plus ball system about the pivot point is
+				<me>
+					I = \dfrac{1}{3}m l^2 + \left( \dfrac{2}{5} M R^2 + M(l+R)^2 \right).
+				</me>
+				We put these in the formula for frequency to get the answer.
+				<md>
+					<mrow> f \amp = \dfrac{1}{2\pi}\,\sqrt{ \dfrac{(m+M) g D}{I} } </mrow>
+				</md>
+				Numerical values:
+				<md>
+					<mrow> (m+M) D \amp = \left( \dfrac{1}{2}m l  + M(l + R) \right) </mrow>
+					<mrow>   \amp = \dfrac{1}{2}\times 10\times 1.5  + 20(1.5 + .25)=7.5+35=42.5 </mrow>
+					<mrow> I \amp = \dfrac{1}{3}m l ^2 + \left( \dfrac{2}{5} M R^2 + M(l+R)^2 \right) </mrow>
+					<mrow>  \amp = \dfrac{1}{3}\times 10 \times 1.5^2 + \left( \dfrac{2}{5} \times 20\times .25^2 + 20(1.5+.25)^2 \right) </mrow>
+					<mrow>  \amp = 7.5 + \left( 0.5 + 61.25 \right) = 69.25 </mrow>
+				</md>
+				Therefore,
+				<md>
+					<mrow> f \amp = \dfrac{1}{2\pi}\,\sqrt{ \dfrac{42.5\times 9.81}{69.25} } = 0.40\text{ Hz}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+	<exercise xml:id="ex-Katers-Pendulum"><title> Kater's Pendulum</title>
+		<statement>
+			<p>
+				To determine the value of acceleration due to gravity from a physical pendulum one needs to determine the time period and the moment of inertia of the pendulum. However, the moment of inertia is usually difficult to determine experimentally. The Kater's pendulum is a special physical pendulum that removes the necessity of knowing the moment of inertia by using the periods from two suspension points.
+			</p>
+			<sidebyside widths="60% 10% 25% 5%">
+				<p>
+					The  Kater's pendulum  consists of a long metallic rod with a slide-able weight on the rod. The pendulum has two knife edges at two ends that are used to suspend the pendulum from a support with a hole over which the knife edge rests. By adjusting the pivot points and the mass distribution over the rod, it is possible to obtain a configuration such that the time periods of oscillations about the two suspension points <m>O_1</m> and <m>O_2</m> are equal.
+				</p>
+				<p> </p>
+				<image source="./images/simple-harmonic-motion/bc-fig-katers-pendulum.png" width="50%"/>
+				<p> </p>
+			</sidebyside>
+
+			<p>
+				Let <m> k</m> be radius of gyration of the pendulum, <m>l_1</m> and <m>l_2</m> the distances from the center of gravity to the suspensions <m>\text{O}_1</m> and <m>\text{O}_2</m> respectively.  Let <m>T_1</m> and <m>T_2</m> be the time periods of oscillations when Kater's pendulum is hung from knife edges <m>O_1</m> and <m>O_2</m>  respectively.
+			</p>
+			<p>
+				(a) Find the time periods <m> T_1 </m> and <m> T_2</m> in terms of <m>l_1,\ l_2,\ k</m>,  and <m> g </m>.
+			</p>
+			<p>
+				(b) Prove that when the time periods are equal, the period is given by <m> T = 2\pi \sqrt{\frac{L}{g}}</m>, where <m> L=l_1+l_2</m>, the distance between the two knife edges.
+			</p>
+
+
+
+
+		</statement>
+		<hint> <p> (a) Use <m> I_1 = I_\text{cm} + Ml_1^2</m> with <m> I_\text{cm}=Mk^2</m>. (b) Set <m>T_1=T_2</m>, solve for <m>k^2</m>, and use that <m>k^2</m>.  </p> </hint>
+		<answer> <p> (a) <m> T_i = 2\pi\,\sqrt{ \dfrac{k^2 +l_i^2}{gl_i} }</m>, <m> i=1,2</m>, (b) Answer already given. </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a) From the definition of radius of gyration, we have the following for moment of inertia about an axis through the center of mass
+				<me>
+					I_\text{cm} = Mk^2.
+				</me>
+				Using the parallel axis theorem, the moment of inertia from suspension point <m>\text{O}_1</m> will be
+				<me>
+					I_1 = I_\text{cm} + Ml_1^2 = M \left(k^2 +l_1^2\right).
+				</me>
+				Similarly, 
+				<me>
+					I_2 = I_\text{cm} + Ml_2^2 = M \left(k^2 +l_2^2\right).
+				</me>
+				The time period of a physical pendulum is
+				<me>
+					T = 2\pi\,\sqrt{ \dfrac{I}{Mgl} },
+				</me>
+				where <m>l</m> is the distance from suspension to the center of mass. Therefore, the two periods are
+				<md>
+					<mrow> T_1 \amp = 2\pi\,\sqrt{ \dfrac{k^2 +l_1^2}{gl_1} }, </mrow>
+					<mrow> T_2 \amp = 2\pi\,\sqrt{ \dfrac{k^2 +l_2^2}{gl_2} }. </mrow>
+				</md>
+				
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				(b)
+				With <m>T_1=T_2</m> we have <m> T_1^2 = T_2^2</m>. Upon simplifincation we get
+				<me>
+					l_2\left( k^2 + l_1^2\right) = l_1\left( k^2 + l_2^2\right),
+				</me>
+				which can be solved for <m>k^2</m>,
+				<me>
+					k^2 = l_1l_2.
+				</me>
+				Putting this in either <m>T_1</m> or <m>T_2</m> gives
+				<me>
+					T_1 = 2\pi\sqrt{ \dfrac{l_1l_2 + l_1^2}{gl_1} } = 2\pi\sqrt{ \dfrac{l_1  + l_2}{g} } = 2\pi\sqrt{ \dfrac{L}{g} }.
+				</me>
+				We get the same result from <m>T_2</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+ 
+
+</section>

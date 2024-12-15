@@ -1,0 +1,215 @@
+<section xml:id="Faradays-Law"><title> Faraday's Law</title>
+
+	<introduction><title>(Calculus) EMF and Nonconservative Electric Field </title>
+
+		<p>
+			EMF in a circuit is the net work done by the driving force per unit charge in the circuit. The driving force in a circuit must come from electric field since magnetic force on a moving charge  is perpendicular to velocity, and hence, can do no work. 
+		</p>
+		<!-- <p>
+			As you well-know that the work on a charge in an electromagnetic field  is done by the electric force.  Therefore the EMF in a circuit at some instant <m>t</m>, whether produced as a result of <m>\vec v\times \vec B</m> on the moving wires or as due to changing magnetic field <m>d\vec B/dt</m>, shows up as the electric field in the circuit, which does work on the charges and gives them a drift velocity which constitutes the induced current.
+		</p> -->
+		<p>
+			Since electric field is equal to the force per unit charge, the induced  EMF will be equal to the line integral of the electric field around the circuit.  The line integral calculated in the direction of the electric field gives a positive value for the EMF.  The closed line integral is indicated by placing a circle on the symbol of the integral as before.  
+			<men xml:id="eq-induced-emf-from-line-integral">
+				\mathcal{E}_\text{ind} = \oint_\text{closed loop}\vec E_\text{ind}\cdot d\vec l. 
+			</men>
+		</p>
+		<p>
+			In static electricity we had learned that potential difference between two points A and B is also a line integral of electric field, viz.,
+			<me>
+				\phi_B - \phi_A = - \int_A^B\, \vec E_\text{static}.d\vec l.
+			</me>
+			In a closed path, A and B will be same point, so, we would get
+			<men xml:id="eq-static-conservative-field-Kirchoff">
+				\oint_\text{closed path}\, \vec E_\text{static}.d\vec l = 0.
+			</men>
+			That is, <m>\vec E_\text{static}</m> was a conservative field. This equation was the basis of Kirchoff's voltage law (KVL). 
+		</p>
+		<p>
+			But, in the case of dynamical electric field of Eq. <xref ref="eq-induced-emf-from-line-integral"/>, the line integral around a closed path is not zero. We say that dynamically generated electric field is <term>non-conservative field</term>. Let us denote this field by emphasizing it to be dynamic. Thus, we can say that 
+			<men xml:id="eq-dynamic-conservative-field-Kirchoff">
+				\oint_\text{closed path}\, \vec E_\text{dynamic}.d\vec l \ne 0.
+			</men>
+			The non-zero result is the induced EMF in the circuit. <alert> Since dynamic electric field violates Kirkchoff's voltage rule, we cannot use Kirkchoff's voltage rule when we are working with dynamic nonconservative electric field. Instead, we must use Faraday's law as given in <xref ref="subsection-Calculus-Faradays-Law"/> below.</alert>
+		</p>
+		<!-- <p>
+			We can even go further and claim that Eq. <xref ref="eq-induced-emf-from-line-integral"/> <alert> includes </alert> Kirchhoff's voltage rule, Eq. <xref ref="eq-static-conservative-field-Kirchoff"/> since dyamical field is static when it is extremely slowly varying. Therefore, we say that Faraday's law, i.e., Eq. <xref ref="eq-induced-emf-from-line-integral"/>, is more fundamental than Kirchhoff's voltage rule.
+		</p> -->
+
+	</introduction>
+
+	<subsection xml:id="subsection-Calculus-Faradays-Law"><title>(Calculus) Faraday's Law </title>
+			<p>
+				We find that EMF in a circuit is
+				<me>
+					\mathcal{E}_\text{ind}(t) = \oint_{\text{closed loop, L(t)}} \vec E\cdot d\vec l.
+				</me>
+				If magnetic flux is changing in a circuit, then EMF must equal
+				<me>
+					\mathcal{E}_\text{ind}(t) = -\dfrac{d\Phi_B}{dt},
+				</me>
+				where <m>\Phi_B</m> is magnetic flux, which is an integral over the area enclosed by the circuit.
+				<me>
+					\Phi_B = \iint_{\text{Loop surface, S(t)}} \vec B\cdot d\vec A,
+				</me>
+				where I have indicates that loop surface, itself may be changing with time, by using symbol <m>S(t)</m> for the surface. Putting the two expressions of EMF of a circuit, we get integral form of <term>Faraday's law</term>.			
+				<men xml:id="eq-faraday-law-general">
+					\oint_{\text{closed loop, L(t)}} \vec E\cdot d\vec l = -\dfrac{d}{dt}\iint_{\text{open surface, S(t)}} \vec B\cdot d\vec A.
+				</men> 
+			</p>
+
+			<sidebyside widths="55% 10% 35%">
+				<p>
+					The minus sign in Eq. <xref ref="eq-faraday-law-general"/>  is needed to give the correct direction of the induced EMF in the circuit when the integral is conducted in the direction of the electric field and the right-hand illustrated in the figure is  used for the direction of the area vector. 
+				</p>
+				<p> </p>
+				<image source="./images/em-effect/loop-dir-area-dir.png" width="80%"/>
+			</sidebyside>
+
+			<p>
+				Note that  the time derivative on the right side of Eq. <xref ref="eq-faraday-law-general"/>  is <alert> outside the integral</alert> whose limits may be functions of time if the surface attached to the loop changes with time, as would be the case if shape of the loop changing in time.  The derivative of the parameters that define the attached surface gives the contribution of the magnetic force on the conductor at the boundary. That means, we have included EMF from both the flux rule and Lorentz law.
+			</p>
+			<p>
+				Another aspect of Faraday's law worth noting is that the relation between the electric and magnetic fields given by the Faraday's law applies to any loop in space whether or not the points on the loop are occupied by a physical wire since we do no need to worry about induced current. If we have a conducting wire for the loop, we have induced current in the conductor. In that case, the magnetic flux, will be flux of net magnetic field, i.e., the flux of external as well as induced magnetic field.  
+			</p>
+			<p>
+				The Faraday's law says that magnetic field and electric field  are intimately connected to each other - a changing magnetic field gives rise to an electric field. You  might wonder if a changing electric field will similarly give rise to a magnetic field. So far we have seen that only magnets and electric currents create magnetic field.  Maxwell showed that a changing electric field also gives rise to a magnetic field which we will study in a later chapter.
+			</p>
+		</subsection>
+
+
+ 
+	<subsection><title> Analogy Between Faraday's law and Ampere's law </title>
+		<p>
+			The problem of magnetic field of steady currents and the problem of electric field from changing magnetic fluxhere are completely analogous mathematically if there are no charges around as seen from the following equations.
+			<md>					 
+				<mrow>\text{Magnetic field} \amp  \ \text{of steady current:}</mrow>
+				<mrow> \amp \oint \vec B\cdot d\vec A = 0\ \ \ \text{(since no magnetic charges)}</mrow>
+					<mrow> \amp \oint  \vec B\cdot d\vec l = \mu_0 I_\text{enc} </mrow>
+			</md>
+
+			<md>					 
+				<mrow> \text{Electric field}\amp \ \text{with no charges:}\ \ </mrow>
+				<mrow> \amp \oint \vec E\cdot d\vec A = 0\ \ \ \text{(since no electric charges)}</mrow>
+					<mrow> \amp \oint \vec E\cdot d\vec l = -\dfrac{d\Phi_B}{dt}. </mrow>
+			</md>
+			This suggests that the problem-solving techniques of Ampere's law can be fruitfully employed by recognizing that <m>-d\Phi_B/dt</m> of a Faraday's law problem corresponds to <m>\mu_0 I_\text{enc}</m> in the corresponding Ampere's law problem.  I will present an example below that makes the use of this mathematical analogy to deduce the electric field from a changing magnetic field.
+
+		</p>
+	</subsection>
+ 
+
+	<exercise xml:id="ex-Calculus-Electric-Field-from-a-Varying-Magnetic-Field"><title> (Calculus) Electric Field from a Varying Magnetic Field </title>
+		<statement>
+			<p>
+				A long cylindrical solenoid of radius <m>a</m> having <m>n</m> turns per unit length carries a time-dependent current <m>I(t)</m>.  Find electric field at a point P outside the solenoid as  shown in figure, where, for the sake of clarity, only a cross-section of the solenoid is shown.
+			</p>
+			<figure>
+				<caption>
+					<xref ref="ex-Calculus-Electric-Field-from-a-Varying-Magnetic-Field"/>.
+				</caption>
+				<image source="./images/em-effect/solenoid-varying-current-statement.png" width="60%"/>
+			</figure>
+			
+			
+		</statement>
+		<hint> <p> Study the solution.  </p> </hint>
+		<answer> <p> See solution.  </p> </answer>
+		<solution> 
+			<p>
+				Recall that the current in a solenoid produces a uniform magnetic field inside the solenoid of the magnitude <m>\mu_0 n I</m> and zero outside the solenoid.  The direction of the magnetic field depends on the current direction given by the right-hand rule of Biot-Savart's law: if you look down the axis, then the direction of magnetic field will be towards you if the current loops around in a counter-clockwise direction as given in the problem statement.
+			</p>
+			<sidebyside widths="50% 50%">
+				<p>
+					From the analogy of Ampere's law and Faraday's law discussed above, we note that the problem here is analogous to the Ampere's law problem of finding magnetic field outside a straight wire that carries a uniform volume current density <m>\vec J</m> as shown in the figure.
+				</p>
+				<image source="./images/em-effect/solenoid-varying-current-solution-1.png" width="60%"/>
+			</sidebyside>
+
+			<p>
+				Therefore, in the present situation we can claim that the electric field will circulate in circles around the magnetic field just as the magnetic field of a straight wire circulates around the current. Following the Ampere's law procedure for a straight wire, we choose an <q>Amperian loop</q> in the shape of a circle  that passes through the field point P as shown in <xref ref="fig-solenoid-varying-current-solution-2"/>.  Now, we equate the circulation of electric field around the Amperian loop with the <q>enclosed</q> rate of change of magnetic flux through the Amperian loop. 
+				<me>
+					\text{Circulation of }\vec E = - \text{ Enclosed rate of change of magnetic flux.}
+				</me>
+				Since the electric field has the same amplitude at all points of the circle the circulation is just a product of the amplitude of the electric field and circumference of the circle of radius <m>r</m>, which is the distance of field point P from the axis of solenoid.  The enclosed magnetic flux is also easy to calculate here since the magnetic field is zero outside the solenoid.
+			</p> 
+			<figure xml:id="fig-solenoid-varying-current-solution-2">
+				<caption>
+					The Amperian loop passes through the field point and the magnetic flux is calculated over the area enclosed by the Amperian loop shown shaded here. The direction of the Amperian loop and area vector are related by the right-hand rule.  Although there is no magnetic field at P, there is an electric field there due to the changing magnetic field inside the solenoid.
+				</caption>
+				<image source="./images/em-effect/solenoid-varying-current-solution-2.png" width="60%"/>
+			</figure> 
+ 
+			<p>
+				To include the direction information, we cast the circulation and magnetic flux in terms of components.  The right-hand rule for Faraday's law shows that, if the direction of the loop for the circulation is taken along <m>\hat u_{\phi}</m>, then the direction of the area element will be towards the positive <m>z</m>-axis as shown in <xref ref="fig-solenoid-varying-current-solution-2" />.  This will give the following for the <m>\phi</m>-component of electric field.
+				<me>
+					\left(2\pi r\right) E_{\phi} = -\left( \mu_0 \dfrac{dI}{dt} n \right) \left( \pi a^2\right),
+				</me>
+				where the minus sign on the right side comes from the minus sign in the Faraday's law.  Solving for <m>E_{\phi}</m> we find
+				<me>
+					E_{\phi} = -\dfrac{\mu_0 n a^2}{2r}\dfrac{dI}{dt}.
+				</me> 
+				Therefore, the electric field induced at a point P outside the solenoid is
+				<me>
+					\vec E_P = -\dfrac{\mu_0 n a^2}{2r}\dfrac{dI}{dt} \hat u_{\phi}.
+				</me>
+				We find that the induced electric field at the space point P circulates clockwise for an increasing current <m>(dI/dt>0)</m> and counter-clockwise for a decreasing current <m>(dI/dt\lt 0)</m>. If you place a circular metal wire of radius <m>r</m> which coincides with the Amperian loop for the circulation of <m>\vec E</m> calculation, you will notice that there is an induced current in the direction of the induced electric field.  Also, if you place a charge anywhere outside the solenoid, the charge will experience an electric force in the axial direction when the current in the solenoid is changing, but no such force when the current in the solenoid is steady.
+			</p>
+			<p>
+				The result obtained here implies a rather strange conclusion: the electric field at a point outside of a solenoid with a time-varying current is not zero, although the magnetic field there is zero!  Note that this takes place only when the current in the solenoid is changing; once the current has become steady, there would be no electric field outside the solenoid.
+			</p>
+			<p> <alert>Electric field inside solenoid </alert> </p>
+			<p>
+				To find electric field induced at a point inside the solenoid we will choose Amperian loop with radius <m>r\lt a</m> as shown in <xref ref="fig-solenoid-varying-current-solution-3"/>. 
+			</p>
+			<figure xml:id="fig-solenoid-varying-current-solution-3">
+				<caption>
+					The Amperian loop and are enclosed (shaded) for a point inside the solenoid.
+				</caption>
+				<image source="./images/em-effect/solenoid-varying-current-solution-3.png" width="60%"/>
+			</figure> 		
+
+			<p>
+				The enclosed magnetic flux will be less than the flux through the entire cross-section of the solenoid - instead, the magnetic flux through only an area <m>\pi r^2</m> will be enclosed within the Amperian loop.  This gives the electric field that increases with the distance from the axis inside the solenoid.
+				<me>
+					\vec E_P = -\dfrac{\mu_0 n r}{2}\dfrac{dI}{dt} \hat u_{\phi}\ \ \text{(at a point P inside)}.
+				</me> 
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+
+ 	<exercise xml:id="ex-Induced-Electric-Field-Outside-from-Varying-Current-in-a-Solenoid"><title> (Calculus) Induced Electric Field Outside from Varying Current in a Solenoid  </title>
+		<statement>
+			<p>
+				The current in a long solenoid of radius 3 cm and 25 turns/cm is varied with time at a rate of 2 A/s.  Find the electric field at a distance 4 cm from the center of the solenoid.
+			</p>
+
+		</statement>
+		<hint> <p>  Use <q>Ampere's law</q> for dynamic <m>E</m> field. </p> </hint>
+		<answer> <p> <m>3.33\times 10^{5} \ \textrm{N/C}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				From Faraday law, we have 
+				<me>
+					\oint\:\vec E\cdot d\vec l = \mathcal{E} = \dfrac{d\Phi}{dt}.
+				</me> 
+				Here <m>\dfrac{d\Phi}{dt}</m>  has a cylindrical symmetry.  Hence, we can use <q> Ampere's Law</q> type of arguments to assert that the electric field will circulate around the solenoid.  Hence the electric field at a distance <m>r</m> from the axis of the solenoid will obey
+				<me>
+					2\pi r\times   E =  \mathcal{E}\ \ \Longrightarrow\ \ E = \dfrac{\mathcal{E}}{2\pi  r}.
+				</me>
+				Putting in the expression for <m>\Phi</m> for a solenoid n  we find
+				<md>
+				 	<mrow> E \amp = \dfrac{\mu_0\:n\:\Delta I/\Delta t}{2\pi  r} </mrow>
+				 	<mrow> \amp = \dfrac{4\pi\times 10^{-7}\times 2500\times 2}{2\pi \times 0.03} = 3.33\times 10^5\:\textrm{N/C}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+</section>

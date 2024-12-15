@@ -1,0 +1,243 @@
+<section xml:id="interference-of-waves"><title>Interference of Waves</title>
+	<introduction>
+        <p>
+            When a wave results from superposition of two waves with diffenent paths, their net intensity may have unexpected results. The resulting pattern is called <term>interference pattern</term> and the phenomenon is referred to as <term>interference</term>.
+        </p>
+        <p>
+            Let <m>\psi_1 </m> and <m>\psi_2 </m> be two waves overlapping in a particular region of space.  By superposition principle, the resultant wave would be the sum  of <m>\psi_1</m> and <m>\psi_2</m>.
+            <me>
+                \psi = \psi_1 + \psi_2.
+            </me>
+            This will happen at each point and at each instant. I will denote position by <m>\vec r</m>  and   time by <m>t</m>. Therefore, with these details, this equation will look like
+            <men>
+                \psi(\vec r, t) = \psi_1(\vec r, t) + \psi_2(\vec r, t).
+            </men> 
+            We are interested in average power at position <m>\vec r</m>. Here average means time-averaging the square of the wave.
+            <men>
+                P_\text{av} \propto \left( \psi^2 \right)_\text{time average}. 
+            </men>
+            Let us denote time averaging by enclosing the quantity to be time averaged by angle brackets <m>\langle \rangle</m> so that we write less. 
+            This gives intensity of the wave to be
+            <men>
+                I \propto \langle \psi^2 \rangle = \langle (\psi_1 + \psi_2)^2 \rangle.
+            </men> 
+            Expanding the square inside time averaging we get
+            <men>
+                I \propto  \langle \psi_1^2 \rangle + \langle \psi_2^2 \rangle + \langle 2\psi_1\psi_2 \rangle.
+            </men> 
+            Therefore, we will get
+            <men>
+                I = I_1 + I_2 + \langle 2\psi_1\psi_2 \rangle,
+            </men>                    
+            where <m>I_1</m> is the intensity from wave <m>\psi_1</m> alone and <m>I_2</m> the intensity from wave <m>\psi_2</m> alone. The reamining term, <m> \langle 2\psi_1\psi_2 \rangle</m> is the new effect. Its called the <term>interference term</term>, usually denoted by <m>I_{12}</m>. Clearly,
+            <men>
+                I \ne I_1 + I_2. 
+            </men>
+            That is the surprise effect. While the intensities of the two waves <m>I_1</m> and <m>I_2</m> are positive numbers, the interference term <m>I_{12}</m> can be positive or negative.  Therefore the actual intensity observed can be different than simply the sum of the intensities of the separate waves.  As a matter of fact, if the two waves have equal intensities to begin with, then the net wave can have intensity anywhere between zero and four times the intensity of one of the waves, not just twice.
+
+        </p>
+    </introduction>
+    <subsection>
+            <title>Mixing Two Waves of Equal Amplitude</title>
+        <p>
+            For a simple example, consider two waves of equal frequency and equal amplitude.  Let the two waves start out at <m>S_1</m> and <m>S_2</m> in synchronization with each other, but wave 1 travels a distance <m>L_1</m> to reach a point P at the detector while wave 2 travels a distance <m>L_2</m> to reach the same point as shown in the  <xref ref="fig-interference-fo-two-waves"/>.  
+        </p>
+        <figure xml:id="fig-interference-fo-two-waves">
+            <caption>
+                Interference of two waves.
+            </caption>
+            <image source="./images/coupled-vibrations/interference-fo-two-waves-1.png" width="80%"/>            
+        </figure>
+        <p>
+            This experiment can be set up, for example, by having two slits in a plate through which waves must exit on the other side and move to <m>P</m> where they must produce a net vibration.  For instance, we can shine light from a laser on an opaque plate with two slits at <m>S_1</m> and <m>S_2</m>. The experimental arrangement with two slits is also called <term>Young's double slit experiment</term>  who studied interference of light waves by this method.
+        </p>      
+        <p>
+            Even if the two waves start out in sync at <m>S_1</m> and <m>S_2</m>, they might not be in sync at point <m>P</m> on the screen, depending upon relative distances from the source points to <m>P</m>.  If the difference between <m>L_1</m> and <m>L_2</m> is a multiple of a wavelength, then we expect them to end up in sync again at <m>P</m> and a maximum intensity should  result there.  When this happens, we say that the two waves have a constructive interference at point <m>P</m>.  This is shown in  <xref ref="fig-interfere-construct-1"/> where two waves which start out at points <m>S_1</m> and <m>S_2</m> in sync end up in sync at point <m>P</m>.
+        </p>
+        <figure xml:id="fig-interfere-construct-1">
+            <caption>
+                Constructive interference of two waves.
+            </caption>
+            <image source="./images/coupled-vibrations/interfere-construct-1.png" width="80%"/>             
+        </figure>
+        <p>
+            On the other hand, if the difference of distances from the sources at <m>S_1</m> and <m>S_2</m> to the point <m>P</m> is an odd multiple of half a wavelength, then the crest of one wave will fall on the trough of the other, making the net amplitude zero there.  The waves are said to interfere destructively at point <m>P</m>.  If the amplitudes of the waves from <m>S_1</m> and <m>S_2</m> are equal, then, the net amplitude at the point of destructive interference will be zero since the two waves will be completely out of sync there. This is shown in <xref ref="fig-interfere-destruct-1"/> where two waves which start out in sync at points <m>S_1</m> and <m>S_2</m> end up out of sync at point <m>P</m> and interfere destructively there.
+        </p>
+        <figure xml:id="fig-interfere-destruct-1">
+            <caption>
+                Destructive interference of two waves.
+            </caption>
+            <image source="./images/coupled-vibrations/interfere-destruct-1.png" width="80%"/>             
+        </figure>
+        <p>
+            Let us now see how the constructive and destructive interferences show up analytically as a result of the addition of the amplitudes of the two waves.  For this, we need to work out the interference term more fully.
+            <me>
+                I_{12} = 2 \alpha \langle \psi_1 \psi_2 \rangle.
+            </me>
+            Since waves 1 and 2 travel distances <m>L_1</m> and <m>L_2</m> their wave functions at point <m>P</m> will take on the following values at an arbitrary time <m>t</m>.
+            <md>
+                <mrow>\amp \psi_1(t) = A \cos\left(kL_1 - \omega t \right) </mrow>
+                <mrow>\amp \psi_2(t) = A \cos\left(kL_2 - \omega t \right) </mrow>
+            </md>
+            Note the waves have the same frequency, wavenumber and amplitude for our exercise here.  Note also that we have dropped the phase constant since we have assumed that the waves start out in sync at <m>S_1</m> and <m>S_2</m>. Multiplying the two wave functions we find
+            <md>
+                <mrow>\psi_1(t)\psi_2(t)  \amp = A^2 \cos\left(kL_1\right)\cos\left(kL_2\right) \cos^2\omega t  </mrow>
+                <mrow> \amp \ \ \ + A^2 \sin\left(kL_1\right)\sin\left(kL_2\right) \sin^2\omega t</mrow>
+                <mrow>\amp \ \ \    - A^2 \cos\left(kL_1\right)\sin\left(kL_2\right) \cos\omega t \sin\omega t</mrow>
+                <mrow> \amp \ \ \  - A^2 \sin\left(kL_1\right) \cos\left(kL_2\right) \cos\omega t \sin\omega t</mrow>
+            </md>
+            We need to find time-average of this. That involved calculating time averages, <m>\langle \cos^2\omega t rangle</m>, <m>\langle \sin^2\omega t rangle</m>, and <m>\langle \cos\omega t \sin\omega t rangle</m>. The time average of a periodic function can be easily done by an integration over one period and dividing by the period. Let <m>T</m> be the period.
+            <men>
+                \langle f(t) \rangle = \frac{1}{T}\int_0^T f(t) dt. 
+            </men>
+            By using this definition, we get
+            <mdn>
+                <mrow>\amp \langle \cos^2(\omega t)\rangle = \frac{1}{T}\int_0^T \cos^2(\omega t) dt = \frac{1}{2}</mrow>
+                <mrow>\amp \langle\sin^2(\omega t)\rangle = \frac{1}{T}\int_0^T \sin^2(\omega t) dt = \frac{1}{2}</mrow>
+                <mrow>\amp \langle \cos(\omega t)\sin(\omega t)\rangle = \frac{1}{T}\int_0^T \cos(\omega t)\sin(\omega t) dt = 0</mrow>
+            </mdn>
+            Therefore, the interference term evaluates to
+            <me>
+                I_{12} =\alpha A^2 \cos\left[k\left( L_1 -L_2 \right)\right].
+            </me>
+            Note the intensity of each wave is
+            <me>
+                I_{1}= I_{2} \propto \langle \psi_1^2\rangle = \frac{1}{2}\alpha A^2.
+            </me>
+            Let us write the intensity of the individual waves as <m>I_0</m>.
+            <me>
+                I_0 \equiv I_1 = I_2.
+            </me> 
+            Now, writing the intensity observed at point P, all in terms of <m>I_0</m>, the intensity of separate waves, is
+            <men xml:id="eq-intensity-as-difference-lengths">
+                I = 2I_0\left\{ 1+  \cos\left[k\left( L_1 -L_2 \right)\right]\right\}
+            </men>
+            For fixed source points <m>S_1</m> and <m>S_2</m>, the intensity depends upon the location of the observation point <m>P</m> since depending upon the value of <m>k(L_1-L_2)</m> the cosine function fluctuates between <m>-1</m> and <m>1</m>.  When cosine is equal to <m>-1</m>, the intensity at <m>P</m> will be zero, and when cosine is <m>+1</m>, the intensity is four times as much as the intensity in each wave.  Hence, we have the following conditions for constructive and destructive interference.
+            <me>
+                k(L_1 - L_2) = 
+                    \begin{cases} 
+                    2n\pi \amp n = 0, \pm 1, \pm 2, \cdots \text{Constructive} \\
+                    (2n+1)\pi \amp n = 0, \pm 1, \pm 2, \cdots \text{Destructive}
+                    \end{cases} 
+            </me>
+            Let us write the wave number k in terms of the wavelength by using <m>k = 2\pi/\lambda</m>, we get a simpler form that clearly shows the path difference versus integral and half-integral multiples of wavelength.  
+            <me>
+                L_1 - L_2 = 
+                    \begin{cases} 
+                    n\lambda \amp n = 0, \pm 1, \pm 2, \cdots \text{Constructive} \\
+                    \left( n + \frac{1}{2}\right)\lambda \amp n = 0, \pm 1, \pm 2, \cdots \text{Destructive}
+                    \end{cases} 
+            </me>
+
+            Therefore, the waves from two synchronized sources of the same frequency interfere constructively when the distances to an observation point <m>P</m> differ by multiples of a wavelength and interfere destructively if the distances differ by half a wavelength, or odd multiples of half a wave length.  
+        </p>
+    </subsection>
+
+    <subsection><title> Simplification for Large <m>L</m></title>
+        <p>
+            Often we are interested in interference of two waves far away from the sources. In this case, we can use trigonometry to simplify the interference conditions when the difference in the path lengths of the two sources to the detector is small compared to the distance to the detector.
+        </p>
+        <p>
+            From <xref ref="fig-interference-for-two-waves-2"/>, we can find that the difference in paths is related to the angle <m>\theta</m> and the separation  <m>d</m> of the sources.
+            <me>
+                \left| L_1-L_2 \right| = d\sin\theta
+            </me>
+        </p>
+        <figure xml:id="fig-interference-for-two-waves-2">
+            <caption>
+                Geometry for approximating the difference in the path length from the source points and a point on the screen.
+            </caption>
+            <image source="./images/coupled-vibrations/interference-for-two-waves-2.png" width="80%"/>  
+        </figure>
+         
+        <p> 
+            Therefore, the conditions for interference are:
+            <me>
+                d\sin\theta = 
+                    \begin{cases} 
+                    n\lambda \amp n = 0, \pm 1, \pm 2, \cdots \text{Constructive} \\
+                    \left( n + \frac{1}{2}\right)\lambda \amp n = 0, \pm 1, \pm 2, \cdots \text{Destructive}
+                    \end{cases} 
+            </me>
+            Using <m>\left| L_1-L_2 \right| = d\sin\theta</m>, we can express intensity from Eq. <xref ref="eq-intensity-as-difference-lengths"/> in tems of direction from the slits and slit width as follows. I also rreplace <m>k</m> by <m>2\pi/\lambda</m> for ease of use.
+            <men xml:id="eq-intensity-in-direction-theta">
+                I = 2I_0\left[ 1+  \cos \left( \frac{2\pi d}{\lambda} \sin\theta \right)  \right].
+            </men>
+        </p>
+
+    </subsection>
+
+
+    <exercise xml:id="exercise-Constructive-and-Destructive-Interference">
+        <title>Constructive and Destructive Interference</title>
+        <statement>
+            <p>
+                Waves of wavelength <m>50\text{ cm}</m> are emitted from two point sources separated by <m>70\text{ cm}</m>.  In what directions will there be constructive interferences at a far away detector?
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Use the formulas for large <m>L</m>.
+            </p>
+        </hint>
+        <answer>
+            Only <m>n = 0, \pm 1</m> giving <m>\theta=0, \pm 45.6^{\circ}</m>.
+        </answer>
+        <solution>
+            <p>
+                This example illustrates the use of the formulas for constructive and destructive interferences in a double-slit experiment. We have been given the wavelength and the distance between the slits.  Since the detector is far away, we can use the approximate formula for the interference conditions which gives the directions in which constructive and destructive interferences will occur in terms of the wavelength <m>\lambda</m> and the distance <m>d</m> between the slits. The constructive interferences are in the directions given by:
+                <me>
+                    \sin\theta = \frac{n\lambda}{d},\ \ n = 0, \pm 1, \pm 2, \cdots.
+                </me>
+                Clearly, the conditions fails for <m>n</m> for which  <m>\sin\theta>1</m> since sine of an angle must be between -1 and 1, i.e. <m>-1\le\sin\theta\le1</m>. Also, the allowed angles are symmetric about <m>\theta = 0</m> since if <m>n=1</m> is allowed, then <m>n=-1</m> is also allowed. Now, we systematically work out the allowed angle starting with <m>n=0</m>.  We find the following allowed the directions of constructive interference:
+                <md>
+                    <mrow>\amp n = 0:\ \ \theta=0</mrow>
+                    <mrow>\amp n = \pm 1:\ \ \theta=\arcsin{\left( \frac{\pm 1 \times 50}{70}\right)} = \pm 45.6^{\circ}</mrow>
+                    <mrow>\amp n = \pm 2:\ \ \theta=\arcsin{\left( \frac{\pm 2 \times 50}{70}\right)}\ \ \Longrightarrow \text{no solution}</mrow>
+                </md>
+ 
+                Hence, only three constructive places are possible for the given conditions.
+
+
+            </p>
+        </solution>
+    </exercise>
+
+
+    <exercise xml:id="exercise-Variation-of-Intensity-in-Interference">
+        <title>Variation of Intensity in Interference</title>
+        <statement>
+            <p>
+                Two coherent <m>3\text{-mm}</m> wavelength sources separated by <m>5\text{-mm}</m> shine towards a screen as shown.  If the intensity of individual source at the screen is <m>20\text{ W/m}^2</m>, what is the intensity at points P and Q marked on the screen? 
+            </p>
+            <image source="./images/coupled-vibrations/exercise-intensity-in-various-directions.png" width="80%"/>
+        </statement>
+        <hint>
+            <p>
+                Find angles to P and Q and use the intensity formula, Eq. <xref ref="eq-intensity-in-direction-theta"/>.
+            </p>
+        </hint>
+        <answer>
+             <m>I_P = 39.3\text{ W/m}^2</m>,  <m>I_Q = 0.095\text{ W/m}^2</m>.
+        </answer>
+        <solution>
+            <p>
+                First we find angle <m>\theta</m> to points P and Q. From the given geometry, we get
+                <md>
+                    <mrow>\amp \theta_P = \tan^{-1}(2.5/10) = 0.245\text{ rad},</mrow>
+                    <mrow>\amp \theta_Q = \tan^{-1}(3.5/10) = 0.337\text{ rad}.</mrow> 
+                </md>
+                Now, we use these values in Eq. <xref ref="eq-intensity-in-direction-theta"/> to find intensity expected at those points. We need rto make sure we change the unit of wavelength to <m>\text{cm}</m> so that all length units in the argument of cosine cancel out.
+                 <md>
+                    <mrow>I_P \amp  = 2I_0\left[ 1+  \cos \left( \frac{2\pi d}{\lambda} \sin\theta \right)  \right]</mrow>
+                    <mrow> \amp = 2\times 20 \left[ 1+  \cos \left( \frac{2\pi \times 5}{0.3} \sin(0.245 \text{ rad})\right)  \right]</mrow>
+                    <mrow> \amp = 40(1+0.96) = 39.3\text{ W/m}^2.</mrow>
+                    <mrow>I_Q \amp =  2\times 20 \left[ 1+  \cos \left( \frac{2\pi \times 5}{0.3} \sin(0.337 \text{ rad})\right)  \right]</mrow>
+                    <mrow> \amp = 40(1-0.9976) = 0.095\text{ W/m}^2. </mrow> 
+                </md>               
+            </p>
+        </solution>
+    </exercise>
+
+
+</section>

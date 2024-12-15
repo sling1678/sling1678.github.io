@@ -1,0 +1,330 @@
+<section xml:id="Electromagnetic-Effect-Bootcamp"><title> Electromagnetic Effect Bootcamp </title>
+	<introduction>
+		<p>
+		</p>
+	</introduction>
+
+
+	<subsection><title> Magnetic Flux </title>
+	</subsection>
+
+	<subsection><title> Faraday's Flux Rule and Lenz's Law</title>
+
+
+ 		<problem><title> Six Induced EMF and Lenz's Law Exercises </title>
+			<p> Follow the link: <xref ref="ex-Six-Induced-EMF-and-Lenzs-Law-Exercises" />.
+			</p>
+		</problem>
+
+ 		<problem><title> Induced Current in Loop Between Poles of an Electromagnet </title>
+			<p> Follow the link: <xref ref="ex-Induced-Current-in-Loop-Between-Poles-of-an-Electromagnet" />.
+			</p>
+		</problem>
+
+ 		<problem><title> Induced Current in a Circular Wire Surrounding a Solenoid from Varying Current in the Solenoid </title>
+			<p> Follow the link: <xref ref="ex-Induced-Current-in-a-Circular-Wire-Surrounding-a-Solenoid-from-Varying-Current-in-the-Solenoid" />.
+			</p>
+		</problem>
+
+ 		<problem><title> (Calculus) Induced EMF in Two-loop Coil Surrounding a Solenoid with Sinusoidally Varying Current </title>
+			<p> Follow the link: <xref ref="ex-Induced-EMF-in-Two-loop-Coil-Surrounding-a-Solenoid-with-Sinusoidally-Varying-Current" />.
+			</p>
+		</problem>
+
+
+
+
+ 
+
+ 		<problem><title> (Calculus) Induced Current As a Result of a Varying Magnetic Field </title>
+			<p> Follow the link: <xref ref="ex-Induced-Current-As-a-Result-of-a-Varying-Magnetic-Field" />.
+			</p>
+		</problem>
+ 
+
+
+	</subsection>
+
+
+
+	<subsection><title> Motional EMF </title>
+
+ 		<problem><title> Induced EMF When Metal Bar Moving on U-shaped Rails </title>
+			<p> Follow the link: <xref ref="ex-Induced-EMF-When-Metal-Bar-Moving-on-U-shaped-Rails" />.
+			</p>
+		</problem>
+ 
+
+
+	</subsection>
+
+
+	<subsection><title> EMF from Rotation </title>
+
+		<problem><title> Induced EMF in a Rotating Ring in a Magnetic Field </title>
+			<p> Follow the link: <xref ref="ex-Induced-EMF-in-a-Rotating-Ring-in-a-Magnetic-Field" />.
+			</p>
+		</problem>
+
+ 
+
+	</subsection>
+
+
+	<subsection><title> Faraday's Law </title>
+
+
+ 		<problem><title> (Calculus) Electric Field from a Varying Magnetic Field </title>
+			<p> Follow the link: <xref ref="ex-Calculus-Electric-Field-from-a-Varying-Magnetic-Field" />.
+			</p>
+		</problem>
+
+   		<problem><title> (Calculus) Induced Electric Field Outside from Varying Current in a Solenoid  </title>
+			<p> Follow the link: <xref ref="ex-Induced-Electric-Field-Outside-from-Varying-Current-in-a-Solenoid" />.
+			</p>
+		</problem>
+
+
+	</subsection>
+
+
+<!-- 	<subsection><title> Nonconservative Electric Field </title>
+	</subsection> -->
+
+
+	<subsection><title> Miscellaneous  </title>
+
+
+	<problem><title> (Calculus) Copper Ring Falling and Exiting a Magnetic Field Region Near Earth </title>
+		<statement>
+			<p>
+				A rectangular copper ring, of mass 100 g and resistance  0.2 <m>\Omega</m>, is in a region of uniform magnetic field that is perpendicular to the area enclosed by the ring and horizontal to earth surface.  The ring is let go from rest when it is at the edge of the nonzero magnetic field region.  
+			</p>
+			<p>
+				(a) Find its speed when the ring just exits the region of uniform magnetic field.  
+			</p>
+			<p>
+				(b) If it was let go at <m>t=0</m>, what is the time when it exits the region of magnetic field for the following values <m>a= 25\text{ cm}</m> , <m>b = 50\text{ cm}</m>, <m>B = 3\text{ T}</m>, <m>g = 9.8\text{ m/s}^2</m>?  Assume that the magnetic field of the induced current is negligible compared to <m>3\text{ T}</m>.  
+
+			</p>
+
+
+			<image source="./images/em-effect/copper-ring-falling-in-magnetic-field.png" width="70%"/>	
+		</statement>
+		<hint> <p>  (a) net force on the ring is from gravity on all of the ring and magnetic force on the top section of the ring. (b) Solve <m>dy/dt = v_y</m>. </p> </hint>
+		<answer> <p> (a) <m> v =  \dfrac{g}{\omega}\:\left(1 - e^{-\omega t} \right)</m>, (b) 2.9 sec.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a) There are two forces on the ring when it is exiting the region of non-zero magnetic field - one force is the weight and the other the magnetic force on the induced current. The net magnetic force on the ring will come from the force on the upper wire since the forces on the left and right wires will cancel each other and the lower wire does not see any magnetic field. The net magnetic force will be upward since the induced current will have the direction left-to-right in the upper wire and the magnetic field is pointed in the page. 
+			</p>
+			<p>
+				Let us point the positive <m>y</m>-axis down, then we find that the <m>y</m>-component of the acceleration of the wire frame will be given by
+				<me>
+					m\dfrac{dv_y}{dt} = -I_{\text{ind}}\: a\: B_{\text{ext}} + m g,\ \ \ \ (1)
+				</me>
+				where <m>m</m> is the mass, <m>I_{\text{ind}}</m>, the induced current, and <m>B_{\text{ext}}</m> the external magnetic field. To solve this equation for <m>v_y</m> we need an expression for <m>I_{\text{ind}}</m>.  We can obtain this by applying Faraday's law to the loop.
+			</p>
+			<p>
+				Let the lower part of the wire frame be at the coordinate <m>y(t)</m> at time <m>t</m>.  Then the flux through the loop at this instant will have the following expression.
+				<me>
+					\Phi(t) = a (b-y) B_{\text{ext}},
+				</me>
+				Now, taking the time derivative of this will give the rate at which flux changes, which will be equal to the induced EMF, <m>\mathcal{E}_{\text{ind}}</m>.
+				<me>
+					\mathcal{E}_{\text{ind}} = \left|\dfrac{d\Phi}{dt} \right| = aB_{\text{ext}}  \left|\dfrac{d y}{dt}\right|. 
+				</me>
+				Now, we divide this by the resistance  <m>R</m> of the wire making up the loop. 
+				<me>
+					I_{\text{ind}} =  \dfrac{aB_{\text{ext}}  |v_y|}{R}.  
+				</me>
+				Since <m>v_y</m> is positive here we will have <m>|v_y| =  v_y</m>, and obtain the following for the induced current.
+				<me>
+					I_{\text{ind}} =   \dfrac{aB_{\text{ext}} v_y }{R}. \ \ \  \ (2)
+				</me>
+				Now, putting (2) into (1) we obtain
+				<me>
+					m\dfrac{dv_y}{dt} = -\dfrac{a^2 B_{\text{ext}}^2} {R}\: v_y  + m g.
+				</me>
+				Dividing both sides by <m>m</m> gives
+				<me>
+				 	\dfrac{dv_y}{dt} = -\dfrac{a^2 B_{\text{ext}}^2} {mR}\: v_y  +   g.\ \ \ \ (3)
+				</me>
+				The quantity multiplying <m>v_y</m> on the right side has dimensions of 1/time, which is a unit of frequency. Let us denote the coefficient of <m>v_x</m> by <m>\omega</m>.
+				<me>
+					\omega \equiv \dfrac{a^2 B_{\text{ext}}^2} {mR}.\ \ \ \ (4)
+				</me>
+				Rewriting Eq. (3) we have
+				<me>
+				 	\dfrac{dv_y}{dt} = -\omega\: v_y  +   g. 
+				</me>
+				We now solve this equation by separating the variables on the two sides of equlity,
+				<me>
+					\dfrac{dv_y}{-\omega\: v_y  +   g} = dt.
+				</me>
+				Integrating this equation from <m>(t=0,\ v_y = 0)</m> to <m>(t=t, v_y = v_y)</m> we get
+				<me>
+					\int_0^{v_y}\: \dfrac{dv_y}{-\omega\: v_y  +   g} = \int_0^t\: dt.
+				</me>
+				The result can be written as
+				<me>
+					v_y  = \dfrac{g}{\omega}\:\left(1 - e^{-\omega t} \right). \ \ \  \ (5)
+				</me>
+				Since the ring has no other component of the velocity, the speed of the ring at time <m>t</m> while some part of the ring is still within the region of non-zero magnetic field will be
+				<me>
+					v = |v_y| =  \dfrac{g}{\omega}\:\left(1 - e^{-\omega t} \right). 
+				</me>
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				(b) Writing <m>v_y = dy/dt</m> transforms   equation (5) to  the following equation for the <m>y</m>-coordinate of the bottom part of the ring.
+				<me>
+					\dfrac{dy}{dt} = \dfrac{g}{\omega}\:\left(1 - e^{-\omega t} \right).
+				</me>
+				Denote the height of the ring by letter <m>b</m>. We can integrate this from <m>y=0</m> to <m>y=b</m> to find the time for the ring to exit the magnetic field region.
+				<me>
+					\int_0^b\: dy = \dfrac{g}{\omega}\:\int_0^T\:\left(1 - e^{-\omega t} \right) dt.
+				</me>
+				This results in the following equation for the time <m>T</m>.
+				<me>
+					b-\dfrac{g}{\omega^2}\: e^{-\omega T} =  \dfrac{g}{\omega}\: T.\ \ \ \ \ (6)
+				</me>
+				This equation can be solve graphically.  The  values given in the problem statement give us the following values for the constants in this equation.
+				<md>
+				 	<mrow> \amp \omega = \dfrac{a^2 B^2}{m R} = \dfrac{0.25^2 \times 3^3}{0.1\times 0.1} = 55.25\:\text{s}^{-1},</mrow>
+				 	<mrow> \amp  \dfrac{g}{\omega} = 0.1\:\text{m/s},\ \ \dfrac{g}{\omega^2} = 0.003\:\text{m},\ \ b = 0.5\:\text{m}.</mrow>
+				</md>
+				For these values, the second term on the left side in Eq. (6)  will be negligible compared to the first term. Ignoring the second term gives us a simpler equation to solve.
+				<me>
+				b  \approx  \dfrac{g}{\omega}\: T\ \ \Longrightarrow\ \ T = \dfrac{b\omega}{g} = 2.9\:\text{s}.
+				</me>
+ 
+			</p>
+		</solution>
+	</problem>
+
+	<problem><title> (Calculus) Accelerarting Proton by Induced Electric Field in a Region of Changing Magnetic Field </title>
+		<statement>
+			<sidebyside widths="70% 30%">
+				<p>
+					A time-dependent but otherwise uniform magnetic field of magnitude <m>B(t)</m> is confined in a cylindrical region of radius <m>5\text{ cm}</m>.  Initially magnetic field is in the region has a magnitude of <m>3\text{ T}</m> but it is decreasing at the rate of <m>400\text{ G/s}</m>.  An electric field is induced in this space due to changing magnetic field which causes acceleration of charges at rest.  Find the direction and magnitude of acceleration of a proton placed at <m>\text{P}_1</m> which is <m>3\text{ cm}</m> from the center.
+				</p>
+				<image source="./images/em-effect/prob-proton-acc-in-changing-magnetic-field.png" width="50%"/>
+			</sidebyside>
+
+
+		</statement>
+		<hint> <p> Think of Faraday's law as Ampere's law for electric field.  </p> </hint>
+		<answer> <p> <m>1.15\times 10^{5}\:\text{m/s}^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We can treat Fararay's law as an <q>Ampere's law for E-field</q> with <m>d\Phi/dt</m> taking the role of current.  Since the magnetic flux has a cylindrical symmetry we use a circular <q>Amperian loop</q> of radius <m>r</m>.   The integration of the electric field around the loop  gives
+				<me>
+					2\pi r E = \left|\dfrac{d\Phi}{dt} \right|= \pi r^2 \left|\dfrac{dB}{dt}\right|.
+				</me>
+				Therefore,
+				<me>
+					E = \dfrac{r}{2}\left|\dfrac{dB}{dt}\right|.
+				</me>
+				The electric field will circulate in circles around the axis.  If you observe from the side in which the magnetic field points, here out-of-page and  if the magnetic field is decreasing, then the electric field lines will have a counter-clockwise sense.
+			</p>
+			<p>
+				Let us find the magnitude of the electric field for the given numerical values.
+				<me>
+					E = \dfrac{0.03\:\text{m}}{2}\times 400 \times 10^{-4}\:\text{T/s} = 12\times 10^{-4}\:\text{N/C}.
+				</me>
+				This electric field will act on the proton and cause the electron to accelerate with the value
+				<md>
+					<mrow> a \amp = \dfrac{e\:E}{m_p} </mrow>
+					<mrow> \amp = \dfrac{1.6\times 10^{-19}\:\text{C}\times 12\times 10^{-4}\:\text{N/C}}{1.67\times 10^{-27}\:\text{kg}}</mrow>
+					<mrow> \amp = 1.15\times 10^{5}\:\text{m/s}^2. </mrow>
+				</md> 
+			</p>
+		</solution>
+	</problem>
+
+	<problem xml:id="pr-Induced-EMF-in-a-Conducting-Rod-Placed-in-a-Changing-Magnetic-Field"><title> (Calculus) Induced EMF in a Conducting Rod Placed in a Changing Magnetic Field </title>
+		<statement>
+			<sidebyside widths="60% 40%">
+				<p>
+					A time-dependent uniform magnetic field of magnitude <m>B(t)</m> is confined in a cylindrical region of radius <m>R</m>.  A conducting rod of length <m>2D</m> is placed in the region as shown in the figure. Show that the EMF between the ends of the rod is give by <m>(dB/dt)D\sqrt{R^2-D^2}</m>.
+				</p>
+				<image source="./images/em-effect/prob-emf-in-rod-in-changing-magnetic-field.png" width="50%"/>
+			</sidebyside>
+		</statement>
+		<hint> <p> Treat Faraday's law as <q>Amepre's law for the E-field</q>.  </p> </hint>
+		<answer> <p>  Already in problem statement. </p> </answer>
+		<solution> 
+			<p>
+				Treating Faraday's law as <q>Amepre's law for the E-field</q> and taking a circular loop with radius <m>r</m> as the Amperian loop for the line integral of <m>\vec E</m> we arrive at
+				<me>
+					2\pi r E = \left|\dfrac{d\Phi}{dt} \right|= \pi r^2 \left|\dfrac{dB}{dt}\right|.
+				</me>
+				Therefore,
+				<me>
+					E = \dfrac{r}{2}\left|\dfrac{dB}{dt}\right|.
+				</me>
+				The electric field will circulate in circles around the axis.  If you observe from the side in which the magnetic field points, here out-of-page and  if the magnetic field is decreasing, then the electric field lines will have a counter-clockwise sense.
+			</p>
+
+
+			<sidebyside widths="50% 50%">
+				<p>
+					To find the EMF between the ends we need to integrate from <m>\text{P}_1</m> to  <m>\text{P}_2</m>.  The problem is that while the path is parallel to <m>x</m>-axis, the electric field is tangential to the circle with center at the center of the magnetic field region.  To find an explicit expression for <m>\vec E\cdot d\vec r</m> we write the electric field analytically using the  unit vector <m>\hat u_{\theta}</m>.
+				</p>
+				<image source="./images/em-effect/prob-emf-in-rod-in-changing-magnetic-field-sol.png" width="50%"/>
+			</sidebyside>
+ 			<p>
+ 				For a situation in which the magnetic field pointed towards the <m>z</m>-axis is decreasing we will get
+				<me>
+					\vec E = \dfrac{r}{2}\left|\dfrac{dB}{dt}\right|\ \hat u_{\theta},
+				</me>
+				where <m>\hat u_{\theta}</m> for a point which is at an angle <m>\theta</m> with respect to the <m>x</m>-axis would be
+				<me>
+					\hat u_\theta = -\sin\theta\:\hat i + \cos\theta\:\hat j.
+				</me>
+				An element of the the path here will have
+				<me>
+					d\vec l = \hat i\:dx.
+				</me>
+				Therefore, the dot product will be
+				<me>
+					\vec E \cdot d\vec l = - \dfrac{r}{2}\left|\dfrac{dB}{dt}\right| \: \sin\theta\: dx =  
+				</me>
+				We can replace <m>r\sin\theta</m> by <m>y</m> and writing this in <m>(x,y)</m> of the element  
+				<me>
+					\vec E \cdot d\vec l =   - \dfrac{1}{2}\left|\dfrac{dB}{dt}\right| \: y\: dx
+				</me>
+				Here <m>y</m> is fixed on the path, given by <m>y = \sqrt{R^2-D^2}</m>. We integrate this from <m>x=-D</m> to <m>x=D</m> to obtain the difference in potential at the two points.
+				<me>
+					\Delta \phi  =  \left|\dfrac{dB}{dt}\right| \:  D\:  \sqrt{R^2-D^2}
+				</me>
+			</p>
+		</solution>
+	</problem>
+
+
+
+
+
+
+
+
+
+
+
+	</subsection>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

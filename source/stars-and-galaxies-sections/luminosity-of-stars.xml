@@ -1,0 +1,401 @@
+<section xml:id="sec-Luminosity-of-Stars"><title>Luminosity and Temperature of Stars</title>
+	<introduction>
+		<p>
+			The total amount of energy radiated by a star per unit time is called its <term>luminosity</term> <m>L</m>, absolute luminosity.  Luminosity is an intrinsic property of a star. The emitted radiation spreads out in space.  Suppose the spreading of energy happens uniformly in all directions. Let <m>F_{*}</m> be  the <term>flux</term>, i.e.,  the amount of radiant energy per unit time per unit area, at the surface of the star of radius <m>r_{*}</m>. Then, the total energy leaving the star in unit time will be
+			<me>
+				L = 4\pi {r_{*}}^2 F_{*}.
+			</me>
+			This energy will pass a larger spherical surface at a later time. Let <m>F</m> be the intensity of the radiation at a distance <m>r</m> from the star. Since the total energy per unit time  emitted from the star is same regardless of where the energy is observed, we must also have
+			<me>
+				L = 4\pi r^2 F,
+			</me>
+			at any distance <m>r</m> from the star. Therefore, the flux observed at a distance <m>r</m> from the star must drop as the square of the distance.
+			<men xml:id="eq-luminosity-intensity">
+				F = \frac{L}{4\pi r^2}.
+			</men>
+			Now, if <m>F</m> is measured on Earth and the distance  from Earth to the star <m>r</m> is obtained from some other method, such as the parallax method we have discussed above, we can deduce <m>L</m> of the star.  Now, think about it: just by making appropriate measurements from Earth we can know something intrinsic to a star!  For instance, the average flux of sunlight observed on Earth, called the <term>solar constant</term>, is <m>F = 1.361\: \textrm{kW/m}^2</m>, and the distance to the sun is <m>1.5 \times 10^{11}\:\textrm{m}</m>. Therefore, the sun must have the following luminosity.
+			<me>
+				L =4\pi r^2 F = 3.8\times 10^{26}\:\textrm{W}.
+			</me>
+			That is, the Sun is putting out <m>3.8\times 10^{26}</m> Joules of energy per second.  Of course, if you can figure out <m>L</m> somehow and measure <m>F</m> then you can use Eq. <xref ref="eq-luminosity-intensity"/> to deduce the distance to the star.
+			<men xml:id="eq-luminosity-intensity-2">
+				r=\sqrt{L/4\pi F}. 
+			</men>
+			The flux <m>F</m> of a star measured on Earth is called its <term>apparent brightness</term>.  Sometimes, we designate the apparent brightness by <m>F_m</m> to distinguish it from a related quantity called <term>absolute brightness</term> which is the brightness of the star if the said star were 10 pc away instead of <m>r</m> away.  We will denote the absolute brightness by <m>F_M</m>.
+			<me>
+				F_m = \frac{L}{4\pi r^2};\ \ \ F_M= \frac{L}{4\pi (10\:\textrm{pc})^2};
+			</me>
+			Here <m>F_m</m> is the measured quantity, not <m>F_M</m>. The ratio of the fluxes gives 
+			<men xml:id="eq-luminosity-distance-rel">
+				\frac{F_M}{F_m} = \left( \frac{r\ [\textrm{pc}]}{10\:\textrm{pc}} \right)^2. 
+			</men>
+		</p>
+	</introduction>
+	<subsection><title>Apparent Magnitude and Flux</title>
+		<p>
+			Although, the flux <m>F_m</m> would provide a reasonable scale to classify apparent brightness of stars, the system used by Astronomers is based on a logarithmic scale because our visual perception is actually a logarithmic detector. The designation brightness of stars dates back to <term>Hipparchus of Nicaea</term> who cataloged 1000 stars in about 130 B.C. and  introduced a system of six <term>magnitudes</term> for classifying them.  Hipparchus assigned magnitude 1 to the brightest stars, 2 to the next group, and so on, finally 6 to the stars that were barely visible to the naked eye without the aid of a telescope.
+		</p>  
+		<p>
+			The system of Hipparchus was systematized and made more quantitative by <term>Norman Pogson</term> in 1856, who gave the brightness of the brightest star a factor of 100 compared to the brightness of the faintest star and then divided the factor 100 into equal factors for each magnitude. This gave him a factor of 2.512  for each magnitude.  
+			<me>
+				100^{1/5} = 2.512.
+			</me>
+			Thus, a star of magnitude 1 was 2.512  times as bright as a star of magnitude 2, which in turn was 2.512  times as bright as a start of magnitude 3, and so on.   Thus, we have five factors of 2.512 between magnitudes 1 and 6. 
+			<me>
+				(2.512)^5 = 100.
+			</me>
+			The bright stable star Vega is taken to be the reference zero-point of the magnitude scale.  This gives the following formula for apparent magnitude <m>m</m> of a star with respect to the apparent magnitude <m>m_0 = 0</m> for Vega.
+			<me>
+				m - m_0 =  -2.512\: \log_{10}\left(\frac{F_m}{F_0} \right).
+			</me>
+			Of course, you can write this equation in terms of the luminosities of the two stars by multiplying the two fluxes by a common factor of <m>4\pi r</m>.
+			<men xml:id="eq-magnitudes-of-stars-def">
+				m - m_0 =  -2.512\: \log_{10}\left(\frac{L_m}{L_0} \right).
+			</men>
+			Using this equation you can compare the magnitudes <m>m_1</m> and <m>m_2</m> of any two stars.  Subtracting the formulas of <m>m = m_1</m> and <m>m=m_2</m> cancels out any reference to the reference star and we find
+			<men xml:id="eq-magnitudes-compare">
+				m_1 - m_2 =  -2.512\: \log_{10}\left(\frac{F_{1}}{F_{2}} \right). 
+			</men>
+			Thus, if we have a star of magnitude 1 and another of magnitude 6, then by definition, the ratio of their fluxes should be 100.
+			<me>
+				\frac{F_1}{F_6} = 10^{(5/2.512)} \approx 100.
+			</me>
+			We can also use Eq. <xref ref="eq-magnitudes-compare"/> to write the absolute magnitude <m>M</m> and apparent magnitude <m>m</m> of a star with <m>M</m> being the magnitude at a distance of 10 pc from the star. To convert the ratio of the fluxes we use Eq. <xref ref="eq-luminosity-distance-rel"/>.  Thus,
+			<men xml:id="eq-magnitudes-compare-2">
+				m - M =  5.024\: \log_{10}\left( \frac{r\ [\textrm{pc}]}{10\:\textrm{pc}} \right). 
+			</men>
+			The quantitative method provides us with a more precise way to classify the apparent brightness. With improvement in observation technology, we can make measurements on extremely dim stars and use the magnitude scale to refer to them.  For instance, Hubble telescope could observe stars with magnitude 30, which <m>2.5^{24} = 4 \times 10^9</m> times fainter than the faintest star visible to the naked eye.  On this scale, the moon has <m>m = -12.74</m> and the sun <m>m = -26.71</m>. The brightest star in the sky, Sirius has <m>m = -1.4</m>.
+		</p>
+
+	</subsection>
+
+	<exercise xml:id="ex-Apparent-Magnitude-of-a-Star-by-Comparing-to-Another-Star"><title>Apparent Magnitude of a Star by Comparing to Another Star</title>
+
+		<statement>
+			<p>
+				Star A has an apparent magnitude of 2 and its flux is 1000 times more than the flux by star B.  What is the apparent magnitude of star B?
+			</p>
+		</statement>
+		<hint><p>
+			Eq. <xref ref="eq-magnitudes-compare"/>
+		</p></hint>
+		<answer><p>
+			<m>9.536</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The fluxes differ by a factor of 1000 and the magnitudes go as log base 10.  For each power of 10 in flux, the magnitude changes by 2.415 and the brighter objects have lower magnitude than the dimmer objects.  Therefore, the apparent magnitude of B will be <m>2.512 \times 3 =    7.536</m> more than that of A.
+				<me>
+					m_B = m_A + 7.536 = 9.536.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+	<exercise xml:id="Flux-of-Beltelgeuse-from-its-Apparent-Magnitude"><title>Flux of Beltelgeuse from its  Apparent Magnitude</title>
+
+		<statement>
+			<p>
+				The Sun has an apparent magnitude of <m>-26.8</m> and Betelgeuse has magnitude <m>+0.41</m>.  The flux from the Sun on Earth is <m>1.361\: \textrm{kW/m}^2</m>, what is the flux of Betelgeuse?
+			</p>
+		</statement>
+		<hint><p>
+			Eq. <xref ref="eq-magnitudes-compare"/>.
+		</p></hint>
+		<answer><p>
+			<m>2.0 \times 10^{-11}\: \textrm{kW/m}^2 </m>.
+		</p></answer>
+		<solution>
+			<p>
+				We can Eq. <xref ref="eq-magnitudes-compare"/> to set up the equation for the unknown flux and solve.
+				<me>
+					m_1 - m_2 =  -2.512\: \log_{10}\left(\frac{F_{1}}{F_{2}} \right),
+				</me>
+				with <m>1</m> for the Betelgeuse and <m>2</m> for the Sun.
+				<me>
+					0.41 - (-26.8)=  -2.512\: \log_{10}\left(\frac{F_{1}}{1.361\: \textrm{kW/m}^2} \right),
+				</me>
+				Therefore,
+				<me>
+					F_1 = 1.361\: \textrm{kW/m}^2 \times 10^{-27.21/2.512} = 2.0 \times 10^{-11}\: \textrm{kW/m}^2 .
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Luminosity-form-Apparent-Magnitude-and-Distance"><title>Luminosity form Apparent Magnitude and Distance</title>
+
+		<statement>
+			<p>
+				The brightest star in the sky is Sirius which has an apparent magnitude of <m>m=-1.41</m> and that of the Sun is <m>m=-26.8</m>.  By using parallax its distance is determined to be 2.61 pc.  What is the luminosity of the star?  Data: <m>d_{\odot} = 1\: \textrm{AU} = 4.76\times 10^{-6}\:\textrm{pc}</m>, <m>L_{\odot} = 3.8 \times 10^{26}\:\textrm{ J.s}^{-1}</m>
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+				The absolute magnitude of the star and the Sun are easily computed to be
+				<me>
+					M = 1.52,\ \ M_{\odot} =  4.96.
+				</me>
+				Now, the absolute magnitudes will be related to the absolute luminosities by
+				<me>
+					M - M_{\odot} = -2.512\:\log_{10} \left(\frac{L}{L_{\odot}} \right).
+				</me>
+				Therefore,
+				<me>
+					L = L_{\odot}\ 10^{( M_{\odot}-M  )/10}.
+				</me>
+				Putting in the numbers we get
+				<me>
+					L = 3.8 \times 10^{26}\:\textrm{ J.s}^{-1}\times 10^{(4.96-1.52 )/10} = 8.9\times 10^{27}\:\textrm{ J.s}^{-1}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<subsection><title>Temperature of Stars</title>
+		<p>
+			In the early 1900s, stars were grouped into a series of spectral types based on the types and strengths of the spectral absorption lines.   The spectral types are labeled by the letters, O, B, A, F, G, K, M. Often a mnemonic is used to remember this sequence: <alert>Oh Be A Fine Girl/Guy, Kiss Me!</alert> Our Sun is a G type star. Much finer classification is also used, but we will not discuss them here. The absorption lines are primarily determined by the surface temperature  of the star, with O type star having the highest temperature, B the next hot, and so on.
+		</p>
+		<p>
+			The spectra of stars contain evidence of the chemical content of the stars as well as the temperature at the surface of the stars.  The light coming from stars has absorption and emission lines corresponding to elements in the star. Elements are excited at different temperatures and lines from different elements become strongest at different temperatures. Thus, the absoption and emissions lines of a star are indicative of the temperature of the star.  <xref ref="tab-temperature-of-stars"/> and <xref ref="tab-temperature-of-stars2"/> lists some characteristics of different types of stars.
+		</p>
+
+<table xml:id="tab-temperature-of-stars"><title>Some Properties of Stars</title>
+	<tabular top="minor">
+		<col halign="center" right="minor"></col><col halign="center" right="minor"></col><col halign="center" right="minor"></col><col halign="left"></col>
+		<row header="yes" bottom="minor">
+			<cell>Spectral Type</cell><cell>Temperature(K)</cell><cell></cell><cell>Color Elements</cell>
+		</row>
+		<row bottom="minor">
+			<cell>O</cell> <cell>28,000 - 50,000</cell><cell>Blue</cell><cell>Ionized Helium</cell> 
+		</row>
+		<row>
+			<cell>B </cell> <cell>10,000 - 28,000</cell><cell>Blue-white</cell><cell>Helium,</cell> 
+		</row>
+		<row bottom="minor">
+			<cell> </cell> <cell> </cell><cell> </cell><cell>Some Hydrogen</cell> 
+		</row>
+		<row>
+			<cell>A</cell> <cell>7500 - 10,000</cell><cell>White</cell><cell>Strong Hydrogen,</cell> 
+		</row>
+		<row bottom="minor">
+			<cell></cell> <cell></cell><cell></cell><cell>Some Ionized Metals,</cell> 
+		</row>
+
+		<row>
+			<cell>F</cell> <cell>6000 - 7500</cell><cell>Yellow-white</cell><cell>Hydrogen,</cell> 
+		</row>
+		<row>
+			<cell></cell> <cell></cell><cell></cell><cell>Ionized Calcium (H and K),</cell> 
+		</row>
+		<row bottom="minor">
+			<cell></cell> <cell></cell><cell></cell><cell>Iron</cell> 
+		</row>
+
+		<row>
+			<cell>G</cell> <cell>5000 - 6000</cell><cell>Yellowish</cell><cell>Strong G Band,</cell> 
+		</row>
+		<row>
+			<cell></cell> <cell></cell><cell></cell><cell>neutral and ionized</cell> 
+		</row>
+		<row bottom="minor">
+			<cell></cell> <cell></cell><cell></cell><cell>metals, especially Calcium</cell>  
+		</row>
+		<row bottom="minor">
+			<cell>K</cell> <cell>3500 - 5000</cell><cell>Orange</cell><cell>Neutral metals, Sodium</cell> 
+		</row>
+		<row>
+			<cell>M</cell> <cell>2500 - 3500 </cell><cell>Reddish</cell><cell>Strong titanium oxide,</cell> 
+		</row>
+		<row bottom="minor">
+			<cell></cell> <cell></cell><cell></cell><cell>Very strong Sodium ,</cell> 
+		</row>
+
+	</tabular>
+</table>
+
+<table xml:id="tab-temperature-of-stars2"><title>Example Spectral Lines of Stars</title>
+	<tabular top="minor">
+		<col halign="center" right="minor"></col><col halign="left"></col>
+		<row header="yes" bottom="minor">
+			<cell>Spectral Type</cell><cell>Example spectral lines</cell>
+		</row>
+
+		<row bottom="minor" top="minor">
+			<cell>O</cell> <cell><m>\text{He}^{+}: 4400</m>&#x212B;</cell>
+		</row>
+		<row>
+			<cell>B </cell> <cell>He<m>^{+}: 4400</m>&#x212B;, He: <m>4200</m>&#x212B; </cell>
+		</row>
+		<row>
+			<cell>A</cell> <cell>H<m>_\alpha: 6600</m>&#x212B;, H<m>_\beta</m>: <m>4800</m>&#x212B; </cell>
+		</row>
+		<row bottom="minor">
+			<cell></cell> <cell>H<m>_\gamma: 4350</m>&#x212B;, H<m>_\beta</m>: <m>4800</m>&#x212B; </cell>
+		</row>
+		<row bottom="minor">
+			<cell>F</cell> <cell>Ca<m>^{+}: 3800 - 4000</m>&#x212B;, Fe: <m>4200 - 4500</m>&#x212B;</cell>
+		</row>
+		
+		<row bottom="minor">
+			<cell>G</cell> <cell>G band of CH molecule: 	<m>4250</m>&#x212B;, Ca<m>^{+}: 3800 - 4000</m>&#x212B;</cell>
+		</row>
+		<row bottom="minor">
+			<cell>K</cell>  <cell>Na:<m>5900</m>&#x212B;</cell>
+		</row>
+		<row>
+			<cell>M</cell> <cell>TiO<m>_2: 4900 - 5200</m>&#x212B;,  <m>5400 - 5700</m>&#x212B;  </cell>
+		</row>
+		<row bottom="minor">
+			<cell></cell> <cell>TiO<m>_2: 6200 - 6300</m>&#x212B;,  <m>6700 - 6900</m>&#x212B;  </cell>
+		</row>
+
+	</tabular>
+</table>
+
+
+ 		<p>
+			 We can assign a surface temperature to a star if we assume that the emission of the star closely resembles that of a blackbody spectrum. The nuclear processes at the outer layer of a star tends to thermalize the photons before they are emitted and are close to the blackbody spectum. Thus, the flux <m>F_{*}</m> at the star surface would be given by Stefan-Boltzmann law.
+			<men xml:id="eq-stars-stefan-bolt">
+				F_{*} = \sigma T^4,
+			</men>
+			where <m>T</m> is the temperature of the blackbody, <m>\sigma = 5.67 \times 10^{−8} \textrm{W m}^{−2}\textrm{K}^{−4}</m>, the Stefan-Boltzmann constant, and <m>F_{*}</m> is related to the luminosity and radius <m>r_*</m> of the star as 
+			<men xml:id="eq-stars-stefan-bolt-2">
+			 	F_{*} = \frac{L}{4\pi r_{*}^2}. 
+			</men> 
+			 From Eqs. <xref ref="eq-stars-stefan-bolt"/> and <xref ref="eq-stars-stefan-bolt-2"/>
+			<men xml:id="eq-stars-stefan-bolt-3">
+				T =  \left[ \frac{L}{4\pi\sigma r_{*}^2} \right]^{1/4}. 
+			</men>
+			The temperature of a star can also be obtained from the wavelength <m>\lambda_{\textrm{max}}</m> at which the spectrum of the star has the maximum intensity by applying Wien's displacement law.
+			<men xml:id="eq-stars-stefan-bolt-4">
+				T = \frac{2.897772 \times 10^{−3}\:\textrm{K.m}}{\lambda_{\textrm{max}}}. 
+			</men>
+			From Eqs. <xref ref="eq-stars-stefan-bolt"/> and <xref ref="eq-stars-stefan-bolt-4"/>, we find that a determination of the maximum of the spectrum can be used to determine the flux at the surface of the star.
+			<me>
+				F_{*} = \left( \frac{0.04}{\lambda_{\textrm{max}}[\textrm{in m}]} \right)^4\:\textrm{W/m}^{2}.
+			</me>
+ 		</p>
+
+	</subsection>
+
+	<exercise xml:id="ex-Temperature-at-the-Surface-of-the-Sun"><title>Temperature at the Surface of the Sun</title>
+
+		<statement>
+			<p>
+				The Sun has  <m>L = 3.8\times 10^{26}\:\textrm{W}</m> and <m>r_* = 6.96\times 10^8\:\textrm{m}</m>.  Find the temperature at the surface of the Sun.
+			</p>
+		</statement>
+		<hint><p>
+			 Eq. <xref ref="eq-stars-stefan-bolt-3"/>.
+		</p></hint>
+		<answer><p>
+			<m>5,760\:\textrm{K}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				From Eq. <xref ref="eq-stars-stefan-bolt-3"/>, we get
+				<me>
+					T =  \left[ \frac{L}{4\pi\sigma r_{*}^2} \right]^{1/4} = 5,760\:\textrm{K}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<subsection><title>The Hertzsprung-Russell Diagram</title>
+		<p>
+			During 1905-1913, the Danish astronomer Ejnar Hertzsprung and the American astronomer Henry Norris Russell independently introduced a plot of stars according to their luminosity and spectral type, or equivalently, the surface temperature which has turned out to be extremely valuable tool for thinking about stars of various types. The diagram is called Hertzsprung-Russell or H-R diagram.
+		</p>
+		<p>
+			In the H-R diagram, shown in <xref ref="fig-astro-h-r-diagram-wiki-commons"/>  the vertical axis corresponds to increasing luminosity and the horizontal axis to the decreasing temperature following Russell's choice.  The top left corner corresponds to high luminosity and high temperature and the bottom right corner to the lowest luminosity and lowest temperature. Each star is placed on the diagram according to its luminosity and temperature. As more and more stars are placed in the diagram, only certain areas of the diagram fill up while other areas remain empty with very few stars if any.   Different parts of the diagram that fill up correspond to different types of stars.
+		</p>
+		<p>
+			The Sun is near the middle of the H-R diagram in a band of stars that goes roughly from the top left corner to the bottom right corner.  These stars are called the <term>main-sequence stars</term>. The main-sequence stars get their energy from burning hydrogen into helium similar to the process in the Sun.  The Red Giants and Super Giants are very massive stars. They occupy a region above the main-sequence in the H-R diagram.  The burnt out stars, so-called white dwarfs, occupy the bottom left side of the diagram.
+		</p> 
+
+ 		<figure xml:id="fig-astro-h-r-diagram-wiki-commons">
+			<caption>
+				The Hertzsprung-Russel Diagram identifying many well known stars in the Milky Way galaxy. Credits: This photograph was produced by European Southern Observatory (ESO) and released under Creative Commons.
+			</caption>
+			<image source="./images/modern-physics/astro-h-r-diagram-wiki-commons.png" width="90%"/>
+		</figure>
+ 
+	</subsection>
+
+TODO:
+
+<p>
+	\begin{exercise}
+ What is the flux of Sun at the surface of Jupiter? Data: Luminosity of Sun, $L_{\odot} = 3.846\times 10^{26}\: \textrm{W}$, distance of Jupiter from Sun = $7.75\times 10^{11}$ m.
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+ The flux of Sun at the surface of Earth is 1.361 kW/m$^2$.  What will be the flux Sun at a point half way to the Sun?
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+Deduce the mass of the Sun from the orbital period (1 year) and radius  ($1.5\times 10^{11}$ m) of the orbit of Earth.
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+ In a binary star system, one of the stars is a massive black hole B and the other is a main-sequence star S. The star S has moves around B with a speed of $10,000$ km/s and has a period of revolution of 1 week. Assuming a circular orbit for S, find the mass of the black hole.  
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+ The absolute magnitude of a star is -10.  The apparent magnitude on Earth is measured to be 5.  How far is the star?
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+ The temperature of a star is found to be 6500 K.  What is the flux at the surface of the star?
+\end{exercise}
+
+</p>
+<p>
+
+\begin{exercise}
+ A star has luminosity of $L  = 2.5\times 10^{30}\: \textrm{W}$. The spectrum of the light from the star has a maximum at 450 nm but the spectral lines are shifted by a redshift $z = 0.5$. (a) What is the maximum of the spectrum emitted by the star?  (b) What is the temperature of the star?  (c) What is the radius of the star?
+\end{exercise}
+
+</p>
+<p>
+
+
+\begin{exercise}
+The supernove SN1987A  occurred approximately 51.4 kpc from Earth.  Its brightness peaked with an apparent magnitude of about 3. (a) What was the luminosity of the supernova SN1987A at the peak? (b) How does it compare with the luminosity of the Sun?
+\end{exercise}
+
+</p>
+<p>
+
+ 
+\begin{exercise}
+The Sun is currently in orbit about 8 kpc from the center of the Galaxy with the orbital speed of 220 km/s.  How many times the Sun has gone around the center of the glaxy since its birth if it was formed around 4.6 billion years ago?
+\end{exercise} 
+
+</p>
+ 
+
+
+
+
+</section>

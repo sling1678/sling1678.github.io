@@ -1,0 +1,373 @@
+<section xml:id="sec-physics-in-earth-frame"><title> Physics in Earth's Frame </title>
+<idx>Earth's Frame</idx>
+	<introduction>
+		<p>
+			An Earth-based frame is a rotating frame.  Therefore, equation of motion of a particle in an Earth-based frame will have Coriolis force and centrifugal force in addition to other forces. Dropping subscript <m>\text{rot}</m> in <xref ref="eq-rot-frame-acc"/> we get
+			<men xml:id="eq-rot-frame-acc-earth">
+				 m \vec a =\vec F  - m \left[2\vec \Omega\times \vec v  + \vec \Omega \times \left( \vec\Omega \times \vec r \right)\right].  
+			</men>
+			Here <m>\vec F </m> is sum of all force on the particle. Let us separate gravity of Earth
+			<me>
+				\vec F = -G_N \frac{m M_E}{r^2}\hat r +  \vec F_{\text{other}},
+			</me>
+			where <m>\hat r</m> is a unit vector pointed from particle to center of Earth. Now, we know that near Earth, weight <m>mg</m>, is more convenient to use, where value of <m>g = 9.81\text{ m/s}^2</m> is in the Earth's frame. That is,
+			<me>
+				-m g \hat r = -G_N \frac{m M_E}{r^2}\hat r + \vec \Omega \times \left( \vec\Omega \times \vec r \right).
+			</me>
+			Therefore, we write the equation of motion in the rotating frame as
+			<men xml:id="eq-sec-law-earth">
+				 m \vec a = -m g \hat r +  \vec F_{\text{other}}  -2 m \vec \Omega\times \vec v.
+			</men>
+			We will use this equation to study the motion the motion of particles near the surface of the Earth in an Earth-based frame.
+ 
+		</p>
+	</introduction>
+	<example xml:id="ex-Freely-Falling-Particle-in-an-Earth-Based-Frame"><title> (Calculus) Freely Falling Particle in an Earth-Based Frame</title>
+		<statement>
+			<p>
+				The rotation of earth has observable effects on falling objects. In this example, we will look at the motion of a particle dropped from a height <m>h</m> at the Equator as illustrated in <xref ref="fig-earth-frame-particle-deflect-earth-rotation-1"/>. We will look at the motion from two coordinate systems, fixed system <m>Oxyz</m> and a rotating system <m>O'x'y'z'</m>, which rotates at the angular speed of the Earth.
+			</p>
+
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					In fixed-coordinate system particle will fall directly towards the center of Earth, say on <m>x</m>-axis. But, because the Earth is rotating, the motion will have horizontal displacement, say in <m>xy</m>-plane with both <m>x</m> and <m>y</m> motion. The horizontal motion is called deviation. 
+
+					  
+				</p>
+				<p></p>
+				<figure xml:id="fig-earth-frame-particle-deflect-earth-rotation-1">
+					<caption></caption>
+					<image source="./images/noninertial-frame/particle-deflect-earth-rotation-1.png" width="80%"/>
+				</figure>
+			</sidebyside>
+
+			<!-- <p>
+				For concreteness, we will determine the deviation of a particle falling at the equator.
+			</p> -->
+
+			<p>
+				<!-- Consider two coordinate frames <m>Oxyz</m> and <m>Ox'y'z'</m> with their origins at the center of Earth that have the <m>z</m>-axis pointed in the direction of the axis of rotation of the Earth. Let the frame <m>Ox'y'z'</m> rotate with respect to the fixed inertial frame <m>Oxyz</m> at angular speed <m>\Omega</m>, and let the axes of the two systems be coincident at <m>t=0</m>. We will use <m>M</m> for the mass of the Earth and assume Earth to be a sphere of radius <m>R</m>. -->
+
+				Suppose a particle of mass <m>m</m> is released at <m>t=0</m> from rest at <m>x=x'=h+R</m>. We assume that <m>O'x'y'z'</m> coincides  <m>Oxyz</m> at <m>t=0</m>.  In the inertial frame the particle moves straight down the <m>x</m>-axis and reaches <m>x=R</m> at some time <m>t=\Delta t</m>.  During <m>\Delta t</m>, <m>x'</m> and <m>y'</m> axes of the rotating frame move out to another direction as shown in  <xref ref="fig-earth-frame-particle-deflect-earth-rotation-1"/>.
+			</p>
+			<p>
+				Since rotation is about the <m>z</m>-axis, the particle will fall in the <m>x'y'</m> plane of the rotating frame.  We wish to determine the <m>y'</m> component of the displacement when the particle has dropped a distance of <m>h</m> in the inertial frame.  We start by writing the components of the equation in the rotating frame.
+				<md>
+					<mrow> \amp \frac{dv'_{x}}{dt} = -g-\left( 2\vec\Omega\times\vec v_{rot} \right)_{x'}</mrow>
+					<mrow> \amp \frac{dv'_{y}}{dt} = 0-\left( 2\vec\Omega\times\vec v_{rot} \right)_{y'}</mrow>
+					<mrow> \amp \frac{dv'_{z}}{dt} = 0-\left( 2\vec\Omega\times\vec v_{rot} \right)_{z'}</mrow>
+				</md>
+				The <m>x'</m> and <m>y'</m> components of the Coriolis and centrifugal terms are as follows.
+				<me>
+					\vec \Omega \times \vec v_{rot} = 
+					<!-- \left|
+					\begin{tabular}{ccc}
+					<m>\hat u_{x'}</m> \amp  <m>\hat u_{y'}</m> \amp  <m>\hat u_{z'}</m> \\
+					<m>0</m> \amp  <m>0</m> \amp  <m>\Omega</m> \\
+					<m>v_{x'}</m> \amp  <m>v_{y'}</m> \amp  <m>v_{z'}</m>
+					\end{tabular}
+					\right| -->
+					=-\Omega v_{x'} \hat u_{y'}  + \Omega v_{x'} \hat u_{z'}.
+				</me>
+				Hence the equations of motion of the particle are:
+				<md>
+					<mrow> \amp \frac{dv_{x'}}{dt} = -g- 2\Omega v_{y'}</mrow>
+					<mrow> \amp \frac{dv_{y'}}{dt} = 2\Omega v_{x'}</mrow>
+					<mrow> \amp \frac{dv_{z'}}{dt} = 0</mrow>
+				</md>
+				Solving these equations with the initial condition <m>x' = h+R</m>, <m>y'=0</m>, <m>z'=0</m>, and <m>v_{0x'}=v_{0y'}=v_{0z'}=0</m> will give us the trajectory of the particle from the perspective of the rotating frame, i.e., from someone observing the particle from Earth-based frame.  Since there is no motion along the <m>z</m>-axis, we will work out the solution for <m>x'</m> and <m>y'</m> components only.
+
+			</p>
+
+
+			<p>
+				<alert>Approximate solution:</alert>  Observe that the particle will pick up velocity more along the vertical direction than along the horizontal direction.  Therefore, we can assert that in time <m>t</m>, <m>|v_x'|\approx gt</m>. Using this in <m>v_x'</m> equation, we find the following for <m>v_y'</m>.
+				<me>
+					\frac{dv_{y'}}{dt}\approx - 2 \Omega g t\ \ \Longrightarrow\ \ v_{y'} =-\Omega g t^2,
+				</me>
+				where we have used the initial condition on <m>v_{y'}</m>. Integrating <m>v_{x'}</m> and <m>v_{y'}</m> we obtain the following for <m>x'</m> and <m>y'</m> coordinates after the particle is released at (<m>x'= h+R</m>, <m>y'=0</m>) at <m>t=0</m>.
+				<md>
+					<mrow> \amp x'=h+R-\frac{1}{2}gt^2</mrow>
+					<mrow> \amp y'=-\frac{1}{3} \Omega g t^3</mrow>
+				</md>
+				From the <m>x'</m> equation we can determine the time <m>T</m> for the particle to the surface of Earth, which has <m>x' = R</m>.  Using this time in the <m>y'</m> equation we find the horizontal deviation  <m>y'</m>.
+				<me>
+					\Delta y' = - \frac{1}{3}\Omega g \left(\frac{2h}{g} \right)^{3/2}.
+				</me>
+				For a 100 meter drop we will find the deviation to be
+				<md>
+					<mrow> \Delta y' \amp = - \frac{1}{3}\frac{2\pi}{24\times 3600\ s} \times 9.81\ \text{m/s}^2 \times \left(\frac{2\times 100\  \text{m}}{9.81\ \text{m/s}^2} \right)^{3/2}</mrow>
+
+					<mrow> \amp = -2.2\times10^{-2}\  \text{m}.</mrow>
+				</md>
+				Since the rotation axis is towards the North, the <m>y'</m> axis is towards the East at the surface of the Earth.  Therefore, a particle dropped from <m>100\  \text{m}</m> above the ground will land approximately <m>2.2\text{ cm}</m> to the West of the line connecting the original position to the center of the Earth. 
+				<figure xml:id="fig-earth-frame-foucault-pendulum">
+					<caption>
+						Foucault pendulum. The rotation of the Earth causes the plane of oscillation of the pendulum to change over time. With changing plane of oscillation, the pins at different positions are knocked down at different times. Photo credit: Ciudad de las Artes y de las Ciencias de Valencia by Daniel Sancho, Wikicommons.
+					</caption>
+					<image source="./images/noninertial-frame/foucault-pendulum.png" width="80%"/>
+				</figure>
+ 
+
+			</p>
+
+
+
+		</statement>
+
+
+	</example>
+
+
+
+
+
+
+	<example xml:id="ex-Surface-of-a-Rotating-Fluid-in-a-Bucket"><title> (Calculus) Surface of a Rotating Fluid in a Bucket</title>
+		<statement>
+			<p>
+				A bucket of water is rotated with a uniform rotational speed  <m>\Omega</m>.  It is found the surface assumes a steady shape.  Determine the shape.  Ignore the rotation of earth.
+			</p>
+			<p>
+				Due to the symmetry in the problem, it is sufficient to work in a plane containing the axis of rotation and a horizontal direction as shown in  <xref ref="fig-earth-frame-bucket-rot"/>. 
+			</p>
+			<figure xml:id="fig-earth-frame-bucket-rot">
+				<caption>
+				</caption>
+				<image source="./images/noninertial-frame/bucket-rot.png" width="90%"/>
+			</figure>
+			<p>
+				We will call the axis of rotation the <m>z</m>-axis and the horizontal direction will be taken to be the <m>x</m>-axis. Therefore, to find the equation of the surface, we need to work out the function <m>z(x)</m>. We will make use of steady condition on a mass element at the surface.
+			</p>
+			<p>
+				Here, notice that it is easier to work in the rotating frame of the bucket since in this frame, liquid in the bucket will not be moving and will have zero acceleration. That is, in this frame, real forces will be balanced by inertial force(s).  Let us figure out the real and inertial forces on a mass element at the surface.
+			</p>
+			<p>
+				In the rotating frame once the steady state has reached, water would not be moving any more. Therefore the Coriolis force will be zero.  Thus, the only inertial force on particles of water will be the centrifugal force. The only other force is the weight.
+			</p>
+			<p>
+				Consider a mass element of mass <m>m</m> at the surface of the steady fluid.  The weight has magnitude <m>mg</m> and acts straight down. The centrifugal forces on various water particles and the weight of the water molecules will press on the layers of water in contact.  The water molecules on the surface will press on the molecules just below the surface.  The reaction force from the layer just below the surface will be in the normal direction of the surface as shown by <m>F_0</m> in <xref ref="fig-earth-frame-bucket-rot"/>. 
+			</p>
+			<p>
+				Therefore, the <m>x</m> and <m>z</m>-components of the equations of motion of an element at the surface of water in the rotating frame for a mass at the surface are:
+				<md>
+					<mrow>\amp x\text{-component: }\ \ \  m\Omega^2x-F_0\sin\theta=0</mrow>
+					<mrow> \amp z\text{-component: }\ \ \   F_0\cos\theta -mg=0</mrow>
+				</md>
+				Therefore,
+				<me>
+					\tan\theta = \frac{\Omega^2}{g}x
+				</me> 
+				But this tangent must equal the slope of the tangent to the curve <m>z(x)</m> at the point.
+				<me> 
+					\frac{dz}{dx} = \tan\theta.
+				</me> 
+				Therefore, we obtain the following equation for <m>z(x)</m>.
+				<me> 
+					\frac{dz}{dx} = \frac{\Omega^2}{g}x,
+				</me> 
+				which can be immediately integrated to yield
+				<me> 
+					z = \frac{\Omega^2}{2g}x^2 + C,
+				</me>  
+				where <m>C</m> is the constant of integration.  From the figure, <m>x=0</m> corresponds to <m>z=0</m> on the surface, therefore <m>C =0</m>.  Hence, the equation for the surface is
+				<me> 
+					z = \frac{\Omega^2}{2g}x^2.
+				</me> 
+				The situation is symmetric in the <m>xy</m>-plane and there is nothing special about <m>x</m>-axis.  To obtain the equation for the entire surface and not just a slice of the surface, all we need to do is to replace <m>x</m> by the radial distance <m>r</m> of polar coordinates.
+				<men>
+
+					z = \frac{\Omega^2}{2g}r^2.
+				</men>
+				Hence, the surface is a paraboloid of revolution about the axis of rotation.
+ 
+
+			</p>
+		</statement>
+	</example>
+
+
+	<exercises>
+
+
+	<exercise xml:id="ex-Landing-Point-of-a-Stone-Dropped-From-Some-Height"><title>(Calculus) Landing Point of a Stone Dropped From Some Height</title>
+
+		<statement>
+			<p>
+				A stone is dropped from rest from a height of 200 meters in a place at a latitude of 60 degrees and longitude 30 degrees.  How long will it take to reach the surface of the Earth and where will it land?
+			</p>
+		</statement>
+		<hint><p>Carefully choose coordinate systems and follow the <xref ref="ex-Freely-Falling-Particle-in-an-Earth-Based-Frame"/>.</p></hint>
+		<answer><p>See solution.</p></answer>
+		<solution>
+			<p>
+				I will work out the problem symbolically.
+			</p>
+			<p>
+
+				First we choose the rotating coordinate system with the direction of the <m>x</m>-axis towards the radially outwards direction of the spherical coordinates, the <m>y</m>-axis towards the azimuthal <m>\hat u_{\phi}</m> and the <m>z</m>-axis towards the opposite to the <m>\hat u_{\theta}</m>.  This will make the angular velocity vector <m>\Omega</m> of the Earth in the <m>xz</m> plane with the following components.
+				<me>
+					\vec \Omega = \Omega_x \hat u_x + \Omega_z \hat u_z,
+				</me>
+				with the expressions in terms of the angular speed <m>\Omega</m> and the latitude angle measured from the equator.
+				<me>
+					\Omega_x = \Omega \sin\lambda;\ \ \Omega_z = \Omega \cos\lambda.
+				</me>
+			</p>
+
+				<figure xml:id="fig-earth-frame-landing-point-falling-stone">
+					<caption>
+						 
+					</caption>
+					<image source="./images/noninertial-frame/landing-point-falling-stone.png" width="80%"/>
+				</figure>
+
+ 			<p>
+
+				The equations of motion in the rotating frame works out to be (one dot is one time derivative)
+				<md>
+					<mrow> \amp  \ddot{x} = - g - 2 \Omega_z \dot{y}.</mrow>
+					<mrow> \amp  \ddot{y} =  2 \Omega_z \dot{x}.</mrow>
+					<mrow> \amp  \ddot{z} =  - 2 \Omega_x \dot{y}.</mrow>
+				</md>
+				We need to solve these equations with the initial conditions <m>x_0 = R_E+ h</m>, <m>y_0 =0</m>, <m>z_0 = 0</m>, <m>v_{0x} = 0</m>, <m>v_{0y} = 0</m>, and <m>v_{0z} = 0</m>. As in the textbook, we will attempt an approximate solution noting that the particle will pick up velocity more along the local vertical direction than in the perpendicular directions.  That is the change in <m>v_x</m> will be considerably more than the changes in <m>v_y</m> and <m>v_z</m>.  That is, at the instant <m>t</m>, the magnitude of the <m>x</m>-component of the velocity my be approximated to
+				<me>
+					|v_x| \sim g t, \ \textrm{and}\ \ v_x \approx - g t.
+				</me>
+				This will give for the <m>y</m>-component
+				<me>
+					\ddot{y} \approx -   2 \Omega_z g t\ \ \Longrightarrow\ \ \dot{y} = - \Omega_z g t^2,
+				</me>
+				where I have used the initial condition <m>v_{0y}=0</m> to fix the constant of integration.  This gives for the <m>z</m>-acceleration
+				<me>
+					\ddot{z} \approx 2  \Omega_x  \Omega_zg t^2 \ \ \Longrightarrow\ \ \dot{z} =  \frac{2}{3}\Omega_x \Omega_z g t^3.
+				</me>
+				Now, we can integrate the velocities to obtain the coordinates at an arbitrary time <m>t</m>.
+				<md>
+					<mrow> \amp  x = R_E + h - \frac{1}{2} g t^2.</mrow>
+					<mrow> \amp  y = - \frac{1}{3}\Omega_z g t^3.</mrow>
+					<mrow> \amp  z = \frac{1}{6}\Omega_x \Omega_z g t^4.</mrow>
+				</md>
+				 Where will it land?  We find time <m>t=T</m> when the particle lands by equating <m>x</m> to <m>R_E</m>.
+				 <me>
+					 T = \sqrt{2h/g}.
+				 </me>
+				 Put this in <m>y</m> and <m>z</m> coordinates we find
+				 <md>
+					<mrow> \amp  x = 0.</mrow>
+					<mrow> \amp  y = - \frac{1}{3}\Omega_z g T^3.</mrow>
+					<mrow> \amp  z = \frac{1}{6}\Omega_x \Omega_z g T^4.</mrow>
+				</md>				
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+	<exercise xml:id="ex-Percentage-Mistake-when-Ignoring-Rotation-of-Earth"><title>Percentage Mistake when Ignoring Rotation of Earth</title>
+
+		<statement>
+			<p>
+				Calculate the percentage mistake made in evaluating the acceleration due to gravity when ignoring the rotation of earth?
+			</p>
+		</statement>
+		<hint><p>
+			Think centrifugal part.
+		</p></hint>
+		<answer><p>
+			<m>0.35\%</m>.
+		</p></answer>
+		<solution>
+			<p>
+				We compare <m>\Omega^2 R_E</m> with <m>g</m>, where <m>\Omega</m> is the angular speed of the rotation of the Earth.  Numerically,
+				<me>
+					\Omega^2 R_E = \left( \frac{2\pi}{24\times 3600\ \textrm{s}} \right)^2 \times 6.36\times 10^6\ \textrm{m} = 0.034\ \textrm{m/s}^2.
+				</me>
+				This gives
+				<me>
+					\frac{\Omega^2 R_E}{g} = \frac{0.034}{9.81}\times 100\% = 0.35\%.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Percentage-Mistake-when-Ignoring-Revolution-of-Earth"><title>Percentage Mistake when Ignoring Revolution of Earth around the Sun</title>
+
+		<statement>
+			<p>
+				 Calculate the percentage mistake made in evaluating acceleration due to gravity when ignoring the revolution of earth around the sun?
+			</p>
+		</statement>
+		<hint><p>
+			Think centrifugal part.
+		</p></hint>
+		<answer><p>
+			<m>0.06\%</m>.
+		</p></answer>
+		<solution>
+			<p>
+				For the revolution about the sun, the angular speed of the motion in the circle will be
+				<me>
+					\Omega = \frac{2\pi}{365\times 24\times 3600\ \textrm{s}} = 2.0\times 10^{-7}\ \textrm{rad/sec}.
+				</me>
+				Therefore, <m>\Omega^2 R</m> with <m>R</m> the radius of the orbit of the Earth will be
+				<me>
+					\Omega^2 R= \left( 2.0\times 10^{-7}\ \textrm{rad/sec} \right)^2 \times 1.5 \times 10^{11}\ \textrm{m} = 0.006\ \textrm{m/s}^2,
+				</me>
+				which is <m>0.06\%</m> of <m>g</m>.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Satellite-in-a-Geocentric-Orbit"><title>Satellite in a Geocentric Orbit</title>
+
+		<statement>
+			<p>
+				A satellite is in the Geocentric orbit about Earth at a distance <m>R</m> from the center of the Earth.  The satellite revolves around Earth in a circular motion with the angular speed <m>\Omega</m>, which is equal to the angular speed of the Earth about the same axis, as observed from a fixed frame.
+			</p>
+			<p>
+				(a) Describe the motion of the satellite with respect to a frame with the origin at the center of Earth and which rotates with the Earth. (b) Write the equation of motion of the satellite in the rotating frame and in a frame fixed with its origin at the center of the Earth and the <m>z</m>-axis along the axis of the rotation of the Earth.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution><title>a</title>
+			<p>
+				A line from the center of the Earth to the satellite rotates at the same rate as the revolution of the satellite.  Therefore, the satellite will be at rest in this frame.
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				Fixed Frame: Let us write the equations of motion with respect to the fixed frame.  For simplicity we look at a satellite that is above some point on the equator. Let <m>(x,y,z)</m> be the coordinates of the satellite in this frame and let the <m>z</m>-axis be the axis of rotation.  Then, we have <m>z=0</m>. The satellite will appear to be in a circular motion of radius <m>R</m>.  Therefore, the equation of motion of the satellite will be
+				<me>
+					G_N \frac{M m }{R^2} = m \frac{v^2}{R},
+				</me>
+				where <m>M</m> is the mass of the Earth, <m>m</m> the mass of the satellite, and speed of the satellite
+				<me>
+					v = \Omega R.
+				</me>
+				Rotating Frame: Now, the satellite will be at rest and the acceleration will also be zero.  This gives the following equation of motion for the satellite.
+				<me>
+					G_N \frac{M m }{R^2} (-\hat u_r)= m \vec \Omega \times (\vec \Omega \times R \hat u_r),
+				</me>
+				where <m>\hat u_r</m> is the unit vector from the origin to the position of the satellite and the direction of the vector <m>\vec\Omega</m> is towards the axis of rotation.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+</exercises>
+
+
+
+
+
+</section>

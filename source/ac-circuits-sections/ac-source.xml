@@ -1,0 +1,180 @@
+<section xml:id="AC-Source"><title> AC Source </title>
+	<introduction>
+		<p>
+			Alternating current (AC) circuits form the backbone of distribution of electricity to households and industry.   The behavior and analysis of AC circuits are very different than Direect Current (DC) circuits, so you would have to learn anew how to calculate currents and voltages in an AC circuit.  To start with, a current in DC circuit always points in the same direction, but in an AC circuit, the direction of current changes with time as illustrated in <xref ref="fig-ac-dc-fig-1"/>.
+		</p>
+		<figure xml:id="fig-ac-dc-fig-1">
+			<caption>
+				In a direct current (DC) the direction of current remains fixed in time.  In an alternating circuits (AC) the direction of the current changes with time. 
+			</caption>
+			<image source="./images/ac-circuits/ac-dc-fig-1.png" width="80%"/>
+			
+		</figure>
+ 
+		<p>
+			In this chapter we will study AC circuits where the current in a circuit is driven by an oscillating electromotive force, which we will refer to as voltage. We are going to use symbol <m>V</m> instead of symbol <m>\mathcal{E}</m> for EMF and voltage.
+			<me>
+				V(t) = V_0 \cos(2\pi f t + \phi),
+			</me>
+			where <m>V_0</m> is the <term>amplitude</term> of the oscillating voltage, <m>f</m> the <term>frequency</term> of oscillations, and <m>\phi</m> the <term>phase constant</term>. Amplitude <m>V_0</m> is also called <term> peak voltage </term> of the source.  The argument of cosine, here <m>(2\pi f t + \phi)</m> is called the <term>phase</term> of the source.  Sometimes the phase constant <m>\phi</m>  itself is called the <term>phase</term>.
+		</p>
+		<p>
+			If there is only one source we pick the zero of time such that <m>\phi</m> can be set to zero.  But, if you have two or more sources, such as in common three-phase line discussed below, their phase constants may be different even when the sources may fluctuate with the same frequency.  In that case, the phase constant gives us important information about the relative timings of peaks and troughs of different sources.  We keep track of the relative phases of different sources with respect to the zero phase constant of one of the sources.
+		</p>
+		<p>
+			The voltage across the AC source fluctuates between <m>-V_0</m> and <m>+V_0</m> with the frequency <m>f</m>.  That is, <alert>one terminal of the source could be positive at one time and negative at another time with respect to the other terminal of the source</alert>.  This change in voltage leads to current into the source changing direction with time at the same frequency.
+		</p>
+		<p>
+			In the United States, frequency of the supply line was chosen to be 60 cycles per second, i.e., <alert>60 Hertz (Hz)</alert>.   In most of the world, frequency of the AC supply line is 50 Hz. In the early days of the AC power production, different frequencies were  in use by different companies and with the commercial success of Westinghouse in the US 60 Hz became standard in the US and that of AEG in Germany led to the widespread adoption of 50 Hz in Germany. Japan uses both 60 Hz and 50 Hz lines which can be traced to the initial purchase of generators from AEG of Germany and General Electric from US.  There does not appear to be any advantage of one frequency over the other.  However, instruments and devices built to operate at one frequency may not work properly if connected to a different frequency source.
+
+		</p>
+	</introduction>
+	<subsection><title> Phases of Power Lines</title>
+		<p>
+			Power lines for the industrial machines and equipment as well as power transmission lines in the US have three phases instead of one because a three-phase line provides a more uniform power than a one-phase line as you will see below.  One of the ways three phases are transmitted is through the use of four wires in the transmission line, with one being the ground, and the voltage in the other three with respect to the ground having phase constants <m>120^{\circ}</m> or <m>\frac{2}{3}\pi</m> rad apart. 
+			<md>
+				<mrow> \amp  V_1 = V_0\: \cos(2\pi f t)</mrow>
+				<mrow> \amp  V_2 = V_0\: \cos\left(2\pi f t + \frac{2\pi}{3} \right)</mrow>
+				<mrow> \amp  V_3 = V_0\: \cos\left(2\pi f t + \frac{4\pi}{3} \right)</mrow>
+			</md>
+			To understand the difference in power fluctuation with time in a one-phase line compared to a three-phase line consider connecting a resistance to each of the voltage sources.  As each of the phases in the three-phase line acts independently, we connect each to a separate load in a Y-to-Y connection (<xref ref="fig-ac-dc-fig-2"/>).  You can look up an advanced book on electric circuits for other ways three-phase lines are connected to circuits.  Our objective here is to illustrate power fluctuation in the circuit and a simple Y-to-Y connection will be sufficient.  We make a calculation to compare power per load in the two circuits.
+		</p>
+		<figure xml:id="fig-ac-dc-fig-2">
+			<caption>
+				(a) One phase connection across a resistor, and (b) a four-wire Y-to-Y connections for a three-phase circuit.   There are other configurations for connecting a three-phase circuits.
+			</caption>
+			<image source="./images/ac-circuits/ac-dc-fig-2.png" width="80%"/>
+			
+		</figure>		
+
+
+		<p>
+			Suppose a resistor of resistance <m>R</m> is connected to each phase of an AC source.  What will be the power delivered in the case of a one-phase versus a three-phase source? We have seen in the last chapter that the instantaneous power delivered to a resistor <m>R</m> in the one-phase line varies with time.
+			<me>
+				P_{\textrm{one-phase}}(t) =\frac{V_0^2}{R} \cos^2(\omega t).
+			</me>
+			The instantaneous power delivered to three identical resistors in a three-phase circuit will be independent of time as you can easily verify by expanding the trigonometric functions in the following expression.
+			<md>
+				<mrow> P_{\textrm{three-phase}}(t)  \amp  =\frac{V_0^2}{R}\left[ \cos^2(\omega t) + \cos^2\left(\omega t+ \frac{2\pi}{3}\right) + \cos^2\left(\omega t+ \frac{4\pi}{3}\right) \right]</mrow>
+			  	<mrow> \amp  = \frac{3}{2}\: \frac{V_0^2}{R}.</mrow>
+			</md>
+			Hence, the total power in a three-phase line is steady as opposed to the pulses  in single-phase AC circuits (<xref ref="fig-ac-phases-a"/>).  This is a great advantage, giving three-phase lines greater stability than identical single-phase line.  <term>Nikola Tesla</term> (1856-1943) was the discoverer of polyphase currents who employed two-phase current separated by 90-degree phase.  The unit of magnetic field in the SI system of units, viz., <m>\text{Tesla}</m>, is named after Nikola Tesla.
+
+		</p>
+
+		<figure xml:id="fig-ac-phases-a">
+			<caption>
+				Instantaneous power in an AC circuit using one-phase-one-load versus power in a circuit using a three-phase-three-load line.   For these graphs, set <m>V_0 = 1</m> V, <m>R=1\ \Omega</m>, and <m>f=1</m> Hz.   The successive peaks in the one-phase circuit corresponds to the positive and negative cycles of the AC current respectively. The dashed line shows the average power delivered to one resistor, which is the same in the two cases.
+			</caption>
+			<image source="./images/ac-circuits/ac-phases-a.png" width="80%"/>
+			
+		</figure>
+
+	</subsection>
+
+
+
+	<subsection><title>Phases of Currents and voltages </title>
+
+		<p>
+			All currents in the circuit will have the same frequency of oscillation as the driving voltage, but their phases and magnitudes would be different.  We will therefore denote each current <m>I_a</m> by its magnitude <m>I_{a0}</m> and phase constant  <m>\phi_a</m> for some <m>a</m>. 
+			<me>
+				I_a = I_{a0}\: \cos(\omega t + \phi_a)
+			</me>	
+			Usually the phase of one of the source voltage will be taken to be the zero-phase reference, and we will then write phases of other quantities relative to this reference.  Sometimes we compare two oscillating quantities against one another, and speak of one quantity either leading the other or lagging behind the other.  When a current <m>I_1</m> in the circuit leads another current <m>I_2</m> in phase, we mean that <m>\phi_1-\phi_2</m>  is positive.  In <xref ref="fig-ac-phases-1a"/>, two sinusoidally oscillating functions whose phase difference or phase shift is  <m>\pi/2</m> rad or <m>90^{\circ}</m>  is  illustrated.
+		</p>
+ 
+
+		<figure xml:id="fig-ac-phases-1a">
+			<caption>
+				Plot of two oscillating quantities that have a difference of   <m>\pi/2</m> radians in phase.  Here  functions represented by the phasors are: <m>A(t) = \cos(2\pi f t)</m> and  <m>A(t) = \cos(2\pi f t-\pi/2)</m>.  The quantity <m>A</m> leads <m>B</m>, or equivalently,  <m>B</m> lags <m>A</m> as by <m>90^{\circ}</m> when the phasors rotate in time. The positions of the phasors at <m>t=0</m> and <m>t=t_1</m> are indicated in the figure.
+			</caption>
+			<image source="./images/ac-circuits/ac-phases-1a.png" width="80%"/>
+			
+		</figure>
+
+
+		<p>
+			<!-- The meaning of leading and lagging of phases will become clearer as we study example circuits below.  -->
+			In the analysis of an AC-circuit, our task will be to determine the dependence of the magnitude <m>I_0</m> and phase  <m>\phi</m>  of currents in each branch on <m>V_0</m>, <m>\omega</m>  and the circuit elements, such as resistance <m>R</m>, inductance <m>L</m> and capacitance <m>C</m>.  <!-- We illustrate the AC circuit analysis with several examples below.  Once again, it is important to remember that AC circuit refers to the steady state behavior after the transient effects have disappeared in the circuit. -->
+		</p>
+		<p>
+			An AC circuit with only resistors, called a resistive circuit, does not require any special techniques.  In the resistive circuits the phases of all currents and voltages are same, and one can carry out the calculations similar to the DC circuits studied in a previous chapter.
+		</p>
+		<p>
+			But, when there are inductors and/or capacitors present in the circuit, then you must pay close attention to the phases since phases of currents in different branches will, in general be different and phases of voltages across circuit elements will be different. These complications in the calculations for inductive or capacitative circuits make calculations of even simple circuits difficult, as you will see below.  
+		</p>
+		<p>
+			Later in the chapter you will learn an alternative method based on complex algebra that eases the pain a bit, but even there you face tedious algebra.  Computer software have also been developed to help analyze complicated circuits.
+		</p>
+
+	</subsection>
+
+	<subsection><title>(Calculus) The Ideal AC Generator </title>
+		<p></p>
+		<p>
+			AC generator is the ultimate source of all power in the circuit.  In an AC generator a sinusoidally varying voltage <m>\mathcal{E}(t)</m> is generated  either by changing the magnetic field with time or moving wires in a magnetic field or both with angular frequency <m>\omega</m>, which is related to the frequency <m>f</m> by <m>\omega = 2\pi f</m>.
+			<me>
+				\mathcal{E}(t) = \mathcal{E}_0 \cos(\omega t).
+			</me>
+			Since the electric field generated by a changing magnetic field is a non-conservative field, in general, we cannot treat this voltage as a voltage between the two terminals of the AC generator. However, we can think of an <q>ideal generator</q> where with some assumptions it would be possible to introduce the concept of voltage for AC generators also.
+		</p>
+		<p> 
+			We will make two assumptions to help us in this regard:
+			<ol>
+				<li> The wires in the generator are perfect conductors.</li>
+				<li> The magnetic field outside the generator is zero.</li>
+			</ol>
+			By <q>perfect conductors</q> we mean that the net force on the conduction electrons is zero.  The vanishing of net force on the conduction electrons is necessary for ideal conductors otherwise we would have an infinite acceleration. 
+		</p>
+		<p>
+			The vanishing of the magnetic field outside the generator will imply that the electric field outside the generator will be conservative. This will allow us with the use of potential difference and voltage between points in space, specifically the two terminals of the generator. 
+		</p>
+		<p>
+			Now consider the simple rotating wire generator discussed in the chapter on the Faraday's law.  We had found that the voltage induced by the magnetic force on the moving charges in these generators with <m>N</m> turns is given by
+			<men xml:id="eq-generator-eqn-emf">
+				\mathcal{E}(t) =\omega N A B\cos(\omega t).  
+			</men>
+			This must be equal to the line integral of the electric field around a closed path, say aba in <xref ref="fig-ac-generator-1"/>, where the segment ab goes through the generator and the segment ba is outside the generator.
+		</p>
+		<figure xml:id="fig-ac-generator-1">
+			<caption>
+				A generator consisting of a coil that rotates in a magnetic field.  The line integral of the electric field is taken from a to b inside the generator and b to a outside.  The coil in the generator is assumed to be a perfect conductor and the magnetic field outside is assumed to be negligible. With this assumptions the line integral of the electric field in the loop is equal to the voltage between the terminals a and b.
+			</caption>
+			<image source="./images/ac-circuits/ac-generator-1.png" width="60%"/>
+			
+		</figure>
+		<p>
+			The line integral of the electric field around this closed loop separates into two parts - one for the inside and the other for the outside. 
+			<men xml:id="eq-generator-full-equation">
+				\oint \vec E\cdot d\vec l = {\int_{a}^b}_{[\textrm{inside}]} \vec E_{\textrm{in}}\cdot d\vec l +  {\int_{b}^a}_{[\textrm{outside}]} \vec E_{\textrm{out}}\cdot d\vec l 
+			</men>
+			First we note that this line integral over the complete loop, the quantity on the left side of this equation, must equal <m>-d\Phi_B/dt</m> by Faraday's law. Using Eq. <xref ref="eq-generator-eqn-emf"/>, we have
+			<men xml:id="eq-generator-left-side-equation">
+				\oint \vec E\cdot d\vec l = \omega N A B\cos(\omega t).
+			</men>
+			Since we have assumed the wire ab inside the generator  to be a perfect conductor, the electric field in them will be zero. Therefore, for the first term on the right side of Eq. <xref ref="eq-generator-full-equation"/> will be zero.
+			<men>
+				{\int_{a}^b}_{[\textrm{inside}]} \vec E_{\textrm{in}}\cdot d\vec l = 0 \ \ \textrm{(since perfect conductor)}
+			</men>
+			The second term on the right side of Eq. <xref ref="eq-generator-full-equation"/> has segment on the outside of the generator. Since, that part has conservative electric field, the integral will be independent of the path and will depend only upon the end points a and b.  The integral will equal to negative of the potential difference <m>(V_a - V_b)</m> between the ends.
+			<me>
+				{\int_{b}^a}_{[\textrm{outside}]} \vec E_{\textrm{out}}\cdot d\vec l  = -(V_a - V_b)\ \ \textrm{(since conservative <m>\vec E</m> field)}.
+			</me>
+			Now, we put all these together to write the final answer for the voltage ate the terminals of the AC generator.
+			<me>
+				V_b - V_a = \omega N A B) \cos(\omega t).
+			</me>
+			We can write this as time-dependent voltage <m>V(t)</m> by absorbing all the constants into one symbol, <m>V_0 = \omega N A B</m>.
+			<me>
+				V(t)  = V_0 \cos\left(\omega t \right),
+			</me>
+			We will call this voltage the AC voltage. 
+
+
+		</p>
+	</subsection>
+
+
+
+</section>

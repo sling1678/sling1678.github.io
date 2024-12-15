@@ -1,0 +1,52 @@
+<section xml:id="simple-dc-circuits"><title> Simple DC Circuits</title>
+	<introduction>
+
+		<p>
+			A network of electrical devices connected together is called a <term> circuit</term>. A conductor used in a circuit that has a significant resistance is also called a <term> resistor</term>.	When a circuit has only conductors and voltage sources, such as batteries, then the circuit is also called a <term> resistive circuit</term>. We will study circuits in which the potential difference between the terminals of the voltage sources does not change with time. These circuits are called <term> direct-current (DC) circuits</term>.
+		</p>
+		<p>
+			In a circuit diagram, a voltage source is usually represnted by two parallel unequal lines, with the higher potential end, i.e., the postitive terminal at longer line, and a resistor is represented  by a saw tooth line as shown in <xref ref="fig-dc-circuit-elements"/>. We label circuit elements with values relevant to them, e.g., source is labeled with the voltage value and a resistor with the value of resistance. 
+		</p>
+		<p>
+			Often batteries and other constant-voltage sources have significant resistance themselves, which adds to the total resistance of the circuit. The resitance of a source is also called the <term> internal resistance</term>. If the internal resistance is a significant factor in the circuit, we would include an internal resistance in the model as given in <xref ref="fig-dc-circuit-elements"/>(c), otherwise we will tend to ignore them.  
+		</p>
+		<figure xml:id="fig-dc-circuit-elements">
+			<image source="./images/electric-circuits/dc-circuit-elements.png" width="70%"/>
+			<caption>
+				Representating circuit elements: (a ) resistor, (b) DC voltage source, and (c) an electrolytic DC voltage source with internal resistance. Voltage source is labeled with a voltage value that give the potential difference between the two terminals, <m>\Delta \phi = \phi_+ - \phi_- = V</m>. The resistor is labeled with the value of resistance.
+			</caption>
+		</figure>
+	</introduction>
+	<subsection><title> A Simple DC Circuit</title>
+		<p>
+			When you connect a wire of resistance <m>R</m> to the two terminals of a battery of constant voltege <m>V</m>, as shown in <xref ref="fig-simple-circuit-physical-representation" /> you create potential difference across the resistor, whose value is <m>V</m>.
+			<men xml:id="eq-potential-diff-across-wire-connected-to-battery">
+				\Delta \phi = V.
+			</men>
+		</p>
+
+		<figure xml:id="fig-simple-circuit-physical-representation">
+			<image source="./images/electric-circuits/simple-circuit-physical-representation.png" width="70%"/>
+			<caption>
+				A wire of resistance <m>R</m> is connected across the terminals of a battery of voltage <m>V</m>. The potential drop across the resistor is <m>\Delta \phi = V</m>. Ohm's law applied to the wire gives current through the wire as <m>I = V/R</m>.
+			</caption>
+		</figure>			
+		<p>
+			When we apply Ohm's law to the resistor, we will get the following relation.
+			<me>
+				\Delta \phi = I R.
+			</me>
+			Using Eq. <xref ref="eq-potential-diff-across-wire-connected-to-battery"/> we get the following relation between the voltage of the battery and current through the wire.
+			<men>
+				V = I R.
+			</men>			
+ 			Now, we note that current is moving charges in the wire. Where do they go? Since charges are not accumulating any where, charges musl flow at the same rate inside the battery. Therefore, the current here is also current through the battery.
+ 			<me>
+ 				I_\text{inside battery} = I_\text{through wire} = \dfrac{V}{R}.
+ 			</me>
+ 			The current through the single voltage source is also called <term>overall current</term> of the circuit.
+		</p>
+
+
+	</subsection>
+</section>

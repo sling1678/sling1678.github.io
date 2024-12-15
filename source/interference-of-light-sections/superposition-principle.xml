@@ -1,0 +1,58 @@
+<section xml:id="section-light-superposition-principle"><title>Superposition Principle and Interference</title>
+	<introduction>
+		<p>
+			In your studies you have seen quite a few superposition principles. For instance, superposition of forces tells us that net force is the vector sum of all the forces.
+			<me>
+				\vec F_\text{net} = \vec F_1 + \vec F_2 + \cdots + \vec F_N.
+			</me>
+			Similarly, you saw that vector sum of electric fields at a point gives the actual electric field at that point.
+			<me>
+				\vec E = \vec E_1 + \vec E_2 + \cdots + \vec E_N.
+			</me>
+			Similarly for superposition of magnetic fields.
+			<me>
+				\vec B = \vec B_1 + \vec B_2 + \cdots + \vec B_N.
+			</me>
+			Since light consists of oscillating electric and magnetic fields, it will not come as a surprise that if you have  multiple waves, then the net wave will be sum of the individual waves.			
+		</p>
+ 
+		<p>
+			For illustrative purposes, suppose we have two sources of light at <m>\text{S}_1</m> and <m>\text{S}_2</m> as shown <xref ref="fig-superposition-of-two-sources"/> and we want to know the wave at some point P whose position is <m>\vec r</m>. Let the electric field waves from <m>\text{S}_1</m> and <m>\text{S}_2</m> at P be denoted by <m>\vec E_1(\vec r, t)</m> and <m>\vec E_2(\vec r, t)</m>, respectively. Then, the net electric field of the resulting wave at P will be
+			<men>
+				\vec E(\vec r, t) = \vec E_1(\vec r, t) + \vec E_2(\vec r, t).
+			</men>
+		</p>
+
+		<figure xml:id="fig-superposition-of-two-sources">
+			<caption>
+				 Superposition of two waves illustrated. The waves from sources <m>\text{S}_1</m> and <m>\text{S}_2</m> overlap in space. What will be the wave at point P?
+			</caption>
+			<image source="./images/interference-of-light/superposition-of-two-sources.png" width="80%"/>
+		</figure>
+ 
+
+		<p>
+			So, why is this a big deal? The big deal comes from the fact that we do not observe these fields, but only the intensity of the resulting wave. Now, you may recall that intensity is related to the time average of the square of the wave. In vector notation, intensity turns out to be
+			<men xml:id="eq-intensity-in-terms-of-electric-field-wave">
+				I = c\epsilon_0 \langle \vec E \cdot \vec E \rangle,
+			</men>
+			where <m>\langle ... \rangle</m> denotes time average of the quantity enclosed. Let <m>I_1</m> and <m>I_2</m> denote the intensities from souorces <m>\text{S}_1</m> and <m>\text{S}_2</m>.  That is,
+			<men>
+				I_1 = c\epsilon_0 \langle \vec E_1 \cdot \vec E_1 \rangle,\ \ I_2 = c\epsilon_0 \langle \vec E_2 \cdot \vec E_2 \rangle.
+			</men>
+			Now, using <m>\vec E = \vec E_1 + \vec E_2</m> in Eq. <xref ref="eq-intensity-in-terms-of-electric-field-wave"/> we see that net intensity at P will not equal just the sum of the intensities but it will also have other contributions.
+			<men>
+				I = I_1 + I_2 + 2 c\epsilon_0 \langle \vec E_1 \cdot \vec E_2 \rangle.
+			</men>
+			The third term on the right side is called the <term>interference term</term>. Since the dot product of two vectors can be zero, positive, or negative, this term will either have no effect at P, or give more intensity that just the sum of the intensities, or have lower intensity than the sum, respectively. 
+		</p>
+		<p>
+			This variation of intensity in space is said to be due to <term>interference</term> between the two waves and the resulting pattern of brightness and darkness is called <term>interference pattern</term>. When intensity at P is less than <m>I_1 + I_2</m>, we say that there is a <term>desctructive interference</term> there and when intensity at P is more than <m>I_1 + I_2</m>, we say that there is <term>constructive interference</term> there. 
+
+		</p>
+		<p>
+			Interference pattern is very sensitive to the distances from the sources. The change in interference can be used to detect and measure small distances, which can be of the order of the wavelength of light. For instance, when using visible light, it is possible to get sub-micron distances by interference quite easily.
+		</p>
+
+	</introduction>
+</section>

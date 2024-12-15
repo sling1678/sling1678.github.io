@@ -1,0 +1,40 @@
+<section xml:id="The-Wheatstone-Bridge"><title> The Wheatstone Bridge </title>
+
+	<introduction>
+		<p>
+			Perhaps the most famous bridge circuit is the Wheatstone bridge, which is used to measure resistances accurately.
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				The Wheatstone bridge circuit, shown in <xref ref="fig-wheatstone-bridge"/>, consists of four resistors connected to form a quadrilateral.  One of the sides of the quadrilateral contains the unknown resistor <m>R_{\times}</m>, another contains a variable resistor <m>R_V</m> and the remaining two contain high precision resistors <m>R_1</m> and <m>R_2</m>.  A voltage source V is connected to two opposite corners.
+			</p>
+			<p></p>
+			<figure xml:id="fig-wheatstone-bridge">
+				<caption> 
+					The Wheatstone bridge.
+				</caption>
+				<image source="./images/electric-circuits/wheatstone-bridge.png" width="35%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			 To detect the balance in the circuit, a sensitive detector of voltage difference, called a galvanometer G with a switch is connected between the other two corners of the bridge.  A galvanometer is a device that detects current using the magnetic property of current which we will study in a later chapter. When the resistors are related in a particular way, there is no potential difference between the points marked A and B, and the galvanometer shows no deflection.  This condition is called the <term>null condition</term> and the circuit is said to be balanced.
+		</p>
+
+
+		<p>
+			When there is no current in the AGB branch, then the circuit becomes simply a circuit of two resistances <m>R_1+R_{\times}</m> and <m>R_2+R_V</m> in parallel, and we can use the simple parallel circuits analysis to figure out the relation at the null condition.
+			<men xml:id="eq-wheatstone-bridge-null">
+				\dfrac{R_{\times}}{R_V} = \frac{R_1}{R_2}\ \ \ \text{(Null condition)}
+			</men>
+			At the null condition, let current <m>I_1</m> flow through the upper branch containing <m>R_1</m> and <m>R_\times</m>, and <m>I_2</m> flow through the lower branch containing <m>R_2</m> and <m>R_V</m>. At the null condition, the potential drop across <m>R_1</m> will equal the potential drop across <m>R_1</m>. Similarly, the potential drop across <m>R_\times</m> will equal the potential drop across <m>R_V</m>.
+			Therefore, we will get
+			<md>
+				<mrow> \amp I_1 R_1 = I_2 R_2, </mrow>
+				<mrow> \amp I_1 R_\times = I_2 R_V. </mrow>
+			</md>
+			Eliminating currents from these equations by dividing each side gives the Wheatstone null equation, <xref ref="eq-wheatstone-bridge-null" />.
+		</p>
+	</introduction>
+</section>
+
+ 

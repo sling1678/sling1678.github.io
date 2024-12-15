@@ -1,0 +1,150 @@
+<section xml:id="Conservation-of-Angular-Momentum"><title> Conservation of Angular Momentum</title>
+<idx>Conservation of Angular Momentum</idx>
+<idx><h>Angular Momentum</h><h>Conservation</h></idx>
+	<introduction>
+		<p>
+			From Newtons's second law for rotational motion, viz., <m>\mathcal{T}=I\alpha</m>, we have derived above that net rotational impulse equals change in angular momentum.
+			<me>
+				\vec J_{\text{rot,net,ext}} = \vec L_f - \vec L_i
+			</me>
+			From this, we can deduce that if rotational impulse is zero, then angular momentum cannot change.
+			<men>
+				\text{If  } \vec J_{\text{rot,net,ext}} = 0,\text {  then  } \vec L_f = \vec L_i.
+			</men>
+			This statement is called the <term>principle of the conservation of angular momentum</term>.  One simple situation in which <m>\vec J_{\text{rot,net,ext}}=0</m> is when no external torques are acting on a body, e.g., a rotating body in outer space. Such a body will continue to rotate forever at the same rotation velocity. Another situation in which <m>\vec J_{\text{rot,net,ext}}=0</m> is when line of force on the body passes through the axis of rotation, e.g., force by Sun on rotating Earth is approximately like that, and hence, Earth continues to rotate at approximately constant angular speed about an axis towards the North star. 
+		</p>
+
+
+		<p>
+			As a concrete example, suppose a spherical rotating star of moment of inertia <m>I_i</m> and angular speed <m>\omega_i</m> suddenly collapses to moment of inertia <m>I_f</m> and ends up rotating at angular speed <m>\omega_f</m> under a force pointed towards the center. Since centrally pointed force will have zero torque, and hence zero rotational impulse, we can say that angular momentum of the star will be cnserved. Therefore, we must have
+			<me>
+				I_i\omega_i = I_f\omega_f.
+			</me>
+		</p>
+		<p>
+			An important class of problems where principle of the conservation of angular momentum is very useful is in collisions. In a collision forces are internal and hence <m>\vec J_{\text{rot,net,ext}}=0</m>. We will see some examples in the next section.
+		</p>
+		
+ 		<p>
+			Principles of onservation of momentum, energy, and angular momentum are mire fundamental than Newton's laws of motion and apply to systems where Newton's laws do not hold, e.g. in quantum mechanics.
+		</p> 
+	</introduction>
+
+	<example xml:id="ex-A-Disk-Falling-on-a-Rotating-Disk-Slowing-Down-the-Disk"><title> A Disk Falling on a Rotating Disk Slowing Down the Disk </title>
+		<statement>
+			<p>
+				A disk of mass <m> M</m> and radius <m> R</m> is rotating at an angular speed <m>\omega</m>  about an axle through its center and vertical to its plane. 
+			</p>
+
+			<sidebyside widths="45% 55%">
+				<p>
+					Another disk of mass <m>M^\prime</m> and radius <m> R^\prime</m> falls on the axle and gets stuck as shown in <xref ref="fig-exer-ang-mom-cons-disk-falling-on-rotating-disk"/>.
+				</p>
+				<!-- <p></p> -->
+
+				<figure xml:id="fig-exer-ang-mom-cons-disk-falling-on-rotating-disk">
+					<caption>
+					</caption>
+					<image source="./images/rotation/exer-ang-mom-cons-disk-falling-on-rotating-disk.png" width="60%"/>
+				</figure>
+			</sidebyside>
+
+			<p>
+				The two rotate at a lower speed  <m>\omega^\prime</m> about the same axis passing through their common center. Find <m>\omega^\prime</m> in terms of the other quantities given.
+			</p>
+
+
+
+		</statement>
+		<!-- <hint> <p>  Apply conservation of angular momentum. </p> </hint> -->
+		<answer> <p> <m>\left( \dfrac{MR^2}{MR^2 + M^\prime {R^\prime}^2}\right)\, \omega</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Since the second disk falls along the direction of the rotating disk, its impulse cannot change the angular momentum around the vertical axis. Due to the sticking of the second disk, the moment of inertia after impact will be the sum of the moments of inertia of the two disks. Let us denote the moments of inertia of the two disks aby <m>I_1</m> and <m>I_2</m>.
+				<me>
+					I_1\, \omega = \left( I_1 + I_2 \right)\, \omega^\prime,
+				</me>
+				where
+				<me>
+					I_1 = MR^2,\ \ I_2 = M^\prime {R^\prime}^2.
+				</me>
+				Therefore,
+				<me>
+					\omega^\prime = \left( \dfrac{MR^2}{MR^2 + M^\prime {R^\prime}^2}\right)\, \omega.
+				</me>
+			</p>
+
+		</solution>
+	</example>
+
+	<example xml:id="ex-Increase-in-Spin-Rate-when-a-Star-Collapses-to-a-Neutron-Star"><title>  Increase in Spin Rate when a Star Collapses to a Neutron Star</title>
+		<statement>
+			<p>
+				A very stunning effect occurs when a neutron star is born. For instsnce, our Sun might one day collapse to a neutron star of <m> 10\text{ km}</m> radius neutron star. Currently, the Sun rotates at a spin rate of once every <m> 25\text{ days}</m> and has a radius of <m> 7\times 10^{5}\text{ km}</m>. How fast will the Sun be spinning as a neutron star? Give your values in turns per second.
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Use conservation of angular momentum </p> </hint> -->
+		<answer> <p> <m> 227,000</m> turns per second. </p> </answer>
+		<solution> 
+			<p>
+				 Since collapse will invilve only internal forces, angular momentum will be conserved. We assume the star is spherical and use the formula for the moment of inertia of a sphere.
+				<me>
+					\left( \dfrac{2}{5} M R_i^2 \right)\, \omega_i = \left( \dfrac{2}{5} M R_f^2 \right)\, \omega_f.
+				</me>
+				Solving for <m> \omega_f </m>, we get
+				<me>
+					\omega_f = \left( \dfrac{ R_i }{ R_f} \right)^2 \omega_i
+				</me>
+				Putting in numbers we get
+				<me>
+					49\times 10^{10}\times 2\pi\times \dfrac{1}{25} = 1.23\times 10^{11}\text{ rad/day},
+				</me>
+				which is <m> 227,000</m> turns per second, which is a bit on the high side. the acutal spin rates are lower than this value due to some loss of angular momentum by exiting particles during the collapse.
+
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="ex-Walking-on-a-Rotating-Platform"><title> Walking on a Rotating Platform </title>
+		<statement>
+			<sidebyside widths="55% 10% 35%">
+				<p>
+					Consider a platform of mass <m> M </m> and radius <m> R </m> with a person of mass <m> m </m> standing at a distance <m> a</m>  from the center.  The platform is initially rotating at angular speed  <m> \omega</m>.  
+				</p>
+				<p></p>
+				<image source="./images/rotation/exer-cons-ang-mom-person-walking-on-platform.png" width="50%"/>
+			</sidebyside>
+
+			<p>
+				When the person on the platform walks to another place on the platform with the radial distance  <m> b \lt a</m>,  the platform rotates faster.  
+			</p>
+			<p>
+				Find the new rotation speed assuming no change in any external torque being apllied to keep the platform rotating.
+			</p>
+
+
+		</statement>
+		<!-- <hint> <p>  Use conservation of angular momentum on the combined system of person plus the platform.</p> </hint> -->
+		<answer> <p> <m> \omega_f = \left( \dfrac{\dfrac{1}{2}MR^2 + ma^2 }{\dfrac{1}{2}MR^2 + mb^2} \right)\, \omega.</m>  </p> </answer>
+		<solution> 
+			<p>
+				Consider the platform and the person as one system with two parts. When the person moves on the platform, he is exerting force on the platform (and vice-versa) but these forces are all internal for this combined system. 
+			</p>
+			<p>
+				The other objects with which the parts of the system interact are gravity and some motor. The gravity is vertical, which is parallel to the axis, so it does not have torque about this axis. The motor is not putting more torque or reducing its torque. So, we have the condition of no external rotational impulse.
+			</p>
+			<p> 
+				The above arguments justify our use of the conservation of angular momentum. Let <m> \omega_f</m> be the final angular velocity of the platform and the person.
+				<me>
+					\left(\dfrac{1}{2}MR^2 + ma^2 \right)\, \omega = \left(\dfrac{1}{2}MR^2 + mb^2 \right)\, \omega_f.
+				</me>
+				Solving this we get
+				<me>
+					\omega_f = \left( \dfrac{\dfrac{1}{2}MR^2 + ma^2 }{\dfrac{1}{2}MR^2 + mb^2} \right)\, \omega. 
+				</me>
+			</p>
+
+		</solution>
+	</example>
+</section>

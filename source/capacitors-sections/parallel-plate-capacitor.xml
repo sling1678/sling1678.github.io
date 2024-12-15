@@ -1,0 +1,191 @@
+<section xml:id="Parallel-Plate-Capacitor"><title> Parallel Plate Capacitor </title>
+	<introduction>
+		<p>
+			A parallel plate capacitor consists of two large flat metal plates facing each other as shown in <xref ref="fig-parallel-cap"/>.
+		</p>
+		<sidebyside widths="60% 10% 30%">
+			<p>
+				The capacitance depends on the area <m>A</m> of the plates, their separation <m>d</m>, and dielectric constant <m>\epsilon_r</m> of the meterial between the plates. 
+				<men xml:id="eq-parallel-plate-capcitor-capacitance-formula">
+					C =  \dfrac{\epsilon_0 \epsilon_r\,A}{d},
+				</men>
+				where <m>\epsilon_0</m> is the permittivity of vacuum.
+			</p>
+			<p> </p>
+			<figure xml:id="fig-parallel-cap">		
+				<caption>
+				</caption>
+				<image source="./images/capacitors/parallel-cap.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+		<p><alert>Derivation of Capacitance Formula for a Parallel Plate Capacitor</alert></p>
+		<p>
+			<alert>  Strategy:</alert> To deduce the formula given in <xref ref="eq-parallel-plate-capcitor-capacitance-formula"/>, we find the potential difference <m>V</m> when plates are charged <m>\pm Q</m> and then get capacitance from <m>V/Q</m>.
+		</p>
+ 
+		<p>
+			Assuming plates to be infinitely large with charge density <m>\sigma = Q/A</m>, the electric field in the space between the plates will be constant and directed from positive plate to negativbe plat. If there is vacuum between the plates, electric field wil lhave the following magnitude,
+			<me>
+				E_0 = \dfrac{Q/A}{\epsilon_0},
+			</me>
+			and if there is a material of dielectric constant, <m>\epsilon_r</m>, between the plates, electric field will be
+			<me>
+				E = \dfrac{Q/A}{\epsilon_0\epsilon_r}.
+			</me>
+			Since electric field is constant between the plates, potential difference <m>\Delta \phi</m> or  <m>V</m> is simply the product of the field and the separation of the plates.	 	<me>
+				V=  Ed = \dfrac{Q d}{\epsilon_0 A}.
+			</me>
+			Now, fundamental capacitor equation tells us that <m>Q=CV</m>, i.e., <m>C = Q/V</m>. Therefore, capacitance is
+			<men xml:id="eq-parallel-plate-capcitor-capacitance">
+				C =  \dfrac{\epsilon_0 \epsilon_r\,A}{d}.
+			</men>
+		</p>
+		<p>
+			This shows that the capacitance of a capacitor depends on the geometrical features of the plates, such as surface area over which charges can spread, the separation between the plates, and the electric permittivity (<m>\epsilon_0 \epsilon_r</m>) of the medium between the plates.  
+		</p>
+
+
+	</introduction>
+
+	<subsection><title>Capacitor with a Dielectric between Plates</title>
+		<p>
+			A common way to increase the capacitance of a capacitor is to fill the space between the plates with a dielectric such as mica.  With the reduced electric field between the plates the potential difference between the plates would be less.  Therefore, you can put larger amount of charge on the plates for the same potential difference.
+		</p>
+		<p>
+			Let <m>C_0</m> be the capacitance with nothing between the plates and <m>C</m> the capacitance, when the space is filled with a dielectric of dielectric constant <m>\epsilon_r</m>. We found above that the two are related by
+			<me>
+				C = \epsilon_r C_0,
+			</me>
+			Usually mica, cardboard, or paper is put between the plates of a capacitor to increase the capacitance.   
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Capacitance-of-Parallel-Plate-Capacitor-as-Area-and-Separation-is-Varied"><title> Capacitance of Parallel Plate Capacitor as Area and Separation is Varied </title>
+		<statement>
+			<p>
+				A parallel plate capacitor is constructed from two aluminum foil sheets, each of dimensions <m> 20 \text{ cm} \times 20 \text{ cm}</m>.  The plates are separated by <m> 2 \text{ mm}</m> with nothing between the plates.  
+			</p>
+			<p>
+				(a) Evaluate the capacitance of the capacitor.  
+			</p>
+			<p>
+				(b) What will be the capacitance if  the distance between the sheets is increased to <m> 4 \text{ mm}</m>?  
+			</p>
+			<p>
+				(c) What will be the capacitance if the foils are cut into half making the dimensions <m> 20 \text{ cm} \times 10 \text{ cm}</m> each, but kept at a separation of <m> 2 \text{ mm}</m>?
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m> C = \epsilon_0 A /d</m>. </p> </hint>
+		<answer> <p> (a) <m>177 \text{ pF}</m>, (b) <m>88.5 \text{ pF}</m>, (c)  <m>88.5 \text{ pF}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				 (a) The capacitance of a parallel plate capacitor is given by
+				<md>
+					<mrow> C \amp = \dfrac{\epsilon_0\:A}{d}</mrow>
+					<mrow> \amp = \dfrac{8.85\times 10^{-12}\: \text{F/m}\times (0.2\:\text{m} \times 0.2\:\text{m} )}{0.002\:\text{m}} </mrow>
+					<mrow> \amp  = 177\:\text{pF}.</mrow>
+				</md>
+			</p>
+			<p>
+				(b)	If the distance between the plates, <m> d</m>,  goes up two-fold, then <m>C</m> would go down by a factor of 2.
+				<me>
+					C = \dfrac{177\:\text{pF}}{2} = 88.5\:\text{pF}
+				</me>
+			</p>
+			<p>
+				(c)	The capacitance varies directly as the area of the plates.  Since the area became half as much, the capacitance will become half also.
+				<me>
+					C = \dfrac{177\:\text{pF}}{2} = 88.5\:\text{pF}
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Copper-Plates-with-Mica-as-Capacitor"><title> Capacitor with Mica between Plates </title>
+		<statement>
+			<p>
+				The space between two copper plates of dimensions <m>20\text{ cm} \times 30\text{ cm}</m>  separated by <m>4\text{ mm}</m> is filled with mica.  
+			</p>
+			<p>
+				(a) Find the capacitance.  
+			</p>
+			<p>
+				(b) What is the percent by which the capacitance increased due to filling the space with mica?  
+
+			</p>
+			<p>
+				Data: <m> \epsilon_{r,\text{ mica}} = 7</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Use formula.  </p> </hint>
+		<answer> <p> (a)  <m> 0.93\text{ nF}</m>, (b)  600%. </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a)	Using the formula for the capacitance of a parallel plate capacitor with a dielctric we get
+				<md>
+					<mrow> C \amp = K\:\dfrac{\epsilon_0\:A}{d}</mrow>
+					<mrow> \amp = 7\times \dfrac{8.85\times 10^{-12}\:\textrm{F/m}\times 0.06\:\textrm{m}^2}{0.004\:\textrm{m}} = 0.93\: \textrm{nF}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b)	Since the capacitance increases by a factor of <m>\epsilon_r</m>, which is 7.
+				<me>
+					\dfrac{C-C_0}{C_0} = \epsilon_r - 1 = 6,
+				</me>
+				which is 600%.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Polarization-of-a-Dielectric-Between-Charged-Plates"><title> Polarization of a Dielectric Between Charged Plates </title>
+		<statement>
+			<p>
+				Two pieces of aluminum foil of dimensions <m>25\text{ cm} \times25\text{ cm}</m> is separated by a piece of paper of thickness <m>0.2</m> mm.  (a) Find the capacitance. (b) If the foils are oppositely charged with  <m>\pm 50\ \mu\text{C}</m>, what is the polarization of paper?  
+			</p>
+			<p>
+				Data: <m> \epsilon_{r,\text{ paper}} = 3.7 </m>.
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use Capacitance formula, (b) Polarization in a linear dielectric is <m>P =   \epsilon_0\: (\epsilon_r-1)\: E_0/\epsilon_r</m>, where <m>E_0</m> is the electric field without the dielectric. </p> </hint>
+		<answer> <p> (a)  <m>10.2\text{ nF}</m>, (b)  <m>580\ \mu\text{C/m}^2</m>.  </p> </answer>
+		<solution><title> (a) </title>
+			<p>
+				(a) Using the formula for the capacitance of a parallel plate capacitor filled with a dielectric we get
+				<md>
+					<mrow> C \amp = \epsilon_r\:\dfrac{\epsilon_0\:A}{d} </mrow>
+					<mrow> \amp = 3.7\times \dfrac{8.85\times 10^{-12}\:\textrm{F/m}\times 0.0625\:\textrm{m}^2}{0.0002\:\textrm{m}} = 10.2\: \textrm{nF}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title> (b) </title>
+			<p>
+				(b)	Polarization depends on the electric field in the dielectric, i.e., paper here, which is related to the electric field in vacuum through the dielectric constant.
+				<md>
+					<mrow> P \amp = \epsilon_0\: (\epsilon_r-1)\: E</mrow>
+					<mrow> \amp  = \epsilon_0\: (\epsilon_r-1)\: \dfrac{E_0}{\epsilon_r}</mrow>
+					<mrow> \amp = \dfrac{\epsilon_0\: (\epsilon_r-1)}{\epsilon_r}\:\dfrac{Q/A}{\epsilon_0},</mrow>
+					<mrow> \amp = \dfrac{ \epsilon_r-1}{\epsilon_r}\:\dfrac{Q}{A}</mrow>
+				</md>
+				Putting the numbers in the expression we find
+				<md>
+					<mrow> P \amp = \dfrac{3.7-1}{3.7}\:\dfrac{50\times 10^{-6}\:\textrm{C}}{0.25\times0.25\:\textrm{m}^2}</mrow>
+					<mrow> \amp = 5.8\times 10^{-4} \text{C/m}^2.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+</section>

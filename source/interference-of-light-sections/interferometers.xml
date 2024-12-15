@@ -1,0 +1,348 @@
+<section xml:id="section-interferometers"><title>Interferometers</title>
+	<introduction>
+		<p>
+			Interference of light has been used to build instruments called <term>interferometers</term> that permit us for measuring length, wavelength, and refractive index extremely precisely.  You can classify these instruments into two types:
+			<ol>
+				<li> Two-beam interferometer
+				</li>
+				<li>
+					Multiple-beam interfermometer
+				</li>
+			</ol>
+			In a two-beam interferometers, e.g. Michelson interferometer and Mach-Zehnder interferometer, a coherent source of light, such as the light from a laser beam, is split into two parts by an optical device such as a partially silvered mirror, which  are brought together for interference after traveling different paths.  In a multiple-beam interferometers, such as the Faby-Perot interferometer, a coherent source of light undergoes multiple partial reflections at the two sides of a medium. At each reflection some wave is transmitted through. All these transmitted waves are then focused together for collective interference. 
+		</p>
+
+		<p>
+			Because of the sensitivity of interference, interferometers have many uses. You will see interferometers used for detecting microscopic variations on surfaces such as flatness and rougness in silicon wafers, to mapping the surface of Earth,  analyzing air flows in wind tunnels, resolving spectral lines, etc. Perhaps, the most impressive uses of all is detection of gravitaitonal waves by Laser Interferometer Gravitational-Wave Observatory (LIGO). Visit <url source="https://www.ligo.caltech.edu/"> LIGO website</url> to learn more.
+		</p>
+ 
+		<p>
+			In the next two sections, we will go in detail for the working of two most-common interferometers - Michelson interferometer and Fabry-Perot interferometer.
+		</p>
+	</introduction>
+<!-- 	<subsection><title>Michelson Interferometer</title>
+		<p>
+			In a Michelson interferometer shown in <xref ref="fig-michelson-interferometer-drawing"/>, light from an extended source first splits into two beams by a half-silvered beam splitter at 45-degrees to the ray.  The two resulting waves travel perpendicularly to each other, and reflect off mirrors <m>\text{M}_1</m> and <m>\text{M}_2</m>. The reflected rays recombine resulting in interference which can be either viewed by naked eye or by projecting it on a screen with the use of a convergin lens.
+
+		</p>
+
+		<figure xml:id="fig-michelson-interferometer-drawing">
+			<caption>
+				Michelson's interferometer.
+			</caption>
+			<image source="./images/interference-of-light/michelson-interferometer-drawing.png" width="80%"/>
+		</figure> 
+
+		<p>
+			To compare the phases of the rays in the two arms we start from a point, say <m>\text{O}^\prime</m>, when the two were together and go to a point, say <m>\text{E}</m>, when they come together again. Therefore we will calculate the phase difference between the optical histories, i.e., reflections, wavelengths, and path lengths, of <m>\text{O}^\prime\text{OBCM}_1\text{CBOE}</m> <m>\equiv</m> <m>\text{OM}_1\text{E}</m> and <m>\text{O}^\prime\text{OAM}_2\text{AOE}</m> <m>\equiv</m> <m>\text{OM}_2\text{E}</m>. We will combine the path length and refractive index to write optical path length. For instance if a wave travels a distance <m>l</m> in a medium of refractive index <m>n</m>, then it has traveled an optical path length (<m>\text{OPL}</m>) given by
+			<me>
+				\text{OPL} = nl.
+			</me>
+			The phase flip will be included in <m>\text{OPL}</m> by adding half a wavelength.
+			<me>
+				\text{OPL}_\text{phase flip} = \frac{\lambda}{2}.
+			</me>
+		</p>
+		<p>
+			The optical path lengths <m>\text{O}^\prime\text{O}</m> is common to the two paths. The compensator is inserted in the path of the ray <m>\text{OM}_1\text{O}</m> so that the optical path lengths(OPL) for   <m>\text{BC} + \text{CB}</m> for the path on arm 1 is equal to the OPL for <m>\text{OA} + \text{AO}</m> for the path on arm 2.  Therefore, the net optical path length difference between the two arms comes from the distances to the mirrors and the phase shift when  reflecting off of a higher refractive index material. 
+		</p>
+
+		<p>
+			The ray <m>\text{O}^\prime\text{M}_2\text{E}</m> has one reflection at <m>\text{M}_2</m> that changes phase by <m>\pi</m>  radians, while ray <m>\text{O}^\prime\text{M}_1\text{E}</m> has two such reflections, one at <m>\text{M}_1</m> and the other at <m>\text{O}</m>.  Therefore, the condition of destructive interference will result if the phase difference is an integer multiple of <m>2\pi</m>, namely, <m>0</m>,  <m>2\pi</m>,   <m>4\pi</m>, etc, because the difference in phase flip due to reflections make the  phases of the waves in the two arms off by <m>\pi</m>  radians already.
+			<md>
+				<mrow>  \amp  2\times\left|\text{OB}+ \text{CM}_1 - \text{AM}_2 \right| \times \frac{2\pi}{\lambda_0} </mrow>
+				<mrow> \ \ \ \ \ \ \ \ \  \ \amp  = m'\times 2\pi,\ \ m'=0,\ 1,\ 2,\ \cdots\ \ (\text{Destructive}).</mrow>
+			</md>
+			where  <m>\lambda_0</m> is the wavelength in air. Simplifying this equation, we find the following.
+			<me>
+			 \left|\text{OB} + \text{CM}_1 - \text{AM}_2 \right|  = m'  \frac{\lambda_0}{2},\ \ m'=0,\ 1,\ 2,\ \cdots\ \ (\text{Destructive}).
+			</me>
+			But, this only gives the condition for a ray coming horizontally from the source.  How do we find the interference conditions for rays at other angles?  To address this question, notice that when you look at the incoming rays from the beam splitter, you are seeing reflections of  the source in mirrors <m>\text{M}_1</m> and <m>\text{M}_2</m>.  We can redraw a conceptual diagram of the Michelson's interferometer, where we display the image of the source in the mirrors, and how light from one point on the source must reflect to reach the back of the eye after converging from the eye lens as shown in <xref ref="fig-michelson-interferometer-effective-geometry"/>.			
+		</p>
+		<figure xml:id="fig-michelson-interferometer-effective-geometry">
+			<caption>
+				Effective geometry of interference of waves in a Michelson's interferometer.
+			</caption>
+			<image source="./images/interference-of-light/michelson-interferometer-effective-geometry.png" width="80%"/>
+		</figure> 
+		<p>
+			In the figure, plane <m>\text{Q}_1</m> is the image of plane P in mirror <m>\text{M}_1</m> and plane <m>\text{Q}_2</m> is the image in mirror <m>\text{M}_2</m>.  Points <m>\text{Q}_1</m> and <m>\text{Q}_2</m> are image of point P. To the eye, rays appear to come from the points <m>\text{Q}_1</m> and <m>\text{Q}_2</m>.  The interference of rays from <m>\text{Q}_1</m> and <m>\text{Q}_2</m> is observed by the eye.  Rays from all points P on the circle about the symmetry axis shown in the figure will meet on a circle that has point Q.  Rays inclined at the same angle   will either interfere constructively or destructively depending upon the difference in path which is <m>\text{AQ}_2</m>.  We have already discussed above the effects of reflection in the two rays.  If the distance <m>\text{AQ}_2</m>is an integral multiple of  <m>\lambda_0/2</m>, then we would have a destructive interference.
+			<me>
+				\left|\text{AQ}_2 \right| = m' \frac{\lambda_0}{2},\ \ \ m'=0,\ 1,\ 2,\ \cdots\ \ (\text{Destructive}).
+			</me>
+			If the distance between the mirrors is <m>d</m>, and the angle the rays make is  <m>\theta</m>, then the condition for destructive interference is as follows.
+			<men xml:id="eq-michelson-1">
+				2d\cos\theta = m' \frac{\lambda_0}{2},\ \ \ m'=0,\ 1,\ 2,\ \cdots\ \ (\text{Destructive}). \label{}
+			</men>
+			This equation gives us the condition for destructive interference at points of a circle on the retina or screen that contains point Q.  Since, the view of an observer is limited, one can only see circles made on the retina by rays that are inclined up to a maximum angle. Various <m>m</m> values in Eq. <xref ref="eq-michelson-1"/>  refer to the corresponding angles of inclination for dark circles.  Thus <m>m = 0</m> interference is at the center. This is followed by a bright circle. The <m>m=1</m> destructive interference happens at the following angle of inclination.
+			<me>
+				m = 1:\ \ \ \cos\theta =  \frac{\lambda_0}{4d}.
+			</me>
+			Suppose you start with the distance to the mirror <m>\text{M}_2</m> greater than to <m>\text{M}_1</m> by some distance <m>d</m>, and move mirror <m>\text{M}_2</m> so that $d$ decreases.  That will cause <m>\cos \theta</m>  to increase, which will imply that the condition for darkness is closer to the horizontal direction than before.  This makes <m>m = 1</m> circle on the screen smaller.  As <m>d</m> gets smaller the circle for <m>m = 1</m> also gets smaller, and when you have moved by  a distance equal to  <m>\lambda_0/2</m>, the <m>m = 1</m> circle disappears.  All other fringes move correspondingly.  The circle in space which used to be occupied by <m>m = 1</m>,   is now occupied by <m>m = 2</m>, and the circle originally occupied by <m>m = 2</m> will now be occupied by <m>m = 3</m>, and so on.  Hence, if you focus on a particular place on the screen, a change in <m>d</m> can be found by observing the number of fringes that pass, and multiplying that number by half the wavelength.
+			<me>
+				\Delta d = N \frac{\lambda_0}{2}
+			</me>
+			This equation is often used for making precise measurements of  sub-micrometer distances from a known source of light and counting number of fringes that pass the detector. 
+
+		</p>
+	</subsection>
+
+	<exercise xml:id="exercise-precise-distance-measurement-by-Michelson-interferometer"><title>Precise Distance Measurement by Michelson Interferometer</title>
+
+		<statement>
+			<p>
+				A red laser light of wavelength <m>0.630\,\mu\text{m}</m> is used in a Michelson interferometer.  While keeping the mirror <m>\text{M}_1</m> fixed, as mirror <m>\text{M}_2</m> is moved. The  fringes are found to move past a fixed hair cross in the viewer.  Find the distance mirror <m>\text{M}_2</m>  is moved for a single fringe to move past the reference line.
+			</p>
+		</statement>
+		<hint><p>Use <m>\lambda/2</m> for each fringe.</p></hint>
+		<answer><p> <m>0.315\, \mu\textrm{m}</m>. </p></answer>
+		<solution>
+			<p>
+				We use the result of the Michelson interferometer interference condition.  For a 630 nm red laser light, then for each fringe crossing (<m>N = 1</m>), the distance traveled by <m>\text{M}_2</m> if you keep <m>\text{M}_1</m>  fixed will be:
+				<me>
+					\Delta d = 1\times \frac{0.630\,\mu\text{m}}{2} = 0.315\, \mu\textrm{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise> -->
+
+<!-- 	<subsection><title>Fabry-Perot Interferometer</title>
+		<p>
+			In 1899 Marie Fabry and Jean Perot in France built an interferometer which used multiple beams by coating the two sides partially with a highly reflecting material.  They found that multiple reflections resulted in much narrower interference fringes than other interferometers. It is widely used for precision spectroscopy, and as a gas laser cavity, among other things.
+		</p>
+		<p>
+			A Fabry-Perot interferometer shown in <xref ref="fig-fabry-perot-interferometer-setup"/> essentially consists of two parallel plates of glass whose inner surfaces are polished to a very high degree of flatness, and then coated with a highly reflecting thin film of silver or aluminum or some similarly good reflector.  The outer surface of these plates are ground to make a wedge shape so that light escaping the cavity between the plates does not reflect back in.  The distance <m>d</m> between plates can vary from a few millimeters to a few centimeters. Rays of light from an extended source enter the space between the reflecting plates, and  emerge on both sides after each reflection.  The rays emerging on the opposite end to the side of entrance are focused on a screen.  
+		</p>
+		<figure xml:id="fig-fabry-perot-interferometer-setup">
+			<caption>
+				 Fabry Perot interferometer.
+			</caption>
+			<image source="./images/interference-of-light/fabry-perot-interferometer-setup.png" width="80%"/>
+		</figure>
+		<p>
+			The extended light source, such as a mercury lamp is placed at the focal plane of  a converging lens <m>\text{L}_1</m> so that the rays coming from a single point of the source emerge parallel on the other side of the lens at a particular angle of inclination.  The transmitted rays from rays of same angle of inclination enter the space between the two partial reflectors.  focus on the same point in the focal plane of lens <m>\text{L}_2</m>.  For instance, the three rays A, B and C from the source point P shown in the figure converge at the same point Q on the screen.   The rays from points on the light source in a circle that contains P meet in a circle on the screen.  If the condition at Q is met for a constructive interference, we  will see a bright ring, while if the condition there corresponds to a destructive interference, there will be a dark ring there.  The interference pattern on the screen will have alternating bright and dark rings.  The reflectivity <m>r</m> of the coating can be adjusted to sharpen the rings as illustrated in <xref ref="fig-fabry-perot-rings-thickness-changing-with-r"/>.
+		</p>
+
+		<figure xml:id="fig-fabry-perot-rings-thickness-changing-with-r">
+			<caption>
+				 Calculated fringes for different reflectivities in a Fabry Perot interferometer:  (a) <m>r = 0.3</m>, (b) <m>r = 0.85</m>, (c) <m>r = 0.98</m>.
+			</caption>
+			<image source="./images/interference-of-light/fabry-perot-rings-thickness-changing-with-r.png" width="80%"/>
+		</figure>
+
+		<subsubsection><title>Interference Condition in Fabry-Perot Interferometer</title>
+			<p>
+				In Fabry-Perot interfermoter, its an infinte collection of waves that interfere. When we have only two waves as in  <xref ref="subsection-Derivation-of-Interference-Conditions-for-Dielectric-Film"/>, we saw that the condition depended on phase difference <m>\Delta_{12}</m> between the two waves. There, we had concluded that if <m>\Delta_{12}</m> is an integral multiple of <m>2\pi</m>, then we will have constructive interference.  
+
+				<me>
+					\text{Fabry-Perot Constructive: }\ \ \Delta_{12}=2m\pi\ \ (m \text{ integer})
+				</me>
+				To figure out an expression of phase difference <m>\Delta_{12}</m>, we analyze the optical paths as we did in <xref ref="subsection-Derivation-of-Interference-Conditions-for-Dielectric-Film"/>, of two succesive rays, shown as <m>\text{R}_1</m> and <m>\text{R}_1</m> in <xref ref="fig-fabry-perot-successive-rays"/>.  
+			</p>
+			<figure xml:id="fig-fabry-perot-successive-rays">
+				<caption>
+					  Geometry of Fabry-Perot for phase difference calculation between the successively transmitted wave.  The phase difference comes from path difference  of ABCDE and ABGF. Path ABCDE has two phase flipping reflections, one at B and the other at C, which make the net phase change due to reflection equal to <m>2\pi</m>. 
+				</caption>
+				<image source="./images/interference-of-light/fabry-perot-successive-rays.png" width="80%"/>
+			</figure>	
+			<p>
+				To find an expression of <m>\Delta_{12}</m> we figure out the difference of optical path lengths of ABCDE and ABGF. 
+				<me>
+					\Delta\text{OPL} = n (\text{BC} + \text{CD}) - n (\text{GF}).
+				</me>
+				Now, from <m>\triangle\text{ABX}</m>, we can see that
+				<me>
+					\text{AB} = \frac{d}{\cos\theta},\ \ \text{BX} = d\tan\theta.
+				</me>
+				Now, we note that BC, CD, and GF can be written using these since
+				<me>
+					\text{BC} = \text{CD} = \text{AB},\ \ \text{GF}=\text{EG}\sin\theta,\ \ \text{EG}=\text{BD}=2\text{BX}.
+				</me>
+				Therefore, we get the following for <m>\Delta\text{OPL}</m>
+				<md>
+					<mrow> \Delta\text{OPL} \amp = n \left( \frac{2d}{\cos\theta} - 2d\sin\theta\tan\theta \right)</mrow>
+					<mrow>  \amp = n\; \frac{2d}{\cos\theta} \times \cos^2\theta = 2 n d\cos\theta.</mrow>
+				</md>
+				Let <m>\lambda</m> be the wavelength in the medium of Fabry Perot. 
+				Now, we know that phase changes by <m>2\pi</m> radians when OPL changes by one wavelength, therefore, the phase difference between the two successive paths will be 
+				<men xml:id="eq-phase-difference-fabry-perot">
+					\Delta_{12} = 2\pi\times   \frac{\Delta\text{OPL}}{\lambda} = 2\pi \times\frac{2 n d\cos\theta}{\lambda}. 
+				</men>
+				Demanding this to be equal to <m>2m\pi</m> with <m>m</m> integers for constructive and equal to <m>m^\prime\pi</m> with <m>m^\prime</m> odd integers we get the interference conditions. Multiplying both sides by <m>\lambda/2\pi</m> we will write them as follows.
+
+				<mdn>
+					<mrow xml:id="eq-interference-constructive-fabry-perot">\amp \text{Constructive: }\ \  2 n d \cos\theta = m \lambda  \ \ (m\ \text{ integer})</mrow>
+					<mrow xml:id="eq-interference-destructive-fabry-perot">\amp \text{Destructive: }\ \  2 n d \cos\theta = m^\prime \lambda  \ \ (m^\prime\ \text{ odd})</mrow>
+				</mdn>
+			</p>
+
+			<p>	 	
+				It is interesting to note in these equations that higher order of interference, corresponds to smaller angle. 
+					<me>
+						\cos\theta_m \lt \cos\theta_{m+1}\ \ \Longrightarrow\ \ \theta_{m} \gt \theta_{m+1}.
+					</me>
+			</p>
+			<sidebyside widths="45% 5% 50%">
+				<p>
+					That is, higher order interference are more towards the center of the Fabry Perot patterns. Similarly, in the same order, higher wavelength will be towards the center.
+				</p> 
+				<p></p>
+				<figure xml:id="fig-fabry-perot-interference-order-and-wavelength">
+					<caption>
+						Higher orders and/or longer wavelengths towards center.
+					</caption>
+					<image source="./images/interference-of-light/fabry-perot-interference-order-and-wavelength.png" width="80%"/>
+				</figure>
+			</sidebyside>
+
+			
+	
+		</subsubsection>
+
+
+		<subsubsection><title>Intensity of Trnasmitted Waves in Fabry Perot</title>
+			<p>
+				A more complete understanding of the wave interference in Fabry Perot interferometer requires examining the actual electromagnetic waves as we did when we studied the Fresnel equations for reflection and transmission in <xref ref="subsection-Fresnels-Equations"/>. That work is a little bit beyond the scope of this book. Even so, it is important to discuss  implications of the results since Fabry Perot is used in many applications.
+			</p>
+			<p>
+				Let <m>R</m> be the reflectance of the surfaces on the two sides of the cavity. Let <m>I_t</m> be the intensity transmitted and <m>I_i</m> the incident intensity. Let <m>\Delta_{12}</m> be the phase difference between two successive waves in direction <m>\theta</m> as given in Eq. <xref ref="eq-phase-difference-fabry-perot"/>. The, the transmittance can be shown to be
+				<men xml:id="eq-transmittance-fabry-perot">
+					T \equiv \frac{I_t}{I_i} = \frac{1}{1 + F \sin^2(\Delta_{12}/2)},
+				</men>
+				where <m>F</m> is called the <m>finesse coefficient</m>  or <term>quality factor</term>. Finesse coefficient is a function of the reflectance.
+				<me>
+					F = \frac{4R}{(1-R)^2}.
+				</me>
+ 				Since <m>0\le R \le 1.0</m>, <m>F</m> is highly nonlinear. Typically, <m>R</m> is in the <m>0.90\text{ to } 0.98</m> range. That corresponds to <m>F</m> in range <m>360 \text{ to } 9,800</m>. With large finesse in Eq. <xref ref="eq-transmittance-fabry-perot"/>, transittance becomes highly sensitive to <m>\Delta</m>, giving sharp peaks when plotted against <m>\Delta_{12}</m> or <m>\theta</m>.
+
+			</p>
+			<p>
+				The maxima and minima of transmittance in Eq. <xxref ref="eq-transmittance-fabry-perot"/> will correspond to the constructive and destructive interference, respectively. Therefore, for a fixed <m>F</m>, you can immediately see that <m>T</m> will me maximum when <m>\sin(\Delta_{12}/2)=0</m>. This immediately says that constructive interference will occur when
+				<me>
+					\Delta_{12}/2 = n\pi,\ \ (n\ \text{ integer}),
+				</me>
+				which is the result we have before. Additioanlly, Eq. <xxref ref="eq-transmittance-fabry-perot"/> also tells us how the maxima wil lbe distributed. 
+			</p>
+			<sidebyside widths="45% 5% 50%">
+				<p>
+					<xref ref="fig-fabry-perot-transmittance-vs-delta12"/> show plots of the transmittance versus the phase difference for two values of reflectance, <m>R=0.5</m> and <m>R=0.8</m>. You can see that peaks, which correspond the fringes, become narrower with increase in reflectance. It is not uncommon to find laser cavities   <m>R=0.9999</m>. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-fabry-perot-transmittance-vs-delta12">
+					<caption>
+						  Transmittance versus phase difference. 
+					</caption>
+					<image source="./images/interference-of-light/fabry-perot-transmittance-vs-delta12.png" width="80%"/>
+				</figure>
+			</sidebyside>
+
+			<p>
+				I didn't plot that high a value here since you will just see a vertical in these plots if you used such values. A similar plot will result if we plot at a fixed angle but for various frequencies. This type of plot will give intensities of various frequencies in the direction specified by <m>\theta</m>. To do that we will write <m>\Delta_{12}</m> in terms of frequency by using <m>\lambda f = v = c/n</m>. We will also set <m>n=1</m> for air. This gives
+				<men xml:id="eq-fabry-perot-delta12-as-freq">
+					\Delta_{12} = f \times \left( 4\pi d \cos\theta \right).
+				</men>
+			</p>
+			<p>
+				<xref ref="fig-fabry-perot-transmittance-vs-freq"/> shows a plot of transmittance versus frequency for a fixed <m>\theta</m>. The peaks in this plot correspond to different values of constructive interference order. We can see this by setting the right side of Eq. <xref ref="eq-fabry-perot-delta12-as-freq"/> with an index to <m>f</m> in the interference condition.
+				<me>
+					f_m \times \left( 4\pi d \cos\theta \right) = 2\pi m,
+				</me>
+				where <m>m</m> is an integer.
+			</p>
+				<figure xml:id="fig-fabry-perot-transmittance-vs-freq">
+					<caption>
+						  Transmittance versus frequency. Frequency is shown in multiples of <m></m>. The point labeled <m>m</m> corresponds to <m>f=m\times \frac{c}{2d\cos\theta}</m>, where <m>c</m> is speed of light in vacuum. The value of <m>m</m> can be very large. For instance, with <m>\theta=30^\circ</m> and <m>d=0.5\text{m}</m>, for a frequency of <m>0.5\times 10^{14}\text{ Hz}</m>, you will have <m>m \sim 83,333 </m>.
+					</caption>
+					<image source="./images/interference-of-light/fabry-perot-transmittance-vs-freq.png" width="80%"/>
+				</figure>			
+			<p>
+				The peaks are called <term>resonant frequencies</term> of the cavity. 
+				The width of a peak is defined by the range of frequencies when transmittance is <m>0.5</m>. This width is called <term>full width at half maximum (FWHM)</term>. Between successive peask, say between <m>f_m</m> and <m>f_{m+1}</m>, there is low signal. This range is call <term>free spectral range</term>.
+
+			</p>
+
+		</subsubsection>
+
+ 
+		<subsubsection><title>Applications of Fabry-Perot Interferometer</title>
+			<p>
+				Fabry-Perot has been valuable tool for high-resolution spectroscopy. In spectroscopy, you are interested in separating light of different wavelengths (or equivalently, of different frequencies). If a source of light emits light of many frequencies, and you want to know how much of light in which frequency, you would use a spectroscope. A simple prism can also separate light light into component frequencies, but it is not as resolving as a high power Fabry-Perot instrument. In the next chapter we will study diffraction gratings, which can also achieve high resolution.
+			</p>
+			<p>
+				By looking at the properties that go into the interference condition in the Fabry-Perot interferometer, you can identify kinds of properties that you can use the interferometer for - it relates refractive index <m>n</m> of the medium, the length <m>d</m> of the cavity, and wavelength <m>\lambda</m> of light.
+				<me>
+					2\pi \times\frac{2 n d\cos\theta}{\lambda} = 2\pi m,\ \ (m\text{ integer})
+				</me>
+				Depending upon our particular purpose for using a Fabry-Perot interferometer, we may vary one of these parameters and study the change with a detector.
+			</p>
+			<p>
+				When the cavity plates are fixed to a definite separation <m>d</m>, the arrangement is also called an <term> etalon</term>.  For fixed <m>n</m> and <m>d</m>, the interference condition will depend upon the wavelength.  So, if light source consists of two wavelengths, say a red light of <m>650\text{ nm}</m> and a blue light of <m>450\text{ nm}</m>, two separate rings for each interference order <m>m</m> are illustrated in <xref ref="fig-fabry-perot-interference-order-and-wavelength"/>. Of course, to separate such a widely different wavelength, you don't need Fabry-Perot. 
+			</p>
+			<sidebyside widths="65% 5% 30%">
+			<p>
+				A famous high resolution use of Fabry-Perot took place in the separation of sodium yellow doublet of wavelengths <m>588.9950\text{ nm}</m> and <m>589.5924\text{ nm}</m>. You can see an image shown in <xref ref="fig-fabry-perot-sodium-doublet-from-hyperphysics"/> of the screen of sodium doublet in an experiment by visiting <url source="http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/sodium.html">Hyperphysics website</url>. The two lines are repeated for different orders.
+			</p>
+			<p></p>
+				<figure xml:id="fig-fabry-perot-sodium-doublet-from-hyperphysics">
+					<caption>
+						  Sodium doublet.
+					</caption>
+					<image source="./images/interference-of-light/fabry-perot-sodium-doublet-from-hyperphysics.png" width="80%"/>
+				</figure>			
+			</sidebyside>
+		
+			<p>
+				An instrument used for resolving spectral lines is rated by its <term>resolving power</term>. It is proportional to the inverse of minimum separation in wavelengths <m>\Delta\lambda_\text{min}</m> that the instrument can resolve .
+				<me>
+					\text{Resolving Power } \propto\ \frac{1}{\Delta\lambda_\text{min}}.
+				</me>
+				To make resolving power a dimensionless quantity, we multiply the right side by average wavelength. Thus,
+				<men>
+					\text{Resolving Power } =\left| \frac{\lambda_\text{av}}{\Delta\lambda_\text{min}}\right|.
+				</men>
+				How do we tell if two nearby wavelengths are separated? This is the same type of question as we had when we were studying telescopes. There, the question was how to tell if we could tell whether there were two stars or one star on the CCD. A commonly used criteria, called <term>Raleigh criterion</term> is that if the maximum of peak of one will be at less than half-width from the other peak, then we cannot be sure there are two peaks.
+			</p>
+			<p>
+				Suppose, we have a light that is mixture of two wavelengths <m>\lambda_1</m> and <m>\lambda_2 \gt \lambda_1</m>. When this light is sent through a Fabry-Perot, they form peaks at <m>\lambda_1</m> and <m>\lambda_2</m> with half-width at half maximum of each to be <m>w_1</m> and <m>w_2</m> respectively. Raleigh criterion says that to be resolvable, we must have
+				<me>
+					\lambda_2 \gt \lambda_1 + w_1\ \ \text{and}\ \ \lambda_1 \lt \lambda_2 - w_2.
+				</me>
+				If <m>w_2 \ge w_1</m>, then, we just need to check <m>\lambda_1 \lt \lambda_2 - w_2</m>. <xref ref="fig-fabry-perot-resolution-raleigh"/>(a) illustrates the idea behind what we would consider barely separated by Raleigh criterion. Figure (b) is visibly separated as you can see the dip between the peaks.
+			</p>
+			<figure xml:id="fig-fabry-perot-resolution-raleigh">
+				<caption>
+					  The idea of resolvability by Raleigh criterion illustrated. The case (a) is at the Raleigh criterion and (b) is much better than Raleigh.
+				</caption>
+				<image source="./images/interference-of-light/fabry-perot-resolution-raleigh.png" width="100%"/>
+			</figure>
+			<p>
+				We can use Eq. <xref ref="eq-transmittance-fabry-perot"/> to cast the resolving power in terms of finesse coefficient <m>F</m> of the instrument. For nearly normal incidence, resolving power can be shown to be
+				<men>
+					\text{Resolving Power } = \left|\frac{\lambda_\text{av}}{\Delta\lambda_\text{min}} \right| = \left[\frac{\pi \sqrt{F}}{2}\right]\, \frac{2 n d}{\lambda_\text{av}},
+				</men>
+				where the quantity between brackets, viz. <m>\pi \sqrt{F}/2 </m>, is called <term> finesse</term> of the instrument. 
+				You can use this formula to find <m>F</m> you would need, which can then be used to find the required reflectance on the cavity mirrors.
+			</p>	
+
+		</subsubsection>
+				 
+
+	</subsection>
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

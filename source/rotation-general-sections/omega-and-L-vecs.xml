@@ -1,0 +1,471 @@
+<section xml:id="sec-angular-velocity-and-angular-momentum"><title> Angular Velocity and Angular Momentum </title>
+<!-- 	<introduction>
+		 
+
+		<p>
+			To describe motion of a rigid body, we need to track its overall motion, e.g., motion of the center of mass of the body, and its changing orientation. In the last chapter, we studied orientation of a body relative to a fixed set of axes by marking a line on the rogid body, which following the orientation of the line. 
+		</p>
+		<p>
+
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				Another way to monotor rotation is by considering a second coordinate system fixed to tbe body and rotating with it. Let <m>O'x'y'z'</m> be a fixed coordinate system and <m>Oxyz</m> fixed to the body. Then angle <m>\phi</m>, which is <m>\angle x'Ox</m> gives us angle of rotation.
+			</p>
+			<p></p>
+			<figure xml:id="fig-simple-rotation-as-two-coordinate-problem-a">
+				<caption></caption>
+				<image source="./images/rotation-general/simple-rotation-as-two-coordinate-problem.png" width="70%"/>
+			</figure>
+		</sidebyside>
+ 		<p>
+ 			In this case, angular velocity will be
+ 			<me>
+ 				\omega = \frac{d\phi}{dt}.
+ 			</me>
+ 			This is also the <m>z</m>-component of angular velocity vector since rotation is about <m>z</m>-axis.
+ 			<me>
+ 				\vec \omega = \frac{d\phi}{dt}\; \hat k.
+ 			</me>
+ 			 
+ 		</p>
+	</introduction>
+	<subsection><title>Angular Velocity Vector, <m>\vec \omega</m></title>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				Magnitude of angular velocity vector is the rate at which body is rotating and direction is along the axis of rotation. Thus, if axis is along unit vector <m>\hat u</m>, then <m>\vec \omega = \omega\,\hat u</m>, where if <m>\omega</m> is positive, then, body will appear to rotate counterclockwise if look at the body from the unit vector direction side.
+			</p>
+			<p></p>
+			<figure xml:id="fig-angular-velocity-vector">
+				<caption></caption>
+				<image source="./images/rotation-general/angular-velocity-vector.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Just as any other vector, we can decompose <m>\vec \omega</m> into its Cartesian (or other types, such as polar) components.
+			<me>
+				\vec \omega = \omega_x\,\hat i + \omega_y\,\hat j + \omega_z\,\hat k. 
+			</me>
+		</p>
+		<p>
+			
+		</p>
+		
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				When we look at a point particle at position <m>\vec r</m> with velocity <m>\vec v</m>, then we can assign angular velocity vector <m>\vec \omega</m> to this motion such that
+			<men xml:id="eq-ang-vel-pos-vel">
+				\vec v = \vec \omega \times \vec r.
+			</men>
+			</p>
+			<p></p>
+			<figure xml:id="fig-angular-velocity-vector-velocity-vec">
+				<caption></caption>
+				<image source="./images/rotation-general/angular-velocity-vector-velocity-vec.png" width="70%"/>
+			</figure>
+		</sidebyside>
+	</subsection> -->
+
+	<subsection><title>Angular Momentum Vector, <m>\vec L</m></title>
+		<p>
+			The most fundamental definition is that of a point particle.  A point particle of mass <m>m</m> with velocity <m>\vec v</m> located at position <m>\vec r</m> as in <xref ref="fig-angular-velocity-vector-velocity-vec"/> has angular momentum 
+			<men>
+				\vec L = \vec r \times \vec p, 
+			</men>
+			which we can further expand to the following by using <xref ref="eq-ang-vel-pos-vel"/> in <m>\vec p = m\vec v</m>.
+			<men xml:id="eq-ang-mom-vector-single-particle">
+				\vec L = m \vec r \times (\vec \omega \times \vec r).
+			</men>
+		</p>
+		<p>
+			
+		</p>
+
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				 When a rigid body rotates, all of its particles rotate at the same angular velocity. But since different particles will be in different positions, their <m>\vec r</m> will be different. Say, we represent a rigid body by a collection of point particles of masses <m>m_i</m>, <m>i = 1, 2, \cdots, N</m>. Then, angular momentum of the body will be 
+				<men xml:id="eq-ang-mom-vector-multi-particle">
+					\vec L =  \sum_{i=1}^N m_i \vec r_i \times (\vec \omega \times \vec r_i).
+				</men>
+			</p>
+			<p></p>
+			<figure xml:id="fig-ang-mom-multi-particle">
+				<caption></caption>
+				<image source="./images/rotation-general/ang-mom-multi-particle.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		
+
+		<p>
+			Expanding this in components can be done by writing <m>\vec r</m> and <m>\vec \omega</m> into components and carrying out the cross product.
+			<me>
+				\vec r_i = x_i\,\hat i + y_i\,\hat j + z_i\,\hat k,\ \ \ \vec \omega = \omega_x\,\hat i + \omega_y\,\hat j + \omega_z\,\hat k.
+			</me>
+			Try to do this algebra to find the following expression for <m>x</m>-component <m>L_x</m>.
+			<mdn>
+				<mrow>\amp L_x = \sum_i m_i \left( y_i^2 + z_i^2\right)\omega_x - \sum_i m_i x_i y_i \omega_y - \sum_i m_i x_i z_i \omega_z. </mrow>
+			</mdn>
+			To bring some order to this complicated expression, it is common to introduce the following notation for multipliers of the components of angular velocity in this expression.
+			<mdn>
+				<mrow>\amp I_{xx}  = \sum_i m_i \left( y_i^2 + z_i^2\right)</mrow>
+				<mrow>\amp I_{xy}  = - \sum_i m_i x_i y_i </mrow>
+				<mrow>\amp I_{xz} = - \sum_i m_i x_i z_i</mrow>
+			</mdn>
+			These are different types of moment of inertia that affect <m>x</m>-component of angular momentum. With these symbols, <m>L_x</m> is easily written as
+			<men>
+				L_x = I_{xx}\omega_x + I_{xy}\omega_y + I_{xz}\omega_z.
+			</men>
+			Clearly, <m>y</m> and <m>z</m> components will work out similarly with the following results.
+			<men>
+				L_y = I_{yx}\omega_x + I_{yy}\omega_y + I_{yz}\omega_z,
+			</men>
+			with
+			<mdn>
+				<mrow>\amp I_{yy}  = \sum_i m_i \left( x_i^2 + z_i^2\right),</mrow>
+				<mrow>\amp I_{yx}  = - \sum_i m_i x_i y_i = I_{xy},</mrow>
+				<mrow>\amp I_{yz} = - \sum_i m_i y_i z_i.</mrow>
+			</mdn>
+			Note that <m>I_{xy}=I_{yx}</m>. Along <m>z</m>-axis
+			<men>
+				L_z = I_{zx}\omega_x + I_{zy}\omega_y + I_{zz}\omega_z,
+			</men>
+			with
+			<mdn>
+				<mrow>\amp I_{zz}  = \sum_i m_i \left( x_i^2 + y_i^2\right),</mrow>
+				<mrow>\amp I_{zx}  = - \sum_i m_i x_i z_i = I_{xz},</mrow>
+				<mrow>\amp I_{zy} = - \sum_i m_i y_i z_i = I_{yz}.</mrow>
+			</mdn>
+			We see that the vector relation between <m>\vec L</m> and <m>\vec \omega</m> requires multiple moments of inertia. In the fixed axis case, we just needed one of them. For instance, if the rotation axis is along <m>z</m>-axis so that <m>\vec\omega = \omega\hat k</m> and axes chosen so that <m>I_{xz}=0</m> and   <m>I_{yz}=0</m>, then  
+			<md>
+				<mrow>\amp L_z = I_{zz}\omega.</mrow>
+			</md>
+			In general, <m>\vec L</m> will not point in the same direction as <m>\vec \omega</m>.
+
+		</p>
+		<p>
+			Often, we write relation between components of <m>\vec L</m> and <m>\vec \omega</m> using a matrix multiplication notation.
+			<me>
+				\begin{pmatrix}
+  					L_x\\ 
+  					L_y\\
+  					L_z
+				\end{pmatrix} = 
+				\begin{pmatrix}
+  					I_{xx} \amp I_{xy} \amp I_{xz}\\ 
+  					I_{yx} \amp I_{yy} \amp I_{yz}\\
+  					I_{zx} \amp I_{zy} \amp I_{zz}
+				\end{pmatrix}
+				\begin{pmatrix}
+  					\omega_x\\ 
+  					\omega_y\\
+  					\omega_z
+				\end{pmatrix}			
+			</me>
+			While vectors <m>\vec L</m> and <m>\omega</m> are represented by column matrices, moment of inertia is represented by a <m>3\times 3</m> square  matrix. We say that moment of inertia is a <term>tensor</term> rather than scalar or vector. There are other tensor type properties in physics such as electic conductivity and refractive index tensors. 			
+
+		</p>
+	</subsection>
+
+	<example xml:id="ex-Angular-Momentum-of-a-Dumbbell"><title>Angular Momentum of a Dumbbell</title>
+
+		<statement>
+ 
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				 <xref ref="fig-ang-mom-dumbbell"/> shows a dumbbell of two point masses <m>m</m> and length <m>2a</m> placed on <m>z</m>-axis and rotating about the axis in the direction of unit vector <m>\hat u</m>. Ignore the mass of the connecting rod. Find the angular momentum of the dumbbell.
+			</p>
+			<p></p>
+			<figure xml:id="fig-ang-mom-dumbbell">
+				<caption></caption>
+				<image source="./images/rotation-general/ang-mom-dumbbell.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+
+		</statement>
+		<hint><p>
+			First find moments of inertia using coordinates of the two masses.
+		</p></hint>
+		<answer><p>
+			<m>\vec L = 2 m a^2  \omega_x \hat i +  2 m a^2  \omega_y \hat j </m>.
+		</p></answer>
+		<solution>
+
+			<p>
+				The coordinates of the two point masses of the rigid body are
+				<md>
+					<mrow>\amp x_1 = 0,\ y_1 = 0,\ z_1 = a</mrow>
+					<mrow>\amp x_2 = 0,\ y_2 = 0,\ z_2 = -a</mrow>
+				</md>
+				Now, we compute the six moments of inertia for this system.
+				<md>
+					<mrow>\amp I_{xx} = ma^2 + ma^2 = 2 m a^2 = I_{yy} </mrow>
+					<mrow>\amp I_{zz} = 0 </mrow>
+					<mrow>\amp I_{xy} = 0 = I_{xz} = I_{yz}  </mrow>
+				</md>
+ 
+				Let us write angular velocity vector  <m>\hat \omega </m> as 
+				<me>
+					\hat \omega = \omega_x\, \hat i + \omega_y\, \hat j + \omega_z\, \hat k.
+				</me>
+			</p>
+			<p>
+				Therefore, Cartesian components of angular momentum will be
+				<md>
+					<mrow>\amp L_x =  2 m a^2  \omega_x </mrow>
+					<mrow>\amp L_y =  2 m a^2  \omega_y </mrow>
+					<mrow>\amp L_z =  0 </mrow>
+				</md>
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="ex-Angular-Momentum-of-a-Dumbbell-skew-axis"><title>Angular Momentum of a Dumbbell About Arbitrary Axis</title>
+
+		<statement>
+ 
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				 <xref ref="fig-ang-mom-dumbbell-skew-axis"/> shows a dumbbell of two point masses <m>m</m> and length <m>2a</m> that rotates about an axis at angular speed <m>\omega</m> that is not a principal axis of the dumbbell. Pointing <m>z</m>-axis towards the axis of rotation leaves the dumbell rotating at an angle <m>\theta</m> with respect to the axis. 		 
+			</p>
+			<p></p>
+			<figure xml:id="fig-ang-mom-dumbbell-skew-axis">
+				<caption></caption>
+				<image source="./images/rotation-general/ang-mom-dumbbell-skew-axis.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Supposing that the masses are in <m>xz</m>-plane at time <m>t=0</m> so that azimuth of one of the masses is <m>\phi=\omega t</m>.  (a) Find angular momentum vector at an arbitrary instant. (b) Show that the magnitude of angular momentum is constant in time. Ignore the mass of the connecting rod. 
+		</p>
+		</statement>
+		<hint><p>
+			First find moments of inertia using coordinates of the two masses. Pick a moment to get <m>x</m> and <m>y</m> coordinates in terms of spherical angles.
+		</p></hint>
+		<answer><p>
+			(b) <m>2m\omega a^2\sin\theta</m>.
+		</p></answer>
+
+		<solution><title>(a)</title>
+
+		<sidebyside widths="50% 5% 45%">
+
+
+			<p>
+				(a)
+
+				Let's work out coordinates of the two masses at an instant when the azimuth angle for one of the masses is <m>\phi=\omega t</m> as shown in <xref ref="fig-ang-mom-dumbbell-skew-axis-sol"/>. From this figure, we can work out following coordinates of the two masses.
+			
+			</p>
+			<p></p>
+			<figure xml:id="fig-ang-mom-dumbbell-skew-axis-sol">
+				<caption></caption>
+				<image source="./images/rotation-general/ang-mom-dumbbell-skew-axis-sol.png" width="70%"/>
+			</figure>
+		</sidebyside>			
+
+			<p>
+ 				<md>
+					<mrow>\amp x_1 = a\,\sin\theta\cos\phi,\ y_1 = a\,\sin\theta\sin\phi,\ z_1 = -a\cos\theta</mrow>
+					<mrow>\amp x_2 = -x_1,\ y_2 = -y_1,\ z_2 = -z_1</mrow>
+				</md>	
+				Now, we compute the six moments of inertia for this system.
+				<md>
+					<mrow>\amp I_{xx} = 2ma^2(\sin^2\theta \sin^2\phi + \cos^2\theta) </mrow>
+					<mrow>\amp I_{yy} = 2ma^2(\sin^2\theta \cos^2\phi + \cos^2\theta) </mrow>
+					<mrow>\amp I_{zz} = 2ma^2(\sin^2\theta \cos^2\phi + \sin^2\theta \sin^2\phi )  = 2ma^2\sin^2\theta </mrow>
+					<mrow>\amp I_{xy} =  -2ma^2\sin^2\theta \sin\phi\cos\phi</mrow>
+					<mrow>\amp I_{xz} =  2ma^2\sin\theta\cos\theta \cos\phi </mrow>
+					<mrow>\amp I_{yz} = 2ma^2\sin\theta\cos\theta \sin\phi  </mrow>
+				</md>
+ 				Since angular velocity is pointed towards <m>z</m>-axis, we have
+ 
+				<me>
+					\omega_x=0,\ \ \omega_y=0,\ \ \omega_z = \omega.
+				</me>
+			</p>
+			<p>
+				Therefore, after using <m>\phi=\omega t</m>, Cartesian components of angular momentum will be
+				<md>
+					<mrow>\amp L_x =  I_{xz}  \omega_z = 2m\omega a^2\sin\theta\cos\theta \cos\omega t</mrow>
+					<mrow>\amp L_y = I_{yz} \omega_z = 2m\omega a^2\sin\theta\cos\theta \sin\omega t</mrow>
+					<mrow>\amp L_z =  I_{zz}\omega_z = 2ma^2\sin^2\theta</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p> (b)
+				From the components of angular momentum vector we get the magnitude by 
+				<me>
+					L = \sqrt{L_x^2 + L_y^2 + L_z^2}.
+				</me>
+				Let's work out each square and then add them.
+				<md>
+					<mrow>\amp L_x^2 = (2m\omega a^2)^2 \sin^2\theta\cos^2\theta \cos^2\phi</mrow>
+					<mrow> \amp L_y^2 = (2m\omega a^2)^2  \sin^2\theta\cos^2\theta \sin^2\phi </mrow>
+					<mrow> \amp L_z^2 = (2m\omega a^2)^2  \sin^4\theta </mrow>
+				</md>
+				Adding the first two we get
+				<me>
+					L_x^2 + L_y^2 = (2m\omega a^2)^2 \sin^2\theta\cos^2\theta.
+				</me>
+				Adding this to <m>L_z^2</m> involves following algebra step.
+				<me>
+					\sin^2\theta\cos^2\theta + \sin^4\theta = \sin^2\theta.
+				</me>
+				Therefore, magnitude of angular momentum will be
+				<me>
+					L = 2m\omega a^2\sin\theta.
+				</me>
+				Since we do not have <m>\phi</m> in the magnitude, it is constant in time.
+			</p>
+		</solution>
+	</example>
+
+
+	<exercise xml:id="ex-Angular-Momentum-of-a-Rolling-Structure"><title>Angular Momentum of a Rolling Structure</title>
+
+		<statement>
+			<p>
+				(Indian JEE 2016) 
+				Two thin circular discs of mass <m>m</m> and <m>4m</m>, having radii of <m>a</m> and <m>2a</m>, respectively, are rigidly fixed by a massless, rigid rod of length = <m>\sqrt{24}\,a</m> through their centres. This assembly is laid on a firm and flat surface, and set rolling without slipping on the surface so that the angular speed about the axis of the rod is <m>\omega</m>. The angular momentum of the entire assembly about the point 'O' is <m>\vec L</m> (see <xref ref="fig-angular-momentum-jee-2016-adv-phys-pap-2"/>). Which of the following statement(s) is(are) true?
+				<ol label="A">
+					<li>The centre of mass of the assembly rotates about the <m>z</m>-axis with an angular speed of <m>\omega/5</m>.</li>
+					<li>The magnitude of angular momentum of centre of mass of the assembly about the point O is <m>81 ma^2\omega</m>. </li>
+					<li>
+						The magnitude of angular momentum of the assembly about its centre of mass is <m>17 ma^2\omega/2</m>.
+					</li>
+					
+					<li>The magnitude of the <m>z</m>-component of <m>L</m> is <m>55 ma^2\omega</m>.</li>
+					
+				</ol>
+			</p>
+				
+			<figure xml:id="fig-angular-momentum-jee-2016-adv-phys-pap-2">
+				<caption></caption>
+				<image source="./images/rotation-general/angular-momentum-jee-2016-adv-phys-pap-2.png" width="70%"/>
+			</figure>
+			
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution><title>(A)</title>
+			<p>
+				(A) Center of mass of the assymbly will rotate at same angular speed as the rolling of the smaller disk. 
+			</p>
+			<sidebyside widths="50% 50%">
+				<p>
+					<xref ref="fig-angular-momentum-jee-2016-adv-phys-pap-2-A"/> shows bottom point of smaller disk goes around <m>z</m>-axis in circle C1 of radius <m>\sqrt{l^2 + a^2} = 5a</m>. That means, in the time a point on the disk makes once around the <m>z</m>-axis, the disk rotates <m>5</m> times. 
+
+				</p>
+				<figure xml:id="fig-angular-momentum-jee-2016-adv-phys-pap-2-A">
+					<caption></caption>
+					<image source="./images/rotation-general/angular-momentum-jee-2016-adv-phys-pap-2-A.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+			<p>
+				Hence, angular frequency will be one-fifth. Therefore, centre of mass of the assembly rotates about the <m>z</m>-axis with an angular speed of <m>\omega/5</m>.
+			</p>
+		</solution>
+
+		<solution><title>(B)</title>
+
+			<sidebyside widths="50% 50%">
+				<p>
+					 (B) In <xref ref="fig-angular-momentum-jee-2016-adv-phys-pap-2-B"/> I have replaced the disks by point masses at their centers. The CM will be between these two points. Temoprarily you can place origin at <m>m</m> and use an axis towards the other mass. This gives
+				<me>
+					c = \frac{4ml}{m+4m} =\frac{4}{5}\,l. 
+				</me>
+
+				</p>
+				<figure xml:id="fig-angular-momentum-jee-2016-adv-phys-pap-2-B">
+					<caption></caption>
+					<image source="./images/rotation-general/angular-momentum-jee-2016-adv-phys-pap-2-B.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+			<p>
+				Therefore, the CM moves in a circle of radius
+				<me>
+					R = (l+c)\,\cos\theta = \frac{9l}{5}\times\frac{l}{5a} = 8.64a.
+				</me>
+				It is rotating about <m>z</m>-axis at <m>\omega/5</m> with moment of inertia <m>(m+4m)R^2</m>. Therefore,
+				<me>
+					L_{\text{cm},z} =  5mR^2\frac{\omega}{5} = 74.6\,ma^2\omega.
+				</me>
+				Therefore, (B) is incorrect.
+			</p>
+
+		</solution>
+
+		<solution><title>(C)</title>
+
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					(C) The two-disk structure rotates about axis through the CM at angular speed <m>\omega</m>. The moment of inertia of the structure will be 
+					<me>
+						I = \frac{1}{2}ma^2 + \frac{1}{2}(4m)(2a)^2 = \frac{17}{2}ma^2.
+					</me> 
+
+				</p>
+				<p></p>
+				<figure xml:id="fig-angular-momentum-jee-2016-adv-phys-pap-2-C">
+					<caption></caption>
+					<image source="./images/rotation-general/angular-momentum-jee-2016-adv-phys-pap-2-C.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Therefore, angular momentum about this axis is
+				<me>
+					L = \frac{17}{2}ma^2\omega.
+				</me>
+
+			</p>
+
+		</solution>
+
+		<solution><title>(D)</title>
+
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					(D) We can get <m>z</m>-component of net angular momentum  <m>\vec L</m> by adding components of the angular momentum about the axis through the CM and angular momentum of the CM about <m>z</m>-axis. We have already worked these out above.
+					<me>
+						L_z = L_\text{cm} + L_\text{axis}\,\sin\theta.
+					</me>
+
+				</p>
+				<p></p>
+				<figure xml:id="fig-angular-momentum-jee-2016-adv-phys-pap-2-D">
+					<caption></caption>
+					<image source="./images/rotation-general/angular-momentum-jee-2016-adv-phys-pap-2-D.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				 From our results from other parts we get
+				 <me>
+				 	L_z  = 74.6\,ma^2\omega +\frac{17}{2}ma^2\omega\,\times \frac{1}{5} = 76.3\,ma^2\omega.
+				 </me>
+
+			</p>
+
+		</solution>
+
+
+
+
+	</exercise>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+</section>

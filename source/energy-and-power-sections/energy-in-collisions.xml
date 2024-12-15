@@ -1,0 +1,640 @@
+<section xml:id="Energy-in-Collisions"><title> Energy in Collisions </title>
+
+	<subsection><title> Elastic Collision </title>
+	<idx>Elastic Collisions</idx>
+	<idx><h>Collisions</h><h>Elastic Collisions</h></idx>
+	<idx><h>Collisions</h><h>Energy in Collisions</h></idx>
+		<p>
+			In the momentum chapter we studied collisions in detail. We established there that <alert> in every collision </alert>, the total momentum after the collision is equal to the total momentum before the collision.
+			<men xml:id="eq-elastic-collision-momentum">
+				\left( \vec p_{\text{tot}} \right)_{\text{Before}}  \ \ = \ \ \left( \vec p_{\text{tot}} \right)_{\text{After}}\ \ \ \ \ \text{  (all collisions)}
+			</men>
+			That is, momentum in every collision is conserved although the momenta of the colliding bodies may get redistributed by the internal forces of the colliding bodies.
+		</p>
+		<p> 
+			If, <em>in addition, total kinetic energy also does not change,</em> then, we say that the collision is an <term> elastic collision</term>.
+			<men  xml:id="eq-elastic-collision-kinetic-energy">
+				\left( K_{\text{tot}} \right)_{\text{Before}} \ \ = \ \ \left( K_{\text{tot}} \right)_{\text{After}}\ \ \ \text{  (elastic collision)}
+			</men>
+		</p>
+
+		<p> To be more specific, consider an arbitrary collision depicted in <xref ref="fig-elastic-collision-in-energy"/>. If this collision is elastic, we will expect the following two equations to hold true.
+			<mdn>
+				<mrow> \amp \vec p_{1,i} + \vec p_{2,i}  = \vec p_{1,f} + \vec p_{2,f} </mrow>
+				<mrow> \amp K_{1,i} + K_{2,i}  = K_{1,f} + K_{2,f} </mrow>
+			</mdn>
+			In these equations, note that momentum conservation is a vector equation and it will yield three equations for three Cartesian components, but the kinetic energy equation is a scalar equation, i.e., a single equation.
+		</p>
+		<figure xml:id="fig-elastic-collision-in-energy">
+			<caption>
+				For elastic collision, we must check both momentum conservation and kinetic energy conservation across collision.
+			</caption>
+			<image source="./images/energy/elastic-collision.png" width="60%"/>
+		</figure>
+
+
+	<example xml:id="A-Head-On-Elastic-and-Inelastic-Collisions"><title> Head-On Elastic and Inelastic Collisions </title>
+		<statement>
+			<p>
+				A ball of mass <m> m </m> moving at speed <m> 5\text{ m/s}</m> hits another ball of mass <m> 2m</m> initially at rest. The collision is head-on so that the motion after the collision is along the original line of motion. 
+			</p>
+			<p>
+				(a) If the collision is elastic, what will be the velocities of the two balls after the collision?
+			</p>
+
+			<p>
+				(b) If the collision is not elastic, what will be the velocities of the two balls after the collision?
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  (a) Set up both conservation of momentum and kinetic energy. For cnservation of momentum use <m> x </m> coordinate. </p> </hint> -->
+		<answer> <p>  (a) Ball 1 turns back with a new speed of <m> \dfrac{5}{3}\text{ m/s}</m> and ball 2 moves in the direction it was hit at speed <m> \dfrac{10}{3}\text{ m/s}</m>. (b) Many solutions. All solutions of <m>
+					v'_{1,x} + 2 v'_{2,x} = 5.
+				</m> where <m> v'_{2,x} \ge 0</m>. </p> </answer>
+		<solution> <title> a </title>
+			<p> 
+				Let us refer ball of mass <m> m </m> as ball 1 and the other ball as ball 2. Let us denote the velocities after the collision by placing a prime on the symbol, as is customary.
+			</p>
+			<p><alert>Momentum conservation</alert>
+			</p>
+			<p>
+				Momentum conservation is a vector equation, which we will handle component-wise. Let us use the line of motion to be the <m> x </m> axis with the positive <m> x </m> axis pointed in the same direction as the direction of motion of ball 1. 
+			</p>
+			<p>
+				This gives us following velocity components of the two balls before and after the collision.
+				<md>
+					<mrow> \amp \text{Before:  } v_{1,x} = 5\text{ m/s},\ \ v_{2,x} =0, </mrow>
+					<mrow> \amp \text{After:  } v'_{1,x} ,\ \ v'_{2,x}. </mrow>
+				</md>
+				The momentum conservation along <m> x </m> axis results in the following equation.
+				<me>
+					m \times 5 + 2m \times 0 = m\times v'_{1,x} + 2 m \times v'_{2,x}.
+				</me>
+				Simplifying this equation, we get one equation in the two unknowns <m>v'_{1,x} </m> and <m> v'_{2,x}</m>.
+				<men xml:id="eq-A-Head-On-Elastic-Collision-momentum">
+					 v'_{1,x} + 2 v'_{2,x} = 5.
+				</men>				
+			</p>
+
+
+			<p><alert> Kinetic conservation since collision is elastic</alert>
+			</p>
+			<p> Kinetic conservation   gives us the following.
+				<me>
+					\dfrac{1}{2}m\times 5^2 + 0 = \dfrac{1}{2}m\times {v^{\prime}_{1,x}}^2 + \dfrac{1}{2}\times 2m\times {v^{\prime}_{2,x}}^2 ,
+				</me>
+				which simplifies to the following equation in the two unknowns <m>v^{\prime}_{1,x} </m> and <m> v^{\prime}_{2,x}</m>.
+				<men xml:id="eq-A-Head-On-Elastic-Collision-kinetic-energy">
+					 {v^{\prime}_{1,x}}^2 + 2 {v^{\prime}_{2,x}}^2 = 25.
+				</men>				
+			</p>
+			<p><alert>Solving equations from conservation of momentum and conservation of kinetic energy: </alert>
+			</p>
+			<p>
+				We solve Eqs. <xref ref="eq-A-Head-On-Elastic-Collision-momentum"/> and <xref ref="eq-A-Head-On-Elastic-Collision-kinetic-energy"/> simultaneously to get the final velocities. One way to do that is to solve Eq. <xref ref="eq-A-Head-On-Elastic-Collision-momentum"/> for <m>v^{\prime}_{1,x} </m> and use that in Eq. <xref ref="eq-A-Head-On-Elastic-Collision-kinetic-energy"/> and solve the resulting equation for  <m>v^{\prime}_{2,x} </m>. You can show that the resulting equation in <m>v^{\prime}_{2,x} </m> is
+				<me>
+					3 \, {v^{\prime}_{2,x}}^2 - 10\, {v^{\prime}_{2,x}} = 0.
+				</me>
+				Therefore, we find two values for <m> v^{\prime}_{2,x} </m>.
+				<me>
+					v^{\prime}_{2,x} = 0,\ \dfrac{10}{3}.
+				</me>
+				When <m> v^{\prime}_{2,x} = 0</m>, <m> v^{\prime}_{1,x} = 5</m>, and when <m> v^{\prime}_{2,x} = 10/3</m>, <m> v^{\prime}_{1,x} = 5-20/3 =- 5/3</m>.
+			</p>
+
+			<p><alert>Interpreting the result:</alert>
+			</p>
+			<p> 
+				The final values for the two velocities have two possibilities (1) <m> (v^{\prime}_{1,x} = 5\text{ m/s}, v^{\prime}_{2,x} = 0)</m>, or, (2) <m> (v^{\prime}_{1,x} = -5/3 \text{ m/s}, v^{\prime}_{2,x} = 10/3 \text{ m/s})</m>.
+
+			</p>
+			<p>
+				Let's look at each of these possibilities:  
+			</p>
+			<p>
+				(1) <m> (v^{\prime}_{1,x} = 5\text{ m/s}, v^{\prime}_{2,x} = 0)</m>. This says that the answer is as if no collision occured. This is just an artifact of this problem. We do not want this answer since we are concerned with the result of actual collision.
+			</p>
+			<p>
+				(1) <m> (v^{\prime}_{1,x} = -5/3 \text{ m/s}, v^{\prime}_{2,x} = 10/3 \text{ m/s})</m>. The negative value of <m> x </m> component of the velocity of ball 1, says that the ball is moving towards the negative <m> x </m> axis. That means, after the elastic collision, both balls have precisely defined velocities, ball 1 turns back with a new speed of <m> 5/3\text{ m/s}</m> and ball 2 moves in the direction it was hit at speed <m> 10/3\text{ m/s}</m>.
+			</p>
+
+		</solution>
+
+
+		<solution> <title> b </title>
+			<p> 
+				When the collision is <alert> not elastic</alert>, we only have the conservation of momentum. We have already worked out the consequences of that in part (a) with the following relation between the final velocities given in <xref ref="eq-A-Head-On-Elastic-Collision-momentum" />.
+				<me>
+					v'_{1,x} + 2 v'_{2,x} = 5.
+				</me>
+				This does not give a unique solution, but there are infinitely many possibilities as long as the values of 	<m>v^{\prime}_{1,x} </m> and <m>v^{\prime}_{2,x} </m> satisfy this equation and are physically resonable, which would demand that ball 2 should not have negative <m> x </m> component of the velocity since it was hit with a force directed towards the positive <m> x </m> axis.
+			</p>
+			<p>
+				Example anwers would be <m> (v^{\prime}_{1,x} ,\ v^{\prime}_{2,x} )</m> <m> = (0, 5/2), (1, 2), (-1, 3), \cdots </m>. But, some mathematical answers of the above equation, such as <m> (7, -1)</m> are not physically possible since force on ball 2 is in the direction of positive <m> x </m> axis can only cause acceleration towards the positive <m> x </m> axis.
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="ex-Elastic-Collision-of-Alpha-Particles-with-Gold-Nucleus"><title> Elastic Collision of Alpha Particles with Gold Nucleus</title>
+		<statement>
+			<p>
+				In a Rutherford experiment, an alpha particle (which is the Helium nucleus) of mass <m>4</m> u (<m>1</m> u = <m>1.66 \times 10^{-27}</m> kg) at a speed of <m>1.0 \times 10^4\text{ m/s}</m>  strikes a gold nucleus (m = <m>197</m> u) at rest head on and is repelled <em>elastically</em> backward.  Find the final velocities of the alpha particle and the gold nucleus.
+			</p>
+
+		</statement>
+		<!-- <hint> <p> Use units wisely. I suggest use <m>\text{u}</m> for mass and <m>10^{4}\text{ m/s}</m> for speed. </p> </hint> -->
+		<answer> <p> <m> v_1= -9,600\text{ m/s},\ \ v_2 = 400\text{ m/s}. </m> </p> </answer>
+		<solution> 
+			<p>
+				We just need to set up conservation of momentum and conservation of kinetic energy equations. The trouble here comes from unwieldy numerical values, which we handle by using better units. For mass, we will use <m>u</m> and for speeds we can use units of <m> 10^4 \text{ m/s}</m>, i.e., the initial speed of alpha particles will be just 1 unit rather than <m> 10^4 </m>.
+			</p>
+			<p>
+				The momentum conservation gives
+				<me>
+					4  = -4\, v_1 + 197\, v_2\ \ \longrightarrow\ \ v_1 = -1 + \dfrac{197}{4}v_2.
+				</me>
+				The kinetic energy conservation gives
+				<me>
+					4 \times 1^2 = 4\, v_1^2 + 197\, v_2^2\ \ \longrightarrow\ \ v_1^2 = 1 - \dfrac{197}{4}v_2^2.
+				</me>
+				Eliminating <m>v_1</m> we get
+				<me>
+					\left( -1 + \dfrac{197}{4}v_2 \right)^2 = 1 - \dfrac{197}{4}v_2^2.
+				</me>
+				That is,
+				<me>
+					\left[  \left( \dfrac{197}{4} \right)^2 + \dfrac{197}{4} \right]\, v_2^2 - 2\times \dfrac{197}{4}\, v_2 = 0.
+				</me>
+				Therefore,
+				<me>
+					v_2 = 0,\, \dfrac{8}{201}.
+				</me>
+				Since <m>v_2</m> cannot be zero since it has nonzero force on the positive <m>x</m> direction during the collision when it was at rest. Therefore, we claim that
+				<me>
+					v_2 = \dfrac{8}{201}.
+				</me>
+				Using this value of <m>v_2</m> we find that speed of particle 1 is 
+				<me>
+					v_1 = -1 + \dfrac{197}{4}\times \dfrac{8}{201} = 0.96.
+				</me>
+				Note this is speed going in the negative <m>x</m> direction. Therefore, velocity would be the <m>x</m> component, <m>v_1 = - 0.96</m>. Coverting velocities in the regular units we get			
+				<md>
+					<mrow> v_1= -0.96\times 10^4 = 9,600\text{ m/s},</mrow>
+					<mrow> v_2 = 0.04 \times 10^4 = 400\text{ m/s}. </mrow>
+				</md>
+				Note that relative speed of the two particles is still <m>1.0\times 10^{4}\text{ m/s}</m>.
+			</p>
+		</solution>
+	</example>
+
+
+
+	</subsection>
+
+
+	<subsection><title> Coefficient of Restitution</title>
+	<idx>Coefficient of Restitution</idx>
+	<idx><h>Collisions</h><h>Coefficient of Restitution</h></idx>
+		<p>
+			The ratio of relative speed after collision to the relative speed before the collision is called the <term>coefficient of restitution</term>. This is denoted by letter <m>e</m>.
+			<men>
+				e = \dfrac{\text{Relative speed after collision}}{\text{Relative speed before collision}}.
+			</men> 
+			If the coefficient of resitution has a value of <m>1</m>, the collision is perfectly elastic. If colliding objects stick together upon collision, then restitution is <m>0</m>. Note that it is ratio of relative speeds, not of relative velocities.  
+		</p>
+	</subsection>
+
+
+	<subsection><title> Internal Forces in Elastic Collision </title>
+		 
+		<p>
+			We can think of Eqs. <xref ref="eq-elastic-collision-momentum" /> and <xref ref="eq-elastic-collision-kinetic-energy" /> in another useful way. 
+			Consider an example collision, in which two bodies collide and they leave as two bodies after the collision. 
+		</p>
+		<p>
+			In this case, Eq. <xref ref="eq-elastic-collision-momentum" /> is telling us that any change in momentum of body  1 is accompanied by the opposite change in the momentum of body  2. 
+			<me>
+				 \Delta \vec p_1 = \vec p_{1,f} - \vec p_{1,i} = -\left( \vec p_{2,f} - \vec p_{2,i} \right) = -\Delta \vec p_2. 
+			</me>
+		</p>
+		<p>
+			The change in momentum of body  1 was caused by the impulse of the force on body  1 by body  2, and the change in the momentum of body  2 was caused by the impulse of the force on body  2 by body  1. Since the forces are equal in magnitude and opposite in direction, clearly, the two impulses sum up to zero. This explains the conservation of total momentum.
+		</p>
+		<p>
+			What about Eq. <xref ref="eq-elastic-collision-kinetic-energy" />? This is telling us that the change in kinetic energy of body  1 is accompanied by the opposite change in the kinetic energy of body  2.
+			<me>
+				\Delta K_1 = K_{1,f} - K_{1,i} = -( K_{2,f} - K_{2,i} ) = -\Delta K_2.
+			</me> 
+		</p>
+		<p>
+			The change in in kinetic energy of body  1 occurs due to the work done on body  1 by force by body  2. And, the change in kinetic energy of body  2 occurs due the work done on body  2 by  body  1. But, even though the forces are equal in magnitude and opposite in direction, they will, in general do different amounts of work since work on 1 involves displacement of 1 and work on 2 that of 2. In the special case of elastic collision, the force between the bodies do exactly opposite work on the two bodies (cool, yeh?).
+		</p>
+		<p> 
+			If work by force on body  1 is not the opposite of the work by the oppositely directed force on body  2, then Eq. <xref ref="eq-elastic-collision-kinetic-energy" /> will not hold true and kinetic energy will not be conserved. These collisions are called <alert> inelastic collisions</alert>. 
+		</p>
+		<p>
+			In an an inelastic collision, if energy is released during the collision, total final kinetic energy will be more than the total initial kinetic energy, and if energy is stored some way, e.g., by binding of particles, then the final kinetic energy will be less than kinetic energy before the collision. 
+		</p> 
+	</subsection>
+
+
+	<subsection><title>Elastic Collision in Center of Mass Frame</title>
+	<idx><h>Elastic Collisions</h><h>in CM Frame</h></idx>
+		<p>
+			Consider an elastic collision between two particles of mass <m>m_1</m> and <m>m_2</m> with initial velocities <m>\vec v_1</m> and <m>\vec v_2=0</m> and final velocities <m>\vec v'_1</m> and <m>\vec v'_2</m> as observed in the LAB frame as illustrated in first row of <xref ref="fig-el-col-lab-and-cm-frames"/>. 
+		</p>
+		<figure xml:id="fig-el-col-lab-and-cm-frames">
+			<caption>
+				Collision in LAB and CM frames. First row: LAB frame in which <m>v_2=0</m>. Second row: collision in CM frame. Third row: vector relations between the velocities in the two frames.
+			</caption>
+			<image source="./images/energy/el-col-lab-and-cm-frames-1.png" width="80%"/>
+		</figure>
+
+		<p>
+			By conservation of total momentu in a collision, we cay say that the center of mass has the same velocity <m>\vec V</m> before and after the collision.
+			<me>
+				\vec V = \frac{m_1 \vec v_1 + m_2 \vec v_2}{m_1 + m_2} = \frac{m_1 \vec v'_1 + m_2 \vec v'_2}{m_1 + m_2}.
+			</me>
+			The CM frame is the reference frame which moves with respect to the LAB frame at velocity <m>\vec V</m>. Therefore, the velocities of the two particles with respect to the CM frame will be
+			<md>
+				<mrow> \amp \vec v_{1,\text{cm}} = \vec v_1 -\vec V = \frac{m_2}{m_1 + m_2} \left(\vec v_1 - \vec v_2 \right). </mrow>
+				<mrow> \amp \vec v_{2,\text{cm}} = \vec v_2 -\vec V = -\frac{m_1}{m_1 + m_2} \left(\vec v_1 - \vec v_2 \right). </mrow>
+				<mrow> \amp \vec v'_{1,\text{cm}} = \vec v'_1 -\vec V = \frac{m_2}{m_1 + m_2} \left(\vec v'_1 - \vec v'_2 \right). </mrow>
+				<mrow> \amp \vec v'_{2,\text{cm}} = \vec v'_2 -\vec V = -\frac{m_1}{m_1 + m_2} \left(\vec v'_1 - \vec v'_2 \right). </mrow>
+			</md>
+			These vector relations are shown diagramartically in third row of <xref ref="fig-el-col-lab-and-cm-frames"/>.
+
+			That is, in the CM frame the before-collision velocities <m>\vec v_{1,\text{cm}}</m> and  <m>\vec v_{2,\text{cm}}</m> are in opposite directions and so are the after-collision velocties <m>\vec v'_{1,\text{cm}}</m> and  <m>\vec v'_{2,\text{cm}}</m>. Furthermore, the total momentum of the two particles in LAB frame is 
+			<me>
+				\vec p_\text{LAB} = m_1 \vec v_1 + m_2 \vec v_2 = (m_1 + m_2)\vec V =  m_1 \vec v'_1 + m_2 \vec v'_2.
+			</me>
+			But in the CM frame, the total momentum will be
+			<mdn>
+				<mrow xml:id="eq-elastic-collision-momentum-cm-bef">\amp \vec p_\text{CM}^\text{before} = m_1 \vec v_{1,\text{cm}}  + m_2 \vec v_{2,\text{cm}} = 0.</mrow>
+				<mrow  xml:id="eq-elastic-collision-momentum-cm-aft">\amp \vec p_\text{CM}^\text{after} = m_1 \vec v'_{1,\text{cm}}  + m_2 \vec v'_{2,\text{cm}} = 0.</mrow>
+			</mdn>
+			Since <m>\vec v_{1,\text{cm}}</m> and <m>\vec v_{2,\text{cm}}</m> are oppsitely directed, and similarly for the CM velocities after the collision we get the following relations.
+			<mdn>
+				<mrow xml:id="eq-cm-momentum-before"> \amp m_1  v_{1,\text{cm}}  - m_2 v_{2,\text{cm}} = 0. </mrow>
+				<mrow xml:id="eq-cm-momentum-after"> \amp m_1  v'_{1,\text{cm}}  - m_2 v'_{2,\text{cm}} = 0. </mrow>
+			</mdn>
+			For elastic collisions, we will also have the following in the CM frame
+			<men xml:id="eq-cm-ke">
+				m_1  v_{1,\text{cm}}^2  + m_2 v_{2,\text{cm}}^2 = m_1  {v'}_{1,\text{cm}}^2  + m_2 {v'}_{2,\text{cm}}^2.
+			</men>
+			Using the momentum equations, <xref ref="eq-cm-momentum-before"/> and <xref ref="eq-cm-momentum-after"/>, we can eliminate <m>v_{2,\text{cm}}</m> and <m>v'_{2,\text{cm}}</m> from this equation and arrive at
+			<men>
+				v_{1,\text{cm}}^2 = {v'}_{1,\text{cm}}^2, \ \ \longrightarrow\ \ v_{1,\text{cm}}= v'_{1,\text{cm}}.
+			</men>
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				That is, the speed of particle 1 after collision remains same as before the collision. Only the direction of the particle changes in the CM. Similarly, you can eliminate <m>v_{1,\text{cm}}</m> and <m>v'_{1,\text{cm}}</m> and show that <m>v_{2,\text{cm}}= v'_{2,\text{cm}}</m>.
+			</p>
+			<p></p>
+			<figure xml:id="fig-el-col-lab-and-cm-frames-cm-vels">
+				<caption>
+				</caption>
+				<image source="./images/energy/el-col-lab-and-cm-frames-cm-vels.png" width="80%"/>
+			</figure>
+		</sidebyside>
+		
+		<p>
+			In the CM frame particles 1 and 2 approach the CM before the collision and go away in another direction. If the collision is elastic, then speed of each particle with respect to the CM does not change. CM-Velocity vectors only get rotated by some angle <m>\theta</m>. We call this angle <term>scattering angle</term>.
+		</p>
+		<p>
+			I leave it as an exercise for a student to work out relation between scattering angle <m>\theta</m> in the CM and the angle of deviation <m>\theta_1</m> and recoil <m>\theta_2</m> using the triangles ABC and ABD shown in <xref ref="fig-el-col-lab-and-cm-frames"/>.
+		</p>
+
+
+	</subsection>
+
+
+
+	<exercises>
+
+
+
+
+	<exercise xml:id="ex-Two-Dimensional-Elastic-Collision-m-3m"><title> Two-Dimensional Elastic Collision (JEE, 2020)</title>
+
+		<statement>
+			<p>
+				Particle A of mass <m>m</m> moving with velocity <m>u\;\hat i</m> collides elastically with particle B of mass <m>3m</m> which is at rest. After the collision the particle with mass <m>m</m> has a velocity of <m>v\;\hat j</m>. (a) Find <m>v</m> in terms of <m>u</m>. (b) Find speed of B after collision in terms of <m>u</m> (c) What is the direction in which B is headed after the collision? 
+				Here <m>\hat i</m> and <m>\hat j</m> are unit vectors towards positive <m>x</m> and <m>y</m> axes respectively. (Adpated from Indian JEE, 2020)
+			</p>
+		</statement>
+		<hint><p>
+			Use conservation of mometum (1 vector equation giving 2 component equations) and conservation of kinetic energy (1 equation).
+		</p></hint>
+		<answer><p>
+			(a) <m>u/\sqrt{2}</m>, (b) <m>\frac{u}{\sqrt{6}}</m>, (c) <m>35.3^\circ</m> clockwise from positive <m>x</m> axis.
+		</p></answer>
+		<solution>
+			<p><alert>Conservation of Momentum: </alert>
+				Let <m>V_x</m> and <m>V_y</m> be <m>x</m> and components of the velocity of particle B after collision. The conservation of <m>x</m> and <m>y</m> momentum components gives
+				<mdn>
+					<mrow> \amp(x\text{-component}):\ \ \ m u + 0 = 0 + 3 m V_x </mrow>
+					<mrow> \amp(x\text{-component}):\ \ \ 0 + 0 = m v + 3 m V_y </mrow>
+				</mdn>
+				Therefore,
+				<men xml:id="eq-elastic-collision-momentum-m-3m-Vx-Vy">
+					V_x = \frac{1}{3}\;u;\ \ V_y = -\frac{1}{3}\;v.
+				</men>
+			</p>
+			<p><alert>Conservation of Kinetic Energy (since elastic collision): </alert>
+				Noting that speed of B after collision will be <m>V = \sqrt{V_x^2 + V_y^2}</m>, we get the following equation from conservation of kinetic energy.
+				<men>
+					\frac{1}{2}m u^2 + 0 =  \frac{1}{2}m v^2 + \frac{1}{2}3m \left( V_x^2 + V_y^2\right).
+				</men>
+			</p>
+			<p> (a)
+			</p>
+			<p>
+				Using <m>V_x</m> and <m>V_y</m> from Eq. <xref ref="eq-elastic-collision-momentum-m-3m-Vx-Vy"/>, this becomes
+				<me>
+					u^2 = v^2 + \frac{1}{3}\left( u^2 + v^2 \right).
+				</me>
+				Therefore, <m>(4/3) v^2 = (2/3)u^2</m>. Since speed is positive, we keep positive root to get
+				<me>
+					v = u/\sqrt{2}.
+				</me>
+			</p>
+			<p> (b), (c)</p>
+			<p>
+				Using this in <m>V_y</m> in Eq. <xref ref="eq-elastic-collision-momentum-m-3m-Vx-Vy"/>, we get
+				<me>
+					V_y = -\frac{1}{3\sqrt{2}}\;u.
+				</me>
+				From <m>V_x</m> and <m>V_y</m>, we have
+				<md>
+					<mrow> V \amp = \sqrt{ V_x^2 + V_y^2 } = \frac{u}{\sqrt{6}}. </mrow>
+					<mrow> \theta \amp = \tan^{-1}\left(\frac{V_y}{V_x} \right) = \tan^{-1}\left(\frac{-u/3\sqrt{2}}{u/3} \right)</mrow>
+					<mrow>\amp = -\tan^{-1}\left(\frac{1}{\sqrt{2}} \right)= - 35.3^\circ.</mrow>
+				</md>
+				Since <m>(V_x, V_y)</m> is in the fourth quadrant, this angle gives the direction reached by measuring clockwise from positive <m>x</m>-axis.
+			</p>
+		</solution>
+	</exercise>	
+
+
+	<exercise xml:id="ex-Two-Dimensional-Collision-Between-Billiard-Balls-Deciding-Elastic-versus-Inelastic"><title> Two Dimensional Collision Between Billiard Balls - Deciding Elastic versus Inelastic </title>
+		<statement>
+			<p>
+				A billiard ball of mass <m>m</m> moving with speed <m>2\text{ m/s}</m> strikes another billiard ball of the same mass at rest.  After the collision, the incoming ball is deviated in the direction <m>15^{\circ}</m> from the original direction and moves with speed <m>u</m> while the struck ball is sent with speed <m>w</m> in the direction of <m>10^{\circ}</m> direction from the original direction of the first ball.
+			</p>
+			<image source="./images/energy/e-in-c-two-dim-billiards-ball.png" width="70%"/>
+			
+			<p>
+				(a) What are the speeds of the two balls after the collision?
+			</p>
+			<p>
+				(b) Is the collision elastic? Why or why not?
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Conservation of momenta along the two axes. (b) Check if kinetic energy cnserved. </p> </hint>
+		<answer> <p> (a) <m> 0.82 \text{ m/s}</m> and <m> 1.22 \text{ m/s}</m>,  (b) not elastic since kinetic energy is not conserved. </p> </answer>
+		<solution> <title> a </title>
+			<p> 
+				We use <m>x</m> in horizontal direction and <m>y</m> in vertical direction. The conservation of momentum along the two axes give us the following two equations.
+				<md>
+					<mrow>m\times 2 \amp = m\times u\,\cos\,15^{\circ} + m\times w\,\cos\,10^{\circ} </mrow>
+					<mrow>0 \amp = m\times u\,\sin\,15^{\circ} - m\times w\,\sin\,10^{\circ} </mrow>
+				</md>
+				These simplify to
+				<md>
+					<mrow>  0.966\, u + 0.985\, w \amp = 2 </mrow>
+					<mrow>  0.259\, u - 0.174\, w \amp = 0 </mrow>
+				</md>
+				Therefore,
+				<md>
+					<mrow>  u \amp  = 0.82 \text{ m/s} </mrow>
+					<mrow>  w \amp = 1.22\text{ m/s} </mrow>
+				</md>				
+			</p>
+		</solution>
+		<solution> <title> b </title>
+			<p>
+				We need to check kinetic energy before and after the collision.
+				<me>
+					K_\text{before} = \dfrac{1}{2} m \times 2^2 = 2\,m,
+				</me>
+				and
+				<me>
+					K_\text{after} = \dfrac{1}{2} m \times u^2 + \dfrac{1}{2} m \times w^2 = 1.08\, m.
+				</me>
+				Since <m> K_\text{after} \ne K_\text{before}</m>, the collision is inelastic.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Neutron-Colliding-with-Hydrogen-Atom"><title> Neutron Colliding with Hydrogen Atom </title>
+		<statement>
+			<p>
+				A neutron (mass = 1 u) moving at a speed of <m> 3.0 \times 10^5 \text{ m/s}</m> strikes a stationary hydrogen atom (mass = 1 u) head on.  After the collision the stationary atom is found to move with a speed of <m> 2.0 \times 10^5 \text{ m/s}</m> in the direction of the neutron's original direction. 
+			</p>
+			<p>
+				(a) Find the velocity of the neutron after the collision.
+			</p>
+			<p>
+				(b) Find the coefficient of restitution.
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Conservation of momentum - best to use units of u and <m> 10^5\text{ m/s}</m>. (b) Just use the definition of the coefficient of restitution.</p> </hint>
+		<answer> <p> (a) <m> 1.0\times10^5 \text{ m/s}</m>, forward, (b)  restitution = <m> \dfrac{1}{3}</m>. </p> </answer>
+		<solution> <title>a</title>
+			<p>
+				
+				I will use <m>\text{u}</m> as unit of mass and <m>1\times 10^5\text{ m/s}</m> as unit of speed. The conservation of momentum gives us the following for the speed <m> v </m> of the neutron.
+				<me>
+					1\times 3  + 0 = 1\times 2 + 1\times v.
+				</me>
+				Solving we get
+				<me>
+					v = 1.
+				</me>
+				This is <m> 1.0\times10^5 \text{ m/s}</m> in the forward direction.
+			</p>
+		</solution>
+		<solution> <title>b</title>
+			<p>
+				Both particles are moving in the same direction after the collision. Therefore, the relative speed after collision is just their difference. In the unit of speed where <m>1\times 10^5\text{ m/s}</m> is 1, we have
+				<md>
+					<mrow> \amp \text{Relative speed after collision} = 1, \text{ and, } </mrow>
+					<mrow> \amp \text{Relative speed before collision} = 3. </mrow>
+				</md>
+				Therefore, the coefficient of restitution is 
+				<me>
+					e = \dfrac{\text{Relative speed after collision}}{\text{Relative speed before collision}} = \dfrac{1}{3}.
+				</me>
+				The collision is not elastic.
+
+
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<exercise xml:id="ex-Head-on-Elastic-Collision-of-a-Lighter-Particle-Bouncing-Off-of-Another-Particle"><title> Head-on Elastic Collision of a Lighter Particle Bouncing Off of Another Particle</title>
+		<statement>
+			<p>
+				A particle of mass <m> m</m> moving at the speed <m> v</m> strikes head on another particle of mass <m> 2 m</m> at rest in an elastic collision.  Find the speeds of the two particles after the collision.
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p> <m> -\frac{1}{3}\,v</m> and <m> \frac{2}{3}\,v</m>.  </p> </answer>
+		<solution> 
+			<p> 
+				Let <m> u </m> be the speed of the lighter particle and <m> w </m> the speed of the heavier particle. We assume both move in the original direction of the lighter particle after the collision. This gives the following for the conservation of momentum and kinetic energy.
+				<md>
+					<mrow> \amp u + 2 w = v, </mrow>
+					<mrow> \amp u^2 + 2 w^2 = v^2. </mrow>
+				</md>
+				We can solve for <m>u</m> and <m>w</m> in terms of <m>v</m>. Eliminating <m>u</m> gives
+				<me>
+					w\,( 3\,w - 2v ) = 0.
+				</me>
+				Therefore, either <m> w=0 </m> or <m> w=\frac{2}{3}\,v</m>. The corresponding values of <m> u </m> are: <m>u=v</m> and <m>u=-\frac{1}{3}\,v</m>. The value <m>w=0</m> is unphysical as it corresponds to no collision and the original particle moving unchanged. Therefore, we have <m>w=\frac{2}{3}v,\ u = -\frac{1}{3}v</m>.
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Breaking-Up-After-A-Hit-and-Pieces-Moving-in-a-Plane"><title> Breaking Up After A Hit and Pieces Moving in a Plane</title>
+		<statement>
+			<p>
+				A particle of mass <m>m</m> (particle 1) moving with a speed <m>v=1.0\times 10^2\text{ m/s}</m> strikes a stationary particle of mass <m>2m</m> (particle 2) head on  as shown in <xref ref="fig-e-in-c-hit-particle-breaking-up-two-dim"/>.  After the collision, the heavier particle breaks up into two parts of mass <m>0.5\ m</m> (particle 2a) and <m>1.5\ m</m> (particle 2b).  As a result of the collision, particle 1 comes to rest, but particle 2a moves in the direction of <m>30^{\circ}</m> from the original direction of particle 1 with a speed of <m>0.2\ v</m>.
+			</p>
+			<figure xml:id="fig-e-in-c-hit-particle-breaking-up-two-dim">
+				<caption>
+					Figure for <xref ref="ex-Breaking-Up-After-A-Hit-and-Pieces-Moving-in-a-Plane" />.
+				</caption>
+				<image source="./images/energy/e-in-c-hit-particle-breaking-up-two-dim.png" width="80%"/>
+			</figure>
+
+			<p>
+				(a) What is the direction and speed of particle 2b after the collision.
+			</p>
+			<p>
+				(b) Is the collision elastic? Why or why not?
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p> (a) <m> 61\text{ m/s}</m>, <m>2.8^\circ</m> clockwise from <m>+x</m> axis,  (b) not elastic since kinetic energy is not conserved. </p> </answer>
+		<solution> <title>a</title>
+			<p>
+				
+				For the sake of brevity, let us use <m> u</m> and <m> w </m> for the <m>v_x</m> and <m>v_y</m> of  particle 2b after the collision. We also use <m> m</m> as unit of mass and <m> v</m> as unit of speed, i.e., treat <m>1.0\times 10^{2}\text{ m/s}</m> as 1 unit. The conservation of momentum in the two directions give us
+				<md>
+					<mrow> 1 + 0 \amp = 0 +  0.5\times 0.2 \times \cos\,30^\circ + 1.5\,u, </mrow>
+					<mrow> 0 + 0 \amp = 0 +  0.5\times 0.2 \times \sin\,30^\circ + 1.5\,w  </mrow>
+				</md>
+				Therefore,
+				<me>
+					u = 0.61,\ \ w = -0.033.
+				</me>
+				Piutting the unit of <m>v</m> back in we get
+				<me>
+					u = 0.61\,v,\ \ w = -0.03\,v.
+				</me>
+				Therefore, speed is <m>\sqrt{0.61^2 + 0.03^2}\,v = 0.61\,v = 61\text{ m/s}</m> in the direction <m> \arctan(-.03/0.61)=-2.8^\circ</m> in fourth quadrant, i.e., <m>2.8^\circ</m> clockwise from the <m>+x</m> axis.			
+			</p>
+		</solution>
+		<solution> <title>b</title>
+			<p>
+				By explictly computing <m>K_\text{before}</m> and <m>K_\text{after}</m> in units of <m>m=1</m> and <m>v=1</m>, you can easily show that the collision is not elastic.
+				<me>
+					\dfrac{K_\text{after}}{K_\text{before}}  = 0.5 \times 0.2^2 + 1.5 \times 0.61^2 = 0.58.
+				</me>
+				Hence, the collision is not elastice since <m> K_\text{before} \ne K_\text{after} </m>.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<exercise xml:id="Energy-in-Inelastic-Collision-with-Bodies-Sticking-Together"><title> Energy in Inelastic Collision with Bodies Sticking Together  </title>
+		<statement>
+			<p> A putty of mass <m> m </m> is thrown with speed <m> 4\text{ m/s} </m> at a box of mass <m> 9 m</m> at rest on a frictionless surface. The putty sticks to the box and the two move together as one. 
+			</p>
+			<p>
+				(a) What is the speed of the combination after the collision?
+			</p>
+			<p>
+				(b) Is the collision elastic? Show work to justify your answer.
+			</p>
+			<p>
+				(c) You should find that the energy of the putty is not conserved, meaning the sum of its kinetic and potential energies is not same before and after the collision. What happened to the energy of the putty?
+			</p>
+
+			<p>
+				(d) If the process of collision lasted <m> 0.1\text{ s}</m> and <m> m = 0.3\text{ kg}</m>, what was the magnitude of the average force between the putty and the box?
+			</p>	
+
+		</statement>
+		<hint> <p> (a) Use Conservation of momentum. (b) Check KE. (c) Think of energy transfer, energy in sticking,m and vibrations, (d) Use <m>F_\text{av} = \Delta p/\Delta t</m>.  </p> </hint>
+		<answer> <p> (a) <m> 0.4\text{ m/s}</m>, (b)  not elastic,  (c) Some of it went in the kinetic energy of the box, some went in the binding of the putty to the box, and some as heat.  (d) <m>10.8\text{ N}</m>. </p> </answer>
+		<solution> <title> a </title>
+			<p> 
+				We first find out what the conservation of momentum tells about the final velocity. For momentum, we will use <m> x </m> axis with the positive <m> x </m> axis pointed in the direction from putty towards the box. Let <m> v'_x</m> be the final velocity. We get the following equation from momentum conservation across the collision process.
+				<me>
+					m\times 4 + 9\,m\times 0 = 10\,m\, v'_x.
+				</me>
+				Canceling out <m> m </m> and solving for <m> v'_x </m> we get
+				<me>
+					v'_x = 0.4\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+
+		<solution> <title> b </title>
+			<p>  
+				To decide whether a collision is elastic, we need to check if kinetic energy is conserved across the collision. Let <m> K_i</m> be the total kinetic energy before the collision and <m>K_f</m> after.
+				<me>
+					K_{i} = \dfrac{1}{2}\times m \times 4^2 + 0 = 8\, m,
+				</me>
+				and 
+				<me>
+					K_{f} = \dfrac{1}{2}\times 10\times m \times 0.4^2   =  0.8\, m.
+				</me> 
+				Clearly kinetic energy is lost in this collision. That means the collision is not elastic.
+
+			</p>
+		</solution>
+
+		<solution> <title> c </title>
+			<p>  
+				 The putty lost and energy equal to <m> \Delta E = \dfrac{m}{2}(0.4^2 - 4^2 ) </m>. Some of it went in the kinetic energy of the box, some went in the binding of the putty to the box. Additionally, some went to increased vibration of the materials of the putty and the box, which eventually died out and the corresponding energy went to the environement as heat.
+
+			</p>
+		</solution>
+
+
+
+
+		<solution> <title> d </title>
+			<p> 
+				If we look at the change of momentum of the box, we will find the impulse on the box by the force by the putty. Since we are working alog the <m> x </m> axis only, we get
+				<me>
+					J_x = \left( \Delta p_x \right)_{\text{box}} = 9\, m\times v'_x - 0 = 9\times 0.3\times 0.4 = 1.08\text{ N.s}.
+				</me>
+				Dividing this by the time during which this impulse was imparted will give the magnitude of the average force.
+				<me>
+					F_{\text{av}} = \dfrac{1.08\text{ N.s}}{0.1\text{ s}} = 10.8\text{ N}. 
+				</me>
+			</p>
+
+			<p> 
+			 
+			</p>
+		</solution>
+	</exercise>
+
+</exercises>
+
+</section>

@@ -1,0 +1,391 @@
+ <section xml:id="Electric-Field-of-Charged-Conductors"><title> Electric Field of Charged Conductors </title>
+	<!-- <introduction>
+		<p>
+			Electric field inside a conductor is zero everywhere. 
+		</p>
+		<p>
+			From the perspective of a point immediately outside a charged metal surface, nearby metal surface appear to be a flat charged sheet. We know that electric field of a flat charged sheet is directed perpendicular to the surface. This tells us that electric field lines are perpendicular to the surface of the conductor.
+		</p>
+		<p>
+			Furthermore, since magnitude of electric field of a charged sheet of surface charge density <m>\sigma</m> is <m>\sigma/\epsilon_0</m>. This tells us that just outside the external surface of a conductor, electric field will depend on the local charge density.
+			<me>
+				E_\text{near surface} = \dfrac{\sigma_\text{local}}{\epsilon}.
+			</me> 
+		</p>
+		<p>
+			These conclusions can be used to get ideas about electric field lines in the presence of conductors. For instance, an isolated point charge has electric field lines that radially go out in all directions from the charge. But, when we bring a metal piece near the charge, electric field lines must bend so that they meet the conductor at <m>90^\circ</m> to the surface.
+		</p>
+
+		<figure xml:id="fig-bending-of-electric-field-in-presence-of-conductor">
+			<caption>
+				 Electric field for a charge in the presence of a conductor. (a)  Near a charge, E-field lines emanate in all directions and near a conductor, they are <m>90^\circ</m> to the surface of the conductor, which is polarized due to the presence of the external charge.  (b)  Electric field lines bend so that they are normal to the conductor. Inside the body of the conductor, E=0, whick means not E-field lines passes through the conductor.
+			</caption>
+			<image source="./images/conductors/bending-of-electric-field-in-presence-of-conductor.png" width="80%"/>
+		</figure>		
+
+
+	</introduction> -->
+	<subsection><title>An Isolated Charged Metallic Sphere </title>
+		<p>
+			Consider an isolated metallic sphere of radius <m>R</m> that has a total excess charge <m>+q</m> placed on it.  The entire charge <m>+q</m> on the metallic sphere will end up at the surface as shown in <xref ref="fig-charged-spherical-metal-setup"/>.  Furthermore, as there are no other charges or bodies around, the charge distribution on the spherical surface will be spherically symmetric.  
+		</p>
+		<p>
+			Aside Note: If there were other objects in the neighborhood of the metallic sphere, then the charges on the surface of the sphere will not necessarily be spherically symmetric - there will be more charges in certain direction than in other directions.  
+		</p>
+
+		<sidebyside widths="60% 10% 30%">
+			<p>
+				Since spherically distributed charge densiy has a spherical symmetry, we apply Gauss's law to easily get the magnitude of electric field. 
+				<me>
+					E(r) = \begin{cases}
+								0 \amp r \lt R\\
+								\dfrac{1}{4\pi\epsilon_0}\,\dfrac{q}{r^2} \amp r \gt R
+							\end{cases}
+				</me>
+				The direction of the electric field will be radially outward from the center of the sphere.
+			</p>
+			<p></p>
+			<figure xml:id="fig-charged-spherical-metal-setup">
+				<caption>
+				</caption>
+				<image source="./images/conductors/charged-spherical-metal-setup.png" width="50%"/>
+			</figure>
+		</sidebyside>
+
+ 		
+		<p>
+			The electric field outside the charged spherical conductor is indistinguishable from that of a point charge <m>+q</m> placed at the center without the conductor present. The difference between the charged metal and a point charge occurs only at the space points inside the conductor:  for a point charge placed at the center of the sphere, the electric field will not be zero at points of space occupied by the sphere, but for a conductor with the same amount of charge has a zero electric field at those points.  However, there is no distinction at the outside points in space where <m>r > R</m>, and we can replace the isolated charged spherical conductor by a point charge at its center with impunity.
+		</p>
+		<p> <alert> Electric Potential of a Charged Metallic Sphere</alert></p>
+		<p>
+			We find electric potential at a point P by integrating  negative of the dot product of electric field with displacement from <m>r=\infty</m> (reference point) to the <m>r=r</m>. 
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				With P outside, we get the same expression for potential as that of a point charge, but in the space inside the sphere, we get constant potential. These are sketched in <xref ref="fig-spherical-metal-potential-sketch"/>
+				<me>
+					\phi(r) = \begin{cases}
+								\dfrac{1}{4\pi\epsilon_0}\,\dfrac{q}{R} \amp r \le R\\
+								\dfrac{1}{4\pi\epsilon_0}\,\dfrac{q}{r} \amp r \gt R
+							\end{cases}
+				</me>
+				
+			</p>
+			<p></p>
+			<figure xml:id="fig-spherical-metal-potential-sketch">
+				<caption>
+				</caption>
+				<image source="./images/conductors/spherical-metal-potential-sketch.png" width="50%"/>
+			</figure>
+		</sidebyside>
+
+	</subsection>
+
+
+
+	<subsection><title>An Isolated Charged Long Metallic Wire</title>
+		<sidebyside widths="55% 10% 25% 10%">	
+			<p>
+				We have already worked out electric field of a charged wire of linear charge density <m>\lambda</m>. Using Gauss's law for cylindrical symmetry, it was shown that electric field has the following magnitude at a ditance <m>s</m> from the wire.
+				<me>
+					E = \frac{\lambda}{2\pi\epsilon_0}\;\frac{1}{s}.
+				</me> 
+			</p>
+			<p></p>
+			<figure xml:id="fig-charged-metallic-wire">
+				<caption>
+				</caption>
+				<image source="./images/conductors/charged-metallic-wire.png" width="50%"/>
+			</figure>
+			<p></p>
+		</sidebyside>
+
+		<p>
+			The electric potential with potential zero reference at distance <m>s_\text{ref}</m> is
+			<me>
+				\phi = - \frac{\lambda}{2\pi\epsilon_0}\;\ln\frac{s}{s_\text{ref}}.
+			</me> 			
+
+		</p>
+		
+	</subsection>
+
+
+
+
+	<exercise xml:id="ex-Electric-Field-of-Charged-Copper-Cylinder"><title>Electric Field of Charged Copper Cylinder </title>
+
+		<statement>
+			<p>
+				A long cylinder of copper of radius <m>3\text{ cm}</m> is charged so that it has a uniform charge per unit length on its surface of <m>3\;\mu\text{C/m}</m>.  (a) Find the electric field inside (<m>s=2.0\text{ cm}</m>) and outside (<m>s=4.0\text{ cm}</m>) the cylinder. (b) Draw electric field lines in a plane perpendicular to the rod.
+
+			</p>
+		</statement>
+		<hint><p>
+			(a) Use formula for electric field for cylindrical symmetry. (b) Use the rule that: (1) Electric field lines begin at positive charge and end at negative charges and (2) Electric field lines land perpendicularly on metals.
+		</p></hint>
+		<answer><p>(a) <m>1.35\times 10^6 \:\text{N/C}</m>,(b) see solution.</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)	Since, we have electrostatic situation, charges on metal will reside on the surface of the cylinder. Using the Gauss’s law for cylindrical symmetry, you find that electric field inside the cylinder is zero.
+				<me>
+					E_\text{in} = 0.
+				</me>
+				From using Gauss's law for a point outside we will get
+				<me>
+					E_\text{out} = \frac{\lambda}{2\pi\epsilon_0}\;\frac{1}{s},
+				</me>
+				where <m>s</m> is the distance of the point from the center of the rod.
+
+				at points outside the cylinder, the magnitude <m>E_{\text{out}}</m> of electric field is dependent on the distance <m>s</m> meters from the axis of the cylinder.
+				<md>
+					<mrow>E_{\text{out}} \amp = \frac{1}{2\pi\epsilon_0}\:\frac{\lambda}{s} = 2k\:\frac{\lambda}{s} </mrow>
+					<mrow> \amp = 2\times 9\times 10^{9}\:\dfrac{\text{N.m}^2}{\text{C}^2}\times \dfrac{3\times 10^{-6}\:\text{C/m}}{0.04\:\text{m}} = 1.35\times 10^6 \:\text{N/C}.</mrow>
+					
+				</md>
+ 
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				<xref ref="fig-charged-copper-cylinder-sol"/> shows electric field lines and equi-potential lines (dashed) in a cross-section of the wire.
+			</p>
+			<figure xml:id="fig-charged-copper-cylinder-sol">
+				<caption>
+				</caption>
+				<image source="./images/conductors/charged-copper-cylinder-sol.png" width="60%"/>
+			</figure>
+
+
+		</solution>
+
+
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Charged-Metallic-Spherical-Shell-Surrounding-a-Charged-Metal-Ball"><title>Electric Field of Charged Metallic Spherical Shell Surrounding a Charged Metal Ball</title>
+
+		<statement>
+			<sidebyside widths="55% 5% 40%">
+				<p>	
+					<p>
+						An aluminum spherical ball of radius <m>4\text{ cm}</m> is charged with <m>5\ \mu\text{C}</m> of charge.  A copper spherical shell of inner radius <m>6\text{ cm}</m>  and outer radius <m>8\text{ cm}</m>  surrounds it.  A total charge of <m>-8\ \mu\text{C}</m> is put on the copper shell.
+					</p>
+		
+					<p>
+						(a) Find the electric field at all points in space including points inside the aluminum and copper shell when copper shell and aluminum sphere are concentric.
+					</p>
+				</p>
+				<p></p>
+				<figure xml:id="fig-spherical-shell-surrounding-charged-ball-sol-a">
+					<caption>
+						For <xref ref="ex-Charged-Metallic-Spherical-Shell-Surrounding-a-Charged-Metal-Ball"/> (a).
+					</caption>
+					<image source="./images/conductors/spherical-shell-surrounding-charged-ball-sol-a.png" width="60%"/>
+				</figure>
+			</sidebyside>	
+
+			<sidebyside widths="50% 5% 45%">			
+				<p>
+					(b) Find the electric field at all points in space including points inside the aluminum and copper shell when the centers of copper shell and aluminum sphere are <m>1\text{ cm}</m> apart. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-spherical-shell-surrounding-charged-ball-b">
+					<caption>
+						For <xref ref="ex-Charged-Metallic-Spherical-Shell-Surrounding-a-Charged-Metal-Ball"/> (b).
+					</caption>
+					<image source="./images/conductors/spherical-shell-surrounding-charged-ball-b.png" width="60%"/>
+				</figure>
+			</sidebyside>
+
+
+		</statement>
+		<hint>
+			<p>
+				(a) Use Gauss's law. (b) Use shielding to get formula for point inside.
+			</p>
+		</hint>
+		<answer>
+			<p>
+				See solution.
+			</p>
+		</answer>
+		<solution><title>(a)</title>
+
+			<p>
+				(a) The given charge distributions have spherical symmetry.  Therefore, a quick application of Gauss's law yields the following for the electric field in various regions.
+				<me>
+					\vec E = \begin{cases}
+						0	\amp 	r\lt 4\:\text{cm}\\
+						\dfrac{1}{4\pi\epsilon_0}\:\dfrac{5\:\mu\text{C}}{r^2}\: \hat u_r	\amp   \ \ \ \ 4\:\text{cm} \lt r \lt  6\:\text{cm}\\
+						0	\amp 	 6\:\text{cm} \lt r \lt 8\:\text{cm}\\
+						\dfrac{1}{4\pi\epsilon_0}\:\dfrac{-3\:\mu\text{C}}{r^2}\: \hat u_r	\amp  \ \ \ \    r > 8\:\text{cm}
+					\end{cases}
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b) Using the isolation of electric field inside a metal cavity from outside, we can rewrite the results of part (a).  Now, we need to make sure that the distances outside the metal sphere will be from the center of the sphere but the distance at points inside the metal will be from the center of the cavity.   
+ 
+				<me>
+					\vec E = \begin{cases}
+						0	\amp 	r_{\text{in}} \lt 4\:\text{cm}\\
+						\dfrac{1}{4\pi\epsilon_0}\:\dfrac{5\:\mu\text{C}}{r_{\text{in}}^2}\: \hat u_r	\amp   \ \ \ \ 4\:\text{cm} \lt  r_{\text{in}} \lt 5\:\text{cm}\\
+						0	\amp 	 6\:\text{cm} \lt r_{\text{out}} \lt 8\:\text{cm}\\
+						\dfrac{1}{4\pi\epsilon_0}\:\dfrac{-3\:\mu\text{C}}{r_{\text{out}}^2}\: \hat u_r	\amp  \ \ \ \    r_{\text{out}} > 8\:\text{cm}
+					\end{cases}
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Electric-Potential-between-two-Charged-Metal-Plates"><title>Electric Potential between two Charged Metal Plates</title>
+
+		<statement>
+			<p>
+				Two large charged aluminum plates of charge density <m>\pm 30\text{ mC/m}^2</m> face each other at a separation of <m>5\text{ mm}</m>. (a) Find the electric potential everywhere. (b) An electron is released from rest at the negative plate, with what speed will it strike the positive plate? 
+			</p>
+		</statement>
+		<hint><p>(a) Electric field between plates is constant. (b) Use conservation of energy. </p></hint>
+		<answer><p>
+			(a) <m>1.69\times 10^7\:\text{V}</m>, (b) <m>5.7\times 10^7\text{ m/s}</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)	The electric field between the plates is constant with magnitude <m>E = \sigma/\epsilon_0</m> directed from the positive plate to the negative plate.  Therefore the electric potential between the plates increases linearly from zero on the negative plate to <m>\phi = (\sigma/\epsilon_0)\:d</m>  on the positive plate, where <m>d</m>  is the separation of plates.  The numerical value of the potential difference will be
+				<me>
+					\phi = \frac{30\times 10^{-3}\:\text{C/m}^2}{8.85\times 10^{-12}\:\text{C}^2/\text{N.m}^2}\:0.005\:\text{m} = 1.69\times 10^7\:\text{V},
+				</me>
+				where I have written the final unit as volts since that is what the combination of the other units is called in SI units.
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p> 
+				(b)	Using the conservation of energy we find
+				<me>
+					\frac{1}{2} mv^2 = |e\: \phi|
+				</me>
+				Hence,
+				<md>
+				 	<mrow> v \amp = \sqrt{2|e\: \phi|/m}</mrow>
+				 	<mrow> \amp = \sqrt{2\times 1.6\times 10^{-19}\:\text{C}\times 1.69\times 10^7\:\text{V}/1.67\times 10^{-27}\:\text{kg}}</mrow>
+				 	<mrow> \amp = 5.7\times 10^7\:\text{m/s},</mrow>
+				</md>
+				which is about 1/5th of the speed of light in vacuum. You should probably use relativistic formulas. 
+
+
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Charge-and-Voltage-of-a-Gold-Shell-Surrounding-a-Charged-Pith-Ball"><title>Charge and Voltage of a Gold Shell Surrounding a Charged Pith Ball </title>
+
+		<statement>
+			<p>
+				A small spherical pith ball of radius <m>0.5\text{ cm}</m> is painted with a silver paint and then <m>-10\ \text{nC}</m> of charge placed on it.  The charged pith ball is put at the center of a gold spherical shell of inner radius <m>2.0\text{ cm}</m> and outer radius <m>2.2\text{ cm}</m>.
+			</p>
+			<p>
+				(a) Find the electric potential of the gold shell with respect to zero potential at infinity. 
+			</p>
+			<p>
+				(b) How much charge should you put on the gold shell if you want to make its potential <m>100\text{ V}</m>?  
+ 
+			</p>
+		</statement>
+		<hint><p>(a) Outside the spherical gold shell, formula for potential is same as that of a point charge located at the origin. (b) Set up the condition for potential at outer surface of gold shell.</p></hint>
+		<answer><p>
+			(a) <m>4.1\text{ kV}</m>, (b) <m>10.244\text{ nC}</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)	
+				 
+				Outside the gold shell, the potential will be given by the same formula as that of a point charge at the center.  Therefore,
+				<md>
+					<mrow>\phi \amp = \dfrac{1}{4\pi\epsilon_0}\: \dfrac{q}{R}</mrow>
+					<mrow> \amp = 9\times 10^9\:\text{N.m}^2\text{/C}^2\times\dfrac{-10\times 10^{-9}\:\text{C}}{0.022\:\text{m}} = - 4.1\times 10^{3}\;\text{V}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>	
+				(b)	To make the potential of the gold shell <m>100\text{ V}</m>, we must put positive charge <m>Q</m> on the shell such that its potential and that of the charges on the pith ball together equal <m>100\text{ V}</m>.  This gives the following condition on <m>Q</m>.
+				<me>
+					9\times 10^{9}\:\text{N.m}^2\text{/C}^2\times\dfrac{-10\times 10^{-9}\:\text{C} + Q}{0.022\:\text{m}} = 100\:\text{V}.
+				</me>
+				When you solve this equation for <m>Q</m> you get
+				<me>
+					Q = \left[ 10\times 10^{-9} + 2.44\times 10^{-10} \right]\: \text{C} = 10.244\text{ nC}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Electric-Field-and-Electric-Potential-of-a-Charged-Aluminum-Cylinder"><title>Electric Field and Electric Potential of a Charged Aluminum Cylinder</title>
+
+		<statement>
+			<p>
+				A long cylinder of aluminum of radius <m>R</m> is charged so that it has a uniform charge per unit length on its surface of <m>\lambda</m>.  (a) Find the electric field inside and outside the cylinder. (b) Find the electric potential inside and outside the cylinder. (c) Plot electric field and electric potential as a function of distance from the center of the rod. 
+			</p>
+		</statement>
+		<hint><p>Use Gauss's law.</p></hint>
+		<answer><p>
+			(a) <m>E_{\textrm{in}} = 0</m>, <m>E_{\textrm{out}} = \dfrac{\lambda}{2\pi\epsilon_0}\: \dfrac{1}{s}</m>,
+			(b) <m>\phi_{\textrm{in}} = 0</m>, <m>\phi_{\textrm{out}}  = -\dfrac{\lambda}{2\pi\epsilon_0}\: \ln\dfrac{s}{R}</m>,
+			(c) See solution.
+
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)	By Gauss's law, you can show that <m>E_{\textrm{in}} = 0</m>, and <m>E_{\textrm{out}}</m> is given by the following.
+				<me>
+					E_{\textrm{out}} = \dfrac{\lambda}{2\pi\epsilon_0}\: \dfrac{1}{s},\ \ \ (s>R)
+				</me>
+				The direction of the elctric field is (cylindrical) radially out from the axis of the cylinder if <m>\lambda \gt 0</m> and towards the axis if <m>\lambda \lt 0</m>.
+			</p>
+		</solution>
+
+		<solution><title>(b)</title>
+			<p>	
+				(b)	The electric potential at a field point can be obtained by integrating electric field from a reference point a distance <m>s_{\textrm{ref}}</m> from the axis to the field point. For simplicity we can pick <m>s_{\textrm{ref}} = R</m> so that potential at the surface of the cylinder will be zero.  In this case we get integrating the electric field from <m>s=R</m> to <m>s \gt R</m>, we get
+				<me>
+					\phi_{\textrm{out}}  = -\dfrac{\lambda}{2\pi\epsilon_0}\: \ln\dfrac{s}{R}\ \ (s\ge R).
+				</me>
+ 
+				The electric potential inside does not change from that at the outer surface of the metal since electric field in the body of the aluminum cylinder is zero.  Hence,
+				<me>
+					\phi_{\textrm{in}} = 0\ \ (s\le R).
+				</me>
+			</p>
+		</solution>
+		<solution><title>(c)</title>
+			<p>	
+				(c)	 The plot for electric field and electric potentials are shown in the figure below.  Note that while the magnitude of the electric field has a jump across the metal, the electric potential is continuous. 
+			</p>
+			<figure xml:id="fig-ex-electric-field-and-elec-pot-charged-al-cyl">
+				<caption>
+				</caption>
+				<image source="./images/conductors/ex-electric-field-and-elec-pot-charged-al-cyl.png" width="50%"/>
+			</figure>  
+			
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+</section>

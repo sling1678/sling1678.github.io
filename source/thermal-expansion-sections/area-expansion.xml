@@ -1,0 +1,137 @@
+<section xml:id="Thermal-Area-Expansion"><title> Thermal Area Expansion</title>
+
+	<introduction>
+
+		<p>
+
+			When a solid plate is heated, both its length and width expand by the mechanism of linear expansion.  Consequently, area change <m>\Delta A</m> is proportional to the original area <m>A</m> and rise in temperature <m>\Delta T</m> assuming <m>\Delta A\lt\lt A</m>.   
+			<men>
+				  \Delta A  = k A \Delta T.
+			</men>
+			The constant of proportionality <m>k</m> can be related to the coefficient of linear expansion <m>\alpha</m> of the material as we can find by considering area change of a rectangular plate of length <m>L</m> and width <m>W</m>.
+			<me>
+				\Delta A = L_0W_0(1+\alpha\Delta T)^2 - L_0W_0 \approx 2\alpha A_0\Delta T.
+			</me>
+			With <m> A \text{ (at }T+\Delta T \text{)} = (L+\Delta L) (W+\Delta L) </m> and  <m>A \text{ (at }T \text{)} = LW </m>, we get 
+			<md>
+				<mrow> \Delta A \amp = A \text{ (at }T+\Delta T \text{)} - A \text{ (at }T \text{)},</mrow>
+				<mrow> \amp = \left( LW + L \Delta W  + W \Delta L + \Delta L \Delta W\right) - LW, </mrow>
+				<mrow>  \amp =   L \Delta W  + W \Delta L + \Delta L \Delta W, </mrow>
+				<mrow>  \amp \approx   L \Delta W  + W \Delta L, </mrow>
+			</md>
+			where I dropped the last term since it will be considerably smaller than the terms kept.
+			Now, we express the <m> \Delta L = \alpha L\Delta T</m> and <m> \Delta W = \alpha W\Delta T</m>	 to get
+			<men>
+				\Delta A  = 2\alpha A \Delta T.
+			</men>	
+			Hence, the coefficient of area expansion is equal to twice the coefficient of linear expansion.
+			<men>
+				k = 2\alpha.
+			</men>
+			Note that the coefficient of expansion for the area is not the square of the coefficient of the linear expansion, i.e. <m>k\ne \alpha^2</m>, but rather <m>k =2 \alpha</m>. You would make this mistake if you wrongly assumed that <m> \Delta A = \Delta L \Delta W \text{ (WRONG!)}</m>.
+
+		</p>
+
+		
+	</introduction>
+
+
+
+	<exercise xml:id="ex-Expansion-of-Copper-Plates-When-Heated"><title> Expansion of Copper Plates When Heated </title>
+		<statement>
+			<p>
+				Two copper plates each of length <m>l_0 = 15\text{ cm}</m> and width <m>w_0 = 2\text{ cm}</m> at temperature <m>25^{\circ}\text{C}</m> are  placed parallel lengthwise on a wooden plank as shown in the figur below.  There is a separation of <m>s_0 = 2\text{ cm}</m> from one edge of one plate to the nearest edge of the other plate.  They are then placed in an oven and heated to a temperature of <m>85^{\circ}\text{C}</m>.  What is the separation <m>s</m> between the plates at that temperature? (Ignore any change in the wooden plank.)
+			</p>
+
+			<image source="./images/thermal-expansion/copper-plates-side-by-side.png" width="80%"/>
+ 
+
+		</statement>
+		<hint> <p>  Length expansion closes the gap. </p> </hint>
+		<answer> <p> <m>1.985\text{ cm}</m>  </p> </answer>
+		<solution> 
+			<p>
+
+				The length expands linearly as does the width. The separation reduces due to expansion along the length. Each plate will expand by <m>\Delta l = l - l_0</m>, half of which will come from each plate will reduce the gap between the plates. Therefore, expansion of the two plates together will reduce the distance be <m>\Delta l</m>. 
+			</p>
+			<p>
+				Using the coefficient of linear expansion of copper we obtain
+				<md>
+					<mrow> \Delta l \amp  =  \frac{16.5\times 10^{-6}}{\ ^{\circ}\text{C}}\times 0.15\ \text{m} \times (85-25)^{\circ}\text{C}  =  0.15 \ \text{mm}.</mrow>
+				</md>
+				Therefore, the separation will be <m> 2.0\text{ cm} - 0.015\text{ cm} = 1.985\text{ cm}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Expansion-of-Copper-Plates-with-a-Lengthwise-Slit-When-Heated"><title> Expansion of Copper Plates with a rectangular hole When Heated</title>
+		<statement>
+
+			<p>
+				A copper plate of length <m>l_0 = 15\text{ cm}</m> and width <m>w_0 = 6\text{ cm}</m> with a rectangular hole of length <m>l_0 = 10\text{ cm}</m> and width <m>w_0 = 2\text{ cm}</m>  at temperature <m>25^{\circ}\text{C}</m> is  placed  in an oven and heated to a temperature of <m>85^{\circ}\text{C}</m>.  How big is the hole at <m>85^{\circ}\text{C}</m>?
+			</p>
+
+			<image source="./images/thermal-expansion/copper-plate-with-hole.png" width="60%"/>
+
+
+		</statement>
+		<hint> <p>  Hole will expand as if it was filled with the same material </p> </hint>
+		<answer> <p> Hole: <m>\Delta l = 0.01\text{ cm}</m>, <m>\Delta w = 0.002\text{ cm}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Since the plate is free to expand outward, the plate will expand as if there was no hole, expanding the area of the hole proportionately. The length and width of the hole after expansion will be
+				<md>
+					<mrow> l \amp = 10\text{ cm } + 
+					\frac{16.5\times 10^{-6}}{\ ^{\circ}\text{C}}\times 10\ \text{cm} \times (85-25)^{\circ}\text{C}, </mrow>
+					<mrow> \amp = 10\text{ cm } + 0.01 \text{ cm}. </mrow>
+					<mrow> w \amp = 2\text{ cm } + 0.002 \text{ cm}. </mrow>
+				</md>
+			</p>
+			<image source="./images/thermal-expansion/copper-plate-with-hole-solution.png" width="60%"/>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Fitting-Rivets-into-Holes-by-Cooling-the-Rivets"><title> Fitting Rivets into Holes by Cooling the Rivets</title>
+		<statement>
+			<p>
+				For a tighter fit, rivets are usually made slightly larger than the rivet holes, and,  to make the rivets fit into the holes, they are cooled before being driven in the holes.  Consider a rivet hole of diameter <m> 4\text{ mm}</m> at <m>20^{\circ}\text{C}</m>.  What would be the diameter of an aluminum rivet at <m>20^{\circ}\text{C}</m> which just fits the rivet hole when it is cooled by dry ice (solid <m>\text{CO}_2</m>) to a temperature of <m>-78^{\circ}\text{C}</m>?
+			</p>
+			<p>
+				Data: <m>\alpha = \frac{16.5\times 10^{-6}}{\ ^{\circ}\text{C}} </m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Diameter will expand as length. </p> </hint>
+		<answer> <p> <m> 4.0065\text{ mm}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The linear dimension, such as diameter <m> D</m>, expands or contracts as length.
+				<me>
+					\dfrac{\Delta D}{D}  =  \alpha \Delta T.
+				</me>
+				Let <m>x</m> be the diameter of the rivet at <m>20^{\circ}\text{C}</m>, whose diameter at <m>-78^{\circ}\text{C}</m> would have to be <m> 4\text{ mm}</m>, actually a smidgen less in order to slide through.
+				Therefore, we will get the following equation.
+				<me>
+					\dfrac{x - 4 }{4} =  \frac{16.5\times 10^{-6}}{\ ^{\circ}\text{C}} \times (20 -(-78)).
+				</me>
+				Solving for <m>x</m>, we get <m>x = 4.0065\text{ mm}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+</section>

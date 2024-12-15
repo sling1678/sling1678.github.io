@@ -1,0 +1,148 @@
+<section xml:id="reflection-and-transmission-of-waves"><title>Reflection and Transmission</title>
+	<introduction>
+        <p>
+            So far we have studied waves traveling in an open space in a single medium. Since wave speed depends on the chanracteristics of the media, if a wave encounters another medium, there will be a reflection of the wave back into the first medium and some transmission into the second medium as illustrated in <xref ref="fig-reflection-waves-on-a-two-segmented-string"/> for waves on a string with two different cords, which are the two media for the wave.
+        </p>
+        <p>
+            Turning on the vibrator, shown on the left end of the figure by a triangle, sends a wave towards the knot.  We call this wave the <term>incident wave</term>. When the wave arrives at the knot, the knot is vibrated by the incoming wave.  As a result the knot acts as a wave transmitter sending waves in the two directions, one in the second string, the <term>transmitted wave</term> and the other in the first string,   the <term>reflected wave</term>  which moves in the opposite direction to the wave coming from the vibrator.  The reflected wave will come back and strike the vibrator. We will assume that strings are very long and we are looking at times when reflected wave has not struck the vibrator yet. Similarly, we assume that transmitted wave has not struck the other end.
+        </p>
+
+
+        <figure xml:id="fig-reflection-waves-on-a-two-segmented-string">
+            <caption>
+                Harmonic waves on two connected strings of different mass densities <m>(\mu_1\ne \mu_2)</m> and same tension <m>(T_1=T_2)</m>. The frequency of the wave is set by the frequency of vibrations of the wave generator. The incident wave is labeled <em>in</em>, the reflected wave <em>re</em>, and the transmitted wave <em>tr</em>. The Greek letter <m>\psi</m> is used for the wave function.
+            </caption>
+            <image source="./images/coupled-vibrations/reflection-waves-on-a-two-segmented-string.png" width="100%"/>
+        </figure>
+
+        <!-- <p>
+            The net wave on the string on the left is obtained by the superposition of the two waves, the <term>incident wave</term> and <term>reflected wave</term>, on that part of the string. The wave in the second medium is the <term>transmitted wave</term>. The relative magnitude and phases of waves are determined by boundary conditions that equations of motion of the wave must satisfy at the boundary of the two media. These treatments are a little beyond the scope of this book. Here, I will just write down the results of such calculations.
+        </p> -->
+        <p>
+            Suppose the vibrator is vibrating at a particular (angular) frequency <m>\omega</m>. Then, the frequencies of three waves, incident, reflected, and transmitted, will all be same as <m>\omega</m>.  However, two of these waves, viz., incident and reflected, move in the medium of wave speed <m>v_1 = \sqrt{T/\mu_1}</m>, therefore, they will have the same wavenumber and same wavelength. But, the transmitted wave moves in a medium of wave speed <m>v_2 = \sqrt{T/\mu_2}</m>, which is different than <m>v_1</m>.  As a result, the transmitted wave will have different wavenumber and wavelength.  Using <m>k=\omega/v</m> relation of waves we have the following.
+            <md>
+                <mrow> \amp k_1= \omega/v_1 = \omega\sqrt{\mu_1/T},</mrow>
+                <mrow> \amp k_2= \omega/v_2 = \omega\sqrt{\mu_2/T}. </mrow>
+            </md>
+            Since wave number <m>k</m> of a wave is related to wavelength <m>\lambda</m> by <m>k = 2\pi/\lambda</m>, this says that the wavelengths of a wave of same frequency will be different in the two media. Let <m>\lambda_1</m> and <m>\lambda_2</m> for the respective wavelengths, then we have
+            <me>
+                \frac{\lambda_1}{v_1} = \frac{\lambda_2}{v_2} = \frac{2\pi}{\omega} = \dfrac{1}{f},
+            </me>
+            where <m>f</m> is the regular frequency, common to all three waves.
+ 
+        </p>
+    </introduction>
+    <subsection>
+        <title>(Calculus) Boundary Conditions </title>
+        <p>
+            Suppose the two strings in <xref ref="fig-reflection-waves-on-a-two-segmented-string"/> are semi-infinite in extent, that is, we assume the vibrator and the post are far away from the knot at <m>x=0</m>.  Suppose the strings are tied together smoothly and the knot  be considered  <em>massless</em>.   Let <m>\psi_1(x,t)</m>  be the transverse displacement of the string on the left of <m>x=0</m>, i.e. when <m>x \lt 0</m>, and <m>\psi_2(x,t)</m> be the transverse displacement on the right of <m>x=0</m>, i.e. when <m>x \gt 0</m>, respectively. Here <m>\psi_1</m> will be a sum of incident and reflected waves and <m>\psi_2</m> will just be the transmitted wave.
+        </p>
+        <p>
+            Since the strings are continuous at the junction the displacement of the string at the boundary at <m>x=0</m> must be same whether we use <m>\psi_1</m> or <m>\psi_2</m> for the displacement at that point. Furthermore, the force on the know should be balanced. These two requirements give us <term>boundary conditions</term> relating <m>\psi_1</m> and <m>\psi_2</m>. 
+            <mdn>
+                <mrow xml:id="eq-boundary-condition-1"> \psi_1(0,t) = \psi_2(0,t)</mrow>
+                <mrow xml:id="eq-boundary-condition-2"> \left( \dfrac{\partial\psi_1(x,t)}{\partial x} \right)_{x=0}=  \left( \dfrac{\partial\psi_2(x,t)}{\partial x} \right)_{x=0}</mrow>
+            </mdn>
+        </p>
+
+    </subsection>
+    <subsection>
+        <title>Reflection and Transmission Amplitudes</title>
+        <p>
+            We now apply boundary conditions, Eqs. <xref ref="eq-boundary-condition-1"/> and <xref ref="eq-boundary-condition-2"/>, to the situation of waves on the string in <xref ref="fig-reflection-waves-on-a-two-segmented-string"/>. First we need analytic representations of the three waves. Let incident wave be a sinusidal wave of amplitude <m>A_\text{in}</m> with the following expression.
+            <me>
+                \psi_\text{in} = A_\text{in}\cos(k_1 x - \omega t).
+            </me>
+            The reflected wave will be moving to the left. Let its amplitude be denoted by <m>A_\text{re}</m>, which can be negative if wave flips over upon reflection.
+            <me>
+                \psi_\text{re} = A_\text{re}\cos(k_1 x + \omega t).
+            </me> 
+            Note the signs of the two terms in the argument of cosine is same since this wave is traveling towards negative <m>x</m> axis. Finally, let us denote the amplitude of the transmitted wave by <m>A_\text{tr}</m>.
+            <me>
+                \psi_\text{tr} = A_\text{tr}\cos(k_2 x - \omega t).
+            </me>
+            Now, we note that the net wave on the left, <m>\psi_1</m>, is superposition of <m>\psi_\text{in}</m> and <m>\psi_\text{re}</m>, but <m>\psi_2</m> is just the tranmitted wave.
+            <mdn>
+                <mrow>\amp \psi_1 = A_\text{in}\cos(k_1 x - \omega t) + A_\text{re}\cos(k_1 x + \omega t), </mrow>
+                <mrow>\amp \psi_2 = A_\text{tr}\cos(k_2 x - \omega t).</mrow>
+            </mdn>
+            When, we apply two boundary conditions, given in Eqs. <xref ref="eq-boundary-condition-1"/> and <xref ref="eq-boundary-condition-2"/>, at <m>x=0</m>, we find reflection and transmission amplitudes in terms of the incident amplitude. Let us define these ratios, called <term>reflection and  transmission coefficients</term> for simplifying the expressions later. Let 
+            <me>
+                \rho = \frac{A_\text{re}}{A_\text{in}},\ \ \ \tau = \frac{A_\text{tr}}{A_\text{in}}.
+            </me>
+            The boundary conditions give us the following equations.
+            <mdn>
+                <mrow>\amp 1 + \rho = \tau,</mrow>
+                <mrow>\amp -k_1 + k_1 \rho = k_2 \tau.</mrow>
+            </mdn>
+            These can be solved for refelction and transmission coefficients.
+            <mdn>
+                <mrow xml:id="eq-reflection-coefficient-1">\amp \rho = \frac{k_1 - k_2}{k_1 + k_2},</mrow>
+                <mrow  xml:id="eq-transmission-coefficient-1">\amp \tau = \frac{2k_1}{k_1 + k_2}.</mrow>
+            </mdn>
+            Of coourse, we can express them in terms of wavelengths and speeds as well.
+            <mdn>
+                <mrow xml:id="eq-reflection-coefficient-2">\amp \rho = \frac{\lambda_2 - \lambda_1}{\lambda_2 + \lambda_2} = \frac{v_2 - v_1}{v_2 + v_2},</mrow>
+                <mrow  xml:id="eq-transmission-coefficient-2">\amp \tau = \frac{2v_2}{v_2 + v_2}.</mrow>
+            </mdn>
+            We see that, when <m>\mu_2 \gt \mu_1</m>, corresponding to <m>v_2 \lt v_1</m>, or alternately <m>\lambda_2 \lt \lambda_1</m>, the reflection coefficient is negative. Negative reflection coefficient means the reflecion displacement is opposite to the incident displacement, i.e., the reflected wave is inverted relative to the incident wave as shown in <xref ref="fig-reflection-waves-on-a-two-segmented-string"/>. The transmitted wave is always positive, meaning, it is not inverted in relation to the incident wave.                        
+             
+        </p>
+        <p>
+            Reflection and transmission coefficients, given in Eqs. <xref ref="eq-reflection-coefficient-1"/> to <xref ref="eq-transmission-coefficient-2"/> are often written in terms of another property of medium called <term>impedance</term> and denoted by letter <m>Z</m>. Impedance of string of tension <m>T</m> and mass per unit length <m>\mu</m> is defined by
+            <men>
+                Z = \sqrt{T\mu}.
+            </men>
+            This is also ratio of tension <m>T</m> and speed <m>v</m> of the wave.
+            <men>
+                Z = \frac{T}{v}.
+            </men>
+            In terms of <m>Z_1</m> and <m>Z_2</m> of the two media, the reflection and transmission coefficients are
+            <mdn>
+                <mrow xml:id="eq-reflection-coefficient-3">\amp \rho = \frac{Z_1 - Z_2}{Z_1 + Z_2},</mrow>
+                <mrow  xml:id="eq-transmission-coefficient-3">\amp \tau = \frac{2Z_1}{Z_1 + Z_2}.</mrow>
+            </mdn>
+            <xref ref="fig-inc-ref-tr-waves-on-a-string-at-various-times"/> shows reflection and transmission in case of <m>Z_2 \gt Z_1</m> at different times to show how incident wave reflecs and combines with the reflected wave.                    
+        </p>
+        <figure xml:id="fig-inc-ref-tr-waves-on-a-string-at-various-times">
+            <caption>
+                Incident, reflected, their sum, and transmitted waves on two strings fastened at <m>x=0</m> at various times. Let <m>T</m> be the period of the wave, not tension here. (a) <m>t=0</m>, (b) <m>t=2T/8</m>, (c) <m>t=4T/8</m>, (d) <m>t=6T/8</m>, (e) <m>t=7T/8</m>, (f) <m>t=8T/8</m>, where <m>T=2Pi/\omega</m> is one period.  The wave function <m>\psi_1</m> on the left string shown as solid line on the left of <m>x=0</m> is the sum of the incoming wave (blue dashed) and the reflected wave (red dashed), and the wave function <m>\psi_2</m> shown as solid line on the right of <m>x=0</m> on the string on the right is the transmitted wave.
+            </caption>
+            <image source="./images/coupled-vibrations/inc-ref-tr-waves-on-a-string-at-various-times.png" width="100%"/>
+        </figure>
+    </subsection>
+    <subsection>
+        <title>Perfect Reflection</title>
+        <p>
+            Suppose, instead of tying the left string to the right string, it is tied to a fixed support.  That is, we have one string which is being vibrated at some point, say, <m>x=-\infty</m>, and a wave is being sent down the string towards the positive <m>x</m>-axis, and let the string be attached to the fixed support at <m>x=0</m>.  We can think of the fixed support as if the second string in the example above having an infinite mass density, making <m>Z_2 = \infty</m>. Therefore, the large <m>Z_2</m> limit of Eqs. <xref ref="eq-reflection-coefficient-3"/> and <xref ref="eq-transmission-coefficient-3"/> will give us reflection from a massive string or a fixed post. 
+            <mdn>
+                <mrow number="no">\hskip-1.5cm\text{Reflection from fixed end:}</mrow>
+                <mrow xml:id="eq-coefficients-6e">\rho = \lim_{Z_2 \to \infty}\frac{Z_1-Z_2}{Z_1+Z_2} = -1,</mrow>
+                <mrow xml:id="eq-coefficients-7e">\tau=\lim_{Z_2 \to \infty}\frac{2Z_1}{Z_1+Z_2}=0.</mrow>
+            </mdn> 
+            That is, the wave will be fully reflected with the same amplitude as the incident wave but of opposite phase and there will be no transmission for reflection from a fixed post.  The right-moving wave and the left moving wave add up to give a standing wave on the string.
+            <me>
+                A\cos(kx-\omega t) + (-1)A\cos(kx+\omega t) \rightarrow 2 A \sin(kx) \sin(\omega t).
+            </me>
+ 
+        </p>
+    </subsection>
+
+
+    <subsection>
+        <title>Perfect Termination and Impedance Matching</title>
+        <p>
+            From Eq. <xref ref="eq-reflection-coefficient-3"/> we find that if impedance of the second medium is equal to the impedance of the first medium, i.e., when the impedances are matched, the reflection coefficient  will be zero.
+            <me>
+                \rho  = 0\ \ \text{when}\ \ Z_1 = Z_2.
+            </me> 
+            That is, the first string will not experience a recoil force and the wave will seamlessly enter the second string as if the boundary was not there. In this case the length of the second string does not matter since the second string just moves with the first string as the incident wave arrives at the junction. We say that the second string is a perfect terminator of the wave.
+        </p>
+
+    </subsection> 
+ 
+    
+
+
+
+</section>

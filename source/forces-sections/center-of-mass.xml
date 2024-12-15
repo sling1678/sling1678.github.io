@@ -1,0 +1,178 @@
+<section xml:id="forces-Multipart-System-and-Center-of-Mass-Motion"> <title> Multipart System and Center of Mass Motion</title>
+	<subsection> <title> Center of Mass </title>
+		<p> 
+			Consider a multipart system, such as your body. Suppose the body has <m> N </m> parts with masses <m> m_1 </m>, <m> m_2 </m>, <m> \cdots </m>, <m> m_N </m>. <em> These parts don't have to be joined together</em>, e.g., when a projectile breaks up into ten parts, they can all go their separate ways, but for us, all ten parts will still be part of my system.
+			</p> 
+		<p>
+			Let the centers of those parts be located at position vectors <m> \vec r_1 </m>, <m> \vec r_2 </m>, <m> \cdots </m>, <m> \vec r_N </m>. Then, the position of the center of mass, denoted by <m> \vec R_{\text{CM}}</m>, is defined by
+			<men xml:id="eq-cm-position">
+				\vec R_{\text{CM}} = \dfrac{m_1\vec r_1 + m_2\vec r_2 + \cdots + m_N\vec r_N }{M},
+			</men>
+			where <m> M </m> is the total mass:
+			<men>
+				M = m_1 + m_2 + \cdots + m_N.
+			</men>
+			We can write the components of this equation to obtain the <m> X_{\text{CM}} </m>, <m> Y_{\text{CM}} </m>, and <m> Z_{\text{CM}} </m> from the coordinates of the parts. For instance, <m> X_{\text{CM}} </m>, will be:
+			<men>
+				X_{\text{CM}} = \dfrac{m_1 x_1 + m_2 x_2 + \cdots + m_N x_N }{M},
+			</men>				
+			and similarly for <m> Y_{\text{CM}} </m>, and <m> Z_{\text{CM}} </m>.
+		</p>
+	</subsection>
+
+	<example> <title> CM of a two-mass system </title>
+		<statement>
+			<p>
+				Two blocks of masses <m> 10\text{ kg}</m> and <m> 20\text{ kg}</m>  are attached at the ends of a  <m> 1\text{-meter} </m>  rod of negligible mass. Where is the CM located?
+			</p>
+		</statement>
+		<solution>
+			<p>
+				Since we have only two masses, we place one of the masses at the  origin and the other mass along the <m> x </m> axis. Suppose we place the <m> 20\text{-kg}</m> block at the origin and the <m> 10\text{-kg}</m> block at <m> x = 1\text{ m} </m>. 
+			</p>
+			<p>
+				Leaving the units out of the calculations we get the follo0wing from the <m> X_{\text{CM}} </m> formula.
+				<me> 
+					X_{\text{CM}} = d\frac{ 20\times 0 + 10 \times 1}{30 } = \frac{1}{3}.
+				</me>
+				Now, we put the units back in. Therefore, the CM is located <m> \dfrac{1}{3}\text{ m}</m> from the <m> 20\text{-kg}</m> block towards the other block.   
+			</p>
+		</solution>
+	</example>
+
+	<example> <title> CM of a three-mass system </title>
+		<statement>
+			<p>
+				Three balls of masses <m> 2\text{ kg}</m>, <m> 3\text{ kg}</m> and <m> 4\text{ kg}</m>  are located at the corners of a right-angles triangle as shown in the fogure below. The three masses may or may not be connected by any rods. Where is the CM located?
+			</p>
+		</statement>
+		<solution>
+			<sidebyside widhts="50% 50%">
+				<p>					
+					Since we have a right-angled triangle, two of those sides can be chosen to align with Cartesian axes as shown. This gives us <m> (x,y) </m> coordinates of each of the masses. We use them in formulas to obtain <m> (x,y) </m> of the CM.
+				</p>
+				<image source="./images/forces/example-cm-masses-on-right-triangle.png" width="60%"/>
+			</sidebyside>
+			<p>
+				From the formulas for <m> X_{\text{CM}} </m> and <m> Y_{\text{CM}} </m>,.
+				<md>
+					<mrow> \amp X_{\text{CM}} =  \dfrac{2\times (-4) + 3\times 0 + 4 \times 0}{2+3+4} = -\dfrac{8}{9} </mrow>
+					<mrow> \amp Y_{\text{CM}} =  \dfrac{2\times 0 + 3\times 0 + 4 \times 3}{2+3+4} = \dfrac{4}{3} </mrow>
+				</md>
+				Therefore, the CM is located at <m> (-\dfrac{8}{9}\text{ m}, \dfrac{4}{3}\text{ m})</m> in the coordinate system in the figure. Note that these values will changes if we use another coordinate system, but the physical location of the CM will remain the same.  
+			</p>
+		</solution>
+	</example>
+
+
+
+
+
+
+
+	<subsection> <title> Center of Mass Velocity, Acceleration, and Momentum - Calculus </title>
+		<p> 
+			To study the motion of the center of mass (CM) of a multi-part system, we need to define velocity and acceleration of the CM. We use Calculus to do that. Recall that velocity is defined as the time derivative of position and acceleration the time derivative of velocity. We do the same with CM-position in Eq. <xref ref="eq-cm-position"/>.
+			<mdn >
+				<mrow xml:id="eq-cm-velocity"> \vec V_{\text{CM}} \amp = \dfrac{1}{M}\dfrac{d}{dt}\left( m_1\vec r_1 + m_2\vec r_2 + \cdots + m_N\vec r_N \right), </mrow>
+				<mrow number="No"> \amp =\dfrac{m_1\vec v_1 + m_2\vec v_2 + \cdots + m_N\vec v_N }{M}, </mrow>
+			</mdn>
+			where <m> \vec v_1 </m>, <m> \vec v_2 </m>, <m> \cdots </m>, <m> \vec v_N </m>, are the velocities of the individual parts, or more precisely, the velocoties of the centers of masses of the parts. Therefore, we find that the total momentum, i.e.,  the sum of the momenta of parts, is equal to the total mass times the momentum of the center of mass. 
+			<men xml:id="eq-cm-momentum-equals-total-momentum">
+				m_1\vec v_1 + m_2\vec v_2 + \cdots + m_N\vec v_N = M\vec V_{\text{CM}} \equiv \vec P_{\text{CM}}. 
+			</men>
+			We call the <m> M\vec V_{\text{CM}} </m> the <term> center-of-mass momentum</term>, <m> \vec P_{\text{CM}}</m>. Writing momentum of the parts as <m> \vec p_1</m>, <m> \vec p_2</m>, etc, we get
+			<men xml:id="eq-cm-momentum-equals-total-momentum-2">
+				\vec p_{\text{tot}} = \vec p_1 + \vec p_2 + \cdots = \vec P_{\text{CM}}. 
+			</men>
+		</p>
+		<p>
+			Taking a derivative of <m> \vec V_{\text{CM}}</m> with respect to <m> t </m> will give the acceleration of the CM of a system whose mass is constant in time, 
+			<mdn >
+				<mrow xml:id="eq-cm-acceleration"> \vec A_{\text{CM}} \amp = \dfrac{1}{M}\dfrac{d}{dt}\left( m_1\vec v_1 + m_2\vec v_2 + \cdots + m_N\vec v_N \right), </mrow>
+				<mrow number="No"> \amp = \dfrac{m_1\vec a_1 + m_2\vec a_2 + \cdots + m_N\vec a_N }{M}, </mrow>
+			</mdn>				
+			where <m> \vec a_1 </m>, <m> \vec a_2 </m>, <m> \cdots </m>, <m> \vec a_N </m>, are the accelerations of the individual parts.
+		</p>
+
+	</subsection>
+	<subsection> <title> Center of Mass Motion - Constant Mass Case</title>
+
+		<p>
+			Let us consider a system with <m> N </m> parts of masses <m> m_1 </m>, <m> m_2 </m>, <m> \cdots </m>, <m> m_N </m>. Let <m> \vec F_1 </m>, <m> \vec F_2 </m>, <m> \cdots </m>, <m> \vec F_N </m> be forces acting on those parts. For the sake of simplicity, let us look at the constant mass system, i.e., where masss of each part is fixed in time.
+		</p>
+		<p>
+			Now, we write Newton's equation of motion for each part.
+			<md>
+				<mrow> \amp \vec F_1 = m_1 \vec a_1 </mrow>
+				<mrow> \amp \vec F_2 = m_2 \vec a_2 </mrow>
+				<mrow> \amp \cdots </mrow>
+				<mrow> \amp \vec F_N = m_N \vec a_N </mrow>
+			</md>
+			Summing them, we find that the left side can be written as sum over all the forces from objects outside the <m> N </m> parts makign up the system, which we call the <alert> external forces </alert>, and a sum over all the forces that one part applies on another part.
+			<me>
+				\text{Left Side } = \vec F_1 + \vec F_2 + \cdots + \vec F_N = \vec F_{\text{net}}^{\text{ext}} + \vec F_{\text{net}}^{\text{int}}
+			</me>
+			By Newton's third law, internal forces, say by part 1 on 2 and by part 2 on 1 come in pairs whose sum is zero. Therefore,
+			<me>
+				\vec F_{\text{net}}^{\text{int}} = 0.
+			</me> 
+			That gives us the following simplified equation after summing the equations of all <m> N </m> parts.
+			<me>
+				F_{\text{net}}^{\text{ext}} = m_ 1\vec a_1 + m_2\vec a_2 + \cdots + m_N\vec a_N,
+			</me>
+			whose right side is just the total mass <m> M </m> times the center-of-mass acceleration <m> \vec A_{\text{CM}} </m>.
+			<men xml:id="eq-cm-eom-fext-ma">
+				F_{\text{net}}^{\text{ext}} = M \vec A_{\text{CM}},
+			</men>
+			where <m> M = m_1 + m_2 + \cdots + m_N </m>. It is interesting that overall motion of a malti-part system can be captured essentially by the motion of a single (fictitious) particle of total mass placed at the special point of the center of mass.  This is the equation we solve whenever we study the overall translation motion of finite-size objects since they are inherently mutiparticle systems. 
+
+		</p>
+
+
+	<example><title> CM of an exploding shell </title>
+		<p>
+			As an example consider the motion of pieces of an exploded shell in free-fall.  Although the pieces fly away in various directions, the CM falls as if no explosion had taken place since during the explosion all forces are internal to the system.
+		</p>
+
+		<sidebyside widths="50% 40%">
+			<p>
+				The motion of CM is that of a single particle with total mass of the system.  The fictitious particle at the CM falls freely with acceleration equal to g, the acceleration due to gravity, until one of the pieces hits the ground.			  
+			</p>
+			<p>
+				<image source="./images/forces/example-exploding-shell.png" width="50%" />
+			</p>
+		</sidebyside> 
+
+	</example>
+
+
+	</subsection>
+
+
+	<subsection> <title> Center of Mass Motion - General Case (Calculus)</title>
+		<p>
+			For the general case of <m> N </m> part system, we will have to start with equations of motion of individual parts in the momentum form.
+			<md>
+				<mrow> \amp \vec F_1 = \dfrac{d\vec p_1}{dt} </mrow>
+				<mrow> \amp \vec F_2 = \dfrac{d\vec p_2}{dt}  </mrow>
+				<mrow> \amp \cdots </mrow>
+				<mrow> \amp \vec F_N = \dfrac{d\vec p_N}{dt}  </mrow>
+			</md>
+			Now, summing them, we get the left side to equal the <m> F_{\text{net}}^{\text{ext}} </m> as above, and the right side equals the rate of change of total momentum.
+			<me>
+				F_{\text{net}}^{\text{ext}} = \dfrac{d}{dt} \left( \vec p_1 + \vec p_2 + \cdots + \vec p_N \right).
+			</me>
+			But by Eq. <xref ref="eq-cm-momentum-equals-total-momentum-2" />, we can replace the sum of momenta of the parts by the center-of-mass momentum.
+			<men ref="eq-cm-eom-fext-dpdt">
+				F_{\text{net}}^{\text{ext}} = \dfrac{d \vec P_{\text{CM}}}{dt},
+			</men>				
+			where <m> \vec P_{\text{CM}} = M \vec V_{\text{CM}}</m>. This equation takes care of even those situations in which the total mass of the system is changing, regardless of which part it that may be losing mass. Of course, if a system is not losing mass, we would use much simpler analysis based on Eq. <xref ref="eq-cm-eom-fext-ma" />.
+		</p>
+
+	</subsection>
+
+
+
+
+</section>

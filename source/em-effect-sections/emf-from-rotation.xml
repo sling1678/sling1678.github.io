@@ -1,0 +1,205 @@
+<section xml:id="Motional-EMF-from-Rotation"><title> Motional EMF from Rotation</title>
+	<introduction>
+
+		<p><alert>(Some Calculus)</alert> If you do not have Calculus background, you can take the result of Eq. <xref ref="eq-emf-for-N-turn-rotation"/> below as given. </p>
+		<p>
+			The changing magnetic flux as a result of the changing orientation of a loop is exploited to construct a source of current called the <term> alternating current (AC) generator</term>.  
+		</p>
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				The orientation of a loop with respect to a magnetic field can be changed by rotating the loop. To rotate the loop one usually mounts the loop on a structure with a handle that can rotate the loop about an axis perpendicular to the  direction of the magnetic field and to the area vector of the loop as shown in the figure.
+				<!-- <xref ref="fig-motional-emf-rotation-in-mag-field" />.  -->
+				We will address later the question of how we connect the loop to the outside world to harness the energy in the induced current. For now, we focus our attention on how a current can be induced in a rotating loop.
+			</p>
+			<p> </p>
+			<figure xml:id="fig-motional-emf-rotation-in-mag-field">
+				<caption>
+					<!-- To induce an EMF in a loop, the loop is rotated about an axis that is perpendicular to the magnetic field and area vector. -->
+				</caption>
+				<image source="./images/em-effect/motional-emf-rotation-in-mag-field.png" width="35%"/>
+			</figure>
+		</sidebyside>
+
+
+		<p>
+			When the conducting loop is rotated at angular frequency <m>\omega</m> (rad/s), about an axis perpendicular to the the direction of magnetic field, the angle <m>\theta</m> between the area vector and the magnetic field will vary in time as
+			<me>
+				\theta(t) = \theta_0 + \omega t,
+			</me> 
+			where <m>\theta_0</m> is the starting angle at time <m>t=0</m>.  To simplify the formulas we assume that  the zero of time is the instant when the angle is zero.  This gives
+			<me>
+				\theta(t) =\omega t.
+			</me> 
+			The area of the loop  and magnetic field are kept constant so that magnetic flux through the area of the loop at time <m>t</m> is given by
+			<me>
+				\Phi_B = AB\cos\left(\omega t \right).
+			</me>
+			If the closed circuit of the loop has <m>N</m> turns, then the open surface will have <m>N</m> such contributions to the magnetic flux.  By the flux rule, the induced EMF <m>\mathcal{E}</m> would equal  the negative of the rate of change of the magnetic flux,
+			<men xml:id="eq-emf-for-N-turn-rotation">
+				\mathcal{E}=-\frac{d\Phi_B}{dt} = \omega N A B \sin\left(\omega t \right).
+			</men>
+			This induced EMF will induce current in the  wires.  In order for the current to come out of the rotating loop, the loop cannot be a closed wire but an open wire with which contacts have to be made from outside wires thus completing the loop for the current flow as shown in the diagram in <xref ref="fig-AC-generator"/>.  The open loops are mounted on a drum, called the <term> armature</term>,  which rotates about an axle.  Slip rings are mounted on the axle to which outside wires make contact with the rotating open loops. 
+
+		</p>
+
+		<figure xml:id="fig-AC-generator">
+			<caption>
+				Main parts of an AC generator. As the loop is rotated, number of magnetic field lines passing through the surface of the loop changes, thus changing magnetic flux through the surface. In half the cycle flux increases and in other half the cycle the flux decreases, thus we get induced current alternating in direction. Such currents are called AC currents.
+			</caption>
+			<image source="./images/em-effect/AC-generator.png" width="70%" />
+		</figure>
+
+		<p>
+		Let the resistance of the external device called load in <xref ref="fig-AC-generator"/>   be  <m>R_L</m> before completing the loop and <m>R_{\text{coil}}</m> be the resistance of the rotating coil between the magnet poles.  Then, the net resistance in the circuit will be
+		<me>
+			R_{\text{net}} =  R_{\text{coil}} + R_L.
+		</me>
+		In the completed circuit the net resistance  is usually dominated by the resistance of the load.  Therefore, the induced current in the circuit will be
+		<men xml:id="eq-peak-current-induced-0">
+			I_{\text{ind}} = \frac{\mathcal{E}}{R_{\text{net}}}  
+		  \approx   N\times \frac{\omega A B}{R_{L}}\sin\left(\omega t \right)\ \ (\text{with}\ R_L\gg R_{\text{coil}} ). 
+		</men>
+		The time dependence of induced current in this circuit is sinusoidal, and since the sine function reverses sign every half cycle, the sine of the current will change every half cycle.  Therefore, the induced current will change direction every half cycle.  This type of current is called alternating current (AC). The induced current has a peak value of <m>N\omega A B/R</m> in either direction.
+		<men xml:id="eq-peak-current-induced-1">
+			I_{\text{peak}} = N\omega A B/R_L.  
+		</men>
+		The peak current in the coil is directly proportional to the number of turns in the coil, area of each loop of the coil, the strength of the magnetic field and the angular speed of rotation, and inversely proportional to the load resistance in the circuit.  Thus, if you increase the number of turns by two, you would get twice as much induced current, assuming other quantities remain unchanged.  If you rotate the loops twice as fast you would generate twice as big a current as illustrated in <xref ref="fig-AC-generator-curr-vs-omega"/>. 
+
+		</p>
+
+
+		<figure xml:id="fig-AC-generator-curr-vs-omega">
+			<caption>
+				Figure illustrates that as period is halved, i.e. as angular frequency is doubled, the peak induced current doubles.
+			</caption>
+			<image source="./images/em-effect/AC-generator-curr-vs-omega.png"  width="70%"/>
+		</figure>
+
+  
+
+		<p>
+			The frequency of rotation of coils sets the frequency of the current in the circuit. In the late nineteenth century and early twentieth century, several different frequencies were in use.  For instance, in 1918, there were ten different frequencies in use in London, England.  The frequency of 50 Hz in Europe became more common due to the success of the German electric company AEG. In USA the enormous success of Westinghouse Electric led to the standard use of their 60 Hz by other suppliers.
+		</p>
+	</introduction>
+
+	<subsection><title> (Calculus) Energy Required for Rotation of Loop in Magnetic Field</title>
+	<p>
+		Suppose, the net resistance of everything in the circuit is given by <m>R</m>, then the rate at which energy is dissipated in the circuit is given by the power dissipation formula for a resistor.
+		<me> 
+			P(t) = I_{\text{ind}}(t)^2 R.
+		</me>
+		Where does this energy come from? Note that the induced current in the rotating loop will have a torque <m>\vec \tau_B</m> from the magnetic field given by
+		<me> 
+			\vec \tau_B = I_{\text{ind}}\vec A\times \vec B\ \ \text{(1-turn)}
+		</me>
+		for a 1-turn loop.  But, if the loop is rotated at a constant angular velocity, this torque must be balanced by  a torque <m>\vec \tau_{app}</m> applied by an external agent  as shown in Fig. \ref{fig:motional-emf-3}.
+		</p>
+		<figure xml:id="fig-motional-emf-3">
+			<caption>
+				Rotational work is done by the external torque that balances the torque on the wires by magnetic field. During the interval <m>t</m> to <m>t+dt</m> the loop rotates by an angle <m>d\theta</m> which is not shown in the figure.
+			</caption>
+			<image source="./images/em-effect/motional-emf-3.png"  width="50%"/>
+		</figure>
+ 
+		<p>
+		<men xml:id="eq-mag-torque-energy-1"> 
+			\vec \tau_{appl} = - \vec \tau_B = -I_{\text{ind}}\vec A\times \vec B. \label{}
+		</men>
+		By the energy balance, we require that the rotational work done by the external agent must be equal to the total energy dissipated in the circuit.  
+		Using the current from Eq. <xref ref="eq-peak-current-induced-0"/> for <m>N=1</m> in Eq. <xref ref="eq-mag-torque-energy-1"/> and doing the calculation for work for rotation from <m>\theta=\omega t</m> to <m>\theta+d\theta = \omega(t+dt)</m> we find
+		<me> 
+			dW_{\text{rot}} = \frac{\omega A^2 B^2}{R}\sin^2\theta d\theta
+		</me>
+		Replacing <m>d\theta</m> by <m>\omega dt</m> we get
+		<me> 
+		dW_{\text{rot}} = \frac{\omega^2 A^2 B^2}{R}\sin^2(\omega t)dt.
+		</me>
+		Integrating over one cycle we find the work done by the applied torque.
+		<md>
+			<mrow> W_{\text{one cycle}}  \amp =  \frac{\omega^2 A^2 B^2}{R}\int_0^{2\pi/\omega}\sin^2(\omega t)dt</mrow>
+		 	<mrow> \amp = \frac{1}{2}\frac{\omega^2  A^2 B^2}{R} T,</mrow>
+		</md>
+		where <m>T</m> is period, <m>T= 2\pi/\omega</m>. This result can be written in terms of the peak current as
+		<me> 
+			W = \frac{1}{2}I_{\text{peak}}^2 R T.
+		</me>
+		We define a new measure of current, called the root-mean square (RMS) current, <m>I_{\text{rms}}</m> by
+		<me> 
+			I_{\text{rms}} = \frac{I_{\text{peak}}}{\sqrt{2}}.
+		</me>
+		With the rms-current, we can write the energy dissipated in each cycle by a formula that looks similar to the formula in a Direct Current (DC) circuit.
+		<me> 
+			W = I_{\text{rms}}^2 R T.
+		</me>
+		Dividing out the period we see that average power  <m>P_{\text{ave}}</m> dissipated, averaged over full cycles, is given by
+		<me> 
+			P_{\text{ave}} = I_{\text{rms}}^2 R.
+		</me>
+		A good exercise for the student at this point would be work out the formulas for an <m>N</m>-turn rotating coil.
+
+		</p>
+
+	</subsection>
+
+	<exercise xml:id="ex-Induced-EMF-in-a-Rotating-Ring-in-a-Magnetic-Field"><title> Induced EMF in a Rotating Ring in a Magnetic Field </title>
+		<statement>
+			<p>
+				A circular loop of wire of radius 10 cm is mounted on a vertical shaft and rotated at a frequency of 5 cycles per second in a region of uniform magnetic of 2 G  perpendicular the axis of rotation. (a) Find an expression for the time-dependent flux through the ring.  (b) Determine the time-dependent current through the ring if it has a resistance of 10 <m>\Omega</m>.
+			</p>
+			<image source="./images/em-effect/exer-rotating-ring-in-magnetic-field.png"  width="60%"/>
+		</statement>
+		<hint> <p>  (a) Think of how angular vaiable changes with time. (b) Use induced EMF. </p> </hint>
+		<answer> <p> (b)  <m>1.97\times 10^{-5}\sin(10\pi t) \ \textrm{A}</m>  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) Let the axis of the rotation of the ring be along the <m>z</m>-axis and let the horizontal direction in the figure be the <m>x</m>-axis.  Then we need the projection of normal to the area on the <m>x</m>-axis for computing the flux through the loop of the ring.  Let <m>\theta</m> be the angle that the normal to the area makes with the <m>x</m>-axis.  Suppose the ring is oriented so that <m>\theta =0</m> at <m>t=0</m>. Then, <m>\theta</m> at an arbitrary time <m>t</m> will be
+				<me>
+					\theta(t) = \omega\: t.
+				</me>
+				Therefore, the magnetic flux through the loop at this instant will be
+				<me>
+					\Phi = B\:A\:\cos\theta(t).
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b) The induced EMF in the ring is equal to the rate of change of flux.
+				<me>
+					\mathcal{E} = \left|\dfrac{d\Phi}{dt} \right| = \omega\:B\:A\:\sin\theta(t)
+				</me>
+				The magnitude of the induced current in the ring is obtained by dividing the induced EMF by the resistance of the ring.
+				<md>
+					<mrow> I  \amp  = \dfrac{\mathcal{E}}{R} = \dfrac{\omega\:B\:A\:|\sin\theta(t)|}{R}</mrow>
+					<mrow> \amp  = \dfrac{2\pi\times 5\:\textrm{Hz}\times 2\times 10^{-4}\:\textrm{T}\times \pi\:(0.1\:\textrm{m})^2}{10\:\Omega} </mrow>
+					<mrow> \amp = 1.97\times 10^{-5}|\sin(10\pi\:t)|\: \textrm{Amp}.
+					</mrow>
+				</md>
+			</p>
+
+		</solution>
+
+	</exercise>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

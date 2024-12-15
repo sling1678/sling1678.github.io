@@ -1,0 +1,282 @@
+<section xml:id="one-dimensional-motion-brief-review"> <title> Review of 1D Kinematics</title>
+
+	<subsection> <title> Acceleration </title>
+		<introduction>
+			<p>
+				Study of the rate of change of position <m> x </m> gave us the velocity <m> v_x</m>. We apply the same methods to study the rate of change of <m> v_x</m>. Therefore, we get two ways to look at this rate - (1) graphically, we use the slope of the <m> v_x</m> versus <m> t </m> plot, and (2) analytically, using Calculus, we take the derivative of <m> v_x</m>. We call the  rate of change of <m> v_x</m> the acceleration and denote it by <m> a_x</m>.
+			</p>
+		</introduction>
+
+
+		<subsubsection> <title> Graphical Definition of Acceleration </title>
+ 
+			<sidebyside widths="5% 95%">
+				<p> </p>
+				<p>
+					<p>
+					Alternately, we us the following definition based on graphical method:
+					<men>
+						 a_x = \text{ slope of tangent to }v_x\text{ versus }t.
+					</men>
+					</p>
+				
+					<p>
+						If the plot of <m> v_x </m> versus <m> t </m> is linear, i.e., a straight line, then the tangent line is same as the line of the plot, hence <m> a_x </m> is just the slope of the line. 
+					</p>
+					<p>
+						But, if the  plot of <m> v_x </m> versus <m> t </m> is curved, then you would draw a tangent line at the instant of interest, and then compute the slope of the tangent line to get <m> a_x </m>.
+					</p>
+				</p>
+
+			</sidebyside>
+			<figure xml:id="accln-positive-and-negative">
+				<caption> 
+					The slope of <m> v_x </m> versus <m> t </m> plot gives the acceleration <m> a_x </m>. Since the plot is linear, the slope is same for all instants plotted. In (a) <m> a_x = 1.0 </m> m/s/s and in (b) <m> a_x = - 0.75 </m> m/s/s. 
+				</caption>		
+					
+				<image source="./images/one-dim-motion/accln-positive-and-negative.png" width="80%"/>
+			</figure>
+
+		</subsubsection>
+
+		<subsubsection> <title> (Calculus) Definition of Acceleration </title>
+
+ 
+			<sidebyside widths="5% 95%">
+				<p> </p>
+				<p>
+					<men xml:id="eq-1d-review-accleration-def">
+						 a_x = \dfrac{dv_x}{dt}.
+					</men>
+				</p>
+			</sidebyside>
+
+
+			<p> <alert> Going from acceleration to change in velocity </alert></p>
+			<p>
+				The inverse problem of obtaining change in velocity, <m> \Delta v_x</m>, from a known acceleration over an interval, <m> a_x(t) </m>, is similar problem of going from <m> v_x </m> to <m> \Delta x</m>. Therefore, the math is similar with same two ways of looking at it.
+			</p>
+			<p> <alert> Analytically, using Calculus </alert></p>
+
+			<sidebyside widths="5% 95%">
+				<p> </p>
+				<p>
+					The inverse of Eq. <xref ref="eq-1d-review-accleration-def"/> gives the change in velocity <m> \Delta v_x = v_{f,x} - v_{i,x}</m> when we integrate acceleration <m> a_x </m>.
+					<men>
+					 	\Delta v_x \equiv   v_{f,x} - v_{i,x} = \int_{t_i}^{t_f}\ a_x(t)\, dt.
+					</men>
+				</p>
+			</sidebyside>
+		</subsubsection>
+
+		<subsubsection> <title> <m>\Delta v_x</m>  from <m>a_x</m> Graphically</title>
+
+			<sidebyside widths="5% 95%">
+				<p> </p>
+				<p>
+					Similar to the derivative, there is an alternative graphical way to calculate the integral. We compute the area bertween the <m> a_x </m> versus <m> t </m> plot line/curve and the <m> a_x=0</m> line, which is just the <m> t </m> axis line.
+				</p>
+			</sidebyside>
+
+
+			<exercise><title> Using slope of <m> v_x </m> to compute <m> a_x </m> </title>
+				<statement>
+					<p>
+						From the <m> v_x </m> versus <m> t </m> plot, find  <m> a_x </m> at the following instants: (a) <m> t = 1\text{ sec}</m>, (b)  <m> t = 3\text{ sec} </m>, and (c)  <m> t = 3.75\text{ sec} </m>.
+					</p>
+					<image source="./images/one-dim-motion/checkpoint-x-from-v-areas.png" width="80%"/>
+
+				</statement>
+				<hint> <p>  Use slopes. </p> </hint>
+				<answer> <p> (a) <m>0</m>, (b)  <m>-4\text{ m/s}^2</m>, (c) <m>4\text{ m/s}^2</m> </p> </answer>
+				<solution> 
+					<p>
+						(a) The <m> v_x </m> versus <m> t</m> plot through the time when <m> t = 1\text{ sec}</m> is a straight line. Therefore, <m> a_x </m> will simply be slope of this part of the plot. The slope of this line is clearly zero. Therefore, <m> a_x (\text{at }t=1\text{ sec}) = 0</m>.
+					</p>
+					<p>
+						(b) The <m> v_x </m> versus <m> t</m> plot through the time when <m> t = 3\text{ sec}</m> is a straight line. Therefore, <m> a_x </m> will simply be slope of this part of the plot. The slope of this line is obtained by picking two points on the line between <m> t = 2\text{ sec}</m> and <m> t = 3.5\text{ sec}</m>. We pick points at <m> t = 2\text{ sec}</m> and <m> t = 3\text{ sec}</m> to obtain
+						<me>
+						a_x = \dfrac{0 - 4\text{ m/s}}{3\text{ s}-2\text{ s}} = -4\text{ m/s}^2.
+						</me>
+					</p>
+					<p>
+						(b) The <m> v_x </m> versus <m> t</m> plot through the time when <m> t = 3.75\text{ sec}</m> is a straight line. Therefore, <m> a_x </m> will simply be slope of this part of the plot. The slope of this line is obtained by picking two points on the line between <m> t = 3.5\text{ sec}</m> and <m> t = 4.0\text{ sec}</m>. We pick points at <m> t = 3.5\text{ sec}</m> and <m> t = 4\text{ sec}</m> to obtain
+						<me>
+						a_x = \dfrac{0 - (-2)\text{ m/s}}{4\text{ s}-3.5\text{ s}} = 4\text{ m/s}^2.
+						</me>
+					</p>
+				</solution>
+			</exercise>
+
+
+			<exercise><title> Compute <m> \Delta v_x </m> from <m> a_x</m> versus <m> t </m> plot </title>
+				<statement>
+					<p>
+						A ball is initially (<m> t=0 </m>) moving at <m> v_x = 3\text{ m/s}</m>. The acceleration of the ball at different times are as shown in the  <m> a_x </m> versus <m> t </m> plot. Find <m> v_x </m> at (a) <m> t = 1\text{ sec} </m>, (b)  <m> t = 2\text{ sec} </m>, and (c)  <m> t = 4\text{ sec} </m>.
+					</p>
+					<image source=".images/one-dim-motion/checkpoint-v-from-a-areas.png" width="70%"/>
+				</statement>
+				<hint> <p> Use area-under-curve.  </p> </hint>
+				<answer> <p> (a) <m>5\text{ m/s}</m>,  (b) <m> 5\text{ m/s}</m> , (c) <m>-3\text{ m/s} </m>.</p> </answer>
+				<solution> 
+					<p>
+						(a) From the area-under-curve we can find the change in <m> v_x </m> during <m> t= 0 </m> to <m> t = 1\text{ sec}</m>. Adding this change to the <m> v_x </m> at <m> t= 0</m> will give us the <m> v_x </m> at <m> t=1\text{ sec}</m>.
+						<me>
+						\Delta v_x = \dfrac{1}{2}\times 4 \times 1 = 2\text{ m/s}.
+						</me>
+						Therefore, <m> v_x </m> at <m> t=1\text{ sec}</m>:
+						<me>
+						v_x(\text{ at }t=1\text{ sec }) = v_x(\text{ at }t=0\ ) + \Delta v_x = 5\text{ m/s}.
+						</me>
+					</p>
+					<p>
+						(b) The area-under-the-curve during <m> t= 1\text{ sec} </m> to <m> t = 2\text{ sec}</m> is zero. Hence the velocity does not change over this interval, i.e., <m>\Delta v_x = 0 </m>. 
+						<me>
+						v_x(\text{ at }t=2\text{ sec }) = v_x(\text{ at }t=1\text{ sec } ) + \Delta v_x = 5\text{ m/s}.
+						</me>
+					</p>
+
+					<p>
+						(c) From the area-under-curve we can find the change in <m> t= 2\text{ sec} </m> to <m> t = 4\text{ sec}</m>. Adding this change to the <m> v_x </m> at <m> t= 2\text{ sec}</m> will give us the <m> v_x </m> at <m> t=4\text{ sec}</m>.
+						<me>
+						\Delta v_x =  -2 \times 4 = -8\text{ m/s}.
+						</me>
+						Therefore, <m> v_x </m> at <m> t=4\text{ sec}</m>:
+						<me>
+						v_x(\text{ at }t=4\text{ sec }) = v_x(\text{ at }t=2\text{ sec }  ) + \Delta v_x = -3\text{ m/s}.
+						</me>
+					</p>
+
+				</solution>
+			</exercise>
+
+		</subsubsection>
+
+	</subsection>
+
+
+	<subsection> <title> Constant Acceleration Motion </title>
+
+<!-- 		<sidebyside widths="50% 45%"> -->
+
+		<p>
+			The one-dimensional kinematics for constant acceleration motion plays an important practical role. We are interested in a motion between two instants in time, <m> t = t_i </m> to <m> t = t_f </m>. We use the subscript <m> i </m> and <m> f </m> to denote quantities at these instants. The following diagram illustrates the setup.
+		</p>
+
+		<p>
+
+			<image source="./images/one-dim-motion/one-dim-constant-acceleration-set-up.png" 
+				width="80%"/>
+		</p>
+<!-- 		</sidebyside> -->
+		<p> 
+			We denote the interval by <m> \Delta t = t_f - t_i </m>, the change in position by <m> \Delta x = x_f-x_i </m>, and change in velocity by <m> \Delta v_x = v_{f,x} - v_{i,x} </m>. 
+		</p>
+		<p>
+			They obey the following relations.
+				<mdn>
+					<mrow> \amp \Delta v_x = a_x \Delta t. </mrow>
+					<mrow> \amp \Delta x = v_{av,x} \Delta t,</mrow>
+				</mdn>
+			where
+				<men>
+					v_{av,x} = \dfrac{v_{i,x} + v_{f,x}}{2}.
+				</men>
+			It is possible to eliminate <m> \Delta t </m> from these equations to obtain 
+			<men  xml:id="eq-1-d-no-t-equation">
+				v_{f,x}^2 = v_{i,x}^2 + 2 a_x \left( \Delta x \right)^2,
+			</men>
+			which we will refer to as the <q>no-<m>t</m>-equation </q>.
+			It is also possible to eliminate <m> v_{f,x} </m> to obtain another useful equation
+			<men  xml:id="eq-1-d-no-vf-equation">
+				\Delta x = v_{i,x} \Delta t + \dfrac{1}{2}a_x\left(\Delta t \right)^2,
+			</men>
+			which we will refer to as the <q> no-<m>v_f</m>-equation</q>.
+		</p>
+
+
+ 		<p>
+ 			Some special motions require simplified analysis. For instance, <alert> if velocity is constant</alert>, then, in these equations
+ 			<me>
+ 				a_x = 0\ \ \ \ (\text{constant velocity case})
+ 			</me> 
+ 		</p>
+ 		<p>
+ 			Another important special situation occurs when speed is constant during a motion. Speed at an instant is equal to the absolute value of the velocity at that instant, i.e., in one-dimensional situation, you would strip the sign of the velocity to get the speed at that instant.  Even though you can get speed at an instant from the velocity at that instant, the <alert> average speed </alert> during an interval is not related to the average velocity over that interval due to the way averaging is done in the two cases. 
+ 		</p>
+ 		<p>
+
+ 			Average speed to be denoted by the symbol <m> v_{s,av}</m> is totality of distance covered divided by the time taken. Thus, if you move from origin to <m> x = 10 \text{ cm}</m> and return to origin, you would actually cover a distance of <m> 20 \text{ cm}</m>  even though your <m> \Delta x = 0 </m> since your initial <m> x </m> is the same as your final <m> x</m>.
+ 			We denote the actual distance covered by the letter <m> d </m>. In <alert> constant speed </alert> motion following equations are used.
+ 			<mdn>
+				<mrow> \amp |v_f| = |v_i| = v_{s,av}  </mrow>
+				<mrow> \amp  d = v_{s,av} \, \Delta t</mrow>
+			</mdn>
+ 		</p>
+ 
+
+
+		<p> <alert> Sign conventions. </alert>
+			We use a sign convention to follow the directions of velocity and acceleration. The source of these sign conventions will become clear after you learn vectors. The following diagrams clarify the sign assignments of velocity and acceleration. 
+		</p>
+		<sidebyside widths="50% 50%">
+			<p>
+				<p> 
+					The velocity <m> v_x </m> is positive if object is moving in the direction of positive axis and negative if in the opposite direction. 
+				</p>
+				<p>
+					Acceleration <m> a_x </m> is positive in two situations: if either <m> v_x </m> is positive <em> and </em> speeding up   <alert> OR </alert> <m> v_x </m> is negative <em> and </em> slowing down. 
+				</p>
+				<p>
+					Acceleration <m> a_x </m> is negative in two situations: if either <m> v_x </m> is negative <em> and </em> speeding up <alert>  OR </alert> <m> v_x </m> is positive <em> and </em> slowing down. 
+				</p>
+			</p>
+			<image source="./images/one-dim-motion/signs-of-v-and-a.png" width="70%"/>
+		</sidebyside>
+
+
+
+ 		<p> <alert> Summary of Formulas </alert>
+ 		</p>
+ 		<p> <alert> Constant Acceleration: </alert>
+ 		</p>
+ 		<p>
+ 			<mdn>
+					<mrow> \amp \Delta v_x = a_x \Delta t. </mrow>
+					<mrow> \amp \Delta x = v_{av,x} \Delta t.</mrow>
+					<mrow> \amp v_{av,x} = \dfrac{v_{i,x} + v_{f,x}}{2}.</mrow>
+					<mrow> \amp  \Delta x = v_{i,x} \Delta t + \dfrac{1}{2}a_x\left(\Delta t \right)^2</mrow>
+					<mrow> \amp  v_{f,x}^2 = v_{i,x}^2 + 2 a \left( \Delta x \right)^2</mrow>
+			</mdn>
+		</p>
+		<p> <alert> Constant Speed: </alert>
+		</p>
+		<p>
+			<mdn>
+				<mrow> \amp |v_f| = |v_i| = v_{s,av}  </mrow>
+				<mrow> \amp  d = v_{s,av} \, \Delta t</mrow>
+			</mdn>
+		</p>
+
+
+	</subsection>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

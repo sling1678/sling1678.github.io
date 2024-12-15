@@ -1,0 +1,257 @@
+<section xml:id="Amperes-Law-is-Not-Universal"><title> Ampere's Law is Not Universal </title>
+	<introduction><title>(Requires Calculus)</title>
+		<p>
+			The four basic laws of electricity and magnetism were discovered experimentally.  While studying them <term> James Clerk Maxwell</term>(1831-1879) discovered some logical inconsistencies.  The source of inconsistencies turned out to be the incompleteness of Ampere's law.  Recall that according to Ampere's law the circulation of magnetic field around a loop C is proportional to the current passing through any surface (S) whose boundary is the loop C itself. 
+			<men xml:id="eq-amperes-law-not-work-1">
+				\oint_C \vec B\cdot d\vec l = \mu_0 I_{\text{enc}} \ \ \text{(independent of surface)}.
+			</men>
+			Although, there are infinitely many surfaces that can be attached to any loop, it is important to realize that Ampere's law stated in Eq. <xref ref="eq-amperes-law-not-work-1"/>  is independent of the choice of surface as illustrated in <xref ref="fig-ampere-not-work"/>.
+		</p>
+		<figure xml:id="fig-ampere-not-work">
+			<caption>
+				Three open surfaces <m>S_1</m>, <m>S_2</m>, <m>S_3</m> attached to the same loop C.  For steady current in the wire all three surfaces will give the same value for the enclosed enclosed current consistent with the Ampere's law.
+			</caption>
+			<image source="./images/maxwells/ampere-not-work.png" width="70%"/>
+		</figure>
+		<p>
+			Now, consider the following experiment shown in <xref ref="fig-ampere-not-work-2"/>.
+		</p>
+		<figure xml:id="fig-ampere-not-work-2">
+			<caption>
+				Applying Ampere's law in a non-steady situation results into inconsistent results! The currents through S1 and S2 are not equal although they have the same boundary loop C.
+			</caption>
+			<image source="./images/maxwells/ampere-not-work-2.png" width="70%"/>
+		</figure>		
+		<p>
+			Connect a parallel plate capacitor to an EMF source <m>V</m>.  When the switch is closed, a time-dependent current develops in the wire.  Let us now apply Ampere's law to loop C shown at a time before the capacitor is fully charged such that <m>I \ne 0</m>.  With the surface  <m>S_1</m>, you get a non-zero value for the enclosed current <m>I</m>, while with surface <m>S_2</m> you get a zero for the enclosed current since no current passes through it.
+			<me>
+				\oint_C \vec B\cdot d\vec l = 
+					\left\{
+					\begin{array}{ll}
+					\mu_0  \ \  \amp \text{if you use surface}\ S_1\\
+					0 					\amp \text{if you use surface}\ S_2
+					\end{array}
+					\right.
+			</me>
+			Clearly, Ampere's law does not work here. You might have already suspected this because Ampere's law requires a steady current, while the current in this experiment is changing with time and not steady at all.
+		</p>
+		<p>
+			How can we modify Ampere's law so that it will work in all situations? This question was answered by James Clerk Maxwell.  The experiment with the capacitor suggests a solution for this problem.  In <xref ref="fig-ampere-not-work-2"/>, you will notice that, while current passes through surface <m>S_1</m>, a time-dependent electric field   passes through <m>S_2</m>.  So, it would be tempting to correct Eq. <xref ref="eq-amperes-law-not-work-1"/> by adding the flux of E-field through a surface in addition to <m>I_{\text{enc}}</m>.  But this will not work because when the capacitor is fully charged you get another inconsistency: although there will be no current through <m>S_1</m>, there will still be a non-zero flux of E-field through <m>S_2</m>.  Maxwell suggested that rather than adding the electric flux, you will need the rate of change of electric flux to correct the Ampere's law.  He suggested the form of the additional contribution to the real current <m>I</m> called the displacement current <m>I_d</m>.  
+			<men xml:id="eq-amperes-law-not-work-2">
+				\oint_C \vec B\cdot d\vec l = \mu_0 \left( I_{\text{enc}} + I_{\text{d,enc}} \right) \ \ \text{(independent of surface)}.
+			</men>
+			The displacement current <m>I_d</m> is supposed to be the contribution from the changing electric flux through the surface attached to the loop for the circulation integral on theleft side of this equation.  Specifically, the displacement current is defined to be
+			<men xml:id="eq-displacement-cur-flux-1">
+				 I_d = \epsilon_0 \frac{d\Phi_E}{dt}, 
+			</men>
+			where  <m>\epsilon_0</m> is the permittivity of free space, and   <m>\Phi_E</m> the   electric flux defined as
+			<men xml:id="eq-displacement-cur-flux-2">
+				\Phi_E = \iint_{\text{Surface,S}}\vec E \cdot d\vec A. 
+			</men>
+			Note that since surfaces attached to the loop are not closed the electric flux is not equal to the <m>Q_{enc}/\epsilon_0</m> as would be expected for the electric flux through a closed surface according to Gauss's law. 
+		</p>
+		<p>
+
+			Recall the relationship of current <m>I</m> to the current density vector  .
+			<me>
+				I = \iint_S \vec J\cdot d\vec A.
+			</me>
+			Similarly, we also define a displacement current density vector  <m>\vec J_d</m>.
+			<men xml:id="eq-displacement-cur-den-1">
+				I_d = \iint_S \vec J_d\cdot d\vec A.  
+			</men>
+			Putting Eq. <xref ref="eq-displacement-cur-den-1"/> in Eq. <xref ref="eq-displacement-cur-flux-1"/>  and using Eq. <xref ref="eq-displacement-cur-flux-2"/>  we deduce
+			<me>
+				\vec J_d = \epsilon_0 \frac{\partial \vec E}{\partial t}
+			</me>
+			The modified Ampere's law, Eq. <xref ref="eq-amperes-law-not-work-2"/> also explains correctly even the time-dependent situations depicted in <xref ref="fig-ampere-not-work-2"/> - the surface <m>S_1</m> has contribution from current and the surface <m>S_2</m> has equal contribution from the displacement current of the time-varying electric field.  We will call the modified Ampere's law as Ampere-Maxwell's law.
+		</p>
+	</introduction>
+
+	<example xml:id="exp-Displacement-Current-in-a-Charging-Capacitor"><title> Displacement Current in a Charging Capacitor </title>
+		<statement>
+			<p>
+				A parallel-plate capacitor <m>C</m> whose plates are separated by a distance <m>d</m> is connected to a resistor <m>R</m> and a battery of voltage <m>V</m>.  The current starts to flow at <m>t=0</m>.
+			</p>
+			<p>
+				(a) Find the displacement current density between the capacitor plates at time <m>t</m>.
+			</p>
+			<p>
+				(b) From the displacement current between the plates find the current in the circuit.
+			</p>
+			<p>
+				(c) Compare the answer in (b) to the expected current in the wires of the <m>RC</m>-circuit.
+			</p>
+
+		</statement>
+		<hint> <p> (a) Assume uniform electric field between plates, (b) Integrate <m>J_d</m>, (c) recall exponential drop off.  </p> </hint>
+		<answer> <p>  (a) <m>\frac{V_0}{RA} \: e^{-t/RC}</m>,
+					(b) <m>\frac{V_0}{R} \: e^{-t/RC} </m>.
+					(c) <m> \frac{V_0}{R} \: e^{-t/RC}</m>. </p> </answer>
+		<solution> 
+			<p>
+				(a) The voltage between the plates at time <m>t</m> is given by
+				<me>
+					V_C = \frac{1}{C} q(t) = V_0\left( 1 - e^{-t/RC}\right). 
+				</me>
+				Let the <m>z</m>-axis point from the positive plate to the negative plate.  Then, the <m>z</m>-component of the electric field between the plates as a function of time t is
+				<me>
+					E_z(t) = \frac{V_0}{d}\left( 1 - e^{-t/RC}\right). 
+				</me>
+				Therefore the <m>z</m>-component of the displacement current density between the plates is
+				<md>
+					<mrow> J_{dz}\amp = \epsilon_0\frac{\partial E_z(t)}{\partial t} </mrow>
+					<mrow> \amp =\epsilon_0\frac{V_0}{d}\times\frac{1}{RC}\: e^{-t/RC} = \frac{V_0}{RA} \: e^{-t/RC},</mrow>
+				</md>
+				using <m>C = \epsilon_0 A/d</m>.
+			</p>
+			<p>
+				(b)	Integrating <m>J_d</m>  over the area of cross-section, which is an area equal to the area of the plate, will yield the current.  
+				<me>
+					I_d = \int\int\vec J_d \cdot d\vec A = \frac{V_0}{R} \: e^{-t/RC}.
+				</me>
+			</p>
+			<p> 
+				(c)	From the analysis of an <m>RC</m>-circuit in a precious chapter, the current into  the capacitor is found decrease with time after the circuit is closed as
+				<me>
+					I = \frac{V_0}{R} \: e^{-t/RC}.
+				</me>
+				This current is same as <m>I_d</m> we found in (b). 
+			</p>
+		</solution>
+	</example>
+
+	<exercise xml:id="ex-Computing-Displacement-Current-Density-and-Current-Between-Plates-of-a-Parallel-Capacitor"><title> Computing Displacement Current Density and Current Between Plates of a Parallel Capacitor </title>
+		<statement>
+			<p>
+				Voltage across a parallel plate capacitor with area <m>A =800 \text{ cm}^2</m> and separation <m>d = 2 \text{ mm}</m> varies sinusoidally as  <m>V = (15\ \text{mV})\cos(150\: t)</m>, where <m>t</m> is in sec.  (a) Find the displacement current density between the plates.  (b) Find the displacement current between the plates.  
+			</p>
+
+		</statement>
+		<hint> <p> Assume electric field uniform between the plates.  </p> </hint>
+		<answer> <p> (a) <m>9.96\times 10^{-9}\ (\text{A/m}^2)\ \sin(150\ t)</m>, (b) <m>\left( 7.97\times 10^{-10}\: \text{A}\right) \: \sin(150\ t)</m>.  </p> </answer>
+		<solution> 
+			<p>
+				 (a) The displacement current density is given by <m>\vec J_d = \epsilon_0\partial \vec E/\partial t</m>, and the magnitude of the electric field between the two plates can be related to the voltage <m>V</m> between the plates and separation <m>d</m> of the plates by <m>E = V/d</m>.  Let one of the plates be at <m>z=0</m> and the other plate at <m>z=d</m>, then the <m>z</m>-component of the electric field will be
+				<me>
+					E_z (t) = \dfrac{V(t)}{d}.
+				</me>
+				Now, if we write <m>V(t)</m> as <m>V_0\:\cos(\omega t)</m> we get
+				<me>
+					E_z (t) = \dfrac{V_0}{d}\:\cos(\omega t).
+				</me>
+				Therefore, the <m>z</m>-component of the displacement current will be
+				<me>
+					J_{dz} = -\epsilon_0\dfrac{\omega V_0}{d}\:\sin(\omega t).
+				</me>
+				Putting in the numerical values we obtain
+				<md>
+					<mrow> \dfrac{\omega V_0}{d} \amp = 8.85\times 10^{-12}\:\dfrac{\text{C}^2}{\text{N.m}^2}\dfrac{150\:\text{s}^{-1}\times 0.015\:\text{v}}{0.002\:\text{m}}</mrow>
+					<mrow> \amp = 9.96\:\dfrac{\text{nA}}{\text{m}^2}.</mrow>
+				</md>
+				Therefore, the current density is
+				<me>
+					\vec J_d = -\hat k \: \left(9.96\:\dfrac{\text{nA}}{\text{m}^2}\right)\: \sin(150\: t).
+				</me>
+				Since the <m>x</m>- and <m>y</m>-components of the displacement current density are zero the magnitude of the displacement current is given by the absolute value of the <m>z</m>-component.  <m>J_d = |J_{dz}|</m>.
+			</p>
+			<p>
+				(b) The area of cross-section through which the electric field lines cross between the plates is the area of the plates.  Therefore, the total displacement current will be obtained by multiplying <m>J_d</m> by the area of the plates. This gives
+				<me>
+					I_d = J_d A = \left( 7.97\times 10^{-10}\: \text{A}\right) \: \sin(150\ t).
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Displacement-Current-from-a-Quadratically-Varying-Voltage-Across-Capacitor-Plates"><title> Displacement Current from a Quadratically Varying Voltage Across Capacitor Plates </title>
+		<statement>
+			<p>
+				The voltage across a parallel plate capacitor with area <m>A</m> and separation <m>d</m>  varies with time <m>t</m> as <m>V = a\: t^2</m>,  where   <m>a</m> is a constant.  (a) Find displacement current density between the plates.  (b) Find displacement current between the plates.  
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p>  (a) <m>2 \epsilon_0\, a t /d</m>, (b) <m>\dfrac{2\epsilon_0\omega a A}{d}\: t</m>.  </p> </answer>
+		<solution> 
+			<p>
+				(a) Following the arguments presented in <xref ref="ex-Computing-Displacement-Current-Density-and-Current-Between-Plates-of-a-Parallel-Capacitor"/> we get
+				<me>
+					E(t) = \dfrac{at^2}{d}.
+				</me>
+				Therefore,
+				<md>
+					<mrow> J_d \amp =\epsilon_0\dfrac{\partial}{\partial t} = \epsilon_0\,\dfrac{2at}{d}. </mrow>
+				</md>
+ 
+			</p>
+			<p>
+				(b) The displacement current <m>I_d</m> will be
+				<me>
+					I_d = J_d A  = \dfrac{2\epsilon_0 a A}{d}\: t.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+ 
+ 	<exercise xml:id="ex-Displacement-Current-Density-in-a-Region-of-Space-Where-Electric-Field-is-Varying-with-Time"><title> Displacement Current Density in a Region of Space Where Electric Field is Varying with Time </title>
+		<statement>
+			<p>
+				In a region of space electric field is pointed along <m>y</m> axis and varies as a function of <m>x</m> and <m>t</m>. 
+				<me>
+					\vec E = \hat j\, (10\ \text{N/C})\cos(20\: x - 500\: t).
+				</me>
+				where <m>t</m> is in nano-sec(ns) and <m>x</m> in <m>\text{cm}</m>.
+			</p>
+			<p>
+				(a) Find displacement current density vector.
+			</p>
+			<p>
+				(b) Find the displacement current through a circle of radius <m>10\text{ cm}</m> centered at the origin in the <m>xy</m> plane.
+			</p>
+			<p>
+				(c) Find the displacement current through a circle of radius <m>10\text{ cm}</m> centered at the origin in the <m>yz</m> plane.
+			</p>
+			<p>
+				(d) Find the displacement current through a circle of radius <m>10\text{ cm}</m> centered at the origin in the <m>xz</m> plane.
+			</p>
+ 
+		 
+
+		</statement>
+		<hint> <p>  (a) Use definitions, (b), (c), (d) Be mindful of directions since <m>I = \vec J \cdot \vec A </m>. </p> </hint>
+		<answer> <p> (a) <m> \hat j\ 4.43 \times 10^{-8}\text{ A/m}^2  \sin(20\: x - 500\: t)</m>, (b) 0, (c) <m> - 1.4\times 10^{-9}\text{ A }  \sin( 500\: t)</m>, (d) 0.  </p> </answer>
+		<solution> 
+			<p>
+				(a)
+				From the definition of displacement current density we get <m>J_y</m> to be
+				<md>
+					<mrow> J_y \amp = \epsilon_0 \dfrac{\partial E_y}{\partial t},</mrow>
+					<mrow>  \amp = \epsilon_0 \times 10 \times 500  \sin(20\: x - 500\: t),</mrow>
+					<mrow>  \amp =  4.43 \times 10^{-8}\text{ A/m}^2  \sin(20\: x - 500\: t),</mrow>
+				</md>
+				and the other components of <m>\vec J</m> are zero.
+			</p>
+			<p>
+				(b)
+				Since normal to the area is <m>90^{\circ}</m> to the direction of <m>\vec J</m>, current through this area is zero.
+			</p>
+			<p>
+				(c)
+				Since normal to the area is <m>0^{\circ}</m> to the direction of <m>\vec J</m>, current through this area will be
+				<md>
+					<mrow> I_d \amp = \int_\text{area} J_y dydz = \pi R^2 \times J_y(\text{ at }x=0)</mrow>
+					<mrow> \amp =\pi \times 0.1^2\times 4.43 \times 10^{-8}\text{ A/m}^2  \sin( - 500\: t)</mrow>
+					<mrow> \amp = - 1.4\times 10^{-9}\text{ A }  \sin( 500\: t)</mrow>
+				</md>
+			</p>
+			<p>
+				(d)
+				Since normal to the area is <m>90^{\circ}</m> to the direction of <m>\vec J</m>, current through this area is zero.
+			</p>
+
+		</solution>
+	</exercise>
+
+
+</section>

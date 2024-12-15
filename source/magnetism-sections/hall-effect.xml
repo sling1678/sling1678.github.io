@@ -1,0 +1,182 @@
+<section xml:id="the-hall-effect"><title> The Hall Effect </title>
+	<introduction>
+		<p>
+			Hall effect is routinely used to measure magnetic field. Due to the Hall effect, you can obtain a value of magnetic field from easily measurable quantities such as current and voltage.
+		</p>
+		<p>
+			As a concrete example of Hall effect, let us investigate what happens when a metal plate carrying a steady current is placed in a magnetic field as shown in <xref ref="fig-hall-effect-1" />.  You will find that when no current is passing in the metal plate there is no voltage difference between the sides of the plate labeled <m>+</m> and <m>-</m> in the figure but when a current is flowing, a voltage difference develops between the two sides. This voltage is called <term>Hall voltage</term>.
+		</p>
+		<!-- <p>
+			When a current passes through the metal plate, electrons develop a drift velocity. Since, moving electrons are subject to magnetic force, they are deflected in the direction perpendicular to the current. This makes making one edge of the plate more negative than the other.  This creates a potential difference <m>\Delta \phi_{\perp}</m>  across the plate perpendicular to the direction of the original current flow.  This effect is called <term>Hall effect</term>.  
+		</p> -->
+		<figure xml:id="fig-hall-effect-1">
+			<sidebyside widths="50% 50%">
+				<image source="./images/magnetism/hall-effect-1.png" width="60%"/>
+				<image source="./images/magnetism/hall-effect-2.png" width="60%"/>
+			</sidebyside>
+			 
+			<caption>
+				Hall Effect. Voltage across a metal plate develops when steady current flows in the presence of an external magnetic field.
+			</caption>
+		</figure>
+ 
+		<p>
+			Why does the Hall voltage develop? As shown in <xref ref="fig-hall-effect-1"/>, drifting electrons in metal plate experience a magnetic force, which deflect them towards one edge and start to accumulate there. The accumulated charges produce electric field that applies an electric force on the drifting electrons in opposite direction to the magnetic force. When enough charges have moved on the side, electric force balances the magnetic force, similar to what happens in crossed field.
+		</p>
+		<p>
+			The accumulates charges on the sides means that we will have a potential difference across the plate. This voltage will be denoted by <m>\Delta \phi_{\perp}</m>, which we will denote below by <m>V_\perp</m>. We will show that <m>V_\perp</m> is proportional to the magnitude of the magnetic field. Therefore, a Hall probe based on this effect can be constructed to measure magnetic field as we will see below.
+		</p>
+
+		<p>
+			The potential difference <m>V_\perp</m>  across the plate corresponds to the electric field <m>\vec E_{\perp}</m> in the direction perpendicular to the direction of drift velocity <m>\vec v</m>. This potential difference is also called <term>Hall voltage</term>, and is often denoted by  <m>V</m>  rather than  <m>V_\perp</m> or  <m>\Delta \phi_\perp</m>.
+		</p>
+		<p>
+			Assuming uniform electric field in the direction perpendicular to the direction of drift velocity <m>\vec v</m>, we find the following relation between the potential difference and the magnitude of the electric field.
+			<me>
+				V_\perp = E_{\perp}\; w.
+			</me>
+			At steady state, electric force perpendicular to the flow balances the magnetic force on each moving electron. 
+			<me>
+				\left|-eE_{\perp}\right| = \left|-ev B\right|.
+			</me>
+			Replacing <m>E_{\perp}</m>   by <m>V_\perp/w</m>, and solving for <m>B</m> we obtain the following relation.
+			<men xml:id="eq-hall-eff-1">
+				B = \frac{V_\perp}{v w}, 
+			</men>
+			which we can write in terms of the current in the plate and the geometric dimensions of the plate as follows. 
+		</p>
+		<p> 
+			Let there be <m>N</m> mobile electrons per unit volume and <m>w</m> and <m>h</m> be the width and height of the cross-section area of the plate perpendicular to the current as shown in <xref ref="fig-hall-effect-1"/>. Then, steady current <m>I</m> can be shown to be
+			<me>
+				|I| = |-eN v wh|\ \ \Longrightarrow\ \ v = \frac{|I|}{eN wh}.
+			</me>
+			Putting this <m>v</m> into Eq. <xref ref="eq-hall-eff-1"/> we obtain magnetic field in terms of two measurable quantities, current through the plate and Hall voltage across the plate.
+			<men xml:id="eq-hall-eff-2">
+				B = \frac{V_{\perp}}{|I|}\left( eN wh\right). 
+			</men>
+			This formula based on Hall effect is frequently used for measuring magnetic field by a device called a <term>Hall probe</term>.  You first calibrate the instrument for a particular current, and then use formula given in Eq. <xref ref="eq-hall-eff-2"/> to determine an unknown magnitude <m>B</m> from the reading of Hall voltage <m>V_{\perp}</m>  by connecting a voltmeter across the plate.
+		</p>
+		<p>
+			The direction of the magnetic field is obtained by the orientation of the area of the plate.  The normal to the plate that gives the maximum reading of the Hall voltage is the direction of the magnetic field.
+		</p>
+		<p><alert>Nature of Current Carrier by Hall Probe:</alert></p>
+		<p>
+			Note that <alert>if</alert> the mobile charges were positively charged rather than electrons, the potential direction will have just the opposite sign.  For instance, in some semiconductors the current is actually carried by positively charged entities called <term>holes</term>, where the Hall voltage has just opposite sign of what you would expect if current was due to movement of electrons.  In this way, Hall effect also provides information about the nature of charge carriers in a material.
+		</p>
+	</introduction>
+
+
+	<exercise xml:id="ex-Using-a-Hall-Probe-to-Measure-Magnetic-Field"><title> Using a Hall Probe to Measure Magnetic Field </title>
+		<statement>
+			<p>
+				A Hall probe gives a reading of   <m>1.5\ \mu\text{V}</m> for a current of  <m>2\text{ A}</m> when it is placed in a magnetic field of <m>1.0 \text{ T}</m>.  What is the magnetic field in a region where the reading is   <m>2.0\ \mu\text{V}</m> for <m>1.7 \text{ A}</m>  of current? 
+			</p>
+
+		</statement>
+		<hint> <p>  Use Hall effect formulas </p> </hint>
+		<answer> <p> Magnitude <m>1.57\text{ T}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Hall probe has the following relation between <m>B</m>, <m>\Delta\phi</m> and <m>I</m>.
+				<me>
+				 	B = \alpha\:\dfrac{V_{\perp}}{I},
+				</me>
+				where <m>\alpha</m> is a constant depending on the geometry and electronic property of the probe.  We find <m>\alpha</m> from the calibration data, and then find the unknown magnetic field.
+				<md>
+				 	<mrow> \alpha \amp = B\:\dfrac{I}{V_{\perp}} </mrow>
+				 	<mrow> \amp = 1\:\text{T}\times \dfrac{2\:\text{A}}{1.5\times 10^{-6}\:\text{V}} = 1.33\times 10^6\:\dfrac{\text{TA}}{\text{V}}.</mrow>
+				</md>
+				Hence the unknown magnetic field
+				<md>
+				 	<mrow> B \amp = \alpha\:\dfrac{V_{\perp}}{I} </mrow>
+				 	<mrow> \amp = 1.33\times 10^6\:\dfrac{\text{TA}}{\text{V}} \times \dfrac{2\times 10^{-6}\:\text{V}}{1.7\:\text{A}} = 1.57\:\text{T}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Determining-the-Sign-of-the-Current-Carrier-in-a-Semiconductor"><title> Determining the Sign of the Current Carrier in a Semiconductor </title>
+		<statement>
+			<p>
+				You know that current in a metal is carried by negatively charged electrons. In semicondutors, the sign of the current carrier may be positive or negative depending on the semiconductor. Hall effect can be used to find the sign.
+			</p>
+			<p>
+				A rectangular sample of a semiconcting material is placed between the poles of a magnet so that magnetic field is pointed up. When current is passed through the plate in the east direction, the north side of the sample develops a higher potential than the south side.  Decide if the current carrier is positively or negatively charged.
+			</p>
+
+		</statement>
+		<hint> <p>  First assume charge carrier is positive and predict what you will see and then see if you need o invert the direction. </p> </hint>
+		<answer> <p> Negatively charged.  </p> </answer>
+		<solution> 
+			<p>
+				We first draw a picture in which we first assume the current is carried by the positive charge as in (i) and predict the end that will become at higher voltage by using the right-hand rule of magnetic force.
+			</p>  
+			<image source="./images/magnetism/ex-6-hall-effect.png" width="80%"/>
+			<p>
+				Fig (i) shows that if the current was due to mobile positive charges to the right, then the bottom part, i.e. South end, will become more positively charged, which will make that end at higher potential compared to the top part. 
+			</p>
+			<p>
+				In Fig. (ii), the north side will be at a higher voltage than the south. Hence the carrier charge in the present problem is negatively charged.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+ 	<exercise xml:id="ex-Finding-Hall-Voltage-from-Given-Geometry-and-Current-Carrier-Density"><title> Finding Hall Voltage from Given Geometry and Current Carrier Density  </title>
+		<statement>
+			<p>
+				The density carrier is copper is <m>8.47 \times 10^{28}</m> electrons per cubic meter.  What will be the Hall voltage reading from a probe made up of <m>3\ \text{cm} \times 2\ \text{cm} \times 1\ \text{cm}</m> <m>(L\times W\times T)</m> copper plate when a current of <m>1.5\text{ A}</m> is passed through it in a magnetic field of <m>2.5\text{ T}</m> perpendicular to the <m>3\ \text{cm} \times 2\ \text{cm}</m> face.   
+			</p>
+
+		</statement>
+		<hint> <p> Use Hall effect.  </p> </hint>
+		<answer> <p> <m>4.65\times 10^{-7}\ \text{V}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Recall the Hall effect formula,
+				<me>
+					B = \dfrac{V_{\perp}}{I}\: n\:e\:w\:h.
+				</me>
+				Putting the values from the problem statement, we find the Hall voltage  <m>V_{\perp}</m>.
+				<md>
+					<mrow> V_{\perp} \amp = \dfrac{BI}{n\:e\:w\:h} </mrow>
+					<mrow> \amp= \dfrac{2.5\: \text{T}\times 1.5\:\text{A}}{8.4\times 10^{28}\:\text{m}^{-3}\times 1.6\times 10^{-19}\:\text{C}\times 0.02\:\text{m}\times 0.03\:\text{m}}</mrow>
+					<mrow> \amp = 4.65\times 10^{-7}\:\text{V}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Using-Hall-Effect-to-Determine-Current-Carrier-Density-in-a-Material"><title> Using Hall Effect to Determine Current Carrier Density in a Material </title>
+		<statement>
+			<p>
+				Hall effect is to be used to find the current carrier density in an unknown material. A Hall voltage <m>40\ \mu\text{V}</m> for <m>3\text{ A}</m> current  is observed in a <m>3\text{ T}</m> magnetic field for a rectangular sample with length <m>2\text{ cm}</m>, width <m>1.5\text{ cm}</m> and height <m>0.4\text{ cm}</m>.  Determine the density of current carriers.  
+			</p>
+
+		</statement>
+		<hint> <p>  Use Hall effect formula. </p> </hint>
+		<answer> <p> <m>2.34\times 10^{28}\text{m}^{-3}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Recall the Hall effect formula,
+				<me>
+					B = \dfrac{V_{\perp}}{I}\: n\:e\:w\:h.
+				</me>
+				Putting the values from the problem statement, we find the Hall voltage  <m>V_{\perp}</m>.
+				<md>
+					<mrow>n \amp = \dfrac{BI}{V_{\perp}\:e\:w\:h} </mrow>
+					<mrow> \amp = \dfrac{3\:  \textrm{T}\times 3\:\textrm{A}}{40\times 10^{-6}\:\textrm{V}\times 1.6\times 10^{-19}\:\textrm{C}\times 0.015\:\textrm{m}\times 0.004\:\textrm{m}}</mrow>
+					<mrow> \amp = 2.34\times 10^{28}\:\textrm{m}^{-3}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+</section>

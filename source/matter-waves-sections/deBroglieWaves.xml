@@ -1,0 +1,197 @@
+<section xml:id="sec-deBroglieWaves"><title> Matter Waves</title>
+	<introduction>
+		<p>
+			Louis De Broglie in France had a breakthrough in thinking when he asked: if a photon can be have both particle and wave properties, why can't an electron also have particle and wave properties? He thought that, if electrons were waves, one could understand the stability of electronic orbits, called Bohr orbits (to be addressed in the next chapter),  similar to the stability of standing waves on a string. For instance, the size of a Bohr orbit could correspond to  an integral multiple of the wavelength of the electron wave as illustrated in <xref ref="fig-deBroglie-Bohr-orbits"/>.
+		</p> 
+
+		<figure xml:id="fig-deBroglie-Bohr-orbits">
+			<caption>
+				 The figure shows de Broglie wave pictures for several Bohr orbits. The picture was generated using the program at <url href="http://demonstrations.wolfram.com/BohrsOrbits/" visual="demonstrations.wolfram.com">Bohr's Orbits</url>.
+			</caption>
+			<image source="./images/modern-physics/deBroglie-Bohr-orbits.png" width="60%"/>
+		</figure>				
+ 
+		<p>
+			Thus, for a Bohr orbit of radius <m>r</m>, there will be a natural quantization:
+			<men>
+				2\pi r = n \lambda,
+			</men>
+			where <m>\lambda</m> would be the wavelength of the electron wave and <m>n</m> some integer.  But, what should be the wavelength of an electron? He used the analogy with photon and proposed a parallel concept for electrons as shown in <xref ref="tab-deBroglie-equations"/>.
+
+			<!-- <mdn>
+				<mrow number="no"> \amp  \textrm{Photon} \amp  \quad \amp  \textrm{Electron}</mrow>
+ 
+				<mrow> \quad\textrm{Momentum:}\quad \amp p = \dfrac{h}{\lambda}\  \quad\ \amp \quad  \amp   p = \dfrac{h}{\lambda}\ \leftrightarrow\ \ \lambda = \dfrac{h}{p}.</mrow>
+				<mrow> 
+				\quad\textrm{Energy:}\quad \amp E = p c = h f = \dfrac{hc}{\lambda} \quad\ \amp \quad  \amp   E =  \sqrt{p^2c^2 + m^2c^4} = \sqrt{h^2c^2/\lambda^2 + m^2c^4}.</mrow>
+				<mrow number="no"> 
+				\amp   \amp \quad  \amp  \textrm{For } v \ll c:\quad E =   \dfrac{p^2}{2m} = \dfrac{h^2}{2m\lambda^2}. </mrow>
+			</mdn> -->
+ 		</p>
+
+			<table xml:id="tab-deBroglie-equations"><title>DeBroglie Equations</title>
+				<tabular >
+					<col halign="left" right="minor"></col><col halign="left" right="minor"></col><col halign="left"></col>	
+					<row header="yes" bottom="minor" top="major">
+						<cell>Property</cell> <cell> Photon</cell> <cell>Electron</cell>
+					</row>
+					<row >
+						<cell>Momentum</cell> <cell> <m>p = \dfrac{h}{\lambda}</m></cell> <cell><m>p = \dfrac{h}{\lambda} \leftrightarrow \lambda = \dfrac{h}{p}.</m> </cell>
+					</row>	
+					<row >
+						<cell>Energy</cell> <cell> <m> E = p c = h f</m></cell> <cell><m>E = \sqrt{p^2c^2 + m^2c^4}</m> </cell>
+					</row>
+					<row >
+						<cell> </cell> <cell> <m> \ \ = \dfrac{hc}{\lambda} </m></cell> <cell><m>\ \ = \sqrt{h^2c^2/\lambda^2 + m^2c^4}.</m> </cell>
+					</row>
+					<row footer="yes" bottom="minor" >
+						<cell></cell> <cell></cell> <cell></cell>
+					</row>					
+				</tabular>
+			</table>
+
+
+		<p>
+			With this assumption de Broglie could account for the discrete spectrum of Hydrogen atom quite naturally. With the success of thinking electrons as waves de Broglie stated that the wave picture should apply to all material particles.
+		</p>
+		<p>
+			The question that we can now ask is: <em>Why do we not see wave-like properties of ordinary objects</em>? To that question, de Broglie's answer is that their wavelengths are too small compared to the dimensions of the object. Therefore, even though they are waves, we cannot see their wave aspects so easily. In the following we will work out some examples of de Broglie wavelengths.
+		</p>
+
+	</introduction>
+
+ 	<exercise xml:id="ex-Wavelength-of-an-Electron"><title>Wavelength of an Electron</title>
+
+		<statement>
+			<p>
+				What is the de Broglie wavelength of an electron moving at <m>1.0\times 10^{5}\:\textrm{m/s}</m>?
+			</p>
+		</statement>
+		<hint><p> Use momentum.</p></hint>
+		<answer><p>
+			<m>7.3\:\textrm{nm}</m>.
+		</p></answer>
+		<solution>
+			<p>
+			First we need to decide if we will use the relativistic formula or the non-relativistic formula for calculating the momentum. Here we have <m>v/c = 0.33\times 10^{-3}</m>, which is much very small compared to <m>1</m>.  Therefore, we will use the non-relativistic formula.
+			<me>
+				p = m v = 9.1\times 10^{-31}\:\textrm{kg} \times 1.0\times 10^{5}\:\textrm{m/s} = 9.1\times 10^{-26}\:\textrm{kg.m/s}.
+			</me>
+			Therefore, the wavelength of the electron will be
+			<me>
+				\lambda = \dfrac{h}{p} = \dfrac{6.63\times10^{-34}\textrm{J.s}}{9.1\times 10^{-26}\:\textrm{kg.m/s}} = 7.3\:\textrm{nm}.
+			</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Wavelength-of-a-ball"><title>Wavelength of a Ball</title>
+
+		<statement>
+			<p>
+				What is the de Broglie wavelength of a   ball of mass <m>0.350\:\textrm{kg}</m> moving at <m>45.0\:\textrm{m/s}</m>?
+			</p>
+		</statement>
+		<hint><p>
+			Use momentum.
+		</p></hint>
+		<answer><p>
+			<m>4.2\times 10^{-35}\:\textrm{m}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				This is a non-relativistic situation.  
+				<me>
+					p = m v = 0.350\:\textrm{kg} \times 45.0\:\textrm{m/s} = 15.75\:\textrm{kg.m/s}.
+				</me>
+				Therefore, the wavelength of the electron will be
+				<me>
+					\lambda = \dfrac{h}{p} = \dfrac{6.63\times10^{-34}\textrm{J.s}}{15.75\:\textrm{kg.m/s}} = 4.2\times 10^{-35}\:\textrm{m}.
+				</me>
+				Clearly, this is too small a wavelength for the wave picture to be of much use.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Wavelength-of-a-Relativistic-Electron"><title>Wavelength of a Relativistic Electron</title>
+
+		<statement>
+			<p>
+				What is the de Broglie wavelength of an electron which has a kinetic energy of <m>100\:\textrm{keV}</m>?
+			</p>
+		</statement>
+		<hint><p>
+			Use relativistic energy formula.
+		</p></hint>
+		<answer><p>
+			<m>5.9\times 10^{-13}\:\textrm{m}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Rest energy of an electron is <m>511\text{ keV}</m>. Since the kinetic energy is not too small compared to the rest energy, the particle should be treated relativistically. 
+				<me>
+					K = E - mc^2 = \sqrt{p^2c^2 + m^2 c^4} - m c^2.
+				</me>
+				Therefore, <m>pc</m> will be
+				<me>
+					(pc)^2 = \left( K + m c^2 \right)^2 - (m c^2)^2 = K^2 + 2 K m c^2.
+				</me>
+				Therefore, the wavelength will be
+				<me>
+					\lambda = \dfrac{hc}{pc} = \dfrac{hc}{\sqrt{K^2 + 2 K m c^2}}.
+				</me>
+				Now, if we use the value of <m>hc</m> in units <m>\textrm{eV.m}</m> and the energies in <m>\textrm{eV}</m> we will not have to change too many units.
+				<me>
+					hc = 6.58\times 10^{-16} \textrm{eV.s} \times 3.0\times 10^{8}\textrm{m/s} = 1.97\times 10^{-7}\:\textrm{eV.m},
+				</me>
+				and
+				<md> 
+					<mrow> K^2 + 2 K m c^2 \amp = (10^5\:\textrm{eV})^2 + 2 \times 10^5\:\textrm{eV}\times 5.11 \times 10^5\:\textrm{eV}</mrow>
+					<mrow> \amp \approx 11.2 \times 10^{10}\:\textrm{eV}^2.</mrow>
+				</md> 
+				Therefore, 
+				<me>
+					\lambda =  \dfrac{1.97\times 10^{-7}\:\textrm{eV.m}}{\sqrt{11.2 \times 10^{10}\:\textrm{eV}^2}} = 5.9\times 10^{-13}\:\textrm{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>			
+
+ TODO:
+
+\begin{exercise}
+ What is the wavelength of a 50-kg person running at 10 m/s?
+\end{exercise}
+
+\begin{exercise}
+ What is the wavelength of an electron ($m_e = 9.1 \times 10^{-31}$ kg) moving at (a) 10 m/s, (b) $10^4$ m/s, (c) $10^8$ m/s?
+\end{exercise}
+
+\begin{exercise}
+ What is the wavelength of a proton ($m = 1.67 \times 10^{-27}$ kg) moving at (a) 10 m/s, (b) $10^4$ m/s, (c) $10^8$ m/s?
+\end{exercise}
+
+
+\begin{exercise}
+ (a) What is the wavelength of a 100 keV photon? (b) What is the wavelength of a 100 keV electron?  
+\end{exercise}
+
+\begin{exercise}
+ What is the wavelength of a 1 TeV proton in an accelerator? 
+\end{exercise}
+
+\begin{exercise}
+ (a) At what energy would an electron have the wavelength 0.5 $\mu$m, which is the wavelength of a light in the visible spectrum? (b)  How does this energy compare with the energy of a photon of wavelength 0.5 $\mu$m?
+\end{exercise}
+
+\begin{exercise}
+ (a)  The momentum of a nonrelativistic particle is doubled, what becomes of its wavelength?  (b) What will be the case if the particle was relativistic?
+\end{exercise}
+
+\begin{exercise}
+ (a)  The kinetic energy  of a nonrelativistic particle is doubled, what becomes of its wavelength?  (b) What will be the case if the particle was relativistic?
+\end{exercise}
+
+ 
+
+</section>

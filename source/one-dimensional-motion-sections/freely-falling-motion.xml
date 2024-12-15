@@ -1,0 +1,330 @@
+<section xml:id="oneD-Freely-Falling-Motion"><title> Freely Falling Motion</title><idx><h>Motion</h><h>Free Fall</h></idx><idx><h>Motion</h><h>Vertical</h></idx><idx>Free Fall</idx><idx>Vertical Motion</idx> 
+	<p>
+		The motion of freely falling objects is a special application of constant-acceleration equations. The magnitude of acceleration is denoted by letter <m>g</m>. Near Earth, the value of <m>g</m> is <m>9.81 \text{ m/s}^2</m> and near Moon, it about <m>\frac{1}{6}\,g</m>.  
+	</p>
+	<p> 
+		The phrase <q> freely falling </q> refers to all three types of motion: (i) falling down with increasing speed, (ii) going up as it slows down, and (iii) some part of the motion is going up and other part is falling down. When you throw something at an angle to the vertical, you get a projectile motion, which is a free fall in two-dimensions - the vertical part is free fall and the horizontal part is uniform motion with zero acceleration. We will study them in another chapter. Here, <alert> we focus on only the vertical motion</alert>.
+	</p>
+	<p> 
+		Traditionally, we use <m> y </m> axis pointed up for the vertical motion. Then, the acceleration will be denoted by the <m>y</m>-acceleration, denoted by <m> a_y </m>. With positive <m>y</m> axis pointed up, its value will be negative.
+		<me> a_y = -g, \text{ or, } a_y = -9.81\text{ m/s}^2.</me>
+		Note that <m>g</m> itself is <alert>positive</alert>. When someone says negative <m>g</m>, he/she is refering to the Cartesian component <m>a_y</m> with positive <m>y</m> pointed up, or similarly if some other axis is pointed up. <alert>Make sure you understand how signs of velocities and acceleration in your formulas must be set</alert> otherwise you will make mistakes all the time. <xref ref="fig-v_y_vs_t_for_ball_thrown_up_and_coming_down"/> goes over logic of some of these sign considerations.
+	</p>
+
+	<sidebyside widths="50% 50%">
+
+		<p>
+ 
+	        If you throw a ball vertically up, then, when the ball is on its way up, its velocity is pointed up but the acceleration is pointed down. When moving upward 
+			<m> v_y \gt 0</m> and  <m> a_y = -9.81\text{ m/s}^2</m>.
+			That means, the ball slows down and comes to rest for a moment when it is at the top of the trajectory. But, acceleration is still the same value. When at the top 
+			<m> v_y =0</m> and   <m>a_y = -9.81\text{ m/s}^2</m>.                     
+ 
+		</p>
+    	<figure xml:id="fig-v_y_vs_t_for_ball_thrown_up_and_coming_down">
+			<caption>
+				Ball is going up at A, momentarily stops at the Top, and then coming down at B.
+			</caption>
+			<image source="./images/one-dim-motion/v_y_vs_t_for_ball_thrown_up_and_coming_down.png" width="80%"/>
+		</figure>
+	</sidebyside>
+	<p>
+		After the ball has reached the maximum height and starts to come down, the velocity and acceleration both point down, i.e., <m>v_y \lt 0</m> and <m>a_y = -9.81\text{ m/s}^2</m>. That is why speed picks up when an object is coming down. 
+	</p>
+    
+
+
+
+    <example xml:id="ex-Constant-Acceleration-Vertical"> <title> Freely Falling Vertical Motion of a Ball</title>
+        <statement> 
+            <p> 
+                A ball is thrown up with speed <m>30.0 \text{ m/s}</m>. 
+                (a) How high does the ball rise before coming down? (b) How long does it take to get there?
+             </p>
+        </statement>
+       <!-- <hint>
+            <p>
+				Think the motion on <m> y </m> axis and try using the constant acceleration equations. If you point <m>+y</m> axis up, then on when the ball is going up, <m>v_y \gt 0</m> but <m>a_y \lt 0</m>. 
+			</p>
+      	</hint> -->
+       <answer>
+            <p>  
+				(a) <m>45.9\text{ m}</m>, (b) <m>3.06\text{ s}</m>.
+            </p>
+      	</answer>
+      	<solution><title>a</title> 
+
+	            <p> 
+	            	You should first note that there are <alert> other ways of doing this problem </alert> than what I will give below. For instance, you could find <m> t </m> first and then use <m> v_{av} </m> to find <m>\Delta y</m>.
+				</p>
+	            <p> 
+	                For the sake of brevity, we will drop the coordinate subscript <m> y </m> from the symbols and use <m>t</m> in place of <m>\Delta t</m>.
+	                Let us use <m> y </m> axis for the vertical motion with origin at the point the ball left and the direction of positive <m> y </m> being up (<m>\uparrow</m>). This will make <m> a = -9.81\text{ m/s}^2</m>. 
+	            </p>
+ 	 
+	
+
+            <p>  
+				We are given:
+                <me> 
+                    v_i = 30.0 \text{ m/s}, \  \ v_f = 0, \ \ a = - 9.81 \text{ m/s}^2, 
+                </me> 
+                and we are to find <m> \Delta y</m>, which is another way to write <m>y_f-y_i</m>, or height <m> h</m>, in this case.
+                Using the <q> no <m>t</m> equation </q> we get  (I will omit units in calculations.)
+                <me> 
+                    v_f^2 - v_i^2 = 2 a \Delta y \rightarrow  0 - 30^2 = 2 \times 9.81 \times \Delta y
+                </me>     
+                This gives
+                <me> 
+                    \Delta y = 45.9 \text{ m}.
+                </me>
+            </p>
+        </solution>
+        <solution><title>b</title> 
+            <p> 
+				We can then use <m> v_i, v_f, \text{ and } a  </m> to find <m> t </m>. 
+			</p>
+			<p>
+                <me> 
+					v_f - v_i = a t \rightarrow t = \dfrac{0 - 30 \text{ m/s}}{ -9.81\text{ m/s}^2} = 3.06\text{ s}.
+				</me>
+			</p>
+       </solution>	               
+    </example>  
+
+	<example xml:id="Time-to-Reach-the-Top"><title> Flight Time to Reach the Top of a Vertical Trajectory</title>
+		<statement>
+			<!-- <sidebyside widths="70% 20%">
+				<p> -->
+					<p>
+						A steel ball is lauched vertically up with speed <m>20\text{ m/s}</m>, i.e., an immediate instant after the ball leaves the launcher its speed is <m>20\text{ m/s}</m>.  
+					</p>
+					<p>
+						(a) How long does it take to reach the top of its trajectory?
+					</p>
+					<p>
+						(b) How high does the ball rise before turning back?
+					</p>
+				<!-- </p>
+				<image source="./images/one-dim-motion/checkpoint-vertically-launched-ball.png" />
+			</sidebyside> -->
+
+			
+
+		</statement>
+		<!-- <hint> <p>  The velocity at the top is zero since velocity goes from being positive to being negative. </p> </hint> -->
+		<answer> <p>  (a) <m> 2.04\text{ sec} </m>, (b)  <m>40.8\text{ m}</m>. </p> </answer>
+		<solution><title>a</title> 
+			<p> 
+				Let us use <m> y </m> axis for the vertical motion with origin at the point the ball left and the direction of positive <m> y </m> being up (<m>\uparrow</m>). This will make <m> a = -9.81\text{ m/s}^2</m>. 
+				For the sake of brevity, I will drop the coordinate subscript <m> y </m> from the symbols.
+				 
+			</p>
+			<p> 
+				
+				The velocity along the path before reaching the top is positive, and after the ball starts to fall, the velocity is negative. That means, right at the top point, velocity is zero. We take <m> t_i </m> the instant of launch and <m> t_f</m> at the top. The information in the problem statement can be summarized now.
+				<me>
+					a = -9.81\text{ m/s}^2,\ \ v_i = + 20\text{ m/s},\ \ v_f = 0,\ \ \Delta t = ?
+				</me> 
+				We can get <m> \Delta t </m> by using the acceleration equation.
+				<me>
+					\Delta v = a\, \Delta t \Longrightarrow \Delta t = \dfrac{\Delta v}{a}.
+				</me>
+				Therefore,
+				<me>
+					\Delta t = \dfrac{0 - 20\text{ m/s}}{-9.81\text{ m/s}^2} = 2.04\text{ sec}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+				Now that we know the time, we can easily get height <m> h </m> by multiplying the <em> average velocity</em> by this time.
+				<me>
+					h = v_{\text{av}}\, t = \dfrac{20 + 0}{2}\times 2.04 = 40.8\text{ m}.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+
+    <example xml:id="ex-Motion-with-a-Turn-Around"><title>Vertical Motion with a Turn Around in the Trajectory</title>
+    	<statement>
+    		<p>
+    			A steel ball is shot straight up, and on its way down, it is caught at a height of <m> 10.0 </m> m above the point from which it was launched. The ball is assumed to be in free fall (i.e., its acceleration is only due to acceleratioj due to gravity) after it was launched and before it was caught. The speed of launch was 25.0 m/s. 
+			</p>
+			<p>
+				(a) How long was the ball in the flight?  
+			</p>
+			<p>
+				(b) What was the velocity of the ball at the instant before it was caught?
+    		</p>
+    	</statement>
+    	<!-- <hint>
+    		<p>
+    			Use the constant acceleration equations.
+    		</p>
+    	</hint> -->
+    	<answer>
+    		(a) <m>  22.85 \text{ s}</m>, (b) <m>-20.7 \text{ m/s}</m>.
+    	</answer>
+    	<solution><title>a</title>
+    		<sidebyside widths="55% 10% 15% 20%"> 
+
+	    		<p>
+	    			<p> 
+	    				Let positive <m> y </m> axis be pointed up with <m> y = 0 </m> at the height of launch (<xref ref="fig-ball_thrown_up_and_caught_above"/>). We should note here is that we <alert> do not need to find the top point</alert> since we are only concerned with points <m>i</m> and <m>f</m> on the trajectory. Many students first do <m>i</m> to the Top and then, they do from Top to <m>f</m>. That's just waste of time.
+	    			</p>
+		    		<p>
+		    			For brevity, I will drop the subscripts <m>y</m> from symbols and write <m>t</m> in place of <m>\Delta t</m>.
+		    			<md>
+		    				<mrow> \amp y_i = 0,\ y_f = 10.0 \text{ m}, </mrow>
+ 
+		    				<mrow> \amp v_i = 25.0 \text{ m/s},\ a = -9.81 \text{ m/s}^2. </mrow>
+		    			</md>
+		    		</p>
+	    		</p>
+	    		<p></p>
+				<figure xml:id="fig-ball_thrown_up_and_caught_above">
+					<caption>			 
+					</caption>
+					<image source="./images/one-dim-motion/ball_thrown_up_and_caught_above.png" width="80%"/>
+				</figure>
+				<p></p>	    		
+	    	</sidebyside>
+
+ 
+
+
+    		<p>
+    			We can directly find <m> t </m> by using the <q> no <m> v_f </m> equation</q>. 
+    			<me> 
+    				y_f - y_i = v_i t + \dfrac{1}{2} a t^2.
+    			</me>
+    		</p>
+    		<p>
+    			Putting the numerical values we get a quadratic equation in <m> t</m>.
+    			<me> 4.905\, t^2 - 25\, t + 10 = 0.</me>
+    			This will give us two answers - one time will correspond to the time the ball was at <m> 10.0 </m> m height on its way up and the longer time is the time when it was again at that place on its way down. So, we are interested in the longer time.
+    		</p>
+    		<p>
+    			<md> 
+    				<mrow> t \amp = \dfrac{1}{2\times 4.905} \left(-(-25) \pm \sqrt{ 25^2 - 4\times 4.905\times 10 }\right)</mrow>
+    				<mrow> \amp = \dfrac{1}{2\times 4.905} \left(25 \pm  20.7 \right)</mrow>
+    				<mrow> \amp =  0.44 \text{ s},\ \   4.66 \text{ s}.</mrow>
+    			</md>
+    			This gives the total hang time before getting caught to be <m> 4.66 \text{ s}</m>. The other value of <m>t</m>, <m>0.44 \text{ s}</m> corresponds to the time when the ball was going up at that height.
+     		</p>
+     	</solution>
+     	<solution><title>b</title> 
+    		<p> 
+    			From <m> t </m>, we can immediately get <m> v_f </m> by using the defining equation of average acceleration <m> a</m>.
+    			<me>
+    				v_f = v_i + a t = 25.0 \text{ m/s} + (- 9.81 \text{ m/s}^2)\times 4.66 \text{ s} = -20.7 \text{ m/s}.
+    			</me>
+    			Note the sign of <m> v_f </m>. Since the ball is coming down and the positive axis is pointed up, the sign makes sense. If we had used the time <m>t=0.44 \text{ s}</m>, which is the time when the ball was going up here, we would have got <m>+20.7 \text{ m/s}</m>, the same speed but with the positive sign, which corresponds to the upward motion.
+    		</p>
+    	</solution>
+    </example>
+
+    <example xml:id="ex-Falling-Rock-by-a-Window-Find-Initial-and-Final-Velocities"><title>Falling Rock by a Window - Find Initial and Final Velocities</title>
+	    <statement>
+            <sidebyside widths="55% 10% 20% 15%">
+    			<p>
+    				A rock is falling vertically on the side of a building. To fall by a window of height <m> 2\text{ m}</m>, it takes <m> 0.25\text{ sec}</m> (<xref ref="fig-Falling-Rock-by-a-Window-Find-Initial-and-Final-Velocities"/>). Assuming free fall, find the speed of the rock at the (a) top of the window and (b) bottom of the window. 
+    			</p>
+                <p></p>
+                <figure xml:id="fig-Falling-Rock-by-a-Window-Find-Initial-and-Final-Velocities">
+                	<caption>
+                		<xref ref="ex-Falling-Rock-by-a-Window-Find-Initial-and-Final-Velocities"/>.
+                	</caption>
+                	<image source="./images/one-dim-motion/ex-falling-rock-window.png"/>
+                </figure>
+                <p></p>
+            </sidebyside>
+
+		</statement>
+		<!-- <hint> <p> Use constant acceleration motion. You can use <m>y</m> axis with origin at the top of the window and pointed up. Then, bottom of the window will have <m>y=-2\text{ m}</m>. </p> </hint> -->
+		<answer> <p> <m> v_i = 6.78\text{ m/s}</m> down, <m> 9.23\text{ m/s}</m> down.  </p> </answer>
+		<solution><title>a</title> 
+			<p> 
+				To make sure we have correct signs, we will use a Cartesian coordinate for the motion. Let positive <m> y </m> axis be pointed up and the origin at the top of the window. This gives us the following data, where I have stripped unncessary subscript <m>y</m> from symbols and written <m>t</m> in pace of <m>\Delta t</m>.
+				<me>
+					y_i = 0,\ y_f = -2\text{ m},\ a = -9.81\text{ m/s}^2,\ t = 0.25\text{ s}.
+				</me>
+				From <m>\Delta y = v_{i} t + \dfrac{1}{2}a t^2 </m> gives
+				<me>
+					 v_{i}   = \dfrac{-2 + 4.9\times 0.25^2}{0.25}  = -6.78\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p> 
+				The equation <m> v_{f} =  v_{i} + a t</m> gives
+				<me>
+					v_{f} =  v_{i} - g\, t = -6.775 - 9.81\times 0.25 = -9.23\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+
+	<exercises>
+
+
+		<exercise><title>Practice with a Friend</title>
+			<statement>
+				<p>
+					Suppose you live on the 5th floor of a tall building. Your friend goes to the roof and drops a steel ball from rest while you time the ball as it falls.  You find that the ball takes <m>0.110</m> sec to fall from the top of the window to the bottom of the window, a distance of <m>0.8</m> meter.  How high above the top of the window of the 5th floor is the roof?  
+				</p>
+			</statement>
+			<answer><p><m>2.3\, \text{m}</m>.</p></answer>
+		</exercise>
+
+
+	 	<exercise><title>Practice with a Friend</title>
+
+			<statement>
+				<p>
+					To get a sense of how high from the ground is the roof of a 10-story building, two friends ('A' and 'B') decide to do the following experiment. While 'A' will shoot a steel ball from the ground straigt up, 'B' will be at the roof measuring time between when the ball goes up and when it comes down as seen at the roof.
+				</p>
+				<p>
+					Let <m>v_0</m> be the (known) speed with which the ball was shot and  <m>T</m> time duration between going up and coming down at the roof (measured by 'B'). (a) Find a formula that will give you height <m>H</m> of the building based on these two pieces of information and standard value of <m>g</m>. (b) Check your answer: for <m>v_0 = 70\text{ m/s}</m>, <m>T = 8.7\text{ sec}</m>, <m>g=9.81\text{ m/s}^2</m>, <m>H = 34.6\text{ m}</m>.
+				</p>
+			</statement>
+			<!-- <solution>
+				<p>
+					No solution provided.
+				</p>
+			</solution> -->
+		</exercise>
+
+
+		<exercise><title>Practice with a Friend</title>
+			<statement>
+				<p>
+					A rocket is rising at a constant velocity of <m>200\,\text{m/s}</m>.  A piece of the rocket comes loose and falls freely to the ground.  It took <m>50\text{ s}</m> for the piece to fall to the ground after dislodging from the rocket.  How far above the ground the piece came loose?
+				</p>
+			</statement>
+			<answer><p><m>2250\, \text{m}</m>.</p></answer>
+		</exercise>
+
+		<exercise><title>Practice with a Friend</title>
+			<statement>
+				<p>
+					A ball is tossed with a speed <m>v_0</m> and caught at a height <m>H</m> above the launch point on its way down.  Find the time the ball was in flight.
+				</p>
+			</statement>
+			<answer><p><m>\frac{1}{g}\left( v_0 + \sqrt{v_0^2 - gH} \right)</m>.</p></answer>
+		</exercise>
+
+
+
+
+
+
+
+	</exercises>
+
+
+
+</section>

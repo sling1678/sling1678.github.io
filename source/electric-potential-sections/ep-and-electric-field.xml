@@ -1,0 +1,442 @@
+<section xml:id="Electric-Potential-and-Electric-Field"><title> Electric Potential and Electric Field</title>
+
+	<subsection xml:id="subsec-Electric-Potential-From-Electric-Field"><title> (Calculus) Electric Potential From Electric Field </title>
+
+		<p>
+			I have defined electric potential change based on work per unit charge required to move a charge from one location to another. This work is required due to need to balance the electric force on the charge by other charges. Denoting <m>\phi_1</m> for potential at point <m>P_1</m>, <m>\phi_2</m> for potential at point <m>P_2</m>, <m>W_{1\rightarrow 2}</m> the work required to move a test charge <m>Q</m> from <m>P_1</m> to <m>P_2</m> while balancing the electric force <m>\vec F_e</m>, the change is actually a work integral.
+			<me>
+				\phi_2 - \phi_1 = \frac{W_{1\rightarrow 2}}{Q} = -\frac{1}{Q}\int_1^2 \vec F_e\cdot d\vec r.
+			</me>
+			Now, electric force  can also be expressed as <m>Q</m> times the electric force of the other charges.
+			<me>
+				\vec F_e = Q\vec E.
+			</me>
+			Therefore, we can write change in electric potential as
+			<men xml:id="eq-ep-change-from-el-field">
+				\phi_2 - \phi_1 = - \int_1^2 \vec E\cdot d\vec r.
+			</men>
+			If point <m>P_1</m> is the reference point, we get the potential <m>\phi</m> at arbitrary point <m>P</m> by
+			<men xml:id="eq-e-potential-from-e-field-integral">
+				\phi  =   - \int_{\text{ref}}^{P}\, \vec E\cdot d\vec r.
+			</men>
+			The integral on the right side is independent of path. That means you can choose any path between the reference point and <m>P</m> to set up the integral for calculations.  Only the end points of the integral matter. This conclusion is true only for electric field of static charges as we will see when we study dynamic fields.  We say that electric force by static charges is a <term>conservative force</term>. 
+		</p>
+		<p>
+			In case of spherical, cylindrical or planar, it is easier to obtain electric field by using Gauss's law. In these cases, its often best to use Eq. <xref ref="eq-e-potential-from-e-field-integral"/> to obtain electric field as illustrated below in <xref ref="ex-Electric-Potential-Outside-and-Inside-of-a-Charge-Spherical-Shell"/>.
+		</p>
+	</subsection>
+
+	<subsection><title>(Calculus) Gradient of Potential and Curl of Electric Field</title>
+		<p>
+			Taking gradient of both sides of Eq. <xref ref="eq-e-potential-from-e-field-integral"/> gives a local relation between electric field and electric potential at each point of space for static fields.
+			<men xml:id="eq-e-potential-from-e-field-gradient">
+				\vec E = -\vec\nabla\, \phi.\ \ \ \ (\text{Static } \vec E)
+			</men>
+			This is often the way to get electric field from potential since working out or measuring potential is lot easier than electric field. 	
+		</p>
+		<p>
+			For instance, suppose we some how knew the electric potential of a charge <m>q</m> and we wanted to find electric field. So, it will go as follows.
+			<men xml:id="eq-e-field-from-gradient-point-particle">
+				\vec E = -\vec \nabla \left[ \frac{1}{4\pi\epsilon_0}\ \frac{q}{r}\right],
+			</men>
+			where <m>r</m> is the spherical radial coordinate. Since we are dealing with spherical coordinates, we will use <m>\vec \nabla</m> in spherical coordinates, which is
+			<me>
+				\vec \nabla = \hat u_r \frac{\partial}{\partial r} + \hat u_\theta\frac{1}{r}\frac{\partial}{\partial \theta} +  \hat u_\phi\frac{1}{r\sin\theta}\frac{\partial}{\partial \phi}.
+			</me>
+			Using this in Eq. <xref ref="eq-e-field-from-gradient-point-particle"/> gives the electric field expected for a point particle located at origin.
+			<me>
+				\vec E = \frac{1}{4\pi\epsilon_0}\ \frac{q}{r^2}\; \hat u_r.
+			</me>
+		</p>
+		<p>
+			From Eq. <xref ref="eq-ep-change-from-el-field"/> we see that change in electric potential will be zero if we move charge <m>Q</m> back to its original location. That is the line integral of the electric field over any closed loop will be zero.
+			<men>
+				\oint_{1^1} \vec E\cdot d\vec r = 0.\ \ \ \ (\text{Static } \vec E)
+			</men>
+			By use of Stoke's theorem of multivariat Calculus, you can also write this as curl of electric field equal to zero.
+			<men>
+				\vec \nabla \times \vec E = 0.
+			</men>
+		</p>		
+	</subsection>
+
+	<subsection><title>(Calculus) Laplace's Equation</title>
+		<p>
+			In the chapter on Gauss's law, we found that divergence of electric field at any point is proportional to charge density at that point.
+			<me>
+				\vec\nabla\cdot\vec E = \dfrac{\rho}{\epsilon_0}.
+			</me>
+			From the last section, we note that static electric field can be obtained from electric potential by gradient.
+			<me>
+				\vec E = -\vec\nabla \phi.
+			</me>
+			Using this in the equation above, we find that 
+			<men xml:id="eq-gauss-law-for-potential-point-form">
+				\nabla^2 \phi = - \dfrac{\rho}{\epsilon_0}.
+			</men>
+			Here <m>\nabla^2</m> is called Laplacian. In Cartesian coordinates, it is just sum of the second derivatives.
+			<me>
+				\nabla^2 \phi = \dfrac{\partial^2 \phi}{\partial x^2} + \dfrac{\partial^2 \phi}{\partial y^2} + \dfrac{\partial^2 \phi}{\partial z^2}.
+			</me>
+			Eq. <xref ref="eq-gauss-law-for-potential-point-form"/> says that, laplacian of potential is zero at all points where charge density is zero.
+			<men xml:id="eq-Laplaces-equation">
+				\nabla^2 \phi = 0,\ \ \text{where }\rho=0.
+			</men>
+			This equation is called <term>Laplace's equation</term>. Much of more complicated statics problems are handled by solving Laplace's equation.
+		</p>
+
+	</subsection>
+	<subsection> <title>Electric Potential in Constant Electric Field Region</title>
+
+		<sidebyside widths="55% 10% 35%">
+
+			<p>
+				In a region of constant electric field <m>\vec E</m>, such as between two large charged plates or near single charged plate or very close to any charged surface, potential difference between two points <m>P_1</m> and <m>P_2</m> is simply
+				<men xml:id="e-potential-diff-cont-electric-field">
+					\phi_2 - \phi_1 = - E\, d\, \cos\theta,
+				</men>
+			</p>
+			<p></p>
+			<figure xml:id="fig-e-potential-diff-cont-electric-field">
+				<caption>
+				</caption>
+				<image source="./images/electric-potential/e-potential-diff-cont-electric-field.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		
+		<p>
+			where <m>d</m> is the distance between <m>P_1</m> and <m>P_2</m> and <m>\theta</m> is the angle between the direction of <m>P_1</m> to <m>P_2</m> and the direction of electric field as shown in <xref ref="fig-e-potential-diff-cont-electric-field"/>.
+		</p>
+	</subsection>
+
+
+	<exercise xml:id="ex-Electric-Potential-Difference-in-the-Region-of-Constant-Electric-Field-2"><title> Electric Potential Difference in the Region of Constant Electric Field </title>
+		 
+		<statement>
+			<p>
+				Two oppositely charged sheets with charge densities <m>\pm\sigma</m> face each other separated by a distance <m>d</m>. What is the potential difference between them?
+			</p>
+		</statement>
+		<hint><p>Make use the electric field between the plates.</p></hint>
+		<answer><p> <m>\frac{\sigma d}{\epsilon_0}</m>. </p></answer>
+		<solution>
+			<p>
+				From applying Gauss's law to one sheet we found that electric field by one sheet is <m>\sigma/2\epsilon_0</m>. The, by superposition, we get electric field between plates to be
+				<me>
+					\vec E = \frac{\sigma}{\epsilon_0}\hat u,
+				</me>
+				where the unit vector <m>\hat u</m> is pointed from positive plate to negative plate. Now, we can make use of Eq. <xref ref="eq-ep-change-from-el-field"/> to find the potential difference between plates. Integrating from negative plate to positive plate will mean <m>d\vec r</m> will be in the opposite direction to <m>\hat u</m>, which means the dot product will cancel the negative sign and result int
+				<md>
+					<mrow>\phi_{+} - \phi_{-} \amp =  \int_{0}^{d} \frac{\sigma}{\epsilon_0} dr </mrow>
+					<mrow>\phi_{+} - \phi_{-} \amp =   \frac{\sigma d}{\epsilon_0}.   </mrow>
+				</md>
+			</p>
+		</solution>		
+	</exercise>	 
+
+	<exercise xml:id="ex-Constant-Electric-Field-between-Parallel-Plates-from-Electric-Potential-Difference"><title> Constant Electric Field between Parallel Plates from Electric Potential Difference  </title>
+		<statement>
+
+			<sidebyside widths="60% 10% 25% 5%">
+ 
+				<p>
+					Two large aluminum plates are connected to two terminals of a <m>12\text{-volt}</m> battery, which keeps all points of positive plate at electric potential <m>\phi_+ = 12\text{ V}</m> and all points of negative plate at electric potential <m>\phi_- = 0\text{ V}</m>. The separation between plates is <m>4\text{ mm}</m>.
+				</p> 
+				<p></p>
+				<image source="./images/electric-potential/ex-e-potential-e-field-between-plates.png" width="70%"/>
+				<p></p>
+			</sidebyside>
+			<p>
+				(a) What is the electric field between the plates?
+			</p>
+			<p>
+				(b) What is the electric potential at point <m>P_1</m> located at a distance <m>1.0\text{ mm}</m> from the positive plate?
+			</p>
+		</statement>
+		<hint> <p>  (a) Use the fact that electric field between plates is constant. (b) Use electric field you found. </p> </hint>
+		<answer> <p> (a) <m>3000\text{ V}</m>, (b) <m>9\text{ V} </m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				Since electric field is constant between plates, the potential difference between plates will just be
+				<me>
+					\phi_+ - \phi_- =  E d,
+				</me>
+				where <m>E</m> is the magnitude of the electric field. 
+				Therefore,
+				<me>
+					E = \frac{\Delta\phi}{d}= \dfrac{12\text{ V}}{0.004\text{ m}} = 3000\text{ V/m}.
+				</me>
+				 
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				Let <m>x</m> represent the distance of point <m>P_1</m> from the negative plate. Since electric field is constant, integration from negative plate to this point will give 
+				<me>
+					\phi_{P_1} - \phi_{-}  =  E x.
+				</me>
+				With <m>\phi_{-}</m> taken as zero reference, we get the potential at this point to be 
+ 
+				<me>
+					\phi_{P_1}  =  E x = 3000\text{ V/m}\times 0.003\text{ m} = 9\text{ V}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Electric-Potential-Outside-and-Inside-of-a-Charge-Spherical-Shell"><title> (Calculus) Electric Potential Outside and Inside of a Charged Spherical Shell </title>
+
+		<statement>
+			<sidebyside widths="55% 10% 35%">
+
+				<p>
+					A copper sphere of radius <m>R</m> is charged with a total charge <m>Q</m>. The charge spreads out on the surface of the sphere with no charges inside the volume of the sphere. Use <m>r=\infty</m> as zero reference for electric potential.
+				</p>
+
+				<p>
+				</p>
+				<image source="./images/electric-potential/ex-e-pot-from-e-field-sph-shell.png" width="70%"/>
+			</sidebyside>
+			
+			<p>
+				(a) Find electric potential at a point outside the sphere.
+			</p>
+			<p>
+				(b) Find electric potential at a point inside the sphere. (Hint: it is not zero!)
+			</p>
+
+
+		</statement>
+		<hint> <p>  Use Gauss's law to get E-field first. Then integrate E-field from reference point to the field point. </p> </hint>
+		<answer> <p>   (a) <m> \dfrac{1}{4\pi\epsilon_0}   \dfrac{Q}{r_\text{out}}</m>, (b) <m> \dfrac{1}{4\pi\epsilon_0}   \dfrac{Q}{R}</m>.  </p> </answer>
+		<solution><title>(a) </title> 
+			<p>
+				By applying Gauss's law you should convince yourself that the magnitude of electric field of a charges shell depends on the distance <m>r</m> from the center of the shell with direction being radial from the center of the sphere.
+				<me>
+					E(r) = 
+						\begin{cases}
+							0 \amp r \lt R\\
+							\dfrac{1}{4\pi\epsilon_0}\, \dfrac{Q}{r^2} \amp r\gt R.
+						\end{cases}
+				</me>
+				For directions, we will assume <m>Q</m> to be positive for our calculations.
+			</p>
+			<p>
+				For electric potential at <m>P_\text{out}</m>, we will perform the integral in Eq. <xref ref="eq-e-potential-from-e-field-integral"/> from <m>r=\infty</m> to <m>r=r_\text{out}</m>. Since vector <m>d\vec r = \hat u_r\, dr</m> and <m>\vec E</m> is in <m>\hat u_r</m> direction, their dot product gives 
+				<me>
+					\vec E \cdot d\vec r = E\, dr.
+				</me>
+				Therefore, we get the following for the potential
+				<md>
+					<mrow> \phi_\text{out} \amp = -\int_{\infty}^{r_\text{out} }\, E(r)\, dr</mrow>
+					<mrow> \amp = -\dfrac{Q}{4\pi\epsilon_0} \int_{\infty}^{r_\text{out} }\, \dfrac{1}{r^2} \, dr</mrow>
+					<mrow> \amp = \dfrac{1}{4\pi\epsilon_0}   \dfrac{Q}{r_\text{out}} </mrow>
+				</md>
+
+			</p>
+		</solution>
+		<solution><title>(b) </title>
+			<p>
+				In the present case, we will need to perform integral from <m>r=\infty</m> to <m>r=r_\text{in}</m>. From (a), we already know what to expect fror any point from <m>r=\infty</m> to <m>r=R</m>, the radius. Present integral will then be divided up in two parts: <m>r=\infty</m> to <m>r=R</m> and <m>r=R</m> to <m>r=r_\text{in}</m>, the later will be zero since <m>E</m> in this domain is zero.
+ 
+				<md>
+					<mrow> \phi_\text{in} \amp = -\int_{\infty}^{r_\in}\, E(r)  dr</mrow>
+					<mrow> \amp = \dfrac{Q}{4\pi\epsilon_0} \int_{\infty}^{R}\, \dfrac{1}{r^2} \, dr + 0 </mrow>
+					<mrow> \amp = \dfrac{1}{4\pi\epsilon_0} \dfrac{Q}{R}. </mrow>
+				</md>
+				This says that electric potential is same throughout the interior of the metal sphere.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Potential-of-Uniformly-Charged-Sphere"><title>(Calculus)  Potential of Uniformly Charged Sphere</title>
+
+		<statement>
+			<p>
+				A spherical cloud of radius <m>R</m> has uniform charge density <m>\rho</m> (units: <m>\text{C/m}^3</m>). Find potential (a) at a point outside and (b) at a point inside the sphere. Use <m>r=\infty</m> as reference for the potential.
+			</p>
+		</statement>
+		<hint><p>Use Gauss's law result for electric field.</p></hint>
+		<answer><p>
+			(a) <m>\frac{1}{4\pi\epsilon_0}\,\frac{q}{r_\text{out}}</m>, 
+			(b) <m>\frac{1}{4\pi\epsilon_0} \frac{q}{R} \left( \frac{3}{2} - \frac{1}{2}\; \frac{r_{\text{in}}^2}{R^2} \right)</m>.
+
+		</p></answer>
+		<solution><title>(a)</title>
+			<p> Common to (a) and (b): 
+				Applying spherical symmetry case of Gauss's law to the charge distribution, you can show that the electric field first. Let <m>q</m> be tht total charge in the sphere.
+				<me>
+					q = \frac{4}{3}\pi R^3 \rho.
+				</me>
+				Using <m>q</m> and radial unit vector <m>\hat u_r</m>, electric field can be written as follows.
+				<men xml:id="eq-E-field-for-spherical-charge">
+					\vec E = \begin{cases}
+						\frac{1}{4\pi\epsilon_0} \frac{q}{r^2}\;\hat u_r \amp r \gt R\\
+						\frac{1}{4\pi\epsilon_0} \frac{q}{R^3}\; r\;\hat u_r \amp r \lt R
+					\end{cases}
+				</men>
+				Now, we can integrate from reference at infinity to <m>r=r_\text{out}</m>, a point outside the sphere along a radial line. To set up the integral, we note that <m>d\vec r = \hat u_r\, dr</m> here for the radial path, giving us <m>\vec E \cdot d\vec r = E\, dr</m>. Hence, the potential is
+				<md>
+					<mrow>\phi_\text{out} \amp = -\frac{q}{4\pi\epsilon_0} \int_\infty^{r_\text{out}}\frac{1}{r^2}\; dr</mrow>
+					<mrow>  \amp = \frac{1}{4\pi\epsilon_0}\,\frac{q}{r_\text{out}}. </mrow>
+				</md>
+				That is, from outside, the spherical charge distribution acts like as it the entire charge is located at the center.
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)
+				Here, we split the integral into two parts since we need to integrate from infinity to a point inside and, according to Eq. <xref ref="eq-E-field-for-spherical-charge"/>, electric field has different expression outside and inside.
+				<md>
+					<mrow>\phi_\text{in} \amp = -\frac{q}{4\pi\epsilon_0} \int_\infty^{r_\text{in}}\frac{1}{r^2}\; dr</mrow>
+					<mrow> \amp = -\frac{q}{4\pi\epsilon_0} \int_\infty^{R}\frac{1}{r^2}\; dr
+						-\frac{q}{4\pi\epsilon_0}\, \frac{1}{R^3}\, \int_R^{r_\text{in}}\;r\; dr
+					</mrow>
+					<mrow>  \amp =   \frac{1}{4\pi\epsilon_0} \frac{q}{R}  + \frac{1}{4\pi\epsilon_0} \frac{q}{2R}  \left( 1 - \frac{r_{\text{in}}^2}{R^2} \right) </mrow>
+					<mrow>  \amp =   \frac{1}{4\pi\epsilon_0} \frac{q}{R} \left( \frac{3}{2} - \frac{1}{2}\; \frac{r_{\text{in}}^2}{R^2} \right). </mrow>
+				</md>				
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electric-Potential-of-an-Infintely-Long-Wire"><title>(Calculus) Electric Potential of an Infintely Long Wire</title>
+
+		<statement>
+			<p>
+				An infinitely long straight wire has a uniform charge density of <m>\lambda=2.0\times 10^{-6}\text{ C/m}</m>. What is the electric potential at a distance <m>s=25\text{ cm}</m> from the wire? State your reference point.
+			</p>
+		</statement>
+		<hint><p>Use electric field of a charged wire to deduce the formula for electric potential.</p></hint>
+		<answer><p><m>5.0\times 10^4\text{ V}</m> with zero potential reference at <m>s=1\text{ m}</m>.</p></answer>
+		<solution>
+			<p>
+				By applying Gauss's law for cylindrical symmetry, we can show that magnitude of electric field at a distance <m>s</m> from the wire is given by the following formula.
+				<me>
+					E = \frac{\lambda}{2\pi\epsilon_0}\; \frac{1}{s}.
+				</me>
+			</p>
+				<sidebyside widths="50% 10% 20% 20%">
+					<p>
+						Here, the field is in the cylindrical radial direction, as given by the unit vector <m>\hat u_s</m>, and the element <m>d\vec r</m> is also in the  <m>\hat u_s</m> direction. Therefore, we will get their dot product to be
+						<me>
+							\vec E\cdot d\vec r = E\, ds.
+						</me>
+					</p>
+					<p></p>
+					<image source="./images/electric-potential/ex-Electric-Potential-of-an-Infintely-Long-Wire.png" width="70%"/>
+					<p></p>
+				</sidebyside>			
+			<p>	
+				Now, let us integrate this along cylindrical radial line from <m>s=s_0</m>, the reference, to the point <m>s=s</m>.   
+				This will give us the following potential difference with respect to the reference point.
+				<md>
+					<mrow> \phi - \phi_\text{ref} \amp = - \frac{\lambda}{2\pi\epsilon_0}\; \int_{s_0}^s\frac{1}{s} ds \ \ \ (s_0\gt s)</mrow>
+					<mrow> \amp = - \frac{\lambda}{2\pi\epsilon_0}\; \ln\frac{s}{s_0}.</mrow>
+				</md>
+				Choosing <m>\phi_\text{ref} = 0 </m>, we get
+				<me>
+					\phi = - \frac{\lambda}{2\pi\epsilon_0}\; \ln\frac{s}{s_0}.
+				</me>
+				Note that we cannot choose reference distance, <m>s_0=\infty</m>, since that would give use zero potential at all points. Typically, we will choose <m>s_0=1</m> in the unit we express distance <m>s</m>. Thus, if we express <m>s</m> in meters, we will set <m>s_0=1\text{ m}</m> and write potential at <m>s</m> as
+				<me>
+					\phi = - \frac{\lambda}{2\pi\epsilon_0}\; \ln\,(s\text{ in m}).
+				</me>				
+				Numerically, now, with <m>s=25\text{ cm}= 0.25\text{ m}</m> we get
+				<md>
+					<mrow>\phi \amp = - \frac{2.0\times 10^{-6}}{2\pi\times 8.85\times 10^{-12}}\; \ln\,(0.25) = 5.0\times 10^4\text{ V}.</mrow>
+				</md>
+				The potential is positive since our reference point at <m>1\text{ m}</m> is further away from positive charges than the field point  at <m>25\text{ cm}</m>.  	
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electric-Potential-Between-Conductors-of-a-Coaxial-Cable"><title>Electric Field Between Conductors of a Coaxial Cable</title>
+
+		<statement>
+			<p>
+				A long coaxial cable has inner conductor maintained at potential <m>V_0</m> compared to the outer conductor. The inner conductor has radius <m>a</m> and the outer conductor has inner radius <m>b</m>. What is the electric field between the two conductors?
+			</p>
+		</statement>
+		<hint><p> Find <m>\lambda</m> on the inner conductor in terms of <m>V_0</m> by using the relation between electric field and potential expected for a cylindrical symmetry.. </p></hint>
+		<answer><p> <m>\frac{V_0}{\ln\,(b/a) }\, \frac{1}{s}\, \hat u_s</m>. </p></answer>
+		<solution>
+			<p>
+				The situation presented has cylindrical symmetry. Therefore, electric field will have only cylindrical radial dependence. Let <m>\lambda</m> denote linear charge density on the inner conductor. Then, by Gauss's law we will have
+				<me>
+					\vec E = \frac{\lambda}{2\pi\epsilon_0}\, \frac{1}{s}\, \hat u_s.
+				</me>
+				We need to find <m>\lambda</m> from <m>V_0</m>. For that, we look at the potential difference we expect by integrating from negative plate, chosen as reference for potential, to the positive plate we will get
+				<me>
+					V_0 = -\frac{\lambda}{2\pi\epsilon_0} \ln\,\frac{a}{b} = + \frac{\lambda}{2\pi\epsilon_0} \ln\,\frac{b}{a}
+				</me> 
+				This gives
+				<me>
+					\lambda =  \frac{2\pi\epsilon_0 V_0 }{\ln\,(b/a) }.
+				</me> 
+				We use this in the electric field.
+				<me>
+					\vec E = \frac{V_0}{\ln\,(b/a) }\, \frac{1}{s}\, \hat u_s.
+				</me>				
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Electric-Field-of-a-Spherical-Charge-Distribution-from-Electric-Potential"><title>(Calculus) Electric Field of a Spherical Charge Distribution from Electric Potential</title>
+
+		<statement>
+			<p>
+				A spherical cloud of radius <m>R</m> has uniform charge density <m>\rho</m> (units: <m>\text{C/m}^3</m>). Find electric field (a) at a point outside and (b) at a point inside the sphere from the following known expressions for electric potential at these points where <m>r_\text{in/out}</m> are the radial spherical coordinates.
+			</p>
+			<p>
+			(a) <m>\frac{1}{4\pi\epsilon_0}\,\frac{q}{r_\text{out}}</m>,  
+			(b) <m>\frac{1}{4\pi\epsilon_0} \frac{q}{R} \left( \frac{3}{2} - \frac{1}{2}\; \frac{r_{\text{in}}^2}{R^2} \right)</m>.	 See <xref ref="ex-Potential-of-Uniformly-Charged-Sphere"/>.			 
+			</p>
+		</statement>
+		<hint><p>Use gradient of potential in spherical coordinates.</p></hint>
+		<answer><p>
+			(a) <m>\frac{1}{4\pi\epsilon_0}\,\frac{q}{r_\text{out}^2}\; \hat u_r</m>,  
+			(b) <m> \frac{1}{4\pi\epsilon_0}\,\frac{q\, r_\text{in}}{R^3}\; \hat u_r</m>.	
+
+		</p></answer>
+		<solution><title>(a) and (b)</title>
+			<p>
+				Since the potentials are in spherical coordinates, it is best to work in spherical coordinates where <m>\vec\nabla</m> is
+				<me>
+					\vec \nabla = \hat u_r \frac{\partial}{\partial r} + \hat u_\theta\frac{1}{r}\frac{\partial}{\partial \theta} +  \hat u_\phi\frac{1}{r\sin\theta}\frac{\partial}{\partial \phi}.
+				</me>
+				This has derivatives with respect to <m>\theta</m> and <m>\phi</m>. 
+				Since we will work with spherical coordinates in this problem, it is better to use symbol <m>V</m> for potential to avoid confusion.
+				<md>
+					<mrow> \vec E \amp = - \vec\nabla V</mrow>
+					<mrow>  \amp = - \hat u_r \frac{\partial V}{\partial r}</mrow>
+				</md>
+			</p>
+			<p>
+				For (a), we use
+				<me>
+					V(r) = \frac{1}{4\pi\epsilon_0}\,\frac{q}{r},
+				</me>
+				for (b), we use
+				<me>
+					V(r) = \frac{1}{4\pi\epsilon_0} \frac{q}{R} \left( \frac{3}{2} - \frac{1}{2}\; \frac{r^2}{R^2} \right).
+				</me>
+				Carrying out the derivatives, we get the answers for (a) and (b) to be
+				<me>
+					\vec E = 
+					\begin{cases}
+						\frac{1}{4\pi\epsilon_0}\,\frac{q}{r^2}\; \hat u_r \amp r \gt R\\
+						\frac{1}{4\pi\epsilon_0}\,\frac{q\, r}{R^3}\; \hat u_r \amp r \lt R.
+					\end{cases}
+				</me>
+								
+			</p>
+		</solution>
+	</exercise>	
+
+
+
+
+</section>

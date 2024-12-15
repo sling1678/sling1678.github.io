@@ -1,0 +1,161 @@
+<section xml:id="Force-and-Torque-on-Magnetic-Dipole"><title> Force and Torque on Magnetic Dipole </title>
+	<inroduction>
+		<p>
+			Fundamentally, magnets consist of microscopic magnets. For instance, an electron itself is a tiny magnet. Each microscopic magnet, even a single electron as a magnet, always consists of both North and South poles. That is, every magnet is made up of <term>magnetic dipoles</term>. 
+		</p>
+		<p>
+			In the case of electric dipoles, we had defined a quantity called dipole moment, which was equal to the product of charge and distance between two charges. Although, we do not have individual positive and negative magnetic charges, we can still define a magnetic dipole moment by the way tiny magnets behave when placed in an external magnetic field. 
+		</p>
+		<p>
+			We use vector <m>\vec \mu</m> to denote magnetic dipole moment. In an external magnetic field <m>\vec B</m>, we find that tiny magnets tends to align with the external field. 
+		</p>
+		<sidebyside widths="75% 5% 20%">
+			<p>
+				If the external magnetic field is uniform, then there is no force on the dipole. But there is a torque on the dipole if dipole is not aligned with the field. The torque vector <m>\vec \tau</m> is given by
+				<men xml:id="eq-torque-on-a-magnetic-dipole">
+					\vec \tau = \vec \mu \times \vec B,
+				</men>
+
+				from which we ascertain that the magnitude of torque
+				<men xml:id="eq-torque-on-a-magnetic-dipole-1">
+					\tau = \mu B |\sin\,\theta|,
+				</men>
+				where <m>\theta</m> is the angle between the dipole and the field.
+			</p>
+			<p> </p>
+			<image source="./images/magnetism/magnetic-dipole-in-external-field-at-angle.png" width="20%"/>
+		</sidebyside>
+		<p>
+			From <xref ref="eq-torque-on-a-magnetic-dipole-1"/> we can deduce unit of magnetic dipole moment.
+			<me>
+				\text{ Unit of }\mu = \frac{\text{Unit of }\tau}{ \text{Unit of }B} = \frac{\text{N.m}}{T} = \frac{\text{J}}{T}.
+			</me>
+			We will find that this unit can aalso be expressed as <m>\text{Am}^2</m>. In these units, the intrinsic magnetic dipole moment of an electron is approximately <m>9.28\times 10^{−24} \text{J/T}</m>.
+		</p>
+		
+		<p>
+			Due to this torque, it costs energy to change the direction of a magnetic dipole moment in an external field. Similar to the way we learned for electric dipoles. Suppose that a magnetic dipole is oriented at an angle <m>\theta_i</m> with respect to an external magnetic field and you want to change its orientation to an angle  <m>\theta_f</m>. You will need to do the following work.
+			<men>
+				W_{if} = - \mu B \cos\,\theta_f + \mu B \cos\,\theta_i.
+			</men> 
+			This will be equal to the change in <term> magnetic potential energy</term> of the dipole between the two orientations. Assuming zero of potential energy when the orientation angle is <m>90^\circ</m> with respect to the direction of the magnetic field, we get the following for potential energy formula when angle is <m>\theta</m>.
+			<men>
+				U_m = - \mu B \cos\,\theta = -\vec \mu \cdot B.
+			</men>
+			This says that magnetic potential energy of a magnetic dipole varies form <m>-\mu B</m>, when aligned to <m>+\mu B</m> when anti-aligned with the external field.
+
+		</p>
+  
+	</inroduction>
+
+	<exercise xml:id="exercise-Torque-and-Energy-of-an-Electron-in-a-Magnetic-Field"><title>Torque and Energy of an Electron in a MagneticField</title>
+		<statement>
+			<p>
+				An electron has a magnetic dipole moment of <m>9.28\times 10^{−24} \text{J/T}</m>. It is in a magnetic field of strength <m>3\text{ T}</m>. (a) What is the torque on the electron if angle between its magnetic dipole moment and magnetic field is <m>60^\circ</m>. (b) What is its energy compared to energy when the angle was <m>180^\circ</m>?
+			</p>
+		</statement>
+		<hint><p>Use the definitions given in this section.</p></hint>
+		<answer><p>(a) <m>2.41\times 10^{-23}\text{ J}</m>, (b) <m>4.17\times 10^{-23}\text{ J}</m>. </p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)
+				The magnitude of torque will be
+				<me>
+					\tau = \mu B |\sin\,\theta| =  9.28\times 10^{−24} \times 3 \times \sin\,60^\circ = 2.41\times 10^{-23}\text{ J}.
+				</me>
+				For direction, we use the cross product. Suppose, <m>\vec B</m> is along <m>y</m> axis, and <m>\vec \mu</m> is in the <m>xy</m> plane. Then, right-hand rule will give us the direction of the torque towards positive <m>z</m> axis.
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(a)
+				The energy difference will be
+				<md>
+					<mrow> \Delta U \amp =  - \mu B \cos\,60^\circ + \mu B \cos\,180^\circ</mrow>
+					<mrow> \amp = -2.78\times 10^{-23} \times 1.5 = 4.17\times 10^{-23}\text{ J}.</mrow>
+				</md>
+				
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<subsection><title> (Calculus) Force on a Magnetic Dipole</title>
+		<p>
+			If you place a tiny magnet in a homogeneous external field, there will be no net force on it, but if you place the tiny magnet near a bar magnet, it will be pulled towards increasing magnetic field. The force on the magnet near a bar magnet is caused by inhomogeneity in the magnetic field of a bar magnet.  
+		</p>
+		<p>
+			Let <m>\vec \mu</m> be a dipole in an inhomogeneous magnetic field, <m>\vec B(\vec r)</m>, which chages from place to place. Here <m>\vec r</m> is the point where dipole is located. Similar to the way, we worked out force on electric dipole in an inhomogeneoud electric field, we can prove that the following formula gives magnetic force on a magnetic dipole.
+			<men>
+				\vec  F_m = \left(  \vec \mu  \cdot \vec \nabla  \right)\vec B.
+			</men>
+			This says that a magnetic dipole will be attracted towards increasing magnetic field.
+		</p>
+	</subsection>
+
+	<exercise xml:id="exercise-Force-on-a-Magnet-in-an-Inhomogeneous-Magnetic-Field"><title>(Calculus) Force on a Magnet in an Inhomogeneous Magnetic Field</title>
+
+		<statement>
+			<p>
+				A tiny magnet has a magnetic dipole moment of <m>\mu</m> in unit <m>\text{J/T}</m>. It is placed near a magnet whose magnetic field varies in space. The magnetic fieldl near the location of the tiny magnet, suppose the magnetic field in unit <m>\text{T}</m> is 
+
+				<me>\vec B =  \dfrac{y}{x^2 + y^2} \hat u_x  - \dfrac{x}{x^2 + y^2} \hat u_y.  </me>
+
+				The direction of the tiny magnet's magnetic dipole moment is in <m>xy</m> plane making an angle <m>\theta</m> with positive <m>x</m> axis towards positive <m>y</m> axis. The tiny magnet is at  <m>(x,y,z)</m> in meters. 
+			</p>
+			<p>
+				Find  force   on the tiny magnet.
+			</p>
+		</statement>
+		<hint><p>Express the force formula in Cartesian cooridinates.</p></hint>
+		<answer><p> See solution. </p></answer>
+		<solution> 
+			<p>
+				We have the following for the vector <m>\vec \mu</m>.
+				<me>
+					\vec \mu =  \mu\cos\,\theta\,  \hat u_x + \mu\sin\,\theta\, \hat u_y. 
+				</me>
+				Magnetic field is
+				<me>
+					\vec B =  B_x(x,y)\, \hat u_x  + B_y(x,y)\, \hat u_y
+				</me>
+				Therefore, force on a dipole moment, written using Cartesian components of magnetic dipole moment and magnetic field is
+				<md>
+					<mrow> \vec F \amp =  \mu_x \partial_x\vec B + \mu_y \partial_y\vec B  +\mu_z \partial_z\vec B </mrow>
+					<mrow> \amp = \left( \mu_x\,\partial_x B_x +  \mu_y\,\partial_y B_x \right)\,\hat u_x +    \left( \mu_x\,\partial_x B_y +  \mu_y\partial_y B_y \right)\,\hat u_y </mrow>
+				</md>
+				Now, we need <m>\partial_x B_x</m>, <m>\partial_x B_y</m>, <m>\partial_y B_x</m>, and <m>\partial_y B_y</m>. They will be
+				<md>
+					<mrow>\amp \partial_x B_x = -\dfrac{2xy}{  \left( x^2+y^2\right)^2  },\ \ \partial_x B_y = \dfrac{x^2 -y^2}{  \left( x^2+y^2\right)^2  }</mrow>
+					<mrow>\amp \partial_y B_x = \dfrac{x^2 -y^2}{  \left( x^2+y^2\right)^2  },\ \  \partial_y B_y = \dfrac{2xy}{  \left( x^2+y^2\right)^2  } </mrow>
+				</md>   
+				Therefore, we get the following for the <m>x</m> and <m>y</m> components of the force
+				<md>
+					<mrow>F_x \amp =  \mu_x\,\partial_x B_x +  \mu_y\,\partial_y B_x </mrow>
+					<mrow> \amp =  -\mu_x\,\dfrac{2xy}{  \left( x^2+y^2\right)^2  }  +  \mu_y\,\dfrac{x^2 -y^2}{  \left( x^2+y^2\right)^2  } .</mrow>
+					<mrow>F_y \amp =  \mu_x\,\partial_x B_y +  \mu_y\,\partial_y B_y </mrow>
+					<mrow> \amp =  \mu_x\,\dfrac{x^2 -y^2}{  \left( x^2+y^2\right)^2  } +  \mu_y\,\dfrac{2xy}{  \left( x^2+y^2\right)^2  } .</mrow>
+				</md>
+				Therfore, the magnitude of the force is
+				<me>
+					F = \sqrt{F_x^2 + F_y^2},
+				</me>
+				and the direction is in fourth quadrant at counter clockwise angle
+				<me>
+					\theta = \tan^{-1} \dfrac{F_y}{F_x}.
+				</me>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+</section>

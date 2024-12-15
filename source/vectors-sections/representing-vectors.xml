@@ -1,0 +1,596 @@
+<section xml:id="Representing-Vectors"> <title> Representing Vectors </title>
+
+	<introduction>
+		<p>
+			A vector can be represented by an arrow of appropriate size and in appropriate direction in the relevant space. For instance, a position vector will be an arrow from the origin to the location of the object in space since prosition is just a displacement from origin to the location in space. You can also represent a vector analytically, i.e., by numbers. One such representation uses Cartesian axes to represent vectors. There are other types of components corresponding to other coordinate systems. We will cover them in due course.
+		</p>
+	</introduction>
+	<subsection><title>Arrow Representation</title>
+		<p>
+			Representing vectors and doing mathematics using arrows is the most visual way to get handle on vectors. 
+		</p>
+		
+	</subsection>
+	<subsection><title>Position Vector</title>
+		<p>
+			Let us begin our studies of vectors by an example position vector (arrow from O to P) of an object at point P in the <m>xy</m> plane of a Cartesian coordinate system whose axes are appropriately tick-marked as shown in Fig. <xref ref="vector-position-in-plane"/>. We will denote the position vector by the symbol <m> \vec r </m>.  The <m>(x,y)</m> coordinates of P are <m> (3\text{ m}, 2\text{ m}) </m>.  
+		</p>
+
+		<p>
+			<figure xml:id="vector-position-in-plane">
+			    <caption> 
+			    	Illustrating the position vector of an object located at point P. The arrow labeled <m> \vec r </m> represents the position vector - the length of the arrow represents the magnitude and angle <m> \theta </m> can be used to indicate the direction of the vector. Sometimes we call <m> \theta </m> itself the direction of the vector.
+
+			    </caption> 
+				<image source="./images/vectors/vector-position-in-plane.png" width="70%"/>
+			</figure>
+		</p>
+
+		<p>
+			The coordinates <m> x = 3\text{ m}</m>, and <m> y = 2\text{ m} </m> of the tip of the position vector are called <m> x </m> and <m> y </m> <term> components </term>  of the position vector <m> \vec r </m>. The magnitude of this vector is the length of the arrow, which can be obtained from <m> x </m> and <m> y</m>.
+			<me>
+				\text{Magnitude, } r = \sqrt{x^2 + y^2} = \sqrt{13}\text{ m}.
+			</me>
+			The direction of the vector can be described if we know angle <m> \theta </m>, which we can obtain from <m> x </m> and <m> y </m> also.
+			<me>
+				\theta = \tan^{-1}\left(\dfrac{2}{3} \right) = 33.7^{\circ}.
+			</me>
+			The direction is then described as: the vector <m> \vec r </m> is in the direction of <m> 33.7^{\circ}</m> counterclockwise from positive <m> x</m> axis. 
+		</p>
+		<p> <alert> The angle <m> \theta</m> is not direction.</alert> You will get <m> \theta = 33.7^{\circ}</m> for the exactly opposite direction, the direction from origin towards the point <m> (-3\text{ m}, -2\text{ m})</m>. You can check it out. So, <alert> once you obtain the angle, you must describe the direction in words!</alert>
+		</p>
+<!-- 		<p>
+			The <alert> polar coordinate form <m>(r, \theta)</m> </alert>  of the arrow gives the length <m> r </m> of the arrow and the angle <m> \theta </m> of the arrow with respect to the  <m> x </m> axis. Length <m> r </m> of the arrow and the angle <m> \theta </m> are also called the <term> magnitude </term> and <term> direction </term> of the position vector.
+		</p> -->
+		<p> We now summarize the mathematical relations between the polar-form <m>(r, \theta)</m> and the coordinate-form <m>(x,y) </m> of position vector.  
+			<mdn>
+			    <mrow xml:id="eq-coord-polar-relations-x"> \amp x = r \cos\theta </mrow>
+			    <mrow xml:id="eq-coord-polar-relations-y"> \amp y = r \sin\theta </mrow>
+			    <mrow xml:id="eq-coord-polar-relations-r"> \amp r = \sqrt{x^2 + y^2}</mrow>
+			    <mrow xml:id="eq-coord-polar-relations-t"> \amp \theta = \tan^{-1}\left( \dfrac{y}{x}\right)</mrow>
+			</mdn>
+		</p> 
+
+	</subsection>
+
+	<subsection><title>The Displacement Vector</title>
+		<p>
+			Unlike the position vector, displacement vector goest from an arbitrary point A to another point B rather than always going from origin O to some point P. 
+		</p>
+	</subsection>
+		<p>
+			Every vector can be drawn the same way as the position vector with length of the arrow representing the magnitude of the vector and the orientation of the arrow representing the direction. 
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				The projections of the tip and tail of a vector, <m>\vec A</m>, on the Cartesian axis give us the information from which we obtain Cartesian components of the vector. We denote the components of vectors by attaching letters <m> x </m> or <m> y </m> as subscripts, and the magnitude by the same symbol without the arrow overhead, as shown in the figure to the right. 
+			</p>
+			<p> </p>
+			<figure>
+				<caption></caption>
+				<image source="./images/vectors/projections-on-axes.png"/>
+			</figure>
+		</sidebyside>
+		<p>
+			The <m>x</m>-component of the vector, <m>A_x</m>, is difference of the projection of tip and tail on <m>x</m>-axis, and similarly for the <m>y</m> component. The relation between magnitude <m>A</m>, angle <m>\theta</m>, and components <m>A_x</m> and <m>A_y</m> is same as those between <m>r</m>, <m>\theta</m>, and <m>x</m> and <m>y</m> respectively.  
+			<md>
+			    <mrow > \amp A_x = A\, \cos\theta </mrow>
+			    <mrow > \amp A_y = A\, \sin\theta </mrow>
+			    <mrow > \amp A = \sqrt{A_x^2 + A_y^2}</mrow>
+			    <mrow > \amp \theta = \tan^{-1}\left( \dfrac{A_y}{A_x}\right)</mrow>
+			</md>
+		</p>
+		
+		<p>
+			For instance, <m> x</m> and <m> y </m> components of a velocity vector <m> \vec v</m> would be represented by symbols <m> v_x </m> and <m> v_y</m>, respectively, and magnitude by symbol <m> v</m>. They are related by
+			<md>
+			    <mrow > \amp v_x = v\, \cos\theta </mrow>
+			    <mrow > \amp v_y = v\, \sin\theta </mrow>
+			    <mrow > \amp v = \sqrt{v_x^2 + v_y^2}</mrow>
+			    <mrow > \amp \theta = \tan^{-1}\left( \dfrac{v_y}{v_x}\right)</mrow>
+			</md>			
+		</p>
+		<p>
+			For another property let us look at a force vector, The <m> x</m> and <m> y </m> components of a force vector <m> \vec F</m> would be represented by symbols <m> F_x </m> and <m> F_y</m>, respectively, and magnitude by symbol <m> F</m>. The relations are similar.
+			<md>
+			    <mrow > \amp F_x = F\, \cos\theta </mrow>
+			    <mrow > \amp F_y = F\, \sin\theta </mrow>
+			    <mrow > \amp F = \sqrt{F_x^2 + F_y^2}</mrow>
+			    <mrow > \amp \theta = \tan^{-1}\left( \dfrac{F_y}{F_x}\right)</mrow>
+			</md>			
+		</p>
+
+		<example> <title> Example of a Force Vector</title>
+			<p>
+				For example, if we have a force <m> \vec F </m>, say of magnitude <m> 50\text{ N} </m> in the <m> 30^{\circ} </m> North of East direction, then we will draw an arrow of appropriate size.
+			</p>
+
+			<sidebyside widths="60% 40%">
+				<p>
+					<p>
+						 If we use a scale of <m> 1\text{ cm representing } 5\text{ N} </m>, then we will draw a <m> 10\text{ cm}</m>-long arrow, starting at origin and pointing in the direction of <m> 30^{\circ} </m>  counteclockwise to the positive <m> x </m> axis where I assume <m> x </m> axis is pointed towards East and <m> y </m> axis is towards North.
+					</p>
+					<p>
+					This will give the following component form of this force vector <m> F_x = 50\text{ N }\cos\, 30^{\circ} = 43.3 \text{ N}</m> and <m> F_y = 50\text{ N }\sin\, 30^{\circ} = 20\text{ N}</m>.
+					</p>
+				</p>
+				<figure>
+					<caption></caption>
+					<image source="./images/vectors/example-force-vector-drawing.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+		</example>
+	
+
+
+
+	<exercise xml:id="ex-Magnitude-and-Direction-of-a-Vector-in-2D-from-Components"><title>Magnitude and Direction of a Vector in 2D from Components</title>
+		<statement>
+			<p> 
+				The position of a box on the floor with respect to a corner of the room, taken to be the origin, and the walls which are taken to be <m>x</m> and <m>y</m>-axes, is given by the <m>(x,y) = (4.0\text{ m}, 3.0\text{ m})</m>.  What are the magnitude and direction of the position vector of the box?  
+			</p>
+		</statement>
+		<hint> <p> Just use the <m> (x,y) \rightarrow (r, \theta) </m>. </p> </hint>
+		<answer> <p> <m> 5.0\text{ m}, 36.9^{\circ}\text{ or } 0.644 \text{ rad} </m> counterclockwise from <m>+x</m> axis.</p></answer>
+		<solution>
+			<p> Let's do the calculation leaving units out to get the magnitude.
+				<me> 
+					r = \sqrt{x^2 + y^2} = \sqrt{4^2 + 3^2} = 5.
+				</me>
+				Putting units back, the magnitude of the position vector will be be <m> 5.0\text{ m}</m>.
+			</p>
+			<p>
+				For the direction, we compute angle <m>\theta</m> with <m>x</m>-axis.
+				<me> 
+					\tan\theta = \dfrac{y}{x} = \dfrac{3}{4} = 0.75.
+				</me>
+				Inverting this, we get <m> 36.9^{\circ}\text{ or } 0.644 \text{ rad}</m>. Since point <m>(4,3)</m> lies in the first quadrant, the direction is <m> 36.9^{\circ}</m>  counterclockwise with respect to the positive <m>x</m>-axis.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Components-of-a-Vector-from-Magnitude-and-Direction-in-2D"><title>Components of a Vector from Magnitude and Direction in 2D </title>
+		<statement>
+			<p> 
+				A box is at a distance of <m> 5.0 \text{ m}</m> from the origin. The direction of the location of the box makes an angle of <m> 30^{\circ} </m> with respect to the direction of a wall taken to be the positive <m> x </m> axis. Another wall that is perpendicular to the <m> x </m> axis wall is taken to be the <m> y </m> axis. Find the <m> x </m> and <m> y </m> components of the position vector.  
+			</p>
+		</statement>
+		<hint> <p> Just use the <m> (r, \theta) \rightarrow (x,y)   </m>. </p> </hint>
+		<answer> <p> <m> x = 4.33\text{ m and } y = 2.50\text{ m}.</m></p></answer>
+		<solution>
+			<p> Leaving units out, we have
+				<me> 
+					x = r \cos\theta = 5.0 \cos 30^{\circ} = 4.33.
+				</me>
+				Putting the units back, we get the <m> x = 4.33\text{ m}</m>. Similarly, 
+				<me> 
+					y = r \sin\theta = 5.0 \sin 30^{\circ} = 2.50.
+				</me>				
+				With units, <m>y = 2.50\text{ m}</m>. 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Components-of-Velocity-Vector-of-a-Cricket-Ball-in-a-Horizontal-Vertical-Plane"><title>Components of Velocity Vector of a Cricket Ball in a Horizontal-Vertical Plane</title>
+		<statement>
+			<p> 
+				A batsman strikes a cricket ball, which leaves the bat with a speed of <m> 20.0\text{ m/s}</m>, and flies in the direction of <m> 60^{\circ}</m> with respect to the horizontal direction. This means that the velocity vector has magnitude  <m> 20.0\text{ m/s}</m> and direction <m> 60^{\circ}</m> with respect to the horizontal direction. Taking the horizontal direction as the <m>x</m>-axis and the vertical direction as the <m> y </m> axis, find <m> x </m> and <m> y</m> components of the velocity vector.
+			</p>
+		</statement>
+		<hint> <p> Use the <m> (r, \theta) \rightarrow (x,y)</m> transformation. </p> </hint>
+		<answer> <p> <m>v_x = 10.0\text{ m/s}</m> and  <m>v_y =  17.3\text{ m/s}</m>. </p></answer>
+		<solution>
+			<p> 
+				Let <m> \vec v </m> be the symbol for the velocity vector, <m> v </m> the magnitude, <m> \theta </m> the angle with <m>x</m>-axis, and <m> v_x </m> and  <m> v_y</m> the <m> x </m> and <m> y</m> components of the velocity vector.  Doing the calculation leaving units out:
+				<me> 
+					v_x = v \cos\theta = 20.0 \cos 60^{\circ} = 10.0.
+				</me>
+				Putting the units back, we get the <m> v_x = 10.0\text{ m/s}</m>. Similarly, <m> v_y = v \sin\theta</m> gives <m>v_y = 17.3\text{ m/s}</m>. 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="Components-of-Velocity-Vector-of-a-Soccer-Ball-in-a-Horizontal-Vertical-Plane"><title> Components of Velocity Vector of a Soccer Ball in a Horizontal-Vertical Plane</title>
+		<statement>
+			<p>
+				A soccer ball is kicked in the direction <m> 30^{\circ}</m> above the horizontal direction with speed <m> 15 \text{ m/s}</m>. This means that the velocity vector of the ball has magnitude <m> 15 \text{ m/s}</m> and direction <m> 30^{\circ}</m> above the horizon. Find the coordinate representation of the velocity in a coordinate system in which <m> x </m> axis is along horizontal direction and positive <m> y </m> axis is pointed up.
+			</p>
+
+		</statement>
+		<hint> <p> Use <m> x = r\, \cos\, \theta</m>. </p> </hint>
+		<answer> <p> <m> 13 \text{ m/s}</m>, <m> 7.5 \text{ m/s}</m>.</p> </answer>
+		<solution> 
+			<p>
+				We just use the formulas that help us get components from magnitude and direction.
+				<md>
+					<mrow> \amp v_x = v\, \cos\, \theta = 15\text{ m/s}\, \cos\, 30^{\circ} = 13 \text{ m/s}.</mrow>
+					<mrow> \amp v_y = v\, \sin\, \theta = 15\text{ m/s}\, \sin\, 30^{\circ} = 7.5 \text{ m/s}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="Magnitude-and-Direction-of-Velocity-from-Components"><title> Magnitude and Direction of Velocity from Components </title>
+		<statement>
+			<p>
+				A velocity vector was found to have the following components, <m> v_x = 30.0\text{ m/s}</m> and <m> v_y = 40.0\text{ m/s}</m> with respect to a coordinate system in which <m> x </m> axis is along horizontal direction and positive <m> y </m> axis is pointed up. What are the magnitude and direction of the velocity vector? Describe your direction in words.
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m>r=\sqrt{x^2 + y^2} </m> and <m>\theta = \tan^{-1}(y/x) </m>. </p> </hint>
+		<answer> <p> <m>\left( 50.0\text{ N},\ 53.1^{\circ} \right)</m>. The direction is <m>53.1^{\circ} </m> above the horizon.</p> </answer>
+		<solution> 
+			<p> Using the defining equations for magnitude <m>(v)</m> and angle <m>(\theta)</m> with <m> x </m> axis we get
+				<md>
+					<mrow>\amp v = \sqrt{v_x^2 + v_y^2} = \sqrt{30^2 + 40^2} = 50\text{ m/s},</mrow>
+					<mrow>\amp \theta = \tan^{-1}(v_y/v_x)= \tan^{-1}(40/30) = 53.1^{\circ}.</mrow>
+				</md>
+				The angle is in the first quadrant since <m> v_x >0 </m> and <m> v_y>0 </m>. This means that the angle we found is above the horizon.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="Magnitude-and-Direction-of-Velocity-from-Components-2"><title> Magnitude and Direction of Velocity from Components - 2</title>
+		<statement>
+			<p>
+				A velocity vector was found to have the following components, <m> v_x = 30.0\text{ m/s}</m> and <m> v_y = -40.0\text{ m/s}</m> with respect to a coordinate system in which the <m> x </m> axis is along horizontal direction and the positive <m> y </m> axis is pointed up. What are the magnitude and direction of the velocity vector? Describe your direction in words.
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m>r=\sqrt{x^2 + y^2} </m> and <m>\theta = \tan^{-1}(y/x) </m>. </p> </hint>
+		<answer> <p> <m>\left( 50.0\text{ N},\ -53.1^{\circ} \right)</m>. The direction is <m>53.1^{\circ} </m> below the horizon.</p> </answer>
+		<solution> 
+			<p> Using the defining equations for magnitude <m>(v)</m> and angle <m>(\theta)</m> with <m> x </m> axis we get
+				<md>
+					<mrow>\amp v = \sqrt{v_x^2 + v_y^2} = \sqrt{30^2 + 40^2} = 50\text{ m/s},</mrow>
+					<mrow>\amp \theta = \tan^{-1}(v_y/v_x)= \tan^{-1}(-40/30) = -53.1^{\circ}.</mrow>
+				</md>
+			</p>
+			<sidebyside widths="60% 5% 30% 5%">
+				<p>
+					The angle is in the fourth quadrant since <m> v_x \gt 0 </m> and <m> v_y \lt 0 </m>. This means that the angle we found is below the horizon. The arctan value came out negative - which means the angle is clockwise from the <m> x </m> axis as in the figure.
+				</p>
+				<p> </p>
+				<figure>
+					<caption></caption>					
+					<image source="./images/vectors/checkpoint-velocity-fourth-quadrant.png" width="70%"/>
+				</figure>
+				<p> </p>
+			</sidebyside>
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Magnitude-and-Direction-of-Force"><title>Magnitude and Direction of Force </title>
+		<statement>
+			<p> 
+				A suitcase is draged by applying a force on the strap attached to the suitcase.
+			</p> 
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					With respect to a Cartesian coordinate system that has the <m> x </m> axis along the horizontal direction and the <m> y </m> axis vertically up, the components of the force are <m> (F_x, F_y) = (12.0\text{ N}, 5.0\text{ N}) </m>, where N stands for the unit Newton. 
+				</p>
+				<p></p>
+				<figure>
+					<caption>
+					</caption>
+					<image source="./images/vectors/ex-force-fx-eq-12-and-fy-eq-5-mag-and-dir.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				What are the magnitude and direction of the force? You can use the symbol <m> F </m> for the magnitude and <m> \theta </m> for the angle with respect to the <m> x </m> axis.
+			</p>
+
+			
+		</statement>
+		<hint> <p> Use the <m> (x,y) \rightarrow (r, \theta) </m> transformation. </p> </hint>
+		<answer> <p> <m> F = 13.0\text{ N and } \theta =  22.6^{\circ} \text{ or } 0.395 \text{ rad}.</m></p></answer>
+		<solution>
+			<p> Let <m> F </m> denote the magnitude of the force, i.e., equivalent of <m> r </m> of the polar form of the vector.
+				<me> F = \sqrt{F_x^2 + F_y^2} = \sqrt{12.0^2 + 5.0^2} = 13.0</me>
+				Putting the units back, we get the magnitude of the force, <m> F = 13.0\text{ N}</m>.
+			</p>
+			<p>
+				Leaving units out when doing calculations:
+				<me> \tan\theta = \dfrac{F_y}{F_x} = \dfrac{5.0}{12.0} = 0.42</me>
+				Inverting this, we get <m> \theta = 22.6^{\circ} \text{ or } 0.395 \text{ rad}</m>. 
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Direction-in-the-Second-Quadrant"><title> Direction in the Second Quadrant</title>
+		<statement>
+			<sidebyside widths="50% 5% 40%">
+				<p>
+					A vector has <m> (A_x, A_y) = (-3, 1) </m>. What is the direction of this vector with respect to the negative <m> x </m> axis?
+				</p>
+				<p>
+				</p>
+				<figure>
+					<caption>
+					</caption>
+					<image source="./images/vectors/ex-Direction-in-the-Second-Quadrant.png" width="70%"/>
+				</figure>
+			</sidebyside>			
+
+			
+		</statement>
+		<hint> <p> Note arc-tangent will give you a negative angle. You need to appropriately add or subtract <m> 180^{\circ}</m>. </p> </hint>
+		<answer> <p> <m>18.4^{\circ}</m> clockwise from the negative <m>x</m>-axis.</p></answer>
+		<solution>
+			<p>
+				The angle using the arctangent formula gives the following.
+					<md> 
+						<mrow> \theta \amp = \tan^{-1} \dfrac{A_y}{A_x} </mrow>
+						<mrow> \amp = \tan^{-1}\dfrac{1}{-3} = -18.4^{\circ}.</mrow>
+					</md>
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p> 
+					The negative sign refers to the clockwise direction into the second quadrant from the negative <m> x </m> axis direction as shown in the figure.
+				</p>
+ 				<p> </p>
+ 				<figure>
+ 					<caption></caption>
+					<image source="./images/vectors/vector-second-quad.png" width="70%"/>
+				</figure>
+ 
+			</sidebyside>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Direction-in-the-Third-Quadrant"><title> Direction in the Third Quadrant</title>
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					A vector has <m> (A_x, A_y) = (-3, -2) </m>. What is the direction of this vector with respect to the negative <m> x </m> axis?
+				</p>
+				<p></p>
+				<figure>
+					<caption>
+					</caption>
+					<image source="./images/vectors/ex-Direction-in-the-Third-Quadrant.png" width="70%"/>
+				</figure>
+			</sidebyside>	
+			<p> 
+				Note arc-tangent will give you a positive angle, which is what you also get if the vector is pointed in the first quadrant. But, this vector is pointed in the third quardant. Therefore, you need to appropriately add or subtract <m> 180^{\circ}</m>. 
+			</p> 
+
+
+			
+		</statement>
+		<hint> <p> Use the arctan formula. </p></hint>
+		<answer> <p> <m>33.7^{\circ}</m> counterclockwise from the negative <m>x</m>-axis.</p></answer>
+		<solution>
+			<p> The angle using the arctangent formula gives the following.
+				<me> 
+					\theta = \tan^{-1} \dfrac{A_y}{A_x} = \tan^{-1}\dfrac{-2}{-3} = 33.7^{\circ}.
+				</me>
+				
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Based on this calculation, if your answer is <m>33.7^{\circ}</m>, you would be implying that this angle is counterclockwise with respect to the positive <m> x </m>-axis, but that is wrong since the vector is pointed in the third quadrant, and the angle is with respect to the negative <m>x</m>-axis. 
+				</p>
+				<p> </p>
+ 				<figure>
+ 					<caption></caption>
+					<image source="./images/vectors/vector-third-quad.png" width="70%"/>
+				</figure>
+			</sidebyside>
+ 			<p>
+ 				If you want to express the counterclockwise angle with respect to positive <m>x</m>-axis, you will need to add <m>180^\circ</m> to this value.
+ 			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Direction-in-the-Fourth-Quadrant"><title> Direction in the Fourth Quadrant</title>
+		<statement>
+			<sidebyside widths="50% 5% 40%">
+				<p>
+					<p>
+						A vector has <m> (A_x, A_y) = (3, -2) </m>. What is the direction of this vector with respect to the positive <m> x </m> axis?
+					</p>
+					<p> Note: the arc-tangent will give you a negative angle.  </p> 
+				</p>
+				<p></p>
+				<figure>
+					<caption>
+					</caption>
+					<image source="./images/vectors/ex-Direction-in-the-Fourth-Quadrant.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+			
+		</statement>
+		<hint> <p> Note that negative angle means clockwise angle. </p></hint>
+		<answer> <p> <m>33.7^{\circ}</m> clockwise from the positiuve <m>x</m>-axis.</p></answer>
+		<solution>
+			<sidebyside widths="50% 5% 45%">
+				<p> The angle using the arctangent formula gives the following.
+					<me> 
+						\theta = \tan^{-1} \dfrac{A_y}{A_x} = \tan^{-1}\dfrac{-2}{3} = -33.7^{\circ}.
+					</me>
+					
+				</p>
+				<p>
+				</p>
+	 			<figure>
+	 				<caption></caption>
+					<image source="./images/vectors/vector-fourth-quad.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				The negative sign refers to the clockwise direction into the fourth quadrant from the positive <m> x </m> axis direction as shown in the figure.
+			</p>
+ 
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="Practice-Computing-Magnitudes-and-Stating-Directions"><title> Practice Computing Magnitudes and Stating Directions </title>
+		<statement>
+			<p>
+				Clearly, if you have the <m> (x,y) </m> of an object, you can get the position vector by computing the <m> r </m> and <m> \theta </m>. 
+			</p>
+			<p>
+				Draw position vectors of objects at the following coordinates and find their magnitudes and directions.
+				<ol label="(a)">
+					<li>   <m> (-1\text{ m}, 2\text{ m}) </m>, </li>
+					<li>    <m> (-3\text{ m}, -2\text{ m}) </m>, </li>
+					<li>   <m> (3\text{ m}, -1\text{ m}) </m>. </li>
+				</ol>
+			</p>
+ 
+
+		</statement>
+		<hint> <p> Use <m> (x,y) \rightarrow (r, \theta) </m> equations.  </p> </hint>
+		<answer>
+			<p> 
+				(a) <m> \sqrt{5}\text{ m}, 63.4^{\circ} </m> clockwise from the negative <m> x </m> axis,  
+				(b) <m> \sqrt{13}\text{ m}, 33.7^{\circ} </m> counterclockwise from the negative <m> x </m> axis,
+				(c) <m> \sqrt{10}\text{ m}, 18.3^{\circ} </m> clockwise from the positive <m> x </m> axis.  
+			</p> 
+		</answer>
+		<solution>  
+			<sidebyside widths="55% 5% 40%">
+				<p>(a) The drawing is shown in the figure. 
+					<md>
+						<mrow> \amp r = \sqrt{x^2 + y^2} = \sqrt{1^2 + 2^2} = \sqrt{5}\text{ m}.</mrow>
+						<mrow> \amp \theta = \tan^{-1}\left( \dfrac{y}{x}\right) = \tan^{-1}\left( \dfrac{2}{-1}\right) = -63.4^{\circ}.</mrow>
+					</md>
+
+				</p>
+				<p></p>
+				<figure>
+					<caption></caption>
+					<image source="./images/vectors/checkpoint-drawing-position-vectors-in-xy.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				The negative in the angle says that the angle is clockwise from the <m> x </m> axis. Since the <m> (-1, 2) </m> is in the second quadrant, this angle will be with respect to the negative <m> x </m> axis. Therefore, the direction is <m> 63.4^{\circ} </m> clockwise from the negative <m> x </m> axis.				
+			</p>
+ 
+			<p> (b) and (c) - do them similarly. Make sure you state the direction as clockwise and counterclockwise from either positive or negative <m> x </m> axis.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-First-Quadrant"><title> Components of a Force Vector from Magnitude and Direction in First Quadrant </title>
+		<statement>
+			<p>
+				A force vector <m> \vec F </m> has magnitude <m> 50\text{ N} </m>  and is pointed in the direction <m> 30^{\circ} </m> North of East. Let <m> x </m> axis be pointed towards East and <m> y </m> axis towards North. 
+			</p>>
+			<p>
+				(a) Draw a figure to display this vector, stating the scale you used in your drawing.  
+			</p>
+			<p>
+				(b) Find the <m> x </m> and <m> y </m> components, <m> F_x </m> and <m> F_y </m>, of this vector.
+			</p>
+
+		</statement>
+		<hint> <p> The <m> (F_x, F_y) </m> have the same relation to <m> (F, \theta) </m> as do <m> (x,y)</m> to <m> (r, \theta) </m>.   </p> </hint>
+		<answer> <p> (b) <m> 43.3\text{ N},\ 25.0\text{ N} </m>  </p> </answer>
+		<solution> 
+			<sidebyside widths="50% 50%">
+				<p>
+					<p> (a) The figure shows the drawing. 		
+					</p>
+					<p> (b) The <m> (F_x, F_y) </m> have the same relation to <m> (F, \theta) </m> as do <m> (x,y)</m> to <m> (r, \theta) </m>. 
+						<md>
+							<mrow> \amp F_x = 50\times \cos\, 30^{\circ} = 43.3\text{ N}.</mrow>
+							<mrow> \amp F_y = 50\times \sin\, 30^{\circ} = 25.0\text{ N}.</mrow>
+						</md>
+					</p>
+				</p>
+				<figure>
+					<caption></caption>
+					<image source="./images/vectors/checkpoint-drawing-force-and-obtaining-xy.png" width="80%"/>
+				</figure>
+			</sidebyside>
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-the-Fourth-Quadrant"><title> Components of a Force Vector from Magnitude and Direction in the Fourth Quadrant </title>
+		<statement>
+			<p>
+				A force vector <m> \vec F </m> has magnitude <m> 50 </m> N and is pointed in the direction <m> 30^{\circ} </m> South of East. Let <m> x </m> axis be pointed towards East and <m> y </m> axis towards North. 
+			</p>
+			<p>
+				(a) Draw a figure to display this vector, stating the scale you used in your drawing. 
+			</p>
+			<p>
+				(b) Find the <m> x </m> and <m> y </m> components, <m> F_x </m> and <m> F_y </m>, of this vector.
+			</p>
+
+		</statement>
+		<hint> <p> The <m> (F_x, F_y) </m> have the same relation to <m> (F, \theta) </m> as do <m> (x,y)</m> to <m> (r, \theta) </m>. Be mindful the quadrant and take care of signs of components accordingly.  </p> </hint>
+		<answer> <p> (b) <m> 43.3\text{ N},\ -25.0\text{ N} </m> </p> </answer>
+		<solution> 
+			<p> 
+				(a) <xref ref="fig-checkpoint-drawing-force-and-obtaining-xy-4th-quad"/> shows the drawing. 		
+			</p>
+			<p>
+				(b) The <m> (F_x, F_y) </m> have the same relation to <m> (F, \theta) </m> as do <m> (x,y)</m> to <m> (r, \theta) </m>.
+			</p>
+			<p>
+				When you have a vector in a quadrant other than the first quadrant, you need to make sure you take care of the sign of resulting components by observing where the vector projects on the axes.
+			</p>
+			<sidebyside widths="50% 50%">
+				<p>
+					Here, since the vector is in the fourth quadrant, it will project on the positive <m> x </m> and on the negative <m> y</m>.  That will mean <m> F_x \gt 0 </m> and <m> F_y \lt 0</m>. 
+		 			<md>
+						<mrow> \amp F_x = 50\times \cos\, 30^{\circ} = 43.3\text{ N}.</mrow>
+						<mrow> \amp F_y = -50\times \sin\, 30^{\circ} = -25.0\text{ N}.</mrow>
+					</md>					
+				</p>
+				<figure xml:id="fig-checkpoint-drawing-force-and-obtaining-xy-4th-quad">
+					<caption>
+					</caption>
+					<image source="./images/vectors/checkpoint-drawing-force-and-obtaining-xy-4th-quad.png" width="80%"/>
+				</figure>
+			</sidebyside>
+
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="Magnitude-and-Direction-of-a-Force-Vector-from-Components-in-the-Second-Quadrant"><title> Magnitude and Direction of a Force Vector from Components in the Second Quadrant</title>
+		<statement>
+			<p>
+				The <m> x </m> and <m> y</m> components of a force vector are given to be <m> F_x = -30\text{ N}</m> and <m> F_x = 40\text{ N}</m>. What are the magnitude and direction of this force?
+			</p>
+
+		</statement>
+		<hint> <p>  use <m> (x,y)</m> to <m>(r, \theta)</m> and interpret the angle. </p> </hint>
+		<answer> <p>  <m> F = 50\text{ N}</m>, <m>53.1^{\circ}</m> clockwise from the negative <m> x </m> axis</p> </answer>
+		<solution> 
+			<p> The magnitude is 
+				<me>
+					F = \sqrt{30^2 + 40^2} = 50\text{ N}.
+				</me>
+				Since the point <m> ( -30, 40) </m> is in the second quadrant, we will get angle with respect to the negative <m> x </m> axis.
+				<me>
+					\theta = \tan^{-1}\left( \dfrac{40}{-30}\right) = -53.1^{\circ}.
+				</me>
+				The negative angle means we need to go clockwise. Thus, the direction is <m> 53.1^{\circ}</m> clockwise from the negative <m> x </m> axis.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+</section>

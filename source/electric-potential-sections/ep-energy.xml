@@ -1,0 +1,51 @@
+<section xml:id="Electric-Potential-Energy"><title> Electric Potential </title>
+	<!-- <introdution>
+		<p>
+			Consider an electric charge <m>q</m> fixed at some place and move another charge <m>Q</m> towards <m>q</m> in such a manner that at each instant the applied force <m>\vec F</m> exactly balances the electric force <m>\vec F_e</m> on <m>Q</m> as shown in Fig. \ref{fig:e-potential-energy-1}. Work done  by the applied force <m>\vec F</m> on the charge <m>Q</m> changes potential energy of <m>Q</m>. We call this potential energy, more specifically, electrical potential energy, of <m>Q</m>.
+		</p>
+		<figure>
+			<image source="./images/electric-potential/e-potential-energy-1a.png" width="60%"/>
+			<caption> To find the change in potential energy of charge <m>Q</m> we move this charge by keeping other charges fixed, balancing elctric force at all times by an applied force. The work by the applied force gives the change in potential energy of <m>Q</m>. </caption>
+			
+		</figure>
+		<p>
+			Suppose charge <m>Q</m> is moved from point <m>P_1</m> to another point <m>P_2</m>. How much would the potential energy of <m>Q</m> change?  To find this we can work out the work done <m>W_{12}</m> by the applied force <m>\vec F</m> when the particle moves from <m>P_1</m> to <m>P_2</m>.  This requires the evaluation of the following work integral along the path of movement of the charge <m>Q</m>.
+		</p>
+	</introdution> -->
+	<subsection><title> Definition </title>
+		<p>
+			Consider a region of space in which electric field is not zero. Let <m>\vec E</m> denote the electric field. When we move a charge <m>Q</m> in this space, it will experience an electric force, <m>\vec F_e</m>.
+			<men xml:id="eq-electric-force-from-electric-field">
+				\vec F_e = Q\vec E.
+			</men>
+			<!-- Suppose, now if you move <m>Q</m> from point <m>P_1</m> to another point <m>P_2</m>, without the charge accelerating, you would need another force <m>\vec F</m> to balance the electric force <m>\vec F_e</m> as you move <m>Q</m>. 
+			<me>
+				\vec F = -\vec F_e = - Q\vec E.
+			</me>
+			Work done <m>W_{12}</m> by  <m>\vec F</m> equals the change in potential energy of <m>Q</m> due to electric force. We also call this change in electrical potential energy. We will denote the change in electrical potential energy by <m> U_2 - U_1</m>.
+	 
+			<md>
+				<mrow> U_2 - U_1 \amp = W_{12}, </mrow>
+				<mrow>  \amp = \int_{P_1}^{P_2}\, \vec F \cdot d\vec r, </mrow>
+				 <mrow> \amp = Q \left( - \int_{P_1}^{P_2}\, \vec E \cdot d\vec r \right).</mrow>
+			</md> -->
+			This force is a consersvative force. Hence, work done by this force can be used to define potential energy of charge <m>Q</m>. By convention, we say that each charge has electrical potential energy (<m>\text{EPE}</m>) based on its position. If we move charge <m>Q</m> from point <m>P_1</m>, say with position vector <m>\vec r_1</m>, to another point <m>P_2</m> with position vector <m>\vec r_2</m>. Then, the change in <m>\text{EPE}</m> will be
+			<me>
+				\text{EPE}_2 - \text{EPE}_1 = - W_{12},
+			</me>
+			where <m>W_{12}</m> is work done by the electric force in Eq. <xref ref="eq-electric-force-from-electric-field"/>. Based on expression for <m>\vec F_e</m>, it is immediately clear that <m>W_{12}</m> will be proportional to <m>Q</m>. Therefore, we can divide out <m>Q</m> and obtain a quantity that does not depend on <m>Q</m>.
+			<me>
+				\dfrac{ W_{12} }{Q} \text{ independent of }Q.
+			</me>
+			When you strip away <m>Q</m> from <m>W_{12}</m>, you are left with only the electrical effect of other charges in the region of space in which you moved <m>Q</m>. We give that influence in the region electric potential. We will denote this by letter <m>U</m>. Thus, we write the change in potential between space points <m>P_1</m> and <m>P_2</m> by 
+			<me>
+				U_2 - U_1 = -\dfrac{ W_{12} }{Q}.
+			</me>			
+			Just as we can select a reference zero place for potential energy, We can choose a reference point, say <m>P_\text{ref}</m>, where we can set <m>U_\text{ref} = 0</m>. Now, suppose we move <m>Q</m> from the reference point to arbitrary point <m>P</m>, then we will get electric potential  <m>U_P</m> at  <m>P</m>.
+			<men>
+				U_P = -\dfrac{ W_{\text{ref}\rightarrow2} }{Q}.
+			</men>
+			Electric potential <m>U_P</m> will depend on the coordinate of point <m>P</m> and the charge or charges whose potential we detect by using the test charge <m>Q</m>. It is important to note that <m>U_P</m> does not tell us anything about <m>Q</m> since it cancels out. 
+		</p>
+	</subsection>
+</section>

@@ -1,0 +1,229 @@
+<section xml:id="sec-angular-velocity-general"><title> Angular Velocity</title>
+<idx>Angular Velocity</idx>
+
+    <introduction>
+
+        <p>
+            The motion of a rigid body consists of translation as well as changes in orientation. The translation part is easily done by the position <m>\vec R</m> of the center of mass with respect to a fixed coordinate system, say <m>O'x'y'z'</m> in  <xref ref="fig-two-coordinate-systems"/>. 
+        </p>
+
+ 
+        <figure xml:id="fig-two-coordinate-systems">
+            <caption></caption>
+            <image source="./images/rotation-general/two-coordinate-systems.png" width="70%"/>
+        </figure>
+
+        <p>
+            But to describe orientation requires a second coordinate system, <m>Oxyz</m> in  <xref ref="fig-two-coordinate-systems"/> that is fixed to the body and tumbles with the body. Then, the orientation of the body-attached coordinate axes relative to the fixed axes quantifies the orientation of the body in space. 
+        </p>
+        <p>
+            It turns out that any tumbling of a body can be undone by three independent rotations. That is, we need at most three rotations to describe changes in orientation. Angular velocity of the body is based on the rate at which these angles change with time. 
+        </p>
+ 
+        <p>
+            When we studied rotation about a fixed axis, description of orientation required only one angle about the axis. <xref ref="fig-ang-vel-rotating-disk"/> shows how we will use two-coordinate system to describe just the rotation. Here, CM is fixed at <m>O</m> and only one rotation about <m>Oz</m> is required to describe the change in rotation. We say that angular velocity vector <m>\vec \omega</m> is pointed towards <m>z</m>-axis. 
+        </p>
+        <p></p>
+        <figure xml:id="fig-ang-vel-rotating-disk">
+            <caption></caption>
+            <image source="./images/rotation-general/ang-vel-rotating-disk.png" width="70%"/>
+        </figure>
+ 
+        <p>
+            An arbitray point P moves in a circle of radius <m>r\sin\angle zOP</m> around the rotation axis covering <m>\omega\Delta t</m> radians in time <m>\Delta t</m>. Therefore, displacement of P has magnitude 
+            <me>
+                |\Delta \vec r'| = (\omega r \sin\angle zOP )\Delta t.
+            </me>
+            From the directions of vectors <m>\vec \omega</m>, <m>\vec r</m>, <m>\Delta \vec r'</m> , we can write this displacement with respect to the fixed coordinate system as a cross-product of angular velocity and position vector (<m>\vec r</m>) of the point in the moving coordinate system.
+            <me>
+                \Delta \vec r' = (\vec \omega \times \vec r) \Delta t. 
+            </me>
+
+        </p>
+
+        <p>
+            For general motion of a rigid body depicted in <xref ref="fig-two-coordinate-systems"/>, we need to add the displacement of CM to get displacement of point P with respect to the fixed coordinate system.
+            <me>
+                \Delta \vec r' = \Delta \vec R + (\vec \omega \times \vec r) \Delta t.
+            </me>
+            Dividing by <m>\Delta t</m> and taking infinitesimal limit we get following important relation for velocity of an arbitrary point in a rigid body.
+
+             <men xml:id="eq-vel-wrt-fixed-equals-cm-plus-rotation-vel">
+                \vec v' = \vec V + \vec \omega \times \vec r.
+             </men>
+             The vector <m>\vec \omega</m> is called the <term>angular velocity</term> of the body. If we take origin of the moving system at the center of mass of the body, <m>\vec V</m> will be the CM-velocity <m>\vec V_\text{cm}</m>.  
+        </p>
+        <p>
+            As illustrated in  <xref ref="subsec-Where-to-Place-the-Origin-of-Moving-Coordinates"/> below, angular velocity is independent of point about which axis passes, it is often convenient to look for a point or line that is momentarily at rest and look at the rate at which the CM appears to rotate around it. This point is addressed further in  <xref ref="ex-Angular-Velocity-of-a-Rolling-Wheel"/> and other exercises.
+        </p>
+    </introduction>
+
+    <subsection xml:id="subsec-Where-to-Place-the-Origin-of-Moving-Coordinates"><title>Where to Place the Origin of Moving Coordinates </title>
+        <p>
+            It is important to note that angular velocity <m>\vec \omega</m> is independent of the choice of body coordinate system. We can prove that by following the displacement of same point P with respect to the fixed coordinate system <m>O'x'y'z'</m> but via either of the two moving coordinate system whose origins are at <m>O</m> and <m>Q</m> as shown in <xref ref="fig-two-coordinate-systems-second"/>. 
+        </p>
+        <figure xml:id="fig-two-coordinate-systems-second">
+            <caption></caption>
+            <image source="./images/rotation-general/two-coordinate-systems-second.png" width="70%"/>
+        </figure>
+        <p>
+            Magnitude of displacement vector <m>\vec a</m> between <m>O</m> and <m>Q</m> is fixed in time but its direction may change with change in orientation. Just as <m>\vec r</m> rotates with angular velocity <m>\omega</m> about <m>O</m>m <m>\vec a</m> does the same with
+            <me>
+                \frac{d\vec a}{dt} = \vec \omega \times \vec a.
+            </me>
+        </p>
+        <p>
+            We have two sets of relations.
+            <mdn>
+                <mrow xml:id="eq-vprime-V-omega-r">\amp \vec v' = \vec V + \vec \omega \times \vec r. </mrow>
+                <mrow>\amp \vec v' = \vec V_q + \vec \omega_q \times \vec r_q. </mrow>
+            </mdn>
+            Here <m>\vec V_q</m> can be related to <m>\vec V</m> by taking derivative of <m>\vec R_q = \vec R + \vec a</m>.
+            <mdn>
+                <mrow xml:id="eq-Vq-V-omega-a"> \amp \vec V_q = \vec V + \vec \omega \times \vec a. </mrow>
+                 <mrow> \amp \vec r_q = \vec r - \vec a. </mrow>               
+            </mdn>
+            Therefore,
+            <md>
+                <mrow>  \vec v' \amp = \vec V_q + \vec \omega_q \times \vec r_q</mrow>
+                <mrow> \amp = (\vec V + \vec \omega \times \vec a ) +  \vec \omega_q \times ( \vec r - \vec a)</mrow>
+                <mrow> \amp = [\vec V  +  \vec \omega_q \times \vec r] + (\vec \omega  - \vec \omega_q) \times \vec a.</mrow>
+            </md>
+            This must equal <m>\vec v'</m> from Eq. <xref ref="eq-vprime-V-omega-r"/>. That is, 
+            <me>
+                (\vec \omega  - \vec \omega_q) \times (\vec r - \vec a) = 0.
+            </me>
+            For this to hold for arbitrary <m>\vec r</m> and <m>\vec a</m>, we must have
+            <men>
+                \vec \omega_q = \vec \omega.
+            </men>
+            That is, angular velocity with respect to every body-attached axes is same. Normally, it is common to choose O at the center of mass. Although arbitrary, this choice helps simplify calculations considerably.
+        </p>
+
+        
+    </subsection>
+
+
+
+    <example xml:id="ex-Angular-Velocity-of-a-Rolling-Wheel"><title>Angular Velocity of a Rolling Wheel</title>
+
+        <statement>
+            <sidebyside widths="50% 5% 45%">
+                <p>
+                    <xref ref="fig-ang-vel-rolling-wheel"/> shows a wheel rolling on a flat plane without slipping. Suppose <m>z</m>-axis is coming out of the page. What will be the angular velocity vector?
+                </p>
+                <p></p>
+                <figure xml:id="fig-ang-vel-rolling-wheel">
+                    <caption></caption>
+                    <image source="./images/rotation-general/ang-vel-rolling-wheel.png" width="70%"/>
+                </figure>
+            </sidebyside>
+            
+        </statement>
+        <!-- <hint><p>
+            The point of the wheel that touches the surface is momentarily at rest.
+        </p></hint> -->
+        <answer><p>
+            <m> \vec \omega = - \frac{V}{R}\, \hat k</m>.
+        </p></answer>
+        <solution>
+            <p>
+                <xref ref="fig-ang-vel-rolling-wheel-sol"/> shows a fixed coordinate and a moving coordinate. The <m>z</m> and <m>z'</m> axes are coming out of page and not shown. 
+            </p>
+            <sidebyside widths="50% 50%">
+                <p>
+                    Point P that touches the surface is momentarily at rest. The CM will appear to move in a circle of radius <m>R</m> with speed <m>V</m>. Therefore, magnitude of angular velocity is
+                    <me>
+                        \omega = \frac{V}{R}.
+                    </me>
+                </p>
+                <figure xml:id="fig-ang-vel-rolling-wheel-sol">
+                    <caption></caption>
+                    <image source="./images/rotation-general/ang-vel-rolling-wheel-sol.png" width="70%"/>
+                </figure>
+            </sidebyside>
+            <p>
+                Axis of rotation is <m>z</m> axis and the sense of rotation is clockwise. That would make the orientation of axis in the negative <m>z</m>-axis direction. Therefore, angular velocity vector will be
+                <me>
+                    \vec \omega = - \frac{V}{R}\, \hat k.
+                </me>
+            </p>
+
+
+        </solution>
+    </example>
+
+
+
+
+    <example xml:id="ex-Angular-Velocity-of-a-Rolling-Disk-in-a-Bowl"><title>Angular Velocity of a Rolling Disk in a Bowl</title>
+
+        <statement>
+            <sidebyside widths="50% 5% 45%">
+                <p>
+                    <xref ref="fig-ang-vel-rolling-disk-in-a-bowl"/> shows a disk of radius <m>a</m> rolling inside a bowl of circular curvature of radius <m>R</m> without slipping so that the center of the disk is rotating about center of the bowl with angular speed <m>\Omega</m>. 
+                </p>
+                <p></p>
+                <figure xml:id="fig-ang-vel-rolling-disk-in-a-bowl">
+                    <caption></caption>
+                    <image source="./images/rotation-general/ang-vel-rolling-disk-in-a-bowl.png" width="70%"/>
+                </figure>
+            </sidebyside>
+            <p>
+                Suppose <m>z</m>-axis is coming out of the page. What will be the angular velocity vector for rotation of the disk about its CM?
+            </p>
+            
+        </statement>
+        <!-- <hint><p>
+            The point of the disk that touches the surface is momentarily at rest.
+        </p></hint> -->
+        <answer><p>
+            <m> \vec \omega = - \frac{R-a}{a}\, \Omega\, \hat k</m>.
+        </p></answer>
+        <solution>
+            <p>
+                <xref ref="fig-ang-vel-rolling-disk-in-a-bowl-sol"/> shows a fixed coordinate and a moving coordinate. The <m>z</m> and <m>z'</m> axes are coming out of page and not shown. The speed of CM will be related to angular speed <m>\Omega</m> about center of the ball by
+                <me>
+                    V = (R-a)\Omega.
+                </me>
+            </p>
+            <p>
+                Since angular velocity about CM will be same as any other point in the body, we will find angular velocity about point P that touches the bowl at the instant. 
+            </p>
+            <sidebyside widths="50% 50%">
+                <p>
+                    Point P that touches the surface is momentarily at rest. The CM will appear to move in a circle of radius <m>a</m> with speed <m>V</m>. Therefore, magnitude of angular velocity is
+                    <me>
+                        \omega = \frac{V}{a} =  \frac{R-a}{a}\, \Omega.
+                    </me>
+                </p>
+                <figure xml:id="fig-ang-vel-rolling-disk-in-a-bowl-sol">
+                    <caption></caption>
+                    <image source="./images/rotation-general/ang-vel-rolling-disk-in-a-bowl-sol.png" width="70%"/>
+                </figure>
+            </sidebyside>
+            <p>
+                Axis of rotation is <m>z</m> axis and the sense of rotation is clockwise. That would make the orientation of axis in the negative <m>z</m>-axis direction. Therefore, angular velocity vector will be
+                <me>
+                    \vec \omega = - \frac{R-a}{a}\, \Omega\, \hat k.
+                </me>
+            </p>
+
+
+        </solution>
+    </example>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

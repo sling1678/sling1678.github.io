@@ -1,0 +1,424 @@
+<section xml:id="Force-on-Current-Carrying-Wire"><title>Force on Current Carrying Wire  </title>
+
+	<p></p>
+	<introduction>
+		<sidebyside widths="60% 5% 35%">
+			<p>
+				Consider placing a straight metallic wire of length <m>L</m> carrying current <m>I</m> in a magnetic field <m>\vec B</m>. Below, we will present arguments that will show that net force on an electric current in a straight wire is given by the following cross product of two vectors.
+
+			</p>
+			<p> </p>
+			<image source="./images/magnetism/magnetic-force-on-current-in-straight-wire.png" width="50%"/>
+		</sidebyside>
+		<p>
+			<men xml:id="eq-force-on-current-carrying-wire-result">
+				\vec F_m = I\vec L \times \vec B,
+			</men>
+			where displacement vector  <m>\vec L</m> has length <m>L</m> with direction in the direction of current flow. We can write the magnitude and direction of the force as follows.
+			<me>
+				\vec F_m = 
+
+						\begin{cases}
+							I L B \sin\,\theta \amp (\text{magnitude})\\
+							\text{right-hand rule}  \amp (\text{direction})
+						\end{cases}
+			</me>			
+		</p>
+		<p> 
+			We have already seen the right-hand rule that gives the direction of <m>\vec F_m</m> in <xref ref="fig-force-right-hand-rule-left"/> and <xref ref="fig-force-right-hand-rule-right"/>, where <m>v</m> is in the direction of current <m>I</m>. In <xref ref="fig-force-right-hand-rule-current" />, the right-hand rule for current in a metallic wire is illustrted.
+		</p>
+		<figure xml:id="fig-force-right-hand-rule-current">
+			<caption>
+				<alert>Right-hand rule for magnetic force on a wire carrying current.</alert>  Two ways to use the Right-hand Rule. Left panel: Place the wire displacement in the current direction and magnetic field in one plane, and then, sweep from current towards magnetic field with right hand; magnetic force is directed towards the thumb and perpendicular to the plane of current and magnetic field; Right panel: Orient your right palm such that current is in the direction of the thumb and magnetic field towards any other finger; magnetic force will be coming out and perpendicular to the palm.
+			</caption>
+			<sidebyside widths="50% 50%">
+				<image source="./images/magnetism/force-on-current-rhr-sweep.png" width="70%"/>
+				<image source="./images/magnetism/force-on-current-rhr-sweep-1.png" width="70%"/>
+			</sidebyside>		
+		</figure>
+	</introduction>
+	<subsection><title> Derivation of Force on Current in Straight Wire</title>
+
+		<p>
+			Let us see how we can obtain Eq. <xref ref="eq-force-on-current-carrying-wire-result"/> from conduction electron model of a metallic. Let <m>n</m> be the number of conduction electrons per unit volume, <m>A</m> the cross-sectional area, and <m>\vec v</m>their average drift velocity.
+			The total charge of electrons in length <m>L</m> of the wire that are moving is
+			<me>
+				Q = -e n A L.
+			</me>
+			Since they are moving with average velocity <m>\vec v</m>, the force on them is
+			<men xml:id="eq-magnetic-force-on-electrons-in-current-1">
+				\vec F_m = Q\vec v \times B = -enAL \vec v  \times \vec B.
+			</men>
+			In terms of the current carrier density, current <m>I</m> will be
+			<me>
+				I = enAv.
+			</me>
+			Now, we define a displacement vector <m>\vec L</m> to point in the direction opposite to the direction of electron's velocity, but with magnitude to be the length of the wire. Then, using this vector, we can also write factors in Eq. <xref ref="eq-magnetic-force-on-electrons-in-current-1" /> as follows.
+			<me>
+				-enAL \vec v  = enAv\vec L = I \vec L.
+			</me>
+			Therefore, we will write the magnetic force on electric current in a straight wire to be
+			<men  xml:id="eq-magnetic-force-on-electrons-in-current-2">
+				\vec F_m =  I \vec L \times \vec B.
+			</men>
+		</p>
+
+
+
+
+	</subsection>
+
+
+	<subsection><title>Effective Force on the Wire vs Magnetic Force on the Current</title>
+
+		<sidebyside widths="60% 5% 35%">
+
+			<p>
+				Suppose you place a metal wire at rest in a magnetic field. Then, when you turn current on through the wire, the wire gains kinetic energy. How's that possible, if force on a current-carrying wire is from magnetic force on moving electrons and magnetic force on moving charges cannot change speed since force is perpendicular to the direction of velocity?
+			</p>
+			<p></p>
+			<image source="./images/magnetism/magnetic-force-on-current-in-straight-wire-direction.png" width="30%"/>
+		</sidebyside>
+		
+		<p>
+			You may recall that no work is done on moving isolated charge by magnet. Then, it appears odd that a magnet can make a current carrying wire move, especially, if we want to interpret force on current in terms of force on individual conduction electrons.
+			The resolution of this paradox comes from looking at force on atoms of wire, not just on conduction electrons.
+		</p>
+		<p>
+			Say, conduction electrons are moving along the wire, then, magnetic force on them will impart an acceleration to these electrons in the direction perpendicular to the wire and deflect them towards the side of the wire. But, there is no where futher to go in the material. That would mean the atoms of the material gain a side-way momentum component.
+		</p> 
+		<!-- <p>
+			If all the momentum of the conduction electrons are transfered to the atoms, the inertial force on the atoms will have the direction and magnitude equal to the magnetic force on the conduction electrons. In this sense, we may say that magnetic force on conduction electrons causes a change in momentum of the wire itself.
+		</p> -->
+
+
+		<!-- p>
+			Although, speed of electrons are not changed by the magnetic force on them, the momentum transfer from the moving electrons to the atoms increases the kinetic energy of the wire.  This is the case where the magnetic force has not done any work on the conduction electrons and yet there is a change in the kinetic energy of the wire.  The change in the kinetic energy of the wire is due to the electric force between the conduction electrons and the atoms, and not from magnetic force on electrons!
+		</p> -->
+		<p>
+			The force responsible for collision between conduction electrons and atoms are electrical in nature and can do work. Therefore, although, magnetic forces on the conduction electrons do not do any work, the inertial force on the atoms can do work.  
+			<!-- Therefore, if a wire is placed in a magnetic field and a current is passed in the wire, the wire will gain kinetic energy and it would appear that magnetic force has done work on the wire.  However, this interpretation is not correct since the magnetic force on moving charges cannot do work as explained above. --> 
+			<!-- The work observed as a change in the kinetic energy of the wire is actually done by the electric force on the atoms by the moving conduction electrons. So, there is no paradox of magnetic forces do no work. -->
+		</p>
+		<p>
+			<!-- The resulting electric force on atoms, which is orignated by magnetic force on conduction electrons, is the effective force repsonsible for the <q>magnetic force on current carrying wire</q>.  --><!-- Because, the effective magnetic force on current carrying wire is very different in character than magnetic force on isolated moving charges, we will subscript <m>m</m> from the force on the current in the wire and write the force on the wire as
+			<md>
+
+			<mrow> \text{Effective force on}\ \amp \text{a current carrying wire :}\\
+				\amp \text{Magnitude:}\ \ \ F = ILB\sin\theta</mrow>
+			<mrow>
+				\amp\text{Direction: Use Right-hand Rule.}</mrow>
+
+			</md> -->
+			Even though, we refer the force on the wire as <q>magnetic force</q>, we  should be aware that this use of the term magnetic force leads to inconsistencies with the basic observation that magnetic forces cannot do work on moving charges.  The main point here is that although the force on conduction electrons is magnetic, the net force on the wire in a magnetic field is not magnetic. 
+		</p>
+	</subsection>
+
+
+
+	<subsection><title> Force on a Wire with Multiple Straight Segments</title>
+		<p>
+			Magnetic force on a wire that bends around we just have to compute force on each straight segment and <alert> add them vectorially</alert>. <xref ref="fig-force-on-current-in-multiple-segments"/> shows an <m>\text{L-shaped}</m> part of a circuit that is in a magnetic field, with lengths of segments <m>a</m> and <m>b</m>. The magnitude of forces on the two segments are
+			<md>
+				<mrow> F_\text{on a} \amp = I a B,</mrow>
+				<mrow> F_\text{on b} \amp = I b B,</mrow>
+			</md>
+		</p>
+		<p>
+			Force on the bottom segment, <m>\vec F_\text{on a}</m>,  is pointed up as you can check by using the Right-Hand rule and force on the left segment, <m>\vec F_\text{on b}</m>,  is pointed to the right. We need to add these force <alert> vectorially</alert>. Let us <m>x</m> and <m>y</m> axes as shown in the figure.
+		</p>
+ 
+		<figure xml:id="fig-force-on-current-in-multiple-segments">
+			<caption>
+				 Left panel: L-shaped part of a circuit with current <m>I</m> in a magnetic field <m>\vec B</m>, which is pointed out of page. Right panel: Forces on the two segments are in different diretions. The net magnetic force on the wires will be a <alert> vector sum</alert>, <m> \vec F_\text{on a} + \vec F_\text{on b}</m>, of these two forces.
+			</caption>
+			<sidebyside widths="10% 35% 10% 35% 10%">
+				<p> </p>
+				<image source="./images/magnetism/force-on-current-in-multiple-segments.png" width="70%"/>
+				<p> </p>
+				<image source="./images/magnetism/force-on-current-in-multiple-segments-forces.png" width="70%"/>
+				<p></p>
+			</sidebyside>		
+		</figure>
+
+		<p> 
+			Adding the forces gives the following for the <m>x</m> and <m>y</m> components of the net force.
+			<md>
+				<mrow> F_x \amp = F_\text{on b} = IbB</mrow>
+				<mrow> F_y \amp = F_\text{on a} = IaB</mrow>
+			</md>
+			The magnitude of the net force will be
+			<me>
+				F = \sqrt{F_x^2 + F_y^2} = IB\sqrt{a^2 + b^2},
+			</me>
+			and the direction as counterclockwise angle, <m>\theta</m> from the postive <m>x</m> axis will be
+			<me>
+				\theta = \tan^{-1}\left( \dfrac{F_y}{F_x} \right) = \tan^{-1}\left( \dfrac{a}{b} \right).
+			</me>
+		</p>
+
+		
+	</subsection>
+
+	<subsection><title> (Calculus) Magnetic Force on Arbitrary Wire </title>
+		<p>
+			Consider a curved amooth wire of arbitray shape carrying current <m>I</m> in a magnetic field <m>\vec B</m> as shown in <xref ref="fig-magnetic-force-on-current-in-arbitrary-wire"/>, which may also vary in space. You may already know that at the infintesimal level, a smooth curve looks straight. Therefore, we apply the force law on straight infintesimal segments and add them to get the general formula.
+		</p>
+
+		<figure xml:id="fig-magnetic-force-on-current-in-arbitrary-wire">
+			<caption>
+				Force on an element  <m> d\vec r</m> of an arbitrary shape wire, <m>d\vec F_m = I\, d\vec r\times \vec B</m>.
+			</caption>
+			<image source="./images/magnetism/magnetic-force-on-current-in-arbitrary-wire.png" width="60%"/>
+		</figure>
+
+		<p>
+			Let <m> \vec r</m> be the location of an elment of the wire <m>d\vec r</m>, whose length is <m>dr</m> and direction in the tangent to the curve at that location. Let us denote the magnetic field at this location as <m>\vec B(\vec r)</m>.  Therefore, we have the following for the force on this infinitesimal piece of the wire.
+			<me>
+				d\vec F_m = I\, d\vec r \times \vec B(\vec r).
+			</me>
+			Summing over infinitesimal segment is the integral from one end of the wire, point <m> a</m> to the other end at point <m>b</m>.
+			<me>
+				\vec F_m = \int_{a}^{b}I\, d\vec r \times \vec B(\vec r).
+			</me>
+			When applying this formula to a problem, you will have to set up the problem and <q>discover</q> the integral you need to perform, by making sure that <m>d\vec r</m> is a vector along the wire. If wire has straight segments, Cartesian coordinates are helpful, and when wire is circular, polar coordinates are useful.
+
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Magnetic-Force-on-a-Wire-with-a-90-deg-Bend"><title> Magnetic Force on a Wire with a 90-Degree Bend </title>
+		<statement>
+			<p>
+				A <m>9\text{-cm}</m> wire carrying a current of <m>5\text{ A}</m> bends at <m>90^{\circ}</m>, with one leg being <m>6\text{-cm}</m> long and the other leg <m>3\text{-cm}</m> long.  The wire is in a region of uniform magnetic field of <m>2.5\text{ T}</m> perpendicular to the plane of the wire.  Find magnetic force on the wire.
+			</p>
+
+		</statement>
+		<hint> <p> Add two force vectors.  </p> </hint>
+		<answer> <p> <m>0.84\text{ N}</m>, directed <m>63.5^{\circ}</m> below the positive <m>x</m>  axis in the 4th quadrant where the <m> x</m> axis is along <m>6\text{-cm}</m> leg and the <m>y</m> axis along <m>3\text{-cm}</m> leg.  </p> </answer>
+		<solution>
+			<sidebyside widths="50% 15% 35%">
+				<p>
+					The magnetic forces on the two parts of the wire are shown in the figure. Their magnitudes as well as directions are different.  We shall use the coordinate directions shown for adding the vectors analytically. The magnitudes of the forces are:
+					<md>
+						<mrow> F_{1} \amp = 5\:\text{A}\times 0.06\:\text{m}\times 2.5\:\text{T} = 0.75\text{ N}, </mrow>
+						<mrow> F_{2} \amp = 5\:\text{A}\times 0.03\:\text{m}\times 1.5\:\text{T}  = 0.375\text{ N},</mrow>
+					</md>
+				</p>
+				<p> </p>
+				<image source="./images/magnetism/mag-force-90-deg-bent-wire.png" width="50%"/>
+			</sidebyside>
+			<p>
+				The <alert> net force is not </alert> <m> (0.75\text{ N}+0.375\text{ N}) </m> since the forces are not in the same direction. 
+				We find that <m>x</m> and <m>y</m> components of the forces are
+				<md>
+					<mrow> \amp F_{1x} = 0,\ \ F_{1y} = - 0.75\:\text{N},</mrow>
+					<mrow> \amp F_{2x} = 0.375\:\text{N},\ \ F_{2y} = 0.</mrow>
+				</md>
+				Therefore,  <m>x</m> and <m>y</m> components of the net force are
+				<me>
+					F_x = 0.375\:\text{N},\ \ F_y =  - 0.75\:\text{N}.
+				</me>
+				The magnetic force has a magnitude of <m>\sqrt{0.75^2 + 0.375^2} = 0.84\:\text{N}</m> and is pointed in the 4-th quadrant at an angle of <m>63.4^{\circ}</m> clockwise from the positive <m>x</m> axis.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Magnetic-Force-on-a-Wire-with-a-30-deg-Bend"><title> Magnetic Force on a Wire with a 30-Degree Bend </title>
+		<statement>
+			<p>
+				A <m>10\text{-cm}</m> wire carrying a current of <m>5\text{ A}</m> bends at <m>30^{\circ}</m>, with one leg being <m>6\text{-cm}</m> long and the other leg <m>4\text{-cm}</m> long.  The wire is in a region of uniform magnetic field of <m>2.0\text{ T}</m> perpendicular to the plane of the wire.  Find magnetic force on the wire.
+			</p>
+
+		</statement>
+		<hint> <p> Add two force vectors. </p>  </hint>
+		<answer> <p> <m>0.32\:\text{N}</m> at <m>51.3^{\circ}</m> clockwise from the positive <m>x</m> axis. </p> </answer>
+		<solution>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					By using the formula <m>\vec F_m = I\vec L\times \vec B</m> on each straight segment, we find that the magnitudes of the forces on them are
+						<md>
+							<mrow> F_{1} \amp = 5\:\text{A}\times 0.06\:\text{m}\times 2.0\:\text{T} = 0.6\text{ N}.</mrow>
+							<mrow> F_{2} \amp = 5\:\text{A}\times 0.04\:\text{m}\times 2.0\:\text{T}=0.4\text{ N}. </mrow>
+						</md>
+
+				</p>
+				<p> </p>
+				<image source="./images/magnetism/mag-force-30-deg-bent-wire.png" width="50%"/>
+			</sidebyside>
+			<p>
+				The net force is not <m>(0.6\text{ N} + 0.4\text{ N})</m> since the forces are not in the same direction. We need to add them vectorially. We will do that analytically by using the coordinate system shown in the figure. The <m>x</m> and <m>y</m> components of the forces <m>\vec F_1</m> and <m>\vec F_2</m> are
+				<md>
+					<mrow> \amp F_{1x} = 0,\ \ F_{1y} = - 0.6\:\text{N}. </mrow>
+					<mrow> \amp F_{2x} = 0.2 \:\text{N},\ \ F_{2y} = 0.35\:\text{N},</mrow>
+				</md>
+				The <m>x</m> and <m>y</m> components of the net force are
+				<me>
+					F_x = 0.20\:\text{N},\ \ F_{y} = -0.25\:\text{N}.
+				</me>
+				The magnetic force has a magnitude of 
+				<me>
+					\sqrt{0.20^2 + 0.25^2} = 0.32\:\text{N},
+				</me> 
+				and is pointed in the 4-th quadrant at an angle of <m>51.3^{\circ}</m> clockwise from the positive <m>x</m> axis.
+
+
+			</p>
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Force-on-a-Square-Current-Loop-Perpendicular-to-a-Uniform-Magnetic-Field"><title> Force on a Square Current Loop Perpendicular to a Uniform Magnetic Field </title>
+		<statement>
+			<sidebyside widths="60% 5% 35%">
+				<p>
+				Current flows in a loop shaped as a square of side <m>a</m>. The loop of wire is in a plane perpendicular to a magnetic field of magnitude <m>B</m> as shown in the figure. What is the magnetic force on the full loop?
+				</p>
+				<p> </p>
+				<image source="./images/magnetism/mag-force-on-closed-square-loop.png" width="50%"/>
+			</sidebyside>
+		</statement>
+		<hint> <p>  Look at the direction of forces on the four straight segments. </p> </hint>
+		<answer> <p> <m>0</m>. </p> </answer>
+		<solution>
+			<sidebyside widths="60% 10% 30%"> 
+				<p>
+					Based on the given orientation of current and magnetic field, the forces on the four straight segments have equal magnitude, <m>F_i = I a B</m>, <m>i = 1,\ 2\, 3\, 4</m>. But their directions are such that <m>\vec F_1</m> cancels <m>\vec F_3</m> and  <m>\vec F_2</m> cancels <m>\vec F_4</m>. Therefore, net force on the loop is zero.
+				</p>
+				<p> </p>
+				<image source="./images/magnetism/mag-force-on-closed-square-loop-forces.png" width="50%"/>
+			</sidebyside>
+			
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Force-on-a-Square-Current-Loop-with-Normal-at-an-Angle-to-a-Uniform-Magnetic-Field"><title> Force on a Square Current Loop with Normal at an Angle to a Uniform Magnetic Field </title>
+		<statement>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+				Current flows in a loop shaped as a square of side <m>a</m>. The loop of wire is in a plane that is not perpendicular to a magnetic field of magnitude <m>B</m> but slanted as shown in the figure. What is the magnetic force on the full loop?
+				</p>
+				<p> </p>
+				<image source="./images/magnetism/mag-force-on-closed-square-loop-tilted.png" width="50%"/>
+			</sidebyside>
+			
+		</statement>
+		<hint> <p> Find pairs of forces that cancel. Its easier to work with cross product. </p> </hint>
+		<answer> <p>  <m>0</m>. </p> </answer>
+		<solution> 
+			<sidebyside widths="55% 5% 40%"> 
+				<p>
+					Based on the given orientation of current and magnetic field, the forces on various segments have the following magnitudes and directions, which give the net force to be zero. Here I write directions using the unit vectors, <m>\hat i, \hat j, \hat k</m>, along the Cartesian axes.
+						<md>
+							<mrow> \amp \vec F_3 = I a B\hat k = - \vec F_1  </mrow>
+							<mrow> \amp \vec F_4 = I a B \cos\,\theta\hat i = - \vec F_2  </mrow>
+						</md>
+				</p>
+
+				<p> </p>
+				<image source="./images/magnetism/mag-force-on-closed-square-loop-tilted-forces.png" width="50%"/>
+			</sidebyside>
+			
+
+				<p>
+					I got these from using the following by using <m>\vec B = B\hat j</m> and the following vectors that go into <m>I\vec L\times \vec B</m> for force on each segment.
+					<md>
+						<mrow> \vec L_3 \amp  = a\,\cos\theta\, \hat i  + a\,\sin\theta\,\hat j = -\vec L_1</mrow>
+						<mrow>\vec L_2 \amp  = a \hat k  = -\vec L_4</mrow>
+					</md>
+
+ 
+				</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+	<exercise xml:id="ex-Magnetic-Force-on-a-Current-Carrying-Wire-in-an-Inhomogeneous-Magnetic-Field"><title> (Calculus) Magnetic Force on a Current-Carrying Wire in an Inhomogeneous Magnetic Field  </title>
+		<statement>
+			<p>
+				A straight wire of length <m>15\text{ cm}</m> is carrying a current of <m>20\text{ A}</m>.  The wire is placed on a table where there is a magnetic field whose magnitude varies over the length of the wire, but the direction is always perpendicular to the table facing up.  If wire is along the <m>x</m> axis and the direction of the magnetic field is the <m>y</m> axis, the <m>y</m>-component of the magnetic field is given by the following function of the coordinate <m>x</m>.
+				<me>
+					B_y(x) = \frac{0.16}{x}\ \ \text{(T with } x \text{ in m)}.
+				</me>
+				The wire is placed from <m> x = 1\text{ cm}</m> to <m>x = 16\text{ cm}</m>.  Find the magnetic force on the wire.
+			</p>
+
+		</statement>
+		<hint> <p>  Set up the integral for computing the force by looking at an infintesimal segment of the wire. </p> </hint>
+		<answer> <p> <m>8.9\:\text{N}</m> and direction towards the positive <m>z</m> axis.  </p> </answer>
+		<solution> 
+			<p>
+				Figure below shows a segment of length <m>\Delta x</m> of a wire along <m>x</m> axis. We will write down an expression for force on this segment and then try to add over all such segments. 
+
+				<image source="./images/magnetism/mag-force-inhom-B-on-x-axis.png" width="70%"/>
+ 
+ 				The force on this segment between <m>x </m> and <m> \Delta x</m> is towards <m>z</m> axis. Therefore, the <m>z</m> component of the force will be  
+				<me>
+					\Delta F_z = I\:\dfrac{0.16}{x}\:\Delta x.
+				</me>
+				The total force will be obtained by adding contributions of force on each infinitesimal segment.  This leads to an integration.
+				<md>
+					<mrow> F_z \amp = \int_{0.01}^{0.16}\: I \dfrac{0.16}{x}\: dx,</mrow>
+					<mrow> \amp = 20\:\text{A}\times 0.16\:\text{T.m}\times \ln(0.16/0.01) = 8.9\:\text{N}.</mrow>
+				</md>
+				Since other components of force are zero, we find that the force on the wire has magnitude <m>8.9\:\text{N}</m> and direction towards the positive <m>z</m> axis.
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Magnetic-Force-on-a-Current-Carrying-Circular-Arc-in-a-Magnetic-Field"><title> (Calculus) Magnetic Force on a Current-Carrying Circular Arc in a Magnetic Field </title>
+		<statement>
+			<p>
+				A wire is bent into a quarter circle of radius <m>2\text{ cm}</m> and placed between the poles of a magnet where there is a uniform magnetic field of <m>3.5\text{ T}</m> perpendicular to the plane of the wire.  Find force on the wire when there is <m>30\text{ A}</m> current through it.
+			</p>
+
+		</statement>
+		<hint> <p>  Use polar coordinates and look at force on an arc of length <m>Rd\theta</m>. </p> </hint>
+		<answer> <p>  <m>2.95\text{ N}</m> at <m>45^{\circ}</m> from one end. </p> </answer>
+		<solution> 
+
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					We will look at the infinitesimal element of the wire between angle <m>\theta</m> and <m>\theta + d\theta</m>. Length of this element is <m>Rd\theta</m>. 
+					Theerefore, force  on this element has the magnitude <m>dF = I B R d\theta</m> and direction radially out as shown in the figure.  Since the radial direction changes with <m>\theta</m> we will write the force in terms of the <m>x</m> and <m>y</m> components.
+				</p>
+				<p> </p>
+				<image source="./images/magnetism/mag-force-on-circular-arc.png"/>
+
+
+			</sidebyside>
+
+			<p>
+ 
+				<me>
+					dF_x = I B R \:\cos\theta\:d\theta,\ \ dF_y = I B R \:\sin\theta\:d\theta.
+				</me>
+				Integrating these components from <m>\theta=0</m> to <m>\theta = \dfrac{\pi}{2}</m> gives the components of the net force.
+				<me>
+					F_x = \int_0^{\frac{\pi}{2}}\:I B R \:\cos\theta\:d\theta = IBR,\ \ F_y = IBR.
+				</me>
+				Therefore, the force on the wire has the magnitude <m>\sqrt{2}\:IBR = 2.97\:\text{N}</m> and direction <m>45^{\circ}</m> from the positive <m>x</m>-axis.
+			</p>
+		</solution>
+	</exercise>
+ 
+ 
+
+
+ 
+
+
+
+
+
+
+</section>

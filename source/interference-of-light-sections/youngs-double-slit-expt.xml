@@ -1,0 +1,443 @@
+<section xml:id="section-youngs-double-slit-expt"><title>Young's Double-Slit Experiment</title>
+	<introduction>
+		<p>
+			A simple illustration of the interference phenomenon is provided by the Young's double-slit experiment whose setup is illustrated in <xref ref="fig-youngs-double-slit-experiment-setup"/>. In this experiment light from a monochromatic source is shone on two very narrow slits <m>\text{S}_1</m> and <m>\text{S}_2</m>. This generates two waves, one from each slit that start out in phase with each other since they are part of the same wavefront from the original source. The waves then travel through space to various points of a screen where they interfere producing an interference pattern at the screen. The pattern usually form bands on the screen and are called <term>interference fringes</term>.
+		</p>
+		<figure xml:id="fig-youngs-double-slit-experiment-setup">
+			<caption>
+				  Young's double-slit experimental setup.  The two waves from slits <m>\text{S}_1</m> and <m>\text{S}_2</m> start out in-phase at the two slits since they are part of the same wavefront. They travel different distances and interfere on the screen. Their interference produces alternating bright and dark finges on the screen.
+			</caption>
+			<image source="./images/interference-of-light/youngs-double-slit-experiment-setup-3d.png" width="80%"/>
+		</figure>
+ 		<p>
+ 			We wish to find points on the screen where the interference will be constructive and points where it will be destructive. We will find it most useful to write these conditions in terms of the phase difference between the two waves when they arrive at P since they start out with zero difference.
+ 		</p>
+ 		<sidebyside widths="40% 5% 55%">
+	 		<p>
+	 			If the two waves arrive at P completely in sync, i.e., if the difference of their phases is zero or integer multiples of <m>2\pi</m>, then they will interfere maximally constructive there. On the other hand, if they have opposite phases, meaning the difference in phases are odd multiples of <m>\pi</m>, then they will maximally destruct.
+	 		</p>
+	 		<p></p>
+			<figure xml:id="fig-constructive-and-destructive-interferences-simple-illustration">
+				<caption>
+					   Maximally constructive and destructive interferences.
+				</caption>
+				<image source="./images/interference-of-light/constructive-and-destructive-interferences-simple-illustration.png" width="80%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Let <m>\Delta_{12}</m> be the phase difference between the phases of the two waves arriving there. Then, we can write the following for the conditions for maximal constructive and desctructive interferences.
+
+			<mdn>
+				<mrow xml:id="eq-constructive-interference-condition-phase">\amp \text{Constructive: } \Delta_{12} = m \times 2\pi,\ \ (m\ \text{ integer}.) </mrow>
+				<mrow xml:id="eq-destructive-interference-condition-phase">\amp \text{Destructive: } \Delta_{12} = m^\prime \times \pi,\ \ (m^\prime\ \text{ odd integer}.)  </mrow>
+			</mdn>
+			In the following, I will show that the phase difference can be expressed in terms of the wavelength <m>\lambda</m> and location of P with respect to the slits in terms of geometric parameters shown in <xref ref="fig-youngs-double-slit-expt-geometry"/>
+		</p>
+		<figure xml:id="fig-youngs-double-slit-expt-geometry">
+			<caption>
+				   Geometric parameters for Young's double-slit experiment. Also shown are the directions of electric field in the two EM waves. 
+			</caption>
+			<image source="./images/interference-of-light/youngs-double-slit-expt-geometry.png" width="80%"/>
+		</figure>
+		<p>
+
+			Let <m>l_1</m> and <m>l_2</m> be the distances <m>\text{S}_1\text{P}</m> and <m>\text{S}_2\text{P}</m> respectively, <m>d</m> the distances between the slits, <m>\text{S}_1\text{S}_2</m>, and <m>\theta</m> angle from the midpoint between the slits and P. Then, we show in a section below that
+			<men>
+				\Delta_{12} = \frac{2\pi}{\lambda} \left( l_1 - l_2\right) \approx \frac{2\pi}{\lambda} \: d\sin\theta,
+			</men> 
+			where the last step is approximation for small angles, i.e., for P close to the center of the screen. 
+		</p>
+
+		<p>
+			Using these expressions of the phase difference, we can write the constructive and destructive condition in other forms.
+			<mdn>
+				<mrow xml:id="eq-constructive-interference-condition-distance">\amp \text{Constructive: } [l_1 - l_2 \text{ or } d\sin\theta] = m \times \lambda,\ \ (m\ \text{ integer}.) </mrow>
+				<mrow xml:id="eq-destructive-interference-condition-phase-distance">\amp \text{Destructive: } [l_1 - l_2 \text{ or } d\sin\theta]  = m^\prime \times \frac{\lambda}{2},\ \ (m^\prime\ \text{ odd integer}.)  </mrow>
+			</mdn>
+			These forms of the conditions help us relate the interference pattern to distances and hence are extremely useful for applications.
+
+
+		</p>
+
+	</introduction>
+
+
+	<subsection><title>Intensity on the Screen</title>
+		<p>
+			Here we will like to find an expression of intensity at an arbitrary point on the screen. We will make simplifying assumptions to make the calculations simpler to work out. Refer to <xref ref="fig-youngs-double-slit-expt-geometry"/> for symbols we will use. First notice that vector from <m>\text{S}_1</m> to P is in different direction than vector from <m>\text{S}_2</m> to P. Since fields of EM wave are perpendicular to their propagation direction, the electric fields in the two waves will, in general, be oriented diffferently. However, if we are looking at points near the center of the screen, we may ignore their difference. Therefore, we will say that both electric waves have only <m>y</m> component nonzero. 
+			<me>
+				\vec E_1 \approx \hat u_y E_{1y},\ \ \ \vec E_2 \approx \hat u_y E_{2y},
+			</me>
+			where <m>\hat u_y</m> is a unit vector in positive <m>y</m> axis. Sometimes this unit vector is denoted by <m>\hat j</m>. We suppose that amplitude of the two waves are equal and use <m>E_0</m> for that. The wavelength <m>\lambda</m> and hence wavenumber <m>k</m> is same for both and so is the frequency <m>f</m> and angular frequency <m>\omega</m>. Then, at P, the two waves will have the following expressions.
+			<mdn>
+				<mrow xml:id="eq-wavefunction-wave-from-s1" >\amp  E_{1y}(\text{at P}) = E_0 \cos(k l_1 - \omega t), </mrow>
+				<mrow xml:id="eq-wavefunction-wave-from-s2" >\amp  E_{2y}(\text{at P})  = E_0 \cos(k l_2 - \omega t), </mrow>
+			</mdn>
+			The phase difference, denoted by <m>\Delta_{12}</m>, will be
+			<men xml:id="eq-phase-difference-waves-from-s1-and-s2">
+				\Delta_{12} = (k l_1 - \omega t) - (k l_2 - \omega t) = k(l_1 - l_2) = \frac{2\pi}{\lambda} (l_1 - l_2). 
+			</men>
+			By superposition of waves in  Eq. <xref ref="eq-wavefunction-wave-from-s1"/> and <xref ref="eq-wavefunction-wave-from-s2"/>, we get <m>y</m> component of the net electric field at P to be
+			<md>
+				<mrow> E_y(\text{at P}) \amp = E_{1y}(\text{at P})+ E_{2y}(\text{at P})</mrow>
+				<mrow> \amp =  E_0 \cos(k l_1 - \omega t) + E_0 \cos(k l_2 - \omega t).</mrow>
+			</md>
+			Intensity will come from time-averaging the square of this field. Let me first write the answer and then give you the calculations.
+			<men xml:id="eq-intensity-at-screen-derived">
+				I =  c\epsilon_0 E_0^2 \left[ 1 +  \cos\left( k(l_1-l_2) \right)  \right].
+			</men>
+			Here is the calculation. Lets use <m>\ll \cdots \gg</m> for time averaging of whatever is enclosed, just not to miss this important thing you must do if you are calculating intensity.
+			<md>
+				<mrow> I(\text{at P}) \amp = \epsilon_0 c \ll E_y^2 (\text{at P}) \gg </mrow>
+				<mrow> \amp = \epsilon_0 c E_0^2  \ll  \left[ \cos(k l_1 - \omega t) + \cos(k l_2 - \omega t) \right]^2 \gg </mrow>
+				<mrow> \amp = \epsilon_0 c E_0^2 \left[ \right.
+					</mrow>
+				<mrow>  \amp \ \ \ \ \ \ \ \ \ \ \ \ 
+					 \ll  \cos^2 (k l_1 - \omega t)\gg
+					</mrow>
+				<mrow> \amp \ \ \ \ \ \ \ \ \ \
+					+ \ll  \cos^2 (k l_2 - \omega t)\gg </mrow>
+				<mrow> \amp \ \ \ \ \ \ \ \ \ \
+				    \left. + 2 \ll  \cos(k l_1 - \omega t) \cos(k l_2 - \omega t)   \gg  \right] </mrow>
+				<mrow> \amp = \epsilon_0 c E_0^2 \left[  \frac{1}{2} + \frac{1}{2} + \cos(kl_1 - kl_2) \right]  </mrow>
+				<mrow> \amp = \epsilon_0 c E_0^2 \left[ 1 + \cos(k(l_1 - l_2)) \right]  </mrow>
+			</md>
+			We can write intensity at screen in Eq. <xref ref="eq-intensity-at-screen-derived"/> in terms of inensity of each beam. Intensity in beam is
+			<me>
+				I_1 = \frac{1}{2} c \epsilon_0 E_0^2 = I_2.
+			</me>
+			Let us denote this by a common symbol <m>I_0</m>. Now, we write Eq. <xref ref="eq-intensity-at-screen-derived"/> as follows.
+			<men>
+				I =  2I_0 \left[ 1 +  \cos\left( k(l_1-l_2) \right)  \right].
+			</men>
+			We can write this also in terms of the phase difference between the two waves, which was given in Eq. <xref ref="eq-phase-difference-waves-from-s1-and-s2"/>.
+			<men xml:id="eq-intensity-at-screen-derived-in-phase-diff">
+				I =  2I_0 \left[ 1 +  \cos\left( \Delta_{12}\right)  \right].
+			</men>
+			This result tells us that intensity will vary between zero and <m>4I_0</m>, four times the intensity from each slit.
+		</p>
+		<p>
+			Plotting the net intensity <m>I</m> at point P vs the phase difference <m>\Delta_{12}</m> between two waves when they reach that point shows an interference pattern of maximum and minimum brightness as shown in  <xref ref="fig-youngs-intensity-vs-phase-difference"/>.  When At the center of the screen, the phase difference will be 0 and there will be maximum brightness there. Maximum brightness wil loccur at <m>\Delta_{12}</m> at  <m>\pm 2\pi</m>,  <m>\pm 4\pi</m>, <m>\pm 6\pi</m>, etc. At these points, the interference term adds to the other terms and constructive interference results.  When the phase difference is  <m>\pm \pi</m>,  <m>\pm 3\pi</m>, <m>\pm 5\pi</m>, etc, the interference term subtracts from the other terms, and a destructive interference takes place. You will see a dark or less bright spot at these locations.
+		
+		</p>
+
+
+		<figure xml:id="fig-youngs-intensity-vs-phase-difference">
+			<caption>
+				     Intensity plotted against the phase difference <m>\Delta_{12}</m>.  The maximally bright spots have <m>4</m> times the intensity of light from each slit while dark spots have zero intensity.
+			</caption>
+			<image source="./images/interference-of-light/youngs-intensity-vs-phase-difference.png" width="70%"/>
+		</figure>
+
+		<subsubsection><title>Conditions for Constructive and Destrucive Interferences</title>
+			<p>
+				From Eq. <xref ref="eq-intensity-at-screen-derived-in-phase-diff"/> we immediately see that intensity will vary depending on the value of <m>\cos\Delta_{12}</m>. Since cosine has values between <m>-1</m> and <m>+1</m>, inclusive, the maximum intensity will occur when cosine is <m>+1</m> and minimum when <m>-1</m>. Therefore,  
+				<md>
+					<mrow> \amp \text{Constructive when }\cos\Delta_{12} = + 1. </mrow>
+					<mrow> \amp \text{Desructve when }\cos\Delta_{12} = -1. </mrow>
+				</md>
+				This will happen at the following values of the phase difference
+				<md>
+					<mrow> \amp \text{Constructive when }\Delta_{12} = 0, \pm 2\pi, \pm 4\pi, \cdots. </mrow>
+					<mrow> \amp \text{Desructve when }\Delta_{12} =0, \pm \pi, \pm 3\pi, \cdots. </mrow>
+				</md>
+				Of course, we can write this in another way
+				<mdn>
+					<mrow> \amp \text{Constructive when }\Delta_{12} = m \times 2\pi \ \ (m \text{ an integer}). </mrow>
+					<mrow> \amp \text{Desructve when }\Delta_{12} =m^\prime \times \pi \ \ (m^\prime \text{ an odd integer}). </mrow>
+				</mdn>
+				Using the expression of phase difference between two waves given in Eq. <xref ref="eq-phase-difference-waves-from-s1-and-s2"/> we get yet another form of the extreme interference conditions. Write <m>k</m> as <m>2\pi/\lambda</m>, we get
+				<mdn>
+					<mrow xml:id="eq-constructive-interference-conditions-youngs-in-lengths"> \amp \text{Constructive when }  l_1-l_2 = m \lambda \ \ (m \text{ an integer}). </mrow>
+					<mrow xml:id="eq-destructive-interference-conditions-youngs-in-lengths"> \amp \text{Desructve when } l_1-l_2 =m^\prime \frac{\lambda}{2}\ \ (m^\prime \text{ an odd integer}). </mrow>
+				</mdn>
+				This makes sense when you look at what happens to the waves.  They start out at the slits in-step with each other, and when they travel to different distances, they will tend to go out of step by varying amounts. They will be completely in-step at places where path difference is an integer multiple of one wavelength, and they will be completely out of step, meaning if one is at the crest, then the other would be at the trough there, if the difference in path is off by an odd multiple of half a wavelength.
+			</p>
+			<p>
+				The values of <m>m</m> and <m>m^\prime</m> are called <term>order</term> of interference or <term>interference order</term>. For example, when we are looking at <m>m=2</m>, we say it is second order constructive interference, and when looking at <m>m^\prime</m>, we say it is second order destructive inerference. 
+			</p>
+		</subsubsection>
+
+		<subsubsection><title>Conditions Near Center of Screen</title>
+			<p>
+				Equations <xref ref="eq-constructive-interference-conditions-youngs-in-lengths"/> and <xref ref="eq-destructive-interference-conditions-youngs-in-lengths"/> are conditions for maximum and minimum intensity at a point on the screen in terms of the distances to the point from the two slits. Most useful applications involve patterns near the center or the symmetric point on the screen. In these cases, we speak of the direction  from slits to the point in which we will have maxima and minima of intensity.
+			</p>
+			<p>
+				<xref ref="fig-youngs-double-slit-expt-geometry-small-angle"/> shows a way to write <m>|l_1-l_2|</m> in terms of angle <m>\theta</m>. Suppose we are looking at points above the symmetric divider between the slits as in the figure. This will mean <m>l_1\lt l_2</m> for this illustration. We will then draw an arc with center at P and radius equal to <m>l_1</m>, which will intersect the <m>l_2</m> line at A. That means <m>\text{S}_2\text{A}</m> will be equal to <m>l_2-l_1</m>. Now, this arc is very small part of a large circle. So, if we draw a triangle with points <m>\text{S}_1</m>, <m>\text{S}_2</m>, and A, this triangle is almost a right angled triangle with <m>\angle A \text{S}_1 \text{S}_2 = \theta</m> and <m>\angle \text{S}_1 \text{A} \text{S}_2 = 90^\circ</m>. Using this triangle we get the following difference in paths in terms of the distance <m>d</m> between the slits and direction angle <m> \theta</m> from the slits.
+				<me>
+					|l_1 - l_2| = d\sin\theta.
+				</me>
+			</p>
+			<figure xml:id="fig-youngs-double-slit-expt-geometry-small-angle">
+				<caption>
+					   Geometric parameters for Young's double-slit experiment near center of the screen where angle <m>\theta</m> from center of the slits to a point on te the screen is small.
+				</caption>
+				<image source="./images/interference-of-light/youngs-double-slit-expt-geometry-small-angle.png" width="80%"/>
+			</figure>
+
+
+			<p>
+				We can take the absolute value out if we think of <m>\theta</m> positive for points above the center line and negative for points below the center line.
+				<me>
+					l_2 - l_1 = d\sin\theta.
+				</me>
+				Replacing <m>l_1-l_2</m> in the interference conditions, we get the following useful form of the interference conditions.
+				<mdn>
+					<mrow xml:id="eq-constructive-interference-conditions-youngs-in-d-theta"> \amp \text{Constructive when }  d\sin\theta = m \lambda \ \ (m \text{ an integer}). </mrow>
+					<mrow xml:id="eq-destructive-interference-conditions-youngs-in-d-theta"> \amp \text{Desructve when } d\sin\theta =m^\prime \frac{\lambda}{2}\ \ (m^\prime \text{ an odd integer}). </mrow>
+				</mdn>
+				These give one value of <m>\theta</m> for each <m>m</m> and <m>m^\prime</m>. Often we attach subscript to <m>\theta</m> with the value of <m>m</m> and <m>m^\prime</m>, as in <m>\theta_1</m>, <m>\theta_2</m>, etc., meaning 
+				<me>
+					d\sin\theta_1 = 1\times \lambda,\ \ \ d\sin\theta_2 = 2\times \lambda.
+				</me>
+
+				We can equivalently write these conditions in terms of location of point P on the screen. <xref ref="fig-youngs-double-slit-expt-geometry-small-angle"/> shows a <m>y</m> axis on the screen that is vertically aligned. We note that for points near the center at a far away screen, i.e., when angle is small, or equivalently, when <m>y \ll L</m> we will have
+				<me>
+					\sin\theta = \frac{y}{\sqrt{y^2 + L^2}} \approx \frac{y}{L}.
+				</me>
+				Therefore, the interference conditions in terms of position on the screen will be
+				<mdn>
+					<mrow xml:id="eq-constructive-interference-conditions-youngs-in-y"> \amp \text{Constructive when }  y = m \frac{\lambda L}{d} \ \ (m \text{ an integer}). </mrow>
+					<mrow xml:id="eq-destructive-interference-conditions-youngs-in-y"> \amp \text{Desructve when } d\sin\theta =m^\prime  \frac{\lambda L}{2d} \ \ (m^\prime \text{ an odd integer}). </mrow>
+				</mdn>				
+				 <xref ref="fig-youngs-demonstration-from-two-plates"/> shows a simulation of two slits  separated by 4-wavelengths.  One can see the bright and dark fringes emanating in different directions from the sources. Looking at the screen on the right, you see bright and dark fringes. 
+			</p>
+
+
+			<figure xml:id="fig-youngs-demonstration-from-two-plates">
+				<caption>
+					    Demosntration of interference pattern in Young's double-slit experiment. Two plastic plates with bright and dark circles displaced a small distance, simulating two sources, gives the pattern of constructive and destructive patterns in different directions.
+				</caption>
+				<image source="./images/interference-of-light/youngs-demonstration-from-two-plates.png" width="80%"/>
+			</figure>			
+
+
+		</subsubsection>
+
+		<subsubsection><title>Maximum Number of Fringes</title>
+			<p>
+				Notice that in the condition for constructive interference given in Eq. <xref ref="eq-constructive-interference-conditions-youngs-in-d-theta"/>, after you divide both sides by <m>D</m>, you can will get the condition as the sine of angle.
+				<me>
+					\text{Constructive when }  \sin\theta = m \frac{\lambda}{d} \ \ (m \text{ an integer}).
+				</me>
+				The order number <m>m</m> is supposed to be an integer, but it cannot just grow to any value since since function is limited to be within <m>-1</m> and <m>+1</m>. Demanding this we get maximum value for <m>m</m> that will be allowed. Let's denote it by <m>m_\text{max}</m>.
+				<me>
+					1 = m_\text{max} \frac{\lambda}{d}.
+				</me>
+				Solving this for floor of the integer we get the following for the highest value of positive <m>m</m> allowed.
+				<men xml:id="eq-max-constructive-m-allowed">
+					m_\text{max} = \left\lfloor\frac{d}{\lambda} \right\rfloor.
+				</men>
+				Similarly, maximum positive <m>m^\prime</m> value is limited by the destructive interference condition.
+				<men xml:id="eq-max-destructive-m-prime-allowed">
+					m^\prime_\text{max} = \left\lfloor\frac{2d}{\lambda} \right\rfloor.
+				</men>
+				Thus, if <m>d = 0.6\lambda</m>, then <m>m_\text{max}=0</m> and <m>m^\prime_\text{max}=1</m>. That means you will see one bright fringe surrounded by the <m>m^\prime=\pm 1</m> dark fringes, and then some brigtness will surround them, but you will not get <m>m=\pm 1</m> bright fringes. If <m>d = 2.8\lambda</m>, then <m>m_\text{max}=2</m> and you will see only five bright fringes, namely, <m>m=-2, -1, 0, 1, 2</m>, each surrounded by dark fringes.
+			</p>
+			<p>
+				Note that Eqs. <xref ref="eq-max-constructive-m-allowed"/> and <xref ref="eq-max-destructive-m-prime-allowed"/> may give inconsistent values. You will need to make sure that each constructive fringe is bounded by a destructive fringe and vice versa. For instance, in <xref ref="exercise-Interference-of-Laser-Light-in-a-Double-Slit-Experiment"/>, you will notice that <m>m_\text{max}=2</m> and <m>m^\prime_\text{max}=4</m>.  Clearly, between <m>m^\prime=3</m> and <m>m^\prime=4</m>, there is no bright fringe in this case. Here, we will just stop at <m>m=2</m> and <m>m^\prime=3</m> on the positive order side and <m>m=-2</m> and <m>m^\prime=-3</m> at the negative order side.
+			</p>
+		</subsubsection>
+
+
+	</subsection>
+
+
+	<exercise xml:id="exercise-Interference-of-Laser-Light-in-a-Double-Slit-Experiment"><title> Interference of Laser Light in a Double-Slit Experiment</title>
+
+		<statement>
+			<p>
+				A red light of wave length <m>0.63\,\mu\text{m}</m> is incident on a double-slit system with slits separated by <m>1.50\,\mu\text{m}</m>.  A screen is place at a distance of <m>0.5\text{ m}</m> from the slits.  Suppose the slits are along <m>y</m>axis with origin at the midpoint of their separation. Find approximate <m>y</m> coordinates of locations on the screen where (a) intensity is maximum  and (b) intensity is minimum. You can use small angle aproximation since only approximate values of <m>y</m> are required.
+			</p>
+		</statement>
+		<hint><p>First find maximum number of fringes you will see and then use conditions given in <m>y</m>.</p></hint>
+		<answer><p>
+			(a) <m>0,\ \pm 21\text{ cm},\ \pm 42\text{ cm}</m>, (b) <m> \pm 10.5\text{ cm},\ \pm 31.5\text{ cm}</m>.
+
+		</p></answer>
+		<solution>
+			<p>(a) and (b)
+
+				Let's first find the maximum number of bright and dark fringes we will see. We have <m>d = 1.5\ \mu\text{m}</m> and <m>\lambda = 0.63\ \mu\text{m}</m>. Hence the maximum positive order of constructive and destructive fringes will be 
+				<md>
+					<mrow> m_{\text{max}} \amp= \left \lfloor \frac{1.5\ \mu\text{m}}{0.63\ \mu\text{m}}  \right\rfloor = 2.</mrow>
+					<mrow> m^\prime_{\text{max}} \amp= \left \lfloor \frac{2\times 1.5\ \mu\text{m}}{0.63\ \mu\text{m}}  \right\rfloor = 4.</mrow>
+				</md>
+				Since around the bright fringe order <m>m=2</m> we will have <m>m^\prime=2</m> and 
+ 				<m>m^\prime=3</m> dark fringes and there is no more bright fringe. Therefore, theoretically, we will have <m>m=0, \pm 1, \pm 2</m> for the bright fringes and <m>m^\prime = \pm 1, \pm 2, \pm 3 </m> for the dark fringes. We will further limit our calculation to <m>|m^\prime|=2</m> since by the time we get to <m>m=2</m> fringe, angles are already getting too large and the formula becomes quite inaccurate.
+			</p>
+			<p>
+				Since we will encounter <m>\lambda L/d</m>, we calculate it once.
+				<me>
+					\frac{\lambda L}{d} = \frac{ 0.63\ \mu\text{m}\times 0.5\text{ m} }{1.50\ \mu\text{m}} = 21\text{ cm}.
+				</me>
+			</p>
+			<p>
+				(a) The <m>y</m> coordinates of the constructive interference maxima are
+				<md>
+					<mrow>\amp m = 0:\ \ y=0 </mrow>
+					<mrow>\amp m = \pm 1:\ \ y= \pm 21\text{ cm}</mrow>
+					<mrow>\amp m = \pm 2:\ \ y= \pm 42\text{ cm}</mrow>
+				</md>
+			</p>
+			<p>
+				(b) The <m>y</m> coordinates of the destructive interference are
+				<md>
+					<mrow>\amp m^\prime = \pm 1:\ \ y= \pm 10.5\text{ cm}</mrow>
+					<mrow>\amp m = \pm 2:\ \ y= \pm 31.5\text{ cm}</mrow>
+				</md>
+			</p>
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Location-of-Interference-Maxima-and-Minima-in-Youngs-Double-Slit-Experiment"><title>Location of Interference Maxima and Minima in Young's Double-Slit Experiment</title>
+
+		<statement>
+			<p>
+				A laser light of wavelength <m>632.8\text{ nm}</m> passes through two narrow slits separated by <m>10.0\ \mu\text{m}</m> and form an interference pattern  on a screen <m>1.5\text{ m}</m> away.  (a) Find the location of three bright and two dark spots.   (b) What is the maximum order of interference seen on the screen?
+			</p>
+		</statement>
+		<hint><p>Use interference conditions.</p></hint>
+		<answer><p>(a) Bright: <m>0^\circ</m>, <m>+3.63^\circ</m>, <m>-3.63^\circ</m>; Dark: <m>+1.81^\circ</m>, <m>-1.81^\circ</m> (b) <m> 15 </m>. </p></answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a) First let us find the positions of the constructive interferences.  Here they occur in the directions given by the angle <m>\theta</m> that obeys
+				<me>
+					d\sin\theta = m\lambda,\ \ m = 0, \pm 1, \pm 2, \cdots.
+				</me>
+				This gives the following angles for three values of <m>m</m>.
+				<md>
+					<mrow> \amp m = 0 \ \ \ \Longrightarrow\ \ \ \theta = 0.</mrow>
+					<mrow> \amp m = 1 \ \ \ \Longrightarrow\ \ \ \theta = \sin^{-1}\left(\dfrac{\lambda}{d} \right) = +3.63^{\circ}.</mrow>
+					<mrow> \amp m = -1 \ \ \ \Longrightarrow\ \ \ \theta = \sin^{-1}\left(\dfrac{-\lambda}{d} \right) = -3.63^{\circ}.</mrow>
+				</md>
+				Here, the destructive interferences occur at the angle given by
+				<me>
+					d\sin\theta = \left(m + \dfrac{1}{2}\right)\:\lambda,\ \ m = 0, \pm 1, \pm 2, \cdots.
+				</me>
+				We will find the angles for <m>m = 0</m> and <m>m = -1</m>.
+				<md>
+					<mrow> \amp m = 0 \ \ \ \Longrightarrow\ \ \ \theta = \sin^{-1}\left(\dfrac{\lambda}{2d} \right) = +1.81^{\circ}.</mrow>
+					<mrow>\amp m = -1 \ \ \ \Longrightarrow\ \ \ \theta = \sin^{-1}\left(\dfrac{-\lambda}{2d} \right) = -1.81^{\circ}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				(b) <m>n_{\text{max}} =  \left\lfloor\frac{d}{\lambda} \right\rfloor = 15</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Separation-of-Red-and-Blue-Colors-by-Interference"><title>Separation of Red and Blue Colors by Interference</title>
+
+		<statement>
+			<p>
+				The sunlight is incident on an opaque board with two narrow slits separated by 250  <m>\mu</m>m.  A spectrum of bands is observed on a white board screen one meter away from the slits.  (a) What is the separation between the red (assume 650 nm) and blue (assume 400 nm) bands in the first order?   (b) What is the separation between the red (assume 650 nm) and blue (assume 400 nm) bands in the second order?
+			</p>
+		</statement>
+		<hint><p>Use interference conditions.</p></hint>
+		<answer><p>
+			 (a) <m>y_{\text{red}} = 2.6\ \text{mm}</m>, <m>y_{\text{blue}} = 1.6\ \text{mm}</m>; (b) <m>y_{\text{red}} = 5.2\ \text{mm}</m>, <m>y_{\text{blue}} = 3.1\ \text{mm}</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a) (Red) 
+				We will first find the angles and positions on the screen for the first and second order interferences and then use them to answer the two parts.
+				<md>
+					<mrow>
+						\amp  \theta_1 (\text{red})= \sin^{-1}\left(\dfrac{650\:\text{nm}}{250\times 10^{3}\:\text{nm}} \right) = 0.149^{\circ},</mrow>
+					<mrow>
+						\amp  \theta_2 (\text{red})= \sin^{-1}\left(\dfrac{2\times650\:\text{nm}}{250\times 10^{3}\:\text{nm}} \right) = 0.298^{\circ}. </mrow>
+				</md>
+				We convert these to <m>y</m> coordinates at the screen by <m>\tan\theta = y/L</m>.
+				<md>
+					<mrow>
+						\amp y_1(\text{red}) = 1000\text{ mm}\tan 0.149^{\circ} =  2.6\:\text{mm},</mrow>
+					<mrow>
+						\amp 
+						 y_2(\text{red}) = 1000\text{ mm}\tan 0.298^{\circ} = 5.2\:\text{mm} </mrow>
+				</md>				
+			</p>
+		</solution>
+		<solution><title>(b)</title>		
+			<p> (b) (Blue) 
+				<md>
+					<mrow>
+						\amp  \theta_1 (\text{blue})= \sin^{-1}\left(\dfrac{4000\:\text{nm}}{250\times 10^{3}\:\text{nm}} \right) = 0.092^{\circ},
+					</mrow>
+					<mrow>
+						\amp  \theta_2 (\text{blue})= \sin^{-1}\left(\dfrac{2\times400\:\text{nm}}{250\times 10^{3}\:\text{nm}} \right) = 0.18^{\circ}.
+					</mrow>
+				</md>
+				We convert these to <m>y</m> coordinates at the screen by <m>\tan\theta = y/L</m>.
+				<md>
+					<mrow>
+						\amp y_1(\text{blue}) = 1000\text{ mm}\tan 0.092^{\circ} =  1.6\:\text{mm},</mrow>
+					<mrow>
+						\amp 
+						 y_2(\text{blue}) = 1000\text{ mm}\tan 0.18^{\circ} = 3.2\:\text{mm}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="exercise-Finding-Wavelength-from-Interference-Pattern-in-Youngs-Double-Slit-Experiment"><title>Finding Wavelength from Interference Pattern in Young's Double-Slit Experiment</title>
+
+		<statement>
+			<p>
+				When a laser light of unknown wavelength is passed through two narrow slits separated by 150  <m>\mu</m>m, an interference pattern is observed on a screen 1.5 m  away.  The distance between the central spot and first order constructive interference is found to be 5 mm.  (a) Find the wavelength of light.  (b) Where would the second order constructive interference form on the screen, if at all?
+			</p>
+		</statement>
+		<hint><p>Using small angle, you should get <m>\lambda \approx d \times \dfrac{y}{L}</m>.</p></hint>
+		<answer><p>(a) <m>0.5\:\mu\text{m}</m>. (b) <m>10\:\text{mm}</m>. </p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a) Let <m>\lambda</m> be the unknown wavelength and let <m>d</m> stand for the separation of the slits.  Then the condition for the angle <m>\theta</m> for a first-order constructive interference in this situation will be
+				<me>
+					d\:\sin\:\theta = \lambda.
+				</me>
+				The angle <m>\theta</m> is also obtained from the geometry of set up. From the distance <m>L</m> to the screen and the distance  <m>y</m> of the interference spot from the central spot we get
+				<me>
+					\sin\theta = \dfrac{y}{\sqrt{y^2 + L^2}} \approx \dfrac{y}{L}.
+				</me>
+				Therefore,
+				<me>
+					\lambda = d \times \dfrac{y}{L}.
+				</me> 
+				Now, we can put in the numerical values to obtain
+				<me>
+					\lambda = 150\:\mu\text{m}\times \dfrac{0.005\:\text{m}}{1.5\:\text{m}} = 0.5\:\mu\text{m}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>		
+			<p>
+				(b) For the second order interference the condition is
+				<me>
+					d\:\sin\:\theta = 2\lambda,\ \ \sin\:\theta = \dfrac{2\lambda}{d} = \dfrac{1\:\mu\text{m}}{150\:\mu\text{m}}.
+				</me>
+				Therefore, <m>\theta \approx 1/150\:\text{rad}</m>. Now, we multiply this by <m>L= 1.5</m> m to obtain the <m>y</m>-coordinate of this spot, <m>y = \frac{1}{150}\:\text{rad} \times 1500\:\text{mm} = 10\:\text{mm}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

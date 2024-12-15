@@ -1,0 +1,284 @@
+<section xml:id="Inductance-Bootcamp"><title> Inductance Bootcamp </title>
+	<introduction>
+		<p>
+		</p>
+	</introduction>
+
+	<subsection><title>Mutual Inductance </title>
+
+ 		<problem><title> Mutual Inductance of a Solenoid Surrounded by a Loop </title>
+			<p> Follow the link: <xref ref="exp-Mutual-Inductance-of-a-Solenoid-Surrounded-by-a-Loop" />.
+			</p>
+		</problem>
+
+ 		<problem><title> Mutual Inductance of a Loop of Wire and a Solenoid </title>
+			<p> Follow the link: <xref ref="ex-Mutual-Inductance-of-a-Loop-of-Wire-and-a-Solenoid" />.
+			</p>
+		</problem>
+
+  		<problem><title> Mutual Inductance of Two Circular Loops with a Common Center </title>
+			<p> Follow the link: <xref ref="exp-Mutual-Inductance-of-Two-Circulr-Loops-with-a-Common-Center" />.
+			</p>
+		</problem>
+
+  		<problem><title> Mutual Inductance of two Solenoids, One Inside the Other </title>
+			<p> Follow the link: <xref ref="exp-Mutual-Inductance-of-two-Solenoids-One-Inside-the-Other" />.
+			</p>
+		</problem>
+
+
+ 
+
+	</subsection>
+
+	<subsection><title>Self-Inductance </title>
+
+	  	<problem><title> Self Inductance of a Solenoid </title>
+			<p> Follow the link: <xref ref="ex-Self-Inductance-of-a-Solenoid" />.
+			</p>
+		</problem>
+
+	  	<problem><title>  (Calculus) Self Inductance of a Coaxial Cable </title>
+			<p> Follow the link: <xref ref="ex-Self-Inductance-of-a-Coaxial-Cable" />.
+			</p>
+		</problem>
+ 
+	  	<problem><title>  (Calculus) Self-inducatance of a Rectangular Torroid </title>
+			<p> Follow the link: <xref ref="ex-Self-inducatance-of-a-Rectangular-Torroid-and-Magnetic-Energy-in-Torroid" />.
+			</p>
+		</problem>
+ 
+
+
+	</subsection>
+
+	<subsection><title>Inductance in Circuits </title>
+
+	  	<problem><title> Variation of Current in an RL-Circuit </title>
+			<p> Follow the link: <xref ref="ex-Variation-of-Current-in-an-RL-Circuit" />.
+			</p>
+		</problem>
+
+	  	<problem><title> Computing Currents in an RL Circuit </title>
+			<p> Follow the link: <xref ref="ex-Computing-Currents-in-an-RL-Circuit" />.
+			</p>
+		</problem>
+
+	  	<problem><title> Numerical RL-Circuit </title>
+			<p> Follow the link: <xref ref="ex-Numerical-RL-Circuit" />.
+			</p>
+		</problem>
+
+	  	<problem><title> ( Calculus) Numerical Study of Current Rise and Magnetic Energy Storage in a Coil </title>
+			<p> Follow the link: <xref ref="ex-Numerical-Study-of-Current-Rise-and-Magnetic-Energy-Storage-in-a-Coil" />.
+			</p>
+		</problem>
+ 
+	  	<problem><title> (Calculus) Voltage Drop Across a Coil with Changing Current </title>
+			<p> Follow the link: <xref ref="ex-Voltage-Drop-Across-a-Coil-with-Changing-Current" />.
+			</p>
+		</problem>
+ 
+	  	<problem><title> (Calculus) Different Time Constants in Different Branches of an RL-Circuit </title>
+			<p> Follow the link: <xref ref="ex-Different-Time-Constants-in-Different-Branches-of-an-RL-Circuit" />.
+			</p>
+		</problem>
+
+
+
+
+	</subsection>	
+
+ 
+
+
+
+	<subsection><title> Miscellaneous </title>
+
+
+		<problem xml:id="pr-Mutual-Inductance-of-a-Straight-Wire-and-a-Square-Loop-and-Magnetic-Energy"><title> (Calculus) Mutual Inductance of a Straight Wire and a Square Loop and Magnetic Energy </title>
+			<statement>
+				<sidebyside widths="55% 45%">
+					<p>
+						(a) Determine the mutual inductance of a long wire and a square loop of side a lying in the same plane with a separation <m>d</m> as shown in <xref ref="fig-exer-induct-1"/>.  (b) Determine the amount of magnetic energy stored in the area of the square loop when a steady current <m>I</m> flows in the straight wire.
+					</p>
+					<figure xml:id="fig-exer-induct-1">
+						<caption></caption>
+						<image source="./images/inductance/exer-induct-1.png" width="50%"/>
+					</figure>
+				</sidebyside>
+			</statement>
+			<hint> <p>   </p> </hint>
+			<answer> <p> (a)  <m>\mathcal{M} = \frac{\mu_0 a}{2\pi}\ln{\left( \frac{d+a}{d}\right)}</m>.  </p> </answer>
+			<solution> <title>(a) </title>
+				<p>
+					(a)	For the purpose of calculations, we let a current <m>I</m> pass through the long straight wire and find the flux of magnetic field of this current through the square loop.  The flux divided by the current will give us the mutual inductance of the two circuits. The magnetic field of the current in the wire at a point P inside the loop which is at a distance <m>r</m> from the wire has the magnitude
+					<me>
+						B_{\text{of wire}} = \dfrac{\mu_0\:I}{2\pi\:r},
+					</me>
+					direction perpendicular to the plane surface of the loop. Consider a strip of are of width <m>dr</m> and height <m>a</m> at a distance <m>r</m> away from the wire.  The flux through this strip will be
+					<me>
+						d\Phi = \dfrac{\mu_0\:I}{2\pi\:r}\:a\:dr
+					</me>
+					Therefore, the flux through the area of the loop will be 
+					<me>
+						\Phi_{\text{through loop}} = \dfrac{\mu_0\:I\:a}{2\pi }  \int_{d}^{d+a}\:\dfrac{dr}{r} = \dfrac{\mu_0\:I\:a}{2\pi } \:\ln\left( \dfrac{d+a}{d}\right).
+					</me>
+					Dividing this by <m>I</m> will give the mutual inductance of the two circuits.
+					<me>
+						\mathcal{M} = \dfrac{\mu_0\:a}{2\pi } \:\ln\left( \dfrac{d+a}{d}\right)
+					</me>
+	 
+				</p>
+			</solution>
+			<solution> <title>(b) </title>
+				<p>
+					(b)	The energy stored in the magnetic field in the area enclosed by the loop can be calculated by imagining a volume about the loop.  Suppose the given loop is in the <m>xy</m>-plane.  Then we imagine an infinitesimal height <m>\Delta z</m> perpendicular to the loop.  The energy in the magnetic field in a small box of length <m>a</m>, width <m>dr</m>, and height <m>\Delta z</m> located at a distance <m>r</m> from the axis and parallel to the axis is given by the product of the square of the average magnitude of the magnetic field in the box and  the volume of the box.
+					<me>
+						dU =\dfrac{1}{2\mu_0} B^2 \times a\times dr\times \Delta z = \dfrac{1}{2\mu_0}\: \left( \dfrac{\mu_0\:I}{2\pi\:r} \right)^2\times a\times dr\times \Delta z.
+					</me>
+					We need to add up energy in all such boxed in the space of the loop.  This yields the following integral.
+					<me>
+						U =  \dfrac{\mu_0\:I\:a\Delta z}{8\pi^2} \int_{d}^{d+a}\: \dfrac{dr}{r^2} = \dfrac{\mu_0\:I\:a\Delta z}{8\pi^2}\:\left( \dfrac{1}{d} - \dfrac{1}{d+a}\right).
+					</me>
+					Note the magnetic energy depends on the height of the box whose one edge is the square loop in the problem. We can compute the energy per unit of the height of the box by dividing <m>U</m> by <m>\Delta z</m>.
+				</p>
+			</solution>
+		</problem>
+ 
+
+
+	<problem xml:id="pr-Self-Inductance-of-a-Coaxial-Cable"><title> (Calculus) Self Inductance of a Coaxial Cable </title>
+		<statement>
+			<p>
+				(a) Determine the self-inductance per unit length of a coaxial cable with an inner hollow conductor of radius <m>a</m> and outer conductor of radius <m>b</m>.  (b) Find the amount of energy in magnetic field stored per unit length of the coaxial cable if a current <m>I</m> flows in the inner wire and returns in the outer conductor. (Ignore the effect of the magnetism of the material.)  
+			</p>
+
+		</statement>
+		<hint> <p>  Try passing current <m>I</m> through the central wire with the return current in the outer jacket.l </p> </hint>
+		<answer> <p> (a) <m> \dfrac{\mu_0}{2\pi}\:\ln\left( \dfrac{b}{a}\right)</m>, (b)  <m>U/h = \frac{\mu_0 I }{4\pi}\left( 1/a-1/b\right)</m>. </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a)	For the purpose of calculations, we pass a current I through the coaxial cable with the return current in the outer jacket.  The magnetic field between the conductors is circulating with magnitude given by Ampere's law.
+				<me>
+					B = \dfrac{\mu_0}{2\pi}\:\dfrac{I}{r}\ \ (a \lt r \lt b).
+				</me>
+				Let us find the flux through a rectangular cross-section of height H parallel to the length of the cable and width from <m>r = a</m> to <m>r = b</m>. 
+				<md>
+					<mrow> \Phi \amp = \iint\:\vec B\cdot d\vec A = \dfrac{\mu_0\: I\: h}{2\pi}\:\int_a^b\:\dfrac{dr}{r}</mrow>
+					<mrow> \amp = \dfrac{\mu_0\: I\: h}{2\pi}\:\ln\left( \dfrac{b}{a}\right).</mrow>
+				</md>
+				Dividing the flux <m>\Phi</m> by the current <m>I</m> give the self-inductance the cable, from which we obtain the self-inductance per unit length to be
+				<me>
+					\dfrac{L}{h} = \dfrac{\Phi/I}{h} = \dfrac{\mu_0}{2\pi}\:\ln\left( \dfrac{b}{a}\right)
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b) The amount of magnetic energy can be obtained by integrating <m>B^2</m> in the volume between the conductors.  We take a length <m>h</m> parallel to the wires to do the calculation.  The energy stored in this finite space would be
+				<md>
+					<mrow> U_{\text{mag}}\amp = \dfrac{1}{2\mu_0}\:\int\:B^2\:dV</mrow>
+					<mrow> \amp = \dfrac{1}{2\mu_0}\:\int\:\left(\dfrac{\mu_0}{2\pi}\:\dfrac{I}{r} \right)^2 \:2\pi\:h\:dr</mrow>
+					<mrow>\amp =  \dfrac{\mu_0\:I^2\:h}{4\pi}\:\left(\dfrac{1}{a} -\dfrac{1}{b} \right).</mrow>
+				</md>
+				Hence, magnetic energy per unit length is
+				<me>
+					\dfrac{U_{\text{mag}}}{h} = \dfrac{\mu_0\:I^2}{4\pi}\:\left(\dfrac{1}{a} -\dfrac{1}{b} \right).
+				</me>
+			</p>
+		</solution>
+	</problem>
+
+	<problem xml:id="pr-Self-inducatance-of-a-Rectangular-Torroid-and-Magnetic-Energy-in-Torroid"><title> 
+	(Calculus) Self-inducatance of a Rectangular Torroid and Magnetic Energy in Torroid  </title>
+		<statement>
+			<p>
+				(a) Find the self-inductance of a loop of wire with <m>N</m> turns around a rectangular cross-section torroid of internal radius <m>a</m>, external radius <m>b</m> and height <m>h</m>. (b) Find the amount of energy in the magnetic field if a current <m>I</m> runs in the wire.
+			</p>
+			<image source="./images/inductance/exer-self-induct-torroid.png" width="50%"/>
+		</statement>
+		<hint> <p> Use Ampere's law to find magnetic field at a point inside the torroid. You will find that magnetic field depends on the radial distance from the axis.  </p> </hint>
+		<answer> <p>  (a) <m>L = \left(\mu_0Nh/2\pi \right)\ln{\left( b/a\right)}</m>,
+				(b) <m>\dfrac{\mu_0\:N\: I^2\: h}{4\pi}\:\ln\left( \dfrac{b}{a}\right) </m>.</p> </answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)	From symmetry in the situation we expect the magnetic field inside the solenoid to circulate about the axis.  Consider a circular Amperian loop of radius <m>r</m> around the axis with <m>a\lt r\lt b</m>.  Then, from Ampere's law we will have
+				<me>
+					2\pi\;r\:B = \mu_0\:N\:I,
+				</me> 
+				since <m>N</m> currents will pass through the are of the Amperian loop. This shows that the magnetic field inside the solenoid is not constant but depends on the distance <m>r</m> from the axis.
+				<me>
+					B = \dfrac{\mu_0\:N\:I}{2\pi}\:\dfrac{1}{r}.\ \ \ \ (1)
+				</me>
+				This is different from what you know for a straight solenoid, where the magnetic field is constant in the space of the solenoid. The flux through the cross-section of the present solenoid can be obtained by integrating the magnetic field in (1) over the area of cross-section of the toroid.
+				<md>
+				 	<mrow> \Phi \amp = \int_a^b\: \dfrac{\mu_0\:N\:I}{2\pi}\:\dfrac{1}{r}\times h\: dr</mrow>
+				 	<mrow> \amp = \dfrac{\mu_0\:N\:I\: h}{2\pi}\:\ln\left( \dfrac{b}{a}\right).</mrow>
+				</md>
+				Factoring out current gives the self-inductance <m>L</m> of the toroid.
+				<me>
+					L = \dfrac{\Phi}{L} = \dfrac{\mu_0\:N\: h}{2\pi}\:\ln\left( \dfrac{b}{a}\right)
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)	When a current <m>I</m> passes through a circuit of self-inductance <m>L</m>, the total magnetic energy can be shown to be equal to <m>\dfrac{1}{2} L I^2</m>.  Therefore, 
+				<me>
+					U_{\text{mag}} = \dfrac{\mu_0\:N\: I^2\: h}{4\pi}\:\ln\left( \dfrac{b}{a}\right).
+				</me>
+				You can obtain this result by also integrating <m>(B^2/2\mu_0)dV</m> over the volume of the toroid.
+			</p>
+		</solution>
+	</problem>
+ 
+
+
+
+
+
+
+
+
+
+
+   		<!-- <problem><title> (Calculus) Self-inducatance of a Rectangular Torroid and Magnetic Energy in Torroid </title>
+			<p> Follow the link: <xref ref="ex-Self-inducatance-of-a-Rectangular-Torroid-and-Magnetic-Energy-in-Torroid" />.
+			</p>
+		</problem> -->
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</subsection>
+
+
+</section>

@@ -1,0 +1,312 @@
+<section xml:id="Position-of-a-Circular-Motion"><title> Position on a Circle </title>
+	<subsection> <title> Arc Length and Angle Subtended</title>
+	<idx><h>Circle</h><h>Arc-Angle Relation</h></idx>
+
+		<p>
+			When an object is moving in a circle, you can quantify its motion either by the distance covered on the circle or by the angle rotated about the center. The distance covered on the circle is called <term>arc length</term> and the angle at the center is called <term>angle subtended</term>. 
+		</p>
+		<p>
+			The distance and angle must be cumulative since the position repeats and we are interested in movement during some duration of time. Therefore, we must add multiples of <m>2\pi</m> radians for each cycle in the counterclockwise direction and <m>-2\pi</m> radians for each cycle in the clockwise direction
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				There is a simple relation between arc length, denoted by  <m> s </m>, corresponding angle <m> \theta </m> subtended at the center, and the radius <m>R</m> of the circle.
+				<me>
+					s =  \theta\,R\ \ \ \ (\theta \text{ in radians.})
+				</me>
+				The relation between <alert>radians</alert> and <alert>degrees</alert> is
+				<me>
+					\pi\text{ radians} = 180^\circ.
+				</me>
+			</p>
+			<p> </p>
+			<figure xml:id="fig-circular-motion-basic">
+				<caption></caption>
+				<image source="./images/circular-motion/circular-motion-basic.png" width="60%"/>
+			</figure>
+		</sidebyside>
+		<p>
+
+				Thus, angle <m>\theta</m> covered when going once around is <m>\theta=2\pi</m> radians. This gives the distance <m>D</m> around the circle once to be
+				<me>
+					D = 2\pi R.
+				</me>
+				This distance is called  <term> circumference</term> of the circle.
+		</p>
+		<sidebyside widths="60% 10% 30%">	
+			<p>
+				In a circular motion, the direction of velocity changes continuously. Thus, in addition to the direction of vector quantities such as velocity and acceleration, we also describe the motion by a <term>sense of rotation</term>. For instance, when we look at the tip of a grandfather clock's <q>minutes arm</q>, it goes around in circle. That sense of circular motion is called <term>clockwise</term>. You can also get this sense by folding left hand around the thumb with thum pointed up (Credit: https://commons.wikimedia.org/wiki/File-Clock-JungHans-6932.jpg). That is why clockwise sense is sometimes called <term>left-handed</term>.
+			</p>
+
+			<p> </p>
+			<figure xml:id="fig-https--commons-wikimedia-org-wiki-File-Clock-JungHans-6932">
+				<caption>Clockwise sense.</caption>
+				<image source="./images/circular-motion/https--commons.wikimedia.org-wiki-File-Clock-JungHans-6932.png" width="60%"/>
+			</figure>
+		</sidebyside>
+
+		
+		<sidebyside widths="50% 10% 40%">		
+			<p>
+				The opposite sense is called <term>counterclockwise</term>>. You can get the counterclockwise sense by using your right hand and try to fold your fingers around the thumb, when the thumb is pointed up. This is the so-called <term>right-handed</term> sense. 
+			</p>
+			<p> </p>
+			<figure xml:id="fig-counterclockwise-sense">
+				<caption>Counterclockwise sense.</caption>
+				<image source="./images/circular-motion/counterclockwise-sense.png" width="60%"/>
+			</figure>
+		</sidebyside>
+		
+	</subsection>
+	<subsection> <title> Position and Displacement on a Circle </title>
+
+	<idx><h>Circular Motion</h><h>Position</h></idx>
+	<idx><h>Position</h><h>On a Circle</h></idx>
+
+	<idx><h>Circular Motion</h><h>Displacement</h></idx>
+	<idx><h>Displacement</h><h>On a Circle</h></idx>
+
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				Position vector <m>\vec r</m> of a particle P with respect to the center O of the circle has magnitude <m>R</m>, the radius of the circle, and direction radially from O to P. Let <m>\theta</m> be the counterclockwise angle of P with respect to positive <m>x</m> axis. Then, <m>x</m> and <m>y</m> components of <m>\vec r</m> will be
+				<me>
+					x = R\, \cos\, \theta,\ \ y = R\, \sin\, \theta.
+				</me>
+			</p>
+			
+			<p></p>
+			<figure xml:id="fig-circular-motion-position">
+				<caption></caption>
+				<image source="./images/circular-motion/circular-motion-position.png"/>
+			</figure>
+		</sidebyside>
+		<p>
+			It is sometimes written using Cartesian unit vectors as
+			<me>
+				\vec r = x\, \hat i + y\, \hat j = (R\, \cos\, \theta)\,\hat i +  (R\, \sin\, \theta)\, \hat j.
+			</me>
+		</p>
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				Let <m>\vec r_1</m> be the position at <m>t=t_1</m> and <m>\vec r_2</m> be the position at <m>t=t_2</m>. Then, displacement <m>\Delta \vec r</m> during an interval <m>\Delta t=t_2-t_1</m> is
+				<md>
+					<mrow> \Delta \vec r \amp = \vec r_2 - \vec r_1,</mrow>
+					<mrow> \amp = (x_2 - x_1)\, \hat i + (y_2 - y_1)\, \hat j,</mrow>
+				</md>
+			</p>
+			<p></p>
+			<figure xml:id="fig-circular-motion-displacement">
+				<caption></caption>
+				<image source="./images/circular-motion/circular-motion-displacement.png"/>
+			</figure>
+		</sidebyside>
+
+		
+		<p> We can express this using radius of circle and angles.
+			<md>
+				<mrow>\Delta \vec r \amp = R(\cos \theta_2 - \cos \theta_1)\, \hat i + R(\sin \theta_2 - \sin \theta_1)\, \hat j,</mrow>
+				<mrow> \amp = 2 R \left(  -\sin \dfrac{\theta_2 + \theta_1}{2} \, \hat i +  \cos\dfrac{\theta_2 + \theta_1}{2} \, \hat j \right)\sin \dfrac{\theta_2 - \theta_1}{2},</mrow>
+			</md>
+			where I used trig identities for <m>\cos A - \cos B</m> and <m>\sin A - \sin B</m>.
+			<md>
+				<mrow>\amp \sin A - \sin B = 2 \cos\,\dfrac{A+B}{2}\, \sin\,\dfrac{A-B}{2},</mrow>
+				<mrow>\amp \cos A - \cos B = -2 \sin\,\dfrac{A+B}{2}\, \sin\,\dfrac{A-B}{2},</mrow>
+			</md>
+		</p>
+		<p><alert>Displacement for Small Intervals</alert></p>
+		<p>
+			The displacement formula for finite intervals simplifies considerably for small time intervals. Let 
+			<md>
+				<mrow> \Delta \theta \amp = \theta_2 - \theta_1,\ \ \text{ and }\ \ \theta = \dfrac{\theta_2 + \theta_1}{2}.</mrow>
+			</md>
+			For small <m>\Delta\theta</m>, we can approximate <m>\sin(\Delta\theta/2)</m> to be  
+			<me>
+				\sin(\Delta\theta/2) \approx \Delta\theta/2,
+			</me>
+			using <m>\sin(x)\approx x</m> for small <m>x</m>. 
+		</p>
+
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				Therefore, displacement for small time intervals around angle <m>\theta</m> will be
+				<me>
+					\Delta \vec r = R\,\Delta\theta\,\left(  -\hat i\, \sin \theta   + \hat j\,  \cos \theta \right). 
+				</me>
+				Vector <m>\left(  -\hat i\, \sin \theta   + \hat j\,  \cos \theta \right)</m> is a unit vector in the direction of tangent to the circle as shown in <xref ref="fig-unit_vector_tangent_to_circle"/>. We denote this unit vector by <m>\hat u_\theta</m>.
+			<me>
+				\Delta \vec r = R\,\Delta\theta\, \hat u_\theta.
+			</me>
+				
+			</p>
+
+			<p></p>
+			<figure xml:id="fig-unit_vector_tangent_to_circle">
+				<caption> </caption>
+				<image source="./images/circular-motion/unit_vector_tangent_to_circle.png"/>
+			</figure>
+		</sidebyside>
+		<p>
+
+			That is for small time intervals, displacement has magnitude <m>R\,\Delta\theta</m>, which is the arc length corresponding to the angle subtended, and direction is tangent to the circle. This makes sense since for small angles, the direct distance will be very close to the distance on the circle.
+		</p>
+		
+
+	</subsection>
+
+	
+
+	<example xml:id="Position-and-Displacement-on-a-Circle">
+		<title> Position, and Displacement on a Circle</title>
+		<statement>
+
+			<sidebyside widths="60% 5% 35%">
+				<p>
+					A child in a merry-go-round is moving in a circle of radius <m> 4\text{ m}</m>. At some instant, let <m> t = 0 </m>, the child is at a point labeled A. Other positions of interest in our problem are B and C in <xref ref="fig-ex-position-and-displacement-in-circle"/>.
+				</p>
+				<p> </p>
+				<figure xml:id="fig-ex-position-and-displacement-in-circle">
+					<caption>For <xref ref="Position-and-Displacement-on-a-Circle"/>. </caption>
+					<image source="./images/circular-motion/ex-position-and-displacement-in-circle.png"/>
+				</figure>
+			</sidebyside>
+
+			<p>
+				(a) At time <m> t=2.0\text{ sec}</m>, the child is at another point labeled B. How far distance on the arc between A and B has the child moved if the angle subtended at the center O between lines  OA and OB is <m> 30^{\circ}</m> (i) assuming the child has not gone full circle yet, (ii) assuming, the child has gone two full circles in addition to that shown in the figure?
+			</p>
+			<p>
+				(b) At some other instant, <m> t = 3.0\text{ sec}</m>, the child is at point C. If the distance moved between A and C on the arc is <m> 10.0\text{ m}</m>, what is the angle subtended between OA and OC in degrees (i) assuming the child has not gone full circle yet, (ii) assuming, the child has gone two full circles in addition to that shown in the figure? 
+			</p>
+			<p>
+				(c) Suppose you use a Cartesian coordinates with O at the center and OA towards the positive <m> x </m> axis, what are the coordinates of points A, B and C?
+
+			</p>
+			<p>
+				(d) What is the displacement between B and C?
+			</p>
+
+		</statement>
+		<!-- <hint> <p> Use <m> s = R \theta </m>. </p> </hint> -->
+		<answer> <p> (a) (i) <m> 2.09\text{ m}</m>, (ii) <m>52.35\text{ m}</m>, (b) (i) <m> 143.2^{\circ}</m>, (ii) <m>15.1\text{ rad}</m>, (c) <m>(4.0\text{ m}, 0) </m>, <m> ( 3.46\text{ m}, 2\text{ m})</m>, <m> ( -3.20\text{ m}, 2.39\text{ m})</m>  (d) <m>6.67\text{ m}</m> at <m> 3.35^{\circ}</m> clockwise from the negative <m> x </m> axis. </p> </answer>
+		<solution> <title>a</title> 
+			<p> 
+
+				(i) The distance on the arc is related to the angle in radian, so we convert degrees to radians.
+				<me>
+					s = R\theta = 4.0\times \dfrac{30\times \pi}{180} = 2.09\text{ m}.
+				</me>
+				(ii) Since the child has gone two full circles in addition to this, we have
+				<me>
+					s = 2.09\text{ m} + 2\times 2\pi R = 52.35\text{ m}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>b</title>
+			<p>
+				(i) The angle in radian will be
+				<me>
+					\theta = \dfrac{s}{R} = \dfrac{10.0}{4.0} = 2.5\text{ rad}.
+				</me>
+				We need to convert this to degrees.
+				<me>
+					\theta = 2.5 \times 180 / \pi = 143.2^{\circ}.
+				</me>
+				(ii) Now, we will need to add angles covered for two additional full circles.
+				<me>
+					2.5\text{ rad} + 2\times 2\pi\text{ rad} = 15.1\text{ rad}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>c</title>
+			<p>
+				Using the axes given, we will get the following for the positions of A, B, and C.
+				<md>
+					<mrow> \amp \vec r_A = (4.0\text{ m}, 0),</mrow>
+					<mrow> \amp \vec r_B = (4.0\,\cos\,30^{\circ}, 4.0\,\sin\,30^{\circ}) = ( 3.46\text{ m}, 2\text{ m}),</mrow>
+					<mrow> \amp \vec r_C = (4.0\,\cos(2.5\text{ rad}), 4.0\,\sin(2.5\text{ rad})) = ( -3.20\text{ m}, 2.39\text{ m}),</mrow>
+
+				</md>
+			</p>
+		</solution>
+		<solution> <title>d</title>
+
+			<p>
+				Now, since we know the coordinates of B and C, it is trivial to get the <m> x </m> and <m> y</m> components of the displacement vector. From
+				<me>
+					\Delta \vec r = \vec r_C - \vec r_B,
+				</me>
+				we get
+				<md>
+					<mrow>\amp \Delta x = x_C - x_B = -3.20-3.46 = -6.66\text{ m}, </mrow>
+					<mrow>\amp \Delta y = y_C - y_B = 2.39-2 = 0.39\text{ m}. </mrow>
+				</md>
+				We can get the magnitude and direction of the displacement from these components.
+				<md>
+					<mrow>\amp\text{Magnitude: }  \Delta r =  6.67\text{ m}, </mrow>
+					<mrow>\amp \theta = \tan^{-1}\dfrac{0.39}{-6.66} = -3.35^{\circ}. </mrow>
+				</md>
+				Since <m>(-6.66,0.39)</m> is in the second quadrant, the direction is <m> 3.35^{\circ}</m> clockwise from the negative <m> x </m> axis.
+
+			</p>
+		</solution>
+	</example>
+
+<exercises>
+	<exercise xml:id="ex-rolling-a-disk-by-pushing-on-axle"><title> Rolling a Cylinder by Pushing on the Axle (JEE, 2020)</title>
+
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					A small roller of radius <m>R</m> with an axle of radius <m>r</m> is placed on a horizontal floor and a meter ruler is positioned horizontally on the axle with one edge of the ruler on top of the axle as shown in <xref ref="fig-rolling-a-disk-by-pushing-on-axle"/>.  
+				</p>
+				<p></p>
+				<figure xml:id="fig-rolling-a-disk-by-pushing-on-axle">
+					<caption></caption>
+					<image source="./images/circular-motion/rolling-a-disk-by-pushing-on-axle.png"/>
+				</figure>
+			</sidebyside>
+
+
+
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					The ruler is now pushed gently on the axle so that the ruler rides on the axle and the roller rolls without slipping on the floor. After the roller has moved a distance <m>D</m>, how far would the tip of the ruler move? (Adapted from Indian JEE, 2020)  
+				</p>
+				<p></p>
+				<figure xml:id="fig-rolling-a-disk-by-pushing-on-axle-2">
+					<caption></caption>
+					<image source="./images/circular-motion/rolling-a-disk-by-pushing-on-axle-2.png"/>
+				</figure>
+			</sidebyside>
+
+		</statement>
+		<hint><p>
+			The axle rotates same amount of angle as the entire roller, but a point on axle moves different amount in space.
+		</p></hint>
+		<answer><p>
+			<m>\frac{D\,r}{R}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Note that the axle and roller rotate same amount of angle, but while roller rolls a distance <m>2\pi R</m> in one full rotation, a point on axle moves only <m>2\pi r</m>. Therefore, when roller has moved a distance <m>D</m>, the tip of the ruler will move
+				<me>
+					\frac{2\pi r}{2\pi R}\; D = \frac{D\,r}{R}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	</exercises>
+
+
+
+
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,306 @@
+<section xml:id="Velocity-of-a-Circular-Motion"><title> Velocity of a Circular Motion </title>
+<idx><h>Circular Motion</h><h>Velocity</h></idx>
+<idx><h>Velocity</h><h>On a Circle</h></idx>
+	 <introduction>
+	 	<p>
+	 		You know that average velocity is displacement divided by interval.
+	 		<me>
+	 			\vec v_\text{av} = \dfrac{\Delta \vec r}{\Delta t}.
+	 		</me>
+	 	</p>
+	 	<sidebyside widths="60% 5% 35%">
+		 	<p>
+		 		For infinitesimal intervals, this formula defines instantaneous velocity. We found in previous section that for small intervals in a circular motion, the displacment is
+		 		<me>
+		 			\Delta \vec r = R \Delta \theta\, \hat u_\theta,
+		 		</me>
+		 		where direction is given by unit vector <m>\hat u_\theta</m>, the direction of tangent to the circle. Therefore, average velocity for small time intervals will be
+		 		<me>
+		 			\vec v_\text{av} = R \dfrac{\Delta \theta}{\Delta t}\; \hat u_\theta.
+		 		</me>
+		 	</p>
+		 	<p> </p>
+		 	<figure xml:id="fig-velocity-unit-vector-tangential">
+		 		<caption></caption>
+		 		<image source="./images/circular-motion/velocity-unit-vector-tangential.png"/>
+		 	</figure>
+		 </sidebyside>
+	 		
+	 	<p>
+	 		The quantity <m> \dfrac{\Delta \theta}{\Delta t}</m> is called average angular <q>velocity</q> although it is <alert>not a vector</alert>. It is denoted by the Greek letter omega,  <m>\omega_\text{av}</m>. 
+	 		<me>
+	 			\omega_\text{av} = \dfrac{\Delta \theta}{\Delta t}.
+	 		</me>
+	 		By convention, <m>\Delta \theta \gt 0</m> for motion in the counterclockwise sense. Velocity <m>\vec v</m> is in the tangetial direction in the unit vector <m>\hat u_\theta</m> direction for motion in counterclockwise sense. On the other hand, when the motion is in the clockwise sense, <m>\Delta \theta \lt 0</m>, and while velocity is still tangetial to circle, but it will be in opposite direction to the unit vector <m>\hat u_\theta</m> direction.
+	 	</p>
+	 	<figure xml:id="fig-velocity-clock-counterclock-senses">
+	 		<caption>
+	 			Velocity for counterclockwise sense is in the direction of the tangential unit vector <m>\hat u_\theta</m> and in the opposite direction for clockwise sense of motion.
+	 		</caption>
+	 		<image source="./images/circular-motion/velocity-clock-counterclock-senses.png" width="70%"/>
+	 	</figure>
+
+
+		<p>
+			This can be used to replace the derivative in instantaneous velocity giving us a compact formula.
+			<me>
+				\vec v  = R \omega\, \hat u_\theta.
+			</me>
+			Note the factor <m>	R \omega</m> in velocity is analogous to the arc length <m>R\theta</m>.	
+	 		Thus, instantaneous velocity has magnitude <m>R|\omega|</m>, which is <alert>instantaneous speed </alert> <m>v</m>, and direction in the direction of the tangent to the circle.
+	 		<me>
+	 			v = R|\omega|,
+	 		</me>
+	 		where I have placed absolute sign to denote <alert>angular speed</alert>, which should be positive, regardles sof the clockwise or coungercloskwise sense of motion.
+	 	</p>
+	 	<remark>
+
+	 		<p> <alert>(Calculus)</alert>  
+			 	When we take infinitesimal interval limit, we get velocity at instant <m>t</m> as derivative
+				 <me>
+				 	\vec v  = R \frac{d \theta}{d t}\, \hat u_\theta.
+				 </me>
+				 The instantaneous rate of change of subtended angle is called instantaneous angular velocity, which is denoted by <m>\omega</m>.
+				 <me>
+				 	\omega = \frac{d \theta}{d t}.
+				 </me>
+	 		</p>
+	 	</remark>
+
+	 </introduction>
+
+
+	<example xml:id="ex-Angular-Speed-from-Speed-in-Circular-Motion"><title> Angular Speed from Speed in Circular Motion </title>
+		<statement>
+			<p>
+				A car is rounding a circular bend of radius <m>50\text{ m}</m> with speed <m>20\text{ m/s}</m>. What is the angular speed of the car?
+			</p>
+
+		</statement>
+		<!-- <hint> <p> <m>v = R|\omega|</m>  </p> </hint> -->
+		<answer> <p> <m>0.4\text{ rad/s}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We use <m>v = R|\omega|</m> to find angular speed.
+				<md>
+					<mrow> |\omega| \amp = \dfrac{v}{R}</mrow>
+					<mrow> \amp =  \dfrac{20\text{ m/s}}{50\text{ m}} = 0.4\text{ rad/s}.</mrow>
+				</md>
+				Note that I put <m>\text{rad}</m> in the unit for <m>|\omega|</m> since the displacement it refers to is the angle subtended expressed in radians.
+			</p>
+		</solution>
+	</example>
+
+
+
+
+
+
+
+	<example xml:id="ex-Arc-Length-Arc-Angle-Average-Speed-Average-Angular-Speed-and-Average-Velocity"><title> Arc Length, Arc Angle, Average Speed, Average Angular Speed, and Average Velocity </title>
+		<statement>
+			<sidebyside widths="50% 10% 40%" >
+				<p>
+					<xref ref="fig-bc-one-body-on-a-rotating-platform"/> shows a body fixed at the edge of a circular rotating platform of radius <m> 5 \text{ m}</m>. In <m> 2 \text{ sec}</m>, the body goes from the location marked A to the location marked B without making any full turns, where the marking are in space and not on the platform.				
+				</p>
+				<p>
+				</p>
+				<figure xml:id="fig-bc-one-body-on-a-rotating-platform">
+					<caption>For <xref ref="ex-Arc-Length-Arc-Angle-Average-Speed-Average-Angular-Speed-and-Average-Velocity"/>  </caption>
+					<image source="./images/circular-motion/bc-one-body-on-a-rotating-platform.png" width="50%"/>
+				</figure>
+			</sidebyside>
+ 
+			<p>(a)
+				What is the value of the angle rotated in radian?
+			</p>
+			<p>(b)
+				How much net distance has the body moved?
+			</p>
+			<p>(c) 
+				What is the average speed of the body?
+			</p>
+			<p>(d)
+				What is the average angular speed of the body?
+			</p>
+			<p>(e)
+				Draw arrows on the figure to show the direction of the velocity (i) at the instant the body was at A and (ii) at the instant the body was at B. 
+			</p>
+			<p>(f)
+				(i) Draw an arrow on the figure to show the direction of the average velocity during the interval between A and B. (ii) What is the magnitude of the average velocity?  
+			</p>
+			<p> (g)
+				Suppose the body ended up at location B, but during the <m> 2 \text{ sec}</m> interval, the body made three full turns before ending up at B. What would be the average speed and  average angular speed now?
+			</p>
+			<p> (h) 
+				Suppose the body ended up at location B, but during the <m> 2 \text{ sec}</m> interval, the body made three full turns before ending up at B. Will the average velocity now be same or different from the situation when the body did not make any full turns? Why or why not?
+			</p>
+		</statement>
+		<!-- <hint> <p>  Use definitions. </p> </hint> -->
+		<answer> <p>  (a) <m> \dfrac{\pi}{3}\text{ rad}</m>,
+		(b) <m> 5.24\text{ m} </m>, (c) <m> 2.62  \text{ m/s}</m>,
+		(d) <m> 0.524  \text{ rad/s}</m>, (e) and (f) see the solution for figures; <m>
+					v_{\text{av}} = 2.5\text{ m/s}.
+				</m>, (g) <m> 49.74\text{ m/s}, 9.95\text{ rad/s} </m>,
+		(h) Same as (f), magnitude of average velocity <m> 2.5\text{ m/s} </m>.
+
+		 </p> </answer>
+		<solution> <title> a,b,c,d </title>
+			<p> (a)
+				<m> \theta = 60^{\circ} = 60\times\dfrac{\pi}{180} = \dfrac{\pi}{3}\text{ rad}</m>.
+			</p>
+			<p> (b)
+				<m> s = R\,\theta = 5\times \dfrac{\pi}{3} = 5.24\text{ m}</m>.
+			</p>
+			<p> (c)
+				<m> v_{\text{s,av}} = \dfrac{d}{t} = \dfrac{5.24}{2} = 2.62  \text{ m/s}</m>.
+			</p>
+			<p> (d)
+				<m> \omega_{\text{av}} = \dfrac{\theta}{t} = \dfrac{\pi}{3\times2} =  0.524  \text{ rad/s}</m>.
+			</p>
+
+		</solution>
+
+		<solution><title> e,f </title>
+
+			<p>(e) and (f). The figure shows the velocity directions at A (<m> \vec v_A</m>) and at B (<m> \vec v_B</m>), and the average velocity direction(<m> \vec v_{\text{av}}</m>). 
+			</p>
+			<image source="./images/circular-motion/bc-one-body-on-a-rotating-platform-ef.png" width="50%"/>
+			<p>
+				To figure out the magnitude of the average velocity, we need the direct distance between points A and B, and <em>  not the distance on the arc</em>, which was used for the average speed.
+			</p> 
+			<p>
+				We can compute the direct distance from the <m> (x,y) </m> of A and B. The formula for direct distance between two points with coordinates <m> (x_A, y_A) </m> <m> (x_B, y_B) </m> is
+				<me>
+					d = \sqrt{ (\Delta x)^2 + (\Delta y)^2  },
+				</me>
+				where <m> \Delta x = x_B - x_A </m> and <m> \Delta y = y_B - y_A </m>.
+			</p>
+			<p>
+				In the figure, we have 
+				<md> 
+					<mrow> \amp x_A = R,\ \ y_A = 0 </mrow>
+					<mrow> \amp x_B = 5\,\cos\, 60^{\circ} = 2.5\text{ m},\ \ y_B =  5\,\cos\, 60^{\circ} = 4.33\text{ m}.</mrow>
+				</md>
+				Therefore, the direct distance
+				<me>
+					d = \sqrt{2.5^2 + 4.33^2} = 5\text{ m}.
+				</me>
+				Therefore, the magnitude of the average velocity is
+				<me>
+					v_{\text{av}} = \dfrac{5}{2} = 2.5\text{ m/s}.
+				</me>
+
+			</p>
+
+
+		</solution>
+
+		<solution><title> g,h </title>
+
+			<p> (g) 
+				If the body made three additional full turns, then the distance traveled for average speed will be not just the arc length from A to B but that plus the distance of the three full turns. For each turn, the distance is the circumference, <m> 2\pi R </m>. The time still is <m> 2\text{ sec}</m>. Therefore, the average speed now will be
+				<me>
+					v_{\text{s,av}} = \dfrac{5.24 + 3\times 2\pi\times 5}{2} = 49.74\text{ m/s}.
+				</me>
+				Similarly, the average angular speed will include all the angles went over.
+				<me>
+					\omega_{\text{av}} = \dfrac{\pi/3 + 3\times 2\pi}{2} = 9.95\text{ rad/s}.
+				</me>
+
+			</p>
+
+			<p> (h) 
+				For average velocity, whatever you did between A and B does not matter - only the end points matter. Therefore, the direct distance will not change, and since the time is the same, the magnitude of the averafge velocity will not change. The direction is also the same, from point A towards point B.  
+
+			</p>
+		</solution>
+	</example>
+
+
+	<exercises>
+
+		<exercise xml:id="ex-Angular-Velocity-from-Angle-as-a-Function-of-Time"><title>(Calculus) Angular Velocity from Angle as a Function of Time  </title>
+			<statement>
+				<p>
+					 A car is moving in a circular path of radius <m>40\text{ m}</m> with increasing speed. Its angular position is given by <m>\theta = 0.05\, t^2</m> in radians when <m>t</m> is in seconds.  (a) What is angular speed at <m>t=3\text{ s}</m>? (b) (a) What is speed at <m>t=3\text{ s}</m>?
+				</p>
+
+			</statement>
+			<hint> <p> (a) Use <m> \omega = d\theta/dt</m>, (b) Use <m>v = R|\omega|</m>.  </p> </hint>
+			<answer> <p> (a) <m> 0.3\text{ rad/s}</m>, (b) <m> 12\text{ m/s}</m>.  </p> </answer>
+			<solution> 
+				<p>
+					 (a) Angular speed will be absolute value of
+					 <me>
+					 	\omega = \dfrac{d\theta}{dt} = 0.1\, t.
+					 </me>
+					 Evaluating this at <m>t=3\text{ s}</m>, we get <m>\omega = 0.3\text{ rad/s}</m>.
+				</p>
+				<p>
+					(b) We use <m>v = R|\omega|</m> to find speed.
+					<me>
+						v = R|\omega| = 40\text{ m} \times 0.3\text{ rad/s} = 12\text{ m/s}.
+					</me>
+					You may have noticed that when multiplying <m>\text{radian}</m> by another unit, <m>\text{radian}</m> disappears since it is itself dimensionless, being ratio of two distances.
+				</p>
+			</solution>
+		</exercise>
+
+
+		<exercise xml:id="ex-Circular-Motion-of-a-Protein-in-a-Centrifuge"><title>Circular Motion of a Cell in a Centrifuge</title>
+
+			<statement>
+				<p>
+					In a centrifuge a biological soup are sometimes placed in a test tube and then test tube is spun in a centrifuge. Suppose a cell is moving in a circular path of radius <m>5\text{ cm}</m>. If the centrifuge is spinning at angular speed of <m>100,000\text{ revolutions per minute}</m>. What is the speed of the cell in <m>\text{m/s}</m>?
+				</p>
+			</statement>
+			<hint><p>Convert rev/min to rad/sec.</p></hint>
+			<answer><p><m>524\text{ m/s}</m>.</p></answer>
+			<solution>
+				<p>
+					The angular speed is given in revolutions per minute. We need to convert this into rad/sec. In each revolution, the motion covers <m>2\pi\text{ rad}</m>. Therefore,
+					<me>
+						\omega = 100,000 \times \frac{2\pi}{60} = 10,472\text{ rad/sec}.
+					</me>
+					Therefore, speed of the cell is
+					<me>
+						v = \omega R = 10,472 \times 0.05 = 524\text{ m/s}.
+					</me>
+				</p>
+			</solution>
+		</exercise>		
+
+
+
+
+		<exercise xml:id="ex-Practice-with-a-Friend-Regular-Velocity-and-Angular-Velocity-of-Earth"><title>Practice with a Friend: Regular and Angular Velocity of Earth</title>
+
+			<statement>
+				<p>
+					Earth goes around Sun in almost a circular orbit of radius <m>1.5\times 10^{11}\text{ m}</m> once around in approximately <m>365.2425\text{ days}</m>. (a) What is Earth's angular velocity for its oribital motion about the Sun? (b) How fast is the Earth moving through space?
+				</p>
+			</statement>
+			<answer><p>(a) <m>2.0\times 10^{-7}\text{ rad/sec}</m>, (b) <m>29.9\text{ km/s}.</m>. </p></answer>
+			<!-- <solution>
+				<p>
+					No solution provided.
+				</p>
+			</solution> -->
+		</exercise>
+
+
+
+	</exercises>
+
+
+
+
+
+
+
+
+
+
+
+</section>

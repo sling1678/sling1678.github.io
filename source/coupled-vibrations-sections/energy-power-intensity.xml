@@ -1,0 +1,261 @@
+<section xml:id="energy-power-intensity"><title>Energy, Power, and Intensity</title>
+    <subsection>
+	<title>Energy Transported by Plane Wave</title>
+        <p>
+            All waves transport energy without an actual transport of material. For concreteness, as shown in <xref ref="fig-intensity-definition"/> consider a wave of frequency <m>f</m>, wavelength <m>\lambda</m>, and amplitude <m>D</m> on a taut string with tension <m>T</m> and mass per unit length <m>\mu</m>. We denote the amplitude of the displacement of string particles by letter <m>D</m> rather than letter <m>A</m> since the later will be used for area below. Supposing the wave is moving in the positive <m>x</m> axis direction wave will have the following expression.
+            <me>
+                \psi = D \cos\left( \frac{2\pi}{\lambda} x - 2\pi f t\right).
+            </me>
+        </p>
+        <figure xml:id="fig-intensity-definition">
+            <caption>
+                A wave passing through a cross-sectional area; intensity of the wave is defined as average power passing per unit are perpendicular to the wave direction.  The wave shown here has speed <m>v</m>.  The energy contained in the box of area <m>A_{\perp}</m> and height <m>v\Delta t</m> pass through <m>A_{\perp}</m> in time <m>\Delta t</m>.
+            </caption>
+            <image source="./images/coupled-vibrations/intensity-definition.png" width="80%"/>
+        </figure>
+        <p>
+            In <xref ref="fig-intensity-definition"/>, the energy of the wave will be contained in the motion (kinetic energy) and the deformation (potential energy). Let us figure out the energy contained within a distance <m>v\Delta t</m> of the plane labeled <m>A_\perp</m> in the figure. Since each part of the string executes simple harmonic motion at frequency <m>f</m> of the wave, we can use formulas for energy derived in the simple harmonic motion to get some ideas about energy involved here.  Let <m>K</m> stand for effective spring constant (we use capital <m>K</m> to distinguish it from wavenumber <m>k</m>) and <m>M</m> the mass of string in length <m>v\Delta t</m>, where <m>v</m> is the wave speed. Let <m>V</m> denote maximum speed of motion of particles of string. Thus, average energy within a length <m>v\Delta t</m> of the string can be estimated to be 
+            <men>
+                E_\text{av} = \frac{1}{2} K D^2 = \frac{1}{2} M V^2
+            </men>
+            Additionally, by analogy with simple harmonic oscillator, we can replace <m>V</m> by
+            <men>
+                V = \omega D= 2\pi f D.
+            </men>
+            Using this we find 
+            <men>
+                K = M \omega^2 = 4\pi^2 M f^2.
+            </men>
+            Therefore,
+            <men>
+                E_\text{av} = \frac{1}{2} K D^2 =  2 \pi^2 M f^2 D^2.
+            </men>
+            This energy will pass any point of string in time <m>\Delta t</m>. Therefore, the average rate of flow of energy, i.e., average power <m>P</m>, in the string will be
+            <mdn>
+                <mrow number="no">P_\text{av} \amp = \frac{E_\text{av}}{\Delta t} = \frac{2 \pi^2 M f^2 D^2}{\Delta t}, </mrow>
+                <mrow number="no"> \amp =  \frac{2 \pi^2 M v f^2 D^2}{v\Delta t} = 2 \pi^2 \mu v f^2D^2, </mrow>
+                <mrow xml:id="eq-power-in-wave-on-a-string"> \amp = 2 \pi^2 \mu \lambda f^3 D^2, </mrow>
+            </mdn>
+            This says that the rate at which energy is transported by a wave is proportional to the square of the amplitude of the wave.
+            <men>
+                P_\text{av} \propto D^2.
+            </men>
+
+                        
+        </p>    
+            
+        <p>
+
+            It is of interest to know how <q>concentrated</q> the power is in any region. Therefore, we define a property called <term>intensity</term> of the wave by dividing power by the area of the surface the wave is flowing through, here it will be <m>A_\perp</m>. 
+            <men xml:id="eq-definition-of-intensity">
+                I = \frac{P_\text{av}}{A_\perp} = \frac{2 \pi^2 \mu \lambda f^3 D^2}{A_\perp}.
+            </men>
+            Imporant observation here again is that intensity of a wave is proportional to the square of the amplitude.
+            <men>
+                I \propto D^2.
+            </men>
+            For a plane wave intensity does not change from one location to another or with time. This is not the case for spherical wave as we will see below.
+        </p>
+        <p>
+            Note that <m>D</m> in Eq. <xref ref="eq-definition-of-intensity"/> has the units of length since it corresponds to displacement in its derivation. The unit of intensssity will be
+            <me>
+                \text{unit of } I = \frac{\text{kg}}{\text{m}} \times \frac{1}{\text{s}^3} \frac{\text{m}^2}{\text{m}^2} = \frac{\text{W}}{\text{m}^2},
+            </me>
+            where <m>\text{W}</m> is Watts or <m>\text{J/s}</m>.
+        </p>
+ 
+    </subsection>
+
+    <subsection><title> Intensity of a Spherical Wave</title>
+        <p>
+            Imagine a point source that emits a wave isotropically in all directions. Sun is a good example of this type of a source. Since the wave spreads out in a three-dimensional space isotropically, i.e., without a preferred direction, the wave will be a spherical wave.  
+        </p>
+        
+        <sidebyside widths="45% 10% 45%">
+
+            <p>
+                Let <m>P_0</m> be the rate at which energy is input in the wave at the center. Then, in a duration <m>\Delta t</m>, an energy equal to <m>\Delta E = P_0\Delta t</m> will pass through both the surfaces at <m>r=r_1</m> and <m>r=r_2</m>. Dividing this energy by time <m>\Delta t</m> and the areas of corresponding surfaces we get the following for the intensities at the two surfaces.
+            </p>
+            <p></p>
+            
+            <image source="./images/coupled-vibrations/spherical-wave-intensity-calculation.png" width="80%"/>
+        </sidebyside>
+        <p>
+            <mdn>
+                <mrow xml:id="eq-intensity-1-full">\amp I_1 = \dfrac{P_0 \Delta t }{\Delta t \times 4\pi r_1^2},</mrow>
+                <mrow xml:id="eq-intensity-2-full">\amp I_1 = \dfrac{P_0 \Delta t }{\Delta t \times  4\pi r_1^2}.</mrow>
+            </mdn>
+            Dividing these equations, we get
+            <men>
+                \frac{I_1}{I_2} = \frac{r_2^2}{r_1^2}. 
+            </men>
+            This suggests a simple rule to remember in the case of spherically spreading wave.
+            <men>
+                I \propto \frac{1}{r^2}.
+            </men>
+        </p>
+
+    </subsection>
+
+
+    <exercise xml:id="exercise-Intensity-and-Energy-of-a-Plane-Wave">
+        <title>Intensity and Energy of a Plane Wave</title>
+        <statement>
+            <p>
+                A plane wave in the air of density <m>1.1\text{ kg/m}^3</m> is given by the following function.
+                <me>
+                    \psi(x,y,z,t) = 4\text{ cm } \cos\left(10\, z - 200\, t + \frac{\pi}{2}  \right),
+                </me>
+                where <m>z</m> is in <m>\text{m}</m>, <m>t</m> in <m>\text{sec}</m>.
+            </p>
+            <p>
+                (a) What are the intensities of the wave at the following points (i) <m>(0,0,0)</m> and (ii) <m>(1,1,1)</m>?
+            </p>
+            <p>
+                (b) How much energies will pass through an area <m>3\text{ cm}^2</m> in <m>2\text{ sec}</m>  if the area is in the (i) <m>xy</m>-plane, (ii) <m>yz</m>-plane and (iii) <m>xz</m>-plane?   
+            </p>
+        </statement>
+        <hint><p> (a) Read off <m>D,\ k, \omega</m> from wave function and use <m>\mu=\rho A_\perp</m>. (b) Only area perpendicular to the wave direction will have energy flow.  </p></hint>
+        <answer><p>  (a) (i) <m> 500\text{ W/m}^2</m>, (ii) Same as (i). (b) (i) <m> 2.1\text{ J}</m>, (ii) <m>0</m>, (iii) <m>0</m>. </p></answer>
+        <solution><title>(a)</title>
+            <p>
+                 (a) First we note that intensity of a plane wave is independent of position. Therefore, we will get the same anser for the two cases (i) and (ii).
+             </p>
+             <p>
+                From the wave function we note the following quantities we need for the intensity formula.
+                 <md>
+                    <mrow> \amp D = 4\text{ cm} = 0.04\text{ m},</mrow>
+                    <mrow> \amp k = 10\text{ m}^{-1} \longrightarrow \lambda = 0.2\ \pi \text{ m},</mrow>
+                    <mrow> \amp \omega = 200\text{ s}^{-1} \longrightarrow f = \frac{100}{\pi} \text{ Hz},</mrow>
+                 </md>
+                 The linear density <m>\mu=\rho A_\perp</m> as you can show by equating mass in a volume in two different ways, one using linear density <m>
+                 \mu </m> and another using regular density <m>
+                 \rho</m>, i.e., <m>\mu L = \rho A_\perp L</m>.
+                 Using Eq. <xref ref="eq-definition-of-intensity"/>, we get
+                 <md>
+                    <mrow> I \amp = \frac{2 \pi^2 \mu \lambda f^3 D^2}{A_\perp} = 2 \pi^2 \rho\lambda f^3 D^2</mrow>
+                    <mrow>  \amp = 2 \pi^2 \times 1.1 \times 0.2\,\pi \times (100/\pi)^3\times  0.04^2 = 3500\text{ W/m}^2. </mrow>
+                 </md>
+ 
+
+            </p>
+        </solution>
+        <solution><title>(b)</title>
+            <p>
+                (b) From the argument of cosine in the wave function, the wave is moving towards positive <m>z</m> axis. Therefore, no power will flow through any area through which wave does not pass. This makes <m>E=0</m> for (ii) and (iii). In  case of (i), energy through area <m>A_\perp</m> in time <m>\Delta t</m> will be
+                <me>
+                    E = I A_\perp \Delta t.
+                </me>
+                Therefore, we will get
+                <me>
+                    E = 3500\frac{\text{J}}{\text{s.m}^2} \times 3\times 10^{-4}\text{ m}^2\times 2\text{ s} = 2.1\text{ J}.
+                </me>
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise xml:id="exercise-Intensity-and-Energy-of-a-Spherical-Wave">
+        <title>Intensity and Energy of a Spherical Wave</title>
+        <statement>
+            <p>
+                A spherical wave is given by the following function.
+                <me>
+                    \psi(x,y,z,t) = \frac{A}{r} \cos\left(10\, r - 200\, t \right),
+                </me>
+                where <m>r</m> is in <m>\text{m}</m>, <m>t</m> in <m>\text{sec}</m> and <m>\psi</m>  in <m>\text{m}</m>. Here <m>r</m> is spherical radial coordinate from the source at the origin. The intensity of the wave at <m>r=0.25\text{ m}</m> from the origin is <m>10\text{ W/m}^2</m>.
+            </p>
+            <p>
+                (a) What are the intensities of the wave at the following points (i) <m>(0,0,1)</m>, (ii) <m>(0,0,2)</m>, and <m>(1,1,1)</m>?
+            </p>
+            <p>
+                (b) How much energies will pass through an area <m>3\text{ cm}^2</m> in <m>2\text{ sec}</m>  if the area is part of spherical shells at radial distances (i) <m>2\text{ cm}</m>, (ii) <m>4\text{ cm}</m>, and (iii) <m>8\text{ cm}</m> from the origin.    
+            </p>
+        </statement>
+        <hint><p> (a) Use <m>I\propto 1/r^2</m>. (b) Use <m>E = I A t</m>.  </p></hint>
+        <answer><p>  (a) (i) <m> 0.625\text{ W/m}^2</m>, (ii) <m> 0.156\text{ W/m}^2</m>, (iii) <m> 0.208\text{ W/m}^2</m>. (b) (i) <m> 0.94\text{ J}</m>, (ii) <m>0.23\text{ J}</m>, (iii) <m>0.06\text{ J}</m>. </p></answer>
+        <solution><title>(a)</title>
+            <p>
+                 (a) Intensity of a spherical wave drops off as inverse square of distance from  
+                 <md>
+                    <mrow> \amp (i)\ \ \ I = \frac{10\text{ W/m}^2 \times (0.25\text{ m})^2}{ (1.0\text{ m})^2}  =  0.625 \text{ W/m}^2.</mrow>
+                    <mrow> \amp (ii)\ \ I = \frac{10\text{ W/m}^2 \times (0.25\text{ m})^2}{ (2.0\text{ m})^2}  =  0.156 \text{ W/m}^2. </mrow>
+                    <mrow> \amp (iii)\  I = \frac{10\text{ W/m}^2 \times (0.25\text{ m})^2}{ (\sqrt{3}\text{ m})^2}  =  0.208 \text{ W/m}^2. </mrow>
+                 </md>
+ 
+
+            </p>
+        </solution>
+        <solution><title>(b)</title>
+            <p>
+                (b) The wave is moving ouward radially. Therefore, it will pierce each of the area perpendicularly. Hence, we can just umultiply the intensity at that radial distance with area given and the duration given. The intensities at these distances are
+                  <md>
+                    <mrow> \amp (i)\ \ \ I = \frac{10\text{ W/m}^2 \times (0.25\text{ m})^2}{ (0.02\text{ m})^2}  =  1563 \text{ W/m}^2.</mrow>
+                    <mrow> \amp (ii)\ \ I = \frac{10\text{ W/m}^2 \times (0.25\text{ m})^2}{ (0.04\text{ m})^2}  =  391 \text{ W/m}^2. </mrow>
+                    <mrow> \amp (iii)\  I = \frac{10\text{ W/m}^2 \times (0.25\text{ m})^2}{ (0.08\text{ m})^2}  =  98 \text{ W/m}^2. </mrow>
+                 </md>               
+
+                Therefore, we will get
+                  <md>
+                    <mrow> \amp (i)\ \ \ E =  1563 \times 0.0003\times 2 = 0.94\text{ J}.</mrow>
+                    <mrow> \amp (ii)\ \ E =  0.23\text{ J}. </mrow>
+                    <mrow> \amp (iii)\  E =  0.06\text{ J}. </mrow>
+                 </md> 
+ 
+            </p>
+        </solution>
+    </exercise>
+
+    <exercise xml:id="exercise-Amplitude-of-Spherical-Wave-From-Intensity-and-Distance-from-Source">
+        <title> Amplitude of Spherical Wave From Intensity and Distance from Source
+        </title>
+        <statement>
+            <p>
+                A spherical mechanical wave traveling in salt water of density <m>1050\text{ kg/m}^3</m> is given by the following function.
+                <me>
+                    \psi(x,y,z,t) = \frac{A}{r} \cos\left(10\, r - 200\, t \right),
+                </me>
+                where <m>r</m> is in <m>\text{m}</m>, <m>t</m> in <m>\text{sec}</m> and <m>\psi</m>  in <m>\text{m}</m>. Here <m>r</m> is spherical radial coordinate from the source at the origin. The intensity of the wave at <m>r=0.25\text{ m}</m> from the origin is <m>120\text{ W/m}^2</m>. 
+            </p>
+            <p>
+                Find the value of constant <m>A</m> in the wave function.
+            </p>
+        </statement>
+        <hint><p>Start with <m>I  = \frac{2 \pi^2 \mu \lambda f^3 D^2}{A_\perp}</m> and replace <m>\mu</m> by <m>\rho 4\pi r^2</m> and <m>D= A/r</m>. Note the unit of <m>A</m> will be <m>\text{m}^2</m>.</p></hint>
+        <answer><p><m>7.54\times 10^{-5}\text{ m}^2</m>.</p></answer>
+
+        <solution>
+            <p>
+                We will use <m>I  = \frac{2 \pi^2 \mu \lambda f^3 D^2}{A_\perp}</m> with <m>D=A/r</m> to find the value of <m>A</m>. We note that the wave will pass through a spherical surface of radius <m>r</m>. Hence,
+                <me>
+                    A_\perp = 4\pi r^2.
+                </me>
+                Therefore, we have the following for intensity at <m>r</m>.
+                <me>
+                    I  = \frac{\pi \mu \lambda f^3 A^2}{2 r^4}.
+                </me>
+                By equating mass in <m>r</m> to <m>r+\Delta r</m> in two ways, one using linear density <m>\mu\Delta r</m> and another by regular density <m>\rho \times A\Delta r</m> with <m>A=4\pi r^2</m>, we get
+                <me>
+                    \mu = 4\pi r^2 \rho.
+                </me>
+                Therefore
+                 <me>
+                    I  = \frac{2\pi^2 \rho \lambda f^3 A^2}{r^2}.
+                </me>
+                Replace <m>\lambda</m> by <m>2\pi/k</m> and <m>f</m> by <m>\omega/2\pi</m> to get
+                 <me>
+                    I  = \pi \rho \frac{\omega^3}{2k} \frac{A^2}{r^2}.
+                </me>
+                Solving for <m>A</m> we get
+                <md>
+                    <mrow> A \amp = \sqrt{ \frac{2 k r^2 I}{\pi \rho\omega^3} } </mrow>
+                    <mrow> \amp = \sqrt{ \frac{2\times 10 \times 0.25^2 \times 120}{\pi\times 1050\times 200^3} }  = 7.54\times 10^{-5}\text{ m}^2.</mrow>
+                </md>
+
+            </p>
+        </solution>
+    </exercise>
+
+
+
+
+</section>

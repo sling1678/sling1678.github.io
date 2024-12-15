@@ -1,0 +1,217 @@
+<section xml:id="Energy-in-an-Inductor"><title> Energy in an Inductor  </title>
+	<introduction>
+		<p>
+			In <xref ref="subsection-energy-dissipation-in-RL-circuit"/>, we have discussed energy dissipation in a RL-circuit.  Current in an RL-circuit without an EMF source decays exponentially with time constant equal to <m>\tau=\mathcal{L}/R</m>. 
+			<me>
+				I(t) = I(0)\; e^{-R\, t/L}.
+			</me>
+		</p>
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				With time all the energy in the circuit dissipates in the resitor. Quantifying the total energy dissipated in the resistor, we found that we can assign energy to the circuit at <m>t=0</m>, when current in the circuit is <m>I_0</m>, is
+				<me>
+					U = \frac{1}{2}\mathcal{L} I_0^2.
+				</me>
+			</p>
+			<p></p>
+			<figure xml:id="fig-energy-RL-circuit">
+				<caption>
+				</caption>
+				<image source="./images/inductance/energy-mag.png" width="60%"/>
+			</figure>
+		</sidebyside>
+		Where in the circuit is this energy stored at <m>t=0</m>. If you look at the circuit, you find that the circuit has magnetic field at <m>t=0</m>, especially concentrated in the inductor. That is, magnetic energy stored in the inductor, when current <m>I_0</m> is flowing through the inductor is 
+		<men>
+			U_B = \frac{1}{2}\mathcal{L} I_0^2.
+		</men>
+		In the section below, we will write this explicitly in terms of magnetic field.
+
+<!-- 
+		<p><alert>Requires Calculus </alert></p>
+
+		<p>
+			In a circuit that has an inductor connected to a battery, current continues to flow in the circuit even after the battery is disconnected from the circuit.  This is most readily seen by using a switch that works on the make-before-break switching mechanism shown in <xref ref="fig-energy-mag" />. 
+
+		</p>
+
+		
+		<p>
+			Suppose the circuit with a battery was connected and kept running for a while so that the steady current <m>I_{\text{max}}</m> flows through the circuit at time <m>t=0</m>.  Now, when the switch is directed to remove the battery from the circuit, current flows through a loop that has a resistance <m> R</m> in series with the inductor. The current does not go to zero immediately but drops to zero according to
+			<me>
+				I(t) = I_{\text{max}}e^{-t/\tau},
+			</me>
+			where <m>\tau = \mathcal{L}/R</m>. 			
+		</p>
+
+		<figure xml:id="fig-energy-mag">
+			<caption>
+				Left panel: Circuit with switches after steady current of <m>I_\text{max} = \mathcal{E}_0/R</m> is set up. Right panel. The situation at <m>t=0</m> when current in the circuit is <m>I_\text{max}</m> without battery in the circuit.  The current decays to zero with time constant <m>\tau =  R/\mathcal{L}</m>.
+			</caption>
+			<sidebyside widths="60% 10% 30%">
+				<image source="./images/inductance/solenoid-in-circuit-3.png" width="60%"/>
+				<p> </p>
+				<image source="./images/inductance/energy-mag.png" width="60%"/>
+			</sidebyside>
+		</figure>
+
+		<p>
+			Since a flow of current through a resistor causes the resistor to heat up. But since there is no battery in the circuit, the question arises: 
+		</p>
+		<p>
+			Who or what is supplying the energy that is showing up as the heating of the resistor?
+		</p>
+
+
+
+		<p>
+			The only other element in the circuit is the inductor.  Therefore, from the principle of conservation of energy, we must conclude that the energy dissipated in the resistor must be present in the inductor at the instant the switch was redirected away from the battery in the circuit.  This circuit demonstrates that an inductor with current stores energy.
+		</p>
+		<p> 
+			However, unlike the separated charges in a capacitor, there is no obvious material in the inductor that we might find as storing energy. So, how does an inductor store energy?  A clue comes from the fact that an inductor will store energy only when there is a current through it. Therefore, the energy stored in an inductor may be thought to be in the movement of charges comprising the current.
+		</p>
+		<p>
+			Now, note that whenever there is current, there is also a magnetic field and when the current has dissipated the magnetic field also disappears. Therefore,  we could conclude that the energy stored in the inductor could  be in the magnetic field or in the current. This is similar to the energy stored in a charged capacitor - there were two ways of looking at the energy: energy stored in the charges or energy stored in the electric field. Here, we also have two ways of looking at the energy - the energy in the currents or energy in the magnetic field.
+		</p>
+		<p>
+			With the two viewpoints we can work out a formula for the energy in magnetic field as follows. We will use the energy dissipated in the resistor as a proxy for finding  formulas for the energy stored in an inductor, as current or as magnetic field.
+		</p>
+		<p>
+			Suppose that at time <m>t=0</m> the current in the inductor is  <m>I_{\text{max}}</m> when the circuit is diverted to go through a resistor only.  With time the current goes to zero and the energy is dissipated into the resistor. In a resistor the power dissipated, i.e. the rate of dissipation of energy is given by <m>I^2 R</m> if current flow is <m>I</m>. The energy dissipated between time <m>t</m> and <m>t+dt</m> will be
+			<me>
+				dW = P(t) dt = I(t)^2 R dt = I_{\text{max}}^2e^{-2\frac{R}{\mathcal{L}}t}  R dt,
+			</me>
+			which should be integrated from <m>t=0</m> to <m>t= \infty</m> to obtain the energy of the system at <m>t=0</m>.
+			<md>
+				<mrow> W  \amp  = I_{\text{max}}^2R \int_0^{\infty}e^{-2\frac{R}{\mathcal{L}}t}   dt</mrow>
+			 	<mrow> \amp  = I_{\text{max}}^2R\frac{\mathcal{L}}{2R}</mrow>
+			 	<mrow> \amp  = \frac{1}{2}\mathcal{L} I_{\text{max}}^2. </mrow>
+			</md>
+			Therefore, the energy stored in the inductor when it carries a current <m>I</m> is
+			<men xml:id="eq-ener-induct-cur">
+				U_{\text{inductor}} = \frac{1}{2} \mathcal{L} I^2. 
+			</men>
+		</p> -->
+	</introduction>
+
+	<subsection><title> Energy in Magnetic Field</title>
+
+
+		<p>
+			We found the an inductor carrying current <m>I</m> has energy <m>\frac{1}{2} \mathcal{L} I^2</m>. We can now show that this energy is actually in the magnetic field of current in the solenoid.
+		</p>
+		<p>
+			Let's suppose out inductor is a long solenoid with <m>n</m> turns per unit length. That would mean, inside of the solenoid has magnetic field of magnitude 
+			<me>
+				B_\text{in} = \mu_0 n I.
+			</me>
+			Using <m>I</m> from this in the energy of solenoid we get
+			<me>
+				U_\text{solenoid} = \frac{1}{2} \mathcal{L} I^2 = \frac{1}{2} \mathcal{L} \dfrac{1}{\mu_0^2 n^2}\, B^2.
+			</me>
+			Now, recall that self-inductance of a solenoid of radius <m>a</m> and length <m>l</m> is
+			<me>
+				\mathcal{L} = \pi\mu_0 n^2 la^2.
+			</me>
+			Therefore, the energy <m>U</m> of solenoid is
+
+			<me>
+				U_\text{solenoid} = \frac{1}{2\mu_0}  B_{\text{in}}^2 \left( l \pi a^2 \right),
+			</me>
+			which can be written as an energy density times volume.
+			<me>
+				U = \frac{1}{2\mu_0}  B_{\text{in}}^2 \times \text{Volume of solenoid}
+			</me>
+			Therefore, we say that magnetic field contains energy given by the following formula for energy per unit volume, <m>u_B</m>. (Note: we use a small letter for energy density and capital letter for energy.)
+			<me>
+				u_B = \frac{1}{2\mu_0}  B^2\ \ \  \text{(Energy density)}
+			</me>
+		</p>
+ 
+				<p><alert> (Calculus) Electromagnetic Energy</alert></p>
+				<p>
+					If magnetic field is not uniform, then the energy  in the magnetic field in a particular space volume will be given by an integral over the volume.
+					<me>
+						U_B = \frac{1}{2\mu_0} \int_{\text{Volume}} B^2 dV\ \ \  \text{(Energy in magnetic field)}
+					</me>
+					The formula for the energy in the magnetic field is similar to that of energy in the electric field. 
+					<me>
+						U_E = \frac{1}{2} \epsilon_0\int_{\text{Volume}} E^2 dV. \ \ \  \text{(Energy in electric field)}
+					</me>
+					The sum of energy in electric and magnetic field is called the <term> electromagnetic energy</term>, or energy in the electromagnetic field, <m>U_{em}</m>.
+					<me>
+						U_{em} = U_E + U_B.
+					</me>
+				</p>
+ 
+ 
+	</subsection>
+
+
+	<subsection><title>Energy in Interacting Inductors </title>
+
+		<p>
+			The arguments for the energy in an inductor carrying a current can be extended to obtain energy in two coupled circuits.  
+		</p>
+
+		<sidebyside widths="50% 50%">
+
+			<p>
+				Suppose one circuit of self-inductance <m>\mathcal{L}_{1}</m> carries a current <m>I_1</m> and another circuit of self-inductance <m>\mathcal{L}_{2}</m> carries a current <m>I_2</m>. Suppose their mutual inductance is <m>\mathcal{M}</m>.  
+			</p>
+
+			<figure xml:id="fig-interacting-inductors-mutual-energy">
+				<caption>
+				</caption>
+				<image source="./images/inductance/interacting-inductors-mutual-energy.png" width="60%"/>
+			</figure>
+
+		</sidebyside>
+
+		<p>
+			Then, the energy stored in the two circuits will be
+			<men xml:id="eq-energy-mutual-ind">
+				U = \frac{1}{2} \mathcal{L}_1 I_1^2 +  \frac{1}{2} \mathcal{L}_2 I_2^2 + \mathcal{M} I_1 I_2. 
+			</men>
+			The reference value of this energy is zero when both currents are zero. At any other value of the currents we require that <m>U</m> be positive.
+			<me>
+				U\ge 0.
+			</me>
+			Now, we write the energy expression in Eq. <xref ref="eq-energy-mutual-ind"/>   as follows.
+			<men xml:id="eq-energy-mutual-ind-2">
+				U = \frac{1}{2} \mathcal{L}_1 \left( I_1 + \frac{\mathcal{M}}{\mathcal{L}_1} I_2 \right)^2 + \frac{1}{2}\left(  \mathcal{L}_2 -   \frac{\mathcal{M}^2}{\mathcal{L}_1}   \right) I_2^2. 
+			</men>
+			We observe that if the first term is zero, then the second term will place restrictions on <m>\mathcal{L}_1</m>, <m>\mathcal{L}_2</m>, and  <m>\mathcal{M}^2</m>. The first term will be zero if currents have the following relation.
+			<me>
+				I_1 + \frac{\mathcal{M}}{\mathcal{L}_1} I_2= 0.
+			</me>
+			In this case, the positivity of <m>U</m> requires that the second term in Eq. <xref ref="eq-energy-mutual-ind-2"/>  be positive.  Therefore,
+			<me>
+				\mathcal{L}_2 -   \frac{\mathcal{M}^2}{\mathcal{L}_1}  \ge 0. 
+			</me>
+			Rearranging, we find that 
+			<me>
+				\mathcal{M}^2 \le   \mathcal{L}_1  \mathcal{L}_2 . 
+			</me>
+			Since the mutual inductance can be positive or negative depending upon the sign convention for the currents, we write the absolute value of the mutual inductance as 
+			<me>
+				|\mathcal{M}| \le  \sqrt{ \mathcal{L}_1  \mathcal{L}_2 }. 
+			</me>
+			Therefore, the magnitude of the mutual inductance must always be less than the geometric mean of the self-inductances.  We often write the mutual inductance in terms of the self-inductances by introducing a constant <m>k</m> called the <term>coefficient of coupling</term>. 
+			<me>
+				|\mathcal{M}|  = k  \sqrt{ \mathcal{L}_1  \mathcal{L}_2 }. 
+			</me>
+			In experimental situations, the absolute value of the coefficient of  coupling  is near 1, <m>|k|\sim 1</m>, if magnetic flux from one circuit goes through the other circuit and vice-versa, as   in an ideal transformer.  If the two circuits are so arranged that the magnetic flux from one does not completely go through the other circuit, then <m>|k|\lt 1</m>.
+		</p>
+
+	</subsection>
+
+
+
+
+
+
+
+
+
+
+</section>

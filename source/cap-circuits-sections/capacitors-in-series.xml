@@ -1,0 +1,104 @@
+<section xml:id="Capacitors-in-Series"><title> Capacitors in Series </title>
+	<introduction>
+		<p>
+			Capacitor circuits can be built by connecting capacitors in series or in parallel or neither.  When capacitors are placed in series the capacitance decreases and when they are in parallel the capacitance increases, as we will see below by finding a formula for the equivalent capacitance. 
+		</p> 
+		<sidebyside widths="55% 5% 40%">
+			<p>
+				<p>
+					To be specific, consider a circuit containing two capacitors <m>C_1</m> and <m>C_2</m> in series with a voltage source <m>V</m> (<xref ref="fig-caps-in-series-2"/>). When switch S is closed, point c becomes at potential zero and point a at potential <m>V</m>. 
+				</p>
+				<p>
+					As a result, electrons flow on the right plate of <m>C_2</m> and flow away from left plate of <m>C_1</m>. Also, electrons are repelled from left plate of <m>C_2</m> and pile up on the right plate of <m>C_1</m>. 
+				</p>
+			</p>
+			<p></p>
+
+			<figure xml:id="fig-caps-in-series-2">
+				<caption>
+					Capacitors in series.
+				</caption>
+				<image source="./images/cap-circuits/caps-in-series.png" width="50%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			These drifts of electrons and piling up at the plates continues until both capacitors have been fully charged. 
+		</p>
+		<p>
+			By the conservation of charge, you can easily see that the charge of the two plates will be same, <m>\pm Q</m>. But, the voltage drop across the two capacitors will depend upon their capacitance, since for each capacitor, we must have <m>V_i = Q/C_i</m>.
+		</p>
+		<me>
+			V_1 = \frac{Q}{C_1};\ \ \ V_2 = \frac{Q}{C_2}
+		</me>
+
+
+	<!-- <p>
+
+		When switch S is closed at time <m>t=0</m>, a current flows from the right plate of <m>C_2</m> to the left plate of <m>C_1</m>.  Or, equivalently,  electrons from the left plate of <m>C_1</m> flow to the battery which does work on the electrons to put it on the right plate of <m>C_2</m>.  The positively charged left plate of <m>C_1</m> attracts electrons from the right plate of <m>C_1</m> and left plate of <m>C_2</m> conductor.  At the same time, the negatively charged right plate of <m>C_2</m> repels electrons from the left plate of <m>C_2</m>.  
+	</p> -->
+	<p>
+		<!-- The two tendencies act together, polarizing the right plate of <m>C_1</m> and the left plate of <m>C_2</m> by induction.  As a result, both conductors are charged to the same amount.  Let <m>\pm Q</m> denote charges on various plates.   Since the two capacitors have different capacitances yet charged to the same amount, voltage drops across them will be different.  Let <m>V_1</m> and <m>V_2</m> be the voltages across <m>C_1</m> and <m>C_2</m> respectively.  Then, we will have the following relations.
+		<md>
+			<mrow> \amp V_1 = \frac{Q}{C_1}</mrow>
+			<mrow> \amp V_2 = \frac{Q}{C_2}</mrow>
+		</md> -->
+		The voltages <m>V_1</m> and <m>V_2</m> drop in series and therefore add up to the voltage of the source <m>V</m>, according to Kirchhoff's loop rule.
+		<me>
+			V = V_1 + V_2.
+		</me>
+		Hence,
+		<me>
+			V = \frac{Q}{C_1} + \frac{Q}{C_2} = Q \left( \frac{1}{C_1} +  \frac{1}{C_2}\right) 
+		</me>
+		This equation can be used to define an equivalent capacitance <m>C_\text{series}</m> of the two capacitors in series by imagining replacing the circuit with another circuit with the same source but ony one capacitor charged to the same amount as the capcitors here.
+		<me>
+			V = \dfrac{Q}{C_\text{series}}.
+		</me>
+		Equating the <m>V</m>'s and canceling out the <m>Q</m>'s we get equivalent capacitance in terms of the original capacitances.
+		<men>
+			\frac{1}{C_\text{series}} =  \frac{1}{C_1} +  \frac{1}{C_2}.
+		</men>
+		Similar arguments lead to the equivalent capacitance of <m>N</m> capacitors connected in series.
+		<men>
+		 \frac{1}{C_\text{series}} =  \frac{1}{C_1} +  \frac{1}{C_2} + \cdots +  \frac{1}{C_N}.
+		</men>
+		We find that the formula for capacitors in series is similar to the formula for resistors in parallel.  The net capacitance of capacitors in series is lower than the lowest capacitance in series.  Hence, capacitance decreases when you connect capacitors in series. 
+	</p>
+	<p> 
+
+		This result makes sense when you think in terms of a parallel plate capacitor.  The capacitance of a parallel plate capacitor decreases inversely with the distance between plates.  By connecting plates in series, we are effectively increasing the distance between the plates, and hence a reduction in capacitance is expected here.  When capacitors with very different capacitances are connected in series, you may be able to simply ignore the capacitors with high capacitance since they may contribute insignificantly compared to the effective capacitance of the group.
+
+ 
+
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-Numerical-Example-of-Capacitors-in-Series"><title> Numerical Example of Capacitors in Series </title>
+		<statement>
+			<p>
+				Evaluate the equivalent capacitances of two capacitors connected in series 
+				(a) <m>C_1 = 2\ \mu\text{F} </m>, and <m>C_2 = 2\ \mu\text{F} </m>,  (b) <m>C_1 = 2\ \mu\text{F} </m>, and <m>C_2 = 20\ \mu\text{F} </m>, and (c) <m>C_1 = 2\ \mu\text{F} </m>, and <m>C_2 = 2000\ \mu\text{F} </m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Do not forget to invert after computing <m>1/C_\text{series}</m>.</p> </hint>
+		<answer> <p> (a) <m> \frac{1}{1\ \mu\text{F}}</m>, (b) <m> 1.82\ \mu\text{F}</m>, (c) <m> 1.998\ \mu\text{F}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				This example shows that the equivalent capacitance of two capacitors connected in series is dominated by the capacitor with the least capacitance. Let <m>C_\text{S}</m> denote the equivalent capacitance in each case.
+				<md>
+					<mrow> \amp \text{(a) } \frac{1}{C_\text{S}} =  \frac{1}{2\ \mu\text{F}} +  \frac{1}{2\ \mu\text{F}} = \frac{1}{1\ \mu\text{F}} \Longrightarrow C_\text{S} = 1\ \mu\text{F}.</mrow>
+					<mrow>\amp \text{(b) }  \frac{1}{C_\text{S}} =  \frac{1}{2\ \mu\text{F}} +  \frac{1}{20\ \mu\text{F}}= \frac{11}{20\ \mu\text{F}}\Longrightarrow C_\text{S} = \frac{20}{11}\ \mu\text{F} </mrow>
+					<mrow>\amp \text{(c) }  \frac{1}{C_\text{S}} =  \frac{1}{2\ \mu\text{F}} +  \frac{1}{2000\ \mu\text{F}}= \frac{1001}{2000\ \mu\text{F}} \Longrightarrow C_\text{S} = \frac{2000}{1001}\ \mu\text{F} </mrow>
+				</md>
+ 
+			</p>
+		</solution>
+	</exercise>
+ 
+
+
+
+
+
+</section>

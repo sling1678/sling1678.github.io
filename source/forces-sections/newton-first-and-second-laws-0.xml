@@ -1,0 +1,498 @@
+<section><title> Newton's First and Second Laws of Motion </title>
+
+
+	<subsection> <title> Newton's First Law of Motion </title>
+		<p>
+			This law is also called the law of inertia. It states that, 
+			you do not need any force for maintaining a constant velocity motion!! 
+		</p>
+		<p>
+			<alert> This is contrary to our everyday experience.</alert>  We find that objects normally tend to slow down and come to a stop unless someone continuously pushes on them. Galileo demonstrated that slowing down is usually caused by ubiquitous friction force, and, if you were to find an ideal frictionless environment, the steady constant velocity motion will be perpetual.
+		</p>
+		<p>
+			You may be wondering: <q> Why can't the velocity of an object go to zero without a force? What propels objects  at constant velocity to be in their perpetual motion?</q> There is really no answer to these questions. Instead, we assert that nature has an inherent tendency of maintaining the motion. We give this natural tendency a name - the <term> inertia </term> of motion. But beware that giving a name is not the same thing as having an explanation!
+		</p>
+
+	</subsection>
+
+
+	<subsection> <title>Newton's Second Law of Motion  </title>
+		<p>
+			Consider an object of fixed mass, say a block of steel. When you apply a force on it, you find that its velocity changes. This is what happens, for instance, when you let it fall. This is very general. 
+		</p>
+		<p>
+			The amount of acceleration an object gets from a force is also inversely proportional to its mass. 
+		</p>
+		<p> These observations were put together succinctly by Newton in the following vector equation, which is the expression of Newton's second law for fixed-mass systems.
+			<men xml:id="eq-second-law-f-equal-ma-algebra">
+				\vec F = m\vec a.
+			</men>
+		</p>
+		Note that this equation does not apply to systems that lose or gain mass during their motion, e.g., rocket (which loses mass) and rain drops (which gain mass). For these situations, we need a more general expression. 
+	</subsection>
+
+
+	<subsection> <title>(Calculus) Newton's Second Law of Motion </title>
+		<introduction>
+			<p>
+				<term> Newton's second law of motion </term> states that a <alert> force  on  an object </alert> causes change in its momentum. 
+				Quantitatively, the law state that the following relation between the force on an object <m> \vec F </m> and the rate of change of momentum holds true.
+				<men xml:id="eq-second-law-momentum">
+					\vec F = \dfrac{d\vec p}{dt},
+				</men>
+				where momentum is defined by
+				<men>
+					\vec p = m \vec v.
+				</men>
+				Strictly speaking, <xref ref="eq-second-law-momentum"/> holds true only with respect to special class of observers, called inertial obervers. Inertial observers that have no acceleration with respect to the at-rest center of universe - that is, they are either at rest or moving at constant velocity.
+			</p>
+			<p>
+				If mass is constant, then
+				<me>
+					\dfrac{d\vec p}{dt} = m\dfrac{d\vec v}{dt} = m\vec a.
+				</me>
+				Therefore, in this case, Eq. <xref ref="eq-second-law-momentum" /> becomes
+				<men xml:id="eq-second-law-f-equal-ma">
+					\vec F = m\vec a.
+				</men>
+			</p>
+		</introduction>
+
+
+	</subsection>
+
+
+
+
+
+	<subsection> <title> Momentum </title>
+		<p>
+			The product of mass (<m>m</m>) and velocity (<m>\vec v</m>) is called <term> momentum </term>. We denote momentum vector by <m> \vec p </m> and the magnitude by the same letter without the arrow.
+			<men>
+				\vec p = m\, \vec v.
+			</men>
+		</p>
+		<p> 
+			Since velocity is defined relative to an observer, momentum is also a relative to an observer. For instance, say, you and your friend are sitting in a train which is moving with respect to the ground-based observer. Then, your friend's momentum with respect to you will be zero but non-zero with respect to a ground-based observer.
+		</p>
+
+		<p>
+			If a system consists of more than one part, then the momentum of the whole will be equal to the vector sum of the momenta of all of its parts. Let <m> \vec p_1</m>, <m> \vec p_2 </m>, <m> \cdots</m>, <m>\vec p_N</m> be the momenta of <m> N </m> parts of a system, then the momentum of the whole, the <term> net momentum </term> is given as
+			<men xml:id="eq-total-monentum-of-parts">
+				\vec p_{\text{net}} = \vec p_1 + \vec p_2 + \cdots + \vec p_N. 
+			</men>
+			Note that the sum of the momenta is a vector sum and one must be careful not to just add the magnitudes of the momenta since directions are equally important. For instance, the total momentum of two objects of equal mass and equal speed but moving towards each other in a straight line would  be zero since the vector sum of two equal magnitudes but oppositely directed vectors is zero.		  
+		</p>
+		<exercise><title> Momentum of one body</title>
+			<statement>
+				<p>
+					A car of mass <m> 3000\text{ kg}</m> is moving to the East at a speed of <m> 30\text{ m/s}</m>.  How much momentum does the car have?
+				</p>
+			</statement>
+			<hint> <p> Use <m> p = mv </m>. </p> </hint>
+			<answer><p> <m> 90,000 \text{ kg.m/s} </m>, East.</p> </answer>
+			<solution>
+				<p> 
+					It would be a mistake to just multiply mass with the speed and report that as the momentum <alert> since momentum is a vector quantity </alert>. Therefore, we must indicate both the magnitude and direction in our answer.
+					<md>
+						<mrow> \amp\text{Magnitude } =  mv = (3000\ \text{ kg}) \times (30\ \text{ m/s}) = 90,000 \text{ kg.m/s}.</mrow>
+						<mrow> \amp\text{Direction: Towards East.} </mrow>
+					</md>
+				</p>
+			</solution>
+ 		</exercise>
+
+ 		<exercise><title>Total momentum of two bodies moving along the same line</title>
+ 			<statement>
+	 			<p>
+	 				A car of mass <m> 3000\text{ kg}</m> is moving to the East at a speed of <m>30\text{ m/s}</m> and a truck of mass <m> 6000\text{ kg}</m> is moving to the West at a speed of <m> 20\text{ m/s}</m>.  What is the net momentum of the two?
+	 			</p>
+	 		</statement>
+	 		<hint> <p> Be mindful of the vector nature of momentum.</p></hint>
+	 		<answer><p> <m> 30,000\text{ kg.m/s}</m>, West.</p> </answer>
+	 		<solution>
+	 			<p>
+	 				By applying the definition of momentum to the car and the truck separately, we find that the car has a momentum of <m> 90,000\text{ kg.m/s}</m> pointed towards East and the truck has a momentum of <m> 120,000\text{ kg.m/s}</m> pointed towards West. Now, we need to add these two vectors. Since their directions are opposite, smaller magnitude will be subtracted from the larger magnitude, resulting in a net momentum of <m> 30,000\text{ kg.m/s}</m> pointed towards the larger momentum direction, which is West in our case.  
+	 			</p>
+	 			<p>
+	 				<alert> Analytic Method: </alert> You can also use the analytic method to add the two vectors by utilizing a Cartesian coordinate.  To be concrete, let us point the <m> x </m> axis towards the East. Then, the two momentum vectors will have the following <m> x </m> components (the <m> y </m> and <m> z </m> components of both being zero).
+	 			
+				<md>
+					<mrow> \amp p_{\text{car},x} = 90,000\ \text{kg.m/s}, </mrow>
+					<mrow> \amp p_{\text{truck},x} = - 120,000\ \text{kg.m/s}, </mrow>
+				</md>
+				where <m> p_{\text{truck},x} </m> is negative since <m> \vec p_{\text{truck}} </m> is pointed towards the negative <m> x </m>  axis. Therefore,  the net momentum has the following <m> x </m> component (the <m> y </m> and <m> z </m> components of both being zero).
+				<md>
+					<mrow> \amp p_{\text{net},x} = -30,000\ \text{kg.m/s} </mrow>
+				</md>
+				Therefore, the net momentum has the magnitude <m> 30,000\text{ kg.m/s}</m> pointed towards the negative <m> x </m> axis, which is towards the West.
+				</p>
+			</solution>
+ 		</exercise>
+
+ 		<exercise><title> Total momentum of two bodies moving in a plane </title>
+ 			<statement>
+		 		<p>
+		 			A car of mass <m> 3000\text{ kg} </m> is moving East at a speed of <m> 30\text{ m/s} </m> and a truck of mass <m> 6000\text{ kg} </m> is moving North at a speed of <m> 20\text{ m/s} </m>.  What is the net momentum of the two?
+		 		</p>
+		 	</statement>
+		 	<hint> <p> Be mindful of the vector nature of momentum. </p></hint>
+		 	<answer> <p> <m> 50,000\text{ kg.m/s}, 53^{\circ} </m> North of East. </p> </answer>
+		 	<solution>
+		 		<p>
+		 			By applying the definition of momentum to the car and the truck separately, we find that the car has a momentum of <m> 90,000 \text{ kg.m/s}</m> pointed towards the East and the truck has a momentum of <m> 120,000 \text{ kg.m/s}</m> pointed towards the North. 
+		 		</p>
+		 		<p> 
+		 			Now, we need to add these two vectors. Since the vectors are not along one line, we need to employ the parallelogram law of addition of vectors, either geometrically or analytically.  We have seen that analytical method is often easier to implement.  
+		 		</p>
+		 		<p>
+		 			To use the analytical method, as usual we start with a choice of coordinate system. Let us point the <m> x </m> axis  towards East and the <m> y </m> axis towards North. The <m> z </m> axis is pointed vertically up, but we ignore it in this problem since the vectors are only in the horizontal plane. Then, we see that the two momenta have the following representation in components.
+					<md> 
+						<mrow> \amp \vec p_{\text{car}} = \left( 90,000\ \text{ kg.m/s},0,0\right)</mrow>
+						<mrow> \amp \vec p_{\text{truck}} = \left( 0, 120,000\ \text{ kg.m/s},0 \right) </mrow>
+					</md>
+					where <m>x</m>, <m>y</m> and <m>z</m> components of each vector have been listed in order. Therefore, the net momentum has the following representation in the given coordinate system.
+					<me>
+						\vec p_{\text{net}} = \left( 90,000\text{ kg.m/s}, 120,000\text{ kg.m/s},0 \right).
+					</me>me>
+		 		</p>
+		 		<p>
+		 			To find the magnitude and direction of the net momentum, we just need to implement the components to (magnitude, direction) transformation. In the <m>xy</m>-plane, we need only one angle for the direction. 
+		 			<md>
+		 				<mrow> \amp \text{Magnitude, }p_{\text{net}} = \sqrt{90,000^2 + 120,000^2 } = 150,000\text{ kg.m/s},</mrow>
+		 				<mrow> \amp \text{Direction, }\theta = \arctan( 120000/90000) =  53^{\circ},</mrow>		 				
+		 			</md>
+		 			where the angle is counterclockwise with respect to the positive <m> x </m> axis, which gives the direction of <m> 53^{\circ} </m> North of East.
+		 		</p>
+		 	</solution>
+ 		</exercise>
+
+ 
+	</subsection>
+
+
+
+
+
+
+
+
+
+	<subsection><title>What is mass? </title>
+		<p> 
+			We use the second law in the form <xref ref="eq-second-law-f-equal-ma" /> to define the property of mass operationally. We apply same force to two different objects and observe their resulting acceleration. Then, Eq. <xref ref="eq-second-law-f-equal-ma" /> tells us that the ratio of their accelerations will be inversely proportional to their masses.
+			<men xml:id="eq-a1-to-a1-eq-m2-to-m1">
+			 \dfrac{m_2}{m_1}  = \dfrac{a_1}{a_2}.
+			</men>
+		</p>
+		<p>
+			Suppose we take a reference object and define its mass to be one unit of mass, say <m> 1 \text{ kg}</m>. Then, we perform the aforementioned experiment, i.e., apply an unknown but reproducible force on it. Suppose we find that the acceleration is <m> 4\text{ m/s}^2</m>. 
+		</p>
+		<p>
+			Now, we take an object whose mass we do not know yet. We subject this object to the same force and observe its acceleration. Suppose we find that its acceleration is <m> 6\text{ m/s}^2</m>. Then, Eq. <xref ref="eq-a1-to-a1-eq-m2-to-m1"/> can be used to deduce the mass of this other object.
+			<me>
+				\dfrac{m_2}{1\text{ kg}}  = \dfrac{4\text{ m/s}^2 }{6\text{ m/s}^2}\Longrightarrow m_2 = 0.5\text{ kg}.
+			</me>
+		</p>
+		<p>
+			The example above gives us a process by which, after we choose a reference object of unit mass, we can do experiments to assign mass to all other objects.
+		</p>
+
+	</subsection>
+
+
+
+
+
+	<subsection> <title> Net or Resultant Force </title>
+		<introduction> <title> Constant Mass Case </title>
+
+			<p>
+				What happens when multiple forces act on an object of mass <m> m </m>? For simplicity, let us consider a system whose mass is fixed. Then, we can say that each force will cause its own acceleration. Suppose, <m> n </m> forces are acting on the body.
+				<md>
+					<mrow> \amp \vec F_1 = m \vec a_1</mrow>
+					<mrow> \amp \vec F_2 = m \vec a_2 </mrow>
+					<mrow> \amp  \cdots </mrow>
+					<mrow> \amp \vec F_n = m \vec a_n </mrow>
+				</md>
+				Adding them all, we get an important result that vector sum of all forces, which is called the <term> net force </term> cause the net acceleration of the body.
+				<men>
+					\vec F_{\text{net}} = m \vec a_{\text{net}},
+				</men>
+				where 
+				<mdn>
+					<mrow xml:id="eq-net-force"> \amp \vec F_{\text{net}} = \vec F_1 + \vec F_2 + \cdots + \vec F_n,</mrow>
+					<mrow xml:id="eq-net-acceleration"> \amp \vec a_{\text{net}} = \vec a_1 + \vec a_2 + \cdots + \vec a_n. </mrow> 
+				</mdn>
+				Often, we write <m> \vec a_{\text{net}} </m> simply <m> \vec a</m>.			
+				<men>
+					\vec F_{\text{net}} = m \vec a.
+				</men>
+			</p>
+
+
+			<example><title> Net/resultant force on a box</title>
+
+				<statement>
+					<p>	
+						A box is pulled by a force of <m>40\text{ N}</m> in the horizontal direction and a force of <m>30\text{ N}</m> also horizontally but at an angle of <m>90^{\circ}</m> to the direction of the other force.  Find  the magnitude and direction of the net force by these two forces in the horizontal plane.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						This problem can be done either graphically or analytically by setting up a coordinate system and using the components. We will do it analytically here. First, note that the forces of weight and normal force from the floor are not in the horizontal plane, therefore, we will ignore them since the question is only about forces that act in the horizontal plane.
+					</p> 
+					<sidebyside widths="50% 40%">
+						<p>
+							First, we draw the forces in a figure so that the tails of the force vectors of interest are at the same point. This diagram of forces is called a <term> free-body diagram</term>. Then, we pick axes for a Cartesian coordinate system that would be very helpful in calculating the components as illustrated in the figure shown here. 
+						</p>
+						<p>
+							<image source="./images/forces/example-add-forces-b.png" width="50%" />
+						</p>
+					</sidebyside> 
+
+					<p> <alert> Computational Steps. </alert>
+						Using the chosen axes, we compute the Cartesian components of each force. Note that while the magnitude of a force is always positive, the components can be positive or negative.
+						Finally, we add the <m> x </m> components of the forces separately from their  <m> y </m> components to obtain the <m> x </m> and <m> y </m>  components of the net force.  The strength of the force is the magnitude. Therefore, we calculate the magnitude and direction of the net force from the <m> x </m> and <m> y </m>  components as we would for any vector quantity.  
+					</p>
+					<p>
+						<alert> The implementation in the present case. </alert> The table below summarizes the components found for each force. 
+					</p>
+
+						<tabular halign ="left" >
+							<row bottom ="major" >
+								<cell > Force </cell >
+								<cell > <m>x</m >-component </cell >
+								<cell > <m>y</m >-component </cell >
+							</row >
+	 
+							<row bottom ="major" >
+								<cell > <m> \vec F_1 </m></cell >
+								<cell >  <m> 40\text{ N} </m> </cell >
+								<cell > <m>0</m > </cell >
+							</row >
+							<row bottom ="major" >
+								<cell > <m> \vec F_2 </m>  </cell >
+								<cell >  <m>0</m ></cell >
+								<cell > <m> 30\text{ N} </m>  </cell >
+							</row >
+						</tabular>
+
+					<p>
+						Therefore, the <m> x </m> and <m> y </m> components of the net force are
+						<md>
+							<mrow> \amp F_x = 40 + 0 = 40\text{ N}</mrow>
+							<mrow> \amp F_y = 0 + 30 = 30\text{ N}</mrow>
+						</md>
+					</p>
+					<p>
+						Therefore, the magnitude of the force is
+						<me>
+							F = \sqrt{F_x^2+F_y^2}=\sqrt{40^2+30^2} = 50\ N,
+						</me>
+						and the angle from the positive <m> x </m> axis is
+
+						<me>
+							\theta =\arctan\left(\frac{F_y}{F_x}\right)=\arctan\left(\frac{30}{40}\right) = 37^{\circ}.
+						</me>
+
+						Since <m> (40,\ 30)</m> is in the first quadrant, the direction is <m> 37^{\circ}</m> counterclockwise from the postitive <m> x </m> axis.
+						
+					</p>
+				</solution>
+	 
+			</example>
+
+		</introduction>
+
+		<subsubsection> <title> (Calculus) General Case </title>
+			<p>
+
+				For the general case, we will need to work with the general equation, Eq. <xref ref="eq-second-law-momentum"/>, in which the force would now be the net force, Eq. <xref ref="eq-net-force"/>, and the momentum will the momentum of the body, <m> \vec p = m \vec v</m>. 
+
+				<me >
+					\vec F_{\text{net}} = \dfrac{d\vec p}{dt}.\ \ \ \ \text{(in an inertial frame)}
+				</me>
+				We can derive this equation by setting up <m> n </m> equations, one for each force, causing its own rate of momentum change, and then summing them all will result in net rate at which momentum changes.
+			</p>
+
+		</subsubsection>
+
+	</subsection>
+
+	<subsection> <title> Multipart System and Center of Mass Motion</title>
+		<subsubsection> <title> Center of Mass </title>
+			<p> 
+				Consider a multipart system, such as your body. Suppose the body has <m> N </m> parts with masses <m> m_1 </m>, <m> m_2 </m>, <m> \cdots </m>, <m> m_N </m>. <em> These parts don't have to be joined together</em>, e.g., when a projectile breaks up into ten parts, they can all go their separate ways, but for us, all ten parts will still be part of my system.
+				</p> 
+			<p>
+				Let the centers of those parts be located at position vectors <m> \vec r_1 </m>, <m> \vec r_2 </m>, <m> \cdots </m>, <m> \vec r_N </m>. Then, the position of the center of mass, denoted by <m> \vec R_{\text{CM}}</m>, is defined by
+				<men xml:id="eq-cm-position">
+					\vec R_{\text{CM}} = \dfrac{m_1\vec r_1 + m_2\vec r_2 + \cdots + m_N\vec r_N }{M},
+				</men>
+				where <m> M </m> is the total mass:
+				<men>
+					M = m_1 + m_2 + \cdots + m_N.
+				</men>
+				We can write the components of this equation to obtain the <m> X_{\text{CM}} </m>, <m> Y_{\text{CM}} </m>, and <m> Z_{\text{CM}} </m> from the coordinates of the parts. For instance, <m> X_{\text{CM}} </m>, will be:
+				<men>
+					X_{\text{CM}} = \dfrac{m_1 x_1 + m_2 x_2 + \cdots + m_N x_N }{M},
+				</men>				
+				and similarly for <m> Y_{\text{CM}} </m>, and <m> Z_{\text{CM}} </m>.
+			</p>
+		</subsubsection>
+
+		<example> <title> CM of a two-mass system </title>
+			<statement>
+				<p>
+					Two blocks of masses <m> 10\text{ kg}</m> and <m> 20\text{ kg}</m>  are attached at the ends of a  <m> 1\text{-meter} </m>  rod of negligible mass. Where is the CM located?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Since we have only two masses, we place one of the masses at the  origin and the other mass along the <m> x </m> axis. Suppose we place the <m> 20\text{-kg}</m> block at the origin and the <m> 10\text{-kg}</m> block at <m> x = 1\text{ m} </m>. 
+				</p>
+				<p>
+					Leaving the units out of the calculations we get the follo0wing from the <m> X_{\text{CM}} </m> formula.
+					<me> 
+						X_{\text{CM}} = d\frac{ 20\times 0 + 10 \times 1}{30 } = \frac{1}{3}.
+					</me>
+					Now, we put the units back in. Therefore, the CM is located <m> \dfrac{1}{3}\text{ m}</m> from the <m> 20\text{-kg}</m> block towards the other block.   
+				</p>
+			</solution>
+		</example>
+
+		<example> <title> CM of a three-mass system </title>
+			<statement>
+				<p>
+					Three balls of masses <m> 2\text{ kg}</m>, <m> 3\text{ kg}</m> and <m> 4\text{ kg}</m>  are located at the corners of a right-angles triangle as shown in the fogure below. The three masses may or may not be connected by any rods. Where is the CM located?
+				</p>
+			</statement>
+			<solution>
+				<sidebyside widhts="50% 50%">
+					<p>					
+						Since we have a right-angled triangle, two of those sides can be chosen to align with Cartesian axes as shown. This gives us <m> (x,y) </m> coordinates of each of the masses. We use them in formulas to obtain <m> (x,y) </m> of the CM.
+					</p>
+					<image source="./images/forces/example-cm-masses-on-right-triangle.png" width="60%"/>
+				</sidebyside>
+				<p>
+					From the formulas for <m> X_{\text{CM}} </m> and <m> Y_{\text{CM}} </m>,.
+					<md>
+						<mrow> \amp X_{\text{CM}} =  \dfrac{2\times (-4) + 3\times 0 + 4 \times 0}{2+3+4} = -\dfrac{8}{9} </mrow>
+						<mrow> \amp Y_{\text{CM}} =  \dfrac{2\times 0 + 3\times 0 + 4 \times 3}{2+3+4} = \dfrac{4}{3} </mrow>
+					</md>
+					Therefore, the CM is located at <m> (-\dfrac{8}{9}\text{ m}, \dfrac{4}{3}\text{ m})</m> in the coordinate system in the figure. Note that these values will changes if we use another coordinate system, but the physical location of the CM will remain the same.  
+				</p>
+			</solution>
+		</example>
+
+
+
+
+ 
+
+
+		<subsubsection> <title> Center of Mass Velocity, Acceleration, and Momentum - Calculus </title>
+			<p> 
+				To study the motion of the center of mass (CM) of a multi-part system, we need to define velocity and acceleration of the CM. We use Calculus to do that. Recall that velocity is defined as the time derivative of position and acceleration the time derivative of velocity. We do the same with CM-position in Eq. <xref ref="eq-cm-position"/>.
+				<mdn >
+					<mrow xml:id="eq-cm-velocity"> \vec V_{\text{CM}} \amp = \dfrac{1}{M}\dfrac{d}{dt}\left( m_1\vec r_1 + m_2\vec r_2 + \cdots + m_N\vec r_N \right), </mrow>
+					<mrow number="No"> \amp =\dfrac{m_1\vec v_1 + m_2\vec v_2 + \cdots + m_N\vec v_N }{M}, </mrow>
+				</mdn>
+				where <m> \vec v_1 </m>, <m> \vec v_2 </m>, <m> \cdots </m>, <m> \vec v_N </m>, are the velocities of the individual parts, or more precisely, the velocoties of the centers of masses of the parts. Therefore, we find that the total momentum, i.e.,  the sum of the momenta of parts, is equal to the total mass times the momentum of the center of mass. 
+				<men xml:id="eq-cm-momentum-equals-total-momentum">
+					m_1\vec v_1 + m_2\vec v_2 + \cdots + m_N\vec v_N = M\vec V_{\text{CM}} \equiv \vec P_{\text{CM}}. 
+				</men>
+				We call the <m> M\vec V_{\text{CM}} </m> the <term> center-of-mass momentum</term>, <m> \vec P_{\text{CM}}</m>. Writing momentum of the parts as <m> \vec p_1</m>, <m> \vec p_2</m>, etc, we get
+				<men xml:id="eq-cm-momentum-equals-total-momentum-2">
+					\vec p_{\text{tot}} = \vec p_1 + \vec p_2 + \cdots = \vec P_{\text{CM}}. 
+				</men>
+			</p>
+			<p>
+				Taking a derivative of <m> \vec V_{\text{CM}}</m> with respect to <m> t </m> will give the acceleration of the CM of a system whose mass is constant in time, 
+				<mdn >
+					<mrow xml:id="eq-cm-acceleration"> \vec A_{\text{CM}} \amp = \dfrac{1}{M}\dfrac{d}{dt}\left( m_1\vec v_1 + m_2\vec v_2 + \cdots + m_N\vec v_N \right), </mrow>
+					<mrow number="No"> \amp = \dfrac{m_1\vec a_1 + m_2\vec a_2 + \cdots + m_N\vec a_N }{M}, </mrow>
+				</mdn>				
+				where <m> \vec a_1 </m>, <m> \vec a_2 </m>, <m> \cdots </m>, <m> \vec a_N </m>, are the accelerations of the individual parts.
+			</p>
+
+		</subsubsection>
+		<subsubsection> <title> Center of Mass Motion - Constant Mass Case</title>
+
+			<p>
+				Let us consider a system with <m> N </m> parts of masses <m> m_1 </m>, <m> m_2 </m>, <m> \cdots </m>, <m> m_N </m>. Let <m> \vec F_1 </m>, <m> \vec F_2 </m>, <m> \cdots </m>, <m> \vec F_N </m> be forces acting on those parts. For the sake of simplicity, let us look at the constant mass system, i.e., where masss of each part is fixed in time.
+			</p>
+			<p>
+				Now, we write Newton's equation of motion for each part.
+				<md>
+					<mrow> \amp \vec F_1 = m_1 \vec a_1 </mrow>
+					<mrow> \amp \vec F_2 = m_2 \vec a_2 </mrow>
+					<mrow> \amp \cdots </mrow>
+					<mrow> \amp \vec F_N = m_N \vec a_N </mrow>
+				</md>
+				Summing them, we find that the left side can be written as sum over all the forces from objects outside the <m> N </m> parts makign up the system, which we call the <alert> external forces </alert>, and a sum over all the forces that one part applies on another part.
+				<me>
+					\text{Left Side } = \vec F_1 + \vec F_2 + \cdots + \vec F_N = \vec F_{\text{net}}^{\text{ext}} + \vec F_{\text{net}}^{\text{int}}
+				</me>
+				By Newton's third law, internal forces, say by part 1 on 2 and by part 2 on 1 come in pairs whose sum is zero. Therefore,
+				<me>
+					\vec F_{\text{net}}^{\text{int}} = 0.
+				</me> 
+				That gives us the following simplified equation after summing the equations of all <m> N </m> parts.
+				<me>
+					F_{\text{net}}^{\text{ext}} = m_ 1\vec a_1 + m_2\vec a_2 + \cdots + m_N\vec a_N,
+				</me>
+				whose right side is just the total mass <m> M </m> times the center-of-mass acceleration <m> \vec A_{\text{CM}} </m>.
+				<men xml:id="eq-cm-eom-fext-ma">
+					F_{\text{net}}^{\text{ext}} = M \vec A_{\text{CM}},
+				</men>
+				where <m> M = m_1 + m_2 + \cdots + m_N </m>. It is interesting that overall motion of a malti-part system can be captured essentially by the motion of a single (fictitious) particle of total mass placed at the special point of the center of mass.  This is the equation we solve whenever we study the overall translation motion of finite-size objects since they are inherently mutiparticle systems. 
+
+			</p>
+
+		</subsubsection>
+
+
+		<subsubsection> <title> Center of Mass Motion - General Case (Calculus)</title>
+			<p>
+				For the general case of <m> N </m> part system, we will have to start with equations of motion of individual parts in the momentum form.
+				<md>
+					<mrow> \amp \vec F_1 = \dfrac{d\vec p_1}{dt} </mrow>
+					<mrow> \amp \vec F_2 = \dfrac{d\vec p_2}{dt}  </mrow>
+					<mrow> \amp \cdots </mrow>
+					<mrow> \amp \vec F_N = \dfrac{d\vec p_N}{dt}  </mrow>
+				</md>
+				Now, summing them, we get the left side to equal the <m> F_{\text{net}}^{\text{ext}} </m> as above, and the right side equals the rate of change of total momentum.
+				<me>
+					F_{\text{net}}^{\text{ext}} = \dfrac{d}{dt} \left( \vec p_1 + \vec p_2 + \cdots + \vec p_N \right).
+				</me>
+				But by Eq. <xref ref="eq-cm-momentum-equals-total-momentum-2" />, we can replace the sum of momenta of the parts by the center-of-mass momentum.
+				<men ref="eq-cm-eom-fext-dpdt">
+					F_{\text{net}}^{\text{ext}} = \dfrac{d \vec P_{\text{CM}}}{dt},
+				</men>				
+				where <m> \vec P_{\text{CM}} = M \vec V_{\text{CM}}</m>. This equation takes care of even those situations in which the total mass of the system is changing, regardless of which part it that may be losing mass. Of course, if a system is not losing mass, we would use much simpler analysis based on Eq. <xref ref="eq-cm-eom-fext-ma" />.
+			</p>
+
+		</subsubsection>
+
+		<example><title> CM of an exploding shell </title>
+			<p>
+				As an example consider the motion of pieces of an exploded shell in free-fall.  Although the pieces fly away in various directions, the CM falls as if no explosion had taken place since during the explosion all forces are internal to the system.
+			</p>
+ 
+			<sidebyside widths="50% 40%">
+				<p>
+					The motion of CM is that of a single particle with total mass of the system.  The fictitious particle at the CM falls freely with acceleration equal to g, the acceleration due to gravity, until one of the pieces hits the ground.			  
+				</p>
+				<p>
+					<image source="./images/forces/example-exploding-shell.png" width="50%" />
+				</p>
+			</sidebyside> 
+
+		</example>
+
+
+	</subsection>
+
+</section>

@@ -1,0 +1,379 @@
+<section xml:id="Circuit-Analysis-Using-Complex-Numbers"><title>Circuit Analysis Using Complex Numbers</title>
+	<introduction>
+		<p>
+			The equations resulting from the application of Faraday's loop rule to an AC circuit results in the summation of sine and cosine functions. These calculations using the trigonometric functions are usually messy and an alternative method is desirable.  It turns out that the algebra of complex numbers is better at these calculations than the sine and cosine functions.   
+		</p>
+		<p>
+			The connection between complex analysis and sines and cosines comes from Euler's formula
+			<men>
+				e^{i\theta} = \cos\,\theta + i\,\sin\,\theta,
+			</men>
+			where <m>i = \sqrt{-1}</m>. Here, <m>\cos\,\theta</m> is the real part of <m>e^{i\theta}</m> and <m>\sin\,\theta</m> is the imaginary part of <m>e^{i\theta}</m>.
+			<!-- The companion formula is
+			<men>
+				e^{-i\theta} = \cos\,\theta - i\,\sin\,\theta.
+			</men>
+			From these you can immediately see that you can express sines and cosines as exponetials.
+			<mdn>
+				<mrow> \amp \cos\,\theta = \dfrac{1}{2}\left( e^{i\theta} + e^{-i\theta}\right),</mrow>
+				<mrow> \amp \sins\,\theta = \dfrac{1}{2i}\left( e^{i\theta} - e^{-i\theta}\right),</mrow>
+			</mdn> -->
+			Thus, in AC circuit calculations, we replace the cosine of the source voltage by a complex exponential. Then, we perform regular algebra. After completing the calculations, the real part of the final result corresponds to the answer we seek.
+		</p>
+		<p>
+			To distinguish complex voltage representing a real voltage, we will use the same symbol, but place a tilde (&#x007e;) sign above the symbol, and similarly for currents. Thus, we will replace
+			<me>
+				V = V_0\,\cos(\omega t + \phi)
+			</me>
+			by
+			<me>
+				\tilde V = V_0\, e^{ i ( \omega t + \phi ) },
+			</me>
+			whose real part is the original real voltage. As a result, the complex voltage <m>\tilde{V}</m> across an element and complex current <m>\tilde{I}</m>  through it,  are related by a complex version of Ohm's law, we can call <term>Complex Ohm's Law</term>.
+			<men>
+				\tilde{V} = \tilde{Z} \tilde{I},
+			</men>
+			where the complex <q>resistance</q> denoted by <m>\tilde{Z}</m> is called the <term> impedance</term> or the <term> complex impedance</term> of the element. In the following we will work out expressions for  complex impedances of   resistor,  inductor and  capacitor. We will find that complex impedance of inductor and capacitor are imaginary with absolute values equal to their reactances.
+		</p>
+		<p>
+			The inverse of the impedance is called <term>admittance</term> and is denoted by  <m>\tilde{Y}</m>.
+			<me>
+				\tilde{Y} =\frac{1}{\tilde{Z}}.
+			</me>			
+
+			We will see that the complex impedance allows one to treat resistors, capacitors and inductors in an AC circuit on an equal footing.
+
+		</p>
+	</introduction>
+	<subsection><title>Rectangular and Polar Forms of Complex Numbers </title>
+		<p>
+			You may already know that a complex number has two parts and can be written using <m>i=\sqrt{-1}</m>. For instance, <m>3+i4</m> is a complex part whose real part is <m>3</m> and imaginary part <m>4</m>. This is called complex number written in rectangular or Cartesian form. You can imagine this as point <m>(3,4)</m> in a complex plane. You can think of complex plane as Cartesina <m>xy</m>-plane.
+		</p>
+		<p>
+			Just as you can represent a point in <m>xy</m>-pane by <m>(x,y)</m> coordinates or corresponding polar coordinates <m>(r,\theta)</m>, you can do the same with a complex number. Thus, number <m>3+i4</m> will have polar representation <m>re^{i\theta}</m> with
+			<me>
+				r = \sqrt{3^2 + 4^2} = 5,\ \ \theta=\tan^{-1}\left( 4/3\right) = 51^\circ.
+			</me>
+			We call <m>r</m> absolute value or amplitude of the complex number <m>x+iy</m> and <m>\theta</m> phase of the complex number. Suppose, we denote complex number <m>x+iy</m> by letter <m>z</m>. Then, we will often write its  <m>r</m> as 
+			<m>
+				r = |z|.
+			</m>
+			For instance,  absolute value of complex impedance is equal to the amplitude of the impedance we have defined above.
+			<me>
+				|Z| = |\tilde{Z}|.
+			</me>
+			Also, note that absolute value of a complex number with <m>r=1</m> will be 1. That is, if a complex number is purely exponential, i.e, if <m>z=e^{i\theta}</m>, then
+			<me>
+				|z| = \left| z=e^{i\theta} \right| = 1.
+			</me>
+			Yoou can immediately verify this by using Euler's formula given above and <m>\cos^2\theta + \sin^2\theta = 1</m>.		
+		</p>
+	</subsection>
+	<subsection><title>Complex Impedance of a Resistor </title>
+		<p>
+			Since current <m>I(t)</m> through a resistor and <m>V_R(t)</m>, the voltage drop across a resistor are in-phase, when we take their ratio to get impedance, the exponetials will cancel out, leaving just the real resistance <m>R</m>.
+			<me>
+				\tilde{Z}_R = \dfrac{\tilde{V}_R}{\tilde{I}} = R.
+			</me>
+		</p>
+	</subsection>
+	<subsection><title>Complex Impedance of an Inductor </title>
+		<p>
+			Since current <m>V_L(t)</m> across an inductor leads current <m>I(t)</m> through it by a phase of <m>\pi/2</m> radians, their ratio will give reactance times an exponential with a positive phase constant. 
+			<me>
+				\tilde{Z}_L = \dfrac{\tilde{V}_L}{\tilde{I}} = \omega L e^{i\pi/2} = i \omega L,
+			</me>
+			where I used <m>e^{i \pi/2} = \cos\, \pi/2 + i\, \sin\, \pi/2 = 0 + i = i</m>. Note that absolute value of this impedance is the expected reactance of the inductor.
+			<me>
+				|Z_L| = \omega L.
+			</me>
+			The phase of complex <m>Z_L</m> is <m>\frac{\pi}{2}</m>.
+		</p>
+	</subsection>
+
+ 	<subsection><title>Complex Impedance of a Capacitor </title>
+		<p>
+			Since current <m>V_L(t)</m> across a capacitor lags current <m>I(t)</m> through it by a phase of <m>\pi/2</m> radians, their ratio will give reactance times an exponential with a negative phase constant. 
+			<me>
+				\tilde{Z}_C = \dfrac{\tilde{V}_C}{\tilde{I}} = \dfrac{1}{\omega C} e^{-i\pi/2} = i \omega L,
+			</me>
+			where I used <m>e^{i \pi/2} = \cos\, \pi/2 - i\, \sin\, \pi/2 = 0 - i = - i</m>. Note that absolute value of this impedance is the expected reactance of the capacitor.
+			<me>
+				|Z_C| = \dfrac{1}{\omega C}.
+			</me>
+			The phase of complex <m>Z_C</m> is <m>-\frac{\pi}{2}</m>.
+		</p>
+	</subsection>
+
+	<subsection><title> AC Circuit Problems </title>
+		<p>
+			The first step in the analysis of an AC circuit is to replace circuit elements by their impedances.  Each resistor <m>R</m> is replaced by its <m>Z_R = R</m>, each inductance <m>L</m> is replaced by its impedance <m>Z_L = i\omega L</m>, and each capacitance is replaced by its impedance <m>Z_C =1/ i\omega C</m>.   Then, we subject the circuit by Kirchoff's current law for complexe currents and Faraday's loop rule for each loop in the circuit. We then, solve for complex currents and deduce the physical currents from the real parts of the complex currents. These steps are best illustrated by examples.
+		</p>
+
+		<example xml:id="Series-RLC-Circuit-in-Complex-Notation"><title> Series RLC Circuit in Complex Notation </title>
+			<statement>
+				<p> 
+					Consider the series RLC-circuit. Find current in the circuit.
+				</p>
+				<figure xml:id="fig-RLC-series-circuit-exp">
+					<caption>
+						A series RLC-circuit driven by an alternating EMF.
+					</caption>
+					<image source="./images/ac-circuits/RLC-series-circuit.png" width="60%"/>
+				</figure>
+			</statement>
+			<hint> <p>  Replace passive circuit elements by their complex impedances and treat them as resistors. </p> </hint>
+			<answer> <p> <m>I_0 = \dfrac{V_0}{ \sqrt{ R^2 + \left( \omega L- \dfrac{1}{\omega C}\right)^2 } }</m>, <m> \phi_I = - \tan^{-1} \left( \dfrac{\omega L- \dfrac{1}{\omega C}}{R} \right)</m>.  </p> </answer>
+			<solution> 
+				<p>
+					First step in our solution is to replace original circuit by a complex circuit where we replace <m>R</m> by <m>Z_R</m>, <m>C</m> by <m>Z_C</m>, and <m>L</m> by <m>Z_L</m>, and treat currents and voltages complex. This is shown as a complex circuit in the figure below.
+				</p>
+				<figure xml:id="fig-RLC-series-circuit-exp-complex">
+					<caption>
+						A series RLC-circuit driven by an alternating EMF with complex quantities.
+					</caption>
+					<image source="./images/ac-circuits/RLC-series-circuit-complex.png" width="60%"/>
+				</figure>
+				<p>
+					Now, we think of impedances as if they were simple resistors. In this circuit, the loop equation will give
+					<me>
+						\tilde V - \tilde Z_R\tilde I - \tilde Z_L\tilde I  - \tilde Z_C\tilde I = 0,
+					</me>
+					which can be solved for complex current.
+					<men xml:id="eq-RLS-series-complex-current">
+						\tilde I = \dfrac{\tilde V}{ \tilde Z_R + \tilde Z_L + \tilde Z_C}.
+					</men>
+					From this we note that complex impedance of the circuit is
+					<md>
+						<mrow> \tilde Z \amp = \tilde Z_R + \tilde Z_L + \tilde Z_C </mrow>
+						<mrow>  \amp = R + i \omega L+ \dfrac{-i}{\omega C} </mrow>
+						<mrow>  \amp = R + i \left( \omega L- \dfrac{1}{\omega C}\right) </mrow>
+					</md>
+					This is rectangular form of complex impedance, which we can also write in polar form. Let
+					<me>
+						  R + i \left( \omega L- \dfrac{1}{\omega C}\right) = |Z|\,e^{i\phi_Z}.
+					</me>
+					Then, 
+					<md>
+						<mrow> |Z| =  \sqrt{ R^2 + \left( \omega L- \dfrac{1}{\omega C}\right)^2 } </mrow>
+						<mrow> \phi_Z =  \tan^{-1} \left( \dfrac{\omega L- \dfrac{1}{\omega C}}{R} \right) </mrow>
+					</md>
+					Using polar form of complex impedance in Eq. <xref ref="eq-RLS-series-complex-current"/> we get polar form of complex current.
+					<me>
+						\tilde I = \dfrac{\tilde V}{ \tilde Z } = \dfrac{V_0}{|Z|}\, e^{i\left(\omega t-\phi_Z\right)},
+					</me>
+					whose real part gives the physical current in the circuit.
+					<me>
+						I(t) = \dfrac{V_0}{|Z|}\,\cos(\omega t - \phi_Z ).
+					</me>
+					Wrting this as <m>I(t) = I_0\,\cos(\omega t + \phi_I)</m> we have
+					<md>
+						<mrow> I_0 = \dfrac{V_0}{ \sqrt{ R^2 + \left( \omega L- \dfrac{1}{\omega C}\right)^2 } },</mrow>
+						<mrow> \phi_I = - \tan^{-1} \left( \dfrac{\omega L- \dfrac{1}{\omega C}}{R} \right). </mrow>
+					</md>
+
+
+				</p>
+				
+			</solution>
+		</example>
+
+
+	<example xml:id="exp-Parallel-RL-Circuit-in-Complex-Notation"><title> Parallel RL Circuit in Complex Notation </title>
+		<statement>
+			<p>
+				Consider the circuit given in the Fig. \ref{fig:example-ac-RL-1} where a resistor <m>R</m> and an inductor <m>L</m> are connected in parallel to an AC power generator with voltage <m>V(t) = V_0\cos(\omega t)</m>.  Find (a) current in each branch of the circuit, (b)  average power dissipated in the resistor, and (c) average power produced by the AC generator.
+			</p>
+			<figure xml:id="fig-exp-parallel-RL-circuit">
+				<caption>
+					A parallel RL-circuit driven by an alternating EMF.
+				</caption>
+				<image source="./images/ac-circuits/exp-parallel-RL-circuit.png" width="60%"/>
+			</figure>
+
+
+		</statement>
+		<hint> <p> Replace passive circuit elements by their complex impedances and treat them as resistors.  </p> </hint>
+		<answer> <p> (a) <m>I_1(t) = \dfrac{V_0}{R}\,\cos(\omega t)</m>,
+						<m> I_2(t) = \dfrac{V_0}{\omega L}\,\sin(\omega t)</m>,
+						<m> I = I_1 + I_2</m>, 
+		 (b) and (c) <m>\dfrac{1}{2}\,\dfrac{V_0^2}{R}</m> </p> </answer>
+		<solution> <title>(a)</title>
+			<p> (a)
+				First step in our solution is to replace original circuit by a complex circuit where we replace <m>R</m> by <m>Z_R</m>, and <m>L</m> by <m>Z_L</m>, and treat currents and voltages complex. This is shown as a complex circuit in the figure below.
+			</p>
+			<figure xml:id="fig-exp-parallel-RL-circuit-complex">
+				<caption>
+					A parallel RL-circuit driven by an alternating EMF with complex quantities.
+				</caption>
+				<image source="./images/ac-circuits/exp-parallel-RL-circuit-complex.png" width="60%"/>
+			</figure>
+			<p>
+				From loop with source and <m>\tilde Z_R</m> we get
+				<me>
+					\tilde I_1 = \dfrac{\tilde V}{\tilde Z_R} = \dfrac{V_0}{R}\, e^{i\omega t},
+				</me>
+				whose real part gives the physical current through <m>R</m>.
+				<me>
+					I_1(t) = \dfrac{V_0}{R}\,\cos(\omega t).
+				</me>
+			</p>
+			<p>
+				From loop with source and <m>\tilde Z_L</m> we get
+				<me>
+					\tilde I_2 = \dfrac{\tilde V}{\tilde Z_L} = \dfrac{V_0}{i\omega L}\, e^{i\omega t},
+				</me>
+				whose real part gives the physical current through <m>L</m>. To obtain the real part of this complex quantity we note that
+				<me>
+					\dfrac{1}{i} = -i = e^{-i\pi/2},
+				</me>
+				which can be combined with <m>e^{i\omega t}</m> to give
+				<me>
+					\tilde I_2 =  \dfrac{V_0}{\omega L}\, e^{i(\omega t - \pi/2)},
+				</me>
+				whose real part is				
+				<me>
+					I_2(t) = \dfrac{V_0}{\omega L}\,\cos(\omega t -\pi/2),
+				</me>
+				which we can also write as
+				<me>
+					I_2(t) = \dfrac{V_0}{\omega L}\,\sin(\omega t),
+				</me>
+				Conservation of current at nodes gives the overall current.
+				<mdn>
+					<mrow number="no">I(t) \amp = I_1(t) + I_2(t) </mrow>
+					<mrow xml:id="eq-parallel-RL-overall-current">  \amp = \dfrac{V_0}{R}\,\cos(\omega t) + \dfrac{V_0}{\omega L}\,\sin(\omega t). </mrow>
+				</mdn>
+				We can write this answer as <m>I_0\,\cos(\omega t + \phi_I)</m> with the following answer.
+				<md>
+					<mrow> I_0 = V_0\,\sqrt{ \left( \dfrac{1}{R} \right)^2 + \left( \dfrac{1}{\omega L} \right)^2 },</mrow>
+					<mrow> \phi_I = -\tan^{-1}\left( \dfrac{R}{\omega L}\right). </mrow>
+				</md>
+				To see these expressions, you can either expand <m>I_0\,\cos(\omega t + \phi_I)</m>, equate the result to the answer in Eq. <xref ref="eq-parallel-RL-overall-current"/>, separately equate coefficients of <m>\cos(\omega t)</m> and <m>\sin(\omega t)</m>, and then solve for the phase constant and amplitude.
+
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p> (b)
+				The instantaneous power dissipated in the resistor will be
+				<me>
+					P_R(t) = I_1(t) V_R(t) = R I_1(t)^2 = R \left( \dfrac{V_0}{R}\right)^2\,\cos^2(\omega t).
+				</me>
+				Average of <m>\cos^2(\omega t)</m> is <m>\dfrac{1}{2}</m>. Therefore, average power dissipates is
+				<md>
+					<mrow> P_{R,\text{av}} \amp = \dfrac{1}{2}\,\dfrac{V_0^2}{R}. </mrow>
+				</md>
+			</p>
+		</solution>
+
+		<solution> <title>(c)</title>
+			<p> (c)
+				The instantaneous power delivered to the circuit by the source will be
+				<me>
+					P(t) = I(t) V(t) =  I_0 V_0 \cos(\omega t) \cos(\omega t + \phi_I)
+				</me>
+				Average of <m>\cos(\omega t) \cos(\omega t + \phi_I)</m> is <m>\dfrac{1}{2}\cos\,\phi_I</m>. Therefore, average power dissipates is
+				<md>
+					<mrow> P_{\text{av}} \amp = \dfrac{1}{2}\,I_0 V_0\cos\,\phi_I, </mrow>
+					<mrow>   \amp = \dfrac{1}{2}\, \left[V_0\sqrt{\left( \dfrac{1}{R} \right)^2 + \left( \dfrac{1}{\omega L} \right)^2 }\right]\, V_0\, \left[\dfrac{\omega L}{\sqrt{R^2 + \omega^2 L^2}}\right]. </mrow>
+					<mrow>   \amp = \dfrac{1}{2}\,\dfrac{V_0^2}{R}. </mrow>
+				</md>
+				This is the same as the energy dissipated in the resistor, the only place where energy could have gone.
+			</p>
+		</solution>
+
+
+	</example>
+
+	<example xml:id="exp-Circuit-Elements-in-Series-and-in-Parallel"><title> Circuit Elements in Series and in Parallel </title>
+		<statement>
+			<p>
+				(a) Find current through the capacitor in the circuit. (b) Use the following values to find the numerical values of the magnitude and phase of the current through the capacior.
+				<md>
+					<mrow> \amp V_0=170\text{ V},\ \ \omega = 2\pi\times 60\text{ sec}^{-1}, </mrow>
+					<mrow> \amp R = 1000\ \Omega;\ \ L = 1\; \text{mH};\ \ C = 1\; \mu\text{F}.</mrow>
+				</md> 
+			</p>
+			<image source="./images/ac-circuits/example-ac-RLC-1.png" width="60%"/>
+		</statement>
+		<hint> <p> Replace passive circuit elements by their complex impedances and treat them as resistors.  </p> </hint>
+		<answer> <p> (a) See solution, (b) <m> 64\; \text{mA}</m>, <m> \pi/2</m>  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) We start by first replacing the passive elements in the circuit by their impedances.
+			</p>
+
+			<image source="./images/ac-circuits/example-ac-RLC-2.png" width="60%"/>
+			<p>
+				Since we just want the current through <m>C</m>, which is the same as current through the source, we will work out equivalent impedance of everything connected across the source. We see that <m>\tilde{Z}_C</m> is in series with parallel combinations of <m>\tilde{Z}_R</m> and <m>\tilde{Z}_L</m>, the equivalent impedance is
+				<md>
+					<mrow> \tilde{Z} \amp = \tilde{Z}_C + \left( \dfrac{1}{\tilde{Z}_R}  + \dfrac{1}{\tilde{Z}_L} \right)^{-1},</mrow>
+					<mrow>   \amp = \dfrac{-i}{\omega C} + \left( \dfrac{1}{R}  + \dfrac{1}{i\omega L} \right)^{-1},</mrow>
+					<mrow>   \amp = \dfrac{-i}{\omega C} + \dfrac{i\omega R L}{ R + i\omega L } ,</mrow>
+					<mrow>   \amp = \dfrac{-i}{\omega C} + \dfrac{i\omega R L}{ R + i\omega L }\times \dfrac{R-i\omega L}{R-i\omega L},</mrow>
+					<mrow>   \amp =  \dfrac{\omega^2 R L^2}{ R^2 + \omega^2 L^2 } + i \left(\dfrac{\omega R^2 L}{ R^2 + \omega^2 L^2 } - \dfrac{1}{\omega C}\right).</mrow>
+				</md>
+				This gives real and imaginary parts of the equivalent complex impedance.
+				<md>
+					<mrow> \amp \text{Re}(Z) =  \dfrac{\omega^2 R L^2}{ R^2 + \omega^2 L^2 } \equiv a,</mrow>
+					<mrow> \amp \text{Im}(Z) =  \dfrac{\omega R^2 L}{ R^2 + \omega^2 L^2 } - \dfrac{1}{\omega C} \equiv b.</mrow>
+				</md>
+				Therefore, we have <m>Z = |Z|e^{i\phi_Z}</m> with
+				<md>
+					<mrow> \amp |Z| =  \sqrt{a^2 + b^2},</mrow>
+					<mrow> \amp  \phi_Z = \tan^{-1}\left( \dfrac{b}{a}\right).</mrow>
+				</md>				
+				Using the magnitude and phase of equivalent impedance, we can immediately write the magnitude and phase of current through the course, <m> I = I_0\cos(\omega t + \phi_I)</m>, with
+				<md>
+					<mrow> \amp I_0 =  V_0/|Z|,</mrow>
+					<mrow> \amp  \phi_I = -\phi_Z.</mrow>
+				</md>				
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+ 
+			<p> (b)
+				
+				The value of  impedances of the elements are:
+				<me>
+					Z_R = 1000\; \Omega;\ \ Z_L = i 0. 377\; \Omega; \ \ Z_C =-i 2652\; \Omega.
+				</me>
+				The equivalent impedance becomes
+				<me>
+					\tilde{Z}  \approx 1.4\times 10^{-4} \Omega - i 2652 \Omega.
+				</me>
+				The amplitudes and phase of the current would be,
+				<me>
+					I_0  \approx 64\; \text{mA}.
+				</me>
+				<me>
+					\phi_I  \approx \frac{\pi}{2}\; \text{rad}.
+				</me>
+				
+			</p>
+		</solution>
+	</example>
+
+ 
+
+
+
+
+
+	</subsection>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

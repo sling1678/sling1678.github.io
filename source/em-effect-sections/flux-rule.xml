@@ -1,0 +1,515 @@
+<section xml:id="Faradays-Flux-Rule"><title> Faraday's Flux Rule and Lenz's Law</title>
+	<introduction>
+		<p>
+			Various experiments of Faraday show that an electricity is induced in a circuit when there is a changing magnetic field or if the loop is moving in a magnetic field.  These effects are collectively called the <term> electromagnetic induction</term>.
+		</p>
+	</introduction>
+
+
+	<subsection><title> Faraday's Flux Rule</title>
+
+		<p></p>
+		<sidebyside widths="70% 5% 25%">
+			<p>
+				Recall a simple circuit containing a voltage source as in <xref ref="fig-DC-emf-circuit-faraday-chapter"/>. The current in this circuit is driven by the electric field that gets set up in the wire by the voltage source. The work done by the voltage source in driving the current in the circuit per unit charge is called electromotive force (EMF), which is same as voltage there. 
+			</p>
+			<p></p>
+			<figure xml:id="fig-DC-emf-circuit-faraday-chapter">
+				<caption>
+				</caption>
+				<image source="./images/em-effect/DC-emf-circuit.png" width="25%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Faraday's experiments described in <xref ref="faradays-experiments"/> show that a current can be induced in a circuit even when there is no voltage source. So, how that can be? Faraday reasoned that induced current must be due to an induced EMF in the circuit. Because, induced current was intimately connected to magnetic field, Faraday also reasoned that induced EMF must be somehow related to the magnetic flux.
+		</p>
+		<p>
+			Faraday explained all his experiments by a simple rule, often referred to as <term>Faraday's flux rule</term>. It states that induced EMF in a loop is equal to the rate at which magnetic flux through the loop changes. Sometimes this rule is also referred to as Faraday's law - we will reserve that phrase for a more general result to be described in <xref ref="Faradays-Law"/>. 
+		</p>
+		<p>
+			Let us denote induced EMF by <m> \mathcal{E}_\text{ind}</m> rather than symbol <m>V</m> since we are dealing with dynamical quantity as opposed to static quantity of a voltage of a battery.  According to Faraday's flux rule, average induced EMF during interval <m>t</m> to <m>t+\Delta t</m> is given by the rate of change of magnetic flux.
+			<men xml:id="eq-faraday-law-average-EMF">
+				\mathcal{E}_\text{ind,ave} = - \dfrac{\Delta \Phi_B}{\Delta t}.
+			</men>
+			You can see that the unit of <m> \Delta \Phi_B / \Delta t</m> is actually volts, same as the unit of battery voltage. Thus, if at some instant, <m> \Delta \Phi_B / \Delta t</m> was <m>12\text{ V}</m>, then, the circuit will have current corresponding to a <m>12\text{ V}</m> fictitious battery in the circuit. We will see examples of its applications below.
+		</p>
+
+
+		<subsubsection><title> Flux Rule for Uniform Magnetic Field </title>
+			<p>
+				For uniform magnetic field and flat area we found above that <m>\Phi_{B} = B A \cos\,\theta</m>. Therefore, a change in magnetic flux can occur in three ways:
+				<ol>
+					<li> 
+						<p>
+							<m>\Delta \Phi_B</m> due to changing <m>B</m>, i.e, changing strength of <m>\vec B</m>, 
+							<me>
+								\Delta \Phi_{B,B} = (A \cos\,\theta )\Delta B, 
+							</me>
+						</p>
+					</li>
+					<li> 
+						<p>
+							<m>\Delta \Phi_B</m> due to changing <m>A</m>, i.e, changing area in the loop through which field lines may go through,
+							<me>
+								\Delta \Phi_{B,A} = (B \cos\,\theta )\Delta A, 
+							</me>
+						</p>
+					</li>
+					<li> 
+						<p>
+							<m>\Delta \Phi_B</m> due to changing <m>\theta</m>, i.e, relative orientation of <m>\vec B</m> and area.
+							<me>
+								\Delta \Phi_{B,\theta} = -(B A \sin\,\theta )\Delta \theta, 
+							</me>
+							where you have <m>-\sin\,\theta</m> since you need to take a derivative of cosine, when you are looking at changing orientation.						
+						</p>
+					</li>
+				</ol>
+				Pooling the three types of contributions you will get the net change in flux in time <m>\Delta t</m>.
+				<men>
+					\Delta \Phi_B = \Delta \Phi_{B,B} + \Delta \Phi_{B,A} + \Delta \Phi_{B,\theta}.
+				</men>
+				Therefore, in the case of uniform magnetic field through a flat area, induced EMF will come from three sources. 
+				<men xml:id="eq-faraday-law-average-EMF-three-sources">
+					\mathcal{E}_\text{ind,ave}  = - \dfrac{\Delta \Phi_{B,B}}{\Delta t} -\dfrac{\Delta \Phi_{B,A}}{\Delta t} -  \dfrac{\Delta \Phi_{B,\theta}}{\Delta t}.
+				</men>
+				Faraday's experiments described in <xref ref="faradays-experiments"/> illustrate these mechanisms by which flux can change in a closed loop.
+			</p>
+			<p><alert>Direction of Induced Current.</alert> We will see below  in <xref ref="subsection-Lenzs-Law"/> that Lenz's law is an easier way to glean the direction of induced current, but here we make the point that minus sign  in Eq. <xref ref="eq-faraday-law-average-EMF"/> tells us the direction of the induced EMF, itself, which is the direction of the induced current. </p>
+			<sidebyside widths="55% 5% 40%">		
+				<p>
+					Minus sign in Eq. <xref ref="eq-faraday-law-average-EMF"/> gives us the direction of induced current when we use right-hand rule to assign direction to the area of the loop as illustrated in <xref ref="fig-faraday-current-direction-rhr"/>. If <m>\mathcal{E}_\text{ind,ave}</m> is positive, then induced current will be in the direction of the area vector and if <m>\mathcal{E}_\text{ind,ave}</m> is negative, then induced current is in the opposite direction.
+				</p>
+				<p> </p>
+				<figure xml:id="fig-faraday-current-direction-rhr">
+					<caption>
+					</caption>
+					<image source="./images/em-effect/faraday-current-direction-rhr.png" width="30%"/>
+				</figure>
+			</sidebyside>
+			
+
+			<p>
+				<alert> Magnitude of Induced Current.</alert> 
+				Let <m> \mathcal{E}_\text{ind}</m> be the induced EMF in a loop of wire that has resistance <m>R</m>, then by Ohm's law we would get induced current <m>I_\text{ind}</m>.
+				<men>
+					I_\text{ind} = \dfrac{1}{R}\,\mathcal{E}_\text{ind}.
+				</men>
+				So, how is <m>\mathcal{E}_\text{ind}</m> related to moving conductor, moving magnet, or changing magnetic field? We will work formulas out in particular situations below and then give a complete answer in the end.
+			</p>
+		</subsubsection>
+
+		<!-- <subsubsection><title>(Calculus) General Flux Rule - Instantaneous Induced EMF </title>
+
+		<p>
+			By taking the <m>\Delta t\rightarrow 0</m> limit in Eq. <xref ref="eq-faraday-law-average-EMF" /> we obtain the instantaneous induced EMF, i.e., EMF at instant <m>t</m> as a derivative of the magnetic flux. (Calculus)
+			<men>
+				\mathcal{E}_\text{ind} = - \dfrac{d \Phi_B}{d t}, 
+			</men>
+			which is compact form quite a nasty expression.
+			<me>
+				\mathcal{E}_\text{ind} = - \dfrac{d }{d t}\,\int_\text{surface} \vec B \cdot d\vec A.
+			</me>			
+		</p>		
+		</subsubsection> -->
+	</subsection>
+
+
+	<subsection><title> Flux Rule and Stacking Loops</title>
+		<p>
+			Faraday used stacked coils to enhance the induced EMF in the loop. A long wire is twisted into coils and the ends of the wire are connected to complete the loop. We can now understand why coils enhance the electromagnetic effect. 
+		</p>
+
+		<p>
+			Consider two circuits labelled <m>\mathcal{C}_1</m> and <m>\mathcal{C}_2</m> in <xref ref="fig-faraday-four-stacked-loop-coil"/> which are made of identical material and have the same size loops.  In the circuit <m>\mathcal{C}_1</m> there is only one loop and in the circuit <m>\mathcal{C}_2</m> there are four loops which are connected so that the induced current would flow parallel in all the loops.  Note that the wire will have to be twisted to connect the ends so that current flows in the same direction in all the loops. 
+		</p> 
+		<figure xml:id="fig-faraday-four-stacked-loop-coil">
+			<caption>
+				Varying magnetic field induces four times as much EMF as in circuit <m>\mathcal{C}_2</m>  as in circuit <m>\mathcal{C}_1</m> and hence four times as much current. 
+			</caption>
+			<image source="./images/em-effect/faraday-four-stacked-loop-coil.png" width="60%"/>
+		</figure>
+
+		<p>
+			Suppose we place circuit <m>\mathcal{C}_2</m> in an external magnetic field and then we vary the strength of the field. 
+		</p>
+
+
+<!-- 
+		<figure xml:id="fig-two-loops-Faraday">
+			<caption>
+				The rate of change of magnetic flux through the complicated open surface attached to two-loop circuit <m>\mathcal{C}_2</m> will be approximately equal to twice through the surface of one-loop circuit <m>\mathcal{C}_1</m>. Therefore, induced EMF in the two-loop circuit will be twice the EMF induced in the one-loop circuit. Since, the length of <m>\mathcal{C}_2</m> is twice that of <m>\mathcal{C}_1</m>, twice the EMF in <m>\mathcal{C}_2</m> would imply that induced electric fields and induced currents in the two circuits are equal. The directions of the induced currents in the two figures are for the instant when the magnetic field through the loop(s)  is increasing.
+			</caption>
+			<image source="./images/em-effect/two-loops-Faraday.png" width="60%"/>
+		</figure>
+
+		<p>
+			Now, we place the two circuits in identical magnetic field that changes with time identically.  For illustrative purposes, in <xref ref="fig-two-loops-Faraday"/> the magnetic field is pointed up  and  <alert> increasing</alert>. The  induced current in this situation   flows  clockwise when looked from above in the figure. The current in the connecting wires in the two-loop circuit is up in one wire and down in the other wire.
+		</p> -->
+		<p>
+			Now, we ask: how do various quantities in the two circuits compare? In particular, we compare the rates of the change magnetic fluxes and the induced EMFs in the two circuits. Let us use superscripts <m>(1)</m> and <m>(2)</m> for the quantities in the two circuits.
+		</p>
+		<p>
+			We see that a simple surface can be attached to calculate the magnetic flux through the one-loop circuit <m>\mathcal{C}_1</m>, but no simple surface can be attached to all the wires of circuit <m>\mathcal{C}_2</m> due to the connecting wires on the side. <!-- For simplicity the extra surface that is needed to attach the open surface to all wires of the loop on the sides is not shown  -->
+
+			In  <xref ref="fig-faraday-four-stacked-loop-coil"/>, I have highlighted only the loop areas and omitted other areas around the loop that would be need for all areas enclosed by the entire circuit. These other areas are negligible in our case and it is okay to ignore them. With this assumption, we see that the magnetic flux through <m>\mathcal{C}_2</m> is four times the magnetic flux through <m>\mathcal{C}_1</m>.
+			<me>
+				\left|\Phi_B^{(2)}\right| \approx 4\times \left|\Phi_B^{(1)}\right|
+			</me> 
+			We will now ignore the small error we make in neglecting the extra surface on the side of the loops and will write the relations as an equality below. Thus, the rate of change of the magnetic flux through <m>\mathcal{C}_2</m> is four times that through <m>\mathcal{C}_1</m>. 
+			<me>
+				\left|\dfrac{d\Phi_B^{(2)}}{dt} \right|= 4\times \left|\dfrac{d\Phi_B^{(1)}}{dt}\right|,
+			</me> 
+			which implies that the induced EMF in <m>\mathcal{C}_2</m> would be four times that in <m>\mathcal{C}_1</m>
+			<me>
+				\mathcal{E}^{(2)} = 4\times \mathcal{E}^{(1)}
+			</me>
+
+		</p>
+
+
+	</subsection>
+
+
+
+	<subsection xml:id="subsection-Lenzs-Law"><title> Lenz's Law </title>
+		<p>
+			When you examine the direction of the induced magnetic field by the induced current and compare it with the direction of the external magnetic field, you notice the following observation, known as <term>Lens's law</term>.
+		</p>
+		<p>  
+			<em> The flux of the magnetic field generated by the induced current always opposes the change in the magnetic flux through the loop. Lenz explained this by claiming that each closed circuit has an inertia of magnetic flux and develops induced current to oppose any change in its state.</em>
+		</p>
+		<p>
+			It is easy to figure out the direction of induced current by applying Lenz's law. 
+			For instance, suppose external magnetic field was directed towards positive <m>z</m> axis and it was increasing. In this case, the magnetic field of the induced current will be in the negative <m>z</m> direction, as illustrated in <xref ref="fig-lenzs-law"/>. On the other hand, if the magnetic field was decreasing, then, the magnetic field of the induced current will be in the positive <m>z</m> direction. 
+		</p>
+		<p>
+			<alert>From the required direction of the induced magnetic field, we can deduce the current that must have been induced by using Biot-avart's right-hand rule.</alert>
+		</p>
+ 
+
+		<figure xml:id="fig-lenzs-law">
+			<caption>
+				As magnetic flux through the conducting loop in the direction into-the-page increases, the induced current in the loop develops, whose magnetic field must have the direction out-of-page, denoted by symbol <m>\bigotimes</m>,in the area of the loop to fight the increasing flux. To create magnetic field in <m>\bigotimes</m> direction in the area of the loop, the induced current must be running counterclockwise by using Biot-Savart's right-hand rule. 
+			</caption>
+			<image source="./images/em-effect/lenzs-law.png" width="80%"/>
+		</figure>
+ 
+ 
+	</subsection>
+
+
+
+	<subsection><title>Faraday's Paradox</title>
+		<p>
+			<alert> Faraday's flux rule does not explain induced current in all stuations.</alert> For instance, <!-- 
+			Faraday also stressed on the limitations of the flux rule in providing an explanation of all electromagnetic phenomenon. --> <xref ref="fig-faraday-paradox"/> shows an adaptation of Faraday's disc problem in a practical setting, where you need to go beyond flux rule and include Lorentz force on moving electrons to explain the development of induced current. 
+		</p>
+		<p>
+			In <xref ref="fig-faraday-paradox"/>, a conducting disc is connected to a galvanometer with one contact at the shaft and the other at the edge of the disc so that the contacts rub the metal shaft and the metal edge when the disc rotates. A magnet is fixed to provide a magnetic field perpendicular to the surface of the disc.
+		</p>
+
+		<figure xml:id="fig-faraday-paradox">
+			<caption>
+				A metal disc is rotated in the presence of a fixed magnet.  When the disc rotates, there is no change in magnetic flux through any choice of line on the disc to complete the loop through the galvanometer. Yet there is an induced current through the galvanometer.  The EMF for the current through the galvanometer can be understood in terms of radially pointed Lorentz force, <m>q \vec v\times \vec B</m>, on the  moving conduction electrons at the points on the disc with non-zero magnetic field. Adapted from Feynman's Lectures in Physics, Vol II.
+			</caption>
+			<image source="./images/em-effect/faraday-paradox.png" width="60%"/>
+		</figure>
+		<p>
+			First note that a unique circuit is not clear here since you can draw infinitely many lines on the disc between the contact at the edge and the contact at the shaft.  The magnetic flux through any circuit you draw in space would not change with time. However, when the disc rotates a current is detected by the galvanometer.
+		</p>
+		<p>
+			A naive application of the flux rule gives us a contradiction here: the flux rule says that no flux change would mean no induced current.  However, a closer look at the experimental setting shows that the magnetic force, <m>q\vec v\times\vec B</m>, on the moving charges will cause a radial component of the velocity which will result in an overall drift of charges towards the shaft.  The EMF in this setting develops neither from a changing magnetic field nor  from a changing area of a loop or a changing orientation of a loop.   
+
+			<!-- A student may wish to consult Feynman's Lectures in Physics, Vol II, where another paradox has been illustrated that shows that there are situations where no current is induced even when the magnetic flux is changing.  Granted that these paradoxical situations are unusual circumstances, they nevertheless illustrate that, as a matter of principle, a student must be aware to think both in terms of the changing of flux and the magnetic force. -->
+
+		</p>
+		<p>
+			We can work out the induced EMF by Lorentz force as follows.
+			<!-- <alert> This rule does not explain induced current in all stuations.</alert> For instance, there are physical systems in which <m>\Phi_B</m> does not change with time, and yet, there is an induced current. Therefore, we sometimes need to supplement flux rule, Eq. <xref ref="eq-faraday-law-average-EMF"/>, by including EMF induced in a circuit due to Lorentz force on magnetic charges in motion. For instance, --> Suppose electrons in the metal are moving with velocity <m>\vec v  </m>, then there would be magnetic force on conduction electrons along the wire, thus accelerating them perpendicular to their motion.
+			<men>
+				\vec F_{m} = q \vec v  \times \vec B.
+			</men>
+			This force on conduction electrons will cause drift motion in the conductor guided by the geometry of the conductor. Since accelerating electrons cannot leave the conductor, this results into an induced electric field in the conductor, which is equal to this force per unit charge.
+			<men>
+				\vec E_\text{ind} = \dfrac{\vec F_{m} }{q} = \vec v_\perp \times \vec B.
+			</men>
+			Asssuming this field to have constant magnitude and flowing in the conducing loop of length <m>l</m>, the EMF associated with this induced field  will be
+			<men xml:id="eq-faraday-law-EMF-lorentz-force">
+				\mathcal{E}_\text{ind} = - E l = - |\vec v_\perp \times \vec B| l .
+			</men> 
+	</p>
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Six-Induced-EMF-and-Lenzs-Law-Exercises"><title> Six Induced EMF and Lenz's Law Exercises </title>
+		<statement>
+			<p>
+				Use Lenz's law to determine the direction of induced current in each case.  Here a circle with a dot, <m>\bigodot</m> represents magnetic field pointed out-of-page and a circle with an x, <m>\bigotimes</m> for a magnetic field pointed in-the-page, and lines are conductors.
+			</p>
+			<image source="./images/em-effect/exer-lenz-1.png" width="80%"/>
+		</statement>
+		<hint> <p> Apply Lenz's law.  </p> </hint>
+		<answer> <p>  
+			(a) up the rod,
+			(b) counterclockwise,
+			(c) clockwise,
+			(d) counterclockwise,
+			(e) counterclockwise,
+			(f) counterclockwise.
+			 </p> </answer>
+		<solution> <title>(a)</title>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					(a) Magnetic flux from magnetic field  in the direction out-of page decreases inside the loop.  Hence the induced current must create more of magnetic field in the out-of-page direction.  Therefore the induced current will flow up in the rod.
+				</p>
+				<p> </p>
+				<figure>
+					<caption>
+						(a)
+					</caption>
+					<image source="./images/em-effect/exer-lenz-1a.png" width="80%"/>
+				</figure>
+ 
+			</sidebyside>
+		</solution>
+		<solution> <title>(b)</title>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					(b) Since the ring is leaving an area of magnetic field in the out-of page direction, the induced current in the ring must generate magnetic field in the out-of-page direction.  Hence, induced current will be in the counterclockwise direction.
+				</p>
+				<p> </p>
+				<figure>
+					<caption>
+						(b)
+					</caption>
+					<image source="./images/em-effect/exer-lenz-1b.png" width="80%"/>
+				</figure>
+ 
+			</sidebyside>
+ 
+		</solution>
+
+		<solution> <title>(c)</title>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					(c) The ring is moving so that magnetic flux from magnetic field in the in-the-page direction is increasing.  Therefore the induce current will be creating magnetic field in the out-of-page direction so as to reduce the increase of in-the-page magnetic field.  A current in the clockwise direction will be induced.
+				</p>
+				<p> </p>
+				<figure>
+					<caption>
+						(c)
+					</caption>
+					<image source="./images/em-effect/exer-lenz-1c.png" width="80%"/>
+				</figure>
+ 
+			</sidebyside>
+ 
+		</solution>
+ 
+		<solution> <title>(d)</title>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					(d) As the bar moves, the loop encloses more of in-the-page magnetic field lines.  Hence, the induced current will produce out-of-page magnetic field inside the space enclosed by the loop. Therefore, the induced current will run in a counterclockwise direction.
+				</p>
+				<p> </p>
+				<figure>
+					<caption>
+						(d)
+					</caption>
+					<image source="./images/em-effect/exer-lenz-1d.png" width="80%"/>
+				</figure>
+ 
+			</sidebyside>
+ 
+		</solution>
+
+ 
+		<solution> <title>(e)</title>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					(e)  When <m>B</m> into the page is increasing, the magnetic flux through the ring for into-the-page will be increasing.  The induced current will be in such a direction that the magnetic field of the induced current will be in the  out-of page direction. Therefore, the direction of the induced current will be counterclockwise as shown.
+				</p>
+				<p> </p>
+				<figure>
+					<caption>
+						(e)
+					</caption>
+					<image source="./images/em-effect/exer-lenz-1e.png" width="80%"/>
+				</figure>
+ 
+			</sidebyside>
+ 
+		</solution>
+
+ 		<solution> <title>(f)</title>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					(f)  When <m>B</m> out-of-page is decreasing, the magnetic flux through the ring for out-of-page will be decreasing.  The induced current will be in such a direction that the magnetic field of the induced current will be in out-of page direction. Therefore, the direction of the induced current will be counterclockwise as shown.
+				</p>
+				<p> </p>
+				<figure>
+					<caption>
+						(f)
+					</caption>
+					<image source="./images/em-effect/exer-lenz-1f.png" width="80%"/>
+				</figure>
+ 
+			</sidebyside>
+ 
+		</solution>
+	
+	</exercise>
+
+
+	<exercise xml:id="ex-Induced-Current-in-Loop-Between-Poles-of-an-Electromagnet"><title> Induced Current in Loop Between Poles of an Electromagnet </title>
+		<statement>
+			<p>
+				A current is induced in a circular loop of radius 1.5 cm between two poles of a horseshoe electromagnet when the current in the electromagnet is varied.  The magnetic field in the area of the loop is perpendicular to the area and has a uniform magnitude.  If the rate of change of magnetic field is 10 T/s, find the magnitude and direction of the induced current if resistance of the loop is 25 <m>\Omega</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Use flux rule in combination with Lenz's law.  </p> </hint>
+		<answer> <p>  <m>2.83\times 10^{-4} \ \textrm{A}</m>. </p> </answer>
+		<solution> 
+			<p>
+				The magnitude of the induced current is found by dividing the induced EMF given by Faraday law.
+				<me>
+					I_{\textrm{ind}} = \dfrac{\left|d\Phi/dt \right|}{R_{\textrm{eq}}} = \dfrac{2\:\textrm{T/s}\times \pi (0.015\:\textrm{m})^2 }{5\:\Omega} = 2.83\times 10^{-4}\:\textrm{A}.
+				</me>
+				The direction will be such that it will oppose the increase of magnetic flux as shown in <xref ref="fig-exer-induced-current-between-magnets"/>. The magnetic flux of the external field in the left to right direction is increasing. Therefore, induced magnetic field will be pointed to the left at points inside of the loop. The induced current will be in the direction shown. 
+				<figure xml:id="fig-exer-induced-current-between-magnets">
+					<caption>
+						<xref ref="ex-Induced-Current-in-Loop-Between-Poles-of-an-Electromagnet"/> - direction of induced current.
+					</caption>
+					<image source="./images/em-effect/exer-induced-current-between-magnets.png" width="50%"/>
+				</figure>
+ 
+ 
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<exercise xml:id="ex-Induced-Current-in-a-Circular-Wire-Surrounding-a-Solenoid-from-Varying-Current-in-the-Solenoid"><title> Induced Current in a Circular Wire Surrounding a Solenoid from Varying Current in the Solenoid </title>
+		<statement>
+			<sidebyside widths="50% 10% 30% 10%">
+				<p>
+					Current in a long solenoid of radius 3 cm varies with time at a rate of 2 A/s.  A circular loop of wire of radius 5 cm and resistance 2 <m>\Omega</m> surrounds the solenoid.  Find the electric current induced in the loop.
+				</p>
+				<p></p>
+				<figure>
+					<caption></caption>
+					<image source="./images/em-effect/ex-induced-current-in-circular-loop-around-solenoid.png" width="50%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+
+
+
+		</statement>
+		<hint> <p>  Use loop rule. </p> </hint>
+		<answer> <p> <m>7.1\ \mu \ \textrm{A}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Note that even though there is no magnetic field at the site of the outer wire, there is a no-zero magnetic flux through the area of the loop which is changing in time.  Hence, a current will be induced in the outer wire given by Faraday law.
+				<md>
+					<mrow> I_{\textrm{ind}} \amp = \dfrac{\mathcal{E}}{R_{\textrm{outer loop}}} </mrow>
+					<mrow> \amp = \dfrac{\mu_0\:n\:A_{\textrm{sol}}}{R_{\textrm{outer loop}}}\:\dfrac{\Delta I_{\textrm{sol}}}{\Delta t},</mrow>
+				</md>
+				where <m>A_{\textrm{sol}}</m> is the area of cross-section of the solenoid and <m>I_{\textrm{sol}}</m> is the current in the solenoid at time <m>t</m>. Putting in the numerical values we obtain
+				<me>
+					I_{\textrm{ind}} = 7.1\times 10^{-6}\:\textrm{A}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Induced-EMF-in-Two-loop-Coil-Surrounding-a-Solenoid-with-Sinusoidally-Varying-Current"><title>(Calculus) Induced EMF in Two-loop Coil Surrounding a Solenoid with Sinusoidally Varying Current  </title>
+		<statement>
+			<sidebyside widths="70% 5% 25%">
+				<p>
+					A long solenoid of radius a with n turns per unit length is carrying a time-dependent current <m>I(t) = I_0 \sin (\omega  t)</m>, where <m>I_0</m> and  <m>\omega</m> are constants.  The solenoid is surrounded by a wire of resistance <m>R</m>  that has two circular loops of radius <m>b</m> with <m>b \gt a</m>.  Find the magnitude and direction of current induced in the outer loops at time <m>t=0</m>. 
+				</p>
+				<p> </p>
+				<image source="./images/em-effect/prob-two-loops-surrounding-solenoid.png" width="50%"/>
+			</sidebyside>
+		</statement>
+		<hint> <p> Use flux rule to find the induced EMF first. </p> </hint>
+		<answer> <p> <m>2\mu_0 \pi a^2 I_0 n\omega/R</m>.  </p> </answer>
+		<solution> 
+			<p>
+				It is easier to calculate the magnetic flux of the magneitc field of the current in the solenoid through the outer loops since the magnetic field of the solenoid is constant. 
+				<me>
+					\Phi_{\textrm{through outer loops}} = 2\times B_{\textrm{sol}}\times \pi a^2 = 2\times \mu_0\:n\:I_{\textrm{sol}}\times \pi a^2. 
+				</me> 
+				Note the area over which the magnetic field of the solenoid is non-zero is only the inside of the solenoid. Since the current in the solenoid <m>I_{\textrm{sol}}</m> is changing, the magnetic flux through the outer loops will change. The rate of change of this flux will induce an EMF in the outer loops.
+				<me>
+					\mathcal{E}_{\textrm{ind}} = \left| \dfrac{d\Phi}{dt}\right| = 2\pi\mu_0 a^2 I_0 n\omega|\cos\omega t|.
+				</me>
+				Therefore, the induced current has the magnitude 
+				<me>
+					I_{\textrm{ind}} = \dfrac{2\pi\mu_0 a^2 I_0 n\omega|\cos\omega t|}{R}.
+				</me>
+				Since the current in the solenoid changes direction, thereby changing the direction of the magnetic flux, the induced current will also change direction with time.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Induced-Current-As-a-Result-of-a-Varying-Magnetic-Field"><title> (Calculus) Induced Current As a Result of a Varying Magnetic Field</title>
+		<statement>
+			<p>
+				A circular loop of a copper wire of radius <m>a</m> and resistance <m>R</m> is placed in a uniform magnetic field whose direction is normal to the plane of the loop. While the direction of the magnetic field does not change with time, its magnitude changes with time according to <m>|\vec B(t)| = B_0 \exp{(-\alpha t)}</m>, where <m>B_0</m> is the magnitude at <m>t=0</m>.   Find the magnitude and direction of the induced current in the copper loop.
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m>\mathcal{E} = -\dfrac{d\Phi_B}{dt}</m> as magnitude first and then use Lenz's law to get direction. </p> </hint>
+		<answer> <p> <m>I = \dfrac{\mathcal{E}}{R} = \dfrac{\pi a^2 \alpha B_0}{R}\exp{(-\alpha t)}</m>, counterclockwise.  </p> </answer>
+		<solution> 
+			<p>
+
+				From Ohm's law we know that the induced current will be equal to the induced EMF in the loop divided by the equivalent resistance of the loop of wire. To find the induced EMF, we need to evaluate the rate of change of the magnetic flux through the loop.  Here the flux is changing due to the changing magnetic field whose analytic form has been provided.  Therefore, we find the rate of change  of the magnetic flux by taking the the time derivative of the magnetic flux.
+			</p>
+			<p>
+
+				Since the magnetic field is perpendicular to the area, the magnetic flux will be simply a product of the magnitude of the magnetic field and the area up to a sign.  We will ignore the sign in our calculations of the magnitude of the induced current. The sign is related to the direction of the induced current, which we will obtain by applying Lenz's law.
+			</p>
+			<p>
+
+				We will calculate the absolute value of the magnetic flux through the loop since we are gong to work with magnitudes first and we will find the direction of the induced current from Lenz's law. The magnetic flux has the following magnitude here.
+				<me>
+					|\Phi_B| =  \pi a^2B_0 \exp{(-\alpha t)}.
+				</me>
+				The induced EMF in the loop will be
+				<md>
+					<mrow> \mathcal{E} \amp = \left| \dfrac{d\Phi_B}{dt}\right|</mrow>
+					<mrow> \amp =\pi a^2 \alpha B_0 \exp{(-\alpha t)}</mrow>
+				</md>
+				Dividing the magnitude of the induced EMF by the equivalent resistance of the loop will give the magnitude of the induced current.
+				<me> 
+					I = \dfrac{\mathcal{E}}{R} = \dfrac{\pi a^2 \alpha B_0}{R}\exp{(-\alpha t)}.
+				</me>
+			</p>
+ 
+
+			<figure xml:id="fig-lenz-law-illustration-2">
+				<caption>
+					Direction of the induced current by Lenz's law.  We use the fact that the magnetic field of the induced current opposes the change in the magnetic flux through the space of the loop. The top figures show that the magnetic flux for magnetic field pointed out-of-page is decreasing with time.  The bottom figures show the  induced current tending to compensate the loss of the magnetic flux by producing magnetic field in the direction in which the new magnetic field can mitigate the loss.
+				</caption>
+				<image source="./images/em-effect/lenz-law-illustration-2.png" width="80%"/>
+
+			</figure>
+
+ 
+			<p>
+				We now utilize Lenz's law to determine the direction of the induced current. Let the direction of magnetic field be pointed up. The operational steps for the application of the Lenz's law for this problem are shown in <xref ref="fig-lenz-law-illustration-2"/>.  We start by noting that, since the magnitude of the magnetic field decreasing with time, the flux of the magnetic field of the type pointed-up would be decreasing with time.  Therefore, according to the Lenz's law, the magnetic flux of the magnetic field of the induced current must add to the magnetic flux of the pointed-up type field.  That is, the magnetic field of the induced current should be pointed up at points inside the loop. This gives the direction of counter-clockwise for the induced current as looked from above as shown in <xref ref="fig-lenz-law-illustration-2"/>.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+</section>

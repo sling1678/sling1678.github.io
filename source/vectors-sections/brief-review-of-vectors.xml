@@ -1,0 +1,535 @@
+<section><title> Brief Review of Vectors </title>
+	<introducion>
+	    <p>
+		    Many quantities in physics have both a magnitude and a direction. These quantities are called <alert> vectors</alert>. Analytically, vectors are processed using Cartesian coodinates, which gives us components. In the <m>xy</m> plane, the polar representation of these components gives us the magnitude and direction. In full <m> xyz</m> space, the spherical representation gives us magnitude and direction.  
+	    </p>		
+	</introducion>
+	<subsection> <title> Vectors in the <m>xy</m>-plane</title>
+		<p>
+			Consider a position of a particle at point P with coordinates <m> (x,y) </m>. We say this in another way - we say that:
+		</p>
+		<p>
+			<em> The arrow from the origin O to point P represents the position vector. We usually denote the position vector by the letter <m> r </m> with an arrow over the symbol as in <m> \vec r </m>. </em>
+		</p>
+		<p>
+			When you look at position vector this way, you can interpret <m> x </m> and <m> y </m> in another way: if you project a perpendicular from tip and tail of the arrow representing the vector to the <m> x </m> axis, then <m> x = x_{\text{tip}} - x_{\text{tail}} </m>, i.e., <m> x </m> is the difference of where the tip projects on the axis and where the tail projects. Similarly, <m> y </m> value can be interpreted.
+		</p>
+		<p>
+			The direct distance from O to P is the length of the arrow and is called the magnitude of the position vector. We denote this magnitude by  <m> r </m> wihtout the arrow. The direction of the position vector is the orientation in space of the arrow OP. In the <m> xy </m> plane, this orientation is usually given by the angle <m>\theta </m> the arrow makes with either the positive <m> x </m> or the negative <m> x </m> axis and whether you have to rotate clockwise or coounterclockwise from the axis to match the direction.
+		</p>
+		<p>
+			The mathematical relations between <m> (x, y) </m> and <m> (r, \theta) </m> are:
+			<mdn>
+			    <mrow xml:id="eq-coord-polar-relations-x"> \amp x = r \cos\theta </mrow>
+			    <mrow xml:id="eq-coord-polar-relations-y"> \amp y = r \sin\theta </mrow>
+			    <mrow xml:id="eq-coord-polar-relations-r"> \amp r = \sqrt{x^2 + y^2}</mrow>
+			    <mrow xml:id="eq-coord-polar-relations-t"> \amp \theta = \tan^{-1}\left( \dfrac{y}{x}\right)</mrow>
+			</mdn>
+		</p>
+		<p>
+			Every vector can be drawn the same way as the position vector with length of the arrow representing the magnitude of the vector and the orientation of the arrow representing the direction. The projections of the tip and tail of a vector on the Cartesian axis give us the information from which we obtain the vector in the component form. We denote the components of other vectors by attaching letters <m> x </m> or <m> y </m> as subscripts, and the magnitude by the same symbol wothout the arrow overhead. 
+		</p>
+		<p>
+			For instance, <m> x</m> and <m> y </m> components of a velocity vector <m> \vec v</m> would be represented by symbols <m> v_x </m> and <m> v_y</m>, respectively, and magnitude by symbol <m> v</m>. The relations are similar.
+			<md>
+			    <mrow > \amp v_x = v\, \cos\theta </mrow>
+			    <mrow > \amp v_y = v\, \sin\theta </mrow>
+			    <mrow > \amp v = \sqrt{v_x^2 + v_y^2}</mrow>
+			    <mrow > \amp \theta = \tan^{-1}\left( \dfrac{v_y}{v_x}\right)</mrow>
+			</md>			
+		</p>
+		<p>
+			For another property let us look at a force vector, The <m> x</m> and <m> y </m> components of a force vector <m> \vec F</m> would be represented by symbols <m> F_x </m> and <m> F_y</m>, respectively, and magnitude by symbol <m> F</m>. The relations are similar.
+			<md>
+			    <mrow > \amp F_x = F\, \cos\theta </mrow>
+			    <mrow > \amp F_y = F\, \sin\theta </mrow>
+			    <mrow > \amp F = \sqrt{F_x^2 + F_y^2}</mrow>
+			    <mrow > \amp \theta = \tan^{-1}\left( \dfrac{F_y}{F_x}\right)</mrow>
+			</md>			
+		</p>
+
+		<example> <title> Example of a Force Vector</title>
+
+			<sidebyside widths="60% 40%">
+				<p>
+					For example, if we have a force <m> \vec F </m>, say of magnitude <m> 50\text{ N} </m> in the <m> 30^{\circ} </m> North of East direction, then we will draw an arrow of appropriate size. If we use a scale of <m> 1\text{ cm representing } 5\text{ N} </m>, then we will draw a <m> 10\text{ cm}</m>0-long arrow, starting at origin and pointing in the direction of <m> 30^{\circ} </m>  counteclockwise to the positive <m> x </m> axis where I assume <m> x </m> axis is pointed towards East and <m> y </m> axis is towards North.
+				</p>
+				<image source="./images/vectors/example-force-vector-drawing.png" width="70%"/>
+			</sidebyside>
+			<p>
+				This will give the following component form of this force vector <m> F_x = 50\text{ N }\cos\, 30^{\circ} = 43.3 \text{ N}</m> and <m> F_y = 50\text{ N }\sin\, 30^{\circ} = 20\text{ N}</m>.
+			</p>
+		</example>
+
+
+		<exercise><title> Components of a Velocity Vector</title>
+			<statement>
+				<p>
+					A scoccer ball is kicked in the direction <m> 30^{\circ}</m> above the horizontal direction with speed <m> 15 \text{ m/s}</m>. This means that the velocity vector of the ball has magnitude <m> 15 \text{ m/s}</m> and direction <m> 30^{\circ}</m> above the horizon. Find the coordinate representation of the velocity in a coordinate system in which <m> x </m> axis is along horizontal direction and positive <m> y </m> axis is pointed up.
+				</p>
+
+			</statement>
+			<hint> <p> Use <m> x = r\, \cos\, \theta</m>. </p> </hint>
+			<answer> <p> <m> 13 \text{ m/s}</m>, <m> 7.5 \text{ m/s}</m>.</p> </answer>
+			<solution> 
+				<p>
+					We just use the formulas that help us get components from magnitude and direction.
+					<md>
+						<mrow> \amp v_x = v\, \cos\, \theta = 15\text{ m/s}\, \cos\, 30^{\circ} = 13 \text{ m/s}.</mrow>
+						<mrow> \amp v_y = v\, \sin\, \theta = 15\text{ m/s}\, \sin\, 30^{\circ} = 7.5 \text{ m/s}. </mrow>
+					</md>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><title> Magnitude and Direction of Velocity from Components </title>
+			<statement>
+				<p>
+					A velocity vector was found to have the following components, <m> v_x = 30.0\text{ m/s}</m> and <m> v_y = 40.0\text{ m/s}</m> with respect to a coordinate system in which the <m> x </m> axis is along horizontal direction and the positive <m> y </m> axis is pointed up. What are the magnitude and direction of the velocity vector? Describe your direction in words.
+				</p>
+
+			</statement>
+			<hint> <p>  Use <m>r=\sqrt{x^2 + y^2} </m> and <m>\theta = \tan^{-1}(y/x) </m>. </p> </hint>
+			<answer> <p> <m>\left( 50.0\text{ N},\ 53.1^{\circ} \right)</m>. The direction is <m>53.1^{\circ} </m> above the horizon.</p> </answer>
+			<solution> 
+				<p> Using the defining equations for magnitude <m>(v)</m> and angle <m>(\theta)</m> with <m> x </m> axis we get
+					<md>
+						<mrow>\amp v = \sqrt{v_x^2 + v_y^2} = \sqrt{30^2 + 40^2} = 50\text{ m/s},</mrow>
+						<mrow>\amp \theta = \tan^{-1}(v_y/v_x)= \tan^{-1}(40/30) = 53.1^{\circ}.</mrow>
+					</md>
+					The angle is in the first quadrant since <m> v_x >0 </m> and <m> v_y>0 </m>. This means that the angle we found is above the horizon.
+				</p>
+			</solution>
+		</exercise>
+
+
+		<exercise><title> Magnitude and Direction of Velocity from Components </title>
+			<statement>
+				<p>
+					A velocity vector was found to have the following components, <m> v_x = 30.0\text{ m/s}</m> and <m> v_y = -40.0\text{ m/s}</m> with respect to a coordinate system in which the <m> x </m> axis is along horizontal direction and the positive <m> y </m> axis is pointed up. What are the magnitude and direction of the velocity vector? Describe your direction in words.
+				</p>
+
+			</statement>
+			<hint> <p>  Use <m>r=\sqrt{x^2 + y^2} </m> and <m>\theta = \tan^{-1}(y/x) </m>. </p> </hint>
+			<answer> <p> <m>\left( 50.0\text{ N},\ -53.1^{\circ} \right)</m>. The direction is <m>53.1^{\circ} </m> below the horizon.</p> </answer>
+			<solution> 
+				<p> Using the defining equations for magnitude <m>(v)</m> and angle <m>(\theta)</m> with <m> x </m> axis we get
+					<md>
+						<mrow>\amp v = \sqrt{v_x^2 + v_y^2} = \sqrt{30^2 + 40^2} = 50\text{ m/s},</mrow>
+						<mrow>\amp \theta = \tan^{-1}(v_y/v_x)= \tan^{-1}(-40/30) = -53.1^{\circ}.</mrow>
+					</md>
+				</p>
+				<sidebyside widths="50% 50%">
+					<p>
+						The angle is in the fourth quadrant since <m> v_x \gt 0 </m> and <m> v_y \lt 0 </m>. This means that the angle we found is below the horizon. The arctan value came out negative - which means the angle is clockwise from the <m> x </m> axis as in the figure.
+					</p>					
+					<image source="./images/vectors/checkpoint-velocity-fourth-quadrant.png" width="70%"/>
+				</sidebyside>
+
+
+			</solution>
+		</exercise>
+
+
+ 
+
+	</subsection>
+	<subsection><title>Adding Vectors</title>
+		<p> 
+			We can add two vectors <m> \vec A </m> and <m> \vec B</m>. Let <m>\vec C </m> denote the sum, i.e,
+			<me>
+				\vec C = \vec A + \vec B.
+			</me>
+			We can determine the magnitude and direction of <m>  \vec C </m> diagramatically using the arrow representations of <m> \vec A </m> and <m> \vec B</m>, or analytically, using their components <m>(A_x, A_y)</m> and <m>(B_x, B_y)</m> in the <m> xy</m> plane.
+		</p>
+		<p>
+			In diagram-based addition, we place the tail of one arrow at the tip of the other arrow - then the arrow from the tail of the first arrow to the tip of the second arrow is the vector that represents the sum. From the length of the resultant arrow is the magnitude of the sum and the orientaiton of this arrow is the direction of the sum.  Note that <m> \vec A </m>, <m> \vec B </m>, and <m> \vec C </m> are at the sides of a triangle. One can use trigonometry to analytically work out the lengths and angles in the triangle. 
+		</p>
+		<p>
+			Diagram method is appropriate for adding just two vectors, but when we want to add more than two vectors, it is better to use the component method. In this method, the components <m>(C_x, C_y)</m> are just the sums of the corresponding components of <m> \vec A </m> and <m> \vec B</m>.
+			<md>
+				<mrow> \amp C_x = A_x + B_x,</mrow>
+				<mrow> \amp C_y = A_y + B_y.</mrow>
+			</md>
+			From these components we can readily find the magnitude and direction of <m> \vec c</m>. Often it is very helpful to use a table where you collect the components of the vectors to be added in columns of axes, one for <m> x </m> component and another column for the <m> y </m> components. Then, you can simply add separate columns.
+		</p>
+
+
+		<example><title> Adding Forces Using an Organizing Table </title>
+			<p>
+				Suppose we want to add two forces: (1) <m> 15.0\text{ N} </m> force pointed down,  (2) <m>12\text{ N} </m> force pointed <m> 30^{\circ}</m> above horizon, and (3) <m> 10.0 \text{ N} </m> force pointed iup. We can make the following table to help us organize the components
+			</p>
+ 
+			<tabular halign ="left" >
+				<row bottom ="major"  >
+					<cell > Force </cell >
+					<cell > <m>x</m >-component </cell >
+					<cell > <m>y</m >-component </cell >
+				</row >
+				<row bottom ="minor" >
+					<cell > <m> F_1 </m> </cell >
+					<cell > <m>0</m >  </cell >
+					<cell > <m>-15.0\text{ N}</m >  </cell >
+				</row >
+				<row bottom ="minor" >
+					<cell > <m>  F_2 </m> </cell >
+					<cell > <md>
+								<mrow> \amp 12\text{ N}\, \cos\, 30^{\circ} </mrow>
+								<mrow> = \amp 7.05\text{ N} </mrow>
+							</md >  
+					</cell >
+					<cell > 
+						<md>
+							<mrow> \amp -12\text{ N}\, \sin\, 30^{\circ} </mrow>
+							<mrow> = \amp -9.71\text{ N}</mrow>
+						</md >  
+
+					</cell >
+				</row >
+ 
+				<row bottom ="minor" >
+					<cell > <m>F_3</m> </cell >
+					<cell >  0 </cell >
+					<cell > <m>10\text{ N}</m > </cell >
+				</row >
+			</tabular>
+			<p>
+				From this table we find the components of the sum.
+				<md>
+					<mrow> \amp F_x = 0 + 7.05\text{ N} + 0 = 7.05\text{ N} ,</mrow> 
+					<mrow> \amp F_y = -15.0\text{ N}-9.71\text{ N}+10\text{ N} = -14.7\text{ N}. </mrow>
+				</md>
+				Therefore, the magnitude is
+				<me>
+					F = \sqrt{F_x^2 + F_y^2} = \sqrt{7.05^2 + 14.7^2 } = 16.30\text{ N},=
+				</me>
+				and the angle with respect the the <m> x </m> axis 
+				<me>
+					\theta = \tan^{-1}\left(\dfrac{-14.7}{7.05} \right) = - 64.5^{\circ},
+				</me>
+				which means <m> 64.5^{\circ}</m> clockwise in the fourth quadrant. 
+			</p>
+
+ 
+		</example>
+
+
+		<exercise><title> Adding Two Force Vectors </title>
+			<statement>
+				<p>
+					Consider two force vectors, <m> \vec F_1 </m> that has a magnitude <m> 25.0\text{ N}</m> in the direction of East, and   <m> \vec F_2 </m> that has a magnitude <m> 40.0\text{ N}</m> in the direction of <m> 30^{\circ}</m> North of East. What are the magnitude and direction of their sum, <m> \vec F_1 + \vec F_2</m>? For stating directions in space, let <m> x </m> axis be pointed towards East, <m> y </m> axis be pointed towards North, and <m> z </m> axis be pointed Up.
+				</p>
+
+			</statement>
+			<hint> <p> Add <m> x </m> components separately from the <m> y </m> components.  </p> </hint>
+			<answer> <p>  <m> (62.9\text{ N}, 18.6^{\circ}) </m> </p> </answer>
+			<solution> 
+				<p> 
+					First we find the component forms of each vector, and then will sum components in each direction separately.
+					<md>
+						<mrow>\amp F_{1x} = 25.0\text{ N},\ \ F_{1y} = 0,</mrow>
+						<mrow>\amp F_{2x} = 40.0 \cos\, 30^{\circ} = 34.6\text{ N}, </mrow>
+						<mrow>\amp F_{2y} = 40.0 \sin\, 30^{\circ} = 20.0\text{ N}, </mrow>
+					</md>
+					Now, adding values along each axis separartely, we get the <m> x </m> and <m> y </m> components of the sum. Let us denote them by <m> F_x </m> and <m> F_y</m>.
+					<md>
+						<mrow>\amp F_{x} = F_{1x} + F_{2x} = 25.0 + 34.6 = 59.6\text{ N},</mrow>
+						<mrow>\amp F_{y} =   F_{1y} + F_{2y} =  20.0\text{ N}, </mrow>
+					</md>
+					From these components, we can get the magnitude and direction. Since the values of <m> F_x </m> and <m> F_y</m> places the vector in the first quadrant, the angle will just be the counterclockwise from the positive <m> x </m> axis.
+					<md>
+						<mrow> \amp \text{Magnitude, }F = \sqrt{F_{x}^2 + F_{y}^2 }  = \sqrt{59.6^2 + 20.0^2} = 62.9\text{ N},</mrow>
+						<mrow>\amp  \theta = \tan^{-1}\left( \dfrac{F_y}{F_x} \right) = 
+							\tan^{-1}\left( \dfrac{20}{59.6} \right) = 18.6^{\circ}.
+						 </mrow>
+					</md>										
+
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><title> Adding Three Velocity Vectors </title>
+			<statement>
+				<p>
+					Consider the following three velocity vectors:
+					<md>
+						<mrow>\amp \vec v_1 = \left(25.0\text{ m/s},\text{ towards East} \right), </mrow>
+						<mrow>\amp \vec v_2 = \left(25.0\text{ m/s},\ 30^{\circ}\text{ North of East} \right), </mrow>
+						<mrow>\amp \vec v_3 = \left(40.0\text{ m/s},\ 30^{\circ}\text{ North of West} \right). </mrow>
+					</md>
+		 			What are the magnitude and direction of their sum, <m> \vec v_1 + \vec v_2 + \vec v_3</m>? For stating directions in space, let <m> x </m> axis be pointed towards East, <m> y </m> axis be pointed towards North, and <m> z </m> axis be pointed Up. Hint: a table will be helpful.
+				</p>
+
+			</statement>
+			<hint> <p>  Be careful with the signs. The <m> v_{3x} </m> should be negative. </p> </hint>
+			<answer> <p> <m> 34.64\text{ m/s}, 69.7^{\circ} </m> </p> </answer>
+			<solution> 
+				<p> 
+					We start by working out the components of each of the three velocity vectors. The components of <m> \vec v_1 </m> and <m> \vec v_2 </m> do not give us any trouble.
+					<md>
+						<mrow> \amp v_{1x} = 25.0\text{ m/s},\ \ v_{1y} = 0</mrow>
+						<mrow> \amp v_{2x} = 21.65\text{ m/s},\ \ v_{2y} = 12.5\text{ m/s}</mrow>
+					</md>
+				</p>
+				<sidebyside widths="60% 40%">
+					<p>
+						However, we need to be careful when we work on <m> \vec v_3 </m> since the vector is pointed in the second quadrant of the <m> xy </m> plane. 
+						When we peoject the arrow of the vector <m> \vec v_3 </m> on the <m> x </m> axis, we strike the negative <m> x </m> axis, which means that <m> v_{3x} \lt 0 </m>, i.e., negative.
+						<md>
+							<mrow> \amp v_{3x} = -v_3\, \cos(|\theta|) = -34.64\text{ m/s}</mrow>
+							<mrow> \amp v_{3y} = +v_3\, \sin(|\theta|) = +20.0\text{ m/s}</mrow>
+						</md>
+					</p>
+					<image source="./images/vectors/checkpoint-three-velocities-v3arrow-in-quad2.png" width="70%"/>
+				</sidebyside>
+
+				
+
+
+
+				<p>
+					The components of the sum, to be written as <m> v_x </m> and <m> v_y</m> will be
+					<md>
+						<mrow> \amp v_{x} = v_{1x} + v_{2x} + v_{3x} = 25.0+21.65-34.64 = 12.0\text{ m/s},</mrow>
+						<mrow> \amp v_{y} = v_{1y} + v_{2y} + v_{3y} =  0 + 12.5 + 20 = 32.5\text{ m/s}.</mrow>
+					</md>
+					This results in the following magnitude and angle 
+					<md>
+						<mrow> \amp v = \sqrt{v_{x}^2 + v_y^2}  =  34.64\text{ m/s},</mrow>
+						<mrow> \amp \theta = \tan^{-1}\left( \dfrac{v_y}{v_x}\right) = 69.7^{\circ}.</mrow>
+					</md>										
+				</p>
+			</solution>
+		</exercise>
+
+
+
+	</subsection>
+
+	<subsection><title>Multiplying Vectors</title>
+
+		<p>
+			<alert> Multiplying a vector by a positive number </alert> 
+			gives a vector in the same direction but of different magnitude. <alert> Multiplying a vector by a negative number </alert> gives a vector in the  opposite direction and of different magnitude. If the absolute value of the multiplying number is less than one then, the vector shrinks, otherwise the vector lenghtens. Of course, if you multiply a vector by zero, you get a zero vector.
+		</p>
+		<p>
+			For example, <m> 5\vec A </m> is a vector whose length is <m> 5 </m> times that of <m>\vec A </m> and in the same direction, and <m> -5\vec A </m> is a vector whose length is <m> 5 </m> times that of <m>\vec A </m> but it will be in the opposite direction. 
+		</p>
+
+		<p>
+			<alert> Multiplying a vector <m>\vec A</m> by another vector <m>\vec B</m> can be done in two ways </alert>. When you do a scalar product between them, you get a number as the result, and when you do a vector product between them, you get a vector as the result.
+			<mdn>
+				<mrow> \amp \text{Scalar product: } \vec A\cdot\vec B = A\, B\, \cos\,\theta,</mrow>
+				<mrow> \amp \text{Vector product: } \vec A\times\vec B = \left( \text{Magnitude =}A\, B\, \sin\,\theta,\text{ Direction, use RHR}  \right),</mrow>
+			</mdn>
+			where <m> \theta </m> is the angle between <m>\vec A</m> and <m>\vec B</m> and <m> \text{RHR} </m> for direction of the vector product stands for the Right Hand Rule, illustrated in Fig. <xref ref="fig-brv-vector-product-rhr"/>.
+		</p>
+
+		<figure xml:id="fig-brv-vector-product-rhr">
+				<caption> The <term>Right Hand Rule</term> for vector/cross product. If you point the thumb of your right hand in the direction of vector <m> \vec A </m>, and point any other finger in the direction of vector <m> \vec B </m>, then vector <m> \vec C </m> will be perpendicular to your palm and coming out of the palm.
+				</caption>
+				<image source="./images/vectors/right-hand-rule.png" width="50%"/>
+		</figure>
+
+
+		<exercise xml:id="checkpoint-computing-dot-and-cross-products-displ-and-force" ><title> Computing Dot and Cross Products of Displacement and Force Vectors </title>
+			<statement>
+				<p>
+					Consider a force vector <m> \vec F </m> that has a magnitude <m> 25.0\text{ N}</m> in the direction of East and a displacement vector <m> \vec r </m> that has a magnitude <m> 4.0\text{ m}</m> in the direction of <m> 30^{\circ}</m> North of East. For stating directions in space, let <m> x </m> axis be pointed towards East, <m> y </m> axis be pointed towards North, and <m> z </m> axis be pointed Up.  Find (a) <m> \vec r \cdot \vec F </m>, and (b) <m> \vec r \times \vec F </m>.
+				</p>
+
+			</statement>
+			<hint> <p>  Just use the formulas. </p> </hint>
+			<answer> <p> (a) <m> 86.6\text{ N.m} </m>, (b) (<m> 50.0\text{ N.m} </m>, in the negative <m> z </m> axis direction).  </p> </answer>
+			<solution> 
+				<p>
+					Since magnitudes of the two vectors and the angle between them are given, we can just use the defining formula for the dot product to get the value of the dot product. We can also use to formula to get the <alert> magnitude </alert> of the cross product. To find the direction of the cross product, we use the right hand rule given in the definition.
+				</p>
+				<p> 
+					(a) The dot product:
+				
+					<md>
+						<mrow> \vec r \cdot \vec F \amp = r\, F\, \cos\, \theta </mrow>
+						<mrow>   \amp = 4.0\text{ m}\times 25.0\text{ N}\times\cos\, 30^{\circ} = 86.6\text{ N.m}.</mrow>
+					</md>
+				</p>
+				<p> 
+					(b) The cross product <m> \vec r \times \vec F </m>:
+				
+					<md>
+						<mrow>  \text{Magnitude } \amp = r\, F\, \sin\, \theta </mrow>
+						<mrow>   \amp = 4.0\text{ m}\times 25.0\text{ N}\times\sin\, 30^{\circ} = 50.0\text{ N.m}.</mrow>
+					</md>
+				</p>
+				<sidebyside widths="60% 40%">
+					<p>
+						We obtain the direction of <m> \vec r \times \vec F </m> vector by using the right hand rule. One way to do that is shown in this figure. I sweep my right hand from <m> \vec r </m> towards <m> \vec F </m>, then the thum points down into the page,  which is the negative <m> z </m> axis direction. Another way is to point thumb in the direction of <m> \vec r </m> and any of the other fingers towards <m> \vec F </m>, then you would find that your palm points down.
+					</p>
+
+					<image source="./images/vectors/checkpoint-r-cross-F-into-page.png" width="70%"/>
+				</sidebyside>
+				
+			</solution>
+		</exercise>
+
+
+		<exercise><title> Computing Dot and Cross Products of Displacement and Force Vectors </title>
+			<statement>
+				<p>
+					Consider a force vector <m> \vec F </m> that has a magnitude <m> 25.0\text{ N}</m> in the direction of East and a displacement vector <m> \vec r </m> that has a magnitude <m> 4.0\text{ m}</m> in the direction of <m> 30^{\circ}</m> South of East. For stating directions in space, let <m> x </m> axis be pointed towards East, <m> y </m> axis be pointed towards North, and <m> z </m> axis be pointed Up.  Find (a) <m> \vec r \cdot \vec F </m>, and (b) <m> \vec r \times \vec F </m>.
+				</p>
+
+			</statement>
+			<hint> <p>  Just use the formulas. </p> </hint>
+			<answer> <p> (a) <m> 86.6\text{ N.m} </m>, (b) (<m> 50.0\text{ N.m} </m>, in the positive <m> z </m> axis direction).  </p> </answer>
+			<solution> 
+				<p>
+					See <xref ref="checkpoint-computing-dot-and-cross-products-displ-and-force"/>. The only thing new is the result of the right hand rule. 
+				</p>
+			</solution>
+		</exercise>
+
+ 
+		<exercise><title> Dot and Cross Products of Oppositely Directed Vectors </title>
+			<statement>
+				<p>
+					Consider a force vector <m> \vec F </m> that has a magnitude <m> 25.0\text{ N}</m> in the direction of East and a displacement vector <m> \vec r </m> that has a magnitude <m> 4.0\text{ m}</m> in the direction of West. For stating directions in space, let <m> x </m> axis be pointed towards East, <m> y </m> axis be pointed towards North, and <m> z </m> axis be pointed Up.  Find (a) <m> \vec r \cdot \vec F </m>, and (b) <m> \vec r \times \vec F </m>.
+				</p>
+
+			</statement>
+			<hint> <p>  Use formulas. </p> </hint>
+			<answer> <p>  Ans: (a) <m> -100.0\text{ N.m} </m>, (b) (<m> 0 </m>, indeterminate direction). </p> </answer>
+			<solution> 
+				<p> Here the angle between the two vectors are <m> 180^{\circ} </m>. Therefore, we have 
+					<me>
+						\cos\,\theta = -1,\ \ \sin\, \theta = 0.
+					</me>
+					Therefore, the dot product will give <m> \vec r \cdot \vec F = -100.0\text{ N.m}</m>, and the magnitude of the cross product will be <m> 100.0 \times 0 = 0</m>. Since the magnitude of the cross product is zero, it is zero vector, and hence its direction is indeterminate.
+				</p>
+			</solution>
+		</exercise>
+
+
+		<exercise><title> Dot and Cross Products of Perpendicularly Directed Vectors </title>
+			<statement>
+				<p>
+					Consider a force vector <m> \vec F </m> that has a magnitude <m> 25.0\text{ N}</m> in the direction of East and a displacement vector <m> \vec r </m> that has a magnitude <m> 4.0\text{ m}</m> in the direction of North. For stating directions in space, let <m> x </m> axis be pointed towards East, <m> y </m> axis be pointed towards North, and <m> z </m> axis be pointed Up.  Find (a) <m> \vec r \cdot \vec F </m>, and (b) <m> \vec r \times \vec F </m>.
+				</p>
+
+			</statement>
+			<hint> <p> Use definitions.  </p> </hint>
+			<answer> <p>  (a) <m> 0 </m>, (b) (<m> 100.0\text{ N.m} </m>, in the negative <m> z </m> axis direction). </p> </answer>
+			<solution> 
+				<p> Here the angle between the two vectors are <m> 90^{\circ} </m>. Therefore, we have 
+					<me>
+						\cos\,\theta = 0,\ \ \sin\, \theta = 1.
+					</me>
+					Therefore, the dot product will give <m> \vec r \cdot \vec F = 0</m>, and the magnitude of the cross product will be <m> 100.0 \text{ N.m}</m>.  Using the right-hand rule, you can deduce the direction to be into-the-page direcion, which is the direction of the negative <m> z </m> axis.
+				</p>
+			</solution>
+		</exercise>
+ 
+	</subsection>
+
+	<subsection><title> Unit Vectors </title>
+	    <p> 
+	    	A <alert> unit vector </alert> is a vector of magnitude <m>1</m>. Usually we denote a unit vector with a carat symbol <m> \wedge </m> over the letter representing the vector rather than an arrow <m>\rightarrow</m> symbol.   
+		</p>
+ 
+	    <p>
+	    	Unit vectors in the directions of positive <m>x</m>, positive <m>y</m>, and positive <m>z</m> directions are denoted by special symbols <m>\hat i </m>, <m>\hat j </m>, and <m>\hat k </m> respectively. These can be used to write any vector as a sum of vectors along these axes. For instance, <m> \vec A </m> with components <m> (A_x,\ A_y,\ A_z) </m> will be
+			<me>
+				\vec A = A_x \hat i + A_y \hat j + A_z \hat k.
+			</me>
+		</p>
+
+
+		<p> 
+			Since <m> \hat i</m>, <m> \hat j</m>, and <m> \hat k</m>, has unit magnitude, and are perpendicular to each other, we get the following dot and cross products. 
+	    	<mdn>
+	    		<mrow> \amp\text{Dot products:  }\hat i \cdot \hat i = 1,\ \ \hat j \cdot \hat j = 1,\ \ \hat k \cdot \hat k = 1,</mrow> 
+	    		<mrow> \amp\text{Dot products:  }\hat i \cdot \hat j = 0,\ \ \hat j \cdot \hat k = 0,\ \ \hat k \cdot \hat i = 0,</mrow>
+	    		<mrow> \amp\text{Cross products:  }\hat i \times \hat i = 0,\ \ \hat j \times \hat j = 0,\ \ \hat k \times \hat k = 0,</mrow>
+	    		<mrow> \amp\text{Cross products:  }\hat i \times \hat j = \hat k,\ \ \hat j \times \hat k = \hat i,\ \ \hat k \times \hat k = \hat j,</mrow>
+	    	</mdn>
+			With these, you can easily see how the components are just the dot product of <m> \vec A </m> with the unit vectors along the axex.
+			<me>
+				A_x = \vec A \cdot \hat i,\ \ A_y = \vec A \cdot \hat j,\ \ A_z = \vec A \cdot \hat k.
+			</me>
+		</p>
+<!-- 
+		<p>
+			The magnitude of <m> \vec A </m> is same as before
+			<me>
+				A = \sqrt{A_x^2 + A_y^2 + A_z^2},
+			</me>
+			and the cosines of the angles with respect to each axis is 
+			<me>
+				\cos\,\theta_x = \dfrac{\vec A \cdot \hat i}{A},\ \ 
+				\cos\,\theta_y = \dfrac{\vec A \cdot \hat j}{A},\ \ 
+				\cos\,\theta_z = \dfrac{\vec A \cdot \hat k}{A}, 
+			</me>
+			of which you only need two to denote direction of <m> \vec A</m> since
+			<me>
+				\cos^2\theta_x + \cos^2\theta_y + \cos^2\theta_z = 1.
+ 			</me>
+		</p>
+ -->
+
+
+
+		<exercise><title> Unit Vector in an Arbitray Direction </title>
+			<statement>
+				<p>
+					Suppose you have a velocity vector given in the component form <m> (3.0 \text{ m/s}, 4.0 \text{ m/s}) </m>. What will be the components of the unit vector in the same direction as this velocity vector?
+				</p>
+
+			</statement>
+			<hint> <p>  Use unit vector = <m> \dfrac{\vec v}{v}</m>, i.e., divide the magnitude. </p> </hint>
+			<answer> <p>  Components <m> (0.6,0.8) </m> or as vector <m> 0.6\hat i + 0.8\hat j</m>. </p> </answer>
+			<solution> 
+				<p>
+					We will divide the given vector by its magnitude to obtain the unit vector in the same direction as the direction of the vector.
+					<me> 
+						\text{Magnitude } = \sqrt{3.0^2 + 4.0^2} = 5.0\text{ m/s}.
+					</me>
+					Therefore, the unit vector <m>\hat u </m> in the component form will be
+					<me>
+						\hat u = \dfrac{(.0 \text{ m/s}, 4.0 \text{ m/s})}{5.0\text{ m/s}} = (0.6,\, 0.8).
+					</me>
+					We can use the <m> \hat i </m> and <m> \hat j</m> to write this unit vector in a vector form.
+					<me>
+						\hat u = (0.6,\, 0.8) = 0.6\hat i + 0.8 \hat j.
+					</me>
+				</p>
+			</solution>
+		</exercise>
+
+ 
+		<exercise><title> Using Cartesian Unit Vectors </title>
+			<statement>
+				<p>
+					 Using <m> \vec A = A_x \hat i + A_y \hat j + A_z \hat k</m>, prove that <m> \vec A \cdot \vec A = A_x^2 + A_y^2 + A_z^2</m>.
+				</p>
+
+			</statement>
+			<hint> <p>  Expand the left side and use the dot and cross products of Cartesian unit vectors. </p> </hint>
+			<answer> <p>  Already in statement. </p> </answer>
+			<solution> 
+				<p> We just expand the left side and then simplify.
+					<md>
+						<mrow> \vec A \cdot \vec A \amp =  \left( A_x \hat i + A_y \hat j + A_z \hat k\right)\cdot\left( A_x \hat i + A_y \hat j + A_z \hat k\right)</mrow>
+						<mrow>  \amp =  A_x^2 \hat i\cdot \hat i + A_xA_y \hat i\cdot \hat j + A_xA_z \hat i\cdot \hat k + \cdots</mrow>
+						<mrow>  \amp =  A_x^2 \times 1+ A_xA_y \times 0 + A_xA_yz \times 0+  \cdots</mrow>
+						<mrow>  \amp =  A_x^2  + A_y^2 + A_z^2</mrow>
+					</md>
+
+				</p>
+			</solution>
+		</exercise>
+
+
+	</subsection>
+
+</section>
+

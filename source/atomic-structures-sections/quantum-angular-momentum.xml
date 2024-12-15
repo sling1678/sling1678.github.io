@@ -1,0 +1,472 @@
+<section xml:id="sec-Angular-Momentum-Quantum"><title>Angular Momentum</title>
+	<subsection><title>Orbital Angular Momentum</title>
+		<p>
+			A charged particle of charge <m>q</m> and mass <m>m</m> with angular momentum <m>\vec L</m> has a magnetic moment <m>\vec \mu</m> proportional to the angular momentum.
+			<men xml:id="eq-ang-mom-mag-dip-0">
+				\vec \mu = \frac{q}{2m}\:\vec L. 
+			</men>	
+			For an electron, the charge is <m>q = -e</m>.  Therefore, the magnetic dipole moment of an electron will be
+			<men xml:id="eq-ang-mom-mag-dip-1">
+				\vec \mu = -\frac{e}{2m_e}\:\vec L. 
+			</men>
+			The quantity <m>e/2m_e</m>, the proportionality of angular momentum and magnetic dipole moment, is called the <term>gyromagnetic ratio</term>.  How can an electron have magnetic property?  You may recall from your studies of magnetic field from an electric current loop that a current loop of area <m>A</m> and current <m>I</m> can be thought of as a magnetic dipole with the magnetic dipole moment equal to the product of the current and the area of the loop: 
+			<men>
+			\mu = IA.
+			</men>
+		</p>
+
+		<figure xml:id="fig-ang-mom-mag-dipole">
+			<caption>
+				 The relation between the angular momentum <m>\vec L</m> and the magnetic dipole moment <m>\vec \mu</m> of an electron: <m>\vec \mu = -\frac{e}{2m}\:\vec L</m>.  The magnetic dipole moment of an electron modeled by a particle moving in a uniform circular motion is equal to the product of the equivalent current for the electron and the area of the loop as described in the text.
+			</caption>
+			<image source="./images/modern-physics/ang-mom-mag-dipole.png" width="60%"/>
+		</figure>
+
+		<p>
+			You can model the motion of electron about the nucleus as a motion of uniform speed <m>v</m> in a circle of radius <m>R</m> [even if we do not know if this is actually happening or not].   This model allows us easy calculation of angular momentum and think of electron motion as a current. The magnitude of the angular momentum will be
+			 <me>
+			 L = m_e v R.
+			 </me>
+			 The movement of the charge would give an ``electric current'' <m>I</m>  given by charge divided by the period of the motion in the circle.
+			 <me>
+			 I = e \frac{v}{2\pi R}. 
+			 </me>
+			 Multiplying this with the area of the circle will be equal to the magnitude of the magnetic dipole moment.
+			 <me>
+			 \mu = I \pi R^2 = \frac{e v R}{2}.
+			 </me>
+			 Substituting <m>vR</m> by <m>L/m_e</m> gives the desired relation between the magnetic dipole moment and the angular momentum given in Eq. <xref ref="eq-ang-mom-mag-dip-1"/>.	
+			 <men>
+			 \mu = \frac{e v R}{2} = \frac{e}{2 m_e}\: L.
+			 </men>
+			Since the angular momentum of an electron in an atom is a multiple of <m>\hbar</m>, it makes sense to introduce a reference magnetic moment corresponding to  <m>L = \hbar</m>.  This reference magnetic dipole moment is called <term>Bohr magneton</term>  and usually denoted by <m>\mu_B</m>.
+			<men>
+			\mu_B = \frac{e}{2 m_e}\: \hbar.
+			</men>
+			Putting the numerical values we get Bohr magneton to be
+			<me>
+			\mu_B = 9.27\times 10^{-24}\: J/T.
+			</me>
+			Since <m>|\vec L|</m> and <m>L_z</m> are quantized, the magnitude of magnetic dipole moment <m>|\vec \mu|</m> and the <m>z</m>-component of the magnetic dipole moment <m> \mu_z</m> will be quantized also.  For instance, if <m>l=2</m>, then <m>|\vec L| = \sqrt{2(2+2} \hbar = \sqrt{6}\hbar</m>, and <m>L_z</m> can have values <m>-2\hbar,\ -\hbar,\ 0,\ +\hbar</m>, and <m> + 2\hbar</m>.  The corresponding allowed values of the magnetic dipole moment and its <m>z</m>-components will be:
+			<md>
+				<mrow> \textrm{For }\ \amp  l = 2: </mrow>
+			    <mrow> \amp  \ \ \ \ \ \ \ \mu = \sqrt{6} \mu_B,</mrow>
+			    <mrow> \amp  \ \ \ \ \ \ \ \mu_z =  -2\mu_B,\  -\mu_B,\ 0,\  +\mu_B,\  +2\mu_B.</mrow>
+			</md>
+		</p>
+	</subsection>
+
+	<subsection><title>Normal Zeeman Effect</title>
+		<p>
+
+			Since electrons have magnetic dipole moments, they will interact with an external magnetic field.  The energy of interaction of a magnetic diople <m>\vec \mu</m> with an external magnetic field <m>\vec B</m> is given by
+			<men>
+				U = - \mu\cdot \vec B.
+			</men>
+			Suppose, the magnetic field is pointed towards the positive <m>z</m>-axis.  
+			<me>
+				\vec B = B \hat u_z.
+			</me>
+			Then, the energy of interaction will be
+			<men>
+				U = - \mu_z\ B.
+			</men>
+			Therefore, the energy of the states with positive <m>\mu_z</m> will have lower energy than the states with negative <m>\mu_z</m>. It is instructive to write this in terms of the <m>m_l</m> quantum number of the state.
+			<men>
+				U = - \mu_z\ B = \frac{e}{2 m_e}\: L_z B = \hbar \left(\frac{eB}{2 m_e}\right)\: m_l.
+			</men>
+			Thus, the states with negative <m>m_l</m> will be lower in energy than the states with positive <m>m_l</m>.  The quantity within parenthesis is the <term>Larmor frequecy</term> of the classical dipole magnetic moment rotating about the external magnetic field and is denoted by <m>\omega _L</m>.
+			<men>
+				\omega_L = \frac{eB}{2 m_e}.
+			</men>
+			The quantity <m>\hbar\omega_L</m> is called the <term>Zeeman energy</term>.  In terms of Zeeman energy the interaction energy of the magnetic dipole of state with magnetic quantum number <m>m_l</m> is
+			 <men>
+				U =   \hbar \omega_L\: m_l.
+			</men>
+		</p>
+
+		<p><alert>Illustration of Splitting of <m>n=2,\ l=1</m> States:</alert></p>
+
+
+<!-- 	<exercise xml:id="ex-Spliting-of-Energy-Levels-in-Magnetic-Field"><title>Spliting of Energy Levels in Magnetic Field</title>
+
+		<statement>
+			<p>
+				Find the energy of the three state corresponding to <m>n=2</m>, <m>l=1</m>, and <m>m_l = -1, \ 0,\ +1</m> when a hydrogen atom is placed in a magnetic field <m>B</m>.
+			</p>
+		</statement>
+		<hint><p>Normal Zeeman Effect.</p></hint>
+		<answer><p>See solution.</p></answer>
+		<solution> -->
+			<p>
+
+				Without the magnetic field on, the electron in <m>n=2</m> state has energy <m>E_2</m>  regardless of the values of <m>l</m> or <m>m_l</m>.  When the magnetic field is applied, the energy of the <m>(l=1, m_l=-1)</m> will be lowered by the amount <m>1\mu_B B</m>  with respect to the state with <m>(l=1, m_l=0)</m> and the energy of the state <m>(l=1, m_l=1)</m> will be raised by the amount <m>1\mu_B B</m> with respect to the state with <m>(l=1, m_l=0)</m>.  We say that the energy of state <m>l=1</m> is split into three levels as shown in <xref ref="fig-Zeeman-effect-normal"/>. 
+			</p>
+			<p>
+				This effect can be seen in emisison spectrum of H-atom for the line <m>n=2</m> to <m>n=1</m> transition with and without magnetic field on as illustrated in <xref ref="fig-Zeeman-effect-normal"/>. When magnetic field is on, we see three spectral lines where there is only one line without the magnetic field.  The separation in frequency of the line is proportional to the energy difference of the new levels, which is proportional to the applied magnetic field. Thus, as magnetic field is varied, the frequency separation of the lines increases with the magnetic field.  The spitting of the spectral lines when magnetic field is applied to the sample is called <term>Zeeman effect</term>, or the <term>normal Zeeman effect</term>. The observation of the Zeeman effect is complicated by the fact that an electron carries an intrinsic angular momentum, called spin, which we will discuss below. The more complicated Zeeman effect that takes into account the effect of spin on the energy levels is called <term>anomalous Zeeman effect</term>.
+			</p>
+
+			<figure xml:id="fig-Zeeman-effect-normal">
+				<caption>
+					The (normal) Zeeman effect.  When the magnetic field is on, the <m>m_l</m> energy levels of <m>n=2,l=1</m> states separate into three states and we expect three emission lines for emission from the <m>n=2</m> to <m>n=1</m> level.
+				</caption>
+				<image source="./images/modern-physics/Zeeman-effect-normal.png" width="80%"/>
+			</figure>
+			
+<!-- 		</solution>
+	</exercise> -->
+
+	</subsection>
+	<subsection><title>Spin Angular Momentum</title>
+		<p><alert>Stern-Gerlach Experiment</alert></p>
+		<p>
+			An atom in <m>l=0</m> state is expected to have a zero magnetic dipole moment.  Therefore, energy of such an atom will not be affected by the presence of a magnetic field. Neither, there will be a magnetic force on an atom in <m>l=0</m> state. On the other hand, the energy level of an atom in <m>l=1</m> state   is split into 3 levels by a magnetic field.  Similarly, the energy of an atom in <m>l=2</m> state is split into 5 energy levels by a magnetic field. In every case of non-zero <m>l</m>, the energy level  of the atom is split into odd number of levels - never in an even number of levels - as long as the story of atoms told so far in this chapter is complete.
+		</p>
+		<p>
+			One can study the effect of magnetic field on the atoms not only in terms of the shifting of energy levels and consequent change in the emission spectrum as illustrated in <xref ref="fig-Zeeman-effect-normal"/> but also in terms of the force on atoms in an inhomogeneous field. Let there be a space-dependent (i.e., inhomogeneous) magnetic field <m>\vec B(\vec r)</m> act on a magnetic dipole <m>\vec \mu</m>. Then, there will be a force on the dipole given by
+			<men>
+				\vec F = \vec \nabla\left( \vec \mu \cdot \vec B\right),
+			</men>
+			which follows from <m>\vec F = -\vec\nabla U</m> with <m>U = -\vec \mu\cdot \vec B</m>. Atoms with different <m>\vec \mu</m> will experience different force.  For example, if you send atoms in <m>l=1</m> but different values of <m>m_l=  -1,\ 0,\ 1</m> into a region of inhomogeneous magnetic field, atoms of different <m>\mu_z</m> will experience different force.  Consequently, one beam of atoms would separate into three beams.  With <m>l=0</m> you expect one beam in, one beam out, with <m>l=2</m>, you expect one beam in and 5 beams out, etc.
+		</p>
+		<p>
+			In 1921 Walter Gerlach conducted an experiment in collaboration with Otto Stern on  silver atoms in <m>l=0</m> state. A schematics of their apparatus is shown in <xref ref="fig-stern-gerlach"/>.  A silver atom beam from an oven was sent through  the space between poles of a magnet, where magnetic field was inhomogeneous,  separated into two beams!  This was a complete surprise since, if <m>l</m> were anything nonzero, there would be an odd number of beams out and if <m>l=0</m> there should be a single beam out. Their result could not be explained on the basis of the connection of <m>l</m> values to the magnetic dipole moment.
+		</p>
+
+			<figure xml:id="fig-stern-gerlach">
+				<caption>
+					Schematic diagram of Stern-Gerlach experiment. Credits: https://informationphilosopher.com.
+				</caption>
+				<image source="./images/modern-physics/sg-from-informationphilosopher-com-slash-solutions-slash-experiments-slash-stern_gerlach.png" width="80%"/>
+			</figure>		
+
+		<p>
+			The explanation came from Samuel Goudsmit and George Uhlenbeck, who were at the time graduate students at the University of Leiden, Germany.  They proposed that the origin of magnetic dipole moment was the <q>spinning</q> of electrons.  With this proposal they were successful in explaining a number of anomalies with the Zeeman effect due to the presence of additional source of magnetic dipole moment than could be accounted for by the orbital angular momentum <m>l</m>.  Now, we know that the additional magnetic moment is not due to a physical spinning of the electron but rather an intrinsic angular momentum, which does not have a classical analog.  The additional angular momentum is called <term>spin</term>, which is an intrinsic property of elementary particles.
+		</p>
+		<p>
+			Similar to the orbital angular momentum, the spin angular momentum <m>\vec S</m> is also quantized so that its magnitude <m>|\vec S|</m> is specified by particular quanta.  For electrons, the magnitude of spin is <m>\frac{\sqrt{3}}{2}\hbar</m>. Spin angular momentum also exhibits space quantization similar to the way orbital angular momentum is space-quantized so that the components of the spin angular momentum vector in any direction, say the <m>z</m>-axis, <m>S_z</m> take discrete values.  In the case of electron, the space quantization leads to the electron having spin angular momentum component equal to either <m>+\frac{1}{2}\hbar</m> or <m>-\frac{1}{2}\hbar</m> in any direction as shown in <xref  ref="fig-spin-space-quantization"/>.  We usually take the direction of reference to be the positive <m>z</m>-axis.
+
+			<mdn>
+				<mrow> \amp |\vec S| = \sqrt{\dfrac{1}{2}\left( \dfrac{1}{2} + 1\right)}\ \hbar = \dfrac{\sqrt{3}}{2}\:\hbar,</mrow>
+				<mrow> \amp  S_z = -\frac{1}{2}\hbar,\   +\frac{1}{2}\hbar.</mrow>
+			</mdn>
+		</p>
+
+		<figure xml:id="fig-spin-space-quantization">
+			<caption>
+				 The space quantization of the spin angular momentum of a spin <m>\frac{1}{2}</m> particle. Although the total spin angular momentum has the value <m>\frac{\sqrt{3}}{2}\hbar</m>, its component with respect to any axis is either <m>+\frac{1}{2}\hbar</m> or <m>-\frac{1}{2}\hbar</m>.
+			</caption>
+			<image source="./images/modern-physics/spin-space-quantization.png" width="60%"/>
+		</figure>
+ 
+		<p>
+			The quantized components <m>+\frac{1}{2}\hbar</m> and  <m>-\frac{1}{2}\hbar</m> are called <term>up spin</term> and <term>down spin</term> respectively.  They are often denoted by arrow pointed up and down respectively.
+			<men>
+			S_z = +\frac{1}{2}\hbar\ = \ \uparrow;\ \ \ \    S_z =-\frac{1}{2}\hbar \ = \ \downarrow.
+			</men>
+			For a general spin situation, let us denote the spin quantum number by letter <m>s</m> and the quantum number for the components of the spin in a direction by <m>m_s</m>.  The magnitude and projections of the angular momentum vector follow similar rules as was the case with the orbital angular momentum.
+			<mdn>
+				<mrow> \amp |\vec S| = \sqrt{s\left( s + 1\right)}\ \hbar,</mrow>
+				<mrow> \amp  S_z = m_s \hbar,\ \ m_s = -s,\  -(s-1),\ \cdots\ , +(s-1), +s.</mrow>
+			</mdn>
+			However, the similarities between spin and orbital angular momenta are quite deceptive.  While the orbital angular momentum can be understood from the motion of the electron about the nucleus, there is no easy way to understand the spin.  Additionally, the magnetic dipole moment <m>\vec \mu_s</m> associated with the spin angular momentum is actually twice as strong as the magnetic dipole moment associated with the orbital angular momentum. We introduce a multiplicative factor <m>g</m>, called the <term>Land&#x00E9; g factor</term>,  to the gyromagnetic ratio to write the ratio of magnetic moment and spin angular momentum.
+			<men>
+				\vec\mu_s = -\frac{e}{2m_e}\:g\:\vec S.
+			</men>
+			The Land\'e g factor has a value of approximately 2 for an electron.   The <m>g</m> factor was quite a mystery in the early days of quantum mechanics until the British physicist/mathematician Llewellyn Thomas performed a calculation using relativity and convinced the reality of the quantum number spin. The total magnetic moment of an electron in hydrogen atom would come from both the orbital and spin angular momenta.
+			<men>
+				\vec\mu  = -\frac{e}{2m_e}\: \vec L -\frac{e}{2m_e}\:g\:\vec S = -\frac{e}{2m_e}\left( \vec L + g \vec S\right).
+			</men>
+		</p>
+		<p><alert>Anomalous Zeeman Effect</alert></p>
+		<p>
+			We have discussed above that a magnetic dipole in a magnetic field has an interaction energy given by
+			<me>
+				U = - \vec \mu\cdot \vec B.
+			</me>
+			We found above that when <m>l\ne 0</m>, the energy level of a hydrogen atom is split into additional levels with energy dependent upon the projection of the magnetic dipole vector in the direction of the magnetic field. Now, there is another source of magnetic moment - due to the spin of the electron.  That causes further splitting of the levels.  For concreteness, let us consider a magnetic field pointed in the positive <m>z</m>-direction.
+			<me>
+				\vec B = B \hat u_z.
+			</me>
+			This will give the following interaction energy
+			<men xml:id="eq-Zeeman-anomalous-1">
+				U = -\mu_z\ B =  \frac{e}{2m_e}\left( L_z + g S_z\right) B. 
+			</men>
+			The allowed values of <m>L_z</m> are <m>L_z = m_l \hbar</m> with <m>m_l</m> ranging from <m>-l</m> to <m>+l</m> in integer steps and the allowed values of <m>S_z</m> are <m>S_z = m_s\hbar</m> with <m>m_s = -1/2</m> and <m>m_s = +1/2</m>. Let us rewrite Eq. <xref ref="eq-Zeeman-anomalous-1"/> in terms of <m>m_l</m> and <m>m_s</m>, and write the constants as Bohr magneton.
+			<men xml:id="eq-Zeeman-anomalous-2">
+				U = \mu_B \left( m_l + g m_s\right) B. 
+			</men>
+			Let us examine the energy of <m>(n=2, l=1)</m> level of H-atom with and without magnetic field.  The energy of this level in the absence of magnetic field depends only on the principal quantum number <m>n</m>. We will denote the energy of this level by <m>E_2</m> as before. Now, when magnetic field is on, the energy level will split into five energy levels due to various <m>m_l</m> and <m>m_s</m> values. We will label the new energy levels with <m>n,l, m_l, m_s</m> values to be complete. Using <m>g=2</m> the energy levels are:
+			<md>
+				<mrow> \amp  m_l = -1, m_s = -\frac{1}{2}:\quad \ E_{2,1,-1, -1/2}= E_2 -\mu_B \left( 1 + g \frac{1}{2}\right) B \approx   E_2 -2\mu_B B</mrow>
+				<mrow> \amp  m_l = -1, m_s = +\frac{1}{2}:\quad \  E_{2,1,-1, 1/2} = E_2 -\mu_B \left( 1 - g \frac{1}{2}\right) B \approx   E_2 </mrow>
+				<mrow> \amp  m_l = 0, m_s = -\frac{1}{2}:\quad \  E_{2,1,0, -1/2}= E_2 -\mu_B \left( 0 + g \frac{1}{2}\right) B \approx   E_2 -\mu_B B</mrow>
+				<mrow> \amp  m_l = 0, m_s = +\frac{1}{2}:\quad \  E_{2,1,0, +1/2}= E_2+\mu_B \left( 0 + g \frac{1}{2}\right) B \approx   E_2 +\mu_B B</mrow>
+				<mrow> \amp  m_l = 1, m_s = -\frac{1}{2}:\quad \  E_{2,1,0, -1/2}= E_2 -\mu_B \left( -1 + g \frac{1}{2}\right) B \approx   E_2 </mrow>
+				<mrow> \amp  m_l = 1, m_s = +\frac{1}{2}:\quad \  E_{2,1,0, -1/2}= E_2 +\mu_B \left( 1 + g \frac{1}{2}\right) B \approx   E_2 +2\mu_B B</mrow>
+			</md>
+			<xref ref="fig-Zeeman-effect-anomalous"/> shows the energy diagram of the new energy levels and emission spectrum from emission from <m>n=2, l=1</m> levels to <m>n=1</m> level. There are six possible combinations of the three <m>m_l</m> values and two <m>m_s</m> values. Two of the these combinations, namely <m>(m_l=-1, m_s = +\frac{1}{2})</m> and  <m>(m_l=+1, m_s = -\frac{1}{2})</m> have the same energy.  Therefore, we get a total of five distinct energy levels when <m>B\ne 0</m>.
+		</p>
+
+		<figure xml:id="fig-Zeeman-effect-anomalous">
+			<caption>
+				 The anomalous Zeeman effect.  When the magnetic field is on, the <m>m_l</m> energy levels of <m>n=2,l=1</m> states separate into three states which separate further due to the magnetic dipole moment of the spin of the electron. Each of the <m>m_l</m> states split into two states due to spin but some of the new states have the same energy.  Here, <m>m_l=1, m_s = -1/2</m> and <m>m_l=-1, m_s = +1/2</m> have the same energy, i.e., they are degenerate.
+			</caption>
+			<image source="./images/modern-physics/Zeeman-effect-anomalous.png" width="100%"/>
+		</figure>
+
+	</subsection>
+
+
+	<subsection><title>The Spin-Orbit Interaction</title>
+		<p>
+			We have seen above that magnetic dipole <m>\vec \mu</m> due to orbital and spin angular momenta interact with the external magnetic field <m>\vec B_{ext}</m>.  The interaction energy is given by
+			<me>
+				U = -\vec\mu \cdot \vec B_{ext}.
+			</me>
+			This interaction energy causes the energy levels to shift up  or down depending on <m>m_l</m> and <m>m_s</m> and the magnetic field <m>B_{ext}</m>.  Therefore, it would appear that you need an external field to split the energy levels based on magnetic effect. However, this is not true as the electron itself produces a magnetic field due to the orbital motion.  The state with  angular momentum quantum number <m>l\ne 0</m> an be though of an electron moving in an orbit, which constitutes a current, which produces a magnetic field, <m>\vec B_l</m>. 
+			<me>
+				\vec B_l \propto \vec L.
+			</me>
+			The magnetic moment <m>\vec \mu_s</m> due to spin angular momentum then interacts with this magnetic field.  
+			<me>
+				\vec \mu_s \propto \vec S.
+			</me>
+			This would give rise to a magnetic energy,
+			<me>
+				U = -\vec\mu_s \cdot \vec B_{l} \propto \vec S \cdot \vec L.
+			</me>
+			A quantum mechanical calculation shows that
+			<men xml:id="eq-spin-orbit-interation-energy">
+				U =c(r)\ \vec L \cdot \vec S, 
+			</men>
+			where 
+			<me>
+				c(r) = \frac{1}{2m^2 c^2}\: \frac{1}{r}\frac{d V_c}{dr},
+			</me>
+			where <m>V_c</m> is the effective potential of the electron, which takes into account the interaction with the nucleus and other electrons.  We will not go into the details of <m>c(r)</m>, but treat Eq. <xref ref="eq-spin-orbit-interation-energy"/> as stating that if <m>\vec S</m> is in the same direction as <m>\vec L</m>, the energy will be shifted up and if  <m>\vec S</m> is in the opposite direction to <m>\vec L</m>, the energy will be shifted down.
+		</p>
+		<p>
+			As an example, consider the case of a sodium atom.  The ground state of sodium atom has a lone electron in the outer shell,
+			<me>
+				\textrm{Na:}\ \ \ 1s^2 2s^2 2p^6 3s^1 = [Ne] 3s^1.
+			</me>
+			The ten electrons of the Ne core can be thought to shield out 10 of the 11 protons of the nucleus, leaving Na atom as an outsized hydrogen atom. The outermost electron in <m>3s^1</m> can be excited to higher states and when they de-excite, they would emit photons. Even though, Na appears formally to be like H atom, the energy of states depend on both <m>n</m> and <m>l</m>, not just <m>l</m>.  Thus, in Na the <m>3s</m> and <m>3p</m> states are at different energy.  In general, the energy goes as the square of <m>(n+l)</m> rather than just the square of <m>n^2</m>.
+		</p>
+		<p>
+			With the lifting of the degeneracy of <m>3s</m> and <m>3p</m> states, the nearest level to excite from the <m>3s</m> is the <m>3p</m> state. Now, <m>3p</m> state has <m>l=1</m>.  The energy of the <m>3p</m> state will depend on whether the angular momentum vector <m>\vec L</m> is in the same direction as the spin <m>\vec S</m>. Let us use the notation of up-spin and down-spin for direction specification. We will say, that up spin is the direction in which both <m>\vec L</m> and <m>\vec S</m> are in the same direction, then down-spin will be the direction in which <m>\vec S</m> will be in the opposite direction of <m>\vec L</m>.  This would mean that <m>\uparrow</m> spin will have higher energy than the <m>\downarrow</m> spin due to the spin-orbit coupling. 
+		</p>
+		<p>
+			Thus, there would be two energy levels within the <m>3p</m> state, one <m>3p_{\uparrow}</m> and the other <m>3p_{\downarrow}</m>.  The transitions from these two states will differ in energy as illustrated in <xref ref="fig-sodium-doublet"/>.  This is exactly what we see in the spectroscopy of sodium atom.  The <m>3p</m> to <m>3s</m> transition gives two closely-spaced lines, called the <term>sodium doublet</term>,  at wavelengths <m>\lambda = 589.6</m> nm and  <m>\lambda = 589.0</m> nm.   The splitting of <m>3p</m> levels, one for spin up and the other for spin down, is called <term>fine structure</term>.
+		</p>
+
+		<figure xml:id="fig-sodium-doublet">
+			<caption>
+				The fine structure splitting of 3p-states. The spectroscopy of sodium shows two closely spaced yellow lines without any external magnetic field.  This can be understood from the effect of internal magnetic field produced due to <m>l=1</m> for the electrons in this state which would affect the energy of the atom by coupling the internal magnetic field with the spin.  The spin-orbit interaction accounts for the doublet in many other atoms with <m>l\ne 0</m>.
+			</caption>
+			<image source="./images/modern-physics/sodium-doublet.png" width="80%"/>
+		</figure>
+ 
+ 
+ 	</subsection>
+
+	<exercise xml:id="ex-Magnetic-Dipole-of-a-Charged-Rotating-Ring"><title>Magnetic Dipole of a Charged Rotating Ring TODO</title>
+
+		<statement>
+			<p>
+				A ring of uniform charge density <m>\lambda</m> [Coulomb/meter] is rotated at angular speed <m>\omega</m> about an axis perpendicular to the ring and passing through the center of the ring. This causes the charges in the ring to go around in a circle of radius <m>R</m>.  What will be the magnetic dipole of the rotating ring of charges?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Magnetic-Dipole-of-a-Charged-Rotating-Disk"><title>Magnetic Dipole of a Charged Rotating Disk TODO</title>
+
+		<statement>
+			<p>
+				A disk of uniform charge density <m>\sigma</m> [Coulomb/meter<m>^2</m>] is rotated at angular speed <m>\omega</m> about an axis perpendicular to the ring and passing through the center of the disk.  This causes the charges in the disk to go in circles.  Let the radius of the disk be <m>R</m>. What will be the magnetic dipole of the rotating disk of charges?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-AngularMomenta-in-anExcited-Electronic-State-of-Hydrogen-Atom"><title>Angular Momenta in an Excited Electronic State of Hydrogen Atom TODO</title>
+
+		<statement>
+			<p>
+				The electron in a hydrogen atom is in <m>n=2</m> shell. (a) What are the possible <m>l</m> for the electron?  (b) For each allowed <m>l</m>, list the allowed <m>m_l</m> values.  Note <m>m_l=0</m> will appear twice.  (c) For each <m>l</m>,  answer: (i) what is the magnitude of the angular momentum for that <m>l</m>, and (ii) what are the values of that the projections of the angular momentum vector  can have along the <m>z</m>-axis? (d) Find the directions in space which correspond to the allowed values of the projections of the angular momentum vector and draw the angular momentum vectors in space.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-AngularMomenta-in-anExcited-Electronic-State-of-Hydrogen-Atom-Ex2"><title>Angular Momenta in an Excited Electronic State of Hydrogen Atom Ex 2 TODO</title>
+
+		<statement>
+			<p>
+				The electron in a hydrogen atom is in <m>n=2</m> shell. (a) What are the possible <m>l</m> for the electron?  (b) For each allowed <m>l</m>, list the allowed <m>m_l</m> values.  Note <m>m_l=0</m> will appear twice.  (c) For each <m>l</m>,  answer: (i) what is the magnitude of the angular momentum for that <m>l</m>, and (ii) what are the values of that the projections of the angular momentum vector  can have along the <m>z</m>-axis? (d) Find the directions in space which correspond to the allowed values of the projections of the angular momentum vector and draw the angular momentum vectors in space.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-AngularMomenta-Magnetic-Dipole-Moments-in-an-Excited-Electronic-State-of-Hydrogen-Atom"><title>Angular Momenta and Magnetic Dipole Moments in an Excited Electronic State of Hydrogen Atom TODO</title>
+
+		<statement>
+			<p>
+				(a) The electron in an excited hydrogen atom is in the 2p subshell.  Show that there are 6 quantum states that the electron could be in. (b) Find the magnetic dipole moments of each state.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-AngularMomenta-Magnetic-Dipole-Moments-in-an-Excited-Electronic-State-of-Hydrogen-Atom-Ex2"><title>Angular Momenta and Magnetic Dipole Moments in an Excited Electronic State of Hydrogen Atom Ex 2 TODO</title>
+
+		<statement>
+			<p>
+				(a) List all the quantum states for a hydrogen atom in 3d subshell by listing the quantum numbers for each state. (b) Find the magnetic dipole moments of each state.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Deflection-in-a-Stern-Gerlach-Experiment"><title>Deflection in a Stern-Gerlach Experiment TODO</title>
+
+		<statement>
+			<p>
+				Suppose the magnetic field between the poles of the magnet in the Stern-Gerlach apparatus is pointed towards the <m>z</m>-axis and varies with <m>z</m> coordinate linearly.
+				<me>
+					B_z(x,y,z)  = B_0 + \alpha\: z.
+				</me>
+				A beam of silver atoms in <m>l=0</m> state and speed <m>v</m> is sent through the space between the poles along the <m>x</m>-axis. Each silver atom will experience a force due to the spin magnetic dipole moment. (a) If the force acts on the beams over  a horizontal distance of <m>d</m> before exiting the magnetic field region, what will be the deflection along the <m>z</m>-axis of the atoms with spin <m>\uparrow</m>?  (b) What will be the deflection along the <m>z</m>-axis  of spin <m>\downarrow</m> atoms? (c) If we seek a separation of 5 mm for a beam of speed 120 m/s, what should be the value of <m>\alpha</m>?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Energy-Difference-Between-Spin-Up-and-Down-States-in-a-Magnetic-Field"><title>Energy Difference Between Spin Up and Down States in a Magnetic Field TODO</title>
+
+		<statement>
+			<p>
+				(a) The ground state of a sodium atom is an <m>l=0</m> state with one electron whose spin is not paired up with any other electron. This gives sodium atom a spin <m>\frac{1}{2}</m>.  What will be energy difference between the spin <m>\uparrow</m> and spin <m>\downarrow</m> states of a sodium atom placed in a magnetic field of strength 2 T? (b) What are the energy and wavelength of the photon you would need to excite the lower of these states to the upper state?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Energy-Difference-Between-Quantum-States-in-a-Magnetic-Field"><title>Energy Difference Between Quantum States in a Magnetic Field TODO</title>
+
+		<statement>
+			<p>
+				A hydrogen atom in <m>l=1</m> state is placed in a magnetic field of magnitude 1.5 T. (a) Find the magnetic energy of the electron in various <m>m_l</m> states. [Ignore spin.] (b) Find the Larmor frequency of the electron. [Ignore spin.]
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Energy-Difference-Between-Quantum-States-of-H-Atoms-in-a-Magnetic-Field"><title>Energy Difference Between Quantum States of H Atom in a Magnetic Field TODO</title>
+
+		<statement>
+			<p>
+				A hydrogen atom in <m>l=1</m> state is placed in a magnetic field of magnitude 1.5 T. Now, do not ignore spin. Find the magnetic energy of the electron in various <m>(m_l, m_s)</m> states. 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Energy-Difference-Between-Quantum-States-of-H-Atoms-in-a-Magnetic-Field-Ex2"><title>Energy Difference Between Quantum States of H Atom in a Magnetic Field Ex 2 TODO</title>
+
+		<statement>
+			<p>
+				A hydrogen atom in <m>l=2</m> state is placed in a magnetic field of magnitude 1.5 T. (a) Find the magnetic energy of the electron in various <m>m_l</m> states. [Ignore spin.] (b) Find the Larmor frequency of the electron. [Ignore spin.] 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Energy-Difference-Between-Quantum-States-of-H-Atoms-in-a-Magnetic-Field-Ex3"><title>Energy Difference Between Quantum States of H Atom in a Magnetic Field Ex 3 TODO</title>
+
+		<statement>
+			<p>
+				A hydrogen atom in <m>l=2</m> state is placed in a magnetic field of magnitude 1.5 T. Now, do not ignore spin. Find the magnetic energy of the electron in various <m>(m_l, m_s)</m> states. 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

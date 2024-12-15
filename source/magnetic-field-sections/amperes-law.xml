@@ -1,0 +1,368 @@
+<section xml:id="Amperes-Law"><title> Ampere's Law </title>
+	<introduction>
+		<p>
+			Ampere's law states that circulation of magnetic field around a loop is proportional to net current passing through the area within the loop, which we call <term>enclosed current</term> and denote it by <m>I_\text{enc}</m>. Specifically, 
+			<men xml:id="eq-amperes-law-non-calculus">
+				\text{Circulation of the } \vec B \text{ field} = \mu_0\, I_\text{enc}.
+			</men>
+			In Calculus language, this is
+			<men  xml:id="eq-amperes-law-calculus">
+				\oint_C\, \vec B\cdot d\vec l = \mu_0\, I_\text{enc},
+			</men>
+			where <m>C</m> is the directed closed path over which the line integral is to be performed. On the right side, the enclosed current can be postive or negative depending on the direction of current as it relates to the direction of loop C. The direction of positive current and loop C are illustrated in <xref ref="fig-ampere-pos-current-vs-loop-direction-rhr"/>. Note that direction of loop C may or may not be the same as the direction of magnetic field - loop is picked independently of the magnetic field.  
+		</p>
+		<sidebyside widths="55% 5% 40%">
+			<p>
+				A particular emclosed current is positive or negative when included to get the net enclosed current as illustrated in <xref ref="fig-ampere-pos-current-vs-loop-direction-rhr"/>. When you apply right-hand rule on the direction of the loop, by sweeping your right palm around the loop and positive current in the direction of the thumb; the opposite direction to the thumb is treated as negative. 
+			</p>
+			<p></p>
+			<figure xml:id="fig-ampere-pos-current-vs-loop-direction-rhr">
+				<caption>
+					Positive current versus loop direction.
+				</caption>
+				<image source="./images/magnetic-field/ampere-pos-current-vs-loop-direction-rhr.png" width="40%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			<m>I_\text{enc}</m> is the net of all positive and negative currents. <xref ref="fig-illustrating-amperes-law" /> illustrates Ampere's law for a number of loops.
+		</p>
+		<p>
+			The loop over which we compute circulation for use in Ampere's law is called the <term>Amperial loop</term>. This loop is a loop in space and no physical structure, such as wire or anything else need be present at points of the loop. Sometimes we refer to these loops as loops in space or mathematical loop.
+		</p>
+		
+		<figure xml:id="fig-illustrating-amperes-law">
+			<caption>
+				The value of circulation of magnetic field around Amperian loops can be stated immediately if we know the amount of current enclosed by the loop and the direction from the right-hand-rule applied to the direction of the loop; we do not need to know magnetic field or calculate the circulation integral. In this figure, using Ampere's law we can state that circulation through loop <m>\text{L}_1</m> and <m>\text{L}_2</m> are same, both equal to <m>\mu_0 I</m>, circulation through <m>\text{L}_3</m> is <m>-\mu_0 I</m>, which is negative since current through the loop is in the opposite direction of loop, circulation through  <m>\text{L}_4</m>  is zero since it has oppositely directed current through the loop which add up to zero, and circulation through <m>\text{L}_5</m> is zero since no current passes through the loop.
+			</caption>
+			<image source="./images/magnetic-field/illustrating-amperes-law.png" width="40%"/>
+		</figure>
+
+
+	</introduction>
+
+
+	<subsection><title> (Calculus) Strategy for Using Ampere's Law</title>
+
+		<p>
+			How can we use Ampere's law  to find magnetic field? The statement of Ampere's law given in Eq. <xref ref="eq-amperes-law-calculus"/> shows that the unknown magnetic field is part of the integrand. Therefore, we can use Ampere's law to calculate magnetic field <alert>only in those situations when magnetic field can come out of the integrand.</alert>  
+		</p>
+		<p>
+			So, when can <m>B</m> can come out of integrand of the circulation integral? It turns out that <alert>Biot-Savart law</alert> (<xref ref="subsection-Biot-Savart-Law"/>) helps us make general statements about magnetic field in the case of the three symmetric situations discussed below.
+		</p>
+		<p>
+			Using Biot-Savart law, it is possible to state direction and distance-dependence functional form of magnetic field, even though calculating the exact formula may be difficult. Once we have these informations, we can choose Amperian loop accordingly, such that on the path chosen, <m> \vec B\cdot d\vec l</m> is either zero or some constant mgnitude <m>B</m> times a length.   
+		</p>
+		<p>
+			The three special symmetries that allow these special Amperian loops are 
+			<ol>
+				<li> <alert>Cylindrical symmetry.</alert>  This is the case when current is along a long straight wire. Here Amperian loop will be a circle.</li>
+				<li> <alert> Planar symmetry.</alert>  This is the case if current is on a flat large surface. Here, Amperian loop is a rectangle perpendicular to the surface and passes through the surface.</li>
+				<li> <alert>Solenoidal symmetry. </alert> This is the case if current is along <m>\hat u_{\phi}</m> of cylindrical coordinate.  A cylinder that has an insulated wires wound on a cylinder has solenoidal symmetry if the cylinder is long and the area of cross-section is small. Here, Amperian loop is a rectangle that has one side inside and one side outside and runs parallel to the cylinder.</li>
+			</ol>
+		</p>
+	</subsection>
+	<subsection> <title> (Calculus) Steps in Solving Ampere's Law Problems </title>
+		<p>
+			When applying Ampere's law to find a formula for the magnetic field, we treat <m>\vec B</m> in the following equation to be the unknown.
+			<me>
+				\oint_{C}\, \vec B\cdot d\vec l = \mu_0 I_\text{encl}.
+			</me>
+			Immediately, you should notice that we need to somehow know the closed path <m>C</m> we will use, and somehow find <m>I_\text{enc}</m>. We follow the following four-step process. Notice that calculation is step is way down in the fourth step - without an understanding of steps 1, 2, and 3, just doing calculations is not possible.
+		</p>
+		<p>
+			<ol>
+				<li>
+					<alert> Direction of <m>\vec B</m>: </alert>
+					Using Biot-Savart right-hand rule, guess the direction of <m>\vec B</m>
+				</li>
+				<li>
+					<alert> Functional form of <m>B</m>: </alert> 
+ 					Using symmetry guess the functional dependence of  magnitude <m>B(x,y,z)</m>, i.e., answer the following types of questions: is it a function of <m>x</m> only, is it a function of <m>s=\sqrt{x^2 + y^2}</m> only , is it a function of only <m>z</m>, etc.
+				</li>
+				<li>
+					<p>
+						<alert>  Choosing Amperian Loop: </alert>
+						Using the information gathered, we imagine a closed loop, the Amperian loop,  that has the following characteristics:
+					</p>
+					<ol>  
+						<li>
+							<alert> Cantain the field point: </alert>
+							The Amperian loop passes through the field point of interest,
+						</li>
+						<li> 
+							<alert> Direction of <m>\vec B</m> versus direction of loop: </alert> 
+							<m>\vec B</m> at every point of the loop is  either parallel or antiparallel or perpendicular to the loop direction at that point,
+						</li>
+						<li>
+							<alert> <m>B</m> be a multiple of <m>B_P</m>:  </alert> 
+							Magnitdue <m> B</m> at the field point, <m>B_P</m> is same either everywhere on the Amperian loop or at finite segments of the loop. In the case of <m>B</m> not same at all points of the Amperian loop, we require that <m>B</m> be a multiple of the value at the field points - the mutiplying factor can be zero.
+						</li>
+					</ol> 
+				</li>
+				<li>
+					<p><alert> Calculations: </alert> </p>
+					<ol>
+						<li> <alert> Circulation: </alert> 
+ 							With Amperian loop chosen, the left side of Ampere's law turns into a simple product, which can be written as a product of magnitude <m>B_P</m> and a length <m>L</m>, which will have characteristics of the Amperian loop chosen.
+							<me>
+								\text{Left Side } = B_P L.
+							</me>
+						</li>
+						<li> <alert> <m>I_\text{enc}</m>: </alert>
+							The right side is computed either directly from the diagram and noting currents crossing the area or by integrating some current density over appropriate cross-section, as you have learned in the chapter on electric currents. For volume current density, <m>\vec J</m>, you would integrate over the area of cross-section and for the surface current density, <m>\vec K</m>, you will integrate over the line of cross-section.
+						</li> 
+						<li>
+							<alert> Solve: </alert>
+							In all cases, we will get an equation of the following form when we apply Ampere's law.
+							<me>
+								B_P L = \mu_0 I_\text{enc},
+							</me>
+							which immediately gives the magnitude of the field to be
+							<me>
+								B_P = \dfrac{\mu_0 I_\text{enc}}{L}.
+							</me>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</p>
+
+
+	</subsection>
+
+	<example xml:id="exp-Amperes-Law-Application-Magnetic-Field-of-a-Steady-Current-in-a-Long-Thin-Wire"><title> (Calculus) Ampere's Law Application: Magnetic Field of a Steady Current in a Long Thin Wire </title>
+		<p>
+			As a first example of application of Ampere's law for finding magnetic field, we will find the magnetic field at a distance <m>s</m> from a current <m>I</m> in <alert>infintely long wire</alert>. We already know the answer to this problem by applying Biot-Savart Law, but we will re-do this case to explicitly lay out arguments common to all applications of Ampere's law. Just to recall the answer.
+			<md>
+				<mrow> \amp \text{Magnitude, } B = \dfrac{\mu_0}{2\pi}\,\dfrac{I}{s}.</mrow>
+				<mrow> \amp \text{Direction: Use the right-hand-rule of Biot-Savart Law,}</mrow>
+			</md>
+		</p>
+		<p>
+			We want to use Ampere's law to find this answer. We will follow the four-step process suggested above.
+		</p>
+		<p>
+			Before we get started, let us look at the current distribution and appropriate coordinate system to use. 
+			The current distribution has a cylindrical symmetry. Thereofore, we will use cylindrical coodinate system with coordinates denoted by <m>(s,\phi, z)</m>. Let current be on the <m>z</m> axis.
+		</p>
+
+		<sidebyside widths="65% 35%">
+			<p>
+				<alert> Step 1: What is the direction of magnetic field? </alert> Using the Biot-Savart right hand rule, we find that magnetic field will circulate around the wire in circles. At any point it is in the unit vector of cylindrical coordinates, <m>\hat u_\phi</m> ,direction. 
+			</p>
+			<image source="./images/magnetic-field/ampere-law-straight-wire-step-1-direction.png" width="40%"/>
+		</sidebyside>
+
+
+
+		<sidebyside widths="65% 35%">
+
+			<p>
+				<alert> Step 2: What is the functional form of magnitude of the magnetic field? </alert> Since current runs on the entire <m>z</m> axis, nothing can depend on <m>z</m> coordinate of a point. Also, there is no directional dependence in the current distribution, so, we don't expect any <m>\phi</m> dependence. Therefore, we conclude that <m>B(s,\phi, z) = B(s)</m>, i.e., only <m>s</m>-dependent. That means magnitude will be same at all points on a circle centered at the <m>z</m> axis.
+			</p>
+
+			<image source="./images/magnetic-field/ampere-law-straight-wire-step-2-magnitude.png" width="40%"/>
+		</sidebyside>
+
+		<sidebyside widths="65% 35%">
+			<p>
+				<alert>Step 3: Choose Amperian Loop. </alert> Let field point P be located at a distance <m>s</m> from the <m>z</m> axis. Based on information in steps 1 and 2, if we choose a circle of radius <m>s</m> with direction <m>\hat u_\phi</m>, the magnitude at points of the Amperian loop will be same and the loop direction will be parallel to the field direction.
+			</p>
+			<image source="./images/magnetic-field/ampere-law-straight-wire-step-3-loop.png" width="40%"/>
+		</sidebyside>
+
+
+
+		<p>
+			<alert>Step 4: Calculations. </alert> 
+		</p>
+		<p>
+			We note that <m>B=B_P</m> at all points of Amperian loop with direction of loop and field parallel. Therefore, left side of Ampere's law
+			<me>
+				\text{Left side } = 2\pi s B_P.
+			</me>
+			For <m>I_\text{enc}</m> we notice that entire current passes through the loop in the positive current direction, as seen by applying right-hand rule on the loop direction. Therefore,
+			<me>
+				I_\text{enc} = I.
+			</me>
+			Using these in Ampere's law we get
+			<me>
+				2\pi s B_P = \mu_0, I.
+			</me>
+			Therefore, magnitude of magnetic field is
+			<me>
+				B_P = \dfrac{\mu_0}{2\pi}\, \dfrac{I}{s}.
+			</me>
+			We have already worked out the direction of the field in step 1 above.
+		</p>
+
+	</example>
+
+	<example xml:id="ex-Amperes-Law-Application-Magnetic-Field-of-a-Uniform-Steady-Current-in-a-Long-Thick-Wire"><title> (Calculus) Ampere's Law Application: Magnetic Field of a Uniform Steady Current in a Long Thick Wire </title>
+		<p>
+			Current <m> I </m> flows through a thick long wire of radius <m>a</m>. Suppose current density is uniformly distributed over the cross-section of the wire. What will be magnetic field at an interior point of the wire?
+		</p>
+		<p>
+			We will use logic explained in <xref ref="exp-Amperes-Law-Application-Magnetic-Field-of-a-Steady-Current-in-a-Long-Thin-Wire"/>. So, if you have not done that problem yet, you need to go back and familiarize yourself of my techniques.
+		</p>
+		<p>
+			Let <m>s</m> be the cylindrical radial coordinate for the field point P. Since P if interest is inside <m>s \lt a</m>. Our Amperian loop will be a circle of radius <m>s</m> as for the thin wire. This will give the following for the left side of Ampere's law.
+			<me>
+				\text{Left side } = 2\pi s B_P.
+			</me>
+		</p>
+
+		<sidebyside widths="55% 45%">		
+			<p>
+				We find <m>I_\text{enc}</m> by asking: what the the current that flows the Amperian loop? Note, I am not asking what is the current or what is the current in the wire. Since current density is constant this will just be propoetional to the area. The current through the Amperian loop is
+				<me>
+					I_\text{\enc} = \dfrac{I}{\pi a^2}\times \pi s^2 = I \dfrac{s^2}{a^2}.
+				</me>
+			</p>
+
+			<image source="./images/magnetic-field/ampere-law-thick-wire-step-mixed.png" width="40%"/>
+		</sidebyside>
+
+
+		<p>
+			Using this in Ampere's law we get
+			<me>
+				2\pi s B_P = \mu_0 I \dfrac{s^2}{a^2}.
+			</me>
+			Therefore, the magnitude of magnetic field at P is
+			<me>
+				B_P = \dfrac{\mu_0}{2\pi a^2}  I\,s.
+			</me>
+			Note that current increases with cylindrical radial distance while inside the wire. Outside, the formula will be identical to what we found in <xref ref="exp-Amperes-Law-Application-Magnetic-Field-of-a-Steady-Current-in-a-Long-Thin-Wire"/> since for those points, Amperian loops will include all current in the wire. The direction of the field is obtained in Step 1 by using Biot-Savart right-hand rule.
+		</p>
+
+	</example>
+
+
+	<example xml:id="ex-Amperes-Law-Application-Magnetic-Field-of-an-Ideal-Solenoid"><title> (Calculus) Ampere's Law Application: Magnetic Field of an Ideal Solenoid</title>
+		<p>
+			A good way to produce a known constant magnetic field is by an important device called solenoid. You can make a solenoid by tightly winding a platic-coated wire about a cylinder. Suppose, there are <m>n</m> turns of the wire per unit length. Suppose, you connect the two ends of the wire to a DC-voltage source and wait till current in the wire has stabilized to a value <m>I</m>. Let <m>R</m> be the radius of each coil. Now, we wish to find magnetic field at a point inside the tube and a point outside the tube.
+		</p>
+		<sidebyside widths="50% 50%">			
+			<p>
+				Suppose solenoid is oriented so that its axis is at the <m>z</m> axis. If we extend the solenoid to <m>z=\pm \infty</m>, we will get one aspect of cylindrical symmetry, making expected magnetic field independent of the coordinate <m>z</m>. Another aspect is the direction in the <m>xy</m> plane. If we wind the coils tightly, each turn will be identical to the next and situation in every direction will be same. With this, <m>B</m> will also be independent of <m>\phi</m>. 
+			</p>
+			<image source="./images/magnetic-field/ampere-law-solenoid-magnitude.png" width="40%"/>
+		</sidebyside>
+
+		<p>
+			Therefore, we come to conclusion that magnitude of magnetic field <m>B</m> can only be a function of the cylindrical radial coordinate <m>s</m>.
+			<me>
+				B(s,\phi, z) = B(s).
+			</me>
+			Physically, magnetic field should weaken with increasing radial distance from the solenoid axis. So, we expect
+			<men xml:id="eq-solenoid-zero-mag-field-at-infinity">
+				\lim_{s\rightarrow \infty} B(s) = 0.
+			</men> 
+		</p>
+		<p>
+			Using Biot-Savart right-hand rule, the direction inside will be towards positive <m>z</m> axis and outside it would be towards negative <m>z</m> axis.
+		</p>
+
+		<sidebyside widths="50% 50%">		
+
+			<p>
+				<alert> (a)  For field point outside the loop</alert>, the Amperian loop will be a rectangular shape with two sides parallel to axis at radial distanes <m>s>R</m> and <m>s'>s</m>. Then, left side of Ampere's law gives
+				<me>
+					\text{Left side } = B_P l_\text{ab} + 0 -  B(s') l_\text{cd} + 0.
+				</me> 
+				Here the zeros come from the fact that <m>\vec B</m> is perpendicular to those sides. The right side of Ampere's law will be zero since no current goes through this Amperian loop. 
+			</p>
+
+
+			<image source="./images/magnetic-field/ampere-law-solenoid-step-3-loop-out.png" width="40%"/>
+		</sidebyside>
+
+		<p>
+			Therefore, we get the following equation from Ampere's law.
+			<me>
+				 B_P l_\text{ab} - B(s') l_\text{cd} = 0.
+			</me> 
+			Let us take the further side at <m>s'</m> to <m>s'=\infty</m>. That will give
+			<me>
+				 B_P l_\text{ab} = B(\infty) l_\text{cd} = 0\times l_\text{cd} = 0.
+			</me> 			
+			Therefore, 
+			<me>
+				B_P = 0.\text{ (point P outside)}
+			</me>
+			We often write this result as
+			<me>
+				B_\text{out} = 0.
+			</me>
+		</p>
+
+		<sidebyside widths="50% 50%">		
+			<p>
+				<alert> (b)  For field point inside the loop</alert>, the Amperian loop will be a rectangular shape with two sides parallel to axis at radial distanes <m>s\lt R</m> and <m>s' \gt R</m>. Then, left side of Ampere's law gives
+				<me>
+					\text{Left side } = B_P l_\text{ab} + 0 -  B(s') l_\text{cd} + 0 = B_P l_\text{ab}.
+				</me>
+				To obtain the enclosed current, we look at how the wires pierce the Amperian loop area. In each turn, wire carries current <m>I</m> through the Amperian loop, and all the loops carry current in the same direction. Therefore, current will equal number of turns times <m>I</m>. 
+				<me>
+					I_\text{enc} = n l_\text{ab}\, I.
+				</me>
+			</p>
+
+
+
+			<image source="./images/magnetic-field/ampere-law-solenoid-step-3-loop-in.png" width="40%"/>
+		</sidebyside>		
+		<p> 
+			Now, we use Ampere's law,
+			<me>
+				B_P l_\text{ab} = \mu_0 n l_\text{ab}\, I.
+			</me>
+			Therefore, 
+			<me>
+				B_P = \mu_0 n \, I.\text{ (point P inside)}
+			</me>
+			We often write this result as
+			<me>
+				B_\text{in} = \mu_0 n \, I.
+			</me>
+		</p>
+	</example>
+
+
+
+	<exercise xml:id="Magnetic-Filed-of-Current-in-a-Coaxial-Cable"><title> (Calculus) Magnetic Filed of Current in a Coaxial Cable </title>
+		<statement>
+			<p>
+				Coaxial cables have a conducting wire at the center and a conducting cylindrical shell surroundng the wire separated by a nonconducting material. Current <m>I</m> in the center wire and the shell run in opposite directions. What is the magnetic field at a point at a distance <m>a</m> from the center that is located between the the central wire and the the shell?
+			</p>
+
+		</statement>
+		<hint> <p> Cylindrical symmetry with only inner wire.  </p> </hint>
+		<answer> <p> <m>\dfrac{\mu_0}{4\pi}\,\dfrac{I}{a}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The Amperian loop will be a circle of radius <m>a</m> with enclosed current will the current in the wire. The current in the shell does not matter for Ampere's law since it is outside. This problem is same as the problem of a single straight wire. Thus, we can immediately write the answer.
+				<me>
+					B = \dfrac{\mu_0}{2\pi}\,\dfrac{I}{a}.
+				</me> 
+				The directionn will be obtained by right hand rule and will be either closkwise or counterclockwise around the wire.
+			</p>
+		</solution>
+	</exercise>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,128 @@
+<section xml:id="Potential-Energy-of-an-Electric-Dipole"><title> Potential Energy of an Electric Dipole </title>
+	<introduction>
+		<!-- <sidebyside widths="70% 10% 20%"> -->
+			<p>
+				When an electric dipole is placed in an external electric field, the dipole experiences a torque if dipole moment, <m>\vec p</m>, is not along the field, <m>\vec E</m>. If you want to rotate the dipole's orientation, you will need to do rotational work against this electric torque.   
+			</p>
+			<!-- <p>	</p>
+			<image source = "./images/dielectrics/dipole-in-external-field.png" width="30%"/>
+		</sidebyside> -->
+		<sidebyside widths="70% 10% 20%">
+			<p>
+				Suppose we try to rotate the dipole from an angle <m>\theta_1</m> to another angle <m>\theta_2</m> as shown in <xref ref="fig-dipole-in-external-field-rotating"/>. In the Calculus subsection below, we will see that the formula for work will be
+				<me>
+					W_{12} = -pE\cos\,\theta_2 + pE\cos\,\theta_1.
+				</me>
+			</p>
+			<p>	</p>
+			<figure xml:id="fig-dipole-in-external-field-rotating">
+				<caption>
+				</caption>
+				<image source = "./images/dielectrics/dipole-in-external-field-rotating.png" width="30%"/>
+			</figure>
+		</sidebyside>
+		
+		<p>
+			This work will change the potential energy of the dipole by this amount. If work is positive, it will increase the potential energy of the dipole and if negative, it will decrease the potential energy. This potential energy is sometimes called <term>dipole potential energy</term>.
+			<me>
+				U_2 - U_1 = -pE\cos\,\theta_2 + pE\cos\,\theta_1.
+			</me>
+			Suppose zero of the potential energy is when the dipole is perpendicular to the electric field. Then, we can write a simple expression for the potential energy of the dipole in an arbitrary orientation <m>\theta</m> with respect to the external field by setting <m>\theta_2=\theta</m> and <m>\theta_1=\pi/2</m>. 
+			<men xml:id="eq-dipole-potential-energy">
+				U_\text{dip} = -pE\cos\,\theta = -\vec p \cdot \vec E.
+			</men> 
+			This relation shows that the energy of a dipole is least when the dipole moment and the external electric field are in the same direction and largest when the two are in the opposite direction. 
+		</p>
+ 	</introduction>
+
+	<exercise xml:id="Energy-for-Flipping-a-Dipole-Upside-Down"><title> Energy for Flipping a Dipole Upside Down </title>
+		<statement>
+			<p>
+				A dipole of moment <m>50 \times 10^{-12}\text{ C.m}</m> is aligned with an electric field between two parallel plates separated by <m>5\text{ mm}</m> that have a potential difference of <m>1\text{ kV}</m>.  How much energy will it take to flip the orientation of the dipole?
+			</p>
+
+		</statement>
+		<hint> <p> First find the electric field between the plates and then use the formula for potential energy.  </p> </hint>
+		<answer> <p>  <m>20\ \mu\text{J}</m> </p> </answer>
+ 
+		<solution> 
+			<p>
+				From the potential different across two parallel polates and their separation, we find that the maginutde of constant electric field between the plates is
+				<me>
+					E = \dfrac{\Delta \phi}{d} = \frac{1000\ \text{V}}{0.005\ \text{m}} = 2.0\times 10^{5}\text{ V/m}.
+				</me>
+				From the formula for the dipole potential energy we get the following expression for change in energy for flipping from <m>\theta=0</m> to <m>\theta=\pi\text{ rad}</m>.
+				<me>
+					\Delta U = \left(-pE\cos\pi\right) - \left(-pE\cos 0 \right) = 2pE.
+				</me>
+				Putting numbers in now, we get
+				<me>
+					\Delta U = 2\times 50 \times 10^{-12}\text{C.m} \times 2.0\times 10^{5}\text{ V/m} = 20\ \mu\text{J}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+ 	<subsection> <title>(Calculus) Derivation of Potential Energy Formula  </title>
+ 		<p>
+ 			In this subsection we will work out derivation of dipole potential energy given in Eq. <xref ref="eq-dipole-potential-energy"/> by finding work required to rotate a dipole. 
+ 		</p>
+ 		<p>
+ 			Consider rotating work for an infinitesimal rotation from an arbitrary angle <m>\theta</m>   to  <m>\theta+d\theta</m> against electric torque on the dipole, i.e., we provide a torque that will balance the torque by the electric field.
+ 			<me>
+ 				\vec \tau_\text{applied} = -\vec p \times \vec E.
+ 			</me>
+ 			In the diagram in <xref ref="fig-dipole-in-external-field-rotating"/>, this corresponds to torque pointed in the page and magnitude
+ 			<me>
+ 				\tau_\text{applied} = p E \sin\,\theta.
+ 			</me>
+ 			Therefore, rotational work by <m>\tau_\text{applied}</m> for infinitesimal rotation <m>d\theta</m> will be
+ 			<me>
+ 				dW = p E \sin\,\theta\, d\theta.
+ 			</me>
+ 			Integrating this from <m>\theta_1</m> to <m>\theta_2</m> gives the work for a finite rotation.
+ 			<me>
+ 				W_{12} = -pE\cos\,\theta_2 - pE\cos\,\theta_1.
+ 			</me>
+ 			This gives the change in potential energy for the rotation. Taking <m>\theta_1=\pi/2</m> as reference, i.e., zero potential energy when dipole moment vector and field are perpendicular to each other, we get the expression for the dipole potential energy 
+ 			<me>
+ 				U\text{dip} = -pE\cos\,\theta = -\vec p \cdot \vec E.
+ 			</me> 
+ 		</p>	
+ 	</subsection>
+
+
+	<exercise xml:id="ex-Electrostatic-Energy-of-a-Dipole-in-the-Presence-of-a-Point-Charge"><title>  Electrostatic Energy of a Dipole in the Presence of a Point Charge</title>
+		<statement>
+			<p>
+				Find the electrostatic energy of the configurations in <xref ref="fig-exer-force-on-dipoles-1"/>.
+
+			</p>
+			<figure xml:id="fig-exer-force-on-dipoles-1">
+				<caption>
+				</caption>
+				<image source="./images/dielectrics/exer-force-on-dipoles-1.png" width="70%"/>
+			</figure>
+		</statement>
+		<hint> <p>  Use <m>U = -\vec p \cdot \vec E</m>. </p> </hint>
+		<answer> <p> (a)  <m> -\frac{pq}{4\pi\epsilon_0 d^2}</m>, (b) 0.  </p> </answer>
+		<solution> 
+			<p>
+				Using energy of a dipole in an external electric field, <m> U = -\vec p\cdot\vec E</m>  we find the following for (a) and (b).
+			</p>
+			<p>
+				<md>
+					<mrow> 
+						\text{(a) }\ U \amp = -\vec p \cdot \vec E = -p_x E_x = -\dfrac{pq}{4\pi\epsilon_0}\:\dfrac{1}{x^2}. 
+					</mrow>  
+					<mrow> 
+						\text{(b) }\ U \amp = -\vec p \cdot \vec E = 0, \ \left(\text{since } \vec E \text{ and } \vec p \text{ are perpendicular to each other} \right).
+					</mrow> 
+				</md>
+			</p>
+ 
+		</solution>
+	</exercise>
+	
+</section>

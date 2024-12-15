@@ -1,0 +1,259 @@
+<section xml:id="sec-The-Bohr-Model"><title>The Bohr Model</title>
+	<introduction>
+		<p>
+			Bohr's treatment of the Hydrogen atom has only historical significance since some of his assumptions have turned out to be false and since there is much better explanation of Hydrogen atom based on Quantum Mechanics which was developed almost ten years after Bohr proposed his model. Even so, the quantum language that Bohr introduced is still in use as we will find below.
+		</p>
+	</introduction>
+	<subsection><title>Bohr's Assumptions</title>
+		<p>
+			<ol>
+				<li>
+					<term>Bohr orbits</term>. The electron in a Hydrogen atom orbits the nucleus in stable circular orbits. This assumption is now known to be false since one cannot localize an electron in any orbit!
+				</li>
+				<li>
+					<term>Angular momentum quantization</term>. The angular momentum <m>L</m> of the electron is restricted to integer multiples of <m>\hbar</m>.
+					<men xml:id="eq-bohr-ang-mom-quant">
+						L = n\:\hbar,\quad\quad n = 1, 2, 3, \cdots, 
+					</men>
+					where <m>\hbar = h/2\pi</m>. This assumption is now known to be false since it does not take into account the spin of the electron!
+				</li>
+				<li>
+					<term>Energy conservation</term>. Light   is emitted when an electron in an atom in a higher energy state makes a transition to a lower energy state.  The frequency <m>f</m> of the emitted light is related to the energy states as follows.
+					<men xml:id="eq-bohr-emission-light">
+						hf = E_{\textrm{initial}} - E_{\textrm{final}}. 
+					</men>
+				</li>
+			</ol>
+			
+		</p>
+	</subsection>
+
+	<subsection><title>Bohr's Orbits</title>
+		<p>
+			Bohr's assumptions can be shown to lead to formulas for radii for allowed Bohr orbits if we apply Newton's second law of motion to an elctron in circular orbit. Let us assume the speed of the electron to be constant when in the circular orbit.  This will give the following for <m>F=ma</m> with <m>F</m> being the electrostatic force on the electron and <m>a</m> the centripetal acceleration.
+			<men xml:id="eq-bohr-newton-eqn">
+				F = m a\quad \Longrightarrow\quad  \dfrac{1}{4\pi\epsilon_0}\dfrac{e^2}{r^2} = m \dfrac{v^2}{r}.
+			</men>
+			The angular momentum quantization condition in Eq. <xref ref="eq-bohr-ang-mom-quant"/> gives
+			<men xml:id="eq-bohr-newton-eqn-2">
+				L = n \hbar \quad \Longrightarrow\quad  m v r = n \hbar, \quad\quad n = 1, 2, 3, \cdots. 
+			</men>
+			Substituting <m>v</m> from this equation into Eq. <xref ref="eq-bohr-newton-eqn"/> gives the folowing for the radius <m>r</m> of the orbit.
+			<men xml:id="eq-bohr-newton-eqn-3">
+				r = \left[\dfrac{4\hbar^2\epsilon_0}{me^2}\right]\: n^2, \quad\quad n = 1, 2, 3, \cdots. 
+			</men>
+			The quantity within brackets <m>[\ \ ]</m> is called the <term>Bohr radius</term> and is usually denoted by letter <m>a_0</m>.
+			<men xml:id="eq-bohr-newton-eqn-4">
+				a_0 \equiv \dfrac{4\hbar^2\epsilon_0}{me^2} = 5.292\times 10^{-11}\:\textrm{m}. 
+			</men>
+			 We rewrite <m>r</m> in Eq. <xref ref="eq-bohr-newton-eqn-3"/> as <m>r_n</m> and replace the the quantities within brackets <m>[\ \ ]</m> by <m>a_0</m> to obtain a simpler formula for the radii of the allowed Bohr oribits. 
+			<men xml:id="eq-bohr-newton-eqn-5">
+				r_n = n^2\:  a_0, \quad\quad n = 1, 2, 3, \cdots.  
+			</men>
+		</p>
+	</subsection>
+
+	<subsection><title>Allowed Energies for a Hydrogen Atom</title>
+		<p>
+			Bohr then worked out the energy of electron when in different orbits.  Thus, when an electron is in the orbit of radius <m>r_n</m> it has the following energy
+			<men xml:id="eq-bohr-energy-1">
+				E_n = KE_{n} + PE_{n} = \dfrac{1}{2} m v_n^2 + \left( - \dfrac{1}{4\pi \epsilon_0}\: \dfrac{e^2}{r_n}\right), 
+			</men>
+			where <m>v_n</m> is the speed when in the orbit labeled <m>n</m>, which from Eq. <xref ref="eq-bohr-newton-eqn-2"/> will be
+			<me>
+			v_n = \dfrac{n \hbar}{mr_n}.
+			</me>
+			Simplifying Eq. <xref ref="eq-bohr-energy-1"/> leads to
+			<men xml:id="eq-bohr-energy-2">
+				E_n =   - \dfrac{1}{8\pi \epsilon_0}\: \dfrac{e^2}{r_n} = -\left[\dfrac{me^4}{24\pi^2\epsilon_0^2\hbar^2}\right]\:\dfrac{1}{n^2}. 
+			</men>
+			Let us write the constant within bracket as <m>E_1</m> and rewrite the energy formula more compactly as
+			<men xml:id="eq-bohr-energy-3">
+				E_n =     -\dfrac{E_1}{n^2}, 
+			</men>
+			with 
+			<me>
+				E_1 = \dfrac{me^4}{24\pi^2\epsilon_0^2\hbar^2} = 2.178\times 10^{-18}\:\textrm{J} = 13.61\:\textrm{eV}.
+			</me>
+		</p>
+	</subsection>
+
+	<subsection><title>Bohr's Derivation of Rydberg Formula</title>
+		<p>
+			Using Eq. <xref ref="eq-bohr-energy-3"/> into Eq. <xref ref="eq-bohr-emission-light"/> we can find the frequency <m>f</m> of the emitted light when the electron in the hydrogen atom goes from energy state <m>n = n_1</m> to <m>n=n_2</m> such that <m>E_{n_1}>E_{n_2}</m>.   
+			<men xml:id="eq-bohr-energy-4">
+				h f = E_{n_1} - E_{n_2} =    E_1\: \left[ \dfrac{1}{n_2^2} - \dfrac{1}{n_1^2}\right]. 
+			</men>
+			Let us write this equation in terms of inverse of the wavelength <m>\lambda = c/f</m> of the light as in the Rydberg formula.
+			<men xml:id="eq-bohr-energy-5">
+				\dfrac{1}{\lambda}   =    \dfrac{cE_1}{h}\: \left[ \dfrac{1}{n_2^2} - \dfrac{1}{n_1^2}\right].
+			</men>
+			This is exactly the Rydberg formula for the Balmer series given in Eq. <xref ref="eq-Rydberg-formula"/>, when <m>n = 3, 4, \cdots</m> if we can show that <m>cE_1/h</m> is equal to <m>R_H</m>.  A numerical calculation of <m>cE_1/h</m> shows  that this is indeed the case.
+			<md>
+				<mrow>\dfrac{cE_1}{h} \amp = \dfrac{3\times 10^{8}\:\textrm{m/s}\times 2.178\times 10^{-18}\:\textrm{J}}{6.63\times 10^{-34}\:\textrm{J.s}}</mrow>
+				<mrow> \amp  = 1.095\times 10^7\:\textrm{m}^{-1},</mrow>
+			</md>
+			which agrees with the Rydberg constant given in Eq. <xref ref="eq-Rydberg-const-value"/>. Thus, Bohr was able to account for the discreteness in the spectrum of the hydrogen atom and explain the origin of the Rydberg formula, although he had to make some rather ad-hoc and [now we know] wrong physics assumptions. 
+
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Frequency-of-Light-Emitted-in-an-Electronic-Transition"><title>Frequency of Light Emitted in an Electronic Transition</title>
+
+		<statement>
+			<p>
+				Suppose a hydrogen atom has been somehow excited to <m>n=3</m> state from which the atom makes a transition to the <m>n=1</m> state accompanied by a release of a photon.  What will be the energy, wavelength, and frequency of the light emitted?
+			</p>
+		</statement>
+		<hint><p>
+			Use <m>E=hf</m> to connect to light emitted.
+		</p></hint>
+		<answer><p>
+			<m>12.1\:\textrm{eV}</m>, <m>1.027\times 10^{-7}\:\textrm{m}</m>, <m>2.92 \times 10^{15}\: \textrm{Hz}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				We can use Eq. <xref ref="eq-bohr-energy-4"/> with <m>n_1=1</m> and <m>n_2=3</m> to find the energy of the photon.
+				<me>
+					E =   E_1\: \left(\dfrac{1}{1^2} - \dfrac{1}{3^2}\right) =  \frac{8}{9}\: E_1,
+				</me>
+				where <m>E_1 = 13.61\text{ eV}</m>.
+				<me>
+					E = \frac{8}{9}\times 13.61\:\textrm{eV} = 12.1\:\textrm{eV} .
+				</me>
+				The frequency of the photon will be
+				<me>
+					f = \frac{E}{h} = \frac{12.1\:\textrm{eV}}{4.14 \times 10^{-15}\: \textrm{eV s}} = 2.92 \times 10^{15}\: \textrm{Hz}.
+				</me>
+				The wavelength will be
+				<me>
+					\lambda = \frac{c}{f} = \frac{3\times 10^{8}\:\textrm{m/s}}{2.92 \times 10^{15}\: \textrm{Hz}} = 1.027\times 10^{-7}\:\textrm{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+	<exercise xml:id="ex-Light-Emitted-in-a-Balmer-Series-Transition"><title>Light Emitted in a Balmer Series Transition TODO</title>
+
+		<statement>
+			<p>
+				Find the wavelength of light emitted in the Balmer series of hydrogen spectrum when (a) <m>n = 3</m>, (b) <m>n = 4</m>. 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Light-Emitted-in-a-Lyman-Series-Transition"><title>Light Emitted in a Lyman Series Transition TODO</title>
+
+		<statement>
+			<p>
+				There is a series, called Lyman series, in the hydrogen spectrum that is associated with transition from <m> n \gt 1</m> to <m> n = 1</m> state. Find the wavelength of light emitted in the Lyman series of hydrogen spectrum when (a) <m> n = 1</m>, (b) <m> n = 2</m>, (c) <m> n = \infty</m>. 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Avogadro-Number-of-Atoms-Arranged-in-a-Line"><title>Avogadro Number of Atoms Arranged in a Line TODO</title>
+
+		<statement>
+			<p>
+				If Avogadro number of atoms were arranged in a straight line such that they were separated by 10 Bohr radii, how long will that line will be?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Transitions-in-Hydrogen-Atom-from-Observed-Light"><title>Transitions in Hydrogen Atom from Observed Light TODO</title>
+
+		<statement>
+			<p>
+				In a hydrogen atom spectrum which transitions correspond to the following wavelengths, (a) <m>486\text{ nm}</m>, (b) <m>433\text{ nm}</m>, (c) <m>121\text{ nm}</m>, (d) <m>93.7\text{ nm}</m>?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Bohr-Formulas-for-Helium-Ion"><title>Bohr Formulas for Helium Ion TODO</title>
+
+		<statement>
+			<p>
+				Removing one electron from a helium atom creates the He<m>^{+1}</m> ion which is like a hydrogen atom with two protons and two neutrons in the nucleus.  (a) Show that the Bohr atom applied to the electron in He<m>^{+1}</m> ion gives the following energy levels of this ion.
+				<me>
+					E_n = -\dfrac{E_1}{n^2}, 
+				</me>
+				with 
+				<me>
+					E_1 = \dfrac{m Z^2e^4}{24\pi^2\epsilon_0^2\hbar^2} \ \ \ (Z =2).
+				</me>
+				(b) What is the ionization energy of the He<m>^{+1}</m> ion? (no need to calculate, you can appropriately modify the ionization energy of H-atom to get the answer. (c) What is the radius of the smallest orbit of the electron in the He<m>^{+1}</m> ion?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Ionization-Energy-of-Lithium-Ion"><title>Ionization Energy of Lithium Ion TODO</title>
+
+		<statement>
+			<p>
+				(a) What is the ionization energy of the Li<m>^{+2}</m> ion? (no need to calculate, you can appropriately modify the ionization energy of H-atom to get the answer. (b) What is the radius of the smallest orbit of the electron in the Li<m>^{+2}</m> ion?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Bohr-Model-for-Muon-Replacing-Electron-in-Hydrogen-Atom"><title>Bohr Model for Muon Replacing Electron in Hydrogen Atom TODO</title>
+
+		<statement>
+			<p>
+				A muon is a particle which is similar to an electron, just <m>207</m> times heavier.  Suppose you replace the electron in a hydrogen atom by a muon and treated the muon/proton atom by the Bohr model.  (a) What will be the radius of the smallest orbit?  (b) What will be the four lowest energy levels of this atom? 
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+
+
+
+</section>

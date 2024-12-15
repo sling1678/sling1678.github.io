@@ -1,0 +1,229 @@
+<section xml:id="Circulation-of-Magnetic-Field"><title> Circulation of Magnetic Field </title>
+	<introduction>
+		<p>
+			Circulations of magnetic and electric fields play important role in understanding electric and magnetic phenomena fully. Circulation of a field combines the strength and direction properties of a field around a directed closed loop in space into one scalar quantity. If you have taken Calc III, you are already familiar with the concept of circulation of vector fields. 
+		</p>
+		<sidebyside widths="60% 5% 35%">
+			<p>
+				We calculate circulation  of magnetic field <m>\vec B</m> around a closed path by summing the dot product <m>\vec B\cdot \Delta\vec l</m> for every piece <m>\Delta l</m>, treated as vector whose direction is the direction of traversal, and <!-- 
+				. That is, we think of the entire path as consisting of linear segments; on each segment, we compute the dor profuct <m>\vec B\cdot \Delta\vec l</m>; finally, we --> sum them all.
+				<men xml:id="circulation-simple-definition">
+					\text{Circulation, } = \sum_\text{closed path} \vec B\cdot \Delta\vec l, 
+				</men>
+
+			</p>
+			<p> </p>
+			<image source="./images/magnetic-field/circulation-definition-elementary.png" width="50%"/>
+		</sidebyside>
+		<p>
+			The circulation depends on the direction you go around; if it is positive if go one way, then it will be negative if you go in the oposite direction. 
+		</p>
+		<p>
+			Circulation of a field also depends upon the path you choose for the circulation. I will illustrate this with the field of a current in an infinitely long wire.
+		</p>
+		<p><alert>Circulation in circle around a straight wire.</alert></p>
+		<p>
+
+			As an example, lets work out the circulation of magnetic field of current in a straight wire. As you know from a previous section, magnetic field of a long straight wire circulates around the wire in circles with the same magnitude <m>B=\mu_0 I/ 2\pi r</m> at all points of one circle of radius <m>r</m>. Let us denote this magnetic field by <m>B(r)</m>. The circulation of this magnetic field around a circle is easy to work out. 
+		</p>
+
+		<sidebyside widths="50% 10% 40%">
+
+			<p>
+				In this case, magnetic field <m>\vec B</m> and <m>\Delta \vec l</m> are both tangential and are in the same direction in every part of the circular path. Therefore, we get <m>B(r)\Delta l</m> from the dot product, and when we sum over all parts of the circle we get 
+				<me>
+					\text{Circulation } = \sum_\text{circle} \vec B\cdot \Delta\vec l = B(r) \sum_\text{circle}\Delta  l =  B(r) \times 2\pi r.
+				</me>
+			</p>
+			<p> </p>
+			<image source="./images/magnetic-field/circulation-circle-around-wire.png" width="50%"/>
+		</sidebyside>
+ 
+		<p><alert>Circulation in another path near a straight wire.</alert></p>
+		<p>
+			Suppose we go one third way around the circle, then go parallel to the wire, and then go one third around the circle but in the opposite direction, and then finally go parallel o the wire returning to the original place. What will be the circulation?
+		</p>
+		<sidebyside widths="55% 10% 35%"> 
+			<p>
+				You can show that the circulation will be zero. This happens because the contributions on path ab and cd cancel and the dot products  on paths bc and da are zero since field and path are perpendicular to each other on segments of those paths.
+				<md>
+					<mrow> 
+						\amp \text{Circulation around abcda } </mrow>
+						<mrow> \amp \ \ = B(r) \dfrac{2\pi r}{3}  + 0 - B(r) \dfrac{2\pi r}{3} + 0 = 0.</mrow>
+				</md>
+			</p>
+			<p> </p>
+			<image source="./images/magnetic-field/circulation-zero-value-case-near-wire.png" width="40%"/>
+		</sidebyside>
+
+		<p><alert>Circulation in multiples times around a straight wire.</alert></p>
+		<p>
+			 What will happen if you go around a long straight wire multiple times so that the path is closed in the end? 
+		</p>
+		<sidebyside widths="55% 10% 35%"> 
+			<p>
+				The situation for three-times around is shown in <xref ref="fig-circulation-circle-around-wire-three-times"/>. 
+				You can see that in subsequent circles, the magnetic field and path are in opposite directions. Hence, circulation over two adjacent circles will be zero, and we will be left with circulation over one circle only. 
+				<me>
+					\text{net circulation} = B(r) \times 2 \pi r.
+				</me>
+			</p>
+			<p> </p>
+			<figure xml:id="fig-circulation-circle-around-wire-three-times">
+				<caption>
+				</caption>
+				<image source="./images/magnetic-field/circulation-circle-around-wire-three-times.png" width="40%"/>
+			</figure>
+		</sidebyside>
+
+
+
+
+
+
+	</introduction>
+
+
+	<subsection><title>(Calculus) General Definition of Circulation </title>
+		<p>
+			The definition given in Eq. <xref ref="circulation-simple-definition"/> with infinitesimal elements <m>d\vec l</m> of the loop makes the sum go over to a <alert>line integral</alert> over a closed path. We denote the resulting integral formally by symbol <m>\oint</m>. Therefore, circulation of field <m>\vec B</m> around a closed path <m>C</m> is defined by the following.
+			<men xml:id="circulation-calc-definition">
+				\text{Circulation } = \oint_{C}\, \vec B \cdot d\vec l.
+			</men>
+			This is a conceptual integral. In a particular situation, you will need to convert this integral in variables that you can integrate over. Most closed paths we will encounter will be staraight or circular. In the case of stratight paths, we use Cartesian coordinates to write the path as
+			<me>
+				d\vec l = \hat u_x\, dx + \hat u_y\, dy + \hat u_z\, dz.
+			</me>
+			In the case of circular path of radius <m>R</m>, with circle in the <m>xy</m> plane centered at origin, we use polar coordinates and write
+			<me>
+				d\vec l = \hat u_\phi\, R d\phi,
+			</me>
+			where the unit vector <m>\hat u_\phi</m> depends on angle <m>\phi</m> and has the following expression in terms of Cartesian unit vectors.
+			<me>
+				\hat u_\phi = -\hat u_x\, \sin\,\phi + \hat u_y\, \cos\,\phi.
+			</me>
+		</p>
+	</subsection>
+
+
+	<exercise xml:id="ex-Circulations-Around-Two-Different-Loops-in-Two-Region-Uniform-Magnetic-Field"><title> Circulations Around Two Different Loops in Two-Region Uniform Magnetic Field </title>
+		<statement>
+			<p>
+				<xref ref="fig-circulation-on-two-loops-in-uniform-field"/> shows two uniform magnetic field regions and a coordinate system with same magnitude, <m>B_0</m>, in the two regions, but oppositely directed. This would be magnetic field of a surface current in the <m>xy</m> plane flowing towards negative <m>x</m> axis. Above the <m>xy</m> plane field is directed towards positive <m>y</m> axis and below the plane, it is directed towards negative <m>y</m> axis.
+			</p>
+			<p>
+ 				Calculate the circulation of the magnetic field for the space loops (a) <m>a-b-c-d-a</m> and (b) <m>e-f-g-h-e</m> in the <m>yz</m>-plane shown in the figure.  
+			</p>
+			<figure xml:id="fig-circulation-on-two-loops-in-uniform-field">
+				<caption>
+				</caption>
+				<image source="./images/magnetic-field/circulation-on-two-loops-in-uniform-field.png" width="80%"/>
+			</figure>
+		</statement>
+		<hint> <p>  Find <m>\vec B \cdot \Delta l</m> on each linear segment and sum. </p> </hint>
+		<answer> <p>  (a) <m>0</m>, (b) <m>2B_0l_\text{fg}</m> </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) Here the loop <m>\text{a-b-c-d-a}</m> consists of four linear segments. We will compute <m>\vec B\cdot \Delta \vec l</m> on each and then sum them all. The calculation is relatively simple since <m>\vec B</m> is constant, and either parallel or perpendicular to the direction of each segment. The results are
+
+			</p>
+			<p>
+				<md>
+					<mrow> \amp  \text{ab-segment: } \vec B\cdot \Delta \vec l = 0, \text{ (vectors pependicular), }</mrow>
+					<mrow> \amp  \text{bc-segment: } \vec B\cdot \Delta \vec l = B_0 l_\text{bc}, \text{ (vectors same direction), } </mrow>
+					<mrow> \amp  \text{cd-segment: } \vec B\cdot \Delta \vec l = 0, \text{ (vectors pependicular), }</mrow>
+					<mrow> \amp  \text{da-segment: } \vec B\cdot \Delta \vec l = -B_0 l_\text{da}, \text{ (vectors opposite directions). }</mrow>
+				</md>
+
+				Adding up the contributions the circulation around the loop is equal to zero.
+				<me>
+					\text{Circulation around a-b-c-d-a} = 0 + B_0 l_\text{bc}+0-B_0 l_\text{da} =0,
+				</me>
+				since <m>l_\text{bc} = l_\text{da}</m>.
+			</p>
+
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+			<p>
+				(b) Here the loop <m>\text{e-f-g-h-e}</m> consists of four linear segments. We will compute <m>\vec B\cdot \Delta \vec l</m> on each and then sum them all. The calculation is relatively simple since <m>\vec B</m> is constant, and either parallel or perpendicular to the direction of each segment. The results are
+
+			</p>
+			<p>
+				<md>
+					<mrow> \amp  \text{ef-segment: } \vec B\cdot \Delta \vec l = 0, \text{ (vectors pependicular), }</mrow>
+					<mrow> \amp  \text{fg-segment: } \vec B\cdot \Delta \vec l = B_0 l_\text{fg}, \text{ (vectors same direction), } </mrow>
+					<mrow> \amp  \text{gh-segment: } \vec B\cdot \Delta \vec l = 0, \text{ (vectors pependicular), }</mrow>
+					<mrow> \amp  \text{he-segment: } \vec B\cdot \Delta \vec l = B_0 l_\text{he}, \text{ (vectors same directions). }</mrow>
+				</md>
+
+				Adding up the contributions the circulation around the loop is
+				<me>
+					\text{Circulation around e-f-g-h-e} = 0 + B_0 l_\text{fg}+0+B_0 l_\text{he} = 2 B_0 l_\text{fg},
+				</me>
+				since <m>l_\text{fg} = l_\text{he}</m>.
+			</p>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Circulation-Around-Two-Circular-Loops-in-an-Inhomgeneous-Magnetic-Field"><title> Circulation Around Two Circular Loops in an Inhomgeneous Magnetic Field </title>
+		<statement>
+			<p>
+				Magnetic field lines in a region circulate in circles around a common center in counterclockwise direction with magnitude dpendeing upon the cylindrical radial coordinate <m>s</m> as follows.
+				<me>
+					B(s) =  \dfrac{\alpha}{s},
+				</me> 
+				where <m>\alpha</m> is some constant.
+			</p>
+			<p>
+
+				Find circulation of magnetic field around the loops  indicated  by dashed lines in the <m>xy</m>  plane in figures  (a)  and (b)
+			</p>
+			<image source="./images/magnetic-field/circulation-around-two-circular-shaped-loops.png" width="80%"/>
+
+		</statement>
+		<hint> <p>  (a) The segments on the loop and magnetic field are in the same direction and magnitude of magnetic field is same at all points of the loop. (b) The segments of the loop are either perpendicular or parallel or antiparallel to the direction of the magnetic field. </p> </hint>
+		<answer> <p> (a) <m>2\pi\alpha</m>, (b) <m>0</m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) The loop is circular with direction counterclockwise, which is the same direction as the magnetic field. Therefore, on each segment of the loop, 
+				<me>
+					\left.(\vec B \cdot d\vec l)\right|_{s=a} = \dfrac{\alpha}{a}\, \Delta l,
+				</me>
+				Now summing these over the entire circle will just make <m>\sum \Delta l = 2\pi a</m>, the circumference. Therefore, the circulation around this loop will be
+				<me>
+					\text{Circulation } = \dfrac{\alpha}{a} \times 2\pi a = 2\pi\alpha.
+				</me>
+
+
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b) The full closed path is made up of four segments, two of which are straight segments and two others semi-circular. Therefore, the circulation is a sum of four sub-sums.
+				<md>
+					<mrow> \text{Circulation } \amp = \sum_\text{pqrsp}\vec B\cdot \Delta \vec l, </mrow>
+					<mrow> \amp = \sum_\text{pq}\vec B\cdot \Delta \vec l  + \sum_\text{qr}\vec B\cdot \Delta \vec l  + \sum_\text{rs}\vec B\cdot \Delta \vec l + \sum_\text{sp}\vec B\cdot \Delta \vec l </mrow>
+				</md>
+				The individual pieces are easy to compute since <m>\vec B</m> is either perpnedicular to the path or has a constant magnitude and either parallel to the path or anti-parallel to path.  
+				<md>
+					<mrow> \amp \sum_\text{pq}\vec B\cdot \Delta \vec l  = \dfrac{\alpha}{a} \times \pi a = \pi\,\alpha, </mrow>
+					<mrow> \amp \sum_\text{qr}\vec B\cdot \Delta \vec l = 0,
+						 </mrow>
+					<mrow> \amp \sum_\text{rs}\vec B\cdot \Delta \vec l =-\dfrac{\alpha}{b} \times \pi b = -\pi\,\alpha,  </mrow>
+					<mrow> \amp  \sum_\text{sp}\vec B\cdot \Delta \vec l = 0. </mrow>
+				</md>
+				Therefore, circulation around the closed path in question is
+				<me>
+					\text{Circulation } = \pi\,\alpha + 0 - \pi\,\alpha + 0 = 0.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+</section>

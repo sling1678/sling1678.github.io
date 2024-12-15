@@ -1,0 +1,223 @@
+<section xml:id="one-dimensional-motion-brief-review"> <title> Brief Review of 1D Motion</title>
+	<introduction>
+		<p> 
+			Motion that fall on a straight line can be described by viewing the motion occuring on one of the Cartesian axes, say the <m> x </m> axis. With this choice, we denote the position, velocity, and acceleration at instant <m> t </m> by <m> x </m>, <m> v_x </m>, and <m> a_x </m> respectively. The subscript is there to remind us our choice of the axis. The magnitude of <m> v_x </m> gives the speed, <m> |v_x|</m>, at that instant.
+		</p>
+		<p>
+			We use a sign convention to follow the directions of velocity and acceleration. The source of these sign conventions will become clear after you learn vectors. The following diagrams clarify the sign assignments of velocity and acceleration. 
+		</p>
+		<sidebyside widths="50% 50%">
+			<p>
+				<p> 
+					The velocity <m> v_x </m> is positive if object is moving in the direction of positive axis and negative if in the opposite direction. 
+				</p>
+				<p>
+					Acceleration <m> a_x </m> is positive in two situations: if either <m> v_x </m> is positive <em> and </em> speeding up   <alert> OR </alert> <m> v_x </m> is negative <em> and </em> slowing down. 
+				</p>
+				<p>
+					Acceleration <m> a_x </m> is negative in two situations: if either <m> v_x </m> is negative <em> and </em> speeding up <alert>  OR </alert> <m> v_x </m> is positive <em> and </em> slowing down. 
+				</p>
+			</p>
+			<image source="./images/one-dim-motion/signs-of-v-and-a.png" width="70%"/>
+		</sidebyside>
+
+		<sidebyside widths="60% 35%">
+
+			<p>
+				We usually study one-dimensional kinematics for constant acceleration motion during an interval <m> \Delta t = t_f - t_i </m>. The change in position, <m> \Delta x = x_f-x_i </m> and change in velocity <m> \Delta v_x = v_{f,x} - v_{i,x} </m> during this interval can be shown to obey the following relations.
+				<mdn>
+					<mrow> \amp \Delta v_x = a_x \Delta t. </mrow>
+					<mrow> \amp \Delta x = v_{av,x} \Delta t,</mrow>
+				</mdn>
+
+			</p>
+
+			<image source="./images/one-dim-motion/one-dim-constant-acceleration-set-up.png" 
+				width="70%"/>
+		</sidebyside>
+		<p>
+			where
+				<men>
+					v_{av,x} = \dfrac{v_{i,x} + v_{f,x}}{2}.
+				</men>
+			It is possible to eliminate <m> \Delta t </m> from these equations to obtain 
+			<men  xml:id="eq-1-d-no-t-equation">
+				v_{f,x}^2 = v_{i,x}^2 + 2 a_x \left( \Delta x \right)^2,
+			</men>
+			which we will refer to as the <q>no-<m>t</m>-equation </q>.
+			It is also possible to eliminate <m> v_{f,x} </m> to obtain another useful equation
+			<men  xml:id="eq-1-d-no-vf-equation">
+				\Delta x = v_{i,x} \Delta t + \dfrac{1}{2}a_x\left(\Delta t \right)^2,
+			</men>
+			which we will refer to as the <q> no-<m>v_f</m>-equation</q>.
+		</p>
+
+
+ 		<p>
+ 			Some special motions require simplified analysis. For instance, <alert> if velocity is constant</alert>, then, in these equations
+ 			<me>
+ 				a_x = 0\ \ \ \ (\text{constant velocity case})
+ 			</me> 
+ 		</p>
+ 		<p>
+ 			Another important special situation occurs when speed is constant during a motion. Speed at an instant is equal to the absolute value of the velocity at that instant, i.e., in one-dimensional situation, you would strip the sign of the velocity to get the speed at that instant.  Even though you can get speed at an instant from the velocity at that instant, the <alert> average speed </alert> during an interval is not related to the average velocity over that interval due to the way averaging is done in the two cases. 
+ 		</p>
+ 		<p>
+
+ 			Average speed to be denoted by the symbol <m> v_{s,av}</m> is totality of distance covered divided by the time taken. Thus, if you move from origin to <m> x = 10 \text{ cm}</m> and return to origin, you would actually cover a distance of <m> 20 \text{ cm}</m>  even though your <m> \Delta x = 0 </m> since your initial <m> x </m> is the same as your final <m> x</m>.
+ 			We denote the actual distance covered by the letter <m> d </m>. In <alert> constant speed </alert> motion following equations are used.
+ 			<mdn>
+				<mrow> \amp |v_f| = |v_i| = v_{s,av}  </mrow>
+				<mrow> \amp  d = v_{s,av} \, \Delta t</mrow>
+			</mdn>
+ 		</p>
+ 
+
+ 		<p> <alert> Summary of Formulas </alert>
+ 		</p>
+ 		<p> <alert> Constant Acceleration: </alert>
+ 		</p>
+ 		<p>
+ 			<mdn>
+					<mrow> \amp \Delta v_x = a_x \Delta t. </mrow>
+					<mrow> \amp \Delta x = v_{av,x} \Delta t.</mrow>
+					<mrow> \amp v_{av,x} = \dfrac{v_{i,x} + v_{f,x}}{2}.</mrow>
+					<mrow> \amp  \Delta x = v_{i,x} \Delta t + \dfrac{1}{2}a_x\left(\Delta t \right)^2</mrow>
+					<mrow> \amp  v_{f,x}^2 = v_{i,x}^2 + 2 a \left( \Delta x \right)^2</mrow>
+			</mdn>
+		</p>
+		<p> <alert> Constant Speed: </alert>
+		</p>
+		<p>
+			<mdn>
+				<mrow> \amp |v_f| = |v_i| = v_{s,av}  </mrow>
+				<mrow> \amp  d = v_{s,av} \, \Delta t</mrow>
+			</mdn>
+		</p>
+
+
+	</introduction>
+
+
+	<exercise><title>  Average Velocity versus Average Speed</title>
+		<statement>
+			<p>
+				A ball is rolling in a straight track. At the end of the track, the ball hits a wall and bounces back with the same speed. Ignore the time the ball was in contact with the wall during the collision. Let the original direction of ball be the positive <m> x </m> axis direction. Let the ball be at <m> x = 15\text{ cm}</m>  at <m> t = 0 </m>, and at <m> x = 75\text{ cm}</m> at <m> t = 10\text{ sec} </m>. The wall is at <m> x = 100\text{ cm}</m>. What are (a) the average velocity and (b) average speed during the  <m> t = 0 </m> to <m> t = 10\text{ sec} </m> interval?
+			</p>
+
+		</statement>
+		<hint> <p> Average velocity is based on coordinates and average speed is based on actual distance covered.  </p> </hint>
+		<answer> <p> (a) <m>6 \text{ cm/s}</m>, (b) <m>11 \text{ cm/s}</m>.  </p> </answer>
+		<solution> 
+			<p> (a) <alert> Average Velocity :</alert> For the sake of brevity, we will drop the  coordinate subscript <m> x </m> from the symbols.
+			</p>
+			<p>
+				The definition of average velocity for a one-dimensional motion on <m> x </m> axis is
+				<me>
+					v_{av} = \dfrac{\Delta x }{\Delta t}.
+				</me>
+				Therefore,
+				<me>
+					v_{av} = \dfrac{75\text{ cm} -  15\text{ cm}}{10\text{ sec}} = 6 \text{ cm/s}.
+				</me>
+
+			</p>
+
+			<p> (a) <alert> Average Speed</alert>
+			</p>
+			<p>
+				The definition of average speed for any motion is
+				<me>
+					v_{s,av} = \dfrac{d }{\Delta t}.
+				</me>
+				The motion has two legs here: (1) from <m> x = 15\text{ cm} </m> to <m> x = 100\text{ cm} </m> (i.e., the wall) and (2) from <m> x = 100\text{ cm} </m> to <m> x = 75\text{ cm} </m>. We need to add these distances, not just difference in coordinates.
+				Therefore,
+				<me>
+					v_{s,av} = \dfrac{85\text{ cm} +  25\text{ cm}}{10\text{ sec}} = 11 \text{ cm/s}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise><title> Predicting Final Velocity in a Constant Acceleration Motion </title>
+		<statement>
+			<p>
+				A skier is coming down a steep slope with a constant acceleration <m> a = 3.0\text{ m/s}^2</m>.  If the speed of the skier at the top of the hill was <m> 0 </m>, what is his speed when he has skied a distance of <m> 40 \text{ m}</m> down the hill? Take the positive <m> x </m> axis to point down the hill.
+			</p>
+
+		</statement>
+		<hint> <p>  Since we don't need <m>\Delta t</m> the <q>no-<m>t</m>-equation</q> can be useful </p> </hint>
+		<answer> <p> <m> + 98\text{ m/s} </m></p> </answer>
+		<solution> 
+			<p> For the sake of brevity, we will drop the  coordinate  subscript <m> x </m> from the symbols.
+				Here taking the <m> x </m> axis down the hill makes all the motion along the <m> x </m> axis. From the problem statement, we can get the following.
+				<me>
+					a = 3.0\text{ m/s}^2,\ \ \Delta x = 40 \text{ m},\ \ v_i = 0,\ \ v_f = ?
+				</me>
+				The <q>no-<m>t</m>-equation</q> is perfect for this and gives
+				<me>
+					v_f^2 = v_i^2 + 2 a (\Delta x)^2 = 0 + 2 \times 3 \times 40^2 = 9600.
+				</me>
+				Taking square root of both sides gives two values
+				<me>
+					v_f = \pm 98\text{ m/s}.
+				</me>
+				Since the velocity we want to in the direction of the positive <m> x </m> axis, we want the positive root.
+				<me>
+					v_f = + 98\text{ m/s}.
+				</me>
+				We want the speed, which is the absolute value of this velocity.
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise><title> Time to Reach the Top </title>
+		<statement>
+			<p>
+				A steel ball is lauched vertically up with speed <m>20\text{ m/s}</m>, i.e., an immediate instant after the ball leaves the launcher its speed is <m>20\text{ m/s}</m>. How long does it take to reach the top of its trajectory? Assume the acceleration has value <m>9.81\text{ m/s}^2</m> and is pointed down.
+			</p>
+
+		</statement>
+		<hint> <p>  The velocity at the top is zero since velocity goes from being positive to being negative. </p> </hint>
+		<answer> <p>   </p> </answer>
+		<solution> 
+			<p> For the sake of brevity, we will drop the coordinate subscript <m> y </m> from the symbols.
+				Let us use <m> y </m> axis for the vertical motion with origin at the point the ball left and the direction of positive <m> y </m> being up. This will make <m> a = -9.81\text{ m/s}^2</m>. 
+			</p>
+			<p>
+				The velocity along the path before reaching the top is positive, and after the ball starts to fall, the velocity is negative. That means, right at the top point, velocity is zero. We take <m> t_i </m> the instant of launch and <m> t_f</m> at the top. The information in the problem statement can be summarized now.
+				<me>
+					a = -9.81\text{ m/s}^2,\ \ v_i = + 20\text{ m/s},\ \ v_f = 0,\ \ \Delta t = ?
+				</me> 
+				We can get <m> \Delta t </m> by using the acceleration equation.
+				<me>
+					\Delta v = a\, \Delta t \Longrightarrow \Delta t = \dfrac{\Delta v}{a}.
+				</me>
+				Therefore,
+				<me>
+					\Delta t = \dfrac{0 - 20\text{ m/s}}{-9.81\text{ m/s}^2} = 2.04\text{ sec}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

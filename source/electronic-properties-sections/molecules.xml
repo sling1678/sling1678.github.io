@@ -1,0 +1,180 @@
+<section xml:id="sec-Molecules"><title>Molecules</title>
+
+	<introduction>
+		<p>
+			Atoms bind together to form molecules. In this section we will study various ways bonding occurs.
+		</p>
+	</introduction>
+
+
+	<subsection><title>Binding Energy</title>
+		<p>
+			For two atoms to form a molecule, there must be a net attraction between them. When you bring two atoms closer, you would introduce attraction between the electrons of one atom by the protons of the other atom and repulsion between the electrons of the two atoms and between the two nuclei. If there is a net attraction between the two atoms, you will find that, at some equilibrium distance, their potential energy is the lowest as shown schematically in <xref ref="fig-binding-energy"/>. We say that two molecules have formed a bond.  If you have the atoms at the equilibrium distance, it will cost energy to separate them - the cost is called the <term>binding energy</term>.
+		</p>
+
+		<figure xml:id="fig-binding-energy">
+			<caption>
+				The combined energy of two atoms with a net attraction as a function of the inter-nuclear separation distance <m>r</m> as modeled by the Lenard-Jones potential given in Eq. <xref ref="eq-lenard-jones-pot"/>.  To separate the atoms bound at the equilibrium separation distance, one must supply an energy equal to the binding energy.
+			</caption>
+			<image source="./images/modern-physics/binding-energy.png" width="90%"/>
+		</figure>
+
+		<p>
+			The interaction energy between molecules that leads to bonding of molecules is usually modeled by Lenard-Jones potential given by the following function of the distance <m>r</m> between the nuclei.
+			<men xml:id="eq-lenard-jones-pot">
+				U(r)= 4 \epsilon \left [ {\left (\dfrac{\sigma}{r} \right )}^{12}-{\left (\dfrac{\sigma}{r} \right )}^{6}  \right], 
+			</men>
+			where <m>\epsilon</m> and <m>\sigma</m> are parameters used to fit particular bonds. <xref ref="fig-binding-energy"/> is a plot of this function.  The parameter <m>\epsilon</m>  is related to the depth of the potential well and <m>\sigma</m> refers to the distance for which <m>U(r)</m> crosses the zero energy line.   The quantity <m>\sigma</m> is referred to the <term>van der Waals radius</term>. At the equilibrium distance, which is equal to <m>2^{1/6}\sigma</m> in this model, the attractive and repulsive forces balance out as you can see from the slope of the potential being zero at that point.
+		</p>
+
+	</subsection>
+
+	<subsection><title>Types of Bonds</title>
+		<p>
+			We often distinguish four types of bonds among atoms depending on the way the electron cloud surrounds the bonding atoms. They are in the order of decreasing bond strength: ionic bond, covalent bond, hydrogen bond, and the van der Waals bond.
+		</p>
+		<subsubsection><title>Ionic Bond</title>
+			<p>
+				The most common example of ionic bond is the bond between sodium and chlorine atoms in the table salt.  The outer most electron of the sodium atom, the so-called valence electron, is in the 3s subshell. Its ionization energy is mere 5.14 eV. If this electron were to be stripped off from the neutral sodium atom, the remaining ion will have a complete <m>n=2</m> shell.  On the other hand, a neutral chlorine atom is one electron shy of a closed shell. Filling the shell will release 3.62 eV of energy.  Therefore, if we could extract 5.14-3.62 = 1.52 eV of energy for the combined system, we will have the ion pair Na<m>^+</m>Cl<m>^{-}</m> in place of NaCl. The negative energy is provided by the potential energy between the two atoms. The potential energy becomes -1.52 eV when the separation between the nuclei is 0.92 nm.  Therefore, if a sodium atom and a chlorine atom were to be closer than 0.92 nm, it will become energetically favorable to transfer electron from sodium to chlorine.
+			</p>
+			<p>
+				Thus, when a chlorine atom comes closer than 0.92 nm to a sodium atom in a gas phase, it strips the sodium atom of its outermost electron.  In the process we get two ions, Na<m>^+</m> and Cl<m>^{-}</m>.  The sodium chloride molecule is an ion pair Na<m>^+</m>Cl<m>^{-}</m>, a dipole. The equilibrium distance of the ionic bond between Na<m>^+</m> and Cl<m>^{-}</m> ions is 0.236 nm and the binding energy is 4.26 eV.
+			</p>
+			<p>
+				In the solid phase of the common table salt, there are six chlorine atoms surrounding each sodium atom and vice versa as shown in <xref ref="fig-sodium-chloride-crystal"/>. In that form, the distance between the sodium ion and chlorine ion is 0.28 nm.
+			</p>
+
+			<figure xml:id="fig-sodium-chloride-crystal">
+				<caption>
+					The ionic crystal of sodium chloride, Na<m>^{+}</m>Cl<m>^{-}</m>, the common salt.
+				</caption>
+				<image source="./images/modern-physics/sodium-chloride-crystal.png" width="90%"/>
+			</figure>
+
+			<p>
+				It is possible to obtain an expression for the electrostatic energy of a crystal.  We calculate the energy per ion by asking how much energy will it take to pluck a sodium ion from the crystal while leaving all other ions in its place. When we bring a sodium ion from infinity to its place in the crystal we will be interacting with the ions that are already there.  There will be  six ions of Cl<m>^{-}</m> around the Na<m>^{+}</m> will will give a contribution of attractive energy of the amount
+				<me>
+					U_1 = - 6 k \frac{e^2}{b}
+				</me>
+				where <m>b</m> is the distance between a sodium atom and a chlorine ion, and <m>k = 1/4\pi\epsilon_0</m> with <m>\epsilon_0</m> the permittivity of vacuum. The sodium ion brought from infinity will also interact with  12 Na<m>^{+}</m> that are at a distance of <m>\sqrt{2} a</m>.   They will give a repulsive electrostatic energy 
+				<me>
+					U_1 = +12 k \frac{e^2}{\sqrt{2}b}
+				</me>
+				Various terms in each successive layer will have the form
+				<me>
+					\textrm{Form of terms: } U =  - n k \frac{e^2}{b} \ \ \textrm{or}\ \ \  +n' k \frac{e^2}{b}
+				</me>
+				where <m>n</m> and <m>n'</m> are some real numbers.  Adding up all terms will give the net electrostatic energy which will be attractive.  We can write this as a potential energy function with <m>r</m> as the distance from the sodium ion we have brought from infinity.   The answer will have the same form as the terms above with a multiplicative factor <m>\alpha</m>, which  is called the <term>Madelung constant</term>. 
+				<me>
+					U_{\textrm{attractive}} = - \alpha k \frac{e^2}{r},
+				</me>
+				The Madelung constant has the detailed information about the types and numbers of ions that were around the sodium ion we brought from infinity.  In general, the Madelung constant will depend on the type of crystal lattice.  For the cubic crystal of sodium chloride the value of  <m>\alpha = 1.75</m>.
+			</p>
+			<p>
+				To this attractive electrostatic energy we must add repulsive energy due to the overlap of orbitals from nearest neighbor atoms.  Let us write the repulsive energy as a strength <m>A</m> and a distance dependence <m>1/r^m</m> with <m>m</m> large  so that the atoms are prevented from pushing into each other.  Usually <m>m \sim 10</m>.
+				<me>
+					U_{\textrm{repulsive}} = +  \frac{A}{r^{m}},
+				</me>
+				 Therefore, the total energy of interaction of one ion with its neighbors will be
+				<me>
+					U_{\textrm{total}} = - \alpha k \frac{e^2}{r} +  \frac{A}{r^{m}}.
+				</me>
+				This is the energy stored in the bonds of sodium and chlorine ions.  We plot the electrostatic attractive energy, the overlap core repulsive energy and the total potential energy in <xref ref="fig-materials-ionic-potential-1"/>.  At large distance, the attractive potential energy dominates and at small distances the repulsive core dominates.  In the intermediate distance, there is a minimum of the net potential energy.
+			</p> 
+
+			<figure xml:id="fig-materials-ionic-potential-1">
+				<caption>
+					The attractive and repulsive energy components of the potential energy in an ionic crystal.  The crystal spacing <m>a</m> will be obtained where the net potential energy has its minimum.
+				</caption>
+				<image source="./images/modern-physics/materials-ionic-potential-1.png" width="90%"/>
+			</figure>
+
+			<p>
+				Taking the derivative of <m>U_{\textrm{total}}</m> with respect to <m>r</m> and setting to zero we find that the equilibrium distance <m>r_0</m> will be
+				<me>
+					\left.\frac{dU_{\textrm{total}}}{dr}\right|_{r=r_0} = 0\ \ \Longrightarrow r_0 =  \left(\frac{A m}{\alpha k e^2} \right)^{1/(m-1)}.
+				</me>
+				Therefore, the potential energy at equilibrium will be
+				<men xml:id="eq-materials-ionic-cohesive">
+					U_{\textrm{total}} (r=r_0) = -\frac{\alpha k e^2}{r_0} \left( 1 - \frac{1}{m}\right).  
+				</men>
+				This energy is  the <term>ionic cohesive energy</term>, or <term>binding energy</term> per ion.  This is the energy that must be supplied per ion when ions of the crystal are separated to infinity, or, equivalently, this amount of energy per ion must be take away for ions to form a crystal.
+			</p>
+		</subsubsection>
+
+		<exercise xml:id="ex-Ionic-Cohesive-Energy-of-Sodium"><title>Ionic Cohesive Energy of Sodium</title>
+
+			<statement>
+				<p>
+					Find the ionic cohesive energy per ion of sodium  ion crystal.
+				</p>
+			</statement>
+			<hint><p></p></hint>
+			<answer><p></p></answer>
+			<solution>
+				<p>
+					In Eq. <xref ref="eq-materials-ionic-cohesive"/> we use <m>r_0 =0. 282</m> nm and <m>m=10</m> to find the cohesive energy per ion to be
+					<me>
+						U_{\textrm{total}} (r=a) = -\frac{1.75\times 9\times 10^9 \times (1.67\times 10^{-19})^2}{0.282\times 10^{-9}} \left( 1 - \frac{1}{10}\right) = 14 \times 10^{-19}\:\textrm{J} = 8.4\:\textrm{eV}
+					 </me>
+				</p>
+			</solution>
+		</exercise>
+
+ 		<subsubsection><title>Covalent Bond</title>
+ 			<p>
+ 				Unlike the ionic bond where an electron from one atom is almost fully transferred to the other atom, two atoms can share electrons to form a bond between them. That is, each nucleus has a strong attraction for some of the electrons of the other atom. These bonds usually involve even number of electrons: when two electrons are shared we say that the bond is of order one, or a single bond, when four electrons are shared, the bod is called double bond, and when six electrons are involved, we have a triple bond. The spins of the shared electrons occupying the quantum state, called a bonding molecular orbital, are paired up in the opposite directions. In a bonding molecular orbital, there is a higher probability of finding the electrons between the atoms than elsewhere.
+ 			</p>
+ 			<p>
+ 				In chemical literature the covalent bond between atoms is indicated by a line or two dots between the atoms. For example, the covalent bond between two hydrogen atoms is indicated by H---H or H:H.  The double bond is indicated by drawing two line between the atoms or four dots for for electrons, for example in C=C or C::C. Similarly, a triple bond is indicated by drawing three lines or six dots, as in C<m>\equiv</m>C or C<m>\vdots\vdots</m>C.
+ 			</p>
+ 			<p>
+ 				The energy diagram of a covalent bond is similar to the Lenard-Jones potential we have studied above. The exact solution of the quantum problem for the covalent bond is known for only the simplest of molecules with one electron bound to two protons, the molecule formed by ionizing a hydrogen molecule, H<m>_2^+</m>.  This molecule has only one electron and it has sufficient symmetry for the mathematics to work out and we have a complete solution. The wave function of the lowest energy state of the molecular ion H<m>_2^+</m> has no node between the nuclei while the first excited state has one node between the nuclei.
+ 			</p>
+ 		</subsubsection>
+ 		<subsubsection><title>Hydrogen Bond</title>
+ 			<p>
+ 				The ionic and covalent bonds are usually defined for the net attraction between two atoms. The hydrogen bond is a net attraction between three atoms. Often a hydrogen atom can form a bridge between two other atoms which are somewhat negatively charged while the hydrogen atom is somewhat positively charged. Such a hydrogen bridge is called a hydrogen bond.
+ 			</p>
+ 			<p>
+ 				For instance, in a molecule of water an oxygen atom is covalently bonded to two hydrogen atoms. The molecule is polar with the oxygen atom slightly negative and the hydrogen atoms slightly positive. Now, when a second hydrogen molecule comes nearby, one of the  hydrogen atoms of one molecule is attracted to the oxygen of the other molecule as illustrated in <xref ref="fig-hydrogen-bond"/>.  The new attraction is the hydrogen bond between the oxygen atom of one molecule and the hydrogen atom of the other molecule.  Hydrogen bond plays crucial role in the double-helix structure of the genetic material, DNA, and the folding of proteins.
+ 			</p>
+
+			<figure xml:id="fig-hydrogen-bond">
+				<caption>
+					Hydrogen bond between two water molecules.
+				</caption>
+				<image source="./images/modern-physics/hydrogen-bond.png" width="90%"/>
+			</figure>
+
+		</subsubsection>
+
+		<subsubsection><title>van der Waals Bond</title>
+			<p>
+				In addition to the ionic, covalent, and hydrogen bonds, atoms and molecules interact with each other through dipole-dipole interactions.  For instance, if two molecules have permanent dipole moments, then there will be net attractive energy of interaction between the two molecules due to their permanent dipoles. Even when one of the molecules has a permanent dipole moment and the other does not, there will be a dipole-dipole interaction due to the induction of dipole in the non-polar molecule by the dipole of the polar molecule. Surprisingly, there would also be a dipole-dipole interaction between two non-polar molecules. This happens due to fluctuations in the electron cloud which creates asymmetric distribution of charges which leads to formation of a dipole momentarily. All three types of dipole-dipole interactions are attractive and result in very weak bonds between molecules, which are called van der Waals bonds.  The presence of van der Waals bond explains why even the atomic gases such as noble gases liquefy at low enough temperatures.
+			</p>
+		</subsubsection>
+	</subsection>
+
+
+TODO:
+
+<p>
+\begin{exercise}
+ Prove that the equilibrium distance in Lenard-Jones potential is $r = 2^{1/6}\sigma$.
+\end{exercise}	
+</p>
+<p>
+\begin{exercise}
+ Consider a hypothetical one-dimensional ionic solid Na$^+$ and Cl$^-$ are placed alternately a distance $b$ apart.  Find the electrostatic energy that will be required to remove an ion from this crystal. Hint: $\ln(1+x) = x - x^2/2 + x^3/3 + x^4/4 - \cdots$.   
+\end{exercise}	
+</p>
+<p>
+\begin{exercise}
+ Consider on cell of the NaCl crystal and obtain the total mass per unit cell.  make sure your calculation makes use of the fact that charge per unit cell is zero.  Data:  distance between Na$^+$ and Cl$^-$ $=$ 0.282 nm, $m_{\textrm{Na}}$ = 23 u, $m_{\textrm{Cl}}$ = 35.5 u, where $1$ u = $1.66 \times 10^{-27}$ kg.
+\end{exercise}	
+</p>
+
+
+
+</section>

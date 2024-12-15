@@ -1,0 +1,344 @@
+<section xml:id="Capacitative-AC-Circuits"><title> Capacitative AC Circuits</title>
+	<introduction>
+		<p>
+			Every circuit has some capacitance due to the conductors of the circuit. A circuit with with significant capacitance is called a <term>capacitative circuit</term>.   
+		</p>
+		<sidebyside widths="50% 5% 45%">
+ 
+			<p>
+				In this section we will study current in a simple capacitative circuit with capacitance <m>C</m> and resistance  <m>R</m>  in series with an AC source with EMF, <m>V(t) = V_0\cos(\omega t)</m>. 
+			</p>
+ 
+
+			<p></p>
+
+			<image source="./images/ac-circuits/ac-RC-series-circuit-basic.png" width="50%"/>
+		</sidebyside>
+		<p>
+			By applying Faraday's law to the loop of the circuit, we show in a Calculus section below that current in the circuit is
+			<men>
+				I(t) = I_0 \cos(\omega t + \phi_I),
+			</men>
+			with
+			<men> 
+				I_0 = \frac{V_0}{\sqrt{R^2 + ( 1/\omega C )^2 }},\ \ \ \  \phi_I = \tan^{-1}\left(\dfrac{1}{\omega R C}\right),
+			</men>
+			where <m>1/\omega C</m> is the reactance of the capacitor.
+		</p>
+	</introduction>
+
+
+	<subsection><title> (Calculus) Series RC Circuit </title>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				Consider a circuit containing a resistor (<m>R</m>) and a capacitor (<m>C</m>) driven by a sinusoidal EMF as shown in the figure. Using voltage drops across each element, we get the following Faraday loop equation.
+				<me>
+					V_0\: \cos(\omega t) -\dfrac{1}{C}\int^t I(t') dt' - R I = 0. 
+				</me>
+			</p>
+			<p> </p>
+			<image source="./images/ac-circuits/ac-RC-series-circuit-basic.png" width="50%"/>
+		</sidebyside>
+
+		<p>
+			We will write this equation as
+			<men xml:id="eq-RC-series-eom-1">
+				\frac{dI}{dt} + \dfrac{1}{RC} I = -\dfrac{\omega V_0}{R}\, \sin(\omega t),
+			</men>
+			and seek the steady state solution in the form
+			<me>
+				I(t) = I_0\,\cos(\omega t + \phi_I).
+			</me>
+			Using this in Eq. <xref ref="eq-RC-series-eom-1"/>, expanding the trig functions, collecting coefficients of <m>\sin(\omega t )</m> and <m>\cos(\omega t)</m>, and solving for <m>I_0</m> and <m>\phi_I</m> give the desired result in a similar calculations as done in <xref ref="Inductive-AC-Circuits"/>.
+			<md>
+				<mrow>I_0 = \frac{V_0}{\sqrt{R^2 + ( 1/\omega C )^2 }} </mrow>
+				<mrow> \phi_I = \tan^{-1}\left(\dfrac{1}{\omega R C}\right) </mrow>
+			</md> 
+		</p>
+		<remark><title> Impedance of an RC Circuit </title>
+			<p>
+				The ratio of the amplitude of the voltage of the source to that of  the current through the source has units of resistance.  However, this quantity here consists of the contributions from  capacitance and  frequency.  This quantity <q>acts</q> like  overall resistance in the circuit.  Just as in the RL circuit, we call this ratio <term> amplitude of the impedance</term> of the circuit and denote it by <m>|Z|</m>.   
+				<men>
+					 |Z| = \frac{\text{Amplitude of Voltage}}{\text{Amplitude of Current}} = \sqrt{R^2 + \left(1/\omega C\right)^2}.
+				</men>
+				The negative of the phase of overall current <m>I(t)</m> relative to the phase of the source emf gives the phase of impedance. Denoting this phase by <m>\phi_Z</m>, we have
+				<men>
+					\phi_Z =  -\tan^{-1}\left(\dfrac{1}{\omega R C}\right).
+				</men>
+			</p>
+		</remark>
+
+		<remark><title>RC Circuit at High and Low Frequencies </title>
+		
+			<p>
+				<ol>
+					<li> 
+						<p>
+							<alert> High frequency ( <m>\omega\ \rightarrow\ \infty</m>  Limit) </alert>
+						</p>
+						<p>
+							As the frequency of the driving EMF is increased, the capacitative reactance becomes smaller.  Therefore an RC-circuit becomes more and more like a purely resistive circuit as capacitance becomes less important.  Basically, at high frequency the capacitor never gets a chance to charge to any significant extent.  The current in the circuit will be in-phase with the EMF, i.e.,  <m>\phi\ \rightarrow\ 0</m>, and the amplitude <m>I_0</m> is obtained by ignoring the presence of capacitor, i.e., <m>I_0\approx  V_0/R</m>.
+						</p>
+					</li>
+					<li> 
+						<p> <alert> Low frequency  ( <m>\omega\ \rightarrow\  0</m> Limit) </alert></p>
+						<p>
+							At low frequencies of the driving EMF, the capacitative reactance becomes large and  the resistor becomes less and less important in an RC-circuit.  The phase constant of the current reaches <m>+\pi/2</m>  and the amplitude <m>I_0</m> is simply given by ignoring the resistance <m>R</m> in the circuit, <m>I_0 \approx \omega C V_0</m>.
+						</p>
+					</li>
+				</ol>
+
+	 
+			</p>
+		</remark>
+
+
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Numerical-Capacitative-Circuit-Example"><title> Numerical Capacitative Circuit Example </title>
+		<statement>
+ 			<p>
+				A <m>200\text{-}\mu\text{F}</m> capacitor is connected across the terminals of a <m>15\text{-V}</m> AC source (i.e. <m>V_\text{rms} = \frac{V_0}{\sqrt{2}} = 15\text{ V}</m>) of frequency <m>66\text{ Hz}</m>. Assume zero resistance in the circuit. Find 
+				<ol label="(a)">
+					<li> the reactance of the capacitor, </li>
+					<li> the amplitude of impedance of the circuit,</li>
+					<li> the current amplitude, </li>
+					<li> the phase constant for current.</li>
+				</ol>
+			</p>
+
+		</statement>
+		<hint> <p> Use defining equations.  </p> </hint>
+		<answer> <p> (a) <m> 12.1\: \Omega </m>,
+					(b) <m>  12.1\: \Omega</m>,
+					(c) <m>  1.75\:\text{A}</m>,
+					(d) <m>  90^{\circ}</m>.
+		  </p> </answer>
+		<solution> 
+			<p>
+				Using formulas for the corresponding quantities we get
+				<ol label="(a)">
+				 	<li>
+				 		<p>
+				 			<me>
+				 				X_C = \dfrac{1}{2\pi f C} = \dfrac{1}{2\pi \times 66\:\text{Hz}\times 200\:\mu\text{F}} = 12.1\: \Omega.    
+				 			</me>
+				 		</p>
+				 	</li>
+				 	<li>
+				 		<p> Since <m>R=0</m> we will get
+				 			<me>
+				 				|Z| = \sqrt{R^2 + X_C^2} = 12.1\: \Omega.
+				 			</me>
+				 		</p>
+				 	</li>
+				 	<li>
+				 		<p>
+				 			<me>
+				 				I_0 = \dfrac{V_0}{|Z|} = \dfrac{\sqrt{2}\times 15\:\text{V}}{12.1\: \Omega} = 1.75\:\text{A}.
+				 			</me>
+				 		</p>
+				 	</li>
+				 	<li>
+				 		<p>Since <m>R=0</m> we will get
+				 			<me>
+				 				\phi_I = \tan^{-1}\left(\dfrac{X_C}{R} \right) =  90^{\circ}.
+				 			</me>
+				 		</p>
+				 	</li>
+				</ol>
+			</p>
+		</solution>
+	</exercise>
+ 
+
+	<exercise xml:id="ex-Current-in-a-Capacitative-Circuit-with-Varying-Frequency"><title> Current in a Capacitative Circuit with Varying Frequency </title>
+		<statement>
+			<p>
+				A <m>20\text{-}\mu\text{F}</m> capacitor is connected across a <m>10\text{-V}</m> AC source (i.e., <m>V_\text{rms} = 10\text{ V}</m>) of variable frequency <m>f</m>.  Find current amplitude in the circuit for the following values of <m>f</m>.  Assume negligible resistance.
+				<ol label="(a)">
+					<li> <m> 1.0 \text{ Hz}</m> </li>
+					<li> <m> 10.0 \text{ Hz}</m> </li>
+					<li> <m> 100.0 \text{ Hz}</m> </li>
+					<li> <m> 1.0 \text{ kHz}</m> </li>
+					<li> <m> 10.0 \text{ kHz}</m> </li>
+					<li> <m> 100.0 \text{ kHz}</m> </li>
+					<li> <m> 1.0 \text{ MHz}</m></li>
+					<li> <m> 1.0 \text{ GHz}</m></li>
+				</ol>
+			</p>
+
+		</statement>
+		<hint> <p> Use <m>I_0 = V_0/|Z|</m>.  </p> </hint>
+		<answer> <p> 				<ol label="(a)">
+					<li> <m> 1.77 \text{ mA}</m> </li>
+					<li> <m> 17.7 \text{ mA}</m> </li>
+					<li> <m> 178 \text{ mA}</m> </li>
+					<li> <m> 1.78 \text{ A}</m> </li>
+					<li> <m> 17.8 \text{ A}</m> </li>
+					<li> <m> 178 \text{ A}</m> </li>
+					<li> <m> 1.78 \text{ kA}</m></li>
+					<li> <m> 1.78 \text{ MA}</m></li>
+				</ol>  </p> </answer>
+		<solution> 
+			<p>
+				The amplitude of the current in the circuit will be given by
+				<me>
+					I_0 = \dfrac{\sqrt{2}\:V_{\text{rms}}}{|Z|} = \sqrt{2}\:V_{\text{rms}}\times 2\pi\:f\:C.
+				</me>
+				Using the values given in the problem we find the following for the frequency <m>f</m> Hz source.
+				<me>
+					I_0 =  \sqrt{2}\:V_{\text{rms}}\times 2\pi\:f\:C = 1.777\: f\ \ [\text{units: mA}].
+				</me>
+				<ol label="(a)">
+					<li> <m> 1.77 \text{ mA}</m> </li>
+					<li> <m> 17.7 \text{ mA}</m> </li>
+					<li> <m> 178 \text{ mA}</m> </li>
+					<li> <m> 1.78 \text{ A}</m> </li>
+					<li> <m> 17.8 \text{ A}</m> </li>
+					<li> <m> 178 \text{ A}</m> </li>
+					<li> <m> 1.78 \text{ kA}</m></li>
+					<li> <m> 1.78 \text{ MA}</m></li>
+				</ol>
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Capacitance-of-a-Starter-of-a-Fluorescent-Light-Bulb-from-Current-and-Voltage"><title> Capacitance of a Starter of a Fluorescent Light Bulb from Current and Voltage </title>
+		<statement>
+			<p>
+				A starter for a fluorescent light bulb is a capacitor.  When an AC voltage <m>170\; \text{V}\; \cos(2\pi\times 60 \times t)</m>  is applied across the capacitor, a peak current of 1.2 A flows in the capacitor.  What is the capacitance? 
+			</p>
+
+		</statement>
+		<hint> <p> Use <m>I_0 = V_0/|Z|</m>.  </p> </hint>
+		<answer> <p>  <m>18.7\:\mu\text{F}</m>. </p> </answer>
+		<solution> 
+			<p>
+				Using <m>I_0 = V_0/|Z| = V_0\omega C</m>, we obtain
+
+				<md>
+					<mrow> C \amp = \dfrac{I_0}{2\pi\:f\:V_0} </mrow>
+					<mrow> \amp =  \dfrac{1.2\:\text{A}}{2\pi\:60\:\text{Hz}\times 170\: \text{V}} = 18.7\:\mu\text{F}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-RC-Circuit-as-a-Low-Pass-Filter"><title> RC Circuit as a Low Pass Filter </title>
+		<statement>
+			<p>
+				A <term> low-pass filter</term> is a circuit that lets out low-frequency electrical signals while suppressing high-frequency signals. The frequency above which signal drops significantly is called the <term>cutoff frequency</term> of the low-pass filter.
+			</p>
+			<sidebyside widths="50% 50%">
+				<p>
+					 A series RC-circuit with an AC signal source, shown in <xref ref="fig-exer-low-pass-filter"/>, can serve as a low pass filter if the output voltage is taken across the capacitor, the input voltage being the voltage of the source.
+				</p>
+				<figure xml:id="fig-exer-low-pass-filter">
+					<caption></caption>
+					<image source="./images/ac-circuits/exer-low-pass-filter.png"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Consider a circuit containing a <m>200\text{-}\Omega</m>  resistor and a <m>50\text{-}\mu\text{F}</m> capacitor in series with a <m>18\text{-V}</m> AC source of variable angular frequency  <m>\omega</m>. (a) Determine the RMS-voltage across the capacitor (<m>V_C</m>) as a function of frequency, and (b) plot <m>V_C/V_0</m> versus <m>\omega</m> for <m>R = 1000\:\Omega</m> and <m>C = 10^{-6}\:\text{F}</m> and find the cutoff frequency.
+			</p>
+
+		</statement>
+		<hint> <p>  Find current first. </p> </hint>
+		<answer> <p> (a) <m>\dfrac{V_0}{\sqrt{2}}\: \dfrac{1 }{\sqrt{1 + \omega^2R^2C^2}}</m>. (b) See solution.  </p> </answer>
+		<solution><title>(a)</title> 
+			<p>(a)
+				We need the reactance <m>X_C</m> and the impedance <m>Z</m> of the circuit to find the phase and amplitude of the current.
+				<me>
+					X_C = \dfrac{1}{\omega C},\ \ Z = \sqrt{R^2 + X_C^2} = \sqrt{R^2 + \frac{1}{\omega^2C^2}}.
+				</me>
+				Therefore, the amplitude and phase of the current in the circuit are
+				<me>
+					I_0 = \dfrac{V_0}{Z} = \dfrac{V_0\:\omega C}{\sqrt{1 + \omega^2R^2C^2}},\ \ \tan \phi = \dfrac{1}{\omega RC}
+				</me>
+				The oscillating current is <m>I(t) = I_0\:\cos(\omega t + \phi)</m>. Since the voltage across the capacitor lags the current by <m>\pi/2</m> we get the following expression for the voltage <m>V_C</m> across the capacitor will be
+				<me>
+					V_C = I_0\:X_C\:\cos\left(\omega t + \phi - \frac{\pi}{2}\right).
+				</me>
+				This gives the following for the RMS-voltage across the capacitor.
+				<md>
+					<mrow> V_{\text{C,rms}} \amp = \dfrac{1}{\sqrt{2}}\:I_0\:X_C </mrow>
+					<mrow> \amp = \dfrac{1}{\sqrt{2}}\: \dfrac{V_0\:\omega C}{\sqrt{1 + \omega^2R^2C^2}}\: \dfrac{1}{\omega C}</mrow>
+					<mrow> \amp = \dfrac{V_0}{\sqrt{2}}\: \dfrac{1 }{\sqrt{1 + \omega^2R^2C^2}}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p> (b)
+				In <xref ref="fig-low-pass-filter-plot-VC-vs-omega"/> we plot <m>V/V_0</m> versus <m>\omega</m> for <m>R = 1000\:\Omega</m> and <m>C = 10^{-6}\:\text{F}</m>.  The time constant for this circuit will be <m>\tau = RC = 10^{-3}\:\text{s}</m>.  It is seen that the output of the circuit drops to half the amplitude if the frequency goes beyond the cutoff frequency <m>f_{\text{cutoff}} = \omega_{}/2\pi \approx 276\:\text{Hz}</m>.
+ 
+			</p>
+			<figure xml:id="fig-low-pass-filter-plot-VC-vs-omega">
+				<caption></caption>
+				<image source="./images/ac-circuits/low-pass-filter-plot-VC-vs-omega.png" width="80%"/>
+			</figure>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-RC-Circuit-as-a-High-Pass-Filter"><title> RC Circuit as a High Pass Filter </title>
+		<statement>
+			<p>
+				A <term> high-pass filter</term> is a circuit that lets out high-frequency electrical signals while suppressing low-frequency signals. The frequency above which signal becomes significant is called the <term>cutoff frequency</term> of the high-pass filter.
+			</p>
+			<sidebyside widths="50% 50%">
+				<p>
+					 A series RC-circuit with an AC signal source, shown in <xref ref="fig-exer-high-pass-filter"/>, can serve as a high-pass filter if the output voltage is taken across the resistor, the input voltage being the voltage of the source.
+				</p>
+				<figure xml:id="fig-exer-high-pass-filter">
+					<caption></caption>
+					<image source="./images/ac-circuits/exer-high-pass-filter.png"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Consider a circuit containing a <m>200\text{-}\Omega</m>  resistor and a <m>50\text{-}\mu\text{F}</m> capacitor in series with a <m>18\text{-V}</m> AC source of variable angular frequency  <m>\omega</m>. (a) Determine the RMS-voltage across the capacitor (<m>V_C</m>) as a function of frequency, and (b) plot <m>V_C/V_0</m> versus <m>\omega</m> for <m>R = 1000\:\Omega</m> and <m>C = 10^{-6}\:\text{F}</m> and find the cutoff frequency.
+			</p>
+		</statement>
+		<hint> <p> Find current first.  </p> </hint>
+		<answer> <p> (a) <m>\dfrac{V_0}{\sqrt{2}}\: \dfrac{\omega R C }{\sqrt{1 + \omega^2R^2C^2}}</m>, (b) See solution.  </p> </answer>
+		<solution><title>(a)</title> 
+			<p> (a)
+				We need the reactance <m>X_C</m> and the impedance <m>Z</m> of the circuit to find the phase and amplitude of the current.
+				<me>
+					X_C = \dfrac{1}{\omega C},\ \ Z = \sqrt{R^2 + X_C^2} = \sqrt{R^2 + \frac{1}{\omega^2C^2}}.
+				</me>
+				Therefore, the amplitude and phase of the current in the circuit are
+				<me>
+					I_0 = \dfrac{V_0}{Z} = \dfrac{V_0\:\omega C}{\sqrt{1 + \omega^2R^2C^2}},\ \ \tan \phi = \dfrac{1}{\omega RC}
+				</me>
+				The oscillating current is <m>I(t) = I_0\:\cos(\omega t + \phi)</m>. Since the voltage across the resistor is in phase with the current  we get the following expression for the voltage <m>V_R</m> across the resistor will be
+				<me>
+					V_R = I_0\:R\:\cos\left(\omega t + \phi \right).
+				</me>
+				This gives the following for the RMS-voltage across the capacitor.
+				<md>
+					<mrow> V_{\text{R,rms}} \amp = \dfrac{1}{\sqrt{2}}\:I_0\:R </mrow>
+					<mrow> \amp = \dfrac{1}{\sqrt{2}}\: \dfrac{V_0\:\omega R C}{\sqrt{1 + \omega^2R^2C^2}}</mrow>
+					<mrow> \amp = \dfrac{V_0}{\sqrt{2}}\: \dfrac{\omega R C }{\sqrt{1 + \omega^2R^2C^2}}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p> (b)
+				In <xref ref="fig-high-pass-filter-plot-VC-vs-omega"/> we plot <m> V_R(\text{rms})/V_0(\text{rms})</m> versus <m>\omega</m> in a log-log plot for <m>R = 1000\:\Omega</m> and <m>C = 10^{-6}\:\text{F}</m>.  It is seen that the output of the circuit drops to half the amplitude if the frequency goes below the cutoff frequency <m>f_{\text{cutoff}} = \omega_{\text{cutoff}}/2\pi \approx 92\:\text{Hz}</m>.
+			</p>
+			<figure xml:id="fig-high-pass-filter-plot-VC-vs-omega">
+				<caption></caption>
+				<image source="./images/ac-circuits/high-pass-filter-plot-VC-vs-omega.png" width="80%"/>
+			</figure>
+
+
+		</solution>
+	</exercise>
+
+
+
+
+</section>

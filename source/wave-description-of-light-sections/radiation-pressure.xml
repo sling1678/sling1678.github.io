@@ -1,0 +1,115 @@
+<section xml:id="section-radiation-pressure"><title> Radiation Pressure </title>
+	<introduction>
+        <p>
+			Imagine an electromagnetic wave incident on a material.  The electrons of the surface molecules are accelerated by the electric field in the wave. In addition they also experience a force from the magnetic field.  Consequently, there would be a net force on the surface normal to  the direction of the wave. This would result in a pressure on the material. We call the pressure by electromagnetic wave the <term>radiation pressure</term>, <m>P</m>.  Maxwell showed that the radiation pressure <m>P</m> is equal to the energy density <m>u</m> of the wave.
+			<men xml:id="eq-radiation-pressure-equal-to-energy-density">
+				P = u. 
+			</men>
+			Do not confuse <m>P</m> with power.  Let's see if the units are right.
+			<me>
+				[u] = \text{J/m}^3 = \text{N.m/m}^3 = \text{N/m}^2 = \text{unit of pressure!}
+			</me>
+			Eq. <xref ref="eq-radiation-pressure-equal-to-energy-density"/> gives the instantaneous pressure exerted on a perfectly absorbing surface.  But, since the energy density oscillates rapidly, we are usually interested in time-averaged quantity, which can be written in terms of intensity. 
+			<me>
+				P_{\text{ave}} = u_{\text{ave}} = \frac{I}{c} \ \ \ \text{(perfectly absorbing)}
+			</me>
+			If a surface is perfectly reflecting, then the force on the surface will be twice as great since the direction of the momentum of the incoming wave would be reversed upon reflection. Therefore the average pressure will be twice as much.
+			<me>
+				P_{\text{ave}}  = 2\frac{I}{c} \ \ \ \text{(perfectly reflecting)}
+			</me>
+
+		</p>
+	</introduction>
+
+	<exercise xml:id="exercise-Radiation-Pressure-of-a-Laser-Used-to-Balance-a-Particle"><title>Radiation Pressure of a Laser Used to Balance a Particle</title>
+
+		<statement>
+			<p>
+				A laser light of power <m>3\text{ W}</m> is spread evenly across the cross-section of the beam of diameter <m>2\text{ mm}</m>.  When the laser light is incident on a perfectly reflecting surface of a spherical particle of diameter <m>1.5\text{ mm}</m> in vacuum, the particle is observed to be suspended in space. Find the density of the particle.
+			</p>
+		</statement>
+		<hint><p>Pressure times area of cross-section will give the force that balaces weight.</p></hint>
+		<answer><p><m>0.2\text{ kg/m}^3</m></p></answer>
+		<solution>
+			<p>
+				Here, the force due to the radiation pressure is able to balance the force of gravity.  Let <m>\rho</m>  be the desired density of the spherical particle and <m>R</m> its radius.  Let <m>P</m> be the radiation pressure at the site of the particle.  The balancing of forces yields the following relation.
+				<me>
+					P A_{\text{cross-section}} = (\rho V_{\text{particle}}) g.
+				</me>
+				Here, the radiation pressure acts on the cross-section area of the particle, which is simply a circle of radius <m>R</m>, and the volume of the particle is just the volume of a sphere.
+				<me>
+					P \pi R^2 =\left( \rho \frac{4}{3}\pi R^3  \right) g.
+				</me>
+				Hence the required density is
+				<me>
+					\rho = \frac{3 P}{4 g R}.
+				</me>
+				Now, we put in the numerical values given here. The values of <m>R</m>, <m>g</m>, and <m>P</m> are
+				<md>
+					<mrow> \amp  R = 0.75\ \text{mm} = 7.5\times 10^{-4}\ \text{m}</mrow>
+					<mrow> \amp  g = 9.81\ \text{m/s}^2</mrow>
+					<mrow> \amp  P = 2\frac{I}{c} = 2\times \frac{3\ \text{W}}{\pi(1\times 10^{-3}\ \text{m})^{2}} \times \frac{1}{3\times 10^8\ \text{m/s}} = 2\times 10^{-3}\ \text{Pa}.</mrow>
+				</md>
+				Hence, <m>\rho = 0.2\text{ kg/m}^3</m>. It is interesting to compare the density found to the density of air at standard temperature and pressure, which is approximately <m>1.2\text{ kg/m}^3</m>.  Clearly, one will need a very powerful laser to suspend an ordinary material.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+	<exercise xml:id="exercise-Radiation-Pressure-on-Earth-by-Absorption-of-Sunlight"><title>Radiation Pressure on Earth by Sunlight</title>
+
+		<statement>
+			<p>
+				Radiation from the Sun has the intensity of <m>1.38\text{ kW/m}^2</m> at the surface of the Earth.  Also you can use radius of Sun, <m>R_{\odot} = 6.96 \times 10^8\text{ m}</m>, distance of Earth from Sun, <m>R_{\odot E} = 1.496\times 10^{11}\text{ m}</m>, and radius of planet Earth, <m>R_{E} = 6.378\times 10^{6}\text{ m}</m>
+			</p>
+			<p>
+				(a)What is the intensity light at the surface of the Sun? 
+			</p>
+			<p>
+				(b) Find force applied on Earth by the Sunlight if we assume that all of the Sunlight striking the Earth is absorbed.
+
+			</p>
+		</statement>
+		<hint><p>(a) Use <m>T\sim 1/r^2</m>. (b) Use <m>F=PA</m> where <m>P</m> is radiation pressure and <m>A</m> is the area of cross-section presented by the Earth to the radiation from the Sun. </p></hint>
+		<answer><p>
+			(a) <m>6.4\times 10^7\text{ W/m}^2</m>. 
+			(b) <m>5.9 \times 10^{8}\text{ N}</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p> (a)
+				The intensity from a spherically isotropic source drops out as inverse of the distance from the origin. Therefore, we will get
+				<md>
+					<mrow> I_{\text{at }\odot} \amp =  \left( \frac{R_{\odot E}}{R_{\odot}}\right)^2\ I_{\text{at E}}</mrow>
+					<mrow> \amp = \left( \frac{1.496\times 10^{11}}{6.96 \times 10^8}\right)^2\ 1.38\times 10^{3}\text{ W/m}^2  = 6.4\times 10^7\text{ W/m}^2.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p> (b) 
+				We will first work out the radiation pressure and then multiply it by the area of cross-section of Earth, not the surface area since we want the area of Earth that is intercepting the Sun rays. The radiation pressure when light is absorbed will be
+				<me>
+					P = \frac{I}{c} = \frac{1.38\times 10^{3}\text{ W/m}^2}{3\times 10^8\text{ m}/s} = 4.6\times 10^{-6}\text{ Pa}.
+				</me>
+				Now, the area of cross-section will be just the area of the circle with the radius equal to the radius of Earth.
+				<me>
+					A = \pi R_E^2 = \pi \left( 6.378\times 10^{6}\text{ m} \right)^2  = 1.28\times 10^{14}\text{ m}^2.
+				</me>
+				Therefore, force on Earth due to Sunlight will have the magnitude 
+				<me>
+					F = PA = 4.6\times 10^{-6}\text{ Pa} \times 1.28\times 10^{14}\text{ m}^2 = 5.9 \times 10^{8}\text{ N}.
+				</me>
+				The direction of the this force is radially away from the Sun.
+
+			</p>
+		</solution>
+
+	</exercise>
+
+
+
+
+
+
+
+</section>

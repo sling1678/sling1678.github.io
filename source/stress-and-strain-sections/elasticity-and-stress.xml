@@ -1,0 +1,452 @@
+<section xml:id="Elasticity-and-Stress"><title> Elasticity and Stress</title>
+	<subsection> <title> Elasticity </title>
+		<p>
+			Real materials react to external forces, as we have seen in the development of the Normal force. If the deformation is small compared to the physical dimensions of the object, many materials often recover the original shape when the external force is removed. This property is called <term>elasticity</term>.
+		</p>
+		<p>
+			You can see the elastic behavior clearly when you hang weights by a wire as shown in  <xref ref="fig-elasticity-elongating-a-string" />.  The reaction force here is the tension in the wire caused by the weight. Initially, the stretch and tension are linearly related, <m>F = k \Delta L</m>, much like a spring. This part is the linear elastic region. If the tension increases beyond the linear limit, we get nonlinear behavior behavir, <m>F \ne k \Delta L</m>, but if you remove the tension, the wire still returns to the original length. 
+		</p>
+
+
+		<figure xml:id="fig-elasticity-elongating-a-string">
+			<caption>
+				Elasticity of a wire. The wire stretches as weights are added. Initially, tension in the wire and the stretch are linearly related, e.g., as for a spring force, <m> F \propto \Delta L</m>. After some amount of stretch, the relation is not linear anymore, but the sire is still able to return to the original length, when we remove the weight. But if we continue to add more weights, we enter the region shown dashed, where the wire does not go back to the original length. The dashed region is the plastic region. If we continue to add more weights, eventiually, we reach a maximum tension, shown as <m>F_\text{max}</m>, at which point, the wire breaks. 
+			</caption>
+			<image source="./images/stress-and-strain/elasticity-elongating-a-wire.png" width="80%"/>
+		</figure>	
+		<p>
+			Beyond the elastic limit, there is a region, where wire still stretches, but when you remove the tension-causing weights, the wire is pemanently elongated. This is called plastic region.  
+		</p>
+
+		<p>
+			If you continue to add more weight to the wire, eventually the wire will break at some point, called the <term> breaking point</term>.  The breaking point gives us information about the ultimate strength of the material.   
+		</p>
+		<p>
+			We will be concerned with the elastic range here since we want a predictable linear restoring force to help analyze the equilibrium behavior of structures so as to prevent permanent deformation or fracture.
+		</p>
+ 
+		<p> 
+			In the linear elastic regime, the elongation <m>\Delta L</m> is proportional to  the force <m>F</m> applied to the wire. Not only that, but longer wires stretch more, i.e., <m>\Delta L</m> is proportional to  the length <m>L</m> of the wire.
+			<me>
+				\Delta L \propto F \times L. 
+			</me>
+			We can rewrite this as
+			<men xml:id="eq-hooke-law-int-1">
+				F = \alpha \dfrac{\Delta L}{L},
+			</men>
+			where <m>\alpha</m> is a constant. By analogy with spring, we can identify <m> \alpha/L</m> as <q> spring constant </q> of the wire. 
+		</p>
+		<p>
+			This observation was first made by Robert Hooke (1635-1703), a contemporary of Isaac Newton, and is often called Hooke's law, which states that <q> Ut tensio sic uis,</q> in Latin, meaning <q> As the extension, so the force</q>.    
+		</p>
+		<p>
+			The reason for a material <q> to act like</q> springs can be traced to the inter-atomic bonds in materials as illustrated in <xref ref="fig-springy-materials" />, which have a spring-like behavior for small displacement from equilibrium.
+		</p>
+		<figure xml:id="fig-springy-materials">
+			<caption>
+				The elastic properties of materials emerge from spring-like bonding of molecules inside the material as illustrated here. When a wire stretches vertically, the <q>bonds</q> stretch in that direction, creating a restoring force that pulls on both ends. These molecular forces are responsible for stress in the material. 
+			</caption>
+			<image source="./images/stress-and-strain/springy-materials-a.png" width="60%"/>
+		</figure>
+	</subsection>
+
+	<subsection> <title> Strain </title>
+
+		<p>
+			From Eq. <xref ref="eq-hooke-law-int-1"/>, we note that force  is proportional to the fractional change of the wire.  We call the fractional change in length the <alert> strain</alert> or relative deformation of length. We will denote strain by the Greek letter epsilon, <m>\epsilon</m>.
+			<men>
+				\text{Strain} = \dfrac{\text{Deformation}}{\text{Original Length}}.
+			</men>
+			that is,
+			<men xml:id="eq-strain-definition">
+				\epsilon = \dfrac{\Delta L}{L}.
+			</men>
+			Clearly, strain is a dimensionless quantity since it is a ratio of two lengths. 
+		</p> 
+		<p>
+			There are other types of strain when we have deformation of the area or volume. The relative change in volume is called bulk strain, which we can denote by <m> \epsilon_V</m>.
+			<men xml:id="eq-bulk-strain-definition">
+				\epsilon_V = \dfrac{\Delta V}{V},
+			</men>
+			where <m>V</m> is volume and <m>\Delta V</m> the change in volume. 
+			We will discuss other types of strain in another section.			
+		</p>
+	</subsection>
+
+	<subsection> <title> Stress </title>
+		<p>
+			When you hang different masses to a wire the strain in the wire and the force exerted on the wire are linearly related, as seen above by plotting <m>F</m> vs <m>\epsilon=\Delta L/L</m>. 
+		</p>
+		<p>
+			When you perform the same same experiment on wires of different thicknesses, you get different plots. However, when you plot <m>F/A</m> vs <m>\epsilon=\Delta L/L</m>, wires of all thicknesses of the same material, fall in one line as shown schematically in <xref ref="fig-strain-stress-plot-vs-strain-force"/>. That means <m>F/A</m> captures more universal physics.
+		</p>
+
+		<figure xml:id="fig-strain-stress-plot-vs-strain-force">
+			<caption>
+				The two plots demostrate that the effectiveness of a force to cause a strain in a material is best captured by the stress and not the force alone. On the left are plots of force versus strain of wires of two different areas of cross-section. When you plot the stress in each wire versus strain, points for same strain from the two wires <m> (\epsilon, F_1)</m> and <m> (\epsilon, F_2)</m>  map to the same point <m> (\epsilon, F_i/A_i = F_1/A_1=F_2/A_2)</m>.
+			</caption>
+			<image source="./images/stress-and-strain/strain-stress-plot-vs-strain-force.png" width="90%"/>
+		</figure>
+	
+		<p>
+			Force per unit area is called <term>stress</term>.  We will denote stress by the Greek symbol sigma, <m> \sigma</m>.
+			<men xml:id="eq-stress-definition">
+				\text{Stress} = \dfrac{\text{Magnitude of Force}}{\text{Area of cross-section}},
+			</men>
+			that is,
+			<men>
+				 \sigma = \dfrac{F}{A}.
+			</men>
+			Note that stress will have direction since force has direction.  Even the area of cross-section has an orientation.  For instance, the six sides of a cube have different orientations in space.  Therefore, in general, the direction of stress is dependent on the direction of the force and the orientation of the area upon which the force acts.
+		</p>
+		<p>
+			The dimension of stress will come from the ratio of the dimensions of force and area.  
+			<men> 
+				[\sigma] = \dfrac{[F]}{[A]} = \dfrac{[M][L]/[T]^2}{[L]^2} = \dfrac{[M]}{[L][T]^2}.
+			</men>
+			This gives the unit of stress to be <m>\text{N/m}^2</m>, which is also called Pascal denoted by <m>\text{Pa}</m>. 
+
+		</p>
+	</subsection>
+
+	<exercise><title>  Stress of the Same Weight on Different Areas</title>
+		<statement>
+			<sidebyside widths="65% 10% 25%">
+				<p>
+					<p>
+						A heavy machine, of mass <m>2,000\text{ kg}</m>, is placed on a table of mass <m> 100\text{ kg}</m>. The surface area of contact between the machine and table is <m>1000\text{ cm}^2</m>. The table has four legs, each with the area of contact with the floor equal to <m>20\text{ cm}^2</m>.
+					</p>
+					<p>
+						(a) What is the stress in the table in the region where the machine is placed?
+					</p>
+					<p>
+						(b) What is the stress in the legs of the table?
+					</p>
+				</p>
+				<p></p>
+				<image source="./images/stress-and-strain/machine-on-table.png" width="30%"/>
+			</sidebyside>
+			
+
+
+		</statement>
+		<hint> <p>  (a) Stress depends on the area also. </p> </hint>
+		<answer> <p> (a) <m> 1.96\times 10^{5}\text{ N/m}^2</m>, (b) <m> 2.45\times 10^{6}\text{ N/m}^2</m>. </p> </answer>
+		<solution> <title>(a)</title>
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					(a)
+					The machine will have to be supported by the compression of the molecular bonds in the table below where the machine is placed. The balancing of the weight of the machine gives us the force,
+
+					<me>
+						F =  2000\times 9.81 = 19620\text{ N}.
+					</me>
+				</p>
+				<p>
+				</p>
+				<image source="./images/stress-and-strain/machine-on-table-a.png" width="30%"/>
+			</sidebyside>
+
+			<p>
+				This force acts over the area
+				<me>
+					A = 1000\times 10^{-4} \text{ m}^2.
+				</me>
+				Therefore, stress will be
+				<me>
+					\dfrac{F}{A} = \dfrac{19620}{1000\times 10^{-4} } = 1.96\times 10^{5}\text{ N/m}^2.
+				</me>
+			</p>
+			
+		</solution>
+		<solution> <title>(b)</title>
+			
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					(b)
+				The weight of the machine is now balanced by four normal forces, one on each leg, from the floor. The molecular forces in the legs of the table must balance these normal forces. Let <m>F</m> be force in each leg.
+				<me>
+					F = \dfrac{2000\times 9.81}{4} = 4,910\text{ N}.
+				</me>
+				</p>
+				<p>
+				</p>
+				<image source="./images/stress-and-strain/machine-on-table-b.png" width="30%"/>
+			</sidebyside>
+
+			<p>
+				This acts over the area of contact 
+				<me>
+					A = 20\text{ cm}^2 = 2.0\times 10^{-3}\text{ m}^2.
+				</me>
+				Therefore, stress in the legs is
+				<me>
+					\dfrac{F}{A} = \dfrac{4,910\text{ N}}{2.0\times 10^{-3}\text{ m}^2} = 2.45\times 10^{6}\text{ N/m}^2.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+	<subsection> <title> General Hooke's Law </title>
+		<p>
+
+			The right side part of <xref ref="fig-strain-stress-plot-vs-strain-force"/> says that stress in the material is directly proportional to its strain. This observation is called 
+			<term>Hooke's law</term>, named after Robert Hooke (1635 - 1703).   
+			<men xml:id="eq-hooke-law-general">
+				\sigma =  Y \, \epsilon.
+			</men>
+			The proportionality constant <m>Y</m> is called  <term> Young's modulus</term>. Young's modulus is a characteristic of the material, independent of the geometrical aspects of a sample. 
+		</p>
+		<p>
+			The unit of Young's modulus is the same as that of stress, i.e., <m>\text{N/m}^2</m> or Pascal, since strain in unitless.  
+		</p>
+		<p>
+			A more flexible material has smaller <m>Y</m>. From wikipedia, <m>Y_\text{rubber} = 0.01\text{-}0.1\text{ GPa}</m> and that of diamond is <m>Y_\text{diamond} = 1,050\text{-}1,210\text{ GPa}</m>. Here <m>G</m> stands for Giga, i.e., a factor of <m>10^9</m>.
+		</p>
+
+	</subsection>
+ 
+	<exercise xml:id="ex-Stretching-a-Steel-Wire-Strain-and-Stress"><title> Stretching a Steel Wire - Strain and Stress </title>
+		<statement>
+			<p>
+				When we hang a 30-kg block from a 1-mm diameter steel wire, the wire stretches.  The Young's modulus of steel is <m>Y_\text{steel}=215.3\text{ GPa}</m>.  Find (a) the stress in the wire and (b) the percent elongation.
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Use definition, (b) Make sure to convert units. </p> </hint>
+		<answer> <p>  (a) <m> 3.75\times 10^{8}\text{ Pa}</m>, (b) <m> 0.174\%</m>. </p> </answer>
+		<solution> 
+			<p> (a)
+				The area of cross-section over which weight acts is
+				<me>
+					A = \dfrac{\pi D^2}{4} = 7.85 \times 10^{-7}\text{ m}^2.
+				</me>
+				The force is
+				<me>
+					F = mg = 30\times 9.81 = 294.3\text{ N}.
+				</me>
+
+				Therefore, the stress in the wire is
+				<me>
+					\text{Stress } = \dfrac{294.3}{ 7.85 \times 10^{-7}} = 3.75\times 10^{8}\text{ Pa}.
+				</me>
+			</p>
+			<p>
+				The Young's Modulus
+				<me>
+					Y = 215.3\text{ GPa} = 215.3\times 10^9 = 2.153\times 10^{11}\text{ Pa}.
+				</me>
+				Dividing the stress in the wire by <m>Y</m> will give us the strain.
+				<me>
+					\dfrac{\Delta L}{L} = \dfrac{\text{Stress}}{Y} = \dfrac{3.75\times 10^{8}}{2.153\times 10^{11}} = 0.00174.
+				</me>
+				Multiplying this by 100, we get the percent elongation, which is <m>0.174\%</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Weight-Needed-to-Break-a-Steel-Wire"><title> Weight Needed to Break a Steel Wire </title>
+		<statement>
+			<p>
+				How much mass must be hung from a 2-mm diameter steel wire before it breaks?
+			</p>
+			<p>
+				Data: Breaking Stress of steel = <m>400\text{ MPa}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Set Stress to breaking stress and solve for <m>M</m>. </p> </hint>
+		<answer> <p> <m>128\text{ kg} </m>.  </p> </answer>
+		<solution> 
+			<p>
+				Let <m>M </m> be the mass that will break the steel wire. Let us set the stress caused by the weight of this mass just before breaking to the breaking stress.
+				<me>
+					\dfrac{Mg}{A} = Y_\text{break}.
+				</me>
+				Therefore,
+				<me>
+					M = Y_\text{break} A/g = 400\times 10^{6} \times \pi \times 10^{-6}/9.81 = 128\text{ kg}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Compression-of-Bone-By-Weight-of-a-Person"><title> Compression of Bone By Weight of a Person </title>
+		<statement>
+			<p>
+				Suppose a <m>100\text{-kg}</m> person supports all her weight on one leg. Assuming the weight is supported by the long bone of the thigh (called femur) and modeling the bone as a solid cylinder of diameter <m>5\text{ cm}</m> and length <m>30\text{ cm}</m>.  Data: Young's modulus of cortical bone = <m>250 \text{ MPa}</m>.
+			</p>
+			<p>
+				By how much is the length of the bone compressed?
+			</p>
+
+
+		</statement>
+		<hint> <p>  Convert everything in SI units and then use the definitions. </p> </hint>
+		<answer> <p>  <m> 0.6\text{ mm}</m> </p> </answer>
+		<solution> 
+			<p>
+				We first compile the numbers we need in the SI units.
+				<md>
+					<mrow> \amp F = m g = 100\times 9.81 = 981\text{ N}, </mrow>
+					<mrow> \amp A = \dfrac{\pi d^2}{4} = 1.96\times 10^{-3}\text{ m}^2,</mrow>
+					<mrow> \amp Y = 250 \text{ MPa} = 2.50\times 10^{8}\text{ Pa},</mrow>
+					<mrow> \amp L = 0.30\text{ m}.</mrow>
+				</md>
+				Therefore
+				<md>
+					<mrow> \Delta L\amp  = \dfrac{L}{Y} \dfrac{F}{A}  </mrow>
+					<mrow>  \amp  = \dfrac{0.30}{2.50\times 10^{8}}\ \dfrac{981}{1.96\times 10^{-3}} = 6.0\times 10^{-4}\text{ m}. </mrow>
+				</md>
+				The shrinkage is <m> 0.6\text{ mm}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+  	<exercise xml:id="ex-Stress-in-an-Elevator-Cable-When-Elevator-is-Accelerating"><title> Stress in an Elevator Cable When Elevator is Accelerating </title>
+		<statement>
+			<p>
+				Stress in a cable will vary if tension varies. When an elevator has acceleration pointed in upward direction, the cable will have higher tension than just the weight as required by  <m>\vec F = m\vec a</m>.  
+			</p>
+			<p>
+				An elevator of mass <m>4,000\text{ kg}</m> is supported by a <m>1\text{-in}</m> thick steel cable of Young's modulus <m> 150\text{ GPa}</m>. Units: <m>1\text{-in} = 2.54\text{ cm}</m>.
+			</p>
+			<p>
+				(a) What is the stress and strain of the cable when the elevator has zero acceleration?
+			</p>
+			<p>
+				(b) What is the stress and strain of the cable when the elevator has acceleration pointed up with magnitude <m> 5\text{ m/s}^2</m>?
+			</p>
+			<p>
+				(c) What is the stress and strain of the cable when the elevator has acceleration pointed down with magnitude <m> 5\text{ m/s}^2</m>?
+			</p>			
+
+		</statement>
+		<hint> <p>(a) Work in same system of units. (b) Find tension by <m>\vec F = m \vec a</m>. (c) Find tension by <m>\vec F = m\vec a</m>. </p> </hint>
+		<answer> <p> (a) <m> 7.74 \times 10^{7} \text{ Pa},\ 5.16\times 10^{-4}</m>, 
+					(b) <m>1.17\times 10^{8} \text{ Pa},\ 7.8\times 10^{-4}</m>, 
+					(c) <m>3.7\times 10^{7} \text{ Pa},\ 2.45\times 10^{-4}</m>.  </p> </answer>
+		<solution> <title>(a) </title>
+			<p>
+				(a) 
+				Let us firs work out quantities we will need using SI units.
+				<md>
+					<mrow> W \amp = m g = 4,000\times 9.81 = 39240.0\text{ N}, </mrow>
+					<mrow> A \amp = \pi D^2/4 = \pi\times \left( 2.54 \times 10^{-2} \right)^2/4,</mrow>
+					<mrow> \amp  = 5.067\times 10^{-4}\text{ m}^2,</mrow>
+					<mrow> Y \amp = 150\text{ GPa} = 1.50\times 10^{11}\text{ Pa}. </mrow>
+				</md>
+				Since acceleration is zero, the tension in the cable is
+				<me>
+					F = W = 39240\text{ N}.
+				</me>
+				Therefore, stress in the cable is
+				<me>
+					\text{Stress } = \dfrac{F}{A} = \dfrac{39240}{  5.067\times 10^{-4} }= 7.74 \times 10^{7} \text{ Pa},
+				</me>
+				and strain in the cable is
+				<me>
+					\dfrac{\Delta L}{L} = \dfrac{\text{Stress}}{Y} = \dfrac{7.74 \times 10^{7} }{1.50\times 10^{11} } = 5.16\times 10^{-4}.
+				</me>
+			</p>
+		</solution>
+ 		<solution> <title>(b) </title>
+			<sidebyside widths="65% 15% 20%">
+				<p> (b) 
+					In this part, the elevator has upward acceleration. The diagram on the right shows the forces. The equation of motion along vertical direction gives
+					<me>
+						F-mg = ma.
+					</me>
+					Therefore, the tension in the cable will be
+					<me>
+						F = 39240  + 4000\times 5 = 59240\text{ N}.
+					</me>
+				</p>
+				<p> </p>
+				<image source="./images/stress-and-strain/elevator-upward-acceleration.png" width="80%"/>
+			</sidebyside>
+			<p>
+				Therefore, stress in the cable is
+				<me>
+					\text{Stress } = \dfrac{F}{A} = \dfrac{ 59240}{  5.067\times 10^{-4} }=  1.17\times 10^{8} \text{ Pa},
+				</me>
+				and strain in the cable is
+				<me>
+					\dfrac{\Delta L}{L} = \dfrac{\text{Stress}}{Y} = \dfrac{1.17 \times 10^{8} }{1.50\times 10^{11} } =7.8\times 10^{-4}.
+				</me>				
+			</p>
+		</solution>
+		<solution> <title>(c) </title>
+			<sidebyside widths="65% 15% 20%">
+				<p> (c) 
+					In this part, the elevator has downward acceleration. The diagram on the right shows the forces. The equation of motion along vertical direction gives
+					<me>
+						F-mg = - ma.
+					</me>
+					Therefore, the tension in the cable will be
+					<me>
+						F = 39240  - 4000\times 5 = 19240\text{ N}.
+					</me>
+				</p>
+				<p> </p>
+				<image source="./images/stress-and-strain/elevator-downward-acceleration.png" width="80%"/>
+			</sidebyside>
+			<p>
+				Therefore, stress in the cable is
+				<me>
+					\text{Stress } = \dfrac{F}{A} = \dfrac{ 19240}{  5.067\times 10^{-4} }=  3.7\times 10^{7} \text{ Pa},
+				</me>
+				and strain in the cable is
+				<me>
+					\dfrac{\Delta L}{L} = \dfrac{\text{Stress}}{Y} = \dfrac{3.7 \times 10^7}{1.50\times 10^{11} } = 2.45\times 10^{-4}.
+				</me>				
+			</p>
+
+
+
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Stress-on-Bolt-of-Cantilever"><title> Stress on Bolt of Cantilever </title>
+		<statement>
+			<p>
+				A beam that extends beyond its support is called a cantilever.  Consider a cantilever of length <m>L</m> and mass <m>M</m> resting and bolted to two supports, one at the end and the other is at a distance <m>D</m> from it as shown in <xref ref="fig-ex-cantilever-stress-on-bolts"/>. 
+			</p>
+			<p>
+				(a) Find the conditions on the forces such that the cantilever is in static equilibrium. 
+			</p>
+			<p>
+				(b) For <m>L = 30\text{ m}</m>, <m> M = 1000\text{ kg}</m>, and <m>D = 12\text{ m}</m>, find the magnitude and directions of the forces on the beam from the supports.
+			</p>
+			<p>
+				(c) The bolt provide an area of contact over which contact forces act. Suppose, the area of contact of the bolt at the support at the end be <m>60\text{ mm}^2</m> . Find the stress in the bolt for the values given in (b).
+			</p>
+			<figure xml:id="fig-ex-cantilever-stress-on-bolts">
+				<caption>
+					Figure for <xref ref="ex-Stress-on-Bolt-of-Cantilever"/>.
+				</caption>
+				<image source="./images/stress-and-strain/ex-cantilever.png" width="60%"/>
+			</figure>
+
+		</statement>
+		<hint> <p> Use the results of <xref ref="ex-Cantilever"/>.  </p> </hint>
+		<answer> <p> (a) Horizontal and vertical forces from the left post : <m> F_{11} = 0</m>, <m> F_{12} = Mg\left(1-\frac{L}{2D} \right)</m>; Vertical force from the second post <m> F_2 = \left(\frac{L}{2D} \right)Mg</m>. (b) <m> 0,\ -2500\text{ N},\ 12000\text{ N}</m>. (c) <m> 4.17\times 10^{7}\text{ N/m}^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				(a) and (b) are done in <xref ref="ex-Cantilever"/>. I will just restate the answers here
+				(a) Horizontal and vertical forces from the left post : <m> F_{11} = 0</m>, <m> F_{12} = Mg\left(1-\frac{L}{2D} \right)</m>; Vertical force from the second post <m> F_2 = \left(\frac{L}{2D} \right)Mg</m>. (b) <m> 0,\ -2500\text{ N},\ 12000\text{ N}</m>.
+			</p>
+			<p>
+				(c)
+				The numerical value of stress near the threads of the bolt is obtained by dividing the force by the area.
+				<me>
+					 \dfrac{\left|F_1 \right|}{A_1} = \dfrac{2500\text{ N}}{60\times 10^{-6}\text{m}^2} = 4.17\times 10^{7}\text{ N/m}^2.  
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+</section>
+ 

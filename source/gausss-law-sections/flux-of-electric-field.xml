@@ -1,0 +1,369 @@
+<section xml:id="Flux-of-Electric-Field"><title> Flux of Electric Field </title>
+	<introduction>
+		<p>
+			Flux of electric field is a measure of the strength of electric field over an area. In this section, we will define electric flux and learn to calculate electric flux from given electric field. In the next section, we will show its use when we study Gauss's law. To get a feel for the meaning of flux, we will first take a look at flux of particles.
+		</p>
+	</introduction>
+
+	<subsection><title> Flux of Particles</title>
+		<p>
+			Imagine a stream of particles flowing through space as shown in <xref ref="fig-particle-flux"/>. <alert>We would like to know how many particles will strike a screen per unit time</alert>. This is called the particle flux through the area of the screen. Notice that flux changes with the orientation of the screen with respect to the flow - you get the most flux when area is facing perpendicularly to the flow. 
+		</p>
+		<figure xml:id="fig-particle-flux">
+			<caption>
+				Number of particles passing through a unit area surface per unit time is called particle flux. Notice that flux depends on the orientation of the surface to the direction of flow. 
+			</caption>
+			<image source="./images/gausss-law/particle-flux.png" width="70%"/>
+		</figure>
+		<p>
+			To work out a formula for the flux, let <m> v </m> be the speed of particles, <m>A</m> the area of the screen, and <m>\rho</m> the number density, i.e., number of particles per unit volume. Let's first work out flux through an area that is perpendicular to the flow as A in <xref ref="fig-particle-flux"/>. In time <m>\Delta t</m>, all particles within a distance of <m>v\Delta t</m> would pass through the area. Number of particles in this volume
+			<m>
+				N = \rho v A \Delta t.
+			</m>
+			Therefore, in unit time, the number will be the flux.
+			<me>
+				\Phi_\text{A} = \rho v A.
+			</me>
+		</p>
+		<p>
+			But, when the orientation of the screen is as in C in <xref ref="fig-particle-flux"/>, assuming screen to be infinitesimally thin, no particle will strike the screen.
+			<me>
+				\Phi_\text{C} = 0
+			</me>
+		</p>
+		<p>
+			If the screen is oriented at some other angle, as in B, screen is effectively providing smaller area for particles to hit. From geometry, you can deduce that, in case of B in <xref ref="fig-particle-flux"/>, the effective area is only half as much.
+			<me>
+				A_\text{eff,B} = A \sin\,30^{\circ} = \frac{1}{2}A.
+			</me>
+			Therefore, flux through B in <xref ref="fig-particle-flux"/> will be
+			<me>
+				\Phi_\text{B} = \rho v A_\text{eff,B} = \frac{1}{2} \rho v A.
+			</me>			
+		</p>
+		<p>
+			In general, if area <m> A</m> is oriented at angle <m>\phi</m> with respect to the flow. Then, effective area is only
+				<me>
+					A_\text{eff} = A\sin\,\phi.
+				</me> 
+		</p>
+		<sidebyside widths="65% 35%">
+			<p>
+
+				The relative orientation is traditionally given by angle <m>\theta</m> between the flow and the normal to the area, with <m>\theta=90^\circ-\phi</m>.  Therefore, effecive area is also
+				<me>
+					A_\text{eff} = A\cos\,\theta.
+				</me>
+	 
+			</p>
+ 
+			<image source="./images/gausss-law/particle-flux-angles.png" width="80%"/>
+		</sidebyside>
+		<p>
+			Therefore, general formula for particle flux will be
+			<me>
+				\Phi = \rho v A_\text{eff} =  \rho v A \sin\,\phi = \rho v A \cos\,\theta.
+			</me>
+		</p>
+		<sidebyside widths="55% 5% 40%">
+			<p>
+	 			<alert>Zero particle flux does not mean that there is no flow</alert>. Suppose you have steady flow of water in a U-shaped water pipe. The net flux of water molecules through the surface <m>A</m> will be zero since, if we take flux at <m>A_1</m> as positive, then flux at <m>A_2</m> will be negative, and they will cancel out when added to get flux through <m>A</m>.  
+			</p>
+			<p></p>
+			<image source="./images/gausss-law/particle-flux-zero-flux-case.png" width="80%"/>
+		</sidebyside>
+
+
+	</subsection>
+
+	<subsection><title> Flux of Electric Field </title>
+		<p>
+			A visual way of thinking about the flux of elctric field is to think of it as a measure of <em>number of electric field lines</em> that passes through an area as illustrated in <xref ref="fig-electric-flux-using-lines" />. 
+		</p>
+		<figure xml:id="fig-electric-flux-using-lines">
+			<caption>
+				Flux through an area is a measure of <em>number of electric field lines</em> through the area. In this figure, near point A, electric flux is 4 units and near B it is 2 units.
+			</caption>
+			<image source="./images/gausss-law/electric-flux-using-lines.png" width="70%"/>
+		</figure>
+
+		<sidebyside widths="60% 5% 35%">
+			<p>
+				The analogy with the particle flux is that magnitude of the electric field, <m>E</m>, in the case of electric field will replace <m>\rho v</m> for particles. Therefore, we will have the following for electric flux.
+				<men>
+					\Phi_E = E\, A_\text{eff},
+				</men>
+				
+			</p>
+			<p></p>
+			<image source="./images/gausss-law/electric-flux-angle.png" width="80%"/>
+		</sidebyside>
+		<p>
+				where effecive area is the area projected on a plane perpendicular to the electric field. Writing this in terms of the area and orientation angle <m>\theta</m>, we get
+				<men xml:id="eq-electric-flux-uniform-field">
+					\Phi_E = E\, A \cos\, \theta.
+				</men>
+		</p>
+		<sidebyside widths="65% 5% 30%">
+			<p>
+				<alert>Area Vector: </alert>	Flux can be compactly written in vector notation if we introduce an <term>area vector</term> that takes into account its orientation. Let <m>\hat u</m> be normal to a flat area <m>A</m>. Then we call vector <m>A\hat u</m> an area vector and denote it by <m>\vec A</m>.
+			</p>
+			<p></p>	
+			<image source="./images/gausss-law/electric-flux-area-vector.png" width="80%"/>
+		</sidebyside>
+		<p>
+			Using area vector <m>\vec A </m> and electric field vector <m>\vec E</m>, electric flux takes a compact form.
+			<men  xml:id="eq-electric-flux-uniform-field-vector">
+				\Phi_E = \vec E\cdot  \vec A.
+			</men>
+		</p>
+		<p><alert>Zero electric flux does not mean that electric field is also zero</alert>. </p>
+		<sidebyside widths="55% 5% 40%">
+			<p>
+	 			Suppose we have a closed surface <m>\text{S}</m> near a positive electric charge. Every electric field line from ppositive charge that enters the surface at some point must exit at some other point. If you count exiting line as <m>+1</m> and entering line as <m>-1</m>, the net lines through the surface will be zero. That will give net flux zero, but clearly, electric field is not zero. 
+			</p>
+			<p></p>
+			<image source="./images/gausss-law/electric-flux-zero-flux-case.png" width="80%"/>
+		</sidebyside>
+		
+	</subsection>
+
+	<subsection><title> (Calculus) Flux of Electric Field </title>
+		<!-- <p>
+			The formula for the electric flux given in Eq. <xref ref="eq-electric-flux-uniform-field"/> is only for an electric field that is uniform over the area.  
+		</p>
+		<sidebyside widths="65% 5% 30%">
+			<p>
+				To take into account varying electric field and also to take into account the changing orientation of the area through which want electric flux, it is helpful to think the right side in the expression in Eq. <xref ref="eq-electric-flux-uniform-field"/> as as a dot product of the electric field vector, <m>\vec E</m> and an area vector, <m> \vec A</m>. 
+				<me>
+					\Phi_E = \vec E \cdot \vec A,
+				</me>
+			</p>
+			<p> </p>
+			<image source="./images/gausss-law/area-vector.png" width="80%"/>
+		</sidebyside>
+		<p>
+			where area vector <m>\vec A</m> has magnitude <m>A</m> and direction in the direction of normal to the area. If the area is closed, then we will take normal to point from inside to the outside, otherwise, the normal direction will be ambiguous.
+		</p> -->
+		<p>
+			Formula for electric field given in Eq. <xref ref="eq-electric-flux-uniform-field-vector"/> works for uniform electric field and a single flat area. Now, we will like to extend this to arbitrary surface shape and arbitrary electric field. We still use Eq. <xref ref="eq-electric-flux-uniform-field-vector"/> but use it on small patches of the surface, which can be approximated to be flat as illustrated in <xref ref="fig-E-field-curved-surface-with-patches"/>. 
+		</p>
+		<figure xml:id="fig-E-field-curved-surface-with-patches">
+			<caption>
+				Electric flux through a curved smooth surface is obtained by covering the surface with approximately flat patches. We find flux through each patch and then add them up to get the net flux.
+			</caption>
+			<image source="./images/gausss-law/E-field-curved-surface-with-patches.png" width="70%"/>
+		</figure>
+
+
+		
+
+		<p>
+			Since any smooth surface can be covered by infinitesimal flat patches of area vectors, say <m>\Delta \vec A</m>, we compute flux through patches and   add their contributions to obtain the net flux. 
+			<me>
+				\Phi_E = \sum_\text{patches}\, \vec E\cdot \Delta\vec A.
+			</me>
+			In the limit of <m>\Delta\vec A\rightarrow 0</m>, we write this formally as 
+			<men xml:id="eq-electric-flux-general">
+				\Phi_E = \int_{\text{area}}\, \vec E\cdot d\vec A.
+			</men>
+			Often, we say that this is only a <alert>conceptual integral</alert> since you will have to convert  area element <m>d\vec A</m> into appropriate form before you can actually get regular integrals for you to work out. For instance, suppose you have an area in <m>xy</m>-plane, your area element will be
+			<men>
+				d\vec A = dx\,dy\,\hat k.
+			</men>
+			That will make the flux to 
+			<me>
+				\Phi_E = \iint E_z dx dy,
+			</me>
+			where <m>E_z</m> may be a function of <m>x</m> and <m>y</m> and the integration will be over the area.
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				On the other hand, if surface has spherical shape of radius <m>r</m>, the area element on that surface will be
+				<men>
+					d\vec A = r^2\,\sin\,\theta\,d\theta\,d\phi\,\hat u_r,
+				</men>
+				where <m>\hat u_r</m> is a radially outward unit vector from origin to the location of the area element. 
+			</p>
+			<p></p>
+			<image source="./images/gausss-law/area-element-spherical.png" width="80%"/>
+		</sidebyside>
+		<p>
+			Therefore, for a spherical shape surface, flux will be
+			<me>
+				\Phi_E = r^2 \iint E_r\,\sin\,\theta\,d\theta\,d\phi,
+			</me>
+			where <m>E_r</m> is the spherical radial component of the electric field, which may be a function of <m>\theta</m> and <m>\phi</m>.
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				If the surface has a cylindrical shape of radius <m>r</m> about the <m>z</m> axis, 
+				 the area element will be
+				<men>
+					d\vec A = r\,d\theta\,dz\,\hat u_r
+				</men>
+				where <m>r</m>, <m>\theta</m>, <m>z</m> are cylindrical coordinates and <m>\hat u_r</m> is a radially outward unit vector pependicular to the <m>z</m> axis.
+			</p>
+			<p></p>
+			<image source="./images/gausss-law/area-element-cylindrical.png" width="80%"/>
+		</sidebyside>
+		<p>
+			Therefore, for a cylindrical shape surface, flux will be
+			<me>
+				\Phi_E = r \iint E_r\,\,d\theta\,dz,
+			</me>
+			where <m>E_r</m> is the cylindrical radial component of the electric field, which may be a function of <m>\theta</m> and <m>z</m>.
+		</p>
+		
+	</subsection>
+
+	<exercise xml:id="ex-Electric-Flux-of-Constant-Electric-Field-for-Various-Orientation-of-the-Area"><title> Electric Flux of Constant Electric Field for Various Orientation of the Area </title>
+		<statement>
+			<p>
+				There exists a constant electric field of magnitude <m>10,000\text{ N/C}</m> between two oppositely charged metal plates, which are parallel to the <m>xy</m> plane with the negative plate at <m>z=0</m> and the positive plate at <m>z=3\text{ cm}</m> . 
+			</p>			
+			<sidebyside widths="60% 10% 25% 5%">
+
+				<p>
+					What will be the electric flux through a rectangle of area <m>1.5\text{ cm}^2</m> between the plates if the normal to the area makes following angles with respect to the <m>z</m> axis: (a) <m>0^\circ</m>, (b) <m>30^\circ</m>, (c) <m>60^\circ</m>, (d) <m>90^\circ</m>?
+	 
+				</p>
+ 
+				<p></p>
+
+				<image source="./images/gausss-law/ex-flux-at-various-angles-stmnt.png" width="70%"/>
+				<p></p>
+			</sidebyside>
+		</statement>
+		<hint> <p> Direction angle <m>\theta</m> is given, not <m>\phi</m>. Use formula <m>E A \cos\theta</m>.  </p> </hint>
+		<answer> <p> (a) <m>1.5\text{ N.m}^2\text{/C}</m>, (b) <m>1.3\text{ N.m}^2\text{/C}</m>, (c) <m>0.75\text{ N.m}^2\text{/C}</m>, (d) <m>0</m>. </p> </answer>
+		<solution>
+			<sidebyside widths="60% 10% 30%"> 
+				<p>
+					The figure shows the normal vectors to the areas in the four parts. The given angle is the angle <m>\theta</m>. Therefore, the flux will be given by 
+					<me>
+						\Phi_E = E\,A\,\cos\,\theta.
+					</me>
+					Therefore, we get the following values.
+					<md>
+						<mrow>\amp (a) 10,000\text{ N/C}\times 1.5\times \text{ cm}^2 \times 1 = 1.5\text{ N.m}^2\text{/C}.</mrow>
+						<mrow>\amp (b) 10,000\text{ N/C}\times 1.5\times \text{ cm}^2 \times \cos\,30^{\circ} = 1.3\text{ N.m}^2\text{/C}.</mrow>
+						<mrow>\amp (c) 10,000\text{ N/C}\times 1.5\times \text{ cm}^2 \times \cos\,60^{\circ} = 0.75\text{ N.m}^2\text{/C}.</mrow>
+						<mrow>\amp (d) 10,000\text{ N/C}\times 1.5\times \text{ cm}^2 \times \cos\,90^{\circ} = 0.</mrow>
+					</md>
+				</p>
+				<p> </p>
+				<image source="./images/gausss-law/ex-flux-at-various-angles.png" width="70%"/>
+			</sidebyside>
+			
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electric-Flux-of-a-Radial-Electric-Field"><title> (Calculus) Electric Flux of a Point Charge Through a Spherical Surface </title>
+		<statement>
+			<p>
+				The electric field of a point charge <m>q</m> at origin is
+				<me>
+					\vec E = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q}{r^2}\,\hat u_r,
+				</me>
+				where <m>\hat u_r</m> is a radially outward unit vector. 
+				What is the electric flux of this electric field through a spherical surface of radius <m>r=a</m> with center at the origin?
+			</p>
+
+		</statement>
+		<hint> <p>  Use the area element in spherical coordinates. </p> </hint>
+		<answer> <p> <m>q/\epsilon_0</m>. </p> </answer>
+		<solution> 
+			<p>
+				The area element at the surface of radius <m>r=a</m> will be
+				<me>
+					d\vec A = a^2\sin\,\theta\,d\theta\,d\phi\, \hat u_r.
+				</me>
+				The electric field at the location of the area element is obtained by setting <m>r=a</m> in the expression for electric field given. 
+				<me>
+					\vec E = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q}{a^2}\,\hat u_r.
+				</me>
+				Taking the dot product of electric field and the area element cancels out the radius <m>a</m> and get rids of the unit vectors, giving us
+				<me>
+					\vec E \cdot d\vec A = \dfrac{q}{4\pi\epsilon_0}\,    \sin\,\theta\,d\theta\,d\phi 
+				</me>
+				We need to integrate this over the two variables, over the ranges, <m>0\le\theta\lt\pi</m> and <m>0\le\phi\lt 2\pi</m>. They yield the solid angle <m>4\pi</m>, which cancels <m>4\pi</m> the in the denominator. Therefore,
+				<me>
+					\Phi_E =  \dfrac{q}{\epsilon_0}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electric-Flux-Through-a-Ring-by-the-Electric-Field-of-a-Point-Charge"><title> Electric Flux Through a Disk Above a Point Charge  </title>
+		<statement>
+			<sidebyside widths="50% 10% 30% 10%">
+				<p>
+					Find the electric field of the point charge through a circular area of radius <m>R</m> a distance <m>h</m> away from the charge and oriented such that surface of the area is perpendicular to the line joining the charge and the center of the area.
+				</p>
+
+				<p></p>
+				<image source="./images/gausss-law/ex-E-Flux-Through-a-Disk-Above-a-Point-Charge.png" width="80%"/>
+				<p></p>
+			</sidebyside>
+		</statement>
+		<hint> <p>  The flux through area will equal the flux through the spherical cap above the area. </p> </hint>
+		<answer> <p> <m>\dfrac{q}{2 \epsilon_0} \left( 1 - \dfrac{h}{R}\right).</m>  </p> </answer>
+		<solution> 
+			<p>
+				In <xref ref="fig-ex-flux-through-a-ring-solution" /> we notice that all the field lines that pass through area <m>A</m> of the disk also pass through the area of the spherical cap <m>A_\text{cap}</m>. So, the flux through <m>A</m> will equal flux through <m>A_\text{cap}</m>. 
+				<me>
+					\Phi_{\text{through }A} = \Phi_{\text{through }A_\text{cap}}.
+				</me>
+			</p>
+			<figure xml:id="fig-ex-flux-through-a-ring-solution">
+				<caption>
+					Flux through <m>A</m> is same as the flux through <m>A_\text{cap}</m> since every field line that passes through <m>A</m> must also pass through <m>A_\text{cap}</m>. The advantages of using <m>A_\text{cap}</m> explained below.
+				</caption>
+				<image source="./images/gausss-law/ex-flux-through-a-ring-solution.png" width="50%"/>
+			</figure>
+			<p>
+				One advantage of using the cap to find the flux is that vector area elements <m>d\vec{A}_\text{cap}</m> of the cap and <m>\vec E</m> are both radial at all points of the cap.  This will make the dot product for flux easy. One other advantage is the electric field has the same magnitude at all points of the cap. Therefore, flux will simply be this magnitude times area of the cap, as was the case for the spherical surface around point charge in <xref ref="ex-Electric-Flux-of-a-Radial-Electric-Field"/>.
+				<me>
+					\Phi_E = E_\text{at cap} \times A_\text{cap},
+				</me>
+				with
+				<me>
+					E_\text{at cap} = \dfrac{1}{4\pi \epsilon_0}\,\dfrac{q}{R^2}.
+				</me>
+				This reduces the problem to the problem of computing the area of the cap. This will be 
+				<me>
+					A_\text{cap} = R^2\times \Omega,
+				</me>
+				where <m>\Omega</m> is the solid angle subtended by the cap. Placing the ring perpendicular to the <m>z</m> axis as in <xref ref="fig-ex-flux-through-a-ring-solution" /> helps with this calculation. The cap has maximum angle from the <m>z</m> axis to be
+				<me>
+					\theta_\text{max} = \cos^{-1}\left(\dfrac{h}{R} \right).
+				</me>
+				If you do not have a Calculus background, you can look up a formula for the solid angle of a cap given this <m> \theta_\text{max}</m>:
+				<me>
+					\Omega = 2\pi\left( 1 - \dfrac{h}{R}\right).
+				</me>
+				You can see that the angle of the full cap will be when <m>h=-R</m>. In that case, you get <m>4\pi</m>. However, if you have Calculus background, you can prove this result by integrating over the two spherical angles. 
+				<md>
+					<mrow> \Omega \amp = \int_0^{2\pi} d\phi \int_0^{\theta_\text{max}}\,\sin\,\theta\, d\theta,</mrow>
+					<mrow> \amp = 2\pi \left( 1 - \dfrac{h}{R}\right).</mrow>
+				</md>
+				In any case, using the solid angle we get the area of the spherical cap, and get the flux.
+				<md>
+					<mrow> \Phi_E \amp = \dfrac{1}{4\pi \epsilon_0}\,\dfrac{q}{R^2} \times R^2\times 2\pi \left( 1 - \dfrac{h}{R}\right), </mrow>
+					<mrow> \amp = \dfrac{q}{2 \epsilon_0} \left( 1 - \dfrac{h}{R}\right).</mrow>
+				</md>
+
+
+			</p>
+			
+		</solution>
+	</exercise>
+
+
+
+
+
+
+</section>

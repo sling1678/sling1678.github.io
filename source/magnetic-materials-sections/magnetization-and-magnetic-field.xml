@@ -1,0 +1,384 @@
+<section xml:id="Magnetization-and-Magnetic-Field"><title> Magnetization and Magnetic Field </title>
+	<introduction>
+		<p>
+			Consider a solenoid obtained by winding a thin insulated copper wire over an iron core.  When a current passes through the copper wire, magnetic field lines inside the solenoid pass through the iron core and align the atomic magnetic dipoles of iron, which produce additional magnetic field in the same direction.  Thus, magnetic field inside the solenoid will be stronger with the iron core than without it.
+		</p>
+		<figure xml:id="fig-iron-core-solenoid-field">
+			<caption>
+				Solenoid without any core (a) and with iron core (b).  Magnetic field inside the solenoid, <m>\vec B_\text{in}</m>, is stronger with the iron core due to the sum of the fields by the current and that by the aligned magnetic dipoles of iron.
+			</caption>
+			<image source="./images/magnetic-materials/iron-core-solenoid-field.png" width="60%"/>
+		</figure>
+		<!-- <p>
+			Let us denote the magnetic field by <m>B_0</m> when there is nothing in the inside space and <m>B</m> for field with iron core. By using Ampere's law we know that
+			<men xml:id="eq-solenoid-field-no-core">
+				B_\text{0,in} = \mu_0 n I,
+			</men>
+			where <m>n </m> is the number of turns per unit length and <m>I</m> current through the wires. But <m>B_\text{in}</m> is much higher than <m>B_\text{0,in}</m>. The field <m>B_\text{in}</m>  depends on how well core is magnetized, which depends on the magnetic field <m>B_\text{in}</m> present there. This circular referencing requires a self-consistent analysis.
+		</p> -->
+		<p>
+			To understand the field when we have magnetic material, we separate external magnetic field from the magnetization-dependent field. Let <m>\vec H</m> be the <term>applied magnetic field </term>, also called the <term>magnetic auxliary field</term>, and sometimes simply referred to as  magnetic field when <m> \vec B</m> is referred to as <term>magnetic induction</term>. Let <m>\vec M</m> denote the magnetization, as before, then we write <m>\vec B/\mu_0</m> as sum of <m>\vec H</m> and <m>\vec M</m>.
+			<men xml:id="eq-magnetic-auxiliary-field-definition">
+				\dfrac{1}{\mu_0}\vec B = \vec H + \vec M.
+			</men>
+ 			Outside of magnetic material, where <m>M=0</m>, we will have
+			<men>
+				\dfrac{1}{\mu_0}\vec B_\text{out} = \vec H_\text{out}.
+			</men>
+			But, inside magnetic material, we will get
+			<men>
+				\dfrac{1}{\mu_0}\vec B_\text{in} = \vec H_\text{in} + \vec M.
+			</men>
+			It can be shown that <m>\vec H_\text{in}</m> obeys Ampere's law for the situation in the absence of any magnetic material. For Ampere's law symmetries, it is easy to find <m>\vec H_\text{in}</m>. Thus, the problem of finding magnetic field <m>\vec B_\text{in}</m> requires a way of knowing <m>\vec M</m>. We will see below that this depends on whether the material is a linear magnetic material or non-linear.  	
+		</p>
+
+		<p>
+			<!-- A simple way to include the effect of core is to replace magnetic permeability of  vacuum <m>\mu_0</m> in Eq. <xref ref="eq-solenoid-field-no-core"/> by a material-dependent magnetic permeability <m>\mu</m>. We use the same symbol for magnetic permeability as magnetic dipole moment; hopefully, this wouldn't be too confusing.  This crude method says that when we have iron in the core, we will get
+			<men>
+				B_\text{in} = \mu \: n\: I
+			</men>
+			A more complete analysis uses a sophisticated calculation that gives the following answer.
+			<me>
+				B_\text{in} = \frac{1}{\mu_0}\ \left( H_\text{in}  +  M \right),
+			</me>
+			with the following form <m>H</m> in case of solenoid,
+			<me>
+				H_\text{in} = n I. 
+			</me>
+			Here <m>M</m> is magnetization, which depends on the material, which implicitly depends upon <m>B_\text{in}</m>. Since <m>M</m> is a material property, we can try to take care of it  emeprically. From experiment, we can measure magnetic susceptibility <m>\chi_M</m> by how magnetism grows with applied field.  We use <m>H</m> rather than <m>B</m> to define the response of the material. If external field of current in the solenoid is not too great, the resulting magnetization can be expressed to be linear in response. 
+			<men xml:id="eq-magnetic-susceptibility-definition">
+				M = \chi_M H.
+			</men> 
+			Then, we can write <m>B_\text{in}</m> as
+			<me>
+				B_\text{in} = \frac{1}{\mu_0}\ \left( H_\text{in}  +  \chi_M H \right) = \mu H = \mu   n  I,
+			</me> 
+			with
+			<me>
+				\chi_M = \dfrac{\mu}{\mu_0} - 1.
+			</me>
+			Materials that behave linearly according to Eq. <xref ref="eq-magnetic-susceptibility-definition"/> are called linear materials. Examples of linear materials are paramagnets, e.g., copper, and diamagents, e.g., Bismuth. --> 
+
+			<!--  -->
+		</p>
+	</introduction>
+	<subsection><title> Field in Paramagnets and Diamagnets</title>
+		<p>
+			In paramagnets (such as Copper) and diamagnets (such as Bismuth), magnetization varies linearly with the applied field. This lets us define magnetic susceptibility <m>\chi_M</m> of the material by
+			<men xml:id="eq-magnetic-susceptibility-definition">
+				\vec M = \chi_M \vec H,
+			</men>
+			where <m>H</m> is the magnetic auxiliary field, which is proportional to the magnetic field <m>B</m> inside the material.
+			<men>
+				\vec H = \dfrac{1}{\mu} \vec B,
+			</men>
+			where <m>\mu</m> is the magnetic permeability of the material. We can use the defining equation of <m>H</m>, viz., Eq. <xref ref="eq-magnetic-auxiliary-field-definition"/>, to note the relation between <m>\chi_M</m> and <m>\mu</m> of the material.
+			<men>
+				\dfrac{\mu}{\mu_0} = 1 + \chi_M.
+			</men>
+			Using Eqs. <xref ref="eq-magnetic-susceptibility-definition"/> in Eq.  <xref ref="eq-magnetic-auxiliary-field-definition"/> lets us find magnetic field <m>\vec B_\text{in}</m> from a knowledge of extrernal field <m>\vec H_\text{in}</m> and magnetic permeability.
+			<men>
+				\vec B_\text{in} = \mu\, \vec H.
+			</men>
+			If external magnetic field is generated by simple current sources, it is easy to work out <m>H</m> by using Ampere's law for <m>\vec H</m> - this has the same form as that of <m>\vec B</m> without the constant <m>\mu_0</m>.
+ 		</p>
+
+ 		<table><title> Magnetic susceptibilities (From: CRC Handbook of Chemistry and Physics, 82nd Edition) </title>
+
+ 			<tabular halign ="left" >
+  				<row  bottom ="minor">
+					<cell> Material </cell>	 	<cell> Molar </cell>  <cell> Molar </cell>  <cell> Density </cell>  <cell> Volume </cell> </row> 
+  				<row >
+					<cell> <m> </m> </cell>	 	<cell> <m> </m> </cell>  <cell> <m> </m> </cell>  <cell> <m> </m> </cell>  <cell> <m> </m> </cell> </row> 
+  				<row >
+					<cell> <m> </m> </cell> <cell> susceptibility </cell>	 	<cell> mass </cell>  <cell> <m> </m> </cell>  <cell> Susceptbility </cell>   </row> 
+  				<row >
+					<cell> <m> </m> </cell>	 	<cell> <m> \chi_M</m> </cell>  <cell> <m> M </m> </cell>  <cell> <m>\rho </m> </cell>  <cell> <m> \chi_m</m> </cell> </row> 
+  				<row >
+					<cell> <m> </m> </cell>	 	<cell> <m>(\times 10^{-6} \text{cm}^3\text{/mole}) </m> </cell>  <cell> <m> (\text{g/mole})</m> </cell>  <cell> <m>(\text{g/cm}^3) </m> </cell>  <cell> <m>(\times 10^{-5}) </m> </cell> </row> 
+				<row  bottom ="minor">
+					<cell> <m> </m> </cell>	 	<cell> <m> </m> </cell>  <cell> <m> </m> </cell>  <cell> <m> </m> </cell>  <cell> <m> </m> </cell> </row> 
+ 				<row  bottom ="minor">
+					<cell> <alert>Diamagnets</alert> </cell>	 	<cell> <m> </m> </cell>  <cell> <m> </m> </cell>  <cell> <m> </m> </cell>  <cell> <m> </m> </cell> </row> 
+				<row> 
+					<cell> Bismuth </cell>	<cell> <m>  -280.1</m> </cell> 	<cell> <m> 209</m> </cell>  	<cell> <m>  9.79</m> </cell> 	<cell> <m> -16.49</m> </cell></row> 
+				<row>
+					<cell> Carbon (graphite) </cell>	<cell> <m> -6</m> </cell>	<cell> <m>12 </m> </cell>	<cell> <m> 2.2</m> </cell>	<cell> <m> -1.38</m> </cell></row> 
+				<row>
+					<cell> Carbon (Diamond) </cell>	<cell> <m> -5.9</m> </cell>	<cell> <m> 12</m> </cell>	<cell> <m> 3.513</m> </cell>	<cell> <m> -2.17</m> </cell></row> 
+				<row>
+					<cell> Copper </cell>   <cell> <m> -5.46</m> </cell>	<cell> <m> 63.5</m> </cell>	<cell> <m> 8.96</m> </cell>	<cell> <m>-0.97 </m> </cell> </row> 
+				<row>
+					<cell> Gold	 </cell>   <cell> <m> -28</m> </cell>	<cell> <m> 197</m> </cell>	<cell> <m>19.3 </m> </cell>	<cell> <m> -3.45</m> </cell></row> 
+				<row>
+					<cell> Lead	</cell>  <cell> <m> -23</m> </cell>	<cell> <m> 207</m> </cell>	<cell> <m> 11.3</m> </cell>	<cell> <m> -1.58</m> </cell></row> 
+				<row>
+					<cell> Mercury </cell>  <cell> <m> -33.5</m> </cell>	<cell> <m> 201</m> </cell>	<cell> <m> 13.5</m> </cell>	<cell> <m> -2.83</m> </cell></row> 
+				<row>
+					<cell> Silver </cell>	<cell> <m> -19.5</m> </cell>	<cell> <m> 108</m> </cell>	<cell> <m> 10.4</m> </cell>	<cell> <m> -2.36</m> </cell></row>
+				<row  bottom ="minor">
+					<cell> <m> </m> </cell>	 	<cell> <m> </m> </cell>  <cell> <m> </m> </cell>  <cell> <m> </m> </cell>  <cell> <m> </m> </cell> </row>  
+				<row  bottom ="minor"> 	 	 
+					<cell> <alert>Paramagnets </alert> </cell>	<cell> <m> </m> </cell>  <cell> <m> </m> </cell>  <cell> <m> </m> </cell>  <cell> <m> </m> </cell> 	 	 	 </row> 
+				<row> 
+					<cell>  Aluminum </cell>	<cell> <m> 16.5</m> </cell>	<cell> <m> 27</m> </cell>	<cell> <m> 2.7</m> </cell>	<cell> <m> 2.07</m> </cell></row> 
+				<row>
+					<cell> Gadolinium </cell>	<cell> <m>185000 </m> </cell>	<cell> <m> 157</m> </cell>	<cell> <m> 7.9</m> </cell>	<cell> <m> 11,697.93</m> </cell></row> 
+				<row>
+					<cell> Magnesium </cell>	 <cell> <m> 13.1</m> </cell>	<cell> <m> 24</m> </cell> <cell> <m> 1.74</m> </cell>	<cell> <m> 1.19</m> </cell></row> 
+				<row>
+					<cell> Manganese </cell>	 <cell> <m> 511</m> </cell>	<cell> <m> 55</m> </cell>	<cell> <m> 7.3</m> </cell>	<cell> <m>85.23 </m> </cell></row> 
+				<row>
+					<cell> Neodymium </cell>	 <cell> <m> 5930</m> </cell>	<cell> <m> 144</m> </cell>	<cell> <m> 7.01</m> </cell>	<cell> <m> 362.76</m> </cell></row> 
+				<row>
+					<cell> Oxygen (gas) </cell>	<cell> <m> 3449</m> </cell>	<cell> <m> 32</m> </cell>	<cell> <m> 29.3</m> </cell>	<cell> <m> 3,968.45</m> </cell></row>
+				<row>
+					<cell> Platinum </cell>	<cell> <m> 193</m> </cell>	<cell> <m> 195</m> </cell>	<cell> <m> 21.5</m> </cell>	<cell> <m> 26.74</m> </cell></row> 
+				<row>
+					<cell> Sodium </cell> <cell> <m> 16</m> </cell>	<cell> <m> 23</m> </cell>	<cell> <m> 0.97</m> </cell>	<cell> <m> 0.85</m> </cell></row> 
+				<row>
+					<cell> Titanium </cell>	<cell> <m> 151</m> </cell>	<cell> <m> 48</m> </cell>	<cell> <m> 4.506</m> </cell>	<cell> <m> 17.81</m> </cell></row> 
+				<row>
+					<cell> Tungsten </cell>	<cell> <m> 53</m> </cell>	<cell> <m> 184</m> </cell>	<cell> <m> 19.3</m> </cell>	<cell> <m> 6.99</m> </cell></row>
+				<row  bottom ="minor">
+					<cell> <m> </m> </cell>	 	<cell> <m> </m> </cell>  <cell> <m> </m> </cell>  <cell> <m> </m> </cell>  <cell> <m> </m> </cell> </row> 
+ 			</tabular>
+ 		</table>
+
+
+
+	</subsection>
+	<subsection><title> (Calculus) Ampere's Law for Auxiliary Field</title>
+		<p>
+			The auxiliary field obeys a law similar to the Ampere's law for <m>\vec B</m> but  with the current being only the real current, and not on the magnetic dipoles of the magnetic material.
+			<men xml:id="eq-amperes-law-auxiliary-field">
+				\oint \vec H\cdot d\vec l = I_\text{enc}^f
+			</men>
+			where <m>I^f</m> denotes the current in the wire. Along with <xref ref="eq-amperes-law-auxiliary-field"/>, auxiliary field must also obey
+			<men>
+				\vec\nabla\cdot \vec H = - \vec\nabla\cdot \vec M,
+			</men>
+			which can be expressed as surface integral over the surface of the magnet.
+			<me>
+				\oint_S \vec H\cdot d\vec A = -\oint_S \vec M\cdot d\vec A. 
+			</me>
+			An example of Eq <xref ref="eq-amperes-law-auxiliary-field"/> to infintely long tightly-wound solenoid around a magnetic material is that inside the solenoid the <m>H</m> field has the following magnitude.
+			<me>
+				H_\text{inside solenoid} = n I,
+			</me>
+			where <m>n</m> is number of turns per unit distance and <m>I</m> is the current in the wire.
+		</p>
+
+	</subsection>
+	<subsection><title> Field in Ferromagnets</title>
+		<p>
+			Magnetic field in ferromagnets is also given by
+			<me>
+				\vec B_\text{in} = \mu_0 (\vec H_\text{in} + \vec M),
+			</me>
+			but <m>M</m> varies nonlinearly with <m>H</m> in a complicated manner and you don't have a simple relation like
+			<me>
+				M \ne  \chi_M H.
+			</me>
+			Instead, the relation between <m>M</m> and <m>H</m> is much more complicated indicated in the hysteresis <xref ref="fig-hysteresis"/>. For the same field <m>H</m>, you may get different values of magnetization. Not only that,  <m>M</m> value will also depend upon the magnetization history of the sample, i.e., immediately prior to a new <m>H</m> what was the <m>H</m> you had applied. So, how are we to get <m>B</m> in a ferromagnetic material?
+		</p>
+		<figure xml:id="fig-hysteresis">
+			<caption>
+				Hysterisis of magnetization <m>M</m> results when applied magnetic field <m>H</m> is varied in a ferromagnetic material. Suppose you start with an unmagnetization material at <m>H=0</m>. As you increase <m>H</m>, say pointed towards <m>z</m> axis, magnetization increases nonlinearly and reaches saturation point a. Now, you begin to decrease <m>H</m>, you will return to <m>H=0</m> at b, but magnetization does not return to zero. We say that we have magnetized the material. As you flip the direction of <m>H</m>, i.e., now <m>H_z \lt 0</m>, and increase its strength, you will need <m>H_z=H_c</m> to make magnetization zero. If you continue to keep increasing th strength of <m>H</m>, you would flip all dipoles at d amd get full magnetization in the <m>-z</m> direction. Decreasing the strength of <m>H_z \lt 0</m> field to zero again leaves the sample permanently magnetized, i.e., no external field but nonzero magnetization. The loop abcdefa is called a hysteresis loop. Note tha just knowing <m>H</m> does not give you a unique value of <m>M</m>. Hysterisis curve is different for different materials.
+			</caption>
+			<image source="./images/magnetic-materials/hysteresis.png" width="90%"/>
+		</figure>
+		<p>
+			To find <m>B_\text{in}</m> in a ferromagnet, we use the Hysterisis loop of the material to read possible value of <m>M </m> and use the history of the smaple to pick the <m>M</m> thats relevant for the situation at hand. For instance, as illustrated in <xref ref="fig-hysteresis-history-dependence"/>, if applied field is <m>H=H_1</m>, any value of  <m>M</m> between <m>M_-</m> and <m>M_+</m> is posssible, depending upon history. You might say this is very frustrating when dealing with ferromagnets.
+
+		</p>
+
+
+		<figure xml:id="fig-hysteresis-history-dependence">
+			<caption>
+				History dependence of magnetization in a ferromagnet. For applied field <m>H=H_1</m>, any value of  <m>M</m> between <m>M_-</m> and <m>M_+</m> is posssible, depending upon history.
+			</caption>
+			<image source="./images/magnetic-materials/hysteresis-history-dependence.png" width="90%"/>
+		</figure>			
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Magnetism-in-Copper-Rod-Carrying-Current"><title> Magnetism in Copper Rod Carrying Current </title>
+		<statement>
+			<p>
+				A long copper rod of radius <m>R</m> is carrying a current <m>I</m> uniformly distributed over the cross-section.  
+			</p>
+			<p>
+				(a) Find the magnitude and direction of the applied field <m>\vec H</m>, magnetization <m>\vec M</m>, and magnetic field <m>\vec B</m> inside and outside the wire. Use <m>\chi_{M,\text{Cu}}</m> for magnetic susceptibility of Copper.
+			</p>
+			<p>
+				(b) Find numerical values for <m>R=1\text{ cm}</m> and <m>I=100\text{ A}</m> at a point <m>0.5\text{ cm}</m> from the center of the wire.
+			</p>
+			<p>
+				Data: <m>\chi_{M,\text{Cu}} = −0.97\times 10^{-5}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Find <m>\vec H </m> first.  </p> </hint>
+		<answer><title>(a)</title> <p> (a)
+			Magnitudes at a point a distance <m>r\lt R</m> from center : <m>H_{\textrm{in}} = J\: r/2</m>, <m>M = \chi_m\: J\: r/2</m>, <m>B_{\textrm{in}} = \mu_0\: (1+\chi_m)\: J\: r/2</m>. Here <m>J= I/\pi R^2</m>. </p> </answer>
+		<answer><title>(b)</title> <p> (b)
+			 <m>5.0\times 10^{4}\text{ A/m}</m>, <m> -4.85\times 10^{4}\text{ A/m}</m>, <m> 1.88\times 10^{-3}\text{ T}</m>. </p> </answer>
+		<solution> <title>(a)</title>
+			<p> (a)
+				Let <m>s</m> be the cylindrical radial distance from the center of the wire. Then, 
+				applying Ampere's law to the applied field <m>\vec H</m> for the cylindrical symmetery, we immediately know that the magnitude <m>H</m> is
+				<me>
+					H = \begin{cases}
+							\dfrac{I}{R^2}\, s, \amp s \lt R\\
+							\dfrac{I}{2\pi s},	\amp s \gt R
+						\end{cases}
+				</me>
+				If you don't know how I got that, you will need to review Ampere's law in an earlier chapter. The direction of <m>\vec H</m> will be tangent to circles around the wire, just as it was for <m>\vec B</m> when we didn't worry about magnetization of copper itself.
+			</p>
+			<p>
+				Using susceptibility of Copper for points inside copper and permeability of vacuum at outside points, we get magnitude of <m>\vec M</m>.
+				<me>
+					M = \begin{cases}
+							\dfrac{\chi_{M,\text{Cu}}\, I}{R^2}\, s, \amp s \lt R\\
+							0,	\amp s \gt R
+						\end{cases}
+				</me>	
+				Since Cu is diamagnetic, its susceptibility <m>\chi_{\text{Cu},M} \lt 0</m>. That means, the direction of <m>\vec M</m> is opposite of the direction of <m>\vec H</m>.			
+			</p>
+			<p>
+				Since <m>\vec B = \mu_0(\vec H + \vec M)</m> we get <m>\vec B</m> from the results given above. Alternaterly, we can use  permeability of Copper for points inside copper and permeability of vacuum at outside points, we get magnitude of <m>\vec B</m>.
+				<me>
+					B = \begin{cases}
+							\dfrac{\mu_\text{Cu}\, I}{R^2}\, s, \amp s \lt R\\
+							\dfrac{\mu_0\,I}{2\pi s},	\amp s \gt R
+						\end{cases}
+				</me>
+				with
+				<me>
+					\mu_\text{Cu} = 1 + \chi_{M,\text{Cu}}.
+				</me>
+				The direction of <m>\vec B</m> is same as the direction of <m>\vec H</m>.				
+			</p>
+		</solution>
+
+		<solution> <title>(b)</title>
+			<p>
+				(b) The magnitudes of the fields at the indicated point inside are
+				<md>
+					<mrow> H_\text{in} \amp = \dfrac{I}{R^2}\, s</mrow>
+					<mrow> \amp = \dfrac{100\text{ A}}{0.01^2\text{ m}^2}\, 0.05\text{ m} = 5.0\times 10^{4}\text{ A/m}. </mrow>
+					<mrow> M \amp = \chi_{M,\text{Cu}} H_\text{in} </mrow>
+					<mrow> \amp = −0.97\times 10^{-5} \times 5.0\times 10^{4}\text{ A/m} = -4.85\times 10^{4}\text{ A/m}</mrow>
+					<mrow> B \amp = \mu_0 (H + M)</mrow>
+					<mrow> \amp = 4\pi\times 10^{-7}\text{ T.m/A}\times (5.0-4.85)\times 10^{4} \text{ A/m}= 1.88\times 10^{-3}\text{ T}. </mrow>
+				</md>
+			</p>
+		</solution>
+
+	</exercise>
+
+
+	<exercise xml:id="ex-Magnetization-of-Platinum-Inside-a-Solenoid"><title> Magnetization of Platinum Inside a Solenoid </title>
+		<statement>
+			<p>
+				A solenoid is constructed by wounding wires over a long platinum rod.  For a winding of <m>3000 \text{ turns per meter}</m> and a current of <m>15\text{ A}</m> through the wires, find the magnetization of platinum. 
+			</p>
+			<p>
+				Data: <m> \chi_{M,\text{Pt}} = + 26.74\times 10^{-5}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Find <m>\vec H</m> first. </p> </hint>
+		<answer> <p> Magnitude: <m> 12.0\text{ A/m}</m>, Direction: same as the magnetic field.  </p> </answer>
+		<solution> 
+			<p>
+				To ensure the symmetry we will assume that we have an infinitely long solenoid. With this assumption when we apply  Ampere's law for <m>\vec H</m>, we find the following for the magnitude <m>H</m> at cylindrical radial distance <m>s</m> from the axis, for solenoid of <m>n</m> turns per unit length and current <m>I</m>.
+				<me>
+				 	H  = 
+				 		\begin{cases}
+				 			nI, \amp  s \text{ inside}\\
+				 			0, \amp  s \text{ outside}
+				 		\end{cases}
+				</me>
+				The direction is given by the right-hand rule. Since platinum is paramagnetic, we can get <m>\vec M</m> from <m>\vec H_\text{in}</m> and <m>\chi_M</m>.
+				<me>
+					\vec M = \chi_M\, \vec H_\text{in}.
+				</me>
+				Numerically, we will get
+				<md>
+					<mrow> M \amp = \chi_M\, nI </mrow>
+					<mrow> \amp =  26.74\times 10^{-5}\times 3000\text{ m}^{-1} \times 15\text{ A} =12.0\text{ A/m}.</mrow>
+				</md>
+				Since <m>\chi_M</m> of Pt is positive, <m>\vec M</m> is in the same direction as <m>\vec H</m>.				
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Magnetization-of-Water-from-Parallel-Currents-over-its-Surface"><title> Magnetization of Water from Parallel Currents over its Surface</title>
+		<statement>
+			<p>
+				Thin insulated wires run parallel in a water tank.  There are <m>2500\text{ wires per meter}</m>, each carrying the same current of <m>8\text{ A}</m>.  Find the magnetization of water.  
+
+			</p>
+			<p>
+				Data: <m> \chi_{M,\text{H}_2\text{O}} = −9.035\times 10^{−6}.</m>
+			</p>
+
+		</statement>
+		<hint> <p> Treat current in wires as forming a surface current over water.  </p> </hint>
+		<answer> <p> Magnitude: <m>9.035 \times 10^{-2} \text{ A/m}</m>, Direction: Opposite to the magnetic field.  </p> </answer>
+		<solution> 
+			<p>
+				Parallel wires above water can be treated as planar current with surface current density <m> K</m>,
+				<md>
+					<mrow>\amp K = 2500\text{ m}^{-1} \times 8\text{ A} = 20,000\text{ A/m}.</mrow>
+				 	<mrow> \amp 
+				 	H = \dfrac{K}{2} =  10,000 \textrm{ A/m}.</mrow>
+				</md>
+				Since water is a diamagnetic, we can get magnetization <m>\vec M</m> from <m>\vec H</m> and <m>\chi_M</m>. Therefore magnetization of water under these conditions is
+				<me>
+				 	M = \chi_M\: H = −9.035\times 10^{−6}\times 10^4\textrm{ A/m} = −9.035 \times 10^{-2} \text{ A/m}.
+				</me>
+				The sign is negative because magnetization is in opposite direction of <m>\vec H</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Magnetization-of-Oxygen-Gas-by-Current-in-a-Wire"><title> Magnetization of Oxygen Gas by Current in a Wire </title>
+		<statement>
+			<p>
+				A long tungsten cylindrical wire of thickness <m>2\text{ mm}</m> is surrounded by oxygen gas at <m>1\text{ atm}</m> and <m>20^{\circ}\text{C}</m> in a glass tube.  Oxygen gets magnetized when you pass current through the wire. But the magnetization depends upon distance from the wire. Find magnetization of oxygen at a distance <m> 10\text{ cm}</m> from the center of the wire when <m>3\text{ A}</m> current passes in the wire.
+			</p>
+			<p>
+				Data: <m> \chi_{M,\text{O}_2} = 3.97\times 10^{-2}</m>.
+			</p>
+		</statement>
+		<hint> <p> Find <m>H</m> first.  </p> </hint>
+		<answer> <p> <m>1.9 \text{ A/m}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Let <m>s</m> denote the cylindrical radial distance from the center of the wire. The applied field of the curren the wire, i.e., <m>\vec H</m> has the following magnitude outside the wire.
+				<me>
+					H = \dfrac{I}{2\pi s} =  \dfrac{0.48}{s}\: \textrm{A/m},
+				</me>
+				where <m>s</m> is the numerical part of distance expressed in <m>\text{m}</m>. 
+				The direction of <m>\vec H</m> is tangent to circle about the wire. 
+				Since O<m>_2</m> is paramagnetic, we can use <m>\chi_M</m> to get <m>M</m> at an arbitray point in  O<m>_2</m>.
+				<me>
+					M = \chi_{M} H = 3.97\times 10^{-2} \times \dfrac{0.48}{s}\: \textrm{A/m} = \frac{1.9\times 10^{-2}}{s} \ \textrm{A/m}.
+				</me>
+				Therefore, at <m>s=10\text{ cm}</m> we will get
+				<me>
+					M = \frac{1.9\times 10^{-2}}{0.01 } \ \textrm{A/m} = 1.9 \text{ A/m}.
+				</me>
+				the direction of <m>\vec M</m> is same as that of <m>\vec H</m>.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+	 
+</section>

@@ -1,0 +1,251 @@
+<section xml:id="Motional-EMF"><title> Motional EMF</title>
+	<introduction>
+		<p>
+			Faraday's flux rule states that a changing magnetic flux through an open surface induced an EMF in the closed loop around the surface. The induced EMF is equal to the rate at which magnetic flux through the surface chages.
+			<me>
+				\mathcal{E}_\text{ind} = -\dfrac{\Delta \Phi_B}{\Delta t}.
+			</me>
+			The flux change can occur in three ways with each contributing to the induced EMF.
+			<ol>
+				<li>
+					Changing magnetic field magnitude
+				</li>
+				<li>
+					Changing area of the surface
+				</li>
+				<li>
+					Changing orientation of the surface with respect to the magnetic field.
+				</li>
+			</ol>
+
+ 			Both changing of area and orientation involve motion and hence the EMF induced as a result of motion are called <term> motional EMF</term>. In this section we will illustrate motional EMF in a moving bar.
+		</p>
+	</introduction>
+
+	<subsection><title>Moving Conductor in a Magnetic Field </title>
+
+		<p>
+			You may remember a useful rule that a conductor has same electric potential at all points. Turns out that this rule is true only for static conditions. When a conductor is moving in a magnetic field, Lorentz force on conduction electrons can polarize the metal. This leads to a potential difference in the conductor even in the absence of any voltage source! We will work out a formula for this voltage now. 
+		</p>
+ 
+ 		<p>
+			Consider a neutral metallic bar moving with velocity <m>\vec v</m> in a region of magnetic field <m>\vec B</m> perpendicular to the velocity as shown in <xref ref="fig-faraday-mech-emf-1"/>. The conduction elctrons in the metal are free to move while positive nuclei are fixed in place. Therefore, magnetic force on conduction electrons will accelerate them. 
+		</p>
+
+		<!-- <sidebyside widths="70% 30%">	
+			<p>
+				Consider a neutral metallic bar moving with velocity <m>\vec v</m> in a region of magnetic field <m>\vec B</m> perpendicular to the velocity as shown in figure. The conduction elctrons in the metal are free to move while positive nuclei are fixed in place. Therefore, force on electron will accelerate the conduction electrons. 
+			</p>
+			<image source="./images/em-effect/motional-emf-moving-bar-alone.png" width="30%"/>
+		</sidebyside> -->
+
+		<figure xml:id="fig-faraday-mech-emf-1">
+			<caption>
+				Magnetic force on conduction electrons accelerates them to one end of the moving rod. With accumulation of charges, electric field in the rod develops which opposes the magnetic force. For steady speed motion, the two forces balance and prevent further accumulation.
+			</caption>
+			<image source="./images/em-effect/faraday-mech-emf-1.png" width="80%"/>		
+		</figure>
+
+
+
+		<p>
+			Since accelerating electrons cannot leave the bar, they will start to accumulate at one end, making that end negative relative to the other end of the bar, which becomes positive. Resulting polarization of the bar creates electric field <m>\vec E</m>  that opposes the magnetic force. An equilibrium is reached for a bar that is moving a constant speed. At equilibrium, we must have the following for every electron.
+			<men xml:id="eq-moving-bar-magnetic-force-balance">
+				-e v B = - e E\Longrightarrow E = v B.
+			</men>
+			Let <m>l</m> be the length of the bar. Then, assuming <m>E</m> to be constant throughout the moving bar, we can state that the two ends will have a potential difference given by the following.
+			<men xml:id="eq-moving-bar-potential-difference">
+				 \phi_+ - \phi_- = E l = v B l.
+			</men>
+			This potential difference disappears very soon after the bar stops moving. Since, this phenomenon is purely dynamical, a better way for looking at this is through Faraday's law. 
+		</p>
+		<sidebyside widths="55% 5% 40%">
+			<p>
+				In terms of Faraday's law, we think of the moving bar as part of a fictitious circuit shown dashed in <xref ref="fig-moving-rod-fictitious-circuit"/>. When bar is moving, the magnetic flux through the fictious loop is varying at rate equal to <m>Bvl</m>. Therefore, we expect an EMF to be induced in the circuit of this amount.  
+				<men xml:id="eq-motional-emf-from-force">
+					\left| \mathcal{E}_\text{ind}\right| = Bvl.
+				</men>
+			</p>
+			<p></p>
+			<figure xml:id="fig-moving-rod-fictitious-circuit">
+				<caption>
+				</caption>
+				<image source="./images/em-effect/moving-rod-fictitious-circuit.png" width="80%"/>	
+			</figure>
+		</sidebyside>
+						
+		
+	</subsection>
+
+	<subsection><title> Moving Metal Bar on a U-Shaped Metal</title>
+		<p>
+			Now, we examine what will happen if electrons in a moving conductor did not accumulate, but they coul continue their drift in some other conductor. To provide a continuous path to drifting electrons, we slide the bar on a U-shaped metal as shown in <xref ref="fig-motional-emf-moving-bar-over-u-rails"/>.
+		</p>
+
+		<!-- <sidebyside widths="50% 50%"> -->
+			
+				<p> 				 
+					Even though charges will not accumulate anywhere in the loop made by the U-shaped metal and moving cross bar, the motion of the cross bar will continuously accelerate charges, which will cause drift of electrons. The traditional current direction is shown in the opposite direction to the drift of electrons in <xref ref="fig-motional-emf-moving-bar-over-u-rails"/>.
+				</p>
+			<!-- 
+
+			<image source="./images/em-effect/motional-emf-moving-bar-over-u-rails.png" width="30%"/>
+		</sidebyside> -->
+
+		<figure xml:id="fig-motional-emf-moving-bar-over-u-rails">
+			<caption>
+				Metal sliding bar in a magnetic field. There are two equivalent ways of explaining the generation of induced current in the closed conducting loop made by the bar and the U-shaped metal. In the Lorentz force picture, we look at the EMF by the magnetic force on mobile charges of the metal bar. In the flux rule picture, we look at the expanding area of the surface enclosed by the loop. The shaded part shows the amount the horizontal dimension of the loop expands in time <m>\Delta t</m>.
+			</caption>
+			<image source="./images/em-effect/motional-emf-moving-bar-over-u-rails.png" width="60%"/>
+		</figure>
+
+
+
+		<p>
+			We can compute the amount of work is done per unit charge for moving the charge around the circuit once, i.e., the EMF induced in teh circuit, in the following two equivalent ways.
+		</p>
+
+		<p>
+			<alert> 1. Using Lorentz Force</alert>
+		</p>
+		<p>
+			Since only the bar is moving, the electric field will be same as we worked out in <xref ref="eq-moving-bar-magnetic-force-balance"/>, from which, we will find that the induced EMF has magnitude given by Eq. <xref ref="eq-motional-emf-from-force"/>. 
+			<men xml:id="eq-motional-emf-from-force-reproduced">
+				\mathcal{E}_\text{ind} = vBl.
+			</men>
+			Since we have a loop associated with this force, we can actullay, use Faraday flux rule to get this answer as we show next.
+		</p>
+
+
+		<p> <alert> 2. Using Faraday's Flux Rule </alert></p>
+		<p>
+			We can understand Eq. <xref ref="eq-motional-emf-from-force-reproduced" /> from Faraday's flux rule in Eq. <xref ref="eq-faraday-law-average-EMF"/> or <xref ref="eq-faraday-law-average-EMF-three-sources"/> if we think of the cross-bar making a closed loop with the U-shaped metal. Therefore, instead of interperting current induced by Lorentz force as in  Eq. <xref ref="eq-motional-emf-from-force"/>, we can actually, think of this emf being induced by changing area, i.e.,  <m>\Delta \Phi_{B,A}</m>.  During  <m>t</m> to <m>t+\Delta t</m>, the bar moves a distance <m>v\Delta t</m> and hence the area of the loop increases by 
+			<me>
+				\Delta A = l v\Delta t,
+			</me>
+			which is shown shaded in <xref ref="fig-motional-emf-moving-bar-over-u-rails"/>. 
+			Therefore, induced EMF will be
+			<md>
+				<mrow> \mathcal{E}_\text{ind} \amp  = - \dfrac{\Delta \Phi_{B,B}}{\Delta t} -\dfrac{\Delta \Phi_{B,A}}{\Delta t} -  \dfrac{\Delta \Phi_{B,\theta}}{\Delta t}, </mrow>
+				<mrow> \amp = -\dfrac{\Delta \Phi_{B,A}}{\Delta t}, </mrow>
+				<mrow> \amp =  - B \cos 0^\circ \dfrac{\Delta A}{\Delta t}, </mrow>
+				<mrow> \amp =  - B  l v, </mrow>
+			</md>
+			which has the same magnitude as in Eq. <xref ref="eq-motional-emf-from-force"/>, the motional EMF found by looking at force on the conducting electrons. The sign here tells us that induced current when bar is moving out, will be in the clockwise sense when viewed from the area vector direction, i.e., opposite of the area vector direction when we use the right-hand rule illustrated above.			
+		</p>
+		<p>
+			Equivalent descriptions of moving bar induced EMF by Lorentz force and by flux rule clearly demonstrates that one should not just add EMF's from these two calculations since that would double count the EMF. A good practice is that you first examine all the EMF's that can be included by the flux rule, and then reexamine the circuit to find any Lorentz force-indeuced EMF that has not been accounted for.
+		</p>
+	</subsection>
+
+	<subsection><title> Energy Dissipation by Induced Current</title>
+
+		<p>
+			We have found that when the area of a conducting loop changes, an induced current flows in the loop.  Say the loop has some resistance <m>R</m>, the flowing current in the conductor will result in the heating of the conductor and energy will exit the loop at the following rate.
+			<me>
+				P = I_\text{ind}\,R^2.
+			</me>
+		</p>
+		<sidebyside widths="60% 10% 30%">
+			<p>
+				Where does this energy come from? Magnetic force due to velocity <m>v</m> of the movement of the bar as a whole is along the wire, but magnetic force on the current in the bar is pointed opposite to the velocity of the bar. Thus, to maintain the velocity at <m>\vec v</m>, an external force <m>\vec F</m> must be pulling the bar with force that balances the magetic force on the bar of length <m>l</m>.  
+				<me>
+					F = I_\text{ind}\,Bl.
+				</me>
+			</p>
+			<p></p>
+			<figure>
+				<caption></caption>
+				<image source="./images/em-effect/bar-on-u-rail-external-force-balancing-magnetic-force.png" width="60%"/>
+			</figure>
+		</sidebyside>
+
+
+		<p>
+			The rate at which this force does work is
+			<me>
+				\dfrac{W}{\Delta t} = F v = I_\text{ind}\,Bl v.
+			</me>
+			The EMF in the circuit is <m>Blv</m>. Therefore,
+			<me>
+				\dfrac{W}{\Delta t} = I_\text{ind}\mathcal{E}_\text{ind}.
+			</me>
+			Now, using Ohm's law we can write this as
+			<me>
+				\dfrac{W}{\Delta t} = I_\text{ind}\, R^2.
+			</me>
+			We find that the energy for current in the current loop is provided by an external agent that is moving the bar.
+		</p>
+
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Induced-EMF-When-Metal-Bar-Moving-on-U-shaped-Rails"><title> Induced EMF When Metal Bar Moving on U-shaped Rails </title>
+		<statement>
+			<p>
+				A metal bar of mass 500 g slides outward at a constant speed of 1.5 cm/s over two parallel rails separated by a distance of 30 cm which are part of a U-shaped conductor.  There is a uniform magnetic field of magnitude 2 T pointing out-of page over the entire area.  The railings  and the metal bar have an equivalent resistance of 150 <m>\Omega</m>.  
+			</p>
+			<p>
+				(a) Determine the induced current, both magnitude and direction. 
+			</p>
+			<p>
+				(b) Find the direction of the induced current if the magnetic field is pointed into the page.  
+			</p>
+			<p>
+				(c) Find the direction of the induced current if the magnetic field is pointed into the page and the bar moves inwards. 
+			</p>
+
+		</statement>
+		<hint> <p> Use flux rule and Lenz's law.  </p> </hint>
+		<answer> <p>  (a)  <m>6\times 10^{-5} \ \text{A}</m>, (b) counterclockwise, (c) clockwise. </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a)	The magnitude of induced current is equal to induced EMF divided by equivalent resistance.
+				\[
+				 	I_{\text{ind}} = \dfrac{\left|\Delta \Phi/\Delta t \right|}{R_{\text{eq}}} = \dfrac{2\:\text{T}\times0.3\:\text{m}\times 0.015\:\text{m/s}}{150\:\Omega} = 6\times 10^{-5}\:\text{A}.
+				\]
+				The direction of the induced current will be such that its magnetic field will tend to oppose the change in magnetic flux through the loop.  Hence, we need in-the-page direction for the induced magnetic field.  Hence, induce current will be clock.wise.
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				 
+				(b)	The induced EMF will be in the counterclockwise direction for a magnetic field  pointed into-the-page.
+				 
+			</p>
+		</solution>
+		<solution><title>(c)</title> 
+			<p>
+				(c)	If the magnetic field was pointed into-the-page and the metal bar moved inward, then the induced magnetic field must be also into-the-page in order to oppose the change in the magnetic flux.  Hence, the induced current will be in the clockwise direction as seen from above.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,297 @@
+<section xml:id="Applications-of-Bernoullis-Equation"><title> Applications of Bernoulli's Equation </title>
+
+
+	<subsection><title>Bernoulli for Static Fluid or Same Speed at Two Ends </title>
+ 
+		<p>
+
+			Bernoulli's equation includes static behavior as we can see immediately by setting <m> v_1 = v_2 = 0</m> in the equation. 
+			<men>
+				p_1 + \rho g h_1 = p_2 + \rho g h_2.  \ \ \text{(Static)}
+			</men>
+			If the area of pipe at the entrance and exit points are same, the speed of flow will be same, canceling the kinetic energy terms. This results in the same equation.
+			<men>
+				p_1 + \rho g h_1 = p_2 + \rho g h_2.  \ \ \text{(Same Pipe Size at Ends)}
+			</men>
+			This says that work by the pressure difference between two points in a fluid at rest of having same criss-sections, provides the difference in the potential energy.
+			<men>
+				p_1 -p_1 =  \rho g \left( h_2 - h_1 \right). 
+			</men> 
+		</p>
+	</subsection>
+
+	<subsection><title> Same Pressure at Two ends</title>
+ 
+		<p>
+			This tells us that energy entering at 1 must equal the energy leaving at 2.
+			<men xml:id="eq-torricelli-eqn-general">
+				\dfrac{1}{2}\rho v_1^2 + + \rho g h_1 =  \dfrac{1}{2}\rho v_2^2 + + \rho g h_2.
+			</men>					
+		</p>
+		<p>
+			Suppose we have a wide tank full of water with a narrow opening on the side. Let point 1 be the water level and 2 the exit at the narrow opening as indicated in <xref ref="fig-torricellis-law-in-a-tank-2"/>. The difference in area of cross-sections is so great here, i.e., <m> A_1 \gt\gt A_2</m>, means <m> v_1 \approx 0</m>.
+		</p>
+		<figure xml:id="fig-torricellis-law-in-a-tank-2">
+			<caption>
+				Note that the water system is pushed by atmospheric pressure at 1 and also exiting at 2 against the same atmospheric pressure.
+			</caption>
+			<image source="./images/dynamic-fluid/torricellis-law-in-a-tank.png" width="60%"/>
+		</figure>
+
+		<p> Note that at the faucet, the pressure <m>p_2 = 1\text {atm}</m>. Its not <m>p_2 \ne 1\text {atm} + \rho g h</m>, since we want the pressure against which the flow pushes, not the pressure inside the fluid before it comes out of the faucet.
+		</p>
+		<p>
+			With <m> v_2=0</m>, <m> h = h_1 - h_2</m>, and <m> p_1 = p_2</m>, Eq. <xref ref="eq-torricelli-eqn-general" />, ends up giving us a simple formula for the speed with which water will be exiting at the narrow opening.
+			<me>
+				v_1 = \sqrt{2gh},
+			</me>
+			which may remind you of the formula of the speed of a ball dropped by a height <m> h</m>, which is not surprising since both invove conservation of energy during a fall by a height <m>h</m>. This formula is sometimes referred to as the <term> Torricelli's law</term>.
+
+		</p>
+	</subsection>
+
+	<subsection> <title> Bernoulli for no Change in Height </title>
+
+		<p>
+			For horizontally flowing case, <m>h_1=h_2</m>, Bernoulli's equation simplifies.
+					<men>
+						p_1 + \frac{1}{2}\rho v_1^2  = p_2 + \frac{1}{2}\rho v_2^2.
+					</men>
+				An important interpretation of this equation is that in a fluid, pressure is lower where the speed is higher and vice versa.  This conclusion  is quite <q>contrary to the common sense</q>.  It would seem that pressure should be greater where the fluid is flowing at a higher speed than where it is flowing at a lower speed, but Bernoulli's equation tells us that just the opposite is true.
+		</p> 
+		<p>
+			Following examples show applications to airplane lift and baseball spin. Similarly, in atmospheric physics, we find that the wind speed is higher where the pressure is lower, and in circulatory system, blood flows fastest where the pressure is the lowest.  
+		</p>
+	</subsection>
+
+	<example xml:id="exp-bernoulli-lift-force-on-airplane-wing"> <title> Lift Force on Airplane Wing </title>
+		<p> 
+
+			To make use of this aspect of the flow of fluids, airplane wings are constructed so that air will flow with a greater speed above the wings than below the wings.  This flow pattern gives rise to a lower pressure at the top of the wing than at the bottom.
+		</p>
+
+		<p>
+			Therefore, the force pushing on the wing from below would be larger than the force pushing down on the wing from the above.  This difference in the force is called the <term> lift force </term> and is responsible for flying.  
+		</p>
+
+		<sidebyside widths="55% 45%">
+
+			<p>
+				Air flows faster above the wing of an airplane than below the wing aided by the design of the foil. Therefore, pressure above the wing is less than below the wing.  The product of the area of the wing and the difference in pressure is the lift force on the wing.
+			</p>
+
+
+			<image source="./images/dynamic-fluid/bernoulli-flow-over-and-under-wing-annotated.png" width="70%"/>
+		</sidebyside>
+	</example>
+	
+	<example xml:id="exp-appl-bernoulli-spinning-baseball"><title> Spinning Baseball </title>
+		<sidebyside widths="55% 45%">
+			<p>
+				Downward force on spinning curve baseball arises due to increased speed of the air flow at the bottom compared to the speed above the ball when the ball is spinning backwards.
+			</p>
+
+			<image source="./images/dynamic-fluid/bernoulli-flow-around-spinning-ball.png" width="70%"/>
+		</sidebyside>
+	</example>
+
+	<exercise><title>  The Lift Force on an Airplane Wing </title>
+		<statement>
+			<p>
+				An air plane of mass 1000 kg has air of density <m>1.2\ \text{kg/m}^3</m> flowing above the wing of area <m>15\ \text{m}^2</m> at a speed of <m>60\text{ m/s}</m> over the top surface and <m>50\text{ m/s}</m> past the bottom surface.  
+			</p>
+			<p>
+				(a) Find the lift force on the airplane wing. 
+			</p>
+			<p>
+				(b) How does the lift force compare with the weight of the airplane?
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Use Bernoulli's equation, then use <m>A\Delta P</m> to get the force. (b) Take difference to compare. </p> </hint>
+		<answer> <p> (a) <m>9,900\ \text{N} </m>, (b) The lift force is <m>100</m> N more than the weight.  </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				Since the height between the top and bottom of the wing is negligible for the present purpose, we can find the pressure difference between the top and bottom of the wing by using simplified Bernoulli's equation.
+				<md>
+					<mrow> \amp   p_1 + \frac{1}{2}\rho v_1^2 = p_2 + \frac{1}{2}\rho v_2^2</mrow>
+					<mrow>  \amp  p_{\text{bottom}} -  p_{\text{top}} = \frac{1}{2}\rho_{\text{air}}\left( v_{\text{top}}^2 - v_{\text{bottom}}^2 \right) = 660\ \text{Pa}. </mrow>
+				</md>
+				The magnitude of the lift force <m>F_L</m> is the pressure difference times area of the wing.
+				<me>
+					F_L = 660\ \text{Pa}\times 15\ \text{m}^2 = 9,900\ \text{N}.
+				</me>
+ 
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b) The weight of the plane is <m>W= 1000\ \text{kg}\times9.81\ \text{m/s}^2 =9800 \text{N}</m>.  Hence, in the present case, the lift force is <m>100</m> N more than the weight. 
+			</p>
+		</solution>		
+	</exercise>
+
+	<example xml:id="exp-bernoulli-the-venturi-meter"> <title> The Venturi Meter</title>
+		<statement>
+			<p>
+				The Venturi meter is a device for measuring the flow speed of gases and liquids of a known density  <m>\rho</m>.  The fluid at some unknown speed <m>v_1</m> enters at the inlet, as shown in <xref ref="fig-venturi-meter"/>, passes through a constriction called the throat where a manometer is attached which contains a denser liquid of density <m>\rho_0</m>.  The areas of cross-section at the inlet and constriction are <m>A_1</m> and <m>A_2</m> respectively. The difference in levels <m>h</m> is related to speed <m> v_1 </m>. Find this relation.
+			</p>
+			<figure xml:id="fig-venturi-meter">
+				<caption>
+					The Venturi meter for <xref ref="exp-bernoulli-the-venturi-meter"/>.
+				</caption>
+				<image source="./images/dynamic-fluid/venturi-meter.png" width="75%"/>
+			</figure>
+
+		</statement>
+		<hint> <p> Treat flow of fluid <m>\rho</m> by Bernoulli equation and <m>\rho_0</m> by static fluid techniques.</p></hint>
+		<answer> <p> <m> \sqrt{\frac{2(x-1)gh}{\left( 1-y^2 \right)}}</m>.</p></answer>
+		<solution>
+			<p>
+
+				Let <m>p_1</m> be the pressure at the inlet and <m> p_2</m> at the constricted point shown in the figure. 
+				Applying Bernoulli's equation to the flowing fluid of density <m>\rho</m> at the inlet and outlet at the same height we obtain the following equation.
+				<men xml:id="eq-venturi-1">
+					p_1 + \frac{1}{2}\rho v_1^2 = p_2 + \frac{1}{2}\rho v_2^2.
+				</men>
+			</p>
+			<p>
+				Another relation between the pressures at the inlet and outlet is obtained by applying the static pressure condition on the fluid of density <m>\rho_0</m> in the tube.  Let <m>H</m> be the height of flowing fluid above A. Then, we have <m>H-h</m> the height of flowing fluid in the right side of the U tube. Equating the fluid pressure at A with that at B we get
+				<men xml:id="eq-venturi-2">
+					p_1 \rho g H = p_2+ \rho g (H-h) + \rho_0 g h.
+				</men>
+				Subtracting Eq. <xref ref="eq-venturi-2"/>  from  Eq. <xref ref="eq-venturi-1"/> we find
+				<men xml:id="eq-venturi-3">
+					\left( \rho_0-\rho \right) gh = \frac{1}{2}\rho v_2^2- \frac{1}{2}\rho v_1^2. 
+				</men>
+			</p>
+			<p>
+				The equation of continuity for flowing gas between the inlet and outlet gives us the other relation we need to find <m>v_1</m>.
+				<men xml:id="eq-venturi-4">
+					A_1v_1 = A_2 v_2.
+				</men>
+				Eliminating <m>v_2</m> from Eqs. <xref ref="eq-venturi-3"/> and <xref ref="eq-venturi-4"/>,  we find the following result for the speed of gas at the inlet.
+				<men xml:id="eq-venturi-eqn">
+					v_1 = A_1\sqrt{\frac{2(\rho_0-\rho)gh}{\rho\left( A_1^2-A_2^2 \right)}}. \label{}
+				</men>
+			</p>
+			<p>
+				Therefore, we can write <m>v_1</m> in a more compact way
+				<men>
+					v_1 = \alpha\,\sqrt{  h },
+				</men>
+				where <m>\alpha</m> is a constant. Recording the difference in the two arms of the U-tube for the static fluid of density <m>\rho_0</m> gives us <m>h</m> which lets us determine the flow speed of the flowing fluid of density <m>\rho</m> at the inlet by Eq. <xref ref="eq-venturi-eqn"/>.
+			</p>
+			<p>
+				The formula in Eq \ref{eq:venturi-eqn} can be simplified by introducing the following ratios.
+				<md>
+					<mrow> \amp  x \equiv \frac{\rho_0}{\rho},</mrow>
+					<mrow> \amp  y \equiv \frac{A_2}{A_1}. </mrow>
+				</md>
+				With these changes Eq  <xref ref="eq-venturi-eqn"/> becomes
+				<men>
+					v_1 = \sqrt{\frac{2(x-1)gh}{\left( 1-y^2 \right)}},  
+				</men>
+				which has the added advantage that we do not need to worry about the particular system of units for the densities and the areas because they cancel out in the ratios.
+			</p>
+		</solution>
+	</example>
+
+ 
+
+	<exercise xml:id="ex-Pressure-Across-a-Roof-on-a-Windowy-Day"><title> Pressure Across a Roof on a Windowy Day </title>
+		<statement>
+			<p>
+				On a windy day wind blows on top of a roof at a speed of <m>110\text{ km/hr}</m>.  Under the roof air is quiet. If the density of air is <m>1.3\text{ kg/m}^3</m>, what is the lift force per unit area of the roof.
+			</p>
+
+		</statement>
+		<hint> <p> Apply Bernoulli's principle across the roof.  </p> </hint>
+		<answer> <p> <m> 607\text{ N/m}^2.</m>  </p> </answer>
+		<solution> 
+ 
+ 			<sidebyside widths="50% 10% 40%">
+				<p>
+					We apply Bernoulli's principle between two points as shown in the figure below. We can do this, even though, the flow is not the flow of a fluid in the same tube, since air on the two sides of the roof can flow around the roof into each other freely. 
+				</p>
+				<p></p>
+				<image source="./images/dynamic-fluid/pressure-across-a-roof.png" width="50%"/>
+			</sidebyside>
+
+			<p>
+				 The values of the parameters of interest are
+				<md>
+					<mrow> \amp   h_2 -h_1 \approx 0 </mrow>
+					<mrow> \amp   v_1 = 0\ \ \textrm{(just when starts to flow)} </mrow>
+					<mrow> \amp   p_1 = p_{\textrm{atm}} = 1.013\times 10^{5}\ \textrm{Pa} </mrow>
+					<mrow> \amp   v_2 = 110\ \textrm{km/h} = 30.6\ \textrm{m/s} </mrow>
+				</md>
+				Therefore, we get
+				<me>
+					p_2 + \frac{1}{2}\rho v_2^2 = p_1.
+				</me>
+				Putting in the numbers this gives
+				<me>
+					p_2 = p_1 - 607\ \textrm{Pa}.
+				</me>
+				The magnitude of the lift force <m>F_L</m> will be equal to the product of the the difference of pressure and the surface area <m>A</m>.  The lift force per unit area of the roof will have the magnitude,
+				<me>
+					\frac{F_L}{A} = |\Delta p| =  607\ \textrm{Pa},
+				</me> 
+				and the direction would be from the inside to the outside.
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Speed-of-Flow-of-Water-in-a-Pipe-Determined-by-a-Venturi-Meter"><title> Speed of Flow of Water in a Pipe Determined by a Venturi Meter </title>
+		<statement>
+			<p>
+				A venturi flow meter shown in <xref ref="fig-venturi-meter-water"/> is used to measure the speed of water in a pipe of diameter <m>5\text{ cm}</m>. The Venturi meter uses an oil with density <m>1.8\text{ g/cc}</m> and at the consgtriction, the diameter is <m>1.5\text{ cm}</m>. The difference in the height in the U-tube of the meter is <m>2\text{ cm}</m>.
+			</p>
+			<p>
+				Find the speed of flow of water in the <m>5\text{-cm}</m> pipe. 
+			</p>
+			<figure xml:id="fig-venturi-meter-water">
+				<caption>
+					Figure for <xref ref="ex-Speed-of-Flow-of-Water-in-a-Pipe-Determined-by-a-Venturi-Meter"/>.
+				</caption>
+				<image source="./images/dynamic-fluid/venturi-meter.png" width="75%"/>
+			</figure>
+		</statement>
+		<hint> <p> Study Venturi meter in <xref ref="exp-bernoulli-the-venturi-meter"/> first.  </p> </hint>
+		<answer> <p> <m>58.7\text{ cm/s}</m>  </p> </answer>
+		<solution> 
+			<p>
+				There are two fluids in the venturi system, the manometer fluid of density <m>\rho_0</m> and the flowing fluid of density <m>\rho</m>.  After utilizing the Bernoulli's equation between <m>A_1</m> and <m>A_2</m> and using static fluid formulas for the fluid <m>\rho_0</m> it has been in the text that
+				<md>
+					<mrow> v_1 \amp = A_1\sqrt{\frac{2(\rho_0 - \rho) g h}{\rho(A_1^2 - A_2^2)}}</mrow>
+					<mrow> \amp =  \sqrt{\frac{2(x - 1) g h}{(1 - y^2)}},</mrow>
+				</md>
+				where <m>x = \rho_0/\rho</m> and <m>y = A_2/A_1 = d_2/d_1</m> with <m>d_1</m> and <m>d_2</m> the diameters. In this exercise we have
+				<md>
+					<mrow> \amp   \textrm{Diameter,}\ d_1 = 5\ \textrm{cm},</mrow>
+					<mrow> \amp   \textrm{Diameter,}\ d_2 = 1.5\ \textrm{cm},</mrow>
+					<mrow> \amp   y = 1.5/5 = 0.3.</mrow>
+				</md>
+				<md>
+					<mrow> \amp   \rho_0 = 1.8 \ \textrm{g/cc} = 1800 \ \textrm{kg/m}^3, </mrow>
+					<mrow> \amp   \rho  = 1.0 \ \textrm{g/cc} = 1000 \ \textrm{kg/m}^3\ \ (\textrm{water}), </mrow>
+					<mrow> \amp   x = 1.8. </mrow>
+				</md>
+				<me>
+					 h = 2\ \textrm{cm}.
+				</me>
+				Putting these values in the formula I got <m>v_1 = 58.7\text{ cm/s}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+ 
+
+
+</section>

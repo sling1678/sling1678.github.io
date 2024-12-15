@@ -1,0 +1,231 @@
+<section xml:id="Real-Engines"><title> Real Engines </title>
+	<subsection><title>The Efficiency of a Real Heat Engine</title>
+		<p>
+			Real heat engines also transform heat into work.  Real engines lack the ideal condition envisioned in the Carnot cycle which  causes the efficiency of real engines to be less than that of a Carnot engine working between the same two temperature baths. 
+			<men>
+				\eta_{\text{real}} \lt \eta_{\text{Carnot}} = 1- \frac{T_C}{T_H}
+			</men>
+			We obtain the efficiency of real engines from the work done <m> W</m> output of the engine for unit amount of heat absorbed, <m> Q_{H}</m>.
+			<men>
+				\eta_{\text{real}} \ne 1- \frac{T_C}{T_H}, \text{but instead}, \eta_{\text{real}} = \frac{W}{Q_{H}}.
+			</men>
+			The efficiency of the Carnot engine serves as an upper bound on the efficiency of all engines, and is often used as guide for rough calculations. 
+		</p> 
+	</subsection>
+
+	<exercise xml:id="ex-The-Real-Efficiency-of-a-Power-Plant"><title> The Real Efficiency of a Power Plant </title>
+		<statement>
+			<p>
+				A power plant uses a steam engine to produce <m>300\text{ MW}</m> of electric power.  The steam in the power plant is heated by burning natural gas that releases <m>1000\text{ MJ}</m> of heat per second.   The steam enters the turbine at a temperature of <m>660\text{K}</m> and is discharged to the condenser at <m>310\text{K}</m>.  Cold water runs through the condenser to cool the hot water there thus removing the heat at lower temperature.
+			</p>
+			<p>
+				(a) What is the actual efficiency of the power plant, and how does it compare with the maximum efficiency possible?  
+			</p>
+			<p>
+				(b) If the temperature of the running water through the condenser rises by <m>10^{\circ}\text{C}</m>, what is the rate at which water must be pumped through the condenser?
+			</p>
+
+		</statement>
+		<hint> <p> (a) Actual efficiency is based on energy and the ideal efficiency can be obtained from absolute temperatures. (b) Use <m> mc\Delta T</m> to account for heat carried away by water.  </p> </hint>
+		<answer> <p> (a) 30%, 53%, (b) <m> 1.67\times 10^4\ \text{kg/s}</m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a) The actual efficiency is given by the ratio of work produced to the heat taken in.  The energy figures in the question are given as powers, therefore, we look at the energies in one second. Hence,
+				<me> 
+					\eta_{\text{real}} = \frac{W}{Q_{H}} = \frac{300\ \text{MJ/s}\times 1 \text{s}}{1000 \ \text{MJ/s}\times 1 \text{s}} = 0.3 = 30%.
+				</me>
+				The maximum efficiency is given by the ideal Carnot engine formula.
+				<me> 
+					\eta_{\text{max}} = 1-\frac{T_C}{T_H} = 1- \frac{310\ \text{K}}{660\ \text{K}} = 0.53 = 53%.
+				</me>
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				(b) The running water must remove <m>Q_C</m>  amount of heat per second.  Based on the given data, the value of <m>Q_C</m> is:
+				<me> 
+				Q_C = Q_H - W = 1000\ \text{MJ} - 300\ \text{MJ} = 700\ \text{MJ}.
+				</me>
+				Let <m>x</m> be the rate in <m>kg/s</m> of the water pumped through the condenser to remove <m>Q_C</m> amount of heat per second.  Then we must have
+				<me> 
+				x c\Delta T = \frac{Q_C}{1\ \text{sec}}\ \ \text{(per second)}
+				</me>
+				Therefore,
+				<me> 
+				x = \frac{700\times 10^6\ \text{J/s}}{4186\ (\text{J/kg.C})\times 10\text{C}} = 1.67\times 10^4\ \text{kg/s}.
+				</me>
+			</p>
+		</solution>
+	</exercise>	
+
+
+	<exercise xml:id="ex-Efficiency-of-a-Coal-Power-Plant-Real"><title> Efficiency of a Coal Power Plant </title>
+		<statement>
+			<p>
+				A coal power plant consumes <m>100,000\text{ kg}</m> of coal per hour and produces <m>500\text{ MW}</m> of power.  What is the efficiency of the power plant? 
+			</p>
+			<p>
+				Data: heat of combustion of coal is 30 MJ/kg.
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p> <m>0.6</m> or <m>60\%</m>.  </p> </answer>
+		<solution> 
+			<p>
+				From the given data we find that energy used per sec is
+				<me>
+					\frac{ 100,000\text{ kg} \times 30\text{ MJ/kg} }{3600\text{ s}} = 833.33\test{ MJ/s}.
+				</me>
+				The energy produced per sec is <m>500\text{ MW} = 500\text{ MJ/s}</m>. Therefore, efficiency of the power plant is
+				<me>
+					\frac{500\text{ MJ/s}}{833.33\test{ MJ/s}} = 0.60.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+	<subsection><title>Internal Combustion Engine</title>
+		<p>
+
+			Internal combustion engine of automobiles based on Otto cycle is perhaps the most widely used engine in the world.  The idealized Otto cycle is shown in <xref ref="fig-otto-cycle"/>.  The <term> Otto cycle</term> consists of the following steps on a system consisting of a mixture of air and fuel.  
+			<ol>
+				<li> Intake stroke: Intake valve is opened and piston retracts sucking in air and gasoline vapor at constant pressure of 1 atmosphere.</li>
+				<li> Adiabatic compression: The intake valve is closed and the piston is pushed rapidly so that the process is adiabatic compression.  Both <m>p</m> and <m>T</m> increase in this step.</li>
+				<li> Combustion and power stroke:  In gasoline engines, a spark plug ignites the mixture of gasoline vapor and air under pressure.  The power stroke is rapid enough to be adiabatic.  If a process is rapid, there is no time for the system to exchange heat with outside and hence adiabatic.</li>
+				<li>Exhaust:  Exhaust valve is opened and high pressure combustion products are exhausted.</li>
+			</ol>
+		</p>
+		<figure xml:id="fig-otto-cycle">
+			<caption>
+				Otto cycle of an internal combustion engine.  Here TDC and BDC stand for top dead center and bottom dead center.  At TDC, the piston is at the top and at BDC it is at the bottom.  Work done by the engine in one cycle is the area enclosed by the cycle.
+			</caption>
+			<image source="./images/second-law-of-thermo/otto-cycle-3.png" width="80%"/>
+		</figure>
+		<p>
+			The efficiency for the Otto cycle, derived below, is similar to that of Carnot cycle, except the fact that here we do not have a constant temperature bath.
+			<me>
+				\eta_{\text{Otto;Ideal}} = 1- \frac{T_4}{T_3} = 1- \frac{T_1}{T_2} 
+			</me>
+			where <m>T_1</m> is the temperature of the chamber at the beginning of the adiabatic compression stroke and <m>T_2</m> the temperature at the end of the compression.  
+		</p>
+
+		<p><alert>(Calculus) Derivaiton of the Efficiency of the Otto Engine</alert></p>
+		<p>
+			Efficiency of any heat engine is the work produced over heat input.  Since we have a cyclic process for the material occupied in the space of the cylinder, work done is equal to the difference of heat input in the combustion and the heat exhausted after the power stroke.  Both the heat produced and heat exhausted are constant volume processes and not constant temperature processes. Therefore, we use <m>Q_{in}</m> and <m>Q_{out}</m> for them in place of <m>Q_H</m> and <m>Q_C</m> used above for the Carnot engine.  
+		</p>
+		<p>
+			Heat is taken in by the engine in the ignition phase raising the temperature from <m>T_2</m> to <m>T_3</m>, and heat is rejected by the engine when the exhaust valve opens which takes the temperature from <m>T_4</m> to <m>T_1</m>. Assuming specific heat at constant volume to be independent of temperature we can obtain the following expressions for the heat in and heat out.
+			<md>
+				<mrow> \amp Q_{in} = \int_{T_2}^{T_3}nC_v dT \approx nC_v\left( T_3 - T_2 \right)</mrow>
+				<mrow> \amp Q_{out} = \int_{T_1}^{T_4}nC_v dT \approx nC_v\left( T_4 - T_1 \right)</mrow>
+			</md>
+			Therefore, the efficiency of the Otto engine is
+			<me>
+				\eta_{\text{Otto}} = 1- \frac{Q_{out}}{Q_{in}} = 1 - \left( \frac{T_4 - T_1}{T_3 - T_2} \right)
+			</me> 
+			This formula can be further simplified if we assume the ideal gas behavior for the gasoline/air mixture.  Efficiency is then called the ideal efficiency,  <m>\eta_{Ideal}</m>.  For ideal gas, two states on an adiabatic path are related by the following useful formula.
+			<me>
+				TV^{\gamma-1} = \text{Constant}.
+			</me>
+			Thus during the adiabatic compression and power stroke steps we have the following relations.
+			<md>
+				<mrow> \amp \text{Adiabatic compression:}\ \ T_1 V_1^{\gamma-1} = T_2 V_2^{\gamma-1}</mrow>
+				<mrow> \amp \text{Power stroke:}\ \ T_3 V_3^{\gamma-1} = T_4 V_4^{\gamma-1}</mrow>
+			</md>
+			In addition we have the following relations because the other two steps are constant volume processes.
+			<md>
+				<mrow> \amp V_2 \approx V_3,</mrow>
+				<mrow> \amp V_1\approx V_4.</mrow>
+			</md>
+			Using these conditions we arrive at the following relation among temperatures at various points of the Otto cycle for an ideal gas.
+			<me>
+				\frac{T_1}{T_4} = \frac{T_2}{T_3}
+			</me>
+			This helps simplify the efficiency formula for the Otto cycle to the following.
+			<me>
+				\eta_{\text{Otto;Ideal}} = 1- \frac{T_4}{T_3} = 1- \frac{T_1}{T_2} 
+			</me>
+			where <m>T_1</m> is the temperature of the chamber at the beginning of the adiabatic compression stroke and <m>T_2</m> the temperature at the end of the compression.  The ideal efficiency formula looks a lot like the Carnot engine formula, except here there are no constant temperature heat baths.
+		</p>
+	</subsection>
+
+	<subsection><title>Steam Engine</title>
+		<p>
+
+			You have probably heard of the story about James Watt having invented the steam engine after watching a kettle boil.  This story told and retold in elementary schools is very likely fiction since steam engine was invented before James Watt.  <term> Newcomen engine</term> invented in 1712 was perhaps the first true steam engine.  In a Newcomen engine steam is allowed in a cylinder which raises a piston thus doing a work on the external agent.  The cylinder is the sprayed with cold water condensing steam inside and creating a partial vacuum which brings the piston back to the original position thus completing the cycle which can be repeated indefinitely.   The moving piston could be used to move anything not just water from mines.  
+		</p>
+		<p>
+			Around 1760's while working as an instrument maker at the University of Glasgow, James Watt was asked to repair the University's model Newcomen steam engine.  He found the cooling of the steam for retracting the piston resulted in parts that had to be reheated again and thus constituted an unnecessary loss of energy.  He introduced a second cylinder for cooling the steam and made some other modifications that led to <m>75\%</m> increase in efficiency.  He patented this and other improvements to the Newcomen engine in 1769.   By 1783 the Watt engines had replaced all the Newcomen engines. The more efficient and therefore more cost-effective Watt engine made the consolidation of small cottage industries into more efficient larger factories, a key ingredient of the Industrial Revolution, possible.
+		</p>
+		<p>
+			The steam engine is an external combustion engine where heat from burning coal, wood or other fossil fuel, or energy from nuclear disintegrations is used to heat water in a boiler.  To maximize the transfer of heat the boiler has to be designed properly.  The superheated steam is then sent through an intake valve into a chamber for pushing on a piston in case of a reciprocating type engine or through a turbine which has rotating blades for a turbine engine.  After that the intake valve is closed and exit valve is opened.  The wet steam is pushed into the condenser which cools the wet steam into water.  The water is then pumped into the boiler thus completing the cycle.  Just as before, the net work done divided by the heat intake gives the efficiency of the engine.  The cycle for water in the steam engine, also called the <term> Rankine cycle</term>,   is displayed in <xref ref="fig-rankine-cycle"/>.
+		</p>
+			<figure xml:id="fig-rankine-cycle">
+				<caption>
+					The Rankine cycle of a steam engine. Steps are 1-2: pumping into boiler,  2-3: boiling, 3-4: power stroke, and 4-1: condensing.
+				</caption>
+				<image source="./images/second-law-of-thermo/rankine-cycle.png" width="60%"/>
+			</figure>
+		<p>
+			The thermodynamics steps in the Rankine cycle are:
+			<ol>
+				<li> [<m>1\rightarrow 2:</m>] Adiabatic compression of water from condenser to the pressure of the boiler.  Work <m>W_{12}</m> is done on the system.</li>
+				<li> [<m>2\rightarrow 3:</m>] Heating of water at constant pressure.  Water is heated to a temperature <m>T_H</m> beyond the boiling point creating superheated steam. Heat <m>Q_{in}</m> is taken in by the system and work <m>W_{23}</m> is done.</li>
+				<li> [<m>3\rightarrow 4:</m>] Adiabatic expansion of steam in the power stroke. Work <m>W_{34}</m> is done on the system.</li>
+				<li>[<m>3\rightarrow 4:</m>] Cooling the wet steam into saturated water at constant pressure at temperature <m>T_C</m> in the condenser. </li>
+			</ol>
+		</p>
+		<p><alert>The Efficiency of a Steam Engine</alert></p>
+		<p>
+
+			By energy conservation, work output is equal to <m>Q_{in}- Q_{out}</m>. Therefore, the efficiency of a steam engine is given as follows.
+			<me>
+				\eta = \frac{Q_{in}- Q_{out}}{Q_{in}}
+			</me>
+			The processes where heat exchange with the system takes place are constant pressure processes.  We have learned that heat exchange <m>Q</m> at constant pressure is equal to the enthalpy change  <m>\Delta H</m> of the system.
+			<me>
+				\left. Q\right|_{\text{const p}} = \Delta H.
+			</me>
+			Therefore heat <m>Q_{in}</m> and <m>Q_{out}</m> in the Rankine cycle are
+			<md>
+				<mrow> \amp  Q_{in} = |H_3-H_2| = |U_3+p_3V_3 -U_2-p_2V_2| \ \ \ (p_2=p_3)</mrow>
+				<mrow> \amp  Q_{out} = |H_1-H_4| = |U_1+p_1V_1 -U_4-p_4V_4| \ \ \ (p_1=p_4)</mrow>
+			</md>
+			Therefore, the efficiency of a Rankine engine can be written in terms of enthalpy of the states.
+			<me>
+				\eta_{\text{Rankine}} = 1 - \frac{|H_1-H_4|}{|H_3-H_2|}
+			</me>
+			The enthalpy of states 1 and 2 are nearly equal since in the pumping not much energy is added to the system.
+			<me>
+				H_1\approx H_2.
+			</me>
+			Therefore to figure out the efficiency of a steam engine we need to know enthalpy for three states only. 
+			<me>
+				\eta_{\text{Rankine}} = 1 - \frac{|H_4-H_1|}{|H_3-H_1|}
+			</me>
+
+
+		</p>
+	</subsection>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+	<!-- <subsection><title> Internal Combustion Engine TODO </title>
+	</subsection>
+	<subsection><title> Steam Engine TODO </title>
+	</subsection>
+	<subsection><title> Stirling Engine TODO </title>
+	</subsection> -->
+
+
+</section>

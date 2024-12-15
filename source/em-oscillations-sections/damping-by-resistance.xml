@@ -1,0 +1,405 @@
+<section xml:id="Damping-by-Resistance"><title> Damping by Resistance </title>
+	<introduction>
+		<p>
+			There is no resistance in the ideal LC circuit in which even the resistance in teh wires is ignored.  In reality, however, there is always some resistance in the circuit, for instance in the connecting wires and the materials of the inductor and the capacitor, which dissipate energy.  Dissipation of energy from the circuit results in a decrease in current over time.
+		</p>
+		<p>
+			Oscillatory circuits also radiate electromagnetic waves and lose energy through radiation.  We will not discuss the radiation of energy now, and assume that the loss by radiation is negligible compared to the loss due to resistance. 
+		</p>
+		<p>
+			To understand the phenomenon of resistive damping better consider a circuit with a resistor <m>R</m> in series with a capacitor <m>C</m> and an inductor <m>L</m> as shown in <xref ref="fig-rlc-circuits-basic"/>. 
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				Let the capacitor be charged initially with charges <m>\pm Q_0</m> on the plates so that there is a voltage <m>V_0 = Q_0/C</m> at time <m>t=0</m> between the capacitor plates.  
+			</p>
+			<p></p>
+			<figure xml:id="fig-rlc-circuits-basic">
+				<caption></caption>
+				<image source="./images/em-oscillations/rlc-circuits-basic.png"/>
+			</figure>
+		</sidebyside>
+		<p>
+			When the switch is closed at <m>t=0</m>, current in the circuit will rise from zero to a maximum value, and then, depending on the values of <m>R/2L</m> vs <m>1/\sqrt{LC} </m>, current will oscillate with decreasing amplitude or simply damp out as illustrated in <xref ref="fig-current-damped-oscillators"/> below. Three types of behavior are seen.
+		</p>
+		<ol>
+ 			<li> <term>Underdamped</term> Case. If <m> R/2L \lt 1/\sqrt{LC}</m>, then  current in the circuit oscillates about the equilibrium value of zero, successively damping out each cycle.  </li>
+ 			<li>
+ 				<term>Over-damped</term> Case. If <m> R/2L \gt 1/\sqrt{LC}</m>, then  current in the circuit does not oscillate; current just damps out to zero.
+ 			</li>
+ 			<li>
+ 				<term>Critically Damped</term> Case. If <m> R/2L = 1/\sqrt{LC}</m>, then  current in the circuit does not oscillate; current just damps out to zero rather quickly.
+ 			</li>
+		</ol>
+		<p>
+			These three types of behavior of the circuit are <!-- 
+			solutions of the Faraday loop equation of the circuit is --> more compactly presented by using the following combination of constants.
+			<mdn>
+				<mrow>\amp \omega_0 = \dfrac{1}{\sqrt{LC}},\ \ \ \gamma = \dfrac{R}{L}</mrow>
+				<mrow>\amp \omega_1 = \sqrt{ \omega_0^2 - \gamma^2/4 },\ \ \  \alpha = \sqrt{ \gamma^2/4 - \omega_0^2 }</mrow>
+			</mdn>
+			For underdapmed <m>\omega_1</m> is the angular frequency of oscillations and <m>\omega_0</m> is the angular frequency when there is no damping. Sometimes <m>\omega_0</m> is also called <term>natural frequency</term>. Constant <m>\gamma</m> is called the <term>damping</term> parameter. Constant <m>\alpha </m> is a positive real number in overdamped case.
+		</p>
+
+		<p>
+			After solving Eq. <xref ref="eq-motion-of-q-in-damped-circuit-diff-eq"/> for <m>q</m>, derived for the RLC-circuit below, we can get current by <m>I=dq/dt</m>. We find that  
+			current <m>I(t)</m> at time <m>t</m> with zero current at <m>t=0</m> and charge <m>\pm Q_0</m> at capacitor plates at <m>t=0</m> for underdamped, overdamped, and critically-damped cases are given by the following expression.
+			<mdn >
+				<mrow number="no">I \amp = 
+					\begin{cases}
+
+						I_u = -Q_0\,e^{-\gamma\,t/2}\left( \dfrac{\gamma^2 + 4\omega_1^2}{4\omega_1}  \right)\,\sin(\omega_1 t), \amp \omega_0 \gt \gamma/2,\\
+
+						I_o = -\alpha\,Q_0 \left( 1-\dfrac{\gamma^2}{4\alpha^2} \right)   \,e^{-\gamma\,t/2}\sinh(\alpha t), \amp \omega_0 \lt \gamma/2,\\
+
+						I_c = -\dfrac{\gamma^2}{4} Q_0\,t\,e^{-\gamma\,t/2}, \amp \omega_0 = \gamma/2,
+
+					\end{cases}</mrow>
+					<mrow xml:id="eq-currents-in-damped-circuit"> \amp </mrow>
+			</mdn>
+			where <m>I_u</m>, <m>I_o</m>, and <m>I_c</m> refer to underdamped, overdamped, and critically-damped cases, and <m>\sinh(x)</m> is the sinh function whose explicit representation in terms of exponetials is
+			<me>
+				\sinh(x) = \dfrac{e^{x} - e^{-x}}{2}.
+			</me>
+			<xref ref="fig-current-damped-oscillators"/> displays current in three types of damping. Critical damping id preferred over overdamping when you need to damp current quickly. Underdamping is important when studying oscillatory circuits, such as AC circuit and antennas.
+		</p>
+		<figure xml:id="fig-current-damped-oscillators">
+			<caption>
+				Three types of damping illustrated. Parameters used for plot: (1) Underdamped <m>R = 0.25\,\Omega</m>, <m>C=1\text{ F}</m>, <m>L = 1\text{ H}</m>, (2) Overdamped <m>R = 4\,\Omega</m>, <m>C=1\text{ F}</m>, <m>L = 1\text{ H}</m>, (3) Critically damped <m>R = 2\,\Omega</m>, <m>C=1\text{ F}</m>, <m>L = 1\text{ H}</m>. The initial state: <m>q(0) = Q_0</m> and <m>I(0)=0</m>.
+			</caption>
+			<image source="./images/em-oscillations/current-damped-oscillators.png" width="70%"/>
+		</figure>
+
+		
+		<!-- <p>
+			The under-damped case provides a physical meaning for the damping parameter <m>\gamma</m>.  We see from the graph in Fig. \ref{fig:RLC-circuit-damped-3} that it takes a time of <m>1/\beta</m>  for the envelope of the oscillations to decrease by 1/e of its original value.  The time to relax to <m>1/e</m> of the original amplitude is called the {\bf time constant} of the oscillator, which is also denoted by the Greek letter <m>\tau</m>.  
+			<me>
+			\boxed{\tau = \frac{1}{\beta}.}
+			</me>
+			Therefore, the larger the damping constant, the shorter the time constant, and consequently, faster the damping.
+			\begin{figure}[h!]
+			\includegraphics[width=0.8\textwidth]{ch32-em-oscillations/figs/RLC-circuit-damped-3.eps}
+				\caption{The dynamics of under-damped case shows the oscillations of the voltage across the capacitor plates with a decreasing amplitude.  The envelop of the decreasing amplitude is used to define the time constant for the under-damped oscillator.  The figure shows that in time <m>t=1/\beta</m>, the envelop decreased to by a factor of <m>1/e</m>, where <m>e</m> is the Euler's number with value <m>e=2.71828...</m>.}
+				\label{fig:RLC-circuit-damped-3}
+			\end{figure} 
+		</p> -->
+	</introduction>
+
+	<subsection><title> Meaning of <m>\gamma</m></title>
+		<p>
+			To gain an understanding of the meaning of the damping parameter <m>\gamma</m> we look at underdamped oscillatory circuit. You will notice that the envelop of oscillations, i.e., the plot that has peaks or troughs as their points, falls off with time exponentially. The time for peak current to fall off to a fraction <m>\dfrac{1}{e}</m> of its max at some time is equal to <m>2/\gamma</m> as illustrated in <xref ref="fig-current-damped-oscillators-envelops" />.
+		</p>
+		<figure xml:id="fig-current-damped-oscillators-envelops">
+			<caption>
+				Envelops of an underdamped oscillations illustrate the time for current in the envelop to drop to <m>1/e</m> of the initial value is <m>2/\gamma</m>. Parameters used for plot: <m>R = 0.25\,\Omega</m>, <m>C=1\text{ F}</m>, <m>L = 1\text{ H}</m>. The initial state: <m>q(0) = Q_0</m> and <m>I(0)=0</m>.
+			</caption>
+			<image source="./images/em-oscillations/current-damped-oscillators-envelops.png" width="70%"/>
+		</figure>
+		
+		<p>
+			The energy of the circuit is given by
+			<me>
+				U_\text{circuit} = \frac{1}{2}LI^2 + \frac{1}{2}CV_C^2. 
+			</me>
+			This also oscillates and decays with time. Its envelop drops twice as fast as that shown in <xref ref="fig-current-damped-oscillators-envelops"/> for the current. The time taken for energy envelop to drop by <m>1/e</m> is equal to <m>1/\gamma</m>. This is called time constant of the circuit. 
+		</p> 
+	</subsection>
+	<subsection><title>Quality Factor Q of an Oscillator </title>
+		<p></p>
+		<p>
+			<term> Quality factor</term> provides a standard way to talk about goodness of an oscillator. We denote Quality factor by <m> Q</m>. A simple measure of Quality of an oscillator would be to divide the average energy in a particular cycle by the energy lost in the cycle, so that the less the energy is lost in a cycle, the more persistent are the oscillations, and therefore, higher the Quality.  
+		</p>
+		<p>
+			For technical reasons, we define <m> Q </m> factor by dividing the energy at the beginning of a cycle to the energy lost in <m> \dfrac{1}{2\pi}</m> of a cycle. The factor is not critical to the definition, but does give simpler formula when we apply this to a lightly damped oscillator. Suppose <m>U(t)</m> be the energy at time <m>t</m>, then we would compute <m>Q</m> by
+			<men>
+				Q = \dfrac{U(t)}{\left| \Delta U\left(\text{during }t\text{ to }t+ \dfrac{1}{\omega}\right) \right| };.
+			</men>					
+		</p>
+
+		<p>
+			We get a simple formula for <m>Q</m> when oscillator is a good oscillator, for instance, when
+			<men>
+				\gamma \lt\lt \omega_0.
+			</men>
+			Under these conditions, the oscillator is called a lightly damped oscillator. For lightly damped case, energy envelop decreases exponentially and is given by
+			<men>
+				U(t) = U(0) e^{-\gamma t}.
+			</men>
+			It is then easy to work out energy lost during interval from <m> t=t</m> to <m> t=t + \dfrac{1}{\omega} </m>. The quality factor obtained by this calculation is
+			<men>
+				Q = \dfrac{\omega_0}{\gamma} = \dfrac{\sqrt{L}}{R\sqrt{C}}\ \ \ \ \ (\text{lightly damped oscillator})
+			</men>
+			<alert> Often, we use this formula, even when the underdamped oscillator is not lightly damped.</alert> In those cases, we just replace <m> \omega </m> in this formula by <m> \omega_1</m>, the actual angular frequency of the damped oscillator.
+			<men>
+				Q \sim \dfrac{\omega_1}{\gamma}\ \ \ \ \ (\text{underdamped oscillators})
+			</men>			
+		</p>
+		<p>
+			Good mechanical oscillators such as tuning forks and guitar strings have <m> Q</m> values in the thousands.  Laser cavities, which are electromagnetic wave oscillators, have much higher <m> Q</m> values, exceeding <m>10^7</m>.  Of course, the undamped oscillator has zero  <m> \gamma</m>, and hence infinite <m>Q</m>.  <alert> There is no <m> Q</m> for the critically damped and overdamped cases since they do not oscillate</alert>. You might say, their <m> Q = 0</m>.
+		</p>
+
+
+	</subsection>
+
+
+	<subsection><title>(Calculus) Equation of Motion of RLC circuit </title>
+		<p>
+			Faraday's flux rule around the circuit of <xref ref="fig-rlc-circuits-basic-2"/> gives rise to a second order differential equation for charge <m>q(t)</m> on the positive plate of the capacitor.
+		</p>
+
+		<sidebyside widths="50% 5% 45%%">
+			<p>
+				 Let <m>\mathcal{E}_L</m>, <m>\mathcal{E}_R</m>, and <m>\mathcal{E}_C</m> be EMF's around inductor, capacitor, and resistor, respectively. These are
+				<me>
+					\mathcal{E}_L = L\frac{dI}{dt},\ \ \mathcal{E}_R = IR,\ \ \mathcal{E}_C=\frac{1}{C}\,q,
+				</me>
+				with <m>I = dq/dt</m>. 
+			</p>
+			<p></p>
+			<figure xml:id="fig-rlc-circuits-basic-2">
+				<caption></caption>
+				<image source="./images/em-oscillations/rlc-circuits-basic.png"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Going around the circuit loop, we get
+				<me>
+					 \mathcal{E}_L + \mathcal{E}_R + \mathcal{E}_C =0.
+				</me>
+			In terms of <m>q(t)</m>, the charge on positive plate of the capacior at instant <m>t</m>, this is
+			<men xml:id="eq-motion-of-q-in-damped-circuit-diff-eq">
+				L\frac{d^2q}{dt^2} + R\frac{dq}{dt} + \frac{1}{C}\,q=0.
+			</men>
+
+		</p>
+	 	
+	</subsection>
+
+	<subsection><title>(Calculus) Solution of Equation of Motion of RLC circuit </title>
+		<p>
+			The solution of Eq. <xref ref="eq-motion-of-q-in-damped-circuit-diff-eq"/> depends on relative values of <m>R/L</m> and <m>1/\sqrt{LC}</m>. We denote these quantites by other symbols.
+			<me>
+				\omega_0 = \dfrac{1}{\sqrt{LC}},\ \ \gamma = \dfrac{R}{L}.
+			</me>
+ 
+			With these changes Eq. <xref ref="eq-motion-of-q-in-damped-circuit-diff-eq"/> becomes
+			<me>
+				\dfrac{d^2 q}{d t^2} + \gamma\, \dfrac{dq}{dt}  + \omega_0^2\, q = 0.
+			</me>
+			Let us make the following substitution.
+			<men xml:id="eq-motion-q-x-relation">
+				q(t) = e^{-\gamma\,t/2}\, x(t).
+			</men>
+			With this we get
+			<men xml:id="eq-motion-of-x">
+				\dfrac{d^2 x}{d t^2} + \left( \omega_0^2 - \gamma^2/4 \right) x = 0
+			</men>
+			The solution of this equation depends on <m>\left( \omega_0^2 - \gamma^2/4 \right)</m>. If this constant is positive, we will have <m>x</m> as sine and cosine functions, if negative, the solution will be exponetial function, and if zero, <m>x</m> will be linear in <m>t</m>.
+ 			<mdn>
+ 				<mrow number="no">
+ 				x \amp = \begin{cases}
+ 						x_u = A\, \cos(\omega_1 t) + B\, \sin(\omega_1 t), \ \ \omega_1^2 = \omega_0^2 - \gamma^2/4 \gt 0,\\
+ 						x_o = A\, e^{\alpha t} + B\, e^{-\alpha t}, \ \ \alpha^2 = \gamma^2/4 - \omega_0^2  \gt 0,\\
+ 						x_c = A  + B\,t, \ \  \omega_0 = \gamma/2
+ 					\end{cases}</mrow>
+ 				<mrow xml:id="solution-x-with-contants"> \amp </mrow>
+ 			</mdn>
+ 			These three cases correspond to underdampig, overdamping, and critical damping respectively. Using these answers for <m>x</m> in Eq. <xref ref="eq-motion-q-x-relation" /> gives us general solution. Note, in general solution we have two unknown constants <m>A </m> and <m>B</m>. We fix these constants from values of the initial charge <m>q(0)</m> and initial current <m>I(0)</m>.
+		</p>
+
+		<subsubsection> <title>Underdamping Case with <m>q(0)=Q_0</m> and <m>I(0)=0</m> </title>
+			<p>
+				We now show how we can fix two undetermined constants in general solutions in Eq. <xref ref="solution-x-with-contants"/>. To be specific, we will work out the details for only the underdamped case.
+			</p>
+			<p>
+				We start with general solutions for <m>q(t)</m> and <m>I(t)</m>.
+				<md>
+					<mrow>\amp q(t) = e^{-\gamma\,t/2} \left( A\, \cos(\omega_1 t) + B\, \sin(\omega_1 t) \right), </mrow>
+					<mrow>\amp I(t) = \dfrac{d q(t)}{dt} = -\dfrac{\gamma}{2} q(t) + \omega_1\,e^{-\gamma\,t/2} \left(- A\, \sin(\omega_1 t) + B\, \cos(\omega_1 t) \right). </mrow>
+				</md>
+				Now, we set <m>t=0</m> in them and use the initial values.
+				<md>
+					<mrow>\amp Q_0 =  A, </mrow>
+					<mrow>\amp 0 =  -\dfrac{\gamma}{2} Q_0 + \omega_1\, B. </mrow>
+				</md>
+				Therefore we have the charge and current at arbitrary time
+				<md>
+					<mrow>\amp q(t) =  Q_0\,e^{-\gamma\,t/2} \left[\cos(\omega_1 t) + \dfrac{\gamma}{2\omega_1}\,\sin(\omega_1 t) \right], </mrow>
+					<mrow>\amp I(t) = - Q_0\, \left(  \omega_1 + \dfrac{\gamma^2}{4\omega_1} \right) \,e^{-\gamma\,t/2} \sin(\omega_1 t). </mrow>
+				</md>
+				You can try to find solutions for other initial conditions and for the other two damping cases.						
+			</p>
+		</subsubsection>
+	</subsection>
+
+	<exercise xml:id="ex-Analyzing-a-Damped-Circuit"><title> Analyzing a Damped Circuit </title>
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Consider RLC-circuit shown in <xref ref="fig-example-damped-1"/> and answer the following questions.  (a) Find the natural frequency <m>\omega_0</m> and the damping parameter <m>\gamma</m>, and determine if the circuit is under-damped, over-damped or critically damped.
+				</p>
+				<p></p>
+				<figure xml:id="fig-example-damped-1">
+					<caption></caption>
+					<image source="./images/em-oscillations/example-damped-1.png"/>
+				</figure>
+			</sidebyside>
+			<p>
+				(b)  At <m>t=0</m>, the charge on the capacitor was 15  <m>\mu</m>C and the current in the circuit was zero, find the current in the circuit at an arbitrary time.  
+			</p>
+			<p>
+				(c) What is the <m>Q</m> factor of the oscillator?
+			</p>
+			<p>
+				(d) (Calculus) How much energy is dissipated in first 2 seconds?
+			</p>
+		</statement>
+
+		<hint> <p> (a) Use defining equations, (b) USe <m>I_u</m>, (c) Integrate power, <m>I^2R</m>. </p> </hint>
+		<answer> <p> (a) <m>2887\ \text{sec}^{-1} </m>, <m> 3334\ \text{sec}^{-1}</m>, underdamped, (b) <m> -53\text{ mA}\, e^{-1667\,t}\,\sin(2357\, t)</m>, (c) <m>0.7</m>, (d) <m>2.8\:\mu\text{J}</m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a)	The natural frequency,  
+				<me>
+					\omega_0 =\frac{1}{\sqrt{LC}} = \frac{1}{\sqrt{3\times10^{-3}\:\text{H}\times40\times10^{-6}\:\text{F}}} = 2887\ \text{sec}^{-1}  
+				</me>
+				The damping parameter,
+				<me>
+					\gamma = \frac{R}{L} = \frac{10\ \Omega}{3\times 10^{-3}\:\text{H}} = 3334\ \text{sec}^{-1}.
+				</me>
+				Since <m>\omega_0>\gamma/2</m>, the circuit is under-damped.
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				(b)	Putting in the numbers in <m>I_u</m> in Eq. <xref ref="eq-currents-in-damped-circuit" />,  we obtain the following for the current in the circuit with <m>t</m> in sec. We will find the multiplying factor in the equation separately.
+				<me>
+					\omega_1 = \sqrt{ \omega_0^2 - \gamma^2/4  } = 2357\text{ sec}^{-1}.
+				</me>
+				This gives the following for the factor in the solution.
+				<md>
+					<mrow> \text{factor}\amp = \left( \dfrac{\gamma^2 + 4\omega_1^2}{4\omega_1}  \right)</mrow>
+					<mrow> \amp = \left( \dfrac{3334^2 + 4\times 2357^2}{4 \times 2357}  \right) = 3536\text{ sec}^{-1}.</mrow>
+				</md>
+				Finally, using the formula for <m>I_u</m> we get
+				<md>
+					<mrow>I \amp = -Q_0\,\left( \dfrac{\gamma^2 + 4\omega_1^2}{4\omega_1}  \right)\, e^{-\gamma\,t/2}\,\sin(\omega_1 t),</mrow>
+					<mrow> \amp = -15\,\mu\text{C}\times 3536\text{ s}^{-1}\, e^{-1667\,t}\,\sin(2357\, t),</mrow>
+					<mrow> \amp = -53\text{ mA}\, e^{-1667\,t}\,\sin(2357\, t).</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title> (c) </title>
+			<p>
+				(c)	We will use <m>\omega_1</m> for the <m>Q</m> factor. 
+				<md>
+					<mrow> Q\amp = \dfrac{\omega_1}{\gamma} = \dfrac{2357}{3334} = 0.7.</mrow>
+				</md>
+				If you use <m>\omega_0</m> in place of <m>\omega_1</m>, you will get a little larger value, here you will get <m>0.9</m>. They are both order, <m>O(1)</m>, i.e., the oscillator is not very good. If you get a <m>Q</m> of <m>10</m> or more, you will have a very good oscillator.
+				
+			</p>
+		</solution>
+
+		<solution> <title> (d) </title>
+			<p>
+				(d)	 Integrate power deposited in duration (0, 2 sec) by inserting <m>I(t)</m> in part (b).  
+				<me>
+					\text{Energy} = \int_0^2 I^2\: R dt = 2.8\:\mu\text{J}.
+				</me>			
+			</p>
+		</solution>
+
+	</exercise>
+
+
+
+
+	<exercise xml:id="ex-Practice-with-Determining-Underdamped-Overdamped-or-Critically-Damped-Circuits"><title> Practice with Determining Underdamped, Overdamped, or Critically Damped Circuits  </title>
+		<statement>
+			<p>
+				Determine if the circuits in <xref ref="fig-exer-em-res-2"/> are under-damped, over-damped, or critically damped.
+			</p>
+			<figure xml:id="fig-exer-em-res-2">
+				<caption>For <xref ref="ex-Practice-with-Determining-Underdamped-Overdamped-or-Critically-Damped-Circuits"/>.</caption>
+				<image source="./images/em-oscillations/exer-em-res-2.png" width="80%"/>
+			</figure>
+
+		</statement>
+		<hint> <p> Compare <m>\omega_0</m> to <m>\gamma/2</m>.  </p> </hint>
+		<answer> <p> (a) critically damped, (b) under-damped, (c) under-damped, (d) over-damped.  </p> </answer>
+		<solution><title>(a) </title>
+			<p>
+				We will use damping parameter <m>
+				\beta = \gamma/2</m> rather than <m>\gamma</m>. It will simplify notation.
+			</p>
+			<p>
+				(a) The parameters of the given circuit are
+				<md>
+					<mrow> \amp  \beta = \dfrac{R}{2L} = \dfrac{1000\:\Omega}{2\times 1\:\text{H}} = 500\:\text{sec}^{-1},</mrow>
+					<mrow> \amp  \omega_0 = \dfrac{1}{\sqrt{LC}} = \dfrac{1}{\sqrt{1\:\text{H}\times 4\times 10^{-6}\:\text{F}}} = 500\:\text{sec}^{-1}.</mrow>
+				</md>
+				Since <m>\omega_0 = \beta</m>, this circuit is critically damped.
+			</p>
+		</solution>
+		<solution><title>(b) </title>
+			<p>
+				We will use damping parameter <m>
+				\beta = \gamma/2</m> rather than <m>\gamma</m>. It will simplify notation.
+			</p>
+			<p>
+			(b)  The parameters of the given circuit are
+			<md>
+				<mrow> \amp  \beta = \dfrac{R}{2L} = \dfrac{200\:\Omega}{2\times 1\:\text{H}} = 100\:\text{sec}^{-1},</mrow>
+				<mrow> \amp  \omega_0 = \dfrac{1}{\sqrt{LC}} = \dfrac{1}{\sqrt{1\:\text{H}\times 4\times 10^{-6}\:\text{F}}} = 500\:\text{sec}^{-1}. </mrow>
+			</md>
+			Since <m>\omega_0 \gt \beta</m>, this circuit is under-damped.
+			</p>
+		</solution>
+		<solution><title>(c) </title>
+			<p>
+				We will use damping parameter <m>
+				\beta = \gamma/2</m> rather than <m>\gamma</m>. It will simplify notation.
+			</p>
+
+			<p>
+			(c)  The parameters of the given circuit are
+			<md>
+				<mrow> \amp  \beta = \dfrac{R}{2L} = \dfrac{1000\:\Omega}{2\times 1\:\text{H}} = 500\:\text{sec}^{-1},</mrow>
+				<mrow> \amp  \omega_0 = \dfrac{1}{\sqrt{LC}} = \dfrac{1}{\sqrt{1\:\text{H}\times 4\times 10^{-12}\:\text{F}}} = 500,000\:\text{sec}^{-1}.</mrow>
+			</md>
+			Since <m>\omega_0 > \beta</m>, this circuit is under-damped.
+			</p>
+		</solution>
+		<solution><title>(d) </title>
+			<p>
+				We will use damping parameter <m>
+				\beta = \gamma/2</m> rather than <m>\gamma</m>. It will simplify notation.
+			</p>
+			<p>
+				(d)  The parameters of the given circuit are
+				<md>
+					<mrow> \amp  \beta = \dfrac{R}{2L} = \dfrac{300\:\Omega}{2\times 5\times 10^{-3}\:\text{H}} = 30,000\:\text{sec}^{-1},</mrow>
+					<mrow> \amp  \omega_0 = \dfrac{1}{\sqrt{LC}} = \dfrac{1}{\sqrt{5\times 10^{-3}\:\text{H}\times 2\times 10^{-6}\:\text{F}}} = 10,000\:\text{sec}^{-1}.</mrow>
+				</md>
+				Since <m>\omega_0 \lt \beta</m>, this circuit is over-damped.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

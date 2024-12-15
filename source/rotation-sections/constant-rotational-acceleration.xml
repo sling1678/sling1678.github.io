@@ -1,0 +1,111 @@
+<section xml:id="Constant-Rotational-Acceleration"><title> Constant Rotational Acceleration </title>
+<idx><h>Rotational Acceleration</h><h>Constant</h></idx>
+	<introduction>
+		<p>
+			Constant rotational acceleration provides a good way to do the average case analysis for rotation motion. That makes learning to use this important type of rotation very important. To make it clear that we are using a constant angular acceleration formula, I will denote the constant angular acceleration with a line above the symbol, <m> \bar \alpha</m>.
+		</p>
+		<p>
+			If a body is rotating with a constant acceleration, its angular velocity will change at a constant rate. For instance, if the angular accleration is <m> 3\text{ rad/sec}^2</m>, then, <m> 3\text{ rad/sec}</m> of counterclockwise velocity will be added to the angular velocity every second. Thus, if the angular velocity was <m> -5\text{ rad/sec}</m> at some instant, then, one second later, angular velocity will be <m> -2\text{ rad/sec}</m>, and two seconds later, it will be <m> 1\text{ rad/sec}</m>, etc.
+		</p>
+		<p>
+			Thus, a fundamental equation of constant angular acceleration, <m> \bar\alpha </m>, would be the following. The change in angular velocity from <m> \omega_i </m> to <m> \omega_f </m> during the interval from <m> t_i </m> to <m> t_f</m> will be
+			<men>
+				\omega_f =\omega_i + \bar\alpha\,\Delta t,
+			</men>
+			where <m> \Delta t = t_f - t_i </m>.
+		</p>
+		<p>
+			When the angular acceleration is constant, the angular velocity increases or decreases at a steady pace. That means the average angular velocity is just the arithematic average of the initial and final angular velocities.
+			<men>
+				\omega_{\text{av}} = \dfrac{\omega_i + \omega_f}{2}\ \ \ \ ( \text{if }\alpha \text{ is consant}.)
+			</men>
+		</p>
+		<p>
+			The final equation for constant angular acceleration motion is based on using the average angular velocity to get the <alert> net</alert> angle rotated. Let <m> \Delta \theta</m> denote the net angle rotated in duration <m>\Delta t</m>.
+			<men>
+				\Delta \theta = \omega_{\text{av}}\, \Delta t.
+			</men>		
+		</p>
+		<p>
+			From these three equations, we can deduce the following two equations, which are particularly useful in solving problems.
+			<mdn>
+				<mrow> \amp \Delta \theta = \omega_i\, \Delta t + \dfrac{1}{2}\, \bar\alpha\, (\Delta t )^2,</mrow>
+				<mrow> \amp \omega_f^2 = \omega_i^2 + 2\,\bar\alpha\, \Delta \theta.</mrow>
+			</mdn>
+		<alert> Summary:</alert>
+			We sumarize the equations for <alert>constant angular acceleration</alert> motion now. Recall that for a counterclockwise rotation has <m>\Delta \theta</m> positive, <m>\omega</m> positive, but <m>\alpha</m> positive if speeding up and negative if slowing down. For clockwise rotation, the signs change.
+			<md>
+				<mrow>\amp \omega_f =\omega_i + \bar\alpha\,\Delta t, </mrow>
+				<mrow>\amp \omega_{\text{av}} = \dfrac{\omega_i + \omega_f}{2}, </mrow>
+				<mrow>\amp \Delta \theta = \omega_{\text{av}}\, \Delta t, </mrow>
+				<mrow> \amp \Delta \theta = \omega_i\, \Delta t + \dfrac{1}{2}\, \bar\alpha\, (\Delta t )^2,</mrow>
+				<mrow> \amp \omega_f^2 = \omega_i^2 + 2\,\bar\alpha\, \Delta \theta.</mrow>
+			</md>
+		</p>
+		<remark><title> Analogy with One-Dimensional Translational Motion</title>
+			<p>
+				Looking at the equations for constant angular acceleration you might have the sense of D&#x00E9;j&#x00E0; vu. Yes, constant angular acceleration, just as the one-dimensional constant acceleration are kinematic equations for constant acceleration case along one axis. In the case of rotation, they are components along the axis of rotation and in the case of motion on <m>x</m> axis, they are <m>x</m> components. The following list shows the corresponding quantities.
+				<md>
+					<mrow> \amp \Delta x \leftrightarrow \Delta \theta, </mrow>
+					<mrow> \amp v_{i,x} \leftrightarrow \omega_i, </mrow>
+					<mrow> \amp v_{f,x} \leftrightarrow \omega_f, </mrow>
+					<mrow> \amp a_{x} \leftrightarrow \bar{\alpha}, </mrow>
+					<mrow> \amp \Delta t \leftrightarrow \Delta t. </mrow>
+				</md>
+			</p>
+		</remark>
+	</introduction>
+
+	<example xml:id="ex-Spinning-a-Centrifuge-to-Full-Speed"><title> Spinning a Centrifuge to Full Speed </title>
+		<statement>
+			<p>
+				An ultracentrifuge can spin at <m> 150,000\text{ rpm}</m>, where <m> \text{rpm}</m> stands for revolutions per minute. Suppose the centrifuge starts from rest and takes <m> 5\text{ minutes}</m> to reach it maximum spin rate. Assume constant rotational acceleration.
+			</p>
+			<p>
+				(a) What is the average angular acceleration of the centrifuge?
+			</p>
+			<p>
+				(b) How many revolutions did it take to get to the final angular speed?
+			</p>
+
+		</statement>
+		<!-- <hint> <title> (a) </title> <p> <m> \omega_f = \omega_i + \bar\alpha\, \Delta t.  </m> </p></hint>
+		<hint> <title> (b) </title> <p> <m> \Delta \theta = \omega_i\,\Delta t + \dfrac{1}{2}\,\bar\alpha\, (\Delta t)^2.</m> </p>  </hint> -->
+
+		<answer> <p> (a) <m> 30,000\text{ rev/min}^2</m> or <m> 52.6\text{ rad/sec}^2</m>,  (b) <m>375,000\text{ revs} </m>  or <m> 2,356,194.5\text{ rad}</m>. </p> </answer>
+
+
+		<solution> <title> a </title>
+			<p>
+				Let us work in units of revolutions and minutes. From the given data we get
+				<me>
+					150,000 = 0 + \bar\alpha\times 5.
+				</me>
+				Solving this we get
+				<me>
+					\bar\alpha = 30,000\text{ rev/min}^2.
+				</me>
+				We can convert this to <m>\text{rad/sec}^2</m> by appropriate unit conversions.
+				<me>
+					30,000\text{ rev/min}^2 \times 2\pi \text{ rad/rev} \times (1 \text{ min}/60\text{ sec})^2 = 52.6\text{ rad/sec}^2. 
+				</me>
+			</p>
+		</solution>
+		<solution> <title> b </title>
+			<p> 
+				Let us work in units of revolutions and minutes. We found <m>\bar\alpha = 30,000\text{ rev/min}^2 </m>. Now, we can use it to get <m> \Delta \theta</m>.
+				<md>
+					<mrow> \Delta\theta \amp = \omega_i\Delta t + \dfrac{1}{2}\,\bar\alpha\, (\Delta t)^2 </mrow>
+					<mrow> \amp = 0 + \dfrac{1}{2}\times 30000 \times 5^2 = 375,000\text{ revs}</mrow>
+				</md>
+				We can also write this as radians
+				<me>
+					375,000\text{ revs}\times 2\pi\text{ rad/rev} = 2,356,194.5\text{ rad}.
+				</me>
+
+
+			</p>
+		</solution>
+	</example>
+
+</section>

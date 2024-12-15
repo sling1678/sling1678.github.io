@@ -1,0 +1,361 @@
+<section xml:id="Types-of-Stress"><title> Types of Stress and Strain</title>
+
+	<subsection> <title> Tensile and Compressive Stresses</title>
+
+		<p> 
+			A stress that causes strain in the same direction as the applied force can lead to either the extension of the body or a compression of the body as illustrated in <xref ref="fig-compression-tensile"/>.
+		</p>
+
+		<p>
+			The stress that leads to an extension of the body is called a <term> tensile stress </term> and the stress that compresses the body is called a <term> compressive stress</term>. 
+		</p> 
+		<figure xml:id="fig-compression-tensile">
+			<caption>
+				If the strain in the material is negative, i.e. the material is compressed as a result of the stress, then the stress is called a compressive stress. If the strain in the material is positive, i.e. the material stretches as a result of the stress, then the stress is called a tensile stress.
+			</caption>
+			<image source="./images/stress-and-strain/tensile-and-compressive-stresses.png" width="70%"/>
+		</figure>		
+		<p>
+			Usually Young's moduli for the two stresses are equal, but they do not have to be equal.  For instance, Young's modulus for concrete is <m>2\text{MPa}</m> for the tensile stress and 20 MPa for the compressive stress.  Thus, a column made of concrete will break more easily when pulled than when compressed; a concrete column is able to support considerably more weight on the column than it can hold up weight hanging from it.
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Stress-in-a-Steel-Beam"><title> Stress in a Steel Beam </title>
+		<statement>
+			<p>
+				A steel beam of length <m> L</m> and area of cross-section <m> A</m> is posted vertically on a concrete slab.  Find the tensile stress in the beam as a function of height <m>h</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  The weight above will the force on the area of cross-section </p> </hint>
+		<answer> <p> <m>\frac{Mg}{AL}(L-h)</m>  </p> </answer>
+		<solution> 
+			<p>
+				We have done a similar problem for a wire under stress. Same technique will give the stress at any point equal to the weight of the steel beam above that point. Suppose the origin of the <m> y</m> coordinate is at the top point of the beam and the direction of the <m> y</m> axis is pointed down.  Then, the weight of the beam above the point with  <m> y</m> coordinate equal to <m> y</m> will be <m>M gy/L</m>.  Therefore, the stress at that point will be
+				<me>
+					\text{Stress at a distance <m> y</m> from the top } = \frac{Mg}{L}y/A.
+				</me>
+				We can state the answer for the height from the bottom as
+				<me>
+					\text{Stress at a height h from the bottom }  =\frac{Mg}{AL}(L-h).
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<subsection> <title> Shear Stress</title>
+		<!-- <sidebyside widths="50% 5% 45%"> -->
+			<p>
+				When a force is applied parallel to the surface of an object, instead of stretching or compressing the object, the force may deform the object if some other part of the object is held fixed. For instance, suppose you fix the bottom of a box by gluing the bottom part and apply a side-ways force on the top part as illustrated in <xref ref="fig-shear-strain"/>, you will deform the box. This deformation is used to define an  angular or  shear strain.
+			</p>
+			<!-- <p></p> 
+			<image source="./images/stress-and-strain/shear-strain.png" width="40%"/>
+		</sidebyside> -->
+ 
+ 		<figure xml:id="fig-shear-strain">
+ 			<caption>
+ 				Shear stress develops inside the material when it is deformed sideways by applying a force on one face while keeping the opposite face fixed.
+ 			</caption>
+ 			<image source="./images/stress-and-strain/shear-strain.png" width="50%"/>
+ 		</figure>
+
+ 		 
+
+
+
+		<p>
+			The shear strain is defined by angle <m> \Delta \theta</m> by which one face has been moved reltative to the opposite face. For small deviations, the angle of the deviation <m> \Delta \theta</m> is equal to <m>\Delta L/L_{\perp}</m> as shown in <xref ref="fig-shear-strain"/>.
+				<men xml:id="eq-shear-strain">
+					\Delta \theta \approx \tan(\Delta\theta) = \frac{\Delta L}{L_{\perp}}.
+				</men>
+			The resulting stress in the body is called <term> shear stress</term>. Note where applied force is acting: it is spread  over the area of the surface parallel to the force and not perpendicular to the force, which was the case for the tensile and compressive stresses.  Therefore, stress corresponding to a shear strain is defined by the magnitude of the force <m>\vec F</m> divided by parallel area, <m> A_{\parallel}</m>.
+				<men xml:id="eq-shear-stress-1">
+					\text{Shear stress} = \frac{F}{A_{\parallel}}.
+				</men>
+			Hooke's law is also applicable for this situation if strain is small. That is, we expect the shear stress to be proportional to the shear strain. 
+				<men>
+					\text{Shear stress} = G\times \textrm{Shear strain}
+				</men>
+			where the proportionality constant <m>G</m> is called the <term>shear modulus</term> of the material.  The shear modulus <m>G</m> has the units of <m>\text{N/m}^2</m> or <m>\text{Pa}</m>.  As a general rule, the shear modulus is less than the Young's modulus for the same material, which means that it is usually easier to deform an object sideways than to compress or elongate it.
+		</p>
+		<p>
+			Note that you must pay attention to the particular area and length in the definition of shear stress given in Eq. <xref ref="eq-shear-stress-1" />.  Unlike the tensile stress, the area here is of the surface that is parallel to the applied force.  Furthermore, when you find angle of deviation to use in the formula for the the angular deviation, you need to make sure the displacement <m> \Delta L</m> and the length <m>L_{\perp}</m> are perpendicular to each other.  Also, note that, while <m>\Delta L</m> is parallel to the applied force, <m>L_{\perp}</m> is perpendicular to the applied force.
+		</p>
+	</subsection>
+
+
+	<exercise xml:id="ex-Shear-Strain-of-Spinal-Disk"><title> Shear Strain of Spinal Disk </title>
+		<statement>
+			<p>
+				Spinal injuries often involve shear stress on the spinal disks.  Find the deformation of a spinal disk if it is subjected to <m>500\text{-N}</m> shear force.  Assume the disk to be a solid cylinder <m>4.0\text{ cm}</m> in diameter and the force applied over the area of cross-section.
+			</p>
+			<p>
+				Use shear modulus of spine disk = <m> 1.2\text{ GPa}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Use definition.  </p> </hint>
+		<answer> <p> <m> 3.3\times 10^{-4}\text{ rad}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Let <m>\Delta\theta</m> be the shear strain. Using the relation of stress and strain we get
+				<me>
+					\Delta\theta = \dfrac{\sigma}{G},
+				</me>
+				with stress given by
+				<me>
+					\sigma = \dfrac{500\text{ N}}{\pi (0.02)^2\text{ m}^2} = 4.0\times 10^5\text{ Pa}.
+				</me>
+				Therefore, shear strain is
+				<me>
+					\Delta\theta = \dfrac{4.0\times 10^5\text{ Pa}}{1.2\times 10^9\text{ Pa}} = 3.3\times 10^{-4}\text{ rad}.
+				</me>
+
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<subsection><title>Ultimate Strength </title>
+		<p>
+			I have mentioned above that if stress exceeds a certain value, the material will ultimately break up.  This was illustrated in <xref ref="fig-elasticity-elongating-a-string"/>  for stretching of a wire. We expect the same physics should happen for the compressive, tensile, and shear stresses.
+		</p>
+		<p>
+			The compressive, tensile, and shear stresses lead to three kinds of fractures in materials, called tensile fracture, compressive fracture and shear fracture, as displayed in <xref ref="fig-fractures"/>.
+		</p>
+		<figure xml:id="fig-fractures">
+			<caption>
+				Compressive, tensile and shear fractures.
+			</caption>
+			<image source="./images/stress-and-strain/fractures.png" width="80%"/>
+		</figure>
+		<p>
+			Note than the shear stress rupture is in the perpendicular dimension to the direction of the shear force while the tensile or compression related ruptures take place in the same direction as the corresponding force.  The ultimate stress of each type that a material can withstand before giving in is called the <term> ultimate strength </term> of the material.
+		</p>
+		<p>
+			Whenever you design a mechanical structure, you must take into account the ultimate strength of the material to be used and the type of stress to be expected under extreme conditions of use.  This is especially important when designing the structures that are subject to large stresses such as buildings and bridges.  The ultimate strength for the shear stress is usually less than that for compressive and tensile stresses.
+		</p>
+	</subsection>
+
+ 	<subsection><title>Pressure </title>
+ 		<p>
+ 			We have looked at stresses caused in solid material by forces applied perpendicular to the opposite faces of the material and those applied parallel to the surfaces of the material.  You can cause stress in a fluid by applying a force that can alter its volume, e.g., by placing the fluid in a rigid container with a lid so that when you push on the fluid, fluid gets pressed from the walls of the container as well. Stress in a fluid is called <term>pressure</term>.
+ 		</p>
+ 		<sidebyside widths="60% 10% 20% 10%">
+ 			
+		 	<p>
+		 		Figure on the right shows a simple way to study change in volume of a fluid. Let <m>\Delta x</m> be the displacement of the lid, then change in volume <m>\Delta V = -A_\perp \Delta x</m>. The volumetric strain, <m>\epsilon</m>, also called <term>bulk strain</term> is relative change in volume.
+		 		 <men>
+		 		 	\epsilon =\left| \dfrac{\Delta V}{V} \right|.
+		 		 </men>
+
+		 	</p>
+		 	<p></p>
+ 			<image source="./images/stress-and-strain/pressure-in-a-tank-definition.png" width="50%"/>
+ 			<p></p>
+ 		</sidebyside>
+ 
+ 		<p>
+			With force <m> F</m> pushing over an area <m>A_\perp</m> of the fluid, causes additional pressure to develop in the fluid, given by
+				<men>
+					P = \frac{F}{A_{\perp}}.
+				</men>
+			Hooke's law also holds for the pressure and the bulk strain 
+			<men>
+				 \text{Pressure} = B \times \textrm{Bulk strain},
+			</men>
+			where the proportionality constant <m>B</m> is called the <term> bulk modulus</term>. 
+		</p>
+ 	</subsection>
+ 
+
+
+
+
+
+
+	<exercise xml:id="ex-Compression-of-a-Support-Beam"><title> Compression of a Support Beam</title>
+		<statement>
+			<p>
+				Two cylindrical concrete posts are to support a heavy machine of mass 20,000-kg set in the middle of a 2000-kg beam resting on the posts.  For safety reasons, it is required that the stress in the posts does not exceed 5 times the ultimate strength of concrete, what must be the minimum radii of the two posts. Ultimate strength of concrete = <m> 20 \times 10^6\text{N/m}^2</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Equate stress in concrete to one-fifth of the ultimate strength. </p> </hint>
+		<answer> <p> <m>9.27\text{ cm}</m>  </p> </answer>
+		<solution> 
+			<p>
+				Each post will support half the weight of the beam and weight. Thus, force on each concrete
+				<me>
+					F = \dfrac{1}{2}\times 22000\times 9.81 = 107910\text{ N}.
+				</me>
+				This causes stress in the concrete, given by,
+				<me>
+					\text{Stress} = \dfrac{F}{A} = \dfrac{107910\text{ N}}{A},
+				</me>
+				where <m> A </m> is the area of cross-section of the post. We do not want this stress to be more than <m>\dfrac{1}{5}\text{-th}</m> of the ultimate strength.
+				<me>
+					\dfrac{107910}{A} = \dfrac{1}{5} \times 20 \times 10^6.
+				</me>
+				Therefore, 
+				<me>
+					A = 0.0269775\text{ m}^2.
+				</me>
+				This should equal <m> \pi R^2</m>. Then, 
+				<me>
+					R = \sqrt{0.0269775/\pi} = 0.0927\text{ m} =  9.27\text{ cm}.
+				</me>
+
+			</p>
+
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Deforming-a-Jello-By-Shear-Stress"><title>  Deforming a Jello By Shear Stress</title>
+		<statement>
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					A rectangular parallelepiped-shaped jello with dimensions <m> (a\times b \times c) =  5\text{ cm} \times 4\text{ cm} \times 3\text{ cm}</m> is resting on a plate.  A glass slide is glued to the top surface.  A force of <m>F = 30\text{ mN}</m> is applied to the glass plate deforming the jello sideways. 
+				</p> 
+
+				<p> </p>
+				<image source="./images/stress-and-strain/shear-stress-jello-exercise.png" width="50%"/>
+			</sidebyside>			
+			<p>
+				(a) What is the angle of deformation if the jello has a shear modulus of <m>G=1000\text{ Pa}</m>?
+			</p>
+			<p>
+				(b) What is the displacement of the glass slide?
+			</p>
+
+		</statement>
+		<hint> <p> (a) Area over which force acts is <m>ab</m>.  (b) You can use small angle approximation here to simplify your calculation.</p> </hint>
+		<answer> <p>  (a) <m> 1.5\times 10^{-2}\text{ rad}</m>. (b) <m> 0.45\text{ mm}</m>. </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a)
+				Refering to the figure given in the problem statement, we see that the area over which the force acts is
+				<me>
+					A = a b = 5\text{ cm}\times 4\text{ cm} = 20\times 10^{-4}\text{ m}^2.
+				</me>
+				Therefore, the shear stress is
+				<me>
+					\dfrac{F}{A} = \dfrac{ 30\times 10^{-3}\text{ N} }{ 2.0\times 10^{-3}\text{ m}^2} = 15.0\text{ N/m}^2.
+				</me>
+				The shear strain is the angle of deformation.
+				<me>
+					\theta =  \dfrac{\text{ Stress}}{G} = 1.5\times 10^{-2}\text{ rad}.
+				</me>
+			</p>
+
+			
+		</solution>
+		<solution> <title>(b)</title>
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					(b)
+					Refer the figure. Note that we got small angle in (a), and we can simplify calculation by using <m> \tan\theta \approx \theta</m> in radians. 
+					<me>
+						\Delta x = c\,\theta.
+					</me>
+					Putting in numerical values we get
+					<me>
+						\Delta x = 3\text{ cm}\times 1.5\times 10^{-2}\text{ rad} = 0.45\text{ mm}.
+					</me>
+				</p>
+				<p> </p>
+				<image source="./images/stress-and-strain/shear-stress-jello-exercise-b.png" width="50%"/>
+			</sidebyside>
+
+
+
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Tear-Under-Shear-Stress"><title> Tear Under Shear Stress </title>
+		<statement>
+			<p>
+				A steel bolt is used to connect two steel plates.  It is required that the bolt must withstand shear forces up to <m>4,000\text{ N}</m>.  Assuming a safety factor of 5, what must be the minimum diameter of the bolt? Use breaking shear stress of steel = <m> 250\times 10^6\ \text{Pa}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Use stress= breaking stress/5. </p> </hint>
+		<answer> <p> <m> 1.0\text{ cm}</m>  </p> </answer>
+		<solution> 
+			<p>
+				Here, the shear force divided by the area of the bolt must be one-fifth of the breaking shear stress. Let <m> d </m> be the diameter. Using the breaking shear stress for steel we get
+				<me>
+					\dfrac{4000\text{ N}}{\pi d^2/4} = \dfrac{250\times 10^6\text{ Pa}}{5}.
+				</me>
+				Therefore, <m> d = 0.01\text{ m} = 1.0\text{ cm}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Stress-and-Strain-in-Deep-Sea-Diving"><title> Stress and Strain in Deep Sea Diving </title>
+		<statement>
+			<p>
+				While deep sea diving, one must take into account the enormous pressure at great depths under water.  At <m>3,000\text{-m}</m>  depth, the pressure would be approximately <m>30\text{MPa}</m>, which will crush a ball of steel.  What is the percentage change in volume of a spherical solid ball of  steel when it is sent to a depth of <m>3,000\text{ m}</m>  in water?
+			</p>
+			<p>
+				Data: Bulk Modulus of Steel = <m>166\text{ GPa}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p><m> 0.018%</m> </p> </answer>
+		<solution> 
+			<p>
+				Hooke's law for volume strain is
+				<me>
+					\text{Volume Stress } = B\, \dfrac{\Delta V}{V}.
+				</me>
+				Therefore,
+				<me>
+					\dfrac{\Delta V}{V} =  \dfrac{30\text{ MPa}}{166\1000\text{ MPa}} = 1.8\times 10^{-4}.
+				</me>
+				Multiplying by 100, we get 0.018%.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Force-per-Unit-Area-on-Container-When-Water-Freezes"><title> Force per Unit Area on Container when Water Freezes </title>
+		<statement>
+			<p>
+				A steel spherical shell is filled with water and sealed close by welding the opening. When water freezes, its volume expnads by <m>9\%</m> if it is allowed to expand, but due to the steel enclosing, the volume does nor expand. With what force per unit area does the ice push the steel enclosure?
+			</p>
+			<p>
+				Data: Bulk stress of water <m>\approx 2.2\text{ GPa}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  The stress in water would be equal to the stress had we shrunk it back from the expanded to the unexpanded volume. </p> </hint>
+		<answer> <p> <m> 1.98\times 10^{8}\text{ Pa}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The stress <m>\sigma</m>  in ice developed will equal the stress that would have developed had we allowed the water to expand. You might think of it this way: you first let it expand freely and then push on it to bring the volume back to the original.
+				<me>
+					\sigma = B \times \text{strain},
+				</me>
+				where <me>\text{strain}</me> is the bulk strain
+				<me>
+					\text{strain} = \dfrac{\Delta V}{V} = 0.09.
+				</me>
+				With <m>B</m> of water given, the stress will be
+				<me>
+					\sigma = 2.2\times 0.09\text{ GPa} = 1.98\times 10^{8}\text{ Pa}.
+				</me>
+				This is the force per unit area exerted by the ice.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+ 
+</section>

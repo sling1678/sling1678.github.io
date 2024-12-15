@@ -1,0 +1,705 @@
+<section xml:id="forces-One-Body-Problems"><title> One-Body Problems</title>
+	<introduction>
+		<p> 
+			In this section we will apply Newton's laws of motion to the translational motion of single-body systems. All applications of Newton's laws require you to identify forces on the body and set up the equation or equations of motion for the system using second law. They share the following steps.
+		</p>
+		<p>
+			<ol>
+				<li> Identify the system. </li>
+				<li> Identify and list the forces on the system. </li>
+				<li> Choose a coordinate system. </li>
+				<li> Generate equations of motion. </li>
+				<li> Solve for the desired quantities.</li>
+				<li> Interpret the result.</li>
+			</ol>
+		</p>
+		<p>
+			Some of these steps are implicit in calculations. But, its always a good idea to identify them explicitly when you are practicing problem solving. 
+			
+		</p>
+		<p>
+			We will present a number of example problems in this section. If you have done these types of problems, you may want to try them yourself first before checking the solution. Even if you know how to do them, you should at least skim over the solutions, where some general ideas are also discussed.
+		</p>
+
+
+	</introduction>
+
+
+	<example><title> A Box on Floor Pushed Against a Wall</title>
+		<statement>
+			<p>
+				A 50-kg box is pushed against a wall by a force that acts horizontally and has magnitude <m> 200\text{ N}</m>. Ignore any friction forces for this problem. What are the magnitudes and directions of all forces on the box? 
+			</p>
+		</statement>
+		<hint> <p> Think also a force from the wall. </p></hint>
+		<answer><p> <m>N_w = 200\text{ N},\ \ N_f=490.5\text{ N}. </m></p> </answer>
+		<solution> 
+			<p>
+				<alert> System: </alert> the 50-kg box. 
+			</p>
+
+			<p> <alert> Identifying forces on the system:</alert>
+			</p>
+			<p>
+				We first try to identify <alert> forces on the box </alert>. Usually a diagrram such as shown in Fig. (a) helps. Force on the box will come from other objects in the environment, either through a contact with them or through non-contact forces, such as gravity.
+			</p>
+			<p> 
+				The objects in the environment are: Agent doing the pushing, Earth, Floor, and Wall. Each of them will apply force(s) on the box. Assuming no friction forces, we identify the following forces.
+				<ol>
+					<li> Push, <m>\vec F </m>, </li>
+					<li> Force of weight by Earth, <m> \vec W</m>, </li>
+					<li> Normal Force from the floor, <m> \vec F_N^{\text{from floor}}</m>, </li> 
+					<li> Normal Force from the wall, <m> \vec F_N^{\text{from wall}}</m>. </li>
+				</ol>
+			</p>
+			<p>
+				If we were not given the instruction that friction force could be ignored, we would have two more forces.
+				<ol>
+					<li> Static Friction Force from the floor, <m> \vec F_s^{\text{from floor}} = 0</m>, </li>
+					<li> Static Friction Force from the floor, <m> \vec F_s^{\text{from wall}} = 0</m>. </li>
+				</ol>				 
+			</p>
+
+			<figure xml:id="fig-example-normal-free-body-diagram">
+				<caption>
+					(a) Sketch of forces on the box along with the box, floor, and wall. (b) Redrawing the forces in a simpler figure of just the forces in the free-body diagram. Choice of axes is also shown in (b) 
+				</caption>
+				<image source=  "./images/forces/example-normal-free-body-diagram.png" width="100%" />
+			</figure>
+
+			<p> <alert> The Free-Body Diagram: </alert>
+			</p>
+			<p>
+				It is almost always very helpful to strip away the details and redraw a sketch of just the forces as in  Fig. <xref ref="fig-example-normal-free-body-diagram" />(b). In this simplified picture, called the <term>free-body diagram</term>, we draw the force vectors with tails of all forces placed at the same point. We take the point where tails are located as the origin of a Cartesian coordinate system.
+			</p>
+
+			<p> <alert> Choosing Cartesian Axes: </alert>
+			</p>
+			<p> 
+				In this step, if we expect acceleration, then it is almost always helpful to point one of the Cartesian axes in the direction of the acceleration. But, if the acceleration is zero, or the direction of acceleration is unknown, then we prefer to draw axes that would simplify the computation of net force, which happens when most of the forces are along the axes.
+			</p>
+			<p>
+				Here, the acceleration is zero. Furthermore, we 
+				notice in Fig. <xref ref="fig-example-normal-free-body-diagram" />(a) that if we use axes horizontally and vertically, every force will be along the Cartesian axes. This will make computation of components of <m> \vec F_{\text{net}}</m> easier.
+			</p>
+			<p> <alert> Generating equations of motion: </alert>
+			</p>
+			<p>
+				Since <m> \vec a = 0 </m>, our equation of motion is:
+				<me>
+					\vec F_{\text{net}} = 0,
+				</me>
+				which would result in two equations, one along each Cartesian direction.
+			</p>
+			<p>
+				Although not necessary, sometimes it is helpful to collect the components in a table form. Let us use simpler symbols <m> N_f </m> and <m> N_w </m> for the magnitudes of the normal forces from the floor and from the wall respectively.
+			</p>
+			
+			<table>
+				<caption> Components of Forces
+				</caption>
+				<tabular halign ="left" >
+					<row bottom ="major" >
+						<cell > Force </cell >
+						<cell > <m>x</m >-component </cell >
+						<cell > <m>y</m >-component </cell >
+					</row >
+					<row bottom ="major" >
+						<cell > Weight </cell >
+						<cell > <m>0</m >  </cell >
+						<cell > <m>-490.5\text{ N}</m >  </cell >
+					</row >
+					<row bottom ="major" >
+						<cell > Applied Force </cell >
+						<cell > <m>200\text{ N}</m >  </cell >
+						<cell > <m>0</m >  </cell >
+					</row >
+					<row bottom ="major" >
+						<cell > Normal from the floor </cell >
+						<cell >  0 </cell >
+						<cell > <m>N_f</m > </cell >
+					</row >
+					<row bottom ="major" >
+						<cell > Normal from the wall </cell >
+						<cell >  -N_w </cell >
+						<cell > <m> 0</m > </cell >
+					</row >
+				</tabular>
+
+			</table>
+			<p>
+
+				The <m> x </m> component of the net force will be just the sum of the <m> x </m> components of all the forces. Similarly for the <m> y </m> component of the net force.
+				<md>
+					<mrow> \amp F_{x}^{\text{net}} = 0 + 200 + 0 - N_w,</mrow>
+					<mrow> \amp F_{y}^{\text{net}} = -490.5 + 0 + N_f + 0.</mrow>
+				</md>
+				Since <m> \vec F_{\text{net}} = 0</m>, we get the following two equations.
+				<md>
+					<mrow> \amp  0 + 200 + 0 - N_w = 0</mrow>
+					<mrow> \amp -490.5 + 0 + N_f + 0 = 0.</mrow>					
+				</md>
+			</p>
+			<p> <alert> Solve for the desired quantities: </alert>
+			</p>
+			<p>
+				This turns out to be easy here since each of the two equations of motion has only one unknown.
+				<me>
+					N_w = 200\text{ N},\ \ N_f=490.5\text{ N}.
+				</me>
+			</p>
+			<p>
+				<alert> Interpret the result: </alert>
+			</p>
+			<p>
+				We have found the magnitudes of the two normal forces on the box. The normal force from the floor has magnitude <m> 490.5\text{ N}</m> and pointed up, and the normal force from the wall has magnitude <m> 200\text{ N}</m> and pointed away from the wall and perpendicular to the wall.
+			</p>
+
+		</solution>
+
+	</example>
+
+
+
+	<example xml:id="ex-determining-static-friction"><title> Determining Static Friction </title>
+		<statement>
+			<p>
+				A book of mass <m> 1.5\text{ kg}</m> is at rest on a horizontal table.  The book is then pushed  with a constant force of <m> 12\text{ N}</m> at an angle of <m>30^{\circ}</m> below the horizontal direction, whih is not enough to overcome the static friction between the book and the table.  
+			</p>
+			<p>
+				(a) Find all the forces on the book.
+			</p>
+			<p>
+				(b) Using your answer in (a) determine the force on the table by the book.
+			</p>
+			<p>
+				(c) Find the cefficient of static friction <m> \mu_s </m> between the book and the table.
+			</p>
+		</statement>
+		<hint> <p> </p> </hint>
+		<answer> <p>(a) <m>
+				F_s = 10.39\text{ N},\ \ F_N =  20.715\text{ N}.
+			</m>, (b) <m> 23.2 \text{ N}, 63.4^{\circ}\text{ below } x\text{ axis}</m>, (c) Not do-able based on the given information, since we need the maximum static friction, not just any static friction.</p></answer>
+
+
+		<solution><title> (a) </title>
+			<p> <alert> System : </alert> Book.
+			</p>
+
+			<p> <alert> Identify and list the forces on the system:</alert>
+			</p>
+			<p>
+				We first try to identify forces on the box and use a diagram as shown in Fig. <xref ref="fig-example-static-friction-applied-angle" />(a). Then, we redraw a sketch of just the forces, all coming out of the same point as in Fig. <xref ref="fig-example-static-friction-applied-angle" />(b).
+			</p>
+			<figure xml:id="fig-example-static-friction-applied-angle">
+				<caption>
+					(a) Sketch of forces on the box along with the box, floor, and wall. (b) Redrawing the forces in a simpler figure of just the forces in the free-body diagram. Choice of axes is also shown in (b) 
+				</caption>
+				<image source=  "./images/forces/example-static-friction-applied-angle.png" width="100%" />
+			</figure>
+
+			<p><alert> Choose Cartesian coordinates:</alert>
+			</p>
+			<p> Since <m> \vec a = 0 </m>, our guide for direction of axes is the axes that will simplify computing the components of forces easier.
+			</p>
+
+
+			<p> <alert> Generate equations of motion: </alert>
+			</p>
+
+
+			<p>
+				We now collect the <m> x </m> and <m> y </m> components of forces in a table.
+			</p>
+			
+			<table>
+				<caption> Forces on the Book
+				</caption>
+				<tabular halign ="left" >
+					<row bottom ="major" >
+						<cell > Force </cell >
+						<cell > <m>x</m >-component </cell >
+						<cell > <m>y</m >-component </cell >
+					</row >
+					<row bottom ="major" >
+						<cell > Weight </cell >
+						<cell > <m>0</m >  </cell >
+						<cell > <m>-14.715\text{ N}</m >  </cell >
+					</row >
+					<row bottom ="major" >
+						<cell > Applied Force </cell >
+						<cell > <m>12\text{ N}\, \cos\, 30^{\circ}</m >  </cell >
+						<cell > <m>-12\text{ N}\, \sin\, 30^{\circ}</m >  </cell >
+					</row >
+					<row bottom ="major" >
+						<cell > Normal from the table </cell >
+						<cell >  0 </cell >
+						<cell > <m>F_N</m > </cell >
+					</row >
+					<row bottom ="major" >
+						<cell > Static friction from the table </cell >
+						<cell >  -F_s </cell >
+						<cell > <m> 0</m > </cell >
+					</row >
+				</tabular>
+
+			</table>
+			<p>
+				Since the acceleration of the book is zero, the net force on the book must be zero. That means, <m> x </m> and <m> y </m> components of net force will be separately zero.
+				<md>
+					<mrow> \amp F_{x}^{\text{net}} = 0 +  10.39 + 0 - F_s = 0.</mrow>
+					<mrow> \amp F_{y}^{\text{net}} = - 14.715 - 6.0 + F_N + 0 = 0.</mrow>
+				</md>
+			</p>
+
+			<p> <alert> Solve for the desired quantities: </alert>
+
+			</p>
+			<p>
+				Solving the unknowns in the equations of motion, we get the following after putting the units back in.
+			<me>
+				F_s = 10.39\text{ N},\ \ F_N =  20.72\text{ N}.
+			</me>				
+
+			</p>
+
+			<p><alert> Interpret the result: </alert>
+			</p>
+			<p>
+				The normal force on the book from the table has magnitude <m> 20.72\text{ N}</m> pointed up, and the static friction on the book from the table has magnitude <m> 10.39\text{ N}</m> pointed in horizontally to oppose the tendency of the applied force.
+			</p>		
+
+		</solution>
+		<solution><title> (b) </title>
+			<p> In part (a), we found two forces applied by the table on the book. Their vector sum will give the net force by the table on the book. The required force, the force by the book on the table, is the negative of this force with the following components. 
+			</p>
+			<p>
+				<me>
+					F_x = + 10.39\text{ N}, \ \ F_y = -20.72\text{ N}.
+				</me>
+			</p>
+
+			<p>
+				The magnitude is <m>\sqrt{10.39^2 + 20.72^2} = 23.2\text{ N</m> and angle <m> \theta </m> is <m>\arctan(20.715/10.39) =63.4^{\circ}</m>. Since the point <m>(10.39, -20.72) </m> is in the fourth quadrant, the direction of this force is  <m>63.4^{\circ}</m> clockwise from the positive <m> x </m> axis.
+			</p>
+			<p>
+				The following figure shows the vectors, their addition, and the results.
+			</p>
+
+			<p>
+				<image source=  "./images/forces/example-static-friction-applied-angle-b.png" width="60%" />
+			</p>
+		</solution>
+
+		<solution><title> (c) </title>
+			<p>
+				We cannot answer this question based on the information provided since for <m> \mu_s</m> we need the maximum static friction <m> F_s^{\text{max}}</m> which we do not have. We do not know how much more applied force the book can take before starting to slide.
+				 
+			</p>
+		</solution>
+
+
+	</example>
+
+
+	<example xml:id="ex-determining-max-static-friction"> <title> Maximum Static Friction</title>
+
+		<statement>
+			<sidebyside widths="50% 40%">
+				<p>
+					A book of mass <m> 1.5\text{ kg}</m> is at rest on a horizontal table.  The book is then pushed with a force at an angle of <m>30^{\circ}</m> below the horizontal direction. 
+				</p>
+
+				<image source="./images/forces/ex-book-on-table-static-friction.png" />
+			</sidebyside>
+			<p>
+				The magnitude of the force is increased and found that once the magnitude reaches <m> 25\text{ N}</m>, the book starts to slide on the table.
+			</p>			
+			<p>
+				(a) What are the magnitudes of the Normal force and static friction force between the book and the table?
+			</p>
+			<p>
+				(b) What is the value of the coefficient of static friction force between the book and the table?
+			</p>
+		</statement>
+
+		<hint> <p> Use the set up of <xref ref="ex-determining-static-friction"/>. </p> </hint>
+		<answer><p> (a) <m> F_N = 27.22\text{ N},\ \ F_s = 21.65\text{ N}</m>, (b) 0.8. </p></answer>
+
+
+		<solution>
+			<p> (a)
+			 	We follow exact same steps explained in Example <xref ref="ex-determining-static-friction"/>. They lead to the following equations of motion.
+			 	<me>
+			 		F_N = 27.22\text{ N},\ \ F_s = 21.65\text{\text N}.
+			 	</me>
+			 </p>
+			 <p> (b)
+			 	This <m> F_s</m> is actually <m> F_s^{\text{max}} </m> since the book will slide if the applied force was any greater.
+			 	<me>
+			 		F_s^{\text{max}} = 21.65\text{\text N}.
+			 	</me>
+			 	From <m> F_s^{\text{max}} </m> and <m> F_N</m> we get <m> \mu_s </m>.
+			 	<me>
+			 		\mu_s = \dfrac{F_s^{\text{max}}}{F_N} = \dfrac{21.65}{27.22} = 0.8.
+			 	</me>
+			</p>
+ 
+
+		</solution>
+
+
+	</example>
+
+
+	<example xml:id="ex-kinetic-friction-accelerating"> <title> Kinetic Friction - Accelerating</title>
+		<statement>
+			<p>
+				A book of mass <m> 1.5\text{ kg}</m> is at rest on a horizontal table.  The book is then pushed with a force at an angle of <m>30^{\circ}</m> below the horizontal direction. Once the force is increased beyond <m> 25\text{ N}</m>, the book starts to slide.
+			</p>
+			<p> 
+				At the instant the book starts to slide, we immdiately reduce the force to <m> 20\text{ N}</m> and keep it there for another <m> 5 \text{ sec}</m>. We find that the book continues to slide during all that time. 
+			</p>
+			<p>
+				The coefficient of kinetic friction between the book and the table, determined in another experiment, is <m> \mu_k = 0.3 </m>.
+			</p>
+			<p>
+				(a) What is the acceleration of the book when sliding?
+			</p>
+			<p>
+				(b) How far would the book slide in <m> 0.5 \text{ sec}</m>
+			</p>	
+			<p>
+				(c) How long will the book take to reach a speed of <m> 2.0 \text{ m/s} </m>?
+			</p>
+		</statement>
+
+		<hint> <p>(a) Solve components of <m> \vec F_{\text{net}} = m\vec a</m>. </p> </hint>
+		<answer> <p> (a)  <m> 6.59\text{ m/s}^2</m> in the horizontal direction towards the positive <m> x </m> axis, 
+				(b) <m> 1.65\text{ m}</m>,  
+				(c)  <m> 0.3\text{ s}</m>. </p> </answer>
+		<solution><title>(a) </title>
+			<p> (a) 
+				Note that the description of the problem has several numbers that would not be used in solving the problem. They are there to give you a more complete picture of the physical setup of the problem. Below we will follow a systematic way of applying Newton's laws.
+			</p>
+			<p> <alert> System: </alert> the book.
+			</p>
+			<p> <alert> Identify forces on the system: </alert>
+			</p>
+			<p>
+				As usual, we look for contact forces from objects touching the system and long-distance forces, such as gravity, that do not require contact. The following is the list of the forces acting on the system (the book) here by the Agent, the Earth, and the Table. There are two forces from the table - the normal force and the kinetic friction.
+			</p>
+			<p>
+				<ol>
+					<li> Push by an Agent,</li>
+					<li> Weight of the book by Earth, </li>
+					<li> Normal force by the Table, and</li>
+					<li> Kinetic friction by the Table. </li>
+				</ol>
+			</p>
+			<p>
+				We show the forces in a figure.
+			</p>
+			<image source="./images/forces/ex-book-on-table-kinetic-friction.png" width="90%"/>
+
+			<p> <alert> Choose a coordinate system: </alert>
+			</p>
+			<p>
+				Since we expect an axcceleration in the horizontal direction, we pick one of the Cartesian axis, here <m> x </m> axis, to be in the direction of the accelerations. Let <m> a </m> be the magnitude of the acceleration, then, the components of the acceleration vector <m> \vec a </m> is
+				<me>
+					a_x = a,\ \ a_y = 0.
+				</me>
+				We will use this when we fill in different quantities in the components of the equation of motion.
+			</p>
+			<p> <alert> Generate equations of motion: </alert>
+			</p>
+			<p>
+				Using the Free-body diagram, we can work out the components of forces.
+			
+				<md>
+					<mrow> \amp \text{Push: } F_x = 20\,\cos\,30^{\circ} = 17.3\text{ N},\ \   F_y = -20\,\sin\,30^{\circ} = -10.0\text{ N},</mrow>
+					<mrow> \amp \text{Weight: } W_x = 0,\ \   W_y = - 1.5\times 9.81 = -14.715\text{ N},  </mrow>
+					<mrow> \amp \text{Normal from Table: } F_{N,x} = 0,\ \   F_{N,y} =  F_N,</mrow>
+					<mrow> \amp \text{Kinetic Friction from Table: } F_{k,x} = -F_k,\ \   F_{k,y} =  0,</mrow>
+				</md>
+				where the magnitude <m> F_k </m> can also be written in terms of the magnitude of the normal force  <m> F_N </m>.
+				<me>
+					F_k = \mu_k F_N \Longrightarrow F_k = 0.3\, F_N.
+				</me>
+				Now, we use these components into the components of <m> \vec F_{\text{net}} = m\vec a</m> to obtain one equation along each axis. We get the following two equations here.
+				<md>
+					<mrow>\amp 17.3 + 0 + 0 - 0.3\, F_N = 1.5\, a,</mrow>
+					<mrow>-\amp 10 - 14.715 + F_N + 0 = 0. </mrow>
+				</md>
+			</p>
+
+			<p> <alert>Solving equations of motion: </alert>
+			</p>
+			<p>
+				Solving equations of motion gives
+				<me>
+					F_N = 24.715\text{ N},\ \  a= \dfrac{17.3-0.3\times 24.715}{1.5} = 6.59\text{ m/s}^2.
+				</me>
+			</p>
+			
+			<p> <alert> Interpret the result:</alert>
+			</p>
+			<p>
+				The acceleration of the book when sliding has magnitude <m> 6.59\text{ m/s}^2</m> in the horizontal direction towards the positive <m> x </m> axis.
+			</p>
+
+		</solution>
+
+
+		<solution>  <title> (b) and (c) </title>
+			<p> (b) 
+				We notice that at the instant the book starts to slide, its velocity is zero. And after that, the acceleration is constant along <m> x </m> axis. Therefore, we can use the kinematics equations for the constant acceleration along the <m> x </m> axis. Therefore,
+				<md>
+					<mrow> \Delta x \amp = v_{i,x}\, t + \dfrac{1}{2}\,a_x\, t^2,</mrow>
+					<mrow>  \amp = 0 + \dfrac{1}{2}\,6.59\times 0.5^2 = 1.65\text{ m}.</mrow>
+				</md> 
+			</p>
+			<p> (c) 
+				  Using another kinematics equation for  constant  <m> a_x </m>,  we get the time to reach the required speed.
+				<md>
+					<mrow> t \amp = \dfrac{v_{f,x} - v_{i,x}}{a_x},</mrow>
+					<mrow>  \amp =  \dfrac{2.0 - 0}{6.59} = 0.3\text{ s}.</mrow>
+				</md> 
+			</p>
+		</solution>
+
+
+	</example>
+
+	<example> <title> Kinetic Friction - Constant Velocity </title>
+		<statement>
+
+			<p>
+				A book of mass <m> 1.5\text{ kg}</m> is at rest on a horizontal table.  The book is then pushed with a force at an angle of <m>30^{\circ}</m> below the horizontal direction. Once the force is increased beyond <m> 25\text{ N}</m>, the book starts to slide.
+			</p>
+			<p> 
+				At the instant the book starts to slide, the book accelerates with increasing speed. The applied force is then reduced to a value such that if we maintain that force, the book just coasts at constant velocity. The coefficient of kinetic friction between the book and the table, determined in another experiment, is <m> \mu_k = 0.3 </m>. 
+			</p>
+ 
+			<p>
+				What is the magnitude of the applied force for which the book slides at a constant velocity?
+			</p>
+
+		</statement>
+
+		<hint> <p> Solve <m> \vec F_{\text{net}} = 0</m>.  </p> </hint>
+		<answer> <p> <m> 6.17\text{ N} </m> </p> </answer>
+		<solution> 
+			<p> 
+				This is the same problem as Example <xref ref="ex-kinetic-friction-accelerating"/>, except we now have zero acceleration, and instead of finding acceleration, we need to tind the magnitude of the applied force.
+			</p>
+			<p>
+				Let <m> F </m> denote the magnitude of the applied force.
+			</p>
+			<p> 
+				Following the same procedure as in the previous example, we find the following equations of motion.
+ 				<md>
+					<mrow>\amp F\,\cos\,30^{\circ} + 0 + 0 - 0.3\, F_N = 0,</mrow>
+					<mrow>-\amp F\,\sin\,30^{\circ} - 14.715 + F_N + 0 = 0. </mrow>
+				</md>
+				Multiplying the second equation by 0.3, adding the two equations, and then solving for <m> F </m>, we get 
+				<me>
+					F = \dfrac{0.3\times 14.715}{ 0.866 - 0.3\times 0.5 } = 6.17\text{ N}.
+				</me>
+			</p>
+		</solution>
+
+
+
+	</example>
+
+
+
+	<example> <title> Computing Viscous Drag Force Given the Speed</title>
+		<statement>
+			<p> 
+				An amoeba is moving in water at speed <m> 10\, \mu\text{m/min}</m>. You can assume amoeba to be a sphere of radius <m> 500\, \mu\text{m}</m>. Assume:  Viscosity <m> \eta </m> of water to be <m> 0.009\text{ Pa.s}</m> and the density of water to be <m> 1000\text{ kg/m}^3</m>.
+
+			</p>
+			<p>
+				(a) What is the Reynold's number of the fluid flow at the speed of the amoeba? Decide which drag force is dominant here.
+			</p>
+			<p>
+				(b)  Based on your decision in (a), compute the drag force on the amoeba.
+			</p>
+			<p>
+				(c) If the density of amoeba is that of water, how many times of the drag force is the weight? 
+			</p>
+
+		</statement>
+		<hint> <p>  Use formulas given in the definitions of drag forces. </p> </hint>
+		<answer> <p>(a) <m> 1.9\times 10^{-5}</m>, (b) <m>1.41\times 10^{-11}\text{ N} </m>,(c) <m>364,300</m>. </p> </answer>
+		<solution> 
+			<p> (a)
+				We use the formula for the Reynold's number to find the value. In the Reynold's number formula, we need to choose a length scale for the moving object, for which we choose the diameter of the amoeba. We also convert all the units in the standard SI units of <m> \text{m, s, kg}</m>.
+				<md>
+					<mrow> N_R \amp = \dfrac{L \rho v }{\eta}, </mrow>
+					<mrow> 	  \amp = \dfrac{ 2\times 500\times 10^{-6} \times 1000\times \frac{1}{6}\times 10^{-6} }{ 0.009} = 1.9\times 10^{-5}. </mrow>
+				</md>
+				This says that viscous drag will be the dominant one for amoeba.
+			</p>
+			<p> (b)
+				Using the formula for the viscous drag force for a sphere, we find
+				<md>
+					<mrow>F_D^{\text{viscous}} \amp = 6\pi\eta R v, </mrow>
+					<mrow> \amp = 6\times \pi \times 0.009\times 500\times 10^{-6} \times   \frac{1}{6}\times 10^{-6}</mrow>
+					<mrow> \amp = 1.41\times 10^{-11}\text{ N}. </mrow>
+				</md>
+			</p>
+			<p>(c) 
+				To find the weight of amoeba, we need to find its mass. We will get its mass by multiplying its volume by the density.
+				<me>
+					\text{Volume, }V = \dfrac{4}{3}\pi R^3 = 5.24\times 10^{-10}\, \text{m}^3.
+				</me>
+				Therefore, weight of the amoeba is
+				<me>  
+					W = mg = \left( 1000 * 5.24\times 10^{-10} \right) * 9.81 = 5.14\times 10^{-6}\text{ N}.
+				</me>
+				Comparing drag to weight we get.
+				<me>
+					\dfrac{W}{F_D} = \dfrac{5.14\times 10^{-6}}{1.41\times 10^{-11}} = 364,300.
+				</me>
+
+			</p>
+
+		</solution>
+	</example>
+
+
+
+	<example> <title> Computing Inertial Drag Force  </title>
+		<statement>
+			<p> 
+				Inertial drag force is important at high speeds. A dolphin is swimming in water at a speed of <m> 10 \text{ m/s}</m>. Model the dolphin as a cylinder of radius <m> 1.5\text{ m} </m> and length <m> 4\text{ m}</m>. Viscosity <m> \eta </m> of water is <m> 0.009\text{ Pa.s}</m>. You may use the drag coefficient of dolphin to be <m> C_D =  0.0036</m>. Density of water = <m> 1000\text{ kg/m}^3</m>.
+			</p>
+			<p>
+				(a) Find the Reynold's number for the water flow at the speed of the dolphin.
+			</p>
+			<p>
+				(b) Based on the Reynold's number, decide if you should omit the viscous drag and only comoute the inertial drag when computing the drag force, and then find the drag force on th dolphin. 
+			</p>
+
+			<p>
+				(c) What will happen to the drag force, if dolphin slows down to <m> 5\text{ m/s}</m>?
+			</p>
+
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p> (a) <m> 3.3 \times 10^6</m>  ,(b) <m> 1273\text{ N}</m>, (c) <m> 637\text{ N}</m>.</p> </answer>
+		<solution> 
+			<p>
+				(a) 
+				We use the formula for the Reynold's number to find the value. In the Reynold's number formula, we need to choose a length scale for the moving object, for which we choose the diameter of the cylinder modeling the dolphin since that is the size which is perpendicular to the flow.
+				<md>
+					<mrow> N_R \amp = \dfrac{L \rho v }{\eta}, </mrow>
+					<mrow> 	  \amp = \dfrac{ 2\times 1.5 \times 1000\times  10 }{ 0.009} = 3.3 \times 10^6. </mrow>
+				</md>
+				
+			</p>
+			<p> (b)
+				Since <m>N_R \gt\gt 1 </m>, the inertial drag is way more than the viscous drag. Therefore, we drop the viscous drag.
+				 Using the formula for the inertial drag force, we find
+				<md>
+					<mrow>F_D^{\text{inertial}} \amp = \dfrac{1}{2}\,C_D A \rho v^2, </mrow>
+					<mrow> \amp = 0.5\times 0.0036\times \pi\times 1.5^2\times 1000\, 10^2 =  1273\text{ N}. </mrow>
+				</md> 				
+			</p>
+			<p>(c)
+				Since <m> F_D \sim v^2 </m>, if <m> v \right arrow \dfrac{v}{2} </m>, 
+				<m> F_D \right arrow \dfrac{F_D}{4} </m>. That is, the drag force will become one quarter.
+				<me>
+					F_D = \dfrac{2544\text{ N}}{4} = 637\text{ N}.
+				</me>
+
+			</p>
+		</solution>
+	</example>
+
+
+	<example> <title> Drag Force and the Terminal Velocity  </title>
+		<statement>
+			<p> 
+				 A steel ball of radius <m> 2.0\text{ cm}</m> is gently placed inside a tube of water and released from rest. Initially, the ball accelerates but after some time reaches a terminal velocity, i.e., it velocity does not change. Viscosity <m> \eta </m> of water is <m> 0.009\text{ Pa.s}</m>. You may use the drag coefficient of sphere to be, <m> C_D = 0.5</m>. Density of steel = <m> 8000\text{ kg/m}^3</m>. Density of water = <m> 1000\text{ kg/m}^3</m>.
+			</p>
+
+			<p>
+				(a) Assuming viscous drag force to be the only drag force, find the speed a which the net force on the ball is zero. This speed is called the <term> terminal speed</term>.
+			</p>
+			<p>
+				(b)  What is the Reynold's number of the flow at the terminal speed you found by assuming viscous drag as total drag in (a)? Decide if ignoring the inertial drag force was justified.
+			</p>
+			<p>
+				(c) You will find that viscous drag force is not the dominant drag force at this speed. We should be using the inertial drag force instead. Now, find the terminal velocity using the inertial drag force.
+			</p>
+
+
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p>  (a) <m> 774\text{ m/s}</m> ,(b) <m> 3,440,000</m>, (c) <m> 2.9\text{ m/s} </m>. </p> </answer>
+		<solution> 
+
+			<p> (a) Using the formula for the viscous drag force, we find
+				<md>
+					<mrow>F_D^{\text{viscous}} \amp = 6\pi\eta R v, </mrow>
+					<mrow> \amp = 6\times \pi \times 0.009\times 0.02 \times v = 0.0034\, v. </mrow>
+				</md>
+				This must balance the weight for acceleration to be zero. We need to find the mass of the ball to find the weight. We will get that from the volume <m> V </m> of the ball and the density of steel.
+				<md>
+					<mrow> V \amp = \dfrac{4}{3}\pi R^3, </mrow>
+					<mrow>  \amp = \dfrac{4}{3}\pi \, 0.02^3 =3.35\times10^{-5}\text{ m}^3. </mrow> 
+				</md>
+				Therefore, 
+				<me>
+					W = mg = (3.35\times10^{-5}\times 8000)\times 9.81=2.63\text{ N}. 
+				</me>
+				Balancing this with the viscous drag gives
+				<me>
+					0.0034\, v = 2.63\ \ \Longrightarrow\ \  v = 774\text{ m/s}.
+				</me>
+
+			</p>
+			<p>(b)
+				We use the formula for the Reynold's number to find the value. In the Reynold's number formula, we need to choose a length scale for the moving object, for which we choose the diameter of the ball.
+				<md>
+					<mrow> N_R \amp = \dfrac{L \rho v }{\eta}, </mrow>
+					<mrow> 	  \amp = \dfrac{ 0.04 \times 1000\times 774 }{ 0.009} = 3,440,000. </mrow>
+				</md>
+				This is saying that at this speed, the inertial drag is 3,440,000 times more important. That means, our terminal speed cslculated in (a) is wrong. We shoud, instead use the inertial drag formula. 
+
+			</p>
+			<p>(c)
+				 Using the formula for the inertial drag force, we find
+				<md>
+					<mrow>F_D^{\text{inertial}} \amp = \dfrac{1}{2}C_D A \rho v^2, </mrow>
+					<mrow> \amp = 0.5\times 0.5\times \pi\times 0.02^2\times 1000\, v^2 = 0.315\, v^2. </mrow>
+				</md> 
+				This must balance the weight for acceleration to be zero. We fouhd weight in part (a). Now, we get the following equaiton for <m> v </m>.
+				<me>
+					0.315\, v^2 = 2.63\ \ \Longrightarrow\ \  v = 2.9\text{ m/s}.
+				</me>
+				Thus, the terminal velocity for the steel ball is <m> 2.9\text{ m/s}</m>.
+			</p>
+
+ 
+		</solution>
+	</example>
+
+
+
+
+
+	<example> <title> Coupled Motion of Two Blocks - TODO </title>
+	</example>
+
+	<example> <title> Coupled Motion of Two Blocks and a Pulley- TODO </title>
+	</example>
+
+
+</section>

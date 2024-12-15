@@ -1,0 +1,62 @@
+<section xml:id="Clausiuss-Theorem"><title> Clausius's Theorem </title>
+
+	<introduction><title> (Calculus) Skip This Section for a non-Calculus Class </title>
+
+		<p>
+			Clausius's theorem states that the following inequality holds for all cyclic processes.
+			<men xml:id="eq-clausius-1">
+				\oint \frac{dQ}{T}\le 0. 
+			</men>
+		</p>
+		<p>
+			<alert>Proof:</alert>
+		</p>
+		<p>
+			Consider an arbitrary system X that undergoes a cyclic process.  In each cycle the system receives or gives up heat to a set of thermal baths at temperatures <m> T_1</m>, <m> T_2</m>, <m> \cdots</m>, <m> T_n</m>.  A Carnot engine is an example of this kind of system with only two heat baths where every process is reversible.  Here we assume that some or all of the processes of X may be irreversible.  Let <m> Q_1</m>, <m> Q_2</m>, <m> \cdots</m>, <m> Q_n</m> be the heat exchanged by X  and the thermal baths at <m> T_1</m> , <m> T_2</m> , <m> \cdots</m> , <m> T_n</m>  respectively with the sign notation that <m> Q_i</m>  will be positive if heat flows in X and negative if   heat flows out of X to a thermal bath.   We will prove that
+			<men xml:id="eq-clausius-2">
+				\sum_{i=1}^n \frac{Q_i}{T_i} \le 0.  
+			</men>
+		</p>
+		<p>
+			Once we have proved this, we can immediately obtain the theorem by considering the case where the system exchanges heat with infinitely many baths.  In that case the sum in Eq.  <xref ref="eq-clausius-2"/>  will turn into integral in  Eq. <xref ref="eq-clausius-1"/>.
+		</p>
+		<p>
+			To proceed with the proof, we introduce reversible engines such as Carnot engines <m> C_1</m>, <m> C_2</m>, <m> \cdots</m>, <m> C_n</m>  between the baths and a common heat bath at temperature <m> T_0</m>  as shown in <xref ref="fig-clausius-proof"/>.
+		</p>
+		<figure xml:id="fig-clausius-proof">
+			<caption>
+				System undergoing a cyclic process interacting with heat baths <m> T_1</m>, <m> T_2</m>, <m> \cdots</m>, <m> T_n</m>.  Carnot cycles operate between these heat baths and a common heat bath <m> T_0</m>.
+			</caption>
+			<image source="./images/entropy/clausius-proof.png" width="80%"/>
+		</figure>
+		<p>
+			We will pick Carnot engines such that the <m> i^\text{th}</m>  Carnot cycle replenishes heat exchanged by the <m> i^\text{th}</m>  heat bath and X.  Each Carnot cycle has the following relation between its temperatures of operation and the corresponding heat exchanged.
+			<md>
+				<mrow> \amp  C_1:\ \ \ \ Q_{01} = \frac{Q_1}{T_1}T_0, </mrow>
+				<mrow> \amp  C_2:\ \ \ \ Q_{02} = \frac{Q_2}{T_2}T_0,</mrow>
+				<mrow> \amp \ \ \ \ \ \ \ \ \ \ \vdots  \ \ \ \ \ \ </mrow>
+				 <mrow> \amp  C_n:\ \ \ \ Q_{0n} = \frac{Q_n}{T_n}T_0.</mrow>
+			</md>
+		</p>
+		<p>
+			Now if we look at one cycle of the complex system consisting of X and the carnot cycles <m> C_1</m>, <m> C_2</m>, <m> \cdots</m>, <m> C_n</m>, we find that it absorbs a net heat 
+
+			<me> 
+				Q_0 = Q_{01} + Q_{02} + \cdots + Q_{0n},
+			</me>
+			and does the same amount of work.  Therefore the complex system [X, <m> C_1</m> , <m> C_2</m> , <m> \cdots</m> , <m> C_n</m>] will violate the Kelvin-Planck statement of the second law of thermodynamics if heat <m> Q_0</m> was positive.  That would mean a net intake of heat to the system in one cycle all of which converted to work without any other change, which, according to the second law, cannot happen.  Therefore, second law forbids <m> Q_0</m> from being positive.  Hence, 
+			<me>
+				Q_0 = \sum_{i=1}^{n} \frac{Q_i}{T_i} T_0 \le 0.
+			</me>
+			Since <m> T_0>0</m> , we obtain the desired result.
+			<me>
+				\sum_{i=1}^n \frac{Q_i}{T_i} \le 0.
+			</me>
+			Considering the case where system X exchanges infinitesimal amount of heat with infinitely many baths turns the sum into integral over the cycle of the system: 
+			<me> \oint \dfrac{dQ}{T}\le 0</me>.
+		</p>
+	</introduction>
+ 
+
+
+</section>

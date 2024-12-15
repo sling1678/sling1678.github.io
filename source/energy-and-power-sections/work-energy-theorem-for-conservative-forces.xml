@@ -1,0 +1,91 @@
+<section xml:id="Conservative-Forces-and-Conservation-of-Energy"><title> Conservative Forces and Conservation of Energy </title>
+	<introduction>
+		<p>
+			What will happen if all forces acting on a body are conservartive forces? Work-energy theorem tells us that the net work done equals the change in the kinetic energy.
+			<men xml:id="eq-work-energy-theorem">
+				W_{if}^{\text{net}} = K_f - K_i.
+			</men>
+			But, if <em> all forces </em> are conservative, then the left side can also be written in terms of sum of the negative of potential energies of these forces. 
+			<me>
+				\left( \sum U_i  - \sum U_f \right) = K_f - K_i,
+			</me>
+			where <m> \sum U_i </m> is the sum of all <m> U </m> terms evaluated at instant <m> t_i </m>, and similarly for <m> \sum U_f </m>. Rearranging terms in this equation we get
+			<men xml:id="eq-kinetic-plus-potential-conserved">
+				K_i + \sum U_i   =  K_f + \sum U_i.
+			</men>
+			That is, if <alert> all the forces  are conservative forces</alert>, then the combination <m> K + \sum U </m> is conserved and is independent of the path of the motion. 
+		</p>
+		<p>
+			The combination <m> K + \sum U </m> is called <term> energy </term> and sometimes <term> mechanical energy</term>, and denoted by symbol <m> E</m>.
+			<men xml:id="eq-definition-of-energy">
+				E = K + \sum U. 
+			</men>
+			Equation <xref ref="eq-kinetic-plus-potential-conserved" /> can now be reexpressed as follows. If all forces acting on the body are conservative forces, then 
+			<men xml:id="eq-conservation-of-energy">
+				E_i = E_f.
+			</men>
+		<p>
+			This is called the <term> principle of conservation of energy</term>, which we can state in words also. 
+		</p>			
+			<alert> Energy cannot change if only conservative forces act on the system. </alert>
+		</p>
+
+		<exercise><title> The Energy of a Skier Going Down a Slope - Ignoring Drag and Kinetic Friciton Forces </title>
+			<statement>
+				<p>
+					A skier starts near the top of a hill. His speed at a point on the slope that is   <m> 50\text{ m}</m> above the sea level is <m> 5.0\text{ m/s} </m>.  
+				</p>
+				<p>
+					What will be his speed when he reaches a point that is <m> 35\text{ m}</m> above the sea level, assuming you can neglect the effect of drag and kinetic fricion forces on the skier?
+				</p>
+
+			</statement>
+			<hint> <p>  Energy is conserved. </p> </hint>
+			<answer> <p> <m> 17.9\text{ m/s}.</m>  </p> </answer>
+			<solution> 
+				<p>
+					Ignoring Drag and Kinetic Friction forces, the forces on the skier are
+					<ol>
+						<li> Weight </li>
+						<li> Normal </li>
+					</ol>
+					The normal force will do no work since, at each instant, the normal force is perpendicular to the displacement. Thus, we have only a conservative force on the skier. Therefore, his energy cannot change.
+				</p>
+				<p>
+					Equating the energy of the skier at the two instants in the problem statement,
+					<me>
+						\dfrac{1}{2}mv_f^2 + mgy_f = \dfrac{1}{2}mv_i^2 + mgy_i.
+					</me>
+					The mass <m> m</m> cancels out. Solving for <m> v_f </m> we get
+					<me>
+						v_f = \sqrt{ v_i^2 + 2g(y_i - y_f) }.
+					</me>
+					Now, we put in the numbers.
+					<me>
+						v_f = \sqrt{ 5.0^2 + 2\times 9.81\times ( 50 - 35) } = 17.9\text{ m/s}.
+					</me>					
+				</p>
+			</solution>
+		</exercise>		
+
+
+<!-- 			
+
+		<p>
+			Note that the original work-energy theorem given in Eq. <xref ref="eq-work-energy-theorem" /> is applicable even when any of the forces are not conservative but Eq. <xref ref="eq-conservation-of-energy" />  is true only if all of the forces are conservative. So, what to do if some of the forces on the body are conservative and some others are not? We deal with this general situation by separating the net work into two parts and treating work by conservative forces as changes in potential energies and leave the work by non-conservative forces as work.
+		</p>
+ 		<p>
+			<md> 
+				<mrow> \amp W_{if}^{\text{conservative}} + W_{if}^{\text{non-conservative}} = K_f - K_i </mrow>
+				<mrow> \amp \Longrightarrow\ \ \sum U_i - \sum U_f + W_{if}^{\text{non-conservative}} = K_f - K_i </mrow>
+				<mrow> \amp \Longrightarrow\ \ W_{if}^{\text{non-conservative}} = \left( K_f + \sum U_f \right) -\left( K_i + \sum U_i \right)  </mrow>
+			</md>
+			That is,
+			<men xml:id="eq-conservation-of-mechanical-energy">
+				 W_{if}^{\text{non-conservative}} = E_f - E_i.
+			</men>
+			Sometimes, we call this the <alert> principle of conservation of energy</alert>. This is more general than Eq. <xref ref="eq-conservation-of-energy"/> since it covers the case of what happens to energy when you have non-conservative forces as well. There are many examples of non-conservative forces in every day situation - push, pull, tension, kinetic friction, etc. Some of these forces may increase the energy and some others may take away energy from the system. 
+		</p> -->
+	</introduction>
+</section>
+

@@ -1,0 +1,96 @@
+<section xml:id="Conservation-of-Momentum"><title> Conservation of Momentum </title>
+	<introduction>
+		<p>
+			In our discussion of the center of mass motion, we established the following important relation between the change in total momentum and the impulse by external forces.
+			<men xml:id="eq-ptotf-ptoti-impulse">
+				\vec p_{\text{tot},f} - \vec p_{\text{tot},i} = \vec J_{\text{net}}^{\text{ext}},
+			</men>
+			where subscripts <m> i </m> and <m> f</m> denote initial and final instants.
+			<!-- <men>
+				\vec p_{tot} = \vec p_1 + \vec p_2 + \vec p_3 + \cdots + \vec p_N
+			</men>
+			for an <m> N\text{-}</m>part system, and net external impulse is the sum of impulses of all forces by bodies that are not part of the system. -->
+			<!-- <men> 
+				\vec J_{\text{net}}^{\text{ext}} = \int_{t_i}^{t_f}\, \vec F_{\text{net}}^{\text{ext}}\, dt.
+			</men> -->
+			You can immediately see that total momentum at the final instant would equal to the total momentum at the initial instant if <m> \vec J_{\text{net}}^{\text{ext}} = 0</m>.
+			<!-- Now, let us observe that if <m> \vec J_{\text{net}}^{\text{ext}} = 0</m>, Eq. <xref ref="eq-ptotf-ptoti-impulse"/> says that total momentum at the final instant is equal to the total momentum at the initial instant. -->
+			<men>
+				\vec p_{\text{tot},f} = \vec p_{\text{tot},i}\ \ \ (\vec J_{\text{net}}^{\text{ext}} = 0).
+			</men>
+			This is called <term> principle of conservation of momentum</term>. 
+			<idx><h>Momentum</h><h>Conservation</h></idx>
+			<idx>Conservation of Momentum</idx>
+			<idx>Principle of Conservation of Momentum</idx>
+		</p>
+		<p>
+			Let us look at an example of a system of two bodies of masses <m>m_1 </m> and <m> m_2 </m>. Let their initial velocties be <m> \vec v_1 </m> and <m> \vec v_2 </m>. If net impulse by external forces on these two bodies is zero, then their net momentum will not change. However, just because net momentum will not change, their individual momenta may change, e.g., as a result of collision between them or some other forces between them. Let their velocities after some time be <m> \vec v_1^{\,\prime} </m> and <m> \vec v_2^{\,\prime} </m>. Hence, in the absence of external impulse, we will find that
+			<me>
+				m_1 \vec v_1 + m_2 \vec v_2 = m_1 \vec v_1^{\,\prime} + m_2 \vec v_2^{\,\prime},
+			</me>
+			or equivalently,
+			<me>
+				\vec p_1 + \vec p_2 = \vec p_1^{\,\prime} + \vec p_2^{\,\prime},
+			</me>			
+			That is, in the absence of any external impulses, the momenta of various parts of a system can get redistributed among the parts but can never be lost. Note that this is vector equation, and therefore, in most situations, we would analyze it in the component form.
+		</p>
+	</introduction>
+
+	<example xml:id="Momentum-of-Ice-Skaters-Pushing-On-Each-Other"> <title> Momentum of Ice Skaters Pushing On Each Other</title>
+		<statement>
+
+			<sidebyside widths="55% 10% 35%">
+				<p>
+					Alan  and Betsy  are ice skating on a smooth surface.  Alan's mass is <m> 60\text{ kg} </m> and that of Betsy's is  <m> 50\text{ kg} </m>. They start from rest by pushing on each other with an average force of magnitude <m> 30\text{ N}</m> and directed horizontally for <m> 1.5\text{ sec}</m>.  Assume the skating surface to be horizontal and frictionless. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-example-skaters">
+					<caption></caption>
+					<image source="./images/momentum/example-skaters.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Find the speeds of the two skaters at an instant after <m> t = 1.5\text{ sec} </m> when they are no longer in contact.
+			</p>
+		</statement>
+		<!-- <hint> <p>  Use <m> x </m> axis and write everything in components. </p> </hint> -->
+		<answer> <p>  Betsy's speed is <m> 0.9\text{ m/s} </m> and Alan's speed is <m> 0.75\text{ m/s} </m>. </p> </answer>
+		<solution>
+			<p>
+				To deal with the vector nature of momentum, let us introduce a coordinate system. Since all motion is along the Alan-Betsy line, we just need the <m> x </m> axis. Let positive <m> x </m> direction be from Alan-to-Betsy direction. 
+			</p>
+			<p>
+				Since the net force during the time of interest is that of the push on Alan or Betsy by the other, the momentum change of either of them can be obtained by using the momentum/impulse form of Newton's second law. 
+			</p>
+			<p> <alert> Betsy's velocity using impulse/momentum. </alert>
+				Let's work out the momentum change of Betsy, which we denote with letter <m>B</m>, by computing the impulse on her.
+				<men xml:id="eq-example-momentum-of-ice-skaters">
+					\Delta p_{B,x} = J_x^{\text{on B}} = 30\text{ N}  \times 1.5\text{ sec}= 45\text{ N.s} = 45\text{ kg.m/s}.
+				</men>
+				Since initially momentum was zero, the momentum at <m> 1.5\text{ sec}</m> would be
+				<me > 
+					p_{B,x} = p_{B,i,x} + \Delta p_{B,x} = 45\text{ kg.m/s},
+				</me>
+				which upon dividing by Betsy's mass gives <m> x </m> component of her velocity
+				<me> 
+					v_{B,x} = \dfrac{p_{B,x}}{m_B} = 0.9\text{ m/s}.
+				</me>
+				Since this is the only component of velocity, Betsy's speed is <m> 0.9\text{ m/s} </m>.
+			</p>
+
+			<p> <alert> Using conservation of momentum to get change in Alan's momentum. </alert>
+				Next, we note that if we think of Alan and Betsy as a single system, the net external force horizontally on this system is actually zero along horizontal direction. Hence total <m>x</m>-momentum of  Alan<m>+</m>Betsy system remains unchanged, although each clearly gains momentum due to the push on each other. But, their momenta are oppositely directed and hence cancel out. Therefore, the change in  Alan's momentum can be immediately obtained from Eq. <xref ref="eq-example-momentum-of-ice-skaters" />. Let us attach letter <m> A </m> for Alan.
+				<me>
+				 	\Delta p_{A,x}  = - \Delta p_{B,x} = - 45\text{ kg.m/s}.
+				</me>
+				Note the negative sign - this is due to Alan's motion being directed towards negative <m> x </m> axis. Now, we divide by Alan's mass to obtain Alan's <m> x </m> velocity component.
+				<me> 
+					v_{A,x} = \dfrac{p_{A,x}}{m_A} = - 0.75\text{ m/s}.
+				</me>
+				Since this is the only component of velocity, Alan's speed is <m> 0.75\text{ m/s} </m>.			
+			</p>
+		</solution>
+	</example>
+
+
+</section>

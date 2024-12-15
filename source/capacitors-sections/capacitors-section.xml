@@ -1,0 +1,242 @@
+<section xml:id="Capacitors-section"><title> Capacitors </title>
+	<introduction>
+
+		<p>
+			A collection of conductors, usually metal pieces, is called a <term>capacitor</term>. A capacitor is used for storing electric charge and electric energy.  
+		</p>
+		<p>
+			The simplest capacitor consists of two conductors. The two conductors are called <term>plates</term> of the capacitor regardless of their shape.  Moving charges from one plate to the other creates a situation where one plate is positively charged and the other negatively charged.  Work done in doing so is stored as the electrical energy in the capacitor.
+		</p>
+		<p>
+			Early versions of capacitors were invented by the Dutch physicist Pieter van Musschenbroek of the University of Leiden around 1746, and are called <term> Leiden jars</term>.  
+		</p>
+
+ 		<sidebyside widths="60% 10% 30%">
+			<p>
+				A  Leiden jar shown in <xref ref="fig-leyden-jar-schematics"/> consists of a glass jar with inner and outer metal coatings.  The inner coating is in contact with a brass rod through a loose metal chain.  The brass rod passes through a cork stopper and a metal knob is mounted on the rod.  
+			</p>
+			<p></p>
+			<figure xml:id="fig-leyden-jar-schematics">
+				<caption>
+					 
+				</caption>
+				<image source="./images/capacitors/leyden-jar-schematics.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			When you place some electric charges on the knob of a Leyden jar, they spreads to the inner metal which attracts opposite charges of the outer metal. By grounding the outer surface of the outer metal, you transfer the charges on the outer surface of the outer metal to the ground and you are left with only opposite charges on the inner metal and the inner surface of the outer metal.
+		</p>
+
+
+		
+		<p> 
+			Leiden jars were instrumental in early experiments on electricity.  <xref ref="fig-wilmhurst-mill"/>  shows a pair of Leiden jars used in a Wilmhurst mill for storing charges. Leiden jars can be charged to fairly high voltages, e.g., in a Wilmhurst mill.  When wires connecting the two plates of a charged Leiden jar are brought near each other spectacular sparks from one wire to the other are often visible.  Leiden jars are sometimes also called <term>condensers</term>.
+		</p>
+ 
+		<figure xml:id="fig-wilmhurst-mill">
+			<caption>
+				Wilmhurst mill uses Leiden jars, the two bottle-shaped containers in the figure, to store separated charges by rubbing off rotating metal strips.  The wheel contains strips of metal that rubs against a metal wool when the wheel rotates.  The separated charges are sent to Leyden jars for storage.
+			</caption>
+			<image source="./images/capacitors/wilmhurst-mill.png" width="70%"/>
+		</figure>
+
+
+	</introduction>
+
+	<subsection><title> Capacitance</title>
+		<p> 
+			Consider two arbitrarily shaped conductors that have equal and opposite charges <m>+Q</m> and <m>-Q</m> on them as shown in <xref ref="fig-two-arbitrary-metal-pieces-oppositely-charged"/>.
+ 		</p>
+ 
+		<figure xml:id="fig-two-arbitrary-metal-pieces-oppositely-charged">
+			<caption>
+				A capacitor with two conductors having equal and opposite charges <m>Q</m> and with potential difference <m>\Delta \phi</m>.
+			</caption>
+			<image source="./images/capacitors/two-arbitrary-metal-pieces-oppositely-charged.png" width="50%"/>
+		</figure>
+
+ 		<p>
+			Let <m> \Delta \phi</m> be the potential difference between the positive and negative plates.  Independently of the shape, size, or separation of the two conductors, voltage between the plates will increase if we put more charges on the two.
+			<me>
+				Q\propto \Delta \phi
+			</me>
+			Writing this as an equality we get the <term>capacitor equation</term> or <term>fundamental capacitor formula </term>.
+			<men xml:id="eq-capacitor-equation">
+				Q = C \Delta \phi,
+			</men>
+			which is often written as
+			<me>
+				Q = C V,
+			</me>
+			using symbol <m>V</m> for <m>\Delta \phi</m>, the potential difference between the plates. 
+		</p>
+		<p>
+					
+			The proportionality constant <m>C</m> is called <term>capacitance</term>.  The capacitance refers to the capacity of a capacitor for charges.  A capacitor with higher capacitance will hold more charge for the same potential difference than the one with a smaller capacitance.
+		</p>
+		<p> 
+			The unit of capacitance in SI system of units is Coulomb/Volt or <term>Farad</term>, named after the English physicist Michael Faraday.  
+			<me>
+				1\ \text{Farad} = 1\ \frac{\text{Coulomb}}{\text{Volt}}\ \Leftrightarrow\ 1\ \text{F} = 1\ \frac{\text{C}}{\text{V}}.
+			</me>
+			It turns out that 1 Farad is too big a unit for laboratory use.  Usually one uses micro-farad (<m>\mu\text{F}</m>) or pico-farad (<m>\text{pF}</m>) in the lab.
+		</p>
+		<p>
+			You can also define the capacitance of a single isolated conductor if you send its partner to infinity.  For instance, an isolated sphere of radius <m>R</m> with charge <m>Q</m> has the following potential <m>\Delta \phi</m> with respect to infinity.
+			<me>
+				\Delta \phi = \frac{Q}{4\pi\epsilon_0 R }.
+			</me>
+			Comparing this to Eq. <xref ref="eq-capacitor-equation"/>, we see that the capacitance <m>C_{\text{sphere}}</m> sphere of a single metallic sphere would be given by the following formula.
+			<me>
+			 	C_{\text{sphere}}= 4\pi\epsilon_0 R\ \ \text{(the other partner at infinity)}
+			</me>
+		</p>
+
+		<p>
+			Charging a capacitor from neutral plates to charged plates is usllay accomplished by moving eletrons from positive plate to the negative plate, which is the opposite of the electrical force on the electron. That means, you will need to do work to charge a capacitor. 
+		</p>
+		<p>
+			Below, we will show that the energy required to charge a capacitor from neutral to 
+
+			 to a final charge <m>\pm Q_f</m> with final potential difference between plates <m>V_f</m> is given by
+			<men>
+				U = \dfrac{1}{2}\ Q_f V_f.
+			</men>
+			This is the amount of electrostatic energy stored in the capacitor. We can write this in couple of other forms by using the capacitor formula, <m>Q=CV</m>.
+			<men>
+				U = \dfrac{1}{2}\ C V_f^2 = \dfrac{1}{2}\dfrac{Q_f^2}{C}.
+			</men>
+		</p>
+
+	</subsection>
+
+	<subsection><title> (Calculus) Energy Stored in a Charged Capacitor </title>
+		<p>
+			Say, you have two neutral plates. How would you make a charged capacitor from them? You would simple move electrons from one plate, say A, to the other, say B. As a result A will become positively charged and B negatively charged. Work done by you will be stored as electrical energy in the capacitor.
+		</p>
+
+		<p>
+			To get a concrete formula for energy stored in a charged capacitor, let us work with plates that are initially neutral. At some stage, positive plate will have charge <m>+q</m> and negative plate with charge <m>-q</m> as shown in <xref ref="fig-charging-a-capacitor-energy-derivation"/>. Let, at this stage, positive difference between the plates be <m>V</m>. 			The capacitor equation, Eq. <xref ref="eq-capacitor-equation"/> tells us that, charges and potential difference before transfer of any more charges is
+			<men xml:id="eq-capacitor-equation-not-yet-fully-charged">
+				q = CV.
+			</men>
+		</p>
+		
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				Now, we move an infinitesimal charge <m> dq</m> from the negative plate and place it on the positive plate, thus increasing the charges on each plate. The charge <m> dq</m> underwent a potential difference of <m>V</m>. Therefore, energy of the capacitor changes by this amount.
+				<me>
+					dU = V\,dq.
+				</me>
+			</p>
+			<p></p>
+			<figure xml:id="fig-charging-a-capacitor-energy-derivation">
+				<caption>
+					 
+				</caption>
+				<image source="./images/capacitors/charging-a-capacitor-energy-derivation.png" width="50%"/>
+			</figure>
+		</sidebyside>		
+		
+		<p>
+
+			Using <m>V</m> from Eq. <xref ref="eq-capacitor-equation-not-yet-fully-charged"/> we transform this to
+			<me>
+				dU = \dfrac{1}{C}\, q dq.
+			</me>
+			Integrating from <m>q=0</m>, to final charge value, <m>q=Q_f</m>, gives energy required to charge the capacitor from neutral to <m>Q_f</m>.
+			<men xml:id="eq-energy-of-charged-capacitor-in-charges">
+				U =  \dfrac{1}{C}\, \int_0^{Q_f}q\, dq =  \dfrac{1}{2}\dfrac{1}{C}Q_f^2.
+			</men>
+			Let potential difference between plates with this final charges be <m>V_f</m>. The capacitor equation tells us that
+			<me>
+				Q_f = C V_f.
+			</me>
+			We can use this to write energy of a charged capcitor in other forms as we have seen above.
+			<men xml:id="eq-energy-of-charged-capacitor-various-forms">
+				U = \dfrac{1}{2}\dfrac{1}{C} Q_f^2= \dfrac{1}{2}\ C V_f^2 = \dfrac{1}{2}\ Q_f V_f.
+			</men>
+
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Capacitance-of-a-Metal-Screw-and-Nut-Capacitor"><title> Capacitance of a Metal Screw and Nut Capacitor  </title>
+		<statement>
+			<p>
+				A steel screw and a steel nut fixed to a dry wooden board at a distance of <m>1.0\text{ cm}</m> from each other are connected to a <m>12\text{ V}</m> battery.  When they are fully charged, the screw has a charge of <m>+10\text{ pC}</m> and the nut a charge of <m>-10\text{ pC}</m>.  What is the capacitance of the screw/nut capacitor?
+			</p>
+
+		</statement>
+		<hint> <p> Use capcitor formula.  </p> </hint>
+		<answer> <p>   <m>\dfrac{5}{6}\text{ pF}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We use the fundamental capacitor formula <m> Q = C\Delta \phi</m> with <m>\Delta \phi = 12\text{ V}</m> provided by the battery. This gives the following for the capacitance.
+				<md>
+					<mrow> C \amp = \dfrac{Q}{\Delta \phi}</mrow>
+					<mrow> \amp = \dfrac{10\:\text{pC}}{12\:\text{V}} = \dfrac{5}{6}\: \text{pF}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Charges-on-two-Concentric-Spherical-Metals-Connected-by-a-Battery"><title> Charges on two Concentric Spherical Metals Connected by a Battery </title>
+		<statement>
+			<p>
+				Two concentric spherical metal shells separated by nonconducting air have a capacitance of <m> 300\text{ pF}</m>.  What are the charges on the two shells when the potential difference between them is <m> 1.5\text{ V}</m>?
+			</p>
+
+		</statement>
+		<hint> <p>  Use fundamental capcitor formula. </p> </hint>
+		<answer> <p> <m>\pm 450\:\text{pC} </m>.  </p> </answer>
+		<solution> 
+			<p>
+				Using the fundamental capacitor formula we obtain
+				<me>
+					Q = C \Delta \phi = 300\: \text{pF}\times 15\:\text{V} = 450\:\text{pC}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+  
+	<exercise xml:id="ex-Energy-Stored-in-a-Charged-Capacitor-when-Voltage-and-Charges-are-Given"><title> Energy Stored in a Charged Capacitor when Voltage and Charges are Given </title>
+		<statement>
+			<p>
+				A capacitor once charged to <m>100\text{ V}</m> stores  <m> \pm 10\ \mu\text{C}</m> of charges on its plates.  How much electrostatic energy is stored?
+			</p>
+
+		</statement>
+		<hint> <p>  Use energy in capacitor formula. </p> </hint>
+		<answer> <p> <m>500\ \mu\text{J}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The electrostatic energy stored in a charged capacitor is
+				<md>
+					<mrow> U \amp = \dfrac{1}{2}\:Q\:\Delta\phi</mrow>
+					<mrow> \amp =  \dfrac{1}{2}\times 10\: \mu\text{C} \times 100\: \text{V} = 500\: \mu\text{J}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

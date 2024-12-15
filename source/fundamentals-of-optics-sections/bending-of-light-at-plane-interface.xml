@@ -1,0 +1,245 @@
+<section xml:id="bending-of-light-at-plane-interface"><title> Bending of Light at Plane Interface </title>
+	<introduction>
+        <p>
+        	In this section we will explore consequences of reflection and refraction of light. We will focus here on plane interface only. In the next chapter we will look at curved interfaces.
+        </p>
+    </introduction>
+    <subsection><title>Total Internal Reflection and Critical Angle</title>
+    	<p>
+    		You saw in <xref ref="fig-refraction-two-types-of-interface"/> that if <m> n_2 \lt n_1</m>, then the angle of refraction (<m>\theta_2</m>) is greater than the angle of incidence (<m>\theta_1</m>). But angle of refraction cannot exceed <m>90^\circ</m>. That means that there is an angle of incidence (<m>\theta_1 \lt 90^\circ</m>) at which angle of refraction will be <m>90^\circ</m> as illustrated in <xref ref="fig-critical-angle"/>. This incidence angle is called <term> critical angle</term>. We will denote this angle by <m>\theta_c</m>.
+    		<me>
+    			n_1 \sin\theta_c = n_2 \sin 90^{\circ} \ \ \ (n_2 \lt n_1).
+    		</me>
+    		This gives the following formula for the critical angle.
+    		<men>
+    			\theta_c = \sin^{-1}\left(\frac{n_2}{n_1} \right).
+    		</men>
+    	</p>
+    	<figure xml:id="fig-critical-angle">
+    		<caption>
+    			Critical angle and total internal reflection. Ray 3 corresponds to the critical angle while ray 4 is totally internally reflected.
+    		</caption>
+    		 <image source="./images/fundamentals-of-optics/critical-angle.png" width="100%"/>
+    	</figure>
+ 
+
+    	<p> 
+    		The rays of light that are incident on the interface at greater angle of incidence than the critical angle, i.e., when  <m>\theta_1 \ge \theta_c</m>, will be reflected back in the <m>n_1</m>-medium as demonstrated in <xref ref="fig-critical-angle-demo"/>.  The phenomenon is called <term> total internal reflection</term>.  The concepts of critical angle and total internal reflection find their use in Fiber optics as explained next. 
+    	</p>
+    	<figure xml:id="fig-critical-angle-demo">
+    		<caption>
+    			Total internal reflection demonstrated (MS). Rays from water  incident on the horizontal water/air interface at (a) <m>40^{\circ}</m>, (b) <m>49^{\circ}</m> (infinitesimally larger than the critical angle) and (c) <m>60^{\circ}</m> at water/air interface are shown.   For incident rays greater than critical angle, there are no refracted rays in air.
+    		</caption>
+    		 <image source="./images/fundamentals-of-optics/critical-angle-demo.png" width="100%"/>
+    	</figure>
+
+
+    </subsection>
+
+    <exercise xml:id="exercise-Critical-Angle-at-Air-Water-Interface"><title>Critical Angle at Air/Water Interface</title>
+
+		<statement>
+			<p>
+				Find the critical angle for air/water interface.
+			</p>
+		</statement>
+		<hint><p>Use critical angle formula.</p></hint>
+		<answer><p> <m>48.8^\circ</m>. </p></answer>
+		<solution>
+			<p>
+				The critical angle lies in the medium of higher refractive index, here water, and has the following value.
+				<me>
+					\theta_c = \sin^{-1}\left(\frac{n_2}{n_1} \right) = \sin^{-1}\left(\frac{1.00}{1.33} \right) = 48.8^{\circ}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+ 
+	<subsection><title>Total Internal Reflections in Fiber Optics</title>
+		<p>
+			Fiber optics makes use of the phenomena of total internal reflection to transmit light at great distances by using a dielectric optical fiber (<xref ref="fig-fiber-optics-1"/> and <xref ref="fig-fiber-optics-2"/>).  A thin layer of a transparent material of lower index of refraction, called <term> cladding</term>, is deposited on the surface of the fiber to prevent the leakage of light from one fiber to another in a bundle of fibers.
+		</p>  
+    	<figure xml:id="fig-fiber-optics-1">
+    		<caption>
+    			The fiber is made of a transparent material with a thin layer of a material of lower refractive index coated such that rays of light entering the fiber at appropriate angles are totally reflected back in the fiber.
+    		</caption>
+    		 <image source="./images/fundamentals-of-optics/fiber-optics-1.png" width="100%"/>
+    	</figure>
+ 
+		<p>
+			When a ray of light traveling in the fiber strikes the fiber/cladding interface at an incidence angle greater than the critical angle <m>\theta_c</m>, it will be totally reflected back in the fiber. Therefore, there is a maximum angle  <m>\theta_{\text{max}}</m> at which a ray must enter the fiber (point X) if it is to travel by total internal reflection. If the ray enters at a greater angle then the refracted ray XY inside the fiber will strike the fiber/cladding interface at less than the critical angle.  This would lead to the leakage of light through the fiber/cladding interface. 
+		</p>
+		<p>
+			We can find  <m>\theta_{\text{max}}</m> as follows.  Let <m>n_f</m> be the refractive index of fiber and <m>n_c</m> that of the cladding.  From Snell's law at the entry point X we have the following relation.
+			<me>
+				n_f\ \sin\theta_r = n_{\text{air}}\ \sin\theta_{\text{max}}
+			</me>
+			From triangle XYZ we have
+			<me>
+				\theta_r = \frac{\pi}{2} -\theta_c.
+			</me>
+			The critical angle for fiber/clad interface is given by
+			<me>
+				\sin\theta_c =\frac{n_c}{n_f}.
+			</me>
+			From the last three equations, we  find the following for  <m>\sin\theta_{\text{max}}</m>.
+			<me>
+				n_{\text{air}}\,\sin\theta_{\text{max}} = \sqrt{n_f^2-n_c^2}
+			</me>
+			The product <m>n_{\text{air}}\sin\theta_{\text{max}}</m>  is called the <term>numerical aperture</term> or <term> NA</term>, which is a measure of the light gathering power of the fiber. Optical fibers are used in a number of applications - communication, e.g. transatlantic fiber cable, and medical imaging, e.g. various endoscopes to probe inside organs. 
+		</p>
+    	<figure xml:id="fig-fiber-optics-2">
+    		<caption>
+    			Picture of Laser light through an optical fiber.
+    		</caption>
+    		 <image source="./images/fundamentals-of-optics/fiber-optics-2.png" width="100%"/>
+    	</figure>
+ 
+
+	</subsection>
+
+
+	<subsection><title>Bending of Light Through a Prism </title>
+		<p>
+			You may be familiar with triangular piece of glass as prism, but a prism may have any shape.  
+		</p>
+		<sidebyside widths="45% 5% 50%">
+			<p>
+				In a triangular prism, a light ray incident on one face may emerge from any three of the faces after two or more refractions and reflections, and consequently the direction of light may be changed drastically as shown by <term>deviaiton angle</term> <m>\alpha</m> in <xref ref="fig-prism-triangular-deviation-angle"/>.
+			</p>
+			<p>
+			</p>
+
+	    	<figure xml:id="fig-prism-triangular-deviation-angle">
+	    		<caption>
+	    			Angle of deviation <m>\alpha</m> for a ray entering a triangular prism.
+	    		</caption>
+	    		 <image source="./images/fundamentals-of-optics/prism-triangular-deviation-angle.png" width="100%"/>
+	    	</figure>
+	    </sidebyside>
+	    <p>
+	    	In the following example, I illustrate the calculation of the angle of deviation of a light ray passing through two faces of a prism.
+	    </p>
+
+	</subsection>
+
+	<exercise xml:id="exercise-Deviation-of-Ray-by-a-Prism"><title>Deviation of Ray by a Prism</title>
+
+		<statement>
+			<p>
+				Consider a ray of light incident on a right-angled triangular prism with a <m>40^\circ</m> angle at the base as shown in <xref ref="fig-deviation-angle-in-prism-exercise"/>.  Let the angle of incidence be <m>30^\circ</m>.  Find the angle of deviation assuming the index of refraction of glass and air for the given light to be <m>1.5</m> and <m>1.0</m> respectively.
+			</p>
+	    	<figure xml:id="fig-deviation-angle-in-prism-exercise">
+	    		<caption>
+	    			Angle of deviation <m>\alpha</m> for a ray entering a triangular prism.
+	    		</caption>
+	    		 <image source="./images/fundamentals-of-optics/deviation-angle-in-prism-exercise.png" width="80%"/>
+	    	</figure>
+		</statement>
+		<hint><p>Use Snell's law at the two refraction sites. You will need to recalculate angle of incidence at the second interface.</p></hint>
+		<answer><p> <m>29.6^\circ</m>. </p></answer>
+		<solution>
+			<p>
+				Using Snell's law at A we obtain angle  <m>\angle</m>BAC to be:
+				<me>
+					\angle\textrm{BAC} = \sin^{-1}\left(\frac{\sin 30^{\circ}}{1.5} \right) = 19.5^{\circ}.
+				</me>
+				Since  <m>\triangle\text{BEC}</m> in the right angled triangle  <m>\angle\text{BEC}</m> is <m>40^{\circ}</m> because the side CE is parallel to the base, angle  <m>\angle\text{BCA}</m> = <m>90^{\circ}</m> + <m>40^{\circ}</m> = <m>130^{\circ}</m>.  In triangle <m>\triangle\text{ACB}</m>, angle  <m>\angle\text{ABC}</m> = <m>180^{\circ}</m> - <m>130^{\circ}</m> - <m>19.5^{\circ}</m> = <m>30.5^{\circ}</m>.  This is the angle of incidence at the second interface.  Now applying Snell's law at B, we obtain angle  <m>\angle\text{N}_2\text{BQ}</m> to be:
+				<me>
+					\angle\textrm{N}_2\textrm{BQ} = \sin^{-1}\left(1.5\times \sin 30.5^{\circ}\right) = 49.6^{\circ}
+				</me>
+				In rectangle ADBC, we know the following angles.
+				<me>
+					\angle  \textrm{DAC} = 30^{\circ}, \  \angle  \textrm{BCA} = 130^{\circ},\   \angle  \textrm{CBD} = 49.6^{\circ}.
+				</me>
+				Therefore, we find the angle <m>\angle\text{ADB}</m>   to be
+				<me>
+					\angle \textrm{ADB} = 360^{\circ} - 30^{\circ} - 130^{\circ} - 49.6^{\circ} = 150.4^{\circ}.
+				</me>
+				Hence the angle of deviation  <m>\angle\text{RDQ}</m> is equal to <m>180^{\circ} - 150.4^{\circ} = 29.6^{\circ}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="exercise-Deviation-of-a-Ray-Through-an-Equilateral-Traingular-Prism"><title>Deviation of a Ray Through an Equilateral Traingular Prism</title>
+
+		<statement>
+			<p>
+				Find the angle of deviation of a ray through an equilateral triangular glass prism of refractive index <m>1.55</m> if the angle of incidence is <m>70^\circ</m>.
+			</p>
+		</statement>
+		<hint><p>Draw rays and work on each refraction using Snell's law.</p></hint>
+		<answer><p><m>46.7^{\circ}</m>.</p></answer>
+		<solution>
+			<p>
+				In this exercise, we will work out various angles using Snell's law. Refer to <xref ref="fig-exercise-solution-displacement-through-prism"/> as we work through calculations below.
+			</p>
+	 		<figure xml:id="fig-exercise-solution-displacement-through-prism">
+	 			<caption>
+	 				Figure for <xref ref="exercise-Deviation-of-a-Ray-Through-an-Equilateral-Traingular-Prism"/>.
+	 				 
+	 			</caption>
+	 			<image source="./images/fundamentals-of-optics/exercise-solution-displacement-through-prism.png" width="80%"/>
+	 		</figure>
+			<p>
+				The angle of refraction at the incident face will be 
+				<me>
+					\theta = \sin^{-1}\left( \dfrac{1\times \sin\:70^{\circ}}{1.55}\right) = 37.3^{\circ}.
+				</me>
+				We draw this ray at B which strikes the other face at C. See completed figure below. The ray BC is the incident ray at C.  Using the angles of the triangle <m>\triangle\text{ABC}</m> we see that the incident angle in glass at C is <m>22.7^\circ</m>.  Now, we apply Snell's law at point C to find the angle with which the ray exits the prism.
+				<me>
+					\theta = \sin^{-1}\left( \dfrac{1.55\times \sin\:22.7^{\circ}}{1}\right) = 36.7^{\circ}.
+				</me>
+				Now, from the triangle <m>\triangle\text{BCE}</m> we find that the angle <m>\angle\text{BEC}</m> <m>=</m> <m>180^\circ- 37.3^\circ-22.7^\circ</m> <m>= 120^\circ</m>. From quadrilateral BDCE we get
+				<me>
+					180^{\circ} - \phi = 360^{\circ} - 70^{\circ} - 36.7^{\circ} - 120^{\circ} = 133.3^{\circ}.
+				</me>
+				Therefore, the angle of deviation of the incident ray will be
+				<me>
+					\phi = 180^{\circ} - 133.3^{\circ} = 46.7^{\circ}.
+				</me>
+			</p>
+
+
+			
+		</solution>
+	</exercise>
+
+ 
+
+	<exercise xml:id="exercise-Tracing-Ray-in-a-Triangular-Prism"><title>Tracing Ray in a Triangular Prism</title>
+
+		<statement>
+			<p>
+				Use Snell's law and a protractor to find the direction of a <m>700\text{-nm}</m> wavelength light passing through a triangular prism made of flint glass shown in the figure below. Use <m>n=1.62</m> for the refractive index of the flint glass.
+			</p>
+	 		<figure xml:id="fig-exercise-prism-ray">
+	 			<caption>
+	 				Figure for <xref ref="exercise-Tracing-Ray-in-a-Triangular-Prism"/>.
+	 				 
+	 			</caption>
+	 			<image source="./images/fundamentals-of-optics/exercise-prism-ray.png" width="60%"/>
+	 		</figure>			
+		</statement>
+		<hint><p>Find angle of refraction at left surface of the prism and draw the ray inside glass. Read the angle of incidence of this ray inside the glass at the right surface, and calculate the refraction angle into air at that face.</p></hint>
+		<answer><p>Not provided.</p></answer>
+		<solution>
+			<p>
+				See Hint. Solution not provided.
+			</p>
+		</solution>
+	</exercise>	
+
+
+
+
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,445 @@
+<section xml:id="sec-RelativisticEnergy"><title> Relativistic Energy</title>
+	<introduction>
+		<p>
+			Everybody has heard of Einstein's famous equation, <m>E = m c^2</m>. We will now see where it comes from. Einstein came to this equation from a consideration of energy in electromagnetic waves.  Although Einstein's derivation is quite pretty, we will do the derivation in a different way in keeping with the development of dynamics here.
+		</p>
+		<p>
+			Recall that work done by a force gives change in the kinetic energy, <m>K_2 - K_1</m>. 
+			<md>
+				<mrow> K_2 - K_1 \amp = W_{12} = \int_1^2 \vec F \cdot d\vec r</mrow>
+				<mrow>  \amp = \int_1^2 \dfrac{d\vec p}{dt} \cdot d\vec r = \int_1^2 \vec v \cdot  d\vec p,</mrow>
+			</md> 
+			where I have used  <m>d\vec r /dt = \vec v</m>, the velocity.  When we use relativistic momentum <m>\vec p = m_v \vec v</m>, where <m>m_v</m> is velocity-dependent mass, the differential element will become
+			<me>
+				d\vec p = d( m_v\vec v ) = \vec v dm_v + m_V d\vec V.
+			</me>
+			Therefore,
+			<men xml:id="eq-kin-en-int-step">
+				K_2 - K_1 = \int_1^2 v^2 dm_v + \frac{1}{2} \int_1^2 m_v d v^2,
+			</men>
+			where I used <m>vdv = \frac{1}{2}dv^2</m>.
+
+
+			<!-- What happens  to this expression of the kinetic energy when we use the relativistic momentum as in Eq. <xref ref="eq-NewtonSecondLaw-rel-2"/> in Eq. <xref ref="eq-NewtonSecondLaw-rel-3a"/>?  For simplicity, let us say, the initial speed is <m>u_1=0</m> and the final speed <m>u_2=u</m>.
+			<mdn>
+				<mrow number="no">  \int_1^2\vec F \cdot d\vec r \amp = \int_1^2 \dfrac{d\vec p}{dt}\cdot d\vec r = \int_0^{u} d\vec p \cdot \vec u </mrow>
+				<mrow number="no"> \amp = \int_0^{u} d\left(m \vec u \right) \cdot \vec u =  \int_0^{u}  \left( \vec u\:  dm + m\: d\vec u \right) \cdot \vec u</mrow>
+				<mrow xml:id="eq-kin-en-int-step"> \amp = \int_0^{u}  \left( u^2\:  dm +  m\: u\: d u \right)</mrow>
+				<mrow number="no">\amp \left[\because\ d\vec u \cdot \vec u  = \dfrac{1}{2} d (\vec u \cdot \vec u = u\: du.) \right] </mrow> 
+			</mdn> -->
+		<!-- </p>
+		<p> -->
+			Now from the definition of speed-dependent mass we have
+			<men>
+				m_v = \dfrac{m_0}{\sqrt{1-v^2/c^2}}\ \ \Longrightarrow\ \ m_v^2 c^2 - m_v^2 v^2 = m_0^2 c^2.
+			</men>
+			Working out the differential of this equation gives
+			<men>
+				d(m_v^2) c^2 - \left[d(m_v^2) u^2 + m_v^2 d(v^2)\right]= 0.
+			</men>
+			Simplifying this expression yields
+			<men>
+				v^2\:  dm_v +  m_v\: v\: d v = c^2 dm_v.
+			</men>
+			Putting this back in Eq. <xref ref="eq-kin-en-int-step"/> gives rise to a simple integral for the relativistic kinetic energy.  We use the limits of integration as <m>m_0</m> when <m>u=0</m> and <m>m=m</m> when <m>u=u</m>.  Therefore energy of the particle due to motion, or kinetic energy when it has a speed <m>u</m> will be
+			<men>
+				K = c^2 \int_{m_0}^{m_v}dm_v = m_v c^2 - m_0 c^2.
+			</men>
+			Therefore, the relativistic kinetic energy has the following definition.
+			<men xml:id="eq-ke-relativistic">
+				K =  m_v c^2 - m_0 c^2 = m_0 c^2 \left[ \dfrac{1}{\sqrt{1-v^2/c^2}} - 1\right]. 
+			</men>
+			This unfamiliar formula for kinetic energy actually reduces to <m>K= \dfrac{1}{2} m_0 v^2</m> when <m>v \lt c</m>, i.e. in the non-relativistic regime when we expect Newton's formulas to be applicable.  To show this we first replace <m>m_v</m> by its relativistic expression in this equation.
+			<md>
+				<mrow> K \amp =   \dfrac{m_0}{\sqrt{1-v^2/c^2}} c^2 - m_0 c^2</mrow>
+				<mrow> \amp \approx m_0c^2\left[ 1 + \dfrac{1}{2}\: \dfrac{v^2}{c^2} \right] - m_0 c^2 =  \dfrac{1}{2} m_0 v^2.</mrow>
+			</md>
+			We notice that when <m>v=0</m>, kinetic energy <m>K</m> is zero. That is, <m>K</m> is equal to the energy for increasing the speed of particle from zero to <m>v</m>.  Rewriting Eq. <xref ref="eq-ke-relativistic"/> as
+			<me>
+				m_vc^2 = K + m_0c^2
+			</me>
+			Einstein claimed that <m>m_vc^2</m>, often written as <m>mc^2</m>, was the total energy <m>E</m> of the moving particle with <m>m_0 c^2</m> being its energy at rest (<term> rest energy</term>) and <m>K</m> energy added to speed up the particle to speed <m>v</m>. 
+			<men xml:id="eq-rel-ener-tot">
+				E = m_vc^2 = K + m_0c^2,
+			</men>
+			with
+			<men>
+				\textrm{Rest Energy } =  m_0 c^2.
+			</men>
+			You might say that rest energy represents an innate energy possesed by a particle, thus illustrating that mass and energy are somewhat equivalent. Equation <m>E=mc^2</m> is perhaps the most famous formula of physics; it is attributed to its dicovery in Einstein in 1905 although others found similar formulas relating energy and inertia around 1900-1905. See <url ref="https://www.scientificamerican.com/article/was-einstein-the-first-to-invent-e-mc2/"> Scientific American</url>.
+		</p>
+
+		<p>
+
+		</p>
+		<remark><title>Relation Between Energy and Momentum</title>
+			<p>
+				It is often desirable to write the total energy of a particle in terms of the momentum.  To obtain the relation, we note that the square of the magnitude of momentum <m>p</m> will be given by
+				<men xml:id="eq-sq-rel-mom">
+					p^2 = \vec p \cdot \vec p = \dfrac{m_0^2 v^2}{1- v^2/c^2} =  \dfrac{m_0^2 c^2 v^2}{c^2- v^2}. 
+				</men>
+				Square of total energy from Eq. <xref ref="eq-rel-ener-tot"/> gives
+				<men xml:id="eq-sq-rel-energy">
+				E^2 =  \dfrac{m_0^2c^2}{ 1-v^2/c^2 } = \dfrac{m_0^2c^4}{ c^2-v^2}.
+				</men>
+				From Eqs. <xref ref="eq-sq-rel-mom"/> and <xref ref="eq-sq-rel-energy"/> yields
+				<men xml:id="eq-sq-rel-energy-2">
+					E^2 = p^2 c^2 + m_0^2 c^4. 
+				</men>
+			</p>
+		</remark>
+	</introduction>
+
+
+	<subsection><title>The Equivalence of Mass and Energy</title>
+		<p>
+			From our experience we have come to expect that mass be conserved on its own. But, formula <m>E=mc^2</m> shows that mass is equivalent to energy - related by just a constant factor. Indeed in nuclear reactions, it is commonly seen that total mass of the reactants in not equal to the total mass of the products. For instance, in a nuclear fission reaction of a nuclear reactor
+			<me>
+				n + ^{235}U \ \longrightarrow \ ^{143}Ba +  ^{90}Kr +  3n.
+			</me>
+			The masses of the particles are in amu units (u):
+			<me>
+				m(n) = 1.008665 \text{ u}; m(^{235}U) = 235.04395\text{ u}; m(^{143}Ba) = 142.92054\text{ u}; m(^{90}Kr) = 89.91959\text{ u}.
+			</me>
+			Therefore, the masses of reactants and products are:
+			<md>
+				<mrow> \amp m_\text{in} = m(n) + m(^{235}U) = 236.052615 \text{u}.</mrow>
+				<mrow> \amp m_\text{out} = m(^{144}Ba) + m(^{90}Kr) + 3 \times m(n) = 235.866125\text{ u}.</mrow>
+			</md>
+			We see that <m>m_\text{in} \gt m_\text{out}</m>. The difference is called the <term>missing mass</term>, <m>\Delta m</m>.
+			<me>
+				\Delta m = m_\text{in} -  m_\text{out} = 236.052615 - 235.866125 = 0.186 \text{ u}.
+			</me>
+			Mass <m>1\text{ u} = 1.66054\times 10^{-27}\text{ kg}</m>.  Therefore, energy released due to this loss of mass will be
+			<me>
+				E = \Delta m\, c^2 = 0.186 \times 1.66054\times 10^{-27} \times (3\times 10^8)^2 = 2.78\times 10^{-11}\text{ J}.
+			</me>
+			In nucelar physics, we use <m>MeV</m> unit for energy. In that energy unit, 
+			<me>
+				1\text{ u} \times c^2 = 931\text{ MeV}.
+			</me>
+			Therefore, 
+			<me>
+				E = 0.186 \times 931\text{ MeV} = 173.2\text{ MeV}.
+			</me>
+		</p>
+ 
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Rest-energy-of-a-proton"><title>Rest Energy of a Proton</title>
+
+		<statement>
+			<p>
+				Evaluate the rest energy of a proton in Joules and GeV.
+			</p>
+		</statement>
+		<hint><p>
+			Use the formula and convert to GeV.
+		</p></hint>
+		<answer><p>
+			<m>1.5\:\times 10^{-10}  \:\textrm{J}</m>, <m>0.939 \text{ GeV}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The mass of a proton is <m>m_0 = 1.67  \times 10^{-27} \text{ kg}</m>.  Therefore, its rest energy will be
+				<me>
+					E = 1.67  \times 10^{-27}\:\textrm{kg}\times \left( 3\times 10^{8}\:\textrm{m/s} \right)^2 = 1.5\:\times 10^{-10}\:\textrm{J}.
+				</me>
+				We write this energy usually in eV or GeV. Let us convert this to eV.
+				<me>
+					E = 1.5\:\times 10^{-10}\:\textrm{J} = \frac{1.5\:\times 10^{-10}\:\textrm{J} }{1.6\times 10^{-19} \:\textrm{J/eV}} = 9.39\times 10^8\:\textrm{eV}.
+				</me>
+				This is 939 MeV, or alternately, 0.939 GeV.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Rest-energy-of-an-electron"><title>Rest Energy of an Electron</title>
+
+		<statement>
+			<p>
+				Evaluate the rest energy of an electron in J and MeV units.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p>
+			
+			<m>8.2\times 10^{-14}  \:\textrm{J}</m>, <m>0.511 \text{ MeV}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The mass of a proton is <m>m_0 = 9.1  \times 10^{-31}</m> kg.  Therefore, its rest energy will be
+				<me>
+					E = 9.1  \times 10^{-31}\:\textrm{kg}\times \left( 3\times 10^{8}\:\textrm{m/s} \right)^2 = 8.2\times 10^{-14}  \:\textrm{J}.
+				</me>
+				We write this energy usually in eV or MeV. Let us convert this to eV.
+				<me>
+					E = 8.2\times 10^{-14} \:\textrm{J} = \frac{8.2\times 10^{-14} \:\textrm{J} }{1.6\times 10^{-19} \:\textrm{J/eV}} = 0.511\times 10^6\:\textrm{eV}.
+				</me>
+				This is 0.511 MeV. 
+			</p>
+		</solution>
+	</exercise> 
+
+	<exercise xml:id="ex-Energy-of-an-Ultrarelativistic-proton"><title>Total Energy of an Ultrarelativistic Proton</title>
+
+		<statement>
+			<p>
+				Evaluate (a) the total energy, (b) the kinetic energy, and (c) the momentum of a proton in an accelerator beam in which the proton is moving at a speed of <m>0.99\: c</m>.
+			</p>
+		</statement>
+		<hint><p>
+			Use relativisitic formula.
+		</p></hint>
+		<answer><p>
+			(a) <m>939\:\textrm{MeV}</m>, (b) <m>5.728 \:\textrm{GeV}</m>, (c) <m>3.52\times 10^{-18}\:\textrm{kg.m/s}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Let us calculate <m>\gamma</m> first since it will go into other calculations.
+				<me>
+					\gamma = \frac{1}{\sqrt{1-0.99^2}} = 7.1.
+				</me>
+				(a) Recall that the total energy of a moving particle is <m>E = \gamma m_0c^2 = \gamma \times \textrm{(rest energy)}</m>. We have calculated the rest energy of proton above.
+				<me>
+					E_{\textrm{rest}} = m_0 c^2 = 939\:\textrm{MeV}. 
+				</me>
+				Therefore the total energy of the proton will be
+				<me>
+					E = m c^2 = \gamma m_0 c^2 = 7.1\times 939\:\textrm{MeV} = 6.667 \:\textrm{GeV}.
+				</me>
+				(b) The kinetic energy <m>K</m> is the difference between the total energy and the rest energy.
+				<me>
+					K = E - E_{\textrm{rest}}  = 6.667  \:\textrm{GeV} - 0.939  \:\textrm{GeV} =    5.728 \:\textrm{GeV}.
+				</me>
+				Here <m>K>>m_0c^2</m>.  This type of particle is also called ultra-relativistic particle. 
+				\noindent (c) The momentum will be
+				<md>
+					<mrow>p \amp = \gamma m_0 u = 7.1\times 1.67  \times 10^{-27}\:\textrm{kg}\times 0.99\times 3\times 10^{8}\:\textrm{m/s}</mrow>
+					<mrow>\amp = 3.52\times 10^{-18}\:\textrm{kg.m/s}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Rest-Energy-of-a-Pion"><title> Rest Energy of a Pion</title>
+
+		<statement>
+			<p>
+				An elementary particle called muon has a mass of <m>1.88 \times 10^{-28}\text{ kg}</m>.  (a) What is its rest energy in Joules?  (b) What is its rest energy in MeV? Data: <m>1\text{ eV} = 1.60\times 10^{-19}\text{ J}</m>.
+			</p>
+		</statement>
+		<hint><p>
+			Use <m>m_0c^2</m>.
+		</p></hint>
+		<answer><p>
+			(a) <m>1.69\times 10^{-11}\text{ J}</m>, (b) <m>106\text{ MeV}</m>.
+
+		</p></answer>
+		<solution>
+			<p>
+				(a) Rest energy will be
+				<me>
+					m_0 c^2 = 1.88 \times 10^{-28}\text{ kg} \times \left(3 \times 10^{8} \right)^2 = 1.69\times 10^{-11}\text{ J}.
+				</me>
+			</p>
+			<p>
+				(b) Converting units we get
+				<me>
+					1.69\times 10^{-11}\text{ J} \times \frac{1\text{ eV}}{ 1.60\times 10^{-19}\text{ J} } = 1.06\times 10^{8}\text{ eV}.
+				</me>
+				This is <m>106\text{ MeV}</m>.
+			</p>
+		</solution>
+	</exercise> 
+
+	<exercise xml:id="ex-Relativistic-Kinetic-Energy-of-a-Proton"><title> Relativistic Kinetic Energy of a Proton</title>
+
+		<statement>
+			<p>
+				What is the kinetic energy of a proton that is moving at the speed of <m>0.90c</m>? Data <m>m_p = 1.67  \times 10^{-27} \text{ kg} = 0.938\text{ GeV}/c^2</m>.
+			</p>
+		</statement>
+		<hint><p>
+			Use <m>K = (\gamma - 1) m_0c^2</m>.
+		</p></hint>
+		<answer><p>
+			<m>1.214\text{ GeV}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				First we find <m>\gamma</m>.
+				<me>
+					\gamma = \frac{1}{\sqrt{ 1- 0.9^2  }} = 2.294.
+				</me>
+				Rest energy is
+				<me>
+					m_0c^2 = 0.938\text{ GeV}
+				</me>
+				Therefore, relativistic kinetic energy is
+				<me>
+					(2.294-1)\times 0.938\text{ GeV} = 1.214\text{ GeV}.
+				</me>
+			</p>
+		</solution>
+	</exercise> 
+
+	<exercise xml:id="ex-Relativistic-Kinetic-Energy-of-an-Electron"><title> Relativistic Kinetic Energy of an Electron </title>
+
+		<statement>
+			<p>
+				What is the kinetic energy of an electron that is moving at the speed of <m>0.90c</m>? Data: <m>9.11 \times 10^{−31}\text{ kg} = 0.511 \text{ MeV}/c^2</m>.
+			</p>
+		</statement>
+		<hint><p>
+			See <xref ref="ex-Relativistic-Kinetic-Energy-of-a-Proton"/>.
+		</p></hint>
+		<answer><p>
+			<m>0.661\text{ MeV}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				We have same <m>\gamma</m> as in <xref ref="ex-Relativistic-Kinetic-Energy-of-a-Proton"/>. Therefore
+				<me>
+					(2.294-1)\times 0.511 \text{ MeV} = 0.661\text{ MeV}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Energy-Released-in-Collision-of-a-Proton-and-an-Antoproton"><title> Energy Released in Collision of a Proton and an Antoproton</title>
+
+		<statement>
+			<p>
+				In an accelerator, a proton and an antiproton move in the opposite direction at speeds <m>0.9c</m> with respect to the lab.  Upon collision various massless particles are released.  What is the total energy released upon collision? Data <m>m_p = 1.67  \times 10^{-27} \text{ kg} = 0.938\text{ GeV}/c^2</m>.
+			</p>
+		</statement>
+		<hint><p>
+			The energy released will be the energy content of proton and antiprotn in center of mass frame.
+		</p></hint>
+		<answer><p>
+			<m>4.30\text{ GeV}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Since all the mass is converted to energy, the total energy released will be of the sum of the energies of proton and antiproton in the center of mass frame. That will be
+				<me>
+					2m_v c^2 = 2 \gamma_v m_0 c^2.  
+				</me>
+				Here,
+				<me>
+					\gamma = \frac{1}{\sqrt{1 - (v/c)^2}} = 2.294.
+				</me>
+				Therefore net energy released is
+				<me>
+					2 \times 2.294 \times 0.938\text{ GeV} = 4.30\text{ GeV}.
+				</me>
+				 
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Momentum-Conservation-in-a-Nuclear-Reaction"><title>Momentum Conservation in a Nuclear Reaction</title>
+
+		<statement>
+			<p>
+				A neutron moving with speed of <m>0.5 c</m> collides with a Beryllium nucleus which has four protons and five neutrons.  The Be nuceus can be considered to be at rest.  Upon collision, the neutron lodges itself in the nucleus.  What is the speed of the new particle with four protons and six neutrons? Data: <m>m_p = 0.938\text{ GeV}/c^2</m>, <m>m_n = 0.940\text{ GeV}/c^2</m>.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p>
+			<m>0.057 c</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Let <m>v</m> be the speed of the new particle of mass <m>m_0</m>. Momentum conservation gives
+				<me>
+					\gamma_n m_n v_n + 0 = \gamma_v m_0 v.
+				</me>
+				Energy conservation will be
+				<me>
+					\gamma_n m_n c^2 + m_\text{Be}c^2 = \gamma_v m_0 c^2.
+				</me>
+				Taking the ratio we get
+				<me>
+					v/c^2 = \frac{\gamma_n m_n v_n}{\gamma_n m_n c^2 + m_\text{Be}c^2} = \frac{v_n/c^2}{1 + m_\text{Be}/(\gamma m_n)}.
+				</me>
+				Therefore,
+				<me>
+					v = \frac{v_n}{1 + m_\text{Be}/(\gamma_n m_n)}.
+				</me>
+				Using numerical values we have
+				<md>
+					<mrow>\amp \gamma_n = \frac{1}{\sqrt{1- (v/c)^2 }} = \frac{1}{\sqrt{1- 0.5^2 }} = 1.1547.</mrow>
+					<mrow>\amp m_\text{Be}/m_n = \frac{4\times0.938 + 5\times .940 }{.940} = 8.99.</mrow>
+					<mrow>\amp m_\text{Be}/(\gamma_n m_n) = 8.99/1.1547 = 7.787 </mrow>
+				</md>
+				Therefore,
+				<me>
+					v = \frac{05 c}{1 + 7.87} = 0.057 c.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Energy-and-Momentum-Conservation-in-a-Pion-Decay"><title>Energy and Momentum Conservation in a Pion Decay </title>
+
+		<statement>
+			<p>
+				A negative pion at rest decays into a muon and an antineutrino. You can assume that the rest mass of antineutrino is zero and that muon is <m>106 \text{ MeV}/c^2</m>.  Upon decay the muon comes out with kinetic energy <m>4.5 \text{ MeV}</m>.  Use conservation of energy and momentum to determine the mass of the pion.
+			</p>
+		</statement>
+		<hint><p>
+			Set up conservation of momentum and energy.
+		</p></hint>
+		<answer><p>
+			<m>141.8 \text{ MeV}/c^2</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Let <m>v</m> be the speed of muon. Let us also denote rest mass without the subscript zero but just the name of the particle. Then, equation of momentum conservation will give us
+				<men  xml:id="eq-Energy-and-Momentum-Conservation-in-a-Pion-Decay-mom">
+					\gamma_v m_\mu v = p_{\bar\nu}.
+				</men>
+				Conservation of energy will give
+				<men xml:id="eq-Energy-and-Momentum-Conservation-in-a-Pion-Decay-energy">
+					m_\pi c^2 = \gamma_v m_\mu c^2 + p_{\bar\nu} c,
+				</men>
+				where I have used rest mass of antineutrino to be zero. Now, we have
+				<me>
+					\gamma_v m_\mu c^2 = K_\mu + m_\mu c^2 = 4.5 \text{ MeV} + 106  \text{ MeV} = 110.5\text{ MeV}.
+				</me>
+				Therefore,
+				<me>
+					\gamma_v = \frac{110.5\text{ MeV}}{106  \text{ MeV}} = 1.0425.
+				</me>
+				From this we get
+				<me>
+					v = \sqrt{ 1- 1/\gamma_v^2 } = 0.283 c.
+				</me>
+				Hence, from momentum equation, <xref ref="eq-Energy-and-Momentum-Conservation-in-a-Pion-Decay-mom"/>  we get
+				<me>
+					p_{\bar\nu} = \gamma_v m_\mu v = 1.0425\times 106 \frac{\text{MeV}}{c^2}\times 0.283 c = 31.3 \frac{\text{MeV}}{c}.
+				</me>
+				Now, from energy equation <xref ref="eq-Energy-and-Momentum-Conservation-in-a-Pion-Decay-energy"/> we get
+				<me>
+					m_\pi c^2 = 110.5\text{ MeV} + 31.3 \text{ MeV} = 141.8 \text{ MeV}.
+				</me>
+				Hence, rest mass of pion from the given data is <m>141.8 \text{ MeV}/c^2</m>.
+	
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+</section>

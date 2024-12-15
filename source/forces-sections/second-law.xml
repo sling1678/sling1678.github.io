@@ -1,0 +1,225 @@
+<section xml:id="forces-Second-Law-of-Motion"> <title> Second Law of Motion</title>
+	<subsection> <title>Second Law for Fixed Mass </title>
+	<idx><h>Newton's Laws of Motion</h><h>Second Law</h><h>For Fixed Mass</h></idx>
+
+		<p>
+			Consider an object of fixed mass, say a block of steel. When you apply a force on it, you find that its speed and/or direction of motion changes. This is what happens, for instance, when you let it fall or if you spin it in a circle. This is a universal behavior. 
+		</p>
+		<p>
+			The amount of acceleration on different objects of same mass varies linearly with force applied. 
+			<me>
+				a \propto F\ \ (\text{fixed mass})
+			</me> 
+			When you apply same force on two objects of different masses, the resulting acceleration is inversely proportional to the mass.
+			<me>
+				a \propto \frac{1}{m} \ \ (\text{same force})
+			</me>
+			These two relations imply
+			<me>
+				 F \propto m a,
+			</me>
+			which can be turned into an equality
+			<me>
+				F = k m a.
+			</me>
+			By <alert>choosing a unit of force</alert>, we can set <m>k=1</m>. Thus, we define a force to be <term>1 Newton (N)</term> if it causes a one kg object to accelerate <m>1\text{ m/s}^2</m>. That is, if mass is in kg, acceleration in <m>\text{m/s}^2</m>, and force in <m>\text{N}</m>, then
+			<me>
+				F = m a.
+			</me>
+		</p>
+		<p> 
+			These observations, along with experiments addressing acceleration when direction of velocity changes, e.g., in circular motion, were put together succinctly by Isaac Newton in the following vector equation, which is the expression of Newton's second law of motion for fixed-mass systems.
+			<men xml:id="eq-second-law-f-equal-ma-algebra">
+				\vec F = m\vec a.
+			</men>
+		</p>
+		<p>
+			Note that this equation does not apply to systems that lose or gain mass during their motion, e.g., rocket (which loses mass) and rain drops (which gain mass). For these situations, we need a more general law, given next.
+		</p>
+	</subsection> 
+	<subsection><title> Changing Mass System</title>
+			<p>
+				Not only rockets, but many other objects, especially live organisms, propel themselves without a force from an external body. So, how do they achieve <m>a\ne 0</m> even when <m>F=0</m>? Eq. <xref ref="eq-second-law-f-equal-ma-algebra"/> needs a correction. Acceleration is caused not just by applied force, but also by the inertial effect of the changing mass, called the <term>thrust</term>.
+				<men xml:id="eq-second-law-f-equal-ma-thrust-algebra">
+					m\vec a = \vec F + \vec F_\text{thrust},
+				</men>
+				where thrust is given by
+				<men xml:id="eq-thrust-definition">
+					\vec F_\text{thrust} = - \dfrac{\Delta m}{\Delta t}\, \vec v,
+				</men>
+				where <m> \Delta m/\Delta t</m> is the rate at which mass is changing. Thus, in place of Eq. <xref ref="eq-second-law-f-equal-ma-algebra"/>, we have				
+				<men xml:id="F-equals-ma-plus-thrust">
+					\vec F = m\vec a + \dfrac{\Delta m}{\Delta t}\, \vec v.
+				</men>
+				The importance of the negative sign in Eq. <xref ref="eq-thrust-definition"/> is that thrust will be forward in the direction of velocity when mass is decreasing, i.e, when <m>\Delta m \lt 0 </m>, but, thrust impeded the motion as it pointed backward if mass is increasing <m>\Delta m \gt 0</m>.    
+				
+			</p>
+			<p>
+				Although Eq. <xref ref="eq-second-law-f-equal-ma-thrust-algebra"/> does cover all cases, the best place to discuss mass-changing systems is in the chapter on momentum. That is where you will practice mass-changing systems. 
+			</p>
+
+	</subsection>
+	<subsection><title>(Calculus) Fundamental Second Law of Motion </title>
+	<idx><h>Newton's Laws of Motion</h><h>Second Law</h><h>General</h></idx>
+			<p>
+				To give a more complete expression of second law of motion, we need to work with the product of mass and velocity as a single physical property. This is called momentum. Momentum is denoted by vector <m>\vec p</m>.
+				<men>
+					\vec p = m\; \vec v.
+				</men>
+				Taking time derivative of momentum gives
+				<me>
+					\frac{d\vec p}{dt} = m \frac{d\vec v}{dt} + \frac{dm}{dt}\,\vec v = m \vec a + \frac{dm}{dt}\,\vec v.
+				</me>
+				Now, comparing this to the general law given in Eq. <xref ref="F-equals-ma-plus-thrust"/> we see that right side of that equation is just <m>d \vec p / dt</m>. Therefore, we write second law written with respect to an inertial frame as follows.
+				<men xml:id="eq-second-law-momentum">
+					\vec F = \frac{d\vec p}{dt}.
+				</men>
+				This includes both fixed mass and changing mass situations. Obviously, for a fixed mass,
+				<me>
+					\frac{d\vec p}{dt} = m \frac{d\vec v}{dt} = m\vec a,
+				</me>
+				hence, for this special case
+				<me>
+					\vec F = m\vec a.
+				</me>
+			</p>
+		</subsection>
+
+
+	<subsection><title>What is mass? </title>
+	
+		<p> 
+			We use second law of motion for fixed-mass, viz., <m>(\vec F = m\vec a)</m> to deduce an empirical definition of mass, i.e., mass rather being some vague thing as <q>quantity of matter</q> will become an experimentally quantifiable quantity. We apply same force to two different objects and observe their resulting acceleration and deduce mass from the observations.
+		</p>
+ 
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				 For instance, suppose we attach blocks of different masses to the same spring, stretching the spring to the same amount, and then releasing the blocks. We will find that their accelerations will be different. The magnitudes of the resulting accelerations will be
+			<md>
+				<mrow> \amp a_1 = \dfrac{F}{m_1},  \ \ \ \ a_2 = \dfrac{F}{m_2}. </mrow>
+			</md>
+			</p>
+			<p> </p>
+			<figure xml:id="fig-second-law-mass-accln-relation">
+				<caption>Same force.</caption>
+				<image source="./images/forces/second-law-mass-accln-relation.png" width="60%"/>
+			</figure>
+
+		</sidebyside>
+		<p>
+
+			We can divide out <m> F</m> to find that the ratio of their accelerations will be inversely proportional to their masses.
+				<men xml:id="eq-a1-to-a1-eq-m2-to-m1">
+				 \dfrac{a_1}{a_2} = \dfrac{m_2}{m_1}.
+				</men>	
+		</p>
+		<p>
+			This equation lets us define mass operationally  in relation to a <alert>reference mass</alert> as follows. Suppose we take a reference object and assign, <alert>arbitrarily</alert>, its mass to be one unit of mass, say <m> 1 \text{ kg}</m>. After that, we perform the aforementioned experiment, i.e., apply an unknown but reproducible force on it. Suppose we find that the acceleration of this reference object is <m> 4\text{ m/s}^2</m>. 
+		</p>
+		<p>
+			Now, we take another object whose mass we do not know yet. We subject this object to the same force and observe its acceleration. Suppose we find that its acceleration is <m> 8\text{ m/s}^2</m>. Then, Eq. <xref ref="eq-a1-to-a1-eq-m2-to-m1"/> can be used to deduce the mass of this second object in relation to the mass of the first object.
+			<me>
+				\dfrac{m_2}{1\text{ kg}}  = \dfrac{4\text{ m/s}^2 }{8\text{ m/s}^2}\Longrightarrow m_2 = 0.5\text{ kg}.
+			</me>
+		</p>
+		<idx>Inertial Mass</idx><idx><h>Mass</h><h>Inertial Mass</h></idx>
+		<p>
+			The example above gives us a process by which, <em> after we choose a reference object of unit mass, we can do experiments to assign mass to all other objects.</em> We call this mass <term> inertial mass </term>.
+		</p>
+
+	</subsection>
+
+	<!-- <exercises> -->
+
+	<example xml:id="ex-Finding-Mass-Ratios-From-Acceleration-Ratios-and-Inventing-Units-of-Mass"><title> Finding Mass Ratios From Acceleration Ratios and Inventing Units of Mass</title>
+		<statement>
+			<p>
+				Three objects A, B, and C are subjected to the same-magnitude forces and their accelerations observed. Object A has acceleration <m> 10\text{ m/s}^2</m>, B has <m> 5\text{ m/s}^2</m>, and C has <m> 15\text{ m/s}^2</m>.
+			</p>
+			<p>
+				(a) Arrange the objects in the increasing order of their masses.
+			</p>
+			<p>
+				(b) If the smallest-mass object was chosen as a reference <m> 1\text{ newt}</m>, where the unit <m>\text{newt}</m> is a new unit of mass you invented, then what will be the masses of the other two objects in this unit? 
+			</p>
+			<p>
+				(c) If the force applied has the known magnitude <m>10\text{ N}</m>, what will be relation between your unit <m> 1\text{ newt}</m> and the standard <m> 1\text{ kg}</m>?   
+			</p>
+
+		</statement>
+		<!-- <hint> <p> (a) higher <m>a</m> smaller <m>m</m>. (b) Use acceleration ratios to find mass ratios. (c) Find the mass in standard kg of the lightest object.  </p> </hint> -->
+		<answer> <p> (a) CAB, (b) <m> m_A=1.5\text{ newt},\  m_B=3\text{ newt},\ m_C = 1\text{ newt}</m>, (c) <m> 3\text{ newt} = 2\text{ kg}.</m>. </p> </answer>
+		<solution> <title> a </title>
+			<p>
+				
+				Since <m>F</m> is same, higher mass object will be accelerated less. Using this rule,  objects in increasing mass has the same order as decresing acceleration. Therefore, the required order is C, A, B.
+			</p>
+		</solution>
+		<solution> <title> b </title>
+
+			<p> 
+				
+				We are choosing <m> m_C = 1\text{ newt}</m>. 
+				From mass ratios <m>a_C/a_A</m> we can get the mass ratio <m> m_A/m_C</m>. The units of acceleration cancel out.
+				<me>
+					m_A = \dfrac{a_C}{a_A}\, m_C = 1.5\text{ newt}.
+				</me>
+				Similarly,
+				<me>
+					m_B = \dfrac{a_C}{a_B}\, m_C = 3\text{ newt}.
+				</me>				
+			</p>
+		</solution>
+		<solution> <title> c </title>
+			<p> 
+				
+				Since we have already picked <m> m_C = 1\text{ newt}</m>, we just need to find <m> m_C</m> in standard <m>\text{kg}</m>. We get that from the given force on C.
+				<me>
+					m_C = \dfrac{F}{a_C} = \dfrac{10}{15}= \dfrac{2}{3}\text{ kg}.
+				</me>
+				Therefore, we have the following conversion.
+				<me>
+					3\text{ newt} = 2\text{ kg}.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+	<!-- </exercises> -->
+
+
+
+
+<!-- 	<subsection> <title>(Calculus) General Second Law </title>
+		
+		<p>
+			<term> Newton's second law of motion for all situations </term> states that a <alert> force  on  an object </alert>  acting over an interval causes change in its momentum. 
+			Quantitatively, the law is stated as the following relation between force <m> \vec F </m> on an object and the rate of change of momentum of the object at each instant.
+			<men xml:id="eq-second-law-momentum">
+				\vec F = \dfrac{d\vec p}{dt},
+			</men>
+			where momentum is defined by
+			<men>
+				\vec p = m \vec v.
+			</men>
+			Strictly speaking, <xref ref="eq-second-law-momentum"/> holds true only with respect to special class of observers, called inertial obervers. Inertial observers that have no acceleration with respect to the at-rest center of universe - that is, they are either at rest or moving at constant velocity.
+		</p>
+		<p>
+			Notice that when mass is constant, the rate of change in momentum is just <m>m\vec a</m>.
+			<me>
+				\dfrac{d\vec p}{dt} = \dfrac{d m \vec v}{dt} = m\dfrac{d\vec v}{dt} = m\vec a.
+			</me>
+			Therefore, in this case, Eq. <xref ref="eq-second-law-momentum" /> becomes same as Eq. <xref ref="eq-second-law-f-equal-ma-algebra"/>.
+			<me>
+				\vec F = m\vec a.
+			</me>
+		</p>
+		
+	</subsection> -->
+
+
+
+
+
+
+</section>

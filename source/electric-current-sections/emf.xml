@@ -1,0 +1,67 @@
+<section xml:id="Electromotive-Force"><title> Electromotive Force </title>
+	<introduction>
+
+
+		<p>
+			You have seen that there are enormous number of conduction electrons in a metal. In Copper we found, <m> n = 8.49\times 10^{22}</m> per <m>\text{ cm}^{3}</m>, as worked in <xref ref="ex-Drift-Speed-of-Electrons-in-Copper-Wire"/>. These electrons usually move around randomly at very high speed, say <m>\sim 10^5\text{ m/s}</m>. 
+		</p>
+		<p>
+			Due to randomness, no net drift of electrons occurs if two ends on a wire are at same electric potential. Electric current flows when you connect a metal wire to the two ends of a battery.  Battery expends chemical energy to move electron from its negative terminal to the positive terminal through the wire.
+		</p>
+		<p>
+			The amount of energy per unit charge spent by the battery is called the <term>electromotive force</term> (<term>EMF</term>) of the battery. We wil denote EMF by symbol, <m>\mathcal{E}</m>.
+		</p>
+		<sidebyside widths="65% 5% 30%">
+			<p>
+				<p>
+					 When you trace energy of an electron in a closed circuit, B-A-inside-B, you notice that an electron loses energy <m> - e\Delta \phi</m> in the wire and gains same amount of energy when electrical energy is used to move an electron from the positive terminal to the negative terminal inside the battery. 
+				</p>
+				<p>
+					The energy of each electron in B-A-inside-B path will first drop by <m>-e\Delta \phi</m> and then increase by <m>e\mathcal{E}_\text{battery}</m> ending up same at start.
+					<me>
+						- e (\phi_+ - \phi_-) + e\mathcal{E}_\text{battery} = 0.
+					</me>
+				</p>
+			</p>
+			<p> </p>
+			<figure xml:id="fig-current-in-wire-around-battery">
+				<caption>
+				</caption>
+				<image source="./images/electric-current/current-in-wire-around-battery.png"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Therefore, EMF of a battery is just the potential difference between the terminals, which is also called the <term>voltage</term> of the battery.
+			<men>
+				\mathcal{E}_\text{battery}= \phi_+ - \phi_- = \text{Voltage}.
+			</men>
+		</p>
+	</introduction>
+	<subsection><title> (Calculus) EMF from Electrric Field </title>
+
+		<p>
+			The amount of energy per unit charge spent by a source of electrical energy is called the electromotive force (EMF) of the source. The EMF is not any force in the mechanical force sense; rather, it is related to the energy. Let's look at change in energy of an electron as it is moved from the positive terminal to the negative terminal outside an EMF source.
+		</p>
+		<p>
+			Let us calculate EMF of a battery as in <xref ref="fig-current-in-wire-around-battery"/> by figuring out work required to move an electron from the positive terminal to the negative terminal in the inside of the battery. Note that electric field is in the same direction as this displacement, so you would need to do balance the electric force, and hence you will do some work. This work is done by chemical reactions inside the battery. We denote this fictitious force by <m> \vec{F_\text{ch}}</m> and assume it balances the electric force inside the battery. Therefore, work will be
+			<md>
+				<mrow> W_{+\rightarrow -} \amp = \int_{+}^{-} \vec{F_\text{ch}}\cdot d\vec r</mrow>
+				<mrow> \amp = e\int_{+}^{-} \vec E_\text{in}\cdot d\vec r  </mrow>
+			</md> 
+			Dividing this work by <m>e</m> gives EMF of the battery in terms of electric field inside the battery.
+			<men>
+				\mathcal{E}_\text{battery} =  \int_{+}^{-} \vec E_\text{in}\cdot d\vec r .
+			</men>	
+			This equation is of just theoretical interest since we do not know electric field inside the battery. If you assume electric field to be constant, then you can get a sense of electric field by the distance between the electrodes. Let <m>d</m> be the distance between electrodes. Then, roughly, we will get
+			<me>
+				\mathcal{E}_\text{battery} =  E_\text{in}\; d.
+			</me>
+			Since <m>\mathcal{E}_\text{battery}</m> is equal to the voltage of the battery, this equation can give us a sense of the magnitude of electric field inside a battery.		
+		</p>
+ 		
+	</subsection>
+
+
+
+
+</section>

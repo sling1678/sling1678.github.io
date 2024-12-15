@@ -1,0 +1,442 @@
+<section xml:id="Magnetic-Materials-Magnetic-Dipoles"><title> Magnetic Dipoles </title>
+	<introduction>
+		<p>
+			All magnets have North and South poles. Even the tiniest of magnets, an electron also has North and South poles. Thus, fundamental property of magnets is dipole moment, denoted as <m>\vec \mu</m>. 
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				We found before that a current loop also has a magnetic dipole moment. This observation gave us two equivalent ways to model microscopic magnetic dipole - (1) as a tiny magnet and (2) a tiny current loop.
+			</p>
+			<p></p>
+			<figure xml:id="fig-magnetic-dipole-and-current-loop">
+				<caption>
+					A current loop with <m>IA=\mu</m> is equivalent to a magnet of dipole moment <m>\mu</m>.
+				</caption>
+				<image source="./images/magnetic-materials/magnetic-dipole-and-current-loop.png" width="60%"/>
+				
+			</figure>
+		</sidebyside>
+
+<!-- 		<p>
+			Magnetic dipoles are fundamental building blocks of all magnets since there are no particles with individual North or South poles. Thus, instead of positive and negative charges, the fundamental property of a magnet is the magnetic dipole moment. We denote magnetic dipole moment by the Greek letter <m>\mu</m>.
+		</p>
+		<p>
+			When a magnetic dipole is placed in an external magnetic field, its dipole moment will tend to aling with the direction of the external magnetic field. We use this to assign direction to magnetic dipole moment vector, <m>\vec \mu</m>. Since <q>South-pole</q> end of the dipole will face the North pole of the external field, dipole moment direction is said to be from the South-pole end to the North-pole end.
+		</p>
+		<p>
+			We have seen in previous chapters that a magnetic dipole can be thought of as a loop of current.   <alert> To represent a magnetic dipole <m>\vec \mu</m> by a loop of current </alert> we envision a loop of current such that the product of the current and the area of the loop is equal to the magnitude of the magnetic dipole moment as illustrated in <xref ref="fig-magnetic-dipole-vs-current-loop-mag-materials"/>.   The direction of the current is such that when you look at the loop from the direction of the tip of the dipole moment the current goes in counterclockwise sense. 
+		</p>
+
+		<figure xml:id="fig-magnetic-dipole-vs-current-loop-mag-materials">
+			<caption>
+				   Two equivalent pictures of an infinitesimal current loop: either think of the current loop as current loop or a magnetic dipole of magnetic dipole moment <m>\mu=IA</m> in the direction as displayed here. The exact equivalence occurs in the limit <m>A\rightarrow 0</m> and <m>I\rightarrow\infty</m> while keeping their product fixed, <m>IA = \mu</m>. The equivalent loop is shown as a circle here, but it can be any shape. Often it is easier for calcuation to use a square loop.
+			</caption>
+			<image source="./images/magnetic-materials/loop-dipole.png" width="60%"/>
+			
+		</figure> -->
+ 
+ 		<p>
+ 			When we represent a magnetic dipole by a fictitious current loop, the current in the model loop is called <term> bound current</term> to distinguish them from current flowing in a conductor, which is called <term>free current</term>. Bound current model of magnetic dipole helps with calculations involving magnets.
+ 		</p>
+ 		<p>
+ 			In the following subsections, we will work out force and torques on magnetic dipoles using the current loop model.
+ 		</p>
+ 
+	</introduction>
+
+
+	<subsection> <title> Force on a Magnetic Dipole in a Uniform Magnetic Field</title>
+
+		<p>
+			We wish to find magnetic force on a magnetic dipole as shown in <xref ref="fig-force-on-a-dipole-uniform"/>(a). First we replace magnetic dipole by a square loop of current, as shown in (b) of the figure, and find magnetic force on that equivalent current loop. 
+		</p>
+		<figure xml:id="fig-force-on-a-dipole-uniform">
+			<caption>
+				Force on a dipole in a uniform magnetic field: (a) the original problem, (b) equivalent problem, where magnetic dipole moment is replaced by a square current loop. We find magnetic force on each side and then add them vectorially.
+			</caption>
+			<image source="./images/magnetic-materials/force-on-a-dipole-uniform.png" width="80%"/>	
+		</figure>
+		<p>
+			By using the force law for current in uniform magnetic field
+			<me>
+				\vec F = I \vec L \times \vec B,
+			</me>
+			it is easy to show that forces on the opposite sides are equal in magnitude and opposite in direction. Hence,
+			<md>
+				<mrow> \amp \vec F_\text{qr} + \vec F_\text{sp} = 0,</mrow>
+				<mrow> \amp \vec F_\text{pq} + \vec F_\text{rs} = 0. </mrow>
+			</md>
+			Therefore,
+			<me>
+				\vec F_\text{current loop} = 0.
+			</me>
+			From this result we can deduce the answer to the original problem by taking the following special type of limits.
+			<me>
+				A\rightarrow 0\text{ and } I\rightarrow\infty\text{ keeping the product } IA \text{ fixed.}
+			</me>
+		</p>
+		<p>
+			Clearly, taking these limits does not change the result of zero net force.  
+			Hence, we conclude that the magnetic force on the dipole in a uniform magnetic field is zero.
+			<me>
+				F_\text{dip} = 0. \text{ (uniform magnetic field)}
+			</me>
+
+		</p>
+
+	</subsection>
+
+	<subsection><title> Torque on a Magnetic Dipole in a Uniform Magnetic Field </title>
+		<p>
+			Even though the net force on a magnetic dipole in a uniform magnetic field is zero, the torque on the dipole is not zero if magnetic dipole moment is pointed at an angle to the magnetic field as in <xref ref="fig-force-on-a-dipole-uniform"/> as we will show now.  
+		</p>
+		<p>
+			We will find torque of these force about axis through the center of the loop and perpendicular to the direction of the magnetic field as shown in <xref ref="fig-torque-on-a-dipole-uniform"/>. 
+		</p>			
+		<p>
+			Let <m>\theta</m> be the angle between the magnetic dipole moment vector <m>\vec \mu</m> and external magnetic field <m>\vec B</m> as in <xref ref="fig-torque-on-a-dipole-uniform"/>(a), which would mean normal to the equivalent square loop, pqrsp, will make this angle with magnetic field. 
+		</p>
+
+
+		<figure xml:id="fig-torque-on-a-dipole-uniform">
+			<caption>
+				Torque on a dipole in a uniform magnetic field is computed by torque of forces on the equivalent current loop. The axis is perpendicular to the direction of <m>\vec B</m> and passes through the center of the square loop of side <m>a</m>. The torques of <m>\vec F_\text{qr}</m> and <m>\vec F_\text{sp}</m> are both zero. The torques of <m>\vec F_\text{pq}</m> and <m>\vec F_\text{rs}</m> are nonzero and can be computed from the figure on the right. The magnitude of net torque equald <m>\tau = I a^2 B \sin\,\theta = \mu B \sin\,\theta</m>.
+			</caption>
+			<image source="./images/magnetic-materials/torque-on-a-dipole-uniform.png" width="80%"/>	
+		</figure>
+
+		<p>
+			Since lines of forces <m>\vec F_\text{qr}</m> and <m>\vec F_\text{sp}</m> pass through the axis, their lever arms are zero; hence, their torques about this axis are zeros.  
+		</p>
+		<p>
+			To find the torques from <m>\vec F_\text{pq}</m> and <m>\vec F_\text{rs}</m>, it is helpful to draw another figure from the perspective of looking down the axis. With <m>a</m> the length of a side of the square loop, we get lever arm for these forces to be <m>\dfrac{a}{2}\sin\,\theta</m>. The two forces have the same magnitude <m>IaB</m>. Their directions are also same, which is into the page. Therefore net torque  on the equivalnet current loop is 
+			<me>
+				\tau  = 2IaB\times \dfrac{a}{2}\sin\,\theta = Ia^2 B \sin\,\theta,
+			</me>
+			in the direction into the page, i.e., towards the negative <m>z</m> axis. Here area of the loope is <m> A = a^2</m>. Writing torque in the vector notations, we get the <m>z</m> component of torque to be
+			<men xml:id="eq-torque-on-square-current-loop">
+				\vec \tau = -\hat u_z \, IA B \sin\,\theta.
+			</men>
+			From this result we can deduce the answer to the original problem by taking the following special type of limits.
+			<me>
+				A\rightarrow 0\text{ and } I\rightarrow\infty\text{ keeping the product } IA \text{ fixed.}
+			</me>
+			It is readily seen that as soon as we replace <m>IA</m> by <m>\mu</m>, the limit is trivial and gives us the following for torque on the original dipole.
+			<me>
+				\vec \tau_\text{dip} =   -\hat u_z \, \mu B \sin\,\theta.
+			</me>
+			We can write this in terms of vectors <m>\vec \mu</m> and <m>\vec B</m>.
+			<men  xml:id="eq-torque-on-dipole" >
+				\vec \tau_\text{dip} =   \vec \mu \times \vec B.
+			</men>						
+
+		</p>
+
+		
+	</subsection>
+
+	<subsection><title> (Calculus) Force on a Magnetic Dipole in a Nonuniform Magnetic Field</title>
+		<p>
+			Consider a magnetic dipole in a nonuniform magnetic field. Rather than do the most general case, let the direction of the external magnetic field be fixed in the positive <m>y</m> direction with magnitude varying only as a function of <m>x</m> as indicated in <xref ref="fig-force-on-a-dipole-non-uniform"/>
+			<me>
+				\vec B = \hat u_y \, B(x).
+			</me>
+		</p>
+			<figure xml:id="fig-force-on-a-dipole-non-uniform">
+				<caption>
+					Force on a dipole in a uniform magnetic field: (a) the original problem, (b) equivalent problem, where magnetic dipole moment is replaced by a square current loop. We find magnetic force on each side and then add them vectorially.
+				</caption>
+				<image source="./images/magnetic-materials/force-on-a-dipole-non-uniform.png" width="80%"/>	
+			</figure>
+
+		<p>
+
+			Now, we see that forces along <m>x</m> axis, viz., <m>\vec F_\text{qr}</m> and <m>\vec F_\text{sp}</m>, cancel. 
+			<me>
+				\vec F_\text{qr} + \vec F_\text{sp} = 0,
+			</me>
+			but forces in the <m>x</m> axis, viz., <m>\vec F_\text{pq}</m> and <m>\vec F_\text{rs}</m>, do not cancel due to different values of magnetic field at the two sides. The resulting <m>x</m> component of the net force on the equivalnet current loop is
+			<md>
+				<mrow>F_x \amp = F_\text{pq,x}  + F_\text{rs,x},</mrow>
+				<mrow> \amp = Ia B_\text{pq}  -  Ia B_\text{rs},</mrow>
+				<mrow> \amp = Ia \left( B_\text{pq}  -   B_\text{rs}\right),</mrow>
+				<mrow> \amp = Ia \times \left( x_\text{pq} - x_\text{rs}\right)  \times \left( \dfrac{B_\text{pq}  -  B_\text{rs}}{ x_\text{pq} - x_\text{rs}}\right),</mrow>
+				<mrow> \amp = Ia \times \left( a\,\cos\,\theta\right)  \dfrac{\Delta B}{\Delta x}.</mrow>
+			</md>
+			Taking <m>\Delta x \rightarrow 0</m> and replacing <m>Ia^2</m> by <m>\mu</m> we get
+			<md>
+				<mrow> F_x \amp = \mu\,\cos\,\theta\, \dfrac{\partial B}{\partial x},</mrow>
+				<mrow> \amp = \mu_y  \dfrac{\partial B_y}{\partial x} = \dfrac{\partial }{\partial x} \left( \mu_y B_y \right)</mrow>
+			</md> 
+			A more general analysis gives the following formula.
+			<men xml:id="eq-force-on-dipole-general">
+				\vec F = \vec\nabla\left( \vec \mu \cdot \vec B \right),
+			</men>
+			where <m>\vec \nabla</m> is 
+			<me>
+				\vec \nabla = \hat u_x \, \dfrac{\partial}{\partial x} + \hat u_y \, \dfrac{\partial}{\partial y} + \hat u_z \, \dfrac{\partial}{\partial z}.
+			</me>
+			<image source="./images/magnetic-materials/force-on-a-dipole-non-uniform.png" width="80%"/>	
+		</p>
+	</subsection>
+
+	<subsection><title> Energy of a Magnetic Dipole in External Field </title>
+
+		<sidebyside widths="70% 10% 20%">
+			<p>
+				The potential energy of a dipole <m>\vec \mu</m> in an external magnetic field <m>\vec B</m> depends upon its orientation with respect to the field. When the dipole makes an angle <m>\theta</m> with respect to the field, potential energy is given by
+				<me> 
+					U = -\mu\,B\,\cos\,\theta = -\vec \mu \cdot \vec B,
+				</me> 
+				with zero reference when they are perpendicular, i.e., when <m>\theta=90^\circ</m>. 
+			</p>
+			<p></p>
+			<image source="./images/magnetic-materials/dipole-field-angle.png" width="80%"/>
+		</sidebyside>
+		<p>
+			This says that the potential energy is minimum when the dipole is parallel to the field and maximum when antiparallel. We can deduce this result by using Calculus as I show next.
+		</p>	
+		
+
+		<p> <alert> (Calculus) Derivation of Potential Energy. </alert>
+			Since magnetic force is a conservative force, we expect magnetic force <m>\vec F</m> to be related to a potential energy function <m>U</m> by the gradient.
+			<me>
+				\vec F = -\vec \nabla U.
+			</me> 
+			Now, using Eq. <xref ref="eq-force-on-dipole-general"/>, we find the the potential energy of a dipole in an external field is 
+			<men>
+				U = - \vec \mu \cdot \vec B,
+			</men>
+			where zero of potential energy is when the dipole is pependicular to the field.
+		</p>
+
+	</subsection>
+
+	<exercise xml:id="ex-Magnetic-Moment-of-an-Orbitting-Electron"><title> Magnetic Moment of an Orbitting Electron</title>
+		<statement>
+			<p>
+				An electron moves in a circular orbit of radius <m> 0.05\text{ nm}</m> with speed <m>1.0\times 10^{5}\text{ m/s}</m>. What is its magnetic dipole moment. Assume the motion of electron is fast enough to constitute a steady current.
+			</p>
+
+		</statement>
+		<hint> <p>  Electron will pass any point in the circle once in one period of the circular motion. Use this to find current and then multiply by the area. </p> </hint>
+		<answer> <p>  <m>4.0\times 10^{-25}\, \text{A.m}^2</m> </p> </answer>
+		<solution> 
+			<p>
+				Assuming motion of the electron as charge continuously moving in a circle, we find current by noting that one unit of electron's charge moves past a point in one period.
+				<me> 
+					I = \dfrac{\Delta q}{\Delta t} =  \dfrac{e}{T}, 
+				</me>
+				with <m>T</m> being the time for an electron to complete one cycle.
+				<me>
+					T = \dfrac{2\pi R}{v} = \dfrac{2\pi \times 0.05\text{ nm}}{1.0\times 10^{5}\text{ m/s}} = 3.14\times 10^{-15}\text{ s}.
+				</me>
+				Therefore,
+				<me>
+					I = \dfrac{1.6\times 10^{-19}\text{ C}}{ 3.14\times 10^{-15}\text{ s} } = 5.1\times 10^{-5}\text{ A}.
+				</me>
+				Now, we can get the magnetic dipole moment by multiplying this with the area of the loop.
+				<md>
+					<mrow> \mu \amp = I A = 5.1\times 10^{-5}\text{ A} \times \pi \times (0.05\times 10^{-9}\text{ m})^2 </mrow>
+					<mrow> \amp = 4.0\times 10^{-25}\, A.m^2.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Rotating-a-Nuclear-Magnetic-Dipole-in-a-Magnetic-Field"><title> Rotating a Nuclear Magnetic Dipole in a Magnetic Field</title>
+		<statement>
+			<p>
+				In a nuclear magnetic resonance (NMR) experiment, a nuclear magnetic dipole is first aligned with a static external magnetic field.  Then a dynamic magnetic field of an electromagnetic radiation is applied on the sample  to flip the orientation of the dipole to face opposite to the direction of the static field.  Suppose it takes <m>4.35 \times 10^{-7} \text{ eV}</m> of energy to flip the magnetic dipole of a proton when aligned to a magnetic field of magnitude <m>2.5\text{ T}</m>.  Find the magnetic dipole moment of a proton.
+			</p>
+			<p>
+				Units: <m>1\text{ eV} = 1.6\times 10^{-19}\text{ J}</m>. 
+			</p>
+
+		</statement>
+		<hint> <p> Find the change in energy.  </p> </hint>
+		<answer> <p> <m>1.4\times 10^{-26}\text{ Tm}^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The energy of magnetic dipole is given by <m>U= - \vec\mu \cdot \vec B</m>. Therefore, to flip the direction, from being parallel to <m>\vec B</m> to antiparall will cost
+				<me>
+					\Delta U = U_f - U_i = \mu B - (- \mu B) = 2\mu B.
+				</me>
+				Using numerical values given
+				<me>
+					\mu = \dfrac{\Delta U}{2B} = \dfrac{4.35 \times 10^{-7} \text{ eV} \times 1.6\times 10^{-19}\text{ J/eV}}{2.5\text{ T}} = 1.4\times 10^{-26}\text{ Tm}^2,
+				</me>
+				where I wrote the final units by using <m>\text{current}\times\text{area}</m> equivalence of <m>\mu</m>.
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Torque-on-a-Magnetic-Dipole-and-Energy-Required-to-Flip-its-Orientation"><title> Torque on a Magnetic Dipole and Energy Required to Flip its Orientation </title>
+		<statement>
+			<p>
+				A magnetic dipole of magnitude <m>9.27 \times 10^{-24}\text{ A.m}^2</m> is placed in a magnetic field of magnitude <m>3\text{ T}</m>.  The dipole makes an angle of <m>30^{\circ}</m> with the magnetic field.  Determine (a) the torque on the dipole and (b) the energy to flip the direction of the dipole by <m>180^{\circ}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Use definitions. </p> </hint>
+		<answer> <p> (a) <m>1.39\times 10^{-23}\:\text{N.m} </m>,
+					(b) <m> 4.82\times 10^{-23}\:\text{J}</m>.  </p> </answer>
+		<solution><title>(a)</title> 
+			<p> (a)
+				The magnitude of the torque on a magnetic dipole moment <m>\vec \mu</m> in a magnetic field <m>\vec B</m> is given by
+				<md>
+					<mrow> \tau \amp = |\vec \mu\times \vec B| = \mu\:B\:\sin\:\theta </mrow>
+					<mrow> \amp = 9.27 \times 10^{-24}\: \text{A.m}^2\times 3\: \text{T}\times \sin\:30^{\circ}</mrow>
+					<mrow> \amp = 1.39\times 10^{-23}\:\text{N.m}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				(b) The energy to flip a magnetic dipole moment is given by
+				<md>
+					<mrow> \Delta U \amp  = U_f - U_i </mrow> 
+					<mrow> \amp = -\mu\:B\:\cos\:(30^{\circ}+180^{\circ}) - [-\mu\:B\:\cos\:30^{\circ}]= 2\mu\: B\:\cos\:30^{\circ}</mrow>
+					<mrow> \amp = 2\times 9.27 \times 10^{-24}\: \text{A.m}^2\times3\: \text{T}\cos\:30^{\circ}  = 4.82\times 10^{-23}\:\text{J}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="Magnetic-Dipole-Moment-and-Equivalent-Circulating-Current-from-Torque"><title> Magnetic Dipole Moment and Equivalent Circulating Current from Torque </title>
+		<statement>
+			<p>
+				A dipole experiences a torque of magnitude <m>5 \times 10^{-20}\text{ N.m}</m> when its is pointed <m>90^{\circ}</m> to the direction of an external magnetic field of magnitude <m>4\text{ T}</m>.  (a) Determine the magnitude of magnetic dipole moment.  (b) If the dipole was as a result of a circulating current in a loop of radius <m>1.0\text{ mm}</m>, what would be the current in the loop? 
+			</p>
+
+		</statement>
+		<hint> <p> Use definition.  </p> </hint>
+		<answer> <p> (a)  <m>\mu = 1.25\times 10^{-20}\ \text{A.m}^2</m>, (b)  <m>I = 4.0\times 10^{-15}\ \text{A}</m>. </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a) The magnitude of the torque on a dipole is given by <m>\tau = |\vec \mu\times \vec B| = \mu\:B\:\sin\:\theta</m>.  Therefore, we can deduce the magnetic dipole moment from the given torque as
+				<me>
+					\mu = \dfrac{\tau}{B\:\sin\:\theta} = \dfrac{5 \times 10^{-20}\: \text{N.m}}{ 4\:\text{T}\:\sin\:90^{\circ}} = 1.25 \times 10^{-20}\:\text{A.m}^2.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				(b) The dipole moment equals the product of current in the loop and the area of the loop.  Therefore,
+				<me>
+				\mu = I A \ \ \Longrightarrow\ \ I = \dfrac{\mu}{A} = \dfrac{1.25 \times 10^{-20}\:\text{A.m}^2}{\pi (0.001\:\text{m})^2} = 3.98\times 10^{-15}\:\text{A}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="Force-on-a-Magnetic-Dipole-in-an-Nonuniform-Magnetic-Field-of-a-Bar-Magnet"><title> Force on a Magnetic Dipole in an Nonuniform Magnetic Field of a Bar Magnet</title>
+		<statement>
+			<p>
+				The magnetic field near a bar magnet  is not uniform.  A magnet of magnetic dipole moment magnitude <m>3 \times  10^{-22}\text{ A.m}^2</m>   is brought near the end of a bar magnet where the magnetic field component along the dipole's direction changes at the rate of <m>30\text{ T/m}</m>.  Determine the force on the dipole. 
+			</p>
+
+		</statement>
+		<hint> <p> Use definition.  </p> </hint>
+		<answer> <p>  <m>9.0\times 10^{-21}\ \text{N}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The force on a dipole is equal to the product of dipole moment and the rate of change of the magnetic field over space.  The magnitude of the force will be
+				<me>
+					F = 3\times 10^{-22}\:\text{A.m}^2\times 30\:\text{T/m} = 9\times 10^{-21}\:\text{N}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Energy-for-Rotating-a-Magnetic-Dipole-by-an-Arbitrary-Angle"><title> Energy for Rotating a Magnetic Dipole by an Arbitrary Angle </title>
+		<statement>
+			<p>
+				Determine the energy needed to flip the dipole of moment <m>10^{-3}\text{ A.m}^2</m> in a field of <m>2\text{ T}</m> from being <m>160^{\circ}</m> direction to the field to <m>20^{\circ}</m> direction. 
+
+			</p>
+
+		</statement>
+		<hint> <p> Use definition.  </p> </hint>
+		<answer> <p> <m>-3.8\times 10^{-3}\ \text{J}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				This problem uses the dot product nature of energy formula for a dipole.
+				<me>
+					U = -\vec \mu \cdot \vec B.
+				</me>
+				Therefore,
+				<md>
+					<mrow>\Delta U   \amp = -\mu\:B\:\cos\:\theta_2 + \mu\:B\:\cos\:\theta_1</mrow>
+					<mrow> \amp =
+				-2\times 10^{-3}\:( \cos\:20^{\circ} -\cos\:160^{\circ}) = -3.76\:\text{mJ}. 
+					</mrow>
+				</md>
+				The negative sign means that the dipole will lose the energy in the process.
+			</p>
+		</solution>
+	</exercise>  
+
+	<exercise xml:id="ex-Force-on-a-Magnetic-Dipole-in-a-Nonuniform-Magnetic-Field-Given-in-Analytic-Form"><title> (Calculus) Force on a Magnetic Dipole in a Nonuniform Magnetic Field Given in Analytic Form  </title>
+		<statement>
+			<p>
+				A dipole of moment <m>2\text{ A.m}^2</m> is pointed in along <m>x</m> axis direction in a region of space where magnetic field is given as follows:   
+				<me>
+					\vec B = \mu_0I_0\left[-\frac{y}{x^2+y^2}\hat u_x  + \frac{x}{x^2+y^2}\hat u_y \right],
+				</me>
+				where <m>x</m> and <m>y</m> are in <m>\text{m}</m>.  Find the magnetic force on the dipole when <m>x=0.3\text{ m}</m>  and <m>y = 0.4\text{ m}</m>. 
+  
+			</p>
+
+		</statement>
+		<hint> <p> Use definition.  </p> </hint>
+		<answer> <p>  <m>7.68\text{ N}</m>. </p> </answer>
+		<solution> 
+			<p>
+
+				We use the full formula for a force on a dipole in an inhomogeneous magnetic field.
+				<me>
+					\vec F = \hat u_x \: \dfrac{\partial}{\partial\:x}\left( \vec \mu\cdot\vec B\right) + \hat u_y \: \dfrac{\partial}{\partial\:y}\left( \vec \mu\cdot\vec B\right) + \hat u_z \: \dfrac{\partial}{\partial\:z}\left( \vec \mu\cdot\vec B\right).
+				</me>
+				Since magnetic dipole moment is pointed along the <m>x</m>-axis, only the first term will be non-zero.
+				<me>
+					\vec F = \hat u_x \: \dfrac{\partial}{\partial\:x}\left( \mu_x\:B_x\right) = \hat u_x \: \mu\:\dfrac{2xy}{(x^2 + y^2)^2}.
+				</me>
+				Putting the numerical values given in the problem, we find
+				<me>
+					\vec F = 2 \times\:\dfrac{2\times 0.3\times 0.4}{(0.3^2 + 0.4^2)^2}\:\:\hat u_x  = 7.68\:\text{N}\;\hat u_x .
+				</me>
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Force-and-Torque-on-a-Magnetic-Dipole-Placed-in-a-Solenoid"><title> Force and Torque on a Magnetic Dipole Placed in a Solenoid  </title>
+		<statement>
+			<p>
+				A dipole of moment <m>3 \times 10^{-10} \text{A.m}^2</m> is placed inside a long solenoid of 2000 turns per meter such that dipole is directed perpendicular to the axis of the solenoid.  Determine the force and torque on the dipole when a <m>8\ A</m> current is passed through the solenoid.  
+			</p>
+
+		</statement>
+		<hint> <p> Use definition.  </p> </hint>
+		<answer> <p> <m>|\vec \tau| = 6\times 10^{-12}\ \text{N.m}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The magnetic field inside a cylindrical solenoid is pointed parallel to the axis and has the following magnitude.   
+				<me>
+					B = \mu_0\:n\:I = 4\pi\times 10^{-7}\times 2000\times 8 = 0.02\; \text{T}.
+				</me>
+				Since the magnetic field is uniform, there will be no net force on the dipole. Even though there would be no net force on the dipole, there may be a torque on the dipole  since the dipole is neither parallel nor antiparallel to the magnetic field.  The magnitude of torque is given by
+				<me>
+					\tau = \mu\:B\:\sin\:\theta = 3 \times 10^{-10}\: \text{A.m}^2\times  0.02\: \text{T}\times 1= 6\times 10^{-12}\:\text{Nm}.
+				</me>
+				The direction of the torque is perpendicular to both <m>\vec \mu</m> and <m>\vec B</m>.  It is given by the right-hand rule applied to the cross-product <m>\vec \mu\times \vec B</m>.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+</section>

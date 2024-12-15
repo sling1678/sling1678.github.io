@@ -1,0 +1,462 @@
+<section xml:id="Torque"><title> Torque</title>
+<idx>Torque</idx>
+	<introduction>
+		<p>
+			Torque is related to the ability of a force to rotate a body about some axis. Torque is also called <term> moment of a force</term>. 
+		</p>
+		<p>
+			Suppose you want to rotate a bolt by fitting a wrench on the head of the bolt and applying a force on the handle of the wrench as in  <xref ref="fig-torque-wrench-1"/>. Suppose we apply the same magnitude force at two different locations 1 and 2.
+		</p>
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				It will not surprise you that force <m> \vec F_2</m> on the wrench is more effective than <m>\vec F_1</m> in rotating the bolt. You probably know this intuitively in terms of the larger lever arm of <m> \vec F_2</m> compared to that of <m> \vec F_1</m>. 
+ 
+			</p>
+			<p></p>
+			<figure xml:id="fig-torque-wrench-1">
+				<caption></caption>
+				<image source="./images/rotation/torque-wrench-1.png" width="40%"/>
+			</figure>
+
+		</sidebyside>
+		<p>
+			In this section we will build on this intuition and define torque in precise mathematical terms. In a later section, we will use torque to quantify the change in rotation that a torque can cause - we will do that through what is sometimes called <q> second law of motion for rotation</q>.
+		</p>
+
+ 
+	</introduction>
+
+	<subsection> <title> Torque of a Force that is in a Plane Perpendicular to the Axis </title>
+		<p>
+				Consider a force on the wrench as in <xref ref="fig-torque-wrench-2-fundamental-definition" />. The axis is perpendicular to the page and the forces lie in the page. 
+		</p>
+		<figure xml:id="fig-torque-wrench-2-fundamental-definition">
+			<caption>
+				A force on a wrench applied at P with displacement <m>\vec r</m> from the pivot point O. The angle between displacement of force ad force is <m>\theta</m>.
+			</caption>
+			<image source="./images/rotation/torque-wrench-2-fundamental-definition-1.png" width="60%"/>
+		</figure>
+
+		<p>
+			The axis of rotation intersects this plane at point O while the force acts at point P. We denote the displacement vector from O to P by <m> \vec r </m>. Then, we define the torque of force <m> \vec F </m> about axis through O by the cross product of vectors <m>\vec r</m> and <m>\vec F</m>.
+				<men xml:id="eq-torque-fundamental-definition">
+						\vec{\mathcal{T}} = \vec r \times \vec F.
+				</men>
+		</p>
+
+		<p>
+			<alert> Magnitude and Direction of Torque:</alert>
+		</p>
+		<p>
+			The definition of the cross product gives us the rules for the magnitude and the direction of the torque vector <m> \vec{\mathcal{T}}</m>. You will find those rules explained in the chapter on Vectors. 
+			<mdn>
+				<mrow xml:id="eq-torque-fundamental-definition-magnitude"> \amp \text{Magnitude, }\mathcal{T} = r\, F\, \sin\, \theta, </mrow>
+				<mrow> \amp \text{Direction of } \vec{\mathcal{T}}: \text{ Use Right Hand Rule of cross product}.</mrow>
+			</mdn> 
+		</p>
+		<p>
+			To apply the Right Hand Rule here, hold your right hand such that the thumb points in the direction of <m> \vec r </m> and any of the other fingers points in the direction of <m> \vec F</m>, then the torque <m> \vec{\mathcal{T}}</m> will be perpendicular to the two vectors and will be coming out of the palm. 
+		</p>
+		<p>
+			There are other ways of doing the right-hand rule also.  For instance, if you point <m> \vec r </m> in the direction of <m>x</m> axis, and <m>\vec F</m> in the <m> xy </m> plane, then <m> \vec{\mathcal{T}}</m> will be in the direction of positive or negative <m> z </m> axis of a right-handed Cartesian coordinate system. 
+		</p>
+
+		<p>
+			<alert>Components of Torque:</alert>
+		</p>
+		<p>
+			The definition of the cross product also gives us the rules for the components of the torque vector <m> \vec{\mathcal{T}}</m>. Let components of <m> \vec r</m> be <m> (x,\, y\, z)</m> and that of <m> \vec F</m> be <m> (F_x,\, F_y\, F_z)</m>. Then the components  <m> (\mathcal{T}_x,\, \mathcal{T}_y\, \mathcal{T}_z)</m>  of <m> \vec{\mathcal{T}}</m> will be
+			<mdn>
+				<mrow> \amp \mathcal{T}_x = y\, F_z - z\, F_y, </mrow>
+				<mrow> \amp \mathcal{T}_y = z\, F_x - x\, F_z, </mrow>
+				<mrow> \amp \mathcal{T}_z = x\, F_y - y\, F_x. </mrow>
+			</mdn> 
+		</p>
+		<p>
+			If <m>\vec r </m> and <m> \vec F </m> are in the <m>xy</m> plane, then, this shows that torque will have only the <m> z</m> component non-zero.
+			<md>
+				<mrow> \amp \text{If }\vec r = (x,y)\text{ and }\vec F = (F_x,F_y),</mrow>
+				<mrow>\amp \ \ \ \text{ then }  \mathcal{T}_x=0,\ \mathcal{T}_y =0, \mathcal{T}_z = x\, F_y - y\, F_x.</mrow>
+			</md>
+			In this case, we can speak of the direction of the torque as towards positive or negative <m> z </m> axis, or equivalently, in the clockwise or counterclockwise sense when we look at the force from the direction of positive <m> z </m> axis.
+		</p>		
+	</subsection>
+
+	<subsection><title> Zero Torque Situations</title>
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				<xref ref="fig-zero-torque-situations"/> has four situations where torque for each force about the axis shown is zero. In (a), torque is zero because force is parallel or antiparallel to the axis. In (b), torque is zero because lever arm of each force is zero since the line of each of these two forces passes through the axis. 
+			</p>
+			<p></p>
+			<figure xml:id="fig-zero-torque-situations">
+				<caption>
+				</caption>
+				<image source="./images/rotation/zero-torque-situations.png" width="60%"/>
+			</figure>
+		</sidebyside>	
+
+		<p>
+			We can take advantage of these zero torque directions to simplify calculations when we encounter a force in a completely arbitrary direction. Thus,   we would first project a force on a plane perpendicular to the axis as shown in <xref ref="fig-torque-fundamental-definition"/>. The torque by <m>\vec F_{\parallel}</m> will be zero and we will need only torque from <m> \vec F_{\perp}</m> component. 
+		</p>
+		<p>
+			<alert> In our treatment in this book, if we do not explicitly acknowledge this aspect of a force, we will assume that the force is in the plane perpendicular to the axis, and <m> \vec F_{\perp}</m> is same as <m> \vec F</m>. </alert>
+		</p>
+		<figure xml:id="fig-torque-fundamental-definition">
+			<caption>
+				To compute the torque of a force in an arbitrary direction, we first project the force in a plane perpendicular to the axis of rotation. We require the base point P to be in this plane. Denoting the displacement vector <m>\vec r </m> from point O, where the axis intersects this plane, to P, we find the torque by <m> \vec{\mathcal{T}} = \vec r \times \vec F_{\perp}</m>.
+			</caption>
+
+			<image source="./images/rotation/torque-fundamental-definition.png" width="60%"/>
+		</figure>
+	</subsection>
+
+	<subsection><title> The Lever Arm Picture </title>
+
+		<p>
+			<idx>Lever Arm</idx>
+			<idx><h>Torque</h><h>Lever Arm</h></idx>
+			The <term>lever arm</term>, denoted by symbol <m> r_{\perp}</m>, is the distance from the pivot point to the line of action of the force, where the line of action of the force stands for the infinite line that is along the force vector through the point where force acts. 
+		</p>
+		<p>
+			<xref ref="fig-torque-lever-arm-picture"/> shows the geometric construction that helps compute the lever arm. We find that lever arm <m> r_{\perp}</m> is
+			<men>
+				r_{\perp}=  r\,\sin\,\theta.
+			</men>
+		</p>
+		<p>
+			Substituting <m> r_{\perp}</m> for <m> r\,\sin\,\theta</m> in Eq. <xref ref="eq-torque-fundamental-definition-magnitude"/>, we can write the magnitude   of the torque vector <m> \vec{\mathcal{T}}</m> more simply as the product of the magnitude of the force and the lever arm.
+			<mdn>
+				<mrow xml:id="eq-torque-magnitude-F-times-lever-arm"> \amp \text{Magnitude, }\mathcal{T} = r_{\perp}\, F. 
+				</mrow>
+			</mdn> 
+			The direction of the torque is still obtained the same way as before, i.e., using the right hand rule.
+		</p>
+
+ 		<figure xml:id="fig-torque-lever-arm-picture">
+ 			<caption>
+ 				Geometric construction for the lever arm. After indentifying the pivot point O, the force <m> \vec F</m>, and point P where the force acts, we extend the line along which the force acts. Then, we drop a perpendicular from O to the line of force, which is line OQ.  The length of OQ is the lever arm of the force. Since <m> \angle \text{OPQ} = \theta</m>, the lever arm, <m>r_{\perp}=\text{OQ} = r\,\sin\,\theta </m>.
+ 			</caption>
+ 			<image source="./images/rotation/torque-lever-arm-picture.png" width="50%"/>
+ 		</figure>		
+	</subsection>
+
+	<subsection><title>The Sense of Rotation and Torque </title>
+
+		<idx><h>Torque</h><h>Sense of Rotation</h></idx>
+		<p>
+			Torque is nonzero if displacement <m> \vec r </m> and force <m>\vec F </m> are not parallel or antiparallel. Furthermore, notice that vectors <m> \vec r </m> and <m>\vec F</m> will be in one plane if they are neither parallel or antiparallel. Since the  torque <m>\vec{\mathcal{T}} </m> is their cross product, it must be perpendicular to this plane that contains both <m> \vec r </m> and <m>\vec F</m> vectors. 
+		</p>
+		<p>
+			Let <m> \vec r </m> and  <m>\vec F </m> are in the <m> xy </m> plane as shown in the two figures below, then, <m>\vec{\mathcal{T}} </m>  will either be in the positive <m> z</m> axis direction or in the negative <m> z </m> axis direction.
+		</p>
+		<sidebyside widths="45% 35%">
+			<p>
+				In <xref ref="fig-torque-counterclockwise-sense-of-rotation"/> on the right, <m>\vec{\mathcal{T}} </m> is in the positive <m> z </m> axis direction. Now, when you look at the body from the positive <m> z </m> axis direction, i.e., from above the page, it will appear that the force is <q> trying </q> to rotate the body in the counterclockwise sense.
+			</p>
+			<figure xml:id="fig-torque-counterclockwise-sense-of-rotation">
+				<caption></caption>
+				<image source="./images/rotation/torque-counterclockwise-sense-of-rotation.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<sidebyside widths="45% 35%">
+			<p> 
+				In <xref ref="fig-torque-clockwise-sense-of-rotation"/> on the right, <m>\vec{\mathcal{T}} </m> is in the negative <m> z </m> axis direction. Now, when you look at the body from the positive <m> z </m> axis direction, i.e., from above the page, it will appear that the force is <q> trying </q> to rotate the body in the clockwise sense.
+			</p>
+			<figure xml:id="fig-torque-clockwise-sense-of-rotation">
+				<caption></caption>
+				<image source="./images/rotation/torque-clockwise-sense-of-rotation.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+		<p>
+			Thus, we have two ways of indicating the direction of a torque: (1) towards positive or negative <m> z </m> axis, or, (2) counterclockwise or clockwise tendency.
+		</p>
+	</subsection>
+
+	<subsection><title> Net Torque </title>
+
+		<p>
+			How do you add influences of two or more torques? Since torque is a vector, the sum of torques will be a vector sum.
+			<men>
+				\vec{\mathcal{T}}_\text{net} = \vec{\mathcal{T}}_1 + \vec{\mathcal{T}}_2 + \cdots.
+			</men>
+			For a rotation about <m>z</m>-axis, we will be working with only the <m>z</m>-components, which will just add algebraically.
+			<men>
+				 \mathcal{T}_{z,\text{net}} = \mathcal{T}_{1z} + \mathcal{T}_{2z} + \cdots.
+			</men>
+			If we are thinking in terms of clockwise and countercockwise, all torques that have counterclockwise sense add together and all torques that have clockwise sense add together, and then we subtract the clockwise torque from the counterclockwise.
+			<men>
+				 \mathcal{T}_{\text{net}} =  |\mathcal{T}_{\text{net,counterclockwise}}| - |\mathcal{T}_{\text{net,clockwise}}|.
+			</men>			
+		</p>
+<!-- 		<p>
+			You may recall that if two vectors are in the same direction, you can just add their magnitudes. You may also recall that if two vectors are in the opposite directions, subtracting the smaller magnitude from the larger magnitude will give you the result. If two vectors are in some random directions, then, we add them analytically by adding components separately or by using grtaphical method of vector addition.
+		</p>
+		<p>
+			In the case of adding torques, the same rules apply. The situation is simpler when we are dealing with a fixed-axis rotation since vector has only one component - component along the axs of rotation. For instance, if forces and displacements are in the <m> xy </m> plane, then torque will be pointed towards either the positive <m> z </m> axis or  the negative <m> z </m> axis. Therefore, in this case, torque will have only the <m> z</m> component nonzero.
+			<me>
+				\vec{\mathcal{T}} = \mathcal{T}_z \hat k \equiv \left(0,\,0,\,\mathcal{T}_z \right),
+			</me>
+			where <m> \mathcal{T}_z</m> is positive for torque pointed towards positive <m>z</m> axis  (which is same as the counterclockwise sense) and negative if pointed towards negative <m>z</m> axis (which is same as the clockwise sense).  That makes adding torques in fixed axis rotation situation just adding up postitive and negative numbers.
+		</p> -->
+		<p>
+			<alert>A simple example:</alert> Suppose we have four torques, <m> \vec{\mathcal{T}}_1 </m> of magnitude <m> 12\text{ N.m}</m> in the counterclockwise sense, <m> \vec{\mathcal{T}}_2 </m> of magnitude <m> 30\text{ N.m}</m> in the  clockwise sense, <m> \vec{\mathcal{T}}_3 </m> of magnitude <m> 25\text{ N.m}</m> in the counterclockwise sense, and <m> \vec{\mathcal{T}}_4 </m> of magnitude <m> 15\text{ N.m}</m> in the  clockwise sense. We can add all the counterclockwise together and separately add all the clockwise together. Then, subtract the clockwise from the counterclockwise. If the result is positive, the net torque will be counterclockwise and if negative, the net torque will be clockwise. What we are doing here is summing the <m> z </m> components of these vectors.
+			<me>
+				\mathcal{T}_z^{\text{net}} = 12  - 30  +  25 - 15 = - 8 \text{ N.m}.
+			</me>
+			Therefore, in this example, <m> \vec{\mathcal{T}}_{\text{net}} </m> has magnitude <m> 8 \text{ N.m}</m>, in the negative <m> z </m> axis, which is also stated as clockwise sense.
+		</p>
+	</subsection>
+
+
+	<remark>
+		<p>
+			Do not confuse torque with force.  They are entirely different quantities. Some major difference between torque and force to keep in mind are:
+		</p>
+		<p>
+			<ol>
+				<li> 
+					Torque depends on the choice of the pivot point about which torque is to be evaluated.  Force has no such dependency. 
+				</li>
+				<li> 
+					Torque and force are perpendicular to each other since torque is defined as the cross product of a displacement vector and force. 
+				</li>
+				<li> 
+					There can be torque on a system even when net force is zero.  For instance, in <xref ref="fig-remark-torque-vs-force"/>(a), the equal magnitude forces act in the opposite directions on the opposite ends of a wheel, resulting in a zero net force, but the net torque about the center is not zero. Actually, the net torque has magnitude <m> 1.0 \text{ N.m}</m> and direction out-of-page.
+				</li>
+				<li>
+					Net force an a system may not be zero even when torque is zero. In <xref ref="fig-remark-torque-vs-force"/>(b), the equal magnitude forces act in the same directions on the opposite ends of a wheel, resulting in a zero net torque, but non-zero net force. Actually, net force is <m> 20 \text{ N}</m> down. 
+				</li> 
+			</ol>
+		</p>
+
+		<figure xml:id="fig-remark-torque-vs-force">
+			<caption> Net force and net torques are different things. In (a), net force is zero, but net torque is <m> 10 \text{ N.m}</m> in the out-of-page direction. In (b) the net torque is zero, but net force is <m> 20 \text{ N}</m> down. 
+			</caption>
+			<image source="./images/rotation/remark-torque-vs-force.png" width="90%"/>
+		</figure>
+ 	</remark>
+
+ 	<example xml:id="ex-Torque-on-a-Bar-by-a-Force-Acting-at-an-Angle"><title> Torque on a Bar by a Force Acting at an Angle </title>
+		<statement>
+			<p>
+				A peg goes through a hole in a metal bar at one end so that the bar can rotate about the peg.
+			</p>
+			<sidebyside widths="50% 10% 40%">
+
+				<p>
+					 A force of <m> 10\text{ N}</m> is applied on the bar at an angle <m>30^{\circ}</m> to the bar a distance <m>20\text{ cm}</m> from the peg as shown in the figure.  
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-torque-on-a-bar-by-force-at-angle">
+					<caption></caption>
+					<image source="./images/rotation/ex-torque-on-a-bar-by-force-at-angle.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			
+
+			<p>
+				(a) What is the lever arm of the force?
+			</p>
+			<p>
+				(b) What is the magnitude of the torque?
+			</p>
+			<p>
+				(c) What is the sense of rotation of the torque?
+			</p>
+			<p>
+				(d) If positive <m> x </m> axis is in the direction from peg to where force acts, and the bar and the force vector are in the <m> xy</m> plane, is the torque in the positive <m> z </m> axis direction or in the negative <m> z </m> axis direction? 
+			</p>
+
+
+
+		</statement>
+		<!-- <hint> <p> (a) Use lever arm construction, (b) <m> F\times r_{\perp} </m>, (c) Use right hand rule, (d) use right hand rule. </p> </hint> -->
+		<answer> <p> (a) <m> 10\text{ cm}</m>, (b) <m>1.0\text{ N.m}</m>, (c) Counterclockwise, (d) positive <m> z </m> axis. </p> </answer>
+
+		<solution><title>a</title> 
+			<sidebyside widths="50% 45%">
+				<p>
+					Let us draw the line of force and drop perpendicular to the line of force to identify the lever arm in a figure. We need to find the length of OQ. In <m>\triangle \text{OPQ}</m>, we have the angle <m> \angle \text{OPQ} = 30^{\circ}</m>, obtained from using equality of opposite angles.		
+				</p>
+				<figure xml:id="fig-ex-torque-on-a-bar-by-force-at-angle-solution">
+					<caption></caption>
+					<image source="./images/rotation/ex-torque-on-a-bar-by-force-at-angle-solution.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Therefore,
+				<me>
+					r_{\perp} = 20\text{ cm} \times \sin\, 30^{\circ} = 10\text{ cm}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+
+				The magnitude of the torque is simply the ordinary product of the lever arm and the magnitude of the force.
+				<me>
+					\mathcal{T} = r_{\perp}\, F = 10\text{ cm}\times 10\text{ N} = 1.0\text{ N.m}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>c</title> 
+			<p>
+
+				Using the diagram, the positive <m> z </m> axis is out-of-page. So, we look at the diagram to get the sense of rotation. This gives the counterclockwise sense.
+			</p>
+		</solution>
+		<solution><title>d</title> 
+			<p>
+				The right hand rule on <m> \vec r </m> and <m> \vec F </m> gives the direction out of page, which is the direction of the positive <m> z </m> axis.
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="ex-Torque-of-Particles-Hitting-a-Flywheel"><title> Torque of Particles Hitting a Flywheel </title>
+		<statement>
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					Several particles hit the flywheel from different directions and at different places but with the same force of <m> 5\times 10^{-3}\text{ N}</m> as described below. In each case find the <alert> magnitude of the torque</alert> of each force on the flywheel about an axis through the center of the flywheel and perpendicular to the plane of the flywheel, i.e., about the axle at the center.
+				</p>
+				<p></p>
+				<image source="./images/rotation/particles-hitting-flywheel.png"/>
+			</sidebyside>
+			<p> (a) Particle 1 hits the flywheel right at the center coming from the same direction as the rotation axis.
+			</p>
+			<p>
+				(b) Particle 2, hits the flywheel right at the center coming from the <m> 30^{\circ}</m> to the rotation axis.
+			</p>
+			<p>
+				(c) Particle 3, hits the flywheel right <m> 0.2\text{ m} </m> from the center but perpendicular to the flywheel.
+			</p>
+			<p>
+				(d) Particle 4, hits the flywheel right <m> 0.2\text{ m} </m> from the center in the plane of the flywheel. But the direction of the hit passes through the center of the flywheel.
+			</p>
+			<p>
+				(e) Particle 5, hits the flywheel right at <m> 0.2\text{ m} </m> from the center  in the plane of the flywheel. But the direction of the hit was such that if you draw the line of the particles flight, distance to that line from the center of the wheel is  <m> 0.15\text{ m}</m>. 
+			</p>
+			<p>
+				(f) Particle 6, hits the flywheel right at  <m> 0.3\text{ m} </m> from the center in the plane of the flywheel. But the direction of the particle's flight was such that had the particle been any further away from the center, it would have missed the flywheel. 
+			</p>
+		</statement>
+		<!-- <hint> <p> Use definitions. Note that if force is parallel to axis, there will be no torque about that axis.  </p> </hint> -->
+		<answer> <p> (a) <m> 0 </m>, (b) <m> 0 </m>, (c) <m> 0 </m>,  (d) <m> 0 </m>, (e) <m> 0.75\times 10^{-3}\text{ N.m} </m>, (f) <m> 1.5\times 10^{-3}\text{ N.m}</m>. </p> </answer>
+		<solution> <title> (a), (b)</title>
+			<p>
+				In both of these cases, lever arm is <m> 0</m>. Hence Torque is zero.
+			</p>
+		</solution>
+		<solution> <title> c </title>
+			<p>
+				The direction of the force is the same as the direction of the axis. Hence, torque is zero. this force cannot cause rotation around this axis. 
+			</p>
+		</solution>
+		<solution> <title> d </title>
+			<p>
+				The lever arm is zero. Hence torque is zero. 
+			</p>
+		</solution>
+		<solution> <title> e </title>
+			<p>
+				The description gives the distance from the axis to the line of force, which is what we mean by the lever arm. Thus, the lever arm is given to be <m> r_{\perp} = 0.15\text{ m}</m>. Therefore, the magnitude of the torque will be
+				<me>
+					\mathcal{T} = r_{\perp}\, F = 0.15\times 5\times 10^{-3} = 0.75\times 10^{-3}\text{ N.m}.
+				</me>
+
+			</p>
+		</solution>
+
+ 		<solution> <title> f </title>
+			<p>
+				The description gives the distance from the axis to the line of force, which is what we mean by the lever arm. Thus, the lever arm is given to be <m> r_{\perp} = 0.3\text{ m}</m>. Therefore, the magnitude of the torque will be
+				<me>
+					\mathcal{T} = r_{\perp}\, F = 0.3\times 5\times 10^{-3} = 1.5\times 10^{-3}\text{ N.m}.
+				</me>
+
+			</p>
+		</solution>
+	</example>
+	
+	<example xml:id="ex-Computing-Net-Torque-on-a-Beam"><title>  Computing Net Torque on a Beam </title>
+		<statement>
+			<p>
+				 A beam of mass <m> 100\text{ kg}</m> is supported by a cable as shown in <xref ref="fig-ex-net-torque-on-a-beam"/> with <m> \theta = 30^{\circ}</m>. Use <m> L </m> for the length of the beam - it should cancel out in the end.
+			</p>			
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					(a) Find the magnitude of the tension force in the cable by setting net torque on the beam about the point where the beam is fixed to the wall to zero. (b) What will be the magnitude of the tension force if cable's angle was double, i.e., <m> \theta = 60^{\circ}</m>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-net-torque-on-a-beam">
+					<caption></caption>
+					<image source="./images/rotation/ex-net-torque-on-a-beam.png" width="60%"/>
+				</figure>
+			</sidebyside>
+ 
+		</statement>
+		<!-- <hint> <p>  (a) Draw lever arm diagrams for weight and tension. Also work with symbols and put numbers in the end. (b) Use general formula found in (a), (c) Use general formula found in (a). </p> </hint> -->
+		<answer> <p> (a) <m> 981\text{ N} </m>, (b) <m> 570\text{ N}</m>.</p> </answer>
+		<solution><title>a</title> 
+			<p> 
+				Since we will be computing torques about the pivot point O, we disregard all forces on the beam that act at the pivot. Why? Because their lever arms will all be zero and hence their torques will be zero.
+			</p>
+			<p>
+				This leaves us two forces acting on the beam - (1) the weight of the beam acting at the center of mass of the beam and (2) the tension force in the cable acting at the end of the beam. <xref ref="fig-ex-net-torque-on-a-beam-solution"/> shows these forces and the lever arm pictures of each force.
+			</p>
+			<figure xml:id="fig-ex-net-torque-on-a-beam-solution">
+				<caption>
+					Figure for <xref ref="ex-Computing-Net-Torque-on-a-Beam"/> solution.
+				</caption>
+				<image source="./images/rotation/ex-net-torque-on-a-beam-solution.png" width="80%"/>
+			</figure>
+			<p>
+				Let <m> L </m> be the length of the beam. Then, from  <xref ref="fig-ex-net-torque-on-a-beam-solution"/>(a) we immediately see that lever arm of the weight is
+				<me>
+					r_{\perp}^W = \dfrac{L}{2},
+				</me>
+				and in  <xref ref="fig-ex-net-torque-on-a-beam-solution"/>(b), from the <m> \triangle \text{OPQ}</m>, we find the lever arm of tension is
+				<me>
+					r_{\perp}^T = L\,\sin\,\theta.
+				</me>
+				Let <m> M </m> be the mass of the beam. Then, weight is <m> W = Mg </m>. This gives the following for the magnitudes of the two torques:
+				<md>
+					<mrow> \amp  \mathcal{T}_W = Mg\dfrac{L}{2},</mrow>
+					<mrow> \amp \mathcal{T}_T = T L \sin\,\theta.</mrow>
+				</md>
+				To get the net of these two torques, we need to know their directions as well. We will use the <m> z </m> axis notation for the direction.
+				Let positive <m> z </m> axis is pointed out of page and the forces be in the <m> xy</m> plane. Then, by the right hand rule, we determine that
+				<md>
+					<mrow> \amp \text{ The torque of weight is pointed into the page, and,}</mrow>
+					<mrow> \amp \text{ The torque of tension is pointed out of the page.}</mrow>
+				</md>
+
+				Therefore, we get the <m> z </m> component of the net torque to be
+				<me>
+					\mathcal{T}_z^{\text{net}} = \mathcal{T}_W - \mathcal{T}_T = Mg\dfrac{L}{2} - T L \sin\,\theta.
+				</me>
+				We set this to zero and solve for <m> T </m>.
+				<men xml:id="eq-ex-net-torque-on-a-beam">
+					T = \dfrac{Mg}{2\,\sin\,\theta}.
+				</men>
+				Now, we use the numbers given to get
+				<me>
+					T = \dfrac{100\times 9.81}{2\times\sin\,30^{\circ}} = 981\text{ N}.
+				</me> 			
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p> 
+				Since we worked with symbols in our solution, we can just use another value for <m> \theta </m>  in Eq. <xref ref="eq-ex-net-torque-on-a-beam"/>. 
+				<me>
+					T = \dfrac{100\times 9.81}{2\times\sin\,60^{\circ}} = \dfrac{981}{\sqrt{3}}= 570\text{ N}.
+				</me> 				
+			</p>
+	 
+		</solution>
+	</example>
+
+
+	 
+</section>

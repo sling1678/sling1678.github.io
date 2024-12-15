@@ -1,0 +1,84 @@
+<section xml:id="Internal-Energy-of-Ideal-Gases"><title> Internal Energy of Ideal Gases </title>
+
+	<introduction>
+
+		<p>
+
+			The kinetic theory can be used to calculate the internal energy of an ideal gas. The internal energy of a collection of gas molecules will be equal to the sum of the average kinetic and potential energies of all molecules.  Since the molecules of a monatomic ideal gas do not interact with each other, they do not possess any potential energy.  The molecules of monatomic ideal gas have only kinetic energy.
+		</p>
+		<p>
+
+			The average kinetic energy of one molecule is
+			<me>
+				\text{KE} = \frac{1}{2}m v_\text{rms}^2. 
+			</me>
+			The quantity <m>v_\text{rms}</m> is the root-mean square speed, which is given by the following expression based on Maxwell velocity distribution.
+			<me>
+				v_{rms}^2 = \frac{3k_BT}{m}.
+			</me>
+			Therefore, kinetic energy of one molecule is
+			<me>
+				\text{KE} =  \frac{3}{2}k_BT.
+			</me>
+			If the monatomic ideal gas has <m> N</m> molecules, the internal energy <m> U</m> of the gas will be
+			<me>
+				U =  \frac{3}{2}Nk_BT 
+			</me>
+			This shows that internal energy of an ideal gas only depends on the amount of the gas and the temperature. We can write this equation in term of number of moles <m>n</m>, which is <m> N/N_A</m>, where <m> N_A</m> is Avogadro's number.  When writing the formula in moles, the product <m> k_BN_A</m> is normally replaced with the gas constant <m> R </m>.
+			<men>
+				U =  3\times \frac{1}{2}nRT
+			</men>
+			The factor 3 in these equations comes from three translational degrees of motion for each molecule.  Each translational degree of freedom contributes <m> \frac{1}{2} k_BT</m> per molecule equally.  This result is known as the <term> quipartition of energy</term>.
+		</p>
+
+
+	</introduction>
+
+	<subsection> <title>Internal Energy and Degrees of Freedom </title>
+
+		<p>
+			We saw that the internal energy of monatomic ideal gas comes from the sum of contributions from three degrees of translational motion for each molecule. {\bf Degrees of freedom}\index{Degrees of freedom} of a particle refer to the number of coordinates required to specify the position of the particle. A point-like molecule, such as monatomic ideal gas molecule, has only the translational degrees of motion in three-dimensional space.  This gives them three degrees of freedom.
+		</p>
+		<p>
+			If molecules of the system contain more than one atom per molecule, there will be additional degrees of motion, such as rotation and vibration, which will add to the total kinetic energy of each molecule. For molecules with <m>A</m> atoms, we need <m>3\times A</m> coordinates, which could be <m>(x,y,z)</m> for each atom.  Therefore, a molecule with <m>A</m> atoms will have a total of <m>3A</m> degrees of freedom. These coordinates can be combined to yield three coordinates of the center of mass, three rotation angles if the molecule is not linear otherwise two rotation angles, and the rest correspond to vibrations of the molecule. 
+		</p>
+		<p>
+			The molecule can be moved about in any of the three translational motion of the center of mass with any arbitrarily small energy, but excitation of rotation and vibration motions require a minimum energy. If temperature is high enough so that <m>k_BT</m> is more than what is required to excite a particular mode of motion, then that mode will also contribute to the internal energy. Each degree of freedom that participates in the motion contributes <m>\frac{1}{2}k_BT</m> to the internal energy.
+		</p>
+		<p>
+			For instance, the molecules of a diatomic gas have two atoms in each molecule. Of the six degrees of freedom of a diatomic molecule, one is vibrational.  Six modes of a diatomic molecule are shown in <xref ref="fig-modes-diatomic"/>.
+		</p>
+		<figure xml:id="fig-modes-diatomic">
+			<caption> 
+				Six modes of motion in a diatomic molecule.  The translational, rotational and vibrational modes are turned on at different temperatures.
+			</caption>
+			<image  source="./images/kinetic-theory/modes-diatomic.png" width="100%"/>
+		</figure>
+
+		<p>
+			The vibration of molecules is usually modeled by placing a fictitious spring between the atoms which represent chemical bonds between them.  Therefore, when a vibrational degree of freedom is excited, we also must include a potential energy of each molecule due to the <q>spring-like</q> binding force between the atoms of a diatomic molecule.  According to the virial theorem, the average potential and the average kinetic energies in a spring oscillation are equal to each other.  Therefore, the average potential energy for a vibrating mode will be:
+			<me>
+				\text{Average energy per excited vibration mode } = \frac{1}{2}k_B T.
+			</me>
+			Thus, the internal energy of an ideal gas comes from the kinetic energy of the translation and rotation modes and the potential energy of chemical bonds if vibration is an available mode at the temperature under consideration.  Let <m>f</m> be the total number of translation, rotation, and vibration modes in the molecule that are excited at the temperature of the gas.  Then, the internal energy of <m>N</m> molecules of the gas at absolute temperature <m>T</m> will be
+			<me>
+				U = f\times\frac{1}{2}k_B T.
+			</me>
+			At very low temperature such as 50 K, normally only translational modes are excited and then <m>f = 3</m>.  At very high temperature such as 1000 K all six modes, three translational, two rotational and one vibrational, are excited therefore <m>f =6</m>.  Thus, a diatomic ideal gas has <m>U=6/2 k_BT</m> per molecule at high temperatures while <m>U=3/2 k_B T</m> at low temperatures.
+		</p>
+		<p>
+			Recall that specific heat is the rate at which internal energy changes with temperature. In particular specific heat at constant volume gives an indication of the number of modes that are turned on at any temperature.  In <xref ref="fig-deg-freedom-1"/> shows a schematic plot of the specific heat at constant volume versus temperature.  The plot shows the contributions of modes of motion that are turned on as temperature is raised.  Once, the maximum number of modes, viz. <m>3\times A</m> for an <m>A</m>-atom molecule, are turned on, the specific heat would plateau out.
+		</p>
+
+		<figure xml:id="fig-deg-freedom-1">
+			<caption> 
+				Specific heat of a diatomic ideal gas as a function of temperature showing exciting of rotation and then vibrational modes as temperature is raised.
+			</caption>
+			<image  source="./images/kinetic-theory/deg-freedom-1.png" width="70%"/>
+		</figure> 
+
+	</subsection>
+
+
+
+</section>

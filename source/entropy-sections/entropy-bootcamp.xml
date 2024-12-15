@@ -1,0 +1,351 @@
+<section xml:id="Entropy-Bootcamp"><title> Entropy Bootcamp </title>
+
+
+ 
+	<subsection><title> Entropy Definition</title>
+
+
+
+		<problem><title> Entropy Change in Melting Ice </title>
+			<p> Follow the link: <xref ref="ex-Entropy-Change-in-Melting-Ice"/>.
+			</p>
+		</problem>
+
+		<problem><title> (Calculus) Entropy Change in Heating Water Reversibly </title>
+			<p> Follow the link: <xref ref="ex-Entropy-Change-in-Heating-Water-Reversibly"/>.
+			</p>
+		</problem>
+
+		<problem><title> (Calculus) Entropy Change in an Isothermal Process of an Ideal Gas </title>
+			<p> Follow the link: <xref ref="ex-Entropy-Change-in-an-Isothermal-Process-of-an-Ideal-Gas"/>.
+			</p>
+		</problem>
+
+
+	</subsection>
+ 
+
+
+	<subsection><title> Entropy Change in an Irreversible Process</title>
+
+		<problem><title> (Calculus) Entropy Change for Heating Water Irreversibly </title>
+			<p> Follow the link: <xref ref="ex-Entropy-Change-for-Heating-Water-Irreversibly"/>.
+			</p>
+		</problem>	
+
+		<problem><title> (Calculus) Entropy Change for an Ideal Gas Expanding in Vacuum in an Irreversible Process </title>
+			<p> Follow the link: <xref ref="ex-Entropy-Change-for-an-Ideal-Gas-Expanding-in-Vacuum-in-an-Irreversible-Process"/>.
+			</p>
+		</problem>	
+
+		<problem><title> (Calculus) Entropy of an Irreversible Expansion of a Diatomic Ideal Gas </title>
+			<p> Follow the link: <xref ref="ex-Entropy-of-an-Irreversible-Expansion-of-a-Diatomic-Ideal-Gas"/>.
+			</p>
+		</problem>
+ 
+		<problem><title> (Calculus) Entropy Change in Equilibration of a Two Compartment System </title>
+			<p> Follow the link: <xref ref="ex-Entropy-Change-in-Equilibration-of-a-Two-Compartment-System"/>.
+			</p>
+		</problem>
+
+ 
+	</subsection>
+ 
+
+	<subsection><title> Miscellaneous </title>
+
+		<problem><title> State Change and Entropy Change for Mixing Ice with Water </title>
+			<statement>
+				<p>
+					A 100-g ice cube at <m>-10^{\circ}</m>C is dropped into 500 g of liquid water at <m>60^{\circ}</m>C in a glass beaker of mass 400 g in a thermally insulated environment.  (a) Find the final state of the ice/water mixture.  (b) Calculate the change in the entropy from the initial state to the final state.
+				</p>
+
+				<p>
+					Data: <m>  c_{i} = 2000\ \text{J/kg.C}</m>, 
+						<m>  c_{w} = 4186 \ \text{J/kg.C} </m>,
+						<m>  c_{g} = 837 \ \text{J/kg.C} </m>,
+						<m>   l = 334,000 \ \text{J/kg}</m>.
+	 
+				</p>
+
+			</statement>
+			<hint> <p> (a) Use calorimetry, (b) <m>\Delta S = \dfrac{ml}{T}</m> for phase change and <m>\Delta S = m c \ln \frac{T_2}{T_1}</m> for change in temperature.  </p> </hint>
+			<answer> <p> (a) See solution (a), (b) <m>25 \ \text{J/K}</m>.  </p> </answer>
+			<solution> <title>(a) </title>
+				<p> 
+					(a)
+					For a more detailed discussion of calorimetry see problems in the chapter on the first law of thermodynamics.  Suffice to say that the energy lost by water and the beaker is balanced by the energy gained by the ice.
+				</p>
+				<p>
+					A rough calculation shows that all ice melts and the temperature of the mixture will be more than 0<m>^{\circ}</m>C.  Let <m>T</m> be the temperature at the equilibrium.  Then, the equation balancing the energy gained to energy lost gives.
+					<md>
+						<mrow> \amp  0.1\ \text{kg} \left(   2000\ \text{J/kg.C} \times 10^{\circ}\text{C} +  334,000 \ \text{J/kg} + 4186\ \text{J/kg.C} \times T \right)</mrow>
+						<mrow> \amp \ \ =  ( 0.5\ \text{kg} \times 4186\ \text{J/kg.C}  + 
+						            0.4\ \text{kg} \times 837\ \text{J/kg.C} )\times
+						             ( 60 - T).</mrow>
+					</md>
+					Solving this equation we find <m>T = 38.7^{\circ}</m>C.  Therefore, the change of state can be described as
+					<md>
+						<mrow> \amp \text{Initial State: }</mrow>
+						<mrow> \amp  \ \ \ \ \ \ \ \text{1. 0.1 kg ice at -10}^{\circ}\text{C}</mrow>
+						<mrow> \amp  \ \ \ \ \ \ \ \text{2. 0.5 kg of water at 60}^{\circ}\text{C}</mrow>
+						<mrow> \amp  \ \ \ \ \ \ \ \text{3. 0.4 kg of glass at 60}^{\circ}\text{C}</mrow>
+					</md>
+					<md>
+						<mrow> \amp \text{Final State: }</mrow>
+						<mrow> \amp  \ \ \ \ \ \ \ \text{1. 0.1 kg water at 38.7}^{\circ}\text{C}</mrow>
+						<mrow> \amp  \ \ \ \ \ \ \ \text{2. 0.5 kg of water at 38.7}^{\circ}\text{C}</mrow>
+						<mrow> \amp  \ \ \ \ \ \ \ \text{3. 0.4 kg of glass at 38.7}^{\circ}\text{C}</mrow>
+					</md>
+				</p>
+			</solution>
+			<solution> <title>(b) </title>
+				<p>
+					(b)
+					For each subsystem we can calculate the entropy change by infinitesimal steps in temperature, except for the step where the phase changes.  In the step of phase change the ratio of heat in to temperature will be accompanied by no change in the temperature.  The formula for the entropy change when a change in temperature occurs is
+					<me>
+						\Delta S = m\,c\,\ln\dfrac{T_2}{T_1}.
+					</me>  
+				</p>
+				<p>
+					We will just write the answer for the changes in entropy for each subsystem here.
+					<md>
+						<mrow> \amp  \Delta S_{ice} = m_i c_i \ln\left(\frac{0+273}{-10+273} \right) + \frac{m_i l}{0+273} </mrow>
+						<mrow> \amp \ \ \ \ \ \ \ \ \ \ \ \ \ \  +   m_i c_w  \ln\left(\frac{38.7+273}{0+273} \right) = 185\ \text{J/K}.</mrow>
+					</md>
+					<md>
+						<mrow> \amp   \Delta S_{w} = m_w c_w  \ln\left(\frac{38.7+273}{60+273} \right)
+						= -138\ \text{J/K}.</mrow>
+						<mrow> \amp   \Delta S_{g} =m_g c_g  \ln\left(\frac{38.7+273}{60+273} \right)=-22\ \text{J/K}.</mrow>
+					</md>
+					Summing up the changes in the subsystems we find the net change of entropy from the initial state to the final state.
+					<me>
+						\Delta S = \Delta S_{ice} +  \Delta S_{w}  + \Delta S_{g} = 25 \ \text{J/K}.
+					</me>
+				</p>
+
+
+
+
+			</solution>
+		</problem>
+
+		<problem><title> Entropy Change in an Irreversible Process of Heat Transfer Between Two Metal Blocks </title>
+			<statement>
+				<sidebyside widths="65% 35%">
+					<p>
+						A <m>50\text{-kg}</m> copper block at <m>400 \text{ K}</m> is placed in contact with a <m>75\text{-kg}</m> steel block at <m>300 \text{ K}</m> in an insulated environment from other objects as shown in the figure.  
+					</p>
+					<image source="./images/entropy/copper-steel-blocks.png" width="50%"/>
+				</sidebyside>
+				<p>
+					(a) Find the final temperature of the blocks.
+				</p>
+				<p>
+					(b) Find the change in the internal energy of each block. 
+				</p>
+				<p>
+					(c) (Calculus) Find the change in the entropy of each block. For Calculus-based course integrate <m>dS = m\,c\,dT/T</m>. For non-Calculus, use formula <m>\Delta S = m\,c\,\ln(T_2/T_1)</m>.
+				</p>
+				<p>
+					(d) Find the total entropy change. 
+				</p>
+				<p>
+					(e) Why is the total entropy change not equal to zero even when no heat is exchanged with the environment?
+				</p>				
+
+			</statement>
+			<hint> <p>  (a) Use calorimetry concepts, (b) Use <m>mc\Delta T</m>, (c) integrate <m>m\,c\,dT/T</m> or use formula <m>m\,c\,\ln(T_2/T_1)</m>, (d) Just use the results from (c), (e) Think reversible versus irreversible process. </p> </hint>
+			<answer> <p>  (a) <m>334\ \text{K}</m>, (b) <m>-1.3\ \text{MJ}</m>, <m>+1.3\ \text{MJ} </m>,  (c) <m>-3,500 \ \text{J/K} </m>, <m> 4,000 \ \text{J/K}</m>, (d) <m> 500 \ \text{J/K} </m>, (e) Irreversible process.</p> </answer>
+			<solution><title>(a)</title>
+				<p>
+					(a) For the sake of simplicity in presentation let us denote the quantities pertaining to the copper block by subscript 1 and those to the steel block by the subscript 2.
+				</p>
+				<p>
+					The volume change of the blocks will be very small. These expansions occur against atmospheric pressure, making the work negligible compared to the heat.  Therefore, from the first law we note that the change in the internal energy of each block is accounted for by the heat flow only.
+					<me>
+						\Delta U_{1} \approx Q_{\text{into }1}.
+					</me>
+					Since no change of phase takes place we can write the <m>Q</m> in terms of specific heat.  Although specific heat is a function of temperature, we will assume that the specific heat does not change much  so that
+					<me>
+						Q = m c \Delta T.
+					</me>
+					Let <m>T_f</m> be the final temperature of the two blocks.  Then, the change in the energy of the copper block will be:
+					<me>
+						\Delta U_{1} = m_{1} c_{1} (T_f-T_1).
+					</me>
+					Similarly, the change in the energy of the steel block will be
+					<me>
+						\Delta U_{2} = m_{2} c_{2} (T_f-T_2).
+					</me>
+					The total energy of the two blocks does not change since the two blocks do not interact with any other systems.  Therefore,
+					<me>
+						\Delta U_{1} + \Delta U_{2} = 0,
+					</me>
+					which gives
+					<me>
+						m_{1} c_{1} (T_f-T_1) + m_{2} c_{2} (T_f-T_2) = 0.
+					</me>
+					Solving for <m>T_f</m> we get
+					<me>
+						T_f = \frac{m_{1} c_{1} T_1 +  m_{2} c_{2} T_2 }{m_{1} c_{1}  +  m_{2} c_{2} }.
+					</me>
+					Now, we put in the following numbers.
+					<md>
+						<mrow> \amp m_1 = 50\ \text{kg},\ \ c_1 =  390\ \text{J/kg.K}, \ \ T_1 = 400\ \text{K}</mrow>
+						<mrow> \amp m_2 = 75\ \text{kg},\ \ c_2 = 500 \ \text{J/kg.K}, \ \ T_2 = 300\ \text{K}</mrow>
+					</md>
+					Therefore
+					<md>
+					<mrow> 
+						T_f  \amp = \frac{50\ \text{kg}\times 390\ \text{J/kg.K}\times 400\ \text{K} +  75\ \text{kg}\times 500 \ \text{J/kg.K}\times 300\ \text{K} }{50\ \text{kg}\times 390\ \text{J/kg.K} +  75\ \text{kg}\times 500 \ \text{J/kg.K} }</mrow>
+					<mrow> \amp = 334\ \text{K}. </mrow>
+					</md>
+				</p>
+			</solution>
+			<solution><title>(b)</title>
+				<p>
+					(b) The change in internal energy of the blocks are
+					<md>
+						<mrow> \amp  \Delta U_{1} = m_{1} c_{1} (T_f-T_1) = -1.3\ \text{MJ}.</mrow>
+						<mrow> \amp  \Delta U_{2} = m_{2} c_{2} (T_f-T_2) = +1.3\ \text{MJ}.</mrow>
+					</md>
+				</p>
+			</solution>
+			<solution><title>(c)</title>
+				<p>
+					(c) The change in the entropy of the copper block will be built from the formula for an infinitesimal change in the temperature of the block.
+					<me>
+						dS = \frac{dQ}{T} = \frac{mcdT}{T}.
+					</me>
+					Since <m>c</m>'s of the blocks are constant we obtain
+					<md>
+						<mrow> \amp  \Delta S_1 = m_1c_1\ln\left( \frac{T_f}{T_1}\right).</mrow>
+						<mrow> \amp  \Delta S_2 = m_2c_2\ln\left( \frac{T_f}{T_2}\right).</mrow>
+					</md>
+					Putting in the numbers we get
+					<md>
+						<mrow> \amp  \Delta S_1 =  -3,500 \ \text{J/K}.</mrow>
+						<mrow> \amp  \Delta S_2 =  +4,000\ \text{J/K}.</mrow>
+					</md>
+				</p>
+			</solution>
+			<solution><title>(d)</title>
+				<p>
+					(d) The total entropy change <m>  = (4,000  - 3500)\text{ J/K} = 500 \text{ J/K}</m>.
+				</p>
+			</solution>
+			<solution><title>(e)</title>
+				<p>
+					(e) The total change in the entropy of the copper and the steel blocks is not zero since the process from the initial state to the final state is an irreversible process.  The copper block was initially at a higher temperature and the steel block at a lower temperature.  Spontaneous process leads to heat loss from the higher temperature body, which corresponds to less reduction in the entropy of the higher-temperature body compared to the increase in the entropy of the lower temperature-body, which gains heat at a lower temperature.
+
+				</p>
+			</solution>
+		</problem>
+
+		<problem><title> (Calculus) Entropy Change in a Finite Size Baths of a Carnot Engine </title>
+			<statement>
+				<p>
+					Two water baths of mass 1000 kg each are to serve as heat source and heat sink for a Carnot engine. One of the baths is at temperature <m>T_1</m> and the other at temperature <m>T_2</m> with <m>T_1>T_2</m>.  
+				</p>
+				<p>
+					In each cycle the Carnot engine takes an infinitesimal amount of heat <m>dQ_1</m> from the higher temperature bath and produces an infinitesimal work <m>dW</m> and rejects the remainder <m>dQ_2</m> to the lower temperature reservoir.  
+				</p>
+				<p>
+					As a result, the temperature of the higher temperature reservoir decreases in time while the temperature of the lower  temperature bath increases until the two baths reach the same final temperature <m>T_f</m> at which point the engine stops producing any work.  
+				</p>
+				<p>
+					(a) Find <m>T_f</m> in terms of the initial temperatures <m>T_1</m> and <m>T_2</m> of the two baths. 
+				</p>
+				<p>
+					(b) Evaluate the total work produced. 
+				</p>
+				<p>
+					(c) Find the net change in the entropy.
+				</p>
+
+			</statement>
+			<hint> <p> (a) Examine an infinitesimal process in which temperatures change a little bit - in this step use the Carnot engine relation between heats transfered and absolute temperatures. (b) Set up work in an infinitesimal step, (c) Add up changes in the entropy of the baths as they go from their initial temperatures to the final temperature. </p> </hint>
+			<answer> <p>  (a) <m>T_f = \sqrt{T_1 T_2}</m>, (b) <m>mc ( T_1 + T_2 - 2\sqrt{T_1T_2})</m>, (c) 0. </p> </answer>
+			<solution><title>(a)</title> 
+				<p>
+					(a) The two baths together with the Carnot engine between the them do not form an isolated system since the work produced by the Carnot engine is sent to an outside body.  Therefore, the net energy of the three parts of the system is not conserved.  To find the final temperature of the baths we will examine the infintesimal processes in which the changes in the temperature of the baths takes place as shown in the figure below.
+				</p>
+				<p>
+					Let the higher-temperature bath be at the temperature <m>t_1</m> and the lower-temperature bath at the temperature <m>t_2</m>.  Consider infinitesimal changes in the two and the work <m>dW</m> produced during the infinitesimal process shown in the figure.
+				</p>
+				<image source="./images/entropy/entropy-in-finite-bath-carnot-engine.png" width="80%"/>
+
+				<p>
+					Since the engine between the baths is a Carnot engine the heat exchanged from the baths are proportional to their temperatures in the absolute scale.
+					<me>
+						\frac{m_1 c_1 (-dt_1)}{m_2 c_2 dt_2} = \frac{t_1}{t_2},
+					</me>
+					where the negative sign is included since <m>dt_1 \lt 0</m> and all other quantities are positive here. Separating the variables and integrating from the initial temperatures <m>T_1</m> and <m>T_2</m> to <m>t_1</m> and <m>t_2</m> we obtain
+					<me>
+						m_1 c_1 \ln\left( \frac{T_1}{t_1}\right) =  m_2 c_2 \ln\left( \frac{t_2}{T_2}\right).
+					</me> 
+					Rather than work with the general case, we specialize to the present case of  <m>m_1=m_2</m> and <m>c_1 = c_2</m> to obtain
+					<me>
+						\ln\left( \frac{T_1}{t_1}\right) =  \ln\left( \frac{t_2}{T_2}\right).
+					</me> 
+					This can be written as
+					<men xml:id="eq-ch20-pr-4-1">
+						t_1 t_2 = T_1 T_2.\label{}
+					</men>
+					For part (a), we apply this to the final temperature <m>T_f</m> of the two baths we obtain
+					<me>
+					T_f = \sqrt{T_1 T_2}
+					</me>
+					We will use Eq. <xref ref="eq-ch20-pr-4-1"/> to write <m>t_2</m> in terms of <m>t_1</m> in the following.
+				</p>
+			</solution>
+			<solution><title>(b)</title> 
+				<p>
+
+					(b)
+					Now, the work in the infinitesimal step is given by
+					<me>
+						dW = dQ_H - dQ_C = mc\left[ (-dt_1) - dt_2 \right]
+					</me>
+					Now using Eq. <xref ref="eq-ch20-pr-4-1"/>  we write this as
+					<me>
+						dW =   mc\left[ (-dt_1) +\frac{T_1T_2}{t_1^2} dt_1\right].
+					</me>
+					We can now integrate from <m>t_1 = T_1</m> to <m>t_1= T_f</m> to obtain the total work produced.
+					<md>
+						<mrow> W \amp = m c ( T_1 - T_f) - mcT_1T_2 \left[ \frac{1}{T_f} - \frac{1}{T_1}\right]</mrow>
+						<mrow> \amp = mc ( T_1 + T_2 - 2\sqrt{T_1T_2}). </mrow>
+					</md>
+				</p>
+			</solution>
+			<solution><title>(c)</title> 
+				<p>
+
+					(c) The entropy change of the Carnot engine is zero but for the materials of the baths may not be zero. Let us calculate it out and see what we get. The calculations for the baths will go similar to the copper and steel blocks worked out above.
+					<md>
+						<mrow> \amp \Delta S_1 = m c \ln \left( \frac{T_f}{T_1}\right).</mrow>
+						<mrow> \amp \Delta S_2 = m c \ln \left( \frac{T_f}{T_2}\right).</mrow>
+					</md>
+					Adding the two we get the net change in entropy
+					<me>
+						\Delta S = m c \ln \left( \frac{T_f^2}{T_1T_2}\right) = m c \ln \left( 1\right) = 0.
+					</me>
+					Since all processes in the given system occur infinitesimally and reversibly, the net entropy change is zero.
+				</p>
+
+
+
+			</solution>
+		</problem>
+
+
+
+ 
+
+
+
+	</subsection>
+
+
+</section>

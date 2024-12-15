@@ -1,0 +1,160 @@
+ <section xml:id="intensity-of-sound"><title>Intensity of Sound</title>
+	<introduction>
+		<p>
+			Intensity in a wave is average energy flow per unit time per unit cross-sectional area. Energy per unit time is power, therefore, we write intensity as average power <m>P_\text{av}</m> divided by cross-secional area <m>A_\perp</m>.
+			<me>
+				I = \frac{P_\text{av}}{A_\perp}.
+			</me>
+			For a dislacement plane wave <m>\psi(x,t) = D_0 \sin(k x - \omega t)</m> flowing in a medium of density <m>\rho</m>, the intensity turns out to be 
+			<men>
+				I = \frac{1}{2}\rho \frac{\omega^3}{k} D_0^2.
+			</men>
+			You could also write this in terms of the amplitude of the corresponding pressure wave by using <m>P_0 =k B D_0</m>, where <m>B</m> is the bulk modulus. With <m>v=\omega/k</m>, the wave speed, we will get the following for intensity in this case.
+			<me>
+				I = \frac{1}{2}\frac{\rho}{B^2} v^3 P_0^2.
+			</me> 
+			This can be further simplified by noting that wave speed depends on the properties of the media by
+			<me>
+				v = \sqrt{\frac{B}{\rho}}.
+			</me>
+			Therefore, intensity in terms of the pressure wave amplitude will be
+			<men>
+				I = \frac{1}{2 \rho v} P_0^2.
+			</men>
+			The unit of intensity is <m>\text{W/m}^2</m>. When we hear sound, the loudness of the sound is primarily associated with the intensity, but other factors also impact our perception of loudness of the sound. We can say that intensity is an objective measure of energy flow in a wave and loudness is a subjective measure. 
+		</p>
+		<p>
+			Often we are interested in comparing intensity of some sound with respect to another sound. This is done by defining another measure of intensity, called bel, which I will describe next.
+		</p>
+	</introduction>
+	<subsection> <title>Decibels and Sound Level</title>
+		<p>
+			The intensity of sound that a human can hear has a very wide range, from approximately <m>10^{-12}\text{ W/m}^2</m> to <m>1\text{ W/m}^2</m>. In properties that have such wide range of interest, it is often the practice to introduce logarithmic scale. In the case of sound, the logarithm scale called <term> decibel</term> which uses base-10 log. 
+			Since the argument of log has to be dimensionless, we define the unit of <m>\text{bel}</m> by the log of a ratio of intensity <m>I</m> to a reference intensity <m>I_0</m>.
+			<me>
+				\text{Intensity in bel} = \log_{10}\, \frac{I}{I_0}.
+			</me>
+			A more common unit is decibel. You may recall that a deci-something is <m>\frac{1}{10}</m> of that thing. When we express the intensity in decibels, we call it the <term>level of sound relative to the reference</term>. We denote the level by the Greek letter <m>\beta</m> (beta) and the unit by <m>dB</m>.
+			<men>
+				\beta (\text{in dB}) = 10\ \log_{10}\, \frac{I}{I_0}.
+			</men>
+			Of course, given dB level <m>\beta</m>, we can get intensity by inverting this.
+			<men>
+				I = I_0\times 10^{\beta/10}.
+			</men>
+			Most commonly, the reference intensity is taken to be the lowest threshold of The reference intensity for sound wave is <m>10^{-12}\text{ W/m}^2</m>, approximately the threshold of normal human hearing at <m>1000\text{ Hz}</m> of frequency. 
+			<me>
+				I_0 = 10^{-12}\text{ W/m}^2.
+			</me>
+			Thus, if the intensity of some sound is <m>1000</m>-times the reference, then it will have a decibel of 30. Here is how:
+			<me>
+				\beta (\text{in dB}) = 10\ \log_{10}\, 10^3 = 10\times 3 = 30.
+			</me>
+			Log base 10 picks out the power of 10. Therefore, log base 10 of <m>1000</m> is just <m>3</m>. The range of intensity for human hearing amounts to a range of <m>0</m> to <m>120\text{ dB}</m>. A useful information to remember is that <alert>a <m>3\text{-dB}</m> drop in intensity corresonds to intensity becoming half as much</alert> since we have
+			<me>
+				10\ \log_{10}\, \frac{1}{2} \approx - 3.
+			</me>
+
+		</p>
+		<p>
+			Since intensity of a wave is proportional to the square of the amplitude of the wave, we can express sound level in terms of amplitude as well. Let <m>A</m> and <m>A_0</m> be the amplitudes of the test wave and the reference wave respectively, i.e., 
+			<me>
+				I = a A^2,\ \ \ \text{and}\ \ \ I_0 = a A_0^2,
+			</me>
+			where <m>a</m> is some common factor which will cancel out in the ratio. this gives sound level <m>\beta</m> in <m>\text{dB}</m> to be
+			<me>
+				\beta (\text{in dB}) = 20\ \log_{10}\, \frac{A}{A_0}.
+			</me>
+			Beware of the change in multicaptive factor to the log. This 20 and 10 is a source of common confusion. 
+
+		</p>
+		<p>
+			High decibel level sound can cause hearing loss and injury. Centers for Disease Control (CDC) has noise chart in <url ref="https://www.cdc.gov/nceh/hearing_loss/what_noises_cause_hearing_loss.html"> CDC-hearing-table </url> to help you avoid hearing injuries.
+		</p>
+	</subsection>
+	<subsection>
+		<title> Perception of Sound Level</title>
+		<p>
+			If we hear a sound with intensity at <m>20\text{ dB}</m> and the sound of same frequency at <m>40\text{ dB}</m>, we can tell that the sound at <m>40\text{ dB}</m> is louder. But if you were to play two sounds at the same intensity of <m>20\text{ dB}</m>, but one of frequency <m>1000\text{ Hz}</m>, and another of frequency <m>100\text{ Hz}</m>, you would say that the <m>100\text{ Hz}</m> sound is louder even though the two sounds had the same intensity. 
+		</p>
+		<p>
+			Our perception of sound level does not purely depend on the intensity of sound. It also depends on the frequency. I have already pointed out that we can hear only those sound that are in the audible range, which extends from <m>20\text{ Hz}</m> to about <m>20\text{ kHz}</m>. Between, these two frequencies, our perception of loudness of sound varies with frequency as shown in <xref ref="fig-equal-loudness-contours-versus-frequency"/>, where the contours are labeled with the decibel of same loudness but of frequency <m>1000\text{ Hz}</m>. The labeled <m>\text{dB}</m> values are also called <m>\text{phon}</m>. You can use <url source="http://newt.phys.unsw.edu.au/jw/hearing.html">http://newt.phys.unsw.edu.au/jw/hearing.html </url> to find your own curve of equal loudness hearing. This website is a lot of fun a lot of fun.
+		</p>
+ 
+		<figure xml:id="fig-equal-loudness-contours-versus-frequency">
+			<caption>
+				Contours of sound of equal loudness (the red lines). The contours are labeled with the decibel of same loudness but of frequency <m>1000\text{ Hz}</m>. The labeled <m>\text{dB}</m> values are also called <m>\text{phon}</m>. From https://upload.wikimedia.org/wikipedia/commons/5/50/FletcherMunson_ELC.png.
+			</caption>
+			<image source="./images/sound/equal-loudness-contours-versus-frequency.png" width="100%"/>
+		</figure>
+	</subsection>
+
+	<exercise xml:id="exercise-Loudness-at-Different-Frequencies"><title>Loudness at Different Frequencies</title>
+
+		<statement>
+			<p>
+				A speaker is blasting sound at frequency <m>1000\text{ Hz}</m> at a <m> 60\text{ dB}</m> level. The frequency of the sound is changed to <m>10000\text{ Hz}</m>. What should be the decibel level now in order for the sound to appear to the same loudness level?
+			</p>
+		</statement>
+		<hint><p>Read the equal-loudness figure.</p></hint>
+		<answer><p><m>70\text{ dB}</m> </p></answer>
+		<solution>
+			<p>
+				Reading the diagram in <xref ref="fig-equal-loudness-contours-versus-frequency"/>, we find that the contour labeled <m> 60\text{ dB}</m> goes at <m>10000\text{ Hz}</m> corresponds to about <m>70\text{ dB}</m> of intensity. Therefore, you would need to have  <m>70\text{ dB}</m> of intensity to sound same loudness as  <m>60\text{ dB}</m> of intensity at <m>1000\text{ Hz}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="exercise-Displacement-Amplitude-from-Intensity-of-Sound"><title>Displacement and Pressure Amplitudes from Intensity of Sound</title>
+
+		<statement>
+			<p>
+				To barely hear a <m>2000\text{ Hz}</m> sound, you need intensity at about <m>-5\text{ dB}</m>. Suppose the density of air at room temperature and pressure is approximately <m>1.225\text{ kg/m}^3</m> and speed of sound is <m>343\text{ m/s}</m>.
+			</p>
+
+			<p>
+				(a) (i) What is the amplitude of the displacement of particles in the displacement wave? (ii) Compare this distance to the Bohr radius of a hydrogen atom, which is <m>5.29\times 10^{−11}\text{ m}</m>, by finding the ratio of displacement to the Bohr radius. (iii) Based on this, what you say about the sensitivity of the human hearing system?
+			</p>
+			<p>
+				(b) (i) Suppose the bulk modulus of air is <m>B=142\text{ kPa}</m>, what is the amplitude of the pressure wave? (ii) Compare this to the atmospheric pressure, which is around <m>1.1\times 10^{5}\text{ Pa}</m> by finding the ratio of the pressure amplitude and atmospheric pressure.
+			</p>
+		</statement>
+		<hint><p> (a) First get intensity in <m>\text{W/m}^2</m> and then use the formula of intensity in terms of <m>D_0</m>. (b) Use the relation between <m>D_0</m> and <m>P_0</m>. </p></hint>
+		<answer><p> (a) (i) <m>9.76\times 10^{-12}\text{ m} </m>, (ii) <m>0.18</m>, (iii) highly sensitive. (b) (i) <m>3.8 \times 10^{-8}\text{ Pa}</m>, (ii) <m>3.45\times 10^{-13}</m>. </p></answer>
+		<solution><title>(a)</title>
+			<p> (a) (i)
+				 Note that intensity is given in a relative intensity form. So, first we cnvert the intensity into <m>\text{W/m}^2</m>.
+				 <md>
+				 	<mrow> I \amp = I_0\times 10^{\beta/10}</mrow>
+				 	<mrow>  \amp = 10^{-12}\text{ W/m}^2\times 10^{-5/10} = 10^{-11.5}\text{ W/m}^2.</mrow>
+				 </md>
+				 Now, we use the relation between <m>D_0</m> and <m>I</m>, and <m>v=\omega/k</m> to get
+				 <md>
+				 	<mrow>D_0 \amp = \sqrt{  \frac{2I}{\rho} \frac{1} {v \omega^2} }</mrow>
+				 	<mrow> \amp = \sqrt{  \frac{2\times 10^{-11.5}}{1.225} \frac{1} {343\times 4\pi^2\times 2000^2 } } = 9.76\times 10^{-12}\text{ m}.</mrow>
+				 </md>
+			</p>
+			<p>
+				(ii) Let us denote Bohr radius by <m>a_0</m>. We notice that 
+				<me>
+					\frac{D_0}{a_0} = \frac{9.76\times 10^{-12}\text{ m}}{5.29\times 10^{−11}\text{ m}} = 0.18.
+				</me>
+				(iii) This shows that human hearing system is highly sensitive and can detect displacments even smaller than atomic size.
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p> (b) (i) 
+				We use relation <m>P_0 = k B D_0 = v B D_0/(2\pi f)</m> to get <m>P_0</m>.
+				<me>
+					P_0 = \frac{343 \times 142\times 10^3 \times  9.76\times 10^{-12} }{ 2\pi\times 2000} =  3.8 \times 10^{-8}\text{ Pa}.
+				</me>
+				(ii) Comparing this to atmospheric pressure we get
+				<me>
+					\frac{P_0}{P_\text{atm}} = 3.45\times 10^{-13}.
+				</me>
+				 
+			</p>
+		</solution>
+	</exercise>
+
+</section>

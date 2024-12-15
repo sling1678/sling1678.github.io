@@ -1,0 +1,335 @@
+<section xml:id="kinematics-Displacement"> <title>Displacement </title>
+<idx><h>Displacement</h><h>Vector</h></idx>
+	<introduction>
+		<p></p>
+		<p> <term>Displacement vector</term> 
+			refers to the change in position. By displacement we study overall movement of an object between two instants in time as illustrated in <xref ref="fig-displacement-vector-3d"/>.  
+	 	</p>
+	 	<p>
+	 		Let <m>\vec r_i</m> be the position 
+	 		at instant <m> t=t_i</m> and <m>\vec r_f</m> at instant <m> t=t_f</m>. From the vector triangle in the figure, it is clear that <m> \vec r_i + \Delta \vec r </m> equals <m>\vec r_f </m>, since both take you from <m> O </m> to the final location. Therefore, displacement vector, <m>\Delta \vec r</m> will be
+	 		<!-- Then, we say that the object has been displaced by the displacement vector,  denoted by <m> \Delta \vec r</m>, given by the difference of the two position vectors. -->  
+			<men> 
+				\Delta \vec r = \vec r_f - \vec r_i.		
+			</men>
+		</p>
+		<p>
+			An important thing to note about the displacement vector is that it does not depend on physical location of the origin since the subtraction in <m> \vec r_f - \vec r_i</m> cancels the location of the starting point for each vector out.
+		</p>
+
+
+		<figure xml:id="fig-displacement-vector-3d">
+			<caption> 
+				Displacement vector, <m>\Delta \vec r</m>.
+			</caption>		
+			<image source="./images/two-dim-motion/displacement-vector-3d.png" width="70%"/>
+		</figure>
+
+		<p>
+			It is easier to do the algebra of subtraction using the coordinate representations of the two position vectors. Let 	 	
+	 		<md>
+	 			<mrow> \vec r_i \amp = x_i\hat i + y_i\hat j +  z_i\hat k \equiv (x_i,\ y_i,\ z_i),</mrow>
+	 			<mrow> \vec r_f \amp = x_f\hat i + y_f\hat j +  z_f\hat k\equiv (x_f,\ y_f,\ z_f).</mrow>
+	 		</md>
+			Then, the displacment vector <m> \Delta \vec r</m> has the following components form.
+			<md>
+				<mrow> \Delta \vec r \amp = \left( x_f-x_i,\ y_f-y_i,\ z_f- z_i \right),</mrow>
+				<!-- <mrow>   \amp = \left(\Delta x,\ \Delta y,\ \Delta z \right),</mrow>
+				<mrow>   \amp =  \Delta x\, \hat i + \Delta y\, \hat j + \Delta z\, \hat k.</mrow> -->
+			</md>
+			Its convenient to write the changes in coordinates as <m> \Delta x,\ \Delta y,\ \Delta z</m>. 
+			<men>
+				\Delta \vec r = \left(\Delta x,\ \Delta y,\ \Delta z \right),
+			</men>
+			with
+			<me>
+				\Delta x = x_f-x_i,\ \ \Delta y = y_f-y_i,\ \ \Delta z = z_f- z_i.
+			</me>
+		</p>
+
+ 	</introduction>
+
+
+ 	
+
+	<example xml:id="ex-Displacement-Vector-for-One-dimensional-Motion"><title> Displacement Vector for 1D Motion </title>
+		<statement>
+			<p>
+				A box moves a distance of <m> 2\, \text{ m}</m> towards East. A coordinate system is chosen which has the <m> x </m> axis pointed towards East. (a) What are the components of the displacement vector in the given coordinate system?  (b) Write the displacement vector using unit vectors along the Cartesian axes.
+			</p>
+		</statement>
+		<!-- <hint> <p> Just <m> x </m> component is nonzero. </p></hint> -->
+		<answer> <p> 
+			(a) <m> \Delta x = 2 \text{ m}, \Delta y = 0, \Delta z = 0.</m> 
+			(b) <m>  \Delta \vec r = 2\text{ m }\hat i.</m>
+		</p> </answer>
+		<solution><title>a</title>
+			<p>
+				Suppose, the initial point is at the origin, then since the <m>x</m> axis is in the direction of movement, the final coordinate would be <m> (2\, \text{ m}, 0, 0)</m>.  Therefore, the <m> x</m>, <m>y</m>, and <m>z</m> components of the displacement vector are <m>2\text{ m}</m>, <m>0</m>, and <m>0</m> respectively.  
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				With <m> \hat i </m> the unit vector towards positive <m>x</m> axis, the displacement vector will be  <m>\Delta \vec r =  2\text{ m }\hat i</m>.
+			</p>
+		</solution>
+
+	</example>
+
+
+
+
+	<example xml:id="Calculating-Displacement-Vector"><title> Calculating Displacement Vector in a Plane </title>
+		<statement>
+			<p>
+				Your coordinates with respect to some Cartesian coordinate system is <m> (200 \text{ m}, 300\text{ m}) </m>. After you have biked for <m> 5 </m> minutes on a flat ground, your coordinates are <m> (-1000 \text{ m}, 1300\text{ m}) </m>.  What is your displacement during the <m> 5 </m> minutes? Present your answer in (a) component form, and (b) magnitude-direction form with angle to be given with respect to <m> x </m> axis.
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Use definitions. </p> </hint> -->
+		<answer> <p> (a) <m> \left(-1200\text{ m}, 1000\text{ m} \right)</m>,
+		             (b)  <m> 1562\text{ m}</m>, <m>39.8^{\circ}</m> clockwise  from the negative <m> x </m> axis.  </p> </answer>
+		<solution><title>a</title>
+			<p> 
+				Note: I will leave units out from calculations, but put the units back at the end. 
+				We note that the motion is in the <m> xy </m> plane with <m> z_i = 0 = z_f </m>. With that we find the displacement vector's components to be
+				<me>
+					\Delta \vec r = \left(-1000-200, 1300-300 \right) = \left(-1200\text{ m}, 1000\text{ m} \right).
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p> 
+				We convert component form to magnitude-angle forms by the same formulas that relate <m> (x,y) </m> to <m> (r, \theta)</m>.
+				<md>
+					<mrow> \amp \Delta r =\sqrt{1200^2 + 1000^2} = 1562\text{ m}.</mrow>
+					<mrow> \amp \theta = \tan^{-1}\left( \dfrac{1000}{-1200}\right) = - 39.8^{\circ}</mrow>
+				</md>
+				Since the point <m> (-1200, 1000) </m> is in the second quadrant. Therefore, the direction is <m>39.8^{\circ}</m> clockwise (since negative value) from the negative <m> x </m> axis.
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="ex-Direction-of-Displacement-Vector-in-a-Plane-from-Components"><title> Direction of Displacement Vector in a Plane from Components</title>
+		<statement>
+			<p>
+				You walk around in a room, and, after some time, the  <alert> change in your coordinates</alert> with respect to a particular Cartesian coordinate system is given as <m> ( 3\, \text{ m}, 4\, \text{ m}, 0) </m>. What is your displacement? Find both magnitude and direction.
+			</p>
+		</statement>
+
+		<!-- <hint> <p> Transform components-form to polar form.</p> </hint> -->
+		<answer> <p> <m> 5\text{ m} </m>, <m> 53^{\circ}</m> counterclockwise from positive <m>x</m> axis. </p> </answer>
+
+		<solution>
+			<p>
+				Note that the given information allows you to obtain the components of the displacement vector since we are already told that <m> \Delta x = 3\, \text{ m}</m> and  <m> \Delta y = 4\, \text{ m}</m>, and <m> \Delta z = 0</m>. This gives the <alert> magnitude </alert> of the displacment to be
+				<me>
+					d = \sqrt{(\Delta x)^2 +  (\Delta y)^2 + (\Delta z)^2} = \sqrt{3^2 +  4^2} = 5. 
+				</me>
+				Putting the units back, we find the magnitude of displacement = <m> 5\text{ m} </m>.
+			</p>
+			<p>
+				Since only <m>x</m> and <m>y</m> components of the displacment vector are non-zero, the vector is in the <m>xy</m>-plane. Therefore, we can specify the direction by the angle the vector makes with the <m> x </m> axis alone. This can be obtained by the arctangent formula.
+				<me>
+					\theta = \arctan{\left(\dfrac{4}{3}\right)} \approx 53^{\circ}.
+				</me>
+				This says that the direction of the vector is in the <m>xy</m>-plane of the gives coordinate system at an angle counter-clockwise from the positive <m>x</m> axis.  
+			</p>
+				<p><alert> Direction requires description. </alert>
+					Note again that the angle itself is not the direction - if you choose to give the angle with respect to the positive <m> y </m> axis, the value will be <m> -37^{\circ} </m> for the same direction in the plane.  So, the value of angle, in itself, is not the full information about the direction - you need to state what the angle means in the real space. Minus in <m> -37^{\circ} </m> refers to the clockwise direction as you look down from the positive <m> z </m> axis.
+				</p>
+			 
+			
+		</solution>
+	</example>
+
+
+
+
+	<example xml:id="ex-Adding-Displacement-Vectors"><title>Adding Displacement Vectors </title>
+		<statement>
+			<p>
+				You travel from your home to the base of a mountain, and then, climb the mountain. The coordinates of your home, base of the mountain and the top of the mountain in a particular coordinate system are: home <m> (0,0,0) </m>, base <m> (4000 \text{ m}, 3000 \text{ m}, 0)</m>, peak <m>(4500 \text{ m}, 2500 \text{ m}, 800 \text{ m} )</m>.
+			</p> 
+			<image source="./images/two-dim-motion/ex-mountain-peak.png" width="60%"/>
+			 
+			<p>
+				Find the magnitude and direction of the net displacement from your home to the peak (a) directly, and (b) by adding the two displacements, from home to the base and from base to the peak. (c) Draw a vector diagram to show the relationship between three displacements: from home to the base, from base to the peak, and from home to the peak.
+			</p>
+		</statement>
+		<!-- <hint> <p>  (a) Directly means use the end points. </p> </hint> -->
+		<answer> <p> (a) and (b) <m>5210\text{ m}</m>.  </p> </answer>		
+
+		<solution> <title> a </title>
+			<p>
+				<alert> To find the displacement directly</alert>, we can use the coordinates of the home and the peak.  We will suppress writing units in calculations and put the units back in at the end. The net displacement written in terms of the components along the Cartesian axes are
+				<md>
+					<mrow> \Delta \vec r_{\text{net}} \amp = (x_f-x_i, y_f-y_i, z_f-z_i) </mrow>
+					<mrow> \amp = [(4500-0), (2500-0), (800-0)] = (4500, 2500, 800). </mrow>
+				</md>
+				Therefore, the components of the displacement vectors are
+				<me>
+					\Delta x = 4500\text{ m}, \Delta y = 2500\text{ m}, \Delta z = 800\text{ m}.
+				</me>
+				<alert> Magnitude. </alert>
+				From these components, we can determine the magnitude <m> d_{\text{net}}</m>.
+				<md>
+					<mrow> d \amp = \sqrt{(\Delta x)^2 + (\Delta y)^2 + (\Delta z)^2}</mrow>
+					<mrow>   \amp = \sqrt{4500^2 + 2500^2 + 800^2} \approx 5210 </mrow>
+				</md>
+				Therefore, the magnitude of the net displacment from home to the peak is <m> 5210\text{ m} </m>.
+			</p>
+			<p><alert> Direction for 3-dimensional vector.</alert> 
+				Unlike the two-dimensional situaiton, now we need to specify two angles. We will choose the spherical coordinate angles, which are the polar angle <m> \theta </m> with respect to the positive <m> z </m> axis, and azimuth angle <m> \phi </m> that the projection of the vector in the <m>xy</m>-plane makes with the <m> x </m> axis.
+				<md>
+					<mrow> \theta \amp = \arctan\left( \dfrac{(\Delta x)^2 + (\Delta y)^2}{\sqrt{(\Delta x)^2 + (\Delta y)^2 + (\Delta z)^2}} \right) </mrow>
+					<mrow>        \amp = \arctan\left( \dfrac{\sqrt{4500^2 + 2500^2}}{5210} \right) \approx 81^{\circ}</mrow>
+					<mrow> \phi \amp = \arctan\left( \dfrac{\Delta y}{\Delta x} \right) </mrow>
+					<mrow>  \amp = \arctan{\left(\frac{2500}{4500}\right)} \approx 29^{\circ}</mrow>
+				</md>
+				Since, the polar angle and azimuthal angles are in the first octant, we do not need to make any adjustments.  The angles can be read off to say that the direction of the projection of the peak in the <m>xy</m> plane is <m> \approx 29^{\circ} </m> counterclockwise from the positive <m> x </m> axis and and <m> \approx 81^{\circ} </m> towards the <m>xy</m>-plane from the <m> z </m> axis.
+				 
+					<p> <alert> Other ways of specifying direction. </alert>
+						One can also find the direction of a vector by working out two of the angles, <m> \theta_x </m>, <m> \theta_y </m>, and <m> \theta_z </m>, the vector makes with the <m> x </m>, <m> y </m>, and <m> z </m> axes respectively by using the direction cosines.  
+						<md>
+							<mrow> \amp \cos\, \theta_x = \dfrac{\Delta x}{ \sqrt{(\Delta x)^2 + (\Delta y)^2 + (\Delta z)^2} }</mrow>
+							<mrow> \amp \cos\, \theta_y = \dfrac{\Delta y}{ \sqrt{(\Delta x)^2 + (\Delta y)^2 + (\Delta z)^2} }</mrow>
+							<mrow> \amp \cos\, \theta_z = \dfrac{\Delta z}{ \sqrt{(\Delta x)^2 + (\Delta y)^2 + (\Delta z)^2} }</mrow>
+						</md>
+					</p>
+				 
+			</p>
+			
+		</solution>
+
+		<solution> <title> b </title>
+			<p> 
+				Let us use subscripts 1, 2, and 3 to denote home, base, and peak.
+				The two displacements from home to base and from base to the peak are
+				<md>
+					<mrow> \Delta \vec r_{12} \amp = [(4000-0), (3000-0), (0-0)]  </mrow>
+					<mrow> \Delta \vec r_{23} \amp = [(4500-4000), (2500-3000), (800-0)]  </mrow>
+				</md>
+	 
+				The vector equation for the net displacement <m> \Delta \vec r_{text{net}} </m> is
+				<md>
+					<mrow> \Delta \vec r_{text{net}} \amp = \Delta\vec r_{12} + \Delta\vec r_{23} </mrow>
+					<mrow> 		\amp =  [ 4000 + 500,  3000 -500,  0 + 800] </mrow>
+					<mrow>      \amp = (4500, 2500, 800  )</mrow>
+				</md>
+				This is the same vector as found in part (a) by using direct method between home and the peak. 
+			</p>
+
+		</solution>
+
+		<solution><title>c</title>
+			<p>
+				The figure for this part is in <xref ref="fig-problem-home-to-mountain"/>
+			</p>
+			<figure xml:id="fig-problem-home-to-mountain">
+				<caption>
+					Figure for <xref ref="ex-Adding-Displacement-Vectors"/>(c).
+				</caption>
+				<image source="./images/two-dim-motion/problem-home-to-mountain.png" width="80%"/>
+			</figure>
+			 
+
+		</solution>
+	</example>
+
+<exercises>
+	<exercise xml:id="Finding-the-Final-Position-from-Initial-Position-and-Displacement"><title> Finding the Final Position from Initial Position and Displacement </title>
+		<statement>
+			<p>
+				A particle moves a distance of <m> 5.5\text{ mm} </m> parallel to the <m> y </m> in the direction of positive <m> y </m> axis over a duration of <m> 1.5\, \mu\text{s}</m> from a position of coordinates <m> (10.0\text{ mm}, 9.5\text{ mm})  </m> in the <m>xy</m>-plane. At what position did the particle end up?
+			</p>
+
+		</statement>
+		<hint> <p>  <m> \vec r_f = \vec r_i +\Delta\vec r</m>. </p> </hint>
+		<answer> <p> <m> \vec r_f = (10.0\text{ mm}, 15.0\text{ mm}) </m>, or, <m> 18.0\text{ mm}</m> in <m> 56.3^{\circ}</m> counterclockwise from the positive <m> x </m> axis. </p> </answer>
+		<solution> 
+			<p>
+				The problem statement gives us the initial position and the displacement, and we need to find the final position.
+				<me>
+					\Delta\vec r = \vec r_f - \vec r_i\Longrightarrow \vec r_f = \vec r_i +\Delta\vec r.
+				</me>
+				We can add the two vectors on the right side by writing them in component form.
+				<me> 
+					\vec r_i = (10.0\text{ mm}, 9.5\text{ mm}),\ \ \Delta\vec r =  (0, 5.5\text{ mm}).
+				</me>
+				Therefore,
+				<me>
+					\vec r_f = (10.0\text{ mm}, 15.0\text{ mm})
+				</me>
+				We can write this in the magnitude-direction as well. 
+				<md>
+					<mrow> \amp r_f = \sqrt{10^2 + 15^2} = 18.0\text{ mm}.</mrow>
+					<mrow> \amp \theta = \tan^{-1}(15/10) = 56.3^{\circ}.</mrow>
+				</md>
+				Since the point <m> (10.0\text{ mm}, 15.0\text{ mm}) </m> is in the first quadrant, the angle is the counterclockwise direction from the positive <m> x </m> axis.
+
+			</p>
+		</solution>
+	</exercise>
+ 
+
+	<exercise xml:id="Finding-the-Initial-Position-from-the-Final-Position-and-Displacement"><title> Finding the Initial Position from the Final Position and Displacement </title>
+		<statement>
+			<p>
+				A boxer's fist moved a distance of <m> 50 \text{ cm}</m> parallel to the <m> x </m> axis but in the opposite direction to the direction of the positive <m> x </m> axis. The punch landed on the face of his opponent, where the coordinates is <m> (0, 30\text{ cm}, 168\text{ cm}) </m>. Where was the boxer's fist before he launched the punch?
+			</p>
+
+		</statement>
+		<hint> <p>  <m> \vec r_i = \vec r_f -\Delta\vec r</m>. </p> </hint>
+		<answer> <p> <m> \vec r_i =  (50 \text{ cm}, 30\text{ cm}, 168\text{ cm})</m>. </p> </answer>
+		<solution> 
+			<p>
+				The problem statement gives us the final position and the displacement, and we need to find the initial position.
+				<me>
+					\Delta\vec r = \vec r_f - \vec r_i\Longrightarrow \vec r_i = \vec r_f - \Delta\vec r.
+				</me>
+				We can perform the subtraction on the right side by writing the vectors in component form.
+				<me> 
+					\vec r_f = (0, 30\text{ cm}, 168\text{ cm}) ,\ \ \Delta\vec r =  (-50 \text{ cm}, 0, 0).
+				</me>
+				Therefore,
+				<me>
+					\vec r_i = (50 \text{ cm}, 30\text{ cm}, 168\text{ cm}).
+				</me>
+				If we wish to write this as magnitude and direction, we would need two angles for the direction. I wouldn't do that here.
+
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="Practice-with-a-Friend-How-high-is-the-mountain"><title>Practice with a Friend: How high is the mountain?</title>
+
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					The angles subtended by the direct sight to the mountain top from home and anothe location a distanc <m>D</m> closer to the mountain are <m>\theta_1</m> and <m>\theta_2</m>, respectively, as shown in <xref ref="fig-height_of_a_mountain"/>. Find the height of the mountain. 
+				</p>
+				<p></p>
+
+				<figure xml:id="fig-height_of_a_mountain">
+					<caption>For <xref ref="Practice-with-a-Friend-How-high-is-the-mountain"/>  </caption>
+					<image source="./images/two-dim-motion/height_of_a_mountain.png" width="80%"/>
+					
+				</figure>
+			</sidebyside>
+			<p>
+				Answer check: Your answer will be in terms of <m>D,\, \theta_1, \,\theta_2</m>. For <m>D=5.0\text{ km}</m>, <m>\theta_1=10^\circ</m>, and <m>\theta_2=15^\circ</m>, <m>H=2.6\text{ km}</m>.
+			</p>
+		</statement>
+ 
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+	</exercises>
+
+</section>

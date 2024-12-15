@@ -1,0 +1,240 @@
+<section xml:id="Velocity-from-Acceleration"> <title>Velocity from Acceleration</title><idx><h>Velocity</h><h>From Acceleration</h></idx>
+	<introduction>
+		<!-- <p>
+			Often acceleration at each instant of an interval is known, and we want know the change in velocity during that interval. Just like getting change in position from velocity, this is also an integration or area-under-the-curve problem.  
+		</p> -->
+		<p>
+			Acceleration and velocity have the same mathematical relation as velocity and position do. 
+			<men>
+				\vec a = \frac{d\vec v}{dt }\ \ \leftrightarrow \ \ \vec v = \frac{d\vec r}{dt }.
+			</men>
+			Therefore, as in the last section <xref ref="kinematics-Displacement-from-Velocity"/>, formally, change in velocity vector will be related to the integration of acceleration over time.
+			<men>
+				\vec v_f - \vec v_i = \int_{t_i}^{t_f} \vec a(t) dt.
+			</men>
+			This formal relation can be given more calculational interpretation when we look at the components of this equation.
+			<mdn>
+				<mrow xml:id="change-in-vx-equal-integral-of-ax"> \amp v_{f,x} - v_{i,x} = \int_{t_i}^{t_f} a_x(t) dt, </mrow>
+				<mrow> \amp v_{f,y} - v_{i,y} = \int_{t_i}^{t_f} a_y(t) dt, </mrow>
+				<mrow> \amp v_{f,z} - v_{i,z} = \int_{t_i}^{t_f} a_z(t) dt. </mrow>
+			</mdn>
+			The right side of these equations for components, can be computed from plots of corresponding acceleration component versus time by using the "area-under-plot" and "negative-area-over-plot" interpretation of an integral.
+
+		</p>
+
+	</introduction>
+
+
+	<example><title>Area under the Acceleration Plot </title>
+
+		<sidebyside widths="55% 5% 40%">
+			<p>
+				We can understand Eq. <xref ref="change-in-vx-equal-integral-of-ax"/> in a plot of <m>a_x</m> vs <m>t</m> as well. Since <m>a_x</m> is constant, the product <m>a_x \Delta t</m> is just the area under the plot of <m>a_x</m> vs <m>t</m>. This gives us following general rule, which also applies to varying <m>a_x</m>.
+				<md>
+					<mrow> \Delta v_x \amp = \text{ Area under }a_x\text{ vs } t,</mrow>
+					<mrow>   \amp =  5\text{ m/s}^2 \times 2\text{ s} = 10 \text{ m/s}.</mrow>
+				</md>
+				
+			</p>
+			<p></p>
+			<image source="./images/two-dim-motion/vx-from-ax-under-the-curve.png"/>
+		</sidebyside>
+		<p>
+			If <m>a_x</m> is negative, then this would be area <alert>above</alert> the plot since <m>a_x=0</m> line would be above the plot. In this case area will be negative.
+		</p>
+		<p>
+			The procedure clearly extends to <m> y </m> and <m> z </m> components as well. Once we know the change along different directions, we can combine the components to obtain the magnitude and direction of <m>\Delta \vec v</m>, as usual for vector quantities.
+		</p>
+
+	</example>
+
+<!-- 	<subsection><title>Area under the Acceleration Plot </title>
+
+		<p>
+			Say, you have a constant acceleration in the <m>x</m> direction of <m> a_{x} = 5\text{ m/s}^2</m>. How much will <m>v_x</m> change in <m>\Delta t = 2\text{ s}</m> interval? Analytically, you will do the following.
+			<me>
+				\Delta v_x = a_x \Delta t = 5\text{ m/s}^2 \times 2\text{ s} = 10 \text{ m/s}.
+			</me>
+		</p>
+
+		
+
+
+		<sidebyside widths="55% 5% 40%">
+			<p>
+				We can understand this in a plot of <m>a_x</m> vs <m>t</m> as well. Since <m>a_x</m> is constant, the product <m>a_x \Delta t</m> is just the area under the plot of <m>a_x</m> vs <m>t</m>. This gives us following general rule, which also applies to varying <m>a_x</m>.
+				<md>
+					<mrow> \Delta v_x \amp = \text{ Area under }a_x\text{ vs } t,</mrow>
+					<mrow>   \amp =  5\text{ m/s}^2 \times 2\text{ s} = 10 \text{ m/s}.</mrow>
+				</md>
+				
+			</p>
+			<p></p>
+			<image source="./images/two-dim-motion/vx-from-ax-under-the-curve.png"/>
+		</sidebyside>
+		<p>
+			If <m>a_x</m> is negative, then this would be area <alert>above</alert> the plot since <m>a_x=0</m> line would be above the plot. In this case area will be negative.
+		</p>
+
+		<p>
+			The procedure clearly extends to <m> y </m> and <m> z </m> components as well. Once we know the change along different directions, we can combine the components to obtain the magnitude and direction of <m>\Delta \vec v</m>, as usual for vector quantities.
+		</p>	 
+	</subsection> -->
+
+	<example xml:id="Velocity-from-Acceleration-Areas-Under-Curve"><title> Velocity from Acceleration - Areas Under Curve </title>
+		<statement>
+			<p> 
+				<xref ref="fig-checkpoint-dv-from-ax" /> below shows acceleration component <m> a_x </m> of a ball at different times. The <m>x</m> component of the velocity of the ball at <m> t = 0 </m> was <m> v_x = 3 \text{ m/s}</m>. Find its <m> v_x </m> at the following instants (a) <m> t = 5\text{ sec}</m>, and (b) <m> t = 10\text{ sec}</m>.
+			</p>
+			<figure xml:id="fig-checkpoint-dv-from-ax">
+				<caption>
+					Figure for <xref ref="Velocity-from-Acceleration-Areas-Under-Curve" />.
+				</caption>
+				<image source= "./images/two-dim-motion/checkpoint-dv-from-ax.png" width="60%"/>
+			</figure>
+
+		</statement>
+		<!-- <hint> <p> Use area to get change and then add change to intial value.  </p> </hint> -->
+		<answer> <p>  (a) <m> 10.5\text{ m/s}</m>, (b) <m> 0.5 \text{ m/s}</m>.</p> </answer>
+		<solution><title>a</title> 
+			<p>
+				We will find the change in <m> v_x </m> during <m> t=0</m> to <m> t=5\text{ sec}</m>. Then we will get <m> v_x </m> at <m> t=5\text{ sec}</m> by adding this change to the <m> v_x </m> at <m> t=0</m>.
+				<me>
+					 v_x(\text{at } t=5\text{ sec}) = v_x(\text{at } t=0) + \Delta v_x, 
+				</me>
+				where
+				<me>
+					\Delta v_x = \text{Area under the curve of }a_x \text{ between }t=0\text{ and }t=5.
+				</me>
+				From the plot we find this to give
+				<me>
+					\Delta v_x = \dfrac{1}{2}\times 5\text{ s} \times 3 \text{ m/s}^2 = 7.5\text{ m/s}.
+				</me>
+				Therefore,
+				<me>
+					v_x(\text{at } t=5\text{ sec}) = 3\text{ m/s} + 7.5\text{ m/s} = 10.5\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+				We can similarly add to this the area between <m> t=5\text{ sec}</m> and <m> t=10\text{ s}</m> to obtain <m>v_x</m> at <m>10\text{ s}</m>. Now the <m> \Delta v_x </m> is
+				<me>
+					\Delta v_x = 5\text{ s}\times (-2\text{ m/s}^2) = -10\text{ m/s}.
+				</me>
+				Therefore, <m> v_x </m> at <m> t=10\text{ s}</m> is
+				<me>
+					v_x(\text{at } t=10\text{ s}) = 10.5\text{ m/s} + (-10\text{ m/s}) = 0.5 \text{ m/s}.
+				</me>
+
+
+			</p>
+		</solution>
+	</example>
+
+	<exercises>
+	<exercise xml:id="ex-Variable-Acceleration-Area-Under-the-Curve-1"><title> Velocity of a Box from Area Under Curve Method Applied to  Varying Acceleration</title>
+		<statement>
+			<p>
+				A box slides on a floor in a straight path such that the magnitude of the acceleration is not constant in time.  The data is collected with respect to a Cartesian axis system in which only the  <m>a_x</m> is non-zero.  The <m>x</m>-component of the acceleration is shown in <xref ref="fig-exer-var-accln-4"/>.  As the figure shows, the direction of the acceleration is always pointed towards positive <m>x</m>-axis, but the magnitude varies with time.
+			</p>
+			<p>
+				(a) Find the velocity of the box at <m>t = 4</m> sec if it starts out at rest at <m>t = 0</m>.
+			</p>
+			<p>
+				(b) Find the velocity of the box at <m>t = 10</m> sec.
+			</p>
+			<figure xml:id="fig-exer-var-accln-4">
+				<caption>
+					Figure for <xref ref="ex-Variable-Acceleration-Area-Under-the-Curve-1" />
+				</caption>
+				<image source="./images/two-dim-motion/exer-var-accln-4.png" width="70%"/>
+			</figure>
+		</statement>
+		<hint> <p> Area under the curve will give <m>\Delta v_x</m>.  </p> </hint>
+		<answer> <p> (a) <m>6\text{ m/s}</m>, (b) <m>15\text{ m/s}</m>.  </p> </answer>
+		<solution><title>a</title>
+			<p>
+				We work with the duration <m>t = 0</m> to  <m>t = 4\text{ sec}</m>. The area under the curve is just area of a triangle of base <m>4\text{ sec}</m> and height <m>3\text{ m/s}^2</m>. Therefore,
+				<me>
+					v_f = v_i + \Delta v = 0 + \dfrac{1}{2}\times 4\text{ s}\times 3\text{ m/s}^2 = 6\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				We work with the duration <m>t = 0</m> to  <m>t = 10\text{ sec}</m>. The area under the curve is just area of a triangle of base <m>10\text{ sec}</m> and height <m>3\text{ m/s}^2</m>. Therefore,
+				<me>
+					v_f = v_i + \Delta v = 0 + \dfrac{1}{2}\times 10\text{ s}\times 3\text{ m/s}^2 = 15\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Variable-Acceleration-Area-Under-the-Curve-2" ><title> Velocity of a Hockey Puck from Area Under Curve Method Applied to Varying Acceleration</title>
+		<statement>
+			<p>
+				A hockey puck is shot on a surface that has different roughness at different places. As a result its acceleration  varies from place to place.  By placing the <m>x</m>-axis on the line of motion of the puck, we cast the acceleration vector in terms of its <m>x</m>-component which can be plotted with time.  Note the acceleration vector cannot be plotted, since they are not ordinary functions; only the components can be plotted. The resulting <m>x</m>-component of the acceleration is shown <xref ref="fig-exer-var-accln-5"/>. The <m>y</m>  and <m>z</m>-components of the acceleration are zero.  The puck has a velocity  at <m>t = 5</m> sec of <m>2</m> m/s towards the positive <m>x</m> axis.  Find the initial velocity of the puck at <m>t = 0</m>.
+			</p>
+			<figure xml:id="fig-exer-var-accln-5">
+				<caption>
+					Figure for <xref ref="ex-Variable-Acceleration-Area-Under-the-Curve-2"/>.
+				</caption>
+				<image source="./images/two-dim-motion/exer-var-accln-5.png" width="70%"/>
+			</figure>
+		</statement>
+		<hint> <p> Area under the curve will give <m>\Delta v_x</m>.  </p> </hint>
+		<answer> <p> <m>21.75\text{ m/s}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The areas we need are shaded in <xref ref="fig-exer-var-accln-5-areas"/>. The area will be negative here.
+			</p>
+			<figure xml:id="fig-exer-var-accln-5-areas">
+				<caption>
+					Figure for solution of <xref ref="ex-Variable-Acceleration-Area-Under-the-Curve-2"/>.
+				</caption>
+			
+				<image source="./images/two-dim-motion/exer-var-accln-5-areas.png" width="70%"/>
+			</figure>
+			<p>
+				I found the area to be
+				<md>
+					<mrow>\Delta v \amp = -4\times 3.5  + (-1 )\times 1.5+ \dfrac{(-6+4) \times 2}{2} + \dfrac{(-4+1)\times 1.5}{2} </mrow>
+					<mrow> \amp =  -19.75\text{ m/s}. </mrow>
+				</md>
+				Therefore,
+				<me>
+					v_f - v_i = \Delta v,
+				</me>
+				gives
+				<me>
+					v_i = v_f - \Delta v = 2\text{ m/s} - ( -19.75\text{ m/s}) = 21.75\text{ m/s}.
+				</me>
+			</p>
+			
+		</solution>
+	</exercise> 
+
+
+	</exercises>
+
+
+
+	<!-- <subsection><title>(Calculus) Integrating the Acceleration </title>
+		<p>
+			Along the <m> x </m> component of the motion the relation between velocity and acceleration will be
+			<men xml:id="eq-velocity-from-acceleration-x-fundamental">
+				\dfrac{dv_x}{dt} = a_x \Longleftrightarrow v_{f,x} - v_{i,x} = \int_{t_i}^{t_f}\, a_x(t)\, dt.
+			</men>	
+			Applying this similarly to <m> y </m> and <m> z </m> motions gives us changes in <m> v_y </m> and <m> v_z </m>.  		
+		</p>
+		<p>
+			The integral in the <m> x </m> motion can be evaluated either by integrating an analytic expression of <m> a_x</m> or by the <q> area under the curve method</q> of evaluating integrals, discussed in the displacement from velocity section.
+		</p>
+	</subsection> -->
+
+
+
+
+</section>

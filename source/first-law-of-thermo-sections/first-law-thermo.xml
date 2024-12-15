@@ -1,0 +1,416 @@
+<section xml:id="First-Law-of-Thermodynamics-file-2"><title> First Law of Thermodynamics</title>
+
+<!-- 	<introduction>
+		<p>
+			We have previously studied conservation of energy in conservative mechanical systems. In these sytems, the forces among the particles are conservative forces, which excludes systems with viscous forces. There, the energy of a system, defined by the sum of kinetic energies of all particles and potential energy of interaction between the particles is a constant of time.
+			<men xml:id="eq-energy-conservative-no-external-force">
+				E = \sum_j K_j + \sum_{jk\text{-pairs}} U_{jk} = \text{constant, since conservative system.}
+			</men>
+			We will call this energy internal energy of the system and denote by
+			<men>
+				E^\text{int} = \sum_j K_j + \sum_{jk\text{-pairs}} U_{jk}.
+			</men>
+		</p>
+		<p>
+			According to the principle of the conservation of energy, the energy of a conservative system can only be changed by the energy exchanged with the environment. Suppose, a conservative system  has energy <m> E_i </m> at intant <m>t_i</m>, and let <m> W_\text{if}^\text{ext}</m> be the amount of work done on the system by the external force during <m> t_i </m> to <m> t_f</m>, changing the energy of the sytem to <m> E_f</m>  at <m>t_f</m>.  Then, by the principle of conservation of energy,
+			<men xml:id="eq-energy-conservative-with-external-force">
+				E_f - E_i = W_\text{if}^\text{ext}.
+			</men>
+		</p>
+		<p>
+			If external force was also conservative, we express the negative of the work  as difference in potential energy due to that force.
+			<men>
+				W_\text{if}^\text{ext, conservative} = U_i^\text{ext} - U_f^\text{ext}.
+			</men>
+			We redefine the energy of the system by including these with the energy in Eq. <xref ref="eq-energy-conservative-no-external-force"/>.
+			<men>
+				E = E^\text{int} +  U^\text{ext}.
+			</men>
+		</p>
+		<p>
+			If some of the work by the environment in Eq. <xref ref="eq-energy-conservative-with-external-force"/> is by conservative and the rest by the nonconservative forces, the statement of conservation of energy with redefined energy becomes.
+			<men xml:id="eq-energy-conservative-with-external-force-non-cons">
+				E_f - E_i = W_\text{if}^\text{ext,non-conservative}.
+			</men>
+		</p>
+
+ 
+	</introduction> -->
+
+
+	<subsection><title> Energy Change of a Thermally Insualted System</title>
+		<p>
+			To get oriented with the energy considerations in a thermodynamic system, let us consider a simple system of a gas contained in a cylinder with movable piston as in <xref ref="fig-energy-in-adiabatic-work"/>. Suppose the cylinder and piston are <alert> thermally insulated</alert> from the environment. 
+		</p>
+
+
+		<figure xml:id="fig-energy-in-adiabatic-work">
+			<caption>
+				The gas on the left side expands in a thermally insulated environment when piston moves against the spring. Energy is transferred between gas and spring.
+			</caption>
+			<image source="./images/first-law-of-thermo/energy-in-adiabatic-work.png" width="50%"/>
+		</figure>
+
+		<p>
+			Suppose the force on the piston by the spring is infinitesimally larger than the force by the gas so that the piston moves by a distance <m> \Delta x</m> into the gas, corresponding to change in volume  <m> \Delta V</m>. The work done by the spring force will be
+			<me>
+				W_\text{by spring on gas} = -F\Delta x.
+			</me>
+			During this time <m> F \approx pA </m> and <m> \Delta V = A\Delta x </m>. Thus, we can rewrite the work in state properties of the gas.
+			<me>
+				W_\text{by spring on gas} = -p\Delta V.
+			</me>
+			The work by the gas will be opposite of this and so will have opposite sign.
+			<men>
+				W_\text{by gas} = p\Delta V.
+			</men>						
+
+		</p>
+
+		
+		<p>
+			Thinking of gas as a thermodynamic system and the spring as its environment, we state this observation using the principle of the conservation of energy as follows.
+			<me>
+				\Delta E_\text{of gas} =  -W_\text{by gas} = \text{Energy exchanged with environment.}
+			</me>
+			Here, we see the exchange of energy occur through the performance of a mechanical work. Next we will see another mechanism of exchange of energy.  
+		</p>
+	</subsection>
+
+	<subsection><title> Energy Change of a Fixed-Volume System</title>
+		<p>
+			In the above we saw how energy of a thermally insulated system can change by way of work. Let us now consider a situation as illustrated in <xref ref="fig-energy-in-hear-flow"/>, where the system is in thermal contact with outside and no work by system is allowed by fixing its volume. To isolate the thermal effect, we examine a gas in a rigid container which is a good conductor of heat. 
+		</p>
+
+		<figure xml:id="fig-energy-in-hear-flow">
+			<caption>
+				The gas is heated by heating water in the bath and energy <m> Q  </m> flows into the gas through the thermally conductive walls. The gas is kept in fixed-volume enclosure so that the volume of the gas does not change and no work is done by the gas.
+			</caption>
+			<image source="./images/first-law-of-thermo/energy-in-heat-flow.png" width="40%"/>
+		</figure>
+
+		<p>
+			Suppose the gas is initially at temperature <m> T</m> and in thermal equilibrium with a water bath also at temperature <m> T</m>. When you heat water bath, its temperature will increase. You will find that energy begins to flow into the gas raising its temperature as well. But since the volume of the gas did not change, the energy change of the gas is not by a mechanical work, but by some other mechanism - a mechanism that requires a difference in temperarture across a thermally conductive material. This mechanism of energy transfer is what we have called heat transfer. 
+		</p>
+
+		<p>
+			If you look at the heating process microscopically, you find that, as temperature of water rises, the water molecules move faster, and when they collide with the container, they transfer some of the energy to the container molecules, which in turn transfer energy to the gas molecules. The energy transfer by heat is the collective work of a large number of molecules.
+		</p>
+		<p>
+			We denote energy exchange by the mechanism of heat by letter <m> Q</m> or <m> Q_\text{if}</m>, where the subscript refers to the process, or <m> Q_\text{into}</m>, where <q>into</q> is for energy entering into the system. Often <m> Q </m> is called heat energy, but it is not like kinetic energy or potential energy, but rather an energy involved in transfer from one system, which is the water bath in our example, to another system, which is the gas, here. 
+		</p>
+		<p>
+			<me>
+				\Delta E_\text{of gas} = Q_\text{into gas}.
+			</me>
+		</p>
+		<p>
+			Once again, we can state this observation as a conservation of energy statment. 
+			Think of the gas as the thermodynamic system and the water bath as the environment, then we have
+			<me>
+				\Delta E_\text{gas} = Q_\text{into gas} = \text{Energy exchanged with environment.}
+			</me>
+			Here, we saw the mechanism of exchange of energy was not through a mechanical work but through heat.
+		</p>
+	</subsection>
+
+	<subsection> <title> First Law of Thermodynamics</title>
+
+		<p>
+			In the last two subsections, we identified two mechanisms by which energy of a thermodynamic system can change - (1) work  <m>W</m> done by the environment and (2) energy flow <m>Q</m> due to a temperature difference across a thermal contact. Summing these two mechanisms gives us the statement of First Law of Thermodynamics.
+		</p>
+		<p>
+			Let us write the first law of thermodynamics in a more expressive language with appropriate subscripts.
+			<men xml:id="eq-first-law-of-thermodynamics">
+				\Delta E_\text{of system} = Q_\text{into system} - W_\text{by system}.
+			</men>
+			Notice that we need to be careful with the signs:  <m> Q </m> is positive if system heats up and negative if system cools,  and <m> W </m> is positive if system expands.
+		</p>
+	</subsection>
+
+	<subsection><title>First Law of Thermodynamics and Internal Energy </title>
+		<p>
+			Often in thermodynamics, we study energy changing processes that do not involve changing the translational and rotational kinetic energies or the gravitational potential energies or other forms of potential energy associated with the entire body.
+		</p>
+		<p>
+			The remaining energy is called <term> internal energy</term>.  The internal energy is usually denoted by the symbol <m> U</m>, which should not be confused with the same symbol used for the potential energy. The internal energy of a conservative system will be the sum of kinetic energies of all its molecules and the potential energies of interactions between the molecules.
+			<men>
+				U = \sum_j K_j + \sum_{jk\text{-pairs}} U_{jk}.
+			</men>		 
+			In terms of internal energy, we write the first law of thermodynamics for the change in the energy of the system A as
+			<men>
+				\Delta U  = Q  - W.
+			</men>  
+		</p>
+		<p> <alert> Sign Conventions:</alert>
+		</p>
+		<p>
+			<ol>
+				<li> Heat entering into the system: <m> Q \gt 0 </m>.  </li>
+				<li> Heat leaving into the system: <m> Q \lt 0 </m>.  </li>
+				<li> The system expanding: <m> W \gt 0 </m>.  </li>
+				<li> The system contracting: <m> W \lt 0 </m>.  </li>
+			</ol>
+
+	 	</p>
+	</subsection>
+
+
+	<exercise xml:id="ex-Work-Heat-and-Internal-Energy-Change-in-Processes-in-a-Gas"><title> Work, Heat and Internal Energy Change in Processes in a Gas</title>
+		<statement>
+			<p>
+				Consider the processes on a gas shown in <xref ref="fig-exer-first-law-1"/>. In the process ab and bc, 3600 J and 2400 J of heat are added to the system.   (a) Find the work done in each of the processes ab, bc, ad and dc.  (b) Find the internal energy change in processes ab and bc.  (c)  Find the internal energy difference between states c and a. (d) Find the total heat added in the adc process.  (e) From the information give, can you find heat added in process ad? Why or why not?	
+
+			</p>
+			<figure xml:id="fig-exer-first-law-1">
+				<caption>
+					Figure for <xref ref="ex-Work-Heat-and-Internal-Energy-Change-in-Processes-in-a-Gas"/>.
+				</caption>
+				<image source="./images/first-law-of-thermo/exer-first-law-1.png" width="50%"/>
+			</figure>
+		</statement>
+		<hint> <p> For work: use area under curve. For internal energy, use first law. </p> </hint>
+		<answer> <p> (a) - 810.4 J, (b) <m>\Delta U_{ab}</m> = 3600 J,  <m>\Delta U_{ab}</m> = 374 J,(c) 3974 J, (d) 4784 J, and (e) Cannot be determined. </p> </answer>
+		<solution> 
+			<p>
+
+				(a)  
+				<md>
+					<mrow> \amp  W_{ab} = 0,</mrow>
+					<mrow> \amp W_{bc} = 5\ \text{atm}\times 4\ \text{L} \times 101.3\ \frac{\text{J}}{\text{L.atm}} = 2,026\ \text{J},</mrow>
+					<mrow> \amp  W_{ad} = 2\ \text{atm}\times 4\ \text{L} \times 101.3\ \frac{\text{J}}{\text{L.atm}} = 810.4\ \text{J}, </mrow>
+					<mrow> \amp W_{dc} = 0.</mrow>
+				</md>
+			</p>
+			<p>
+				(b)  
+
+				For the a-b process:
+				<me>
+					\left.
+					\begin{array}{l}
+						W_{ab} = 0\\
+						Q_{ab} = 3,600\ \text{J}
+					\end{array}
+					\right\}
+					\ \ \ U_{ab} = Q_{ab} - W_{ab} = 3,600\ \text{J}.
+				</me>
+				For the b-c process:
+				<me>
+					\left.
+					\begin{array}{l}
+						W_{bc}   = 2,026\ \text{J}\\
+						Q_{bc} = 2,400\ \text{J}
+					\end{array}
+					\right\}
+					\ \ \ U_{bc} = Q_{bc} - W_{bc} = 374\ \text{J}.
+				</me>
+			</p>
+			<p>
+				(c)  
+				<me>
+					U_{ac} = U_{ab} + U_{bc} = 3,600 \ \text{J} + 374 \ \text{J}= 3,974\ \text{J}.
+				</me>
+			</p>
+			<p>
+				(d)  
+				<md>
+					<mrow> Q_{adc} \amp  = U_{ac} + W_{ad} + W_{dc}</mrow>
+				    <mrow>         \amp  = 3974  \ \text{J} + 810.4  \ \text{J} + 0 = 4,784.4  \ \text{J}.</mrow>
+				</md>
+			</p>
+			<p>
+				(e) 
+				We cannot determine <m>Q_{ad}</m> since we do not know <m>U_{ad}</m> or have a way of determining it. We know only <m>W_{ad}</m>.  That would give
+				<me>
+					Q_{ad} = U_{ad} + 810.4\ \text{J}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Work-Heat-and-Internal-Energy-in-a-Thermal-Expansion-of-Steam"><title> Work, Heat, and Internal Energy in a Thermal Expansion of Steam </title>
+		<statement>
+			<p>
+				Consider the process for steam in a cylinder shown in <xref ref="fig-exer-first-law-2"/>.  Suppose the change in the internal energy in this process is 30 kJ.  Find the heat entering the system.
+			</p>
+			<figure xml:id="fig-exer-first-law-2">
+				<caption>
+					Figure for <xref ref="ex-Work-Heat-and-Internal-Energy-in-a-Thermal-Expansion-of-Steam"/>.
+				</caption>
+				<image source="./images/first-law-of-thermo/exer-first-law-2.png" width="50%"/>
+			</figure>
+		</statement>
+		<hint> <p> Use area under the curve to find the work. Then, use first law.  </p> </hint>
+		<answer> <p>  <m> 61,900\ \text{J}</m>. </p> </answer>
+		<solution> 
+			<p>
+				The work by the system in the given process is
+				<me>
+					W_{ab} = \text{Area under the curve to the } p = 0 \text{ line.}
+				</me>
+				This gives the sum of the area of a triangle and a rectangle.
+				<md>
+					<mrow> W_{ab} \amp = \left(\frac{1}{2} \times 9\ \text{L}\times 30\ \text{atm}  + 9\ \text{L}\times 20\ \text{atm}\right) \times \frac{101.3\text{ J}}{\text{L.atm}}</mrow>
+				 	<mrow> \amp = 31,910\ \text{J}.</mrow>
+				</md>
+				Therefore
+				<me>
+					U_{ab} = Q_{ab} + W_{ab}\ \ \Longrightarrow\ \ Q_{ab} = 61,900\ \text{J}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Work-Heat-and-Internal-Energy-in-a-Cyclic-Process"><title> Work, Heat, and Internal Energy in a Cyclic Process </title>
+		<statement>
+			<p>
+				The state of 30 moles of steam in a cylinder  is changed in a cyclic manner from a-b-c-a, where  the pressure and volume of the states are  a(20 L, 30 atm), b(20 L, 50 atm), and c(45 L, 50 atm), as shown in <xref ref="fig-exer-first-law-3"/>.	 Assume each change takes place along the line connecting the initial and final states in the <m>PV</m> plane. (a) Find the net work done by the steam in one cycle. (b) Find the net amount of heat flow in the steam over the course of one cycle.  
+			</p>
+			<figure xml:id="fig-exer-first-law-3">
+				<caption>
+					Figure for <xref ref="ex-Work-Heat-and-Internal-Energy-in-a-Cyclic-Process"/>.
+				</caption>
+				<image source="./images/first-law-of-thermo/exer-first-law-3.png" width="50%"/>
+			</figure>
+
+		</statement>
+		<hint> <p> (a) Note the work in a cycle is equal to the area enclosed in the PV plane. (b) Internal energy change is zero in a cyclic process. </p> </hint>
+		<answer> <p> (a) <m> 25,300\ \textrm{J} </m>, (b) <m> 25,300\ \textrm{J}</m>. </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a) The net work will be sum of positive work in bc process and negative work on ca process. This sum equals the area enclosed in the cyclic process, which is just the area of a triangle. 
+				<me>
+					W_{abca} = \frac{1}{2} \times 25\ \text{L}\times 20\ \text{atm} = 250\text{ L.atm}
+				</me>
+				Converting this to Joules we get
+				<me>
+					W_{abca} = 250\text{ L.atm} \times \frac{101.3\ \textrm{J} }{\textrm{L.atm}} = 25,300\ \textrm{J}. 
+				</me>
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				(b)
+				In a cycle, the state returns to the self. Therefore, the change in internal energy will be zero.
+				<me>
+					U_{abca} = 0.
+				</me>
+				Now, we have the inernal energy change and work over one cylce. Therefore, we use the first law of thermodynamics to figure out heat exchanged.
+				<me>
+					Q_{abca} = U_{abca} + W_{abca} = 25,300\ \textrm{J}.
+				</me>
+
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<subsection> <title> Other Forms of Energy </title>
+		
+		<p>
+			Yet another approach to energy conservation is based on the various types of energy sources in common vernacular use.  For instance, some chemical reactions release energy, we call that energy to be Chemical Energy.  Similarly, the energy in a nuclear reaction is called the Nuclear Energy. 
+		</p>
+		<p>
+			Classifying energy into various types is helpful in this regard since an overall energy of each type can often be determined from experiments. The change in internal energy is then written as a sum of 
+			<md>
+				<mrow> \Delta U \amp =  \Delta E_{\text{chem}} + \Delta E_{\text{nuc}} +  \Delta E_{\text{atom}} + \cdots,</mrow>
+			</md>
+			where various terms have the following interpretation.
+			<ol>
+				<li> Chemical energy, <m> E_{\text{chem}} </m>, </li>
+				<li>  Nuclear energy, <m> E_{\text{nuc}} </m>, </li>
+				<li>  Atomic random motion, <m> E_{\text{atom}} </m>, </li>
+				<li>  Molecular rotational energy, <m> E_{\text{mol.rot.}} </m>, etc.</li>
+			</ol>
+
+		</p>
+	</subsection>
+
+	<subsection><title>Adiabatic Work and Internal Energy</title>
+
+		<p>
+			Joule conducted experiments on the effect of stirring on the change in the state of water as determined from the change in the temperature of water. He found that, if the container is thermally insulated, the amount of work associated with the change of the state of water was independent of how the work was performed. 
+			<men>
+				W_{if} = U_f - U_i \ \ \ \text{(Adiabatic)}
+			</men>
+			This is what you expect from the first law of thermodynamics when <m> Q = 0</m>. The work here is also called  <term> adiabatic work</term>. The adiabatic work can be used to find internal energy of a system with respect to a reference state, called the <term> standard state</term>.
+		</p> 
+
+		<p>
+			If we set the internal energy of the standard state as <m> U_0</m>, then the internal energy of any arbitrary state A can be defined by appropriate adiabatic process. 
+			<men>
+				U_A = U_0 - W_{\text{standard-to-A}} \ \ \ \text{(in an adiabatic process)}
+			</men>
+			If no adaiabatic process can take you from the standard state to state A, you gan think of going from standard to some other state B and then from B to A, then we will get the internal energy at for state A by
+			<men>
+				U_A = U_B -  W_{\text{B-to-A}} = U_0 - W_{\text{standard-to-B}} -  W_{\text{B-to-A}}.
+			</men>
+			This way, you can find the internal energy of all states of the system. We say that internal energy can be defined for every state and hence internal energy is said to be a <term> state property</term>. 
+		</p>
+	</subsection>
+
+	<subsection><title> (Calculus) Infinitesimal First law of thermodynamics</title>
+		<p>
+			The first law of thermodynamics can be applied to any system in the universe. Suppose a system A interacts with the another system B such that in an infinitesimal time <m> dt</m> an infinitesimal amount of heat <m> \delta Q </m> flows into A and an infinitesimal amount of work <m> \delta W </m> is done by A. Then, the first law of thermodynamics says that the internal energy of A will change by <m> dU</m>, 
+			<men>
+				dU = \delta Q - \delta W,
+			</men>
+			where I have used different symbols for infinitesimals for <m> U </m> and for <m> Q</m> and <m> W</m> to indicate that while A has definite values of <m> U </m> in each state of A since <m> U </m> is a state function, <m> Q</m> and <m> W</m> are not state variables and A does not have any definite values of <m> Q</m> and <m> W</m>. 
+		</p>
+		<p>
+			This infinitesimal equation is applicable to all closed systems.  In a hydrostatic system, such as gas in a tank,  work   is done as a result of change of volume.  Therefore, in these systems we can write the energy involved in the work on the system in another form. This type of system is a very useful system for exploring quantitative implications of thermodynamic principles in significant detail. Many of the examples in this book will come from these systems. 
+		</p>
+
+		<sidebyside widths="50% 10% 40%">
+			<p>
+
+				To derive the form of the first law of thermodynamics in hydrostatic systems, consider a tank of gas in equilibrium with the environment. Let the tank have a freely movable piston and the conduct heat so that initially, say <m>t=0</m>, the pressure <m>p_\text{in}</m> inside the gas is equal to the pressure outside <m>p_\text{out}</m>, and temperature <m>T_\text{in}</m> inside the gas is equal to the temperature <m>T_\text{out}</m> outside. 
+			</p>
+			<p></p>
+			<image source="./images/first-law-of-thermo/first-law-schematics.png" width="50%"/>
+		</sidebyside>
+
+		<p>
+			We can denote the common pressure by <m>p</m> and the common temperature by <m>T</m>. Suppose we pull the piston outward very slowly so that the volume of the gas increases by amount <m>dV</m> but the pressure in the gas is maintained at <m>p</m> all the time. 
+		</p>
+		<!-- <p>
+			This type of process, called <term>  quasi-static</term>, has to be conducted infinitesimally slowly so that the gas is in equilibrium with the environment at all times.  
+		</p> -->
+		<p>
+			The gas will do a work <m>-pdV</m> and an infinitesimal amount of heat <m>dQ</m> will enter the gas during this process.  Therefore the change in internal energy of the gas for an infinitesimal process in  this system will be given by the following relation.
+		</p>
+		<men>
+ 	
+ 			dU = dQ - pdV. 
+ 
+		</men>
+		This is the infinitesimal form of the First Law of Thermoidynamics. For finite changes in state, this has to be integrated over the path of the process. Suppose, a process, changes the state of the gas from <m> (p_1, V_1) </m> to <m> (p_2, V_2)</m>. Then an integration over the path of the process will give us the change in internal energy.
+		<men>
+			\Delta U = \int_{\text{path}}dQ - \int_{\text{path}}pdV.
+		</men> 
+<!-- 		<p>
+
+			Since a finite quasi-static process can be built out of infinitely many infinitesimal  quasi-static processes, the change over a finite quasi-static process can be obtained by summing over the changes over infinitesimal processes.  This leads to a sum over <m>dQ</m> of each process and integrals over <m>dU</m> and <m>pdV</m>.
+		</p>
+		<p>
+
+
+			In these systems although we are able to replace work by an integral, we are cannot replace heat by an integral unless the process is also so-called reversible. We will learn about reversible processes in the chapter on Entropy. It is interesting to note that in these systems, if a process is conducted at a constant volume, then
+			<men>	
+				dU = dQ  \ \ \ \text{(Constant volume process.} 
+			</men>
+			Therefore, if you keep a gas in a rigid container so that the volume cannot change, then heating or cooling the gas will exchange heat exactly equal to the change in the energy of the gas.
+		</p> -->
+
+
+	</subsection>
+
+
+
+
+
+
+
+</section>

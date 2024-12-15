@@ -1,0 +1,162 @@
+<section xml:id="Stokes-Law"><title> Stoke's Law </title>
+
+	<introduction>
+		<p>
+			The expression for the viscous drag force on a gently falling sphere in a fluid was deduced by Sir George Scott and is called the Stoke's law. This law finds use in many areas of physics and engineering.  
+		</p>
+		<sidebyside widths="70% 5% 25%">
+			<p>
+				Consider dropping a spherical ball in a still fluid, which can be liquid or gas.  As the ball falls, it experiences a viscous force <m> \vec F_{\text{visc}}</m> due to the laminar flow of fluid around the falling ball, depending upon the viscosity of the fluid.  Let <m> R</m> be the radius of the ball, <m> \vec v</m> its velocity, and <m>\eta</m>  the viscosity of fluid.  Stokes's law states the following expression for the viscous force <m> \vec F_{\text{visc}}</m>.
+				<men>
+					\vec F_{\text{visc}} = -6\pi\eta R \vec v
+				</men>
+				  
+			</p>
+			<p></p>
+			<image source="./images/dynamic-fluid/linear-drag-stokes.png" width="70%"/>
+		</sidebyside>
+		<p>
+			Note that the viscous force by Stokes's law is directly proportional to the radius rather than the area of cross-section as one might expect.  Except for the factor <m> 6 \pi</m>, you can guess the formula  by a dimensional analysis.
+		</p>
+		
+		<p>
+			The argument for a dimensional analysis goes as follows. We assume that the magnitude of the viscous force will depend on the velocity, <m> F_{\text{visc}} \sim v^{m}</m>, for some power <m>m</m> to be determined by the dimensional argument here.  We also know that it will involve the size of the ball, although we don't know if it will be <m> R </m> or <m> R^2</m>, or some other power of <m> R </m>, say <m> R^n </m>. The viscous force should also be proportional to the viscosity coefficient, <m> \eta</m>. Writing out the dimension of the product of these dependencies of the viscous force, we find  
+			<me>
+				[\eta][v^m][R^n] = \dfrac{[M][L]^{n+m-1}}{[T]^{m+1}},
+			</me>
+			which should equal the dimension of force, <m> \dfrac{[M][L]}{[T]^2}</m>. Therefore, <m> m=1</m> and <m> n=1</m>. The dimensional analysis helps us guess the form of the magnitude of the viscous force on a spherical particle of radius R up to an undetermined constant <m> C</m>.
+			<me>
+				F_{\text{visc}} = C \eta R v.
+			</me>
+			The calculations that shows that the constant <m> C = 6\pi</m> is beyond this textbook. The direction of the viscous force is opposite to the direction of the velocity of the ball since it is a resistive force for the motion of the ball.
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-The-Steady-Speed-of-Fall-of-a-Steel-Ball-in-Glycerin"><title> The Steady Speed of Fall of a Steel Ball in Glycerin </title>
+		<statement>
+			<p>
+				A steel ball of radius <m> 2\text{ mm}</m> is dropped gently in a cylindrical vessel filled with glycerin at <m> 25^{\circ}\text{C}</m>. At that temperature, the viscosity of glycerin is <m> 0.95 \text{Pa.s}</m>. The density of glycerin is <m>1260\text{ kg/m}^3</m> and the density of steel is <m> 8000\text{ kg/m}^3</m>. After some time, the ball falls at constant speed.
+			</p>
+			<p>
+				(a) Ignoring the effect of buoyancy, find the terminal speed.
+			</p>
+			<p>
+				(b) What would be the terminal speed if you were to include the effect of buoyancy?
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use balance of forces ignoring buoyancy. (b) Do same, now including buoyancy.  </p> </hint>
+		<answer> <p> (a) <m>7.34\text{ cm/s} </m>, (b) <m>6.19\text{ cm/s} </m>.  </p> </answer>
+		<solution><title> (a) </title> 
+			<p>
+				(a)
+				At terminal speed all forces on the ball are balanced. Ignoring buoyancy leaves only weight and the viscous drag forces on the ball.
+				<me>
+					6\pi\eta R v = mg,
+				</me>
+				where
+				<me>
+					m = V\rho = \dfrac{4}{3}\pi R^3 \rho.
+				</me>
+				Therefore,
+				<me>
+					v = \dfrac{2}{9}\, \dfrac{R^2 \rho g}{\eta}.
+				</me>
+				Putting in the numerical values, I got
+				<me>
+					v = 0.0734\text{ m/s} = 7.34\text{ cm/s}.
+				</me>
+			</p>
+		</solution>
+
+		<solution> <title> (b) </title>
+			<p>
+				If we wish to include buoyancy, the equation is
+				6\pi\eta R v = mg - m_0 g,
+			</p>
+			where <m>m_0</m> is the mass of glycerin displaced.
+			<me>
+				m_0 = V\rho_0 = \dfrac{4}{3}\pi R^3 \rho_0.
+			</me>
+			Therefore,
+			<me>
+				v = \dfrac{2}{9}\, \dfrac{R^2 (\rho-\rho_0) g}{\eta} = 0.0619\text{ m/s}.
+			</me>
+		</solution>
+	</exercise>
+
+	<exercise><title> (Calculus) Time to Reach Teminal Speed in a Viscous Fluid </title>
+		<statement>
+			<p>
+				A spherical ball of radius R and density  <m>\rho</m> is dropped from rest in a fluid of density  <m>\rho_0</m>. (a) Derive a formula for the terminal speed. (b) Derive a formula for the time it takes to reach the terminal speed.
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p> (a) <m> \dfrac{g}{\gamma}</m>, (b) <m>\infty</m>.  </p> </answer>
+		<solution><title> (a) </title>
+			<p>
+				Let us orient the <m>y</m>-axis vertically down and write the <m>y</m>-component of the equation of motion of the ball.
+				<men xml:id="eq-ch13-f-d-ex-11-1">
+					m\dfrac{d^2y}{dt^2} = mg - b \dfrac{dy}{dt}, 
+				</men>
+				where 
+				<me>
+					b = 6\pi \eta R.
+				</me> 
+				Divide both sides of Eq. <xref ref="eq-ch13-f-d-ex-11-1"/> by <m>m</m> and write <m>\gamma</m> for <m>b/m</m>,
+				<me>
+					\gamma \equiv \dfrac{b}{m},
+				</me>
+				to obtain
+				<men xml:id="eq-ch13-f-d-ex-11-2">
+					\dfrac{d^2y}{dt^2} + \gamma \dfrac{dy}{dt} = g. 
+				</men>
+				This equation is not that hard to solve, but I will not go through the steps of the solution.  I will give you the answer instead.  You will find that for <m>y(0) = 0</m> and <m>v_y(0) = \dfrac{dy}{dt}(0) = 0</m> the <m>y</m>-coordinate of the center of the ball will turn out to be
+				<me>
+					y(t) = \dfrac{g}{\gamma^2} \left[ e^{-\gamma t} + \gamma t - 1 \right].
+				</me>
+				You can convince yourself that this   the solution of Eq. <xref ref="eq-ch13-f-d-ex-11-2"/>   by plugging this function in that equation.  Furthermore, you can verify that that this solution satisfies the initial conditions as well.  Now, this solution should tell us when the terminal speed will be reached.  
+
+			</p>
+			<p>
+				We get velociy at <m>t</m> by taking a derivative of <m>y</m>.
+				<me>
+					v_y = \dfrac{dy}{dt} = \dfrac{g}{\gamma}\left( 1 -e^{-\gamma t} \right).
+				</me>
+				Taking <m>t\rightarrow 0</m> limit gives the final velocity to be
+				<me>
+					v_\text{terminal} = \dfrac{g}{\gamma}.
+				</me>
+			</p>
+		</solution>
+		<solution><title> (b) </title>
+			<p>
+
+				(b) At the terminal speed the acceleration will be zero.  Therefore we set the acceleration at the instant <m>t=T</m> to zero and solve for <m>T</m>.
+				<me>
+					\dfrac{d^2y}{dt^2} = g e^{-\gamma T} = 0,
+				</me>
+				which says that the acceleration actually becomes zero only asymptotically.  The math answer will be <m>T=\infty</m>.  But, if we are willing to accept that if the acceleration is below some value, say <m>\epsilon g</m>, where we set some value of <m>\epsilon</m> such as <m>1/1000</m> or so, then we can get a definite value for <m>T</m>.
+				<me>
+					e^{-\gamma T} = \epsilon\ \ \Longrightarrow\ \ T = -\dfrac{\ln{(\epsilon)}}{\gamma}. 
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+</section>

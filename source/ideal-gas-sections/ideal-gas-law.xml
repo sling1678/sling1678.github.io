@@ -1,0 +1,163 @@
+<section xml:id="Ideal-Gas-Law"><title> Ideal Gas Law </title>
+
+	<introduction>
+		<p>
+			Gaseous phase is a rarefied state of matter.  In this state the interaction between molecules is often weak.  If a gas is dilute, that is, if the density is low, we can completely ignore inter-molecular interactions without losing much physics.  The model gas with no interaction between molecules is called the <term> ideal gas</term>.  
+		</p>
+		<p>
+			The thermodynamic state of a given amount of <q> ideal </q> gas, say containing <m> N</m> molecules, is completely determined by its temperature <m> T</m>, pressure <m> p</m>, and volume <m> V</m>, where temperature is in kelvin scale. These thermodynamic variables are not all independent, but are related by an <term> equation of state</term>.
+			<men xml:id="eq-ideal-gas-law-physics">
+				p V = N k_B T,
+			</men> 
+			where <m> k_B</m> is called <term>Boltzmann's constant</term> that has the following  value.
+			<men>
+				k_B = 1.38 \times 10^{-23} \text{ J}\,\text{K}^{-1}.
+			</men>
+			In Chemistry, one writes the equation of state in another form. In place of number of molecules <m> N </m>, we can defines number of moles  <m>n</m> by diving <m> N </m> by Avogadro number <m> N_A</m>.
+			<men>
+				n = \dfrac{N}{N_A},
+			</men> 
+			where <m>N_A</m> is the number of moecules in one mole.
+			<men>
+				N_A = 6.022\times 10^{23},
+			</men>
+			and in place of <m>k_B</m>, we define another constant, called the <term> universal gas constant</term>, <m> R</m>, by
+			<men>
+				R = N_A k_B = 8.31\text{ J}\,\text{K}^{-1}.
+			</men>
+			Often the unit of <m> R </m> is given as <m> \text{ J}\,\text{K}^{-1}\, \text{mol}^{-1}</m> to reflect the fact that <m> R </m> is often multiplied by <m> n </m>, the number of moles. It is not necessary to do that as long as we rememeber the relation of <m> R </m> and <m> n</m> to the total number of molecules <m> N</m> and the Boltzmann constant <m> k_B</m>.
+			<me>
+				n R = Nk_B.
+			</me>
+			In terms of <m> n </m> and <m> R</m>, the equation of state <xref ref="eq-ideal-gas-law-physics"/> takes the following form.
+			<me>
+				p V = N k_B T = \left(\dfrac{N}{N_A}\right) \left( N_Ak_B\right) T =  n R T.
+			</me>
+			That is,
+			<men>
+				pV = n R T.
+			</men>
+		</p>
+	</introduction>
+
+	<remark><title> Units</title>
+		<p>
+			If you express <m> p </m> in <m>\text{Pa}</m> and <m> V</m> in <m>\text{m}^3</m>, the product <m> pV</m> will be <m>\text{Joules}</m>.
+			<me>
+				1\ \text{Pa} \times \text{m}^3 =1\ \dfrac{\text{N}}{\text{m}^2} \times \text{m}^3  =1\  \text{N}\,\text{m}= 1\ \text{J}.
+			</me>
+			Sometimes, it is more convenient to express <m> p </m> in <m>\text{atm}</m> and <m> V</m> in <m>\text{liter (L)}</m>. In that case, we need to convert units with
+			<me>
+				1\ \text{L}\times \text{atm} = 10^{-3}\text{m}^3\times 1.013\times 10^{5}\,\text{Pa} = 101.3\text{ J}.
+			</me>
+
+		</p>
+
+	</remark>
+
+	<subsection> <title> Specifying Thermodynamic State of Ideal Gas</title>
+		<p>
+			Suppose we have a fixed quantity of a gas, say <m> n </m> moles, and we wish to specify its thermodynamic state. The three thermodynamic variables that are well-defined in the equilibrium are volume <m> V</m>, pressure <m> p</m>, and temperature <m> T</m>. A state of this system will have particular values of these three variables.  
+		</p>
+		<p>
+			You need to independently measure only two of the variables, <m>(p,\ V,\ T) </m> since you can use equation of state to find the third. For instance, if <m> p </m> and <m> T </m> are known for an ideal gas, then, we can immediately say that its volume must be
+			<me>
+				V = \dfrac{nRT}{p}.
+			</me>
+			That means, we have three choices for stating a thermodynamic state: <m> (p,\ T)</m>, <m> (p,\ V)</m>, or <m> (T,\ V)</m>, whichever is convenient. 
+
+		</p>
+		<p>
+			For instance, suppose we place <m> n = 1\text{ mole}</m> of helium into a <m> 50\text{ L}</m> container at <m> 300\text{K}</m>. Then, this specifies the state fully with pressure in the gas tank given by
+			<me>
+				p = \dfrac{nRT}{V} = \dfrac{1\times8.31 \times 300}{50\times 10^{-3}} = 49,860\text{ Pa}.
+			</me>
+ 
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Computing-Number-of-Molecules-in-an-Ideal-Gas"><title> Computing Number of Molecules in an Ideal Gas </title>
+		<statement>
+			<p>
+				An ideal gas occupies a container of volume <m>0.03\text{ m}^3</m> at <m>30^{\circ}\text{C}</m> and <m>1.0\times 10^5\text{ Pa}</m>, how many molecules of the gas are there in the container?
+			</p>
+
+		</statement>
+		<hint> <p>  The temperature in ideal gas law is in kelvin scale. </p> </hint>
+		<answer> <p>  <m>0.175</m> </p> </answer>
+		<solution> 
+			<p>
+				We use the ideal gas law. But, here we need to be careful in converting the temperature to the kelvin scale first.
+				<me>
+					T = 30 + 273 = 303\text{K}.
+				</me>
+				Now, using the variables in the ideal gas law, again making sure of having correct units, gives
+				<md>
+					<mrow> n \amp= \dfrac{pV}{RT} = \dfrac{1.0\times 10^5\text{ Pa} \times 0.03\text{ J}}{8.31 \text{ J/K} \times 303\text{K}} = 0.175.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Fraction-of-Volume-of-a-Gas-Occupied-by-Molecules"><title> Fraction of Volume of a Gas Occupied by Molecules </title>
+		<statement>
+			<p>
+				What volume fraction of a 1 L of the Nitrogen gas is occupied by the molecules if the pressure is 1 atm  and the temperature <m>27^{\circ}\text{C}</m>?
+			</p>
+			<p>
+				Data: Assume volume of each <m>\text{N}_2</m> molecule to be <m> 6.4 \times 10^{-29}\text{ m}^3</m>.  <m>R = 0.082\text{ L.atm.K}^{-1}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>   Find the number of moles first.</p> </hint>
+		<answer> <p>  <m>0.2\%</m> </p> </answer>
+		<solution> 
+			<p>
+				From the ideal gas equation, we get number of moles in the container. We will do the moles first since <m>R</m> in unit <m>\text{L-atm/K}</m> is usually listed.
+				<md>
+					<mrow> n \amp = \dfrac{pV}{RT} </mrow>
+					<mrow> \amp  = \frac{1\ \text{atm}\times 1\ \text{L}}{0.082\ \text{L.atm.K}^{-1}.\text{mol}^{-1} 303.15\ \text{K}} = 0.04\text{ mol}. </mrow>
+				</md>
+				Therefore, the volume of the molecules is
+ 
+				<md>
+					<mrow> v \amp = 0.04\times 6.022\times 10^{23} \times 6.4 \times 10^{-29}\text{ m}^3 </mrow>
+					<mrow> \amp =  2\times 10^{-6}\text{ m}^3 = 2\times 10^{-3}\text{ L}.</mrow>
+				</md>
+				This says that only  0.2% of the space occupied by the gas is occupied by the molecules themselves, the rest of the space is empty.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+ 
+		<!-- <p> <alert> Some exercises to work on later</alert>
+		</p>
+
+		<p>
+
+		\begin{exercise}\label{exer-ideal-gas-3} 
+		Find the pressure of one mole of the Nitrogen gas that occupies the volume 0.2 liters at the temperature 300 K  using the following two different equations of state: (a)	Ideal gas, and (b)	van der Waals equation.
+		\end{exercise}
+
+		</p>
+		<p>
+
+		\begin{exercise}\label{exer-ideal-gas-4} 
+		Find the pressure of one mole of the Oxygen gas that occupies the volume 20 liters at the temperature 300 K using the following two different equations of state:(a)	Ideal gas, and (b)	van der Waals equation.						
+		%Ans: (a) 12.5 atm, (b) 11.3 atm.
+		\end{exercise}
+
+		</p>
+		<p>
+
+		\begin{exercise}\label{exer-ideal-gas-5} 
+		Plot $pV/nRT$ vs $T$ for (a) hydrogen, (b) nitrogen, (c) oxygen, and (d) helium using van der Waals equation and using ideal gas law on the same graph.  Interpret your observations.
+		\end{exercise}
+		</p> -->
+
+
+
+
+</section>

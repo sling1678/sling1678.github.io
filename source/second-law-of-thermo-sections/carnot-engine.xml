@@ -1,0 +1,406 @@
+<section xml:id="The-Carnot-Engine"><title> The Carnot Engine  </title>
+
+	<introduction>
+		<p>
+			In a Carnot engine a fixed amount of ideal gas is heated and cooled in a particular cyclic process called the <term> Carnot cycle</term>. The Carnot cycle consists of four steps shown in <xref ref="fig-carnot-engine"/>.
+			<ol>
+				<li> Isothermal <alert> expansion</alert> at high temperature <m> T_H</m>.</li>
+				<li> Adiabatic <alert> expansion </alert> lowering temperature from <m> T_H</m> to <m> T_C</m>.</li>
+				<li> Isothermal <alert> compression</alert> at lower temperature <m> T_C</m>. </li>
+				<li> Adiabatic <alert> compression </alert> raising temperature from <m> T_C</m> to <m> T_H</m>.</li>
+			</ol>
+			The states A, B, C, and D are chosen so that at the end of these four steps, the system returns to state A.
+		</p>
+
+		<figure xml:id="fig-carnot-engine">
+			<caption>
+				The processes of the Carnot engine.  Process AB is an isothermal expansion at temperature <m> T_H</m>, BC an adiabatic expansion, CD an isothermal compression at temperature <m> T_C</m>, and DC an adiabatic compression.
+			</caption>
+			<image source="./images/second-law-of-thermo/carnot-engine.png" width="80%"/>
+		</figure>
+		<p>
+			Since the system is an ideal gas and the processes are all quasi-static it is possible to work out heat and work in each step as we will show below.  These calculations show that the ratio of <m> Q_C </m> to <m> Q_H </m>  is equal to the ratio of the temperatures of the baths in absolute scale.
+			<men xml:id="eq-carnot-funda-1">
+				\dfrac{Q_C}{Q_H} = \dfrac{T_C}{T_H}\ \ \text{(temperatures in kelvin scale)} 
+			</men>
+			This relation can also used to define the absolute or kelvin scale of temperature from an operational viewpoint. Using this equaiton we can deduce the following for  the efficiency of a Carnot engine.
+			<men xml:id="eq-carnot-funda-2"> 
+				\eta_{\text{Carnot}}= 1-\dfrac{T_C}{T_H}\ \ \text{(temperatures in absolute/Kelvin scale)} 
+			</men>
+			This formula for the efficiency of a Carnot engine says that a Carnot engine will be 100% efficient only if the temperature of the cold bath <m> T_C </m> were zero degree kelvin.
+		</p> 
+		<p>
+			When this observation on the efficiency of the Carnot engine is combined with the Kelvin-Planck statement of the second law, we can conclude that a temperature of zero degree kelvin is not reachable since that would imply a possibility of constructing a thermal engine that has 100% efficiency. This gives another way to state the second law of thermodynamics.
+ 		</p>
+ 		<p>
+ 			<alert> Another Statement for the Second Law. </alert> <em> It is impossible to reach a temperature of zero degree kelvin. </em>
+ 		</p>
+	</introduction>
+
+	<subsection><title>Proof of <m>Q_C/Q_H = T_C/T_H</m> in Carnot Cycle </title>
+		<p>
+			Since the internal energy of an ideal gas is proportional to temperature, the internal energy does not change in the processes AB and CD in <xref ref="fig-carnot-engine"/>. Applying first law of thermodynamics to these steps and using the formula for work by a gas in an isothermal process, we conclude
+			<mdn>
+				<mrow xml:id="eq-qh-qc-1"> \amp Q_H = W_{AB} = nRT_H \ln\left( \frac{V_B}{V_A} \right) </mrow>
+				<mrow xml:id="eq-qh-qc-2"> \amp Q_C = W_{CD} = nRT_H \ln\left( \frac{V_D}{V_C} \right) </mrow>
+			</mdn>
+			From the adiabatic processes BC and DA we have the following relations.
+			<md>
+				<mrow> \amp \textrm{BC process:  } T_H V_B^{\gamma-1} = T_C V_C^{\gamma-1}</mrow>
+				<mrow> \amp \textrm{DA process:  } T_H V_A^{\gamma-1} = T_C V_D^{\gamma-1}</mrow>
+			</md>
+			Taking the ratio we find
+			<men xml:id="eq-qh-qc-3">
+				\frac{V_B}{V_A} = \frac{V_C}{V_D}. 
+			</men>
+			Now, we take the ratio of Eq. <xref ref="eq-qh-qc-2"/> to Eq. <xref ref="eq-qh-qc-1"/> and use Eq. <xref ref="eq-qh-qc-3"/> to obtain the required result.
+			<me>
+				Q_C/Q_H = T_C/T_H.
+			</me>
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-The-Efficiency-of-a-Carnot-Engine"><title> The Efficiency of a Carnot Engine </title>
+		<statement>
+			<p>
+				A Carnot engine operates between <m>400^{\circ}\text{C}</m> and <m>27^{\circ}\text{C}</m>.  
+			</p>
+			<p>
+				(a) What is the efficiency of the Carnot engine?  
+			</p>
+			<p>
+				(b) If the Carnot engine produces 5 kJ of work in each cycle, how much heat must it absorb from the <m>400^{\circ}\text{C}</m> bath in each cycle. 
+			</p>
+		</statement>
+		<hint> <p>  (a) Make sure you express temperature in kelvin scale. (b) Use the efficiency found in the efficiency for arbitrary heat engine. </p> </hint>
+		<answer> <p> (a) 55.4%, (b) <m> 9.03\ \text{kJ}</m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a) The efficiency of a Carnot engine can be written in terms of temperatures of the hot and cold baths. But, there is a catch. In order to make use of the formula for efficiency in terms of temperatures, we must express the temperatures in absolute scale.
+				<md>
+					<mrow>\amp T_H = 400 + 273.15 = 673.15\text{K} </mrow>
+					<mrow>\amp T_C = 27 + 273.15 = 300.15\text{K}</mrow>
+				</md>
+
+				Therefore, the efficiency of the Carnot engine is
+				<me>
+					\eta = 1- \dfrac{T_C}{T_H} = 1 - \dfrac{300.15\text{K}}{673.15\text{K}} = 0.554.
+				</me>
+				The efficiency in this formula is written as fraction.  Normally, we write the number in percentage by multiplying this number by 100.  This gives the efficiency of this engine to be 55.4%.
+
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				(b) We can use the efficiency found to figure out the heat in the engine.
+				<me>
+					\text{Since }\eta = \dfrac{W}{Q_H},\ \ Q_H = \dfrac{W}{\eta} = \dfrac{5\ \text{kJ}}{0.554} = 9.03\ \text{kJ}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Heat-Flow-in-a-Carnot-Engine"><title> Heat Flow in a Carnot Engine </title>
+		<statement>
+			<p>
+				A Carnot engine operating in a Carnot cycle between <m>400^{\circ}\text{C}</m> and an unknown lower temperature has an efficiency of <m>0.3</m>.  How much heat must be rejected to the cold bath for every kJ of heat absorbed from the hot bath.		
+
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m> Q_H = 1\text{ kJ}</m> in <m>\eta = (1-Q_C/Q_H) </m>. </p> </hint>
+		<answer> <p> <m>0.7\text{kJ}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The efficiency of the Carnot engine can be expressed in terms of <m> Q_C</m> and <m> Q_H</m> alone.
+				<me>
+					\eta_C =  \frac{Q_H-Q_C}{Q_H}\ \ \Longrightarrow\ \ Q_C = (1-\eta_C) Q_H.
+				</me>
+				Therefore, if <m> Q_H = 1\text{ kJ}</m>, then
+				<me> 
+					Q_C = (1-0.3) \times 1\ \text{kJ} = 0.7\ \text{kJ}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+	<exercise xml:id="ex-Power-of-a-Carnot-Engine"><title>  Power of a Carnot Engine </title>
+		<statement>
+			<p>
+				A Carnot engine working between two heat baths of temperatures <m>600\text{K}</m> and <m>273\text{K}</m> completes each cycle in <m>5\text{ sec}</m>.  In each cycle, the engine absorbs <m>10\text{ kJ}</m> of heat.  Find the power of the engine.
+			</p>
+
+		</statement>
+		<hint> <p> Find <m>\eta</m> from temperatures and then use it to get <m>W</m> and <m>P=W/\Delta t</m>.  </p> </hint>
+		<answer> <p> <m>2,400\text{ W}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The power <m>P</m> of the engine will be work <m>W</m> divided by time <m>\Delta t</m>.
+				<me>
+					P = \frac{W}{\Delta t}.
+				</me>
+				From the definition of efficiency we can obtain <m>W</m> from the heat rejected to the lower temperature bath and the efficiency as follows.
+				<me>
+					\eta = \frac{W}{Q_H} =  \frac{W}{W-Q_C}\ \ \Longrightarrow\ \ W = \left( \frac{\eta}{1-\eta}\right)\ Q_C.
+				</me>
+				The efficiency here is equal to the efficiency of the Carnot cycle.
+				<me>
+					\eta = 1- \frac{T_C}{T_H}\ \ \Longrightarrow\ \ \frac{\eta}{1-\eta} = \frac{T_H-T_C}{T_C}.
+				</me>
+				Putting in the values here
+				<me>
+				 	\frac{\eta}{1-\eta} = \frac{600-273}{273} = 1.2.
+				</me>
+				Therefore,
+				<me>
+					W = 1.2\times\ Q_C = 1.2\times 10\ \text{kJ} = 12\ \text{kJ}.
+				</me>
+				This work is done in 5 sec. Therefore, the power is
+				<me>
+					P = \frac{W}{\Delta t} = \frac{12\ \text{kJ}}{5\ s} =  2400\ \text{W}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Carnot-Cycle-with-Monatomic-Ideal-Gas"><title> Carnot Cycle with Monatomic Ideal Gas </title>
+		<statement>
+			<p>
+				Two moles of a monatomic ideal gas performs a Carnot cycle between <m>300\text{ K}</m> and <m>500\text{ K}</m>.  The starting volume of the gas before isothermal expansion was <m> 3\times 10^{-3}\text{ m}^3</m>, and it expands to double the volume in the isothermal step.  Find the total amount of work done  and heat absorbed from the high temperature reservoir in each cycle.  
+			</p>
+
+		</statement>
+		<hint> <p>  <p> At any point of the cycle, use ideal gas law. For work for processes use <m>-pdV</m>. For internal energy use <m>(f/2)nRT</m>, with <m>f=3</m> for monatomic gas.   </p> </p> </hint>
+		<answer> <p> <m>W = 774\text{ J}</m>, <m> Q_{H} = 1935 \text{ J}</m>.  </p> </answer>
+		<solution> 
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					First we find the <m>(p,V)</m> at the vertices of the cycle.
+					<md>
+						<mrow> A:\ \ \amp  </mrow>
+						<mrow> \amp  T_A = 500\ \text{K}</mrow>
+						<mrow> \amp  V_A = 3\times 10^{-3}\ \text{m}^3</mrow>
+						<mrow> \amp  p_A = 2\times \frac{8.31\times 500}{3\times 10^{-3}} = 2.77\ \text{MPa}</mrow>
+					</md>
+				</p>
+				<p></p>
+				<image source="./images/second-law-of-thermo/carnot-pr-1.png" width="80%"/>
+			</sidebyside>
+			<p>
+				B:
+				<md>
+					<mrow> \amp  T_B = 500\ \text{K}</mrow>
+					<mrow> \amp  V_B = 2\times 3\times 10^{-3}\ \text{m}^3 = 6\times 10^{-3}\ \text{m}^3</mrow>
+					<mrow> \amp  p_B =  \frac{2.77}{2}\ \text{MPa} =1.39 \ \text{MPa}</mrow>
+				</md>
+			</p>
+			<p>
+				C:
+				<md>
+					<mrow> \amp  T_C = 300\ \text{K}</mrow>
+					<mrow> \amp  V_C^{\gamma-1} =\frac{T_B}{T_C}  V_B^{\gamma-1} \ \ \Longrightarrow\ \  V_C = 12.9\times 10^{-3}\ \text{m}^3</mrow>
+					<mrow> \amp  p_C =  \frac{2 \times 8.31\times 300}{12.9\times 10^{-3}} = 0.386\ \text{MPa} </mrow>
+				</md>
+			</p>
+			<p>
+				D:
+				<md>
+					<mrow> \amp  T_D = 300\ \text{K}</mrow>
+					<mrow> \amp  V_D^{\gamma-1} =\frac{T_A}{T_D}  V_A^{\gamma-1} \ \ \Longrightarrow\ \ V_D = 6.45\times 10^{-3}\ \text{m}^3</mrow>
+					<mrow> \amp  p_D V_D = p_C V_C \ \ \Longrightarrow\ \ p_D =    0.773\ \text{MPa} </mrow>
+				</md>
+			</p>
+			<p>
+				The calculations for the work by the gas give.
+				<md>
+					<mrow> \amp  W_{AB} = n R T_A \ln \frac{V_B}{V_A} = 5760\ \text{J}</mrow>
+					<mrow> \amp  W_{BC} =\frac{3 n}{2} R (T_B -T_C)  = 4986\ \text{J}</mrow>
+					<mrow> \amp  W_{CD} = n R T_C \ln \frac{V_D}{V_C} = - 3456\ \text{J}</mrow>
+					<mrow> \amp  W_{DA} =\frac{3 n}{2} R (T_D -T_A)  = -4986\ \text{J}</mrow>
+				</md>
+				The net work for the entire cycle is obtained by adding the work in each step.
+				<me>
+					W = 2304\ \text{J}.
+				</me>
+				The Carnot efficiency of the cycle is given by
+				<me>
+					\eta = 1-\frac{300\ \text{K}}{500\ \text{K}} = 0.4.
+				</me>
+				Therefore the cycle abosrbs the following energy from the higher-temperature source.
+				<me>
+					Q_{in} = \frac{W}{\eta} = \frac{2304\ \text{J}}{0.4} = 5760\ \text{J}.
+				</me>
+				This is same as the work done in the AB part of the cycle since the change in the internal energy for a constant temperature process of an ideal gas is zero.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Numerical-Study-of-Carnot-Cycle"><title> Numerical Study of Carnot Cycle </title>
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					A Carnot engine employs 1.5 moles of the Nitrogen gas as the working substance, which will be considered as a diatomic ideal gas with  <m>\gamma = 7/5</m>  at the working temperatures of the engine.  The Carnot cycle goes in the cycle A-B-C-D-A with A-B being the isothermal expansion. The volume at points A and C of the cycle are <m>5 \text{ L}</m> and <m>150 \text{ L}</m> respectively.  The engine operates between two thermal baths of temperature <m>500\text{K}</m> and <m>300\text{K}</m>.
+				</p>
+				<p></p>
+				<image source="./images/second-law-of-thermo/carnot-engine.png" width="80%"/>
+			</sidebyside>
+
+			<p>				 
+				 <ol> 
+	 				<li> Find the values of the volume at B and D. </li>
+	 				<li> How much heat is absorbed by the gas in the AB-isothermal expansion?</li>
+	 				<li> How much work is done by the gas in the AB-isothermal expansion?</li>
+	 				<li> How much heat is given up by the gas in the CD-isothermal compression?</li>
+	 				<li> How much work is done by the gas in the CD-isothermal compression?</li>
+	 				<li> How much work is done by the gas in the BC-adiabatic expansion?</li>
+	 				<li> How much work is done by the gas in the DA-adiabatic compression?</li>
+	 				<li> Find the value of the efficiency of the engine based on the net work and heat input. Compare this value of the efficiency to the value of the efficiency of the Carnot engine based on the temperatures of the two baths.</li>
+				</ol>
+			</p>
+
+		</statement>
+		<hint> <p> At any point of the cycle, use ideal gas law. For work for processes use <m>-pdV</m>. For internal energy use <m>(f/2)nRT</m>, with <m>f=5</m> for diatomic gas.   </p> </hint>
+		<answer> <p> 
+			<m> V_B = 41.8 \text{ L}</m>, 
+			<m>Q_{AB} = 13,200\text{ J}</m>, 
+			<m>W_{AB} = Q_{AB} = 13,200 \text{ J}</m>, 
+			<m>Q_{CD}=-8,000\text{ J}</m>, 
+			<m> W_{CD}=-8,000\text{ J}</m>,
+			<m> W_{BC} = 6,200\ \text{J}</m>, 
+			<m> W_{DA} = -6,200\ \text{J}</m>, 
+			<m> \eta = 0.394</m>.
+
+		 </p> </answer>
+		<solution> 
+			<p>
+				We have the following known quantities in the Carnot cycle.
+				<md>
+					<mrow> \amp  V_A = 5\ \text{L};\ \  V_C = 150\ \text{L}</mrow>
+					<mrow> \amp  T_A = T_B = 500\text{K};\ \ T_C= T_D = 300\text{K}</mrow>
+				</md>
+				The other parameters we have are
+				<me>
+					n = 1.5\ \text{mol};\ \  \gamma = \frac{7}{5}
+				</me>
+				<ol label="(a)">
+					<li> 
+						<p>
+							Find the values of the volume at B and D.
+
+							The process DA is adiabatic process. Therefore,
+							<me> 
+								T_A V_A^{\gamma-1} = 	T_D V_D^{\gamma-1}.
+							</me>
+							This gives
+							<me>
+								V_D = \left(T_A/ T_D\right)^{1/(\gamma-1)}\ V_A = \left(\frac{500}{300}\right)^{5/2}\times  5\ \text{L} = 17.9\ \text{L}.
+							</me>
+							From the adiabatic process BC we get
+							<me>
+								V_B = 41.8 \text{ L}.
+							</me>
+							 
+						</p>
+					</li>
+					<li>
+						<p>
+							How much heat is absorbed by the gas in the AB-isothermal expansion?
+
+							<md>
+								<mrow> Q_{AB} \amp  = n RT_A \ln\left( \frac{V_B}{V_A}\right)</mrow>
+								<mrow> \amp  = 1.5\times8.31\times 500\times  \ln\left( \frac{41.8}{5}\right) = 13,200\ \text{J} \equiv Q_H.</mrow>
+							</md>
+						</p>
+					</li>
+					<li>
+						<p>
+							How much work is done by the gas in the AB-isothermal expansion?
+
+							Since the temperature is constant, and for an ideal gas, the internal energy does not change in a constant-temperature process.
+							<me>
+								W_{AB} = Q_{AB} = 13,200\ \text{J}.
+							</me>
+						</p>
+					</li>
+					<li> 
+						<p>
+							How much heat is given up by the gas in the CD-isothermal compression?
+							<md>
+								<mrow> Q_{CD} \amp  = n RT_A \ln\left( \frac{V_D}{V_C}\right)</mrow>
+								<mrow> \amp  = 1.5\times8.31\times 300\times  \ln\left( \frac{17.9}{150}\right) = -8,000\ \text{J} \equiv -Q_C.</mrow>
+							</md>
+						</p>
+					</li>	
+					<li>
+						<p>
+							How much work is done by the gas in the CD-isothermal compression?
+							<me>
+								W_{CD} = Q_{CD}  = -8,000\ \text{J}.
+							</me>
+						</p>
+					</li>
+					<li>
+						<p>
+							How much work is done by the gas in the BC-adiabatic expansion?
+					
+							The adiabaticity of process gives the following for the work by the gas.
+							<me>
+								W_{BC} = -\Delta U = -\frac{5}{2} n R(T_C - T_B)  = 6,200\ \text{J}.
+							</me>
+						</p>
+					</li>
+					<li>
+						<p>
+							How much work is done by the gas in the DA-adiabatic compression?
+						
+							The adiabaticity of process gives the following for the work by the gas.
+							<me>
+								W_{DA} = -\Delta U = -\frac{5}{2} n R(T_A - T_D)  = -6,200\ \text{J}.
+							</me>
+						</p>
+					</li>
+					<li>
+						<p>
+							Find the value of the efficiency of the engine based on the net work and heat input. Compare this value of the efficiency to the value of the efficiency of the Carnot engine based on the temperatures of the two baths.
+
+							The net work:	
+							<md>
+								<mrow> W \amp = W_{AB} + W_{BC} + W_{CD} + W_{DA} </mrow>
+								<mrow> \amp =   13,200\ \text{J} + 6,200\ \text{J} -8,000\ \text{J}  -6,200\ \text{J} = 5,200 \ \text{J}.</mrow>
+							</md>
+							The heat input in the AB-process is
+							<me>
+								Q_H = 13,200\ \text{J}.
+							</me>
+							Therefore, the efficiency of the cycle is
+							<me>
+								\eta =\frac{5,200 \ \text{J}}{13,200\ \text{J}} = 0.394\ \ \text{or}\ \ 39.4\%.
+							</me>
+						</p>
+					</li>
+				</ol>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

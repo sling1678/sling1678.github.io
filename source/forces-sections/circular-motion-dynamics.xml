@@ -1,0 +1,462 @@
+<section xml:id="forces-Dynamics-of-Circular-Motion"><title> Dynamics of Cicular Motion</title>
+<idx><h>Circular Motion</h><h>Dynamics</h></idx>
+	<introduction>
+		<p>
+			In a previous chapter you learned about kinematics of circular motion. In that chapter we introduced two types of circular motion:
+			<ol>
+				<li><p>
+						<alert>Uniform circular motion</alert>. An object in a uniform circular motion has constant speed  when it goes around the circle. Even though speed is constant, velocity is not constant. As a result, there is an acceleration, which is always pointed towards the center of the circle, thus called <term>centripetal acceleration</term>. With <m>R</m> for radius of circle, <m>v</m> for speed, the magnitude of acceleration <m>\vec a</m>, to be denoted here by <m>a_c</m> is
+						<men>
+							a_c = \frac{v^2}{R}.
+						</men>
+					</p>
+				  </li>
+				<li><p>
+						<alert>Nonuniform circular motion</alert>. The speed of object in a nonuniform circular motion is not constant. Therefore, in addition to the centripetal acceleration, there is also a <term>tangential acceleration</term> in the forward or backward direction on the tangent to the circle. The formula for the magnitude of tangential acceleration, <m>a_T</m>, is equal to the absolute value of the rate at which speed is changing, i.e., derivative of speed.
+						<men>
+							a_T = \left| \frac{\Delta v}{\Delta t}\right| \rightarrow \left| \frac{dv}{dt}\right|.
+						</men>
+						The total acceleration of an object in circular motion will be a vector sum of <m>a_c</m> towards the center and <m>a_T</m> in the forward-tangential or backward-tangential direction.
+						<men>
+							\vec a = \vec a_c + \vec a_T.
+						</men>
+					</p>
+				  </li>
+			</ol>
+		</p>
+		<p>
+			In this section, we use <m>\vec F = m \vec a</m> to connect acceleration to the force(s) that are responsible for an object to move in a circle or a circular arc. We have seen that it is often necessary to analyze <m>\vec F = m \vec a</m> using Cartesian coordinates. Now, since the motion is circular, it is more appropriate to use polar coordinates.
+		</p>
+		<sidebyside widths="45%  5% 50%">
+			<p>
+				Sometimes, you can just pick an instant when object moving in <m>xy</m> plane around origin is just crossing <m>x</m> axis. If you do that then you will find that <m>\vec a_c</m> has direction <m>(-\hat i)</m> and  <m>\vec a_T</m> has direction <m>(+\hat j)</m> if speeding up and direction <m>(-\hat j)</m> if slowing down.
+			</p>
+			<p></p>
+			<figure xml:id="fig-circular-motion-acceleration-directions">
+				<caption></caption>
+				<image source="./images/forces/circular-motion-acceleration-directions.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Suppose, we have circular motion as shown in <xref ref="fig-circular-motion-acceleration-directions"/> with speeding up. Then, looking at forces on the object at the instant shown in the figure, we will conclude that
+			<mdn>
+				<mrow>\amp \text{(Centripetal: )}\ \ F_x^\text{net} = -m\frac{v^2}{R}</mrow>
+				<mrow>\amp \text{(Tangential: )}\ \ F_y^\text{net} =  m\frac{dv}{dt}</mrow>
+				<mrow>\amp \text{(Perpendicular to circle: )}\ \ F_z^\text{net} = 0</mrow>
+			</mdn>
+			Note that in the second equation we do not need negative sign when object is slowing down since <m>dv/dt</m> will already be negative in this case.			
+		</p>
+		<sidebyside widths="50% 50%">
+			<p>
+				Sometimes, direction of forces may be such that you must think in full three-dimensional space. In these situations, we find that information does flow from forces that act at an angle to the <m>z</m> axis. In <xref ref="fig-circular-motion-acceleration-directions-3d" />, the normal force is such a force and it will be involved in the circular motion.  
+			</p>
+
+			<figure xml:id="fig-circular-motion-acceleration-directions-3d">
+				<caption></caption>
+				<image source="./images/forces/circular-motion-acceleration-directions-3d.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+
+	<example xml:id="ex-Tension-in-a-Pendulum"><title>Tension in a Pendulum</title>
+
+		<statement>
+			<sidebyside widths="50% 10% 40%">			
+				<p>
+					A pendulum of length <m>l=1.2\text{ m}</m> and a bob of mass <m>0.4\text{ kg}</m> is swinging back and forth in a vertical plane. At some time the string makes an angle <m>\theta=30^\circ</m> with the vertical axis and the bob has a speed <m>v=1.5\text{ m/s}</m> and slowing down. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-tension-in-a-pendulum-statement">
+					<caption></caption>
+					<image source="./images/forces/ex-tension-in-a-pendulum-statement.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Find the centripetal acceleration, tangential acceleration and tension in the string.
+			</p>
+
+		</statement>
+		<!-- <hint><p>There are only two forces - gravity and tension.</p></hint> -->
+		<answer><p>
+			<m>a_c=1.88\text{ m/s}^2</m>,  <m>a_T = 4.9\text{ m/s}^2</m>, <m>T=4.15\text{ N}</m>.
+		</p></answer>
+		<solution>
+			<sidebyside widths="50% 10% 40%">	
+				<p>
+					Let us draw forces, acceleration directions, and the axes. We notice here that the two accelerations are perndicular to each other. With gravity vertically down, both gravity and tension have components along the radial (i.e., centripetal direction) but only gravity has the direction along the tangential direction.
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-tension-in-a-pendulum">
+					<caption></caption>
+					<image source="./images/forces/ex-tension-in-a-pendulum.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			Therefore, we get the following equations along the centripetal and tangential directions.
+			<md>
+				<mrow> \amp T - mg\cos\theta = m a_c</mrow>
+				<mrow> \amp mg\sin\theta = m a_T</mrow>
+			</md>
+			The centriperal acceleration has magnitude
+			<me>
+				a_c = \frac{v^2}{l} = \frac{1.5^2}{1.2} = 1.88\text{ m/s}^2.
+			</me>
+			Therefore, we get the following numerical values for tension and <m>a_T</m>.
+			<md>
+				<mrow> \amp T = mg\cos\theta + m a_c = 0.4(8.5 + 1.88) = 4.15\text{ N}.</mrow>
+				<mrow> \amp  a_T = g\sin\theta = 4.9\text{ m/s}^2.</mrow>
+			</md>			
+
+
+		</solution>
+	</example>
+
+
+
+	<example xml:id="ex-Conical-Pendulum"><title>Conical Pendulum</title>
+	<idx>Conical Pendulum</idx>
+
+		<statement>
+			<sidebyside widths="50% 10% 40%">			
+				<p>
+					A pendulum of length <m>l=1.2\text{ m}</m>  and mass <m>0.4\text{ kg}</m> is swung not in a vertical plane but on the surface of a cone. The bob goes in a circle at constant speed of <m>3.5\text{ m/s}</m> when the string makes an angle <m>\theta</m> with the vertical axis. At different speeds you get different angles. This is called <term>conical pendulum</term>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-conical-pendulum-circular-motion">
+					<caption></caption>
+					<image source="./images/forces/ex-conical-pendulum-circular-motion.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Find angle <m>\theta</m>, centripetal acceleration, tangential acceleration and tension in the string.
+			</p>
+
+		</statement>
+		<!-- <hint><p>
+			Think three-dimensionally and work with the plane containing the centripetal acceleration direction and the vertical axis.
+		</p></hint> -->
+		<answer><p>
+			<m>a_c = 12.85\text{ m/s}^2</m>, <m>a_T=0</m>, <m>\theta = 52.6^\circ</m>, <m>T=6.46\text{ N}</m>.
+		</p></answer>
+		<solution>
+			<sidebyside widths="50% 10% 40%">	
+				<p>
+					Let us draw forces and acceleration directions. Since speed is constant, tangential acceleration is zero. We also see that circle is in horizontal plane, which makes centripetal force in the horizontal plane. With gravity vertically down, gravity will have no component towards acceleration.
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-conical-pendulum-circular-motion-solution">
+					<caption></caption>
+					<image source="./images/forces/ex-conical-pendulum-circular-motion-solution.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			Therefore, we get the following equations of motion along the centripetal and vertical directions. Note: the tangential direction to circle just gives <m>0=0</m>.
+			<md>
+				<mrow> \amp T\sin\theta = m a_c = m \frac{v^2}{l\sin\theta}</mrow>
+				<mrow> \amp T\cos\theta - mg = 0</mrow>
+				
+			</md>
+			From these equations we get
+			<me>
+				\frac{\sin^2\theta}{\cos\theta} = \frac{v^2}{gl}.
+			</me>
+			Let <m>x = \cos\theta </m>. This gives a quadratic equation.
+			<me>
+				x^2 + b x - 1 = 0, \ \ \ b=\frac{v^2}{gl}
+			</me>
+			This gives <m>x=\cos\theta</m> to be 
+			<me>
+				\cos\theta = \frac{1}{2}\left[-b \pm \sqrt{b^2 + 4} \right].
+			</me>
+			Using the numerical values we get
+			<me>
+				\cos\theta = 0.607, -1.7.
+			</me>
+			Clearly <m>\cos\theta = -1.7</m> is unphysical. So, we get
+			<me>
+				\theta = \cos^{-1}(0.607) = 52.6^\circ.
+			</me>
+			Using this value, we get centripetal acceleration and tension to be
+			<md>
+				<mrow>\amp a_c = \frac{v^2}{l\sin\theta} = 12.85\text{ m/s}^2.</mrow>
+				<mrow>\amp T = \frac{mg}{\cos\theta} = 6.46\text{ N}.</mrow>
+
+			</md>
+
+
+		</solution>
+	</example>
+
+
+
+
+	<example xml:id="ex-Car-Rounding-a-Turn-on-a-Slippery-Banked-Road"><title>Car Rounding a Turn on a Slippery Banked Road</title>
+	
+
+		<statement>
+
+			<sidebyside widths="50% 10% 40%">	
+				<p>
+					<xref ref="fig-rounding-a-bend-on-a-banked-road"/> shows a car rounding a bend in the road of radius of curvature <m>R=200\text{ m}</m> that has a banking angle of <m>15^\circ</m>. Ordinarily, the coefficient of static friction between tires and road is <m>\mu_s = 0.3</m> but on a rainy night the road became slick and coefficient of friction dropped to <m>\mu_s = 0.05</m>. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-rounding-a-bend-on-a-banked-road">
+					<caption></caption>
+					<image source="./images/forces/rounding-a-bend-on-a-banked-road.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				(a) What is the safest speed the car can round the bend without sliding? (b) If car's mass is <m>3,000\text{ kg}</m>, what is the magnitude of normal force on the car? 
+			</p>
+
+		</statement>
+		<!-- <hint><p>(1) Normal is not straight up, but perpendicular to the surface of the road. (2) Both normal force and static friction force provide the force for centripetal acceleration.</p></hint> -->
+		<answer><p>
+			<m>N = 28,332\text{ N},\ \ v = 24.1\text{ m/s}</m>.
+		</p></answer>
+		<solution>
+			<p>Notice the following aspects of this problem. (1) Normal is not straight up, but perpendicular to the surface of the road. (2) Both normal force and static friction force provide the force for centripetal acceleration.</p>
+			<sidebyside widths="50% 50%">	
+				<p>
+					<xref ref="fig-rounding-a-bend-on-a-banked-road-solution"/> shows free-body diagram of three forces on the car, its weight, normal which is perpendicular to the road surface, and static friction that is pointed down the road.   
+				</p>
+				<figure xml:id="fig-rounding-a-bend-on-a-banked-road-solution">
+					<caption></caption>
+					<image source="./images/forces/rounding-a-bend-on-a-banked-road-solution.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				There are also rolling friction force in the forward direction and air drag which are not shown since we are only interested in the forces that would give us the conditions associated with the circular motion.
+			</p>
+			<p>
+				We will assume uniform circular motion at unknown speed <m>v</m>. Since we are looking for maximum speed, we will be using maximum static friction, i.e., <m>F_s = F_s^\text{max} = \mu_s N</m>. Applying  
+				<m>\vec F=m\vec a</m> along <m>x</m> and <m>y</m> axes gives us
+				<md>
+					<mrow> \amp N\sin\theta + \mu_s N \cos\theta = m \frac{v^2}{R}. </mrow>
+					<mrow> \amp N\cos\theta - \mu_s N \sin\theta - m g = 0. </mrow>
+				</md>
+				Solving these for <m>N</m>, we get
+				<me>
+					N = \frac{mg}{\cos\theta - \mu_s  \sin\theta}.
+				</me>
+				For <m>v</m> we get
+				<me>
+					v = \sqrt{\frac{gR( \sin\theta + \mu_s \cos\theta )}{\cos\theta - \mu_s  \sin\theta}}.
+				</me>
+				Since we are examining the slick road condition, we will use <m>\mu_s = 0.05</m>. With given values of <m>\theta</m> and <m>R</m> and using <m>g=9.81\text{ m/s}^2</m>, I got the following values.
+				<me>
+					N = 28,332\text{ N},\ \ v = 24.1\text{ m/s}.
+				</me>
+			</p>
+
+
+		</solution>
+	</example>
+
+
+
+
+
+	<example xml:id="ex-Motion-in-a-Vertical-Circle"><title>Motion in a Vertical Circle</title> <idx><h>Motion</h><h>Verical Circle</h></idx>
+
+		<statement>
+			<p>
+				
+			</p>
+			<sidebyside widths="50% 10% 40%">	
+				<p>
+					You probably have played with hot wheel cars and tracks. A simple one with a vertical loop is shown in <xref ref="fig-hot_wheels_vertical_circle_track"/>. If a toy car has sufficient speed when at the very top, it will go around without falling off the track. Suppose the radius of the circular track is <m>0.4\text{ m}</m>. What is the minimum speed required?
+				</p>
+				<p></p>
+				<figure xml:id="fig-hot_wheels_vertical_circle_track">
+					<caption>Photo from HotWheels<trademark/>. </caption>
+					<image source="./images/forces/hot_wheels_vertical_circle_track.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+
+			</p>
+			
+		</statement>
+		<!-- <hint><p>At the top, minimum speed will be such that no normal force would be required for the centripetal acceleration. </p></hint> -->
+		<answer><p><m>1.98\text{ m/s}</m>.</p></answer>
+		<solution>
+			<p>Notice: at the top, minimum speed will be such that no normal force would be required for the centripetal acceleration. </p>
+			<sidebyside widths="50% 10% 30% 10%">	
+				<p>
+					<xref ref="fig-car-in-a-vertica-circle-at-the-top"/>  shows normal force <m>N</m> and weight <m>mg</m> on the toy car when it is at the top. It also shows the direction of velocity and centripetal acceleration. Other forces on the car do not have any component in the vertical direction.
+				</p>
+				<p></p>
+				<figure xml:id="fig-car-in-a-vertica-circle-at-the-top">
+					<caption></caption>
+					<image source="./images/forces/car-in-a-vertica-circle-at-the-top.png" width="70%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+			Equation of motion (<m>\vec F = m \vec a</m>) in the vertical direction gives us
+			<me>
+				N + mg = m \frac{v^2}{R},
+			</me>
+			where I have used <m>a_c = v^2/R</m>. From this equation, it is clear that <m>v</m> would be minimum if <m>N=0</m>. This means that toy will be touching the track but not pressing on it. At higher speed, it will also push on the track, which will cause non-zero normal. Therefore, we seek <m>v</m> in
+			<me>
+				mg = m \frac{v^2}{R}.
+			</me>
+			Taking the positive root for <m>v</m>, since it is speed.
+			<me>
+				v = +\sqrt{ gR }.
+			</me>
+			Using numerical values we get
+			<me>
+				v = +\sqrt{ 9.81 \times 0.4 } = 1.98\text{ m/s}.
+			</me>
+
+
+
+		</solution>
+	</example>
+
+	</introduction>
+
+
+
+
+	<exercises>
+
+
+	<exercise xml:id="ex-A-Person-at-the-Wall-of-a-Spinning-Drum"><title>A Person at the Wall of a Spinning Drum </title> <idx>Spinning Drum</idx>
+
+		<statement>
+
+
+			<sidebyside widths="50% 10% 30% 10%">	
+				<p>
+					In amusement parks, sometimes you find an interesting ride shaped like a drum. You walk in and stand agains the wall as shown in <xref ref="fig-man-at-edge-of-spinning-drum"/>. Then, the drum starts spinning at higher and higher speed. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-man-at-edge-of-spinning-drum">
+					<caption></caption>
+					<image source="./images/forces/man-at-edge-of-spinning-drum.png" width="70%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+			<p>
+				At some speed, the floor is removed from the bottom. A light shows you the pit underneath, but you do not fall into the pit. If minimum coefficient of friction between most frictionless cloth and the wall is 0.04 and radius of the drum is <m>1.5\text{ m}</m>, what must be the minimum angular speed, <m>\omega</m>, before operator may remove the floor in the ride?
+			</p>
+		</statement>
+		<hint><p>
+			(1) Note that arc-angle relation gives relation between angular speed and regular speed, <m>v = \omega R</m>. (2) The centripetally directed force is the Normal force in this setting.
+		</p></hint>
+		<answer><p>
+			<m>12.8\text{ rad/sec}</m>.
+
+		</p></answer>
+		<solution>
+			<sidebyside widths="50% 10% 30% 10%">	
+				<p>
+					<xref ref="fig-man-at-edge-of-spinning-drum-solution"/> shows free-body diagram of forces on one of the riders. Only normal force has component in the direction of the centripetal acceleration. The force of weight must be balanced by at most the maximum static friction available for that person. The tangential acceleration when speeding is of no concern in this problem. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-man-at-edge-of-spinning-drum-solution">
+					<caption></caption>
+					<image source="./images/forces/man-at-edge-of-spinning-drum-solution.png" width="70%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+			<p>
+				Therefore, we will only deal with the plane of forces in <xref ref="fig-man-at-edge-of-spinning-drum-solution"/>. From this, we can immediately write down the following two equations of motion based on <m>\vec F = m \vec a</m>.
+				<md>
+					<mrow>\amp N = m\frac{v^2}{R}. </mrow>
+					<mrow>\amp \mu_s N - m g = 0. </mrow>
+				</md>
+				We also note that since the rider is at the edge, his/her speed is based on arc length and angular speed is based on angle. Therefore, from <m>s=\theta R</m>, we have <m>v = \omega R</m>. From these, we have
+				<me>
+					\omega = \sqrt{\frac{g}{\mu_s R}} = 12.8\text{ rad/sec}.
+				</me> 
+			</p>
+
+			
+		</solution>
+	</exercise>
+
+
+
+
+	<exercise xml:id="ex-Practice-with-a-Friend-Rolling-a-Ball-Inside-a-Funnel"><title>Practice with a Friend: Rolling a Ball Inside a Funnel</title>
+
+		<statement>
+			<sidebyside widths="50% 10% 40%">	
+				<p>
+					A ball of mass <m>0.150\text{  kg}</m> is going around in a circle of radius <m>0.4\text{ m}</m> inside a funnel as shown in <xref ref="fig-circular-motion-ball-in-a-funnel"/> at a constant speed of <m>3.0\text{ m/s}</m>. Let coefficient of static friction between ball and the funnel to have the value <m>\mu_s=0.5</m>. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-circular-motion-ball-in-a-funnel">
+					<caption></caption>
+					<image source="./images/forces/circular-motion-ball-in-a-funnel.png" width="70%"/>
+				</figure>
+			</sidebyside>
+ 			<p>
+ 				Find angle <m>\theta</m>, centripetal acceleration, tangential acceleration and magnitude of the normal force on the ball from the funnel. Assume maximum static friction acting down the incline direction of the funnel. 
+ 			</p>
+ 			<p>Answer Hint: a quick calculation gave me <m>\theta = 50^\circ</m>.
+ 			</p>
+		</statement>
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Practice-with-a-Friend-How-Hard-Does-the-Toy-Car-Press-on-the-Track"><title>Practice with a Friend: How Hard Does the Toy Car Press on the Track?</title>
+
+		<statement>
+			<p>
+				In <xref ref="ex-Motion-in-a-Vertical-Circle"/>, you found minimum speed required when it at the top. Suppose the toy was going at speed <m>4.43\text{ m/s}</m> when at the bottom of the track. With what force must the toy be pressing the track when at the bottom? (If you think that it is equal to <m>mg</m>, you would be wrong!)
+			</p>
+		</statement>
+		<hint><p>(1) Find <m>m</m> from the answer in  <xref ref="ex-Motion-in-a-Vertical-Circle"/>. (2) Set up <m>\vec F = m\vec a</m> at the bottom of the track and this time find <m>N</m>. </p></hint>
+		<!-- <solution>
+			<p>
+				Solution not provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+
+	<exercise xml:id="ex-Circular-Motion-of-a-Block-Supported-by-a-Hanging-Mass"><title>Practice with a Friend: Circular Motion of a Block Supported by a Hanging Mass</title>
+
+		<statement>
+			<sidebyside widths="50% 10% 40%">	
+				<p>
+					A string is passed through a hole in a table and two blocks are attached to the two ends of the string as shown in <xref ref="fig-two-blocks-string-through-hole-in-table"/>.  The block on the table (<m>m_2</m>) is rotated in a circle of radius <m>R</m>. When the angular velocity has a critical value <m>\omega=\omega_c</m>, the hanging mass <m>m_1</m> does not move at all. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-two-blocks-string-through-hole-in-table">
+					<caption></caption>
+					<image source="./images/forces/two-blocks-string-through-hole-in-table.png" width="70%"/>
+				</figure>
+				<!-- <p></p> -->
+			</sidebyside>
+			<p>
+				(a) Find an expression of the critical value <m>\omega_c</m> in terms of the given quantities and <m>g</m>. Assume table to be frictionless. (b) If <m>m_1=1.0\text{ kg}</m>, <m>m_2=2.0\text{ kg}</m>, <m>R=0.5\text{ m}</m>, what is the speed of the block <m>m_1</m> when at cirtical angular speed?
+			</p>
+			<p>Answer Hint: (a) when <m>m_1=m_2</m>,  <m>R=1</m>, <m>\omega_c=\sqrt{g}</m>.   </p>
+		</statement>
+		<hint><p>(1) You need two Free Body diagrams. (2) <m>v = \omega r</m> is the relation between speed, angular speed, and radius of the circle. </p></hint>
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+
+
+	</exercises>
+
+
+
+
+
+
+</section>

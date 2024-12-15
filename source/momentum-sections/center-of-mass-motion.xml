@@ -1,0 +1,568 @@
+<section xml:id="momentum-Center-of-Mass-Motion"><title> Center of Mass Motion </title>
+	<subsection> <title> Center of Mass Velocity, Acceleration, and Momentum </title>
+		<p>
+			Center of mass of an object provides an important way to follow the overall motion of the object. We have already seen the formula for the position of the center of mass. For a body that is a collection of discrete masses <m>m_1</m> at <m>\vec r_1</m>, <m>m_2</m> at <m>\vec r_2</m>, <m>\cdots</m>, <m>m_N</m> at <m>\vec r_N</m>, the center of mass will be at <m>\vec R_\text{CM}</m>, given by
+			<men xml:id="eq-cm-position-N-particles">
+				\vec R_\text{CM} =  \frac{1}{M}\left( m_1\vec r_1 + m_2\vec r_2 + \cdots + m_N\vec r_N \right),
+			</men> 
+			where total mass <m>M=m_1+m_2+\cdots+m_N</m> and <m>\vec r_i</m> actually refer to the center of mass of the <m>i^\text{th}</m> part. Now, studying the rate at which the center of mass <m>\vec R_\text{CM}</m> changes will give us the velocity of center of mass, <m>\vec V_{\text{CM}}</m>. Taking a time derivate of both sides, it is immedeiately clear that
+			<men xml:id="eq-cm-velocity-non-calculus">
+				\vec V_{\text{CM}}\equiv \frac{d \vec R_\text{CM}}{dt}   = \dfrac{m_1\vec v_1 + m_2\vec v_2 + \cdots + m_N\vec v_N }{M}.
+			</men>
+			Similarly, when we look at the rate which <m>\vec V_{\text{CM}}</m> changes, we get the acceleration of the center of mass, <m>\vec A_{\text{CM}}</m>. By taking one more derivative gives
+			<men xml:id="eq-cm-acceleration-non-calculus">
+				\vec A_{\text{CM}}\equiv \frac{d \vec V_\text{CM}}{dt}   = \dfrac{m_1\vec a_1 + m_2\vec a_2 + \cdots + m_N\vec a_N }{M}. 
+			</men>
+		</p>
+		<p>
+			The total momentum of all particles will be
+			<me>
+				\vec p_\text{total} = m_1\vec v_1 + m_2\vec v_2 + \cdots + m_N\vec v_N.
+			</me>
+			Now, this is just <m>M \vec V_{\text{CM}}</m> as you can see from Eq. <xref ref="eq-cm-velocity-non-calculus"/> when you multiply it by <m>M</m>.
+			<me>
+				M \vec V_{\text{CM}}  = m_1\vec v_1 + m_2\vec v_2 + \cdots + m_N\vec v_N
+			</me>
+			We call the product <m>M \vec V_{\text{CM}}</m> the <term>center of mass momentum</term>, <m>\vec P_{\text{CM}}</m>, which is actually equal to the total momentum of all particles in the body.
+			<men>
+				\vec P_{\text{CM}} = M \vec V_{\text{CM}} = \vec p_1 + \vec p_2 + \cdots + \vec p_N = \vec p_\text{total}. 
+			</men>
+
+
+		</p>
+	</subsection>
+
+	<subsection> <title> Center of Mass Motion - Constant Mass Case</title>
+	<idx><h>Center of Mass</h><h>Constant Mass Motion</h></idx>
+		<p>
+			Let us consider a system with <m> N </m> parts of masses <m> m_1 </m>, <m> m_2 </m>, <m> \cdots </m>, <m> m_N </m>. Let <m> \vec F_1 </m>, <m> \vec F_2 </m>, <m> \cdots </m>, <m> \vec F_N </m> be forces acting on those parts. For the sake of simplicity, let us look at the constant mass system, i.e., where masss of each part is fixed in time.
+		</p>
+		<p>
+			Now, we write Newton's equation of motion for each part for constant mass.
+			<md>
+				<mrow> \amp \vec F_1 = m_1 \vec a_1 </mrow>
+				<mrow> \amp \vec F_2 = m_2 \vec a_2 </mrow>
+				<mrow> \amp \cdots </mrow>
+				<mrow> \amp \vec F_N = m_N \vec a_N </mrow>
+			</md>
+			Summing them, we find that the left side can be written as sum over all the forces from objects outside the <m> N </m> parts making up the system, which we call the <alert> external forces </alert> <m>\vec F_{\text{net}}^{\text{ext}}</m>, and a sum over all the forces that one part applies on another part, wwhich we call the <alert> internal forces </alert> <m>\vec F_{\text{net}}^{\text{int}}</m>.
+			<me>
+				\text{Left Side } = \vec F_1 + \vec F_2 + \cdots + \vec F_N = \vec F_{\text{net}}^{\text{ext}} + \vec F_{\text{net}}^{\text{int}}
+			</me>
+			In this expression, internal forces, say by part 1 on 2 and by part 2 on 1 come in pairs, which by Newton's third law must sum to zero. Therefore, we will have
+			<me>
+				\vec F_{\text{net}}^{\text{int}} = 0.
+			</me> 
+			That gives us the following simplified equation after summing the equations of all <m> N </m> parts.
+			<me>
+				F_{\text{net}}^{\text{ext}} = m_ 1\vec a_1 + m_2\vec a_2 + \cdots + m_N\vec a_N,
+			</me>
+			whose right side is just the total mass <m> M </m> times the center-of-mass acceleration <m> \vec A_{\text{CM}} </m>.
+			<men xml:id="eq-cm-eom-fext-ma">
+				F_{\text{net}}^{\text{ext}} = M \vec A_{\text{CM}}.
+			</men>
+			It is interesting that the overall motion of a malti-part system can be captured essentially by the motion of a single (fictitious) particle of total mass placed at the center of mass.  This is the equation we solve whenever we study the overall translation motion of finite-size objects since they are inherently mutiparticle systems. 
+		</p>
+		<p><alert>General Case (Calculus):</alert></p>
+		<p>
+			<idx><h>Center of Mass</h><h>General Motion</h></idx>
+			We have seen before that the general case of mass varying as well as constant mass systems is given in terms of rate of change of momentum.
+			<me>
+				\vec F = \frac{d\vec p}{dt}. 
+			</me>
+			Now, if you apply this to the <m>N</m>-particle system, you will get
+			<me>
+				F_{\text{net}}^{\text{ext}} = \frac{d\vec P_\text{CM}}{dt} = \frac{d\vec p_\text{total}}{dt}. 
+			</me>
+			Similarly, the integrated form in terms of impulse and change in momentum will be
+			<men>
+				\vec J_{\text{net}}^{\text{ext}}= \int F_{\text{net}}^{\text{ext}} dt = \vec p_{\text{total},f} - \vec p_{\text{total},i},
+			</men>
+			i.e., the change in momentum over the interval <m>i\rightarrow f</m> is equal to the net impulse by only the external forces on various parts of the body.
+		</p>
+
+	</subsection>
+
+
+	<!-- <subsection> <title> (Calculus) Center of Mass Velocity, Acceleration, and Momentum </title>
+		<p>(You can safely skip this section)</p>
+		<p> 
+			To study the motion of the center of mass (CM) of a multi-part system, we need to define velocity and acceleration of the CM. We use Calculus to do that. Recall that velocity is defined as the time derivative of position and acceleration the time derivative of velocity. We do the same with CM-position in Eq. <xref ref="eq-cm-position-N-particles"/>.
+				<mdn >
+					<mrow xml:id="eq-cm-velocity"> \vec V_{\text{CM}} \amp = \dfrac{1}{M}\dfrac{d}{dt}\left( m_1\vec r_1 + m_2\vec r_2 + \cdots + m_N\vec r_N \right), </mrow>
+					<mrow number="No"> \amp =\dfrac{m_1\vec v_1 + m_2\vec v_2 + \cdots + m_N\vec v_N }{M}, </mrow>
+				</mdn>
+				where <m> \vec v_1 </m>, <m> \vec v_2 </m>, <m> \cdots </m>, <m> \vec v_N </m>, are the velocities of the individual parts, or more precisely, the velocities of the centers of masses of the parts. Therefore, we find that the total momentum, i.e.,  the sum of the momenta of parts, is equal to the total mass times the momentum of the center of mass. 
+				<men xml:id="eq-cm-momentum-equals-total-momentum">
+					m_1\vec v_1 + m_2\vec v_2 + \cdots + m_N\vec v_N = M\vec V_{\text{CM}} \equiv \vec P_{\text{CM}}. 
+				</men>
+				We call the <m> M\vec V_{\text{CM}} </m> the <term> center-of-mass momentum</term>, <m> \vec P_{\text{CM}}</m>. Writing momentum of the parts as <m> \vec p_1</m>, <m> \vec p_2</m>, etc, we get
+				<men xml:id="eq-cm-momentum-equals-total-momentum-2">
+					\vec p_{\text{tot}} = \vec p_1 + \vec p_2 + \cdots = \vec P_{\text{CM}}. 
+				</men>
+		</p>
+		<p>
+			Taking a derivative of <m> \vec V_{\text{CM}}</m> with respect to <m> t </m> will give the acceleration of the CM of a system whose mass is constant in time, 
+				<mdn >
+					<mrow xml:id="eq-cm-acceleration"> \vec A_{\text{CM}} \amp = \dfrac{1}{M}\dfrac{d}{dt}\left( m_1\vec v_1 + m_2\vec v_2 + \cdots + m_N\vec v_N \right), </mrow>
+					<mrow number="No"> \amp = \dfrac{m_1\vec a_1 + m_2\vec a_2 + \cdots + m_N\vec a_N }{M}, </mrow>
+				</mdn>				
+				where <m> \vec a_1 </m>, <m> \vec a_2 </m>, <m> \cdots </m>, <m> \vec a_N </m>, are the accelerations of the individual parts.
+		</p>
+	</subsection>
+
+	<subsection> <title> (Calculus) Center of Mass Motion - General Case </title>
+		<p>(You can safely skip this section)</p>
+		<p>
+			For the general case of <m> N </m> part system, we will have to start with equations of motion of individual parts in the momentum form.
+				<md>
+					<mrow> \amp \vec F_1 = \dfrac{d\vec p_1}{dt} </mrow>
+					<mrow> \amp \vec F_2 = \dfrac{d\vec p_2}{dt}  </mrow>
+					<mrow> \amp \cdots </mrow>
+					<mrow> \amp \vec F_N = \dfrac{d\vec p_N}{dt}  </mrow>
+				</md>
+				Now, summing them, we get the left side to equal the <m> F_{\text{net}}^{\text{ext}} </m> as above, and the right side equals the rate of change of total momentum.
+				<me>
+					\vec F_{\text{net}}^{\text{ext}} = \dfrac{d}{dt} \left( \vec p_1 + \vec p_2 + \cdots + \vec p_N \right).
+				</me>
+				But by Eq. <xref ref="eq-cm-momentum-equals-total-momentum-2" />, we can replace the sum of momenta of the parts by the center-of-mass momentum, or the total momentum.
+				<men xml:id="eq-cm-eom-fext-dpdt">
+					\vec F_{\text{net}}^{\text{ext}} = \dfrac{d \vec P_{\text{CM}}}{dt} = \dfrac{d \vec p_{\text{tot}}}{dt},
+				</men>				
+				where <m> \vec P_{\text{CM}} = M \vec V_{\text{CM}}</m>. This equation takes care of even those situations in which the total mass of the system is changing, regardless of which part that may be gaining or losing mass. Of course, if a system is not gaining or losing mass, we would use much simpler analysis based on Eq. <xref ref="eq-cm-eom-fext-ma" />.
+		</p>
+		<p>
+			Eq. <xref ref="eq-cm-eom-fext-dpdt"/> can be integrated to yield the following important relation between the change in total momentum and impulse by external forces.
+			<men>
+				\vec p_{\text{tot},f} - \vec p_{\text{tot},i} = \vec J_{\text{net}}^{\text{ext}},
+			</men>
+			where
+			<men> 
+				\vec J_{\text{net}}^{\text{ext}} = \int_{t_i}^{t_f}\, \vec F_{\text{net}}^{\text{ext}}\, dt.
+			</men>
+		</p>
+	</subsection> -->
+
+
+	<example><title> CM of an exploding shell </title>
+		<p>
+			As an example consider the motion of pieces of an exploded shell in free-fall.  
+		</p>
+ 
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				Although the pieces fly away in various directions, the CM falls as if no explosion had taken place since during the explosion all forces are internal to the system. 
+				The motion of CM is that of a single particle with total mass of the system.  The fictitious particle at the CM falls freely with acceleration equal to g, the acceleration due to gravity, <em>until one of the pieces hits the ground.</em> 			  
+			</p>
+			<p> </p>
+			<image source="./images/forces/example-exploding-shell.png" width="50%" />
+		</sidebyside> 
+		At the instant first piece hits the ground, there will be a new upward impulse on the collective body. That is, the CM's free fall motion will end.
+	</example>
+
+
+	<example xml:id="ex-The-Motion-of-the-Center-of-Mass-of-a-Diver"><title> The Motion of the Center of Mass of a Diver </title>
+
+		<statement>
+			<p>
+				A diver jumps off a board with initial speed <m>12\text{ m/s}</m> at an angle <m>60^\circ</m> with the horizontal direction. She falls a total height of <m>8\text{ m}</m> before entering water. Find the speed of her center of mass when she enters water? 
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  The CM moves as if it were a particle in free fall. </p> </hint> -->
+		<answer> <p> <m> 17.4\text{ m/s}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Since the only force on her body after she takes off is her weight. The CM will obey the free fall equations. Therefore, we start with components of her initial velocity.
+				<md>
+					<mrow> v_{ix} \amp = 12\,\cos\,60^{\circ} = 6\text{ m/s}, </mrow>
+					<mrow> v_{iy} \amp = 12\,\sin\,60^{\circ} = 10.4\text{ m/s}. </mrow>
+				</md>
+				The final <m>v_x</m> is same as the initial, and the final  <m>v_y</m> is obtained from
+				<me>
+					v_{fy} = - \sqrt{ v_{iy}^2 - 2 g \Delta y},
+				</me>
+				where <m> \Delta y = - 8\text{ m}</m>, which is negative since the final location is below the initial point, and <m> v_{fy}</m> is negative since it is pointed down while positive <m>y</m> axis is pointed up.
+				<me>
+					v_{fy} = -\sqrt{ 10.4^2 + 2\times9.81\times 8} = -16.3\text{ m/s}.
+				</me>
+				From <m>v_{fx}</m> and <m> v_{fy}</m> we get the speed just before she enters water.
+				<me>
+					v_f = \sqrt{ v_{fx}^2 + v_{fy}^2 } = \sqrt{6^2 + 16.3^2} = 17.4\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="ex-Impulse-for-a-Vertical-Jump"><title>Impulse for a Vertical Jump</title>
+
+		<statement>
+			<p>
+				A <m>78.0\text{-kg}</m> athlete jumps straight up so that his CM moves by a height of <m>1.2\text{ m}</m> after he leaves the ground. Find the magnitude of impulse from the ground. 
+			</p>
+		</statement>
+		<!-- <hint><p>
+			Impulse will equal <m>mv_0</m> where <m>v_0</m> is the velocity of CM just before the athlete leaves ground.
+		</p></hint> -->
+		<answer><p>
+			<m>378.3\text{ N.s}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The jump is due to push by the athlete on the ground which causes a normal force that exceeds his weight and gives upward momentum when he leaves the ground. This force from the ground during the jumping process is responsible for imparting initial upward momentum.
+			</p>
+			<p>
+				Let <m>v_0</m> be the velocity pointed upwards at the instant athlete leaves the ground and  <m>m</m> mass of the athlete. Then, the change in momentum from zero to <m>mv_0</m> will equal the the impulse by ground. Let us work with <m>y</m> axis pointed up. Then, <m>y</m>-component of impulse will be
+				<me>
+					J_y = \Delta p_y = mv_0.,
+				</me>
+				The CM starts with velocity <m>v_0</m> and has constant acceleration under the external force of gravity so that its velocity is zero at maximum height <m>h</m>. Using constant acceleration of the motion of CM along <m>y</m> axis we get
+				<me>
+					0 - v_0^2 = - 2 g h\ \ \longrightarrow\ \ v_0 = \sqrt{2gh}.
+				</me>
+				Hence, impulse by ground is
+				<me>
+					J = m\sqrt{2gh} = 78\sqrt{2\times 1.2\times 9.8} = 378.3\text{ N.s}.
+				</me>
+
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="ex-Speed-When-Jumping-Off-Vertically"><title> Speed When Jumping Off Vertically </title>
+		<statement>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					<p>
+						Suppose you are trying to practice a vertical jump. You crouch down and push against the ground. 
+					</p> 
+				</p>
+				<p> </p>
+				<image source="./images/momentum/pr-cm-speed-jumping-off-ground.png" width="70%"/>
+		</sidebyside>
+		<p>
+			The magnitude of the normal force from the ground on you varies with time as shown in <xref ref="fig-pr-cm-speed-jumping-off-ground-force"/> of <m>F</m> versus <m>t</m>. The initial normal force is just your weight. As you push down, the normal force increases. You leave the ground at the point normal force is zero.
+		</p>
+
+		<figure xml:id="fig-pr-cm-speed-jumping-off-ground-force">
+			<caption>
+				Figure for <xref ref="ex-Speed-When-Jumping-Off-Vertically"/>.
+			</caption>
+			<image source="./images/momentum/pr-cm-speed-jumping-off-ground-force.png" width="70%"/>
+		</figure>
+			
+		<p>
+			As a net result of normal force from the ground, and weight, your center of mass has acceleration upward. 
+			What will be your speed at the instant you are no longer in contact with the ground?
+		</p>
+
+
+
+
+		</statement>
+		<!-- <hint> <p> Add the area under the curve to get impulse from the normal force. Then, subtract the impulse from weight since it is in opposite direction. Use the net impulse to deduce the change in momentum of the center of mass.  </p> </hint> -->
+		<answer> <p>  <m> 1.47\text{ m/s}.</m> </p> </answer>
+		<solution> 
+			<p>
+				Let positive <m>y</m> axis be pointed up.  We will implement the following law for the center of mass since CM momentum is equal to <m>p_\text{tot}</m>.
+				<me>
+					J_y^{\text{net}} = \Delta p_y^{CM}.
+				</me>
+				To get the net impulse, we need to vectorially add up impulses from all forces on the body. We have two forces on the body here - the weight and the normal force. From <m>t=0</m> point in <xref ref="fig-pr-cm-speed-jumping-off-ground-force"/>, we note that magnitude of weight is <m>500\text{ N}</m>. Since weight has negative <m>y</m> component, its <m>J_y</m> will be negative.
+				<me>
+					J_y^{\text{weight}} = - 500\text{ N}\times 0.200\text{ s} = -100\text{ N.s}.
+				</me> 
+				The impulse from the normal force is the area under the given plot.
+				<md>
+					<mrow> J_y^{\text{normal}} \amp =  \left( 500\times 0.2 - \dfrac{500\times 0.02}{2}\right) </mrow>
+					<mrow> \amp \ \ \ \ + \dfrac{1000\times 0.08}{2} + 1000\times 0.02 + \dfrac{1000 \times 0.04}{2}, </mrow>
+					<mrow>  \amp = 175\text{ N.s}, </mrow>
+				</md>
+				which is obtained by slicing the area into triangles and rectangle. Therefore, 
+				<me>
+					J_y^{\text{net}} = 175\text{ N.s} - 100\text{ N.s} = 75\text{ N.s}.
+				</me>
+				The mass of the person is obtained from the weight.
+				<me>
+					m = \dfrac{500\text{ N}}{9.81\text{ m/s}^2} = 51\text{ kg}.
+				</me>
+				Initially, the momentum was zero. Therefore, the velocity at the end is
+				<me>
+					v_{\text{cm}} = \dfrac{75\text{ N.s}}{51\text{ kg}} = 1.47\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+
+
+
+
+
+
+
+
+	<exercises>
+
+
+	<exercise xml:id="ex-Motion-of-Center-of-Mass-of-Two-Blocks-Attached-by-a-Spring"><title>Motion of Center of Mass of Two Blocks Attached by a Spring</title>
+
+		<statement>
+
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					Two blocks of mass <m>m</m> each is attached by a spring of spring constant <m>k</m> and unstretched length <m>l_0</m>. The blocks are placed on a horizontal frrictionless track. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-two-blocks-atttached-by-a-spring">
+					<caption></caption>
+					<image source="./images/momentum/two-blocks-atttached-by-a-spring.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				While holding one of the blocks, say B in the figure, the other block is pushed in so that spring compresses by <m>D</m>, and then everything is released from rest at <m>t=0</m>. Use <m>x</m>-axis so that at <m>t=0</m>, <m>x_A=D</m> and <m>x_B=l_0</m>.
+			</p>
+			<p>
+				Find the position of the center of mass, <m>x_\text{cm}</m>, at an arbitrary instant <m>t</m>. 
+				<!-- (b)  Let <m>x=x_B-x_A</m> be relative position of B with respect to A, also called <term>relative coordinate</term>. Find <m>x(t)</m>. (c) Use (a) and (b) to find <m>x_A(t)</m> and <m>x_B(t)</m>. -->
+			</p>
+			
+		</statement>
+		<hint><p>
+			Since there is no external force, <m>x_\text{cm}</m> will remain fixed in time. You can show this by a detailed calculation.
+		</p></hint>
+		<answer><p>
+			<m>x_\text{cm} (t)= \frac{D+l_0}{2}</m>.
+		</p></answer>
+		<solution><title></title>
+			<p>
+				Since there is no external force, <m>x_\text{cm}</m> will remain fixed in time. Since the center of mass is at <m>x=(D+l_0)/2</m> at <m>t=0</m>, it will remain there. This does not mean A and B do not move - they do, but their CM remains at the same point in space. We can also show this by a detailed calculation as follows.
+			</p>
+
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					<xref ref="fig-two-blocks-atttached-by-a-spring-solution"/> shows situation at an arbitrary instant when the spring is stretched. The spring forces on the two blocks are shown. 
+
+				</p>
+
+				<p></p>
+				<figure xml:id="fig-two-blocks-atttached-by-a-spring-solution">
+					<caption></caption>
+					<image source="./images/momentum/two-blocks-atttached-by-a-spring-solution.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				The <m>x</m>-equations of motion for the two blocks will be
+					<mdn>
+						<mrow xml:id="eq-two-blocks-atttached-by-a-spring-eom-A">\amp m_A\frac{d^2x_A}{dt^2} = k (x_B - x_A - l_0) </mrow>
+						<mrow xml:id="eq-two-blocks-atttached-by-a-spring-eom-B">\amp m_B\frac{d^2x_B}{dt^2} = -k (x_B - x_A - l_0) </mrow>
+					</mdn>
+				Here  <m>m_A=m_B=m</m>  and  <m> x_B \gt x_A</m>. Since center of mass is give by
+				<me>
+					x_\text{cm} = \frac{1}{2}\left( x_A + x_B \right),
+				</me>
+				we can take two derivatives with respect to time to get
+				<me>
+					\frac{d^2x_\text{cm}}{dt^2}= \frac{1}{2}\left( \frac{d^2x_A}{dt^2}  + \frac{d^2x_B}{dt^2} \right).
+				</me>
+				Using the equations of motions for <m>x_A</m> and <m>x_B</m>, we immediately get
+				<me>
+					\frac{d^2x_\text{cm}}{dt^2} = 0.
+				</me>
+				This has a simple solution.
+				<men xml:id="eq-wo-blocks-atttached-by-a-spring-cm-gen-sol">
+					x_\text{cm}(t) = a t + b,
+				</men>
+				where <m>a</m> and <m>b</m> will be fixed from the initial conditions.
+				<me>
+					x_A=D,\ \ x_B = l_0,\ \ v_A = 0 ,\ \ v_B=0.
+				</me>
+				Writing Eq. <xref ref="eq-wo-blocks-atttached-by-a-spring-cm-gen-sol"/> in terms of <m>x_A</m> and <m>x_B</m> and also writing their derivative we have
+				<md>
+					<mrow>\amp \frac{1}{2}\left( x_A + x_B \right) = a t + b</mrow>
+					<mrow>\amp \frac{1}{2}\left(v_A + v_B \right) = a </mrow>
+				</md>
+				Evaluating these at <m>t=0</m> we get
+				<me>
+					a = 0,\ \ b = \frac{D+l_0}{2}.
+				</me>
+				Therefore, we have the following answer for the center of mass at arbitrary instant <m>t</m>.
+				<men  xml:id="eq-two-blocks-atttached-by-a-spring-eom-cm-ans">
+					x_\text{cm} = \frac{D+l_0}{2}.
+				</men>
+				That is, CM remains fixed at <m>x= (D+l_0)/2</m>.
+			</p>
+
+		</solution>
+		<!-- <solution><title>(b)</title>
+			<p>
+				We can use Eqs. <xref ref="eq-two-blocks-atttached-by-a-spring-eom-A"/> and <xref ref="eq-two-blocks-atttached-by-a-spring-eom-B"/> to find the equation of motion of the relative coordinate <m>x=x_B-x_A</m>.
+				<men xml:id="eq-two-blocks-atttached-by-a-spring-eom-relative">
+					\frac{d^2x}{dt^2}   = - \frac{2k}{m}\, x.
+				</men>
+				This will give simple harmonic motion for the variable <m>x</m> with 
+				<me>
+					x(t) = C\,\cos(\omega t) + S \,\sin(\omega t),
+				</me>
+				where <m>C</m> and <m>S</m> are constants and <m>\omega = \sqrt{2k/m}</m>. You can verify that this is solution of Eq. <xref ref="eq-two-blocks-atttached-by-a-spring-eom-relative"/>. To find <m>C</m> and <m>S</m>, we use initial conditions on A and B.
+				<md>
+					<mrow>\amp \left( x_B(0) - x_A(0) \right) =  l_0 - D = C\times 1 + S \times 0.</mrow>
+					<mrow>\amp  \left( v_B(0) - v_A(0) \right) = 0 = -\omega\, C\times 0 + \omega,S \times 1.</mrow>
+				</md>
+				Therefore,
+				<me>
+					C = l_0 - D,\ \ S=0.
+				</me>
+				Therefore, relative coordinate is
+				<men  xml:id="eq-two-blocks-atttached-by-a-spring-eom-relative-ans">
+					x(t) = (l_0 - D)\,\cos(\sqrt{2k/m}\; t).
+				</men>				
+
+			</p>
+		</solution>
+		<solution><title>(c)</title>
+			<p>
+				From Eqs. <xref ref="eq-two-blocks-atttached-by-a-spring-eom-cm-ans"/> and <xref ref="eq-two-blocks-atttached-by-a-spring-eom-relative-ans"/>, we have
+				<md>
+					<mrow> \amp x_B + x_A =  l_0 + D. </mrow>
+					<mrow> \amp x_B - x_A =  (l_0 - D)\,\cos(\sqrt{2k/m}\; t). </mrow>
+				</md>
+				Therefore, we get
+				<md>
+					<mrow>\amp x_A = \frac{l_0 + D}{2}  - \frac{l_0 - D}{2}\,\cos(\sqrt{2k/m}\; t).</mrow>
+					<mrow>\amp x_B = \frac{l_0 + D}{2}  + \frac{l_0 - D}{2}\,\cos(\sqrt{2k/m}\; t).</mrow>
+				</md>
+			</p>
+		</solution> -->
+
+	</exercise>
+
+
+	<exercise xml:id="ex-Motion-of-Center-of-Mass-of-Two-Blocks-Attached-by-a-Spring-with-One-Block-Piushed-Against-a-Wall"><title>(Calculus) Motion of Center of Mass of Two Blocks Attached by a Spring with One Block Piushed Against a Wall</title>
+
+		<statement>
+			<p>
+				In <xref ref="ex-Motion-of-Center-of-Mass-of-Two-Blocks-Attached-by-a-Spring"/>, the two blocks moved freely on the frictionless horizontal track. 
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Now, suppose you were pushing block A, you kept block B against a wall as shown in <xref ref="fig-two-blocks-atttached-by-a-spring-against-wall"/>. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-two-blocks-atttached-by-a-spring-against-wall">
+					<caption></caption>
+					<image source="./images/momentum/two-blocks-atttached-by-a-spring-against-wall.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				After compressing the spring by amount <m>D</m>, you release both blocks at rest. What will be the motion of the center of mass if <m>l_0</m> is the natural length of the spring?
+			</p>
+			
+		</statement>
+		<hint><p>
+			First solve the situation when block B is in contact with the wall. Then solve the situation after B loses contact with the wall. When in contact, set up equation of motion for the CM and another equation of motion for B. Also, use the relation between <m>x_A</m> and <m>x_\text{cm}</m>.
+		</p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>Overall strategy:</p>
+			<p>
+				The motion of the center of mass will be controlled by external forces on the two-block (and spring) system. When block B is in contact with the wall, the net external force on the two-block system comes from the normal force of the wall, which will vary with the varying length of the spring. When block B is no longer in contact with the wall, the normal force from the wall will be zero, which will make net external force zero on the two block system. Thus, after block B is no longer in contact with the wall, the center of mass will just move with a constant velocity. 
+			</p>
+			<p><alert>Block B in Contact with the Wall:</alert></p>
+
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					<xref ref="fig-two-blocks-atttached-by-a-spring-against-wall-solution"/> shows situation at an arbitrary instant when block B is still in contact with the wall. The equation of motion of the center of mass will be
+					<me>
+						M \frac{d^2x_\text{cm}}{dt^2} = - N(t).
+					</me>
+				</p>
+				<p></p>
+				<figure xml:id="fig-two-blocks-atttached-by-a-spring-against-wall-solution">
+					<caption></caption>
+					<image source="./images/momentum/two-blocks-atttached-by-a-spring-against-wall-solution.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					We need an expression for <m>N(t)</m> to solve this equation. We get that by looking at force on B as shown in <xref ref="fig-two-blocks-atttached-by-a-spring-against-wall-on-B"/>. Balancing spring and wall forces on B gives
+					<me>
+						N(t) = k (l_0 - x_A).
+					</me>
+				</p>
+				<p></p>
+				<figure xml:id="fig-two-blocks-atttached-by-a-spring-against-wall-on-B">
+					<caption></caption>
+					<image source="./images/momentum/two-blocks-atttached-by-a-spring-against-wall-on-B.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				We also note that when B is at the wall <m>x_\text{cm}</m> and <m>x_A</m> are related by
+				<me>
+					x_\text{cm} = \frac{m x_A + m l_0}{2m} = \frac{x_A + l_0}{2}.
+				</me>
+				Using the three equations above, we get the following equation of motion for <m>x_\text{cm}</m>.
+				<me>
+					\frac{d^2x_\text{cm}}{dt^2} = \frac{k}{m}\left(x_\text{cm} - l_0\right).
+				</me>
+				This has the following general solution.
+				<men xml:id="eq-block-against-wall-cm-pos">
+					x_\text{cm}(t) = l_0 + A\, e^{\sqrt{k/m}\, t} + B\, e^{-\sqrt{k/m}\, t}.
+				</men>
+				The velocity of CM will be
+				<men  xml:id="eq-block-against-wall-cm-vel">
+					v_\text{cm}(t) = \sqrt{k/m}\,A\, e^{\sqrt{k/m}\, t}- \sqrt{k/m}\,B\, e^{-\sqrt{k/m}\, t}.
+				</men>
+				Using the initial conditions on A and B, we have the following intial conditions on CM.
+				<md>
+					<mrow> \amp x_\text{cm}(t) = \frac{x_A (0)+ l_0}{2} = \frac{D+ l_0}{2}.</mrow>
+					<mrow> \amp v_\text{cm}(t) = \frac{v_A (0)}{2} = 0.</mrow>
+				</md>
+				Using these in Eqs. <xref ref="eq-block-against-wall-cm-pos"/> and <xref ref="eq-block-against-wall-cm-vel"/>, we find
+				<me>
+					A = B = \frac{D-l_0}{4}.
+				</me>
+				Therefore, the position of CM and its velocity are
+				<mdn>
+					<mrow xml:id="eq-block-against-wall-cm-pos-fin"> \amp x_\text{cm}(t) = l_0 - \left(\frac{l_0-D}{2} \right)\,\cosh(\sqrt{k/m}\,t). </mrow>
+					<mrow xml:id="eq-block-against-wall-cm-vel-fin"> \amp v_\text{cm}(t) =  -\frac{(l_0-D)\sqrt{k/m}}{2}\,\sinh(\sqrt{k/m}\,t).</mrow>
+				</mdn>
+
+			</p>
+
+			<p><alert>Block B not in Contact with the Wall:</alert></p>
+			<p>
+				At the instant, block B loses contact with the wall, the CM will be at <m>l_0/2</m>. At that instant onward the velocity of the CM will remain unchanged since there are net external force on the two-block system is zero now. We can find the time when this happens from Eq. <xref ref="eq-block-against-wall-cm-pos-fin"/>. Let this instant be at <m>t=T</m>.
+				<me>
+					\frac{l_0}{2} = l_0 - \left(\frac{l_0-D}{2} \right)\,\cosh(\sqrt{k/m}\,T)
+				</me>
+				Therefore,
+				<me>
+					T = \sqrt{\frac{m}{k}}\, \cosh^{-1}\left( \frac{l_0}{l_0 - D} \right).
+				</me>
+				From Eq.  <xref ref="eq-block-against-wall-cm-vel-fin"/>, the velocity of CM after this instant will be constat at
+				<md>
+					<mrow> v_\text{cm}(t>T)\amp = - \frac{(l_0-D)\sqrt{k/m}}{2} \,\sinh(\sqrt{k/m}\,T)</mrow>
+					<mrow> \amp = -\frac{(l_0-D)\sqrt{k/m}}{2}\,\sinh\left[ \cosh^{-1}\left( \frac{l_0}{l_0 - D} \right) \right].</mrow>
+				</md>
+				This expression can be simplified by noting that
+				<me>
+					\sinh(\cosh^{-1}(x)) = \sqrt{x^2 - 1}.
+				</me>
+				To prove this try <m>y=\cosh^{-1}(x)</m> and solve for <m>e^y = x + \sqrt{x^2-1}</m> and <m>e^{-y} = x - \sqrt{x^2-1}</m>.  
+				Using this, we simplify CM velocity for <m>t\gt T</m> to be
+				<me>
+					v_\text{cm}(t>T) = -\frac{1}{2}\sqrt{ \frac{k}{m} (2l_0 D - D^2) }.
+				</me>
+				The velocity is <m>x</m>-component and pointed towards negative <m>x</m>-axis. That is why there is a negative sign in the front.
+			</p>
+	
+		</solution>
+	</exercise>
+
+
+	</exercises>
+
+</section>

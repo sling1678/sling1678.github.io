@@ -1,0 +1,616 @@
+<section xml:id="Magnetic-Field-of-Steady-Current"><title> Magnetic Field of Steady Current </title>
+	<introduction>
+		<p>
+			In 1820 Hans Christian &#x00D8;ersted of Denmark published his finding that electric currents have magnetic effects. Here is a web link to a demo of that effect, <url source = "https://upload.wikimedia.org/wikipedia/commons/2/28/17._%D0%95%D1%81%D1%82%D0%B5%D1%80%D0%B4%D0%BE%D0%B2_%D0%B5%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82.ogv"> Demo-site</url>. There you will see a magnetic needle deflect when current passes through a metallic rod.  
+		</p>
+		<p>
+			The discovery by &#x00D8;ersted inspired many other scientists, including French physicists, Jean-Baptiste Biot, F&#x00E9;lix Savart, and Andr&#x00E9;-Marie Amp&#x00E8;re, who very quickly found the basic laws governing magnetism associated with electric currents. In this chapter we will study magnetism of steady currents. 
+		</p>
+		<p>
+			The laws governing the magnetic field of a steady current require Calculus to state them accurately and even more Calculus to use them in prcatical situations. Here, we will state some of the more important results and defer Calculus-based discussions to subsections below.
+		</p>
+		<p><alert>Magnetic Field of Current in an Infinitely Long Wire </alert> </p>
+		<sidebyside widths="60% 40%">
+			<p>
+				One of the most important results is that of the magnetic field from a steady current in a very long wire, say infinitely long wire. Magnetic field lines wrap around the wire in circular paths and drop off with distance from the wire. Suppose we want magnetic field a a point  P which is  distance <m>s</m> from the wire. Then, magnitude of the magnetic field is 
+				<men>
+					B =\mu_0\,\dfrac{I}{2\pi s},
+				</men>  
+
+			</p>
+			<image source="./images/magnetic-field/infinitely-long-wire.png" width="50%"/>
+		</sidebyside>
+		<p>
+			where <m>\mu_0</m> is the magnetic permeability of the vacuum. It has the following exact value.
+			<men>
+				\mu_0 = 4\pi\times 10^{-7} \text{ T.m/A}.
+			</men>			
+		</p>
+		<sidebyside widths=" 60% 5% 35%">
+			<p>
+				<p>
+					<alert > Right-hand Rule of Biot-Savart Law. </alert> 
+					We can use a right-hand rule to find the direction of magnetic field around the wire. Place your right-hand with thumb pointed in the direction of the current and sweep with your palm. The direction of the sweep is the direction of the magnetic field.
+				</p>
+
+			</p>
+			<p> </p>
+			<image source="./images/magnetic-field/right-hand-rule-mag-field-from-current.png" width="50%"/>
+		</sidebyside>
+		<p>
+			Using this right-hand rule, we find that the direction of the magnetic field is tangent to the circle at P. 
+		</p>		
+		<p>
+			In cylindrical coordinates, <m>s</m> is the cylindrical radial cordinate of P with wire along the <m>z</m> axis. Since the wire is infintely long, the field does not depend upon the <m>z</m> coordinate. The direction of the field depends upon the polar angle <m>
+			\phi</m>, which we can use to write the direction in terms of the unit vector <m>\hat u_\phi</m>.
+			<men>
+				\vec B =\mu_0\,\dfrac{I}{2\pi s}\,\hat u_\phi.
+			</men>
+		</p>
+		<p><alert>Magnetic Field of Current in a Coil </alert> </p>
+		<p>
+			Another situation of great practial importance is the magnetic field of a current   through a coiled wire, called solenoid, where each coil is insulated from the other coil and current in all coils are in the same direction. This physical structure is also called a <term>solenoid</term>. 
+		</p>
+		<p>
+			Magnetic field of a long solenoid are shown in <xref ref="fig-mag-field-solenoid"/>. All the field lines must pass through the inside space. In a tightly-wound and very long solenoid, field is uniform inside and zero outside. 
+		</p>
+
+		<figure xml:id="fig-mag-field-solenoid">
+			<caption>
+				Magnetic field of wire flowing through coils of a solenoid. 
+			</caption>
+			<image source="./images/magnetic-field/mag-field-solenoid.png" width="70%"/>
+			
+		</figure>
+		<p>
+			The magnitude of the field inside is proportional to the number of turns per unit length, <m>n</m> and current <m>I</m>, and field outside zero.
+			<men>
+				B = 
+				\begin{cases}
+					 \mu_0 n I, \text{ inside the solenoid.}\\
+					 \\
+					 0, \text{ outside the solenoid.}
+				\end{cases}
+			</men>
+			For <alert>direction of the field</alert>, use Biot-Savart right hand rule on current in the coil. Thus, if axis of the solenoid is the <m>z</m> axis, then the direction will be either towards positive <m>z</m> or towards negative <m>z</m>.  
+		</p>
+
+		<p><alert>Superposition of Magnetic Field </alert> </p>
+		<p>
+			Often, we encounter situations where more than one circuit is involved, each producing its own magnetic field. Suppose, we have two wires carrying currents with <m>\vec B_1</m> be the magnetic field of wire 1 and <m>\vec B_2</m> be the magnetic field of wire 1. The net magnetic field is just a <alert>vector sum</alert> of the two.
+			<men>
+				\vec B = \vec B_1 + \vec B_2.
+			</men> 
+			This is called superposition principle of magnetic field.
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-field-of-a-long-straight-wire-versus-earths-magnetic-field"><title>Magnetic Field of a Long Straight Wire  Carrying Current</title>
+
+		<statement>
+			<p>
+				Suppose you are passing <m>10.0\text{ amp}</m> current through a <m>1\text{-m}</m> long wire. (a) What is the magnetic field at a point <m>1\text{-cm}</m> away from the wire near the half-way along the length of the wire? (b) If Earth's magnetic field at that location is <m>0.5\text{ G}</m>, how strong the field of the current compared to the Earth's magnetic field?   
+			</p>
+		</statement>
+		<hint><p>Use field for current in an infintely long wire.</p></hint>
+		<answer><p>(a)  <m>2\times 10^{-4}\text{ T}</m>, (b) <m>4</m>. </p></answer>
+		<solution><title>(a)</title>
+			<p>(a)
+				Since distance from wire is much less than the length of the wire, we can assume infinitely long wire equation applies. This gives the magnitude of the magnetic field to be
+				<md>
+					<mrow>B \amp = \dfrac{\mu_0}{2\pi}\,\dfrac{I}{s}</mrow>
+					<mrow> \amp = 2\times 10^{-7}\times\dfrac{10.0}{0.01} = 2\times 10^{-4}\text{ T}</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)
+				Writing the field of the current in the wire in <m>\text{G}</m> we have
+				<me>
+					B = 2.0\text{ G}.
+				</me>
+				Therefore, the field by current is
+				<me>
+					\dfrac{B}{B_\text{earth}} = \dfrac{2.0\text{ G}}{0.5\text{ G}} = 4. 
+				</me>
+				That is the field of the current will be 4 times as strong.
+			</p>
+		</solution>
+
+	</exercise>
+
+
+	<exercise xml:id="ex-Variation-of-Magnetic-Field-with-Distance-From-a-Long-Wire-Carrying-Current"><title> Magnetic Field at Various Distances from a Long Wire Carrying Current </title>
+		<statement>
+			<p>
+				Evaluate magnitude of the magnetic field of a <m>5\text{-A}</m> current in a very long straight wire at the following distance from the wire: (a) <m>1\text{ cm}</m> , (b) <m>10\text{ cm}</m>, and (c) <m>100\text{ cm}</m>. 
+			</p>
+
+		</statement>
+		<hint> <p>  Use the formula for infinetely long wire. </p> </hint>
+		<answer> <p>  (a) <m> 10^{-4}\text{ T}</m>, (b) <m> 10^{-5}\text{ T}</m> , (c) <m> 10^{-6}\text{ T}</m>. </p> </answer>
+		<solution> 
+			<p>
+				Using the magnitude formula for field of current in an infinitely long wire,
+				<me>
+					B = \dfrac{\mu_0}{2\pi}\dfrac{I}{s},
+				</me>
+				we get
+				<md>
+					<mrow>\amp \text{(a) } B = 2\times 10^{-7}\text{T.m/A}\times \dfrac{5\text{ A}}{0.01\text{ m}} = 10^{-4}\text{ T}. </mrow>
+					<mrow>\amp \text{(b) } B =  10^{-5}\text{ T}. </mrow>
+					<mrow>\amp \text{(c) } B =  10^{-6}\text{ T}. </mrow>
+				</md>
+				For comparision, magnetic field of Earth is <m>\approx 5.0\times 10^{-5}\text{ T}</m>.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-magnetic-field-of-two-parallel-wires"><title>Magnetic Field of two Parallel Wires Carrying Current</title>
+
+		<statement>
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					Two parallel wires in a circuit are far away from other parts of a circuit that carries a <m>12\text{-A}</m> current as shown in <xref ref="fig-magnetic-field-of-two-parallel-wires"/>. (a) What will be magnetic field at point <m>\text{P}_1</m> that is <m>0.4\text{ cm}</m> from one wire and <m>1.2\text{ cm}</m> from the other wire? Give direction of the field as coming-out-of-the-page or going-in-the-page. (b) Repeat for <m>\text{P}_2</m>, which is <m>0.4\text{ cm}</m> from one wire and <m>2.0\text{ cm}</m> from the other wire.
+				</p>
+				<p></p>
+				<figure xml:id="fig-magnetic-field-of-two-parallel-wires">
+					<caption>
+					</caption>
+					<image source="./images/magnetic-field/magnetic-field-of-two-parallel-wires.png" width="50%"/>
+				</figure>
+ 
+			</sidebyside>
+		</statement>
+		<hint><p>(a) Use right-hand rule first to get the directions so that you will know whether to add or subtract the two fields. (b) Same as (a).</p></hint>
+		<answer><p>(a) <m> 4.0\times 10^{-4}\text{ T}</m>, into-the-page, (b) <m>2.40\times 10^{-4}\text{ T}</m>, out-of-the-page. </p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a) 
+				Since other parts of the circuit are far away, we can ignore them and just keep the field of long wires that are nearby point P. We can also make the assumption that the formula for infintely long wire applies. Now, when we apply right hand rule, we find that field of the current in the left wire is into-the-page while the field for the current in the right wire is also into-the-page. Therefore, the two fields will add at point <m>\text{P}_1</m>.
+				<md>
+					<mrow> B_\text{into} \amp = \dfrac{\mu_0}{4\pi}\left( \dfrac{I}{s_1} +  \dfrac{I}{s_2} \right)</mrow>
+					<mrow> \amp = 10^{-7}\times \left( \dfrac{12}{0.004} +  \dfrac{12}{0.012} \right) = 4.0\times 10^{-4}\text{ T}.</mrow>
+				</md>
+				The direction is going-into-the-page.
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)
+				Here, the direction from the nearer wire (right) is out-of-the-page and that from the farther wire (left) is into-the-page. They will oppose each other. Let's call out-of-the-page as positive and then into-the-page will be negative. Continuing to use subscript 1 for the left wire and 2 for the right wire, we get
+				<md>
+					<mrow> B_\text{out} \amp = \dfrac{\mu_0}{4\pi}\left( \dfrac{I}{s_2} -  \dfrac{I}{s_1} \right)</mrow>
+					<mrow> \amp = 10^{-7}\times \left( \dfrac{12}{0.004} -  \dfrac{12}{0.020} \right) = 2.40\times 10^{-4}\text{ T}.</mrow> 
+				</md>
+				Since, we found the net as positive, the out-of-page was greater. Therefore, the direction is out-of-the-page.				
+			</p>
+		</solution>
+
+	</exercise>
+
+
+
+
+	<subsection xml:id="subsection-Biot-Savart-Law"><title> (Calculus) Biot-Savart Law </title>
+		<p>
+			Biot-Savart law gives us magnetic field of a steady current. By steady current we mean that charges are neither accumulating anywhere nor are they being depleted from anywhere in the circuit. The law uses superpostion of contributions from every element of the circuit to obtain the magnetic field at a point.
+		</p>
+		<p>
+			Biot-Savart law has a complicated mathematical form. We usually write Biot-Savart law  for an infinitesimal element of the circuit. Refer to <xref ref="fig-biot-savart-law-set-up"/> for the meaning of symbols. Net contribution <m>d\vec B_P</m> to the magnetic field at field point P a distance <m>r</m> away and in the direction <m>\hat u_r</m> from a steady current <m>I</m> in the infinitesimal element <m>d\vec l</m> is given by
+			<men xml:id="eq-biot-savart-law-infintesimal">
+				d\vec B_P = \dfrac{\mu_0}{4\pi}\, I\, \dfrac{d\vec l \times \hat u_r}{ r^2}.
+			</men>
+			The cross-product on the right side of this equation tells you about the right-hand rule you will need to get the direction - if you sweep from <m>d\vec l</m> vector in the direction of <m>\hat u_r</m> vector, then thumb will point in the direction of <m>d\vec B_P</m>. We will call this rule the <term> Biot-Savart Right Hand Rule</term>.
+		</p>
+
+		<figure xml:id="fig-biot-savart-law-set-up">
+			<caption>
+				Set up for Biot-Savart Law for magnetic field at point P. Here, <m>d\vec l</m> is an infinitesimal displacement vector at source point P' in the direction of current in the wire, <m>\vec r</m> is displacement vector from source point P' to field point P. We also use a unit vector, <m>\hat u_{r}</m> in the direction from P' to P, i.e., <m>\hat u_r = \vec r / r</m>.
+			</caption>
+			<image source="./images/magnetic-field/biot-savart-law-set-up.png" width="60%"/>
+		</figure>
+		<p>
+			An important thing to notice in this law is that magnetic field drops off from an infinitesimal element as a square of the distance from the element. Another point is that magnetic field by a current is actually directly proportional to the current in the wire.
+		</p>		
+		<p>
+			To obtain the field by a current in a circuit, we superimpose fields by all segments, which is done by integrating the right side of Eq. <xref ref="eq-biot-savart-law-infintesimal"/> over the circuit.
+			<men xml:id="eq-biot-savart-law-circuit">
+				\vec B_P = \dfrac{\mu_0}{4\pi}\, I\, \int_\text{circuit} \dfrac{d\vec l \times \hat u_r}{ r^2}.
+			</men> 
+			All three quantities <m>d\vec l</m>, <m>\hat u_r</m>, <m>r</m> could potentially change as you go around the circuit. If the circuit of interest has straight segments, we can use a Cartesian coordinate to express this integral and if the circuit has circular segments, we will use a polar coordinates for them.
+		</p>
+		<p>
+			Equation <xref ref="eq-biot-savart-law-circuit"/> says that net magnetic field from a circuit drops off as square of distance from the circuit for sufficiently large distances. However, if a circuit extends to infinity in one direction, as in an infinite wire, the integration changes how magnetic field drops off with distance. For instance, magnetic field of an infintely long wire drops of as inverse of distance from the wire and magnetic field of a surface current is constant near the surface. 
+		</p>
+
+	</subsection>
+	<subsection><title> (Calculus) Strategy for Setting Up Biot-Savart Problems</title>
+		<p>
+			Biot-Savart law in Eq. Eq. <xref ref="eq-biot-savart-law-circuit"/>  is written as a conceptual integral and requires setting up a coordinate system to make the integral explicit and ready for calculations.  The type of coordinate system suitable for a problem depends on the geometry of the current carrying structure.  We encounter two types of geometrical structures in simple applications of Biot-Savart law - straight segments and circular segments. Calculations in Biot-Savart law applications generally proceed as follows.
+		</p>
+		<p>
+			<ol>
+				<li><alert>Choose Appropriate Coordinate System. </alert>
+					<p> 
+						Choose Cartesian for straight segment. Then, your <m>d\vec l</m> will be
+						<me>
+							d\vec l = \hat u_x\, dx + \hat u_y\, dy + \hat u_z\, dz 
+						</me>
+						Restricting this element to the straight segment under consideration simplifies it further. For instance, if the segment is parallel to <m>y</m> axis, this will just be <m>d\vec l = \hat u_y\, dy</m>.
+					</p> 
+					<p>
+						Choose polar coordinate for circular segment with origin at center. Then, your <m>d\vec l</m> will be
+						<me>
+							d\vec l = \hat u_\phi R d\phi,
+						</me>
+						where <m>R</m> is the radius of the arc where current flows. Sometimes, it helps to write <m>\hat u_\phi</m> using Cartesian unit vectors since <m>\hat u_\phi</m> has <m>\phi</m> dependence, which you could miss shen integrating. 
+						<me>
+							\hat u_\phi = -\hat u_x\, \sin\,\phi + \hat u_y\, \cos\,\phi, 
+						</me>
+						 
+					</p>
+
+				</li>
+				<li>
+					<alert>Express <m>\vec r</m>.</alert> 
+					Suppose coordinate of element in the wire is <m>(x', y', z')</m> and the field point P is at <m>(a, b, c)</m>, then <m>\vec r = (x'-a, y'-b, z'-c)</m>. From this vector, you can obtain its magnitude as well as a unit vector in its direction. Similarly, you will work with cylindrical coordinates, if you have circular arc.  
+				</li>
+				<li>
+					<alert> Final Steps.</alert> 
+					<p>
+						Next, we work out the cross product and perform the resulting integral. Actually, doing these using Cartesian unit vectors removes a lot of mistakes I have seen students make when they try to guess their way through a calculation.
+					</p>
+					<p>
+						Finally, you should verify the direction of magnetic field you got by using right-hand rule. If they differ, then there is some mistake.
+					</p>
+					
+				</li>
+			</ol>
+
+
+		</p>
+	</subsection>
+
+
+
+
+
+
+
+	<exercise xml:id="ex-Magnetic-Field-of-a-Current-in-a-Finite-Straight-Wire"><title> (Calculus) Magnetic Field at Symmetric Point from Current in a Finite Straight Wire </title>
+		<statement>
+			<p>
+				One part of an electric circuit that carries a steady current <m>I</m>  is a straight wire of length <m>L</m>.  What is the magnetic field at a point P in the plane that divides the wire in half from the current in the straight segment only? Use symbol <m>s</m> for distance from the middle of the wire to the field point.  
+			</p>
+
+		</statement>
+		<hint> <p> Place the wire symmetrically on the <m>z</m> axis and field point at <m>x</m> axis.  </p> </hint>
+		<answer> <p> <m>B</m> will be ciruclating in a circular path with magnitude <m>\dfrac{\mu_0 }{2\pi s}\, \dfrac{L/2}{ \sqrt{s^2 + L^2/4}  }</m>. The path will be counterclockwise whn viewed from approaching current direcion.  </p> </answer>
+		<solution> 
+			<p>
+				Since the wire segment is straight, we use a Cartesian coordinate system. We will place the wire symmetrically along the <m>z</m> axis so that the field point will be in the <m>xy</m> plane. We will also choose <m>x</m> axis direction to go through the field point P as shown in <xref ref="fig-biot-savart-on-finite-wire-symmetric-field-point" />.   
+			</p>
+
+		<figure xml:id="fig-biot-savart-on-finite-wire-symmetric-field-point">
+			<caption>
+				Set up for magnetic field calculation for a finite wire. We are interested in field at a point in the plane that divides the wire equally on the two sides. 
+			</caption>
+			<image source="./images/magnetic-field/biot-savart-on-finite-wire-symmetric-field-point.png" width="50%"/>
+		</figure>
+
+			
+			<p>
+				We choose an infinitesimal element between <m>z</m> and <m>z+dz</m>.  This geometry gives us the following for various quantities in the infintesimal form of Biot-Savar law.
+
+				<md>
+					<mrow> \amp d\vec l = \hat u_z\, dz,</mrow>
+					<mrow> \amp \vec r = \hat u_x\, s - \hat u_z\, z  </mrow>
+					<mrow> \amp r = \sqrt{s^2 + z^2 }  </mrow>
+					<mrow> \amp \hat u_r = \dfrac{1}{\sqrt{s^2 + z^2 } } \left( \hat u_x\, s - \hat u_z\, z \right) </mrow>
+				</md>
+				Therefore,
+				<me>
+					d\vec l \times \hat u_r   = 
+						\dfrac{s}{\sqrt{s^2 + z^2 } }\, \hat j.
+				</me>
+				Now, we have all the pieces to write the contribution of the steady current in the infinitesimal element at <m>z</m>.
+				<me>
+					d\vec B = \dfrac{\mu_0 I}{4\pi}\, \dfrac{s\, dz}{\left(s^2 + z^2\right)^{3/2} }\, \hat j.
+				</me>
+				We need to integrate this from <m>z=-L/2</m> to <m>z=L/2</m>. Since integrand is an even function in <m>z</m> and the range of integration is symmetric around zero, we will get double the value from <m>z=0</m> to <m>z=L/2</m>.
+				<md>
+					<mrow> \vec B \amp = 2\times \dfrac{\mu_0 I}{4\pi}\, \int_0^{L/2}\dfrac{s\, dz}{\left(s^2 + z^2\right)^{3/2} }\, \hat j.</mrow>
+					<mrow> \amp = \dfrac{\mu_0 }{2\pi s}\, \dfrac{L/2}{ \sqrt{s^2 + L^2/4}  }\, \hat j.</mrow>
+				</md>
+				Picking the field point on the <m>x</m> axis gave us direction of the magnetic field towards positive <m>y</m> axis. You can show that if you pick the field point on positive <m>y</m> axis, you would get the direction negative <m>x</m> axis. The direction at arbitrary point will be in the unit vector <m>\hat u_\phi</m> of the cylindrical coordinate system, i.e., magnetic field in the <m>xy</m> plane will be circulating in circular path.
+				 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Magnetic-Field-at-Arbitry-Point-from-Current-in-a-Finite-Straight-Wire"><title> (Calculus) Magnetic Field at Arbitry Point from Current in a Finite Straight Wire  </title>
+		<statement>
+			<p>
+				One part of an electric circuit that carries a steady current <m>I</m>  is a straight wire of length <m>L</m>.  What is the magnetic field at an arbitrary point P? Express your answer in terms of angles <m>\theta_1</m> and <m>\theta_2</m> subtended by the ends of the wire at the field point and distance <m>s</m> from the wire.
+			</p>
+
+		</statement>
+		<hint> <p>  Place the wire on the <m>z</m> axis from <m>z=0</m> to <m>z=L</m>, and choose field point at <m>(x,y,z)</m>. Noting that <m>x</m> and <m>y</m> appear as <m>s=\sqrt{x^2 + y^2 }</m>, write things in <m>s</m> for simplification. Rewrite the final answer in terms of angles subtended. </p> </hint>
+		<answer> <p> <m>\vec B =   \dfrac{\mu_0 I}{4\pi s}\, \left( \sin\,\theta_1 + \sin\,\theta_2\right)\, \hat u_\phi</m>  </p> </answer>
+		<solution> 
+			<p>
+				Since the wire segment is straight, we use a Cartesian coordinate system. We will place the wire symmetrically along the <m>z</m> axis. We will use Cartesian coordinates <m> (x,y,z) </m> for location of field point P as shown in <xref ref="fig-finite-wire-arbitrary-field-point" />.  For the segment on the wire we will use symbol <m>z'</m> in place of letter <m>z</m>, which we are using for the field point P.
+			</p>
+
+
+		<figure xml:id="fig-finite-wire-arbitrary-field-point">
+			<caption>
+				Set up for magnetic field calculation for a finite wire. We are interested in field at an arbitrary point P.  
+			</caption>
+			<image source="./images/magnetic-field/finite-wire-arbitrary-field-point.png" width="50%"/>
+		</figure>
+			<p>
+				We choose an infinitesimal element between <m>z'</m> and <m>z'+dz'</m>.  This geometry gives us the following for various quantities in the infintesimal form of Biot-Savar law.
+				<md>
+					<mrow> \amp d\vec l = \hat u_z\, dz',</mrow>
+					<mrow> \amp \vec r = \hat u_x\, x + \hat u_y\, y + \hat u_z\, (z-z')   </mrow>
+					<mrow> \amp r = \sqrt{s^2 + (z-z')^2 },\ \ s^2 = x^2 + y^2  </mrow>
+					<mrow> \amp \hat u_r = \dfrac{1}{\sqrt{s^2 + (z-z')^2 } } \left( \hat u_x\, x + \hat u_y\, y + \hat u_z\, (z-z') \right) </mrow>
+				</md>
+				Therefore,
+				<me>
+					d\vec l \times \hat u_r   =  \left( -y\, \hat u_x + x\, \hat u_y \right)
+						\dfrac{dz'}{\sqrt{s^2 + (z-z')^2 } }.
+				</me>
+				Now, we have all the pieces to write the contribution of the steady current in the infinitesimal element at <m>z</m>.
+				<me>
+					d\vec B = \dfrac{\mu_0 I}{4\pi}\, \left( -y\, \hat u_x + x\, \hat u_y \right)\, \dfrac{dz'}{\left[s^2 + (z-z')^2\right]^{3/2} }.
+				</me>
+				Integrating this from <m>z'=0</m> to <m>z'=L</m> gives us the following result
+				<md>
+					<mrow> \vec B \amp =   \dfrac{\mu_0 I}{4\pi s}\, \left( -\dfrac{y}{s}\, \hat u_x + \dfrac{x}{s}\, \hat u_y \right) \left[ \dfrac{ L - z}{ \sqrt{ s^2 + (L-z)^2 }}  + \dfrac{z}{\sqrt{ s^2 + z^2 }}\right]. </mrow>
+				</md>
+			</p>
+			<sidebyside widths="50% 50%">
+				<p>
+					This answer can be written more compactly in terms of unit vector <m>\hat u_\phi = \left( -\dfrac{y}{s}\, \hat u_x + \dfrac{x}{s}\, \hat u_y \right)</m> and angles the two ends of the wire subtends at the field point P as you can see from the figure to the right.
+					<md>
+						<mrow> \sin\,\theta_1 \amp = \dfrac{ L - z}{ \sqrt{ s^2 + (L-z)^2 }} </mrow>
+						<mrow> \sin\,\theta_2 \amp = \dfrac{ z}{ \sqrt{ s^2 + (L-z)^2 }} </mrow>
+					</md> 
+				</p>
+				<image source="./images/magnetic-field/finite-wire-arbitrary-field-point-as-angles.png" width="50%"/>
+			</sidebyside>
+
+			<p>
+				Therefore, magnetic field at P is compactly written as
+				<me>
+					\vec B =   \dfrac{\mu_0 I}{4\pi s}\, \left( \sin\,\theta_1 + \sin\,\theta_2\right)\, \hat u_\phi,
+				</me>
+				where <m>s</m> is the distance of the field point from the line of the wire. 
+				To check the direction we use the right-hand rule, which also gives the direction to be circulating as <m>\hat u_\phi</m> does.
+			</p>
+
+
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Magnetic-Field-of-Current-in-Infinitely-Long-Wire"><title> (Calculus) Magnetic Field of Current in Infinitely Long Wire by Biot-Savart Law</title>
+		<statement>
+			<p>
+				A steady current <m>I</m>  is an <q> infintely long</q> straight wire.  What is the magnetic field at a point P a distance <m>s</m>  from the middle the wire.
+			</p>
+
+		</statement>
+		<hint> <p> Take <m>L/s \rightarrow \infty</m> limit of answer in <xref ref="ex-Magnetic-Field-of-a-Current-in-a-Finite-Straight-Wire"/> or  <m>\theta_1 \rightarrow \pi/2</m>  and <m>\theta_2 \rightarrow \pi/2</m> limits in <xref ref="ex-Magnetic-Field-at-Arbitry-Point-from-Current-in-a-Finite-Straight-Wire" /> . </p> </hint>
+		<answer> <p> Magnitude <m>\dfrac{\mu_0 }{2\pi s}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We will use answer in <xref ref="ex-Magnetic-Field-of-a-Current-in-a-Finite-Straight-Wire"/> and take <m>L/s \rightarrow \infty</m> to produce the result expected for infintely long wire. We found the magnitude of magnetic field for finite wire was.
+				<me>
+					B_P = \dfrac{\mu_0 }{2\pi s}\, \dfrac{L/2}{ \sqrt{s^2 + L^2/4}  }.
+				</me>
+				The limit <m>L/s \rightarrow \infty</m> on the right side gives
+				<me>
+					B_P =  \dfrac{\mu_0 }{2\pi s} \times 1 =  \dfrac{\mu_0 }{2\pi s}.
+				</me>
+				The direction is given by the right hand rule. As seen in that example, magnetic fields wil go around the wire in circles.
+			</p>
+		</solution>
+	</exercise>	
+
+
+
+
+	<exercise xml:id="ex-Magnetic-Field-on-the-Symmetry-Axis-of-a-Circular-Loop"><title> (Calculus) Magnetic Field on the Symmetry Axis of a Circular Loop </title>
+		<statement>
+			<p>
+				Consider a circular loop of radius <m>R</m> carrying current <m>I</m>. Find magnetic field at a point that is a distance <m>z</m> above the center of the loop by (a) brute force method and (b) by exploiting symmetry in the problem.
+			</p>
+
+			<image source="./images/magnetic-field/circular-wire-field-point-on-axis.png" width="35%"/>
+			
+		</statement>
+		<hint> <p>  (a) Follow the brute force process shown in previous problems. (b) Note that horizontal components canel out and you need to extract only the vertical component.</p> </hint>
+		<answer> <p> magnitude <m>B_P = \frac{\mu_0I}{2} \frac{R^2}{\left( R^2 + z^2 \right)^{3/2}}.</m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a)
+				We follow the procedures we have followed in other examples. First, we select an infintesimal element of the wire and then try to set up Biot-Savart expression for infintesimal magnetic field, which we integrate. This is not very efficient method for this problem. For more efficient method, see (b).
+			</p>
+			<sidebyside widths="65% 35%">
+				<p>
+					Let us place the ring of current in <m>xy</m> plane as shown in the figure. The elment is a tiny arc of length <m>R\,d\phi</m>. The direction of <m>d\vec l</m> is tangential to the circle. We write this as unit vector.
+					<me>
+						d\vec l = R\,d\phi\, \hat u_t,
+					</me>
+					The unit vector in the tangent to the circle direction will be
+					<me>
+						\hat u_t = -\sin\,\phi\, \hat u_x + \cos\,\phi\, \hat j.
+					</me>
+				</p>
+				
+				<image source="./images/magnetic-field/circular-wire-field-point-on-axis-solution.png" width="50%"/>
+			</sidebyside>
+			<p>
+				The other vectors <m>\vec r</m> from infinitesimal element <m>(R\cos\,\phi, R\sin\,\phi, 0)</m> to field point P at <m> (0, 0, z)</m>,  we need for Biot-Savart law are
+				<md>
+					<mrow> \amp \vec r = -R\cos\,\phi\, \hat u_x  -  R\sin\,\phi \,\hat u_y +  z\, \hat u_z, </mrow>
+					<mrow>\amp r = \sqrt{R^2 + z^2}, </mrow>
+					<mrow>\amp \hat u_r = \dfrac{\vec r}{r} = \dfrac{-R\cos\,\phi\, \hat u_x  -  R\cos\,\phi \,\hat u_y +  z\, \hat u_z}{ \sqrt{R^2 + z^2} }.</mrow>
+				</md>
+				Now, we have all the parts to write the expression for <m>d\vec B_P</m>.
+				<md>
+					<mrow> d\vec B_P  \amp = \dfrac{\mu_0 I}{4\pi}\, \dfrac{d\vec l \times \hat u_r}{r^2} </mrow>
+					<mrow>   \amp = \dfrac{\mu_0 I}{4\pi\,r^2} \left( \dfrac{R h}{r}\,\cos\,\phi\,\hat u_x  + \dfrac{Rh}{r}\,\sin\,\phi\,\hat u_y  + \dfrac{R^2}{r}\,\hat u_z \right) d\phi  </mrow>
+				</md>
+				Integrating from <m>\phi=0</m> to <m>\phi=2\pi</m>, only the <m>z</m> component is nonzero.
+				<md>
+					<mrow> \vec B_P \amp = \dfrac{\mu_0 I}{4\pi}\dfrac{R^2}{r^3}\, 2\pi\,\hat u_z, </mrow>
+					<mrow>  \amp = \dfrac{\mu_0 I}{2}\dfrac{R^2}{ \left(R^2 + z^2\right)^{3/2} }\,  \hat u_z, </mrow>
+				</md>
+				This gives the field at P with magnitude <m> \dfrac{\mu_0 I}{2}\dfrac{R^2}{ \left(R^2 + z^2\right)^{3/2} }</m> in the direction away from the ring for a point above the ring. If we had done for a point below the ring, we would have found that field is pointed towards the ring. 
+
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				We note several simplifying features of this problem.
+				<ol>
+					<li> 
+						The problem has a useful symmetry: all points  of the ring are at an equal distance from the field point P. 
+					</li>
+					<li> 
+						Since the direction of the current at any point of the ring is along the tangent to the circle, the angle between the current direction in any element and the direction from the element to the field point P is <m> 90^{\circ}</m>. 
+					</li>
+				</ol>
+ 
+			</p>
+ 
+			<p>
+				Using these simplifying aspects of the problem, we find that magnetic field from each element <m>dl</m> of the current loop will have the same magnitude given by 
+				<men xml:id="eq-mag-filed-circular-loop-1">
+					dB_P = \frac{\mu_0}{4\pi} \frac{I dl}{R^2 + z^2}.
+				</men>
+				However, the directions of the field at point P from current in different elements of the ring are different.  Using the right-hand rule for the direction of magnetic field, we find that the directions from different parts of the ring form a cone at point P as shown in <xref ref="fig-mag-field-loop"/>.
+			</p>
+			<figure xml:id="fig-mag-field-loop">
+				<caption>
+					Magnetic fields <m>d\vec B_1</m> and <m>d\vec B_2</m> by current elements at <m>P_1</m> and <m>P_2</m>, which are oppositely placed on the ring, result in the net magnetic field that has only the vertical component nonzero.
+				</caption>
+				<image source="./images/magnetic-field/mag-field-loop.png" width="50%"/>
+ 
+			</figure>
+			<p>
+				Therefore, horizontal components will cancel out and we will be left with only the vertical components of magnetic field.  We seek the vertical component of a vector of magnitude dB that makes an angle <m>\alpha</m>  with the vertical (see figure).
+
+				<me>
+					\left.d\vec B_P\right|_{\perp} = dB_P\ \cos\alpha, 
+				</me>
+				where <m>\cos\alpha</m> is
+				<me>
+					\cos\alpha = \frac{R}{\sqrt{R^2+z^2}}.
+				</me>
+				Hence, the magnetic field at P can be written conceptually as
+				<me>
+					 B_P = \int dB_P\ \cos\alpha.
+				</me>
+				Substituting for <m>dB_P</m>, <m>\cos\alpha</m>, and <m>dl = Rd\phi</m>, we find that integration variable is the polar angle <m>\phi</m>.  Since the integrand does not have dependence on <m>\phi</m>, the integration over <m>\phi</m> from <m>0</m> to <m>2\pi</m> give the following result for the magnitude of the magnetic field at point P.
+				<men xml:id="eq-mag-field-of-current-loop-magnitude">
+					 B_P = \frac{\mu_0I}{2} \frac{R^2}{\left( R^2 + z^2 \right)^{3/2}}.
+				</men>
+ 
+			</p>
+
+		</solution>
+	</exercise>
+
+
+ 
+	<exercise xml:id="ex-magnetic-field-at-center-of-a-square"><title>Magnetic Field at Center of a Wire Bent into a Square</title>
+
+		<statement>
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					A wire carrying current <m>I</m> is bent into a square of side <m>a</m> as shown in <xref ref="fig-magnetic-field-at-center-of-a-square"/>. What is the magnetic field at the center of the wire? Give direction as into-the-page or out-of-the-page.
+				</p>
+				<p></p>
+				<figure xml:id="fig-magnetic-field-at-center-of-a-square">
+					<caption>
+					</caption>
+					<image source="./images/magnetic-field/magnetic-field-at-center-of-a-square.png" width="50%"/>
+				</figure>
+			</sidebyside>
+		</statement>
+		<hint><p>First work out directions from each segment, and then exploit th symmetry.</p></hint>
+		<answer><p> <m> \dfrac{\mu_0 }{2\pi}\, \dfrac{L}{ s\,\sqrt{s^2 + L^2/4}  }</m>, out-of-the-page. </p></answer>
+		<solution>
+			<p>
+				By right hand rule on each segment, we find that the fields of the four segments are all in the same direction, the direction of out-of-page. Therefore, they will all add. From symmetry, the net field will be field of one wire. The field of a single segment is for the case of a symmetric point by a finite wire as worked out in <xref ref="ex-Magnetic-Field-of-a-Current-in-a-Finite-Straight-Wire"/>. Using the formula obtained there, the magnitude will be
+				<md>
+					<mrow> B \amp = 4\times \dfrac{\mu_0 }{2\pi s}\, \dfrac{L/2}{ \sqrt{s^2 + L^2/4}  }</mrow>
+					<mrow> \amp = \dfrac{\mu_0 }{2\pi}\, \dfrac{L}{ s\,\sqrt{s^2 + L^2/4}  }</mrow>
+				</md>
+				The direction is out-page.
+			</p>
+		</solution>
+	</exercise>	
+
+
+	<exercise xml:id="ex-magnetic-field-near-circular-hairpin"><title>Magnetic Field Near the End of a Circular Hairpin</title>
+
+		<statement>
+			<sidebyside widths="60% 10% 30%">			
+				<p>
+					A very long wire is bent with a semi-circular shape at one end with radius <m>R</m> as shown in <xref ref="fig-magnetic-field-near-circular-hairpin"/>. The other ends of the wires are very far away. Find the magnetic field at the center of the semicircle when a current <m>I</m> flows through the wire. Give the direction of the field as into-the-page or out-of-the-page.
+				</p>
+				<p></p>
+				<figure xml:id="fig-magnetic-field-near-circular-hairpin">
+					<caption>
+					</caption>
+					<image source="./images/magnetic-field/magnetic-field-near-circular-hairpin.png" width="50%"/>
+				</figure>
+			</sidebyside>
+		</statement>
+		<hint><p>Superpose contributions from three parts. For individual parts, use formulas worked out in other exercises.</p></hint>
+		<answer><p><m>\frac{\mu_0I}{2R}\left( 1 + \frac{1}{\pi} \right)</m>, into-the-page.</p></answer>
+		<solution>
+			<p>
+				The field will be a superposition of fields from two semi-infinite wires and one half circle. The directions of all fields are into-the-page. Therefore they will all add. To get the individual fields, we appeal to the formulas worked out above in exercises. For half-circular segment we use <xref ref="ex-Magnetic-Field-on-the-Symmetry-Axis-of-a-Circular-Loop"/> with height set to zero.
+				<me>
+					B_\text{circ} = \frac{\mu_0I}{2R}.
+				</me>
+				To get field of semi-infinite wire, we use <xref ref="ex-Magnetic-Field-at-Arbitry-Point-from-Current-in-a-Finite-Straight-Wire"/> with <m>\theta_2=0</m> and <m>\theta_1=\pi/2</m>. Angle <m>
+				theta_1</m> is <m>90^\circ</m> since as the far end goes to infinity, the angle will go to this value. Since, the conttributions of the two straight parts add here, we will get
+				<me>
+					B_\text{straight} = 2\times \frac{\mu_0I}{4\pi R}.
+				</me>
+				The net field will be
+				<me>
+					B = \frac{\mu_0I}{2R} + \frac{\mu_0I}{2\pi R} = \frac{\mu_0I}{2R}\left( 1 + \frac{1}{\pi} \right).
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

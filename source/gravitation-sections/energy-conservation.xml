@@ -1,0 +1,109 @@
+<section xml:id="gravity-Energy-Conservation"><title> Energy Conservation </title>
+	<introduction><title>Two Bodies Interacting with Gravitation</title>
+		<p>
+			Since gravitational force is a conservative force, the total energy of the two-body interacting via the gravitational force is conserved. The total energy <m>E</m> of the two-body system is given by the following.
+			<men>
+				E = K + U = \left(\dfrac{1}{2}m_1v_1^2 + \dfrac{1}{2}m_2v_2^2 \right) - G_N\dfrac{m_1m_2}{r}.
+			</men>
+			The kinetic energy part can also be written as sum of two parts, the kinetic energy of the center of mass and the kinetic energy of the motion with respect to the center of mass.
+			<men xml:id="eq-gravity-energy-cons-cm-and-rel-regular">
+				E = \left(\dfrac{1}{2}M V_\text{cm}^2 + \dfrac{1}{2}\mu v_\text{rel}^2 \right) - G_N\dfrac{m_1m_2}{r},
+			</men>
+			where 
+			<md>
+				<mrow> \amp V_\text{cm} = \text{ Speed of CM},</mrow>
+				<mrow> \amp v_\text{rel} = \text{ Speed of }m_1\text{ relative to }m_2, </mrow>
+				<mrow> \amp M = m_1 + m_2,</mrow>
+				<mrow> \amp \mu = \dfrac{m_1 m_2}{m_1 + m_2}.</mrow>
+			</md>
+			Often we work in a coordinate system whose origin is fixed at the CM. In this system, <m>V_\text{cm}=0</m>. Then, we have only the relative position between the two particles to study.
+			<men xml:id="eq-gravity-energy-cons-cm-and-rel-cmframe">
+				E =  \dfrac{1}{2}\mu v_\text{rel}^2 - G_N\dfrac{m_1m_2}{r}\ \ (\text{CM Frame})
+			</men>
+
+		</p>
+	</introduction>
+	<subsection><title> (Calculus) Effective Potential Energy</title>
+		<p>
+			Since gravitational force is spherically symmetric, it makes sense to use sherical coordinates. For planar motion of planets around the Sun, we need only polar coordinates. In polar coordinates, the energy in the CM frame, which will have <m>V_\text{cm}=0</m>, is
+			<men>
+				E = \dfrac{1}{2}\mu v_r^2 + \dfrac{1}{2}\mu r^2 \omega^2 - G_N\dfrac{m_1m_2}{r},
+			</men>
+			where <m> r </m> is the relative distance between the particles, <m>v_r</m> radial speed, and <m>\omega</m> speed for the angular variable <m>\theta</m> of the polar coordinate in the plane of motion,
+			<me>
+				v_r = \dfrac{dr}{dt},\ \ \text{ and }\ \  \omega = \dfrac{d\theta}{dt}.
+			</me>
+			The angular part can be expressed in terms of conserved angular momentum,
+			<men>
+				l = \mu \omega r^2 \ \ \longrightarrow\ \ \omega = \dfrac{l}{\mu r^2}.
+			</men>
+			After expressing <m>\omega</m> in terms of <m>l</m>, we can group together non-radial-velocity terms. 
+			<men>
+				E = \dfrac{1}{2}\mu v_r^2 + \left( \dfrac{1}{2} \dfrac{l^2}{\mu r^2} - G_N\dfrac{m_1m_2}{r} \right).
+			</men>
+			The quantity within parenthesis, <m>( \cdots )</m> is called <term> effective potential energy</term>, and denoted by <m> U_\text{eff}</m>. With
+			<men xml:id="eq-grav-ener-cons-ueff">
+				U_\text{eff} =  \dfrac{1}{2} \dfrac{l^2}{\mu r^2} - G_N\dfrac{m_1m_2}{r},
+			</men>
+			we write energy more simply as
+			<men xml:id="eq-grav-ener-cons-kr-ueff">
+				E = \dfrac{1}{2}\mu v_r^2 + U_\text{eff} \equiv K_r + U_\text{eff},
+			</men>
+			where <m>K_r</m> is kinetic energy in the radial motion only. When we write energy this way, the problem looks like the problem of one variable <m>r</m>, which can vary in range <m> [0,\infty)</m>. Of course, in the real world, the planet is moving in a plane with both the radial coordinate and the angular coordinate. Equation <xref ref="eq-grav-ener-cons-kr-ueff" /> helps us focus on the radial motion of reduced particle <m>\mu</m> alone.		
+		</p>
+ 
+	</subsection>
+	<subsection><title> Interpreting Effective Potential Energy</title>
+		<p>
+			How to use effective potential energy in Eq. <xref ref="eq-grav-ener-cons-ueff" /> and <xref ref="eq-grav-ener-cons-kr-ueff" />? First of all, we note the <m>K_r \ge 0</m> since <m>\mu</m> and square of speed are positive real numbers. Therefore
+			<me>
+				E - U_\text{eff} \ge 0, \text{  for all }r.
+			</me>
+			To explore <m>U_\text{eff}</m> further, let us use a simpler notation.
+			<men>
+				U_\text{eff} =  \dfrac{1}{2} \dfrac{l^2}{\mu r^2} - G_N\dfrac{m_1m_2}{r} \Leftrightarrow \dfrac{\alpha}{r^2} - \dfrac{\beta}{r},
+			</men>
+			with
+			<me>
+				\alpha = \dfrac{l^2}{2 \mu},\ \ \beta = G_Nm_1m_2.
+			</me>
+			<xref ref="fig-eff-pot-labelled"/> shows <m>U_\text{eff}\text{ vs }r</m>. The figure shows four distinct energy values of interest, <m>E=0,\, E_1,\, E_2,</m> and <m>E_\text{min}=U_0</m>. We can see the turning points represented by these energy values by solving <m>E = U_\text{eff}</m>, we will have the values of <m>r</m> for turning points in the motion in relative position, since at those values we will have <m>K_r=0</m>, i.e., <m>v_\text{r}=0</m>.
+			<men>
+				E r^2 + \beta r - \alpha = 0.
+			</men>
+			This equation has following solutions.
+			<mdn>
+				<mrow> \amp  r = \dfrac{\alpha}{\beta} \ \ (E=0), </mrow>
+				<mrow> \amp  r = \dfrac{1}{E} \left(-\beta + \sqrt{ \beta^2 + 4\alpha E } \right)\ \ (E \gt 0), </mrow>
+				<mrow> \amp r = \dfrac{1}{|E|} \left(\beta \pm \sqrt{ \beta^2 - 4\alpha |E| } \right)\ \ (E \lt 0), </mrow>
+			</mdn>
+			where we need to make sure that
+			<me>
+				\beta^2 \ge 4 \alpha |E|.
+			</me>
+			The solution for <m> E=0</m> has one turning point with orbit having the shape of a parabola. The solution for <m>E \gt 0</m> has also only one turning point with the orbit a hyperbola.
+		</p>
+		<p>
+			The two solutions in the case of <m> E \lt 0 </m> refers to the <term> perihelion</term> and <term>aphelion</term> of a planet in the planet/Sun system.
+			<mdn>
+				<mrow> r_\text{min} \amp = \dfrac{1}{|E|} \left(\beta - \sqrt{ \beta^2 - 4\alpha|E| } \right)\ \ (E\lt 0,\ \ |E| \lt \beta^2/4\alpha) </mrow>
+				<mrow> r_\text{max} \amp = \dfrac{1}{|E|} \left(\beta + \sqrt{ \beta^2 - 4\alpha|E| } \right)\ \ (E\lt 0,\ \ |E| \lt \beta^2/4\alpha) </mrow>
+			</mdn>
+			The solutions of orbit equation for these conditions show that the orbit is ellipse with the smallest distance between the masses given by <m>r_\text{min} </m> and the largest distance  <m>r_\text{min} </m>. When <m> (E\lt 0,\ \ |E| = \beta/4\alpha)</m>, there is only one solution with
+			<me>
+				r_0  = \dfrac{2a}{\beta}\ \ (E\lt 0,\ \ |E| = \beta^2/4\alpha),
+			</me>
+			which is the radius of the circle of motion of the relative position.
+
+		</p>
+		<figure xml:id="fig-eff-pot-labelled">
+			<caption> Plot of effective potential energy versus radial distance <m>r</m>. Four energy levels of interest are indicated on the axis. They are <m>E = 0,\ E_1,\ E_2, E_\text{min}</m>. The system cannot have energy less than the minimum of <m>U_\text{eff}</m> since that would mean <m>K_r\lt 0</m>, which is impossible.
+			</caption>
+			<image source="./images/gravitation/eff-pot-labelled.png" width="80%"/>
+		</figure>
+
+ 
+
+
+	</subsection>
+</section>

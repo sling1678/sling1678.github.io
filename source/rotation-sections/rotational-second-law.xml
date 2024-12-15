@@ -1,0 +1,421 @@
+<section xml:id="Rotational-Second-Law"><title> Rotational Second Law</title>
+<idx>Rotational Second Law</idx>
+	<introduction>
+		<p>
+			You already know that, if mass is not changing, then, acceleration is proportional to the force on the body.
+			<men xml:id="eq-rotational-second-law-f-equal-ma">
+				\vec F_{\text{net}} = m\,\vec a\ \ \ \ (m \text{ not changing})
+			</men>
+			We will show below that this law leads to the following equation for fixed-axis-rotation about a principal axis of a rigid body of moment of inertia <m>I</m> about the axis of interest, net torque <m>\mathcal{T}_{\text{net,ext}}</m> from external forces, and angular acceleration <m>\alpha</m>.
+			<men xml:id="eq-rotational-second-law-tau-equal-Ialpha">
+				\mathcal{T}_{\text{net,ext}} = I\,\alpha , \ \ \ \ (I \text{ not changing}).
+			</men> 
+			The requirement that moment of inertia not change with time restricts the applicability of this equation to <term> rigid bodies</term> whose shape and mass distribution are fixed in time. 
+		</p>
+		<p>
+			To find the magnitude and direction of the net torque, we need to think of each torque as a vector with the direction either as positive <m> z </m> axis or negative <m> z </m> axis with <m> z </m> axis being the axis of rotation, or, as couterclockwise or clockwise sense of rotation.
+		</p>
+		<p>
+			Since <m> I </m> is a positive number, the direction of the angular acceleration <m>\vec \alpha</m> is the same as the direction of the net torque <m> \vec{\mathcal{T}}_{\text{net}} </m>.
+		</p>
+	</introduction>
+
+
+
+	<example xml:id="ex-Angular-Acceleration-of-a-Pulley"><title> Angular Acceleration of a Pulley </title>
+		<statement>
+			<sidebyside widths="50% 10% 25% 15%">
+				<p>
+					A <m> 20\text{-kg}</m> pulley of radius <m> 10\text{ cm}</m> has a rope wound around its edge. When the rope is pulled with some force the pulley begins to rotate. (a) Where is the axis of rotation in this problem? (b) Is the axis of rotation fixed in time? 
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-pulley-pulled-by-rope-find-angular-accln">
+					<caption></caption>
+					<image source="./images/rotation/ex-pulley-pulled-by-rope-find-angular-accln.png" width="50%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+			<p>
+				(c) Is the rotating body a rigid body? (d) What will be the angular acceleration of the pulley when the force in the rope is  <m> 50\text{ N}</m> down as shown in the figure.
+			</p>
+
+
+		</statement>
+		<!-- <hint>   <p> (a) Think of how the disk is rotating. (b) Same hint as (a). (c) Is the shape of the body changing? (d) Find <m> I </m> first. </p> </hint> -->
+		<answer> <p>  (a) Through the center and perpendicular to the surface of the pulley, (b) Yes, fixed, (c) With the mass of the rope negligible, the pulley+rope wound around it is a rigid body, (d) <m> 50\text{ rad/sec}^2</m>, clockwise or towards into-the-page. </p> </answer>
+
+		<solution><title>a</title>
+			<sidebyside widths="50% 10% 30% 10%">
+				<p>The axis of rotation is the imaginary line that passes through the center of the pulley and is perpendicular to the disk of the pulley.
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-pulley-pulled-by-rope-find-angular-accln-a">
+					<caption></caption>
+					<image source="./images/rotation/ex-pulley-pulled-by-rope-find-angular-accln-a.png" width="50%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+		</solution>
+
+		<solution><title>b</title>
+			<p>
+				Yes, the axis is fixed.
+			</p>
+		</solution>
+
+		<solution><title>c</title>
+			<p>
+				The pulley is the rotating body. The rope on eht pulley is also rotating. So, in a sense, the rotating body is losing some of its mass. But, we will assume that mass of the rope is negligible. With that assumption, the roating body is a rigid body.
+			</p>
+		</solution>
+
+		<solution> <title>d</title>
+			<p>
+				Magnitude: 
+			</p>
+			<p>
+				Since we have a rigid body rotating about a fixed axis, we can use
+				<me>
+					I\alpha = \mathcal{T}_{\text{net}}.
+				</me>
+				Here, <m> I </m> is the moment of inertia of the pulley, which we can consider to be a disk.
+				<me>
+					I = \dfrac{1}{2}\, MR^2.
+				</me>
+				By drawing a diagram, you can convince yourself that the lever arm of the tension force is just the radius of the pully. Therefore
+				<me>
+					\mathcal{T}_{T} = R T.
+				</me>
+				Lines of other forces on the pulley  pass through the axis, therefore, their lever arms are zero. This gives us the net toque to be
+				<me>
+					\mathcal{T}_{\text{net}} = RT.
+				</me>
+				Therefore, the angular acceleration is
+				<me>
+					\alpha = \dfrac{\mathcal{T}_{\text{net}}}{I} = \dfrac{ 2T}{MR} = \dfrac{ 2\times 50}{20\times 0.10} =  50\text{ rad/sec}^2.
+				</me>
+			</p>
+			<p> Direction:
+			</p>
+			<p>
+				The direction of the net torque is into-the-page, which is the same as negative <m> z </m> axis or the clockwise rotation. This is the same direction for the angular acceleration.
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="ex-Coupled-Motion-of-a-Block-Attached-to-an-Unwinding-Tape-on-a-Rotating-Wheel"><title> Coupled Motion of a Block Attached to an Unwinding Tape on a Rotating Wheel </title>
+		<statement>
+			<p>
+				Consider a wheel of mass <m> M</m> and radius <m> R </m> that is free to rotate about an axle through its center.  Several turns of a thin light non-sticky tape, whose mass can be neglected, are wound at the edge.
+			</p>
+			<sidebyside widths="55% 10% 30% 5%">
+				<p>
+					A block of mass <m> m </m> is attached to the free end of the tape as shown in <xref ref="fig-ex-block-attached-to-unwinding-tape"/>.  When the block is released, the tape unwinds smoothly and the wheel rotates. Assume the friction on the wheel at the axle is negligible. 
+ 
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-block-attached-to-unwinding-tape">
+					<caption></caption>
+					<image source="./images/rotation/ex-block-attached-to-unwinding-tape.png" width="50%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+
+			<p>
+				Find the angular acceleration of the wheel and the tension in the tape. Its preferable that you find the answer in symbols, but if you are not yet comfortable doing calculations with symbols, you can use the following numbers: <m> M = 20\text{ kg}</m>, <m> R = 0.25\text{ m}</m>, <m> m = 2.5\text{ kg}</m>.
+			</p>
+
+		</statement>
+		<!-- <hint> <p> Set up two equations: (1) rotation of the wheel and (2) translation motion of the block. Also, the force of tension is not equal to <m> mg </m>. </p> </hint> -->
+		<answer> <p> 
+					<m> \alpha = \left( \dfrac{2m}{2m + M} \right)\ \dfrac{g}{R}, </m>
+					<m> T = \left( \dfrac{m}{2m + M}\right)\ Mg, </m> 
+					<m>\alpha  = 7.85\text{ rad/s}^2</m>, 
+					<m>T = 19.6\text{ N}</m>.  
+					The direction of the angular acceleration is into-page, or negative <m> z </m> axis, or clockwise sense. The direction of tension is down when acting on the wheel and up when acting on the block.
+				</p> 
+			</answer>
+		<solution> 
+			<p>
+				Here the translational motion of the block and the rotational motion of the wheel are coupled.  For every radian of rotation, the tape unwinds by a distance <m> R </m> as given by the arc-radius-angle formula of a circle.  Therefore, every radian of rotation is accompanied by a vertical displacement of the block by <m>R</m>.  More generally, for an angular displacement of <m>\theta</m>  radians of the wheel, the vertical displacement of the block is <m>R\theta</m>. 
+			</p>
+			<p>
+				The coupling of motion causes the following equality between the magnitudes of the acceleration, <m> a </m>, of the block and the angular acceleration, <m> \alpha</m>, of the wheel.
+				<me>
+					a = R\, \alpha.\ \ \text{(both sides positive.)}
+				</me>
+			</p>
+			<sidebyside widths="65% 10% 15% 10%">
+				<p>
+					Now, we write the equation of motion for the block. Here <m>mg \gt T</m> by <m> ma </m>.
+					<me>
+						mg - T = ma, 
+					</me>
+					in which we can replace <m>a</m> to get
+					<men  xml:id="eq-block-attached-to-unwinding-tape-may-T-mg">
+						\ mg-T=mR\alpha.
+					</men>					
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-block-attached-to-unwinding-tape-block-fbd">
+					<caption></caption>
+					<image source="./images/rotation/ex-block-attached-to-unwinding-tape-block-fbd.png" width="50%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					For the rotation of the wheel around its axle, we can ignore all forces that go through the axis. We also ignore the friction at the radius of the axle, as instructed. Then, there is only the force of tension, which acts down when acting on the wheel.  The magnitude of torque is related to the magnitude of the angular acceleration by
+					<me>
+						RT = \left( \dfrac{1}{2} MR^2\right)\, \alpha,.
+					</me>
+									
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-block-attached-to-unwinding-tape-wheel-fbd">
+					<caption></caption>
+					<image source="./images/rotation/ex-block-attached-to-unwinding-tape-wheel-fbd.png" width="50%"/>
+				</figure>
+			</sidebyside>
+
+
+			<p>
+				This gives us the following for magnitude of tension.
+					<men xml:id="eq-block-attached-to-unwinding-tape-I-alpha-RT">
+						 T =  \dfrac{1}{2} MR \, \alpha.
+					</men>
+				From Eqs. <xref ref="eq-block-attached-to-unwinding-tape-may-T-mg" />, and <xref ref="eq-block-attached-to-unwinding-tape-I-alpha-RT"/>, we get the magnitudes of the angular acceleration and tension force to be
+				<md>
+					<mrow>\amp \alpha = \left( \dfrac{2m}{2m + M} \right)\ \dfrac{g}{R}, </mrow>
+					<mrow>\amp T = \left( \dfrac{m}{2m + M}\right)\ Mg. </mrow>
+				</md>
+				The <alert>direction</alert> of the angular acceleration is into-page, or negative <m> z </m> axis, or clockwise sense. The direction of tension is down when acting on the wheel and up when acting on the block.
+			</p>
+			<p>
+				Using the values <m> M = 20\text{ kg}</m>, <m> R = 0.25\text{ m}</m>, <m> m = 2.5\text{ kg}</m>, we find the values of magnitudes to be.
+				<me>
+					 \alpha  = 7.85\text{ rad/s}^2,\ \ T = 19.6\text{ N}.
+				</me>
+
+			</p>
+
+		</solution>
+	</example>
+
+	<example xml:id="ex-Atwood-Machine"><title> The Atwood Machine </title>
+		<statement>
+			<p>
+				In an Atwood machine two blocks connected by a light string hang from the two sides of a pulley without the string sliding over the pulley. Instead, the string is assumed to unwind smoothly.
+			</p>
+
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					<p>
+					Suppose the pulley is frictionless at the axle, but the mass of the pulley is not negligible compared to the masses of the blocks. 
+					</p>
+					<p>
+						Let <m> M </m> and <m> R </m> be the mass and radius of the pulley, which, for purposes of moment of inertia, can be assumed to be a uniform disk, and <m> m_1 </m> and <m> m_2 </m> be the masses of the two blocks. 
+					</p>
+
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-atwood-machine">
+					<caption></caption>
+					<image source="./images/rotation/ex-atwood-machine.png" width="50%"/>
+				</figure>
+				<!-- <p></p> -->
+			</sidebyside>
+
+			<p>
+				I would prefer you do the problem in symbols. But, if you want numbers, use the following: 
+				<me>
+					M = 20\text{ kg}, m_1 = 10\text{ kg}, m_2 = 5\text{ kg}, R = 0.25\text{ m}.
+				</me>
+			</p>
+			
+			<p>
+				(a) Find the following five quantities:
+				<ol>
+					<li> Tension in the string on the the side of the pulley that has block 1,</li>
+					<li> Tension in the string on the the side of the pulley that has block 2,</li>
+					<li> Acceleration of block 1,</li>
+					<li> Acceleration of block 2, and</li>
+					<li> Angular acceleration of the pulley.</li>
+				</ol>
+			</p>
+			<p>
+				(b) What happens to the tensions if mass of the pulley is negligible, i.e., <m> M = 0</m>?
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  (a) Set up three equations - one for <m>m_1</m>, another for <m> m_2 </m> and the third for pulley, and use the constraint <m> a = R\alpha</m>. (b) If you do the problem in symbols, you can just set <m> M=0</m>. </p> </hint> -->
+		<answer> <p> (a) <m> a = \dfrac{2(m_1 - m_2)\, g}{2m_1 + 2m_2 + M}</m>, <m>\alpha = a /R </m>, <m> T_1 = \left( \dfrac{4m_2 + M}{2m_1 + 2 m_2 + M} \right)\, m_1 g</m>, <m> T_2 = \left( \dfrac{4m_1 + M}{2m_1 + 2 m_2 + M} \right)\, m_2 g</m>. Numerical: <m> a = 1.98\text{ m/s}^2, </m>
+					<m> \alpha = 7.85\text{ rad/s}^2, </m>
+					<m> T_1 = 78.5\text{ N},</m> 
+					<m> T_2 = 58.9\text{ N}.</m> 
+					(b) They become equal in magnitude.</p> </answer>
+		<solution><title>a</title> 
+			<p>
+				We have solved a similar problem before by assuming that the pulley was massless and frictionless. These assumptions about the pulley let us assert that the tensions on the two sides had the same magnitude.  Here, we cannot make this assumption.  We will see below that the equation of rotation of the pulley will become inconsistent if we assume that the tensions on the two sides have the same magnitude. 
+			</p>
+			<p>
+				Let <m> T_1 </m> and <m> T_2 </m> be the magnitudes of the tension force on the two sides of the pulley. 
+			</p>
+			<p>
+				The motion of the blocks are connected by the unchanging length of the string. This makes the <alert> magnitude</alert> of their accelrations equal. Thus, we use same symbol <m> a </m> for the magnitude of their accelerations. That is,
+				<me >
+					a_1 = a = a_2.\ \ \ (\text{magnitudes, only})
+				</me>
+			</p>
+			<p>
+				Since the string going over the pulley is not slipping, the length by which the string will unwind, i.e., the distance either of the blocks moves, is related to the angular displacement of the pulley by the arc-radius-angle relation. This gives the following relation between the <alert> magnitude </alert> of the angular acceleration, <m> \alpha</m> and the magnitude of the acceleration, <m>a </m>, of the blocks.
+				<men xml:id="eq-atwood-machine-a-R-alpha">
+					 a =  R\,\alpha.
+				</men>				
+			</p>
+
+			<sidebyside widths="50% 10% 30% 10%">
+				<p>
+					Now, we set up free-body diagrams for the two blocks to write their <m> \vec F = m\vec a</m>.  For concreteness, let us assume that the acceleration of block 1 is pointed down, which will autimatically make the acceleration of block 2 up. 
+				</p>
+				<p></p>
+				<image source="./images/rotation/ex-atwood-machine-blocks-fbd.png" width="50%"/>
+				<p></p>
+			</sidebyside>
+			<p>
+				Using the free-body diagrams we will get the following two equations.
+				<mdn>
+					<mrow xml:id="eq-atwood-machine-m1g-T1-m1a"> \amp m_1 g - T_1 = m_1 a, </mrow>
+					<mrow xml:id="eq-atwood-machine-m2g-T2-m2a"> \amp  T_2 - m_2 g = m_2 a. </mrow>
+				</mdn>
+				Let positive <m> z </m> axis be pointed out-of-page. Then, the torque by force <m> \vec T_1 </m> is pointed in the positive <m> z </m> direction and that by <m> \vec T_2 </m> is pointed in the negative <m> z </m> direction. Therefore, they will oppose each other. The lines of other forces on the pulley, such as gravity and normal, pass though the axis, so they do not contribute to the net torque. Thus, we get the following equation for the rotational motion of the pulley.
+				<me>
+					RT_1 - RT_2 = \left( \dfrac{1}{2} MR^2\right)\, \alpha,
+				</me>
+				which we can simplify  by replacing <m> \alpha = a/R</m> to the following.
+				<men  xml:id="eq-atwood-machine-T1-T2-half-Ma">
+					T_1 - T_2 = \dfrac{1}{2} Ma.
+				</men>
+				Adding equations <xref ref="eq-atwood-machine-m1g-T1-m1a" />, <xref ref="eq-atwood-machine-m2g-T2-m2a" />, and  <xref ref="eq-atwood-machine-T1-T2-half-Ma"/>, we get the following after some simplification.
+				<me>
+					a = \dfrac{2(m_1 - m_2)\, g}{2m_1 + 2m_2 + M},
+				</me>
+				which also gives us <m> \alpha</m> by <m>a = R\alpha </m>.
+				<me>
+					\alpha = \dfrac{1}{R}\ \dfrac{2(m_1 - m_2)\, g}{2m_1 + 2m_2 + M},
+				</me>
+				By using <m> a </m> in Eq. <xref ref="eq-atwood-machine-m1g-T1-m1a" />, we get <m> T_1 </m> and in Eq. <xref ref="eq-atwood-machine-m2g-T2-m2a" />, we get <m> T_2</m>.
+				<mdn>
+					<mrow  xml:id="eq-atwood-machine-T1-final">\amp T_1 = \left( \dfrac{4m_2 + M}{2m_1 + 2 m_2 + M} \right)\, m_1 g,</mrow>
+					<mrow  xml:id="eq-atwood-machine-T2-final">\amp T_2 = \left( \dfrac{4m_1 + M}{2m_1 + 2 m_2 + M} \right)\, m_2 g,</mrow>
+				</mdn>
+				If you use the numerical values, you should get
+				<md>
+					<mrow> \amp a = 1.98\text{ m/s}^2,\ \ \alpha = 7.85\text{ rad/s}^2, </mrow>
+					<mrow> \amp T_1 = 78.5\text{ N}, \ \ T_2 = 58.9\text{ N}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>b</title> 
+			<p>
+ 				Setting <m> M=0</m> in the formulas in Eqs. <xref ref="eq-atwood-machine-T1-final"/> and <xref ref="eq-atwood-machine-T2-final"/>, immediately shows that the two tensions are equal.
+	 			<me>
+	 				T_1 = T_2 = 2\ \left( \dfrac{m_1m_2}{m_1 + m_2 } \right)\ g = 65.4\text{ N}. 
+	 			</me>
+ 			</p>
+
+		</solution>
+	</example>
+
+
+	<subsection> <title>(Calculus) Derivation of the Rotational Second Law </title>
+
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				Consider a simple system of one particle of mass <m> m</m> with velocity <m> \vec v </m> at a position <m> \vec r </m> from the axis. Suppose one force <m> \vec F </m> acts on the particle. The momentum <m> \vec p </m> of the particle <m> \vec p = m\vec v </m> obeys Newton's second law of motion given by
+				<men>
+					\dfrac{d\vec p}{dt} = \vec F.
+				</men>
+			</p>
+			<p></p>
+			<figure xml:id="fig-second-law-particle-rotation">
+				<caption></caption>
+				<image source="./images/rotation/second-law-particle-rotation.png" width="50%"/>
+			</figure>
+		</sidebyside>
+
+
+
+		<p>
+			The angular momentum <m>\vec L</m> of the particle is
+			<men>
+				\vec L = \vec r \times \vec p.
+			</men>
+			Now, let us investigate the rate at which angular momentum changes.
+			<md>
+				<mrow>\dfrac{d\vec L}{dt} \amp =\dfrac{d (\vec r \times p)}{dt}</mrow>
+				<mrow> \amp =\dfrac{d \vec r }{dt}\times \vec p + \vec r \times\dfrac{d \vec p }{dt} = \vec v\times \vec p +  \vec{\mathcal{T}}, </mrow>
+			</md>
+			where <m> \vec{\mathcal{T}} </m> is the torque. The term <m>\vec v\times \vec p </m> is zero since the angle between <m> \vec v </m>  and <m>\vec p</m> is zero and hence their vector product is zero. Therefore, we get the second law for rotation in terms of rate of change of angular momentum.
+			<men xml:id="eq-rotational-second-law-L-equals-tau">
+				\dfrac{d\vec L}{dt}  = \vec{\mathcal{T}}.
+			</men>
+			We can convert this to <m> I \alpha = \mathcal{T} </m> in the case of fixed-axis-rotation about a principal axis. In that case, the direction of <m> \vec L</m> is fixed, and the magnitude is given by
+			<me>
+				L = I\, \omega.
+			</me>
+			Therefore, Eq. <xref ref="eq-rotational-second-law-L-equals-tau" /> for constant <m> I </m> becomes
+			<me>
+				I\, \dfrac{d\omega}{dt} = \mathcal{T}.
+			</me>
+			Since <m> \dfrac{d\omega}{dt} </m> is the angular acceleration, this is just
+			<me>
+				I\, \alpha = \mathcal{T}.
+			</me>
+			We will study modification of this relation in the next chapter when we relax the condition of fixed axis.			
+
+		</p>
+	</subsection>
+
+	<subsection><title> (Calculus) Rotational Second Law for Multiparticle System</title>
+		<p>
+			First we consider a simple two-particle system. Let particle 1 has external force <m> \vec F_1^{\text{ext}} </m> and internal force from the second particle <m> \vec F_{12}^{\text{int}}  </m>. Similarly, let particle 2 has external force <m> \vec F_2^{\text{ext}} </m> and internal force from the second particle <m> \vec F_{21}^{\text{int}} </m>. Note the following relation from Newton's third law.
+			<men xml:id="eq-rotational-second-law-internal-forces">
+				\vec F_{12}^{\text{int}}  = - \vec F_{21}^{\text{int}}.
+			</men>
+			Let <m> \vec r_1</m> be the position of particle 1 and <m> \vec r_2</m> be the position of particle 2. Further, let <m> \vec L_1</m> be the angular momentum of particle 1 and <m> \vec L_2</m> be the  angular momentum of particle 2. Then, we can write rotational second law for the two particles as
+			<md>
+				<mrow> \amp \dfrac{d\vec L_1}{dt} = \vec r_1 \times \vec F_1^{\text{ext}} + \vec r_1 \times\vec F_{12}^{\text{int}},  </mrow>
+				<mrow> \amp  \dfrac{d\vec L_2}{dt} = \vec r_2 \times\vec F_2^{\text{ext}} + \vec r_2 \times\vec F_{21}^{\text{int}}, </mrow>
+			</md>
+			Adding these two equations, we find that the net angular momentum changes as
+			<me>
+				\dfrac{d\vec L_{\text{net}}}{dt} = \vec{\mathcal{T}}_{\text{net,ext}} + (\vec r_1 - \vec r_2)\times \vec F_{12}^{\text{int}}.
+			</me>
+			Notice that the vector <m> (\vec r_1 - \vec r_2) </m> is a vector pointed from particle 2 towards particle 1. Therefore, <alert> if the internal force between the two particles are either attractive or repulsince acting along the line joining the two particles</alert>, then the last term will be zero.
+			<me>
+				(\vec r_1 - \vec r_2)\times \vec F_{12}^{\text{int}} = 0.
+			</me>
+			Therefore, we find that total angular momentum changes in response to only external torques.
+			<men>
+				\dfrac{d\vec L_{\text{net}}}{dt} =\vec{\mathcal{T}}_{\text{net,ext}}.
+			</men>
+			For fixed-axis rotation, the direction of axis of rotation is fixed in time. If we choose <m> z </m> axis to be the axis of rotation, then we deal with only the <m> z</m> component of the angular momentum.
+			<men>
+				\dfrac{d  L_z^{\text{net}} }{dt} = \mathcal{T}_{\text{net},z}.
+			</men>
+			Now, if the axis is a symmetry axis, the angular momentum is 
+			<me>
+				L_z^{\text{net}} = I\, \omega.
+			</me>
+			With <m> \alpha = \dfrac{d\omega}{dt}</m>, we arrive at
+			<men>
+				I\, \alpha = \mathcal{T}_{\text{net},z}.
+			</men>			
+
+		</p>
+	</subsection>
+
+
+</section>

@@ -1,0 +1,541 @@
+<section xml:id="forces-Drag-Force"><title> Drag Force </title>
+<idx><h>Forces</h><h>Drag Force</h></idx><idx>Drag Force</idx>
+	<introduction>
+		<p>
+			Drag force is the force that a fluid applies on a moving body in the fluid. This type of friction is different from kinetic friction between solids in one important way: <alert>while the kinetic friction did not depend much on the speed of the object, the drag force depends on the speed.</alert>
+		</p>
+		<p>
+			
+
+			Drag force occurs through two mechanisms: 
+			<ol>
+				<li> <term> viscous drag force</term>: due to viscous flow of the fluid around the body of the fluid.</li>
+				<li> <term> inertial drag force</term>: due to pushing of the fluid out of the way from in front of the moving body. </li>
+			</ol>
+			While both of these drag forces act on a moving body, often one of them is highly dominant in a particular situation. For instance, if the body is moving very fast, the inertial drag force will be the dominant force and when the body is moving slowly in a viscous fluid, the viscous force will be the dominant component. We will address both of these drag forces below.
+		</p>
+		<p>
+			Our treatment of drag force will give you a very simplified picture of what is actually goes on when an object is moving in a fluid. A fuller treatment of the subject is quite complicated and beyond the scope of this book. However, our treatment will give you sufficient understanding of the physics involved for you to be able to address the role of viscous forces in many practical situations. We will also study viscosity in the chapter on dynamic fluid.
+		</p>
+
+	</introduction>
+	<subsection> <title> Viscous Drag Force</title><idx><h>Drag Force</h><h>Viscous</h></idx>
+
+		<p> Viscous drag force occurs due to forces between the molecules of the fluid. Due to the attractive nature of these forces, molecules tend to stick to each other. When a body is moving in a fluid, the molecules of the fluid next to the body will move with the velocity of the body, but molecules further away would not move much or at all. Thus, at low speeds you find layers of fluid moving past each other, causing a <term>laminar flow</term> as shown in <xref ref="fig-linear-drag-stokes"/>.</p>
+
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				The magnitude of the drag force  is proportional to one power of speed if body is moving <q>slowly</q> so that a laminar flow of fluid around the object occurs as shown in <xref ref="fig-linear-drag-stokes"/>. In this range of speed, the drag is dominated by viscous effects of the fluid. Sir George Stokes published in 1840s a formula for the viscous drag force on a <alert>moving sphere</alert> of radius <m>R</m>.
+			<men xml:id="Stokes-formula-fd-equal-sixpietarv">
+				F_{D}^{\text{viscous}} = 6\pi\eta R\, v,
+			</men>
+			where <m>v</m> is the speed of sphere and <m>\eta</m> viscosity of the fluid. 
+			</p>
+			<p></p>
+			<figure xml:id="fig-linear-drag-stokes">
+				<caption>Laminar Flow.</caption>
+				<image source="./images/forces/linear-drag-stokes.png"/>
+			</figure>
+		</sidebyside>
+
+		
+		<p>
+			The formula in Eq. <xref ref="Stokes-formula-fd-equal-sixpietarv"/> is called <term> Stoke's force</term>, <term> linear drag force</term> or <term> viscous drag force</term>. For <alert>other shapes</alert>, you might think that the general formula may be written as
+			<me>
+				F_{D}^{\text{viscous}} = k\,\eta\, v,
+			</me>
+			where <m>k</m> will be shape-dependent with dimension of length. The direction of viscous drag force is, just like the kinetic friction, in the opposite direction of the velocity of the moving object.
+		</p>
+
+	</subsection>
+
+	<subsection><title> Inertial Drag Force</title><idx><h>Drag Force</h><h>Inertial</h></idx>
+		<p>
+			If a body is moving rapidly through a fluid, the flow of the fluid around the object is no longer laminar. In these cases, the fluid becomes turbullent. This is the case, for instance, when you drop a steel ball in air. The resistive force of the fluid is mainly as a <alert>reaction to the impulse</alert> on the fluid by the moving ball, hence, it is known as <term>inertial drag force</term>. 
+		</p>
+		<p>
+			Suppose a spherical ball is moving through a fluid at speed <m> v </m> as shown in <xref ref="fig-inertial-drag-force"/>. From the perspective of the ball, i.e., in the ball frame, the fluid in front of the ball would be striking the ball at speed <m> v </m>. 
+		</p>
+		<sidebyside widths="65% 5% 30%">
+			<p>
+				When the moving molecule hits the ball, it  must come to rest. Net effect is the change in momentum of the fluid which is transfered to the change in momentum of the ball.
+				In one second, fluid will deposit a momentum equal to
+				<men>
+					\Delta p = \text{Volume}\times \text{Density} \times v,
+				</men>
+			where Volume is the volume in front of the ball of a cylinder of cross-section equal to the cross-section of the ball, i.e., here <m> \pi R^2</m>, and the height equal to <m> v</m>, since in one second, all the fluid up to this distance would have hit the ball.
+			</p> 
+			<p></p>
+			<figure xml:id="fig-inertial-drag-force">
+				<caption></caption>
+				<image source="./images/forces/inertial-drag-force.png"/>
+
+			</figure>
+		</sidebyside>
+
+		<!-- <p>
+			In one second, fluid will deposit a momentum equal to
+				<men>
+					\Delta p = \text{Volume}\times \text{Density} \times v,
+				</men>
+			where Volume is the volume in front of the ball of a cylinder of cross-section equal to the cross-section of the ball, i.e., here <m> \pi R^2</m>, and the height equal to <m> v</m>, since in one second, all the fluid up to this distance would have hit the ball. 
+		</p> -->
+
+		<p>
+			Writing <m> \rho </m> for the density of the fluid, we find the following for the rate at which momentum is deposited by the fluid on the ball in the opposite direction to the fluid flow.
+			<me>
+				\dfrac{\Delta p}{\Delta t} =  \pi R^2 \rho v^2. 
+			</me>
+			We usually write a more general formula that can apply to other shapes.
+			<me>
+				\dfrac{\Delta p}{\Delta t} = \dfrac{1}{2}\,C_D\, A\, \rho\, v^2, 
+			</me>
+			where <m> A </m> is the frontal area of cross-section of the moving object that is blocking the fluid flow past the body, and <m> C_D </m> the <term> drag coefficient </term>. 
+			The rate of change of momentum acts as a resistive force. It is called the <term> inertial drag force</term>.
+			<men xml:id="eq-inertial-drag-formula">
+				F_{D}^{\text{inertial}} = \dfrac{1}{2}\,C_D\, A\, \rho\, v^2. 
+			</men>			
+		</p>
+		<idx>Drag Coefficient</idx>
+		<p>
+			The drag coefficient <m> C_D</m> is a dimensionless number that depends on shape and speed in a complicated way, usually determined experimentally. But, for most systems, the value os between <m>0.4</m> and <m>1.0</m>.  To get a sense of ballpark value of drag, you may just set it to <m>1.0</m>. In problems in books, <m>C_D</m> is normally specified with the problem or you could lok up in a table such as <xref ref="tab-values-of-drag-coefficient"/>, so you don't need to worry about it.
+		</p>
+		<p>
+			From the formula for the inertial drag in <xref ref="eq-inertial-drag-formula"/>, you can see that, to reduce drag, you could reduce the area <m>A</m> that the body presents in the way of the flow. This parameter plays important role in the design of cars and airplanes for drag reduction. Skiers and skydivers also manage drag on their bodies by crouching and changing shape effectively changing <m>A</m>.
+		</p>
+
+		<p>
+			<idx><h>Drag Coefficient</h><h>Table</h></idx>
+
+			<table xml:id="tab-values-of-drag-coefficient"><title >Representative <m> C_D </m> Values. The values in the table are from wikipedia sources. A good resource: https://www.engineeringtoolbox.com/drag-coefficient-d_627.html</title >
+				<tabular halign ="left" >
+					<row bottom ="major" >
+						<cell > Object </cell >
+						<cell > <m>C_D </m > </cell >
+					</row >
+					<row bottom ="minor">
+						<cell >Smooth sphere  </cell >
+						<cell ><m> 0.47 </m> </cell >
+						
+					</row >
+					<row bottom ="minor">
+						<cell > Car</cell >
+						<cell ><m> 0.25	</m> </cell >
+					</row >
+					<row bottom ="minor">
+						<cell > Skier </cell >
+						<cell > <m> 1.0 - 1.1 </m> </cell >
+					</row >
+					<row bottom ="major">
+						<cell > Boeing 787 </cell >
+						<cell >0.024 </cell >
+					</row >
+					<row bottom ="major">
+						<cell > Dophin </cell >
+						<cell >0.0036 </cell >
+					</row >
+
+
+				</tabular >
+			</table >
+
+		</p>
+
+	</subsection>
+	<subsection> <title> Reynold's Number</title><idx>Reynold's Number</idx>
+		<p> 
+			<alert> Shoud I use <m>F_{D}^{\text{viscous}}</m> or <m> F_{D}^{\text{inertial}} </m>? </alert> Since both drags are present all the time, we need to see if we need to use both or if one of them is extremely dominant. A ratio of the inertial drag to viscous drag could be used to test how big one is compared to the other. For a spherical ball, we get
+			<me>
+				\dfrac{F_D^{\text{inertial}}}{F_D^{\text{viscous}}} = \dfrac{C_D}{12} \dfrac{\rho R v}{\eta}.
+			</me>
+			Rather than this formukla,  we actually use a related dimensionless quantity, called <term>Reynold's number</term>, defined by
+			<me>
+				N_R = \dfrac{2R\, \rho\,  v}{\eta},
+			</me> 
+			In general, we replace <m> 2R </m> by a suitable measure of a length scale <m> L </m>  of the moving object that is being pushed against by the fluid flow.
+
+			<men>
+				N_R = \dfrac{L\, \rho\,  v}{\eta},
+			</men> 
+
+				The rule of thumb is that if <m> N_R \gt\gt 1 </m>, use  the inertial drag, and, if <m> N_R \lt\lt 1 </m> use the simpler linear drag, otherwise use the sum of the two. 
+
+		</p>
+
+	</subsection>
+
+	<subsection><title>Terminal Speed</title><idx>Terminal Speed</idx>
+		<p>
+			Consider an object falling in air or some fluid. Initially speed is too small and gravity dominates. That leads to increasing speed in the fall. Now, suppose that the object can present significant area <m>A</m> to the fluid so that inertial drag force on it is considerable once speed has picked up. If the height by which the object has fallen, at some point in the fall its speed would be such that the upward inertial drag force would balance the force of gravity. At that point onward, the forces on the object will be balanced and no further increase in speed would occur. This speed is called <term>terminal speed</term>. Using Eq. <xref ref="eq-inertial-drag-formula"/>, we can find a general expression for terminal speed, <m>v_t</m> by setting the inertial drag force for <m>v=v_t</m> to the weight of the body gives 
+			<me>
+				\dfrac{1}{2}\,C_D\, A\, \rho\, v_t^2 = m g.
+			</me>
+			Therefore,
+			<men>
+				v_t = \sqrt{ \frac{2mg}{C_D\, A\, \rho} }.
+			</men>
+			For a human body, let <m>C_D=0.5</m>, <m>m=65.0\text{ kg}</m>, <m>A = 1.5\text{ m} \times 0.4\text{ m} = 0.6\text{ m}^2</m>, in air, <m>\rho=1.225\text{ kg/m}^{3}</m>. This will give terminal speed to be
+			<me>
+				v_t = \sqrt{ \frac{2\times 65 \times 9.81}{0.5 \times 1.5\times 1.225} } = 37.3\text{ m/s}.
+			</me>
+			With parachute, you may increase the area. Say, you make the area <m>4\times</m>. Then, you will cut down <m>v_t</m> by <m>2\times</m>, i.e., <m>v_t</m> now will be <m>18.65\text{ m/s}</m>.
+
+
+		</p>
+	</subsection>
+
+
+
+	<example xml:id="Computing-Viscous-Drag-Force-Given-the-Speed"> <title> Computing Viscous Drag Force Given the Speed</title>
+		<statement>
+			<p> 
+				An amoeba is moving in water at speed <m> 10\, \mu\text{m/min}</m>. You can assume amoeba to be a sphere of radius <m> 500\, \mu\text{m}</m>. 
+
+			</p>
+			<p>
+				(a) What is the Reynold's number of the fluid flow at the speed of the amoeba? Decide which drag force is dominant here.
+			</p>
+			<p>
+				(b)  Based on your decision in (a), compute the drag force on the amoeba.
+			</p>
+			<p>
+				(c) If the density of amoeba is that of water, how many times of the drag force is the weight? 
+			</p>
+			<p>
+				Data: Viscosity <m> \eta </m> of water to be <m> 0.009\text{ Pa.s}</m> and the density of water to be <m> 1000\text{ kg/m}^3</m>.
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Use formulas given in the definitions of drag forces. </p> </hint> -->
+		<answer> <p>(a) <m> 1.9\times 10^{-5}</m>, (b) <m>1.41\times 10^{-11}\text{ N} </m>,(c) <m>364,300</m>. </p> </answer>
+		<solution><title>a</title> 
+			<p> 
+				We use the formula for the Reynold's number to find the value. In the Reynold's number formula, we need to choose a length scale for the moving object, for which we choose the diameter of amoeba as tthe relevant length scale. We also convert all the units in the standard SI units of <m> \text{m, s, kg}</m>.
+				<md>
+					<mrow> N_R \amp = \dfrac{L \rho v }{\eta}, </mrow>
+					<mrow> 	  \amp = \dfrac{2\times 500\times 10^{-6} \times 1000\times \frac{1}{6}\times 10^{-6}}{ 0.009} = 1.9\times 10^{-5}. </mrow>
+				</md>
+				This says that viscous drag will be the dominant one for amoeba.
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p> 
+				We can make a drastic assumption and assume amaeba to have a spherical shape. This is just to get a ballpark answer. 
+				Using the formula for the viscous drag force for a sphere, we find
+				<md>
+					<mrow>F_D^{\text{viscous}} \amp = 6\pi\eta R v, </mrow>
+					<mrow> \amp = 6\times \pi \times 0.009\times 500\times 10^{-6} \times   \frac{1}{6}\times 10^{-6}</mrow>
+					<mrow> \amp = 1.41\times 10^{-11}\text{ N}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>c</title>
+			<p>
+				To find the weight of amoeba, we need to find its mass. We will get its mass by multiplying its volume by the density.
+				<me>
+					\text{Volume, }V = \dfrac{4}{3}\pi R^3 = 5.24\times 10^{-10}\, \text{m}^3.
+				</me>
+				Therefore, weight of the amoeba is
+				<me>  
+					W = mg = \left( 1000 * 5.24\times 10^{-10} \right) * 9.81 = 5.14\times 10^{-6}\text{ N}.
+				</me>
+				Comparing drag to weight we get.
+				<me>
+					\dfrac{W}{F_D} = \dfrac{5.14\times 10^{-6}}{1.41\times 10^{-11}} = 364,300.
+				</me>
+
+			</p>
+
+		</solution>
+	</example>
+
+
+
+	<example xml:id="Computing-Inertial-Drag-Force"> <title> Computing Inertial Drag Force  </title>
+		<statement>
+			<p> 
+				Inertial drag force is important at high speeds. A dolphin is swimming in water at a speed of <m> 10 \text{ m/s}</m>. Model the dolphin as a cylinder of radius <m> 0.5\text{ m} </m> and length <m> 4\text{ m}</m>. 
+			</p>
+			<p>
+				(a) Find the Reynold's number for the water flow at the speed of the dolphin.
+			</p>
+			<p>
+				(b) Based on the Reynold's number, decide if you should omit the viscous drag and only use the inertial drag when computing the drag force, and then find the drag force on the  dolphin. 
+			</p>
+
+			<p>
+				(c) What will happen to the drag force, if dolphin slows down to <m> 5\text{ m/s}</m>?
+			</p>
+
+			<p>
+				Data: Viscosity <m> \eta </m> of water is <m> 0.009\text{ Pa.s}</m>. You may use the drag coefficient of dolphin to be <m> C_D =  0.0036</m>. Density of water = <m> 1000\text{ kg/m}^3</m>.
+			</p>
+
+		</statement>
+		<!-- <hint> <p> (a) Use formula for Reynold's number. (b) Use formulas for <m>F_D^{\text{inertial}}</m>. (c) Use <m>F_D^{\text{inertial}}\sim v^2</m>.   </p> </hint> -->
+		<answer> <p> (a) <m> 1.0 \times 10^6</m>  ,(b) <m> 141.4\text{ N}</m>, (c) <m>35.4\text{ N}</m>.</p> </answer>
+		<solution><title>a</title> 
+			<p>
+				
+				We use the formula for the Reynold's number to find the value. In the Reynold's number formula, we need to choose a length scale for the moving object, for which we choose the diameter of the cylinder modeling the dolphin since that is the size which is perpendicular to the flow.
+				<md>
+					<mrow> N_R \amp = \dfrac{L \rho v }{\eta}, </mrow>
+					<mrow> 	  \amp = \dfrac{ 2\times 0.5 \times 1000\times  10 }{ 0.009} = 1.0 \times 10^6. </mrow>
+				</md>
+				
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p> 
+				Since <m>N_R \gt\gt 1 </m>, the inertial drag is way more than the viscous drag. Therefore, we drop the viscous drag.
+				 Using the formula for the inertial drag force, we find
+				<md>
+					<mrow>F_D^{\text{inertial}} \amp = \dfrac{1}{2}\,C_D A \rho v^2, </mrow>
+					<mrow> \amp = 0.5\times 0.0036\times \pi\times 0.5^2\times 1000\times 10^2 =  141.4\text{ N}. </mrow>
+				</md> 				
+			</p>
+		</solution>
+		<solution><title>c</title>
+			<p>
+				Since <m> F_D \sim v^2 </m>, if <m> v \rightarrow \dfrac{v}{2} </m>, 
+				<m> F_D \rightarrow \dfrac{F_D}{4} </m>. That is, the drag force will become one quarter.
+				<me>
+					F_D = \dfrac{141.4\text{ N}}{4} = 35.4\text{ N}.
+				</me>
+
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="Drag-Force-and-the-Terminal-Velocity"> <title> Drag Force and the Terminal Velocity  </title>
+		<statement>
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					<p> 
+						 A steel ball of radius <m> 2.0\text{ cm}</m> is gently placed inside a tube of water and released from rest. Initially, the ball accelerates but after some time reaches a <term>terminal velocity</term>, i.e.,  velocity does not change.
+					</p>
+					<p>
+						Data: 
+						Viscosity <m> \eta </m> of water is <m> 0.009\text{ Pa.s}</m>. You may use the drag coefficient of sphere to be, <m> C_D = 0.5</m>. Density of steel = <m> 8000\text{ kg/m}^3</m>. Density of water = <m> 1000\text{ kg/m}^3</m>.
+					</p>
+				</p>
+				<p> </p>
+				<p>
+					<p></p>
+					<figure xml:id="fig-ex-terminal-velocity-in-water">
+						<caption></caption>
+						<image source="./images/forces/ex-terminal-velocity-in-water.png"/>
+					</figure>
+				</p>
+			</sidebyside>
+
+
+			<p>
+				(a) Assuming viscous drag force to be the only drag force, find the speed at which the net force on the ball is zero. This assumption turns out to be incorrect for this situation, but we will discover that in part (b) below.
+			</p>
+			<p>
+				(b)  What is the Reynold's number of the flow at the terminal speed you found by assuming viscous drag as total drag in (a)? Decide if ignoring the inertial drag force was justified.
+			</p>
+			<p>
+				(c) You will find that viscous drag force is not the dominant drag force at this speed. We should be using the inertial drag force instead. Now, find the terminal velocity using the inertial drag force.
+			</p>
+
+
+
+		</statement>
+
+		<!-- <hint> <p>  (a) Use <m>F_D^{\text{viscous}}</m>. (b) Use <m>N_R</m>. (c) Equate <m>W</m> to <m>F_D^{\text{inertial}}</m>. </p> </hint> -->
+
+		<answer> <p>  (a) <m> 774\text{ m/s}</m> ,(b) <m> 3,440,000</m>, (c) <m> 2.9\text{ m/s} </m>. </p> </answer>
+
+		<solution> <title>a</title>
+
+			<p> 
+				Using the formula for the viscous drag force, we find
+				<md>
+					<mrow>F_D^{\text{viscous}} \amp = 6\pi\eta R v, </mrow>
+					<mrow> \amp = 6\times \pi \times 0.009\times 0.02 \times v = 0.0034\, v. </mrow>
+				</md>
+				This must balance the weight for acceleration to be zero. We need to find the mass of the ball to find the weight. We will get that from the volume <m> V </m> of the ball and the density of steel.
+				<md>
+					<mrow> V \amp = \dfrac{4}{3}\pi R^3, </mrow>
+					<mrow>  \amp = \dfrac{4}{3}\times \pi \times 0.02^3 =3.35\times 10^{-5}\text{ m}^3. </mrow> 
+				</md>
+				Therefore, 
+				<me>
+					W = mg = (3.35\times10^{-5}\times 8000)\times 9.81=2.63\text{ N}. 
+				</me>
+				Balancing this with the viscous drag gives
+				<me>
+					0.0034\, v = 2.63\ \ \Longrightarrow\ \  v = 774\text{ m/s}.
+				</me>
+
+			</p>
+		</solution>
+		<solution> <title>b</title>
+			<p>
+				We use the formula for the Reynold's number to find the value. In the Reynold's number formula, we need to choose a length scale for the moving object, for which we choose the diameter of the ball.
+				<md>
+					<mrow> N_R \amp = \dfrac{L \rho v }{\eta}, </mrow>
+					<mrow> 	  \amp = \dfrac{ 0.04 \times 1000\times 774 }{ 0.009} = 3,440,000. </mrow>
+				</md>
+				This is saying that at this speed, the inertial drag is 3,440,000 times more important. That means, our terminal speed calculated in <alert>(a) is wrong</alert>. We should, instead, use the inertial drag formula. 
+
+			</p>
+		</solution>
+		<solution> <title>c</title>
+			<p>
+				 Using the formula for the inertial drag force, we find
+				<md>
+					<mrow>F_D^{\text{inertial}} \amp = \dfrac{1}{2}C_D A \rho v^2, </mrow>
+					<mrow> \amp = 0.5\times 0.5\times \pi\times 0.02^2\times 1000\, v^2 = 0.315\, v^2. </mrow>
+				</md> 
+				This must balance the weight for acceleration to be zero. We found weight in part (a). Now, we get the following equaiton for <m> v </m>.
+				<me>
+					0.315\, v^2 = 2.63\ \ \Longrightarrow\ \  v = 2.9\text{ m/s}.
+				</me>
+				Thus, the terminal velocity for the steel ball is <m> 2.9\text{ m/s}</m>. This is a much more reasonable number than the wrong value of terminal speed found in (a). 
+			</p>
+
+ 
+		</solution>
+	</example>
+
+
+	<exercises>
+
+	<exercise xml:id="ex-Comparison-of-Inertial-Drag-Forces-on-Two-Airplanes"><title>Comparison of Inertial Drag Forces on Two Airplanes</title>
+
+		<statement>
+			<p>
+				A commercial airliner is cruising with speed 600 mph at an altitude of 40,000 feet. When it took off, it had a speed of 150 mph. The density of air  is <m>1.22\text{ kg/m}^3</m> near ground and <m>0.385\text{ kg/m}^3</m> at 40,000 ft. Compare the inertial drag force on the airplane in the two situations. 
+			</p>
+		</statement>
+		<hint><p>No need to convert units. Work with ratio.</p></hint>
+		<answer><p>Near ground : at 40,000 ft = <m>0.2</m>.</p></answer>
+		<solution>
+			<p>
+				Let <m>F_\text{d0}</m> and <m>F_\text{d4}</m> be drag forces on ground and at 40,000 ft. Using Eq. <xref ref="eq-inertial-drag-formula"/> will be
+				<md>
+					<mrow>\frac{F_\text{d0}}{F_\text{d4}}  \amp = \frac{\dfrac{1}{2}\,C_D\, A\, \rho_0\, v_0^2}{\dfrac{1}{2}\,C_D\, A\, \rho_4\, v_4^2} = \frac{ \rho_0\, v_0^2}{ \rho_4\, v_4^2}</mrow>
+				</md>
+				We do not need to do any conversion of units since the ratio of similar quantities will cancel out the units.
+				<me>
+					\frac{F_\text{d0}}{F_\text{d4}} = \frac{ 1.22}{0.385} \times \left( \frac{150}{600} \right)^2 = 0.2.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Speed-and-Distance-on-a-Skier-Subject-to-Inertial-Drag-Force"><title>(Calculus) Speed and Distance of a Skier with Inertial Drag Force</title>
+
+		<statement>
+			<p>
+				A <m>70\text{-kg}</m> skier glides down a <q>frictionless</q> slope starting from rest on a flat incline with angle of inclination <m>\theta=30^\circ</m>. The motion of skier is impeded by inertial drag force from air. Suppose <m>C_D=0.4</m> and <m>\rho_\text{air}=1.22\text{kg /m}^3</m>, and the skier presents and area of <m>A=1.2\text{ m}^2</m>. (a) Find the terminal speed of the skier. (b) Find the expression of speed <m>v</m> as a function of time <m>t</m> with <m>t=0</m> at start where <m>v=0</m>. (c) Find the expression of distance <alert>on the slope</alert> the skier travels in time <m>t</m>.  
+			</p>
+		</statement>
+		<hint><p>(a) Set up the condition for zero acceleration. (b) Write <m>F_x = m dv_x/dt</m> and solve for <m>v_x</m>. (c) Integrate the result of (b).  </p></hint>
+		<answer><p>
+			(a) <m>34.2\text{ m/s}</m>, (b) <m>(34.3\text{ m/s})\; \tanh( 0.143\; t)</m>, (c) <m>(239\text{ m})  \ln( \cosh(  0.143\; t ) )</m>. You might different expressions for (b) and (c) since the integrals can be written in other forms also.
+
+		</p></answer>
+		<solution><title>(a)</title>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					(a)
+					<xref ref="fig-skier-down-slope-against-drag"/> shows three forces acting on the skier. Let <m>v_x</m> and <m>a_x = dv_x/dt</m> denote the <m>x</m> component of velocity and acceleration respectively. Equation of motion <m>F_x = m a_x= m dv_x/dt</m> will be
+					<men xml:id="eq-skier-down-slope-against-drag-main">
+						m \frac{dv_x}{dt} = m g \sin\theta - \frac{1}{2} C_D \rho A v_x^2.
+					</men>
+				</p>
+				<p></p>
+				<figure xml:id="fig-skier-down-slope-against-drag">
+					<caption></caption>
+					<image source="./images/forces/skier-down-slope-against-drag.png"/>
+				</figure>
+			</sidebyside>
+			<p>
+				When speed is terminal speed <m>v_t</m>, then, it has zero acceleration. This gives
+				<me>
+					v_t = \sqrt{  \frac{2 m g \sin\theta}{ C_D \rho A } }. 
+				</me>
+				Putting the numerical values we get
+				<me>
+					v_t = \sqrt{  \frac{2 \times 70 \times 9.81 \times \sin\, 30^\circ}{ 0.4 \times 1.22 \times 1.2 } } = 34.2\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				Now, we work with the equation of motion, Eq. <xref ref="eq-skier-down-slope-against-drag-main"/>.
+				<me>
+					m \frac{dv_x}{dt} = m g \sin\theta - \frac{1}{2} C_D \rho A v_x^2.
+				</me>
+				Let's divide by <m>m</m> and replace myriad constants by symbols.
+				<men xml:id="eq-skier-down-slope-against-drag-main-b">
+					\frac{dv_x}{dt} = a - b v_x^2,
+				</men>
+				where
+				<me>
+					a = g \sin\theta,\ \ \ b = \frac{1}{2m} C_D \rho A.
+				</me>
+				Note that <m>v_t = \sqrt{a/b}</m>. Rearrange Eq. <xref ref="eq-skier-down-slope-against-drag-main-b"/> and integrate from <m>t=0</m> to <m>t</m>. 
+				<me>
+					\int_0^v \frac{d v_x}{ a - b v_x^2 } = \int_0^t dt.
+				</me>
+				This gives (with <m>v_t = \sqrt{a/b}</m>):
+				<men xml:id="eq-skier-down-slope-against-drag-main-b-ans">
+					v = v_t \tanh(b v_t t ).
+				</men>
+				Now, using the numerical values we get
+				<me>
+					v = (34.3\text{ m/s})\; \tanh( 0.143\; t).
+				</me>
+
+
+			</p>
+			
+		</solution>
+		<solution><title>(c)</title>
+			<p>
+				Now, we integrate Eq. <xref ref="eq-skier-down-slope-against-drag-main-b-ans"/> to get the distance <m>\Delta x</m> on the slope.
+				<me>
+					\Delta x = \int_0^t v dt = \int_0^t v_t \tanh(b v_t t )  dt. 
+				</me>
+				This gives
+				<me>
+					\Delta x = \frac{1}{b} \log( \cosh( b v_t t ) ).
+				</me>
+				Now, using the numerical values we get
+				<me>
+					\Delta x = (239\text{ m})  \ln( \cosh(  0.143\; t ) ).
+				</me>
+	 
+			</p>
+			
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Practice-with-a-Friend-Air-Drag-on-Bob-Sled"><title>(Calculus) Practice with a Friend: Accounting for Air Drag on a Bob Sled</title>
+
+		<statement>
+			<p>
+				A bob sled with riders weighing <m>500\text{ kg}</m> starts at rest and comes down a straight incline of length <m>100\text{ m}</m> at angle <m>12.5^\circ</m> with the horizon. The coefficient of kinetic friction between the sled and the ground is <m>0.15</m>. The bob sled is also subject to inertial air drag with parameters <m>C_D = 0.8</m>, <m>A=1.8\text{ m}^2</m>, <m>\rho_\text{air} = 1.22\text{ kg/m}^3</m>. How long does it take the Bob sled to finish the <m>100\text{ m}</m> slide?
+			</p>
+		</statement>
+		<hint><p> See <xref ref="ex-Speed-and-Distance-on-a-Skier-Subject-to-Inertial-Drag-Force"/> with <m>a</m> there will change to  <m>g\sin\theta - \mu_k g \cos\theta</m>. </p></hint>
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+	</exercises>
+
+
+</section>

@@ -1,0 +1,238 @@
+<section xml:id="sec-Conduction-in-Metals"><title>Conduction in Metals</title>
+
+	<introduction>
+		<p>
+			Thermal electrical conductivity in metal can be understood in terms of conduction electrons of the metal. In this section we will study classical models that were quite successful. The quantum models will be discussed in the next section.
+		</p>
+		<p>
+			Drude and Thomson proposed a very simplistic model of metals as essentially consisting of classical gas of electrons moving through fixed lattice of ion cores. This model of metal is called the <term>Drude Model</term>. Although, Drude model was very successful in explaining electrical and thermal properties of metal, it also gave wrong values for electrical and thermal conductivities and did not predict the temperature dependence of resistivity correctly, among other things. Nevertheless the model is useful and highlights many important properties accessible to simple analysis. 
+		</p>
+
+<!-- 		<figure xml:id="fig-sodium-chloride-crystal-2">
+			<caption>
+				The arrangement of atoms in the sodium chloride crystal.
+			</caption>
+			<image source="./images/modern-physics/sodium-chloride-crystal.png" width="90%"/>
+		</figure> -->
+
+
+	</introduction>
+
+	<subsection><title>Microscopic View of Ohm's Law</title>
+		<p>
+
+			Consider metal as a box of electron gas that behaves as an ideal gas. According to the ideal gas kinetic theory, the root-mean square speed of electrons will be given by equating their kinetic energy to thermal energy for three degrees of freedom.
+			<me>
+				\frac{1}{2} m v_{\textrm{rms}}^2 = \frac{3}{2} k_B T,
+			</me>
+			where <m>m</m> is the mass of the electron, <m>v_{\textrm{rms}}</m> is  the root mean square (rms) speed, <m>k_B</m> the Boltzmann constant, and <m>T</m> the temperature in degrees Kelvin.   Therefore, <m>v_{\textrm{rms}}</m> of electrons is
+			<me>
+				v_{\textrm{rms}} = \sqrt{\frac{3k_B T}{m}}.
+			</me>
+			Let's calculate a numerical value to see how large the rms speed would be at room temperature, <m>T = 300K</m>.
+			<me>
+				v_{\textrm{rms}} =  \sqrt{\frac{3\times 1.38\times 10^{-23} \:\textrm{J/K}\times 300\:\textrm{K}}{9.1\times 10^{-31}\:\textrm{kg}}}  = 1.12\times 10^{5}\:\textrm{m/s}.
+			</me>
+			This says that electron in a gas of electrons have very large speeds at room temperature.  However, without an external electric field, the velocity of the electron would be in all possible directions, and so there is no net current flow.  When an electric field <m>\vec E</m> is applied, the electron experiences a force <m>\vec F</m> in the direction opposite to the direction of the electric field. 
+			<me>
+				\vec F = -e \vec E.
+			</me> 
+			Equating the magnitude of the force on the electron to <m>m a</m> of the electron gives the following for the acceleration of the electron.
+			<me>
+				a = \frac{eE}{m}.
+			</me>
+			In the Drude model the electron collides with the iron core. In between the collisions, the electron picks up speed, while right after a collision, it assumes a random speed again.   If the average time each electron has been picking up speed since last collision is <m>\tau</m>, then the average speed of all electrons in the sample at any one instant will equal to <m>a\tau</m>, where <m>\tau</m> is the mean free time.  Note that this average speed is the average of the speed of all the electrons in the metal at one instant since their last collisions, and not of any one electron.  This speed <m>v_d</m> due to the acceleration of electrons as a result of the applied electric field is called the <term>drift speed</term>.
+			<me>
+				v_d = a \tau = \frac{e\tau}{m}\: E.
+			</me>
+			The drift of electrons will generate a current in the metal.  Let <m>n</m> be number of conduction electrons per unit volume, then, the current density <m>J</m> will be
+			<me>
+				J = n e v_d = \frac{ne^2\tau}{m}\: E.
+			</me>
+			This is the expression of <term>Ohm's law</term> in the form <m>J = \sigma E</m> with <m>\sigma</m> the conductivity.  Therefore, the Drude model gives us the following expression of conductivity in terms of microscpic properties.
+			<me>
+				\sigma = \frac{ne^2\tau}{m}.
+			</me>
+			Since electrons on average take time <m>\tau</m> between collisions, and move a distance of mean free length <m>\lambda</m> between collisions, according to the kinetic theory of gases we will also have  the following for the rms speed of the electrons.
+			<me>
+				v_{\textrm{rms}} = \frac{\lambda}{\tau}.
+			</me>
+			Replacing <m>\tau</m>  here in terms of the mean free length and drift speed we get
+			<me>
+				\sigma = \frac{ne^2\lambda}{mv_{\textrm{rms}} }.
+			</me>
+			Now, we can use the other result of the kineic theory of gases to relate this to the temperature of metal.
+			<men xml:id="eq-Drude-conductivity">
+				\sigma = \frac{ne^2\lambda}{\sqrt{3mk_BT} }. 
+			</men>
+			How good is this prediction?  Let us calculate the conductivity of copper and compare the value to the experimental value of <m>\sigma</m>.
+			<me>
+				\sigma_{\textrm{Cu}} =5.9\times 10^{7}\:\Omega^{-1}\textrm{m}^{-1}.
+			</me>
+		</p>
+	</subsection>
+
+
+	<exercise xml:id="ex-Illustration-of-Drude-Model-to-Coductivity-of-Copper"><title>Illustration of Drude Model to Coductivity of Copper</title>
+
+		<statement>
+			<p>
+				The interatomic distance in copper (Cu) is  0.26 nm.  According to the Drude model, the free electrons collide with the nuclear core in the metal. Therefore, suppose, that the mean free length of electron in the metal is of the order of the inter-atomic distance. Predict the value of the conductivity of copper at  temperature, <m>T = 300 K</m> and compare it to the experimental value <m>\sigma_{\textrm{Cu}} =5.9\times 10^{7}\:\Omega^{-1}\textrm{m}^{-1}</m>.
+			</p>
+		</statement>
+		<hint><p>
+			Apply formula in <xref ref="eq-Drude-conductivity"/>.
+		</p></hint>
+		<answer><p>
+			<m>5.3\times 10^{6}\:\Omega^{-1}\textrm{m}^{-1}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				We will use Eq. <xref ref="eq-Drude-conductivity"/> to make our prediction. Based on the valence of copper we suppose that each atom of copper contributes one electron to the conduction.  The density of conduction electrons can be obtained from atomic weight 63.5 g and the density <m>8.96 \text{ g/cm}^3</m> as follows.
+			<md>
+				<mrow>n  \amp  = \frac{1\:\textrm{mol}}{63.5\:\textrm{g}}\times \frac{8.96\:\textrm{g}}{63.5\:\textrm{cm}^{3}} \times \frac{6.022\times 10^{23}\:\textrm{atoms}}{1\:\textrm{mol}} \times \frac{1 \:\textrm{conduction electron}}{1\:\textrm{atom}} </mrow>
+				<mrow> \amp = 8.49\times 10^{22}\:\textrm{electrons/cm}^3.</mrow>
+			</md>
+			Now, we have all the numbers for Eq. <xref ref="eq-Drude-conductivity"/>.
+			<md>
+				<mrow> \sigma \amp = \frac{8.49\times 10^{22}\:\textrm{electrons/cm}^3\times(1.6\times 10^{-19}\:\textrm{C})^2\times 0.26\times 10^{-9}\:\textrm{m}}{\sqrt{3\times 9.1\times 10^{-31}\:\textrm{kg}\times 1.38\times 10^{-23} \:\textrm{J/K}\times 300\:\textrm{K}} }</mrow>
+				<mrow> \amp  = 5.3\times 10^{6}\:\Omega^{-1}\textrm{m}^{-1}.</mrow>
+			</md>
+			This value is one order of magnitude smaller than the experimental value.  It would be in a good agreement if the mean free length was ten times as long as used in the calculation.  The mean free path of electrons is actually much larger than inter-atomic distance due to their wave nature and the periodic structure of the lattice structure of the metal.  The mean free path length in a metal decreases with defects in the crystal and impurities.
+			</p>
+		</solution>
+	</exercise>
+ 
+ 	<subsection><title> Wiedemann-Franz Law</title>
+ 		<p>
+ 			Metals are good electrical conductors and good thermal conductors. Recall that thermal conductivity <m>K</m> of a material is defined by the relation of rate at which heat flows per unit cross-sectional area and the gradient of temperature.  In one-dimension flow along the <m>x</m>-axis we define <m>K</m> for the following equation.
+			<me>
+			\frac{1}{A}\:\frac{\Delta Q}{\Delta t} = K \: \frac{\Delta T}{\Delta x}.
+			</me>
+			In 1853 Wiedemann and Franz reported that the ratio of thermal conductivity <m>K</m> to electrical conductivity <m>\sigma</m> of metals were proportional to each other.
+			<me>
+			\frac{K}{\sigma} = \textrm{constant\ \ (room temperature)}.
+			</me>
+			This is called <term>Wiedemann-Franz Law</term>. The temperature dependence of <m>K/\sigma</m> was investigated by Lorenz who concluded that <m>K/\sigma</m> was directly proportional to absolute temperature <m>T</m>. 
+			<men xml:id="eq-Wiedemann-Franz-Lorenz">
+			\frac{K}{\sigma} = L T.
+			</men>
+			The proportionality constant <m>L</m>  is  called <term>Lorenz number</term>. Equation <xref ref="eq-Wiedemann-Franz-Lorenz"/> is sometimes known as the Wiedemann-Franz law, although, it should be most appropriately called the <term>Wiedemann-Franz-Lorenz law</term>.  Experimentally, the Lorenz number depends slightly on temperature and on the metal.
+		</p>
+		<p>
+			We will not go through the steps of derivation of the <m>K/\sigma</m> based on the classical electron gas model of metals, but we state the conclusion and discuss its implications.  The model predicts the following  for <m>K/\sigma</m> of a metal.
+			<men xml:id="eq-widemann-fraz-theory">
+			\frac{K}{\sigma} = \frac{3k_B^2}{2e^2}\: T.
+			</men>
+			The right side of this equation is independent of any property of the metal.  Hence, <m>K/\sigma</m> will be same for all metals at a given temperature, in agreement with the original Wiedemann-Franz law. This prediction is an impressive achievement of the Drude model and led scientists to believe that there was some merit to the free electron picture of metals.
+		</p>
+		<p>
+			Comparing the theoretical relation in Eq. <xref ref="eq-widemann-fraz-theory"/> to the Wiedemann-Franz-Lorenz law in Eq. <xref ref="eq-Wiedemann-Franz-Lorenz"/> we see that the therory predicts that the Lorenz number will be a universal constant with the following value:
+			<me>
+			L = \frac{3k_B^2}{2e^2} = 1.12\times 10^{-8}\:\textrm{J}^2\textrm{C}^{-2}\textrm{K}^{-2} = 1.12\times 10^{-8}\:\textrm{W}.\Omega/\textrm{K}^{2} .
+			</me>
+			<xref ref="tab-Lorenz-numbers"/> contains experimental values of <m>K/\sigma T</m> of several metals at two different temperatures.  The ratio <m>K/\sigma T</m>  for most of the metals are near <m>2.5\times 10^{-8}\:\textrm{W}.\Omega/\textrm{K}^{2}</m>, although there are some exceptions, as in tungsten (W), whose <m>K/\sigma T</m> is around  <m>3.0\times 10^{-8}\:\textrm{W}.\Omega/\textrm{K}^{2}</m>.  The experimental values do lend credence to the fact that <m>K/\sigma T</m> is approximately universal.  The numerical values themselves are around two  to three times the predicted value.  However, considering the crudeness of the model, these are very impressive agreements with the experiment, which leaves very little doubt that the motion of electrons in metal are responsible for both the electrical conduction and the thermal conduction.
+		</p>
+ 		<table xml:id="tab-Lorenz-numbers"><title>Lorenz numbers <m>(K/\sigma T)</m> in units of <m>10^{-8}\:\textrm{W}.\Omega/\textrm{K}^{2}</m> (From C. Kittel, Introduction to Solid State Physics, 7th ed., John Wiley and Sons, 20xx.)</title>
+ 				<tabular halign="left">
+ 					<row header="yes" bottom="minor">
+ 						<cell> Metal </cell> <cell>T = 273K</cell> <cell>T = 373K </cell>
+ 					</row>
+ 					<row>
+ 						 <cell>Cadmium(Cd) </cell>  <cell> 2.42 </cell>  <cell>  2.43</cell>
+ 					</row>
+ 					<row>
+ 						 <cell>Copper(Cu) </cell>  <cell> 2.23 </cell>  <cell>  2.33</cell>
+ 					</row>
+  					<row>
+ 						 <cell>Gold(Au)</cell>  <cell> 2.35 </cell>  <cell>  2.40</cell>
+ 					</row>
+ 					<row>
+ 						 <cell>Iridium(Ir) </cell>  <cell> 2.49 </cell>  <cell>  2.49</cell>
+ 					</row>
+  					<row>
+ 						 <cell>Lead(Pb) </cell>  <cell> 2.47 </cell>  <cell>  2.56</cell>
+ 					</row>
+ 					<row>
+ 						 <cell>Molybdenum(Mo) </cell>  <cell> 2.61 </cell>  <cell>  2.79</cell>
+ 					</row>
+ 					<row>
+ 						 <cell>Platinum(Pt) </cell>  <cell> 2.51 </cell>  <cell>  2.60</cell>
+ 					</row>
+  					<row>
+ 						 <cell>Silver(Ag)</cell>  <cell> 2.31 </cell>  <cell> 2.37</cell>
+ 					</row>
+ 					<row>
+ 						 <cell>Tin(Sn)  </cell>  <cell> 2.52 </cell>  <cell>  2.49</cell>
+ 					</row>
+ 					<row>
+ 						 <cell>Tungsten(W)  </cell>  <cell> 3.04 </cell>  <cell> 3.20 </cell>
+ 					</row>
+ 					<row>
+ 						 <cell>Zinc(Zn) </cell>  <cell> 2.31 </cell>  <cell> 2.33 </cell>
+ 					</row>
+ 				</tabular>
+
+ 		</table>
+
+
+ 	</subsection>
+
+	<subsection><title>Temperature-dependence of Resistivity</title>
+		<p>
+			The resistivity of a chemically pure metal with no defects is called the <term>intrinsic resisitivity</term>, <m>\rho_i</m>.     In  classical Drude model,  electrons scatter from the nuclei of the atoms on lattice sites, which is responsible for the resistivity. According to <term>Matthiessen's rule</term>, the resistivity <m>\rho_0</m> due to electron's scattering  from impurities and lattice defects add to the intrinsic resistivity to make up the net resistivity.  The intrinsic resisitivity varies with temperature and goes to zero at zero degree Kelvin as some power of <m>T</m>.
+			<me>
+			\rho(T) = \rho_0 + \rho_i(T).
+			</me>
+			Experimentally, if the temperature is not too low, the resistivity varies linearly with temperature.  If the resisitivity is <m>\rho_{\textrm{ref}}</m> at some reference temperature <m>T_{\textrm{ref}}</m>, then the resisitivity at some other temperature <m>T</m> follows the following simple linear relation. 
+			 <men xml:id="eq-resistivity-temperature">
+				\rho (T) = \rho_{\textrm{ref}}\left[1  + \alpha (T - T_{\textrm{ref}}) \right], 
+			</men>
+			where <m>\alpha</m> is the temperature coefficient, which is around <m>3\times 10^{-3}</m> per degree Kelvin for most metals. Now, let us see how is this experiment addressed by the classical theory. We found above that the theory  predicts the electrical conductivity <m>\sigma</m> in terms of the mean free path of the electrons, <m>\lambda</m>, the number density of electrons, <m>n</m>, and absolute temperature <m>T</m> in Eq. <xref ref="eq-Drude-conductivity"/>
+			<me>
+			\sigma = \frac{ne^2\lambda}{\sqrt{3mk_BT} }. 
+			</me> 
+			 The resisitivity <m>\rho</m> is inverse of conductivity. Therefore, the resistivity should be
+			 <me>
+			\rho = \frac{\sqrt{3mk_BT} }{ne^2\lambda}. 
+			</me> 
+			 Thus, the prediction for resistivity with respect to the variation in temperature is that resistivity will vary as a square root of the absolute temperature.
+			 <me>
+			\rho\ \sim\ \sqrt{ T}. 
+			</me> 
+			This prediction is not in agreement with experiment since the resisitivity of most metals vary linearly with temperature as indicated in Eq. <xref ref="eq-Drude-conductivity"/>.
+		</p>
+	</subsection>
+
+TODO:
+<p>
+\begin{exercise}
+ How many conduction electrons are there in 10 gram sample of (a) pure silver, (b) pure copper, and (c) pure gold. Data: atomic weights: Ag 107.86, Cu 63.55, Au 196.97.   Assume one electron per atom in each element is conduction electron.
+\end{exercise}	
+</p>
+<p>
+\begin{exercise}
+ Compute the density of conduction electrons in (a) pure silver, (b) pure copper, and (c) pure gold.  Data: mass density of metals, Ag 10.49 g/cm$^{3}$, Cu 8.96 g/cm$^{3}$, Au 19.30 g/cm$^{3}$. 
+\end{exercise}	
+</p>
+<p>
+\begin{exercise}
+ A copper wire of cross-section area 4 mm$^2$ carries a current of 2 A. (a) What is the current density $J$? (b) What is the drift velocity of the electrons? Use the data from last problem.
+\end{exercise}
+</p>
+<p>
+\begin{exercise}
+Evaluate the ratio of the thermal conductivity to electrical conductivity of copper at $0^{\circ}$C?
+\end{exercise}
+
+</p>
+<p>
+\begin{exercise}
+ The  electrical conductivity of copper at room temperature ( $27^{\circ}$C) is $ 	5.96  \times 10^{7}\:\Omega^{-1}\textrm{m}^{-1}$.  (a) Find the average time between collisions of electrons.  (b) Find electron's (rms) thermal velocity.  (c) What is the mean free path of electrons at room temperature? 
+\end{exercise}
+</p>
+ 
+
+
+
+</section>

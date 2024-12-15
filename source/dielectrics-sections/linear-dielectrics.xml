@@ -1,0 +1,364 @@
+<section xml:id="Linear-Dielectrics"><title> Linear Dielectrics </title>
+
+	<subsection> <title> Polarization </title> 
+	
+
+		<p>
+			Most chemicals have either polarized bonds and hence carry permanent dipoles throughout the sample, or the bonds can be polarized by placing a sample in an electric field. We call these materials <term>dielectrics</term>. Plastic, glass, water, ceramic, etc., are examples of dielectrics. 
+		</p>
+		<p>
+			Normally, the permanent microscopic dipoles have random orientations, which makes their electrical influence negligible. However, if they are aligned, for instance, in the presence of external electric field, the electric fields of individual dipoles will tend to add up. Aligned microscopic dipoles usually have strong influence on the electric field inside them and in their neighborhod.
+		</p>
+		<p>
+			To describe electrical properties of a dielectric, it is useful to introduce a quantity called <term>polarization</term> which is the dipole moment per unit volume at a particular place. We denote individual dipole moment vector by small letter <m>\vec p</m> and polarization by <m>\vec P</m>. Suppose we have <m>N</m> dipoles in a volume <m>V</m>, then polarization will be 
+			 <me>
+			 	\vec P = \dfrac{1}{V}\sum_{i=1}^{N}\, \vec p_i
+			 </me>
+		</p>
+
+		<p>
+			If microscopic dipoles are randomly oriented, then their vector sum will end up being zero. This is what happens in liquid water, whose molecules are oriented in random directions. Even though, each molecule of water is poalrized, the bulk water is not polarized. To polarize bulk water requires external electric field. When we place a water sample in an external elctric field, say in the space between two oppositely charged metals, water molecules will rotate and preferentially align with the external field, resulting in a net polarization of the material. Some crystals are naturally polarized.
+		</p>
+
+	</subsection>
+
+	<subsection><title>Electric Field Inside a Dielectric </title>
+ 
+		<p>
+			Suppose you place a piece of mica between two oppositely charged plates. This will polarize mica. As a result, in addition to the original electric field of the charges on the plates, there will be electric fields of the aligned dipoles of mica. 
+		</p>
+		<p>
+			Inside mica, the electric field of the dipoles are in the opposite direction to the external field; therefore, the net field is less than what used to be when mica was not there. That is, the net effect of aligned dipole moments is to reduce the electric field inside a dielectric.  This effect is called <alert> electric field screening</alert>. 
+		</p>
+
+		<figure xml:id="fig-screening">
+			<image source="./images/dielectrics/screening.png" width="80%"/>
+			<caption>
+				 Electric field is screened inside a dielectric.  Net electric field lines between plates charged by placing <m>\pm Q</m> on the plates when: (a) vacuum between parallel plates, (b) dielectric between parallel plates of dielectric constant <m>\epsilon_r = 2</m>, and (c) dielectric between parallel plates of dielectric constant <m>\epsilon_r = 3</m>. Note, less lines per unit area shown when weaker field.
+			</caption>
+		</figure>
+
+		<p>
+			The fraction by which electric field inside a dielectric drops is called <term>dielectric constant</term> of the material, to be denoted by <m>\epsilon_r</m>. Suppose <m>E_0</m> denote the electric field at a place when there is no dielectric there, and <m>E_\text{net}</m> the field at the same location inside a dielectric placed there, then dielectric constant is defined by
+			<men xml:id="eq-dielectric-constant">
+				E_\text{net} = \dfrac{E_0}{\epsilon_r}.
+			</men>
+			We call <m>E_0</m> the external electric field while <m>E_\text{net}</m> is the actual electric field. Dielectric constant is also known as relative permittivity since it equals the ratio of electric permittivity (<m>\epsilon</m>) of the material and the electric permittivity (<m>\epsilon_0</m>) of vacuum.
+			<me>
+				\epsilon_r = \frac{\epsilon}{\epsilon_0}.
+			</me>
+			<xref ref="tab-dielectric-constant"/> gives dielectric constants of a number of materials of practical use.
+		</p>	
+
+
+	<table xml:id="tab-dielectric-constant">
+		<title>Dielectric constants at <m>20^\circ\text{C}</m> (Kaye-Laby Online, 2005) </title>
+
+		<tabular halign="left" >
+			<row bottom="minor" >
+				<cell >   </cell >
+				<cell >   </cell >
+				<cell >   </cell >
+				<cell >   </cell >
+			</row >
+			<row bottom="minor" >
+				<cell > Material  </cell >
+				<cell >  Dielectric constant <m>\epsilon_r</m> </cell >
+				<cell >  Material </cell >
+				<cell > Dielectric constant <m>\epsilon_r</m>  </cell >
+			</row >
+			<row bottom="minor" >
+				<cell > <alert> SOLIDS</alert> </cell >
+				<cell >   </cell >
+				<cell >   </cell >
+				<cell >   </cell >
+			</row >
+			<row bottom="minor" >
+				<cell >  Cellophane </cell >
+				<cell > 7.0  </cell >
+				<cell > Pyrex Glass  </cell >
+				<cell > 4.7  </cell >
+			</row >
+			<row bottom="minor" >
+				<cell > Epoxy Resin </cell >
+				<cell > 3.6  </cell >
+				<cell > Quartz  </cell >
+				<cell > 4.3  </cell >
+			</row > 
+			<row bottom="minor" >
+				<cell > Mica </cell >
+				<cell > 7.0  </cell >
+				<cell > Teflon </cell >
+				<cell > 2.1 </cell >
+			</row > 
+			<row bottom="minor" >
+				<cell > Mylar (polyester) </cell >
+				<cell > 3.25  </cell >
+				<cell >   </cell >
+				<cell >   </cell >
+			</row > 
+			<row bottom="minor" >
+				<cell > Paper </cell >
+				<cell > 3.7 </cell >
+				<cell >  <alert> LIQUIDS </alert></cell >
+				<cell >   </cell >
+			</row >
+			<row bottom="minor" >
+				<cell > Polycarbonate </cell >
+				<cell > 2.8 </cell >
+				<cell >  Castor oil </cell >
+				<cell >  4.5 </cell >
+			</row > 
+			<row bottom="minor" >
+				<cell > Polypropylene </cell >
+				<cell > 2.2 </cell >
+				<cell > Water </cell >
+				<cell >  80.4 </cell >
+			</row > 
+			<row bottom="minor" >
+				<cell > Polystyrene </cell >
+				<cell > 2.6 </cell >
+				<cell > <alert>GASES</alert> </cell >
+				<cell >    </cell >
+			</row > 
+			<row bottom="minor" >
+				<cell > Porcelain </cell >
+				<cell > 5.5 </cell >
+				<cell > Air (1 atm.) </cell >
+				<cell >  1.00054  </cell >
+			</row >
+		</tabular>
+	</table>
+
+
+
+	</subsection>
+
+
+	<subsection><title>Electric Field Inside a Dielectric </title>
+
+		<p>
+			Electric field inside a dielectric placed in an external electric field <m>
+			\vec E_\text{ext}</m> consists of two parts: the external E field and an electric field by the dipoles as quantified by the polarization of the dielectric, <m>\vec P</m>. Let us denote the net field inside a dielectric by <m>\vec E_\text{net}</m> and that by polarization by <m>E_\text{pol}</m>. Then,
+			<men xml:id="eq-net-field-in-dielectric">
+				\vec E_\text{net} = \vec E_\text{ext} + \vec E_\text{pol}.
+			</men>
+			Electric field due to polarization is a difficult quantity to compute since polarization itself depends on the net electric field. Clearly, <m>\vec E_\text{pol}</m> is opposite to <m>\vec E_\text{ext}</m> and depends on magnitude of net field <m>E_\text{net}</m> acting on the dipoles. Therefore, it is reasonable to expect that <m>E_\text{pol}</m> be directly proportional to <m>E_\text{net}</m> 
+			<men xml:id="eq-electric-susceptibility-using-e-fields">
+				\vec E_\text{pol} = - \chi_e\,\vec E_\text{net}.
+			</men>
+			The proportionality constant <m>\chi_e</m> is called <term>electric susceptibility</term>. This will give us
+			<me>
+				\vec E_\text{net} = \dfrac{1}{1+\chi_e}\vec E_\text{ext},
+			</me>
+			which, when compared to Eq. <xref ref="eq-dielectric-constant"/> gives the following relation between dielectric constant <m>\epsilon_r</m> and electric susceptibility, <m>\chi_e</m>.
+			<men>
+				\epsilon_r = 1 + \chi_e.
+			</men> 
+		</p>
+	</subsection>
+	<subsection><title>Linear Dielectrics</title>
+
+		<p>
+			Experimentally, we find that, if the applied electric field is not too great, the degree of polarization varies  linearly with the net field. We use this observation to define material's electric susceptibility by the following relation.
+			<men xml:id="eq-electric-susceptibility">
+				\vec P = \epsilon_0 \chi_e \vec E_\text{net} = \left( \epsilon_0  - \epsilon_0 \epsilon_r\right) \vec E_\text{net} .
+			</men>
+			A material that obeys this linear relation between polarization and net electric field is called a <term> linear dielectric</term>.  
+		</p>
+		<p>
+			The product of dielectric constant and permittivity of vacuum, i.e.,  <m>\epsilon_r\epsilon_0</m>, is called the <term>permittivity</term> of the dielectric, just as  <m>\epsilon_0</m> is called the permittivity of vacuum or free space.  Permittivity is denoted by the same symbol <m>\epsilon</m>  without the subscript zero.
+			<men xml:id="permittivity-defined">
+				\epsilon = \epsilon_0\, \epsilon_r.
+			</men>
+			You can read this definition as saying that dielectric constant is permittivity of the medium relative to the permittivity of vacuum.
+		</p>
+
+		<p>
+			In addition to the linear dielectrics, there are special materials, called <term> ferroelectrics</term>, such as Barium Titanate (<m>\text{BaTiO}_3</m>), that do not respond to an external electric field in the manner outlined above.  Their polarizations are not linear in the electric field.  Furthermore, while the polarization in linear dielectrics go to zero due to thermal randomization of the dipoles when the external electric field is removed, the dipoles in the ferroelectrics remain aligned even when the external electric field is removed as long as the temperature is lower than a critical value called <term> Curie point</term>.
+		</p>
+	</subsection>
+
+
+
+	<subsection><title> Dielectric Breakdown</title>
+		<p>
+			If the electric field at a point is so great that electrons can be ripped off from the molecules, a {\bf dielectric breakdown}\index{Dielectric breakdown} of the medium occurs.  The loose electrons accelerate and strike other molecules with great energy and cause more electrons to come off molecules leading to an avalanche of moving electrons and ions.  
+		</p>
+		<p>
+			This is responsible for the lightning shown in  <xref ref="fig-lightning"/>. Usually it takes considerable electric field to reach the dielectric breakdown level.  For instance, you need approximately <m>3\text{ MV/m}</m> of electric field to cause the electric breakdown of the dry air; polycarbonate, a very  commonly used insulating material,  has a dielectric strength of approximately <m>300\text{ MV/m}</m>.
+
+		</p>
+		<figure xml:id="fig-lightning">
+			<caption>
+				Lightning as an example of dielectric breakdown ( Credits: NOAA Photo Library, NOAA Central Library; OAR/ERL/National Severe Storms Laboratory (NSSL), Photographer C. Clark)
+			</caption>
+			<image source = "./images/dielectrics/lightning.png" width="60%"/>
+		</figure>
+ 		
+	</subsection>
+
+	<exercise xml:id="ex-Electric-Field-in-Paper-Between-Two-Charged-Paper-Plates"><title> Electric Field in Paper Between Two Charged Paper Plates </title>
+		<statement>
+			<p>
+				Two pieces of aluminum foil of dimensions <m>25\text{ cm} \times 25 \text{ cm}</m> is separated by a piece of paper of thickness <m> 0.2</m> mm.  The foils are oppositely charged with  <m>\pm 50\ \mu\text{C}</m>.
+			</p>
+			<p>
+				(a) What is the electric field in the paper?
+			</p>
+			<p>
+				(b) What is the polarization of paper? 
+
+			</p>
+			<p>
+				Data: <m>\epsilon_{r,\text{ paper}} = 3.7</m>.
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use <m>E=E_0/\epsilon_r</m>. (b) Use definition. </p> </hint>
+		<answer> <p>  (a) <m> 2.44\times 10^{7}\text{ N/C}</m>,  (b) <m> 5.83\times 10^{-4}\ \textrm{C/m}^2</m> </p> </answer>
+		<solution> <title>(a) </title>
+			<p>
+				Electric field in a dielectric is related to electric field in the absence of the dielectric by
+				<me>
+					E = \dfrac{E_0}{\epsilon_r}.
+				</me>
+				In the space between two oppositely charged parallel plates with nothing between the plates.
+				<me>
+					E_0 = \dfrac{Q/A}{\epsilon_0}.
+				</me>
+				Therefore,
+				<me>
+					E = \dfrac{Q/A}{\epsilon_0\epsilon_r}.
+				</me>
+				Putting in numerical values we get
+				<md>
+					<mrow> E \amp = \dfrac{ 50\times 10^{-6} }{
+						8.85\times 10^{-12}\,\times 3.7\times 0.25^2
+						}</mrow>
+					<mrow> \amp = 2.44\times 10^{7}\text{ N/C}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(b) </title>
+			<p>
+				Polarization of the paper depends on the electric field in the paper  found in (a).
+				<me>
+					P = \epsilon_0(\epsilon_r - 1)E.
+				</me>
+				Putting in numerical values we get
+				<md>
+					<mrow> P \amp = 8.85\times 10^{-12} \times (3.7-1) \times 2.44\times 10^{7}</mrow>
+					<mrow> \amp = 5.83\times 10^{-4}\text{ C/m}^2.</mrow>
+				</md>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Polarization-of-Plastic-Wrapped-Around-a-Charge-Steel-Sphere"><title> Polarization of Plastic Wrapped Around a Charge Steel Sphere </title>
+		<statement>
+			<p>
+				A steel ball of radius 2 cm is charged with <m>-10\ \mu</m>C.  The charged steel ball is surrounded by plastic spherical shell of thickness <m>3</m> cm.  (a) Find electric field at a point in the plastic at a distance <m>4</m> cm from the center of the ball. (b) Find the polarization of the plastic.
+			</p>
+			<p>
+				Data: <m>\epsilon_{r,\text{ plastic}} = 2.8</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Use relation between electric field when no dielectric and that in the presence. </p> </hint>
+		<answer> <p> (a)  <m>2\times 10^{13}\ \textrm{N/C}</m>, (b)  <m>320\ \textrm{C/m}^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				(a)	We can find the electric field at 4 cm when there is no plastic by using the result for spherical symmetry when applying Gauss's law. Thus, magnitude of electric field at distance <m>r \gt 2\text{ cm}</m> is
+				<md>
+					<mrow> E_0 \amp = \dfrac{1}{4\pi\epsilon_0}\: \frac{q_{\textrm{tot}}}{r^2} </mrow>
+					<mrow> \amp = 9\times 10^9\times \dfrac{10^{-5}}{0.04^2} = 5.6\times 10^{13}\:\textrm{N/C}.</mrow>
+				</md>
+ 
+				With plastic in the space around the sphere in place of vacuum, the electric field will be reduced by a factor of the dielectric constant <m>\epsilon_r</m>.
+				<md>
+					<mrow> E \amp = \dfrac{E_0}{\epsilon_r} </mrow>
+					<mrow> \amp = \dfrac{5.6\times 10^{13}\:\textrm{N/C}}{2.8} = 2\times 10^{13}\:\textrm{N/C}.</mrow>
+				</md>
+			</p>
+			<p>
+				(b)	 The magnitude <m>P</m> of the polarization is related to the magnitude of the electric field <m>E</m> as follows.
+				<md>
+					<mrow> P \amp = \epsilon_0\:(\epsilon_r-1)\:E</mrow>
+					<mrow> \amp = 8.85\times 10^{-12}\times (2.8-1)\times 2\times 10^{13} = 320\:\textrm{C/m}^2. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electric-Field-and-Polarization-of-Two-Different-Layers"><title> Electric Field and Polarization of Two Different Layers of Dielectrics Filling Space Between Parallel Plates</title>
+		<statement>
+			<p>
+				The space between two charged aluminum foils, <m>15\text{ cm}\times 15\text{ cm}</m>, separated by <m>2\text{ mm}</m> is filled with <m>1\text{ mm}</m> thick mica and <m>1\text{ mm}</m> paper.  The foils are oppositely charged with charges <m>\pm 10\ \mu\text{C}</m>. 
+			</p>
+			<p>
+				(a) Find the electric field in mica and in paper.
+			</p>
+			<p>
+				(b) Find the polarization of mica and paper.
+			</p>
+ 			<p>
+ 				Data: <m> \epsilon_{r,\text{ mica}} = 7</m>, 
+ 				<m> \epsilon_{r,\text{ paper}} = 3.7</m>.
+ 			</p>
+
+		</statement>
+		<hint> <p> Use the electric field when there is no dielectric to find the field. </p> </hint>
+		<answer> <p>  
+
+			 <m> E_{\textrm{mica}} = 7.14\times 10^6\:\textrm{N/C} </m>,
+			 <m> E_{\textrm{paper}} = 1.35\times 10^7\:\textrm{N/C}</m>,
+			 <m> P_{\textrm{mica}} = 3.8\times 10^{-4}\:\text{C/m}^2</m>,
+			 <m> P_\text{paper} = 4.5\times 10^{-4}\:\text{C/m}^2</m>.
+
+
+		 </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				Let us find the electric field when there is no dielectric first. For two oppositely charged plates with nothing between the plates, the electric field in the space between the plates will have the following magnitude, 
+				<me>
+				 	E_0 =  \dfrac{Q}{\epsilon_0 A}  = 5\times 10^7\:\textrm{N/C}.
+				</me>
+
+				Therefore, the electric field in the mica and paper will be reduced by the corresponding dielectric constant,
+				<md>
+					<mrow> E_{\textrm{mica}} \amp = \dfrac{E_0}{\epsilon_{r,\text{ mica}}}</mrow>
+					<mrow> \amp = \dfrac{5\times 10^7\:\textrm{N/C}}{7} = 7.14\times 10^6\:\textrm{N/C}</mrow>
+					<mrow> E_{\textrm{paper}} \amp = \dfrac{E_0}{\epsilon_{r,\textrm{ paper}}} </mrow>
+					<mrow> \amp = \dfrac{5\times 10^7\:\textrm{N/C}}{3.7} = 1.35\times 10^7\:\textrm{N/C} </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				We can find the polarization of the two dielectrics, from field in them and their dielectric constant.
+				<md>
+					<mrow> P_{\textrm{mica}} \amp = \epsilon_0\:(\epsilon_{r,\text{ mica}} - 1)\:E_{\text{mica}} </mrow>
+					<mrow> \amp = 8.85\times 10^{-12}\times (7-1)\times 7.14\times 10^6 = 3.8\times 10^{-4}\:\text{C/m}^2. </mrow>
+				</md>
+			</p>
+			<p>
+				We don't have to start over to get the polarization of paper. In the present example, we can do the following.
+				<md>
+					<mrow> P_\text{paper} \amp = \dfrac{\epsilon_{r, \text{paper}}}{ 1- \epsilon_{r, \text{paper}}} \times  \dfrac{ 1- \epsilon_{r, \text{mica}}}{\epsilon_{r, \text{mica}}}\times P_\text{mica}</mrow>
+					<mrow> \amp = \dfrac{3.7}{3.7-1}\times \dfrac{7-1}{7}\times 3.8\times 10^{-4}\:\text{C/m}^2.</mrow>
+					<mrow> \amp = 4.5\times 10^{-4}\:\text{C/m}^2.</mrow>
+
+				</md>
+			</p>
+
+ 
+		</solution>
+	</exercise>
+
+  
+		
+
+
+</section>

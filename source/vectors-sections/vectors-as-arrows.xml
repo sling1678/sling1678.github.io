@@ -1,0 +1,826 @@
+<section xml:id="Vectors-as-Arrows"> <title> Vectors as Arrows </title><idx><h>Vectors</h><h>As Arrows</h></idx>
+
+	<introduction>
+		<p>
+			A vector can be represented by an arrow of appropriate size and in appropriate direction. For instance, a position vector will be an arrow from the origin to the location of the object in space. A velocity vector will be an arrow in velocity space. A force vector, similarly, will be an arrow in another abstract space we will call force space.
+		</p>
+		<p>
+			As usual, we will place an arrow over a symbol to represent the vector while we will use the symbol itself for the magnitude of the vector. For instance, we can represent a displacement vector by <m>\vec D</m> and its magnitude by <m>D</m> and sometimes by surrounding the vector symbol with an absolute sign, e.g., <m>|\vec D|</m>. Similarly, <m>\vec v</m> for velocity and <m>v</m> or <m>|\vec v|</m> for the magnitude of the velocity, i.e, speed.
+			<men>
+				\text{Notation: Vector }\vec A\text{ has magintude denoted by } A\text{ or }|\vec A|.
+			</men>
+			The absolute symbol around the vector name is suposed to emphasize that the magnitude is alwys a positive number.
+		</p>
+	</introduction>
+	<subsection><title>Drawing Vector Arrows</title><idx><h>Vectors</h><h>Drawing</h></idx>
+		<p>
+			Supposeyou drive from point A to point B such that direct distance between A and B is <m>2.0\text{ km}</m>.<fn>We will take a displacement vector in the ordinary space as our running example to illustrate various concepts.</fn>   Then, we can draw an arrow of <m>2\text{ cm}</m> in the direction from A to B to represent the actual displacement using a scale <m>1\text{ cm} \equiv 1\text{ km}</m> as shown in <xref ref="arrow-representing-displacement-vector"/>. The figure also shows a second displacement vector from B-to-C whose length corresponds to <m>3.0\text{ km}</m>.
+		</p>
+
+			<figure xml:id="arrow-representing-displacement-vector">
+			    <caption> 
+			    	To draw an arrow for a vector, you need to decide on SCALE first. Then, you know the size of the arrow to draw. Now, you would draw all vectors of that type using the same scale in the same diagram. We have two displacement vectors here A-to-B and B-to-C.
+
+			    </caption> 
+				<image source="./images/vectors/arrow-representing-displacement-vector.png" width="60%"/>
+			</figure>
+		
+		<sidebyside widths="45% 10% 45%">
+			<p>
+				An important feature of an arrow representing a vector is that ALL VECTORS THAT HAVE THE SAME SIZE AND SAME ORIENTATION are equal to each other. So, the displacement from A to B will equal from X to Y in the diagram even though they have been drawn at different places beacuase they have the same size and same direction in space. But, A-to-B vector is not equal to P-to-Q vector even though they have the same size. Can you tell why?
+			</p>
+			<p></p>
+			<image source="./images/vectors/arrows-equal-and-unequal-vectors.png" width="60%"/>
+		</sidebyside>
+
+		<!-- <p><alert>Unit Vectors:</alert></p>
+		<p>
+			Given any vector <m>\vec A</m>, we can obtain a vector that has the same direction as <m>\vec A</m> but has unit magnitude by simply dividing <m>\vec A</m> by its length <m>A</m>. We will often denote unit vector corresponding to a vector by placing a carat over the symbol of the vector in place of arrow.
+			<men>
+				\hat{A} = \frac{\vec A}{|\vec A|}.
+			</men>
+			It's important to note that unit vector has the same direction as the original vector from which it is formed since dividing by a positive number does not change the direction. Another thing to note is that since we divide by the same unit as the unit of <m>\vec A</m>, the unit vector DOES NOT HAVE ANY UNTIS.
+		</p> -->
+
+	</subsection>
+
+	<subsection><title>Multiplication of a Vector by a Scalar</title>
+
+
+		<p>
+			A scalar is any real number, positive, negative, or zero. The effect of multiplying a vector by a scalar is very different for positive and negative scalars. Multiplication of a vector <m>\vec A</m> by a scalar <m>s</m> gives a new vector <m>\vec B = s\vec A</m>.  
+		</p>
+		<sidebyside widths="60% 15% 25%">
+			<p>
+				If <m>s</m> is a positive scalar, then <m>\vec B</m> has the same direction as <m>\vec A</m> but its magnitude is <m>s</m> times the magnitude of <m>\vec A</m>.  That is, <m>|\vec B| = s|\vec A|</m>.  If <m>s \gt 1</m> then <m>|\vec B|</m> is <m>s</m> times greater and if <m>s \lt 1</m> then <m>|\vec B|</m> is <m>s</m> times smaller. 
+			</p>
+			<p></p>
+			<figure xml:id="fig-vec-2vec-2b">
+				<caption></caption>
+				<image source="./images/vectors/vec-2vec-2b.png"/>
+			</figure>
+		</sidebyside>
+
+		
+		<p>
+			Note that dividing by the scalar <m>s</m> is equivalent to multiplying by <m>1/s</m>, so the division is not a different operation than multiplication. We can obtain a vector of any length in the same direction as the original vector by multiplying it by an appropriate positive real number.
+		</p>
+
+		<sidebyside widths="60% 5% 35%">
+			<p>
+				Multiplication of a vector <m>\vec A</m> by a negative number <m>(-s)</m> [minus <m>s</m>] gives a new vector, denoted by <m>\vec C</m> here, that is <m>s</m> times the original vector but also its direction is  opposite to the direction of <m>\vec A</m> (<xref ref="fig-vec-2vec-2a"/>).  For instance, when velocity vector of <m>10</m> m/s pointed North is multiplied by <m>-2</m>, you get another velocity vector that has a magnitude <m>20</m> m/s and pointed South.
+			</p>
+			<p></p>
+			<figure xml:id="fig-vec-2vec-2a">
+				<caption></caption>
+				<image source="./images/vectors/vec-2vec-2a.png"/>
+			</figure>
+		</sidebyside>
+		<p>
+			
+		</p>
+
+
+</subsection>
+
+<subsection><title>Unit Vector</title>
+	<p>
+		<idx>Unit Vectors</idx><idx> <h>Vectors</h><h>Unit</h> </idx>
+		Evidently dividing a vector <m>\vec A</m> by its magnitude <m>|\vec A|</m> one should obtain a vector whose length is <m>1</m> with no units and the same direction as the direction of vector <m>\vec A</m>.  This vector is called <term> unit vector</term> in the direction of <m>\vec A</m>.  We will denote unit vectors obtained this way by placing a karat over the symbol of the original vector, <m>\hat A</m>.  Thus, unit vector <m>\hat A</m> is
+		<men>
+			\boxed{\hat A = \frac{\vec A}{|\vec A|}.}
+		</men>
+		Unit vectors are very useful for constructing vectors of arbitrary lengths. For instance, if we want a displacement vector of length <m>5</m> cm in the direction of some unit vector <m>\hat u</m>, then all we need to do is to multiply <m>\hat u</m> by <m>5\ cm</m>, giving the desired vector <m>(5\ \text{cm})\hat u</m>. Now, a force vector of length <m>10</m> N in the same direction as <m>\hat u</m> will be <m>(10\ \text{N})\hat u</m>. You can see that unit vectors have universal applicability regardless of how you construct them.  They are holders of the information about directions in space. As you might have guessed it, there are infinite number of unit vectors, one for each direction in space.
+	</p>
+</subsection>
+
+	<subsection><title>Adding Vector Arrows</title><idx><h>Vectors</h><h>Adding</h></idx>
+		<p>
+			In <xref ref="arrow-representing-displacement-vector"/>, we have two displacements A-to-B, denoted by the name <m>\vec D_1</m>, and B-to-C, denoted by <m>\vec D_2</m>. What will be the net displacement? That is, what we want to know is: if you go from A-to-B and then go from B-to-C, what is your net displacement?
+		</p>
+		<p>
+			From the definition of displacement, the net displacement depends only on the initial and the final points. An arrow from the initial point to the final point will be the net displacement arrow. Here, the net displacement will be the direct arrow from A-to-C. Let's denote this vector by <m>\vec D_3</m>. Thus, we have added vectors <m>\vec D_1</m> and <m>\vec D_2</m> and the result is <m>\vec D_3</m> as shown in <xref ref="fig-arrows-adding-displacement-vectors"/>.
+		</p>
+		<sidebyside widths="50% 15% 35%">
+			<p>
+				<p>
+					How do we figure out the magnitude and direction of the sum vector <m>\vec D_3</m>? First, we read off the length of the arrow from A to C and use the scale. In my original drawing I had used 1 cm to represent 1 km. The size of the arrow on the diagram turned to be 2.6 cm, which would correspond to 2.6 km. Clearly, the sizes don't add since <m>2.6 \ne (2.0 + 3.0)</m>.
+				</p>
+				<p>
+					For telling the direction of <m>\vec D_3</m>, we can use the angle with respect to, say, vector <m>\vec D_1</m>. I used a protractor to get the angle.
+				</p>
+			</p>
+			<p></p>
+
+			<figure xml:id="fig-arrows-adding-displacement-vectors">
+			    <caption> 
+			    	<!-- Adding vectors. Place starting point of vector <m>\vec D_2</m> at the tip of vector <m>\vec D_1</m>. Then, the vector from the tail of <m>\vec D_1</m> to the tip of the vector <m>\vec D_2</m> is the sum of the two vectors. -->
+
+			    </caption> 
+				<image source="./images/vectors/arrows-adding-displacement-vectors.png" width="60%"/>
+			</figure>		
+
+		</sidebyside>
+		<p>
+			The procedure of adding vectors illustrated in <xref ref="fig-arrows-adding-displacement-vectors"/> goes by the name <term> parallelogram law of addition</term>. Why is it called parallelogram law? The name comes from the way the vectors to be summed form sides of a parallelogram and one of the diagonals gives the sum as illustrated in <xref ref="fig-arrows-adding-vectors-law-of-parallelogram"/>. The other diagonal gives the difference.
+		</p><idx><h>Vectors</h><h>Parallelogram Law</h></idx><idx>Parallelogram Law of Addition</idx>
+		<p>
+			In <xref ref="fig-arrows-adding-displacement-vectors"/>, (a) Tip-to-tail method: place one vector after another keeping the orientation in space unchanged while you move the second vector. The diagonal from the tail of the first vector to the tip of the second vector is sum. The difference is the other diagonal. (b) Tail-to-Tail method: Place tails of both vectors at the same point. Again keep the original directions in space unchanged. The diaginal from the common tail is the sum.
+		</p>
+			<figure xml:id="fig-arrows-adding-vectors-law-of-parallelogram">
+			    <caption> 
+			    	Parallelogram law of addition of vectors. 
+		 
+			    </caption> 
+				<image source="./images/vectors/arrows-adding-vectors-law-of-parallelogram.png" width="80%"/>
+			</figure>
+		<p>
+			The parallelogram law of addition can be extended to the addition of more than two vectors by simply placing each additional vector starting from the tip of the last vector added as illustrated in <xref ref="fig-ec-2vec-4"/>. First we add two of the vectors as shown in (b), getting <m>\vec V_{12}</m> from <m>\vec V_1</m> and <m>\vec V_2</m>.  And then, we add the third vector to the sum of the first two as shown in (c) to get <m>\vec V_{123}</m>.
+
+		</p>
+		<figure xml:id="fig-ec-2vec-4">
+			<caption>
+				Addition of  more than two vectors. 
+			</caption>
+		<image source="./images/vectors/vec-2vec-4.png" width="80%"/>
+	</figure>
+
+
+		<example><title>Zero Vector and Negative of a Vector</title><idx><h>Vectors</h><h>Zero</h></idx><idx>Zero Vector</idx>
+			<statement>
+				<p>
+					What will happen if you add two vectors that have exactly the same magnitude but their directions are oposite to each other? As if you walked from A to B  and then you walked back to A. What will be the net displacement. Clearly, you will get zero displacement. Thus adding two equal size but oposite direction vectors gives you a <q>vector</q> of zero size. The direction of a zero size vector is not defined.
+				</p>
+
+				
+				<sidebyside widths="70% 10% 20%">
+					<p>
+						As an equation, let <m>\vec A</m> be the first vector and <m>\vec B</m> be the vector equal in size to <m>\vec A</m> but in oposite direction. Then, we have the following result when we add them.
+
+						<me>
+							\vec A + \vec B = \vec 0,
+						</me>
+
+					</p>
+					<p></p>
+					<image source="./images/vectors/arrows-adding-opposite-vectors-to-get-zero-vector.png" width="80%"/>
+				</sidebyside>
+				<p>
+					where I have placed an arrow over zero just to remind us that we are not doing ordinary addition but rather a vector addition. Now, we can move <m>\vec A</m> on the other side of the equation to see that this opposite to <m>\vec A</m> is nothing but negative of <m>\vec A</m>.
+					<me>
+						\vec B = \vec 0 - \vec A = -\vec A.
+					</me>
+					That is negative of a vector gives another vector that has the same magnitude but has exactly the oposit edirection.
+				</p>
+			</statement>
+		</example>
+		
+
+
+		<example xml:id="exaample-Vectors-as-Sum-of-Vectors-along-Cartesian-Axes"><title>Vectors as Sum of Vectors along Cartesian Axes</title>
+			<p>
+				Now, that we have learned how to add two vectors, let us demonstrate that in <m>xy</m>-plane, any vector can be written as a sum of two vectors, one along the <m>x</m>-axis and the other along the <m>y</m>-axis. You can easily extend this example to the three-dimensional soace.
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					In <xref ref="fig-vectors-decomposing-in-sum-of-vectors-along-cartesian-axes-1"/>, vector <m>\vec D</m> is sum of vector <m>\vec D_x</m> and <m>\vec D_y</m>. You can see this easily from the parallelogram (here rectangle) PQRS, where the original vector <m>\vec D</m> is along the diagonal and <m>\vec D_x</m> and <m>\vec D_y</m> along the axes.
+					<me>
+						\vec D = \vec D_x + \vec D_y,
+					</me>
+					where magnitudes of <m>\vec D_x</m> and <m>\vec D_y</m> are <m>D_x = D \cos\theta</m> and <m>D_y = D\sin\theta</m>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-vectors-decomposing-in-sum-of-vectors-along-cartesian-axes-1">
+					<caption></caption>
+					<image source="./images/vectors/vectors-decomposing-in-sum-of-vectors-along-cartesian-axes.png"/>
+				</figure>
+			</sidebyside>		
+		</example>
+
+
+
+
+
+	<example xml:id="exer-three-forces-act-at-three-points-on-a-ring"><title>Three Forces Acting at Three Points on a Ring</title>
+		<statement>
+			<p>
+				Three forces act at three points on a ring such that their directions are in one plane and their vector arrows all fall in that plane.  We will use one of the forces to indicate the directions of the other two. The forces are: <m>3</m> N force in some direction in the plane, <m>6</m> N force in a direction that is <m>60^{\circ}</m> counterclockwise from the direction of the <m>3</m>-N force and <m>4.5</m> N force that is acting <m>90^{\circ}</m> clockwise from the direction of the <m>3</m>-N force.  Graphically add the given force vectors by drawing them in a tip-to-tail way, and find the magnitude and direction of the sum force, also called the net force.
+			</p>
+
+		</statement>
+		<solution>
+			<p>
+				The graph and the steps to construct the graph are displayed in <xref ref="fig-three-forces-act-at-three-points-on-a-ring"/>
+			</p>
+			<figure xml:id="fig-three-forces-act-at-three-points-on-a-ring">
+				<caption><xref ref="exer-three-forces-act-at-three-points-on-a-ring"/>. </caption>
+				<image source="./images/vectors/three-forces-act-at-three-points-on-a-ring.png" width="100%"/>
+
+			</figure>			
+
+
+		</solution>
+	</example>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</subsection>
+
+<subsection><title>Subtraction of Vectors</title>
+	<p>
+		<idx>Vector Subtraction</idx><idx><h>Vectors</h><h>Subtraction</h></idx>
+		Subtracting a vector <m>\vec B</m> from another vector <m>\vec A</m> can be turned into adding the negative of vector <m>\vec B</m> to <m>\vec A</m>. 
+		<me>
+			\vec A-\vec B = \vec A + \left(-\vec B\right).
+		</me>
+		Geometrical procedure of <m>(\vec A-\vec B)</m> this subtraction is illustrated in <xref ref="fig-subtraction-of-vectors"/>.
+
+		    
+	</p>
+
+
+			<p>
+				First draw vectors <m>\vec A</m>, <m>\vec B</m>, and <m>(-\vec B)</m>. Then, we can proceed in two ways to find the vector that is equal to <m>(\vec A-\vec B)</m>: 
+			</p>
+
+	<sidebyside widths="45% 15% 40%">
+		<p>
+
+
+			<p>
+				(a) At the tip of vector <m>\vec A</m> draw the vector <m>(-\vec B)</m>, which is obtained from vector <m>\vec B</m> by reversing the direction of the later. From the tail of <m>\vec A</m> to the tip of <m>(-\vec B)</m> is the vector <m>(\vec A-\vec B)</m>. 
+			</p>
+			<p>
+				(b) You would obtain the same result for <m>(\vec A-\vec B)</m> by drawing <m>\vec B</m> such that its tip meets the tip of <m>\vec A</m>.  Then <m>(\vec A-\vec B)</m> is from the tail of <m>\vec A</m> to the tail of <m>\vec B</m>.
+			</p>
+		</p>
+		<p></p>
+		<figure xml:id="fig-subtraction-of-vectors">
+			<caption></caption>
+			<image source="./images/vectors/subtraction-of-vectors.png" width="70%"/>
+		</figure>
+	</sidebyside>
+</subsection>
+
+
+<subsection><title>Vector Equations and Polygons</title>
+	<p><idx>Vector Equations</idx><idx><h>Vectors</h><h>Polygon</h></idx>
+		Recall that when you walk around a polygon and end up at the starting place, then your direct distance from the starting place to ending place is zero. This means that the net displacement must be a zero vector, also called the null vector. Thus, if you add vectors  by placing the tail of one vector at the tip of another vector and the result is a closed polygon, the net sum of all vectors will be zero vector as illustrated in <xref ref="fig-vec-2vec-polygon"/>. 
+	</p>
+	<figure xml:id="fig-vec-2vec-polygon">
+		<caption>
+			Polygon of vectors arranged tip-to-tail add up to zero or null vector.
+		</caption>
+		<image source="./images/vectors/vec-2vec-polygon.png" width="70%"/>
+	</figure>
+
+	<p>
+
+		Therefore, for any polygon of vectors we can write a vector equation.  In <xref ref="fig-vec-2vec-polygon"/>(a), the three vectors give rise to the vector equation
+		<me>
+			\vec V_1 + \vec V_2 +\vec V_3 = 0,
+		</me>
+		which is the same as
+		<me>
+			\vec V_1 + \vec V_2 = (-\vec V_3),
+		</me>
+		which shows that the sum of the two vectors <m>\vec V_1</m> and <m>\vec V_2</m> is equal to the vector <m>(-\vec V_3)</m>, i.e. another vector that has the same magnitude as vector <m>\vec V_3</m> but has an opposite direction to that of vector <m>\vec V_3</m>. Similarly, <xref ref="fig-vec-2vec-polygon"/>(b) corresponds to the vector equation
+		<me>
+			\vec V_1 + \vec V_2 +\vec V_3 +\vec V_4 = 0.
+		</me>
+		You will find many vector equations in this textbook.  For example, the second law of motion is a vector equation <m>\vec F = m\vec a</m>, which says that the force vector obtained by vector addition of all the forces on the object of mass <m>m</m> is equal to the vector obtained by multiplying the acceleration vector with the mass.
+
+
+
+	</p>
+</subsection>
+<subsection xml:id="subsection-Projection-of-one-Vector-Over-Another"><title>Projection of one Vector Over Another</title>
+	<p>
+		<idx><h>Vectors</h><h>Projection</h></idx>
+		Often we need to know <q>how much</q> of a vector <m>\vec B</m> acts in the direction of another vector <m>\vec A</m>. This quantity is called the <term>projection</term> of <m>\vec B</m> over <m>\vec A</m>. A related quantity of interest is <q>how much</q> of a vector <m>\vec B</m> acts in the direction of perpendicular of another vector <m>\vec A</m>.
+	</p>
+	<p>
+		<xref ref="fig-projection-of-one-vector-over-another-basic"/> illustrates how to find projections by drawing two vectors from a common tail point. When you draw a normal to the line of <m>\vec A</m> from the tip of <m>\vec B</m>, you strike that line either on the side of <m>\vec A</m> as in <xref ref="fig-projection-of-one-vector-over-another-basic"/>(a) or in the opposite to  <m>\vec A</m> as in <xref ref="fig-projection-of-one-vector-over-another-basic"/>(b). The distance from the common tail to the point of normal on the line of <m>\vec A</m> is the projection of <m>\vec B</m> on <m>\vec A</m>. In the case of (a), the projection will be positive and in the case of (b) it will be negative. 
+	</p>
+	<figure xml:id="fig-projection-of-one-vector-over-another-basic">
+		<caption>
+		</caption>
+		<image source="./images/vectors/projection-of-one-vector-over-another-basic.png" width="80%"/>
+	</figure>
+	<p>
+		In <xref ref="fig-projection-of-one-vector-over-another-basic"/>, I have denoted projection of <m>\vec B</m> on <m>\vec A</m> by the symbol <m>B_{\parallel A}</m> to indicate that this is the part of <m>\vec B</m> that is acting in the direction of <m>\vec A</m>.
+	</p>
+	<p>
+		If you draw projection of <m>\vec B</m> on a direction perpendicular to <m>\vec A</m>, you would get another projection value, which I have denoted by <m>B_{\perp A}</m>.  Actually, these symbols for projections are not universally followed. As a matter of fact, many people use confusing symbol <m>B_\perp</m> to denote the projection of <m>\vec B</m> on <m>\vec A</m>. We also might do that sometimes. It should be clear from the context.
+	</p>
+
+</subsection>
+
+
+<subsection><title>Multiplication of a Vector with Another Vector</title>
+	<introduction>
+		<p>
+			<idx><h>Vectors</h><h>Multiplication</h></idx>
+			You have already learned what happens when you multiply a vector by a real number (also called a scalar).  How do you multiply a vector by another vector? A vector has a numerical part in the magnitude and a non-numerical part in the direction.  For instance, a velocity vector can be <m>3</m> m/s East and another velocity can be  <m>4</m> m/s Up. Granted you can think of a way to multiply <m>3</m> and <m>4 </m>, but how would you multiply East and Up? 
+		</p>
+		<p>
+			It turns out that two types of multiplication are found in physics. (1) In one type of multiplication, called the <term>scalar product</term>, the product of two vectors is actually a scalar number that depends upon the magnitudes of the two and the angle between them. We call this type of multiplication a scalar product. Examples of this type of multiplication are work and energy. (2) In the other type of multiplication between two vectors, called the <term>vector product</term>, the product is another vector.  Examples of this vector products are torque and angular momentum.
+		</p>
+
+	</introduction>
+	<subsubsection xml:id="subsubsection-Graphical-Scalar-Or-Dot-Product"><title>Scalar Or Dot Product</title>
+		<p>
+			<idx>Scalar Product</idx><idx><h>Vectors</h><h>Scalar Product</h></idx>
+			The scalar product of two vectors <m>\vec A</m> and <m>\vec B</m> is defined by the product of the magnitude of one these vectors and the projection of the other vector along this vector. It's denoted by the composite symbol <q><m>\vec A \cdot \vec B</m></q>.
+			<men>
+				\vec{A} \cdot \vec{B} = |\vec{A}| \times \text{Projection of }\vec{B}\text{ on }\vec{A} \equiv A B_{\parallel A},
+			</men>
+			or, equivalently.
+			<men>
+				\vec A \cdot \vec B = |\vec B| \times \text{Projection of }\vec A\text{ on }\vec B \equiv B A_{\parallel B}.
+			</men>
+
+			Refering to <xref ref="fig-projection-of-one-vector-over-another-basic"/>, we see that we can use trigonometry of right-angled triangle to write the projection of <m>\vec B</m> on <m>\vec A</m> in terms of the angle <m>\theta</m>.
+			<men>
+				B_{\parallel A} = B\,\cos\theta.
+			</men>
+			This formula covers both the positive and negative projections since <m>\cos\theta</m> is negative for <m>90^\circ \lt \theta \lt 270^\circ</m>. Therefore, we can also write the following for the scalar product.
+
+			<men>
+				\vec A \cdot \vec B  = A B\cos\theta.
+			</men>
+			Note that <alert>if the dot product between two vectors is zero</alert>, then, either one or both of the vectors has a zero length, or the angle between them in ninety degrees since <m>\cos 90^{\circ} = 0</m>.
+			<me>
+				\boxed{\text{If}\ \vec A\cdot \vec B = 0, \text{ then, either }|\vec A| = 0,  \text{ or } |\vec B| = 0, \text{ or }\theta = 90^{\circ}.}
+			</me>
+			Another useful property of the scalar product occurs when you take the scalar product of a vector with itself.  Since <m>\cos\theta = 1</m> here, or equivalently, the projection of a vector on itself will be the entire magnitude of the vector, the scalar product is equal to the square of the magnitude of the vector.
+			<me>
+				\vec A\cdot\vec A = |\vec A|^2.
+			</me>
+		</p>
+
+		<p>
+			Based on the definition of the scalar product given above, you can prove the following algebraic properties of the scalar product.
+			<ol marker="1">
+				<li>
+					Linearity:  <m>\vec A \cdot(s\vec B) = s \vec A\cdot \vec B</m>, where <m>s</m> is scalar.
+				</li>
+				<li xml:id="Scalar-Product-Distributive-Property">
+					Distributive: <m>\vec A\cdot(\vec B+ \vec C) = \vec A\cdot\vec B + \vec A\cdot\vec C</m>.
+				</li>
+				<li>
+					Commutative:  <m>\vec A \cdot\vec B = \vec B \cdot\vec A</m>.
+				</li>
+			</ol>
+ 
+		</p>
+
+		<example xml:id="example-geom-vecs-exer6"><title>Projection of Vectors and Scalar Product</title>
+			<statement>
+				<sidebyside widths="40% 10% 40% 10%">
+					<p>
+						A force <m>\vec F</m> of magnitude <m>10</m> N  and a displacement <m>\vec s</m> of magnitude <m>10</m> cm are shown to their corresponding scales in <xref ref="fig-exer-vec-projection-1"/>.  To work graphically on the given vectors, it may be helpful to transfer the figure to another paper using the same scale.
+					</p>
+					<p></p>
+					<figure xml:id="fig-exer-vec-projection-1">
+						<caption>For <xref ref="example-geom-vecs-exer6"/>.</caption>
+						<image source="./images/vectors/exer-vec-projection-1.png"/>
+					</figure>
+					<p></p>
+				</sidebyside>
+
+				<p>
+					<ol marker="(a)">
+						<li>
+							Determine the scales for the two vectors that was used for the given drawings, i.e., state the length of the force arrow that represents <m>1</m> N of force and the length of the displacement arrow that represents <m>1</m> cm of displacement. Since the figure shows two different properties we have two different scales, one for each property.
+						</li>
+						<li>
+							Draw the projection of the force vector on the displacement vector, and determine the value of the projection of the force vector onto the displacement vector in the unit of N.
+						</li>
+						<li>
+							Draw the projection of the displacement vector on the force vector, and determine the value of the projection of the displacement vector onto the force vector in the unit of cm.
+						</li>
+						<li>
+							Verify that the product of the projection of <m>\vec F</m> on <m>\vec s</m> with the magnitude of <m>\vec s</m> is equal to the product of the projection of <m>\vec s</m> on <m>\vec F</m> with the magnitude of <m>\vec F</m> within the margin of error of your measurements of the projections.
+						</li>
+				</ol>
+
+				</p>
+
+			</statement>
+
+
+			<solution><title>a</title>
+				<p>
+					I placed a ruler on the arrow for the force  and found the length of the arrow to be 7.5 cm.  [Note: the  printing of the book on other dimensions will change the length you measure, but the logic given here will not change.] Since this arrow represents a   force of magnitude  10 N, the scale for the force in this diagram is 0.75 cm for 1 N.
+				</p>
+				<p>
+					The reading on the arrow for the displacement gave me a length of 4 cm, which is supposed to represent an actual distance of 10 cm.  Therefore, the scale for the distance is 0.4 cm for an actual distance in space of 1 cm.
+				</p>
+			</solution>
+			<solution><title>b</title>
+				<p>
+					To draw the projection of the vector <m>\vec F</m> onto the vector <m>\vec s</m> we need to start with both vectors drawn from the same point as is the case here.  Then, we draw a normal line from the tip of the vector <m>\vec F</m> onto the line of the vector <m>\vec s</m> that is perpendicular to the the later.  Here we need an extension of the line <m>\vec s</m> forward; some other times you will not have to extend the lines of <m>\vec s</m> or extend the line backward.
+				</p>
+				<figure xml:id="fig-example-geom-vecs-exer6-b">
+					<caption></caption>
+					<image source="./images/vectors/geom-vecs-exer6-b.png" width="70%"/>
+				</figure>
+
+				<p>
+					The length from the common tail point to the point on <m>\vec s</m> where the normal line intersects is equal to the projection of vector <m>\vec F</m> on vector <m>\vec s</m> and has the  units of the vector <m>\vec F</m>.  Even though the length projection of the vector <m>\vec F</m> on the vector <m>\vec s</m> is along the line of <m>\vec s</m>, the projection contains information of the component of the force in the direction of the the vector <m>\vec s</m> and therefore, this projection has the units of force here. Therefore, the magnitude of the projection will be obtained by using the scale for <m>\vec F</m> on the projection.
+				</p>
+				<p>
+					I found the length of the projection is equal to 5.3 cm, which using the scale of 0.75 cm per N gives the projection to be 7.1 N. The projection is positive since the projection normal line intersects the vector <m>\vec s</m> on the side that is along the the direction of the vector <m>\vec s</m>.  If the projected line had crossed on the other side of vector <m>\vec s</m> , then the projection would have been negative.
+				</p>
+			</solution>
+			<solution><title>c</title>
+			<p>
+				We follow a similar procedure for drawing the projection of the vector <m>\vec s</m> on the vector <m>\vec F</m> as we did for drawing the projection of the vector <m>\vec F</m> on the vector <m>vec s</m>.  But this time, we use the scale for the distance to convert the length of the projection in the figure to the physical distance of the projection.  This gives the projection equal to <m>6.5</m> cm.  In my measurements I got the length of the projection <m>2.6</m> cm, which using the scale of <m>0.4</m> cm on drawing equal to <m>1</m> cm in real space gives the distance <m>6.5</m> cm in the real space.
+			</p>
+				<figure xml:id="fig-example-geom-vecs-exer6-c">
+					<caption></caption>
+					<image source="./images/vectors/geom-vecs-exer6-c.png" width="70%"/>
+				</figure>
+
+		</solution>
+		<solution><title>d</title>
+			<p>
+				Let us verify the given statement,
+				<me>
+					\text{Is (Projection of <m>\vec F</m> on <m>\vec s</m>)} \times |\vec s|  = \text{Is (Projection of <m>\vec s</m> on <m>\vec F</m>)} \times |\vec F|?
+				</me>
+				<md>
+					<mrow> 
+						\amp \text{Left side}\  = 7.1\ \text{N} \times 10\ \text{cm} = 71\ \text{N.cm}</mrow>
+					<mrow>\amp \text{Right side}\ = 6.5\ \text{cm} \times 10\ \text{N} = 65\ \text{N.cm}
+					</mrow>
+				</md>
+
+				This says that the left side is not equal to the right side althogh they are supposed to be equal to each other.  You can trace the problem in the error in the measurements required in the graphical method. Had I taken the uncertainties into account I would have found that the two values are within the uncertainties of each other. 
+			</p>
+
+
+		</solution>
+
+
+	</example>
+
+
+
+
+
+
+
+
+
+
+
+
+	</subsubsection>
+
+	<subsubsection><title>Vector or Cross Product</title>
+		<p>
+			<idx>Vector Product</idx><idx><h>Vectors</h><h>Vector Product</h></idx>
+
+			The other product of interest to us is the  vector product, which is often called the cross product. Unlike the result of the scalar product, the result of a vector product is another vector, whose magnitude depends upon magnitudes of the two vectors and the angle between them, and whose direction  depends on the orientations of the two vectors being multiplied. So, to define the vector product, we need rules for the magnitude as well as the direction for the product.
+		</p>
+		<p>
+			The <term> vector product </term> or the <term> cross product</term> between two vectors <m>\vec A</m> and <m>\vec B</m> is <alert>another vector</alert>, denoted by <q><m>\vec A\times\vec B</m></q>, whose <alert>magnitude</alert> is the area of the area of the parallelogram formed by placing the two vectors on the sides of the parallelogram.
+			<me>
+				\left| \vec A\times \vec B \right|  = \text{Area of parallelogram,}
+			</me>
+			and the <alert>direction</alert> of the vector product is given by a rule, called <term>the right-hand rule</term>, illustrated in <xref ref="fig-magnitude-and-direction-of-vector-product"/>.
+		</p>
+		<p>
+				The magnitude of the vector product is the area of the parallelogram Oacb, which can be written in terms of the magnitudes <m>A</m> and <m>B</m> and angle <m>\theta</m> by recalling the base times height formula. If you take the base to be the side <m>A</m>, then the height will be <m>B\sin\theta</m>. Thus, the magnitude of <m>\vec A \times \vec B</m> is
+				<men>
+					\left| \vec A \times \vec B\right| = A B \sin\theta.
+				</men>
+		</p>
+
+		<sidebyside widths="40% 20% 40%">
+			<p>
+				<!-- Let <m>\theta</m> be the angle between the two vectors <m>\vec A</m> and <m>\vec B</m> when they are drawn with their tails at the same point, just as we have done when we defined the scalar product.
+\marginpar{%
+  \includegraphics[width=\marginparwidth]{ch2-vectors/figs/vec-vector-2a.eps}
+  \captionof{figure}{}\label{fig:vec-vector-2a}
+}
+\begin{equation}
+\boxed{|\vec C| = |\vec A| |\vec B| \sin \theta.} \label{eq:vector-product-1}
+\end{equation}
+Note that <m>|\vec B| \sin \theta</m> is the length of the perpendicular when you draw the projection of vector <m>\vec B</m> onto vector <m>\vec A</m> as shown in Fig. \ref{fig:vec-vector-2a}.  Therefore, we see that <m>|\vec A| |\vec B| \sin \theta</m> is equal to the area of the parallelogram formed by the two vectors drawn so that they come out of the same point as illustrated in Fig. \ref{fig:vec-vector-2}.
+
+\begin{figure}[htbp]
+\centering
+	\includegraphics[width=0.7\textwidth]{ch2-vectors/figs/vec-vector-2.eps}
+	\caption{The magnitude of a vector product is equal to the area of the parallelogram formed by placing the two vectors on the sides of the parallelogram.}
+	\label{fig:vec-vector-2}
+\end{figure} -->
+
+
+				For the direction of <m>\vec A \times \vec B</m>, place vectors <m>\vec A</m> and <m>\vec B</m> in the plane of the head of the screw so that when you turn the screw so that the screw advances forward when <m>\vec A</m> rotates towards <m>\vec B</m>.  Then the direction of the screw advancing is the direction of the vector product.
+
+
+			</p>
+			<p></p>
+			<figure xml:id="fig-magnitude-and-direction-of-vector-product">
+				<caption>
+					Magnitude and direction of vector product.
+				</caption>
+
+				<image source="./images/vectors/magnitude-and-direction-of-vector-product.png"/>
+			</figure>
+		</sidebyside>
+
+
+		<p>
+			From the definition of a vector product you can conclude that the vector product of a vector with itself will be zero since the angle with itself is zero and <m>\sin\theta=\sin 0=0</m>.  Another useful result of cross product is the cross product of two vectors that are perpendicular to each other. In that case <m>\sin\theta=\sin\ 90^{\circ} =1</m>. Therefore, the magnitude of a vector product of two mutually perpendicular vectors is simply the product of the magnitudes of the two vectors.
+			<md>
+				<mrow>\amp \vec A\times \vec A = 0</mrow>
+				<mrow>\amp
+					|\vec A\times \vec B| =  |\vec A| |\vec B|, \text{ if }\vec A\text{ is perpendicular to }\vec B.
+				</mrow>
+			</md>
+			By using the definition for the vector product you can prove the following algebraic properties of the vector product.
+		</p>
+		<p>
+			<ol marker="1">
+				<li>
+					Linearity:  <m>\vec A \times(s\vec B) = s \vec A\times \vec B</m>, where <m>s</m> is scalar.
+				</li>
+				<li>
+					Distributive: <m>\vec A\times(\vec B+ \vec C) = \vec A\times\vec B + \vec A\times\vec C</m>.
+				</li>
+				<li>
+					Anti-commutative:  <m>\vec A \times\vec B = -\vec B \times\vec A.</m>
+				</li>
+			</ol>
+			Of particular importance is the anti-commutative property: it shows that <m>\vec A \times\vec B</m> is not equal to <m>\vec B \times\vec A</m>.  That is, the order matters.
+		</p>
+
+
+		<example xml:id="example-vector-product-ex8"><title> Graphically Determine Vector Product</title>
+			<statement>
+				<p>
+					Determine graphically the magnitude and direction of the vector product <m>\vec s\times \vec F</m> of the two vectors given in <xref ref="fig-exer-vec-projection-1"/>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The magnitude of the vector product is equal to the area of the parallelogram formed by the two vectors.  Use a protractor to measure the angle between the two vectors when they are drawn with their tails at the same point. The angle <m>\theta</m> between the vectors is <m>45^{\circ}</m>.  The area of the parallelogram will be equal to <m>|\vec F| |\vec s| \sin\theta</m>.  This gives <m>10\, \text{N} \times 10\, \text{cm} \times \sin (45^{\circ}) = 141.4\, \text{N.cm}</m>.
+				</p>
+				<p>
+					For the direction of the vector product we use the right-hand rule.  Here, suppose the vectors <m>\vec s</m> and <m>\vec F</m> are drawn on a paper as shown in the figure. Then the direction of the vector product will be in the direction of ``coming-out of the paper''. 
+				</p>
+				<figure xml:id="fig-vector-product-ex8">
+					<caption></caption>
+					<image source="./images/vectors/vector-product-ex8.png" width="60%"/>
+				</figure>
+
+			</solution>
+		</example>
+
+
+	</subsubsection>
+
+
+
+
+
+	
+</subsection>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<exercises>
+
+
+	<exercise xml:id="exer-draw-two-vectors-to-scale-on-a-graph-paper"> <title>Draw Vectors to Scale on a Graph Paper</title>
+		<statement>
+			<p>
+				In this exercise you will draw two vectors to scale on a graph paper, and then add them graphically. Two forces act on an object:  a force of <m>3</m> Newton(N) in some direction and <m>4</m> N force in the direction <m>90^{\circ}</m> from the direction of the <m>3</m> N force such that the two forces fall in a plane. 
+				<ol marker="(a)">
+					<li>
+						Choose a scale for drawing, such as a <m>1\ \text{cm}</m> line for <m>1\ \text{N}</m>, and draw the vectors on the same graph paper using your scale.  Make sure that you give your scale with the figure.
+					</li>
+					<li>
+						Draw or redraw the vectors so that the tail of the second vector is at the tip of the first vector.  Use tip-to-tail method to draw the vector that is equal to the sum of the two vectors.
+					</li>
+					<li>
+						Use the scale for the drawing and convert the length of the sum vector on the graph to determine the magnitude of the sum.
+					</li>
+					<li>
+						Use a protractor and read off the direction of the sum vector with respect to the force whose magnitude is <m>3\ \text{N}</m>.
+					</li>
+				</ol>
+
+			</p>
+		</statement>
+
+		<answer>See solution.</answer>
+
+		<solution><title>a</title>
+
+			<figure>
+				<caption><xref ref="exer-draw-two-vectors-to-scale-on-a-graph-paper"/>(a). </caption>
+				<image source="./images/vectors/draw-two-vectors-to-scale-on-a-graph-paper-a.png" width="80%"/>
+
+			</figure>
+
+		</solution>
+
+
+		<solution><title>b</title>
+
+			<figure>
+				<caption><xref ref="exer-draw-two-vectors-to-scale-on-a-graph-paper"/>(b). </caption>
+				<image source="./images/vectors/draw-two-vectors-to-scale-on-a-graph-paper-b.png" width="80%"/>
+
+			</figure>
+		</solution>
+
+
+		<solution><title>c</title>
+
+			<figure>
+				<caption><xref ref="exer-draw-two-vectors-to-scale-on-a-graph-paper"/>(c). </caption>
+				<image source="./images/vectors/draw-two-vectors-to-scale-on-a-graph-paper-c.png" width="80%"/>
+
+			</figure>
+		</solution>
+
+		<solution><title>d</title>
+
+			<figure>
+				<caption><xref ref="exer-draw-two-vectors-to-scale-on-a-graph-paper"/>(d). </caption>
+				<image source="./images/vectors/draw-two-vectors-to-scale-on-a-graph-paper-d.png" width="80%"/>
+
+			</figure>
+		</solution>
+
+	</exercise>
+
+
+
+
+	<exercise xml:id="exer-three-forces-act-at-three-points-on-a-ring-ex-2"><title>Three Forces Acting at Three Points on a Ring</title>
+		<statement>
+			<p>
+				 Three forces act at three points on a ring such that their directions are in one plane. We will use one of the forces to indicate the directions of the other two. The forces are: <m>20</m> N force in some direction in the plane, <m>60</m> N force in a direction that is <m>135^{\circ}</m> counterclockwise from the direction of the 20-N force and <m>45</m> N force that is acting  <m>30^{\circ}</m>  clockwise from the direction of the <m>20</m> N force.  By adding these forces graphically find out the fourth force needed to make the net force on the ring zero.
+			</p>
+
+		</statement>
+
+
+		<solution>
+			<p>
+				The graph and the steps to construct the graph are displayed in the figure below.  The sum of the three vectors is <m>67</m> N at <m>77^{\circ}</m>.  Since the fourth force must balance these three  forces, the fourth force must have the magnitude equal to <m>67</m> N but its direction must be opposite to the <m>77^{\circ}</m>, that is <m>180^{\circ} + 77^{\circ} = 215^{\circ}</m> counterclockwise from the reference direction. 
+			</p>
+
+			<figure xml:id="fig-three-forces-act-at-three-points-on-a-ring-ex-2">
+				<caption><xref ref="exer-three-forces-act-at-three-points-on-a-ring-ex-2"/>. </caption>
+				<image source="./images/vectors/three-forces-act-at-three-points-on-a-ring-ex-2.png" width="80%"/>
+
+			</figure>	
+
+
+
+		</solution>
+
+	</exercise>
+
+
+	<exercise xml:id="exer-Write-Vector-Equations-from-Vector-Diagrams"><title>Write Vector Equations from Vector Diagrams</title>
+		<statement>
+			<p>
+				Write vector equations from the vector diagrams given in <xref ref="fig-Write-Vector-Equations-from-Vector-Diagrams"/>.
+			</p>
+			<figure xml:id="fig-Write-Vector-Equations-from-Vector-Diagrams">
+				<caption>
+					<xref ref="exer-Write-Vector-Equations-from-Vector-Diagrams"/>.
+				</caption>
+				<image source="./images/vectors/Write-Vector-Equations-from-Vector-Diagrams.png" width="80%"/>
+			</figure>
+		</statement>
+		<hint>Follow the arrow around and place a negative for the vector if we go in the opposite direction to the vector.</hint>
+		<solution><title>a</title>
+			<p>
+				We follow the arrow around and place a negative for the vector if we go in the opposite direction to the vector.  When we have gone all the way around, then the sum must be zero.  This gives
+				<md>
+					<mrow>\amp \vec A + \vec C - \vec B = 0. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				<md>
+
+					<mrow> \amp \vec A + \vec B + \vec C - \vec D = 0.</mrow>
+				</md>
+			</p>
+		</solution>
+
+		<solution><title>c</title>
+			<p>
+				<md>
+					<mrow> \amp \vec A + \vec B - \vec C + \vec D - \vec E = 0.</mrow>
+				</md>
+			</p>
+
+		</solution>
+
+	</exercise>
+
+ 
+
+	<exercise xml:id="exer-draw-vector-diagrams-for-vector-equations"> <title>Draw Vector diagrams for Vector Equations</title>
+		<statement>
+			<p>
+				Draw vector diagrams for the following vector equations. (a) <m>\vec A + \vec B -\vec C = 0</m>; (b)  <m>\vec A - \vec B -\vec C = 0</m>; (c)  <m>\vec A - \vec B -\vec C + \vec D= 0</m>; (d) <m>\vec A + \vec B +\vec C - \vec D= 0</m>; (e) <m>\vec A + \vec B +\vec C + \vec D -\vec E= 0</m>.
+			</p>
+		</statement>
+
+		<solution>
+			<p>
+				We start with one vector, say <m>\vec A</m>, and then draw arrow for the next vector at its tip as shown in <xref ref="fig-draw-vector-diagrams-for-vector-equations"/>. If the vector to be added is actually a subtraction, we reverse the direction of that arrow.  Since the sum of all vectors is zero in these equations, we will get a closed polygon.
+			</p>
+
+			<figure xml:id="fig-draw-vector-diagrams-for-vector-equations">
+				<caption>
+					<xref ref="exer-draw-vector-diagrams-for-vector-equations"/>
+				</caption>
+				<image source="./images/vectors/draw-vector-diagrams-for-vector-equations.png" width="80%"/>
+			</figure>
+		</solution>
+
+
+	</exercise>
+
+
+
+	<exercise xml:id="vector-product-exer-vec-projection-2"><title>Practice with a Friend: Graphically Determine Vector Product</title>
+		<statement>
+			<sidebyside widths="40% 20% 40%">
+				<p>
+					Determine graphically the magnitude and direction of the vector product <m>\vec s\times \vec F</m> of the two vectors given in <xref ref="fig-vector-product-exer-vec-projection-2"/>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-vector-product-exer-vec-projection-2">
+					<caption>For <xref ref="vector-product-exer-vec-projection-2"/>.</caption>
+					<image source="./images/vectors/exer-vec-projection-2.png"/>
+				</figure>
+			</sidebyside>
+		</statement>
+		<answer>
+			<p>
+				The magnitude of the vector product in this exercise is <m>60</m> N.m, and the direction is into-the-page.
+			</p>
+		</answer>
+	</exercise>
+
+
+
+
+</exercises>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

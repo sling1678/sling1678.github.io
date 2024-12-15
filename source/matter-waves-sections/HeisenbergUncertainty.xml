@@ -1,0 +1,124 @@
+<section xml:id="sec-HeisenbergsUncertaintyPrinciple"><title>Heisenberg's Uncertainty Principle</title>
+	<introduction>
+		<p>
+			When a quantity is described by a probability we define the uncertainty in the quantity by its standard deviation from the mean. To calculate the standard deviation of <m>x</m> and <m>p</m> we first calculate  their second moments defined by:
+			<md>
+				<mrow> \amp \langle x^2 \rangle = \int_{-\infty}^{\infty} \psi^*(x,t) x^2\:  \psi (x,t) dx.</mrow>
+				<mrow> \amp \langle p^2 \rangle = \int_{-\infty}^{\infty} \psi^*(x,t) \left[ -\hbar^2 \dfrac{\partial^2  }{\partial x^2}\right] \: \psi(x,t)dx.</mrow>
+			</md>
+			The standard deviations of <m>x</m> and <m>p</m>, which are a measure of uncertainty in the values of <m>x</m> and <m>p</m>, are
+			<md>
+				<mrow> \amp \Delta x = \sqrt{\langle x^2 \rangle - \langle x \rangle^2},</mrow>
+				<mrow> \amp \Delta p = \sqrt{\langle p^2 \rangle - \langle p \rangle^2}.</mrow>
+			</md>
+			Werner Heisenberg showed that for all systems the product of the uncertainties in position and momentum has a lower bound as given by the following inequality.
+			<men xml:id="eq-heisenber-unc-ppl">
+				\Delta x \Delta p \geq \dfrac{\hbar}{2}.
+			</men>
+			This relation is called <term>Heisenberg's uncertainty principle</term> for position and momentum. It says that when the position of a particle is known with more precision, i.e., when <m>\Delta x</m> is small, the momentum would be more uncertain so that the product of the uncertainties cannot be less than <m>\hbar/2</m>. That is, if you try to localize a particle in a small space its momentum will become uncertain and vice versa.
+		</p>
+		<p>
+			Sometimes the uncertainty in momentum is used to estimate the minimum kinetic energy the particle will have.  For an uncertainty in momentum <m>\Delta p</m> we estimate that the minimum kinetic energy of the particle will be
+			<me>
+				K.E. \sim \dfrac{(\Delta p)^2}{2m}.
+			</me>
+			Thus, if you try to confine a particle in a space of linear dimension <m>a</m>, that is for <m>\Delta x = a/2</m>, you would expect its kinetic energy to be at least
+			<me>
+				K.E. \sim \dfrac{(\Delta p)^2}{2m} = \dfrac{\hbar^2}{2m (\Delta x)^2} = \dfrac{\hbar^2}{m a^2}.
+			</me>
+			This estimate gives a qualitatively correct answer in practical situations, such as the energy of an electron confined in an atom or in a nucleus. For instance, suppose you try to confine a particle in a potential well of height <m>U_0</m> and width <m>a</m>. If <m>K.E.</m> due to the uncertainty in the momentum due to confinement exceeds <m>U_0</m>, it will not be confined in the well.
+			<me>
+				\textrm{Not confined if: }\quad\quad K.E. \  = \dfrac{\hbar^2}{m a^2} > U_0,\quad \longrightarrow\quad m a^2 U_0 \lt \hbar^2.
+			</me>
+			In three-dimensional space there is a Heiserberg uncertainty for each vector component of the momentum and position.
+			<men xml:id="eq-heisenber-unc-ppl-2">
+				\Delta x \Delta p_x \geq \dfrac{\hbar}{2};\quad\quad \Delta y \Delta p_y \geq \dfrac{\hbar}{2};\quad \quad \Delta z \Delta p_z \geq \dfrac{\hbar}{2}.
+			</men>
+			There are other similar relations in quantum mechanics.  For instance, there is an energy-time uncertainty relation that states
+			<me>
+				\Delta E \Delta t \ge \dfrac{\hbar}{2}.
+			</me>
+			This can be applied to find the lifetime of metastable states. Suppose we find that the energy released when a metastable state decay has a width <m>\Delta E =\Gamma</m>, then we can use the time-uncertainty relation to get an estimate of the lifetime of the metastable state to be
+			<me>
+				\Delta t \sim \dfrac{\hbar}{2\:\Gamma}.
+			</me>
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-Confinining-an-Electron-in-an-Atom"><title>Confinining an Electron in an Atom</title>
+
+		<statement>
+			<p>
+				Suppose we have a model of a H-atom as a potential well of height <m> U_0 = 15\: \textrm{eV}</m> and width <m>200\: \textrm{pm}</m>, which is approximately four times the Bohr radius. Will this model give a bound state for the electron?  A bound state is a state in which electron is trapped in the well.
+			</p>
+		</statement>
+		<hint><p>
+			Is <m>K.E \lt U_0</m> ?
+		</p></hint>
+		<answer><p>
+			Yes.
+		</p></answer>
+		<solution>
+			<p>
+				Kinetic energy due to uncertainty in the momentum in a well of width <m>a</m> is given by
+				<me>
+					K.E. \sim \dfrac{\hbar^2}{m a^2} = 3.06 \times 10^{-19}\:\textrm{J} = 1.91\:\textrm{eV}.
+				</me>
+				Since <m>K.E \lt U_0</m>, the electron will be confined in the model given.
+
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Decay-of-Metastable-State"><title>Decay of Metastable State</title>
+
+		<statement>
+			<p>
+				A triplet excited state of a molecule has a lifetime of <m>1.0\:  \textrm{msec}</m>. The emitted radiation from the transition of the triplet to the another state shows a width in the frequency range.  What will be expected width of the frequencyrange based on time-energy uncertainty relation?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+				The energy uncertainty here can be written as <m>\Delta E = h \Delta f</m> using the uncertainty in the frequency. Therefore, the time-energy uncertainty relation will give
+				\[
+					\Delta t \Delta f \ge \dfrac{1}{4\pi}.
+				\]
+				Therefore,
+				\[
+				 	\Delta f \ge \dfrac{1}{4\pi\Delta t} = \dfrac{1}{4\pi\times 10^{-3}\:\textrm{s}} = 80\:\textrm{Hz}.
+				\]
+			</p>
+		</solution>
+	</exercise>
+ 
+ TODO:
+
+ \begin{exercise}
+ A proton ($m = 1.67 \times 10^{-27}$ kg) is confined in a nucleus of diameter $5\times 10^{-15}$ m.  (a)  What is the uncertainty in its momentum? (b) What is the uncertainty in its speed? (c) If the momentum of the proton is of the order of the uncertainty in the momentum, what will be the kinetic energy of the proton in MeV unit? 
+\end{exercise}
+
+\begin{exercise}
+ An electron's position in the hydrogen atom is known with an uncertainty of  $10^{-10}$ m.   (a)  What is the uncertainty in its momentum? (b) What is the uncertainty in its speed? (c) If the momentum of the electron is of the order of the uncertainty in the momentum, what will be the kinetic energy of the electron in eV unit?  (d) If the binding energy of the electron in the hydrogen atom is 13 eV, can the electron with the kinetic energy calculated in (c) stay bound?
+\end{exercise}
+
+
+\begin{exercise}
+To get a feel for the weirdness of the microscopic world, imagine a world where the ``Planck constant'' is large, say, 1.0 J.s, instead of $6.62\times 10^{-34}$ J.s.  In the imagined world what will be uncertainty in the position of a ball of mass 0.2 kg if the speed of the ball is known to be between 15 m/s and 16 m/s?
+\end{exercise}
+
+
+
+<!-- 		<figure xml:id="fig-deBroglie-Bohr-orbits">
+			<caption>
+				 The figure shows de Broglie wave pictures for several Bohr orbits. The picture was generated using the program at <url href="http://demonstrations.wolfram.com/BohrsOrbits/" visual="demonstrations.wolfram.com">Bohr's Orbits</url>.
+			</caption>
+			<image source="./images/modern-physics/deBroglie-Bohr-orbits.png" width="60%"/>
+		</figure> -->				
+	
+
+ 
+
+</section>

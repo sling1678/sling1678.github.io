@@ -1,0 +1,56 @@
+<section xml:id="Maxwells-Equations-in-Point-Form"><title> Maxwell's Equations in Point Form </title>
+	<introduction><title>Multivariate Calculus Required</title>
+		<p>
+			To read this section you should review the following topics from your Calculus book.
+			<ol>
+				<li>The Gradient of a Function; Variation of a function in an arbitrary direction. </li>
+				<li>The Divergence of a Vector Field; Physical Meaning of Divergence; Divergence and Flux. </li>
+				<li>The Curl of a Vector Field; Physical Meaning of Curl; Circulation of a field. </li>
+			</ol>
+		</p>
+	</introduction>
+	<subsection><title> Maxwell's Equations</title>
+		<p>
+			In our studies of the electricity and magnetism we have extensively studied two vector fields, namely the electric and magnetic fields <m>\vec E</m> and <m>\vec B</m>.
+		</p>
+		<p>
+			You may recall that we had introduced the concept of fields to get away from the action at a distance present in the non-field formulation, such as  the Coulomb's force law and Newton's law of universal gravitation.  We also found that experimental observations are usually interpreted in terms of laws that integrate over these fields. With the correction by Maxwell to Ampere's Law  we have following four laws of electric and magnetic field in the integral form.
+			<mdn>
+				<mrow xml:id="gauss-e-field"> \amp \textrm{Gauss's Law for }\vec E:
+			\ \ \oint \vec E\cdot d\vec A = \frac {Q_{\textrm{enc}}}
+			{\epsilon_0}  </mrow>
+				<mrow xml:id="gauss-b-field"> \amp \textrm{Gauss's Law for }\vec B:\ \ \oint \vec B\cdot d\vec A =0 </mrow>
+				<mrow xml:id="faraday-integ"> \amp \textrm{Faraday's Law:}\ \ \oint \vec E\cdot d\vec l = -\frac {d \Phi_B}{d t} </mrow>
+				<mrow xml:id="ampere-max-integ"> \amp \textrm{Ampere-Maxwell's Law:}\ \ \oint \vec B\cdot d\vec l =\mu_0 I_{\textrm{enc}} +\mu_0\epsilon_0\frac {d \Phi_E}{d t} </mrow>
+			</mdn>
+			The integral forms are written in terms of the flux   and circulations of the electric and magnetic fields. We have also learned  that the flux and circulations of vector fields are related to their divergence and curl. More specifically, flux per unit volume through a closed surface  is equal to the divergence of the field, and circulation per unit area of a loop is equal to the component of the curl of the vector field in the direction perpendicular to the loop. We can use these results from multivariate calculus to deduce equations that applicable at each point in space and at a particular instant in time, i.e., localized or point-form.
+		</p>
+		<p>
+			As an example, let us apply Gauss's law given in Eq. <xref ref="gauss-e-field"/> to a closed surface <m>S</m> around an arbitrary space point P which may or may not have any charge in the volume <m>V</m> enclosed by the surface <m>S</m>. Suppose we divide both sides by the volume <m>V</m> and take the infinitesimal volume limit. 
+			\[
+				\lim_{V\rightarrow 0}\left[ \frac{1}{V} \oint_S \vec E\cdot d\vec A\right]  = \frac{1}{\epsilon_0} \lim_{V\rightarrow 0}\left[ \frac{Q_{\textrm{enc}}}{V}\right]
+			\]
+			The limit on the left side will give the flux per unit volume at the point P which is equal to the divergence of the electric field at that point, and the limit on the right side will give charge per unit volume, which is the charge density <m>\rho</m> at point P. 
+			<me>
+				\vec{\nabla}\cdot \vec E = \frac{\rho}{\epsilon_0} 
+			</me>
+			This equation is differential form of Gauss's law for electric field.  This equation is also called the point or local form of  Gauss's law.  Often we say this is the Gauss's law.
+		</p>
+		<p>
+			Faraday's and Ampere-Maxwell's laws can be converted into the differential forms using curls. I will not present the derivation but just write the final answer for all the four laws for the electric and magnetic field here since they are so pretty in the differential form. 
+			<md>
+				<mrow> \amp  \vec{\nabla}\cdot \vec E = \frac{\rho}{\epsilon_0}</mrow>
+				<mrow> \amp  \vec{\nabla}\cdot \vec B = 0</mrow>
+				<mrow> \amp  \vec{\nabla}\times \vec E = -\frac{\partial \vec B}{\partial t}</mrow>
+				<mrow> \amp   \vec{\nabla}\times \vec B = \mu_0 \vec J + \mu_0\epsilon_0 \frac{\partial \vec E}{\partial t}</mrow>
+			</md>
+			These equations together with the Lorentz force law gives a complete description of all electromagnetic phenomena. According to the Lorentz force law, the force on a point charge <m>Q</m> with velocity <m>\vec v</m>  is given by
+			<me>
+				\vec F_\text{em} = Q\vec E + Q\vec v\times \vec B.
+			</me>
+			We will now explore consequences of Maxwell's equations using the differential form.
+		</p>
+
+	</subsection>
+
+</section>

@@ -1,0 +1,163 @@
+<section xml:id="Viscosity"><title> Viscosity </title>
+	
+	<subsection> <title> Cohesive Forces and Laminar Flow </title>
+
+		<p>
+			Real liquids slow down in their flow unless some energy is continuously pumped in the liquid. The source of dissipation of energy are the intermolecular or <term> cohesive forces </term>. Energy of in the flow is converted into thermal energy which escapes to the environment or heats up the fluid. We will also call these forces <term> viscous forces</term>. 
+		</p>
+		<p>		
+			It is possible to learn about the viscous cohesive forces inside the liquid by applying a shear force tangentially on the liquid surface. The fluid will flow, but, when you stop applying the external force, the flow will slow down due to the work by the internal viscous forces. For instance, when a wind blows over the surface of a lake, the water flows, and when the wind stops, the flow also stops due to the dissipation of energy by way of heat. 
+		</p>
+		<p>
+			When the wind is blowing over a lake, the speed of flow at the surface is more than the flow deeper down in the water. If you assume a <term> laminar flow model </term> of a fluid, then we can study the flow of the fluid layer by layer by assuming that fluid in each layer flows at the same speed. The laminar flow with one surface fixed and the opposite surface subjected to a shear stress will give rise to varying speeds of the layers due to the viscous forces in the liquid as shown in <xref ref="fig-laminar-flow"/>. 
+
+		</p>
+		<figure xml:id="fig-laminar-flow">
+			<caption>
+				<alert> Laminar flow model</alert>. Fluid is modeled as layers with each layer flowing at its speed and different layers flow at different speeds.  In this figure, the top layer is pushed along by a shear force at a higher spped and the bottom layer is next to a fixed plate.
+			</caption>
+			<image source="./images/dynamic-fluid/laminar-flow.png" width="50%"/>			
+		</figure>
+
+
+	</subsection>
+	<subsection xml:id="sec-lainar-flow"> <title> Laminar Flow </title>
+
+		<p>
+			Consider the following experiment. Place some liquid between two flat plates separated by a distance <m>h</m> as shown in <xref ref="fig-laminar-flow-viscosity-formula-derivation" />.  Keeping the bottom plate fixed, we apply a constant horizontal force <m> F</m> on the top plate to make the top surface move at a steady speed <m> v_{\text{top}}</m> while the bottom layer remains at rest. 
+		</p>
+		<figure xml:id="fig-laminar-flow-viscosity-formula-derivation">  
+			<caption>
+				Shear strain <m>\Delta \theta</m> under a shear stress <m> F/A</m> in a duration <m> \Delta t</m>. Force <m> F </m> is balanced by the viscous force <m> F_{\text{visc}}</m> at the top, not shown.  While the top layer moves with speed <m> v </m>, bottom layer has zero speed.
+			</caption>
+			<image source="./images/dynamic-fluid/laminar-flow-viscosity-formula-derivation.png" width="70%"/>				
+		</figure>
+		<p>
+			Experiments show that the horizontal force <m> F</m> needed to maintain a steady speed <m>v_{\text{top}}</m> of the top plate is directly proportional to the contact area <m>A = w l</m> and the speed  <m> v_\text{top}</m> of the top plate relative to the fixed plate, and inversely proportional to the distance <m> h</m> between the plates.		  
+			<men>
+				F = \eta A \frac{v_\text{top}}{h},
+			</men>
+			where the constant of proportionality  <m> \eta</m> (the Greek letter <q>eta</q>) is called the <term> coefficient of viscosity</term>,  or simply viscosity. The viscosity force in the fluid just below the top plate is equal to this force, since we pull on the top surface at constant velocity.
+			<men>
+				F_\text{visc,top} = F =  \eta A \frac{v_\text{top}}{h},
+			</men>
+			where 
+			<me>
+				v_\text{top} = \dfrac{ \Delta x _{\text{top}} }{\Delta t} \approx \dfrac{  h\Delta \theta}{\Delta t}.
+			</me>
+			From the geometry in <xref ref="fig-laminar-flow-viscosity-formula-derivation"/> we can tell that the displacemnt in time <m> \Delta t</m> of flow in layer at height <m> z = z </m>, we know
+			<me>
+				\Delta x =  z\, \Delta \theta,
+			</me>
+			which gives the following for the speed of flow in that layer.
+			<me>
+				v(z) =  \dfrac{\Delta x}{\Delta t} = \dfrac{z}{h}\, v_\text{top}.
+			</me>			
+			Therefore, the viscous force at this layer is
+			<men xml:id="eq-viscous-force-rectangular-non-calculus">
+				F_\text{visc}(z) =  \eta A \dfrac{z}{h} v_\text{top}.
+			</men>
+			That is layer speeds increase from zero to <m> v_{\text{top}}</m>.
+		</p>
+
+ 
+	</subsection>
+	<subsection> <title> Units of Coefficient of Viscosity </title>
+
+			<p>
+
+			The viscosity coefficient has dimensions of <m> [M]/[L][T] </m> as determined from the dimensions of other quantities in Eq. <xref ref="eq-viscous-force-rectangular-non-calculus"/>.
+			<me>
+				[\eta] = \frac{[F][h]}{[A][v]} = \frac{[M]}{[L][T]}.
+			</me>
+
+			The unit of the coefficient of viscosity in SI-system is <m>\text{Pa.s}</m>, which is also called  <term> poiseuille </term> (<m>\text{PI}</m>)  after Jean Louis Marie Poiseuille (1797-1869).  A more common unit of viscosity is the unit in the centimeter-gram-second-system of units. That unit is called <alert> poise</alert>, which is equal to <m>1\text{ dyne.sec/cm}^2</m>, where <m>\text{dyne}</m> is the unit of force in that system, <m> \text{dyne} = \text{g.cm/s}^2</m>.  The relation between the two system of units are:
+			<me>
+				1\text{ poise} = 0.1\text{ Pa.s} = 0.1\text{ PI}
+			</me>
+			The viscosity of many common fluids are usually tabulated in centipoise.
+		</p>
+	</subsection>
+
+
+	<subsection> <title> (Calculus) Velocity of the Layers in Laminar Flow - Rectangular Geometry</title>
+
+		<p>
+			In  <xref ref="sec-lainar-flow"/>,  we have already discussed an overall picture of laminar flow when we apply a tangential stress on a rectangular shaped fluid. Here we dig a little deeper.
+		</p>
+		<p>
+			For analytic treatment, we use the coordinate system in <xref ref="fig-laminar-flow-viscosity-formula-derivation"/>, reproduced here in <xref ref="fig-laminar-flow-viscosity-formula-derivation-2"/> where the flow is in the direction of <m> x </m> axis and <m>x</m>-axis-directed external force <m> F </m> is at the top of a rectangularly shaped liquid body which sits on support at rest.
+		</p>
+		<figure xml:id="fig-laminar-flow-viscosity-formula-derivation-2">  
+			<caption>
+				Shear strain <m>\Delta \theta</m> under a shear stress <m> F/A</m> in a duration <m> \Delta t</m>. Force <m> F </m> is balanced by the viscous force <m> F_{\text{visc}}</m> at the top, not shown.  While the top layer moves with speed <m> v </m>, bottom layer has zero speed.
+			</caption>
+			<image source="./images/dynamic-fluid/laminar-flow-viscosity-formula-derivation.png" width="70%"/>				
+		</figure>
+		<p>
+			The layer at <m>z+\Delta z</m> has a force <m>F_x^\text{above} \hat i</m> from the layer above the <m>z+\Delta z</m> layer and layer at <m>z</m> has a force <m> F_x^\text{below} \hat i</m> from the layer below the <m>z</m> layer. The difference of the two forces  must be balanced by inter-molecular forces since the fluid molecules between <m> z</m> and <m> z+\Delta z</m> have zero acceleration.  We denote this force by <m>\vec F_\text{visc,diff}</m>.  In the present experiment, we get the <m>x</m>-component of the this force to be
+			<men>
+				F_x^\text{visc,diff} = F_x^\text{above} - F_x^\text{below} = \eta A  \frac{\Delta v_x}{\Delta z},
+			</men>
+			where
+			<me>
+				\Delta v_x = v_x^\text{above} - v_x^\text{below},
+			</me>
+			and <m> \Delta z</m> is the thickness of the layer, which will now be treated as an infinitesimal. Taking <m> \Delta z\rightarrow 0</m> limit we find the following for <m>F_x^\text{visc,diff}</m> on the flow velocity  <m> v_x</m>  and the height <m>z</m> from a static layer.	With <m> \Delta z\rightarrow 0</m> limit, we have removed the above and below, and found the internal force on the layer at <m> z </m>. Therefore, we remove the <q> diff </q> from the subscript of viscous force symbol.
+			<men xml:id="eq-viscous-force-rectangular-calculus">
+				F_x^\text{visc} =\eta A  \frac{dv_x}{d z}.
+			</men>
+			Note here, we get an <m> x </m> component of force, which is in the direction of the flow, based on the way the velocity changes with respect to the height coordinate <m> z</m>.
+
+		</p>
+		<p>
+			Many fluids, such as water, ethyl alcohol, glycerin, and  most gases exhibit this simple linear dependence of shear on the gradient of velocity. They are called <alert> Newtonian fluids</alert>.  When a fluid does not behave as postulated above, it is called a non-Newtonian fluid.
+		</p>
+
+
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Pulling-Apart-Microscopic-Slides-with-Liquid-Between-Two-Slides"><title> Sliding Microscopic Slides with Liquid Between Them </title>
+		<statement>
+			<p>
+				There is a <m>0.8\text{-mm}</m> thick layer of a bacterial culture medium fof viscosity <m> 0.95\text{ cP}</m> between two  <m> 5\text{ cm} </m> long and <m> 2.5\text{ cm} </m> wide microscopic slides. Assume the liquid is in the entire space between the slides.
+			</p>
+			<p>
+				(a) What force will you need to pull one slide over the other along the length at a speed of <m> 1.2\text{ cm/s}</m>?
+			</p>
+			<p>
+				(b) What force will you need to pull one slide over the other along the width at a speed of <m> 1.2\text{ cm/s}</m>?
+			</p>
+		</statement>
+		<hint> <p>  (a) Use the force at the top. (b) No need for any new calculation. </p> </hint>
+		<answer> <p> (a) <m>1.78\times 10^{-6}\text{ N} </m>, (b) Same magnitude as (a), direction is pependicular to that of (a). </p> </answer>
+		<solution> <title> (a)</title>
+			<p> (a)
+				We fix the lower slide and pull on the upper slide. We also need to convert units to the SI units before we use them in formulas.
+			</p>
+			<md>
+				<mrow> \amp h = 0.8\times 10^{-3}\text{ m},</mrow>
+				<mrow> \amp \eta = 0.95\text{ cP} = 0.95\times 10^{-4}\text{ Pa.s},</mrow>
+				<mrow> \amp A = 5\times 2.5\times 10^{-4}\text{ m}^2,</mrow>
+				<mrow> \amp v_{\text{top}} = 1.2\times 10^{-2}\text{ m/s}.</mrow>
+			</md>
+			<p>
+				Therefore, the force between the plates is
+				<md> 
+					<mrow> F \amp = \eta A \frac{v_\text{top}}{h},</mrow>
+					<mrow>  \amp = 0.95\times 10^{-4} \times 7.5\times 10^{-4}\times \dfrac{1.2\times 10^{-2}}{0.8\times 10^{-3}},</mrow>
+					<mrow>  \amp = 1.78\times 10^{-6}\text{ N}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+				The only difference is the direction in which you will apply force. All other quantities are same.
+			</p>
+		</solution>
+	</exercise>
+ 
+
+</section>

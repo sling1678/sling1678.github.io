@@ -1,0 +1,126 @@
+<section xml:id="lens-maker-equation"><title> Lensmaker's Equation </title>
+	<introduction>
+        <p>
+        	In <xref ref="section-thin-lens-equation"/> we stated that object distance <m>p</m>, image distance <m>q</m> and focal length <m>f</m> are related by
+        	<me>
+        		\frac{1}{p} + \frac{1}{q} = \frac{1}{f}.
+        	</me>
+        	Focal length is a property of the lens and the media around the lens, being positive for convex lens and negative for concave lens. 
+        </p>
+        <p>
+        	It is possible to find an expression for the focal length in terms of the radii <m>R_1</m> and <m>R_2</m> of the two refracting surfaces of the lens, the refractive index <m>n_0</m> of the medium in which lens will be placed, and the refractive index <m>n_l</m> of the material of the lens (see <xref ref="fig-lens-maker-equation-geometry-for-focal-length"/>). If we ignore the thickness <m>d</m> of the lens, the formula for the inverse of the focal length is
+        	<men xml:id="eq-focal-length-in-terms-of-radii">
+        		\frac{1}{f} =  \left( \frac{n_l - n_0}{n_0}   \right)  \left(\frac{1}{R_1} - \frac{1}{R_2} \right).
+    		</men>
+    		This equation is called the <term>lensmaker's equation</term>. By sign convention of refraction from a curved surface, the radius is positive if the center falls on the right of the vertex and negative when it falls on the left.
+    		<mdn>
+    			<mrow> \amp \text{ if center of sphere is on left then } R \lt 0.</mrow>
+    			<mrow> \amp \text{ if center of sphere is on right then } R \gt 0.</mrow>
+    		</mdn>
+    		In <xref ref="fig-lens-maker-equation-geometry-for-focal-length"/>, <m>R_1\gt 0</m> and <m>R_2\lt 0</m>.
+    	</p>
+    	<figure xml:id="fig-lens-maker-equation-geometry-for-focal-length">
+ 			<caption>
+ 				    
+ 			</caption>
+				<image source="./images/image-formation/lens-maker-equation-geometry-for-focal-length.png" width="70%"/> 
+		</figure>
+
+    	<p>
+    		If the lens is operating in air, then with <m>n_0=1</m>, this formula will simplify.
+        	<men xml:id="eq-focal-length-in-terms-of-radii-in-air">
+        		\frac{1}{f} =  \left(  n_l - 1   \right)  \left(\frac{1}{R_1} - \frac{1}{R_2} \right).
+    		</men>
+    		Even the formula with thickness  <m>d</m> is not too complicated for lens in air.
+        	<men xml:id="eq-focal-length-in-terms-of-radii-in-air-with-thickness">
+        		\frac{1}{f} =  \left(  n_l - 1   \right)  \left[\frac{1}{R_1} - \frac{1}{R_2} + \frac{(n_l-1) d}{ n_l R_1 R_2}\right].
+    		</men>    		    		
+        </p>
+
+         
+    </introduction>
+
+	<exercise xml:id="exercise-Carving-a-Bi-Concave-Lens-for-a-Given-Focal-Length"><title>Carving a Bi-Concave Lens for a Given Focal Length</title>
+
+		<statement>
+			<p>
+				Suppose you have been asked to make a bi-concave lens of focal length <m>-20\text{ cm}</m> in air. 
+			</p>
+			<p>
+				(a) Find the radius of curvature of a symmetrically ground biconcave lens from a glass of refractive index <m>1.55</m> assuming you can ignore the thickness of the lens.
+			</p>
+			<p>
+				(b) If the lens is used underwater, what will be refractive index of the lens then?
+			</p>
+
+
+		</statement>
+		<hint><p>(a) Use thin lensmaker's equation for air. (b) Use general thin lensmaker's equation. Note that <m>R_1 \lt 0</m> and <m>R_2 \gt 0</m>. </p></hint>
+		<answer><p>(a) <m> 22\text{ cm}</m>, (b) <m> 66.7\text{ cm}</m>. </p></answer>
+		<solution><title>(a)</title>
+			<p>
+				In a biconcave lens, the radii will have the following signs: <m>R_1 \lt 0</m>, and <m>R_2 \gt 0</m>. You can convince yourself by drawing a picture and applying the sgn convention. Now, here <m>|R_1|=|R_2|</m>. Lets use a common symbol <m>x \gt 0</m> for this absolute value in Eq. <xref ref="eq-focal-length-in-terms-of-radii-in-air"/>. Therefore,
+				<me>
+					R_1 = -x,\ \ R_2 = x.
+				</me>
+			</p>
+			<p>
+				I will work in <m>\text{cm}</m> units for the length.
+
+				<me>
+					\frac{1}{-20} =  \left(  1.55 - 1   \right)  \left(-\frac{1}{x} - \frac{1}{x} \right) = -\frac{0.55\times 2}{x} = \frac{1.1}{x}.
+				</me>
+				Therefore
+				<me>
+					x = 1.1\times 20 = 22\text{ cm}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				With <m>R_1=-22\text{ cm} = -R_2</m> and <m>n_0=1.33</m> in Eq. <xref ref="eq-focal-length-in-terms-of-radii"/>, we get
+				<md>
+					<mrow> \frac{1}{f} \amp = \left( \frac{n_l - n_0}{n_0}   \right)  \left(\frac{1}{R_1} - \frac{1}{R_2} \right)</mrow>
+					<mrow> \amp = \left( \frac{1.55 - 1.33}{1.33}   \right)  \times \frac{2}{-22}</mrow>
+					<mrow> \amp = -\frac{0.33}{22}</mrow>
+				</md>
+				Therefore, <m>f = 66.7\text{ cm}</m>.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+	<!-- <subsection><title>Derivation of the Thin Lens Equation</title>
+    	<p>
+    		Suppose we have a lens of a material of refractive index <m>n_2</m>. Let <m>n_1</m> be the refractive index of the medium around the lens. Let <m>d</m> be the width of the lens at the center. Let <m>R_1</m> be the radius of curvature of the surface facing the light source and <m>R_2</m> the radius of curvature of the other surface  as shown in <xref ref="fig-lens-maker-equation-setup"/>. 
+    	</p>
+    	<figure xml:id="fig-lens-maker-equation-setup">
+ 			<caption>
+ 				    
+ 			</caption>
+				<image source="./images/image-formation/lens-maker-equation-setup.png" width="80%"/> 
+		</figure> 
+
+
+    	<p>
+    		Place a point light source P at a distance <m>p</m> from the vertex of the lens.  When you trace rays from P that strike the lens near the center of the lens, you find that when they emerge on the other side, they will pass through point Q if point P is sufficiently far away. Therefore, point Q is the image of this point. Let <m>q</m> be the distance of Q from the second vertes of the lens. Then, we will show that if <m>d \lt\lt |R|</m>, where <m>R</m> is smaller of the two radii of curvatures, so that we can ignore the thickness of the lens, then 
+    		<men xml:id="eq-lens-maker-equation">
+ 
+				\frac{1}{p} + \frac{1}{q} = \left( \frac{n_2}{n_1}  - 1  \right) \left(\frac{1}{R_1} - \frac{1}{R_2} \right).
+ 
+    		</men>
+    		This equation is called the <term>lens maker equation</term>. You can see the right side only has properties of the media and the lens, and has the unit of inverse length. We denote the right side as <m>1/f</m>.
+    		<men xml:id="eq-thin-lens-equation">
+ 
+				\frac{1}{p} + \frac{1}{q} = \frac{1}{f},
+ 
+    		</men>
+ 
+    	</p>
+    </subsection> -->
+</section>

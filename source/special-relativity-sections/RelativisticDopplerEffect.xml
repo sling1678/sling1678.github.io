@@ -1,0 +1,441 @@
+<section xml:id="sec-RelativisticDopplerEffect"><title> Relativistic Doppler Effect </title>
+	<introduction>
+		<p>
+			The non-relativistic Doppler effect shows the effect is different when the source is moving and when the observer is moving.  Thus, using the non-relativistic Doppler effect it is possible to tell which one of the two frames, the source frame or the observer frame, is moving even though they may be moving at uniform velocity with respect to the medium. This would not happen if you do not have the medium which takes part in the motion of sound waves.
+		</p>
+		<p>
+			In the case of light waves no medium is necessary. When we work out the frequency of light observed by a detector the shift in frequency is same whether the source is moving or the observer is moving - the effect depends only on the relative motion of the source and the observer.  Once again, let <m>f_0</m> be the frequency of the emitted light in the rest frame of the emitter and <m>f</m> be the frequency of the light detected regardless of the state of motion of the detector.  Then, we will find below that the Doppler effect, now called relativistic Doppler effect, give the following relation.
+			<men>
+				f = f_0\: \sqrt{\dfrac{1- V/c}{1+V/c}}\ \ \ 
+				\left\{ 
+				\begin{array}{l}
+				\textrm{Observer receding: } V \gt 0\\
+				\textrm{Observer approaching: } V \lt 0 
+				\end{array}  
+				\right.
+			</men>
+			To derive this result we will look at a plane wave source traveling along the <m>x</m>-axis.  To study a moving source we will place the source at the origin of the <m>\text{S}^{\:\prime}</m> frame which moves relative to the S frame towards the positive <m>x</m>-axis with speed <m>V</m> as before as shown in 
+			<xref ref="fig-doppler-fig-1"/>.
+		</p>
+
+		<figure xml:id="fig-doppler-fig-1">
+			<caption>
+				To calculate the Doppler effect we place the source of sinusoidal wave at rest at the origin of the <m>\text{S}^{\:\prime}</m> frame.
+			</caption>
+			<image source="./images/modern-physics/doppler-fig-1.png" width="90%"/>
+		</figure>
+
+		<p>
+			The wave emitted by the source will be traveling towards the negative <m>x</m>-axis to reach the detector at the origin of the S frame which is to the left of the origin of the source at the origin of <m>\text{S}^{\:\prime}</m> frame for <m>t>0</m>. Therefore, the wave at the detector has the following wave function at points on the <m>x'</m>-axis in the <m>\text{S}^{\:\prime}</m> frame.
+			<men xml:id="eq-wave-s-prime">
+				\psi^{\prime} (x',t') = \psi_0^{\prime} \cos\left( \dfrac{2\pi}{\lambda_0} x' + 2\pi f_0 t'\right). 
+			</men>
+			The Lorentz transformation gives the following relations among the coordinates of S and <m>\text{S}^{\:\prime}</m> frame.
+			<men>
+				t' = \gamma \left( t-\dfrac{V}{c^2}\:x \right), x' = \gamma\left(x - V t\right), y' = y, z' = z.
+			</men>
+			Now, we express <m>x'</m> and <m>t'</m> in Eq. <xref ref="eq-wave-s-prime"/> in terms of <m>x</m> and <m>t</m> and collect terms in the argument of cosine as a term multiplying <m>x</m> and another term multiplying <m>t</m>.  
+			<men xml:id="eq-wave-s-prime-1">
+				\psi^{\prime} (x,t) =  \psi_0^{\prime}\cos\left[ 2\pi\gamma \left( \dfrac{1}{\lambda_0} - \dfrac{V f_0}{c^2} \right)\: x +  2\pi\gamma \left(f_0  - \dfrac{V}{\lambda_0}\right) t\right].  
+			</men>
+			In the S frame the wave will be represented by
+			<men xml:id="eq-wave-s-prime-1a">
+				\psi(x,t) =  \psi_0\cos\left( \dfrac{2\pi}{\lambda_0} x + 2\pi f_0 t\right). 
+			</men>
+			We can ignore the amplitudes and look at the phase to determine the frequency of the wave in the S frame in relation to the frequency of the same wave in the <m>\text{S}^{\:\prime}</m> frame. Equating the factor that multiplies <m>2\pi t</m> in the argument of the cosine function in Eqs. <xref ref="eq-wave-s-prime-1"/> and <xref ref="eq-wave-s-prime-1a"/> gives the desired relation of the frequency detected in the lab (S) frame in terms of the frequency in the rest (<m>\text{S}^{\:\prime}</m>) frame. 
+			<men xml:id="eq-wave-s-prime-2">
+				f = \gamma\left( f_0  - \dfrac{V}{\lambda_0}\right). 
+			</men>
+			We can write the right-side of this equation in terms of <m>f_0</m> by noting that <m>f_0\lambda_0 = c</m>, where <m>c</m> is the speed of light.  Thus,
+			<men xml:id="long-doppler-effect">
+				f = f_0\: \sqrt{\dfrac{1- V/c}{1+V/c}}\ \ \ 
+				\left\{ 
+				\begin{array}{l}
+				\textrm{Observer receding: } V>0\\
+				\textrm{Observer approaching: } V \lt 0 
+				\end{array}  
+				\right.
+			</men>
+			By using fundamentl wave equation relating wavelength and frequency, <m> f = c/\lambda</m>, we can write these for wavelengths in the two frames.
+			<men xml:id="long-doppler-effect-wavelength">
+				\lambda = \lambda_0\: \sqrt{\dfrac{1+V/c}{1- V/c}}\ \ \ 
+				\left\{ 
+				\begin{array}{l}
+				\textrm{Observer receding: } V \gt 0\\
+				\textrm{Observer approaching: } V \lt 0 
+				\end{array}  
+				\right.
+			</men>			
+
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-Doppler-Shift-in-Astronomy"><title>Doppler Shift in Astronomy</title>
+
+		<statement>
+			<p>
+				The spectrum of light from radio galaxy 8C1435+635 is shifted in wavelength considerably from what you see when emitting atoms are at rest or moving slowly. For instance, the Lyman <m>\alpha</m> line from hydrogen atom spectrum is observed at 639.2 nm instead of 121.6 nm observed in lab. Since the wavelength is increased, which is same as frequency decreased, the galaxy must be receding with respect to us. Suppose, the galaxy is receding directly away from us, what will be the speed of recession?
+			</p>
+		</statement>
+		<hint><p>
+			Use Doppler shift formula.
+		</p></hint>
+		<answer><p>
+			<m>4.25.</m>
+		</p></answer>
+		<solution>
+			<p>
+				We use the Doppler formula in the wavelength form.
+				<me>
+					\frac{c}{\lambda} = \frac{c}{\lambda_0}\: \sqrt{\dfrac{1- V/c}{1+V/c}}
+				</me>
+				Rearranging we find
+				<me>
+					\frac{1+V/c}{1-V/c} = (\lambda/\lambda_0)^2 = (639.2/121.6)^2 = 27.6.
+				</me>
+				Therefore,
+				<me>
+					V = \left(\frac{27.6-1}{27.6+1} \right)\: c = 0.93\:c.
+				</me>
+				This says that the radial velocity of the galaxy is 93\% of the speed of light. In Astronomy, one defines a related quiantity call the redshift or <m>z</m> of recession by
+				<me>
+					z = \frac{\Delta \lambda}{\lambda_0}.
+				</me>
+				This galxy has <m>z</m> of 
+				<me>
+					z = \frac{638.2\:\textrm{nm} - 121.6\:\textrm{nm}}{121.6\:\textrm{nm}} = 4.25.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<subsection><title>Doppler Effect and Aberration</title>
+		<p>
+			In the last subsection we studied the relativistic Doppler effect for the relative motion along the line joining the source and the observer. Now, we suppose the source of the wave is in the <m>xy</m>-plane and is at rest in the <m>\text{S}^{\:\prime}</m> frame at an angle <m>\theta'</m> in the first quadrant from the origin and counterclockwise from the <m>x'</m>-axis.
+		</p>
+		<figure xml:id="fig-doppler-fig-2">
+			<caption>
+				To calculate the aberration we place the source of sinusoidal wave at rest in the <m>\text{S}^{\:\prime}</m> frame in the direction <m>\theta^{\prime}</m>.
+			</caption>
+			<image source="./images/modern-physics/doppler-fig-2.png" width="90%"/>
+		</figure>
+		<p>
+			The propagation vector for the ray from the source will be  
+			<men>
+				\vec k = \dfrac{2\pi}{\lambda_0}\: \left(-\cos\theta'\:\hat i  -\sin\theta'\:\hat j \right),
+			</men>
+			where <m>k</m> is the wavenumber, and <m>\hat i</m> and <m>\hat j</m> are unit vectors towards the positive <m>x'</m> and <m>y'</m> axes respectively. The wavenumber <m>k</m> is related to the wavelength <m>\lambda</m> by <m>k = 2\pi/\lambda</m>. Using a general form for oscillating part of plane waves, <m>\sim \cos(\vec k\cdot \vec r - 2\pi f t)</m>, the wave function for this wave will be
+			<men xml:id="eq-wave-arbitrary-s-prime">
+				\psi^{\prime} (x',t') = \psi_0^{\prime}\cos\left[ \dfrac{2\pi}{\lambda_0} (-x'\cos\theta' - y'\sin\theta') - 2\pi f_0 t'\right]. 
+			</men>
+			Now, we express <m>x'</m>, <m>y'</m>, and <m>t'</m> in Eq. <xref ref="eq-wave-s-prime"/> in terms of <m>x</m>, <m>y</m>, and <m>t</m> using the Lorentz transformations, and collect terms in the argument of cosine as a term multiplying <m>x</m>, a term multiplying <m>y</m>, and another term multiplying <m>t</m>.  We also use <m>\lambda_0 f_0 = c</m> to simplify.
+			<md>
+				<mrow number="no"> \psi^{\prime} (x,t) =  \psi_0^{\prime} \amp  \cos\left[ 2\pi\gamma \dfrac{1}{\lambda_0}\left( -\cos\theta' + \dfrac{V }{c} \right)\: x \right.</mrow>
+				<mrow xml:id="eq-wave-arbitrary-s-prime-1">\amp  - \left. 2\pi\dfrac{\sin\theta'}{\lambda_0}\: y -  2\pi\gamma f_0\left(1 - \dfrac{V}{c}\: \cos\theta'\right)\: t\right].</mrow> 
+			</md>
+			The detector/observer at the origin of the S frame will find this wave coming from the direction <m>\theta</m> and assign the following wave function.
+			<men xml:id="eq-wave-arbitrary-s-prime-2">
+				\psi (x,t) = \psi_0 \cos\left[ \dfrac{2\pi}{\lambda} (x\cos\theta + y\sin\theta) - 2\pi f t\right]. 
+			</men>
+			Now, we equate the coefficients of <m>x</m>, <m>y</m>, and <m>t</m> in the argument of cosine in the last two equations to obtain
+			<mdn>
+				<mrow xml:id="eq-wave-arbitrary-s-prime-3a"> \amp  \dfrac{\cos\theta}{\lambda} = \gamma \dfrac{1}{\lambda_0}\left( -\cos\theta' + \dfrac{V }{c} \right) </mrow>  
+				<mrow xml:id="eq-wave-arbitrary-s-prime-3b"> \amp  \dfrac{\sin\theta}{\lambda} = \dfrac{\sin\theta'}{\lambda_0}</mrow>
+				<mrow xml:id="eq-wave-arbitrary-s-prime-3c"> \amp  f = \gamma\left(1 - \dfrac{V}{c}\: \cos\theta'\right)\: f_0 </mrow>  
+			</mdn>
+			We can eliminate <m>\cos\theta'</m> in Eq. <xref ref="eq-wave-arbitrary-s-prime-3c"/> in favor of <m>\cos\theta</m>. This gives the Doppler shift from a source whose direction is <m>\theta</m> in the frame of the observer while the source is moving at velocity in the direction of <m>\theta = 0</m>, i.e., the positive <m>x</m>-axis.
+			<men xml:id="eq-wave-arbitrary-s-prime-4">
+				f =  \left[\frac{1-(V/c)\cos\theta}{\sqrt{1-V^2/c^2}}\right]\ f_0. 
+			</men>
+			There is a Doppler effect even when the source is moving in the perpendicular direction. To see that we set <m>\theta = 90^{\circ}</m> in this equation gives the Doppler shift of an object that is towards the <m>y</m>-axis and moving towards the positive <m>x</m>-axis. This effect is called the <term> Transverse Doppler Effect</term>.
+			<men xml:id="eq-wave-arbitrary-s-prime-4a">
+				f =  f_0\:\sqrt{1-V^2/c^2}. 
+			</men>
+			The transverse Doppler effect is much weaker than the longitudinal Doppler effect obtained in Eq. <xref ref ="long-doppler-effect"/>.  Let us expand Eqs. <xref ref="long-doppler-effect"/> and <xref ref="eq-wave-arbitrary-s-prime-4a"/> in powers of <m>V/c</m>.  Let us designate the longitudinal Doppler by <m>f_{\parallel}</m> and the transverse Doppler by <m>f_{\perp}</m>.
+			<mdn>
+				<mrow number="no">  f_{\parallel} \amp = f_0 \left[\left(1 - \dfrac{V}{c} \right) \dfrac{1}{\sqrt{1-V^2/c^2}}  \right]</mrow> 
+				<mrow xml:id="eq-wave-arbitrary-s-prime-5a"> \amp = f_0\: \left(1 - V/c + V^2/2c^2 +\cdots\right) </mrow> 
+				<mrow xml:id="eq-wave-arbitrary-s-prime-5b"> f_{\perp} \amp   = f_0 \sqrt{1-V^2/c^2} = f_0\: \left(1 - V^2/2c^2 +\cdots\right) </mrow>  
+			</mdn>
+			Dividing Eqs. <xref ref="eq-wave-arbitrary-s-prime-3a"/> and <xref ref="eq-wave-arbitrary-s-prime-3a"/> gives us the following relation between the direction of the source in the two systems.
+			<men>
+				\tan\theta = \frac{\sin\theta'\: \sqrt{1-V^2/c^2}}{\cos\theta' - V/c}.
+			</men>
+			This relation says light emitted at a direction <m>\theta'</m> in one frame will coming from the direction <m>\theta</m> in the other frame. The phenomenon is called the <term>aberration of light</term>. For instance, if the source is on the <m>y'</m> axis, the angle <m>\theta' = 90^{\circ}</m>.  But the angle <m>\theta</m> in the S frame will be
+			 <men>
+			 	\theta = - \tan^{-1}\left( \frac{\sqrt{1-V^2/c^2}}{V/c}\right)\approx - \tan^{-1}\left(\dfrac{c}{V} \right).
+			</men> 
+
+		</p>
+	</subsection>
+
+	<subsection><title>Ives-Stilwell Experiment</title>
+		<p>
+			In 1938 Ives and Stilwell conducted an experiment to verify the longitudinal Doppler effect. Due to technical reasons they could not perform the transverse Doppler effect which would require examining the light emitted perpendicular to the emitting particle. In Ives-Stilwell experiment canal rays (which are rays of positive ions) from hydrogen gas discharge were accelerated to high speeds as shown in <xref  ref="fig-ives-stilwell-apparatus"/>. The ions then recombined with electrons to produce light.
+		</p> 
+		<figure xml:id="fig-ives-stilwell-apparatus">
+			<caption>
+				A schematic picture of the apparatus used by Ives and Stilwell to investigate Doppler shift.
+			</caption>
+			<image source="./images/modern-physics/ives-stilwell-apparatus.png" width="90%"/>
+		</figure>
+		<p>
+			Ives and Stilwell detected the hydrogen emission in the blue, the <m>\text{H}\beta</m> line, for both both forward and backward emitted light with the arrangement of a mirror in the tube.  By varying the accelerating voltage they could control the speed of the emitted ion. They found the emitted light contained light of original wavelength 4849.32 \AA and two symmetrically displaced wavelengths, one at a higher wavelength and the other at a lower wavelength. The magnitude of displacement of the wavelength depended upon the voltage of the accelerating voltage.  From theory of Doppler effect, if we ignore <m>v^2/c^2</m> compared to <m>v/c</m>, then from Eq. <xref ref="eq-wave-arbitrary-s-prime-4"/> we expect
+			<me>
+				f \approx   f_0 \left[1-(V/c)\cos\theta \right],
+			</me>
+			which can be written for the wavekength as
+			<me>
+				\frac{c}{\lambda} \approx   \frac{c}{\lambda_0} \left[1-(V/c)\cos\theta \right],
+			</me>
+			which can be written as
+			<men xml:id="eq-ives-stilwell-1">
+				\left|\frac{\Delta\lambda}{\lambda_0\cos\theta}\right| = V/c. 
+			</men>
+			Now, the speed of the light emitting particle can be related to the accelerating voltage <m>\mathcal{E}</m>.
+			<men xml:id="eq-ives-stilwell-2">
+				e\mathcal{E} = \frac{1}{2} M V^2, 
+			</men>
+			where <m>e</m> is the electronic charge and <m>M</m> is the mass of the emitting particle, which was either <m>\text{H}_2</m> or <m>\text{H}_3</m> in their experiment.
+			From Eqs. <xref ref="eq-ives-stilwell-1"/> and <xref ref="eq-ives-stilwell-2"/> we see that
+			<men xml:id="eq-ives-stilwell-3">
+				\left|\frac{\Delta\lambda}{\cos\theta}\right| = \textrm{const}\times \sqrt{\mathcal{E}}. 
+			</men>
+			In the Ives-Stilwell experiment, they examined rays at <m>7^{\circ}</m>. A plot of <m>\Delta\lambda</m> adjusted by dividing by <m>\cos 7^{\circ}</m> versus <m>\mathcal{E}</m> from the paper of Ives and Stilwell is shown in <xref ref = "fig-ives-stilwell-data"/>.  The data shows a good fit to the prediction up to the linear approximation.
+
+		</p>
+
+
+		<figure xml:id="fig-ives-stilwell-data">
+			<caption>
+				Doppler shift is plotted versus square-root of voltage, which is proportional to the speed of the light-emitting particle. The dashed line is the theoretical prediction in the linear approximation.
+			</caption>
+			<image source="./images/modern-physics/ives-stilwell-data.png" width="70%"/>
+		</figure>
+
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Recession-Speed-of-a-Star-from-Wavelength-of-its-Lyman-Line"><title>Recession Speed of a Star from Wavelength of its Lyman Line</title>
+
+		<statement>
+			<p>
+				A prominent emission of light from excited hydrogen atom occurs in the Lyman series line <m>\text{L}_\alpha</m>.  Light corresponding to the <m>\text{L}_\alpha</m> line has a wavelength of 121.6 nm when the emitting atom has a low speed and considered to be at rest.  The <m>\text{L}_\alpha</m> line in the light from some star is observed to have wavelength of 486.4 nm.  Suppose the star is directly moving away from Earth, what is the speed of the star with respect to Earth?
+			</p>
+		</statement>
+		<hint><p>
+			Use Doppler effect.
+		</p></hint>
+		<answer><p>
+			<m>2.647 \times 10^8\text{ m/s}</m>.
+
+		</p></answer>
+		<solution>
+			<p>
+				The shift in wavelength is due to Doppler efect.
+				<me>
+					\lambda = \lambda_0\: \sqrt{\dfrac{1+V/c}{1- V/c}},
+				</me>
+				Let's call <m>x=V/c</m> and <m>z=\lambda/\lambda_0</m> and solve for <m>x</m> in 
+				<me>
+					 \dfrac{1+x}{1- x} = z^2.
+				</me>
+				This gives
+				<me>
+					x = \frac{z^2 - 1}{z^2 + 1}.
+				</me>
+				Here 
+				<me>
+					z = \frac{486.4\text{ nm}}{121.6\text{ nm}} = 4.
+				</me>
+				Hence,
+				<me>
+					x = \frac{4^2 - 1}{4^2 + 1} = \frac{15}{17}.
+				</me>
+				Therefore, speed of star with respect to Earth is
+				<me>
+					V = \frac{15}{17}\, c = 2.647 \times 10^8\text{ m/s}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Doppler-Effect-from-a-Speeding-Car"><title>Approximate Doppler Effect from a Speeding Car</title>
+
+		<statement>
+			<p>
+				(a) Find an approximate Doppler effect formula when <m>v \ll c</m> keeping terms upto linear in <m>v/c</m>.  (b) A police parked at the side of the road sends out electromagnetic wave of frequency 5 GHz.  What will be the frequency of the reflected wave from a car that is approaching the police car with a speed of 100 mph? Assume the wave is almost parallel to the velocity of the car.
+			</p>
+		</statement>
+		<hint><p>Use Maclaurin series in terms of <m>V/c</m>.</p></hint>
+		<answer><p>
+			(a) <m>f_0\left( 1 +  V/c\right)</m>, (b)  <m>5.0096 \text{ GHz}</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a) 
+				Let us denote <m>V/c</m> by <m>x</m> and expand <m>f</m> in terms of powers of <m>x</m>.
+				<md>
+					<mrow> \left( \frac{f}{f_0} \right)^2 \amp =  \frac{1 + x}{ 1- x} </mrow>
+					<mrow> \amp = (1 + x)( 1 + x + x^2 +  \cdots)  </mrow> 
+					<mrow> \amp = ( 1 + x + x^2 +   \cdots) + ( x + x^2 + \cdots) </mrow> 
+					<mrow> \amp = 1 + 2x + 2x^2 +   \cdots  </mrow> 
+				</md> 
+				Let <m>\epsilon =2x + 2x^2 +   \cdots </m> and take square root we get
+				<md>
+					<mrow>f \amp = f_0 (1 + \epsilon )^{1/2}</mrow>
+					<mrow> \amp = f_0 \left( 1 + \frac{1}{2}\epsilon -frac{1}{8}\epsilon^2 +  \cdots  \right) </mrow>
+				</md>
+				Now, when we put <m>\epsilon=2x + 2x^2 +  \cdots </m> here, we will keep term up to <m>x^2</m> from each term and if <m>x</m>-terms does not vanish then we will drop the <m>x^2</m> term.
+				<md>
+					<mrow> f \amp = f_0 \left( 1 + \frac{1}{2} \times 2 x  - \frac{1}{8} \times 4 x^2  \right).</mrow>
+					<mrow>  \amp = f_0 \left( 1 +  V/c  - \frac{1}{2} V^2/c^2  \right) \approx f_0\left( 1 +  V/c\right).</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b) Using the approximate formula derived in (a), we need the following with <m>V \gt 0</m>.
+				<md>
+					<mrow> f \amp =f_0 \left( 1 +  V/c\right)</mrow>
+				</md>
+				Here
+				<me>
+					V/c = \frac{100\times (8/5) \times 3600\text{ m/s} }{ 3\times 10^8\text{ m/s}} = 0.00192.
+				</me>
+				Therefore,
+				<me>
+					f = 1.00192 \times 5\text{ GHz} = 5.0096 \text{ GHz}.
+				</me>
+			</p>
+		</solution>		
+	</exercise>
+
+	<exercise xml:id="ex-Shift-in-Frequency-of-Light-Due-to-Motion-of-the-Detector"><title>Shift in Frequency of Light Due to Motion of the Detector</title>
+
+		<statement>
+			<p>
+				If you move towards red light you would detect light shifted upward in frequency. With sufficient speed red light might turn into a green light for you. (a) With what speed would you be moving towards a red traffic light of wavelength <m>675\text{ nm}</m> so that the light appears green of wavelength <m>510 \text{ nm}</m> to you?  (b) With your speed what will you observe for the yellow light of wavelength <m>570\text{ nm}</m>?
+			</p>
+		</statement>
+		<hint><p>
+			Use Doppler shift equation.
+		</p></hint>
+		<answer><p>
+			(a) <m>V = 0.2732c = 8.196\times 10^{7}\text{ m/s}</m>, (b) <m>430.7\text{ nm}</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				The shift in wavelength is due to Doppler efect for moving towards the source will be
+				<me>
+					\lambda = \lambda_0\: \sqrt{\dfrac{1-V/c}{1 + V/c}},
+				</me>
+				Solving for <m>V/c</m> we get
+				<me>
+					\frac{V}{c} = \frac{1 - (\lambda/\lambda_0)^2 }{ 1 + (\lambda/\lambda_0)^2 }.
+				</me>
+				In the given data <m>\lambda/\lambda_0 = 510/675</m>.
+				<me>
+					V/c = \frac{675^2 - 510^2 }{ 675^2 + 510^2 } = 0.2732.
+				</me>
+				Therefore, <m>V = 0.2732c = 8.196\times 10^{7}\text{ m/s}</m>.
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p> 
+				(b) We go back to the following and use the <m>V/c</m> found in (a)
+				<me>
+					\lambda = \lambda_0\: \sqrt{\dfrac{1-V/c}{1 + V/c}}.
+				</me>
+				Since <m>f</m> will go up and <m>\lambda</m> will go down, we have <m>V/c\gt 0</m>.
+				<me>
+					\lambda = 570\text{ nm} \times \sqrt{\dfrac{1-0.2732}{1 + 0.2732}} =  570\text{ nm}\times 0.7555 = 430.7\text{ nm}.
+				</me>				
+			</p>
+		</solution>
+
+	</exercise>
+
+
+	<exercise xml:id="ex-Redshift-of-a-Galaxy-from-Doppler-Effect"><title>Redshift of a Galaxy from Doppler Effect</title>
+
+		<statement>
+			<p>
+				A galaxy is receding at speed of <m>0.9c</m> with respect to Earth. (a) What will be the wavelength observed on Earth corresponding to a radio wave emitted at wavelength <m>21 \text{ cm}</m> from the galaxy? (b) The redshift <m>z</m> of a galaxy is defined by <m>z = \Delta\lambda/\lambda_0</m>, where <m>\Delta\lambda</m> is the change in the wavelength and <m>\lambda_0</m> is the emitted wavelength.  Find the redshift of the galaxy.
+			</p>
+		</statement>
+		<hint><p>
+			Use Doppler shift equation.
+		</p></hint>
+		<answer><p>
+			(a) <m>91.5\text{ cm}</m>, (b) <m>3.359</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a) The shift in wavelength is due to Doppler efect for moving towards the source will be given by the following equation with <m>V\lt 0</m>.
+				<md>
+					<mrow> \lambda \amp = \lambda_0\: \sqrt{\dfrac{1-V/c}{1 + V/c}}</mrow>
+					<mrow> \amp = 21 \text{ cm} \sqrt{\dfrac{1+0.9}{1 - 0.9}} = 21 \text{ cm} \times 4.359 = 91.5\text{ cm}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(a) The redshift <m>z</m> of the galaxy will be
+				<md>
+					<mrow> z \amp = \Delta\lambda/\lambda_0</mrow>
+					<mrow> \amp = \frac{ 21 \text{ cm} \times 4.359 - 21 \text{ cm} }{21 \text{ cm}} = 3.359. </mrow>
+				</md>
+			</p>
+		</solution>		
+	</exercise>
+
+
+	<exercise xml:id="ex-Speed-of-a-Quasar-from-its-Redshift"><title>Speed of a Quasar from its Redshift</title>
+
+		<statement>
+			<p>
+				The redshift <m>z</m> of a galaxy is defined by <m>z = \Delta\lambda/\lambda_0</m>, where <m>\Delta\lambda</m> is the change in the wavelength and <m>\lambda_0</m> is the emitted wavelength.  A quasar is found to have a redshift of 20. Supposing the quasar is moving away from Earth, what is the speed of the quasar with respect to Earth?  
+			</p>
+		</statement>
+		<hint><p>
+			Note: <m>z + 1 = \sqrt{\dfrac{1-V/c}{1 + V/c}}</m>.
+		</p></hint>
+		<answer><p>
+			<m>0.997\, c</m>.
+		</p></answer>
+		<solution>
+			<p>
+				From Doppler formula in terms of wavelength we get
+				<me>
+					z = \frac{ A\lambda_0 -\lambda_0}{\lambda_0} =  A - 1,
+				</me>
+				where
+				<me>
+					A = \sqrt{\dfrac{1-V/c}{1 + V/c}}.
+				</me>
+				Solving for <m>V/c</m> we get
+				<me>
+					V/c = \frac{ (z-1)^2 - 1 }{ (z-1)^2 + 1} = \frac{ 19^2-1 }{19^2 + 1} = \frac{360}{361}.
+				</me>
+				Therefore, we get
+				<me>
+					V = 0.997\, c. 
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+
+
+
+</section>

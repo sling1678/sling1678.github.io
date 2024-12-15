@@ -1,0 +1,263 @@
+<section xml:id="section-intensity-of-light"><title> Intensity of Light </title>
+	<introduction>
+        <p>
+			Traveling waves transport energy from one place to another without actually moving particles. Therefore, you can think of an electromagnetic wave in terms of the flow of the electromagnetic energy.
+		</p>
+		<p>
+			Consider an electromagnetic wave in vacuum.  The energy per unit volume contained in the oscilalting electric and magnetic fields, or energy density, to be denoted by small letter <m>u</m>,  is sum of energy in the electric field and energy in the magnetic field. From your studies of electromagnetism, you would be able to write it as
+			<men>
+				u = u_E + u_B = \frac{1}{2} \epsilon_0 \vec E \cdot  \vec E +\frac{1}{2 \mu_0} \vec B \cdot  \vec B. 
+			</men>
+			For a plane electromagnetic wave, we plug in the expressions for electric and magnetic waves given above and obtain the following for energy per unit volume.
+			<mdn>
+				<mrow number="no"> u \amp = \frac{1}{2} \epsilon_0 E_0^2 \cos^2 (k x - \omega t + \phi) + \frac{1}{2 \mu_0} \left( \frac{E_0^2}{c^2} \right) \cos^2 (k x - \omega t + \phi),</mrow>
+				<mrow  xml:id="eq-EM-wave-intensity-1"> \amp 
+					=  \epsilon_0 E_0^2 \cos^2 (k x - \omega t + \phi). </mrow>
+
+			</mdn>
+			<!-- <mrow xml:id="eq-EM-wave-intensity-1a"> \amp = \frac{1}{2}\epsilon_0 E_0^2 + \frac{1}{2} \epsilon_0 E_0^2 \cos (2k x - 2\omega t + 2\phi),</mrow>
+			where in the last step, I made use of trigonometric formula <m>2\cos^2\theta = 1 + \cos\; 2\theta</m>. This demostrates that energy density is also a sinusoidal wave, just like electric and magnetic fields, but it has twice the wavenumber and twice the frequency. The energy density fluctuates about the first term, viz., <m>\frac{1}{2}\epsilon_0 E_0^2</m>. Therefore, time average of energy density, to be denoted by <m>\langle u \rangle</m>, will be 
+			<men>
+				\langle u \rangle = \frac{1}{2}\epsilon_0 E_0^2.
+			</men> -->
+			Now, we look at how much energy is the wave transporting in unit time. We will use the setup given in <xref ref="fig-energy-transport-per-unit-time"/>.  
+			Since the <m>u</m> wave is moving at the same speed <m>c</m> as the EM wave, the energy contained in the volume <m>Ac\Delta t</m> will pass through area <m>A</m> in time 
+			<m>\Delta t</m>. That is,
+			<men xml:id="eq-EM-wave-energy-passing-through-area-in-time">
+				\text{Energy passing area } A \text{ in time } \Delta t = u \times \text{volume} = u A c\Delta t.
+			</men>
+     	
+        </p>
+
+        <figure xml:id="fig-energy-transport-per-unit-time">
+        	<caption>
+        		 Energy <m>uAc\Delta t</m> contained in volume <m>Ac\Delta t</m> will pass through an area <m>A</m> in a plane perpendicular to the flow in time <m>\Delta t</m>.
+        	</caption>
+        	<image source="./images/wave-description-of-light/energy-transport-per-unit-time.png" width="90%"/>
+        </figure>
+        <p>
+        	Dividing Eq. <xref ref="eq-EM-wave-energy-passing-through-area-in-time"/> by <m>A\Delta t</m>, will give us power flow per unit corss-sectional area.  This is called <term>power flux</term> and denoted by <m>S</m>. Using various equations above, we can express it as
+        	<mdn>
+        		<mrow> S \amp = \frac{ u A c\Delta t }{A  \Delta t} =   u  c, </mrow>
+        		<mrow> \amp  = c \epsilon_0 E_0^2 \cos^2 (k x - \omega t + \phi). </mrow>
+        		<mrow xml:id="eq-power-flux-in-form-twice-the-angle"> \amp  = \frac{1}{2}c \epsilon_0 E_0^2 \left[ 1 +  \cos (2k x - 2\omega t + 2\phi)\right]. </mrow>
+        	</mdn>
+        </p>
+        <p>
+        	 Since the frequency of the visible light is very high (of the order of <m>10^{14}</m> cycles per second) the power flux will be an extremely rapidly varying quantity.  Our eyes as well as most light energy measuring instruments cannot respond this fast and only an average energy over many cycles is observed.  The quantity obtained by time-averaging the power flux is called the <term> intensity</term> or <term> irradiance</term> and it is normally denoted by <m>I</m>.
+        	 <men xml:id="eq-intensity-of-light-relating-to-power-flux">
+        	 	\text{Intensity,}\ \ I = \langle S \rangle_{\text{time-average}}
+        	 </men>
+        	 If we know how much power is flowing on average over, <m>P_\text{av}</m> some area of cross-section <M>A</M>, then this definition gives us intensity immediately.
+        	 <men>
+        	 	I = \frac{P_\text{av}}{A}.
+        	 </men>
+        	 Eq. <xref ref="eq-intensity-of-light-relating-to-power-flux"/> can also be used to relate intensity to electric field and magnetic field. Note that 
+        	 time-averaging of the expression for the power flux given in Eq. <xref ref="eq-power-flux-in-form-twice-the-angle"/>  is easily performed by noting that it has a constant part and a part that fluctuates between <m>-1</m> and <m>1</m>. The avergage of the fluctuating part over any integral multiple of cycles will be zero. Therefore, time average over long times will give a zero for the fluctuating part.
+        	 <me>
+        	 	\langle \cos (at) \rangle_{\text{time-average}} = \lim_{T\rightarrow \infty} \frac{1}{T}\int_0^T \cos (at)\; dt = 0.
+        	 </me>
+        	 Hence, it is easy to see that intensity of light of light wave will be given by
+        	 <men xml:id="eqn-intensity-of-light-in-vacuum">
+        	 	I = \frac{1}{2} c \epsilon_0 E_0^2.
+        	 </men>
+        	 Since amplituds of electric and magnetic waves are related by speed of light, we can write intensity also as
+        	 <men>
+        	 	I = \frac{1}{2} c \epsilon_0 E_0^2 = \frac{c}{2\mu_0} B_0^2.
+        	 </men>
+        	 If the wave is not in vacuum but in some other linear medium such as glass or air we will need to replace the speed <m>c</m> by the speed <m>v</m> in the medium, the permittivity <m>\epsilon_0</m> by  <m>\epsilon</m>, and the permeability  <m>\mu_0</m> by  <m>\mu</m>.
+			<men>
+				I = \frac{1}{2} v \epsilon  E_0^2 = \frac{v}{2\mu } B_0^2.\ \ \   \text{(Linear medium)}
+			</men>
+		</p>
+
+    </introduction>
+
+
+    <subsection><title>Power Flow Through Slanted Surface</title>
+
+		<p>  
+			In <xref ref="fig-energy-flow-through-slanted-area"/>, notice that some of the rays passign through <m>A_1</m> will not pass through area <m>A_2</m> even though the two surfaces are equal in value. This is due to mismatch of the perpendicular to the area direction and the direction of the wave. It is easy to incorporate this if we use vector notation for the area.
+		</p>
+
+        <figure xml:id="fig-energy-flow-through-slanted-area">
+        	<caption>
+        		Energy flow through two equal surfaces. Surface <m>A_1</m> is perpendicular to the wave and <m> A_2</m>) is slanted. Less power flows through <m>A_2</m> than <m>A_1</m>.
+        	</caption>
+        	<image source="./images/wave-description-of-light/energy-flow-through-slanted-area.png" width="70%"/>
+        </figure>		
+
+		<p> 
+			Introduce a power flux vector  <m>\vec S</m>, also called the <term>Poynting vector</term>, by the following defining equation.
+			<men>
+				\vec S = \frac{1}{\mu_0} \vec E \times \vec B.
+			</men>
+			The vector product of <m>\vec E</m>  and  <m>\vec B</m> makes it evident that the Poynting vector  <m>\vec S</m>  points in the direction of the propagation of the electromagnetic wave. Now, that takes care of the direction of the energy wave. Now, to take care of the orientation of the area, we introduce an <term>area vector</term> of a plane by its magnitude equal to the area and its direction perpendicular to the surface. Let <m>A</m> be the magnitude of the area and <m>\hat n</m> a unit vector in the perpendicular direction. Then, define area vector as
+			<men>
+				\vec A = A\;\hat n.
+			</men>
+			Actually, there are two normal directions to a flat area. Here, we choose it arbitrarily. Then energy crossing an area vector <m>\vec A</m> per unit time will be
+			<men>
+				\vec S \cdot \vec A.
+			</men>
+			If surface is not flat but some other surface, we can divide the surface into smaller patches and define area vectors in each <q>flat</q> patch. Then on each patch, <m>\Delta \vec A</m>, we will get
+			<men>
+				\vec S \cdot \Delta \vec A,
+			</men>
+			and we must sum over all patches to obtain the total.
+			<men>
+				\text{total power} = \sum_i \left( \vec S \cdot \Delta \vec A \right)_i.
+			</men>
+			To cover an arbitrary surface with flat patches, we will need infintely many patches, each of infinitesimal area. This gives the following general formula for power crossing any arbitrary surface.
+			<men>
+				\text{Power crossing any surface}\ =  \iint\vec S \cdot d\vec A.
+			</men>
+
+        </p>
+
+
+    </subsection>
+
+    <subsection><title>Intensity of an Isotropic Source</title>
+
+    	<p>
+    		Consider a point source that emits light in a spherical symmetric way. The conservation of energy can be used to show that intensity must drop off from the source as inverse square of distance.
+    	</p>
+    	<p>
+    		<xref ref="fig-intensity-of-point-source-at-two-radii"/> shows a source of light, such as sun, at the center and two spherical surfaces in space at radii <m>r_1</m> and <m>r_2</m>. Let the intensities at <m>r_1</m> and <m>r_2</m> be denoted by <m>I_1</m> and <m>I_2</m> respectively. 
+    	</p>
+    	<sidebyside widths="55% 45%">
+	    	<p>
+	    		Since energy passing the spherical surface with radius <m>r_1</m> in an interval <m>\Delta t</m> must equal the energy passing through the surface with radius <m>r_2</m> in the same interval of time.  Multiplying intensity with area and time gives energy. Therefore
+	    		<me>
+	    			4\pi r_1^2 I_1 \Delta t = 4\pi r_2^2 I_2 \Delta t.
+	    		</me>
+	    		Therefore,
+	    		<me>
+	    			\frac{I_2}{I_1} = \frac{ r_1^2}{r_2^2 }.
+	    		</me>
+	    		This shows that the intensity of an isotropic source drops off as inverse square.
+	    	</p>
+	        <figure xml:id="fig-intensity-of-point-source-at-two-radii">
+	        	<caption>
+	        		 Source is at the center and light wave is spreading out isotropically in all directions. Two circles correspond to two spherical surfaces in space.
+	        	</caption>
+	        	<image source="./images/wave-description-of-light/intensity-of-point-source-at-two-radii.png" width="70%"/>
+	        </figure>
+	    </sidebyside>
+	</subsection>    	
+
+
+
+	<exercise xml:id="exercise-Intensity-Electric-and-Magnetic-Field-Amplitudes-in-a-Laser-Light"><title> Intensity, Electric and Magnetic Field Amplitudes in a Laser Light</title>
+
+		<statement>
+			<p>
+				A He-Ne laser delivers <m>3\text{ mW}</m> of power over a  <m>0.5 \text{cm}^2</m> area. 
+			</p>
+			<p> 
+				(a) What is the intensity of light coming out of the laser?
+			</p>
+			<p>
+				(b) What are the amplitudes of electric and magnetic fields?
+			</p>
+		</statement>
+		<hint><p>(a) Use definition of intensity. (b) Use intensity and electric field amplitude relation first.</p></hint>
+		<answer><p>
+			(a) <m>60\text{ W/m}^2</m>, (b) <m>213\ \textrm{N/C}</m>, <m>7.09 \times 10^{-7}\ \textrm{T}</m>
+
+		</p></answer>
+		<solution><title>(a)</title>
+			<p> (a) 
+				Intensity of light will be just power per unit area, since power as given is already time-averaged.
+				<md>
+					<mrow> 
+						I \amp = \frac{P_\text{av}}{A} = \frac{3\text{mW}}{0.5 \text{cm}^2}
+						</mrow>
+					<mrow>
+						\amp = \frac{3\times 10^{-3}\text{W}}{0.5\times 10^{-4} \text{m}^2} = 60\text{ W/m}^2.</mrow>
+				</md>
+			</p>
+		</solution>
+
+		<solution><title>(b)</title>
+			<p> (b) 
+				From <m>I = \frac{1}{2}c\epsilon_0E_0^2</m>, we get
+				<md>
+					<mrow> |E_0| \amp = \sqrt{ \frac{2 I}{c\epsilon_0} } </mrow>
+					<mrow>  \amp = \sqrt{ \frac{2 \times 60}{3\times 10^8 \times 8.85\times 10^{-12} } }  = 213\ \textrm{N/C} </mrow>
+				</md>
+				The magnetic and electric fields in an electromagnetic wave are related  as follows.
+				<md>
+					<mrow> B_0 \amp = \frac{E_0}{c} </mrow>
+					<mrow>   \amp =  \frac{213\ \textrm{N/C}}{3\times 10^8\ \textrm{m/s}} = 7.09 \times 10^{-7}\ \textrm{T}. </mrow>
+				</md>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="exercise-Intensity-of-a-Spherical-Light-Wave-from-a-Source"><title>Intensity of a Spherical Light Wave from a Source</title>
+
+		<statement>
+			<p>
+				A spherical wave from a point source at the origin has an electric field that drops with the radial distance $r$ from the origin as follows.
+				<me>
+					\vec E = \hat u_{\phi} \frac{V_0}{r}\ \cos(k r - 2\pi f t),
+				</me>
+				where <m>V_0 = 10\text{ V}</m>, <m>f = 2 \times 10^{14}\text{ Hz}</m>, and <m>k</m> is the wave number. Assume speed of light to be equal to the speed of light in vacuum.
+			</p>
+			<p>
+				(a) Find the wavelength of the electromagnetic wave.
+			</p>
+			<p>
+				(b) What is the intensity of light at <m>r = 1\text{ cm}</m>?
+			</p>
+			<p>
+				(c) What is the intensity of light at <m>r = 2\text{ cm}</m>?
+			</p>
+		</statement>
+		<hint><p>(a) Use <m>\lambda f = c</m>. (b) Use <m>I= \frac{1}{2}c\epsilon_0 E_0^2</m>. (c) Recall for spherically symmetric waves <m>I\sim 1/r^2</m>. </p></hint>
+		<answer><p>
+			(a) <m>1.5\times 10^{-6}\text{ m}</m>,
+			(b) <m> 1330\text{ W/m}^2</m>,
+			(c) <m>333\text{ W/m}^2</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a) Using <m>\lambda f = c</m>, we get
+				<me>
+					\lambda = \frac{c}{f} = \frac{3\times 10^{8}\text{ m/s} }{2 \times 10^{14}\text{ Hz}} = 1.5\times 10^{-6}\text{ m}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b) Using <m>I= \frac{1}{2}c\epsilon_0 E_0^2</m> with <m>E_0 = V_0/r</m>.
+				<md>
+					<mrow> I \amp = \frac{1}{2}\times 3\times 10^8 \times 8.85\times 10^{-12} \times \left( \frac{10}{0.01}\right)^2,</mrow>
+					<mrow> \amp = 1330\text{ W/m}^2.</mrow>
+				</md>
+			</p>
+		</solution>
+
+		<solution><title>(c)</title>
+			<p>
+				(c) For spherical waves, <m>I</m> will drop off as square of distance. Therefore, we can get intensity at <m>2\text{ cm}</m> by simply using the value in (b).
+				<me>
+					I = \left( \frac{ 1\text{ cm}}{ 2\text{ cm}}\right)^2\  I_\text{at 1 cm}. = \frac{1330 333\text{ W/m}^2}{4} = 333\text{ W/m}^2.
+				</me>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+ 
+
+
+
+
+</section>

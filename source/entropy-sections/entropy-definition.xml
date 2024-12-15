@@ -1,0 +1,329 @@
+<section xml:id="Entropy"><title> Entropy </title>
+
+	<introduction>
+		<p>
+
+			We will examine two reversible processes for a gas in the <m>(p,V)</m> plane as shown in <xref ref="fig-dq-over-T-indep-of-path"/>. This will help us discover a state property which will be called entropy. In <xref ref="fig-dq-over-T-indep-of-path"/>, two paths ACB and ADB are two ways to transform the gas from state A to state B. 
+		</p>
+			<figure xml:id="fig-dq-over-T-indep-of-path">
+				<caption>
+					Two reversible processes ACB and ADB that take the system from state A to state B. Since the ACBDA is a cyclic reversible process, <m>\sum \Delta Q/ T</m> on paths ACB and ADB must equal so that the sum on paths ACB and BDA (the reverse of path ADB) equals zero. 
+				</caption>
+				<image source="./images/entropy/dq-over-T-indep-of-path.png" width="60%"/>
+			</figure>
+
+		<p>
+			In <xref ref="fig-dq-over-T-indep-of-path"/>, the path through the labeled points ACBDA is a cyclic reversible process, which is just ACB and revrsed-ADB.
+			Clausius showed that we can think of the entire cyclic process ACBDA  as made up of infinitely many reversible steps. We compute <m>\Delta Q/T</m> in each step. Summing them gives the following important result.
+			<me>
+				\left( \sum \dfrac{\Delta Q}{T} \right)_{\text{cycle ACBDA}} = 0.
+			</me>
+			From the way this sum is computed, it is clear that the sum is sum over two paths, ACB and BDA paths.
+			<men xml:id="eq-dq-t-in-cycle">
+				\left( \sum \dfrac{\Delta Q}{T} \right)_{\text{cycle path}} +  \left( \sum \dfrac{\Delta Q}{T} \right)_{\text{path BDA}}  = 0.
+			</men>
+			Because in a reversible step, each step is reversible. When we reverse a heating step, it turns into a cooling step, meaning if <m>\Delta Q/T</m> was positive in a step, when you reverse that step, it will be <m> -\Delta Q/T</m>.
+			<me>
+				\dfrac{\Delta Q}{T} \Longleftrightarrow - \dfrac{\Delta Q}{T}\ \ \ \text{(reversed step)}
+			</me>
+			Therefore,
+			<me>
+				\left( \dfrac{\Delta Q}{T} \right)_{\text{path BDA}} = - \left(\dfrac{\Delta Q}{T} \right)_{\text{path ADB}}.
+			</me>
+			Using this in Eq. <xref ref="eq-dq-t-in-cycle"/> and rearranging we get
+			<men xml:id="eq-dq-t-in-two-paths">
+				\left( \sum \dfrac{\Delta Q}{T} \right)_{\text{path ACB}} =   \left( \dfrac{\Delta Q}{T} \right)_{\text{path ADB}}.
+			</men>
+			This says that 	<m>\sum(\Delta Q/T)</m> is independent of the way you go from A to B as long as you perform the transformation through reversible processes.	 Therefore, we can write this quantity as a difference of the values of some property at states A and B. We call this property <term>entropy</term> and denote it by letter <m> S</m>. 	
+			<men>
+				S_\text{B} - S_\text{A} = \left( \sum \dfrac{\Delta Q}{T} \right)_{\text{any path AB}}.
+			</men>
+			We can use this to obtain entropy of state B if we know the entropy of state A as illustrated in <xref ref="fig-entropy-of-a-state-definition"/>
+		</p>
+		<p>
+			Now, suppose we choose a reference state, say the state of the system at absolute zero temperature, labeled O, and assign a value of zero for <m> S</m> this state.
+			<men>
+				S_\text{O} \equiv 0.\ \ \ \text{(Third law of thermodynamics)}
+			</men>
+			This is called <term>the third law of thermodynamics</term>. Using reversible processes between this reference state and any arbitrary state, say state B, we can find the value fo entropy for that state by the following, not just a difference in entropy.
+			<men>
+				S_\text{B}   = \left( \sum \dfrac{\Delta Q}{T} \right)_{\text{any path OB}}.
+			</men>			
+		</p>
+		<figure xml:id="fig-entropy-of-a-state-definition">
+			<caption>
+				The entropy of an arbitrary state B can be obtained in two ways. By imagining any reversible process from the standard state, shown as point O, at zero degree kelvin to the state B, shown as process (1) in the figure, we find <m>\sum(\Delta Q/T)</m> on this path. Another way is to use a state A whose entropy is known - we imagine any reversible process from A to B and find <m>\sum(\Delta Q/T)</m> on paths going from A to B. To that sum we add the entropy of state A to obtain the entropy of state B.
+			</caption>
+			<image source="./images/entropy/entropy-of-a-state-definition.png" width="70%"/>
+		</figure>
+	</introduction>
+
+
+
+	<subsection><title> (Calculus) Entropy Change for an Ideal Gas in an Isochoric Process </title>
+
+		<sidebyside widths="50% 10% 35% 5%">
+			<p>
+				Consider a reversible isochoric process that takes <m>n</m> moles of a monatomic ideal gas, such as Helium, from <m>(P_1, T_1, V)</m> to <m>(P_2, T_2, V)</m>. Heat at constant <m>V</m> is given by the specific heat at constant volume. We use molar specific heat <m>C_V</m> for out calculations here.  
+			</p>
+			<p></p>
+			<image source="./images/entropy/entropy-isochoric-process.png" width="70%"/>
+			<p></p>
+		</sidebyside>
+		
+		<p>
+			The <m>C_V</m> for a monatomic ideal gas is
+			<me>
+				C_V = \dfrac{3}{2}\,R.
+			</me>
+			Therefore, heat flow in the process will be
+			<me>
+				d Q = n\, C_V\, d T = \dfrac{3}{2}n\,R\,  d T.
+			</me>
+			Since, we have a reversible process, we can readily write the entropy change
+			<me>
+				d S = \dfrac{d Q}{T} = \dfrac{3}{2}n\,R\, \dfrac{1}{T}\,d T.
+			</me> 
+			Therefore, integrating this from <m>T_1</m> to <m>T_2</m> gives
+			<me>
+				\Delta S = \dfrac{3}{2}n\,R\, \ln\dfrac{T_2}{T_1},
+			</me> 
+			which can be rewitten by usiung the ideal gas law in terms of pressures as
+			<me>
+				\Delta S = \dfrac{3}{2}n\,R\, \ln\dfrac{P_2}{P_1}.
+			</me> 			
+
+		</p>
+	</subsection>
+
+	<subsection><title> (Calculus) Entropy Change for an Ideal Gas in an Isobaric Process </title>
+
+		<sidebyside widths="50% 10% 40% 0%">
+			<p>
+				Consider a reversible isobaric process that takes <m>n</m> moles of a monatomic ideal gas, such as Helium, from <m>(p, T_1, V_1)</m> to <m>(p, T_2, V_2)</m>. Heat at constant <m>P</m> is given by the specific heat at constant pressure. We use molar specific heat <m>C_P</m> for out calculations here.  
+			</p>
+			<p></p>
+			<image source="./images/entropy/entropy-isobaric-process.png" width="70%"/>
+			<p></p>
+		</sidebyside>
+
+		<p>
+			The <m>C_P</m> for a monatomic ideal gas is
+			<me>
+				C_P = C_V + R = \dfrac{5}{2}\,R.
+			</me>
+			Therefore, heat flow in the process will be
+			<me>
+				d Q = n\, C_P\, d T = \dfrac{5}{2}n\,R\, dT.
+			</me>
+			Since, we have a reversible process, we can readily write the entropy change
+			<me>
+				d S = \dfrac{d Q}{T} = \dfrac{5}{2}n\,R\,\dfrac{1}{T}\, dT.
+			</me> 
+			Therefore, integrating this from <m>T_1</m> to <m>T_2</m> gives
+			<me>
+				\Delta S = \dfrac{5}{2}n\,R\,  \ln\dfrac{T_2}{T_1},
+			</me> 
+			which can be rewitten by usiung the ideal gas law in terms of pressures as
+			<me>
+				\Delta S = \dfrac{3}{2}n\,R\, \ln\dfrac{V_2}{V_1}.
+			</me> 
+		</p>
+	</subsection>
+
+	<subsection><title> (Calculus) Entropy Change for an Ideal Gas in an Isothermal Process </title>
+		<p>
+			 
+		</p>
+		<sidebyside widths="50% 10% 40% 0%">
+			<p>
+				Consider a reversible isothermal process that takes <m>n</m> moles of a monatomic ideal gas, such as Helium, from <m>(P_1, T, V_1)</m> to <m>(P_2, T, V_2)</m>.  			For an isothermal process of an ideal gas, 
+				<md>
+					<mrow> \amp \Delta U = 0, </mrow>
+					<mrow> \amp W = n R T \ln \dfrac{V_2}{V_1}.</mrow>
+				</md>
+			</p>
+			<p></p>
+			<image source="./images/entropy/entropy-isothermal-process.png" width="70%"/>
+			<p></p>
+		</sidebyside>
+
+		<p>
+			The heat flow is not by specific heat anymore. Instead, we appeal to First Law of Thermodynamics for infinitesimal step, viz., 
+			<me>
+				\delta Q =  dU + \delta W,
+			</me>
+			Recall that <m>dU=0</m> for isothermal process for ideal fgas, and  work in an infinitesimal step is
+			<me>
+				\delta W = p dV.
+			</me>
+			Therefore,
+			<me>
+				\delta Q = 0 + pdV.
+			</me>
+			Therefore entropy change 
+			<me>
+				dS = \dfrac{\delta Q }{T} = \dfrac{p }{T}\, dV = n R \dfrac{dV}{V}.
+			</me>
+			Integrating from <m>V_1</m> to <m>V_2</m> we get
+			<me>
+				\Delta S = n R \ln \dfrac{V_2}{V_1}.
+			</me>
+ 
+		</p>
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Entropy-Change-in-Melting-Ice"><title> Entropy Change in Melting Ice </title>
+		<statement>
+			<p>
+				A <m>50\text{-kg}</m> ice block is at <m>0^\circ\text{C}</m>. It is heated slowly melting of all ice. What is the change in entropy of the ice block?
+			</p>
+			<p>
+				Data: Heat of transformation of ice to liquid water = <m>334,000\text{ J/kg}</m>.
+			</p>
+		</statement>
+		<hint> <p> Use <m>Q=ml</m> for the heat and then use the definition of entropy change.  </p> </hint>
+		<answer> <p>  <m> 61,200\text{ J/K}.</m> </p> </answer>
+		<solution> 
+			<p>
+				The heat flowing in the ice will be
+				<me>
+					\Delta Q = m l = 50\times 334,000 = 16,700,000\text{ J}.
+				</me>
+				This occurs at temperature, in Kelvin scale,
+				<me>
+					T = 0 + 273 = 273\text{ K}.
+				</me>
+				Therefore
+				<me>
+					\Delta S = \dfrac{\Delta Q}{T} = 61,200\text{ J/K}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Entropy-Change-in-Heating-Water-Reversibly"><title> (Calculus) Entropy Change in Heating Water Reversibly </title>
+		<statement>
+			<p>
+				Two kg water is heated reversibly from <m> 20^{\circ}\text{C} </m> to <m> 30^{\circ}\text{C}</m> at constant pressure of <m> 1\text{ atm}</m>.  What is the change in entropy? Use <m>c_P = 1000\text{ cal/kg.K}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Use an infinitesimal process to set up <m> dQ/T</m> and integrate. </p> </hint>
+		<answer> <p> <m> 67\dfrac{\text{cal}}{\text{K}}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We can heat the given water infinitesimally slowly and reversibly. Heat in any infinitesimal step in which temperature is changing at a constant pressure is given by the product of mass, specific heat and temperature change.
+				<me>
+					\Delta Q = m\, c_P\, \Delta T,
+				</me>
+				where <m> T</m> is in kelvin scale. 
+				For water in the temperature range in the problem, we can assume <m> c_P </m> to be constant. Therefore,  the entropy change <m>\Delta S</m> in one such step will be
+				<me>
+					\Delta S = \dfrac{\Delta Q}{T} = m\, c_P\, \dfrac{\Delta T}{T}.
+				</me>
+				Summing up these requires Calculus. Therefore, we will write this in <m>dT</m> rather than <m> \Delta T</m>.
+				<me>
+					d S   = m\, c_P\, \dfrac{d T}{T}.
+				</me>							
+				Now, it is obvious that summing over the path from initial state to fiunal state will be simply an integral over temperature.
+				<me>
+					S_f - S_i   = \int_{T_i}^{T_f}m\, c_P\, \dfrac{d T}{T} = m\, c_P\, \ln\left( \dfrac{T_f}{T_i}\right).
+				</me>
+				Plugging in the numbers given, but making sure to use the temperatures in the kelvin scale we get
+				<me>
+					\Delta S = 2\ \text{kg} \times \dfrac{1000\ \text{cal}}{\text{kg.K}}\times \ln\left( \dfrac{303\text{K}}{293\text{K}}\right) = 67\dfrac{\text{cal}}{\text{K}}.
+				</me>				
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Entropy-Change-in-an-Isothermal-Process-of-an-Ideal-Gas"><title> (Calculus) Entropy Change in an Isothermal Process of an Ideal Gas </title>
+		<statement>
+			<p>
+				Five moles of a monatomic ideal gas is expanded isothermally and reversibly at <m> 100^{\circ}\text{C}</m> from a volume of <m>10\text{ L}</m> to three times the volume.  What is the change in its entropy?
+			</p>
+
+		</statement>
+		<hint> <p>  Use entropy change in an isothermal process discussed above. </p> </hint>
+		<answer> <p> <m>46\ \text{J/K}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We can again use the definition of entropy change we used in example above.  But, this time <m> dQ</m> is not give by specific heat definitions because temperature is constant.  To find an appropriate formula for <m>dQ</m> we will appeal to first law of thermodynamics.
+				<me>dQ = dU + pdV.
+				</me>
+				Since we have a monatomic ideal gas as the system, the change in internal energy is given by
+				<me>
+					dU = \frac{3}{2}nRdT.
+				</me>
+				Since, we have an isothermal process, <m>dT=0</m>.  This means that <m>dU=0</m>.  Therefore, we use <m>dQ = pdV</m> in the definition of entropy.  This gives
+				<me>
+					\Delta S = \int_{V_1}^{V_2} \frac{pdV}{T}\ \ \text{(Note: integration is over volume now.)}
+				</me>
+				Using the equation of state for the ideal gas we can replace <m>p/T</m> by <m>nR/V</m>, which can be integrated to give
+				<me>
+					\Delta S =nR\ln\left(\frac{V_2}{V_1} \right)
+				</me> 
+				Now, we put the numerical values to obtain the change in entropy.
+				<me>
+					\Delta S = 5\text{ mol}\times \frac{8.3\ \text{J}}{\text{mol.K}}\times \ln(3) = 46\ \text{J/K}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Entropy-Change-in-Heating-a-Block-of-Copper"><title> (Calculus) Entropy Change in Heating a Block of Copper </title>
+		<statement>
+			<p>
+				Evaluate the entropy change when a 5-kg block of copper is heated from <m>20^{\circ}\text{C}</m> to <m>70^{\circ}\text{C}</m> at the atmospheric pressure. Describe in words the thermodynamic process you have used for the calculation of the entropy change.
+			</p>
+			<p>
+				Data: <m>c_\text{Cu} = 386\ \frac{\text{J}}{\text{kg.K}}</m>.			
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m>dQ = m c dT</m> and then integrate.  </p> </hint>
+		<answer> <p> <m>304\ \frac{\text{J}}{\text{K}}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Imagine the block at temperature <m>T</m> placed in a heat bath whose temperature is only infinitesimally higher, say <m>T+dT</m>, so that the temperature of the block rises reversibly. The block will absorb heat given by
+				<me>
+					dQ = m\, c\, dT.
+				</me>
+				In this process the change in the entropy of the block will be
+				<me>
+					dS = \frac{m\, c\, dT}{T},
+				</me>
+				where <m>m</m> is the mass of the block, <m>c</m> the specific heat of copper, and <m>T</m> the temperature in the Absolute scale. To obtain the entropy change over a finite process given in the question we integrate from <m>T_1</m> to <m>T_2</m>.
+				<md>
+					<mrow> \Delta S \amp = \int_{T_1}^{T_2}\frac{m\, c\, dT}{T}</mrow>
+					<mrow> \amp = m\, c\, \ln \left( \frac{T_2}{T_1} \right). </mrow>
+				</md>
+				Now, we will put in the numbers.
+				<md>
+					<mrow> \amp m  = 5\ \text{kg},\ \ c = 386 \frac{\text{J}}{\text{kg.K}},</mrow>
+					<mrow> \amp T_1 = 293\ \text{K}, \ \ T_2 = 343\ \text{K}.</mrow>
+				</md>
+				These give the following for the change in the entropy.
+				<md>
+					<mrow> \Delta S \amp =  5\ \text{kg}\times 386\ \frac{\text{J}}{\text{kg.K}}, \times\ln \left( \frac{343\ \text{K}}{293\ \text{K}} \right)</mrow>
+					<mrow>  \amp = 304\ \frac{\text{J}}{\text{K}}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>	
+
+
+
+
+
+
+
+
+
+
+
+</section>

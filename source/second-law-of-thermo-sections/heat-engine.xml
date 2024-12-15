@@ -1,0 +1,140 @@
+<section xml:id="The-Heat-Engine"><title> The Heat Engine </title>
+	<introduction>
+		<p>
+			A device that does a conversion of heat to some other form of energy in a continuous process is called a <term>heat engine</term>.  A heat engine must work in a cyclic process for the engine to convert heat to work continuously.  <xref ref="fig-heat-engine"/>  shows <em> the energy cycle of a heat engine</em> schematically. As shown in this figure, an engine interacts with three external bodies.
+			<ol>
+				<li> The engine takes in energy <m> Q_H</m> from a hot bath, such as a furnace. </li>
+				<li> The engine produces work <m>W</m> through some mechanical apparatus, such as turbine which normally converts the mechanical energy to the electrical energy.</li>
+				<li> Finally, the engine gives up energy <m> Q_C</m> to a cold bath, such as cold water, in order to return to the initial state and complete the cycle. That is, the cycle could not make use of all the energy in <m> Q_H</m> in order for it to run in a cycle. </li>
+			</ol>
+		</p>
+		<figure xml:id="fig-heat-engine">
+			<caption>
+				Schematics of energy flow in and out of a heat engine. The heat engine works in a cyclic process, returning to the same energy state at the end of each cycle, hence, <m> \Delta U = 0</m>. During one cycle, the engine's energy goes up and down as energy flowsin and out of the engine. In a typical heat engine, the energy first goes up by <m> Q_H</m>, then decreases by <m> W</m>, and then decreases further by <m> Q_C</m> before returning to the starting state.
+			</caption>
+			<image source="./images/second-law-of-thermo/heat-engine.png" width="45%"/>
+		</figure>
+		<p>
+			At the end of each cycle, the engine returns to the initial state,  therefore, the net change in the internal energy of the engine must be zero. In each cycle, engine takes up energy <m>Q_H</m> and gives up energy <m>W+Q_C</m>.  Therefore, work by the engine would be the difference of heat in and heat out.
+			<men xml:id="eq-energy-cycle-engine-1">
+				W = Q_H - Q_C,  
+			</men>
+			where all quantities are positive. The <term> efficiency</term> of a heat engine <m>\eta</m> is defined as the ratio of the amount of net work <m>W</m> the engine produces in one cycle to the amount of heat <m>Q_H</m> transferred to the engine from the heat source.  
+			<men xml:id="eq-heat-engine-efficiency-def">
+				 \eta = \frac{W}{Q_H}.
+			</men>
+			Putting the expression of <m>W</m> from Eq. <xref ref="eq-energy-cycle-engine-1"/>, the efficiency of a heat engine can he rewritten as follows.
+			<men xml:id="eq-heat-engine-efficiency-2">
+				\eta = \frac{Q_H - Q_C}{Q_H} = 1- \frac{ Q_C}{Q_H}. 
+			</men>
+			Clearly if all of heat taken <m>(Q_H)</m> is converted into work, i.e. if <m>Q_C = 0</m>, the efficiency will be 1, corresponding to a 100%-efficient engine.  Experience has shown that this is not possible.  We will study next an ideal engine called the Carnot engine that places an absolute limit on the highest possible efficiency of a heat engine.
+
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-Efficiency-of-a-Steam-Engine"><title> Efficiency of a Steam Engine </title>
+		<statement>
+			<p>
+				In a steam engine, a fixed amount of water is the working substance which goes through a full cycle, from liquid water at a certain temperature and pressure to steam, and then back to the liquid water at the original temperature and pressure.
+			</p>
+			<p>
+				The heat is put in the working substance, which is water here, in the step when liquid water is converted to steam.  In some other parts of the cycle the steam expands and the energy comes out of steam when the steam pushes on the blades of a turbine, and in some other parts, the water has to be pumped and compressed, which requires work also.  
+			</p>
+			<p>
+				In a certain steam engine, net work done by the working substance of the engine was 2000 J per cycle. If the efficiency of the steam engine is 40%, how much heat must be rejected in the cooling part of the cycle?
+			</p>
+
+		</statement>
+		<hint> <p> Use efficiency formula. </p> </hint>
+		<answer> <p> <m> 3000\text{ J}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The net work <m>W</m> by the engine  and the efficiency <m>\eta</m> of the engine are given here and we need to find <m>Q_C</m>.  From the efficiency <m>\eta</m> and work <m>W</m>, we can find <m>Q_H</m>, and then using the energy balance, we will find <m>Q_C</m>.
+				<me>
+				\eta = \frac{W}{Q_H}\ \ \Longrightarrow\ \ Q_H = \frac{W}{\eta} = \frac{2000\ \text{J}}{0.4} = 5000\ \text{J}.
+				</me>
+				Now, from the energy balance over one cycle, we know that in an engine, <m>W = Q_H-Q_C</m>. Therefore,
+				<me>
+				Q_C = Q_H-W = 5000\ \text{J}-  2000\ \text{J} = 3000\ \text{J}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Work-Produced-and-Efficiecy-of-a-Thermal-Engine"><title> Work Produced and Efficiecy of a Thermal Engine </title>
+		<statement>
+			<p>
+				A heat engine operates between two temperatures such that the working substance of the engine absorbs 5000 J of heat from the high temperature bath and rejects 3000 J to the low temperature bath.  The rest of the energy is converted into the mechanical energy of the turbine.
+			</p>
+			<p>
+				(a) Find the amount of work produced by the engine.
+			</p>
+			<p>
+				(b) Find the efficiency of the engine.	
+			</p>
+
+		</statement>
+		<hint> <p>  (a) In a cycle W = Q. (b) Efficiency = Work/Heat in. </p> </hint>
+		<answer> <p> (a) 2000 J, (b) 40%.  </p> </answer>
+		<solution> 
+			<p>
+				(a) First we note that in a cycle <m> \Delta U = 0</m>. That means, in a cycle
+				<me>
+					W_\text{net,by} = Q_\text{net}.
+				</me>
+				Taking engine as the system. That will make <m>Q_\text{in} \gt 0</m> and <m>Q_\text{out} \lt 0</m>. That will give
+				<me>
+					Q_\text{net} = 5000\text{ J} - 3000\text{ J} = 2000\text{ J}.
+				</me>
+				Therefore,
+				<me>
+					W_\text{net,by} = 2000\text{ J}.
+				</me>
+			</p>
+			<p>
+				(b)
+				The efficiency is the work by the engine divided by the heat into the engine at higher temperature.
+				<me>
+					\eta = \frac{W_{by}}{Q_{in}} = \dfrac{2000\text{ J}}{5000\text{ J}} = 0.4.
+				</me> 
+				As a percentage, it is 40%.
+ 
+			</p>
+		</solution>
+	</exercise> 
+
+	<exercise xml:id="ex-Efficiency-of-a-Coal-Power-Plant"><title> Efficiency of a Coal Power Plant </title>
+		<statement>
+			<p>
+				A coal power plant consumes 100,000 kg of coal per hour and produces 500 MW of power.  If the heat of combustion of coal is 30 MJ/kg, what is the efficiency of the power plant?
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m>Q=mh</m> to get the energy produced by burning coal. </p> </hint>
+		<answer> <p>  60% </p> </answer>
+		<solution> 
+			<p>
+				From the mass <m> m</m> and the heat of combustion <m>h</m> of coal we get <m>Q_{in}</m>. In one hour the heat entering the system at high temperature of the cycle is
+				<md>
+					<mrow> Q_{in}[\textrm{1 hour}] \amp = m h</mrow>
+					<mrow>  \amp = 10^5\ \textrm{kg}\times 30\ \textrm{MJ/kg} = 3\times 10^6\ \textrm{MJ}.</mrow>
+				</md>
+				The power produced is the work produced per unit time.  The data is given in the unit $MW$, which is <m>MJ/s</m>. In one hour the work produced will be
+				<me>
+					W_{by} = 500\ \textrm{MW} \times 3600\ \textrm{s} = 1.8\times 10^6\ \textrm{MJ}.
+				</me>
+				Therefore, 
+				<md>
+					<mrow> \textrm{Efficiency} \amp = \frac{W_{by}}{Q_{in}} </mrow>
+					<mrow> \amp = \frac{1.8\times 10^6\ \textrm{MJ}}{3\times 10^6\ \textrm{MJ}} = 0.6.</mrow>
+				</md>
+				This is 60%.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+</section>
+ 

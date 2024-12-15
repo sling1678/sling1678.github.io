@@ -1,0 +1,54 @@
+<section xml:id="Deriving-Keplers-Third-Law"><title> Deriving Kepler's Third Law</title>
+	<introduction><title>(Calculus) Deriving Kepler's Third Law from the Orbit Equation</title>
+	<p>
+		We can deduce Kepler's third law by applying the orbit equation to two planets revolving around the Sun.  Rather than directly deal with the orbit equation, we first work out a relation between the orbital period <m>T</m> of a planet and the planet's distance <m>r</m> from the Sun.  We work in polar coordinates with the planet in <m>xy</m> plane and the angular momentum pointed along <m>z</m> axis. Let <m>l</m> be the <m>z</m> component of the angular momentum.  We have seen above that
+		<me>
+			l = \mu r^2 \frac{d\theta}{dt}
+		</me>
+		Here <m>\mu</m> is the reduced mass of planet's mass <m> m_1</m>  and Sun's mass <m>m_2</m>.  Rearrange the equation, and divide both sides by 2 we get
+		<me>
+			\dfrac{l}{2\mu} dt = \dfrac{1}{2} r (rd\theta)
+		</me>
+		The right side is a differential element of area enclosed in the ellipse centered about the focus.  Therefore, upon integration over a whole period we will obtain the area of the ellipse, <m>\pi a b</m>, on the right side.  On the left side, the integration will give a quantity proportional to the period <m>T</m>. Writing as 
+		<me>
+			\frac{l}{2\mu} T = \pi a b.
+		</me>
+		From Eq. <xref ref="eq-orbit-eqn-ellipse-parameters" />, we have <m>b = \sqrt{r_0 a}</m>.    
+		<men  xml:id="eq-elliptic-orbit-period">
+			T = \alpha\, a^{3/2},
+		</men>
+		where <m>A</m> is
+		<me>
+			 \alpha = \dfrac{2\pi \mu}{l} \sqrt{r_0}.
+		</me>
+		We can separate planet-independent part from the rest
+		<me>
+			\alpha = \beta\, \sqrt{\dfrac{\mu}{m_1}},
+		</me>
+		where <m>m_1</m> is the mass of the planet, and 
+		<me>
+			\beta = \dfrac{2\pi}{\sqrt{G_N m_2}},
+		</me>
+		where <m>m_2</m> is the mass of Sun in the planet-Sun system. 
+		We now write this for two planets A and B.
+		<md>
+			<mrow> \amp T_A/a_A^{3/2} = \beta\, \sqrt{\dfrac{\mu_A }{m_A}}  </mrow>
+			<mrow> \amp T_B/a_B^{3/2} = \beta\, \sqrt{\dfrac{\mu_B }{m_B}}  </mrow>
+		</md>
+		Taking the ratio of the two we get
+		<me>
+			\dfrac{T_A/a_A^{3/2}}{T_B/a_B^{3/2}} = \sqrt{\dfrac{\mu_A m_B}{\mu_B m_A}} .
+		</me>
+		This shows that Kepler's third law is not exact - it would have been exact if the right side of this equation were to equal 1. In the case of planet's mass much smaller than the mass of the sun, i.e., when <m> m_A \lt\lt m_2 </m> and <m> m_B \lt\lt m_2 </m>, the reduced masses can be approximates by the planet masses. The right side will then be 1.
+		<me>
+			\dfrac{T_A/a_A^{3/2}}{T_B/a_B^{3/2}} = 1. \ \ ( \text{max}(m_A, m_B)\lt\lt m_2).
+		</me>
+		On squaring we get the constancy of the ratio of orbital period squared to semi-major cubed.
+		<me>
+			T^2/a^3 = \text{independent of planet}.
+		</me>
+	</p>
+
+
+	</introduction>
+</section>

@@ -1,0 +1,270 @@
+<section xml:id="translational-motion-one-dimension"> <title> Kinematics of Motion on a Straight Path</title>
+	<introduction>
+		<p>
+
+			Motion in a straight line can be described by simply following its <m> x </m> or <m> y </m> or <m> z </m> coordinate by placing the corresponding Cartesian axis along the motion. Understanding of motion requires clear understanding of a number of terms. We will describe them in this section. We will cover more general cases after the next chapter on vectors.
+		</p>
+	</introduction>
+
+	<subsection xml:id="sec-1d-def-system"><title>System</title>
+		<p>
+
+			In every situation we encounter, we will find that many objects are moving and interacting with each other. However, we may be interested in following the motion of one or some collection of objects. These objects of interest are said to be our system - the objects outside the system are called external to the system while those in the system are called internal to the sysrtem.
+		</p>
+		<p>
+			Often we will simplify our system and represent our system by a mathematical point. This will help us state the position of even a large object by just the <m> (x, y, z) </m> coordinates of this mathematical point. Later we will identify this point with center of mass of the system and justify this simplification. 
+		</p>
+		 
+	</subsection>
+
+	<subsection xml:id="sec-1d-def-reference-frame"><title>Reference Frame</title>
+		<p>
+			All motion is relative! For instance, if you and your fiend are in a train which is moving with respect to the train station. Then, with respect to the station, your friend is moving and has non-zero velocity, but, with respect to you, your friend is at rest and has zero velocity.
+		</p>
+		<p>
+			The object or point in space with respect to which you describe the motion is said to be your <term> reference frame</term>. Often we place origin at the point of the reference and lay out appropriate Cartesian coordinates, <m>Oxyz</m>, to state motion more analytically. When we do that, we call the <m>Oxyz</m> the reference frame.
+		</p>
+ 	</subsection>
+
+	<subsection xml:id="sec-1d-def-position"><title>Position, Displacement, and Distance </title>
+		<p>
+			<term> Position </term> refers to the location of the system. If motion occurs only on the <m> x </m> axis, we use the <m> x </m> coordinate of the system to locate the system. More generally, we can use all the coordinates (<m>x, y, z </m>) for the point where the object is located. In motion in the <m>xy</m>-plane, we also use polar coordinates (<m> r, \theta </m>).
+		</p>
+		<p>
+			<term> Displacement </term> is the change in position during an interval. Displacements along coordinates are denoted by <m> \Delta x, \Delta y, </m> and <m> \Delta z</m>.
+		</p>
+		<p>
+			Suppose, an object moves from <m> x = x_i</m> at initial time <m> t_i </m> to <m> x = x_f</m> at final time <m> t_f </m>, then the displacement will be 
+			<men>
+					\Delta x = x_f - x_i.
+			</men>			
+		</p>
+
+		<p> 
+			<term> Distance </term> traveled refers to length of the actual path of motion. This is usually denoted by <m> d </m>.
+		</p>
+
+
+ 	</subsection>
+
+	<subsection xml:id="sec-1d-def-speed-and-velocity"><title> Speed and Velocity </title>
+
+		<p>
+			<term> Average speed </term> refers to distance (<m> d </m>) traveled divided by duration of time (<m> \Delta t </m>) taken. Usually denoted by letter <m> v_{s,av} </m>.
+			<men>
+					v_{s,av} = \dfrac{d}{\Delta t}.
+			</men>
+		</p>
+		<p>
+			<term> Average velocity </term> refers to  the displacement divided by duration. This is usually not a very useful concept. For a one-dimensional motion along <m> x </m> axis
+			<men>
+					v_{av,x} = \dfrac{\Delta x}{\Delta t} = \dfrac{x_f - x_i}{t_f - t_i}.
+			</men>
+			 When discussing only a one-dimensional motion, we may omit the subscript <m> x </m> from the symbols for the sake of brevity.
+		</p>
+		<p>  
+			<term> Instantaneous velocity </term> or simply the <term> velocity </term> is the rate at which an object is moving at a particular instant <em> and </em> the direction towardss which it is headed next. Velocity will be denoted by a vector notation with an arrow over the symbol as in <m> \vec{v}</m>. If we have motion only along the <m> x </m> axis, we will do computations of only the <m>x</m>-component of the velociy vector, which we will denote by <m>v_x</m>. Similarly, for other axes.
+		</p>
+
+		<p>
+			<alert>Definition Requiring Calculus. </alert> Calculation of velocity requires taking derivative with respect to position. In a one-dimensional motion on the <m> x </m> axis, the velocity is just the derivative of <m> x </m> coordinate which is treated as a function of time <m> t </m>.
+			<men xml:id="eq-1d-inst-vel-derivative-definition">
+				\text{Instantaneous velocity, } v_x = \dfrac{dx}{dt}.
+			</men>
+		</p>
+		<p>
+			<alert> Graphical Definition. </alert> Since a derivative of a function <m> x(t) </m> is also equal to the tangent of the function  <m> x(t) </m> plotted versus the independent variable <m> t </m>, we could obtain <m> v_x </m> from a plot of  <m> x  </m> versus <m> t</m>.
+			<men>
+				\text{Instanteous velocity, } v_x = 
+						\text{slope of tangent } \text{ of } x\text{ vs } t \text{ graph}. 
+
+			</men>
+		</p>
+
+
+		<example><title> Instantaneous Velocity from <m> x </m> vs <m> t </m> Graph</title>
+			
+			<p>
+				The <m> x </m> coordinate of a runner plotted against time <m> t </m> as in the figure below.
+			</p>
+			<p>
+				<image source="./images/one-dim-motion/x-velocity-from-slope.png" width="70%"/>
+			</p>
+
+			<p>
+				We draw a tangent to the <m> x </m> versus <m> t </m> graph at the instant, here <m> t = 20 </m> sec, we want the velocity. The slope of the tangent line gives the numerical value of the <m>x</m>-velocity. Here <m>x</m>-velocity is positive since the runner's <m>x</m> coordinate is increasing with time. That is, velocity has magnitude <m>4.0</m> m/s in the positivr <m>x</m> direction.
+			</p>
+			<p>
+				You can see that the slope of the tangent has different value at different times. Try looking at the slope at other times. This is situation in which <m>x</m> velocity is changing with time. 
+			</p>
+
+		</example>
+
+ 	</subsection>
+
+	<subsection xml:id="sec-1d-position-from-and-velocity"><title> Displacement from Velocity  </title>
+
+		<p> <alert> Requires Calculus. </alert> 
+			Since velocity is derivative of position, integration of velocity will give the change in position, i.e., the displacement. For one-dimensional motion on the <m> x </m> axis, we get <m> \Delta x </m> by integrating <m> v_x </m> treated as a function of time <m> t </m>.
+			<men xml:id="eq-1d-position-from-velocity">
+				x_f - x_i = \int_{t_i}^{tf}   v_x(t) dt.
+
+			</men>
+		</p>
+		<p><alert> Graphical Method. </alert> 
+			A definite integral can be computed from a plot of the function we are trying to integrate. If we are given a plot of <m> v_x </m> versus <m> t </m>, then  the integral in Eq. <xref ref="eq-1d-position-from-velocity" /> will be the area between <m> v_x = 0 </m> line and the <m> v_x</m> curve. 
+			<men>
+				x_f - x_i = \text{ area under the } v_x\text{ vs } t \text{ graph}. 
+			</men>
+		</p>
+		<p>
+			If the <m> v_x</m> curve is above the <m> v_x = 0 </m> line, the area will be positive, and if the <m> v_x</m> curve is below the <m> v_x = 0 </m> line, the area will be negative. We add all the areas between <m> t=t_i </m> and <m> t=t_f</m> to obtain the <m> \Delta x</m>.
+		</p>
+ 
+
+		<example><title> Displacement from <m> v_x </m> vs <m> t </m> Graph</title>
+			<statement>	
+				<p>
+					The instantaneous <m> v_x </m> of a car moving on a straight road is plotted against time <m> t </m> as shown in the figure below. Find the displacements of <m> x </m> coordinates of the car during the following intervals of time: (a) <m> t = 0 \rightarrow 20 \text{ s}</m>, (b) <m> t = 20 \text{ s}\rightarrow 40 \text{ s}</m>, and (c) <m> t = 40 \text{ s}\rightarrow 70 \text{ s}</m>. Note that area can be negative here corresponding to <m> x_f - x_i \lt 0 </m>.
+				</p>
+				<p>
+					<image source="./images/one-dim-motion/example-x-from-vs-t.png" width="70%"/>
+					<description> A graph of <m> v_x </m> versus <m> t </m>. 
+					</description> 
+
+				</p>
+			</statement>
+			<hint>
+				For each interval find the area between the curve and the abscissa (i.e., the time axis). 
+			</hint>
+			<answer>
+				(a) 200 m, (b) 0, (c) -600 m.
+			</answer>
+			<solution><title> (a) </title>
+				<p>
+					We wish to find the area under the curve between <m> t = 0 </m> and <m> t = 20 \text{ s}</m> - the shaded area in the figure below. This is just the area of the triangle with base = 20 sec, and height = 20 m. Therefore, 
+					<me> 
+						x_f - x_i = \dfrac{1}{2} \times 20 \text{ m/s} \times 20 \text{ s} = 200 \text{ m}.
+					</me>
+				</p>
+				<p>
+					<image source="./images/one-dim-motion/example-x-from-vs-t-a.png" width="70%"/>
+				</p>
+				
+			</solution>
+			<solution><title> (b) </title>
+				<p>
+					We wish to find the area under the curve between <m> t = 20 \text{ s} </m> and <m> t = 40 \text{ s}</m>. This is sum of areas of two triangles, a triangle above the time axis (where <m> v_x \gt 0 </m>) and another below the time axis (where <m> v_x \lt 0 </m>). The area of the triangle with <m> v_x \gt 0 </m> will give positive area and the other one will give negative area. They happen to cancel out. 
+					<me> 
+						x_f - x_i = \dfrac{1}{2} \times 20 \text{ m/s} \times 10 \text{ s}  + \dfrac{1}{2} \times (-20) \text{ m/s} \times 10 \text{ s} = 0\text{ m}.
+					</me>
+					This means that the car went 100 m towards positive <m> x </m> axis and then backtracked same amount, ending up at the same <m> x </m> at the end as at the beginning. 
+				</p>
+				<p>
+					<image source="./images/one-dim-motion/example-x-from-vs-t-b.png" width="70%"/>
+				</p>
+			</solution>
+
+
+			<solution><title> (c) </title>
+				<p>
+					We wish to find the area under the curve between <m> t = 40 \text{ s} </m> and <m> t = 70 \text{ s}</m>.  This is actually the area ``above" the curve since the area of interest is the area between the curve and the abscissa of the plot.
+					<me> 
+						x_f - x_i =    \times (-20) \text{ m/s} \times 30 \text{ s} = -600\text{ m}.
+					</me>
+				</p>
+				<p>
+					<image source="./images/one-dim-motion/example-x-from-vs-t-c.png" width="70%"/>
+				</p>
+
+			</solution>
+
+
+
+		</example>
+
+ 	</subsection>
+
+	<subsection xml:id="sec-1d-acceleration"><title> Acceleration </title>
+
+		<p> 
+			<term> Average acceleration </term> refers to  change in velocity divided by duration. For one-dimensional motion along the <m> x </m> axis, we deal with only the <m> x </m> component, which we denote by <m> a_{av,x} </m>.
+		</p>
+		<p>
+			<men xml:id="eqn-average-accln">
+					a_{av,x} = \dfrac{\Delta v_x}{\Delta t} = \dfrac{v_{x,f} - v_{x,i}}{t_f - t_i}.
+			</men>	
+		</p>
+		<p> 
+			<term> Instantaneous acceleration </term> or simply the <term> acceleration</term> is the rate at which velocity is changing at a prticular instant. 
+
+		</p>
+		<p>
+			In a one-dimensional motion along <m> x </m> axis, the acceleration will have an amount and either in the same direction as the velocity or in the oposite direction. If the acceleration is in the same direction as the velocity, we say that speed is picking up, i.e., the object is accelerating. On the other hand, if the acceleration is in the opposite direction to the velocity, the speed will be slowing down, and we say that the object is decelerating.
+		</p>
+
+		<p> <alert> Requires Calculus. </alert>
+			Just as the case with instantaneous velocity, which was the derivative of the position, instantaneous acceleration is also a derivative - it is a derivative of the velocity as a function of time. In one-dimensional case of motion along the <m> x </m> axis, we define <m> a_x </m> by a derivative of <m> v_x </m>.
+			<men>
+				\text{Instanteous acceleration, } a_x = \dfrac{dv_x}{dt}   
+			</men>
+		</p>
+
+		<p> <alert> Graphical Definition. </alert>
+			As is the case with any derivative, we can compute the derivative of <m> v_x </m> by plotting  <m> v_x </m>  versus <m> t </m>, drawing a tangent to the curve at the instant we want the value of <m> a_x </m>, and then, estimating the slope of the tangent line.  
+			<men>
+				\text{Instanteous acceleration, } a_x = 
+						\text{ slope of tangent } \text{ of } v_x\text{ vs } t \text{ graph}. 
+			</men>
+		</p>
+		<p>
+			However, if acceleration is constant, then average acceleration and acceleration are equal, and we can just divide the difference of final velocity and initial velocity by duration to calculate the acceleration as given in Eq. <xref ref="eqn-average-accln" />. Furthermore, in the case of constant acceleration for motion along <m> x </m> axis, the <m> v_x </m> versus <m> t</m> plot will be a straightline plot as shown in figure below.
+		</p>
+		<p>	
+			<figure xml:id="accln-positive-and-negative">
+				<caption> The slope of <m> v_x </m> versus <m> t </m> plot gives the acceleration <m> a_x </m>. Since the plot is linear, the slope is same for all instants plotted. In (a) <m> a_x = 1.0 </m> m/s/s and in (b) <m> a_x = - 0.75 </m> m/s/s. </caption>		
+				<image source="./images/one-dim-motion/accln-positive-and-negative.png" width="80%"/>
+			</figure>
+		</p>
+
+
+ 	</subsection>
+
+	<subsection xml:id="sec-1d-constant-acceleration"><title> Constant Acceleration Motion</title>
+ 
+		<p>
+			We will encounter many systems with constant forces acting on them. They cause motion where acceleration is constant. Let <m> a_x</m> be constant. Then, integration of the acceleration and velocity defining equaitons gives us the following three fundamental equations.
+		</p>
+		<p> <c> Fundamental </c>
+			<mdn>
+				<mrow> \amp a_x  = \dfrac{v_f - v_i }{\Delta t} </mrow>
+				<mrow> \amp v_{av,x}  = \dfrac{x_f - x_i}{\Delta t}</mrow>
+				<mrow> \amp  v_{av,x} = \dfrac{v_{i,x} + v_{f,x}}{2} </mrow>
+			</mdn>
+		</p>
+		From these equations, we can sderive the following two very useful equations.
+		<p> <c> Derived </c>
+			<mdn>
+				<mrow> \text{(no }v_f\text{ equation):    }\ \ \ \ \ \ \  \amp x_f - x_i = v_{i,x} \Delta t + \dfrac{1}{2} a (\Delta t)^2 </mrow>
+				<mrow> \text{ (no }t\text{ equation):     }\ \ \ \ \ \ \ \amp v_{f,x}^2 = v_{i,x}^2 + 2 a_x (x_f - x_i) </mrow>
+			</mdn>
+		</p>
+		<p><alert> Freely Falling Motion</alert> </p>
+		<p>
+            The motion of freely falling objects is a special application of constant acceleration problems with acceleration pointed down with magnitude <m>9.81 \text{ m/s}^2</m>. We use symbol <m> g </m> to denote this number.
+			<men> g = 9.81 \text{ m/s}^2.</men>
+        </p>
+		<p> 
+			We use <m> y </m> axis pointed up for the vertical motion. Then, acceleration is <m> a_y </m> with a definite value.
+			<me> a_y = -g, \text{ or, } a_y = -9.81 \text{m/s}^2.</me>
+		</p>
+        <p>
+            If you throw a ball vertically up, then, when the ball is on its way up, its velocity is pointed up but the acceleration is pointed down. The ball slows down and comes to rest for a moment when it is at the top of the trajectory.
+			<me> v_y \gt 0 \text{   and   } a_y \lt 0. </me>
+        </p>
+        <p>
+            After the ball has reached the maximum height and starts to come down, the velocity and acceleration point down, that is why speed picks up.
+			<me> v_y \lt 0 \text{   and   } a_y \lt 0. </me>                       
+        </p> 
+	</subsection>
+</section>

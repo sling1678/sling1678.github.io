@@ -1,0 +1,112 @@
+<section xml:id="Energy-in-Capacitors"><title> Energy in Capacitors  </title>
+	<introduction>
+		<p>
+			A capacitor is an energy-storing device. By storing charges separated by a distance, the capacitor essentially stores energy in the potential energy of the charges, or equivalently in the electric field of the space between plates. 
+		</p>
+		<p>
+			One way to easily figure out the energy stored in a capacitor is to use energy conservation in the discharging circuit. Connect a charged capacitor to a resistor <m>R</m> and let current flow in the simple RC-circuit and determine the net energy dissipated in the resistor.  When current <m>I(t)</m> passes through a resistor, the instantaneous power-dissipation rate, <m>P(t) = I(t)^2 R</m>, as we have seen before.  
+		</p>
+		<p>
+			We have already found the following expression for current at instant <m>t</m> in discharging circuit in which the initial charg eon the capacitor is <m>Q_0</m>.
+			<me>
+				I(t) = \dfrac{Q_0}{RC}\, \exp{\left( -t/RC\right ) }.
+			</me>
+			Therefore, instantaneous power dissipated in the resistor will be
+			<men xml:id="eq-instantaneous-power-in-discharging-capacitor">
+				P(t) = \dfrac{Q_0^2}{RC^2}\, \exp{\left( -2t/RC\right ) }.
+			</men>
+		</p>
+		<p>
+			This equation tells us the rate at which energy is being discharged by the capacitor. Therefore, energy discharged between <m>t</m> and <m>t+\Delta t</m> will be
+			<me>
+				\Delta U = P(t)\Delta t.
+			</me>
+			Therefore, integrating Eq. <xref ref="eq-instantaneous-power-in-discharging-capacitor"/> from <m>t=0</m> to <m>t=T</m> will give us the amount of energy discharged during this time.
+			<men>
+				U = \int_0^T P(t)\; dt.
+			</men>
+			You can show that this leads to
+			<men>
+				U = U_0\left( 1 - e^{-2T/RC}\right),
+			</men>
+			where <m>U_0</m> is the energy in the capacitor at time <m>t=0</m>, as we will interpret below.
+			<me>
+				U_0 = \frac{1}{2}Q_0 V_0.
+			</me>
+		</p>
+		<p>
+			By taking <m>T=\infty</m> we get all energy that was dissipated in the resistor.
+			<me>
+				E_\text{dissipated} = \dfrac{1}{2}\dfrac{Q_0^2}{C}.
+			</me>
+			But, by conservation of energy in the circuit, this energy must have been originally stored in the capacitor. Therefore, a capacitor of capacitance <m>C</m> charged to <m>Q_0</m> stores the following energy. Since this energy is potential energy, we use symbol <m>U</m> for it.
+			<me>
+				U_\text{in capacitor} = \dfrac{1}{2}\dfrac{Q_0^2}{C}.
+			</me>
+			By using the capacitor formula, <m>Q=CV</m>, we can write this in other forms.
+			<men>
+				U_\text{in capacitor} = \dfrac{1}{2}\dfrac{Q_0^2}{C} = \dfrac{1}{2}Q_0V_0 = \dfrac{1}{2}CV_0^2.
+			</men>
+
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-Energy-from-Discharging-a-Capacitor"><title>Energy from Discharging a Capacitor </title>
+
+		<statement>
+			<p>
+				(a) A capacitor of capacitance <m>2.0\text{ mF}</m> is charged by a <m>1.5\text{-V}</m> battery. How much total energy will be released when this capacitor is discharged?
+			</p>
+			<p>
+				(b) If discharging circuit has resistance <m>5.0\;\Omega</m>, how much time will it take to get <m>70\%</m> of the energy?
+			</p>
+		</statement>
+		<hint><p>
+			(a) Use total energy formula. (b) Use finite time formula.
+		</p></hint>
+		<answer><p>
+			(a) <m>2.25\text{ mJ}</m>, (b) <m>1.78\text{ ms}</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)
+				The energy released will be equal to the energy stored in the capacitor. Since <m>C</m> and <m>V_0</m> are given, we use the formula using these.
+				<me>
+					U_0 = \frac{1}{2}CV_0^2 = \frac{1}{2}\times 2.0\text{ mF}\times  (1.5\text{ V})^2 =  2.25\text{ mJ}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b)
+				Energy released in time <m>t=0</m> to <m>t=T</m> is
+				<me>
+					U = U_0 \left( 1 - e^{-2t/RC}\right).
+				</me>
+				We are given the following.
+				<me>
+					\frac{U}{U_0} = 0.3,\ \ RC = 5\times 2\times 10^{-3} = 0.01\text{ s}.
+				</me>
+				Therefore, we have the following equation to solve.
+				<me>
+					0.3 = 1 - e^{-200\,t}.
+				</me>
+				We first isolate the exponential on one side and take natural log to solve this.
+				<me>
+					t = -\frac{ \ln\;0.7 }{200} = 1.78\text{ ms}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+</section>

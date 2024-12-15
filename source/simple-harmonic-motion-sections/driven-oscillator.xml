@@ -1,0 +1,278 @@
+<section xml:id="Driven-Oscillator"><title> Driven Oscillator</title>
+	<introduction>
+		<p>
+			A damped oscillator  will eventually come to rest if no additional energy is supplied to it.  To supply energy to the oscillator you could apply any force that will do a net positive work on the oscillator.  Among many forces that will do the job, a harmonically time varying force is of particular interest in physics for many applications.  A harmonically varying force varies in time sinusoidally with a well-defined frequency, which we will denote by  <m> \omega_d</m>.
+			<men>
+				F_d = F_0\, \cos(\omega_d\, t).
+			</men>
+			where <m> F_0</m> is the amplitude of the force.  Note that  <m> \omega_d=0</m> corresponds to just a constant force, such as gravity; a constant force will do positive work in one half of the cycle and the same amount of negative work in the second half of the cycle, therefore a constant force will not change the energy of the oscillator over one complete cycle.  
+		</p>
+		<p>
+			Another thing to notice here is that you could think of <m> (\omega_d t ) </m> as phase of the driving force. Therefore, we now have the possibilities of oscillator and driving force acting in phase, out of phase, or in-between. These possibilities create interesting effects we will address here. One of those effects is the effect of resonance, which happens when the force is most effective.
+		</p>
+	</introduction>
+
+	<subsection> <title> Equation of Motion </title>
+		<p>
+			Consider a block of mass <m> m</m> attached to a spring of spring constant <m> k</m> subject to a linear drag force and a harmonic driving force. Suppose all the forces act along <m> x </m> axis with origin as the point where the block is in equilibrium. Then, the <m> x </m> component of Newton's second law gives us the following equation of motion.
+			<men xml:id="eq-driven-oscillator-equation-of-motion">
+				m a_x = -k x - b v_x + F_0\,\cos(\omega_d\, t).
+			</men>
+			This equation is even harder to solve for <m> x(t)</m> than was the damped system. We will assume that <m> m</m>, <m> k</m>, and <m> b</m> are such that we have <alert> underdamped oscillator</alert>, i.e., <m> (b/2m) \lt \sqrt{k/m} </m>. Our purpose usually is to drive this oscillating system and try to put in additional energy so that the motion can continue rather than damp out.
+		</p>
+	</subsection>
+
+	<subsection><title> Solution of the Equation of Motion </title>
+		<p>
+			The solution of Eq. <xref ref="eq-driven-oscillator-equation-of-motion" /> has two parts, a complimentary solution, to be denoted by <m> x_c</m> and a particular solution, to be denoted by <m> x_p</m>.
+			<men>
+				x = x_c + x_p.
+			</men>
+		</p>
+		<p>
+			The complimentary part is the solution of <m> x</m> in the absence of the driving force, which we have already studied in the underdamping oscillator.
+			<men>
+				x_c = A e^{-\gamma t /2}\, \cos(\omega^{\prime} t + \phi ),
+			</men> 
+			where 
+			<me>
+				\omega = \sqrt{\dfrac{k}{m}},\ \ \gamma = \dfrac{b}{m},\ \ \omega^{\prime} = \sqrt{ \omega^2 - \gamma^2/4 },
+			</me>
+			and <m>A</m> and <m>\phi</m> depend on the initial conditions, <m> x_0</m> and <m> v_0</m>. 
+		</p>
+		<p>
+			The particular solution <m> x_p</m> takes into account the driving force and oscillates at the frequency of the force but may or may not be in phase with the force. This solution looks more like a free oscillator solution. We can write this solution either as (1) amplitude/phase form or (2) two-amplitude form.
+			<mdn>
+				<mrow xml:id="eq-driven-oscillator-eom-solution-amp-ph">\amp \text{(1) }\ \ x_p = X_d\, \cos( \omega_d t + \phi_d), </mrow>
+				<mrow xml:id="eq-driven-oscillator-eom-solution-two-amps">\amp \text{(2) }\ \ x_p = A_{\text{in}}\, \cos( \omega_d t) + A_{\text{out}}\, \sin( \omega_d t),</mrow>
+			</mdn>
+			where the two-amplitude-form has an in-phase amplitude <m>A_{\text{in}} </m> and an out-of-phase amplitude <m>A_{\text{out}} </m>, which refer to the parts that swing in sync with the driving force and that are <m> \pi/2</m> radian, i.e., a quarter cycle off.  There is a lot of work involved in obtaining the formulas for the four constants. We will just quote the answer here.
+		</p>
+		<p>
+			We will write the expressions for <m>X_d</m>, <m>\phi_d </m>, <m>A_\text{in}</m>, and <m>A_\text{out} </m>,  using the following quantity, <m>D</m>, which stands for <q>denominator</q>.
+			<men>
+				D = \left( \omega^2 - \omega_d^2 \right)^2 + \left( \gamma \omega_d\right)^2.
+			</men>	
+			So, here are the expressions:
+			<mdn>
+				<mrow> \amp X_d = \dfrac{F_0/m}{ D},\ \ \ 
+					\tan \phi_d = -\dfrac{\gamma \omega_d}{\omega^2 - \omega_d^2},\ \ \ 
+				</mrow>
+				<mrow xml:id="eq-driven-oscillator-eom-solution-two-amps-wd-formulas"> \amp A_{\text{in}} = \dfrac{F_0}{m}\ \dfrac{\left(\omega^2 - \omega_d^2\right)}{ D},\ \ \ 
+					A_{\text{out}} = \dfrac{F_0}{m}\ \dfrac{\gamma \omega_d}{ D}.</mrow>
+			</mdn>
+		</p>
+
+	</subsection>
+	<subsection><title>Long Term Steady Behavior and Short Term Transients </title>
+
+		<p>
+			Since <m> x_c</m> is simply the damped oscillator and  <m>x_p</m> is perpetually oscillating,  <m> x_c </m> will become negligily small in time compared to <m> x_p</m>.  Therefore, for sufficiently large times, we can just drop <m>x_c</m> and assume <m> x \approx x_p</m>. We call this condition the <term> steady state condition </term> , and call <m> x_p </m>  the <term> steady state solution </term>.
+			<men>
+				x(t) = x_c + x_p\ \ \  \overset{\text{after sufficiently long time}}{\rightarrow\rightarrow\rightarrow\rightarrow\rightarrow\rightarrow\rightarrow\rightarrow\rightarrow\rightarrow} \ \ \ x_p.
+			</men>
+		</p>
+		<p>
+			How long do we have to wait till <m> x_c </m> part is no longer needed? The analysis of solution shows that when <m> t \gt\gt 1/\gamma </m>, you can drop <m> x_c </m>. The remaining part <m> x_p</m> given in Eq. <xref ref="eq-driven-oscillator-eom-solution-amp-ph"/>  or in Eq. <xref ref="eq-driven-oscillator-eom-solution-two-amps"/> is just an oscillator at the frequency of the driving force - the driver finally succeeds in forcing the block to oscillate at the driving frequency as illustrated in <xref ref="fig-driven-oscillator-xc-plus-xp"/>.
+			
+		</p>
+		<p>
+			Before <m> t </m> is long enough that justifies dropping <m> x_c</m>, the displacment of the oscillator, <m> x(t) </m>, has significant influence from the initial conditions <m> x_0 </m> and <m> v_0</m>. Usually, the motion of the block is not even a simple harmonic motion. These initial patterns are called <term> transients</term> since, they will die out with time and eventually, we would get the steady harmonic oscillation, as illustrated in <xref ref="fig-driven-oscillator-xc-plus-xp"/>.
+		</p>
+
+		<figure xml:id="fig-driven-oscillator-xc-plus-xp">
+			<caption>
+				A plot of position versus time for a driven underdamoed oscillator with parameters <m> m=1</m>, <m> k=1</m>, <m> b = 0.05</m>, <m> F_0 = 1</m>, and initial conditions, <m> x_0 = 1</m> and <m> v_0 = 1</m>. The initial transients give way to the steady behavior beyond <m> t  \gt\gt 1/\gamma</m>, where <m> \gamma = b/m</m>. The vertical line at <m> t = \dfrac{10}{\gamma}</m> shows that <m> t  \gt 10/\gamma</m> is sufficient for steady state condition.
+			</caption>
+			<image source="./images/simple-harmonic-motion/driven-oscillator-xc-plus-xp.png" width="60%"/>
+		</figure>
+
+
+	</subsection>
+	<subsection> <title> Steady State and Resonance of Amplitude</title>
+		<p>
+			From Eq.<xref ref="eq-driven-oscillator-eom-solution-amp-ph"/>, we can tell that, in the steady state, the block oscillates at the driving angular frequency <m> \omega_d</m> between <m> x=-X_d</m> and <m> x=X_d</m>  with 
+			<men xml:id="eq-steady-state-amplitude-as-func-omega">
+				X_d = \dfrac{F_0/m}{ \left( \omega^2 - \omega_d^2 \right)^2 + \left( \gamma \omega_d\right)^2 }.
+			</men>
+			Clearly, the amplitude of block's steady state oscillations depend on the strength of the force through <m> F_0/m</m>. But, what is interesting is that it also depends on the driving frequency <m> \omega_d</m>. That is, you can get different amplitudes of oscillation for the same magnitude of the force <m>F_0</m> if you apply the force at a different frequency. You can definitely tune the driving frequency so that you get the maximum impact.
+		</p>
+		<p>
+			<xref ref="fig-driven-oscillator-amplitude-vs-wd"/>
+			shows the amplitude <m> X_d </m> versus the driving frequency <m> \omega_d</m>. I have plotted frequency in units in which <m> \omega = \sqrt{k/m} = 1</m>. Clearly, there is a frequecy at which <m> x_d</m> has the maximum value. This is where the energy of the oscillator will be maximum, i.e., <m> \dfrac{1}{2}k X_{\text{d,max}}^2</m>. 
+		</p>
+
+
+		<figure xml:id="fig-driven-oscillator-amplitude-vs-wd">
+			<caption>
+				A plot of the steady state amplitude <m> X_d </m> versus the driving frequancy <m> \omega_d</m>. The angular frequency is in units of <m> \omega = \sqrt{k/m}</m>. That is <m> \omega_d = 1</m> refers to <m> \omega_d = \omega</m>. The oscillators have <m> m=1</m>, <m> k=1</m>, <m> b = 0.5</m>. The driving force has amplitude <m> F_0 = 1</m> and <m> \omega_d</m>  is varied. The displacement <m> x </m> of the block is observed after <m> t \gt\gt 1/\gamma</m>, where <m>\gamma = b/m</m>.   
+			</caption>
+			<image source="./images/simple-harmonic-motion/driven-oscillator-amplitude-vs-wd.png" width="70%"/>
+		</figure>
+
+		<p>
+			At what frequency does this happen? Take a look at Eq. <xref ref="eq-steady-state-amplitude-as-func-omega" />, this will happen at <m>\omega_d</m> at which the dnominator will be minimum. This happens at the following value of <m> \omega_d</m>, which we call the resonance frequency of the amplitude. We will denote this value of <m> \omega_d</m> by <m>\left( \omega_R \right)_{X_d} </m>.
+			<men>
+				\left( \omega_R \right)_{X_d} = \sqrt{ \omega^2 - \gamma^2 }.
+			</men>
+			<em>There are other resonance frequencies for other properties, such as power, which occur at different values of <m> \omega_d</m></em>.  Perhaps a more important resonance is the resonance of the average power of the driving force. This tells us the frequency at which, on average, energy can be delivered at the highest rate.
+		</p>
+	</subsection>
+
+ 	<subsection> <title> Resonance of Average Power</title>
+ 		<p>
+ 			Average power is obtained by averaging instantaneous power over one cycle in the steady state. The instantaneous power of the driving force is
+ 			<men>
+ 				P(t) = F_d\, v_{p,x},
+ 			</men>
+ 			where <m> v_{p,x}</m> is the steady state velocity of the block. It is better to get the steady state velocity <m> v_x </m> from the two-amplitude form of <m> x_p</m> in Eq. <xref ref="eq-driven-oscillator-eom-solution-two-amps"/> since here thinking in terms of in-phase and out-of-phase is very helpful. The velocity (obtained by derivative if you know calculus otherwise we just accept this as another formula) is
+ 			<men>
+ 				v_{p,x} = \omega_d\, A_{\text{out}}\, \cos( \omega_d t) -\omega_d\,A_{\text{in}}\, \sin( \omega_d t).
+ 			</men>
+ 			Now, upon multiplication with <m> F_d = F_0\, \cos(\omega_d t)</m>, we get
+  			<mdn>
+ 				<mrow number="no"> P(t) = \omega_d\,\amp F_0\, A_{\text{out}}\, \cos^2( \omega_d t) </mrow>
+ 				<mrow> \amp - \omega_d\,F_0\,A_{\text{in}}\, \cos( \omega_d t)\sin( \omega_d t).</mrow>
+ 			</mdn>
+ 			The second term on the right is actually one sine with twice the frequency. Hence, it averages out to zero. the first term, upon averaging gives the average power.
+ 			<men>
+ 				P_{\text{av}} = \dfrac{1}{2}\omega_d\,F_0\, A_{\text{out}}.
+ 			</men>
+ 			Now, using the expression of <m> A_{\text{out}}</m> from Eq. <xref ref="eq-driven-oscillator-eom-solution-two-amps-wd-formulas"/>, we have
+ 			<men>
+ 				P_{\text{av}} = \dfrac{1}{2m}\, \dfrac{\gamma\, \omega_d^2\, F_0^2}{\left( \omega^2 - \omega_d^2 \right)^2 + \left( \gamma \omega_d\right)^2 } .
+ 			</men>
+ 			A plot of average power versus the driving frequency is shown in <xref ref="fig-driven-oscillator-av-power-vs-wd" />. The resonance of power occurs at <m> \omega_d = \omega</m>.  This frequency, in this context, is called the resonance frequency of power. We will denote this by <m>\left( \omega_R\right)_{P_{\text{av}}} </m>. One can prove analytically that average power <m> P_{\text{av}}</m> as a function of <m> \omega_d</m> has maximum at
+ 			<men>
+ 				\left( \omega_R\right)_{P_{\text{av}}} = \omega = \sqrt{\dfrac{k}{m}}.
+ 			</men>
+ 			It is important to note that the natural frequency of the oscillator <m>\sqrt{k/m}</m> is also the resonance frequency of average power. Many systems take this fact into account. Some examples are: tuning a piano, Laser, Magnetic Resonance Imaging, etc.
+ 		</p>
+
+		<figure xml:id="fig-driven-oscillator-av-power-vs-wd">
+			<caption>
+				A plot of the average power <m> P_{text{av}}</m> of the driving force in steady state versus the driving frequancy <m> \omega_d</m>. The angular frequency is in units of <m> \omega = \sqrt{k/m}</m>. That is <m> \omega_d = 1</m> refers to <m> \omega_d = \omega</m>. The resonance occurs at <m>\omega_d = \omega</m>. The oscillators have <m> m=1</m>, <m> k=1</m>, <m> b = 0.5</m>. The driving force has amplitude <m> F_0 = 1</m> and <m> \omega_d</m>  is varied. The displacement <m> x </m> of the block is observed after <m> t \gt\gt 1/\gamma</m>, where <m>\gamma = b/m</m>.   
+			</caption>
+			<image source="./images/simple-harmonic-motion/driven-oscillator-av-power-vs-wd.png" width="70%"/>
+		</figure>
+
+		<p>
+			The resonance curve of average power for three different values of the damping parameter <m>\gamma</m>. Lower values of <m>\gamma</m> refers to lower level of damping. As shown in <xref ref="fig-driven-oscillator-power-vs-wd-three-damping-levels"/>, the resonance curve becomes steeper with less damping. 
+		</p>
+		<p>
+			By solving <m>P_\text{av} = \frac{1}{2}P_{\text{av, max}}</m>, we find the width of power resonance curve at half max, called full-width at half maximmum (FWHM).
+				<me>
+					P_\text{av} = \dfrac{1}{2}P_{text{av,max}}, 
+				</me> 
+				with 
+				<me>
+					P_\text{av,max} = \dfrac{F_0^2}{2 m \gamma}.
+				</me>
+		</p>
+
+		<sidebyside widths="45% 10% 45%">
+			<p>
+
+				Solving for <m>\omega_d</m>, we get two values of <m>\omega_d</m>, one on each side of the resonance frequency, whose range gives the width.
+				<me>
+					\text{FWHM} = \gamma.
+				</me>
+				
+			</p>
+			<p></p>
+			<image source="./images/simple-harmonic-motion/power-resonance-width.png" width="70%"/>
+		</sidebyside>
+
+		<figure xml:id="fig-driven-oscillator-power-vs-wd-three-damping-levels">
+			<caption>
+				A plot of the average power <m> P_{text{av}}</m> of the driving force at different values of the damping parameter <m>\gamma</m>. With lowering of damping, the curve becomes steeper and rises higher. Other parameters were kept same for all three: <m>F_0/2m = 1</m> and <m>\omega=1</m>.  The width of power resunance curve at half of maximum power in each case is equal to the damping parameter <m>\gamma</m>.
+			</caption>
+			<image source="./images/simple-harmonic-motion/driven-oscillator-power-vs-wd-three-damping-levels.png" width="70%"/>
+		</figure>
+ 
+
+
+
+ 	</subsection>	
+
+
+	<exercise xml:id="ex-Study-of-an-Underdamped-Driven-Oscillator"><title> Resonance of an Underdamped Driven Oscillator</title>
+		<statement>
+			<p>
+				A block of mass <m> 0.2\text{ kg}</m> is hung from a spring of spring constant <m> 100\text{ N/m}</m>. The block is subject to a viscous drag, <m> F_{\text{visc}} = - b v</m>, with <m> b = 3\text{ N.s/m}</m>.  A driving force <m> F_d = F_0\,\cos(\omega_d t)</m>, with <m> F_0 = 5\text{ N}</m> and <m> \omega_d = 20\text{ rad/s}</m>, also acts on the block.
+			</p>
+			<p>
+				(a) What is the amplitude of oscillations of the block in the steady state?
+			</p>
+			<p>
+				(b) If frequency  <m> \omega_d </m> is varied, at what value of <m> \omega_d </m> is the steady state amplitude largest?
+			</p>
+			<p>
+				(c) If frequency  <m> \omega_d </m> is varied, at what value of <m> \omega_d </m> average power delivered by the driving force is the largest?
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use formula for <m>X_d</m>. (b) Use resonance of amplitude. (c) Use resonance of average power. </p> </hint>
+		<answer> <p> (a) <m> 0.08\text{ m}</m>, (b) <m>16.6\text{ sec}^{-1} </m>, (c) <m> 22.36\text{ sec}^{-1}</m>.  </p> </answer>
+		<solution> <title>(a) </title>
+			<p>
+				(a) We just plug in the numbers in the formula for <m>X_d</m>. But first we find the values of the effective parameters.
+				<md>
+					<mrow> \omega \amp = \sqrt{ \dfrac{k}{m} } = \sqrt{ \dfrac{100}{0.2} }  = 22.36\text{ sec}^{-1},</mrow>
+					<mrow> \gamma \amp =  \dfrac{b}{m}   =  \dfrac{3}{0.2} =15\text{ sec}^{-1},</mrow>
+				</md>
+
+				Using these in the formulas for <m>X_d</m> we get
+				<me>
+					X_d = \dfrac{5/0.2}{\sqrt{ ( 22.36^2 - 20^2 )^2 + ( 20\times 15 )^2  }} = 0.08\text{ m}.
+				</me>
+			</p>
+		</solution>
+
+		<solution> <title>(b) </title>
+			<p>
+				(b) We  seek the value of <m> \omega_{R,X_d} </m>. 
+				<me>
+					\omega_{R,X_d} = \sqrt{ \omega^2 - \gamma^2 } =  \sqrt{ 22.36^2 - 15^2 }=16.6\text{ sec}^{-1}.
+				</me>
+
+			</p>
+		</solution>
+
+		<solution> <title>(c) </title>
+			<p>
+				(c) The resonance of average power occurs at angular frequency <m>\omega = 22.36\text{ sec}^{-1}</m>. 
+ 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Quality-of-a-Damped-Driven-Oscillator-from-Information-about-Resonance"><title> Quality of a Damped Driven Oscillator from Information about Resonance </title>
+		<statement>
+			<p>
+				A harmonically driven lightly damped oscillator has a resonance frequency of average power at <m>100\text{ Hz}</m>. The width of the power curve is <m>\pi\text{ s}^{-1}</m>. Find the quality of the oscillator.
+			</p>
+		</statement>
+		<hint> <p> Use properties of the power resonance curve.  </p> </hint>
+		<answer> <p> <m>200</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Since width of power resonance curve is equal to the damping parameter <m>\gamma</m>.
+				<me>
+					\omega = 2\pi\times 100\text{ Hz} = 200\pi\text{ s}^{-1},\ \ \gamma = \pi\text{ s}^{-1}.
+				</me>
+				Therefore,
+				<me>
+					Q = \frac{\omega}{\gamma} = 200.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+</section>
+ 

@@ -1,0 +1,406 @@
+<section xml:id="Electric-Potential-Section"><title> Electric Potential </title>
+
+	<introduction>
+		<p>
+			Believe it or not, you are already familiar with electric potential. In everyday language we call it <q>voltage</q>. When you have a <m>1.5\text{-volt}</m> battery, it provides <m>1.5\text{ volts}</m> of electric potential difference between <m>+</m> and <m>-</m>. So, what is electric potential?
+		</p>
+
+ 		<p><alert>Electric Potential Energy</alert></p>
+ 		<p>
+ 			To get a feel for the concept, consider moving a charge <m>+Q</m> near another charge <m>+q</m> as shown in <xref ref="fig-work-in-moving-a-charge"/>. Suppose you move so that your force is only an infinitesimal greater than needed to balance the electric force so that the speed of <m>Q</m> does not change. Then, by conservation of energy, work done by you will go towards changing the potential energy of <m>Q</m>. Since, we worked against electric force only, this potential energy is called <term>electric potential energy</term> (EPE).
+ 			<men xml:id="eq-change-in-epe-in-words">
+				\text{Change in EPE} = \text{Work done against electric force}.
+			</men>
+			
+ 		</p>
+
+		<figure xml:id="fig-work-in-moving-a-charge">
+			<caption>
+				Moving a test charge <m>Q</m> near another charge <m>q</m>. Suppose, while moving, you balance the electric force <m>F_e</m> by <m>q</m> by your force,
+				<m>F_\text{you}</m>.  The work by <m>F_\text{you}</m> will go towards changing electrical potential energy (EPE) of <m>Q</m>.   
+			</caption>
+			<image source="./images/electric-potential/work-in-moving-a-charge.png" width="90%"/>
+		</figure>
+		<p>
+			The reason we insist that charge does not acccelerate as we move it from one point to another is that we want work against only the electric force, and by balancing the electric force by an applied force, we can find the corresponding work by the applied force. If applied force is not balancing the electric force, charge would accelerate and energy conservation will require accounting for kinetic energy change as well.
+		</p>
+ 		<p>
+ 			Denoting work by you by <m>W_{1\rightarrow 2}^{\text{by you}}</m> and potential energy of <m>Q</m> by letter <m>U</m>, we can write Eq.<xref ref="eq-change-in-epe-in-words"/> in symbols as follows.
+ 		</p>
+ 			<men xml:id="eq-potential-energy-difference-form-work-done-by-you">
+				U_2-U_1 = W_{1\rightarrow 2}^{\text{by you}}.
+			</men>		
+		<p>
+			Its important to note that work is equal to <alert>change</alert> in potential energy, not potential energy itself. For potential energy of <m>Q</m> at a point, say <m>P_2</m>, we select a reference point at which we choose a reference value. So, if we choose <m>P_1</m> to reference point and choose potential energy to be zero there, Eq. <xref ref="eq-potential-energy-difference-form-work-done-by-you"/> can be used to assign potential energy at <m>P_2</m>. 
+		</p>
+		<p><alert>Positive and Negative Work</alert></p>
+		<p>
+			Note further that work by you can be positive or negative. If you do a positive work, then you will be putting more energy into <m>Q</m> and if you do negative work, you will be extracting energy from <m>Q</m>. 
+		</p>
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				 For instance, if you move a positive <m>Q</m> towards a positive <m>q</m>, then, you will need to put energy into <m>Q</m>; that is, you will have to do a positive work. However, if you were to move positive <m>Q</m> towards a negative <m>q</m>, you will have to do negative work on <m>Q</m>, thereby removing energy from <m>Q</m>.
+			</p>
+	 		<p></p>
+	 		<figure>
+	 			<caption>
+	 			</caption>
+				<image source="./images/electric-potential/positive-and-negative-work-on-Q.png" width="100%"/>
+			</figure>
+			 
+		</sidebyside>
+
+		<p><alert>Electric Potential</alert></p>
+		<p>
+			In Eq. <xref ref="eq-potential-energy-difference-form-work-done-by-you"/>, work will depend on charge <m>Q</m> -  higher the charge higher the work; hence, potential energy will depend on charge <m>Q</m> as well. If we divide this work by <m>Q</m>, we will obtain a quantity that is indepdent of the test charge <m>Q</m> and reflects influence of electric field between <m>P_1</m> and <m>P_2</m>. This is similar to how we obtained electric field from electric force.
+		</p>
+		<p>
+			The quantity obtained by dividing <alert>change in EPE</alert> by test charge <m>Q</m> is called <alert>change in electric potential</alert>. We will choose to denote it by <m>\phi</m> although you will see it denoted by letter <m>V</m> as well. Thus, 
+			<men xml:id="eq-potential-difference-from-potential-energy-difference">
+				\phi_2-\phi_1 = \dfrac{U_2-U_1}{Q}.
+			</men>
+		</p>
+		<p>
+			To define <alert>electric potential at a point</alert>, and not the potential difference between two points, we select a point in space as a reference point and assign a referene value, which is usually zero, to the potential there. 
+
+			<men xml:id="eq-electric-potential-from-work-done-using-reference">
+				\phi_P = \dfrac{ W_{\text{ref}\rightarrow P}^{\text{by you}} }{Q} = \dfrac{ U_P - U_\text{ref} }{Q}.
+			</men>
+			The reference point must be chosen carefully to be a point where electric potential is well-defined. For instance, it is custmary to choose point at <m>\infty</m> when we are dealing with electric potential fo charges that are distributed in a finite space, and at a finite place when charges may extend to infinity.
+		</p>
+
+		<p><alert>Some Electric Potential Formulas</alert></p>
+		<p>
+			The fundamental formula of electric potential is that from a charge <m>q</m>. 
+		</p>
+
+		<sidebyside widths="60% 10% 25% 5%">
+			<p>
+				We will derive the following formula in a later section for electric potential at a distance <m>r</m> from this charge, <alert>regardless of the direction from the charge</alert>, to be
+				<men xml:id="eq-electric-potential-fundamental-formula-single-charge">
+					\phi = \frac{1}{4\pi\epsilon_0}\frac{q}{r},\ \ \text{reference zero at }r=\infty.
+				</men>
+				
+			</p>
+	 		<p></p>
+			<image source="./images/electric-potential/e-potential-example-formulas-point-charge.png" width="70%"/>
+			<p></p>
+		</sidebyside>
+ 		<p>
+ 			A positive charge, <m>q\gt 0</m> will produce a positive potential and a negative charge <m>q\lt 0</m> a negative potential.
+ 		</p>
+
+		<sidebyside widths="60% 10% 25% 5%">
+			<p>
+				We will use this formula for potential from a point charge to deduce electric potential of line of charges with charge denssity <m>\lambda</m> at a distance <m>s</m> from the line to be
+				<men>
+					\phi = -\frac{1}{2\pi\epsilon_0}\ln \frac{s}{s_\text{ref}},\ \ \text{reference zero at }s_\text{ref}.
+				</men>
+			</p>
+	 		<p></p>
+			<image source="./images/electric-potential/e-potential-example-formulas-line-charge.png" width="70%"/>
+			<p></p>
+		</sidebyside>
+		<sidebyside widths="60% 10% 25% 5%">		
+			<p>
+				We will also find that electric potential between two oppositely charged plates of charge densities <m>\pm\sigma</m> increases from reference zero at negative plate towards positive plate linearly with distance. Therefore, at a distance <m>z</m> from the negative plate
+				<men>
+					\phi = \frac{\sigma}{\epsilon_0}\; z,\ \ \text{reference zero at negative plate at }z=0.
+				</men>
+			</p>
+
+	 		<p></p>
+			<image source="./images/electric-potential/e-potential-example-formulas-parallel-plates.png" width="70%"/>
+			<p></p>
+		</sidebyside>
+
+
+		<p>
+			These formulas are given here to illustrate that you need to be aware that, in addition to the fundamental formula, Eq. <xref ref="eq-electric-potential-fundamental-formula-single-charge"/>, you have many other formulas in other charge distributions. However, the most fundamental is the definition of electric potential in terms of work done per unit charge, given in Eq. <xref ref="eq-electric-potential-from-work-done-using-reference"/>. We will use this defining equation to deduce all these other formulas in later sections. 			
+		</p>
+		<p><alert>Advantage of Electric Potential over Electric Field</alert></p>
+		<p>
+			Both electric potential and electric field tell us about electrical influences of charges in a region of space. But since electric potential is related to how energy of a test particle changes, it is just a scalar real number and not a vector. That is why, it is much easier to work with electric potential than electric field. In the next section we will see electric potential maps just as we studied electric field maps in earlier chapters.  
+		</p>
+		<p><alert> Units</alert></p>
+		<p>
+			Electric potential in a region tells us how electric potential energy of a test particle will change in that region. From 
+			Eq. <xref ref="eq-potential-difference-from-potential-energy-difference"/> we can see that potential energy of a test charge <m>Q</m> at a point where potential is <m>\phi</m> is simply
+			<men xml:id="eq-electric-potential-energy-from-electric-potential">
+				U = Q\, \phi.
+			</men>
+		</p>
+
+		<p>
+			Since SI unit of energy is Joule, <m> \text{J}</m>, the SI unit of electric potential will be
+			<m>
+				\text{ J/C },
+			</m>
+			which is also called <m>\text{volt}</m>, denoted by <m>\text{V}</m>.
+		</p>
+		<p>
+			Electric potential energy of elementary particles are often too small when expressed in Joule. In these applications, it is often preferable to use the potential energy of an electron with charge in units of <m> e</m> in a place where potential is <m>-1\text {V}</m>. This energy is called an electron volt, <m> \text{eV} </m>.
+			<me>
+				1.0 \text{ eV} = 1.60 \times 10^{-19}\text{ J}.
+  			</me> 
+		</p>
+	</introduction>
+	<subsection><title> Electric Potential in a Constant Electric Field Region</title>
+
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				Suppose we have a region of constant electric field, for instance, between two parallel  oppositely charged plates as shown in <xref ref="fig-e-potential-between-parallel-plates"/>. Let us denote the electric field by <m>\vec E</m>. Then, if we move a test charge <m>Q</m> in this field from <m>P_1</m> to <m>P_2</m> with zero acceleration, the balancing applied force, <m>-Q\vec E</m>, would do the following work
+
+			</p>
+			<p></p>
+			<figure xml:id="fig-e-potential-between-parallel-plates">
+				<caption>
+					   
+				</caption>
+				<image source="./images/electric-potential/e-potential-between-parallel-plates.png" width="70%"/>
+			</figure>
+		</sidebyside>		
+
+		<p>
+
+			<md>
+				<mrow> W \amp = -Q \vec E\cdot \vec r = QE r\cos(\pi-\theta)</mrow>
+				<mrow> \amp = QE r\cos\,\theta = QE(x_2-x_1).</mrow>
+			</md>
+
+			This work will equal the potential energy difference for the test charge between two points is
+			<me>
+				U_2 - U_1 = QE(x_2-x_1).
+			</me>
+			Dividing this by the test charge will give the potential difference
+			<me>
+				\phi_2 - \phi_1 = E(x_2-x_1).
+			</me>
+			If we take reference zero potential at <m>x_1=0</m>, i.e., <m>P_1</m> at the negative plate with <m>\phi_1=0</m>,  then, electric potential at an arbitrary point between the plates with <m>x</m> coordinate <m>x</m>  will have electric potential <m>\phi</m> given by
+			<me>
+				\phi  = E\;x.
+			</me>
+			That is, potential increases linearly with distance from negative plate towards positive plate. By setting <m>x=d</m>, we note that the positive plate has potential <m>Ed</m> with respect to the negative plate, which is at reference zero.
+		</p>
+		
+	</subsection>
+
+
+	<exercise xml:id="ex-Electric-Potential-Difference-from-Change-in-Potential-Energy"><title> Electric Potential Difference from Change in Potential Energy </title>
+		<statement>
+			<p>
+				You move a <m> + 2\ \mu\text{C}</m> charge <m>Q</m> from some point <m>P_1</m> to another point <m>P_2</m> such that the charge does not accelerate at any point in its path. If the energy <m>Q</m> increased by <m>5.0\ \mu\text{J}</m>. What is the electric potential difference <m> \phi_2 - \phi_1</m>?
+			</p>
+
+		</statement>
+		<hint> <p>  Use definition. </p> </hint>
+		<answer> <p> <m>2.5\text{ V}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We use the definition of electric potential difference.
+				<md>
+					<mrow> \phi_2-\phi_1 \amp = \dfrac{U_2-U_1}{Q},</mrow>
+					<mrow>   \amp = \dfrac{5.0\ \mu\text{J}}{2\ \mu\text{C}} = 2.5\text{ J/C} = 2.5\text{ V}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electric-Potential-Difference-from-Changes-in-Potential-and-Kinetic-Energy"><title> Electric Potential Difference from Changes in Potential and Kinetic Energy </title>
+		<statement>
+			<p>
+				You move a <m> + 2\ \mu\text{C}</m> charge <m>Q</m> from some point <m>P_1</m> to another point <m>P_2</m> but applied force does not fully balance the electric force. There are no other forces when the particle is moving. As a result, we find that in addition to <m>5.0\ \mu\text{N.m}</m> of work by the external force, the charge has increased kinetic energy of <m>7.0\ \mu\text{J}</m>. What is the electric potential difference <m> \phi_2 - \phi_1</m>?
+			</p>
+
+		</statement>
+		<hint> <p>  Think what would have happened had there been no acceleration. </p> </hint>
+		<answer> <p> <m>-1.0\text{ V}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The definition of electric potential energy requires balancing all of electric force. Had we applied a balancing force, we would have to do additional negative work to absorb the part of the eletric force that was not balanced. Therefore,
+				<me>
+					U_2-U_1 = W_\text{by F} - \Delta \text{KE} = 5.0 -7.0 = -2.0\ \mu\text{J}.
+				</me> 
+				We then use the definition of electric potential difference.
+				<md>
+					<mrow> \phi_2-\phi_1 \amp = \dfrac{U_2-U_1}{Q},</mrow>
+					<mrow>   \amp = \dfrac{-2.0\ \mu\text{J}}{2\ \mu\text{C}} = -1.0\text{ J/C} = -1.0\text{ V}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electric-Potential-Energy-from-Electric-Potential-Difference"><title> Electric Potential Energy from Electric Potential Difference  </title>
+		<statement>
+			<p>
+				The positive terminal of a battery is at a potential of <m>1.5\text{ V}</m> with zero potential reference at the negative terminal. 
+			</p>
+			<p>
+				(a) What is the electric potential energy of a <m>2.0\ \mu\text{C}</m> charge when it is placed at (i) the positive terminal, (ii) at the negative terminal?
+			</p>
+			<p>
+				(b) What is the electric potential energy of a <m>-2.0\ \mu\text{C}</m> charge when it is placed at (i) the positive terminal, (ii) at the negative terminal?
+			</p>
+			<p>
+				(c)  How much work must you do in moving a <m>5.0\ \mu\text{C}</m> from the positive terminal to the negative terminal without any acceleration?
+			</p>
+			<p>
+				(d)  How much work must you do in moving a <m>-5.0\ \mu\text{C}</m> from the positive terminal to the negative terminal without any acceleration?
+			</p>			
+		</statement>
+		<hint> <p> (a) and (b)  use definition, (c) and (d) use energy conservation to argue about how much work you need to provide.  </p> </hint>
+		<answer> <p>  
+			(a) (i) <m>3.0\ \mu\text{J}</m>, (ii) <m>0</m>,
+			(b) (i) <m>-3.0\ \mu\text{J}</m>, (ii) <m>0</m>,
+			(c) <m>-7.5\ \mu\text{J}</m>,
+			(d) <m>+7.5\ \mu\text{J}</m>.
+		  </p> </answer>
+		<solution><title> (a) </title> 
+			<p>
+				By using relation between electric potential at a point and electric potential energy of a charge placed at that point, we can get
+				<md>
+					<mrow> \amp \text{(i)}\ \  U_{+} = Q\phi_{+} =  2.0\ \mu\text{C} \times 1.5\text{ V} = 3.0\ \mu\text{J}, </mrow>
+					<mrow> \amp \text{(ii)}\ \  U_{-} = Q\phi_{-} = 0.</mrow>
+				</md>
+
+			</p>
+		</solution>
+
+		<solution><title> (b) </title> 
+			<p>
+				By using relation between electric potential at a point and electric potential energy of a charge placed at that point, we can get
+				<md>
+					<mrow> \amp \text{(i)}\ \  U_{+} = Q\phi_{+} = - 2.0\ \mu\text{C} \times 1.5\text{ V} = -3.0\ \mu\text{J}, </mrow>
+					<mrow> \amp \text{(ii)}\ \  U_{-} = Q\phi_{-} = 0.</mrow>
+				</md>
+
+			</p>
+		</solution>
+
+		<solution><title> (c) </title> 
+			<p>
+				Work done must provide the change in energy.
+				<md>
+					<mrow> W \amp =  U_{-} - U_{+}, </mrow>
+					<mrow>  \amp = 0 - 5\times 1.5 = -7.5\ \mu\text{J}.</mrow>
+				</md>
+			</p>
+		</solution>
+
+		<solution><title> (d) </title> 
+			<p>
+				Work done must provide the change in energy.
+				<md>
+					<mrow> W \amp =  U_{-} - U_{+}, </mrow>
+					<mrow>  \amp = 0 - (-5)\times 1.5 = +7.5\ \mu\text{J}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Practice-with-Joule-and-Electron-Volt-Conversions"><title> Practice with Joule and Electron Volt Conversions </title>
+		<statement>
+			<p>
+				A proton moves from a spot with potential equal to 200 V to another place where  potential is 500 V.  What is the change in potential energy in eV and in Joules?   
+			</p>
+
+		</statement>
+		<hint> <p>  Use definition. </p> </hint>
+		<answer> <p>  <m> 300\text{ eV}</m>,  <m> 4.80\times 10^{-17}\text{ J} </m>.</p> </answer>
+		<solution> 
+			<p>
+				Using <m>e</m> for charge on a proton, we get the following for the change in the potential energy of the proton.
+				<md>
+					<mrow> \Delta U \amp = Q\Delta \phi</mrow>
+					<mrow>   \amp = e \times (500 - 200)\text{ V} = 300\text{ eV}. </mrow>
+				</md>
+				We can express this in Joules by using the numerical value of the electronic charge <m>e</m> in <m>\text{C}</m> since <m>\text{J}=\text{C.V}</m>.
+				<me>
+					300\text{ eV} = 300\times 1.60\times 10^{-19} = 4.80\times 10^{-17}\text{ J}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Speed-of-a-Charge-Released-in-the-Neighborhood-of-a-Fixed-Charge"><title> Speed of a Charge Released in the Neighborhood of a Fixed Charge </title>
+		<statement>
+			<p>
+				Consider a charge <m> Q_1 (+5\  \mu\text{C})</m> fixed at some point.  Another charge 
+				<m> Q_2 (\text{charge } +3\   \text{nC},\ \text{mass } 6\ \mu\text{g})</m> moves in the neighboring space.
+			</p>
+			<p> 
+				(a) Evaluate potential energy of <m>Q_2</m> when it is <m>4\text{ cm}</m> from <m>Q_1</m>.
+			</p>
+			<p>
+				(b)	If <m>Q_2</m> is released at rest at a point <m>4\text{ cm}</m> from <m>Q_1</m>, what will be its speed when it is <m>8\text{ cm}</m> from <m>Q_1</m>.  (Note: <m> Q_1</m> is held fixed in its place.) 
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Use definition, (b) use conservation of energy. </p> </hint>
+		<answer> <p> (a)  <m>3.4\times 10^{-3}\text{ J}</m> (b) <m> 750\text{ m/s}</m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) 
+				Potential energy can be obtained by multiplying the test charge <m>Q_2</m> by the potential of charge <m>Q_1</m>. We use the reference point at <m>r=\infty</m>, where potential energy is taken to be zero.
+				<md> 
+					<mrow> U \amp = Q_2 \times \phi_{\text{of Q}_1} = k\: \frac{Q_1 Q_2}{r} </mrow>
+					<mrow> \amp = 9\times 10^9\times \frac{5\times 10^{-6}\times 3\times 10^{-9}}{0.04}</mrow>
+					<mrow> \amp  = 3.4\times 10^{-3}\:\text{J}</mrow>
+				</md>  
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+		<p> 
+		(b) The conservation of energy of the particle <m>Q_2</m>, namely, 
+			<me>
+				\left[K + U \right]_i = \left[K + U \right]_f,
+			</me>
+			gives
+			<me>
+				 0 + 3.4\times 10^{-3}   =  \dfrac{1}{2}\times 6\times 10^{-9}  v^2 + 1.7\times 10^{-3},
+			</me>
+			which we can solve for the speed <m> v</m>,
+			<me>
+				v = \sqrt{3.4\times 10^{-3} / 6\times 10^{-9}  } = 750\:\text{m/s}.
+			</me>
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Electric-Potentisl-Difference-in-the-Region-of-Constant-Electric-Field"><title> Electric Potential Difference in the Region of Constant Electric Field </title>
+		<statement>
+			<p>
+				In a region of space, electric field is uniform, meaning same magnitude and same direction.  For instance, in the space between two oppositely charges plates. Find the electric potential differences (a)  <m>\phi_B - \phi_A</m> (b) <m>\phi_D - \phi_C</m>, and (c)  <m>\phi_H - \phi_G</m>.
+			</p>
+ 
+			<image source="./images/electric-potential/ex-constant-e-field-calc-potential-diffs.png" width="70%"/>
+		</statement>
+		<hint> <p> Use constant electric field case.  </p> </hint>
+		<answer> <p> (a) <m>0</m>, (b) <m> -E\, d\, \cos\, \theta</m>, (c) <m>-Ed </m>.  </p> </answer>
+		<solution> 
+			<p>
+				In the case constant electric field regions, the potential difference is easy to calculate from the displacement vector and the electric field.
+				<me>
+					\Delta \phi = -E\, d\, \cos\, \theta.
+				</me>
+				(a) Since <m> \theta = 90^\circ</m>, <m>\cos\,\theta = 0</m>, giving
+				<m>
+					\Delta\phi = 0.
+				</m>
+			</p>
+			<p>
+				(b)
+				We will simply have <m> \Delta \phi = -E\, d\, \cos\, \theta </m>. Since CD direction makes less than <m>90^\circ</m> with the direction of electric field, this will be negative. Another way to check the sign is to look at which side is closer to the positive charges - that side will be at a higher potential.
+			</p>
+
+			<p>
+				(c)
+				Since <m> \theta = 0^\circ</m>, <m>\cos\,\theta = 1</m>.  This gives <m>\Delta \phi = -Ed</m>. This is negative since H is down in the direction of electric field from G. Another way to check the sign is to look at which side is closer to the positive charges - that side will be at a higher potential.
+				 
+			</p>
+		</solution>
+	</exercise>
+
+</section>

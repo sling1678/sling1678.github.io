@@ -1,0 +1,555 @@
+<section xml:id="Ohms-Law"><title> Ohm's Law </title>
+	<introduction>
+		<p>
+			In a wide variety of materials electric current is driven by the electric field pushing on charges such that the drift speed v of charges is proportional to the electric field <m>E</m> on the particle.  
+			<me>
+				 v = k E,
+			</me>
+			where <m>k</m> is a constant of proportinality. Let's multiply both sides by <m> n e</m>, where <m>n</m> is number density of conduction electrons and <m>e</m> the electronic charge.
+			<me>
+				nev = nek E.
+			</me>
+			Left side is just the current density <m>J</m>. Wrting <m>\sigma</m> for <m>nek</m>, we can write this relation as a relation between current density <m> J </m> and electric field <m>E</m>. 
+			<men xml:id="eq-ohms-law-general">
+				J = \sigma  E. 
+			</men>
+			This equation is called <term>Ohm's law</term>, after German physicist Georg Simon Ohm (1789 - 1854). The constant of proportionality  <m>\sigma</m> is called the <term> conductivity </term> of the substance.  For isotropic materials, i.e. a material that does not have intrinsic preferred direction of flow for charges,  <m>\sigma</m> is just a positive scalar quantity.
+		</p>
+		<p>
+			From Eq.<xref ref="eq-ohms-law-general"/> the unit of resistivity in SI system will be
+			<me>
+				\frac{J}{E} = \frac{\text{C.m}^2/\text{s}}{\text{N/C}}.
+			</me>
+			This is a complicated combination of units. A more common way to represent it is to use unit of resistance, which is denoted by <m>\Omega</m>, called Ohm. In terms of <m>\Omega</m>, the unit is
+			<me>
+				\text{SI unit of }\sigma = \Omega\;\text{m}.
+			</me>
+		</p>
+
+		<p>
+ 			A more common form of Ohm's law between potential drop <m>\Delta \phi</m> across a conductor and total current <m>I</m> through the conductor will be derived below. 
+ 			<me>
+ 				\Delta\phi = I R,\text{ or, equivalently, } V = I R,
+ 			</me>
+ 			where <m>R</m> is resistance, to be defined below. While resisitivity is an intrinsic property of a material, resistance depends on the shape and size of the material.  
+		</p>
+
+		<table xml:id="tab-Resistivity-of-Common-Materials">
+			<title>
+				Resistivity of Common Materials
+			</title>
+				<tabular halign="center">
+				    <row>
+				      <cell>Material </cell>
+				      <cell>Resistivity at <m>20^\circ\text{C}</m></cell>
+				    </row>
+				    <row bottom="minor" >
+				      <cell></cell>
+				      <cell><m>(\Omega\;\text{m})</m></cell>
+				    </row>
+
+				    <row>
+				      <cell>Silver </cell>
+				      <cell> <m>1.6\times 10^{-8}</m></cell>
+				    </row> 
+
+				    <row>
+				      <cell>Copper </cell>
+				      <cell> <m>1.7\times 10^{-8}</m></cell>
+				    </row>
+
+				    <row>
+				      <cell>Gold </cell>
+				      <cell> <m>2.4\times 10^{-8}</m></cell>
+				    </row>
+
+				    <row>
+				      <cell>Aluminium </cell>
+				      <cell> <m>2.8\times 10^{-8}</m></cell>
+				    </row>
+
+				    <row>
+				      <cell>Tungsten </cell>
+				      <cell> <m>4.9\times 10^{-8}</m></cell>
+				    </row>  
+				    <row>
+				      <cell>Zinc </cell>
+				      <cell> <m>5.5\times 10^{-8}</m></cell>
+				    </row>  
+
+				    <row>
+				      <cell>Iron </cell>
+				      <cell> <m>1.0\times 10^{-7}</m></cell>
+				    </row>
+
+				    <row>
+				      <cell>Lead </cell>
+				      <cell> <m>1.9\times 10^{-7}</m></cell>
+				    </row>
+				    <row>
+				      <cell>Manganin </cell>
+				      <cell> <m>4.2\times 10^{-7}</m></cell>
+				    </row>
+
+				    <row>
+				      <cell>Nichrome </cell>
+				      <cell> <m>1.1\times 10^{-6}</m></cell>
+				    </row>
+				    <row>
+				      <cell>Carbon (Graphite) </cell>
+				      <cell> <m>1.0\times 10^{-5}</m></cell>
+				    </row>
+ 
+			</tabular>
+		</table>
+
+
+
+
+	</introduction>
+
+	<subsection><title> Conductivity and  Resistivity </title>
+		<p>
+			Instead of the conductivity, <m>\sigma</m>, we often use the inverse of conductivity, called the <term>resistivity</term>, which is denoted by  <m>\rho</m>. 
+			<men>
+				 \sigma = \dfrac{1}{\rho}. 
+			</men>
+			
+		</p>
+
+		<p> <alert> Temeprature-dependence of Resistivity</alert></p>
+		<p>
+			The resistivity <m>\rho</m>  (or equivalently the conductivity  <m>\sigma</m>) of a material depends on the temperature.  For most metals the dependence is nearly linear over narrow ranges of temperature. Using the value of resistivity  <m>\rho_0</m> at some reference temperature <m>T_0</m> in a range we express the resistivity  <m>\rho</m>  at some other temperature <m>T</m> near the reference temperature as follows.  
+			<me>
+				\dfrac{\rho-\rho_0}{\rho_0} = \alpha \left( T-T_0\right).
+			</me>
+			The proportionality constant <m>\alpha</m>  is called the temperature coefficient. The temperature coefficient is small, but can be important in some applications. For instance, for copper it is <m>\alpha_\text{Cu} = .00386\text{ per }^\circ\text{C}</m>. If copper wire heats us by <m>100^\circ\text{C}</m>, you can see the resitivity change by <m>38.6\%</m>. 
+		</p>
+
+
+	</subsection>
+
+	<subsection><title>Conductance and Resistance </title>
+		<p>
+			We now work out an important consequence of Ohm's law that is very useful in the study of electric circuits.  
+		</p>
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				Consider a uniform metallic wire of cross-section area <m>A</m> and length <m>L</m> that carries current <m>I</m>. Suppose we multiply Ohm's law in Eq. <xref ref="eq-ohms-law-general"/> by <m>A</m>. This will give Ohm's law in another form. 
+			</p>
+			<p> </p>
+			<image source="./images/electric-current/ohms-law-cylindrical-wire.png"/>
+		</sidebyside>
+		
+		<p>
+			<men>
+				I = JA = \sigma A E = \dfrac{ \sigma A }{L}\, EL = \dfrac{ \sigma A }{L}\,\Delta \phi.
+			</men>
+			The quantity <m> \sigma A /L </m> is called <term>conductance</term> and is denoted by <m>G</m>. Therefore, current through the wire is proportional to the potential difference across the wire.
+			<men xml:id="eq-ohms-law-wire-conductance">
+				I = G\;\Delta \phi,
+			</men>
+			with conductance <m>G</m> of the cylindrical wire to be
+			<men>
+				G = \dfrac{ \sigma A }{L}.
+			</men>
+			Conductance depends on geometric properties of the wire, thickness given by area of cross-section <m> A</m> and length <m>L</m>, and an intrinsic property, the conductivity, <m>\sigma</m>, which varies between materials and also with temperature. 
+		</p>
+		<p>
+
+			The inverse of conductance is called <term>resistance</term>, which is denoted by <m>R</m>. Therefore, resitance of the wire is
+
+			<men>
+				R = \dfrac{1}{G} = \dfrac{L}{ \sigma A } = \dfrac{L}{ A }\, \rho,
+			</men>
+			where I have replaced <m>1/\sigma</m> by <m>\rho</m>, the resistivity. This relation says that a thicker wire with larger area of cross-section will have lower resistance and a thinner wire of the same material and same length will have larger resistance.  Additionally, a longer wire will have larger resistance than a shorter wire of the same material and the same thickness. One can understand this by noting that in a thicker wire there are more charge carriers in the cross-section, and therefore, there are more paths for carrying the current, and hence less resistance. 
+
+		</p>
+		<p>
+			In terms <m>R</m>, Eq. <xref ref="eq-ohms-law-wire-conductance"/>  becomes
+			<men xml:id="eq-ohms-law-wire-resistance">
+				\Delta \phi = I R,
+			</men>
+			which is often written as
+			<me>
+				V = IR,
+			</me>
+			where <m>V</m> refers to voltage, which is same as the potential difference. 
+		</p>
+		<p>
+			Equations <xref ref="eq-ohms-law-wire-conductance"/> and <xref ref="eq-ohms-law-wire-resistance"/> are also called <term>Ohm's law</term>. Although, we have derived these expressions for a cylindrical conductor, they are applicable fo any shape.
+		</p>
+
+		<p>
+			In SI system of units, the unit of resistance is <m>\text{ohm}</m> (denoted by the Greek letter <m>\Omega</m>.  According to Ohm's law in the form given in Eq. <xref ref="eq-ohms-law-wire-resistance"/>, a current of one Ampere will flow through a wire of resistance one Ohm if a potential drop of one Volt is maintained between the ends.  
+			<me>
+				1\ \Omega = 1\ \dfrac{\text{V}}{\text{A}}.
+			</me>
+		</p>
+
+
+	</subsection>
+
+	<exercise><title> Resistances of Wires Made from Different Metals</title>
+		<statement>
+			<p>
+				(a)	Find the resistances of <m>1\text{-m}</m> long copper wire and <m>1\text{-m}</m> long nichrome wire, each of diameter <m>0.02\text{ mm}</m>.
+			</p>
+			<p>
+				(b)	Find the resistance of <m>1\text{-m}</m> long copper wire but of diameter <m>0.04\text{ mm}</m>.
+			</p>
+			<p>
+				(c)	How long a copper wire would you need that has the same resistance as a <m>1\text{-m}</m> long nichrome wire of the same diameter?
+			</p>
+			<p>
+				Data: <m> \rho_{\text{copper}} = 1.7\times 10^{-8}\Omega.\text{m} </m>, <m>\rho_{\text{nichrome}} = 100\times 10^{-8}\Omega.\text{m}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Use defnition of <m>R</m>.  </p> </hint>
+		<answer> <p>  (a) <m>3200\ \Omega</m>, (b) <m>13.5\ \Omega</m>, (c) <m>59\text{ m}</m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				We will use the fundamental formula 
+				<me>
+					R = \rho\, \dfrac{L}{A}.
+				</me>
+			</p>
+			<p>
+				(a) Resistances of the two wires are:
+				<md>
+					<mrow> \amp R_{\text{copper}}  =  1.7\times 10^{-8}\Omega.\text{m}\times\frac{1\ \text{m}}{\pi(0.01\times 10^{-3}\text{m})^2} = 54\ \Omega.</mrow>
+					<mrow> \amp R_{\text{nichrome}} =  100\times 10^{-8}\Omega.\text{m}\times\frac{1\ \text{m}}{\pi(0.01\times 10^{-3}\text{m})^2} = 3200\ \Omega.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b) When the thickness goes up 2-fold, the area of cross-section will go up <m>2^2</m> or 4-fold.  This will make the resistance <m>\frac{1}{4}</m>-times as much.  
+				<me>
+					R= \dfrac{54\ \Omega}{4} = 13.5\ \Omega.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(c)</title>
+			<p>
+
+				(c)	Since the two wires have the same resistance and the same thickness we have the following condition, <m>R = \rho_1L_1/A = \rho_2L_2/A</m>. Therefore,	 
+				<md>
+					<mrow> \frac{L_1}{L_2} \amp =\frac{\rho_2}{\rho_1} </mrow>
+					<mrow> \amp = \frac{100\times 10^{-8}\Omega.\text{m}}{1.7\times 10^{-8}\Omega.\text{m}} = 59.</mrow>
+				</md>
+				This says that we would need 59 meters of copper wire for 1 m of a nichrome wire of the same thickness in order for the two wires to have the same resistance.
+			</p>
+		</solution>
+	</exercise>
+
+	<subsection> <title> Current Through a Junction of Two Materials</title>
+		<p>
+			Suppose you weld together a copper and a platinum wire with the same cross-section and pass a steady current through the composite conductor as shown in <xref ref="fig-current-through-two-metals-junction" />.  Since the same current <m>I</m> would flow through the two conductors of the same cross-sectional area, their volume current densities <m>J</m> would be equal. 
+			<me>
+				J_\text{Cu} = J_\text{Pt}.
+			</me>
+			That means
+			<me>
+				\sigma_\text{Cu} E_{\text{in Cu}} = \sigma_\text{Pt} E_{\text{in Pt}}.
+			</me>
+			But since, <m>\rho_{Pt} \approx 6\times \rho_{Cu}</m>, i.e., <m>\sigma_{Cu} \approx 6\times \sigma_{Pt}</m>. That will make electric field to be lower in Cu than in Pt.
+ 
+			<me>
+				E_{\text{in Cu}} \approx \frac{1}{6} E_{\text{in Pt}}.
+			</me>
+		</p>
+
+		<figure xml:id="fig-current-through-two-metals-junction">
+			<image source="./images/electric-current/current-through-two-metals-junction.png" width="80%"/>
+			<caption> 
+				Junction of two conductors develops a layer of charge when steady current flows through the two wires. The electric field of charges at the junction add to the electric field from the potential difference for points on the right of the junction and subtract at points on the left.  This gives rise to higher electric field in platinum than in copper.
+			</caption>
+
+  		</figure>
+  		<p>
+  			How can the electric field be different in the two metals that are welded together? You can trace the difference in the electric field to an accumulation of charges at the interface layer.  As shown in <xref ref="fig-current-through-two-metals-junction" />, if current goes from copper into platinum a layer of positive charges will build up at the interface.  The excess charges at the interface create electric field that adds to the external electric field inside platinum and opposes inside copper.   
+  		</p>
+  		<p>
+  			We can use Gauss's law to deduce the charge density that builds up at the interface.  Let  <m>\sigma_{12}</m> be the charge density at the interface, and <m>E_1</m> and <m>E_2</m> be the magnitudes of the electric fields in the two wires.  Now imagine a Gaussian surface in the shape of a pill box about the interface as shown in <xref ref="fig-current-junction-2" />.  
+  		</p>
+		<figure xml:id="fig-current-junction-2">
+			<image source="./images/electric-current/current-junction-2.png" width="40%"/>
+			<caption> 
+				Gaussian pillbox straddling the interface used to find the excess charge density at the interface.
+			</caption>
+
+  		</figure>
+  		<p>
+			Note the flux is non-zero through the ends while zero through the side.  Let <m>A</m> be the area of cross-section of the pill box at the interface.  Then from Gauss's law we obtain the following.
+			<me>
+				E_2A - E_1 A = \frac{\sigma_{12}A}{\epsilon_0}
+			</me>
+			Hence, the charge density at the interface is proportional to the difference in the magnitudes of the electric field in the two wires.
+			<me>
+				\sigma_{12} = \epsilon_0\left(	E_2 - E_1 \right).
+			</me>
+			Question: What would you expect the electric fields if you weld platinum to nichrome? See if you can figure it out.
+ 		</p>
+
+	</subsection>
+
+
+
+
+
+			<!-- The resistivity of some common materials are given in Table \ref{tab:resistivity}.  Note that metals have very low resistivities, of the order of  <m>10^{-7}\Omega . \text{m} <m>, and insulators have high resistivities.   There are materials, called semiconductors, whose resistivities fall between those of metals and insulators.
+			\begin{table}
+			\centering
+			\caption{Resistivities at <m>20^{\circ}C</m> ( Various sources)} \label{tab:resistivity}
+			\begin{tabular}{lcc}
+			\hline\hline
+			Material	& Resistivity  & Temperature coefficient\\
+								& <m>\rho (\times 10^{-8} \text{m})</m>	& <m>\alpha(\times 10^{-3})\text{C}^{-1}</m>\\
+			\hline
+			{\bf Typical Metals}		&   &  \\
+			Silver	&1.6	&6.1 \\
+			Copper 	&1.7	&6.8 \\
+			Aluminum	&2.7	&4.3\\
+			Gold	&2.2	&3.4\\
+			Tungsten	&5.6	&4.5\\
+			Nickel	&7.0	&6.0\\
+			Iron	&9.8	&5.0\\
+			Platinum	&</m>1.0 \times 10^1</m>	&3.9\\
+			Lead	&</m>2.1 \times 10^1</m>	&3.9\\
+			Manganin  &</m>4.8 \times 10^1</m> 	&</m>2.0 \times 10^{-3}</m>\\
+			(Cu, Mn, Ni alloy)	&  &  \\
+			Mercury	& <m>9.8 \times 10^1</m>	&</m>9 \times 10^{-1}</m>\\
+			Nichrome	&</m>1.0 \times 10^2</m>	&</m>4 \times 10^{-1}</m>\\
+			(Ni,Fe,Cr alloy) & & \\
+			\hline
+			{\bf Typical Semiconductors} &  & \\		
+			Pure Silicon	& <m>2.5 \times  10^{11}</m> & \\	
+			n-type Silicon <m>(n= 10^{23} m^{-3})</m>	& <m>8.7 \times 10^4</m>	\\
+			p-type Silicon <m>(p=10^{23} m^{-3})</m>  & <m>2.8 \times 10^5</m>	\\
+			\hline
+			{\bf Typical Insulators}	& & \\	
+			Pure water 	& <m>2.5 \times 10^{13}</m> & \\
+			Glass	& <m>10^{18}</m> - <m>10^{22}</m> & 	\\
+			Polystyrene	& <m>>10^{22}</m> & \\	
+			Hard rubber	& <m>10^{21}</m> - <m>10^{23}</m> & \\
+			\hline\hline
+			\end{tabular}
+			\end{table}	 -->
+
+
+
+	<exercise xml:id="Resistance-from-Resitivity-Length-and-Thickness"><title> Resistance from Resitivity, Length, and Thickness </title>
+		<statement>
+			<p>
+				Find the resistances of <m>10\text{ m}</m> of (a) 14-gauge copper wire (diameter <m>0.0642 \text{ in}</m>), (b) 10-gauge copper wire (diameter <m> 0.102 \text{ in}</m>), and (c) 14-gauge nichrome wire.  
+
+			</p>
+			<p>
+				Data: <m>\rho_\text{Cu} = 1.7\times 10^{-8}\:\Omega.\text{m}</m>, 
+					<m>\rho_\text{nichrome} = 1.0\times 10^{-6}\:\Omega.\text{m}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Use <m>R=\rho L/A</m>.  </p> </hint>
+		<answer> <p>  (a)  <m>8.1\times 10^{-2}\Omega</m>, (b)  <m>3.2\times 10^{-2}\Omega</m>, (c)  <m>4.8\Omega</m>. </p> </answer>
+		<solution> 
+			<p>
+				Let us first convert the diameters in metric unit.
+				<md>
+					<mrow> D_{10} \amp = 0.102\: \text{in} = 2.59\times 10^{-3}\:\text{m}, </mrow>
+					<mrow>  D_{14} \amp = 0.0642\: \text{in} = 1.63\times 10^{-3}\:\text{m}.</mrow>
+				</md>
+			</p>
+			<p>
+				(a) Use the formula of resistance of a wire. 
+				<md>
+					<mrow> R_{14} \amp = \rho\:\dfrac{L}{A} </mrow>
+					<mrow> \amp = 1.7\times 10^{-8}\:\Omega.\text{m}\times \dfrac{10\:\text{m}}{\pi (0.00163/2)^2\:\text{m}^2} = 8.1\times 10^{-2}\:\Omega.</mrow>
+				</md>
+			</p>
+			<p>
+				(b) 
+				<md>
+					<mrow> R_{10} \amp = \rho\:\dfrac{L}{A}</mrow>
+					<mrow> \amp = 1.7\times 10^{-8}\:\Omega.\text{m}\times \dfrac{10\:\text{m}}{\pi (0.00259/2)^2\:\text{m}^2} = 3.2\times 10^{-2}\:\Omega.
+					</mrow>
+				</md>
+			</p>
+			<p>
+				(c)	 For this part we need the resistivity of nichrome.
+				<md>
+					<mrow> R  \amp = \rho\:\dfrac{L}{A}</mrow>
+					<mrow> \amp = 1.0\times 10^{-6}\:\Omega.\text{m}\times \dfrac{10\:\text{m}}{\pi (0.00259/2)^2\:\text{m}^2} = 4.8 \:\Omega.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Resistivity-and-Conductivity-from-Ohms-Law-Application"><title> Resistivity and Conductivity from Ohm's Law Application </title>
+		<statement>
+			<p>
+				A <m>2\text{-m}</m> wire of radius <m>1.0 \text{ mm}</m> of an unknown material with <m>10.0 \text{ V}</m> across its ends carries a current of <m>0.5 \text{ A}</m>.  (a) Find the conductivity of the material. (b) Evaluate the resistivity of the material.  
+			</p>
+
+		</statement>
+		<hint> <p> First find the resistance, <m>R</m>.  </p> </hint>
+		<answer> <p> (a)  <m>3.18\times 10^4\ \Omega^{-1}\text{m}^{-1}</m>, (b)  <m>3.18\times 10^{-5}\ \Omega.\text{m}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We will find the resistance by Ohm’s law and then use it to find the resistivity and conductivity.
+				<me>
+					R = \dfrac{\Delta \phi}{I} = \dfrac{10\:\text{V}}{0.5\:\text{A}} = 20 \:\Omega.
+				</me>
+				(a)	The conductivity is then,
+				<md>
+					<mrow> \sigma \amp = \dfrac{L}{A\:R}</mrow>
+					<mrow> \amp = \dfrac{2\:\text{m}}{(\pi\: 0.001^2\:\text{m}^2)\times 20\:\Omega}
+					</mrow>
+					<mrow> \amp = 3.18\times 10^4\:\dfrac{1}{\Omega.\text{m}}.</mrow>
+				</md>
+				(b)	The resistivity is the inverse of conductivity.
+				<me>
+					\rho = \dfrac{1}{\sigma} =  3.14\times 10^{-5}\:\Omega.\text{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Resistivity-and-Conductivity-from-Ohms-Law-on-a-Slab"><title> Resistivity and Conductivity from Ohm's Law on a Slab</title>
+		<statement>
+			<p>
+				A newly discovered material is made into a slab of width <m>3.0 \text{ mm}</m>, length <m>2.0 \text{ cm}</m>, and thickness <m>1.0 \text{ mm}</m>.  In an experiment, it is noticed that  <m>2.0 \text{ mV}</m> applied across its length prodices <m>1.0\ \mu\text{A}</m> current.  (a) Evaluate the resisitivity of the material.  (b) What is the conductivity of the material? 
+
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use Ohm's law and then use <m>R</m> in terms of <m>\rho</m>. (b) Use <m>\rho= 1/\sigma</m>.  </p> </hint>
+		<answer> <p> (a)  <m>0.3\ \Omega.\text{m}</m>, (b)  <m>3.3\ \Omega^{-1}\text{m}^{-1}</m>.  </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a) First we find the resistance from the current/voltage data.
+				<me>
+					R = \dfrac{\Delta \phi}{I} = \dfrac{2\text{ mV}}{1.0\ \mu\text{A}} = 2000\ \Omega.
+				</me>
+
+				Using the Ohm’s law formula into the resistance/resistivity/conductivity formula we obtain
+				<md>
+					<mrow> \rho \amp = \dfrac{A R}{L}</mrow>
+					<mrow> \amp    = \dfrac{( (0.001\times 0.003)\:\text{m}^2)\times  2000\ \Omega}{0.02\:\text{m}} = 0.3\:\Omega.\text{m}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				(b)	The resistivity is inverse of conductivity
+				<me>
+					\sigma = \dfrac{1}{\rho} =   3.3\: \dfrac{1}{\Omega.\text{m}}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Potential-Drop-Across-and-Electric-Field-in-a-Wire-Carrying-Current"><title> Potential Drop Across and Electric Field in a Wire Carrying Current </title>
+		<statement>
+			<p>
+				A constant voltage power source across a 12-gauge Nichrome wire (radius <m>0.0404 \text{ in}</m>) of length <m>20 \text{ m}</m> produces a current of <m>3 \text{ A}</m>. (a) What is the voltage across the wire? (b) Find the electric field in the wire.
+			</p>
+			<p>
+				Data: <m>\rho_\text{nichrome} = 1.0\times 10^{-6}\:\Omega.\text{m} </m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Electric field magnitude wil be potential drop divided by the length. </p> </hint>
+		<answer> <p> (a) <m>18.2\text{ V}</m>, (b) <m>0.91\text{ V/m}</m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				We assume same current throughout the wire. That means same current density throughout the wire. From Ohm's law, it means electric field is constant througout the wire. Therefore, we can get electric field by dividing the potental drop across the wire by the length of the wire.
+			</p>
+			<p>
+				To find the potential drop, we first work out the resistance.
+				<md>
+					<mrow> R \amp = \rho\:\dfrac{L}{A} </mrow>
+					<mrow> \amp = 1.0\times 10^{-6}\:\Omega.\text{m}\times \dfrac{10\:\text{m}}{\pi\: 0.0010262^2\:\text{m}^2} = 6.0\:\Omega. </mrow>
+				</md>
+
+			</p>
+			<p>  (a) Therefore, the voltage drop across the wire will be
+				<me>
+					\Delta \phi = I R = (3\:\text{A})(6.05\:\Omega) = 18.2\:\text{V}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>		
+			<p>
+				(b) 
+				The magnitude of the electric field in the wire will be
+				<me>
+					E = V/L = \dfrac{18.2\:\text{V}}{20\:\text{m}} = 0.91 \text{ V/m}.
+				</me>
+
+ 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Current-Density-in-a-Wire-from-a-Potential-Difference-across-the-Wire"><title> Current Density in a Wire from a Potential Difference across the Wire </title>
+		<statement>
+			<p>
+				An aluminum wire of diameter <m>1 \text{ mm}</m> and length <m>50 \text{ m}</m>  is connected across a <m>3\text{-V}</m> battery.  Find the current density in the wire.  
+
+			</p>
+			<p>
+				Data: <m> \rho_\text{Al} = 2.7\times 10^{-8}\:\Omega.\textrm{m}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m>J=I/A</m>. </p> </hint>
+		<answer> <p> <m>2.2\times 10^{6}\:\text{A/m}^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The current density is related to the current and area of cross-section by <m>J = I/A</m>. The area of cross-section <m>A</m> is
+				<me>
+					A = \dfrac{\pi}{4} D^2 = \dfrac{\pi}{4} 0.001^2 = 7.85\times 10^{-7}\text{ m}^2.
+				</me>
+				For current, we need resistance,
+				<md>
+					<mrow> R \amp = \rho \dfrac{L}{A} </mrow>
+					<mrow> \amp = 2.7\times 10^{-8}\:\Omega.\textrm{m} \times \dfrac{ 50\text{ m}}{7.85\times 10^{-5}\text{ m}^2 } = 1.72\ \Omega.</mrow>
+				</md>
+				Therefore, current in the wire is
+				<me>
+					I = \dfrac{\Delta \phi}{R} = \dfrac{3\text{ V}}{1.72\ \Omega} = 1.74\text{ A}.
+				</me>
+				Now, we can compute the current density.
+				<me>
+					J= \dfrac{I}{A} = \dfrac{1.74\text{ A}}{7.85\times 10^{-7}\text{ m}^2} = 2.2\times 10^{6}\:\text{A/m}^2.
+				</me>
+ 
+			</p>
+		</solution>
+	</exercise> 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+</section>

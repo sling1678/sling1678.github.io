@@ -1,0 +1,113 @@
+<section xml:id="forced-oscillations-of-a-string"><title> Resonance of a String</title>
+	<introduction>
+        <p>
+            One way of vibrating a stretched string in one of the normal modes is to pull the string to match the shape of the normal mode profile, and then release the deformed string from rest.  The subsequent motion of the string will be the oscillatory motion of that mode. Although this method will work, but it is very difficult to achieve.
+        </p>
+ 
+        <p>
+            A better way to excite a string in a normal mode oscillation is to use <term>resonance </term>  and drive the string into the normal mode. In the case of a simple harmonic oscillator, we had only one frequency to excite. Here, we have a large number of normal frequencies, and we can excite any one of them by driving at the frequency of that normal mode. To do that we attach the string to an oscillator near a node of the corresponding normal mode as shown in <xref ref="fig-string-mode1-driven-1"/>  and then let vibrate the oscillator at the frequency of he mode.
+        </p>
+        <figure xml:id="fig-string-mode1-driven-1">
+            <caption>
+                Generation of standing wave by driving vibrations by an oscillator near the node of the fundamental normal mode.
+            </caption>
+            <image source="./images/coupled-vibrations/string-mode1-driven-1.png" width="80%"/>
+        </figure>
+ 
+        <p>
+            If we vibrate the string at the second normal mode of the string, we will excite the string to vibrate in this mode as illustrated in <xref ref="fig-driving-resonance-second-mode-on-string"/>.
+        </p>
+        <figure xml:id="fig-driving-resonance-second-mode-on-string">
+            <caption>
+                Driving resonance of the second normal mode of a string.
+            </caption>
+            <image source="./images/coupled-vibrations/driving-resonance-second-mode-on-string.png" width="80%"/>
+        </figure>
+            
+        <p>
+            This experimental situation presents the following conditions on the ends of the string, called <term>boundary conditions</term>. With <m>y</m> for the displacement, <m>x</m> axis horizontal with origin at the node, the condition on the vibration function will be
+            <mdn>
+                <mrow xml:id="eq-boundary-cond-1">\amp y(x,t)|_{x=-\epsilon} = A_0\ cos(\omega t),</mrow>
+                <mrow xml:id="eq-boundary-cond-2">\amp y(x,t)|_{x=L} = 0.</mrow>
+            </mdn>
+            Here <m>\epsilon \lt\lt \lambda</m> and you can think of vibrator being <q>at the node</q>. When frequency <m>\omega</m> of the driver is near the frequency of a normal mode, the amplitude <m>A</m> is much larger than <m>A_0</m>, which is the amplitude of the tip of the vibrator, due to resonance. 
+        </p>
+        <p>
+            The function that describes the the wave on the string in a normal mode 
+            <men xml:id="eq-driving-fundamental-mode-string-1">
+                y(x,t) = A\sin(k_n x - \omega_n t),
+            </men>
+            where <m>\omega_n</m> is the angular frequency and <m>k_n</m> the wavenumber of the mode. In <xref ref="fig-string-mode1-driven-1"/>>,
+            <m>n=1</m> with
+            <me>
+                k_1 \approx 2L,\ \ \omega_1 = v\,k_1,\ \ v=\sqrt{T/\mu},
+            </me>
+            where <m>T</m> is the tension and <m>\mu</m> is mass per unit length in the string. Other modes are related to this fundamental by <m>\omega_n = n \omega_1</m> and <m>k_n = n k_1</m>.
+        </p>
+        <p>
+            In <xref ref="fig-string-mode1-driven-1"/>, Eq. <xref ref="eq-boundary-cond-1"/> tells us that amplitude of the tip of oscillator will be related to the amplitude of the wave generated and the location of the node. Suppose, the mode is at its highest at <m>t=0</m>, then the tip  will fall on the mode function given in Eq. <xref ref="eq-driving-fundamental-mode-string-1"/> at <m>x=-\epsilon</m> and <m>t=0</m>.
+            <men>
+                A\sin(k_n \epsilon) = A_0.
+            </men>
+ 
+            In <xref ref="fig-string-mode1-driven-1"/>, we have mode <m>n=1</m>. This gives
+            <men>
+                A = \dfrac{A_0}{\sin(k_n\epsilon)} = \dfrac{A_0}{ \sin( \pi\epsilon/L)}.
+            </men>
+            As an example from lab, let's say <m>\epsilon=2.0\text{ cm}</m>, <m>A_0=1.0\text{ cm}</m>, <m>L=100.0\text{ cm}</m>. Then, the amplitue of the standing wave generated will be <m>A = 16\text{ cm}</m>.
+        </p>
+
+    </introduction>
+
+    <exercise xml:id="exercise-Exciting-a-Guitar-String-to-Resonate">
+        <title>Exciting a Guitar String to Resonate</title>
+        <statement>
+            <p>
+                A Nylon guitar string has diameter <m>1.33\text{ mm}</m> and length <m>65\text{ cm}</m>. The density of Nylon is <m>1.14\text{ g/cm}^3</m>. The string is tightened to a tension of <m>100\text{ N}</m>. What are the frequencies of three lowest frequency modes that you can excite the string into?
+            </p>
+        </statement>
+        <hint><p>Use <m>f\lambda = v =\sqrt{T/\mu}</m>. Find <m>\mu</m> from regular density <m>\rho</m> by using total mass of the string to find the relation <m>\mu = \rho A</m>, where <m>A</m> is the area of cross section. Also make sure you use a consistent set of units. </p></hint>
+        <answer><p><m>194\text{ Hz}</m>, <m>387\text{ Hz}</m>, <m>581\text{ Hz}</m>. </p></answer>
+        <solution>
+            <p>
+                The wavelengths of the lowest three modes will be <m>\lambda_1=2L</m>, <m>\lambda_2=L</m>, and <m>\lambda_3=2L/3</m>. Lets write these as <m>\lambda_n = 2L/n</m>. Then, the frequency of the three lowest modes will be
+                <me>
+                    f_n = \frac{v}{\lambda_n} = \frac{nv}{2L} = n f_1, \text{ with } f_1 = \frac{v}{2L}, 
+                </me>
+                where <m>v</m> is the wave speed, which is related to the tension <m>T</m> and linear density <m>\mu</m>.
+                <me>
+                    v = \sqrt{\frac{T}{\mu}}.
+                </me>
+                Let <m>\rho</m> denote the density, i.e., mass per unit volume, and <m>A</m> the area of cross-section of the string. Equating the total mass of string using linear density and regular density will give us the relation from which we can compute the linear density. Let <m>m</m> denote the total mass and <m>V=AL</m> the total volume.
+                <me>
+                    m = \mu L,\ \ \ m = \rho V = \rho A L.
+                </me>
+                Therefore, 
+                <me>
+                    \mu = \rho A.
+                </me>
+                Here <m>A=\pi R^2 = \pi D^2/4</m>, where <m>D</m> is the diameter. Numerically
+                <me>
+                    A = \frac{\pi}{4} (1.33\times10^{-3})^2 = 1.389\times 10^{-6}\text{ m}^2. 
+                </me>
+                Therefore,
+                <me>
+                    \mu = 1140 \text{ kg/m}^3 \times 1.389\times 10^{-6}\text{ m}^2 = 1.58\times 10^{-3}\text{ kg/m}.
+                </me> 
+                We use this to get <m>v</m>.
+                <me>
+                    v = \sqrt{\frac{100\text{ N}}{1.58\times 10^{-3}\text{ kg/m}}} =  251.6\text{ m/s}.
+                </me>
+                Therefore, the three lowest frequencies are
+                <md>
+                    <mrow> \amp f_1 = \frac{v}{2L} = \frac{251.6}{2\times 0.65} = 194\text{ Hz}.  </mrow>
+                    <mrow> \amp f_2 = 2 \times f_1 = 387\text{ Hz}.  </mrow>
+                    <mrow> \amp f_3 = 3 \times f_1 = 581\text{ Hz}.  </mrow>
+                </md>
+
+            </p>
+        </solution>
+    </exercise>
+
+
+</section>

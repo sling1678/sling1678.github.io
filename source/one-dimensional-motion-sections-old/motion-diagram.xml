@@ -1,0 +1,115 @@
+<section xml:id="oneD-Tracking-Motion"><title> Tracking Motion </title>
+
+	<introduction>
+		<p>
+			Tracking a motion is the most basic way of representing motion. If you have taken a road trip or train journey, you are already familiar with this idea. Say, you mark the time you arrived at various points on a map from a road trip from Boston to San Framcisco as in <xref ref="fig-boston-to-san-francisco-map"/>. This would be your <term> motion diagram</term>.
+		</p>
+		<figure xml:id="fig-boston-to-san-francisco-map">
+			<caption> A trip from Boston to San Francisco with each day marked is an example of a motion diagram. Credits: https://maps.google.com.
+			</caption>
+			<image source="./images/one-dim-motion/boston-to-san-francisco-map.png" width="90%"/>
+		</figure>
+		<p>
+			If you were moving on a straight path, you could  view the motion occuring on one of the Cartesian axes, say the <m> x </m> axis. Your markings would give your <m> x </m> coordinates at various times, for which we would use letter <m> t </m>. This process yields <m> x(t) </m>, i.e., <m> x </m> coordinate as a function of <m> t </m>, making your markings amenable to further mathematical analysis.
+
+		</p>
+		<p>
+			Often we mark position at regular times so that motion diagram immediately tells us qualitative aspects of the motion, such as where an object is moving steadily, where speeding up, and where slowing down, as shown below.
+		</p>
+		<p>
+			<xref ref="fig-motion-diagram-and-xvst"/> shows two ways of tracking a car moving on a straight road - (a) a motion diagram and (b) a <m> x </m> versus <m> t</m> plot. 
+		</p>
+
+		<figure xml:id="fig-motion-diagram-and-xvst"> 
+			<caption>
+				Two ways to show motion. (a) A motion diagram shows position at regular intervals of time - you might think of the dots marked every second. (b) A <m> x </m> versus <m> t </m> plot. The object is slowing between A and B, speeding up between C and D, and is steady between B and C.
+			</caption>
+
+			<image source="./images/one-dim-motion/motion-diagram.png" width="100%"/>
+		</figure>
+
+		<p>
+			From the motion diagram in <xref ref="fig-motion-diagram-and-xvst" />, you can immediately sense that
+			the car is slowing between A and B, moves at a steady pace between B and C, and speeding up betwen C and D. 
+		</p>
+		<p>
+			In <m> x </m> versus <m> t </m> plot in <xref ref="fig-motion-diagram-and-xvst" />, we can also connect the points and obtain a continuous function <m> x(t) </m> from the plot. Function <m>x(t)</m> can be used to define rate of motion, such as velocity, and other aspects of motion analytically.
+		</p>
+	</introduction>
+
+	<exercise xml:id="ex-A-Boy-Running-On-a-Straight-Track-Uniformly"><title> A Boy Running On a Straight Track Uniformly </title>
+		<statement>
+			<p>
+				<xref ref="fig-ex-boy-running-on-straight-track" /> shows a boy running on a straight track. The position of the boy is marked every 2 seconds. The line below the sketch shows the scale of length in the drawing.
+			</p>
+			<p>
+				(a) Draw <m> x </m> versus <m> t </m> representation on the motion diagram.
+			</p>
+			<p>
+				(b) Is the motion steady, slowing down, or speeding up? How can you tell?
+			</p>
+			<figure xml:id="fig-ex-boy-running-on-straight-track">
+				<caption> 
+					Figure for <xref ref="ex-A-Boy-Running-On-a-Straight-Track-Uniformly" />.
+				</caption>
+				<image source="./images/one-dim-motion/ex-boy-running-on-straight-track.png" width="90%"/>
+			</figure>
+
+		</statement>
+		<hint> <p>  Use the scale to figure out distances from where the boy is at point marked 1. </p> </hint>
+		<answer> <p> (a) See solution (b) Steady since covering same distance in same amount of time. </p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a) The plot in <xref ref="fig-ex-boy-running-on-straight-track-solution" /> shows <m> x </m> values  along the ordinate and <m> t </m> values along the abscissa.
+
+				<figure xml:id="fig-ex-boy-running-on-straight-track-solution">
+					<caption>
+						Figure for <xref ref="ex-A-Boy-Running-On-a-Straight-Track-Uniformly" />, part (a)
+					</caption>
+					<image source="./images/one-dim-motion/ex-boy-running-on-straight-track-solution.png" width="60%"/>
+				</figure>
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				(b) Steady since covering same distance in same amount of time. Also, steady since the plot of <m> x </m> vs <m> t </m> is a straight line.
+			</p>
+		</solution>
+	</exercise>	
+
+
+
+
+
+	<exercise xml:id="ex-motion-diagram-from-x-vs-t"><title> From <m> x </m> Versus <m> t </m> Plot to Motion Diagram </title>
+		<statement>
+			<p> <xref ref="fig-x-vs-t-for-vx-calc" />  shows a plot of <m> x </m> versus <m> t </m>. Draw a motion diagram that will result in this plot. Show space scales and indicate value of time on your diagram.
+			</p>
+
+			<figure xml:id="fig-x-vs-t-for-vx-calc">
+				<caption>
+					Figure for <xref ref="ex-motion-diagram-from-x-vs-t" />.
+				</caption>
+				<image source="./images/one-dim-motion/x-vs-t-for-vx-calc.png" width="60%"/>
+			</figure>
+
+		</statement>
+		<hint> <p>  Mark points on the ordinate at equal-time intervals. </p> </hint>
+		<answer> <p> See solution.  </p> </answer>
+		<solution> 
+			<p>
+				First we mark points on the ordinate axis at equal-time intervals. We choose to mark points separated by <m>10\text{ s}</m> intervals. These points are shown as dots in <m>x</m> vs <m>t</m> plot in <xref ref="fig-ex-motion-diagram-from-x-vs-t-solution" />. Then we draw points on the <m> x </m> axis only to get the motion diagram, where we now mark each point with 1, 2, 3, ..., which stand for the instants, with 2 standing for 10 sec, 3 for 20 sec, etc.
+			</p>
+			<figure xml:id="fig-ex-motion-diagram-from-x-vs-t-solution">
+				<caption>
+					Constructing a motion diagram (the line on the right side) from <m>x</m> vs <m>t</m> plot (the plot on the left side).
+				</caption>
+				<image source="./images/one-dim-motion/ex-motion-diagram-from-x-vs-t-solution.png" width="60%"/>
+			</figure>
+			
+		</solution>
+	</exercise>
+
+
+
+</section>

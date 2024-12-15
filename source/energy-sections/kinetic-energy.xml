@@ -1,0 +1,316 @@
+<section xml:id="Kinetic-Energy"> <title> Kinetic Energy</title>
+	<introduction>
+		<p>
+			Kinetic energy or the motional energy of a particle of mass <m>m</m> moving with speed <m> v</m> is defined by the following formula.
+			<men xml:id="eq-kinetic-energy-def-fundamental">
+				K = \dfrac{1}{2}\,m\,v^2.
+			</men >
+			Sometimes, we will also denote kinetic energy by <m> \text{KE}</m>. Using momentum <m>p=mv</m>, we can also write kinetic energy as
+			<me>
+				K = \dfrac{p^2}{2m}.
+			</me>
+			The value of KE is frame-dependent. Suppose you are sitting in a train which is moving with respect to the ground. Then, your kinetic energy will be zero with respect to the train train but non-zero with respect to the ground.
+		</p>
+		<p>
+			An important thing to note about kinetic energy is that it is a scalar quantity - just a number, actually a positive number. If a system contains more than one particle, the total kinetic energy is just an algebraic sum of the parts.
+			<men xml:id="eq-kinetic-energy-def-n-body">
+				K = \dfrac{1}{2}\,m_1\,v_1^2 + \dfrac{1}{2}\,m_2\,v_2^2 + \dfrac{1}{2}\,m_3\,v_3^2 + \cdots
+			</men>
+		</p>
+		<p>
+			<alert> If every particle of a body is moving with the same speed</alert>, say <m> v</m>, then, the sum on the right side is trivial. 
+			<me>
+				K = \dfrac{1}{2}\,m_1\,v^2 + \dfrac{1}{2}\,m_2\,v^2 + \dfrac{1}{2}\,m_3\,v^2 + \cdots = \ \dfrac{1}{2}\,M\, v^2, 
+			</me>			
+			where <m> M = \left( \,m_1 + \,m_2  + \,m_3  + \cdots\, \right) </m>, the total mass. This would be the case for a rigid body in a <alert> pure translation motion</alert>.
+		</p>
+		<p>
+			The unit of kinetic energy can be obtained by multiplying the units of mass and velocity squared. In SI system, the result is named <term>Joule</term> and abbreviated <m> \text{J} </m>.
+			<me>
+				\text{J} = \text{kg.m}^2\text{/s}^2
+			</me>
+		</p>
+	</introduction>
+
+	<subsection><title>Kinetic Energy for Circular Motion</title>
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				Often we encounter situations in which a mass is moving in a circle. In these cases, we can write speed <m>v</m> in terms of angular speed <m>\omega</m> and radius <m>R</m> of the circle.
+				<me>
+					v = R \omega.
+				</me>
+				Therefore, kinetic energy will have alternate expression.
+				<men>
+					K = \frac{1}{2} m v^2 = \frac{1}{2} m R^2 \omega^2. 
+				</men>
+			</p>
+			<p></p>
+			<figure xml:id="fig-mass-moving-in-a-circle">
+				<caption></caption>
+				<image source="./images/energy/mass-moving-in-a-circle.png" width="50%"/>
+			</figure>
+		</sidebyside>
+
+		
+		<p>
+			When an object is going in a circle, we also say that it is rotating about an axis through the center of the circle. In the language of rotation the quantity multiplying <m>\frac{1}{2}\omega^2</m> in the formula for kinetic energy, is also called moment of inertia. Moment of inertia is usually denoted by letter <m>I</m>.
+			<me>
+				I = m R^2.
+			</me>
+			Therefore, when a point mass <m>m</m> is moving in a circle with angular speed <m>\omega</m>, its kinetic energy formula can also be written as
+			<me>
+				K =  \frac{1}{2} I \omega^2, 
+			</me>
+			which has a nice analogy to the <m>\frac{1}{2}mv^2</m> with <m>I</m> replacing <m>m</m> and <m>\omega</m> replacing <m>v</m>.
+		</p>
+	</subsection>
+
+
+
+	<exercise xml:id="ex-Kinetic-Energy-of-a-Baton-in-Translation-Motion"><title> Kinetic Energy of a Baton in Translation Motion</title>
+		<statement>
+			<sidebyside widths="60% 5% 35%">
+				<p>
+					A baton has two balls at the end of a light beam. Let the masses of the two balls be <m> 0.25\text{ kg}</m> each. The baton is gently dropped from some height so that, after some time, the two balls have the same speed of <m> 10\text{ m/s} </m>. What is the kinetic energy of the baton at this instant? Ignore the mass of the beam.
+				</p>
+				<p>
+				</p>
+				<image source="./images/energy/ke-baton-falling-same-mass-same-speed.png" width="50%"/>
+			</sidebyside>
+
+		</statement>
+		<hint> <p>  <m> \dfrac{1}{2}Mv^2 </m>. </p> </hint>
+		<answer> <p> <m> 25\text{ kg.m}^2\text{/s}^2. </m>  </p> </answer>
+		<solution> 
+			<p>
+				Since the two masses are moving at the same speed, we can just add up the masses and apply one simple formula. 
+				<md>
+					<mrow> K \amp = \dfrac{1}{2}m_1v^2 + \dfrac{1}{2}m_2v^2  = \dfrac{1}{2}(m_1 + m_2)v^2</mrow>
+					<mrow> \amp = \dfrac{1}{2} 0.5\times 10^2 = 25 \text{ kg.m}^2\text{/s}^2 = 25\text{ J}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Kinetic-Energy-of-a-Tumbling-Baton"><title> Kinetic Energy of a Tumbling Baton</title>
+		<statement>
+			
+			<p>
+				A baton has two balls at the end of a light beam. Let the masses of the two balls be <m> 0.25\text{ kg}</m> each. The baton is throw such that at a later time the baton is tumbling such that at a particular instant, one of the balls has a speed of <m> 10\text{ m/s} </m> and the other has the speed of <m> 16\text{ m/s} </m>. What is the kinetic energy of the baton? Ignore the mass of the beam.
+			</p>
+
+			
+
+		</statement>
+		<hint> <p>  Use <m> \dfrac{1}{2} m_1 v_1^2 +   \dfrac{1}{2} m_2 v_2^2</m>. </p> </hint>
+		<answer> <p> <m> 44.5\text{ J}. </m>  </p> </answer>
+		<solution> 
+			<p>
+				Since the two masses are moving at different speeds, we will have to work out the kinetic energies of the two balls separately and then add them up.
+				<md>
+					<mrow> K \amp = \dfrac{1}{2} m_1 v_1^2 +   \dfrac{1}{2} m_2 v_2^2 </mrow>
+					<mrow>  \amp = \dfrac{1}{2} m  ( v_1^2 +   v_2^2 )\</mrow>
+					<mrow>  \amp = \dfrac{1}{2} \times  0.25 \times ( 10^2 +   16^2 ) = 44.5 \text{ J}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Kinetic-Energy-With-In-Different-Frames"><title>Kinetic Energy With In Different Frames</title>
+
+		<statement>
+			<p>
+				A train is moving at speed <m> 3\text{ m/s}</m> towards West. Inside the train, 
+				a toy car of mass <m>0.2\text{ kg}</m> is moving with speed <m>4\text{ m/s}</m>with respect to the train  due North. (a) What is the kinetic energy of the toy with respect to the train? (b) What is the kinetic energy of the toy with respect to the ground? 
+			</p>
+		</statement>
+		<hint><p>
+			(a) Use the given speed. (b) Add velocities to find the velocity of the toy with respect to the ground. Find speed from this velocity.
+		</p></hint>
+		<answer><p>
+			(a) <m>1.6\text{ J}</m>, (b) <m>2.5\text{ J}</m>.
+		</p></answer>
+		<solution><title>(a)</title>
+			<p>
+				Since speed with respect to train is already given in the problem, its easy.
+				<me>
+					K = \frac{1}{2}\times 0.2 \times 4^2 = 1.6\text{ J}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				We need to find the speed with respect to the ground from the addition of the two velocities.
+				<me>
+					\vec v_\text{of car wrt ground} = \vec v_\text{of train wrt ground} + \vec v_\text{of car wrt train}.
+				</me>
+				The magnitude of this velocity is needed for th eKE formula. This is a vector equation. Let West be positive <m>x</m> and North be positive <m>y</m> directions. Then, we get
+				<me>
+					\vec v_\text{of car wrt ground}  = 3\,\hat i + 4\, \hat j.
+				</me>
+				Therefore, speed of interest will be
+				<me>
+					v = \sqrt{3^2 + 4^2} = 5\text{ m/s}.
+				</me>
+		 		Therefore, kinetic energy of the toy with respect to ground will be
+				<me>
+					K = \frac{1}{2}\times 0.2 \times 5^2 = 2.5\text{ J}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Kinetic-Energy-of-a-Baton-Rotating-about-the0-Center"><title> Kinetic Energy of a Baton Rotating about the Center</title>
+		<statement>
+			<sidebyside widths="60% 5% 35%">
+				<p>
+					A baton has two balls at the end of a light beam of length <m> 0.80\text{ m} </m>. Let the masses of the two balls be <m> 0.25\text{ kg}</m> each. The baton is gently held at the center and rotated at an angular speed of <m> 10\text{ rad/sec} </m>. 
+						What is the kinetic energy of the baton? Ignore the mass of the beam.
+				</p>
+				<p> </p>
+				<image source="./images/energy/ke-baton-rotating-about-center.png" width="50%"/>
+			</sidebyside>
+			
+
+		</statement>
+		<hint> <p>  Use <m> I = m_1r_1^2 + m_2r_2^2</m>. </p> </hint>
+		<answer> <p> <m> 4.0\text{ J}. </m>  </p> </answer>
+		<solution> 
+			<p>
+				Since the baton is in a pure rotation, we wil use the kinetic energy formula for the pure rotation.
+				<md>
+					<mrow> K \amp = \dfrac{1}{2}\, I\, \omega^2, </mrow>
+					<mrow>  \amp = \dfrac{1}{2}  (m_1r_1^2 + m_2r_2^2)\,\omega^2,</mrow>
+					<mrow>  \amp = \dfrac{1}{2}\, 2\, m\, r^2\, \omega^2, </mrow>
+					<mrow>  \amp =  0.25 \times 0.4^2\times 10^2 = 4.0 \text{ J}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Kinetic-Energy-of-a-Baton-Rotating-about-a-Point-away-from-the-Center"><title> Kinetic Energy of a Baton Rotating about a Point away from the Center</title>
+		<statement>
+			<sidebyside widths="60% 5% 35%">			
+				<p>
+					A baton has two balls at the end of a light beam of length <m> 0.80\text{ m} </m>. Let the masses of the two balls be <m> 0.25\text{ kg}</m> each. The baton is gently held 
+					<m> 0.20\text{ m}</m> away from the center and rotated at an angular speed of <m> 10\text{ rad/sec} </m>. In a pure rotation, all parts of a rigid body have the same angular speed.
+						What is the kinetic energy of the baton? Ignore the mass of the beam.
+				</p>
+				<p>
+				</p>
+				<image source="./images/energy/ke-baton-rotating-about-off-center.png" width="50%"/>
+			</sidebyside>	
+		</statement>
+		<hint> <p>  Use <m> I = m_1r_1^2 + m_2r_2^2</m>. </p> </hint>
+		<answer> <p> <m> 5.0\text{ J}. </m>  </p> </answer>
+		<solution> 
+			<p>
+				Since the baton is in a pure rotation, we wil use the kinetic energy formula for the pure rotation.
+				<md>
+					<mrow> K \amp = \dfrac{1}{2}\, I\, \omega^2, </mrow>
+					<mrow>  \amp = \dfrac{1}{2}  (m_1r_1^2 + m_2r_2^2)\,\omega^2,</mrow>
+					<mrow>  \amp = \dfrac{1}{2} m (r_1^2 + r_2^2)\,\omega^2</mrow>
+					<mrow>  \amp = \dfrac{1}{2} \times 0.25 \times ( 0.6^2 + 0.2^2)\times 10^2 = 5.0 \text{ J}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<!-- <subsection> <title> Kinetic Energy of Pure Rotation </title>
+		<sidebyside widths="60% 10% 30%">
+			<p> 
+				Equation <xref ref="eq-kinetic-energy-def-fundamental" /> for a particle moving in a circle can be written in another way. Let <m>\omega </m> be the angular speed of the particle moving with speed <m> v </m> in a circle of radius <m> r </m>. Here <m>\omega</m> is the rate in radian/sec that the line from the center rotates when the particle is moving in the circle. We know from our studies of circular motion that 
+				<me>
+					v = \omega\, r.
+				</me>
+			</p>
+			<p> </p>
+			<image source="./images/energy/kinetic-energy-circular-motion.png" width="50%"/>
+		</sidebyside>
+
+			
+		<p>
+			Replacing <m> v </m> in Eq. <xref ref="eq-kinetic-energy-def-fundamental" /> gives us the following alternate expression for the kinetic energy of a particle moving in a circle.
+			<men>
+				K_{\text{circle} } = \dfrac{1}{2}\, m r^2\, \omega^2.
+			</men>
+			In the case of a rotating rigid body, for pure rotation, each of its particle would have the same angular speed, but they will go in circles of different radii. Thus, for a rigid rotation, we would get
+			<men>
+				K_{\text{rotation} } = \dfrac{1}{2}\, \left(\, m_1 r_1^2 + m_2 r_2^2 + m_3 r_3^2 + \cdots\, \right)\ \omega^2,
+			</men>
+			where the quantity within the parenthesis is called the <term> moment of inertia</term>, which is denoted by <m> I </m>. 
+			<men>
+				I = m_1 r_1^2 + m_2 r_2^2 + m_3 r_3^2 + \cdots,
+			</men>
+			where <m> r_1 </m>, <m> r_2</m>, <m> r_3 </m>, <m> \cdots </m>, are the distance of masses <m> m_1</m>, <m> 2_2</m>, <m> 3_3 </m>, <m> \cdots </m>, from the axis of rotation. To find these distances, we draw perpedicular from the particle to the axis of rotation, and find the length of the line to the axis.
+		</p>
+		<p>
+			Thus, we get the kinetic energy formula for a pure rotation to be
+			<men>
+				K_{\text{rotation} } = \dfrac{1}{2}\, I\, \omega^2.
+			</men>
+			We will discuss rotation in more detail in the next chapter.			
+
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Kinetic-Energy-of-a-Baton-Rotating-about-the0-Center"><title> Kinetic Energy of a Baton Rotating about the Center</title>
+		<statement>
+			<sidebyside widths="60% 5% 35%">
+				<p>
+					A baton has two balls at the end of a light beam of length <m> 0.80\text{ m} </m>. Let the masses of the two balls be <m> 0.25\text{ kg}</m> each. The baton is gently held at the center and rotated at an angular speed of <m> 10\text{ rad/sec} </m>. 
+						What is the kinetic energy of the baton? Ignore the mass of the beam.
+				</p>
+				<p> </p>
+				<image source="./images/energy/ke-baton-rotating-about-center.png" width="50%"/>
+			</sidebyside>
+			
+
+		</statement>
+		<hint> <p>  Use <m> I = m_1r_1^2 + m_2r_2^2</m>. </p> </hint>
+		<answer> <p> <m> 4.0\text{ J}. </m>  </p> </answer>
+		<solution> 
+			<p>
+				Since the baton is in a pure rotation, we wil use the kinetic energy formula for the pure rotation.
+				<md>
+					<mrow> K \amp = \dfrac{1}{2}\, I\, \omega^2, </mrow>
+					<mrow>  \amp = \dfrac{1}{2}  (m_1r_1^2 + m_2r_2^2)\,\omega^2,</mrow>
+					<mrow>  \amp = \dfrac{1}{2}\, 2\, m\, r^2\, \omega^2, </mrow>
+					<mrow>  \amp = \dfrac{1}{2}\times 2\times 0.25 \times 0.4^2\times 10^2 = 4.0 \text{ J}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Kinetic-Energy-of-a-Baton-Rotating-about-a-Point-away-from-the-Center"><title> Kinetic Energy of a Baton Rotating about a Point away from the Center</title>
+		<statement>
+			<sidebyside widths="60% 5% 35%">			
+				<p>
+					A baton has two balls at the end of a light beam of length <m> 0.80\text{ m} </m>. Let the masses of the two balls be <m> 0.25\text{ kg}</m> each. The baton is gently held 
+					<m> 0.20\text{ m}</m> away from the center and rotated at an angular speed of <m> 10\text{ rad/sec} </m>. In a pure rotation, all parts of a rigid body have the same angular speed.
+						What is the kinetic energy of the baton? Ignore the mass of the beam.
+				</p>
+				<p>
+				</p>
+				<image source="./images/energy/ke-baton-rotating-about-off-center.png" width="50%"/>
+			</sidebyside>	
+		</statement>
+		<hint> <p>  Use <m> I = m_1r_1^2 + m_2r_2^2</m>. </p> </hint>
+		<answer> <p> <m> 5.0\text{ J}. </m>  </p> </answer>
+		<solution> 
+			<p>
+				Since the baton is in a pure rotation, we wil use the kinetic energy formula for the pure rotation.
+				<md>
+					<mrow> K \amp = \dfrac{1}{2}\, I\, \omega^2, </mrow>
+					<mrow>  \amp = \dfrac{1}{2}  (m_1r_1^2 + m_2r_2^2)\,\omega^2,</mrow>
+					<mrow>  \amp = \dfrac{1}{2} m (r_1^2 + r_2^2)\,\omega^2</mrow>
+					<mrow>  \amp = \dfrac{1}{2} \times 0.25 \times ( 0.6^2 + 0.2^2)\times 10^2 = 5.0 \text{ J}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise> -->
+
+
+</section>

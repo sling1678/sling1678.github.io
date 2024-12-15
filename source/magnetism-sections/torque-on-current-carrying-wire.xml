@@ -1,0 +1,89 @@
+<section xml:id="Torque-on-Current-Carrying-Wire"><title>Torque on Current Carrying Wire  </title>
+	<introduction>
+		<p>
+			Consider a rectangular loop of current in a uniform magnetic field as shown in <xref ref="fig-torque-on-loop"/>.  For future use, I have chosen normal direction by using a right-hand rule to sweep around the loop in the direction of the current and thumb giving the direction of normal. We will examine the torque at an instant when the normal to the loop makes an angle <m>\theta</m> with respect to the magnetic field.  Let the loop be pivoted about an axis perpendicular to the magnetic field and passing through the middle of two of the sides of the loop as shown  in the figure.
+		</p>
+
+		<figure xml:id="fig-torque-on-loop">
+			<caption>
+				Torque on a rectangular current loop. The side pq is of length <m> a</m> while side qr is of length <m>b</m>. Current <m>I</m> flows in the wire and the uniform magnetic field <m>B</m> is pointed towards positive <m>y</m> axis. The axis of rotation is pointed along the <m>z</m> axis. The magnetic force acts on the conduction electrons. The figure on right  shows forces in the <m>xy</m>-plane as seen from the positive <m>z</m> axis.
+			</caption>
+			<image source="./images/magnetism/torque-on-loop.png" width="90%"/>
+		</figure>
+		<p>
+			The mangentic forces on segments qr and ps are parallel to the <m>z</m> axis and will not have any torque about the <m>z</m> axis.  Therefore, we only need torques by forces <m>\vec F_{pq}</m>  and <m>\vec F_{rs}</m>  on pq and rs respectively. The magnitudes of these toques about the <m>z</m> axis are equal and have the same sense of rotation, which can be seen to be clockwise sense in right side of <xref ref="fig-torque-on-loop"/>. 
+		</p>
+		<p>
+			Therefore,  it is sufficient to figure out torque by <m>\vec F_{pq}</m> only and multiply the result by 2.  Using the magnetic force on the current in the pq segment we find the force to be  
+			<me>
+				\vec F_{pq} = -I a \hat k \times B \hat j = Ia B \hat i,
+			</me>
+			where <m>a</m> is the length of the pq segment and I used the unit vectors along the Cartesian axes.  To get a better feel of the direction of the forces, right side of <xref ref="fig-torque-on-loop"/> shows the forces in  the <m>xy</m>-plane. 
+			The lever arm of this force is
+			<me>
+				l_\perp = \dfrac{b}{2}\,\sin\,\theta.
+			</me> 
+			Therefore, the torque has magnitude
+			<me>
+				\tau_{pq} = I a B \dfrac{b}{2}\,\sin\,\theta,
+			</me>
+			with clockwise sense of rotation. Multiplying this by 2 we get the net torque to be
+			<me>
+				\tau_\text{net} = I a b B \sin\,\theta
+			</me>
+			Notice that <m>a\times b</m> is area <m>A</m> of the loop. Therefore, we can write this result in another form.
+			<men xml:id="eq-torque-on-one-rectangular-loop">
+				\tau_\text{net} = I A B \sin\,\theta
+			</men>
+		</p>
+	</introduction>
+	<remark><title> Torque on <m>N</m> Loops </title>
+		<p>
+			If you had many loops all carrying current in the same orientation, theo torques on all of them will add up. Thus, for a coil of <m>N</m> loops, you will get <m>N</m> times the torque.
+			<men>
+				\tau_\text{net}^{N\text{-loops}} = N \tau_\text{net}^{\text{one-loop}} =  N I a b B \sin\,\theta.
+			</men>
+			This is the strategy behind using coils in motors for increasing the torque provoded by the motor.	
+		</p>
+	</remark>
+
+	<subsection><title> Magnetic Dipole Moment of Current Loop </title>
+		<p>
+			Formula <xref ref="eq-torque-on-one-rectangular-loop"/> is same as the formula for torque on a magnetic dipole given in <xref ref="eq-torque-on-a-magnetic-dipole"/> if we identify the product of current and area as the magnetic dipole moment. Let us denote this dipole moment by <m>\mu_\text{dip}</m>.
+			<men>
+				\mu_\text{dip} = I A.
+			</men>
+			This means that every current loop with the same product <m>IA</m> will have the same same torque on it. Not only that, we can also define magnetic dipole moment vector by treating loop area as a vector, <m>\vec A</m>. The loop vector area <m>\vec A</m> has magnitude equal to the area <m>A</m> and direction in the direction of normal to the loop using right-hand rule on the current.
+		</p>
+		<p>
+			 Although, we obtained result in <xref ref="eq-torque-on-one-rectangular-loop"/> by examining a rectangular loop, one can prove that this result applies to all <alert> flat loops</alert>, i.e., loops that can be placed in one plane. That is, shape of the loop does not affect our result.
+		</p>
+	</subsection>
+
+
+	<subsection><title> Modeling Magnetic Dipoles as Current Loops</title>
+		<p>
+			In <xref ref="Force-and-Torque-on-Magnetic-Dipole"/> when we studied forces and torques on magnetic dipoles, we thought of magnetic dipoles as tiny magnets with north and south poles. The analogy between the behavior of loops of current and magnetic dipoles in an external magnetic field can be used to get another model for tiny magnets, and magnetic dipoles, in general.
+		</p>
+		<sidebyside widths="45% 5% 50%">
+			<p>
+				In this picture, we think of a physical magnetic dipole as a tiny loop of current with some area <m>A</m> and some current <m>I</m> so that their product <m>IA</m> is equal to the magnetic dipole moment <m>\mu</m> of the physical dipole. 
+			</p>
+			<p></p>
+			<figure xml:id="fig-current-loop-dipole-equivalence">
+				<caption>
+					Two ways to look at a tiny magnet.
+				</caption>
+				<image source="./images/magnetism/current-loop-dipole-equivalence.png" width="90%"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Of course, there are infinitely many possibilities for  <m>A</m> and <m>I</m> that will give the same product <m> IA </m>. 
+			Any small area loop and the corresponding current can be used to <q>represent</q> a physical dipole.  In the infintesimal limit of area, the model represents the actual physical microscopic dipole.
+		</p>
+	</subsection>
+
+
+
+
+</section>

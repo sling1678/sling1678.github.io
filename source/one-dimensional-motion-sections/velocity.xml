@@ -1,0 +1,937 @@
+<section xml:id="oneD-Velocity-and-Speed"><title> Velocity and Speed</title><idx>Speed</idx><idx>Velocity</idx>
+
+
+	<subsection><title> Average Speed </title><idx><h>Speed</h><h>Average</h></idx>
+		<p>
+			Perhaps the crudest measure of how fast something is moving comes from looking at the distance it has covered in a given time. The ratio of the distance convered,  <m> d </m>, and the time taken, <m> t </m>, is called <term> average speed </term>. We will denote average speed by the symbol <m>v_{\text{s,av}}</m>, and if there is no confusion in the context, then by simply <m>v</m>.
+			<men>
+				v_{\text{s,av}} = \dfrac{d}{t}.
+			</men>
+			Suppose you drive a car for a distance of <m> 4000\text{ km} </m> in <m> 50\text{ hr}</m>. Then your average speed will be  
+			<me> 
+				v_{\text{s,av}} = \dfrac{4000\text{ km}}{50\text{ hr}} = 80\text{ km/hr}. 
+			</me>
+			Note that when we are speaking about average speed, we are not concerned with the direction changes during the motion or the overall direction of motion. We are also not refering the varying value of speed along the way. We are concerned with just the length of the path driven and the total time taken on that path.
+		</p>
+
+
+
+
+	<example xml:id="ex-Constant-Speed-Warmup"><title> Constant Speed Warmup</title>
+		<statement>
+			<p>
+				You drive your car from New York City to Los Algeles in 50 h at an average speed of 96 km/h. What is the total distance you have traveled?
+			</p>
+		</statement>
+		<!-- <hint> 
+			<p> Use the definition of average speed.
+			</p>
+		</hint> -->
+		<answer> <p> <m>4,800 \text{ km}</m> . </p>
+		</answer>
+		<solution>
+			From the definition of average speed, <m> v = d/t </m>, we get 
+			<me>
+				d = v t = 96 \text{ km/h } \times 50 \text{ h } = 4,800 \text{ km}.
+			</me>
+		</solution>
+	</example>
+
+	</subsection>
+
+
+	<subsection><title> Average Velocity </title><idx><h>Velocity</h><h>Average</h></idx>
+		<p>
+			Another measure of motion has to with the rate of overall movement from the intitial instant to the final instant. Here, we do not care about all the places you visited during the interval, but just where you were at the beginning and where you ended up at the end, i.e., we care about displacement during the interval and not the distance covered. Average velocity is obtained by dividing the displacment by the interval. 
+		</p>
+		<p>
+			If the motion is on the <m> x </m> axis, we will denote the average velocity by the symbol <m> v_{\text{av},x}</m>, which will be the ratio of the displacement, <m> \Delta x </m>, and the time interval, <m> \Delta t </m>.
+			<men>
+				v_{\text{av},x} = \dfrac{\Delta x}{\Delta t}.
+			</men>
+			Note that average <m>x</m> velocity has the same sign as the sign of the displacement <m>\Delta x</m> of the motion. We say that the sign of <m>\Delta x</m> and <m>v_{\text{av},x}</m> tell us the <term>direction</term> of the motion in that interval. If sign is positive, the motion is in the same direction as the direction of positive <m>x</m>-axis and if the sign is negative the direction is towards the negative <m>x</m>-axis.
+		</p>
+		<example xml:id="example-positive-x-velocity"><title>Positive <m>x</m>-Velocity</title>
+			<statement>
+				<sidebyside widths="55% 5% 40%">
+					<p>
+						Suppose you go from one end A of the room to another end B, say <m> 3\text{ m}</m> from A, and then track back <m> 1\text{ m}</m> to C. 
+					</p>
+					<p></p>
+					<image source="./images/one-dim-motion/average-velocity-vs-average-speed.png"/>
+				</sidebyside>
+				<p>
+					Suppose you use positive <m> x </m> axis in the direction A-to-B. In your motion A-to-B-to-C you would have covered a distance
+					<me>
+						d =  d_{AB} + d_{BC} = 3 + 1 = 4\text{ m},
+					</me>
+					but your displacemnt would be
+					<me>
+						\Delta x = x_C - x_A =  2\text{ m}.
+					</me>
+					The difference is due to the fact that tracking back canceled out part of the original displacement and you ended up at <m> x = 2\text{ m}</m> from the starting place A, <m>x = 0</m>. Now, say A-to-B-to-C took <m> 5\text{ sec}</m>, then your average velocity and average speed will be
+					<md>
+						<mrow> \amp v_{\text{av},x} = \dfrac{2}{5} = 0.4\text{ m/s},</mrow>
+						<mrow>\amp v_{s,\text{av}} = \dfrac{4}{5} = 0.8\text{ m/s}. </mrow>
+					</md>
+					Since we used <m>x</m> axis for the displacement, we refer to this average velocity as average <m>x</m> velocity. If we had used <m>y</m> axis along ACB, we would have called it average <m>y</m> velocity. After we have studied vectors, you will learn that velocity is a vector quantity, while speed is not a vector. Vector quantities have both a magnitude and a direction.
+				</p>
+			</statement>
+		</example>
+
+		<example xml:id="example-negative-x-velocity"><title>Negative <m>x</m>-Velocity</title>
+			<statement>
+				<p>
+					Let us consider an example of a motion that has negative <m>x</m>-velocity as shown in <xref ref="fig-negative_average_x_velocity"/>. Suppose the object moves from A-to-B-to-C in <m>2\text{ sec}</m>. 
+				</p>
+
+				<sidebyside widths="50% 50%">
+					<p>
+						Then, your average <m>x</m> velocity will be
+						<md>
+							<mrow>v_{\text{av},x} \amp = \frac{x_C - x_A}{\Delta t} = \dfrac{1\text{ m} - 4\text{ m}}{2\text{ s}}</mrow>
+							<mrow> \amp = -1.5\text{ m/s}.</mrow>
+						</md>
+					</p>
+					<figure xml:id="fig-negative_average_x_velocity">
+						<caption>A-to-C direction towards <m>x=-\infty</m>.</caption>
+						<image source="./images/one-dim-motion/negative_average_x_velocity.png" width="70%"/>
+					</figure>
+				</sidebyside>
+			</statement>								
+		</example>
+
+		<remark><title>Average Speed and Magnitude of Average Velocity</title>
+			<p>
+				The absolute value of this <m>1.5\text{ m/s}</m> in <xref ref="example-negative-x-velocity"/> is called the magnitude of the <m>x</m>-velocity and the negative sign gives the direction to be the direction of the negative <m>x</m>-axis, i.e., towards <m>x = -\infty </m>. 
+			</p>
+			<p>
+				Now, compare the magnitude of this average velocity of the average speed between A and C in that example. For average speed, we need the distance travelled over the full path between A and C. That gives us
+				<me>
+					d_{AC} = d_{AB} + d_{BC} = 2 + 5 = 7\, \text{m}.
+				</me>
+				Hence
+				<me>
+					v_{s,av} = \frac{d_{AC} }{\Delta t} = \frac{ 7\text{ m} }{2\text{ s}} = 3.5\text{ m/s}. 
+				</me>
+				Note that average speed is not equal to the magnitude of average velocity! Why? The main reason is that there was a turn around in the motion A-to-B-to-C; this led to traversing back on the same path, which got cancelled in the calculation of the <m>x</m>-velocity but not in the average speed. 
+			</p>
+		</remark>
+
+		
+		<remark><title>Average Speed and Magnitude of Average Velocity in Infinitesimal Intervals</title>
+
+			<p>
+				Now, notice an amazing fact. If the interval of interest is an infinitesimal interval of time, meaning as small an interval as you like, except zero interval. In such an interval, since there will be no turn around, the magnitude of average speed and average velocity will be same. In this case, we call them instantaneous speed and instantaneous velocity. 
+			</p>
+			<!-- <p>
+				An alternative to the infinitesimal picture for the instantaneous velocity is to use a graphical definition, which we discuss now.
+			</p> -->
+			<!-- <p>
+				For instance, in the case of mathematically infinitersimal time interval, meaning as small as you like except zero. Using this idea, we next define a special type of average velocity, called the instantaneous velocity, whose magnitude will always be equal to the speed at that instant. An alternative to the infinitesimal picture for the instantaneous velocity is to use a graphical definition, which we discuss now.
+			</p> -->
+		</remark>
+
+
+	</subsection>
+
+
+
+	<subsection xml:id="subsection-Instantaneous-Velocity"> <title> Instantaneous Velocity</title><idx><h>Velocity</h><h>Instantaneous</h></idx>
+
+		<p>
+			For displacement and velocity we need change in position occuring in an interval of time, say between instants <m>t</m> and <m>t+\Delta t</m>. To study change occuring AT INSTANT <m>t</m>, we introduce a concept of <term>infintesimal interval</term> around the instant <m>t</m>. We say that the interval between <m>t</m> and <m>t+\Delta t</m> is an infinitesimal interval if <m>\Delta t</m> is as small as we like except:
+			<me>
+				\Delta t \ne 0.
+			</me>
+			The corresponding velocity is called <term>instantaneous velocity</term> and the corresponding speed is <term>instantaneous speed</term>.
+		</p>
+<!-- 		<p>
+			Often we want velocity <em> at a particular instant</em>, called instantaneous velocity, or simply, <term>velocity</term>. This refers to the average velocity between that instant, say <m> t </m>, and an instant very close to <m> t</m>, e.g., a tiny amount of time later than <m> t</m>, which we can indicate by <m> t + \Delta t </m> with <m>\Delta t > 0</m>. Or, alternately, between <m>t</m> and a tiny interval before <m>t</m>, say at <m>t-\Delta t</m> with <m>\Delta t > 0</m>.  Or, if we let <m>\Delta t \ne 0</m> but be positive or negative, then, we can combine both these possibilities by simply <m>t + \Delta t</m>.
+		</p>
+		<p>
+			How close should <m> t </m> and <m> t + \Delta t </m> be? We say that we want them to be as close as possible except zero interval. You might complain that this is not good enough and that the answer is a little vague. You may already be familiar with it from your Calculus class since it is at the heart of the concept of taking the limit.  We call this notion of interval an <term>infintesimal interval</term>. It is one of the most important concepts of physics.
+		</p> -->
+		<p>
+			Denoting instantaneous velocity for a motion along <m> x </m> axis by symbol <m> v_x </m>, we write the definition formally using the notation of taking a limit in Calculus,
+			<men xml:id="eq-instantaneous-velocity-1d-limit">
+				v_x = \lim_{\Delta t \rightarrow 0} \dfrac{x\left(\text{at } t+\Delta t\right) - x\left(\text{at } t\right)}{\Delta t}.
+			</men> 
+			This is also denoted by the derivative symbol.
+			<men>
+				v_x = \dfrac{dx}{dt}.
+			</men>
+			Although <m>\Delta t</m> in the definition Eq. <xref ref="eq-instantaneous-velocity-1d-limit"/> could be positive or negative, we will think of <m>\Delta t \gt 0</m> in our treatment below. That will make it specific that we are thinking of <m>t+\Delta t</m> to be an instant after <m>t</m>. If you like, you can create your own note for case when <m>\Delta t \lt 0</m>.
+		</p>
+		<p>
+			You may recall from Calculus that derivative of a function equals the slope of the tangent of the graph of function at that point. Thus, if we plot <m>x</m> coordinate of motion versus <m>t</m>, we can compute  <m>v_x</m> from the slope of <m> x </m> versus <m> t</m> plot at the appropriate value of <m>t</m>. We will see examples of that below.
+		</p>
+		<p>
+			Taking <m>\Delta t \gt 0</m>, when an object is moving towards <m> x = +\infty</m>, we will have 
+			<m>x\left(\text{at } t+\Delta t\right) \gt x\left(\text{at } t\right)</m>, which will give positive <m>v_x</m>. And, when the object is moving towards <m> x = -\infty</m>, we will have 
+			<m>x\left(\text{at } t+\Delta t\right) \lt x\left(\text{at } t\right)</m>, which will give negative <m>v_x</m>.   
+		</p>
+		<p><idx><h>Speed</h><h>Instantaneous</h></idx>
+			The requirement that <m> t+\Delta t </m> be as close to <m> t </m> as possible makes the turn around in motion between <m> t </m> and <m> t+\Delta t </m>  impossible. That means, the <alert>magnitude</alert> of instantaneous velocity, i.e., the value without the sign, will correspond to speed at that instant, i.e., <term>instantaneous speed</term>. We will denote instantaneous speed by symbol <m>v</m> without any subscripts. For motion that is only along <m>x</m>-axis, we will get
+			<men>
+				v = |v_x|.
+			</men>
+			Note that while <m>v_x</m> can be positive or negative, <m>v</m> will always be positive.
+		</p>
+		<p>
+			We will find in a later chapter that, a general motion can be thought as <q>motion along <m>x</m>, <m>y</m>, and <m>z</m> coordinates</q> with velocity (components)  <m>v_x</m>, <m>v_y</m>, and <m>v_z</m> along them. The speed is then related to the adding these velocities in quadrature. 
+			<men>
+				v = \sqrt{v_x^2 + v_y^2 + v_z^2}. 
+			</men>
+		</p>
+	</subsection>
+
+	<subsection> <title> Graphical Definition of Velocity </title><idx><h>Velocity</h><h>Graphical</h></idx>
+
+		<p>
+			Instantaneous velocity <alert>for a motion along one axis </alert> can also be defined graphically in addition to its anlaytic definition using the limit concept of Calculus decribed above.  
+			Since, instantaneous velocity at instant <m> t </m> is the rate at which <m> x </m> is changing at <m> t</m>, it is equal to the slope of tangent to the <m>x</m> (plotted along the ordinate) versus <m>t</m> (plotted along the abscissa) plot.  
+			
+		</p>
+		<example><title>Straight-line segments</title>
+		<!-- <p>
+			<alert>Illustration #1: Straight-line segments</alert>
+		</p> -->
+			<statement>
+				<p>
+					This is illustrated by an example motion along <m>x</m>-axis as shown in Fig. <xref ref="x-vs-t-for-vx-calc"/>. Note that the plot has two straight line segments. Hence, in the motion there will be two values of slopes depending upon the <m>t</m> value. We also notice that slope is not defined at <m>t=20</m>. The <m>x</m> velocity of the object at different times are 
+				</p>
+
+		 		<p>
+					<!-- Figure <xref ref="x-vs-t-for-vx-calc"/> shows an <m> x </m> versus <m> t </m> plot of a motion that occurs on <m>x</m> axis. Since the plot has two linear segments, there will be two velociy values. -->
+
+					<md>
+						<mrow> \amp (1)\ v_x = 300/20 = 15\text{ m/s} \ \ ( 0\lt t \lt 20\text{ sec} )</mrow>
+						<mrow> \amp (2)\ v_x\ \text{undefined for } t= 20\text{ sec}</mrow>
+						<mrow> \amp (3)\ v_x = -400/50 = -8\text{ m/s} \ \ ( 20\text{ sec}\lt t \lt 70\text{ sec})</mrow>
+					</md>
+					The velocity <m> v_x </m> in the second segment is negative since the object is moving towards negative <m> x </m> axis. Clearly, in the linear segments, i.e., where the velocity is steady, velocity <m>v_x</m> is simply slope of <m>x</m> vs <m>t</m> plot.
+
+					<me>
+						v_x = \text{ slope of }x \text{ versus }t.
+					</me> 
+				</p>
+
+				<figure xml:id="x-vs-t-for-vx-calc">
+					<caption> 
+						The slope of <m> x </m> versus <m> t </m> plot gives the velocity <m> v_x </m>.  
+					</caption>		
+						
+					<image source="./images/one-dim-motion/x-vs-t-for-vx-calc.png" width="80%"/>
+				</figure>
+				<remark><title>What happened at <m>t=20\text{ sec}</m>?</title>
+					<p>
+						What about the times when the velocity is changing, e.g., at <m>t=20\text{ sec}</m> in the figure? Derivative does not exist at this point, and hence, we cannot get any value of velocity. But, physical velocity of an object is well-defined at al times. So, what's the problem here? It turns out that figures like these are wrong - in reality, you will get a plot that is smooth at the tip, not pointed as shown. this is just an artifact of this type of drawing which is common in early textbooks.
+			 
+					</p>
+				</remark>
+			</statement>
+		</example>
+
+		<example><title>Curved Plot</title>
+		<!-- <p>
+			<alert>Illustration #2: Curved Plot</alert>
+		</p> -->
+ 			<statement>
+				<p>
+					For another example, consider plot of <m>x</m> verus <m>t</m> given in <xref ref="fig-motion-diagram-and-xvst-tangents" />.  The object is moving steadily between B and C. Thefore, in this segment, the plot is a straight line. From the slope of this line we can get <m>v_x</m> between B and C.
+				</p>
+
+				<p>
+					The motion is not steady between A and B, since the object is slowing down, or or between C and D, where it is speeding up. The plot of <m> x </m> versus <m> t</m> is curved during them, which means there is not one slope. <alert>The slope now refers to the slope of tangent lines</alert>. Therefore, we now need to draw tangent lines at each instant and compute their slopes. 
+				</p>
+
+
+				<figure xml:id="fig-motion-diagram-and-xvst-tangents">
+					<caption>
+						<xref ref="fig-motion-diagram-and-xvst"/> is reproduced here to illustrate the computation of velocity by slope of tangent line to the <m> x </m> versus <m> t </m> plot.
+					</caption>
+
+					<image source="./images/one-dim-motion/motion-diagram-slope-at-D.png" width="90%"/>
+				</figure>
+				<p>
+					Suppose we want velocity at D. We will draw a tangent to the curve at this point, e.g., line PQ that touches the curve at the point of interest.  Then, we compute instantaneous velocity <m>v_x</m> at D from the slope of tangent PQ.
+				</p>
+				
+
+				<p>
+					You can see that between A and B, the absolute value of slopes of tangent lines are getting smaller - hence motion is slowing down. The slopes at various instants between C and D will convince you that their slopes are getting larger, hence the motion is speeding up.
+				</p>
+		<!--  		<p>
+					Figure <xref ref="x-vs-t-for-vx-calc"/> shows an <m> x </m> versus <m> t </m> plot that has two linear segments. We get two different velocity values in the two linear segments from their slopes. In the figure, the two linear segments appear to meet at one point, but that is just an artifact of the drawing. In reality, this cannot be the case, since that would give two different values of velocity at the instant the two linear segments meet in the figure. This corresponds to the fact that velocity cannot be changed abruptly.
+				</p>
+
+
+				<figure xml:id="x-vs-t-for-vx-calc">
+					<caption> 
+						The slope of <m> x </m> versus <m> t </m> plot gives the velocity <m> v_x </m>. Since the plot has two linear segments, there will be two velociy values (i) for <m> 0\lt t \lt 20\text{ sec}</m>, <m> v_x = 300/20 = 15\text{ m/s}</m>, and (ii) for <m> 20\text{ sec}\lt t \lt 70\text{ sec}</m>, <m> v_x = -400/50 = -8\text{ m/s}</m>. Note the velocity <m> v_x </m> in the second segment is negative since the object is moving towards negative <m> x </m> axis. The speed in the first segment is <m> v_s =  15\text{ m/s}</m> and in the second segment <m> v_s  = 8\text{ m/s}</m>, without the sign.
+					</caption>		
+						
+					<image source="./images/one-dim-motion/x-vs-t-for-vx-calc.png" width="80%"/>
+				</figure> -->
+			</statement>
+		</example>
+
+
+
+
+	<example xml:id="ex-velocity-from-graph-warmup"><title>Velocity from a Graph </title>
+		<statement>
+			<p>
+				A train is moving on a straight track. Taking the track to be the <m> x </m> axis, the position of the train was noted at various times. The data was then plotted with <m>t</m> along the abscissa and <m>x</m> along the ordinate as shown in <xref ref="fig-problem-x-velocity-from-graph" />. What are the values of <m> v_x </m> at the following instants (a) <m> t = 0 </m> sec,  (b) <m> t = 10 </m> sec, (c) <m> t = 25 </m> sec, (d) <m> t = 35 </m> sec, (e) <m> t = 50</m> sec, and (f) <m> t = 70 </m> sec?
+			</p>
+			 <figure xml:id="fig-problem-x-velocity-from-graph">
+			 	<caption>
+			 		Figure for <xref ref="ex-velocity-from-graph-warmup" />.
+			 	</caption>
+				<image source="./images/one-dim-motion/problem-x-velocity-from-graph.png" width="80%"/>
+			</figure>
+			
+		</statement>
+
+		<answer>
+			(a) 5.0 m/s, (b) 5.0 m/s, (c) 20.0 m/s, (d) 0, (e) <m> - 15.0 </m> /s, (f) 0. 
+		</answer>
+		<solution>
+			<p>
+				(a) Note that at <m> t = 0 </m>, the slope is not zero if we assume that the line contnues past <m> t = 0 </m> to the negative time. To determine <m> v_x</m> here, you read off <em> two nearby points </em> on the graph. For <m> t = 0 </m>, we will use <m> (t_1,x_1) = (0, 0) </m> and <m> (t_2,x_2) = (20\text{ s}, 100\text{ m}) </m>. From these we get <m> v_x</m> at <m> t=0 </m>.
+			</p>
+			<p>
+				<me>
+					v_x = \dfrac{x_2-x_1}{t_2-t_1} = \dfrac{100\text{ m} - 0}{20\text{ s} - 0} = 5.0\, \frac{\text{m}}{\text{s}}.
+				</me>
+			</p>
+			
+			<p>
+				(b) For <m> t = 10 </m> sec, we take points at <m> t = 0 </m> and <m> t = 20 </m> sec. We get the same value as in (a).
+			</p>
+
+			<p>
+				(c) For <m> t = 25 </m> sec, we take points at <m> t = 20 </m> sec and <m> t = 30 </m> sec, viz., <m> (t_1,x_1) = (20 \text{ s}, 100 \text{ m}) </m> and <m> (t_2,x_2) = (30\text{ s}, 300 \text{ m}) </m>. From these we get <m> v_x</m> at <m> t = 25 </m> sec.
+			</p>
+			<p>
+				<me>
+					v_x = \dfrac{x_2-x_1}{t_2-t_1} = \dfrac{300\text{ m} - 100\text{ m}}{30\text{ s} - 20\text{ s}} = 20.0\, \frac{\text{m}}{\text{s}}.
+				</me>
+			</p>
+
+			<p> 
+				(d) There is no change in <m> x </m> around this time point. So, <m> v_x = 0</m> at <m> t = 35 </m> sec. 
+			</p>
+			<p> 
+				(e) For <m> t = 50 </m> sec, we take points at <m> t = 40 </m> sec and <m> t = 60 </m> sec, viz., <m> (t_1,x_1) = (40 \text{ s}, 300 \text{ m}) </m> and <m> (t_2,x_2) = (60\text{ s}, 0 ) </m>. From these we get <m> v_x</m> at <m> t = 50 </m> sec.
+			</p>
+			<p>
+				<me>
+					v_x = \dfrac{x_2-t_2}{x_1-t_1} = \dfrac{0\text{ m} - 300\text{ m}}{60\text{ s} - 40\text{ s}} = -15.0\, \frac{\text{m}}{\text{s}}.
+				</me>
+			</p>
+			<p>
+				Note that <m> v_x </m> here is negative. This is due to the fact that the train is moving in the same direction as the negative <m> x </m> axis. 
+			</p>
+			<p> 
+				(f) There is no change in <m> x </m> around this time point. Therefore, <m> v_x = 0</m> here.
+			</p>
+
+
+		</solution>
+	</example>
+
+
+	<example xml:id="Instantaneous-Velocity-from-Curved-x-vs-t-Graph"><title> Velocity in Curved <m> x </m> vs <m> t </m> Graph</title>
+			
+		<p>
+			The <m> x </m> coordinate of a runner plotted against time <m> t </m> as in the figure below.
+		</p>
+		<p>
+			<image source="./images/one-dim-motion/x-velocity-from-slope.png" width="70%"/>
+		</p>
+
+		<p>
+			We draw a tangent to the <m> x </m> versus <m> t </m> graph at the instant of interest, here <m> t = 20 </m> sec. The slope of the tangent line gives the numerical value of the <m>x</m>-velocity. Here <m>x</m>-velocity is positive since the runner's <m>x</m> coordinate is increasing with time. That is, velocity has magnitude <m>4.0</m> m/s in the positive <m>x</m> direction.
+		</p>
+		<p>
+			You can see that the slope of the tangent has different values at different instants. Try looking at the slope at other times. This is a situation in which velocity <m>v_x</m> is changing with time. Can you find an instant when the <m>x</m>-velocity is zero in the figure? Hint: Look for a place where the tangent line is horizontal.
+		</p>
+
+	</example>
+
+
+	</subsection>
+
+
+	<subsection> <title> Displacement from Velocity </title>
+		<p>
+			Displacement is change in position during an interval. Suppose a motion is along <m>x</m>-axis with position <m>x</m> at instant <m>t</m> and <m>x+\Delta x </m> at instant <m>t + \Delta t</m>. Then, recall that average velocity for the finite interval <m>t</m> to  <m>t + \Delta t</m> is given by
+			<me>
+				v_{x,av} = \frac{(x + \Delta x) - x}{ (t + \Delta t) - t} = \frac{\Delta x}{\Delta t}.
+			</me>
+			Then, we can immediately get the displacement <m>\Delta x</m> by multiplying both sides by the interval <m>\Delta t</m>.
+			<me>
+				\Delta x = v_{x,av}\,\Delta t.
+			</me>
+			<alert>How about getting the displacement <m>\Delta x</m> from instantaneous velocity</alert> <m>v_x</m> given at each instant between <m>t</m> and  <m>t + \Delta t</m>? Since <m>v_x</m> is derivative of the function <m>x(t)</m>, to get change in <m>x</m>, we will need to integrate <m>v_x</m>, which is itself a function of <m>t</m>. Let us denote <m>t_i</m> for the intitial instant and <m>t_f</m> for the final instant, and <m>x_f-x_i</m> for <m>\Delta x</m>.
+			<men>
+				v_x = \frac{dx}{dt}\ \ \longleftrightarrow\ \ x_f - x_i = \int_{t_i}^{t_f}\, v_x(t)\,dt.
+			</men>
+			Now, an integral has a nice graphical interpretation - it is the area "under or over" the curve! This is schematically illustrated in Fig. <xref ref="fig-x-from-vx-vs-t-main-new"/>
+		</p>
+		<figure xml:id="fig-x-from-vx-vs-t-main-new">
+			<caption>
+				The area under the curve to get <m> \Delta x </m> from <m> v_x</m> versus <m> t </m> plot. The area for the curve when <m> v_x \gt 0</m> is positive, as between <m> t=0 </m> and <m> t= 2\text{ sec}</m> and the area for the curve when <m> v_x \lt 0</m> is negative, as between <m> t= 2\text{ sec} </m> and <m> t= 4\text{ sec}</m>.
+			</caption>
+
+			<image source="./images/one-dim-motion/x-from-vx-vs-t-main-new.png" width="80%"/>	
+		</figure>
+	</subsection>
+
+
+<!-- 	<subsection> <title> Displacement from Velocity Graphically </title>
+
+		<p>
+			We saw above that we can get velocity along <m>x</m> axis from the slope of tangent to the plot of <m> x </m> versus <m> t </m>, in place of computing derivative of the function <m> x(t) </m>. 
+		</p>
+		<p>
+			Now, we want to ask the inverse question: how can we get <m>\Delta x</m> if we have a plot of <m>v_x</m> versus <m>t</m>? Fundamental theorem of Calculus already addresses this], i.e., <q>integral is inverse of derivative</q>. So, <m>\Delta x</m> will be obtained by integrating <m>v_x</m>.
+		</p>
+		<p>
+			Anayltically, an integral can be thought of as a sum, which is related to <q>area under the curve</q> in a  graph. Here, we will be interested in area  between the <m> v_x </m> plot curve and the <m> v_x = 0 </m> line - if <m>v_x \gt 0</m>, we will get positive area and  if <m>v_x \lt 0</m>, we will get negative area. Calculation of displacement <m>\Delta x</m> from a <m>v_x</m> versus <m>t</m> plot is illustrated in <xref ref="fig-x-from-vx-vs-t-main-new"/>.
+		</p>
+		<p>
+			<men xml:id="eq-1d-review-displacement-from-vx-graphical">
+				\Delta x \equiv x(t_f) - x(t_i) =  \text{Area under the }v_x\text{ verus } t\text{ plot.}
+			</men> 	
+		</p> -->
+
+<!-- 		<figure xml:id="fig-x-from-vx-vs-t-main-new">
+			<caption>
+				The area under the curve to get <m> \Delta x </m> from <m> v_x</m> versus <m> t </m> plot. The area for the curve when <m> v_x \gt 0</m> is positive, as between <m> t=0 </m> and <m> t= 2\text{ sec}</m> and the area for the curve when <m> v_x \lt 0</m> is negative, as between <m> t= 2\text{ sec} </m> and <m> t= 4\text{ sec}</m>.
+			</caption>
+
+			<image source="./images/one-dim-motion/x-from-vx-vs-t-main-new.png" width="80%"/>	
+		</figure> -->
+ 
+		<example xml:id="exp-Displacement-Delta-x-from-a-v-x-vs-t-Graph"><title> Displacement <m> \Delta x</m> from a <m> v_x </m> vs <m> t </m> Graph</title>
+			<statement>	
+				<p>
+				</p>
+				<sidebyside widths="50% 5% 45%">
+					<p>
+						The instantaneous <m> v_x </m> of a car moving on a straight road is plotted against time <m> t </m> as shown in <xref ref="fig-example-x-from-vs-t" />. Find the displacements of <m> x </m> coordinate of the car during the following intervals of time: 
+					</p>
+					<p></p>
+					<figure xml:id="fig-example-x-from-vs-t">
+	 					<caption>
+	 						<!-- Figure for <xref ref="exp-Displacement-Delta-x-from-a-v-x-vs-t-Graph"/> -->
+	 					</caption>
+						<image source="./images/one-dim-motion/example-x-from-vs-t.png" width="70%"/>
+					</figure>					
+				</sidebyside>
+ 
+				<p>
+					(a) <m> t = 0 \rightarrow 20 \text{ s}</m>, 
+
+					(b) <m> t = 20 \text{ s}\rightarrow 40 \text{ s}</m>, and 
+
+					(c) <m> t = 40 \text{ s}\rightarrow 70 \text{ s}</m>. 
+				</p>
+				<p>
+					Note that area can be negative here corresponding to <m> x_f - x_i \lt 0 </m>.
+				</p>
+
+ 
+			</statement>
+<!-- 			<hint>
+				<p>
+					(a) The area here is the area of a traingle. (b) The positive and negative areas cancel. (c) The area here is negative. 
+				</p> 
+			</hint> -->
+			<answer>
+				<p>
+					(a) <m>200\text{ m}</m>, (b) 0, (c) <m>-600\text{ m}</m>.
+				</p>
+			</answer>
+			<solution><title> a </title>
+				<p> 
+					We wish to find the area under the curve (which is a straight line here) between <m> t = 0 </m> and <m> t = 20 \text{ s}</m> - the shaded area in <xref ref="fig-example-x-from-vs-t-a"/>. This is just the area of the triangle with base = 20 sec, and height = 20 m. Therefore, 
+					<me> 
+						x_f - x_i = \dfrac{1}{2} \times 20 \text{ m/s} \times 20 \text{ s} = 200 \text{ m}.
+					</me>
+				</p>
+ 				<figure xml:id="fig-example-x-from-vs-t-a">
+ 					<caption>
+ 						Figure for <xref ref="exp-Displacement-Delta-x-from-a-v-x-vs-t-Graph"/>, part (a).
+ 					</caption>
+					<image source="./images/one-dim-motion/example-x-from-vs-t-a.png" width="70%"/>
+				</figure>
+ 
+				
+			</solution>
+			<solution><title> b </title>
+				<p> 
+					We wish to find the area under the curve  between <m> t = 20 \text{ s} </m> and <m> t = 40 \text{ s}</m> in <xref ref="fig-example-x-from-vs-t-b" />. This is sum of areas of two triangles, a triangle above the time axis (where <m> v_x \gt 0 </m>) and another below the time axis (where <m> v_x \lt 0 </m>). The area of the triangle with <m> v_x \gt 0 </m> will give positive area and the other one will give negative area. They happen to cancel out. 
+					<me> 
+						x_f - x_i = \dfrac{1}{2} \times 20 \text{ m/s} \times 10 \text{ s}  + \dfrac{1}{2} \times (-20) \text{ m/s} \times 10 \text{ s} = 0\text{ m}.
+					</me>
+					This means that the car went 100 m towards positive <m> x </m> axis and then backtracked same amount, ending up at the same <m> x </m> at the end as at the beginning. 
+				</p>
+				<p>
+					
+				</p>
+
+ 				<figure xml:id="fig-example-x-from-vs-t-b">
+ 					<caption>
+ 						Figure for <xref ref="exp-Displacement-Delta-x-from-a-v-x-vs-t-Graph"/>, part (b).
+ 					</caption>
+					<image source="./images/one-dim-motion/example-x-from-vs-t-b.png" width="70%"/>
+				</figure>
+
+			</solution>
+
+
+			<solution><title> c </title>
+				<p> 
+					We wish to find the area under the curve between <m> t = 40 \text{ s} </m> and <m> t = 70 \text{ s}</m> as shown in <xref ref="fig-example-x-from-vs-t-c" />.  This is actually the area <q>above</q> the curve since the area of interest is the area between the curve and the abscissa of the plot.
+					<me> 
+						x_f - x_i =    \times (-20) \text{ m/s} \times 30 \text{ s} = -600\text{ m}.
+					</me>
+				</p>
+				<p>
+
+				</p>
+
+ 				<figure xml:id="fig-example-x-from-vs-t-c">
+ 					<caption>
+ 						Figure for <xref ref="exp-Displacement-Delta-x-from-a-v-x-vs-t-Graph"/>, part (c).
+ 					</caption>
+					<image source="./images/one-dim-motion/example-x-from-vs-t-c.png" width="70%"/>
+				</figure>
+
+			</solution>
+
+		</example>
+
+
+
+
+
+
+<!-- 	<subsection> <title> (Calculus) Analytic Definition of Velocity </title>
+
+		<p>
+			<p>
+				The fundamental definition of <m> v_x </m>, the rate of change of <m> x</m> is based on the observation	in Calculus that derivative of a function is equal to the slope of the tangent line. Therefore, we define <m> v_x</m> as derivative of <m> x </m> versus <m> t </m>.
+				<men xml:id="eq-velocity-1d-definition">
+					v_x = \dfrac{dx}{dt}.
+				</men>
+				Note that <m>v_x </m> can also change with time, and hence is also a function of <m> t </m>. When we study the rate of change of <m>v_x </m> we will get acceleration of the motion.
+			</p>
+
+		</p>
+
+
+	</subsection>
+
+
+
+
+
+	<subsection> <title> (Calculus)  Displacement from Velocity Analytically </title>
+
+			<p>
+				The analytic definition of velocity given in Eq. <xref ref="eq-velocity-1d-definition"/> can be inverted by integration. First we multiply both sides by <m> dt </m> and then integrate both sides. 
+			</p>
+			<p> Let <m> x = x_i </m> at <m> t = t_i</m> and <m> x = x_f </m> at <m> t = t_f</m>, then an integration on the right side from <m> t_i </m> to <m> t_f</m> corresponds to integration from <m> x_i </m> to <m> x_f</m> on the left side with the following result.
+ 
+				<men xml:id="eq-1d-review-displacement-from-vx">
+					\Delta x \equiv x(t_f) - x(t_i) = \int_{t_i}^{t_f}\, v_x(t)\, dt. 
+				</men> 			
+			</p>
+
+	</subsection> -->
+
+
+	<exercises>
+
+
+	<exercise xml:id="Average-Velocity-versus-Average-Speed"><title>  Average Velocity versus Average Speed</title>
+		<statement>
+			<p>
+				A ball is rolling on a straight track. At the end of the track, the ball hits a wall and bounces back with the same speed. Ignore the time the ball was in contact with the wall during the collision. Let the original direction of ball be the positive <m> x </m> axis direction. 
+			</p>
+			<p> 
+				Let the ball be at <m> x = 15\text{ cm}</m>  at <m> t = 0 </m>, and at <m> x = 75\text{ cm}</m> at <m> t = 10\text{ sec} </m>. The wall is at <m> x = 100\text{ cm}</m>. Suppose the collision occured sometime between <m>t=0</m> and <m>t=10\text{ sec}</m>. 
+			</p>
+			<figure xml:id="fig-Average-Velocity-versus-Average-Speed">
+				<caption>
+					For <xref ref="Average-Velocity-versus-Average-Speed"/>.
+				</caption>
+				<image source="./images/one-dim-motion/Average-Velocity-versus-Average-Speed.png" width="70%"/>
+			</figure>
+
+			<p>
+				What are (a) the average velocity and (b) average speed during the  <m> t = 0 </m> to <m> t = 10\text{ sec} </m> interval?
+			</p>
+
+		</statement>
+		<hint> 
+			<p> 
+				Average velocity on <m>x</m> axis is based on <m>x</m> coordinates and average speed is based on actual distance covered.  
+			</p> 
+		</hint>
+		<answer> 
+			<p> (a) <m>6 \text{ cm/s}</m>, (b) <m>11 \text{ cm/s}</m>.  
+			</p> 
+		</answer>
+		<solution><title>a</title> 
+			<p> <alert> Average Velocity :</alert> <!-- For the sake of brevity, we will drop the  coordinate subscript <m> x </m> from the symbols. -->
+			</p>
+			<p>
+				The definition of average velocity for a one-dimensional motion on <m> x </m> axis is
+				<me>
+					v_{\text{av},x} = \dfrac{\Delta x }{\Delta t}.
+				</me>
+				Therefore,
+				<me>
+					v_{\text{av},x} = \dfrac{75\text{ cm} -  15\text{ cm}}{10\text{ sec}} = 6 \text{ cm/s}.
+				</me>
+
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p> <alert> Average Speed</alert>
+			</p>
+			<p>
+				The definition of average speed for any motion is
+				<me>
+					v_{\text{s,av}} = \dfrac{d }{\Delta t}.
+				</me>
+				The motion has two legs here: (1) from <m> x = 15\text{ cm} </m> to <m> x = 100\text{ cm} </m> (i.e., the wall) and (2) from <m> x = 100\text{ cm} </m> to <m> x = 75\text{ cm} </m>. We need to add these distances, not just difference in coordinates.
+				Therefore,
+				<me>
+					v_{\text{s,av}} = \dfrac{85\text{ cm} +  25\text{ cm}}{10\text{ sec}} = 11 \text{ cm/s}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+<!-- ************************  -->
+
+
+
+
+
+	<exercise xml:id="ex-Compute-Delta-x-from-vx-versus-t-plot"><title> Compute <m> \Delta x </m> from <m> v_x </m> versus <m> t </m> plot</title>
+		<statement>
+			<p>
+				From the <m> v_x </m> versus <m> t </m> plot in <xref ref="fig-checkpoint-x-from-v-areas"/>, find change in <m> x </m> during the following intervals given in seconds (a) <m> (0, 2) </m>, (b)  <m> (2, 3) </m>, (c)  <m> (3, 4) </m>, and (d)  <m> (0, 4) </m>.
+			</p>
+			<figure xml:id="fig-checkpoint-x-from-v-areas">
+				<caption>
+					Figure for <xref ref="ex-Compute-Delta-x-from-vx-versus-t-plot"/>.
+				</caption>
+				<image source="./images/one-dim-motion/checkpoint-x-from-v-areas.png" width="80%"/>
+			</figure>
+		</statement>
+		<hint> <p>Use areas. </p> </hint>
+		<answer> <p> (a) <m>8\text{ m}</m>, (b) <m>2\text{ m}</m>, (c) <m>-1\text{ m}</m>, (d) <m>9\text{ m}</m>. </p> </answer>
+		<solution> <title>a</title>
+			<p> This is a rectangular area, of height <m> 4\text{ m/s}</m> and width <m> 2\text{ sec}</m>. The line is above the <m> v_x = 0 </m> line. Therefore, the change in <m> x </m> will be:
+			<me>
+				\Delta x = 4\text{ m/s} \times 2\text{ s} = 8\text{ m}.
+			</me>
+			</p> 
+		</solution>
+		<solution><title>b</title>
+			<p>(b) This is triangular area, of height <m> 4\text{ m/s}</m> and base <m> 1\text{ sec}</m>. The line is above the <m> v_x = 0 </m> line. Therefore, the change in <m> x </m> will be:
+			<me>
+				\Delta x = \dfrac{1}{2}\times 4\text{ m/s} \times 1\text{ s} = 2\text{ m}.
+			</me>
+			</p>
+		</solution>
+		<solution><title>c</title>
+			<p> This is triangular area, of height <m> 2\text{ m/s}</m> and base <m> 1\text{ sec}</m>. The line is below the <m> v_x = 0 </m> line. Therefore, the change in <m> x </m> will be:
+			<me>
+				\Delta x = -\dfrac{1}{2}\times 2\text{ m/s} \times 1\text{ s} = -1\text{ m}.
+			</me>
+			</p>
+		</solution>
+		<solution><title>d</title>
+			<p>(d) This is just the sum of all the areas in (a), (b), and (c).
+				<me>
+					\Delta x = 8\text{ m} + 2\text{ m} -1\text{ m} = 9\text{ m}.
+				</me>
+			</p>
+		</solution>
+
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Displacement-from-vx-vs-t-Graph"><title> Displacement from <m> v_x </m> vs <m> t </m> Graph</title>
+		<statement>	
+			<p>
+				The <m> v_x </m> of a car moving on a straight road is plotted against time <m> t </m> as shown in <xref ref="fig-x-from-vx-vs-t" />. Find the displacements of the car during the following intervals of time: (a) <m> t = 0 \rightarrow 20 \text{ s}</m>, (b) <m> t = 20 \text{ s}\rightarrow 40 \text{ s}</m>, (c) <m> t = 40 \text{ s}\rightarrow 50 \text{ s}</m>, (d) <m> t = 50 \text{ s}\rightarrow 70 \text{ s}</m>, and (e) <m> t = 10 \text{ s}\rightarrow 20 \text{ s}</m>.
+			</p>
+
+			<figure xml:id="fig-x-from-vx-vs-t">
+				<caption>
+					Figure for <xref ref="ex-Displacement-from-vx-vs-t-Graph" />.
+				</caption>
+				<image source="./images/one-dim-motion/x-from-vx-vs-t.png" width="70%"/>
+			</figure>
+ 
+		</statement>
+		<hint>
+			<p>
+				Find the areas between the plot line and the time axis.
+			</p>
+		</hint>
+		<answer>
+			<p>
+				(a) <m> 200 </m> m, (b) <m> 200 </m> m, (c) <m> -50 </m> m, (d) <m>-200</m> m, (e) <m>150</m> m.
+			</p>
+		</answer>
+		<solution><title>a</title>
+			<p>
+				The area under the plot (or, over the plot if <m> v_x \lt 0</m>) is the displacement. We use area of triangle = <m> \dfrac{1}{2} \times </m> base <m> \times </m> height and area of a rectangle = base <m> \times </m> height.
+			</p>
+			<p>
+				 <m> \Delta x =  0.5 \times 20 \text{ s} \times 20 \text{ m/s}  = 200 \text{ m}.</m>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				<m> \Delta x = 0.5 \times 20 \text{ s} \times 20 \text{ m/s} = 200 \text{ m}.</m> 
+			</p>
+		</solution>
+		<solution><title>c</title>
+			<p>
+				<m> \Delta x = 0.5 \times 10 \text{ s} \times (-10 \text{ m/s} ) = -50 \text{ m}.</m>
+			</p>
+		</solution>
+		<solution><title>d</title>
+			<p>
+				<m> \Delta x = 20 \text{ s} \times (-10 \text{ m/s} ) = -200 \text{ m}.</m>
+			</p>
+		</solution>
+		<solution><title>e</title>
+			<p> This one is different - here we need to add two parts, one a triangle and the other a square.
+			</p>
+			<p>
+				<m> \Delta x = 0.5 \times 10 \text{ s} \times 10 \text{ m/s} + 10 \text{ s} \times (10 \text{ m/s} ) = 150 \text{ m}.</m>
+			</p> 
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exer-Velocity-from-Position-Given-as-a-Function-of-Time"><title>Velocity from Position Given as a Function of Time</title>
+		<statement>
+			<p>
+				The position of a box sliding in a straight line is given by the <p>x</p>-coordinate of one of its corners.  It is found that, while the <m>y</m> and <m>z</m>-coordinates do not change, the <m>x</m>-coordinate varies as a function of time <m>t</m> as 
+				<me>
+					x(t) = 4 + 18 t - 5 t^2,
+				</me>  
+				where <m>t</m> is in seconds and <m>x</m> in meters. 
+			</p>
+			<p>
+				(a) Determine the instantaneous velocity and speed of the box at following instants in time.  (i) <m>t = 0</m>, (ii) <m>t = 1</m> sec, (iii) <m>t = 2</m> sec, and (iv) <m>t = 3</m> sec.
+			</p>
+			<p>
+				(b) Find the average velocity of the box during the following intervals. (i) <m>[0, 1\ \text{s}]</m>, (ii) <m>[0, 2\ \text{s}]</m>,  (iii) <m>[1\ \text{s}, 2\ \text{s}]</m>, (iv) <m>[0, 3\ \text{s}]</m>, and (v) <m>[1\ \text{s}, 3\ \text{s}]</m>.
+			</p>
+		</statement>
+		<hint>Take derivative and evaluate at given instants.</hint>
+		<answer>See solution.</answer>
+		<solution><title>a</title>
+			<p>
+				Since the <m>x</m> coordinate of the particle is given as a function of <m>t</m> we can determine the <m>x</m>-component of the velocity by calculating the derivative.
+				<me>
+					v_x(t) = \frac{dx}{dt} = \frac{d}{dt} \left(4 + 18 t - 5 t^2\right) = 18 - 10 t.
+				</me>
+				The <m>x</m>-component of the instantaneous velocity at different instants is obtained by plugging values of <m>t</m> for those instants. We find the following for the velocities at the instants in question.
+				<md>
+					<mrow>\amp \text{(i) } v_x(0) = 18\ \text{m/s}. </mrow>
+					<mrow>\amp \text{(ii) } v_x(1 s)= 8\ \text{m/s}.</mrow>
+					<mrow>\amp \text{(iii) } v_x(2 s)  = -2\ \text{m/s}.</mrow>
+					<mrow>\amp \text{(iv) } v_x(3 s)  = -12\ \text{m/s}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>b</title>
+
+		<p>
+			The average velocity in time interval, as opposed to the instantaneous velocity at one instant, is calculated from the change in the position over that interval. Here, the <m>x</m>-component of the average velocity in an interval <m>t_1</m> to <m>t_2</m> is obtained by
+			<me>
+				v_x^{\text{ave}} = \frac{x(t_2)-x(t_1)}{t_2-t_1}.
+			</me>
+			Since the <m>y</m>- and <m>z</m>-components of the average velocity are zero here, the average velocity is
+			<me>
+				\vec v_{\text{ave}} = v_x^{\text{ave}} \hat u_x.
+			</me>
+			To start with we need the <m>x</m> coordinates at <m>t = 0</m>, <m>t = 1</m> s, <m>t = 2</m> s, and <m>t = 3</m> s.  These values are: <m>x(0) = 4\ \text{m}</m>, <m>x(1\ \text s) = 17\ \text{m}</m>, <m>x(2\ \text s) = 20\ \text{m}</m>, and <m>x(3\ \text s) = 13\ \text{m}</m>. Using these values we find the velocities in the intervals asked in the question.
+		</p>
+		<p>
+			(i) <m>[0, 1\ \text{s}]</m>:
+			<md>
+				<mrow>
+					\amp v_x = \frac{x(1\ \text s) - x(0)}{1\ \text s-0} = \frac{17\ \text{m} - 4\ \text{m}}{1\ \text s} = 13\frac{\text{m}}{\text s}.
+				</mrow>
+			</md>
+		</p>
+		<p>
+			(ii) <m>[0, 2\ \text{s}]</m>:
+			<md>
+				<mrow> 
+					\amp v_x = \frac{x(2\ \text s) - x(0)}{2\ \text s-0} = \frac{20\ \text{m} - 4\ \text{m}}{2\ \text s} = 8\frac{\text{m}}{\text s}.
+				</mrow>
+			</md>
+		</p>
+		<p>
+			(iii) <m>[1\ \text{s}, 2\ \text{s}]</m>:
+			<md>
+				<mrow>
+					\amp v_x = \frac{x(2\ \text s) - x(1\ \text s)}{2\ \text s-1\ \text s} = \frac{20\ \text{m} - 17\ \text{m}}{1\ \text s} = 3\frac{\text{m}}{\text s}.
+				</mrow>
+			</md>
+		</p>
+		<p>
+			(iv) <m>[1\ \text{s}, 3\ \text{s}]</m>:
+			<md>
+				<mrow> 
+					\amp v_x = \frac{x(3\ \text s) - x(1\ \text s)}{3\ \text s-1\ \text s} = \frac{13\ \text{m} - 17\ \text{m}}{2\ \text s} = -2\frac{\text{m}}{\text s}.
+				</mrow>
+			</md>
+		</p>
+
+		</solution>
+	</exercise>
+
+
+
+
+	<exercise xml:id="ex-Velocity-from-Derivative"><title>(Calculus) Velocity from Derivative</title>
+		<statement>
+			<sidebyside widths="50% 50%">
+				<p>
+					A block of copper attached to a spring executes a one-dimensional motion.  The position of the center of the block varies with time according to the following function, <m> x(t) = 5.0\ \cos(2\pi t/T)</m>, where <m> t </m> is in sec, <m>T=1\text{ sec}</m> and <m> x </m> in cm. The argument of cosine is radians not degrees. 
+				</p>
+				<image source="./images/one-dim-motion/velocity-from-derivative-checkpoint-figure.png"/>
+			</sidebyside>
+
+
+			<p>
+				(a) Determine the instantaneous velocity and speed at the following instants: (i) <m> t = 0</m>, (ii) <m> t = 1/4\text{ sec}</m>, (iii) <m> t = 1/2\text{ sec}</m>, (iv) <m> t = 3/4\text{ sec}</m>, (v) <m> t = 1.0\text{ sec}</m>, (vi) <m> t = 3/2\text{ sec}</m>. 
+			</p>
+			<p>
+				(b) Find the average velocities in the following intervals. (i) <m> [0, 1/4\text{ sec}]</m>, (ii) <m> [1/4\text{ sec}, 1/2\text{ sec}]</m>, (iii)  <m> [0, 1/2\text{ sec}]</m>, (iv) <m> [0, 1 \text{ sec}]</m>, and (v) <m>[0, 3/2 \text{ sec}]</m>.
+			</p>
+		</statement>
+		<hint> <p> (a) Take derivative and evaluate at the instants. (b) Evaluate <m>\Delta x</m> for the intervals.  </p> </hint>
+		<answer> <p> (a) <m>0.0, -31.4\text{ cm/s}. 0.0, 31.4 \text{ cm/s}, 0.0, 0.0 </m>., (b) <m>-20.0\text{ cm/s}, -20.0\text{ cm/s}, -20.0\text{ cm/s}, 0.0, -6.66\text{ cm/s} </m>. </p> </answer>
+		<solution><title>a</title> 
+			<p> 
+				Let us find <m>v_x</m> at arbitrary instant <m>t</m> by taking the derivative of <m>x</m>. In units <m>\text{m/s}</m> we get
+				<me>
+					v_x = \dfrac{dx}{dt} = -10.0\,\pi \sin(2\pi t).
+				</me>
+				Evaluating at instants asked give the following values.
+				<ol marker="(i)">
+					<li> <m>0.0,</m> </li>
+					<li> <m> -31.4 \text{ cm/s},</m></li> 
+					<li> <m>0.0,</m> </li>
+					<li> <m>31.4 \text{ cm/s},</m> </li>
+					<li> <m>0.0,</m> </li>  
+					<li> <m>0.0.</m> </li> 
+				</ol>
+			</p>
+			<p>
+				Instanteous speeds at these instants are obtained from absolute values of <m>v_x</m> here, with values <m>0,\ 31.4\text{ cm/s},\ 0, 31.3\text{ cm/s},\ 0, \ 0</m>.
+			</p>
+		</solution>
+ 
+		<solution><title>b</title>
+			<p>
+				The average velocity between two instants, <m>t=t_1</m> and <m>t=t_2</m> will be
+				<me>
+					v_{\text{av},x} = \dfrac{ x(t_2) - x(t_1) }{t_2 - t_1}.
+				</me>
+				We need positions at various instants. They are
+				<md>
+					<mrow> \amp x(0) = 5\text{ cm},\ \ x(0.25\text{ s}) = 0,\ \ x(0.5\text{ s}) = -5\text{ cm},</mrow>
+					<mrow> \amp x(1) = 5\text{ cm}, \ \ x(1.5\text{ s}) = -5\text{ cm}.</mrow>
+				</md>
+				Using these values we get average velocities to be:
+				<ol marker="(i)">
+					<li> <m>-20.0 \text{ cm/s},</m> </li>
+					<li> <m>-20.0 \text{ cm/s},</m> </li> 
+					<li> <m>-20.0 \text{ cm/s},</m>  </li>
+					<li> <m>0.0,</m> </li>
+					<li> <m>-6.67\text{ cm/s}.</m> </li>  
+				</ol>
+
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Determining-Delta-y-from-Given-v-y"><title> 
+ 		(Calculus) Determining <m>\Delta y</m> from Given <m>v_y(t)</m> </title>
+		<statement>
+			<p>
+				The <m>y</m>-velocity of a parchute jumper is given by
+				<me>
+					v_y = v_0 \left( 1 - e^{-\alpha t} \right),
+				</me>
+				where <m>v_0</m> and <m>\alpha</m> are constant. What is the change in <m>y</m> during interval <m>t=0</m> to <m>t=T</m>?
+			</p>
+
+		</statement>
+		<hint> <p>  Integrate <m>v_y</m>. </p> </hint>
+		<answer> <p> <m>v_0 T +  \dfrac{v_0}{\alpha} \left( e^{-\alpha T} - 1\right)</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Integrating <m>v_y</m> will give us the answer.
+				<md>
+					<mrow>\Delta y \amp =  \int_0^T v_y\, dt, </mrow>
+					<mrow> \amp = \int_0^T v_0 \left( 1 - e^{-\alpha t} \right) \, dt, </mrow>
+					<mrow> \amp = v_0 T +  \dfrac{v_0}{\alpha} \left( e^{-\alpha T} - 1\right). </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise><title> 
+ 		(Calculus) Practice with a Friend </title>
+		<statement>
+			<p>
+				A ball is shot straight up with speed <m>v_0</m>. Let positive <m>y</m> axis be pointed up. Using this coordinate system, you find that its velocity is changing with time according to the following equation.
+				<me>
+					v_y = v_0 - g t,
+				</me>
+				where <m>g</m> is a constant. Find the position of the ball at some arbitrary instant, <m>t=T</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Integrate <m>v_y</m>. </p> </hint>
+		<answer> <p> <m>v_0 T - \frac{1}{2} g T^2</m>.  </p> </answer>
+		<!-- <solution> 
+			<p>
+				Not provided.
+			</p>
+		</solution> -->
+	</exercise>	
+
+
+	</exercises>
+
+</section>

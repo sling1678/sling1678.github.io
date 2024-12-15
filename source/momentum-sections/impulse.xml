@@ -1,0 +1,417 @@
+<section xml:id="momentum-Impulse"><title> Impulse </title>
+	<subsection><title> Impulse as an Area</title>
+	<idx><h>Impulse</h><h>as Area</h></idx>
+ 
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				When you hit a baseball, you change direction and magnitue of the momentum of the ball in a very short duration of time. The change in momentum is caused by the force from the bat acting on the ball during the time they were in contact with each other.
+			</p>
+			<p></p>
+			<figure xml:id="fig-baseball-hit-wikipedia">
+				<caption></caption>
+				<image source="./images/momentum/baseball-hit-wikipedia.png" width="60%"/>
+			</figure>
+		</sidebyside>
+
+
+		<sidebyside widths="50% 10% 40%">
+			<p>
+				If you look at the magnitude of the force on the ball, it will be initially zero till contact occurs, will increase as the bat crushes into the ball, and then, will decrease to zero as the ball leaves the bat. The stronger the force and/or the longer the force acts on the ball, the greater the change in the momentum of the ball.
+			</p>
+			<p></p>
+			<figure xml:id="fig-force-of-impulse">
+				<caption></caption>
+				<image source="./images/momentum/force-of-impulse.png" width="60%"/>
+			</figure>
+		</sidebyside>
+
+		<p>
+			<idx>Impulse</idx>
+
+			That is, both the magnitude of the force and the time are important for causing a change in momentum. For this purpose, we define <term>impulse</term>, <m>\vec J</m>, during an infintesimal interval <m>\Delta t</m> by product of the force <m>\vec F</m> and the interval.
+			 <men xml:id="eq-impulse-fundamental-definition-delta">
+			 	\vec J = \vec F \;\Delta t.
+			 </men> 
+		</p>
+
+		<sidebyside widths="40% 10% 40% 10%">
+			<p>
+				 For <alert>constant force</alert> <m>\vec F_0</m>, such as weight, impulse over a finite interval <m>t_1\le t \le t_2</m> will be
+				 <men>
+				 	\vec J = \vec F_0 \;(t_2 - t_1).
+				 </men>
+			</p>
+			<p></p>
+			<image source="./images/momentum/impulse-on-bat-constant-force.png" width="60%"/>
+			<p></p>
+		</sidebyside>
+		<p>
+			 If force is changing with time, as for example the force shown in <xref ref="fig-force-of-impulse"/>, we will need to integrate  <m>\vec F(t)</m> with respect to time <m>t</m>, or, work with area under the curve of the components of force versus time. Thus, impulse is formally defined by the following <q>conceptual integral</q>
+			 <men xml:id="eq-impulse-fundamental-definition">
+			 	\vec J = \int_{t_1}^{t_2}\vec F(t) \;dt\ \ \ (\text{Calculus/Formal Defintion}).
+			 </men>
+			 The Cartesian components of impulse will be integrals that you can perform from given funtions <m>F_x(t)</m>, <m>F_y(t)</m>, <m>F_z(t)</m>.
+			 <men xml:id="eq-impulse-fundamental-definition-components-analytic">
+			 	J_i = \int_{t_1}^{t_2}\vec F_i(t) \;dt\ \ \ (i = x, y, z).
+			 </men>
+			 Previously, we have seen that another way to look at integrals is <q>area under the curve</q>. Thus, <m>J_x</m> during interval <m>t_1\le t \le t_2</m> will be area between <m>F_x(t)</m> and <m>F_x=0</m> when you plot <m>F_x</m> versus <m>t</m>.
+			<men xml:id="eq-impulse-as-area-under-the-curve-vector">
+				J_i = \text{area under }F_i \text{ vs }t\text{ plot.}\ \ \ (i=x,y,z) 
+			</men>
+			From the components <m>(J_x, J_y, J_z)</m>, we can obtain the mangitude and direction of impulse as we do for any other vector quantity.
+		</p>
+
+<!-- 		<p>
+			It turns out that the area under the <m> F </m> versus <m> t </m> plot determines the change in momentum. We call this quantity the <term> magnitude of impulse</term> or simply <term> impulse</term>. We will denote the magnitude of impulse by <m> J </m> and the impulse or impulse vector by <m> \vec J</m>.
+			<men xml:id="eq-impulse-as-area-under-the-curve">
+				J = \text{Area under }F \text{ vs }t\text{ plot.}
+			</men>
+		</p>
+		<remark><title>Impulse for a Constant Force</title>
+			<sidebyside widths="45% 15% 40%">
+				<p>
+					If force is constant, then, the area will simply be a product of the force and duration. Say, force has a constant magnitude <m> F_0</m> and acts for a duration <m> T</m> in the same direction. Then, impulse of this force will be
+					<me>
+						J = F_0\, T.
+					</me>
+				</p>
+				<p></p>
+				<figure xml:id="fig-impulse-on-bat-constant-force">
+					<caption></caption>
+					<image source="./images/momentum/impulse-on-bat-constant-force.png" width="60%"/>
+				</figure>
+				 
+			</sidebyside>
+		</remark>	 -->		
+	
+<!-- 		<p>
+			The area under the curve of the magnitude of force gives only the magnitude of the impulse. Just as force is a vector, the impulse is also a vector. Equation, <xref ref="eq-impulse-as-area-under-the-curve" /> will work correctly to give the direction of the impulse vector from the direction of the force vector <em>if direction of the force vector does not change in the duration when the force acts</em>. Therefore, 
+
+			<men xml:id="eq-impulse-as-area-under-the-curve-vector">
+				\vec J = \begin{cases}
+					\amp \text{Magnitude: the area under }F \text{ vs }t\text{ plot.}\\
+					\amp \text{Direction: same as force if direction of force constant.}
+					\end{cases}
+			</men>
+		</p>
+		<p>
+			How do we get both magnitude and direction of a force whose direction changes during the time it is acting on the body? This is usually not the case for most aplications of impulse. But, nonetheless, we should cover this possibility as well. A good way to handle this situation is to think in terms of components: obtain <m> J_x </m> from <m> F_x \text{ vs } t</m>, <m> J_y </m> from <m> F_y \text{ vs } t</m>, and <m> J_z </m> from <m> F_z \text{ vs } t</m>. Then, find the magnitue and direction of the impulse vector.
+			<mdn xml:id="eq-impulse-as-area-under-the-curve-vector-components">
+				<mrow> \amp J_x = \text{Area under }F_x \text{ vs }t\text{ plot.}</mrow>
+				<mrow> \amp J_y = \text{Area under }F_y \text{ vs }t\text{ plot.}</mrow>
+				<mrow> \amp J_z = \text{Area under }F_z \text{ vs }t\text{ plot.}</mrow>
+			</mdn>
+			Recall that the force components, <m> F_x</m>, <m> F_y</m>, and <m> F_z</m> can be positive or negative depending upon the direction of the force vector, <m> \vec F = (F_x, F_y, F_z)</m>, the corresponding impulses <m> J_x</m>, <m> J_y</m>, and <m> J_z</m> will also e positive or negative. However, when you compute the magnitude from the Pythagora's formula, you will always get a positive value.
+		</p> -->
+
+
+	<example xml:id="Impulse-from-the-Area-under-F-vs-t"><title> Impulse from the Area under <m> F </m> versus <m> t </m> </title>
+		<statement>
+			<p>
+				The impulse of a baseball hit can be well-approximated by a hat-shaped curve as shown in <xref ref="fig-ex-impulse-from-the-area"/>. The direction of the force during the hit is nearly constant, in the direction from the bat towards the ball. From the given values on the graph find the magnitude of the impulse on the ball.
+			</p>
+			<figure xml:id="fig-ex-impulse-from-the-area">
+				<caption>
+					Figure for <xref ref="Impulse-from-the-Area-under-F-vs-t"/>.
+				</caption>
+				<image source="./images/momentum/ex-impulse-from-the-area.png" width="70%"/>
+			</figure>
+
+		</statement>
+		<!-- <hint> <p>  Add the areas of the triangles. </p> </hint> -->
+		<answer> <p> <m> 7.0\text{ N.s}.</m>  </p> </answer>
+		<solution>
+			<p>
+				Since direction of the force does not change, we can take that direction to be direction of positive <m>x</m> axis. In this case, <m>J_y=J_z=0</m>, and magnitude <m>J = J_x</m>.
+			</p> 
+			<sidebyside widths="50% 5% 45%">
+				<p> 
+					Therefore, we can compute the magnitude of impulse from the area under the curve of magnitude <m>F</m> versus <m>t</m>. The area is area of triangle, whose formula is
+					<me>
+						A = \dfrac{1}{2}\times \text{ base }\times \text{height}.
+					</me>
+				</p>
+				<p> </p>
+				<figure xml:id="fig-ex-impulse-from-the-area-left-and-right">
+					<caption></caption>
+					<image source="./images/momentum/ex-impulse-from-the-area-left-and-right.png" width="50%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				 
+				We also notice that the unit of time is in milli-sec, which we will express in seconds.
+				Therefore, we get
+				<me>
+					J = \dfrac{1}{2}\times 70\text{ N}\times 200\times 10^{-3}\text{ s} = 7.0\text{ N.s}.
+				</me>
+ 
+			</p>
+		</solution>
+	</example>
+
+
+	</subsection>
+
+
+
+
+
+
+	<subsection><title> (Calculus) Impulse as an Integral</title><idx><h>Impulse</h><h>as Integral</h></idx>
+		<p> 
+			Consider an interval <m> t=t_i</m> to <m> t=t_f</m> during which we wish to compute the impulse of a force <m> \vec F </m>, whose  direction is fixed in time, for simplicity. Here, we will show how the formula for the magnitude of impulse is derived.
+		</p>
+
+		<p>
+			Let us divide the interval into <m> N </m> subintervals: <m> 
+			(t_0=t_i, t_1)</m>, <m> (t_1, t_2)</m>, <m> (t_2, t_3)</m>, <m> \cdots</m>, <m> (t_{N-2}, t_{N-1})</m>, and <m> (t_{N-1}, t_N=t_f)</m>. For simplicity, let the intervals be of equal length in time, <m> \Delta t</m>,
+			<me>
+				\Delta t = \dfrac{t_f - t_i}{N}.
+			</me>
+		</p>
+
+		<figure xml:id="fig-impulse-calculus-derivation-subintervals">
+			<caption> The impulse of a force over an interval <m> (t_i, t_f) </m> can be computed by dividing the interval into a large number of subintrevals, computing the magnitude of impulses for each subinterval, and then adding them up. During the subinterval <m> (t_{k-1}, t_{k}) </m>, the magnitude of force at the ends of the interval are <m> F_{k-1} </m> and <m> F_{k}</m> respectively, whose average is denoted by <m>F_{k}^{\text{av}}</m>.
+			</caption>
+			<image source="./images/momentum/impulse-calculus-derivation-subintervals.png" width="90%" /> 
+		</figure>
+		
+		<p>
+			Now, let us compute the impulse magnitude <m> J_k</m> in the <m>k^{\text{th}}</m> subinterval. Let the magnitude of the force at the ends of this subinterval be <m> F_{k-1} </m> and <m> F_{k} </m>. If <m> N </m> is large enough, then <m>F_{k-1} </m> and <m> F_{k} </m> will be almost the same, and therefore, we can get a good approximation of impulse magnitude <m> J_k</m> by using the average force in the subinterval as
+			<me>
+				J_k \approx F_{k}^{\text{av}}\, \Delta t
+			</me>
+			We now add up impulses from every subinterval to get the impulse over the original interval.
+			<me>
+				J \approx \sum_{k=1}^{N} \, F_{k}^{\text{av}}\, \Delta t.
+			</me>
+			By increasing <m> N </m> as large as we like, we can make this aproximation as accurate as we are happy with. The limit <m> N \rightarrow \infty </m> is said to be the exact value, which is represented by the integral sign.
+			<men xml:id="impulse-definition-calculus">
+				J  = \int_{t_i}^{t_f}\, F(t) dt.
+			</men>
+			If we are dealing with a force whose magnitude as well as direction changes, then we will work with one component at a time. The same procedure as above will give us the components of the impulse vector.
+			<mdn xml:id="eq-impulse-vector-components-calculus">
+				<mrow> \amp J_x = \int_{t_i}^{t_f}\, F_x(t) dt,</mrow>
+				<mrow> \amp J_y = \int_{t_i}^{t_f}\, F_y(t) dt,</mrow>
+				<mrow> \amp J_z = \int_{t_i}^{t_f}\, F_z(t) dt.</mrow>
+			</mdn>
+			From <m>(J_x, J_y, J_z)</m> you can compute the magnitude and direction of the impulse in a usual way.
+			<!-- Furthermore, if the direction of <m> \vec F </m> does not change during the interval of interest, you could just use that direction as one of the Cartesian axes. Then, clearly, we can state the magnitude of the impulse as
+			<men xml:id="impulse-definition-mgnitud-calculus">
+				\text{Magnitude, }J  = \int_{t_i}^{t_f}\, F(t) dt \ \ \ \left( \text{if direction of } \vec F\text{ fixed.}\right)  
+			</men> -->					
+		</p>
+
+		<example xml:id="ex-Impulse-of-a-Force-Varying-in-Time-Given-as-a-Function-of-Time"><title> (Calculus) Impulse of a Force Varying in Time Given as a Function of Time </title>
+			<statement>
+				<p>
+					A train is pulled by another train with increasing force magnitude for a total duration of <m> 5\text{ sec}</m> with the direction of the force unchanged. The magnitude of the force is given to be <m> F(t) = 60\,t^2 + 2000</m> in units of <m>\text{N}</m>. What is the impulse magnitude?
+				</p>
+
+			</statement>
+			<!-- <hint> <p>  <m>J_x=\int F_x dt</m>. </p> </hint> -->
+			<answer> <p>  <m> 12,500\, \text{N.s}</m>.  </p> </answer>
+			<solution> 
+				<p>
+					Since direction of force is unchanging, we take that direction to be <m>x</m> axis. This will make magnitude <m>J</m> equal to <m>J_x</m>. That is, we can just integrate  magnitude of force to obtain the answer.
+					<md>
+						<mrow> J \amp = J_x = \int\, F_x(t) dt = \int\, F(t) dt</mrow>
+						<mrow> \amp  = \int_0^5 \left( 60\,t^2 + 2000 \right)\, dt </mrow>
+						<mrow> \amp = \left( \dfrac{1}{3}\times 60\times 5^3 + 2000\times 5 \right) = 12,500\, \text{N.s} </mrow>
+					</md>
+				</p>
+			</solution>
+		</example>
+
+
+	</subsection>
+
+
+
+
+	<subsection><title> Net Impulse </title>
+
+		<p>
+			Impulses from different forces add vectorially.  Suppose force <m> \vec F_1</m> acts for a time <m>\Delta t_1</m> and <m>\vec F_2</m> for a time <m>\Delta t_2</m>, then the net impulse <m>\vec J_{\text{net}}</m> will be the vector sum of the impulses <m>\vec J_1</m> and <m>\vec J_2</m> of the two forces.
+			<me>
+				\vec J_{\text{net}} = \vec J_{1}  +\vec J_{2},
+			</me>
+			which must be evaluated as vector additions that you have learned in previous chapters. You can, of course, extend this to any number of forces in an obvious way.
+		</p>
+
+		<example xml:id="Net-Impulse-of-Two-Forces"><title> Net Impulse of Two Forces </title>
+			<statement>
+
+				<sidebyside widths="50% 5% 45%">
+					<p>
+						A box is on a level surface.  A force of magnitude <m> 3\text{ N}</m> acts on the box in the direction towards the East for <m> 10\text{ sec}</m> and another force of magnitude <m> 8\text{ N}</m>  acts on the box in the direction towards the North for <m> 5\text{ sec}</m>.
+					</p>
+					<p></p>
+					<figure xml:id="fig-Net-Impulse-of-Two-Forces-3N-8N">
+						<caption></caption>
+						<image source="./images/momentum/Net-Impulse-of-Two-Forces-3N-8N.png" width="60%"/>
+					</figure>
+				</sidebyside>
+
+				<p>
+					What are the magnitude and direction of the net impulse?
+				</p>
+
+			</statement>
+			<!-- <hint> <p>  Do vector addition. </p> </hint> -->
+			<answer> <p> <m> 50\text{ N.s}</m>, <m> 53.1^{\circ} </m> is the counterclockwise angle from the positive <m> x </m> axis.   </p> </answer>
+			<solution> 
+				<p> 
+					Let us work this problem out analytically. (You could just as easily do it graphically.) Let positive <m> x </m> axis be towards East and the positive <m> y </m>  axis towards North. then, we find the following for the two impulse vectors.
+					<md>
+						<mrow> \amp J_{1x} = 3\times 10 = 30\text{ N.s},\ \ J_{1y} = 0,</mrow>
+						<mrow> \amp J_{2x} = 0\ \ J_{2y} = 8\times 5 = 40\text{ N.s}.</mrow>
+					</md>
+					Adding these vectorially we get the components of the net impulse
+					<md>
+						<mrow> \amp J_x^{\text{net}} = J_{1x} +J_{2x} = 30 + 0 = 30\text{ N.s},</mrow>
+						<mrow> \amp J_y^{\text{net}} = J_{1y} +J_{2y} = 0 + 40 = 40\text{ N.s}.</mrow>
+					</md>
+					This gives the following for the magnitude and angle with respect to the <m> x </m> axis.
+					<md>
+						<mrow> \amp J_{\text{net}} = \sqrt{30^2 + 40^2} =  50\text{ N.s},</mrow>
+						<mrow> \amp \theta = \tan^{-1}\left( \dfrac{40}{30}\right) = 53.1^{\circ}.</mrow>
+					</md>				
+	 				We use the angle value and the quadrant of <m>  (J_x,\, J_y) </m> to interpret the direction. Here, since <m> (30,\, 40) </m> is in the first quadrant, the angle <m> 53.1^{\circ} </m> is the counterclockwise angle from the positive <m> x </m> axis.
+				</p>
+			</solution>
+		</example>
+
+	</subsection>
+
+
+
+
+	<exercises>
+
+	<exercise xml:id="ex-Find-Maximum-Force-from-Given-Impulse-and-Force-Graph"><title> Find Maximum Force from Given Impulse and Force Graph </title>
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					The graph shows a hat-shaped function for the magnitude of a force as a function of time. By observing change in the momentum of the body, it was estimated that the impulse of the force is <m> 10.0\text{ N.s}</m>. What is the value of <m>F_\text{max}</m>?
+				</p>
+				<p></p>
+				<figure xml:id="fig-ex-find-maximum-force-from-given-force-graph">
+					<caption></caption>
+					<image source="./images/momentum/ex-find-maximum-force-from-given-force-graph.png" width="60%"/>
+				</figure>
+			</sidebyside>
+			
+		</statement>
+		<hint> <p>  Equate the area under the curve to the impulse. </p> </hint>
+		<answer> <p>  <m> F_\text{max} = 100\text{ N}</m>. </p> </answer>
+		<solution> 
+			<p>
+				First we find an expression for the impulse from area under the given graph. Then, we equate it to find an equation in the unknown <m> F_\text{max}</m>. We also convert the unit of time to sec from the msec given in the graph. From the graph we get
+				<me>
+					J = \dfrac{1}{2}\, 0.200\, F_\text{max} = 0.1\, F_\text{max}.
+				</me>
+				Thus,
+				<me>
+					0.1\, F_\text{max} = 10.0\text{ N.s}.
+				</me>
+				This gives <m> F_\text{max} = 100\text{ N}</m>.
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Impulse-from-Force-Component-Graphs-in-a-Two-dimensional-Situation"><title> Impulse from Force Component Graphs in a Two-dimensional Situation</title>
+		<statement>
+			<p>
+				The graph shows the <m>x</m> component of a force as a function of time. At <m> t = 0</m>, the <m>x</m> and <m> y</m> components of the momentum of the body upon which this force acts had the values <m> p_x = 10\text{ kg.m/s}</m> and <m> p_y = -20\text{ kg.m/s}</m>. Find the magnitude and direction of the momentum at <m> t = 200\text{ ms}</m>.
+			</p>
+			<figure>
+				<caption>
+					Force components versus time for <xref ref="ex-Impulse-from-Force-Component-Graphs-in-a-Two-dimensional-Situation"/>.
+				</caption>
+				<image source="./images/momentum/ex-change-in-momentum-given-x-force.png" width="60%"/>
+				<image source="./images/momentum/ex-change-in-momentum-given-y-force.png" width="60%"/>
+			</figure>
+		</statement>
+		<hint> <p>  Work out the <m>x</m> and <m>y</m> components separately. </p> </hint>
+		<answer> <p> <m> 6.32\text{ N.s}</m>, <m> 72^{\circ} </m> clockwise from negative <m>x</m> axis  </p> </answer>
+		<solution> 
+			<p>
+				The area under the curves gives us the components of impulse.
+				<md>
+					<mrow> J_x \amp = \dfrac{1}{2}\times 100 \times 0.08 + (-50)\times 0.12 = -2\text{ N.s},</mrow>
+					<mrow> J_y \amp = -\dfrac{1}{2}\times 50 \times 0.04 + \dfrac{1}{2}\times 50 \times 0.04 + 50\times 0.12 = 6\text{ N.s}.</mrow>
+				</md>
+				Therefore, the magnitude of impluse is
+				<me>
+					J = \sqrt{J_x^2 + J_y^2} = \sqrt{2^2 + 6^2} = 6.32\text{ N.s}.
+				</me>
+				Angle with <m>x</m> axis is
+				<me>
+					\theta = \tan^{-1}\left( \frac{6}{-2}\right) = -72^\circ.
+				</me>
+				Since point <m>(-2,6)</m> is in the second quadrant, the diration is <m>72^\circ</m> clockwise from the negative <m>x</m> axis.
+				
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+	<exercise xml:id="Impulse-of-a-Sinusoidally-Varying-Force"><title> (Calculus) Impulse of a Sinusoidally Varying Force </title>
+		<statement>
+			<p>
+				The time dependence of a sinusoidally varying force can be written as a sine or cosine of time. For instance, when an electron is illuminated by a monochromatic light, the force on the electron varies as a cosine or sine function or a combination thereof. 
+			</p>
+			<p>
+				Suppose the force on an electron at some instant <m> t </m> has the following form with respect to a coordinate system, 
+				<me> \vec F = A \cos (2\pi f t)\, \hat i + B \sin(2\pi f t)\, \hat j</me>, 
+
+				where <m>\hat i</m> and <m>\hat j</m>  are the unit vectors along the <m>x</m> and <m>y</m> axes respectively,   <m>A</m> and <m>B</m> are some constants, and <m> f </m> is also a constant frequency. 
+			</p>
+			<p>
+				What will be the magnitude and direction of the impulse on the electron during an interval <m> t=0 </m> to <m> t=T</m> for the case <m> A = B </m>?
+			</p>
+
+		</statement>
+		<hint> <p> Find the components <m>J_x</m> and <m>J_y</m>  </p> </hint>
+		<answer> <p> <m> \dfrac{A}{\pi f}\left|\sin(\pi f T) \right| </m>, direction <m>\pi f T \mod 2\pi </m>. </p> </answer>
+		<solution> 
+			<p> We can find the components of the impulse vector and then write the full impulse vector using the components and the unit vectors.
+				<md>
+					<mrow> J_x \amp = \int_0^T\, A \cos (2\pi f t)\, dt = \dfrac{A}{2\pi f}\, \sin (2\pi f T), </mrow>
+					<mrow> J_y \amp = \int_0^T\, A \sin (2\pi f t)\, dt = -\dfrac{A}{2\pi f}\, \left[ \cos (2\pi f T) - 1 \right]. </mrow>
+				</md>
+			Therefore, using unit vectors, the impulse vector is
+			<me>
+				\vec J = J_x\, \hat i + J_y\, \hat j,
+			</me>
+			from which we can get the magnitude to be
+			<md>
+				<mrow> J \amp = \sqrt{J_x^2 + J_y^2},</mrow>
+				<mrow> \amp = \dfrac{A}{2\pi f} \sqrt{2-2\cos(2\pi f T)},</mrow>
+				<mrow> \amp = \dfrac{A}{2\pi f} \sqrt{4\sin^2(\pi f T)},</mrow>
+				<mrow> \amp = \dfrac{A}{\pi f}\left|\sin(\pi f T) \right|,</mrow>
+			</md>
+			and the angle for the line
+			<md>
+				<mrow> \theta \amp = \tan^{-1}\left(\dfrac{J_y}{J_x} \right), </mrow>
+				<mrow>  \amp = -\tan^{-1}\left(\dfrac{\cos(2\pi f T) - 1}{\sin(2\pi f T)} \right), </mrow>
+				<mrow>  \amp = \tan^{-1}\left(\dfrac{2\sin^2(\pi f T)}{2\sin(\pi f T)\cos(\pi f T)} \right), </mrow>
+				<mrow>  \amp = \tan^{-1}\left(\tan(\pi f T) \right) = \pi f T, </mrow>
+			</md>
+			where the direction will be based on interpreting this angle <m> mod\ 2\pi</m>.
+			</p>
+		</solution>
+	</exercise>
+
+	</exercises>
+
+</section>

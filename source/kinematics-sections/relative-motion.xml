@@ -1,0 +1,395 @@
+<section xml:id="kinematics-Relative-Motion"><title>Relative Motion in Different Frames</title><idx><h>Motion</h><h>Relative</h></idx><idx>Relative Motion</idx>
+	<introduction>
+		<p>
+
+			Have you ever wondered whether physics is same from the perspectives of two observers who are in a relative motion with respect to each other? For instance, what will be position, velocity and acceleration of the pendulum bob from observer S' inside a moving train and observer S on a fixed railway platform as in <xref ref="fig-two-frames-1" />? What is the relation between their values?
+		</p>
+		<figure xml:id="fig-two-frames-1">
+			<caption>
+			</caption>
+			<image source="./images/two-dim-motion/two-frames.png" width="60%"/>
+		</figure>
+		<!-- <p>
+			In this section you will study the relation between the kinematics of the same object by two observers. We will refer to two observers by S and S' as in <xref ref="fig-two-frames-1" />. The observers and their coordinate systems are also called <term>frames</term> or frames of reference.
+		</p> -->
+		<p>
+			We will make one important assumption about time elapsed in the two frames. Let <m>\Delta t</m> and <m>\Delta t'</m> be values of time elapased between the same two events, e.g., time for a complete period. We will assume that 
+			<men>
+				\Delta t = \Delta t'.
+			</men>
+			This <q>commonsense</q> assumption about the relationship between time intervals in two reference frames that are in relative motion turns out to be incorrect as shown by Albert Einstein in <m>1905</m> in his theory of special relativity. The mistake caused is, however,  very small for ordinary velocities, and becomes significant only when speeds are close to the speed of light, which is <m>3\times10^8</m> m/s. 
+		</p>
+		<!-- <p>
+			To simplify our discussion we will orient axes such that the axes used by the two observers have the same directions in space and they move along <m>x</m>-axis. Observer S' would move towards positive <m>x</m> axis of S and S will move towards negative <m>x</m> axis of S'. We refer kinemtic quantites in S' by same letter as in S and distinguish them by placing appostrophe on the letter.
+		</p> -->
+		
+		<p>
+			Most situations encountered in everyday life have speeds that are much smaller than the speed of light, and hence we are on safe ground for most of our work. When we make this assumption, we say that we are in the realm of <term> Galilean or non-relativistic relativity</term>.
+		</p>
+
+	</introduction>
+	<subsection xml:id="subsection-Observers-Moving-at-Uniform-Velocity-With-Respect-to-Each-Other"><title> Observers Moving at Uniform Velocity With Respect to Each Other </title>
+
+		<p>
+			To be concrete consider the description of motion of a particle P (say, the Bob of the pendulum) in frames S (say, the platform of railway station) and S' (say, the train) shown in <xref ref="fig-frame-relative-velocity"/>. Figure (a) on the left is drawn in frame S. In this frame origin O is not moving. The same physical sitution is dawn in (b), this time as viewd by frame S'; now, origin O' is not moving. We will use only Figure (a) to work out formulas that we need.
+		</p>
+		<figure xml:id="fig-frame-relative-velocity">
+			<caption>
+				The position of an object P with respect to two frames S and S'.  
+			</caption>
+			<image source="./images/two-dim-motion/motion-in-two-frames.png" width="80%"/>
+		</figure>
+		<p>
+			 Frames S and S' have parallel Cartesian coordinates with motion of one frame with respect to the other happening only along common <m>x</m> axis. For convenience, I will also set <m>t=t'=0</m> at the instant the origins of the two frames coincide.
+		</p>
+		<p>
+			 Let P be the location of the particle at instant <m>t=t</m>. Let <m>\vec r</m> denote its postion (vector) in S. Let <m>\vec r'</m> denote the position in S'. Let <m>\vec R</m> denote the postion of the origin of frame S' in frame S.  These quantities are also given the following names.
+			 <ol>
+			 	<li> <m>\vec r</m> = Position of P with respect to O. </li>
+			 	<li> <m>\vec r'</m> = Position of P with respect to O'. </li>
+			 	<li> <m>\vec R</m> = Position of O' with respect to O. </li>
+			 </ol>
+			 Let <m>V</m> denote the relative speed of the two frames.  As displayed in <xref ref="fig-frame-relative-velocity"/>(a), since O' is moving with speed <m>V</m> towards positive <m>x</m> axis of S frame, we also have
+			<men xml:id="eq-relative-origin-relation">
+				\vec R = V\; t\;\hat i,
+			</men>
+			where <m>\hat i</m> is the unit vector in the direction of positive <m>x</m> axis. 
+			From the triangle <m>\triangle \text{OO'P}</m>, I can immediately write the following.
+			<men xml:id="eq-relative-postion-relation">
+				\vec r = \vec r' + \vec R.
+			</men>
+			From these two equations, we get
+			<me>
+				\vec r = \vec r' + V\; t\;\hat i.
+			</me>
+			We can decompose this into a relation among the Cartesian coordinates of P in the two frames.
+			<mdn>
+				<mrow> \amp x = x' + V\; t</mrow>
+				<mrow> \amp y = y'</mrow>
+				<mrow> \amp z = z'</mrow>
+			</mdn>
+			Taking derivatives with respect to <m>t</m> yields relations among the components of velocity of P.
+			<mdn> 
+				<mrow> \amp v_x =  v'_x + V</mrow>
+				<mrow> \amp  v_y  = v'_y </mrow>
+				<mrow> \amp v_z = v'_z </mrow>
+			</mdn>
+			This says that speed in S frame will be different than speed in S' frame. In S frame, speed is
+			<md>
+				<mrow> v_S \amp = \sqrt{v_x^2 + v_y^2 + v_z^2} </mrow>
+				<mrow>  \amp = \sqrt{(v'_x+V)^2 + {v'_y}^2 + {v'_z}^2} </mrow>
+				<mrow>  \amp = \sqrt{ v_{S'}^2 + V^2 + 2 v'_x V  } \ne v_{S'} </mrow>
+			</md>
+		</p>
+		<p> <idx>Relative Velocity</idx><idx><h>Velocity</h><h>Relative</h></idx>
+			The velocity vectors <m>\vec v = (v_x, v_y, v_z)</m> and <m>\vec v' = (v'_x, v'_y, v'_z)</m> are called <term>relative velocity</term> of P with respect to O and O', respectively. Taking derivative of velocity components gives  relations among the components of acceleration of P. Since relative speed <m>V</m> is constant, its derivative is zero. Hence, we get		  
+			<mdn>
+				<mrow xml:id="accelerations-in-twoframes-uniform-velocity"> \amp a_x =  a'_x,\ \  (\text{since } \frac{dV}{dt} = 0.)</mrow>
+				<mrow> \amp a_y =a'_y, </mrow>
+				<mrow> \amp a_z  = a'_z. </mrow>
+			</mdn>
+			The acceleration vectors <m>\vec a = (a_x, a_y, a_z)</m> and <m>\vec a' = (a'_x, a'_y, a'_z)</m> are called acceleraions of P in S and S' respectively.
+		</p>
+
+	</subsection>
+	<subsection><title> Observers Accelerating with Respect to Each Other</title>
+
+		<p>
+			This is very common situation. For instance, you may want to describe motion of moon with respect to the Sun (say frame S) and with respect to the Earth (frame S'). Clearly S' is moving about Sun with a nonuniform velocity. The question of observers accelerating with respect to each other in <xref ref="fig-frame-relative-velocity"/> is simply the case of non-constant <m>V</m>, that is
+			<me>
+				\frac{dV}{dt} = 0.
+			</me>
+			Going over the calculations in section <xref ref="subsection-Observers-Moving-at-Uniform-Velocity-With-Respect-to-Each-Other"/> above, you will note that everything is the same except Eq. <xref ref="accelerations-in-twoframes-uniform-velocity"/>. The one must be changed to
+			<men>
+				a_x = a'_x + \frac{dV}{dt}.
+			</men>
+		</p>
+
+
+	</subsection>
+
+
+
+
+
+	<example xml:id="ex-Relative-Speed-of-a-Runner"><title>Relative Speed of Runners</title>
+		<statement>
+			<p>
+				Three runners A, B, and C are running on a straight East-West road.  Runners A and B have velocities <m>\{ 5\ \text{m/s},\ \text{East}\}</m> and  <m>\{ 2\ \text{m/s},\ \text{West}\}</m>, respectively,  with respect to runner C. What is the relative velocity of the runner A with respect to the runner B?
+			</p>
+
+		</statement>
+		<!-- <hint> <p> Think: C as frame S, and B as frame S'. Also, work with vector components. </p> </hint> -->
+		<answer> <p> <m> 7\text{ m/s}</m> due East with respect to B.  </p> </answer>
+		<solution> 
+			<p>
+				We will think C as frame S, and B as frame S'. Then <m>\vec v_B</m> will be <m>\vec V</m>, the velocity of frame S' with respect to frame S, and we are after <m>\vec v'</m> in formulas worked out in this section.
+			</p>
+			<p>
+				It is best to work analytically in a Cartesian coordinate system. Let the positive <m>x</m>-axis of the runner C be pointed towards East. Then, we can write the velocities of runners A and B in this frame.
+				<md>
+					<mrow> \amp \vec v_A = (5\ \text{m/s})\hat i, </mrow>
+					<mrow> \amp \vec v_B = (-2\ \text{m/s})\hat i. </mrow>
+				</md>
+				The relative velocity of A with respect to B will be <m>\vec v_A - \vec v_B</m> will be
+				<me>
+					\vec v_A - \vec v_B = (5\ \text{m/s})\hat i - (-2\ \text{m/s})\hat i = (7\ \text{m/s})\hat i.
+				</me>
+				Therefore, the velocity of A is <m>7</m> m/s towards the East with respect to B. 
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="ex-Relative-Velocity-Subtracting-Velocity-Vectors"><title> Relative Velocity - Subtracting Velocity Vectors</title>
+		<statement>
+			<!-- <sidebyside widths="55% 5% 40%"> -->
+				<p>
+					A train has velocity <m> 20 \text{ m/s}</m> in the direction <m> 30^{\circ} </m> North of East. A car has velocity <m> 30 \text{ m/s}</m> in the North direction. These velocities are given with respect to someone who is not moving with respect to the ground. What is the velocity of the train observed by the driver of the car? If you need to use a coordinate system, take your positive <m> x </m> axis to point towards East and the positive <m> y </m> to point towards North. 
+				</p>
+<!-- 				<p>
+				</p>
+				<image source="./images/two-dim-motion/problem-relative-velocity.png" width="70%" />
+			</sidebyside> -->
+		</statement>
+		<!-- <hint> <p> Think: Ground as frame S, Car as frame S', and train as P. Then, the problem is simply, given <m>\vec v</m> and <m>>\vec V</m>, what is <m>\vec v'</m>.  </p></hint> -->
+		<answer> <p> <m> 26.5\text{ m/s}</m>, <m>49^{\circ}</m> South of East.</p> </answer>
+		<solution> 
+
+			<p>
+				We will think the Ground as frame S, Car as frame S', and train as P. Also, take East as <m>x</m>-axia and North as <m>y</m>-axis. This gives the following for velocities of train and car in frame S.
+				<md>
+					<mrow> \amp \vec v_t = \left( 20 \cos\, 30^{\circ}, 20 \sin\, 30^{\circ}\right) = (17.32, 10)</mrow>
+					<mrow> \amp \vec V_c = \left( 0, 30 \right)</mrow>
+				</md>
+			</p>
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					Let  <m>\vec v^{\prime}_t</m> be the velocity of the train with respect to the car. We have the following vector relations.
+					<md>
+						<mrow> v^{\prime}_t \amp = \vec v_t - \vec V_c</mrow>
+						<mrow> \amp = (17.32-0, 10-30) = (17.32, -20).</mrow>
+					</md>
+				</p>
+				<p>
+				</p>
+				<image source="./images/two-dim-motion/problem-relative-velocity.png" width="70%" />
+			</sidebyside>
+			<!-- 			</p>
+			<p>
+				If we think what happens in one second, we will notice that the train will appear South of East as shown in the figure. This tells us that the velocity we want is obtained by subtracting the car's velocity from the train's velocity.
+			</p>
+			<p>
+				Subtraction and addition of vectors is more readily done when we have the vectors in component form. From the figure, we obtain the following component forms for the velocities of train and car, <m> \vec v_t</m> and <m> \vec v_c </m>, respectively, in m/s units.
+			</p>
+			<p>
+				<md>
+					<mrow> \amp \vec v_t = \left( 20 \cos\, 30^{\circ}, 20 \sin\, 30^{\circ}\right) = (17.32, 10)</mrow>
+					<mrow> \amp \vec v_c = \left( 0, 30 \right)</mrow>
+				</md>
+			</p>
+			<p> -->
+				<!-- Therefore, the components of the velocity of the train with respect to the driver of the car are
+				<me>
+					\vec v = \vec v_t - \vec v_c = (17.32, -20).
+				</me> -->
+
+
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					Therefore, if you look at the train from the car you will notice it is moving with speed <m> \sqrt{17.32^2 + 20^2}\text{ m/s} = 26.5\text{ m/s}</m> in the direction <m> 49^{\circ} </m> South of East, i.e., clockwise (since <m> \arctan(y/x) </m> results in a negative value) from positive <m> x </m> axis into the fourth quadrant.
+				</p>
+				<p>
+				</p>
+				<image source="./images/two-dim-motion/problem-relative-velocity-2.png" width="70%" />
+			</sidebyside>
+
+
+		</solution> 
+	</example>
+
+
+	<example xml:id="ex-Crossing-a-River"><title>Crossing a River</title>
+
+		<statement>
+			<p>
+				Suppose you want to cross a river by a boat. Assume river is flowing at a speed of <m>2\text{ m/s}</m> at all points across the river.  
+			</p>
+			<sidebyside widths="60% 10% 30%">
+				<p>
+					<p>
+						Let speed of the boat in calm waters be <m>5\text{ m/s}</m>. If river was not flowing much, assuming static, you will just point the boat to the exact opposite point of the shore and you will get there in <m>30\text{ sec}</m>.
+					</p>
+					<p>
+						But to cross the raging river you need to point the boat in the direction up the river. That is, to get your net velocity to point across the river, you want velocity of the boat with respect to the river be pointed in the direction up the river.
+					</p>
+					<p>
+						(a) Find angle <m>\theta</m> you need. (b) Find the time it will take you to cross the river.
+					</p>
+				</p>
+				<p>
+				</p>
+				<figure xml:id="fig-crossing-a-river">
+					<caption> For <xref ref="ex-Crossing-a-River"/>.
+					</caption>
+					<image source="./images/two-dim-motion/crossing-a-river.png" width="70%" />
+				</figure>
+			</sidebyside>
+			
+ 
+		</statement>
+		<!-- <hint><p>
+			Note: Speed with respect to calm waters means it is with respect to River frame. Take Shore as frame S and River as frame S'.
+		</p></hint> -->
+		<answer><p></p></answer>
+		<solution>
+			<p>
+				Here boat is P, shore is frame S and river is frame S'. 
+				From the data of crossing of river in calm waters  we get speed <m>v'_B</m> in the figure, which stands for the speed of the boat with respect to the River frame.
+				<me>
+					v' \equiv v'_B = 5\text{ m/s}.
+				</me>
+				We also know the speed of frame S' with respect to S.
+				<me>
+					V \equiv = v_R = 2\text{ m/s}
+				</me>
+				We want to find the value of speed <m>v \equiv v_B</m> of the boat with respet to S. From the triangle of vectors in  <xref ref="fig-crossing-a-river"/> we get the following vector equation.
+				<me>
+					\vec v_B = \vec v'_B + \vec v_R.
+				</me>
+				This equation has the following <m>x</m> and <m>y</m> components.
+				<md>
+					<mrow>\amp 0 = -v'_B\sin\theta + v_R  </mrow>
+					<mrow>\amp v_B = v'_B\cos\theta + 0 </mrow>
+				</md>
+				From the first equation, we will get <m>\theta</m>, which we will use in the second to get <m>v_B</m>.
+				<md>
+					<mrow>\amp \theta = \cos^{-1}(v_R/v'_B) = \sin^{-1}(2/5) =23.6^\circ.</mrow>
+					<mrow>\amp v_B = v'_B\cos\theta = 4.6\text{ m/s}.</mrow>
+				</md>				
+				From the problem description, we know the width of the river to be
+				<me>
+					w = 5\text{m/s} \times 30\text{ s} = 150\text{ m}.
+				</me>
+				Therefore, the time for crossing now will be
+				<me>
+					 t = \frac{w}{v_B} = \frac{150}{4.6} = 32.6\text{ m/s}.
+				</me>
+
+			</p>
+		</solution>
+	</example>
+
+
+	<exercises>
+
+	<exercise xml:id="ex-Freely-Falling-Marble-in-an-Accelerating-Elevator"><title> Freely Falling Marble in an Accelerating Elevator </title>
+		<statement>
+			<sidebyside widths="50% 10% 30% 10%">
+				<p>
+					A marble is dropped in an elevator that is accelerating at <m>3\ \text{m/s}^2</m> upward with respect to the ground.  Find the acceleration of the marble with respect to the ground and with respect to an observer in the elevator.
+				</p>
+				<p></p>
+				<image source="./images/two-dim-motion/marble_in_an_accelerating_elevator_going_up.png" width="30%"/>
+				<p></p>
+ 
+			</sidebyside>
+
+
+		</statement>
+		<hint> <p> Set up the equation for vertical components of acceleration vector relation.  </p> </hint>
+		<answer> <p>  <m> 9.81\text{ m/s}^2</m> and <m>12.81\text{ m/s}^2</m> </p> </answer>
+		<solution> 
+			<sidebyside widths="50% 10% 30% 10%">
+				<p>
+					We draw a picture of the situation given in the problem in <xref ref="fig-example-elevator-redone"/> where we denote the ground-based observer as <m>O</m> and the observer in the elevator as <m>O'</m>.  The ball is falling freely with <m>g</m> as far as the ground-based observer is concerned. Therefore, the magnitude of <m> a = g = 9.81\text{ m/s}^2</m>. With <m>\hat j</m> pointed up, we have
+					<me>
+						\vec a = - 9.81\,\hat j, \ \ \vec A = 3\,\hat j, \ \ \vec a^{\prime} = a^{\prime}\, \hat j.
+					</me>
+				</p>
+				<p></p>
+				<figure xml:id="fig-example-elevator-redone">
+					<caption> Solution for <xref ref="ex-Freely-Falling-Marble-in-an-Accelerating-Elevator"/>.</caption>
+					<image source="./images/two-dim-motion/example-elevator-redone.png" width="30%"/>
+				</figure>
+				<p></p>
+ 
+			</sidebyside>
+
+			<p>
+				The accelerations of the marble with respect to the observers <m>O</m>, and <m>O'</m> are related as follows.
+					<me>
+						\vec a = \vec A + \vec a^{\prime}.
+					</me>
+				Therefore,
+				<me>
+					- 9.81 = 3 + a',
+				</me>
+				which give the following value for the <m>y</m>-component of the  acceleration of the marble for the observer in the elevator.
+				<me>
+					a' = -12.81\ m/s^2.
+				</me>
+				Therefore, the acceleration of the marble will be <m>-12.8\ \text{m/s}^2</m> in the elevator frame, regardless of whether the elevator is moving up or down and the value of the speed of the elevator as long as the acceleration of the elevator with respect to ground is <m>3\ \text{m/s}^2</m> pointed up.
+			</p>
+			<p>
+				If you were in this elevator and standing on a balance, you would notice that your <q>weight</q> is more than when the elevator was not accelerating up. We say that <m>ma'</m> is the <term>apparent weight</term>.
+			</p>
+		</solution>
+	</exercise>
+ 
+ 
+
+	<exercise xml:id="ex-Practice-with-a-Friend-Crossing-a-River-at-a-Point-Upstream"><title>Practice with a Friend - Crossing a River at a Point Upstream</title>
+
+		<statement>
+			<p>
+				Try <xref ref="ex-Crossing-a-River"/> one more time, but now, for a landing site on the opposite bank that is <m>50\text{ m}</m> upstream from exact opposite point. 
+			</p>
+		</statement>
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+ 
+	<exercise xml:id="ex-Practice-with-a-Friend-Accelerating-Elevator"><title>Practice with a Friend - Accelerating Elevator</title>
+
+		<statement>
+			<p>
+				(a) Try <xref ref="ex-Freely-Falling-Marble-in-an-Accelerating-Elevator"/> one more time, but now, let the accelerator be going up and slowing down with magnitude of deceleration being <m>3\text{ m/s}^2</m>. (b) What will happen if the elevator is going down and accelerating at <m>3\text{ m/s}^2</m>? You would be wrong if you got the same answer as in <xref ref="ex-Freely-Falling-Marble-in-an-Accelerating-Elevator"/>.
+			</p>
+		</statement>
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+
+
+
+	<exercise xml:id="ex-Practice-with-a-Friend-Rain-Fall-at-an-Angle-in-a-Moving-Frame"><title>Practice with a Friend - Rain Fall at an Angle in a Moving Frame</title>
+
+		<statement>
+			<p>
+				Suppose raindrops are falling vertically with some speed <m>v</m> as viewed by an stationary observer on the ground. When he starts to run, he notices the rains make an angle when they hit his face. The faster he runs more the angle. When he runs at speed <m>V</m>, angle is <m>\theta</m>. Find a relation between <m>v</m>, <m>V</m>, and <m>\theta</m>.
+			</p>
+			<p>
+				Hint: Think Ground as frame S, runner as frame S'
+			</p>
+		</statement>
+		<!-- <solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution> -->
+	</exercise>
+
+
+	</exercises>
+
+
+
+</section>

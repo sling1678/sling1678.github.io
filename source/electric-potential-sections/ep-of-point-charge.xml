@@ -1,0 +1,200 @@
+<section xml:id="Electric-Potential-of-Point-Charge"><title> Electric Potential of Point Charge </title>
+	<introduction>
+		<p>
+			Electric potential of a point charge is the building block for electric potential by more complex charge distributions as we will see in the next section.
+		</p>
+
+		<sidebyside widths="60% 10% 25% 5%">
+			<p> 
+				Electric potential of a point charge <m>q</m> located at the origin has the same value at a distance <m>r</m> from it, regardless of the direction.
+				<men xml:id="eq-electric-potential-point-charge-restate">
+					\phi = \dfrac{1}{4\pi\epsilon_0}\,\dfrac{q}{r}.
+				</men>		
+			</p>
+	 		<p></p>
+ 
+
+			<image source="./images/electric-potential/e-potential-example-formulas-point-charge.png" width="70%"/>
+ 
+			<p></p>
+		</sidebyside>
+		<p>
+			<!-- This equation is the building block for electric potential by more complex charge distributions as we will see in the next section. For instance, the net electric potential by a collection of point charges is just an algebraic sum of the potentials of each charge give by Eq. <xref ref="eq-electric-potential-point-charge-restate"/>. In this section, we will focus on one-charge system only. -->
+		</p>
+
+
+	</introduction>
+	<section> <title>(Calculus) Derivation of the Formula for Electric Potential for Point Charge</title>
+		<p>
+			To derive formula in <xref ref="eq-electric-potential-point-charge-restate"/>  from the definition of electric potential given in <xref ref="Electric-Potential-Section"/>, we need to perform an integral from the reference point, which is at <m>r=\infty</m> to the field point P, which is at <m>r=r</m>. The integral is required to obtain work done because the electric force varies along the path. Setting the test charge <m>Q</m> to unity makes the integral equal to the electric potential at P.
+			<men>
+				\phi_P = - \int_\text{ref}^{P} \vec E \cdot d\vec r.
+			</men>
+			Since electric field is radial, the dot product with <m>d\vec r</m> gives
+			<me>
+				\vec E \cdot d\vec r = E\: dr = \frac{1}{4\pi\epsilon_0}\,\frac{q}{r^2}dr,
+			</me>
+			where I have replaced
+			the magitude of electric field <m>E</m> by its formula obtained in previous chapter. 
+			With reference at <m>r=\infty</m>, upon doing the integration we get the desired result.
+			<md>
+				<mrow>\phi_P \amp = - \int_\text{\infty}^{r}\frac{1}{4\pi\epsilon_0}\,\frac{q}{r^2}dr </mrow>
+				<mrow> \amp = \frac{1}{4\pi\epsilon_0}\,\frac{q}{r}.</mrow>
+			</md>
+		</p>
+
+
+		<!-- <p>
+			Consider a positive charge <m>+q</m> at the origin. We know that it will have electric field in the space around the charge. At a point a distance <m>r</m> away for the charge, electric field has the following magnitude in every direction from the charge.
+			<me>
+				E = \dfrac{1}{4\pi\epsilon_0}\,\dfrac{q}{r^2}.
+			</me>
+			 
+		</p>
+		<sidebyside widths="55% 5% 40%">
+			<p>
+				To find this formula based on the definition of electric potential given in <xref ref="Electric-Potential-Section"/>, we need to perform an integral from the reference point to the point P, but the result is easy to state and use. Consider two points <m>P_1</m> and <m>P_2</m> that are at distances <m>r_1</m> and <m>r_2</m> from <m>q</m>. 
+			</p>
+			<p> </p>
+			<image source="./images/electric-potential/potential-point-charge-two-space-points.png" width="60%"/>
+		</sidebyside>
+		
+		<p>
+			Then, we will show below that the difference in potential at these two points is given by
+			<men xml:id="eq-difference-in-potential-point-charge">
+				\phi_2 - \phi_1 = \dfrac{1}{4\pi\epsilon_0}\,\dfrac{q}{r_2} - \dfrac{1}{4\pi\epsilon_0}\,\dfrac{q}{r_1}.
+			</men>
+			Say, point <m>P_1</m> is reference, then, we will get the potential at point <m>P_2</m> as
+			<me>
+				\phi_2 = \phi_\text{ref} + \dfrac{1}{4\pi\epsilon_0}\,\dfrac{q}{r_2} - \dfrac{1}{4\pi\epsilon_0}\,\dfrac{q}{r_\text{ref}}.
+			</me>
+			Choosing <m>r_\text{ref} = \infty</m>, placing the reference point far far away from <m>q</m> will remove the last term, and choosing <m>\phi_\text{ref}=0</m> further simplifies the formula.  Therefore, we make the following choices
+			<md>
+				<mrow> \amp r_\text{ref} = \infty,</mrow>
+				<mrow> \amp \phi_\text{ref} = 0. </mrow>
+			</md>
+			Then, potential at <m>P_2</m> will be a simple formula.
+			<me>
+				\phi_2 =   \dfrac{1}{4\pi\epsilon_0}\,\dfrac{q}{r_2}.
+			</me>
+			Since point <m>P_2</m> is an arbitray point, we do not need to continue with the subscript <m>2</m>, and write formula for potential at point that is located a distance away from a point charge <m>q</m> for reference here.
+			<men xml:id="eq-electric-potential-point-charge">
+				\phi = \dfrac{1}{4\pi\epsilon_0}\,\dfrac{q}{r}.\ \ (r_\text{ref}=\infty)
+			</men>		
+			The choice <m> r_\text{ref} = \infty</m> may not be possible in some situations. For instance, we will see that if the source of potential is a line of charges, we need the reference point to be located at some finite distance from the wire.
+		</p> -->
+	</section>
+	 
+
+	<exercise xml:id="ex-Electric-Potential-of-a-Proton-at-Atomic-Distances-1"><title> Electric Potential of a Proton at Atomic Distances </title>
+		<statement>
+			<p>
+				(a) What is the electric potential of a proton at a distance of Bohr radius, <m>5.29\times 10^{−11}\text{ m}</m>, from the proton?
+			</p>
+			<p>
+				(b) 
+				What is the potential energy of an electron when placed <m>5.29\times 10^{−11}\text{ m}</m> from a proton? State both in <m>\text{eV}</m> and <m>\text{J}</m>.
+			</p>
+			<p>
+				(c) What is the electric potential of an electron at a distance of Bohr radius, <m>5.29\times 10^{−11}\text{ m}</m>, from the electron?
+			</p>
+
+			<p>
+				Data: <m>e = 1.60\times10^{-19}\text{ C}</m>.
+			</p>
+		</statement>
+		<hint> <p> (a) Use <m>\phi</m> for a point charge, (b) <m> Q\times \phi</m> gives potential energu of <m>Q</m>, (c) No additional work required, just the sign needs to be right.  </p> </hint>
+		<answer> <p>(a) <m> 27.2\text{ V}</m>, (b) <m>-27.2\text{ eV}</m>, <m> -4.35 \times 10^{-18}\text{ J}</m>, (c) <m>- 27.2\text{ V}</m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a)
+				Using the electric potential formula for a point charge we get
+				<md>
+					<mrow> \phi \amp = \dfrac{1}{4\pi\epsilon_0}\,\dfrac{e}{r},</mrow>
+					<mrow> \amp = 9\times 10^9\,\dfrac{1.60\times10^{-19}}{ 5.29\times 10^{−11}} </mrow>
+					<mrow> \amp = 27.2\text{ V}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+ 			<p>
+				(b)
+				By multiplying potential at the location of the electron by the charge of the electron we will get the potential energy of the electeron.
+				<md>
+					<mrow> \text{EPE} \amp = -e\,\phi = -27.2\text{ eV},</mrow>
+					<mrow> \amp = -1.60\times10^{-19}\text{C}\times 27.2\text{ V}  = -4.35 \times 10^{-18}\text{ J}. </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(c)</title>
+			<p>
+				(c)
+				This requires no additional work since absolute value of the charge of an electron is same as that of proton. The only difference from (a) is the sign.
+				<me>
+					\phi = - 27.2\text{ V}.
+				</me> 
+			</p>
+		</solution>
+
+
+
+	</exercise>
+
+
+	<exercise xml:id="ex-Extra-Electrons-on-Negatively-Charged-Spherical-Particle"><title>Extra Electrons on Negatively Charged Spherical Particle</title>
+
+		<statement>
+			<p>
+
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+	<!-- <subsection> <title> (Calculus) Derivation of Potential Difference Due to a Point Charge</title>
+		<p>
+			We want to show how Eq. <xref ref="eq-difference-in-potential-point-charge"/> follows from the definition of potential difference in terms of work done on a test charge. 
+		</p>
+		<p>
+			Suppose you move a test charge <m>Q</m> in the presence of the fixed source charge <m>q</m> with the condition that you balance the electric force <m>\vec F_e</m> on <m>Q</m> by your force, <m>\vec F</m>. We wish to find the work done by <m>\vec F</m>, which is
+			<me>
+				\vec F = -\vec F_e = -\dfrac{1}{4\pi\epsilon_0}\, \dfrac{qQ}{r^2}\hat u_r, 
+			</me>
+		</p>
+		<figure>
+			<caption>
+				Figure to aid on caluclation of work on test charge <m>Q</m> when we move it from <m>P_1</m> to <m>P_2</m> from force <m>\vec F</m> that balances the electric force. Since electric force is a conservative force, the work integral is independen of the path. Figure shows vectors for the case of both charges positive.
+			</caption>
+			<image source="./images/electric-potential/potential-energy-change-point-charge.png" width="60%"/>
+			
+		</figure>
+		<p>
+			where <m> \hat u_r</m> is a unit vector from <m>q</m> to <m>Q</m>.
+			Work done by this force for a displacement <m>\vec r</m> to <m>\vec r + d\vec r</m> will be
+			<me>
+				dW = \vec F\cdot d\vec r = - \dfrac{1}{4\pi\epsilon_0}\, \dfrac{qQ}{r^2}\, dr,
+			</me>
+			where <m>r</m> is the spherical radial coordinate. Integrating this from position <m>r=r_1</m> to <m>r=r_2</m> we get
+			<md>
+				<mrow> W_{1\rightarrow 2} \amp = -\dfrac{1}{4\pi\epsilon_0} \int_{r_1}^{r_2}\, \dfrac{qQ}{r^2}\, dr. 
+				</mrow>
+				<mrow> \amp = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{qQ}{r_2} - \dfrac{1}{4\pi\epsilon_0}\, \dfrac{qQ}{r_1}.</mrow>
+			</md>
+			Dividing this by test charge <m>Q</m> gives the difference in electric potential between the two points.
+			<me>
+				\phi_2 - \phi_1 = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q}{r_2} - \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q}{r_1}.
+			</me>			
+
+
+
+		</p>
+	</subsection> -->
+</section>

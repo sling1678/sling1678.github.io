@@ -1,0 +1,325 @@
+<section xml:id="Electric-Field-for-Planar-Symmetry"><title> Electric Field for Planar Symmetry </title>
+	<introduction>
+		<p>
+		</p>
+	</introduction>
+	<subsection><title> Planar Symmetry</title>
+		<p>
+			A planar symmetry of charge density is obtained when charges are uniformly spread over a large flat surface as shown in <xref ref="fig-planar-charge-distribution-two-views" />. Mathematically, we require the planar surface to be infinite in extent in all directions of the plane, e.g., entire <m>xy</m>-plane, with surface charge density (SI units: <m>\text{C/m}^2</m>) same everywhere on the plane.  
+		</p>
+ 		<figure xml:id="fig-planar-charge-distribution-two-views">
+ 			<caption>
+ 				Charges distributed uniformly on a plane are represented in a three-dimension perspective or as an edge view.
+ 			</caption>
+ 			<image source="./images/gausss-law/planar-charge-distribution-two-views.png" width="90%"/>
+ 		</figure>
+
+	</subsection>
+
+	<subsection><title> Consequences of Planar Symmetry </title>
+		<p>
+			Suppose the plane of charges is the <m>xy</m>-plane.  Now, what can we say about electric field at some point P above the plane, say on the <m>z</m> axis?
+		</p>
+		<p> <alert> Direction of the Field: </alert> </p> 
+		<p>
+			One way to think about how to get that is to superimpose electric fields by every charge. 
+		</p>
+		<sidebyside widths="50% 50%">
+			<p>
+				Now, take a look at the electric field by an arbitrary charge in the plane, say at <m>(x,y)</m>. It is at an angle to the vertical. But, for every charge there is an equal charge on the plane, here <m>(-x,-y)</m>, whose electric field cancels out the horizontal component of electric field at P.
+			</p> 
+			<!-- <image source="./images/gausss-law/planar-charges-e-field-direction.png" width="90%"/> -->
+			<image source="./images/gausss-law/gauss-law-plane-1.png" width="90%"/>
+			
+		</sidebyside>
+		
+		<p>
+			Therefore, we can assert that electric field will be pointed vertically to the plane. If the charges are positive, electric field will be away from the plane and if the charges are negative, electric field will be pointed towards the plane. 
+		</p>
+		<p> <alert> Magnitude of the Field:</alert> </p>
+
+		<p>
+			Since the plane of charge is infinite along <m>x</m> and <m>y</m> axes, two points <m>P_1</m> and <m>P_2</m> at same <m>z</m> coordinate but different <m>(x,y)</m> coordinates are at the same physical situation from the plane. 
+		</p>
+		
+		<figure>
+			<caption>
+				The magnitude of electric field in a planar symmetry situation can depend only on the distance from plane. We expect electric fields at points <m>P_1</m> and <m>P_2</m> to be equal.
+			</caption>
+			<image source="./images/gausss-law/planar-charges-e-field-magnitude.png" width="60%"/>
+		</figure>
+
+		<p>
+
+			Therefore, we do not expect elctric field to depend on <m>(x,y)</m> coordinates. We expect that the magnitude of the elctric field can, at most, depend on the distance of the field point from the plane.
+			<me>
+				E(x,y,z) = E(z).
+			</me> 
+			We will find below that, even that dependence is not there. We will find that elctric field has a constant magnitude everywhere. Let's see how.
+		</p>
+
+	</subsection>
+
+
+	<subsection><title>Electric Field of a Uniformly Charged Plane Sheet</title>
+		<p>
+			Electric field of a charged plane sheet such as shown in <xref ref="fig-planar-charge-distribution-two-views"/> is constant. LEt <m>\sigma</m> be charge per unit area of the plane. Then, we will prove below that electric field has a constant magnitude every where.
+			<men>
+				E = \frac{\sigma}{2\epsilon_0}.
+			</men>
+			This is an important result to remember since we do find many situation in which a planar charge approximation can be applied.
+		</p>
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+
+				The direction of the field depends on its location. For instance, for positively charged sheet, the direction is up above the plane and down below the plane. For negatively charged sheet, the direction is towards the sheet. Electric field lines are perpendicular to the sheets. 
+			</p>
+			<p></p>
+			<figure xml:id="fig-gauss-e-field-directions-for-plane">
+				<caption>
+					Direction of electric field near charged sheets.  
+				</caption>
+				<image source="./images/gausss-law/gauss-e-field-directions-for-plane.png" width="60%"/>
+			</figure>
+		</sidebyside>
+
+
+
+	</subsection>
+ 	<subsection> <title> Derivation of Electric Field by Gauss's Law</title>
+
+ 		<p><alert>Gaussian Surface and Flux</alert></p>
+ 		<p>
+ 			You should know by now that when we apply Gauss's law, we seek to find a Gaussian surface so that electric field inside the integral of flux calculation can come outside of the integral. We take the same analysis path here as we did for spherical and cylindrical cases.
+ 		</p>
+ 		<p>
+ 			Suppose charges are in the <m>xy</m>-plane. Then, by discussion above, we can say that electric field will have the following form.
+ 			<me>
+ 				\vec E = E(z)\hat u_z,
+ 			</me>
+ 			where I am using <m>\hat u_z</m> for unit vector towards positive <m>z</m>-axis.
+ 		</p>
+
+ 		<p>
+ 			A Gaussian surface that makes use of these obervations about the electric field has the shape of a box that straddles the charges plane symmetrically as shown in <xref ref="fig-gauss-law-planar-gaussian-box"/>. Since the top and bottom of the box are same distance from the plane, electric field has same magnitude at top and bottom. We will denote this by <m>E_P</m>. 
+ 		</p>
+ 		<figure xml:id="fig-gauss-law-planar-gaussian-box">
+ 			<caption>
+ 				The Gaussian surface is the surface of the closed box straddling the charged sheet in the plane. Our interest is to find electric field at point P, which is a point on the top side of the box. The normal to each face of the box is from inside the box to outside.
+ 			</caption>
+			<image source="./images/gausss-law/gauss-law-planar-gaussian-box.png" width="80%"/> 			
+ 		</figure>		
+ 		<p>
+ 			Recall that direction of normal vectors for a closed surface are taken from <alert>inside-to-outside</alert>. Therefore, we find that in the top and bottom parts, electric field and normal are in the same direction, but they are perpendicular to each other at other parts of the box. Let <m>A</m> be the area at the top and bottom. Therefore, flux through the surfaces of the closed box will be
+ 			<men xml:id="eq-flux-through-box-planar-charge">
+ 				\Phi_\text{through box} = E_P A + 0 + 0 + 0 + 0 + E_P A = 2E_P A,
+ 			</men>
+ 			where zeros refer to the sides of the box other than top and bottom. Now, we find the enclosed charge to mae use of Gauss's law.
+ 		</p>
+ 		<p><alert>Enclosed Charge: </alert></p>
+ 		<p>
+ 			When we look inside the box, we find that charge on area <m>A</m> of the sheet is inside the box. This is the enclosed charge. Since surface density of charge is <m>\sigma</m>, we get
+ 			<men xml:id="eq-enclosed-charge-by-box-planar-charge">
+ 				q_\text{enc} = \sigma A.
+ 			</men>
+ 		</p>
+
+
+ 		<p><alert>Use Gauss's Law:</alert></p>
+ 		<p>
+ 			Now, we use expressions for flux and enclosed charge in Gauss's law to get
+ 			<me>
+ 				2 E_P A = \frac{\sigma A }{\epsilon_0}.
+ 			</me>
+ 			This gives the magnitude of electric field at point P to be
+ 			<men>
+ 				E_P = \frac{\sigma}{2\epsilon_0}.
+ 			</men>
+ 			This field does not depend on how far P is from the plane. The direction of electric field does depend on which side of the plane you are looking at. In <xref ref="fig-gauss-law-planar-gaussian-box"/>, the direction is <m>+\hat u_z</m> at points with <m>z\gt 0</m> and <m>-\hat u_z</m> at points with <m>z\lt 0</m> as reproduced again in <xref ref="fig-planar-charges-e-field-lines"/>.
+		</p>
+		<figure xml:id="fig-planar-charges-e-field-lines">
+			<caption>
+				Field lines for positively and negatively charged planar charges are illustrated. The magnitude of electric field has a constant values <m>E=\sigma/2\epsilon_0</m> at all points.
+			</caption>
+			<image source="./images/gausss-law/planar-charges-e-field-lines.png" width="60%"/>
+		</figure>
+
+ 		
+ 
+
+ 	</subsection>
+
+<!-- 	<subsection><title>  Gaussian Surface Selection and Flux Calculation </title>
+		<p>
+			To make use of the direction and functional dependence of electric field, we choose a closed Gaussian surface in the shape of a box with four sides perpendicular to the charged plane and two other sides parallel to the surface as shown in <xref ref="fig-gauss-law-planar-symmetry"/>. We make sure that the box is symmetrical about the plane so that the two sides that fall on two sides of the plane are equal distance from the plane.
+		</p>
+		<figure xml:id="fig-gauss-law-planar-symmetry">
+			<caption>
+				A thin charged sheet and the Gaussian box for finding electric field at the field point P. The normal to each face of the box is from inside the box to outside.  
+			</caption>
+			<image source="./images/gausss-law/gauss-law-plane.png" width="60%"/>
+		</figure>
+		<p>
+			 In <xref ref="fig-gauss-law-planar-symmetry"/>, sides I and II of the Gaussian surface (the box here) that are parallel to the infinite plane has been shaded.  They are the only surfaces that give rise to non-zero flux since the electric field and the normals to the surfaces to the other faces are perpendicular to each other. 
+		</p>
+		<p>
+			Let <m>A</m> be the area of the shaded surface on each side of the plane and <m>E_P</m> be the magnitude of the electric field at point P.  Since the sides I and II are at the same distance from the plane, the electric field will have the same magnitude at points in these planes, although the directions of the electric field at these points in the two planes are opposite of each other.  
+			<me>
+				\textrm{Magnitude at I or II:}\ \ E(z) = E_P.
+			</me>
+			If the charge on the plane is positive then, the direction of electric field and the area vectors are as shown in <xref ref="fig-gauss-law-planar-symmetry"/>.  Therefore, we find the following for the flux of electric field through the box.
+			<men xml:id="eq-gauss-law-plane-flux">
+				\Phi_E = E_PA + E_PA + 0+0+0+0+0 = 2E_PA. 
+			</men>
+			where the zeros are for the flux through the other sides of the box.  Note that if the charge on the plane is negative, the directions of electric field and normals to areas in planes I and II are opposite of each other and we will get a negative sign for the flux.  I will work out the formula for the electric field based on positive charge on the sheet.  The electric field would have the same magnitude if the charge on the sheet is negative but the direction would be opposite of those we will find below. 
+		</p>
+	</subsection>
+
+	<subsection><title> Using Gauss's Law in Planar Symmetry Case</title>
+		<p>
+			The task is to find electric field at a field point <m>P</m> at location <m>(x,\ y,\ z)</m>. To apply Gauss's law for this task, we introduce a closed Gaussian surface which  contains this point. 
+		</p>
+
+		<p>
+			In the planar symmetry case, we found that the Gaussian surface was a box surrounding a an area <m>A</m> of the plane. The flux through this Gaussian surface has the following form.
+			<m>
+				\Phi_E =  2 E_P A.
+			</m>
+			where <m>E_P</m> is the magnitude of the electric field at P. 
+		</p>
+		<p>
+			Gauss's law states that flux through thea Gaussian surface is equal to <m>q_\text{enc}/\epsilon</m>, where <m>q_\text{enc}</m> is the total charge inside the volume surrounded by the Gausssian surface. Let <m>\sigma</m> (SI units <m>\text{C/m}^2 </m>) be the surface charge density on the surface. Then, 
+			<me>
+				2 E_P A = \dfrac{ \sigma\, A}{\epsilon_0}.
+			</me>
+			We can solve this for electric field magnitude.
+			<men xml:id="eq-gauss-law-plane-electric-field-magnitude">
+				E_P = \dfrac{\sigma}{2\epsilon_0}.
+			</men>
+			This result says that electric field is actually constant, not even depending upon the distance from the charged plane.
+		</p>
+		<p>
+			The direction of the field depends on the sign of the charge on the plane and  the side of the plane the field point is located as shown in <xref ref="fig-planar-charges-e-field-lines"/>.  The direction of electric field can be given in terms of the normal to the plane of charges - the direction of the field is along the normal away from the charged plane if the plane is positively charged and towards the plane if the plane is negatively charged.
+		</p> -->
+
+<!-- 		<figure xml:id="fig-planar-charges-e-field-lines">
+			<caption>
+				Field lines for positively and negatively charged planar charges are illustrated. The magnitude of electric field has a constant values <m>E=\sigma/2\epsilon_0</m> at all points.
+			</caption>
+			<image source="./images/gausss-law/planar-charges-e-field-lines.png" width="60%"/>
+		</figure> -->
+		
+
+<!-- 	</subsection> -->
+
+	<exercise xml:id="ex-Surface-Charge-Density-on-a-Uniformly-Charged-Sheet-from-Given-Electric-Flux" ><title> Surface Charge Density on a Uniformly Charged Sheet from Given Electric Flux </title>
+		<statement>
+			<p>
+				The electric flux through a square shaped area of side 5 cm near a large charged sheet is <m> 3 \times 10^{-5}\ \text{N.m}^2/\text{C}</m> when the area is parallel to the plate. (a) Find charge density on the sheet. (b) How strong is the electric field at the location of the square area?
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use the electric field formula to find the flux. (b) Use definition of flux. </p> </hint>
+		<answer> <p> (a) <m> 2.12 \times 10^{-13}\: \text{C/m}^2</m>, 
+					(b) <m> 0.012\text{ N/C} </m>. 
+
+			</p> </answer>
+		<solution><title>(a)</title> 
+			<p>
+				(a)
+				Let <m>\sigma</m> be the charge density on the large sheet. Since the sheet is large, we will assume it be infinitely large. This will make the  the charge distribution to have planar symmetry. We can then, either present the arguments presented above in this section, or just borrow the final answer.
+			</p>
+			<p>
+				Borrowing the final answer for the magnitude of the field, we have
+				<me>
+					E = \dfrac{\sigma}{2\epsilon_0},
+				</me>
+				which is constant and the drection is perpendicular to the sheet.
+				Therefore, the flux will be
+				<me>
+					\Phi = E\: A\:\:\cos\: 0^{\circ} = E A = \frac{\sigma}{2\epsilon_0}A.
+				</me>				
+				Hence, the surface charge density will be
+				<md>
+					<mrow> \sigma \amp = \frac{2\epsilon_0\:\Phi}{A} </mrow>
+					<mrow> \amp = \frac{2\times 8.85\times 10^{-12}\times 3 \times 10^{-5}}{0.05^2} = 2.12 \times 10^{-13}\: \text{C/m}^2.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title> 
+			<p>
+				We will just divide the flux by the area to get the field since field is constant over the area.
+				<me>
+					E = \frac{\Phi}{A} = \frac{3 \times 10^{-5}\ \text{N.m}^2/\text{C}}{0.05^2\text{ m}^2} = 0.012\text{ N/C}.
+				</me>
+			</p>
+
+		</solution>
+
+	</exercise>
+
+
+	<exercise xml:id="ex-Electric-Flux-Through-Tilted-Area-from-Electric-Field-of-Two-Oppositely-Charged-Plates"><title>Electric Flux Through Tilted Area from Electric Field of Two Oppositely Charged Plates  </title>
+		<statement>
+			<p>
+				Two large rectangular aluminum plates of area <m>150\ \textrm{cm}^2</m> face each other with a separation of 3 mm between them.  The plates are charged with equal amount of opposite charges, <m>\pm 20\: \mu \textrm{C}</m>.  The charges on the plates face each other.  Find the flux through a circle of radius 3 cm between the plates when the normal to the circle makes an angle of <m>30^{\circ}</m> with a line perpendicular to the plates. 
+			</p>
+			<image source="./images/gausss-law/ex-planar-aluminim-plates-with-circular-area.png" width="40%"/>
+
+		</statement>
+		<hint> <p> First find the electric field of the two plates together, and then account for the area of the circle not being perpendicular to the electric field.  </p> </hint>
+		<answer> <p> <m> \pm 3.67\times 10^{5}\ \text{N.m}^2/\text{C}</m>.  </p> </answer>
+		<solution>
+			<p>
+				First we note that in the space between the plates, the electric fields of the charges on the two plates will add to give the magnitude
+				<me>
+					E = \dfrac{\sigma}{2\epsilon_0} + \dfrac{\sigma}{2\epsilon_0} = \dfrac{\sigma}{\epsilon_0},
+				</me>
+				with direction from the positive plate to the negative plate. Problem gave us charge and the area of the plate over which the charge was spread. From this we compute <m>\sigma</m> to be
+				<md>
+					<mrow> \sigma \amp = \dfrac{Q}{A_{\text{plate}}}  = \dfrac{20\, \mu\text{C}}{150\ \text{cm}^2}  = 1.33\times 10^{-3} \text{C/m}^2. </mrow>
+				</md>
+				This gives the value of the magnitude of the electric field to be
+				<me>
+					E = \dfrac{1.33\times 10^{-3} } {8.85\times 10^{-12} } = 1.5\times 10^8\text{ N/C}.
+				</me>
+			</p> 
+			<p>
+				Next, we note that, since the electric field is normal to the plates, the electric field will make an angle <m>\theta=30^\circ</m> with the normal to the area, i.e., with the area vector. That will mean the flux will be reduced by <m>\cos\,\theta</m>. Since electric field is constant, we do not need to do any integration, we can just multiply the electric field magnitude and effective area.
+				<me>
+					\Phi = E\; A\; \cos\,\theta.
+				</me>
+				Putting in numerical values, we get
+				<md>
+					<mrow> \Phi \amp = 1.5\times 10^8\times \pi\times 0.03^2 \times \cos\,30^\circ</mrow>
+					<mrow> \amp = 3.67\times 10^{5}\: \text{N.m}^2/\text{C}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  
+</section>

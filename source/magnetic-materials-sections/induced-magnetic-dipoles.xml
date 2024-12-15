@@ -1,0 +1,141 @@
+<section xml:id="induced-magnetic-dipoles"><title> Induced Magnetic Dipoles </title>
+	<introduction>
+		<p>
+			An atom has a permanent magnetic dipole moment if the vector sum of magnetic dipole moments of its electrons is not zero. When an atom is placed in an external magnetic field, a magnetic dipole moment is also induced in the atom as we will see now. The induced dipole moment occurs in every material regardless of whether the material has a permanent magnetic dipole moment or not.
+		</p>
+		<p>
+			To see the emergence of an induced magnetic dipole moment in a material, consider a hydrogen atom and model the motion of the electron as a uniform circular motion  of radius <m>R</m> and constant speed <m>v</m>, which is an gross simplification of the actual situation, but it will do for our purpose here.  
+		</p>
+		<p>
+			In the absence of any magnetic field, the net force on the electron would be the electric force from the proton in the nucleus. Therefore, its acceleration will be centripetal.
+			<men xml:id="eq-induced-dipoles-only-electric-force">
+				\frac{1}{4\pi\epsilon_0} \frac{e^2}{R^2} = m_e\frac{v^2}{R}.
+			</men>
+			When the atom is placed in an external magnetic field  <m>\vec B</m>, there will be an additional force on the moving electron given by  <m>\vec F= -e\vec v\times\vec B</m>.  
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				For simplicity, let the circle of the motion of the electron be the <m>xy</m>-plane and the magnetic field towards the positive <m>z</m>-axis as shown in <xref ref="fig-induced-magnetic-moment-derivation"/>. The magnetic force on the electron will also be towards the center of the circle.  This will keep the motion circular but now the centripetal acceleration of the electron will be different. 
+			</p>
+			<p></p>
+			<figure xml:id="fig-induced-magnetic-moment-derivation">
+				<caption></caption>
+				<image source="./images/magnetic-materials/induced-magnetic-moment-derivation.png"/>
+			</figure>
+		</sidebyside>
+		
+		<p>
+			If the radius of the orbit under new forces is to remain the same as the old radius, then the speed must change to <m>v'</m> to satisfy the changes equation of the uniform circular motion:
+			<men  xml:id="eq-induced-dipoles-only-electric-and-magnetic-forces">
+				\frac{1}{\pi\epsilon_0} \frac{e^2}{R^2} + |e|v'B = 	m_e\frac{v'^2}{R}. 
+			</men>
+			Subtracting the Eq. <xref ref="eq-induced-dipoles-only-electric-force" /> form Eq. <xref ref="eq-induced-dipoles-only-electric-and-magnetic-forces" />, we obtain
+			<me>
+				|e|v'B = 	\frac{m_e}{R}\left( v'^2-v^2\right) = \frac{m_e}{R}(v'+v)(v'-v).
+			</me>
+		</p>
+		<p>
+			Assuming the change in speed <m>\Delta v = v'-v</m> to be small, we can replace <m>v'+v</m> by <m>2v</m>  on the right side since <m>v'\approx v</m> and obtain the following for the change in the speed.
+			<me>
+				\Delta v = \frac{|e|BR}{2m_e} \gt 0.
+			</me>
+			Notice that when we turn on a magnetic field, electron speeds up. 
+			This additional speed at the same radius will result in additional angular momentum.
+			The angular momentum vector will be positive <m>z</m> direction in  <xref ref="fig-induced-magnetic-moment-derivation"/>. Therefore, we will get the following change in the <m>z</m>-component of the angular momentum.
+			<me>
+				\Delta L_z = m_e R\Delta v = \frac{1}{2}\, |e| BR^2.
+			</me>
+			With <m>\vec \mu_e = - g_e \vec L</m>, we will conculde that this will induce a agnetic dipole moment in the direction opposite to that of the external magnetic field. That is in the negative <m>z</m> axis here. 
+			<me>
+				\Delta \mu_z = -g_e\Delta L_z = -\dfrac{g_e}{2}\,|e| R^2 B.
+			</me>
+			Writing this in the vector notation we have induced dipole moment vector to be
+			<me>
+				\Delta \vec\mu = -\dfrac{g_e}{2}\,|e|R^2\vec B.
+			</me>
+			In terms of Bohr magneton <m>\mu_B</m>, this will be
+			<me>
+				\Delta \vec\mu = -\dfrac{1}{2\hbar}\,|e|R^2\vec B\, \mu_B.
+			</me>
+			We find that induced magnetic moment is directed opposite to the applied magnetic field. The magnetic field of oppositely directed induced magnetic dipoles reduce the magnetic field inside the material.  The phenomenon of reduced magnetic field in a magnetic material is called <term>diamagnetic effect</term>.  
+
+		</p>
+		<p>
+			The induced magnetic dipole moments due to the diamagnetic effect are usually considerably less than the permanent magnetic dipole moments if the later is present in a material, e.g., in paramagents and ferromagents.  Therefore, although induced magnetic dipoles are created in all materials, the diamagnetic effect is most evident in the substances, such as Bismuth, that have no permanent magnetic dipole moments. 
+		</p>
+
+	</introduction>
+
+	<exercise xml:id="ex-Induced-Magnetic-Moment-in-a-Helium-Atom"><title> Induced Magnetic Moment in a Helium Atom </title>
+		<statement>
+			<p>
+				A helium has two paired electrons at approximately the Bohr radius (<m>0.05\text{ nm}</m>) from the nucleus.  Estimate the induced magnetic dipole moment when a helium atom is placed in a magnetic of <m>3\text{ T}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> For 2 elcrtrons you will get 2 times as much induced. </p> </hint>
+		<answer> <p> <m> -1.3\times 10^{-5}\mu_B</m>  </p> </answer>
+		<solution> 
+			<p>
+
+				For analytic purpose let us use a Cartesian coordinates with <m>z</m> axis in the direction of the magnetic field. The change in <m>z</m> components of the magnetic dipole moments of the two electrons will be twice the amount for one electron.
+				<m>
+					\Delta \mu_z = -2\times \frac{eR^2B_z}{2\hbar} \mu_B,
+				</m>
+				where <m>e</m> is the charge of an electron, <m>R</m> the radius of the orbit, and <m>B_z</m> the <m>z</m> component of the external magnetic field.  Putting the numerical values we find
+				<md>
+					<mrow> \Delta \mu_z  \amp = -\frac{1.6\times 10^{-19}C\times \left( 0.53\times 10^{-10}m\right)^2\times 3T}{1.055\times 10^{-34} J.s}\mu_B</mrow>
+					<mrow> \amp = -1.3\times 10^{-5}\mu_B.</mrow>
+				</md>
+				Compare this to the <m>z</m> component of the magnetic dipole moment of one unpaired electron due to spin angular momentum along <m>z</m> axis, which <m>1\mu_B</m>. 
+				Clearly, induced dipole moments are usually very much smaller than permanent dipole moments.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Induced-Magnetic-Dipole-Moment-in-Bismuth"><title> Induced Magnetic Dipole Moment in Bismuth </title>
+		<statement>
+			<p>
+				Bismuth is one of the best diamagnetic materials. Each atom of Bismuth has 83 electrons in different shells around the nucleus.  Assume the average radius of orbits to be same as Bohr radius (<m>0.053\text{ nm}</m>), and estimate the total induced magnetic dipole moment of a <m>100\text{-gram}</m> Bismuth sample when it is placed in <m>1.5\text{-T}</m> field, assuming the induced dipoles are all in the same direction. 
+			</p>
+			<p>
+				Data: atomic number of Bismuth = 209.
+			</p>
+
+		</statement>
+		<hint> <p>  Multiply induced dipole of one electron by 83 to get result for one atom and then multiply that by the number of atoms in the sample. </p> </hint>
+		<answer> <p> <m> 7.2\times 10^{-4}\text{ A.m}^2.</m>  </p> </answer>
+		<solution> 
+			<p>
+				Let us work out the induced dipole moment in one electron.
+				<me>
+					\frac{eR^2B_z}{2\hbar}\, \mu_B = \frac{1.6\times 10^{-19} \times (5.3\times 10^{-11})^2\times 1.5}{2\times 1.055\times 10^{-34}} = 3.2\times 10^{-6}\,\mu_B.
+				</me>
+				Now we multiply it by the number of electrons in the sample.
+				 
+				<md>
+					<mrow> \Delta \mu_z  \amp = -\left(100\text{ g}\times\frac{6.022\times 10^{23}}{209\text{ g}} \right) \times 82\times 3.2\times 10^{-6}\,\mu_B </mrow>
+					<mrow>\amp = - 7.8\times 10^{19}\, \mu_B.</mrow>
+					<mrow> \amp = -7.8\times 10^{19} \times 9.274 \times 10^{−24}\text{ A.m}^2</mrow>
+					<mrow> \amp = -7.2 \times 10^{-4}\text{ A.m}^2.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

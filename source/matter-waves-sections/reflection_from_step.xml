@@ -1,0 +1,107 @@
+<section xml:id="sec-Reflection-of-Wave"><title>Reflection of Wave</title>
+	<introduction>
+		<p>
+			In classical world, if a plane flies over a mountain, the plane is not reflected by the mountain. But, in quantum world, if you send a bunch of <q>planes</q>, some of them will be reflected back. That is, each plane has a probablity of reflecting back even when it has enough energy to fly over the mountain. In this section we will see this in a simple example shown in <xref  ref="fig-reflection-from-finite-step"/>. 
+		</p>
+
+			<!-- Consider sending a particle towards a finite barrier as shown in Fig. \ref{fig:reflection-from-finite-step}.  -->
+		<figure xml:id="fig-reflection-from-finite-step">
+			<caption>
+				The reflection of a particle from a finite potential step when the energy of the particle is greater than the energy of the potential step. Classically, the particle should go over the step and continue on its original path. In quantum mechanics, there is a probability that the particle will be reflected back!
+			</caption>
+			<sidebyside widths="49% 2% 49%">
+				<image source="./images/modern-physics/reflection-from-finite-step-classical.png" width="60%"/>
+				<image/>
+				<image source="./images/modern-physics/reflection-from-finite-step-quantum.png" width="60%"/>
+			</sidebyside>
+		</figure>
+
+		<p>
+			If energy <m>E</m> of the particle is more than the potential energy of the barrier <m>U_0</m>, then in the classical world of everyday life such as plane flying over a mountain, the particle will just continue onward. But in quantum mechanics, the wave function in the <m>x \lt 0</m> region will be a superposition of a wave moving towards the positive <m>x</m>-axis, <m>\psi_\text{in}</m>, and another wave moving towards the negative <m>x</m>-axis, <m>\psi_\text{re}</m>. 
+			<me>
+				\psi_I = \psi_\text{in} + \psi_\text{re}.
+			</me>
+			In the region <m>x>0</m> we have one wave - the transimtted wave moving towards the positive <m>x</m>-axis, <m>\psi_\text{tr}</m>.
+			<me>
+				\psi_{II} = \psi_\text{tr}.
+			</me>
+			To write the solutions it is better to introduce the following constants.
+			<me>
+				k = \dfrac{\sqrt{2mE}}{\hbar},\quad k' = \dfrac{\sqrt{2m(E-U_0)}}{\hbar}, \quad \omega = \dfrac{E}{\hbar}.
+			</me>
+			In terms of these constants the incoming, reflected and transmitted waves are:
+			<me>
+				\psi_\text{in} = A e^{ikx-i\omega t},\quad \psi_\text{re} = B e^{-ikx -i\omega t}, \quad \psi_\text{tr} = C e^{ikx-i\omega t},
+			</me>
+			where <m>A</m>, <m>B</m>, and <m>C</m> are the amplitudes of the incoming wave,  the reflected wave, and   the transmitted wave.  The wave function in the two regions are:
+			<md>
+				<mrow>\amp  \psi_I(x,t) = A e^{ikx-i\omega t} + B e^{-ikx -i\omega t}.</mrow>
+				<mrow> \amp  \psi_{II}(x,t) = C e^{ikx-i\omega t}.</mrow>
+			</md>
+			 The wave functions in the two regions join at <m>x=0</m> such that they have same amplitudes and same slopes with respect to <m>x</m> at <m>x=0</m>.  These are called <term>boundary conditions</term> on the wave function.
+			<mdn>
+				<mrow xml:id="eq-reflect-potential-1">\amp  \psi_I(0,t) = \psi_{II}(0,t) \longrightarrow A   + B  = C.</mrow>
+				<mrow xml:id="eq-reflect-potential-2"> \amp  \left.\dfrac{d\psi_I}{dx}\right|_{x=0} = \left.\dfrac{d\psi_{II}}{dx}\right|_{x=0}   \longrightarrow A  - B  = \dfrac{k'}{k}C. </mrow>
+			</mdn>
+			Equations <xref ref="eq-reflect-potential-1"/> and <xref ref="eq-reflect-potential-2"/> can be solved for B/A and C/A as
+			<me>
+				\dfrac{B}{A} = \dfrac{k-k'}{k+k'},\quad\quad \dfrac{C}{A} = \dfrac{2k}{k+k'}.
+			</me>
+			The probability current of incoming wave tells us the flux of the incoming wave. Suppose there is a source of particles at <m>x=-\infty</m>, then the number of particles arriving at <m>x=0</m> per unit time will be proportional to <m>j_\text{in}</m>. In that experiment, the particle leaving <m>x=0</m> towards <m>x=-\infty</m> will be <m>j_\text{re}</m> and  towards <m>x=\infty</m> will be <m>j_\text{tr}</m>.  Therefore, the flux of reflected and transmitted waves should add up to the flux of the incoming wave. Let us verify this by computing the probability currents for the three waves.
+			<me>
+				j_\text{in} = \dfrac{\hbar A^2 k}{m},\quad j_\text{re} = -\dfrac{\hbar B^2 k}{m}, \quad j_\text{tr} = \dfrac{\hbar C^2 k'}{m}.
+			</me>
+			Therefore,
+			<me>
+				\left|\dfrac{j_\text{tr}}{j_\text{in}} \right| = \dfrac{k'C^2}{kA^2},\quad \left|\dfrac{j_\text{re}}{j_\text{in}} \right| = \dfrac{B^2}{A^2}.
+			</me>
+			This gives the desired conservation of probabilities arrivig at <m>x=0</m> and leaving <m>x=0</m> as expected.
+			<me>
+				\left|\dfrac{j_\text{tr}}{j_\text{in}} \right| + \left|\dfrac{j_\text{re}}{j_\text{in}}\right|  = \dfrac{k'C^2}{kA^2} + \dfrac{B^2}{A^2} = 1. 
+			</me>
+
+		</p>
+	</introduction>
+
+
+TODO:
+
+
+\begin{exercise}
+An electron of energy 10 eV is shot towards a region where there is a repulsive potential barrier of 4 eV.  Suppose the barrier starts at $x=0$ and continues towards the positive $x$-axis and the electron is shot at the barrier from a far-away place on the negative $x$-axis.   (a) Find the wave number $k$ of the electron when it is in region $x\lt 0$.  (b) Find the wave number $k$ of the electron when it is in region $x>0$.  (c) What is the probability that the electron will be reflected? (c) What is the probability that the electron will be transmitted?
+\end{exercise}
+
+
+\begin{exercise}
+A proton of energy 10 MeV is shot towards a region where there is a repulsive potential barrier of 4 MeV.  Suppose the barrier starts at $x=0$ and continues towards the positive $x$-axis and the proton is shot at the barrier from a far-away place on the negative $x$-axis.   (a) Find the wave number $k$ of the proton when it is in region $x \lt 0$.  (b) Find the wave number $k$ of the proton when it is in region $x>0$.  (c) What is the probability that the proton will be reflected? (c) What is the probability that the proton will be transmitted?
+\end{exercise}
+
+\begin{exercise}
+Electrons of  energy 20 eV are shot towards a region where there is a repulsive potential barrier of energy less than 20 eV.  Suppose the barrier starts at $x=0$ and continues towards the positive $x$-axis and the electron is shot at the barrier from a far-away place on the negative $x$-axis.  It is found that 25\% of the electrons continue on towards positive $x$-axis and 75\% of the electrons are reflected back. What is energy of the barrier?
+\end{exercise}
+
+
+\begin{exercise}
+Electrons of  unknown energy are shot towards a region where there is a repulsive potential barrier of energy 100 eV.  Suppose the barrier starts at $x=0$ and continues towards the positive $x$-axis and the electron is shot at the barrier from a far-away place on the negative $x$-axis.  It is found that 25\% of the electrons continue on towards positive $x$-axis and 75\% of the electrons are reflected back. What is energy of the electrons?
+\end{exercise}
+
+
+\begin{exercise}
+Electrons of  unknown energy are shot towards a region where there is a repulsive potential barrier of energy 100 eV.  Suppose the barrier starts at $x=0$ and continues towards the positive $x$-axis and the electron is shot at the barrier from a far-away place on the negative $x$-axis.  It is found that 25\% of the electrons continue on towards positive $x$-axis and 75\% of the electrons are reflected back. We wish to increase the percentage of electrons transmitted in the region of the barrier to 50\%.  By what factor should the energy of the electrons be increased?
+\end{exercise}
+
+
+
+
+
+<!-- 		<figure xml:id="fig-deBroglie-Bohr-orbits">
+			<caption>
+				 The figure shows de Broglie wave pictures for several Bohr orbits. The picture was generated using the program at <url href="http://demonstrations.wolfram.com/BohrsOrbits/" visual="demonstrations.wolfram.com">Bohr's Orbits</url>.
+			</caption>
+			<image source="./images/modern-physics/deBroglie-Bohr-orbits.png" width="60%"/>
+		</figure> -->				
+	
+
+ 
+
+</section>

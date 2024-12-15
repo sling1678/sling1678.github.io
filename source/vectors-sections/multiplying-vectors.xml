@@ -1,0 +1,173 @@
+<section xml:id="Working-with-Cartesian-Unit-Vectors"><title> Working with Cartesian Unit Vectors </title>
+
+	<introduction> <title>Unit Vectors Along Cartesian Positive Axis Directions</title>
+
+	    
+		<sidebyside widths="50% 10% 40%">
+			<p>
+			    <p>
+			    	Unit vectors along Cartesian axes play important role in vector analysis. We will often denote these unit vectors by <m>\hat u_x </m>, <m>\hat u_y </m>, and <m>\hat u_z </m> respectively. At other times, we will denote them by their traditional symbols <m>\hat i </m>, <m>\hat j </m>, and <m>\hat k </m> respectively.
+			    </p>
+
+			</p>
+		    <p></p>
+			<figure xml:id="fig-cartesian_unit_vectors_copy">
+				<caption> 
+				</caption>
+				<image source="./images/vectors/cartesian_unit_vectors.png" width="80%"/>
+				
+			</figure>
+		</sidebyside>
+	    
+
+	    <sidebyside widths="50% 10% 30% 10%">
+			<p>
+			    For instance, say, we want a position vector <m> \vec r = ( x=2 \text{ m}, y=-5 \text{ m}) </m> in the <m>xy</m>-plane. Then, you can see that this vector will be a sum of two vectors: <m> \vec r_1 = 2 \text{ m} \hat i </m> and <m> \vec r_2 = -5 \text{ m} \hat j </m>. We write this as
+			    	<me>
+			    		\vec r = 2 \text{ m} \hat i  - 5 \text{ m} \hat j.
+			    	</me>
+			</p>
+			<p></p>
+			<figure xml:id="fig-vector_in_xy_plane_in_terms_of_ihat_jhat_copy">
+				<caption> 
+				</caption>
+				<image source="./images/vectors/vector_in_xy_plane_in_terms_of_ihat_jhat.png" width="80%"/>
+				
+			</figure>
+			<p></p>
+		</sidebyside>
+
+				
+		<p>
+			In general, an arbitrary vector <m> \vec A </m> with coordinate components <m> A_x, A_y, A_z</m> is often written as a sum of vectors along the Cartesian axes.
+			<me>
+				\vec A = A_x \hat i + A_y \hat j + A_z \hat k.
+			</me>
+		</p>
+	</subsection>
+
+
+
+	</introduction>
+
+
+	<subsection><title> Dot and Cross Products of Cartesian Unit Vectors </title>
+
+
+		<p> 
+			Since <m> \hat i</m>, <m> \hat j</m>, and <m> \hat k</m>, has unit magnitude, and are perpendicular to each other, we get the following dot and cross products. 
+	    	<mdn>
+	    		<mrow> \text{Dot products:  }\amp\hat i \cdot \hat i = 1,\ \ \hat j \cdot \hat j = 1,\ \ \hat k \cdot \hat k = 1,</mrow> 
+	    		<mrow> \amp \hat i \cdot \hat j = 0,\ \ \hat j \cdot \hat k = 0,\ \ \hat k \cdot \hat i = 0,</mrow>
+	    		<mrow> \text{Cross products:  }\amp\hat i \times \hat i = 0,\ \ \hat j \times \hat j = 0,\ \ \hat k \times \hat k = 0,</mrow>
+	    		<mrow> \amp \hat i \times \hat j = \hat k,\ \ \hat j \times \hat k = \hat i,\ \ \hat k \times \hat k = \hat j,</mrow>
+	    	</mdn>
+			With these, you can easily see how the components of an arbitrary vector <m>\vec A = \left( A_x, A_y, A_z\right)</m> are just the dot product of <m> \vec A </m> with the unit vectors along the axex.
+			<me>
+				A_x = \vec A \cdot \hat i,\ \ A_y = \vec A \cdot \hat j,\ \ A_z = \vec A \cdot \hat k.
+			</me>
+			The magnitude of <m> \vec A </m> is same as before
+			<me>
+				A = \sqrt{\vec A \cdot \vec A} =  \sqrt{A_x^2 + A_y^2 + A_z^2}.
+			</me>
+		</p>
+		<sidebyside widths="55% 5% 40%">
+			<p>
+				Cosines of the angles <m>\vec A</m> makes with positive axes, called direction cosines of the vector, are
+				<me>
+					\cos\,\theta_x = \dfrac{A_x}{A},\ \ 
+					\cos\,\theta_y = \dfrac{A_y}{A},\ \ 
+					\cos\,\theta_z = \dfrac{A_z}{A}, 
+				</me>
+				of which you only need two to denote direction of <m> \vec A</m> since
+				<me>
+					\cos^2\theta_x + \cos^2\theta_y + \cos^2\theta_z = 1.
+	 			</me>
+ 			</p>
+
+			<p></p>
+			<figure xml:id="fig-direction_cosines-copy">
+				<caption>Angles for direction cosines.</caption>
+				<image source="./images/vectors/direction_cosines.png" width="80%"/>
+			</figure>
+
+		</sidebyside>
+		<p>
+			<alert>Proof: </alert> It is easy to prove relation between direction cosines.
+			<md>
+				<mrow> \cos^2\theta_x \amp + \cos^2\theta_y + \cos^2\theta_z </mrow>
+				<!-- <mrow> \amp = \left( \frac{\vec A\cdot \hat i}{A} \right)^2  + \left( \frac{\vec A\cdot \hat j}{A} \right)^2 + \left( \frac{\vec A\cdot \hat k}{A} \right)^2   </mrow> -->
+				<mrow> \amp = \left( \frac{A_x}{A} \right)^2  + \left( \frac{A_y}{A} \right)^2 + \left( \frac{A_z}{A} \right)^2 </mrow>
+				<mrow> \amp = \frac{A_x^2 + A_y^2 + A_z^2}{A^2} = \frac{A^2}{A^2} = 1.  </mrow>
+			</md>
+		</p>	
+ 
+		<alert>Dot Product of Two Vectors Using Cartesian Unit Vectors: </alert> A dot product of two vectors is rather simple to obtain from their Cartesian components. Let
+		<me>
+			\vec A = A_x \hat i + A_y \hat j + A_z \hat k,\ \ \vec B = B_x \hat i + B_y \hat j + B_z \hat k.
+		</me>
+		Then, we will havbe
+		<md>
+			<mrow> \vec A \cdot \vec B \amp = (A_x \hat i + A_y \hat j + A_z \hat k) \cdot (B_x \hat i + B_y \hat j + B_z \hat k)</mrow>
+			<mrow> \amp = A_x B_x (\hat i \cdot \hat i)  + A_x B_y (\hat i \cdot \hat j) + A_x B_z (\hat i \cdot + \hat k) + \cdots</mrow>
+			<mrow> \amp = A_x B_x (1) + A_x B_y (0) + A_x B_z (0) + \cdots</mrow>
+			<mrow> \amp = A_x B_x  + A_y B_y   + A_z B_z.</mrow>
+		</md>
+		Of course this will equal <m>A B \cos\theta</m> with angle <m>\theta</m> between the two vectors.
+		<men>
+			\vec A \cdot \vec B =  A B \cos\theta = A_x B_x  + A_y B_y   + A_z B_z.
+		</men>
+ 
+ 		<alert>Cross Product of Two Vectors Using Cartesian Unit Vectors: </alert> I have already given formulas for this above.
+ 		<me>
+ 			\vec A \times \vec B = 	\left(A_y B_z - A_z B_y\right) \hat i +	\left(A_z B_x - A_x B_z\right) \hat j 	+ 
+ 			\left(A_x B_y - A_y B_x\right) \hat k.
+ 		</me>
+ 		We can show this to be the case now by expicitly working out the cross product.
+ 		<md>
+ 			<mrow> \vec A \times \vec B \amp = (A_x \hat i + A_y \hat j + A_z \hat k) \times (B_x \hat i + B_y \hat j + B_z \hat k) </mrow>
+ 			<mrow> \amp = A_x B_x (\hat i \times \hat i)  + A_x B_y (\hat i \times \hat j) + A_x B_z (\hat i \times + \hat k) + \cdots</mrow>
+ 			<mrow> \amp = A_x B_x (0)  + A_x B_y (\hat k) + A_x B_z (- \hat j) + \cdots</mrow>
+ 			<mrow> \amp = [A_x B_y (\hat k) + A_x B_z (- \hat j)] + [A_y B_x (-\hat k) + A_y B_z (\hat i)] </mrow>
+ 			<mrow> \amp  \ \ \ \ \ \  + [A_z B_x (\hat j) + A_z B_y (-\hat i)] </mrow>
+ 			<mrow> \amp = 	\left(A_y B_z - A_z B_y\right) \hat i +	\left(A_z B_x - A_x B_z\right) \hat j 	+ 
+ 			\left(A_x B_y - A_y B_x\right) \hat k.</mrow>
+ 		</md>
+ 		Often, we express this result in the form of a determinant.
+ 		<men>
+ 			\vec A \times \vec B =  
+			   \begin{vmatrix} 
+			   \hat i \amp \hat j \amp \hat k \\
+			   A_x \amp A_y \amp A_z  \\
+			   B_x \amp B_y \amp B_z   \\
+			   \end{vmatrix} 
+ 		</men>
+	</subsection>
+
+
+
+
+	<exercise><title> Practice with Dot Product of Unit Vectors </title>
+		<statement>
+			<p>
+				Using <m> \vec A = A_x \hat i + A_y \hat j + A_z \hat k</m>, prove that <m> \vec A \cdot \vec A = A_x^2 + A_y^2 + A_z^2</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Expand </p> </hint>
+		<answer> <p> N/A  </p> </answer>
+		<solution> 
+			<p> We display the calculation for <m> x </m> in detail and infer those for <m> y </m> and <m> z </m> from the symmetry.
+				<md>
+					<mrow> \vec A \cdot \vec A \amp =(A_x \hat i + A_y \hat j + A_z \hat k)\cdot (A_x \hat i + A_y \hat j + A_z \hat k) </mrow>
+					<mrow>  \amp = A_x \left( A_x \hat i\cdot \hat i +   A_y \hat i \cdot \hat j +  A_z \hat i \cdot \hat k \right) + (x \rightarrow y) + (x \rightarrow z)  </mrow>
+					<mrow>  \amp =  A_x \left( A_x \times 1 +   A_y  \times 0 +  A_z \times 0 \right) + (x \rightarrow y) + (x \rightarrow z)   </mrow>
+					<mrow>  \amp =  A_x^2 + (x \rightarrow y) + (x \rightarrow z)   </mrow>
+					<mrow>  \amp =  A_x^2 + A_y^2 +  A_z^2.  </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+</section>
+

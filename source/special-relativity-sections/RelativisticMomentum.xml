@@ -1,0 +1,359 @@
+<section xml:id="sec-RelativisticMomentum"><title> Relativistic Momentum</title>
+
+	<introduction>
+
+		<p>
+			The momentum <m>\vec p</m> of a particle of mass <m>m</m> and velocity <m>\vec u</m> in Newtonian mechanics is given by
+			<men xml:id="defn-mom-non-rel">
+				\vec p = m\: \vec v. 
+			</men>
+			In Newtonian mechanics this momentum is conserved in every inertial frame. However, when you apply this definition of momentum to a collision process we find that momentum is not conserved in all frames. To get momentum to be conserved we need to modify the definition of mementum to
+			<men xml:id="defn-mom-relativistic">
+				\vec p = \gamma\: m\: \vec v,
+			</men>
+			where
+			<me>
+				\gamma = \frac{1}{\sqrt{ 1- v^2/c^2 }}.
+			</me>
+			Formula <xref ref="defn-mom-relativistic"/> has the same form as formula <xref ref="defn-mom-non-rel"/>	if we replace original mass by another mass, which we can call relativistic mass,
+			<men>
+				m_\text{rel} =  \frac{m}{\sqrt{ 1- v^2/c^2 }}.
+			</men>
+			Higher the speed higher the  mass gets. At speed of light, relativistic mass becomes infinite if <m>m\ne 0</m>. Original mass <m>m</m> is called <term>rest mass</term> and is often denoted by adding subscript to symbol, <m>m_0</m>.	 In that case we drop "rel" from <m>m</m> and write this formula as
+			<men>
+				m =  \frac{m_0}{\sqrt{ 1- v^2/c^2 }}.
+			</men>	
+		</p> 
+
+
+	</introduction>
+
+	<subsection><title>Derivation of <m>\vec p = \gamma m_0 v</m></title>
+
+		<p>
+			Is there some way we can modify the definition in Eq. <xref ref="defn-mom-non-rel"/> so that the law of conservation of momentum is obeyed by the new  momentum in every inertial frame <em>and</em> the new definition reduces to the old definition when the speed of the particle is much less than the speed of light?
+		</p>
+
+		<p>
+			We will carry out an elementary calculation of a two-dimensinal collision in two frames treating mass as an unknown function of speed. Then, we will guess the function that will ensure momentum is conserved in two frames S and S' that are in relative uniform motion. The setup is shown in <xref ref="fig-two-dimensional-collision-momentum-conservation"/> where velocities of two particles are shown with respect to frame S'. We assume that the two particles have the same mass when at rest and denote their masses at speed <m>u</m> by symbol <m>m_u</m>.
+		</p>
+
+
+			<figure xml:id="fig-two-dimensional-collision-momentum-conservation">
+				<caption>
+				</caption>
+				<image source="./images/modern-physics/two-dimensional-collision-momentum-conservation.png" width="90%"/>
+			</figure>
+
+		<p>
+			Let us denote velocities before by <m>\vec v</m> and after by <m>\vec w</m> with primes for S' and unprimed for S. 
+			Summarizing the data in frame S', we have
+			<md>
+				<mrow>\amp \text{Before:} </mrow>
+				<mrow>\amp \ \ \ v'_{1x} = 0,\ \ v'_{1y} = -u_0,\ \ v'_{2x} = -V, \ \ v'_{2y} = v_0/\gamma</mrow>
+				<mrow>\amp \ \ \ \text{speeds: }\ v'_1 = u_0,\ \ v'_2 = \sqrt{V^2 + v_0^2/\gamma^2 } </mrow>
+				<mrow>\amp \ \ \ \text{masses: }\ m_{v'_1},\ \ m_{v'_2} </mrow>
+			</md>
+			<md>
+				<mrow>\amp \text{After:} </mrow>
+				<mrow>\amp \ \ \ w'_{1x} = 0,\ \ w'_{1y} = w_0,\ \ w'_{2x} = -V, \ \ w'_{2y} = -s_0/\gamma</mrow>
+				<mrow>\amp \ \ \ \text{speeds: }\ w'_1 = w_0,\ \ w'_2 = \sqrt{V^2 + s_0^2/\gamma^2} </mrow>
+				<mrow>\amp \ \ \ \text{masses: }\ m_{w'_1},\ \ m_{w'_2} </mrow>
+			</md>
+		</p>
+
+		<p>
+			These quantities in frame S will be obtained by transforming the velocities.
+			<md>
+				<mrow>\amp \text{Before:} </mrow>
+				<mrow>\amp \ \ \ v_{1x} = V,\ \ v_{1y} = -u_0/\gamma,\ \ v_{2x} = 0, \ \ v_{2y} = v_0</mrow>
+				<mrow>\amp \ \ \ \text{speeds: }\ v_1 = \sqrt{V^2 + u_0^2/\gamma^2 } ,\ \ v_2 =  v_0 </mrow>
+				<mrow>\amp \ \ \ \text{masses: }\ m_{v_1},\ \ m_{v_2} </mrow>
+			</md>
+			<md>
+				<mrow>\amp \text{After:} </mrow>
+				<mrow>\amp \ \ \ w_{1x} = V,\ \ w_{1y} = w_0/\gamma,\ \ w_{2x} = 0, \ \ w'_{2y} = -s_0</mrow>
+				<mrow>\amp \ \ \ \text{speeds: }\ w_1 = \sqrt{V^2 + w_0^2/\gamma^2},\ \ w_2 =s_0  </mrow>
+				<mrow>\amp \ \ \ \text{masses: }\ m_{w_1},\ \ m_{w_2} </mrow>
+			</md>
+		</p>
+
+		<p>
+			Conservation of momentum along each axis in the two frames are
+			<mdn>
+				<mrow xml:id="eq-Sprime-x">S', x:\ \ \amp m_{v'_1}\times 0 + m_{v'_2}(-V) = m_{w'_1}\times 0 + m_{w'_2}(-V)  </mrow>
+				<mrow xml:id="eq-Sprime-y">S', y:\ \ \amp m_{v'_1}(-u_0) + m_{v'_2}(v_0/\gamma) = m_{w'_1} w_0 + m_{w'_2}(-s_0/\gamma)  </mrow>
+				<mrow xml:id="eq-S-x">S, x:\ \ \amp m_{v_1}(V) + m_{v_2}\times 0 = m_{w_1}(V) + m_{w_2}\times 0  </mrow>
+				<mrow xml:id="eq-S-y">S, y:\ \ \amp m_{v_1}(-u_0/\gamma) + m_{v_2}(v_0) = m_{w_1}(w_0/\gamma) + m_{w_2}(-s_0)  </mrow>
+			</mdn>
+			From Eq. <xref ref="eq-Sprime-x"/> we get
+			<men xml:id="eq-v0-eq-s0">
+				m_{v'_2} = m_{w'_2}\ \implies\ v'_2 = w'_2 \ \implies\ v_0 = s_0. 
+			</men>
+			From Eq. <xref ref="eq-S-x"/> we get
+			<men xml:id="eq-u0-eq-v0">
+				m_{v_1} = m_{w_1}\ \implies\ v_1 = w_1 \ \implies\ u_0 = w_0.
+			</men>
+			Using this in Eq. <xref ref="eq-Sprime-y"/> gives
+			<men xml:id="eq-from-Sprime-y">
+				m_{v'_2} \frac{v_0}{\gamma} = m_{u_0} u_0
+			</men>
+			Using Eqs. <xref ref="eq-v0-eq-s0"/> and <xref ref="eq-u0-eq-v0"/> in Eq <xref ref="eq-S-y"/> you can show
+			<men xml:id="eq-from-S-y">
+				m_{v_2} v_0 =   m_{v_1} \frac{u_0}{\gamma}
+			</men>
+			Now, from these two equations we get
+			<men>
+				\frac{m_{v'_2}} { \gamma m_{v_2} } = 	\frac{\gamma m_{u_0}}{m_{v_1}}. 	
+			</men>
+			Hence, with <m>v_2 = v_0</m> this simplifies to
+			<men xml:id="eq-mm-eq-mm">
+				m_{v_1} m_{v'_2} = \gamma^2 m_{u_0} m_{v_0}.
+			</men>
+			Here
+			<men>
+				v_1 = \sqrt{V^2 + \frac{u_0^2}{\gamma^2}},\ \ \ v'_2 = \sqrt{V^2 + \frac{v_0^2}{\gamma^2}}.
+			</men>
+			Now, if we choose <m>v_0 = u_0</m>, then <m>v_1 = v'_2</m>. This simplifies Eq. <xref ref="eq-mm-eq-mm"/> to
+			<men>
+				m_{v_1} = \gamma m_{u_0}.
+			</men>
+			With <m>u_0=0</m>, this equation gives mass when speed is <m>V</m>, <m>m_V</m>, in terms of mass at rest, <m>m_0</m>, which is also called the <term>rest mass</term>.
+			<men>
+				m_V = \frac{m_0}{\sqrt{ 1- V^2/c^2 }}.
+			</men>
+			Hence, relativistic momentum of a particle of velocity <m>\vec v</m> is
+			<men>
+				\vec p = \frac{m_0 \vec v}{\sqrt{ 1- v^2/c^2 }},\ \ \text{or,}\ \ \gamma m_0 \vec v.
+			</men>
+
+		</p>
+
+	</subsection>
+
+	<subsection><title>What happens to <m>\vec F =d\vec p/dt</m>?</title>
+		<p>
+			In Newtonian mechanics, the second law of motion in an inertial frame is
+			<men xml:id="eq-NewtonSecondLaw-rel-1">
+				\vec F = \dfrac{d\vec p}{dt}, 
+			</men>
+			where <m>\vec p = m \vec v</m>, where <m>\vec v</m> is the instantaneous velocity and <m>m</m> mass. We have already seen that momentum vector in relativity has a different expression. Using the relativistic formula for <m>\vec p</m>, we will get
+			<mdn>
+				<mrow xml:id="eq-NewtonSecondLaw-rel-2"> \vec F \amp = \dfrac{d (\gamma m_0 \vec v)}{dt}</mrow>
+				<mrow> \amp \gamma m_0 \vec a + m_0 \vec v \dfrac{d\gamma}{dt}.</mrow>
+			</mdn>
+			Using <m>v^2 = v_x^2 + v_y^2 + v_z^2</m> in <m>\gamma</m>, we get
+			<md>
+				<mrow>\frac{d\gamma}{dt} \amp = -\frac{1}{2}\gamma^3 \left( - \frac{2}{c^2}[v_x a_x + v_y a_y + v_z a_z] \right)</mrow>
+				<mrow> \amp = \frac{\gamma^3}{c^2}\: \vec v \cdot \vec a.</mrow>
+			</md> 
+			Therefore we arrive at
+			<men xml:id="eq-NewtonSecondLaw-rel-3">
+				\vec F = \gamma m_0 \vec a + \left( \frac{\gamma^3}{c^2}\: \vec v \cdot \vec a \right)\:m_0 \:\vec v.
+			</men>
+			In one dimension, say <m>x</m>-direction, with <m>v_y=v_z=0</m>, this simplifies to
+			<me>
+				F_x = \gamma^3\:m_0\:a_x,
+			</me>
+			since
+			<md>
+				<mrow> \amp \gamma m_0 a_x + \left( \frac{\gamma^3}{c^2}\: v_xa_x\right)\:m_0 \:v_x<!-- </mrow>
+				<mrow> \amp --> = \gamma m_0 a_x \left( 1 + \gamma^2 \frac{v_x^2}{c^2} \right)</mrow>
+					<mrow>\amp \ \ \ \ \  = \gamma m_0 a_x \left( 1 +  \frac{v_x^2/c^2}{\sqrt{1 - v_x^2/c^2}} \right) = \gamma^2 m_0 a_x.</mrow>
+			</md>
+			We rarely use these formulas in practice. But, its good to know that there is a way of think of force in relativistic terms.
+		</p>
+
+	</subsection>
+	
+	<exercise xml:id="ex-Relativistic-An-electron-in-a-constant-electric-field"><title>Relativistic Equation of Motion of an Electron in a Constant Electric Field</title>
+
+		<statement>
+			<p>
+				In a linear accelerator an electron is accelerated by a constant electric field <m>\vec E</m> in the opposite direction to its velocity <m>\vec u</m>. Find the equation of motion of the electron.
+			</p>
+		</statement>
+		<hint><p>Use relatistic equations.</p></hint>
+		<answer><p>
+				<m>
+					eE =   m_0 \gamma^3\: \dfrac{du_x}{dt},\ \ u_y = 0, \ \ u_z = 0.
+				</m>
+		</p></answer>
+		<solution>
+			<p>
+				Let the velocity of the electron be towards the positive <m>x</m>-axis. Then, electric field is towards the negative <m>x</m>-axis and force on the electron is towards the positive <m>x</m>-axis.  Eq. <xref ref="eq-NewtonSecondLaw-rel-2"/> takes the following form.
+				<me>
+					eE =  \dfrac{d}{dt}\left[\dfrac{m_0  u_x}{\sqrt{1- u_x^2/c^2}} \right],\ \ u_y = 0, \ \ u_z = 0.
+				</me>
+				Expanding the derivative on the right side we obtain
+				<me>
+					eE =   m_0 \gamma^3\: \dfrac{du_x}{dt},\ \ u_y = 0, \ \ u_z = 0.
+				</me>
+ 
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Equation-of-Motion-of-an-Electron-in-a-Cyclotron"><title>Equation of Motion of an Electron in a Cyclotron</title>
+
+		<statement>
+			<p>
+				In a cyclotron an electron is accelerated by a constant magnetic field <m>\vec B</m> perpendicular to the velocity <m>\vec u</m> of the electron. The electron moves in a circle  of radius <m>R</m> with a constant speed. Find the equation of motion of the electron.
+			</p>
+		</statement>
+		<hint><p>
+			Use Lorentz Force.
+		</p></hint>
+		<answer><p>
+				<m>
+					e B R =  p.
+				</m>
+		</p></answer>
+		<solution>
+			<p>
+				Suppose the circle of motion is in the <m>xy</m>-plane and the magnetic field is towards the positive <m>z</m>-axis. The velocity of the electron will be in the <m>\hat u_\theta</m> direction so that the force is radially in towards the center of the circle. Let us write the velocity of the electron as <m>\vec u = u \hat u_\theta</m>. Eq. <xref ref="eq-NewtonSecondLaw-rel-2"/> takes the following form.
+				<me>
+					e u B (-\hat u_r) =  \dfrac{d}{dt}\left[\dfrac{m_0  u \hat u_\theta}{\sqrt{1- u^2/c^2}} \right],\ \ u_r = 0, \ \ u_z = 0.
+				</me>
+				Expanding the derivative on the right side we obtain
+				<me>
+					e u B (-\hat u_r)=  \dfrac{m_0  u}{\sqrt{1- u^2/c^2}} \: \dfrac{d\hat u_\theta}{dt},\ \ u_r = 0, \ \ u_z = 0.
+				</me>
+				The derivative of <m>\hat u_\theta</m> will give a product of <m>d\theta/dt</m> and <m>-\hat u_r</m>. Therefore, magnitude on the two sides will equal giving 
+				<me>
+					e B =  \dfrac{m_0 }{\sqrt{1- u^2/c^2}} \: \dfrac{d \theta}{dt},\ \ u_r = 0, \ \ u_z = 0.
+				</me>
+				Since the speed in the circle is uniform, we have <m>u = R\: d\theta/dt</m> giving us the following equation.
+				<me>
+					e B R =  p,
+				</me>
+				which has the same form as the equation <m>p = e B R</m> in the non-relativistic case, except now, <m>p</m> is the relativistic momentum.
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Relativisitc-Momentum-Versus-Ordinary-Momentum-of-an-Electron"><title>Relativisitc Momentum Versus Ordinary Momentum of an Electron</title>
+
+		<statement>
+			<p>
+				An electron is moving at a speed of <m>0.9\: c</m>, i.e. at 90\% of the speed of light.  Compare its momentum calculated from the relativistic formula to the one calculated from the Newtonian formula.
+			</p>
+		</statement>
+		<hint><p>
+			Use corresponding formulas.
+		</p></hint>
+		<answer><p>
+			Relativisitic momentum to be 2.29 times the Newtonian value.
+		</p></answer>
+		<solution>
+			<p>
+				The  mass of an electron is <m>m_0 = 9.11\times 10^{-31}\;\textrm{kg}</m>.  Let us first calculate <m>\gamma</m> for the speed.
+				<me>
+					\gamma = \dfrac{1}{\sqrt{1-u^2/c^2}} = \dfrac{1}{\sqrt{1-0.9^2}} = 2.29.
+				</me>
+				The momentum of the electron from Newtonian expression is
+				<md>
+					<mrow>p_{\textrm{Newton}} \amp = m_0 u = 9.11\times 10^{-31}\;\textrm{kg} \times 0.9\times 3\times 10^{8}\:\textrm{m/s}</mrow>
+					<mrow> \amp = 2.46\times 10^{-22}\:\textrm{kg.m/s}.</mrow>
+				</md>
+				The momentum of the same electron from relativistic expression is
+				<md>
+					<mrow> p_{\textrm{Einstein}} \amp = \gamma m_0 u = 2.29\times 2.46\times 10^{-22}\:\textrm{kg.m/s}</mrow>
+					<mrow> \amp = 5.63\times 10^{-22}\:\textrm{kg.m/s}.</mrow>
+				</md>
+				The correct momentum is given by the relativistic formula, which gives momentum to be 2.29 times the Newtonian value. 
+			</p>
+		</solution>
+	</exercise> 
+
+
+	<exercise xml:id="ex-Relativisitic-Momentum-of-a-Proton-in-Lab-Frame"><title>Relativisitic Momentum of a Proton in Lab Frame</title>
+
+		<statement>
+			<p>
+				A proton is moving with speed <m>0.95 c</m> with respect to lab.  (a) What is its momentum in the lab frame? (b) What is its momentum in its rest frame?  Data: <m>m_p = 1.67 \times 10{-27}\text{ kg}</m>.
+			</p>
+		</statement>
+		<hint><p>
+			Use <m>\gamma m_0 v</m>.
+		</p></hint>
+		<answer><p>
+			(a) <m>1.52 \times 10^{-18}\text{ kg.m/s} </m>, (b) <m>4.76 \times 10^{-19}\text{ kg.m/s}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				(a) In the lab frame proton is moving at reltivistic speed. Therefore, we will use relativisitic formula. We will compute <m>\gamma</m> first.
+				<me>
+					\gamma = \frac{1}{\sqrt{1- (v/c)^2}} =  \frac{1}{\sqrt{1- 0.9^2}} = 3.20.
+				</me>
+				Therefore, momentum will be
+				<md>
+					<mrow> p \amp = \gamma m_0 v = 1.29 \times ( 1.67 \times 10{-27}\text{ kg} \times 0.95 \times 3\times 10^{8}\text{ m/s} ) </mrow>
+					<mrow> \amp =  3.20 \times 4.76 \times 10^{-19}\text{ kg.m/s} = 1.52 \times 10^{-18}\text{ kg.m/s} </mrow>
+				</md>
+			</p>
+			<p>
+				(b) This is already calculated in (a). Its the part when <m>\gamma=1</m>. Ans: <m>4.76 \times 10^{-19}\text{ kg.m/s}</m>.
+			</p>
+		</solution>
+	</exercise>	
+
+	<exercise xml:id="ex-Error-When-Using-Non-Relativisitc-Formula-for-Momentum"><title>Error When Using Non-Relativisitc Formula for Momentum</title>
+
+		<statement>
+			<p>
+				A proton is moving with speed <m>0.95 c</m> with respect to lab.   Find the percentage error you will make in calculating the momentum in the lab frame if you treat this proton by Newtonian mechanics.
+			</p>
+		</statement>
+		<hint><p>
+			Use results of <xref ref="ex-Relativisitic-Momentum-of-a-Proton-in-Lab-Frame"/>.
+		</p></hint>
+		<answer><p>
+			<m>219\%</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Using the results in <xref ref="ex-Relativisitic-Momentum-of-a-Proton-in-Lab-Frame"/>, we get
+				<me>
+					\fracr{1.52 \times 10^{-18}\text{ kg.m/s} - 4.76 \times 10^{-19}\text{ kg.m/s}}{4.76 \times 10^{-19}\text{ kg.m/s}} = 2.19 = 219\%.
+				</me>
+			</p>
+		</solution>
+	</exercise>	
+
+ 	<exercise xml:id="ex-Momentum-of-a-Proton-with-respect-to-an-Antiproton"><title>Momentum of a Proton with respect to an Antiproton</title>
+
+		<statement>
+			<p>
+				A proton and an antiproton (same mass as proton) in a high-energy accelerator are moving towards each other.  Both have speed of <m>0.90 c</m> with respect to lab.   What is the momentum of proton with respect to the antiproton? Data: <m>m_p = 1.67 \times 10{-27}\text{ kg}</m>.
+			</p>
+		</statement>
+		<hint><p>
+			Use velocity addition formula to obtain the speed of proton with respect to the antiproton.
+		</p></hint>
+		<answer><p>
+			<m>4.52\times 10^{-17}\text{ kg.m/s}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				We need to find the speed of proton with respect to the antiproton. By using velocity addition rule, we get
+				<me>
+					v = \frac{0.9 c + 0.9 c}{ 1 + 0.9^2 } = 0.9945 c.
+				</me>
+				Therefore,
+				<me>
+					\gamma = \frac{1}{\sqrt{ 1 - 0.9945^2 }} = 90.75.
+				</me>
+				Therefore, required momentum will be
+				<me>
+					p = \gamma m_0 v = = 90.75 \times  1.67 \times 10{-27}\text{ kg} \times 0.9945 c = 4.52\times 10^{-17}\text{ kg.m/s}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>	
+
+ 
+  
+
+</section>

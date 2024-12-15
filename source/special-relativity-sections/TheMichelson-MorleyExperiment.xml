@@ -1,0 +1,102 @@
+<section xml:id="sec-TheMichelson-MorleyExperiment"><title> The Michelson-Morley Experiment </title>
+	<introduction>
+
+		<p>
+			Before Einstein, it was a common assumption that there is some absolute frame with respect to which we can study all motion. The study of propagation of light challenged this assumption. The most seminal experiment was the Michelson-Morley experiment.
+		</p>
+		<p>
+			In the late nineteenth century scientists had difficulty believing that electromagnetic waves could travel through vacuum.  They hypothesized that there must be some sort of medium in empty space whose oscillations helps light propagate.  This medium was called <term>ether</term>. But how can we test this hypothesis?
+		</p>
+ 
+		<p>
+			If ether exists everywhere, then Earth must be traveling through ether. As a result, velocity of light relative to Earth will be different for light traveling in the same direction as Earth versus in the opposite direction. Assuming Galilean transformations apply, we will have the following relation between velocity <m>\vec c^{\:\prime}</m> of light relative to Earth, velocity <m>\vec V</m> of Earth relative to the ether, and  velocity <m>\vec c</m> of light relative to ether.
+			<men>
+				\vec c^{\:\prime} = \vec c - \vec V.
+			</men>
+			Here <m>c = 3\times 10^8\text{ m/s}</m>. 
+			Thus, if light travels in the same direction as the motion of the Earth, then the speed of light in the Earth-frame will be <m>c'=c-V</m> and if the light beam travels in the opposite direction, it will be <m>c'=c+V</m>. 
+			<mdn>
+				<mrow> \amp  \textrm{Light in same direction as Earth, }\ \ c'=c-V  \nonumber</mrow>
+				<mrow> \amp  \textrm{Light in opposite direction as Earth, }\ \ c'=c+V  </mrow>
+			</mdn>
+			A. A. Michelson, who had invented the optical interferometer that bears his name, analyzed what will happen in his interferometer if one arm of the interferometer was parallel and the other arm was perpendicular to the direction of the motion of the Earth. He noted that he needed a sensitivity of <m>(V/c)^2 = 10^{-8}</m> to detect the effect. His instrument was more than capable of giving this high a sensitivity.
+		</p>
+		<p>
+			Michelson conducted his experiments in 1881 and repeated with E. W. Morely in 1887.  Both times he was disappointed to find no difference in his results which pointed to <m>c' = c</m>, that is, as if speed of light with respect to ether and with respect to Earth were the same or some other weird thing was taking place!
+		</p>
+
+	</introduction>
+	<subsection><title>Michelson-Moreley Experiment</title>
+
+		<p>
+			A sketch of the <term>Michelson interferometer</term> is shown in <xref ref="fig-michelson-set-up"/>. A beam of light is incident on a half-silvered mirror M, also called the beam splitter, which is incline at <m>45^{\circ}</m> to the incoming beam.  The beam splitter splits  the beam into two, one of which is transmitted (beam 1) and the other reflected (beam 2) at <m>90^{\circ}</m> to beam 1. Beams 1 and 2 reflect off mirrors M<m>_1</m> and M<m>_2</m> respectively.  The returning beam 1 is partially reflected off the beam splitter in the direction of the telescope and beam 2 is partially transmitted through the beam splitter towards the telescope where the two beams overlap and interfere.  If the mirrors M<m>_1</m> and M<m>_2</m> are not exactly perpendicular, one sees bright and dark fringes in the telescope as shown in the figure depending on the phase difference between the two beams.
+		</p>
+		<figure xml:id="fig-michelson-set-up">
+			<caption>
+				Michelson-Morely experiment set-up.
+			</caption>
+			<image source="./images/modern-physics/michelson-set-up.png" width="90%"/>
+		</figure> 
+
+		<p>
+			At a place where the phase difference is an integer multiple of <m>2\pi</m>, we see the bright fringe and where the phase difference is an odd integer multiple of <m>\pi</m> we see the dark fringe. To work out the phase difference let us work out the time of travel in the two paths. Let <m>\Delta t_1</m> and <m>\Delta t_2</m> be the times for the two beams in their round trips MM<m>_1</m>M and MM<m>_2</m>M respectively. Let the arm lengths of the two sides be <m>l_1</m> and <m>l_2</m>. When beam 1 is parallel to the direction of motion of the Earth, one half of the path of beam 1 will be downstream and the other half upstream with speeds <m>c+V</m> and <m>c-V</m> respectively, where <m>c</m> is the speed of light relative to the purported ether, and <m>V</m> the speed of Earth relative to the ether.  Therefore, the time <m>\Delta t_1</m> will be
+			<mdn>
+				<mrow number="no"> \Delta t_1 \amp  = \dfrac{l_1}{c+V} + \dfrac{l_1}{c-V} = \dfrac{2l_1/c}{1- V^2/c^2}</mrow>
+				<mrow> \amp \approx \dfrac{2l_1}{c}\left(1+\dfrac{V^2}{c^2} \right),</mrow>
+			</mdn>
+			where I have expanded the final expression in powers of <m>V/c</m> and kept terms only up to <m>V^2/c^2</m>. The time for beam 2 is a little tricky. When beam 2 leaves M, the mirror M<m>_2</m> is exactly in front of it, but during the time the light particles reach M<m>_2</m> the mirror will have moved to a different location.  Similarly, on its return, the beam splitter M will have moved to a different place. Thus, MM<m>_2</m>M is not a straight path but is angled at M<m>_2</m>. The distance from M to M<m>_2</m> traveled by light is not equal to <m>l_2</m> but rather the hypotenuse of the triangle with base equal to <m>\dfrac{V}{2}\Delta t_2</m> and perpendicular equal to <m>l_2</m>.  The hypotenuse will equal <m>\dfrac{c}{2}\Delta t_2</m> by using the speed of light perpendicular to the direction of motion of the Earth. Using Pythagora's theorem we have
+			<men>
+				\left( \dfrac{c}{2}\Delta t_2 \right)^2 = \left( \dfrac{V}{2}\Delta t_2 \right)^2 + l_2^2.
+			</men>
+			Solving for <m>\Delta t_2</m>, keeping only the positive root we get
+			<men>
+ 				\Delta t_2  = \dfrac{2l_2/c}{\sqrt{1- V^2/c^2}} \approx \dfrac{2l_2}{c}\left(1+\dfrac{V^2}{2 c^2} \right),
+ 			</men>
+ 			where I have again expanded the final expression in powers of <m>V/c</m> and kept terms only up to <m>V^2/c^2</m>.  Now, we obtain the difference between the travel times <m>\Delta t</m> of the two beams to be
+ 			<men>
+ 				\Delta t   = \Delta t_1 - \Delta t_2 = \frac{2}{c}\left( l_1 - l_2\right) + \dfrac{V^2}{c^2}\left(2 l_1 - l_2 \right).
+ 			</men>
+ 			If the arms were of equal length, <m>l_1 = l_2 \equiv l</m>, we will get
+ 			<men>
+ 				\Delta t   = \dfrac{l}{c}\ \dfrac{V^2}{c^2}.
+ 			</men>
+ 			A delay of time corresponding to a travel distance of one wavelength <m>\lambda</m> causes a phase difference of <m>2\pi</m> radians. therefore, this delay between the two paths will cause a phase difference <m>\Delta \phi</m> of
+ 			<men>
+ 				\Delta\phi = 2\pi\times \dfrac{c\Delta t}{\lambda}   = \dfrac{l}{c}\ \dfrac{V^2}{c^2}.
+ 			</men>
+ 			As an example consider <m>l = 1</m> m, <m>\lambda = 5.89\times 10^{-7}</m> m (the sodium yellow line), <m>V = 3\times 10^{4}</m> m/s (the orbital speed of Earth around Sun), <m>c = 3\times 10^{8}</m> m/s. The phase shift expected will be 0.11 rad or <m>6.1^{\circ}</m>.  That is, if you were to stop the Earth, set up the reference fringe pattern, and then let the Earth move at 30 km/s with respect to ether, we will see a phase shift of 0.11 rad. But, there is a problem with this procedure - you cannot stop the Earth! To get around this problem, Michelson had an ingenious idea to exploit the symmetry in the two arms: If you rotate the apparatus by <m>90^{\circ}</m>, then beams 1 and 2 would switch positions with beam 2 now becoming parallel to the direction of the motion of the Earth. This will result in a <alert> change in delay</alert> <m>\Delta(\Delta t)</m> and one can watch how the fringes change.
+ 			<men>
+ 				\Delta(\Delta t) = \Delta t - \Delta t_{\perp}   = \dfrac{2l}{c}\ \dfrac{V^2}{c^2}.
+ 			</men>
+ 			If you have different arm lengths, we now get
+ 			<men>
+ 				\Delta(\Delta t) = \Delta t - \Delta t_{\perp}   = \dfrac{l_1 + l_2}{c}\ \dfrac{V^2}{c^2}.
+ 			</men>
+ 			As you rotate the apparatus, you will find that fringes move past cross-hair line of the telescope.  For each change in delay of <m>\lambda/c</m>, one fringe will move past the cross-hair.  Therefore, for the change in delay  <m>\Delta(\Delta t)</m> the number of lines passing the cross-hair will be
+ 			<men xml:id="eq-michelson-morely">
+ 				N = \dfrac{\Delta(\Delta t)}{\lambda/c} = \dfrac{l_1 + l_2}{\lambda}\ \dfrac{V^2}{c^2}.
+ 			</men>
+ 			In Michelson's first experiment in 1881 the arm length was 1.2 m. With <m>\lambda = 5.89\times 10^{-7}</m> m (the sodium yellow line) and <m>V/c = 10^{-4}</m>, the predicted number of fringes moving during the rotation of the apparatus will be
+ 			<men>
+ 				N = \dfrac{2\times 1.2}{5.89\times 10^{-7}}\times 10^{-8} = 0.04.
+ 			</men>
+ 			Michelson found no discernible shift in the fringe pattern when he rotated his apparatus. Michelson considered his experiment a flop since it failed to show the expected result. Six years later with the help of E. W. Morley he refined his apparatus so that the beams now reflected back and forth eight round trips, effectively making <m>l_1 + l_2</m> in Eq. <xref ref="eq-michelson-morely"/> much longer, about 22 m. With sodium yellow light the expected fringe shift now was expected to be almost <m>10 \times</m> as large:
+ 			<men>
+ 				N = \dfrac{22}{5.89\times 10^{-7}}\times 10^{-8} = 0.37.
+ 			</men>
+ 			Michelson and Morley placed their apparatus on a heavy stone slab for stability and floated the slab on mercury so that the apparatus could be rotated continuously about a pin   <xref ref= "fig-michelson-set-up-on-floating-table"/>. Their apparatus was stable enough to see a shift in fringes as small as <m>N = 0.01</m>. However, they were unable to detect any fringe shifts despite measurements during the day, during the night, and at different times of the year. This null result is celebrated in physics as the most successful failed experiment!
+ 		</p>
+ 		<figure xml:id="fig-michelson-set-up-on-floating-table">
+ 			<caption>
+ 				Michelson-Morely placed their instrument on floating slab on mercury so that the instrument could be readily rotated. Credits: Wikicommons.
+ 			</caption>
+ 			<image source="./images/modern-physics/michelson-set-up-on-floating-table.png" width="70%"/>
+ 		</figure>
+ 		<p><alert>Lessons from the <q>Failure</q> of Michelson-Morley Experiment</alert></p>
+ 		<p>
+ 			What can one conclude from the failure of Michelson and Morley to detect the drift of ether? One conclusion may be that there is no ether and the speed of light is same with respect to all observers. This conclusion at the time appeared to be too radical since it violated well-established notions of Galilean relativity. Several hypotheses were proposed to save the ideas of ether and Galilean relativity but each had some problems which could be demonstrated by experiment. Einstein working apparently without the knowledge of the Michelson-Morley experiment came to the conclusion that speed of light was same for all inertial observers. Before we study Einstein's relativity we will take a look at some aspects of Newtonian mechanics that are the fundamental sources of trouble.
+		</p>
+
+
+	</subsection>
+</section>

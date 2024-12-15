@@ -1,0 +1,214 @@
+<section xml:id="section-electrostatic-energy"><title> Electrostatic Energy </title>
+	<introduction>
+		<p>
+			Work necessary to assemble a charge collection from charges at infinitely separated configuration is called <term>electrostatic energy</term> of the collection. Any collection of charges can be built by bringing one charge at a time at the final location as following examples illustrate. 			 
+		</p>
+		<p>
+			<alert>Assembling two charges <m>q_1</m> and <m>q_2</m> separated by a distance <m>r_{12}</m>. </alert>
+		</p>
+		
+		<p>
+			We first bring charge <m>q_1</m> from infinity and fix it at the origin. Since there was no charge before this charge, we would need no work to accomplish this since there is no force on the charge. 
+			<me>
+				W_1 = 0
+			</me>
+		</p>
+		<sidebyside widths="60% 5% 35%">
+			<p>
+				Next, we bring <m>q_2</m> from infinity to a point that is a distance <m>r_{12}</m> from <m>q_1</m>. 
+			</p>
+			<p></p>
+			<image source="./images/electric-potential/ese-two-charge-config.png" width="60%"/>
+		</sidebyside>	
+		<p>
+			The work done by the agent for bringing this charge will equal the change in the potentialenergy of <m>q_2</m>. That is,
+				<me>
+					W_2 = q_2\,\phi_1 =  \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q_1 q_2}{r_{12}}.
+				</me>
+			Adding <m>W_1</m> and <m>W_2</m>we get the net work of assembling the charge distribution. Thus, electrostatic energy of the two-charge system will be
+			<me>
+				U = W_1 + W_2 = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q_1 q_2}{r_{12}}.
+			</me>
+
+		</p>
+
+		<p>
+			<alert>Assembling three charges <m>q_1</m>, <m>q_2</m>, and <m>q_3</m> separated by distance <m>r_{12}</m>, <m>r_{13}</m>, and <m>r_{23}</m> </alert>
+		</p>
+		
+
+
+		<sidebyside widths="60% 5% 35%">
+			<p>
+				We assemble this structure one charge at a time. We already know how much work it will cost to assemble the first two charges.
+				<md>
+					<mrow> W_1 \amp  = 0,</mrow>
+					<mrow> W_1 \amp  = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q_1 q_2}{r_{12}}.</mrow>
+				</md>
+			</p>
+			<p></p>
+			<image source="./images/electric-potential/ese-three-charge-config.png" width="60%"/>
+		</sidebyside>	
+
+
+		<p>
+			Now, we hold <m>q_1</m> and <m>q_2</m> fixed it their final positions, and bring <m>q_3</m> fron infinity in the common field of both  <m>q_1</m> and <m>q_2</m>. The work will be equal to the change in potential energy of <m>q_3</m>, which will be
+			<me>
+				W_3 = q_3 \times \left( \phi_{13} + \phi_{23} \right),
+			</me>
+			where <m>\phi_{13}</m> is the potential of <m>q_1</m> at the final location of <m>q_3</m> and similarly for <m>\phi_{23}</m>. Therefore,
+			<me>
+				W_3 =  \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q_1 q_3}{r_{13}} + \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q_2 q_3}{r_{23}}.
+			</me>
+			Now, we add up all the three work for the three-particle system.
+			<mdn>
+				<mrow number="no"> U \amp = W_1 + W_2 + W_3</mrow>
+				<mrow xml:id="eq-electrostatic-energy-3-charges">  \amp = \sum_{\lt ij \gt \text{ pairs}}\ \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q_i q_j}{r_{ij}}. </mrow>
+			</mdn>			  
+		</p>		
+
+		<p>
+			<alert> Assembling <m>N</m> charges <m>q_1</m>, <m>q_2</m>, <m> \cdots</m>, <m>q_N</m> separated by distance <m>r_{12}</m>, <m>r_{13}</m>, <m> \cdots</m>  </alert>
+		</p>
+		<p>
+			Eq. <xref ref="eq-electrostatic-energy-3-charges"/> shows a general way to think about the problem. We will get energy from every pair of charges. We need to be careful to count each pair only once.
+			<men xml:id="eq-electrostatic-energy-N-charges">
+				U = \sum_{\lt ij \gt \text{ pairs}}\ \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q_i q_j}{r_{ij}}.
+			</men>
+
+		</p>
+	</introduction>
+
+
+	<subsection><title>(Calculus) Electrostatic Energy of a Continuous Charge System</title>
+		<p>
+			Equation <xref ref="eq-electrostatic-energy-N-charges"/> can be generaized for application to continuous charges. First we note that we can count each pair double and divide by 2 to get the same answer. We can treat the sum as two sums, one for <m>i</m> and the other for <m>j</m>. Factor out <m>q_i</m>, we find that the other sum is just potential of all other charges at the location of <m>i</m>.
+			<md>
+				<mrow> U \amp = \dfrac{1}{2} \sum_{i} q_i \left[\sum_{j\ne i}\ \dfrac{1}{4\pi\epsilon_0}\, \dfrac{ q_j}{r_{ij}} \right].</mrow>
+				<mrow> \amp = \dfrac{1}{2} \sum_{i} q_i\, \phi_{i}, </mrow>
+			</md>
+			where <m>\phi_i</m> is the potential of other charges at the location of charge <m>i</m>. 
+			Treating this for continuous charges is simply replacing <m>q_i</m> by <m>\rho(x,y,z)dV</m>, <m>\phi_{\text{i}</m> by <m>\phi(x,y,z)</m>, and the sum by integral over entire space.
+			<men xml:id="eq-electrostatic-energy-continuous-charges">
+				U = \dfrac{1}{2}\iiint  \rho(x,y,z)\, \phi(x,y,z)\, dV.
+			</men>
+			<!-- If charges are only surface charges, we will integrate only over the surface. Let <m>\vec r</m> denote points on the surface, then we will do the following to get electrostatic energy.
+			<men xml:id="eq-electrostatic-energy-continuous-charges-surface">
+				U = \dfrac{1}{2}\iint  \sigma(\vec r)\, \phi(\vec r)\, dA.
+			</men>
+			Similarly, for line charges, we will deal with some line charge density, <m>\lambda</m>.
+			<men xml:id="eq-electrostatic-energy-continuous-charges-line">
+				U = \dfrac{1}{2}\int  \lambda(\vec r)\, \phi(\vec r)\, dl.
+			</men> -->					
+		</p>
+
+	</subsection>
+
+
+
+	<exercise xml:id="ex-Electrostatic-Energy-of-Charges-at-Corners-of-a-Square"><title>Electrostatic Energy of Charges at Corners of a Square</title>
+
+		<statement>
+			<p>
+				Four charges, <m>+q,\ -q,\ +q,\ -q </m> alternate on corners of a square of side <m>a</m>. What is the electrostatic energy?
+			</p>
+		</statement>
+		<hint><p>Adjacent pairs will be negative energy and diagonals will be positive energy.</p></hint>
+		<answer><p><m>-\dfrac{1}{4\pi\epsilon_0}\; \dfrac{q^2}{a}(4-\sqrt{2})</m>.</p></answer>
+		<solution>
+			<sidebyside widths="55% 10% 35%">
+				<p>
+					Electrostatic energy has contribution from every pair counted only once. We have pairs <m>(1,2)</m>, <m>(1,3)</m>, <m>(1,4)</m>, <m>(2,3)</m>,  <m>(2,4)</m>,  <m>(3,4)</m>. The pairs <m>(1,3)</m> and <m>(2,4)</m> have positive energy and the others have negative.
+				</p>
+				<p></p>
+				<image source="./images/electric-potential/ex-Electrostatic-Energy-of-Charges-at-Corners-of-a-Square.png" width="60%"/>
+			</sidebyside>
+			
+			<p>
+				Adding them up, we get
+				<md>
+					<mrow>U \amp = \dfrac{q^2}{4\pi\epsilon_0}\left( -4\times \dfrac{1}{a} + 2\times \dfrac{1}{\sqrt{2}\; a} \right)</mrow>
+					<mrow> \amp= -\dfrac{1}{4\pi\epsilon_0}\; \dfrac{q^2}{a}(4-\sqrt{2}). </mrow>
+
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+	<exercise xml:id="ex-Elecrtrostatic-Energy-of-a-Helium-Atom-by-Building-the-Atom-up-from-its-Constituents"><title> Electrostatic Energy of a "Helium" Atom </title>
+		<statement>
+			<p>
+				To form a helium atom, an alpha particle which contains two protons and two neutrons was fixed at one place, and two electrons were brought from far away one at a time.  The first electron was placed at <m>6.0 \times 10^{-11}\text{ m}</m> from the alpha particle and held there while the second electron was brought to <m>6.0 \times 10^{-11}\text{ m}</m> from the alpha particle on the other side of the first electron.
+			</p>  
+			<p>
+				(a) How much work was done in each step in <m>\text{J}</m>?
+			</p>
+			<p>
+				(b) What is the electrostatic energy of the alpha particle and two electrons in the final configuration in <m>\text{J}</m>?  
+
+			</p>
+
+		</statement>
+		<hint> <p> Work equal to the change in potential energy needs to be provided.  </p> </hint>
+		<answer> <p> (a)  <m>-7.68\times 10^{-18}\text{ J}</m>,  <m>-5.76\times 10^{-18}\text{ J}</m>; (b)  <m>-1.34\times 10^{-17}\text{ J}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				In each step we need to provide energy equal to the change in potential energy of the incoming electron, which is brough from infinity, where energy is zero.
+			</p>
+			<p>
+				(a)
+				<md> 
+					<mrow> W_1 \amp = k \dfrac{2e\times (-e)}{r}</mrow>
+					<mrow> \amp = -9\times 10^9 \times \dfrac{2\times \left(1.6\times 10^{-19}\right)^2}{0.6\times 10^{-10}}</mrow>
+					<mrow> \amp = -7.68\times 10^{-18}\:\text{J},</mrow>
+					<mrow> W_2 \amp = k \left[ \dfrac{2e\times (-e)}{r}  + \dfrac{(-e)\times (-e)}{2r}  \right] </mrow>
+					<mrow> \amp = \dfrac{3}{4}W_1 = -5.76\times 10^{-18}\:\text{J}.</mrow>
+				</md>
+				Since work is negative, we will need to extract energy away from the system.
+			</p>
+			<p>
+				(b) The total work in assembling a charge configuration is called its electrostatic energy.  Hence,
+				<me>
+					U = W_1 + W_2 = -1.34\times 10^{-17}\:\text{J}.
+				</me>
+				Since work is negative, we will need to extract energy away from the system.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electrostatic-Energy-of-Uniformly-Charge-Sphere"><title>(Calculus) Electrostatic Energy of Uniformly Charge Sphere</title>
+
+		<statement>
+			<p>
+				A sphere of radius <m>R</m> is uniformly charged with total charge <m>q</m>. What is the electrostatic energy?
+			</p>
+			<p>
+				Hint: Electric potential at a point inside the sphere = <m>\dfrac{1}{4\pi\epsilon_0} \dfrac{q}{R} \left( \dfrac{3}{2} - \dfrac{1}{2}\; \dfrac{r_{\text{in}}^2}{R^2} \right)</m>. See <xref ref="ex-Potential-of-Uniformly-Charged-Sphere"/>.
+
+			</p>
+		</statement>
+		<hint><p> Use the potential for inside points.  </p></hint>
+		<answer><p> <m> \dfrac{\rho q R^2}{5\epsilon_0} </m>.  </p></answer>
+		<solution>
+			<p>
+				To calculate the electrostatic energy of a continuous charge distribution, we can use the formula of potential by these charges at points inside the sphere, which is
+				<me>
+					\phi =\dfrac{1}{4\pi\epsilon_0} \dfrac{q}{R} \left( \dfrac{3}{2} - \dfrac{1}{2}\; \dfrac{r_{\text{in}}^2}{R^2} \right)\ \ \ (r \le R)
+				</me>
+				Since the potential and charge are spherical, the integral simplifies to integral over <m>r</m> only with <m>dV = 4\pi r^2 dr</m>
+				<md>
+					<mrow> U \amp = \dfrac{1}{2}\iiint \rho \phi dV</mrow>
+					<mrow> \amp =  \dfrac{4\pi}{2}\, \rho\, \dfrac{q}{4\pi\epsilon_0 R}  \int_0^R \left( \dfrac{3}{2} - \dfrac{1}{2}\; \dfrac{r^2}{R^2} \right)r^2 dr </mrow> 
+					<mrow> \amp =  \dfrac{\rho q R^2}{5\epsilon_0}. </mrow> 
+				</md>	
+			</p>
+		</solution>
+	</exercise>
+
+
+</section>
+
+ 

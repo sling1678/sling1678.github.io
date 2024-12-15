@@ -1,0 +1,817 @@
+<section xml:id="Rolling-Motion"><title> Rolling Motion </title>
+<idx>Rolling Motion</idx>
+<idx><h>Motion</h><h>Rolling</h></idx>
+	<introduction>
+
+
+		<p>
+			Rolling motion in a straight line is an example of motion in which both translation and rotation take place at the same time such that the <em>axis of rotation is always pointed in the same direction</em>.  The disk rolls along <m>x</m>-axis. As a result, its center of mass (CM) moves along <m>x</m>-axis and it rotates about <m>z</m>-axis through its CM, which is moving the CM.
+		</p>
+		<p>
+			To be concrete, consider a disk on mass M and radius R rolling on a horizontally flat surface as shown in <xref ref="fig-rot-rolling-motion-new"/>. In a rolling motion without slipping, if the disk rotates by and angle <m>\Delta\theta</m> in time <m>\Delta t</m>, then the CM of the disk will move by <m>\Delta x'</m> give by
+			<men>
+				\Delta x' = R \Delta \theta.
+			</men>
+			Dividing by <m>\Delta t</m>, we see that angular velocity of rotation motion is related to the velocity of the CM in a rolling without slipping motion.
+			<men>
+				V_\text{cm} = R \omega.
+			</men>
+		</p>
+		<figure xml:id="fig-rot-rolling-motion-new">
+			<caption>
+				Rolling motion.  The coordinates <m>Oxyz</m> move with at the velocity of CM with respect to the inertial coordinates <m>O'x'y'z'</m>.
+			</caption>
+			<image source="./images/rotation/rot-rolling-motion-new-1.png" width="70%"/>
+		</figure>
+		<p>
+			Thus, we need two axes to study a rolling motion: (1) Fixed <m>O'x'y'z'</m> axes to study the motion of the CM and (2) Moving <m>Oxyz</m> axes, which is attached to the body, to study the rotation. The triangle of vectors in <m>\triangle O'OP</m> give relation between the two coordinate systems.
+			<me>
+				\vec r' = \vec R_\text{cm} + \vec r.
+			</me>
+			Taking derivative with respect to time, this immediately yields relation between velocity of any point with respect to the two frames.
+			<me>
+				\vec v' = \vec V_\text{cm} + \vec v.
+			</me>
+			Taking another derivative we get relation for accelerations in the two frames of same point P.
+			<me>
+				\vec a' = \vec A_\text{cm} + \vec a.
+			</me>						
+		</p>
+		<p>
+			Following two results of analysis of rolling motion are important undestanding rolling motion and solving problems.
+		</p>
+
+		<p>
+			 
+			<ol>
+				<li>
+					<p>
+						<alert>Separation of Kinetic Energy.</alert> The kinetic energy of a rolling body with respect to a fixed coordinate system  separates into translational kinetic energy of the CM and rotational kinetic energy of the body about an axis through the CM 
+						<men xml:id="eq-kinetic-energy-separation">
+							K =  \frac{1}{2}I\omega^2+ \frac{1}{2}MV_\text{cm}^2. 
+						</men>
+						I want to emphasize that <m>V_\text{cm}</m> is the velocity of CM with respect to the fixed inertial coordinate system <m>O'x'y'z'</m> and angular velocity <m>\omega</m> is with respect to axis <m>Oz</m>. 
+					</p>
+				</li>
+
+				<li>
+					<p>
+						<alert>Separation of Angular Momentum.</alert> The angular momentum of a rolling body about the origin of a fixed coordinate is equal to the sum of the angular momentum of the rigid body about the CM and the angular momentum of a point particle of mass equal to the mass <m>M</m> of the rigid body placed at its CM and moving with the CM.
+						<men xml:id="eq-angular-momentum-separation">
+							\vec L_{about\ O'} = \vec L_{about\ O} + \vec L_{about\ O'}^{of\ CM}.
+						</men>
+					</p>
+				</li>
+				<li>
+					<p>
+						<alert>Separation of Equations of Motion.</alert> 
+
+						In the case of fixed mass and fixed shape of the rolling body we have the equation for translational motion of the CM of the body and the equation of rotational motion about instananeous axis through the CM.
+						<mdn>
+							<mrow xml:id="eq-of-translational-motion-const-mass"> \amp M\vec A_\text{cm}  = \vec F_\text{ext}.</mrow>
+							<mrow xml:id="eq-of-rotational-motion-const-mass"> \amp  I\,\alpha =\mathcal{T}.</mrow>
+						</mdn>	
+						If mass was varying or shape was changing during the motion, we will need more complicated analysis using Calculus and following equations.
+						<!-- The equation of motion of a rigid rolling body separates into a pair of equations: an equation for translational motion with respect to a fixed coordinate system and another equation for the rotational motion about an axis through the center of mass. That is, if <m>\vec P^{\,\prime}</m> is the total momentum of a rigid body with respect to a fixed coordinate system, <m>\vec F_{ext}</m> the net external force on the body, <m>L_z</m> its angular momentum about the an axis through the CM and parallel to the axis of rotation of the rolling body, and <m>\mathcal{T}_z</m>, the net torque on the body about the axis through the CM, then -->
+						<mdn>
+							<mrow xml:id="eq-of-translational-motion"> \amp \frac{d\vec P^{\,\prime}}{dt} = \vec F_\text{ext}.</mrow>
+							<mrow xml:id="eq-of-rotational-motion"> \amp \frac{dL_z}{dt}=\mathcal{T}_z.</mrow>
+						</mdn>
+					
+					</p>
+				</li>
+
+			</ol>
+		</p>
+<!-- 		<table xml:id="tab-pure-rotation-versus-rolling-motion"><title>Pure Rotation and Rolling Motion  </title>
+			<tabular halign="left">
+				<row bottom="minor">
+					<cell> Quantity </cell> <cell> Pure Rotation</cell> <cell> Rolling Motion </cell>
+				</row>
+				<row>
+					<cell> Angular Momentum </cell> <cell> <m> L_z = I \omega</m></cell> <cell> <m>L_z = I \omega \text{  (about\ axis\ through\ the\ CM)}</m> </cell>
+				</row>
+				<row>
+					<cell> Torque </cell> <cell> <m> \mathcal{T}_z = \sum_\text{Forces}\left(\vec r\times F\right)_z</m></cell> <cell> <m>\mathcal{T}_z = \sum_\text{Forces}\left(\vec r\times F\right)_z\text{  (about\ axis\ through\ the\ CM)}</m> </cell>
+				</row>
+				<row>
+					<cell> Equations of motion </cell> <cell> <m> \mathcal{T}_z = \frac{dL_z}{dt}= I\alpha</m></cell> <cell> <m>1. \vec F_{ext}=\frac{d\vec P}{dt}</m> </cell>
+				</row>
+				<row>
+					<cell>  </cell> <cell> </cell> <cell> <m>2. \mathcal{T}_z = \frac{dL_z}{dt}= I\alpha\text{  (about\ axis\ through\ the\ CM)}</m> </cell>
+				</row>
+				<row bottom="minor">
+					<cell> Kinetic Energy </cell> <cell> <m> K =\frac{1}{2} I \omega^2</m></cell> <cell> <m>K =\frac{1}{2}MV_\text{cm}^2+\frac{1}{2} I \omega^2</m> </cell>
+				</row>								
+			</tabular>
+		</table> -->
+ 
+
+
+
+	<example xml:id="ex-Speed-of-a-Ball-Rolling-Down-an-Incline"><title> Speed of a Ball Rolling Down an Incline </title>
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					A spherical marble of radius <m> R</m> rolls down in a straight line on an inclined plane with the angle of inclination <m> \theta</m>  without slipping.  What will be the speed of the marble when it has rolled down a distance <m>D</m> on the incline?
+				</p>
+				<p></p>
+				<figure>
+					<caption></caption>
+					<image source="./images/rotation/Ball-Rolling-Down-an-Incline.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+		</statement>
+		<!-- <hint> <p> Use conservation of energy. </p> </hint> -->
+		<answer> <p> <m> \sqrt{\dfrac{10}{7}\,g\,D\,\sin\,\theta}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The energy conservation can be used to state that the loss of gravitational potential energy will equal the total kinetic energy. Let <m>M</m> be the mass f the marble.
+				<me>
+					\dfrac{1}{2} M V_\text{cm}^2 + \dfrac{1}{2}I\omega^2 = M g h,
+				</me>
+				where
+				<me> 
+					\omega = \dfrac{V_\text{cm}}{R},\ \ I = \dfrac{2}{5}MR^2,\ \  h = D\,\sin\,\theta. 
+				</me>
+				Therefore
+				<me>
+					\dfrac{7}{10}M V_\text{cm}^2 = M g D\sin\,\theta,
+				</me>
+				from which mass cancels out, and we get
+				<me>
+					V_\text{cm} = \sqrt{\dfrac{10}{7}\,g\,D\,\sin\,\theta}.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+
+
+	<example xml:id="ex-Kinetic-Energy-of-a-Rolling-Bowling-Ball"><title> Kinetic Energy of a Rolling Bowling Ball </title>
+		<statement>
+			<p>
+				A spherical ball of diameter <m>67\text{ cm}</m> and mass <m>8\text{ kg}</m> bowling ball is rolling on a smooth surface without slipping.  At a particular instant, the CM of the ball has a speed of  <m>30\text{ cm/sec}</m>.  What is the total kinetic energy of the ball?
+			</p>
+
+		</statement>
+		<!-- <hint> <p> Note <m>\omega = v /R</m>.  </p> </hint> -->
+		<answer> <p> <m>0.51 \text{ J}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The ball has kinetic energy of translation of the CM and rotational kinetic energy about the CM.  The angular velocity of rotation is found by applying geometry to the non-slip condition.
+				<me>
+					\omega = \frac{v}{R} = \frac{0.3\text{ m/s} }{(0.67/2)\text{m} } = 0.9\text{ rad/s}.
+				</me> 
+				The moment of inertia of a sphere about an axis through the CM is
+				<me>
+					I = \frac{2}{5}MR^2 = 0.36\text{ kg.m}^2.
+				</me>
+				Therefore, the total kinetic energy is found to be
+				<md>
+					<mrow> K \amp = \frac{1}{2}MV_\text{cm}^2+\frac{1}{2}I\omega^2 </mrow>
+					<mrow> \amp =  \frac{1}{2}(8\text{ kg})(0.3\text{ m/s} )^2 + \frac{1}{2}(0.36\text{ kg.m}^2)(0.9\text{ rad/s})</mrow>
+					<mrow> \amp = 0.36 \text{ J} + 0.15 \text{ J} = 0.51 \text{ J}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</example>
+
+
+
+
+	<example xml:id="ex-Penny-Rolled-in-a-Circular-Groove"><title> Penny Rolled in a Circular Groove </title>
+		<statement>
+			<sidebyside widths="50% 50%">
+				<p>
+					A circular groove of diameter <m>50\text{ cm}</m> is made in a horizontal table.  A penny (diameter <m>1\text{ cm}</m>) is rolled in the groove. Suppose that the penny rolls at right angle without slipping. 
+				</p>
+				<figure>
+					<caption></caption>
+					<image source="./images/rotation/pr-misc-penny-going-around-circle.png" width="80%" />
+				</figure>
+			</sidebyside>
+			<p>
+				(a) Find the total angle the penny rotates about an axis through the center of the pennty as it goes around the groove once. The axis is labeled (a,b) in the figure.
+			</p>
+			<p>
+				(b) The penny takes 10 sec to go around the circle. What is its instantaneous rotation velocity?  
+			</p>
+			<p>
+				(c) Going around the circle can be considered as a revolution of the CM of the penny about an axis, labeled (c) in the figure, that connects the center of the circle and the point of the penny that is momentarily in contact with the groove. What is the angular velocity vector of the CM about this axis? 
+			</p>
+			
+
+		</statement>
+		<!-- <hint> <p>  (a)  (b) Use the result of (a). (c) Again, think about the number of turns when the penny goes once around the circle. </p> </hint> -->
+		<answer> <p>  (a) <m>100\pi </m> radians; (b) <m>10\pi</m> rad/sec; (c)  <m>5\pi</m> rad/sec. </p> </answer>
+		<solution> <title> a </title>
+			<p>
+				Think about the number of turns around the axis through the center of the penny.
+			</p>
+
+			<p>
+				Let <m> R_c </m> be the radius of circular path and <m>R</m> the radius of the penny. When the penny goes in the circle, its CM of penny moves a distance <m> 2\pi R_c</m>. When penny rotates once about the axis through the CM, the distance the penny moves is equal to <m> 2\pi R</m>. Therefore, the number of turns the penny makes when it has goes around once
+				<me>
+					N = \dfrac{2\pi R_c}{2\pi R} = \dfrac{R_c}{R} = 50.
+				</me>
+				In each turn, the angle is <m> 2\pi </m> radians. Therefore, the total angle
+				<me>
+					50\times 2\pi = 100 \pi \text{ rad}.
+				</me> 
+			</p>
+		</solution>
+		<solution> <title> b </title>
+			<p>
+				In <m>10\text{ sec}</m> the angle rotated is <m> 100 \pi \text{ rad}</m>. Therefore,
+				<me>
+					\omega = \dfrac{100 \pi \text{ rad}}{10\text{ sec}} = 10 \pi \text{ rad/sec}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title> c </title>
+			<p>
+				For each <m>2\pi</m> radians rotation about the axis labeled (c), the distance covered is <m>2\pi\times 2R</m>. That means, the number of turns made in <m>10\text{ sec}</m> is
+				<me>
+					N_c = 25.
+				</me>  
+				That means, the angular velocity will be half as much in (b)
+				<me>
+					\omega = 5 \pi \text{ rad/sec}.
+				</me>					
+			</p>
+		</solution>
+
+	</example>
+
+
+
+
+
+
+	</introduction>
+
+
+
+
+
+
+ 
+ 	<subsection> <title>  (Calculus) Separation of Kinetic Energy </title>
+ 		<p>
+ 			<alert> Theorem: </alert>
+
+ 			The kinetic energy of a rolling body with respect to a fixed coordinate system  separates into translational kinetic energy of the CM and rotational kinetic energy of the body about an axis through the CM 
+			<men xml:id="eq-kinetic-energy-separation-proof">
+				K =  \frac{1}{2}I\omega^2+ \frac{1}{2}MV_\text{cm}^2. 
+			</men>
+ 			
+ 		</p>
+<!--  		<figure xml:id="fig-rot-rolling-motion-new-proof">
+			<caption>
+				Rolling motion.  The coordinates <m>Oxyz</m> move with at the velocity of CM with respect to the coordinates <m>O'x'y'z'</m> which is an inertial coordinate system.
+			</caption>
+			<image source="./images/rotation/rot-rolling-motion-new-1.png" width="80%"/>
+		</figure> -->
+		<p>
+			<alert>Proof:</alert> Refer to <xref ref="fig-rot-rolling-motion-new"/> for notation. 
+			Let us think of the rolling body as a collection of masses <m>\{m_i,\ i=1,2,\dots,N\}</m> with positions and velocities given by <m>\{\vec r'_i,\ i=1,2,\dots,N\}</m> and <m>\{\vec v'_i,\ i=1,2,\dots,N\}</m> with respect to <m>O'x'y'z'</m> and <m>\{\vec r_i,\ i=1,2,\dots,N\}</m> and <m>\{\vec v_i,\ i=1,2,\dots,N\}</m> with respect to <m>Oxyz</m>.  <!-- Let the axes be oriented so that body rolls along the <m>O'x'</m> axis and the <m>x</m>, <m>y</m> and <m>z</m> axes of two coordinate systems be parallel to each other.  Let the motion of the center of mass and the point of contact be in the <m>xy</m>-plane so that the instantaneous axis of rotation is parallel to the <m>z</m>-axis and passes through the instantaneous position of contact with the rolling surface.  -->
+		</p>
+		<p>
+			First, note that the position vectors <m>\vec r'</m> and <m>\vec r</m>, and the position <m>\vec R_\text{cm}</m> of the CM have the following relation.
+			<men  xml:id="eq-rolling-1">
+			\vec r^{\,\prime} =  \vec r + \vec R_\text{cm}. 
+			</men>
+			From this we can immediately see that
+			<men xml:id="eq-rolling-2">
+				\vec v^{\,\prime} =  \vec v + \vec V_\text{cm},
+			</men>
+			where <m>\vec v^{\,\prime}</m> is the velocity with respect to <m>O'x'y'z'</m>, <m>\vec v</m> the velocity of the same particle with respect to <m>Oxyz</m> and <m>\vec V_\text{cm}</m> is the velocity of the CM with respect to <m>O'x'y'z'</m>.  Note the the velocity of CM with respect to <m>Oxyz</m> is zero since <m>O</m> moves with the CM.
+		</p>
+		<p>
+			Kinetic energy of the body with respect to the fixed coordinates <m>O'x'y'z'</m> is just sum of translational kinetic energy of each of the particles.
+			<me>
+				K = \sum_{i=1}^{N} \frac{1}{2}m_i\vec v'_i\cdot\vec v'_i, 
+			</me>
+			which can be rewritten in by replacing <m>\vec v'_i</m> by <m>\vec v_i+\vec V_\text{cm}</m> as given in Eq. <xref ref="eq-rolling-2"/>.
+			<men xml:id="eq-rolling-5">
+				K = \sum_{i=1}^{N} \frac{1}{2}m_i\left(\vec v_i+\vec V_\text{cm}\right)\cdot\left(\vec v_i+\vec V_\text{cm}\right). 
+			</men>
+			Expanding the right side we find three types of terms.
+			<men xml:id="eq-rolling-6">
+				K = \sum_{i=1}^{N} \frac{1}{2}m_i v_i^2 +  \frac{1}{2}M V_\text{cm}^2 + \vec V_\text{cm}\cdot \left(\sum_{i=1}^{N} m_i \vec v_i\right). 
+			</men>
+			The first term in this eqution is equal to the rotational kinetic energy about an axis through the CM as we immediately see when we express the speed of the <m>i^{th}</m> particle in terms of rotation speed <m>\omega</m> and distance <m>r_i</m> from the axis through the CM in the <m>Oxyz</m> coordinate system.  
+			<mdn>
+				<mrow xml:id="eq-rolling-7"> \sum_{i=1}^{N} \frac{1}{2}m_i v_i^2 \amp =  \frac{1}{2}\sum_{i=1}^{N}m_i \left(r_i\omega\right)^2 = \frac{1}{2} \omega^2\sum_{i=1}^{N}m_i r_i^2 = \frac{1}{2} I \omega^2. </mrow>
+			</mdn>
+			The third term in Eq.  \ref{eq-rolling-6} vanishes since the sum within parenthesis is proportional to the velocity of the CM of the body with respect to the <m>Oxyz</m> frame.  As stated above, since <m>O</m> moves with the CM the velocity of the CM with respect to <m>O</m> is zero.
+			<men xml:id="eq-rolling-8">
+				\sum_{i=1}^{N} m_i \vec v_i = MV_{cm}^\text{with respect to O} = 0. 
+			</men>
+			Using Eqs. <xref ref="eq-rolling-7" /> and <xref ref="eq-rolling-8" /> in Eq. <xref ref="eq-rolling-6" /> we arrive at the separation of KE claimed in <xref ref="eq-kinetic-energy-separation-proof"/>.			
+ 		</p>
+
+ 	</subsection>
+
+
+	<subsection> <title>  (Calculus) Separation of Angular Momentum </title>
+	
+ 		<p>
+ 			<alert> Theorem: </alert>
+
+ 			The angular momentum of a rolling body about the origin of a fixed coordinate is equal to the sum of the angular momentum of the rigid body about the CM and the angular momentum of a point particle of mass equal to the mass <m>M</m> of the rigid body placed at its CM and moving with the CM. With O' origin of a fixed coordinate system and O the origin of a coordinate system that moves with the body.
+ 
+			<men xml:id="eq-angular-momentum-separation-proof">
+				\vec L_{\text{about }O'} = \vec L_{\text{about }O}+\vec L_{\text{of CM about }O'}.
+			</men>
+ 			
+ 		</p>
+ 		<p>
+ 			<alert>Proof:</alert> Refer to <xref ref="fig-rot-rolling-motion-new"/> for notation. 
+ 			Using the same coordinate systems as above and the rolling of a disk along the <m>x</m>-axis with the plane of motion in the <m>xy</m>-plane and the axis of rotation parallel to the <m>z</m>-axis we find that only the <m>z</m>-component of the angular momentum is non-zero, which has the following expression about <m>O'</m>.
+			<me>
+				L'_z = \sum_{i=1}^{N} \left(\vec r'_i\times m_i\vec v'_i\right)_z.
+			</me>
+			We replace <m>\vec r'_i</m> and <m>\vec v'_i</m> in this equation by using Eqs. <xref ref="eq-rolling-1"/> and <xref ref="eq-rolling-2"/> and then expand the resulting expression.
+			<md>
+				<mrow> L'_z \amp = \sum_{i=1}^{N} \left(\vec r_i\times m_i\vec v_i\right)_z +
+				\left(\vec R'\times \vec V_\text{cm}\sum_{i=1}^{N}m_i\right)_z </mrow>
+				<mrow> \amp \ \ \ +
+				\left[\left(\sum_{i=1}^{N}m_i\vec r_i\right)\times \vec V_\text{cm}\right]_z + \left[\vec R_\text{cm}\times \left(\sum_{i=1}^{N}m_i\vec v_i\right)\right]_z. </mrow> 
+			</md>
+			The first term in this equation is the angular momentum of the body with respect to <m>Oxyz</m> and the second term is the angular momentum of a point particle of mass <m>M=\sum_{i=1}^N m_i</m> placed at the CM and moving with the CM with respect to <m>O'x'y'z'</m>. The sums in third and fourth terms   are zero since they are proportional to the position and velocity of the CM with respect to the <m>Oxyz</m> coordinate system where the origin is at the CM and the origin moves with the CM.  Therefore
+			<me>
+				L'_z = L_z+\left(\vec R_\text{cm}\times M\vec V_\text{cm}\right)_z, 
+			</me>
+			which proves Eq. <xref ref="eq-angular-momentum-separation-proof"/>.
+ 
+ 		</p>
+	</subsection>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+	<!-- <subsection> <title> Separation of Motions </title>
+		<introduction>
+			<p>
+				Consider a disk rolling on a plane surface as shown in <xref ref="fig-rolling-motion-main-r-rprime" />.  To be concrete, we choose the <m> z</m> axis along the axis of  rotation. Then, the <m> z</m> component of the angular momentum of a rolling body about the origin O of the fixed coordinate system can be obtained by summing over the angular momenta of the elements of the disk as we have done before.  
+			</p>
+			<p>
+				We prove in a subsection below that the <m> z</m> component of the angular momentum in the rolling motion separates into two terms.
+				<me>
+				L_z  = I  \omega  + \left(\vec R_\text{cm} \times M \vec V_\text{cm} \right)_z
+				</me>
+				where <m> I </m>  is the moment of inertia about an axis through the CM that is parallel to the  <m> z </m> axis through the origin O.
+			</p>	 
+			
+			<figure xml:id="fig-rolling-motion-main-r-rprime">
+				<caption>Rolling motion. Here <m> z</m> axis is pointed  into-the-page as indicated by the <m>\otimes</m> symbol.
+				</caption>
+
+				<image source= "./images/rotation/rolling-motion-main-r-rprime.png" widht="60%"/>
+			</figure>
+			<p>
+
+			Not only the angular momentum about O separates into two parts, so does the torque.
+				<md>
+					<mrow> \tau_{\text{net,z}}^{\text{about O}} \amp =\sum_i \left( \vec r'_i \times \vec F_i\right)_z + \left( \vec R_\text{cm} \times \vec F_{\text{net}}\right)_z</mrow>
+                    <mrow>  \amp = \tau_{\text{net,z}}^{\text{about CM}} + \left(\text{Torque about O as if}\ \vec F_{\text{net}}\ \text{was acting at CM}\right)_z.</mrow>
+				</md>
+				Equating the rate of change of angular momentum to torque gives us the equations of motion for the rolling motion. After much algera, we find that it is possible to study rolling motion as two separate motion, the translation of the CM and a pure rotation about an axis through the CM.		
+				<mdn> 
+					<mrow> \amp\text{Rotation about CM: }\ \ \tau_{\text{about CM}} = I\,  \alpha  </mrow>
+					<mrow> \amp \text{Translation of CM: }\ \ 	\vec F_\text{{net,ext}} = M\vec A_{\text{cm}} </mrow>
+				</mdn>
+			</p>
+		</introduction>
+
+		<subsubsection> <title> (Calculus) Proof of Separation of Angular Momentum</title>
+			<p>
+				Consider the rolling object as collection of masses <m> m_i</m>.  Then the angular momentum about O is the sum of angular momentum of each mass.
+				<me>
+					L_z^{\text{about O}} = \sum_i \left(\vec r_i \times m_i\vec v_i \right)_z
+						=  \sum_i \left(\vec r_i \times m_i\frac{d\vec r_i}{dt} \right)_z.
+				</me>
+				The position vector of <m> m_i </m> with respect to O, labeled  <m> \vec r_i</m>, differs from its position  <m> \vec r^{\prime}_i </m> with respect to the CM.
+				<me>
+					\vec r_i = \vec R_\text{cm} + \vec r^{\prime}_i 
+				</me>
+				Substituting this equation into the last equation,  and then expanding the terms in the sum, we find the angular momentum about O to be
+				<mdn>
+					<mrow number="no"> L_z =  \amp 					
+						 \left[\vec R_\text{cm} \times \sum_i m_i \frac{d\vec R_\text{cm}}{dt} + \left( \sum_i m_i\vec r^{\prime}_i \right)\times \frac{d\vec R_\text{cm}}{dt}\right.  </mrow>
+					<mrow xml:id="eq-proof-separation-of-angular-momentum-main">  \amp  \left.+\ \vec R_\text{cm} \times \left( \sum_i m_i 	\frac{d\vec r^{\prime}_i}{dt}
+						\right) + \sum_i \left( \vec r^{\prime}_i\times m_i \frac{d\vec r^{\prime}_i}{dt}\right)\right]_z.</mrow>				
+				</mdn>
+				which makes the third term zero since it implies 
+				<me>
+					\sum_i m_i \frac{d\vec r^{\prime}_i}{dt} = 0.
+				</me>
+				The first term simplifies to <m> \left( \vec R_\text{cm} \times M\vec V_\text{cm}\right)_z</m>.  The fourth term gives motion about the CM and an be shown to be an angular momentum.
+				<me>
+					\left( \sum_i m_i\vec r^{\prime}_i \times \frac{d\vec r^{\prime}_i}{dt} \right)_z =\left(\vec r^{\prime}_i \times \vec p^{\prime}_i \right)_z,
+				</me>
+				where <m> \vec r^{\prime}_i</m> and <m> \vec p^{\prime}_i</m> are the position and momentum of <m> m_i </m> with respect to the CM.  Therefore, this term gives the <m> z</m> component of angular momentum with respect to the CM. The fourth term in Eq. <xref ref="eq-proof-separation-of-angular-momentum-main"/> is <m> I \omega</m>.  Hence,
+				<me>
+					L_z^{\text{about O}} = I  \omega  + \left(\vec R_\text{cm} \times M \vec V_\text{cm} \right)_z
+				</me>
+
+			</p>
+		</subsubsection>
+	</subsection> -->
+ 
+
+
+	<exercises>
+
+
+		<exercise xml:id="ex-Acceleration-of-Rolling-Drum-Down-an-Incline"><title> Acceleration of Rolling Drum Down an Incline </title>
+		<idx><h>Rolling Motion</h><h>Acceleration</h></idx>
+			<statement>
+				Find the acceleration of a drum rolling downhill without slipping on an slope inclined at angle <m>\phi</m>.
+			</statement>
+			<hint> <p>  Set up two equations - one for CM translation and one for rotation about CM. </p> </hint>
+			<answer> <p> <m>\frac{2}{3}\ g\ \sin\phi</m>. </p> </answer>
+			<solution> 
+				<p>
+					First we draw a figure and identify the dynamical variables that will be helpful (see <xref ref="fig-ex-rolling-drum"/>).  For translation of the CM since the acceleration of the CM is along the incline it is best to use a Cartesian coordinates with <m>x</m>-axis along the incline.  For the rotation, we can use angle that a marked line, shown dashed line on the cross-section of the drum, makes with the vertical to the incline. 
+				</p>
+				<figure xml:id="fig-ex-rolling-drum" >
+					<caption>
+						Figure for <xref ref="ex-Acceleration-of-Rolling-Drum-Down-an-Incline"/> solution.
+					</caption>
+					<image source="./images/rotation/ex-rolling-drum.png" width="70%"/>
+				</figure>
+				<p>
+					From <xref ref="fig-ex-rolling-drum"/>, we find that the angle rotated by the marked line and the distance traveled by the CM are related if the drum rolls without slipping. 
+					<me>
+						X_\text{cm} = R\theta.
+					</me>
+					Therefore, the angular velocity is related to the x-velocity of the CM.
+					<me>
+						V_{\text{cm-}x} = R\omega.
+					</me>
+					The <m>x</m>-component of acceleration of the CM is, therefore, related to angular acceleration <m>\alpha</m>.
+					<men xml:id="eq-rolling-drum-3">
+						A_{\text{cm-}x} = R\alpha. 
+					</men>
+					and the y-component of the acceleration of CM is zero.  Since acceleration is only along <m>x</m>-direction, I will drop subscript <m>x</m> in Eq. <xref ref="eq-rolling-drum-3"/> and write the following instead
+					<men xml:id="eq-rolling-drum-4">
+						A_\text{cm} = R\alpha. 
+					</men>
+					The forces acting on the drum are its weight <m>W(=Mg)</m>, normal force <m>N</m> and static friction <m>F_s</m>.  Now, we will set up the dynamical equations for the translation of the CM and rotation about CM.  These equations together with Eq. <xref ref="eq-rolling-drum-4"/> will be sufficient to solve for acceleration of the CM.
+
+					Translation of the CM:
+					<mdn>
+						<mrow xml:id="eq-rolling-drum-5"> \amp x\text{-component}:\ \ \ M\ g\ \sin\phi-F_s = MA_\text{cm}.</mrow>
+						<mrow xml:id="eq-rolling-drum-6"> \amp y\text{-component}:\ \ \ N-M\ g\ \cos\phi = 0.</mrow>
+					</mdn>
+					Rotation about the CM:
+					<men xml:id="eq-rolling-drum-7">
+						F_sR = \frac{1}{2}MR^2\alpha. 
+					</men>
+					Note that the torques by <m>W</m> and <m>N</m> about an axis through the CM are zero. Now, from Eqs. <xref ref="eq-rolling-drum-4"/>   and   <xref ref="eq-rolling-drum-7"/>  we find <m>F_s</m> in terms of <m>A_\text{cm}</m>.
+					<men xml:id="eq-rolling-drum-8">
+						F_s = \frac{1}{2}MA_\text{cm}\alpha. 
+					</men>
+					Substituting <m>F_s</m> from Eq. <xref ref="eq-rolling-drum-8"/>   into Eq. <xref ref="eq-rolling-drum-5"/>  and solving for <m>A_\text{cm}</m> we find
+					<me>
+						A_\text{cm} = \frac{2}{3}\ g\ \sin\phi. 
+					</me>
+
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="ex-Rolling-Motion-of-Bicyle"><title> Rolling Motion of Bicyle </title>
+			<statement>
+				<sidebyside widths="50% 5% 45%">
+					<p>
+						A bicycle moving in a straight line speeds from <m>5\text{ m/s}</m> to <m>15\text{ m/s}</m> over a distance of <m>200\text{ m}</m> at a constant acceleration without slipping at any time.  
+					</p>
+					<p></p>
+					<figure xml:id="fig-bicycle-rolling-on-flat-surface" >
+						<caption>
+						</caption>
+						<image source="./images/rotation/bicycle-rolling-on-flat-surface.png" width="70%"/>
+					</figure>			
+				</sidebyside>
+
+				<p>
+					Each wheel has a radius of <m>25\text{ cm}</m> and a mass of <m>250\text{ g}</m>  with all masses assumed to be at the rim.   Find the following quantities:
+					<ol marker="(a)">
+						<li> the angular speed of the wheel at the initial and the final instants, </li>
+						<li> the magnitude  of angular rotation of each wheel over the time interval, </li>
+						<li> the angular acceleration during the interval,  </li>
+						<li> the net torque on each wheel about the center of the wheel, and</li>
+						<li> the net force on the bicycle, assuming the mass of the bike is <m>1.2\text{ kg}</m>.</li>
+					</ol>
+				</p>
+
+			</statement>
+			<hint> 
+				<p>  
+					(a) Use <m>v=\omega R</m>. 
+					(b) Use <m>s=R\theta</m>. 
+					(c) Use constant angular acceleration. 
+					(d) Use <m>\mathcal{T} = I \alpha</m>. 
+					(e) Use CM acceleration. 
+				</p>
+			</hint>
+			<answer> 
+				<p> 
+					(a) <m>20\text{ rad/s}</m> and <m>60\text{ rad/s}</m>, 
+					(b) <m>800\text{ rad}</m>, 
+					(c) <m>2\text{ rad/s}^2</m>, 
+					(d) <m>0.03\text{ N.m}</m>, 
+					(e) <m>0.6\text{ N} </m>. 
+				</p> 
+			</answer>
+			<solution><title>a</title> 
+				<p>
+					Using the arc-angle-radius relation we obtain
+					<md>
+						<mrow> \amp \omega_i = v_i/R = \frac{5\ \text{m/s}}{0.25\ \text{m}} = 20\ \text{rad/s}.</mrow>
+						<mrow> \amp \omega_f = v_f/R = \frac{15\ \text{m/s}}{0.25\ \text{m}} = 60\ \text{rad/s}.</mrow>
+					</md>
+				</p>
+			</solution>
+			<solution><title>b</title> 
+				<p>
+					The angular rotation will be related in a similar way.
+					<me>
+						\Delta\theta = \frac{s}{R} = \frac{200\ \text{m}}{0.25\ \text{m}} = 800\ \text{rad}.
+					</me>
+				</p>
+			</solution>
+			<solution><title>c</title> 
+				<p>
+					The angular acceleration is a vector.  Let the initial angular velocity be pointed towards the positive <m>z</m>-axis. Then, we have the <m>z</m>-component of the angular acceleration can be obtained from the change in angular velocity and the angular displacement by using
+					<me>
+						\omega_{f}^2 - \omega_{i}^2 = 2\alpha \Delta \theta.
+					</me>
+					This gives
+					<md>
+						<mrow> \alpha \amp  = \frac{\omega_{f}^2 - \omega_{i}^2}{2\Delta \theta}</mrow>
+						<mrow> \amp  = \frac{(60\ \text{rad/s})^2 - (20\ \text{rad/s})^2}{2\times 800\ \text{rad}} = 2\ \text{rad/s}^2.</mrow>
+					</md>
+				</p>
+			</solution>
+			<solution><title>d</title> 
+				<p>
+					We need the moment of inertia <m>I</m>.
+					<me>
+						I = MR^2 = 0.25\ \text{kg} \times (0.25\ \text{m})^2 = 0.0156\ \text{kg.m}^2.
+					</me>
+					Therefore, the <m>z</m>-component of the torque
+					<me>
+						\mathcal{T} = I \alpha = 0.0156\ \text{kg.m}^2 \times 2\ \text{rad/s}^2 = 0.03 \ \text{N.m}.
+					</me>
+
+					<sidebyside widths="55% 10% 35%">
+						<p>
+							(e) Suppose the bicycle is moving to the East.  Let the   positive <m>x</m>-axis be towards the East and the <m>z</m>-axis pointed towards the North.  Then, the <m>x</m>-component of the velocity of the center of the wheel is related to the <m>z</m>-component of the angular acceleration as follows.
+							<me>
+								a_x = \alpha_z R.
+							</me>
+						</p>
+						<p></p>
+						<figure>
+							<caption></caption>
+							<image source="./images/rotation/ex-bicycle-rolling-cm-vel-ang-acc.png"/>
+						</figure>
+					</sidebyside>
+
+					The acceleration of the bicycle as a whole is equal to the acceleration of the wheels. Therefore, the net force on the bicycle would be towards the positive <m>x</m>-axis and will have the magnitude
+					<md>
+						<mrow> |F_x| \amp = M |a_x| = M |\alpha_z| R </mrow>
+						<mrow> \amp =  1.2\text{ kg}\times 2\text{ rad/s}^2\times 0.25\text{ m} =0.6\text{ N}.</mrow>
+					</md>
+				</p>
+			</solution>
+		</exercise>
+
+	 
+		<exercise xml:id="ex-Acceleration-of-a-Yoyo-Falling-with-Thread-Unwinding"><title> Acceleration of a Yoyo Falling with Thread Unwinding </title>
+			<statement>
+
+				<sidebyside widths="65% 10% 25%">
+					<p>
+						A yoyo of radius <m>R</m> and mass <m>M</m>  has a massless thread wound on the inside wheel of radius <m>r</m>. The thread is then held and the yoyo is allowed to fall.  As the yoyo falls the thread unwinds smoothly.  Find the tension in the thread and the speed of fall of the yoyo when it has fallen  a height <m>h</m>  vertically.  
+					</p>
+					<p></p>
+					<figure>
+						<caption></caption>
+						<image source="./images/rotation/exer-rot-rolling-1.png"/>
+					</figure>
+				</sidebyside>
+				<p>
+					For purposes of the moment of inertia, assume the yoyo to be a uniform thin disk of of mass <m>M</m> and radius <m>R</m>. 
+	 				You may use <m>R = 3\text{ cm}</m>, <m>M = 300\text{ g}</m>, <m>r = 2\text{ cm}</m>, and <m>h = 0.8\text{ m}</m> if you prefer numerical problem.
+				</p>
+				
+
+			</statement>
+			<hint> <p> Set up (1) a translation equation and (2) a rotational equation. Their accelerations are connected. </p> </hint>
+			<answer> <p> <m>1.56\text{ N}</m> <m>2.7\text{ m/s}</m>.  </p> </answer>
+			<solution> 
+				<p>
+					The figure shows the yoyo at an arbitrary instant in its motion and the choice of axes. 
+					<sidebyside widths="50% 15% 35%">
+						<p>
+							The yoyo is accelerating towards the positive <m>x</m>-axis and rotates with its angular acceleration towards the positive <m>z</m>-axis. The components <m>a_{x}</m> of the acceleration and the <m>z</m>-component of the angular acceleration <m>\alpha</m> are connected by the radius <m>r</m> of the inside wheel since the unwinding occurs at that radius. For simoler notation we will write <m>a</m> for <m>a_x</m>.
+							<me>
+								\alpha r = a. 
+							</me>
+						</p>
+						<p></p>
+						<figure xml:id="fig-ex-33-yoyo-problem">
+							<caption></caption>
+							<image source="./images/rotation/ex-33.png"/>
+						</figure>
+					</sidebyside> 
+					<sidebyside widths="50% 10% 10% 30%">
+						<p>
+							The translational motion of the CM can be obtained from the forces tension <m>T</m> upwards and the weight <m>Mg</m>.
+							<men xml:id="eq-ch9-ex-33-2">
+								Mg - T =M a. 
+							</men>
+						</p>
+						<p></p>
+						<image source="./images/rotation/ex-33a.png"/>
+						<p></p>
+					</sidebyside>
+					<sidebyside widths="50% 10% 20% 20%">
+						<p>
+							The torque about the CM comes from the the tension in the thread.
+							<me>
+								T r =I  \alpha  = \frac{1}{2} MR^2 \frac{a}{r},
+							</me>
+							or 
+							<men xml:id="eq-ch9-ex-33-3">
+								T  = \frac{1}{2} M\left( \frac{R}{r}\right)^2 a. 
+							</men>
+						</p>
+						<p></p>
+						<image source="./images/rotation/ex-33b.png"/>
+						<p></p>
+					</sidebyside>
+					From Eqs. <xref ref="eq-ch9-ex-33-2"/> and <xref ref="eq-ch9-ex-33-3"/>, we get
+					<md>
+						<mrow> \amp Mg -  \frac{1}{2} M\left( \frac{R}{r}\right)^2 a  = Ma,</mrow>
+						<mrow> \amp \ \Longrightarrow\ \ a = \frac{g}{1 + \frac{1}{2}(R/r)^2}.</mrow>
+					</md> 
+					Hence, 
+					<me>
+						T = \frac{1}{2} M\left( \frac{R}{r}\right)^2 \frac{g}{1 + \frac{1}{2}(R/r)^2}.
+					</me>
+					To find the speed of fall when the yoyo has unwound be a height <m>h</m> we use the constant acceleration kinematics along the <m>x</m>-axis.
+					<me>
+						v = \sqrt{v_{0x}^2 + 2a_x \Delta x} = \sqrt{ 2 a h}.
+					</me>
+					Putting in the numbers we find
+					<md>
+						<mrow> T \amp  = \frac{1}{2}(0.300 \textrm{kg})(3\ \textrm{cm}/2\ \textrm{cm})^2\times \frac{9.81\ \textrm{m/s}^2}{1+0.5*1.5^2}</mrow>
+						<mrow> \amp = 1.56\ \textrm{N}, </mrow>
+						<mrow> a \amp = \frac{9.81\ \textrm{m/s}^2}{1+\frac{1}{2}(3\ \textrm{cm}/2\ \textrm{cm})^2}</mrow>
+						<mrow> \amp = 4.6\ \textrm{m/s}^2,</mrow>
+						<mrow>  v \amp = \sqrt{2\times 4.6\ \textrm{m/s}^2\times 0.8\ \textrm{m}}</mrow>
+						<mrow> \amp = 2.7\ \textrm{m/s}.</mrow>
+					</md>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="ex-Spherical-Ball-Rolling-Down-a-Straight-Track"><title> Spherical Ball Rolling Down a Straight Track </title>
+			<statement>
+				<p>
+					A spherical marble of radius <m>R</m> and mass <m>M</m> rolls down in a straight line on an inclined plane with the angle of inclination <m>\theta</m>  without slipping.  What will be the speed of the marble when it has rolled down a distance   D   without slipping as measured on the incline?  
+				</p>
+
+			</statement>
+			<hint> <p> Think in terms of energy conseration. </p> </hint>
+			<answer> <p> <m>\sqrt{\frac{10}{7}gD\sin\theta}</m>  </p> </answer>
+			<solution> 
+				<p>
+					Since the only force doing work on the marble is gravity, which is a conservative force, we apply the conservation of energy to the situation shown in the figure.
+					<me>
+						K_f + U_f = K_i + U_i,
+					</me> 
+					where <m>K</m> is the kinetic energy, which will be the sum of the translational energy associated with the center of mass (CM) and the rotational kinetic energy about an axis through the CM.   Let <m>I_0</m> denote the component of moment of inertia about an axis passing through the CM,  use <m>v</m> for the speed of the CM, and <m>\omega</m> the angular speed for the rotation about the axis.  Then, we have
+					<men xml:id="eq-ch9-ex-34-1">
+						\frac{1}{2} Mv^2 + \frac{1}{2}I_0 \omega^2 = mg D \sin\theta. 
+					</men>
+					Since the ball does not slide while rolling, the distance covered by the CM is the arclength. Therefore, the speed <m>v</m> and the angular speed <m>\omega</m> are related as
+					<men xml:id="eq-ch9-ex-34-2">
+						\omega = \frac{v}{R}. 
+					</men>
+					Furthermore, the moment of inertial <m>I_0</m> for the spherical ball about any axis through the CM is 
+					<men xml:id="eq-ch9-ex-34-3">
+						I_0 = \frac{2}{5}MR^2. 
+					</men>
+					From Eqs. <xref ref="eq-ch9-ex-34-1"/>-<xref ref="eq-ch9-ex-34-3"/> we obtain
+					<me>
+						v^2 = \frac{10gD\sin\theta}{7}\ \Longrightarrow\ v = \sqrt{\frac{10gD\sin\theta}{7}},
+					</me>
+					keeping only the positive root since <m>v</m> is speed.
+				</p>
+			</solution>
+		</exercise>
+	 
+		<exercise xml:id="ex-Pushing-a-Heavy-Drum-Up-an-Incline-in-Rolling-Motion"><title> Pushing a Heavy Drum Up an Incline in Rolling Motion</title>
+			<statement>
+				<sidebyside widths="50% 5% 45%">
+					<p>
+						A heavy drum of mass <m>M</m> and radius <m>R</m> is being pushed up an incline of angle of inclination <m>\theta</m> by a man who is applying a force of magnitude <m>F</m> horizontally with the incline at a height of <m>\frac{3}{2} R</m> from the incline as illustrated in <xref ref="fig-exer-rot-rolling-2"/>.
+					</p>
+					<p></p>
+					<figure xml:id="fig-exer-rot-rolling-2">
+						<caption>
+							<!-- Figure for <xref ref="ex-Pushing-a-Heavy-Drum-Up-an-Incline-in-Rolling-Motion" />. -->
+						</caption>
+						<image source="./images/rotation/exer-rot-rolling-2.png" width="60%" />
+					</figure>
+				</sidebyside>
+
+				<p>
+					(a) What would be the acceleration of the center of mass of the drum if the coefficient of rolling friction is <m>\mu_r</m>? (b) How long will it take to move the drum a distance  <m>L</m> on the incline? (c) What will happen if the person applies the force at a height of <m>R</m> from the incline instead of <m>\frac{3}{2}R</m>?  Explain. 
+				</p>
+	 
+			</statement>
+			<hint> <p>  
+				(a) Use a Free-body diagram to deduce the equations of motion, from which you can get <m>a</m>. (b) Use constant acceleration equations. (c) Think where forces act and how torque is impacted. </p> </hint>
+			<answer> <p> (a) <m>\frac{g\cos\theta}{\mu_r}</m>. (b) <m>\sqrt{\frac{2 \mu_r L}{g\cos\theta}}</m>. (c) Now torque is provided by only <m>F_r</m> and <m>F_N</m>. </p> </answer>
+			
+			<solution><title>a</title> 
+
+
+				<sidebyside widths="50% 10% 40%">
+					<p>
+						To find the acceleration of the CM we draw a free-body diagram of forces on the drum. From the free-body diagram we deduce
+						<md>
+							<mrow> \amp F + \mu_r F_N = M a,</mrow>
+							<mrow> F_N - Mg\cos\theta = 0.</mrow>
+						</md>
+
+					</p>
+					<p></p>
+					<figure>
+						<caption></caption>
+						<image source="./images/rotation/ex-35.png"/>
+					</figure>
+				</sidebyside>
+				<p>
+					Therefore, the magnitude of the acceleration of the CM is
+						<me>
+							a = \frac{g\cos\theta}{\mu_r}.
+						</me>
+				</p>
+			</solution>
+			<solution><title>b</title> 
+				<p>
+					To find the time to move a distance <m>L</m> along the incline we use the constant acceleration kinematics along the <m>x</m>-axis assuming the drum was at rest at time <m>t=0</m>.
+					<me>
+						t = \sqrt{\frac{2\Delta x}{a_x}} = \sqrt{\frac{2 \mu_r L}{g\cos\theta}}.
+					</me>
+				</p>
+			</solution>
+			<solution><title>c</title> 
+				<p>
+
+					<sidebyside widths="50% 10% 40%">
+						<p>
+							The acceleration of the CM does not depend upon where the force acts. Since the drum is rolling without slipping, the angular acceleration of the drum will also not change. With <m>F</m> acting in line with the center, the torque of <m>F</m> about the CM will be zero.
+						</p>
+						<p></p>
+						<figure>
+							<caption></caption>
+							<image source="./images/rotation/ex-35c.png"/>
+						</figure>
+					</sidebyside>
+					The torque for angular acceleration in part (a) was due to three forces, <m>F</m>, <m>F_r</m> and <m>F_N</m>, and now the torque is provided by only <m>F_r</m> and <m>F_N</m>.  The torque by <m>F_N</m> comes as a surprise since in most books one sees the drawing of the normal force through the center.  Actually the net normal does not pass through the center and has torque about the CM.
+
+				</p>
+			</solution>
+		</exercise>
+
+
+	</exercises>
+
+
+
+</section>

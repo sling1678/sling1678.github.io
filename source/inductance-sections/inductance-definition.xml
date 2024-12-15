@@ -1,0 +1,337 @@
+<section xml:id="inductance-definition"><title> Mutual Inductance </title>
+
+	<introduction>
+		<p>
+			From Faraday's law we learn that changing magntic flux through surface attached to a loop will induce EMF in the loop. Therefore, we would not be surprised if we find that two separate circuits carrying time-varying currents next to each other will induce EMF's in each other. This should happen since current of each circuit will paroduce magnetic field at the location of the other circuit. A changing current would produce a changing magnetc field, which will lead to a changing magnetic flux thereby inducing an EMF.
+		</p>
+		<p>
+			To study this effect closely let us consider two circuits or loops <m>C_1</m> and <m>C_2</m> fixed in their position relative to one another as shown in <xref  ref="fig-mutual-inductance-current-in-one"/>.  
+		</p>
+		<sidebyside widths="45%   55%">
+			<p>
+				Let current <m>I_1</m> flow through circuit <m>C_1</m>.  This current will produce a position dependent magnetic field  <m>\vec B_1</m>.  Let <m>\Phi_{21}</m>  be the magnetic flux of field <m>\vec B_1</m>  through the area of an open surface <m>S_2</m> attached to loop <m>C_2</m>.
+			</p>
+			<!-- <p></p> -->
+
+			<figure xml:id="fig-mutual-inductance-current-in-one">
+				<caption>
+					<!-- Mutual Inductance - Magnetic field of current in loop <m>C_1</m> passes through the surface <m>S_2</m> attached to loop <m>C_2</m>. For brevity the magnetic field of current in loop <m>C_2</m> is not shown. -->
+				</caption>
+				<image source="./images/inductance/mutual-inductance-current-in-one.png" width="70%"/>
+			</figure>
+		</sidebyside>
+ 
+		<p>
+			Since <m>\vec B_1</m>  is proportional to <m>I_1</m>, we expect the flux of <m>\vec B_1</m>  to be also proportional to <m>I_1</m>.  
+			<me>
+				\vec B_1\propto I_1\ \ \Longrightarrow \ \Phi_{21} \propto I_1.
+			</me>
+			We can write this as an equality by introducing a proportionality constant which we will write as <m>\mathcal{M}</m>.
+			<men xml:id="eq-mutual-induct-1">
+			\Phi_{21} = \mathcal{M} I_1.  
+			</men>
+			Constant <m>\mathcal{M}</m> is called the <term>coefficient of mutual inductance</term> of the two circuits. Mutual inductance only depends on the geometry of the two circuits, their separation and the magnetic properties of the medium. The SI unit for <m>\mathcal{M}</m> is known as Henry (<m>\text{H}</m>). 
+			<me>
+				\text{Unit of } \mathcal{M} : \frac{\text{T.m}^2}{A} \text{ or } \Omega.\text{sec} \text{ or } \text{ Henry(H)}.
+			</me>
+		</p>
+		<p>
+			Using Eq. <xref ref="eq-mutual-induct-1"/>, the EMF induced in circuit 2 by a changing current in circuit 1 will be given by Faraday's flux rule.
+			<men>
+				 \mathcal{E}_2 = - \frac{\Delta \Phi_{21}}{\Delta t} = - \mathcal{M} \frac{\Delta  I_1}{\Delta t}. 
+			</men>
+			In the limit of <m>\Delta t\rightarrow 0</m>, we will get instantaneous equation.
+			<men xml:id="eq-mutual-induct-2">
+				 \mathcal{E}_2 (t) = - \mathcal{M} \frac{d  I_1}{d t},
+			</men>
+			where I have written <m>\mathcal{E}_2 (t)</m> to emphasize that this is EMF at instant <m>t</m>.
+		</p>
+		<p>
+			We use mutual inductance in AC transformers, where we vary current in one circuit to induce current in another even though the two circuits are not physically connected. By controlling the number of turns in each circuit we can magnify or reduce current induced.  
+		</p>
+	</introduction>
+
+	<subsection> <title> Symmetry of Mutual Inductance </title>
+		<p>
+			In the above we have defined mutual inductance of two circuits based on the magnetic flux through <m>C_2</m> by the current in the circuit <m>C_1</m>.  Let us call mutual inductance obtained this way by <m> \mathcal{M}_{21}</m>. The circuit for this situation is shown in <xref ref="fig-mutual-inductance-current-in-one"/>.
+		</p>
+		<p>
+			 What would happen if we reversed the situation, i.e. pass a current <m>I_2</m> in circuit <m>C_2</m> and studied the magnetic flux of the magnetic field <m>\vec B_2</m>  through circuit <m>C_1</m> as shown in <xref ref="fig-mutual-inductance-current-in-two"/>? Let us denote the mutual inductance here by <m> \mathcal{M}_{12}</m>.
+		</p>
+
+		<sidebyside widths="45% 55%">
+			<p>
+				In this case, we will have the flux <m>\Phi_{12}</m> through a surface attached to the loop of circuit <m>C_1</m> in terms of the current in circuit <m>C_2</m> as
+			<men xml:id="eq-mutual-induct-3">
+				\Phi_{12} = \mathcal{M}_{12} I_2, 
+			</men>
+			</p>
+			<!-- <p></p> -->
+
+			<figure xml:id="fig-mutual-inductance-current-in-two">
+				<caption>
+				</caption>
+				<image source="./images/inductance/mutual-inductance-current-in-two.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+
+		<p>
+			We will not prove here, but you can try to prove that the two mutual inductances, <m>\mathcal{M}_{21}</m> and <m>\mathcal{M}_{12}</m>, must be equal, and we represent them by the same symbol <m>\mathcal{M}</m>.
+			<men xml:id="eq-mutual-induct-4">
+				\mathcal{M}_{12} = \mathcal{M}_{21} =\mathcal{M}. 
+			</men>
+			 
+		</p>
+		<p>
+			Since mutual inductance does not depend on which circuit we choose to send current through, we exploit this symmetry to do calculations for mutual inductance as illustrated below. 
+		</p>
+	</subsection>
+
+	<exercise xml:id="exp-Mutual-Inductance-of-a-Solenoid-Surrounded-by-a-Loop"><title> Mutual Inductance of a Solenoid Surrounded by a Loop </title>
+		<statement>
+			<p>
+				A solenoid loop <m>C_1</m> consists of <m>n</m> circular loops of radius <m>a</m> per unit length as shown in <xref ref="fig-mutual-induct-0"/>.
+			</p>
+			<sidebyside widths="65% 35%">
+				<p>
+					Another circuit <m>C_2</m> of a circular loop of radius <m>R</m> surrounds the solenoid such that the solenoid is at the axis of the second loop. Assume that the length of the solenoid is much greater than the radius of the solenoid so that we can use the infinite solenoid approximation.  
+				</p>
+				<figure xml:id="fig-mutual-induct-0">
+					<caption>
+					</caption>
+					<image source="./images/inductance/mutual-induct-0.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				(a) Find the mutual inductance of the two loops  from the flux of current in <m>C_1</m> through the area of a surface attached to the circuit <m>C_2</m>. Assume <m>a\lt \lt R</m>.
+			</p>
+			<p>
+				(b) <alert>(Calculus) </alert> Find the mutual inductance of the two loops from the flux of current in <m>C_2</m> through the area of a surface attached to the circuit <m>C_1</m>, and  demonstrate the two methods give rise to the same formula for the mutual inductance.  Assume <m>a\lt \lt R</m>.
+			</p>
+			
+
+		</statement>
+		<hint> <title> (a)</title> <p> Introduce current <m>I</m> in one circuit and find magnetic flux of this current through the other circuit.  </p> </hint>
+		<hint> <title> (b) </title> <p> Try to set up problem for flux through loops in range <m>z</m> and <m>z+dz</m> and then integrate.</p></hint>
+		<answer> <p> <m>\pi \mu_0 n a^2</m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) <alert> Calculation of mutual inductance by using current through the long solenoid.</alert> 
+			</p>
+			<sidebyside widths= "65% 35%">
+
+				<p>
+					We need magnetic flux through one circuit by current in the other circuits. Since the magnetic field of a long solenoid is easy to work with, we will think of an arbitrary current <m>I</m> in  the solenoid as shown in <xref ref="fig-mutual-induct-0-1"/>. This <m>I</m> will cancel out in the end, so we do not worry about its value.
+				</p>
+				<figure xml:id="fig-mutual-induct-0-1">
+					<caption></caption>
+					<image source="./images/inductance/mutual-induct-0-1.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Since, the solenoid is very long, the magnetic field is significant only inside the space of the solenoid. We use a cylindrical coordinate with the <m>z</m>-axis along the axis of the solenoid and the circular loop in the <m>xy</m>-plane. Let <m>s</m> be the distance of a point from the axis, i.e. the radial distance in the  <m>xy</m>-plane.  
+			</p>
+			<p>
+				The direction of the magnetic field for the current direction chosen in the figure is towards the positive <m>z</m> axis and has magnitude given by the following step function.
+				<me>
+					B_{\text{solenoid}} = 
+						\begin{cases}
+						\mu_0 n I  \amp\ \ s \lt a\\
+						0  \amp\ \ s \ge a
+						\end{cases}
+				</me>
+				We attach a circular surface to the circular wire <m>C_2</m> to find the flux through <m>C_2</m>. Let <m>\hat u_z</m> be the normal to the surface.  Since the magnetic field is zero outside the solenoid, the magnetic flux through <m>C_2</m> comes only from the field in the area of the circular loop that is within the cross-section of the solenoid.  This gives the following for the magnetic flux <m>\Phi_2</m> through <m>C_2</m>.
+				<me>
+					\Phi_2 = \mu_0 n I\times \pi a^2.
+				</me>
+				Dividing out the current gives the mutual inductance between the two circuits.
+				<me>
+					\mathcal{M} = \pi \mu_0 n a^2.
+				</me>
+				Although, this formula does not look like it is symmetric in switiching properties of circuits 1 and 2. In (b), you will see that you get exactly the same expression when you switch the current on in the loop and compute the flux in the solenoid.
+			</p>
+ 
+
+		</solution>
+
+		<solution> <title>(b)</title>
+			<p>
+				(b) <alert>Calculation of mutual inductance by using current through the circular loop.</alert>
+			</p>
+			<sidebyside widths="65% 35%">
+				<p>
+					Now, we imagine passing a current <m>I</m> through the loop around the solenoid so that a  current <m>I</m> as shown in <xref ref="fig-mutual-induct-0-2"/>.  Magnetic field of this current will pass everwhere, and in particular, through a surface attached to the wires of the solenoid. We will find a formula for this flux  by summing over the flux through each ring of the solenoid.
+				</p>
+				<figure xml:id="fig-mutual-induct-0-2">
+					<caption></caption>
+					<image source="./images/inductance/mutual-induct-0-2.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<sidebyside widths="65% 35%">
+				<p>
+					In the approximation <m>a\lt \lt R</m>, the magnetic field at a point in the solenoid will be approximately the same as the value at the center of solenoid coil.  Since the magnetic field of the current in the outer ring depends on the distance <m>|z|</m> from the center of the ring, we can set up magnetic flux <m>d\Phi_1</m> through loops of the solenoid between <m>z</m> and <m>z+dz</m>. 
+				</p>
+				<figure xml:id="fig-mutual-induct-0-a">
+					<caption></caption>
+					<image source="./images/inductance/mutual-induct-0-a.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Since, there are <m>n dz</m> loops of solenoid within a distance <m>dz</m>, the flux through the surface attached to this part of the solenoid will have <m>n dz</m> times flux through one loop at <m>z</m>.  Therefore, <m>d\Phi_1</m> is given as
+				<men xml:id="eq-mutual-ind-ex-1">
+					d\Phi_1 =  B_z^{\text{Loop}}\pi a^2ndz, 
+				</men>
+				where <m>B_z^{\text{Loop}}</m> is the <m>z</m>-component of the magnetic field of the current in the outer loop, which has been worked out in the section on Biot-Savart law.
+				<men xml:id="eq-mutual-ind-ex-2">
+					B_z^{\text{Loop}} = \frac{\mu_0}{2}\frac{IR^2}{\left(R^2+z^2\right)^{3/2}}\ \ \ \text{(on axis.)} 
+				</men>
+				Putting <m>B_z^{\text{Loop}}</m> from Eq. <xref ref="eq-mutual-ind-ex-2"/> into Eq. <xref ref="eq-mutual-ind-ex-1"/>  and integrating from <m>z=-\infty</m> to <m>z=\infty</m> gives the following. 
+				<me>
+					\Phi_1 = \pi\mu_0 n  a^2 I.
+				</me>
+				Dividing by current gives the mutual inductance 
+				<me>
+					\mathcal{M}^{\prime} = \pi\mu_0 n  a^2,
+				</me>
+				which is the same as the formula of mutual inductance found by sending a current through the solenoid instead of through the outer circular wire.
+			</p>
+
+
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="exp-Mutual-Inductance-of-Two-Circulr-Loops-with-a-Common-Center"><title> Mutual Inductance of Two Circulr Loops with a Common Center </title>
+		<statement>
+			<sidebyside widths="70% 30%">
+				<p>
+					A circuit <m>C_1</m> consists of a circular loop of radius <m>R_1</m>.  Another circuit <m>C_2</m> of a circular loop of radius <m>R_2</m> is placed so that their centers are on the same line and the two circles are in parallel planes as shown <xref ref="fig-mutual-induct-1"/>. Let <m>h</m> be the distance between the two centers. Find their mutual inductance. Assume <m>h \gg R_1</m> and <m>R_1\gg R_2</m>.
+				</p>
+				<figure xml:id="fig-mutual-induct-1">
+					<caption></caption>
+					<image source="./images/inductance/mutual-induct-1.png" width="70%"/>
+				</figure>
+ 			</sidebyside>
+			
+
+		</statement>
+		<hint> <p>  Use current in the larger loop. Also, make sure you take appropriate limits. </p> </hint>
+		<answer> <p> <m>\frac{\pi\mu_0}{2} \frac{R_1^2R_2^2}{h^3}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Note that to find the magnetic flux through any loop we need the magnetic field at all points of a surface attached to the loop. In the present situation, if we calculate flux <m>\Phi_{2}</m> of magnetic field of a current <m>I_1</m> in <m>C_1</m> through  a flat surface attached to loop <m>C_2</m>, all the points of this surface will be close to the axis of loop <m>C_1</m>.  Therefore, it is possible to assume that the magnetic field is uniform over the surface attached to the loop <m>C_2</m>.   With this assumption, flux  <m>\Phi_{2}</m> can be obtained without much effort.
+			</p>
+			<p>
+				Contrast this to the choice of a current in loop <m>C_2</m> and trying to calculate the magnetic flux through the loop <m>C_1</m>.  Since loop <m>C_1</m> is much bigger than the loop <m>C_2</m>, we cannot assume that the magnetic field at all points of a surface attached to <m>C_1</m> will be constant, which would make this calculation difficult.
+			</p>
+			<sidebyside widths="55% 10% 35%">
+			<p>
+				Proceeding with the first choice, we now write down the magnetic field <m>\vec B_1</m> at a point on the axis of <m>C_1</m>. This was calculated in an earlier chapter on Biot-Savart Law. For the current direction shown in figure and the <m>z</m> axis chosen, the magnetic field <m>\vec B_1</m> at the center of loop <m>C_2</m> is
+				<me>
+					\vec B_1 = \frac{\mu_0I_1R_1^2}{2\left( R_1^2 + h^2 \right)^{3/2}} \hat u_z.
+				</me>
+				Applying the criterion <m> h \gt \gt R_1</m> this simplifies to
+				<me>
+					\vec B_1 = \frac{\mu_0I_1R_1^2}{2 h^3} \hat u_z.
+				</me>
+			</p>
+			<p></p>
+			<!-- <figure xml:id="fig-mutual-induct-2">
+				<caption>
+					The magnetic flux of current <m>I_1</m> in circuit <m>C_1</m> through the flat surface <m>S_2</m> attached to circuit <m>C_2</m> is easier to computer because the magnetic field <m>\vec B_1</m> at the axis of loop <m>C_1</m> is known, which can be also be used for other points of the surface <m>S_2</m> since they are are close to the axis.
+				</caption> -->
+				<image source="./images/inductance/mutual-induct-2.png" width="70%"/>
+			<!-- </figure> -->
+ 
+			</sidebyside>
+			<p>
+
+				Assuming <m>\vec B_1</m> be the same at all points of the loop <m>C_2</m> and taking the direction of vector area elements of a flat surface attached to loop <m>C_2</m> in the positive <m>z</m> direction as well, we obtain the magnetic flux <m>\Phi_{2}</m> as
+				<me>
+					\Phi_{2} \approx     \frac{\mu_0I_1R_1^2}{2 h^3}         \times \pi R_2^2.
+				</me>
+				Factoring out <m>I_1</m> we find the mutual inductance
+				<me>
+					\mathcal{M} =\frac{\pi\mu_0}{2} \frac{R_1^2R_2^2}{h^3}.
+				</me>
+				Note that this expression is symmetric in <m>1\leftrightarrow2</m>. If we call this <m>\mathcal{M}</m> as <m>\mathcal{M}_{12}</m>, and <m>\mathcal{M}</m> we would have obtained by a current in loop <m>C_2</m> as <m>\mathcal{M}_{21}</m>, both being this same expression.
+				<me>
+					\mathcal{M}_{12} = \mathcal{M}_{21} = \frac{\pi\mu_0}{2} \frac{R_1^2R_2^2}{h^3}.
+				</me>				
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="exp-Mutual-Inductance-of-two-Solenoids-One-Inside-the-Other"><title> Mutual Inductance of two Solenoids, One Inside the Other </title>
+		<statement>
+			<p>
+				A small solenoid loop <m>C_1</m> of length <m>L_1</m>, <m>N_1</m> turns, and a circular cross-section of radius <m>R_1</m> is placed inside a very long solenoid loop of length <m>L_2</m>,  <m>N_2</m> turns, and a circular cross-section of radius <m>R_2</m>.   Calculate the mutual inductance of the two solenoids assuming <m>L_1\ll L_2</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  Try current in the larger solenoid and compute its flux through the smaller solenoid. </p> </hint>
+		<answer> <p> <m>\pi \mu_0 \frac{N_1 N_2R_1^2}{L_2}</m>.  </p> </answer>
+		<solution>
+			<sidebyside widths="65% 10% 25%">
+				<p>
+					<p>
+						Since the magnetic field of an infinitely long solenoid is known, we will use current in the longer solenoid and calculate the magnetic flux of this current through the smaller solenoid to figure out the mutual inductance of the two.
+					</p> 
+					<p>
+						We introduce a current <m>I</m> in the larget solenoid. This will produce a uniform magnetic field <m>\vec B_2</m> inside the solenoid that has the direction along the axis of the solenoid and the magnitude given by
+						<me>
+							\text{Magnitude: } B_{2} = \mu_0 \frac{N_2}{L_2} I.
+						</me>
+					</p>
+				</p>
+				<p></p>
+
+				<image source="./images/inductance/mutual-induct-3.png" width="70%"/> 
+			</sidebyside>
+			<p>
+ 
+
+				The magnetic flux <m>\Phi_{1}</m> through a surface attached to the coils of the  solenoid loop <m>C_1</m> can be approximated to equal <m>N_1</m> times the magnetic flux through one coil of solenoid <m>C_1</m>. 
+				<me>
+					|\Phi_{1}| = \mu_0 \frac{N_2}{L_2} I\times N_1\pi R_1^2.
+				</me>
+				Dividing out <m>I</m> gives  the following for the mutual inductance of the two solenoids.
+				<me>
+					\mathcal{M} =\pi \mu_0 \frac{N_1 N_2R_1^2}{L_2}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Mutual-Inductance-of-a-Loop-of-Wire-and-a-Solenoid"><title> Mutual Inductance of a Loop of Wire and a Solenoid </title>
+		<statement>
+			<p>
+				A single loop of wire of radius <m>a</m> is inside and coaxial with a cylindrical solenoid of length <m>L</m>, radius <m>b</m> and <m>n</m> turns per unit length, where <m>b\ll L</m>.  Call the solenoid circuit 1 and the loop circuit 2.  Find the mutual inductance.  Indicate where the assumption <m>b\ll L</m> is used in your derivation
+			</p>
+
+		</statement>
+		<hint> <p>  Think of solenoid as infinitely long solenoid. </p> </hint>
+		<answer> <p> <m>\mathcal{M} =  \pi \mu_0\:n\:  b^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				For calculational purpose we introduce current in one of the circuits whose magnetic field is easy to work out and use in the subsequent calculation.  Since <m>L\gg b</m>, we can assume solenoid to be infinitely long. An infinitely long solenoid has constant the magnetic field inside the solenoid and zero outside. 
+				<me>
+					B_\text{in} = \mu_0\:n\:I,
+				</me>
+				where <m>n</m> is the number of turns per unit length in the solenoid. Now, we need the flux of this magnetic field through the second circuit.  Since the <m>B</m> of the solenoid is perpendicular to the area of the external loop circuit and non-zero only within the solenoid area of cross-section, we will get the following for the flux through the second circuit.
+				<me>
+					\Phi_{\textrm{through 2}} = \mu_0\:n\:I\times \pi b^2.
+				</me>
+				Dividing this by <m>I</m> will give the mutual inductance.
+				<me>
+					\mathcal{M} =  \pi \mu_0\:n\:  b^2.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+</section>

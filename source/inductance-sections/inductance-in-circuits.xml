@@ -1,0 +1,640 @@
+<section xml:id="Inductance-in-Circuits"><title> Inductance in Circuits </title>
+	<introduction>
+		<p>
+			Every circuit with a changing current has an induced back EMF due to the self-inductance of the circuit. The back EMF opposes the change in current and therefore, slows down rise and drop in current levels. In this section we will study simple circuits with only inductance and resistance. In another chapter we will study AC circuits that have sinusoidally varying currents and include capacitance as well. 
+
+			<!-- The self-inductance of a circuit is considerably enhanced, if there is a solenoid in the circuit due to the quadratic multiplicative effect of the density of turns as we saw in the formula for the self-inductance of a solenoid with <m>n</m> turns per unit length in Eq. <xref ref="eq-self-induct-sol-1"/>. Furthermore, if there is magnetizable material, such as iron, in the core of the solenoid, the  self-inductance is even further enhanced. -->
+		</p>
+		<p><alert>Rising Current in an RL-Circuit</alert></p>
+		<p>
+			To study the effect of self-inductance, consider a circuit in which a source of constant EMF, such as a battery, is connected to a solenoid through a switch as shown in <xref ref="fig-solenoid-in-circuit-1"/>. 
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				Let there be no current in the circuit before the switch S is closed at say, <m>t=0</m>.  We will show here that current in the circuit does not come full strength right away - it takes some time before current builds up in the circuit. At what rate does the current rise? 
+			</p>
+			<p></p>
+			<figure xml:id="fig-solenoid-in-circuit-1">
+				<caption>
+					<!-- A solenoid connected to a battery and a switch. When switch is closed, the current rises from a value of zero to a steady value. At what rate does the current rise? --> 
+				</caption>
+				<image source="./images/inductance/solenoid-in-circuit-1.png" width="50%"/>
+			</figure>
+		</sidebyside>	
+
+
+		<p>
+			When the switch is closed, the current in the circuit will be increasing for some time.  The changing current will cause a change in the self magnetic flux through the circuit, which will induce a back EMF opposing the rising current.   Eventually, the current will reach a maximum steady value.  From that point on in time, the induced EMF will be zero since the self magnetic flux will be unchanging.
+		</p>
+		<p>
+			Using Calculus, we will work out Eq. <xref ref="eq-current-rise-in-RL-circuit-solution"/> below that tells us current at instant <m>t</m>.
+			<men>
+				I(t) = I_{\text{max}}\left(1-e^{-\frac{R}{\mathcal{L}}t} \right),
+			</men>
+			where
+			<m>
+				I_{\text{max}} = \mathcal{E}_0/R,
+			</m>
+			<m>R</m> is the net resistance in the circuit, and <m>L</m> is self-inductance of the circuit.	The plot  of current verus time in <xref ref="fig-circuit-RL-time"/>   shows that the current rises  exponentially with a characteristic time, given by the ratio of self-inductance <m>\mathcal{L}</m> and the resistance <m>R</m>.		 
+		</p>
+
+		<figure xml:id="fig-circuit-RL-time">
+			<caption>
+				Time dependence of current after switch is closed in circuit given in <xref ref="fig-solenoid-in-circuit-2"/>.
+			</caption>
+			<image source="./images/inductance/circuit-RL-time.png" width="60%"/>
+		</figure>
+
+ 
+
+		<p>
+			In time <m>\mathcal{L}/R</m> the current rises to approximately 63\%, or more precisely, <m>(e-1)/e</m> of the maximum.  The characteristic time given by quantity <m>\mathcal{L}/R</m> is called the <term> inductive time constant</term>  <m>\tau</m> of the circuit, and can be used to determine how quickly the circuit reaches the steady state.  
+			<me>
+				\tau = \mathcal{L}/R.
+			</me>
+			For instance, in a circuit with <m>1\, \text{k}\Omega</m>  resistance, and <m>1\text{ H}</m> self-inductance, the time-constant <m>\tau</m> will be <m>1\text{ msec}</m>.  For <m>R</m> in Ohms and <m>\mathcal{L}</m> in Henry, the time constant <m>\tau</m> will be in seconds. 
+			<me>
+				[\tau] = \frac{[\mathcal{L}]}{[R]} = \frac{\text{H}}{\Omega}=\frac{\Omega.\text{s}}{\Omega} = \text{s}.
+			</me>
+			
+
+			<!-- If you open the circuit in  <xref ref="fig-solenoid-in-circuit-1"/>, you will force the current to drop rapidly, inducing a large back EMF in a circuit with a gap.  This will result in jumping of charges across the open switch contact leading to a spark, which may be fatal depending on the value of <m>\mathcal{L}</m>. --> 
+		</p>
+		<p><alert>Turning off Current in an RL-Circuit</alert></p>
+		<p>
+			Opening a switch in an inductive circuit can be dangerous and must be done with care, since the current in such a circuit cannot be turned off from some value <m>I_{\text{max}}</m> to zero instantaneously.  To safely open a circuit with a large inductance, you will need to give the circuit some time for the current to decay. 
+		</p>
+
+		<sidebyside widths="50% 50%">
+
+			<p>
+				This is usually done by leaving a resistor in series with the inductor when switching off the power supply as shown in <xref ref="fig-solenoid-in-circuit-3"/>.  The current is diverted to a circuit without the power source.  
+			</p>
+
+			<figure xml:id="fig-solenoid-in-circuit-3">
+				<caption>
+					<!-- pening an inductive circuit safely requires allowing time for current to decay in a circuit without the power source. The switch makes connection with the dissipation circuit before the connection to the power source is broken with a special switch called make-before-break switch. --> 
+				</caption>
+				<image source="./images/inductance/solenoid-in-circuit-3.png" width="60%"/>
+			</figure>
+		</sidebyside>
+
+		<p>
+			Faraday flux rule for the new loop of current with no source in <xref ref="fig-solenoid-in-circuit-3"/> is
+			<me>
+				R I(t) = -\mathcal{L} \frac{dI}{dt},
+			</me>
+			with initial condition <m>I(0) = I_0</m>.  The solution of this equation is readily obtained.
+			<men xml:id="eq-current-in-RL-circuit-opening-circuit">
+				I(t) = I_0 e^{-\frac{R}{\mathcal{L}}t}.
+			</men>
+			The solution tells us that the current will decease in the circuit with the same time constant <m>\tau = \mathcal{L}/R</m> once the power source is disconnected as we found for the rise in the current when the power is turned on.
+		</p>
+
+
+
+
+	</introduction>
+
+	<subsection xml:id="subsection-energy-dissipation-in-RL-circuit"><title>Energy Dissipation in RL-circuit</title>
+		 
+		<p>
+			Energy in a circuit is dissipated in the resitors of the circuit. You have studied before that when a current <m>I</m> is flowing through a resitor of resistance <m>R</m>, the rate of energy dissipation is
+			<me>
+				P = VI,
+			</me>
+			where <m>V</m> is the voltage across the resistor. 
+			If current is a function of time, we call this instantaeous power and denote it by
+			<me>
+				P(t) = I(t)V(t).
+			</me> 
+			Now, in an LR-circuit, when we open the circuit safely by letting the current flow through a circuit with only a resitor <m>R</m> and an inductor <m>\mathcal{L}</m> in series, we will get
+			<me>
+				P(t) = I(t)V(t) = R I_0^2 e^{-2\frac{R}{\mathcal{L}}t},
+			</me>
+			where I have used <m>V=IR</m> and the formula for <m>I(t)</m> from Eq. <xref ref="eq-current-in-RL-circuit-opening-circuit"/>. Now, if we want to how much energy will be dissipated in <m>t=t_1</m> to <m>t=t_2</m>, we will need to integrate <m>P(t)</m>. This will give
+			<me>
+				\Delta U = \frac{1}{2}\mathcal{L}I_0^2\left( e^{-2\frac{R}{\mathcal{L}}t_1} - e^{-2\frac{R}{\mathcal{L}}t_2} \right).
+			</me>
+			If <m>t_2</m> is taken to be <m>\infty</m>, this would give a measure of energy present in the circuit at instant <m>t_1</m>.
+			<me>
+				U(t_1) = \frac{1}{2}\mathcal{L}I_0^2\,e^{-2\frac{R}{\mathcal{L}}t_1}.
+			</me>
+			At <m>t_1=0</m>, we can interpret that the circuit with steady current <m>I_0</m> has energy
+			<me>
+				U(t=0) = \frac{1}{2}\mathcal{L}I_0^2.
+			</me>
+		</p>
+	</subsection>
+
+	<subsection><title>(Calculus) Current After Closing Switch in an Inductive Circuit </title>	
+ 
+		<p>
+			We are interested in understanding how the current develops in <xref ref="fig-solenoid-in-circuit-1"/> from zero at the zero of time  to the steady current value. Since we are interested in the time-changing aspect of the circuit, we will use Faraday's flux rule to write the loop equation as opposed to the Kirchhoff's loop equation, which is valid only in steady circuits. For Faraday's flux rule we will need to evaluate a line integral of the electric field around the circuit.  
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				This is aided by redrawing the physical circuit given in <xref ref="fig-solenoid-in-circuit-1"/> as a conceptual circuit and displaying the resistance in the loop separately by a resistor of resistance <m>R</m> as shown in <xref ref="fig-solenoid-in-circuit-2"/>. <m>R</m> is the net resistance of everything in the circuit.
+			</p>
+			<p></p>
+			<figure xml:id="fig-solenoid-in-circuit-2">
+				<caption>
+					<!-- The equivalent circuit corresponding to the physical circuit in <xref ref="fig-solenoid-in-circuit-1"/>. The self-inductance of the circuit is displayed by the coil symbol for an inductor. -->
+				</caption>
+				<image source="./images/inductance/solenoid-in-circuit-2.png" width="60%"/>
+			</figure>
+		</sidebyside>
+
+ 
+		<p>
+			<!-- This resistance is the equivalent resistance of  the resistance in the wires of the coils and the connecting wires and the internal resistance of the battery. -->  
+			<xref ref="fig-solenoid-in-circuit-2"/> also shows a circuit element, called inductor, which has a zero resistance and zero electric field, and represents the net self-inductance of the circuit, which is mostly the self-inductance of the solenoid. We perform the line integral of electric field in the direction of the current shown in <xref ref="fig-solenoid-in-circuit-2"/> to obtain
+			<me>
+				\oint\vec E\cdot d\vec l = -\mathcal{E}_0 + I(t) R\ \ \text{(Going in the direction of the current)}.
+			</me> 
+			This must be equal to the negative of the rate of change of magnetic flux through the circuit, which is given by the following from the definition of self-inductance.
+			<me>
+				\frac{d\Phi_{\text{self}}}{dt} = \mathcal{L} \frac{dI}{dt}.
+			</me>
+			Therefore, we obtain the following equation for the current in the loop.
+			<men xml:id="eq-faraday-eqn-for-RL">
+				-\mathcal{E}_0 + I(t) R= -\mathcal{L}\frac{dI}{dt}.  
+			</men>
+			The solution of Eq. <xref ref="eq-faraday-eqn-for-RL"/>   with <m>I(0) = 0</m> will tell us how the current develops in the circuit. We have solved this type of differential equation in the context of charging of a capacitor.  The answer can be obtained readily by analogy.
+			<men xml:id="eq-current-rise-in-RL-circuit-solution">
+				I(t) = I_{\text{max}}\left(1-e^{-\frac{R}{\mathcal{L}}t} \right),
+			</men>
+			where
+			<me>
+				I_{\text{max}} = \frac{\mathcal{E}_0}{R}.
+			</me>
+			
+		</p>
+
+	</subsection>
+
+	<subsection><title>Inductors in Series and Parallel </title>
+		 
+		<p>
+			<alert>Series:</alert> When inductors are in series (<xref ref="fig-inductors-in-series"/>) the EMF induced across them are induced by the same current.  
+		</p>
+
+		<sidebyside widths="50% 10% 40%">	
+			<p>
+				 Therefore,  the induced EMF in each will be
+				<me>
+					\mathcal{E}_1 = L_1 \dfrac{dI}{dt},\ \ \mathcal{E}_2 = L_2 \dfrac{dI}{dt}.
+				</me>
+			</p>
+			<p></p>
+			<figure xml:id="fig-inductors-in-series">
+				<caption>
+				</caption>
+				<image source="./images/inductance/inductors-in-series.png" width="60%"/>
+			</figure>
+		</sidebyside>
+			 
+
+		<p>
+			The net EMF across the two inductors in series will be the sum of the two EMFs.
+			<me>
+				\mathcal{E} = \mathcal{E}_1 + \mathcal{E}_2 = \left( L_1 + L_2 \right)\: \dfrac{dI}{dt} = L_{\text{series}}\:\dfrac{dI}{dt}.
+			</me>
+			Thus,
+			<men>
+				L_{\text{series}} = L_1 + L_2.
+			</men>
+		</p>
+		
+		<sidebyside widths="55% 5% 40%">	
+			<p>
+				<alert>Parallel:</alert> In a parallel connections (<xref ref="fig-inductors-in-parallel"/>) the EMF across the two inductors will be same but will be generated by two different currents.
+				<md>
+					<mrow> \amp I = I_1 + I_2,</mrow>
+					<mrow>\amp  \mathcal{E}  = L_1 \dfrac{dI_1}{dt},\ \ \mathcal{E}  = L_2 \dfrac{dI_2}{dt}.</mrow>
+				</md>
+			</p>
+
+			<p></p>
+			<figure xml:id="fig-inductors-in-parallel">
+				<caption>
+				</caption>
+				<image source="./images/inductance/inductors-in-parallel.png" width="60%"/>
+			</figure>
+		</sidebyside>		
+		<p>
+			We can deduce the following relation between the EMF induced <m>\mathcal{E}</m> and net current <m>I</m>.
+			<me>
+				\mathcal{E} = \left( \dfrac{L_1L_2}{L_1 + L_2}  \right)\: I.
+			</me>
+			Therefore, we can define the equivalent inductance for parallel circuit as
+			<me>
+				L_{\text{parallel}} = \dfrac{L_1 L_2}{L_1 + L_2}.
+			</me>
+			We can write this in more familiar form.
+			<men>
+				\dfrac{1}{L_{\text{parallel}}} = \dfrac{1}{L_1} + \dfrac{1}{L_2}.
+			</men>
+		</p>			
+
+	</subsection>
+
+
+
+	<exercise xml:id="ex-Variation-of-Current-in-an-RL-Circuit"><title> Variation of Current in an RL-Circuit </title>
+		<statement>
+			<p>
+				A <m>12\text{-V}</m> battery is connected to a <m>10\text{-mH}</m> inductor and a <m>50\text{-}\Omega</m>  resistor at <m>t = 0</m>.  Find the following: (a) the inductive time constant, (b) the current at <m>t = 0</m>,  (c) the current as <m> t \rightarrow \infty</m>, (d) the time for the current to reach quarter of the maximum.
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use formula, (b) Continuity of <m>I</m>, (c) No back emf, (d) Inverse of exp is log.  </p> </hint>
+		<answer> <p> (a) <m>0.2\; \text{msec}</m>, (b) <m>0</m>, (c) <m>0.24\: \text{A}</m>, (d) <m>58\: \mu\text{s} </m>.  </p> </answer>
+		<solution> 
+			<p>
+				(a)
+				The time constant of an RL-circuit is
+				<me>
+					\tau = \dfrac{\mathcal{L}}{R} = \dfrac{10 \text{ mH}}{50\, \Omega} = 0.2\text{\, msec}.
+				</me>
+			</p>
+			<p>
+				(b)
+				Since a current through an inductor cannot change abruptly since that would imply infinite back EMF.  That means current through an inductor is a continuous function of time. Therefore, <m>I = 0</m> for <m>t\lt 0</m> would imply that <m>I=0</m> at <m>t=0</m>.
+
+			</p>
+			<p>
+				(c)
+				Current reaches a steady state as <m>t \rightarrow \infty</m>, and there will be no induced EMF in the circuit.  Setting <m>dI/dt = 0</m> in Faraday's flux rule yields, 
+				<md>
+					<mrow> I_{\text{max}} \amp = \mathcal{E}_0/R </mrow>
+					<mrow> \amp = 12\: \text{V}/50\: \Omega = 0.24\: \text{A}.</mrow>
+				</md>
+ 
+			</p>
+			<p>
+				(d)
+				To find the time to reach one-fourth of the maximum current we set <m>I(t) = \dfrac{1}{4}\,I_{\text{max}}</m> and  solve the resulting equation for <m>t</m>.
+				<me>
+					\frac{I_{\text{max}}}{4} = I_{\text{max}}\left( 1 - e^{-t/\tau}\right).
+				</me>
+				Simplifying this equation gives 
+				<me>
+					e^{-t/\tau} = 3/4.
+				</me>
+				Taking the natural logarithm of both sides yields 
+				<me>
+					t = -\tau\ln{(0.75)} = 58\: \mu\text{s}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<exercise xml:id="ex-Computing-Currents-in-an-RL-Circuit"><title> Computing Currents in an RL Circuit </title>
+		<statement>
+			<sidebyside widths="50% 50%">
+				<p>
+					The switch in the circuit given in <xref ref="fig-RL-circuit-1"/> is closed at <m>t=0</m>. Determine current through each resistor as <m>t \rightarrow \infty</m>.
+				</p>
+				<figure xml:id="fig-RL-circuit-1">
+					<caption><xref ref="ex-Computing-Currents-in-an-RL-Circuit"/></caption>
+					<image source="./images/inductance/RL-circuit-1.png" width="60%"/>
+				</figure>
+			</sidebyside>		
+
+		</statement>
+		<hint> <p>  When steady state is reached, you can ignore the inductance. </p> </hint>
+		<answer> <p> <m>I = 0.257\:\text{A}</m>, <m>I_1 = 0.171\:\text{A}</m>, <m>I_2 = 0.086\:\text{A}</m>  </p> </answer>
+		<solution> 
+			<p>
+				With time the circuit approaches steady state.  In the steady state, the current does not change, which means that there would be no self-inductance as <m>t\rightarrow \infty</m>.  
+			</p>
+			<sidebyside widths="50% 50%">
+				<p>
+					If there is no self-inductance, we can ignore the presence of inductor in the circuit.  The circuit simplifies to the resistors only as shown in <xref ref="fig-RL-circuit-2"/>.
+				</p>
+				<figure xml:id="fig-RL-circuit-2">
+					<caption></caption>
+					<image source="./images/inductance/RL-circuit-2.png" width="50%"/>
+				</figure>	
+			</sidebyside>
+			<p>
+				The equivalent circuit when steady state has reached can be readily solved for currents from techniques you have learned before.  The current through the battery is simple the voltage of the battery divided by the equivalent resistance of the circuit.
+			</p>
+			<p> The equivalent resistance is
+				<me>
+					R_{eq} = 20\Omega + \frac{40\Omega\times 80\Omega}{40\Omega+ 80\Omega} = 46.7\Omega.
+				</me>
+				Therefore, current through the battery is
+				<me>
+					I = \frac{12\:\text{V}}{46.7\:\Omega} = 0.257\:\text{A}.
+				</me>
+			</p>
+			<p>
+				Since a parallel circuit is a current divider, currents in the two branches are 
+				<md>
+					<mrow> \amp  I_1 =\left( \frac{80\Omega}{40\Omega+ 80\Omega}\right) 0.257\:\text{A} = 0.171\:\text{A}</mrow>
+				 	<mrow> \amp  I_2 =\left( \frac{40\Omega}{40\Omega+ 80\Omega}\right) 0.257\:\text{A} = 0.086\:\text{A}</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Numerical-RL-Circuit"><title> Numerical RL-Circuit </title>
+		<statement>
+			<p>
+				A <m>200\text{-}\Omega</m> resistor is connected to a <m>2\text{-mH}</m> inductor and a <m>10\text{-V}</m> source in series.  The voltage source is turned on at <m>t=0</m>, and the current starts to build.  
+			</p>
+			<p>
+				(a) Determine the value of steady current.  
+			</p>
+			<p>
+				(b) What is the voltage drop across the inductor when steady current flows through it?  
+			</p>
+			<p>
+				(c) What is the voltage drop across the resistor at steady state?  
+			</p>
+			<p>
+				(d) Determine the time it will take to build to 50% of the steady current in the circuit.  
+			</p>
+			<p>
+				(e) Determine the time it will take to build <m>(1-1/e)\times100\%</m> of the steady current.  
+			</p>
+			<p>
+				(f) Determine the time it will take to build to 90% of the steady current.
+			</p>
+
+		</statement>
+		<hint> <p>  USe solution of series RL-circuit. </p> </hint>
+		<answer> <p>  (a)  <m>5.0\times 10^{-2} \ \text{A}</m>, (b) <m>0</m>, (c) <m> 10\text{ V}</m>, (d)  <m>6.93\:\mu\text{s}</m>,  (e) <m>10\:\mu\text{s} </m>, (f)  <m>23\:\mu\text{s}</m>. </p> </answer>
+		<solution> 
+			<p>
+				(a)	As <m>t</m> becomes large we reach a steady current in the circuit given by voltage of the source and the net resistance.
+				<me>
+					I_{\text{max}} = \dfrac{V}{R} = 5.0\times 10^{-2}\:\text{A}.
+				</me>
+			</p>
+			<p>
+				(b)	 When current is steady, its derivative with time is zero. Hence, no voltage will drop across the inductor, assuming the inductor has only negligible resistance.
+				<me>
+					V_L = 0.
+				</me>
+			</p>
+			<p>
+				(c)	 Whe steady current is flowing, the circuit is like a DC circuit with resitor only. Hence, all voltage of the source must drop across the resistor.
+				<me>
+					V_R = 10\text{ V}.
+				</me>
+			</p>
+			<p>
+				(d)	The time constant of an RL-circuit is <m>\tau = \mathcal{L}/R = 10^5\text{ s}</m>. Therefore, current in the RL circuit rises according to the following
+				<md>
+					<mrow> I(t) \amp =  I_{\text{max}}\left(1 - e^{-t/\tau} \right)</mrow>
+					<mrow> \amp  =  0.05\:\text{A}\:\left(1 - e^{-10^5 t} \right). </mrow>
+				</md>
+				Therefore the time to get to <m>50\%</m> of the max will be given by <m>t</m> in the following equation.
+				<me>
+					\dfrac{I}{I_{\text{max}}} = 0.5 =  1 - e^{-10^5 t}.
+				</me>
+				Solving for <m>t</m> gives <m>t=6.93\:\mu\text{s}</m>.
+			</p>
+			<p>
+				(e)
+				<me>
+					I_{\text{max}}\left(1 - e^{-1} \right)  =   I_{\text{max}}\left(1 - e^{-10^5t} \right) \text{ gives }
+				</me>
+				This gives <m> t= 10\,\mu\text{s}.</m>
+			</p>
+			<p>
+				(f)	The time <m>t</m> will obey
+				<me>
+					0.9\:I_{\text{max}}\left(1 - e^{-1} \right)  =   I_{\text{max}}\left(1 - e^{-10^5 t} \right)
+				</me>
+				This gives
+				<me> 
+					t= 23 \mu\text{s}.
+				</me> 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise><title> Time for Current to Decay and Energy Dissipated in an RL-Circuit </title>
+		<statement>
+			<sidebyside widths="50% 50%">
+				<p>
+					A <m>100\text{-V}</m> source is connected to a 1 <m>\text{k}\Omega</m>  resistor and a 30 H coil and the current is allowed to reach maximum.  A switch is then thrown that disconnects the voltage source at <m>t=0</m>, but leaves the resistor and the inductor connected in another loop.   
+				</p>
+				<figure xml:id="fig-exer-induct-in-circuit-3">
+					<caption>
+					</caption>
+					<image source="./images/inductance/exer-induct-in-circuit-3.png" width="50%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				(a) Determine the time it will take for the current in the circuit to drop to 10% of its value at <m>t=0</m>. (b) How much energy is dissipated in that time?
+			</p>
+		</statement>
+		<hint> <p> (a) Set up an equation for unknown <m>t</m>.  </p> </hint>
+		<answer> <p> (a)  <m>69\ \text{ms}</m>, (b)  <m>4.95\ \text{mJ}</m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p> (a)	
+
+				Let us first find the time constant for the circuit since it will be needed in the problem.
+				<me>
+				 	\tau = \dfrac{L}{R} = \dfrac{30\:\text{H}}{1000\:\Omega} = 0.03\:\text{sec}.
+				</me>
+				The time for the current to drop to 10\% of max will obey the following equation.
+				<me>
+					0.1\:I_{\text{max}} = I_{\text{max}}\:e^{-t/\tau}.
+				</me>
+				This gives
+				<me>
+					t = -0.03\:\ln(0.1) = 69\:\text{ms}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b)	 We need <m>I_{\text{max}}</m> at <m>t=0</m>, therefore we seek
+				<me>
+				 	I_{\text{max}}= \dfrac{V}{R}  = \dfrac{100\:\text{V}}{1000\:\Omega} = 0.1\:\text{A}.
+				</me>
+				The energy dissipated is the difference of energy at <m>t=0</m> and at <m>t=0.069\: \text{sec}</m>.
+				<md>
+					<mrow> \Delta U \amp = \dfrac{1}{2}\: L\:\left[ I_{\text{max}}^2 - (0.1\: I_{\text{max}})^2\right]</mrow>
+					<mrow> \amp =  \dfrac{1}{2}\times 0.99\times 0.1^2 = 4.95\:\text{mJ}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<exercise xml:id="ex-Numerical-Study-of-Current-Rise-and-Magnetic-Energy-Storage-in-a-Coil"><title> (Calculus) Numerical Study of Current Rise and Magnetic Energy Storage in a Coil </title>
+		<statement>
+			<p>
+				A coil of resistance 0.2 <m>\Omega</m>   and inductance 0.4 mH is connected across a battery of voltage 12 volts and internal resistance 0.01 <m>\Omega</m>  and a switch S.  The coil has radius 5 cm and length 30 cm.  The switch is closed at <m>t =0</m>.
+			</p>
+			<p>
+				(a) Find the time it will take the current to reach 99% of its final value.  (b) Find the amount of energy transferred to the coils as heat during that time?  (c) How much energy is stored in the coils as magnetic field at <m>t=4</m> msec?  (d) (Calculus) At what rate is the current increasing at t = 4 msec? 
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Use series <m>RL</m> circuit equations. (b) Resistance of coils is important here. (c) Use magnetic energy formula. (d) Need <m>dI/dt</m> - you can use solution <m>I(t)</m> and take derivative. </p> </hint>
+		<answer> <p>  (a) <m>9.2 \times 10^{-4}\ \text{sec}</m>, (b) 0.6 J, (c) 0.54 J, (d) <m>4.1 \times 10^3\ \text{A/s}</m>. </p> </answer>
+		<solution> <title>(a)</title>
+			<p> (a)
+
+				Recall the solution of a series LR-circuit is
+				<me>
+					 I(t)  = I_{\text{max}}\:\left(1 - e^t/\tau \right), \ \ \ \ \ \ (1)
+				</me>
+				with 
+				<me>
+					I_{\text{max}} = \dfrac{V}{R},\ \ \tau = \dfrac{L}{R}.
+				</me>
+				Setting <m>I = 0.99\; I_{\text{max}}</m> in Eq. (1) gives
+				<me>
+					0.99  = 1 - e^{-t/\tau}.
+				</me>
+				Solving this equation for <m>t</m> we find
+				<md>
+					<mrow> t \amp = \tau \ln(100) </mrow>
+					<mrow> \amp = \dfrac{0.4\times 10^{-3}\:\text{H}}{0.2\:\Omega}\:\ln(100) = 9.2\times 10^{-4}\:\text{s}.</mrow>
+				</md>
+				For use in the second part of this exercise let us denote this time by letter <m>T</m>.
+				<me>
+					T \equiv 9.2\times 10^{-4}\:\text{s}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b) The energy spent in this time can be obtained by integrating the instantaneous power.
+				<md>
+					<mrow> W \amp = \int P dt = \int I^2 R dt</mrow>
+					<mrow> \amp = \dfrac{V^2}{R}\:\int_0^T\: \left( 1 - 2 e^{-Rt/L} + e^{-2Rt/L} \right)\: dt.</mrow>
+				</md>
+				The integrals are easy to do and the result comes out to be
+				<me>
+					W = \dfrac{V^2}{R}\left[ T + \dfrac{2L}{R}\left( e^{-RT/L} -1 \right) -\dfrac{L}{2R} \left( e^{-2RT/L} -1 \right) \right].
+				</me>
+				Putting in the numerical values we find <m>W = 0.6\:\text{J}</m>.
+			</p>
+		</solution>
+		<solution> <title>(c)</title>
+			<p>
+				(c) Here
+				<me>
+					I(\text{at }4\:\text{ms}) = \dfrac{12}{0.2}\left(1 - e^{-500\times 0.004}\right) = 52\:\text{A}.
+				</me>
+				Therefore,
+				<md>
+					<mrow> U \amp = \dfrac{1}{2}LI^2</mrow>
+					<mrow>\amp = \dfrac{1}{2}\times 0.4\times 10^{-3} \times 52^2 = 0.54\:\text{J}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution> <title>(d)</title>
+			<p>
+				(d) A direct calculation on (1) yields 
+				<me>
+					\frac{dI}{dt} =\frac{V}{R} \frac{R}{L}\: e^{-Rt/L}.
+				</me>  
+				Putting in the numerical values gives <m>4.1\times 10^3\: \text{A/s}</m>.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+ 
+	<exercise xml:id="ex-Voltage-Drop-Across-a-Coil-with-Changing-Current"><title> (Calculus) Voltage Drop Across a Coil with Changing Current </title>
+		<statement>
+			<p>
+				A large coil of inductance <m>200\text{ H}</m> is connected to a varying current source such that current passing through the coil is given by <m>I = 120\text{ A }\cos(400 t)</m>. Find the voltage across the inductor.
+			</p>
+
+		</statement>
+		<hint> <p>  Voltage reading is equal to the EMF induced. </p> </hint>
+		<answer> <p> <m>9.6\times 10^6\sin(400\:t) \text{ V}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The voltage across an inductor is equal to the EMF induced in the coil when current is varying with time. 
+				<md>
+					<mrow> V \amp = L\dfrac{dI}{dt}</mrow>
+					<mrow> \amp = -200\times 120\times 400\times \sin(400\:t) = 9.6\times 10^6\:\sin(400\:t)\:\text{V}. </mrow>
+				</md>
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Different-Time-Constants-in-Different-Branches-of-an-RL-Circuit"><title> (Calculus) Different Time Constants in Different Branches of an RL-Circuit </title>
+		<statement>
+
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					The switch in the given circuit is closed at <m>t=0</m>.  Find currents in the circuit as functions of time and describe how different currents in the circuit develop with time.
+				</p>
+				<p></p>
+				<figure xml:id="fig-RL-circuit-3">
+					<caption></caption>
+					<image source="./images/inductance/RL-circuit-3.png" width="50%"/>
+				</figure>
+			</sidebyside>
+
+		</statement>
+		<hint> <p>  Set up KCL and Farady equations in the circuit. Solve the resuting differential equation. </p> </hint>
+		<answer> <p> <m> I_1 = 2\text{ A}</m>, <m> I_2 = 2 A \left( 1 - e^{-t/4}\right)</m>, <m>I = 2\text{ A} + 2\text{ A } \left( 1 - e^{-t/4}\right)</m>.  </p> </answer>
+		<solution> 
+			<p>
+				We will apply Kirchhoff's Current Law (KCL) to the nodes and Faraday's flux rule to the loops since we have time-changing current and there is an inductor in the circuit.  If a loop does not contain an inductor then we will ignore the induced EMF due to the circuit since the induced EMF would be negligible for those circuits.
+			</p>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					We start with labelling nodes of the circuit, which are a, b, and c. We have added one more label, d, to help describe the loop on the left side. We then assign currents in the branches beginning with the current in the source, which we take from negative to the positive. 
+				</p>
+				<p> </p>
+				<image source="./images/inductance/RL-circuit-3a.png" width="50%"/>
+			</sidebyside>
+			<p>
+				We will need the directions of the electric field  in various elements of the circuit.  As shown in the figure, electric field is in the direction of the current in the resistors and opposite to the direction of current in the battery.  We assume that the solenoid is ideal in the sense that it has a zero resistance, or, the resistance of the solenoid is lumped with the other resistance in its branch.
+			</p>
+			<p>
+				Now, we can write relations among currents as follows.
+				<mdn>
+					<mrow xml:id="eq-two-time-const-1"> \amp \text{Currents at node a: }\ \ I = I_1 + I_2 </mrow>
+					<mrow xml:id="eq-two-time-const-2"> \amp \text{Loop a-c-d-a: }\ \ +6I_1 - 12 = 0 </mrow>
+				 	<mrow xml:id="eq-two-time-const-3"> \amp \text{Loop a-b-c-a: }\ \ +6I_2 - 6I_1= -24 \frac{dI_2}{dt} </mrow>
+				</mdn>
+				Note the last equation includes the induced EMF due to the changing of current <m>I_2</m> through the inductor.  These equations have to be solved together to find the three currents. Fortunately,  current <m>I_1</m> is independent of time as given by Eq. <xref ref="eq-two-time-const-2"/>.
+				<me>
+					I_1 = 2\ \text{A}.
+				</me>
+				This says that current <m>I_1</m> comes on instantaneously when the switch is turned on.  That is, the time constant for this current is zero and there is no delay on reaching the maximum current in this branch since we have ignored minute self-inductance in the loop without the coils.
+			</p>
+			<p>
+				To find <m>I_2</m>, we replace <m>I_1</m> in Eq. <xref ref="eq-two-time-const-3"/>  and rearrange the result to
+				<me>
+					\frac{dI_2}{dt} + \frac{1}{4} I_2 = \frac{1}{2}.
+				</me>
+				Note that this equation would have been obtained also from the loop a-b-c-d-a. The solution of this equation is
+				<me>
+					I_2 = 2 A \left( 1 - e^{-t/4}\right).
+				</me>
+				The current <m>I_2</m> in the branch on the right side in the circuit does not attain the maximum value of <m>2\text{ A}</m> instantaneously, but it takes time due to the inductor in this branch. Initially, current is zero in this branch at <m>t=0</m>. When the source attempts to force current through this branch, the back EMF opposes the rise in the current. The time constant for this current is <m>4\text{ sec}</m>.
+
+				Finally, the current through the battery is obtained by  using Eq. <xref ref="eq-two-time-const-1"/>.
+				<me>
+					I = 2\text{ A} + 2\text{ A } \left( 1 - e^{-t/4}\right)
+				</me>
+				The current through the battery rises instantaneously to <m>2\text{ A}</m>, but takes time to get to the final value of 4 A due to the inductor in the circuit.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+</section>

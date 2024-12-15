@@ -1,0 +1,224 @@
+<section xml:id="Two-Coupled-Pendula"><title> Coupled Motion of Two Pendula </title>
+	<introduction>
+		<p>
+			As an example of coupled systems, consider two identical pendulums of mass <m>m</m> and length <m>l</m>  coupled by a spring of spring constant <m>k</m>. 
+		</p>
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				We will denote angular diplacements of the two pendula by <m>\theta_A</m> and <m>\theta_B</m> and their horizontal displacements from respective equilibria by their own <m>x</m> coordinates, <m>x_A</m> and <m>x_B</m> as shown in the figure. You can show that for small angles, these <m>x</m> values are linearly related to the corresponding <m>\theta</m>'s.
+				<me>
+					x_A = l\, \theta_A,\ \  x_B = l\, \theta_B.
+				</me>
+			</p>
+			<p> </p>
+			<figure xml:id="fig-A-coupled-pendulum-system">
+				<caption> A coupled pendulum system. </caption>
+				<image source="./images/coupled-vibrations/coupled-pendulums.png"/>
+			</figure>
+		</sidebyside>
+		<p>
+			Even before we set up equations of motion of the two pendula, we can identify two special motions, called <term>normal modes</term> by starting the motions as follows.
+		</p>
+		<ol>
+			<li> 
+				<p> <alert>Normal Mode # 1: </alert>
+					Pull the two pendula to the same direction, say to the right, by the same amount, and then let go of them from rest as illustrated in <xref ref="fig-coupled-pendula-mode-1-motion"/>. Since the spring connecting the two bobs neither stretched nor compressed, each pendulum will oscillate as if other was not even there. The angular frequency of these oscillations is
+					<men>
+						\omega_1 = \sqrt{ \dfrac{g}{l} },
+					</men>
+
+					and the frequency will be
+					<men>
+						f_1 = \dfrac{\omega_1}{2\pi} = \dfrac{1}{2\pi}\sqrt{ \dfrac{g}{l} }.
+					</men> 
+					This is uncoupled motion of each pendulum. This is one of the <term>normal modes</term> of the two-pendulum system. Following figure illustrates the motion of this normal mode.
+				</p>
+
+				<figure xml:id="fig-coupled-pendula-mode-1-motion">
+					<caption>
+						The lower frequency mode of two coupled pendula with equal mass and equal length. When the pendulum bobs are displaced to the same amount in the same direction and let go from rest, the two bobs move oscillate with the same frequency and same phase.
+					</caption>
+
+					<image source="./images/coupled-vibrations/coupled-pendula-mode-1-motion.png" width="80%"/>
+				</figure>				
+				
+			</li>
+			<li> 
+				<p> <alert>Normal Mode # 2: </alert> 
+					This time pull the two pendula to the oposite directions, say the right one to the right and the left one to the left, by the same amount, and then let go of them from rest as illustrated in <xref ref="fig-coupled-pendula-mode-2-motion"/>. Since spring is now stretched, each pendulum will experience force from spring as well. Using a calculus-based calculation, you can show that the two bobs oscillate with the same frequency, although, they will be moving in opposite directions. Their angular frequency is
+					<men>
+						\omega_2 = \sqrt{ \frac{g}{l} + 2 \frac{k}{m} },
+					</men>
+					and frequency will be
+					<men>
+						f_2 = \frac{\omega_2}{2\pi} = \frac{1}{2\pi}\sqrt{ \frac{g}{l} + 2 \frac{k}{m} }.
+					</men> 
+					This is the second normal mode of the two-pendulum system.				
+				</p>
+				<figure xml:id="fig-coupled-pendula-mode-2-motion">
+					<caption>
+						The upper frequency mode of two coupled pendula with equal mass and equal length. When the pendulum bobs are displaced to the same amount in the <em>opposite direction</em> and let go from rest, the two bobs oscillate with the same frequency and but move in opposite directions.
+					</caption>
+
+					<image source="./images/coupled-vibrations/coupled-pendula-mode-2-motion.png" width="80%"/>
+				</figure>	
+
+			</li>
+		</ol>
+		<p>
+			<alert>General Solution: </alert> Generally, we are interesting in motion that will result when we start from any arbitrary displacement and initial velocities of the two bobs. This turns out to be just a linear combination of the two normal modes as we will derive in the section below.
+			<mdn>
+				<mrow xml:id="coupled-pendula-xA"> \amp x_A(t) = \left[ A \cos(\omega_1 t) + B \sin(\omega_1 t) \right] + \left[ C \cos(\omega_2 t) + D\sin(\omega_2 t) \right]</mrow>
+				<mrow xml:id="coupled-pendula-xB"> \amp x_B(t) = \left[ A \cos(\omega_1 t) + B \sin(\omega_1 t) \right] - \left[ C \cos(\omega_2 t) + D\sin(\omega_2 t) \right]</mrow>
+			</mdn>
+			The four constants <m>(A, B, C, D)</m> can be determined by stating the initial values of <m>x_A</m>, <m>x_B</m>, <m>v_A</m> and <m>v_B</m>, where these velocities are derivatives of these <m>x</m>. 
+			<mdn>
+				<mrow xml:id="coupled-pendula-vA"> \amp v_A(t) = \omega_1 \left[ -A \sin(\omega_1 t) + B \cos(\omega_1 t) \right] + \omega_2 \left[ - C \sin(\omega_2 t) + D\cos(\omega_2 t) \right]</mrow>
+				<mrow xml:id="coupled-pendula-vB"> \amp v_B(t) = \omega_1 \left[ -A \sin(\omega_1 t) + B \cos(\omega_1 t) \right] - \omega_2 \left[ -C \sin(\omega_2 t) + D\cos(\omega_2 t) \right]</mrow>
+			</mdn>
+
+		</p>
+
+	</introduction>
+
+
+	<exercise xml:id="Normal-Modes-of-a-Coupled-Pendulum-System"><title> Normal Modes of a Coupled Pendulum System </title>
+		<statement>
+			<p>
+				 Two <m>2\text{-m}</m> long pendulums of mass <m>0.4\text{ kg}</m> are connected by a spring of spring constant <m> 0.2\text{ N/m}</m>. Find the frequencies of the normal modes.
+			</p>
+
+		</statement>
+		<hint> <p>  Use the formulas for <m>f_1</m> and <m>f_2</m>. </p> </hint>
+		<answer> <p> <m> f_1 = 0.35\text{ Hz}</m>, and <m>f_2 = 0.39\text{ Hz} </m>. </p> </answer>
+		<solution> 
+			<p>
+				We use the formulas for <m>f_1</m> and <m>f_2</m>.
+				<md>
+					<mrow> f_1 \amp = \frac{1}{2\pi}\sqrt{g/l} = \frac{1}{2\pi}\sqrt{9.81/2} = 0.35\text{ Hz}.</mrow>
+					<mrow> f_2 \amp = \frac{1}{2\pi}\sqrt{g/l + 2 k/m}</mrow>
+					<mrow>  \amp = \frac{1}{2\pi}\sqrt{9.81/2 + 2\times 0.2/0.4 } = 0.39\text{ Hz}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="Motion-of-a-Coupled-Pendulum-System-Starting-Arbitrarily"><title> Motion of a Coupled Pendulum System Starting Arbitrarily</title>
+		<statement>
+			<p>
+				 Two <m>2\text{-m}</m> long pendulums of mass <m>0.4\text{ kg}</m> are connected by a spring of spring constant <m> 0.2\text{ N/m}</m>. One of the bobs, say A, is held at the equilibrium position and the other one, say B, is pulled aside by <m>1.6\text{ cm}</m> in the direction that stretches the spring. Assume that direction to be direction of positive <m>x</m> axis. Use symbols <m>x_A</m> and <m>x_B</m> for <m>x</m> displacements of the two bobs along <m>x</m> axis. 
+			</p>
+			<p>
+				Find the positions and velocities of the two bobs at and arbitrary instant <m>t</m>. Assume small displacement so that motion is mostly along <m>x</m>-axis.
+			</p>
+
+		</statement>
+		<hint> <p>  Use the formulas for <m>x_A</m>, <m>x_B</m>, <m>v_A</m>, and <m>v_B</m>. </p> </hint>
+		<answer> <p> 
+				<md>
+					<mrow> \amp x_A(t) = 0.8\text{ cm}\cos(2.21 t) + 0.8\text{ cm}\cos(2.43 t) </mrow>
+					<mrow> \amp x_B(0) = 0.8\text{ cm}\cos(2.21 t) - 0.8\text{ cm}\cos(2.43 t) </mrow>
+					<mrow> \amp v_A(0) = - 0.8\times 2.41 \text{ cm/s } \sin(2.41 t)  - 0.8\times 2.42 \text{ cm/s }\sin(2.42 t)   </mrow>
+					<mrow> \amp v_B(t) = -0.8\times 2.41 \text{ cm/s } \sin(2.41 t) + 0.8\times 2.42 \text{ cm/s } \sin(2.42 t).</mrow>
+				</md>	 
+			</p> </answer>
+		<solution> 
+			<p>
+				Use the formulas for <m>x_A</m>, <m>x_B</m>, <m>v_A</m>, and <m>v_B</m>. First we work out the normal mode angular frequencies that will go into these formulas.
+				<md>
+					<mrow> \omega_1 \amp = \sqrt{g/l} = \sqrt{9.81 /2 } = 2.21\text{ sec}^{-1}.</mrow>
+					<mrow> \omega_2 \amp = \sqrt{g/l + 2 k/m}= \sqrt{9.81/2 + 2\times 0.2/0.4  } = 2.43\text{ sec}^{-1}.</mrow>
+				</md>
+				Setting <m>t=0</m> in the general solutions give in <xref ref="coupled-pendula-xA"/>-<xref ref="coupled-pendula-vB"/> we get
+				Using these, we get the following general answers for displacements and velocities.
+				<md>
+					<mrow> \amp x_A(0) = A + C </mrow>
+					<mrow> \amp x_B(0) = A - C </mrow>
+					<mrow> \amp v_A(0) = 2.21 B  + 2.43 D</mrow>
+					<mrow> \amp v_B(t) = 2.21 B  - 2.43 D</mrow>
+				</md>
+				Initial conditions given in the problem statement are
+				<me>
+					x_A(0) = 0,\ \ x_B(0) = 1.6\text{ cm},\ \ v_A=0,\ \ v_B=0.
+				</me>
+				Therefore, we get
+				<me>
+					A = 0.8\text{ cm},\ \ B = 0,\ \ C= - 0.8\text{ cm},\ \ D=0.
+				</me>
+				This gives the following displacements and velocities for any <m>t</m>, where <m>x</m>'s are in <m>\text{cm}</m> and <m>v</m>'s in <m>\text{cm/s}</m>.
+				<md>
+					<mrow> \amp x_A(t) = 0.8 \cos(2.21 t) - 0.8 \cos(2.43 t) </mrow>
+					<mrow> \amp x_B(0) = 0.8 \cos(2.21 t) + 0.8 \cos(2.43 t) </mrow>
+					<mrow> \amp v_A(0) = - 0.8\times 2.21   \sin(2.21 t)  + 0.8\times 2.42 \sin(2.42 t)   </mrow>
+					<mrow> \amp v_B(t) = -0.8\times 2.21   \sin(2.21 t) - 0.8\times 2.42  \sin(2.42 t).</mrow>
+				</md>								
+			</p>
+		</solution>
+	</exercise>
+
+	<subsection xml:id="Calculus-Normal-Modes-of-a-Coupled-Pendulum"><title> (Calculus) Normal Modes of a Coupled Pendulum</title>
+		<p>
+			From figure <xref ref="fig-A-coupled-pendulum-system"/> we can write <m>x</m>-component of the equations of motion for the two pendula for small oscillations by working out <m>x</m>-component of force on each. If you work out the force on A you will get the following.
+			<me>
+				F_{A,x} = -mg\sin\theta_A + k (x_B - x_A)\approx -mg\theta_A + k (x_B - x_A),
+			</me>
+			in which we can replace <m>\theta_A</m> by <m>x_A/l</m> and ignore the approximate sign.
+			<me>
+				F_{A,x} = -\frac{mg}{l}\, x_A + k (x_B - x_A).
+			</me>
+			Similarly force on B is
+			<me>
+				F_{B,x} = -\frac{mg}{l}\, x_B - k (x_B - x_A).
+			</me>						
+			Then, from Newton's second law, we get
+			<mdn>
+				<mrow> m\frac{d^2x_A}{dt^2} =  -\frac{mg}{l}\, x_A + k (x_B - x_A) </mrow>
+				<mrow> m\frac{d^2x_B}{dt^2} =  -\frac{mg}{l}\, x_B - k (x_B - x_A)</mrow>
+			</mdn>
+			Notice that the acceleration of A depends on displacements of both A and B, and similarly, the acceleration of B depends on displacements of both A and B. We say A and B are a coupled system. They need to be solved simultaneously. This turns out to be a difficult problem. Instead of finding the general solution, namely <m>x_A(t)</m> and <m>x_B(t)</m>, directly, we find special solutions that correspond to the normal modes first, which we can use to find the general solution.
+		</p>
+		<p>
+			<alert>Normal Modes</alert>. Let us divide the equations of motion by <m>m</m> and use the following symbols.
+			<me>
+				\omega_0 \equiv \sqrt{g/l},\ \ \ \omega_c \equiv \sqrt{k/m},
+			</me>
+			Using these symbols, we can rewrite the equations of motions in the following more compact form. 
+			<mdn>
+				<mrow> \frac{d^2x_A}{dt^2} =  - (\omega_0^2 + \omega_c^2) x_A + \omega_c^2 x_B  </mrow>
+				<mrow> \frac{d^2x_B}{dt^2} =  - (\omega_0^2 + \omega_c^2) x_B + \omega_c^2 x_A </mrow>
+			</mdn>
+			Now let us look at the following combinations of <m>x_A</m> and <m>x_B</m>.
+			<mdn>
+				<mrow xml:id="x1-in-terms-of-xA-and-xB"> x_1 = x_A + x_B </mrow>
+				<mrow xml:id="x2-in-terms-of-xA-and-xB"> x_2 = x_A - x_B </mrow>
+			</mdn>
+			Taking two derivatives and then using the equations of motion for <m>x_A</m> and <m>x_B</m>, we find that variables <m>x_1</m> and <m>x_2</m> are decoupled from each other since their equations of motion are
+			<mdn>
+				<mrow> \amp\frac{d^2x_1}{dt^2} =  - \omega_0^2  x_1 </mrow>
+				<mrow> \amp\frac{d^2x_2}{dt^2} =  - (\omega_0^2 + 2 \omega_c^2) x_2 </mrow>
+			</mdn>
+			You can immediately recognize that these are just simple harmonic equations of motions, one for <m>x_1</m> and the other for <m>x_2</m>. The variable <m>x_1</m> oscillates with angular frequency <m>\omega_0</m> and variable <m>x_2</m> with frequency <m>\sqrt{\omega_0^2 + 2 \omega_c^2}</m>. We will denote these angular frequencis by <m>\omega_1</m> and <m>\omega_2</m>, respectively. Therefore, we can write the solution for the <m>x_1</m> and <m>x_2</m>	as follows.
+			<mdn>
+				<mrow> x_1(t) =  A_1 \cos(\omega_1 t) + B_1 \sin(\omega_1 t), </mrow>
+				<mrow> x_2(t) =  A_2 \cos(\omega_2 t) + B_2 \sin(\omega_2 t), </mrow>
+			</mdn>
+			where
+			<me>
+				\omega_1 = \sqrt{g/l},\ \ \omega_2 = \sqrt{ g/l +2 k/m},
+			</me>
+			and constants <m>A_1</m>, <m>B_1</m>, <m>A_2</m>, and <m>B_2</m> depend on the initial displacements and velocities.								
+		</p>
+		<p>
+			<alert>General Solution</alert>. Now, we use Equations <xref ref="x1-in-terms-of-xA-and-xB"/> and <xref ref="x2-in-terms-of-xA-and-xB"/> to get the coordinates of the two bobs.
+			<md>
+				<mrow> x_A \amp = \frac{x_1 + x_2}{2},</mrow>
+				<mrow> x_B \amp = \frac{x_1 - x_2}{2},</mrow>
+			</md>
+			where we can just plug in <m>x_1</m> and <m>x_2</m> found above. The four constants can be fixed by four initial values, namely, <m>x_A(0)</m>, <m>v_A(0)</m>, <m>x_B(0)</m>, and <m>v_B(0)</m>, where <m>v</m>'s are just time derivatives of the corresponding <m>x</m>. This is left as an exercise for the student.
+		</p>
+	</subsection>
+
+
+
+
+</section>

@@ -1,0 +1,260 @@
+<section xml:id="sec-Particle-in-a-Box"><title>Particle in a Box</title>
+	<introduction>
+		<p>
+			Particle in a box is the simplest model of a bound particle. We imagine particle to be confined in a one-dimensional box. A particle will be trapped inside such a box if potential is infinite <m>U</m> at both ends and zero inside the box as shown in <xref ref="fig-particle-in-a-box-potential"/>. It turns out that potential at the edge has to be infinite if particle is to be permanently trapped. Otherwise, particle will <q>tunnel</q> through a finite barrier using a mechanism called <term>quantum tunneling</term>.
+		</p>
+
+		<sidebyside widths = "50% 10% 40%">
+			<p>
+				<men xml:id="eq-particle-in-a-box-potential">
+					U = \left\{
+						\begin{array}{ll}
+							\infty \amp  \quad x \lt 0 \\
+							0 \amp  \quad 0\le x \le a\\
+							\infty \amp  \quad x \gt a.
+						\end{array}
+						\right.
+				</men>
+			</p>
+			<p></p>
+			<figure xml:id="fig-particle-in-a-box-potential">
+				<caption>
+				</caption>
+				<image source="./images/modern-physics/particle-in-a-box-potential.png" width="90%"/>
+			</figure>
+		</sidebyside>	
+
+		<p>
+			First thing to note is that since potential is infinite outside the box, wavefunction for the particle will be zero putside the box.
+			<mdn>
+				<mrow> \amp \psi(x) = 0 \ \ \ x \lt 0</mrow>
+				<mrow> \amp \psi(x) = 0 \ \ \ x \gt 0.</mrow>
+			</mdn>
+			Inside the box, wave function for energy <m>E</m> will satsisfy
+			<men xml:id="eq-particle-in-a-box-schrodinger">
+				\dfrac{d^2 \psi}{d x^2} = -\dfrac{2mE}{\hbar^2} \: \psi,\ \ \ 0 \le x \le a.
+			</men>			
+		</p>
+
+		<p>
+			Both standing wave and progressive waves are possible inside the box. Here, we solve for standing waves corresponding to specific values of energy <m>E</m>. These solutions are also called <term>stationary states</term>. They have angular frequency <m>\omega = E/\hbar</m> and wavenumber <m>k=\sqrt{2mE}/\hbar</m>.  
+			It is better to write Eq. <xref ref="eq-particle-in-a-box-schrodinger"/> as
+			<men xml:id="eq-particle-in-a-box-schrodinger-in-k">
+				\dfrac{d^2 \psi}{d x^2} = -k^2 \psi, 
+			</men>
+			where <m>k</m> is the wavenumber of the wave related to energy by
+			<men xml:id="eq-part-in-box-soln-0">
+				k^2 = \dfrac{2mE}{\hbar^2}.
+			</men>			
+			We seek a solution of this equation with zero value at the boundaries <m>x = 0</m> and <m>x = a</m>. IT is easy to verify that the solution will be a sine function of <m>kx</m> with some restrictions on <m>k</m>.
+			<men xml:id="eq-part-in-box-soln-1">
+				\psi(x) = A \sin(k x)\ \ \text{with}\ \ \psi(0) = 0 = \psi(a).
+			</men>
+			It automatically satisfies <m>\psi(0) = 0</m>.  To satisfy  <m>\psi(a) = 0</m>, we demand
+			<me>
+				A \sin(k a) = 0.
+			</me>
+			Since <m>A \ne 0</m>, we must have
+			<men xml:id="eq-part-in-box-soln-2">
+				k a = n \pi,\quad n = 0, \pm 1 , \pm 2, 3, \cdots. 
+			</men>
+			Now, if <m>n=0</m> we will have <m>k=0</m>, which would give <m>\psi(x) = 0</m>. That would mean the particle is not even in the box. Therefore, <m>n \ne 0</m>. Additionally, from Eq. <xref ref="eq-part-in-box-soln-0"/> energy <m>E</m> is related to <m>k^2</m>, therefore, both plus and minus values of <m>k</m> correspond to the same energy. Therefore, we will drop the negative integers. 
+			Labeling the allowed values of <m>k</m> by an integer index <m>n</m>, the allowed values of <m>k</m> will be
+			<men xml:id="eq-part-in-box-soln-3">
+				k_n  = \dfrac{n \pi}{a},\quad n = 1 ,  2, 3, \cdots.
+			</men>
+			Putting these values of <m>k_n</m> in Eq. <xref ref="eq-part-in-box-soln-0"/> we obtain the allowed values of energy, which will be labeled similarly with an index, <m>E_n</m> to be:
+			<me>
+				k_n = \dfrac{\sqrt{2mE_n}}{\hbar}\quad\longrightarrow\quad E_n = \dfrac{\hbar^2 k_n^2}{2m}. 
+			</me>
+			That is,
+			<men xml:id="eq-part-in-box-soln-4">
+				E_n = \dfrac{n^2 \pi^2\hbar^2  }{2ma^2},\quad n = 1 ,  2, 3, \cdots.
+			</men>
+			We can write this more compactly as
+			<men xml:id="eq-part-in-box-soln-4-1">
+				E_n = n^2 E_1,\quad n = 1 ,  2, 3, \cdots,  
+			</men>
+			with
+			<me>
+				E_1 = \dfrac{\pi^2\hbar^2 }{2ma^2} = \dfrac{h^2 }{8ma^2}.
+			</me>
+			The wave function <m>\psi</m> is also labeled by the same index <m>n</m>:
+			<men>
+				\psi_n(x) = A\sin(k_n x) = A \sin\left( \dfrac{n \pi x}{a}\right).
+			</men>
+			The constant <m>A</m> can be fixed by the normalization condition, which states that the probability of detecting the particle anywhere be <m>1</m>. Since the wave function is zero outside the box, we will have the following integral relation.
+			<men>
+				\int_{0}^{a} \psi_n^* \psi_n dx = 1.
+			</men>
+			Therefore,
+			<me>
+				\int_{0}^{a} A^2 \sin^2\left( \dfrac{n \pi x}{a}\right) dx = 1.
+			</me>
+			Taking <m>A^2</m> outside the integral, writing the square of the sine function in terms of the double angle of cosine, and then performing the integral immediately gives
+			<me>
+				A^2  = \dfrac{2}{a}.
+			</me>
+			Therefore, we will have <m>A = \pm\sqrt{2/a}</m>.  Since wave function is always used as square we drop the minus sign and use only the positive <m>A</m> here.  This gives us the normalized wave function.
+			<men>
+				\psi_n(x) = \sqrt{\dfrac{2}{a}}\:\sin\left( \dfrac{n \pi x}{a}\right).
+			</men>
+			<xref ref="fig-particle-in-a-box-prob-densities"/> shows the probability densities  corresponding to  the three lowest energy states of a particle in a box. 
+		</p>
+
+		<figure xml:id="fig-particle-in-a-box-prob-densities">
+			<caption>
+				The probability densities of the three lowest energy states of a particle in the box. The horizontal axis is the <m>x</m>-axis here. Recall that the probability to find the particle between <m>x</m> and <m>x+dx</m> is given by <m>|\psi|^2 dx</m>.
+			</caption>
+			<image source="./images/modern-physics/particle-in-a-box-prob-densities.png" width="100%"/>
+		</figure>
+
+		<p>
+			The lowest energy state, called the <term>ground state</term>, has no nodes between the walls; that is, there is no place inside the box where the probability of finding the particle is zero.  The ground state is also symmetric about the center of the box. The state with the next higher energy is the first excited state.  The wave function of the first excited state has one node between the walls and hence the probability density has a value zero at one point at an inside point of the box. The second excited state has two nodes and each successively higher energy state has one more node.
+		</p>
+		<p>
+			An important point of the energy levels of the particle in a box is the separation between the states varies as <m>n^2</m> of the states.  Thus, the separation of the energy levels <m>n = n_1</m> and <m>n=n_2</m> will be
+			<men>
+				E_{n_2} - E_{n_1} = \left( n_2^2 - n_1^2\right) E_1.
+			</men>
+ 		</p>
+ 	</introduction>
+
+
+	<exercise xml:id="ex-Energy-levels-of-a-particle-in-a-box"><title>Energy Levels of a Particle in a Box</title>
+
+		<statement>
+			<p>
+				Consider an electron in a one-dimensional box of size equal to two times the Bohr radius, which is <m>52.9</m> pm. What will be the energies of the lowest three states?
+			</p>
+		</statement>
+		<hint><p>
+			Use energy of startionary states.
+		</p></hint>
+		<answer><p>
+			<m>4.85\times 10^{-17}\textrm{J}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Let us first calcualte <m>E_1</m> and then use <m>E_n = n^2 E_1</m> to calculate the energies of other states.
+				<md>
+					<mrow>E_1 \amp = \dfrac{h^2}{8ma^2} </mrow>
+					<mrow> \amp= \dfrac{(6.63 \times 10^{-34} \textrm{J.s})^2}{8\times 9.11 \times 10^{-31}\textrm{kg} \times (2\times 52.9\times 10^{-12}\textrm{m})^2} = 5.39\times10^{-18}\textrm{J}.</mrow>
+				</md>
+				Therefore, <m>E_2</m> and <m>E_3</m> are
+				\[
+					E_2 = 4 E_1 = 2.16\times 10^{-17}\textrm{J},\quad\quad E_3 = 9 E_1 = 4.85\times 10^{-17}\textrm{J}.
+				\]
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Where-is-the-Particle-in-the-Box-when-in-the-Ground-State"><title>Where is the Particle in the Box when in the Ground State</title>
+
+		<statement>
+			<p>
+				Suppose the particle is in the ground state, what is the probability that the particle will be on the left one-third of the box?
+			</p>
+		</statement>
+		<hint><p>
+			Integrate probability density.
+		</p></hint>
+		<answer><p>
+			<m> 0.21</m>.
+		</p></answer>
+		<solution>
+			<p>
+				The probability that the particle is between <m>x</m> and <m>x+dx</m> is given by
+				\[
+					dP = |\psi_1(x)|^2 dx.
+				\]
+				The left one-third of the box is between <m>x=0</m> and <m>x= a/3</m>.  Therefore, we should integrate from <m>x=0</m> to <m>x=a/3</m> to obtain the required probability.
+				<md>
+					<mrow> \amp  = \int_0^{a/3} \dfrac{2}{a} \sin^2\left( \dfrac{ \pi x}{a}\right) dx 
+				  = \dfrac{1}{a} \int_0^{a/3} \left[ 1 - \cos\left( \dfrac{2 \pi x}{a}\right) \right]\: dx</mrow>
+					<mrow> \amp\ \ \   = \dfrac{1}{a} \left[ \dfrac{a}{3} - \dfrac{a}{2 \pi}\sin\left( \dfrac{2 \pi}{3}\right) \right] = \dfrac{1}{3} - \dfrac{\sqrt{3}}{4 \pi} \approx 0.21.</mrow>
+				</md>
+				The probability is not one-third. The particle in the ground state is more likely to be in the middle-third than the thirds near the walls. Question to student: What will be the probability for the particle to be in the middle third of the box when in the ground state? Note: no additional calculation is necessary.  Ans: 0.58.
+			</p>
+		</solution>
+	</exercise>
+ 
+ 
+	<exercise xml:id="ex-Where-is-the-Particle-in-the-Box-when-in-the-First-Excited-State"><title>Where is the Particle in the Box when in the First Excited State?</title>
+
+		<statement>
+			<p>
+				Suppose the particle is in the first excited state, what is the probability that the particle will be on the left one-third of the box?
+			</p>
+		</statement>
+		<hint><p>
+			Integrate probability density.
+		</p></hint>
+		<answer><p>
+			<m>0.47</m>.
+		</p></answer>
+		<solution>
+			<p>
+				I have done the probability calculation for the ground state. In this problem we need to do the same steps for the first excited state <m>\psi_2</m>. The probability that the particle is between <m>x</m> and <m>x+dx</m> is given by
+				<me>
+					dP = |\psi_2(x)|^2 dx.
+				</me>
+				The left one-third of the box is between <m>x=0</m> and <m>x= a/3</m>.  Therefore, we should integrate from <m>x=0</m> to <m>x=a/3</m> to obtain the required probability.
+				<md>
+					<mrow>\amp \int_0^{a/3} \dfrac{2}{a} \sin^2\left( \dfrac{ 2\pi x}{a}\right) dx 
+				  = \dfrac{1}{a} \int_0^{a/3} \left[ 1 - \cos\left( \dfrac{4 \pi x}{a}\right) \right]\: dx</mrow>
+					<mrow> \amp \ \ \  = \dfrac{1}{a} \left[ \dfrac{a}{3} - \dfrac{a}{4 \pi}\sin\left( \dfrac{4 \pi}{3}\right) \right] = \dfrac{1}{3} + \dfrac{\sqrt{3}}{4 \pi} \approx 0.47.</mrow>
+				</md>
+				The probability is more than one-third. The particle in the first excited state is more likely to be in the left-third and the right-third than the middle third.  Question to student: What will be the probability for the particle to be in the middle third of the box when in this state? Note: no additional calculation is necessary.  Ans: 0.06.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+TODO:
+
+\begin{exercise}
+An electron is in the lowest energy state of a confined one-dimensional space of width $a$ with infinite potential walls on the two side. The walls are moved in slowly to a new width of $\frac{1}{2}a$.  What would be the energy of the electron in the lowest state compared to its energy at the start? 
+\end{exercise}
+
+\begin{exercise}
+An electron (mass, $m = 9.1\times 10^{-31}$ kg) is placed in a confined one-dimensional space of width $a = 0.5$ nm with infinite potential walls on the two sides.  (a) What are the energies corresponding to the four lowest states?  (b) The electron is in a state that has one node in the middle of the potential well.  What is the (i) energy of the electron and (ii) the  time-independent wave function of the electron when in this state?  (c) How much energy will be needed to excite this electron to the next higher level?  (d) What is the wavelength of the photon that will be released when the electron in (b) makes a transition to the lowest energy state?
+\end{exercise}
+
+
+\begin{exercise}
+We wish to prepare an electron with energy 10 eV in $n=2$ state of a one-dimensional confined infinite potential well.  What should be the width of the potential well?
+\end{exercise}
+
+
+\begin{exercise}
+An electron is confined in a one-dimensional infinite potential well of width $a = 100$ pm.  (a) What is the uncertainty in its position?  (b) What is the uncertainty in its momentum? (c) If momentum is equal to the uncertainty in momentum, what is the lowest kinetic energy of the electron?  (d) What energy level of the well does this energy correspond to?
+\end{exercise}
+
+\begin{exercise}
+An electron is in a one-dimensional potential well of width $a$  with infinite potential walls on the two sides. The electron is in the lowest energy state.  What is the probability that the electron will be in (a) the right half of the well, (b) the right one-quarter of the well, (c) the right one-fifth of the well? 
+\end{exercise}
+
+\begin{exercise}
+An electron is in a one-dimensional potential well of width $a$  with infinite potential walls on the two sides. The electron is in the first excited state.  What is the probability that the electron will be in (a) the right half of the well, (b) the right one-quarter of the well, (c) the right one-fifth of the well? 
+\end{exercise}
+
+\begin{exercise}
+An electron is in a one-dimensional potential well of width $a$  with infinite potential walls on the two sides. The electron is in the second excited state.  What is the probability that the electron will be in (a) the right half of the well, (b) the right one-quarter of the well, (c) the right one-fifth of the well? 
+\end{exercise}
+			
+ 
+ 
+
+
+<!-- 		<figure xml:id="fig-deBroglie-Bohr-orbits">
+			<caption>
+				 The figure shows de Broglie wave pictures for several Bohr orbits. The picture was generated using the program at <url href="http://demonstrations.wolfram.com/BohrsOrbits/" visual="demonstrations.wolfram.com">Bohr's Orbits</url>.
+			</caption>
+			<image source="./images/modern-physics/deBroglie-Bohr-orbits.png" width="60%"/>
+		</figure> -->				
+	
+
+ 
+
+</section>

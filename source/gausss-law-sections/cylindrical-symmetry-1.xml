@@ -1,0 +1,596 @@
+<section xml:id="Electric-Field-for-Cylindrical-Symmetry"><title> Electric Field for Cylindrical Symmetry </title>
+	<subsection><title> Cylindrical Symmetry </title>
+
+		<p>
+			<xref ref="fig-gauss-law-cylindrical-symmetry"/> below illustrates conditions satisfied by charge distribution that has a cylindrical symmetry. Basically, you should look for following four conditions when you are evaluating whether a given charge distribution has cylindrical symmetry.
+			<ol>
+				<li> Charges are distributed in an infintiely long cylindrical shape. </li>
+				<li> Charge density must not vary along the axis.</li>
+				<li>  Charge density must not vary with direction in the plane perpendicular to the axis. </li>
+				<li> Charge density can depend upon the distance from the axis of the cylinder. </li>
+			</ol>			
+		</p>
+
+		<!-- <p>
+			<xref ref="fig-gauss-law-cylindrical-symmetry"/> 
+			below illustrates distributions in a cylindrical shape that do and do not have cylindrical symmetry. Notice that just because charges reside on a cylinder does not imply cylindrical symmetry.
+		</p> -->
+		<figure xml:id="fig-gauss-law-cylindrical-symmetry">
+			<caption>
+				Cylindrical symmetry.  To determine if a given charge distribution has a cylindrical symmetry, you look at the cross-section of an <alert>infinitely long cylinder</alert>. If the charge density does not depend on the polar angle of the cross-section or along the axis, then you have a cylindrical symmetry. In (a) charge density is constant in the cylinder, in (b) upper half of the cylinder has a different charge density that the lower half, in (c) left half of the cylinder has a different charge density than the right half, and in (d) charges are constant in different cylindrical rings but the density does not depend on the polar angle. Cases (a) and (d) have cylindrical symmetry, and, (b) and (c) do not.
+			</caption>
+
+			<image source="./images/gausss-law/gauss-law-cylindrical-symmetry.png" width="90%"/>
+		</figure>
+		<!-- <p>
+			Cylindrical symmetry is illustrated in <xref ref="fig-gauss-law-cylindrical-symmetry"/>. 
+			A charge distribution has a cylindrical symmetry if the following two conditions are satisfied:
+			<ol>
+ 
+				<li> The charge is distributed in a cylindrical shape, either as a volume of a cylinder or as a cylindrical shell, extending to infinity in both directions along its axis. </li>
+
+				<li> The charge density may only depend upon the distance <m> s</m> from the axis and must not vary along the axis or with direction in the plane perpendicular to the axis. </li>
+			</ol>
+			<xref ref="fig-gauss-law-cylindrical-symmetry"/> shows four situations in which charges are distributed in a cylinder. 
+		</p>
+		<figure xml:id="fig-gauss-law-cylindrical-symmetry"> 
+			<caption>
+				Cylindrical symmetry.  To determine if a given charge distribution has a cylindrical symmetry, you look at the cross-section of an <alert>infinitely long cylinder</alert>. If the charge density does not depend on the polar angle of the cross-section or along the axis, then you have a cylindrical symmetry. In (a) charge density is constant in the cylinder, in (b) upper half of the cylinder has a different charge density that the lower half, in (c) left half of the cylinder has a different charge density than the right half, and in (d) charges are constant in different cylindrical rings but the density does not depend on the polar angle. Cases (a) and (d) have cylindrical symmetry, and, (b) and (c) do not.
+			</caption>
+			<image source="./images/gausss-law/gauss-law-cylindrical-symmetry.png" width="90%"/>
+		</figure>
+		<p>
+			A uniform charge densityin a straight infinitely long wire has a cylindrical symmetry, and so does an infinitely long cylinder with constant charge density.  
+		</p>
+		<p>
+			A system with concentric cylindrical shells each with uniform charge densities, albeit different in different shells, as in <xref ref="fig-gauss-law-cylindrical-symmetry"/>(d) also has a cylindrical symmetry <em>if they are infinitely long</em>. 
+		</p>
+		<p>
+			A cylinder that has different charge densities along its length, e.g. a charge density <m> \rho_1</m> for <m> z>0</m> and <m> \rho_2\ne\rho_1</m> for <m> z\lt 0</m>, does not have a cylindrical symmetry.
+		</p>
+		<p>
+			A cylinder in which charge density varies with the direction does not have cylindrical symmetry, e.g. a charge density <m> \rho_1</m> for <m> 0\le\theta \lt \pi</m> and <m> \rho_2\ne\rho_1</m> for <m> \pi\le\theta \lt 2\pi</m>.  
+		</p>
+
+
+		<p>
+			The <alert>best way to tell whether a system has a cylindrical symmetry</alert> is to first make sure that the charge density does not vary along the axis of the cylinder, and then you look at the cross-section map of the charge density.  If the charge density is a function only of the distance from the axis, then the system has a cylindrical symmetry.
+
+		</p> -->
+	</subsection>
+	<subsection><title> Consequences of Cylindrical Symmetry </title>
+
+
+		<p>
+			When a charge distribution has cylindrical symmetry, there is no preferred direction in the cross-section plane of the cylinder and there is no dependence along axis.  Therefore, the magnitude of the electric field of a cylindrical symmetric situation can only be a function of the distance from the axis of the cylinder.
+		</p>
+		<sidebyside widths="55% 10% 35%">
+			<p>
+				The direction of electric field must be perpendicular to the axis. We can see this easily from the way we found electric field of a charged wire in the last chapter. Every charge has a pairing charge in the cylinder that will cancel components of the electric field that are not perpendicular to the axis of the cylinder.
+			</p>
+			<!-- <figure xml:id="fig-gauss-law-cylindrical-symmetry">
+				<caption>
+					 
+				</caption> -->
+			<p></p>
+			<image source="./images/gausss-law/direction-of-e-field-in-cylindrical-symmetry.png" width="90%"/>
+		</sidebyside>
+		<!-- </figure> -->
+		
+
+		<!-- <p>
+			When a charge distribution has cylindrical symmetry, there is no preferred direction in the cross-section plane of the cylinder. Furthermore, since charges in a cylindrical symmetric sitatuon extend  uniformly over the entire infinitely long axis, say the <m>z</m> axis, there is no way to tell one <m>z</m> from another. 
+		</p>
+		<p>
+			Therefore, the magnitude of the electric field of a cylindrical symmetric situation can only be a function of the distance from the axis of the cylinder. 
+		</p> -->
+		<p>
+			These observations about the expected electric field are best cast in the cylindrical coordinate system illustrated in <xref ref="fig-gauss-cylindrical-coordinates"/>. We use <m>z</m> for the axis and polar coordinates <m>(s,\ \phi) </m> for the radial and azimuthal angles in the <m>xy</m>-plane. We use letter <m>s</m> rather than <m>r</m> for the radial distance, since we would reserve <m>r</m> for spherical radial distance, not radial distance in the <m>xy</m>-plane.
+		</p>
+		<figure xml:id="fig-gauss-cylindrical-coordinates">
+			<caption>
+				The cylindrical coordinates consist of polar coordinates <m> (s,\ \phi)</m> in the cross-section plane of the cylinder and a Cartesian axis <m>(z)</m> along the axis of the cylinder.
+			</caption>
+			<image source="./images/gausss-law/cylindrical-coordinates.png" width="60%"/>
+		</figure>
+		<p>
+			Using cylindrical coordinates, we can assert that in case of cylindrical symmetry, the magnitude of electric field at a point will <em> a function on <m>s</m> only </em>.
+			<me>
+				E_P = E_P(s),
+			</me>
+			and the direction will be along the radial line to the axis, either away from the axis or towards the axis, depending upon the net positive or negative charge. We can include the direction information if we use a unit vector pointed away from the axis. We denote this unit vector by <m>\hat u_s</m>. Then, electric field at P in vector form will be
+			<men>
+				\vec E_P = E_P(s) \hat u_s.
+			</men>
+		</p>
+
+<!-- 		<sidebyside widths="55% 5% 40%">
+ 
+
+			<p>
+				 -->
+
+
+				<!-- Therefore, all cylindrically symmetric cases, the electric field <m>\vec E_P</m> at any point P must be directed perpendicular to the axis of the cylinder, and the magnitude can only depend on the distance <m>s</m> from the axis. We can use a unit vector <m>\hat u_s</m> to denote the direction as shown in the figure. -->
+				<!-- <xref ref="fig-gauss-law-cylindrical-symmetry-2"/>. -->
+				<!-- <men>
+					\vec E_P = E_P(s) \hat u_s.
+				</men> -->
+<!-- 			</p>
+ 
+			<p> </p>
+			<image source="./images/gausss-law/gauss-law-cylindrical-symmetry-2.png" width="30%"/>
+		</sidebyside> -->
+
+
+		<!-- <figure xml:id="fig-gauss-law-cylindrical-symmetry-2">
+			<caption> 
+				Electric field in a cylindrically symmetric situation depends only on the distance from the axis.  The direction of the electric field is pointed away from the axis for positively charged and towards the axis for negative charges.
+			</caption>
+			<image source="./images/gausss-law/gauss-law-cylindrical-symmetry-2.png" width="30%"/>			
+		</figure> -->
+	</subsection>
+
+
+	<subsection><title>  Electric Field of a Uniformly Charged Cylinder </title>
+
+ 		<p>
+ 			Consider a uniformly charged cylinder with volume charge density
+ 			<me>
+ 				\rho = \begin{cases}
+			 			\rho_0 \amp 0\le s \le R\\
+			 			0 \amp s \gt R.
+			 			\end{cases}
+ 			</me> 			
+ 		</p>
+
+ 		<sidebyside widths="60% 5% 35%">
+	 		<p>
+
+	 			There are two types of points in this space, where we will find electric field.
+	 			<ol>
+	 				<li> a point <m>P_\text{out} </m> outside the cylinder,  <m> s \gt R</m>,  and </li>
+	 				<li> a point <m>P_\text{in} </m> inside the sphere, <m> s \le R</m>. </li>
+	 			</ol>
+	 		</p>
+	 		<p> </p>
+
+ 		
+ 			<image source="./images/gausss-law/gauss-unif-charged-cylinder-setup.png" width="70%"/>
+ 		</sidebyside>		
+ 		<p>
+ 			The magnitude of electric field varies with distance by two different rules, one for points inside the sphere and another for point outside the sphere as we will derive below.
+ 			<me>
+ 				E = \begin{cases}
+			 			 \dfrac{\rho_0}{2\epsilon_0}\, s\amp  0\le s \le R,\\
+			 			\dfrac{\rho_0}{2\epsilon_0}\, \dfrac{R^2}{s}\amp   s \gt R.
+			 			\end{cases}
+ 			</me> 
+ 			<xref ref="fig-gauss-law-e-field-uniform-cylinder"/> shows a drawing of this function. 			
+ 		</p>
+ 		<figure xml:id="fig-gauss-law-e-field-uniform-cylinder">
+ 			<caption>
+ 				Electric field of a uniformly charged non-conducting cylinder increases inside the cylinder to a maximum at the surface, and then decreases as <m>1/s</m>. The dashed line shows <m>1/s^2</m> for comparison of how rapidly electric field of a charged sphere drops with distance, which goes as <m>1/r^2</m>. Here <m>s</m> is in units of <m>R</m> and <m>E</m> has been scaled to have value <m>1</m> at <m>s=1</m>.
+ 			</caption>
+ 			<image source="./images/gausss-law/gauss-law-e-field-uniform-cylinder.png" width="70%"/>
+ 		</figure>
+
+
+ 		<subsubsection> <title> Deriving Electric Field at an Outside Point by Gauss's Law</title>
+
+ 			<p><alert>Gaussian Surface and Flux</alert></p>
+ 			<p>
+ 				As before, I will call electric field at an outside point as <m>E_\text{out}</m>. To show its functional dependence I will write the dependence on cylindrical radial distance <m>s</m> explicitly.
+ 				<me>
+ 					E_\text{out} = E_\text{out}(s),
+ 				</me>
+ 
+ 			</p>
+ 			<p>
+				Since in Gauss's law, electric field is inside an integral over a closed surface, we seek a Gaussian surface that contains point <m>P_\text{out}</m>, where magnitude of electric field will not change over the surface. A cylindrical surface about the same axis is a good candidate to explore.
+ 			</p>
+ 
+	 		<p>
+	 			However, unlike the situation with spherical surface, a cylindrical surface has two types of surfaces as shown in <xref ref="fig-gauss-law-surface-for-uniform-cylinder-outside-point"/>- (1) round surface at equal <m>s</m> all around, and (2) the two flat ends, where <m>s</m> goes from zero to the radius of the cylindrical surface. 
+	 		</p>
+ 
+	 		<figure xml:id="fig-gauss-law-surface-for-uniform-cylinder-outside-point">
+	 			<caption>
+	 				The two types of surfaces make up the closed cylinderical Gaussian surface.
+	 			</caption>
+	 			<image source="./images/gausss-law/gauss-law-surface-for-uniform-cylinder-outside-point.png" width="80%"/>
+	 		</figure>
+	 		<sidebyside widths="70% 5% 25%">
+		 		<p>
+		 			The flux in Gauss's law will be a sum of the fluxes on all of these surfaces combined. Fortuantely, the fluxes of the flat ends for cylindrical symmetry electric fields are zero due to the fact that direction of the electric field is along the surface and hence electric field lines do not pierce these surfaces. Another way to look at it is to note that dot product of the area vector and electric field is zero on these flat ends.
+	 
+		 		</p>
+		 		<p></p>
+		 		<image source="./images/gausss-law/gauss-law-e-field-cylinder-flat-ends-zero-flux.png" width="80%"/>
+		 	</sidebyside>
+	 		<sidebyside widths="60% 5% 35%">
+			 	<p>
+			 		The flux through the circular part of the cylinder is quite easy to work out since we magnitude of electric field is same at all points, which are  denoting by <m>E_\text{out}(s)</m>, and the direction of electric field at a patch is parallel to the area vector. Using the dot product form of flux, we get
+			 		<me>
+			 			\Phi_\text{round part} = E_\text{out}(s)\times 2\pi s L.
+			 		</me>
+ 
+			 	</p>
+
+		 		<p></p>
+		 		<image source="./images/gausss-law/gauss-law-e-field-cylinder-circular-part.png" width="80%"/>
+		 	</sidebyside>
+		 	<p>
+		 		Note that <m>L</m> is the height of the Gaussian cylinder, not that of the charged cylinder, which is infinitely long.
+		 	</p>
+		 	<p> 
+		 		Adding up the fluxes from the round part and the at the flat ends, we get the net flux through a closed surface to be
+			 	<men xml:id="eq-gauss-cylinder-outside-flux">
+			 		\Phi_\text{closed surface} = E_\text{out}(s)\times 2\pi s L.
+			 	</men>
+			 </p>
+
+		 	<p><alert>Enclosed Charge:</alert></p>
+		 	<p>
+		 		Now, we find amount of charge enclosed by the closed surface. We notice that only a length <m>L</m> of the charged cylinder is enclosed. Since charge density is constant here, corresponding charge is just the product of charge density and volume.
+		 		<men xml:id="eq-gauss-cylinder-outside-enclosed-charge">
+		 			q_\text{enc} = \rho_0 \times \pi R^2 L.
+		 		</men> 
+		 	</p>
+		 	<p><alert>Use Gauss's Law:</alert></p>
+		 	<p>
+		 		Now, we use Gauss's law on flux in Eq. <xref ref="eq-gauss-cylinder-outside-flux"/> and enclosed charge in <xref ref="eq-gauss-cylinder-outside-enclosed-charge"/>. to get
+		 		<me>
+		 			E_\text{out}(s)\times 2\pi s L = \frac{\rho_0 \times \pi R^2 L}{\epsilon_0}.
+		 		</me>
+		 		From this, we get the magnitude of electric field to be
+		 		<men>
+		 			E_\text{out}(s) = \frac{\rho_0}{2\epsilon_0} \frac{R^2}{s}.
+		 		</men>
+		 	</p>
+
+
+ 		</subsubsection>
+
+ 		<subsubsection> <title> Deriving Electric Field at an Inside Point by Gauss's Law</title>
+ 
+
+	 		<sidebyside widths="60% 5% 35%">
+			 	<p>
+			 		To derive the field at an inside point, we take a Gaussian cylindrical surface whose circular surface contains the field point of interest, i.e., point <m>P_\text{in}</m>. We need to work out flux and enclosed charge here as well. The flux calculation is identical to the calculation given in Eq. <xref ref="eq-gauss-cylinder-outside-flux"/> above for <m>P_\text{out}</m>. 
+	 				<me>
+				 		\Phi_\text{closed surface} = E_\text{in}(s)\times 2\pi s L.
+				 	</me>
+ 
+			 	</p>
+
+		 		<p></p>
+		 		<image source="./images/gausss-law/gauss-law-e-field-cylinder-circular-part-inside-point.png" width="80%"/>
+		 	</sidebyside>
+
+
+
+
+			 <p>
+			 	For enclosed charge, we note here that, not all charges of the cylinder of length <m>L</m> are enclosed. Only charges upto the radius of <m>s</m> are enclosed. Therefore,
+		 		<me>
+		 			q_\text{enc} = \rho_0 \times \pi s^2 L.
+		 		</me>
+		 		Now, we use them in Gauss's law to get
+		 		<me>
+		 			E_\text{in}(s)\times 2\pi s L = \frac{\rho_0 \times \pi s^2 L}{\epsilon_0}.
+		 		</me>
+		 		Solving this for <m>E_\text{in}(s)</m> we get
+		 		<men>
+		 			E_\text{in}(s) = \frac{\rho_0}{2\epsilon_0}\ \frac{1}{s}.
+		 		</men>		 	
+ 			</p>
+
+
+
+ 		
+ 		</subsubsection>
+
+
+
+
+	</subsection>	
+
+
+
+
+	<subsection><title>  Gaussian Surface Selection and Flux Calculation </title>
+		<p>
+			To make use of the direction and functional dependence of electric field, we choose a closed Gaussian surface in the shape of a cylinder around the axis of the cylinder of the charge distribution as shown in <xref ref="fig-gauss-law-cylindrical-symmetry-3"/>. 
+		</p>
+		<figure xml:id="fig-gauss-law-cylindrical-symmetry-3">
+			<caption>
+				The Gaussian surface for finding electric field at point P in a cylindrical symmetry situation. The flux through the two flat ends is zero because <m>\vec E</m> is along the area, i.e., perpendicular to the area vector. Therefore, the flux through the entire Gaussian surface is simple the flux through the side, where electric field has the same magnitude, since all points of the side of the cylindrical surface are at same distance <m>s</m>. This gives <m>\Phi = 2\pi s L E_P </m>. This will be positive for the positive charges shown in the figure here, but flux will be negative if the charges in the cylinder were net negative.
+			</caption>
+			<image source="./images/gausss-law/gauss-law-cylindrical-symmetry-3.png" width="70%"/>
+		</figure>
+
+
+		<p>
+			The flux through a cylindrical Gaussian surface of radius <m>s</m> and height <m>L</m>, having the same axis as the axis of the cylinder of charge distribution, is easy to compute if we divide our task into two parts:  (a) a flux through the two flat ends and a flux through the curved surface. 
+		</p>	
+
+		<!-- <figure xml:id="fig-gauss-law-cylindrical-symmetry-3">
+			<caption> 
+				Gaussian surface for electric field at P in the case of a cylindrical symmetry. The surface contains point P and is closed, with area of surface being the side of a cylinder and the two edges. Electric field at a patch is at  side point P is parallel to the nrmal to the area element there and at a point on the edges perpendicular to the normal. This gives flux through the entire Gaussian surface equal to the <m>E_P\times A_\text{Side} = 2\pi s L E_P</m>. 
+			</caption>
+			<image source="./images/gausss-law/gauss-law-cylindrical-symmetry-3.png" width="40%"/>			
+		</figure> -->
+		<p>
+
+			The flux through the flat ends must be zero since electric field is perpendicular to the area vectors of the patches on the ends. 
+			<me>
+				\Phi_{\text{ends}}= 0.
+			</me>
+			The flux through the curved side of the Gaussian surface is simply the product of the magnitude of electric field <m>E(s)</m> at any point of this surface, including point P, and the area of the surface, since <m>\vec E\parallel\Delta \vec A</m> at all points.  
+			<me>
+				\Phi_{\text{side}}=\sum_{\text{patches}}\vec E\cdot\Delta \vec A = E_P(s)\times 2\pi s L.
+			</me>
+			Therefore, flux through the closed cylindrical surface is 
+			<me>
+					\Phi_\text{closed surface} = \Phi_\textrm{ends} + \Phi_\text{side} =  E_P(s)\times 2\pi s L.
+			</me>
+		</p>
+
+	</subsection>
+
+	<subsection><title> Using Gauss's Law in Cylindrical Symmetry Case</title>
+		<p>
+			In the cylindrical symmetry case, we found that the Gaussian surface was a cylinder of length <m>L</m> and radius <m>s</m>, whose side has the field point P. The flux through this Gaussian surface has the following form.
+			<m>
+				\Phi_E = 2\pi L s E_P, 
+			</m>
+			where <m>E_P</m> is the magnitude of the electric field at P. 
+		</p>
+		<p>
+			Gauss's law states that flux through a Gaussian surface is equal to <m>q_\text{enc}/\epsilon</m>, where <m>q_\text{enc}</m> is the total charge inside the volume surrounded by the Gausssian surface. 
+			<me>
+				2\pi L s E_P = \dfrac{q_\text{enc}}{\epsilon_0}.
+			</me>
+		</p>
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				Therefore, the magnitude of the electric field in the case of cylindrical symmetry is given by
+				<men>
+					E_P = \dfrac{1}{2\pi\epsilon_0}\, \dfrac{q_\text{enc}/L}{s}.
+				</men>
+
+			</p>
+			<p> </p>
+			<image source="./images/gausss-law/e-field-of-cylindrical-symmetry.png" width="40%"/>
+		</sidebyside>
+		
+		<p>
+			The enclosed charge will be proportional to the length <m>L</m> of the Gaussian cylinder. Let's denote the enclosed charge per unit length by <m>\lambda_\text{enc}</m>.
+			<me>
+				q_\text{enc} = \lambda_\text{enc} L.
+			</me>
+			Then, we can write the magnitude of the electric field as
+			<men>
+				E_P = \dfrac{1}{2\pi\epsilon_0}\, \dfrac{\lambda_\text{enc}}{s}.
+			</men>
+			The direction of the electric field is away from the axis if charge is positive and towards the axis if charge is negative.			
+
+		</p>
+		<p>
+			Note that electric field in the cylindrical case does not drop off as inverse of square of the distance from the charges - instead, it drops of more slowly, as o inverse distanc, not square of the distance.
+		</p>
+	</subsection>
+
+
+
+	<exercise xml:id="ex-Detemining-if-a-Charge-Distribution-has-Approximate-Cylindrical-Symmetry"><title> Detemining if a Charge Distribution has Approximate Cylindrical Symmetry </title>
+		<statement>
+			<p>
+				Determine if approximate cylindrical symmetry holds for the following situations.  State why or why not.
+				<ol label="(a)">
+
+					<li> A <m>300</m>-cm long copper rod of radius <m>1</m> cm is charged with <m>+500</m> nC of charge and we seek electric field at a point <m>5</m> cm from the center of the rod. </li>
+					<li> A <m>10</m>-cm long copper rod of radius <m>1</m> cm is charged with <m>+500</m> nC of charge and we seek electric field at a point <m>5</m> cm from the center of the rod. </li>
+					<li xml:id="ex-checking-cylindrical-symmetry-c"> A <m>150</m>-cm wooden rod is glued to a <m>150</m>-cm plastic rod to make a <m>300</m>-cm long rod, which is then painted with a charged paint so that one obtains a uniform charge density.  The radius of each rod is <m>1</m> cm, and we seek an electric field at a point that is <m>4</m> cm from the center of the rod.</li>
+
+					<li> Same rod as (<xref ref="ex-checking-cylindrical-symmetry-c"/> ), but we seek electric field at a point that is <m>500</m>-cm from the center of the rod. </li>
+
+
+				</ol>
+
+			</p>
+
+		</statement>
+		<hint> <p>  See solution. </p> </hint>
+		<answer> <p> (a) Yes, (b) No, (c) Yes, (c) No.  </p> </answer>
+		<solution><title> (a)</title> 
+			<p> 
+				(a)	Yes, approximate cylindrical symmetry exists, since the distance 5 cm  <m>\lt\lt</m> length of the rod 300 cm.
+			</p>
+		</solution>
+		<solution><title> (b)</title> 
+			<p>
+				(b)	No, cylindrical symmetry is not appropriate here, since distance to the space point, 5 cm is not much smaller than the size of the cylinder 10 cm.
+			</p>
+		</solution>
+		<solution><title> (c)</title> 
+			<p> 
+				(c)	Although we have different materials, but since the charge density is uniform, the difference in material will not matter.  The ends of the rod are far away, and hence cylindrical symmetry can be used in this case.
+			</p>
+		</solution>
+		<solution><title> (d)</title> 
+			<p>
+				(d)	Now, the cylindrical symmetry will not be appropriate here since ends of the cylinder are not far away compared to the distance to the space point.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+	<exercise xml:id="ex-Electric-Field-of-a-Charged-Thin-Long-Wire"><title> Electric Field of a Charged Thin Long Wire </title>
+		<statement>
+			<p>
+				A thin straight wire has a uniform linear charge density <m> \lambda_0</m> (SI units: <m>\text{C/m}</m>).  Find the electric field at a distance <m> d</m> from the wire.
+			</p>
+
+		</statement>
+		<hint> <p>  Use cylindrical symmetry. </p> </hint>
+		<answer> <p>  Magnitude: <m> E = \dfrac{1}{2\pi\epsilon_0}\, \dfrac{\lambda_0}{d}</m>, and direction away from the wire if <m>\lambda_0\gt 0</m> and towards the wire if <m>\lambda_0\lt 0</m>.	 </p> </answer>
+		<solution> 
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					The given charge density has cylindrical symmetry. Therefore, electric field at a distance <m>d</m> from the wire will have the magnitude
+					<me>
+						E = \dfrac{1}{2\pi\epsilon_0}\, \dfrac{q_\text{enc}/L}{d},
+					</me> 
+
+				</p>
+				<p> </p>
+				<image source="./images/gausss-law/ex-charged-thin-wire-enclosed-charge.png" width="40%"/>
+			</sidebyside>
+			<p>
+				where <m>q_\text{enc}</m> are the charges on the wire in length <m>L</m>.
+					<me>
+						q_\text{enc} = \lambda_0 L.
+					</me>
+			</p>
+			<p>
+				Therefore,
+				<me>
+					E = \dfrac{1}{2\pi\epsilon_0}\, \dfrac{\lambda_0}{d}.
+				</me>
+				The direction of the field is away from the wire if <m>\lambda_0\gt 0</m> and towards the wire if <m>\lambda_0\lt 0</m>.			
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electric-Field-of-a-Uniformly-Charged-Cylindrical-Shell"><title> Electric Field of a Uniformly Charged Cylindrical Shell </title>
+		<statement>
+			<p>
+				A non-conducting cylindrical shell of radius <m> R</m> has a uniform surface charge density <m>\sigma_0</m> (SI units: <m>\text{C/m}^2</m>).  Find the electric field (a) at a point outside the shell and (b) at a point inside the shell.
+			</p>
+
+		</statement>
+		<hint> <p> Use cylindrical symmetry.  </p> </hint>
+		<answer> <p> (a) Magnitude  <m>\frac{2\pi R \sigma_0}{2\pi \epsilon_0}\frac{1}{s}</m> with direction away from axis if <m>\sigma_0 \gt 0</m> and towards the axis if <m>\sigma_0 \lt 0</m>. </p> </answer>
+		<solution><title>(a)</title>
+			<p>
+				(a)  <alert> Electric field at a point outside the shell</alert>
+			</p>
+ 
+			<p>
+				For a point outside the cylindrical shell, the Gaussian surface will be the surface of a cylinder of radius <m> s \gt R </m> and length <m> L</m> as shown in the figure.
+
+			</p>
+			<figure xml:id="fig-gauss-law-cylindrical-symmetry-5">
+				<caption>
+					Gaussian surface for a point outside the shell.
+				</caption>
+				<image source="./images/gausss-law/gauss-law-cylindrical-symmetry-5.png" width="40%"/>
+			</figure>
+			
+			<p>
+			The charge enclosed by the Gaussian cylinder is equal to the charge on the cylindrical shell of length L. Therefore, <m>\lambda_\text{enc}</m> is given by
+				<me>
+					\lambda_\text{enc} = \frac{\sigma_0\times 2\pi R L}{L} = 2\pi R \sigma_0.
+				</me>
+				Hence, the electric field at a point P outside the shell at a distance s away from the axis has the magnitude:
+				<me>
+					E_P = \frac{2\pi R \sigma_0}{2\pi \epsilon_0}\frac{1}{s} \ \ \ (s\gt R),
+				</me>
+				The electric field at P will be pointed away from the axis as given in <xref ref="fig-gauss-law-cylindrical-symmetry-5"/> if <m>\sigma_0 \gt 0</m> , but towards the axis if <m>\sigma_0 \lt 0</m>.
+			</p>
+		</solution>
+
+		<solution><title>(b)</title>
+			<p>
+
+				(b)  <alert> Electric field at a point inside the shell</alert>
+			</p>
+			<p>
+
+				For a point inside the cylindrical shell, the Gaussian surface will be a cylinder whose radius <m>s</m> is less than <m>R</m>.  That means, no charges will be included inside the Gaussian surface.
+				<me>
+					\lambda_{enc} = 0.
+				</me>
+			</p>
+ 
+
+			<figure>
+				<caption>
+					Gaussian surface for a point outside the shell.
+				</caption>
+				<image source="./images/gausss-law/gauss-law-cylindrical-symmetry-5b.png" width="40%"/>
+			</figure>
+ 			<p>
+
+				This gives the following equation for the magnitude of the electric field <m>E_{in}</m> at a point whose <m>s</m> is less than <m>R</m> of the shell of charges.
+				<me>
+					E_\text{in}\times 2\pi s L = 0\ \ \ (s\lt R),
+				</me>
+				which gives 
+				<me>
+					E_\text{in} = 0\ \ \ (s\lt R).
+				</me>
+			</p>
+		</solution>
+	</exercise> 
+
+
+	<exercise xml:id="ex-Electric-Field-of-Oppositely-Charged-Two-Concentric-Cylindrical-Shells"><title> Electric Field of Oppositely Charged Two Concentric Cylindrical Shells </title>
+		<statement>
+			<p>
+				Figure shows two charged concentric thin cylindrical shells. There are no charges in the space at the core, i.e., charge density, <m> \rho = 0,\ r\lt R_1</m> or between the shells <m> \rho = 0,\ R_1\lt r \lt R_2</m>. The two shells are uniformly charged with different charge densities, <m>+\sigma_1</m> and <m>-\sigma_2</m> such that the net charge on the two shells are equal in magnitude but opposite in sign.
+			</p>
+			<p>
+				There are three distinct field points, labeled, <m>P_1</m>, <m>P_2</m>, and <m>P_3</m>.  (a) Find electric fields at these points. (b) Draw representative electric field lines for this system of charges.
+			</p>
+			<image source="./images/gausss-law/ex-two-oppositely-charged-cylindrical-shells.png" width="70%"/>
+			<p>
+				How can you create this type of situation? You can start with two concentric metal cylindrical shells. Place some positive charge on inner shell and same amount on the outer shell. You can do that by connecting a positive terminal of a DC battery to the inner shell and the negative of the battery to the outer shell. This arrangement of metal shells is called a <term> cylindrical capacitor</term>. We will study capacitors in a future chapter.
+			</p>
+		</statement>
+		<hint> <p>  Use cylindrical symmetry. </p> </hint>
+		<answer> <p>  <m>E_\text{between} = \dfrac{\sigma_1 R_1}{\epsilon_0}\, \dfrac{1}{s_1}</m>. </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				The given charges satisfy the condition of cylindrical symmetry. Therefore, we use Gaussian cylinders with the field point of interest  <m>(P_1,\ P_2, \text{ or } P_3)</m> at the side of the cylinder. This will give smae formula for the magnitude of electric field at these points.
+				<me>
+					E_i = \dfrac{1}{2\pi\epsilon_0}\, \dfrac{\lambda_\text{inc,i}}{s_i}, \ \ (i=1,\ 2, \ 3),
+				</me>
+				where <m>i</m> refer to the three points of interest. 
+				The enclosed charges inside the Gaussian cylinders in the three cases give
+				<md>
+					<mrow> \lambda_\text{inc,1} \amp = 0,</mrow>
+					<mrow> \lambda_\text{inc,2} \amp = \dfrac{\sigma_1 \times 2\pi R_1 L}{L},</mrow>
+					<mrow> \lambda_\text{inc,3} \amp = \dfrac{\sigma_1 \times 2\pi R_1 L - \sigma_2 \times 2\pi R_2 L}{L} = 0.</mrow>
+				</md>
+				Therefore, the magnitudes of electric fields at these points are
+				<md>
+					<mrow> E_1 \amp = 0,</mrow>
+					<mrow> E_2 \amp = \dfrac{\sigma_1 R_1}{\epsilon_0}\, \dfrac{1}{s_1},</mrow>
+					<mrow> E_3 \amp = 0.</mrow>
+				</md>				
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				In the present situaion, electric field is non-zero only between the shells with direction radially outward from the positive shell to the negative shell. It is better to draw these lines in a cross-section plane of the cylinder. 
+				<image source="./images/gausss-law/e-field-two-thin-spherical-shells-lines.png" width="50%"/>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+</section>

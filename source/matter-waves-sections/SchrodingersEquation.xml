@@ -1,0 +1,184 @@
+<section xml:id="sec-SchrodingersEquation"><title>Schr&#x00F6;dinger's Equation</title>
+	<introduction>
+		<p>
+			Inspired by the success of De Broglie's matter wave ideas, Erwin Schr&#x00F6;dinger sought a wave equation that would represent the dynamics of electrons as waves and would produce the atomic spectra naturally as a consequence of the wave equation without ad hoc rules. Schr&#x00F6;dinger came up with a completely new wave equation that predicted the spectrum of the hydrogen atom correctly.
+		</p>
+		<p> 
+
+			In Schr&#x00F6;dinger's equation, in place of the position and velocity of electron we describe an electron by its wave function <m>\psi</m> [read: <q>sigh</q>] which is a function of space and time, just as any other wave functions, such as the wave function for the sound or light waves. In one-dimensional situation, say the motion on a straight line along <m>x</m>-axis only, Schr&#x00F6;dinger's wave equation takes the following form. 
+			<men xml:id="t-dep-sch-eqn">
+				i \hbar\ \dfrac{\partial \psi}{\partial t} = -\dfrac{\hbar^2}{2m}\ \dfrac{\partial^2 \psi}{\partial x^2} + U(x) \psi, 
+			</men>
+			where <m>i = \sqrt{-1}</m>, <m>\hbar = h/2\pi</m>, and <m>U(x)</m> is the potential energy.  This equation is a complex equation, meaning that it involved the imaginary number <m>i</m>. The solution of this equation will the wave function <m>\psi</m>, which will be a complex quantity.  All this will be mystery if you have not encountered complex numbers in your courses so far. You will find an introductory treatment of complex numbers in your algebra and calculus textbooks.
+		</p>
+		<p>
+			In the stationary state, e.g., one of the Bohr states, the electron has a definite energy <m>E</m>. In that case the solution takes the following form:
+			<men>
+				\psi(x,t) = \psi_E(x)\: e^{-iEt/\hbar},
+			</men>
+			where <m>\psi_E(x)</m> is time-independent stationary wave function corresponding to the stationary state of energy <m>E</m>. Putting this form of the solution in Eq. <xref ref="t-dep-sch-eqn"/> we obtain  the following equation, called the time-independent Sch&#x00F6;rodinger equation.
+			<men xml:id="t-indep-sch-eqn">
+				\dfrac{d^2 \psi_E}{d x^2} = -\dfrac{2m}{\hbar^2}\left[ E - U(x) \right] \: \psi_E. 
+			</men>
+			The solutions of this equation will give the time-independent part of the wave function when the electron is in one of the Bohr orbits. For a three-dimensional situation such as the electron in a hydrogen atom the equation becomes
+			<men xml:id="t-indep-sch-eqn-3d">
+				\dfrac{\partial^2 \psi_E}{\partial x^2} + \dfrac{\partial^2 \psi_E}{\partial y^2} + \dfrac{\partial^2 \psi_E}{\partial z^2}= - \dfrac{2m}{\hbar^2}\left[ E - U(x,y,z) \right] \: \psi_E. 
+			</men>
+			In the case of Hydrogen atom the potential is the electric potential energy as we have seen above when we discussed the Bohr model. 
+			<men xml:id="eq-pot-h-atom-1">
+				U(x,y,z) = - \dfrac{1}{4\pi\epsilon_0}\:\dfrac{e^2}{\sqrt{x^2 + y^2 + z^2}}. 
+			</men>
+			It turns out that the solution of Eq. <xref ref="t-indep-sch-eqn-3d"/> with <m>U</m> for Hydrogen atom requires more advance math than is required for this book.  Suffice to say that the solution of the Schr&#x00F6;dinger equation with potential energy given by Eq. <xref ref="eq-pot-h-atom-1"/> consists of allowed values of <m>E</m> and the wave function that goes with that particular <m>E</m>. The difference in energies between allowed states completely agree with the observed frequencies of light seen in the Hydrogen spectrum that mediate the transition between those states.
+		</p>
+		<p>
+			Since we will not solve the mathematically more demanding problem of the Hydrogen atom, we will solve illustrative ome-dimensional models that obey  the one-dimensional equation Eq. <xref ref="t-indep-sch-eqn"/>.  The solutions of these problems give us valuable insights into problems of practical interest.
+		</p>
+	</introduction>
+	<subsection><title>Probability Amplitude and Probability Current</title>
+		<p>
+			The wave function for familiar waves such as sound wave and electromagnetic wave refer to some physical property that oscillates over space and time. For instance, in the electromagnetic wave the electric field and magnetic field oscillate in space and time. What is the property that the wave function <m>\psi</m> or <m>\psi_E</m> refers to? No one seems to know for sure but   the following interpretation of the wave function given by Max Born has been very helpful in predicting the outcome of experiments.
+			<men xml:id="eq-quantum-interpret-prob">
+				 \textrm{Probability of particle between}\ x \ \textrm{and}\ x+dx = \psi^*(x,t) \psi(x,t)  dx, 
+			</men>
+			where <m>\psi^*</m> is complex conjugate of <m>\psi</m>.  A complex conjugate of a complex quantity i obtained by replacing <m>i</m> by <m>-i</m>.  Thus, if you have <m>z = a + i b</m>, then <m>z^{*} = a - i b</m>. Equation  <xref ref="eq-quantum-interpret-prob"/> affirms that, unlike classical mechanics,  quantum mechanics cannot not tell us where the particle is at any time, it only provides us the probability of finding the particle at different locations. The quantity <m>\psi^*\psi</m> is said to give the <term>probability density</term>, that is probability per unit volume in three-dimensional situation and probability per unit length in one-dimensional situation, and the wave function is said to be the <term>probability amplitude</term>. According to this interpretation of quantum mechanics, the wave function <m>\psi</m> is then the wave function of a probability wave. The probability that the particle will be somewhere is expressed by demanding that the integral over all space be equal to 1.
+			<men>
+				\int_{-\infty}^{\infty}\psi^*(x,t) \psi(x,t)  dx = 1.
+			</men>
+			This condition on the wave function is called the <term>normalization</term> of the wave function. 
+		</p>
+		<p>
+			In addition to the interpretation of <m>\psi</m> as probability amplitude, the wave function also gives us probability current  <m>j</m> which is analogous to the current density in electricity and refers to the flow of probability through space.
+			<men>
+				j = \dfrac{\hbar}{i 2 m}\left[\psi^* \left(\dfrac{\partial \psi}{\partial x}\right) - \psi  \left(\dfrac{\partial \psi^*}{\partial x}\right) \right].
+			</men>
+			We can interpret <m>j</m> by the following hypothetical situation: suppose you prepare particles in identical state <m>\psi</m>, then <m>j</m> will give the flux of those particles. The most probable position of a particle  in a quantum state <m>\psi</m> is given by the expectation value of the position as defined by
+			<men>
+				\langle x \rangle= \int_{-\infty}^{\infty} \psi^*(x,t)\: x\: \psi(x,t)  dx.
+			</men>
+			The average momentum is obtained by
+			<men>
+				\langle p \rangle = \int_{-\infty}^{\infty} \psi^*(x,t) \left[ -i\hbar \dfrac{\partial }{\partial x}\right]\: \psi(x,t)\: dx.
+			</men>
+			The quantity within the bracket <m>[\ \ ]</m> is called <term>momentum operator</term>. Granted that these rules for computing the average values of physical quantities such as position and momentum appear rather ad-hoc at this point, but they are not. Unfortunately we do not have space here to go in detail about the structure of quantum mechanics.  You will learn quantum mechanics more systematically in a more advanced course. Suffice to say, that quantum state of a system is given by the wave function and the expectation values of physical quantities, such as position, momentum, energy, angular momentum, etc., are obtained by sandwiching an operator for the quantity between <m>\psi^*</m> and <m>\psi</m> as we have done for the momentum.
+ 
+		</p>
+
+	</subsection>
+
+	<exercise xml:id="ex-Discrete-Probability"><title>Discrete Probability</title>
+
+		<statement>
+			<p>
+				Suppose you have 10 marbles in a box, six of them are red and four blue.  (a) If you pick one marble at random from the box, what is the probability that the marble picked would be red? (b) If you pick one marble at a time and then put that marble back in the box and pick one marble again after randomizing the box again.  What will be the probability that in three consecutive times you would not have picked any red marbles? (b) Suppose you do not put the marble picked. What will be the probability that you wouldn't get any red marble?  That is what is probability of getting blue, blue, blue in three consecutive tries?
+			</p>
+		</statement>
+		<hint><p>
+			Use counting.
+		</p></hint>
+		<answer><p>
+			(a) 60%, (b) 6.4%, (c) 3.3%.
+		</p></answer>
+		<solution>
+			<p>
+				(a) Since there are six red marbles in ten, the probability of picking a red marble will be <m>\dfrac{6}{10}</m>, or 60%.
+			</p>
+			<p>
+				(b) Each time the probability of not getting a red marble is same <m>\dfrac{4}{10}</m>.  Therefore, the probability that three consecutive picks will not get a red marble will be <m>\dfrac{4}{10} \times \dfrac{4}{10} \times \dfrac{4}{10} = 0.064</m>, or 6.4%.
+			</p>
+			<p>
+				(c) Now, the probability of not getting a red marble is not same in the three tries since the number of marbles and the number of blue marbles are going down with each pick. They are <m>\dfrac{4}{10}</m> for the first try, then you have <m>3/9</m> for the second try, and then <m>2/8</m> for the third try.   Therefore, the probability that three consecutive picks will not get a red marble will be <m>\dfrac{4}{10} \times \dfrac{3}{9} \times \dfrac{2}{8} =  0.033</m>, or 3.3%.
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="ex-Continuum-Probability"><title>Continuum Probability</title>
+
+		<statement>
+			<p>
+				Suppose a particle can be anywhere between <m>x=0</m> and <m>x=1\text{ cm}</m> with equal probability density <m>f(x)</m> and it cannot be outside of <m>0\le x\le 1\:\textrm{cm}</m>.  Note we are using <m>f(x)</m> for <m>\psi^*(x)\psi(x)</m>. (a) What is the probability density <m>f(x)</m> as a function of <m>x</m>. (b) What will be the probability of finding the particle between <m>x=0</m> and <m>x=0.2\text{ cm}</m>?
+			</p>
+		</statement>
+		<hint><p>
+			Use probability density.
+		</p></hint>
+		<answer><p>
+			(b) 0.2. 
+		</p></answer>
+		<solution>
+			<p>
+				(a) Since the probability density is constant <m>f(x) = f_0</m> with <m>f_0</m> some constant. Now, the probability of finding the particle somewhere in <m>0\le x\le 1\:\textrm{cm}</m> must be 1 we get
+				<me>
+					\int_0^{1\:\textrm{cm}} f(x) dx = 1 \quad \longrightarrow\quad f_0 \times 1\:\textrm{cm} = 1 \quad \longrightarrow\quad f_0   = 1\:\textrm{cm}^{-1}. 
+				</me>
+				Therefore, 
+				<me>
+					f(x) = 1\:\textrm{cm}^{-1},\quad 0\le x\le 1\:\textrm{cm}.
+				</me>
+				Note the unit for the probability density. Since the probability density here is probability per unit <m>dx</m> it is per <m>\textrm{cm}</m> instead of per <m>\textrm{cm}^3</m>.
+			</p>
+			<p>
+				(b)  The probability in a particular range will be given by the integral of the probability density.
+				<me>
+					P = \int_0^{0.2\:\textrm{cm}} f(x) dx = f_0 \times 0.2\:\textrm{cm} = 1\:\textrm{cm}^{-1}\times 0.2\:\textrm{cm} = 0.2.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Continuum-Probability-2"><title>Continuum Probability - 2</title>
+
+		<statement>
+			<p>
+				Suppose a particle can be anywhere between <m>x=0</m> and <m>x=1</m> cm with  the probability density <m>f(x) = A\:\sin^2(x)</m> with <m>x</m> in cm and <m>A</m> is a constant.  The particle cannot be outside of <m>0\le x\le 1\:\textrm{cm}</m>.  Note we are using <m>f(x)</m> for <m>\psi^*(x)\psi(x)</m>. (a) What is the values of <m>A</m>? (b) What will be the probability of finding the particle between <m>x=0</m> and <m>x=0.25</m> cm?
+			</p>
+		</statement>
+		<hint><p>
+			Make normalized probability.
+		</p></hint>
+		<answer><p>
+			(a) <m>\dfrac{2}{1 - \frac{1}{2}\sin(2)}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				(a) Since the particle has to be somewhere, the integration of the probability density over the entire interval will give one.
+				<me>
+					\int_0^{1} A\:\sin^2(x) dx = 1.
+				</me>
+				To do the integral we multiply and divide by 2 and convert to a double angle formula.
+				<me>
+					\dfrac{A}{2}\int_0^{1} \left[ 1 - \cos(2x)\right] dx = 1.
+				</me>
+				The integration gives
+				<me>
+					\dfrac{A}{2}\:\left[ 1 - \dfrac{1}{2}\sin(2)\right] = 1.
+				</me>
+				Therefore, 
+				<me>
+					A = \dfrac{2}{1 - \frac{1}{2}\sin(2)}.
+				</me>
+			</p>
+			<p>
+				(b) The probability that the particle is between <m>x=0</m> and <m>x=0.25</m> cm will be
+				<me>
+					P = \int_0^{0.25} A\:\sin^2(x) dx  = \dfrac{2}{1 - \frac{1}{2}\sin(2)} \left[ 0.25 - \dfrac{1}{2} \sin(0.5)  \right].
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+ 
+ 
+
+
+<!-- 		<figure xml:id="fig-deBroglie-Bohr-orbits">
+			<caption>
+				 The figure shows de Broglie wave pictures for several Bohr orbits. The picture was generated using the program at <url href="http://demonstrations.wolfram.com/BohrsOrbits/" visual="demonstrations.wolfram.com">Bohr's Orbits</url>.
+			</caption>
+			<image source="./images/modern-physics/deBroglie-Bohr-orbits.png" width="60%"/>
+		</figure> -->				
+	
+
+ 
+
+</section>

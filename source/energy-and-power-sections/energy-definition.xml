@@ -1,0 +1,182 @@
+<section xml:id="Energy-Definition"><title> Energy</title>
+<idx><h>Energy</h><h>Definition</h></idx>
+	<introduction>
+		<p>
+			The sum of kinetic and potential energies from all applicable conservative forces on an object is called <term> energy </term> of the object. We usually denote energy by the capital letter <m> E </m>.
+			<men xml:id="eq-energy-equal-to-K-plus-U">
+				E = K + \sum U.
+			</men>
+			Here the symbol <m>\sum</m> (read sigma) stands for the process of summation over all sources of potential energies <m>U</m>. For instance, if a block is attached to a spring and swings vertically, <m>\sum U</m> will be <m>U_\text{weight} + U_\text{spring}</m>.
+		</p>
+	</introduction>
+	<subsection><title> Energy of a Particle Subject to Gravity</title>
+		<p>
+			For instance, if our system is a particle of mass <m> m</m> moving with speed <m> v </m> at some instant <m> t </m>, and is subject to only the force of gravity. Then, with positive <m> y</m> axis pointed up, its potential energy will be
+			<me>
+				U = mgy.
+			</me>
+			Therefore, the energy of this particle at this instant will be
+			<me>
+				E = \dfrac{1}{2}mv^2 + mgy.
+			</me>
+
+		</p>
+
+	</subsection>
+	<subsection><title> Energy of a Particle Subject to Gravity and Spring Forces</title>
+
+		<sidebyside widths="75% 10% 10% 5%">
+			<p>
+				Now, suppose, the aforementioned particle was attached to a spring of spring constnat <m> k </m>. Let the spring at instant <m> t</m> was either compressed or stretched by <m>\Delta l</m>. Then, the potential energy would be a sum of the potential energies due to gravity and due to the spring force.
+				<me>
+					U = mgy + \dfrac{1}{2}k \left( \Delta l\right)^2.
+				</me>
+			</p>
+			<p></p>
+			<image source="./images/energy/energy-illustrated-by-grav-and-spring.png"/>
+			<p></p>
+
+		</sidebyside>
+		<p>
+			Therefore, energy of this particle will be
+				<me>
+					E = \dfrac{1}{2}mv^2 +mgy + \dfrac{1}{2}k \left( \Delta l\right)^2.
+				</me>
+		</p>
+
+	<remark><title> Definition of Energy as a Guide</title>
+		<p>
+			The definition of energy, as sum of kinetic and potential energies, given in Eq. <xref ref="eq-energy-equal-to-K-plus-U"/> is a guide for you to find the actual expression in your particular situation. In each situation, you would need to ask, what are the conservative forces, and set up coordinates or variables that are necessary for properly expressing protential energy.
+		</p>	
+	</remark>
+	
+	</subsection>
+
+
+
+	<example xml:id="ex-Energy-of-a-Car-on-a-Hill"><title> Energy of a Car on a Hill </title>
+		<statement>
+			<p>
+				A car of mass <m> 2,000 \text{ kg}</m> is moving up a hill at a speed of <m> 25 \text{ m/s} </m> as shown in <xref ref="fig-ex-Energy-of-a-Car-on-a-Hill"/>. The angle of inclination of the hill is <m>10^{\circ}</m>. If the bottom of the hill is chosen to be the zero of gravitational potential energy, what is the energy of the car when it is at a location that is <m> 150\text{ m}</m>, as measured on the incline, from the bottom of the hill?
+			</p>
+			<figure xml:id="fig-ex-Energy-of-a-Car-on-a-Hill">
+				<caption>
+					Figure for <xref ref="ex-Energy-of-a-Car-on-a-Hill"/>.
+				</caption>
+
+				<image source="./images/energy/ex-Energy-of-a-Car-on-a-Hill.png" width="70%"/>
+			</figure>
+
+			
+
+		</statement>
+		<!-- <hint> <p>  Find the height above the bottom and use that calculate the potential energy. </p> </hint> -->
+		<answer> <p>  <m>1,136,000\text{ J}</m>. </p> </answer>
+		<solution> 
+			<p> 
+				The energy will be the sum of kinetic and potential energies. For potential energy due to gravity, we need height from the zero reference. Here
+				<m>
+					h = 150\text{ m} \times \sin\,10^{\circ} = 26.05\text{ m}.
+				</m>
+				Therefore, energy is
+				<md>
+					<mrow> E \amp = \dfrac{1}{2}mv^2 + m g h,  </mrow>
+					<mrow>  \amp = \dfrac{1}{2}\times 2,000\times 25^2 + 2,000\times 9.81\times 26.05, </mrow>
+					<mrow>  \amp = 625,000+ 511,000 = 1,136,000\text{ J}, </mrow>
+				</md>
+				where I have rounded to four significant figures.
+			</p>
+		</solution>
+	</example>
+
+
+	<example xml:id="ex-Energy-of-a-Pendulum-With-Zero-of-Potential-Energy-at-Equilibrium"><title> Energy of a Pendulum With Zero of Potential Energy at Equilibrium </title>
+		<statement>
+			<sidebyside widths="50% 10% 20% 20%">
+				<p>
+					A plane pendulum of length <m>l</m> is oscillating about its equilibrium. Let <m>\theta</m> be the angular displacement from vertical at an arbitrary instant. The pendulum bob has mass <m>m</m> and has speed <m> v </m> at this instant. What is the energy of the pendulum bob?
+				</p>
+				<p></p>
+				<image source="./images/energy/energy-ex-pendulum-statement.png" widht="20%"/>
+				<p></p>
+			</sidebyside>
+ 
+		</statement>
+		<!-- <hint> <p> The height from equilibrium is <m>h = l - l \, \cos\, \theta </m>.  </p> </hint> -->
+		<answer> <p> <m> \dfrac{1}{2}m v^2 + m g \left( l - l \, \cos\, \theta \right)</m>.  </p> </answer>
+		<solution> 
+			<sidebyside widths="50% 10% 25% 15%">
+				<p>
+					The figure here shows height <m>h</m> of the bob from the zero potential energy reference, which happens when the pendulum is vertical. From the adjacent side of the triangle and the length of the string, we get
+					<me>
+						h = l - l \, \cos\, \theta.
+					</me>
+				</p>
+				<p></p>
+				<image source="./images/energy/energy-ex-pendulum-solution.png" width="25%"/>
+				<p></p>
+			</sidebyside>
+			<p>
+				The gravitational potential energy will be <m> m g h</m>. The energy of the pendulum bob will be
+				<me>
+					E = \dfrac{1}{2}m v^2 + m g \left( l - l \, \cos\, \theta \right).
+				</me>
+			</p>
+
+			
+		</solution>
+	</example>
+
+	<example xml:id="Energy-of-a-Block-Attached-to-Two-Springs"><title>Energy of a Block Attached to Two Springs </title>
+		<statement>
+			<p>  A block of mass <m> m</m> is attached to two springs of spring constants <m> k_1 </m> and <m> k_2</m> as shown in <xref ref="fig-energy-block-attached-two-springs"/>. When the block is in the middle, the two springs are neither stretched nor compressed.
+			</p>
+			<figure xml:id="fig-energy-block-attached-two-springs">
+				<caption>
+					Figure for <xref ref="Energy-of-a-Block-Attached-to-Two-Springs"/>.
+				</caption>
+				<image source="./images/energy/energy-block-attached-two-springs.png" width="80%"/>
+			</figure>
+			
+			<p>
+			 When block is pulled to one side, one of the spring is compressed while the other is stretched by the same amount. At some point in time, the block has a speed <m> v</m> and at that instant the spring with spring constant <m> k_1 </m> is stretched by an amount <m> d</m>. Assume the block moves on a horizontal frictionless table.
+			</p>
+			<p>
+				What is the energy of the block at this instant?
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Add two PEs to one KE. </p> </hint> -->
+		<answer> <p> <m> \dfrac{1}{2} m v^2 + \dfrac{1}{2} k_1 d^2 + \dfrac{1}{2} k_2 d^2 </m> .</p> </answer>
+		<solution> 
+			<p> We add kinetic energy to the two potential energy terms, from the two conservative forces by the two springs.  
+				<me> E = \dfrac{1}{2} m v^2 + \dfrac{1}{2} k_1 d^2 + \dfrac{1}{2} k_2 d^2. 
+				</me>
+			</p>
+		</solution>
+	</example>
+
+	<example xml:id="Energy-of-the-Moon"><title>Energy of the Moon  </title>
+		<statement>
+			<p> The potential energy due to gravitational force between two bodies is given by the formula:
+				<me>
+					U = - G\dfrac{m_1m_2}{r}.
+				</me>
+			At some instant Moon is a distance <m> r_{em}</m> from the Earth and a distance <m> r_{sm}</m> from the Sun. At this instant the speed of Moon is <m> v_m</m>. Let <m> M_m,\ M_e,\  M_s</m> be the masses of the Moon, the Earth, and the Sun. What is the energy of Moon? 
+			</p>
+
+		</statement>
+		<!-- <hint> <p>  Add two PEs to one KE. </p> </hint> -->
+		<answer> <p> <m> \dfrac{1}{2}\,M_m\, v_m^2</m> <m>  -G\, M_m \left( \dfrac{M_e}{r_{em}} + \dfrac{M_s}{r_{sm}} \right) </m> .</p> </answer>
+		<solution> 
+			<p> We add kinetic energy to the two potential energy terms, one due to force by the Earth and the other the force by the Sun.
+				<me> E_m = \dfrac{1}{2}\,M_m\, v_m^2  -G\, M_m \left( \dfrac{M_e}{r_{em}} + \dfrac{M_s}{r_{sm}} \right). 
+				</me>
+			</p>
+		</solution>
+	</example>
+
+
+
+
+</section>

@@ -1,0 +1,272 @@
+<section xml:id="section-order-of-magnitude"><title> Order of Magnitude </title>
+	<introduction><idx>Order of Magnitude</idx><idx><h>Order of Magnitude</h><h>Estimating</h></idx>
+		<p>
+			One of the most important skills in physics is the ability to understand a phenomenon  qualitatively, at least to within some powers of 10. Each factor of 10 is called an <term>order of magnitude</term>. A factor of 100 corresponds to two orders of magnitude and so forth. Order of magnitude estimates also help one discover major aspects of some formula with much less effort than would be required for a detailed calculation. <term>Enrico Fermi</term> of the University of Chicago was famous for making rough estimates in the so-called <q>back of the envelop</q> calculations, and therefore these types of estimations are also called <term>Fermi Problems</term>.
+		</p><idx>Fermi Problems</idx>
+		<!-- <p>
+			Getting a good estimate depends on correctly identifying applicable principles and relevant variables, which we refer to by <q>getting the right physics</q>.   Estimating does not mean randomly guessing a number or a formula, but rather it means employing reasonable physics to relate variable which ought to be related based on sound physical reasoning. Enrico Fermi of the University of Chicago was famous for making rough estimates in the so-called <q>back of the envelop</q> calculations, and therefore these types of estimations are also called <term>Fermi Problems</term>.
+		</p> -->
+<!-- 		<p> 
+			Often, it is possible to estimate the value of an unknown quantity within a factor of 10 of the exact answer by clever guesses and using informed intuition.  A factor of 10 is also called <term>one order of magnitude</term>.  A factor of 100 corresponds to two orders of magnitude and so forth. <term>Enrico Fermi</term> of the University of Chicago was famous for making rough estimates in the so-called <q>back of the envelop</q> calculations, and therefore these types of estimations are also called <term>Fermi Problems</term>.
+		</p> -->
+		<p> 
+			To make any progress in estimating a quantty, say <m>x</m>, you must have some knowledge about what other variables or quantities <m>x</m> may reasonably depend upon.
+<!-- 			, say <m>a</m>, <m>b</m>, and <m>c</m>. Then, the problem boils down to finding the powers of each independent variable.
+
+			<me>
+				x = \alpha\, a^{n_a} b^{n_b} c^{n_c},
+			</me>
+			where <m>\alpha</m> stands for some non-dimensional quantity, whose values cannot be determined by this method. --> 
+			To discover the relevant variables for the situation, the following strategies of simplifying  problems helps considerably.
+
+
+			<ol>
+				<li>
+					When dealing with an area or a volume of a complex object, introduce a simple model of the object such as a sphere or a cube or a shape that reduces number of variables you need to worry about.</li>
+				<li>
+					Guess the linear dimension, such as the radius of the sphere first, based on analogy with something else that you know, and then use your guess to obtain the volume or area.</li>
+				<li>
+					There is no need to go beyond one significant figure since you are trying to get the closest power of 10.</li>
+				<li> 
+					Finally, check to see if your answer is reasonable.  If you get some unreasonable answer, check to see if your units are off.</li>
+			</ol>
+		</p>
+
+	</introduction>
+
+
+
+ 	<example xml:id="ex-Estimating-Number-of-Marbles-in-a-Jar"><title>Estimating Number of Marbles in a Jar</title>
+
+		<statement>
+			<sidebyside widths="40% 20% 40%">
+				<p>
+					 Estimate the number of marbles in a jar that is <m>10\text{ cm}</m> in diameter and <m>20\text{ cm}</m> tall as shown.
+				</p>
+				<figure xml:id="fig-marbleJar">
+					<caption></caption>
+					<image source="./images/intro-to-physics/marbleJar.png" width="80%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+		</statement>
+		<!-- <hint><p>
+			Well packed spheres occupy <m>74\%</m> of the space. You can use <m>3/4</m>.
+		</p></hint> -->
+		<answer><p><m>1400</m>.</p></answer>
+		<solution>
+			<p>
+				Counting the marbles in <xref ref="fig-marbleJar"/> across we find that there are approximately 10 marbles in the diameter of the jar.  Now, since the jar is 10 cm in diameter, we approximate the diameter of one marble to be <m>1\text{ cm}</m>.
+			</p>
+			<p>
+				Gauss proved that when spheres are packed as well as it can be, they occupy <m>74\%</m> of the space [You need this information from geometry to make a better guess.  But if you didn't know this, you could still make a reasonable guess about the percentage of space occupied by the marbles, and that would be OK.] Let's use <m>3/4</m> for this.
+			</p>
+			<p>
+				 Now we know how to estimate the number of marbles in the jar: divide <m>74\%</m> of the volume of the jar by the volume of one marble.  The actual number of marbles is probably less than this number since you would not get the optimal packing assumed here.
+			</p>
+			<p>
+				Volume of one marble:
+				<me>
+					V_{m} \sim (1\, \text{cm})^3 = 1\, \text{cm}^3.
+				</me>
+				Volume of jar:
+				<me>
+					V_j = \frac{1}{4}\pi D^2 H \sim 10^2 \times 20 = 1.5\times 10^3\, \text{cm}^3.
+				</me>
+				Hence, number of marbles would be the ratio of <m>V_j</m> to <m>V_m</m> multiplied by the packing fraction.
+				<md>
+					<mrow>N \amp = \frac{V_j}{V_m}\times \text{packing fraction} </mrow>
+					<mrow> \amp \frac{\pi}{4}\sim \frac{2\times 10^3\, \text{cm}^3}{1\, \text{cm}^3} \times \frac{3}{4} = 1400.</mrow>
+				</md>
+			</p>
+		</solution>
+	</example>
+
+
+
+	<exercises>
+
+ 	<exercise xml:id="ex-The-Spherical-Cow"><title>The Spherical Cow</title>
+
+		<statement>
+			<sidebyside widths="50% 30% 20%">
+				<p>
+					Estimate the area of cowhide on the body of one thousand cows.
+				</p>
+				<figure xml:id="fig-sphericalCow">
+					<caption></caption>
+					<image source="./images/intro-to-physics/sphericalCow.png" width="80%"/>
+				</figure>
+				<p></p>
+			</sidebyside>				
+		</statement>
+		<hint><p>Surface area of sphere = <m>4\pi r^2</m>.</p></hint>
+		<answer><p><m>10^4\ \text{m}^2</m>.</p></answer>
+		<solution>
+			<p>
+				The area of the surface of a cow is very difficult to figure out exactly. As a first approximation, due to bulging stomach taking up so mauch space, you could imagine a sphere representing the cow, or if you want to be a little more precise, you can think of a cow as a cylinder with appropriate diameter and height. 
+			</p>
+			<p>
+				We will approximate a <q>typical</q> cow by a sphere of diameter about 1 meter for the purposes of surface area as indicated in <xref ref="fig-sphericalCow"/>.  We could also assume a cow as a cube of 1-meter side with more or less the same result.  Multiplying the surface area of one cow by 1000 we get an estimate of the area of the cowhide of 1000 cows. 
+				<me>
+					A = \frac{4\pi\left( 1\ \text{m}\right)^2}{\textrm{cow}}\times 1000\ \textrm{cows}\  \longrightarrow\ 10^4\ \text{m}^2.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<exercise xml:id="ex-Estimating-Amount-of-Blood-Pumped-in-a-Day"><title>Estimating Amount of Blood Pumped in a Day</title>
+
+		<statement>
+			<p>
+				Estimate the amount of blood your heart pumps in a day. 
+			</p>
+		</statement>
+		<hint><p>Assume the volume of blood pumped per beat of your heart equals the volume of your clenched fist.</p></hint>
+		<answer><p><m>6000 \text{L/day}</m>.</p></answer>
+		<solution>
+			<p>
+				As a first approximation, we will assume that the volume of blood pumped per stroke equals the volume of a clenched fist, whic =h we will approximate as a sphere of radius <m> 1\, \text{in}</m> or <m>2.54\, \text{cm}</m>. 
+				Therefore, volume pumped per beat will be
+				<me>
+					V_1 = \frac{4}{3} \pi R^3 =  \frac{4}{3} \pi \times (2.54\, \text{cm})^3 \approx 65\, \text{cm}^3.
+ 				</me>
+				Also, we assume 60 beats per minute. Then, number of beats per day will be
+				<me>
+					N = 60 \times (60 \times 24) = 86,400\,\text{beats/day}.
+				</me>
+				Hence, the volume pumped per day
+				<me>
+					V = N \, V_1 = 5,616,000\,\text{cm}^3 = 5,616\,\text{L}^3\approx 6,000\text{L}^3.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Estimating-Number-of-Hair-on-Full-Scalp"><title>Estimating Numer of Hair on Full Scapl</title>
+
+		<statement>
+			<p>
+				Estimate the total number of hair on your head.
+			</p>
+		</statement>
+		<hint><p>Assume spherical head with hair being on only <m>\theta=20^{\circ}</m> from the pole. </p></hint>
+		<answer><p>360,000.</p></answer>
+		<solution>
+			<p>
+				Supose we make some drastic assumptions: (1) the hear is sphere of radius R. (2) Hair is only on the part of head that is within <m>20^\circ</m> from the top, i.e., the pole. (3) Each hair cell is a circle of radius <m>r\approx 20\,\mu\text{m}</m>. (4) Each hair cell produces one hair fiber.
+			</p>
+			<p>
+				With these, assumptions, we find the solid angle of surface of the part of hair that contains hair to be
+				<me>
+					\Omega = \int_{0}^{2\pi} d\phi \int_0^{\theta_0} \sin\theta\,d\theta\,d\phi = 2\pi\left(1 - cos\theta_0 \right).
+				</me>
+				From calculator, <m>\cos\, 20^\circ \approx 0.94</m>. Therefore, we get
+				<me>
+					\Omega = 0.12\pi.
+				</me>
+				This gives the surface area to be
+				<me>
+					A = \Omega R^2 = 0.12\pi R^2.
+				</me>
+				Now, area of cross-section of each hair cell will be 
+				<me>
+					a = \pi r^2.
+				</me>
+				The ratio will give us the number of hairs.
+				<me>
+					N = \frac{A}{a} = \left( \frac{0.12 R}{r} \right)^2.
+				</me>
+				Now, taking the radius of hear to be <m>10\,\text{cm}</m> and that of a hair cell to be <m>r\approx 20\,\mu\text{m}</m>, we get
+				<me>
+					N = \left( \frac{0.12 \times 10\,\text{cm}}{20\,\mu\text{m}} \right)^2 = 360,000.
+				</me>
+				This is actually in te ball park of actual average number of hair on a human head.
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Estimating-the-Total-Mass-of-All-Water-in-Earths-Oceans"><title>Estimate the Total Mass of All Water in Earth's Oceans</title>
+
+		<statement>
+			<p>
+				Estimate the total mass of all water in Earth's oceans.
+			</p>
+		</statement>
+		<hint><p>
+			From googling I found that average depth of oceans is about <m>3,682\,\text{m}</m> and the radius of Earth is <m>6,378\,\text{m}</m>.
+		</p></hint>
+		<answer><p><m>1.4\times 10^{21}\,\text{kg}.</m></p></answer>
+		<solution>
+			<p>
+				To find the volume of water, we will assume that <m>75\%</m> of Earth is covered by water with average depth of <m>h = 3,682\,\text{m}</m>. Therefore,
+				<me>
+					V = 0.75\left[ \frac{4}{3}\pi R_E^3 - \frac{4}{3}\pi \left( R_E - h \right)^3  \right].
+				</me>
+				Since <m>R_E = 6,378\,\text{m}</m>, <m> h \lt\lt R_E</m>. That means, we can expand the second term and keep term that is only linear in <m>h</m>. This gives
+				<me>
+					\left( R_E - h \right)^3 \approx R_E^3 - 3 R_E^2 h.
+				</me>
+				This simplifies the formula for <m>V</m> to be
+				<me>
+					V = 3 \pi R_E^2 h.
+				</me>
+				The density of water is <m>\rho = 1\,\text{g/cm}^3 = 1000\,\text{kg/m}^3</m>. Hence, the mass of all water in the oceans would be
+				<md>
+					<mrow> M \amp = 3 \pi R_E^2 h \rho</mrow>
+					<mrow> \amp  = 3\pi \left( 6,378,000\,\text{m} \right)^2 \times 3,682\,\text{m} \times 1000\,\text{kg/m}^3 </mrow>
+					<mrow> \amp =  1.4\times 10^{21}\,\text{kg}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise> 
+
+ 
+	<exercise xml:id="ex-Estimating-Gasoline-Used-in-the-United-States"><title>Estimate Gasoline Used in the United States</title>
+
+		<statement>
+			<p>
+				Estimate the amount of gasoline used in cars each year in the United States of America. 
+			</p>
+		</statement>
+		<hint><p>Its a good bet that number of cars plus trucks in the US is close to the population of the US. On average, each vehicle is probably driven 5000 to 10000 miles per year.</p></hint>
+		<answer><p><m>200\times 10^9 \text{gal/year}.</m></p></answer>
+		<solution>
+			<p>
+				Its a good bet that number of cars plus trucks in the US is close to the population of the US. On average, each vehicle is probably driven 5000 to 10000 miles per year, let's say 10,000 miles. Suppose the average mileage of these cars and trucks is 15 mpg, since most of the vehicles will be low mileage trucks. These guestimates will give
+				<me>
+					V = \frac{300\times 10^6 \times 10^4 \text{miles/year}}{15\,\text{miles/gallon}} = 200\times 10^9 \text{gal/year}.
+				</me>
+
+				Compare to what I found by googling: in 2022, Americans used about 135.73 billion gallons of gasoline. Our estimate is not that far off.
+
+
+			</p>
+		</solution>
+	</exercise> 
+ 
+
+</exercises>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

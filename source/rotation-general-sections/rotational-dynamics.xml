@@ -1,0 +1,282 @@
+<section xml:id="sec-rotational-dynamics"><title> Dynamics of Rigid Bodies</title>
+<idx>Rotational Dynamics</idx>
+	<introduction>
+		<p></p>
+		<p>
+			<alert>(Calculus)</alert> Motion of a rigid body has two aspects: (1) the translation motion of the center of mass and (2) the orientation of the body. For rigid bodies, the equations of motion from applying Newton's second law of motion to every particle of the body separates into equations of motion of the center of mass of the body  and equations of motion for angles that can be used to tell the orientation. In total, rather than having many equations of motion, three for each point of the body, we end up with only three equations of motion for the <m>x_\text{cm}</m>, <m>y_\text{cm}</m> and <m>z_\text{cm}</m> of the CM and three equations for the angles, which could be Eueler's angles as we discuss below. 
+		</p>
+		<p>
+			We have seen previously that when we add up equations of motion of all parts of a body, the vector sum gives us the equations of motion of the center of mass, i.e., from <m>d\vec p)i/dt = \vec F_i</m> for particles <m>i</m> of the body, we get
+			<men xml:id="eq-translation-eqn-motion-fixed-coordinates">
+				\frac{d\vec P_\text{cm}}{dt} = \sum\vec F_\text{ext},
+			</men>
+			where
+			<me>
+				\vec P_\text{cm} = \vec p_1 + \vec p_2 + \cdots,
+			</me>
+			and right side is the vector sum of external forces acting on any part of the body.
+		</p>
+		<p>
+			Since angular momentum of each particle <m>\vec l_i = \vec r_i \times \vec p_i</m>, the rate of change of net angular momentum will be
+			<md>
+				<mrow> \frac{d\vec L}{dt} \amp = \frac{d\sum \vec l_i}{dt} = \frac{d}{dt} \sum \left( \vec r_i \times \vec p_i\right)</mrow>
+				<mrow> \amp = \sum \left( \vec v_i \times \vec p_i  + \vec r_i \times \frac{d\vec p_i}{dt}  \right)</mrow>
+			</md>
+			Here, first term will be zero since <m>\vec v_i</m> is parallel to <m>\vec p_i</m>. Using Newton's second law for the second term we get
+			<men  xml:id="eq-rotation-eqn-motion-fixed-coordinates">
+				\frac{d\vec L}{dt} = \sum \vec r_i \times \vec F_i.
+			</men>
+			The quantty <m>\vec r_i \times \vec F_i</m> is called moment of force <m>\vec F_i</m> about origin <m>O</m> with respect to which <m>\vec r_i</m> is the position of particle i. The sum of moments of all forces is called net torque on the body, which we denote by  <m> \vec{\mathcal{T}}</m>.
+			<men xml:id="eq-dynamics-rotation-general">
+				\frac{d\vec L}{dt} = \vec{\mathcal{T}}.
+			</men>
+ 			Equations <xref ref="eq-translation-eqn-motion-fixed-coordinates"/> and <xref ref="eq-dynamics-rotation-general"/> are with respect to inertial or fixed coordinate system. When axis of rotation is not fixed, rotation part is simpler when handled in the moving coordinate system, which can be setup to take advantage of symmetry of the body. Transforming between the two coordinate systems is a challengin exercise which we will tackle in a separate section. In this section we will examine simpler situations where making use of moving coordinates is relatively easy. 
+
+			 
+		</p>
+		<sidebyside widths="65% 10% 25%">
+			<p>
+				A fruitful way to apply <xref ref="eq-dynamics-rotation-general"/> is to think <xref ref="eq-dynamics-rotation-general"/> for small time duration. The change in angular momentum <m>\Delta \vec L</m> will be 
+
+				<me>
+					\Delta \vec L = \vec L(t+\Delta t) - \vec L(t).
+				</me>
+				  
+			</p>
+			<p></p>
+			<figure xml:id="fig-change-in-angular-momentum">
+				<caption></caption>
+				<image source="./images/rotation-general/change-in-angular-momentum.png" width="70%"/>
+			</figure>
+		</sidebyside>
+
+		<p>
+			Then, we can relate the change to torque to the change in angular momentum vector.
+			<me>
+				\vec{\mathcal{T}} = \frac{\vec L(t+\Delta t) - \vec L(t)}{\Delta t},\ \ \ \text{or}\ \ \ \Delta \vec L = \vec{\mathcal{T}}\, \Delta t.
+			</me>
+		</p>
+ 
+		<sidebyside widths="60% 5% 35%">
+			<p>
+				If magnitude of angular momentum is not changing, then <xref ref="fig-change-in-angular-momentum-tangential"/> shows that in the limit <m>\Delta t\rightarrow 0</m> limit, <m>\vec L(t)</m> and <m>\vec L(t+\Delta t)</m> are radial with tips at the circle of radius <m>|\vec L|</m> and therefore, <m>\Delta \vec L</m> is tangential. That would make <m>\Delta\vec L</m> perpendicular to <m>\vec L</m>.
+				  
+			</p>
+			<p></p>
+			<figure xml:id="fig-change-in-angular-momentum-tangential">
+				<caption></caption>
+				<image source="./images/rotation-general/change-in-angular-momentum-tangential.png" width="70%"/>
+			</figure>
+		</sidebyside>
+ 
+
+	</introduction>
+
+	<example xml:id="ex-Torque-on-Rotating-Angular-Momentum-of-a-Dumbbell"><title>(Calculus) Torque on Rotating Angular Momentum of a Dumbbell</title>
+
+		<statement>
+
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					In <xref ref="ex-Angular-Momentum-of-a-Dumbbell-skew-axis"/> we found angular momentum vector of a rotating dumbbell.
+					<md>
+						<mrow>\amp L_x = b \cos\omega t,</mrow>
+						<mrow>\amp L_y = b \sin\omega t,</mrow>
+						<mrow>\amp L_z = 2ma^2\sin^2\theta,</mrow>
+					</md>
+					 			
+				</p>
+				<p></p>
+				<figure xml:id="fig-ang-mom-dumbbell-skew-axis-dynamics">
+					<caption></caption>
+					<image source="./images/rotation-general/ang-mom-dumbbell-skew-axis.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				where <m>b = 2m\omega a^2\sin\theta\cos\theta</m>. 
+				(a) Show that projection of anglar momentum vector in <m>xy</m>-plane rotates about <m>z</m>-axis with angular speed <m>\omega</m>. (b) Some frce must be acting on the dumbbell for angular momentum vector to change in time. Find the torque on the dumbbell.
+			</p>
+ 
+		</statement>
+		<!-- <hint><p>
+			Just use <m>\vec{\mathcal{T}} = \frac{d\vec L}{dt}</m>.
+		</p></hint> -->
+		<answer><p>
+			(b) <m>\mathcal{T}_x = - b\omega\,  \sin\omega t,\ \ \mathcal{T}_y = b\omega\,  \cos\omega t,\ \ \mathcal{T}_z=0</m>. 
+		</p></answer>
+		<solution><title>a</title>
+
+
+			<sidebyside widths="55% 10% 35%">
+				<p>
+					 The projection vector <m>\vec L_{xy}</m> at instant <m>t</m> will have components <m>L_x</m> and <m>L_y</m>. Projection vector is pointed in <m>xy</m>-plane radially out from the origin in the direction of angle <m>\phi=\omega t</m> with respect to <m>x</m>-axis. Therefore, this vector will rotate with angular speed <m>\omega</m>.		 			
+				</p>
+				<p></p>
+				<figure xml:id="fig-ang-mom-dumbell-projected-xy">
+					<caption></caption>
+					<image source="./images/rotation-general/ang-mom-dumbell-projected-xy.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			
+		</solution>
+
+		<solution><title>b</title>
+			<p> 
+				We apply rotational dynamics equation in the component form to get
+				<md>
+					<mrow>\amp \mathcal{T}_x = \frac{dL_x}{dt} =  - b\omega  \sin\omega t,</mrow>
+					<mrow>\amp \mathcal{T}_y = \frac{dL_y}{dt} =  b\omega  \cos\omega t,</mrow>
+					<mrow>\amp \mathcal{T}_z = \frac{dL_z}{dt}  = 0.</mrow>				
+				</md>
+ 
+			</p>
+
+		</solution>
+	</example>	
+
+
+
+	<example xml:id="ex-Torque-on-Rotating-a-Spinning-Sphere"><title>(Calculus) Torque on Rotating a Spinning Sphere</title>
+
+		<statement>
+ 
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					<xref ref="fig-torque-on-spinning-sphere"/> shows a person holding the axle of a spinning sphere of mass <m>M</m> and radius <m>R</m> that is rotating about the axle at angular speed <m>\omega</m>. For simplicity, imagine this is in outer space. He starts to change the orientation of the axle at a steady angular speed <m>\Omega</m> by applying a steady torque. Find the torque required.
+				</p>
+				<p></p>
+				<figure xml:id="fig-torque-on-spinning-sphere">
+					<caption></caption>
+					<image source="./images/rotation-general/torque-on-spinning-sphere.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				
+			</p>
+
+		</statement>
+		<!-- <hint><p>
+			Angular momentum changes direction in time.
+		</p></hint> -->
+		<answer><p>
+			<m>\frac{2}{5}MR^2\omega\Omega\,\left( -\sin\Omega t\ \hat i + \cos\Omega t\ \hat j \right)</m>.
+		</p></answer>
+		<solution>
+
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					 Let's sketch a figure with axes for situation at instant <m>t</m>, when the axis is pointed in the direction with azimuthal angle <m>\phi=\Omega t</m>. Angular momentum from the spinning is denoted by <m>\vec L_{xy}</m> in the <xref ref="fig-torque-on-spinning-sphere-sol"/>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-torque-on-spinning-sphere-sol">
+					<caption></caption>
+					<image source="./images/rotation-general/torque-on-spinning-sphere-sol.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				Magnitude of <m>\vec L_{xy}</m> will be <m>I\omega</m> with <m>I=\frac{2}{5}MR^2</m> since axis is through the center of the sphere. Since <m>\phi = \Omega\,t</m>, the direction  of <m>\vec L_{xy}</m> is that of unit vector <m>\hat u</m> given by
+				<me>
+					\hat u = \cos\Omega t\ \hat i + \sin\Omega t\ \hat j.
+				</me> 
+				Therefore, we will have
+				<me>
+					\vec L_{xy} = \frac{2}{5}MR^2\omega\,\left( \cos\Omega t\ \hat i + \sin\Omega t\ \hat j \right).
+				</me>
+				The total angular momentum of the sphere will be
+				<me>
+					\vec L = \vec L_{xy} + \vec L_z,
+				</me>
+				where <m>L_z</m> is the <m>z</m>-component of the angular momentum. Since <m>L_z</m> is constant in time, for torque we will get
+				<md>
+					<mrow> \vec{\mathcal{T}} \amp = \frac{d\vec L}{dt} = \frac{d\vec L_{xy}}{dt} </mrow>
+					<mrow>  \amp = \frac{2}{5}MR^2\omega\Omega\,\left( -\sin\Omega t\ \hat i + \cos\Omega t\ \hat j \right). </mrow>
+				</md> 
+
+
+			</p>
+
+		</solution>
+	</example>
+
+
+
+
+	<example xml:id="ex-Torque-on-a-Rolling-Disk"><title> (Calculus) Torque on a Rolling Disk</title>
+
+		<statement>
+ 
+			<sidebyside widths="55% 5% 40%">
+				<p>
+					<xref ref="fig-dynamics-of-rolling-a-disk"/> shows a disk of mass <m>M</m> and radius <m>R</m> attached to an axle of length <m>a</m> which is attached to a vertical rotatatable shaft. A torque <m>\mathcal{T}</m> is required to uniformly rotate the disk without slipping. Find required torque.	 			
+				</p>
+				<p></p>
+				<figure xml:id="fig-dynamics-of-rolling-a-disk">
+					<caption></caption>
+					<image source="./images/rotation-general/dynamics-of-rolling-a-disk.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+		</statement>
+		<!-- <hint><p>
+			First find angular momentum about axle. Only this component of angular momentum changes with time.
+		</p></hint> -->
+		<answer><p>
+			<m>\frac{1}{2}MR^2\omega\Omega\, \left(-\sin\Omega\,t \, \hat i + \cos\Omega\,t \, \hat j \right)</m>.
+		</p></answer>
+		<solution>
+			<p>
+				We can get speed of rotation of disk about the axle by noting that in the time <m>\Delta t</m> in which the disk goes once around in a circle of radius <m>a</m>, a point on the disk woould travel <m>2\pi R n</m> where <m>n</m> is the number of rotations. That is
+				<me>
+					2\pi R n = 2\pi a.
+				</me>
+				Therefore
+				<me>
+					 n = a/R.
+				</me>
+				We use angular speed for rolling around in circle of radius <m>a</m> to find time for going once around.
+				<me>
+					\Delta t = \frac{2\pi}{\Omega}.
+				</me>
+				Therefore, angular speed for rotation about axle is
+				<me>
+					\omega = \frac{2\pi n}{\Delta t} = \frac{\Omega}{2\pi} \times  \frac{ 2\pi a }{R} = \frac{a\Omega}{R}.
+				</me>
+
+			</p>
+			<p>
+				Since the disk is uniformly going around the central shaft, vertical component of angular momentum is constant in time.  
+
+			</p>
+
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					 However, since the direction of axle is changing at rate <m>\Omega</m>, angular momnetum about axle will be a function of time. Just as we have seen in <xref ref="ex-Torque-on-Rotating-a-Spinning-Sphere"/>, we denote angular momentum pointed in the direction of axle by <m>\vec L_{xy}</m>.	 			
+				</p>
+				<p></p>
+				<figure xml:id="fig-dynamics-of-rolling-a-disk-sol">
+					<caption></caption>
+					<image source="./images/rotation-general/dynamics-of-rolling-a-disk-sol.png" width="70%"/>
+				</figure>
+			</sidebyside>
+
+			<p>
+				The magnitude of <m>\vec L_{xy}</m> will be <m>I\omega</m> with <m>I=\frac{1}{2}MR^2</m> with direction changing with time as given by the unit vector <m>\hat u = \cos\Omega t\, \hat i + \sin\Omega t\, \hat j</m>. Thus,
+ 
+				<me>
+					\vec L_{xy} = \frac{1}{2}MR^2\omega\, \left(\cos\Omega\,t \, \hat i + \sin\Omega\,t \, \hat j \right),
+				</me>
+				with <m>\vec L = \vec L_{xy} + \vec L_z</m>. To find torque, we just need to take a derivative with respect to time. Since, <m>L_z</m> is not changing with time, we need derivative of only <m>\vec L_{xy}</m>.
+				<md>
+					<mrow> \vec{ \mathcal{T} } \amp = \frac{d\vec L}{dt} = \frac{d\vec L_{xy}}{dt}</mrow>
+					<mrow>   \amp = \frac{1}{2}MR^2\omega\Omega\, \left(-\sin\Omega\,t \, \hat i + \cos\Omega\,t \, \hat j \right)</mrow>
+				</md> 
+
+			</p>
+		</solution>
+	</example>
+
+
+
+
+</section>
+

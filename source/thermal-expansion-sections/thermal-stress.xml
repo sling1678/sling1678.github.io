@@ -1,0 +1,212 @@
+<section xml:id="Thermal-Stress"><title> Thermal Stress </title>
+
+	<subsection> <title> Thermal Stress in Solids </title>
+		<p>
+
+			Materials normally expand when heated and contract when cooled.  Now, if you clamp both ends of a rod with a material that has a much smaller coefficient of expansion and prevent the rod from expanding or contracting, then a tensile or compressive stress, called <term> thermal stress</term>, will develop in the rod as a result of a change of temperature.  The resulting stress can be quite large and could cause damage to the material.
+		</p> 
+		<p>
+
+			An engineer must take this effect into account when designing or choosing a  construction material.  For instance, the reinforcing rods in concrete are made of steel since the coefficients of linear expansion of steel is nearly the same as that of concrete.  If you were to reinforce concrete with aluminum, which has a coefficient of linear expansion twice that of concrete, a stress would develop in the concrete when temperature changes.
+		</p>
+		<p>  
+
+			Another way to reduce stress is to allow the ends  to expand or contract freely as done in highways and railroad tracks, where the gaps between blocks are deliberately left to prevent thermal stress from developing.
+		</p>
+		<p> 
+
+			To calculate the thermal stress in a rod with both ends fixed rigidly, we can think of the process of the development of stress as occurring in two steps: 
+			<ol>
+				<li> First let the ends be free to expand (or contract) and find the net expansion (or contraction) that would have occured if the ends were free to expand. </li>
+				<li> Then use a force to compress (or expand) the material to the original length and find the resulting stress by using the methods of Statics studied in mechanics. </li>
+			</ol>
+		</p>
+		<p>
+			Suppose a bar of length <m>L</m>, area of cross-section <m>A</m>, coefficient of linear expansion  <m>\alpha</m>, and Young's modulus <m>Y</m> be subject to a change of temperature <m>\Delta T</m>.  We get formula for thermal stress in the bar by following these steps.
+		</p>
+		<p> Step 1:  Change in length if expansion were allowed to take place freely.
+			<me>
+				\frac{\Delta L}{L} = \alpha\Delta T
+			</me>
+		</p>
+		<p> Step 2:  Using this <m>\Delta L/L</m> as strain in Hooke's law gives the stress in the rod. This is thermal stress. 
+			<me>
+				\text{Thermal Stress } = \frac{F}{A}= - Y \frac{\Delta L}{L} = - Y \alpha \Delta T.
+			</me>
+		</p>
+		<p> Steps 1 and 2 yield the following for the thermal stress.
+			<me>
+				\text{Thermal Stress } = - Y \frac{\Delta L}{L} = - Y \alpha \Delta T.
+			</me>	 
+		If  temperature increases, i.e.  if <m>\Delta T\gt 0</m>, thermal stress would attempt to restore the original length.  Therefore, the stress would be compressive.  If the temperature decreases, i.e.  <m>\Delta T\lt 0</m>, then the thermal stress is pointed outward, i.e. tensile.
+		</p>
+		<!-- (<xref ref="fig-thermal-stress"/>)
+		<figure xml:id="fig-thermal-stress">
+			<caption>
+				Compressive and tensile stresses for anchored beam when  <m>\Delta T>0</m> and  <m>\Delta T\lt 0</m> respectively.
+			</caption>
+			<image source="./images/heat-and-temperature/thermal-stress.png" width="70%"/>
+ 
+		</figure> -->
+ 	</subsection>
+
+	<exercise xml:id="ex-Thermal-Stress-in-Concrete"><title> Thermal Stress in Concrete </title>
+		<statement>
+			<p>
+				Concrete blocks are laid out next to each other on a highway without any space between them such that they are prevented from expanding.  The construction crew did their work on a winter day when the temperature was <m>5^{\circ}</m>C.  What will be the stress in the blocks on a hot summer day when the temperature is <m>38^{\circ}</m>C ?  (b) If the ultimate compressive strength of concrete is <m>20\times10^6\ \text{N/m}^2</m>, will the blocks fracture?  
+			</p>
+			<p>
+				Data: Youngs modulus of concrete = <m>20\times 10^9\ \text{N/m}^2</m>, and the coefficient of linear expansion = <m>12\times 10^{-6}</m> per degree Celsius.
+			</p>
+
+		</statement>
+		<hint> <p>  Use definition. </p> </hint>
+		<answer> <p> (a) <m> 7.9\times 10^6\ \text{N/m}^2</m>, (b) Np.  </p> </answer>
+		<solution> 
+			<p>
+				(a) Using the formula given above, we find the thermal stress to be:
+				<md>
+					<mrow> \text{Thermal Stress } \amp = - Y \alpha \Delta T </mrow>
+					<mrow>   \amp = (20\times10^9\ \text{N/m}^2)(12\times 10^{-6}\text{C}^{-1})(38-5)^{\circ}\text{C} </mrow>
+					<mrow>   \amp = 7.9\times 10^6\ \text{N/m}^2. </mrow>
+ 
+  				</md>
+  			</p>
+  			<p>
+				(b) No, the concrete will not fracture by compressive stress as the stress does not exceed the ultimate compressive strength.  But, it does exceed ultimate sheer strength of concrete which is only <m>2\times 10^6\ \text{N/m}^2</m> and it might chip off.
+			</p>
+		</solution>
+	</exercise>	
+ 
+	<exercise xml:id="ex-Thermal-Stress-on-Brass-Cylinder"><title> Thermal Stress on Brass Cylinder </title>
+		<statement>
+			<p>
+				A brass cylinder of length <m>1\text{ m}</m> and area of cross-section <m>0.0025 \text{ m}^2</m> fits snugly between two marble slabs fixed in two rigid walls when the temperature is <m>20^{\circ}\text{C}</m>.  The brass is then heated to a temperature of <m>30^{\circ}\text{C}</m>.  Find (a) the stress in brass, and (b) the force the brass cylinder exerts on one of the slabs assuming no expansion in the marble slabs or the walls.  
+			</p>
+			<p>
+				Data: Brass: <m>Y = 10^{11}\ \text{N/m}^2</m>, <m>\alpha  = 19 \times 10^{-6}\text{C}^{-1}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use <m>Y\alpha \Delta T</m>, (b) Use stress <m>= F/A</m>. </p> </hint>
+		<answer> <p> (a) <m> 1.9 \times 10^7\ \text{N/m}^2</m>, (b) 47,500 N.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a) The magnitude of thermal stress will be
+				<me>
+					Y \alpha\Delta T = 10^{11}\frac{\text{N}}{\text{m}^2}\times \frac{19\times 10^{-6}}{\ ^{\circ}\text{C}}\times 10^{\circ}\text{C} = 1.9\times 10^7 \ \text{Pa}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b) The magnitude of the force the bar pushes the sides will be stress times the area of cross-section.
+				<me>
+					F = \text{Stress}\ \times\ \text{Area} = 48,000\ \text{N}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="ex-Thermal-Stress-on-Steel-Bar-Between-Two-Rigid-Walls"><title> Thermal Stress on Steel Bar Between Two Rigid Walls </title>
+		<statement>
+			<p>
+				A <m>1\text{-m}</m> steel bar of cross-sectional area <m>0.003\ \text{m}^2</m> is flush with two smooth and rigid walls when the temperature is <m>-5^{\circ}\text{C}</m>.  
+			</p>
+ 
+			<p>
+				Assuming no change in the distance between the walls, what will be the stress in the steel bars when the temperature of the bar is  <m>500^{\circ}\text{C}</m>?  
+			</p>
+			<p>
+				Data: Steel: Y = <m>2\times10^{11}\ \text{N/m}^2</m>; <m>\alpha  = 12 \times 10^{-6}/ ^\circ\text{C}</m>.	
+			</p>
+
+		</statement>
+		<hint> <p>  Find the change in length due to temperature change but assuming it was free to expand. Then use the strain to find the corresponding stress by <m>\sigma = Y \epsilon</m>. </p> </hint>
+		<answer> <p> <m>1.2 \times 10^9\ \text{N/m}^2</m>.  </p> </answer>
+		<solution> 
+ 
+			<p> 
+				If the bar was allowed to expand freely, the resulting strain would be
+				<md>
+					<mrow> \dfrac{\Delta L}{L} \amp = \alpha \Delta T </mrow>
+					<mrow> \amp = 12 \times 10^{-6} \times 505 = 6.06\times 10^{-3}.</mrow>
+				</md> 
+				Because of the rigid walls, no change in length will occur because, the forces by the walls would have compressed the expected expansion. We use Hooke's law to find the resulting stress in the bar.
+				<md>
+					<mrow> \sigma \amp = Y \epsilon </mrow>
+					<mrow> \amp = 2\times10^{11}\ \text{N/m}^2 \times 6.06\times 10^{-3} = 1.2 \times 10^{9}\ \text{N/m}^2. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise> 
+
+	<exercise xml:id="ex-Change-in-Tension-of-a-Wire-with-Temperature"><title> Change in Tension of a Wire with Temperature </title>
+		<statement>
+			<p>
+				A steel wire of cross-sectional area <m>3.14\times 10^{-6}\ \text{m}^2</m>  is fixed to the concrete ceiling and a 2-kg mass is hung from the bottom.  The length of the steel wire is <m>1.2\ \text{m}</m> when the temperature in the room is <m>35^{\circ}\text{C}</m>.  
+			</p>
+			<p>
+				(a) What will be the length of the wire when the temperature is <m>0^{\circ}\text{C}</m>? 
+			</p>
+			<p>
+				(b) Find the tension in the wire when the temperature of the room is  <m>0^{\circ}\text{C}</m>. 
+			</p>
+			<p>
+				Date: Steel: <m>\text{Y} = 2\times10^{11}\ \text{N/m}^2</m>;  <m>\alpha = 12\times10^{-6}/\text{C}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> (a) Use <m>\Delta L = \alpha L \Delta T</m>, (b) Balance force on hanging weight. </p> </hint>
+		<answer> <p> (a) <m>0.5\text{ mm}</m>, (b) <m>19.6\text{ N}</m>. </p> </answer>
+		<solution> 
+			<p>
+				(a) The thermal contraction from a length 1.2 m gives following change in length,
+				<me>
+					\Delta L = \alpha L \Delta T = \frac{12\times10^{-6}}{\ ^{\circ}\text{C}} \times 1.2\ \text{m}\times (35-0)^{\circ}\text{C} = 0.5\ \text{mm}.
+				</me>
+				Therefore, the change in the length will be imperceptible with the precision given in the problem.  If you round off <m>\Delta L</m> to 1 mm, then the  new length will be 1.99 m.
+			</p>
+			<p>
+				(b) The tension in the string will still need to support only the weight of 2 kg as you can see from balancing the forces on the mass element where the 2-kg block is attached.
+				<me>
+					T = 2\ \text{kg} \times 9.81\ \text{m/s}^2 = 19.6\ \text{N}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<subsection> <title> Thermal Stress in Liquids and Gas </title>
+		<p>
+			Stress in liquids and gases are called pressure. When we heat liquid or gas while confining its volume, presure will increase. In the case of ideal gas (i.e., regular gas at low density) we find the following fractional change in pressure when we change temperature.
+			<men xml:id="eq-pressure-change-ideal-gas-constant-volume">
+				\dfrac{\Delta p}{p} = \dfrac{\Delta T}{T}\ \ \ (\text{Ideal gas, constant volume})
+			</men>
+		</p>
+	</subsection>
+ 
+	<subsection> <title> (Calculus) Pressure Change in Ideal Gas at Constant Volume</title>
+		<p>
+			The infinitesimal form of Eq. <xref ref="eq-pressure-change-ideal-gas-constant-volume"/> will be
+			
+			<men>
+				\dfrac{d p}{p} = \dfrac{d T}{T}\ \ \ (\text{Ideal gas, constant volume.})
+			</men>
+			Integrating this equation from <m> (T_1,p_1) </m> to <m> (T_2,p_2) </m> we get
+			<me>
+				\ln p_2 - \ln p_1 = \ln T_2 - \ln T_1,
+			</me>
+			which can be written as
+			<me>
+				\dfrac{p}{T} = \text{Constant} \ \ \ \text{(Constant Volume)}.
+			</me>
+		</p>
+	</subsection>
+
+
+
+  
+</section>

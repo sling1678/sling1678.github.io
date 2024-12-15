@@ -1,0 +1,298 @@
+<section xml:id="oneD-Acceleration"> <title> Acceleration </title>
+	<introduction>
+		<p>
+			Study of the rate of change of position <m> x </m> gave us velocity <m> v_x</m>. We apply the same methods to study the rate of change of <m> v_x</m>. Therefore, we define an average acceleration and an instantaneous acceleration. For a motion on the <m> x </m> axis, we will denote instantaneous acceleration by symbol <m> a_x</m> and average acceleration by <m> a_{\text{av},x}</m>.
+
+		</p>
+	</introduction>
+
+
+
+	<subsection><title> Average Acceleration</title>
+
+		<p>
+			The average rate of change of velocity during an interval from <m> t_i </m> to <m> t_f </m>  can be obtained by dividing the change in velocity by the interval. Let <m> v_{i,x} </m> be the velocity at <m> t_i</m> and  <m> v_{f,x} </m> be the velocity at <m> t_f</m>, then average acceleration, <m> a_{\text{av},x}</m>, will be
+			<men>
+				  a_{\text{av},x}  = \dfrac{v_{f,x} - v_{i,x}}{ t_f - t_i}.
+			</men>
+			We often write this as
+			<me>
+				a_{\text{av},x}  = \dfrac{\Delta v_x}{ \Delta t},
+			</me>
+			where <m> \Delta v_x = v_{f,x} - v_{i,x}</m> and <m>\Delta t = t_f - t_i</m>.
+		</p>
+
+	</subsection>
+
+
+	<subsection><title> Instantaneous Acceleration</title>
+
+
+		<p>
+			Often we want acceleration <alert> at a particular instant</alert>. What we mean by this is the average acceleration between that instant, say <m> t </m> and an instant very close to <m> t</m>, e.g., a tiny amount of time later than <m> t</m>, which we can indicate by <m> t + \Delta t </m>. How close to <m> t </m> should the instant <m> t + \Delta t </m> be? The answer is as close to <m> t </m> as possible. This is the notion of infinetismal interval.
+		</p>
+		<p>
+			Denoting the instantaneous acceleration for a motion along the <m> x </m> axis by the symbol <m> a_x </m>, we write this special averaging formally as
+			<men xml:id="eq-instantaneous-acceleration-1d-limit">
+				a_x = \dfrac{v_x\left(\text{at } (t+\Delta t)\right) - v_x\left(\text{at } t\right)}{\Delta t},
+			</men> 
+			for <m> t+\Delta t </m> as close to <m> t </m> as possible. Since <m> a_x </m> is a ratio of a change in <m> v_x </m> to a change in <m> t </m> it can be computed by <alert> the slope of <m> v_x </m> versus <m> t</m> plot</alert>.  
+		</p>
+
+
+
+	</subsection>
+
+
+	<subsection> <title> Graphical Definition of Acceleration </title>
+
+
+		<p>
+			Since the slope of a function is the rate of change of that function, the rate of change of velocity at a particular instant can be obtained from the slope of the tangent of the velocity versus time plot. We can take this as defining acceleration <m> a_x </m> for one-dimensional motion on the <m> x </m> axis.
+ 
+			<men>
+				 a_x = \text{ slope of tangent to }v_x\text{ versus }t.
+			</men>
+		</p>
+	
+		<p>
+			If the plot of <m> v_x </m> versus <m> t </m> is linear, i.e., a straight line, then the tangent line is same as the line of the plot, hence <m> a_x </m> is just the slope of the line. 
+		</p>
+
+			
+
+		<figure xml:id="accln-positive-and-negative">
+			<caption> 
+				The slope of <m> v_x </m> versus <m> t </m> plot gives the acceleration <m> a_x </m>. Since the plot is linear, the slope is same for all instants plotted. In (a) <m> a_x = 1.0 \text{ m/s}^2</m> and in (b) <m> a_x = - 0.75 \text{ m/s}^2</m>. 
+			</caption>		
+				
+			<image source="./images/one-dim-motion/accln-positive-and-negative.png" width="80%"/>
+		</figure>
+
+		<p>
+			But, if the  plot of <m> v_x </m> versus <m> t </m> is curved, then you would draw a tangent line at the instant of interest, and compute the slope of the tangent line to get <m> a_x </m>.
+		</p>
+
+		<figure xml:id="fig-ax-from-vx-vs-t-curved">
+			<caption> 
+				The slope of <m> v_x </m> versus <m> t </m> plot gives the acceleration <m> a_x </m>. Since the plot is not linear, we need to first draw a tangent line at the instant we want the acceleration value. The figure illustrates <m> a_x</m> at <m> t = 4\text{ sec}</m>, where the slope of the tangent line is <m>a_x = (4-(-1))/(5-3) = 2.5\text{ m/s}^2 </m>.
+			</caption>		
+				
+			<image source="./images/one-dim-motion/ax-from-vx-vs-t-curved.png" width="80%"/>
+		</figure>
+
+
+
+
+
+		<exercise xml:id="ex-Using-slope-of-vx-to-compute-ax"><title> Using slope of <m> v_x </m> to compute <m> a_x </m> </title>
+			<statement>
+				<p>
+					From the <m> v_x </m> versus <m> t </m> plot in <xref ref="fig-checkpoint-x-from-v-areas"/>, find  <m> a_x </m> at the following instants: (a) <m> t = 1\text{ sec}</m>, (b)  <m> t = 3\text{ sec} </m>, and (c)  <m> t = 3.75\text{ sec} </m>.
+				</p>
+				<figure xml:id="fig-checkpoint-x-from-v-areas">
+					<caption>
+						Figure for <xref ref="ex-Using-slope-of-vx-to-compute-ax" />.
+					</caption>
+					<image source="./images/one-dim-motion/checkpoint-x-from-v-areas-new.png" width="80%"/>
+				</figure>
+
+			</statement>
+			<hint> <p>  Use slopes. </p> </hint>
+			<answer> <p> (a) <m>0</m>, (b)  <m>-4\text{ m/s}^2</m>, (c) <m>4\text{ m/s}^2</m> </p> </answer>
+			<solution> 
+				<p>
+					(a) The <m> v_x </m> versus <m> t</m> plot through the time when <m> t = 1\text{ sec}</m> is a straight line. Therefore, <m> a_x </m> will simply be slope of this part of the plot. The slope of this line is clearly zero. Therefore, <m> a_x (\text{at }t=1\text{ sec}) = 0</m>.
+				</p>
+				<p>
+					(b) The <m> v_x </m> versus <m> t</m> plot through the time when <m> t = 3\text{ sec}</m> is a straight line. Therefore, <m> a_x </m> will simply be slope of this part of the plot. The slope of this line is obtained by picking two points on the line between <m> t = 2\text{ sec}</m> and <m> t = 3.5\text{ sec}</m>. We pick points at <m> t = 2\text{ sec}</m> and <m> t = 3\text{ sec}</m> to obtain
+					<me>
+					a_x = \dfrac{0 - 4\text{ m/s}}{3\text{ s}-2\text{ s}} = -4\text{ m/s}^2.
+					</me>
+				</p>
+				<p>
+					(b) The <m> v_x </m> versus <m> t</m> plot through the time when <m> t = 3.75\text{ sec}</m> is a straight line. Therefore, <m> a_x </m> will simply be slope of this part of the plot. The slope of this line is obtained by picking two points on the line between <m> t = 3.5\text{ sec}</m> and <m> t = 4.0\text{ sec}</m>. We pick points at <m> t = 3.5\text{ sec}</m> and <m> t = 4\text{ sec}</m> to obtain
+					<me>
+					a_x = \dfrac{0 - (-2)\text{ m/s}}{4\text{ s}-3.5\text{ s}} = 4\text{ m/s}^2.
+					</me>
+				</p>
+			</solution>
+		</exercise>
+
+
+	</subsection>
+
+
+	<subsection> <title> <m>\Delta v_x</m>  from <m>a_x</m> Graphically</title>
+
+		<p>
+			We have learned that area under <m>v_x</m> versus <m>t</m> corresponds to change in <m>x</m>. Similarly, we can get <m>\
+			Delta v_x</m> from area under the curve of <m>a_x</m> versus <m>t</m> as illustrated in <xref ref="fig-v-from-ax-vs-t-main-new" />.
+		</p>
+		<p>
+			The area under the curve is the area between the graph and <m>a_x=0</m> line. Therefore, for positive <m>a_x</m> we get positive area and for negative <m>a_x</m> we get netative area.
+		</p>
+
+ 
+
+		<figure xml:id="fig-v-from-ax-vs-t-main-new">
+			<caption>
+				The area under the curve to get <m> \Delta v_x </m> from <m> a_x</m> versus <m> t </m> plot. The area for the curve when <m> a_x \gt 0</m> is positive, as between <m> t=0 </m> and <m> t= 2\text{ sec}</m> and the area for the curve when <m> a_x \lt 0</m> is negative, as between <m> t= 2\text{ sec} </m> and <m> t= 4\text{ sec}</m>.
+			</caption>
+
+			<image source="./images/one-dim-motion/v-from-ax-vs-t-main-new.png" width="80%"/>	
+		</figure>
+
+
+	</subsection>
+
+
+
+	<exercise xml:id="ex-Compute-Delta-vx-from-ax-versus-t-plot"><title> Compute <m> \Delta v_x </m> from <m> a_x</m> versus <m> t </m> plot </title>
+		<statement>
+			<p>
+				A ball is initially (<m> t=0 </m>) moving at <m> v_x = 3\text{ m/s}</m>. The acceleration of the ball at different times are as shown in the  <m> a_x </m> versus <m> t </m> plot in <xref ref="fig-checkpoint-v-from-a-areas" />. Find <m> v_x </m> at (a) <m> t = 1\text{ sec} </m>, (b)  <m> t = 2\text{ sec} </m>, and (c)  <m> t = 4\text{ sec} </m>.
+			</p>
+			<figure xml:id="fig-checkpoint-v-from-a-areas">
+				<caption>
+					Figure for <xref ref="ex-Compute-Delta-vx-from-ax-versus-t-plot"/>.
+				</caption>
+				<image source="./images/one-dim-motion/checkpoint-v-from-a-areas.png" width="70%"/>
+			</figure>
+			
+		</statement>
+		<hint> <p> Use area-under-curve.  </p> </hint>
+		<answer> <p> (a) <m>5\text{ m/s}</m>,  (b) <m> 5\text{ m/s}</m> , (c) <m>1\text{ m/s} </m>.</p> </answer>
+		<solution> 
+			<p>
+				(a) From the area-under-curve we can find the change in <m> v_x </m> during <m> t= 0 </m> to <m> t = 1\text{ sec}</m>. Adding this change to the <m> v_x </m> at <m> t= 0</m> will give us the <m> v_x </m> at <m> t=1\text{ sec}</m>.
+				<me>
+				\Delta v_x = \dfrac{1}{2}\times 4 \times 1 = 2\text{ m/s}.
+				</me>
+				Therefore, <m> v_x </m> at <m> t=1\text{ sec}</m>:
+				<me>
+				v_x(\text{ at }t=1\text{ sec }) = v_x(\text{ at }t=0\ ) + \Delta v_x = 5\text{ m/s}.
+				</me>
+			</p>
+			<p>
+				(b) The area-under-the-curve during <m> t= 1\text{ sec} </m> to <m> t = 2\text{ sec}</m> is zero. Hence the velocity does not change over this interval, i.e., <m>\Delta v_x = 0 </m>. 
+				<me>
+				v_x(\text{ at }t=2\text{ sec }) = v_x(\text{ at }t=1\text{ sec } ) + \Delta v_x = 5\text{ m/s}.
+				</me>
+			</p>
+
+			<p>
+				(c) From the area-under-curve we can find the change in <m> t= 2\text{ sec} </m> to <m> t = 4\text{ sec}</m>. Adding this change to the <m> v_x </m> at <m> t= 2\text{ sec}</m> will give us the <m> v_x </m> at <m> t=4\text{ sec}</m>.
+				<me>
+				\Delta v_x =  -2 \times (4-2) = -4\text{ m/s}.
+				</me>
+				Therefore, <m> v_x </m> at <m> t=4\text{ sec}</m>:
+				<me>
+				v_x(\text{ at }t=4\text{ sec }) = v_x(\text{ at }t=2\text{ sec }  ) + \Delta v_x = 1\text{ m/s}.
+				</me>
+			</p>
+
+		</solution>
+	</exercise>
+
+
+
+	<subsection> <title> (Calculus) Analytic Definition of Acceleration </title>
+
+		<p>
+			The derivative of velocity with respect to time gives the rate at which velocity changes. That is, acceleration  <m> a_x </m> on the <m> x </m> axis is the derivative of the velocity <m> v_x </m>.
+		</p>
+ 
+		<p>
+			<men xml:id="eq-1d-review-accleration-def">
+				 a_x = \dfrac{dv_x}{dt}.
+			</men>
+		</p>
+ 
+	</subsection>
+
+	<exercise xml:id="ex-Velocity-and-Acceleration-from-Derivative"><title> (Calculus) Velocity and Acceleration from Derivative</title>
+		<statement>
+			<p>
+				In theoretical work you might find that you are given position as a function <m> x(t) </m>. For example, a block attached to a spring oscillates with its position <m> x(t) = (5 \text{ cm}) \cos( 2\pi t)</m>, where <m> t </m> is in seconds. If you plot this <m> x </m> versus <m> t </m>, you will notice that the block moves between <m> x = - 5 </m> cm and <m> x = 5 </m> cm, repeating a complete cycle every second. 
+			</p>
+			<p> (a) 
+				What is the velocity of this block at (i) <m> t = 0.25 </m> s, (ii) 
+				<m> t = 0.5 </m> s, and (iii) <m> t = 0.75 </m> s.
+			</p>
+			<p> (b) 
+				What is the acceleration of this block at (a) <m> t = 0.25 </m> s, (b) 
+				<m> t = 0.5 </m> s, and (c) <m> t = 0.75 </m> s.
+			</p>	
+		</statement>
+		<hint>
+			<p>Take the derivatives.
+			</p>
+		</hint> 
+		<answer>
+			<p>
+			(a) (i) <m>-10\pi\text{cm/s}</m>, (ii) <m>0</m>, (iii) <m>10\pi\text{ cm/s}</m>,
+			(b) (i) <m>0</m>, (ii) <m>20\pi^2 \text{ cm/s}^2</m>, (iii) <m>0</m>.
+			</p>
+		</answer>
+		<solution><title> (a) </title>
+			<p>
+				Taking the derivative of given <m> x(t) </m> and then evaluating the result at the requires times should give us the answers.
+			</p>
+			<p> 
+				<me>
+					v_x = \dfrac{dx}{dt} = (-10\pi \text{ cm/s}) \sin(2\pi t).
+				</me>
+			</p>
+			<p>
+				(i) <m>v_x = (-10\pi \text{ cm/s}) \sin(2\pi \times 0.25) = -10\pi \text{ cm/s} = -31.4 \text{ cm/s}. </m>
+			</p>
+			<p>
+				(ii) <m>v_x = (-10\pi \text{ cm/s}) \sin(2\pi \times 0.50) = 0. </m>
+			</p>
+			<p>
+				(iii) <m>v_x = (-10\pi \text{ cm/s}) \sin(2\pi \times 0.75) = 10\pi \text{ cm/s}= 31.4 \text{ cm/s}. </m>
+			</p>
+		</solution> 
+
+		<solution><title> (b) </title>
+			<p>
+				Taking the derivative of  <m> v_x </m> and then evaluating the result at the requires times should give us the answers.
+			</p>
+			<p> 
+				<me>
+					a_x = \dfrac{dv_x}{dt} = (-20\pi^2 \text{ cm/s}^2) \cos(2\pi t).
+				</me>
+			</p>
+			<p>
+				(i) <m>a_x = (-20\pi^2 \text{ cm/s}^2) \cos(2\pi \times 0.25) = 0. </m>
+			</p>
+			<p>
+				(ii) <m>a_x = (-20\pi^2 \text{ cm/s}^2) \cos(2\pi \times 0.50) = 20\pi^2 \text{ cm/s}^2. </m>
+			</p>
+			<p>
+				(iii) <m>a_x = (-20\pi^2 \text{ cm/s}^2) \cos(2\pi \times 0.75) = 0. </m>
+			</p>
+		</solution> 
+	</exercise>
+
+	<subsection> <title> (Calculus) Change in Velocity from Acceleration Analytically </title>
+		<p>
+			The inverse problem of obtaining change in velocity, <m> \Delta v_x</m>, from a known acceleration, <m> a_x(t) </m>, is a similar problem of going from <m> v_x </m> to <m> \Delta x</m>. Therefore, the math is similar.
+		</p>
+
+		<p>
+			The inverse of Eq. <xref ref="eq-1d-review-accleration-def"/> gives the change in velocity <m> \Delta v_x = v_{f,x} - v_{i,x}</m> when we integrate acceleration <m> a_x </m>.
+			<men>
+				 \Delta v_x \equiv   v_{f,x} - v_{i,x} = \int_{t_i}^{t_f}\ a_x(t)\, dt.
+			</men>
+		</p>
+
+	</subsection>
+
+
+
+
+
+</section>
+

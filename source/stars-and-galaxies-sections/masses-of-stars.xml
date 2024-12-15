@@ -1,0 +1,52 @@
+<section xml:id="sec-Masses-of-Astronomical-Objects"><title>Masses of Astronomical Objects</title>
+	<introduction>
+		<p>
+			How do we ascertain the masses of the large mass objects, such as  planets, stars, and galaxies?  A general method for determining the mass of a celestial object is based on observing the motion of another body that is in a motion about the celestial object of interest.  For instance, to determine the mass of Earth, we can observe a satellite, say the Moon, around Earth and use the equation of motion for the moon or a satellite.
+			<men>
+			 	G_N\dfrac{M_E m}{r^2} = m a,
+			</men>
+			where <m>M_E</m> is the mass of the Earth, <m>m</m> is the mass of the satellite, <m>a</m> its acceleration,  and <m>r</m> the distance to the satellite from the center of Earth. The mass of the satellite cancels out in this equation and we get the mass of the Earth from directly observable quantities.
+			<men xml:id="eq-Earth-mass-dyn-1">
+				M_E =  \dfrac{a\: r^2}{G_N}. 
+			</men>
+			Assuming the orbit the satellite to be circular of radius <m>r</m>, and the speed of the satellite to be constant <m>v</m>, then the acceleration happens to be related to the speed <m>v</m> and the radius <m>r</m> of the orbit.
+			<me>
+				a =  \dfrac{v^2}{r}.
+			</me>
+			Thus, we get the following for the mass of Earth from measuring <m>v</m> and <m>r</m> of the satellite.
+			<me>
+				M_E =  \dfrac{v^2\: r}{G_N}. 
+			</me>
+			We can write the constant speed <m>v</m> in terms of <m>r</m> and period <m>T</m> of the motion of the satellite by noting that the satellite will go around once, covering a distance <m>2\pi r</m> in time <m>T</m>.
+			<me>
+				v =  \dfrac{2\pi r}{T}.
+			</me>
+			Therefore, the satellite has the following acceleration.
+			<me>
+				a =  \dfrac{4\pi^2 r}{T^2}.
+			</me>
+			Putting this for <m>a</m> in Eq. <xref ref="eq-Earth-mass-dyn-1"/>, we obtain the formula for the mass of Earth completely in terms of measurable quantities.
+			<men xml:id="eq-Earth-mass-dyn-2">
+				M_E =  \dfrac{4\pi^2 r^3}{G_N T^2}. 
+			</men>
+			Let us see how this works out for values for the values of <m>r</m> and <m>T</m> for Moon as the test body. We have 
+			<me>
+			 	r = 3.84\times 10^{8}\: \textrm{m},\ \ \textrm{Orbital period}\ \ T = 27.321582\: \textrm{days} =  2.36 \times 10^6\: \textrm{sec}.
+			</me>
+			These values in Eq. <xref ref="eq-Earth-mass-dyn-2"/> give the following value of the mass of Earth.
+			<me>
+				M_E = \dfrac{4\pi^2\times \left(3.84\times 10^{8}\right)^3}{6.67\times 10^{-11} \times \left( 2.36 \times 10^6\right)^2} = 6.02\times 10^{24}\:\textrm{kg}. 
+			</me> 
+
+			The satellite method illustrated above can be applied also to the planets as test bodies to determine the mass of the Sun. This is actually how the mass of the Sun is determined from a planet orbit and period of revolution giving the following value.
+			<men xml:id="eq-sun-mass-dyn-1">
+				M_{\textrm{sun}} = \dfrac{v^2\: r}{G_N} = \dfrac{4\pi^2 r^3}{G_N T^2}, 
+			</men> 
+			where <m>r</m> is the radius of a planet's orbit about the sun and <m>T</m> its orbital period. Most stars are binaries, meaning part of a two-star system, which gravitate around each other. The dynamics of binary stars can be used to determine the mass of star in a binary system. You can apply Eq. <xref ref="eq-sun-mass-dyn-1"/> to the orbit of a star as the test body at the edge of a galaxy to determine the mass of the galaxy.
+			<me>
+				M_{\textrm{galaxy}} = \dfrac{v^2\: r}{G_N} = \dfrac{4\pi^2 r^3}{G_N T^2}, 
+			</me>
+			where <m>r</m> is the distance of the test star from the center of the galaxy, <m>v</m> its orbital speed, and <m>T</m> the orbital period.
+		</p>
+	</introduction>
+</section>

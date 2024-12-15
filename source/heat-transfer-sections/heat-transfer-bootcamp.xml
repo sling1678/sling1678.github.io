@@ -1,0 +1,284 @@
+<section xml:id="Heat-Transfer-Bootcamp"><title> Heat Transfer Bootcamp </title>
+
+
+	<subsection><title> Thermal Conduction</title>
+
+
+		<problem><title> Conduction Through a Copper Rod </title>
+			<p> Follow the link: <xref ref="ex-Conduction-Through-a-Copper-Rod" />.
+			</p>
+		</problem>	
+
+		<problem><title> Conduction by Two Welded Metals </title>
+			<p> Follow the link: <xref ref="ex-Conduction-by-Two-Welded-Metals" />.
+			</p>
+		</problem>	
+
+		<problem><title> (Calculus) Conduction in the Radial Direction  </title>
+			<p> Follow the link: <xref ref="ex-Conduction-in-the-Radial-Direction" />.
+			</p>
+		</problem>	
+
+ 
+	</subsection>
+
+
+	<subsection><title> Thermal Radiation</title>
+
+		<problem><title> Surface Temperature of the Sun  </title>
+			<p> Follow the link: <xref ref="ex-Surface-Temperature-of-the-Sun" />.
+			</p>
+		</problem>	
+
+	</subsection>
+
+
+	<subsection><title> Moving Towards Equilibrium</title>
+
+		<problem><title> Time for Cooling a Cup of Coffee  </title>
+			<p> Follow the link: <xref ref="ex-Time-for-Cooling-a-Cup-of-Coffee" />.
+			</p>
+		</problem>	
+
+		<problem><title> Cooling a Copper Spherical Ball by Radiation </title>
+			<p> Follow the link: <xref ref="ex-Cooling-a-Copper-Spherical-Ball-by-Radiation" />.
+			</p>
+		</problem>
+
+
+		<problem><title> Radiation Transfer in a Spherical Cavity</title>
+			<p> Follow the link: <xref ref="example-Radiation-Transfer-in-a-Spherical-Cavity" />.
+			</p>
+		</problem>
+
+
+	</subsection>
+
+
+	<subsection><title> Thermal Energy Balance</title>
+
+		<problem><title> The Surface Temperature of the Moon</title>
+			<p> Follow the link: <xref ref="example-The-Surface-Temperature-of-the-Moon" />.
+			</p>
+		</problem>
+	</subsection>
+
+
+
+	<subsection><title>Miscellaneous </title>
+
+		<problem><title> Rate of Lake Freezing </title>
+			<statement>
+				<p>
+					A lake freezes from the top at different rates depending upon the thickness of the ice layer already formed on the lake. The temperature of the air above the ice is <m>-15^{\circ}\text{C}</m> and the water below is at <m>0^{\circ}\text{C}</m>.
+				</p>
+				<p>
+
+					(a) At what rate the thickness of the ice would increase at the time when the thickness of ice is <m>2\text{ cm}</m>?
+				</p> 
+				<p> 
+					(b) (Calculus)  Find the time it took to reach the thickness of 2 cm.
+				</p>
+				<p>
+					Data: Density of ice <m> = 0.9\text{ g/cc}</m>, Heat of fusion of ice <m> = 334 \text{J/g}</m>.
+				</p>
+
+			</statement>
+			<hint> <p> Heat released upon freezing of water will be conducted through the ice layer at the time.  </p> </hint>
+			<answer> <p>  <m> 4.5 \times 10^{-4}\text{ cm}</m>. </p> </answer>
+			<solution> <title>(a) </title>
+				<p>
+					Let <m>\Delta h</m> be the height of the ice frozen in time <m>\Delta t</m> when the thickness of the ice is <m>h</m>.  The heat released at the bottom of the ice layer of thickness <m>h</m> will be conducted through the ice layer to the lower temperature environment above. 
+				</p>
+				<image source="./images/heat-transfer/pr-rate-of-freezing-of-lake.png"  width="50%"/>
+
+				<p>
+					Let <m>l_m</m> be the latent heat of freezing of ice.  We can calculate the flux <m>\Phi</m> of heat by dividing the heat released by the area of the lake and the time <m>\Delta t</m>.
+					<men xml:id="eq-ch17-pr-1-1">
+						\Phi = \frac{\Delta Q}{A \Delta t} = \frac{(\rho_{\text{ice}} A \Delta h)\ l_m}{A \Delta t}  = \frac{\rho_{\text{ice}} A \Delta h\ l_m}{\Delta t}. 
+					</men>
+					This will equal the flux written in terms of the conductivity <m>k_{\text{ice}}</m> of the ice, the thickness <m>h</m> of the ice at the time and the temperature difference <m>\Delta T = T_{\text{below}} - T_{\text{above}}</m>.
+					<men xml:id="eq-ch17-pr-1-2">
+						\Phi = k_{\text{ice}} \frac{\Delta T }{h}. 
+					</men>
+					From Eqs. <xref ref="eq-ch17-pr-1-1"/> and <xref ref="eq-ch17-pr-1-2"/> we get
+					<me>
+					 	\frac{\rho_{\text{ice}} A \Delta h\ l_m}{\Delta t} = k_{\text{ice}} \frac{\Delta T }{h}.
+					</me>
+					Solving this for <m>\Delta h/\Delta t</m> we get
+					<men xml:id="eq-ch17-pr-1-3">
+						\frac{\Delta h}{\Delta t}  = \frac{k_{\text{ice}}\Delta T }{\rho_{\text{ice}} l_m}\ \frac{1}{h}. 
+					</men>
+					Putting in numerical values we find the rate of freezing when <m>h = 2\text{ cm}</m>.
+					<md>
+						<mrow> \frac{\Delta h}{\Delta t} \amp = \frac{0.00478\ \text{cal/s.cm.K}\times 15\ \text{K}}{1\ \text{g/cm}^3\times 79.8\ \text{cal/g} \times 2\ \text{cm}} </mrow>
+						<mrow> \amp = 4.5\times 10^{-4}\ \text{cm/s} = 1.61\ \text{cm/h}. </mrow>
+					</md>
+				</p>
+
+			</solution>
+			<solution> <title>(b) </title>
+				<p>
+
+					(b) Eq. <xref ref="eq-ch17-pr-1-3"/> shows that the rate is freezing is not constant - the rate depends on the thickness of the ice already formed.  We can take infinitesimal time limit in Eq. <xref ref="eq-ch17-pr-1-3"/> and arrive at
+					<men xml:id="eq-ch17-pr-1-4">
+						\frac{\d h}{d t}  =  \frac{\alpha}{h}, 
+					</men>
+					where 
+					<men xml:id="eq-ch17-pr-1-5">
+						\alpha  = \frac{k_{\text{ice}}\Delta T }{\rho_{\text{ice}} l_m}. 
+					</men>
+					Integrating Eq. <xref ref="eq-ch17-pr-1-4"/> with the initial condition <m>h=0</m> at <m>t=0</m> gives
+					<me>
+						t = \frac{1}{2\alpha}\  h^2. 
+					</me>
+					Putting the numerical values give
+					<me>
+						\alpha = 2.25\times 10^{-4}\ \text{cm}^2/\text{s}.
+					</me>
+					Therefore, the time to get to the thickness of 2 cm will be
+					<me>
+						t = \frac{(2\ \text{cm})^2}{ 2\times2.25\times 10^{-4}\ \text{cm}^2/\text{s}} = 2.5\ \text{h}.
+					</me>
+
+				</p>
+
+
+
+				
+			</solution>
+		</problem>
+
+		<problem><title> Size of Star from Surface Temeperature and Power </title>
+			<statement>
+				<p>
+					By knowing the surface temperature of a star and the amount of radiation emitted by it, you can determine the size of the star by assuming the emissivity to be 1. Find the radii of the Sun and the star Rigel, which is the bright blue star in the Constellation Orion by this method.
+				</p>
+				<p>
+					Data: Assume the amount of radiation emitted and the surface temperatures of the two stars are: <m>3.9\times10^{26}\text{ W}</m>  and <m>5,780\text{K}</m> for sun, and <m>2.7 \times 10^{32}\text{ W}</m>  and <m>11,000\text{K}</m> for Rigel.
+				</p>
+
+			</statement>
+			<hint> <p>  Use Stefan-Boltzmann law. </p> </hint>
+			<answer> <p>  <m>R_{\text{sun}} = 7 \times 10^8 \text{ m}</m>, and <m>R_\text{rigel} = 1.6 \times 10^{11}\text{ m}</m>.  </p> </answer>
+			<solution> 
+				<p>
+					Let <m>P</m> denote the power of a star of surface temperature <m>T</m> and radius <m>R</m>.  Applying Stefan-Boltzmann law we get
+					<me>
+						\frac{P}{4\pi R^2} = \sigma T^4.
+					</me>
+					Therefore,
+					<me>
+						R = \frac{1}{T^2}\ \sqrt{P/4\pi \sigma}.
+					</me>
+					Now, using the numerical values for the two stars give the following for their radii.
+					<md>
+						<mrow> R_S \amp = \frac{1}{(5,780\ \text{K})^2}\ \sqrt{3.9\times 10^{26}\ \text{W}/4\pi \times 5.7\times 10^{-8}\ \text{W/m}^2\text{K}^4}, </mrow>
+						<mrow> \amp = 7\times 10^8\ \text{m}. </mrow>
+					</md>
+					<md>
+						<mrow> R_R \amp  = \frac{1}{(11,000\ \text{K})^2}\ \sqrt{2.7\times 10^{32}\ \text{W}/4\pi \times 5.7\times 10^{-8}\ \text{W/m}^2\text{K}^4}, </mrow>
+						<mrow> \amp = 1.6\times 10^{11}\ \text{m}. </mrow>
+					</md>
+				</p>
+			</solution>
+		</problem>
+
+		<problem><title> Loss of Liquid Helium from Container Separated from Outside by Vacuum </title>
+			<statement>
+				<p>
+					It is extremely difficult to keep liquid helium from evaporating off.  Special arrangements must be made to minimize the loss of liquid helium in low temperature physics experiments.
+				</p>
+				<p>
+					Consider a cylindrical metallic container <m>20\text{ cm}</m> tall and <m>8\text{ cm}</m> diameter for storing liquid helium at <m>4\text{K}</m>.  Let the metal container be separated from the outside by a vacuum between the metal and the surrounding metallic wall which is maintained at liquid nitrogen temperature of <m>77.3\text{K}</m> by pouring liquid nitrogen in a space outside.
+				</p>
+				<p>
+					In this arrangement, heat can enter the liquid helium container by radiation only.  From the surface at <m>77.3\text{K}</m> to the surface at <m>4\text{K}</m>. If the emissivity of the metal is 0.25 what is the rate at which helium will evaporate off? 
+				</p>
+				<p>
+					Data: heat of evaporation of helium to be <m>2.1 \times 10^4\text{ J/kg}</m>. 
+				</p>
+
+			</statement>
+			<hint> <p>  Use of <m>\frac{\Delta Q_{out}/\Delta t}{A}</m> will be helpful. </p> </hint>
+			<answer> <p> <m>2.44\text{ mg/s}</m>.  </p> </answer>
+			<solution> 
+				<p>
+					Let <m>T_1 = 4\text{K}</m>, <m>T_2 = 77.3\text{K}</m>, area <m>A</m>, emissivity <m>\epsilon</m>, and absorptivity equal emissivity.  Then, the flux of the emission and absorption of radiation by the Helium will be given by
+					<md>
+						<mrow> \Phi_{emit} \amp = \frac{\Delta Q_{out}/\Delta t}{A} = \epsilon \sigma T_1^4, </mrow>
+						<mrow>\Phi_{abs} \amp = \frac{\Delta Q_{in}/\Delta t}{A} = \epsilon \sigma T_2^4. </mrow>
+					</md>
+					Therefore, the rate of net heat in the Helium will be
+					<me>
+						\left( \frac{\Delta Q}{\Delta t}\right)_{\text{net in}} = \epsilon \sigma A \left( T_2^4 - T_1^4 \right).
+					</me>
+					Let <m>l_m</m> denote the amount of heat required to evaporate unit mass of Helium.  Therefore, 
+					<md>
+						<mrow> \frac{\Delta m}{\Delta t} \amp = \frac{1}{l_m} \left( \frac{\Delta Q}{\Delta t}\right)_{\text{net in}},</mrow>
+						<mrow> \amp = \frac{ \epsilon \sigma A}{l_m}\left( T_2^4 - T_1^4 \right).</mrow>
+					</md>
+					Now, we put in the numerical values to obtain
+					<md>
+						<mrow> \frac{\Delta m}{\Delta t} \amp = \frac{ 0.25 \times 5.7\times 10^{-8} \times 2\pi \times 0.08\times 0.20}{2.1\times 10^4}\left( 77.3^4 - 4^4 \right),</mrow>
+						<mrow> \amp = 2.44\ \text{mg/s}. </mrow>
+					</md>
+				</p>
+			</solution>
+		</problem>
+
+		<problem><title> (Calculus) Rate of Heat flow Through a Cylindrical Shell </title>
+			<statement>
+				<p>
+					A long cylindrical brass pipe of inner radius <m>R_1</m> and outer radius <m>R_2</m> carries hot water at temperature <m>T_1</m> inside the pipe,  while the temperature in the space outside the pipe is <m>T_2</m>. The length of the pipe is <m>L</m>. 
+				</p>
+				<p>
+					Show that the rate of the loss of heat per unit length of the pipe is given by the following formula.
+					<me>
+						\frac{1}{L}\frac{dQ}{dt} = 2\pi k \frac{\left( T_1 - T_2 \right)}{\ln\left( R_2/R_1\right)}.
+					</me>
+				</p>
+
+			</statement>
+			<hint> <p> Look at flow between shell of thickness <m>dr</m> at radius <m>r</m>.  </p> </hint>
+			<answer> <p> see solution.  </p> </answer>
+			<solution> 
+				<p>
+					 Consider a shell of fluid between <m>r</m> and <m>r+\Delta r</m>.  As shown in the figure the the shell can be thought of a sheet of thickness <m>\Delta r</m> and area <m>2\pi r L</m>.  This problem then becomes similar to the problem of heat flow through a window.
+				</p>
+				<image source="./images/heat-transfer/heat-flow-through-metal-shell.png" width="70%"/>
+				<p>
+					Writing the flux in terms of the rate of flow of heat over the area and in terms of the conductivity we find
+					<me>
+						\Phi = \frac{\Delta Q/\Delta t}{2\pi r L} = - k \frac{\Delta T}{\Delta r},
+					</me>
+					where the negative sign is there since the heat flows towards larger <m>r</m>, i.e. increasing <m>r</m> corresponds to decreasing <m>T</m>.  We have taken <m>\Delta Q</m> positive here. Making the shell infinitesimally thin turns the right side to <m>-k dT/dr</m>. 
+					<me>
+						\frac{\Delta Q/\Delta t}{2\pi r L} = - k \frac{d T}{d r}
+					</me>
+					Now, we rearrange terms to separate the $r$ and $T$ on different sides to obtain
+					<me>
+						\left[ \frac{\Delta Q/\Delta t}{2\pi L} \right] \frac{dr}{r}= - k dT.
+					</me>
+					Integrating from <m> r=R_1</m> with <m> T=T_1</m> to <m>r=R_2</m> with <m>T=T_2</m> and rearranging gives the desired result.
+					<md>
+						<mrow> \amp \left[ \frac{\Delta Q/\Delta t}{2\pi L} \right] \int_{R_1}^{R_2}\frac{dr}{r}= - k \int_{T_1}^{T_2}dT,</mrow>
+						<mrow> \amp \left[ \frac{\Delta Q/\Delta t}{2\pi L} \right] \ln\left( \frac{R_2}{R_1} \right)
+							= k \left( T_1-T_2\right),</mrow>
+						<mrow> \amp \left[ \frac{\Delta Q/\Delta t}{ L} \right] 
+								= \frac{2\pi k \left( T_1-T_2\right)}{\ln\left( R_2 / R_1 \right)}. </mrow>
+					</md>
+				</p>
+				
+			</solution>
+		</problem> 
+
+
+
+
+	</subsection>
+
+
+
+
+</section>

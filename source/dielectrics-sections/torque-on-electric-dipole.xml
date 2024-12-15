@@ -1,0 +1,208 @@
+<section xml:id="Torque-on-an-Electric-Dipole"><title> Force and Torque on an Electric Dipole </title>
+
+	<subsection><title> An Electric Dipole in a Constant Electric Field </title>
+		<p>
+			Consider an electric dipole placed in a region of constant electric field as shown in  <xref ref="fig-dielectrics-3"/>. Forces on the two charges will be equal in magnitude but opposite in direction. That will make the net force on the dipole zero. 
+		</p>
+
+		<figure xml:id="fig-dielectrics-3">
+			<image source="./images/dielectrics/dielectrics-3.png" width="80%"/>
+			<caption>
+				An electric dipole in a uniform electric field. (a) The forces on the two opposite charges of the dipole are equal in magnitude and opposite in direction.  This results in the vanishing of the net force on the dipole. (b) and (c): The torque of the forces on the two charges have the same sense and therefore add to give a non-zero torque.   The direction of the torque depends on the relative orientations of the dipole moment and the external electric field.
+			</caption>
+		</figure>
+		<p>
+		</p>
+		
+	
+		<p>
+			However, if the dipole is oriented at an angle to the electric field, then there will be a non-zero torque on the dipole since the forces on the two charges form a couple.  Since the net force on the dipole is zero, the torque will be independent of the pivot point for the calculation of the torque with following result,
+			<me>  
+				\vec \tau = \vec d\times q\vec E = q\vec d \times \vec E.
+			</me>
+			Replacing  <m>q\vec d</m> as the dipole moment vector <m>\vec p</m>, we see that the torque on the dipole is equal to the vector product of the dipole moment vector  and the electric field  vector <m>\vec E</m>.
+			<men xml:id="torque-on-electric-dipole">
+				\vec \tau =\vec p \times \vec E.
+			</men>
+		</p>
+		<sidebyside widths="60% 10% 18% 12%">
+			<p>
+				Thus, when a polar molecule such as the water molecule is placed in an external electric field, the molecule experiences a torque that will cause the molecule to acquire angular acceleration. Since the torque direction flips when dipole rotates past the direction of the electric field, rotation speed will slow down, come to a stop, and reverse direction as shown in <xref ref="fig-dipole-oscillating-about-E-field"/>. This will result in the oscillation of the direction of the dipole moment vector about the direction of the electric field. The damping of this motion leads to the dipole momet vector <m>\vec p</m> settling in the same direction as the electric field <m>\vec E</m>.
+			</p>
+			<p> </p>
+			<figure xml:id="fig-dipole-oscillating-about-E-field">
+				<caption>
+				</caption>
+				<image source="./images/dielectrics/dipole-oscillating-about-E-field.png" width="60%"/>
+			</figure>
+			<p></p>
+		</sidebyside>
+ 	</subsection>
+
+	<subsection xml:id="subsec-Calculus-Dipole-in-a-Non-Uniform-Electric-Field"><title>(Calculus) Dipole in a Non-Uniform Electric Field </title>
+		<p>
+			Electric force on a dipole is zero if the electric field is uniform since the oppositely directed forces on <m>+q</m> and <m>-q</m> of equal magnitude cancel each other exactly.   However, if electric field is non-uniform, such as the electric field of a point charge, the two charges of the dipole will be in different electric fields, and hence the net force on the dipole will not be zero. 
+		</p>
+		<sidebyside widths="60% 40%">
+			<p>
+				As in the figure, we will calculate net force in a simpler situation - assume direction of electric field is fixed in the positive <m>y</m> axis direction, but its magnitude varies with <m>x</m> coordinate of space. 
+				<me>
+					\vec E = \hat j\, E_y(x).
+				</me>
+				Denoting <m>E_y(x=x_+)</m> by <m>E_{+,y}</m> and <m>E_y(x=x_-)</m> by <m>E_{-,y}</m>, we write the <m>y</m> component of the net force to be
+			</p>
+
+			<image source="./images/dielectrics/replace-dielectrics-5-dipole-in-nonuniform-field.png" width="45%"/>
+		</sidebyside>
+
+			<!-- <me>
+				\vec F = 	\vec F_+ + 	\vec F_- = q\left( \vec E_+ - 	\vec E_- \right)  =  qd\left( \frac{\vec E_+ - 	\vec E_-}{d} \right) = p \frac{\Delta \vec E}{d}
+			</me>
+			where <m>\Delta \vec E</m>  is the difference in the electric field at the two ends, and <m>d</m> is the distance between charges of the dipole.  The force on a dipole is seen to be towards the direction of increasing electric field.  This means that a dipole is pulled in the direction of increasing electric field. -->
+		
+			<!-- <figure xml:id="fig-dielectrics-5"> 
+				<image source="./images/dielectrics/dielectrics-5.png" width="45%"/>
+				<caption> 
+					A dipole in a non-uniform electric field. Here, the electric field is larger on <m>+q</m> then on <m>-q</m>.  The dipole will have a non-zero net force and a non-zero net torque.
+				</caption>
+			</figure> -->
+
+			<!-- <figure xml:id="fig-dielectrics-5"> 
+				<image source="./images/dielectrics/replace-dielectrics-5-dipole-in-nonuniform-field.png" width="45%"/>
+				<caption> 
+					A dipole in a non-uniform electric field. Here, the electric field is larger at the site of <m>+q</m> than it is on <m>-q</m>.  Due to the imbalance in forces on the two charges, the dipole will have a non-zero net force.
+				</caption>
+			</figure> -->
+		<p>
+			
+				<md>
+					<mrow> F_y \amp = q E_{+,y} - q E_{-,y} = q \left( x_+ - x_- \right) \, \dfrac{ E_{+,y} - q E_{-,y}}{ x_+ - x_-  }</mrow>
+					<mrow> \amp = q d\,\sin\theta \, \dfrac{ \Delta E_y}{ \Delta x  }. </mrow>
+				</md>
+		</p>
+
+		<p>
+			If the dipole is microscopic, we can take the small <m>d</m> limit, which would also be <m>\Delta x \rightarrow 0</m> limit. As <m>\Delta x \rightarrow 0</m>, <m>\Delta   E_y/\Delta x</m> will be replaced by  partial  <m>x</m>-derivative of the electric field. Furthermore, <m>q d\,\sin\theta</m> is just <m>p_x</m> of the dipole moment vector <m>\vec p</m>. Therefore, 
+			<me>
+				F_y = p_x \frac{\partial E_y}{\partial x}.
+			</me>
+			<!-- Similarly, if <m>\vec p</m> is pointed along  <m>y</m>-axis, we will get 
+			<me>
+				p\frac{\Delta\vec E}{d} = p_y \frac{\Delta\vec E}{d} \rightarrow p_y \frac{d\vec E}{dy}\ \ \ \textrm{(dipole oriented along <m>y</m> axis)}
+			</me>
+			and if <m>\vec p</m>   is pointed along  <m>z</m>-axis, we will get
+			<me>
+				p\frac{\Delta\vec E}{d} = p_z \frac{\Delta\vec E}{d} \rightarrow p_z \frac{d\vec E}{dz}\ \ \ \textrm{(dipole oriented along <m>z</m> axis)}
+			</me> -->
+			For  <m>\vec p</m> in an arbitrary direction, <!-- need the partial derivatives of <m>\vec E</m>  with respect to <m>x</m>, <m>y</m> and <m>z</m> to go with <m>x</m>, <m>y</m>, and <m>z</m> components of dipole moment vector <m>\vec p</m>.
+			<me> 
+				\vec F =  p_x \frac{\partial\vec E}{\partial x} + p_y \frac{\partial\vec E}{\partial y}+ p_z \frac{\partial\vec E}{\partial z}.
+			</me>
+			Using --> the partial derivative is replaced by nabla vector operator <m>\vec \nabla</m>. Thus, we replace <m>p_x\,\partial/\partial_x</m> by <m>\vec p\cdot \vec\nabla</m>. 
+			<me>
+				\vec F = \left(\vec p\cdot \vec \nabla\right) \vec E,
+			</me>
+			where
+			<me>
+				\vec \nabla = \hat i\, \dfrac{\partial }{\partial x} + \hat j\, \dfrac{\partial }{\partial y}+ \hat k\, \dfrac{\partial }{\partial z},
+			</me>
+			so that
+			<men>
+				\vec F = \left(p_x\, \dfrac{\partial }{\partial x} + p_y\, \dfrac{\partial }{\partial y}+ p_z\, \dfrac{\partial }{\partial z}\right) \vec E.
+			</men>
+
+		</p>
+		
+	</subsection>
+
+	<exercise xml:id="ex-Force-and-Torque-on-a-Dipole-in-a-Non-uniform-Field"><title> (Calculus) Force and Torque on a Dipole in a Non-uniform Field </title>
+		<statement>
+			<p>
+				A dipole has dipole moment of magnitude <m>5 \times 10^{-12}</m> Cm. The dipole is placed <m>2.0\text{ mm}</m> from a fixed <m>3\, \mu</m>C charge.  Find the force and torque on the dipole (a) when the dipole is pointed away from the fixed charge, (b) when the dipole is pointed <m>90^{\circ}</m> from the fixed charge.
+			</p>
+			<p>
+				Hint: (a) Place the charge at the origin and the dipole along <m>z</m> axis. (b) Point the dipole towards <m>x</m> axis.
+			</p>
+
+		</statement>
+		<hint> <p>  (a)   Be careful taking derivative of <m>E_z</m>.  (b) Zero force. </p> </hint>
+		<answer> <p> (a) <m> -34 \text{ N}\ \hat u_z </m>, <m>\tau=0</m> (b) <m>16.8\text{ N}\ \hat u_x</m>, <m>-3.38\times 10^{-2}\ \textrm{N.m}\ \hat u_y </m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a)	
+				For concreteness, we place the fixed point charge at the origin, and the dipole be located along <m>z</m> axis with its direction towards positive <m>z</m> axis . The net force  will have only <m>z</m>-component. We can get tha from taking derivative of the electric field.
+ 
+				<md>
+				 	<mrow> F_z \amp = p_z\frac{\partial}{\partial z}\left( \frac{1}{4\pi \epsilon_0}\frac{q}{r^2} \frac{z}{r}\right)_{r=z}</mrow>
+				 	<mrow> \amp = -\frac{qp}{2\pi \epsilon_0}\frac{1}{z^3} = - 34 \ \text{N}. </mrow>
+				</md>
+				Therefore, the magnitude of the force is <m> 34  \ \text{N}</m> and the direction is pointed towards negative <m>z</m> axis.
+			</p>
+			<p>
+				The torque will be zero since direction of the field is parallel to the direction of the electric field moment.
+				<me>
+					\vec \tau = \vec p \times \vec E = 0.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b)	Let  <m>x</m> axis be the direction of the dipole moment while located on  <m>z</m> axis. Now, we expect force from <m>p_x</m> and <m>x</m> derivative of electric field. Let us work with all components here since, we have mixed directions. 
+				<md>
+					<mrow> \vec F \amp = p_x \frac{\partial}{\partial x} \left( \frac{1}{4\pi \epsilon_0}\frac{q}{r^2}\dfrac{x\hat u_x + y\hat u_y + z \hat u_z }{\sqrt{x^2+y^2+z^2}} \right)_{x=0, y=0, z=z} </mrow>
+					<mrow>   \amp = p_x  \frac{1}{4\pi \epsilon_0}\frac{q}{z^3}\hat u_x = 16.8\text{ N}\ \hat u_x. </mrow>
+				</md>
+ 				Therefore, there is no net force on the dipole. It makes sense since for dipole to be pointed towards <m>x</m> axis, both charges are about the same distance from the charge at origin.
+ 			</p>
+ 			<p>
+ 				The torque will be
+				<md>
+					<mrow>\vec \tau  \amp  = \vec p \times \vec E = p\hat u_x \times E \hat u_z </mrow>
+				 	<mrow>          \amp  = -pE\hat u_y = -\frac{qp}{4\pi \epsilon_0}\frac{1}{z^2} \hat u_y= -3.38\times 10^{-2}\ \hat u_y\ \textrm{N.m}.</mrow>
+				</md>
+			</p>
+		</solution>
+
+	</exercise>	
+
+ 	<exercise xml:id="Computing-Force-on-a-Dipole-by-a-Point-Charge"><title>(Calculus) Computing Force on a Dipole by a Point Charge  </title>
+		<statement>
+			<p>
+				Find the force on a dipole of dipole moment <m>\vec p</m> from a fixed charge <m>q</m> in each of the cases shown in the figure.   
+			</p>
+			<image source="./images/dielectrics/exer-force-on-dipoles-1.png" width="70%"/>
+	
+		</statement>
+		<hint> <p>  Use definition. </p> </hint>
+		<answer> <p> (a) <m> F_x = - \dfrac{pq}{2\pi\epsilon_0}\: \dfrac{1}{d^3}</m>,
+		(b) <m>- \dfrac{pq}{4\pi\epsilon_0}\: \dfrac{1}{d^3} </m>.  </p> </answer>
+		<solution> <title>(a)</title>
+			<p>
+				(a)	Let the point charge be at the origin and the line shown in the figure be <m>x</m> axis.  Then the electric field from the point charge is pointed in the same direction as the dipole.
+				<me>
+					F_x = p\dfrac{\partial}{\partial x}\left( \dfrac{q}{4\pi\epsilon_0}\: \dfrac{1}{x^2}\right) = - \dfrac{pq}{2\pi\epsilon_0}\: \dfrac{1}{d^3}.
+				</me>
+				The dipole is attracted towards increasing electric field.
+			</p>
+		</solution>
+		<solution> <title>(b)</title>
+			<p>
+				(b)	Let the direction of the dipole be in the <m> y </m> axis direction. We need the rate at which the electric field by q is changing with y-coordinate and evaluate it at <m> y = 0</m>.
+				<md>
+					<mrow> \left.\dfrac{\partial \vec E}{\partial y}\right|_{y=0,z=0} \amp = \dfrac{q}{4\pi\epsilon_0}\: \dfrac{\partial }{\partial y} \left[ 
+				\frac{x\:\hat u_x + y\:\hat u_y + z\:\hat u_z}{\left(x^2 +y^2 +z^2 \right)^{3/2}}
+				\right] </mrow>
+					<mrow> \amp = \dfrac{q}{4\pi\epsilon_0}\:\dfrac{1}{x^3}\:\hat u_y. </mrow>
+				</md>
+				Therefore, the force is in the y-direction with y-component given by
+				<me>
+					F_y = - \dfrac{pq}{4\pi\epsilon_0}\: \dfrac{1}{d^3}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+</section>

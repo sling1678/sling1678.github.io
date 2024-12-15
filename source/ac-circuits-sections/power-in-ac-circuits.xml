@@ -1,0 +1,154 @@
+<section xml:id="Power-in-AC-Circuits"><title> Power in AC Circuits </title>
+	<introduction>
+		<p>
+		</p>
+	</introduction>
+	<subsection><title> Power of an AC Source Driving an RLC Circuit</title>
+		<p>
+			The instantaneous power <m>P</m> of any circuit element is obtained by the product of the current through the element and the voltage across the element.  Thereofore, power of the driving EMF would be equal to the product of its voltage <m>V(t)</m> and current <m>I(t)</m> through it. 
+		</p>
+		<p>
+			In a series RLC circuit (<xref ref="fig-RLC-series-circuit-0"/>) with source voltage <m> V(t) = V_0\,\cos(\omega t)</m>, the steady current steady state current is
+				<m>
+					I=I_0\,\cos(\omega t + \phi_I)
+				</m>, 
+				with
+				 
+		</p>
+		<sidebyside widths="50% 50%">
+			<p>
+				
+				<md>
+					<mrow> \amp I_0 = \dfrac{V_0}{\sqrt{R^2 + \left(\omega L - \dfrac{1}{\omega C} \right)^2}},</mrow>
+					<mrow> \amp \tan\,\phi_I = \dfrac{1}{\omega RC} -  \dfrac{\omega L}{R}.</mrow>
+				</md>
+			</p>
+			<figure xml:id="fig-RLC-series-circuit-0">
+				<caption></caption>
+				<image source="./images/ac-circuits/RLC-series-circuit.png" width="60%"/>
+			</figure>
+		</sidebyside>
+		<p>
+
+			Therefore, power of the source in this circuit is
+			<me>
+				P(t) = I(t) V(t) = I_0 V_0 \cos(\omega t)\cos(\omega t +\phi_I).
+			</me>
+
+			The instantaneous power is time-dependent.  The <term>average power</term> <m>P_{\text{ave}}</m> obtained from <m>P(t)</m> by averaging the later over a complete cycle is often of more interest that the instantaneous power <m>P(t)</m>.  The average power of the source is sometimes called the <term> apparent power</term>.  The product of cosines in <m>P(t)</m> can be rewritten as sum of cosines.
+			<me>
+				P(t) =  \dfrac{I_0 V_0}{2} \left[ \cos(2\omega t + \phi_I) + \cos\,\phi_I \right]. 
+			</me>
+			The average of <m>\cos(2\omega t+ \phi_I)</m> over a period will be zero. Therefore <m>P_{\text{ave}}</m>  is
+			<me>
+				P_{\text{ave}} = \dfrac{I_0 V_0}{2}\: \cos\,\phi_I,
+			</me>
+			where 
+			<men xml:id="eq-power-factor">
+				\cos\,\phi_I = \dfrac{R}{\sqrt{R^2 + \left(\omega L - \dfrac{1}{\omega C} \right)^2}}.
+			</men>
+			is called the <term> power factor</term> of the AC circuit.  In purely resistive circuits, i.e, in the absence of inductor and capacitor, the power factor is 1.  The power factor is important in highly inductive circuits, such as circuits with  motors, compressors, and transformers, and in circuits at high frequency. 
+		</p>
+		<p>
+			When the circuit is driven at the resonance frequency <m>\omega = \omega_R</m>, with <m>\omega_R = 1/\sqrt{LC}</m>, the power factor will also equal to 1, the maximum value. Therefore, in high inductive circuits it is common practice to insert appropriate capacitative elements so as to make the power factor as close to 1 as possible.
+		</p>
+		<remark><title> RMS Current and Voltage</title>
+			<p>
+				From the voltage <m>V(t</m>) and the current <m>I(t)</m>  we can construct time-averaged quantities.  The time averages of <m>V(t)</m> and <m>I(t)</m> are zero.  However, if we do the time averaging after squaring them then we get a non-zero value, called the <term>root-mean squared</term> <m>V_{\text{rms}}</m> and <m>I_{\text{rms}}</m> as follows.
+				<me>
+					V_{\text{rms}} = \sqrt{\langle V(t)^2 \rangle} = \frac{V_0}{\sqrt{2}}
+				</me>
+				<me>
+					I_{\text{rms}} = \sqrt{\langle I(t)^2 \rangle} = \frac{I_0}{\sqrt{2}}
+				</me>
+				where <m>\langle \cdots \rangle</m> stands for time averaging operation.  The average power of the source voltage is often expressed in terms of the <m>V_{\text{rms}}</m> and <m>I_{\text{rms}}</m> and the power factor as follows.
+				<me>
+					P_{\text{ave}} = V_{\text{rms}}\; I_{\text{rms}} \; \cos(\phi_I).
+				</me>
+			</p>
+		</remark>
+		<remark><title> Meaning of the Power Factor</title>
+			<p>
+				We find that the power of the source disappears when the resistance in the circuit is zero.  Thus a purely reactive circuit does not use any energy.  But you need a current for a reactive device such as a motor to function.  Therefore, although no energy is used by a purely reactive device, the power supply company must supply a current to it. The product <m>\left(V_{\text{rms}}.I_{\text{rms}}\right)</m> is sometimes called the <term>real power</term> for which the power supplier must charge the power user, and not just the <term>apparent power</term>. The power factor is the ratio of the power of the source, i.e. the <q>apparent power</q>, to the <term>actual power</term> used in the resistor, i.e., the <q>real power</q>. 
+				<me>
+					\text{Power Factor} = \frac{\text{Apparent Power}}{\text{Real Power}}.
+				</me>
+				The power factor therefore gives a measure of the reactive part of the power usage.  The power factor should be maximized so as to make the delivery of power more efficient.  The power factor of a circuit with large inductors can be increased by adding a capacitor to the circuit as you can see from Eq. <xref ref="eq-power-factor"/>.
+			</p>
+		</remark>
+	</subsection>
+
+	<exercise xml:id="ex-Power-Factor-of-a-Large-Motor"><title> Power Factor of  a Large Motor </title>
+		<statement>
+			<p>
+				An AC circuit has a large motor, modeled as a resistance of <m>100\; \Omega</m> and inductance of <m>8\text{ H}</m> in series connected to a <m>120\text{ V }</m> (rms) AC line that fluctuates at a <m>60\text{ Hz}</m> frequency.  Find (a) the amplitude of the impedance of the circuit, (b) the peak voltage, (c) RMS current, (d) the power factor, (e) real power, and (f) apparent power.
+			</p>
+
+		</statement>
+		<hint> <p> Use defining formulas. </p> </hint>
+		<answer> <p> (a) <m> 318\; \Omega</m>, 
+		(b) <m> 169.7\;\text{V}</m>,
+		(c) <m>0.377\; \text{A} </m>,
+		(d) <m> 0.31</m>,
+		(e) <m> 45.2\; \text{W}</m>,
+		(f) <m> 14\; W</m>.  </p> </answer>
+		<solution> 
+			<p> (a)
+				This is simply a numerical example for an RL circuit and we can use the formulas already derived for that circuit.  The amplitude of the impedance of the circuit is 
+				<md>
+					<mrow> |Z| \amp  = \sqrt{R^2 + (\omega L)^2}</mrow>
+				    <mrow>   \amp  = \sqrt{(100\; \Omega)^2 + (2\pi\times 60\; \text{Hz}\times 8\; \text{H})^2} = 318\; \Omega.</mrow>
+				</md>
+			</p>
+			<p> (b)
+				Peak Voltage is,  
+				<me>
+					V_{\text{peak}} = \sqrt{2} \times V_{\text{rms}} = \sqrt{2}\times 120\;\text{V} = 169.7\;\text{V}.
+				</me>
+			</p>
+			<p> (c)
+				RMS current is
+				<me>
+					I_{\text{rms}} = \frac{V_{\text{rms}}}{|Z|} = \frac{120\; \text{rms}}{318\; \Omega} = 0.377\; \text{A}.
+				</me>
+			</p>
+			<p> (d)
+
+				The power factor will be
+				<me>
+					\cos\, \phi_I = \frac{R}{Z} = \frac{100\;\Omega}{318\; \Omega} = 0.31.
+				</me>
+			</p>
+			<p> (e)
+				The real power will be
+				<me>
+					I_{\text{rms}} . V_{\text{rms}} = 0.377\; \text{A}\times 120\; \text{V} = 45.2\; \text{W}.
+				</me>
+			</p>
+			<p> (f) 
+				The apparent Power will be
+				<me> 
+					I_{\text{rms}}  V_{\text{rms}} \cos(\phi)= 45.2\; \text{W}\times 0.31 = 14\; W.
+				</me>
+
+				Although the unit Volt.Amp(V.A) is equal to unit Watt (W), one expresses the apparent power in VA and the real power in W.  Note that the apparent power is what is happening as far as energy conservation is concerned, and the real power is what a utility company bases its charges on.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

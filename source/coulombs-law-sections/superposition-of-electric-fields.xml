@@ -1,0 +1,240 @@
+<section xml:id="Superposition-of-Electric-Fields"><title> Superposition of Electric Fields </title>
+	<introduction>
+		<p>
+			Here, we want to address the question: How do you get net electric field if multiple fields are acting at the same time?
+		</p>
+		<p>
+			Recall that net force on an object is a vector sum of the forces on that object. Now, if several charges act on a test charge <m>Q</m>, with forces <m>\vec F_1</m>, <m>\vec F_2</m>, <m>\cdots</m>,  <m>\vec F_N</m>, then, net electric force on <m>Q</m> will be
+			<me>
+				\vec F_e = \vec F_1 + \vec F_2 + \cdots + \vec F_N. 
+			</me>
+			Now, if we divide both sides by the test charge, we will get
+			<me>
+				\frac{\vec F_e}{Q} = \frac{\vec F_1}{Q} + \frac{\vec F_2}{Q} + \cdots + \frac{\vec F_N}{Q}. 
+			</me>			
+			Each of the <m>\vec F_i/Q</m> is actually, the electric field from the corresponding source, which we can denote by <m>\vec E_i</m>. One the left is the net electric force divided by the test charge, so, we get the net electric field there, which we denote by <m>\vec E_P</m>. Therefore, we find that, just like forces, electric fields also add vectorially to give the net electric field. 
+			<men xml:id="eq-e-field-super-1">
+				\vec E_P = \vec E_1 + \vec E_2 + \cdots + \vec E_N. 
+			</men>
+			This result is called <term>superposition of electric fields</term>. We will work out examples of this principle below.
+		</p>
+	</introduction>
+
+
+
+
+	<exercise xml:id="ex-Superposition-of-Electric-Field-of-Four-Charged-Plates"><title> Superposition of Electric Field of Four Charged Plates </title>
+		<statement>
+			<sidebyside widths="70% 30%">
+			<p>
+					Four charged plates are arranged with positive plates facing the negative plates. The charges on the opposing plates along horizontal direction produce an electric field of magnitude <m>E_1 = 3 \text{ N/C}</m> in the horizontal direction as shown in the figure, and the other two plates produce <m>E_2 = 4 \text{ N/C}</m> in the vertical direction. What is the electric field of all charges?
+
+				</p>
+				<image source="./images/coulombs-law/electric-field-4-charged-plates.png" width="70%"/>
+			</sidebyside>
+			
+		</statement>
+		<hint> <p>  Add the fields vectorially. </p> </hint>
+		<answer> <p> <m>5\text{ N/C}</m> at <m>53^{\circ}</m> counterclockwise from the horizontal field direction. </p> </answer>
+		<solution> 
+			<p>
+				We need to add the electric fields vectorially. Since the fields are already in the perpendicular directions, it is easy to work out the magnitude by Pythagora's theorem.
+				<me>
+					E = \sqrt{ 3^2 + 4^2} = 5\text{ N/C}.
+				</me>
+			</p>
+			<sidebyside widths="70% 10% 20%">
+				<p>
+					The direction can be given by the counterclockwise angle with respect to the horizontal direction,
+					<me>
+						\theta = \tan^{-1}\left( \dfrac{4}{3} \right) = 53^{\circ}.
+					</me>
+				</p>
+				<p>
+				</p>
+				<image source="./images/coulombs-law/electric-field-4-charged-plates-solution.png" width="70%"/>
+			</sidebyside>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Electric-Field-of-Two-Charges"><title> Electric Field of Two Charges at a Point on Line Joining the Charges</title>
+		<statement>
+			<p>
+				Find the electric field at the origin.
+			</p>
+			<image source="./images/coulombs-law/E-field-two-charges-on-x-axis.png" width="70%"/>
+
+
+		</statement>
+		<hint> <p>  The electric field of the two charges are in the opposite direction. </p> </hint>
+		<answer> <p>  <m>9\text{ N/C}</m> in the positive <m>x</m> direction. </p> </answer>
+		<solution> 
+			<p>
+				The following figure shows the electric field of the two charges at the origin are along the <m>x</m> axis, but they are in the opposite direction. We will compute <m>x</m> components of the two fields so that we can deal with their addition through the sign of the components.
+			</p>
+			<image source="./images/coulombs-law/E-field-two-charges-on-x-axis-solution.png" width="70%"/>
+			<p>
+				The <m>x</m> component of the fields are
+				<md>
+					<mrow> E_{1x} \amp = + k\dfrac{|q_1|}{r_1^2} = 9\times 10^{9} \times \dfrac{5\times 10^9}{2^2} = 11.25\text{ N/C}, </mrow>
+					<mrow> E_{2x} \amp = - k\dfrac{|q_2|}{r_2^2} = -9\times 10^{9} \times \dfrac{4\times 10^9}{4^2} = -2.25\text{ N/C}. </mrow>
+				</md>
+				Therefore, <m>x</m> component of the net electric field at origin is
+				<me>
+					E_x = E_{1x} + E_{2x} = 11.25 + (- 2.25) = 9\text{ N/C}.
+				</me>
+				This is the only non-zero component of the field. Therefore, electric field at origin has magnitude <m>9\text{ N/C}</m> and direction in the positive <m>x</m> direction.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electric-Field-of-Two-Charges-at-a-Point-Perpendicular-to-Line-Joining-the-Charges"><title> Electric Field of Two Charges at a Point Perpendicular to Line Joining the Charges </title>
+		<statement>
+			<p>
+				Find the magnitude and direction of the electric field at point P.
+			</p>
+			<image source="./images/coulombs-law/two-charges-on-x-axis-pt-on-y.png" width="70%"/>
+		</statement>
+		<hint> <p>  Work with <m>x</m> and <m>y</m> components of electric fields from each charge. </p> </hint>
+		<answer> <p> <m>7.52\text{ N/C} </m> counterclockwise at <m> 37^\circ</m> from the positive <m>x</m> axis. </p> </answer>
+		<solution> 
+			<p>
+				The following figure shows the electric field of the two charges are pointed in <m>xy</m>-plane. We will compute <m>x</m> and <m>y</m> components of the two fields so that we can deal with their addition through their components.
+			</p>
+			<image source="./images/coulombs-law/two-charges-on-x-axis-pt-on-y-solution.png" width="70%"/>
+			<p>
+				The <m>x</m> and <m>y</m> components of electric field <m>\vec E_1</m>  are
+				<md>
+					<mrow> E_{1x} \amp = k\dfrac{q_1}{r_1^2} \dfrac{x_P-x_1}{r_1}, </mrow>
+					<mrow> E_{1y} \amp = k\dfrac{q_2}{r_2^2} \dfrac{y_P-y_1}{r_1}, </mrow>
+				</md>
+				and similarly for charge <m>q_2</m>. Computing the numerical values is easier by working out the parts of the formula first.
+				<md>
+					<mrow> r_1 \amp = \sqrt{ \left(x_P-x_1 \right)^2 + \left(y_P-y_1 \right)^2 } </mrow>
+					<mrow>  \amp = \sqrt{ \left(0-(-2) \right)^2 + \left(1-0 \right)^2 } = \sqrt{ 5}\text{ m}. </mrow>
+					<mrow> r_2 \amp = \sqrt{ \left(x_P-x_2 \right)^2 + \left(y_P-y_2 \right)^2 } </mrow>
+					<mrow>  \amp = \sqrt{ \left(0-(4) \right)^2 + \left(1-0 \right)^2 } = \sqrt{ 17}\text{ m}. </mrow>
+				</md>
+				Therefore, the components of <m>\vec E_1</m> will be
+				<md>
+					<mrow> E_{1x} \amp = 9\times 10^9\times\dfrac{5\times 10^{-9}}{ (\sqrt{5})^2 } \times \dfrac{0-(-2)}{\sqrt{5}} = 8.05\text{ N/C}, </mrow>
+					<mrow> E_{1y} \amp = 9\times 10^9\times\dfrac{5\times 10^{-9}}{ (\sqrt{5})^2 } \times \dfrac{1-0}{\sqrt{5}} = 4.02\text{ N/C}, </mrow>
+				</md>
+				and those of <m>\vec E_2</m> will be
+				<md>
+					<mrow> E_{2x} \amp = 9\times 10^9\times\dfrac{4\times 10^{-9}}{ (\sqrt{17})^2 } \times \dfrac{0-(4)}{\sqrt{17}} = -2.05\text{ N/C}, </mrow>
+					<mrow> E_{2y} \amp = 9\times 10^9\times\dfrac{4\times 10^{-9}}{ (\sqrt{17})^2 } \times \dfrac{1-0}{\sqrt{17}} = 0.51\text{ N/C}, </mrow>
+				</md>
+				Therefore, the net electric field at P has the following components.
+				<md>
+					<mrow> E_x\amp = E_{1x} + E_{2x} = 8.05-2.05 = 6.00\text{ N/C}, </mrow>
+					<mrow> E_y\amp = E_{1y} + E_{2y} = 4.02+0.51 = 4.53\text{ N/C}, </mrow>
+				</md>
+				The magnitude of electric field will be
+				<me>
+					E_P = \sqrt{ 6.00^2 + 4.53^2 } = 7.52\text{ N/C},
+				</me>				
+				and the direction will be given by the counterclockwise angle <m>\theta</m> from the positive <m>x</m> axis,
+				<me>
+					\theta = \tan^{-1}\left(\dfrac{4.53}{6.00} \right) = 37^\circ.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electric-Field-at-the-Center-of-Square-from-Different-Charges-at-the-Corners"><title> Electric Field at the Center of Square from Different Charges at the Corners </title>
+		<statement>
+			<p>
+				Four charges A( <m>+3\text{ nC}</m> ), B( <m>-4\text{ nC}</m> ), C( <m>+6\text{ nC}</m> ) and D( <m>-9\text{ nC}</m> ) are fixed to the successive corners of a square of side <m>5\ \mu\text{m}</m>.
+			</p>
+
+		</statement>
+		<hint> <p> Place A, B, C, and D on the axes and the center at the origin. Vectorially, add up the electric fields of the four charges.  </p> </hint>
+		<answer> <p> Magnitude = <m>4.19\times 10^{12}\text {N/C}</m>, Direction: <m>31^\circ</m> clockwise below B-to-D direction.  </p> </answer>
+		<solution> 
+			<p>
+				First decision we make is how to place the charges so that our calculaiton is simplest. I found that if I place the charges on <m>x</m> and <m> y</m> coordinates with the center at the origin, the calculation works out quite simple.
+			</p>
+			<p>
+				The distance <m> r</m>  to the center of the square will be same for the four charges.
+				<me> 
+					r =   \frac{5}{\sqrt{2}} \ \mu\text{m}=  3.54 \ \mu\text{m}.
+				</me> 
+				The magnitudes of the electric field from the four charges will be
+				<md>
+					<mrow> E_P^{\textrm{by A}} \amp  = 9\times 10^9 \times \frac{3\times 10^{-9}}{\left(3.54\times 10^{-6}\right)^2} = 2.15\times 10^{12}\ \textrm{N/C}</mrow>
+					<mrow> E_P^{\textrm{by B}} \amp = E_P^{\textrm{by A}} \times \frac{4}{3} = 2.87\times 10^{12}\ \textrm{N/C} </mrow>
+					<mrow> E_P^{\textrm{by C}} \amp = E_P^{\textrm{by A}} \times \frac{6}{3} = 4.31 \times 10^{12}\ \textrm{N/C}</mrow>
+					<mrow> E_P^{\textrm{by D}} \amp  = E_P^{\textrm{by A}} \times \frac{9}{3} = 6.46 \times 10^{12}\ \textrm{N/C}</mrow>
+				</md>
+			</p>
+
+				<sidebyside widths="50% 50%">
+					<p>
+						The directions of these electric fields are  shown in the figure. With the choice of the <m> x</m>  and <m> y</m>  coordinates shown in the figure we find the <m> x</m> - and <m> y</m> -components of the net electric field at the center to be
+						<md>
+							<mrow> E_{x} \amp  = \left( 2.87 - 6.46 \right)\times 10^{12}\ \textrm{N/C}</mrow>
+								<mrow> \amp = -3.59\times 10^{12}\ \textrm{N/C}</mrow>
+							<mrow> E_{y} \amp  = \left( 4.31 - 2.15 \right)\times 10^{12}\ \textrm{N/C}</mrow>
+							 	<mrow> \amp = = 2.16\times 10^{12}\ \textrm{N/C}</mrow>
+						</md>
+					</p>
+					<image source="./images/coulombs-law/ex-electric-field-at-center-of-square.png" width="50%"/>
+				</sidebyside>
+				<p>
+					
+					The magnitude if the electric field will be
+					<me>
+						E= \sqrt{ 3.59^3 + 2.16^2 } \times 10^{12} = 4.19\times 10^{12}\text{ N/C}.
+					</me>
+					Since point <m>(-3.59, 2.16)</m> is in the second quadrant, the direction will be clockwise from the negative <m>x</m>axis
+					<me>
+						\theta = \tan^{-1} \left( \dfrac{2.16}{-3.59}\right) = -31^{\circ}.
+					</me>
+				</p>
+
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Electric-Field-of-a-Dipole-Located-at-the-Origin"><title> Electric Field of a Dipole Located at the Origin </title>
+		<statement>
+			<sidebyside widths="60% 40%">
+				<p>
+					Two charges <m> +q</m>  and <m> -q</m>  are placed on the <m> y</m>-axis at <m> y = \dfrac{d}{2}</m>  and <m> y = -\dfrac{d}{2}</m>  respectively. The two equal-but-opposite charge system is called a <term>dipole</term>. Find the electric field at an arbitrary point P <m>(x,y,0)</m>  in the <m> xy</m>-plane.
+				</p>
+				<image source="./images/coulombs-law/ex-Electric-Field-of-a-Dipole-Located-at-the-Origin.png" width="50%"/>
+			</sidebyside>
+			
+
+		</statement>
+		<hint> <p>  Use superposition of two electric fields. </p> </hint>
+		<answer> <p> See solution.  </p> </answer>
+		<solution>
+			<p>
+				The distances <m>r_{-}</m> and <m>r_{+}</m>  of the two charge 
+			</p> 
+			<p>
+				The net electric field will be a vector sum of the electric fields from each charge. Let us denote the electric field of <m> +q</m>  by <m> \vec E_1</m>  and that of <m> -q</m>  by  <m> \vec E_2</m> .  We can write the Cartesian components of these electric fields at P as follows.
+				<md>
+					<mrow> E_{1x} \amp =  \frac{k\:q\:x}{ \left[ x^2 + (y-d/2)^2 \right]^{3/2}  }</mrow>
+					<mrow> E_{1y} \amp =  \frac{k\:q\:(y-d/2)}{ \left[x^2 + (y-d/2)^2 \right]^{3/2}  }</mrow>
+					<mrow> E_{2x} \amp =  \frac{-k\:q\:x}{ \left[x^2 + (y+d/2)^2 \right]^{3/2}  }</mrow>
+					<mrow> E_{2y} \amp =  \frac{-k\:q\:(y+d/2) }{ \left[x^2 + (y+d/2)^2 \right]^{3/2}  }</mrow>
+				</md>
+				The Cartesian components of the net electric field <m> \vec E</m>  at the field point P will be
+				<md> 
+					<mrow>  E_x \amp = E_{1x} + E_{2x},</mrow>
+					<mrow>  E_y \amp = E_{1y} + E_{2y}.</mrow>
+				</md> 
+				From these we will get the magnitude and direction as angle as
+				<md>
+					<mrow>  E \amp = \sqrt{E_x^2 + E_y^2},</mrow>
+					<mrow>  \theta \amp = \tan^{-1}\left( \dfrac{E_y}{E_x} \right).</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+</section>

@@ -1,0 +1,86 @@
+<section><title> Conservation of Momentum </title>
+	<p>
+		We found above that the change in the total momentum of any system, whether it contains a single part or several parts, is caused only by the external forces on the system, and the rate of that change at any instant is exactly equal to the net external force on all parts of the system.
+		<men>
+			\dfrac{d\vec P_{\text{system}}}{dt} = \vec F_{\text{net}}^{\text{ext}}.
+		</men>
+		Therefore, if the net external force on a system is zero, then the total momentum cannot change.  This is called <term>  the principle of conservation of momentum </term>.
+	</p>
+	<p>
+		A system that does not interact with outside bodies is called an  <term> isolated system</term>.  Therefore, we can say in another way, <em> the momentum of an isolated system is conserved.</em> We will see in a later chapter that energy of an isolated is also conserved.
+	</p>
+	<p>
+		The entire universe is clearly an isolated system since there is nothing external to it. Therefore, the momentum of the universe is constant in time. 
+		<men> 
+			\dfrac{d\vec P_{\text{Universe}}}{dt}  = 0.
+		</men>
+	</p>
+	<p>
+		When we choose an object or a set of objects to focus on as our system, we essentially, divide the entire universe into two subsystesm: our system of interest and the rest, which we might call surrounding or the environment. Since the momentum of the entire universe is constant in time, any change in the momentum of our system will have to be met with opposite change in the momentum of the rest. 
+		<men> 
+			\dfrac{d\vec P_{\text{system}}}{dt}  =  - \dfrac{d\vec P_{\text{rest}}}{dt}. 
+		</men> 
+		For instance, in a collision of a car and truck, change in momentum of the car will be opposite to the change in momentum of the truck since during the collision, the car may be the system and the truck would then be the surrounding with which the car interacts.
+		<me>
+			\Delta \vec p_{\text{car}}  = - \Delta \vec p_{\text{truck}}.
+		</me>
+		Conservation of momentum is used extensively to study collisions as we will do next.
+	</p>
+
+	<example> <title> Momentum of ice skaters </title>
+
+		<sidebyside widths="60% 40%">
+			<p>
+				<p>
+					Alan  and Betsy  are ice skating on a smooth surface.  Alan's mass is <m> 60\text{ kg} </m> and that of Betsy's is  <m> 50\text{ kg} </m>. They start from rest by pushing on each other with an average force of magnitude <m> 30\text{ N}</m> and directed horizontally for <m> 1.5\text{ sec}</m>.  Assume the skating surface to be horizontal and frictionless. 
+				</p>
+				<p>
+				We wish to find the speeds of the two skaters at an instant after <m> t = 1.5\text{ sec} </m> when they are no longer in contact. 
+				</p>
+			</p>
+			<image source="./images/momentum/example-skaters.png" width="70%"/>
+		</sidebyside>
+
+
+		<p>
+			To deal with the vector nature of momentum, let us introduce a coordinate system. Since all motion is along the Alan-Betsy line, we just need the <m> x </m> axis. Let the positive <m> x </m> direction be from Alan-to-Betsy direction. 
+		</p>
+		<p>
+			Since the net force during the time of interest is that of the push on Alan or Betsy by the other, the momentum change of either of them can be obtained by using the momentum/impulse form of Newton's second law. 
+		</p>
+		<p> <alert> Betsy's velocity using impulse/momentum. </alert>
+			Let's work out the momentum change of Betsy, which we denote with letter <m>B</m>, by computing the impulse on her.
+		</p>
+		<p>
+			<mdn>
+				<mrow number="No"> \Delta p_{B,x} \amp = J_x^{\text{on B}} </mrow>
+				<mrow number="No"> \amp = 30\text{ N}  \times 1.5\text{ sec}</mrow> 
+				<mrow xml:id="eq-example-momentum-of-ice-skaters"> \amp = 45\text{ N.s} = 45\text{ kg.m/s}. </mrow>
+			</mdn>
+		</p>
+		<p>
+			Since initially momentum was zero, the momentum at <m> 1.5\text{ sec}</m> would be
+			<me > 
+				p_{B,x} = p_{B,i,x} + \Delta p_{B,x} = 45\text{ kg.m/s},
+			</me>
+			which upon dividing by Betsy's mass gives the <m> x </m> component of velocity
+			<me> 
+				v_{B,x} = \dfrac{p_{B,x}}{m_B} = 0.9\text{ m/s}.
+			</me>
+			Since this is the only component of velocity, Betsy's speed is <m> 0.9\text{ m/s} </m>.
+		</p>
+
+		<p> <alert> Using conservation of momentum to get change in Alan's momentum. </alert>
+			Next, we note that if we think of Alan and Betsy as a single system, the net external force on this system is actually zero since gravity is balanced by the normal force. Hence Alan<m>+</m>Betsy system is an isolated system. That means their combined momentum remains unchanged, although each clearly gains momentum due to the push on each other. But, their momenta are oppositely directed and hence cancel out. Therefore, the change in  Alan's momentum can be immediately obtained from Eq. <xref ref="eq-example-momentum-of-ice-skaters" />. Let us attach letter <m> A </m> for Alan.
+			<me>
+			 	\Delta p_{A,x}  = - \Delta p_{B,x} = - 45\text{ kg.m/s}.
+			</me>
+			Note the negative sign - this is due to Alan's motion is directed towards the negative <m> x </m> axis. Now, we divide by Alan's mass to obtain Alan's <m> x </m> velocity component.
+			<me> 
+				v_{A,x} = \dfrac{p_{A,x}}{m_A} = - 0.75\text{ m/s}.
+			</me>
+			Since this is the only component of velocity, Alan's speed is <m> 0.75\text{ m/s} </m>.			
+		</p>
+
+	</example>
+</section>

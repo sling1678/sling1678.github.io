@@ -1,0 +1,224 @@
+<section xml:id="sec-Quantum-Model-of-Conduction-in-Metals"><title>Quantum Model of Conduction in Metals</title>
+
+	<introduction>
+		<p>
+			While the classical model of metals gave reasonable explanations of some aspects of electrical and thermal conduction, it was deficient in some other aspects. We saw in the last chapter that an application of quantum mechanics to atoms gives us satisfactory explanation of many properties of atoms and molecules - spectroscopy, their arrangement in the periodic table, angular momentum, magnetic dipole moment, bonding between atoms, and so on. The questions now are: could an application of quantum mechanics to a block of solid also give us insights into properties of solids, and is it mathematically possible to solve the complicated problem of electrons in solids? Recall that solving Schr\"odinger equation for any atom beyond the Hydrogen atom is too difficult.  If multielectron-atom problems are difficult, there is no hope of solving the problem of <m>10^22</m> electrons in a metal sample. Clearly, we need drastic approximation such as the the one made in the Drude model.  In this section we will look at the Drude model quantum mechanically.  
+		</p>
+	</introduction>
+
+	<subsection><title>Fermi Level</title>
+	<subsubsection><title>Free Electron Approximation</title>
+		<p>
+			If electrons are considered free of each other, we can solve the problem of one electron first, and then use the Aufbau principle together with the Pauli's exclusion principle to find the quantum state of the solid.  Each electron in the metal would be considered to be confined to the body and surface of the metal.  This is same as a particle in a box problem. To be concrete and for the sake of simplicity, suppose the metal is a cube of side <m>a</m> with one corner at the origin. Then, the quantum wave function of any one electron will be
+			<me>
+				\psi_E(x,y,z) = \left(\frac{2}{a}\right)^{3/2}\sin\left( \frac{n_x\pi x}{a}\right) \sin\left( \frac{n_y\pi y}{a}\right) \sin\left( \frac{n_z\pi z}{a}\right),
+			</me>
+			with quantum numbers <m>n_x = 1, 2, 3, \cdots</m>, <m>n_y = 1, 2, 3, \cdots</m>, <m>n_z = 1, 2, 3, \cdots</m>,  corresponding to energy
+			<men xml:id="eq-energy-free-electron-original">
+				E = \dfrac{\pi^2\hbar^2}{2 m a^2}\left( n_x^2 + n_y^2 + n_z^2\right). 
+			</men>
+			According to Pauli's exclusion principle, each state designated by the quantum numbers <m>(n_x, n_y, n_z)</m> can have at most two electrons, one with up spin and the other with down spin.  For instance, the first electron will go in the lowest energy state <m>(1,1,1)</m>, the second electron can also go in this state but with opposite spin.  The first two electrons each have energy
+			<me>
+				E = \dfrac{3\pi^2\hbar^2}{2 m a^2}.
+			</me>
+			The third electron will have to go in the next higher energy state, which will be either <m>(2,1,1)</m> or <m>(1,2,1)</m> or <m>(1,1,2)</m>. Suppose, we place the third electron in <m>(2,1,1)</m>, then the fourth electron can have the same spin as the third electron if it is in <m>(1,2,1)</m> or <m>(1,1,2)</m> states.  In this way, a total of six electrons will go into states <m>(2,1,1)</m>, <m>(1,2,1)</m>, and <m>(1,1,2)</m>, which all have the same energy.
+			<me>
+				E = \dfrac{3\pi^2\hbar^2}{m a^2}.
+			</me>
+			The next six electrons go into <m>(2,2,1)</m> or <m>(1,2,2)</m> or <m>(2,1,2)</m> states which all have the same energy
+			<me>
+				E = \dfrac{9\pi^2\hbar^2}{2 m a^2}.
+			</me>
+			This process of successively filling the allowed states will be continued till we have placed all conduction electrons in the available quantum states.  The highest energy level occupied is called the <term> Fermi level</term>.  We will next calculate the expression of the energy of the Fermi level.
+		</p>
+	</subsubsection>
+
+	<subsubsection><title>Fermi Energy</title>
+		<p>
+			In a macroscopic size metal, say 1 cm <m>\times</m> 1 cm <m>\times</m> 1 cm, there will be a large number of conduction electrons, of the order of the Avogadro number. Suppose there are <m>N_e</m> total conduction electrons.  They will fill up <m>N_e/2</m> states. We can calculate the  energy of the highest energy state occupied by the following argument.
+		</p>
+		<p>
+			Note that the quantum numbers <m>(n_x, n_y, n_z)</m> in the energy expression Eq. <xref ref="eq-energy-free-electron-original"/> come as sum of their squares. Therefore, if we think of  <m>(n_x, n_y, n_z)</m> as the <m>x</m>-, <m>y</m>- and <m>z</m>-coordinates of the <m>n</m>-space, energy will depend on the ``radial'' distance in that space.  Let us denote the ``radial'' distance in this space by <m>n</m>.
+			<men xml:id="eq-energy-free-electron-radial">
+				E = \dfrac{\pi^2\hbar^2}{2 m a^2}\: n^2.
+			</men>
+			The states to fill up go as <m>n=\sqrt{3}</m>, <m>\sqrt{6}</m>, <m>\sqrt{9}</m>, <m>\sqrt{11}</m>, <m>\sqrt{12}</m>, and so on. Eventually, the spacing between the successive <m>n</m> values narrow and we can treat <m>n</m> as a continuous variable.  If the final <m>n</m> to fill up by conduction electrons is <m>n_F</m>, then the volume of the sphere of ``radius'' <m>n=n_F</m> in the positive octant will be occupied with each <m>n</m> being occupied by two electrons, one an up spin and the other the down spin.  Therefore, this volume times 2 will equal the total number of conduction electrons, <m>N_e</m>.
+			<me>
+				\left(\frac{1}{8}\: \times \:\frac{4}{3} \pi n_F^3\right)\times 2 = N_e.
+			</me>
+			This gives the following for <m>n_F</m>.
+			<me>
+				n_F = \left( \frac{3N_e}{\pi}\right)^{1/3}
+			</me>
+			Now, putting <m>n=n_F</m> in Eq. <xref ref="eq-energy-free-electron-radial"/> gives us the energy of the highest occupied level, which we denote by <m>E_F</m>.
+			<me>
+				E_F = \dfrac{\pi^2\hbar^2}{2 m a^2}\: n_F^2 , 
+			</me>
+			which upon simplification yields
+			<men xml:id="eq-fermi-energy-free-electron-1">
+				E_F = \dfrac{ \hbar^2}{2 m }\: \left( \frac{3\pi^2 N_e}{a^3}   \right)^{2/3},  
+			</men>
+			Often it is written by replacing <m>a^3</m> by the volume <m>V</m> of the cube.
+			<men xml:id="eq-fermi-energy-free-electron-2">
+				E_F = \dfrac{ \hbar^2}{2 m }\: \left( \frac{3\pi^2 N_e}{V}   \right)^{2/3}. 
+			</men>
+			The energy <m>E_F</m> is called <term>Fermi energy</term> and the energy level with <m>E=E_F</m> is called the Fermi level. The Fermi energy of a system is related to the energy required to extract an electron from the metal, which is the work function of the metal.
+		</p>
+	</subsubsection>
+
+	<subsubsection><title>Density of States</title>
+		<p>
+			How many states will there be between energy <m>E</m> and <m>E+\Delta E</m>?  The number of states below any energy level is one-eights (times two) of the volume of the sphere of radius <m>n</m> corresponding to that energy. Thus, the number of states  <m>\Delta \mathcal{N}</m> in the energy range <m>E</m> to <m>E+\Delta E</m> will be
+			<me>
+				\Delta \mathcal{N} = 2\times \frac{1}{8}\left[\frac{4}{3} \pi (n+\Delta n)^3 -  \frac{4}{3} \pi n^3\right].
+			</me>
+			Simplifying this we get
+			<me>
+				\Delta \mathcal{N} =  \pi n^2 \Delta n,
+			</me>
+			where I have dropped higher power of <m>\Delta n</m> since we are interested in infinitesimal <m>\Delta n</m>. We can write this expression in terms of energy <m>E</m> by noting that
+			<me>
+				E = \dfrac{\pi^2\hbar^2}{2 m a^2}\: n^2 \ \ \Longrightarrow\ \ \Delta E = \dfrac{\pi^2\hbar^2}{m a^2}\: n \Delta n. 
+			</me>
+			Therefore, the number of states between energy <m>E</m> and <m>E+\Delta E</m> is
+			<me>
+				\Delta \mathcal{N} =   \pi\sqrt{2} \left( \frac{m}{\pi^2\hbar^2}\right)^{3/2} V \sqrt{E} \Delta E.
+			</me>
+			Therefore, the number of states per unit energy range per unit volume, called the <term>density of states</term>, <m>\rho(E)</m> is
+			<men xml:id="eq-density-of-states-free-electrons-final">
+				\rho(E) = \frac{\Delta \mathcal{N} }{V  \Delta E} = \pi\sqrt{2} \left( \frac{m}{\pi^2\hbar^2}\right)^{3/2}  \sqrt{E}.
+			</men>
+			This says that as you go on filling electrons in various states, the number of available states per unit energy of the last filled state increases with energy.  This has the effect of most conduction electrons to end up near the highest energy state filled by the electrons.
+		</p>
+
+	</subsubsection>
+	<subsubsection><title> Fermi-Dirac Distribution</title>
+		<p>
+			So far in our studies we have ignored the role of temperature. Our discussion above has tacitly assumed that the metal sample is at the absolute zero, <m>0K</m>, temperature. At temperature <m>T=0K</m>, there is no thermal energy available to push an electron into higher energy states above the Fermi level. If the sample is in thermal contact with a thermal bath at a non-zero temperature, <m>T > 0K</m>, electrons at the Fermi level will be excited leaving some lower energy states unoccupied and some higher energy states occupied.  For a metal we can also define a <term>Fermi temperature</term> <m>T_F</m> by equating the thermal energy for that temperature to the Fermi energy of the metal.
+			<me>
+				k_BT_F = E_F,\ \ \Longrightarrow\ \ T_F = E_F/ k_B.
+			</me>
+			We will see below that  thermal effects are significant even when the temperature of the metal is well below the Fermi temperature for the metal. The probability that a state of energy <m>E</m> is occupied at temperature <m>T</m> (Kelvin) is given by the Fermi-Dirac distribution function give by
+			<me>
+				f_{\textrm{FD}} = \frac{1}{e^{(E-E_F)/k_BT} + 1}.
+			</me>
+			To see the impact of temperature on a sample it is instructive to plot <m>f_{\textrm{FD}}</m> at different temperatures. <xref ref="fig-fermi-energy-dirac-distribution"/> shows the Fermi-Dirac distribution function for gold at <m>0K</m> and at <m>\frac{1}{10}T_F = 6,420K</m>. The <m>T_F</m> of gold was calculated from 
+			the Fermi energy of 5.53 eV of gold as
+			<me>
+				T_F = \frac{E_F}{k_B} = \frac{5.5\ \textrm{eV}}{8.62\times 10^{−5}\:\textrm{eV/K}} = 64,200\:\textrm{K}.
+			</me>
+			From the figure it is clear that, although the Fermi energy is <m>5.53\text{ eV}</m>, the probabilities of the occupancy of states from around 2.5 eV and up are less than 1 at <m>T = 0.1 T_F</m>.  While all states below <m>E=E_F</m> are occupied at <m>T=0K</m>, some of the states below <m>E=E_F</m>  will be un-occupied at <m>T>0K</m>. For instance, gold has <m>5.90 \times 10^{22}</m> conduction electrons per <m>\text{cm}^3</m>.  At <m>T=0K</m> all of these electrons will be in states with <m>E\le E_F</m>.  At <m>T>0K</m>, some of these electrons will be promoted to states with <m>E>E_F</m> and therefore, some of the states below the Fermi level will be empty.
+		</p>
+
+		<figure xml:id="fig-fermi-energy-dirac-distribution">
+			<caption>
+				The effect of temperature on the distribution of electrons in available quantum states. The top figure is the density of available states in the free-electron approximation.  The middle figures are the Fermi-Dirac distribution at <m>T = 0K</m> and <m>T = 6420K</m>, which is one-tenth of the <m>T_F</m> of gold. The bottom figure shows the product of the two and displays actual density of states occupied. The temperature mostly affects the distribution near the Fermi energy.
+			</caption>
+			<image source="./images/modern-physics/fermi-energy-dirac-distribution.png" width="100%"/>
+		</figure>
+
+		<p>
+			<xrf ref="fig-fermi-energy-dirac-distribution"/> shows the density of the available states and the density of occupied states with respect to energy of the state at <m>T=0K</m> and <m>T = 0.1 T_F</m> for a gold sample.  The number of states  per unit energy per unit volume varies as <m>\sqrt{E}</m> as given in Eq. <xref ref="eq-density-of-states-free-electrons-final"/> and the probability that any one of these states is occupied is given by the Fermi-Dirac distribution <m>f_{\textrm{FD}}</m>.  The density of occupied states will equal the density of states  times the probability that the state is occupied given by <m>f_{\textrm{FD}}</m>. That is
+			<men xml:id="eq-density-of-states-occupied">
+			\rho_{\textrm{occupied}} (E) = \rho(E) \times f_{\textrm{FD}}. 
+			</men> 
+			While the lowest energy electrons are not affected much by the thermal energy that is not too large, the electrons at the Fermi level are affected greatly. This can be seen in the expression of the Fermi-Dirac distribution.  The dependence on energy is is exponential in the difference <m>E-E_F</m> and temperature <m>T</m>.  The limits of <m>f_{\textrm{FD}}</m> in <m>E>> E_F</m> and  <m>E \ll E_F</m> limits are
+			<me>
+				f_{\textrm{FD}}  = \frac{1}{e^{(E-E_F)/k_B T} + 1} = \left\{
+				\begin{array}{ll}
+				1 \amp  \quad\quad E \ll E_F\\
+				0 \amp  \quad\quad E>> E_F
+				\end{array}
+				\right.
+			</me>
+			 Thus, the only electrons that play active role in the electrical properties of a metal are the ones whose energies are  close to the Fermi energy. 
+		</p>
+	</subsubsection>
+	</subsection>
+
+	<subsection><title>Mean Free Path of Electrons in Metal</title>
+		<p>
+			To study conduction it is useful to introduce a speed  associated with an electron at the Fermi level, called the <term>Fermi speed</term> <m>v_F</m>, by equating the Fermi energy to the kinetic energy of the electron.  Since the electron speed even the ones at the Fermi level are in the non-relativistic regime we use the nonrelativistic formula of the kinetic energy. 
+			<me>
+				\frac{1}{2} m v_F^2 = E_F,\ \ \ v_F = \sqrt{2E_F/m}.
+			</me>
+			For simplicity of discussion we will assume <m>T=0K</m>. In this case, the speed of electrons in the metal will be between <m>0</m> and <m>v_F</m> which would correspond to the energy of the occupied states between <m>0</m> and <m>E_F</m>.  In the absence of an applied electric field, the velocity of conduction electrons will be in all directions, or put another way, same number of electrons will flow in opposite directions.  Therefore, even with large speed, there will be no net drift in any particular direction.
+		</p>
+		<p>
+			Due to the symmetry of directions in space, in the absence of an external applied field, the Fermi-Dirac distribution will be symmetric with respect to positive and negative components of the velocity in any direction.  Now, if we apply an electric field pointed towards the negative <m>x</m> direction, there will be an external force on the electron towards the positive <m>x</m> direction, which will accelerate the electrons moving towards the positive <m>x</m> direction and decelerate the electrons which were moving towards the negative <m>x</m> direction. This will cause the shift of the Fermi-Dirac distribution with respect to the velocity towards the positive <m>x</m> direction as shown in <xref ref="fig-fermi-surface-move-e-field"/>.
+		</p> 
+
+		<figure xml:id="fig-fermi-surface-move-e-field">
+			<caption>
+				The Fermi surface is centered at the origin in the velocity space when there is no external electric field. When an electric field is applied in the direction of negative <m>x</m>-axis, electrons pick up speed in the positive <m>x</m>-direction moving the Fermi surface to the right.
+			</caption>
+			<image source="./images/modern-physics/fermi-surface-move-e-field.png" width="80%"/>
+		</figure>
+
+		<p>
+			In <xref ref="fig-fermi-surface-move-e-field"/> we note that mostly the electrons at the Fermi level will be active in the conduction. They have the Fermi speed <m>v_F</m>.  Therefore, in place of the rms speed <m>v_{\textrm{rms}}</m> used in the classical model we should use <m>v_F</m>.
+			<me>
+				\textrm{For quantum gas, use } v_F = \sqrt{2E_F/m}. \textrm{ in place of } v_{\textrm{rms}}.
+			</me> 
+			With this change we will notice a difference in the predicted conductivity with the conductivity now given by
+			<men xml:id="eq-conductivity-quantum">
+				\sigma = \frac{ne^2\lambda}{m v_F}. 
+			</men>
+			Recall that the problem with the Drude model was the short mean free path in the model. Now, since we are using electrons as waves, we would like to know what is the mean free path of the electron that would give the correct <m>\sigma</m>.  Solving Eq. <xref ref="eq-conductivity-quantum"/> for <m>\lambda</m> gives
+			<men xml:id="eq-mean-free-path-quantum">
+				\lambda = \frac{m v_F\sigma}{ne^2}. 
+			</men>
+		</p>
+	</subsection>
+
+	<exercise xml:id="ex-Mean-Free-Path-of-an-Electron-in-Metal"><title>Mean Free Path of an Electron in Metal</title>
+
+		<statement>
+			<p>
+				Find the mean free path of an electron in gold using quantum gas formulas.
+			</p>
+		</statement>
+		<hint><p>
+			Get <m>v_F</m> from Fermi energy.
+		</p></hint>
+		<answer><p>
+			<m>34.6 \: \textrm{nm}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				Gold has Fermi energy <m>5.53 \text{ eV}</m>.  This gives the following for the Fermi speed <m>v_F</m>.
+				<me>
+					v_F = c\sqrt{2E_F/mc^2} = c\: \sqrt{\frac{2\times 5.53\: \textrm{eV} }{0.511\:\textrm{MeV}}} = 1.40\times 10^6\:\textrm{m/s}.
+				</me>
+				Assuming that each gold atom contributes one electron to the conduction, we can readily calculate the density of conduction electrons from the density of gold <m>(19.32 \text{ g/cm}^3)</m> and atomic weight <m>(197 \text{ g})</m> with the result
+				<me>
+					n = 5.90 \times 10^{28}\:\textrm{electrons/m}^3.
+				</me> 
+				Putting numerical values in Eq. <xref ref="eq-mean-free-path-quantum"/> we get the following for the mean free path.
+				<md>
+					<mrow> \lambda \amp  = \frac{9.1\times 10^{-31}\:\textrm{kg} \times  1.40\times 10^6\:\textrm{m/s}\times 4.10\times 10^7\:\Omega^{-1}\textrm{m}^{-1}}{5.90 \times 10^{28}\:\textrm{electrons/m}^3 \times (1.6\times 10^{-19}\:\textrm{C})^2}</mrow>
+					<mrow>\amp   = 3.46\times10^{-8}\:\textrm{m} = 34.6 \: \textrm{nm}.</mrow>
+				</md>
+				Assuming the inter-atomic distance between gold atoms to be <m>0.30 \text{ nm}</m>, the mean free path here is about 115 times longer than expected in the classical Drude model.
+			</p>
+		</solution>
+	</exercise>	
+
+ TODO:
+
+ <p>
+ \begin{exercise}
+ Assuming each atom of the (a) Ag, (b) Cu, and (c) Au contribute to the conduction, find the Fermi energy of these metals.
+ Data: atomic weights: Ag 107.86, Cu 63.55, Au 196.97; mass density of metals, Ag 10.49 g/cm$^{3}$, Cu 8.96 g/cm$^{3}$, Au 19.30 g/cm$^{3}$. 
+\end{exercise}
+</p>
+<p>
+
+\begin{exercise}
+ The  electrical conductivity of copper at room temperature ( $27^{\circ}$C) is $ 	5.96  \times 10^{7}\:\Omega^{-1}\textrm{m}^{-1}$.  (a) Find the average time between collisions of electrons using quantum mechanical treatment.  (b) What is the Fermi energy of copper. (c) What is the Fermi velocity of electrons of copper? (d) What is the mean free path of electrons at room temperature?  Data: atomic weight Cu 63.55, mass density Cu 8.96 g/cm$^{3}$. 
+\end{exercise}	
+
+</p>
+
+
+</section>

@@ -1,0 +1,156 @@
+<section><title> Impulse </title>
+	<introduction>
+		<p>
+			When you hit a baseball, you change its momentum from the incoming direction to the outgoing direction in a very short amount of time. The change in momentum is caused by the force from the bat acting on the ball during their contact time. 
+			We say that the impact of the bat has changed the momentum of the ball and quantify the force and duration over which the force acted by the <term>impulse of the force</term>, to be defined below.
+		</p>
+		<p>
+			We will denote impulse by vector <m> \vec J </m> and the magnitude of the impulse by the same symbol without the arrow.
+		</p>
+		<p>
+			Suppose that you hit a ball with an average force <m> \vec F </m> that lasts for a duration of <m> \Delta t</m>. Then, we say that the <term> average impulse </term> is the product of the average force and the duration.
+			<men  xml:id="impulse-definition">
+				\vec J_{\text{av}} = \vec F_{\text{av}}\, \Delta t.
+			</men>
+			From this you can see that the direction of the average impulse is same as the direction of the average force and the magnitude of the average impulse is just the product of thje magnitude of the average force and duration.
+			<men  xml:id="average-impulse-definition-magnitude">
+				 \text{Magnitude,    }J_{\text{av}} =  F_{\text{av}}\, \Delta t.
+			</men>
+		</p>
+		<p>
+			This definition of average impulse requires us to somehow define the average force. If we go back to the bat hitting a ball, the actual force of the bat will be zero till the contact occurs, increase as the bat crushed into the ball, and then decrease to zero as the ball leave the bat. Figure xx shows a schematic view of the magnitude of force between the ball and the bat.
+		</p>
+
+<!-- 			The above procedure can help us quantify what happens <alert> on average </alert>. To gain a more complete picture, we will define below more analytic ways of computing impulse, not just the average impulse. -->
+		
+
+<!-- 		<p>
+			<alert> Impulse is inherently a Calculus concept. </alert> 
+			Special cases of constant force where you do not need  Calculus are discussed below.
+		</p>
+		<p>
+			The integral of a force over an interval is called impulse of that force. We will denote impulse by vector <m> \vec J </m>.
+			<men xml:id="impulse-definition">
+				\vec J  = \int_{t_i}^{t_f}\, \vec F(t) dt
+			</men>
+			Since impulse is a vector, we can speak of its magnitude and direction, or, alternately, in terms of its components.
+			<md>
+				<mrow> \vec J \amp = (\text{Magnitude}, \text{ One or two angles for direction}) </mrow>
+				<mrow> \amp = (J_x,\, J_y,\, J_z).</mrow>
+			</md>
+		</p>
+		<p>
+			Impulses from different forces add vectorially.  Suppose force <m> \vec F_1</m> acts for a time <m>\Delta t_1</m> and <m>\vec F_2</m> acts for a time <m>\Delta t_2</m>, then the net impulse <m>\vec J_{\text{net}}</m> will be the vector sum of the impulses <m>\vec J_1</m> and <m>\vec J_2</m> of the two forces.
+			<me>
+				\vec J_{\text{net}} = \vec J_{1}  +\vec J_{2},
+			</me>
+			which must be evaluated as vector additions that you have learned in last few chapters. 
+		</p>
+
+		<p>
+			What's big deal about impulse? According to Newton's second law of motion an impulse causes change in momentum, <m> \Delta \vec p</m>.
+			<men>
+				\Delta \vec p = \vec J.
+			</men>
+			This is one of the fundamental equations of this chapter. Note that this is a vector equation. Each force on an object will cause its own change of momentum, and the net change in momentum observed will be just from the net impulse.
+			<men>
+				\Delta \vec p_{\text{net}} = \vec J_{\text{net}}.
+			</men>			
+
+		</p> -->
+	</introduction>
+
+
+
+
+	<subsection><title> Special Cases </title>
+		<p>
+			<alert> Constant Force. </alert> If the direction as well as the magnitude of the force is fixed, then the definition, Eq. <xref ref="impulse-definition" />, simplifies to simply a product.
+			<men xml:id="impulse-definition-constant-force">
+				\vec J  = \vec F \times  \Delta t,
+			</men>
+			where <m> \Delta t = t_f - t_i </m>. This equation can be used as a rough guide in situations we can somehow know an average force. Using this equation does not need a knowledge of Calculus.
+
+		</p>
+
+		<p> 
+			<alert> Force of fixed direction.</alert> This is the most common situation in which impulse is used. For instance, when a ball is hit, the force by the bat during the contact changes in magnitude but the direction during the hit is approximately same throughout the hit. 
+		</p>
+		<p>
+			In this case, the direction of the impulse vector will be the same as the direction of the force vector, and the magnitude of the impulse vector can be obtained by integrating over the magnitude of the force.
+			<men xml:id="impulse-definition-constant-direction">
+				J  = \int_{t_i}^{t_f}\, F(t) dt,\ \ \ \text{(Magnitudes Only!)}
+			</men>
+			Note that this equation is not correct unless the direction of the force is fixed in time. Calculating this integral can be done if an analytic form of the function <m> F(t) </m> is given. Another case in which this integral can be done is when a plot of the function <m> F(t) </m> is given - there we use the <em> area under the curve </em> method for estimating the integral.	
+		</p> 
+	</subsection>
+	<example><title> Impulse of constant forces</title>
+		<p>
+			Suppose you pull a cart with a constant force of magnitude <m> 15\text{ N}</m> for <m>2\text{ sec}</m>, then you would impart an impulse of <m> 30\text{ N.s}</m> to the cart in the direction of the force.  
+		</p>
+		<p>
+			Same impulse of <m> 30\text{ N.s}</m> can be imparted by a smaller force, say <m> 1\text{ N}</m> in the same direction, that acts for  <m>30\text{ sec}</m>.
+		</p>
+	</example>
+	<example><title> Impulse of force of fixed direction but verying in time</title>
+		<p>
+			The force between a baseball and a bat is an example of a time-varying force with a fixed direction.  The magnitude of the force varies with time in a complicated way as shown in figure in (a). To compute the magnitude of the impulse, we need the area under this curve. We simplify it in part (b) of the figure. Now, it is relatively easy to add up the areas of the two triangles to get a reasonable estimate of the full area under the curve of (a). The magnitude of the impulse = <m> \dfrac{1}{2} 0.1\times 100 </m> <m> +  \dfrac{1}{2} 0.15\times 100 </m> = <m> 12.5\text{ N.s}</m>. The direction of the impulse is the direction of the force. (Note: the area of triangle = <m> \dfrac{1}{2} \text{ base } \times \text{ height} </m>.)
+		</p>
+		
+		<image source="./images/momentum/example-impulse-on-bat.png" width="80%"/>
+	</example>
+	<example> <title> Impulse of force of fixed magnitude but varying direction - Calculus</title>
+		<p>
+			Suppose you tie a stone to a rope and swing it in a circle. Let the tension in the rope be constant <m> 10\text{ N}</m> pointed towards the center of the circle. Using <m>x</m> and <m>y</m> axes with origin at the center of the circle, let the components of the tension force be
+			<md>
+				<mrow> \amp T_x = -10\text{ N}\, \cos(5\, t), </mrow>
+				<mrow> \amp T_y = -10\text{ N}\, \sin(5\, t), </mrow>
+			</md>
+			where the arguments of sine and cosine are in radians with <m> t </m> in seconds. We will compute the impulse of this force in the interval <m> 0\lt t \lt 3\text{ sec} </m>.
+		</p>
+		<p>
+			Since we have the components of the force already in an anlaytic expression, we can just do the corresponding integrals and obtain the components of the impulse. 
+			<md>
+				<mrow> \amp J_x = -\int_0^3 10\, \cos(5\, t)\, dt = 2\, \sin(15) = 1.30\text{ N.s}, </mrow>
+				<mrow> \amp J_y = -\int_0^3 10\, \sin(5\, t)\, dt = - 2\, \cos(15) = 1.52\text{ N.s}. </mrow>
+			</md>
+			We can compute the magnitude and direction of the impulse from these components. 
+			<md>
+				<mrow> J = \sqrt{J_x^2 + J_y^2} = 2.0\text{ N.s}, </mrow>
+				<mrow> \theta_x = \arctan(J_y/J_x) = 49.5^{\circ}. </mrow>
+			</md>			
+		</p>
+	</example>
+
+	<example><title> Change in momentum from impulse </title>
+		<p>
+			Your friend is riding a bike at speed <m> 4\text{ m/s}</m> on a straight road. You push him for <m>10\text{ sec}</m> with a constant force <m> 50\text{ N}</m>. If the mass of your friend plus bike system is <m>100\text{ kg}</m>, what is his new speed?
+		</p>
+		<p>
+			Since everything is along a straight line, we can just call it <m> x </m> axis with the initial velocity towards positive <m> x </m> axis. From the description, the impulse imparted is 
+			<me>
+				J = 50\text{ N}\times 10\text{ sec} = 500\, \text{ N.s}.
+			</me>
+			This is pointed towards positive <m> x </m> axis. Therefore, the <m> x </m> component of momentum will change by
+			<me>
+				\Delta p_x = 500\text{ N.s} = 500\, \text{kg.m/s}.
+			</me>
+			The friend and biket systme had an initial momentum, also pointed towards positive <m> x </m> axis.
+			<me>
+				p_{i,x} = 100\text{ kg} \times 4\text{ m/s} = 400\, \text{kg.m/s}.
+			</me> 
+			Therefore, final momentum will be the sum of initial plus the change.
+			<me>
+				p_{f,x} = p_{i,x} + \Delta p_x = 900\, \text{kg.m/s}. 
+			</me>
+			If we divide by the mass we will get the <m> v_x</m>, whose absolute value should be speed here.
+			<me>
+				v = \left| \dfrac{p_{f,x}}{m} \right|= 9\,  \text{ m/s}.
+			</me>
+		</p>
+	</example>
+
+
+</section>
+ 
+

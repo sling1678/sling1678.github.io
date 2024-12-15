@@ -1,0 +1,827 @@
+<section xml:id="Static-Equilibrium"><title> Static Equilibrium</title>
+
+	<introduction>
+		<p>
+			We say an object is in static equilibrium if none of its parts is accelerating. That means force on each particle of a body in static equilibrium will be zero. Thus, if a body has <m>N</m> particles, then we will have <m>N</m> conditions.
+			<men xml:id="eq-static-equilibrium-1">
+				\vec F_1 = 0,\ \ \vec F_2 = 0, \ \ \vec F_3 = 0,\ \ \cdots,\ \ \vec F_N = 0,
+			</men>
+			where <m> \vec F_i</m> is net force on the <m>i\text{-th}</m> particle.
+		</p>
+	</introduction>
+	<subsection><title>Internal and External Forces</title>
+		<p>
+			Force on each particle in Eq. <xref ref="eq-static-equilibrium-1"/> is a vector sum of  (1) forces from other particles of the body and (2) forces from other objects outside the body. We will call them internal forces and external forces. It will be helpful in our analysis below to separate them. 
+		</p>
+		<p>
+			Suppose we sum up all the internal forces on particle 1 and call it <m> \vec F_1^{\text{int}}</m> and sum up all the external forces on particle 1, call it <m> \vec F_1^\text{ext}</m>, then we can write the force <m> \vec F_1</m> on particle 1 as
+			<men>
+				\vec F_1 = \vec F_1^\text{int} + \vec F_1^\text{ext}.
+			</men>
+			Similarly for the forces on the other particles. Using this separation, Eq. <xref ref="eq-static-equilibrium-1"/> should actually be written as
+			<mdn>
+				<mrow  xml:id="eq-static-equilibrium-2-1"> \vec F_1^\text{int} \amp  + \vec F_1^\text{ext} = 0, </mrow>
+				<mrow   xml:id="eq-static-equilibrium-2-2"> \vec F_2^\text{int} \amp  + \vec F_2^\text{ext} = 0, </mrow>
+				<mrow   xml:id="eq-static-equilibrium-2-3"> \vec F_3^\text{int} \amp + \vec F_3^\text{ext} = 0, </mrow>
+				<mrow number="no"> \amp \vdots </mrow>
+				<mrow   xml:id="eq-static-equilibrium-2-N">  \vec F_N^\text{int} \amp + \vec F_N^\text{ext} = 0, </mrow>
+			</mdn>
+		</p>
+
+<!-- 		<p>
+			Recall that the forces in a multi-particle system can be classified as internal forces or external forces based on which agent applies that force: if the force is from another particle in the system, we call that force an <term> internal force </term>, and, if the force is by some object outside the system, then we call that force an <term> external force</term>.  
+		</p>
+		<p>
+			Suppose we sum up all the internal forces on particle 1 and call it <m> \vec F_1^{\text{int}}</m> and sum up all the external forces on particle 1, call it <m> \vec F_1^\text{ext}</m>, then we can write the force <m> \vec F_1</m> on particle 1 as
+			<men>
+				\vec F_1 = \vec F_1^\text{int} + \vec F_1^\text{ext}.
+			</men>
+			Similarly for the forces on the other particles. Using this separation, Eq. <xref ref="eq-static-equilibrium-1"/> should actually be written as
+			<mdn>
+				<mrow  xml:id="eq-static-equilibrium-2-1"> \vec F_1^\text{int} \amp  + \vec F_1^\text{ext} = 0, </mrow>
+				<mrow   xml:id="eq-static-equilibrium-2-2"> \vec F_2^\text{int} \amp  + \vec F_2^\text{ext} = 0, </mrow>
+				<mrow   xml:id="eq-static-equilibrium-2-3"> \vec F_3^\text{int} \amp + \vec F_3^\text{ext} = 0, </mrow>
+				<mrow number="no"> \amp \vdots </mrow>
+				<mrow   xml:id="eq-static-equilibrium-2-N">  \vec F_N^\text{int} \amp + \vec F_N^\text{ext} = 0, </mrow>
+			</mdn>
+			These equations simplify considerably for nondeformable objects.
+		</p> -->
+	</subsection>
+	
+	<subsection><title> Static Equilibrium of Rigid Bodies</title>
+		<p>
+			Every physical body gets deformed, even so slightly, when a force acts on the body. As a consequence of the deformation, a stress develops in the body. We will study these effects in a later section in this chapter. Here, we will work ignore deformations in the body to focus on effect of external forces alone. Objects where this mathematical idealization works well are also called <term>rigid bodies</term>. 
+		</p>
+		<p>
+			Internal forces in Eqs. <xref ref="eq-static-equilibrium-2-1" /><m>-</m><xref ref="eq-static-equilibrium-2-N" /> occur as pairs of oppositely directed third law forces. Hence, summing these equations results in their cancellation.
+		<!-- 		</p>
+		<p>
+			The requirement of vanishing of forces on all parts on an ideal nondeformable object can be shown to simplify to a consideration of only the external forces.  When you sum up equations for forces on each particle given in  Eqs. <xref ref="eq-static-equilibrium-2-1" /><m>-</m><xref ref="eq-static-equilibrium-2-N" />, the internal forces will cancel out, since they are all paired up in opposite direcitons, as required by Newton's third law of motion.  --> 
+			<men xml:id="eq-static-equilibrium-net-external-force-sum">
+  				\vec{F}_1^\text{ext}  + \vec{F}_2^\text{ext}  + \cdots + \vec{F}_N^\text{ext}
+  				 = 0.
+  			</men>
+  			We can state this as net external force on the rigid body must be zero.
+  			<men xml:id="eq-static-equilibrium-net-external-force">
+				\vec{F}_\text{net}^\text{ext} = 0.
+  			</men>
+  			While Eqs. <xref ref="eq-static-equilibrium-2-1" /><m>-</m><xref ref="eq-static-equilibrium-2-N" /> had <m>N</m> vector equations, this equation is only one vector equation. Clearly, balancing of net exernal force does not have all the information in the original set of <m>N</m> vector equation.
+  		</p>
+  		<p>
+  			Additional relation among the external forces can be obtained by looking at torque of forces on each part of the body. Suppose you pick an <alert>arbitrary pivot point</alert> P, and calculate the net torque about that point by <m>\vec \tau = \vec r_P \times \vec F</m>, and sum all the torqus. You will find that  the net torque of external forces is zero <em> if the internal forces between two particles act along the line joining them</em>. 
+			<men xml:id="eq-static-equilibrium-net-external-torque">
+			  \vec \tau_1^{\text{ext}}  + \vec \tau_2^{\text{ext}} + \cdots + \vec \tau_N^{\text{ext}} = 0 
+			</men>
+			This gives one more vector equation among external forces. Conditions stated in Eqs. <xref ref="eq-static-equilibrium-net-external-force"/>   and <xref ref="eq-static-equilibrium-net-external-torque"/> often help us find magnitudes and locations of external forces on a body in equilibrium. They are routinely used to analyze mechanically stable structures as we will see in the worked out examples below. 
+		</p>
+		<p>
+			<alert>Simplification for forces in the <m> xy </m> plane only:</alert>
+		</p>
+		<p>
+			Often we find that lines of forces will all be in one plane. We identify this plane with the Cartesian <m>xy</m>-plane. The torques of these forces will be either positive <m>z</m> or negative <m>z</m> axis or zero. In these situations, we only have three component equations from the two vector equations, Eqs. <xref ref="eq-static-equilibrium-net-external-force"/>   and <xref ref="eq-static-equilibrium-net-external-torque"/>:   <m> x </m> and <m> y</m> components of the net external force  and one for the net torque.
+			<mdn>
+				<mrow> \amp F_{1x}^\text{ext}+ F_{2x}^\text{ext} + \cdots + F_{Nx}^\text{ext} = 0, </mrow>
+				<mrow> \amp F_{1y}^\text{ext}+ F_{2y}^\text{ext} + \cdots + F_{Ny}^\text{ext} = 0, </mrow> 
+				<mrow> \amp \tau_{1z}^\text{ext}  + \tau_{2z}^\text{ext} + \cdots + \tau_{Nz}^\text{ext} = 0. </mrow>
+			</mdn>
+		</p>
+	</subsection>
+
+
+	<subsection><title> Deformable Objects and Static Equilibrium</title>
+		<p>
+			For an arbitrary structure to be in a static equilibrium, the vanishing of the net external force does not ensure static equilibrium.  For instance, if you push on a piece of foam from two opposite sides, the net force on the foam is zero, but the foam gets deformed because of an imbalance between the external and internal forces on the particles at the surface.
+		</p>
+		<figure>
+			<caption> A deformable object will deform under external force. The deformation causes stress to develop in the body. The balancing of internal and external forces occurs at the equilibrium.  
+			</caption>
+			<image source="./images/stress-and-strain/deformable-equilibrium-zero-force.png" width="80%"/>
+		</figure>
+		
+
+		<p>
+			While there is no limit on external forces, the internal forces, just like the static frictional force, have an upper limit and can be overcome by a large enough external force. Therefore, to study the equilibrium of a deformable object, we need  the complete condition for the static equilibrium given in Eq. <xref ref="eq-static-equilibrium-2-1"/><m>-</m><xref ref="eq-static-equilibrium-2-N"/>, viz., the net force on each and every particle of the system must vanish independently, not just a vector sum of them.
+		</p>
+
+		<p>
+			To be in static equilibrium, the external forces must balance the internal forces at each point.  In this way, <alert>the analysis of the static equilibrium of deformable systems provides us with an understanding of the strength of the material.</alert> In this chapter, we will study equilibrium with regard to the external forces as well as internal forces.
+		</p>
+
+		<p>
+			But, for simplicity, we will look at the problems for the ideal undeformable objects first. This would be a review of forces and torques you have studied in earlier chapters.
+		</p>
+	</subsection>
+
+
+
+	<exercise xml:id="ex-Reading-on-Two-Bathroom-Scales-For-a-Man-Standing-on-Plank-on-Them"><title> Reading on Two Bathroom Scales For a Man Standing on Plank on Them </title>
+		<statement>
+			<p>
+				A <m> 10\text{-kg}</m> wooden plank is placed on two bathroom scales separated by a distance <m>3.0\text{ m}</m> as shown in <xref ref="fig-man-on-plank-over-two-scales"/>. A man of mass <m>100\text{ kg}</m> stands on the plank <m> 1.0\text{ m}</m> from one of the scales, say the scale on the left.
+			</p>
+			<p>
+				What are the readings on the two scales?
+			</p>
+			<figure xml:id="fig-man-on-plank-over-two-scales">
+				<caption>
+					Figure for <xref ref="ex-Reading-on-Two-Bathroom-Scales-For-a-Man-Standing-on-Plank-on-Them"/>.
+				</caption>
+				<image source="./images/stress-and-strain/man-on-plank-over-two-scales.png" width="60%"/>
+			</figure>
+			
+		</statement>
+		<hint> <p>  Balance the net torque on the plank about each end. Scale reading are given by force divided by <m>g</m>. </p> </hint>
+		<answer> <p>  <m> 71.7\text{ kg}</m> and <m> 38.3\text{ kg}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				There are four systems here - the two scales, the plank, and you. The only system that everything interacts with is the plank. So, we will try to balance forces and torques on this.
+			</p>
+			<p>
+				The forces on the plank are shown in <xref ref="fig-man-on-plank-over-two-scales-solution"/>. The normal forces from the scales are the readings in those scales. so, we need to find them. We can set up balance of forces and torques. However, we can also set up just the balance of torques about two different pivot points giving us the two independent equations for the two unknowns.
+			</p>
+			<figure xml:id="fig-man-on-plank-over-two-scales-solution">
+				<caption>
+					Figure for <xref ref="ex-Reading-on-Two-Bathroom-Scales-For-a-Man-Standing-on-Plank-on-Them"/> solution.
+				</caption>
+				<image source="./images/stress-and-strain/man-on-plank-over-two-scales-solution.png" width="60%"/>
+			</figure>
+ 
+			<p>
+				<alert>Method 1: Set up two torques equations.</alert>
+			</p>
+			<p>
+				Let's first work out the weight values since we will need them in our calculations below.
+				<md>
+					<mrow> W_1 = m g = 10\text{ kg}\times 9.81\text{ m/s}^2 = 98.1\text{ N}.</mrow>
+					<mrow> W_2 = M g = 100\text{ kg}\times 9.81\text{ m/s}^2 = 981\text{ N}.</mrow>
+				</md>
+			</p>
+			<p>
+				From balancing torques about the left end we get
+				<men xml:id="eq-stat-eq-weights-torque-1">
+					-W_1 \times 1.5\text{ m} -  W_2\times 1.0\text{ m} + F_R\times 3\text{ m} = 0,
+				</men>
+				and about the right end we get
+				<men xml:id="eq-stat-eq-weights-torque-2">
+					W_1 \times 1.5\text{ m} +  W_2 \times 2.0\text{ m} - F_L\times 3\text{ m} = 0,
+				</men>
+				where I have used the convention that counterclockwise sense is positive and clockwise sense negative.
+				From these two equations, we get the readings we get in the two scales.
+				<md>
+					<mrow>F_L \amp = 703.0\text{ N}, </mrow>
+					<mrow> F_R \amp = 376.0\text{ N}. </mrow>
+				</md>
+				The scale readings show these numbers divided by <m>g=9.81\text{ m/s}^2</m>. Therefore scale readings are
+				<md>
+					<mrow>S_L \amp = F_L/g =  71.7\text{ kg}, </mrow>
+					<mrow> S_R \amp= F_R/g = 38.3\text{ kg}. </mrow>
+				</md>				
+			</p>
+
+			<p>
+				<alert>Method 2: Set up one torque equation and one force balance equation.</alert>
+			</p>
+			<p>
+				The force balance equation gives
+				<men xml:id="eq-stat-eq-weights-force-1">
+					F_L + F_R = 10\text{ kg}\times 9.81\text{ m/s}^2 + 100\text{ kg}\times 9.81\text{ m/s}^2 = 1,078\text{ N},
+				</men>
+				and the torque balance equation about, say the left end gives Eq. <xref ref="eq-stat-eq-weights-torque-1"/>. From the torque balance we got
+				<me>
+					F_R = 376.0\text{ N}.
+				</me>
+				which we use in the force balance equation, Eq. Eq. <xref ref="eq-stat-eq-weights-force-1"/>. This gives
+				<md>
+					<mrow>F_L \amp = 1,079\text{ N} - F_R </mrow>
+					<mrow>\amp =  703\text{ N}. </mrow>
+				</md>
+				These will give the same values for the readings as by method 1.
+			</p>
+
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Force-from-Bicep-in-Holding-a-Weight"><title> Force from Bicep in Holding a Weight </title>
+		<statement>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					A man holds a <m>90\text{-kg}</m> weight, about 20 pounds, such that his forearm makes a <m>60^{\circ}</m> angle with the upper arm and <m>40^{\circ}</m> angle with the horizontal dorection. Assuming that the tension in the biceps provide the necessary force that balances the torque about the pivot point shown as a dot at the corner of elbow. What will be the tension <m>F_B</m> in the biceps? 
+				</p>
+				<p></p>
+				<image source="./images/stress-and-strain/bicep-supporting-a-weight.png" width="50%"/>
+			</sidebyside>
+
+
+		</statement>
+		<hint> <p> Balance the torques.  </p> </hint>
+		<answer> <p> <m> 637.3\text{ N}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				From the given picture, we can deduce <xref ref="fig-bicep-supporting-a-weight-solution"/> for computing the lever arms of the two forces involved.
+			</p>
+			<figure xml:id="fig-bicep-supporting-a-weight-solution">
+				<caption>
+					Figure for <xref ref="ex-Force-from-Bicep-in-Holding-a-Weight"/> solution.
+				</caption>
+				<image source="./images/stress-and-strain/bicep-supporting-a-weight-solution.png" width="80%"/>	
+			</figure>
+					
+			<p>
+				The lever arms are
+				<md>
+					<mrow>r_{90} \amp = 32\times \cos(40^\circ) = 3.46\text{ cm},</mrow>
+					<mrow>r_{fb} \amp = 4\times \sin(60^\circ) = 24.5\text{ cm}.</mrow>
+				</md>
+				Therefore, balancing the torques of the two forces about the pivot O gives
+				<me>
+					3.46\, F_{B} = 24.5\times 90.
+				</me>
+				This gives
+				<me>
+					F_{B} = 637.3\text{ N}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Safety-on-a-Ladder"><title> Safety on a Ladder </title>
+		<statement>
+			<p>
+				A  ladder of length <m>L</m> and of mass <m> M </m> slides when the ladder leans against a frictionless wall at an angle greater than <m> \theta</m> from the floor.
+			</p>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					<p>
+						(a) What is the magnitude of the static frictional force between the ladder and the floor? 
+					</p>
+					<p>
+						(b) What is the magnitude of the normal force from the floor?
+					</p>
+					<p>
+						(c) What is the magnitude of the normal force from the wall?
+					</p>
+					<p>
+						(d) What is the coefficient of static frictional force between the ladder and the floor? 
+					</p>
+				</p>
+				<p></p>
+				<image source="./images/stress-and-strain/ex-ladder-safety.png" width="60%"/>
+			</sidebyside>
+
+
+
+
+		</statement>
+		<hint> <p> Start with identifying forces, then use free body diagram to set up zero net force, and then pick a pivot point and implenent the zero torque equation.  </p> </hint>
+		<answer> <p>  (a) <m> 
+				S_f = \frac{W}{2} \cot\theta</m>, (b) <m>N_f = W </m>, (c) <m> N_w = \frac{W}{2} \cot\theta</m>, (d) <m>\frac{1}{2} \cot\theta </m>.  </p> </answer>
+		<solution> 
+			<p>
+				Let us first draw a picture of the situation and locate all the forces on the ladder.  Then we will extract a free-body diagram from this diagram for writing out the equations corresponding to  the balance of the external forces.  To calculate the torque of the forces, the free-body diagram is not useful.  For the torque calculation, we will go back to the original force diagram and choose a convenient pivot point.  The choice of pivot point is arbitrary since the net force is zero. 
+			</p>
+			<p>
+				The diagram of forces on the ladder shows various external forces on the ladder and the place those forces act on the ladder.  This is given in <xref ref="fig-ex-ladder-safety-forces" />.  Note that there are two normal forces on the ladder, one from the floor and the other from the wall.  Similarly, there are two frictional forces on the ladder, one from the floor and the other from the wall.  The problem states that the frictional force from the wall is zero.
+			</p>
+			<p>
+				One more thing to note here is that I had make a decision about the direction of the static frictional force.  Since, the ladder is not accelerating with respect to the ground, I anticipated that this frictional force must balance the normal force from the wall, and that is why I choose the frictional force to be in that direction.
+			</p>
+			<figure xml:id="fig-ex-ladder-safety-forces">
+				<caption>
+					Left panel shows various <alert> forces on the ladder</alert>. The right panel shows the free-body diagram. Since, the forces are oriented only in perpendicular directions, we take one direction to be the <m> x </m> axis and the other <m> y </m> axis. Here <m> W</m> is the weight, <m> N</m> the normal force and <m> S </m> the static friction force.
+				</caption>
+				<image source="./images/stress-and-strain/ex-ladder-safety-forces.png" width="80%"/>
+			</figure>
+			<p>
+				The zero net force equation has two components, which is quite easy to work out here. We get the following relations among the magnitudes.
+				<mdn>
+					<mrow xml:id="eq-safety-in-ladder-static-eq-normal-wall"> S_f-N_w = 0,</mrow>
+					<mrow> N_f-W = 0.</mrow>
+				</mdn>
+				Therefore,
+				<men xml:id="eq-safety-in-ladder-normal-floor">
+					N_f = W.
+				</men>
+			</p>
+			<p>
+				Since the net force is zero, the choice of pivot point for torque equation would be arbitrary.  In the static problems, we choose a pivot point so that the lever arm for some of the unknown forces would be zero for that choice. In the present case, we notice that if we choose the pivot point at the point where the ladder touches the ground, i.e., point P in <xref ref="fig-ex-ladder-safety-forces" />, and then the torques from two of the forces, viz,  <m> N_f</m> and <m> S_f </m> will be zero. Let <m> l_{nw} </m> and <m>l_w </m> be the lever arms of forces  <m> N_w</m> and <m> W </m> respectively, about pivot point P. Then, the torque equation gives
+				<men xml:id="eq-safety-in-ladder-torque-zero"> 
+					N_w\ L_{nw} - W \ L_w = 0.
+				</men>
+				The lever arms can be written in terms of the length <m> L</m> of the ladder and the angle <m> \theta </m> the ladder makes with the horizontal. 
+				<md>
+					<mrow> \amp L_{w} = \frac{L}{2}\cos\theta, </mrow>
+					<mrow>  \amp  L_{nw} = L\sin\theta. </mrow>
+				</md>				
+			</p>
+			<p>
+
+				Substituting in the torque equation, Eq. <xref ref="eq-safety-in-ladder-torque-zero" />, we find the following.
+				<men>
+					N_w\ \sin\theta - \frac{W}{2} \cos\theta = 0.
+				</men>
+				Therefore,
+				<men>
+					N_w = \frac{W}{2} \cot\theta.
+				</men>
+				This in Eq. <xref ref="eq-safety-in-ladder-static-eq-normal-wall"/> gives
+				<men>
+					S_f = \frac{W}{2} \cot\theta.
+				</men>
+			</p>
+			<p>
+				Finally, since the condition of the ladder is such that the static friction force on the ladder is the maximum, we have
+				<me>
+					S_f^{\text{max}} = \frac{W}{2} \cot\theta.
+				</me>
+				From this and the normal force from floor we get the static friction coeffiecient at the floor.
+				<men>
+					\mu_{f,s} = \dfrac{S_f^{\text{max}}}{N_f} =  \frac{1}{2} \cot\theta.
+				</men>
+			</p>
+			<p>
+				Now we summarize the findings.
+				(a) <m> 
+				S_f = \frac{W}{2} \cot\theta</m>, (b) <m>N_f = W </m>, (c) <m> N_w = \frac{W}{2} \cot\theta</m>, (d) <m>\frac{1}{2} \cot\theta </m>. 
+			</p>
+
+			
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Cantilever"><title> Cantilever </title>
+		<statement>
+			<p>
+				A beam that extends beyond its support is called a   cantilever.  Consider a cantilever of length <m>L</m> and mass <m>M</m> resting and bolted to two supports, one at the end and the other is at a distance <m>D</m> from it as shown in <xref ref="fig-ex-cantilever" />. 
+			</p>
+			<p>
+				(a) Find the conditions on the forces such that the cantilever is in static equilibrium. 
+			</p>
+			<p>
+				(b) For <m>L = 30\text{ m}</m>, <m> M = 1000\text{ kg}</m>, and <m>D = 12\text{ m}</m>, find the magnitude and directions of the forces on the beam from the supports.
+			</p>
+
+			<figure xml:id="fig-ex-cantilever">
+				<caption>
+					Figure for <xref ref="ex-Cantilever"/>.
+				</caption>
+				<image source="./images/stress-and-strain/ex-cantilever.png" width="60%"/>
+			</figure>
+
+		</statement>
+		<hint> <p> (a) Balance forces and torque, (b) Use numbers in the results (a).  </p> </hint>
+		<answer> <p> (a) Horizontal and vertical forces from the left post : <m> F_{11} = 0</m>, <m> F_{12} = Mg\left(1-\frac{L}{2D} \right)</m>; Vertical force from the second post <m> F_2 = \left(\frac{L}{2D} \right)Mg</m>. (b) <m> 0,\ -2500\text{ N},\ 12000\text{ N}</m>. </p> </answer>
+		<solution> 
+			<p> (a) 
+				The beam has the forces from the support and the bolt at one end, an upward normal force from the support in the middle, and the force of gravity from the Earth as shown in <xref ref="ex-cantilever-forces"/>. 
+			</p> 
+				<figure xml:id="ex-cantilever-forces">
+					<caption>
+						Figure for <xref ref="ex-Cantilever"/> solution.
+					</caption>
+					<image source="./images/stress-and-strain/ex-cantilever-forces.png" width="60%"/>
+				</figure>
+			<p>
+				To simplify, we will combine the forces of the bolt and the support at the end into a horizontal force <m> \vec F_{11}</m> and a vertical force <m> \vec F_{12}</m>, the sum of the two forces at the end give us the net force <m> \vec F_1</m> at that point. 
+				<me>
+					\vec F_1 = \vec F_{11} + \vec F_{12}.
+				</me>
+				Normally, one writes the force <m> \vec F_{11}</m> as <m> \vec F_{1x}</m> and <m> \vec F_{12}</m> as <m> \vec F_{1y}</m>. This notation is confusing  since symbols <m> F_{1x}</m> and  <m> F_{1y}</m> stand for <m>x</m> and <m>y</m> -=components of the vector <m> \vec F_1</m> and are not vectors themselves. Therefore, we will use <m> \vec F_{11}</m> and  <m> \vec F_{12} </m> for the the horizontally and vertically pointed vectors whose sum is the force at the end.
+			</p>
+			<p>
+				Based on physical grounds we expect that all four forces <m> \vec F_{11}</m>, <m>\vec F_{12}</m>, <m>\vec F_2</m> and the weight <m>\vec W</m> will be in one plane, which we take to be the <m> xy</m>-plane of the coordinate system shown. Balancing the forces immediately gives the following equations.
+					<mdn>
+						<mrow xml:id="eq-cantilever-1"> \amp F_{11} = 0,  </mrow>
+						<mrow xml:id="eq-cantilever-2"> \amp F_{12}+F_2 - W = 0. </mrow>
+					</mdn>
+				Balancing the torques about O gives the following equation.
+					<men  xml:id="eq-cantilever-3">
+						D F_2 = \frac{1}{2}LMg.
+					</men>
+				Equations <xref ref="eq-cantilever-1"/><m>-</m><xref ref="eq-cantilever-3"/> can be solved to yield the following  for the magnitudes of the forces.
+				<mdn>
+					<mrow> \amp  F_{11} = 0,</mrow>
+					<mrow xml:id="eq-cantilever-force-bolt"> \amp  F_{12} = Mg\left(1-\frac{L}{2D} \right),</mrow>
+					<mrow> \amp   F_2 = \left(\frac{L}{2D} \right)Mg. </mrow>
+				</mdn>
+				<m> F_{11} = 0 </m> says that there is no horizontal component of force <m> \vec F_1</m> at the end, and Eq. <xref ref="eq-cantilever-force-bolt" /> says that if the second support is less that <m> L/2</m> from the end, then the force in the vertical direction at the end support is downward, i.e. the force there is dominated by the push back from the bolt at the top of the beam.
+			</p>
+			<p>
+				(b)	Plugging in the numerical values  we find the following.
+				<md>
+					<mrow> \amp  F_{11} = 0, </mrow>
+					<mrow> \amp  F_{12} = -2,500\text{ N},</mrow>
+					<mrow> \amp   F_2 = 12,000\text{ N}, </mrow>
+				</md>
+				where I have rounded off the magnitudes to the two significant digits.				
+			</p>
+
+
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Hanging-Sign-Post"><title> Hanging Sign Post </title>
+		<statement>
+			<sidebyside widths="65% 10% 25%">
+				<p>
+					<p>
+						A sign of mass <m>300\text{ kg}</m> is hanging <m>1.0\text{ m}</m> from the end of a horizontal beam of mass <m>50\text{ kg}</m> and length <m>3\text{ m}</m> held in place as shown in the figure. The cable makes an angle of <m>30^\circ</m> with the beam.  
+					</p>
+					<p>
+						(a) Find the magnitudes of the tension in the cable and the force applied by the pin.
+					</p>
+					<p>
+						(b) What is the direction of the force by the pin?
+					</p>
+				</p>
+				<p></p>
+				<image source="./images/stress-and-strain/hanging-sign-post-statement.png" width="50%"/>
+			</sidebyside>
+			
+
+		</statement>
+		<hint> <p> First draw a diagram with all forces on the beam. Then apply force and torque balancing.  </p> </hint>
+		<answer> <p> (a) <m> T=4,415\text{ N}</m>, <m> F = 4,015\text{ N}</m>, (b) <m> 17.8^\circ</m>. </p> </answer>
+		<solution> <title>(a)</title>
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					The forces on the beam are shown in the figure. We use <m>x</m> axis horizontal and <m> y</m> axis along vertical. We denote the components of the force by the pin by <m>F_x</m> and <m> F_y</m>, from which we would get the magnitude <m>F = \sqrt{ F_x^2 + F_y^2 }</m>. We will implement the balancing of force components and torque about the pin.
+				</p>
+				<p>
+				</p>
+				<image source="./images/stress-and-strain/hanging-sign-post-solution.png" width="50%"/>
+			</sidebyside>
+
+			Balancing the components of the forces we get
+			<mdn>
+				<mrow xml:id="eq-hanging-sign-post-Fx"> \amp F_x - T\cos\,\theta = 0, </mrow>
+				<mrow xml:id="eq-hanging-sign-post-Fy"> \amp F_y + T\sin\,\theta - mg - Mg = 0. </mrow>
+			</mdn>
+			The weight of the beam can be taken to act the center, giving the lever arm <m>L/2</m>. The sign is at a distance <m> d =2\text{ m}</m> from the pin, giving it a lever arm of <m>d</m>. The lever arm od tension about the pin is <m>l_T = L\sin\,\theta</m>.
+			<men xml:id="eq-hanging-sign-post-torque">
+				T\, l_T - M g \dfrac{L}{2} - m g d = 0. 
+			</men>
+			We can get <m>T</m> from this equation.
+			<me>
+				T = \dfrac{1}{l_T}\, \left( M g \dfrac{L}{2} + m g d\right).
+			</me>
+			Now, that we have <m>T</m>, we can use this in Eq. <xref ref="eq-hanging-sign-post-Fx" /> to get <m>F_x</m>,
+			<me>
+				F_x = T\cos\,\theta,
+			</me>
+			and <m>F_y</m> from Eq. <xref ref="eq-hanging-sign-post-Fy" />.
+			<me>
+				F_y = -T\sin\,\theta + mg + Mg.
+			</me>
+			Now, we work out and/or list the numerical values.
+			<md>
+				<mrow> \amp L = 3\text{ m},\ \ d = = 2\text{ m},\ \ \theta = 30^\circ, </mrow>
+				<mrow> \amp l_T = L\sin\,\theta = 3 \times \sin\,30^\circ = 1.5\text{ m},</mrow>
+				<mrow> \amp Mg = 50\times 9.81 = 490.8\text{ N},\ \ mg = 300\times 9.81 = 2,943\text{ N}.</mrow>
+
+			</md>
+			These will give
+			<md>
+				<mrow> \amp T = \dfrac{1}{1.5}\, \left( 490.8 \times 1.5 + 2,943 \times 2\right)  = 4,415\text{ N}</mrow>
+				<mrow> \amp F_x =  4,415\times \cos\,30^\circ = 3,823\text{ N},</mrow>
+				<mrow> \amp F_y = - 4,415\times \sin\,30^\circ + 490.8 + 2,943  = 1,226\text{ N}.</mrow>
+			</md>
+			Combining the components of <m>F</m>, we get the magnitude of the force by the pin to be
+			<me>
+				F = \sqrt{F_x^2 + F_y^2} = 4,015\text{ N}.
+			</me>
+
+
+
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				From <m>F_x = 3,823\text{ N}</m> and <m>F_y = 1,226\text{ N}</m>, we get the direction of the force by the pin to by the following counterclockwise angle with respect to the postive <m>x</m> axis.
+				<me>
+					\theta = \tan^{-1} \left( \dfrac{1,226}{3,823} \right) = 17.8^\circ.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Forces-on-a-Wooden-Plank-Resting-Against-a-Support"><title> Forces on a Wooden Plank Resting Against a Support </title>
+		<statement>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					A <m>20\text{-kg}</m> wooden plank of length <m>2\text{ m}</m> is resting against a frictionless support at an angle <m>30^{\circ}</m> as shown. The distance from the free end to the support is <m>0.25\text{ m}</m>. Find force(s) on the plank by the support and by the floor. 
+				</p>
+				<p></p>
+				<image source="./images/stress-and-strain/plank-resting-against-support.png" width="60%"/>
+			</sidebyside>
+
+		</statement>
+		<hint> <p>  1. Force from support is normal to the plank. (2) Balance torque about the point touching the floor first. (3) Then, use the balancing of forces along horizintal and vertical directions. </p> </hint>
+		<answer> <p> <m>S = 56.1\text{ N}</m>, <m>F = 28.0\text{ N}</m>, <m>N = 148.0\text{ N}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Let <m>S</m> denote the force from the support, <m>N</m> for normal from the floor, and <m>F</m> the static friction from the floor. Force <m>S</m> is perpendicular to the plank since there is no friction there and therefore, the support applies the normal force. <xref ref="fig-plank-resting-against-support-solution"/> summarizes the forces on the plank. 
+			</p>
+			<figure xml:id="fig-plank-resting-against-support-solution">
+				<caption>
+					Figure for <xref ref="ex-Forces-on-a-Wooden-Plank-Resting-Against-a-Support"/> solution.
+				</caption>
+				<image source="./images/stress-and-strain/plank-resting-against-support-solution.png" width="50%"/>
+			</figure>
+			<p>
+				We will write the torques equation about an axis through the point at the corner labeled O. The lever arms are
+				<md>
+					<mrow> \amp r_{\perp,N} = r_{\perp,F} = 0, </mrow>
+					<mrow> \amp r_{\perp,W} = \dfrac{L}{2}\,\sin\,\theta,</mrow> 
+					<mrow> \amp r_{\perp,S} = L-d.</mrow> 
+				</md>
+				All of these are obtained by drawing perpendiculars to the lines of forces. The torque balance equation gives
+				<me>
+					S (L-d) - Mg\dfrac{L}{2}\,\sin\,\theta = 0.
+				</me>
+				Solving for <m>S</m> we get
+				<me>
+					S = \dfrac{L}{2(L-d)}  Mg\,\sin\,\theta.
+				</me>
+			</p>
+			<sidebyside widths="55% 10% 35%">
+				<p>
+					To get <m>N</m> and <m> F</m>, we balance forces along horizontal and vertical directions. For this we need to compute the componets of <m>S</m>. Let positive <m>x</m> be pointed right and positive <m>y</m> pointed up.
+					<me>
+						S_x = - S\, \sin\,\theta, \ \ S_y = S\,\cos\,\theta.
+					</me>
+				</p>
+				<p></p>
+				<image source="./images/stress-and-strain/plank-resting-against-support-solution-2.png" width="60%"/>
+			</sidebyside>
+			<p>		
+				The balancing of forces give us the following two equations.
+				<mdn>
+					<mrow> \amp F + S_x = 0, </mrow>
+					<mrow> \amp N - W + S_y = 0</mrow>
+				</mdn>
+				Therefore, we have the following answer for the three forces required.
+				<md>
+					<mrow>  S \amp= \dfrac{L}{2(L-d)}  Mg\,\sin\,\theta. </mrow>
+					<mrow> F \amp =  S\, \sin\,\theta, </mrow>
+					<mrow> N \amp = Mg - S\,\cos\,\theta. </mrow>
+				</md>
+			</p>
+			<p>
+				Numerical values give
+				<md>
+					<mrow>  S \amp= \dfrac{2}{2(2-0.25)}  20\times 9.81 \,\sin\,30^{\circ} = 56.1\text{ N}. </mrow>
+					<mrow> F \amp = 56.1/2 = 28.0\text{ N}, </mrow>
+					<mrow> N \amp = 20\times 9.81 - 56.1\,\cos\,30^\circ = 148\text{ N}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+	<exercise xml:id="ex-Equilibrium-of-Supported-Bar-at-an-Angle-Pushed-Down-at-One-End"><title> Equilibrium of Supported Bar at an Angle Pushed Down at One End</title>
+		<statement>
+			<sidebyside widths="60% 10% 20% 10%">
+				<p>
+					<p>
+						A bar AB of mass <m>M</m> and length <m>L</m> is hinged at one end and supported by a rigid support at point C so that the bar hangs at angle <m>\theta</m> as shown in the figure. The distance AC equals <m> f L</m>, with <m>0\le f \le 1</m>. Assume that the force from support C is perpendicular to the bar.
+					</p>
+					<p>
+						If you wish to work with numerical values: <m>M=100\text{ kg}</m>, <m> F=600\text{ N}</m>, <m>f=0.75</m>, <m>\theta = 30^{\circ}</m>. You do not need the value of <m>L</m>.
+					</p>
+				</p>
+				<p> </p>
+				<image source="./images/stress-and-strain/supported-bar-pushed-down.png" width="30%"/>
+				<p></p>
+			</sidebyside>
+
+
+		</statement>
+		<hint> <p> Balance torque about hinge first.  </p> </hint>
+		<answer> <p> <m>C = 727\text{ N}</m>, <m>A_x = - 630\text{ N},\ \ A_y = 1,217\text{ N}.</m>  </p> </answer>
+		<solution>
+			<sidebyside widths="55% 10% 20% 15%"> 
+				<p>
+					First we need to identify forces on the bar and balance torques and/or forces. We denote the forces at A and C as shown in the figure to the right.
+				</p>
+				<p>
+				</p>
+				<image source="./images/stress-and-strain/supported-bar-pushed-down-solution.png" width="40%"/>
+				<p></p>
+			</sidebyside>
+			<p>
+				<xref ref="fig-supported-bar-pushed-down-solution-2"/> help us compute the lever arms about the hinge at A.
+			</p>
+			<figure xml:id="fig-supported-bar-pushed-down-solution-2">
+				<caption>
+					Figure for <xref ref="ex-Equilibrium-of-Supported-Bar-at-an-Angle-Pushed-Down-at-One-End"/> solution.
+				</caption>
+				<image source="./images/stress-and-strain/supported-bar-pushed-down-solution-2.png" width="70%"/>
+			</figure>
+			<p>
+				Balancing the torque about A we get
+				<me>
+					C f L - M g \dfrac{L}{2}\,\sin\,\theta - F L\,\sin\,\theta = 0. 
+				</me>
+				This solves for <m>C</m>.
+				<me>
+					C =  \dfrac{1}{2f}\, M g \,\sin\,\theta  + \dfrac{1}{f}\, F \,\sin\,\theta. 
+				</me>
+				Now, balancing horizontal and vertical components of forces we get
+				<md>
+					<mrow>  \amp  A_x + C\,\cos\,\theta = 0. </mrow>
+					<mrow>  \amp  A_y + C\,\sin\,\theta - M g - F  = 0. </mrow>
+				</md>
+				These give
+				<md>
+					<mrow>  \amp  A_x = - C\,\cos\,\theta. </mrow>
+					<mrow>  \amp  A_y = - C\,\sin\,\theta + M g + F. </mrow>
+				</md>
+
+			</p>
+			<p>
+				Numerical values give
+				<md>
+					<mrow> \amp C = 727\text{ N},</mrow>
+					<mrow> \amp A_x = - 630\text{ N},\ \ A_y = 1,217\text{ N}.</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Tipping-Angle-of-a-Box-on-an-Incline"><title>Tipping Angle of a Box on an Incline</title>
+
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					<xref ref="fig-tipping-a-box"/> shows a rectangular box  of cross-sectional dimensions <m>a\times b</m> on an inclined surface whose angle of incline <m>\theta</m> can be varied. If <m>\mu_s \gt \tan\theta</m>, the box will not slide. Even when box would not slide, at some angle <m>\theta_c</m>, box will tip over. Find this angle. 
+				</p>
+				<p></p>
+				<figure xml:id="fig-tipping-a-box">
+					<caption></caption>
+					<image source="./images/stress-and-strain/tipping-a-box.png" width="30%"/>
+				</figure>
+			</sidebyside>
+			
+		</statement>
+		<hint><p> Torque about bottom right corner will not be balanced if angle is larget than the critical angle.</p></hint>
+		<answer><p>
+			<m>\tan^{-1}\left( b/a\right)</m>.
+		</p></answer>
+		<solution>
+			<p>
+				<xref ref="fig-tipping-a-box-forces"/> shows force diagrams on the box when the incline is (a) at critical angle and (b) at an angle greater than the critical angle. At the critial angle, the weight vector is pointed towards the bottom right corner of the box. At higher angles, weight vector is to the right of the bottom right corner, which makes balancing of torque of the three forces impossible.
+			</p>
+ 
+			<figure xml:id="fig-tipping-a-box-forces">
+				<caption>For <xref ref="ex-Tipping-Angle-of-a-Box-on-an-Incline"/>. </caption>
+				<image source="./images/stress-and-strain/tipping-a-box-forces.png" width="80%"/>
+			</figure>
+ 			<p>
+	 			From the triangle in <xref ref="fig-tipping-a-box-forces"/>(a), we see that
+	 			<me>
+	 				\tan\theta_c = \frac{b}{a}.
+	 			</me>
+	 			Therefore,
+	 			<me>
+	 				\theta_c = \tan^{-1}\left( b/a\right).
+	 			</me>
+	 		</p>
+
+		</solution>
+	</exercise>	
+
+
+	<exercise xml:id="ex-Tipping-Angle-of-a-Sphere-on-an-Incline"><title> Rolling Angle of a Sphere on an Incline (JEE, 2020)</title>
+
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					 A football (spherical shape) of radius <m>R</m> is kept on a hole of radius <m>r (r \lt R)</m> made on a plank kept horizontally. One end of the plank is now lifted so that it gets tilted making an angle <m>\theta</m> from the horizontal as shown in <xref ref="fig-tipping-a-sphere-on-incline"/>. Find the maximum value of <m>\theta</m> so that the football does not start rolling down the plank. (Adapted from Indian JEE, 2020.)
+				</p>
+				<p></p>
+				<figure xml:id="fig-tipping-a-sphere-on-incline">
+					<caption></caption>
+					<image source="./images/stress-and-strain/tipping-a-sphere-on-incline.png" width="30%"/>
+				</figure>
+			</sidebyside>
+			
+		</statement>
+		<hint><p> Torques from two normals and weight will not be balanced if weight of the ball passes to the right of the bottom corner.</p></hint>
+		<answer><p>
+			<m>\sin^{-1}(r/R)</m>.
+		</p></answer>
+		<solution>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					<xref ref="fig-tipping-a-sphere-on-incline-forces"/> shows force diagram. The two normals are pointed towards the center of the ball and weight is pointed down. At the maximum angle before rolling would start, normal from the bottom point will be pointed vertical up as shown.
+				</p>
+	 			<p></p>
+				<figure xml:id="fig-tipping-a-sphere-on-incline-forces">
+					<caption> </caption>
+					<image source="./images/stress-and-strain/tipping-a-sphere-on-incline-forces.png" width="80%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				In the figure, I have introduced angle <m>\phi</m> for convenience. This angle is related to incline <m>\theta</m> by
+				<me>
+					\phi = 90^\circ - \theta.
+				</me>
+				From the triangle with sides <m>R,\ R, 2r</m> and angle <m>\phi</m>, we immediately get that
+				<me>
+					R^2 + (2r)^2 - 2R(2r)\cos\phi = R^2.
+				</me>
+				Therefore
+				<me>
+					\cos\phi = \frac{r}{R}.
+				</me>
+				This is same as
+				<me>
+					\sin\theta = \frac{r}{R}.
+				</me>
+				Therefore, the max angle is
+				<me>
+					\theta = \sin^{-1}(r/R).
+				</me>
+			</p>
+ 
+
+		</solution>
+	</exercise>	
+
+
+	<exercise xml:id="ex-Pushing-a-Log-Over-a-Step"><title>Pushing a Log Over a Step</title>
+
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					A cylindrical log of mass <m>M</m> and radius <m>R</m> is pushed over a step of height <m>a \lt R</m> as shown in the <xref ref="fig-pushing-a-log-over-a-step"/> with increasing amount of force <m>F</m>. What is the value of the force at which the log will start to move over?
+				</p>
+				<p></p>
+				<figure xml:id="fig-pushing-a-log-over-a-step">
+					<caption></caption>
+					<image source="./images/stress-and-strain/pushing-a-log-over-a-step.png" width="80%"/>
+				</figure>
+			</sidebyside>
+
+		</statement>
+		<hint><p>
+			Normal from floor will be zero.
+		</p></hint>
+		<answer><p>
+			<m>\frac{\sqrt{R^2 - (R-a)^2}}{2R}\; Mg</m>.
+		</p></answer>
+		<solution>
+			<p>
+				<xref ref="fig-pushing-a-log-over-a-step-sol"/>(a) shows the situation before the final value of <m>F</m>.  As you increase <m>F</m>, the normal from floor decreases and at the critical value of <m>F</m>, as shown in (b), the normal from floor vanishes.
+			</p>
+			<figure xml:id="fig-pushing-a-log-over-a-step-sol">
+				<caption></caption>
+				<image source="./images/stress-and-strain/pushing-a-log-over-a-step-sol.png" width="80%"/>
+			</figure>
+ 			<p>
+ 				<xref ref="fig-pushing-a-log-over-a-step-sol"/>(b) shows the lever arms of <m>Mg</m> and <m>F</m> from the tip of the step. The lever arms will be
+ 				<me>
+ 					r_{\perp w} = \sqrt{R^2 - (R-a)^2},\ \ \ r_{\perp F} = 2R.
+ 				</me>
+ 				Balancing torque in the situation in <xref ref="fig-pushing-a-log-over-a-step-sol"/>(b) gives
+ 				<me>
+ 					F r_{\perp F} = Mg r_{\perp w},
+ 				</me>
+ 				which gives
+ 				<me>
+ 					F =  \frac{\sqrt{R^2 - (R-a)^2}}{2R}\; Mg.
+ 				</me>
+
+ 			</p>
+
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Practice-with-a-Friend-Pushing-a-Log-Over-a-Step"><title>Practice with a Friend: Pushing a Log Over a Step</title>
+
+		<statement>
+			<p>
+				In <xref ref="ex-Pushing-a-Log-Over-a-Step"/>, find the magnitude and direction of the push on the log from the tip of the step at the instant the log begins to move over.
+			</p>
+		</statement>
+		<hint><p>Balance the forces on the log.</p></hint>
+		<solution>
+			<p>
+				No solution provided.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,177 @@
+<section xml:id="section-circular-aperture-and-angular-resolution-light"><title>Circular Aperture and Resolution</title>
+	<introduction>
+		<p>
+			Diffraction through a circular aperture spreads the wave over a larger bright circular area surrounded by alternating dark and bright rings.  The circular aperture may be just a circular hole in a opaque object.  The circular aperture may also be a circular lens through which light could pass such as in the viewing tube of a telescope or microscope. Because of the spreading of light, diffraction limits images that can be resolved in instruments that use lens.
+		</p>
+		<p>
+<!-- 
+The diffraction   through a circular aperture gives rise to a central bright spot which is surrounded by a dark ring which itself is surrounded by a bright ring and so forth as illustrated in Fig. \ref{fig:fig13-diffraction}.  The circular rings in the diffraction through a circular aperture are also called {\bf Airy rings}\index{Airy rings} since the intensity of the diffraction function turns out to be a special function called the Airy function.  
+
+To obtain the mathematical expression for the intensity of the diffraction pattern we proceed in the same way as we have done in the case of diffraction through a slit. Specifically, we seek the superposition of  the secondary wavelets of the wavefront emerging from the circular slit.  The integration is now done over the domain of the slit. We will not present the derivation here and refer the student to more advanced textbooks in optics. We do however wish to discuss some important aspects of the result. -->
+
+			Consider a circular aperture of diameter <m>D</m> and we wish to study the diffraction pattern observed on a screen a distance <m>L</m> away as shown in <xref ref="fig-circular-aperture-central-spot-airy-rings"/>.  We find that the radius  <m>R</m> of the central bright spot on the screen is not necessarily equal to the diameter of the aperture but depends on the wavelength <m>\lambda</m> and the distance <m>L</m> also.  
+			<men xml:id="eq-circular-aperture-diffraction-radius-of-center">
+				R \approx 1.22 \frac{L\lambda}{D}.
+			</men>
+		</p>
+		<figure xml:id="fig-circular-aperture-central-spot-airy-rings">
+			<caption>
+				Diffraction from a circular aperture. 
+			</caption>
+			<image source="./images/diffraction-of-light/circular-aperture-central-spot-airy-rings.png" width="80%"/>
+		</figure>				
+
+		<p>
+			Sometimes it is more convenient to write this equation for the central bright spot in terms of the angle <m>\theta</m>  subtended at the slit. As the distance to the screen is far greater than the radius of the bright spot, we can use small angle approximation and write
+			<men xml:id="eq-circular-aperture-diffraction-subtended-angle">
+				\theta \approx \tan\theta = \frac{R}{L} = 1.22 \frac{\lambda}{D}.
+			</men>
+			Light from a point object passing through a circular aperture will spread out in accordance with Eq. <xref ref="eq-circular-aperture-diffraction-radius-of-center"/> producing a bright circle on the screen instead of a point along with larger circular rings around the circle.  As a result, central bright cicles corresponding to two close by sources, such as two stars, may overlap making it difficult, or even impossible, to distinguish them.
+		</p>
+		<p>
+			As in other instances, we use <term>Raleigh criterion</term> to set  <term> resolvability</term> of two images. Specifically, two images on a screen will be considered <Q>just resolvable</Q> if  the center of one circle is at the edge of the other circle as illustrated in <xref ref="fig-raleigh-criterion-for-circular-aperture-diffraction"/>. 
+		</p>
+		<figure xml:id="fig-raleigh-criterion-for-circular-aperture-diffraction">
+			<caption>
+				 Raleigh criterion of resolution.
+			</caption>
+			<image source="./images/diffraction-of-light/raleigh-criterion-for-circular-aperture-diffraction.png" width="80%"/>
+		</figure>
+  
+		<p>
+			In terms of angular separation of the centers of the two images, the Raleigh criterion states that the angle of separation of the centers of the images must greater than a minimum angle given by the first dark ring of the diffraction pattern of one of the objects.
+			<men>
+				\text{Angular separation,}\ \ \theta > \theta_R = \frac{1.22 \lambda}{D}\ \ \ (\text{Raleigh Criterion})
+			</men>
+			<xref ref="fig-circular-aperture-application-to-resolution-of-stars"/> shows two stars whose directions in the sky have angular separation <m>\theta</m>. Suppose we project their images by a lens of diameter <m>D</m>. Each will form diffraction pattern at the focal plane of the lens. If stars are too close, central disks of the images will overlap. Therefore, unless, their separation angle <m>\theta</m> is larger than the angle of airy disk, <m>\theta_R</m>, the images will blur into each other.
+		</p>
+
+		<figure xml:id="fig-circular-aperture-application-to-resolution-of-stars">
+			<caption>
+				 Angular separation of two images.  For the stars to be resolvable the angle <m>\theta</m> must be larger than <m>\theta_R</m> given by <m>1.22\lambda/D</m>.
+			</caption>
+			<image source="./images/diffraction-of-light/circular-aperture-application-to-resolution-of-stars.png" width="100%"/>
+		</figure>
+
+		<p>
+			Since loss of resolution due to diffraction cannot be eliminated by grinding a better lens or adding additional optical elements we say that the resolution is <term> diffraction-limited</term>.  An image that is diffraction-limited can be improved by changing the aperture or observing in a different part of the electromagnetic spectrum, e.g., by using a smaller <m>\lambda</m> will make <m>\theta_R</m> smaller. 
+ 	
+		</p>
+
+
+	</introduction>
+
+
+	<exercise xml:id="exercise-Radius-of-Central-Bright-Disk-in-Diffraction-through-a-Lens"><title>Radius of Central Bright Disk in Diffraction through a Lens</title>
+
+		<statement>
+			<p>
+				A converging lens of diameter 8 cm and focal length 20 cm is used to focus the image of a star. Find the radius of the central bright spot by using 550 nm for the wavelength of light from the star. Ignore the effect of spherical aberration.  
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p>1.68 <m>\mu</m>m.</p></answer>
+		<solution>
+			<p>
+				Let <m>D</m> be the diameter of the lens and <m>f</m> its focal length.  Then, treating the lens as a circular aperture the passage of the beam through the lens will cause diffraction and the central bright spot will have the following radius at the focal plane,
+				<me>
+					R = 1.22\dfrac{f\:\lambda}{D} =  1.22\dfrac{20\:\text{cm}\times 550\:\text{nm}}{8\:\text{cm}} = 1.68\:\mu\text{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Applying-Raleigh-Criterion-on-Diffraction-limited-Image-from-a-Circular-Lens"><title>Applying Raleigh Criterion on Diffraction-limited Image from a Circular Lens</title>
+
+		<statement>
+			<p>
+				A circular converging lens of diameter 100 mm and focal length 50 cm is to be used to project the images of two far away point  sources of wavelength 632.8 nm.  The image distance can be taken to be equal to the focal length and the image assumed to be on the focal plane of the lens.  Looking from the lens's center,  what should be the  minimum angular separation of the two objects so as to satisfy the Raleigh criterion? 
+
+			</p>
+		</statement>
+		<hint><p>Use <m>\theta_R</m>.</p></hint>
+		<answer><p> <m>7.71\times 10^{-6}\text{ rad}, \text{ or, } 4.42\times 10^{-4}\text{ deg}</m></p></answer>
+		<solution>
+			<p>
+				The angular separation <m>\theta</m> must be larger than the angle for the Raleigh criterion. Therefore, 
+				<me>
+					\theta_\text{min}= 1.22\times \frac{632.8\text{ nm}}{100\text{ mm}} = 7.71\times 10^{-6}\text{ rad} = 4.42\times 10^{-4}\text{ deg}.
+				</me>
+
+
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Resolving-Objects-on-Moon-Using-Yerkes-Observatory"><title>Effect of Diffraction on Resolution of an Image of Moon in Yerkes Observatory</title>
+
+		<statement>
+			<p>
+				What is the minimum distance between two points on the Moon  that the 40-in refracting telescope at Yerkes observatory in Wisconsin can resolve if the resolution was limited  due to the diffraction only? Use 540 nm as the wavelength of light and a distance of 4 <m>\times</m> <m>10^8</m> m from the Earth to the Moon. Note: the resolution in reality for this case is much worse than just being diffraction-limited.
+			</p>
+		</statement>
+		<hint><p>Use Raleigh criterion.</p></hint>
+		<answer><p> <m>260\:\text{m}</m> </p></answer>
+		<solution>
+			<p>
+				In order for the two images to be resolvable, the angle <m>\theta</m> in <xref ref="fig-exercise-resolving-objects-on-moon"/> following figure must be greater than the half width of the central max for image <m>I_1</m>.
+			</p>
+			<figure xml:id="fig-exercise-resolving-objects-on-moon">
+				<caption>
+					 Figure for <xref ref="exercise-Resolving-Objects-on-Moon-Using-Yerkes-Observatory"/> solution.
+				</caption>
+				<image source="./images/diffraction-of-light/exercise-resolving-objects-on-moon.png" width="80%"/>
+			</figure>	
+			
+			<p>
+				Therefore, we get the condition
+				<me>
+					\theta = 1.22\:\dfrac{\lambda}{D} = 1.22\times \dfrac{540 \:\text{nm}}{40\times 2.54\:\text{cm}} = 6.48\times10^{-7}\:\text{rad}.
+				</me>
+				Using this angle with the distance <m>x</m> to the moon we find the separation <m>y</m> on the moon to be
+				<me>
+					y \approx x\: \theta = 4 \times 10^8\:\text{m}\times 6.48\times10^{-7}\:\text{rad} = 260\:\text{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Distance-Two-Objects-can-be-Moved-and-Still-Resolvable-by-Eye-If-Diffraction-Limited"><title>Distance Two Objects can be Moved and Still Resolvable by Eye If Diffraction-Limited</title>
+
+		<statement>
+			<p>
+				Two lamps producing light of frequency 589 nm are fixed 1-meter apart on a wooden plank.  How far the plank can be moved from the eye so that the eye can still resolve them if the resolution is affected solely by the diffraction of light in the eye?  Assume light enters the eye through a pupil of diameter 4.5 mm.  Note: the resolution in reality for this case is much worse than just being diffraction-limited.
+			</p>
+		</statement>
+		<hint><p>Use Raleigh criterion.</p></hint>
+		<answer><p>6.3 km.</p></answer>
+		<solution>
+			<p>
+				Refer to <xref ref="fig-exercise-resolving-objects-on-moon"/> of the last problem.  We need to find <m>x</m> here.
+				\[
+					x = \dfrac{y}{\theta},\ \ \text{and}\ \  \theta = 1.22\:\dfrac{\lambda}{D}.
+				\]
+				Therefore,
+				\[
+					x = \dfrac{y\: D}{1.22\:\lambda} = 6.3\:\text{km}.
+				\]
+				This is too far for the eye to see. The main problem will be the low intensity of light reaching the eye. 
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

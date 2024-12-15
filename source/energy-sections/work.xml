@@ -1,0 +1,632 @@
+<section xml:id="Work"><title> Work</title>
+
+	<introduction>
+		<p>
+			Work has a different meaning in physics than it has in everyday life.  In physics we say that a force has done work on an object if it has caused the object to move. 
+		</p>
+		<p>
+			Work is one way a transfer of energy occurs between two bodies. For instance, when a weightlifter lifts a barbell, he does work on the barbell, thereby raising the energy of the barbell. If you look into the body of the weightlifter you will find that energy in his body has decreased. Thus, a transfer of energy from weightlifter to barbell has occured.
+			Similarly, when a tugboat pulls a ship, it does work on the ship and energy in the tugboat is transferred to the the ship.
+		</p>
+		<p>
+			Energy transfer between two bodies also occurs due to the difference in temperature of the two bodies. This mechanism is called heat. We will study that in chapters in thermodynamics part. Till then, we will assume that energy transfer by heat in any of the examples is negligible compared to the ones as a result of work.
+		</p>
+ 
+		<p>
+			Previously, when we studied Newton's second law of motion in the impulse-momentum form, we found that impulse was a cumulative effect of force over a period of time that informed us how much momentum would change due to a force. <alert> Work is similarly a cumulative influence of a force on the motion, but instead of accumulating over time, we accumulate the impact of the force over the path of the motion. </alert>
+		</p>
+		<p>
+			The fundamental definition of work relies on Calculus, but work by a constant force can be defined without the need of Calculus. We will see both ways below. In a later section, we will also derive a result called the work-energy theorem that quantifies the change in motion resulted by work.
+		</p>
+	</introduction>
+
+	<subsection><title>Work by a Constant Force</title>
+
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				Suppose you pull on a suitcase with a constant force <m> \vec F </m> for an interval that begins at <m> t_i </m> and ends at <m>t_f</m>. During this time, the suitcase has a displacement  <m>  \vec r_{if} </m> as shown in <xref ref="fig-work-by-a-constant-force-on-suitcase" />. 
+			</p>
+			<p></p>
+			<figure xml:id="fig-work-by-a-constant-force-on-suitcase">
+				<caption>
+					<!-- The constant force <m> \vec F </m> over a displacement <m> \vec r_{if}</m> does work  <m> W_{if} = \vec F\cdot \vec r_{if} = F\, r_{if}\cos\,\theta</m>. -->
+				</caption>
+				<image source="./images/energy/work-by-a-constant-force-on-suitcase.png" width="50%"/>
+			</figure>			
+		</sidebyside>
+		<p>
+			Then, work, to be denoted by <m> W_{if}</m>,  equals the product of the component of the force parallel to the displacement and the magnitude of displacement.
+				<men>
+					W_{if} = F_\parallel\, r_{if},
+				</men>
+		</p>
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				where <m>F_\parallel</m> is projection of force vector <m>\vec F</m> on the direction of the displacement vector <m>\vec r_{if}</m>. You may recall that this is just <m>F\cos\theta</m>.
+			<me>
+				F_\parallel = F \cos\theta.
+			</me>
+			</p>
+			<p></p>
+			<figure xml:id="fig-work-by-a-constant-force-on-suitcase-parallel">
+				<caption>
+					<!-- The constant force <m> \vec F </m> over a displacement <m> \vec r_{if}</m> does work  <m> W_{if} = \vec F\cdot \vec r_{if} = F\, r_{if}\cos\,\theta</m>. -->
+				</caption>
+				<image source="./images/energy/work-by-a-constant-force-on-suitcase-parallel.png" width="50%"/>
+			</figure>			
+		</sidebyside>
+
+
+
+		
+		<p>
+			
+			That is, work of a constant force will be
+			<men>
+				W_{if} =    F\, r_{if} \cos\,\theta. 
+			</men>			
+			Actually, a more succinct way of stating this is by way of dot product of vectors <m>\vec F</m> and <m>\vec r_{if}</m>. Thus, the following dot product gives <alert> work done by a constant force</alert> <m> \vec F</m>.
+
+			<men xml:id="eq-work-constant-force-original">
+				W_{if} =  \vec F \cdot \vec r_{if}.
+			</men>
+ 
+		</p>
+
+ 
+
+
+		<!-- <p> 
+			The dot product in Eq. <xref ref="eq-work-constant-force-original"/> can also be cast in terms of the Cartesian components of the force and the displacement vectors.
+				<men xml:id="eq-work-constant-force-componentwise">
+					W_{if} =  F_x\,\Delta x + F_y\,\Delta y + F_z\,\Delta z.
+				</men>
+				where the components of the displacement vector can be obtained from the difference of the coordinates of the final position and the initial position.
+				<men>
+					\Delta x = x_f- x_i,\ \ \Delta y = y_f- y_i,\ \ \Delta z = z_f- z_i.
+				</men>
+				We can think of work in Eq. <xref ref="eq-work-constant-force-componentwise"/> as sum of areas of  <m>F_x</m> versus <m>x</m>, <m>F_y</m> versus <m>y</m>, and <m>F_z</m> versus <m>z</m> as illustrated in <xref ref="fig-work-as-sum-of-areas"/> .
+		</p>
+
+		<figure xml:id="fig-work-as-sum-of-areas">
+			<caption> Work as sum of positive and negative areas in plots of <m>F_x</m>, <m>F_y</m>, and <m>F_z</m> versus <m>x</m>, <m>y</m>, and <m>z</m>, respectively.  </caption>
+			<image source="./images/energy/work-as-sum-of-areas.png" width="90%"/>
+		</figure> -->
+
+
+
+		<p> 
+			From the product of force and displacment, we find that the unit of work will be <m> \text{N.m}</m>. Now, if we expand this into base units we will get
+			<me>
+				\text{N.m} = \frac{\text{kg.m}}{\text{s}^2}.\text{m} = \text{kg}.\left(\text{m}/\text{s} \right)^2 = \text{J}. 
+			</me>
+			That is <m>\text{N.m}</m> is same as unit of kinetic energy, i.e., Joule. Just because the unit of work is same as the unit of energy, <alert> work is not energy</alert>. We will show by work-energy theorem below that work is amount of energy that gets transfered between bodies that interact via a force between them.  When we study thermodynamics, we will encounter another mechanism by which energy is transferred between bodies - that mechanism will be called heat.
+		</p>
+	</subsection>
+
+	<exercise xml:id="Calculating-Work-of-Force-of-Gravity"><title> Calculating Work by Force of Gravity</title>
+		<statement>
+			<p>
+				A baseball of mass <m> 0.3 \text{ kg} </m> is lobbed vertically up. It reaches a height of <m> 20.0\text{ m}</m>. 
+			</p>
+			<p>
+				(a)
+				How much work does the weight of the ball do on the way up?
+			</p>
+
+			<p>
+				(b)
+				How much work does the weight of the ball do on the way down?
+			</p>
+		</statement>
+		<hint> <p> (a) <m> \theta = 180^{\circ}</m>, (b) <m>\theta = 0^{\circ} </m>. </p> </hint>
+		<answer> <p> (a) <m> -59\text{ N.m} </m> (b)  <m> +59\text{ N.m}</m> </p> </answer>
+		<solution> <title>(a)</title>
+			<p> (a) To compute the work, we need magnitudes of force and displacement vectors, and angle between them.
+			</p>
+			<sidebyside widths="60% 10% 30%">
+				<!-- <p></p> -->
+				<p>
+					<md>
+						<mrow> \amp F = mg = 0.3\times 9.81 = 2.943\text{ N},</mrow>
+						<mrow> \amp r_{if} = h = 20.0\text{ m},</mrow>
+						<mrow> \amp\theta =  180^{\circ}.</mrow>
+					</md>
+					Now, we just multiply them together to obtain work,
+					<me>
+						W_{if} = 2.943 \times 20.0 \times \cos\, 180^{\circ} = -59\text{ N.m}.
+					</me>
+				</p>
+				<p></p>
+				<figure xml:id="fig-work-by-force-of-gravity">
+					<caption></caption>
+					<image source="./images/energy/work-by-force-of-gravity.png"/>
+				</figure>
+			</sidebyside>
+			
+		</solution>
+		<solution> <title>(b)</title>
+			<p> (b) 
+				We do not need to do an entirely new calculation here. We just need to notice that the angle between force and displacement now will be <m> 0 ^{\circ} </m> rather than <m> 180^{\circ}</m>. That would make work positive.
+				<me>
+					W_{if} =  +59\text{ N.m}.
+				</me>					
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="Calculating-Work-of-Gravity-when-No-Change-in-Height"><title> Calculating Work of Gravity when No Change in Height</title>
+		<statement>
+			<p>
+				A baseball of mass <m> 0.3 \text{ kg} </m> is lobbed at <m> 45^{\circ}</m> above the horizontal. It reaches  some height on its parabolic path and returns before it is caught at the same height as it was launched from at a horizontal distance of <m> 40 \text{ m}</m>. Find the work done by the force of weight during the flight.
+			</p>
+
+		</statement>
+		<hint> <p>  Work by weight on way up is negative and work on way down in positive. </p> </hint>
+		<answer> <p>  0. </p> </answer>
+		<solution> 
+			<p>  
+				As shown in <xref ref="Calculating-Work-of-Force-of-Gravity"/>, the work when the ball is going up will be negative and equal amount of positive work will be done when the ball is in its way down. The sum of the two works will be zero.
+			</p>
+ 
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Work-of-a-Constant-Force-Pulling-on-a-Suitcase-at-an-Angle"><title> Work of a Constant Force Pulling on a Suitcase at an Angle</title>
+		<statement>
+			<p>
+				A suitcase is pulled by a tension force of magnitude <m>40\text{ N}</m> in a strap acting at angle <m>30^\circ</m> above the horizontal direction as shown in <xref ref="fig-ex-suitcase-20-m-displaced"/>. Other forces on the suitcase are gravity, normal force, and rolling friction. As a result of these forces, the suitcase moves a distance of <m>20\text{ m}</m>. What is the work done on the suitcase by the tension force?
+			</p>
+			<figure xml:id="fig-ex-suitcase-20-m-displaced">
+				<caption>
+					Figure for <xref ref="ex-Work-of-a-Constant-Force-Pulling-on-a-Suitcase-at-an-Angle"/>.
+				</caption>
+				<image source="./images/momentum/ex-suitcase-20-m-displaced.png" width="60%"/>
+			</figure>
+
+		</statement>
+		<hint> <p>  Use the definition of work. </p> </hint>
+		<answer> <p> <m>693\text{ N.m}</m>.  </p> </answer>
+		<solution> 
+			<p>
+				The situation gives us all the quantities needed to compute the force by the tension force.
+				<me>
+					W_{if} = F_T\, \Delta r\, \cos\theta = 40\times 20\times\cos\,30^\circ = 693\text{ N.m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Different-Work-by-the-Same-Force-but-Acting-at-Different-Angles"><title> Different Work by the Same Force but Acting at Different Angles</title>
+		<statement>
+			<p>
+				A boy pulls a <m>5 \text{-kg}</m> cart with a <m>20 \text{ N}</m> force at an angle of <m>30^{\circ}</m> with the horizon for some time.  Over this time the cart moves a distance of <m>12 \text{ m}</m> on a horizontal floor. 
+			</p>
+			<p>
+				(a) Find the work done on the cart by the boy.  
+			</p> 
+			<p>
+				(b) What will be the work done by the boy if he pulled with the same force horizontally instead of at an angle <m>30^{\circ}</m> with the horizon over the same distance? 
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Use <m>Fr\cos\theta</m>, (b) <m>\theta=0^\circ</m>. </p> </hint>
+		<answer> <p> (a) <m>208\text{ N.m}</m> (b) <m>240\text{ N.m}</m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p> (a)
+				We use the definitition of work with angle <m> \theta = 30^\circ</m>.
+				<me>
+					W = 20 \text{ N} \times 12 \text{ m} \times \cos\, 30^\circ = 208\text{ N.m}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p> (b)
+				Now, the angle is <m> \theta=0</m>, which means <m> \cos\, \theta=1</m>. This gives
+				<me>
+					W = 20 \text{ N} \times 12 \text{ m} \times 1  = 240\text{ N.m}.
+				</me>
+				More work is done now. Is this a waste of work?  No, as you will see by work-energy theorem that cart in (b) be going faster in the end than in (a).				
+			</p>
+		</solution>
+	</exercise>
+
+ 	<exercise xml:id="Moving-a-Crate-on-a-Rough-Surface-on-Different-Paths-to-Same-Destination"><title> Moving a Crate on a Rough Surface on Different Paths to Same Destination </title>
+		<statement>
+			<p>
+				
+			</p>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					Workers want to move a crate of mass <m>200</m> kg from a site on the ground floor to a third floor apartment.  They  know that they can either use the elevator first, then slide it on the third floor to the apartment or first slide the crate to another location marked C in the figure, take another elevator to the third floor, and then slide it on the third floor a shorter distance.
+				</p>
+				<p>
+				</p>
+				<figure xml:id="fig-exer-work-elevator">
+					<caption></caption>
+					<image source="./images/energy/exer-work-elevator.png" width="50%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				The trouble is that the third floor is very rough compared to the ground floor.  The coefficient of kinetic friction between the crate and the ground floor is <m>0.1</m> and between the crate and the third floor surface is <m>0.3</m>.
+			</p> 
+			<p>
+				Find work needed by the workers for each path, i.e., for ABCDE and for AFE paths.  Assume that the force workers need to do is just enough to slide the crate at constant velocity at zero acceleration. Note: The work by the elevator against the force of gravity is not done by the workers.
+			</p>
+
+		</statement>
+		<hint> <p>   </p> </hint>
+		<answer> <p> <m>W_\text{ABCDE}=13,730\text{ J}</m>; <m>W_\text{AFE}=17,660\text{ J}</m>.  </p> </answer>
+		<solution> <title>Setting up </title>
+			<p> 
+				The workers will need to apply a horizontal force equal in magnitude to the kinetic friction force. Since acceleration is assumed to be zero, the balancing of forces on the crate gives us the following for the magnitude of the kinetic friction force.
+				<me>
+					F_k = \mu_k\, m \, g.
+				</me> 
+				That means the force by workers has this magnitude also. Let us denote this by <m> F</m>.
+				<me>
+					F = \mu_k\, m \, g.
+				</me>
+				Since the force by the workers is in the same direction as the displacements, the work by them for a displacement <m>\Delta r </m> is
+				<me>
+					W = F \Delta r = \mu_k\, m \, g\, \Delta r.
+				</me>
+				Now, we use this expression on each path, making sure to use the appropriate <m>\mu_k</m> and <m>\Delta r</m>. Since <m> mg </m> is common factor, we can just work out the number for this once.
+				<me>
+					mg = 200\times 9.81 = 1962 \text{ N}.
+				</me>
+			</p>
+		</solution>
+		<solution> <title>AFE</title>
+			<p>(Path AFE) 
+				
+				Therefore, we will get the following for the work on path AFE.
+				<md>
+					<mrow> W_\text{AFE} = \amp W_\text{AF} + W_\text{FE}</mrow>
+					<mrow> \amp = 0 + 0.3\times 1962\times 30 = 17,660 \text{ N.m}. </mrow>
+				</md>
+
+			</p>
+		</solution>
+		<solution><title>ABCDE </title>
+			<p> (Path ABCDE) 
+				On path ABCDE we will get the following work.
+				<md>
+					<mrow> W_\text{ABCDE} = \amp W_\text{AB} + W_\text{BC} + W_\text{CD} + W_\text{DE}</mrow>
+					<mrow> \amp = 0.1\times 1962\times 30 + 0.1\times 1962\times 10 + 0 + 0.3\times 1962\times 10</mrow>
+					<mrow> \amp = 13,730 \text{ N.m}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<subsection><title>(Calculus) Fundamental Definition of Work </title>
+
+		<p>
+			To define work by any force, not just work by a constant force, we need to use Calculus. Once again, we want work by  a force <m> \vec F </m> during an interval <m> t_i </m>  to <m> t_f </m>. Suppose the body follows the path  shown in the <xref ref="fig-work-gen" />, under the influence of this force as well as other forces, not shown.
+		</p> 
+
+
+
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				To define work by force <m> \vec F </m>  we first divide the full path into small straight segments. Then, we define the work on each segment by a dot product between the force vector and the displacement of that segment. For instance, we obtain the following work <m> \delta W </m>  on the segment <m> \Delta \vec r </m> in the figure. 
+
+					<men xml:id="eq-work-general-segment">
+						\delta W = \vec F\, \cdot\, \Delta \vec r. 
+					</men>
+			</p>
+			<p></p>
+
+			<figure xml:id="fig-work-gen">
+				<caption>
+					<!-- To define work, we break up the path into small straight segments and compute the dot product <m> \vec F \cdot \Delta \vec r </m> on each. Summing over all the segments gives us the work over the interval. -->
+				</caption>	
+				<image source="./images/energy/work-gen.png" width="70%"/> 
+			</figure>
+		</sidebyside>
+
+		<!-- <p>
+
+			Note that here the symbol <m> \delta </m> in <m> \delta W</m> refers to a small value we will obtain while <m> \Delta </m> in <m> \Delta \vec r </m> refers to the change in the position vector <m>\vec r </m>. 
+		</p> -->
+		<p>
+			Summing <m> \delta W</m>'s over the entire path gives us the total work  <m> W_{if} </m> during the interval from <m> t_i </m>  to <m> t_f </m>. When the segments become infinitesimally small we write the sum as a  <term> line integral </term>, which we decorate with <m> \text{path} </m> to indicate that the value may depend on the path taken between positions <m> \vec r_i</m> and  <m> \vec r_f</m>.
+				<men xml:id="eq-work-general-integral">
+					W_{if} = \int_{\text{path}}\,  \vec F\, \cdot\, d\vec r.
+				</men>
+			The integral is an example of a <term>line integral</term>, sometimes also called the <term>work integral</term>. This integral needs to be evaluated over the path given by the position vector <m> \vec r</m> at times in the interval <m>t_i </m> to <m> t_f</m>. These integrals require further processing before you can actually come to regular integral(s) that you would do to get the value. See the exercises below.
+		</p>
+
+
+
+
+
+
+<!-- 		<p>
+			Many common forces, such as force of spring, gravitational force, electric force, on a particle vary with the position of the particle. Work in these cases cannot be obtained by <m>Fr\cos\theta</m>. You will need to perform a line integral over the path of the particle.
+			<men xml:id="eq-work-by-varying-force-fundamental">
+				W_{if} = \int_\text{path}\, \vec F \cdot d\vec r.
+			</men> 
+		</p> -->
+		<p>
+			For simplicity, let path of motion be along <m>x</m> axis from  <m>x=x_i</m> to <m>x=x_f</m> with no turn around in the path. Then, work will be only by <m>F_x</m>, <m>x</m> component of the force. In this simple setting, work in Eq. <xref ref="eq-work-general-integral"/> can be evaluated by area under the ciurve.
+			<men>
+				\text{Work } = \text{ Area under }F_x\text{ versus }x.
+			</men>
+			An example of this calculation is illustrated in <xref ref="fig-work-by-area-under-Fx-vs-x"/>. During the displacement from <m>x=0</m> to <m>x=40\text{ m}</m>, work done is positive, <m>+500\text{ N.m}</m>, and during displacement from <m>x=40\text{ m}</m>to <m>x=60\text{ m}</m>, work done is negative, <m>-300\text{ N.m}</m>. The net work will be <m>200\text{ N.m}</m>.
+		</p>
+		<figure xml:id="fig-work-by-area-under-Fx-vs-x">
+			<caption>
+				Work by area-under-the-curve method for a motion on <m>x</m> axis that does not have a turn around in the motion on the axis. 
+			</caption>
+			<image source="./images/energy/work-by-area-under-Fx-vs-x.png" width="70%"/>			
+		</figure>
+		<p>
+			Now, if you have a turn around in the motion, e.g., a ball that is shot up and returns back, you should be careful and find work for each direction separately. <xref ref="fig-work-by-area-under-Fx-vs-x-turn-around"/> illustrates an example of a motion that has a turnaround on <m>x</m>-axis; for comparing purposes, this is same as <xref ref="fig-work-by-area-under-Fx-vs-x"/> except the turaround at <m>x=40\text{ m}</m>. During the displacement from <m>x=0</m> to <m>x=40\text{ m}</m>, work done is positive, <m>+500\text{ N.m}</m>, and during displacement from <m>x=40\text{ m}</m>to <m>x=60\text{ m}</m>, work done is <alert>also positive</alert>, <m>+300\text{ N.m}</m>, unlike the case in  <xref ref="fig-work-by-area-under-Fx-vs-x"/>. The net work will now be <m>800\text{ N.m}</m>.
+		</p>
+		<figure xml:id="fig-work-by-area-under-Fx-vs-x-turn-around">
+			<caption>
+				Work by area-under-the-curve method for a motion on <m>x</m> axis that has a turn around in the motion on the axis. 
+			</caption>
+			<image source="./images/energy/work-by-area-under-Fx-vs-x-turn-around.png" width="70%"/>			
+		</figure>
+
+		
+
+	</subsection>
+
+	<exercise xml:id="ex-Work-by-Spring-Force"><title> Work by Spring Force - Work by Area-Under-the-Curve  </title>
+		<statement>
+			<sidebyside widths="50% 5% 45%">
+				<p>
+					<p>
+						A block attached to a spring is moving on a horizontal surface along <m>x</m> axis. The <m>x</m> component of the spring force is given by
+						<m>F_x = -k\, x</m>, where <m>k</m> is the spring constant and <m>x</m> is the <m>x</m> coordinate of the block. 
+					</p>
+
+				</p>
+				<p> </p>
+				<figure xml:id="fig-work-by-area-spring-force">
+					<caption></caption>
+					<image source="./images/energy/work-by-area-spring-force.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				What is the work done by the spring force when the block's position has moved from <m>x=x_i</m> to <m>x=x_f</m>? The plot of <m>F_x</m> versus <m> x</m> is given in figure.
+			</p>
+
+		</statement>
+		<hint> <p>  Use area under the curve. (triangle + rectangle) </p> </hint>
+		<answer> <p>  <m> -\dfrac{1}{2} k x_f^2 + \dfrac{1}{2} k x_i^2.</m> </p> </answer>
+		<solution> 
+			<p>
+				We need to find the shaded area in the figure. The area is made up of a triangle and a rectangle.
+			</p>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					<md>
+						<mrow> W \amp = \dfrac{1}{2}\left( -kx_f  + k x_i \right) \left(x_f - x_i \right) + k x_i\left( x_f - x_i\right), </mrow>
+						<mrow> \amp = -\dfrac{1}{2} k \left(x_f - x_i \right)^2 -kx_ix_f + kx_i^2, </mrow>
+						<mrow> \amp = -\dfrac{1}{2} k x_f^2 + kx_fx_i -\dfrac{1}{2}kx_i^2 -kx_ix_f + kx_i^2,</mrow>
+						<mrow> \amp = -\dfrac{1}{2} k x_f^2 + \dfrac{1}{2} k x_i^2.</mrow>
+					</md>
+				</p>
+				<p></p>
+				<figure xml:id="fig-work-by-area-spring-force-solution">
+					<caption></caption>
+					<image source="./images/energy/work-by-area-spring-force-solution.png" width="70%"/>
+				</figure>
+			</sidebyside>
+			
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="Work-Integral-for-a-Path-on-Axis"><title>(Calculus) Work Integral for a Path on Axis </title>
+			<statement>
+				<p> Suppose we have a force, <m> \vec F = - 20\, x\, \hat i + 10\,  \hat j</m>, which is in units of <m>\text{N}</m> when <m>x</m> is in <m>\text{m}</m>. What is the work done by this force for a motion on the <m> x</m> axis, on a direct path from <m> x = 2\text{ m}</m> to <m> x = 5\text{ m}</m>?
+				</p>
+
+			</statement>
+			<hint> <p>  On the path,  
+				<m> d\vec r = \hat i\, dx. </m> </p> </hint>
+			<answer> <p> <m> -210\text{ N.m}.</m> </p> </answer>
+			<solution> 
+				<p>
+					
+					First, we notice that the infinitesimal displacement vector, <m> d\vec r = \hat i\, dx + \hat j\, dy + \hat k\, dz</m> on the path 
+					is simply along the <m> x </m> axis.
+					<me>
+						d\vec r = \hat i\, dx,
+					</me>
+					obtained by simply setting <m> dy = 0</m> and <m> dz = 0</m>. Therefore, the dot product on the path takes a simple form as well.
+					<me>
+						\vec F\cdot d\vec r = -20\, x \, dx.
+					</me>
+					This is now restricted on the path, and we can do the integral over the variable <m> x </m> as a regular integral.
+					<me>
+						\int_{\text{path}}\,\vec F\cdot d\vec r = \int_2^5\, -20\, x \, dx = -10\left( 5^2-2^2\right) = -210\text{ N.m},
+					</me>
+					where I have put the unit of work in the last step.
+
+				</p>
+			</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Hockey-Puck-on-a-Rough-Surface-with-Varying-Friction"><title>(Calculus) Hockey Puck on a Rough Surface with Varying Friction</title>
+		<statement>
+			<p>
+				A hockey puck of mass <m>300\text{ grams}</m> is shot across a rough floor with the roughness different at different places, which can be described by a position-dependent coefficient of kinetic friction.  For a puck moving along the <m>x</m>-axis, the coefficient of kinetic friction is the following function of <m>x</m>, <m>\mu(x) = 0.1 + 0.05\,x</m>, where <m> x </m> is in meter. 
+			</p>
+			<p>
+				Find work done by the kinetic frictional force on the hockey puck when it has moved (a) from <m>x = 0</m> to <m>x = 2\text{ m}</m>, and (b) from <m>x = 2\text{ m}</m> to <m>x = 4\text{ m}</m>. 
+			</p>
+
+		</statement>
+		<hint> <p>  Use <m> F_k(x) = \mu_k(x) F_N</m> and integrate <m> \int F_k(x) dx </m>. </p> </hint>
+		<answer> <p> (a) <m>-0.883 \text{ N.m}</m>, (b) <m> -1.47 \text{ N.m}</m>.  </p> </answer>
+		<solution> 
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					From the vertical direction of the free-body diagram of the puck, we have <m> N = mg</m>. This gives the following for the kinetic friction force.
+					<me>
+						F_k = \mu_k\, N = \mu_k(x) m g.
+					</me>
+					
+					Since <m>\vec F_k</m> is in the opposite direction of the displacement, we get the followinf for the work integtral.
+					
+				</p>
+				<p> </p>
+				<figure xml:id="fig-work-hockey-puck-on-rough-surface-kinetic-friction">
+					<caption></caption>
+					<image source="./images/energy/work-hockey-puck-on-rough-surface-kinetic-friction.png" width="40%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				<md>
+					<mrow> W_{if} \amp = -\int_{x_i}^{x_f} F_k(x) dx = -mg\int_{x_i}^{x_f} (0.1 + 0.05\, x)  dx, </mrow>
+					<mrow> \amp =  -mg( 0.1\, x_f - 0.1\, x_i + 0.025\, x_f^2 - 0.025\, x_i^2).  </mrow>
+				</md>
+				We now use the values of <m>x_i</m> and <m>x_f</m> to find the values of <m>W_{iuf}</m>.
+			</p>
+			<p>
+				(a) Here <m>x_i=0</m> and <m>x_f=2</m>. Therefore,
+				<me>
+					W_{if} =  -0.3\times 9.81 ( 0.1\times 2  +  0.025 \times 2^2 ) = -0.883\text{ N.m}.
+				</me>
+			</p>
+			<p>
+				(b) Here <m>x_i=2</m> and <m>x_f=4</m>. Therefore,
+				<md>
+					<mrow> W_{if} \amp =  -0.3\times 9.81 ( 0.1\times 4 - 0.1\times 2 </mrow>
+					<mrow> \amp \ \ \ \  +  0.025 \times 4^2 - 0.025 \times 2^2 ) = -1.47\text{ N.m}. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise> 
+
+	<exercise xml:id="Work-Integral-for-a-Two-Dimensional-Case"><title> (Calculus) Work Integral for a Two Dimensional Case </title>
+			<statement>
+				<p>  
+					A friction force acts opposite to the displacement direction and depends on the location. Suppose a kinetic friction force of magnitude, <m> F = 10\, x\, y^2</m>, acts on the box when the box is at the coordinates <m>(x,y)</m>. The unit of the force in <m>\text{N}</m> when <m>x</m> and <m>y</m> are in <m>\text{m}</m>.
+				</p>
+				<sidebyside widths="50% 5% 45%">
+					<p>
+						We want to compare work done by this force on two paths between A and C: A-B-C versus A-C direct. Let the coordinates of these points be <m> (x_A, y_A) = (0, 2\text{ m})</m>, <m> (x_B, y_B) = (5\text{ m}, 2\text{ m})</m>, and <m> (x_C, y_C) = (5\text{ m}, 3\text{ m})</m>.
+					</p>
+					<p>
+					</p>
+					<figure xml:id="fig-ex-work-integral-friction-2D">
+						<caption></caption>
+						<image source="./images/energy/ex-work-integral-friction-2D.png"/>
+					</figure>
+				</sidebyside>
+
+				<p> 
+					(a) Find work done by <m>F</m> on the path A-to-B-to-C.
+				</p>
+				<p>
+					(b) Find work done on by <m>F</m> the direct path A-to-C.
+				</p>
+				<p>
+					(c) On which path is the absolute value of work by <m>F</m>  greater?
+				</p>
+
+			</statement>
+			<hint> <p>  (a) Do AB and BC separatley, (b) On AC, since <m> y = 0.2\, x + 2</m>, convert everything into <m> x </m>. </p> </hint>
+			<answer> <p> (a) <m> - 817\text{ N.m}</m> (b) <m> -914\text{ N.m}</m> </p> </answer>
+			<solution> <title> (a) </title>
+				<p>
+					 (a) We can break up the calculation into two parts: (i) A-to-B and (ii) B-to-C. We do this because the path descriptions of these two segments are different. 
+					 <md>
+					 	<mrow> \amp \text{On AB we have } y = 2,</mrow>
+					 	<mrow> \amp \text{On BC we have } x = 5.</mrow>
+					 </md>
+					 The force and displacement vectors on these paths are:
+					 <md>
+					 	<mrow> \text{On AB:}\amp  </mrow>
+					 	<mrow> \amp d\vec r = \hat i\, dx, </mrow>
+					 	<mrow> \amp \vec F = -\left( 10\, x\, y^2\right)_{y=2}\,\hat i = -40\,x\,\hat i .</mrow>
+
+					 	<mrow>  \text{On BC:}\amp </mrow>
+					 	<mrow>  \amp d\vec r = \hat j\, dy,</mrow>
+					 	<mrow> \amp \vec F =  -\left( 10\, x\, y^2 \right)_{x=5}\hat j = -50\,y^2\,\hat j.</mrow>
+					 </md>					 
+					 Therefore, we have the following integral on the path AB.
+					 <me>
+					 	W_{AB} = \int_0^5\, -40\,x\, dx = -500\text{ N.m},
+					 </me>
+					 and on path BC
+					 <me>
+					 	W_{BC} = \int_2^3\, -50\,y^2\, dy = -\dfrac{50}{3} \left(3^3 - 2^3\right) = -317\text{ N.m}.
+					 </me>
+					 Adding the two we get the total work on A-B-C path.
+					 <me>
+					 	W_{ABC} = W_{AB} + W_{BC} = - 817\text{ N.m}.
+					 </me>					 
+
+				</p>
+			</solution>
+
+
+			<solution> <title> (b) and (c) </title>
+				<p>
+					(b) On path AC, <m> x </m> and <m> y </m> are related by
+					<me>
+					 	y = mx + b,
+					</me>
+					with
+					<me>
+					 	 m = \dfrac{3-2}{5-0} = 0.2,\ \ b = 2.
+					</me>
+					That is,
+					<me>
+					 	y = 0.2\, x + 2.
+					</me>
+					This can be used to eliminate <m> y </m> and <m> dy</m> from equations below.
+				</p>
+				<p>
+					We use the unit vector for the direction from A to C to write the force vector in an analytic form. This unit vector is
+					<me>
+					 	\hat u = \dfrac{  (5-0)\hat i + (3-2)\hat j}{ \sqrt{(5-0)^2 + (3-2)^2}} = \dfrac{5}{\sqrt{26}}\, \hat i + \dfrac{1}{\sqrt{26}}\, \hat j.
+					</me>
+					Since kinetic friction is pointed in the opposite direction to the displacement, we get the following analytic expression for the force vector, since the magnitude <m> 10\, x\, y^2</m> is positive.
+					<md>
+					 	<mrow> \vec F \amp = -10\, x\, y^2\, \hat u</mrow>
+					 	<mrow> \amp = -10\, x\, y^2 \left( \dfrac{5}{\sqrt{26}}\, \hat i + \dfrac{1}{\sqrt{26}}\, \hat j \right). </mrow>
+					 </md>
+					 The force and displacement vectors on this path are:
+					 <md>
+					 	<mrow> \amp d\vec r =  \hat i\, dx + \hat j\, dy = (\hat i\,  + 0.2\, \hat j)\, dx, </mrow>
+					 	<mrow> \amp \vec F = -10\, x\, (0.2x + 2)^2 \left( \dfrac{5}{\sqrt{26}}\, \hat i + \dfrac{1}{\sqrt{26}}\, \hat j \right),</mrow>
+					 </md>					 
+					 where I used <m> dy = 0.2 dx </m> on this path so that we can write the work integral as an integral over <m> dx</m>.  
+					 <me>
+					 	W_{AC} = \int_{AC}\, \vec F\cdot d\vec r = \int_{0}^5\, \left( \text{ something here }\right) dx.
+					 </me>
+					 The dot product is ugly to work out. You can do that on a separate piece of paper. I found the following.
+					 <me>
+					 	W_{AC} = - \dfrac{52}{\sqrt{26}}\, \int_0^5\left(0.04\,x^3 + 0.8\, x^2 + 4\, x \right)dx  = -914\text{ N.m}.
+					 </me>				 
+				</p>
+				<p> (c)
+					Clearly, we get
+					<me>
+						\left| W_{AC} \right| \gt \left| W_{ABC} \right|.
+					</me>
+					This says that it would cost less energy to go on path A-B-C than to go directly.
+				</p>
+
+			</solution>
+	</exercise>
+
+
+
+</section>

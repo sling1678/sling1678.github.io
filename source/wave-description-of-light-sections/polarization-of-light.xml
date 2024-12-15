@@ -1,0 +1,340 @@
+<section xml:id="section-polarization-of-light"><title> Polarization of Light </title>
+	<introduction>
+        <p>
+        	In <xref ref="section-refelection-and-refraction-of-light"/> we saw important role of the direction of the electric field in determining how much of an electromagnetic wave will be reflected or transmitted when light is incident. A S-polarized wave (also known as transverse electric or TE) behaves differently than a P-polarized wave (also know as transverse magnetic or TM). That was one example of role of direction of electric field.
+        </p>
+        <p>
+        	In general, the direction of electric field in the electromagnetic wave is called the <term>polarization direction</term> of light. A light source may be producing very large number of waves, each of which has electric field in a random direction. This light will not be polarized. We call such light <m>unpolarized</m>.
+        </p>
+    </introduction>
+    <subsection><title>Linear Polarization</title>
+        <p>
+        	A simple polarized wave will have electric field just oscillating back and forth along some fixed line. This light is said to be <term>linearly polarized light</term>. For instance, if an electromagnetic wave is moving in the direction of positive <m>z</m> axis in vacuum and its electric field at any point is pointed either towards positive or negative <m>x</m> axis as illustrated in <xref ref="fig-polarization-linear-along-x-axis"/>. Then, we say that the wave is linearly polarized in the <m>x</m> direction. Suppose the wave has wavenumber <m>k</m> and angular frequency <m>\omega</m>. Then, we can represent this wave with amplitude <m>E_0</m> as
+        	<me>
+        		\vec E = \hat u_x E_0 \cos\left( k z - \omega t \right),
+        	</me>
+        	where <m>\hat u_x</m> is a unit vector in the direction of positive <m>x</m> axis, usually denoted by <m>\hat i</m> also. The line of polarization for a linearly polarized light remains fixed in time although the direction of electric field varies since it oscillates back anf forth along the line.
+        </p>
+
+        <figure xml:id="fig-polarization-linear-along-x-axis">
+        	<caption>
+        		Linearly polarized light with polarization along <m>x</m> axis.  The polarization direction is shown in the plane perpendicular the direction of propagation of the wave.
+        	</caption>
+        	<image source="./images/wave-description-of-light/polarization-linear-along-x-axis.png" width="90%"/>
+        </figure>
+        
+    </subsection>
+    <subsection xml:id="subsection-Circular-Polarization"><title>Circular Polarization</title>
+        <p>
+        	 Another polarization of particular interest happens when electric field direction rotates in space and time as shown in <xref ref="fig-right-and-left-circularly-polarized-light"/>.  For a wave traveling towards positive <m>z</m> axis, electric field direction will be in the <m>xy</m> plane. For linear polarized light, the electric field stays along one line in <m>xy</m> plane. But, if light is circularly polarized, the direction of polarization rotates in <m>xy</m> plane as shown in the figure. 
+        </p>
+        <p>
+        	There are two types of circularly polarized light as shown in <xref ref="fig-right-and-left-circularly-polarized-light"/>. One way to tell the difference is to use handedness. Point the thumb of your right towards the direction of propagation of the wave. Now, if you curl the other fingers and the electric field rotates in time in the same direction as curling of your other fingers of your right hand, then it is said to be <term>right-handed circularly polarized</term> and if it goes in the opposite direction, then you have <term>left-handed circularly polarized</term>. Sometimes clockwise and countecloskwise is also used, but they depend on whether you are looking from the direction of the source or the target.
+        </p>
+
+        <figure xml:id="fig-right-and-left-circularly-polarized-light">
+        	<caption>
+        		Right and left circularly polarized light. Since the wave is moving towards positive <m>z</m> axis, the direction of the electric field is always in the <m>xy</m> plane. But unline, linearly polarized light, the electric field rotates in the <m>xy</m> plane. When we look at the wave from the direction in which it is moving, here from <m>z=+\infty</m>, you notice two types of rotation - counterclockwise or clockwise. The counterclockwise rotating wave is called right-circularly polarized and the clockwise rotating wave is the left-circularly polarized. Credits for the drawing: https://commons.wikimedia.org/wiki/User:Dave3457.
+        	</caption>
+        	<image source="./images/wave-description-of-light/right-and-left-circularly-polarized-light-from-wikipedia.png" width="90%"/>
+        </figure>
+    
+        <p>
+        	Often we describe a circularly polarized light by stating its component electric fields. For instance, for right-circularly polarized light  moving in the direction of <m>z</m> axis of <xref ref="fig-right-and-left-circularly-polarized-light"/>, we can give <m>E_x</m> and <m>E_y</m> wave functions.
+        	<mdn>
+        		<mrow xml:id="eq-right-circular-x-component"> \amp E_x(z,t) = E_0 \cos\left( kz - \omega t \right)</mrow>
+        		<mrow xml:id="eq-right-circular--component"> \amp E_y(z,t) = E_0 \cos\left( kz - \omega t + \frac{\pi}{2} \right)</mrow>
+        	</mdn>
+        </p>
+        <sidebyside widths="50% 10% 40%">
+	        <p>
+	        	You can see these expressions by looking at the plane at <m>z=0</m> and nting that <m>\omega=2\pi/T</m> where <m>T</m> is one period. In a quarter cycle, the electric field will go from pointing towards positive <m>x</m> axis to positive <m>y</m> axis.
+	        </p>
+	        <p></p>
+	        <image source="./images/wave-description-of-light/polarization-rotation-of-right-circularly-polarized-light-tover4.png" width="90%"/>
+	    </sidebyside>
+	    <p>
+	    	Looking at <m>E_x</m> and <m>E_y</m>, you would notice that if the arguments of the cosines, i.e., the phases, of <m>E_x</m> and <m>E_y</m> were same, you would not get any rotation. The rotation of electric field, which is a vector sum of the <m>x</m> and <m>y</m> parts, comes from the lag of phase of the <m>E_y</m> wave, the full value of <m>E_y</m> occurs <m>T/4</m> later than it occurs for <m>E_x</m>.
+	    </p>
+	    <sidebyside widths="50% 10% 40%">
+		    <p>
+		    	Using this knowledge, we can immediately write the expressions fro <m>E_x</m> and <m>E_y</m> for left-circularly polarized light by just changing the sign of the phase constant in <m>E_y</m>.
+	        	<md>
+	        		<mrow xml:id="eq-left-circular-x-component"> \amp E_x(z,t) = E_0 \cos\left( kz - \omega t \right)</mrow>
+	        		<mrow xml:id="eq-left-circular--component"> \amp  E_y(z,t) = E_0 \cos\left( kz - \omega t - \frac{\pi}{2} \right)</mrow>
+	        	</md>
+	        </p>
+	        <p></p>	    	
+	        <image source="./images/wave-description-of-light/polarization-rotation-of-left-circularly-polarized-light-tover4.png" width="90%"/>
+	    </sidebyside>        
+
+ 
+    </subsection>
+
+
+
+    <subsection><title>Malus's Law</title>
+        <sidebyside widths="50% 50%">
+
+	        <p>
+	        	If you shine a linearly polarized light on a linear polarizer with direction of polarization of light <alert>same</alert> as the the polarization direction of the polarizer, then all of the incident light is trnasmitted through the polarizer. On the other hand, if the direction of polarization of incident light <alert>perpendicular</alert> to the the polarization direction of the polarizer, then all light is blocked.
+	        </p> 
+
+	        <figure xml:id="fig-polarization-zero-and-ninety-degrees-demo">
+	        	<caption>
+	        		  Two polarizers whose axes are perpendicular to each other completely block the light.
+	        	</caption>
+	        	<image source="./images/wave-description-of-light/polarization-zero-and-ninety-degrees-demo.png" width="90%"/>
+	        </figure>
+    	</sidebyside>
+
+        <p>
+        	Finally, if the   direction of polarization of incident light is some angle <m>\theta</m> to the the polarization direction of the polarizer, then only some of the light is blocked. How much is blocked in this case? To analyze this general case, note that we need to think in terms of electric field to see what is let through and what is blocked. 
+        </p>
+        <p>
+        	A linear polarizer lets through the component of the electric field that is parallel to the axis of the polarizer. Consider a linearly polarized EM wave moving towards positive <m>z</m> axis. Its polarization will be in the <m>xy</m> plane, say at an angle <m>\theta</m> from <m>x</m> axis. This means that the amplitude vector <m>\vec E_0</m> is in this direction. Suppose it is incident on a linear polarizer whose axis is along <m>x</m> axis. Then, the wave on the other side will have amplitude equal to the <m>x</m> component of <m>\vec E_0</m> and direction of <m>x</m> axis, which will be
+        	<me>
+        		E_{0x} = E_0\,\cos\theta. 
+        	</me>
+        	Suppose you have the same medium on the two sides of the polarizer, then we can write the ratio of their intensities as
+        	<me>
+        		\frac{I_\text{out}}{I_\text{in}} = \frac{ \frac{1}{2} \epsilon v E_{0x}^2}{\frac{1}{2} \epsilon vE_0^2} =  \cos^2\theta.
+        	</me>
+        	That is, outgoing wave will have only <m>\cos^2\theta</m> times the incident intensity.
+        	<men>
+        		I_\text{out} = I_\text{in}\, \cos^2\theta.
+        	</men>
+        	This is called <term>Malus's law</term>. How can we test this law? We setup an experiment that produces a linearly polarized light with a known direction of polarization, which is then passed through an identical polarizer whose preferred axis makes an angle <m>\theta</m>  with respect to the polarization direction of the polarized light as shown in <xref ref="fig-polarization-malus-law-set-up"/>. In this setup we calle the first polarizer a polarizer and call the second polarizer an <term> analyzer</term>.
+        </p>
+
+        <figure xml:id="fig-polarization-malus-law-set-up">
+        	<caption>
+        		 The polarizer and analyzer in for testing Malus's law.
+        	</caption>
+        	<image source="./images/wave-description-of-light/polarization-malus-law-set-up.png" width="80%"/>
+        </figure>
+
+    </subsection>
+
+    <subsection><title>Polarizers</title>
+        <p>
+        	Natural light such as the light from the Sun is  unpolarized.  It is generally a random mixture of various waves of different polarizations and frequencies. There are devices that act as filter of light and let through light with a particular type of polarization. These devices are called <term> polarizers</term>. 
+
+        </p>
+        <p>
+        	There are various types of polarizers depending on the polarization of the light that is emitted from the polarizer. For instance, if light emitted is linearly polarized, we call it a <term> linear polarizer </term>  and light emitted is a circularly polarized light we call it a <term> circular polarizer</term>. Linear polarizers are easier to understand and we will mstly look at them. 
+        </p>
+    </subsection>
+
+
+    <subsection><title>Linear Polarizers</title>
+
+    	<p>
+    		There are some naturally occuring crystals, such as tourmaline, that have dichroic property of preferentially absorbing polarization light. Hence, such a crystal will let through light polarized in the perpendicular direction to the direction of polarization that the crystal absorbs. These crystals introduce some other artefacts such as absorption depending on wavelength also and they are not the primary means we obtain polarized light.
+    	</p>
+
+    	<p>
+    		A majority of polarizers, such as use in sun glasses, are made from synthetic materials. For instance, in H-sheet Polaroid, clear polyvinyl alcohol (PVA) is stretched along its chains, and then dipped into iodine solution which imbeds into the plastic and arranges along the long hydrocarbon chains, essentially making molecular size wires of iodine.  These Polaroids transmit electromagnetic waves whose polarization is <em>perpendicular to the direction of "iodine wires"</em>. In a sense, these are synthetic dichroic materials, and that is why ther are also referred to as dichroic filters.
+    	</p>
+
+	        <figure xml:id="fig-wiregrid-absorbing-polarizer-polaroid-type">
+	        	<caption>
+	        		   Polarization by absorbing wire grid type material such as the H-sheet Polaroids.
+	        	</caption>
+	        	<image source="./images/wave-description-of-light/wiregrid-absorbing-polarizer-polaroid-type.png" width="70%"/>
+	        </figure>
+
+ 
+		<p>
+			In <xref ref="section-refelection-and-refraction-of-light"/>, we have also seen that if we reflect light at Brewster's angle, then P-wave does not have any reflection but S-wave does have reflection. Therefore, if we reflect an unpolarized light off a surface at the Brewster's angle, then we will get only S-wave in the reflected direction. Now, S-wave is polarized perpendicular to the plane of incidence. This will give light polarized linearly in the direction perpendicular to the incidence plane and parallel to the interface.
+
+
+		</p>
+		<p>
+			We will discuss special types of crystals, such as calcite, that have refractive index that depends on the polarization direction of light with respect to a crystal axis.  These crystals are called <term> birefringent crystals</term> This leads to separation of light of different polarizations and hence can  also be used to produce polarized light.
+		</p>
+		<p>
+			By using an appropriate arrangement of linear polarizers, you can obtain polarized light that is polarized in any desired direction in the plane perpendicular to the direction of the wave.  However, each polarizer reduces the intensity of light by blocking off the perpendicular components.
+		</p>
+
+
+	</subsection>
+
+
+	<subsection><title> Circularly Polarizer</title>
+		<p>
+			If you look back in <xref ref="subsection-Circular-Polarization"/>, you will find that to produce right circularly polarized light moving in positive <m>z</m> axis, we need to introduce delay of <m>\pi/2</m>  in the phase of the <m>E_y</m> wave relative to the <m>E_x</m> wave. And similarly for the left-circularly polarized light. Thus, we need polarization dependent wave velocity. Recall that wave velocity in a medium is <m>v = c/n</m>. This means we need polarization dependent refractive index. Birefringent materials have just such a property. Therefore,  when a linearly polarized light is sent in appropriate direction and through appropriate thickness of a birefringent crystal, the crystal produces the desired delay. These devices are called <term>retarders</term>.
+		</p>
+		<p>
+			A retarder is constructed to retard the phase of one of the components by a set amount. You can buy full-wave, half-wave and quarter-wave plates. The cause relative retardations of the phase by <m>2\pi\text{ rad}</m>, <m>\pi\text{ rad}</m> and <m>\pi/2\text{ rad}</m> respectively.  Also commonly available are <term>compensators</term> which can be used to produce retardation to a arbitrary degree.
+		</p>
+		<p>
+			The above describes how you can turn a linearly polarized light into a circularly polarized light. If you want to go the other way around, it is much simpler - you just pass the circularly polarized light through a linear polarizer!
+		</p>
+
+	</subsection>
+
+	<exercise xml:id="exercise-Intensity-Change-Due-to-Passing-Light-Through-Multiple-Linear-Polarizers"><title>Intensity Change Due to Passing Light Through Multiple Linear Polarizers</title>
+
+		<statement>
+			<p>
+				In <xref ref="fig-polarization-intensity-through-multiple-polarizers"/>, find the intensities <m>I_1</m>, <m>I_2</m>, and <m>I_3</m>, in terms of <m>I_0</m>.
+			</p>
+	        <figure xml:id="fig-polarization-intensity-through-multiple-polarizers">
+	        	<caption>
+	        		    Figure for <xref ref="exercise-Intensity-Change-Due-to-Passing-Light-Through-Multiple-Linear-Polarizers"/>.
+	        	</caption>
+	        	<image source="./images/wave-description-of-light/polarization-intensity-through-multiple-polarizers.png" width="90%"/>
+	        </figure>			
+		</statement>
+		<hint><p>Use Malus's law for each polarizer.</p></hint>
+		<answer><p> <m>0.75\:I_0</m>, <m>0.19\:I_0</m>, <m> 0.14\:I_0</m>.  </p></answer>
+		<solution>
+			<p>
+				We use Malus's law for one polarizer at a time and get the intensities. The angles between the electric field direction of the incident wave and the polarizer in these cases are <m>30^\circ</m>, <m>60^\circ</m>, and <m>30^\circ</m>, respectively.
+				<md>
+					<mrow> \amp I_1 = I_0\:\cos^2\:30^{\circ} = 0.75\:I_0,</mrow>
+					<mrow> \amp I_2 = I_1\:\cos^2\:60^{\circ} = \left(0.75\:I_0\right)\:\left( \frac{1}{2}\right)^2 = 0.19\:I_0,</mrow>
+					<mrow> \amp I_3 = I_2\:\cos^2\:30^{\circ} =   0.14\:I_0</mrow>
+				</md>
+ 
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Intensity-Change-Due-to-Passing-Light-Through-Rotating-Polrizer"><title>Intensity Change Due to Passing Light Through Rotating Polarizer</title>
+
+		<statement>
+			<p>
+				<xref ref="fig-polarization-intensity-through-rotating-polarizer"/> shows a setup in which a linear polarizer is rotated between two identical stationary crossed polarizers.  Find the intensity of the emerging wave in terms of the intensity <m>I_0</m> of the light after the first fixed polarizer and the frequency <m>f</m> of rotation of the rotating polarizer. 
+
+			</p>
+	        <figure xml:id="fig-polarization-intensity-through-rotating-polarizer">
+	        	<caption>
+	        		    Figure for <xref ref="exercise-Intensity-Change-Due-to-Passing-Light-Through-Rotating-Polrizer"/>.
+	        	</caption>
+	        	<image source="./images/wave-description-of-light/polarization-intensity-through-rotating-polarizer.png" width="90%"/>
+	        </figure>			
+		</statement>
+		<hint><p>Use Malus's law for each polarizer. Note tha angle between the rotating polarizer and either of the two polarizers will be same.</p></hint>
+		<answer><p> <m>I_0\:\cos^4(2\pi f t)</m>.  </p></answer>
+		<solution>
+			<p>
+				We use Malus's law for one polarizer at a time and get the intensities. We need to work oiut angles between successive polarizers at instant <m>t</m>. Let us choose time <m>t=0</m> to be the instant when the rotating polarizer is aligned with the first fixed polarizer. Then, angle in which the rotating polarizer will be pointed with respect to the first polarizer will be
+				<me>
+					\theta = 2\pi f t.
+				</me>
+				Therefore, the intensity behind the rotating polarizer will be
+				<me>
+					I_1 = I_0\:\cos^2(2\pi f t).\ \ \ (1)
+				</me>
+				Now, since the second fixed polarizer has the same orientation as the first fixed polarizer, angle between the electric field of the wave incident on the second fixed polarizer will also be <m>2\pi f t</m>. Therefore, the intensity after the second fixed polarizer will be
+				<me>
+					I_2 = I_1\:\cos^2(2\pi f t).
+				</me>
+				Replacing <m>I_1</m> here from (1), we get
+				<me>
+					I_2 = I_0\:\cos^4(2\pi f t).
+				</me>
+ 
+ 
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="exercise-plotting-polarization-vectors-at-various-times"><title>Plotting Polarization Vectors at Various Times</title>
+
+		<statement>
+			<p>
+				Plot the following time-varying vectors in <m>xy</m> plane at <m>t = 0</m>, <m>0.2</m>, <m>0.4</m>, <m>0.6</m>, and <m>0.8</m> in units of the period of the cosine or sine functions given. State the direction of rotation of the electric field vectors when observed from the positive <m>z</m> axis. Here unit vectors in the Cartesian <m>x</m> and <m>y</m> are denoted by <m>\hat u_x</m> and <m>\hat u_y</m> respectively.
+			</p>
+			<p>
+				(a) <m>\hat u_x \cos(2\pi t)</m>
+			</p>
+ 
+			<p>
+				(b) <m>\hat u_x \cos(2\pi t) + \hat u_y \sin(2\pi t)</m>
+			</p>
+		</statement>
+		<hint><p>(a) Compute <m>\cos(2\pi t)</m> at  <m>t = 0</m>, <m>0.2</m>, <m>0.4</m>, <m>0.6</m>, and <m>0.8</m> (b) Similar to (a), but now you add two vectors to get the net vector. </p></hint>
+		<answer><p>(a) See solution. (b) See solution.</p></answer>
+		<solution><title>(a)</title>
+			<sidebyside widths="50% 50%">
+				<p>
+					(a) Function <m>\cos(2\pi t)</m> has period <m>T</m> equal to <m>1</m>. Therefore, first we compute values of  <m>\cos(2\pi t)</m> at the instants <m>t = 0</m>, <m>0.2</m>, <m>0.4</m>, <m>0.6</m>, and <m>0.8</m>. Then we draw arrows along <m>x</m> axis since the direction is always aling <m>x</m> axis. For negative values, the arrow is pointed towards negative axis. 
+				</p>
+		        <figure xml:id="fig-exercise-linear-polarization-various-times">
+		        	<caption>
+		        		    Figure for <xref ref="exercise-plotting-polarization-vectors-at-various-times"/>(a).
+		        	</caption>
+		        	<image source="./images/wave-description-of-light/exercise-linear-polarization-various-times.png" width="90%"/>
+		        </figure>
+		    </sidebyside>			
+	 
+		</solution>
+
+		<solution><title>(b)</title>
+			<sidebyside widths="50% 50%">
+				<p>
+					(b) Function <m>\cos(2\pi t)</m> as well as <m>\sin(2\pi t)</m> has period <m>T</m> equal to <m>1</m>. Therefore, first we compute values of  <m>\cos(2\pi t)</m> and <m>\sin(2\pi t)</m> at the instants <m>t = 0</m>, <m>0.2</m>, <m>0.4</m>, <m>0.6</m>, and <m>0.8</m>. Then we draw vector arrows at these instants. We see that this is right-circularly polarized wave if the wave is coming out of page and the vector given is at <m>z=0</m> or some other constant <m>z</m> plane.
+				</p>
+		        <figure xml:id="fig-exercise-linear-polarization-various-times-b">
+		        	<caption>
+		        		    Figure for <xref ref="exercise-plotting-polarization-vectors-at-various-times"/>(b).
+		        	</caption>
+		        	<image source="./images/wave-description-of-light/exercise-linear-polarization-various-times-b.png" width="90%"/>
+		        </figure>
+		    </sidebyside>			
+	 
+		</solution>
+
+
+
+
+	</exercise>
+
+
+
+
+	<exercise xml:id="exercise-Intensity-after-Passing-a-Circularly-Polarized-Light-through-a-Linear-Polarizer"><title>Intensity after Passing a Circularly Polarized Light through a Linear Polarizer </title>
+
+		<statement>
+			<p>
+				A circularly polarized light has the following electric field.
+				<me>
+					\vec E = E_0 \left[ \hat u_x \cos\left( 2\pi f t - \frac{2\pi}{\lambda} z \right) +  \hat u_y \sin\left( 2\pi f t - \frac{2\pi}{\lambda} z \right)  \right]
+				</me>
+				The wave is passed through a linear polarizer whose polarizing axis is pointed <m>45^\circ</m> counterclockwise to the <m>x</m> axis. Find the  intensity of the emergent wave in terms of the intensity of the incident wave.
+			</p>
+		</statement>
+		<hint><p>Note dot product with a unit vector is a good way to find the componet in some direction.</p></hint>
+		<answer><p><m>\frac{ c\:\epsilon_0\:E_0^2}{2}</m></p></answer>
+		<solution>
+			<p>
+				Let <m>\hat u</m> be a unit vector in the direciton of the polarizer.  Here
+				<me>
+					\hat u =\frac{\hat u_x + \hat u_y}{\sqrt{2}}.
+				</me>
+				The dot product of <m>\vec E</m> with this unit vector we get
+
+				<me>
+					\vec E \cdot \hat u = \frac{E_0}{\sqrt{2}} \left[ \cos\left( 2\pi f t - \frac{2\pi}{\lambda} z \right) + \sin\left( 2\pi f t - \frac{2\pi}{\lambda} z \right)  \right].
+				</me>
+				The time average of square of this will be
+				<me>
+					\langle ( \vec E \cdot \hat u )^2 \rangle  = \frac{E_0^2}{2}.
+				</me>
+				The intensity will be
+				<me>
+					I = c\:\epsilon_0\langle ( \vec E \cdot \hat u )^2 \rangle =  \frac{ c\:\epsilon_0\:E_0^2}{2}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+ 
+
+
+
+
+</section>

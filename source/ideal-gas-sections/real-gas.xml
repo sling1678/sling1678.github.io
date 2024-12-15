@@ -1,0 +1,189 @@
+<section xml:id="Real-Gases"><title> Real Gases </title>
+
+	<introduction>
+		<p>
+			The ideal gas model of a gas assumes that the molecules of the gas occupy zero volume themselves and there is no attraction or repulsion between them.  These simplifying assumptions do not hold true for real gases, such as nitrogen and oxygen, until they are very dilute or unless temperature is very high.  Hence, real gases do not obey the ideal gas law except at  low pressures or low densities.   			
+		</p>
+		<p>
+			By introducing an attractive force between molecules and allowing for their collisions, Dutch physicist Johannes Diderik van der Waals deduced the following equation of state in 1873.
+			<men>
+				\left(p +\frac{n^2 a}{V^2}\right) \left(V-nb\right) =n R T,
+			</men>
+			where <m> a</m> and <m> b</m> are positive constants, called the van der Waals constants, whose values depend on the particular substance. This equation is called van der Waals equation and models behavior of real gases well. 
+		</p>
+		<p>
+			The quantity <m> an^2/V^2 </m>  models the deviation in pressure from the ideal gas due to the intermolecular attraction, and the quantity <m> nb</m> models the net amount of volume actually occupied by the molecules themselves.  Since <m> a>0</m>, the correction term says that the pressure in real gases will be less then the pressure expected from the ideal gas approximation.
+		</p>
+		<table xml:id="tab-van-der-waals"> <title> van der Waals constants (CRC Handbook of Chemistry and Physics, 82nd Edition, 2001-2002)</title>
+			<tabular halign ="left" >
+				<row bottom ="minor" >
+					<cell > Gas </cell >
+					<cell > <m>a \text{ (Pa.m}^6\text{/mol}^2\text{)} </m > </cell >
+					<cell > <m> b \text{ (m}^3\text{/mol)} </m > </cell >
+				</row >
+
+				<row  >
+					<cell > Helium </cell >
+					<cell > <m>43.46 \times 10^{-3} </m > </cell >
+					<cell > <m> 2.38 \times 10^{-5} </m > </cell >
+				</row >
+
+				<row  >
+					<cell > Hydrogen </cell >
+					<cell > <m>2.452 \times 10^{-2}</m > </cell >
+					<cell > <m> 2.65 \times 10^{-5} </m > </cell >
+				</row >
+
+				<row  >
+					<cell >  Neon </cell >
+					<cell > <m>2.08 \times 10^{-1}</m > </cell >
+					<cell > <m> 1.67 \times 10^{-5} </m > </cell >
+				</row >
+
+
+				<row  >
+					<cell >  Nitrogen </cell >
+					<cell > <m>1.370</m > </cell >
+					<cell > <m> 3.87 \times 10^{-5} </m > </cell >
+				</row >
+
+				<row  >
+					<cell >  Oxygen </cell >
+					<cell > <m>1.382</m > </cell >
+					<cell > <m> 3.19 \times 10^{-5} </m > </cell >
+				</row >
+
+				<row bottom ="minor" >
+					<cell >  Water vapor </cell >
+					<cell > <m>5.537</m > </cell >
+					<cell > <m>3.05 \times 10^{-5}</m > </cell >
+				</row >
+			</tabular>
+
+		</table>
+
+	</introduction>
+
+	<subsection><title> Virial Expansion</title>
+		<p>
+			A more general way to write the equation of state of a gas is to use a series expansion, called the virial expansion.  It is written in several alternate forms, and I will write here as follows.
+			<men xml:id="eq-virial-equation">
+				\frac{pV}{nRT} = 1+ B(T)\frac{n}{V} + C(T) \left( \frac{n}{V} \right)^2 + \cdots 
+
+			</men>
+		</p>
+		<p>
+			The coefficients <m>B</m>, <m>C</m>, etc., in the virial expansion are functions of temperature and are called the second, third, etc., virial coefficients.  The virial coefficients are empirically determined by fitting the virial equation to the experimental data.  
+		</p>
+		<p>
+			The ratio of <m> pV</m> to <m> nRT</m> is usually denoted by the letter <m> Z</m> and called the <term> compressibility </term> of the gas.  
+			<men>
+				Z = \dfrac{pV}{nRT}.
+			</men>
+		</p>
+		<p>
+			For an ideal gas <m> Z = 1</m>. Compressibility <m> Z </m> gives a good measure of the deviation of a gas from the ideal gas behavior.  
+		</p>
+		<p>
+			In the virial expansion, Eq. <xref ref="eq-virial-equation"/>, we can see what would happen for low density, i.e., when  <m> n/V</m> is small. If we set  <m> n/V = 0 </m>, we get the ideal gas. This  confirms the experimental observation that all gases behave as ideal gases at low densities.
+		</p>
+		
+	</subsection>
+
+<!--  
+ 
+
+The equation of state helps reduce the number of variables we must specify in order to describe the thermodynamic state of a system.  For instance, in a gas any two of the three variables can be independently specified and the remaining one determined by the use of the equation of state, which is a simple task for ideal gas, but may be quite tedious for real gases.  Hence, to specify the state of a gas you need only indicate any of the pairs <m>(p,V)</m>, <m>(p,T)</m> or <m>(V,T)</m>.  The list of thermodynamic variables may include other properties as well.  For instance, if you have a magnetic material, your list will also include the total magnetization <m>(M)</m> and the magnetic field <m>(H)</m>. -->
+
+
+
+	<exercise xml:id="ex-Amount-of-Gas-According-to-Ideal-versus-Real-Gas-Assumptions"><title> Amount of Gas According to Ideal versus Real Gas Assumptions</title>
+		<statement>
+			<p>
+				A 16-liter gas cylinder has the Oxygen gas at the room temperature of <m>20^{\circ}</m>C.  The gauge pressure shows a pressure of 200 kPa. The amount of gas in the cylinder is some definite amount, but the calculated value will depend upon the model you use. 
+			</p>
+			<p>
+				(a) What is the calculated value of number of moles if you assume the ideal gas behavior? 
+			</p>
+			<p>
+				(b) What is the calculated value of number of moles if van der Waals gas behavior is assumed?
+			</p>
+			<p>
+				Data: The van der Waals constant for oxygen: <m>a = 1.382\ \textrm{atm.L}^2/\textrm{mol}^2 </m>, <m> b = 0.0319\ \textrm{L/mol}</m>.
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Use formula, (b) You will need to solve a cubic equation. </p> </hint>
+		<answer> <p> (a) <m>1.98</m>, (b) <m>2.26</m>.  </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				\noindent (a) The pressure in the ideal gas law is the absolute pressure and not the gauge pressure.  The gauge pressure is the difference of the pressure inside to the pressure outside.  Since the outside pressure is just the atmospheric pressure, the pressure in the gas will be
+				<me>
+					p = p_{\textrm{atm}} + p_{\textrm{gauge}} = 1.013\times 10^{5}\ \textrm{Pa} + 200\ \textrm{kPa} = 3.013\times 10^{5} \textrm{Pa}.
+				</me>
+				This pressure in atm is
+				<me>
+					p = 3.013\times 10^{5} \textrm{Pa}/1.013\times 10^{5}\ \textrm{Pa/atm} = 2.97\ \textrm{atm}
+				</me>
+				The other variables in the ideal gas law are given as
+				<md>
+					<mrow> \amp V = 16\ \textrm{L},</mrow>
+					<mrow>\amp T =  20^{\circ}\textrm{C} + 273.15 = 293.15\ \textrm{K}.</mrow>
+				</md>
+				Therefore, gas has the the following number of moles, where all quantities are expressed in atm, L and K units.
+				<me>
+					n = \frac{pV}{RT} = \frac{2.97\times 16}{0.082\times 293.15} = 1.98 \ \textrm{mol.}
+				</me>
+			</p>
+		</solution>
+		<solution> <title> (b) </title>
+			<p>
+
+				(b) We need <m>a</m> and <m>b</m> for Oxygen.  They are
+				<me>
+					a = 1.382\ \textrm{atm.L}^2/\textrm{mol}^2;\ \ b = 0.0319\ \textrm{L/mol}.
+				</me> 
+				The equation for <m>n</m> to solve now is
+				<me>
+					\left( 2.97+ \frac{1.382\ n^2}{16} \right) \left( 16-0.0319\ n\right) = 0.082\times 293.15\ n,
+				</me>
+				where <m>p</m>, <m>V</m>, and <m>T</m> have been expressed in atm, L and K units.  This equation is a cubic equation in <m>n</m> and is left for the student to solve.  Mathematica gave me three answers: <m>n</m> = 480 mol, 15.8 mol, and 2.26 mol. The physical answer should be close to the ideal gas behavior since the van der Waals is a correction to the ideal gas behavior.  We expect the root <m>n</m> = 2.26 mol to be the physical value of <m>n</m> here.
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Deciding-Whether-an-Ideal-Gas-or-Real-Gas"><title> Pressure in Real Gas is Less Than Pressure in Ideal Gas </title>
+		<statement>
+			<p>
+				A nitrogen gas cylinder of fixed volume <m> 0.01\text{ m}^3</m>  contains <m> 5.6 </m> moles of gas at a temperature of <m> 25^{\circ}\text{C}</m>.  Find the pressure inside the tank using (a) the ideal gas law and (b) van der Waals equation.
+			</p>
+
+		</statement>
+		<hint> <p>  (a) Use ideal gas law, (b) USe van der Waals equation. </p> </hint>
+		<answer> <p> (a) <m> 1.39\times 10^6\ \textrm{Pa}</m>, (b) <m> 9.6\times 10^{5}\ \text{Pa}</m>. </p> </answer>
+		<solution> <title> (a) </title>
+			<p>
+				(a)	It is easy to find the pressure using the ideal gas law by simply plugging  into the formula, <m> pV = n RT</m>. In the present case, we have the following known values, <m> V = 0.01\text{ m}^3</m>, <m> n = 5.6 \text{ moles}</m>, <m> T = 25+273.15 = 298.15\text{K}</m>.  Note the temperature must be expressed in the  kelvin scale for use in the ideal gas law. Hence, the pressure in the tank as predicted by ideal gas law is
+				<me>
+					p = \frac{nRT}{V} = 1.39\times 10^6\ \textrm{Pa}.
+				</me>
+			</p>
+		</solution>
+
+		<solution> <title> (b) </title>
+			<p>
+				(b)	 We plug the known quantities given in (a) together with the van der  Waals constants <m> a </m> and <m> b </m> for Nitrogen into van der Waals equation.  From the table we find the van der Waals constants <m> a </m> and <m> b </m> for nitrogen in SI units are <m> a = 1.37\text{ Pa.atm}^4/\text{mol}^2</m>, and <m> b = 3.87\times 10^{-5}\ \text{m}^3/\text{mol}</m>. Hence, the pressure of nitrogen as predicted by van der Waals equation will be
+				<me>
+					p = \frac{nRT}{V-nb}-\frac{n^2a}{V^2} = 1.39\times 10^6\ \text{Pa} - 0.43\times 10^6\ \text{Pa} = 9.6\times 10^{5}\ \text{Pa}.
+				</me>
+				Clearly the two predictions of the pressure in the tank are significantly different!  This example illustrates that you should be careful when using ideal gas law.
+			</p>
+		</solution>
+
+	</exercise>
+ 
+ 
+
+
+</section>

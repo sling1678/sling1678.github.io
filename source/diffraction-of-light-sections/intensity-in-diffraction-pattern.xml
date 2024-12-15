@@ -1,0 +1,379 @@
+<section xml:id="section-intensity-in-diffraction-pattern-light"><title>Intensity in Diffraction Pattern</title>
+	<introduction><title>(Calculus) Formula for Intenssity </title>
+		<p>
+			It turns out that figuring out intensity in the diffraction pattern is not so easy as finding the directions of the minima.  We must apply the superposition principle to the waves, and then, find the time-average of the square of the sum.
+		</p>
+		<p>
+			We will use <xref ref="fig-intensity-in-diffraction-pattern-setup"/> to perform out calculations. I have  placed a <m>z</m> axis at the slit to refer to parts of the wavefront there. Let <m>y</m> axis be pointed into the page and <m>x</m> axis pointed to the right. Note that this figure shows only a cross-section of the wavefront at the slit since the wavefront is parallel to the <m>yz</m> plane.
+		</p>
+		<figure xml:id="fig-intensity-in-diffraction-pattern-setup">
+			<caption>
+				Geometry for the calculation of Fraunhofer diffraction from plane wave at a slit. We assume electric field to be mostly along <m>z</m> axis. Here <m>\hat u_z</m> is unit vector towards positive <m>z</m> axis. <m>dz</m> shows a small part of the wavefront at coordinate <m>z</m>.
+			</caption>
+			<image source="./images/diffraction-of-light/intensity-in-diffraction-pattern-setup.png" width="100%"/>
+		</figure>
+
+
+
+		<p>
+			We will also assume that electric field is mostly the <m>z</m> component. Therefore, work with just the <m>E_z</m> wave and call <m>E_z</m> by <m>E</m>. Let <m>A</m> denote the voltage per unit length at the wavefront. Then, we can write the electric field wave at point P on the screen which started at <m>dz</m> of the wavefront as a spherical wave as follows.
+			<men xml:id="eq-electric-field-dE-from-dz-as-spherical-wave-original">
+				dE = \frac{A dz}{r}\cos(kr - \omega t),
+			</men>
+			<m> Adz/r</m> is the amplitude of this wave when it arrives at P, 
+			<m>k</m> is the wavenumber, which is related to wavelength <m>\lambda</m> by
+			<me>
+				k = \frac{2\pi}{\lambda},
+			</me>
+			<m>\omega</m> is the angular frequency, which is related to the frequency <m>f</m> by
+			<me>
+				\omega = 2\pi f.
+			</me>
+		</p>
+		<p><alert>Simplifying <m>r</m>:</alert></p>
+		<p>
+			From triangle, whose vertices are O, P, and <m>dz</m>, we get the following for <m>r^2</m>.
+			<md>
+				<mrow> r^2 \amp = \left( \frac{R}{\cos\theta} \right)^2 + z^2 - 2 \frac{zR}{\cos\theta}\cos\left( \frac{\pi}{2} - \theta\right) </mrow>
+				<mrow> \amp = \left( \frac{R}{\cos\theta} \right)^2 + z^2 - 2 \frac{zR}{\cos\theta}\sin \theta.</mrow>
+			</md>
+		</p>
+		<p>
+			Now, since <m>z</m> will be a point on the wavefront at the slit, its range of value is limited,
+			<me>
+				-\frac{b}{2} \le z \le \frac{b}{2}.
+			</me>
+			Since <m>\frac{R}{\cos\theta} \gt \gt b</m>, we can drop <m>z^2</m> in <m>r^2</m> to get
+			<me>
+				r^2 \approx \left( \frac{R}{\cos\theta} \right)^2  - 2 \frac{zR}{\cos\theta}\sin \theta.
+			</me>
+			Taking square root of both sides we get
+			<me>
+				r = \frac{R}{\cos\theta} \left(  1 - 2 \frac{z \cos\theta}{R}\sin \theta   \right)^{1/2}.
+			</me>
+			Here since <m>|z|\lt \lt R</m>, we can expand the quantity in parenthesis and keep upto two terms so that we have dependence on <m>z</m> still there.
+			<me>
+				r = \frac{R}{\cos\theta}   -  z \sin\theta.
+			</me>
+			We make one more simplification here. Since <m>\theta</m> will be small, we can replace <m>\cos\theta</m> by <m>1</m>. To be consistent, we could replace <m>\sin\theta</m> by <m>\theta</m> in radians, but, it is customary to leave <m>\sin\theta</m> alone here. Finally, we have the following simplified expression for <m>r</m>.
+			<men xml:id="eq-simplified-r-single-slit">
+				r = R  -  z \sin\theta.
+			</men>
+		</p>
+ 
+		<p><alert>Electric Field at P:</alert></p>
+ 
+		<p>		
+			In Eq. <xref ref="eq-electric-field-dE-from-dz-as-spherical-wave-original"/>, distance <m>r</m> appears in the amplitude <m>\frac{Adz}{r}</m> and in phase <m>kr - \omega t</m>. Since <m>|z\sin \theta| \lt\lt  R</m> we may be tempted to drop <m>z\sin \theta</m> altogether.  Since <m>kr</m> in the phase has a large <m>k</m>, small changes in <m>kr</m> have large impact on  sine of <m>kr</m> .  Therefore, in the phase we must keep <m>z\sin \theta</m>.  Dropping <m>z\sin \theta</m> in the   the amplitude <m>\frac{Adz}{r}</m> does not have much impact.  Thus, Eq. <xref ref="eq-electric-field-dE-from-dz-as-spherical-wave-original"/> simplifies to
+			<me>
+				dE \approx \frac{(Adz)}{R}\sin\left[ k(R-z\sin\theta) - \omega t\right]
+			</me>
+			Now, we just integrate this over the wavefront, from <m>z=-b/2</m> to <M>z=+b/2</M>, to get the electric field at P which is in the direction <m>\theta</m> from the slit.
+			<men xml:id="eq-electric-field-at-screen-single-slit-diffraction">
+				E_P = \frac{A}{R} \left[ \frac{2\sin\left(\frac{kb}{2}\sin\theta\right)}{kb\sin\theta}  \right]\ \sin\left[ kR - \omega t\right].
+			</men>
+		</p>
+ 
+		<p><alert>Inensity in direction <m>\theta</m>:</alert></p>
+ 
+		<p> 
+			Intensity at in the direction <m>\theta</m> is proportional to time average of this fluctuating field.  Since  time averaging of <m>\sin^2(\omega t)</m> and <m>\cos^2(\omega t)</m> give <m>\frac{1}{2}</m>, after calculations, we end up with the following for intensity.
+			<men xml:id="eq-electric-intensity-in-direction-theta-single-slit-diffraction">
+				I(\theta)=\epsilon_0 c \left( \frac{bA}{R} \right)^2 \left[ \frac{\sin\beta}{\beta}  \right]^2,
+			</men>
+			where symbol  <m>\beta</m> stands for
+			<men xml:id="eq-beta-in-terms-of-theta-single-slit">
+				\beta = \frac{\pi b \sin\theta}{\lambda}.
+			</men>
+			Let us denote the intensity in the <m>\theta_0</m> direction by <m>I_0</m>. Since <m>sin x/x = 1 </m> when <m>x=0</m>, from Eq. <xref ref="eq-electric-intensity-in-direction-theta-single-slit-diffraction"/> we get
+			<men>
+				I_0 = \epsilon_0 c \left( \frac{bA}{R} \right)^2.
+			</men>
+			This helps us write intensity in direction <m>\theta</m> in terms of <m>I_0</m>. We rewrite Eq. <xref ref="eq-electric-intensity-in-direction-theta-single-slit-diffraction"/> as
+
+			<men xml:id="eq-electric-intensity-in-direction-theta-single-slit-final">
+				 I(\theta)  = I_0 \left( \frac{\sin\beta(\theta)}{\beta(\theta)}  \right)^2.
+			</men>
+		</p>
+	</introduction>
+	<subsection><title>Diffraction Maxima and Minima </title>
+		<p>
+			We now use the formula for intensity <xref ref="eq-electric-intensity-in-direction-theta-single-slit-final"/> to find the values of <m>\beta</m> in which intensity will have maxima and minima. After we get these <m>\beta</m> values, we use Eq. <xref ref="eq-beta-in-terms-of-theta-single-slit"/> to obtain angles <m>\theta</m> which give us the directions from the center of the slit.
+		</p>
+		<p><alert>Diffraction Minima</alert></p>
+		<p>
+			First we notice that when  <M>\beta = 0</M>, <m>sin\beta /\beta</m>  is not zero, but it is equal to 1.  For <m>\beta = m^\prime \pi</m> for non-zero integer <m>m</m>,  <m>\sin\beta /\beta</m>  is zero. Therefore, we have all the betas for which we will have zero intensity, which are the minima here. Let us give subscripts to these betas.
+			<men>
+				\text{Minima: }\ \beta_{m^\prime} = m^\prime \pi\ \ (m^\prime \text{ nonzero integer})
+			</men> 
+			Using Eq. <xref ref="eq-beta-in-terms-of-theta-single-slit"/>, these will corresponds to the following in terms of angles. Giving subscripts to these thetas we have. 
+			<men>
+				\frac{\pi b \sin\theta_{m^\prime}}{\lambda} = m^\prime \pi.
+			</men>
+			Rearranging this gives us the result we obtained by a trick in <xref ref="subsection-Minima-in-a-Single-slit-Diffraction-by-trick"/>. 
+			<men>
+				\text{Minima: }\ b\sin\theta =  m^\prime \lambda \ \ (m^\prime \text{ nonzero integer})
+			</men>
+		</p>
+		<p><alert>Diffraction Maxima</alert></p>
+		<p>
+			The intensity maxima do not occur  at points halfway between the minima.  Instead we must find <m>\beta</m> values at the maxima of intensity <m>I</m> by treating <m>I(\beta)</m> as a function of <m>\beta</m>. By setting the derivative  <m>dI/d\beta</m> to zero, we will get both maxima and minima, and since we already know the minima, we will identify the maxima by removing the minima from the list. <m>dB/d\beta=0</m> gives
+			<me>
+				\frac{1}{\beta^3}\sin(\beta) \left(\beta\cos\beta -\sin\beta \right) = 0.
+			</me>
+			Of the three factors, we can drop <m>\/\beta^3=0</m>, and ge the following conditions for maxima and minima.
+			<mdn>
+				<mrow xml:id="eq-extrema-of-intensity-sin-beta-equal-zero">\amp \sin\beta = 0.</mrow>
+				<mrow xml:id="eq-extrema-of-intensity-tan-beta-equal-beta">\amp  \beta\cos\beta -\sin\beta = 0.</mrow>
+			</mdn>
+			The first condition includes one maximum at  <m>\beta = 0</m>, and the rest of the betas are minima as discussed above.
+		</p>
+		<p>
+			The second equation corresponds to only maxima. You can verify that this is the case by using second derivative test. Now, you shoudl notice that, unlike solving <m>\sin\beta = 0</m>, solving <m>\beta\cos\beta -\sin\beta = 0</m> is no easy task. This equation  is a <term> transcendental equation</term>  and can be solved graphically.  <!-- In graphical method, you would plot the two sides of this equation independently on the same graph paper against the same range for <m>\beta</m> and places where the two  intersect coorespond to the solutiona of the equation. -->
+		</p>
+		<p> 
+			Before, we solve Eq. <xref ref="eq-extrema-of-intensity-tan-beta-equal-beta"/>, by dividing by <m>\cos\theta</m> we convert this equation to the following since it is easier to see when <m>\tan\beta</m> and <m>\beta</m> cross than when <m>beta\cos\beta -\sin\beta = 0</m>  and <m>\sin\beta</m> cross.
+			<me>
+				\tan\beta = \beta.
+			</me>
+			We now plot <m>\tan \beta</m> and <m>\beta</m> versus <m>\beta</m> as shown in <xref ref="fig-tan-beta-equal-beta-single-slit"/>. The approximate solutions for  the maxima can be read off from the graphs, for instance, 0, <m>\pm\frac{3}{2}\pi</m>, <m>\pm\frac{5}{2}\pi</m>, etc.  
+		</p>
+		<figure xml:id="fig-tan-beta-equal-beta-single-slit">
+			<caption>
+				 The graphical solution of <m>\tan\beta = \beta.</m>.
+			</caption>
+			<image source="./images/diffraction-of-light/tan-beta-equal-beta-single-slit.png" width="80%"/>
+		</figure>
+
+		<p>
+			A more precise and expanded graph gives solutions to be
+			<md>
+				<mrow> \text{Maxima: } \amp </mrow>
+				<mrow>  \beta_0  \amp = 0, </mrow>
+				<mrow> \beta_1 \amp = 1.4303\pi \approx \frac{3}{2}\pi,\ \  \beta_{-1} = -1.4303\pi \approx -\frac{3}{2}\pi,</mrow>
+				<mrow> \beta_2 \amp = 2.4590\pi  \approx \frac{5}{2}\pi,\ \  \beta_{-2} = -2.4590\pi \approx -\frac{5}{2}\pi,</mrow>
+				<mrow> \beta_3 \amp = 3.4707\pi  \approx \frac{7}{2}\pi,\ \  \beta_{-3} = -3.4707\pi  \approx -\frac{7}{2}\pi,\text{ etc.}</mrow>
+			</md>
+			The corresponding direction angles from the center of the slit will be
+			<mdn>
+				<mrow> \theta_m \amp =  \sin^{-1}\left(\frac{\beta_m}{\pi}\: \frac{\lambda}{b}\right)</mrow>
+				<mrow> \amp \approx 
+					\begin{cases}
+						0 \amp \text{ for } m = 0,\\
+						\pm \frac{2 m + 1}{2} \frac{\lambda}{b} \amp  \text{ for } m = 1, 2, 3, \cdots.
+					\end{cases}</mrow>
+			</mdn>
+ 
+		</p>
+
+		<p><alert>Intensity Plot</alert></p>
+		<p>
+			We can plot <m>I/I_0</m> versus <m>\beta</m> or versus <m>\theta</m>. When you plot <m>I/I_0</m> versus <m>\beta</m>, the minima will occur at non-zero integer multiples of <m>\pi</m>, which correspond to <m>\theta</m> between <m>-\pi/2</m> and  <m>\pi/2</m>.   
+		</p>
+		<p>
+			<xref ref="fig-intensity-vs-angle-plot-single-slit"/> shows three plots of <m>I/I_0</m> correponding to three cases of slit width compared to wavelength: <m>b=\lambda/2</m>, <m>b=\lambda</m>, and <m>b=2\lambda</m>.  The  <m>b=\lambda/2</m> is too narrow a slit to have diffraction minima and shows what to expect if you have very narrow opening. The <m>b=2\lambda</m> shows five diffraction maxima, and  <m>b=\lambda</m> is the borderline case which just shows noticeably pointed spread in intensity and no minima. 
+		</p>
+		<figure xml:id="fig-intensity-vs-angle-plot-single-slit">
+			<caption>
+				A plot of diffraction pattern for various slit widths. Only with slit width greater than the wavelength that we would observe diffraction maxima and minima.	  
+			</caption>
+			<image source="./images/diffraction-of-light/intensity-vs-angle-plot-single-slit.png" width="80%"/>
+		</figure>
+		<p>
+			It is worth noting that the intensity of the central peak is about 20 times   the intensity of the first side peaks. Evaluating <m>I/I_0</m> at the peaks, we find
+			<me>
+				I = 
+				\begin{cases}
+					I_0 \amp \text{central max}\\
+					\frac{4}{9\pi^2} I_0\approx 0.045 I_0 \amp \text{next max}\\
+					\frac{4}{25\pi^2} I_0\approx 0.016 I_0 \amp \text{next max}
+				\end{cases}
+
+			</me>
+		</p>
+		<p>
+			If you plotted <m>I/I_0</m> versus <m>\beta</m>, the central peak will go from <m>\beta=-\pi</m> to <m>\beta=\pi</m> at the base. That is the central peak covers a range of <m>\Delta\beta=2\pi</m>. The other peaks cover half as wide a range. For instance, the first side peak goes from <m>\beta=\pi</m> to <m>\beta=2\pi</m>, which gives it a range of  <m>\Delta\beta=\pi</m> only. 
+
+		</p>
+		<p>
+			These ranges in <m>\beta</m> values can be converted to corresponding ranges in <m>\theta</m> values. For the central peak, we will get the <m>\theta</m> ranage to be
+			<md>
+				<mrow>\amp \text{Central: }\ \theta \text{ from } -\sin^{-1}{\lambda/b} \text{ to } \sin^{-1}{\lambda/b},</mrow>
+				<mrow>\amp \text{Next peak on right: }\ \theta \text{ from } \sin^{-1}{\lambda/b} \text{ to } \sin^{-1}{2\lambda/b},\text{ etc.}</mrow>
+			</md>
+			For small angles, these become
+			<md>
+				<mrow>\amp \text{Central: }\ \theta \text{ from } - \lambda/b \text{ to }  \lambda/b \Longrightarrow \Delta\theta=2\lambda/b,</mrow>
+				<mrow>\amp \text{Next peak on right: }\ \theta \text{ from }  \lambda/b \text{ to }  2\lambda/b \Longrightarrow \Delta\theta=\lambda/b,\text{ etc.}</mrow>
+			</md>
+			Thus, in small angle case, we do see that the base of central peak is twice as wide as for other peaks. Although, width of a peak is defined at the half height, not at the base, we still get this two-to-one ratio between the width of the central maximum versus the widths of other peaks as far as width in <m>\beta</m> is concerned.
+		</p> 
+
+
+
+	</subsection>
+
+
+
+	<exercise xml:id="exercise-Widths-and-Positions-of-Diffraction-Through-a-Single-Wide-Slit"><title>Widths and Positions of Diffraction Through a Single Wide Slit</title>
+
+		<statement>
+			<p>
+				Monochromatic light of wavelength 530 nm passes through a horizontal single slit of width 1.5 <m>\mu</m>m in an opaque plate.  A screen of dimensions 2 m <m>\times</m> 2 m is 1.2 m  away from the slit.  (a) Which way is the diffraction pattern spread out on the screen?  (b) What are the directions of the minima? (c) What are the directions of the maxima? (d) How wide is the central bright fringe on the screen?  (e) How wide is the next bright fringe on the screen? 
+			</p>
+		</statement>
+		<hint><p>Use diffraction conditions.</p></hint>
+		<answer><p>(a) Vertically, (b)  <m>\pm 21^{\circ}</m>,  <m>\pm 45^{\circ}</m>, (c) 0, <m>\pm 30^{\circ}</m>,  <m>\pm 60^{\circ}</m>.</p></answer>
+		<solution><title>(a)</title>
+			<p> 
+				(a) Since the slit is horizontal, the diffraction pattern will be vertical.
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p> (b)
+				The diffraction minima from a single slit occur when <m>\beta = m \pi</m> for <m>m = \pm1,\: \pm 2,\: \cdots</m>.   In terms of the slit width <m>b</m> and the direction <m>\theta</m> vertically from the slit this condition becomes
+				<me>
+					\dfrac{\pi b \sin\:\theta_m}{\lambda} = m \pi,\ \ \Longrightarrow\ \ b\:\sin\:\theta_m = m\:\lambda,\ \ m = \pm1,\: \pm 2,\: \cdots.
+				</me>
+				Using this formula we obtain the following values for <m>\theta_1</m>, <m>\theta_2</m> and <m>\theta_3</m>.
+				<md>
+					<mrow> \amp  \theta_1 = \sin^{-1}\left(\dfrac{\lambda}{b} \right) = \sin^{-1}\left(\dfrac{530\:\text{nm}}{1500\:\text{nm}} \right) = 0.36\:\text{rad} = 21^{\circ},</mrow>
+					<mrow> \amp  \theta_2 = \sin^{-1}\left(\dfrac{2\lambda}{b} \right) = \sin^{-1}\left(\dfrac{2\times530\:\text{nm}}{1500\:\text{nm}} \right) = 0.78\:\text{rad} = 45^{\circ},</mrow>
+					<mrow> \amp  \theta_3 = \sin^{-1}\left(\dfrac{3\lambda}{b} \right) = \sin^{-1}\left(\dfrac{3\times530\:\text{nm}}{1500\:\text{nm}} \right)  = \sin^{-1}\left(>1\right).</mrow>
+				</md>
+				That means <m>\theta_3</m> does not exist.  
+				Therefore, the positions of the first and second order spots on the screen will be given by the <m>y</m>-coordinates,
+				<md>
+					<mrow> \amp  y_{\pm 1} =L\:\tan(\theta_{\pm1}) =(1.2\:\text{m})\:\tan(\pm 21^{\circ}) = \pm 46\:\text{cm},</mrow>
+					<mrow> \amp  y_{\pm 2} =L\:\tan(\theta_{\pm2}) =(1.2\:\text{m})\:\tan(\pm 45^{\circ}) = \pm 1.2\:\text{cm}.</mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(c)</title>
+			<p> 
+				(c) Maxima when <m>\beta = 0, \pm 1.4303\:\pi, \pm 2.4590\:\pi, \cdots</m>.  Therefore, the bright spots will be in the following directions.
+				<md>
+					<mrow> \amp  \theta_0 = 0^{\circ},\ \ \text{central bright spot},</mrow>
+					<mrow> \amp  \theta_1 = \sin^{-1}\left( \dfrac{1.4303\:\lambda}{b}\right) = 30^{\circ},</mrow>
+					<mrow> \amp  \theta_2 = \sin^{-1}\left( \dfrac{2.4590\:\lambda}{b}\right) = 60^{\circ}.</mrow>
+				</md>
+				The <m>y</m>-coordinates of these bright spots are
+				<me>
+					y_0 = 0,\ \ y_{\pm 1} = 69.3\:\text{cm},\ \  y_{\pm 2} = 2.1\:\text{m}.
+				</me>
+				Since the screen is only 2 m <m>x</m> 2 m, the second order spot will not be on the screen.
+				\item The width of the central bright spot will be between the <m>y_{-1}</m> and <m>y_{+1}</m> of the diffraction minima worked out in part (a).
+				<me>
+					\Delta y_{\text{central}} = y_{+1} - y_{-1} = 46\:\text{cm} - (-46\:\text{cm}) = 92\:\text{cm}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>(d)</title>
+			<p>
+				The <m>m=1</m> bright spot will be between <m>y_{+1}</m> and <m>y_{+2}</m> of the diffraction minima.  Therefore, the width of the <m>m=1</m> bright spot will be
+				<me>
+					\Delta y_{\text{m=1}} = \left[y_{+2} - y_{+1}\right]_{\text{min}} = 1.2\:\text{m} - (46\:\text{cm}) = 74\:\text{cm}.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+ 
+	<exercise xml:id="exercise-Width-of-a-Single-Slit-from-Width-of-Central-Maximum-on-Screen"><title>Width of a Single Slit from Width of Central Maximum on Screen</title>
+
+		<statement>
+			<p>
+				A monochromatic light of wavelength 632.8 nm incident on a single slit has central bright spot of width 5 cm at a screen 1.6 m away. Find the width of the slit.  
+
+			</p>
+		</statement>
+		<hint><p>you can get width of the central maximum from diffraction minima around the central maximum.</p></hint>
+		<answer><p>40.5  <m>\mu</m>m.</p></answer>
+		<solution>
+			<p>
+				From the given data we can find the direction to the <m>m=1</m> minimum.
+				<me>
+					\theta_1 = \tan^{-1} \left( \dfrac{2.5\:\text{cm}}{160\:\text{cm}} \right) = 0.895^{\circ}.
+				</me>
+				Therefore,
+				<me>
+					b\:\sin\:\theta_1 = 1\:\lambda,\ \ \Longrightarrow\ \ b = \dfrac{\lambda}{\sin\:\theta_1}.
+				</me>
+				Hence,
+				<me>
+					b = \dfrac{632.8\:\text{nm}}{\sin\:0.895^{\circ}} = 40.5\:\mu\text{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="exercise-Separation-of-Two-Wavelengths-in-a-Single-slit-Diffraction"><title>Separation of Two Wavelengths in a Single-slit Diffraction</title>
+
+		<statement>
+			<p>
+				A source of light having two wavelength 550 nm and 600 nm of equal intensity is incident on a slit of width 1.8  <m>\mu</m>m.  Find the separation of the <m>m</m> = 1 bright spots of the two wavelengths on a screen 30 cm away.  
+
+			</p>
+		</statement>
+		<hint><p>First find the directions of <m>m=1</m> maxima for each wavelength.</p></hint>
+		<answer><p> 2.1 cm.</p></answer>
+		<solution>
+			<p>
+				From the condition for the diffraction maxima we have <m>b\:\sin\:\theta = 1.4303\:\lambda</m> for <m>m=1</m> maximum. Therefore, we would get following angles for the two wavelengths.
+				<md>
+					<mrow> \amp \theta_{550} = \sin^{-1}\left(\dfrac{1.4303\times 550\:\text{nm}}{1800\:\text{nm}} \right) = 26^{\circ},</mrow>
+					<mrow> \amp \theta_{600} = \sin^{-1}\left(\dfrac{1.4303\times 600\:\text{nm}}{1800\:\text{nm}} \right) = 29^{\circ}.</mrow>
+				</md>
+				Since the distance to the screen in 30 cm the <m>y</m>-coordinates of the spots will be
+				<md>
+					<mrow>\amp y_{550} = 30\:\text{cm}\:\tan\:26^{\circ} = 14.6\:\text{cm},</mrow>
+					<mrow>\amp y_{600} = 30\:\text{cm}\:\tan\:29^{\circ} = 16.7\:\text{cm}.</mrow>
+				</md>
+				Therefore the peaks of the spots are separated by <m>\Delta y = 2.1</m> cm.
+			</p>
+		</solution>
+	</exercise>
+
+
+
+	<exercise xml:id="exercise-Intensity-of-Light-in-a-Particular-Direction-behind-a-Single-Slit"><title>Intensity of Light in a Particular Direction behind a Single Slit</title>
+
+		<statement>
+			<p>
+				A single slit of width 3.0 <m>\mu</m>m is illuminated by a sodium yellow light of wavelength 589 nm.  Find the intensity at a 15<m>^{\circ}</m> angle to the axis in terms of  the intensity of the central maximum which can be taken to be 1 unit.
+			</p>
+		</statement>
+		<hint><p>Use the intensity formula.</p></hint>
+		<answer><p><m>0.04</m></p></answer>
+		<solution>
+			<p>
+				The intensity in the diffraction pattern of a single slit is given by
+				<me>
+					I(\theta) = I(0)\:\left( \dfrac{\sin\:\beta(\theta)}{\beta(\theta)}\right)^2,
+				</me>
+				where <m>\beta(\theta) = \pi\:b\:\sin\:\theta/\lambda</m>.  Let us find <m>\beta</m> for the given angle.
+				<me>
+					\beta(15^{\circ}) = \dfrac{\pi \times 3.0\: \mu\text{m}\:\sin\:15^{\circ}}{0.589\:\mu\text{m}}=4.14\:\text{rad}.
+				</me>
+				Therefore, our answer will be
+				<me>
+					\dfrac{I(\theta)}{I(0)} = \left( \dfrac{\sin\: (4.14\:\text{rad} )}{4.14\:\text{rad}}\right)^2 = 0.04.
+				</me>
+
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+</section>

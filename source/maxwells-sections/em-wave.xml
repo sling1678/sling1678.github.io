@@ -1,0 +1,549 @@
+<section xml:id="Electromagnetic-Waves"><title> Electromagnetic Waves </title>
+	<introduction> 
+		<p>
+			One of the early successes of Maxwell's equations was the prediction  that light consists of electromagnetic waves. Maxwell came to  this conclusion by examining his equations in vacuum. He found that his equations simplify to wave equations for electric and magnetic fields with wave speed given by
+			<me>
+				v_s = \dfrac{1}{\sqrt{\epsilon_0\mu_0}}.
+			</me> 
+			Let's see what value you would get when you pluch in the values of <m>\epsilon_0</m> and <m>\mu_0</m> in SI units.
+			<md>
+				<mrow> v_s \amp = \dfrac{1}{\sqrt{\epsilon_0\mu_0}}</mrow>
+				<mrow> \amp = \dfrac{1}{\sqrt{8.852\times 10^{-12}\times 4\pi\times 10^{-7}} }</mrow>
+				<mrow> \amp =  3.0\times 10^{8}\text{ m/s},</mrow>
+			</md>
+			which is the value of speed of light, usually denoted by <m>c</m>, in vacuum. Maxwell noticed this coincidence and asserted that this mathematical result  implied that light is an electromagnetic wave.  At that time light was an independent field of study.  This conclusion unified the subjects of electricity, magnetism, and optics, and made optics a subfield of electricity and magnetism.
+		</p>
+		<p>
+			We will see below that electromagnetic wave in vacuum is a transverse wave where electric and magnetic field are perpendicular to each other and to the direction of wave. For instance, if wave is moving in <m>x</m> direction, then <m>\vec E</m> and <m>\vec B</m> will be pointed in directions in <m>yz</m>, plane. Furthermore, if <m>\vec E</m> is pointed towards positive <m>y</m> axis, then <m>\vec B</m> will be pointed towards <m>z</m> axis.
+			<me>
+				\text{Vector product  }\vec E \times \vec B \text{  points towards wave flow.}
+			</me> 
+		</p>
+
+	</introduction>
+
+
+	<subsection> <title>Hertz's Experiment For Production And Detection Of EM Waves </title>
+		<p>
+			After Maxwell predicted the existence of the electromagnetic waves in 1873, many scientists tried to produce them in the laboratory.  The first person to succeed was the German physicist <term> Heinrich Hertz </term> who produced and detected radio waves in 1888.  Hertz's equipment consisted of a radiator and a detector/receiver, a replica of which is shown in <xref ref="fig-hertz-expt"/>.
+		</p>
+
+		<figure xml:id="fig-hertz-expt">
+			<caption>
+				A replica of Heinrich Hertz'e apparatus for production and detection of radio waves. Photo courtesy of <url> http://www.sparkmuseum.com/HERTZ.HTM</url>.
+			</caption>
+			<image source="./images/maxwells/hertz-expt.png" width="80%"/>
+		</figure>
+
+ 
+		<p>
+			The radiator was a pair of one-meter rods with a spark gap in the center and two large spheres at the other ends of the wires to adjust the capacitance for resonance condition.  The rods were connected to an induction coil that supplied a high voltage.  The receiver was simply a loop of wire with a small gap.  When the rods of the radiator setup were given strong enough voltage, a spark was generated across the gap  and the current would oscillate back and forth across the gap and along the rods.
+		</p>
+		<p>
+			The receiver consisted of a loop of wire with a tiny gap.  When an electromagnetic waves passes through the area of the loop, the magnetic field in the electromagnet wave would cause the magnetic flux to change which would result in an induced EMF in the wire.  The induced EMF caused a spark across the tiny gap in the ring.  
+		</p>
+		<p>
+			Hertz conducted many experiments measuring the wavelength and speed of these waves and showed that they travel at the predicted speed of light.  He also showed that the radio waves  refracted and reflected similar to light thus lending a strong support to Maxwell's assertion that the light was an electromagnetic wave.  When his students asked what use can be made of this discovery, he apparently replied, <q>It's of no use whatsoever.  This is just an experiment that proves Maestro Maxwell was right - we just have these mysterious electromagnetic waves that we cannot see with the naked eye.  But they are there.</q>  But, here we are today about 100 years later with our cell phones and WiFi none of which would be possible without Hertz's discoveries. To honor Hertz the unit of frequency Hertz (Hz) is named after Heinrich Hertz.  One Hertz equals one cycle per second. 
+		</p>
+	</subsection>
+
+
+
+	<subsection><title> Plane Electromagnetic Waves </title>
+
+		<p>
+			To arrive at Maxwell's discovery we seek a solution of his equations in region of space that has no currents (<m>\vec J = 0</m>) or charges (<m>\rho = 0</m>), so-called empty space or vacuum. 
+			<mdn>
+				<mrow xml:id="eq-max-empty-1"> \amp \vec{\nabla}\cdot \vec E = 0 </mrow>
+				<mrow xml:id="eq-max-empty-2"> \amp \vec{\nabla}\cdot \vec B = 0 </mrow>
+				<mrow xml:id="eq-max-empty-3"> \amp \vec{\nabla}\times \vec E = -\frac{\partial \vec B}{\partial t} </mrow>
+				<mrow xml:id="eq-max-empty-4"> \amp \vec{\nabla}\times \vec B =\mu_0\epsilon_0 \frac{\partial \vec E}{\partial t} </mrow>
+			</mdn> 
+		</p>
+
+		<p>
+			For simplicity we seek EM waves moving in the <m>x</m> direction and electric and magnetic fields that are independent of <m>y</m> and <m>z</m>.  We make a further simplification: let the  electric field have only the <m>y</m>-component everywhere.  These choices leave only <m>E_y</m> and <m>\vec B</m> to be determined and their dependences are reduced to only two variables <m>x</m> and <m>t</m>.   
+			<me>
+				\text{Unknowns:}\ \ E_y(x,t)\ \ \text{and}\ \ \vec B(x,t).
+			</me>
+			Writing out the first Maxwell's equation, Eq. <xref ref="eq-max-empty-1"/>  for the empty space explicitly in the Cartesian coordinates we find that it is automatically satisfied by the assumed component and functional dependence of electric field.
+			<me>
+				\vec{\nabla}\cdot\vec E = \frac{\partial E_x}{\partial x} + \frac{\partial E_y}{\partial y} + \frac{\partial E_z}{\partial z} = 0.
+			</me>
+			We now look at the components of the third Maxwell's equation, the Faraday law given in Eq. <xref ref="eq-max-empty-3"/>, keeping only the non-zero terms.  
+			<md>
+				<mrow> \amp  x\text{-component:}\  \ \frac{\partial E_z}{\partial y}	- \frac{\partial E_y}{\partial z} 	  = -\frac{\partial B_x}{\partial t}		\Longrightarrow \frac{\partial B_x}{\partial t}	=0</mrow>
+				<mrow> \amp  y\text{-component:}\  \ \frac{\partial E_x}{\partial z}	- \frac{\partial E_z}{\partial x} 	  = -\frac{\partial B_y}{\partial t}		\Longrightarrow \frac{\partial B_y}{\partial t}	=0</mrow>
+				<mrow> \amp  z\text{-component:}\  \ \frac{\partial E_y}{\partial x}	- \frac{\partial E_x}{\partial y} 	  = -\frac{\partial B_z}{\partial t}		\Longrightarrow \frac{\partial E_y}{\partial x} = -\frac{\partial B_z}{\partial t}</mrow>
+			</md>
+			Since the <m>x</m>- and <m>y</m>-components of  <m>\vec B</m> are independent of time, they will not be in the wave solution. Therefore, we will set them to zero.
+			<me>
+				B_x = 0;\ \ \ B_y = 0.
+			</me>
+			This leaves only <m>E_y</m> and <m>B_z</m> non-zero. 
+			<me>
+				 \text{Unknowns left:}\ \ E_y(x,t)\ \ \text{and}\ \  B_z(x,t). 
+			</me>
+			Finally, we work out the components of the Ampere-Maxwell's law when  <m>\vec E</m>  and   <m>\vec B</m> are independent of <m>y</m> and <m>z</m>. 
+			<md>
+				<mrow> \amp  x\text{-component:}\  \ \frac{\partial B_z}{\partial y}	- \frac{\partial B_y}{\partial z} 	  = \mu_0 \epsilon_0 \frac{\partial E_x}{\partial t}		\Longrightarrow 0	=0\nonumber</mrow>
+				<mrow> \amp  y\text{-component:}\  \ \frac{\partial B_x}{\partial z}	- \frac{\partial B_z}{\partial x} 	  = \mu_0 \epsilon_0\frac{\partial E_y}{\partial t}		\Longrightarrow  \frac{\partial B_z}{\partial x} 	  = - \mu_0 \epsilon_0\frac{\partial E_y}{\partial t}</mrow>
+				<mrow> \amp  z\text{-component:}\  \ \frac{\partial B_y}{\partial x}	- \frac{\partial B_x}{\partial y} 	  = \mu_0 \epsilon_0\ \frac{\partial E_z}{\partial t}		\Longrightarrow 0 = 0</mrow>
+			</md>
+			where I have written <m>0 = 0</m> for the equations that are automatically satisfied.  These calculations show that <m>E_y</m> and <m>B_z</m> are not independent.  They are related by
+			<mdn>
+				<mrow xml:id="eq-ey-from-bz-1"> \amp  \frac{\partial E_y}{\partial x} = -\frac{\partial B_z}{\partial t} </mrow>
+				<mrow xml:id="eq-ey-from-bz-2"> \amp   \frac{\partial B_z}{\partial x} 	  = - \mu_0 \epsilon_0\frac{\partial E_y}{\partial t} </mrow>
+			</mdn>
+			These two equations show that you do not have to solve for both <m>E_y</m>  and <m>B_z</m>.  If you know one, you can get the other.  Therefore, the number of unknowns now becomes one.
+			<me>
+				\text{Unknowns: either}\ E_y \text{ or }\ B_z. 
+			</me>
+			We can eliminate <m>E_y</m>  or <m>B_z</m> from Eqs. <xref ref="eq-ey-from-bz-1"/> and <xref ref="eq-ey-from-bz-2"/> to obtain separate equations for <m>E_y</m>  and <m>B_z</m>, only one of which we need to solve.
+			<mdn>
+				<mrow xml:id="eq-em-wave-eq-e"> \amp \frac{\partial^2 E_y}{\partial x^2} = \mu_0\epsilon_0 \frac{\partial^2 E_y}{\partial t^2}</mrow>
+				<mrow xml:id="eq-em-wave-eq-b"> \amp \frac{\partial^2 B_z}{\partial x^2} = \mu_0\epsilon_0 \frac{\partial^2 B_z}{\partial t^2} </mrow>
+			</mdn>
+			Suppose we choose to solve for <m>E_y</m>. A simple solution of Eq. <xref ref="eq-em-wave-eq-e"/> is a  traveling wave along the <m>x</m>-axis with a speed <m>v</m>.
+			<men xml:id="eq-soln-ey-wave-0">
+				E_y(x,t) = E_0\cos\left[ k(x \pm vt)  \right]. 
+			</men>
+			Here the minus sign corresponds to a wave moving in the direction of the positive <m>x</m>-axis and the plus sign to the wave moving towards the negative <m>x</m>-axis.  This solution must satisfy Eq. <xref ref="eq-em-wave-eq-e"/>.  Plugging into Eq. <xref ref="eq-em-wave-eq-e"/> we immediately find that the speed of the wave has a particular value.
+			<me>
+				v = \frac{1}{\sqrt{\mu_0\epsilon_0}}.
+			</me>
+			From the known values of  <m>\mu_0</m> and  <m>\epsilon_0</m> we find that the speed <m>v</m> has the following value: 
+			<me>
+				v = \frac{1}{\sqrt{\mu_0\epsilon_0}} = 3\times 10^8\: \text{m/s} = c,
+			</me>
+			which is equal to the speed of light in vacuum!  The speed of light in vacuum is also denoted by the small letter  <m>c</m>.  Hence, the electric field wave travels at the speed of light.  A similar argument for the magnetic field gives the same conclusion for the magnetic field wave.  Hence, Maxwell's equations in vacuum naturally predict that the waves of electric and magnetic fields  travel at the speed of light.  
+		</p>
+		<p>
+			When writing the solution in the form given in Eq. <xref ref="eq-soln-ey-wave-0"/> I have assumed that the electric field at the origin at <m>t=0</m> has an amplitude <m>E_0</m>.  To allow for other possibilities for the value at the origin at <m>t=0</m> you can include a phase constant <m>\phi</m> in the argument of the cosine.
+			<men xml:id="eq-soln-ey-wave-1">
+				E_y(x,t) = E_0\cos\left[ k(x \pm vt)  +\phi\right]. 
+			</men>
+			For simplicity let us drop <m>\phi</m> and consider only the waves moving towards the positive <m>x</m>-axis.  That is, we now look at <m>E_y</m> given by the following
+			<men xml:id="eq-soln-ey-wave-2">
+				E_y(x,t) = E_0\cos\left[ k(x - vt)\right]. 
+			</men>
+			What is the associated magnetic field wave?  If the solution of <m>E_y</m> has this form, then, from Eqs. <xref ref="eq-ey-from-bz-1"/> and <xref ref="eq-ey-from-bz-2"/>, the magnetic field component <m>B_z</m> must obey
+			<mdn>
+				<mrow number="eq-ey-from-bz-3"> \amp   \frac{\partial B_z}{\partial t} =- k E_0\sin\left[ k(x - vt)\right] </mrow>
+				<mrow xml:id="eq-ey-from-bz-4"> \amp   \frac{\partial B_z}{\partial x} 	  = \mu_0 \epsilon_0\; k \; v \sin\left[ k(x - vt)\right]</mrow> 
+			</mdn>
+			These two equations say that <m>B_z</m> has the same form as <m>E_y</m> 
+			<me>
+				B_z(x,t) = B_0\cos\left[ k(x - vt)  \right],
+			</me>
+			with the amplitude <m>B_0</m> given by
+			<me>
+				B_0 = \frac{E_0}{v}. 
+			</me>
+			Thus, we arrive at the solution of the Maxwell's equations that corresponds to an electromagnetic wave traveling towards the positive <m>x</m>-axis. There are two waves, one for <m>E_y</m> and the other for <m>B_z</m> that travel at speed  <m>v=1/\sqrt{\mu_0\epsilon_0}</m> and are described by the following functions.		
+			<mdn>
+				<mrow xml:id="eq-plane-wave-Ey"> \amp  E_y(x,t)  = E_0\cos\left[ k(x - vt)  \right]</mrow>
+				<mrow xml:id="eq-plane-wave-Bz"> \amp B_z(x,t)  = \frac{E_0}{v}\cos\left[ k(x - vt)  \right]</mrow>
+			</mdn>
+		</p>
+	</subsection>
+
+	<subsection><title>Wavelength and Wavenumber</title>
+		<p>
+			This solution is also called the <term> plane wave solution</term>. The meaning of the constant <m>k</m>  can be gleaned by thinking of <m>E_y</m> as a function of <m>x</m> for a fixed <m>t</m>, say <m>t=0</m>.  The distance <m>\Delta x = \lambda</m>  over which the wave repeats itself is called the <term>wavelength</term> of the wave.
+			<me>
+				E_y(x,0) =E_y(x+\lambda,0)\ \ \Longrightarrow\ \ E_0\cos\left[ k\; x \right] = E_0\cos\left[ k\; (x+\lambda)  \right].
+			</me>
+			This equation can be stratified if <m>k</m>  and <m>\lambda</m>  are related in a particular way. 
+			<me>
+				k\lambda = 2n\pi,\ \ n = 0, \pm 1, \pm 2, \cdots
+			</me>
+			Since  <m> \lambda \ne 0</m>, the smallest <m>|n|</m> is  1 and we write  the relation between the wavenumber and the wavelength as
+			<me>
+				k = \frac{2\pi}{\lambda}.
+			</me>
+			The SI unit of wavelength is meter and that of the wave number radians per meter.  The constant <m>k</m> is called the <term>wavenumber</term> and corresponds to the number of wavelengths (meters) of a wave  that can fit in a distance of <m>2\pi</m>  meters.
+		</p>
+	</subsection> 
+	<subsection><title> Time Period and Frequency</title> 
+		<p>
+			In a plane wave, electric field at any one space point oscillates sinusoidally between <m>+E_0</m> and <m>-E_0</m>.   For instance, if you place a detector at the origin, the <m>y</m>-component of the electric field on the detector will oscillate   between the values <m>+E_0</m> and <m>-E_0</m>.  The time period <m>T</m> of oscillations is obtained by looking at the repeat time for these oscillations. 
+			<me>
+				E_y(0,t) =E_y(0,t+T)\ \ \Longrightarrow\ \ E_0\cos\left[ k\;v\;t  \right] = E_0\cos\left[ k\;v\;(t+T))  \right].
+			</me>
+			Therefore,
+			<me>
+				kvT = 2n\pi,\ \ n = 0, \pm 1, \pm 2, \cdots
+			</me>
+			Since <m>T \ne 0</m>, the smallest repeat time is the time period.
+			<me>
+				T= \frac{2\pi}{kv} = \frac{\lambda}{v}. 
+			</me>
+			The <term> frequency </term> <m>f</m> of oscillations is the number of oscillations that occur in a unit time.  Therefore, the frequency <m>f</m> is equal to the inverse of time period <m>T</m>. This gives us the fundamental wave relation for the electromagnetic wave also.
+			<me>
+				\lambda f = v.
+			</me>
+			Often an <term> angular frequency </term> <m>\omega</m>  defined as follows is more useful in calculations.
+			<me>
+				\omega = 2\pi f.
+			</me>
+			The wave functions are commonly written using <m>k</m> and <m>\omega</m> rather than <m>k</m> and <m>v</m> or some other constants.  For instance, the <m>E_y</m> electric field traveling towards the positive <m>x</m>-axis given above will be written as
+			<me>
+				E_y(x,t) = E_0 \cos(kx-\omega t).
+			</me>
+			Another common practice is to write the wave function to show the wavelength and frequency in the formula itself.
+			<me>
+				E_y(x,t) = E_0 \cos\left(2\pi\frac{x}{\lambda}-2 \pi f t\right).
+			</me>
+		</p>
+	</subsection>
+
+
+	<subsection> <title>Transverse Nature of Electromagnetic Waves in Vacuum </title>
+		<p>
+			In the above subsection, we looked at a particular direction of wave.  We found that when the wave was traveling towards the positive <m>x</m>-axis with  the electric field  pointed towards the positive <m>y</m>-axis and the magnetic field vector pointed towards the positive <m>z</m>-axis. This wave has the directions of the electric and magnetic fields in a plane perpendicular to the direction of the propagation of the wave as shown in <xref ref = "fig-em-wave-pic"/>.   This type of wave is called a <term>transverse wave</term> since the oscillations of the wave occur in the plane normal to the propagation.  This is a general property of the electromagnetic waves in vacuum and in most materials, but not in all materials.
+		</p>
+
+		<figure xml:id="fig-em-wave-pic">
+			<caption>
+				A plane transverse electromagnetic wave traveling in the <m>+x</m> direction. Solid lines are electric field <m>\vec E</m> and dashed lines the magnetic field <m>\vec B</m>.  The direction of the vector fields at any point are perpendicular to each other and to the direction of the wave propagation.
+			</caption>
+			<image source="./images/maxwells/em-wave-pic.png" width="80%"/>
+		</figure>
+
+		<p>
+			To illustrate the general nature of the electromagnetic wave in vacuum, let us examine the relation between electric and magnetic waves traveling in an arbitrary direction.  Let the arbitrary direction be denoted by a unit vector <m>\hat u</m> in a three-dimensional space.  Consider an electric field vector wave traveling in vacuum  given by the following function.
+			<me>
+				\vec E(\vec r, t) = \vec E_0 \cos(k\hat u\cdot \vec r - k c t+\phi),
+			</me> 
+			where <m>\vec E_0</m> is a constant vector with fixed magnitude and direction, <m>k</m> the wavenumber and <m>c</m> the speed.  We are writing <m>kc</m> for <m>\omega</m> here to simplify the calculation below. The associated magnetic field vector wave will be
+			<me>
+				\vec B(\vec r, t) = \vec B_0 \cos(k\hat u\cdot \vec r - k c t+\phi),
+			</me> 
+			Now, we use the Maxwell's equations to find the relation between the directions of the three vectors, <m>\vec E_0</m>, <m>\vec B_0</m> and <m>\hat u</m>.   Making the necessary calculations on the Faraday's law in the differential form leads to
+			<me>
+				-\hat u \times \vec E_0 = c \vec B_0.
+			</me>
+			This says that <m>\vec B_0</m> is perpendicular to the plane of <m>\vec E_0</m> and <m>\hat u</m>. A similar calculation using the Ampere-Maxwell's  law gives
+			<me>
+				\hat u \times \vec B_0 = -\frac{1}{c}\vec E_0.
+			</me>
+			This says that <m>\vec E_0</m> is perpendicular to the plane of <m>\vec B_0</m> and <m>\hat u</m>. The two results leads to an unmistakeable conclusion that the three vectors <m>\vec E_0</m>, <m>\vec B_0</m> and <m>\hat u</m> are mutually perpendicular to each other. 
+			<me>
+				\vec E_0 \perp \vec B_0;\ \ \hat u \perp\vec E_0;\ \ \hat u\perp\vec B_0.
+			</me>
+			You can show that the direction of propagation <m>\hat u</m> is in the direction of the vector obtained from the cross product <m>\vec E_0\times\vec B_0</m>.
+			<me>
+				\text{Direction of propagation = The direction of }\ \vec E_0\times\vec B_0.
+			</me>
+
+		</p>
+	</subsection>
+
+
+
+	<subsection> <title>The Electromagnetic Spectrum </title>
+		<p>
+			A wide range of electromagnetic waves have been either found in nature or produced in the laboratory.  The collection of all EM waves is called the electromagnetic spectrum.  They are usually categorized in various sub-ranges or bands as shown in <xref ref="fig-em-spectrum"/>.  Note the all important visible light occupies a minuscule band compared to the available EM spectrum.
+		</p>
+
+		<figure xml:id="fig-em-spectrum">
+			<caption>
+				The electromagnetic spectrum.  The names of the bands and corresponding frequencies are given below the double line.  Above the band some representative wavelengths in vacuum are given.  Note that the boundaries between different bands are arbitrary.
+			</caption>
+			<image source="./images/maxwells/em-spectrum.png" width="80%"/>
+		</figure>
+ 
+		<p>
+			The frequency of an electromagnetic wave is same as the frequency of vibrating charges that produce it.  Hertz's waves had a frequency of about <m>10^6</m> cycles per second.  These waves are now called radio waves.  The visible light is also an electromagnetic wave but with considerably higher frequency than the radio waves.  Visible light have frequency approximately between <m>4 \times 10^{14}</m> Hz (red) and  <m>7.5 \times 10^{14}</m> Hz (violet) compared to the radio waves that have frequency less than <m>10^8</m> Hz.
+		</p>
+		<p> 
+			The electromagnetic waves of frequency as high as  <m>10^{10}</m> Hz are usually produced in the laboratory using a similar setup used by Hertz.  It consists of an antenna upon which an oscillating voltage is applied which radiates electromagnetic waves.  The EM waves of higher frequencies are not produced in the laboratory  by this method.  You can see from the fundamental wave relation that a higher frequency would correspond to a lower wavelength. To produce a visible light of frequency <m>4 \times 10^{14}</m> Hz, you would need  an antenna less than one micrometer in length and a circuitry that can oscillate at <m>4 \times 10^{14}</m> Hz, both of which are not currently available.  
+		</p>
+		<p> 
+			The electromagnetic waves of higher frequencies are instead generated in natural processes of emission from atoms, molecules and nuclei.  When an atom makes a transition from a higher energy state of energy <m>E_1</m> to a lower energy state of energy <m>E_2</m>, it emits a particle of light, called <term> photon</term>, corresponding to the frequency <m>f</m> of light given by the following energy balance equation:
+			<me>
+				h f  = E_1-E_2,
+			</me>
+			where <m>h</m>  is the <term> Planck constant</term>.  A schematic picture of the production of light in an atomic energy level transition is shown in <xref ref="fig-photon-emission"/>.
+		</p>
+ 
+		<figure xml:id="fig-photon-emission">
+			<caption>
+				The atomic transition from a higher state to a lower state is accompanied by the emission of a particle of light called photon.
+			</caption>
+			<image source="./images/maxwells/photon-emission.png" width="40%"/>
+		</figure>
+		
+	</subsection>
+
+
+	<subsection><title> Energy and Intensity of EM Waves</title>
+ 
+		<p>
+			Traveling waves transport energy without actually moving particles. Therefore, you can think of an electromagnetic wave in terms of the flow of the electromagnetic energy.  Consider the electromagnetic plane wave solution for electric and magnetic field waves in vacuum we found above.  For a wave traveling in the direction of the positive <m>x</m>-axis with the phase constant <m>\phi=0</m> we had the following for the <m>E_y</m> and <m>B_z</m> waves.
+			<md>
+				<mrow> \amp  E_y(x,t)  = E_0\cos\left[ k(x - ct)  \right]</mrow>
+				<mrow> \amp  B_z(x,t)  = \frac{E_0}{c}\cos\left[ k(x - ct)  \right] </mrow>
+			</md>
+			The other components of the electric and magnetic fields are zero in this solution.  The energy per unit volume, or energy density (<m>u</m>), contained in these waves can be calculated by summing the energy in the electric and magnetic fields.
+			<mdn>
+				<mrow number="no"> u(x,t) \amp = u_E + u_B = \frac{1}{2}\epsilon_0\vec E\cdot\vec E +  \frac{1}{2\mu_0}\vec B\cdot\vec B.</mrow>
+				<mrow xml:id="eq-em-energy-den-1"> \amp = \epsilon_0 E_0^2\cos^2\left[ k(x - ct)  \right] 
+				</mrow>
+			</mdn>
+			Thus, the energy density moves along with the electric and magnetic waves in a similar manner as the waves themselves except that the wavelength is now half as much and the frequency twice as much because of the square of the cosine, which can be converted to a cosine by the double-angle trig formula.  One might say that you also have a wave of electromagnetic energy density.
+		</p>
+		<p>
+			We can figure out the rate of the transport of energy by considering what happens in a small time interval <m>\Delta t</m>.  As shown in <xref ref="fig-em-wave-energy-1"/> the energy contained in a box of length <m>c\Delta t</m> and cross-sectional area <m>A</m> will pass through the cross-sectional plane in the interval <m>\Delta t</m>.
+		</p>
+		<figure xml:id="fig-em-wave-energy-1">
+			<caption>
+				The energy <m>uAc\Delta t</m> contained in the electric and magnetic fields of the electromagnetic wave in the the volume <m>Ac\Delta t</m> will pass through the area <m>A</m> in time <m>\Delta t</m>.
+			</caption>
+			<image source="./images/maxwells/em-wave-energy-1.png" width="70%"/>
+		</figure>
+
+		<p>
+			<me>
+				\text{The energy passing through area }A \text{ in time }\Delta t = u\times \text{volume} = u A c \Delta t.
+			</me>
+			The energy per unit area per unit time passing through plane perpendicular to the wave, called the <term> power flux </term> and denoted by <m>S</m>,  can be calculated by dividing the energy by the area <m>A</m> and the time interval <m>\Delta t</m>.
+			<me>
+				\text{Power flux,}\ S = \frac{\text{Energy passing area }A \text{ in time }\Delta t}{A\Delta t} = u\; c.
+			</me>
+			The flux of power at any place also fluctuates in time as can be seen by substituting u from Eq. <xref ref="eq-em-energy-den-1"/>.
+			<me>
+				S(x,t) = c\epsilon_0 E_0^2\cos^2\left[ k(x - ct)  \right]
+			</me>
+			Since the frequency of visible light is very high, of the order of <m>10^{14}</m> Hz, the power flux for visible light through any area will be an extremely rapidly varying quantity.  Most measuring devices  as well as our eyes  cannot respond so quickly and in most situations only an average over many cycles is observed.  The quantity obtained by time-averaging the power flux is called the <term> intensity</term> or <term> irradiance</term> <m>I</m> of the electromagnetic wave.
+			<me>
+				\text{Intensity,}\ I = \left\langle S \right\rangle_{\text{time-average}}.
+			</me>
+			The time-averaging of power flux is easily obtained by noting the following mathematical result. (Here <m>T</m> is one period.) 
+			<me>
+				\frac{1}{T}\int_{0}^{T}\ \cos^2\left(2\pi\frac{t}{T} \right) dt.
+			</me>
+			Hence, the intensity of light moving at speed c in vacuum is found to be
+			<me>
+				I = \langle S(x,t)\rangle =\frac{1}{2} c\epsilon_0 E_0^2,
+			</me>
+			where the angle brackets <m>\langle\cdots\rangle</m> stands for the time averaging operation.
+		</p>
+ 
+ 		<remark><title> Poynting Vector </title>
+ 			<p>
+ 				Note that the amount of energy crossing a given area also depends upon the orientation of the area relative to the direction of light.  To take the direction into account a power flux vector  <m>\vec S</m>, also called the <term> Poynting vector</term>,  is introduced by the following defining equation.
+				<me>
+					\vec S = \frac{1}{\mu_0}\vec E\times \vec B.
+				</me>
+				The cross-product of  <m>\vec E</m>  and   <m>\vec B</m> points in the direction of the propagation of the electromagnetic wave.  Therefore, the Poynting vector <m>\vec S</m>  points in the direction of the propagation of the electromagnetic wave.
+			</p>
+			<p>
+				We can write the power flux through any arbitrarily oriented area and arbitrary electromagnetic wave in terms of the Poynting vector. Consider dividing the surface into small patches of area vector <m>\Delta\vec A</m>. Now, we calculate the power through each patch, and then sum  up the contributions.  Let <m>\vec S</m>  be the average Poynting vector over a patch of area vector <m>\Delta\vec A</m>, then the power crossing this area elements  will be given by the projection of  <m>\vec S</m> on <m>\Delta\vec A</m>  times the area, which can be written in terms of  the scalar product of   the two vectors.
+				<me>
+					\text{Power through the area element} = \vec S\cdot \Delta\vec A.
+				</me>
+				The total power crossing any surface is equal to the sum of the contributions from all patches.  The sum over infinitesimal patches leads to the following integral formula, which is  the integral for the flux of vector fields.
+				<me>
+					\text{Power through any surface} = \int_{\text{surface}}\vec S\cdot d\vec A.
+				</me>
+			</p>
+ 		</remark>
+		
+	</subsection>
+	<subsection><title> Momentum of EM Wave and Radiation Pressure</title>
+		<p>
+			Imagine an electromagnetic wave incident on a metal.  The electrons of the surface atoms will be accelerated by the electric field in the wave. In the case of the electromagnetic wave with electric field pointed towards positive <m>y</m> axis, electrons will accelerate in the negative <m>y</m> direction.  At that instant, magnetic field of EM wave would be in the positive <m>z</m>-axis. This will result in a magnetic force on the electrons in the direction of the positive <m>x</m>-axis, which is the direction of the electromagnetic wave. Thus, the metal will experience a net force in the direction of the electromagnetic wave.
+		</p>
+		<p>
+			Maxwell calculated force per unit area, called the <term> radiation pressure</term>, <m>P_{\text{rad}}</m>,  applied by an electromagnetic wave on a perfectly absorbing surface and found it to be equal to the energy density of the wave.  
+			<men xml:id="eq-rad-pres-1">
+				P_{\text{rad}} = u.\ \ \text{(Perfect abosorber)}
+			</men>
+
+		</p>
+		<p>
+			If the material is perfectly reflecting such as the metal surface and if the incidence is along the normal to the surface, then the pressure exerted will be twice as much since the momentum direction will reverse upon reflection and conservation of momentum will imply
+			<men xml:id="eq-rad-pres-2">
+				P_{\text{rad}} = 2u. \ \ \text{(Perfect reflector)}
+			</men>
+			Do not confuse <m>P_{\text{rad}}</m>  with the power.  Let's see if the units are right.
+			<me>
+				[u] = \frac{\text{J}}{\text{m}^3} = \frac{\text{N.m}}{\text{m}^3} = \frac{\text{N}}{\text{m}^2} = \text{unit of pressure!}
+			</me>
+			Equations <xref ref="eq-rad-pres-1"/>  and <xref ref="eq-rad-pres-2"/>  give instantaneous pressure, but since  energy density of EM wave oscillates rapidly, we are usually interested in the time-averaged quantity, as was the case with our interest in intensity. The time average of radiation pressure can be expressed in terms of intensity also.
+			<me>
+				P_{\text{ave}}^{\text{rad}} = 
+					\begin{cases}
+					I/c \amp \quad \text{Perfect absorber}\\
+					2I/c \amp \quad \text{Perfect reflector}
+					\end{cases}
+			</me>
+		</p>
+	</subsection>
+
+
+	<exercise xml:id="ex-Compute-Various-Properties-of-an-Electromagnetic-Plane-Wave-Given-its-Electric-Field"><title> Compute Various Properties of an Electromagnetic Plane Wave Given its Electric Field </title>
+		<statement>
+			<p>
+				The electric field of an electromagnetic wave traveling in vacuum is described by the following wave function.
+				<me>
+					\vec E = \hat j\  (5\ \textrm{N/C})\cos\left(k\: x - 6\times 10^{9}\: t + 0.4 \right)
+				</me>
+				where <m>k</m> is the wavenumber in rad/m, <m>x</m> in m, <m>t</m> in sec. Find the following quantities.
+			</p>
+			<p>
+				<ol label="(a)">
+					<li> Amplitude.</li>
+					<li> Frequency.</li>
+					<li> Wavelength.</li>
+					<li> Phase constant.</li>
+					<li> The direction of the travel.</li>
+					<li> The associated magnetic field wave.</li>
+					<li> The Poynting vector of the electromagnetic wave.</li>
+					<li> The intensity of the electromagnetic wave.</li>
+				</ol>
+ 
+			</p>
+
+		</statement>
+		<hint> <p>  Use definitions. </p> </hint>
+		<answer> 
+			<p> 
+				(a) <m>5\ \textrm{N/C} </m>,
+				(b) <m> 3.77\times 10^{10}\:\textrm{Hz}</m>,
+				(c) <m> 7.96\:\textrm{mm}</m>,
+				(d) <m> 0.4\text{ rad}</m>,
+				(e) positive <m>x</m>-axis,
+				(f) <m> \vec B = \hat k\  \left(\dfrac{5\ \textrm{N/C}}{3\times 10^{8}\:\textrm{m/s}}\right)\cos\left(0.8\text{ mm}^{-1}\: x - 6\times 10^{9}\text{ s}^{-1}\, t + 0.4 \right)</m>,
+				(g) <m> \hat i\ \:\dfrac{1}{\mu_0}\: c\: E_0^2\:\cos^2\left(k\: x - 6\times 10^{9}\: t + 0.4 \right) </m>, where <m>E_0 = 5\ \textrm{N/C}</m> and <m>c=3\times 10^8\:\textrm{m/s}</m>,
+				(h) <m> 33.2\:\textrm{mW/m}^2</m>.
+  			</p> 
+  		</answer>
+		<solution> 
+			<p>
+				 We will read off the answer from the given expression for the wave function, <m>\vec E = \hat j\  (5\ \textrm{N/C})\cos\left(k\: x - 6\times 10^{9}\: t + 0.4 \right)</m>
+				<ol label="(a)">
+					<li> 
+						<p>
+							Amplitude,  <m>E_0 = 5\ \textrm{N/C}</m>.
+						</p>
+					</li>
+					<li> 
+						<p>
+							Frequency, <m>f</m> = <m>2\pi\times 6\times 10^{9} = 3.77\times 10^{10}\:\textrm{Hz}</m>.
+						</p>
+					</li>
+					<li> 
+						<p>
+							Wavelength = <m>\dfrac{c}{f} = 7.96\:\textrm{mm}</m>.
+						</p>
+					</li>
+					<li> <p> Phase constant = <m>0.4\text{ rad}</m>. </p></li>
+					<li> 
+						<p>
+							The direction of the travel is towards the positive <m>x</m>-axis.
+						</p>
+					</li>
+					<li> 
+						<p>
+							The associated magnetic field wave.  The argument of the oscillating part will be same for the <m>\vec E</m> and <m>\vec B</m> fields.  The magnitude of the <m>\vec B</m> field will be <m>1/c</m> of the magnitude of the <m>\vec E</m> field and the direction of the <m>\vec B</m> will be perpendicular to the direction of the <m>\vec E</m> field.  Using the right-hand rule, we deduce that, for a wave moving towards the positive <m>x</m>-axis, when <m>E</m>-field is pointed towards the <m>y</m>-axis, the electric fiend will be pointed towards the <m>z</m>-axis.  Therefore, we will have the following for the magnetic field wave.
+							<me>
+								\vec B = \hat k\  \left(\dfrac{5\ \textrm{N/C}}{3\times 10^{8}\:\textrm{m/s}}\right)\cos\left(k\: x - 6\times 10^{9}\: t + 0.4 \right),
+							</me>
+							where <m>k = 2\pi/\lambda = 0.8\text{ mm}^{-1}</m> with <m>\lambda = 7.96\text{ mm}</m> as found above.
+						</p>
+					</li>
+					<li> 
+						<p>
+							The Poynting vector of the electromagnetic wave will be given by
+							<me>
+								\vec S = \dfrac{1}{\mu_0}\: \vec E\times \vec B = \hat i\ \:\dfrac{1}{\mu_0}\: c\: E_0^2\:\cos^2\left(k\: x - 6\times 10^{9}\: t + 0.4 \right),
+							</me>
+							where <m>E_0 = 5\ \textrm{N/C}</m> and <m>c=3\times 10^8\:\textrm{m/s}</m>.
+						</p>
+					</li>
+					<li> 
+						<p>
+							The intensity of the electromagnetic wave is the time-average of the power flux <m>S</m> given by the magnitude of <m>\vec S</m>. We find
+							<me>
+								I = \dfrac{1}{2}\:c\:\epsilon_0\:E_0^2 = 33.2\:\textrm{mW/m}^2.
+							</me>
+						</p>
+					</li>
+				</ol>
+			</p>
+		</solution>
+	</exercise>
+
+
+
+
+
+	<exercise xml:id="ex-Wavelength-of-a-Radio-Wave"><title> Wavelength of a Radio Wave </title>
+		<statement>
+			<p>
+				A radio wave (which is an EM wave) has a frequency of <m>12 MHz</m>.  What is its wavelength in vacuum?
+			</p>
+
+		</statement>
+		<hint> <p> Definition.  </p> </hint>
+		<answer> <p>  <m>25 m</m>. </p> </answer>
+		<solution> 
+			<p>
+				Since speed of the wave is <m> c = 3\times 10^{8}\:\textrm{m/s}</m>, we will get
+				<me>
+					\lambda = \dfrac{c}{f} = \dfrac{3\times 10^{8}\:\textrm{m/s}}{12\times 10^{6}\:\textrm{Hz}} = 25\:\textrm{m}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+
+
+	<exercise xml:id="ex-Radiation-Pressure-from-a-Laser-Beam"><title> Radiation Pressure from a Laser Beam</title>
+		<statement>
+			<p>
+				A laser light of power <m>3\text{ W}</m> is spread evenly across the cross-section of the beam of diameter <m>2\text{ mm}</m>.  When the laser light is incident on a perfectly reflecting surface of a spherical particle of diameter <m>1.5 \text{ mm}</m> in vacuum, the particle is observed to be suspended in space. Find the density of the particle.
+			</p>
+
+		</statement>
+		<hint> <p>  The force due to the radiation pressure is able to balance the force of gravity. </p> </hint>
+		<answer> <p>  <m>0.2\; \text{kg/m}^3</m>. </p> </answer>
+		<solution> 
+			<p>
+				Here, the force due to the radiation pressure is able to balance the force of gravity.  Let <m>\rho</m>  be the desired density of the spherical particle, <m>R</m> its radius,   <m>A</m> the area of cross-section, and <m>V</m> its volume.  Let <m>P</m> be the radiation pressure at the site of the particle.  The balancing of forces yields the following relation.
+				<me>
+				 	P A = \rho V g.
+				</me>
+				Here the radiation pressure acts on the cross-section area of the particle, which is simply a circle of radius <m>R</m>, and the volume of the particle is just the volume of a sphere.
+				<me>
+				 	P \pi R^2 = \rho \frac{4}{3}\pi R^3 g.
+				</me>
+				Hence the required density is
+				<me>
+				 	\rho = \frac{3}{4}\; \frac{P}{gR}.
+				</me>
+				Now, we put the numerical values given here.
+				<md>
+					<mrow> \amp R = 0.75\; \text{mm} = 7.5\times 10^{-4}\; \text{m} \nonumber</mrow>
+					<mrow> \amp g = 9.81\; \text{m/s} </mrow>
+					<mrow> \amp P =2\frac{I}{c} = 2\times \frac{3\; \text{W}}{\pi\left( 1.0\times 10^{-3}\; \text{m}\right)^2 }\times \frac{1}{3\times 10^8\; \text{m/s}}  = 2\times 10^{-3}\; \text{Pa}.</mrow>
+				</md>
+				Hence, the density of the material of the particle is
+				<me>
+					\rho = 0.2\; \text{kg/m}^3.
+				</me>
+				It is interesting to compare the density found to the density of aluminum, a light metal, which has the density  <m>2700 \text{ kg/m}^3</m>.  Clearly, one will need a very powerful laser to suspend an ordinary material.
+			</p>
+		</solution>
+	</exercise>
+
+ 
+
+ 
+
+</section>

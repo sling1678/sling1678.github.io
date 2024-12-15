@@ -1,0 +1,396 @@
+<section xml:id="sec-Photoelectric-Effect"><title> Photoelectric Effect</title>
+	<introduction>
+		<p>
+			In 1887 Heinrich Hertz noticed that the electric discharge across a gap between a pointed copper wire and a brass sphere was enhanced if the metals were exposed to ultraviolet light. This implied that more electrons were released by the application of the ultraviolet light that jumped across the gap.  After the observation of Hertz, Willhelm Hullwachs in 1888 conducted a simple experiment that demonstrated the effect more dramatically.  He charged a zinc disc by connecting it to a charged electroscope. The charge on the zinc disk was lost only gradually when no ultraviolet light shined on the disk but when he pointed ultraviolet light on the disk, the charge was quickly lost to the air. Apparently, charges were freed and escaped the metal surface when struck with the ultraviolet light. The phenomenon of the ejection of electron by light at the time was called <term>photoemission</term> which we now call the <term> photoelectric effect</term>. 
+		</p>
+		<p>
+			Philipp Lenard, an assistant of Hertz, conducted many experiments to understand the photoemission process better and discovered many unexpected aspects of the phenomena. Among other things he found that the ability of light to free electrons depended on the frequency of light and if the frequency of light was low increasing intensity did not help free electrons.  Why increasing intensity did not help free electrons was a mystery. Also, it was found that there was no lag in time between the time light was shone and the time of ejection of electrons. Classically, it was expected that when light is incident on a metal, the electric field of light will accelerate electrons and make them vibrate at the frequency of light and the energy of electron will build up with time making some electrons eventually escape the metal. This should happen at all frequencies and there should be a lag time between the shining of light and the release of electron, but none was found. The experiments didn't make sense from these classical physics perspectives.
+		</p>
+		<p>
+			In 1905 Albert Einstein proposed an explanation of the photoelectric effect based on the particle nature of light, which we will describe below. After the theoretical explanation of Einstein, Robert Millikan designed and conducted the most definitive experiments to test various aspects of Einstein's theory. Millikan had hoped to disprove Einstein's theory by careful measurements.  But, he ended up providing strong experimental support for the theory instead.
+		</p>
+	</introduction>
+	<subsection><title>Lenard and Millikan's Experiments</title>
+		<p>
+			<xref ref="fig-photo-electric-expt-schematic"/> shows a schematic diagram of an apparatus similar to the one initially used by Lenard and later by  Millikan to study various aspects of the photoelectric effect. A clean metal plate to be exposed to light, labeled E for emitter,  is mounted in a vacuum tube along with a collector cup labeled C. The tube is also called a <term>photocell</term>. The two electrodes of the photocell are then connected to a variable power supply V and a galvanometer G as shown. The photocell is mounted so that light can shine on the emitter plate without illuminating the collector cup as well. The cleanliness of the metal surface was an important factor as oxidized metal surface have different characteristics. Even in best vacuum available in early 1900s the metal surfaces would get oxidized within tens of minutes which made it difficult to conduct experiments consistently and reliably.
+		</p>
+		<figure xml:id="fig-photo-electric-expt-schematic">
+			<caption>
+				 Schematic diagram of important components of the photoelectric experiment. Vacuum tube contains the emitter plate E and the colletor cup C. Light comes through a quartz window and strikes the emitter plate. With variable voltage source  V in the impeding mode only those electrons with sufficient kinetic energy can reach the collector which return to the emitter in the external circuit through the galvanometer G whose deflection gives a measure of the photocurrent.
+			</caption>
+			<image source="./images/modern-physics/photo-electric-expt-schematic.png" width="70%"/>
+		</figure>
+		<p>
+			When light strikes the emitter plate, it energizes the surface electrons sufficiently that some of the surface electrons escape the surface, leaving the surface positively charged. Some of these freed electrons, called <term>photoelectrons</term>, get pulled back to the plate while others with sufficient kinetic energy can overcome the attraction of the positive plate. When photoelectrons reach the collector they flow in the external circuit through the galvanometer, which registers the current, called the <term>photocurrent</term>, in their way to the emitter plate.
+		</p>
+		<p>
+			The connection to the external power supply can be made to either aid the flow of the photoelectrons inside the tube or impede the flow. If plate E is at a negative potential compared to cup C, the photoelectrons are accelerated towards the collector cup.  That means if enough energy is absorbed so that any electron can be freed, they will make it to the collector, and therefore, there will be photocurrent. [Aside: If emitter is made sufficiently negative an electron can be ejected from the plate even without any light incident on the plate but that effect has nothing to do with the photoelectric phenomenon.]
+		</p>
+		<p>
+			On the other hand, if  power supply is connected so that the collector plate is at a negative electric potential compared to the emitter plate, then  the ejected electrons are pushed back to the emitter plate by the electric field.  In this setting, the potential impedes the flow of electrons from the plate to the collector. This potential is therefore also called the impeding potential. When the impeding potential is increased, fewer and fewer electrons have high enough kinetic energy to make it to the collector and the photocurrent drops. At a particular potential <m>V_0</m>, called the \<term>stopping potential</term>, none of the freed electrons can make it to the collector and the current drops to zero.  If the potential is increased further, the current remains zero. That means that the kinetic energy  of the most energetic electron, <m>K_{\textrm{max}}</m>, is equal to the potential energy of the electron when <m>V=V_0</m>.
+			<men>
+				K_{\textrm{max}} = e V_0.
+			</men>
+		</p>
+		<p><alert>Result 1: Observation of Stopping Potential</alert></p>
+		<p>
+			<xref ref="fig-photo-electric-effect-plot-1"/> shows several photocurrent vs <m>V</m> plots at different wavelengths incident on a metal plate similar to the graphs in Millikan's original paper. The figure shows the existence of stopping potential at these frequencies in the photoelectric effect and the role of intensity when photon has sufficient energy to cause an emission of an electron. Millikan's data shows that stopping potentials depend on the frequency of light. Millikan also observed that stopping potential depended on the material.  
+
+			<!-- %\begin{figure}[h!]
+			%\centering
+			%\includegraphics[width=0.8\textwidth]{figs/Photo-electric-RAMillikan-PhysRev7pp355–388-yr1916.eps}
+			%\caption{Millikan's data for <m>i</m> vs <m>V</m> for light of various wavelengths or frequencies. Each curve shows stopping potential  when the deflection in the galvanometer is undetectable corresponding to zero photocurrent. From R. A. Millikan, Physical Review, vol. 7, pp 355-388, 1916.}\label{fig:Photo-electric-RAMillikan-PhysRev7pp355–388-yr1916}
+			%\end{figure} -->
+		</p>
+
+ 		<figure xml:id="fig-photo-electric-effect-plot-1">
+			<caption>
+				  A schematic plot of photocurrent versus the potential difference between the emitter and cathode plates at three different wavelengths (with <m>\lambda_1>\lambda_2>\lambda_3</m>) of the incident light, each of which is capable of ejecting electrons from the metal. The two curves for <m>\lambda_1</m> show that when the intensity is doubled, the maximum photocurrent also doubles.  The stopping potentials increase as the energy of the photons increase since energy of a photon is inversely proportioal to the wavelength.
+			</caption>
+			<image source="./images/modern-physics/photo-electric-effect-plot-1.png" width="70%"/>
+		</figure>
+ 
+ 		<p><alert>Result 2: Variation of Stopping Potential with Frequency</alert></p>
+ 		<p>
+ 			The stopping potential varies linearly with frequency as shown in <xref ref="fig-Photo-electric-RAMillikan-PhysRev7pp355-388-yr1916-fig6"/>. That is, the maximum kinetic energy of freed electrons depend on the frequency of light and not on the intensity of light contrary to what would be expected from classical considerations.  According to Einstein's photoelectric equation, Eq. <xref ref="eq-Einstein-photo-eqn"/> derived below, the slope of this graph is equal to <m>h/e</m>, where <m>h</m> is the Planck constant and <m>e</m> is the absolute value of the charge on an electron. Millikan used the slope with the value of <m>e</m> he had found from his oil-drop experiment to deduce the value of the Planck constant experimentally to be <m>6.56\times 10^{-34}\:\textrm{J.s}</m> , which was in good agreement with the theoretical value of <m>6.63\times 10^{-34}\:\textrm{J.s}</m>.
+ 		</p>
+
+ 		<figure xml:id="fig-Photo-electric-RAMillikan-PhysRev7pp355-388-yr1916-fig6">
+			<caption>
+				  Millikan's data for <m>V_0</m> vs <m>f</m>. [He used the letter <m>\nu</m> for frequency.]  According to Einstein's theory the slope of this line should be equal to <m>h/e</m>. From, R. A. Millikan, Physical Review, vol. 7, pp 355-388, 1916. 
+			</caption>
+			<image source="./images/modern-physics/Photo-electric-RAMillikan-PhysRev7pp355–388-yr1916-fig6-v2.png" width="90%"/>
+		</figure>
+		<p><alert>Summary of Various Results of Lenard</alert></p>
+		<p>
+			<ol>
+				<li>
+					For a given metal, no electron is emitted unless the frequency of light is above a cutoff value, called the \textbf{threshold frequency} regardless of the intensity of the incident light. This is taken to define a property of each metal called the work function.
+				</li>
+				<li>
+					For a given metal, increase in frequency of the incident light above the threshold frequency increases the photocurrent.
+				</li>
+				<li>
+					For a given metal and for a particular frequency above the threshold frequency, the photocurrent increases linearly with the intensity of  light.
+				</li>
+				<li>
+					For a given metal and for a particular frequency above the threshold frequency,  the stopping potential <m>V_0</m> is independent of the intensity of light although more electrons are released with a bright source than with a dim source of the same frequency.
+				</li>
+				<li>
+					For a given metal the stopping potential <m>V_0</m> increases linearly with the frequency of the light above the threshold frequency.
+				</li>
+				<li>
+					The time-lag between the incidence of light and the emission of electron is too small to be measurable.
+				</li>
+				<li>
+					For linearly polarized light, the direction of emission is mostly towards the direction of the electric field.
+				</li>
+			</ol>
+
+		</p>
+	</subsection>
+
+
+	<subsection><title>Einstein's Theory of Photoelectric Effect</title>
+
+		<p>
+			In a groundbreaking paper in 1905 Einstein gave a very simple explanation of Lenard's results by assuming that light actually consisted of small packets of energy and each packet interacted with one electron at a time. These packets are now called <term>photons</term>. Einstein used Planck's idea of the energy packet in electromagnetic waves, <m>E_{\textrm{photon}}=hf</m>, where <m>h</m> is Planck constant and <m>f</m> is the frequency of ligh,
+			<me>
+				E_{\textrm{photon}}=hf,
+			</me>
+			with the conservation of energy when a photon strikes a metal surface. 
+
+		</p>
+
+			<p>
+				When a photon deposits an energy <m>hf</m> to an electron at the surface, a part of this energy (<m>\phi</m>) would go to overcome the binding of the electron to the metal, and the rest will end up as the kinetic energy (<m>K</m>) of the freed electron.
+				<me>
+					hf = \phi + K.
+				</me>
+				Rearranging we write kinetic energy of a photoelectron as
+				<men xml:id="eq-energy-balance-for-each-electron">
+					K = hf - \phi.
+				</men>
+
+			</p>
+
+		<sidebyside widths = "50% 50%">
+
+			<p>
+				The weakest bound electron will have the smallest <m>\phi</m> and hence will be ejected with the largest kinetic energy. The binding energy of the weakest-bound electron to a metal surface is also called the <term>work function</term> of the metal. We will denote the work function by <m>W</m>.  The work function of some common metals are listed in <xref ref="tab-work-function-metals"/>. Therefore Eq. <xref ref="eq-energy-balance-for-each-electron"/> will give the following equation called <term>Einstein's photoelectric equation</term>. 
+
+				<men xml:id="eq-Einstein-photo-eqn">
+					K_{\textrm{max}} = hf - W. 
+				</men>
+			</p>
+
+			<table xml:id="tab-work-function-metals"><title>Work function of common metals</title>
+				<tabular halign="center">
+				    <row header="yes" bottom="minor" >
+				      <cell>Metal</cell>
+				      <cell>Work function (eV)</cell>
+				    </row>
+				    <row>
+				      <cell>Sodium (Na)</cell>
+				      <cell>2.28</cell>
+				    </row>
+				    <row>
+				      <cell>Aluminum (Al)</cell>
+				      <cell>4.08</cell>
+				    </row>
+				    <row>
+				      <cell>Lead (Pb)</cell>  
+				      <cell>4.14</cell>
+				    </row>
+				    <row>
+				      <cell>Silver (Ag)</cell>  
+				      <cell>4.26</cell>
+				    </row>
+				    <row>
+				      <cell>Zinc (Zn)</cell>  
+				      <cell> 4.31</cell>
+				    </row>
+				    <row>
+				      <cell>Iron (Fe)</cell>  
+				      <cell>4.50</cell>
+				    </row>
+				    <row>
+				      <cell>Copper (Cu)</cell> \amp  \\
+				      <cell>4.70</cell>
+				    </row>
+				    <row>
+				      <cell>Gold (Au)</cell> \amp  \\
+				      <cell>5.1</cell>
+				    </row>
+				    <row>
+				      <cell>Platinum(Pt)</cell>
+				      <cell>6.35</cell>
+				    </row>
+
+				</tabular>
+			</table>
+		</sidebyside>
+ 
+
+		<p>
+			Experiments of Lenard and Millikan show that  <m>K_{\textrm{max}}</m> is measurable by the method of impeding potential difference across the plates and given by <m>eV_{0}</m> where <m>V_0</m> is the stopping potential.
+			<men xml:id="eq-Einstein-photo-eqn-2">
+				K_{\textrm{max}}=eV_{0} = hf - W.
+			</men>
+ 		</p>
+ 	</subsection>
+ 	<subsection><title>How does Einstein's photoelectric equation explain experimental results?</title>
+ 		<p>
+
+	 		<ol>
+	 			<li> 
+	 				Experimental result: <em>No photoelectron unless frequency is greater than a threshold frequency</em>.  This is explained by Eq. <xref ref="eq-Einstein-photo-eqn"/> by the fact that kinetic energy is a positive quantity.  That means,
+					<me>
+					hf>W.
+					</me>
+					Therefore, no photoelectrons will be released unless <m>f>f_0</m> with <m>f_0</m> related to the work function by
+					<me>
+					f_0 = W/h.
+					</me>
+					This also explains the dependence of the threshold frequency on the choice of metal for the emitter since different metals will have difference work functions.
+				</li>
+				<li>
+					Experimental result: <em>For a given metal, increase in frequency of the incident light above the threshold frequency increases the photocurrent</em>.  According to Eq. <xref ref="eq-Einstein-photo-eqn"/>, an increase in frequency will increase the kinetic energy, which would mean more electrons will arrive at the collector per unit time, and hence more current will be registered by the galvanometer.
+				</li>
+				<li>
+					Experimental result: <em>For a given metal and for a particular frequency above the threshold frequency, the photocurrent increases linearly with the intensity of the light</em>. More intensity will mean more photons will arrive at the plate per unit time. If we double the intensity, twice as many photons arrive at the plate per unit time, which will cause twice as many electrons to be emitted, thus, there will be twice as much photocurrent.
+				</li>
+				<li>
+					Experimental result:  <em>For a given metal and for a particular frequency above the threshold frequency,  the stopping potential <m>V_0</m> is independent of the intensity of light</em>. Equation <xref ref="eq-Einstein-photo-eqn"/> shows the max kinetic energy and hence the stopping potential is determined by interaction of individual photons and electrons and are not dependent on the total number of photons.  Hence, the stopping potential <m>V_0</m> should be independent of the intensity of light as seen in experiments.
+				</li>
+				<li>
+					Experimental result:  <em>For a given metal the stopping potential <m>V_0</m> increases linearly with the frequency of the light above the threshold frequency</em>. Einstein's equation Eq. <xref ref="eq-Einstein-photo-eqn"/> and the associated experimental equation Eq. <xref ref="eq-Einstein-photo-eqn-2"/> clearly show the that <m>V_0</m> is a linear function of <m>f</m>, the frequency of light.
+				</li>
+				<li>
+					Experimental result: <em>The time-lag between the incidence of light and the emission of electron is too small to be measurable</em>. Since in Einstein's explanation there is no buildup of energy required for the electron to be freed from the surface,  no time lag is expected between the absorption of energy and the ejection of the electron.
+				</li>
+				<li>
+					Experimental result: <em>For linearly polarized light, the direction of emission is mostly towards the direction of the electric field</em>. This aspect of photoelectric effect is not addressed by Eq. <xref ref="eq-Einstein-photo-eqn"/>.  According to the wave aspect of light, the direction of the electric field will be the direction in which electron will be accelerated. Therefore, electrons should come out preferentially in that direction. This result shows that although photon picture helps answer most of the energetic aspects of the photoelectric effect, we still need the wave picture of light to understand some other aspects.
+				</li>
+			</ol>
+ 
+		</p>
+
+
+	</subsection>
+
+	<exercise xml:id="ex-Speed-of-Photoelectrons"><title>Speed of Photoelectrons</title>
+
+		<statement>
+			<p>
+				In a photoelectric experiment on sodium it is found that the photoelectrons  emitted by an ultraviolet light can be stopped by applying a stopping voltage of 4.0 V. (a) What is the maximum largest speed of these photoelectrons?  (b) If the work function of sodium is 2.28 eV, what is the frequency of the ultraviolet light incident on the metal?
+			</p>
+		</statement>
+		<hint><p>
+			(a) Weakest-bound electron will be ejected with most kinetic energy. (b) Use Einstein's equation.
+		</p></hint>
+		<answer><p>
+			(a) <m>1.2\times 10^6\:\textrm{m/s}</m>, (b) <m>1.52\times10^{15}\:\textrm{Hz}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				(a) The weakest bound electron will be ejected with the largest kinetic energy, hence the largest speed. Equating the energy of the electron corresponding to the stopping potential to the kinetic energy of the most energetic electron gives
+				<me>
+					\frac{1}{2} m_e v^2_{\textrm{max}} = e V_0.
+				</me>
+				Solving for <m>v_{\textrm{max}}</m> we get
+				<me>
+					v_{\textrm{max}} = \sqrt{\frac{2eV_0}{m_e}}.
+				</me>
+				Now, we put the numerical values to obtain
+				<md>
+					<mrow>v_{\textrm{max}} \amp = \sqrt{\frac{2\times 4.0\:\textrm{eV}\:c^2}{m_ec^2}} = c\times \sqrt{\frac{8.0\:\textrm{eV}}{0.511\times 10^6\:\textrm{eV}}}</mrow>
+					<mrow> \amp = 0.004 c = 1.2\times 10^6\:\textrm{m/s},</mrow>
+				</md>
+				where I used <m>m_ec^2 = 0.511\:\textrm{MeV}</m>. The speed is <m>1.2\times 10^6\:\textrm{m/s}</m>, which is quite a large speed, but only 0.4\% of the speed of light, which justifies the use of the non-relativistic formula for the kinetic energy. 
+			</p>
+			<p>
+				(b) Now, using Einstein's equation we can determine the frequency of the photon of the ultraviolet light.
+				<me>
+					f =\frac{ eV_0 + W}{h} = \frac{ 4.0\:\textrm{eV} + 2.28\:\textrm{eV}}{4.1357 \times 10^{-15}\:\textrm{eV.s}} =1.52\times10^{15}\:\textrm{Hz}. 
+				</me>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Photocurrents-from-Zinc"><title>Photocurrents from Zinc</title>
+
+		<statement>
+			<p>
+				In a photoelectric experiment on zinc a monochromatic light of wavelength 250 nm of intensity 2 <m>\mu</m>W/cm<m>^2</m> is incident on 1.2 cm<m>^2</m> area. What is the maximum possible photocurrent if the work function of zinc is 4.31 eV?
+			</p>
+		</statement>
+		<hint><p>
+			Maximum possible current when each photon causes ejection of an electron.
+		</p></hint>
+		<answer><p>
+			<m>4.8\times 10^{-7}\:\textrm{A}</m>.
+		</p></answer>
+		<solution>
+			<p>
+				To calculate the maximum possible current we will assume that each photon leads to the release of one electron. This will give us the maximum number <m>(N)</m> of electron released per unit time. Each electron carries a charge <m>e</m>, therefore the electric current coresponding to these electrons will be equal to <m>Ne</m>.  Energy deposited by photons per second will be
+				<me>
+					E = IA = 2\times 10^{-6}\: \textrm{W/m}^2 \times 1.2\:\textrm{cm}^2 =  2.4\times 10^{-6}\: \textrm{W}.
+				</me>
+				Each photon carries energy
+				<me>
+					E_\gamma = h f = \frac{hc}{\lambda} = \frac{6.63 \times 10^{-34}\:\textrm{J.s}\times 3\times 10^{8}\:\textrm{m/s}}{250\times 10^{-9}\:\textrm{m}} = 7.96\times 10^{-19}\:\textrm{J}.
+				</me>
+				Therefore, the number of photons striking the zinc surface, which we have assumed to equal the maximum number of electrons released per second.
+				<me>
+					N = \frac{E}{E_\gamma} = \frac{2.4\times 10^{-6}\: \textrm{W}}{7.96\times 10^{-19}\:\textrm{J}} = 3\times 10^{12}\:\textrm{s}^{-1}.
+				</me>
+				Each electron carries a charge of <m>e = 1.6\times 10^{-19}</m> C.  Therefore, the total electric current per unit time flowing
+				<me>
+					i = Ne = 4.8\times 10^{-7}\:\textrm{A}.
+				</me>
+			</p>
+		</solution>
+	</exercise>
+ 
+
+ 
+	<exercise xml:id="ex-Photoelectric-Effect-on-a-Sodium-Target"><title>Photoelectric Effect on a Sodium Target TODO</title>
+
+		<statement>
+			<p>
+				The work function for sodium is <m>2.3\text{ eV}</m>. (a) What is the maximum wavelength (or minimum frequency) of light that is capable of ejecting electrons from sodium?  (b) A beam of blue light with wavelength <m>\lambda = 440\text{ nm}</m> strikes the surface of a sodium plate, decide if electrons be ejected. If yes, calculate the speed of the ejected electron that has the maximum kinetic energy.  If no, explain why not.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Photoelectric-Effect-on-a-Platinum-Target"><title>Photoelectric Effect on a Platinum Target TODO</title>
+
+		<statement>
+			<p>
+				The work function for platinum is <m>6.4\text{ eV}</m>. (a) What is the maximum wavelength (or minimum frequency) of light that is capable of ejecting electrons from platinum?  (b) A beam of blue light with wavelength <m>\lambda = 440\text{ nm}</m> strikes the surface of a platinum plate, decide if electrons be ejected. If yes, calculate the speed of the ejected electron that has the maximum kinetic energy.  If no, explain why not. (c) What will happen if UV light of wavelength <m>120\text{ nm}</m> is incident on the platinum plate? If electrons are ejected here, find the stopping potential.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+ 
+	<exercise xml:id="ex-Work-Function-from-Photoelectric-Effect"><title>Work Function from Photoelectric Effect  TODO</title>
+
+		<statement>
+			<p>
+				An unknown metal produces a photocurrent when light of wavelength of <m>330\text{ nm}</m> shines on it.  A stopping potential of <m>0.25\text{ V}</m> is required to stop the photocurrent.  From these observations find the work function of the metal.
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+  
+	<exercise xml:id="ex-Stopping-Potential-and-Photocurrent-in-Photoelectric-Effect"><title>Stopping Potential and Photocurrent in Photoelectric Effect  TODO</title>
+
+		<statement>
+			<p>
+				Light of wavelength of <m>125\text{ nm}</m> and intensity <m>3000 \text{ W/m}^2</m> shines on an area of <M>0.5 \text{ cm}^2</M> of a gold plate. (a) What will be the stopping potential required? (b) How much photocurrent will be produced?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+ 
+ 
+	<exercise xml:id="ex-Finding-the-Value-of-Planck-Constant-from-Photoelectric-Effect"><title>Finding the Value of Planck Constant from Photoelectric Effect TODO</title>
+
+		<statement>
+			<p>
+				For this exercise do not assume that you know the value of the Planck constant <m>h</m>.  You will use the data in this problem to find the value of <m>h</m>.  In a photoelectric experiment it is found that stopping potential is <m>2.0 \text{ V}</m> when a light of wavelength <m>320 \text{ nm}</m> is incident on a metal surface while a stopping potential of <m>1.0 \text{ V}</m> is required when the wavelength of the incident light is <m>450 \text{ nm}</m>. (a) From the given data deduce the value of the Planck constant.  (b) What is the work function of the metal?
+			</p>
+		</statement>
+		<hint><p></p></hint>
+		<answer><p></p></answer>
+		<solution>
+			<p>
+			</p>
+		</solution>
+	</exercise>
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

@@ -1,0 +1,83 @@
+<section xml:id="Simple-Harmonic-Systems"><title> Simple Harmonic Systems </title>
+	<introduction>
+		<p>
+			Simple harmonic motion appears in a wide variety of physical settings.  When a system is displaced from a stable equilibrium, the restoring force is usually proportional to the displacement if the displacement is not too great.  In this section, we will study some commonly encountered systems that exhibit simple harmonic motion.
+		</p>
+	</introduction>
+	<subsection><title> The Plane Pendulum </title>
+
+		<p>
+			A pendulum consists of a bob of mass <m> m</m>  suspended from a light inextensible cord of length  <m>l</m>.   If the physical dimension of the bob is much smaller than the length of the cord, we can treat the bob as a point mass.
+		</p>
+		<sidebyside widths="60% 10% 25%">
+			<p>
+				A pendulum has a stable equilibrium position when the bob is hanging vertically down from the suspension point.  The angular displacement of the bob from the equilibrium is given in terms of angle  <m>\theta</m>  that the cord makes with the vertical line. The displacement angle is positive for the counter-clockwise change in angle and negative for a clockwise change in angle when viewed from the axis coming out-of-page in the figure.
+			</p>
+			<p> </p>
+			<image source="./images/simple-harmonic-motion/shm-examples-plane-pendulum.png"/>
+		</sidebyside>
+
+		<sidebyside widths="60% 10% 25%">
+			<p>
+
+				Because we wish to study the angular displacement, it is more convenient to treat the pendulum motion as rotation of the bob about an axis through the point of suspension O perpendicular to the plane of motion.  The two forces on the bob are weight <m>mg</m> and tension <m>F_T</m>. The lever arm of <m>F_T</m> is zero and that of weight is <m>l\sin\,\theta</m>. Therefore the net torque is
+				<me>
+					\tau_\text{net} = \left( mg l \sin\,\theta, \text{ clockwise sense}\right), 
+				</me>
+				
+			</p>
+
+			<p> </p>
+			<image source="./images/simple-harmonic-motion/shm-examples-plane-pendulum-eom.png"/>
+		</sidebyside>
+
+		<p>
+			Let <m>\alpha</m> denote the angular acceleration. The moment of inertia of bob about the axis is <m>I=ml^2</m>. Therefore, the equation of motion is
+			<me>
+				ml^2\alpha = - mg l \sin\,\theta,
+			</me>
+			where negative sign is due to the clockwise sense. Simplifying we get
+			<men>
+				\alpha = - \dfrac{g}{l}\, \sin\,\theta.
+			</men>
+			This equation is not analogous to <m> a_x =- \omega^2\ x</m>, but if <m>\sin\theta</m> were to be replaced by <m>\theta</m>, we will get equation where acceleration is prportional to the negative of the displacement. It turns out that for small angles you can replace <m>\sin\theta</m> by <m>\theta</m>. We call this <term>small-angle approximation</term>.
+			<men>
+				\sin\,\theta \approx \theta\ \ \ (\theta\text{ in radians.})
+			</men>
+			This approximation is good to two decimal precision for angles <m>\theta \lt 15^\circ= 0.26\text{ rad}</m>. Therefore, in the small-angle approximation
+			<men>
+				\alpha = - \dfrac{g}{l}\, \theta.
+			</men>
+			We can use analogy to <m> a_x =- \omega^2\ x</m> to study the motion of the pendulum. Thus, angular frequency of the pendulum will be
+			<men>
+				\omega = \sqrt{ \dfrac{g}{l} },
+			</men>
+			which means the frequancy of the oscillations
+			<men>
+				f = \dfrac{\omega}{2\pi} = \dfrac{1}{2\pi}\,\sqrt{ \dfrac{g}{l} }, 
+			</men>
+			and the period <m>T</m> 
+			<men>
+				T = \dfrac{1}{f} =  2\pi\,\sqrt{ \dfrac{l}{g} }.
+			</men>
+		</p>
+		<p>
+			The formula for the period shows that the time period of a pendulum does not depend on either the mass <m> m</m> of the pendulum bob or the amplitude of oscillations, but only on the length <m> l</m> of the pendulum cord and acceleration due to gravity <m> g</m>.  
+		</p>
+		<p>
+			The dependence of the period on <m> g</m> means that the same pendulum will have different periods on different planets.  Also, since the value of <m> g</m> varies over the surface of the Earth, the same pendulum will run at different rates in different locations on the Earth. 
+		</p>
+		<p> 
+			Galileo appears to be the first person to notice this aspect of a pendulum motion when he made the observation that different chandeliers of equal length in a church had the same period regardless of their amplitudes of swing or weights. It is said that he timed the swings of chandeliers using his pulses.
+		</p>
+ 
+	</subsection>
+
+	<subsection><title> Physical Pendulum TODO</title>
+	</subsection>
+	
+	<subsection><title> Torsion Pendulum TODO</title>
+	</subsection>
+ 
+
+</section>

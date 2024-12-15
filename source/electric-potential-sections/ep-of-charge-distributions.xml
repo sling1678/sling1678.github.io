@@ -1,0 +1,247 @@
+<section xml:id="Electric-Potential-of-Charge-Distributions"><title> Electric Potential of Charge Distributions </title>
+	<introdution>
+		<p>
+			A charged object, such as a plastic rod rubbed with a rabbit fur, usually has a large number of charges.  To handle thess types of situations, we model them with a continuous charge density. Then, we divide the charge distribution into small cells and replace charges in cells by point charges at their locations, to which we apply methods of discrete charges we learned in <xref ref="Superposition-of-Electric-Potentiale"/>. 
+		</p>
+		<sidebyside widths="45% 5% 50%">
+			<p>
+				To be specific about the method for handling continuous charges, let us consider finding electric potential at point P by a charge distribution of an arbitrary shape shown in <xref ref="fig-continuous-charge-distribution-cells"/>. 
+			</p>
+			<p></p>
+			<figure xml:id="fig-continuous-charge-distribution-cells">
+				<caption>
+				</caption>
+				<image source="./images/electric-potential/continuous-charge-distribution-cells.png" width="60%"/>
+			</figure>
+		</sidebyside>		
+		<p>
+			Let <m>\rho</m> represent the charge density. As per our plan we divide up the charged body into cells. Let <m>q_i</m> denote the charge in cell at coordinate <m>(x_i, y_i, z_i)</m>. Let <m>\Delta V_i</m> denote the volume of this cell. Then,
+			<me>
+				q_i = \rho \Delta V_i.
+			</me>
+
+			This discretization results in a finite number of charges located at the cells of the body. Let <m>N</m> be the total number of these cells.  In <xref ref="Superposition-of-Electric-Potentiale"/> we found that potential for <m>N</m> charges is given by
+ 			<men xml:id="eq-potential-ch-distrib-discrete">
+				  \phi_P =   \dfrac{1}{4\pi\epsilon_0}\, \sum_{i=1}^{N} \dfrac{ q_i}{r_i} =   \dfrac{1}{4\pi\epsilon_0}\, \sum_{i=1}^{N} \dfrac{ \rho\Delta V_i}{r_i},  
+			</men>
+			where <m> r_i </m> is distance from charge <m> q_i </m> to the field point P. Using Cartesian coordinates <m>(x_i,\ y_i,\ z_i)</m> of charge <m>q_i</m> and field point P   <m>(x,\ y,\ z)</m> these distances are
+			<me>
+				r_i = \sqrt{ (x-x_i)^2 + (y-y_i)^2 + (z-z_i)^2  }.
+			</me>  
+		</p>
+
+
+
+
+	</introdution>
+	<subsection> <title>(Calculus) Electric Potential of a Chsrge Distribution </title>
+
+		<p>
+			In the limit of infinitesimal cells in Eq. <xref ref="eq-potential-ch-distrib-discrete"  />, the sum becomes an integral, which we can formally write the result as a coneptual integral.
+			<men>
+				\phi_P =  \frac{1}{4\pi\epsilon_0}\int_{\text{cells}}\frac{dq}{r_{\text{cell-to-P}}},
+			</men>
+			where <m>r_{\text{cell-to-P}}</m> is the distance to point P from the infinitesimal cell. Note that this is just a concetual integral - in each situation, you will use this equation as a guide and discover the actual integral that you can evaluate to get your answer.
+		</p>
+		<sidebyside widths="50% 5% 45%">
+			<p>
+				To be concrete, let the position of the space point P be denoted as <m>\vec r</m> and the position of a representative cell element be <m>\vec r^{\prime}</m>, then the integral can be written more explicitly.
+				<men>
+					\phi_P = \frac{1}{4\pi\epsilon_0}\int_{\text{cells}}\frac{dq}{|\vec r-\vec r^{\prime}|},
+				</men>
+				where <m>dq</m> refers to the charge in the cell at position <m>\vec r^{\prime}</m>. 
+			</p>
+			<p></p>
+			<image source="./images/electric-potential/charge-distribution-r-and-r-prime.png" width="60%"/>
+		</sidebyside>
+
+		
+		<p>
+
+			As we have seen before that  charge distribution the formula for elemental charge <m>dq</m> depends on the dimensions over which the charges are distributed. Thus, in one-, two-, and three-dimensional situations, we use different symbols for charge densities and volume elements.
+			<men>
+				dq = \begin{cases}
+				 		\lambda dl  \amp  (1-\text{dim})\\
+						\sigma dA   \amp  (2-\text{dim})\\
+						\rho dV  \amp  (3-\text{dim})
+					\end{cases}
+			</men>
+			Here <m>\lambda</m> is charge per unit length, <m>\sigma</m> charge per unit area and <m>\rho</m> charge per unit volume. In order to reduce algebra, <em>it is often helpful to pick the shape of the cell in accordance with the geometry of the charge distribution and exploit any symmetry in the problem.</em>  The following examples illustrate calculations for electrical potential of continuous charge distributions.
+		</p>
+
+	</subsection>
+
+
+	<exercise xml:id="ex-Electric-Potential-of-a-Uniform-Line-of-Charge"><title> (Calculus) Electric Potential of a Uniform Line of Charge </title>
+		<statement>
+			<sidebyside widths="65% 5% 30%">
+				<p>
+					Find the electric potential of a uniformly charged non-conducting wire with linear density <m>\lambda</m>  (SI units <m>\text{C/m} </m>) and length <m>L</m> at a point that lies on a line that divides the wire into two equal parts.
+				</p>
+				<p></p>
+				<image source="./images/electric-potential/line-charge-potential.png" width="60%"/>
+			</sidebyside>
+
+		</statement>
+		<hint> <p>  Place the charged wire along <m>y</m> axis and field point P on the <m>x</m> axis. </p> </hint>
+		<answer> <p>  <m> \dfrac{\lambda}{4\pi\epsilon_0}\, \ln\left(  \dfrac{\sqrt{x^2 + (L/2)^2} + L/2}{ \sqrt{x^2 + (L/2)^2} - L/2 } \right)</m>. </p> </answer>
+		<solution> 
+			<p>
+				We start with identifying a representative cell on the line. This is shown in the figure as an infinitesimal elment at coordinate <m>y</m>. The charge in the cell is <m> dq = \lambda\,dy</m>. From the figure, it is clear that the electric potential of this charge will be
+				<me>
+					d\phi = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{\lambda\, dy}{\sqrt{x^2 + y^2}}.
+				</me>
+				Here <m>x</m> is the field point. Therefore, when we sum over (i.e. integrate) the charges, we will keep <m>x</m> fixed. We will get the net potential at <m>(x,0)</m>, which is the location of the field point.
+			</p>
+			<image source="./images/electric-potential/ex-line-charge-potential-solution.png" width="50%"/>
+			<p>
+				Carrying out the integration yields the answer.
+				<md>
+					<mrow> \phi_P \amp = \dfrac{\lambda}{4\pi\epsilon_0}\, \int_{-L/2}^{L/2} \dfrac{dy}{\sqrt{x^2 + y^2}} </mrow>
+					<mrow>  \amp = \dfrac{\lambda}{4\pi\epsilon_0}\, \ln\left(  \dfrac{\sqrt{x^2 + (L/2)^2} + L/2}{ \sqrt{x^2 + (L/2)^2} - L/2 } \right).    </mrow>
+
+				</md>
+			</p>
+			
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Electric-Potential-of-a-Uniformly-Charged-ring"><title> Electric Potential of a Uniformly Charged ring </title>
+		<statement>
+			<sidebyside widths="50% 10% 35% 5%">
+				<p>
+					A ring of radius <m>R</m> has a uniform charge density <m>\lambda</m> (SI units <m> \text{C/m}</m> ) as shown in <xref ref="fig-ep-of-charges-on-a-ring"/>.  Find the electric potential at a point on the axis of the ring a distance <m>h</m> above the center.
+				</p>
+				<p></p>
+				<figure xml:id="fig-ep-of-charges-on-a-ring">
+					<caption></caption>
+					<image source="./images/electric-potential/ep-of-charges-on-a-ring.png" width="60%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+
+		</statement>
+		<hint> <p> This distance to the field point from each element of the ring is same.  </p> </hint>
+		<answer> <p>  <m>\dfrac{1}{4\pi\epsilon_0}\, \dfrac{2\pi R \lambda}{\sqrt{R^2 + h^2} }</m>. </p> </answer>
+		<solution> 
+			<p>
+				Every charge of the ring has the same distance to the field point.
+				<me>
+					r = \sqrt{R^2 + h^2}.
+				</me>
+				Therefore, each charge will have the same potential there. Hence, we will get
+
+				<md>
+					<mrow> \phi_P\amp = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{q_\text{tot}}{r}</mrow>
+					<mrow> \amp =  \dfrac{1}{4\pi\epsilon_0}\, \dfrac{2\pi R \lambda}{\sqrt{R^2 + h^2} }. </mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
+
+
+	<exercise xml:id="ex-Electric-Potential-of-a-Uniformly-Charged-Disk"><title> (Calculus) Electric Potential of a Uniformly Charged Disk</title>
+		<statement>
+			<sidebyside widths="50% 10% 35% 5%">
+				<p>				
+					(a) Find the electric potential of a uniformly charged nonconducting disk of radius <m>R</m> with charge density  <m> \sigma </m> (<m> \text{C/m}^2</m>) at a point on the axis  as shown in <xref ref="fig-ep-of-charges-on-a-disk"/>. For concrteteness, let the field point on the axis be at a height <m>h</m> from the center of the disk.
+				</p>
+				<p></p>
+				<figure xml:id="fig-ep-of-charges-on-a-disk">
+					<caption></caption>
+					<image source="./images/electric-potential/ep-of-charges-on-a-disk.png" width="60%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+			<p>
+				(b) Take <m>h/R\rightarrow 0</m> on your answer to show that very near the disk, potential varies as linearly with <m>h</m>. You should get <m>(\sigma/2\epsilon_0)(R-h)</m> in the leading order in <m>h/R</m>.
+			</p>
+			<p>
+				(c) Take <m>R/h\rightarrow 0</m> on your answer to show that very far away from the disk, potential at height <m>h</m> is that of a point charge equal to total charge on the disk.
+			</p> 
+		</statement>
+		<hint> <p> Consider fields of rings of radius <m>r</m> and thickness <m>dr</m>. Utilize superposition.  </p> </hint>
+		<answer> <p> (a) <m>\frac{\sigma }{2\epsilon_0}\left( \sqrt{h^2 + R^2} -h\right)</m>. </p> </answer>
+		<solution><title>(a)</title> 
+			<sidebyside widths="55% 10% 30% 5%">
+				<p>
+					(a) We will discretize the disk in the shape of rings of thickness <m>dr</m>. One such ring of radius <m>r</m> is shown in <xref ref="fig-ep-of-charges-on-a-disk-solution"/>. The potential from charges in this infintesimal ring can easily be seen to be
+					<me>
+						d\phi = \frac{1}{4\pi\epsilon_0}\,\frac{dq}{\sqrt{h^2 + r^2}},
+					</me>
+					where <m>dq = \sigma \times 2\pi r dr</m>.
+				</p>
+				<p></p>
+				<figure xml:id="fig-ep-of-charges-on-a-disk-solution">
+					<caption></caption>
+					<image source="./images/electric-potential/ep-of-charges-on-a-disk-solution.png" width="60%"/>
+				</figure>
+				<p></p>
+			</sidebyside>
+			
+			<p>
+				Integrating from <m>r=0</m> to <m>r=R</m> will give us the answer.
+				<md>
+					<mrow> \phi  \amp = \frac{1}{4\pi\epsilon_0}\int_0^R  \frac{2\pi\sigma r dr}{\sqrt{h^2 + r^2}}</mrow>
+					<mrow>   \amp = \frac{\sigma }{2\epsilon_0}\int_0^R  \frac{r dr}{\sqrt{h^2 + r^2}}</mrow>
+					<mrow>   \amp = \frac{\sigma }{2\epsilon_0}\left( \sqrt{h^2 + R^2} -h\right) </mrow>
+				</md>
+			</p>
+		</solution>
+		<solution><title>(b)</title>
+			<p>
+				(b) 
+				To take <m>h/R\rightarrow 0</m> limit, let us factor out <m>R</m> to get
+				<me>
+					\frac{\sigma R}{2\epsilon_0}\left( \sqrt{ 1 +  (h/R)^2} -h/R\right).
+				</me>
+				Let us denote  <m>h/R = x</m> and then expand <m>\sqrt{1+x^2}\approx 1 + \frac{1}{2}x^2</m> to get
+				<me>
+					\frac{\sigma R}{2\epsilon_0}\left(  1 +  \frac{1}{2}x^2  - x \right).
+				</me>
+				Now, noting that when <m>x</m> gets small <m>x \gg x^2</m>. therefore, we drop the quadratic term, but keep the linear term -- since dropping that will get rid of information about <m>h</m>-dependence altogether. Restoring <m>h/R</m>, we get
+				<me>
+					\frac{\sigma}{2\epsilon_0}\left(  R - h \right).
+				</me>				
+			</p> 
+		</solution>		
+
+		<solution><title>(c)</title>
+			<p>
+				(c)
+				Here we want to take <m>R/h\rightarrow 0</m>. Therefore, we factor out <m>h</m>.
+				<me>
+					\frac{\sigma h}{2\epsilon_0}\left( \sqrt{ 1 +  (R/h)^2} -1\right).
+				</me>
+				Let <m>x=R/h</m> and expand the square root. Keep upto the leading terms that has <m>h</m> in it, we get
+				<me>
+					\frac{\sigma h}{2\epsilon_0}\frac{1}{2} \frac{R^2}{h^2}.
+				</me>
+				Noting that total charge is <m>q_\text{tot}=2\pi R^2\sigma</m>, this is
+				<me>
+					\frac{1}{4\pi\epsilon_0}\frac{q_\text{tot}}{h}.
+				</me>
+				That is, far away from the disk, the potential is that of a point charge eaual to total charge placed at the center.							
+			</p> 
+		</solution>	
+
+
+	</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

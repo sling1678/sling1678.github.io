@@ -1,0 +1,623 @@
+<section xml:id="section-propagation-of-uncertainty"><title> Propagation of Uncertainty </title><idx><h>Uncertainty</h><h>Propagation</h></idx>
+	<introduction>
+		<p>
+			In physics, many physical quantities are derived from other quantities that are directly measured in an experiment. How do uncertainties in the measured quantities propagate into derived quantities? We will address this question for several commonly occuring situations.
+		</p>
+		</introduction>
+		<subsection><title> Derived Quantity is a Function of the Measured Quantity</title>
+			<p>
+				Suppose the derived quantity <m>y</m> is a given function of the measured quantity <m>x</m>, say <m> y = f(x) </m>. For instance period <m>T</m> of a pendulum is a function of length <m>L</m> of the pendulum by <m>T = \alpha \sqrt{L}</m>, where <m>\alpha = 2\pi/\sqrt{g}</m>, a constant.  For simplicity, let's work with an example function, <m>y = x^2</m>, and a measurement <m>x_0 \pm \Delta x</m>. One way to proceed is to just plug this <m>x</m> into the formula and expand the result.
+				<md>
+					<mrow> y \amp = \left( x_0 \pm \Delta x \right)^2 = x_0^2  \pm 2\, x_0\, \Delta x  + (\Delta x)^2</mrow>
+					<mrow> \amp \approx x_0^2  \pm 2\, x_0\, \Delta x </mrow>
+				</md>
+				Note: the terms containing <m>(\Delta x)^2</m> and higher powers will be all negligible compared to the term linear in <m>\Delta x</m>.  Therefore, we can simplify this to
+				<me>
+					 y \approx x_0^2  \pm 2\, x_0\, \Delta x,
+				</me>
+				Clearly, we want the expression multiplying <m>\pm</m> to be positive. Hence, we write this as
+				<men xml:id="eq-y-eq-xsq-pm-dx">
+					y = x_0^2  \pm \left| 2\, x_0\, \Delta x\right| \equiv y_\text{main} \pm \Delta y.
+				</men>
+
+			</p>
+			<p>
+				Now, if you look at the <m>\Delta y</m> part in Eq. <xref ref="eq-y-eq-xsq-pm-dx"/>, you will notice that the expressiob multiplying <m>\Delta x</m> is the derivative <m>dy/dx = 2x</m>. 
+				<men xml:id="eq-y-eq-fx-pm-df-over-dx-times-Delta-x">
+					y = f(x_0) \pm \left| \left(\frac{df}{dx}\right)_{x = x_0} \Delta x  \right|.
+				</men>
+				That is 
+				<men xml:id="eq-y-eq-fx-pm-df-over-dx-times-Delta-x-2">
+					\Delta y = \left| \left(\frac{df}{dx}\right)_{x = x_0} \Delta x  \right|,
+				</men>
+				where the derivative is evaluated at the measured value <m>x = x_0</m>.
+			</p>
+			<p>
+				<alert>A TRICK:</alert> The relative uncertainty in the dependent variable <m>y</m> is often an easier calculation from:
+				<me>
+					\frac{\Delta y}{y} = \left| \frac{1}{f(x_0)}\left(\frac{df}{dx}\right)_{x = x_0} \Delta x  \right|
+				</me>
+				For instance, suppose
+				<men>
+					y = C\, x^a.
+				</men>
+				Then, you can show that 
+				<men>
+					\frac{\Delta y}{y} = a\,\frac{\Delta x}{x}.
+				</men>
+			</p>
+
+			<example xml:id="example-uncertainties-in-period-of-pendulum">
+				<statement>
+					<p>
+						(a) What is the period of a pendulum of length <m>1.6\,\text{m} \pm 0.4\,\text{cm}</m>? Give the uncertainty part in both absolute and relative terms. (b) Compare the relative uncertainty in period to that the length. The formula for period of a pendulum is <m>T = \alpha\sqrt{L}</m>, with <m>\alpha = 2\pi/\sqrt{g} = 2.01\,\text{s/m}</m>.
+					</p>
+				</statement>
+
+				<!-- <hint><p>Use Eq. <xref ref="eq-y-eq-fx-pm-df-over-dx-times-Delta-x"/>.</p></hint> -->
+				<answer><p>(a) <m>\left( 79.1 \pm 0.3\right)\times 10^{-2}\, \text{s}</m>, (b) <m>0.25\%</m>, <m>0.38\%</m>.</p></answer>
+				<solution><title>(a)</title>
+					<p>
+						(a)
+
+						We will work in units of <m>m</m> and <m>s</m>. The main value of period is
+
+						<me>
+							T = \alpha\sqrt{L} = 2.01 \times \sqrt{1.6} = 2.54\,\text{s}.
+						</me>
+						From the given formula we have
+						<me>
+							\frac{dT}{dL} = \frac{\alpha}{2\sqrt{L}}.
+						</me>
+						Evaluating this at the main value of <m>L</m> we get
+						<me>
+							\frac{dT}{dL} = \frac{2.01}{2\sqrt{1.6}} = 0.791\,\text{s/m}.
+						</me>
+						Multiplying this with the <m>Delta L</m> in units of <m>m</m> will give the required uncertainty. Hence,
+						<me>
+							\Delta T = \frac{dT}{dL} \Delta L = 0.791\,\text{s/m} \times 0.4\times 10^{-2}\,\text{m} = 0.316\times 10^{-2}\text{s}.
+						</me>
+						Hence, the period of the pendulum is
+						<me>
+							T = \left( 0.791 \pm 0.316\times 10^{-2}\right)\, \text{s}.
+						</me>
+						Now, this is not really the final answer since we should round off the error part to one or two nonzero digits and make the entire answer to the same number of significant digits.
+						<me>
+							T = \left( 0.791 \pm 0.3\times 10^{-2}\right)\, \text{s}.
+						</me>
+						I would rather write this answer so that we have the same factor of 10 outside the parenthesis.
+						<me>
+							T = \left( 79.1 \pm 0.3\right)\times 10^{-2}\, \text{s}.
+						</me>
+						Now, you can see that the last digit of the main answer is the uncertain part.												
+
+
+					</p>
+				</solution>
+
+				<solution><title>(b)</title>
+
+				<p>
+					(b)
+
+					The relative uncertainty in <m>L</m> is 
+					<me>
+						\frac{\Delta L}{L} = \frac{0.4\,\text{cm}}{1.6\,\text{m}} = 0.25\times 10^{-2}.
+					</me>
+					That is <m>0.25\%</m>. The relative uncertainty in period is (ignoring the common factor)
+					<me>
+						\frac{\Delta T}{T} = \frac{0.3}{79.1} = 0.0038.
+					</me>
+					That is <m>0.38\%</m>.
+				</p>
+
+				</solution>
+
+
+
+			</example>
+
+		</subsection>
+		<subsection><title>Derived Quantity is a Function of Two Measured Quantities</title>
+			<p>
+				Let the derived quantity <m>z</m> be a function of the measured quantities <m>x</m> and <m>y</m>,   <m> z = f(x,y) </m>. Let measurements give the results <m>x = x_0 \pm \Delta x</m> and <m>y = y_0 \pm \Delta y</m>. We need to figure out main value and uncertainty in <m>z = z_0 \pm \Delta z</m>. The main part of <m>z</m> is easy to see that
+				<men>
+					z_0 = f(x_0, y_0).
+				</men>
+				For the uncertainty in <m>z</m>, we notice that there will be two contributions to <m>\Delta z</m>, one from <m>\Delta x</m> and the other from <m>\Delta y</m>. Letx call them <m>\Delta z_x</m> and <m>\Delta z_y</m>. Treating the two variables independetly, we can write them using <xref ref="eq-y-eq-fx-pm-df-over-dx-times-Delta-x-2"/> as follows.
+
+				<mdn>
+					<mrow xml:id="dz-x-from-dx-and-dz">\Delta z_x \amp = \left| \left(\frac{\partial f}{\partial x}\right)_{x = x_0, y=y_0} \Delta x  \right|</mrow>
+					<mrow xml:id="dz-y-from-dx-and-dz">\Delta z_y \amp = \left| \left(\frac{\partial f}{\partial y}\right)_{x = x_0, y=y_0} \Delta y  \right|</mrow>
+				</mdn>
+				Now, how do we combine <m>\Delta z_x</m> and <m>\Delta z_y</m> to obtain the net effect 
+				<m>\Delta z</m>? A imple minded answer is 
+				<me>
+					\Delta z = \Delta z_x + \Delta z_y.
+				</me>
+				Although, this does give a measure of uncertainty in <m>z</m>, it gives too large an estimate of this uncertainty. A more complete statistical analyss based on assuming x, and y  as independent random variables give the result that their variances should add, giving us a rule of <term>adding in quadrature</term>, i.e., as squares giving square of the result.
+				<men>
+					\left( \Delta z \right)^2 = \left( \Delta z_x \right)^2 + \left( \Delta z_y \right)^2.
+				</men> 
+				Hence, we have the following answer for the dependent quantity.
+				<men>
+					z = f(x_0, y_0) \pm \sqrt{ \left( \Delta z_x \right)^2 + \left( \Delta z_y \right)^2},
+				</men>
+				where <m>\Delta z_x</m> and <m>\Delta z_y</m> are given in Eqs. <xref ref="dz-x-from-dx-and-dz"/> and <xref ref="dz-y-from-dx-and-dz"/>. 
+
+			</p>
+			<p>
+				<alert>A TRICK:</alert> When dependent variable <m>z</m> is just a product of the independent variables exponentiated, then the relative uncertianty in <m>z</m> is simpler to compute since the above analysis can be used to show that
+				<men>
+					\text{For } z = C x^a y^b,\ \ \left(\frac{\Delta z}{z}\right)^2 = a\,\left(\frac{\Delta x}{x}\right)^2 + b\, \left(\frac{\Delta y}{y}\right)^2.
+				</men>
+			</p>
+
+	<example xml:id="ex-Propagation-of-Uncertainties-Through-a-Multiplicative-Formula"><title>Propagation of Uncertainties to Volume from Uncertainties in Length, Width, Height</title>
+
+		<statement>
+			<p>
+				The length, width and height of a metal rectangular parallelepiped were measured to be <m>2.54\ \text{cm}\pm 0.01\ \text{cm}</m>, <m>0.500\ \text{cm}\pm 0.005\ \text{cm}</m>, and <m>0.208\ \text{cm}\pm 0.001\ \text{cm}</m>  respectively.  Find the average volume, and absolute and relative uncertainties in volume.
+			</p>
+		</statement>
+		<!-- <hint><p>Use <m>V(L,W,T) = LWT</m>.</p></hint> -->
+		<answer><p><m>\left( 26.4 \pm 0.3\right)\times 10^{-2} \ \text{cm}^3</m>, <m>1.0\%</m>.</p></answer>
+		<solution>
+			<p>
+				The average or main value of volume is obtained by simply multiplying the average length, width and height and making sure to keep the appropriate significant figures.
+				<md>
+					<mrow>\text{Volume} \amp = 2.54\ \text{cm}\times 0.500\ \text{cm}\times 0.208\ \text{cm}</mrow>
+					<mrow>\amp = 0.264\ \text{cm}^3 = 2.64\times 10^{-1}\ \text{cm}^3.</mrow>
+				</md>
+				The uncertainty in volume will be constructed from uncertainty in volume due to uncertainty in each of the measured quantities. Treating <m>V</m> as a function of three independent vartiables <m>L</m>, <m>W</m>, and <m>T</m>, through the formula.
+				<me>
+					V(L,W,T) = LWT.
+				</me>
+				Thus the uncertainty in volume due to uncertainty in length is
+				<md>
+					<mrow>\Delta V_L \amp = WT\Delta L</mrow>
+					<mrow>\amp = 0.500\ \text{cm}\times 0.208\ \text{cm}\times 0.01\ \text{cm} </mrow>
+					<mrow>\amp = 0.001\ \text{cm}^3\ \text{(keeping only the most significant digit)}.</mrow>
+				</md>
+				Similarly, the uncertainty in volume due to the uncertainty in width is  <m>0.003\ \text{cm}^3</m>, and  the uncertainty in volume due to the uncertainty in thickness is <m>0.001\ \text{cm}^3</m>. Now we add the three sources of uncertainties in the volume in quadrature to obtain the net uncertainty.
+				<me>
+					\Delta V = \sqrt{\left(\Delta V_L\right)^2+\left(\Delta V_W\right)^2+\left(\Delta V_T\right)^2}=0.003\ \text{cm}^3.
+				</me>
+				Hence, the volume of the block is <m>(2.64 \pm 0.03)\times 10^{-1}\ \text{cm}^3</m>. The relative uncertainty in volume is obtained from the ratio of absolute uncertainty to the average value.
+				<me>
+					\text{Relative uncertainty} = \frac{\Delta V}{V_\text{ave}} =\frac{0.03}{2.64}= 1\%.
+				</me>
+			</p>
+		</solution>
+	</example>
+
+		</subsection>
+
+<!-- 			<p>
+
+				That is we are given <m>X = x_0 + \Delta X</m> and the relation <m> Y = c X </m>, then what will be main value of <m>Y</m> and uncertainty <m>\Delta Y</m>? The main value will simply be
+				<me>
+					Y = c\,x_0.
+				</me>
+				For the uncertainty part,  we just use Calculus on the relation <m>Y=cX</m>.
+				<me>
+					dY = c\, dX.
+				</me>
+				This will give
+				<me>
+					\Delta Y = c \Delta X.
+				</me>
+				Hence,
+				<me>
+					Y = c\,x_0 \pm c\,\Delta X.
+				</me>
+			</p> -->
+
+ 
+<!-- 			<ol>
+				<li> <alert>The derived quantity is a constant times the measured quantity. </alert>
+					For instance, if you measure the diameter of a spherical ball to be <m>D\pm \Delta D</m>, what would be the radius <m>R</m> of the ball? We know that <m>R = D/2</m>.  Therefore, we simply divide the diameter by 2.
+					<me>
+						R\pm\Delta R = \frac{D\pm \Delta D}{2} = \frac{D}{2} \pm \frac{\Delta D}{2}.
+					</me>
+					Therefore, the uncertainty in radius is 1/2 of the uncertainty in the diameter.
+					<me>
+						\Delta R = \frac{\Delta D}{2}.
+					</me>
+				</li>
+				<li><alert>Two measured quantities are added to get the composite quantity.</alert> 
+
+					For instance, suppose you measure the length and width of a rectangle to be <m>L\pm\Delta L</m> and <m>W\pm\Delta W</m> respectively. What would be the uncertainty in the perimeter?  The perimeter <m>P</m> of a rectangle is given as 2 times the length plus width, <m>P=2(L+W)</m>.
+					<me>
+						P\pm\Delta P = 2\left(L\pm\Delta L + W \pm\Delta W \right) = 2\left(L + W \right) \pm 2\left(\Delta L +\Delta W \right).
+					</me>
+					Therefore, the uncertainty in the perimeter would be two times the sum of the uncertainties in length and width.
+					<me>
+						\Delta P = 2\left(\Delta L +\Delta W \right).
+					</me>
+				</li>
+				<li><alert>A measured quantity is raised to a power. </alert>  
+					For instance, suppose you measure the diameter of a circle to be <m>D\pm\Delta D</m>.  What would be the area <m>A</m>? 
+					<me>
+						A\pm\Delta A = \frac{\pi}{4}\left(D \pm\Delta D \right)^2 = \frac{\pi}{4}D^2 \pm \frac{\pi}{2}D\Delta D + \frac{\pi}{4}(\Delta D)^2. 
+					</me>
+					Normally, the uncertainty will be much smaller than the main number.  Therefore, the term containing the square of the uncertainty in the expansion on the right side can be ignored in comparison with other terms to yield the following.
+					<me>
+						A\pm\Delta A =  \frac{\pi}{4}D^2 \pm \frac{\pi}{2}D\Delta D. 
+					</me>
+					Therefore, the uncertainty in the area of the circle will be <m>\Delta A =\frac{\pi}{2}D\Delta D</m>, which shows that the uncertainty in area of a circle not only depends on the uncertainty in the diameter but also the diameter itself.
+				</li>
+				<li><alert>Two or more measured quantities are multiplied together.</alert>
+
+					This is the case when we try to calculate area of a rectangle or volume of a parallelepiped. Suppose you measure the length, width and height of a parallelepiped to be <m>L\pm\Delta L</m>, <m>W\pm\Delta W</m> and <m>H\pm\Delta H</m>, and you wish to calculate its volume <m>V</m> with uncertainty in the volume <m>\Delta V</m>, how would that work? 
+					<md>
+						<mrow> V\pm\Delta V \amp =  (L\pm\Delta L)\times (W\pm\Delta W) \times (H\pm\Delta H)</mrow>
+					    <mrow> \amp =  LWH \pm \left( WH\Delta L + LH\Delta W + LW\Delta H \right),</mrow>
+					</md>
+					where, once again, we have assumed that the uncertainties are much smaller than the main readings so that we can neglect terms that have product of uncertainties with each other, and kept terms that have only one uncertainty factor in them.
+					The largest deviation from the main value occur when all the <m>\pm</m> are <m>+</m> or <m>-</m>, that is <m>(WH\Delta L + </m> <m>LH\Delta W +</m> <m>LW\Delta H )</m>. Thus, the value of the volume ranges between <m>V_{min}=LWH - </m> <m> (WH\Delta L + </m> <m> LH\Delta W </m> +  <m> LW\Delta H)</m> and <m>V_{max}=LWH +(WH\Delta L + LH\Delta W + LW\Delta H)</m>. In practice, we add each of the contributions to the uncertainty in the composite quantity in quadrature, i.e. square them first and then take the square root of the sum as illustrated next. Let 
+					<md>
+						<mrow> \amp \Delta V_L = WH\Delta L. </mrow>
+						<mrow> \amp \Delta V_W = LH\Delta W. </mrow>
+						<mrow> \amp \Delta V_H = LW\Delta H.</mrow>
+					</md>
+					Since each individual source of uncertainty is independent of other uncertainties, the net uncertainty in the volume is constructed by using Pythagorean theorem, giving a diagonal in the space of uncertainties.
+					<me>
+						\Delta V= \sqrt{\left(\Delta V_L\right)^2+\left(\Delta V_W\right)^2+\left(\Delta V_H\right)^2}.
+					</me>
+				</li>
+			</ol>
+ 
+		  -->
+	
+
+
+
+
+
+	<exercises>
+
+
+
+		<exercise xml:id="ex-Absolute-and-Relative-Uncertainties-in-Area-of-a-Square"><title>Absolute and Relative Uncertainties in Area of a Square</title>
+
+			<statement>
+				<p>
+					The side of a square plate is measured to be  <m>2.1\ \text{cm}\pm 0.1\ \text{cm}</m>.  (a) What are the absolute and relative uncertainties in the measured value of the side?  (b) Find the perimeter and the area of the square to correct significant figures. (c) Find the absolute and relative uncertainties in the perimeter and the area of the square.
+				</p>
+			</statement>
+			<hint><p>Use definitions.</p></hint>
+			<answer><p>(a) <m>0.1\,\text{cm},\, 0.05\,\text{or} 5\%</m>,
+			(b) <m>8.4\,\text{cm},\, 4.4\,\text{cm}^2 </m>
+			(c) <m>0.05, 0.04</m>.
+			  </p></answer>
+			<solution><title>(a)</title>
+				<p>
+					(a) The absolute uncertainty is given in the measurement itself, viz., <m>0.1\,\text{cm}</m>. From this and the average value, we obtain the relative uncertainty to be
+					<me>
+						\frac{\Delta x}{x} = \frac{0.1\,\text{cm}}{2.1\,\text{cm}} = 0.048\rightarrow 0.05.
+					</me>
+				</p>
+			</solution>
+			<solution><title>(b)</title>
+				<p>
+					(b)
+					The perimeter of the square will just be 4 times the side.
+					<me>
+						P = 4 \times 2.1\,\text{cm} = 8.4\,\text{cm}.
+					</me>
+					The are of the square will be side squared.
+					<me>
+						A = \left( 2.1\,\text{cm} \right)^2 = 4.41\,\text{cm}^2 \text(from calculator)
+					</me>
+					Now, this has to be rounded to two significant digits since 2.1 has two significant digits. So, out answer will be
+					<me>
+						A = 4.4\,\text{cm}^2.
+					</me>
+					Note: we didn't need to roud off the perimeter since it came out to be right number of digits.					
+				</p>
+			</solution>
+			<solution><title>(c)</title>
+				<p>
+					(c)
+					The perimeter is a linear function of side <m>x</m>. Therefore, the drivative is trivial, giving us the following.
+					<me>
+						\frac{dP}{dx} = 4.
+					</me>
+					Hence,
+					<me>
+						\Delta P = 4 \Delta x = 4 \times 0.1\,\text{cm} = 0.4\,\text{cm}
+					</me>
+					From this and the average value of <m>P</m>, the relative uncertainty in <m>P</m> will be
+					<me>
+						\frac{\Delta P}{P} = \frac{0.4\,\text{cm}}{8.4\,\text{cm}} = 0.05.
+					</me>
+					That is <m>5.0\%</m>.
+				</p>
+				<p>
+					Area is square of the side. Therefore, its derivative give
+					<me>
+						\frac{dA}{dx} =  2 x = 2\times 2.1\,\text{cm} = 4.2\,\text{cm}.
+					</me>
+					This gives the following for the abosolute error in area.
+					<me>
+						\Delta A = \left| \frac{dA}{dx} \Delta x \right| = 4.2 \times 0.1 = 0.042\rightarrow 0.04.
+					</me>
+					That is <m>4.0\%</m>.
+				</p>
+			</solution>
+		</exercise>
+
+
+		<exercise xml:id="ex-Absolute-and-Relative-Uncertainties-in-Area-of-a-Circle"><title>Absolute and Relative Uncertainties in Area of a Circle</title>
+
+			<statement>
+				<p>
+					The radius of a circle was measured to be <m>3.55\ \text{cm}\pm 0.05\ \text{cm}</m>.  (a) Find the circumference and the area of the circle to correct significant figures. (b) Find the absolute and relative uncertainties in the circumference and the area of the circle. 
+				</p>
+			</statement>
+			<hint><p>Use definitions.</p></hint>
+			<answer><p>
+				(a) <m>22.3\,\text{cm}, 39.6\,\text{cm}^2</m>,
+				(b) <m>\Delta C = 0.3\,\text{cm}, 0.01; \Delta A = 2\,\text{cm}^2, 0.05</m>
+			</p></answer>
+			<solution><title>(a)</title>
+				<p>
+					(a)
+					The average value of radius has three significant digits, which we will use to round off crcumference and area. From using the average value of the radius we get
+					<md>
+						<mrow> C \amp= 2\pi r = 2\times \pi \times 3.55 = 22.3\,\text{cm}\ \ \text{(rounded off!)}</mrow>
+						<mrow> A \amp= \pi r^2 = 39.6\,\text{cm}^2\ \  \text{(rounded off!)}</mrow>
+					</md>
+				</p>
+			</solution>
+			<solution><title>(b)</title>
+				<p>
+					(b)
+					Taking the derivative of <m>C</m> we get
+					<me>
+						\frac{dC}{dr} = 2\pi.
+					</me>
+					Therefore, abosolute uncertainty in circumference will be multiple of this with <mm>\Delta r</mm>, the uncertainty in <m>r</m>.
+					<me>
+						\Delta C = 2\pi \Delta r = 2\pi \times 0.05\ \text{cm} = 0.314...\text{cm},
+					</me>
+					which needs to be rounded off to <m>0.3\,\text{cm}</m>, since the uncertain part <m>0.05</m> in <m>r</m> has one significant digit. The relative error uses this and the average value to give
+					<me>
+						\frac{\Delta C}{C} = \frac{0.3}{22.3} = 0.013\rightarrow 0.01.
+					</me>
+					I rounded the answer off to one significant digit since <m>0.3</m> has one significant digit.
+				</p>
+				<p>
+					Taking the derivative of <m>A</m> we get
+					<me>
+						\frac{dA}{dr} = 4\pi r.
+					</me>
+					Therefore, abosolute uncertainty in  area
+					<me>
+						\Delta A = 4\pi r \Delta r = 4\pi\times 3.55\,\text{cm} \times 0.05\ \text{cm} = 2.23...\text{cm}^2,
+					</me>
+					which needs to be rounded off to <m>2\,\text{cm}^2</m>, since the uncertain part <m>0.05</m> in <m>r</m> has one significant digit. The relative error uses this and the average value to give
+					<me>
+						\frac{\Delta A}{A} = \frac{2}{39.6} = 0.05...\rightarrow 0.05.
+					</me>
+					I rounded the answer off to one significant digit since <m>0.05</m> has one significant digit.
+				</p>
+
+			</solution>
+		</exercise>
+
+		<exercise xml:id="ex-Uncertainty-in-Volume-and-Density"><title>Uncertainty in Volume and Density</title>
+
+			<statement>
+				<p>
+					The diameter of a spherical ball of mass <m>20.0 \pm 0.1\ \text{grams}</m> was measured by a micrometer and found to be <m> 16.582\ mm \pm 0.002\ \text{mm}</m>.  (a) Find the average volume of the sphere. (b) Find the absolute and relative uncertainties of the volume. (c) Find the density of the ball, giving both the average value and the uncertainty. 
+				</p>
+			</statement>
+			<hint><p>Use deifinitions.</p></hint>
+			<answer><p>
+				(a) <m>V = 2378.7\, \text{mm}^3</m>, 
+				(b) <m>\Delta V=0.9\, \text{mm}^3</m>; <m>\Delta V/V = 0.0004</m>,
+				(c) <m>8.41\times 10^{-3}\,\text{g/mm}^3; 4.0\times 10^{-4}\,\text{g/mm}, 5\%</m>.
+			
+			</p></answer>
+			<solution><title>(a)</title>
+				<p>
+					(a) Using the average value of diameter we will get the average value of the volume. We just need to be careful about the number of significant digits here. The diameter is given to five significant digits, so we will keep the calculated answer of vokume to three digits.
+					<me>
+						V = \frac{1}{6}\pi D^3 = 2378.6851605487154 \rightarrow 2378.7\, \text{mm}^3.
+					</me>
+				</p>
+			</solution>
+			<solution><title>(b)</title>
+				<p>
+					(b) 
+					For abosolute error, we use the derivative of <m>V = \frac{1}{6}\pi D^3 </m> to get
+
+					<me>
+						\frac{dV}{dD} = \frac{1}{2}\pi D^2 = 430.86918739561327\, \text{cm}^2
+					</me>
+					This gives <me>\Delta V </me> to be the following after we round off to one significant digit since <m>\Delta D</m> is <m> 0.002 \rightarrow 2\times 10^{-3}</m>.
+					<me>
+						\Delta V = \left( \frac{1}{2}\pi D^2\right) \Delta D = 0.8617...\rightarrow 0.9\text{ mm}^3.
+					</me>
+					Relative uncertainty is obtained from <m>\Delta V</m> and <m>V</m>.
+					<me>
+						\frac{\Delta V}{V} = \frac{0.9}{2378.7} = 0.000378... \rightarrow 0.0004.
+					</me>
+				</p>
+			</solution>
+			<solution><title>(c)</title>
+				<p>
+					(c) The density formula is <m>\rho = M/V</m>. Hence, the average density is
+					<me>
+						\rho = \frac{20.0}{2378.7} = 0.00840795...\rightarrow 8.41\times 10^{-3}\,\text{g/mm}^3,
+					</me>
+					where I rounded off the answer to three significant digits. How about the uncertaint? For that we need to compute two derivatives and combine them in quadrature.
+					<md>
+						<mrow> \frac{d\rho}{dM}\amp = \frac{1}{V}</mrow>
+						<mrow> \frac{d\rho}{dV}\amp = -\frac{M}{V^2}</mrow>
+					</md>
+					Hence, we get the two contributions to error to be (using absolute value)
+					<md>
+						<mrow> \rho_M = \frac{1}{V} \, \Delta V = \frac{1}{2378.7}\times 0.9 = 3.78\times 10^{-4}</mrow>
+						<mrow> \rho_V = \frac{M}{V^2} \Delta M = \frac{20.0}{2378.7^2}\times 0.1 = 3.5\times 10^{-7}</mrow>
+					</md>
+					Now, the absolute error in density will be dominated by the error in mass.
+					<me>
+						(\Delta \rho)^2 = \rho_M^2 + \rho_V^2 \approx 3.78\times 10^{-4}.
+					</me>
+					Hence, absolute error in density will be
+					<me>
+						\Delta \rho = 4.0\times 10^{-4}\,\text{g/mm},
+					</me>
+					rounding off to one significant digit. You can write this number in scientific notation, where counting digits is easier. The relative error is
+					<me>
+						\frac{\Delta \rho}{\rho} = \frac{4.0\times 10^{-4}}{8.40\times 10^{-3}} = 0.05. 
+					</me>
+					That is <m>5\%</m> relative error.
+					
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="ex-Uncertainty-in-Mass-from-Measurements-on-Diameter"><title>Uncertainty in Mass from Measurements on Diameter</title>
+
+			<statement>
+				<p>
+					The diameter of a spherical steel ball was measured by a Vernier caliper to be <m>10.35\ \text{mm}\pm0.01\ \text{mm}</m>.  Assume the density of steel to be <m>7.8\ \text{g/cm}^3</m>, exactly.  (a) Find the average volume of the sphere. (b) Find the absolute and relative uncertainties in the volume. (c) Find the mass of the sphere, giving both the average value and the uncertainty.
+				</p>
+			</statement>
+			<hint><p>Use definitions.</p></hint>
+			<answer><p>
+				(a) <m>581\, \text{mm}^3</m>; (b) <m>\Delta V=2\, \text{mm}^3</m>; <m>\Delta V/V = 0.3\%</m>; (c) <m>(4.53 \pm .02)\, \text{g}</m>.
+			</p></answer>
+			<solution><title>(a)</title>
+				<p>
+					(a) The average volume of sphere
+					<me>
+						V = \frac{1}{6}\pi d^3 = \frac{1}{6}\pi (10.35\,\text{mm})^3 = 580.5\rightarrow 581\,\text{mm}^3.
+					</me>
+				</p>
+			</solution>
+			<solution><title>(b)</title>
+				<p>
+					(b) Absolute uncertainty in volume
+					<md>
+						<mrow> \Delta V \amp = \left|\frac{dV}{dD} \Delta D\right| </mrow>
+						<mrow> \amp = \frac{1}{2}\pi d^2 \Delta D = \frac{1}{2}\pi \times 10.35^2 \times 0.01 = 1.68\,\text{mm}^3. </mrow>
+					</md>
+					Rounding to one significant digits this gives <m>\Delta V = 2\,\text{mm}^3</m>. The relative uncertainty on volume will be
+					<me>
+						\frac{\Delta V}{V} = \frac{1.7\, \text{mm}^3 }{581\, \text{mm}^3} = 0.0029\rightarrow 0.003.
+					</me>
+				</p>
+			</solution>
+
+			<solution><title>(c)</title>
+				<p>
+					(c) The formula for mass, <m>M=\rho V</m>, where we use <m>\rho</m> as if it was known exactly. thjer average mass will be
+					<me>
+						M = \rho V = 7.8\, \text{g/cm}^3 \times 581\, \text{mm}^3.
+					</me> 
+					Now, notice the mismatch units. We need to convert units using <m>10\,\text{mm} = 1\,\text{cm}</m>. For instance,
+					<me>581\, \text{mm}^3 = \frac{581}{10^3}\,\text{cm}^3 = 0.581\,\text{cm}^3</me>.
+					Therefore,
+					<me>
+						M = 4.5318\,\text{ g} \rightarrow 4.53\text{g}.
+					</me>
+					The absolute uncertainty in <m>M</m> will be 
+					<me>
+						\Delta M = 7.8\Delta V = 7.8\, \text{g/cm}^3\times 2\times 10^{-3}\, \text{cm}^3 = 0.0156\, \text{g}. 
+					</me>
+					This number needs to be rounded off to one significant digit. That will give
+					<me>
+						\Delta M = 0.02\, \text{g}.
+					</me>
+					The relative uncertainty will be
+					<me>
+						\frac{\Delta M}{M} = \frac{0.02}{4.53} = 0.004\rightarrow 0.4\%.
+					</me>
+				</p>
+			</solution>
+
+		</exercise>
+
+	 
+		<exercise xml:id="ex-Uncertainty-in-Volume-of-a-Cylinder-from-Measurements-on-Diameter-and-Height"><title>Uncertainty in Volume of a Cylinder from Measurements on Diameter and Height</title>
+
+			<statement>
+				<p>
+					The height and diameter of a platinum cylindrical rod are found to be <m>39.000\ \text{mm}\pm 0.001\ \text{mm}</m> and <m>390.000\ \text{mm}\pm 1.000\ \text{mm}</m>  respectively.  Find its volume, giving both the average value and the uncertainty.
+				</p>
+			</statement>
+			<hint><p><m>V = \frac{1}{4}\pi D^2 H</m>.</p></hint>
+			<answer><p>
+				<m>(4.66 \pm 0.02)\times10^6\ mm^3,\ \text{relative:}\ 5.13\times 10^{-3}</m>.
+			</p></answer>
+			<solution>
+				<p>
+					The average value is 
+					<me>
+						V = \frac{1}{4}\pi D^2 H = \frac{1}{4}\pi \times 390^2\times 39.000 = 4658903\rightarrow 4.66\times 10^{6}\,\text{mm}^3.
+					</me>
+					The square of the uncertainty in volume by quadrature on the variables <m>D</m> and <m>H</m> aree:
+					<me>
+						(\Delta V)^2 = \left( \frac{1}{2}\pi D H \Delta D \right)^2 +   \left( \frac{1}{4}\pi D^2 \Delta H \Delta D \right)^2.
+					</me>
+					Now, we just plug in the numbers, find <m>\Delta V</m> by taking the square root, and adjusting for the significant digits. I found <m>23892\,\text{mm}^3</m>, which to three significant digits is <m>2.39\times 10^{4}\, \text{mm}^3 = 0.0239 \times 10^{6}\, \text{mm}^3 </m>. The relative uncertainty will be
+					<me>
+						\frac{\Delta V}{V} = \frac{2.39\times 10^{4}}{4.66\times 10^{6}} = 5.13\times 10^{-3}.
+					</me>
+
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="ex-Uncertainty-in-a-Five-Mile-Run"><title>Uncertainty in a Five Mile Run</title>
+
+			<statement>
+				<p>
+					A runner completes a <m>5\text{-mile}</m> run in 25 minutes and 10 seconds. The uncertainty in the length of the course is <m>20\text{ m}</m> and in time is <m>5\text{ sec}</m>. What is her speed, absolute and relative uncertainties in speed in units of <m>\text{m/s}</m>?
+				</p>
+			</statement>
+			<hint><p>Speed <m>v = D/T</m>. </p></hint>
+			<answer><p><m>(5.33 \pm 0.02)\,\text{m/s}.</m></p></answer>
+			<solution>
+				<p>
+					Average speed is obtained simply by plugging in the average values of distance <m>D</m> and time <m>T</m>.
+					<me>
+						v = \frac{D}{T} = \frac{5\text{mi}}{25\, \text{min}+10\,\text{sec}}.
+					</me>
+					Convert mile into meter and time into sec. For rounding off, we assume that the given digits are all significant along with the zero that must be there after we place a decimal. This information is not given in the problem, but we need to assume something reasonable. For conversion we use 1609.34 meters in one mile. 
+					<me>
+						v = \frac{ 5 \times 1609.34  }{ 25\times 60 + 10} = 5.33\,\text{m/s}.
+					</me>
+					Let us compute the relative uncertainty first by noting that
+					<me>
+						(\Delta v)^2 = \left(\frac{\Delta D}{T}\right)^2 + \left(\frac{D\Delta T}{T^2}\right)^2				
+					</me>
+					Dividing by <m>v=D/T</m>, this simplifies to
+					<me>
+						\left(  \frac{\Delta v}{v} \right)^2 = \left(\frac{\Delta D}{D}\right)^2 + \left(\frac{\Delta T}{T}\right)^2	
+					</me>
+					Numerically,
+					<me>
+						\frac{\Delta v}{v} = \sqrt{   [20/(5 \times 1609.34)]^2 + [ 5/(25\times 60 + 10) ]^2  } = 0.004.
+					</me>
+					Hence, absolute uncertainty in speed is
+					<me>
+						\Delta v = 0.004 \times 5.33 = 0.02\, \text{m/s}.
+					</me>
+
+				</p>
+			</solution>
+		</exercise>
+
+
+	 </exercises>
+
+
+
+
+</section>

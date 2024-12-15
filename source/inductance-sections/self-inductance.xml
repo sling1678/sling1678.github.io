@@ -1,0 +1,184 @@
+<section xml:id="Self-Inductance"><title> Self-Inductance </title>
+	<introduction>
+		<p>
+			In <xref ref="inductance-definition" />, we saw that a changing current in one circuit induces currents in nearby circuits through its magnetic field.  However, you do not need two circuits to see the emergence of induced current. Even in one circuit, magnetic field of its own current also passes through the area of the circuit as illustrated in <xref ref="fig-self-inductance-simple-loop"/>.
+		</p>
+		<sidebyside widths="45% 5% 50%">
+			<p>
+				 If current changes with time, e.g., when you turn on a switch, the magnetic flux of of its own magnetic field will change and hence a current will be induced.
+			</p>
+			<p></p>
+			<figure xml:id="fig-self-inductance-simple-loop">
+				<caption>
+					 
+				</caption>
+				<image source="./images/inductance/self-inductance-simple-loop.png" width="70%"/>
+			</figure>
+		</sidebyside>
+		<!-- <p>
+			The changing flux of the magnetic field of its own current gives rise to a self-induced electromotive force, called <term>back EMF</term>. <em>The back EMF  drives an induced current in the same direction as the original current if the current in the circuit is decreasing and in the opposite direction if the current in the circuit is increasing.</em>
+		</p> -->
+
+		<p>
+			Since Faraday's flux rule does not care about the source of magnetic field, an EMF will be induced in the circuit if the magnetic flux <m>\Phi_{\text{self}}</m>  from its own magnetic field changing with time.  This EMF is called self-induced or the <term>back EMF</term>. We will use symbol <m>\mathcal{E}_{\text{back}}</m> for the back EMF.
+			<me>
+				\mathcal{E}_{\text{back}} = -\frac{\Delta\Phi_{\text{self}}}{\Delta t}\rightarrow -\frac{d\Phi_{\text{self}}}{d t}.
+			</me>
+			Since the magnetic field <m>\vec B</m> of the current in the circuit is proportional to current <m>I</m> in the circuit, the magnetic flux <m>\Phi_{\text{self}}</m> through an open surface attached to the circuit will be proportional to the current in the circuit.
+			<me>
+				\left|\Phi_{\text{self}}\right| \propto |I|.
+			</me>
+			We write this proportionality as equality  by introducing a constant <m>\mathcal{L}</m>:
+			<me>
+				\Phi_{\text{self}} = \mathcal{L} I.
+			</me>
+			The proportionality constant <m>\mathcal{L}</m> is called the self inductance, or, simply the inductance of the circuit. It depends on the geometry of the loop.  The induced EMF due to the self induction is thus written as
+			<me>
+				\mathcal{E}_{\text{back}} = -\mathcal{L}\frac{\Delta I}{\Delta t} \rightarrow -\mathcal{L}\frac{d I}{d t}.
+			</me>
+			The negative of the time derivative of current in this equation tells us that the induced EMF, and hence, the induced current will be in a direction that opposes the change of current: if the current is increasing, then induced current will be in the opposite direction of the current, and, if the current is decreasing, then the induced current will be in the same direction as the current at the time.  Of course, when the current is steady and not changing then <m>\mathcal{E}_{\text{back}}</m> will be zero.
+
+		</p>
+
+	</introduction>
+
+	<exercise xml:id="ex-Self-Inductance-of-a-Solenoid"><title> Self Inductance of a Solenoid </title>
+		<statement>
+			<p>
+				Find the self inductance of a solenoid with length <m>l</m> and radius <m>a</m> with <m>n</m> turns per unit length.
+			</p>
+
+		</statement>
+		<hint> <p> Imagine a current flowing through the solenoid. Find the magnetic flux through the solenoid. </p> </hint>
+		<answer> <p> <m>\pi\mu_0 n^2 l a^2</m>.  </p> </answer>
+		<solution> 
+			<p>
+				Imagine an arbitrary current <m>I</m> flowing through the solenoid. We will determine magnetic flux of this current through the solenoid.  Even though, the solenoid is of finite length, we will assume it to be of infinite length with <m>n</m> turns per unit length with magnetic field given by
+				<md>
+					<mrow> \amp B_{\text{in}} = \mu_0 n I,</mrow>
+					<mrow> \amp B_{\text{out}} = 0. </mrow>
+				</md>
+				We neglect the magnetic field of the current in the external wire needed to complete the circuit. To compute the magnetic flux through the circuit of the solenoid, we attach an open surface that has the circuit at its boundary. 
+			</p>
+			<sidebyside widths="55% 10% 35%">
+				<p>
+					Ignoring the magnetic flux through the part of the surface that is outside the loops, the magnetic flux <m>\Phi_{\text{self}}</m> through the closed circuit will be approximately equal to the magnetic flux through one loop times the number of loops in the solenoid.
+				</p>
+				<p> </p>
+				<image source="./images/inductance/self-induct-solenoid-1.png" width="70%"/>
+			</sidebyside>
+ 
+			<p>
+				<me>
+					|\Phi_{\text{self}}| \approx \Phi \text{ through one loop } \times \text{ No. of loops} = \left[\mu_0 n I \times \pi a^2\right]\times nl,
+				</me>
+				Factoring out the current gives the desired self inductance <m>\mathcal{L}</m> of a solenoid. 
+				<men xml:id="eq-self-induct-sol-1">
+					\mathcal{L} = \pi\mu_0 n^2 l a^2. 
+				</men>
+			</p>
+			<p>
+				Therefore, a longer solenoid with more dense loops and larger area of cross-section will have a higher self-inductance. Another thing to notice is the role of content inside solenoid. If you wrap solenoid around an iron core, you will replace <m>\mu_0</m> by <m>\mu</m>. This will increase the magnetic field inside by hundreds of fold, and hence, self-inductance of a solenoid wrapped around iron core can often be hundreds of times higher.
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="ex-Self-Inductance-of-a-Coaxial-Cable"><title> (Calculus) Self Inductance of a Coaxial Cable </title>
+		<statement>
+			<p>
+				 Determine the self-inductance per unit length of a coaxial cable with an inner hollow conductor of radius <m>a</m> and outer conductor of radius <m>b</m>.  <!-- (b) Find the amount of energy in magnetic field stored per unit length of the coaxial cable if a current <m>I</m> flows in the inner wire and returns in the outer conductor. (Ignore the effect of the magnetism of the material.)  --> 
+			</p>
+
+		</statement>
+		<hint> <p>  Try passing current <m>I</m> through the central wire with the return current in the outer jacket.l </p> </hint>
+		<answer> <p>  <m> \dfrac{\mu_0}{2\pi}\:\ln\left( \dfrac{b}{a}\right)</m>.
+		<!-- , (b)  <m>U/h = \frac{\mu_0 I }{4\pi}\left( 1/a-1/b\right)</m>.  --></p> </answer>
+		<solution> <!-- <title>(a)</title> -->
+			<p>
+				For the purpose of calculations, we pass a current I through the coaxial cable with the return current in the outer jacket.  The magnetic field between the conductors is circulating with magnitude given by Ampere's law.
+				<me>
+					B = \dfrac{\mu_0}{2\pi}\:\dfrac{I}{r}\ \ (a \lt r \lt b).
+				</me>
+				Let us find the flux through a rectangular cross-section of height H parallel to the length of the cable and width from <m>r = a</m> to <m>r = b</m>. 
+				<md>
+					<mrow> \Phi \amp = \iint\:\vec B\cdot d\vec A = \dfrac{\mu_0\: I\: h}{2\pi}\:\int_a^b\:\dfrac{dr}{r}</mrow>
+					<mrow> \amp = \dfrac{\mu_0\: I\: h}{2\pi}\:\ln\left( \dfrac{b}{a}\right).</mrow>
+				</md>
+				Dividing the flux <m>\Phi</m> by the current <m>I</m> give the self-inductance the cable, from which we obtain the self-inductance per unit length to be
+				<me>
+					\dfrac{L}{h} = \dfrac{\Phi/I}{h} = \dfrac{\mu_0}{2\pi}\:\ln\left( \dfrac{b}{a}\right)
+				</me>
+			</p>
+		</solution>
+		<!-- <solution> <title>(b)</title>
+			<p>
+				(b) The amount of magnetic energy can be obtained by integrating <m>B^2</m> in the volume between the conductors.  We take a length <m>h</m> parallel to the wires to do the calculation.  The energy stored in this finite space would be
+				<md>
+					<mrow> U_{\text{mag}}\amp = \dfrac{1}{2\mu_0}\:\int\:B^2\:dV</mrow>
+					<mrow> \amp = \dfrac{1}{2\mu_0}\:\int\:\left(\dfrac{\mu_0}{2\pi}\:\dfrac{I}{r} \right)^2 \:2\pi\:h\:dr</mrow>
+					<mrow>\amp =  \dfrac{\mu_0\:I^2\:h}{4\pi}\:\left(\dfrac{1}{a} -\dfrac{1}{b} \right).</mrow>
+				</md>
+				Hence, magnetic energy per unit length is
+				<me>
+					\dfrac{U_{\text{mag}}}{h} = \dfrac{\mu_0\:I^2}{4\pi}\:\left(\dfrac{1}{a} -\dfrac{1}{b} \right).
+				</me>
+			</p>
+		</solution> -->
+	</exercise>
+
+	<exercise xml:id="ex-Self-inducatance-of-a-Rectangular-Torroid-and-Magnetic-Energy-in-Torroid"><title> 
+	(Calculus) Self-inducatance of a Rectangular Torroid </title>
+		<statement>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					Find the self-inductance of a loop of wire with <m>N</m> turns around a rectangular cross-section torroid of internal radius <m>a</m>, external radius <m>b</m> and height <m>h</m> (<xref ref="fig-exer-self-induct-torroid"/>). <!-- (b) Find the amount of energy in the magnetic field if a current <m>I</m> runs in the wire. -->
+				</p>
+				<p></p>
+				<figure xml:id="fig-exer-self-induct-torroid">
+					<caption></caption>
+					<image source="./images/inductance/exer-self-induct-torroid.png" width="50%"/>
+				</figure>
+			</sidebyside>
+		</statement>
+		<hint> <p> Use Ampere's law to find magnetic field at a point inside the torroid. You will find that magnetic field depends on the radial distance from the axis.  </p> </hint>
+		<answer> <p>   <m>L = \left(\mu_0Nh/2\pi \right)\ln{\left( b/a\right)}</m>.
+		<!-- ,
+				(b) <m>\dfrac{\mu_0\:N\: I^2\: h}{4\pi}\:\ln\left( \dfrac{b}{a}\right) </m>. --></p> </answer>
+		<solution><!-- <title>(a)</title> -->
+			<p>
+				From symmetry in the situation we expect the magnetic field inside the solenoid to circulate about the axis.  Consider a circular Amperian loop of radius <m>r</m> around the axis with <m>a\lt r\lt b</m>.  Then, from Ampere's law we will have
+				<me>
+					2\pi\;r\:B = \mu_0\:N\:I,
+				</me> 
+				since <m>N</m> currents will pass through the are of the Amperian loop. This shows that the magnetic field inside the solenoid is not constant but depends on the distance <m>r</m> from the axis.
+				<me>
+					B = \dfrac{\mu_0\:N\:I}{2\pi}\:\dfrac{1}{r}.\ \ \ \ (1)
+				</me>
+				This is different from what you know for a straight solenoid, where the magnetic field is constant in the space of the solenoid. The flux through the cross-section of the present solenoid can be obtained by integrating the magnetic field in (1) over the area of cross-section of the toroid.
+				<md>
+				 	<mrow> \Phi \amp = \int_a^b\: \dfrac{\mu_0\:N\:I}{2\pi}\:\dfrac{1}{r}\times h\: dr</mrow>
+				 	<mrow> \amp = \dfrac{\mu_0\:N\:I\: h}{2\pi}\:\ln\left( \dfrac{b}{a}\right).</mrow>
+				</md>
+				Factoring out current gives the self-inductance <m>L</m> of the toroid.
+				<me>
+					L = \dfrac{\Phi}{L} = \dfrac{\mu_0\:N\: h}{2\pi}\:\ln\left( \dfrac{b}{a}\right)
+				</me>
+			</p>
+		</solution>
+		<!-- <solution><title>(b)</title>
+			<p>
+				(b)	When a current <m>I</m> passes through a circuit of self-inductance <m>L</m>, the total magnetic energy can be shown to be equal to <m>\dfrac{1}{2} L I^2</m>.  Therefore, 
+				<me>
+					U_{\text{mag}} = \dfrac{\mu_0\:N\: I^2\: h}{4\pi}\:\ln\left( \dfrac{b}{a}\right).
+				</me>
+				You can obtain this result by also integrating <m>(B^2/2\mu_0)dV</m> over the volume of the toroid.
+			</p>
+		</solution> -->
+	</exercise>
+ 
+ 
+ 
+
+
+
+</section>
