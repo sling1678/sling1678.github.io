@@ -34,6 +34,47 @@
 		
 	</subsection>
 
+
+
+	<example>
+		<statement>
+			<p>
+				The velocity vectors of a car at three instants are shown in <xref ref="fig-exer-accl-ave-1"/>.   Use the arrow for the velocity at <m>t=0</m> for the scale for vectors in the figure.  Use the geometric approach of vectors to find the average acceleration in the following intervals: (i) from <m>t=0</m> to <m>t=50</m> sec, (ii) from <m>t=50</m> sec to <m>t=100</m> sec, (iii) from <m>t=0</m> to <m>t=100</m> sec.
+			</p>
+			<figure xml:id="fig-exer-accl-ave-1">
+				<caption></caption>
+				<image source="./images/two-dim-motion/exer-accl-ave-1.png">
+					<shortdescription></shortdescription>
+				</image>
+			</figure>
+		</statement>
+		<solution>
+			<p>
+				<xref ref="fig-exer-accl-ave-1-soln-ex-24"/> shows vector diagrams of the velocity vectors and the change in velocity for different intervals. The arrow for 10 m/s is taken as the scale for the drawing. The difference <m>\vec v_2 - \vec v_1</m> of two vectors is obtained by drawing the vector <m>v_2</m>, and then, drawing the vector <m>\vec v_1</m> at the tip of the vector <m>\vec v_2</m> with the direction of <m>\vec v_1</m> reversed.  Then, the difference is equal to the vector from the tail of the vector <m>\vec v_2</m> to the tip of the reversed vector <m>\vec v_1</m>. 
+			</p>
+			<figure xml:id="fig-exer-accl-ave-1-soln-ex-24">
+				<caption></caption>
+				<image source="./images/two-dim-motion/exer-accl-ave-1-soln-ex-24.png">
+					<shortdescription></shortdescription>
+				</image>
+			</figure>
+			<p>
+				We find the following for the three intervals:
+			</p> 
+			<p> 
+				(i) For the interval from <m>t=0</m> to <m>t=50</m> sec, the change in velocity has magnitude 5 m/s and the direction towards the right in the figure. This change takes place over 50 sec.  Therefore, the average acceleration in this interval has the magnitude <m>0.1\, \text{m/s}^2</m> and the direction towards the right.
+			</p>
+			<p>
+				(ii) For the interval from <m>t=50</m> sec to <m>t=100</m> sec, the change in velocity has magnitude 25 m/s and the direction towards the left in the figure. This change takes place over 50 sec.  Therefore, the average acceleration in this interval has the magnitude <m>0.5\, \text{m/s}^2</m> and the direction towards the left.
+			</p>
+			<p>
+				(iii) For the interval from <m>t=0</m> sec to <m>t=50</m> sec, the change in velocity has magnitude 20 m/s and the direction towards the left in the figure. This change takes place over 100 sec.  Therefore, the average acceleration in this interval has the magnitude <m>0.2\, \text{m/s}^2</m> and the direction towards the left.
+			</p>
+		</solution>
+
+	</example>
+
+
 	<example xml:id="Average-Acceleration"><title> Average Acceleration </title>
 	<statement>
 		<p>
@@ -140,6 +181,34 @@
 			</figure>
 		</solution>
 	</example>
+
+	<exercise xml:id="exer-accl-ave-3"><title>Acceleration of a Car Moving at Constant Speed on a Curved Road</title>
+	
+	
+		<statement>
+			<sidebyside widths="50% 10% 40%">
+				<p>
+					<p>
+						A car is moving at a constant speed of <m>5</m> m/s on a curved road as shown in <xref ref="fig-exer-accl-ave-3"/>.  Suppose the time interval between successive points A, B, C, D, and E is <m>30</m> sec. (a) Draw the velocity vectors to scale at points A, B, C, D, and E. State the scale for your drawings.
+					</p>
+					<p>
+						(b) Find the average acceleration between successive points marked on the trajectory.  Give both the magnitude and the direction.
+					</p>
+				</p>
+				<p></p> 
+				<figure xml:id="fig-exer-accl-ave-3">
+					<caption></caption>
+					<image source="./images/two-dim-motion/exer-accl-ave-3.png">
+						<shortdescription></shortdescription>
+					</image>
+				</figure>
+			</sidebyside>
+
+
+		</statement>
+	</exercise>
+
+
 
 
 	<subsection> <title> Instantaneous Acceleration - Formal Definition</title>
@@ -254,6 +323,43 @@
 		</p>
 	</subsection>
 
+	<example xml:id="example-Velocity-and-Acceleration-from-Position-as-Function-of-Time"><title>Velocity and Acceleration from Position as Function of Time</title>
+		<statement>
+			<p>
+				A car moves on a straight road such that its position from a reference point is given as   <m>x(t) = 3 + 5 t + 2 t^2 + 0.4 t^3,\ y=0,\ z=0</m>, where <m>t</m> is in sec and <m>x</m> in meter.  (a) Determine the velocity and acceleration at (i) <m>t =0</m>, (ii) <m>t = 0.5\ \textrm{sec}</m> and (iii) <m>t = 1\ \textrm{sec}</m>. (b) Determine the average velocity and average acceleration between <m>t = 0</m> and <m>t = 1\ \textrm{sec}</m>. 
+			</p>
+		</statement>
+		<solution><title>a</title>
+			<p> 
+				Taking time derivative of <m>x</m> successively, we get <m>v_x</m> and <m>a_x</m>.
+				<md>
+					<mrow> \amp v_x = 5 + 4t+1.2 t^2;\ v_y = 0;\ v_z = 0\ \ \Longrightarrow \vec v = (5 + 4t+1.2 t^2)\ \hat u_x\ \ \textrm{[Unit: m/s]}</mrow>
+					<mrow> \amp a_x =  4+2.4 t;\ a_y = 0;\ a_z = 0\ \ \Longrightarrow \vec a = (4+2.4 t)\ \hat u_x\ \ \textrm{[Unit: m/s}^2\text{]} </mrow>
+				</md>
+				Put the values of <m>t</m> for the instants in question. For instance, when you put (iii) <m>t=1</m> you get 
+				<me>
+					v_x = 10.2\,\text{m/s},\ \ a_x = 6.4\,\text{m/s}^2.
+				</me>
+				
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				The <m>x</m>-components of average velocity and average acceleration between <m>t=0</m> and <m>t=1</m> s are
+				<md>
+					<mrow> \amp v_{av,x} = \frac{x(1\ \textrm{s})-x(0)}{1\ \textrm{s}-0} = \frac{10.4\ \textrm{m} - 3\ \textrm{m}}{1\ \textrm{s}} = 7.4\ \textrm{m/s}</mrow>
+					<mrow> \amp a_{av,x} = \frac{v_x(1\ \textrm{s})-v_x(0)}{1\ \textrm{s}-0} = \frac{10.2\ \textrm{m/s} - 5\ \textrm{m/s}}{1\ \textrm{s}} = 5.2\ \textrm{m/s}^2</mrow>
+				</md>
+				Since the <m>y</m>- and <m>z</m>-components are zero here, the magnitudes of the average velocity and average acceleration are equal to the absolute value of their <m>x</m>-components, and since the <m>x</m>-components are positive, the directions of these physical quantities are towards the positive <m>x</m>-axis.
+			</p>
+		</solution>
+
+
+
+	</example>
+
+
+
 		<example xml:id="Acceleration-of-an-Airplane-during-a-Takeoff"><title> (Calculus) Acceleration of an Airplane during a Takeoff </title>
 			<statement>
 				<p>
@@ -313,5 +419,81 @@
 			</solution>
 		</example>
 
+<exercises xml:id="exercises-section-acceleration-vector">
+
+	<exercise xml:id="ex-Instantaneous-Velocity-and-Acceleration-of-a-Projectile-from-Position-as-Function-of-Time"><title>Velocity and Acceleration of a Projectile from Position as Function of Time</title>
 	
+	
+		<statement>
+			<p>
+				The position of a projectile in the air is monitored with respect to a reference point in a Cartesian coordinate system. The <m>x</m>-axis of the Cartesian coordinate system is in the horizontal direction and the <m>y</m>-axis vertically up.  The <m>z</m>-coordinate of the projectile does not change with time. The data for the <m>x</m> and <m>y</m>-coordinates are plotted and the following functions fit the <m>x</m> vs <m>t</m> and <m>y</m> vs <m>t</m> curves: <m>x(t) = 40 t</m> and <m> y(t) = 60 t - 5 t^2</m>. (a) Find the instantaneous velocity of the projectile at the following instants: (i) <m>t=0</m>, (ii) <m>t=4\ \textrm{sec}</m>, (iii) <m>t=8\ \textrm{sec}</m>, and (iv) <m>t=10\ sec</m>. (b) Find the instantaneous acceleration of the projectile at the following instants: (i) <m>t=0</m>, (ii) <m>t=4\ \textrm{sec}</m>, (iii) <m>t=8\ \textrm{sec}</m>, and (iv) <m>t=10\ \textrm{sec}</m>. 
+			</p>
+		</statement>
+		<solution><title>a</title>
+		
+		
+			<p>
+				Calculating the derivatives we find
+				<md>
+					<mrow> \amp v_x = 40;\ v_y = 60 - 10 t;\ v_z = 0\ \ \Longrightarrow \vec v = 40\ \hat u_x + (60 - 10 t)\ \hat u_y\ \ [\textrm{m/s}]</mrow>
+					<mrow> \amp a_x = 0;\ a_y = - 10 ;\ v_z = 0\ \ \Longrightarrow \vec a =  - 10 \ \hat u_y\ \ [\textrm{m/s}^2]</mrow>
+				</md>
+				Plug in the values of <m>t</m> for the components of the instantaneous velocity and acceleration at particular instants.  The magnitudes and directions of the velocity and acceleration can be obtained in the usual way.
+			</p>
+			<p>
+				(i) <m>v_x(0) = 40\ \textrm{m/s}</m>,  <m>v_y(0) = 60\ \textrm{m/s}</m>,<m>\ v_z(0) = 0</m>, 
+				<me>
+					v(0) = \sqrt{(40\ \textrm{m/s})^2 + (60\ \textrm{m/s})^2} = 72\ \textrm{m/s},
+				</me>
+				<me> 
+					\theta = \tan^{-1}\left(\frac{60\ \textrm{m/s}}{40\ \textrm{m/s}} \right)=56^{\circ}.
+				</me> 
+			</p>
+			<p>  
+				(ii) <m>v_x(4) = 40\ \textrm{m/s}</m>,  <m>v_y(4) = 20\ \textrm{m/s}</m>, <m>v_z(4) = 0</m>, <m>v(4) = 45\ \textrm{m/s}</m>, <m>\theta = 27^{\circ}</m>.
+			</p> 
+			<p>  
+				(iii) <m>v_x(8) = 40\ \textrm{m/s}</m>,  <m>v_y(8) = -20\ \textrm{m/s}</m>, <m>v_z(8) = 0</m>, <m>v(8) = 45\ \textrm{m/s}</m>, <m>\theta = 333^{\circ}</m>.
+			</p> 
+			<p> 
+				(iv) <m>v_x(10) = 40\ \textrm{m/s}</m>,  <m>v_y(10) = -40\ \textrm{m/s}</m>, <m>v_z(10) = 0</m>, <m>v(8) = 72\ \textrm{m/s}</m>, <m>\theta = 315^{\circ}</m>.
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				The instantaneous accelerations are computed in a similar way as (a).
+			</p>
+		</solution>
+	</exercise>
+
+
+<exercise xml:id="exer-Velocity-and-Acceleration-of-a-Car-Moving-in-a-Circular-Track-from-Position"><title>Velocity and Acceleration of a Car Moving in a Circular Track from Position</title>
+
+
+	<statement>
+		<p>
+			A car moves on a circular track.  A coordinate system is chosen whose origin coincides with the center of the circle and the circle falls in the <m>xy</m>-plane. The position of the car with time varies according to the following functions of time: <m>x(t) = 2 \cos\left(\frac{\pi}{100} t\right)</m>, <m>y(t) = 2 \sin\left(\frac{\pi}{100} t\right)</m>, <m>z=0</m>. Determine the velocity and acceleration of the car at (i) <m>t =0</m>, (ii) <m>t = 50\ \textrm{sec}</m>, (iii) <m>t = 100\ \textrm{sec}</m>, (iii) <m>t=150\ \textrm{sec}</m>, and (iv) <m>t=200\ \textrm{sec}</m>.
+		</p>
+	</statement>
+	<solution>
+		<p>
+			In this solution I will give only the components of the vectors and you can practice in constructing the magnitude and direction. The general formula for the components of the velocity and acceleration obtained by performing the time derivatives are
+			<md>
+				<mrow> \amp v_x = -2\frac{\pi}{100}\sin\left(\frac{\pi}{100}\ t \right);\ v_y = 2\frac{\pi}{100}\cos\left(\frac{\pi}{100}\ t \right);\ v_z = 0\ \ \textrm{[Unit: m/s]};</mrow>
+				<mrow> \amp a_x = -2\left(\frac{\pi}{100}\right)^2\cos\left(\frac{\pi}{100}\ t \right) \ \ [\textrm{Unit: m/s}^2]</mrow>
+				<mrow> \amp a_y = -2\left(\frac{\pi}{100}\right)^2\sin\left(\frac{\pi}{100}\ t \right) ;\ a_z = 0\ \ [\textrm{Unit: m/s}^2]</mrow>
+			</md>
+			The instantaneous values at particular instants  are obtained by substituting the value of <m>t</m>.  For instance, at <m>t=0</m>, we find that <m>v_x = 0</m>, <m>v_y = 2\pi/100\ \textrm{m/s}</m>, <m>v_z  = 0</m>, <m>a_x = -2\left( \pi/100\right)^2</m> m/s<m>^2</m>, <m>a_y = 0</m>, and <m>a_z  = 0</m>.
+
+		</p>
+	</solution>
+</exercise>
+
+
+
+
+
+</exercises>
+
+
 </section>

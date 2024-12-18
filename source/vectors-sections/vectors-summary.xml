@@ -1,0 +1,75 @@
+<section xml:id="sec-vectors-summary">
+    <title>Chapter Summary</title>
+    <introduction>
+        <p>
+            A vector has both direction and magnitude and adds to other vectors of the same kind by the parallelogram law of addition.  The addition of vectors can be done graphically or analytically.  In the graphical addition, one places vectors in a tip-to-tail fashion mindful of the direction of each vector in space.  The vector from the tail of the first vector to the tip of the last vector is equal to the sum.
+        </p>
+        <p>
+            Analytically, vectors are decomposed into Cartesian components.
+            <me>
+                \vec A = A_x \hat u_x + A_y \hat u_y + A_z \hat u_z \equiv A_x \hat i + A_y \hat j + A_z \hat k.
+            </me>
+            The components along each axis add separately from the components along other axes.  Thus, the sum of the <m>x</m>-components of all vectors gives the <m>x</m>-component of the sum, and similarly for the <m>y</m> and <m>z</m>-components. For <m>\vec C = \vec A + \vec B</m>, we have
+            <me>
+                C_x \hat i + C_y \hat j + C_z \hat k = (A_x + B_x)\, \hat i + (A_y + B_y)\, \hat j + (A_z + B_z)\, \hat k
+            </me>
+            Pythagoras theorem can be used to find the magnitude of a vector from its components and simple trigonometry is used to find the direction in space.
+            <me>
+                A = \sqrt{A_x^2 + A_y^2 + A_x^2}.
+            </me>
+        </p>
+        <p>
+            If a vector is in <m>xy</m> plane, we get a simpler case.
+                <me>
+                    \vec A = A_x \hat i + A_y \hat j.
+                </me>
+                Then, magnitude is simply <m> A = \sqrt{A_x^2 + A_y^2}</m>.
+        </p>
+        <sidebyside widths="55% 10% 35%">
+            <p>
+                The direction in <m>xy</m>-plane is indicated by the angle the vector makes with respect to the <m>x</m>-axis.
+                <me>
+                    \theta = \tan^{-1}\left( \frac{A_y}{A_x}  \right),
+                </me>
+                where the positive angle is counterclockwise with respect to the <m>x</m>-axis in first or third quadrant and if the angle is negative, it the clockwise angle into the second or the fourth quadrant.
+            </p>
+            <p></p>
+            <figure xml:id="fig-summary-two-dimensional-vector-direction">
+                <caption>Angle for direction.</caption>
+                <image source="./images/vectors/summary-two-dimensional-vector-direction.png">
+                    <shortdescription>A two-dimensional vector with spherical angles.</shortdescription>
+                </image>
+            </figure> 
+        </sidebyside>
+
+        <sidebyside widths="45% 10% 45%">
+            <p>
+                For a vector in three-dimensional space, we often use the spherical coordinate angles to indicate the directions. The polar angle <m>\theta</m> and the azimuthal angle <m>\phi</m> shown in <xref ref="fig-summary-three-dimensional-vector-direction"/> are computed by
+                <md>
+                    <mrow> \amp \theta = \cos\left(\frac{A_z}{A} \right) </mrow>
+                    <mrow> \amp \phi = \tan^{-1}\left( \frac{A_y}{A_x}  \right) </mrow>
+                </md>
+            </p>
+            <p></p>
+            <figure xml:id="fig-summary-three-dimensional-vector-direction">
+                <caption>Spherical angles for direction.</caption>
+                <image source="./images/vectors/three-dimensional-vector-direction.png">
+                    <shortdescription>A three-dimensional vector with spherical angles.</shortdescription>
+                </image>
+            </figure>            
+        </sidebyside>
+        <p>
+            Vectors can be multiplied by ordinary real numbers.  A positive number only scales the size of the vector, but a negative number also reverses the direction of the vector.  We studied in detail the rules of two different types of multiplication of a vector with another vector.  In the scalar multiplication, also called dot product, the result is a scalar number.  The resulting number is equal to the product of the magnitudes of the two vectors and the cosine of the angle between them.  The scalar product written in analytic form is equal to the sum of products of the Cartesian components of the vectors.
+            <me>
+                \vec A\cdot \vec B = A B \cos\theta = A_xB_x + A_yB_y + A_zB_z.
+            </me>
+            The vector product, also called the cross product, gives rise to another product whose magnitude is equal to the the product of the magnitudes of the two vectors and the sine of the angle between them, and the direction is in the direction to the normal to the plane of the two vectors.  The direction of the cross product vector is obtained by a right-hand rule.  The cross product written in analytic form gives the components of the product in terms of the components of the vectors multiplied.
+		<md>
+			<mrow> \amp (\vec A \times \vec B)_x = A_y B_z - A_z B_y,</mrow>
+			<mrow> \amp (\vec A \times \vec B)_y = A_z B_x - A_x B_z,</mrow>
+			<mrow> \amp (\vec A \times \vec B)_z = A_x B_y - A_y B_x,</mrow>
+		</md>
+
+        </p>
+    </introduction>   
+</section>

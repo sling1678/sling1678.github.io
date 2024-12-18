@@ -1,11 +1,16 @@
 <section xml:id="kinematics-Velocity-and-Speed"> <title> Velocity and Speed </title><idx><h>Velocity</h><h>Vector</h></idx> <idx><h>Speed</h><h>General</h></idx>
+	<introduction>
+		<p>
+			
+		</p>
+	</introduction>
 	<subsection><title>  Average Velocity </title> <idx><h>Velocity</h><h>Average</h></idx>
 		<p> 
-			The ratio of displacement  <m> \Delta \vec r</m> to the interval <m> \Delta t</m> over which displacement   occured is called <term> average velocity </term> during that interval.
+			The rate at which position changes with time gives us information about the flow of motion. A simple measure of the rapidity of a motion, both  how fast the movement occurs and in which direction the movement is taking place, is obtained by dividing the displacement vector  <m> \Delta \vec r</m> by the interval <m> \Delta t</m>. The ratio is called <term> average velocity </term> during that interval.
 			<men xml:id="eq-average-velocity-vector-definition">
 				\vec v_{\text{av}} = \dfrac{\Delta \vec r}{\Delta t} .
 			</men>
-			Since <m> \Delta \vec r </m> is a vector and we are dividing it by a simple number, average velocity, <m> \vec v_{\text{av}} </m> will also be a vector. Just as other vectors, we can represent velocity by an arrow of appropriate size in appropriate direction. We can slso case it analytically as components or in magnitude-direction form. 
+			Since <m> \Delta \vec r </m> is a vector and we are dividing it by a simple number, average velocity, <m> \vec v_{\text{av}} </m> will also be a vector. Just as other vectors, we can represent velocity by an arrow of appropriate size in appropriate direction. We can slso study it analytically in terms of its components with respect to some axes or in the magnitude-direction form. 
 		</p>
 
 		<p>
@@ -16,7 +21,37 @@
 			From the components, we can deduce the magnitude and direction as we would do for any other vector as illustrated in <xref ref="Average-Velocity-from-Displacement-and-Duration"/>.
 
 		</p>
+		<example xml:id="example-Average-Velocity-of-a-Train-Motion-in-a-Straight-Line"><title>Average Velocity of a Motion in a Straight Line</title>
+			<statement>
+				<p>
+					A train starts from Boston at <m>7:00</m> AM and goes towards New York City.  In the first <m>2</m> minutes, the train moves on a straight track facing West and covers a direct distance of <m>3000</m> m from the starting point. What is the average velocity?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The displacement is <m>3000</m> m due West in interval <m>2</m> min. The <alert>magnitude</alert> of the average velocity will be 
+					<me>
+						v_{av} = \frac{3000\text{ m}}{2\times 60 \text{ s}} = 25\,\text{m/s}.
+					</me>
+					The direction will be same as the direction of the displacement since the interval was a positive number. That is the average velocity is <m>25\,\text{m/s}</m> towards West.
+				</p>
+			</solution>
+		</example>
 
+	<example xml:id="example-Average-Velocity-Components-and-CoordinateChoice"><title>Average Velocity Components and Coordinate Choice </title>
+		<statement>
+			<p>
+				For simplicity, consider an object moving in a straight line such as a train on a straight track. When we place a coordinate system such that its <m>x</m>-axis falls on the straight line of motion, the displacement will be a vector that can point either towards the positive <m>x</m>-axis or towards the negative <m>x</m>-axis only. Therefore, displacement in this coordinate system can be written entirely as a scalar multiple of the unit vector <m>\hat u_x</m>, which will mean that the average velocity has only the <m>x</m>-component <m>v_{av,x}</m>
+				<me>
+					\vec v_{av} = v_{av,x} \hat u_x.
+				</me>
+				If <m>v_{av,x} \gt 0</m>, then the average velocity will be in the same direction as the vector <m>\hat u_x</m>, i.e. towards the positive infinity of the <m>x</m>-axis, and if the <m>v_{av,x} \lt 0</m>, then the average velocity will be in the direction opposite to that of the vector <m>\hat u_x</m>, i.e. towards the negative infinity of the <m>x</m>-axis.  The direction towards the positive infinity of the <m>x</m>-axis is also referred to as moving to the right or moving toward the positive <m>x</m>-axis.  Similarly we say moving to the left or towards the negative <m>x</m>-axis for the direction towards negative infinity of the axis.
+			</p> 
+			<p>
+				We will use similar descriptions of motions on a straight line, if we happen to use a coordinate system oriented such that its <m>y</m> or <m>z</m>-axis coincides with  the straight line where the motion takes place.  
+			</p>
+		</statement>
+	</example>
 
 	<example xml:id="Average-Velocity-from-Displacement-and-Duration"><title> Average Velocity from Displacement and Duration  </title>
 		<statement>
@@ -55,10 +90,59 @@
 		</solution>
 	</example>
 
+	<exercise><title>Average Velocity of a Motion in a Vertical Plane</title>
+		<statement>
+			<sidebyside widths="45% 10% 45%">
+				<p>
+					A projectile is flying through the air in a plane. At <m>t=0</m>, the projectile is at the origin of a coordinate system, and at <m>t=T</m>, the coordinates of the projectile are <m>(X,Y,0)</m>.  What is the average velocity of the projectile over the time interval <m>0</m> to <m>T</m>?
+				</p>
+				<p></p>
+				<figure xml:id="fig-average-vel-plane-1">
+					<caption></caption>
+					<image source="./images/two-dim-motion/average-vel-plane-1.png">
+						<shortdescription></shortdescription>
+					</image>
+				</figure>
+			</sidebyside>
+		</statement>
+		<solution>
+			<p>
+				The analytic viewpoint of average velocity tells us that we can construct the average velocity vector from its components, which we can readily find here.
+				<md>
+					<mrow> \amp v_x^{ave} = \frac{X-0}{T-0} = \frac{X}{T} </mrow>
+					<mrow> \amp v_y^{ave} = \frac{Y-0}{T-0} = \frac{Y}{T}</mrow>
+					<mrow> \amp v_z^{ave} = \frac{0-0}{T-0} = 0</mrow>
+				</md>
+				Therefore, the average velocity has the following representation in the given coordinate system.
+				<me>
+					\vec v_{ave} = \left( \frac{X}{T} \right)\hat u_x + \left( \frac{Y}{T} \right)\hat u_y.
+				</me>
+				The magnitude and direction of the average velocity can be determined as usual from the components.  The magnitude of the average velocity is
+				<me>
+					v_{ave} = \frac{\sqrt{X^2+Y^2}}{T}.
+				</me>
+				Since, the motion occurs in a plane, one angle will be sufficient to specify the direction of the vector. The angle <m>\theta</m> from the positive <m>x</m>-axis in the <m>xy</m>-plane is given by
+				<me>
+					\theta=\arctan{\left( \frac{Y}{X} \right)}.
+				</me>
+				This is the angle we usually specify when we want to give direction of a vector in the <m>xy</m>-plane.
+			</p>
+		</solution>
+
+	</exercise>
+
+
 	</subsection>
 
 	<subsection> <title> Average Speed </title><idx><h>Speed</h><h>Average</h></idx>
 		<p>
+			Often we are interested in the total distance traveled over some time interval and not necessarily in the direction of the motion. For instance, if you travel by car between two cities, the road will not always point in the same direction.  The distance you must travel will be more than the direct distance between the cities. Let <m>D</m> be the actual distance moved in total time <m>T</m>, then the ratio <m>D/T</m>, called the <term> average speed</term> is a measure of how fast the distance was covered. We will denote average speed by <m>v_{s,av}</m>.
+			<men>
+				\boxed{v_{s,av} = \frac{D}{T}.}
+			</men>
+			Average speed and magnitude of average velocity may be very different, especially in a motion where there are changes in direction.  An extreme example will be a motion where an object returns to the original place after some time - the magnitude of average velocity in this case will be zero but average speed will not be zero.
+		</p> 
+		<!-- <p> 
 			Average speed is different from average velociy, although we often tend to confuse them as same. For <term> average speed </term>, we divide the total distance traveled on the actual path by the time taken for the motion, not just the direct distance between the initial point and the final point.
 			<men>
 				\text{Average Speed } = \dfrac{\text{Distance Traveled}}{\text{Time Taken}}
@@ -69,7 +153,7 @@
 			</men>
 			<alert>Average Speed is Different from Average Velocity: </alert>
 			An extreme example that shows the difference between average speed and average velocity occurs in a closed-loop motion. Let <m>T</m> denote the time it takes to return after going around the closed path, say from your home to the grocery store and back to your home. Let <m>D</m> be the total distance to the store and back. Average velocity here will be zero, since displacement is zero, but average speed will be <m>D/T</m>. 
-		</p>
+		</p> -->
 
 	<example xml:id="ex-Average-Speed-versus-Average-Velocity"><title> Average Speed versus Average Velocity</title>
 		<statement>
@@ -106,38 +190,131 @@
 	</example>
 
 	</subsection>
-	<subsection> <title> Instantaneous Velocity - Formal Definition</title><idx><h>Velocity</h><h>Instantaneous</h></idx>
-		<p></p>
-		<p>
-			Average velocity and average speed do not tell us motion moment-by-moment. For that, Isaac Newton introduced the concept of <term>instantaneous velocity</term> based on concepts of limit and infinitesimal intervals.  
-		</p>
-		<p>
-			If you find average velocity using Eq. <xref ref="eq-average-velocity-vector-definition"/> for different interval values, i.e., different values of <m>\Delta t</m> in, say, from <m>t</m> to <m>t+\Delta t</m> interval, you will find that you get different magnitude and directions of average velocities. Newton noticed that, as <m>\Delta t</m> become increasingly small, the differences in average velocities become less and less pronounced in a well-defined way such that it is possible to define a unique velocity in the limit <m>\Delta t\rightarrow 0</m>. Furthermore, <m>\Delta t\rightarrow 0</m> limit also makes <m>t</m> to <m>t+\Delta t</m> interval to be of <q>zero size</q>, thus giving us information about motion <alert>at instant <m>t</m></alert>.
-		</p>
-		<p> 
-			Denoting the instantaneous velocity vector by <m> \vec v </m> and the position vector as <m> \vec r</m> we can write the definition of instantaneous velocity formally by
-			<men xml:id="eq-instantaneous-velocity-3d-limit">
-				\vec v	= \lim_{\Delta t \rightarrow 0} \dfrac{\vec r\left(\text{at } (t+\Delta t)\right) - \vec r\left(\text{at } t\right)}{\Delta t} \equiv \frac{d\vec r}{dt}.
-			</men> 
-			The magnitude of instantaneous velocity gives us the <alert>speed</alert> at that instant. Although, we noted above that average speed and magnitude of average velocity may be different, but instantaneous speed and magnitude of instantaneouos velocity are always same since averaging in Eq. <xref ref="eq-instantaneous-velocity-3d-limit"/> is over an infintesimal time interval.
-		</p>
-		<p>
-			Eq. <xref ref="eq-instantaneous-velocity-3d-limit" /> is an abstract definition, which we can make more accessibale by looking at the components. Denoting <m>\vec r\left(\text{at } (t+\Delta t)\right) - \vec r\left(\text{at } t\right)</m> by <m>\Delta \vec r \equiv (\Delta x, \Delta y, \Delta z)</m>.
 
-			<md>
-				<mrow> \amp v_x= \lim_{\Delta t \rightarrow 0}\dfrac{\Delta x}{\Delta t} \equiv \frac{dx}{dt},</mrow>
-				<mrow> \amp v_y= \lim_{\Delta t \rightarrow 0}\dfrac{\Delta y}{\Delta t} \equiv \frac{dy}{dt},</mrow>
-				<mrow> \amp v_z= \lim_{\Delta t \rightarrow 0}\dfrac{\Delta z}{\Delta t} \equiv \frac{dz}{dt}.</mrow>
-			</md>
-			These components of velocity are also called <m>x</m>-, <m>y</m>-, and <m>z</m>-velocity respectively. In a previous chapter, we have studied one-dimensional motion, where only one of them was non-zero. For general motion, you can expect all of them to be nonzero and you would need to keep track of them all. 			
-		</p>
-		<p>
-			Numbers <m>v_x</m>, <m>v_y</m>, and <m>v_z</m> you would obtain this way are the Cartesian components of the vector <m>\vec v</m>. Thus, once we have obtained <m> (v_x, v_y, v_z)</m>, we can deduce the magnitude and direction of the velocity vector as we do for any vector. For instane, <alert>magnitude</alert> of velocity, i.e., speed, will simply be the magnitude of the vector.
-			<men>
-				v = \sqrt{v_x^2 + v_y^2 + v_z^2}.
-			</men>
-			For direction of <m>\vec v</m>, we will use either polar angle in case of a motion in a plane, or spherical cordinate angles in case of motion in a three-dimensional space. 
-		</p>
+
+	<subsection> <title> Instantaneous Velocity - Formal Definition</title><idx><h>Velocity</h><h>Instantaneous</h></idx>
+		<introduction>
+
+			<p></p>
+			<p>
+				Average velocity and average speed do not tell us motion moment-by-moment. For that, Isaac Newton introduced the concept of <term>instantaneous velocity</term> based on concepts of limit and infinitesimal intervals.  
+			</p>
+			<p>
+				If you find average velocity using Eq. <xref ref="eq-average-velocity-vector-definition"/> for different interval values, i.e., different values of <m>\Delta t</m> in, say, from <m>t</m> to <m>t+\Delta t</m> interval, you will find that you get different magnitude and directions of average velocities. Newton noticed that, as <m>\Delta t</m> become increasingly small, the differences in average velocities become less and less pronounced in a well-defined way such that it is possible to define a unique velocity in the limit <m>\Delta t\rightarrow 0</m>. Furthermore, <m>\Delta t\rightarrow 0</m> limit also makes <m>t</m> to <m>t+\Delta t</m> interval to be of <q>zero size</q>, thus giving us information about motion <alert>at instant <m>t</m></alert>.
+			</p>
+			<p> 
+				Denoting the instantaneous velocity vector by <m> \vec v </m> and the position vector as <m> \vec r</m> we can write the definition of instantaneous velocity formally by
+				<men xml:id="eq-instantaneous-velocity-3d-limit">
+					\vec v	= \lim_{\Delta t \rightarrow 0} \dfrac{\vec r\left(\text{at } (t+\Delta t)\right) - \vec r\left(\text{at } t\right)}{\Delta t} \equiv \frac{d\vec r}{dt}.
+				</men> 
+				The magnitude of instantaneous velocity gives us the <alert>speed</alert> at that instant. Although, we noted above that average speed and magnitude of average velocity may be different, but instantaneous speed and magnitude of instantaneouos velocity are always same since averaging in Eq. <xref ref="eq-instantaneous-velocity-3d-limit"/> is over an infintesimal time interval.
+			</p>
+			<p>
+				Eq. <xref ref="eq-instantaneous-velocity-3d-limit" /> is an abstract definition, which we can make more accessibale by looking at the components. Denoting <m>\vec r\left(\text{at } (t+\Delta t)\right) - \vec r\left(\text{at } t\right)</m> by <m>\Delta \vec r \equiv (\Delta x, \Delta y, \Delta z)</m>.
+
+				<md>
+					<mrow> \amp v_x= \lim_{\Delta t \rightarrow 0}\dfrac{\Delta x}{\Delta t} \equiv \frac{dx}{dt},</mrow>
+					<mrow> \amp v_y= \lim_{\Delta t \rightarrow 0}\dfrac{\Delta y}{\Delta t} \equiv \frac{dy}{dt},</mrow>
+					<mrow> \amp v_z= \lim_{\Delta t \rightarrow 0}\dfrac{\Delta z}{\Delta t} \equiv \frac{dz}{dt}.</mrow>
+				</md>
+				These components of velocity are also called <m>x</m>-, <m>y</m>-, and <m>z</m>-velocity respectively. In a previous chapter, we have studied one-dimensional motion, where only one of them was non-zero. For general motion, you can expect all of them to be nonzero and you would need to keep track of them all. 			
+			</p>
+			<p>
+				Numbers <m>v_x</m>, <m>v_y</m>, and <m>v_z</m> you would obtain this way are the Cartesian components of the vector <m>\vec v</m>. Thus, once we have obtained <m> (v_x, v_y, v_z)</m>, we can deduce the magnitude and direction of the velocity vector as we do for any vector. For instane, <alert>magnitude</alert> of velocity, i.e., speed, will simply be the magnitude of the vector.
+				<men>
+					v = \sqrt{v_x^2 + v_y^2 + v_z^2}.
+				</men>
+				For direction of <m>\vec v</m>, we will use either polar angle in case of a motion in a plane, or spherical cordinate angles in case of motion in a three-dimensional space. 
+			</p>
+
+
+		</introduction>
+		<subsubsection xml:id="subsubsec-Computing-Derivatives-from-the-Slopes-of-Tangents">
+			<title>Computing Derivatives from the Slopes of Tangents</title>
+			<idx><h>Derivative from Tangent</h></idx>
+			<p>
+				In experiments we measure position at a finite number of instants and deduce the instantaneous velocity by making a plot of position versus time. You will now see that the components of velocity, i.e. <m>v_x(t)</m>, <m>v_y(t)</m> and <m>v_z(t)</m>, can be determined from the plots of <m>x</m> vs <m>t</m>, <m>y</m> vs <m>t</m> and <m>z</m> vs <m>t</m> respectively, since the derivative of a function is also equal to the slope of the tangent of the curve when the function is plotted along the ordinate (the vertical axis) and time along the abscissa (the horizontal axis).
+			</p>
+			<p>
+				Let us look at an example of the <m>x</m>-component of velocity from the <m>x</m> vs <m>t</m> plot. Consider the graphs of a function <m>x(t)</m> given in <xref ref="fig-kin-vel-secant-lines-1"/>. Suppose we are interested in the <m>x</m>-component of velocity at <m>t=1</m> sec.  The slopes of the secants joining a point of the curve before <m>t=1</m> sec and a point after <m>t=1</m> sec give the <m>x</m>-component of the average velocity for various time intervals. The figure shows that, as we examine shorter and shorter time intervals, the secants tend to become parallel to the tangent to the curve at <m>t=1</m> sec, the instant of interest. Therefore, the slope of the tangent will equal the instantaneous rate of change. This gives us another way of computing derivatives, which is particularly important for relating to experimental results.
+				<men xml:id="eq-Computing-Derivatives-from-the-Slopes-of-Tangents-">
+					\frac{dx}{dt} = \textrm{Slope of the tangent to the }x \textrm{ vs } t \textrm{ curve}.
+				</men>
+			</p>
+			<figure xml:id="fig-kin-vel-secant-lines-1">
+				<caption>The <m>x</m>-component of the instantaneous velocity at the instant <m>t=1</m> sec is equal to the slope of <m>x</m> vs <m>t</m> curve at <m>t=1</m> sec.  The slopes of the secants for various time intervals around <m>t=1</m> sec give average velocities in those time intervals. This figure shows visually that the slopes of secants change as we zero in near the instant of interest, eventually the secant becomes parallel to the tangent to the curve.</caption>
+				<image source="./images/two-dim-motion/kin-vel-secant-lines-1.png" width="70%">
+					<shortdescription>(for accessibility)</shortdescription>
+				</image>
+			</figure>
+			<remark><title>No Sharp Corners in <m>x</m> vs <m>t</m> plot.</title>
+			
+			
+				<p>
+					Note that in a plot of <m>x</m>, <m>y</m>, or <m>z</m> vs <m>t</m>, there cannot be sharp corners since the velocity of an object cannot change abruptly.  That is, the velocity at an instant before the corner must be arbitrarily close to the velocity an instant after the corner. In the limit of infinitesimal interval around the corner, the velocity obtained at an instant  before a corner will not equal the one for an instant after the corner.  Therefore, the plots of coordinates versus time must be smooth at all points, meaning that <m>x(t)</m>, <m>y(t)</m> and <m>z(t)</m> are smooth functions of <m>t</m>, not just continuous functions.
+
+				</p>
+			</remark>
+
+			<!-- <example xml:id="example-slope-from-tangent-xvst"><title>Instantaneous Velocity from Slope</title>
+				<statement>
+					<p>
+						<xref ref="fig-slope-from-tangent-xvst"/> shows an example of calculation of the <m>x</m>-component of instantaneous velocity from a plot of <m>x</m> vs <m>t</m>. To obtain the <m>x</m>-velocity at an instant, say at <m>t=t_1</m>, we draw a tangent to the curve at the time of interest, i.e., <m>t=t_1</m> as shown in the figure. The rise of the tangent line gives the change in position <m>\Delta x</m> and the run of the tangent gives the duration <m>\Delta t</m> for that change.  Therefore, dividing <m>\Delta x</m> by <m>\Delta t</m> is equal to the rate of change of the <m>x</m>-coordinate of the object at the instant <m>t=t_1</m>, which is the <m>x</m>-component of instantaneous velocity at time <m>t=t_1</m>.
+					</p>
+					<figure xml:id="fig-slope-from-tangent-xvst">
+						<caption>
+
+							Example \ref{ex:slope-from-tangent-xvst}. The slope of tangents to the curve <m>x(t)</m> gives the <m>x</m>-component of the instantaneous velocity.  The slopes of the tangents obtained by dividing the rise <m>\Delta x</m> by the run <m>\Delta t</m> at instants <m>t = t_1</m>, <m>t=t_2</m>, and <m>t=t_3</m> give the values of the <m>x</m>-component of velocity at those instants. Here, <m>v_x \gt 0</m> at <m>t=t_1</m>, <m>v_x=0</m> at <m>t=t_2</m> and <m>v_x \lt 0</m> at <m>t_2</m>.
+						</caption>
+						<image source="./images/two-dim-motion/slope-from-tangent-xvst.png" width="70%">
+							<shortdescription></shortdescription>
+						</image>
+
+					</figure>
+
+				</statement>
+				<solution>
+					<p>
+						At time <m>t=t_1</m>, the slope of the tangent, i.e., <m>v_x</m>,  is positive, meaning the velocity is pointed in the positive <m>x</m> direction for a one-dimensional motion on the <m>x</m>-axis. Just to remind you that velocity for one-dimensional motion on the <m>x</m>-axis is <m>\vec v = v_x \hat u_x</m>, where <m>\hat u_x</m> is the unit vector pointed towards the positive <m>x</m>-axis.  Note that at time <m>t=t_2</m> in Fig. \ref{fig:xvst-2}, the slope is zero, meaning that the <m>x</m>-velocity is zero there. At time <m>t=t_3</m>, the slope is negative, meaning the velocity will be pointed in the negative <m>x</m>-axis direction for a one-dimensional motion.
+					</p>
+					<p>
+						We wish to emphasize here that an <m>x</m> vs <m>t</m> plot gives you only <m>v_x</m>. In a three-dimensional motion, you will need <m>x</m> vs <m>t</m>, <m>y</m> vs <m>t</m>, and <m>z</m> vs <m>t</m> so that you can deduce <m>x</m>, <m>y</m>, and <m>z</m>-components of velocity, viz. <m>v_x</m>, <m>v_y</m>, and <m>v_z</m>, and construct the velocity vector from them.
+					</p>
+				</solution>
+			</example> -->
+
+			<example xml:id="ex-example-vel-inst-slopes"><title>Velocity From Slope</title>
+			
+			
+				<statement>
+					<p>
+						The position of a box in a one-dimensional motion is recorded by placing the <m>y</m>-axis on the line of motion.  The data  is  plotted as a <m>y</m> vs <m>t</m> plot and shown in <xref ref="fig-example-vel-inst-slopes"/>. Find the <m>y</m>-component of velocity at  <m>t=1</m> sec, <m>3</m> sec, <m>5</m> sec, and <m>7</m> sec.
+					</p>
+					<figure xml:id="fig-example-vel-inst-slopes">
+						<caption> For <xref ref="ex-example-vel-inst-slopes"/>. </caption>
+						<image source="./images/two-dim-motion/example-vel-inst-slopes.png">
+							<shortdescription></shortdescription>
+						</image>
+
+					</figure>
+
+
+				</statement>
+				<solution>
+					<p>
+						The plot of <m>y</m> vs <m>t</m> is a segment-wise straight line, which makes finding slopes easier. We do not need to draw any tangents since the tangent to a straight line is the straight line itself. The slopes at <m>t=1</m> sec and <m>t=3</m> sec are equal, <m>v_y = 1</m> m/s.  The slope at <m>t=5</m> sec is zero since the line is flat and rise is zero.  Therefore at <m>t=5</m> sec, <m>v_y = 0</m>.  Finally, the slope is negative at <m>t=7</m> sec.  The <m>y</m>-coordinate changes by <m>-2</m> m in <m>3</m> sec steadily. This gives <m>v_y = -2/3</m> m/s.
+					</p>
+				</solution>
+			</example>
+
+
+
+
+
+
+		</subsubsection>
+
+
 
 	<example><title>Velocity from Position</title><idx><h>Velocity</h><h>From Position</h></idx>
 		<statement>
@@ -267,7 +444,7 @@
 
 	</subsection>
 
-	<subsection><title> Velocity from Slopes of <m> (x, y, z) </m> vs <m> t </m> Plots.</title>
+	<!-- <subsection><title> Velocity from Slopes of <m> (x, y, z) </m> vs <m> t </m> Plots.</title>
 
 		<sidebyside widths="45% 5% 50%">
 			<p>
@@ -291,6 +468,8 @@
 		<p>
 			Once we have obtained <m> (v_x,\ v_y,\ v_z)</m>, we can deduce the magnitude and direction of the velocity vector as usual.  
 		</p>
+	</subsection>  -->
+
 
 		<example xml:id="exp-Instantaneous-Velocity-from-Slope-1-Dimensional"><title> Instantaneous Velocity from Slope - 1 Dimensional</title>
 			<statement>
@@ -367,7 +546,7 @@
 
 
 
-	</subsection>
+
 
 	<!--
 	<subsection> <title> (Calculus) Instantaneous Velocity and Instantanous Speed </title>
@@ -484,8 +663,35 @@
 		</solution>
 	</exercise>
 
+	<exercise xml:id="ex-example-inst-vel-comps"><title>The Components of Velocity in a Vertical Plane</title>
+		<statement>
+			<sidebyside widths="45% 10% 45%">
+				<p>
+					Suppose a cannon ball is fired with a speed <m>v_0 </m> at an angle <m>\theta </m> with the horizontal direction.  A coordinate system is chosen such that the <m>x </m>-axis points horizontally and the <m>y </m>-axis points vertically up as shown in <xref ref="fig-example-inst-vel-comps"/> . What are the <m>x </m> and <m>y </m>-components to the velocity vector?
+				</p>
+				<p></p>
+				<figure xml:id="fig-example-inst-vel-comps">
+					<caption>
+						<xref ref="ex-example-inst-vel-comps"/>.
+					</caption>
+					<image source="./images/two-dim-motion/example-inst-vel-comps.png">
+						<shortdescription></shortdescription>
+					</image>
+				</figure>
+						
+			</sidebyside>
 
-
+		</statement>
+		<solution>
+			<p>
+				The hypotenuse of the right-angled triangle <m>\triangle OPQ </m> has length equal to the magnitude of the velocity vector, and the sides <m>OQ </m> and <m>PQ </m> are the <m>x </m> and <m>y </m>-components, to be denoted as <m>v_{0x} </m> and <m>v_{0y} </m> respectively.  Trigonometry yields the following expressions for the components immediately.
+				<md>
+					<mrow> \amp v_{0x} = v_0\cos\theta </mrow>
+					<mrow> \amp v_{0y} = v_0\sin\theta</mrow>
+				</md>
+			</p>
+		</solution>
+	</exercise>
 
 	<exercise xml:id="Drawing-Velocity-Vectors-in-a-Circular-Motion"><title> Drawing Velocity Vectors in a Circular Motion </title>
 		<statement>

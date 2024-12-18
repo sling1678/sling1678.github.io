@@ -382,6 +382,190 @@
 
 	<exercises>
 
+	<exercise xml:id="exer-exer-var-accln-3-Three-Acceleration-Segments"><title>Particle with Three Acceleration Segments</title>
+		<statement>
+			<sidebyside widths="45% 5% 50%">
+				<p>
+					At <m>t=0</m> a particle located at origin has a velocity of <m>20</m> m/s in the direction of the positive <m>x</m>-axis, and accelerates on the <m>x</m>-axis as shown in <xref ref="fig-exer-var-accln-3"/>>.  The <m>y</m>  and <m>z</m>-components of the acceleration are zero. 
+				</p>
+				<p> </p>
+				<figure xml:id="fig-exer-var-accln-3">
+					<caption></caption>
+				
+					<image source="./images/two-dim-motion/exer-var-accln-3.png" width="60%"/>
+				</figure>
+			</sidebyside>
+			<p>
+				(a) Find the position and the velocity of the particle at <m>t = 2</m> sec.
+			</p>
+			<p>
+				 (b) Find the position and the velocity of the particle at <m>t = 3</m> sec.
+			</p>
+			<p>
+				 (c) Find the position and the velocity of the particle at <m>t = 5</m> sec.
+			</p>			
+		</statement>
+		<answer>
+			<p>
+				(a) <m>30\,\text{m}</m>, <m>10\,\text{m/s}</m>; 
+				(b) <m>40\,\text{m}</m>, <m>10\,\text{m/s}</m>; 
+				(c) <m>70\,\text{m}</m>, <m>20\,\text{m/s}</m>; 
+			</p>
+		</answer>
+		<solution><title>a</title>
+			<p>
+				For all three, we will use the following technique. Denote the interval by <m>t_0\le t \le t_f</m>, duration <m>T = t_f - t_0</m>, initial position by <m>x_0</m>, final position by <m>x</m>, initial velocity by <m>v_0</m>, final velocity by <m>v</m>, and acceleration by <m>a</m>. For brevity we are dropping the subscript <m>x</m> from the symbols. The formulas we need are:
+				<md>
+					<mrow> \amp v = v_0 + a T </mrow>
+					<mrow> \amp x = x_0 + v_0 T + \frac{1}{2} T^2</mrow>
+				</md>
+				Note the time in these formulas are the interval and the actual instant times. Also, although <m>x_0</m> will be zero for the first interval, it will be nonzero for other intervals.
+			</p>
+			<p>
+				Here (drop units, for now)
+				<me>
+					t_0 = 0,\ t_f = 2,\ x_0=0,\ x = ?,\ v_0 = 20,\ v = ?,\ a = -5.
+				</me>
+				Hence, with <m>T=t_f-t_0 = 2</m> we get
+				<md>
+					<mrow> \amp v =  20 + (-5) 2  = 10\,\text{m/s}.</mrow>
+					<mrow> \amp x = 0 + 20\times 2 + \frac{1}{2}\times (-5) \times 2^2 = 30\text{ m}. </mrow>
+				</md>
+				These will be the intial values for the next time segment!
+				
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				Here (drop units, for now)
+				<me>
+					t_0 = 2,\ t_f = 3,\ x_0=30,\ x = ?,\ v_0 = 10,\ v = ?,\ a = 0.
+				</me>
+				Hence
+				<md>
+					<mrow> \amp v =  10 + 0  = 10\,\text{m/s}.</mrow>
+					<mrow> \amp x = 30 + 10\times 1 + 0 = 40\text{ m}. </mrow>
+				</md>
+				These will be the intial values for the next time segment!			
+			</p>
+		</solution>
+		<solution><title>c</title>
+		
+		
+			<p>
+				Here (drop units, for now)
+				<me>
+					t_0 = 3,\ t_f = 5,\ x_0=40,\ x = ?,\ v_0 = 10,\ v = ?,\ a = 5.
+				</me>
+				Hence
+				<md>
+					<mrow> \amp v =  10 + 5\times 2  = 20\,\text{m/s}.</mrow>
+					<mrow> \amp x = 40 + 10\times 2 + \frac{1}{2}\times 5 \times 2^2 = 70\text{ m}. </mrow>
+				</md>				
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="exer-Box-Sliding-with-Linear-Time-Acceleration-Segments"><title>Box Sliding with Linear Time Acceleration Segments</title>
+		<statement>
+			<sidebyside>
+				<p>
+					A box slides on a floor in a straight path such that its acceleration is not constant in time, but given by <xref ref="fig-exer-var-accln-linear-in-time"/>.  (a) Find the velocity of the box at t = 4 sec if it starts out at rest at t = 0. (b) Find the velocity of the box at t = 10 sec.
+				</p>
+				<p></p> 
+				<figure xml:id="fig-exer-var-accln-linear-in-time">
+					<caption></caption>
+					<image source="./images/two-dim-motion/exer-var-accln-linear-in-time.png">
+						<shortdescription></shortdescription>
+					</image>
+				</figure>			
+			</sidebyside>
+
+		</statement>
+		<answer>
+			<p>
+				(a) <m>6\text{ m/s}</m>, (b) <m>15\text{ m/s}</m>.
+			</p>
+		</answer>
+		<solution><title>a</title>
+		
+		
+			<p>
+				(We will drop <m>x</m> from subscripts as well as units.)
+				In any interval, <m>[t_i,\, t_f]</m>, wfor each Cartesian component of velocity and acceleration, we have the following relation (from definition)
+				<me>
+					v_f - v_i = \int_{t_i}^{t_f}\, a(t)\, dt.
+				</me>
+				From the given plot of <m>a_x</m> vs <m>t</m> we have the following for the time in the interval <m>[0,\, 4\,\text{s}]</m>:
+				<me>
+					a = \frac{3}{4}\,t.
+				</me>
+				Therefore, since <m>v_0=0</m> we have
+				<me>
+					v_4 - 0 = \int_0^4 \frac{3}{4}\,t\, dt = 6\text{ m/s}.
+				</me>
+			</p>
+		</solution>
+		<solution><title>b</title>
+			<p>
+				For this segment, the slope is <m>-1/2</m>, but it also need to go through <m>(10, 0)</m>. Hence, we have
+				<me>
+					a - 0 = -\frac{1}{2}\,(t - 10)\ \rightarrow\ \ a = 5 - \frac{1}{2} t.
+				</me>
+				From part (a), we have the velocity at the initial instant of this interval to be <m>v_4 = 6</m>.  Hence
+				<me>
+					v_6 - 6 = \int_4^10 \left(5 - \frac{1}{2} t \right)  dt =9. 
+				</me>
+				Hence, <m>v_6 = 15\,\text{m/s}</m>. 
+				
+			</p>
+		</solution>
+	</exercise>
+
+	<exercise xml:id="exer-Time-Varying-Deceleration-of-a-Hockey-Puck"><title>Time Varying Deceleration of a Hockey Puck</title>
+		<statement>
+			<p>
+				A hockey puck is shot on a surface that has different roughness at different places. As a result its acceleration (i.e. deceleration) varies from place to place, which can be plotted as a function of time starting from the instant puck leaves the stick.  The puck has a velocity of <m>2\,\text{m/s}</m> at <m>t = 5\,\text{sec}</m>.  Find the velocity of the puck at <m>t = 0\,\text{sec}</m>.
+			</p>
+			<figure xml:id="fig-exer-var-accln-linear-flat-linear-in-time">
+				<caption></caption>
+				<image source="./images/two-dim-motion/exer-var-accln-linear-flat-linear-in-time.png">
+					<shortdescription></shortdescription>
+				</image>
+			</figure>
+		</statement>
+		<answer>
+			<p>
+				<m>21.25\text{ m/s}</m>.
+			</p>
+		</answer>
+		<solution>
+			<p>
+				We will implement the following equation.
+				<me>
+					v_f - v_i = \int_{t_i}^{t_f}\, a(t)\, dt.
+				</me>
+				Here <m>a(t)</m> is piecewise function:
+				<me>
+				a(t) = 
+					\begin{cases} 
+						-6 + t \amp  0 \le t \le 2 \\
+						-4 \amp 2 \le t \le 3.5 \\
+						-1 + 2 (t-5) \amp 3.5 \le t \le 5 
+					\end{cases}					
+				</me>
+				Since <m>v_5 = 2\text{ m/s}</m>, the integration gives
+				<me>
+					2 - v_0 = \int_0^2 (-6 + t) dt + (-4)\int_{2}^{3.5} dt + \int_{3.5}^{5} (-11 + 2t) dt = -19.25.
+				</me>
+				Hence, <m>v_0 = 21.25\text{ m/s}</m>. 
+				
+				
+			</p>
+		</solution>
+	</exercise>
+ 
+
 	<exercise xml:id="ex-Change-in-Position-and-Velocity-from-Analytic-Expression-of-Variable-Acceleration"><title> (Calculus) Change in Position and Velocity from Analytic Expression of Variable Acceleration</title>
 		<statement>
 			<p>

@@ -245,5 +245,96 @@
 		</solution>
 	</example>
 
+<exercises xml:id="exercises-displacement-from-velocity">
+	
+	<exercise xml:id="exer-Change-in-x-coordinate-from-Constant-v_x"><title>Change in <m>x</m>-coordinate from Constant <m>v_x</m></title>
+		<statement>
+			<p>
+				A ball is rolling on the floor such that its <m>x</m>-coordinate in a particular Cartesian coordinate system changes at a constant rate <m>u_0</m>. If the <m>x</m>-coordinate is <m>x_0</m> at <m>t=t_0</m>  what will be the <m>x</m>-coordinate at <m>t=T</m>?
+			</p>
+		</statement>
+		<solution>
+			<p>
+				From our discussion we know that the rate of change in a coordinate is given by the derivative of the coordinate with time. 
+				<me>
+					\frac{dx}{dt} = \textrm{Rate of change of } x \textrm{ coordinate}.
+				</me>
+				Here the rate is given to be <m>u_0</m>. Therefore, we have the following equation for the derivative of <m>x(t)</m>.
+				<me>
+					\frac{dx}{dt} = u_0.
+				</me>
+				This equation can also be written for differential elements, <m>dx</m> and <m>dt</m> by multiplying both sides by <m>dt</m>.
+				<me>
+					dx = u_0dt,
+				</me>
+				which we can integrate on both sides.  On the left side, the limit of integration is <m>x_0</m> to <m>x(T)</m> and the limit on the right side is the times for those <m>x</m> values, viz. from <m>t_0</m> to <m>T</m>.
+				<me>
+					\int_{x_0}^{x(T)}dx = \int_{t_0}^{T}u_0dt,
+				</me>
+				which gives the following result.
+				<me>
+					x(T) - x_0 = u_0(T-t_0). 
+				</me>
+			</p>
+			<p>
+				<alert>Further Observations</alert>:
+			</p>
+			<p>
+				An integration is actually not necessary here since the rate of change is constant in time. The constant rate implies that the average rate is the same as instantaneous rate of change. Therefore,
+				<me>
+					\frac{\Delta x}{\Delta t} = u_0,
+				</me>
+				which can be multiplied both sided by <m>\Delta t</m> to solve for <m>\Delta x</m>.  This immediately gives the change over the interval from <m>t_0</m> to <m>T</m> as
+				<me>
+					x(T) - x_0 = u_0(T-t_0).
+				</me>
+			</p>
+
+		</solution>
+	</exercise>
+
+	<exercise xml:id="exer-Change-in-x-coordinate-from-Varying-v_x"><title>Change in <m>x</m>-coordinate from Varying <m>v_x</m></title>
+	
+	
+		<statement>
+			<p>
+				A particle moves in the <m>xy</m>-plane of a coordinate system.  The rate of change of its <m>x</m>-coordinate varies linearly with time such that the rate at any particular time is <m>v_x = u_0 + b t^2</m>, where <m>u_0</m> and <m>b</m> are constants. If the <m>x</m>-coordinate is <m>x_0</m> at <m>t=t_0</m>  what will be the <m>x</m>-coordinate at <m>t=T</m>?
+			</p>
+		</statement>
+		<solution>
+			<p>
+				The discussion of the last example takes us to the following equation for the differentials
+				<me>
+					dx = \left(u_0 + b t^2\right)dt,
+				</me>
+				which can be integrated to give
+				<men xml:id="eq-change-coord-vary-vx">
+					x(T) - x_0 = u_0(T-t_0) + \frac{b}{3}\left( T^3-t_0^3 \right).
+				</men>
+			</p> 
+			<p>  <alert>Further Observations:</alert> </p> 
+			<p> 
+				Here we must resort to integration since the rate is changing with time. The short-cut method applicable for constant rate does not give the correct answer. The average rate is also not equal to the average of the <m>x</m>-component of velocity at the end and the <m>x</m>-component of velocity at the beginning.
+				<me>
+					v_{av,x} \ne \frac{v_x(T) + v_x(t_0)}{2}.
+				</me>
+				The <m>x</m>-component of the average velocity is equal to the change in the <m>x</m>-coordinate divided by the interval. Using Eq. <xref ref="eq-change-coord-vary-vx"/> we find <m>v_{ave}</m> to be
+				<me>
+					v_{av,x} = \frac{x(T) - x_0}{T - t_0} = u_0 + \frac{b}{3}\left( T^2 + t_0T + t_0^2\right),
+				</me>
+				which can also be obtained by integrating the <m>x</m>-component of the instantaneous velocity over time and dividing by the interval.
+				<me>
+					v_{av,x} = \frac{\int_{t_0}^T v_x(t) dt}{T-t_0} = \frac{\textrm{Integration of <m>x</m>-instantaneous velocity}}{\textrm{Duration}}. 
+				</me>
+				This gives the same result.
+			</p>
+		</solution>
+	</exercise>
+
+
+	
+</exercises>
+
+
 
 </section>

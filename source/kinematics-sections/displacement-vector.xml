@@ -1,14 +1,20 @@
 <section xml:id="kinematics-Displacement"> <title>Displacement </title>
 <idx><h>Displacement</h><h>Vector</h></idx>
 	<introduction>
-		<p></p>
-		<p> <term>Displacement vector</term> 
-			refers to the change in position. By displacement we study overall movement of an object between two instants in time as illustrated in <xref ref="fig-displacement-vector-3d"/>.  
-	 	</p>
-	 	<p>
-	 		Let <m>\vec r_i</m> be the position 
-	 		at instant <m> t=t_i</m> and <m>\vec r_f</m> at instant <m> t=t_f</m>. From the vector triangle in the figure, it is clear that <m> \vec r_i + \Delta \vec r </m> equals <m>\vec r_f </m>, since both take you from <m> O </m> to the final location. Therefore, displacement vector, <m>\Delta \vec r</m> will be
-	 		<!-- Then, we say that the object has been displaced by the displacement vector,  denoted by <m> \Delta \vec r</m>, given by the difference of the two position vectors. -->  
+		<p>
+			One of the characteristics of a moving object is that its position changes with time.  The position of a point particle traces out a trajectory in space as it moves from one point to the next. To describe this change, we define a quantity called the <idx><h>Dixplacement</h></idx> <term>displacement vector</term> or simply displacement. Displacement gives overall movement of an object between two instants in time as illustrated in <xref ref="fig-displacement-vector-3d-new"/>.
+		</p>
+
+		<figure xml:id="fig-displacement-vector-3d-new">
+			<caption>A displacement vector from point labeled <m>i</m> to another point labeled <m>f</m>. </caption>
+			<image source="./images/two-dim-motion/displacement-vector-3d-new.png" width="70%">
+				<shortdescription>An arrow from <m>i</m> to <m>f</m>. </shortdescription>
+			</image>
+		</figure>
+
+
+		<p>
+			We can write displacement vector in terms of the position vectors of the initial and final points. Let <m>\vec r_i</m> be the position at when the particle is at <m>i</m> and <m>\vec r_f</m> when at <m>f</m>. From the vector triangle <m>Oif</m> in <xref ref="fig-displacement-vector-3d"/>, it is clear that <m> \vec r_i + \Delta \vec r </m> equals <m>\vec r_f </m>, since both take you from <m> O </m> to the final location. Therefore, displacement vector, <m>\Delta \vec r</m> will be <!-- Then, we say that the object has been displaced by the displacement vector,  denoted by <m> \Delta \vec r</m>, given by the difference of the two position vectors. -->  
 			<men> 
 				\Delta \vec r = \vec r_f - \vec r_i.		
 			</men>
@@ -20,9 +26,10 @@
 
 		<figure xml:id="fig-displacement-vector-3d">
 			<caption> 
-				Displacement vector, <m>\Delta \vec r</m>.
+				Displacement vector, <m>\Delta \vec r</m>, and the position vectors <m>\vec r_i</m> and <m>\vec r_f</m>.
 			</caption>		
 			<image source="./images/two-dim-motion/displacement-vector-3d.png" width="70%"/>
+			<shortdescription>Three arrows showing triangle of vectors relationship. </shortdescription>
 		</figure>
 
 		<p>
@@ -46,11 +53,53 @@
 				\Delta x = x_f-x_i,\ \ \Delta y = y_f-y_i,\ \ \Delta z = z_f- z_i.
 			</me>
 		</p>
-
+		<sidebyside widths="45% 10% 45%">
+			<p>
+				An example of the resolution of a displacement vector in the <m>xy</m>-plane is displayed in <xref ref="fig-kin-disp-2d-1"/>.
+				<md>
+					<mrow>\amp \vec r_1 = 1\hat u_x + 3\hat u_y\ [\text{cm}]</mrow> 
+					<mrow>\amp \vec r_2 = 4\hat u_x + 1\hat u_y \ [\text{cm}]</mrow>
+					<mrow> \amp \vec s_{12} = (4-1)\hat u_x + (1-3)\hat u_y.\ [\text{cm}]</mrow>
+				</md>
+			</p>
+			<p></p>
+			<figure xml:id="fig-kin-disp-2d-1">
+				<caption>Displacement vector in terms of the Cartesian unit vectors.</caption>
+				<image source="./images/two-dim-motion/kin-disp-2d-1.png">
+					<shortdescription></shortdescription>
+				</image>
+			</figure>
+		</sidebyside>
+		<p>
+			Note that regardless of the placement of the displacement vector, the projections of the beginning and ending of the displacement vector on the Cartesian axes give the length of vectors along the Cartesian axes that make up the original displacement vectors. You can say that <m>(x_2 -x_1) \hat u_x</m> along the <m>x</m>-axis and <m>(y_2-y_1) \hat u_y</m> along the <m>y</m>-axis add up to the displacement vector shown in the figure.
+		</p>
  	</introduction>
+	<subsection xml:id="subsec-Coordinate-Independence-of-Displacement-Vector">
+		<title>Independence of Displacement Vectors from Coordinate System</title>
+		<p>
+			We have already mentioned that the displacement vector does not require any reference point for its definition.  We demonstrate here by analytic means that the displacement vector is independent of coordinate system as shown in <xref ref="fig-kin-disp-3d-3a"/>.  If you pick another place for the origin, say the point <m>O'</m> [read O-prime], and use a different orientation for the coordinate axes than the one for the origin <m>O</m>, then you will get different numerical values for the coordinates for points <m>P_1</m> and <m>P_2</m>.
+		</p>
+		<p>
+			Let us denote the two coordinates systems by <m>Oxyz</m> and <m>O'x'y'z'</m> respectively. The coordinates for points <m>P_1</m> and <m>P_2</m> in the <m>O'x'y'z'</m> system will be <m>(x'_1,y'_1,z'_1)</m> and <m>(x'_2,y'_2,z'_2)</m> respectively, which will be different from the coordinates <m>(x_1,y_1,z_1)</m> and <m>(x_2,y_2,z_2)</m> for the same points in the <m>Oxyz</m> system.  However, you will find that the difference in the coordinates in the two coordinate systems will be the same: 
+			<me>
+				(x'_1 -x'_1,\ y'_2-y'_1,\ z'_2-z'_1) = (x_2 -x_1,\ y_2-y_1,\ z_2-z_1).
+			</me>
+			
+		</p>
+		<figure xml:id="fig-kin-disp-3d-3a">
+			<caption>The displacement vector <m>\vec s_{12}</m> from point <m>P_1</m> to point <m>P_2</m> from the perspectives of two different coordinate systems. The triangle of vectors in triangles <m>\triangle OP_1P_2</m> and <m>\triangle O'P_1P_2</m> show that, even though the pairs \{ <m>\vec r_1</m>, <m>\vec r_2</m> \} and \{ <m>\vec r^{\prime}_1</m> <m>\vec r^{\prime}_2</m> \} may be different, the displacement vector from <m>P_1</m> to <m>P_2</m> is the same in the two coordinate systems: <m>\vec s_{12} = \vec r_2 - \vec r_1 = \vec r^{\prime}_2 - \vec r^{\prime}_1</m>.</caption>
+			<image source="./images/two-dim-motion/kin-disp-3d-3a.png" width="70%">
+				<shortdescription></shortdescription>
+			</image>
+		</figure>
+		<p>
+			You can also see this directly in terms of the triangle of vectors in triangles <m>\triangle OP_1P_2</m> and <m>\triangle O'P_1P_2</m>.  The vector addition  shows that, even though the pairs \{ <m>\vec r_1</m>, <m>\vec r_2</m> \} and \{ <m>\vec r_1^{\prime}</m>, <m>\vec r_2^{\prime}</m> \} may be different, the displacement vector from <m>P_1</m> to <m>P_2</m> is the same in the two coordinate systems:
+			<men xml:id="eqn-disp-pos-3">
+				\vec s_{12} = \vec r_2 - \vec r_1 = \vec r_2^{\prime} - \vec r_1^{\prime}.
+			</men>
+		</p>
+	</subsection>
 
-
- 	
 
 	<example xml:id="ex-Displacement-Vector-for-One-dimensional-Motion"><title> Displacement Vector for 1D Motion </title>
 		<statement>
@@ -139,8 +188,6 @@
 				<p><alert> Direction requires description. </alert>
 					Note again that the angle itself is not the direction - if you choose to give the angle with respect to the positive <m> y </m> axis, the value will be <m> -37^{\circ} </m> for the same direction in the plane.  So, the value of angle, in itself, is not the full information about the direction - you need to state what the angle means in the real space. Minus in <m> -37^{\circ} </m> refers to the clockwise direction as you look down from the positive <m> z </m> axis.
 				</p>
-			 
-			
 		</solution>
 	</example>
 
@@ -153,7 +200,7 @@
 				You travel from your home to the base of a mountain, and then, climb the mountain. The coordinates of your home, base of the mountain and the top of the mountain in a particular coordinate system are: home <m> (0,0,0) </m>, base <m> (4000 \text{ m}, 3000 \text{ m}, 0)</m>, peak <m>(4500 \text{ m}, 2500 \text{ m}, 800 \text{ m} )</m>.
 			</p> 
 			<image source="./images/two-dim-motion/ex-mountain-peak.png" width="60%"/>
-			 
+			
 			<p>
 				Find the magnitude and direction of the net displacement from your home to the peak (a) directly, and (b) by adding the two displacements, from home to the base and from base to the peak. (c) Draw a vector diagram to show the relationship between three displacements: from home to the base, from base to the peak, and from home to the peak.
 			</p>
@@ -302,7 +349,13 @@
 			</p>
 		</solution>
 	</exercise>
- 
+
+
+
+
+
+
+
 	<exercise xml:id="Practice-with-a-Friend-How-high-is-the-mountain"><title>Practice with a Friend: How high is the mountain?</title>
 
 		<statement>

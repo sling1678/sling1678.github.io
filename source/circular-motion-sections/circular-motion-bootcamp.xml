@@ -30,7 +30,21 @@
 			</p>
 		</problem>
 	
- 
+		<problem><title>Angular Velocity of a Pebble on a Rotating Tire </title>
+			<p> Follow the link: <xref ref="exer-Angular-Velocity-of-a-Pebble-on-a-Rotating-Tire"/>.
+			</p>
+		</problem>
+
+		<problem><title>Direction of a Particle Moving on a Circle</title>
+			<p> Follow the link: <xref ref="exer-Direction-of-a-Particle-Moving-on-a-Circle"/>.
+			</p>
+		</problem>
+
+		<problem><title>Particle in a Non-uniform Circular Motion</title>
+			<p> Follow the link: <xref ref="exer-Particle-in-a-Non-uniform-Circular-Motion"/>.
+			</p>
+		</problem>
+
 		<problem><title> (Calculus) Angular Velocity from Angle as a Function of Time </title>
 			<p> Follow the link: <xref ref="ex-Angular-Velocity-from-Angle-as-a-Function-of-Time" />.
 			</p>
@@ -172,6 +186,16 @@
 			<p> Follow the link: <xref ref="ex-Motion-on-a-Straight-Line-Described-in-Polar-Coordinates" />.
 			</p>
 		</problem> 
+
+
+		<problem><title> (Calculus) Motion of a Ball Rolling in a Circular Track </title>
+			<p> Follow the link: <xref ref="exer-Circular-Motion-of-a-Ball-Rolling-in-a-Circular-Track" />.
+			</p>
+		</problem>
+
+ 
+
+
 
 		<problem><title> Practice with a Friend: Elliptical Trajectory In Polar Coordinates </title>
 			<p> Follow the link: <xref ref="ex-Elliptical-Trajectory-In-Polar-Coordinates" />.
@@ -407,6 +431,83 @@
 		-->
 
 		</problem>
+
+
+		<problem><title>Study Circular Motion from a Given Caertesian Position Vector</title>
+		
+		
+			<statement>
+				<p>
+					The position of a particle moving in the <m>xy</m>-plane is given by  <m>\vec r(t) = b \cos(\pi t) \hat u_x + b \sin(\pi t) \hat u_y</m>, where <m>t</m> is in sec and <m>a</m> in cm.  (a) Show that the motion is a circular motion, and find the value of the radius of the circle, and find the Cartesian coordinates of the center of the circle.  (b) Find an expression for the velocity of the particle at an arbitrary instant <m>t</m>.  (c) Find an expression for the angular speed of the particle at an arbitrary time <m>t</m>. (d) Find an expression of the acceleration of the particle at an arbitrary instant <m>t</m>.
+				</p>
+			</statement>
+			<solution><title>a</title>
+				<p>
+					An object moves in a circle in the <m>xy</m>-plane if its <m>x</m> and <m>y</m> coordinates obeys the following equation for some <m>x_0</m>, <m>y_0</m> and <m>r_0</m>.
+					<me>
+						(x-x_0)^2 + (y-y_0)^2 = r_0^2.
+					</me>
+					The center of the circle is at <m>(x_0,y_0)</m> and the radius of the circle is given by <m>r_0</m>. Let us see if the given position can be written in this form.  Recall that <m>\vec r = x\ \hat u_x + y\ \hat u_y</m>.  Therefore,
+					<md>
+						<mrow> \amp x(t) = b \cos(\pi t)</mrow>
+						<mrow> \amp y(t) = b \sin(\pi t) </mrow>
+					</md>
+					Now we square the two and add find that
+					<me>
+						x^2 + y^2 = b^2.
+					</me>
+					This says that the particle is moving in a circle about the origin as the center and the radius of the circle is equal to  <m>b</m>.
+				</p>
+			</solution>
+			<solution><title>b</title>
+				<p>  
+					To find the velocity of the particle we can find the <m>x</m> and <m>y</m>-components of the velocity from <m>x(t)</m> and <m>y(t)</m>.
+					<md>
+						<mrow> \amp v_x = \frac{dx}{dt} = - \pi b \sin(\pi t)</mrow>
+						<mrow> \amp v_y = \frac{dy}{dt} =  \pi b \cos(\pi t)</mrow>
+					</md>
+					Therefore, the speed of the particle when in the circular motion is
+					<me>
+						v = \sqrt{v_x^2 + v_y^2} = \pi b.
+					</me>
+					The direction of the velocity is given by the angle <m>\theta</m> with respect to the positive <m>x</m>-axis.
+					<me>
+						\tan\theta =  \frac{v_y}{v_x}  = -\cot(\pi t) = \tan\left(\pi t - \frac{\pi}{2} \right),\ \textrm{or},\ \tan\left(\pi t + \frac{3\pi}{2} \right).
+					</me>
+				</p>
+			</solution>
+			<solution><title>c</title>
+				<p>
+					The angular speed <m>\omega</m> in a circular motion is equal to radius times the speed.
+					<me>
+						\omega =  v /r = \frac{\pi b}{b} = \pi.
+					</me>
+				</p>
+			</solution>
+			<solution><title>d</title>
+				<p>
+					The acceleration can be obtained from the components of acceleration obtained by taking time derivatives of the components of the velocity found above.
+					<md>
+						<mrow> \amp a_x = \frac{dv_x}{dt} = - \pi^2 b \sin(\pi t)</mrow>
+						<mrow> \amp a_y = \frac{dv_y}{dt} =  -\pi^2 b \cos(\pi t)</mrow>
+					</md>
+					The magnitude of the acceleration will be
+					<me>
+						\textrm{Magnitude}\ = \sqrt{a_x^2 +a_y^2} = \pi^2 b,
+					</me>
+					and the direction given by the angle of the acceleration vector with respect to the positive <m>x</m> axis will be
+					<me>
+						\tan\theta = \frac{a_y}{a_x} = -\tan((\pi t)), 
+					</me>
+					which says that the direction of the acceleration changes with time as <m>\theta(t) = \pi t</m>. 
+				</p>
+			</solution>
+		</problem>
+
+
+
+
+
 	</subsection>
 
 

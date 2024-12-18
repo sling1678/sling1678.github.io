@@ -22,10 +22,10 @@
 			You can see that the polar coordinates are simply the magnitude <m>r</m> and direction <m> \theta </m> of the position vector <m> \vec r</m>. The relations between the polar coordinates <m>(r,\theta)</m> and the Cartesian coordinates <m>(x,y)</m> for the same point are 
 		
 			<mdn>
-			 	<mrow> \amp  x = r\, \cos\,\theta,  </mrow>
-			 	<mrow> \amp  y = r\, \sin\,\theta,  </mrow>
-			 	<mrow> \amp  r = \sqrt{x^2+y^2},  </mrow>
-			 	<mrow> \amp  \theta = \tan^{-1}\left(\dfrac{y}{x} \right) </mrow>
+				<mrow> \amp  x = r\, \cos\,\theta,  </mrow>
+				<mrow> \amp  y = r\, \sin\,\theta,  </mrow>
+				<mrow> \amp  r = \sqrt{x^2+y^2},  </mrow>
+				<mrow> \amp  \theta = \tan^{-1}\left(\dfrac{y}{x} \right) </mrow>
 			</mdn>
 			Note that <m> \theta </m> obtained using the <m> \tan^{-1}</m> function will need to be adjusted for the quadrant in which <m> (x,y) </m> resides: add <m> \pi \text{ rad}</m> if <m> (x,y) </m> is in quadrant 2 or 3 and  <m> 2\pi \text{ rad}</m> if <m> (x,y) </m> is in quadrant 4. 
 		</p>
@@ -214,9 +214,9 @@
 		</statement>
 		<!-- <hint> <p> Use <m>\hat u_r = \cos\theta\ \hat i + \sin\theta\ \hat j</m> for different value of <m>\theta</m>.   </p> </hint> -->
 		<answer> <p> (b) <m>\hat u_r = \cos\theta\ \hat i + \sin\theta\ \hat j</m> for different value of <m>\theta</m>.  </p> </answer>
-		<solution> 
+		<solution><title>a</title> 
 			<p>
-				(a) The unit vectors in different directions fall on the unit circle as shown in <xref ref="fig-ex-circular-motion-unit-radial-vectors"/>.
+				The unit vectors in different directions fall on the unit circle as shown in <xref ref="fig-ex-circular-motion-unit-radial-vectors"/>.
 			</p>
 			<figure xml:id="fig-ex-circular-motion-unit-radial-vectors">
 				<caption>
@@ -225,16 +225,17 @@
 
 				<image source="./images/circular-motion/ex-circular-motion-unit-radial-vectors.png" width="60%"/>
 			</figure>
- 			<p>
- 				(b) 
+		</solution>
+		<solution><title>b</title>
+			<p>
 				The <m>x</m>- and <m>y</m>-components of unit radial vector in the direction of counterclockwise angle <m>\theta</m> from the positive <m>x</m> axis is given by
 				<me>
-					 \hat u_r = \cos\theta\ \hat i + \sin\theta\ \hat j
+					\hat u_r = \cos\theta\ \hat i + \sin\theta\ \hat j
 				</me>
 				We would substitute the value for <m>theta</m> for each of the rays to find the representation of the unit radial vector in that direction.  For instance, the case (ii) when <m>\theta = \pi/3</m> is
 				<md>
-					 <mrow> \hat u_r \amp = \cos(\pi/3)\ \hat i + \sin(\pi/3)\ \hat j</mrow>
-					 <mrow> \amp = \frac{1}{2}\ \hat i + \frac{\sqrt{3}}{2}\ \hat j.</mrow>
+					<mrow> \hat u_r \amp = \cos(\pi/3)\ \hat i + \sin(\pi/3)\ \hat j</mrow>
+					<mrow> \amp = \frac{1}{2}\ \hat i + \frac{\sqrt{3}}{2}\ \hat j.</mrow>
 				</md>
 
 			</p>
@@ -430,7 +431,7 @@
 					</me>
 				</p>
 			</sidebyside>
- 		</subsubsection>
+		</subsubsection>
 
 	<example xml:id="ex-Displacement-Vector-in-Cartesian-and-Polar-Coordinates"><title> Displacement Vector in Cartesian and Polar Coordinates </title>
 		<statement>
@@ -458,20 +459,27 @@
 					<mrow> \hat j  \amp = \sin\theta\ \hat u_r + \cos\theta\  \hat u_{\theta}
 					</mrow>
 				</md>
- 			</p>
- 			<sidebyside widths="60% 5% 35%">
- 				<p>
- 					Now, we are ready to tackle the problem at hand. The given displacement vector is a radial vector in the direction of <m>\theta = 30^{\circ}</m>.  Let us denote this vector by <m>\vec D</m>.
-				 	<mdn>
-						<mrow> \vec D \amp  = 2\ \text{m}\  \left[ \cos (30^{\circ}) \hat i +    \sin (30^{\circ}) \hat j \right]</mrow>
-						<mrow xml:id="eq-ch3-ex-38-1"> \amp  = \sqrt{3}\ \text{m}\ \hat i +1\  \text{m}\  \hat j .</mrow>
+			</p>
+			<sidebyside widths="60% 5% 35%">
+				<p>
+					Now, we are ready to tackle the problem at hand. The given displacement vector is a radial vector in the direction of <m>\theta = 30^{\circ}</m>.  Let us denote this vector by <m>\vec D</m>.
+					<mdn>
+						<mrow>
+							\vec D \amp  = 2\ \text{m}\  \left[ \cos (30^{\circ}) \hat i +    \sin (30^{\circ}) \hat j \right]
+						</mrow>
+						<mrow xml:id="eq-ch3-ex-38-1">
+							\amp  = \sqrt{3}\ \text{m}\ \hat i +1\  \text{m}\  \hat j.
+						</mrow>
 					</mdn>
- 				</p>
- 				<p></p>
- 				<image source="./images/circular-motion/ex-38.png"/>
- 			</sidebyside>
- 
- 			<p>
+				</p>
+				<p></p>
+				<figure xml:id="fig-Disp-Vec-polar-ex-38">
+					<caption></caption>
+					<image source="./images/circular-motion/ex-38.png"/>
+				</figure>
+				
+			</sidebyside>
+			<p>
 				This can be written immediately in terms of <m>\hat u_r</m>.
 				<me>
 					\vec D = 2\ \text{m}\  \hat u_r.
@@ -486,13 +494,15 @@
 					<mrow> \amp \hat j  = \frac{1}{\sqrt{2}}\ \hat u_r^{\prime } + \frac{1}{\sqrt{2}}\  \hat u_{\theta}^{\prime }</mrow>
 				</md>
 				<md>
-					<mrow> \vec D \amp  = \left[\sqrt{3}\ \text{m}\  \hat i +    1\  \text{m}\  \hat j \right]</mrow>
-				    <mrow> \amp  =  \sqrt{3} \ \text{m}\  \left(\frac{1}{\sqrt{2}}\ \hat u_r^{\prime } - \frac{1}{\sqrt{2}}\  \hat u_{\theta}^{\prime } \right) + 1\ \text{m}\ 
-				           \left( \frac{1}{\sqrt{2}}\ \hat u_r^{\prime } + \frac{1}{\sqrt{2}}\  \hat u_{\theta}^{\prime } \right)</mrow>
-				    <mrow> \amp  = \frac{\sqrt{3} + 1}{\sqrt{2}} \ \text{m}\  \hat u_r^{\prime } + \frac{\sqrt{3} - 1}{\sqrt{2}} \ \text{m}\   \hat u_{\theta}^{\prime } 
-				    </mrow>
+					<mrow> 
+						\vec D \amp  = \left[\sqrt{3}\ \text{m}\  \hat i +    1\  \text{m}\  \hat j \right]
+					</mrow>
+					<mrow> \amp  =  \sqrt{3} \ \text{m}\  \left(\frac{1}{\sqrt{2}}\ \hat u_r^{\prime } - \frac{1}{\sqrt{2}}\  \hat u_{\theta}^{\prime } \right) + 1\ \text{m}\
+					\left( \frac{1}{\sqrt{2}}\ \hat u_r^{\prime } + \frac{1}{\sqrt{2}}\  \hat u_{\theta}^{\prime } \right)</mrow>
+					<mrow> \amp  = \frac{\sqrt{3} + 1}{\sqrt{2}} \ \text{m}\  \hat u_r^{\prime } + \frac{\sqrt{3} - 1}{\sqrt{2}} \ \text{m}\   \hat u_{\theta}^{\prime }
+					</mrow>
 				</md>
-			 </p>
+			</p>
 		</solution>
 	</example>
 
@@ -501,15 +511,6 @@
 
 
 	<exercises>
-
- 
-
-
-
-
-
-
-
 
 	<exercise xml:id="ex-Motion-of-a-Person-on-a-Rotating-Platform-Using-Polar-Coordinates"><title>Motion of a Person on a Rotating Platform Using Polar Coordinates </title>
 		<statement>
@@ -714,6 +715,72 @@
 			</p>
 		</solution>
 	</exercise>
+
+	<exercise xml:id="exer-Circular-Motion-of-a-Ball-Rolling-in-a-Circular-Track"><title>Motion of a Ball Rolling in a Circular Track</title>
+	
+	
+		<statement>
+			<p>
+				A ball is rolling in a circular track of radius <m>R</m> which is in the <m>xy</m>-plane but the center of the track is not at the origin of the Cartesian coordinate system in use.  Instead, the center of the track is at <m>(x_0,y_0)</m>.  The ball has a constant speed of <m>v_s</m>. (a) Give an expression of the position vector as a  function of time <m>\vec r(t)</m> in terms of the unit vectors <m>\{\hat u_x, \hat u_y\}</m> of the Cartesian coordinates. (b) Use your expression for <m>\vec r(t)</m> to find an expression for the velocity of the particle at an arbitrary time <m>t</m>. (c)  Use your expression for <m>\vec r(t)</m> to find an expression of the acceleration of the particle at an arbitrary instant <m>t</m>.
+			</p>
+		</statement>
+		<solution><title>a</title>
+			<p>
+				The circle of motion and the coordinates are shown in the figure.
+			</p>
+			<sidebyside widths="45% 10% 45%">
+				<p>
+					Supposing that the ball is at the largest positive point at time <m>t=0</m>.  Then, we can write the <m>x</m> and <m>y</m>-coordinates of the ball at an arbitrary time as
+					<md>
+						<mrow> \amp x(t) = x_0 + R \cos(\omega t),</mrow>
+						<mrow> \amp y(t) = y_0 + R \sin(\omega t),</mrow>
+					</md>
+					where <m>\omega = v_s/R</m> is the angular speed of the ball. 
+				</p>
+				<p></p> 
+				<figure xml:id="fig-circular-motion-ex-41">
+					<caption></caption>
+					<image source="./images/circular-motion/circular-motion-ex-41.png">
+						<shortdescription></shortdescription>
+					</image>
+
+				</figure>
+			</sidebyside>
+			<p>
+				The position vector <m>\vec r(t)</m> will be
+				<me>
+					vec r(t) = \left[  x_0 + R \cos(\omega t) \right] \hat u_x +  \left[y_0 + R \sin(\omega t)\right] \hat u_y. 
+				</me>
+			</p>
+		</solution>
+
+		<solution><title>b</title>
+			<p>
+				Taking the time derivative of <m>\vec r</m> will give the velocity of the ball.
+				<me>
+					\vec v(t) = \frac{d\vec r}{dt} =  \left[  - R\omega \sin(\omega t) \right] \hat u_x +  \left[  R\omega \cos(\omega t)\right] \hat u_y.
+				</me>
+				
+			</p>
+
+		</solution>
+		<solution><title>c</title>
+			<p>
+				
+				Taking the time derivative of <m>\vec v</m> will give the acceleration of the ball.
+				<me>
+					\vec a(t) = \frac{d\vec v}{dt} =  - R\omega^2 \left[   \cos(\omega t) \hat u_x +      \sin(\omega t) \hat u_y \right]. 
+				</me>
+				Note that <m>\cos(\omega t) \hat u_x + \sin(\omega t) \hat u_y</m> is the unit vector pointed from  the center of the circle towards  the ball.  Therefore, if a ball moves uniformly in a circle, the acceleration has the magnitude <m>R\omega^2</m> and the direction is pointed towards the center of the circle as expected.
+			</p>
+		</solution>
+	</exercise>
+ 
+ 
+
+
+
+
 
 
 	<exercise xml:id="ex-Motion-on-a-Straight-Line-Described-in-Polar-Coordinates-2"><title>(Calculus) Practice with a Friend: Motion on a Straight Line Described in Polar Coordinates</title>

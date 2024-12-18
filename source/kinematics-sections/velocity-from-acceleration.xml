@@ -220,19 +220,34 @@
 	</exercises>
 
 
-
-	<!-- <subsection><title>(Calculus) Integrating the Acceleration </title>
-		<p>
-			Along the <m> x </m> component of the motion the relation between velocity and acceleration will be
-			<men xml:id="eq-velocity-from-acceleration-x-fundamental">
-				\dfrac{dv_x}{dt} = a_x \Longleftrightarrow v_{f,x} - v_{i,x} = \int_{t_i}^{t_f}\, a_x(t)\, dt.
-			</men>	
-			Applying this similarly to <m> y </m> and <m> z </m> motions gives us changes in <m> v_y </m> and <m> v_z </m>.  		
-		</p>
-		<p>
-			The integral in the <m> x </m> motion can be evaluated either by integrating an analytic expression of <m> a_x</m> or by the <q> area under the curve method</q> of evaluating integrals, discussed in the displacement from velocity section.
-		</p>
-	</subsection> -->
+	<exercise xml:id="exer-Velocity-of-an-Elevator-from-its-Acceleration"><title>Velocity of an Elevator from its Acceleration</title>
+	
+	
+		<statement>
+			<p>
+				An elevator is going up with an acceleration given by <m>\vec a = (10.0\, e^{-{2t}})\,\hat u_y\, \text{m/s}^2</m>, where <m>t</m> is in seconds. If the elevator started from rest, what will be its speed at <m>t=3.0\text{ s}</m>. 
+			</p>
+		</statement>
+		<answer>
+			<p>
+				<m>5\left(1 - e^{-6} \right)</m> m/s.
+			</p>
+		</answer>
+		<solution>
+			<p>
+				Here, only the <m>y</m> component is non-zero. By integrating <m>a_y</m> from <m>t=0</m> to <m>t=3</m>, we will get our answer.
+				<me>
+					v_y(3) - v_y(0) = \int_0^3 a_x dt = \left. 10.0\frac{e^{-2t}}{-2}\right|_{0}^{3} = 5.0 - 5.0 e^{-6}.
+				</me>
+				Since the elevator started from rest, we have <m>v_y(0)=0</m>. Hence,
+				<me>
+					\vec v = \left( 5.0 - 5.0 e^{-6} \right)\,\hat u_y\,\text{m/s}.
+				</me>
+				Therefore, speed at that instant is <m>5\left(1 - e^{-6} \right)</m>.
+				
+			</p>
+		</solution>
+	</exercise>
 
 
 
