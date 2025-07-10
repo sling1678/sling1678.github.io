@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">39.3</span><span class="period">.</span><span class="space"> </span><span class="title">Mutual Inductance of a Solenoid Surrounded by a Loop.</span>
+</h3>
+<div class="para">A solenoid loop <span class="process-math">\(C_1\)</span> of radius <span class="process-math">\(a\)</span>  consists of <span class="process-math">\(n\)</span> circular loops per unit length as shown in <a href="inductance-definition.html#fig-mutual-induct-0" class="xref" data-knowl="./knowl/xref/fig-mutual-induct-0.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 39.4">Figure 39.4</a>.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:65%;"><div class="para">Another circuit <span class="process-math">\(C_2\)</span> of a circular loop of radius <span class="process-math">\(R\)</span> surrounds the solenoid such that the solenoid is at the axis of the second loop. Assume that the length of the solenoid is much greater than the radius of the solenoid so that we can use the infinite solenoid approximation.</div></div>
+<div class="sbspanel top" style="width:35%;"><figure class="figure figure-like"><img src="external/./images/inductance/mutual-induct-0.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">39.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">(a) Find the mutual inductance of the two loops  from the flux of current in <span class="process-math">\(C_1\)</span> through the area of a surface attached to the circuit <span class="process-math">\(C_2\text{.}\)</span> Assume <span class="process-math">\(a \ll R\text{.}\)</span>
+</div> <div class="para">(b) <em class="alert">(Calculus)</em> Find the mutual inductance of the two loops from the flux of current in <span class="process-math">\(C_2\)</span> through the area of a surface attached to the circuit <span class="process-math">\(C_1\text{,}\)</span> and  demonstrate the two methods give rise to the same formula for the mutual inductance.  Assume <span class="process-math">\(a \ll R\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\pi \mu_0 n a^2\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para">(a) <em class="alert">Calculation of mutual inductance by using current through the long solenoid.</em>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:65%;"><div class="para">We need magnetic flux through one circuit by current in the other circuits. Since the magnetic field of a long solenoid is easy to work with, we will think of an arbitrary current <span class="process-math">\(I\)</span> in  the solenoid as shown in <a href="inductance-definition.html#fig-mutual-induct-0-1" class="xref" data-knowl="./knowl/xref/fig-mutual-induct-0-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 39.5">Figure 39.5</a>. This <span class="process-math">\(I\)</span> will cancel out in the end, so we do not worry about its value.</div></div>
+<div class="sbspanel top" style="width:35%;"><figure class="figure figure-like"><img src="external/./images/inductance/mutual-induct-0-1.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">39.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">Since, the solenoid is very long, the magnetic field is significant only inside the space of the solenoid. We use a cylindrical coordinate with the <span class="process-math">\(z\)</span>-axis along the axis of the solenoid and the circular loop in the <span class="process-math">\(xy\)</span>-plane. Let <span class="process-math">\(s\)</span> be the distance of a point from the axis, i.e. the radial distance in the  <span class="process-math">\(xy\)</span>-plane.</div> <div class="para logical">
+<div class="para">The direction of the magnetic field for the current direction chosen in the figure is towards the positive <span class="process-math">\(z\)</span> axis and has magnitude given by the following step function.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B_{\text{solenoid}} = 
+\begin{cases}
+\mu_0 n I  \amp\ \ s \lt a\\
+0  \amp\ \ s \ge a
+\end{cases}
+\end{equation*}
+</div>
+<div class="para">We attach a circular surface to the circular wire <span class="process-math">\(C_2\)</span> to find the flux through <span class="process-math">\(C_2\text{.}\)</span> Let <span class="process-math">\(\hat u_z\)</span> be the normal to the surface.  Since the magnetic field is zero outside the solenoid, the magnetic flux through <span class="process-math">\(C_2\)</span> comes only from the field in the area of the circular loop that is within the cross-section of the solenoid.  This gives the following for the magnetic flux <span class="process-math">\(\Phi_2\)</span> through <span class="process-math">\(C_2\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Phi_2 = \mu_0 n I\times \pi a^2.
+\end{equation*}
+</div>
+<div class="para">Dividing out the current gives the mutual inductance between the two circuits.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathcal{M} = \pi \mu_0 n a^2.
+\end{equation*}
+</div>
+<div class="para">Although, this formula does not look like it is symmetric in switiching properties of circuits 1 and 2. In (b), you will see that you get exactly the same expression when you switch the current on in the loop and compute the flux in the solenoid.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para">(b) <em class="alert">Calculation of mutual inductance by using current through the circular loop.</em>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:65%;"><div class="para">Now, we imagine passing a current <span class="process-math">\(I\)</span> through the loop around the solenoid so that a  current <span class="process-math">\(I\)</span> as shown in <a href="inductance-definition.html#fig-mutual-induct-0-2" class="xref" data-knowl="./knowl/xref/fig-mutual-induct-0-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 39.6">Figure 39.6</a>.  Magnetic field of this current will pass everwhere, and in particular, through a surface attached to the wires of the solenoid. We will find a formula for this flux  by summing over the flux through each ring of the solenoid.</div></div>
+<div class="sbspanel top" style="width:35%;"><figure class="figure figure-like"><img src="external/./images/inductance/mutual-induct-0-2.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">39.6<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:65%;"><div class="para">In the approximation <span class="process-math">\(a\lt \lt R\text{,}\)</span> the magnetic field at a point in the solenoid will be approximately the same as the value at the center of solenoid coil.  Since the magnetic field of the current in the outer ring depends on the distance <span class="process-math">\(|z|\)</span> from the center of the ring, we can set up magnetic flux <span class="process-math">\(d\Phi_1\)</span> through loops of the solenoid between <span class="process-math">\(z\)</span> and <span class="process-math">\(z+dz\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:35%;"><figure class="figure figure-like"><img src="external/./images/inductance/mutual-induct-0-a.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">39.7<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="para">Since, there are <span class="process-math">\(n dz\)</span> loops of solenoid within a distance <span class="process-math">\(dz\text{,}\)</span> the flux through the surface attached to this part of the solenoid will have <span class="process-math">\(n dz\)</span> times flux through one loop at <span class="process-math">\(z\text{.}\)</span>  Therefore, <span class="process-math">\(d\Phi_1\)</span> is given as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-mutual-ind-ex-2.html ./knowl/xref/eq-mutual-ind-ex-1.html">
+\begin{equation}
+d\Phi_1 =  B_z^{\text{Loop}}\pi a^2ndz, \tag{39.6}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(B_z^{\text{Loop}}\)</span> is the <span class="process-math">\(z\)</span>-component of the magnetic field of the current in the outer loop, which has been worked out in the section on Biot-Savart law.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-mutual-ind-ex-2.html ./knowl/xref/eq-mutual-ind-ex-1.html">
+\begin{equation}
+B_z^{\text{Loop}} = \frac{\mu_0}{2}\frac{IR^2}{\left(R^2+z^2\right)^{3/2}}\ \ \ \text{(on axis.)} \tag{39.7}
+\end{equation}
+</div>
+<div class="para">Putting <span class="process-math">\(B_z^{\text{Loop}}\)</span> from Eq. <a href="inductance-definition.html#eq-mutual-ind-ex-2" class="xref" data-knowl="./knowl/xref/eq-mutual-ind-ex-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 39.7">(39.7)</a> into Eq. <a href="inductance-definition.html#eq-mutual-ind-ex-1" class="xref" data-knowl="./knowl/xref/eq-mutual-ind-ex-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 39.6">(39.6)</a>  and integrating from <span class="process-math">\(z=-\infty\)</span> to <span class="process-math">\(z=\infty\)</span> gives the following.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-mutual-ind-ex-2.html ./knowl/xref/eq-mutual-ind-ex-1.html">
+\begin{equation*}
+\Phi_1 = \pi\mu_0 n  a^2 I.
+\end{equation*}
+</div>
+<div class="para">Dividing by current gives the mutual inductance</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-mutual-ind-ex-2.html ./knowl/xref/eq-mutual-ind-ex-1.html">
+\begin{equation*}
+\mathcal{M}^{\prime} = \pi\mu_0 n  a^2,
+\end{equation*}
+</div>
+<div class="para">which is the same as the formula of mutual inductance found by sending a current through the solenoid instead of through the outer circular wire.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="inductance-definition.html#exp-Mutual-Inductance-of-a-Solenoid-Surrounded-by-a-Loop">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Induced Current As a Result of a Varying Magnetic Field.</span>
+</h4>
+<div class="para">A circular loop of a copper wire of radius <span class="process-math">\(a\)</span> and resistance <span class="process-math">\(R\)</span> is placed in a uniform magnetic field whose direction is normal to the plane of the loop. While the direction of the magnetic field does not change with time, its magnitude changes with time according to <span class="process-math">\(|\vec B(t)| = B_0 \exp{(-\alpha t)}\text{,}\)</span> where <span class="process-math">\(B_0\)</span> is the magnitude at <span class="process-math">\(t=0\text{.}\)</span>   Find the magnitude and direction of the induced current in the copper loop.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use <span class="process-math">\(\mathcal{E} = -\dfrac{d\Phi_B}{dt}\)</span> as magnitude first and then use Lenz’s law to get direction.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(I = \dfrac{\mathcal{E}}{R} = \dfrac{\pi a^2 \alpha B_0}{R}\exp{(-\alpha t)}\text{,}\)</span> counterclockwise.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">From Ohm’s law we know that the induced current will be equal to the induced EMF in the loop divided by the equivalent resistance of the loop of wire. To find the induced EMF, we need to evaluate the rate of change of the magnetic flux through the loop.  Here the flux is changing due to the changing magnetic field whose analytic form has been provided.  Therefore, we find the rate of change  of the magnetic flux by taking the the time derivative of the magnetic flux.</div> <div class="para">Since the magnetic field is perpendicular to the area, the magnetic flux will be simply a product of the magnitude of the magnetic field and the area up to a sign.  We will ignore the sign in our calculations of the magnitude of the induced current. The sign is related to the direction of the induced current, which we will obtain by applying Lenz’s law.</div> <div class="para logical">
+<div class="para">We will calculate the absolute value of the magnetic flux through the loop since we are gong to work with magnitudes first and we will find the direction of the induced current from Lenz’s law. The magnetic flux has the following magnitude here.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|\Phi_B| =  \pi a^2B_0 \exp{(-\alpha t)}.
+\end{equation*}
+</div>
+<div class="para">The induced EMF in the loop will be</div>
+<div class="displaymath process-math">
+\begin{align*}
+\mathcal{E} \amp = \left| \dfrac{d\Phi_B}{dt}\right|\\
+\amp =\pi a^2 \alpha B_0 \exp{(-\alpha t)}
+\end{align*}
+</div>
+<div class="para">Dividing the magnitude of the induced EMF by the equivalent resistance of the loop will give the magnitude of the induced current.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = \dfrac{\mathcal{E}}{R} = \dfrac{\pi a^2 \alpha B_0}{R}\exp{(-\alpha t)}.
+\end{equation*}
+</div>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/./images/em-effect/lenz-law-illustration-2.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">38.25<span class="period">.</span></span><span class="space"> </span>Direction of the induced current by Lenz’s law.  We use the fact that the magnetic field of the induced current opposes the change in the magnetic flux through the space of the loop. The top figures show that the magnetic flux for magnetic field pointed out-of-page is decreasing with time.  The bottom figures show the  induced current tending to compensate the loss of the magnetic flux by producing magnetic field in the direction in which the new magnetic field can mitigate the loss.</figcaption></figure> <div class="para">We now utilize Lenz’s law to determine the direction of the induced current. Let the direction of magnetic field be pointed up. The operational steps for the application of the Lenz’s law for this problem are shown in <a href="Faradays-Flux-Rule.html#fig-lenz-law-illustration-2" class="xref" data-knowl="./knowl/xref/fig-lenz-law-illustration-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 38.25">Figure 38.25</a>.  We start by noting that, since the magnitude of the magnetic field decreasing with time, the flux of the magnetic field of the type pointed-up would be decreasing with time.  Therefore, according to the Lenz’s law, the magnetic flux of the magnetic field of the induced current must add to the magnetic flux of the pointed-up type field.  That is, the magnetic field of the induced current should be pointed up at points inside the loop. This gives the direction of counter-clockwise for the induced current as looked from above as shown in <a href="Faradays-Flux-Rule.html#fig-lenz-law-illustration-2" class="xref" data-knowl="./knowl/xref/fig-lenz-law-illustration-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 38.25">Figure 38.25</a>.</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Faradays-Flux-Rule.html#ex-Induced-Current-As-a-Result-of-a-Varying-Magnetic-Field">in-context</a></span>
+</body>
+</html>

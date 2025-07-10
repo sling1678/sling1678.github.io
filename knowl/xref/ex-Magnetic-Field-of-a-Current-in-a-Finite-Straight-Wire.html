@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">36.11</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Magnetic Field at Symmetric Point from Current in a Finite Straight Wire.</span>
+</h3>
+<div class="para">One part of an electric circuit that carries a steady current <span class="process-math">\(I\)</span>  is a straight wire of length <span class="process-math">\(L\text{.}\)</span>  What is the magnetic field at a point P in the plane that divides the wire in half from the current in the straight segment only? Use symbol <span class="process-math">\(s\)</span> for distance from the middle of the wire to the field point.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(B\)</span> will be ciruclating in a circular path with magnitude <span class="process-math">\(\dfrac{\mu_0 }{2\pi s}\, \dfrac{L/2}{ \sqrt{s^2 + L^2/4}  }\text{.}\)</span> The path will be counterclockwise whn viewed from approaching current direcion.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">Since the wire segment is straight, we use a Cartesian coordinate system. We will place the wire symmetrically along the <span class="process-math">\(z\)</span> axis so that the field point will be in the <span class="process-math">\(xy\)</span> plane. We will also choose <span class="process-math">\(x\)</span> axis direction to go through the field point P as shown in <a href="Magnetic-Field-of-Steady-Current.html#fig-biot-savart-on-finite-wire-symmetric-field-point" class="xref" data-knowl="./knowl/xref/fig-biot-savart-on-finite-wire-symmetric-field-point.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 36.12">Figure 36.12</a>.</div> <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./images/magnetic-field/biot-savart-on-finite-wire-symmetric-field-point.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">36.12<span class="period">.</span></span><span class="space"> </span>Set up for magnetic field calculation for a finite wire. We are interested in field at a point in the plane that divides the wire equally on the two sides.</figcaption></figure> <div class="para logical">
+<div class="para">We choose an infinitesimal element between <span class="process-math">\(z\)</span> and <span class="process-math">\(z+dz\text{.}\)</span>  This geometry gives us the following for various quantities in the infintesimal form of Biot-Savar law.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp d\vec l = \hat u_z\, dz,\\
+\amp \vec r = \hat u_x\, s - \hat u_z\, z  \\
+\amp r = \sqrt{s^2 + z^2 }  \\
+\amp \hat u_r = \dfrac{1}{\sqrt{s^2 + z^2 } } \left( \hat u_x\, s - \hat u_z\, z \right) 
+\end{align*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d\vec l \times \hat u_r   = 
+\dfrac{s}{\sqrt{s^2 + z^2 } }\, \hat j.
+\end{equation*}
+</div>
+<div class="para">Now, we have all the pieces to write the contribution of the steady current in the infinitesimal element at <span class="process-math">\(z\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d\vec B = \dfrac{\mu_0 I}{4\pi}\, \dfrac{s\, dz}{\left(s^2 + z^2\right)^{3/2} }\, \hat j.
+\end{equation*}
+</div>
+<div class="para">We need to integrate this from <span class="process-math">\(z=-L/2\)</span> to <span class="process-math">\(z=L/2\text{.}\)</span> Since integrand is an even function in <span class="process-math">\(z\)</span> and the range of integration is symmetric around zero, we will get double the value from <span class="process-math">\(z=0\)</span> to <span class="process-math">\(z=L/2\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\vec B \amp = 2\times \dfrac{\mu_0 I}{4\pi}\, \int_0^{L/2}\dfrac{s\, dz}{\left(s^2 + z^2\right)^{3/2} }\, \hat j.\\
+\amp = \dfrac{\mu_0 }{2\pi s}\, \dfrac{L/2}{ \sqrt{s^2 + L^2/4}  }\, \hat j.
+\end{align*}
+</div>
+<div class="para">Picking the field point on the <span class="process-math">\(x\)</span> axis gave us direction of the magnetic field towards positive <span class="process-math">\(y\)</span> axis. You can show that if you pick the field point on positive <span class="process-math">\(y\)</span> axis, you would get the direction negative <span class="process-math">\(x\)</span> axis. The direction at arbitrary point will be in the unit vector <span class="process-math">\(\hat u_\phi\)</span> of the cylindrical coordinate system, i.e., magnetic field in the <span class="process-math">\(xy\)</span> plane will be circulating in circular path.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Magnetic-Field-of-Steady-Current.html#ex-Magnetic-Field-of-a-Current-in-a-Finite-Straight-Wire">in-context</a></span>
+</body>
+</html>

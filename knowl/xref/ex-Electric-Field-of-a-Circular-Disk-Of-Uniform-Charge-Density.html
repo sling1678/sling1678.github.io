@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">29.45</span><span class="period">.</span><span class="space"> </span><span class="title">Electric Field of a Circular Disk Of Uniform Charge Density.</span>
+</h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para">Suppose we have a disk of radius <span class="process-math">\(R\)</span> with surface charge density <span class="process-math">\(\sigma\)</span> on only one side of the disk. (a) What will be the electric field at a point P that is at a distance <span class="process-math">\(D\)</span> above the center of the disk?</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/coulombs-law/e-field-of-disk-of-charges.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">29.46<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">(b) Take the limit <span class="process-math">\(D\gt\gt R\)</span> to show that you get the electric field of a point charge.</div> <div class="para">(c) Take the limit <span class="process-math">\(D\lt\lt R\)</span> and find the expression of the electric field at a point just above the center of the disk.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(E_z= \dfrac{2 k q}{R^2} \left( 1 - \dfrac{D}{\sqrt{R^2 + D^2 }}  \right)\text{,}\)</span> (b) <span class="process-math">\(E_z =  k \dfrac{q}{D^2} \text{,}\)</span> (c) <span class="process-math">\(E_z= \dfrac{\sigma}{2\epsilon_0} \text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para">We imagine dividing up the disk into concentric rings as shown in <a href="Continuous-Charge-Distribution.html#fig-e-field-of-disk-of-charges-solution" class="xref" data-knowl="./knowl/xref/fig-e-field-of-disk-of-charges-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 29.47">Figure 29.47</a>. Consider one representative ring of radius <span class="process-math">\(r\)</span> of thickness <span class="process-math">\(dr\text{.}\)</span> The infintesimal charge <span class="process-math">\(dq\)</span> on the ring will be <span class="process-math">\(dq = \sigma\, (2 \pi r dr).\)</span>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./images/coulombs-law/e-field-of-disk-of-charges-solution.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">29.47<span class="period">.</span></span><span class="space"> </span>To find the electric field from charges uniformly spread over a disk, we think of the disk as made of infintely many rings. One such representative ring of thickness <span class="process-math">\(dr\)</span> and radius <span class="process-math">\(r\)</span> is shown. The net field from this ring has only the <span class="process-math">\(z\)</span> component non-zero. By adding over all such rings will give the electric field of the whole disk.</figcaption></figure> <div class="para logical">
+<div class="para">The electric field of this ring will have only the <span class="process-math">\(z\)</span> component nonzero. We can utilize the result of electric field of a ring of charges worked out in <a href="Continuous-Charge-Distribution.html#ex-Electric-Field-of-a-Ring-of-Charge" class="xref" data-knowl="./knowl/xref/ex-Electric-Field-of-a-Ring-of-Charge.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 29.41: (Calculus) Derivation of Electric Field of a Charged Ring">Example 29.41</a>. We will get the infinitesimal electric field <span class="process-math">\(dE_z\)</span> by the ring here as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-Electric-Field-of-a-Ring-of-Charge.html">
+\begin{equation*}
+dE_z = k\dfrac{ (2 \pi \sigma r dr) \,D}{ \left( r^2 + D^2 \right)^{3/2} }.
+\end{equation*}
+</div>
+<div class="para">Now, to obtain the contribution of all such rings on the disk, we will integrate (i.e., sum over) from <span class="process-math">\(r=0\)</span> to <span class="process-math">\(r=R\text{,}\)</span> giving us the <span class="process-math">\(z\)</span> component of the net electricv field at P.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-Electric-Field-of-a-Ring-of-Charge.html">
+\begin{align*}
+E_z \amp = 2 \pi k \sigma D \int_0^R \dfrac{r\, dr}{  \left( r^2 + D^2 \right)^{3/2} } \\
+\amp =  \pi k \sigma D \int_0^{R^2} \dfrac{dy}{  \left( y + D^2 \right)^{3/2} } \\
+\amp =  2\pi k \sigma \left( 1 - \dfrac{D}{\sqrt{R^2 + D^2 }}  \right) 
+\end{align*}
+</div>
+<div class="para">We can write this expression in terms of the total charge on the disk</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-Electric-Field-of-a-Ring-of-Charge.html">
+\begin{equation*}
+q = \pi R^2 \sigma.
+\end{equation*}
+</div>
+<div class="para">This gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-Electric-Field-of-a-Ring-of-Charge.html">
+\begin{equation*}
+E_z = \dfrac{2 k q}{R^2} \left( 1 - \dfrac{D}{\sqrt{R^2 + D^2 }}  \right).
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">To take the limit, let us introduce the variable</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\epsilon = \dfrac{R^2}{D^2}.
+\end{equation*}
+</div>
+<div class="para">This would mean we are interested in the limit <span class="process-math">\(\epsilon \rightarrow 0\text{.}\)</span> Let us express the answer in (a) in <span class="process-math">\(\epsilon\)</span> and <span class="process-math">\(R\)</span> in place of <span class="process-math">\(D\)</span> and <span class="process-math">\(R\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_z = \dfrac{2 k q}{R^2} \left( 1 - \dfrac{1}{\sqrt{ 1 + \epsilon }}  \right).
+\end{equation*}
+</div>
+<div class="para">Recall from Calculus the Mclaurin series of <span class="process-math">\(\dfrac{1}{\sqrt{ 1 + \epsilon }} \)</span> as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{1}{\sqrt{ 1 + \epsilon }}  = 1 - \dfrac{1}{2}\epsilon + \cdots,
+\end{equation*}
+</div>
+<div class="para">Keeping only the leading two terms from this series we get</div>
+<div class="displaymath process-math">
+\begin{align*}
+E_z \amp = \dfrac{2 k q}{R^2} \times \dfrac{1}{2}\epsilon, \\
+\amp = \dfrac{  k q}{R^2} \times  \dfrac{R^2}{D^2}, \\
+\amp = k \dfrac{q}{D^2},
+\end{align*}
+</div>
+<div class="para">which is the electric field at a distance <span class="process-math">\(D\)</span> from a point charge <span class="process-math">\(q\text{.}\)</span>
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">(c)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Let us introduce another symbol for the small parameter.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\delta = \dfrac{D}{R},
+\end{equation*}
+</div>
+<div class="para">We will take <span class="process-math">\(\delta\rightarrow 0\)</span> limit. Writing in <span class="process-math">\(\delta\)</span> and <span class="process-math">\(R\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_z = \dfrac{2 k q}{R^2} \left( 1 - \dfrac{\delta}{\sqrt{1 + \delta^2 }}  \right).
+\end{equation*}
+</div>
+<div class="para">The expansion now gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left( 1 - \dfrac{\delta}{\sqrt{1 + \delta^2 }}  \right) \approx  1.
+\end{equation*}
+</div>
+<div class="para">Therefore, we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_z = \dfrac{2 k q}{R^2},
+\end{equation*}
+</div>
+<div class="para">which we can write back in <span class="process-math">\(\sigma\text{,}\)</span> the charge density as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_z = 2\pi k \sigma.
+\end{equation*}
+</div>
+<div class="para">In terms of <span class="process-math">\(\epsilon_0\text{,}\)</span> the permittivity of vacuum, with <span class="process-math">\(k = 1/4\pi\epsilon_0\text{,}\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_z = \dfrac{\sigma}{2\epsilon_0}.
+\end{equation*}
+</div>
+<div class="para">This says that when you get very close to a charged surface, the electric field becomes a constant, independent of the distance to the surface. This turns out to be an important result with many applications.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Continuous-Charge-Distribution.html#ex-Electric-Field-of-a-Circular-Disk-Of-Uniform-Charge-Density">in-context</a></span>
+</body>
+</html>

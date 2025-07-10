@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Entropy Change in Heating Water Reversibly.</span>
+</h4>
+<div class="para">Two kg water is heated reversibly from <span class="process-math">\(20^{\circ}\text{C} \)</span> to <span class="process-math">\(30^{\circ}\text{C}\)</span> at constant pressure of <span class="process-math">\(1\text{ atm}\text{.}\)</span>  What is the change in entropy? Use <span class="process-math">\(c_P = 1000\text{ cal/kg.K}\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use an infinitesimal process to set up <span class="process-math">\(dQ/T\)</span> and integrate.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(67\dfrac{\text{cal}}{\text{K}}\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">We can heat the given water infinitesimally slowly and reversibly. Heat in any infinitesimal step in which temperature is changing at a constant pressure is given by the product of mass, specific heat and temperature change.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta Q = m\, c_P\, \Delta T,
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(T\)</span> is in kelvin scale. For water in the temperature range in the problem, we can assume <span class="process-math">\(c_P \)</span> to be constant. Therefore,  the entropy change <span class="process-math">\(\Delta S\)</span> in one such step will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta S = \dfrac{\Delta Q}{T} = m\, c_P\, \dfrac{\Delta T}{T}.
+\end{equation*}
+</div>
+<div class="para">Summing up these requires Calculus. Therefore, we will write this in <span class="process-math">\(dT\)</span> rather than <span class="process-math">\(\Delta T\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d S   = m\, c_P\, \dfrac{d T}{T}.
+\end{equation*}
+</div>
+<div class="para">Now, it is obvious that summing over the path from initial state to fiunal state will be simply an integral over temperature.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+S_f - S_i   = \int_{T_i}^{T_f}m\, c_P\, \dfrac{d T}{T} = m\, c_P\, \ln\left( \dfrac{T_f}{T_i}\right).
+\end{equation*}
+</div>
+<div class="para">Plugging in the numbers given, but making sure to use the temperatures in the kelvin scale we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta S = 2\ \text{kg} \times \dfrac{1000\ \text{cal}}{\text{kg.K}}\times \ln\left( \dfrac{303\text{K}}{293\text{K}}\right) = 67\dfrac{\text{cal}}{\text{K}}.
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="sec-Entropy.html#ex-Entropy-Change-in-Heating-Water-Reversibly">in-context</a></span>
+</body>
+</html>

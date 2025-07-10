@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">39.16</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Self-inducatance of a Rectangular Torroid.</span>
+</h3>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">Find the self-inductance of a loop of wire with <span class="process-math">\(N\)</span> turns around a rectangular cross-section torroid of internal radius <span class="process-math">\(a\text{,}\)</span> external radius <span class="process-math">\(b\)</span> and height <span class="process-math">\(h\)</span> (<a href="Self-Inductance.html#fig-exer-self-induct-torroid" class="xref" data-knowl="./knowl/xref/fig-exer-self-induct-torroid.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 39.17">Figure 39.17</a>). </div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/inductance/exer-self-induct-torroid.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">39.17<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(L = \left(\mu_0Nh/2\pi \right)\ln{\left( b/a\right)}\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">From symmetry in the situation we expect the magnetic field inside the solenoid to circulate about the axis.  Consider a circular Amperian loop of radius <span class="process-math">\(r\)</span> around the axis with <span class="process-math">\(a\lt r\lt b\text{.}\)</span>  Then, from Ampere’s law we will have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2\pi\;r\:B = \mu_0\:N\:I,
+\end{equation*}
+</div>
+<div class="para">since <span class="process-math">\(N\)</span> currents will pass through the are of the Amperian loop. This shows that the magnetic field inside the solenoid is not constant but depends on the distance <span class="process-math">\(r\)</span> from the axis.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B = \dfrac{\mu_0\:N\:I}{2\pi}\:\dfrac{1}{r}.\ \ \ \ (1)
+\end{equation*}
+</div>
+<div class="para">This is different from what you know for a straight solenoid, where the magnetic field is constant in the space of the solenoid. The flux through the cross-section of the present solenoid can be obtained by integrating the magnetic field in (1) over the area of cross-section of the toroid.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\Phi \amp = \int_a^b\: \dfrac{\mu_0\:N\:I}{2\pi}\:\dfrac{1}{r}\times h\: dr\\
+\amp = \dfrac{\mu_0\:N\:I\: h}{2\pi}\:\ln\left( \dfrac{b}{a}\right).
+\end{align*}
+</div>
+<div class="para">Factoring out current gives the self-inductance <span class="process-math">\(L\)</span> of the toroid.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L = \dfrac{\Phi}{L} = \dfrac{\mu_0\:N\: h}{2\pi}\:\ln\left( \dfrac{b}{a}\right)
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="Self-Inductance.html#ex-Self-inducatance-of-a-Rectangular-Torroid-and-Magnetic-Energy-in-Torroid">in-context</a></span>
+</body>
+</html>

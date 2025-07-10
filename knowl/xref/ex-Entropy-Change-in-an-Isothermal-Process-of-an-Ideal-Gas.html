@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Entropy Change in an Isothermal Process of an Ideal Gas.</span>
+</h4>
+<div class="para">Five moles of a monatomic ideal gas is expanded isothermally and reversibly at <span class="process-math">\(100^{\circ}\text{C}\)</span> from a volume of <span class="process-math">\(10\text{ L}\)</span> to three times the volume.  What is the change in its entropy?</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use entropy change in an isothermal process discussed above.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(46\ \text{J/K}\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">We can again use the definition of entropy change we used in example above.  But, this time <span class="process-math">\(dQ\)</span> is not give by specific heat definitions because temperature is constant.  To find an appropriate formula for <span class="process-math">\(dQ\)</span> we will appeal to first law of thermodynamics.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dQ = dU + pdV.
+\end{equation*}
+</div>
+<div class="para">Since we have a monatomic ideal gas as the system, the change in internal energy is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dU = \frac{3}{2}nRdT.
+\end{equation*}
+</div>
+<div class="para">Since, we have an isothermal process, <span class="process-math">\(dT=0\text{.}\)</span>  This means that <span class="process-math">\(dU=0\text{.}\)</span>  Therefore, we use <span class="process-math">\(dQ = pdV\)</span> in the definition of entropy.  This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta S = \int_{V_1}^{V_2} \frac{pdV}{T}\ \ \text{(Note: integration is over volume now.)}
+\end{equation*}
+</div>
+<div class="para">Using the equation of state for the ideal gas we can replace <span class="process-math">\(p/T\)</span> by <span class="process-math">\(nR/V\text{,}\)</span> which can be integrated to give</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta S =nR\ln\left(\frac{V_2}{V_1} \right)
+\end{equation*}
+</div>
+<div class="para">Now, we put the numerical values to obtain the change in entropy.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta S = 5\text{ mol}\times \frac{8.3\ \text{J}}{\text{mol.K}}\times \ln(3) = 46\ \text{J/K}.
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="sec-Entropy.html#ex-Entropy-Change-in-an-Isothermal-Process-of-an-Ideal-Gas">in-context</a></span>
+</body>
+</html>

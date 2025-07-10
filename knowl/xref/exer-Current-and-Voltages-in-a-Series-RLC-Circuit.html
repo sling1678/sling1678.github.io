@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">40.41</span><span class="period">.</span><span class="space"> </span><span class="title">Current and Voltages in a Series RLC Circuit.</span>
+</h3>
+<div class="para">Consider the circuit in <a href="Resonance-in-Circuits.html#fig-example-drive-1-x" class="xref" data-knowl="./knowl/xref/fig-example-drive-1-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 40.42">Figure 40.42</a>. (a)	Find the steady current and voltages across the resistor and the capacitor in the circuit for <span class="process-math">\(t \gg 2L/R\text{.}\)</span>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para">(b)	Find the resonance frequency of current. (c) Compare the energy dissipated in the resistor at the frequency shown in the figure to the energy dissipated if driven  at the resonance frequency.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/em-oscillations/example-drive-1.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">40.42<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">The steady current is  <span class="process-math">\(I = I_0\: \cos(\omega t+ \phi + \pi/2)\text{,}\)</span> where the amplitude and phase constants are as follows in terms of <span class="process-math">\(R\text{,}\)</span> <span class="process-math">\(L\)</span> and <span class="process-math">\(C\)</span> of the circuit and <span class="process-math">\(\omega\)</span> of the driving source.  But before you put in numbers, it often pays to simplify the formulas.  Here <span class="process-math">\(1/\omega C\)</span> dominates R and <span class="process-math">\(\omega L\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp I_0 = \frac{V_0}{\sqrt{R^2 + (\omega L - 1/\omega C)^2}} \approx \omega C V_0= 7.2\ \textrm{mA}. \\
+\amp  \phi = \arctan\left( \frac{1}{\omega RC} - \frac{\omega L}{R}\right) = 1.6\ \textrm{rad}. 
+\end{align*}
+</div>
+<div class="para">The voltage across the resistor and the capacitor  are</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp V_R = RI = RI_0\: \cos(\omega t+ \phi + \pi/2) = (35\ \textrm{mV})\: \cos(\omega t+ \phi + \pi/2) \\
+\amp V_C = \frac{I_0}{\omega C}\sin(\omega t+ \phi + \pi/2)= (12\ \textrm{V})\:\cos(\omega t+ \phi) 
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para">The resonance frequency of the current is equal to the natural frequency, <span class="process-math">\(\omega _I = \frac{1}{\sqrt{LC}} = 9129\)</span> rad/sec.</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para">In 1 sec the circuit goes through many cycles, and therefore we use the average power. The average energy dissipated per second = <span class="process-math">\(P_{\textrm{ave}}\times \Delta t\)</span> = <span class="process-math">\(\frac{1}{2}I_0^2R \times 1 \textrm{sec}= 130 \mu\textrm{J}\text{.}\)</span>
+</div> <div class="para logical">
+<div class="para">The energy dissipated at the resonance frequency would be obtained by using the value of <span class="process-math">\(I_0\)</span> when <span class="process-math">\(\omega = \omega_I\text{,}\)</span> the resonance frequency of the current in this circuit.  This gives the following value.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_{0}(\omega = \omega_I) = \frac{V_0}{R} = \frac{V_0}{5\Omega} = 2.4\ \textrm{A}.
+\end{equation*}
+</div>
+<div class="para">Using this current in the power dissipation formula we find that  the average energy dissipated at the resonance frequency in one second =  <span class="process-math">\(\frac{1}{2}(2.4\ \textrm{A})^2 \times 5\Omega\times 1\)</span> sec = 14.4 J. This is way more than the <span class="process-math">\(130 \mu\textrm{J}\)</span> given to the resistor when driven at <span class="process-math">\(\omega = 200\)</span> rad/sec instead of <span class="process-math">\(\omega_I = 9129\)</span> rad/sec. Clearly, the most effective way to put energy in a circuit is to drive the circuit at the resonance frequency of the circuit.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Resonance-in-Circuits.html#exer-Current-and-Voltages-in-a-Series-RLC-Circuit">in-context</a></span>
+</body>
+</html>

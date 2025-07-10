@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.15</span><span class="period">.</span><span class="space"> </span><span class="title">Angular Momentum of a Dumbbell About Arbitrary Axis.</span>
+</h3>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">
+<a href="sec-angular-velocity-and-angular-momentum.html#fig-ang-mom-dumbbell-skew-axis" class="xref" data-knowl="./knowl/xref/fig-ang-mom-dumbbell-skew-axis.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.16">Figure 10.16</a> shows a dumbbell of two point masses <span class="process-math">\(m\)</span> and length <span class="process-math">\(2a\)</span> that rotates about an axis at angular speed <span class="process-math">\(\omega\)</span> that is not a principal axis of the dumbbell. Pointing <span class="process-math">\(z\)</span>-axis towards the axis of rotation leaves the dumbell rotating at an angle <span class="process-math">\(\theta\)</span> with respect to the axis.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/rotation-general/ang-mom-dumbbell-skew-axis.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.16<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">Supposing that the masses are in <span class="process-math">\(xz\)</span>-plane at time <span class="process-math">\(t=0\)</span> so that azimuth of one of the masses is <span class="process-math">\(\phi=\omega t\text{.}\)</span>  (a) Find angular momentum vector at an arbitrary instant. (b) Show that the magnitude of angular momentum is constant in time. Ignore the mass of the connecting rod.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(b) <span class="process-math">\(2m\omega a^2\sin\theta\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">
+<div class="para">First we find moments of inertia using coordinates of the two masses and then pick a moment in time to find <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> coordinates in terms of spherical angles.</div> <div class="para">Let’s work out coordinates of the two masses at an instant when the azimuth angle for one of the masses is <span class="process-math">\(\phi=\omega t\)</span> as shown in <a href="sec-angular-velocity-and-angular-momentum.html#fig-ang-mom-dumbbell-skew-axis-sol" class="xref" data-knowl="./knowl/xref/fig-ang-mom-dumbbell-skew-axis-sol.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.17">Figure 10.17</a>. From this figure, we can work out following coordinates of the two masses.</div>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/rotation-general/ang-mom-dumbbell-skew-axis-sol.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.17<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="displaymath process-math">
+\begin{align*}
+\amp x_1 = a\,\sin\theta\cos\phi,\ y_1 = a\,\sin\theta\sin\phi,\ z_1 = -a\cos\theta\\
+\amp x_2 = -x_1,\ y_2 = -y_1,\ z_2 = -z_1
+\end{align*}
+</div>
+<div class="para">Now, we compute the six moments of inertia for this system.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp I_{xx} = 2ma^2(\sin^2\theta \sin^2\phi + \cos^2\theta) \\
+\amp I_{yy} = 2ma^2(\sin^2\theta \cos^2\phi + \cos^2\theta) \\
+\amp I_{zz} = 2ma^2(\sin^2\theta \cos^2\phi + \sin^2\theta \sin^2\phi )  = 2ma^2\sin^2\theta \\
+\amp I_{xy} =  -2ma^2\sin^2\theta \sin\phi\cos\phi\\
+\amp I_{xz} =  2ma^2\sin\theta\cos\theta \cos\phi \\
+\amp I_{yz} = 2ma^2\sin\theta\cos\theta \sin\phi  
+\end{align*}
+</div>
+<div class="para">Since angular velocity is pointed towards <span class="process-math">\(z\)</span>-axis, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\omega_x=0,\ \ \omega_y=0,\ \ \omega_z = \omega.
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">Therefore, after using <span class="process-math">\(\phi=\omega t\text{,}\)</span> Cartesian components of angular momentum will be</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp L_x =  I_{xz}  \omega_z = 2m\omega a^2\sin\theta\cos\theta \cos\omega t\\
+\amp L_y = I_{yz} \omega_z = 2m\omega a^2\sin\theta\cos\theta \sin\omega t\\
+\amp L_z =  I_{zz}\omega_z = 2ma^2\omega\sin^2\theta
+\end{align*}
+</div>
+<div class="para">Note that even though <span class="process-math">\(L_x\)</span> and <span class="process-math">\(L_y\)</span> are time-dependent, total angular momentum is conserved as seen by <span class="process-math">\(L^2\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+L^2 \amp = L_x^2 + L_y^2 + L_z^2 \\
+\amp = (2m\omega a^2\sin\theta\cos\theta)^2 \left(\cos^2\omega t +  \sin^2\omega t\right) + (2ma^2\omega\sin^2\theta)^2 \\
+\amp = (2m\omega a^2\sin\theta\cos\theta)^2 + (2ma^2\omega\sin^2\theta)^2. 
+\end{align*}
+</div>
+<div class="para">Of course, you can simplify it even more, but you can already see that <span class="process-math">\(L^2\)</span> is constant in time.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">From the components of angular momentum vector we get the magnitude by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L = \sqrt{L_x^2 + L_y^2 + L_z^2}.
+\end{equation*}
+</div>
+<div class="para">Let’s work out each square and then add them.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp L_x^2 = (2m\omega a^2)^2 \sin^2\theta\cos^2\theta \cos^2\phi\\
+\amp L_y^2 = (2m\omega a^2)^2  \sin^2\theta\cos^2\theta \sin^2\phi \\
+\amp L_z^2 = (2m\omega a^2)^2  \sin^4\theta 
+\end{align*}
+</div>
+<div class="para">Adding the first two we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L_x^2 + L_y^2 = (2m\omega a^2)^2 \sin^2\theta\cos^2\theta.
+\end{equation*}
+</div>
+<div class="para">Adding this to <span class="process-math">\(L_z^2\)</span> involves following algebra step.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sin^2\theta\cos^2\theta + \sin^4\theta = \sin^2\theta.
+\end{equation*}
+</div>
+<div class="para">Therefore, magnitude of angular momentum will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L = 2m\omega a^2\sin\theta.
+\end{equation*}
+</div>
+<div class="para">Since we do not have <span class="process-math">\(\phi\)</span> in the magnitude, it is constant in time.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="sec-angular-velocity-and-angular-momentum.html#ex-Angular-Momentum-of-a-Dumbbell-skew-axis">in-context</a></span>
+</body>
+</html>

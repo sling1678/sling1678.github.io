@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">41.23</span><span class="period">.</span><span class="space"> </span><span class="title">RC Circuit as a Low Pass Filter.</span>
+</h3>
+<div class="para">A <dfn class="terminology">low-pass filter</dfn> is a circuit that lets out low-frequency electrical signals while suppressing high-frequency signals. The frequency above which signal drops significantly is called the <dfn class="terminology">cutoff frequency</dfn> of the low-pass filter.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">A series RC-circuit with an AC signal source, shown in <a href="Capacitative-AC-Circuits.html#fig-exer-low-pass-filter" class="xref" data-knowl="./knowl/xref/fig-exer-low-pass-filter.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 41.24">Figure 41.24</a>, can serve as a low pass filter if the output voltage is taken across the capacitor, the input voltage being the voltage of the source.</div></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like"><img src="external/./images/ac-circuits/exer-low-pass-filter.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">41.24<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">Consider a circuit containing a <span class="process-math">\(200\text{-}\Omega\)</span>  resistor and a <span class="process-math">\(50\text{-}\mu\text{F}\)</span> capacitor in series with a <span class="process-math">\(18\text{-V}\)</span> AC source of variable angular frequency  <span class="process-math">\(\omega\text{.}\)</span> (a) Determine the RMS-voltage across the capacitor (<span class="process-math">\(V_C\)</span>) as a function of frequency, and (b) plot <span class="process-math">\(V_C/V_0\)</span> versus <span class="process-math">\(\omega\)</span> for <span class="process-math">\(R = 1000\:\Omega\)</span> and <span class="process-math">\(C = 10^{-6}\:\text{F}\)</span> and find the cutoff frequency.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(\dfrac{V_0}{\sqrt{2}}\: \dfrac{1 }{\sqrt{1 + \omega^2R^2C^2}}\text{.}\)</span> (b) See solution.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">We need the reactance <span class="process-math">\(X_C\)</span> and the impedance <span class="process-math">\(Z\)</span> of the circuit to find the phase and amplitude of the current.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X_C = \dfrac{1}{\omega C},\ \ Z = \sqrt{R^2 + X_C^2} = \sqrt{R^2 + \frac{1}{\omega^2C^2}}.
+\end{equation*}
+</div>
+<div class="para">Therefore, the amplitude and phase of the current in the circuit are</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_0 = \dfrac{V_0}{Z} = \dfrac{V_0\:\omega C}{\sqrt{1 + \omega^2R^2C^2}},\ \ \tan \phi = \dfrac{1}{\omega RC}
+\end{equation*}
+</div>
+<div class="para">The oscillating current is <span class="process-math">\(I(t) = I_0\:\cos(\omega t + \phi)\text{.}\)</span> Since the voltage across the capacitor lags the current by <span class="process-math">\(\pi/2\)</span> we get the following expression for the voltage <span class="process-math">\(V_C\)</span> across the capacitor will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_C = I_0\:X_C\:\cos\left(\omega t + \phi - \frac{\pi}{2}\right).
+\end{equation*}
+</div>
+<div class="para">This gives the following for the RMS-voltage across the capacitor.</div>
+<div class="displaymath process-math">
+\begin{align*}
+V_{\text{C,rms}} \amp = \dfrac{1}{\sqrt{2}}\:I_0\:X_C \\
+\amp = \dfrac{1}{\sqrt{2}}\: \dfrac{V_0\:\omega C}{\sqrt{1 + \omega^2R^2C^2}}\: \dfrac{1}{\omega C}\\
+\amp = \dfrac{V_0}{\sqrt{2}}\: \dfrac{1 }{\sqrt{1 + \omega^2R^2C^2}}.
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para">In <a href="Capacitative-AC-Circuits.html#fig-low-pass-filter-plot-VC-vs-omega" class="xref" data-knowl="./knowl/xref/fig-low-pass-filter-plot-VC-vs-omega.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 41.25">Figure 41.25</a> we plot <span class="process-math">\(V/V_0\)</span> versus <span class="process-math">\(\omega\)</span> for <span class="process-math">\(R = 1000\:\Omega\)</span> and <span class="process-math">\(C = 10^{-6}\:\text{F}\text{.}\)</span>  The time constant for this circuit will be <span class="process-math">\(\tau = RC = 10^{-3}\:\text{s}\text{.}\)</span>  It is seen that the output of the circuit drops to half the amplitude if the frequency goes beyond the cutoff frequency <span class="process-math">\(f_{\text{cutoff}} = \omega_{}/2\pi \approx 276\:\text{Hz}\text{.}\)</span>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/./images/ac-circuits/low-pass-filter-plot-VC-vs-omega.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">41.25<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Capacitative-AC-Circuits.html#ex-RC-Circuit-as-a-Low-Pass-Filter">in-context</a></span>
+</body>
+</html>

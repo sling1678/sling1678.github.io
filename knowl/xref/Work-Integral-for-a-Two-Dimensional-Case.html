@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.15</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Work Integral for a Two Dimensional Case.</span>
+</h4>
+<div class="para">A friction force acts opposite to the displacement direction and depends on the location. Suppose a kinetic friction force of magnitude, <span class="process-math">\(F = 10\, x\, y^2\text{,}\)</span> acts on the box when the box is at the coordinates <span class="process-math">\((x,y)\text{.}\)</span> The unit of the force in <span class="process-math">\(\text{N}\)</span> when <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are in <span class="process-math">\(\text{m}\text{.}\)</span>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">We want to compare work done by this force on two paths between A and C: A-B-C versus A-C direct. Let the coordinates of these points be <span class="process-math">\((x_A, y_A) = (0, 2\text{ m})\text{,}\)</span> <span class="process-math">\((x_B, y_B) = (5\text{ m}, 2\text{ m})\text{,}\)</span> and <span class="process-math">\((x_C, y_C) = (5\text{ m}, 3\text{ m})\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/energy/ex-work-integral-friction-2D.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.16<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">(a) Find work done by <span class="process-math">\(F\)</span> on the path A-to-B-to-C.</div> <div class="para">(b) Find work done on by <span class="process-math">\(F\)</span> the direct path A-to-C.</div> <div class="para">(c) On which path is the absolute value of work by <span class="process-math">\(F\)</span>  greater?</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(- 817\text{ N.m}\)</span> (b) <span class="process-math">\(-914\text{ N.m}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">We can break up the calculation into two parts: (i) A-to-B and (ii) B-to-C. We do this because the path descriptions of these two segments are different.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp \text{On AB we have } y = 2,\\
+\amp \text{On BC we have } x = 5.
+\end{align*}
+</div>
+<div class="para">The force and displacement vectors on these paths are:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\text{On AB:}\amp  \\
+\amp d\vec r = \hat i\, dx, \\
+\amp \vec F = -\left( 10\, x\, y^2\right)_{y=2}\,\hat i = -40\,x\,\hat i .\\
+\text{On BC:}\amp \\
+\amp d\vec r = \hat j\, dy,\\
+\amp \vec F =  -\left( 10\, x\, y^2 \right)_{x=5}\hat j = -50\,y^2\,\hat j.
+\end{align*}
+</div>
+<div class="para">Therefore, we have the following integral on the path AB.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W_{AB} = \int_0^5\, -40\,x\, dx = -500\text{ N.m},
+\end{equation*}
+</div>
+<div class="para">and on path BC</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W_{BC} = \int_2^3\, -50\,y^2\, dy = -\dfrac{50}{3} \left(3^3 - 2^3\right) = -317\text{ N.m}.
+\end{equation*}
+</div>
+<div class="para">Adding the two we get the total work on A-B-C path.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W_{ABC} = W_{AB} + W_{BC} = - 817\text{ N.m}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b) and (c)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(b) On path AC, <span class="process-math">\(x \)</span> and <span class="process-math">\(y \)</span> are related by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = mx + b,
+\end{equation*}
+</div>
+<div class="para">with</div>
+<div class="displaymath process-math">
+\begin{equation*}
+m = \dfrac{3-2}{5-0} = 0.2,\ \ b = 2.
+\end{equation*}
+</div>
+<div class="para">That is,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = 0.2\, x + 2.
+\end{equation*}
+</div>
+<div class="para">This can be used to eliminate <span class="process-math">\(y \)</span> and <span class="process-math">\(dy\)</span> from equations below.</div>
+</div> <div class="para logical">
+<div class="para">We use the unit vector for the direction from A to C to write the force vector in an analytic form. This unit vector is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\hat u = \dfrac{  (5-0)\hat i + (3-2)\hat j}{ \sqrt{(5-0)^2 + (3-2)^2}} = \dfrac{5}{\sqrt{26}}\, \hat i + \dfrac{1}{\sqrt{26}}\, \hat j.
+\end{equation*}
+</div>
+<div class="para">Since kinetic friction is pointed in the opposite direction to the displacement, we get the following analytic expression for the force vector, since the magnitude <span class="process-math">\(10\, x\, y^2\)</span> is positive.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\vec F \amp = -10\, x\, y^2\, \hat u\\
+\amp = -10\, x\, y^2 \left( \dfrac{5}{\sqrt{26}}\, \hat i + \dfrac{1}{\sqrt{26}}\, \hat j \right). 
+\end{align*}
+</div>
+<div class="para">The force and displacement vectors on this path are:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp d\vec r =  \hat i\, dx + \hat j\, dy = (\hat i\,  + 0.2\, \hat j)\, dx, \\
+\amp \vec F = -10\, x\, (0.2x + 2)^2 \left( \dfrac{5}{\sqrt{26}}\, \hat i + \dfrac{1}{\sqrt{26}}\, \hat j \right),
+\end{align*}
+</div>
+<div class="para">where I used <span class="process-math">\(dy = 0.2 dx \)</span> on this path so that we can write the work integral as an integral over <span class="process-math">\(dx\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W_{AC} = \int_{AC}\, \vec F\cdot d\vec r = \int_{0}^5\, \left( \text{ something here }\right) dx.
+\end{equation*}
+</div>
+<div class="para">The dot product is ugly to work out. You can do that on a separate piece of paper. I found the following.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W_{AC} = - \dfrac{52}{\sqrt{26}}\, \int_0^5\left(0.04\,x^3 + 0.8\, x^2 + 4\, x \right)dx  = -914\text{ N.m}.
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">(c) Clearly, we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left| W_{AC} \right| \gt \left| W_{ABC} \right|.
+\end{equation*}
+</div>
+<div class="para">This says that it would cost less energy to go on path A-B-C than to go directly.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Work.html#Work-Integral-for-a-Two-Dimensional-Case">in-context</a></span>
+</body>
+</html>

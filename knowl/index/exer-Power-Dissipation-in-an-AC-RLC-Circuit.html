@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Power Dissipation in an AC RLC Circuit.</span>
+</h4>
+<div class="para"> A resistor R (200 <span class="process-math">\(\Omega\)</span>), a capacitor C (20 pF) and an inductor L (30 mH) are connected in parallel to an AC voltage source <span class="process-math">\(V_0\; \cos(\omega  t)\)</span> with <span class="process-math">\(V_0\)</span> = 256 V and  <span class="process-math">\(\omega\)</span> = 120  rad per sec.  (a) Find complex impedance of the circuit. (b) Find current in each branch.  (c) Find the power factor.  (d) Find the power dissipated.</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Let us do this problem in the complex notation. The inverse of the net impedance for parallel circuit will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{1}{Z} = \dfrac{1}{R} + i\omega C - \dfrac{i}{\omega L}.
+\end{equation*}
+</div>
+<div class="para">For the given numerical values we obtain</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Z = 0.647\:\Omega\angle 1.55\:\textrm{rad}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Therefore, the total current through the source will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = \dfrac{256\:\textrm{V}}{0.647\:\Omega}\:\cos(\omega t - 1.55) = (396\:\textrm{A})\:\cos(\omega t - 1.55).
+\end{equation*}
+</div>
+<div class="para">The current through the resistor will have the same phase as the EMF across the resistor, which is equal to the EMF of the source here.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_R = \dfrac{256\:\textrm{V}}{200\:\Omega}\:\cos(\omega t) = (1.28\:\textrm{A})\:\cos(\omega t).
+\end{equation*}
+</div>
+<div class="para">The current through the capacitor will have the phase that would lead the phase of the EMF by <span class="process-math">\(\pi/2\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_C =  256\:\times 120\times 20\times 10^{-12}\:\cos(\omega t + \pi/2) = (0.61\:\mu\textrm{A})\:\cos(\omega t+\pi/2).
+\end{equation*}
+</div>
+<div class="para">The current through the inductor will have the phase that would lag the phase of the EMF by <span class="process-math">\(\pi/2\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_C =  \dfrac{256\:\textrm{V}}{120\times 0.030 \:\Omega}\:\cos(\omega t-\pi/2) = (71.1\:\textrm{A})\:\cos(\omega t-\pi/2).
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para">The power factor of the circuit will be <span class="process-math">\(\cos\phi = \cos(1.55\:\textrm{rad}) = 0.02\text{.}\)</span> \noindent (d) The power dissipated in the resistor will be <span class="process-math">\(\dfrac{1}{2}I_{0R}^2 R = \dfrac{1}{2}\times(1.28\:\textrm{A})^2\times 200\:\Omega = 164\:\textrm{W}\text{.}\)</span>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Power-in-AC-Circuits.html#exer-Power-Dissipation-in-an-AC-RLC-Circuit">in-context</a></span>
+</body>
+</html>

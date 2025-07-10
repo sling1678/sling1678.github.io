@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Complex Circuit Analysis of an RL Circuit 2.</span>
+</h4>
+<div class="para"></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para">Determine current in each branch, power dissipated in the resistor, and power produced by the source for the circuit given in <a href="Circuit-Analysis-Using-Complex-Numbers.html#fig-exer-complex-ac-RLC-3" class="xref" data-knowl="./knowl/xref/fig-exer-complex-ac-RLC-3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 41.52">Figure 41.52</a>.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/ac-circuits/exer-complex-ac-RLC-3.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">41.52<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">As the hint suggests, we replace the resistance, the capacitance, and the inductance by their complex impedances and treat the circuit as a ``purely resistive’’ circuit.  The net impedance of the resistor and capacitor in parallel is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Z_{\parallel} = \dfrac{-iR/\omega C}{R -i/\omega C} = \dfrac{-iR }{\omega RC -i}= |Z_{\parallel}|e^{i\phi_{\parallel}},
+\end{equation*}
+</div>
+<div class="para">with</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|Z_{\parallel}| = \dfrac{R}{\sqrt{1+\omega^2R^2C^2}},\ \ \phi_{\parallel} = -\tan^{-1} (\omega R C). 
+\end{equation*}
+</div>
+<div class="para">We need to add the impedance of the inductor to obtain the impedance across the source.</div>
+<div class="displaymath process-math">
+\begin{align*}
+Z  \amp = Z_L + Z_{\parallel} = i\omega L + \dfrac{-iR }{\omega RC -i} \\
+\amp  = (63.6 + i 1224)\:\Omega = 1226\:\Omega\angle 1.51\:\textrm{rad}.
+\end{align*}
+</div>
+<div class="para">Therefore, the current <span class="process-math">\(I\)</span> written as <span class="process-math">\(I_0\:\cos(\omega t + \phi)\)</span> will have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_0 = \dfrac{170\:\textrm{V}}{1226\:\Omega} = 0.139\:\textrm{A},\ \ \phi = -1.51\:\textrm{rad}.
+\end{equation*}
+</div>
+<div class="para">To find the currents <span class="process-math">\(I_1\)</span> and <span class="process-math">\(I_2\)</span> we can use the current divider formula.  For the complex currents we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_1 = \dfrac{Z_C}{Z_R + Z_C} I,\ \  I_1 = \dfrac{Z_R}{Z_R + Z_C} I.
+\end{equation*}
+</div>
+<div class="para">The calculation for the amplitude and phase of <span class="process-math">\(I_1\)</span> will go as follows.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_1 = \dfrac{-i/\omega C}{R -i/\omega C}\times I_0\angle  \phi\:\textrm{rad}.
+\end{equation*}
+</div>
+<div class="para">Now, we can rewrite the multiplier of the current on the right side as an amplitude and an angle</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{-i/\omega C}{R -i/\omega C} = A\:\angle \theta.
+\end{equation*}
+</div>
+<div class="para">Then, the amplitude and the phase of the current <span class="process-math">\(I_1\)</span> will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_1 = A\times I_0\:\angle (\phi+\theta).
+\end{equation*}
+</div>
+<div class="para">Other current can be determined similarly. From the currents and the corresponding impedances we can deduce the EMF across each element.  A student can use these to calculate the power produced by the source and the power dissipated in the resistor.</div>
+</div></div></details></div></article><span class="incontext"><a class="internal" href="Circuit-Analysis-Using-Complex-Numbers.html#exer-Complex-Circuit-Analysis-of-an-RLC-Circuit-2">in-context</a></span>
+</body>
+</html>

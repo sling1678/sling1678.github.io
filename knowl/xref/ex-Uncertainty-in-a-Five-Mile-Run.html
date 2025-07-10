@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Uncertainty in a Five Mile Run.</span>
+</h4>
+<div class="para">A runner completes a <span class="process-math">\(5\text{-mile}\)</span> run in 25 minutes and 10 seconds. The uncertainty in the length of the course is <span class="process-math">\(20\text{ m}\)</span> and in time is <span class="process-math">\(5\text{ sec}\text{.}\)</span> What is her speed, absolute and relative uncertainties in speed in units of <span class="process-math">\(\text{m/s}\text{?}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Speed <span class="process-math">\(v = D/T\text{.}\)</span>
+</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\((5.33 \pm 0.02)\,\text{m/s}.\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">Average speed is obtained simply by plugging in the average values of distance <span class="process-math">\(D\)</span> and time <span class="process-math">\(T\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v = \frac{D}{T} = \frac{5\text{mi}}{25\, \text{min}+10\,\text{sec}}.
+\end{equation*}
+</div>
+<div class="para">Convert mile into meter and time into sec. For rounding off, we assume that the given digits are all significant along with the zero that must be there after we place a decimal. This information is not given in the problem, but we need to assume something reasonable. For conversion we use 1609.34 meters in one mile.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v = \frac{ 5 \times 1609.34  }{ 25\times 60 + 10} = 5.33\,\text{m/s}.
+\end{equation*}
+</div>
+<div class="para">Let us compute the relative uncertainty first by noting that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(\Delta v)^2 = \left(\frac{\Delta D}{T}\right)^2 + \left(\frac{D\Delta T}{T^2}\right)^2				
+\end{equation*}
+</div>
+<div class="para">Dividing by <span class="process-math">\(v=D/T\text{,}\)</span> this simplifies to</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(  \frac{\Delta v}{v} \right)^2 = \left(\frac{\Delta D}{D}\right)^2 + \left(\frac{\Delta T}{T}\right)^2	
+\end{equation*}
+</div>
+<div class="para">Numerically,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\Delta v}{v} = \sqrt{   [20/(5 \times 1609.34)]^2 + [ 5/(25\times 60 + 10) ]^2  } = 0.004.
+\end{equation*}
+</div>
+<div class="para">Hence, absolute uncertainty in speed is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta v = 0.004 \times 5.33 = 0.02\, \text{m/s}.
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="section-propagation-of-uncertainty.html#ex-Uncertainty-in-a-Five-Mile-Run">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Time Varying Deceleration of a Hockey Puck.</span>
+</h4>
+<div class="para">A hockey puck is shot on a surface that has different roughness at different places. As a result its acceleration (i.e. deceleration) varies from place to place, which can be plotted as a function of time starting from the instant puck leaves the stick.  The puck has a velocity of <span class="process-math">\(2\,\text{m/s}\)</span> at <span class="process-math">\(t = 5\,\text{sec}\text{.}\)</span>  Find the velocity of the puck at <span class="process-math">\(t = 0\,\text{sec}\text{.}\)</span>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/./images/two-dim-motion/exer-var-accln-linear-flat-linear-in-time.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.81<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(21.25\text{ m/s}\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">We will implement the following equation.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_f - v_i = \int_{t_i}^{t_f}\, a(t)\, dt.
+\end{equation*}
+</div>
+<div class="para">Here <span class="process-math">\(a(t)\)</span> is piecewise function:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a(t) = 
+\begin{cases} 
+-6 + t \amp  0 \le t \le 2 \\
+-4 \amp 2 \le t \le 3.5 \\
+-1 + 2 (t-5) \amp 3.5 \le t \le 5 
+\end{cases}					
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(v_5 = 2\text{ m/s}\text{,}\)</span> the integration gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2 - v_0 = \int_0^2 (-6 + t) dt + (-4)\int_{2}^{3.5} dt + \int_{3.5}^{5} (-11 + 2t) dt = -19.25.
+\end{equation*}
+</div>
+<div class="para">Hence, <span class="process-math">\(v_0 = 21.25\text{ m/s}\text{.}\)</span>
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="Variable-Acceleration.html#exer-Time-Varying-Deceleration-of-a-Hockey-Puck">in-context</a></span>
+</body>
+</html>

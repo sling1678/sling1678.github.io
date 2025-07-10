@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) CM of a Spherical Bowl.</span>
+</h4>
+<div class="para">A spherical bowl of radius <span class="process-math">\(R\)</span> and height <span class="process-math">\(R\)</span> has uniform density. Find its CM.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Look at the mass element in a thin ring between <span class="process-math">\(\theta\)</span> and <span class="process-math">\(\theta+d\theta\text{.}\)</span>
+</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(R/2\)</span> above the center.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">First we get an expression of the tiny mass in the strip between <span class="process-math">\(\theta\)</span> and <span class="process-math">\(\theta + d\theta\text{.}\)</span> It will be area times density. For convenience, let’s take density = 1. The area will be circumference times thickness.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dm = (2\pi R \sin\theta)(R\, d\theta)
+\end{equation*}
+</div>
+<div class="para">From symmetry, the CM will be only <span class="process-math">\(zz_{cm}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+z_{cm} \amp = \frac{\int_0^{\pi/2}\, z dm}{\int_0^{\pi/2}\, dm} \\
+\amp = \frac{ 2\pi R^3\int_0^{\pi/2}\, \sin\theta\cos\theta \,d\theta}{2\pi R^2\int_0^{\pi/2}\, \sin\theta\, d\theta}\\
+\amp = -\frac{R}{2} \int_0^{\pi/2} \sin 2\theta\, d \theta = \frac{R}{2}.
+\end{align*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:30%;"><figure class="figure figure-like"><img src="external/./images/momentum/CM-of-a-spherical-bowl.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.52<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+</div></div></div></details>
+</div></article><span class="incontext"><a class="internal" href="momentum-Center-of-Mass.html#ex-Practice-with-a-Friend-CM-of-a-spherical-bowl">in-context</a></span>
+</body>
+</html>

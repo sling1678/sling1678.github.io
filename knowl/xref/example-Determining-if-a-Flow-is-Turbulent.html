@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">18.31</span><span class="period">.</span><span class="space"> </span><span class="title">Determining if a Flow is Turbulent.</span>
+</h3>
+<div class="para">Determine which of the following flows will be turbulent.  (a) mercury flowing at <span class="process-math">\(20^{\circ}C\)</span> through a tube of inner radius 1 cm and length of 1 m carrying 30 liters per hour, (b) water flowing in the same tube at the same volume rate, and (c) olive oil flowing in the same tube at the same volume rate.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) turbulent; (b) not turbulent; (c) not turbulent.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">The Reynold number (Re)  is used to decide on whether a flow is turbulent or not.  For a flow through a tube of diameter <span class="process-math">\(D = 2R\)</span> with <span class="process-math">\(R\)</span> the radius, the Re is given  by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\textrm{Re} = \frac{\rho v D}{\eta},
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\rho\)</span> is the density,  <span class="process-math">\(v\)</span> is  the speed of flow, and <span class="process-math">\(\eta\)</span> is the coefficient of viscosity. The only difference in the three parts is the ratio <span class="process-math">\(\rho/\eta\text{.}\)</span>  So, we calculate the rest first.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  R = 1 \ \textrm{cm}\\
+\amp v =  \frac{30\ \textrm{L/h}}{\pi (1\ \textrm{cm})^2} 
+\end{align*}
+</div>
+<div class="para">We need to convert units so that <span class="process-math">\(v\)</span> would come out in m/s.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+30\ \textrm{L/h} = \frac{30\times 10^{-3}}{3600}\textrm{m}^3/\textrm{s} = 8.33\times 10^{-6}\textrm{m}^3/\textrm{s}.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \pi (1\ \textrm{cm})^2 = 3.14\times 10^{-4}\ \textrm{m}^2.
+\end{equation*}
+</div>
+<div class="para">Therefore</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v = \frac{ 8.33\times 10^{-6}\textrm{m}^3/\textrm{s}}{3.14\times 10^{-4}\ \textrm{m}^2} = 2.65\times 10^{-2}\ \textrm{m/s},
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v D =  5.3\times 10^{-4}\ \textrm{m}^2/\textrm{s}
+\end{equation*}
+</div>
+<div class="para">These calculations give</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\textrm{Re} = \left[5.3\times 10^{-4}\ \textrm{m}^2/\textrm{s} \right]\ \frac{\rho}{\eta},
+\end{equation*}
+</div>
+<div class="para">Now for the parts of the question.</div>
+<ol class="lower-alpha" id="example-Determining-if-a-Flow-is-Turbulent-4-1-15">
+<li><div class="para logical">
+<div class="para">
+<span class="process-math">\(\rho = 13,600\,\text{kg/m}^3\text{,}\)</span> <span class="process-math">\(\eta = 1.554\times 10^{-3}\)</span>  Pa.s.  Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\textrm{Re} = \left[5.3\times 10^{-4}\ \textrm{m}^2/\textrm{s} \right]\ \frac{13,600\ \textrm{kg/m}^3}{1.554\times 10^{-3} \  \textrm{Pa.s}} = 4,640.
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(\text{Re} \gt 2000\text{,}\)</span> the flow is turbulent.</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">
+<span class="process-math">\(\rho = 1000\,\text{kg/m}^3\text{,}\)</span> <span class="process-math">\(\eta = 1.002\times 10^{-3}\)</span>  Pa.s.  Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\textrm{Re} = \left[5.3\times 10^{-4}\ \textrm{m}^2/\textrm{s} \right]\ \frac{1000\ \textrm{kg/m}^3}{1.002\times 10^{-3} \  \textrm{Pa.s}} = 528.
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(\text{Re} \lt 2000\text{,}\)</span> the flow is not turbulent.</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">
+<span class="process-math">\(\rho = 920\, \text{kg/m}^3\text{,}\)</span> <span class="process-math">\(\eta = 84\times 10^{-3}\)</span>  Pa.s.  Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\textrm{Re} = \left[5.3\times 10^{-4}\ \textrm{m}^2/\textrm{s} \right]\ \frac{920\ \textrm{kg/m}^3}{84\times 10^{-3} \  \textrm{Pa.s}} = 5.8.
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(\text{Re} \lt 2000\text{,}\)</span> the flow is not turbulent.</div>
+</div></li>
+</ol>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="Turbulence.html#example-Determining-if-a-Flow-is-Turbulent">in-context</a></span>
+</body>
+</html>

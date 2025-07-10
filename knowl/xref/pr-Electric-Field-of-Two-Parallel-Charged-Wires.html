@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">20<span class="period">.</span></span><span class="space"> </span><span class="title">Electric Field of Two Parallel Charged Wires.</span>
+</h5>
+<div class="para">Two non-conducting uniformly charged thin straight wires of line charge densities <span class="process-math">\(\lambda_1=\lambda_0\)</span> and  <span class="process-math">\(\lambda_2=-\lambda_0\)</span>  respectively are placed a distance <span class="process-math">\(2d\)</span> apart as shown in <a href="Gausss-Law-Bootcamp.html#fig-pr-Electric-Field-of-Two-Parallel-Charged-Wires" class="xref" data-knowl="./knowl/xref/fig-pr-Electric-Field-of-Two-Parallel-Charged-Wires.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 30.33">Figure 30.33</a>.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">Suppose the wires are parallel to the <span class="process-math">\(z\)</span> axis  and  cross the <span class="process-math">\(xy\)</span>-plane on the <span class="process-math">\(x\)</span> axis at <span class="process-math">\(x_1= -d\)</span> and <span class="process-math">\(x_2= +d\text{,}\)</span> respectively.  Find electric field at a point P in the <span class="process-math">\(xy\)</span>-plane.  Numerical values to use: <span class="process-math">\(\lambda_0 = 10\ \mu\text{C/m}\text{,}\)</span> <span class="process-math">\(d=1.0\text{ cm}\text{,}\)</span> <span class="process-math">\(x = 2\text{ cm}\text{,}\)</span> and <span class="process-math">\(y = 4\text{ cm}\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/gausss-law/pr-Electric-Field-of-Two-Parallel-Charged-Wires.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">30.33<span class="period">.</span></span><span class="space"> </span>For <a href="Gausss-Law-Bootcamp.html#pr-Electric-Field-of-Two-Parallel-Charged-Wires" class="xref" data-knowl="./knowl/xref/pr-Electric-Field-of-Two-Parallel-Charged-Wires.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 30.6.20: Electric Field of Two Parallel Charged Wires">Exercise 30.6.20</a>.</figcaption></figure></div>
+</div></div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use superposition of the electric field of the electric fields of the two wores. Pay attention to the directions.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(37,500\text{ N/C}\)</span> at clockwise angle <span class="process-math">\(82^\circ\)</span> from positive <span class="process-math">\(x\)</span>-axis.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">I will work out the numerical problem.</div> <div class="para logical">
+<div class="para">Let <span class="process-math">\(r_1\)</span> and <span class="process-math">\(r_2\)</span> be the distance from the wires to the field point <span class="process-math">\((x,y)\)</span> in the <span class="process-math">\(xy\)</span>-plane .</div>
+<div class="displaymath process-math">
+\begin{align*}
+r_1 \amp = \sqrt{(x+d)^2 + y^2}, \\
+\amp = \sqrt{(2+1)^2 + 4^2} = 5\text{ cm}, \\
+r_2 \amp = \sqrt{(x-d)^2 + y^2}, \\
+\amp = \sqrt{(2-1)^2 + 4^2} = \sqrt{17}\text{ cm}. 
+\end{align*}
+</div>
+<div class="para">Using the formulas for the magnitudes of the electric fields from charges on long wire, which is done by Gauss’s law for cyclindrical case, we get</div>
+<div class="displaymath process-math">
+\begin{align*}
+E_1 \amp = \dfrac{|\lambda_1|}{2\pi\epsilon_0}\,\dfrac{1}{r_1} \\
+\amp = \dfrac{ 10\times 10^{-6}}{2\pi\times8.85\times 10^{-12}}\,\dfrac{1}{5}  =  35,967\text{ N/C} \\
+E_2 \amp = \dfrac{|\lambda_2|}{2\pi\epsilon_0}\,\dfrac{1}{r_2} \\
+\amp = \dfrac{ 10\times 10^{-6}}{2\pi\times8.85\times 10^{-12}}\,\dfrac{1}{\sqrt{17}}  =  67,972\text{ N/C} 
+\end{align*}
+</div>
+<div class="para">Now we need to add them vectorially. The net field is not just sum of the magnitudes, as you know from vector addition.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_P \ne E_1 + E_2.
+\end{equation*}
+</div>
+<div class="para">We will first compute <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> components of the two fields so that we can find <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> components of the net field.</div>
+<div class="displaymath process-math">
+\begin{align*}
+E_{1x} \amp = E_1\, \dfrac{x+d}{r_1}, \\
+\amp = 35,967\text{ N/C}\, \dfrac{3}{5} = 21,580\text{ N/C}, \\
+E_{1y} \amp = E_1\, \dfrac{y}{r_1}, \\
+\amp = 35,967\text{ N/C}\, \dfrac{4}{5} = 28,774\text{ N/C}. 
+\end{align*}
+</div>
+<div class="para">Similarly, we work out the components of the field of wire 2. But, here we need to multiply by <span class="process-math">\(-1\)</span> since we have a negative charge.</div>
+<div class="displaymath process-math">
+\begin{align*}
+E_{2x} \amp = E_2\, \dfrac{-(x-d)}{r_2}, \\
+\amp =  67,972\text{ N/C}\, \dfrac{-1}{\sqrt{17}} = -16,486\text{ N/C}, \\
+E_{2y} \amp = E_2\, \dfrac{-y}{r_2}, \\
+\amp =  67,972\text{ N/C}\, \dfrac{-4}{\sqrt{17}} = -65,943\text{ N/C}. 
+\end{align*}
+</div>
+<div class="para">Therefore, the components of the net field are</div>
+<div class="displaymath process-math">
+\begin{align*}
+E_x \amp = E_{1x} + E_{2x} =  21,580 -16,486 = 5,094\text{ N/C},\\
+E_y \amp = E_{1y} + E_{2y} =  28,774 - 65,943 = -37,169\text{ N/C}
+\end{align*}
+</div>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">Therefore, the magnitude of the field is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E = \sqrt{ E_x^2 + E_y^2} = 37,500\text{ N/C},
+\end{equation*}
+</div>
+<div class="para">and the direction can be given by clockwise angle from positive <span class="process-math">\(x\)</span> axis.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\theta = \tan^{-1}\left( \dfrac{-37,169}{5,094} \right) = - 82^\circ.
+\end{equation*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><img src="external/./images/gausss-law/pr-two-parallel-charged-wires.png" class="contained"></div>
+</div></div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Gausss-Law-Bootcamp.html#pr-Electric-Field-of-Two-Parallel-Charged-Wires">in-context</a></span>
+</body>
+</html>

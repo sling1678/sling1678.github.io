@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">27.9</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Exploring Maxwell’s Distribution of Energy of Molecules.</span>
+</h3>
+<div class="para logical">
+<div class="para">The molecules for Maxwell distribution have only translational kinetic energy.  Therefore, we can express their speed <span class="process-math">\(v\)</span> in terms of energy <span class="process-math">\(E\)</span> of a molecule.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{2} m v^2 = E\ \ \ \text{(since PE = 0.)}
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">(a) Change the variable from <span class="process-math">\(v\)</span> to <span class="process-math">\(E\)</span> in the Maxwell distribution and obtain the distribution function for energy from the distribution function of speed.  Note that distribution function for energy, lets say <span class="process-math">\(g(E)\)</span> is a function of energy <span class="process-math">\(E\)</span> such that <span class="process-math">\(g(E) dE\)</span> gives the number of particles with energy between <span class="process-math">\(E\)</span> and <span class="process-math">\(E+dE\text{.}\)</span>  The distribution of energy is called the Maxwell-Boltzmann energy distribution. Ans:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g(E) dE = \frac{2\pi N}{(\pi k_B T)^{3/2}}\sqrt{E} \exp{(-E/k_BT)} dE.
+\end{equation*}
+</div>
+</div> <div class="para">(b) Show that integration of  <span class="process-math">\(g(E)\)</span> from <span class="process-math">\(E= 0\)</span> to <span class="process-math">\(\infty\)</span> yields <span class="process-math">\(N\text{,}\)</span> the total number of molecules.</div> <div class="para">(c) Calculate the average energy and show it is equal to <span class="process-math">\(\frac{3}{2} k_BT\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">Already in the statement.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">From <span class="process-math">\(E=\dfrac{1}{2} m v^2 \text{,}\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dE = m v dv\ \ \Longrightarrow\ \ \dfrac{dv}{dE} = \dfrac{1}{mv}.
+\end{equation*}
+</div>
+<div class="para">Let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\beta = \dfrac{1}{k_B T},\ \ a = \dfrac{m}{2}\,\beta,\ \ \alpha = 4N\, a^{3/2}/\sqrt{\pi}. 
+\end{equation*}
+</div>
+<div class="para">Then, the distribution of speeds looks simpler</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(v)dv = \alpha\, v^2\, \exp(-a v^2)\, dv.
+\end{equation*}
+</div>
+<div class="para">We can see that the distribution in speed can be recast with <span class="process-math">\(E\)</span> as indeopendent variable by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(v) \dfrac{dv}{dE} dE.
+\end{equation*}
+</div>
+<div class="para">Write this as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\alpha\, v^2\, \exp(-a v^2)\, \dfrac{1}{mv} dE.
+\end{equation*}
+</div>
+<div class="para">With <span class="process-math">\(v = \sqrt{2E/m}\)</span> we get the result after simplification.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{2N}{\sqrt{\pi}}\, \beta^{3/2}\, \sqrt{E}\, \exp(-\beta E)\,  dE.
+\end{equation*}
+</div>
+<div class="para">Therefore, the energy distribution is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g(E) dE = \dfrac{2N}{\sqrt{\pi}}\, \beta^{3/2}\, \sqrt{E}\, \exp(-\beta E)\,  dE,
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\beta = 1/k_BT\text{.}\)</span>
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">I looked up the following integral from <a class="external" href="" target="_blank">wolfram alpha website</a><details class="ptx-footnote" aria-live="polite" id="ex-Exploring-Maxwells-Distribution-of-Energy-of-Molecules-5-2-2"><summary class="ptx-footnote__number" title="Footnote 27.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="ex-Exploring-Maxwells-Distribution-of-Energy-of-Molecules-5-2-2"><code class="code-inline tex2jax_ignore"></code></div></details> with the command “integrate x^(1/2) exp(-a x)  dx from x=0 to infinity” to get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^\infty \sqrt{x} \exp(-a\,x)\,dx = \dfrac{\sqrt{\pi}}{2a^{3/2}}.
+\end{equation*}
+</div>
+<div class="para">Using this I was able to prove the required result.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">From definition of mean of a distribution, we will have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_\text{ave} = \int_0^\infty E\,g(E)\, dE.
+\end{equation*}
+</div>
+<div class="para">This requires the following integral</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^\infty E\sqrt{E} \exp(-\beta\,E)\,dE = \dfrac{3\,\pi^{1/2}}{4\beta^{5/2}}.
+\end{equation*}
+</div>
+<div class="para">Using this gives the required result.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Maxwells-Distribution-of-Molecular-Speeds.html#ex-Exploring-Maxwells-Distribution-of-Energy-of-Molecules">in-context</a></span>
+</body>
+</html>

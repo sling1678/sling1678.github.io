@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.18</span><span class="period">.</span><span class="space"> </span><span class="title">Propagation of Uncertainties to Volume from Uncertainties in Length, Width, Height.</span>
+</h4>
+<div class="para">The length, width and height of a metal rectangular parallelepiped were measured to be <span class="process-math">\(2.54\ \text{cm}\pm 0.01\ \text{cm}\text{,}\)</span> <span class="process-math">\(0.500\ \text{cm}\pm 0.005\ \text{cm}\text{,}\)</span> and <span class="process-math">\(0.208\ \text{cm}\pm 0.001\ \text{cm}\)</span>  respectively.  Find the average volume, and absolute and relative uncertainties in volume.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(\left( 26.4 \pm 0.3\right)\times 10^{-2} \ \text{cm}^3\text{,}\)</span> <span class="process-math">\(1.0\%\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">The average or main value of volume is obtained by simply multiplying the average length, width and height and making sure to keep the appropriate significant figures.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\text{Volume} \amp = 2.54\ \text{cm}\times 0.500\ \text{cm}\times 0.208\ \text{cm}\\
+\amp = 0.264\ \text{cm}^3 = 2.64\times 10^{-1}\ \text{cm}^3.
+\end{align*}
+</div>
+<div class="para">The uncertainty in volume will be constructed from uncertainty in volume due to uncertainty in each of the measured quantities. Treating <span class="process-math">\(V\)</span> as a function of three independent vartiables <span class="process-math">\(L\text{,}\)</span> <span class="process-math">\(W\text{,}\)</span> and <span class="process-math">\(T\text{,}\)</span> through the formula.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V(L,W,T) = LWT.
+\end{equation*}
+</div>
+<div class="para">Thus the uncertainty in volume due to uncertainty in length is</div>
+<div class="displaymath process-math">
+\begin{align*}
+\Delta V_L \amp = WT\Delta L\\
+\amp = 0.500\ \text{cm}\times 0.208\ \text{cm}\times 0.01\ \text{cm} \\
+\amp = 0.001\ \text{cm}^3\ \text{(keeping only the most significant digit)}.
+\end{align*}
+</div>
+<div class="para">Similarly, the uncertainty in volume due to the uncertainty in width is  <span class="process-math">\(0.003\ \text{cm}^3\text{,}\)</span> and  the uncertainty in volume due to the uncertainty in thickness is <span class="process-math">\(0.001\ \text{cm}^3\text{.}\)</span> Now we add the three sources of uncertainties in the volume in quadrature to obtain the net uncertainty.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta V = \sqrt{\left(\Delta V_L\right)^2+\left(\Delta V_W\right)^2+\left(\Delta V_T\right)^2}=0.003\ \text{cm}^3.
+\end{equation*}
+</div>
+<div class="para">Hence, the volume of the block is <span class="process-math">\((2.64 \pm 0.03)\times 10^{-1}\ \text{cm}^3\text{.}\)</span> The relative uncertainty in volume is obtained from the ratio of absolute uncertainty to the average value.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Relative uncertainty} = \frac{\Delta V}{V_\text{ave}} =\frac{0.03}{2.64}= 1\%.
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="section-propagation-of-uncertainty.html#ex-Propagation-of-Uncertainties-Through-a-Multiplicative-Formula">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">36.13</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Magnetic Field at Arbitry Point from Current in a Finite Straight Wire.</span>
+</h3>
+<div class="para">One part of an electric circuit that carries a steady current <span class="process-math">\(I\)</span>  is a straight wire of length <span class="process-math">\(L\text{.}\)</span>  What is the magnetic field at an arbitrary point P? Express your answer in terms of angles <span class="process-math">\(\theta_1\)</span> and <span class="process-math">\(\theta_2\)</span> subtended by the ends of the wire at the field point and distance <span class="process-math">\(s\)</span> from the wire.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\vec B =   \dfrac{\mu_0 I}{4\pi s}\, \left( \sin\,\theta_1 + \sin\,\theta_2\right)\, \hat u_\phi\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">Since the wire segment is straight, we use a Cartesian coordinate system. We will place the wire symmetrically along the <span class="process-math">\(z\)</span> axis. We will use Cartesian coordinates <span class="process-math">\((x,y,z) \)</span> for location of field point P as shown in <a href="Magnetic-Field-of-Steady-Current.html#fig-finite-wire-arbitrary-field-point" class="xref" data-knowl="./knowl/xref/fig-finite-wire-arbitrary-field-point.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 36.14">Figure 36.14</a>.  For the segment on the wire we will use symbol <span class="process-math">\(z'\)</span> in place of letter <span class="process-math">\(z\text{,}\)</span> which we are using for the field point P.</div> <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./images/magnetic-field/finite-wire-arbitrary-field-point.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">36.14<span class="period">.</span></span><span class="space"> </span>Set up for magnetic field calculation for a finite wire. We are interested in field at an arbitrary point P.</figcaption></figure> <div class="para logical">
+<div class="para">We choose an infinitesimal element between <span class="process-math">\(z'\)</span> and <span class="process-math">\(z'+dz'\text{.}\)</span>  This geometry gives us the following for various quantities in the infintesimal form of Biot-Savar law.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp d\vec l = \hat u_z\, dz',\\
+\amp \vec r = \hat u_x\, x + \hat u_y\, y + \hat u_z\, (z-z')   \\
+\amp r = \sqrt{s^2 + (z-z')^2 },\ \ s^2 = x^2 + y^2  \\
+\amp \hat u_r = \dfrac{1}{\sqrt{s^2 + (z-z')^2 } } \left( \hat u_x\, x + \hat u_y\, y + \hat u_z\, (z-z') \right) 
+\end{align*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d\vec l \times \hat u_r   =  \left( -y\, \hat u_x + x\, \hat u_y \right)
+\dfrac{dz'}{\sqrt{s^2 + (z-z')^2 } }.
+\end{equation*}
+</div>
+<div class="para">Now, we have all the pieces to write the contribution of the steady current in the infinitesimal element at <span class="process-math">\(z\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d\vec B = \dfrac{\mu_0 I}{4\pi}\, \left( -y\, \hat u_x + x\, \hat u_y \right)\, \dfrac{dz'}{\left[s^2 + (z-z')^2\right]^{3/2} }.
+\end{equation*}
+</div>
+<div class="para">Integrating this from <span class="process-math">\(z'=0\)</span> to <span class="process-math">\(z'=L\)</span> gives us the following result</div>
+<div class="displaymath process-math">
+\begin{align*}
+\vec B \amp =   \dfrac{\mu_0 I}{4\pi s}\, \left( -\dfrac{y}{s}\, \hat u_x + \dfrac{x}{s}\, \hat u_y \right) \left[ \dfrac{ L - z}{ \sqrt{ s^2 + (L-z)^2 }}  + \dfrac{z}{\sqrt{ s^2 + z^2 }}\right]. 
+\end{align*}
+</div>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">This answer can be written more compactly in terms of unit vector <span class="process-math">\(\hat u_\phi = \left( -\dfrac{y}{s}\, \hat u_x + \dfrac{x}{s}\, \hat u_y \right)\)</span> and angles the two ends of the wire subtends at the field point P as you can see from the figure to the right.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\sin\,\theta_1 \amp = \dfrac{ L - z}{ \sqrt{ s^2 + (L-z)^2 }} \\
+\sin\,\theta_2 \amp = \dfrac{ z}{ \sqrt{ s^2 + (L-z)^2 }} 
+\end{align*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:50%;"><img src="external/./images/magnetic-field/finite-wire-arbitrary-field-point-as-angles.png" class="contained"></div>
+</div></div> <div class="para logical">
+<div class="para">Therefore, magnetic field at P is compactly written as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec B =   \dfrac{\mu_0 I}{4\pi s}\, \left( \sin\,\theta_1 + \sin\,\theta_2\right)\, \hat u_\phi,
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(s\)</span> is the distance of the field point from the line of the wire. To check the direction we use the right-hand rule, which also gives the direction to be circulating as <span class="process-math">\(\hat u_\phi\)</span> does.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Magnetic-Field-of-Steady-Current.html#ex-Magnetic-Field-at-Arbitry-Point-from-Current-in-a-Finite-Straight-Wire">in-context</a></span>
+</body>
+</html>

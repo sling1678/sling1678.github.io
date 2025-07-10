@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Electric Potential of an Infintely Long Wire.</span>
+</h4>
+<div class="para"> An infinitely long straight wire has a uniform charge density of <span class="process-math">\(\lambda=2.0\times 10^{-6}\text{ C/m}\text{.}\)</span> What is the electric potential at a distance <span class="process-math">\(s=25\text{ cm}\)</span> from the wire? State your reference point.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use electric field of a charged wire to deduce the formula for electric potential.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(5.0\times 10^4\text{ V}\)</span> with zero potential reference at <span class="process-math">\(s=1\text{ m}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">By applying Gauss’s law for cylindrical symmetry, we can show that magnitude of electric field at a distance <span class="process-math">\(s\)</span> from the wire is given by the following formula.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E = \frac{\lambda}{2\pi\epsilon_0}\; \frac{1}{s}.
+\end{equation*}
+</div>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">Here, the field is in the cylindrical radial direction, as given by the unit vector <span class="process-math">\(\hat u_s\text{,}\)</span> and the element <span class="process-math">\(d\vec r\)</span> is also in the  <span class="process-math">\(\hat u_s\)</span> direction. Therefore, we will get their dot product to be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec E\cdot d\vec r = E\, ds.
+\end{equation*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:20%;"><img src="external/./images/electric-potential/ex-Electric-Potential-of-an-Infintely-Long-Wire.png" class="contained"></div>
+<div class="sbspanel top" style="width:20%;"><div class="para"></div></div>
+</div></div> <div class="para logical">
+<div class="para">Now, let us integrate this along cylindrical radial line from <span class="process-math">\(s=s_0\text{,}\)</span> the reference, to the point <span class="process-math">\(s=s\text{.}\)</span> This will give us the following potential difference with respect to the reference point.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\phi - \phi_\text{ref} \amp = - \frac{\lambda}{2\pi\epsilon_0}\; \int_{s_0}^s\frac{1}{s} ds \ \ \ (s_0\gt s)\\
+\amp = - \frac{\lambda}{2\pi\epsilon_0}\; \ln\frac{s}{s_0}.
+\end{align*}
+</div>
+<div class="para">Choosing <span class="process-math">\(\phi_\text{ref} = 0 \text{,}\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi = - \frac{\lambda}{2\pi\epsilon_0}\; \ln\frac{s}{s_0}.
+\end{equation*}
+</div>
+<div class="para">Note that we cannot choose reference distance, <span class="process-math">\(s_0=\infty\text{,}\)</span> since that would give use zero potential at all points. Typically, we will choose <span class="process-math">\(s_0=1\)</span> in the unit we express distance <span class="process-math">\(s\text{.}\)</span> Thus, if we express <span class="process-math">\(s\)</span> in meters, we will set <span class="process-math">\(s_0=1\text{ m}\)</span> and write potential at <span class="process-math">\(s\)</span> as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi = - \frac{\lambda}{2\pi\epsilon_0}\; \ln\,(s\text{ in m}).
+\end{equation*}
+</div>
+<div class="para">Numerically, now, with <span class="process-math">\(s=25\text{ cm}= 0.25\text{ m}\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{align*}
+\phi \amp = - \frac{2.0\times 10^{-6}}{2\pi\times 8.85\times 10^{-12}}\; \ln\,(0.25) = 5.0\times 10^4\text{ V}.
+\end{align*}
+</div>
+<div class="para">The potential is positive since our reference point at <span class="process-math">\(1\text{ m}\)</span> is further away from positive charges than the field point  at <span class="process-math">\(25\text{ cm}\text{.}\)</span>
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Electric-Potential-and-Electric-Field.html#ex-Electric-Potential-of-an-Infintely-Long-Wire">in-context</a></span>
+</body>
+</html>

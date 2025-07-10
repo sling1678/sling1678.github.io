@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Solving a Damped Oscillatory Problem Given Parameters and Initial Conditions.</span>
+</h4>
+<div class="para">A damped oscillator has following parameters <span class="process-math">\(m\)</span> = 0.2 kg, <span class="process-math">\(k\)</span> = 10 N/m, <span class="process-math">\(b\)</span> = 6 kg/s. Suppose the oscillator moves on the <span class="process-math">\(x\)</span>-axis with initial position and velocity values <span class="process-math">\(x(0) = 1\,\text{cm}\text{,}\)</span> and <span class="process-math">\(v_x(0) = 0\text{.}\)</span> Find <span class="process-math">\(x(t)\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(x(t) = -(0.068\ \textrm{cm})\ e^{-28 t} + (1.07\ \textrm{cm}) e^{-1.8 t}.\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">Since this is a damped oscillator, we first need to knwo what type of dfamping is applicable here since the form of <span class="process-math">\(x(t)\)</span> will depend on that. To decide the type, we need the values of <span class="process-math">\(\sqrt{k/m}\)</span> and <span class="process-math">\(b/2m\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp \omega_0 = \sqrt{k/m} = \sqrt{10/0.2} = \sqrt{50} = 7.1\,\text{s}^{-1}.\\
+\amp \beta = \gamma/2 = \frac{b}{2m} = \frac{6}{2\times 0.2} = 15\,\text{s}^{-1}. 
+\end{align*}
+</div>
+<div class="para">We see that <span class="process-math">\(\omega_0 \lt \gamma/2\text{.}\)</span> Hence, it an overdamped oscillator. Therefore, <span class="process-math">\(x(t)\)</span> will have form of the over-damped solution.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x(t) = e^{(-\beta t)}\ [ A\ e^{(-\alpha t)} + B\ e^{(\alpha t)}],
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\beta = 15\ \textrm{s}^{-1}\)</span> and <span class="process-math">\(\alpha = \sqrt{15^2-7.1^2} = 13.2\,\text{s}^{-1}\)</span> . From this we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_x(t) = -(\alpha + \beta)A\ e^{[-(\alpha+\beta) t]} + (\alpha - \beta)B\ e^{[(\alpha-\beta) t]} .
+\end{equation*}
+</div>
+<div class="para">Now, we use the initial conditions on <span class="process-math">\(x\)</span> and <span class="process-math">\(v_x\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp 1 = A + B. \\
+\amp 0 =  -(\alpha + \beta) A + (\alpha - \beta)B. 
+\end{align*}
+</div>
+<div class="para">Threfore,</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp A = \frac{\alpha - \beta}{2\alpha} = - 0.068\,\text{cm}\\
+\amp B =  \frac{\alpha + \beta}{2\alpha} = 1.07\,\text{cm}.
+\end{align*}
+</div>
+<div class="para">The solution</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x(t) = -(0.068\ \textrm{cm})\ e^{-28 t} + (1.07\ \textrm{cm}) e^{-1.8 t}.
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="Damped-Harmonic-Oscillator.html#exer-Solving-a-Damped-Oscillatory-Problem-Given-Parameters-and-Initial-Conditions">in-context</a></span>
+</body>
+</html>

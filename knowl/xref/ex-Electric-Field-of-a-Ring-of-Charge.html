@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">29.41</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Derivation of Electric Field of a Charged Ring.</span>
+</h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:60%;"><div class="para">Suppose we have a uniformly charged ring of radius <span class="process-math">\(R\)</span> with line charge density <span class="process-math">\(\lambda\text{.}\)</span> <em class="alert">Derive</em> the formula for the electric field at a point P that is  at a distance <span class="process-math">\(D\)</span> above the center of the ring.</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:30%;"><figure class="figure figure-like"><img src="external/./images/coulombs-law/e-field-of-ring-of-charges.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">29.42<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\vec E = k \dfrac{ 2\pi R \lambda \, D}{ \left(  R^2 + D^2 \right)^{3/2} }\ \hat u_z.\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para"><em class="alert">General Strategy:</em></div> <div class="para">When we deal with a continuous charges, it is helpful to start with pieces of the body, and use point charge formula. Whenever possible, it usually simplifies calculation if you make use of the symmetry. In the present question, since the field point is in the plane that divides the rod in half, there is a symmetry between the upper half and lower half.</div> <div class="para"><em class="alert">Derivation:</em></div> <div class="para">To exploit the symmetry in this situation, we notice two things in this problem: (1) every piece of the ring is same distance from the field point P, and (2) the horizontal component of the electric field from two oppositely placed charges on the ring, as shown in <a href="Continuous-Charge-Distribution.html#fig-e-field-of-ring-of-charges-solution" class="xref" data-knowl="./knowl/xref/fig-e-field-of-ring-of-charges-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 29.43">Figure 29.43</a>, will cancel out, which means that we need to work out only the vertical component.</div> <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./images/coulombs-law/e-field-of-ring-of-charges-solution.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">29.43<span class="period">.</span></span><span class="space"> </span>To find the electric field from charges uniformly spread over the ring, we first look at the two symmetrically placed charges <span class="process-math">\(dq_1\)</span> and <span class="process-math">\(dq_2\)</span> of equal amount. We note that their electric field sums to an electric field that is non-zero only along <span class="process-math">\(z\)</span> axis. That tells us that at P, electric field is pointed along <span class="process-math">\(z \)</span> axis. If charge on the rod was positive, the field will be as shown, and if negative the field will be in the opposite direction.</figcaption></figure> <div class="para logical">
+<div class="para">To get an idea of what to proceed, let us look at the <span class="process-math">\(z\)</span> component of the electric field from element of arc length <span class="process-math">\(ds\text{,}\)</span> say from <span class="process-math">\(dq_1 = \lambda ds \text{.}\)</span> The magnitude of this electric field is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dE_1 = k \dfrac{\lambda\, ds}{ R^2 + D^2 },
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\sqrt{R^2 + D^2} \)</span> is the direct distance from the <span class="process-math">\(dq_1\)</span> to the field point P. Now, we need to get its <span class="process-math">\(z\)</span> component by multiplying with <span class="process-math">\(\cos\,\theta\text{,}\)</span> where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\cos\theta = \dfrac{D}{ \sqrt{R^2 + D^2} }.
+\end{equation*}
+</div>
+<div class="para">Therefore, the <span class="process-math">\(z\)</span> component will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dE_{1z} = k \dfrac{\lambda\, ds}{ R^2 + D^2 }\ \dfrac{D}{ \sqrt{R^2 + D^2} }.
+\end{equation*}
+</div>
+<div class="para">Now, we notice that as we go around the ring, everything is same for every element. Therefore, the net field will just be <span class="process-math">\(ds\)</span> replaced by the circumference of the ring. Let us we drop 1 from the subscript since this is the net.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_{z} = k \dfrac{\lambda\, 2\pi R}{ R^2 + D^2 }\ \dfrac{D}{ \sqrt{R^2 + D^2} }.
+\end{equation*}
+</div>
+<div class="para">We can write this formula more compactly by replacing <span class="process-math">\(\lambda\, 2\pi R \)</span> by the total charge <span class="process-math">\(q\)</span> on the ring, and combining the denominator.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_{z} = k \dfrac{q\, D}{ \left(  R^2 + D^2 \right)^{3/2} }.
+\end{equation*}
+</div>
+<div class="para">Since this is the only non-zero component, this gives the magnitude of the net field at P.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E = k \dfrac{ |q|\, D}{ \left(  R^2 + D^2 \right)^{3/2} },
+\end{equation*}
+</div>
+<div class="para">and direction towards <span class="process-math">\(+z\)</span> axis if <span class="process-math">\(\lambda\)</span> is positive and 	<span class="process-math">\(-z\)</span> axis if <span class="process-math">\(\lambda\)</span> is negative. Of course, you can write this in a vector notation as well by using unit vector <span class="process-math">\(\hat u_z\)</span> that points in the positive <span class="process-math">\(z\)</span> direction.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec E = k \dfrac{ q\, D}{ \left(  R^2 + D^2 \right)^{3/2} }\ \hat u_z.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Continuous-Charge-Distribution.html#ex-Electric-Field-of-a-Ring-of-Charge">in-context</a></span>
+</body>
+</html>

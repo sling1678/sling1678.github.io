@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Equation of Motion of a Simple Pendulum.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">A simple pendumum consists of a bob of mass <span class="process-math">\(m\)</span> attached to a string of length <span class="process-math">\(l\)</span> that swings back ad forth in <em class="alert">a vertical plane</em> as shown in <a href="forces-Dynamics-in-Polar-Coordinates.html#fig-ex-eqn-ofmotion-of-pendulum-statement" class="xref" data-knowl="./knowl/xref/fig-ex-eqn-ofmotion-of-pendulum-statement.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.133">Figure 6.133</a>. You will work with polar coordinates in this problem with origin at the suspension points, positive <span class="process-math">\(x\)</span> axis pointed down and positive <span class="process-math">\(y\)</span> axis pointed to right.</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/forces/ex-eqn-ofmotion-of-pendulum-statement.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.133<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">(a) Find equations of motion in polar coordinates. (b) Solve the differential equation corresponding to the tangential equation for variable <span class="process-math">\(\theta(t)\)</span> when <span class="process-math">\(\theta\)</span> is small. Hint: When <span class="process-math">\(\theta\)</span> is small, we can approximate <span class="process-math">\(\sin\theta \approx \theta\)</span> and <span class="process-math">\(\cos\theta \approx 1 - \frac{1}{2}\theta^2\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Use radial and angular decomposition of two force vectors. (b) Simplify one of the eqiations of motion and solve a second order differential equation.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(\omega^2  =  \frac{T}{ml} - \frac{g}{l} \cos\theta\text{,}\)</span> <span class="process-math">\(frac{d^2\theta}{dt^2}  = -  \frac{g}{l} \sin\theta\text{,}\)</span> (b) <span class="process-math">\(A\; \cos\left( \sqrt{\frac{g}{l}}\;\; t \right) + B\; \sin\left( \sqrt{\frac{g}{l}}\;\; t \right)\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">Let origi<span class="process-math">\(r\)</span> and <span class="process-math">\(\theta\)</span> denote the radial and angular coordinates at an arbitrary instant <span class="process-math">\(t\text{.}\)</span> Forces on the bob are shown in <a href="forces-Dynamics-in-Polar-Coordinates.html#fig-ex-eqn-ofmotion-of-pendulum" class="xref" data-knowl="./knowl/xref/fig-ex-eqn-ofmotion-of-pendulum.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.134">Figure 6.134</a>. From this, we get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-ex-eqn-ofmotion-of-pendulum.html">
+\begin{align*}
+\amp F_r = -T + mg \cos\theta.\\
+\amp F_\theta = - mg \sin\theta.
+\end{align*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/forces/ex-eqn-ofmotion-of-pendulum.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.134<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>  <div class="para logical">
+<div class="para">Corresponding components of acceleration for the case of fixed <span class="process-math">\(r\)</span> is</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp a_r = -l\omega^2.\\
+\amp a_\theta = l \frac{d\omega}{dt}.
+\end{align*}
+</div>
+<div class="para">Therefore, equations of motion are</div>
+<div class="displaymath process-math">
+\begin{align*}
+-ml\omega^2 \amp = -T + mg \cos\theta.\\
+ml \frac{d\omega}{dt} \amp = - mg \sin\theta.
+\end{align*}
+</div>
+<div class="para">We can rewrite these equations as</div>
+<div class="displaymath process-math">
+\begin{align}
+\amp  \omega^2  =  \frac{T}{ml} - \frac{g}{l} \cos\theta.\tag{6.72}\\
+\amp \frac{d^2\theta}{dt^2}  = -  \frac{g}{l} \sin\theta.\tag{6.73}
+\end{align}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">The tangential equation of motion in Eq. <a href="forces-Dynamics-in-Polar-Coordinates.html#ex-Equation-of-Motion-of-a-Simple-Pendulum-5-3-4" class="xref" data-knowl="./knowl/xref/eq-plane-pendulum-tangential-eom.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.73">(6.73)</a> can be simplified for small angles to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-plane-pendulum-tangential-eom.html">
+\begin{equation*}
+\frac{d^2\theta}{dt^2}  = -  \frac{g}{l} \theta.
+\end{equation*}
+</div>
+<div class="para">This is a simple differential equation with solution as sines and cosine functions.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-plane-pendulum-tangential-eom.html">
+\begin{equation*}
+\theta(t) = A\; \cos\left( \sqrt{\frac{g}{l}}\;\; t \right) + B\; \sin\left( \sqrt{\frac{g}{l}}\;\; t \right),
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are constants that are fixed by initial values of <span class="process-math">\(\theta\)</span> and <span class="process-math">\(\omega\text{.}\)</span> For instance, if bob is let go from rest at angle <span class="process-math">\(\theta_0\text{,}\)</span> we will get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-plane-pendulum-tangential-eom.html">
+\begin{equation*}
+\theta(t) = \theta_0\; \cos\left( \sqrt{\frac{g}{l}}\;\; t \right).
+\end{equation*}
+</div>
+<div class="para">In general, if at <span class="process-math">\(t=0\text{,}\)</span> <span class="process-math">\(\theta=\theta_0\)</span> and <span class="process-math">\(\omega=\omega_0\text{,}\)</span> then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-plane-pendulum-tangential-eom.html">
+\begin{equation*}
+\theta(t) = \theta_0\; \cos\left( \sqrt{\frac{g}{l}}\;\; t \right) + \frac{\omega_0}{\sqrt{g/l}}\; \sin\left( \sqrt{\frac{g}{l}}\;\; t \right).
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="forces-Dynamics-in-Polar-Coordinates.html#ex-Equation-of-Motion-of-a-Simple-Pendulum">in-context</a></span>
+</body>
+</html>

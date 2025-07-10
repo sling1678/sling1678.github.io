@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">50.7</span><span class="period">.</span><span class="space"> </span><span class="title">Stefan-Boltzman law from Planck’s Radiation Law.</span>
+</h3>
+<div class="para">Derive Stefan-Boltzmann law from Planck’s radiation law.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Integrate <span class="process-math">\(R_T(\lambda)\)</span> over all wavelengths.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">Integrating the radiancy <span class="process-math">\(R_T(\lambda)\)</span> over all wavelengths should give the total intensity at temperature <span class="process-math">\(T\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I(T) = \int_0^{\infty} R_T(\lambda) d\lambda = \int_0^{\infty}\left(2 \pi h c^2\right)\:\dfrac{1}{\lambda^5}\:\left[\dfrac{1}{e^{hc/\lambda k_B T}-1}\right]\: d\lambda.
+\end{equation*}
+</div>
+<div class="para">A change of variable helps isolate a definite integral that will have a purely numerical value.  Let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x = \dfrac{hc}{\lambda k_B T}.
+\end{equation*}
+</div>
+<div class="para">Then,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dx = - \dfrac{hc}{k_B T}\: \dfrac{d\lambda}{\lambda^2}.
+\end{equation*}
+</div>
+<div class="para">In terms of integral over <span class="process-math">\(x\text{,}\)</span> the intensity becomes</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I(T) = -\left(2 \pi h c^2\right)\left(\dfrac{k_BT}{hc} \right)^4\:\int_{\infty}^0 \dfrac{x^3}{e^{x}-1}\: dx
+\end{equation*}
+</div>
+<div class="para">The integral in this expression is difficult to do. If you look up a standard table of integrals or work it in Mathematica you will find that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^{\infty} \dfrac{x^3}{e^{x}-1}\: dx = \dfrac{\pi^4}{15}
+\end{equation*}
+</div>
+<div class="para">Therefore, we find the following expression for the total intensity,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I(T) = \left[ \dfrac{2\pi^5 k_B^4}{15 h^3 c^2}\right]\: T^4.
+\end{equation*}
+</div>
+<div class="para">The quantity <span class="process-math">\([\ ]\)</span> should equal the Stefan-Boltzmann constant <span class="process-math">\(\sigma\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sigma = \dfrac{2\pi^5 k_B^4}{15 h^3 c^2}. 
+\end{equation*}
+</div>
+<div class="para"> Let us check the numerical value.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{2\pi^5 k_B^4}{15 h^3 c^2} = 5.65\times 10^{-8}\:\frac{\textrm{W}}{\textrm{m}^2\textrm{K}^4},
+\end{equation*}
+</div>
+<div class="para">which is close to the standard value <span class="process-math">\(5.670\times 10^{-8}\:\frac{\textrm{W}}{\textrm{m}^2\textrm{K}^4}\)</span> given above.</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="sec-Blackbody-Radiation.html#ex-Stefan-Boltzman-law-from-Plancks-Radiation-Law">in-context</a></span>
+</body>
+</html>

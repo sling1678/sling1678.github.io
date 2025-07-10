@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Exploring Distribution of Free Lengths.</span>
+</h4>
+<div class="para logical">
+<div class="para">The probability of different free lengths between collisions is given by a probability function  <span class="process-math">\(\rho (r)\text{,}\)</span> similar to what was done for the Maxwell distribution of speed, except that  <span class="process-math">\(\rho (r)\)</span> is a different function. While Maxwell distribution was Gaussian, free path distribution is exponential.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rho (r)= A\,e^{-r/\xi}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(A\)</span> and <span class="process-math">\(\xi\)</span> (read “shee”)  are constants. Constant <span class="process-math">\(\xi\)</span> characterizes the average distance between the molecules.</div>
+</div> <div class="para">The product  <span class="process-math">\(\rho dr\)</span> gives the probability that a molecule will travel a distance <span class="process-math">\(r\)</span> between collisions.  The integral of  <span class="process-math">\(\rho dr\)</span> from <span class="process-math">\(r = 0\)</span> to <span class="process-math">\(r = \infty\)</span> must equal 1, and the average <span class="process-math">\(r\)</span> is equal to the mean free path  <span class="process-math">\(\lambda\text{.}\)</span>  Find <span class="process-math">\(A\)</span> and <span class="process-math">\(\xi\)</span>  in terms of  <span class="process-math">\(\lambda\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Normalize by integrating from <span class="process-math">\(0\)</span> to <span class="process-math">\(\infty\text{.}\)</span> The mean is defined as ususal by <span class="process-math">\(\int_0^\infty r\,\rho(r)\,dr\text{.}\)</span>
+</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\xi\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">To normalize we note that the integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^{\infty} A\ e^{-r/\xi} dr = A\xi.
+\end{equation*}
+</div>
+<div class="para">Setting this to 1 gives us the normalizing condition and sets <span class="process-math">\(A\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \frac{1}{\xi}.
+\end{equation*}
+</div>
+<div class="para">Now,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^{\infty} r\rho(r)dr =  \dfrac{1}{\xi}\,\int_0^{\infty} r \ e^{-r/\xi} dr = \xi.
+\end{equation*}
+</div>
+<div class="para">Setting this to <span class="process-math">\(\lambda\text{,}\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lambda = \xi.
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="Mean-Free-Path.html#ex-Exploring-Distribution-of-Free-Lengths">in-context</a></span>
+</body>
+</html>

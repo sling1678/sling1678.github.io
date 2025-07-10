@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Carnot Cycle with Monatomic Ideal Gas.</span>
+</h4>
+<div class="para">Two moles of a monatomic ideal gas performs a Carnot cycle between <span class="process-math">\(300\text{ K}\)</span> and <span class="process-math">\(500\text{ K}\text{.}\)</span>  The starting volume of the gas before isothermal expansion was <span class="process-math">\(3\times 10^{-3}\text{ m}^3\text{,}\)</span> and it expands to double the volume in the isothermal step.  Find the total amount of work done  and heat absorbed from the high temperature reservoir in each cycle.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para"><div class="para">At any point of the cycle, use ideal gas law. For work for processes use <span class="process-math">\(-pdV\text{.}\)</span> For internal energy use <span class="process-math">\((f/2)nRT\text{,}\)</span> with <span class="process-math">\(f=3\)</span> for monatomic gas.</div></div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(W = 774\text{ J}\text{,}\)</span> <span class="process-math">\(Q_{H} = 1935 \text{ J}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">First we find the <span class="process-math">\((p,V)\)</span> at the vertices of the cycle.</div>
+<div class="displaymath process-math">
+\begin{align*}
+A:\ \ \amp  \\
+\amp  T_A = 500\ \text{K}\\
+\amp  V_A = 3\times 10^{-3}\ \text{m}^3\\
+\amp  p_A = 2\times \frac{8.31\times 500}{3\times 10^{-3}} = 2.77\ \text{MPa}
+\end{align*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><img src="external/./images/second-law-of-thermo/carnot-pr-1.png" class="contained"></div>
+</div></div> <div class="para logical">
+<div class="para">B:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  T_B = 500\ \text{K}\\
+\amp  V_B = 2\times 3\times 10^{-3}\ \text{m}^3 = 6\times 10^{-3}\ \text{m}^3\\
+\amp  p_B =  \frac{2.77}{2}\ \text{MPa} =1.39 \ \text{MPa}
+\end{align*}
+</div>
+</div> <div class="para logical">
+<div class="para">C:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  T_C = 300\ \text{K}\\
+\amp  V_C^{\gamma-1} =\frac{T_B}{T_C}  V_B^{\gamma-1} \ \ \Longrightarrow\ \  V_C = 12.9\times 10^{-3}\ \text{m}^3\\
+\amp  p_C =  \frac{2 \times 8.31\times 300}{12.9\times 10^{-3}} = 0.386\ \text{MPa} 
+\end{align*}
+</div>
+</div> <div class="para logical">
+<div class="para">D:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  T_D = 300\ \text{K}\\
+\amp  V_D^{\gamma-1} =\frac{T_A}{T_D}  V_A^{\gamma-1} \ \ \Longrightarrow\ \ V_D = 6.45\times 10^{-3}\ \text{m}^3\\
+\amp  p_D V_D = p_C V_C \ \ \Longrightarrow\ \ p_D =    0.773\ \text{MPa} 
+\end{align*}
+</div>
+</div> <div class="para logical">
+<div class="para">The calculations for the work by the gas give.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  W_{AB} = n R T_A \ln \frac{V_B}{V_A} = 5760\ \text{J}\\
+\amp  W_{BC} =\frac{3 n}{2} R (T_B -T_C)  = 4986\ \text{J}\\
+\amp  W_{CD} = n R T_C \ln \frac{V_D}{V_C} = - 3456\ \text{J}\\
+\amp  W_{DA} =\frac{3 n}{2} R (T_D -T_A)  = -4986\ \text{J}
+\end{align*}
+</div>
+<div class="para">The net work for the entire cycle is obtained by adding the work in each step.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W = 2304\ \text{J}.
+\end{equation*}
+</div>
+<div class="para">The Carnot efficiency of the cycle is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\eta = 1-\frac{300\ \text{K}}{500\ \text{K}} = 0.4.
+\end{equation*}
+</div>
+<div class="para">Therefore the cycle abosrbs the following energy from the higher-temperature source.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_{in} = \frac{W}{\eta} = \frac{2304\ \text{J}}{0.4} = 5760\ \text{J}.
+\end{equation*}
+</div>
+<div class="para">This is same as the work done in the AB part of the cycle since the change in the internal energy for a constant temperature process of an ideal gas is zero.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="The-Carnot-Engine.html#ex-Carnot-Cycle-with-Monatomic-Ideal-Gas">in-context</a></span>
+</body>
+</html>

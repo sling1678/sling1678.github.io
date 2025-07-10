@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">41.42</span><span class="period">.</span><span class="space"> </span><span class="title">Series RLC Circuit in Complex Notation.</span>
+</h4>
+<div class="para">Consider the series RLC-circuit. Find current in the circuit.</div> <figure class="figure figure-like"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/./images/ac-circuits/RLC-series-circuit.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">41.43<span class="period">.</span></span><span class="space"> </span>A series RLC-circuit driven by an alternating EMF.</figcaption></figure><div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(I_0 = \dfrac{V_0}{ \sqrt{ R^2 + \left( \omega L- \dfrac{1}{\omega C}\right)^2 } }\text{,}\)</span> <span class="process-math">\(\phi_I = - \tan^{-1} \left( \dfrac{\omega L- \dfrac{1}{\omega C}}{R} \right)\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">First step in our solution is to replace original circuit by a complex circuit where we replace <span class="process-math">\(R\)</span> by <span class="process-math">\(Z_R\text{,}\)</span> <span class="process-math">\(C\)</span> by <span class="process-math">\(Z_C\text{,}\)</span> and <span class="process-math">\(L\)</span> by <span class="process-math">\(Z_L\text{,}\)</span> and treat currents and voltages complex. This is shown as a complex circuit in the figure below.</div> <figure class="figure figure-like"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/./images/ac-circuits/RLC-series-circuit-complex.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">41.44<span class="period">.</span></span><span class="space"> </span>A series RLC-circuit driven by an alternating EMF with complex quantities.</figcaption></figure> <div class="para logical">
+<div class="para">Now, we think of impedances as if they were simple resistors. In this circuit, the loop equation will give</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-RLS-series-complex-current.html">
+\begin{equation*}
+\tilde V - \tilde Z_R\tilde I - \tilde Z_L\tilde I  - \tilde Z_C\tilde I = 0,
+\end{equation*}
+</div>
+<div class="para">which can be solved for complex current.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-RLS-series-complex-current.html">
+\begin{equation}
+\tilde I = \dfrac{\tilde V}{ \tilde Z_R + \tilde Z_L + \tilde Z_C}.\tag{41.43}
+\end{equation}
+</div>
+<div class="para">From this we note that complex impedance of the circuit is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-RLS-series-complex-current.html">
+\begin{align*}
+\tilde Z \amp = \tilde Z_R + \tilde Z_L + \tilde Z_C \\
+\amp = R + i \omega L+ \dfrac{-i}{\omega C} \\
+\amp = R + i \left( \omega L- \dfrac{1}{\omega C}\right) 
+\end{align*}
+</div>
+<div class="para">This is rectangular form of complex impedance, which we can also write in polar form. Let</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-RLS-series-complex-current.html">
+\begin{equation*}
+R + i \left( \omega L- \dfrac{1}{\omega C}\right) = |Z|\,e^{i\phi_Z}.
+\end{equation*}
+</div>
+<div class="para">Then,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-RLS-series-complex-current.html">
+\begin{gather*}
+|Z| =  \sqrt{ R^2 + \left( \omega L- \dfrac{1}{\omega C}\right)^2 } \\
+\phi_Z =  \tan^{-1} \left( \dfrac{\omega L- \dfrac{1}{\omega C}}{R} \right) 
+\end{gather*}
+</div>
+<div class="para">Using polar form of complex impedance in Eq. <a href="Circuit-Analysis-Using-Complex-Numbers.html#eq-RLS-series-complex-current" class="xref" data-knowl="./knowl/xref/eq-RLS-series-complex-current.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 41.43">(41.43)</a> we get polar form of complex current.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-RLS-series-complex-current.html">
+\begin{equation*}
+\tilde I = \dfrac{\tilde V}{ \tilde Z } = \dfrac{V_0}{|Z|}\, e^{i\left(\omega t-\phi_Z\right)},
+\end{equation*}
+</div>
+<div class="para">whose real part gives the physical current in the circuit.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-RLS-series-complex-current.html">
+\begin{equation*}
+I(t) = \dfrac{V_0}{|Z|}\,\cos(\omega t - \phi_Z ).
+\end{equation*}
+</div>
+<div class="para">Wrting this as <span class="process-math">\(I(t) = I_0\,\cos(\omega t + \phi_I)\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-RLS-series-complex-current.html">
+\begin{gather*}
+I_0 = \dfrac{V_0}{ \sqrt{ R^2 + \left( \omega L- \dfrac{1}{\omega C}\right)^2 } },\\
+\phi_I = - \tan^{-1} \left( \dfrac{\omega L- \dfrac{1}{\omega C}}{R} \right). 
+\end{gather*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Circuit-Analysis-Using-Complex-Numbers.html#Series-RLC-Circuit-in-Complex-Notation">in-context</a></span>
+</body>
+</html>

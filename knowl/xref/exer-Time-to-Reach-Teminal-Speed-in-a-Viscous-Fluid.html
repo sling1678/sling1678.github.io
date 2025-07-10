@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">18.28</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Time to Reach Teminal Speed in a Viscous Fluid.</span>
+</h3>
+<div class="para">A spherical ball of radius R and density  <span class="process-math">\(\rho\)</span> is dropped from rest in a fluid of density  <span class="process-math">\(\rho_0\text{.}\)</span> (a) Derive a formula for the terminal speed. (b) Derive a formula for the time it takes to reach the terminal speed.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(\dfrac{g}{\gamma}\text{,}\)</span> (b) <span class="process-math">\(\infty\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Let us orient the <span class="process-math">\(y\)</span>-axis vertically down and write the <span class="process-math">\(y\)</span>-component of the equation of motion of the ball.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ch13-f-d-ex-11-1.html ./knowl/xref/eq-ch13-f-d-ex-11-2.html">
+\begin{equation}
+m\dfrac{d^2y}{dt^2} = mg - b \dfrac{dy}{dt}, \tag{18.34}
+\end{equation}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ch13-f-d-ex-11-1.html ./knowl/xref/eq-ch13-f-d-ex-11-2.html">
+\begin{equation*}
+b = 6\pi \eta R.
+\end{equation*}
+</div>
+<div class="para">Divide both sides of Eq. <a href="Stokes-Law.html#eq-ch13-f-d-ex-11-1" class="xref" data-knowl="./knowl/xref/eq-ch13-f-d-ex-11-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 18.34">(18.34)</a> by <span class="process-math">\(m\)</span> and write <span class="process-math">\(\gamma\)</span> for <span class="process-math">\(b/m\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ch13-f-d-ex-11-1.html ./knowl/xref/eq-ch13-f-d-ex-11-2.html">
+\begin{equation*}
+\gamma \equiv \dfrac{b}{m},
+\end{equation*}
+</div>
+<div class="para">to obtain</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ch13-f-d-ex-11-1.html ./knowl/xref/eq-ch13-f-d-ex-11-2.html">
+\begin{equation}
+\dfrac{d^2y}{dt^2} + \gamma \dfrac{dy}{dt} = g. \tag{18.35}
+\end{equation}
+</div>
+<div class="para">This equation is not that hard to solve, but I will not go through the steps of the solution.  I will give you the answer instead.  You will find that for <span class="process-math">\(y(0) = 0\)</span> and <span class="process-math">\(v_y(0) = \dfrac{dy}{dt}(0) = 0\)</span> the <span class="process-math">\(y\)</span>-coordinate of the center of the ball will turn out to be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ch13-f-d-ex-11-1.html ./knowl/xref/eq-ch13-f-d-ex-11-2.html">
+\begin{equation*}
+y(t) = \dfrac{g}{\gamma^2} \left[ e^{-\gamma t} + \gamma t - 1 \right].
+\end{equation*}
+</div>
+<div class="para">You can convince yourself that this   the solution of Eq. <a href="Stokes-Law.html#eq-ch13-f-d-ex-11-2" class="xref" data-knowl="./knowl/xref/eq-ch13-f-d-ex-11-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 18.35">(18.35)</a>   by plugging this function in that equation.  Furthermore, you can verify that that this solution satisfies the initial conditions as well.  Now, this solution should tell us when the terminal speed will be reached.</div>
+</div> <div class="para logical">
+<div class="para">We get velociy at <span class="process-math">\(t\)</span> by taking a derivative of <span class="process-math">\(y\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_y = \dfrac{dy}{dt} = \dfrac{g}{\gamma}\left( 1 -e^{-\gamma t} \right).
+\end{equation*}
+</div>
+<div class="para">Taking <span class="process-math">\(t\rightarrow 0\)</span> limit gives the final velocity to be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_\text{terminal} = \dfrac{g}{\gamma}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(b) At the terminal speed the acceleration will be zero.  Therefore we set the acceleration at the instant <span class="process-math">\(t=T\)</span> to zero and solve for <span class="process-math">\(T\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{d^2y}{dt^2} = g e^{-\gamma T} = 0,
+\end{equation*}
+</div>
+<div class="para">which says that the acceleration actually becomes zero only asymptotically.  The math answer will be <span class="process-math">\(T=\infty\text{.}\)</span>  But, if we are willing to accept that if the acceleration is below some value, say <span class="process-math">\(\epsilon g\text{,}\)</span> where we set some value of <span class="process-math">\(\epsilon\)</span> such as <span class="process-math">\(1/1000\)</span> or so, then we can get a definite value for <span class="process-math">\(T\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{-\gamma T} = \epsilon\ \ \Longrightarrow\ \ T = -\dfrac{\ln{(\epsilon)}}{\gamma}. 
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Stokes-Law.html#exer-Time-to-Reach-Teminal-Speed-in-a-Viscous-Fluid">in-context</a></span>
+</body>
+</html>

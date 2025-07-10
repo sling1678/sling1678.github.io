@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">55<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Meter Stick Sliding on a Table from Vertical to Horizontal Orientation.</span>
+</h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:60%;"><div class="para">A meter-stick is set almost vertically on a frictionless table.  When the stick is let go at rest from the nearly vertical orientation it falls to the table.  Since there is no horizontal force on the stick and it starts out at rest, the center of mass of the stick falls straight down.  Find the speed of the CM as a function of the position of the CM with respect to the table. Hint:</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:30%;"><figure class="figure figure-like"><img src="external/./images/rotation/prob-falling-stick.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.146<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">Let the <span class="process-math">\(y\)</span>-axis be the vertical direction and the <span class="process-math">\(z\)</span>-axis into-the-page, and write the <span class="process-math">\(y\)</span>-component of equation of motion for the translation of CM and the <span class="process-math">\(z\)</span>-component of the rotational motion of the stick about the CM.</div> <div class="para">Numerical: when it has fallen a vertical distance of <span class="process-math">\(10\text{ cm}\text{,}\)</span> answer is <span class="process-math">\(1.01\text{ m/s}\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use energy conservation with energy when vertical to when at an angle.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(- \left[\frac{3g l (1-\cos\theta)}{3+ \textrm{cosec}^2\theta} \right]^{1/2}\ \hat j\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">Since there is no horizontal force on the stick and since the CM of the stick does not have any initial velocity in the horizontal direction, the CM will fall vertically down. As the stick falls down, the lower part of the stick will move one way and the upper part the other way.  The rotational motion of the stick about an axis through the CM is possible due to the normal force from the table.  For concreteness we will point the positive <span class="process-math">\(y\)</span>-axis up and measure the angle of rotation with respect to the vertical as shown in <a href="Rotation-Bootcamp.html#fig-prob-falling-stick-solution" class="xref" data-knowl="./knowl/xref/fig-prob-falling-stick-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.147">Figure 9.147</a>.</div> <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./images/rotation/prob-falling-stick-solution.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.147<span class="period">.</span></span><span class="space"> </span>Figure for <a href="Rotation-Bootcamp.html#pr-Meter-Stick-Sliding-on-a-Table-from-Vertical-to-Horizontal-Orientation" class="xref" data-knowl="./knowl/xref/pr-Meter-Stick-Sliding-on-a-Table-from-Vertical-to-Horizontal-Orientation.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 9.17.55: (Calculus) Meter Stick Sliding on a Table from Vertical to Horizontal Orientation">Exercise 9.17.55</a> solution.</figcaption></figure> <div class="para logical">
+<div class="para">The relation between the <span class="process-math">\(y\)</span>-coordinate of the CM and the angle <span class="process-math">\(\theta\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = \frac{l}{2} \cos\theta.
+\end{equation*}
+</div>
+<div class="para">The time derivative <span class="process-math">\(y\)</span> will give the <span class="process-math">\(y\)</span>-component velocity and the time derivative of <span class="process-math">\(\theta\)</span> will give the <span class="process-math">\(z\)</span>-component of the angular velocity.</div>
+<div class="displaymath process-math">
+\begin{equation}
+\frac{dy}{dt} = -\frac{l}{2} \sin\theta\frac{d\theta}{dt}. \tag{9.124}
+\end{equation}
+</div>
+<div class="para">Here the choice of the angle gives <span class="process-math">\(d\theta/dt\)</span> positive since <span class="process-math">\(\theta\)</span> will increase with time.  As the <span class="process-math">\(y\)</span>-coordinate of the CM is decreasing with time we expect the <span class="process-math">\(y\)</span>-component of the velocity to be negative, i.e. the velocity pointed towards the negative <span class="process-math">\(y\)</span>-axis.</div>
+</div> <div class="para logical">
+<div class="para">Now, we use the energy conservation between the initial time <span class="process-math">\(t=0\)</span> and at an arbitrary time <span class="process-math">\(t=t\text{.}\)</span>  The reference of the potential energy will be take to be zero when the CM of the stick is on the table.  The CM is initially at <span class="process-math">\(y=l/2\)</span> and the stick is at rest.  The CM at an arbitrary time is at <span class="process-math">\(y=y\text{,}\)</span> and the CM is translating with speed <span class="process-math">\(|dy/dt|\)</span> and the stick is rotating about an axis through the CM parallel to the <span class="process-math">\(z\)</span>-axis in the figure with the angular speed <span class="process-math">\(|d\theta/dt|\text{.}\)</span>  Therefore,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ch9-pr-9-2.html ./knowl/xref/eq-ch9-pr-9-4.html">
+\begin{equation*}
+\frac{1}{2} m \left( \frac{dy}{dt}\right)^2 + \frac{1}{2} I_0 \left( \frac{d\theta}{dt}\right)^2 + m g y = m g \frac{l}{2},
+\end{equation*}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ch9-pr-9-2.html ./knowl/xref/eq-ch9-pr-9-4.html">
+\begin{equation*}
+I_0 = \frac{1}{12} m l^2.
+\end{equation*}
+</div>
+<div class="para">Now, using Eq. <a href="Rotation-Bootcamp.html#eq-ch9-pr-9-2" class="xref" data-knowl="./knowl/xref/eq-ch9-pr-9-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.124">(9.124)</a> we can write the speeds in terms of <span class="process-math">\(|dy/dt|\)</span> and solve for <span class="process-math">\(|dy/dt|\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ch9-pr-9-2.html ./knowl/xref/eq-ch9-pr-9-4.html">
+\begin{equation}
+\left( \frac{dy}{dt}\right)^2 = \frac{3g l (1-\cos\theta)}{3+ \textrm{cosec}^2\theta}.\tag{9.125}
+\end{equation}
+</div>
+<div class="para">Therefore, the velocity of the CM is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ch9-pr-9-2.html ./knowl/xref/eq-ch9-pr-9-4.html">
+\begin{equation*}
+\vec v = \frac{dy}{dt} \hat j = - \left[\frac{3g l (1-\cos\theta)}{3+ \textrm{cosec}^2\theta} \right]^{1/2}\ \hat j,
+\end{equation*}
+</div>
+<div class="para">where I have used the negative root in Eq. <a href="Rotation-Bootcamp.html#eq-ch9-pr-9-4" class="xref" data-knowl="./knowl/xref/eq-ch9-pr-9-4.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 9.125">(9.125)</a> to agree with the motion down as shown in the figure.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Rotation-Bootcamp.html#pr-Meter-Stick-Sliding-on-a-Table-from-Vertical-to-Horizontal-Orientation">in-context</a></span>
+</body>
+</html>

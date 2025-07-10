@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Entropy of an Irreversible Expansion of a Diatomic Ideal Gas.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:60%;"><div class="para">Three moles of the Nitrogen gas at 400 K in a container is suddenly expanded to twice its volume.  The process is so rapid that no heat is exchanged with the environment but the temperature of the final state upon reaching equilibrium is found to be 300 K.  The gas is then compressed isothermally at 300 K back to the initial volume.</div></div>
+<div class="sbspanel top" style="width:40%;"><img src="external/./images/entropy/diatomic-ideal-gas-sudden-expansion-statement.png" class="contained"></div>
+</div></div> <div class="para">Find the total change in entropy of the gas.</div> <div class="para">Data:  Treat the Nitrogen gas as a diatomic ideal gas with the molar specific heat <span class="process-math">\(C_V = \frac{5}{2} R\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Replace the irreversible sudden expansion process by a constant pressure and a constant volume process.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(-17.9\ \text{J/K}\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">We redraw the processes in the following diagrma, where the origial irreversible process is now shown as 1-2, which will be replaced by a reversible process 1-4-2 for entropy calculations. For simplicity, I chosethe  process 1-4-2 since it consists of constant pressure and constant volume steps for which entropy changes are easily computed.</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./images/entropy/diatomic-ideal-gas-sudden-expansion.png" class="contained"></div> <div class="para logical">
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta S_{12} = \Delta S_{14}  + \Delta S_{42}. 
+\end{equation*}
+</div>
+<div class="para">Since 1-4 process involved changing volume the heat will have both the change in the internal energy and the work.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\Delta S_{14}  \amp   = \int \frac{dQ}{T} =  \int \frac{dU}{T} +  \int \frac{pdV}{T}\\
+\amp   = \int \frac{nC_V dT}{T} +  \int \frac{n RdV}{V} = \int \frac{nC_V dV}{V} +  \int \frac{n RdV}{V}\\
+\amp   = n(C_V + R) \ln\left(V_2/V_1 \right). 
+\end{align*}
+</div>
+<div class="para">The change in 4-2 process will be</div>
+<div class="displaymath process-math">
+\begin{align*}
+\Delta S_{42} \amp   = \int \frac{dQ}{T} =  \int \frac{dU}{T} = \int \frac{nC_V dT}{T}  = \int \frac{nC_V dp}{p} \\
+\amp   = n C_V   \ln\left(p_2/p_4 \right) = n C_V \ln\left(p_2/p_1 \right).
+\end{align*}
+</div>
+<div class="para">Therefore, the change of entropy in the irreversible process 1-2 will be</div>
+<div class="displaymath process-math">
+\begin{align*}
+\Delta S_{12} \amp   = \Delta S_{14} + \Delta S_{42} \\
+\amp   =  n(C_V + R) \ln\left(V_2/V_1 \right) +  n C_V  \ln\left(p_2/p_1 \right)\\
+\amp   = n C_V\ln\left(p_2V_2/p_1V_1 \right) + n R \ln\left(V_2/V_1 \right)\\
+\amp   = n C_V\ln\left(T_2/T_1 \right) + n R \ln\left(V_2/V_1 \right)
+\end{align*}
+</div>
+<div class="para">The process 2-3 is a constant temperature process, for which we will have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta S_{23} = nR\ln\left(V_3/V_2\right) = nR \ln\left(V_1/V_2\right).
+\end{equation*}
+</div>
+<div class="para">The net for 1-2-3 process would be</div>
+<div class="displaymath process-math">
+\begin{align*}
+\Delta S \amp   = \Delta S_{12} + \Delta S_{23}\\
+\amp   = n C_V\ln\left(T_2/T_1 \right)
+\end{align*}
+</div>
+<div class="para">Putting in the numerical values for the problem we obtain</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta S =3\ \text{mol}\times \frac{5}{2}\times 8.31\  \frac{\text{J}}{\text{mol. K}} \ln\left(\frac{300\ \text{K}}{400\ \text{K}}\right) = -17.9\ \text{J/K}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Entropy-Change-in-Irreversible-Processes.html#ex-Entropy-of-an-Irreversible-Expansion-of-a-Diatomic-Ideal-Gas">in-context</a></span>
+</body>
+</html>

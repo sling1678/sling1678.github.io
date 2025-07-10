@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">41.30</span><span class="period">.</span><span class="space"> </span><span class="title">Impedance, Current, and Voltages in an RLC circuit.</span>
+</h3>
+<div class="para">A <span class="process-math">\(20\text{-}\Omega\)</span>  resistor,<span class="process-math">\(50\text{-}\mu\text{F}\text{,}\)</span> and <span class="process-math">\(30\text{-mH}\)</span> inductor are connected in series with an AC source of amplitude <span class="process-math">\(10\text{ V}\)</span> and frequency <span class="process-math">\(125\text{ Hz}\text{.}\)</span>
+</div> <div class="para logical"><ol class="lower-alpha" id="ex-Impedance-Current-and-Voltages-in-a-Numerical-RLC-circuit-2-2-1">
+<li><div class="para">What is the (amplitude of) impedance of the circuit?</div></li>
+<li><div class="para">What is the amplitude of the current in the circuit?</div></li>
+<li><div class="para">What is the phase constant of the current? Is it leading or lagging the source voltage?</div></li>
+<li><div class="para">Write voltage drops across resistor, inductor and capacitor, and the source voltage as a function of time.</div></li>
+</ol></div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(20\ \Omega\text{,}\)</span> (b) <span class="process-math">\(0.5\text{ A}\text{,}\)</span> (c) <span class="process-math">\(5.4^{\circ}\text{,}\)</span> (d) With <span class="process-math">\(V_{\text{Source}} = 10.0\ \text{V} \cos(250\pi t)\text{,}\)</span> <span class="process-math">\(V_R = 9.96\ \text{V} \cos(250\pi t + 5.4^{\circ})\text{,}\)</span> <span class="process-math">\(V_C = 12.7\ \text{V} \cos(250\pi t + 5.4^{\circ}-90^{\circ})\text{,}\)</span> and <span class="process-math">\(V_L = 11.8\ \text{V} \cos(250\pi t + 5.4^{\circ}+90^{\circ})\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para"><span class="process-math">\(|Z| = \sqrt{R^2 + |X_L - X_C|^2} = 20.1\:\Omega
+\text{.}\)</span></div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para"><span class="process-math">\(I_0 = \dfrac{V_0}{|Z|} \approx 0.5\:\text{A}\text{.}\)</span></div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">We have <span class="process-math">\(X_L = 2\pi f L = 23.60\:\Omega\text{,}\)</span> and <span class="process-math">\(X_C = 1/2\pi f C = 25.5\:\Omega\text{.}\)</span> Since <span class="process-math">\(X_C \gt X_L\)</span> the current will lead the EMF.  The angle of lead will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi = \tan^{-1}\left(\dfrac{X_C - X_L}{R} \right) = 5.4^{\circ} = 0.095\:\text{rad}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">We found above the common current to be <span class="process-math">\(I = (0.5\:\text{A})\:\cos(2\pi\times 125\:  t + 0.095)\text{.}\)</span>  Therefore, the voltage drops across various elements as a function of time will be</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  V_R(t) = (0.5\:\text{A}\times R)\:\cos(2\pi\times 125\:  t + 0.095)\\
+\amp  V_L(t) = (0.5\:\text{A}\times X_L)\:\cos\left(2\pi\times 125\:  t + 0.095+\frac{\pi}{2}\right)\\
+\amp  V_C(t) = (0.5\:\text{A}\times X_C)\:\cos\left(2\pi\times 125\:  t + 0.095-\frac{\pi}{2}\right)\\
+\amp  V(t) = (0.5\:\text{A}\times |Z|)\:\cos\left(2\pi\times 125\:  t \right)
+\end{align*}
+</div>
+<div class="para">Putting in the numerical values for <span class="process-math">\(R\text{,}\)</span> <span class="process-math">\(X_L\text{,}\)</span> <span class="process-math">\(X_C\)</span> and <span class="process-math">\(|Z|\)</span> gives</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  V_R(t) = (10\:\text{V})\:\cos(250\pi \:  t + 0.095)\\
+\amp  V_L(t) = (11.8\:\text{V})\:\cos\left(250\pi \:  t + 0.095+\frac{\pi}{2}\right)\\
+\amp  V_C(t) = (12.75\:\text{V})\:\cos\left(250\pi \:  t + 0.095-\frac{\pi}{2}\right)\\
+\amp  V(t) = (10\:\text{V})\:\cos\left(250\pi \:  t \right)
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="RLC-Circuits.html#ex-Impedance-Current-and-Voltages-in-a-Numerical-RLC-circuit">in-context</a></span>
+</body>
+</html>

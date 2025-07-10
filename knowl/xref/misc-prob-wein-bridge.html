@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="problem example-like"><h4 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">44.64</span><span class="period">.</span><span class="space"> </span><span class="title">Wien Bridge Circuit.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">RC oscillators commonly use a Wein bridge circuit shown in <a href="AC-Circuits-Bootcamp.html#fig-prob-wein-bridge" class="xref" data-knowl="./knowl/xref/fig-prob-wein-bridge.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 44.65">Figure 44.65</a>.  A galvanometer G is connected between the points marked A and B to detect any current flow between A and B.  The Wein bridge circuit is said to be balanced when no current flows between A and B.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/ac-circuits/prob-wein-bridge.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">44.65<span class="period">.</span></span><span class="space"> </span>For <a href="AC-Circuits-Bootcamp.html#misc-prob-wein-bridge" class="xref" data-knowl="./knowl/xref/misc-prob-wein-bridge.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 44.64: Wien Bridge Circuit">Problem 44.64</a>.</figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="para">Prove that the following relations must hold true when the circuit is balanced.</div>
+<div class="displaymath process-math">
+\begin{align}
+\amp  \frac{R_1}{R_2} + \frac{C_1}{C_2} = \frac{R_3}{R_4},\tag{44.55}\\
+\amp  \omega = \frac{1}{\sqrt{R_1 R_2 C_1 C_2}}.\tag{44.56}
+\end{align}
+</div>
+</div>
+<div class="hint solution-like">
+<h4 class="heading">
+<span class="type">Hint</span><span class="period">.</span>
+</h4>
+<div class="para">Replace passive elements by their complex impedances.</div>
+</div>
+<div class="answer solution-like">
+<h4 class="heading">
+<span class="type">Answer</span><span class="period">.</span>
+</h4>
+<div class="para">already in statement.</div>
+</div>
+<div class="solution solution-like">
+<h4 class="heading">
+<span class="type">Solution</span><span class="period">.</span>
+</h4>
+<div class="para logical">
+<div class="para">Let us replace the resistors and capacitors by their complex impedances.  Suppose current <span class="process-math">\(I_1\)</span> flows in the upper branch and <span class="process-math">\(I_2\)</span> in the lower branch - note that the current through G is zero at the balance. Now, we write the Kirchhoff’s loop rules for the loop on the left of the galvanometer G  and the loop on the right of G for the condition that there be no current through G.  This</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  I_1 \left( R_1 - \dfrac{i}{\omega C_1} \right) = I_2 R_2,\\
+\amp  I_1 \left[\dfrac{R_2\times \frac{-i}{\omega C_2}}{R_2 - \frac{i}{\omega C_2}} \right] = I_2 R_2. 
+\end{align*}
+</div>
+<div class="para">Dividing out <span class="process-math">\(I_1\)</span> and <span class="process-math">\(I_2\)</span> gives the following complex equation.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{(\omega R_1 C_1 -i)(\omega R_2 C_2 - i)}{-i\omega C_1 R_2} = \dfrac{R_3}{R_4}.
+\end{equation*}
+</div>
+<div class="para">Separating out the real and imaginary parts of this equation gives</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  \omega^2 R_1 C_1 R_2 C_2 -1 = 0,\\
+\amp  \omega(R_1 C_1 + R_2 C_2) = \dfrac{R_3}{R_4}\:R_2 \omega C_2.
+\end{align*}
+</div>
+<div class="para">These equations yield the results we seek.</div>
+</div>
+</div></article><span class="incontext"><a class="internal" href="AC-Circuits-Bootcamp.html#misc-prob-wein-bridge">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">39.22</span><span class="period">.</span><span class="space"> </span><span class="title">Power Dissipation in an <span class="process-math">\(RL\)</span> Circuit.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para">A motor of self-inductance  <span class="process-math">\(\mathcal{L} = 10\,\text{H}\)</span> shown as coil in <a href="Inductance-in-Circuits.html#fig-RL-circuits-on-and-off-parts" class="xref" data-knowl="./knowl/xref/fig-RL-circuits-on-and-off-parts.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 39.23">Figure 39.23</a> is connected in a circuit with a resistor of resistance <span class="process-math">\(R_1=200.0\,\Omega\text{,}\)</span> a dissipative resitor <span class="process-math">\(R_2=1000.0\,\Omega\)</span> and a battery of voltage <span class="process-math">\(V=9.0\,\text{V}\)</span> using a switch. In the ON position, switch connects <span class="process-math">\(R_1\)</span> and battery to the motor and in the OFF position, only <span class="process-math">\(R_2\)</span> is connected to the motor.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/inductance/RL-circuits-on-and-off-parts.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">39.23<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">(a) The switch is in the ON position for a long time. (i) What is the time constant of this circuit? (ii) How much current flows at the peak? (iii) How much energy is stored in this circuit at the peak current? (b)  The switch is now thrown into the OFF position. (i) What is the time constant of this circuit? (ii) How long will it take for half of the energy to be dissipated in this circuit?</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(i) The time constant is easily worked out to be <span class="process-math">\(\mathcal{L}/R_1\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\tau_1 = \frac{\mathcal{L}}{R_1} = \frac{10}{200} = \frac{1}{20}\,\text{sec}.
+\end{equation*}
+</div>
+<div class="para">(ii) The peak current is when all voltage of the battery falls across the resistor <span class="process-math">\(R_1\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_\text{max} = \frac{V}{R_1} = \frac{9}{200}\,\text{A}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(i) Now, the active circuit has only <span class="process-math">\(\mathcal{L}\)</span> and <span class="process-math">\(R_2\text{.}\)</span> Hence, the time constant is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\tau_2 = \frac{\mathcal{L}}{R_2} = \frac{10}{1000} = \frac{1}{100}\,\text{sec}.
+\end{equation*}
+</div>
+<div class="para">(ii) The time constant for power dissipation is twice the time constant.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U(t) = U_0\, e^{-t/(\tau_2/2)}.
+\end{equation*}
+</div>
+<div class="para">We need <span class="process-math">\(t\)</span> when <span class="process-math">\(U(t)=\frac{1}{2}\,U_0\text{.}\)</span> Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{2} = e^{-t/(\tau_2/2)}.
+\end{equation*}
+</div>
+<div class="para">Taking natural log of both sides we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t = \frac{\tau_2}{2}\,\ln\,2 = 3.47\,\text{msec}
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Inductance-in-Circuits.html#example-Power-Dissipation-in-an-RL-Circuit">in-context</a></span>
+</body>
+</html>

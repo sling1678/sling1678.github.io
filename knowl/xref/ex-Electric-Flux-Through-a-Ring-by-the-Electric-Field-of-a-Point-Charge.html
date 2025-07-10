@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">30.10</span><span class="period">.</span><span class="space"> </span><span class="title">Electric Flux Through a Disk Above a Point Charge.</span>
+</h3>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">Find the electric field of the point charge through a circular area of radius <span class="process-math">\(\sqrt{R^2 - h^2}\)</span> a distance <span class="process-math">\(h\)</span> away from the charge and oriented such that surface of the area is perpendicular to the line joining the charge and the center of the area.</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:30%;"><figure class="figure figure-like"><img src="external/./images/gausss-law/ex-E-Flux-Through-a-Disk-Above-a-Point-Charge.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">30.11<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+</div></div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\dfrac{q}{2 \epsilon_0} \left( 1 - \dfrac{h}{R}\right).\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">In <a href="Flux-of-Electric-Field.html#fig-ex-flux-through-a-ring-solution" class="xref" data-knowl="./knowl/xref/fig-ex-flux-through-a-ring-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 30.12">Figure 30.12</a> we notice that all the field lines that pass through area <span class="process-math">\(A\)</span> of the disk also pass through the area of the spherical cap <span class="process-math">\(A_\text{cap}\text{.}\)</span> So, the flux through <span class="process-math">\(A\)</span> will equal flux through <span class="process-math">\(A_\text{cap}\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-ex-flux-through-a-ring-solution.html">
+\begin{equation*}
+\Phi_{\text{through }A} = \Phi_{\text{through }A_\text{cap}}.
+\end{equation*}
+</div>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./images/gausss-law/ex-flux-through-a-ring-solution.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">30.12<span class="period">.</span></span><span class="space"> </span>Flux through <span class="process-math">\(A\)</span> is same as the flux through <span class="process-math">\(A_\text{cap}\)</span> since every field line that passes through <span class="process-math">\(A\)</span> must also pass through <span class="process-math">\(A_\text{cap}\text{.}\)</span> The advantages of using <span class="process-math">\(A_\text{cap}\)</span> explained below.</figcaption></figure> <div class="para logical">
+<div class="para">One advantage of using the cap to find the flux is that vector area elements <span class="process-math">\(d\vec{A}_\text{cap}\)</span> of the cap and <span class="process-math">\(\vec E\)</span> are both radial at all points of the cap.  This will make the dot product for flux easy. One other advantage is the electric field has the same magnitude at all points of the cap. Therefore, flux will simply be this magnitude times area of the cap, as was the case for the spherical surface around point charge in <a href="Flux-of-Electric-Field.html#ex-Electric-Flux-of-a-Radial-Electric-Field" class="xref" data-knowl="./knowl/xref/ex-Electric-Flux-of-a-Radial-Electric-Field.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 30.9: (Calculus) Electric Flux of a Point Charge Through a Spherical Surface">Example 30.9</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-Electric-Flux-of-a-Radial-Electric-Field.html ./knowl/xref/fig-ex-flux-through-a-ring-solution.html">
+\begin{equation*}
+\Phi_E = E_\text{at cap} \times A_\text{cap},
+\end{equation*}
+</div>
+<div class="para">with</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-Electric-Flux-of-a-Radial-Electric-Field.html ./knowl/xref/fig-ex-flux-through-a-ring-solution.html">
+\begin{equation*}
+E_\text{at cap} = \dfrac{1}{4\pi \epsilon_0}\,\dfrac{q}{R^2}.
+\end{equation*}
+</div>
+<div class="para">This reduces the problem to the problem of computing the area of the cap. This will be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-Electric-Flux-of-a-Radial-Electric-Field.html ./knowl/xref/fig-ex-flux-through-a-ring-solution.html">
+\begin{equation*}
+A_\text{cap} = R^2\times \Omega,
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\Omega\)</span> is the solid angle subtended by the cap. Placing the ring perpendicular to the <span class="process-math">\(z\)</span> axis as in <a href="Flux-of-Electric-Field.html#fig-ex-flux-through-a-ring-solution" class="xref" data-knowl="./knowl/xref/fig-ex-flux-through-a-ring-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 30.12">Figure 30.12</a> helps with this calculation. The cap has maximum angle from the <span class="process-math">\(z\)</span> axis to be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-Electric-Flux-of-a-Radial-Electric-Field.html ./knowl/xref/fig-ex-flux-through-a-ring-solution.html">
+\begin{equation*}
+\theta_\text{max} = \cos^{-1}\left(\dfrac{h}{R} \right).
+\end{equation*}
+</div>
+<div class="para">If you do not have a Calculus background, you can look up a formula for the solid angle of a cap given this <span class="process-math">\(\theta_\text{max}\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-Electric-Flux-of-a-Radial-Electric-Field.html ./knowl/xref/fig-ex-flux-through-a-ring-solution.html">
+\begin{equation*}
+\Omega = 2\pi\left( 1 - \dfrac{h}{R}\right).
+\end{equation*}
+</div>
+<div class="para">You can see that the angle of the full cap will be when <span class="process-math">\(h=-R\text{.}\)</span> In that case, you get <span class="process-math">\(4\pi\text{.}\)</span> However, if you have Calculus background, you can prove this result by integrating over the two spherical angles.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-Electric-Flux-of-a-Radial-Electric-Field.html ./knowl/xref/fig-ex-flux-through-a-ring-solution.html">
+\begin{align*}
+\Omega \amp = \int_0^{2\pi} d\phi \int_0^{\theta_\text{max}}\,\sin\,\theta\, d\theta,\\
+\amp = 2\pi \left( 1 - \dfrac{h}{R}\right).
+\end{align*}
+</div>
+<div class="para">In any case, using the solid angle we get the area of the spherical cap, and get the flux.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ex-Electric-Flux-of-a-Radial-Electric-Field.html ./knowl/xref/fig-ex-flux-through-a-ring-solution.html">
+\begin{align*}
+\Phi_E \amp = \dfrac{1}{4\pi \epsilon_0}\,\dfrac{q}{R^2} \times R^2\times 2\pi \left( 1 - \dfrac{h}{R}\right), \\
+\amp = \dfrac{q}{2 \epsilon_0} \left( 1 - \dfrac{h}{R}\right).
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Flux-of-Electric-Field.html#ex-Electric-Flux-Through-a-Ring-by-the-Electric-Field-of-a-Point-Charge">in-context</a></span>
+</body>
+</html>

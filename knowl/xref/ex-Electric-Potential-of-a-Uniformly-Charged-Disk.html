@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">31.24</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Electric Potential of a Uniformly Charged Disk.</span>
+</h3> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">(a) Find the electric potential of a uniformly charged nonconducting disk of radius <span class="process-math">\(R\)</span> with charge density  <span class="process-math">\(\sigma \)</span> (<span class="process-math">\(\text{C/m}^2\)</span>) at a point on the axis  as shown in <a href="Electric-Potential-of-Charge-Distributions.html#fig-ep-of-charges-on-a-disk" class="xref" data-knowl="./knowl/xref/fig-ep-of-charges-on-a-disk.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 31.25">Figure 31.25</a>. For concrteteness, let the field point on the axis be at a height <span class="process-math">\(h\)</span> from the center of the disk.</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:35%;"><figure class="figure figure-like"><img src="external/./images/electric-potential/ep-of-charges-on-a-disk.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">31.25<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+</div></div> <div class="para">(b) Take <span class="process-math">\(h/R\rightarrow 0\)</span> on your answer to show that very near the disk, potential varies as linearly with <span class="process-math">\(h\text{.}\)</span> You should get <span class="process-math">\((\sigma/2\epsilon_0)(R-h)\)</span> in the leading order in <span class="process-math">\(h/R\text{.}\)</span>
+</div> <div class="para">(c) Take <span class="process-math">\(R/h\rightarrow 0\)</span> on your answer to show that very far away from the disk, potential at height <span class="process-math">\(h\)</span> is that of a point charge equal to total charge on the disk.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(\frac{\sigma }{2\epsilon_0}\left( \sqrt{h^2 + R^2} -h\right)\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para logical">
+<div class="para">(a) We will discretize the disk in the shape of rings of thickness <span class="process-math">\(dr\text{.}\)</span> One such ring of radius <span class="process-math">\(r\)</span> is shown in <a href="Electric-Potential-of-Charge-Distributions.html#fig-ep-of-charges-on-a-disk-solution" class="xref" data-knowl="./knowl/xref/fig-ep-of-charges-on-a-disk-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 31.26">Figure 31.26</a>. The potential from charges in this infintesimal ring can easily be seen to be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-ep-of-charges-on-a-disk-solution.html">
+\begin{equation*}
+d\phi = \frac{1}{4\pi\epsilon_0}\,\frac{dq}{\sqrt{h^2 + r^2}},
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(dq = \sigma \times 2\pi r dr\text{.}\)</span>
+</div>
+</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:30%;"><figure class="figure figure-like"><img src="external/./images/electric-potential/ep-of-charges-on-a-disk-solution.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">31.26<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+</div></div> <div class="para logical">
+<div class="para">Integrating from <span class="process-math">\(r=0\)</span> to <span class="process-math">\(r=R\)</span> will give us the answer.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\phi  \amp = \frac{1}{4\pi\epsilon_0}\int_0^R  \frac{2\pi\sigma r dr}{\sqrt{h^2 + r^2}}\\
+\amp = \frac{\sigma }{2\epsilon_0}\int_0^R  \frac{r dr}{\sqrt{h^2 + r^2}}\\
+\amp = \frac{\sigma }{2\epsilon_0}\left( \sqrt{h^2 + R^2} -h\right) 
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(b) To take <span class="process-math">\(h/R\rightarrow 0\)</span> limit, let us factor out <span class="process-math">\(R\)</span> to get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\sigma R}{2\epsilon_0}\left( \sqrt{ 1 +  (h/R)^2} -h/R\right).
+\end{equation*}
+</div>
+<div class="para">Let us denote  <span class="process-math">\(h/R = x\)</span> and then expand <span class="process-math">\(\sqrt{1+x^2}\approx 1 + \frac{1}{2}x^2\)</span> to get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\sigma R}{2\epsilon_0}\left(  1 +  \frac{1}{2}x^2  - x \right).
+\end{equation*}
+</div>
+<div class="para">Now, noting that when <span class="process-math">\(x\)</span> gets small <span class="process-math">\(x \gg x^2\text{.}\)</span> therefore, we drop the quadratic term, but keep the linear term -- since dropping that will get rid of information about <span class="process-math">\(h\)</span>-dependence altogether. Restoring <span class="process-math">\(h/R\text{,}\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\sigma}{2\epsilon_0}\left(  R - h \right).
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">(c)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(c) Here we want to take <span class="process-math">\(R/h\rightarrow 0\text{.}\)</span> Therefore, we factor out <span class="process-math">\(h\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\sigma h}{2\epsilon_0}\left( \sqrt{ 1 +  (R/h)^2} -1\right).
+\end{equation*}
+</div>
+<div class="para">Let <span class="process-math">\(x=R/h\)</span> and expand the square root. Keep upto the leading terms that has <span class="process-math">\(h\)</span> in it, we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\sigma h}{2\epsilon_0}\frac{1}{2} \frac{R^2}{h^2}.
+\end{equation*}
+</div>
+<div class="para">Noting that total charge is <span class="process-math">\(q_\text{tot}=2\pi R^2\sigma\text{,}\)</span> this is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{4\pi\epsilon_0}\frac{q_\text{tot}}{h}.
+\end{equation*}
+</div>
+<div class="para">That is, far away from the disk, the potential is that of a point charge eaual to total charge placed at the center.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Electric-Potential-of-Charge-Distributions.html#ex-Electric-Potential-of-a-Uniformly-Charged-Disk">in-context</a></span>
+</body>
+</html>

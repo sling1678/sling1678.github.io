@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Electric Field of a Non-Uniform Charge Distribution of Spherical Symmetry.</span>
+</h4>
+<div class="para logical">
+<div class="para">A 3D printer is used to deposit charges on a nonconducting sphere. The sphere grows from a radius <span class="process-math">\(R_1\)</span> to a radius <span class="process-math">\(R_2\)</span> such that the charge density varies as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rho = \rho_0 \frac{a}{r}, \ \ R_1\le r\le R_2,
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\rho_0\)</span> and <span class="process-math">\(a\)</span> are some constants. Find electric field at (a) a point outside the sphere, and (b) a point inside the spherical shell grown by the printer.</div>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) and (b):  You will need to integrate to get enclosed charge.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(\frac{\rho_0 a}{2\epsilon_0}  \frac{R_2^2 - R_1^2}{r_\text{out}^2} \text{,}\)</span> (b) <span class="process-math">\(\frac{\rho_0}{2\epsilon_0}\left( 1 - \frac{R_1^2}{r_\text{in}^2} \right) \text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(a) Because of spherical symmetry, the direction of the field will be radial. Since field point P is outside the distribution, Gaussian surface encloses all charges and from Gauss’s law we get the following for magnitude <span class="process-math">\(E_\text{out}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_\text{out} \times 4\pi r_\text{out}^2 = \frac{q_\text{total}}{\epsilon_0}.
+\end{equation*}
+</div>
+<div class="para">To obtain the total charge we just need the <span class="process-math">\(r\)</span> integral from <span class="process-math">\(r=R_1\)</span> to <span class="process-math">\(r=R_2\text{,}\)</span> the radius of the distribution.</div>
+<div class="displaymath process-math">
+\begin{align*}
+q_\text{total} \amp = \int_{R_1}^{R_2} \rho\ 4\pi r^2 dr \\
+\amp = 4\pi \rho_0 a \int_{R_1}^{R_2} r dr\\
+\amp = 2\pi \rho_0 a \left( R_2^2 - R_1^2\right) . 
+\end{align*}
+</div>
+<div class="para">Therefore, electric field will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_\text{out} = \frac{\rho_0 a}{2\epsilon_0}  \frac{R_2^2 - R_1^2}{r_\text{out}^2}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(b) For a point inside the sphere, Gaussian surface will not include all charges, just the charges from <span class="process-math">\(r=R_1\)</span> upto the Gaussian surface at <span class="process-math">\(r=r_\text{in}\text{.}\)</span> Let’s denote <span class="process-math">\(r=r_\text{in}\)</span> for the radius of this surface. We get,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_\text{in} \times 4\pi r_\text{in}^2 = \frac{q_\text{enc}}{\epsilon_0},
+\end{equation*}
+</div>
+<div class="para">with <span class="process-math">\(q_\text{enc}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+q_\text{enc}  = \int_{R_1}^{r_\text{in}} \rho\ 4\pi r^2 dr.
+\end{equation*}
+</div>
+<div class="para">This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+q_\text{enc}  = 2\pi\rho_0 a \left( r_\text{in}^2 - R_1^2 \right).
+\end{equation*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_\text{in} = \frac{\rho_0}{2\epsilon_0}\left( 1 - \frac{R_1^2}{r_\text{in}^2} \right).
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Electric-Field-for-Spherical-Symmetry.html#ex-Electric-Field-of-a-Non-Uniform-Charge-Distribution-of-Spherical-Symmetry">in-context</a></span>
+</body>
+</html>

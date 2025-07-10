@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Practice Fermat Principle 2.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para">Using Fermat’s principle, find the point where a ray from A in air must be incident on the interface Y so that the refracted ray passes through point B inside the glass as shown in <a href="fermats-principle.html#fig-fermat-exer-1" class="xref" data-knowl="./knowl/xref/fig-fermat-exer-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 43.41">Figure 43.41</a>. (<span class="process-math">\(n_\text{glass}=1.5\)</span>)</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/fundamentals-of-optics/fermat-exer-1.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">43.41<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para"></div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(y = 1.37\, \text{cm}\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">We need to find the location of the point P in the figure such that the time A-P-B is a minimum. Let <span class="process-math">\(y\)</span> be the coordinate of point P with respect to the origin at the level of A.  Then, the time <span class="process-math">\(t_{\textrm{APB}}\)</span> will be a function of <span class="process-math">\(y\)</span> given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t_{\textrm{APB}} = t_{\textrm{AP}} + t_{\textrm{PB}}.
+\end{equation*}
+</div>
+<div class="para">Let <span class="process-math">\(v\)</span> be the speed of light in vacuum and <span class="process-math">\(n\)</span> the refractive index of glass.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t_{\textrm{APB}} = \dfrac{\sqrt{y^2 + a^2}}{v} + \dfrac{\sqrt{b^2 + (c-y)^2}}{v/n}.
+\end{equation*}
+</div>
+<div class="para">Now, we set the derivative of this <span class="process-math">\(t\)</span> with respect to <span class="process-math">\(y\)</span> to zero.  This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{dt_{\textrm{APB}}}{dy} = \dfrac{y}{v\sqrt{y^2 + a^2}} -\dfrac{n(c-y)}{v\sqrt{b^2 + (c-y)^2}} = 0.
+\end{equation*}
+</div>
+<div class="para">Solving this for <span class="process-math">\(y\)</span> is not easy.  After some algebra you will get a polynomial equation in y to the power 4.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(n^2-1)y^4 - 2c(n^2-1)y^3 +[(n^2-1)c^2 + n^2 a^2 - b^2]y^2 - 2n^2ca^2 y + n^2c^2 a^2 = 0.
+\end{equation*}
+</div>
+<div class="para">Using <span class="process-math">\(a= 2\text{,}\)</span> <span class="process-math">\(b = 4\text{,}\)</span> <span class="process-math">\(c = 3\text{,}\)</span> and <span class="process-math">\(n= 1.5\text{,}\)</span> we can solve this equation numerically to find <span class="process-math">\(y = -0.83 \pm 2.6 i\text{,}\)</span> <span class="process-math">\(1.37\text{,}\)</span> <span class="process-math">\(6.29\text{,}\)</span> where <span class="process-math">\(i = \sqrt{-1}\text{.}\)</span> The complex solutions are not the solution of the physical problem here and from the geometry in the problem, the answer will be <span class="process-math">\(y = 1.37\, \text{cm}\text{.}\)</span>
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="fermats-principle.html#exer-Practice-Fermat-Principle-2">in-context</a></span>
+</body>
+</html>

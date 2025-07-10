@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Different Time Constants in Different Branches of an RL-Circuit.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">The switch in the given circuit is closed at <span class="process-math">\(t=0\text{.}\)</span>  Find currents in the circuit as functions of time and describe how different currents in the circuit develop with time.</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/inductance/RL-circuit-3.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">39.32<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Set up KCL and Farady equations in the circuit. Solve the resuting differential equation.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(I_1 = 2\,\text{ A}\text{,}\)</span> <span class="process-math">\(I_2 = 2\, \text{A}\, \left( 1 - e^{-t/4}\right)\text{,}\)</span> <span class="process-math">\(I = 2\,\text{A} + 2\,\text{A}\, \left( 1 - e^{-t/4}\right)\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">We will apply Kirchhoff’s Current Law (KCL) to the nodes and Faraday’s flux rule to the loops since we have time-changing current and there is an inductor in the circuit.  If a loop does not contain an inductor then we will ignore the induced EMF due to the circuit since the induced EMF would be negligible for those circuits.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">We start with labelling nodes of the circuit, which are a, b, and c. We have added one more label, d, to help describe the loop on the left side. We then assign currents in the branches beginning with the current in the source, which we take from negative to the positive.</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><img src="external/./images/inductance/RL-circuit-3a.png" class="contained"></div>
+</div></div> <div class="para">We will need the directions of the electric field  in various elements of the circuit.  As shown in the figure, electric field is in the direction of the current in the resistors and opposite to the direction of current in the battery.  We assume that the solenoid is ideal in the sense that it has a zero resistance, or, the resistance of the solenoid is lumped with the other resistance in its branch.</div> <div class="para logical">
+<div class="para">Now, we can write relations among currents as follows.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-two-time-const-2.html">
+\begin{align}
+\amp \text{Currents at node a: }\ \ I = I_1 + I_2 \tag{39.15}\\
+\amp \text{Loop a-c-d-a: }\ \ +6I_1 - 12 = 0 \tag{39.16}\\
+\amp \text{Loop a-b-c-a: }\ \ +6I_2 - 6I_1= -24 \frac{dI_2}{dt} \tag{39.17}
+\end{align}
+</div>
+<div class="para">Note the last equation includes the induced EMF due to the changing of current <span class="process-math">\(I_2\)</span> through the inductor.  These equations have to be solved together to find the three currents. Fortunately,  current <span class="process-math">\(I_1\)</span> is independent of time as given by Eq. <a href="Inductance-in-Circuits.html#ex-Different-Time-Constants-in-Different-Branches-of-an-RL-Circuit-5-4-1" class="xref" data-knowl="./knowl/xref/eq-two-time-const-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 39.16">(39.16)</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-two-time-const-2.html">
+\begin{equation*}
+I_1 = 2\ \text{A}.
+\end{equation*}
+</div>
+<div class="para">This says that current <span class="process-math">\(I_1\)</span> comes on instantaneously when the switch is turned on.  That is, the time constant for this current is zero and there is no delay on reaching the maximum current in this branch since we have ignored minute self-inductance in the loop without the coils.</div>
+</div> <div class="para logical">
+<div class="para">To find <span class="process-math">\(I_2\text{,}\)</span> we replace <span class="process-math">\(I_1\)</span> in Eq. <a href="Inductance-in-Circuits.html#ex-Different-Time-Constants-in-Different-Branches-of-an-RL-Circuit-5-4-1" class="xref" data-knowl="./knowl/xref/eq-two-time-const-3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 39.17">(39.17)</a>  and rearrange the result to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-two-time-const-3.html ./knowl/xref/eq-two-time-const-1.html">
+\begin{equation*}
+\frac{dI_2}{dt} + \frac{1}{4} I_2 = \frac{1}{2}.
+\end{equation*}
+</div>
+<div class="para">Note that this equation would have been obtained also from the loop a-b-c-d-a. The solution of this equation is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-two-time-const-3.html ./knowl/xref/eq-two-time-const-1.html">
+\begin{equation*}
+I_2 = 2 A \left( 1 - e^{-t/4}\right).
+\end{equation*}
+</div>
+<div class="para">The current <span class="process-math">\(I_2\)</span> in the branch on the right side in the circuit does not attain the maximum value of <span class="process-math">\(2\text{ A}\)</span> instantaneously, but it takes time due to the inductor in this branch. Initially, current is zero in this branch at <span class="process-math">\(t=0\text{.}\)</span> When the source attempts to force current through this branch, the back EMF opposes the rise in the current. The time constant for this current is <span class="process-math">\(4\,\text{sec}\text{.}\)</span> Finally, the current through the battery is obtained by  using Eq. <a href="Inductance-in-Circuits.html#ex-Different-Time-Constants-in-Different-Branches-of-an-RL-Circuit-5-4-1" class="xref" data-knowl="./knowl/xref/eq-two-time-const-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 39.15">(39.15)</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-two-time-const-3.html ./knowl/xref/eq-two-time-const-1.html">
+\begin{equation*}
+I = 2\text{ A} + 2\text{ A } \left( 1 - e^{-t/4}\right)
+\end{equation*}
+</div>
+<div class="para">The current through the battery rises instantaneously to <span class="process-math">\(2\,\text{ A}\text{,}\)</span> but takes time to get to the final value of <span class="process-math">\(4\, \text{A}\)</span> due to the inductor in the circuit.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Inductance-in-Circuits.html#ex-Different-Time-Constants-in-Different-Branches-of-an-RL-Circuit">in-context</a></span>
+</body>
+</html>

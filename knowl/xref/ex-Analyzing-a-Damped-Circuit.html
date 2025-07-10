@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">40.19</span><span class="period">.</span><span class="space"> </span><span class="title">Analyzing a Damped Circuit.</span>
+</h3>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">Consider RLC-circuit shown in <a href="Damping-by-Resistance.html#fig-example-damped-1" class="xref" data-knowl="./knowl/xref/fig-example-damped-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 40.20">Figure 40.20</a> and answer the following questions.  (a) Find the natural frequency <span class="process-math">\(\omega_0\)</span> and the damping parameter <span class="process-math">\(\gamma\text{,}\)</span> and determine if the circuit is under-damped, over-damped or critically damped.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/em-oscillations/example-damped-1.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">40.20<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">(b)  At <span class="process-math">\(t=0\text{,}\)</span> the charge on the capacitor was <span class="process-math">\(15\, \mu\text{C}\)</span> and the current in the circuit was zero, find the current in the circuit at an arbitrary time.</div> <div class="para">(c) What is the <span class="process-math">\(Q\)</span> factor of the oscillator?</div> <div class="para">(d) (Calculus) How much energy is dissipated in first 2 seconds?</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(2887\ \text{sec}^{-1} \text{,}\)</span> <span class="process-math">\(3334\ \text{sec}^{-1}\text{,}\)</span> underdamped, (b) <span class="process-math">\(-53\text{ mA}\, e^{-1667\,t}\,\sin(2357\, t)\text{,}\)</span> (c) <span class="process-math">\(0.7\text{,}\)</span> (d) <span class="process-math">\(2.8\:\mu\text{J}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">The natural frequency,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\omega_0 =\frac{1}{\sqrt{LC}} = \frac{1}{\sqrt{3\times10^{-3}\:\text{H}\times40\times10^{-6}\:\text{F}}} = 2887\ \text{sec}^{-1}  
+\end{equation*}
+</div>
+<div class="para">The damping parameter,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\gamma = \frac{R}{L} = \frac{10\ \Omega}{3\times 10^{-3}\:\text{H}} = 3334\ \text{sec}^{-1}.
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(\omega_0&gt;\gamma/2\text{,}\)</span> the circuit is under-damped.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Putting in the numbers in <span class="process-math">\(I_u\)</span> in Eq. <a href="Damping-by-Resistance.html#Damping-by-Resistance-2-8-9" class="xref" data-knowl="./knowl/xref/eq-currents-in-damped-circuit.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 40.19">(40.19)</a>,  we obtain the following for the current in the circuit with <span class="process-math">\(t\)</span> in sec. We will find the multiplying factor in the equation separately.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-currents-in-damped-circuit.html">
+\begin{equation*}
+\omega_1 = \sqrt{ \omega_0^2 - \gamma^2/4  } = 2357\text{ sec}^{-1}.
+\end{equation*}
+</div>
+<div class="para">This gives the following for the factor in the solution.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-currents-in-damped-circuit.html">
+\begin{align*}
+\text{factor}\amp = \left( \dfrac{\gamma^2 + 4\omega_1^2}{4\omega_1}  \right)\\
+\amp = \left( \dfrac{3334^2 + 4\times 2357^2}{4 \times 2357}  \right) = 3536\text{ sec}^{-1}.
+\end{align*}
+</div>
+<div class="para">Finally, using the formula for <span class="process-math">\(I_u\)</span> we get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-currents-in-damped-circuit.html">
+\begin{align*}
+I \amp = -Q_0\,\left( \dfrac{\gamma^2 + 4\omega_1^2}{4\omega_1}  \right)\, e^{-\gamma\,t/2}\,\sin(\omega_1 t),\\
+\amp = -15\,\mu\text{C}\times 3536\text{ s}^{-1}\, e^{-1667\,t}\,\sin(2357\, t),\\
+\amp = -53\text{ mA}\, e^{-1667\,t}\,\sin(2357\, t).
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">(c)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">We will use <span class="process-math">\(\omega_1\)</span> for the <span class="process-math">\(Q\)</span> factor.</div>
+<div class="displaymath process-math">
+\begin{align*}
+Q\amp = \dfrac{\omega_1}{\gamma} = \dfrac{2357}{3334} = 0.7.
+\end{align*}
+</div>
+<div class="para">If you use <span class="process-math">\(\omega_0\)</span> in place of <span class="process-math">\(\omega_1\text{,}\)</span> you will get a little larger value, here you will get <span class="process-math">\(0.9\text{.}\)</span> They are both order, <span class="process-math">\(O(1)\text{,}\)</span> i.e., the oscillator is not very good. If you get a <span class="process-math">\(Q\)</span> of <span class="process-math">\(10\)</span> or more, you will have a very good oscillator.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span><span class="space"> </span><span class="title">(d)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Integrate power deposited in duration (0, 2 sec) by inserting <span class="process-math">\(I(t)\)</span> in part (b).</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Energy} = \int_0^2 I^2\: R dt = 2.8\:\mu\text{J}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Damping-by-Resistance.html#ex-Analyzing-a-Damped-Circuit">in-context</a></span>
+</body>
+</html>

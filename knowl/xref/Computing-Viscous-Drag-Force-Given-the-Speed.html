@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.63</span><span class="period">.</span><span class="space"> </span><span class="title">Computing Viscous Drag Force Given the Speed.</span>
+</h3>
+<div class="para">An amoeba is moving in water at speed <span class="process-math">\(10\, \mu\text{m/min}\text{.}\)</span> You can assume amoeba to be a sphere of radius <span class="process-math">\(500\, \mu\text{m}\text{.}\)</span>
+</div> <div class="para">(a) What is the Reynold’s number of the fluid flow at the speed of the amoeba? Decide which drag force is dominant here.</div> <div class="para">(b)  Based on your decision in (a), compute the drag force on the amoeba.</div> <div class="para">(c) If the density of amoeba is that of water, how many times of the drag force is the weight?</div> <div class="para">Data: Viscosity <span class="process-math">\(\eta \)</span> of water to be <span class="process-math">\(0.009\text{ Pa.s}\)</span> and the density of water to be <span class="process-math">\(1000\text{ kg/m}^3\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(1.9\times 10^{-5}\text{,}\)</span> (b) <span class="process-math">\(1.41\times 10^{-11}\text{ N} \text{,}\)</span>(c) <span class="process-math">\(364,300\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">We use the formula for the Reynold’s number to find the value. In the Reynold’s number formula, we need to choose a length scale for the moving object, for which we choose the diameter of amoeba as tthe relevant length scale. We also convert all the units in the standard SI units of <span class="process-math">\(\text{m, s, kg}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+N_R \amp = \dfrac{L \rho v }{\eta}, \\
+\amp = \dfrac{2\times 500\times 10^{-6} \times 1000\times \frac{1}{6}\times 10^{-6}}{ 0.009} = 1.9\times 10^{-5}. 
+\end{align*}
+</div>
+<div class="para">This says that viscous drag will be the dominant one for amoeba.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">We can make a drastic assumption and assume amaeba to have a spherical shape. This is just to get a ballpark answer. Using the formula for the viscous drag force for a sphere, we find</div>
+<div class="displaymath process-math">
+\begin{align*}
+F_D^{\text{viscous}} \amp = 6\pi\eta R v, \\
+\amp = 6\times \pi \times 0.009\times 500\times 10^{-6} \times   \frac{1}{6}\times 10^{-6}\\
+\amp = 1.41\times 10^{-11}\text{ N}. 
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">To find the weight of amoeba, we need to find its mass. We will get its mass by multiplying its volume by the density.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Volume, }V = \dfrac{4}{3}\pi R^3 = 5.24\times 10^{-10}\, \text{m}^3.
+\end{equation*}
+</div>
+<div class="para">Therefore, weight of the amoeba is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W = mg = \left( 1000 * 5.24\times 10^{-10} \right) * 9.81 = 5.14\times 10^{-6}\text{ N}.
+\end{equation*}
+</div>
+<div class="para">Comparing drag to weight we get.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{W}{F_D} = \dfrac{5.14\times 10^{-6}}{1.41\times 10^{-11}} = 364,300.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="forces-Drag-Force.html#Computing-Viscous-Drag-Force-Given-the-Speed">in-context</a></span>
+</body>
+</html>

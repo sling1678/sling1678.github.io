@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Practice Definitions in Driven Damped Harmonic Oscillator.</span>
+</h4>
+<div class="para logical">
+<div class="para">Consider a one-dimensional damped oscillator of mass <span class="process-math">\(m = 0.5\)</span> kg, <span class="process-math">\(\omega_0\)</span> = 10 rad/sec, and <span class="process-math">\(\beta= 1\)</span>  rad/sec. Suppose the oscillator can oscillate along the <span class="process-math">\(x\)</span>-axis. A sinusoidal force with the <span class="process-math">\(x\)</span> component <span class="process-math">\(F_x = 100\ \textrm{N}\cos(\omega t)\)</span> acts on the oscillator.</div>
+<ol class="lower-alpha" id="exer-Practice-Definitions-in-Driven-Damped-Harmonic-Oscillator-2-1-7">
+<li><div class="para">What should be the condition on time <span class="process-math">\(t\)</span> so that the steady state for the oscillator can be assumed?</div></li>
+<li><div class="para">Suppose the steady state has been reached and the displacement of the oscillator can be written as <span class="process-math">\(x = A_c \cos(\omega t) + A_s \sin(\omega t)\text{.}\)</span> Find the amplitudes <span class="process-math">\(A_c\)</span> and <span class="process-math">\(A_s\)</span> as a function of driving frequency <span class="process-math">\(\omega\text{.}\)</span>
+</div></li>
+<li><div class="para">Find the amplitude of the steady sate oscillations.</div></li>
+<li><div class="para">Find the phase lag?</div></li>
+<li><div class="para">What is the expression for the instantaneous power of the driving force?</div></li>
+<li><div class="para">Find the average power as a function of driving frequency.</div></li>
+<li><div class="para">At what frequency is the power maximum?</div></li>
+<li><div class="para">At what frequency is the amplitude of the oscillator’s motion maximum?</div></li>
+<li><div class="para">What is the width at half height of the power versus driving frequency plot?</div></li>
+</ol>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">Let us start with listing the given quantities.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+m = 0.5\,\text{kg},\ \ \omega_0 = 10\,\text{rad/sec},\ \ \beta = 1.0\,\text{rad/sec},\ \ F_0 = 100\,\text{N}.
+\end{equation*}
+</div>
+<ol class="lower-alpha" id="exer-Practice-Definitions-in-Driven-Damped-Harmonic-Oscillator-3-1-2">
+<li><div class="para">Steady state when <span class="process-math">\(t&gt;&gt;1/\beta\text{.}\)</span>  This means that we need to wait for <span class="process-math">\(t&gt;&gt;1\)</span> sec before assuming the steady state condition for the given oscillator.</div></li>
+<li><div class="para">Left as an exercise for the student.</div></li>
+<li><div class="para logical">
+<div class="para">Amplitude of the steady state solution is related to the <span class="process-math">\(A_c\)</span> and <span class="process-math">\(A_s\)</span> and has been given in the textbook.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \frac{D}{\sqrt{(\omega_0^2 - \omega^2)^2   +(2\beta\omega)^2}}. 
+\end{equation*}
+</div>
+<div class="para">Here <span class="process-math">\(D = F_0/m\text{.}\)</span>
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">The phase lag <span class="process-math">\(\delta\)</span> will be given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\tan\delta = \frac{2\beta\omega}{\omega_0^2 - \omega^2}. 
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">The instantaneous power of the driving force is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(t) = \vec F_d \cdot \vec v =  F_x v_x.
+\end{equation*}
+</div>
+<div class="para">With <span class="process-math">\(x = A\cos(\omega t-\delta)\)</span> and <span class="process-math">\(F_x = F_0\cos(\omega t)\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(t) = -\omega A F_0 \cos(\omega t)\cos(\omega t-\delta).
+\end{equation*}
+</div>
+<div class="para">If you used <span class="process-math">\(x(t) = A_c \cos(\omega t) + A_s \sin(\omega t)\text{,}\)</span> then you would get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(t) =  \omega F_0 \cos(\omega t)\left[ -A_c\sin(\omega t) + A_s\cos(\omega t) \right].
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">The average power will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{\textrm{ave}} =  \frac{1}{2}\omega F_0 A_s.
+\end{equation*}
+</div>
+<div class="para">In terms of the formula using the amplitude <span class="process-math">\(A\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{\textrm{ave}} =  \frac{1}{2}\omega  F_0 A\sin\delta.
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para">Power is maximum at its resonance frequency, which occurs at <span class="process-math">\(\omega = \omega_0\text{.}\)</span>
+</div></li>
+<li><div class="para">The maximum amplitude occurs at its resonance frequency which occurs at <span class="process-math">\(\omega = \sqrt{\omega_0^2-2\beta^2}\text{.}\)</span>
+</div></li>
+<li><div class="para">Setting the general expression for  <span class="process-math">\(P_{\textrm{ave}}\)</span> in ????.</div></li>
+</ol>
+</div></div></details></div></article><span class="incontext"><a class="internal" href="Driven-Oscillator.html#exer-Practice-Definitions-in-Driven-Damped-Harmonic-Oscillator">in-context</a></span>
+</body>
+</html>

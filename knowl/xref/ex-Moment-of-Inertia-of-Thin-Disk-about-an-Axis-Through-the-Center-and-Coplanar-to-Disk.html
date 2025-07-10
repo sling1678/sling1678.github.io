@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus)  Moment of Inertia of Thin Disk about an Axis Through the Center and Coplanar to Disk.</span>
+</h4>
+<div class="para">Derive the expression for the moment of inertia of a uniform thin disk of mass <span class="process-math">\(M\)</span>  and radius <span class="process-math">\(R\)</span> about an axis through the center and coplanar to the disk, i,e., along one of its diameter.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Take <span class="process-math">\(y\)</span> axis to be axis of rotation and an element between <span class="process-math">\(x\)</span> anx <span class="process-math">\(x+dx\)</span> parallel to <span class="process-math">\(y\)</span> axis.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\dfrac{1}{4}\,MR^2\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">
+<a href="Moment-of-Inertia.html#fig-mom-inertia-disk-abt-ctr-paralell-disk-calc" class="xref" data-knowl="./knowl/xref/fig-mom-inertia-disk-abt-ctr-paralell-disk-calc.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.79">Figure 9.79</a> shows setup for claculations. The axis is along <span class="process-math">\(y\)</span> axis.</div> <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./images/rotation/mom-inertia-disk-abt-ctr-paralell-disk-calc.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.79<span class="period">.</span></span><span class="space"> </span>Figure for <a href="Moment-of-Inertia.html#ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center-and-Coplanar-to-Disk" class="xref" data-knowl="./knowl/xref/ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center-and-Coplanar-to-Disk.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 9.7.10.7: (Calculus)  Moment of Inertia of Thin Disk about an Axis Through the Center and Coplanar to Disk">Exercise 9.7.10.7</a> solutiuon.</figcaption></figure> Now we look at an element of the disk in rectangular shape  between <span class="process-math">\(x\)</span> and <span class="process-math">\(x+dx\text{.}\)</span> The area of the element will be <span class="process-math">\(2ydx\)</span> since the length is <span class="process-math">\(2y\)</span> and width <span class="process-math">\(dx\text{.}\)</span> The <span class="process-math">\(y\)</span> in the element area is<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-mom-inertia-disk-abt-ctr-paralell-disk-calc.html ./knowl/xref/ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center-and-Coplanar-to-Disk.html">
+\begin{equation*}
+y = \sqrt{R^2 - x^2}.
+\end{equation*}
+</div>All masses in the element would rotated from the axis at a distance <span class="process-math">\(x\text{.}\)</span> Therefore,  moment of inertia of the ring element will be<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-mom-inertia-disk-abt-ctr-paralell-disk-calc.html ./knowl/xref/ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center-and-Coplanar-to-Disk.html">
+\begin{align*}
+\delta I \amp = \delta m \times x^2 =   \left( \dfrac{M}{A}\, 2ydx \right)\, x^2,\\
+\amp =  \dfrac{2M}{\pi R^2}\, x^2 \sqrt{R^2 - x^2}\, dx
+\end{align*}
+</div>We would integrate this from <span class="process-math">\(x=-R\)</span> to <span class="process-math">\(r=R\)</span> to find <span class="process-math">\(I\text{.}\)</span> Since integrand is an even function of <span class="process-math">\(x\text{.}\)</span> That would mean we will get <span class="process-math">\(2\)</span> times integral from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(r=R\text{.}\)</span><div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-mom-inertia-disk-abt-ctr-paralell-disk-calc.html ./knowl/xref/ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center-and-Coplanar-to-Disk.html">
+\begin{align*}
+I \amp = \dfrac{2M}{\pi R^2}\,2\times\,\int_0^R x^2 \sqrt{R^2 - x^2}\, dx. 
+\end{align*}
+</div>The integral is difficult to do. I typed the command <code class="code-inline tex2jax_ignore">integrate x^2*sqrt(R^2-x^2), x</code> in <a class="external" href="https://www.wolframalpha.com/" target="_blank"><code class="code-inline tex2jax_ignore">https://www.wolframalpha.com/</code></a><details class="ptx-footnote" aria-live="polite" id="ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center-and-Coplanar-to-Disk-5-22"><summary class="ptx-footnote__number" title="Footnote 9.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center-and-Coplanar-to-Disk-5-22"><code class="code-inline tex2jax_ignore">www.wolframalpha.com/</code></div></details> and found the following answer.<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-mom-inertia-disk-abt-ctr-paralell-disk-calc.html ./knowl/xref/ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center-and-Coplanar-to-Disk.html">
+\begin{align*}
+\int_0^R x^2 \sqrt{R^2 - x^2}\, dx \amp  = \dfrac{1}{8}\left[  x\sqrt{R^2 - x^2}\left( 2x^2 - R^2\right) \right.\\
+\amp  \ \ + R^4\tan^{-1}\left.\left( \dfrac{x}{R^2-x^2}\right)\right]_0^R,\\
+\amp  = \dfrac{1}{8}\left[ 0 - 0 + \dfrac{\pi}{2} - 0\right] = \dfrac{\pi}{16}.
+\end{align*}
+</div>Therefore,<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-mom-inertia-disk-abt-ctr-paralell-disk-calc.html ./knowl/xref/ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center-and-Coplanar-to-Disk.html">
+\begin{equation*}
+I =  \dfrac{4M}{\pi R^2} \times \dfrac{\pi}{16} = \dfrac{1}{4}\,MR^2.
+\end{equation*}
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Moment-of-Inertia.html#ex-Moment-of-Inertia-of-Thin-Disk-about-an-Axis-Through-the-Center-and-Coplanar-to-Disk">in-context</a></span>
+</body>
+</html>

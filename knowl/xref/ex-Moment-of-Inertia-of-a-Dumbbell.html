@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.25</span><span class="period">.</span><span class="space"> </span><span class="title">Moment of Inertia of a Dumbbell.</span>
+</h3>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">We want to find moment of inertia of a dumbbell with respect to two different coordinate systems shown in <a href="sec-principal-axes.html#fig-moment-of-inertia-of-a-dumbbell" class="xref" data-knowl="./knowl/xref/fig-moment-of-inertia-of-a-dumbbell.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.26">Figure 10.26</a>. Find all nine moments of inertia in <span class="process-math">\(Oxyz\)</span> and <span class="process-math">\(Ox'y'z'\text{.}\)</span> </div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/rotation-general/moment-of-inertia-of-a-dumbbell.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.26<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">See solution.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">We need coordinates of the two masses in the two systems. From <a href="sec-principal-axes.html#fig-moment-of-inertia-of-a-dumbbell" class="xref" data-knowl="./knowl/xref/fig-moment-of-inertia-of-a-dumbbell.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.26">Figure 10.26</a>, we read off the following for the mass (say 1) on the right.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-moment-of-inertia-of-a-dumbbell.html">
+\begin{gather*}
+x_1 = l\cos\theta,\ \ y_1 = l \sin\theta,\ \ z_1 = 0\\
+x'_1 = l,\ \ y'_1 = 0,\ \ z'_1 = 0
+\end{gather*}
+</div>
+<div class="para">The coordinates of the other particle are negative of these values. Therefore, we get the following moments of inertia in <span class="process-math">\(Oxyz\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-moment-of-inertia-of-a-dumbbell.html">
+\begin{align*}
+\amp I_{xx} = 2m l^2 \sin^2\theta,\ \ I_{yy} = 2m l^2 \cos^2\theta,\ \ I_{zz} = 2m l^2,\\
+\amp I_{xy} = -2m l^2 \sin\theta\,\cos\theta,\ \ I_{xz} = 0,\ \ I_{yz} = 0.
+\end{align*}
+</div>
+<div class="para">Organizing this in matrix we have the following in <span class="process-math">\(Oxyz\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-moment-of-inertia-of-a-dumbbell.html">
+\begin{equation*}
+{\bf I} = 				
+\begin{pmatrix}
+2m l^2 \sin^2\theta \amp -2m l^2 \sin\theta\,\cos\theta \amp 0\\ 
+-2m l^2 \sin\theta\,\cos\theta \amp 2m l^2 \cos^2\theta \amp 0\\
+0 \amp 0 \amp 2m l^2
+\end{pmatrix}
+\end{equation*}
+</div>
+<div class="para">In <span class="process-math">\(Ox'y'z'\text{,}\)</span> we will get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-moment-of-inertia-of-a-dumbbell.html">
+\begin{align*}
+\amp I_{x'x'} = 0,\ \ I_{y'y'} = 2m l^2,\ \ I_{z'z'} = 2m l^2,\\
+\amp I_{x'y'} = 0,\ \ I_{x'z'} = 0,\ \ I_{y'z'} = 0.
+\end{align*}
+</div>
+<div class="para">Organizing this in matrix we have the following in <span class="process-math">\(Ox'y'z'\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-moment-of-inertia-of-a-dumbbell.html">
+\begin{equation*}
+{\bf I'} = 				
+\begin{pmatrix}
+0 \amp 0 \amp 0\\ 
+0 \amp 2m l^2 \amp 0\\
+0 \amp 0 \amp 2m l^2
+\end{pmatrix}
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="sec-principal-axes.html#ex-Moment-of-Inertia-of-a-Dumbbell">in-context</a></span>
+</body>
+</html>

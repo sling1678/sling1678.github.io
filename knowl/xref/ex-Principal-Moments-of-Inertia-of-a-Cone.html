@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.27</span><span class="period">.</span><span class="space"> </span><span class="title">Principal Moments of Inertia of a Cone.</span>
+</h3>
+<div class="para">Find principal moments of inertia of a circular-based cone with radius <span class="process-math">\(R\)</span> and height <span class="process-math">\(h\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(I_1 = I_2 = \frac{3}{20}\,MR^2  + \frac{3}{80}\,Mh^2\text{,}\)</span> <span class="process-math">\(\frac{3}{10}\,MR^2\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">To find the principal moments of inertia about the CM at <span class="process-math">\(O\text{,}\)</span> we first find moment of inertia about the apex at <span class="process-math">\(O'\)</span> using axes parallel to the principal axes, and then make use of parallel axis theorem as illustrated in <a href="sec-principal-axes.html#fig-moment-of-inertia-of-a-cone" class="xref" data-knowl="./knowl/xref/fig-moment-of-inertia-of-a-cone.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.28">Figure 10.28</a> . We also make use of cylindrical coordinates since integrals will work out more easily there.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/rotation-general/moment-of-inertia-of-a-cone.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.28<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="para">An element of mass <span class="process-math">\(dm = \rho\,dV\)</span> at coordinates <span class="process-math">\((x',y',z')\)</span> here will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dm = \rho r'dr' d\phi' dz',
+\end{equation*}
+</div>
+<div class="para">where upper limit of integration on radial distance <span class="process-math">\(r' = \sqrt{ {x'}^2 + {y'}^2 }\)</span> depends on  <span class="process-math">\(z'\)</span> from the ratio of sides of similar triangles,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{r'_\text{max}}{z'} = \frac{R}{h},\ \ \longrightarrow\ \ r'_\text{max} = \frac{R}{h}\, z'.
+\end{equation*}
+</div>
+<div class="para">Mass of the cone will be</div>
+<div class="displaymath process-math">
+\begin{align*}
+M \amp =  2\pi \rho \int_0^h dz'\, \int_0^{r'_\text{max}}\, r'dr'\\
+\amp =  \frac{2\pi \rho R^2}{2 h^2} \int_0^h\, z'\, dz' = \frac{\pi R^2 h}{3}\, \rho. 
+\end{align*}
+</div>
+<div class="para">To find <span class="process-math">\(I_{z'z'}\)</span> we need</div>
+<div class="displaymath process-math">
+\begin{align*}
+I_{z'z'} \amp = \int \rho \left(x^2 + y^2 \right) dV  \\
+\amp = \rho \int {r'}^2  r'dr' d\phi' dz' \\
+\amp = \frac{ 2\pi R^4 \rho}{4h^4} \int_0^h {z'}^4 dz' \\
+\amp = \frac{ \pi R^4 h \rho}{10} = \frac{3}{10}\,MR^2.
+\end{align*}
+</div>
+</div> <div class="para logical">
+<div class="para">For <span class="process-math">\(I_{x'x'}=I_{y'y'}\text{,}\)</span> we need only one calculation.</div>
+<div class="displaymath process-math">
+\begin{align*}
+I_{x'x'} \amp = \int \rho \left(y^2 + z^2 \right) dV \\
+\amp = \rho \int  dz'\int r' dr'\, \int d\phi' \left( {r'}^2 \sin^2\phi'   + {z'}^2\right) \\
+\amp = \rho \int  dz'\int r' dr'\,   \left( \pi {r'}^2   + 2\pi  {z'}^2\right) \\
+\amp = \rho \int  dz'   \left( \frac{\pi}{4}{Rz'/h}^4  + \pi {Rz'/h}^2  {z'}^2\right) \\
+\amp =  \rho \left( \frac{\pi}{20}(R/h)^4 h^5  + \frac{1}{5}\,\pi (R/h)^2  h^5\right) \\
+\amp =  \frac{\pi\rho R^2 h}{3} \left(  \frac{3}{20} R^2 + \frac{3}{5}h^2 \right) \\
+\amp =  \frac{3}{5}\,M \left(  \frac{1}{4} R^2 +  h^2 \right) 
+\end{align*}
+</div>
+</div> <div class="para logical">
+<div class="para">To make use of parallel axis theorem to get <span class="process-math">\(I_{xx}\text{,}\)</span> <span class="process-math">\(I_{yy}\text{,}\)</span> <span class="process-math">\(I_{zz}\)</span> through the CM, we need to locate the CM of the cone. We just need to find the <span class="process-math">\(z'_\text{cm}\text{.}\)</span> This will be at</div>
+<div class="displaymath process-math">
+\begin{equation*}
+z'_\text{cm} = \frac{1}{M}\int z' dV = \frac{3}{4}\, h.
+\end{equation*}
+</div>
+<div class="para">Now, we use parallel axis theorem to get</div>
+<div class="displaymath process-math">
+\begin{align*}
+I_{xx} \amp = I_{x'x'} - M {z'}_\text{cm}^2 = \frac{3}{5}\,M \left(  \frac{1}{4} R^2 +  h^2 \right) - \frac{9}{16} h^2  \\
+\amp = \frac{3}{20}\,MR^2  + \frac{3}{80}\,Mh^2.\\
+I_{yy} \amp =  I_{xx} = \frac{3}{20}\,MR^2  + \frac{3}{80}\,Mh^2. \\
+I_{zz} \amp =  \frac{3}{10}\,MR^2.  
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="sec-principal-axes.html#ex-Principal-Moments-of-Inertia-of-a-Cone">in-context</a></span>
+</body>
+</html>

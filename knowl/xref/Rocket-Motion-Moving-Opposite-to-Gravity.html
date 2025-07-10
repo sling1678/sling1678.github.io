@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Rocket Motion Moving Opposite to Gravity.</span>
+</h4>
+<div class="para">Rocket motion near the surface of the Earth is subject to an approximately constant gravitational force of the Earth.</div> <div class="para">Consider a rocket of initial total mass <span class="process-math">\(M_0 \)</span> with <span class="process-math">\(M_r \)</span> the mass of the rocket without the fuel. The rocket is rising straight up near Earth with the  fuel being ejected at a constant speed <span class="process-math">\(u\)</span> with respect to the rocket and at a constant rate <span class="process-math">\(\alpha \text{ kg/s}\text{.}\)</span>
+</div> <div class="para logical">
+<div class="para">Prove that the vertical component of the velocity at time <span class="process-math">\(t \)</span> will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v = v_0 - gt + u\ln\left(\frac{M_0}{M_0-\alpha t}\right)
+\end{equation*}
+</div>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Set up equation similar to the example with no external force.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">Already given in the statement.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">We will work with positive <span class="process-math">\(y\)</span> axis pointed up. Let <span class="process-math">\(v_y \)</span> denote <span class="process-math">\(y  \)</span> component of the velocity of the rocket at instant <span class="process-math">\(t \)</span> and let <span class="process-math">\(\Delta v_y \)</span> be the change in it during an interval between <span class="process-math">\(t \)</span> and <span class="process-math">\(t + \Delta t \text{.}\)</span> Notice also that velocity of the ejected fuel with respect to the inertial frame will be <span class="process-math">\(v_y - u\text{.}\)</span>
+</div> <div class="para logical">
+<div class="para">Therefore, the change in momentum of the rocket plus burnt fuel combined system along the <span class="process-math">\(y \)</span> axis is</div>
+<div class="displaymath process-math">
+\begin{align*}
+\Delta p_y  \amp = \left[ \Delta m ( v_y - u ) + (m - \Delta m) (v_y + \Delta v_y ) \right] - m v_y,\\
+\amp \rightarrow  - u \Delta m   +  m \Delta v_y  \text{ (as } \Delta t \rightarrow 0\text{.)}
+\end{align*}
+</div>
+</div> <div class="para logical">
+<div class="para">The impulse of the external force of gravity on the rocket during the intreval is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+J_y = - m(t) g \Delta t.
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">Using the momentum-impulse relation we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+m \Delta v_y - u \Delta m = - m g \Delta t.
+\end{equation*}
+</div>
+<div class="para">Divide both sides by <span class="process-math">\(m\text{.}\)</span> Now, taking the infinitesimal limit, the change   <span class="process-math">\(\Delta v_x \)</span> is replaced by <span class="process-math">\(dv_x \)</span> and the change in mass <span class="process-math">\(\Delta m \)</span> is replaced by <span class="process-math">\(-dm \)</span> since <span class="process-math">\(dm \)</span> is negative. We also write <span class="process-math">\(dm/m \)</span> as <span class="process-math">\(d\ln m\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d v_y + u\, d \ln m = - g\, dt.
+\end{equation*}
+</div>
+<div class="para">Integrating from <span class="process-math">\(t = 0\)</span> to <span class="process-math">\(t = t\)</span> we find</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_y(t) - v_y(0)  + u\,\ln\left(\frac{M_0-\alpha t}{M_0}\right) = - gt.
+\end{equation*}
+</div>
+<div class="para">In this equation we can write <span class="process-math">\(v_y(t) \)</span> as <span class="process-math">\(v\)</span> and <span class="process-math">\(v_y(0) \)</span> as <span class="process-math">\(v_0\text{,}\)</span> and  rerarrange  to get the desired result.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v = v_0 - gt + u\,\ln\left(\frac{M_0}{M_0-\alpha t}\right).
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="momentum-Mass-Varying-System.html#Rocket-Motion-Moving-Opposite-to-Gravity">in-context</a></span>
+</body>
+</html>

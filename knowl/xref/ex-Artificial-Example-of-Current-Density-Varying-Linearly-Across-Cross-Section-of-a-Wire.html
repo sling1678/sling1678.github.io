@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">9<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Artificial Example of Current Density Varying Linearly Across Cross-Section of a Wire.</span>
+</h4>
+<div class="para">A 4-gauge wire of a special material of diameter <span class="process-math">\(0.2038\text{ in}\)</span> carries <span class="process-math">\(10\text{ amp}\)</span> current with a non-uniform current density across the cross-section of the wire.  The current density increases linearly with distance from the center,  <span class="process-math">\(J = a s\text{,}\)</span> with constant <span class="process-math">\(a=5\text{ A/m}^3\)</span>   and <span class="process-math">\(s\)</span> is the distance from the axis of the wire in m.  Find current flowing within  <span class="process-math">\(0.1\text{ mm}\)</span> of the outer surface, and compare it with the current that flows within <span class="process-math">\(0.1\text{ mm}\)</span> of the center.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use <span class="process-math">\(I = \int J dA\)</span> for the appropriate area.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(9.42\text{ A versus } 1.73\text{ A}\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">Let us first convert radius <span class="process-math">\(R\)</span> of the wire in metric unit.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R = \dfrac{0.2038\:\text{in}}{2} = 2.59\times 10^{-3}\:\text{m}.
+\end{equation*}
+</div>
+<div class="para">The relation between the current density and total current can be used to find the constant <span class="process-math">\(a\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\: J\:dA \ \ \Longrightarrow\ \ \int\: J\: 2\pi s ds\ \ \Longrightarrow\ \ 2\pi a\int_0^R\: s^2\: ds = I.
+\end{equation*}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a = \dfrac{3 I}{2\pi R^3} = \dfrac{3\times 10\:\text{A}}{2\pi (2.59\times 10^{-3}\:\text{m})^3} = 2.75\times 10^{8}\:\text{A/m}^3.
+\end{equation*}
+</div>
+<div class="para">The current flowing within 0.1 mm of the outer surface is found by integrating <span class="process-math">\(J\)</span> there.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = 2\pi a \int_{R-d}^R\: s^2\: ds = \dfrac{2\pi a}{3}\:\left[ R^3 - (R-d)^3 \right]= 9.42\:\text{A}.
+\end{equation*}
+</div>
+<div class="para">The current flowing within 0.1 mm of the axis has different limits on the integral.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = 2\pi a \int_0^d\: s^2\: ds = \dfrac{2\pi a}{3}\:d^3 = 1.73\:\text{A}.
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="Electric-Current-Section.html#ex-Artificial-Example-of-Current-Density-Varying-Linearly-Across-Cross-Section-of-a-Wire">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Speed and Distance of a Skier with Inertial Drag Force.</span>
+</h4>
+<div class="para">A <span class="process-math">\(70\text{-kg}\)</span> skier glides down a “frictionless” slope starting from rest on a flat incline with angle of inclination <span class="process-math">\(\theta=30^\circ\text{.}\)</span> The motion of skier is impeded by inertial drag force from air. Suppose <span class="process-math">\(C_D=0.4\)</span> and <span class="process-math">\(\rho_\text{air}=1.22\text{kg /m}^3\text{,}\)</span> and the skier presents and area of <span class="process-math">\(A=1.2\text{ m}^2\text{.}\)</span> (a) Find the terminal speed of the skier. (b) Find the expression of speed <span class="process-math">\(v\)</span> as a function of time <span class="process-math">\(t\)</span> with <span class="process-math">\(t=0\)</span> at start where <span class="process-math">\(v=0\text{.}\)</span> (c) Find the expression of distance <em class="alert">on the slope</em> the skier travels in time <span class="process-math">\(t\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Set up the condition for zero acceleration. (b) Write <span class="process-math">\(F_x = m dv_x/dt\)</span> and solve for <span class="process-math">\(v_x\text{.}\)</span> (c) Integrate the result of (b).</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(34.2\text{ m/s}\text{,}\)</span> (b) <span class="process-math">\((34.3\text{ m/s})\; \tanh( 0.143\; t)\text{,}\)</span> (c) <span class="process-math">\((239\text{ m})  \ln( \cosh(  0.143\; t ) )\text{.}\)</span> You might different expressions for (b) and (c) since the integrals can be written in other forms also.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">(a) <a href="forces-Drag-Force.html#fig-skier-down-slope-against-drag" class="xref" data-knowl="./knowl/xref/fig-skier-down-slope-against-drag.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.67">Figure 6.67</a> shows three forces acting on the skier. Let <span class="process-math">\(v_x\)</span> and <span class="process-math">\(a_x = dv_x/dt\)</span> denote the <span class="process-math">\(x\)</span> component of velocity and acceleration respectively. Equation of motion <span class="process-math">\(F_x = m a_x= m dv_x/dt\)</span> will be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-skier-down-slope-against-drag.html">
+\begin{equation}
+m \frac{dv_x}{dt} = m g \sin\theta - \frac{1}{2} C_D \rho A v_x^2.\tag{6.27}
+\end{equation}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/forces/skier-down-slope-against-drag.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.67<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="para">When speed is terminal speed <span class="process-math">\(v_t\text{,}\)</span> then, it has zero acceleration. This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_t = \sqrt{  \frac{2 m g \sin\theta}{ C_D \rho A } }. 
+\end{equation*}
+</div>
+<div class="para">Putting the numerical values we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_t = \sqrt{  \frac{2 \times 70 \times 9.81 \times \sin\, 30^\circ}{ 0.4 \times 1.22 \times 1.2 } } = 34.2\text{ m/s}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Now, we work with the equation of motion, Eq. <a href="forces-Drag-Force.html#eq-skier-down-slope-against-drag-main" class="xref" data-knowl="./knowl/xref/eq-skier-down-slope-against-drag-main.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.27">(6.27)</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-skier-down-slope-against-drag-main.html ./knowl/xref/eq-skier-down-slope-against-drag-main-b.html">
+\begin{equation*}
+m \frac{dv_x}{dt} = m g \sin\theta - \frac{1}{2} C_D \rho A v_x^2.
+\end{equation*}
+</div>
+<div class="para">Let’s divide by <span class="process-math">\(m\)</span> and replace myriad constants by symbols.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-skier-down-slope-against-drag-main.html ./knowl/xref/eq-skier-down-slope-against-drag-main-b.html">
+\begin{equation}
+\frac{dv_x}{dt} = a - b v_x^2,\tag{6.28}
+\end{equation}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-skier-down-slope-against-drag-main.html ./knowl/xref/eq-skier-down-slope-against-drag-main-b.html">
+\begin{equation*}
+a = g \sin\theta,\ \ \ b = \frac{1}{2m} C_D \rho A.
+\end{equation*}
+</div>
+<div class="para">Note that <span class="process-math">\(v_t = \sqrt{a/b}\text{.}\)</span> Rearrange Eq. <a href="forces-Drag-Force.html#eq-skier-down-slope-against-drag-main-b" class="xref" data-knowl="./knowl/xref/eq-skier-down-slope-against-drag-main-b.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.28">(6.28)</a> and integrate from <span class="process-math">\(t=0\)</span> to <span class="process-math">\(t\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-skier-down-slope-against-drag-main.html ./knowl/xref/eq-skier-down-slope-against-drag-main-b.html">
+\begin{equation*}
+\int_0^v \frac{d v_x}{ a - b v_x^2 } = \int_0^t dt.
+\end{equation*}
+</div>
+<div class="para">This gives (with <span class="process-math">\(v_t = \sqrt{a/b}\)</span>):</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-skier-down-slope-against-drag-main.html ./knowl/xref/eq-skier-down-slope-against-drag-main-b.html">
+\begin{equation}
+v = v_t \tanh(b v_t t ).\tag{6.29}
+\end{equation}
+</div>
+<div class="para">Now, using the numerical values we get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-skier-down-slope-against-drag-main.html ./knowl/xref/eq-skier-down-slope-against-drag-main-b.html">
+\begin{equation*}
+v = (34.3\text{ m/s})\; \tanh( 0.143\; t).
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">(c)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Now, we integrate Eq. <a href="forces-Drag-Force.html#eq-skier-down-slope-against-drag-main-b-ans" class="xref" data-knowl="./knowl/xref/eq-skier-down-slope-against-drag-main-b-ans.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.29">(6.29)</a> to get the distance <span class="process-math">\(\Delta x\)</span> on the slope.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-skier-down-slope-against-drag-main-b-ans.html">
+\begin{equation*}
+\Delta x = \int_0^t v dt = \int_0^t v_t \tanh(b v_t t )  dt. 
+\end{equation*}
+</div>
+<div class="para">This gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-skier-down-slope-against-drag-main-b-ans.html">
+\begin{equation*}
+\Delta x = \frac{1}{b} \log( \cosh( b v_t t ) ).
+\end{equation*}
+</div>
+<div class="para">Now, using the numerical values we get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-skier-down-slope-against-drag-main-b-ans.html">
+\begin{equation*}
+\Delta x = (239\text{ m})  \ln( \cosh(  0.143\; t ) ).
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="forces-Drag-Force.html#ex-Speed-and-Distance-on-a-Skier-Subject-to-Inertial-Drag-Force">in-context</a></span>
+</body>
+</html>

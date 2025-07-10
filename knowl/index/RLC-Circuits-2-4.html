@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para"> In AC circuit analysis, we are interested in only the <dfn class="terminology">steady state solution</dfn>, which we recall now.  In steady state, current oscillates with the same frequency <span class="process-math">\(\omega\text{,}\)</span> but its phase constant may be different than the phase constant of the source emf. Therefore, we seek solution of the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-equation-of-motion-RLC.html">
+\begin{equation}
+I(t) = I_0\:\cos(\omega t + \phi_I).\tag{41.32}
+\end{equation}
+</div>
+<div class="para">We find <span class="process-math">\(I_0\)</span> and <span class="process-math">\(\phi_I\)</span> that solves Eq. <a href="RLC-Circuits.html#eq-equation-of-motion-RLC" class="xref" data-knowl="./knowl/xref/eq-equation-of-motion-RLC.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 41.31">(41.31)</a> by inserting <span class="process-math">\(I(t)\)</span> in that equation, expanding the trig functions, collecting terms that multiply <span class="process-math">\(\sin(\omega t)\)</span> and <span class="process-math">\(\cos(\omega t)\text{.}\)</span> We then equate the multipliers of <span class="process-math">\(\sin(\omega t)\)</span> and <span class="process-math">\(\cos(\omega t)\)</span> from both sides. These steps are left as an exercise for the student. In the end, you will find the following answer.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-equation-of-motion-RLC.html">
+\begin{align}
+\amp I_0 = \dfrac{V_0}{\sqrt{R^2 + \left(\omega L - \dfrac{1}{\omega C} \right)^2}},\tag{41.33}\\
+\amp \tan\,\phi_I = \dfrac{1}{\omega RC} -  \dfrac{\omega L}{R}.\tag{41.34}
+\end{align}
+</div>
+<div class="para">By taking the ratio of <span class="process-math">\(V_0\)</span> to <span class="process-math">\(I_0\)</span> we determine the amplitude of the impedance <span class="process-math">\(|Z|\)</span> of the series RLC circuit to be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-equation-of-motion-RLC.html">
+\begin{equation}
+|Z| = \sqrt{R^2 + \left( \omega L - \dfrac{1}{\omega C}\right)^2}.\tag{41.35}
+\end{equation}
+</div>
+<div class="para">From the phase of current with respect to the phase of the source we get the phase of impedance, <span class="process-math">\(\phi_Z\)</span> to be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-equation-of-motion-RLC.html">
+\begin{equation}
+\phi_Z =  -\tan^{-1} \left( \dfrac{1}{\omega RC} -  \dfrac{\omega L}{R} \right).\tag{41.36}
+\end{equation}
+</div>
+<div class="para">Due to the presence of <span class="process-math">\(L\)</span> and <span class="process-math">\(C\)</span> in the circuit, we expect electromagnetic oscillations in the circuit and due to <span class="process-math">\(R\)</span> we expect damping of the oscillations.  We had found in the last chapter that the series RLC circuit connected to a sinusoidal source is equivalent to a driven damped oscillator.</div>
+</div>
+<span class="incontext"><a class="internal" href="RLC-Circuits.html#RLC-Circuits-2-4">in-context</a></span>
+</body>
+</html>

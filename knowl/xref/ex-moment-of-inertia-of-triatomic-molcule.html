@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Principal Moment of Inertia of Water Molecule.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">Use symmetry arguments to guess principal axes and find moments of inertia about them for a water molecule with <span class="process-math">\(m_1=m_3=m\)</span> and <span class="process-math">\(m_2=M\)</span> and <span class="process-math">\(l\)</span> being the bond length and <span class="process-math">\(\theta\)</span> angle between the bonds. Use <span class="process-math">\(a=l\sin\theta/2\)</span> and <span class="process-math">\(h=l\cos\theta/2\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/rotation-general/water-molecule-moment-of-inertia.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.31<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use definition.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(I_{xx}\frac{2mM h^2}{M + 2m}\text{,}\)</span> <span class="process-math">\(I_{yy}=2 m a^2\text{,}\)</span> <span class="process-math">\(I_{zz} = I_{xx} + I_{yy}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">In <a href="sec-principal-axes.html#fig-water-molecule-moment-of-inertia-sol" class="xref" data-knowl="./knowl/xref/fig-water-molecule-moment-of-inertia-sol.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.32">Figure 10.32</a> two principal axes are shown; <span class="process-math">\(z\)</span>-axis is coming out of the page. I have used symmetry to place CM at the center of the horizontal divider. By placing <span class="process-math">\(2m\)</span> at <span class="process-math">\(Q\)</span> and <span class="process-math">\(M\)</span> at <span class="process-math">\(P\text{,}\)</span> we get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-water-molecule-moment-of-inertia-sol.html">
+\begin{equation*}
+\bar{OP} = \frac{2m\,l\cos(\theta/2) }{M+2m} = \frac{2mh}{M+2m}. 
+\end{equation*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/rotation-general/water-molecule-moment-of-inertia-sol.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.32<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="para">Distance <span class="process-math">\(OQ\)</span> will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\bar{OQ} = h - \bar{OP} = \frac{M\,h }{M+2m}. 
+\end{equation*}
+</div>
+<div class="para">The horizontal distance of masses <span class="process-math">\(m\)</span> are <span class="process-math">\(a = l\sin(\theta/2)\text{.}\)</span> Now, we write Cartesian coordinates of the three masses, with <span class="process-math">\(m_1\)</span> being the lower left corner.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp x_1 = - a,\ \ y_1 = -  \frac{M\,h }{M+2m},\ \ z_1 = 0.\\
+\amp x_2 = 0,\ \ y_2 = \frac{2m\,h }{M+2m},\ \ z_2 = 0.\\
+\amp x_3 = + a = -x_1,\ \ y_3 = -  \frac{M\,h}{M+2m}=y_1,\ \ z_3 = 0.
+\end{align*}
+</div>
+<div class="para">The diagonal components of moment of inertia will be</div>
+<div class="displaymath process-math">
+\begin{align*}
+I_{xx} \amp = m_1 (y_1^2 + z_1^2) + m_2 (y_2^2 + z_2^2) + m_3 (y_3^2 + z_3^2)  \\
+\amp =  2m \left(\frac{M\,h }{M+2m}\right)^2  + M \left( \frac{2m\,h }{M+2m}\right)^2\\
+\amp =  \frac{2mM h^2}{M + 2m}. 
+\end{align*}
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+I_{yy} \amp = m_1 (x_1^2 + z_1^2) + m_2 (x_2^2 + z_2^2) + m_3 (x_3^2 + z_3^2)  \\
+\amp = 2m a^2  + M \times 0   =  2 m a^2.
+\end{align*}
+</div>
+<div class="para">Since this is a coplanar system, we must have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_{zz} = I_{xx} + I _{yy} = 2m a^2  + \frac{2mM\,h^2 }{M+2m}.
+\end{equation*}
+</div>
+<div class="para">We can verify it by carrying out calculation explicitly.</div>
+<div class="displaymath process-math">
+\begin{align*}
+I_{zz} \amp = m_1 (x_1^2 + y_1^2) + m_2 (x_2^2 + y_2^2) + m_3 (x_3^2 + y_3^2)  \\
+\amp = 2m a^2 + 2m \left( \frac{M\,h }{M+2m} \right)^2 + M \left( \frac{2m\,h }{M+2m} \right)^2  \\
+\amp =  2m a^2  + \frac{2mM\,h^2 }{M+2m}.  
+\end{align*}
+</div>
+<div class="para">Let’s work out one of th eoff-diagonal components. Let’s say we want <span class="process-math">\(I_{xy}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+I_{xy} \amp = - m_1 x_1 y_1 - m_2 x_2 y_2 - m_3  x_3 y_3 \\
+\amp = - m x_1 y_1 - 0  - m (-x_1) (y_1) = 0.
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="sec-principal-axes.html#ex-moment-of-inertia-of-triatomic-molcule">in-context</a></span>
+</body>
+</html>

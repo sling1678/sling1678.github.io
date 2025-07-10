@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Work for Pushing a Wooden Block Under Water.</span>
+</h4>
+<div class="para">A cubic wooden block (density <span class="process-math">\(0.9\)</span>) of side <span class="process-math">\(5\text{ cm}\)</span> is placed in water.</div> <div class="para">(a) How much of the block is under water?</div> <div class="para">(b) (Calculus) The block is then pushed down by a force which balances the increase in the buoyancy force at each instant.  What is the total work needed to fully submerge the block?</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Balance weight by buoyancy force, (b) You will find that the force when an amount <span class="process-math">\(y\)</span> is pushed in, depends on <span class="process-math">\(y\text{.}\)</span> You can integrate over <span class="process-math">\(y\)</span> to get the force - similar to the way you get the work by the spring force.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(4.5\text{ cm}\text{,}\)</span> (b) <span class="process-math">\(0.003\text{ J}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(a)  Let <span class="process-math">\(a\)</span> denote the side of the cube, <span class="process-math">\(\rho\)</span> the density of the wood and <span class="process-math">\(\rho_0\)</span> the density of water. Let <span class="process-math">\(h_0\)</span> be the height submerged when freely floating.  Balancing the buyoancy force with the weight of the block gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(a^2 h_0) \rho_0 g = a^3 \rho g.
+\end{equation*}
+</div>
+<div class="para">Solving for <span class="process-math">\(h_0\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+h_0 = \left(  \dfrac{ \rho}{\rho_0} \right) a.
+\end{equation*}
+</div>
+<div class="para">Putting in the numbers given we find the height submerged is</div>
+<div class="displaymath process-math">
+\begin{align*}
+h_0 \amp = \left( \dfrac{ 0.9\ \text{g/cc}}{1.0\ \text{g/cc}} \right) 5\ \text{cm}\\
+\amp  = 4.5\ \text{cm}. 
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para">(b) The force needed to push in the block depends on the level of submersion.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para logical">
+<div class="para">For instance, suppose you choose a coordinate system such that <span class="process-math">\(y\)</span> axis is pointed up and  the center of the block is at the origin when the block is submerged by <span class="process-math">\(h_0\text{,}\)</span> then the force to push in will depend on the <span class="process-math">\(y\)</span>-coordinate of the center of the block.  The <span class="process-math">\(y\)</span>-component of the force applied will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+F_y = - (a^2 y) \rho_0 g.
+\end{equation*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><img src="external/./images/static-fluid/wooden-block-pushed-down-solution-b.png" class="contained"></div>
+</div></div> The change in the <span class="process-math">\(y\)</span>-coordinate to fully submerge the block  will be<div class="displaymath process-math">
+\begin{equation*}
+\Delta y = -(a-h_0).
+\end{equation*}
+</div>The work done by the applied force to fully submerge the block can be obtained by the area under the curve or integral. Doing the integral for force that varies with displacement gives<div class="displaymath process-math">
+\begin{align*}
+W \amp = \int _0^{\Delta y} F_y dy = \frac{1}{2}  a^2  \rho_0 g (\Delta y)^2\\
+\amp = \frac{1}{2}  a^2 (a-h_0)^2 \rho_0 g. 
+\end{align*}
+</div>Putting in the numbers we find<div class="displaymath process-math">
+\begin{align*}
+W \amp =  \frac{1}{2} \times 0.05^2 (0.05-0.045)^2 \times 1000 \times 9.81 \\
+\amp =3.07\times 10^{-4}\ \text{J}. 
+\end{align*}
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Archimedes-Principle.html#ex-Work-for-Pushing-a-Wooden-Block-Under-Water">in-context</a></span>
+</body>
+</html>

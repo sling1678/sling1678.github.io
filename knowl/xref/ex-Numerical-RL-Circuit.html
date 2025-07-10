@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Numerical RL-Circuit.</span>
+</h4>
+<div class="para">A <span class="process-math">\(200\text{-}\Omega\)</span> resistor is connected to a <span class="process-math">\(2\text{-mH}\)</span> inductor and a <span class="process-math">\(10\text{-V}\)</span> source in series.  The voltage source is turned on at <span class="process-math">\(t=0\text{,}\)</span> and the current starts to build.</div> <div class="para">(a) Determine the value of steady current.</div> <div class="para">(b) What is the voltage drop across the inductor when steady current flows through it?</div> <div class="para">(c) What is the voltage drop across the resistor at steady state?</div> <div class="para">(d) Determine the time it will take to build to <span class="process-math">\(50\%\)</span> of the steady current in the circuit.</div> <div class="para">(e) Determine the time it will take to build <span class="process-math">\((1-1/e)\times100\%\)</span> of the steady current.</div> <div class="para">(f) Determine the time it will take to build to <span class="process-math">\(90\%\)</span> of the steady current.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">USe solution of series RL-circuit.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a)  <span class="process-math">\(5.0\times 10^{-2}\, \text{A}\text{,}\)</span> (b) <span class="process-math">\(0\text{,}\)</span> (c) <span class="process-math">\(10\,\text{V}\text{,}\)</span> (d)  <span class="process-math">\(6.93\:\mu\text{s}\text{,}\)</span>  (e) <span class="process-math">\(10\:\mu\text{s} \text{,}\)</span> (f)  <span class="process-math">\(23\:\mu\text{s}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">As <span class="process-math">\(t\)</span> becomes large we reach a steady current in the circuit given by voltage of the source and the net resistance.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_{\text{max}} = \dfrac{V}{R} = 5.0\times 10^{-2}\:\text{A}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">When current is steady, its derivative with time is zero. Hence, no voltage will drop across the inductor, assuming the inductor has only negligible resistance.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_L = 0.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Whe steady current is flowing, the circuit is like a DC circuit with resitor only. Hence, all voltage of the source must drop across the resistor.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_R = 10\text{ V}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span><span class="space"> </span><span class="title">d</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">The time constant of an <span class="process-math">\(RL\)</span> circuit is <span class="process-math">\(\tau = \mathcal{L}/R = 10^5\text{ s}\text{.}\)</span> Therefore, current in the <span class="process-math">\(RL\)</span> circuit rises according to the following</div>
+<div class="displaymath process-math">
+\begin{align*}
+I(t) \amp =  I_{\text{max}}\left(1 - e^{-t/\tau} \right)\\
+\amp  =  0.05\:\text{A}\:\left(1 - e^{-10^5 t} \right). 
+\end{align*}
+</div>
+<div class="para">Therefore the time to get to <span class="process-math">\(50\%\)</span> of the max will be given by <span class="process-math">\(t\)</span> in the following equation.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{I}{I_{\text{max}}} = 0.5 =  1 - e^{-10^5 t}.
+\end{equation*}
+</div>
+<div class="para">You can solve this for <span class="process-math">\(t\)</span> by rearranging and taking natural log of both side.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ln(e^{-10^5 t})  = \ln(1-0.5).
+\end{equation*}
+</div>
+<div class="para">This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t = \frac{\ln(2)}{10^{5}} = \frac{0.693}{10^5} = 6.93\times 10^{-6}\,\text{sec}.
+\end{equation*}
+</div>
+<div class="para">Hence, <span class="process-math">\(t=6.93\:\mu\text{s}\text{.}\)</span>
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">5</span><span class="period">.</span><span class="space"> </span><span class="title">e</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="displaymath process-math">
+\begin{equation*}
+I_{\text{max}}\left(1 - e^{-1} \right)  =   I_{\text{max}}\left(1 - e^{-10^5t} \right) \text{ gives }
+\end{equation*}
+</div>
+<div class="para">This gives <span class="process-math">\(t= 10\,\mu\text{s}.\)</span>
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">6</span><span class="period">.</span><span class="space"> </span><span class="title">f</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Now, time <span class="process-math">\(t\)</span> will satisfy the following condition.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.9\:I_{\text{max}}\left(1 - e^{-1} \right)  =   I_{\text{max}}\left(1 - e^{-10^5 t} \right)
+\end{equation*}
+</div>
+<div class="para">This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t= 23\, \mu\text{s}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Inductance-in-Circuits.html#ex-Numerical-RL-Circuit">in-context</a></span>
+</body>
+</html>

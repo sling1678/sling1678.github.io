@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">11.22</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Freely Falling Particle in an Earth-Based Frame.</span>
+</h3>
+<div class="para">The rotation of earth has observable effects on falling objects. In this example, we will look at the motion of a particle dropped from a height <span class="process-math">\(h\)</span> at the Equator as illustrated in <a href="sec-physics-in-earth-frame.html#fig-earth-frame-particle-deflect-earth-rotation-1" class="xref" data-knowl="./knowl/xref/fig-earth-frame-particle-deflect-earth-rotation-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 11.23">Figure 11.23</a>. We will look at the motion from two coordinate systems, fixed system <span class="process-math">\(Oxyz\)</span> and a rotating system <span class="process-math">\(O'x'y'z'\text{,}\)</span> which rotates at the angular speed of the Earth.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">In fixed-coordinate system particle will fall directly towards the center of Earth, say on <span class="process-math">\(x\)</span>-axis. But, because the Earth is rotating, the motion will have horizontal displacement, say in <span class="process-math">\(xy\)</span>-plane with both <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> motion. The horizontal motion is called deviation.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/noninertial-frame/particle-deflect-earth-rotation-1.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">11.23<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>  <div class="para"> Suppose a particle of mass <span class="process-math">\(m\)</span> is released at <span class="process-math">\(t=0\)</span> from rest at <span class="process-math">\(x=x'=h+R\text{.}\)</span> We assume that <span class="process-math">\(O'x'y'z'\)</span> coincides  <span class="process-math">\(Oxyz\)</span> at <span class="process-math">\(t=0\text{.}\)</span>  In the inertial frame the particle moves straight down the <span class="process-math">\(x\)</span>-axis and reaches <span class="process-math">\(x=R\)</span> at some time <span class="process-math">\(t=\Delta t\text{.}\)</span>  During <span class="process-math">\(\Delta t\text{,}\)</span> <span class="process-math">\(x'\)</span> and <span class="process-math">\(y'\)</span> axes of the rotating frame move out to another direction as shown in  <a href="sec-physics-in-earth-frame.html#fig-earth-frame-particle-deflect-earth-rotation-1" class="xref" data-knowl="./knowl/xref/fig-earth-frame-particle-deflect-earth-rotation-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 11.23">Figure 11.23</a>.</div> <div class="para logical">
+<div class="para">Since rotation is about the <span class="process-math">\(z\)</span>-axis, the particle will fall in the <span class="process-math">\(x'y'\)</span> plane of the rotating frame.  We wish to determine the <span class="process-math">\(y'\)</span> component of the displacement when the particle has dropped a distance of <span class="process-math">\(h\)</span> in the inertial frame.  We start by writing the components of the equation in the rotating frame.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp \frac{dv'_{x}}{dt} = -g-\left( 2\vec\Omega\times\vec v_{rot} \right)_{x'}\\
+\amp \frac{dv'_{y}}{dt} = 0-\left( 2\vec\Omega\times\vec v_{rot} \right)_{y'}\\
+\amp \frac{dv'_{z}}{dt} = 0-\left( 2\vec\Omega\times\vec v_{rot} \right)_{z'}
+\end{align*}
+</div>
+<div class="para">The <span class="process-math">\(x'\)</span> and <span class="process-math">\(y'\)</span> components of the Coriolis and centrifugal terms are as follows.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec \Omega \times \vec v_{rot} = 
+=-\Omega v_{x'} \hat u_{y'}  + \Omega v_{x'} \hat u_{z'}.
+\end{equation*}
+</div>
+<div class="para">Hence the equations of motion of the particle are:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp \frac{dv_{x'}}{dt} = -g- 2\Omega v_{y'}\\
+\amp \frac{dv_{y'}}{dt} = 2\Omega v_{x'}\\
+\amp \frac{dv_{z'}}{dt} = 0
+\end{align*}
+</div>
+<div class="para">Solving these equations with the initial condition <span class="process-math">\(x' = h+R\text{,}\)</span> <span class="process-math">\(y'=0\text{,}\)</span> <span class="process-math">\(z'=0\text{,}\)</span> and <span class="process-math">\(v_{0x'}=v_{0y'}=v_{0z'}=0\)</span> will give us the trajectory of the particle from the perspective of the rotating frame, i.e., from someone observing the particle from Earth-based frame.  Since there is no motion along the <span class="process-math">\(z\)</span>-axis, we will work out the solution for <span class="process-math">\(x'\)</span> and <span class="process-math">\(y'\)</span> components only.</div>
+</div> <div class="para logical">
+<div class="para">
+<em class="alert">Approximate solution:</em>  Observe that the particle will pick up velocity more along the vertical direction than along the horizontal direction.  Therefore, we can assert that in time <span class="process-math">\(t\text{,}\)</span> <span class="process-math">\(|v_x'|\approx gt\text{.}\)</span> Using this in <span class="process-math">\(v_x'\)</span> equation, we find the following for <span class="process-math">\(v_y'\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{dv_{y'}}{dt}\approx - 2 \Omega g t\ \ \Longrightarrow\ \ v_{y'} =-\Omega g t^2,
+\end{equation*}
+</div>
+<div class="para">where we have used the initial condition on <span class="process-math">\(v_{y'}\text{.}\)</span> Integrating <span class="process-math">\(v_{x'}\)</span> and <span class="process-math">\(v_{y'}\)</span> we obtain the following for <span class="process-math">\(x'\)</span> and <span class="process-math">\(y'\)</span> coordinates after the particle is released at (<span class="process-math">\(x'= h+R\text{,}\)</span> <span class="process-math">\(y'=0\)</span>) at <span class="process-math">\(t=0\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp x'=h+R-\frac{1}{2}gt^2\\
+\amp y'=-\frac{1}{3} \Omega g t^3
+\end{align*}
+</div>
+<div class="para">From the <span class="process-math">\(x'\)</span> equation we can determine the time <span class="process-math">\(T\)</span> for the particle to the surface of Earth, which has <span class="process-math">\(x' = R\text{.}\)</span>  Using this time in the <span class="process-math">\(y'\)</span> equation we find the horizontal deviation  <span class="process-math">\(y'\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta y' = - \frac{1}{3}\Omega g \left(\frac{2h}{g} \right)^{3/2}.
+\end{equation*}
+</div>
+<div class="para">For a 100 meter drop we will find the deviation to be</div>
+<div class="displaymath process-math">
+\begin{align*}
+\Delta y' \amp = - \frac{1}{3}\frac{2\pi}{24\times 3600\ s} \times 9.81\ \text{m/s}^2 \times \left(\frac{2\times 100\  \text{m}}{9.81\ \text{m/s}^2} \right)^{3/2}\\
+\amp = -2.2\times10^{-2}\  \text{m}.
+\end{align*}
+</div>
+<div class="para">Since the rotation axis is towards the North, the <span class="process-math">\(y'\)</span> axis is towards the East at the surface of the Earth.  Therefore, a particle dropped from <span class="process-math">\(100\  \text{m}\)</span> above the ground will land approximately <span class="process-math">\(2.2\text{ cm}\)</span> to the West of the line connecting the original position to the center of the Earth. <figure class="figure figure-like"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/./images/noninertial-frame/foucault-pendulum.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">11.24<span class="period">.</span></span><span class="space"> </span>Foucault pendulum. The rotation of the Earth causes the plane of oscillation of the pendulum to change over time. With changing plane of oscillation, the pins at different positions are knocked down at different times. Photo credit: Ciudad de las Artes y de las Ciencias de Valencia by Daniel Sancho, Wikicommons.</figcaption></figure>
+</div>
+</div></article><span class="incontext"><a class="internal" href="sec-physics-in-earth-frame.html#ex-Freely-Falling-Particle-in-an-Earth-Based-Frame">in-context</a></span>
+</body>
+</html>

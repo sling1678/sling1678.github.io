@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Electrostatic Energy of Uniformly Charge Sphere.</span>
+</h4>
+<div class="para">A sphere of radius <span class="process-math">\(R\)</span> is uniformly charged with total charge <span class="process-math">\(q\text{.}\)</span> What is the electrostatic energy?</div> <div class="para">Hint: Electric potential at a point inside the sphere = <span class="process-math">\(\dfrac{1}{4\pi\epsilon_0} \dfrac{q}{R} \left( \dfrac{3}{2} - \dfrac{1}{2}\; \dfrac{r_{\text{in}}^2}{R^2} \right)\text{.}\)</span> See <a href="Electric-Potential-and-Electric-Field.html#ex-Potential-of-Uniformly-Charged-Sphere" class="xref" data-knowl="./knowl/xref/ex-Potential-of-Uniformly-Charged-Sphere.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 31.7.5.4: (Calculus)  Potential of Uniformly Charged Sphere">Exercise 31.7.5.4</a>.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use the potential for inside points.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\dfrac{\rho q R^2}{5\epsilon_0} \text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">To calculate the electrostatic energy of a continuous charge distribution, we can use the formula of potential by these charges at points inside the sphere, which is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi =\dfrac{1}{4\pi\epsilon_0} \dfrac{q}{R} \left( \dfrac{3}{2} - \dfrac{1}{2}\; \dfrac{r_{\text{in}}^2}{R^2} \right)\ \ \ (r \le R)
+\end{equation*}
+</div>
+<div class="para">Since the potential and charge are spherical, the integral simplifies to integral over <span class="process-math">\(r\)</span> only with <span class="process-math">\(dV = 4\pi r^2 dr\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+U \amp = \dfrac{1}{2}\iiint \rho \phi dV\\
+\amp =  \dfrac{4\pi}{2}\, \rho\, \dfrac{q}{4\pi\epsilon_0 R}  \int_0^R \left( \dfrac{3}{2} - \dfrac{1}{2}\; \dfrac{r^2}{R^2} \right)r^2 dr \\
+\amp =  \dfrac{\rho q R^2}{5\epsilon_0}. 
+\end{align*}
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="section-electrostatic-energy.html#ex-Electrostatic-Energy-of-Uniformly-Charge-Sphere">in-context</a></span>
+</body>
+</html>

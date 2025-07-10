@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Steady Flow of Water Through Pipes in a House.</span>
+</h4>
+<div class="para">A water supply pipe to a house has an internal diameter of 4 cm.  The second floor of the house has water pipe of diameter 2 cm.</div> <div class="para">(a) If water flows at the speed of 10 m/s from the pipe at the second floor, what is the speed of flow in the supply line?</div> <div class="para">(b) What is the volume rate of flow?</div> <div class="para">(c) What does current equal to?</div> <div class="para">Data: <span class="process-math">\(\rho_w = 1000\text{ kg/m}^3\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Use <span class="process-math">\(A_1v_1 = A_2v_2\text{,}\)</span> (b) <span class="process-math">\(Q=Av\text{,}\)</span> (c) <span class="process-math">\(I = \rho Q\text{.}\)</span>
+</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(2.5\text{ m/s}\text{,}\)</span> (b) <span class="process-math">\(3.14\text{ L/s}\text{,}\)</span> (c) <span class="process-math">\(3.14\text{kg/s}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(a) Using the speed of flow and the internal diameter for the pipe from the data for the second floor we find the volume rate of flow anywhere in the same pipe regardless the diameter of the pipe.</div>
+<div class="displaymath process-math">
+\begin{align*}
+Av \amp = \pi r^2 v = \pi\times (0.001\ \text{m})^2 \times 10\ \text{m/s}\\
+\amp =  \pi \times 10^{-5} \text{m}^3/\text{s}.
+\end{align*}
+</div>
+<div class="para">Now we can divide this by the area of cross-section of the supply line to find the speed of flow there.</div>
+<div class="displaymath process-math">
+\begin{align*}
+v_{\text{supply}} \amp = \dfrac{ \pi \times 10^{-5} \text{m}^3/\text{s}}{\pi (0.002\ \text{m})^2}\\
+\amp = 2.5 \ \text{m/s}.
+\end{align*}
+</div>
+<div class="para"><em class="alert">Better Way:</em></div>
+</div> <div class="para">Although we have the correct answer here, but you may have noticed that there were quite a lot of cancellations in the calculations.  In these calculations and actually many other places in physics putting the numbers right away is not a good idea.  We should get to the final expression first before putting in the numbers.  Let us do this problem again.</div> <div class="para logical">
+<div class="para">Let us label the quantities in the supply line with a subscript 1 and that in the second floor by the subscript 2.  Then, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A_1 v_1 = A_2 v_2.
+\end{equation*}
+</div>
+<div class="para">We are looking for <span class="process-math">\(v_1\text{.}\)</span>  Let us solve for <span class="process-math">\(v_1\)</span>  and keep the ratio the same type of quanties together.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_1 = \frac{A_2}{A_1} v_2.
+\end{equation*}
+</div>
+<div class="para">Note that keeping <span class="process-math">\(A_1\)</span>  and <span class="process-math">\(A_2\)</span>  together means that we do not need to worry about the particular units of <span class="process-math">\(A_1\)</span>  and <span class="process-math">\(A_2\)</span>  as long as they are both in the same units since the units will cancel out.  Also any common factor will cancel out.  Now we can write this formula in terms of the diameters.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_1 = \left( \frac{d_2}{d_1} \right)^2 v_2.
+\end{equation*}
+</div>
+<div class="para">At this point we would plug in the numbers.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_1 = \left( \frac{2 \ \text{cm}}{4\ \text{cm}} \right)^2 \times 10\ \text{m/s} = 2.5 \ \text{m/s}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(b) The volume rate of flow is <span class="process-math">\(Av\text{,}\)</span> which can be determined from flow either in the supply line or the second floor.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A_2v_2 = \pi r^2 v = \pi\times (0.01\ \text{m})^2 \times 10\ \text{m/s} = 3.14 \times 10^{-3} \text{m}^3/\text{s}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">(c)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(c) The current in the present context refers to the mass rate of flow which would be equal to the product of the volume rate of flow and the density.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Current},\ 
+A_2v_2 \rho = 3.14\  \text{kg}/\text{s}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="fluid-flow.html#ex-Steady-Flow-of-Water-Through-Pipes-in-a-House">in-context</a></span>
+</body>
+</html>

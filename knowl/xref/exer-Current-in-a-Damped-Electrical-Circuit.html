@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Current in a Damped Electrical Circuit.</span>
+</h4>
+<div class="para">A capacitor (<span class="process-math">\(C = 1.6\,\mu\text{F}\)</span>) is connected across a <span class="process-math">\(12\text{-V}\)</span> battery and charged to maximum.  The charge capacitor is then disconnected and connected to a resistor (<span class="process-math">\(R = 10\,\Omega\)</span>) and inductor (<span class="process-math">\(L = 4\, \text{mH}\)</span>) in series.  Plot the current in the circuit with time up to <span class="process-math">\(= 30\,\sqrt{LC}\text{.}\)</span>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">We need the dynamical solution before we can plot.  As we have seen above, the solution of a damped oscillator depends on whether it is under-damped, critically damped or over-damped.  So, we first calculate the parameters of the damped oscillator.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-ex-4-mathematica-plot-current.html">
+\begin{align*}
+\amp \beta = \dfrac{R}{2L} = \dfrac{10\:\Omega}{2\times 4\times 10^{-3}\:\textrm{H}} = 1,250\:\textrm{sec}^{-1},\\
+\amp \omega_0 = \dfrac{1}{\sqrt{LC}} = \dfrac{1}{4\times 10^{-3}\:\textrm{H}\times 1.6\times 10^{-6}\:\textrm{F}} = 12,500\:\textrm{sec}^{-1}. 
+\end{align*}
+</div>
+<div class="para">Hence, the oscillator is under-damped.  The initial conditions on <span class="process-math">\(V_C\)</span> and current in the circuit are:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-ex-4-mathematica-plot-current.html">
+\begin{equation*}
+V_C(0) = 12\:\textrm{V},\ \ I(0) = \dfrac{dQ}{dt} = C\:\dfrac{dV_C}{dt} = 0.  
+\end{equation*}
+</div>
+<div class="para">We use these conditions to find <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> in the solution.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-ex-4-mathematica-plot-current.html">
+\begin{equation*}
+V_C(t) = \left[ A\:\cos(\omega_1 t) + B\:\cos(\omega_1 t) \right]\: e^{-\beta t},
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\omega_1 = \sqrt{\omega_0^2 - \beta^2} = 12437\:\textrm{sec}^{-1}\text{.}\)</span> The initial conditions give us the following relations for <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-ex-4-mathematica-plot-current.html">
+\begin{equation*}
+A = 12\:\textrm{V},\ \ B = \dfrac{\beta}{\omega_1}\: A = \dfrac{1,250\:\textrm{sec}^{-1}}{12437\:\textrm{sec}^{-1}}\: 12\:\textrm{V} = 1.21\:\textrm{V}.
+\end{equation*}
+</div>
+<div class="para">Hence, the <span class="process-math">\(V_C(t)\)</span> will be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-ex-4-mathematica-plot-current.html">
+\begin{equation*}
+V_C(t) = \left[12\:\textrm{V}\:\cos(12437 t) + 1.21\:\textrm{V}\:\sin(12437 t) \right]\:e^{-1250 t}.
+\end{equation*}
+</div>
+<div class="para">The current in the circuit will be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-ex-4-mathematica-plot-current.html">
+\begin{equation*}
+I(t) = C\:\dfrac{dV_C}{dt}.
+\end{equation*}
+</div>
+<div class="para">We can now plot <span class="process-math">\(I(t)\)</span> versus <span class="process-math">\(t\)</span> in <a href="Damping-by-Resistance.html#fig-ex-4-mathematica-plot-current" class="xref" data-knowl="./knowl/xref/fig-ex-4-mathematica-plot-current.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 40.21">Figure 40.21</a>.</div>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/./images/em-oscillations/ex-4-mathematica-plot-current.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">40.21<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div></details></div></article><span class="incontext"><a class="internal" href="Damping-by-Resistance.html#exer-Current-in-a-Damped-Electrical-Circuit">in-context</a></span>
+</body>
+</html>

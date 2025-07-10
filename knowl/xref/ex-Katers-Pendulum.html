@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Kater’s Pendulum.</span>
+</h4>
+<div class="para">To determine the value of acceleration due to gravity from a physical pendulum one needs to determine the time period and the moment of inertia of the pendulum. However, the moment of inertia is usually difficult to determine experimentally. The Kater’s pendulum is a special physical pendulum that removes the necessity of knowing the moment of inertia by using the periods from two suspension points.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:60%;"><div class="para">The  Kater’s pendulum  consists of a long metallic rod with a slide-able weight on the rod. The pendulum has two knife edges at two ends that are used to suspend the pendulum from a support with a hole over which the knife edge rests. By adjusting the pivot points and the mass distribution over the rod, it is possible to obtain a configuration such that the time periods of oscillations about the two suspension points <span class="process-math">\(O_1\)</span> and <span class="process-math">\(O_2\)</span> are equal.</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:25%;"><img src="external/./images/simple-harmonic-motion/bc-fig-katers-pendulum.png" class="contained"></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+</div></div> <div class="para">Let <span class="process-math">\(k\)</span> be radius of gyration of the pendulum, <span class="process-math">\(l_1\)</span> and <span class="process-math">\(l_2\)</span> the distances from the center of gravity to the suspensions <span class="process-math">\(\text{O}_1\)</span> and <span class="process-math">\(\text{O}_2\)</span> respectively.  Let <span class="process-math">\(T_1\)</span> and <span class="process-math">\(T_2\)</span> be the time periods of oscillations when Kater’s pendulum is hung from knife edges <span class="process-math">\(O_1\)</span> and <span class="process-math">\(O_2\)</span>  respectively.</div> <div class="para">(a) Find the time periods <span class="process-math">\(T_1 \)</span> and <span class="process-math">\(T_2\)</span> in terms of <span class="process-math">\(l_1,\ l_2,\ k\text{,}\)</span>  and <span class="process-math">\(g \text{.}\)</span>
+</div> <div class="para">(b) Prove that when the time periods are equal, the period is given by <span class="process-math">\(T = 2\pi \sqrt{\frac{L}{g}}\text{,}\)</span> where <span class="process-math">\(L=l_1+l_2\text{,}\)</span> the distance between the two knife edges.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Use <span class="process-math">\(I_1 = I_\text{cm} + Ml_1^2\)</span> with <span class="process-math">\(I_\text{cm}=Mk^2\text{.}\)</span> (b) Set <span class="process-math">\(T_1=T_2\text{,}\)</span> solve for <span class="process-math">\(k^2\text{,}\)</span> and use that <span class="process-math">\(k^2\text{.}\)</span>
+</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(T_i = 2\pi\,\sqrt{ \dfrac{k^2 +l_i^2}{gl_i} }\text{,}\)</span> <span class="process-math">\(i=1,2\text{,}\)</span> (b) Answer already given.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(a) From the definition of radius of gyration, we have the following for moment of inertia about an axis through the center of mass</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_\text{cm} = Mk^2.
+\end{equation*}
+</div>
+<div class="para">Using the parallel axis theorem, the moment of inertia from suspension point <span class="process-math">\(\text{O}_1\)</span> will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_1 = I_\text{cm} + Ml_1^2 = M \left(k^2 +l_1^2\right).
+\end{equation*}
+</div>
+<div class="para">Similarly,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_2 = I_\text{cm} + Ml_2^2 = M \left(k^2 +l_2^2\right).
+\end{equation*}
+</div>
+<div class="para">The time period of a physical pendulum is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T = 2\pi\,\sqrt{ \dfrac{I}{Mgl} },
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(l\)</span> is the distance from suspension to the center of mass. Therefore, the two periods are</div>
+<div class="displaymath process-math">
+\begin{align*}
+T_1 \amp = 2\pi\,\sqrt{ \dfrac{k^2 +l_1^2}{gl_1} }, \\
+T_2 \amp = 2\pi\,\sqrt{ \dfrac{k^2 +l_2^2}{gl_2} }. 
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(b) With <span class="process-math">\(T_1=T_2\)</span> we have <span class="process-math">\(T_1^2 = T_2^2\text{.}\)</span> Upon simplifincation we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+l_2\left( k^2 + l_1^2\right) = l_1\left( k^2 + l_2^2\right),
+\end{equation*}
+</div>
+<div class="para">which can be solved for <span class="process-math">\(k^2\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+k^2 = l_1l_2.
+\end{equation*}
+</div>
+<div class="para">Putting this in either <span class="process-math">\(T_1\)</span> or <span class="process-math">\(T_2\)</span> gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T_1 = 2\pi\sqrt{ \dfrac{l_1l_2 + l_1^2}{gl_1} } = 2\pi\sqrt{ \dfrac{l_1  + l_2}{g} } = 2\pi\sqrt{ \dfrac{L}{g} }.
+\end{equation*}
+</div>
+<div class="para">We get the same result from <span class="process-math">\(T_2\text{.}\)</span>
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="sho-Physical-Pendulum.html#ex-Katers-Pendulum">in-context</a></span>
+</body>
+</html>

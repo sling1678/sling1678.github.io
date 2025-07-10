@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">36.16</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Magnetic Field on the Symmetry Axis of a Circular Loop.</span>
+</h3>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0.833333333333333%;margin-right:0.833333333333333%;">
+<div class="sbspanel top" style="width:50.8474576271186%;"><div class="para">Consider a circular loop of radius <span class="process-math">\(R\)</span> carrying current <span class="process-math">\(I\text{.}\)</span> Find magnetic field at a point that is a distance <span class="process-math">\(z\)</span> above the center of the loop by (a) brute force method and (b) by exploiting symmetry in the problem.</div></div>
+<div class="sbspanel top" style="width:10.1694915254237%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:35.593220338983%;"><figure class="figure figure-like"><img src="external/./images/magnetic-field/circular-wire-field-point-on-axis.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">36.17<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para"></div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">magnitude <span class="process-math">\(B_P = \frac{\mu_0I}{2} \frac{R^2}{\left( R^2 + z^2 \right)^{3/2}}.\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para">We follow the procedures we have followed in other examples. First, we select an infintesimal element of the wire and then try to set up Biot-Savart expression for infintesimal magnetic field, which we integrate. This is not very efficient method for this problem. For more efficient method, see (b).</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:65%;"><div class="para logical">
+<div class="para">Let us place the ring of current in <span class="process-math">\(xy\)</span> plane as shown in the figure. The elment is a tiny arc of length <span class="process-math">\(R\,d\phi\text{.}\)</span> The direction of <span class="process-math">\(d\vec l\)</span> is tangential to the circle. We write this as unit vector.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d\vec l = R\,d\phi\, \hat u_t,
+\end{equation*}
+</div>
+<div class="para">The unit vector in the tangent to the circle direction will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\hat u_t = -\sin\,\phi\, \hat u_x + \cos\,\phi\, \hat j.
+\end{equation*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:35%;"><img src="external/./images/magnetic-field/circular-wire-field-point-on-axis-solution.png" class="contained"></div>
+</div></div> <div class="para logical">
+<div class="para">The other vectors <span class="process-math">\(\vec r\)</span> from infinitesimal element <span class="process-math">\((R\cos\,\phi, R\sin\,\phi, 0)\)</span> to field point P at <span class="process-math">\((0, 0, z)\text{,}\)</span>  we need for Biot-Savart law are</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp \vec r = -R\cos\,\phi\, \hat u_x  -  R\sin\,\phi \,\hat u_y +  z\, \hat u_z, \\
+\amp r = \sqrt{R^2 + z^2}, \\
+\amp \hat u_r = \dfrac{\vec r}{r} = \dfrac{-R\cos\,\phi\, \hat u_x  -  R\cos\,\phi \,\hat u_y +  z\, \hat u_z}{ \sqrt{R^2 + z^2} }.
+\end{align*}
+</div>
+<div class="para">Now, we have all the parts to write the expression for <span class="process-math">\(d\vec B_P\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+d\vec B_P  \amp = \dfrac{\mu_0 I}{4\pi}\, \dfrac{d\vec l \times \hat u_r}{r^2} \\
+\amp = \dfrac{\mu_0 I}{4\pi\,r^2} \left( \dfrac{R h}{r}\,\cos\,\phi\,\hat u_x  + \dfrac{Rh}{r}\,\sin\,\phi\,\hat u_y  + \dfrac{R^2}{r}\,\hat u_z \right) d\phi  
+\end{align*}
+</div>
+<div class="para">Integrating from <span class="process-math">\(\phi=0\)</span> to <span class="process-math">\(\phi=2\pi\text{,}\)</span> only the <span class="process-math">\(z\)</span> component is nonzero.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\vec B_P \amp = \dfrac{\mu_0 I}{4\pi}\dfrac{R^2}{r^3}\, 2\pi\,\hat u_z, \\
+\amp = \dfrac{\mu_0 I}{2}\dfrac{R^2}{ \left(R^2 + z^2\right)^{3/2} }\,  \hat u_z, 
+\end{align*}
+</div>
+<div class="para">This gives the field at P with magnitude <span class="process-math">\(\dfrac{\mu_0 I}{2}\dfrac{R^2}{ \left(R^2 + z^2\right)^{3/2} }\)</span> in the direction away from the ring for a point above the ring. If we had done for a point below the ring, we would have found that field is pointed towards the ring.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">We note several simplifying features of this problem.</div>
+<ol class="decimal" id="ex-Magnetic-Field-on-the-Symmetry-Axis-of-a-Circular-Loop-5-2-1">
+<li><div class="para">The problem has a useful symmetry: all points  of the ring are at an equal distance from the field point P.</div></li>
+<li><div class="para">Since the direction of the current at any point of the ring is along the tangent to the circle, the angle between the current direction in any element and the direction from the element to the field point P is <span class="process-math">\(90^{\circ}\text{.}\)</span>
+</div></li>
+</ol>
+</div> <div class="para logical">
+<div class="para">Using these simplifying aspects of the problem, we find that magnetic field from each element <span class="process-math">\(dl\)</span> of the current loop will have the same magnitude given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-mag-field-loop.html">
+\begin{equation}
+dB_P = \frac{\mu_0}{4\pi} \frac{I dl}{R^2 + z^2}.\tag{36.8}
+\end{equation}
+</div>
+<div class="para">However, the directions of the field at point P from current in different elements of the ring are different.  Using the right-hand rule for the direction of magnetic field, we find that the directions from different parts of the ring form a cone at point P as shown in <a href="Magnetic-Field-of-Steady-Current.html#fig-mag-field-loop" class="xref" data-knowl="./knowl/xref/fig-mag-field-loop.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 36.18">Figure 36.18</a>.</div>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./images/magnetic-field/mag-field-loop.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">36.18<span class="period">.</span></span><span class="space"> </span>Magnetic fields <span class="process-math">\(d\vec B_1\)</span> and <span class="process-math">\(d\vec B_2\)</span> by current elements at <span class="process-math">\(P_1\)</span> and <span class="process-math">\(P_2\text{,}\)</span> which are oppositely placed on the ring, result in the net magnetic field that has only the vertical component nonzero.</figcaption></figure> <div class="para logical">
+<div class="para">Therefore, horizontal components will cancel out and we will be left with only the vertical components of magnetic field.  We seek the vertical component of a vector of magnitude dB that makes an angle <span class="process-math">\(\alpha\)</span>  with the vertical (see figure).</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left.d\vec B_P\right|_{\perp} = dB_P\ \cos\alpha, 
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\cos\alpha\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\cos\alpha = \frac{R}{\sqrt{R^2+z^2}}.
+\end{equation*}
+</div>
+<div class="para">Hence, the magnetic field at P can be written conceptually as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B_P = \int dB_P\ \cos\alpha.
+\end{equation*}
+</div>
+<div class="para">Substituting for <span class="process-math">\(dB_P\text{,}\)</span> <span class="process-math">\(\cos\alpha\text{,}\)</span> and <span class="process-math">\(dl = Rd\phi\text{,}\)</span> we find that integration variable is the polar angle <span class="process-math">\(\phi\text{.}\)</span>  Since the integrand does not have dependence on <span class="process-math">\(\phi\text{,}\)</span> the integration over <span class="process-math">\(\phi\)</span> from <span class="process-math">\(0\)</span> to <span class="process-math">\(2\pi\)</span> give the following result for the magnitude of the magnetic field at point P.</div>
+<div class="displaymath process-math">
+\begin{equation}
+B_P = \frac{\mu_0I}{2} \frac{R^2}{\left( R^2 + z^2 \right)^{3/2}}.\tag{36.9}
+\end{equation}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Magnetic-Field-of-Steady-Current.html#ex-Magnetic-Field-on-the-Symmetry-Axis-of-a-Circular-Loop">in-context</a></span>
+</body>
+</html>

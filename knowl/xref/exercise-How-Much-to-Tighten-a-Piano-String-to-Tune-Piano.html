@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">How Much to Tighten a Piano String to Tune Piano?</span>
+</h4>
+<div class="para">A piano key of <span class="process-math">\(512\text{ Hz}\)</span> is producing <span class="process-math">\(500\, \text{Hz}\)</span> sound.</div> <div class="para">(a) What will be the beat frequency if it is checked against a violin producing <span class="process-math">\(520\text{ Hz}\text{?}\)</span>
+</div> <div class="para">(b) By what percentage should the tension of the wire be adjusted so that the pitch is adjusted to <span class="process-math">\(512\text{ Hz}\text{?}\)</span>  Assume insignificant change in mass per unit length while tightening.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Use the beat frequency formula. (b) Use <span class="process-math">\(v=\sqrt{T/\mu}\)</span> and <span class="process-math">\(f\lambda=v\)</span> with fixed <span class="process-math">\(\lambda\)</span> and <span class="process-math">\(\mu\)</span> and determine <span class="process-math">\(\Delta T/T\)</span> for corresponding <span class="process-math">\(\Delta f/f\text{.}\)</span>
+</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a)  <span class="process-math">\(20\text{ Hz}\text{,}\)</span> (b) <span class="process-math">\(4.8\%\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Using the beat frequency formula, we immediately get the answer.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f_\text{beat} = 520-500 = 20\text{ Hz}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">From <span class="process-math">\(v=\sqrt{T/\mu}\)</span> and <span class="process-math">\(f\lambda=v\)</span> we get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-exercise-Using-Beats-to-Tune-a-Piano-tension-frequency.html">
+\begin{equation}
+T = (\mu \lambda^2) f^2.\tag{14.80}
+\end{equation}
+</div>
+<div class="para">Here <span class="process-math">\(\mu \lambda^2\)</span> is fixed. You can use Calculus to get <span class="process-math">\(dT/df\text{,}\)</span> but here I will just say that, let tension be <span class="process-math">\(T+\Delta T\)</span> when frequency is <span class="process-math">\(f+\Delta f\text{.}\)</span> Writing <span class="process-math">\(a\)</span> for the fixed part.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-exercise-Using-Beats-to-Tune-a-Piano-tension-frequency.html">
+\begin{equation*}
+T + \Delta T = a (f + \Delta f)^2 = a f^2 + 2 a f \Delta f + a (\Delta f)^2.
+\end{equation*}
+</div>
+<div class="para">We drop the last term, which will be small compared to the other terms. This gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-exercise-Using-Beats-to-Tune-a-Piano-tension-frequency.html">
+\begin{equation*}
+T + \Delta T \approx a f^2 + 2 a f \Delta f .
+\end{equation*}
+</div>
+<div class="para">Using Eq. <a href="beat-phenomenon.html#eq-exercise-Using-Beats-to-Tune-a-Piano-tension-frequency" class="xref" data-knowl="./knowl/xref/eq-exercise-Using-Beats-to-Tune-a-Piano-tension-frequency.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 14.80">(14.80)</a> we get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-exercise-Using-Beats-to-Tune-a-Piano-tension-frequency.html">
+\begin{equation*}
+\Delta T = 2 a f \Delta f.
+\end{equation*}
+</div>
+<div class="para">Divide this by <span class="process-math">\(T\)</span> to get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-exercise-Using-Beats-to-Tune-a-Piano-tension-frequency.html">
+\begin{equation*}
+\frac{\Delta T}{ T } = 2 \frac{\Delta f}{f}.
+\end{equation*}
+</div>
+<div class="para">Now, using the numerical values we obtain</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-exercise-Using-Beats-to-Tune-a-Piano-tension-frequency.html">
+\begin{equation*}
+\frac{\Delta T}{ T } = 2\times \frac{12}{500} = 0.048 = 4.8%.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="beat-phenomenon.html#exercise-How-Much-to-Tighten-a-Piano-String-to-Tune-Piano">in-context</a></span>
+</body>
+</html>

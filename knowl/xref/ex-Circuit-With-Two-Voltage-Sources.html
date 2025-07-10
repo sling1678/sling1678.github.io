@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">34.56</span><span class="period">.</span><span class="space"> </span><span class="title">Circuit With Two Voltage Sources.</span>
+</h3>
+<div class="para">Find current through each resistor in the circuit in <a href="Kirchhoffs-Rules.html#fig-exp-kirk-two-source-three-loop-circuit" class="xref" data-knowl="./knowl/xref/fig-exp-kirk-two-source-three-loop-circuit.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 34.57">Figure 34.57</a>. The values are: <span class="process-math">\(R_1 = 10\ \Omega\text{,}\)</span> <span class="process-math">\(R_2 = 20\ \Omega\text{,}\)</span> <span class="process-math">\(R_1 = 30\ \Omega\text{,}\)</span> <span class="process-math">\(V_1 = 10\ \text{V}\text{,}\)</span> <span class="process-math">\(V_2 = 15\ \text{V}\text{.}\)</span>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/./images/electric-circuits/exp-kirk-two-source-three-loop-circuit.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">34.57<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(I_1=\frac{1}{22}\, \text{ A},\  I_2=\frac{6}{22}\, \text{ A},\  I_3=\frac{7}{22}\, \text{ A}.\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">First we pick currents in each branch and label the resistors with <span class="process-math">\(+\)</span> and <span class="process-math">\(-\)</span> across each resistor based on our choice of direction of current as shown in <a href="Kirchhoffs-Rules.html#fig-exp-kirk-two-source-three-loop-circuit-current-plus-signs" class="xref" data-knowl="./knowl/xref/fig-exp-kirk-two-source-three-loop-circuit-current-plus-signs.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 34.58">Figure 34.58</a>. Note that, at this stage I do not know the directions of the currents, but I must pick these directions based on intuition or arbitrarily.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:45%;"><div class="para">The directions are then used to assign <span class="process-math">\(+\)</span> and <span class="process-math">\(-\)</span> across each resistor. These will be used to assign pick up voltage or drop off voltage in the Kirkchoof’s loop equations. We also recognize nodes where potential values are unique. There are four such nodes, labeled, <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(d\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like"><img src="external/./images/electric-circuits/exp-kirk-two-source-three-loop-circuit-current-plus-signs.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">34.58<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="para">There are two junctions in the diagram where currents meets. We get the same KCL equation from them.</div>
+<div class="displaymath process-math">
+\begin{equation}
+I_1 + I_2 - I_3 = 0.\tag{34.39}
+\end{equation}
+</div>
+<div class="para">This gives us one equation in three unknowns. Therefore, we need to generate two other equations, which will come from KVL applied to two loops in the circuit.</div>
+</div> <div class="para">Let’s apply KVL in loop <span class="process-math">\(a-b-c-a\text{.}\)</span>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">In the <span class="process-math">\(a-b\)</span> step, we are going in the same direction in the math loop as the current in the resistor. Therefore, the potential will drop by <span class="process-math">\(I_3R_3\text{,}\)</span> which is evident in going from <span class="process-math">\(+\text{ to }-\)</span>  of the element. Then, in step <span class="process-math">\(b-c\text{,}\)</span> we go from <span class="process-math">\(-\text{ to }+\text{,}\)</span> which will mean increase of potential by <span class="process-math">\(V_1\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/electric-circuits/exp-kirk-two-source-three-loop-circuit-inner-loop.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">34.59<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="para">Finally, in step <span class="process-math">\(c-a\text{,}\)</span> we go from <span class="process-math">\(+\text{ to }-\text{,}\)</span> therefore, there will be a drop of potential of magnitude <span class="process-math">\(I_1R_1\text{.}\)</span> We get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+-I_3R_3 + V_1 - I_1R_1 = 0.
+\end{equation*}
+</div>
+<div class="para">Using the numerical values we get</div>
+<div class="displaymath process-math">
+\begin{equation}
+-30 I_3 + 10 - 10 I_1 = 0.\tag{34.40}
+\end{equation}
+</div>
+</div> <div class="para">Finally, we apply KVL to the outer  loop <span class="process-math">\(a-d-b-c-a\text{.}\)</span>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">In step <span class="process-math">\(a-d\)</span> we will have <em class="alert">increase</em> of <span class="process-math">\(I_2R_2\)</span> since, in the loop, we are going against the direction of the current in the resistor, or equivalently, we are going from <span class="process-math">\(-\text{ to }+\)</span> of the assigned signs to the resistor. In step  <span class="process-math">\(a-d\text{,}\)</span> the potential drops by <span class="process-math">\(V_2\text{.}\)</span> In step <span class="process-math">\(b-c\text{,}\)</span> potential goes up by <span class="process-math">\(V_1\)</span> and in step <span class="process-math">\(c-a\text{,}\)</span> potential drops by <span class="process-math">\(I_1R_1\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/electric-circuits/exp-kirk-two-source-three-loop-circuit-outer-loop.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">34.60<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
++I_2R_2 -V_2 + V_1 - I_1R_1 = 0.
+\end{equation*}
+</div>
+<div class="para">Using the numerical values we get</div>
+<div class="displaymath process-math">
+\begin{equation}
++20 I_2 -15 + 10 - 10 I_1 = 0.\tag{34.41}
+\end{equation}
+</div>
+</div> <div class="para logical">
+<div class="para">You can solve Eqs. <a href="Kirchhoffs-Rules.html#eq-exp-kirk-two-source-three-loop-KCL" class="xref" data-knowl="./knowl/xref/eq-exp-kirk-two-source-three-loop-KCL.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 34.39">(34.39)</a>, <a href="Kirchhoffs-Rules.html#eq-exp-kirk-two-source-three-loop-KVL-1" class="xref" data-knowl="./knowl/xref/eq-exp-kirk-two-source-three-loop-KVL-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 34.40">(34.40)</a>, and <a href="Kirchhoffs-Rules.html#eq-exp-kirk-two-source-three-loop-KVL-2" class="xref" data-knowl="./knowl/xref/eq-exp-kirk-two-source-three-loop-KVL-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 34.41">(34.41)</a> by method of elimination or some other method you are more familiar with. It is very common to make mistakes in these calculations, so, you should pluc back your answer into these equations to check your answer. I used the command “Solve x+y=z, 10x+30z=10, 10x -20y=-5” at <a class="external" href="" target="_blank">Wolfram Alpha</a><details class="ptx-footnote" aria-live="polite" id="ex-Circuit-With-Two-Voltage-Sources-4-10-6"><summary class="ptx-footnote__number" title="Footnote 34.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="ex-Circuit-With-Two-Voltage-Sources-4-10-6"><code class="code-inline tex2jax_ignore"></code></div></details> website. My answers are</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-exp-kirk-two-source-three-loop-KCL.html ./knowl/xref/eq-exp-kirk-two-source-three-loop-KVL-1.html ./knowl/xref/eq-exp-kirk-two-source-three-loop-KVL-2.html">
+\begin{equation*}
+I_1=\frac{1}{22}\, \text{ A},\  I_2=\frac{6}{22}\, \text{ A},\  I_3=\frac{7}{22}\, \text{ A}.
+\end{equation*}
+</div>
+<div class="para">Since I got all of these current magnitude positive, my original directions were correct. If I had got any of them negative, it would tell me that the direction of the current I picked in the figure above should have been the oposite direction.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Kirchhoffs-Rules.html#ex-Circuit-With-Two-Voltage-Sources">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="problem example-like"><h4 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">44.66</span><span class="period">.</span><span class="space"> </span><span class="title">Crossover Circuit.</span>
+</h4>
+<div class="para">A cross-over circuit is used deliver power to two different parts of the circuit depending on the frequency of the driving signal. For instance one would want more power be delivered to woofer at low frequency and to tweeter at high frequency.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">For given <span class="process-math">\(L\text{,}\)</span> <span class="process-math">\(C\text{,}\)</span> <span class="process-math">\(R_1\)</span> and <span class="process-math">\(R_2\)</span> in the circtuin in <a href="AC-Circuits-Bootcamp.html#fig-cross-over-circuit" class="xref" data-knowl="./knowl/xref/fig-cross-over-circuit.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 44.67">Figure 44.67</a>, find the cross-over frequency such that below that frequency more power goes to <span class="process-math">\(R_2\)</span> and above that frequency more power goes to <span class="process-math">\(R_1\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/ac-circuits/cross-over-circuit.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">44.67<span class="period">.</span></span><span class="space"> </span>For <a href="AC-Circuits-Bootcamp.html#misc-problem-crossover-circuit" class="xref" data-knowl="./knowl/xref/misc-problem-crossover-circuit.html" data-reveal-label="Reveal" data-close-label="Close" title="Problem 44.66: Crossover Circuit">Problem 44.66</a>.</figcaption></figure></div>
+</div></div>
+<div class="hint solution-like">
+<h4 class="heading">
+<span class="type">Hint</span><span class="period">.</span>
+</h4>
+<div class="para">Use complex analysis.</div>
+</div>
+<div class="answer solution-like">
+<h4 class="heading">
+<span class="type">Answer</span><span class="period">.</span>
+</h4>
+<div class="para">See solution.</div>
+</div>
+<div class="solution solution-like">
+<h4 class="heading">
+<span class="type">Solution</span><span class="period">.</span>
+</h4>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(Z_1\)</span> and <span class="process-math">\(Z_2\)</span> be the complex impedances of the upper and lower branches respectively.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  Z_1 = R_1 - \dfrac{i}{\omega C},\ \ |Z_1| = \sqrt{R_1^2 + \dfrac{1}{\omega^2 C^2}},\\
+\amp  Z_2 = R_2 -  i \omega L,\ \ |Z_2| = \sqrt{R_2^2 +   \omega^2 L^2}.
+\end{align*}
+</div>
+<div class="para">The amplitudes of the currents in the two branches will be</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  I_{10} =  \dfrac{V_0}{|Z_1|},\\
+\amp  I_{20} =  \dfrac{V_0}{|Z_2|}.
+\end{align*}
+</div>
+<div class="para">Equating the power in the two resitors will give us a condition for the cross-over frequency <span class="process-math">\(\omega\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{1}{2}I_{10}^2\:R_1 =  \dfrac{1}{2}I_{20}^2\:R_2.
+\end{equation*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{R_1}{|Z_1|^2} = \dfrac{R_2}{|Z_2|^2}.
+\end{equation*}
+</div>
+<div class="para">This gives a quartic equation in <span class="process-math">\(\omega\text{,}\)</span> which student is encouraged to solve. I found the following answer for the positive real <span class="process-math">\(\omega\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\omega = \amp \dfrac{1}{\sqrt{2}\;LC}\left[\left(R_1R_2 - R_2^2\right)C^2 + \sqrt{\left(R_2^2-R_1R_2\right)^2C^4 + \dfrac{4 R_2L^2C^2}{R_1}} \right].
+\end{align*}
+</div>
+</div>
+</div></article><span class="incontext"><a class="internal" href="AC-Circuits-Bootcamp.html#misc-problem-crossover-circuit">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Induced EMF in Two-loop Coil Surrounding a Solenoid with Sinusoidally Varying Current.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:70%;"><div class="para">A long solenoid of radius a with n turns per unit length is carrying a time-dependent current <span class="process-math">\(I(t) = I_0 \sin (\omega  t)\text{,}\)</span> where <span class="process-math">\(I_0\)</span> and  <span class="process-math">\(\omega\)</span> are constants.  The solenoid is surrounded by a wire of resistance <span class="process-math">\(R\)</span>  that has two circular loops of radius <span class="process-math">\(b\)</span> with <span class="process-math">\(b \gt a\text{.}\)</span>  Find the magnitude and direction of current induced in the outer loops at time <span class="process-math">\(t=0\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:25%;"><img src="external/./images/em-effect/prob-two-loops-surrounding-solenoid.png" class="contained"></div>
+</div></div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use flux rule to find the induced EMF first.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(2\mu_0 \pi a^2 I_0 n\omega/R\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">It is easier to calculate the magnetic flux of the magneitc field of the current in the solenoid through the outer loops since the magnetic field of the solenoid is constant.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Phi_{\textrm{through outer loops}} = 2\times B_{\textrm{sol}}\times \pi a^2 = 2\times \mu_0\:n\:I_{\textrm{sol}}\times \pi a^2. 
+\end{equation*}
+</div>
+<div class="para">Note the area over which the magnetic field of the solenoid is non-zero is only the inside of the solenoid. Since the current in the solenoid <span class="process-math">\(I_{\textrm{sol}}\)</span> is changing, the magnetic flux through the outer loops will change. The rate of change of this flux will induce an EMF in the outer loops.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathcal{E}_{\textrm{ind}} = \left| \dfrac{d\Phi}{dt}\right| = 2\pi\mu_0 a^2 I_0 n\omega|\cos\omega t|.
+\end{equation*}
+</div>
+<div class="para">Therefore, the induced current has the magnitude</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_{\textrm{ind}} = \dfrac{2\pi\mu_0 a^2 I_0 n\omega|\cos\omega t|}{R}.
+\end{equation*}
+</div>
+<div class="para">Since the current in the solenoid changes direction, thereby changing the direction of the magnetic flux, the induced current will also change direction with time.</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="Faradays-Flux-Rule.html#ex-Induced-EMF-in-Two-loop-Coil-Surrounding-a-Solenoid-with-Sinusoidally-Varying-Current">in-context</a></span>
+</body>
+</html>

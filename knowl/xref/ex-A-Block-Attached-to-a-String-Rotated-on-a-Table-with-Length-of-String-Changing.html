@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) A Block Attached to a String Rotated on a Table with Length of String Changing.</span>
+</h4>
+<div class="para"></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">
+<a href="forces-Dynamics-in-Polar-Coordinates.html#fig-block-on-table-varying-string-length" class="xref" data-knowl="./knowl/xref/fig-block-on-table-varying-string-length.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.135">Figure 6.135</a> shows a block of mass <span class="process-math">\(m\)</span> on a frictionless table attached to a string that goes through a hole. While block moves around the hole, the string below the table is pulled at a constant speed <span class="process-math">\(V\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/forces/block-on-table-varying-string-length.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.135<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">Suppose the block was at <span class="process-math">\(r=r_0\)</span> from the hole and had a angular speed of <span class="process-math">\(\omega = \omega_0\)</span> at <span class="process-math">\(t=0\text{.}\)</span> (a) Find <span class="process-math">\(r(t)\)</span> and <span class="process-math">\(\omega(t)\)</span> at instant <span class="process-math">\(t\text{.}\)</span> (b) Find tension <span class="process-math">\(T(t)\)</span> in the string at instant <span class="process-math">\(t\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Set up tangential equation of motion. (b) Set up radial equation of motion.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(r(t) = r_0 - V t\text{,}\)</span> <span class="process-math">\(\omega(t) = \frac{\omega_0 r_0^2}{ \left( r_0 - V t \right)^2 }\text{,}\)</span> (b) <span class="process-math">\(\frac{m \omega^2 r_0^4}{ \left(r_0 - V t \right)^3 }\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">From the description of the problem, we have the following for the radial coordinate of the block.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{dr}{dt} = -V,\ \ \frac{d^2r}{dt^2} = 0.
+\end{equation*}
+</div>
+<div class="para">Negative since <span class="process-math">\(r\)</span> is decreasing with time at the rate the string is pulled down. From these two equations and <span class="process-math">\(r(0) = r_0\text{,}\)</span> we will get</div>
+<div class="displaymath process-math">
+\begin{equation}
+r(t) = r_0 - V t.\tag{6.74}
+\end{equation}
+</div>
+<div class="para">Now, to get <span class="process-math">\(\omega(t)\text{,}\)</span> we will look at the tangential component of <span class="process-math">\(\vec F = m\vec a\)</span> of the block. Since, there is no friction, we do not have any force in that direction. (Other force are gravity, normal, and tension, which do not have any components in the tangential direction.) Therefore, <span class="process-math">\(a_\theta = 0\text{.}\)</span> Now, <span class="process-math">\(a_\theta = r (d\omega/dt) + 2 (dr/dt)\omega \text{.}\)</span> Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r\;\frac{d\omega}{dt}  + 2 \frac{dr}{dt}\;\omega = 0. 
+\end{equation*}
+</div>
+<div class="para">This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{d\omega}{\omega}  = - 2 \frac{dr}{r}
+\end{equation*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ln\frac{\omega}{\omega_0} = - 2 \ln\frac{r}{r_0} = - \ln\frac{r^2}{r_0^2}.
+\end{equation*}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
+\begin{equation}
+\omega(t) = \frac{\omega_0 r_0^2}{ \left( r_0 - V t \right)^2 }.\tag{6.75}
+\end{equation}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">To find tension in the string, we look at radial component of <span class="process-math">\(\vec F = m\vec a\text{.}\)</span> Only tension has component along this direction. Therefore, we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+-T = m a_r = m \left( \frac{d^2r}{dt^2} - r \omega^2 \right).
+\end{equation*}
+</div>
+<div class="para">Now, using <span class="process-math">\(r\)</span> and <span class="process-math">\(\omega\)</span> found in (a), we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T = m r \omega^2 = \frac{m \omega^2 r_0^4}{ \left(r_0 - V t \right)^3 }.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="forces-Dynamics-in-Polar-Coordinates.html#ex-A-Block-Attached-to-a-String-Rotated-on-a-Table-with-Length-of-String-Changing">in-context</a></span>
+</body>
+</html>

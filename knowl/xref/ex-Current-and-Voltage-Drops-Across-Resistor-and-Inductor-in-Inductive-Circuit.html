@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">41.17</span><span class="period">.</span><span class="space"> </span><span class="title">Current and Voltage Drops Across Resistor and Inductor in Inductive Circuit.</span>
+</h3>
+<div class="para logical">
+<div class="para">A <span class="process-math">\(300\text{-}\Omega\)</span>  and <span class="process-math">\(0.2\text{-H}\)</span> inductors connected in series to an AC source.  The voltage across the resistor is found to be <span class="process-math">\((30\ \text{V})\ \cos(200\, t)\)</span> where <span class="process-math">\(t\)</span> is time in seconds.</div>
+<ol class="lower-alpha" id="ex-Current-and-Voltage-Drops-Across-Resistor-and-Inductor-in-Inductive-Circuit-2-1-5">
+<li><div class="para">Find the amplitude and phase of the current in the circuit.</div></li>
+<li><div class="para">Find the amplitude and phase of the voltage across the inductor.</div></li>
+<li><div class="para">Find the amplitude and phase of the voltage of the source.</div></li>
+</ol>
+</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(100\text{ mA},\ 0^{\circ}\text{,}\)</span> (b) <span class="process-math">\(4\text{ V},\ 90^{\circ}\text{,}\)</span> (c) <span class="process-math">\(30.3\text{ V}, 7.6^{\circ}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">The current and voltage across a resistor are in-phase. Let the current through the resistor be denotes as <span class="process-math">\(I = I_0\:\cos(\omega t + \phi_I)\text{.}\)</span> From the given voltage across the resistor we obtain</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi_I = 0,\ \ I_0 = \dfrac{V_{0R}}{R} = \dfrac{30\: \text{V}}{300\:\Omega} = 0.1\:\text{A}.
+\end{equation*}
+</div>
+<div class="para">This current flows through all elements of the circuit.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I(t) = (0.1\:\text{A})\:\cos(200\, t).
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">To find the amplitude of the voltage across the inductor we multiply the amplitude of the current, which is <span class="process-math">\(0.1\:\text{A}\text{,}\)</span> and the reactance of the inductor.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_{0L} = I_0\:X_L = 0.1\:\text{A}\times 200\:\text{s}^{-1}\times 0.2\:\text{H} =  4\:\text{V}.
+\end{equation*}
+</div>
+<div class="para">The phase of the voltage across an inductor is <span class="process-math">\(90^{\circ}\)</span> ahead of the phase of the current. The phase of the current is set from the given data on the phase of the voltage across the resistance, which is zero here. Therefore, if we write <span class="process-math">\(V_L\)</span> as <span class="process-math">\(V_L(t) = V_{0L}\:\cos(\omega t + \phi)\text{,}\)</span> then <span class="process-math">\(\phi = 90^{\circ}\text{.}\)</span> [Recall the phrase: ELI the ICE man, meaning EMF leads current in L and current leads EMF in C.]</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">To find the  amplitude of the voltage of the source we will multiply the amplitude of the current and the impedance amplitude <span class="process-math">\(|Z|\)</span> of the circuit.  The impedance here is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|Z| = \sqrt{(300\:\Omega)^2 + (200\:\text{s}^{-1}\times 0.2\:\text{H})^2} = 303\:\Omega. 
+\end{equation*}
+</div>
+<div class="para">Therefore the amplitude of the EMF of the source will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_0 = 0.1\:\text{A} \times 303\:\Omega = 30.2\:\text{V}.
+\end{equation*}
+</div>
+<div class="para">If we write the voltage of the source as <span class="process-math">\(V_0\:\cos(\omega t + \phi_V)\text{,}\)</span> then this phase is the phase of voltage with respect to the zero phase for the current.  Therefore, <span class="process-math">\(\phi_V\)</span> will be given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi_V = \tan^{-1}\left(\dfrac{X_L}{R} \right),
+\end{equation*}
+</div>
+<div class="para">where note the minus sign is not there since now we are writing <span class="process-math">\(\phi_V\)</span> as phase of voltage with respect to the current in place of phase of the current with respect to the voltage.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi_V = \tan^{-1}\left(\dfrac{40\:\Omega}{300\:\Omega} \right) = 7.6^{\circ}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Inductive-AC-Circuits.html#ex-Current-and-Voltage-Drops-Across-Resistor-and-Inductor-in-Inductive-Circuit">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">39.8</span><span class="period">.</span><span class="space"> </span><span class="title">Mutual Inductance of Two Circulr Loops with a Common Center.</span>
+</h3>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:70%;"><div class="para">A circuit <span class="process-math">\(C_1\)</span> consists of a circular loop of radius <span class="process-math">\(R_1\text{.}\)</span>  Another circuit <span class="process-math">\(C_2\)</span> of a circular loop of radius <span class="process-math">\(R_2\)</span> is placed so that their centers are on the same line and the two circles are in parallel planes as shown <a href="inductance-definition.html#fig-mutual-induct-1" class="xref" data-knowl="./knowl/xref/fig-mutual-induct-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 39.9">Figure 39.9</a>. Let <span class="process-math">\(h\)</span> be the distance between the two centers. Find their mutual inductance. Assume <span class="process-math">\(h \gg R_1\)</span> and <span class="process-math">\(R_1\gg R_2\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:30%;"><figure class="figure figure-like"><img src="external/./images/inductance/mutual-induct-1.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">39.9<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\frac{\pi\mu_0}{2} \frac{R_1^2R_2^2}{h^3}\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">Note that to find the magnetic flux through any loop we need the magnetic field at all points of a surface attached to the loop. In the present situation, if we calculate flux <span class="process-math">\(\Phi_{2}\)</span> of magnetic field of a current <span class="process-math">\(I_1\)</span> in <span class="process-math">\(C_1\)</span> through  a flat surface attached to loop <span class="process-math">\(C_2\text{,}\)</span> all the points of this surface will be close to the axis of loop <span class="process-math">\(C_1\text{.}\)</span>  Therefore, it is possible to assume that the magnetic field is uniform over the surface attached to the loop <span class="process-math">\(C_2\text{.}\)</span>   With this assumption, flux  <span class="process-math">\(\Phi_{2}\)</span> can be obtained without much effort.</div> <div class="para">Contrast this to the choice of a current in loop <span class="process-math">\(C_2\)</span> and trying to calculate the magnetic flux through the loop <span class="process-math">\(C_1\text{.}\)</span>  Since loop <span class="process-math">\(C_1\)</span> is much bigger than the loop <span class="process-math">\(C_2\text{,}\)</span> we cannot assume that the magnetic field at all points of a surface attached to <span class="process-math">\(C_1\)</span> will be constant, which would make this calculation difficult.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para logical">
+<div class="para">Proceeding with the first choice, we now write down the magnetic field <span class="process-math">\(\vec B_1\)</span> at a point on the axis of <span class="process-math">\(C_1\text{.}\)</span> This was calculated in an earlier chapter on Biot-Savart Law. For the current direction shown in figure and the <span class="process-math">\(z\)</span> axis chosen, the magnetic field <span class="process-math">\(\vec B_1\)</span> at the center of loop <span class="process-math">\(C_2\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec B_1 = \frac{\mu_0I_1R_1^2}{2\left( R_1^2 + h^2 \right)^{3/2}} \hat u_z.
+\end{equation*}
+</div>
+<div class="para">Applying the criterion <span class="process-math">\(h \gt \gt R_1\)</span> this simplifies to</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec B_1 = \frac{\mu_0I_1R_1^2}{2 h^3} \hat u_z.
+\end{equation*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:35%;"><img src="external/./images/inductance/mutual-induct-2.png" class="contained"></div>
+</div></div> <div class="para logical">
+<div class="para">Assuming <span class="process-math">\(\vec B_1\)</span> be the same at all points of the loop <span class="process-math">\(C_2\)</span> and taking the direction of vector area elements of a flat surface attached to loop <span class="process-math">\(C_2\)</span> in the positive <span class="process-math">\(z\)</span> direction as well, we obtain the magnetic flux <span class="process-math">\(\Phi_{2}\)</span> as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Phi_{2} \approx     \frac{\mu_0I_1R_1^2}{2 h^3}         \times \pi R_2^2.
+\end{equation*}
+</div>
+<div class="para">Factoring out <span class="process-math">\(I_1\)</span> we find the mutual inductance</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathcal{M} =\frac{\pi\mu_0}{2} \frac{R_1^2R_2^2}{h^3}.
+\end{equation*}
+</div>
+<div class="para">Note that this expression is symmetric in <span class="process-math">\(1\leftrightarrow2\text{.}\)</span> If we call this <span class="process-math">\(\mathcal{M}\)</span> as <span class="process-math">\(\mathcal{M}_{12}\text{,}\)</span> and <span class="process-math">\(\mathcal{M}\)</span> we would have obtained by a current in loop <span class="process-math">\(C_2\)</span> as <span class="process-math">\(\mathcal{M}_{21}\text{,}\)</span> both being this same expression.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathcal{M}_{12} = \mathcal{M}_{21} = \frac{\pi\mu_0}{2} \frac{R_1^2R_2^2}{h^3}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="inductance-definition.html#exp-Mutual-Inductance-of-Two-Circulr-Loops-with-a-Common-Center">in-context</a></span>
+</body>
+</html>

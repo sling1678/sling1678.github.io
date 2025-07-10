@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">9<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Gravitational Force Between a Ball and a Disk with Ball Placed Above the Center of Disk.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">There is a small sphere of mass <span class="process-math">\(m\)</span> at a height <span class="process-math">\(D\)</span> from the center of a uniform disk of radius <span class="process-math">\(R\)</span> and mass <span class="process-math">\(M\)</span> as in <a href="The-Universal-Law-of-Gravitation.html#fig-grav-force-on-sphere-above-disk" class="xref" data-knowl="./knowl/xref/fig-grav-force-on-sphere-above-disk.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 12.25">Figure 12.25</a>. Find the gravitational force on the sphere.</div></div>
+<div class="sbspanel top" style="width:15%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:25%;"><figure class="figure figure-like"><img src="external/./images/gravitation/grav-force-on-sphere-above-disk.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">12.25<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+</div></div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Build the solution from the solution of a ring between <span class="process-math">\(r\)</span> and <span class="process-math">\(r+dr\text{.}\)</span>
+</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(\dfrac{2 G_N m M D}{R^2} \left( \dfrac{1}{D} - \dfrac{1}{\sqrt{D^2 + R^2}}  \right)\)</span> towards the center of the ring.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">We will build the solution of the disk from the solution of a ring between <span class="process-math">\(r\)</span> and <span class="process-math">\(r+dr\text{.}\)</span> The mass in the infinitesimal ring will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dM = \dfrac{M}{\pi R^2}\, 2\pi r dr,
+\end{equation*}
+</div>
+<div class="para">since area of the ring is <span class="process-math">\(2\pi r dr\text{.}\)</span> From symmetry, we also know that only the vertical component of the force is non-zero. Let <span class="process-math">\(dF_z\)</span> denote the <span class="process-math">\(z\)</span> component of the ring. From the ring solution we have</div>
+</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><img src="external/./images/gravitation/grav-force-on-sphere-above-disk-solution.png" class="contained"></div>
+</div></div> <div class="para logical">
+<div class="displaymath process-math">
+\begin{align*}
+dF_z \amp = - G_N \dfrac{m\,D\,dM}{ \left( D^2 + r^2 \right)^{3/2}  } \\
+\amp = - G_N \dfrac{m\,D}{ \left( D^2 + r^2 \right)^{3/2}  }  \dfrac{M}{\pi R^2}\, 2\pi r dr\\
+\amp = - \dfrac{G_N m M D}{R^2} \   \dfrac{2 r dr}{ \left( D^2 + r^2 \right)^{3/2}  }  
+\end{align*}
+</div>
+<div class="para">Now, we integrate this from <span class="process-math">\(r=0\)</span> to <span class="process-math">\(r=R\)</span> to get the contribution of the entire disk.</div>
+<div class="displaymath process-math">
+\begin{align*}
+F_z \amp = - \dfrac{G_N m M D}{R^2} \int_0^R \dfrac{2 r dr}{ \left( D^2 + r^2 \right)^{3/2}  }  \\
+\amp = - \dfrac{G_N m M D}{R^2} \int_{D^2}^{D^2 + R^2} \dfrac{dy}{ y^{3/2}  }  \\
+\amp = - \dfrac{2 G_N m M D}{R^2} \left( \dfrac{1}{D} - \dfrac{1}{\sqrt{D^2 + R^2}}  \right)  
+\end{align*}
+</div>
+<div class="para">The magnitude is the above quantity without the sign and direction is towards the center of the ring.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="The-Universal-Law-of-Gravitation.html#ex-Gravitational-Force-Between-a-Ball-and-a-Disk">in-context</a></span>
+</body>
+</html>

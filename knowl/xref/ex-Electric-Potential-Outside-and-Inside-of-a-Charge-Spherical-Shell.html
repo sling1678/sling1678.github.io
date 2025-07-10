@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Electric Potential Outside and Inside of a Charged Spherical Shell.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para">A copper sphere of radius <span class="process-math">\(R\)</span> is charged with a total charge <span class="process-math">\(Q\text{.}\)</span> The charge spreads out on the surface of the sphere with no charges inside the volume of the sphere. Use <span class="process-math">\(r=\infty\)</span> as zero reference for electric potential.</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:35%;"><img src="external/./images/electric-potential/ex-e-pot-from-e-field-sph-shell.png" class="contained"></div>
+</div></div> <div class="para">(a) Find electric potential at a point outside the sphere.</div> <div class="para">(b) Find electric potential at a point inside the sphere. (Hint: it is not zero!)</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use Gauss’s law to get E-field first. Then integrate E-field from reference point to the field point.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(\dfrac{1}{4\pi\epsilon_0}   \dfrac{Q}{r_\text{out}}\text{,}\)</span> (b) <span class="process-math">\(\dfrac{1}{4\pi\epsilon_0}   \dfrac{Q}{R}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">By applying Gauss’s law you should convince yourself that the magnitude of electric field of a charges shell depends on the distance <span class="process-math">\(r\)</span> from the center of the shell with direction being radial from the center of the sphere.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E(r) = 
+\begin{cases}
+0 \amp r \lt R\\
+\dfrac{1}{4\pi\epsilon_0}\, \dfrac{Q}{r^2} \amp r\gt R.
+\end{cases}
+\end{equation*}
+</div>
+<div class="para">For directions, we will assume <span class="process-math">\(Q\)</span> to be positive for our calculations.</div>
+</div> <div class="para logical">
+<div class="para">For electric potential at <span class="process-math">\(P_\text{out}\text{,}\)</span> we will perform the integral in Eq. <a href="Electric-Potential-and-Electric-Field.html#eq-e-potential-from-e-field-integral" class="xref" data-knowl="./knowl/xref/eq-e-potential-from-e-field-integral.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 31.20">(31.20)</a> from <span class="process-math">\(r=\infty\)</span> to <span class="process-math">\(r=r_\text{out}\text{.}\)</span> Since vector <span class="process-math">\(d\vec r = \hat u_r\, dr\)</span> and <span class="process-math">\(\vec E\)</span> is in <span class="process-math">\(\hat u_r\)</span> direction, their dot product gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-e-potential-from-e-field-integral.html">
+\begin{equation*}
+\vec E \cdot d\vec r = E\, dr.
+\end{equation*}
+</div>
+<div class="para">Therefore, we get the following for the potential</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-e-potential-from-e-field-integral.html">
+\begin{align*}
+\phi_\text{out} \amp = -\int_{\infty}^{r_\text{out} }\, E(r)\, dr\\
+\amp = -\dfrac{Q}{4\pi\epsilon_0} \int_{\infty}^{r_\text{out} }\, \dfrac{1}{r^2} \, dr\\
+\amp = \dfrac{1}{4\pi\epsilon_0}   \dfrac{Q}{r_\text{out}} 
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">In the present case, we will need to perform integral from <span class="process-math">\(r=\infty\)</span> to <span class="process-math">\(r=r_\text{in}\text{.}\)</span> From (a), we already know what to expect fror any point from <span class="process-math">\(r=\infty\)</span> to <span class="process-math">\(r=R\text{,}\)</span> the radius. Present integral will then be divided up in two parts: <span class="process-math">\(r=\infty\)</span> to <span class="process-math">\(r=R\)</span> and <span class="process-math">\(r=R\)</span> to <span class="process-math">\(r=r_\text{in}\text{,}\)</span> the later will be zero since <span class="process-math">\(E\)</span> in this domain is zero.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\phi_\text{in} \amp = -\int_{\infty}^{r_\in}\, E(r)  dr\\
+\amp = \dfrac{Q}{4\pi\epsilon_0} \int_{\infty}^{R}\, \dfrac{1}{r^2} \, dr + 0 \\
+\amp = \dfrac{1}{4\pi\epsilon_0} \dfrac{Q}{R}. 
+\end{align*}
+</div>
+<div class="para">This says that electric potential is same throughout the interior of the metal sphere.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Electric-Potential-and-Electric-Field.html#ex-Electric-Potential-Outside-and-Inside-of-a-Charge-Spherical-Shell">in-context</a></span>
+</body>
+</html>

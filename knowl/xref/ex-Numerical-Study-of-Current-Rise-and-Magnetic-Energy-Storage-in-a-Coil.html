@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Numerical Study of Current Rise and Magnetic Energy Storage in a Coil.</span>
+</h4>
+<div class="para">A coil of resistance <span class="process-math">\(0.2\,\Omega\)</span>   and inductance <span class="process-math">\(0.4\, \text{mH}\)</span> is connected across a battery of voltage <span class="process-math">\(12\,\text{V}\)</span> and internal resistance <span class="process-math">\(0.01\,\Omega\)</span>  and a switch S.  The coil has radius <span class="process-math">\(5\, \text{cm}\)</span> and length <span class="process-math">\(30\, \text{cm}\text{.}\)</span>  The switch is closed at <span class="process-math">\(t =0\text{.}\)</span>
+</div> <div class="para">(a) Find the time it will take the current to reach <span class="process-math">\(99\%\)</span> of its final value.  (b) Find the amount of energy transferred to the coils as heat during that time?  (c) How much energy is stored in the coils as magnetic field at <span class="process-math">\(t=4\,\text{msec}\text{?}\)</span>  (d) (Calculus) At what rate is the current increasing at <span class="process-math">\(t = 4\, \text{msec}\text{?}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Use series <span class="process-math">\(RL\)</span> circuit equations. (b) Resistance of coils is important here. (c) Use magnetic energy formula. (d) Need <span class="process-math">\(dI/dt\)</span> - you can use solution <span class="process-math">\(I(t)\)</span> and take derivative.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(9.2 \times 10^{-4}\ \text{sec}\text{,}\)</span> (b) 0.6 J, (c) 0.54 J, (d) <span class="process-math">\(4.1 \times 10^3\ \text{A/s}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Recall the solution of a series LR-circuit is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I(t)  = I_{\text{max}}\:\left(1 - e^t/\tau \right), \ \ \ \ \ \ (1)
+\end{equation*}
+</div>
+<div class="para">with</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_{\text{max}} = \dfrac{V}{R},\ \ \tau = \dfrac{L}{R}.
+\end{equation*}
+</div>
+<div class="para">Setting <span class="process-math">\(I = 0.99\; I_{\text{max}}\)</span> in Eq. (1) gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.99  = 1 - e^{-t/\tau}.
+\end{equation*}
+</div>
+<div class="para">Solving this equation for <span class="process-math">\(t\)</span> we find</div>
+<div class="displaymath process-math">
+\begin{align*}
+t \amp = \tau \ln(100) \\
+\amp = \dfrac{0.4\times 10^{-3}\:\text{H}}{0.2\:\Omega}\:\ln(100) = 9.2\times 10^{-4}\:\text{s}.
+\end{align*}
+</div>
+<div class="para">For use in the second part of this exercise let us denote this time by letter <span class="process-math">\(T\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T \equiv 9.2\times 10^{-4}\:\text{s}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">The energy spent in this time can be obtained by integrating the instantaneous power.</div>
+<div class="displaymath process-math">
+\begin{align*}
+W \amp = \int P dt = \int I^2 R dt\\
+\amp = \dfrac{V^2}{R}\:\int_0^T\: \left( 1 - 2 e^{-Rt/L} + e^{-2Rt/L} \right)\: dt.
+\end{align*}
+</div>
+<div class="para">The integrals are easy to do and the result comes out to be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W = \dfrac{V^2}{R}\left[ T + \dfrac{2L}{R}\left( e^{-RT/L} -1 \right) -\dfrac{L}{2R} \left( e^{-2RT/L} -1 \right) \right].
+\end{equation*}
+</div>
+<div class="para">Putting in the numerical values we find <span class="process-math">\(W = 0.6\:\text{J}\text{.}\)</span>
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">(c)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Here</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I(\text{at }4\:\text{ms}) = \dfrac{12}{0.2}\left(1 - e^{-500\times 0.004}\right) = 52\:\text{A}.
+\end{equation*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{align*}
+U \amp = \dfrac{1}{2}LI^2\\
+\amp = \dfrac{1}{2}\times 0.4\times 10^{-3} \times 52^2 = 0.54\:\text{J}.
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span><span class="space"> </span><span class="title">(d)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">A direct calculation on (1) yields</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{dI}{dt} =\frac{V}{R} \frac{R}{L}\: e^{-Rt/L}.
+\end{equation*}
+</div>
+<div class="para">Putting in the numerical values gives <span class="process-math">\(4.1\times 10^3\: \text{A/s}\text{.}\)</span>
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Inductance-in-Circuits.html#ex-Numerical-Study-of-Current-Rise-and-Magnetic-Energy-Storage-in-a-Coil">in-context</a></span>
+</body>
+</html>

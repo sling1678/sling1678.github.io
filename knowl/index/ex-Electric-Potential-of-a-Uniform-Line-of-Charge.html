@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">31.21</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Electric Potential of a Uniform Line of Charge.</span>
+</h3> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:65%;"><div class="para">Find the electric potential of a uniformly charged non-conducting wire with linear density <span class="process-math">\(\lambda\)</span>  (SI units <span class="process-math">\(\text{C/m} \)</span>) and length <span class="process-math">\(L\)</span> at a point that lies on a line that divides the wire into two equal parts.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:30%;"><img src="external/./images/electric-potential/line-charge-potential.png" class="contained"></div>
+</div></div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\dfrac{\lambda}{4\pi\epsilon_0}\, \ln\left(  \dfrac{\sqrt{x^2 + (L/2)^2} + L/2}{ \sqrt{x^2 + (L/2)^2} - L/2 } \right)\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">We start with identifying a representative cell on the line. This is shown in the figure as an infinitesimal elment at coordinate <span class="process-math">\(y\text{.}\)</span> The charge in the cell is <span class="process-math">\(dq = \lambda\,dy\text{.}\)</span> From the figure, it is clear that the electric potential of this charge will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d\phi = \dfrac{1}{4\pi\epsilon_0}\, \dfrac{\lambda\, dy}{\sqrt{x^2 + y^2}}.
+\end{equation*}
+</div>
+<div class="para">Here <span class="process-math">\(x\)</span> is the field point. Therefore, when we sum over (i.e. integrate) the charges, we will keep <span class="process-math">\(x\)</span> fixed. We will get the net potential at <span class="process-math">\((x,0)\text{,}\)</span> which is the location of the field point.</div>
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./images/electric-potential/ex-line-charge-potential-solution.png" class="contained"></div> <div class="para logical">
+<div class="para">Carrying out the integration yields the answer.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\phi_P \amp = \dfrac{\lambda}{4\pi\epsilon_0}\, \int_{-L/2}^{L/2} \dfrac{dy}{\sqrt{x^2 + y^2}} \\
+\amp = \dfrac{\lambda}{4\pi\epsilon_0}\, \ln\left(  \dfrac{\sqrt{x^2 + (L/2)^2} + L/2}{ \sqrt{x^2 + (L/2)^2} - L/2 } \right).    
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Electric-Potential-of-Charge-Distributions.html#ex-Electric-Potential-of-a-Uniform-Line-of-Charge">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.128</span><span class="period">.</span><span class="space"> </span><span class="title">Rock Tied to String Moving in a Circle.</span>
+</h3>
+<div class="para"></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">A rock of mass <span class="process-math">\(0.6\text{ kg}\)</span> is tied to a string and swung overhead in a horizontal uniform circular motion as shown in <a href="forces-Dynamics-in-Polar-Coordinates.html#fig-stone-tied-to-string-whirled-around" class="xref" data-knowl="./knowl/xref/fig-stone-tied-to-string-whirled-around.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.129">Figure 6.129</a>.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/forces/stone-tied-to-string-whirled-around.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.129<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">The length of the string is <span class="process-math">\(0.8\text{ m}\text{.}\)</span> The string will break if tension in the string exceeds <span class="process-math">\(96\text{ N}\text{.}\)</span>
+</div> <div class="para">(a) Assuming the string to be almost in the horizontal plane, set up polar coordinate equations of motion for the rock for the condition in which the tension is an infinitsimal amount less than the breaking point.</div> <div class="para">(b) Find position, velocity, and acceleration of the rock as functions of time.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(\omega = \sqrt{\frac{T}{mR}},\ \ \text{constant}\text{,}\)</span>  or, <span class="process-math">\(\omega = 14.1\text{ rad/sec}\text{,}\)</span> (b) <span class="process-math">\(\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Let us us polar coordinates with origin at the center of the circle. Let <span class="process-math">\(a_r(t)\)</span> and <span class="process-math">\(a_\theta(t)\)</span> be the radial and angular components of acceleration at instant <span class="process-math">\(t\)</span> and <span class="process-math">\(F_r(t)\)</span> and <span class="process-math">\(F_\theta(t)\)</span> be the radial and angular components of net force on the stone. at the same instant. There are two forces on the stone: weight <span class="process-math">\(mg\)</span> along <span class="process-math">\(z\)</span> axis and horizontal component of tension <span class="process-math">\(\vec T\)</span> in the radially inward directions, i.e., in the <span class="process-math">\((-\hat u_r)\)</span> direction. Therefore, we will have the following equations of motion.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+-T = m a_r,\ \ 0 = m a_\theta,\ \ T_z-m g = m a_z=0.
+\end{equation*}
+</div>
+<div class="para">We are asssuming that horizontal component of <span class="process-math">\(\vec T\)</span> has almost the full magnitude and <span class="process-math">\(a_z=0\text{.}\)</span> Here the acceleration components will have simplified expressions due to the fact that radius of the circle is not changing.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_r = -R \omega^2,\ \ a_\theta = R\frac{d\omega}{dt},
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\omega = d\theta/dt\text{.}\)</span> Therefore, we have the following.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp \omega^2 = \frac{T}{m R}.\\
+\amp \frac{d\omega}{dt} = 0.\\
+\amp T_z = mg.
+\end{align*}
+</div>
+<div class="para">These can be simplified to</div>
+<div class="displaymath process-math">
+\begin{equation}
+\omega = \sqrt{\frac{T}{mR}},\ \ \text{constant}.\tag{6.64}
+\end{equation}
+</div>
+<div class="para">Numerically, this becomes</div>
+<div class="displaymath process-math">
+\begin{equation}
+\omega = \sqrt{\frac{96}{0.6\times 0.8}} = 14.1\text{ rad/sec}.\tag{6.65}
+\end{equation}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">From Eq. <a href="forces-Dynamics-in-Polar-Coordinates.html#eq-ex-Rock-Tied-to-String-Moving-in-a-Circle-a" class="xref" data-knowl="./knowl/xref/eq-ex-Rock-Tied-to-String-Moving-in-a-Circle-a.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.64">(6.64)</a> we get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ex-Rock-Tied-to-String-Moving-in-a-Circle-a.html">
+\begin{equation*}
+\omega = \frac{d\theta}{dt} = \sqrt{\frac{T}{mR}} = 14.1.
+\end{equation*}
+</div>
+<div class="para">Integrating this we get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ex-Rock-Tied-to-String-Moving-in-a-Circle-a.html">
+\begin{equation*}
+\theta(t) = \theta_0 + 14.1\; t.
+\end{equation*}
+</div>
+<div class="para">Thus, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-ex-Rock-Tied-to-String-Moving-in-a-Circle-a.html">
+\begin{align*}
+\amp r(t) = 0.8\text{ m},\ \ \theta(t) = \theta_0 + 14.1 t. \\
+\amp v_r(t) = 0,\ \ v_\theta = r\omega(t) = 0.8\times 14.1 = 11.3\text{ m/s}. \\
+\amp a_r(t) = -r\omega^2 = -160\text{ m/s}^2,\ \ a_\theta = 0. 
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="forces-Dynamics-in-Polar-Coordinates.html#ex-Rock-Tied-to-String-Moving-in-a-Circle">in-context</a></span>
+</body>
+</html>

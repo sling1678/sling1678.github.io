@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">11.25</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Surface of a Rotating Fluid in a Bucket.</span>
+</h3>
+<div class="para">A bucket of water is rotated with a uniform rotational speed  <span class="process-math">\(\Omega\text{.}\)</span>  It is found the surface assumes a steady shape.  Determine the shape.  Ignore the rotation of earth.</div> <div class="para">Due to the symmetry in the problem, it is sufficient to work in a plane containing the axis of rotation and a horizontal direction as shown in  <a href="sec-physics-in-earth-frame.html#fig-earth-frame-bucket-rot" class="xref" data-knowl="./knowl/xref/fig-earth-frame-bucket-rot.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 11.26">Figure 11.26</a>.</div> <figure class="figure figure-like"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/./images/noninertial-frame/bucket-rot.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">11.26<span class="period">.</span></span><span class="space"> </span></figcaption></figure> <div class="para">We will call the axis of rotation the <span class="process-math">\(z\)</span>-axis and the horizontal direction will be taken to be the <span class="process-math">\(x\)</span>-axis. Therefore, to find the equation of the surface, we need to work out the function <span class="process-math">\(z(x)\text{.}\)</span> We will make use of steady condition on a mass element at the surface.</div> <div class="para">Here, notice that it is easier to work in the rotating frame of the bucket since in this frame, liquid in the bucket will not be moving and will have zero acceleration. That is, in this frame, real forces will be balanced by inertial force(s).  Let us figure out the real and inertial forces on a mass element at the surface.</div> <div class="para">In the rotating frame once the steady state has reached, water would not be moving any more. Therefore the Coriolis force will be zero.  Thus, the only inertial force on particles of water will be the centrifugal force. The only other force is the weight.</div> <div class="para">Consider a mass element of mass <span class="process-math">\(m\)</span> at the surface of the steady fluid.  The weight has magnitude <span class="process-math">\(mg\)</span> and acts straight down. The centrifugal forces on various water particles and the weight of the water molecules will press on the layers of water in contact.  The water molecules on the surface will press on the molecules just below the surface.  The reaction force from the layer just below the surface will be in the normal direction of the surface as shown by <span class="process-math">\(F_0\)</span> in <a href="sec-physics-in-earth-frame.html#fig-earth-frame-bucket-rot" class="xref" data-knowl="./knowl/xref/fig-earth-frame-bucket-rot.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 11.26">Figure 11.26</a>.</div> <div class="para logical">
+<div class="para">Therefore, the <span class="process-math">\(x\)</span> and <span class="process-math">\(z\)</span>-components of the equations of motion of an element at the surface of water in the rotating frame for a mass at the surface are:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp x\text{-component: }\ \ \  m\Omega^2x-F_0\sin\theta=0\\
+\amp z\text{-component: }\ \ \   F_0\cos\theta -mg=0
+\end{align*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\tan\theta = \frac{\Omega^2}{g}x
+\end{equation*}
+</div>
+<div class="para">But this tangent must equal the slope of the tangent to the curve <span class="process-math">\(z(x)\)</span> at the point.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{dz}{dx} = \tan\theta.
+\end{equation*}
+</div>
+<div class="para">Therefore, we obtain the following equation for <span class="process-math">\(z(x)\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{dz}{dx} = \frac{\Omega^2}{g}x,
+\end{equation*}
+</div>
+<div class="para">which can be immediately integrated to yield</div>
+<div class="displaymath process-math">
+\begin{equation*}
+z = \frac{\Omega^2}{2g}x^2 + C,
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(C\)</span> is the constant of integration.  From the figure, <span class="process-math">\(x=0\)</span> corresponds to <span class="process-math">\(z=0\)</span> on the surface, therefore <span class="process-math">\(C =0\text{.}\)</span>  Hence, the equation for the surface is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+z = \frac{\Omega^2}{2g}x^2.
+\end{equation*}
+</div>
+<div class="para">The situation is symmetric in the <span class="process-math">\(xy\)</span>-plane and there is nothing special about <span class="process-math">\(x\)</span>-axis.  To obtain the equation for the entire surface and not just a slice of the surface, all we need to do is to replace <span class="process-math">\(x\)</span> by the radial distance <span class="process-math">\(r\)</span> of polar coordinates.</div>
+<div class="displaymath process-math">
+\begin{equation}
+z = \frac{\Omega^2}{2g}r^2.\tag{11.18}
+\end{equation}
+</div>
+<div class="para">Hence, the surface is a paraboloid of revolution about the axis of rotation.</div>
+</div></article><span class="incontext"><a class="internal" href="sec-physics-in-earth-frame.html#ex-Surface-of-a-Rotating-Fluid-in-a-Bucket">in-context</a></span>
+</body>
+</html>

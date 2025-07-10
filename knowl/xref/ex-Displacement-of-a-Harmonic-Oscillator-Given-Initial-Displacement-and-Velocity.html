@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Displacement of a Harmonic Oscillator Given Initial Displacement and Velocity.</span>
+</h4>
+<div class="para">A block of mass <span class="process-math">\(2\text{ kg}\)</span> is attached to a spring of spring constant <span class="process-math">\(32\text{ N/m}\)</span> is oscillating with damping constant <span class="process-math">\(8\text{ kg/s}\text{.}\)</span> The block started at <span class="process-math">\(x = 2\text{ cm}\)</span> from rest. Where is the block at an arbitrary instant <span class="process-math">\(t\text{?}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">First find out what type of damping it is and then use the general solution for  <span class="process-math">\(x\)</span> and <span class="process-math">\(v\)</span> to fit the initial condition given.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(3.1\text{ cm}\,\exp(-4 t)\,\cos(\sqrt{12} t -0.86)\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">We have three formulas for <span class="process-math">\(x\)</span> to choose from, depending upon the type of damping. The effective parameters are</div>
+<div class="displaymath process-math">
+\begin{align*}
+\omega \amp =\sqrt{\dfrac{32}{2}} = 4\text{ sec}^{-1},\\
+\gamma \amp = \dfrac{8}{2} = 4\text{ sec}^{-1}.
+\end{align*}
+</div>
+<div class="para">Since <span class="process-math">\(\omega \gt \gamma/2\text{,}\)</span> the damping is an underdamping with oscillation angular frequency</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\omega^\prime = \sqrt{\omega^2 - \gamma^2/4  } = \sqrt{12}\text{ sec}^{-1},
+\end{equation*}
+</div>
+<div class="para">and <span class="process-math">\(x\)</span> and <span class="process-math">\(v\)</span> as:</div>
+<div class="displaymath process-math">
+\begin{align*}
+x\amp = A\,\exp(-\gamma t)\,\cos(\omega^\prime t + \phi) \\
+v\amp = -\gamma A\,\exp(-\gamma t)\,\cos(\omega^\prime t + \phi) -\omega^\prime A\,\exp(-\gamma t)\,\sin(\omega^\prime t + \phi) 
+\end{align*}
+</div>
+<div class="para">Now, we use the given initial conditions to get</div>
+<div class="displaymath process-math">
+\begin{align*}
+2\amp = A\, \cos\,\phi \\
+0\amp = -\gamma A\,\cos\,\phi -\omega^\prime A\,\sin\, \phi 
+\end{align*}
+</div>
+<div class="para">The second equation gives <span class="process-math">\(\phi=-0.857\text{ rad}\)</span> which is used in the first to get <span class="process-math">\(A=3.1\text{ cm}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = 3.1\text{ cm},\ \ \ \phi=-0.857.
+\end{equation*}
+</div>
+<div class="para">Therefore, we have the following <span class="process-math">\(x\)</span> at arbitrary instant.</div>
+<div class="displaymath process-math">
+\begin{align*}
+x\amp = 3.1\text{ cm}\,\exp(-4 t)\,\cos(\sqrt{12} t -0.857), 
+\end{align*}
+</div>
+<div class="para">where <span class="process-math">\(t\)</span> is in <span class="process-math">\(\text{sec}\text{.}\)</span>
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="Damped-Harmonic-Oscillator.html#ex-Displacement-of-a-Harmonic-Oscillator-Given-Initial-Displacement-and-Velocity">in-context</a></span>
+</body>
+</html>

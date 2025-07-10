@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">29.36</span><span class="period">.</span><span class="space"> </span><span class="title">Electric Field of a Uniformly Charged Thin Rod.</span>
+</h4> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:60%;"><div class="para logical">
+<div class="para">Suppose we have a uniformly charged rod of length <span class="process-math">\(L\)</span> with line charge density <span class="process-math">\(\lambda\)</span> and we want to find field at P in <a href="Continuous-Charge-Distribution.html#fig-e-field-of-line-charge-set-up-0" class="xref" data-knowl="./knowl/xref/fig-e-field-of-line-charge-set-up-0.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 29.37">Figure 29.37</a>. The electric field is given in Eq. <a href="Continuous-Charge-Distribution.html#eq-Electric-Field-of-a-Charged-Rod" class="xref" data-knowl="./knowl/xref/eq-Electric-Field-of-a-Charged-Rod.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 29.22">(29.22)</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-e-field-of-line-charge-set-up-0.html ./knowl/xref/eq-Electric-Field-of-a-Charged-Rod.html">
+\begin{equation*}
+E = k\dfrac{ 2|q| }{ D  \sqrt{ L^2 + 4D^2} },
+\end{equation*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:30%;"><figure class="figure figure-like"><img src="external/./images/coulombs-law/e-field-of-line-charge.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">29.37<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">Now, we will like to <em class="alert">derive</em> this result from the fundametal formula for electric field of a point charge.</div> <div class="para"><em class="alert">General Strategy:</em></div> <div class="para">When we deal with a continuous charges, it is helpful to start with pieces of the body, and use point charge formula. Whenever possible, it usually simplifies calculation if you make use of the symmetry. In the present question, since the field point is in the plane that divides the rod in half, there is a symmetry between the upper half and lower half.</div> <div class="para"><em class="alert">Derivation:</em></div> <div class="para">To exploit symmetry in the situation, we will look at electric fields from two small parts of the rod that are symmetrucally placed shown as <span class="process-math">\(dq_1\)</span> and <span class="process-math">\(dq_2\)</span> in <a href="Continuous-Charge-Distribution.html#fig-e-field-of-line-charge-set-up-x" class="xref" data-knowl="./knowl/xref/fig-e-field-of-line-charge-set-up-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 29.38">Figure 29.38</a>. Note that the symmetry leads to the cancellation of <span class="process-math">\(y\)</span> component. Hence, we just need to work out <span class="process-math">\(E_x\text{.}\)</span> furthermore, we can find <span class="process-math">\(E_x\)</span> from one half of the rod and double that.</div> <figure class="figure figure-like"><figure class="figure figure-like"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./images/coulombs-law/e-field-of-line-charge-set-up.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">29.39<span class="period">.</span></span><span class="space"> </span></figcaption></figure><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">29.38<span class="period">.</span></span><span class="space"> </span>This figure illustrates that vertical components of the electric fields of two symmetrically placed charge elements will cancel out. </figcaption></figure> <div class="para logical">
+<div class="para">From element of the rod between <span class="process-math">\(y\)</span> and <span class="process-math">\(y+dy\text{,}\)</span> shown in the upper part of the rod in  <a href="Continuous-Charge-Distribution.html#fig-e-field-of-line-charge-set-up" class="xref" data-knowl="./knowl/xref/fig-e-field-of-line-charge-set-up.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 29.39">Figure 29.39</a> the <span class="process-math">\(x\)</span>-component of the electric field, to be written informally in infinitesimal notation of <span class="process-math">\(dE_x\text{,}\)</span> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-e-field-of-line-charge-set-up.html">
+\begin{align*}
+dE_x \amp = k \dfrac{\lambda\, dy}{  D^2 + y^2 }\, \cos\theta\\
+\amp = k \dfrac{\lambda\, dy}{  D^2 + y^2 }\, \dfrac{D}{ \sqrt{D^2 + y^2} }
+\end{align*}
+</div>
+<div class="para">To get the net electric field from the rod we will integrate the right side from <span class="process-math">\(y=0\)</span> to <span class="process-math">\(y=L/2\)</span> and multiply the result by 2 to take into account the contributions of the lower half.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-e-field-of-line-charge-set-up.html">
+\begin{align*}
+E_x \amp = 2\times k\,\lambda\, D \int_0^{L/2}  \dfrac{dy}{ \left(  D^2 + y^2 \right)^{3/2}  }.
+\end{align*}
+</div>
+<div class="para">I will use <a class="external" href="" target="_blank">Wolfram Alpha</a><details class="ptx-footnote" aria-live="polite" id="ex-Electric-Field-of-a-Uniformly-Charged-Thin-Rod-9-11"><summary class="ptx-footnote__number" title="Footnote 29.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="ex-Electric-Field-of-a-Uniformly-Charged-Thin-Rod-9-11"><code class="code-inline tex2jax_ignore"></code></div></details> to find the integral</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-e-field-of-line-charge-set-up.html">
+\begin{equation*}
+\int \dfrac{dy}{ \left(  D^2 + y^2 \right)^{3/2}  } = \dfrac{y}{D^2\sqrt{y^2 + D^2}} + C.
+\end{equation*}
+</div>
+<div class="para">Therefore, we will get following answer for our problem.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-e-field-of-line-charge-set-up.html">
+\begin{align*}
+E_x \amp = 2\times k\,\lambda\,   \dfrac{L/2}{D\sqrt{(L/2)^2 + D^2}}.
+\end{align*}
+</div>
+<div class="para">Now, we see that <span class="process-math">\(\lambda L\)</span> is the total charge on the rod. Let us denote this by <span class="process-math">\(q\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-e-field-of-line-charge-set-up.html">
+\begin{equation}
+E_x =  k\,  \dfrac{q}{D\sqrt{(L/2)^2 + D^2}}.\tag{29.23}
+\end{equation}
+</div>
+<div class="para">Therefore, the magnitude is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-e-field-of-line-charge-set-up.html">
+\begin{equation*}
+E = k\,  \dfrac{|q|}{D\sqrt{(L/2)^2 + D^2}} = k\,  \dfrac{2|q|}{D\sqrt{L^2 + 4\:D^2}},
+\end{equation*}
+</div>
+<div class="para">the direction towards <span class="process-math">\(+x\)</span> if <span class="process-math">\(q\)</span> positive and <span class="process-math">\(-x\)</span> if <span class="process-math">\(q\)</span> negative.</div>
+</div> <div class="para logical">
+<div class="para">Notice that if P is very far away, our rod would look like a point charge, therefore, our answer should become same as that of point charge.  We can see this expectation emerge when we apply <span class="process-math">\(D\gt\gt L\)</span>  limit our result in Eq. <a href="Continuous-Charge-Distribution.html#eq-line-charge-x-electric-field" class="xref" data-knowl="./knowl/xref/eq-line-charge-x-electric-field.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 29.23">(29.23)</a> by just dropping <span class="process-math">\((L/2)^2\)</span> compared to <span class="process-math">\(D^2\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-line-charge-x-electric-field.html">
+\begin{equation*}
+E_x =  k\,  \dfrac{q}{D^2}\text{, if } D\gt\gt L.
+\end{equation*}
+</div>
+</div></article><span class="incontext"><a class="internal" href="Continuous-Charge-Distribution.html#ex-Electric-Field-of-a-Uniformly-Charged-Thin-Rod">in-context</a></span>
+</body>
+</html>

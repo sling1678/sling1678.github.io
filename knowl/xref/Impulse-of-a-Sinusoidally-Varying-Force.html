@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Impulse of a Sinusoidally Varying Force.</span>
+</h4>
+<div class="para">The time dependence of a sinusoidally varying force can be written as a sine or cosine of time. For instance, when an electron is illuminated by a monochromatic light, the force on the electron varies as a cosine or sine function or a combination thereof.</div> <div class="para logical">
+<div class="para">Suppose the force on an electron at some instant <span class="process-math">\(t \)</span> has the following form with respect to a coordinate system,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec F = A \cos (2\pi f t)\, \hat i + B \sin(2\pi f t)\, \hat j\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\hat i\)</span> and <span class="process-math">\(\hat j\)</span>  are the unit vectors along the <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> axes respectively,   <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are some constants, and <span class="process-math">\(f \)</span> is also a constant frequency.</div>
+</div> <div class="para">What will be the magnitude and direction of the impulse on the electron during an interval <span class="process-math">\(t=0 \)</span> to <span class="process-math">\(t=T\)</span> for the case <span class="process-math">\(A = B \text{?}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Find the components <span class="process-math">\(J_x\)</span> and <span class="process-math">\(J_y\)</span>
+</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(\dfrac{A}{\pi f}\left|\sin(\pi f T) \right| \text{,}\)</span> direction <span class="process-math">\(\pi f T \mod 2\pi \text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">We can find the components of the impulse vector and then write the full impulse vector using the components and the unit vectors.</div>
+<div class="displaymath process-math">
+\begin{align*}
+J_x \amp = \int_0^T\, A \cos (2\pi f t)\, dt = \dfrac{A}{2\pi f}\, \sin (2\pi f T), \\
+J_y \amp = \int_0^T\, A \sin (2\pi f t)\, dt = -\dfrac{A}{2\pi f}\, \left[ \cos (2\pi f T) - 1 \right]. 
+\end{align*}
+</div>
+<div class="para">Therefore, using unit vectors, the impulse vector is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec J = J_x\, \hat i + J_y\, \hat j,
+\end{equation*}
+</div>
+<div class="para">from which we can get the magnitude to be</div>
+<div class="displaymath process-math">
+\begin{align*}
+J \amp = \sqrt{J_x^2 + J_y^2},\\
+\amp = \dfrac{A}{2\pi f} \sqrt{2-2\cos(2\pi f T)},\\
+\amp = \dfrac{A}{2\pi f} \sqrt{4\sin^2(\pi f T)},\\
+\amp = \dfrac{A}{\pi f}\left|\sin(\pi f T) \right|,
+\end{align*}
+</div>
+<div class="para">and the angle for the line</div>
+<div class="displaymath process-math">
+\begin{align*}
+\theta \amp = \tan^{-1}\left(\dfrac{J_y}{J_x} \right), \\
+\amp = -\tan^{-1}\left(\dfrac{\cos(2\pi f T) - 1}{\sin(2\pi f T)} \right), \\
+\amp = \tan^{-1}\left(\dfrac{2\sin^2(\pi f T)}{2\sin(\pi f T)\cos(\pi f T)} \right), \\
+\amp = \tan^{-1}\left(\tan(\pi f T) \right) = \pi f T, 
+\end{align*}
+</div>
+<div class="para">where the direction will be based on interpreting this angle <span class="process-math">\(mod\ 2\pi\text{.}\)</span>
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="momentum-Impulse.html#Impulse-of-a-Sinusoidally-Varying-Force">in-context</a></span>
+</body>
+</html>

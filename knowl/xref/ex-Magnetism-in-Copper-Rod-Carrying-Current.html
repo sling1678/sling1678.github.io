@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">37.18</span><span class="period">.</span><span class="space"> </span><span class="title">Magnetism in Copper Rod Carrying Current.</span>
+</h3>
+<div class="para">A long copper rod of radius <span class="process-math">\(R\)</span> is carrying a current <span class="process-math">\(I\)</span> uniformly distributed over the cross-section.</div> <div class="para">(a) Find the magnitude and direction of the applied field <span class="process-math">\(\vec H\text{,}\)</span> magnetization <span class="process-math">\(\vec M\text{,}\)</span> and magnetic field <span class="process-math">\(\vec B\)</span> inside and outside the wire. Use <span class="process-math">\(\chi_{M,\text{Cu}}\)</span> for magnetic susceptibility of Copper.</div> <div class="para">(b) Find numerical values for <span class="process-math">\(R=1\text{ cm}\)</span> and <span class="process-math">\(I=100\text{ A}\)</span> at a point <span class="process-math">\(0.5\text{ cm}\)</span> from the center of the wire.</div> <div class="para">Data: <span class="process-math">\(\chi_{M,\text{Cu}} = −0.97\times 10^{-5}\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="answer solution-like knowl__content"> <div class="para">(a) Magnitudes at a point a distance <span class="process-math">\(r\lt R\)</span> from center : <span class="process-math">\(H_{\textrm{in}} = J\: r/2\text{,}\)</span> <span class="process-math">\(M = \chi_m\: J\: r/2\text{,}\)</span> <span class="process-math">\(B_{\textrm{in}} = \mu_0\: (1+\chi_m)\: J\: r/2\text{.}\)</span> Here <span class="process-math">\(J= I/\pi R^2\text{.}\)</span>
+</div>
+</div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="answer solution-like knowl__content"> <div class="para">(b) <span class="process-math">\(5.0\times 10^{4}\text{ A/m}\text{,}\)</span> <span class="process-math">\(-4.85\times 10^{4}\text{ A/m}\text{,}\)</span> <span class="process-math">\(1.88\times 10^{-3}\text{ T}\text{.}\)</span>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(a) Let <span class="process-math">\(s\)</span> be the cylindrical radial distance from the center of the wire. Then, applying Ampere’s law to the applied field <span class="process-math">\(\vec H\)</span> for the cylindrical symmetery, we immediately know that the magnitude <span class="process-math">\(H\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H = \begin{cases}
+\dfrac{I}{R^2}\, s, \amp s \lt R\\
+\dfrac{I}{2\pi s},	\amp s \gt R
+\end{cases}
+\end{equation*}
+</div>
+<div class="para">If you don’t know how I got that, you will need to review Ampere’s law in an earlier chapter. The direction of <span class="process-math">\(\vec H\)</span> will be tangent to circles around the wire, just as it was for <span class="process-math">\(\vec B\)</span> when we didn’t worry about magnetization of copper itself.</div>
+</div> <div class="para logical">
+<div class="para">Using susceptibility of Copper for points inside copper and permeability of vacuum at outside points, we get magnitude of <span class="process-math">\(\vec M\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+M = \begin{cases}
+\dfrac{\chi_{M,\text{Cu}}\, I}{R^2}\, s, \amp s \lt R\\
+0,	\amp s \gt R
+\end{cases}
+\end{equation*}
+</div>
+<div class="para">Since Cu is diamagnetic, its susceptibility <span class="process-math">\(\chi_{\text{Cu},M} \lt 0\text{.}\)</span> That means, the direction of <span class="process-math">\(\vec M\)</span> is opposite of the direction of <span class="process-math">\(\vec H\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">Since <span class="process-math">\(\vec B = \mu_0(\vec H + \vec M)\)</span> we get <span class="process-math">\(\vec B\)</span> from the results given above. Alternaterly, we can use  permeability of Copper for points inside copper and permeability of vacuum at outside points, we get magnitude of <span class="process-math">\(\vec B\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B = \begin{cases}
+\dfrac{\mu_\text{Cu}\, I}{R^2}\, s, \amp s \lt R\\
+\dfrac{\mu_0\,I}{2\pi s},	\amp s \gt R
+\end{cases}
+\end{equation*}
+</div>
+<div class="para">with</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mu_\text{Cu} = 1 + \chi_{M,\text{Cu}}.
+\end{equation*}
+</div>
+<div class="para">The direction of <span class="process-math">\(\vec B\)</span> is same as the direction of <span class="process-math">\(\vec H\text{.}\)</span>
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(b) The magnitudes of the fields at the indicated point inside are</div>
+<div class="displaymath process-math">
+\begin{align*}
+H_\text{in} \amp = \dfrac{I}{R^2}\, s\\
+\amp = \dfrac{100\text{ A}}{0.01^2\text{ m}^2}\, 0.05\text{ m} = 5.0\times 10^{4}\text{ A/m}. \\
+M \amp = \chi_{M,\text{Cu}} H_\text{in} \\
+\amp = −0.97\times 10^{-5} \times 5.0\times 10^{4}\text{ A/m} = -4.85\times 10^{4}\text{ A/m}\\
+B \amp = \mu_0 (H + M)\\
+\amp = 4\pi\times 10^{-7}\text{ T.m/A}\times (5.0-4.85)\times 10^{4} \text{ A/m}= 1.88\times 10^{-3}\text{ T}. 
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Magnetization-and-Magnetic-Field.html#ex-Magnetism-in-Copper-Rod-Carrying-Current">in-context</a></span>
+</body>
+</html>

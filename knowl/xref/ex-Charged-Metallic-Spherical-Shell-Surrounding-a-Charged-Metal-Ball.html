@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Electric Field of Charged Metallic Spherical Shell Surrounding a Charged Metal Ball.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para">
+<div class="para">An aluminum spherical ball of radius <span class="process-math">\(4\text{ cm}\)</span> is charged with <span class="process-math">\(5\ \mu\text{C}\)</span> of charge.  A copper spherical shell of inner radius <span class="process-math">\(6\text{ cm}\)</span>  and outer radius <span class="process-math">\(8\text{ cm}\)</span>  surrounds it.  A total charge of <span class="process-math">\(-8\ \mu\text{C}\)</span> is put on the copper shell.</div> <div class="para">(a) Find the electric field at all points in space including points inside the aluminum and copper shell when copper shell and aluminum sphere are concentric.</div>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/conductors/spherical-shell-surrounding-charged-ball-sol-a.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">32.27<span class="period">.</span></span><span class="space"> </span>For <a href="Electric-Field-of-Charged-Conductors.html#ex-Charged-Metallic-Spherical-Shell-Surrounding-a-Charged-Metal-Ball" class="xref" data-knowl="./knowl/xref/ex-Charged-Metallic-Spherical-Shell-Surrounding-a-Charged-Metal-Ball.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 32.4.3.1: Electric Field of Charged Metallic Spherical Shell Surrounding a Charged Metal Ball">Exercise 32.4.3.1</a> (a).</figcaption></figure></div>
+</div></div> <div class="para">(b) Find electric potential at arbitrary point from the common center of the arrangement in part (a).</div> <div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Use Gauss’s law.  (b) Integrate the electric field from <span class="process-math">\(r=\infty\)</span> to various points.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">See solution.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">The given charge distributions have spherical symmetry.  Therefore, a quick application of Gauss’s law yields the following for the electric field in various regions.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec E = \begin{cases}
+0	\amp 	r\lt 4\:\text{cm}\\
+\frac{1}{4\pi\epsilon_0}\:\frac{5\:\mu\text{C}}{r^2}\: \hat u_r	\amp   \ \ \ \ 4\:\text{cm} \lt r \lt  6\:\text{cm}\\
+0	\amp 	 6\:\text{cm} \lt r \lt 8\:\text{cm}\\
+\frac{1}{4\pi\epsilon_0}\:\frac{-3\:\mu\text{C}}{r^2}\: \hat u_r	\amp  \ \ \ \    r &gt; 8\:\text{cm}
+\end{cases}
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Since electric field goes to zero as <span class="process-math">\(1/r^2\)</span> for large <span class="process-math">\(r\text{,}\)</span> we can choose reference zero of potential at <span class="process-math">\(r=\infty\)</span> and compute the following integral for an arbitrary point <span class="process-math">\(r_\text{P}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_\text{P} = -\int_\infty^{r_\text{P}}\, E(r)\, dr.
+\end{equation*}
+</div>
+<div class="para">For point P outside of all spheres, you will get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_\text{P} = \frac{1}{4\pi\epsilon_0}\:\frac{-3\:\mu\text{C}}{r_\text{P}}.
+\end{equation*}
+</div>
+<div class="para">This is as if the net charge was placed at the center. For P between the shells, you will get (expressing the radius in units of meter.)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_\text{P} = \frac{1}{4\pi\epsilon_0}\:\frac{-3\:\mu\text{C}}{0.08\text{ m}}.
+\end{equation*}
+</div>
+<div class="para">For P between the inner sphere and inner shell</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_\text{P} =\frac{1}{4\pi\epsilon_0}\:\left( \frac{-3\:\mu\text{C}}{0.08\text{ m}} + \frac{5\:\mu\text{C}}{r_\text{P}} - \frac{5\:\mu\text{C}}{0.06\,\text{ m}} \right)
+\end{equation*}
+</div>
+<div class="para">Finally, for point P inside the inner-most sphere</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_\text{P} = \frac{1}{4\pi\epsilon_0}\:\left( \frac{-3\:\mu\text{C}}{0.08\text{ m}} + \frac{5\:\mu\text{C}}{0.04\,\text{m}} - \frac{5\:\mu\text{C}}{0.06\,\text{ m}} \right)
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Electric-Field-of-Charged-Conductors.html#ex-Charged-Metallic-Spherical-Shell-Surrounding-a-Charged-Metal-Ball">in-context</a></span>
+</body>
+</html>

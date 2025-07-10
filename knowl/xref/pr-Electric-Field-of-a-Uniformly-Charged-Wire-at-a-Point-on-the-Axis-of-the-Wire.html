@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">29<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Electric Field of a Uniformly Charged Wire at a Point on the Axis of the Wire.</span>
+</h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">A wire of length <span class="process-math">\(L\)</span> carries a uniform charge <span class="process-math">\(\lambda\)</span> (units: <span class="process-math">\(\text{C/m}\)</span>). Find electric field at points (a) <span class="process-math">\(\text{P}_1\)</span> and (b) <span class="process-math">\(\text{P}_2\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><img src="external/./images/coulombs-law/pr-E-field-at-a-Point-on-the-Axis-of-the-Wire.png" class="contained"></div>
+</div></div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Use <span class="process-math">\(x\)</span> axis along the wire and find field of an infinitesimal element of the wire. Integrate to get the field. (b) Avoid the field point on the wire by working out field at a point infinitesimally left and at a point infinitesimally to the right.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(k\;\frac{\lambda L}{a(L+a)}\text{,}\)</span> (b) <span class="process-math">\(k\lambda \left[ \frac{2b - L}{b(L-b)} \right]\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(a) Let us place <span class="process-math">\(x\)</span> axis along the wire with origin at one end as shown in <a href="Coulombs-Law-Bootcamp.html#fig-pr-E-field-at-a-Point-on-the-Axis-of-the-Wire-sol-a" class="xref" data-knowl="./knowl/xref/fig-pr-E-field-at-a-Point-on-the-Axis-of-the-Wire-sol-a.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 29.57">Figure 29.57</a>. Each charge element on the wire will have only <span class="process-math">\(x\)</span> component of the electric field. For instance, electric field of the element <span class="process-math">\(dq = \lambda\; dx\)</span> will be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-pr-E-field-at-a-Point-on-the-Axis-of-the-Wire-sol-a.html">
+\begin{equation*}
+dE_x = k \frac{\lambda\; dx}{ \left( L+a-x \right)^2}.
+\end{equation*}
+</div>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./images/coulombs-law/pr-E-field-at-a-Point-on-the-Axis-of-the-Wire-sol-a.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">29.57<span class="period">.</span></span><span class="space"> </span>For <a href="Coulombs-Law-Bootcamp.html#pr-Electric-Field-of-a-Uniformly-Charged-Wire-at-a-Point-on-the-Axis-of-the-Wire" class="xref" data-knowl="./knowl/xref/pr-Electric-Field-of-a-Uniformly-Charged-Wire-at-a-Point-on-the-Axis-of-the-Wire.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 29.8.29: (Calculus) Electric Field of a Uniformly Charged Wire at a Point on the Axis of the Wire">Exercise 29.8.29</a>(a).</figcaption></figure> <div class="para logical">
+<div class="para">Integrating this from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=L\)</span> will give the net field at <span class="process-math">\(\text{P}_1\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+E_x \amp= k\lambda\;  \int_0^L \frac{dx}{ \left( L+a-x \right)^2} \\
+\amp=- k\lambda\;  \int_{L+a}^a \frac{dy}{ y^2} \ \ \ (y=L+a-x) \\
+\amp= k\lambda\; \left( \frac{1}{a}  - \frac{1}{L+a}\right) = k\;\frac{\lambda L}{a(L+a)}.
+\end{align*}
+</div>
+<div class="para">Note that this is not <span class="process-math">\(kq/r^2\text{.}\)</span> If we write <span class="process-math">\(q=\lambda L\)</span> for net charge on the wire and place the entire charge at the center, the field at <span class="process-math">\(\text{P}_1\)</span> will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E = k \frac{\lambda L}{ (\frac{L}{2} + a)^2 }.
+\end{equation*}
+</div>
+<div class="para">This is definitely very different from the answer we found for the problem. Only in the limit <span class="process-math">\(a \gg L \text{,}\)</span> the two expressions become in indistinguishable.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para">(b) Here we see that electric field of charge on points to the left of <span class="process-math">\(\text{P}_2\)</span> is pointed to right but points on the right are pointed to left. Using (a), we can write the electric field of left and right separately. But, when we do this calculation naively, by setting <span class="process-math">\(a=0\)</span> in the answer for (a), you will run into trouble of dividing by zero. To avoid that, we find field at an infintesimal left of <span class="process-math">\(\text{P}_2\)</span> and infinitesimal right of <span class="process-math">\(\text{P}_2\text{.}\)</span>
+</div> <div class="para logical">
+<div class="para">Let <span class="process-math">\(\epsilon\)</span> denote an infinitesimal length. then, field from the left of <span class="process-math">\(\text{P}_2\)</span> at a point infintesimal left of <span class="process-math">\(\text{P}_2\)</span> will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_{\text{left},x} = k\lambda\; \left( \frac{1}{\epsilon}  - \frac{1}{L}\right)
+\end{equation*}
+</div>
+<div class="para">and at a point  infintesimal right of <span class="process-math">\(\text{P}_2\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_{\text{right},x} = -k\lambda\; \left( \frac{1}{\epsilon}  - \frac{1}{L-b}\right)
+\end{equation*}
+</div>
+<div class="para">Adding them, we find that the arbitrarily chosen infinitesimal size <span class="process-math">\(\epsilon\)</span> cancels out giving us the following, which correctly gives zero for the midpoint.</div>
+<div class="displaymath process-math">
+\begin{align*}
+E_x \amp = E_{\text{left},x}  + E_{\text{right},x} =  k\lambda \left[ \frac{2b - L}{b(L-b)} \right]
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Coulombs-Law-Bootcamp.html#pr-Electric-Field-of-a-Uniformly-Charged-Wire-at-a-Point-on-the-Axis-of-the-Wire">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.64</span><span class="period">.</span><span class="space"> </span><span class="title">Computing Inertial Drag Force.</span>
+</h3>
+<div class="para">Inertial drag force is important at high speeds. A dolphin is swimming in water at a speed of <span class="process-math">\(10 \text{ m/s}\text{.}\)</span> Model the dolphin as a cylinder of radius <span class="process-math">\(0.5\text{ m} \)</span> and length <span class="process-math">\(4\text{ m}\text{.}\)</span>
+</div> <div class="para">(a) Find the Reynold’s number for the water flow at the speed of the dolphin.</div> <div class="para">(b) Based on the Reynold’s number, decide if you should omit the viscous drag and only use the inertial drag when computing the drag force, and then find the drag force on the  dolphin.</div> <div class="para">(c) What will happen to the drag force, if dolphin slows down to <span class="process-math">\(5\text{ m/s}\text{?}\)</span>
+</div> <div class="para">Data: Viscosity <span class="process-math">\(\eta \)</span> of water is <span class="process-math">\(0.009\text{ Pa.s}\text{.}\)</span> You may use the drag coefficient of dolphin to be <span class="process-math">\(C_D =  0.0036\text{.}\)</span> Density of water = <span class="process-math">\(1000\text{ kg/m}^3\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(1.0 \times 10^6\)</span>  ,(b) <span class="process-math">\(141.4\text{ N}\text{,}\)</span> (c) <span class="process-math">\(35.4\text{ N}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">We use the formula for the Reynold’s number to find the value. In the Reynold’s number formula, we need to choose a length scale for the moving object, for which we choose the diameter of the cylinder modeling the dolphin since that is the size which is perpendicular to the flow.</div>
+<div class="displaymath process-math">
+\begin{align*}
+N_R \amp = \dfrac{L \rho v }{\eta}, \\
+\amp = \dfrac{ 2\times 0.5 \times 1000\times  10 }{ 0.009} = 1.0 \times 10^6. 
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Since <span class="process-math">\(N_R \gt\gt 1 \text{,}\)</span> the inertial drag is way more than the viscous drag. Therefore, we drop the viscous drag. Using the formula for the inertial drag force, we find</div>
+<div class="displaymath process-math">
+\begin{align*}
+F_D^{\text{inertial}} \amp = \dfrac{1}{2}\,C_D A \rho v^2, \\
+\amp = 0.5\times 0.0036\times \pi\times 0.5^2\times 1000\times 10^2 =  141.4\text{ N}. 
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Since <span class="process-math">\(F_D \sim v^2 \text{,}\)</span> if <span class="process-math">\(v \rightarrow \dfrac{v}{2} \text{,}\)</span> <span class="process-math">\(F_D \rightarrow \dfrac{F_D}{4} \text{.}\)</span> That is, the drag force will become one quarter.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+F_D = \dfrac{141.4\text{ N}}{4} = 35.4\text{ N}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="forces-Drag-Force.html#Computing-Inertial-Drag-Force">in-context</a></span>
+</body>
+</html>

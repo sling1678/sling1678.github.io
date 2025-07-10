@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.65</span><span class="period">.</span><span class="space"> </span><span class="title">Drag Force and the Terminal Velocity.</span>
+</h3>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:65%;"><div class="para">
+<div class="para">A steel ball of radius <span class="process-math">\(2.0\text{ cm}\)</span> is gently placed inside a tube of water and released from rest. Initially, the ball accelerates but after some time reaches a <dfn class="terminology">terminal velocity</dfn>, i.e.,  velocity does not change.</div> <div class="para">Data: Viscosity <span class="process-math">\(\eta \)</span> of water is <span class="process-math">\(0.009\text{ Pa.s}\text{.}\)</span> You may use the drag coefficient of sphere to be, <span class="process-math">\(C_D = 0.5\text{.}\)</span> Density of steel = <span class="process-math">\(8000\text{ kg/m}^3\text{.}\)</span> Density of water = <span class="process-math">\(1000\text{ kg/m}^3\text{.}\)</span>
+</div>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:30%;"><div class="para">
+<div class="para"></div> <figure class="figure figure-like"><img src="external/./images/forces/ex-terminal-velocity-in-water.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.66<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div></div>
+</div></div> <div class="para">(a) Assuming viscous drag force to be the only drag force, find the speed at which the net force on the ball is zero. This assumption turns out to be incorrect for this situation, but we will discover that in part (b) below.</div> <div class="para">(b)  What is the Reynold’s number of the flow at the terminal speed you found by assuming viscous drag as total drag in (a)? Decide if ignoring the inertial drag force was justified.</div> <div class="para">(c) You will find that viscous drag force is not the dominant drag force at this speed. We should be using the inertial drag force instead. Now, find the terminal velocity using the inertial drag force.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(774\text{ m/s}\)</span> ,(b) <span class="process-math">\(3,440,000\text{,}\)</span> (c) <span class="process-math">\(2.9\text{ m/s} \text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Using the formula for the viscous drag force, we find</div>
+<div class="displaymath process-math">
+\begin{align*}
+F_D^{\text{viscous}} \amp = 6\pi\eta R v, \\
+\amp = 6\times \pi \times 0.009\times 0.02 \times v = 0.0034\, v. 
+\end{align*}
+</div>
+<div class="para">This must balance the weight for acceleration to be zero. We need to find the mass of the ball to find the weight. We will get that from the volume <span class="process-math">\(V \)</span> of the ball and the density of steel.</div>
+<div class="displaymath process-math">
+\begin{align*}
+V \amp = \dfrac{4}{3}\pi R^3, \\
+\amp = \dfrac{4}{3}\times \pi \times 0.02^3 =3.35\times 10^{-5}\text{ m}^3. 
+\end{align*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W = mg = (3.35\times10^{-5}\times 8000)\times 9.81=2.63\text{ N}. 
+\end{equation*}
+</div>
+<div class="para">Balancing this with the viscous drag gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.0034\, v = 2.63\ \ \Longrightarrow\ \  v = 774\text{ m/s}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">We use the formula for the Reynold’s number to find the value. In the Reynold’s number formula, we need to choose a length scale for the moving object, for which we choose the diameter of the ball.</div>
+<div class="displaymath process-math">
+\begin{align*}
+N_R \amp = \dfrac{L \rho v }{\eta}, \\
+\amp = \dfrac{ 0.04 \times 1000\times 774 }{ 0.009} = 3,440,000. 
+\end{align*}
+</div>
+<div class="para">This is saying that at this speed, the inertial drag is 3,440,000 times more important. That means, our terminal speed calculated in <em class="alert">(a) is wrong</em>. We should, instead, use the inertial drag formula.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Using the formula for the inertial drag force, we find</div>
+<div class="displaymath process-math">
+\begin{align*}
+F_D^{\text{inertial}} \amp = \dfrac{1}{2}C_D A \rho v^2, \\
+\amp = 0.5\times 0.5\times \pi\times 0.02^2\times 1000\, v^2 = 0.315\, v^2. 
+\end{align*}
+</div>
+<div class="para">This must balance the weight for acceleration to be zero. We found weight in part (a). Now, we get the following equaiton for <span class="process-math">\(v \text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.315\, v^2 = 2.63\ \ \Longrightarrow\ \  v = 2.9\text{ m/s}.
+\end{equation*}
+</div>
+<div class="para">Thus, the terminal velocity for the steel ball is <span class="process-math">\(2.9\text{ m/s}\text{.}\)</span> This is a much more reasonable number than the wrong value of terminal speed found in (a).</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="forces-Drag-Force.html#Drag-Force-and-the-Terminal-Velocity">in-context</a></span>
+</body>
+</html>

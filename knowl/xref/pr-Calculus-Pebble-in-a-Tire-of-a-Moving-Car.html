@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">33<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Pebble in a Tire of a Moving Car.</span>
+</h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">
+<a href="Circular-Motion-Bootcamp.html#fig-bc-pebble-in-a-rolling-tire" class="xref" data-knowl="./knowl/xref/fig-bc-pebble-in-a-rolling-tire.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.44">Figure 5.44</a> shows a pebble P stuck at the outside of a tire. As the tire rolls, the pebble’s position in space changes. Suppose tire does not slide but rolls smoothly. The tire has radius <span class="process-math">\(R\)</span> and is rolling at a constant speed <span class="process-math">\(v_0 \text{.}\)</span> At <span class="process-math">\(t=0\text{,}\)</span> the pebble was at the origin.</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/circular-motion/tire-picture.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.44<span class="period">.</span></span><span class="space"> </span>For <a href="Circular-Motion-Bootcamp.html#pr-Calculus-Pebble-in-a-Tire-of-a-Moving-Car" class="xref" data-knowl="./knowl/xref/pr-Calculus-Pebble-in-a-Tire-of-a-Moving-Car.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 5.6.33: (Calculus) Pebble in a Tire of a Moving Car">Exercise 5.6.33</a>.</figcaption></figure></div>
+</div></div> <div class="para">Find the expressions for (a) position, (b) velocity, and (c) acceleration vectors (i.e., magnitudes and directions) at an arbitraru instant <span class="process-math">\(t\)</span> with respect to the coordinate system given in the figure.</div> <div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Introduce another coordinate system with origin at the center of the tire at all times and <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> axes parallel to the one given. Find position in that coordinate system first. Then translate that to the given coordinate system. (b) and (c): use derivatives.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(\vec r = (-R\sin\theta + v_0 t)\; \hat i +  (-R\cos\theta)\; \hat j\text{,}\)</span> (b) <span class="process-math">\(((1 -\cos\theta)\;v_0 , (-\sin\theta)v_0)\text{,}\)</span> (c) <span class="process-math">\(\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">Let us introduce a coordinate system as shown in <a href="Circular-Motion-Bootcamp.html#fig-tire-picture-pebble-two-coords" class="xref" data-knowl="./knowl/xref/fig-tire-picture-pebble-two-coords.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.45">Figure 5.45</a>. For convenience, I will define <span class="process-math">\(\theta\)</span> that measures angle from negative <span class="process-math">\(y\)</span> axis as shown.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/circular-motion/tire-picture-pebble-two-coords.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.45<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="para">Let <span class="process-math">\((x,y)\)</span> and <span class="process-math">\((x',y')\)</span> be the coordinates of P at this arbitrary instant <span class="process-math">\(t\)</span> with respect to the two coordinate systems. It is immediately clear from the figure that</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp y = y',\ \  x = x' + v_0 t.\\
+\amp x' = -R\sin\theta,\ \ y'=-R\cos\theta.
+\end{align*}
+</div>
+<div class="para">Therefore, position <span class="process-math">\(\vec r\)</span> in original coordinate system will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec r = (-R\sin\theta + v_0 t)\; \hat i +  (-R\cos\theta)\; \hat j.
+\end{equation*}
+</div>
+<div class="para">It magnitude is</div>
+<div class="displaymath process-math">
+\begin{align*}
+r \amp = \sqrt{ x^2 + y^2 }\\
+\amp = \sqrt{(-R\sin\theta + v_0 t)^2 + (-R\cos\theta)^2 }\\
+\amp = \sqrt{R^2 - (2Rv_0\sin\theta) t + v_0^2t^2 }.
+\end{align*}
+</div>
+<div class="para">We can indicate direction in space by angle with respect to <span class="process-math">\(x\)</span> axis by using arctangent.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\theta_x = \tan^{-1}(y/x) =\tan^{-1}\left(  \frac{-R\cos\theta}{-R\sin\theta + v_0 t} \right). 
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Now, that we know the components of position, we can obtain components of velocity by taking derivatives. Thus,</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp v_x = \frac{dx}{dt} = (-R\cos\theta)\frac{d\theta}{dt} + v_0  \\
+\amp v_y = \frac{dy}{dt} = (-R\sin\theta)\frac{d\theta}{dt}  
+\end{align*}
+</div>
+<div class="para">Since the tire is not slipping, the rate at which angle <span class="process-math">\(\theta\)</span> changes is related to the speed with which center of the tire is moving. The tire has rotated by <span class="process-math">\(R\Delta\theta\text{,}\)</span> its center has moved <span class="process-math">\(v_0\Delta t\text{.}\)</span> Equating them we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R\Delta\theta = v_0\Delta t.
+\end{equation*}
+</div>
+<div class="para">This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{d\theta}{dt} = \frac{v_0}{R}.
+\end{equation*}
+</div>
+<div class="para">Using this, we rewrite the components of velocity as</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp v_x = (1 -\cos\theta)\;v_0  \\
+\amp v_y =  (-\sin\theta)v_0.  
+\end{align*}
+</div>
+<div class="para">Therefore, magnitude of velocity, i.e., speed is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v = \sqrt{v_x^2 + v_y^2} = v_0\sqrt{ 2 - 2 \cos\theta} = 2 v_0 \left| \sin(\theta/2) \right|.
+\end{equation*}
+</div>
+<div class="para">Note: this tells us that the speed of pebble when touching the ground is zero (since <span class="process-math">\(\theta=0\)</span>) and when at the very top, it is <span class="process-math">\((2\;v_0)\)</span> (since <span class="process-math">\(\theta=\pi\)</span>). That is, speed of the pebble in <span class="process-math">\(Oxy\)</span> coordinate system changes as it goes around.</div>
+</div> <div class="para logical">
+<div class="para">The direction of velocity can again be given with respect to the <span class="process-math">\(x\)</span> axis by using arctangent.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\theta_x = \tan^{-1}(v_y/v_x) = \tan^{-1}\left( \frac{-\sin\theta}{1 -\cos\theta} \right).
+\end{equation*}
+</div>
+<div class="para">You can further simplify this expression by using double angle formulas. Try that. You should be able to express this without arctangent operation.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Now, that we know the components of velocity, we can obtain components of acceleration by taking derivatives. Thus,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-tire-picture-pebble-two-coords-c.html">
+\begin{align*}
+\amp a_x = \frac{dv_x}{dt} = (-v_0 \sin\theta)\frac{d\theta}{dt} \\
+\amp a_y = \frac{dv_y}{dt} = (-v_0\cos\theta)\frac{d\theta}{dt}  
+\end{align*}
+</div>
+<div class="para">Replacing <span class="process-math">\(d\theta/dt\)</span> by <span class="process-math">\(v_0/R\)</span> as found in (b), we get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-tire-picture-pebble-two-coords-c.html">
+\begin{equation*}
+a_x = -\frac{v_0^2}{R}\;\sin\theta;\ \ a_y = -\frac{v_0^2}{R}\;\cos\theta.
+\end{equation*}
+</div>
+<div class="para">Therefore, magnitude of acceleration is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-tire-picture-pebble-two-coords-c.html">
+\begin{equation*}
+a = \sqrt{a_x^2 + a_y^2} = \frac{v_0^2}{R}.
+\end{equation*}
+</div>
+<div class="para">The direction with respect to <span class="process-math">\(x\)</span> axis will again be obtained by using arctangent.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-tire-picture-pebble-two-coords-c.html">
+\begin{equation*}
+\theta_x = \tan^{-1}(a_y/a_x) = \tan^{-1}(\cot(\theta)).
+\end{equation*}
+</div>
+<div class="para">Of course, we can write <span class="process-math">\(cot(\theta)\)</span> as <span class="process-math">\(\tan(\pi/2 - \theta)\text{.}\)</span> Hence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-tire-picture-pebble-two-coords-c.html">
+\begin{equation*}
+\theta_x = \frac{\pi}{2} -\theta.
+\end{equation*}
+</div>
+<div class="para">This is actually direction towards the moving center of the tire. Take values of <span class="process-math">\(\theta=0, \pi/2, \pi, 3\pi/2, 2\pi\)</span> and draw them on the corresponding <span class="process-math">\(Oxy\)</span> plane. You will see that the direction is always towards the center of the tire as shown in <a href="Circular-Motion-Bootcamp.html#fig-tire-picture-pebble-two-coords-c" class="xref" data-knowl="./knowl/xref/fig-tire-picture-pebble-two-coords-c.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 5.46">Figure 5.46</a>.</div>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./images/circular-motion/tire-picture-pebble-two-coords-c.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.46<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Circular-Motion-Bootcamp.html#pr-Calculus-Pebble-in-a-Tire-of-a-Moving-Car">in-context</a></span>
+</body>
+</html>

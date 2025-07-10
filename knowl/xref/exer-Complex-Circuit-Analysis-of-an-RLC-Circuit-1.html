@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Complex Circuit Analysis of an RL Circuit 1.</span>
+</h4>
+<div class="para">In the circuit shown in the figure, find the followig (a) the current in the circuit, (b) phase angle between the current in the circuit and the voltage drop across the resistor,</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para">(c)	phase angle between the current in the circuit and the voltage drop across the inductor, (d)	phase angle between the current in the circuit and the voltage drop across the capacitor, (e) the power factor, (f)	real impedance of the circuit, and (g)  average power dissipated in the circuit.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/ac-circuits/exer-complex-ac-RLC.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">41.51<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\((3.2 \times 10^{-7}\,\text{A})\, \cos(120\pi t + \pi/2)\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">To find the current in the circuit, let us first evaluate the complex impedance of the circuit.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp Z_R = 300\:\Omega,\ \ Z_L = i\omega L = i\:0.754\:\Omega,\\
+\amp Z_C = -i/\omega C = -i\:5.3 \times 10^8\:\Omega,
+\end{align*}
+</div>
+<div class="para">Summing them we get the imegance of the circuit since they are in series.</div>
+<div class="displaymath process-math">
+\begin{align*}
+Z \amp  = Z_R + Z_L + Z_C =  \left( 300 -i\:5.3 \times 10^8\right)\:\Omega \\
+\amp = \left(  5.3 \times 10^8\:\Omega \right)\angle -90^{\circ}.
+\end{align*}
+</div>
+<div class="para">Therefore, the current written as <span class="process-math">\(I_0\cos(\omega t +\phi)\)</span> has</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_0 = 318.6\:\textrm{nA},\ \ \phi = \dfrac{\pi}{2}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para">Since the impedance of the resistor is real, the voltage across it and the current through it would be in-phase with respect to each other.</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para">The <span class="process-math">\(Z_L\)</span> has a phase constant of <span class="process-math">\(\pi/2\text{.}\)</span>  Therefore, current will be behind the voltage across the inductor in phase by an amount of <span class="process-math">\(\pi/2\)</span> rad.</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span><span class="space"> </span><span class="title">d</span></summary><div class="solution solution-like knowl__content"> <div class="para">The <span class="process-math">\(Z_L\)</span> has a phase constant of <span class="process-math">\(-\pi/2\text{.}\)</span>  Therefore, current will be ahead of  the voltage across the capacitor in phase by an amount of <span class="process-math">\(\pi/2\)</span> rad.</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">5</span><span class="period">.</span><span class="space"> </span><span class="title">e</span></summary><div class="solution solution-like knowl__content"> <div class="para">Since the phase constant of the impedance is <span class="process-math">\(\phi \approx \pi/2\text{,}\)</span> the power factor will be <span class="process-math">\(\cos\phi \approx 0\text{.}\)</span>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">6</span><span class="period">.</span><span class="space"> </span><span class="title">f</span></summary><div class="solution solution-like knowl__content"> <div class="para">The real impedance of the circuit refers to the amplitude of the complex impedance, <span class="process-math">\(|Z|\text{,}\)</span> which is <span class="process-math">\(5.3 \times 10^8\:\Omega\text{.}\)</span>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">7</span><span class="period">.</span><span class="space"> </span><span class="title">g</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Average power dissipated is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{1}{2}\:I_0^2 R = \dfrac{1}{2}\:(318.6\:\textrm{nA})^2 \times 300\:\Omega = 15\:\textrm{pJ}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Circuit-Analysis-Using-Complex-Numbers.html#exer-Complex-Circuit-Analysis-of-an-RLC-Circuit-1">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">22<span class="period">.</span></span><span class="space"> </span><span class="title">The Joule-Brayton Cycle.</span>
+</h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para"> Consider an ideal gas Joule cycle, also called the <dfn class="terminology">Brayton cycle</dfn>,  shown in the <a href="Second-Law-Bootcamp.html#fig-brayton-cycle" class="xref" data-knowl="./knowl/xref/fig-brayton-cycle.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 25.12">Figure 25.12</a>.  Find a formula for the efficiency of the engine using this cycle in terms of <span class="process-math">\(P_1\text{,}\)</span> <span class="process-math">\(P_2\)</span> and  <span class="process-math">\(\gamma\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/second-law-of-thermo/brayton-cycle.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">25.12<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">The calculations  for the work in the steps in this cycle are similar to the ones presented in the last problem.  We can write the answer by inspection.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-ch19-pr-3-1.html">
+\begin{align*}
+\amp W_{12} = \frac{3}{2}\left(p_1V_1 - p_2V_2 \right)\\
+\amp W_{23} =   p_3 V_3 -  p_2V_2 \\
+\amp W_{34} = \frac{3}{2}\left(p_3V_3 - p_4V_4 \right) \\
+\amp  W_{41} = p_1 V_1 -  p_4V_4 
+\end{align*}
+</div>
+<div class="para">Therefore, work done by the working substance in a cycle will be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-ch19-pr-3-1.html">
+\begin{equation*}
+W = \frac{5}{2} \left( p_1V_1 + p_3 V_3- p_2V_2 -  p_4V_4 \right).
+\end{equation*}
+</div>
+<div class="para">The heat input occurs in the 2-3 step of the cycle.  Using the first law for this step we obtain</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-ch19-pr-3-1.html">
+\begin{equation*}
+Q_{in} = U_{23} + W_{23} =  \frac{5}{2}\left(p_3V_3 - p_2V_2 \right). 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-ch19-pr-3-1.html">
+\begin{equation}
+\eta = \frac{W }{Q_{in}} = 1 - \frac{ p_4V_4 - p_1V_1 }{ p_3V_3 - p_2V_2 }.\tag{25.15}
+\end{equation}
+</div>
+<div class="para">Various pressures and volumes in this equation are related by the processes.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-ch19-pr-3-1.html">
+\begin{align*}
+\amp p_2 = p_3 \\
+\amp p_1 = p_4 \\
+\amp p_1 V_1^{\gamma}  = p_2 V_2^{\gamma} \\
+\amp p_2 V_3^{\gamma}  = p_1 V_4^{\gamma} 
+\end{align*}
+</div>
+<div class="para">These relations give</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-ch19-pr-3-1.html">
+\begin{equation*}
+\frac{V_4}{V_1} = \frac{V_3}{V_2} \ \ \textrm{and}\ \ \frac{V_1}{V_2} = \left( \frac{p_2}{p_1} \right)^{1/\gamma}.
+\end{equation*}
+</div>
+<div class="para">We can use these relations in Eq. <a href="Second-Law-Bootcamp.html#eqn-ch19-pr-3-1" class="xref" data-knowl="./knowl/xref/eqn-ch19-pr-3-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 25.14">(25.14)</a> to obtain</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-ch19-pr-3-1.html">
+\begin{equation*}
+\eta = 1 - \left( \frac{p_1}{p_2} \right)^{(\gamma-1)/\gamma}
+\end{equation*}
+</div>
+</div></div></details></div></article><span class="incontext"><a class="internal" href="Second-Law-Bootcamp.html#exercises-second-law-bootcamp-5-6">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Representing Vectors</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="An Introduction to Mechanics">
+<meta property="book:author" content="Samuel J. Ling">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+#section-uncertainty-in-measurements-7-2-1 { counter-set: section-uncertainty-in-measurements-7-2-1 0; }
+#section-uncertainty-in-measurements-7-2-1 > li::marker { content: ""counter(section-uncertainty-in-measurements-7-2-1,decimal)"."; }
+#section-uncertainty-in-measurements-7-2-1 > li { counter-increment: section-uncertainty-in-measurements-7-2-1; }
+#section-order-of-magnitude-2-2-3 { counter-set: section-order-of-magnitude-2-2-3 0; }
+#section-order-of-magnitude-2-2-3 > li::marker { content: ""counter(section-order-of-magnitude-2-2-3,decimal)"."; }
+#section-order-of-magnitude-2-2-3 > li { counter-increment: section-order-of-magnitude-2-2-3; }
+#ex-Velocity-from-Derivative-5-2-6 { counter-set: ex-Velocity-from-Derivative-5-2-6 0; }
+#ex-Velocity-from-Derivative-5-2-6 > li::marker { content: "("counter(ex-Velocity-from-Derivative-5-2-6,lower-roman)")"; }
+#ex-Velocity-from-Derivative-5-2-6 > li { counter-increment: ex-Velocity-from-Derivative-5-2-6; }
+#ex-Velocity-from-Derivative-6-2-5 { counter-set: ex-Velocity-from-Derivative-6-2-5 0; }
+#ex-Velocity-from-Derivative-6-2-5 > li::marker { content: "("counter(ex-Velocity-from-Derivative-6-2-5,lower-roman)")"; }
+#ex-Velocity-from-Derivative-6-2-5 > li { counter-increment: ex-Velocity-from-Derivative-6-2-5; }
+#Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1 { counter-set: Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1 0; }
+#Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1 > li::marker { content: "("counter(Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1,lower-alpha)")"; }
+#Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1 > li { counter-increment: Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1; }
+</style>
+</head>
+<body id="mechanics2025" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+
+    <div style="display:inline; float:right">
+ 
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="66RE499VVJTSQ" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+    </div>
+
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+
+    <div style="display:inline; float:right">
+ 
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="66RE499VVJTSQ" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+    </div>
+
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+
+    <div style="display:inline; float:right">
+ 
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="66RE499VVJTSQ" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+    </div>
+
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+
+    <div style="display:inline; float:right">
+ 
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="66RE499VVJTSQ" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+    </div>
+
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+
+    <div style="display:inline; float:right">
+ 
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="66RE499VVJTSQ" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+    </div>
+
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+
+    <div style="display:inline; float:right">
+ 
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="66RE499VVJTSQ" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+    </div>
+
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+
+    <div style="display:inline; float:right">
+ 
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="66RE499VVJTSQ" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+    </div>
+
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+
+    <div style="display:inline; float:right">
+ 
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="66RE499VVJTSQ" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+    </div>
+
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+
+    <div style="display:inline; float:right">
+ 
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="66RE499VVJTSQ" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+    </div>
+
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+
+    <div style="display:inline; float:right">
+ 
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="66RE499VVJTSQ" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+    </div>
+
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+
+    <div style="display:inline; float:right">
+ 
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="66RE499VVJTSQ" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+    </div>
+
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+
+    <div style="display:inline; float:right">
+
+        <a  href="https://www.youtube.com/playlist?list=PLjNE4v_WVGw0oQcekmFl51MuG3EwAUC0g">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #FF5733;
+               "
+               >YouTube</button>
+        </a>
+
+        &nbsp;
+
+        <a href="mailto:physicsbootcamp1@gmail.com">
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #4CAF90;
+               "
+               >Contact</button></a>
+
+        &nbsp;
+        <a href="http://www.physicsbootcamp.org/iit"> 
+            <button    type="button"                
+               style="
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    background-color: #2FAF70;
+               "
+               >Contests</button>
+        </a>  
+
+
+    </div>
+
+
+<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./images/logo/SLphoto.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="main-book.html"><span class="title">An Introduction to Mechanics</span></a></h1>
+<p class="byline">Samuel J. Ling</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="Vectors-as-Arrows.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="vectors-review.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="section-Unit-Vectors.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-biography"><div class="toc-title-box"><a href="author-bio-TWJ.html" class="internal"><span class="title">Author Biography</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="dedication.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="acknowledgement.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-intro-to-physics.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-the-world-of-physics.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The World of Physics</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-fundamental-units.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Fundamental Quantities in Mechaanics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-fundamental-units.html#section-fundamental-units-3" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Length</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-fundamental-units.html#section-fundamental-units-4" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-fundamental-units.html#section-fundamental-units-5" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Mass</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-metric-units.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Metric and Other Units</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-metric-units.html#section-metric-units-3" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Imperial Units</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-metric-units.html#section-metric-units-4" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Unit Prefixes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-metric-units.html#section-metric-units-5" class="internal"><span class="codenumber">1.3.3</span> <span class="title">The SI AND CGS Systems of Units</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-metric-units.html#section-metric-units-6" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Base Units</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-metric-units.html#section-metric-units-7" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Conversion of Units</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-metric-units.html#exercises-metric-units" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-uncertainty-in-measurements.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Uncertainty, Precision, Accuracy</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-uncertainty-in-measurements.html#section-uncertainty-in-measurements-3" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Uncertainty</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-uncertainty-in-measurements.html#section-uncertainty-in-measurements-4" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Precision</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-uncertainty-in-measurements.html#section-uncertainty-in-measurements-5" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Accuracy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-uncertainty-in-measurements.html#section-uncertainty-in-measurements-6" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Significant Figures</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-uncertainty-in-measurements.html#section-uncertainty-in-measurements-7" class="internal"><span class="codenumber">1.4.5</span> <span class="title">Reason for Uncetainty</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-uncertainty-in-measurements.html#section-uncertainty-in-measurements-8" class="internal"><span class="codenumber">1.4.6</span> <span class="title">Absolute and Relative Uncertainty</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-uncertainty-in-measurements.html#section-uncertainty-in-measurements-10" class="internal"><span class="codenumber">1.4.7</span> <span class="title">The Scientific Notation for Numbers</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-uncertainty-in-measurements.html#section-uncertainty-in-measurements-12" class="internal"><span class="codenumber">1.4.8</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-propagation-of-uncertainty.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Propagation of Uncertainty</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-propagation-of-uncertainty.html#section-propagation-of-uncertainty-3" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Derived Quantity is a Function of the Measured Quantity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-propagation-of-uncertainty.html#section-propagation-of-uncertainty-4" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Derived Quantity is a Function of Two Measured Quantities</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-propagation-of-uncertainty.html#section-propagation-of-uncertainty-5" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-order-of-magnitude.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Order of Magnitude</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-order-of-magnitude.html#section-order-of-magnitude-4" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-dimensional-analysis.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Dimensional Analysis</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-dimensional-analysis.html#section-dimensional-analysis-4" class="internal"><span class="codenumber">1.7.1</span> <span class="title">How to Perform Dimensional Analysis</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-dimensional-analysis.html#section-dimensional-analysis-5" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-intro-bootcamp.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Introduction Bootcamp</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-intro-bootcamp.html#section-intro-bootcamp-3" class="internal"><span class="codenumber">1.8.1</span> <span class="title">Units</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-intro-bootcamp.html#section-intro-bootcamp-4" class="internal"><span class="codenumber">1.8.2</span> <span class="title">Uncertainty, Significant Figures, Rounding</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-intro-bootcamp.html#section-intro-bootcamp-5" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Propagation of Uncertainty</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-intro-bootcamp.html#section-intro-bootcamp-6" class="internal"><span class="codenumber">1.8.4</span> <span class="title">Order of Magnitude</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-intro-bootcamp.html#section-intro-bootcamp-7" class="internal"><span class="codenumber">1.8.5</span> <span class="title">Dimensional Analysis</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-intro-bootcamp.html#section-intro-bootcamp-8" class="internal"><span class="codenumber">1.8.6</span> <span class="title">Miscellaneous</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="one-dimensional-motion.html" class="internal"><span class="codenumber">2</span> <span class="title">Motion on a Straight Path</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Basics-of-Motion.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Basics of Motion</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Basics-of-Motion.html#Basics-of-Motion-3" class="internal"><span class="codenumber">2.1.1</span> <span class="title">All Motion is Relative</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="oneD-Tracking-Motion.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Tracking Motion</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="oneD-Tracking-Motion.html#oneD-Tracking-Motion-3" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="oneD-Position-Displacement-and-Distance.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Position, Displacement, and Distance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Position-Displacement-and-Distance.html#oneD-Position-Displacement-and-Distance-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Position</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Position-Displacement-and-Distance.html#oneD-Position-Displacement-and-Distance-4" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Displacement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Position-Displacement-and-Distance.html#oneD-Position-Displacement-and-Distance-5" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Distance</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="oneD-Position-Displacement-and-Distance.html#oneD-Position-Displacement-and-Distance-6" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="oneD-Velocity-and-Speed.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Velocity and Speed</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Velocity-and-Speed.html#oneD-Velocity-and-Speed-2" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Average Speed</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Velocity-and-Speed.html#oneD-Velocity-and-Speed-3" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Average Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Velocity-and-Speed.html#subsection-Instantaneous-Velocity" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Instantaneous Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Velocity-and-Speed.html#oneD-Velocity-and-Speed-5" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Graphical Definition of Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Velocity-and-Speed.html#oneD-Velocity-and-Speed-6" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Displacement from Velocity</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="oneD-Velocity-and-Speed.html#oneD-Velocity-and-Speed-8" class="internal"><span class="codenumber">2.4.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="oneD-Acceleration.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Acceleration</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Acceleration.html#oneD-Acceleration-3" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Average Acceleration</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Acceleration.html#oneD-Acceleration-4" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Instantaneous Acceleration</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Acceleration.html#oneD-Acceleration-5" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Graphical Definition of Acceleration</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Acceleration.html#oneD-Acceleration-6" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Change in Velocity from Acceleration</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="oneD-Acceleration.html#oneD-Acceleration-8" class="internal"><span class="codenumber">2.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="oneD-Position-Velocity-Acceleration-Summary.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Position, Velocity, Acceleration Summary</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="oneD-Position-Velocity-Acceleration-Summary.html#oneD-Position-Velocity-Acceleration-Summary-3" class="internal"><span class="codenumber">2.6.1</span> <span class="title">(Calculus) Position, Velocity, Acceleration Summary</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="oneD-Constant-Acceleration-Motion.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Constant Acceleration Motion</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="oneD-Constant-Acceleration-Motion.html#oneD-Constant-Acceleration-Motion-21" class="internal"><span class="codenumber">2.7</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="oneD-Freely-Falling-Motion.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Freely Falling Motion</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="oneD-Freely-Falling-Motion.html#oneD-Freely-Falling-Motion-7" class="internal"><span class="codenumber">2.8</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="One-Dimensional-Motion-Bootcamp.html" class="internal"><span class="codenumber">2.9</span> <span class="title">One-Dimensional Motion Bootcamp</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="One-Dimensional-Motion-Bootcamp.html#One-Dimensional-Motion-Bootcamp-2" class="internal"><span class="codenumber">2.9.1</span> <span class="title">Tracking Motion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="One-Dimensional-Motion-Bootcamp.html#One-Dimensional-Motion-Bootcamp-3" class="internal"><span class="codenumber">2.9.2</span> <span class="title">Position, Displacement, and Distance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="One-Dimensional-Motion-Bootcamp.html#One-Dimensional-Motion-Bootcamp-4" class="internal"><span class="codenumber">2.9.3</span> <span class="title">Speed and Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="One-Dimensional-Motion-Bootcamp.html#One-Dimensional-Motion-Bootcamp-5" class="internal"><span class="codenumber">2.9.4</span> <span class="title">Acceleration</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="One-Dimensional-Motion-Bootcamp.html#One-Dimensional-Motion-Bootcamp-6" class="internal"><span class="codenumber">2.9.5</span> <span class="title">Displacement from Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="One-Dimensional-Motion-Bootcamp.html#One-Dimensional-Motion-Bootcamp-7" class="internal"><span class="codenumber">2.9.6</span> <span class="title">Constant Acceleration Motion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="One-Dimensional-Motion-Bootcamp.html#One-Dimensional-Motion-Bootcamp-8" class="internal"><span class="codenumber">2.9.7</span> <span class="title">Freely Falling Motion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="One-Dimensional-Motion-Bootcamp.html#One-Dimensional-Motion-Bootcamp-9" class="internal"><span class="codenumber">2.9.8</span> <span class="title">Miscellaneous</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="vectors-review.html" class="internal"><span class="codenumber">3</span> <span class="title">Vectors</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Vectors-as-Arrows.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Vectors as Arrows</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Vectors-as-Arrows.html#Vectors-as-Arrows-3" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Drawing Vector Arrows</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Vectors-as-Arrows.html#Vectors-as-Arrows-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Adding Vector Arrows</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Vectors-as-Arrows.html#Vectors-as-Arrows-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Vectors as Sum of Vectors along Cartesian Axes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="Representing-Vectors.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Representing Vectors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Representing-Vectors.html#Representing-Vectors-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Arrow Representation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Representing-Vectors.html#Representing-Vectors-4" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Position Vector</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Representing-Vectors.html#Representing-Vectors-5" class="internal"><span class="codenumber">3.2.3</span> <span class="title">The Displacement Vector</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-Unit-Vectors.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Unit Vectors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-Unit-Vectors.html#section-Unit-Vectors-3" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Unit Vectors Along Cartesian Positive Axis Directions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-Unit-Vectors.html#section-Unit-Vectors-4" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Direction Cosines</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Adding-Vectors.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Adding Vectors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Adding-Vectors.html#Adding-Vectors-3" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Adding Vectors Graphically</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Adding-Vectors.html#Adding-Vectors-5" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Adding Vectors Analytically Component-by-Component</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="Vector-Equations.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Vector Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="Multiplying-Vectors-by-a-Number.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Multiplying Vectors by a Number</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="Scalar-Product-Between-Vectors.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Scalar Product Between Vectors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="Vector-Product-Between-Vectors.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Vector Product Between Vectors</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Working-with-Cartesian-Unit-Vectors.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Working with Cartesian Unit Vectors</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Working-with-Cartesian-Unit-Vectors.html#Working-with-Cartesian-Unit-Vectors-3" class="internal"><span class="codenumber">3.9.1</span> <span class="title">Dot and Cross Products of Cartesian Unit Vectors</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Vectors-Bootcamp.html" class="internal"><span class="codenumber">3.10</span> <span class="title">Vectors Bootcamp</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Vectors-Bootcamp.html#Vectors-Bootcamp-2" class="internal"><span class="codenumber">3.10.1</span> <span class="title">Representing Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Vectors-Bootcamp.html#Vectors-Bootcamp-3" class="internal"><span class="codenumber">3.10.2</span> <span class="title">Adding Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Vectors-Bootcamp.html#Vectors-Bootcamp-4" class="internal"><span class="codenumber">3.10.3</span> <span class="title">Multiplying Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Vectors-Bootcamp.html#Vectors-Bootcamp-5" class="internal"><span class="codenumber">3.10.4</span> <span class="title">Miscellaneous</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="Representing-Vectors"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.2</span><span class="space"> </span><span class="title">Representing Vectors</span>
+</h2>
+<section class="introduction" id="Representing-Vectors-2"><div class="para" id="Representing-Vectors-2-1">A vector can be represented by an arrow of appropriate size and in appropriate direction in the relevant space. For instance, a position vector will be an arrow from the origin to the location of the object in space since prosition is just a displacement from origin to the location in space. You can also represent a vector analytically, i.e., by numbers. One such representation uses Cartesian axes to represent vectors. There are other types of components corresponding to other coordinate systems. We will cover them in due course.</div></section><section class="subsection" id="Representing-Vectors-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="space"> </span><span class="title">Arrow Representation</span>
+</h3>
+<div class="para" id="Representing-Vectors-3-2">Representing vectors and doing mathematics using arrows is the most visual way to get handle on vectors.</div></section><section class="subsection" id="Representing-Vectors-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="space"> </span><span class="title">Position Vector</span>
+</h3>
+<div class="para" id="Representing-Vectors-4-2">Let us begin our studies of vectors by an example position vector (arrow from O to P) of an object at point P in the <span class="process-math">\(xy\)</span> plane of a Cartesian coordinate system whose axes are appropriately tick-marked as shown in Fig. <a href="Representing-Vectors.html#vector-position-in-plane" class="xref" data-knowl="./knowl/xref/vector-position-in-plane.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.2.1">Figure 3.2.1</a>. We will denote the position vector by the symbol <span class="process-math">\(\vec r \text{.}\)</span>  The <span class="process-math">\((x,y)\)</span> coordinates of P are <span class="process-math">\((3\text{ m}, 2\text{ m}) \text{.}\)</span>
+</div>
+<div class="para" id="Representing-Vectors-4-3"><figure class="figure figure-like" id="vector-position-in-plane"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./images/vectors/vector-position-in-plane.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.1<span class="period">.</span></span><span class="space"> </span>Illustrating the position vector of an object located at point P. The arrow labeled <span class="process-math">\(\vec r \)</span> represents the position vector - the length of the arrow represents the magnitude and angle <span class="process-math">\(\theta \)</span> can be used to indicate the direction of the vector. Sometimes we call <span class="process-math">\(\theta \)</span> itself the direction of the vector.</figcaption></figure></div>
+<div class="para logical" id="Representing-Vectors-4-4">
+<div class="para">The coordinates <span class="process-math">\(x = 3\text{ m}\text{,}\)</span> and <span class="process-math">\(y = 2\text{ m} \)</span> of the tip of the position vector are called <span class="process-math">\(x \)</span> and <span class="process-math">\(y \)</span> <dfn class="terminology">components</dfn>  of the position vector <span class="process-math">\(\vec r \text{.}\)</span> The magnitude of this vector is the length of the arrow, which can be obtained from <span class="process-math">\(x \)</span> and <span class="process-math">\(y\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Magnitude, } r = \sqrt{x^2 + y^2} = \sqrt{13}\text{ m}.
+\end{equation*}
+</div>
+<div class="para">The direction of the vector can be described if we know angle <span class="process-math">\(\theta \text{,}\)</span> which we can obtain from <span class="process-math">\(x \)</span> and <span class="process-math">\(y \)</span> also.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\theta = \tan^{-1}\left(\dfrac{2}{3} \right) = 33.7^{\circ}.
+\end{equation*}
+</div>
+<div class="para">The direction is then described as: the vector <span class="process-math">\(\vec r \)</span> is in the direction of <span class="process-math">\(33.7^{\circ}\)</span> counterclockwise from positive <span class="process-math">\(x\)</span> axis.</div>
+</div>
+<div class="para" id="Representing-Vectors-4-5">
+<em class="alert">The angle <span class="process-math">\(\theta\)</span> is not direction.</em> You will get <span class="process-math">\(\theta = 33.7^{\circ}\)</span> for the exactly opposite direction, the direction from origin towards the point <span class="process-math">\((-3\text{ m}, -2\text{ m})\text{.}\)</span> You can check it out. So, <em class="alert">once you obtain the angle, you must describe the direction in words!</em>
+</div>
+<div class="para logical" id="Representing-Vectors-4-6">
+<div class="para">We now summarize the mathematical relations between the polar-form <span class="process-math">\((r, \theta)\)</span> and the coordinate-form <span class="process-math">\((x,y) \)</span> of position vector.</div>
+<div class="displaymath process-math" id="Representing-Vectors-4-6-3">
+\begin{align}
+\amp x = r \cos\theta \tag{3.2.1}\\
+\amp y = r \sin\theta \tag{3.2.2}\\
+\amp r = \sqrt{x^2 + y^2}\tag{3.2.3}\\
+\amp \theta = \tan^{-1}\left( \dfrac{y}{x}\right)\tag{3.2.4}
+\end{align}
+</div>
+</div></section><section class="subsection" id="Representing-Vectors-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="space"> </span><span class="title">The Displacement Vector</span>
+</h3>
+<div class="para" id="Representing-Vectors-5-2">Unlike the position vector, displacement vector goest from an arbitrary point A to another point B rather than always going from origin O to some point P.</div></section><div class="para" id="Representing-Vectors-6">Every vector can be drawn the same way as the position vector with length of the arrow representing the magnitude of the vector and the orientation of the arrow representing the direction.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para" id="Representing-Vectors-7-1">The projections of the tip and tail of a vector, <span class="process-math">\(\vec A\text{,}\)</span> on the Cartesian axis give us the information from which we obtain Cartesian components of the vector. We denote the components of vectors by attaching letters <span class="process-math">\(x \)</span> or <span class="process-math">\(y \)</span> as subscripts, and the magnitude by the same symbol without the arrow overhead, as shown in the figure to the right.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para" id="Representing-Vectors-7-2"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like" id="Representing-Vectors-7-3"><img src="external/./images/vectors/projections-on-axes.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="para logical" id="Representing-Vectors-8">
+<div class="para">The <span class="process-math">\(x\)</span>-component of the vector, <span class="process-math">\(A_x\text{,}\)</span> is difference of the projection of tip and tail on <span class="process-math">\(x\)</span>-axis, and similarly for the <span class="process-math">\(y\)</span> component. The relation between magnitude <span class="process-math">\(A\text{,}\)</span> angle <span class="process-math">\(\theta\text{,}\)</span> and components <span class="process-math">\(A_x\)</span> and <span class="process-math">\(A_y\)</span> is same as those between <span class="process-math">\(r\text{,}\)</span> <span class="process-math">\(\theta\text{,}\)</span> and <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> respectively.</div>
+<div class="displaymath process-math" id="Representing-Vectors-8-13">
+\begin{align*}
+\amp A_x = A\, \cos\theta \\
+\amp A_y = A\, \sin\theta \\
+\amp A = \sqrt{A_x^2 + A_y^2}\\
+\amp \theta = \tan^{-1}\left( \dfrac{A_y}{A_x}\right)
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="Representing-Vectors-9">
+<div class="para">For instance, <span class="process-math">\(x\)</span> and <span class="process-math">\(y \)</span> components of a velocity vector <span class="process-math">\(\vec v\)</span> would be represented by symbols <span class="process-math">\(v_x \)</span> and <span class="process-math">\(v_y\text{,}\)</span> respectively, and magnitude by symbol <span class="process-math">\(v\text{.}\)</span> They are related by</div>
+<div class="displaymath process-math" id="Representing-Vectors-9-7">
+\begin{align*}
+\amp v_x = v\, \cos\theta \\
+\amp v_y = v\, \sin\theta \\
+\amp v = \sqrt{v_x^2 + v_y^2}\\
+\amp \theta = \tan^{-1}\left( \dfrac{v_y}{v_x}\right)
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="Representing-Vectors-10">
+<div class="para">For another property let us look at a force vector, The <span class="process-math">\(x\)</span> and <span class="process-math">\(y \)</span> components of a force vector <span class="process-math">\(\vec F\)</span> would be represented by symbols <span class="process-math">\(F_x \)</span> and <span class="process-math">\(F_y\text{,}\)</span> respectively, and magnitude by symbol <span class="process-math">\(F\text{.}\)</span> The relations are similar.</div>
+<div class="displaymath process-math" id="Representing-Vectors-10-7">
+\begin{align*}
+\amp F_x = F\, \cos\theta \\
+\amp F_y = F\, \sin\theta \\
+\amp F = \sqrt{F_x^2 + F_y^2}\\
+\amp \theta = \tan^{-1}\left( \dfrac{F_y}{F_x}\right)
+\end{align*}
+</div>
+</div>
+<details id="Representing-Vectors-11" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Example of a Force Vector.</span>
+</h3></summary><article class="example example-like knowl__content"> <div class="para" id="Representing-Vectors-11-2">For example, if we have a force <span class="process-math">\(\vec F \text{,}\)</span> say of magnitude <span class="process-math">\(50\text{ N} \)</span> in the <span class="process-math">\(30^{\circ} \)</span> North of East direction, then we will draw an arrow of appropriate size.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:60%;"><div class="para" id="Representing-Vectors-11-3-1">
+<div class="para" id="Representing-Vectors-11-3-1-1">If we use a scale of <span class="process-math">\(1\text{ cm representing } 5\text{ N} \text{,}\)</span> then we will draw a <span class="process-math">\(10\text{ cm}\)</span>-long arrow, starting at origin and pointing in the direction of <span class="process-math">\(30^{\circ} \)</span>  counteclockwise to the positive <span class="process-math">\(x \)</span> axis where I assume <span class="process-math">\(x \)</span> axis is pointed towards East and <span class="process-math">\(y \)</span> axis is towards North.</div> <div class="para" id="Representing-Vectors-11-3-1-2">This will give the following component form of this force vector <span class="process-math">\(F_x = 50\text{ N }\cos\, 30^{\circ} = 43.3 \text{ N}\)</span> and <span class="process-math">\(F_y = 50\text{ N }\sin\, 30^{\circ} = 20\text{ N}\text{.}\)</span>
+</div>
+</div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like" id="Representing-Vectors-11-3-2"><img src="external/./images/vectors/example-force-vector-drawing.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div></article></details><details id="ex-Magnitude-and-Direction-of-a-Vector-in-2D-from-Components" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Magnitude and Direction of a Vector in 2D from Components.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-Magnitude-and-Direction-of-a-Vector-in-2D-from-Components-2-1">The position of a box on the floor with respect to a corner of the room, taken to be the origin, and the walls which are taken to be <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span>-axes, is given by the <span class="process-math">\((x,y) = (4.0\text{ m}, 3.0\text{ m})\text{.}\)</span>  What are the magnitude and direction of the position vector of the box?</div>
+<div class="solutions"><details id="ex-Magnitude-and-Direction-of-a-Vector-in-2D-from-Components-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-Magnitude-and-Direction-of-a-Vector-in-2D-from-Components-3-1">Just use the <span class="process-math">\((x,y) \rightarrow (r, \theta) \text{.}\)</span>
+</div></div></details></div></article></details><details id="ex-Components-of-a-Vector-from-Magnitude-and-Direction-in-2D" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Components of a Vector from Magnitude and Direction in 2D.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-Components-of-a-Vector-from-Magnitude-and-Direction-in-2D-2-1">A box is at a distance of <span class="process-math">\(5.0 \text{ m}\)</span> from the origin. The direction of the location of the box makes an angle of <span class="process-math">\(30^{\circ} \)</span> with respect to the direction of a wall taken to be the positive <span class="process-math">\(x \)</span> axis. Another wall that is perpendicular to the <span class="process-math">\(x \)</span> axis wall is taken to be the <span class="process-math">\(y \)</span> axis. Find the <span class="process-math">\(x \)</span> and <span class="process-math">\(y \)</span> components of the position vector.</div>
+<div class="solutions"><details id="ex-Components-of-a-Vector-from-Magnitude-and-Direction-in-2D-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-Components-of-a-Vector-from-Magnitude-and-Direction-in-2D-3-1">Just use the <span class="process-math">\((r, \theta) \rightarrow (x,y)   \text{.}\)</span>
+</div></div></details></div></article></details><details id="ex-Components-of-Velocity-Vector-of-a-Cricket-Ball-in-a-Horizontal-Vertical-Plane" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Components of Velocity Vector of a Cricket Ball in a Horizontal-Vertical Plane.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-Components-of-Velocity-Vector-of-a-Cricket-Ball-in-a-Horizontal-Vertical-Plane-2-1">A batsman strikes a cricket ball, which leaves the bat with a speed of <span class="process-math">\(20.0\text{ m/s}\text{,}\)</span> and flies in the direction of <span class="process-math">\(60^{\circ}\)</span> with respect to the horizontal direction. This means that the velocity vector has magnitude  <span class="process-math">\(20.0\text{ m/s}\)</span> and direction <span class="process-math">\(60^{\circ}\)</span> with respect to the horizontal direction. Taking the horizontal direction as the <span class="process-math">\(x\)</span>-axis and the vertical direction as the <span class="process-math">\(y \)</span> axis, find <span class="process-math">\(x \)</span> and <span class="process-math">\(y\)</span> components of the velocity vector.</div>
+<div class="solutions"><details id="ex-Components-of-Velocity-Vector-of-a-Cricket-Ball-in-a-Horizontal-Vertical-Plane-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-Components-of-Velocity-Vector-of-a-Cricket-Ball-in-a-Horizontal-Vertical-Plane-3-1">Use the <span class="process-math">\((r, \theta) \rightarrow (x,y)\)</span> transformation.</div></div></details></div></article></details><details id="Components-of-Velocity-Vector-of-a-Soccer-Ball-in-a-Horizontal-Vertical-Plane" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Components of Velocity Vector of a Soccer Ball in a Horizontal-Vertical Plane.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="Components-of-Velocity-Vector-of-a-Soccer-Ball-in-a-Horizontal-Vertical-Plane-2-1">A soccer ball is kicked in the direction <span class="process-math">\(30^{\circ}\)</span> above the horizontal direction with speed <span class="process-math">\(15 \text{ m/s}\text{.}\)</span> This means that the velocity vector of the ball has magnitude <span class="process-math">\(15 \text{ m/s}\)</span> and direction <span class="process-math">\(30^{\circ}\)</span> above the horizon. Find the coordinate representation of the velocity in a coordinate system in which <span class="process-math">\(x \)</span> axis is along horizontal direction and positive <span class="process-math">\(y \)</span> axis is pointed up.</div>
+<div class="solutions"><details id="Components-of-Velocity-Vector-of-a-Soccer-Ball-in-a-Horizontal-Vertical-Plane-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="Components-of-Velocity-Vector-of-a-Soccer-Ball-in-a-Horizontal-Vertical-Plane-3-1">Use <span class="process-math">\(x = r\, \cos\, \theta\text{.}\)</span>
+</div></div></details></div></article></details><details id="Magnitude-and-Direction-of-Velocity-from-Components" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Magnitude and Direction of Velocity from Components.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="Magnitude-and-Direction-of-Velocity-from-Components-2-1">A velocity vector was found to have the following components, <span class="process-math">\(v_x = 30.0\text{ m/s}\)</span> and <span class="process-math">\(v_y = 40.0\text{ m/s}\)</span> with respect to a coordinate system in which <span class="process-math">\(x \)</span> axis is along horizontal direction and positive <span class="process-math">\(y \)</span> axis is pointed up. What are the magnitude and direction of the velocity vector? Describe your direction in words.</div>
+<div class="solutions"><details id="Magnitude-and-Direction-of-Velocity-from-Components-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="Magnitude-and-Direction-of-Velocity-from-Components-3-1">Use <span class="process-math">\(r=\sqrt{x^2 + y^2} \)</span> and <span class="process-math">\(\theta = \tan^{-1}(y/x) \text{.}\)</span>
+</div></div></details></div></article></details><details id="Magnitude-and-Direction-of-Velocity-from-Components-2" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Magnitude and Direction of Velocity from Components - 2.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="Magnitude-and-Direction-of-Velocity-from-Components-2-2-1">A velocity vector was found to have the following components, <span class="process-math">\(v_x = 30.0\text{ m/s}\)</span> and <span class="process-math">\(v_y = -40.0\text{ m/s}\)</span> with respect to a coordinate system in which the <span class="process-math">\(x \)</span> axis is along horizontal direction and the positive <span class="process-math">\(y \)</span> axis is pointed up. What are the magnitude and direction of the velocity vector? Describe your direction in words.</div>
+<div class="solutions"><details id="Magnitude-and-Direction-of-Velocity-from-Components-2-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="Magnitude-and-Direction-of-Velocity-from-Components-2-3-1">Use <span class="process-math">\(r=\sqrt{x^2 + y^2} \)</span> and <span class="process-math">\(\theta = \tan^{-1}(y/x) \text{.}\)</span>
+</div></div></details></div></article></details><details id="ex-Magnitude-and-Direction-of-Force" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Magnitude and Direction of Force.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-Magnitude-and-Direction-of-Force-2-1">A suitcase is draged by applying a force on the strap attached to the suitcase.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para" id="ex-Magnitude-and-Direction-of-Force-2-2-1">With respect to a Cartesian coordinate system that has the <span class="process-math">\(x \)</span> axis along the horizontal direction and the <span class="process-math">\(y \)</span> axis vertically up, the components of the force are <span class="process-math">\((F_x, F_y) = (12.0\text{ N}, 5.0\text{ N}) \text{,}\)</span> where N stands for the unit Newton.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para" id="ex-Magnitude-and-Direction-of-Force-2-2-2"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like" id="ex-Magnitude-and-Direction-of-Force-2-2-3"><img src="external/./images/vectors/ex-force-fx-eq-12-and-fy-eq-5-mag-and-dir.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.13<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para" id="ex-Magnitude-and-Direction-of-Force-2-3">What are the magnitude and direction of the force? You can use the symbol <span class="process-math">\(F \)</span> for the magnitude and <span class="process-math">\(\theta \)</span> for the angle with respect to the <span class="process-math">\(x \)</span> axis.</div>
+<div class="solutions"><details id="ex-Magnitude-and-Direction-of-Force-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-Magnitude-and-Direction-of-Force-3-1">Use the <span class="process-math">\((x,y) \rightarrow (r, \theta) \)</span> transformation.</div></div></details></div></article></details><details id="ex-Direction-in-the-Second-Quadrant" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.14</span><span class="period">.</span><span class="space"> </span><span class="title">Direction in the Second Quadrant.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="sidebyside"><div class="sbsrow" style="margin-left:0.833333333333333%;margin-right:0.833333333333333%;">
+<div class="sbspanel top" style="width:50.8474576271186%;"><div class="para" id="ex-Direction-in-the-Second-Quadrant-2-1-1">A vector has <span class="process-math">\((A_x, A_y) = (-3, 1) \text{.}\)</span> What is the direction of this vector with respect to the negative <span class="process-math">\(x \)</span> axis?</div></div>
+<div class="sbspanel top" style="width:5.084745762711864%;"><div class="para" id="ex-Direction-in-the-Second-Quadrant-2-1-2"></div></div>
+<div class="sbspanel top" style="width:40.6779661016949%;"><figure class="figure figure-like" id="ex-Direction-in-the-Second-Quadrant-2-1-3"><img src="external/./images/vectors/ex-Direction-in-the-Second-Quadrant.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.15<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions"><details id="ex-Direction-in-the-Second-Quadrant-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-Direction-in-the-Second-Quadrant-3-1">Note arc-tangent will give you a negative angle. You need to appropriately add or subtract <span class="process-math">\(180^{\circ}\text{.}\)</span>
+</div></div></details></div></article></details><details id="ex-Direction-in-the-Third-Quadrant" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.17</span><span class="period">.</span><span class="space"> </span><span class="title">Direction in the Third Quadrant.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para" id="ex-Direction-in-the-Third-Quadrant-2-1-1">A vector has <span class="process-math">\((A_x, A_y) = (-3, -2) \text{.}\)</span> What is the direction of this vector with respect to the negative <span class="process-math">\(x \)</span> axis?</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para" id="ex-Direction-in-the-Third-Quadrant-2-1-2"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like" id="ex-Direction-in-the-Third-Quadrant-2-1-3"><img src="external/./images/vectors/ex-Direction-in-the-Third-Quadrant.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.18<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para" id="ex-Direction-in-the-Third-Quadrant-2-2">Note arc-tangent will give you a positive angle, which is what you also get if the vector is pointed in the first quadrant. But, this vector is pointed in the third quardant. Therefore, you need to appropriately add or subtract <span class="process-math">\(180^{\circ}\text{.}\)</span>
+</div>
+<div class="solutions"><details id="ex-Direction-in-the-Third-Quadrant-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-Direction-in-the-Third-Quadrant-3-1">Use the arctan formula.</div></div></details></div></article></details><details id="ex-Direction-in-the-Fourth-Quadrant" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.20</span><span class="period">.</span><span class="space"> </span><span class="title">Direction in the Fourth Quadrant.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="sidebyside"><div class="sbsrow" style="margin-left:0.833333333333333%;margin-right:0.833333333333333%;">
+<div class="sbspanel top" style="width:50.8474576271186%;"><div class="para" id="ex-Direction-in-the-Fourth-Quadrant-2-1-1">
+<div class="para" id="ex-Direction-in-the-Fourth-Quadrant-2-1-1-1">A vector has <span class="process-math">\((A_x, A_y) = (3, -2) \text{.}\)</span> What is the direction of this vector with respect to the positive <span class="process-math">\(x \)</span> axis?</div> <div class="para" id="ex-Direction-in-the-Fourth-Quadrant-2-1-1-2">Note: the arc-tangent will give you a negative angle.</div>
+</div></div>
+<div class="sbspanel top" style="width:5.084745762711864%;"><div class="para" id="ex-Direction-in-the-Fourth-Quadrant-2-1-2"></div></div>
+<div class="sbspanel top" style="width:40.6779661016949%;"><figure class="figure figure-like" id="ex-Direction-in-the-Fourth-Quadrant-2-1-3"><img src="external/./images/vectors/ex-Direction-in-the-Fourth-Quadrant.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.21<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions"><details id="ex-Direction-in-the-Fourth-Quadrant-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="ex-Direction-in-the-Fourth-Quadrant-3-1">Note that negative angle means clockwise angle.</div></div></details></div></article></details><details id="Practice-Computing-Magnitudes-and-Stating-Directions" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.23</span><span class="period">.</span><span class="space"> </span><span class="title">Practice Computing Magnitudes and Stating Directions.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="Practice-Computing-Magnitudes-and-Stating-Directions-2-1">Clearly, if you have the <span class="process-math">\((x,y) \)</span> of an object, you can get the position vector by computing the <span class="process-math">\(r \)</span> and <span class="process-math">\(\theta \text{.}\)</span>
+</div> <div class="para logical" id="Practice-Computing-Magnitudes-and-Stating-Directions-2-2">
+<div class="para">Draw position vectors of objects at the following coordinates and find their magnitudes and directions.</div>
+<ol class="lower-alpha" id="Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1">
+<li id="Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1-1"><div class="para" id="p-derived-Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1-1"><span class="process-math">\((-1\text{ m}, 2\text{ m}) \text{,}\)</span></div></li>
+<li id="Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1-2"><div class="para" id="p-derived-Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1-2"><span class="process-math">\((-3\text{ m}, -2\text{ m}) \text{,}\)</span></div></li>
+<li id="Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1-3"><div class="para" id="p-derived-Practice-Computing-Magnitudes-and-Stating-Directions-2-2-1-3"><span class="process-math">\((3\text{ m}, -1\text{ m}) \text{.}\)</span></div></li>
+</ol>
+</div>
+<div class="solutions"><details id="Practice-Computing-Magnitudes-and-Stating-Directions-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="Practice-Computing-Magnitudes-and-Stating-Directions-3-1">Use <span class="process-math">\((x,y) \rightarrow (r, \theta) \)</span> equations.</div></div></details></div></article></details><details id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-First-Quadrant" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.25</span><span class="period">.</span><span class="space"> </span><span class="title">Components of a Force Vector from Magnitude and Direction in First Quadrant.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-First-Quadrant-2-1">A force vector <span class="process-math">\(\vec F \)</span> has magnitude <span class="process-math">\(50\text{ N} \)</span>  and is pointed in the direction <span class="process-math">\(30^{\circ} \)</span> North of East. Let <span class="process-math">\(x \)</span> axis be pointed towards East and <span class="process-math">\(y \)</span> axis towards North.</div>&gt; <div class="para" id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-First-Quadrant-2-2">(a) Draw a figure to display this vector, stating the scale you used in your drawing.</div> <div class="para" id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-First-Quadrant-2-3">(b) Find the <span class="process-math">\(x \)</span> and <span class="process-math">\(y \)</span> components, <span class="process-math">\(F_x \)</span> and <span class="process-math">\(F_y \text{,}\)</span> of this vector.</div>
+<div class="solutions"><details id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-First-Quadrant-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-First-Quadrant-3-1">The <span class="process-math">\((F_x, F_y) \)</span> have the same relation to <span class="process-math">\((F, \theta) \)</span> as do <span class="process-math">\((x,y)\)</span> to <span class="process-math">\((r, \theta) \text{.}\)</span>
+</div></div></details></div></article></details><details id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-the-Fourth-Quadrant" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.27</span><span class="period">.</span><span class="space"> </span><span class="title">Components of a Force Vector from Magnitude and Direction in the Fourth Quadrant.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-the-Fourth-Quadrant-2-1">A force vector <span class="process-math">\(\vec F \)</span> has magnitude <span class="process-math">\(50 \)</span> N and is pointed in the direction <span class="process-math">\(30^{\circ} \)</span> South of East. Let <span class="process-math">\(x \)</span> axis be pointed towards East and <span class="process-math">\(y \)</span> axis towards North.</div> <div class="para" id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-the-Fourth-Quadrant-2-2">(a) Draw a figure to display this vector, stating the scale you used in your drawing.</div> <div class="para" id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-the-Fourth-Quadrant-2-3">(b) Find the <span class="process-math">\(x \)</span> and <span class="process-math">\(y \)</span> components, <span class="process-math">\(F_x \)</span> and <span class="process-math">\(F_y \text{,}\)</span> of this vector.</div>
+<div class="solutions"><details id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-the-Fourth-Quadrant-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="Components-of-a-Force-Vector-from-Magnitude-and-Direction-in-the-Fourth-Quadrant-3-1">The <span class="process-math">\((F_x, F_y) \)</span> have the same relation to <span class="process-math">\((F, \theta) \)</span> as do <span class="process-math">\((x,y)\)</span> to <span class="process-math">\((r, \theta) \text{.}\)</span> Be mindful the quadrant and take care of signs of components accordingly.</div></div></details></div></article></details><details id="Magnitude-and-Direction-of-a-Force-Vector-from-Components-in-the-Second-Quadrant" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.29</span><span class="period">.</span><span class="space"> </span><span class="title">Magnitude and Direction of a Force Vector from Components in the Second Quadrant.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="Magnitude-and-Direction-of-a-Force-Vector-from-Components-in-the-Second-Quadrant-2-1">The <span class="process-math">\(x \)</span> and <span class="process-math">\(y\)</span> components of a force vector are given to be <span class="process-math">\(F_x = -30\text{ N}\)</span> and <span class="process-math">\(F_x = 40\text{ N}\text{.}\)</span> What are the magnitude and direction of this force?</div>
+<div class="solutions"><details id="Magnitude-and-Direction-of-a-Force-Vector-from-Components-in-the-Second-Quadrant-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="Magnitude-and-Direction-of-a-Force-Vector-from-Components-in-the-Second-Quadrant-3-1">use <span class="process-math">\((x,y)\)</span> to <span class="process-math">\((r, \theta)\)</span> and interpret the angle.</div></div></details></div></article></details></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="Vectors-as-Arrows.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-Unit-Vectors.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>

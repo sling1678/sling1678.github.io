@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.41</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Torque on a Rolling Disk.</span>
+</h3>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para">
+<a href="sec-rotational-dynamics.html#fig-dynamics-of-rolling-a-disk" class="xref" data-knowl="./knowl/xref/fig-dynamics-of-rolling-a-disk.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 10.42">Figure 10.42</a> shows a disk of mass <span class="process-math">\(M\)</span> and radius <span class="process-math">\(R\)</span> attached to an axle of length <span class="process-math">\(a\)</span> which is attached to a vertical rotatatable shaft. A torque <span class="process-math">\(\mathcal{T}\)</span> is required to uniformly rotate the disk without slipping. Find required torque.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/rotation-general/dynamics-of-rolling-a-disk.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.42<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\frac{1}{2}MR^2\omega\Omega\, \left(-\sin\Omega\,t \, \hat i + \cos\Omega\,t \, \hat j \right)\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">We can get speed of rotation of disk about the axle by noting that in the time <span class="process-math">\(\Delta t\)</span> in which the disk goes once around in a circle of radius <span class="process-math">\(a\text{,}\)</span> a point on the disk woould travel <span class="process-math">\(2\pi R n\)</span> where <span class="process-math">\(n\)</span> is the number of rotations. That is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2\pi R n = 2\pi a.
+\end{equation*}
+</div>
+<div class="para">Therefore</div>
+<div class="displaymath process-math">
+\begin{equation*}
+n = a/R.
+\end{equation*}
+</div>
+<div class="para">We use angular speed for rolling around in circle of radius <span class="process-math">\(a\)</span> to find time for going once around.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta t = \frac{2\pi}{\Omega}.
+\end{equation*}
+</div>
+<div class="para">Therefore, angular speed for rotation about axle is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\omega = \frac{2\pi n}{\Delta t} = \frac{\Omega}{2\pi} \times  \frac{ 2\pi a }{R} = \frac{a\Omega}{R}.
+\end{equation*}
+</div>
+</div> <div class="para">Since the disk is uniformly going around the central shaft, vertical component of angular momentum is constant in time.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">However, since the direction of axle is changing at rate <span class="process-math">\(\Omega\text{,}\)</span> angular momnetum about axle will be a function of time. Just as we have seen in <a href="sec-rotational-dynamics.html#ex-Torque-on-Rotating-a-Spinning-Sphere" class="xref" data-knowl="./knowl/xref/ex-Torque-on-Rotating-a-Spinning-Sphere.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 10.38: (Calculus) Torque on Rotating a Spinning Sphere">Example 10.38</a>, we denote angular momentum pointed in the direction of axle by <span class="process-math">\(\vec L_{xy}\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/rotation-general/dynamics-of-rolling-a-disk-sol.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.43<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="para">The magnitude of <span class="process-math">\(\vec L_{xy}\)</span> will be <span class="process-math">\(I\omega\)</span> with <span class="process-math">\(I=\frac{1}{2}MR^2\)</span> with direction changing with time as given by the unit vector <span class="process-math">\(\hat u = \cos\Omega t\, \hat i + \sin\Omega t\, \hat j\text{.}\)</span> Thus,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec L_{xy} = \frac{1}{2}MR^2\omega\, \left(\cos\Omega\,t \, \hat i + \sin\Omega\,t \, \hat j \right),
+\end{equation*}
+</div>
+<div class="para">with <span class="process-math">\(\vec L = \vec L_{xy} + \vec L_z\text{.}\)</span> To find torque, we just need to take a derivative with respect to time. Since, <span class="process-math">\(L_z\)</span> is not changing with time, we need derivative of only <span class="process-math">\(\vec L_{xy}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\vec{ \mathcal{T} } \amp = \frac{d\vec L}{dt} = \frac{d\vec L_{xy}}{dt}\\
+\amp = \frac{1}{2}MR^2\omega\Omega\, \left(-\sin\Omega\,t \, \hat i + \cos\Omega\,t \, \hat j \right)
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="sec-rotational-dynamics.html#ex-Torque-on-a-Rolling-Disk">in-context</a></span>
+</body>
+</html>

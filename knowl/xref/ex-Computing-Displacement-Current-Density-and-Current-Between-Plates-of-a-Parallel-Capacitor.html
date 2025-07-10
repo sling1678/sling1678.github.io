@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">42.4</span><span class="period">.</span><span class="space"> </span><span class="title">Computing Displacement Current Density and Current Between Plates of a Parallel Capacitor.</span>
+</h3>
+<div class="para">Voltage across a parallel plate capacitor with area <span class="process-math">\(A =800 \text{ cm}^2\)</span> and separation <span class="process-math">\(d = 2 \text{ mm}\)</span> varies sinusoidally as  <span class="process-math">\(V = (15\ \text{mV})\cos(150\: t)\text{,}\)</span> where <span class="process-math">\(t\)</span> is in sec.  (a) Find the displacement current density between the plates.  (b) Find the displacement current between the plates.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(9.96\times 10^{-9}\ (\text{A/m}^2)\ \sin(150\ t)\text{,}\)</span> (b) <span class="process-math">\(\left( 7.97\times 10^{-10}\: \text{A}\right) \: \sin(150\ t)\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">(a) The displacement current density is given by <span class="process-math">\(\vec J_d = \epsilon_0\partial \vec E/\partial t\text{,}\)</span> and the magnitude of the electric field between the two plates can be related to the voltage <span class="process-math">\(V\)</span> between the plates and separation <span class="process-math">\(d\)</span> of the plates by <span class="process-math">\(E = V/d\text{.}\)</span>  Let one of the plates be at <span class="process-math">\(z=0\)</span> and the other plate at <span class="process-math">\(z=d\text{,}\)</span> then the <span class="process-math">\(z\)</span>-component of the electric field will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_z (t) = \dfrac{V(t)}{d}.
+\end{equation*}
+</div>
+<div class="para">Now, if we write <span class="process-math">\(V(t)\)</span> as <span class="process-math">\(V_0\:\cos(\omega t)\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_z (t) = \dfrac{V_0}{d}\:\cos(\omega t).
+\end{equation*}
+</div>
+<div class="para">Therefore, the <span class="process-math">\(z\)</span>-component of the displacement current will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+J_{dz} = -\epsilon_0\dfrac{\omega V_0}{d}\:\sin(\omega t).
+\end{equation*}
+</div>
+<div class="para">Putting in the numerical values we obtain</div>
+<div class="displaymath process-math">
+\begin{align*}
+\dfrac{\omega V_0}{d} \amp = 8.85\times 10^{-12}\:\dfrac{\text{C}^2}{\text{N.m}^2}\dfrac{150\:\text{s}^{-1}\times 0.015\:\text{v}}{0.002\:\text{m}}\\
+\amp = 9.96\:\dfrac{\text{nA}}{\text{m}^2}.
+\end{align*}
+</div>
+<div class="para">Therefore, the current density is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec J_d = -\hat k \: \left(9.96\:\dfrac{\text{nA}}{\text{m}^2}\right)\: \sin(150\: t).
+\end{equation*}
+</div>
+<div class="para">Since the <span class="process-math">\(x\)</span>- and <span class="process-math">\(y\)</span>-components of the displacement current density are zero the magnitude of the displacement current is given by the absolute value of the <span class="process-math">\(z\)</span>-component.  <span class="process-math">\(J_d = |J_{dz}|\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">(b) The area of cross-section through which the electric field lines cross between the plates is the area of the plates.  Therefore, the total displacement current will be obtained by multiplying <span class="process-math">\(J_d\)</span> by the area of the plates. This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_d = J_d A = \left( 7.97\times 10^{-10}\: \text{A}\right) \: \sin(150\ t).
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Amperes-Law-is-Not-Universal.html#ex-Computing-Displacement-Current-Density-and-Current-Between-Plates-of-a-Parallel-Capacitor">in-context</a></span>
+</body>
+</html>

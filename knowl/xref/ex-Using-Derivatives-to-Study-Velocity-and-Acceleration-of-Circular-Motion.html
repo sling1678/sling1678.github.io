@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Using Derivatives to Study Velocity and Acceleration of Circular Motion.</span>
+</h4>
+<div class="para">The position of a particle moving in the <span class="process-math">\(xy\)</span>-plane is given by  <span class="process-math">\(\vec r(t) = a \cos(\pi t) \hat i + (b + a \sin(\pi t)) \hat j\text{,}\)</span> where <span class="process-math">\(t\)</span> is in <span class="process-math">\(\text{sec}\)</span> and <span class="process-math">\(a\)</span> in <span class="process-math">\(\text{cm}\text{.}\)</span>  (a) Show that the motion is a circular motion, and find the value of the radius of the circle, and Cartesian coordinates of the center of the circle.  (b) Find an expression for the velocity of the particle at an arbitrary instant <span class="process-math">\(t\text{.}\)</span>  (c) Find an expression for the angular speed of the particle at an arbitrary time <span class="process-math">\(t\text{.}\)</span> (d) Find an expression of the acceleration of the particle at an arbitrary instant <span class="process-math">\(t\text{.}\)</span>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Look at components of the position vector. (b) Take drivative. (c) Use relation of angular speed and speed. (d) Take derivative.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(x^2 + (y - b)^2 = a^2\text{,}\)</span> (b) <span class="process-math">\(v = \pi a \text{,}\)</span> <span class="process-math">\(\hat u_v = -\hat i\, \sin(\pi t)+ \hat j\, \cos(\pi t)\text{,}\)</span> (c) <span class="process-math">\(\pi\text{,}\)</span> (d) <span class="process-math">\(- \pi^2 a \left( \hat i \cos(\pi t) +  \hat j\,  \sin(\pi t) \right)\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(a) From the given position vector we have <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> of the particle to be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x(t) = a \cos(\pi t),\ \ y(t) = b  + a \sin(\pi t).
+\end{equation*}
+</div>
+<div class="para">From this we see that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2 + (y - b)^2 = a^2.
+\end{equation*}
+</div>
+<div class="para">This is equation of a circle with radius <span class="process-math">\(a\)</span> and center at <span class="process-math">\((0,b)\text{.}\)</span>
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(b) From <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> we get <span class="process-math">\(v_x\)</span> and <span class="process-math">\(v_y\)</span> as usual.</div>
+<div class="displaymath process-math">
+\begin{align*}
+v_x \amp \dfrac{dx}{dt} = - \pi\, a\, \sin(\pi t),\\
+v_y \amp \dfrac{dy}{dt} =  \pi\, a\, \cos(\pi t),
+\end{align*}
+</div>
+<div class="para">This gives magnitude</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v = \pi a,
+\end{equation*}
+</div>
+<div class="para">and direction in the direction of the unit vector</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\hat u_v = -\hat i\, \sin(\pi t)+ \hat j\, \cos(\pi t),
+\end{equation*}
+</div>
+<div class="para">which shows explicitly that direction of velocity is changing with time.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">(c)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(c) Angular speed will be equal to the magnitude of velocity divided by radius of the circle. This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\omega = \dfrac{\pi a}{a} = \pi.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span><span class="space"> </span><span class="title">(d)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(d) Acceleration will be obtained by taking derivative of the velocity.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec a = - \pi^2 a \left( \hat i \cos(\pi t) +  \hat j\,  \sin(\pi t) \right).
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Constant-Speed-Circular-Motion.html#ex-Using-Derivatives-to-Study-Velocity-and-Acceleration-of-Circular-Motion">in-context</a></span>
+</body>
+</html>

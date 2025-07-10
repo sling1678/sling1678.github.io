@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">36.48</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Ampere’s Law Application: Magnetic Field of an Ideal Solenoid.</span>
+</h3> <div class="para">A good way to produce a known constant magnetic field is by an important device called solenoid. You can make a solenoid by tightly winding a platic-coated wire about a cylinder. Suppose, there are <span class="process-math">\(n\)</span> turns of the wire per unit length. Suppose, you connect the two ends of the wire to a DC-voltage source and wait till current in the wire has stabilized to a value <span class="process-math">\(I\text{.}\)</span> Let <span class="process-math">\(R\)</span> be the radius of each coil. Now, we wish to find magnetic field at a point inside the tube and a point outside the tube.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">Suppose solenoid is oriented so that its axis is at the <span class="process-math">\(z\)</span> axis. If we extend the solenoid to <span class="process-math">\(z=\pm \infty\text{,}\)</span> we will get one aspect of cylindrical symmetry, making expected magnetic field independent of the coordinate <span class="process-math">\(z\text{.}\)</span> Another aspect is the direction in the <span class="process-math">\(xy\)</span> plane. If we wind the coils tightly, each turn will be identical to the next and situation in every direction will be same. With this, <span class="process-math">\(B\)</span> will also be independent of <span class="process-math">\(\phi\text{.}\)</span>
+</div></div>
+<div class="sbspanel top" style="width:50%;"><img src="external/./images/magnetic-field/ampere-law-solenoid-magnitude.png" class="contained"></div>
+</div></div> <div class="para logical">
+<div class="para">Therefore, we come to conclusion that magnitude of magnetic field <span class="process-math">\(B\)</span> can only be a function of the cylindrical radial coordinate <span class="process-math">\(s\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B(s,\phi, z) = B(s).
+\end{equation*}
+</div>
+<div class="para">Physically, magnetic field should weaken with increasing radial distance from the solenoid axis. So, we expect</div>
+<div class="displaymath process-math">
+\begin{equation}
+\lim_{s\rightarrow \infty} B(s) = 0.\tag{36.15}
+\end{equation}
+</div>
+</div> <div class="para">Using Biot-Savart right-hand rule, the direction inside will be towards positive <span class="process-math">\(z\)</span> axis and outside it would be towards negative <span class="process-math">\(z\)</span> axis.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">
+<em class="alert">(a)  For field point outside the loop</em>, the Amperian loop will be a rectangular shape with two sides parallel to axis at radial distanes <span class="process-math">\(s&gt;R\)</span> and <span class="process-math">\(s'&gt;s\text{.}\)</span> Then, left side of Ampere’s law gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Left side } = B_P l_\text{ab} + 0 -  B(s') l_\text{cd} + 0.
+\end{equation*}
+</div>
+<div class="para">Here the zeros come from the fact that <span class="process-math">\(\vec B\)</span> is perpendicular to those sides. The right side of Ampere’s law will be zero since no current goes through this Amperian loop.</div>
+</div></div>
+<div class="sbspanel top" style="width:50%;"><img src="external/./images/magnetic-field/ampere-law-solenoid-step-3-loop-out.png" class="contained"></div>
+</div></div> <div class="para logical">
+<div class="para">Therefore, we get the following equation from Ampere’s law.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B_P l_\text{ab} - B(s') l_\text{cd} = 0.
+\end{equation*}
+</div>
+<div class="para">Let us take the further side at <span class="process-math">\(s'\)</span> to <span class="process-math">\(s'=\infty\text{.}\)</span> That will give</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B_P l_\text{ab} = B(\infty) l_\text{cd} = 0\times l_\text{cd} = 0.
+\end{equation*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B_P = 0.\text{ (point P outside)}
+\end{equation*}
+</div>
+<div class="para">We often write this result as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B_\text{out} = 0.
+\end{equation*}
+</div>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">
+<em class="alert">(b)  For field point inside the loop</em>, the Amperian loop will be a rectangular shape with two sides parallel to axis at radial distanes <span class="process-math">\(s\lt R\)</span> and <span class="process-math">\(s' \gt R\text{.}\)</span> Then, left side of Ampere’s law gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Left side } = B_P l_\text{ab} + 0 -  B(s') l_\text{cd} + 0 = B_P l_\text{ab}.
+\end{equation*}
+</div>
+<div class="para">To obtain the enclosed current, we look at how the wires pierce the Amperian loop area. In each turn, wire carries current <span class="process-math">\(I\)</span> through the Amperian loop, and all the loops carry current in the same direction. Therefore, current will equal number of turns times <span class="process-math">\(I\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_\text{enc} = n l_\text{ab}\, I.
+\end{equation*}
+</div>
+</div></div>
+<div class="sbspanel top" style="width:50%;"><img src="external/./images/magnetic-field/ampere-law-solenoid-step-3-loop-in.png" class="contained"></div>
+</div></div> <div class="para logical">
+<div class="para">Now, we use Ampere’s law,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B_P l_\text{ab} = \mu_0 n l_\text{ab}\, I.
+\end{equation*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B_P = \mu_0 n \, I.\text{ (point P inside)}
+\end{equation*}
+</div>
+<div class="para">We often write this result as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B_\text{in} = \mu_0 n \, I.
+\end{equation*}
+</div>
+</div></article><span class="incontext"><a class="internal" href="Amperes-Law.html#ex-Amperes-Law-Application-Magnetic-Field-of-an-Ideal-Solenoid">in-context</a></span>
+</body>
+</html>

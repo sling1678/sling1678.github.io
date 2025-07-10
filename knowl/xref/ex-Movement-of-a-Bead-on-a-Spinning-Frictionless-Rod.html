@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.130</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Movement of a Bead on a Spinning Frictionless Rod.</span>
+</h3>
+<div class="para">A frictionless rod of length <span class="process-math">\(l\)</span> passes through a hole in a bead of mass <span class="process-math">\(m\)</span> as shown in <a href="forces-Dynamics-in-Polar-Coordinates.html#fig-bead-on-a-frictionless-rod" class="xref" data-knowl="./knowl/xref/fig-bead-on-a-frictionless-rod.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.131">Figure 6.131</a>.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">One end of the bead is tied to a shaft of a motor that spins the rod in at a fixed angular speed <span class="process-math">\(\omega\)</span> in a horizontal plane.</div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/forces/bead-on-a-frictionless-rod.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.131<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">Initially bead is at rest at a distance <span class="process-math">\(r_0\)</span> from the motor.</div> <div class="para">(a) Find the location of the bead from the motor, <span class="process-math">\(r\text{,}\)</span> on the rod as a function of time <span class="process-math">\(t\text{.}\)</span> (b) Find speed of the bead as a function of time <span class="process-math">\(t\text{.}\)</span> Practice the following parts with a Friend: (c) Find the instant, bead will leave the rod. (d) Find the direction the bead will leave the rod.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(r(t) = r_0\; \cosh(\omega\, t)\text{,}\)</span> (b) <span class="process-math">\(\omega^2 r_0^2\;\sqrt{\cosh(2 \omega\, t)}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para">We use a polar coordinate system with origin at the motor and <span class="process-math">\(xy\)</span> plane being the horizontal plane. Forces on the bead are gravity, which would be in the <span class="process-math">\(z\)</span> axis direction.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">There are normal forces in the upward (<span class="process-math">\(z\)</span> axis, magnitude <span class="process-math">\(N_\text{up}\)</span>) and sideway (<span class="process-math">\(\hat u_\theta\text{,}\)</span> magnitude <span class="process-math">\(N_\theta\)</span>) directions.</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:45%;"><figure class="figure figure-like"><img src="external/./images/forces/bead-on-a-frictionless-rod-solution.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.132<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="para">Thus, none of the forces have components along <span class="process-math">\(\hat u_r\)</span> direction. These considerations give us the following equations of motion.</div>
+<div class="displaymath process-math">
+\begin{align}
+\amp a_r = 0\ \ \longrightarrow \frac{d^2r}{dt^2} = \omega^2 r. \tag{6.66}\\
+\amp a_\theta = \frac{N_\theta}{m}\ \ \longrightarrow  2\omega \frac{dr}{dt} = \frac{N_\theta}{m}. \tag{6.67}
+\end{align}
+</div>
+<div class="para">The second equation looks easier to solve than the first, but it is deceptive since we do not know <span class="process-math">\(N_\theta\)</span> which is actually time-dependent. Once, we figure eout <span class="process-math">\(r(t)\)</span> from the radial equation, we can use that to get <span class="process-math">\(N_\theta(t)\)</span> from this equation.</div>
+</div> <div class="para logical">
+<div class="para">Since <span class="process-math">\(\omega\)</span> is constant, it is rather easy to guess the answer <span class="process-math">\(r(t) = e^{+\omega t}\)</span> or <span class="process-math">\(e^{-\omega t}\)</span> for Eq. <a href="forces-Dynamics-in-Polar-Coordinates.html#ex-Movement-of-a-Bead-on-a-Spinning-Frictionless-Rod-4-4-2" class="xref" data-knowl="./knowl/xref/eq-bead-on-rod-radial-acc.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.66">(6.66)</a>. A general answer will be a linear combination of these two.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-bead-on-rod-radial-acc.html">
+\begin{equation}
+r(t) = A\; e^{+\omega t} + B\; e^{-\omega t}.\tag{6.68}
+\end{equation}
+</div>
+<div class="para">Its derivative will give the rate at which radial distance is changing with time.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-bead-on-rod-radial-acc.html">
+\begin{equation}
+v_r = \frac{dr}{dt} = \omega\,\left( A\; e^{+\omega t} - B\; e^{-\omega t}.\right).\tag{6.69}
+\end{equation}
+</div>
+<div class="para">From initial conditions we know that <span class="process-math">\(r(0)=r_0\)</span> and <span class="process-math">\(v_r(0)=0\text{.}\)</span> Therefore,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-bead-on-rod-radial-acc.html">
+\begin{equation}
+A = B = \frac{r_0}{2}.\tag{6.70}
+\end{equation}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-bead-on-rod-radial-acc.html">
+\begin{equation}
+r(t) = r_0\; \cosh(\omega\, t),\tag{6.71}
+\end{equation}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-bead-on-rod-radial-acc.html">
+\begin{equation*}
+\cosh(\omega\, t) = \frac{e^{\omega t} + e^{-\omega t}}{2}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Taking time derivative of <a href="forces-Dynamics-in-Polar-Coordinates.html#eq-bead-on-rod-ans-a" class="xref" data-knowl="./knowl/xref/eq-bead-on-rod-ans-a.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.71">(6.71)</a> we get the radial component of velocity.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-bead-on-rod-ans-a.html">
+\begin{equation*}
+v_r = \omega r_0\sinh(\omega\, t),
+\end{equation*}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-bead-on-rod-ans-a.html">
+\begin{equation*}
+\sinh(\omega\, t) = \frac{e^{\omega t} - e^{-\omega t}}{2}.
+\end{equation*}
+</div>
+<div class="para">The tangential component of velocity is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-bead-on-rod-ans-a.html">
+\begin{equation*}
+v_\theta = \omega r = \omega r_0 \cosh(\omega\, t)
+\end{equation*}
+</div>
+<div class="para">Therefore, speed at this instant will be the  magnitude of velocity as obtained by combining the components in a quadrature.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-bead-on-rod-ans-a.html">
+\begin{align*}
+v \amp = \sqrt{v_r^2 + v_\theta^2} = \omega r_0\sqrt{ \sinh^2(\omega\, t) + \cosh^2(\omega\, t) }\\
+\amp = \omega r_0\sqrt{\cosh(2 \omega\, t)}.
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="forces-Dynamics-in-Polar-Coordinates.html#ex-Movement-of-a-Bead-on-a-Spinning-Frictionless-Rod">in-context</a></span>
+</body>
+</html>

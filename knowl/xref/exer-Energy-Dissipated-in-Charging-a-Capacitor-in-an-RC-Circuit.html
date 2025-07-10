@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Energy Dissipated in Charging a Capacitor in an RC Circuit.</span>
+</h4>
+<div class="para">A 200 pF capacitor is connected in series to a <span class="process-math">\(2\, \text{k}\Omega\)</span>  resistor, a <span class="process-math">\(12\, \text{V}\)</span> battery and a switch.  (a) Determine the time it will take to get the capacitor <span class="process-math">\(50\%\)</span> charged.  (b) Determine the maximum charge on the capacitor if allowed to charge for a long time.  (c) Determine energy lost during the charging process.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a)  <span class="process-math">\(2.8\times 10^{-7}\ \text{s}\text{,}\)</span> (b)  <span class="process-math">\(2.4\times 10^{-9}\text{,}\)</span> (c)  <span class="process-math">\(2.9\times 10^{-8}\ \text{J}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">For the present circuit, we have a complete solution giving charge on the capacitor.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q(t) = C\:V\:\left(1 - e^{t/\tau} \right)\ \ \ \ 		(1)
+\end{equation*}
+</div>
+<div class="para">where the time constant  <span class="process-math">\(\tau = RC\text{,}\)</span> and <span class="process-math">\(CV\)</span> is the charge on the capacitor when fully charged.  The time constant here is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\tau = RC = 2000\:\Omega\times 200\:\text{pF} =  600\: \text{ms}.
+\end{equation*}
+</div>
+<div class="para">\noindent (a)	We use Eq (1) to set up an equation for <span class="process-math">\(t\text{.}\)</span>  The question becomes, find t when</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.5 = 1 - e^{t/\tau}.
+\end{equation*}
+</div>
+<div class="para">To solve this equation for <span class="process-math">\(t\)</span> we will separate the exponetial on one side of the equation and take natural logarithm of both sides.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t = -\tau\:\ln(0.5) = -0.4\:\mu\text{s}\times \ln(0.5) =  277\: \text{ms}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">At full charge, the potential difference across the plate will be <span class="process-math">\(12\:\text{V}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_{\text{max}} = C\:V = 200\:\text{pF} \times 12\:\text{V} = 2.4\:\text{nC}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">The energy is lost in the resistor’s heating.  The rate of energy deposited in the resistor is given by the power dissipated, <span class="process-math">\(P = I^2 R\text{,}\)</span> where current is time derivative of charge on the capacitor given in equation (1).  The total energy dissipated is obtained by integrating <span class="process-math">\(P\)</span> from t=0 to <span class="process-math">\(\infty\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Energy dissipated} = \int_0^{\infty}\:P(t) dt = \int_0^{\infty}\:I^2 R dt = \frac{R}{2\tau}\:C^2 V^2 = \frac{1}{2}Q_{\text{max}}V.
+\end{equation*}
+</div>
+<div class="para">Putting in the numerical values, we obtain the following.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Energy dissipated} = \frac{1}{2}\times 2.4\:\text{nC}\times 12\:\text{V} =  288\:\mu\text{J}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Capacitor-Charging-Circuit.html#exer-Energy-Dissipated-in-Charging-a-Capacitor-in-an-RC-Circuit">in-context</a></span>
+</body>
+</html>

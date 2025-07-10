@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">38.41</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Electric Field from a Varying Magnetic Field.</span>
+</h3>
+<div class="para">A long cylindrical solenoid of radius <span class="process-math">\(a\)</span> having <span class="process-math">\(n\)</span> turns per unit length carries a time-dependent current <span class="process-math">\(I(t)\text{.}\)</span>  Find electric field at a point P outside the solenoid as  shown in figure, where, for the sake of clarity, only a cross-section of the solenoid is shown.</div> <figure class="figure figure-like"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/./images/em-effect/solenoid-varying-current-statement.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">38.42<span class="period">.</span></span><span class="space"> </span><a href="Faradays-Law.html#ex-Calculus-Electric-Field-from-a-Varying-Magnetic-Field" class="xref" data-knowl="./knowl/xref/ex-Calculus-Electric-Field-from-a-Varying-Magnetic-Field.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 38.41: (Calculus) Electric Field from a Varying Magnetic Field">Example 38.41</a>.</figcaption></figure><div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">Recall that the current in a solenoid produces a uniform magnetic field inside the solenoid of the magnitude <span class="process-math">\(\mu_0 n I\)</span> and zero outside the solenoid.  The direction of the magnetic field depends on the current direction given by the right-hand rule of Biot-Savart’s law: if you look down the axis, then the direction of magnetic field will be towards you if the current loops around in a counter-clockwise direction as given in the problem statement.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">From the analogy of Ampere’s law and Faraday’s law discussed above, we note that the problem here is analogous to the Ampere’s law problem of finding magnetic field outside a straight wire that carries a uniform volume current density <span class="process-math">\(\vec J\)</span> as shown in the figure.</div></div>
+<div class="sbspanel top" style="width:50%;"><img src="external/./images/em-effect/solenoid-varying-current-solution-1.png" class="contained"></div>
+</div></div> <div class="para logical">
+<div class="para">Therefore, in the present situation we can claim that the electric field will circulate in circles around the magnetic field just as the magnetic field of a straight wire circulates around the current. Following the Ampere’s law procedure for a straight wire, we choose an “Amperian loop” in the shape of a circle  that passes through the field point P as shown in <a href="Faradays-Law.html#fig-solenoid-varying-current-solution-2" class="xref" data-knowl="./knowl/xref/fig-solenoid-varying-current-solution-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 38.43">Figure 38.43</a>.  Now, we equate the circulation of electric field around the Amperian loop with the “enclosed” rate of change of magnetic flux through the Amperian loop.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-solenoid-varying-current-solution-2.html">
+\begin{equation*}
+\text{Circulation of }\vec E = - \text{ Enclosed rate of change of magnetic flux.}
+\end{equation*}
+</div>
+<div class="para">Since the electric field has the same amplitude at all points of the circle the circulation is just a product of the amplitude of the electric field and circumference of the circle of radius <span class="process-math">\(r\text{,}\)</span> which is the distance of field point P from the axis of solenoid.  The enclosed magnetic flux is also easy to calculate here since the magnetic field is zero outside the solenoid.</div>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/./images/em-effect/solenoid-varying-current-solution-2.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">38.43<span class="period">.</span></span><span class="space"> </span>The Amperian loop passes through the field point and the magnetic flux is calculated over the area enclosed by the Amperian loop shown shaded here. The direction of the Amperian loop and area vector are related by the right-hand rule.  Although there is no magnetic field at P, there is an electric field there due to the changing magnetic field inside the solenoid.</figcaption></figure> <div class="para logical">
+<div class="para">To include the direction information, we cast the circulation and magnetic flux in terms of components.  The right-hand rule for Faraday’s law shows that, if the direction of the loop for the circulation is taken along <span class="process-math">\(\hat u_{\phi}\text{,}\)</span> then the direction of the area element will be towards the positive <span class="process-math">\(z\)</span>-axis as shown in <a href="Faradays-Law.html#fig-solenoid-varying-current-solution-2" class="xref" data-knowl="./knowl/xref/fig-solenoid-varying-current-solution-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 38.43">Figure 38.43</a>.  This will give the following for the <span class="process-math">\(\phi\)</span>-component of electric field.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-solenoid-varying-current-solution-2.html">
+\begin{equation*}
+\left(2\pi r\right) E_{\phi} = -\left( \mu_0 \dfrac{dI}{dt} n \right) \left( \pi a^2\right),
+\end{equation*}
+</div>
+<div class="para">where the minus sign on the right side comes from the minus sign in the Faraday’s law.  Solving for <span class="process-math">\(E_{\phi}\)</span> we find</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-solenoid-varying-current-solution-2.html">
+\begin{equation*}
+E_{\phi} = -\dfrac{\mu_0 n a^2}{2r}\dfrac{dI}{dt}.
+\end{equation*}
+</div>
+<div class="para">Therefore, the electric field induced at a point P outside the solenoid is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-solenoid-varying-current-solution-2.html">
+\begin{equation*}
+\vec E_P = -\dfrac{\mu_0 n a^2}{2r}\dfrac{dI}{dt} \hat u_{\phi}.
+\end{equation*}
+</div>
+<div class="para">We find that the induced electric field at the space point P circulates clockwise for an increasing current <span class="process-math">\((dI/dt&gt;0)\)</span> and counter-clockwise for a decreasing current <span class="process-math">\((dI/dt\lt 0)\text{.}\)</span> If you place a circular metal wire of radius <span class="process-math">\(r\)</span> which coincides with the Amperian loop for the circulation of <span class="process-math">\(\vec E\)</span> calculation, you will notice that there is an induced current in the direction of the induced electric field.  Also, if you place a charge anywhere outside the solenoid, the charge will experience an electric force in the axial direction when the current in the solenoid is changing, but no such force when the current in the solenoid is steady.</div>
+</div> <div class="para">The result obtained here implies a rather strange conclusion: the electric field at a point outside of a solenoid with a time-varying current is not zero, although the magnetic field there is zero!  Note that this takes place only when the current in the solenoid is changing; once the current has become steady, there would be no electric field outside the solenoid.</div> <div class="para"><em class="alert">Electric field inside solenoid</em></div> <div class="para">To find electric field induced at a point inside the solenoid we will choose Amperian loop with radius <span class="process-math">\(r\lt a\)</span> as shown in <a href="Faradays-Law.html#fig-solenoid-varying-current-solution-3" class="xref" data-knowl="./knowl/xref/fig-solenoid-varying-current-solution-3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 38.44">Figure 38.44</a>.</div> <figure class="figure figure-like"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/./images/em-effect/solenoid-varying-current-solution-3.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">38.44<span class="period">.</span></span><span class="space"> </span>The Amperian loop and are enclosed (shaded) for a point inside the solenoid.</figcaption></figure> <div class="para logical">
+<div class="para">The enclosed magnetic flux will be less than the flux through the entire cross-section of the solenoid - instead, the magnetic flux through only an area <span class="process-math">\(\pi r^2\)</span> will be enclosed within the Amperian loop.  This gives the electric field that increases with the distance from the axis inside the solenoid.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec E_P = -\dfrac{\mu_0 n r}{2}\dfrac{dI}{dt} \hat u_{\phi}\ \ \text{(at a point P inside)}.
+\end{equation*}
+</div>
+</div>
+</div></details></div></article><span class="incontext"><a class="internal" href="Faradays-Law.html#ex-Calculus-Electric-Field-from-a-Varying-Magnetic-Field">in-context</a></span>
+</body>
+</html>

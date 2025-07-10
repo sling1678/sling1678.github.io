@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Orbit Equation of an Elliptical Orbit in Cartesian Coordinates.</span>
+</h4>
+<div class="para logical">
+<div class="para">The orbit equation in polar coordinates <span class="process-math">\((r, \theta)\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r = \frac{r_0}{ 1 + e\,\cos\theta}.
+\end{equation*}
+</div>
+<div class="para">For <span class="process-math">\(0 \lt e \lt 1\text{,}\)</span> this is an equation of an ellipse. Write this in Cartesian coordinate so that it takes the following form.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1.
+\end{equation*}
+</div>
+<div class="para">Find the expressions of the semimajor and semiminor axes and the location of the foci.</div>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use <span class="process-math">\(r\cos\theta = x\)</span> and <span class="process-math">\(r = \sqrt{x^2 + y^2}\text{.}\)</span> You will also need to displace the origin to the center of the ellipse.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">Let’s start with the polar form of the orbit equation.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r + e r\cos\theta = r_0.
+\end{equation*}
+</div>
+<div class="para">This is in a coordinate system where origin is at one of the foci, so, we expect to get center at non-zero place. Let’s carry out the substitution of <span class="process-math">\(r = \sqrt{x^2 + y^2}\)</span> and <span class="process-math">\(x = r\cos\theta\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sqrt{x^2 + y^2} + e x = r_0.
+\end{equation*}
+</div>
+<div class="para">Now, move the <span class="process-math">\(x\)</span> term to the right side, thus isolating the square-root term on one side. Then, we square and rearrange terms to</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(1-e^2) x^2  + 2 e r_0 x + y^2 = r_0^2.
+\end{equation*}
+</div>
+<div class="para">We now complete the square on <span class="process-math">\(x\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(  \sqrt{1-e^2}\, x - \frac{e r_0}{\sqrt{1-e^2}}  \right)^2 + y^2 = r_0^2 + \frac{e^2 r_0^2}{1-e^2} = \frac{r_0^2}{1-e^2}.
+\end{equation*}
+</div>
+<div class="para">Pull the multiplier of <span class="process-math">\(x\)</span> out and then divide every term by <span class="process-math">\((1-e^2)\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(  x - \frac{e r_0}{1-e^2} \right)^2 + \frac{y^2}{1- e^2} = \left( \frac{r_0}{1-e^2} \right)^2.
+\end{equation*}
+</div>
+<div class="para">Now, divide every term by the term on the right side so that we get <span class="process-math">\(1\)</span> on the right side. We will get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{(x - c)^2}{a^2} + \frac{y^2}{b^2} = 1,
+\end{equation*}
+</div>
+<div class="para">where we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a = \frac{r_0}{1-e^2},\ \ b=\frac{r_0}{\sqrt{1-e^2}},\ \ c = ea.
+\end{equation*}
+</div>
+<div class="para">Now, we need to change coordinates to the center of ellipse by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x' = x - c, \ \ y' = y.
+\end{equation*}
+</div>
+<div class="para">Then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{x'^2}{a^2} + \frac{y'^2}{b^2} = 1.
+\end{equation*}
+</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="The-Orbit-Equation.html#exer-Orbit-Equation-of-an-Elliptical-Orbit-in-Cartesian-Coordinates">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus) Electric Field of a Spherical Charge Distribution from Electric Potential.</span>
+</h4>
+<div class="para">A spherical cloud of radius <span class="process-math">\(R\)</span> has uniform charge density <span class="process-math">\(\rho\)</span> (units: <span class="process-math">\(\text{C/m}^3\)</span>). Find electric field (a) at a point outside and (b) at a point inside the sphere from the following known expressions for electric potential at these points where <span class="process-math">\(r_\text{in/out}\)</span> are the radial spherical coordinates.</div> <div class="para">(a) <span class="process-math">\(\frac{1}{4\pi\epsilon_0}\,\frac{q}{r_\text{out}}\text{,}\)</span> (b) <span class="process-math">\(\frac{1}{4\pi\epsilon_0} \frac{q}{R} \left( \frac{3}{2} - \frac{1}{2}\; \frac{r_{\text{in}}^2}{R^2} \right)\text{.}\)</span>	 See <a href="Electric-Potential-and-Electric-Field.html#ex-Potential-of-Uniformly-Charged-Sphere" class="xref" data-knowl="./knowl/xref/ex-Potential-of-Uniformly-Charged-Sphere.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 31.7.5.4: (Calculus)  Potential of Uniformly Charged Sphere">Exercise 31.7.5.4</a>.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use gradient of potential in spherical coordinates.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(\frac{1}{4\pi\epsilon_0}\,\frac{q}{r_\text{out}^2}\; \hat u_r\text{,}\)</span> (b) <span class="process-math">\(\frac{1}{4\pi\epsilon_0}\,\frac{q\, r_\text{in}}{R^3}\; \hat u_r\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span><span class="space"> </span><span class="title">(a) and (b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Since the potentials are in spherical coordinates, it is best to work in spherical coordinates where <span class="process-math">\(\vec\nabla\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec \nabla = \hat u_r \frac{\partial}{\partial r} + \hat u_\theta\frac{1}{r}\frac{\partial}{\partial \theta} +  \hat u_\phi\frac{1}{r\sin\theta}\frac{\partial}{\partial \phi}.
+\end{equation*}
+</div>
+<div class="para">This has derivatives with respect to <span class="process-math">\(\theta\)</span> and <span class="process-math">\(\phi\text{.}\)</span> Since we will work with spherical coordinates in this problem, it is better to use symbol <span class="process-math">\(V\)</span> for potential to avoid confusion.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\vec E \amp = - \vec\nabla V\\
+\amp = - \hat u_r \frac{\partial V}{\partial r}
+\end{align*}
+</div>
+</div> <div class="para logical">
+<div class="para">For (a), we use</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V(r) = \frac{1}{4\pi\epsilon_0}\,\frac{q}{r},
+\end{equation*}
+</div>
+<div class="para">for (b), we use</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V(r) = \frac{1}{4\pi\epsilon_0} \frac{q}{R} \left( \frac{3}{2} - \frac{1}{2}\; \frac{r^2}{R^2} \right).
+\end{equation*}
+</div>
+<div class="para">Carrying out the derivatives, we get the answers for (a) and (b) to be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec E = 
+\begin{cases}
+\frac{1}{4\pi\epsilon_0}\,\frac{q}{r^2}\; \hat u_r \amp r \gt R\\
+\frac{1}{4\pi\epsilon_0}\,\frac{q\, r}{R^3}\; \hat u_r \amp r \lt R.
+\end{cases}
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Electric-Potential-and-Electric-Field.html#ex-Electric-Field-of-a-Spherical-Charge-Distribution-from-Electric-Potential">in-context</a></span>
+</body>
+</html>

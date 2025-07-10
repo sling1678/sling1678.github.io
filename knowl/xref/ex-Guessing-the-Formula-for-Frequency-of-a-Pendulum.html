@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Guessing the Formula for Frequency of a Pendulum.</span>
+</h4>
+<div class="para">The frequency of the pendulum is the number of cycles it makes in unit time.  How does the frequency of a pendulum depend upon its length, mass, angle of swing and force of gravity?</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use dimensional analysis.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(h(\theta)\sqrt{\frac{g}{l}}\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">The dimensional analysis can be used to find a formula for the frequency <span class="process-math">\(f\)</span> of a pendulum of length <span class="process-math">\(l\text{,}\)</span> and mass <span class="process-math">\(m\text{,}\)</span> which swings between angles <span class="process-math">\(\pm \theta\)</span> radians of the vertical axis.  Because pendulum swings as a result of gravity, we need to include the acceleration due to gravity g as one of the possible variables.  We assume that the mass of the string is negligible compared to the mass of the pendulum bob.  Our task is to find the frequency, <span class="process-math">\(f\text{,}\)</span> as a function of <span class="process-math">\(m\text{,}\)</span> <span class="process-math">\(l\text{,}\)</span> <span class="process-math">\(\theta\text{,}\)</span> and <span class="process-math">\(g\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-dim-analysis-freq-formula.html">
+\begin{equation*}
+\text{Frequency},\ f = f(m,l,\theta, g). 
+\end{equation*}
+</div>
+<div class="para">Now, we anticipate that frequency would go as some power of each of the physically relevant variables.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-dim-analysis-freq-formula.html">
+\begin{equation}
+[f]=h(\theta) \times [l]^a \times [m]^b \times [g]^c. \tag{1.16}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(h(\theta)\)</span> is dimensionless since angle <span class="process-math">\(\theta\)</span> is dimensionless, and exponents <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\)</span> are to be determined.  Dimensional analysis would not help us with the form of the function <span class="process-math">\(h(\theta)\)</span> since <span class="process-math">\(\theta\)</span> is dimensionless.  Now, let us write out the dimensions of all physical quantities I have listed.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-dim-analysis-freq-formula.html">
+\begin{equation*}
+[f] = 1/[T];\ [ l] = [L];\ [m]= [M];\ [g] = [L]/[T]^2;\ [\theta] = \text{Dimensionless}.
+\end{equation*}
+</div>
+<div class="para">Now, putting the dimensions in <a href="section-dimensional-analysis.html#eq-dim-analysis-freq-formula" class="xref" data-knowl="./knowl/xref/eq-dim-analysis-freq-formula.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.16">(1.16)</a> we find</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-dim-analysis-freq-formula.html">
+\begin{equation*}
+\frac{1}{[T]}=h(\theta)\times[L]^a\times[M]^b\times\frac{[L]^c}{[T]^{2c}}.
+\end{equation*}
+</div>
+<div class="para">Equating the exponents of <span class="process-math">\([L]\text{,}\)</span> <span class="process-math">\([T]\)</span> and <span class="process-math">\([M]\)</span> on the two sides of the equation gives us the following relations among a, b and c.  If a particular dimension is missing on one side of the equation, e.g. <span class="process-math">\([M]\)</span> is missing on the left side, then the exponent of that quantity would be zero on that side of the equation.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-dim-analysis-freq-formula.html">
+\begin{equation*}
+a+c = 0;\ b=0;\  2c = 1,\ \ \Longrightarrow\ \  a = -\frac{1}{2};\ b = 0;\ c=\frac{1}{2}.
+\end{equation*}
+</div>
+<div class="para">Therefore, we find that the frequency of a pendulum is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-dim-analysis-freq-formula.html">
+\begin{equation}
+f=h(\theta)\sqrt{\frac{g}{l}}.\tag{1.17}
+\end{equation}
+</div>
+<div class="para">The only part that remains undetermined by the dimensional analysis here is the dimensionless part, <span class="process-math">\(h\text{,}\)</span> which may depend on dimensionless quantity <span class="process-math">\(\theta\)</span> and/or dimensionless combinations of <span class="process-math">\(g\text{,}\)</span> <span class="process-math">\(l\text{,}\)</span> and <span class="process-math">\(m\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">To appreciate the power of dimensional analysis, compare our answer for frequency <a href="section-dimensional-analysis.html#eq-dim-analysis-freq-formula-final-answer" class="xref" data-knowl="./knowl/xref/eq-dim-analysis-freq-formula-final-answer.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.17">(1.17)</a> to the following exact answer for the frequency obtained by a more difficult calculation using small angle approximation and Newton’s laws of motion.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-dim-analysis-freq-formula-final-answer.html">
+\begin{equation*}
+f=\frac{1}{2\pi}\sqrt{\frac{g}{l}}.
+\end{equation*}
+</div>
+<div class="para">The dimensional analysis gave us the important part of physics that frequency of a pendulum does not depend on its mass, and it is inversely proportional to the square root of length of the pendulum with very little effort on our part.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="section-dimensional-analysis.html#ex-Guessing-the-Formula-for-Frequency-of-a-Pendulum">in-context</a></span>
+</body>
+</html>

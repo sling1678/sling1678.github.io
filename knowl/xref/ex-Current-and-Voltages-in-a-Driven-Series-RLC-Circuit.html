@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">40.30</span><span class="period">.</span><span class="space"> </span><span class="title">Current and Voltages in a Driven Series RLC Circuit.</span>
+</h3>
+<div class="para">Consider the circuit given in <a href="Driven-Oscillations.html#fig-example-drive-1" class="xref" data-knowl="./knowl/xref/fig-example-drive-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 40.31">Figure 40.31</a>.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para">
+<div class="para">(a) Find the steady state current in the circuit.</div> <div class="para">(b) Find the resonance frequency of current.</div> <div class="para">(c) Find the voltage across the resistor in the steady state.</div>
+</div></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like"><img src="external/./images/em-oscillations/example-drive-1.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">40.31<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
+</div></div> <div class="para">(d) (Calculus) Find the voltage drop across the capacitor in the steady state.</div> <div class="para">(e) (Calculus) Find the back emf in the inductor in the steady state.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(I(t) = (7.2\text{ mA})\, \cos\left( 200\,t + 1.57\right) \text{,}\)</span> (b) <span class="process-math">\(\omega_R = \omega_0 = 1921\text{ sec}^{-1}\text{,}\)</span> or <span class="process-math">\(306\text{ Hz}\text{.}\)</span> (c) <span class="process-math">\((36\text{ mV})\, \cos\left( 200\,t + 1.57\right)\text{,}\)</span> (d) <span class="process-math">\(12\text{ V} \,\sin(200\,t + 1.57)\text{,}\)</span> (e) <span class="process-math">\(-5.76\text{ mV} \sin(200\, t + 1.57)  \text{,}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Let us compute the constants we will need.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp \gamma = \dfrac{R}{L} = 1250\text{ sec}^{-1}. \\
+\amp \omega_0 = \dfrac{1}{\sqrt{RC}} = 1921\text{ sec}^{-1}. \\
+\amp Z = \sqrt{R^2 + ( \omega L - 1/(\omega C) )^2 } = 1669\ \Omega.
+\end{align*}
+</div>
+<div class="para">The current amplitude</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_0 = \dfrac{V_0}{Z} = \dfrac{12\text{ V}}{1669\ \Omega} = 7.2\text{ mA}.
+\end{equation*}
+</div>
+<div class="para">The phase constant for current</div>
+<div class="displaymath process-math">
+\begin{align*}
+\phi_I \amp = \tan^{-1}\left( \dfrac{1}{\omega R C} - \dfrac{\omega L}{R }  \right)\\
+\amp = 1.57\text{ rad}.
+\end{align*}
+</div>
+<div class="para">Therefore, steady starte current at instant <span class="process-math">\(t\)</span> will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I(t) = (7.2\text{ mA})\, \cos\left( 200\,t + 1.57\right).
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Resonance angular frequency of current will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\omega_R = \omega_0 = 1921\text{ sec}^{-1}.
+\end{equation*}
+</div>
+<div class="para">This would give the regular frequency</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f_R = \dfrac{\omega_R}{2\pi} = 306\text{ Hz}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">(c)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Voltage across resistor is simply <span class="process-math">\(IR\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V _R = (36\text{ mV})\, \cos\left( 200\,t + 1.57\right).
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span><span class="space"> </span><span class="title">(d)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Voltage across capacitor is a little tricky since  <span class="process-math">\(V_C = q/C\)</span> with <span class="process-math">\(q = \int I(t) dt\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+V_C \amp = \dfrac{1}{C}\int I(t) dt\\
+\amp = \dfrac{1}{C}\int I_0\,\cos(\omega t + \phi_I) dt\\
+\amp = \dfrac{I_0}{\omega C} \,\sin(\omega t + \phi_I) \\
+\amp = 12.006\text{ V} \,\sin(200\,t + 1.57) 
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">5</span><span class="period">.</span><span class="space"> </span><span class="title">(e)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Back EMF by the inductor is also a little tricky since  <span class="process-math">\(\mathcal{E}_\text{back} = L dI/dt\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\mathcal{E}_\text{back} \amp = L \dfrac{dI}{dt}\\
+\amp = L I_0\, \dfrac{d \cos(\omega t + \phi_I)}{dt}\\
+\amp = -\omega L I_0 \sin(\omega t + \phi_I)  \\
+\amp = -5.76\text{ mV} \sin(200\, t + 1.57)  
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Driven-Oscillations.html#ex-Current-and-Voltages-in-a-Driven-Series-RLC-Circuit">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Pressure Drop in the Needle of an IV System.</span>
+</h4>
+<div class="para">An intravenous (IV) system is supplying saline solution to a patient at the rate of <span class="process-math">\(750\text{ mL}\)</span> in <span class="process-math">\(180\text{ minutes}\)</span> using a needle of inner radius <span class="process-math">\(0.15\text{ mm}\)</span> and length <span class="process-math">\(2.54\text{ cm}\text{.}\)</span> The pressure in the vein into which saline from the needle tip will enter is <span class="process-math">\(1\text {atm} + 10\text{mm Hg}\text{.}\)</span> Suppose the viscosity of saline solution is <span class="process-math">\(1.002\text{ cP}\text{.}\)</span>
+</div> <div class="para">(a) What is the flow rate in <span class="process-math">\(\text{m}^3\text{/sec}\text{?}\)</span>
+</div> <div class="para">(b) What is the pressure at the back part of the needle in units of <span class="process-math">\(\text{mm Hg} \text{?}\)</span>
+</div> <div class="para">(c) What will be the pressure needed at the back part of the needle in units of <span class="process-math">\(\text{ mm Hg}\)</span> for the same flow rate if a thicker needle of radius <span class="process-math">\(0.1475\text{ mm}\)</span> is used?</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">(a) Use <span class="process-math">\(V/\Delta t\text{.}\)</span> (b) Use Poiseuille’s law. (c) Use rescaling argument rather than a detailed calculation.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(6.94\times 10^{-8}\text{ m}^3\text{/s} \text{,}\)</span> (b) <span class="process-math">\(836\text{ mm Hg} \text{,}\)</span>  (c) <span class="process-math">\(894\text{ mm Hg} \text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"><div class="displaymath process-math">
+\begin{equation*}
+\dfrac{ 750\text{ mL} }{ 180\text{ minutes} } = \dfrac{ 750\times 10^{-6} }{ 180 \times 60} = 6.94\times 10^{-8}\text{ m}^3\text{/s}.
+\end{equation*}
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para">We convert units to SI, and then to <span class="process-math">\(\text{mm Hg}\)</span> from <span class="process-math">\(\text{Pa}\text{.}\)</span>
+</div> <div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+\amp R = 0.15\text{ mm}= 1.5\times 10^{-4} \text{ m}, \\
+\amp L = 2.54\text{ cm}= 2.54\times 10^{-2} \text{ m}, \\
+\amp p_{\text{vein}} = 1\text {atm} + 10\text{mm Hg} =  1.026 \times 10^{5}\text{ Pa}, \\
+\amp \eta = 1.002\text{ cP} =  1.002 \times 10^{-3}\text{ Pa.s}, 
+\end{align*}
+</div></div> <div class="para logical">
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{align*}
+\Delta p \amp = \dfrac{8}{\pi} \frac{\eta L}{R^4} \\
+\amp = \dfrac{8}{\pi} \frac{1.002 \times 10^{-3} \times 2.54\times 10^{-2}}{  (1.5\times 10^{-4})^4} \\
+\amp = 8885\text{ Pa}
+\end{align*}
+</div>
+<div class="para">This gives pressure at the back end of the needle</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p_{\text{high}} = p_{\text{vein}} + \Delta p = 1.026 \times 10^{5}  + 8885  = 111485\text{ Pa}.
+\end{equation*}
+</div>
+<div class="para">We convert this to <span class="process-math">\(\text{mm Hg}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+111485\text{ Pa} = 111485\times \dfrac{760}{1.013\times 10^{5}} = 836\text{ mm Hg}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">We do not need to do a fresh calculation since we have same <span class="process-math">\(Q\text{,}\)</span> <span class="process-math">\(L\text{,}\)</span> and <span class="process-math">\(\eta \text{.}\)</span> We just rescale <span class="process-math">\(\Delta p\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta p = 836\text{ mm Hg} \times 
+\left( \dfrac{0.15\text{ mm}}{0.1475\text{ mm} }\right)^4 = 894\text{ mm Hg}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Poiseuillis-Law.html#ex-Pressure-Drop-in-the-Needle-of-an-IV-System">in-context</a></span>
+</body>
+</html>

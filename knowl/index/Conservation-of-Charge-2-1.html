@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para"> The principle of conservation of charge is automatically included in Maxwell’s equations.  To see it explicitly we can use the point form of Maxwell’s equations. First,  let us  take the divergence of both sides of the Ampere-Maxwell’s law and then use the Gauss’s law for the electric field.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\vec{\nabla}\cdot(\vec{\nabla}\times \vec B) \amp  = \vec{\nabla} \cdot \left(\mu_0 \vec J + \mu_0\epsilon_0 \frac{\partial \vec E}{\partial t} \right)\\
+\amp  = \mu_0 \vec{\nabla} \cdot \vec J + \mu_0\epsilon_0  \frac{\partial }{\partial t}(\vec{\nabla}\cdot \vec E)\\
+\amp  = \mu_0 \left( \vec{\nabla} \cdot \vec J +  \frac{\partial \rho}{\partial t} \right) 
+\end{align*}
+</div>
+<div class="para">Since, the divergence of a curl is zero, the left side is identically zero.  Therefore, we find that</div>
+<div class="displaymath process-math">
+\begin{equation}
+\vec{\nabla} \cdot \vec J +  \frac{\partial \rho}{\partial t}  = 0. \tag{42.10}
+\end{equation}
+</div>
+<div class="para">This equation is called the <dfn class="terminology">equation of continuity</dfn>,  which is a statement of conservation of charge at each space point. We can see this fact by integrating =over a volume, <span class="process-math">\(V\text{,}\)</span> which is enclosed by a close surface <span class="process-math">\(S\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_V \vec{\nabla} \cdot \vec J\, dxdydz = -   \frac{\partial }{\partial t}  \int_V \rho\, dxdydz.
+\end{equation*}
+</div>
+<div class="para">The left side is the flux of charges out of the surface and the right side is the rate at which net charge within the volume, <span class="process-math">\(Q_v\text{,}\)</span> decreases with time.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\oint_S \vec J\cdot d\vec A = - \dfrac{d}{dt}Q_V.
+\end{equation*}
+</div>
+<div class="para">That is, amount of charges leaving the volume due to current through the enclosing surface in some time <span class="process-math">\(\Delta t\)</span>  must equal the net decrease in charge within the volume in that time. Thus, net electric charge can neither be created or destroyed. </div>
+</div>
+<span class="incontext"><a class="internal" href="Conservation-of-Charge.html#Conservation-of-Charge-2-1">in-context</a></span>
+</body>
+</html>

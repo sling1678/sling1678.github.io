@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">18.5</span><span class="period">.</span><span class="space"> </span><span class="title">Pumping Water in a Tall Building.</span>
+</h3>
+<div class="para">Water is to be pumped from the basement of a tall building such that <span class="process-math">\(15\text{ l/min}\)</span> of water must come out froma faucet of inner diameter <span class="process-math">\(2.5\text{ cm} \)</span> at a height <span class="process-math">\(30\text{ m}\text{.}\)</span> The water is being pumped into a pipe of diameter  <span class="process-math">\(5.0\text{ cm} \text{.}\)</span> Assume no branching, and if branching, then all other branches are closed off. Assume nonviscous flow.</div> <div class="para">(a) What are the speeds of flow in the (i) basement and at (ii) faucet?</div> <div class="para">(b) What is the pressure at the pump?</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) (i) <span class="process-math">\(0.128\text{ m/s}\text{,}\)</span> (ii) <span class="process-math">\(0.51\text{ m/s}\text{,}\)</span> (b) <span class="process-math">\(2.95\times 10^{5}\text{ Pa} \text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">First, we find the speed of flow at the faucet by using the volume flow rate given. We need to convert that into the SI units.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q = 15\text{ l/min} \times \dfrac{10^{-3} \text{ m}^3\text{/l}} {60\text{ s/min}} = 2.5\times 10^{-4}\text{ m}^3\text{/s}.
+\end{equation*}
+</div>
+<div class="para">Let subscript 1 refer to the pipe at the pump and 2 to the pipe at the faucet. Then, <span class="process-math">\(A_2 v_2 = Q \)</span> gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_2 = \dfrac{Q}{A_2} = \dfrac{2.5\times 10^{-4}}{ \pi\times 0.0125^2}= 0.51\text{ m/s}.
+\end{equation*}
+</div>
+<div class="para">From <span class="process-math">\(A_1 v_1 =  A_2 v_2\text{,}\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_1 = \dfrac{A_2}{A_1}\, v_2 = \left(  \dfrac{2.5}{5} \right)^2\, 0.51 = 0.128\text{ m/s}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Bernoulli’s equation applies here since flow is nonviscous. The pressure against which water comes out of faucet is the atmospheric pressure. Using 1 for pump’s locaiton and 2 for the faucet’s location, we will have</div>
+<div class="displaymath process-math">
+\begin{align*}
+p_1 \amp = p_2 + \dfrac{1}{2}\rho (v_2^2 - v_1^2) + \rho g (h_2-h1) \\
+\amp = 1.013\times 10^{5} + 1000\left[ \dfrac{1}{2} (0.51^2 - 0.128^2) +  9.81\times 30 \right] \\
+\amp = 2.95\times 10^{5}\text{ Pa}.  
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Bernoullis-Equation.html#ex-Pumping-Water-in-a-Tall-Building">in-context</a></span>
+</body>
+</html>

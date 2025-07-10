@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">23.7</span><span class="period">.</span><span class="space"> </span><span class="title">(Calculus) Conduction in the Radial Direction.</span>
+</h3>
+<div class="para">A 5 m long copper pipe of diameter 2.0 cm carries steam at <span class="process-math">\(150^{\circ} \text{C}\text{.}\)</span>  The pipe is insulated by Styrofoam of thickness 1 cm, and the outside space is at room temperature of <span class="process-math">\(20^{\circ}\)</span>C (see <a href="Thermal-Conduction.html#fig-example-heat-transfer-1a" class="xref" data-knowl="./knowl/xref/fig-example-heat-transfer-1a.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 23.8">Figure 23.8</a>).  Find the rate of heat loss from the pipe.</div> <div class="para">Data: <span class="process-math">\(k_\text{Styrofoam} = 0.03\text{ J/s.m.K}\)</span>
+</div> <figure class="figure figure-like"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/./images/heat-transfer/example-heat-transfer-1a.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">23.8<span class="period">.</span></span><span class="space"> </span>Figure for <a href="Thermal-Conduction.html#ex-Conduction-in-the-Radial-Direction" class="xref" data-knowl="./knowl/xref/ex-Conduction-in-the-Radial-Direction.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 23.7: (Calculus) Conduction in the Radial Direction">Example 23.7</a>.</figcaption></figure><div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(177\  \text{W}\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">Here, heat is not transferred in one direction but radially outward in all directions from an axis.  Therefore, we use the cylindrical coordinate system.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para"><div class="para logical">
+<div class="para">At the radial distance <span class="process-math">\(r\text{,}\)</span> the area <span class="process-math">\(A \)</span> through which heat passes is the area of a cylindrical shell of length <span class="process-math">\(L \)</span> and width <span class="process-math">\(2\pi r\text{.}\)</span>  Therefore, Eq. <a href="Thermal-Conduction.html#eq-cunductivity-law" class="xref" data-knowl="./knowl/xref/eq-cunductivity-law.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 23.6">(23.6)</a> for rate of flow through the shell at radial distance <span class="process-math">\(r \)</span> would become</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-cunductivity-law.html">
+\begin{equation*}
+\dfrac{dQ}{dt} = - k(2\pi r L) \dfrac{dT}{dr}
+\end{equation*}
+</div>
+</div></div></div>
+<div class="sbspanel top" style="width:10%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:35%;"><img src="external/./images/heat-transfer/example-heat-transfer-1b.png" class="contained"></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+</div></div> <div class="para logical">
+<div class="para">Since, there is no source or sink of heat in the insulation, the rate of flow of heat must be independent of the distance from the center.  Rearranging the equation, and integrating from <span class="process-math">\(T = T_1\)</span>   when <span class="process-math">\(r = R_1\)</span> (the inside radius of the insulation) to <span class="process-math">\(T= T_2\)</span> when <span class="process-math">\(r =R_2\)</span> (the outer radius of the insulation) will give the following.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{dQ}{dt} \int_{R_1}^{R_2}\dfrac{dr}{r}= - 2\pi k L \int_{T_1}^{T_2} dT.
+\end{equation*}
+</div>
+<div class="para">This gives the following relation for the rate of flow of heat from the inner surface at radius <span class="process-math">\(R_1\)</span> to the outer surface at radius <span class="process-math">\(R_2\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{dQ}{dt} = \dfrac{2\pi k L(T_1-T_2)}{\ln{(R_2/R_1)}}.
+\end{equation*}
+</div>
+<div class="para">Note that we do not need to convert the temperature into Kelvin since the change in Kelvin is the same in degree Celsius.  Putting the numerical values for our case, we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{dQ}{dt} = \dfrac{2\pi \times 0.03( \text{W/m.K})\times 5  \text{m}\times 130\  \text{K}}{\ln{(2\  \text{cm}/1\  \text{cm})}} = 177\  \text{W}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Thermal-Conduction.html#ex-Conduction-in-the-Radial-Direction">in-context</a></span>
+</body>
+</html>

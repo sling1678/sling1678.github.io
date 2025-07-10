@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus)  Moment of Inertia of a Sphere about an Axis Through the Center.</span>
+</h4>
+<div class="para">Derive the expression for the moment of inertia of a uniform sphere of mass <span class="process-math">\(M\)</span>  and radius <span class="process-math">\(R\)</span> about an axis through the center of the sphere.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">With <span class="process-math">\(z\)</span> axis as axis of rotation, consider thin disk between <span class="process-math">\(z\)</span> and <span class="process-math">\(z+dz\text{.}\)</span>
+</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para"><span class="process-math">\(\frac{2}{5}MR^2\text{.}\)</span></div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">
+<a href="Moment-of-Inertia.html#fig-mom-inertia-sphere-abt-ctr" class="xref" data-knowl="./knowl/xref/fig-mom-inertia-sphere-abt-ctr.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.80">Figure 9.80</a> shows setup for claculations. The axis of rotation is <span class="process-math">\(z\)</span> axis in the figure.</div> <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/./images/rotation/mom-inertia-sphere-abt-ctr.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.80<span class="period">.</span></span><span class="space"> </span>Figure for <a href="Moment-of-Inertia.html#ex-Moment-of-Inertia-of-a-Sphere-about-an-Axis-Through-the-Center" class="xref" data-knowl="./knowl/xref/ex-Moment-of-Inertia-of-a-Sphere-about-an-Axis-Through-the-Center.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 9.7.10.8: (Calculus)  Moment of Inertia of a Sphere about an Axis Through the Center">Exercise 9.7.10.8</a> solutiuon.</figcaption></figure> <div class="para logical">
+<div class="para">Now we look at an element of the sphere in the shape of a disk perpendicular to <span class="process-math">\(z\)</span> axis between <span class="process-math">\(z\)</span> and <span class="process-math">\(z+dz\text{.}\)</span> The radius of the disk <span class="process-math">\(r\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r = \sqrt{R^2 - z^2}.
+\end{equation*}
+</div>
+<div class="para">Therefore, volume of the element is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dV = \pi r^2 dz =\pi\, \left(R^2 - z^2 \right)\, dz.
+\end{equation*}
+</div>
+<div class="para">The mass of the disk is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dm = \dfrac{M}{V}\, dV = \dfrac{M}{V}\, \pi\, \left(R^2 - z^2 \right)\, dz,
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(V = \frac{4}{3}\pi R^3\text{.}\)</span> The moment of inertia of this element about <span class="process-math">\(z\)</span> axis is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dI = \dfrac{1}{2}\, dm\, r^2. 
+\end{equation*}
+</div>
+<div class="para">This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dI = \dfrac{M}{2V}\, \pi\, \left(R^2 - z^2 \right)^2\, dz.
+\end{equation*}
+</div>
+<div class="para">Integrating this from <span class="process-math">\(z=-R\)</span> to <span class="process-math">\(z=R\text{,}\)</span> which is same as <span class="process-math">\(2\times\)</span> inegration from <span class="process-math">\(z=0\)</span> to <span class="process-math">\(z=R\)</span> due to evenness of the integrand, gives the answer.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = \dfrac{\pi M}{V}\, R^5\,\left( 1 - \frac{2}{3} + \frac{1}{5}\right) = \dfrac{2}{5}MR^2.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Moment-of-Inertia.html#ex-Moment-of-Inertia-of-a-Sphere-about-an-Axis-Through-the-Center">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Complex Circuit Analysis of an RC Circuit.</span>
+</h4>
+<div class="para logical">
+<div class="para">A <span class="process-math">\(200\text{-}\Omega\)</span>  resistor and <span class="process-math">\(150\text{-}\mu\)</span>F capacitor are connected in series across a <span class="process-math">\(120\text{-V}\)</span> (rms ) AC power source oscillating at <span class="process-math">\(60\text{-Hz}\)</span> frequency.</div>
+<ol class="lower-alpha" id="exer-Complex-Circuit-Analysis-of-an-RC-Circuit-2-1-5">
+<li><div class="para">Find the amplitude and phase of current in the circuit, assuming phase of source voltage to be zero at <span class="process-math">\(t = 0\text{.}\)</span>
+</div></li>
+<li><div class="para">Find the voltage drops across the resistor and capacitor.</div></li>
+<li><div class="para">Find the impedance of the circuit.</div></li>
+<li><div class="para">Find the power dissipated in the resistor.</div></li>
+<li><div class="para">Find the power dissipated in the capacitor.</div></li>
+<li><div class="para">Find the power produced by the source.</div></li>
+</ol>
+</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Note the peak voltage <span class="process-math">\(V_0 = \sqrt{2} V_{\textrm{rms}} = 169\ \textrm{V}\text{.}\)</span> Use complex method with <span class="process-math">\(\tilde Z = \tilde{Z}_R + \tilde{Z}_C\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">The source voltage is given to be <span class="process-math">\(V(t) = V_0\:\cos(\omega t)\text{,}\)</span> with <span class="process-math">\(V_0 = 120\sqrt{2} = 169.7\:\textrm{V}\)</span> and <span class="process-math">\(\omega = 2\pi\times 60 = 120\pi\:\textrm{sec}^{-1}\text{.}\)</span> In complex notation this is replaced by <span class="process-math">\(V_0\:e^{i\omega t}\text{.}\)</span> Now, we divide this by complex impedance to find the complex current. The complex impedance here is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Z = R -\dfrac{i}{\omega C} = |Z|\: e^{i\phi},
+\end{equation*}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp |Z| = \left( R^2 + \dfrac{1}{\omega^2 C^2}\right)^{1/2} = 200.8\:\Omega,\\
+\amp \phi = -\tan^{-1}\left( \dfrac{1}{\omega R C}\right)= -0.088\:\textrm{rad}.
+\end{align*}
+</div>
+<div class="para">Therefore, the complex current is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = \dfrac{V}{Z} = \dfrac{V_0}{|Z|}\: e^{i(\omega t -\phi)} = (0.845\:\textrm{A})\:e^{i(\omega t +0.088)}.
+\end{equation*}
+</div>
+<div class="para">The real part of this complex current gives the current in the circuit.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = (0.845\:\textrm{A})\:\cos(\omega t +0.088).
+\end{equation*}
+</div>
+<div class="para">Therefore, the amplitude of current is <span class="process-math">\(0.845\:\textrm{A}\)</span> and the phase constant 0.088 rad or <span class="process-math">\(5.1^{\circ}\)</span> ahead of the source voltage.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Now, we can use the current to find the voltage drop across the resistor.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_R =  (0.845\:\textrm{A}\times 200\:\Omega)\:\cos(\omega t + 0.088) = (169\:\textrm{V})\:\cos(\omega t + 0.088).
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para">
+<span class="process-math">\(Z\)</span> already found above.</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span><span class="space"> </span><span class="title">d</span></summary><div class="solution solution-like knowl__content"> <div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+P_R  = \dfrac{1}{2}I_0^2 R = \dfrac{1}{2}\times (0.845\:\textrm{A})^2\times 200\:\Omega = 71.4\:\textrm{W}
+\end{equation*}
+</div></div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">5</span><span class="period">.</span><span class="space"> </span><span class="title">e</span></summary><div class="solution solution-like knowl__content"> <div class="para">No power is dissipated in the capacitor since current through the capacitor and the voltage across the capacitor are <span class="process-math">\(\pi/2\)</span> rad out phase.</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">6</span><span class="period">.</span><span class="space"> </span><span class="title">f</span></summary><div class="solution solution-like knowl__content"> <div class="para">This will equal the power dissipated in the resistor: <span class="process-math">\(71.4\, \text{W}\text{.}\)</span>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Circuit-Analysis-Using-Complex-Numbers.html#exer-Complex-Circuit-Analysis-of-an-RC-Circuit">in-context</a></span>
+</body>
+</html>

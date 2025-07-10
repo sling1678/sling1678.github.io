@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Estimating Numer of Hair on Full Scapl.</span>
+</h4>
+<div class="para">Estimate the total number of hair on your head.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Assume spherical head with hair being on only <span class="process-math">\(\theta=20^{\circ}\)</span> from the pole.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">360,000.</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">Supose we make some drastic assumptions: (1) the hear is sphere of radius R. (2) Hair is only on the part of head that is within <span class="process-math">\(20^\circ\)</span> from the top, i.e., the pole. (3) Each hair cell is a circle of radius <span class="process-math">\(r\approx 20\,\mu\text{m}\text{.}\)</span> (4) Each hair cell produces one hair fiber.</div> <div class="para logical">
+<div class="para">With these, assumptions, we find the solid angle of surface of the part of hair that contains hair to be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Omega = \int_{0}^{2\pi} d\phi \int_0^{\theta_0} \sin\theta\,d\theta\,d\phi = 2\pi\left(1 - cos\theta_0 \right).
+\end{equation*}
+</div>
+<div class="para">From calculator, <span class="process-math">\(\cos\, 20^\circ \approx 0.94\text{.}\)</span> Therefore, we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Omega = 0.12\pi.
+\end{equation*}
+</div>
+<div class="para">This gives the surface area to be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \Omega R^2 = 0.12\pi R^2.
+\end{equation*}
+</div>
+<div class="para">Now, area of cross-section of each hair cell will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a = \pi r^2.
+\end{equation*}
+</div>
+<div class="para">The ratio will give us the number of hairs.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+N = \frac{A}{a} = \left( \frac{0.12 R}{r} \right)^2.
+\end{equation*}
+</div>
+<div class="para">Now, taking the radius of hear to be <span class="process-math">\(10\,\text{cm}\)</span> and that of a hair cell to be <span class="process-math">\(r\approx 20\,\mu\text{m}\text{,}\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+N = \left( \frac{0.12 \times 10\,\text{cm}}{20\,\mu\text{m}} \right)^2 = 360,000.
+\end{equation*}
+</div>
+<div class="para">This is actually in te ball park of actual average number of hair on a human head.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="section-order-of-magnitude.html#ex-Estimating-Number-of-Hair-on-Full-Scalp">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Uncertainty in Volume and Density.</span>
+</h4>
+<div class="para">The diameter of a spherical ball of mass <span class="process-math">\(20.0 \pm 0.1\ \text{grams}\)</span> was measured by a micrometer and found to be <span class="process-math">\(16.582\ mm \pm 0.002\ \text{mm}\text{.}\)</span>  (a) Find the average volume of the sphere. (b) Find the absolute and relative uncertainties of the volume. (c) Find the density of the ball, giving both the average value and the uncertainty.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use deifinitions.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(V = 2378.7\, \text{mm}^3\text{,}\)</span> (b) <span class="process-math">\(\Delta V=0.9\, \text{mm}^3\text{;}\)</span> <span class="process-math">\(\Delta V/V = 0.0004\text{,}\)</span> (c) <span class="process-math">\(8.41\times 10^{-3}\,\text{g/mm}^3; 4.0\times 10^{-4}\,\text{g/mm}, 5\%\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(a) Using the average value of diameter we will get the average value of the volume. We just need to be careful about the number of significant digits here. The diameter is given to five significant digits, so we will keep the calculated answer of vokume to three digits.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V = \frac{1}{6}\pi D^3 = 2378.6851605487154 \rightarrow 2378.7\, \text{mm}^3.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(b) For abosolute error, we use the derivative of <span class="process-math">\(V = \frac{1}{6}\pi D^3 \)</span> to get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{dV}{dD} = \frac{1}{2}\pi D^2 = 430.86918739561327\, \text{cm}^2
+\end{equation*}
+</div>
+<div class="para">This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta V 
+\end{equation*}
+</div>
+<div class="para">to be the following after we round off to one significant digit since <span class="process-math">\(\Delta D\)</span> is <span class="process-math">\(0.002 \rightarrow 2\times 10^{-3}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta V = \left( \frac{1}{2}\pi D^2\right) \Delta D = 0.8617...\rightarrow 0.9\text{ mm}^3.
+\end{equation*}
+</div>
+<div class="para">Relative uncertainty is obtained from <span class="process-math">\(\Delta V\)</span> and <span class="process-math">\(V\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\Delta V}{V} = \frac{0.9}{2378.7} = 0.000378... \rightarrow 0.0004.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">(c)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(c) The density formula is <span class="process-math">\(\rho = M/V\text{.}\)</span> Hence, the average density is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rho = \frac{20.0}{2378.7} = 0.00840795...\rightarrow 8.41\times 10^{-3}\,\text{g/mm}^3,
+\end{equation*}
+</div>
+<div class="para">where I rounded off the answer to three significant digits. How about the uncertaint? For that we need to compute two derivatives and combine them in quadrature.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\frac{d\rho}{dM}\amp = \frac{1}{V}\\
+\frac{d\rho}{dV}\amp = -\frac{M}{V^2}
+\end{align*}
+</div>
+<div class="para">Hence, we get the two contributions to error to be (using absolute value)</div>
+<div class="displaymath process-math">
+\begin{gather*}
+\rho_M = \frac{1}{V} \, \Delta V = \frac{1}{2378.7}\times 0.9 = 3.78\times 10^{-4}\\
+\rho_V = \frac{M}{V^2} \Delta M = \frac{20.0}{2378.7^2}\times 0.1 = 3.5\times 10^{-7}
+\end{gather*}
+</div>
+<div class="para">Now, the absolute error in density will be dominated by the error in mass.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(\Delta \rho)^2 = \rho_M^2 + \rho_V^2 \approx 3.78\times 10^{-4}.
+\end{equation*}
+</div>
+<div class="para">Hence, absolute error in density will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta \rho = 4.0\times 10^{-4}\,\text{g/mm},
+\end{equation*}
+</div>
+<div class="para">rounding off to one significant digit. You can write this number in scientific notation, where counting digits is easier. The relative error is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\Delta \rho}{\rho} = \frac{4.0\times 10^{-4}}{8.40\times 10^{-3}} = 0.05. 
+\end{equation*}
+</div>
+<div class="para">That is <span class="process-math">\(5\%\)</span> relative error.</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="section-propagation-of-uncertainty.html#ex-Uncertainty-in-Volume-and-Density">in-context</a></span>
+</body>
+</html>

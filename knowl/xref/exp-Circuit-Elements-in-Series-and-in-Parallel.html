@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">41.48</span><span class="period">.</span><span class="space"> </span><span class="title">Circuit Elements in Series and in Parallel.</span>
+</h4>
+<div class="para logical">
+<div class="para">(a) Find current through the capacitor in the circuit. (b) Use the following values to find the numerical values of the magnitude and phase of the current through the capacior.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp V_0=170\text{ V},\ \ \omega = 2\pi\times 60\text{ sec}^{-1}, \\
+\amp R = 1000\ \Omega;\ \ L = 1\; \text{mH};\ \ C = 1\; \mu\text{F}.
+\end{align*}
+</div>
+</div> <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/./images/ac-circuits/example-ac-RLC-1.png" class="contained"></div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) See solution, (b) <span class="process-math">\(64\; \text{mA}\text{,}\)</span> <span class="process-math">\(\pi/2\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para">(a) We start by first replacing the passive elements in the circuit by their impedances.</div> <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/./images/ac-circuits/example-ac-RLC-2.png" class="contained"></div> <div class="para logical">
+<div class="para">Since we just want the current through <span class="process-math">\(C\text{,}\)</span> which is the same as current through the source, we will work out equivalent impedance of everything connected across the source. We see that <span class="process-math">\(\tilde{Z}_C\)</span> is in series with parallel combinations of <span class="process-math">\(\tilde{Z}_R\)</span> and <span class="process-math">\(\tilde{Z}_L\text{,}\)</span> the equivalent impedance is</div>
+<div class="displaymath process-math">
+\begin{align*}
+\tilde{Z} \amp = \tilde{Z}_C + \left( \dfrac{1}{\tilde{Z}_R}  + \dfrac{1}{\tilde{Z}_L} \right)^{-1},\\
+\amp = \dfrac{-i}{\omega C} + \left( \dfrac{1}{R}  + \dfrac{1}{i\omega L} \right)^{-1},\\
+\amp = \dfrac{-i}{\omega C} + \dfrac{i\omega R L}{ R + i\omega L } ,\\
+\amp = \dfrac{-i}{\omega C} + \dfrac{i\omega R L}{ R + i\omega L }\times \dfrac{R-i\omega L}{R-i\omega L},\\
+\amp =  \dfrac{\omega^2 R L^2}{ R^2 + \omega^2 L^2 } + i \left(\dfrac{\omega R^2 L}{ R^2 + \omega^2 L^2 } - \dfrac{1}{\omega C}\right).
+\end{align*}
+</div>
+<div class="para">This gives real and imaginary parts of the equivalent complex impedance.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp \text{Re}(Z) =  \dfrac{\omega^2 R L^2}{ R^2 + \omega^2 L^2 } \equiv a,\\
+\amp \text{Im}(Z) =  \dfrac{\omega R^2 L}{ R^2 + \omega^2 L^2 } - \dfrac{1}{\omega C} \equiv b.
+\end{align*}
+</div>
+<div class="para">Therefore, we have <span class="process-math">\(Z = |Z|e^{i\phi_Z}\)</span> with</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp |Z| =  \sqrt{a^2 + b^2},\\
+\amp  \phi_Z = \tan^{-1}\left( \dfrac{b}{a}\right).
+\end{align*}
+</div>
+<div class="para">Using the magnitude and phase of equivalent impedance, we can immediately write the magnitude and phase of current through the course, <span class="process-math">\(I = I_0\cos(\omega t + \phi_I)\text{,}\)</span> with</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp I_0 =  V_0/|Z|,\\
+\amp  \phi_I = -\phi_Z.
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(b) The value of  impedances of the elements are:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Z_R = 1000\; \Omega;\ \ Z_L = i 0. 377\; \Omega; \ \ Z_C =-i 2652\; \Omega.
+\end{equation*}
+</div>
+<div class="para">The equivalent impedance becomes</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\tilde{Z}  \approx 1.4\times 10^{-4} \Omega - i 2652 \Omega.
+\end{equation*}
+</div>
+<div class="para">The amplitudes and phase of the current would be,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_0  \approx 64\; \text{mA}.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi_I  \approx \frac{\pi}{2}\; \text{rad}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Circuit-Analysis-Using-Complex-Numbers.html#exp-Circuit-Elements-in-Series-and-in-Parallel">in-context</a></span>
+</body>
+</html>

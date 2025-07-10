@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">34.63</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Electric Potentials in a Bridge Circuit.</span>
+</h3>
+<div class="para">In a bridge circuit, resistors and other elements in a circuit form a bridge-like structure. You can analyze the circuit given in <a href="Kirchhoffs-Rules.html#fig-exp-kirk-bridge-circuit-numerical-2" class="xref" data-knowl="./knowl/xref/fig-exp-kirk-bridge-circuit-numerical-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 34.64">Figure 34.64</a> by setting up six equations for six currents. That is not the most economical way for analyzing this circuit since it has only four unique values of electic potentials at four nodes in the circuit. The values of potentials at two of the nodes is already known. Therefore, we need to find only two unknown potentials. Find values of electric potential at the four nodes in the  circuit.</div> <figure class="figure figure-like"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/./images/electric-circuits/exp-kirk-bridge-circuit-numerical.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">34.64<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">
+<span class="process-math">\(\phi_a = 12\text{ V}\text{,}\)</span> <span class="process-math">\(\phi_b=0\text{,}\)</span> <span class="process-math">\(\phi_c = \frac{270}{31}\text{ V}\text{,}\)</span> <span class="process-math">\(\phi_d = \frac{264}{31}\text{ V}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">Let <span class="process-math">\(\phi_a\text{,}\)</span> <span class="process-math">\(\phi_b\text{,}\)</span> <span class="process-math">\(\phi_c\text{,}\)</span> and <span class="process-math">\(\phi_d\)</span> denote electric potentials at <span class="process-math">\(a,\ b,\ c,\ d\)</span> respectively. Since voltage source maintains potential difference across it,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi_a - \phi_b = 12\text{ V}.
+\end{equation*}
+</div>
+<div class="para">We can always, choose one place to be zero reference of electric potential. As customary, we will choose it to be the negative of a voltage source. Note, if we had multiple voltage sources, negative of only one of them can be set to zero.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi_b = 0,\ \phi_a= 12\text{ V}.
+\end{equation*}
+</div>
+<div class="para">From the circuit we have the following for Ohm’s law for each resistor.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp 12- \phi_c = 10 I_1\\
+\amp 12- \phi_d = 20 I_2\\
+\amp \phi_c -0 = 30 I_3\\
+\amp \phi_d -0 = 40 I_4\\
+\amp \phi_c - \phi_d = 5 I_5
+\end{align*}
+</div>
+<div class="para">We will use these to replace currents in the following KCL equations at nodes <span class="process-math">\(c\)</span> and <span class="process-math">\(d\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp I_1 = I_3 + I_5,\\
+\amp I_4 = I_2 + I_5,
+\end{align*}
+</div>
+<div class="para">which gives</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  \frac{12-\phi_c}{10} = \frac{\phi_c}{30} + \frac{\phi_c - \phi_d}{5},\\
+\amp  \frac{ \phi_d}{40} = \frac{12-\phi_d}{20} + \frac{\phi_c - \phi_d}{5}.
+\end{align*}
+</div>
+<div class="para">These can be simplified to</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp  10 \phi_c  - 6 \phi_d = 36,\\
+\amp  -8 \phi_c  + 11 \phi_d = 24.
+\end{align*}
+</div>
+<div class="para">Solving them yields</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\phi_c = \frac{270}{31}\text{ V},\ \ \phi_d = \frac{264}{31}\text{ V}.
+\end{equation*}
+</div>
+<div class="para">From the potentials, it is trivial to get the currents now.</div>
+</div></div></details>
+</div></article><span class="incontext"><a class="internal" href="Kirchhoffs-Rules.html#ex-Finding-Electric-Potentials-in-a-Bridge-Circuit">in-context</a></span>
+</body>
+</html>

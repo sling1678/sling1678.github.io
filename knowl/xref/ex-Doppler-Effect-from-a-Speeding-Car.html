@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">49.47</span><span class="period">.</span><span class="space"> </span><span class="title">Approximate Doppler Effect from a Speeding Car.</span>
+</h3>
+<div class="para">(a) Find an approximate Doppler effect formula when <span class="process-math">\(v \ll c\)</span> keeping terms upto linear in <span class="process-math">\(v/c\text{.}\)</span>  (b) A police parked at the side of the road sends out electromagnetic wave of frequency 5 GHz.  What will be the frequency of the reflected wave from a car that is approaching the police car with a speed of 100 mph? Assume the wave is almost parallel to the velocity of the car.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use Maclaurin series in terms of <span class="process-math">\(V/c\text{.}\)</span>
+</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(f_0\left( 1 +  V/c\right)\text{,}\)</span> (b)  <span class="process-math">\(5.0096 \text{ GHz}\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(a) Let us denote <span class="process-math">\(V/c\)</span> by <span class="process-math">\(x\)</span> and expand <span class="process-math">\(f\)</span> in terms of powers of <span class="process-math">\(x\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\left( \frac{f}{f_0} \right)^2 \amp =  \frac{1 + x}{ 1- x} \\
+\amp = (1 + x)( 1 + x + x^2 +  \cdots)  \\
+\amp = ( 1 + x + x^2 +   \cdots) + ( x + x^2 + \cdots) \\
+\amp = 1 + 2x + 2x^2 +   \cdots  
+\end{align*}
+</div>
+<div class="para">Let <span class="process-math">\(\epsilon =2x + 2x^2 +   \cdots \)</span> and take square root we get</div>
+<div class="displaymath process-math">
+\begin{align*}
+f \amp = f_0 (1 + \epsilon )^{1/2}\\
+\amp = f_0 \left( 1 + \frac{1}{2}\epsilon -frac{1}{8}\epsilon^2 +  \cdots  \right) 
+\end{align*}
+</div>
+<div class="para">Now, when we put <span class="process-math">\(\epsilon=2x + 2x^2 +  \cdots \)</span> here, we will keep term up to <span class="process-math">\(x^2\)</span> from each term and if <span class="process-math">\(x\)</span>-terms does not vanish then we will drop the <span class="process-math">\(x^2\)</span> term.</div>
+<div class="displaymath process-math">
+\begin{align*}
+f \amp = f_0 \left( 1 + \frac{1}{2} \times 2 x  - \frac{1}{8} \times 4 x^2  \right).\\
+\amp = f_0 \left( 1 +  V/c  - \frac{1}{2} V^2/c^2  \right) \approx f_0\left( 1 +  V/c\right).
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(b) Using the approximate formula derived in (a), we need the following with <span class="process-math">\(V \gt 0\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+f \amp =f_0 \left( 1 +  V/c\right)
+\end{align*}
+</div>
+<div class="para">Here</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V/c = \frac{100\times (8/5) \times 3600\text{ m/s} }{ 3\times 10^8\text{ m/s}} = 0.00192.
+\end{equation*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f = 1.00192 \times 5\text{ GHz} = 5.0096 \text{ GHz}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="sec-RelativisticDopplerEffect.html#ex-Doppler-Effect-from-a-Speeding-Car">in-context</a></span>
+</body>
+</html>

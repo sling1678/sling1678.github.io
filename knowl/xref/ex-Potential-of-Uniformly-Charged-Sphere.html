@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">(Calculus)  Potential of Uniformly Charged Sphere.</span>
+</h4>
+<div class="para"> A spherical cloud of radius <span class="process-math">\(R\)</span> has uniform charge density <span class="process-math">\(\rho\)</span> (units: <span class="process-math">\(\text{C/m}^3\)</span>). Find potential (a) at a point outside and (b) at a point inside the sphere. Use <span class="process-math">\(r=\infty\)</span> as reference for the potential.</div>
+<div class="solutions">
+<details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Use Gauss’s law result for electric field.</div></div></details><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(\frac{1}{4\pi\epsilon_0}\,\frac{q}{r_\text{out}}\text{,}\)</span> (b) <span class="process-math">\(\frac{1}{4\pi\epsilon_0} \frac{q}{R} \left( \frac{3}{2} - \frac{1}{2}\; \frac{r_{\text{in}}^2}{R^2} \right)\text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">(a)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Common to (a) and (b): Applying spherical symmetry case of Gauss’s law to the charge distribution, you can show that the electric field first. Let <span class="process-math">\(q\)</span> be tht total charge in the sphere.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+q = \frac{4}{3}\pi R^3 \rho.
+\end{equation*}
+</div>
+<div class="para">Using <span class="process-math">\(q\)</span> and radial unit vector <span class="process-math">\(\hat u_r\text{,}\)</span> electric field can be written as follows.</div>
+<div class="displaymath process-math">
+\begin{equation}
+\vec E = \begin{cases}
+\frac{1}{4\pi\epsilon_0} \frac{q}{r^2}\;\hat u_r \amp r \gt R\\
+\frac{1}{4\pi\epsilon_0} \frac{q}{R^3}\; r\;\hat u_r \amp r \lt R
+\end{cases}\tag{31.28}
+\end{equation}
+</div>
+<div class="para">Now, we can integrate from reference at infinity to <span class="process-math">\(r=r_\text{out}\text{,}\)</span> a point outside the sphere along a radial line. To set up the integral, we note that <span class="process-math">\(d\vec r = \hat u_r\, dr\)</span> here for the radial path, giving us <span class="process-math">\(\vec E \cdot d\vec r = E\, dr\text{.}\)</span> Hence, the potential is</div>
+<div class="displaymath process-math">
+\begin{align*}
+\phi_\text{out} \amp = -\frac{q}{4\pi\epsilon_0} \int_\infty^{r_\text{out}}\frac{1}{r^2}\; dr\\
+\amp = \frac{1}{4\pi\epsilon_0}\,\frac{q}{r_\text{out}}. 
+\end{align*}
+</div>
+<div class="para">That is, from outside, the spherical charge distribution acts like as it the entire charge is located at the center.</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">(b)</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">(b) Here, we split the integral into two parts since we need to integrate from infinity to a point inside and, according to Eq. <a href="Electric-Potential-and-Electric-Field.html#eq-E-field-for-spherical-charge" class="xref" data-knowl="./knowl/xref/eq-E-field-for-spherical-charge.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 31.28">(31.28)</a>, electric field has different expression outside and inside.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-E-field-for-spherical-charge.html">
+\begin{align*}
+\phi_\text{in} \amp = -\frac{q}{4\pi\epsilon_0} \int_\infty^{r_\text{in}}\frac{1}{r^2}\; dr\\
+\amp = -\frac{q}{4\pi\epsilon_0} \int_\infty^{R}\frac{1}{r^2}\; dr
+-\frac{q}{4\pi\epsilon_0}\, \frac{1}{R^3}\, \int_R^{r_\text{in}}\;r\; dr\\
+\amp =   \frac{1}{4\pi\epsilon_0} \frac{q}{R}  + \frac{1}{4\pi\epsilon_0} \frac{q}{2R}  \left( 1 - \frac{r_{\text{in}}^2}{R^2} \right) \\
+\amp =   \frac{1}{4\pi\epsilon_0} \frac{q}{R} \left( \frac{3}{2} - \frac{1}{2}\; \frac{r_{\text{in}}^2}{R^2} \right). 
+\end{align*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Electric-Potential-and-Electric-Field.html#ex-Potential-of-Uniformly-Charged-Sphere">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">39.27</span><span class="period">.</span><span class="space"> </span><span class="title">Variation of Current in an RL-Circuit.</span>
+</h3>
+<div class="para">A <span class="process-math">\(12\text{-V}\)</span> battery is connected to a <span class="process-math">\(10\text{-mH}\)</span> inductor and a <span class="process-math">\(50\text{-}\Omega\)</span>  resistor at <span class="process-math">\(t = 0\text{.}\)</span>  Find the following: (a) the inductive time constant, (b) the current at <span class="process-math">\(t = 0\text{,}\)</span>  (c) the current as <span class="process-math">\(t \rightarrow \infty\text{,}\)</span> (d) the time for the current to reach quarter of the maximum.</div>
+<div class="solutions">
+<details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para">(a) <span class="process-math">\(0.2\; \text{msec}\text{,}\)</span> (b) <span class="process-math">\(0\text{,}\)</span> (c) <span class="process-math">\(0.24\: \text{A}\text{,}\)</span> (d) <span class="process-math">\(58\: \mu\text{s} \text{.}\)</span>
+</div></div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">The time constant of an RL-circuit is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\tau = \dfrac{\mathcal{L}}{R} = \dfrac{10 \text{ mH}}{50\, \Omega} = 0.2\text{\, msec}.
+\end{equation*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para">Since a current through an inductor cannot change abruptly since that would imply infinite back EMF.  That means current through an inductor is a continuous function of time. Therefore, <span class="process-math">\(I = 0\)</span> for <span class="process-math">\(t\lt 0\)</span> would imply that <span class="process-math">\(I=0\)</span> at <span class="process-math">\(t=0\text{.}\)</span>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span><span class="space"> </span><span class="title">c</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">Current reaches a steady state as <span class="process-math">\(t \rightarrow \infty\text{,}\)</span> and there will be no induced EMF in the circuit.  Setting <span class="process-math">\(dI/dt = 0\)</span> in Faraday’s flux rule yields,</div>
+<div class="displaymath process-math">
+\begin{align*}
+I_{\text{max}} \amp = \mathcal{E}_0/R \\
+\amp = 12\: \text{V}/50\: \Omega = 0.24\: \text{A}.
+\end{align*}
+</div>
+</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span><span class="space"> </span><span class="title">d</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="para">To find the time to reach one-fourth of the maximum current we set <span class="process-math">\(I(t) = \dfrac{1}{4}\,I_{\text{max}}\)</span> and  solve the resulting equation for <span class="process-math">\(t\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{I_{\text{max}}}{4} = I_{\text{max}}\left( 1 - e^{-t/\tau}\right).
+\end{equation*}
+</div>
+<div class="para">Simplifying this equation gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{-t/\tau} = 3/4.
+\end{equation*}
+</div>
+<div class="para">Taking the natural logarithm of both sides yields</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t = -\tau\ln{(0.75)} = 58\: \mu\text{s}.
+\end{equation*}
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Inductance-in-Circuits.html#ex-Variation-of-Current-in-an-RL-Circuit">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h5 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">57<span class="period">.</span></span><span class="space"> </span><span class="title">Volume of a Parallelopiped.</span>
+</h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:55%;"><div class="para logical">
+<div class="para">(a) A parallelopiped can be described by stating three vectors along its edges as shown in <a href="Vectors-Bootcamp.html#fig-parallelopiped_from_three_vectors" class="xref" data-knowl="./knowl/xref/fig-parallelopiped_from_three_vectors.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.101">Figure 3.101</a>. Just as area of the base here could be obtained from the magnitude of vector product <span class="process-math">\(|\vec B \times \vec C|\text{,}\)</span> the volume of the parallelopiped can be obtained by a scalar triple prroduct.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-parallelopiped_from_three_vectors.html">
+\begin{equation*}
+\vec A \cdot (\vec B \times \vec C).
+\end{equation*}
+</div>
+<div class="para">Prove that volume is indeed given by this formula.</div>
+</div></div>
+<div class="sbspanel top" style="width:5%;"><div class="para"></div></div>
+<div class="sbspanel top" style="width:40%;"><figure class="figure figure-like"><img src="external/./images/vectors/parallelopiped_from_three_vectors.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.101<span class="period">.</span></span><span class="space"> </span>For <a href="Vectors-Bootcamp.html#pr-parallelopiped_from_three_vectors" class="xref" data-knowl="./knowl/xref/pr-parallelopiped_from_three_vectors.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 3.9.57: Volume of a Parallelopiped">Exercise 3.9.57</a>.</figcaption></figure></div>
+</div></div> <div class="para logical">
+<div class="para">(b) Also show that you get the same answer by cyclically rotating the vector names, e.g.,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec A \cdot (\vec B \times \vec C) = \vec B \cdot (\vec C \times \vec A) = \vec C \cdot (\vec A \times \vec B). 
+\end{equation*}
+</div>
+</div>
+<div class="solutions">
+<details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span><span class="space"> </span><span class="title">a</span></summary><div class="solution solution-like knowl__content"> <div class="para">We will not do the full blown proof.  We will assume that the area of the base times height equals the volume.</div> <div class="para">We will now show that <span class="process-math">\(\vec A\cdot ( \vec B \times \vec C)\)</span> is equal to the area of the base times height.</div> <div class="para">Let’s start with noting that the magnitude of the cross-product <span class="process-math">\(\vec B \times \vec C\)</span> is equal to the area of the base whose edges are the vectors <span class="process-math">\(\vec B\)</span> and <span class="process-math">\(\vec C\)</span> and the direction of this product is normal to the area.</div> <div class="para">Denote the normal direction to the base in which vectors <span class="process-math">\(\vec B\)</span> and <span class="process-math">\(\vec C\)</span> reside by the unit vector <span class="process-math">\(\hat u_n\text{.}\)</span> Now, the dot product between <span class="process-math">\(\vec A\)</span> and <span class="process-math">\(\hat u_n\)</span> will equal the magnitude of the projection of vector <span class="process-math">\(\vec A\)</span> on the normal direction, which is equal to the height.</div> <div class="para">Therefore,  <span class="process-math">\(\vec A\cdot ( \vec B \times \vec C)\)</span> would be equal to the product of the area of the base and the height, which is equal to the volume.</div>
+</div></details><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span><span class="space"> </span><span class="title">b</span></summary><div class="solution solution-like knowl__content"> <div class="para logical">
+<div class="displaymath process-math">
+\begin{align*}
+\amp 
+\vec A\cdot  ( \vec B \times \vec C )\\
+\amp \ \ \  = A_x (B_y C_z - B_z C_y) + A_y (B_z C_x - B_x C_z) + A_z (B_x C_y - B_y C_x)
+\end{align*}
+</div>
+<div class="para">We can rearrange the result now by grouping terms with <span class="process-math">\(B_x\text{,}\)</span> <span class="process-math">\(B_y\)</span> and <span class="process-math">\(B_z\)</span> separately.  We find that</div>
+<div class="displaymath process-math">
+\begin{align*}
+\amp 
+A_x (B_y C_z - B_z C_y) + A_y (B_z C_x - B_x C_z) + A_z (B_x C_y - B_y C_x)\\
+\amp 
+\ \ = B_x (C_y A_z - C_z A_y) + B_y (C_z A_x - C_x A_z) + B_z (C_x A_y - C_y A_x)\\
+\amp \ \ = \vec B\cdot  ( \vec C \times \vec A ).
+\end{align*}
+</div>
+<div class="para">Similarly by arranging terms with <span class="process-math">\(C_x\text{,}\)</span> <span class="process-math">\(C_y\)</span> and <span class="process-math">\(C_z\)</span> separately we can show that the result is also equal to <span class="process-math">\(\vec C\cdot  ( \vec A \times \vec B )\text{.}\)</span>
+</div>
+</div>
+</div></details>
+</div></article><span class="incontext"><a class="internal" href="Vectors-Bootcamp.html#pr-parallelopiped_from_three_vectors">in-context</a></span>
+</body>
+</html>
